@@ -1,0 +1,12 @@
+# Even positive-definite rank-7 auxiliary lattice for the rootless J2 track.
+# determinant = 948
+# discriminant group = Z/948, quadratic Gram [1267/948]
+# root sublattice = D5
+# This discriminant form is anti-isometric to the published R17 form.
+2 1 -1 1 -1 0 1
+1 2 -1 1 0 0 0
+-1 -1 2 0 0 0 0
+1 1 0 2 0 0 1
+-1 0 0 0 2 0 -1
+0 0 0 0 0 12 -6
+1 0 0 1 -1 -6 24

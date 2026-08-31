@@ -7,6 +7,7 @@ and claim boundaries are in [`../REPRODUCE.md`](../REPRODUCE.md).
 
 | Generate | Verify | Result |
 | --- | --- | --- |
+| `recover_conductor_parameter.py SPEC --output RESULT` | same command with `--check` | two-chart local fingerprint and bounded CRT/Gauss family recognition |
 | `run_crt_lattice_calibration.py` | `verify_crt_lattice_calibration.py` | exact low-rank CRT calibration |
 | `run_fermigier_crt_seed.py` | `verify_fermigier_crt_seed.py` | exact local seed, not a target |
 | `run_fermigier_rank_certificates.py` | `verify_fermigier_rank_certificates.py` | generic rank lower bound and E22 rank-at-least-22 |
@@ -23,6 +24,10 @@ Current high-rank and conductor replays are catalogued in
 [`../REPRODUCE.md`](../REPRODUCE.md), including curve 302 at rank at least 31,
 the full curve-285/286 local conductor replays, the Elkies rank-25--28
 positive controls, and the fail-closed residual-descent entry points.
+
+The generic input format and the curve-282 Fermigier replay for
+`recover_conductor_parameter.py` are documented in
+[`../notes/CONDUCTOR_PARAMETER_RECOVERY.md`](../notes/CONDUCTOR_PARAMETER_RECOVERY.md).
 
 `analyze_elkies_bisection_visibility_and_record_curves.py` converts the split
 bisection classes into canonical visible/complementary quotient bases and

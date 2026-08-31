@@ -63,7 +63,11 @@ def roots_mod_prime(coefficients: Sequence[int], prime: int) -> list[int]:
 
 
 def hensel_lift_roots(
-    coefficients: Sequence[int], prime: int, exponent: int
+    coefficients: Sequence[int],
+    prime: int,
+    exponent: int,
+    *,
+    maximum_roots: int | None = None,
 ) -> list[int]:
     """Return all roots modulo ``prime**exponent``.
 
@@ -75,19 +79,35 @@ def hensel_lift_roots(
 
     if exponent < 1:
         raise ValueError("exponent must be positive")
+    if maximum_roots is not None and maximum_roots < 1:
+        raise ValueError("maximum_roots must be positive or None")
     roots = roots_mod_prime(coefficients, prime)
+    if maximum_roots is not None and len(roots) > maximum_roots:
+        raise ValueError(
+            f"more than {maximum_roots} roots occur modulo {prime}"
+        )
     modulus = prime
-    for _ in range(1, exponent):
+    for reached_exponent in range(2, exponent + 1):
         next_modulus = modulus * prime
-        roots = [
-            root + digit * modulus
-            for root in roots
-            for digit in range(prime)
-            if evaluate_polynomial(
-                coefficients, root + digit * modulus, next_modulus
-            )
-            == 0
-        ]
+        next_roots = []
+        for root in roots:
+            for digit in range(prime):
+                candidate = root + digit * modulus
+                if (
+                    evaluate_polynomial(coefficients, candidate, next_modulus)
+                    != 0
+                ):
+                    continue
+                next_roots.append(candidate)
+                if (
+                    maximum_roots is not None
+                    and len(next_roots) > maximum_roots
+                ):
+                    raise ValueError(
+                        f"more than {maximum_roots} roots occur modulo "
+                        f"{prime}^{reached_exponent}"
+                    )
+        roots = next_roots
         modulus = next_modulus
     return sorted(roots)
 
@@ -149,20 +169,17 @@ def _inner(left: Vector, right: Vector, weights: Vector) -> int:
     )
 
 
-def gauss_reduce_congruence_lattice(
-    residue: int, modulus: int, *, weights: Vector = (1, 1)
+def gauss_reduce_lattice_basis(
+    first: Vector, second: Vector, *, weights: Vector = (1, 1)
 ) -> tuple[Vector, Vector]:
-    """Gauss-reduce the lattice ``a == residue*b (mod modulus)`` exactly."""
+    """Gauss-reduce an arbitrary rank-two integral lattice exactly."""
 
-    if modulus <= 0:
-        raise ValueError("modulus must be positive")
+    if first[0] * second[1] - first[1] * second[0] == 0:
+        raise ValueError("the lattice basis must have rank two")
     if len(weights) != 2 or any(
         type(weight) is not int or weight <= 0 for weight in weights
     ):
         raise ValueError("weights must be exactly two positive integers")
-    residue %= modulus
-    first: Vector = (modulus, 0)
-    second: Vector = (residue, 1)
     while True:
         if _inner(second, second, weights) < _inner(first, first, weights):
             first, second = second, first
@@ -170,14 +187,66 @@ def gauss_reduce_congruence_lattice(
             _inner(first, second, weights), _inner(first, first, weights)
         )
         if multiplier == 0:
-            break
+            return first, second
         second = (
             second[0] - multiplier * first[0],
             second[1] - multiplier * first[1],
         )
+
+
+def gauss_reduce_congruence_lattice(
+    residue: int, modulus: int, *, weights: Vector = (1, 1)
+) -> tuple[Vector, Vector]:
+    """Gauss-reduce the lattice ``a == residue*b (mod modulus)`` exactly."""
+
+    if modulus <= 0:
+        raise ValueError("modulus must be positive")
+    residue %= modulus
+    first, second = gauss_reduce_lattice_basis(
+        (modulus, 0), (residue, 1), weights=weights
+    )
     assert abs(first[0] * second[1] - first[1] * second[0]) == modulus
     assert (first[0] - residue * first[1]) % modulus == 0
     assert (second[0] - residue * second[1]) % modulus == 0
+    return first, second
+
+
+def gauss_reduce_linear_congruence_lattice(
+    coefficient_a: int,
+    coefficient_b: int,
+    modulus: int,
+    *,
+    weights: Vector = (1, 1),
+) -> tuple[Vector, Vector]:
+    """Reduce the kernel of ``C*a + D*b == 0 (mod M)``.
+
+    The row must be primitive modulo ``M``.  This form supports mixtures of
+    the affine chart ``a-r*b=0`` and the infinity chart ``b-s*a=0``.
+    """
+
+    if modulus <= 0:
+        raise ValueError("modulus must be positive")
+    divisor = gcd(coefficient_a, modulus)
+    if gcd(divisor, coefficient_b) != 1:
+        raise ValueError("the congruence row must be primitive modulo M")
+    quotient = modulus // divisor
+    residue = 0
+    if quotient > 1:
+        residue = (
+            -coefficient_b
+            * pow(coefficient_a // divisor, -1, quotient)
+        ) % quotient
+    first, second = gauss_reduce_lattice_basis(
+        (quotient, 0), (residue, divisor), weights=weights
+    )
+    determinant = abs(first[0] * second[1] - first[1] * second[0])
+    if determinant != modulus:
+        raise AssertionError("the reduced kernel has the wrong determinant")
+    for numerator, denominator in (first, second):
+        if (
+            coefficient_a * numerator + coefficient_b * denominator
+        ) % modulus:
+            raise AssertionError("a reduced basis vector left the kernel")
     return first, second
 
 

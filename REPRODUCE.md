@@ -2742,10 +2742,27 @@ quadratic twisting.  This does not exclude another fibration, another family,
 or an isogeny construction.  See
 [`elliptic-curves/notes/ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md`](elliptic-curves/notes/ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md).
 
+Exclude cyclic degree `3`, `5`, `7`, and `11` isogeny images of rational
+published-R17 fibres for the same six target curves:
+
+<!-- status-consumer: EC-K3-ELKIES-2026-R17-SMALL-ISOGENY-EXCLUSIONS fc2c4caaa79fb36c -->
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_elkies_2026_r17_isogeny_exclusions.sage --check
+```
+
+Each of the 24 tests has a clean prime at which the full projective
+recognition polynomial has no finite linear factor and no root at infinity.
+This excludes the displayed small prime degrees on the published fibration;
+it does not test the equation-open alternate Q80-derived fibration, composite
+isogeny degrees, or algebraic fibre parameters.  See
+[`elkies-k3/PUBLISHED_R17_SMALL_ISOGENY_EXCLUSIONS_2026-09-01.md`](elkies-k3/PUBLISHED_R17_SMALL_ISOGENY_EXCLUSIONS_2026-09-01.md).
+
 Canonicalize the known alternate rootless rank-17 frame in pinned H3/R17 NS
 coordinates:
 
-<!-- status-consumer: EC-K3-H3-OTHER-R17-J2-CANDIDATE 5ca661346a25c1f0 -->
+<!-- status-consumer: EC-K3-H3-OTHER-R17-J2-CANDIDATE f1884d1f6168a934 -->
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python -c \
@@ -2760,12 +2777,30 @@ not a complete fibration classification or a rank-29 fibre identification.
 See
 [`elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md`](elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md).
 
-Audit the two-control rootless `J2` corpus, its exact local genus, and the mass
-obstruction to an unfiltered full-genus traversal:
+<!-- status-consumer: EC-K3-H3-ROOTLESS-J2-COMPLETE c6f054948b04b507 -->
+
+Audit the two-control rootless `J2` corpus, its exact local genus, the mass
+obstruction to an unfiltered full-genus traversal, and the complete
+Niemeier-first classification:
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/audit_rootless_j2_completeness_track.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_rootless_j2_niemeier_controls.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_rooted_niemeier_catalog.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_niemeier_d5_anchor_orbits.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_niemeier_auxiliary_sixth_dominant.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/classify_rootless_j2_niemeier_first.sage --check
 ```
 
 The target genus mass is
@@ -2775,7 +2810,21 @@ full-genus isometry classes because every automorphism group contains
 controls and rejects all 65 old `target-genus-rootless-pneighbor` files as one
 different 2-adic and 79-adic genus (nineteen isometry classes there).  This is
 an exact corpus correction and route-selection certificate, not a complete
-Kneser--Nishiyama classification.  See
+Kneser--Nishiyama classification.  The second replay pins the unique required
+rank-seven genus, certifies all cyclic discriminant gluings for both positive
+controls, and places every control embedding in `N(2A7+2D5)`.  It finds two
+glue double-coset orbits for the published frame and one for the alternate,
+while explicitly retaining primitive embeddings and saturated complements.
+Its exact 329,206,692-vector-pair cost probe shows why the complete
+enumeration had to be orbit based.  The final four replays certify all 23 rooted
+Niemeier Gram models, reduce the thirteen `D5`-admissible classes to sixteen
+anchor orbits, enumerate 3,220 primitive residual-Weyl sixth vectors, and
+reduce 167 positive-label seventh-vector cases to twelve primitive rootless
+embeddings.  Exact integral-isometry deduplication gives exactly two frame
+classes, the published R17 control and the alternate Q80 control, both with
+`N(2A7+2D5)` provenance.  This is a complete rootless `J2` frame-isometry
+classification; the retained embedding cover is not deduplicated to full
+automorphism embedding-orbit or `J1` counts.  See
 [`elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md`](elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md).
 
 Classify all distinct biquadratic pair bases, build the complete exact
@@ -16378,3 +16427,22 @@ classification target.
 The UFD/DVR argument showing that the required half radical divides the
 adjugate motion vector is the written proof in
 `HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md`, not a bounded search.
+
+## First-seventeen subgroup audit for record curves 273 and 302
+
+Replay the exact coordinate, finite-Kummer, and bad-component codes together
+with the 100-digit canonical-height/theta calculation using
+
+```bash
+PYTHONPATH=elliptic-curves/cas \
+  .venv/bin/python elliptic-curves/cas/analyze_record_first17_subgroups.py --check
+```
+
+The command checks
+`artifacts/generated-results/elliptic-curves/record_first17_subgroups_v1.json`.
+Its exact conclusions are relative saturation index one, intersection ranks
+10 and 9 with the independently selected candidate cores, free quotient ranks
+13 and 14, faithful quotient Kummer dimensions 13 and 14, and surjectivity of
+the first seventeen onto each complete bad-component product.  Canonical
+heights remain high-precision numerical data.  See
+[`elliptic-curves/notes/RECORD_CURVES_273_302_FIRST17_SUBGROUPS.md`](elliptic-curves/notes/RECORD_CURVES_273_302_FIRST17_SUBGROUPS.md).

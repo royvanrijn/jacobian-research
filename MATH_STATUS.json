@@ -31816,6 +31816,41 @@
       "priority": "primary"
     },
     {
+      "id": "EC-ICARM-WGXLI-R17-LINEAGE",
+      "kind": "example",
+      "state": "proved",
+      "title": "Five-fibre public fingerprint for the labelled wgxli rank-17 lineage",
+      "scope": "In the hash-pinned 2026-09-01 ICARM database snapshot, the thirteen curves submitted by wgxli split under the declared ordered-first-17 height-Gram residual graph at cutoff 0.2 into components {351,356,376,377,385}, {363,364,378}, {389,390,391}, {393}, and {395}. For the five-member target component, every one of the ten pairwise best scalar fits has relative Frobenius residual between 0.104980 and 0.181111; the next cross-component residual is 0.348333. All five target records have x-denominator square-root 71 at labelled point position 5 and 41 at position 17, and four have root 7 at position 16. Exact general-to-short Weierstrass transport exports the five equations and all 85 labelled points in a canonical short convention. Under the rootless-K3 degree hypothesis, weighted PGL2 and Weierstrass gauges plus five-point interpolation reduce the inverse problem to 52 unknowns before imposing the 221 section-identity coefficient equations. This proves only the pinned source inventory, exact coordinate transport, and declared bounded numerical fingerprint; it does not prove common-family membership, generic rank 17, base parameters, or a rootless-K3 realization.",
+      "canonical_source": "elliptic-curves/notes/ICARM_WGXLI_RANK17_LINEAGE.md",
+      "dependencies": [
+        "ECR29-IC356",
+        "external: hash-pinned 2026-09-01 public ICARM database and curve records"
+      ],
+      "checker": "elliptic-curves/cas/analyze_icarm_wgxli_rank17_lineages.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:7ad9907c96270fbb7a63125d666e20febab518dfb80f1e032582edc332e1d62d",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt",
+        "elliptic-curves/cas/analyze_icarm_wgxli_rank17_lineages.py",
+        "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_lineage_v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-R21-ICARM",
       "kind": "theorem",
       "state": "proved",
@@ -35025,7 +35060,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:283249cc83b4261eca79b7bbc38db308c5270fe32740c2a1e9115b0b4d8f6f1f",
+      "artifact_hash": "sha256:7819d492a57833d5d6b538e8290b63470eac437aa969fa0e037028fee6c43b0f",
       "software_lock": [
         "elkies-k3/scripts/derive_q80_first_q4_pencil.sage",
         "elkies-k3/scripts/verify_q80_unmarked_first_q4_collision_qq.sage"
@@ -35956,11 +35991,46 @@
       "priority": "derived"
     },
     {
+      "id": "EC-K3-ELKIES-2026-R17-SMALL-ISOGENY-EXCLUSIONS",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Small-prime cyclic-isogeny exclusions for rational published-R17 fibres",
+      "scope": "For the 2024 Elkies--Klagsbrun rank-29 curve and ICARM curves 398--400, 273, and 302, exact reduction of the projective modular-polynomial equations Phi_ell(j_R17(t),j(E))=0 for ell=3,5,7,11 gives one clean prime with no finite linear factor and no root at infinity in every case. The reduced published j-map has degree 24, so the cleared recognition polynomials have full projective degrees 24*(ell+1)=96,144,192,288. A rational characteristic-zero fibre parameter would reduce to P1(F_p) at every clean prime; each no-root witness therefore excludes that cyclic isogeny degree. This is limited to rational parameters on the published R17 fibration and the four prime degrees; it does not test composite isogeny degrees, algebraic parameters, another fibration, or the equation-open alternate Q80-derived endpoint.",
+      "canonical_source": "elkies-k3/PUBLISHED_R17_SMALL_ISOGENY_EXCLUSIONS_2026-09-01.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES"
+      ],
+      "checker": "elkies-k3/scripts/certify_elkies_2026_r17_isogeny_exclusions.sage",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5edbfd45f7cecf05d6760a41cf74565e82ae10f30d8afea0f2d6a00b1e7ee8bc",
+      "software_lock": [
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
+        "elliptic-curves/data/elkies_2026_r17_j_recognition_targets.json",
+        "elkies-k3/scripts/certify_elkies_2026_r17_isogeny_exclusions.sage",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_published_r17_isogeny_exclusions_v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md",
+        "elkies-k3/PUBLISHED_R17_SMALL_ISOGENY_EXCLUSIONS_2026-09-01.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-K3-H3-OTHER-R17-J2-CANDIDATE",
       "kind": "theorem",
       "state": "proved",
       "title": "Second rootless rank-17 J2 frame class in the pinned H3 Neron--Severi lattice",
-      "scope": "The exact alternate-q80 q4,q6 neighbor replay produces a positive-definite rank-17 frame of determinant 948 with no norm-two roots. Its full determinant-one Neron--Severi transport is composed with the exact pinned-R17-to-q80 marking, yielding an explicit primitive U embedding, fibre, isotropic mate, and zero in the pinned H3/R17 Neron--Severi coordinates. PARI qfisom proves that the alternate frame is not integrally isometric to the published determinant-948 R17 frame. Hence the pinned lattice contains at least two distinct rootless J2 frame classes, both giving Mordell--Weil rank 17 at Picard rank 19. The final alternate q6 divisor has an independently replayed complete nef audit, old-fibre degree two after Weyl reduction, D.O=1, a horizontal identity D=O+S-F with S.O=4, and a five-dimensional ambient line bundle cut by three local transforms to the expected two-plane. This is not a complete Kneser--Nishiyama or J1 classification, does not construct the generic characteristic-zero equation of the second frame, and does not identify the rank-29 curve as one of its fibres.",
+      "scope": "The exact alternate-q80 q4,q6 neighbor replay produces a positive-definite rank-17 frame of determinant 948 with no norm-two roots. Its full determinant-one Neron--Severi transport is composed with the exact pinned-R17-to-q80 marking, yielding an explicit primitive U embedding, fibre, isotropic mate, and zero in the pinned H3/R17 Neron--Severi coordinates. PARI qfisom proves that the alternate frame is not integrally isometric to the published determinant-948 R17 frame. Hence the pinned lattice contains at least two distinct rootless J2 frame classes, both giving Mordell--Weil rank 17 at Picard rank 19. The final alternate q6 divisor has an independently replayed complete nef audit, old-fibre degree two after Weyl reduction, D.O=1, a horizontal identity D=O+S-F with S.O=4, and a five-dimensional ambient line bundle cut by three local transforms to the expected two-plane. This candidate-construction theorem alone is not a Kneser--Nishiyama or J1 classification, does not construct the generic characteristic-zero equation of the second frame, and does not identify the rank-29 curve as one of its fibres; the J2 completeness result is recorded separately in EC-K3-H3-ROOTLESS-J2-COMPLETE.",
       "canonical_source": "elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md",
       "dependencies": [
         "EC-K3-H3-Q12O5867-ENDPOINT-QQ"
@@ -35985,6 +36055,48 @@
       "consumers": [
         "REPRODUCE.md",
         "elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-ROOTLESS-J2-COMPLETE",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete rootless rank-17 J2 frame classification by Niemeier-first enumeration",
+      "scope": "The pinned rank-seven auxiliary lattice is integrally isometric to a standardized D5-plus-two-vector Gram with determinant 948 and discriminant form opposite to the pinned H3 frame genus. Exact root decompositions of hash-pinned Gram models for all 23 rooted Niemeier lattices, together with the rootful-auxiliary exclusion of the Leech lattice, leave thirteen D5-admissible classes and sixteen full-automorphism D5 anchor orbits. Residual-Weyl enumeration gives 3,220 primitive norm-12 sixth-vector representatives. For a residual-Weyl-dominant seventh vector, rootlessness is equivalent to strict positivity of every residual Dynkin label; the exact norm-79/4 gate leaves 21 sixth vectors and 167 positive-label tuples. Floating-point-free rational LDL shell enumeration gives 25 fixed-space solutions, twelve integral primitive auxiliary embeddings, and twelve saturated rootless rank-17 complements. Exact PARI integral-isometry deduplication gives exactly two J2 frame classes: the published R17 frame with 1,311 norm-four pairs and automorphism order 2, and the alternate Q80-derived frame with 1,313 pairs and automorphism order 4. Every surviving representative lies in N(2A7+2D5); no other Niemeier ambient contributes a rootless complement. The retained 8-versus-4 embedding-cover counts are not full-automorphism embedding-orbit counts, and no J1 surface-automorphism classification is claimed.",
+      "canonical_source": "elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-R17",
+        "EC-K3-H3-OTHER-R17-J2-CANDIDATE"
+      ],
+      "checker": "elkies-k3/scripts/classify_rootless_j2_niemeier_first.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:de5c69c7ed16a1d10344b79e46d15686ee01fde6de169db0eeb161d0b5409d3c",
+      "software_lock": [
+        "elkies-k3/data/lattice/rootless_j2_auxiliary_rank7_gram.txt",
+        "elkies-k3/scripts/build_rooted_niemeier_catalog.sage",
+        "elkies-k3/scripts/enumerate_niemeier_d5_anchor_orbits.sage",
+        "elkies-k3/scripts/enumerate_niemeier_auxiliary_sixth_dominant.sage",
+        "elkies-k3/scripts/classify_rootless_j2_niemeier_first.sage",
+        "artifacts/generated-results/elkies-k3-rooted-niemeier-catalog.json",
+        "artifacts/generated-results/elkies-k3-niemeier-d5-anchor-orbits.json",
+        "artifacts/generated-results/elkies-k3-niemeier-auxiliary-sixth-dominant.json",
+        "artifacts/generated-results/elkies-k3-rootless-j2-niemeier-first.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md",
+        "elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md",
+        "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],

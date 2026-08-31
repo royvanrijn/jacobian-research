@@ -1,0 +1,667 @@
+{
+  "claim": "For every listed target and ell in {3,5,7,11}, the displayed clean prime gives no point of P^1(F_p) satisfying the reduced modular-polynomial relation. Hence no rational characteristic-zero published-R17 fibre parameter can satisfy Phi_ell(j_R17(t),j(E))=0.",
+  "claim_boundary": "This excludes only cyclic isogenies of degrees 3,5,7,11 from rational published-R17 fibres. It does not test composite degrees, algebraic fibre parameters, or the equation-open alternate Q80-derived fibration.",
+  "clean_prime_gate": [
+    "p>11 and p!=ell",
+    "target discriminant and target-j denominator nonzero modulo p",
+    "published j numerator and denominator retain degree and are coprime",
+    "published surface discriminant retains degree and is squarefree",
+    "recognition polynomial is nonzero and has projective degree at most 24*(ell+1)"
+  ],
+  "inputs": {
+    "model": {
+      "path": "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
+      "sha256": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869"
+    },
+    "targets": {
+      "path": "elliptic-curves/data/elkies_2026_r17_j_recognition_targets.json",
+      "sha256": "94f0b9f504682b12d45c7e0962830ac6b1a1fea8f7313cd282bec9ab2875e337"
+    },
+    "worker": {
+      "path": "elkies-k3/scripts/certify_elkies_2026_r17_isogeny_exclusions.sage",
+      "sha256": "5edbfd45f7cecf05d6760a41cf74565e82ae10f30d8afea0f2d6a00b1e7ee8bc"
+    }
+  },
+  "method": "Specialize Phi_ell(X,Y) at Y=j(E) modulo p, substitute X=N(t)/D(t), and clear D(t)^(ell+1). Factor the resulting polynomial and separately test the projective point at infinity.",
+  "modular_polynomial_string_sha256": {
+    "11": "e9d6b89712213df19fd377a339163abd7c916b703db42f7e5d988866803d50f8",
+    "3": "c231073df96e1c3771fd6ac277d90f5a317855bed437fe87eaeb65ba05398239",
+    "5": "d2f0b24be3c81cca57b575ae002a61332a86263cfe02d10c8b71afe467b3e6e9",
+    "7": "977a197be28e607020074158924b86fa1482cdacb226add30cee8060591368d9"
+  },
+  "prime_search_bound_exclusive": 5000,
+  "published_j_map": {
+    "coordinate": "t",
+    "degree": 24,
+    "denominator_degree": 24,
+    "denominator_sha256_low_to_high": "e5b77cd05579b9d8352aa301fd7eae0c630abce427630f37ccf75219aed01b63",
+    "numerator_degree": 24,
+    "numerator_sha256_low_to_high": "916085cb5ef90e1563a4155f830ef08a5e9952c6bfd20471279d3f84e1c78683"
+  },
+  "schema": "elkies-k3.elkies-2026-published-r17-isogeny-exclusions.v1",
+  "software": {
+    "python": "3.14.7",
+    "sage": "10.9"
+  },
+  "status": "PASS_PUBLISHED_R17_SMALL_PRIME_ISOGENY_EXCLUSIONS",
+  "targets": [
+    {
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-27006183241630922218434652145297453784768054621836357954737385",
+        "55258058551342376475736699591118191821521067032535079608372404779149413277716173425636721497"
+      ],
+      "all_excluded": true,
+      "isogeny_degrees": [
+        {
+          "ell": 3,
+          "witness": {
+            "affine_degree": 96,
+            "clean_primes_tested_through_witness": 1,
+            "coefficient_sha256_low_to_high": "e3e19b34d529f6835446691acf02a6dad39f14749334ae1ea4853d9f31efc3e9",
+            "factor_degrees_with_multiplicity": [
+              4,
+              16,
+              28,
+              48
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 131,
+            "projective_degree": 96,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 5,
+          "witness": {
+            "affine_degree": 144,
+            "clean_primes_tested_through_witness": 2,
+            "coefficient_sha256_low_to_high": "0bceca6131138624c1d6ae8560980148474049c51acc4dbbeedea08eb7c1c71a",
+            "factor_degrees_with_multiplicity": [
+              6,
+              6,
+              6,
+              6,
+              120
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 137,
+            "projective_degree": 144,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 7,
+          "witness": {
+            "affine_degree": 192,
+            "clean_primes_tested_through_witness": 2,
+            "coefficient_sha256_low_to_high": "a522f3e7f2ced1583011f0144238f750743df386433cc70a372a54f20fe45a9a",
+            "factor_degrees_with_multiplicity": [
+              2,
+              2,
+              2,
+              4,
+              8,
+              12,
+              12,
+              14,
+              22,
+              28,
+              40,
+              46
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 137,
+            "projective_degree": 192,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 11,
+          "witness": {
+            "affine_degree": 288,
+            "clean_primes_tested_through_witness": 1,
+            "coefficient_sha256_low_to_high": "d3eb4f5790d23126c35459b2075bd7480c6b5ee5c4a0490ae192be6db4d69ef3",
+            "factor_degrees_with_multiplicity": [
+              12,
+              24,
+              36,
+              216
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 131,
+            "projective_degree": 288,
+            "squarefree": true
+          }
+        }
+      ],
+      "label": "rank29",
+      "target_discriminant": "-58514056884179895803252795545068205623215359270190478217393508483140281138663769634024489915971980794469429246265449489823479442097938729025702174957426421151737866434992604323840000000",
+      "target_j": "-2178278186417661901253576189103582365997935396472623778840162578414756885078160008166998745534482953456950649575682874999212260264866779577866068298184392291373758903459432104260760768986641/58514056884179895803252795545068205623215359270190478217393508483140281138663769634024489915971980794469429246265449489823479442097938729025702174957426421151737866434992604323840000000"
+    },
+    {
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-12892599774455576272301592959047823530919513428112484011550",
+        "560755046348395412977088824999503890617558856687636981223935662848386484980312656296132"
+      ],
+      "all_excluded": true,
+      "isogeny_degrees": [
+        {
+          "ell": 3,
+          "witness": {
+            "affine_degree": 96,
+            "clean_primes_tested_through_witness": 1,
+            "coefficient_sha256_low_to_high": "7e8a8066c1378293abe6ef2d991b0e7792bd02510795f78959809b903c295a29",
+            "factor_degrees_with_multiplicity": [
+              4,
+              8,
+              8,
+              12,
+              64
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 131,
+            "projective_degree": 96,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 5,
+          "witness": {
+            "affine_degree": 144,
+            "clean_primes_tested_through_witness": 2,
+            "coefficient_sha256_low_to_high": "9cd6982554e7b7e55d97e8fa1f73dfa091e78baf2d26427f4e3d0ec78311b23e",
+            "factor_degrees_with_multiplicity": [
+              18,
+              18,
+              48,
+              60
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 137,
+            "projective_degree": 144,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 7,
+          "witness": {
+            "affine_degree": 192,
+            "clean_primes_tested_through_witness": 2,
+            "coefficient_sha256_low_to_high": "870180881420f4ee2d14ce2704b257664444c71173da99e8ef64c51ec48ca1cf",
+            "factor_degrees_with_multiplicity": [
+              2,
+              2,
+              2,
+              4,
+              6,
+              42,
+              42,
+              44,
+              48
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 137,
+            "projective_degree": 192,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 11,
+          "witness": {
+            "affine_degree": 288,
+            "clean_primes_tested_through_witness": 8,
+            "coefficient_sha256_low_to_high": "73779c11769aea543e42d40163288d302a6d867c5a1b8bee3fdc4ab2d9d111bc",
+            "factor_degrees_with_multiplicity": [
+              4,
+              4,
+              12,
+              44,
+              52,
+              84,
+              88
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 211,
+            "projective_degree": 288,
+            "squarefree": true
+          }
+        }
+      ],
+      "label": "curve398",
+      "target_discriminant": "1311021171349839305076869751181166178696551783990116503463598327754948038424504439658681699321482006153838737418363257993512584919966486940354703657840019569754443427840000000",
+      "target_j": "236998291526079648583854965652285717850317537544307333968062927596445176435890133930538298226374627836611773616054545227882944946054156107450589690022916396776998067961033759743201/1311021171349839305076869751181166178696551783990116503463598327754948038424504439658681699321482006153838737418363257993512584919966486940354703657840019569754443427840000000"
+    },
+    {
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-11226388884183735861962205254536431339112877364056989183905",
+        "450194265482766125175008332772346224614695308482085725750790650500195411870167825256777"
+      ],
+      "all_excluded": true,
+      "isogeny_degrees": [
+        {
+          "ell": 3,
+          "witness": {
+            "affine_degree": 96,
+            "clean_primes_tested_through_witness": 1,
+            "coefficient_sha256_low_to_high": "386b83ae46c77d632d77514bf142a5503aaea74c7214988a9fda5ea1a0934603",
+            "factor_degrees_with_multiplicity": [
+              4,
+              4,
+              24,
+              64
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 137,
+            "projective_degree": 96,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 5,
+          "witness": {
+            "affine_degree": 144,
+            "clean_primes_tested_through_witness": 3,
+            "coefficient_sha256_low_to_high": "f974dfce3da89e88fbf37937710633ae241f9927aa39375a42ad4aed5e74de40",
+            "factor_degrees_with_multiplicity": [
+              2,
+              2,
+              4,
+              6,
+              6,
+              8,
+              10,
+              22,
+              36,
+              48
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 157,
+            "projective_degree": 144,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 7,
+          "witness": {
+            "affine_degree": 192,
+            "clean_primes_tested_through_witness": 3,
+            "coefficient_sha256_low_to_high": "a3cd13d3bbb8e67253d9d6dcc7e11bb5967684e31b408b1dd71f961c075d213c",
+            "factor_degrees_with_multiplicity": [
+              48,
+              72,
+              72
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 157,
+            "projective_degree": 192,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 11,
+          "witness": {
+            "affine_degree": 288,
+            "clean_primes_tested_through_witness": 2,
+            "coefficient_sha256_low_to_high": "22170a39454107add68858ea5aab10450597b247a1ce63a1b28ff68d83a71519",
+            "factor_degrees_with_multiplicity": [
+              12,
+              12,
+              12,
+              84,
+              168
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 151,
+            "projective_degree": 288,
+            "squarefree": true
+          }
+        }
+      ],
+      "label": "curve399",
+      "target_discriminant": "2996906487408668684946588524064302639661533663533177016944958230332154017535306076077800764570850204532905563066634896986302693073322454776543014199888730107403271667712000000",
+      "target_j": "437188684191191329419051560262769632314122311426391061750188953513895819485309130341775205234871278129723879062442823919381431850599986533448058086478592415380583566287209111/8373328809141570627744295436754675435126424344412932312627882994186135708417193313638867664226162941437691389945083825270256273412447381546091107006738351454420992000000"
+    },
+    {
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-2847874483810983397135985687546115504035875512904930",
+        "58635720945607333252276967459894829928661530156981574300268557162161405688900"
+      ],
+      "all_excluded": true,
+      "isogeny_degrees": [
+        {
+          "ell": 3,
+          "witness": {
+            "affine_degree": 96,
+            "clean_primes_tested_through_witness": 3,
+            "coefficient_sha256_low_to_high": "30cee1789cfd8b43c3ec10ffdeacb8488bf28b71f2bcf29641c237cb2e19cd36",
+            "factor_degrees_with_multiplicity": [
+              3,
+              5,
+              6,
+              13,
+              33,
+              36
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 151,
+            "projective_degree": 96,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 5,
+          "witness": {
+            "affine_degree": 144,
+            "clean_primes_tested_through_witness": 1,
+            "coefficient_sha256_low_to_high": "8b0dab0bd868cda68f14300f6250413b24373eea68a0ed47e56e1526d4971ff2",
+            "factor_degrees_with_multiplicity": [
+              3,
+              3,
+              3,
+              6,
+              6,
+              9,
+              9,
+              15,
+              21,
+              30,
+              39
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 131,
+            "projective_degree": 144,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 7,
+          "witness": {
+            "affine_degree": 192,
+            "clean_primes_tested_through_witness": 3,
+            "coefficient_sha256_low_to_high": "d936c8937a19ac94afefb21b1cea28d2ce749369d67b2abee5361f3cdc846005",
+            "factor_degrees_with_multiplicity": [
+              4,
+              4,
+              4,
+              8,
+              12,
+              32,
+              36,
+              44,
+              48
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 151,
+            "projective_degree": 192,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 11,
+          "witness": {
+            "affine_degree": 288,
+            "clean_primes_tested_through_witness": 2,
+            "coefficient_sha256_low_to_high": "9851ed5e8698a5dd9a6fdc4c683e77f3b6b5b20a66f1f350d922c37c08264c9b",
+            "factor_degrees_with_multiplicity": [
+              3,
+              3,
+              6,
+              6,
+              6,
+              6,
+              6,
+              9,
+              12,
+              27,
+              33,
+              33,
+              66,
+              72
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 137,
+            "projective_degree": 288,
+            "squarefree": true
+          }
+        }
+      ],
+      "label": "curve400",
+      "target_discriminant": "-7048150461482958989059028240663305327955857359757275013969839824285806183042275878060026843545994391532837981874324443836036952899392928175564470784000000",
+      "target_j": "-19600711737340767304288459746432757739234884166585359113045472471831472218851230852454819678973320927957846652371235395016530064436511753445538311041584401/54082998607154326540304542174041830004035093037632269656999561270139165468667949739950022203221233657912677019623272103774809531076287997909504000000"
+    },
+    {
+      "ainvs": [
+        "1",
+        "0",
+        "0",
+        "-201769035260418549083594900060734240952308696994802735114305555",
+        "1151107939141058565733479426024323225135665982951300586808823640527729578307228357301072889377"
+      ],
+      "all_excluded": true,
+      "isogeny_degrees": [
+        {
+          "ell": 3,
+          "witness": {
+            "affine_degree": 96,
+            "clean_primes_tested_through_witness": 3,
+            "coefficient_sha256_low_to_high": "f44f9b972f4b797f3fcfef1572dfc45f7f4087bb6eff7527188476b5a262300e",
+            "factor_degrees_with_multiplicity": [
+              2,
+              4,
+              4,
+              8,
+              8,
+              12,
+              14,
+              18,
+              26
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 151,
+            "projective_degree": 96,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 5,
+          "witness": {
+            "affine_degree": 144,
+            "clean_primes_tested_through_witness": 3,
+            "coefficient_sha256_low_to_high": "07d2f891dab9f6256007dad217944a878271a08d7bc079d733d25b1f81dfaafd",
+            "factor_degrees_with_multiplicity": [
+              6,
+              6,
+              6,
+              6,
+              6,
+              12,
+              15,
+              21,
+              33,
+              33
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 151,
+            "projective_degree": 144,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 7,
+          "witness": {
+            "affine_degree": 192,
+            "clean_primes_tested_through_witness": 1,
+            "coefficient_sha256_low_to_high": "236df1f09971b9e850bc7cf467fcfa171156057ff8181ff9b53fc03c213e0389",
+            "factor_degrees_with_multiplicity": [
+              16,
+              176
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 131,
+            "projective_degree": 192,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 11,
+          "witness": {
+            "affine_degree": 288,
+            "clean_primes_tested_through_witness": 4,
+            "coefficient_sha256_low_to_high": "d77796ad98d7333fe01ddba0c84e4e36d264e96adf373f8eee4116ef9b364159",
+            "factor_degrees_with_multiplicity": [
+              6,
+              6,
+              66,
+              78,
+              132
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 157,
+            "projective_degree": 288,
+            "squarefree": true
+          }
+        }
+      ],
+      "label": "curve273",
+      "target_discriminant": "-46714661255308767314567688733841531918983356002159772613256840842851650254036518701100578342601553513579222272710220496887616034526983492843954090554197033638137245037791044053017600000000",
+      "target_j": "-908421207611619966397301371501291919756761922734684482806268125472094471799504840865963593736467876552674219212405145331405042867323019584013417593982615086603074757004166961559271290889612721/46714661255308767314567688733841531918983356002159772613256840842851650254036518701100578342601553513579222272710220496887616034526983492843954090554197033638137245037791044053017600000000"
+    },
+    {
+      "ainvs": [
+        "1",
+        "1",
+        "1",
+        "-1284727764113567728281797636015784768866707681415849262157224232063",
+        "560368321454261339256859338901915312332769858684945406858043869199456710681989058863306170127006181"
+      ],
+      "all_excluded": true,
+      "isogeny_degrees": [
+        {
+          "ell": 3,
+          "witness": {
+            "affine_degree": 96,
+            "clean_primes_tested_through_witness": 1,
+            "coefficient_sha256_low_to_high": "a6b268dee9286d49bdbe6220974b5f48c0f4d298f531b1a4b7db49fee62129ec",
+            "factor_degrees_with_multiplicity": [
+              2,
+              2,
+              4,
+              5,
+              6,
+              6,
+              8,
+              9,
+              11,
+              12,
+              15,
+              16
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 137,
+            "projective_degree": 96,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 5,
+          "witness": {
+            "affine_degree": 144,
+            "clean_primes_tested_through_witness": 9,
+            "coefficient_sha256_low_to_high": "a15ca18287533f1089655f93c874792f358f79cb6946d3179899b420fe626871",
+            "factor_degrees_with_multiplicity": [
+              6,
+              30,
+              108
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 227,
+            "projective_degree": 144,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 7,
+          "witness": {
+            "affine_degree": 192,
+            "clean_primes_tested_through_witness": 3,
+            "coefficient_sha256_low_to_high": "f4121474e84e3a5a7054399e8c1d6ea306c944e5c83741d24378b99d3e2e58a6",
+            "factor_degrees_with_multiplicity": [
+              8,
+              16,
+              168
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 157,
+            "projective_degree": 192,
+            "squarefree": true
+          }
+        },
+        {
+          "ell": 11,
+          "witness": {
+            "affine_degree": 288,
+            "clean_primes_tested_through_witness": 1,
+            "coefficient_sha256_low_to_high": "262aa495748f4e90c407b871878a1cc6f1f7718e1138ada50a867ca748f4fead",
+            "factor_degrees_with_multiplicity": [
+              2,
+              3,
+              3,
+              5,
+              5,
+              6,
+              7,
+              8,
+              19,
+              50,
+              65,
+              115
+            ],
+            "finite_linear_factor_count": 0,
+            "infinity_root": false,
+            "prime": 137,
+            "projective_degree": 288,
+            "squarefree": true
+          }
+        }
+      ],
+      "label": "curve302",
+      "target_discriminant": "56986667162894850943626331069759320443067423220527305082244725946223212417010574363800489149279120357391198820328667683955054948591887684940751932057558936585975074155693048247805850350226862080000",
+      "target_j": "375212263011874190418465904591842149883143397000379116040077721209939307800933802063374036449207052554068812677819360841029222896769044613030052189320099029335648176287279769780720048237450063678337025/91178667460631761509802129711614912708907877152843688131591561513957139867216918982080782638846592571825918112525868294328087917747020295905203091292094298537560118649108877196489360560362979328"
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+{
+  "claim_level": "exact bounded computation",
+  "constraint_selection": {
+    "method": "explicit",
+    "reason": "the specification pins local branches or family-specific prime exclusions"
+  },
+  "family": {
+    "a_invariants_and_discriminant_identity_verified": true,
+    "discriminant_degree": 20,
+    "id": "fermigier-mestre-rank12",
+    "source": "elliptic-curves/families/fermigier_mestre_rank12.json"
+  },
+  "interpretation": {
+    "boundary": "Local valuations can select multiple p-adic balls. Declared branch choices are replay inputs, not consequences of the discriminant valuation alone. A j-match proves Qbar-isomorphism of nonsingular fibres, not the submitter's construction method.",
+    "proved": "Every returned candidate lies in the declared bounded CRT/Gauss search and has all displayed forced family-discriminant valuations. Every exact match has the target j-invariant."
+  },
+  "local_fingerprints": [
+    {
+      "affine_target_root_count": 25,
+      "infinity_target_root_count": 5,
+      "maximal_balls": [
+        {
+          "chart": "affine",
+          "exponent": 0,
+          "leaf_count": 25,
+          "modulus": 1,
+          "residue": 0
+        },
+        {
+          "chart": "infinity",
+          "exponent": 1,
+          "leaf_count": 5,
+          "modulus": 5,
+          "residue": 0
+        }
+      ],
+      "prime": 5,
+      "selected_branches": [
+        "p=5 a/b=13 (mod 5^2)"
+      ],
+      "selection": "declared branch",
+      "target_minimal_discriminant_valuation": 2,
+      "target_valuation": 2
+    },
+    {
+      "affine_target_root_count": 3993,
+      "infinity_target_root_count": 0,
+      "maximal_balls": [
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 1331,
+          "modulus": 11,
+          "residue": 0
+        },
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 1331,
+          "modulus": 11,
+          "residue": 3
+        },
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 1331,
+          "modulus": 11,
+          "residue": 8
+        }
+      ],
+      "prime": 11,
+      "selected_branches": [
+        "p=11 a/b=6204 (mod 11^4)"
+      ],
+      "selection": "declared branch",
+      "target_minimal_discriminant_valuation": 4,
+      "target_valuation": 4
+    },
+    {
+      "affine_target_root_count": 338,
+      "infinity_target_root_count": 26,
+      "maximal_balls": [
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 169,
+          "modulus": 13,
+          "residue": 1
+        },
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 169,
+          "modulus": 13,
+          "residue": 12
+        },
+        {
+          "chart": "infinity",
+          "exponent": 2,
+          "leaf_count": 13,
+          "modulus": 169,
+          "residue": 13
+        },
+        {
+          "chart": "infinity",
+          "exponent": 2,
+          "leaf_count": 13,
+          "modulus": 169,
+          "residue": 156
+        }
+      ],
+      "prime": 13,
+      "selected_branches": [
+        "p=13 a/b=1481 (mod 13^3)"
+      ],
+      "selection": "declared branch",
+      "target_minimal_discriminant_valuation": 3,
+      "target_valuation": 3
+    },
+    {
+      "affine_target_root_count": 138,
+      "infinity_target_root_count": 0,
+      "maximal_balls": [
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 23,
+          "modulus": 23,
+          "residue": 5
+        },
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 23,
+          "modulus": 23,
+          "residue": 9
+        },
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 23,
+          "modulus": 23,
+          "residue": 10
+        },
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 23,
+          "modulus": 23,
+          "residue": 13
+        },
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 23,
+          "modulus": 23,
+          "residue": 14
+        },
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 23,
+          "modulus": 23,
+          "residue": 18
+        }
+      ],
+      "prime": 23,
+      "selected_branches": [
+        "p=23 a/b=492 (mod 23^2)"
+      ],
+      "selection": "declared branch",
+      "target_minimal_discriminant_valuation": 2,
+      "target_valuation": 2
+    },
+    {
+      "affine_target_root_count": 186,
+      "infinity_target_root_count": 0,
+      "maximal_balls": [
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 31,
+          "modulus": 31,
+          "residue": 7
+        },
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 31,
+          "modulus": 31,
+          "residue": 9
+        },
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 31,
+          "modulus": 31,
+          "residue": 15
+        },
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 31,
+          "modulus": 31,
+          "residue": 16
+        },
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 31,
+          "modulus": 31,
+          "residue": 22
+        },
+        {
+          "chart": "affine",
+          "exponent": 1,
+          "leaf_count": 31,
+          "modulus": 31,
+          "residue": 24
+        }
+      ],
+      "prime": 31,
+      "selected_branches": [
+        "p=31 a/b=255 (mod 31^2)"
+      ],
+      "selection": "declared branch",
+      "target_minimal_discriminant_valuation": 2,
+      "target_valuation": 2
+    }
+  ],
+  "recovery": {
+    "exact_j_matches": [
+      {
+        "denominator": 42,
+        "forced_valuations": {
+          "11": 4,
+          "13": 3,
+          "23": 2,
+          "31": 2,
+          "5": 2
+        },
+        "height": 11671,
+        "homogeneous_discriminant": "3211336893672683695606786197482138959415870684496206226636739081252665112729670299654524744499200",
+        "local_branches": [
+          "p=5 a/b=13 (mod 5^2)",
+          "p=11 a/b=6204 (mod 11^4)",
+          "p=13 a/b=1481 (mod 13^3)",
+          "p=23 a/b=492 (mod 23^2)",
+          "p=31 a/b=255 (mod 31^2)"
+        ],
+        "numerator": 11671,
+        "parameter": "11671/42"
+      }
+    ],
+    "normalized_vectors_in_declared_boxes": 4,
+    "projective_class_count": 1,
+    "scope": "complete enumeration of the declared projective branches and reduced-basis coefficient box",
+    "shortest_candidates": [
+      {
+        "denominator": 42,
+        "forced_valuations": {
+          "11": 4,
+          "13": 3,
+          "23": 2,
+          "31": 2,
+          "5": 2
+        },
+        "height": 11671,
+        "homogeneous_discriminant": "3211336893672683695606786197482138959415870684496206226636739081252665112729670299654524744499200",
+        "local_branches": [
+          "p=5 a/b=13 (mod 5^2)",
+          "p=11 a/b=6204 (mod 11^4)",
+          "p=13 a/b=1481 (mod 13^3)",
+          "p=23 a/b=492 (mod 23^2)",
+          "p=31 a/b=255 (mod 31^2)"
+        ],
+        "numerator": 11671,
+        "parameter": "11671/42"
+      }
+    ],
+    "singular_parameters_removed": 0,
+    "unique_bounded_parameters": 1
+  },
+  "schema": "elliptic-curves.conductor-parameter-recovery.v1",
+  "specification_sha256": "39f7d5240b634473ab9e5b0f3058ba8d23264ce709e0669fa7c03ca1ca7435c7",
+  "target": {
+    "factorization_over_record_bad_primes": [
+      [
+        "2",
+        10
+      ],
+      [
+        "3",
+        13
+      ],
+      [
+        "5",
+        2
+      ],
+      [
+        "7",
+        4
+      ],
+      [
+        "11",
+        4
+      ],
+      [
+        "13",
+        3
+      ],
+      [
+        "23",
+        2
+      ],
+      [
+        "31",
+        2
+      ],
+      [
+        "599",
+        1
+      ],
+      [
+        "544533839",
+        1
+      ],
+      [
+        "11178415412615466013",
+        1
+      ],
+      [
+        "417544577316007236807560709864792021583751",
+        1
+      ]
+    ],
+    "label": "ICARM curve 282",
+    "minimal_discriminant_small_prime_valuations": [
+      [
+        2,
+        10
+      ],
+      [
+        3,
+        13
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        11,
+        4
+      ],
+      [
+        13,
+        3
+      ],
+      [
+        23,
+        2
+      ],
+      [
+        31,
+        2
+      ]
+    ],
+    "pari_minimalization": {
+      "change_u_r_s_t": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "engine": "PARI/GP 2.15.4",
+      "minimal_discriminant": "2439625040696707803926966353408296355336554478873072981103670520551170171049918006043404792324019200",
+      "minimal_model": [
+        0,
+        1,
+        0,
+        -724392592785859978141334075420616,
+        7118072780333921924205799244128960519106245831620
+      ],
+      "selected_local_reductions": [
+        {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "kodaira_symbol": "I2",
+          "local_root_number": 1,
+          "prime": 5,
+          "split_multiplicative": false,
+          "tamagawa_number": 2
+        },
+        {
+          "conductor_exponent": 1,
+          "kodaira_code": 8,
+          "kodaira_symbol": "I4",
+          "local_root_number": -1,
+          "prime": 11,
+          "split_multiplicative": true,
+          "tamagawa_number": 4
+        },
+        {
+          "conductor_exponent": 1,
+          "kodaira_code": 7,
+          "kodaira_symbol": "I3",
+          "local_root_number": -1,
+          "prime": 13,
+          "split_multiplicative": true,
+          "tamagawa_number": 3
+        },
+        {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "kodaira_symbol": "I2",
+          "local_root_number": 1,
+          "prime": 23,
+          "split_multiplicative": false,
+          "tamagawa_number": 2
+        },
+        {
+          "conductor_exponent": 1,
+          "kodaira_code": 6,
+          "kodaira_symbol": "I2",
+          "local_root_number": 1,
+          "prime": 31,
+          "split_multiplicative": false,
+          "tamagawa_number": 2
+        }
+      ],
+      "submitted_model_is_global_minimal": true
+    },
+    "selector": {
+      "field": "id",
+      "value": 282
+    },
+    "source": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json",
+    "submitted_ainvs": [
+      0,
+      1,
+      0,
+      -724392592785859978141334075420616,
+      7118072780333921924205799244128960519106245831620
+    ],
+    "unfactored_cofactor_after_record_bad_primes": "1"
+  }
+}

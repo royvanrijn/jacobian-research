@@ -136,6 +136,42 @@ or quotient-escape claim is promoted here. Enumerating parent fibres before
 pinning the thirteen generators would conflate the full specialized group
 with the generic MW13 specialization.
 
+## Degree-one MW13 recovery gate
+
+The proposed shortcut through inverse-parent-degree-one shell sections fails
+exactly.  The complete marked physical shell contains 23 such classes, and
+their MW coordinate vectors have rank 12, not 13.  This is independent of the
+finite-field enumeration: the same obstruction is computed in the full
+938-class lattice shell.  Exhaustive shells at `p=83,89,137`, with component
+profiles, Abel traces, and smooth pairwise intersections, give compatible
+reductions of that rank bound.
+
+The exact parent Shioda height lattice is nevertheless recovered abstractly
+as the Schur complement of the four `A1` roots.  Its rank is 13 and its
+determinant is `237/4`, as required by determinant mutation from the
+determinant-948 rootless frame.  The full physical `P.O=0` shell spans this
+saturated lattice, but the current two-profile `p=89` modular shell spans an
+index-8 subgroup.  Therefore a successful equation-level recovery must both
+admit inverse degree greater than one and either enumerate the missing `I2`
+component profiles or certify three independent exact 2-divisions.
+
+The fail-closed replay is:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/recover_p1229_mw13_basis_qq.sage
+```
+
+It writes
+[`../artifacts/generated-results/elkies-k3-p1229-mw13-degree1-recovery-gate.json`](../artifacts/generated-results/elkies-k3-p1229-mw13-degree1-recovery-gate.json)
+and returns status
+`REJECTED_EXACT_DEGREE1_SHELL_CANNOT_SPAN_MW13`.
+
+Consequently no MW13 words are assigned to the 42 controls, the ten invisible
+rank-28 directions remain inconclusive, and parent-point enumeration remains
+disallowed.  This rejects the proposed recovery workflow; it does not prove
+that no saturated equation-level MW13 basis exists by a widened shell.
+
 ## Replay
 
 ```bash

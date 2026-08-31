@@ -75,6 +75,101 @@ it records a bounded negative result, a normalization bug, or a useful local mod
 
 ## Current proof and compiler entry points
 
+### Fixed-u marked Q80 third-q12 search
+
+- `certify_q80_fixed_u_marked_third_q12.sage` is the fail-closed
+  **ACTIVE_SEARCH** for
+  `D7+D5/MW5 --q12--> A5+A3+3A1/MW6`.  It specializes a predeclared
+  low-height rational `u` list on the exact coefficient curve, constructs the
+  source and both q4 children exactly over `QQ`, tests the forced first Q80
+  marking, and independently searches the `D7+D5` child over several good
+  primes.  Modular group-law words are retained only when they have
+  `P.O=2`, height `8`, and identity-component fingerprints at both star
+  fibres.  It can also export the direct denominator-two section scheme
+  `h=W^2+h1*W+h0`, `x=N/h^2`, `y=M/h^3` in either a sparse auxiliary-`M`
+  chart or a dense square-recursive chart and can run a bounded `msolve`
+  probe.  Its current output is reconnaissance: the terminal marked-q12
+  status remains unreachable until projective CRT/LLL, the complete connected
+  `D7+D5` quotient, exact parent/child maps, and the
+  `A5+A3+3A1/MW6` fibre gate all pass.
+
+The affine audit of the forty declared low-height values finds no split forced
+source marking; the separately tested projective point `u=infinity` is a good
+exact q4/q4 specialization but has the same nonsquare marking obstruction.
+The exact first-marking cover is simplified and checked by
+[`simplify_q80_first_marked_cover_qq.sage`](simplify_q80_first_marked_cover_qq.sage)
+to
+`Y^2=2*s*(s^2+s+1/3)*(s^2+2*s+2)`.  A completed `hyperellratpoints` search
+through height `10^8` finds only its visible branch points, so it supplies no
+useful nonbranch rational marked specialization within that bound; this is
+not a global rational-point theorem.
+Among primes at most `19`, the audit selects `u=-2, p=19` as the first good
+affine reduction.  Replay the corrected signed shell through length ten with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_q80_fixed_u_marked_third_q12.sage \
+  --u=-2 --prime 19 --word-length 10 \
+  --output artifacts/generated-results/q80-fixed-u-marked-third-q12-search.json
+```
+
+This bounded search has eight unsigned polynomial section pairs and no target
+profile through length ten.  An optimized extension through length fifteen
+visits 21,871 distinct subgroup points and still finds no target profile; it
+is not a nonexistence proof.  The next modular gate is to reconstruct the
+rank-five Shioda height lattice and enumerate only its finite height-eight
+shell with trivial component class at both star fibres.  Export the
+lower-degree direct scheme, optionally with a bounded solve, using:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_q80_fixed_u_marked_third_q12.sage \
+  --u=-2 --prime 19 --prime-audit-only --direct-chart auxiliary \
+  --direct-msolve-dir artifacts/local/elkies-k3/q80-third-q12-msolve \
+  --run-msolve --msolve-threads 4 --msolve-timeout 60 \
+  --output artifacts/generated-results/q80-fixed-u-minus2-p19-direct-q12-scheme.json
+```
+
+The auxiliary chart has 24 variables and 25 sparse equations (at most 119
+terms each at this specialization).  The recursive chart has 12 variables
+but is much denser (81,870 terms in its largest equation at `u=-2, p=19`).
+The auxiliary `u=-2, p=19` solve and an earlier recursive `u=0, p=23` solve
+both timed out at 60 seconds.
+
+### Rootless J2 classification controls
+
+<!-- status-consumer: EC-K3-H3-ROOTLESS-J2-COMPLETE c6f054948b04b507 -->
+
+- `audit_rootless_j2_completeness_track.sage` certifies the two non-isometric
+  target-genus controls, rejects the mislabeled old neighbour corpus, and
+  computes the exact genus mass obstruction.  It does not claim completeness.
+- `certify_rootless_j2_niemeier_controls.sage` pins the correct rank-seven
+  anti-discriminant auxiliary, constructs all cyclic discriminant gluings for
+  both controls, identifies every ambient as `N(2A7+2D5)`, and exports exact
+  primitive embedding and saturated-complement certificates.  Its norm-12
+  cost probe explains why the completed all-Niemeier search quotients by
+  stabilizer and Weyl actions.
+- `build_rooted_niemeier_catalog.sage` certifies hash-pinned Gram models for
+  all 23 rooted Niemeier lattices and applies the exact `D5` root-system gate;
+  the Leech lattice is excluded separately because the auxiliary has roots.
+- `enumerate_niemeier_d5_anchor_orbits.sage` reduces the thirteen admissible
+  rooted classes to sixteen full-automorphism `D5` anchor orbits, including
+  exact exceptional `E6`, `E7`, and `E8` subsystem enumeration in `--deep`
+  mode.
+- `enumerate_niemeier_auxiliary_sixth_dominant.sage` enumerates all 3,220
+  primitive norm-12 sixth-vector representatives modulo the residual Weyl
+  groups.
+- `classify_rootless_j2_niemeier_first.sage` applies the strict-positive
+  Dynkin-label rootlessness criterion, exactly enumerates 167 remaining
+  rational fixed-space ellipsoids, and deduplicates twelve primitive rootless
+  embedding representatives to exactly two frame classes: published R17 and
+  alternate Q80.  This completes `J2` frame-isometry classification while
+  deliberately not asserting that its retained cover counts are embedding-
+  orbit or `J1` counts.
+
+The current proof boundary and replay commands are in
+[`../ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md`](../ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md).
+
 ### Complete bisection pair-cover arithmetic
 
 - `analyze_elkies_2026_bisection_pair_covers.sage` proves all 39,120

@@ -1,0 +1,74 @@
+diff --git a/libsrc/mrank1.cc b/libsrc/mrank1.cc
+index 2a76d2d..fbe8c00 100644
+--- a/libsrc/mrank1.cc
++++ b/libsrc/mrank1.cc
+@@ -662,7 +662,8 @@ void rank1::gettype(int t) // new hybrid version 13/2/96
+   type=t;
+   long a,astep, amin=0, amax=0, firsta, lasta;
+   long b,bstep;
+-  long c,cstep,cmod3;  
++  bigint c;
++  long cstep,cmod3;
+   int a_is_odd, b_is_odd, a_div_by_4;
+   int a_positive;
+   bigint I48=48*ii, J64=64*jj;
+@@ -1097,29 +1098,17 @@ void rank1::gettype(int t) // new hybrid version 13/2/96
+ #ifdef SHOW_ABC_RANGES
+ 		  cout<<"Before rounding, cmin = "<<(((hmin+xbb3)/xa8))<<endl;
+ #endif
+-		  long cmin;
+-                  success = longify(((hmin + xbb3)/xa8), cmin, +1); // round up
+-                  if (!success)
+-                    {
+-                      cerr<<"2-descent: lower bound "<<(((hmin + xbb3)/xa8))<<" on c too large"<<endl;
+-                      return;
+-                    }
++		  bigint cmin = CeilToZZ((hmin + xbb3)/xa8);
+ 
+ #ifdef SHOW_ABC_RANGES
+ 		  cout<<"Before rounding, cmax = "<<(((hmax+xbb3)/xa8))<<endl;
+ #endif
+-		  long cmax;
+-                  success = longify(((hmax + xbb3)/xa8), cmax, -1); // round down
+-                  if (!success)
+-                    {
+-                      cerr<<"2-descent: upper bound "<<(((hmin + xbb3)/xa8))<<" on c too large"<<endl;
+-                      return;
+-                    }
++		  bigint cmax = FloorToZZ((hmax + xbb3)/xa8);
+ 
+ 		  if(cmin>cmax+1)
+ 		    cout<<"Empty c-range!  cmin = "<<cmin<<", cmax = "<<cmax<<"\n";
+ 
+-		  while(mod(cmin,3)!=cmod3) 
++		  while(mod(I2long(cmin % BIGINT(3)),3)!=cmod3)
+ 		    cmin++; // Skip to correct residue mod 3
+ 		  while(cmin%cfac2)       
+ 		    cmin+=3; // Skip to next multiple of cfac2
+@@ -1135,7 +1124,7 @@ void rank1::gettype(int t) // new hybrid version 13/2/96
+ 		  while(iaux--) 
+ 		    {
+ 		      long aux=(*auxi);
+-		      long  cmod  = c%aux, bmod  = b%aux;
++		      long cmod = I2long(c % BIGINT(aux)), bmod = b%aux;
+ 		      long bb3mod = (3*bmod*bmod)%aux;
+ 		      long h0 = (((8*a*cmod)%aux)-bb3mod)%aux; 
+ 		      if(extra2) h0=posmod((*hscalemodi)*h0,aux);
+@@ -1181,7 +1170,7 @@ void rank1::gettype(int t) // new hybrid version 13/2/96
+ // We have an (a,b,c)-triple which passes the sieve test
+ 
+ 		      ah_sieve_0++;
+-		      bigfloat xh=8*xa*c-xbb3;
++		      bigfloat xh=8*xa*I2bigfloat(c)-xbb3;
+ 		      int ok=1;
+ 
+ // Check that rounding has not put us outside the range:
+@@ -1228,7 +1217,7 @@ void rank1::gettype(int t) // new hybrid version 13/2/96
+ #ifdef DEBUG_AH
+ 		      cout<<"; r = "<<r<<" "<<flush;
+ #endif	      
+-		       bigint bigc = BIGINT(c); 
++		       bigint bigc = c;
+ 		       bigint bigcsq = bigc*bigc; 
+ 		       bigint ii_cc = ii-bigcsq;  
+ #ifdef USE_BIGINTS

@@ -72,7 +72,9 @@ shell = json.loads(SHELL.read_text())
 assert q8["status"] == "PASS_EXACT_QQ_Q8O376_4A1_RR_JACOBIAN_AND_P1229_ZERO"
 assert shell["prime"] == int(prime)
 assert shell["status"].startswith("PASS_MODP_Q12O5867_P0_SHELL")
-assert "all_records" in shell and len(shell["all_records"]) == 300
+assert "all_records" in shell
+assert len(shell["all_records"]) == shell["direct_shell"]["unique_signed_section_count"]
+assert len(shell["all_records"]) > 0
 
 PT = PolynomialRing(F, "T")
 T = PT.gen()
@@ -795,6 +797,60 @@ def polynomial_section_intersection(left_record, right_record):
     return int(common.degree()+infinity_intersection)
 
 
+# Resolve every profile/trace ambiguity that can be separated by a smooth
+# intersection with an already unique shell anchor.  Earlier versions did
+# this only for the four-word compiler candidates, which made the classifier
+# unnecessarily awkward to reuse for an MW-basis recovery.
+complete_intersection_disambiguation = []
+unique_anchor_rows = [
+    row for row in classifications
+    if len(row["profile_compatible_lattice_class_indices"]) == 1
+]
+for row in classifications:
+    alternatives = row["profile_compatible_lattice_class_indices"]
+    if len(alternatives) <= 1:
+        continue
+    surviving = set(alternatives)
+    comparisons = []
+    for anchor in unique_anchor_rows:
+        observed = polynomial_section_intersection(
+            shell["all_records"][row["shell_index"]],
+            shell["all_records"][anchor["shell_index"]],
+        )
+        if observed is None:
+            continue
+        anchor_class = physical_classes[
+            anchor["profile_compatible_lattice_class_indices"][0]
+        ]
+        expected = {
+            index: int(
+                physical_classes[index]["current_4A1_section"]
+                * gram * anchor_class["current_4A1_section"]
+            )
+            for index in alternatives
+        }
+        comparisons.append({
+            "anchor_shell_index": anchor["shell_index"],
+            "anchor_lattice_class_index": anchor_class["class_index"],
+            "observed_smooth_section_intersection": observed,
+            "expected_lattice_intersections": {
+                str(index): value for index, value in expected.items()
+            },
+        })
+        surviving &= {
+            index for index, value in expected.items() if value == observed
+        }
+        if len(surviving) <= 1:
+            break
+    complete_intersection_disambiguation.append({
+        "shell_index": row["shell_index"],
+        "initial_class_alternatives": alternatives,
+        "surviving_class_alternatives": sorted(surviving),
+        "comparisons": comparisons,
+        "resolved_uniquely": len(surviving) == 1,
+    })
+
+
 intersection_disambiguation = []
 if possible_best_pole is not None:
     selected_shells = sorted(set(sum(possible_best_pole["all_realizing_shell_indices"], [])))
@@ -1077,6 +1133,7 @@ payload = {
         "uniquely_realized_lattice_class_count": len(realizations),
         "profile_compatible_possible_lattice_class_count": len(possible_realizations),
         "records": classifications,
+        "complete_pairwise_intersection_disambiguation": complete_intersection_disambiguation,
     },
     "q12o5867_realized_four_section_search": {
         "target_fibre_fingerprint_sha256": target_record["fibre_fingerprint_sha256"],

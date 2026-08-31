@@ -136,10 +136,20 @@ collapse to one copy of each odd prime in `N`.  The global root number is
 ## What can be recovered about the construction
 
 The public curve page contains no commentary, family equation, parameter,
-search bounds, or generic-section formulas.  The submitter's only other
-public ICARM entry is [curve 351](https://elliptic-rank.icarm.cloud/curve/351),
-a rank-at-least-25 curve submitted 27 minutes 44 seconds earlier.  Comparing
-those two records gives a strong common-lineage signal.
+search bounds, or generic-section formulas.  At the 2026-08-25 snapshot used
+for the original replay, the submitter's only other public ICARM entry was
+[curve 351](https://elliptic-rank.icarm.cloud/curve/351), a rank-at-least-25
+curve submitted 27 minutes 44 seconds earlier.  Comparing those two records
+gave a strong common-lineage signal.
+
+The later 2026-09-01 sweep finds curves 376, 377, and 385 in the same bounded
+ordered-height component and exports all five canonical short fibres as an
+inverse-interpolation input.  See
+[`ICARM_WGXLI_RANK17_LINEAGE.md`](ICARM_WGXLI_RANK17_LINEAGE.md).  This update
+strengthens the lineage evidence but remains numerical family-recognition
+evidence, not a construction certificate.
+
+<!-- status-consumer: EC-ICARM-WGXLI-R17-LINEAGE 90790392f558f0a0 -->
 
 ### Ordered 17-point fingerprint
 

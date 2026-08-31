@@ -1,7 +1,8 @@
 # Recovering the other rank-17 fibration
 
-<!-- status-consumer: EC-K3-H3-OTHER-R17-J2-CANDIDATE 5ca661346a25c1f0 -->
+<!-- status-consumer: EC-K3-H3-OTHER-R17-J2-CANDIDATE f1884d1f6168a934 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES 1c39220ee5fedc77 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R17-SMALL-ISOGENY-EXCLUSIONS fc2c4caaa79fb36c -->
 
 ## Outcome
 
@@ -97,6 +98,19 @@ coefficient vectors are in
 The public target equations and source hashes are pinned in
 [`elkies_2026_r17_j_recognition_targets.json`](../elliptic-curves/data/elkies_2026_r17_j_recognition_targets.json).
 
+The separate small-prime isogeny gate also excludes rational published-R17
+parameters satisfying
+
+```text
+Phi_ell(j_R17(t),j(E))=0,  ell=3,5,7,11,
+```
+
+for all six targets.  Every test has a clean projective no-root witness; the
+witness table and complete modular factor degrees are in
+[`PUBLISHED_R17_SMALL_ISOGENY_EXCLUSIONS_2026-09-01.md`](PUBLISHED_R17_SMALL_ISOGENY_EXCLUSIONS_2026-09-01.md).
+This does not test the alternate Q80-derived fibration or other isogeny
+degrees.
+
 The 2024 announcement is the decisive provenance clue: it says the rank-29
 curve was found by specializing a rank-17 fibration of the same K3 surface and
 then searching outside the generic rank-17 subgroup.  It does not publish the
@@ -152,8 +166,7 @@ not claimed.
 | candidate | structural value | old-fibre degree | RR/local cost | equation status | priority |
 | --- | --- | ---: | --- | --- | ---: |
 | published R17 | exact control and exclusion map | 2 on final construction edge | completed | exact over `QQ` | control |
-| alternate q80 q4--q6 frame | distinct rootless `J2` class; strongest rank-29 provenance candidate currently present | 2 | `h0=5`, three local transforms, final kernel 2 | generic characteristic-zero parent/child open; exact `GF(73)` specialization shadow | 1 |
-| other rootless classes | needed for a completeness theorem | unknown | unknown | not enumerated | 2 |
+| alternate q80 q4--q6 frame | unique non-published rootless `J2` class; strongest rank-29 provenance candidate currently present | 2 | `h0=5`, three local transforms, final kernel 2 | generic characteristic-zero parent/child open; exact `GF(73)` specialization shadow | 1 |
 
 The apparent simplicity of the final q6 is conditional on reaching its own
 generic parent equation.  Transporting the q80 corridor directly from the
@@ -162,6 +175,8 @@ Construction should resume from the q80 characteristic-zero checkpoints, not
 by pulling this fibre through the published R17 equation.
 
 ## Classification programme
+
+<!-- status-consumer: EC-K3-H3-ROOTLESS-J2-COMPLETE c6f054948b04b507 -->
 
 The correct completeness target is a Kneser--Nishiyama `J2` classification,
 not another unrestricted neighbor walk.  Nishiyama's method classifies frame
@@ -173,8 +188,9 @@ paper](https://doi.org/10.4099/math1924.22.293) and a modern summary of the
 
 For this Picard-19 lattice the implementation gates are:
 
-1. pin one explicit rank-seven negative-definite auxiliary lattice with the
-   opposite discriminant form to `NS(H3)`;
+1. pin one explicit positive-definite rank-seven auxiliary lattice whose
+   discriminant form is opposite to the positive frame form (equivalently,
+   compatible with the sign convention for `NS(H3)`);
 2. enumerate primitive embeddings into every Niemeier root lattice modulo its
    Weyl group and glue automorphisms;
 3. compute each orthogonal complement including primitive closure and glue;
@@ -184,9 +200,8 @@ For this Picard-19 lattice the implementation gates are:
 6. refine from `J2` to `J1` only after the relevant surface automorphism action
    is known.
 
-The two exact frames now in hand are mandatory positive controls for that
-enumeration.  Any purported complete classifier that returns fewer than two
-rootless frame classes is wrong.
+The two exact frames were used as mandatory positive controls.  The complete
+classifier returns exactly those two classes.
 
 The exact first-pass audit is now recorded in
 [`ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md`](ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md).
@@ -197,6 +212,26 @@ the cheap route.  The same audit rejects all 65 old files under
 `seeds/target-genus-rootless-pneighbor`: they occupy a different 2-adic and
 79-adic genus and contribute no new `J2` control.  Niemeier filtering should
 therefore precede, not follow, exhaustive positive-definite enumeration.
+
+The auxiliary and both Niemeier positive controls are exact.  The pinned
+rank-seven lattice has cyclic quadratic module `[1267/948]` and root system
+`D5`.  All eight discriminant anti-isometries for each control glue to
+`N(2A7+2D5)` and recover the requested saturated complement.  Modulo
+`Aut(K) x Aut(R)`, the published control has two primitive embedding orbits
+and the alternate has one.
+
+The all-24-Niemeier enumeration is also complete.  The Leech lattice and ten
+rooted classes fail the exact `D5` gate; thirteen rooted classes give sixteen
+full-automorphism `D5` anchor orbits.  Residual-Weyl enumeration produces
+3,220 primitive sixth-vector representatives, of which only 21 can support a
+rootless dominant seventh vector.  The 167 positive-label cases reduce to 25
+exact fixed-space ellipsoid solutions and twelve integral primitive
+embeddings.  Their saturated complements form exactly two integral isometry
+classes: the published frame (eight representatives in the enumerated cover)
+and the alternate frame (four), all in `N(2A7+2D5)`.  The cover counts are not
+embedding-orbit counts because anchor-stabilizer duplicates are retained.
+Thus there is no third rootless `J2` equation candidate; the alternate frame
+is the unique non-published construction target.
 
 ## Rank-29-first construction gate
 
@@ -229,6 +264,15 @@ not proof of a common fibration.
   'from sage.all import *; globals()["__file__"]="/home/royvanrijn/src/jacobian-research/elkies-k3/scripts/canonicalize_other_rank17_candidate.sage"; load(__file__)'
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_rootless_j2_niemeier_controls.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/classify_rootless_j2_niemeier_first.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_elkies_2026_r17_isogeny_exclusions.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/compute_other_rank17_invariants.sage
 
 python3 elkies-k3/scripts/gate_a_alternate_rank17_rank29.py \
@@ -237,8 +281,11 @@ python3 elkies-k3/scripts/gate_a_alternate_rank17_rank29.py \
 ```
 
 The first command proves the `j`-exclusions and control factor.  The next two
-replay rootlessness, non-isometry, nefness, and the cost model.  The last one
-of those three pins the alternate `U` embedding in H3/R17 NS coordinates.  The
-final two commands compute the exact bounded intrinsic invariants and replay
-the calibrated full-lattice Gate A search.  None constructs the missing
-characteristic-zero equation or proves a complete fibration classification.
+replay rootlessness, non-isometry, nefness, and the cost model.  The following
+command pins the alternate `U` embedding in H3/R17 NS coordinates, and the
+first Niemeier replay certifies the auxiliary and both positive-control
+gluings.  The complete Niemeier replay proves that those controls are exactly
+the two rootless `J2` frame classes.  The final two commands compute the exact
+bounded intrinsic invariants and replay the calibrated full-lattice Gate A
+search.  None constructs the missing characteristic-zero equation or refines
+the completed `J2` classification to `J1` surface-automorphism orbits.

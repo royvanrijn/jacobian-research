@@ -16,7 +16,8 @@ import argparse
 import json
 from pathlib import Path
 
-from sage.all import GF, Matrix, PolynomialRing, PowerSeriesRing, QQ, ZZ, binomial, vector
+from sage.all import *
+from sage.misc.persist import load
 
 
 parser = argparse.ArgumentParser()
@@ -491,14 +492,15 @@ common = {
     "order": arguments.order,
     "caveat": "finite formal reduction; not a characteristic-zero identity",
 }
-if arguments.jet_output and exact_mode:
-    raise ValueError("exact CM jet export is intentionally disabled")
 if arguments.jet_output:
     payload = dict(common)
     payload.update({
         "kind": "normalized_formal_jet",
         "active_variables": list(active_names),
-        "coefficients": [[int(ZZ(value)) for value in row] for row in coefficients],
+        "coefficients": [
+            [str(value) if exact_mode else int(ZZ(value)) for value in row]
+            for row in coefficients
+        ],
     })
     Path(arguments.jet_output).write_text(json.dumps(payload, indent=2, sort_keys=True)+"\n")
 if arguments.relation_basis_output:

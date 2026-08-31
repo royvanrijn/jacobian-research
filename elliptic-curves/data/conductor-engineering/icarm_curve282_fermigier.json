@@ -1,0 +1,49 @@
+{
+  "schema": "elliptic-curves.conductor-parameter-recovery-spec.v1",
+  "family": {
+    "file": "elliptic-curves/families/fermigier_mestre_rank12.json",
+    "model_path": ["canonical_weierstrass_model"]
+  },
+  "target": {
+    "label": "ICARM curve 282",
+    "record_file": "artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json",
+    "records_path": ["curves"],
+    "match": {"field": "id", "value": 282}
+  },
+  "constraints": [
+    {
+      "prime": 5,
+      "exponent": 2,
+      "branch": {"chart": "affine", "exponent": 2, "residue": 13}
+    },
+    {
+      "prime": 11,
+      "exponent": 4,
+      "branch": {"chart": "affine", "exponent": 4, "residue": 6204}
+    },
+    {
+      "prime": 13,
+      "exponent": 3,
+      "branch": {"chart": "affine", "exponent": 3, "residue": 1481}
+    },
+    {
+      "prime": 23,
+      "exponent": 2,
+      "branch": {"chart": "affine", "exponent": 2, "residue": 492}
+    },
+    {
+      "prime": 31,
+      "exponent": 2,
+      "branch": {"chart": "affine", "exponent": 2, "residue": 255}
+    }
+  ],
+  "search": {
+    "maximum_roots": 100000,
+    "coefficient_radius": 2,
+    "height_cap": 20000,
+    "weights": [1, 1],
+    "candidate_limit": 20
+  },
+  "maximum_fingerprint_prime": 31,
+  "provenance_boundary": "The five exact branch residues replay the recovered parameter's local classes. The target valuations alone select larger unions of root balls."
+}

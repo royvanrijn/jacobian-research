@@ -63,6 +63,25 @@ for a common ordered 17-section template, not a family-recognition theorem.
 See
 [`ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md`](notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md).
 
+Replay the later complete same-submitter sweep, its three bounded residual
+components, and the five-fibre 351/356/376/377/385 interpolation export:
+
+<!-- status-consumer: EC-ICARM-WGXLI-R17-LINEAGE 90790392f558f0a0 -->
+
+```sh
+.venv/bin/python \
+  elliptic-curves/cas/analyze_icarm_wgxli_rank17_lineages.py
+
+.venv/bin/python \
+  elliptic-curves/cas/analyze_icarm_wgxli_rank17_lineages.py \
+  --write-artifact \
+  artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_lineage_v1.json
+```
+
+This pins three additional candidate fibres and canonical short-model data;
+it does not prove a common family or rootless-K3 realization.  See
+[`ICARM_WGXLI_RANK17_LINEAGE.md`](notes/ICARM_WGXLI_RANK17_LINEAGE.md).
+
 ### ICARM curve 302: rank at least 31
 
 The fast checker verifies both pinned hashes and recomputes the complete exact
@@ -179,6 +198,24 @@ PYTHONPATH=elliptic-curves/cas \
 These are numerical/bounded provenance calculations, not a K3 specialization
 certificate.  See
 [`RECORD_CURVES_28_29_273_302_HEIGHT_LATTICES.md`](notes/RECORD_CURVES_28_29_273_302_HEIGHT_LATTICES.md).
+
+### ICARM curve 282: local-conductor parameter recovery
+
+Replay the generic two-chart discriminant-root, CRT, Gauss-reduction, and
+exact `j`-recognition pipeline on the known Fermigier fibre:
+
+```sh
+python3 elliptic-curves/scripts/recover_conductor_parameter.py \
+  elliptic-curves/data/conductor-engineering/icarm_curve282_fermigier.json \
+  --output artifacts/generated-results/elliptic-curves/icarm_curve282_conductor_parameter_recovery_v1.json \
+  --check
+```
+
+This recovers `u=11671/42` from the five declared local branches and verifies
+the target's global minimality and exact family `j`-match.  The branch
+residues are replay inputs: the discriminant valuations alone select coarser
+p-adic balls.  See
+[`CONDUCTOR_PARAMETER_RECOVERY.md`](notes/CONDUCTOR_PARAMETER_RECOVERY.md).
 
 ### ICARM curves 285 and 286: low-conductor candidates
 
@@ -591,6 +628,33 @@ On eclib 20231211/20231212 this exits without a bound at the native-integer
 conversion in quartic enumeration (`lower bound on c too large`).  The same
 failure has been replayed on all four fixed targets; it is a backend resource
 failure, not Selmer evidence.
+
+The repository pins the experimental widening patch used to test whether that
+conversion is the only ICARM 245 obstruction:
+
+```sh
+git clone --depth 1 --branch v20231212 \
+  https://github.com/JohnCremona/eclib.git /tmp/eclib-20231212-bigint-c
+
+git -C /tmp/eclib-20231212-bigint-c apply \
+  "$PWD/elliptic-curves/cas/eclib-20231212-bigint-quartic-c.patch"
+
+cd /tmp/eclib-20231212-bigint-c
+./autogen.sh
+./configure --disable-allprogs --enable-mpfp
+make -j2
+
+printf '%s\n' \
+  '[1,-1,1,-25880411472355347134118026792,1606663697747901005185875883284420820193259]' \
+  | timeout --signal=INT --kill-after=5s 30s \
+      ./progs/mwrank -q -v 1 -p 256 -s -x 22
+```
+
+This patch only changes `c`, `cmin`, and `cmax` to NTL integers and preserves
+the exhaustive enumeration.  It passes the former conversion terminal, then
+times out in the first Type-3 slice without a Selmer or rank bound.  It is a
+backend diagnostic, not a practical descent implementation or mathematical
+evidence.
 
 Apply the same gates to the closed 27-fibre anchor-neighborhood pilot:
 

@@ -190,6 +190,14 @@ is strong evidence for deliberate small-prime conductor engineering, but by
 itself it does not prove which algorithm the submitter ran; sufficiently large
 local modulus permits rational reconstruction from an already known parameter.
 
+The reusable replay additionally exposes the complete maximal root balls and
+checks the target's global minimality, selected Tate data, both projective
+charts, and the final `j`-identity.  It also makes the logical limitation
+explicit: the five exact leaf residues are replay inputs, whereas the
+discriminant valuations alone determine substantially coarser unions of
+p-adic balls.  See
+[`CONDUCTOR_PARAMETER_RECOVERY.md`](CONDUCTOR_PARAMETER_RECOVERY.md).
+
 The next structural test should be family recognition, not coefficient
 regression: compare the exact `j`-values against the repository's corrected
 K3/Mestre maps, and if a specialization is found, transport the generic
@@ -201,6 +209,10 @@ sections and measure the exceptional quotient directions.
 python3 elliptic-curves/cas/analyze_icarm_7fff_zip_sequence.py
 python3 elliptic-curves/cas/analyze_icarm_curve282_fermigier.py
 python3 elliptic-curves/cas/analyze_icarm_construction_fingerprints.py
+python3 elliptic-curves/scripts/recover_conductor_parameter.py \
+  elliptic-curves/data/conductor-engineering/icarm_curve282_fermigier.json \
+  --output artifacts/generated-results/elliptic-curves/icarm_curve282_conductor_parameter_recovery_v1.json \
+  --check
 ```
 
 Pinned input and output:
@@ -208,8 +220,10 @@ Pinned input and output:
 - `artifacts/generated-results/elliptic-curves/icarm_7fff_zip_public_source_281_282_285_286.json`
 - `artifacts/generated-results/elliptic-curves/icarm_7fff_zip_independence_analysis_v1.json`
 - `artifacts/generated-results/elliptic-curves/icarm_construction_fingerprints_v1.json`
+- `artifacts/generated-results/elliptic-curves/icarm_curve282_conductor_parameter_recovery_v1.json`
 
 This proves the rank lower bounds from the displayed points and exactly
-reconstructs curve 282's Fermigier parameter from its high-power local roots.
-It does not prove exact ranks, identify the submitter's implementation, or
-independently recompute the four conductors.
+reconstructs curve 282's Fermigier parameter from the declared high-power
+local branches.  The valuations alone do not select those exact branches.  It
+does not prove exact ranks, identify the submitter's implementation, or
+independently recompute all four conductors.

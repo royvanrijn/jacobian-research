@@ -88,3 +88,23 @@ after compatible outputs exist at several split good primes is canonical
 marking alignment and rational reconstruction justified.  Until that generic
 equation is obtained, no alternate-frame `j`-map exists and no recognition
 claim for the rank-29 curve or ICARM 398--400, 273, or 302 is made.
+
+The downstream reconstruction gate is nevertheless executable and regression
+tested.  [`scripts/reconstruct_q80_alternate_rootless_crt_qq.sage`](scripts/reconstruct_q80_alternate_rootless_crt_qq.sage)
+accepts only endpoint records with schema
+`elkies-k3.q80-alternate-rootless-aligned-modp.v1`, the complete route id, a
+common canonical marking and normalization, a common route-map chain id, and
+the same nonempty set of prime-specific parent/child map digests.  It reserves
+the final primes as a held-out ensemble, performs coefficientwise rational
+reconstruction with a simultaneous projective-LLL fallback, replays every
+coefficient at all training and held-out primes, and only then classifies the
+exact fibres and emits the reduced `j`-map.  The synthetic 24I1 regression
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/test_q80_alternate_rootless_crt_qq.sage
+```
+
+also proves that a tampered held-out coefficient, a mismatched canonical
+marking, or a missing map slot is rejected.  This is infrastructure, not the
+missing generic equation or a recognition result.

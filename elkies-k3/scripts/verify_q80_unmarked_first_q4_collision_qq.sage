@@ -17,7 +17,8 @@ import hashlib
 import json
 from pathlib import Path
 
-from sage.all import PolynomialRing, QQ
+from sage.all import *
+from sage.misc.persist import load
 
 
 ROOT = Path(__file__).resolve().parents[2]

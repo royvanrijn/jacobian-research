@@ -182,6 +182,23 @@ not Selmer evidence:
   primes, ICARM 245 fails when converting a quartic coefficient lower bound
   of about `-1.72e28`, while family 3 at `u=660` fails at about `-2.24e31`;
   the earlier Fermigier and family-2 runs have the identical failure class.
+  A source build at tag `v20231212`, commit
+  `c4a9d5be304c1cc80cb5020ebeeecd3f237ca4c6`, was then patched to use NTL
+  integers for the quartic-enumeration variable `c` and its bounds; the pinned
+  patch has SHA-256
+  `eacaf6a9667d5f0ea70652913cdb7dce681cb66f8f349fdbdeee78a686cdac3d`.
+  The patched executable agrees with the packaged executable on the rank-5
+  smoke curve `[0,0,1,-79,342]` and passes the previous ICARM 245 conversion
+  failure at 256-bit real precision.  It then remains in the first Type-3
+  quartic enumeration until the strict 30-second wall stop (peak RSS 19,520
+  KiB), returning no rank or Selmer bound.  An independent 100-decimal PARI
+  evaluation gives `5,728,687,860,386,985,887,994,542,644` actual `c` loop
+  values in the first `a=1,b=0` slice before the auxiliary local flags.  Thus
+  widening the integer type removes this representation failure but does not
+  make the existing exhaustive enumeration viable.  Current eclib master at
+  commit `8e0f64171a663f11e859afa15b29e589328e1738` was also attempted, but its
+  FLINT interface does not compile against Ubuntu's FLINT 3.0.1 headers; no
+  arithmetic conclusion is drawn from that build failure.
 - Official Magma calculator V2.29-9: `TwoSelmerGroup(E)` reaches the service
   memory limit on all four targets before assigning a Selmer group.  The
   dimension-only call has the same failure as `TwoDescent`, locating the

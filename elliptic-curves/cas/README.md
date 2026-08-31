@@ -16,6 +16,9 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   denominator and numerical height-Gram comparison; this does not identify a
   family.
 - `verify_icarm_curve273_rank30.py`: independent rank-at-least-30 replay.
+- `analyze_record_first17_subgroups.py`: exact first-seventeen coordinate,
+  quotient, finite-Kummer, and bad-component comparison for curves 273 and
+  302, plus a 100-digit canonical-height/theta profile.
 - `analyze_icarm_7fff_zip_sequence.py`: exact independence replay for the
   public curves 281, 282, 285, and 286, plus repository-local global
   minimality and complete local conductor reconstruction for 285 and 286.

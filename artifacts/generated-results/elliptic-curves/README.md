@@ -22,6 +22,16 @@ strict:
 
 Important distinctions made explicit by the catalogue:
 
+- `icarm_curve282_conductor_parameter_recovery_v1.json` verifies global
+  minimality, selected local Tate data, two-chart discriminant-root profiles,
+  bounded CRT/Gauss recovery of `u=11671/42`, and the exact Fermigier/target
+  `j`-identity.  Its exact leaf residues are replay inputs; the valuations
+  alone determine only coarser p-adic balls.
+- `record_first17_subgroups_v1.json` exactly computes the first-seventeen
+  coordinate, quotient, finite-Kummer, and bad-component codes for curves 273
+  and 302, while its canonical-height/theta layer is numerical at 100 digits.
+  Its saturation index one is only inside each displayed subgroup, not in the
+  full Mordell--Weil group.
 - `icarm_curve302_rank31_v1.json.gz` proves rank at least 31, not exact rank 31.
 - The ICARM 285/286 analysis exactly proves independence of 21 displayed
   points and now independently replays global minimality and every local
