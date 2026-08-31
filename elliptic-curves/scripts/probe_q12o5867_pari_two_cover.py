@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# <!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE f5600026fe1e9656 -->
 """Run a strictly bounded PARI 2-cover search on one q12o5867 fibre.
 
 The input is an exact q12o5867 specialization artifact containing the global
@@ -9,8 +10,10 @@ mapped back by PARI's exact covering map.  The Python supervisor checks those
 images exactly and measures escape from the rank-17 subgroup with the
 repository's finite-reduction quotient implementation.
 
-This is a bounded point-search backend.  A timeout, resource stop, empty cover
-search, or zero observed quotient gain is not a rank upper bound.
+This is a bounded point-search backend.  It is disabled unless an
+unconditional completed residual 2-Selmer artifact for the same minimal curve
+has already passed the rank-32 room gate.  A timeout, resource stop, empty
+cover search, or zero observed quotient gain is not a rank upper bound.
 """
 
 from __future__ import annotations
@@ -40,6 +43,7 @@ sys.path.insert(0, str(CAS))
 sys.path.insert(0, str(SCRIPTS))
 
 from elliptic_candidate_record import is_on_weierstrass_curve  # noqa: E402
+from elkies_residual_selmer_gate import require_expensive_search_gate  # noqa: E402
 from probe_q12o5867_mwrank import (  # noqa: E402
     exact_escape_records,
     parse_point,
@@ -242,6 +246,9 @@ def exact_candidate_records(
 
 def run(args: argparse.Namespace) -> int:
     artifact, model = load_specialization(args.input)
+    descent_gate = require_expensive_search_gate(
+        args.residual_selmer_gate, expected_model=model
+    )
     executable = shutil.which("gp")
     if executable is None:
         raise FileNotFoundError("PARI/GP executable 'gp' was not found")
@@ -366,6 +373,11 @@ def run(args: argparse.Namespace) -> int:
             ),
         },
         "finite_quotient_escape": escape,
+        "residual_selmer_gate": {
+            "path": str(args.residual_selmer_gate.resolve()),
+            "sha256": sha256_file(args.residual_selmer_gate),
+            "status": descent_gate["status"],
+        },
         "promotion_threshold": 15,
         "promoted": escape["maximum_marginal_dimension"] >= 15,
         "claim_boundary": [
@@ -377,6 +389,7 @@ def run(args: argparse.Namespace) -> int:
         "reproducing_command": (
             f".venv/bin/python {Path(__file__).relative_to(REPOSITORY)} "
             f"--input {args.input} --output {args.output} "
+            f"--residual-selmer-gate {args.residual_selmer_gate} "
             f"--search-height {args.search_height} --timeout {args.timeout} "
             f"--stack-bytes {args.stack_bytes} --rss-limit-bytes {args.rss_limit_bytes}"
         ),
@@ -412,6 +425,12 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--residual-selmer-gate",
+        type=Path,
+        required=True,
+        help="passing unconditional gate for this exact minimal curve",
+    )
     parser.add_argument("--search-height", type=int, default=1_000_000)
     parser.add_argument("--timeout", type=float, default=600.0)
     parser.add_argument("--stack-bytes", type=int, default=2_000_000_000)

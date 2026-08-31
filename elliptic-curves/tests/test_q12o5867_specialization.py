@@ -53,6 +53,22 @@ class Q12O5867SpecializationTests(unittest.TestCase):
             )
         )
 
+    def test_published_sections_reconstruct_from_quadratic_chords(self) -> None:
+        data = load_q12o5867_data(
+            ROOT / "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
+            ROOT / "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json",
+        )
+        self.assertEqual(data.coordinate, "elkies_2026_published_t")
+        for a, b in ((-2, 377), (-308, 251), (2456, 135), (-9529, 5471), (1, 0)):
+            specialization = evaluate_projective_specialization(data, a, b)
+            self.assertEqual(len(specialization.points), 17)
+            self.assertTrue(
+                all(
+                    is_on_weierstrass_curve(specialization.model, point)
+                    for point in specialization.points
+                )
+            )
+
     @unittest.skipUnless(
         (ROOT / "artifacts/local/elkies-k3/q12o5867-smooth-rr-qq.json").exists()
         and (

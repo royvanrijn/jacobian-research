@@ -7,16 +7,21 @@
 //
 // Usage:
 //   scan TABLE NUM DEN BUCKET_WIDTH KEEP1,KEEP2,... FINALISTS OUTPUT.json
-//        [PARAMETER_SCALE]
+//        [PARAMETER_SCALE [CONTROL_A/B,...]]
 //
 // The optional scale searches the rational chart u=PARAMETER_SCALE*v while
 // retaining v in balanced height buckets.  It must be nonzero and invertible
 // modulo every table prime.  This is useful when the exact binary A_8,B_12
-// model is badly conditioned in its inherited projective coordinate.
+// model is badly conditioned in its inherited projective coordinate.  When a
+// control list is supplied, the scanner scores the *complete* box using every
+// block, ranks by the minimum centered/standardized block signal, and reports
+// exact population ranks for the controls.  No staged pruning is used in that
+// calibration mode.
 
 #include <algorithm>
 #include <array>
 #include <chrono>
+#include <cmath>
 #include <cstdint>
 #include <cstdlib>
 #include <fstream>
@@ -44,6 +49,8 @@ struct LocalSymbol {
 struct PrimeTable {
   int prime = 0;
   std::vector<LocalSymbol> symbols;  // affine 0..p-1, then infinity at p
+  double good_mean = 0.0;
+  double good_standard_deviation = 0.0;
 };
 
 struct Tables {
@@ -59,6 +66,7 @@ struct Candidate {
   std::int64_t denominator = 1;
   std::int64_t height = 1;
   std::array<std::int64_t, kMaximumBlocks> block_scores{};
+  std::array<double, kMaximumBlocks> standardized_block_scores{};
   int completed_blocks = 0;
   int good_primes = 0;
   int bad_primes = 0;
@@ -75,6 +83,22 @@ struct Candidate {
     for (int i = 1; i < completed_blocks; ++i)
       answer = std::min(answer, block_scores[i]);
     return answer;
+  }
+
+  double minimum_standardized_block_score() const {
+    if (completed_blocks == 0) throw std::logic_error("unscored candidate");
+    double answer = standardized_block_scores[0];
+    for (int i = 1; i < completed_blocks; ++i)
+      answer = std::min(answer, standardized_block_scores[i]);
+    return answer;
+  }
+
+  double mean_standardized_block_score() const {
+    if (completed_blocks == 0) throw std::logic_error("unscored candidate");
+    double answer = 0.0;
+    for (int i = 0; i < completed_blocks; ++i)
+      answer += standardized_block_scores[i];
+    return answer / completed_blocks;
   }
 
   std::string parameter() const {
@@ -159,6 +183,27 @@ Tables read_tables(const std::string& path) {
           throw std::runtime_error("inconsistent good/singular flags");
         table.symbols.push_back(symbol);
       }
+      double sum = 0.0;
+      int good_count = 0;
+      for (const LocalSymbol& symbol : table.symbols) {
+        if (!symbol.good) continue;
+        sum += static_cast<double>(symbol.score_units);
+        ++good_count;
+      }
+      if (good_count < 2)
+        throw std::runtime_error("a prime table has fewer than two good fibres");
+      table.good_mean = sum / good_count;
+      double squared_deviation_sum = 0.0;
+      for (const LocalSymbol& symbol : table.symbols) {
+        if (!symbol.good) continue;
+        const double deviation =
+            static_cast<double>(symbol.score_units) - table.good_mean;
+        squared_deviation_sum += deviation * deviation;
+      }
+      table.good_standard_deviation =
+          std::sqrt(squared_deviation_sum / good_count);
+      if (!(table.good_standard_deviation > 0.0))
+        throw std::runtime_error("a prime table has zero Nagao variance");
       block.push_back(std::move(table));
     }
     tables.blocks.push_back(std::move(block));
@@ -208,6 +253,206 @@ bool better(const Candidate& left, const Candidate& right) {
   if (left.denominator != right.denominator)
     return left.denominator < right.denominator;
   return left.numerator < right.numerator;
+}
+
+bool calibration_better(const Candidate& left, const Candidate& right) {
+  if (left.minimum_standardized_block_score() !=
+      right.minimum_standardized_block_score())
+    return left.minimum_standardized_block_score() >
+           right.minimum_standardized_block_score();
+  if (left.mean_standardized_block_score() !=
+      right.mean_standardized_block_score())
+    return left.mean_standardized_block_score() >
+           right.mean_standardized_block_score();
+  if (left.good_primes != right.good_primes)
+    return left.good_primes > right.good_primes;
+  if (left.bad_primes != right.bad_primes)
+    return left.bad_primes < right.bad_primes;
+  if (left.height != right.height) return left.height < right.height;
+  if (left.denominator != right.denominator)
+    return left.denominator < right.denominator;
+  return left.numerator < right.numerator;
+}
+
+std::vector<std::pair<std::int64_t, std::int64_t>> parse_controls(
+    const std::string& text) {
+  std::vector<std::pair<std::int64_t, std::int64_t>> result;
+  std::stringstream stream(text);
+  std::string token;
+  while (std::getline(stream, token, ',')) {
+    const std::size_t slash = token.find('/');
+    if (slash == std::string::npos)
+      throw std::runtime_error("a control parameter is not a/b");
+    std::int64_t numerator = std::stoll(token.substr(0, slash));
+    std::int64_t denominator = std::stoll(token.substr(slash + 1));
+    if (denominator <= 0 || std::gcd(numerator < 0 ? -numerator : numerator,
+                                     denominator) != 1)
+      throw std::runtime_error("control parameters must be primitive with b>0");
+    result.emplace_back(numerator, denominator);
+  }
+  if (result.empty()) throw std::runtime_error("no positive controls supplied");
+  return result;
+}
+
+void add_calibration_symbol(Candidate& candidate, const PrimeTable& table,
+                            const LocalSymbol& symbol, int block_index) {
+  if (symbol.good) {
+    candidate.block_scores[block_index] += symbol.score_units;
+    candidate.standardized_block_scores[block_index] +=
+        (static_cast<double>(symbol.score_units) - table.good_mean) /
+        table.good_standard_deviation;
+    ++candidate.good_primes;
+  } else {
+    // Mean imputation gives standardized contribution zero.  The bad count is
+    // retained as a visible heuristic choice, never as a rank conclusion.
+    ++candidate.bad_primes;
+  }
+}
+
+Candidate score_calibration_pair(std::int64_t numerator,
+                                 std::int64_t denominator,
+                                 const Tables& tables) {
+  Candidate candidate;
+  candidate.numerator = numerator;
+  candidate.denominator = denominator;
+  candidate.height = denominator == 0
+                         ? 1
+                         : std::max(numerator < 0 ? -numerator : numerator,
+                                    denominator);
+  candidate.completed_blocks = static_cast<int>(tables.blocks.size());
+  for (std::size_t block_index = 0; block_index < tables.blocks.size();
+       ++block_index) {
+    const auto& block = tables.blocks[block_index];
+    for (const PrimeTable& table : block) {
+      const int prime = table.prime;
+      int index = prime;
+      if (denominator != 0 && denominator % prime != 0) {
+        const int inverse =
+            power_mod(normalized_mod(denominator, prime), prime - 2, prime);
+        index = multiply_mod(normalized_mod(numerator, prime), inverse, prime);
+      }
+      add_calibration_symbol(
+          candidate, table, table.symbols[static_cast<std::size_t>(index)],
+          static_cast<int>(block_index));
+    }
+    candidate.standardized_block_scores[block_index] /=
+        std::sqrt(static_cast<double>(block.size()));
+  }
+  return candidate;
+}
+
+struct FullCalibrationSummary {
+  std::uint64_t population = 0;
+  std::vector<Candidate> controls;
+  std::vector<std::uint64_t> control_ranks;
+  std::vector<Candidate> finalists;
+  double seconds = 0.0;
+};
+
+FullCalibrationSummary scan_full_worst_block(
+    std::int64_t numerator_bound, std::int64_t denominator_bound,
+    const Tables& tables, std::int64_t parameter_scale,
+    const std::vector<std::pair<std::int64_t, std::int64_t>>& control_pairs,
+    int finalist_count) {
+  const auto started = std::chrono::steady_clock::now();
+  FullCalibrationSummary summary;
+  for (const auto& pair : control_pairs)
+    summary.controls.push_back(
+        score_calibration_pair(pair.first, pair.second, tables));
+  summary.control_ranks.assign(summary.controls.size(), 1);
+  std::vector<Candidate> heap;
+  heap.reserve(static_cast<std::size_t>(finalist_count + 1));
+
+  auto observe = [&](Candidate candidate) {
+    ++summary.population;
+    for (std::size_t i = 0; i < summary.controls.size(); ++i)
+      if (calibration_better(candidate, summary.controls[i]))
+        ++summary.control_ranks[i];
+    if (static_cast<int>(heap.size()) < finalist_count) {
+      heap.push_back(std::move(candidate));
+      std::push_heap(heap.begin(), heap.end(), calibration_better);
+    } else if (calibration_better(candidate, heap.front())) {
+      std::pop_heap(heap.begin(), heap.end(), calibration_better);
+      heap.back() = std::move(candidate);
+      std::push_heap(heap.begin(), heap.end(), calibration_better);
+    }
+  };
+
+  Candidate infinity = score_calibration_pair(1, 0, tables);
+  observe(infinity);
+
+  struct IncrementalTable {
+    const PrimeTable* table = nullptr;
+    int block_index = 0;
+    int residue = 0;
+    int step = 0;
+  };
+  std::vector<IncrementalTable> incremental;
+  for (std::size_t block_index = 0; block_index < tables.blocks.size();
+       ++block_index)
+    for (const PrimeTable& table : tables.blocks[block_index])
+      incremental.push_back({&table, static_cast<int>(block_index), 0, 0});
+
+  for (std::int64_t denominator = 1; denominator <= denominator_bound;
+       ++denominator) {
+    for (IncrementalTable& entry : incremental) {
+      const int prime = entry.table->prime;
+      if (denominator % prime == 0) {
+        entry.step = -1;
+        entry.residue = prime;
+      } else {
+        const int inverse = power_mod(normalized_mod(denominator, prime),
+                                      prime - 2, prime);
+        entry.step = multiply_mod(normalized_mod(parameter_scale, prime),
+                                  inverse, prime);
+        entry.residue = multiply_mod(
+            multiply_mod(normalized_mod(parameter_scale, prime),
+                         normalized_mod(-numerator_bound, prime), prime),
+            inverse, prime);
+      }
+    }
+    for (std::int64_t numerator = -numerator_bound;
+         numerator <= numerator_bound; ++numerator) {
+      if (std::gcd(numerator < 0 ? -numerator : numerator, denominator) == 1) {
+        Candidate candidate;
+        candidate.numerator = numerator * parameter_scale;
+        candidate.denominator = denominator;
+        const std::int64_t common = std::gcd(
+            candidate.numerator < 0 ? -candidate.numerator : candidate.numerator,
+            candidate.denominator);
+        candidate.numerator /= common;
+        candidate.denominator /= common;
+        candidate.height = std::max(
+            candidate.numerator < 0 ? -candidate.numerator : candidate.numerator,
+            candidate.denominator);
+        candidate.completed_blocks = static_cast<int>(tables.blocks.size());
+        for (const IncrementalTable& entry : incremental) {
+          const LocalSymbol& symbol = entry.table->symbols[
+              static_cast<std::size_t>(entry.step < 0 ? entry.table->prime
+                                                     : entry.residue)];
+          add_calibration_symbol(candidate, *entry.table, symbol,
+                                 entry.block_index);
+        }
+        for (std::size_t block_index = 0; block_index < tables.blocks.size();
+             ++block_index)
+          candidate.standardized_block_scores[block_index] /=
+              std::sqrt(static_cast<double>(tables.blocks[block_index].size()));
+        observe(std::move(candidate));
+      }
+      for (IncrementalTable& entry : incremental) {
+        if (entry.step < 0) continue;
+        entry.residue += entry.step;
+        if (entry.residue >= entry.table->prime)
+          entry.residue -= entry.table->prime;
+      }
+    }
+  }
+  std::sort(heap.begin(), heap.end(), calibration_better);
+  summary.finalists = std::move(heap);
+  summary.seconds = std::chrono::duration<double>(
+                        std::chrono::steady_clock::now() - started)
+                        .count();
+  return summary;
 }
 
 bool insert_pareto(std::vector<Candidate>& frontier, const Candidate& candidate,
@@ -388,6 +633,106 @@ std::string json_escape(const std::string& text) {
   return output.str();
 }
 
+void write_calibration_candidate(std::ostream& output,
+                                 const Candidate& candidate) {
+  output << "{\"parameter\": \"" << candidate.parameter()
+         << "\", \"projective_pair\": [" << candidate.numerator << ", "
+         << candidate.denominator << "], \"projective_height\": "
+         << candidate.height << ", \"standardized_block_signals\": [";
+  for (int block = 0; block < candidate.completed_blocks; ++block) {
+    if (block) output << ", ";
+    output << std::setprecision(17)
+           << candidate.standardized_block_scores[block];
+  }
+  output << "], \"worst_block_signal\": " << std::setprecision(17)
+         << candidate.minimum_standardized_block_score()
+         << ", \"mean_block_signal\": "
+         << candidate.mean_standardized_block_score()
+         << ", \"raw_block_score_units_1e12\": [";
+  for (int block = 0; block < candidate.completed_blocks; ++block) {
+    if (block) output << ", ";
+    output << candidate.block_scores[block];
+  }
+  output << "], \"good_prime_count\": " << candidate.good_primes
+         << ", \"bad_reduction_prime_count\": " << candidate.bad_primes
+         << "}";
+}
+
+void write_full_calibration_json(
+    const std::string& path, const std::string& table_path,
+    const Tables& tables, std::int64_t numerator_bound,
+    std::int64_t denominator_bound, std::int64_t parameter_scale,
+    const FullCalibrationSummary& summary, int argc, char** argv) {
+  std::ofstream output(path);
+  if (!output) throw std::runtime_error("cannot create output file: " + path);
+  bool accepted = true;
+  for (std::uint64_t rank : summary.control_ranks)
+    accepted = accepted &&
+               static_cast<long double>(rank) / summary.population <= 0.01L;
+  output << "{\n"
+         << "  \"schema\": \"elkies-2026-positive-control-worst-block-nagao-v1\",\n"
+         << "  \"status\": \""
+         << (accepted ? "PASS_POSITIVE_CONTROL_SCORING_GATE"
+                      : "FAIL_DISCARD_POSITIVE_CONTROL_SCORING_METHOD")
+         << "\",\n"
+         << "  \"proof_boundary\": \"This is a complete bounded heuristic ranking, not a rank or Selmer bound. Singular local fibres are mean-imputed and counted.\",\n"
+         << "  \"model_sha256\": \"" << tables.model_sha256 << "\",\n"
+         << "  \"table_file\": \"" << json_escape(table_path) << "\",\n"
+         << "  \"search\": {\"coordinate\": \"published compact t\", "
+         << "\"numerator_interval\": [-" << numerator_bound << ", "
+         << numerator_bound << "], \"denominator_interval\": [1, "
+         << denominator_bound
+         << "], \"primitive_pairs_only\": true, \"includes_infinity\": true, "
+         << "\"height\": \"max(abs(a),b)\", \"height_limit\": "
+         << std::max(numerator_bound, denominator_bound)
+         << ", \"parameter_scale\": " << parameter_scale << "},\n"
+         << "  \"scoring\": {\"prime_ensembles\": [";
+  for (std::size_t block = 0; block < tables.blocks.size(); ++block) {
+    if (block) output << ", ";
+    output << '[';
+    for (std::size_t index = 0; index < tables.blocks[block].size(); ++index) {
+      if (index) output << ", ";
+      output << tables.blocks[block][index].prime;
+    }
+    output << ']';
+  }
+  output << "], \"ensembles_are_pairwise_disjoint\": true, "
+         << "\"per_prime_standardization\": \"center and population-standardize over good fibres of P1(F_p)\", "
+         << "\"singular_fibre_policy\": \"mean imputation (standardized contribution zero)\", "
+         << "\"block_normalization\": \"sum(z_p)/sqrt(number of primes in block)\", "
+         << "\"primary_ranking_key\": \"minimum block signal\", "
+         << "\"tie_breaker\": \"mean block signal, good primes, bad primes, height, denominator, numerator\", "
+         << "\"positive_control_acceptance_threshold\": \"every disclosed fibre in top 1 percent of complete H<=10000 population\"},\n"
+         << "  \"population_count\": " << summary.population << ",\n"
+         << "  \"positive_controls\": [\n";
+  for (std::size_t index = 0; index < summary.controls.size(); ++index) {
+    output << "    {\"score\": ";
+    write_calibration_candidate(output, summary.controls[index]);
+    const long double fraction =
+        static_cast<long double>(summary.control_ranks[index]) /
+        summary.population;
+    output << ", \"population_rank\": " << summary.control_ranks[index]
+           << ", \"population_fraction\": " << std::setprecision(17)
+           << static_cast<double>(fraction)
+           << ", \"passes_top_one_percent_gate\": "
+           << (fraction <= 0.01L ? "true" : "false") << "}"
+           << (index + 1 == summary.controls.size() ? "\n" : ",\n");
+  }
+  output << "  ],\n  \"finalists\": [\n";
+  for (std::size_t index = 0; index < summary.finalists.size(); ++index) {
+    output << "    ";
+    write_calibration_candidate(output, summary.finalists[index]);
+    output << (index + 1 == summary.finalists.size() ? "\n" : ",\n");
+  }
+  output << "  ],\n  \"runtime_seconds\": " << std::setprecision(12)
+         << summary.seconds << ",\n  \"reproducing_command\": \"";
+  for (int i = 0; i < argc; ++i) {
+    if (i) output << ' ';
+    output << json_escape(argv[i]);
+  }
+  output << "\"\n}\n";
+}
+
 void write_json(const std::string& path, const std::string& table_path,
                 const Tables& tables, std::int64_t numerator_bound,
                 std::int64_t denominator_bound, std::int64_t bucket_width,
@@ -500,9 +845,9 @@ void write_json(const std::string& path, const std::string& table_path,
 }  // namespace
 
 int main(int argc, char** argv) {
-  if (argc != 8 && argc != 9) {
+  if (argc != 8 && argc != 9 && argc != 10) {
     std::cerr << "usage: " << argv[0]
-              << " TABLE NUM DEN BUCKET_WIDTH KEEP1,KEEP2,... FINALISTS OUTPUT.json [PARAMETER_SCALE]\n";
+              << " TABLE NUM DEN BUCKET_WIDTH KEEP1,KEEP2,... FINALISTS OUTPUT.json [PARAMETER_SCALE [CONTROL_A/B,...]]\n";
     return 2;
   }
   try {
@@ -513,7 +858,7 @@ int main(int argc, char** argv) {
     const std::vector<int> keeps = parse_keeps(argv[5]);
     const int finalists = std::stoi(argv[6]);
     const std::string output_path = argv[7];
-    const std::int64_t parameter_scale = argc == 9 ? std::stoll(argv[8]) : 1;
+    const std::int64_t parameter_scale = argc >= 9 ? std::stoll(argv[8]) : 1;
     if (numerator_bound < 0 || denominator_bound < 1 || bucket_width < 1 ||
         finalists < 1 || parameter_scale == 0)
       throw std::runtime_error("bounds, bucket width, and finalists are invalid");
@@ -524,6 +869,33 @@ int main(int argc, char** argv) {
       throw std::runtime_error("unexpected model degrees or score scale");
     if (keeps.size() != tables.blocks.size())
       throw std::runtime_error("one keep count is required per table block");
+
+    if (argc == 10) {
+      if (tables.blocks.size() < 3)
+        throw std::runtime_error(
+            "positive-control calibration requires at least three prime ensembles");
+      const auto controls = parse_controls(argv[9]);
+      const FullCalibrationSummary summary = scan_full_worst_block(
+          numerator_bound, denominator_bound, tables, parameter_scale,
+          controls, finalists);
+      write_full_calibration_json(
+          output_path, table_path, tables, numerator_bound, denominator_bound,
+          parameter_scale, summary, argc, argv);
+      bool accepted = true;
+      for (std::uint64_t rank : summary.control_ranks)
+        accepted = accepted &&
+                   static_cast<long double>(rank) / summary.population <= 0.01L;
+      std::cout << (accepted ? "PASS" : "FAIL")
+                << " positive_control_population=" << summary.population
+                << " control_ranks=";
+      for (std::size_t index = 0; index < summary.control_ranks.size(); ++index) {
+        if (index) std::cout << ',';
+        std::cout << summary.control_ranks[index];
+      }
+      std::cout << " seconds=" << std::fixed << std::setprecision(3)
+                << summary.seconds << " output=" << output_path << "\n";
+      return accepted ? 0 : 3;
+    }
 
     const auto started = std::chrono::steady_clock::now();
     auto first = scan_first_stage(numerator_bound, denominator_bound,

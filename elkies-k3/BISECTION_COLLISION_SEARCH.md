@@ -1337,12 +1337,127 @@ squarefree-cover assertion fails: the raw odd factor has degree 21 rather than
 the asserted degree 3 or 4. Thus it produces neither a valid first neighbor
 equation nor a branch divisor for this collision search.
 
-## Collision gate still pending
+## Direct rootless bisection compiler and first equation batch
+
+The compact published rootless equation and its seventeen exact section/chord
+records remove the former equation-level entrance obstruction.  If a
+height-ten trace section is written
+
+```text
+tau=(Nx/h^2,Ny/h^3),       deg(h)=3,
+```
+
+then the residual line through `-tau` is recovered without a nonlinear solve.
+There is a unique polynomial `M` of degree below six such that
+
+```text
+M*Nx+Ny == 0 mod h^2.
+```
+
+For the slope `m=M/h`, exact substitution gives the residual quadratic
+
+```text
+x^2-s(t)*x+p(t)=0
+```
+
+with
+
+```text
+s=(M^2-Nx)/h^2,
+p=((M*Nx+Ny)^2-B*h^6)/(h^4*Nx).
+```
+
+The elliptic equation forces
+
+```text
+s^2-4p = h^2*q(t),
+q = (M^4-6*M^2*Nx-8*M*Ny-3*Nx^2-4*A*h^4)/h^6,
+deg(q)=2.
+```
+
+The proof, including the `h^6` divisibility, is Proposition F1 of
+[`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md).
+Thus the squareclass is read directly from `q`, while the two points over
+`u^2=q(t)` have exact coordinates
+
+```text
+x=s/2 + (h/2)u,
+y=y0(t) + (M/2)u.
+```
+
+The exact regressions in
+[`scripts/verify_elkies_2026_rank18_first_cover.sage`](scripts/verify_elkies_2026_rank18_first_cover.sage)
+and
+[`scripts/verify_elkies_2026_rank19_paired_cover.sage`](scripts/verify_elkies_2026_rank19_paired_cover.sage)
+recover the two published chord numerators from this single congruence before
+checking their displayed cover sections.
+
+### Exact equation-complexity priority
+
+The complete survivor set is ranked in the published Mordell--Weil basis by a
+reproducible tuple rather than a floating heuristic:
+
+```text
+(group-addition upper bound,
+ support size,
+ recursive section/chord dependency count,
+ exact serialized coordinate-bit cost,
+ maximum coefficient,
+ coefficient L1 norm,
+ published-basis vector).
+```
+
+The scalar-multiplication component uses the standard binary double-and-add
+upper bound.  Both orientations and every norm-ten representative of an orbit
+are tested, so the retained representative is the cheapest for this declared
+score, not merely the lexicographic short-basis representative.  This is an
+exact arithmetic-cost proxy; it is not a theorem that coefficient height or
+wall-clock time is monotone in the ordering.
+
+```bash
+sage -python elkies-k3/scripts/rank_elkies_2026_bisection_orbits.sage \
+  --pool-size 1000
+```
+
+The complete ranking has 77 orbits of group-addition cost two, followed by
+547 of cost three.  The first 1,000 equation-cheapest orbits contain 11,823
+exact disjoint-priority pairs.  The two previously published trace vectors
+occur much later in this score, so they are validation anchors rather than
+appropriate starting points for the batch search.
+
+### First 1,000 exact bisections
+
+The batch compiler forms each trace by exact group law, solves the linear
+double-pole congruence, verifies the quadratic relation and both Weierstrass
+coefficient identities over `u^2=q(t)`, and emits the pinned orbit mask and
+vector together with the exact relation accepted by the squareclass checker.
+
+```bash
+sage -python elkies-k3/scripts/construct_elkies_2026_bisections.sage \
+  --limit 1000
+
+.venv/bin/python elkies-k3/scripts/hash_bisection_extensions.py \
+  --input artifacts/generated-results/elkies-2026-equation-bisections.json \
+  --output artifacts/generated-results/elkies-2026-equation-bisection-collisions.json
+```
+
+This is the first real equation-level batch for the pinned rootless R17
+classes.  All 1,000 records pass the exact two-branch and orbit-attachment
+gates, and all 1,000 quadratic branch polynomials are coprime to the degree-24
+surface discriminant, so every cover branches at two smooth fibres.  They
+produce 1,000 distinct squareclasses, hence no collision in this initial pool.
+This is a bounded negative computation, not evidence that the full map is
+injective.
+
+<!-- status-consumer: EC-K3-BISECT-EQUATION-BATCH a993e11257ca08a8 -->
+
+## Collision and height gate
 
 The quotient enumeration supplies a finite input set, not a squareclass hash.
 Mapping a lattice class to a quadratic extension requires the explicit
 rootless characteristic-zero fibration and an equation for the corresponding
-bisection. Once that exists, the next checker must:
+bisection. Those inputs now exist for the first 1,000 priority classes.  For a
+larger batch or a collision, the checker must:
 
 1. derive and squarefree-normalize the branch divisor for every realized
    orbit representative;
@@ -1409,7 +1524,7 @@ Thus the equation-level intersection calculation can supply the exact height
 matrix directly; if it is supplied alongside twist coordinates, both matrices
 must agree.
 
-<!-- status-consumer: EC-K3-BISECT-EXTENSION-PROTOCOL 64e387993e523b0b -->
+<!-- status-consumer: EC-K3-BISECT-EXTENSION-PROTOCOL f0dca8afe83627cd -->
 
 For a production collision run, add `--require-collision-heights`.  It rejects
 any collision bucket lacking either declared twist-height coordinates or the
@@ -1431,10 +1546,12 @@ orbit even with inconsistent branch data, is rejected before hash grouping.
 This rules out a duplicate geometric bisection masquerading as a rank-two
 collision.
 
-Until those equation-level operations are present, the 39,120 pinned and
-39,147 alternate classes are only exact lattice candidates. In particular,
-this calculation neither recovers Elkies's eighteenth direction nor proves
-that a rank-19 collision exists or does not exist.
+The first 1,000 pinned classes now have exact equation-level records; the
+remaining 38,120 pinned classes and all 39,147 alternate classes are still only
+exact lattice candidates.  No squareclass collision occurs in the initial
+1,000-record batch.  In particular, this bounded calculation neither proves
+injectivity of the full map nor supplies a common quadratic cover with a
+rank-two anti-invariant height matrix.
 <!-- status-consumer: EC-K3-BISECT-ORBIT 81da2fd80c3623b6 -->
 
 The alternate q80 q6 endpoint supplies a second, nonisometric rootless

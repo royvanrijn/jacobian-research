@@ -1,0 +1,138 @@
+{
+  "schema": "elkies-k3.elkies-2026-published-r17-sections.v1",
+  "status": "PASS_TRANSCRIBED_PUBLISHED_R17_SECTIONS_AND_CHORDS",
+  "source": {
+    "arxiv": "2608.25406v1",
+    "section": "2.1",
+    "title": "An elliptic K3 surface X/Q(t) with Mordell-Weil rank 17, I"
+  },
+  "coordinate": "elkies_2026_published_t",
+  "convention": {
+    "coefficient_order": "low_to_high",
+    "equation": "y^2=x^3+A(t)*x+B(t)",
+    "chord_formula": "y_i=y_reference+m_i(t)*(x_i-x_reference)",
+    "weights_x_y": [4, 6]
+  },
+  "sections": [
+    {
+      "basis_index": 0,
+      "label": "P1",
+      "x_coefficients_low_to_high": ["304456582100883", "448019664127620", "84146613883956", "-6900780974412", "419884536396"],
+      "y_coefficients_low_to_high": ["2913630401455186533120", "3523393851784245137088", "-3519107150812739581680", "-4035207954948742785564", "-1140847719698231045748", "-102352278854532258864", "-1917605876395727232"],
+      "leading_y_sign": -1
+    },
+    {
+      "basis_index": 1,
+      "label": "P2",
+      "x_coefficients_low_to_high": ["136981770876723", "451794461129916", "228946163155128", "32982109084392", "960407733324"],
+      "leading_y_sign": 1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["9306987", "17472654", "3609606"]}
+    },
+    {
+      "basis_index": 2,
+      "label": "P3",
+      "x_coefficients_low_to_high": ["-329325794912045", "-1605097821400112", "1886874275645632", "1333867432517100", "191092188813708"],
+      "leading_y_sign": -1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["10995509", "-47135036", "-13842426"]}
+    },
+    {
+      "basis_index": 3,
+      "label": "P4",
+      "x_coefficients_low_to_high": ["205182206512275", "489728900722308", "191145949680312", "20106018946320", "881331598668"],
+      "leading_y_sign": 1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["25228749", "34503044", "5619654"]}
+    },
+    {
+      "basis_index": 4,
+      "label": "P5",
+      "x_coefficients_low_to_high": ["124968924115923", "70169296825056", "119727776998960", "60084894852268", "7087168886668"],
+      "leading_y_sign": 1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["25181877", "16309708", "2903654"]}
+    },
+    {
+      "basis_index": 5,
+      "label": "P6",
+      "x_coefficients_low_to_high": ["-379495133581677", "-794565531069024", "-436645278959760", "-75993994150932", "-2654105330292"],
+      "leading_y_sign": 1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["1645077", "-7417332", "-1674426"]}
+    },
+    {
+      "basis_index": 6,
+      "label": "P7",
+      "x_coefficients_low_to_high": ["-362275017421677", "-839785632779964", "-435348555495516", "-76265967628812", "-2842297467828"],
+      "leading_y_sign": 1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["35277", "-6644079/2", "-2879877/2"]}
+    },
+    {
+      "basis_index": 7,
+      "label": "P8",
+      "x_coefficients_low_to_high": ["320073994727283", "464786649518334", "63026792718435", "-25598671575906", "-2947994548863"],
+      "leading_y_sign": 1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["-401684283", "-74149065", "-1293435"]}
+    },
+    {
+      "basis_index": 8,
+      "label": "P9",
+      "x_coefficients_low_to_high": ["9732633560757363", "-12715093268802228", "2834155382615496", "54450640822344", "-2414976971316"],
+      "leading_y_sign": -1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["-102088725", "56959398", "598182"]}
+    },
+    {
+      "basis_index": 9,
+      "label": "P10",
+      "x_coefficients_low_to_high": ["521473683384723", "666777676835166", "-242466751598877", "-250429886278338", "13412195434209"],
+      "leading_y_sign": 1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["-58915563", "-29297801", "3845621"]}
+    },
+    {
+      "basis_index": 10,
+      "label": "P11",
+      "x_coefficients_low_to_high": ["-125053466701677", "-55497536934924", "271192708423620", "62514191744628", "353434406988"],
+      "leading_y_sign": -1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["18889077", "21342168", "3959553/2"]}
+    },
+    {
+      "basis_index": 11,
+      "label": "P12",
+      "x_coefficients_low_to_high": ["345607319019603", "-653155402766412", "-486949775116428", "-83483171473260", "-1586365228500"],
+      "leading_y_sign": 1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["29039811", "2320578", "-2966262"]}
+    },
+    {
+      "basis_index": 12,
+      "label": "P13",
+      "x_coefficients_low_to_high": ["2685202943830203", "-1492345666793982", "-764745203764737", "-29562185743194", "5724934740993"],
+      "leading_y_sign": 1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["-59230479", "907317", "2648379"]}
+    },
+    {
+      "basis_index": 13,
+      "label": "P14",
+      "x_coefficients_low_to_high": ["964931580370398", "694007861500356", "164233784236041", "18957579322812", "2426651051916"],
+      "leading_y_sign": 1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["38513982", "20056077", "1508406"]}
+    },
+    {
+      "basis_index": 14,
+      "label": "P15",
+      "x_coefficients_low_to_high": ["260813404752123", "413697107315976", "153585168336648", "27061905787332", "3734241561804"],
+      "leading_y_sign": -1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["106182447", "32579784", "-1022424"]}
+    },
+    {
+      "basis_index": 15,
+      "label": "P16",
+      "x_coefficients_low_to_high": ["-287286844790877", "-678508004328024", "-354534107851872", "-57890934328188", "-798764561556"],
+      "leading_y_sign": 1,
+      "chord": {"reference_basis_index": 0, "slope_coefficients_low_to_high": ["-3300003", "-12262536", "-4556214"]}
+    },
+    {
+      "basis_index": 16,
+      "label": "P17",
+      "x_coefficients_low_to_high": ["408936541867923", "494998206601236", "206429765168484", "25332675721548", "2607059076492"],
+      "leading_y_sign": 1,
+      "chord": {"reference_basis_index": 6, "slope_coefficients_low_to_high": ["-11613683", "3253646", "-183750"]}
+    }
+  ],
+  "proof_boundary": "Exact transcription of all seventeen published x-coordinates, P1's y-coordinate, the sixteen published quadratic chord descriptions, and the displayed leading-y signs. The exact verifier reconstructs every y-coordinate and checks all seventeen Weierstrass identities."
+}

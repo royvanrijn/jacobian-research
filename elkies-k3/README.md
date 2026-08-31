@@ -57,6 +57,20 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
   but combined totals using the withdrawn 4,199 suffix are not valid compiler
   comparisons.  See
   [`A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md`](A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md).
+- Elkies's 2026 paper is now fully integrated as the compact arithmetic chart:
+  all seventeen sections and quadratic chords replay exactly, the four
+  disclosed rank-25--28 fibres are exact positive controls with certified
+  quotient gains `8,9,10,11`, and the complete compact-`t` height-10000 scan
+  strongly ranks all four using three disjoint prime ensembles and the weakest
+  block as primary score. A fail-closed residual 2-Selmer gate now precedes
+  every expensive search. The initial 300-second rank-28 PARI descent timed
+  out without an upper bound, so it authorizes no cover or point search.
+  The first conic cover has an explicit eighteenth section and rational
+  parameter; the paired cover has both new sections, exact maps from the
+  rank-at-least-four curve `E0`, and a Mordell--Weil-lattice Nagao sieve; these
+  are supporting base-change routes rather than the current priority.
+  See
+  [`ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md`](ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md).
 
 <!-- status-consumer: EC-K3-H3-A11-Q8-QQ-2A5 b7aaf4bf483eac68 -->
 <!-- status-consumer: EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE 86e7a3affbf35a9e -->
@@ -72,6 +86,14 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
 <!-- status-consumer: EC-K3-H3-Q12O5867-QQ-R17-BASIS a2097150acf00645 -->
 <!-- status-consumer: EC-K3-H3-Q12O5867-ENDPOINT-QQ a83b08acd921c32b -->
 <!-- status-consumer: EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE 432b34c44c78bcb9 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS 345b9fb977057133 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL f99c98cdb6b8cd7d -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE f5600026fe1e9656 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R18-COVER 6b4ee5bbc1afc01e -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R19-PAIRED f1e135d2ba803e80 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL f99c98cdb6b8cd7d -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE f5600026fe1e9656 -->
 
 Use `R17` for the recovered rootless endpoint and `H3 source` for the level-474
 Kumar polarization. Low-q, E6, H2 and Q80/CM24 are comparison or regression
@@ -80,12 +102,25 @@ routes, not substitutes for the selected H3 marking. See
 
 ## Current priority
 
-The **H3 source family** is the primary characteristic-zero starting point.
-The currently selected **H3 degree-two corridor** is one certified route from
-that source to the pinned recovered rootless/MW17 frame; the endpoint
-identification and complete inverse NS transport are exact.  The route is not
-proved shortest, globally optimal, or cheapest to compile.  The equation
-route now reaches the rootless endpoint:
+The primary task is now residual 2-descent in the compact published `t`
+coordinate. Keep the rank-25--28 fibres in every scoring calibration, use at
+least three disjoint prime ensembles, and rank by weakest-block performance.
+For a rank-32 target, compute the actual quotient
+`Sel_2(E_t)/<P1,...,P17>` before solving covers: dimension below 15 is an exact
+rejection. The BNF-free signatures and norm-one elements are only inputs to
+that computation until class-group completeness and all local-solubility
+conditions are certified. No raw `ratpoints` or slope-box search may run on a
+candidate without a passing gate bound to the same minimal curve.
+
+The rational rank-18 conic parameter and four-generator paired-cover `E0`
+lattice remain exact supporting search spaces. They do not override the
+positive-control or residual-descent gates.
+
+The **H3 source family** and selected neighbour corridor remain the canonical
+construction proof of the rootless endpoint, but further route optimization,
+q323 work, fixed-corridor reverse lifting, and ICARM fingerprint inference are
+parked unless they directly support specialization. The equation route is
+complete:
 
 ```text
 H3 E7+E8/MW2

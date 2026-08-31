@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact specialization and baseline certification for q12o5867.
+"""Exact specialization and baseline certification for the rootless R17 family.
 
 The rootless family is stored as a short Weierstrass equation with weights
 ``(A,B,x,y)=(8,12,4,6)`` on the projective parameter line.  This module keeps
@@ -9,6 +9,8 @@ finite-quotient certificate implementation.
 
 This is a specialization adapter, not a point search or a rank upper bound.
 """
+
+# <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 
 from __future__ import annotations
 
@@ -47,6 +49,8 @@ WeierstrassModel = tuple[Fraction, Fraction, Fraction, Fraction, Fraction]
 
 MODEL_STATUS = "PASS_EXACT_QQ_Q12O5867_SMOOTH_RR_ROOTLESS_JACOBIAN"
 SECTION_STATUS = "PASS_EXACT_QQ_Q12O5867_ROOTLESS_17_SELECTED_SECTIONS"
+PUBLISHED_MODEL_STATUS = "PASS_TRANSCRIBED_PUBLISHED_R17_MODEL"
+PUBLISHED_SECTION_STATUS = "PASS_TRANSCRIBED_PUBLISHED_R17_SECTIONS_AND_CHORDS"
 
 
 def fraction_text(value: Fraction | int) -> str:
@@ -106,46 +110,136 @@ class Q12O5867Data:
     section_coefficients: tuple[tuple[tuple[Fraction, ...], tuple[Fraction, ...]], ...]
     model_sha256: str
     sections_sha256: str
+    coordinate: str = "h92_q12o5867_raw_u"
+
+
+def _polynomial_add(
+    left: Sequence[Fraction], right: Sequence[Fraction]
+) -> tuple[Fraction, ...]:
+    size = max(len(left), len(right))
+    values = tuple(
+        (left[index] if index < len(left) else Q(0))
+        + (right[index] if index < len(right) else Q(0))
+        for index in range(size)
+    )
+    while len(values) > 1 and values[-1] == 0:
+        values = values[:-1]
+    return values
+
+
+def _polynomial_subtract(
+    left: Sequence[Fraction], right: Sequence[Fraction]
+) -> tuple[Fraction, ...]:
+    return _polynomial_add(left, tuple(-value for value in right))
+
+
+def _polynomial_multiply(
+    left: Sequence[Fraction], right: Sequence[Fraction]
+) -> tuple[Fraction, ...]:
+    values = [Q(0)] * (len(left) + len(right) - 1)
+    for left_index, left_value in enumerate(left):
+        for right_index, right_value in enumerate(right):
+            values[left_index + right_index] += left_value * right_value
+    while len(values) > 1 and values[-1] == 0:
+        values.pop()
+    return tuple(values)
+
+
+def _load_published_sections(
+    section_record: dict[str, Any]
+) -> tuple[tuple[tuple[Fraction, ...], tuple[Fraction, ...]], ...]:
+    """Reconstruct the published y-polynomials from the quadratic chords."""
+
+    sections: list[tuple[tuple[Fraction, ...], tuple[Fraction, ...]]] = []
+    for expected_index, record in enumerate(section_record["sections"]):
+        if int(record["basis_index"]) != expected_index:
+            raise ValueError("the ordered published basis indices changed")
+        x_coefficients = tuple(Q(value) for value in record["x_coefficients_low_to_high"])
+        if expected_index == 0:
+            y_coefficients = tuple(
+                Q(value) for value in record["y_coefficients_low_to_high"]
+            )
+        else:
+            chord = record["chord"]
+            reference_index = int(chord["reference_basis_index"])
+            if not 0 <= reference_index < expected_index:
+                raise ValueError("a published chord has a forward or invalid reference")
+            reference_x, reference_y = sections[reference_index]
+            slope = tuple(
+                Q(value) for value in chord["slope_coefficients_low_to_high"]
+            )
+            y_coefficients = _polynomial_add(
+                reference_y,
+                _polynomial_multiply(
+                    slope, _polynomial_subtract(x_coefficients, reference_x)
+                ),
+            )
+        if len(x_coefficients) > 5 or len(y_coefficients) > 7:
+            raise ValueError("a published section exceeds weights (4,6)")
+        leading_sign = 1 if y_coefficients[-1] > 0 else -1
+        if leading_sign != int(record["leading_y_sign"]):
+            raise ValueError("a reconstructed published y-coordinate has the wrong sign")
+        sections.append((x_coefficients, y_coefficients))
+    if len(sections) != 17:
+        raise ValueError("the published basis no longer has 17 sections")
+    return tuple(sections)
 
 
 def load_q12o5867_data(model_path: Path, sections_path: Path) -> Q12O5867Data:
     model_record = json.loads(model_path.read_text())
     section_record = json.loads(sections_path.read_text())
-    if model_record.get("status") != MODEL_STATUS:
-        raise ValueError("the q12o5867 model does not have its expected exact status")
-    if section_record.get("status") != SECTION_STATUS:
-        raise ValueError("the q12o5867 sections do not have their expected exact status")
-    child = model_record["child"]
-    a_coefficients = tuple(
-        Q(value) for value in child["minimal_A_coefficients_low_to_high"]
-    )
-    b_coefficients = tuple(
-        Q(value) for value in child["minimal_B_coefficients_low_to_high"]
-    )
+    model_status = model_record.get("status")
+    section_status = section_record.get("status")
+    if model_status == PUBLISHED_MODEL_STATUS:
+        if section_status != PUBLISHED_SECTION_STATUS:
+            raise ValueError("the published model requires its published section record")
+        a_coefficients = tuple(
+            Q(value) for value in model_record["A_coefficients_low_to_high"]
+        )
+        b_coefficients = tuple(
+            Q(value) for value in model_record["B_coefficients_low_to_high"]
+        )
+        sections = _load_published_sections(section_record)
+        coordinate = str(model_record["coordinate"])
+    elif model_status == MODEL_STATUS:
+        if section_status != SECTION_STATUS:
+            raise ValueError("the raw q12 model requires its exact transported sections")
+        child = model_record["child"]
+        a_coefficients = tuple(
+            Q(value) for value in child["minimal_A_coefficients_low_to_high"]
+        )
+        b_coefficients = tuple(
+            Q(value) for value in child["minimal_B_coefficients_low_to_high"]
+        )
+        sections = []
+        for expected_index, record in enumerate(section_record["sections"]):
+            if int(record["basis_index"]) != expected_index:
+                raise ValueError("the ordered q12o5867 basis indices changed")
+            section = record["section"]
+            if not section.get("exact_weierstrass_identity"):
+                raise ValueError("a selected section lacks its exact identity flag")
+            x_coefficients = tuple(Q(value) for value in section["x_coefficients_low_to_high"])
+            y_coefficients = tuple(Q(value) for value in section["y_coefficients_low_to_high"])
+            if len(x_coefficients) > 5 or len(y_coefficients) > 7:
+                raise ValueError("a selected section exceeds weights (4,6)")
+            sections.append((x_coefficients, y_coefficients))
+        if len(sections) != 17:
+            raise ValueError("the selected q12o5867 basis no longer has 17 sections")
+        sections = tuple(sections)
+        coordinate = "h92_q12o5867_raw_u"
+    else:
+        raise ValueError("the rootless R17 model does not have a recognized exact status")
     if len(a_coefficients) != 9 or len(b_coefficients) != 13:
-        raise ValueError("the q12o5867 coefficient degrees changed")
-    sections = []
-    for expected_index, record in enumerate(section_record["sections"]):
-        if int(record["basis_index"]) != expected_index:
-            raise ValueError("the ordered q12o5867 basis indices changed")
-        section = record["section"]
-        if not section.get("exact_weierstrass_identity"):
-            raise ValueError("a selected section lacks its exact identity flag")
-        x_coefficients = tuple(Q(value) for value in section["x_coefficients_low_to_high"])
-        y_coefficients = tuple(Q(value) for value in section["y_coefficients_low_to_high"])
-        if len(x_coefficients) > 5 or len(y_coefficients) > 7:
-            raise ValueError("a selected section exceeds weights (4,6)")
-        sections.append((x_coefficients, y_coefficients))
-    if len(sections) != 17:
-        raise ValueError("the selected q12o5867 basis no longer has 17 sections")
+        raise ValueError("the rootless R17 coefficient degrees changed")
     return Q12O5867Data(
         model_path=model_path,
         sections_path=sections_path,
         a_coefficients=a_coefficients,
         b_coefficients=b_coefficients,
-        section_coefficients=tuple(sections),
+        section_coefficients=sections,
         model_sha256=sha256_file(model_path),
         sections_sha256=sha256_file(sections_path),
+        coordinate=coordinate,
     )
 
 
@@ -170,7 +264,7 @@ def evaluate_projective_specialization(
     coefficient_b = homogeneous_value(data.b_coefficients, a, b, 12)
     model = (Q(0), Q(0), Q(0), coefficient_a, coefficient_b)
     if weierstrass_invariants(model)["discriminant"] == 0:
-        raise ValueError(f"q12o5867 has a singular fibre at ({a}:{b})")
+        raise ValueError(f"the rootless R17 family has a singular fibre at ({a}:{b})")
     points = tuple(
         (
             homogeneous_value(x_coefficients, a, b, 4),
@@ -179,7 +273,7 @@ def evaluate_projective_specialization(
         for x_coefficients, y_coefficients in data.section_coefficients
     )
     if any(not is_on_weierstrass_curve(model, point) for point in points):
-        raise AssertionError("a homogenized q12o5867 section missed the fibre")
+        raise AssertionError("a homogenized R17 section missed the fibre")
     return ProjectiveSpecialization(a, b, coefficient_a, coefficient_b, points)
 
 

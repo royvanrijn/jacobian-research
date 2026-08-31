@@ -1,0 +1,2869 @@
+{
+  "claim_level": "exact descent inputs and known-subgroup Kummer certificates",
+  "limitations": [
+    "this artifact does not compute a complete Selmer group or rank upper bound",
+    "bounded PARI saturation is used only to discover exact points and is not promoted to a global saturation theorem",
+    "a positive residual Selmer quotient may consist partly or entirely of Tate--Shafarevich classes"
+  ],
+  "programme_order": [
+    "complete 2-Selmer",
+    "quotient by the pinned known Kummer image",
+    "close the fibre if the residual quotient is zero",
+    "otherwise construct, minimize, and locally test residual covers",
+    "use 4-descent or independent 3-descent only on surviving classes"
+  ],
+  "reproducing_command": ".venv/bin/python elliptic-curves/cas/build_conductor_first_near_miss_targets.py --check",
+  "schema": "elliptic-curves.conductor-first-near-miss-descent-targets.v1",
+  "targets": [
+    {
+      "basis_provenance": {
+        "claim": "twenty exact independent points with full mod-2 Kummer image",
+        "method": "public basis with exact repository finite-quotient replay"
+      },
+      "certified_known_rank": 20,
+      "conductor": "272066437942638823321634957004224153562929337633497250319389959310",
+      "descent_model": [
+        "1",
+        "-1",
+        "1",
+        "-25880411472355347134118026792",
+        "1606663697747901005185875883284420820193259"
+      ],
+      "global_minimal_model": [
+        "1",
+        "-1",
+        "1",
+        "-25880411472355347134118026792",
+        "1606663697747901005185875883284420820193259"
+      ],
+      "id": "icarm-245",
+      "known_basis": [
+        [
+          "45492869957717",
+          "723492619381097668641"
+        ],
+        [
+          "103561597049417",
+          "192731719560345258741"
+        ],
+        [
+          "111830641498667",
+          "333174093470012383491"
+        ],
+        [
+          "316677539205677",
+          "5016853361860584594681"
+        ],
+        [
+          "92008168616117",
+          "65953506306453213441"
+        ],
+        [
+          "147881370863967",
+          "-1006695588776782646359"
+        ],
+        [
+          "213774572035037",
+          "2417332168050319812441"
+        ],
+        [
+          "81536578719167",
+          "196306066193578043241"
+        ],
+        [
+          "294423088161917",
+          "-4416891036870168333159"
+        ],
+        [
+          "227707758469997",
+          "-2742321749648483486439"
+        ],
+        [
+          "94836710011277",
+          "-72195187870086062919"
+        ],
+        [
+          "132211123753677",
+          "704277531895181059641"
+        ],
+        [
+          "91603447091117",
+          "-67755953909555099559"
+        ],
+        [
+          "60334338604917",
+          "514603898948192002241"
+        ],
+        [
+          "82129229001677",
+          "-187361656905064421319"
+        ],
+        [
+          "20079468981897",
+          "-1046467649553400314559"
+        ],
+        [
+          "107362804572947",
+          "256157490251353593441"
+        ],
+        [
+          "305606512192501/9",
+          "-23646417837002335990141/27"
+        ],
+        [
+          "1413476686249589",
+          "-52811301360597927383607"
+        ],
+        [
+          "3892455620987453/49",
+          "78262410657484049671263/343"
+        ]
+      ],
+      "known_basis_mod2_certificate": {
+        "combined_binary_rank": 20,
+        "method": "exact images in products of E(F_p)/2E(F_p)",
+        "point_transformation": {
+          "X": "36*x+(-9)",
+          "Y": "108*(2*y+(1)*x+(1))"
+        },
+        "prime_bound": 2000,
+        "primes": [
+          11,
+          23,
+          29,
+          41,
+          47,
+          59,
+          61,
+          67,
+          73,
+          83,
+          97,
+          101,
+          113,
+          127,
+          139,
+          149
+        ],
+        "rows": [
+          {
+            "group_order": 18,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            ],
+            "prime": 11,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 32,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 23,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 36,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0
+              ]
+            ],
+            "prime": 29,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 54,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 41,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 60,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 47,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 70,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1
+              ]
+            ],
+            "prime": 59,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 64,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ],
+            "prime": 61,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 76,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            "prime": 67,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 88,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0
+              ]
+            ],
+            "prime": 73,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 96,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 83,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 114,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 97,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 106,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            ],
+            "prime": 101,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 132,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            "prime": 113,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 148,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 127,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 156,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            ],
+            "prime": 139,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 168,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 149,
+            "quotient_dimension": 2
+          }
+        ],
+        "short_model": [
+          "0",
+          "0",
+          "0",
+          "-33541013268172529885816962722027",
+          "74960501482125767428832811657748965434272206054"
+        ]
+      },
+      "known_basis_sha256": "92862a513a909098274e297c2077b181d9ede608611314b0168b019ad81f647c",
+      "known_kummer_image_dimension": 20,
+      "label": "ICARM 245",
+      "log_conductor": "150.66890715223701088322325397998522482857738558336396594706898102012739243591187",
+      "next_exact_gate": "compute the complete 2-Selmer dimension; subtract the certified known Kummer image dimension, then materialize only a basis of the residual quotient as minimized locally tested covers",
+      "no_rational_two_torsion_witness": {
+        "group_order": 13,
+        "prime": 7
+      },
+      "rank21_directions_needed": 1,
+      "rational_two_torsion_dimension": 0,
+      "root_number": 1,
+      "source_artifact": {
+        "path": "archive/elliptic-curves/artifacts/snapshots/pre-cleanup-2026-08-24/icarm_curve245_rank20_v1.json",
+        "sha256": "487d6e072ed7a2508d7ab12663910b3028c8b23362039c3e8b93a278809a2cbd"
+      },
+      "two_division_cubic_coefficients_ascending": [
+        6426654790991604020743503533137683280773037,
+        -103521645889421388536472107166,
+        -3,
+        4
+      ]
+    },
+    {
+      "basis_provenance": {
+        "claim": "twenty exact independent points with full mod-2 Kummer image; no global saturation claim",
+        "method": "PARI bounded small-prime saturation candidate, followed by exact independent certification",
+        "prime_bound_strict_upper_limit": 20,
+        "scope_warning": "PARI documents ellsaturation under a finite-index hypothesis. No unconditional rank upper bound is known, so this is a bounded small-prime saturation candidate, not a saturation theorem."
+      },
+      "certified_known_rank": 20,
+      "conductor": "2876153493562761211278364526603564191699143885403233935132057708367930",
+      "descent_model": [
+        "0",
+        "0",
+        "0",
+        "-13807877357798360546359539121202476107/6250000",
+        "9844145394428104000494649465829070161633934100386217347/7812500000"
+      ],
+      "global_minimal_model": [
+        "1",
+        "1",
+        "1",
+        "-4437412060110743641525245114305",
+        "3586842216822165612930264910099076801587288127"
+      ],
+      "id": "fermigier-u28917-20",
+      "known_basis": [
+        [
+          "1907991693768003963/2500",
+          "107496991286061449303952/25"
+        ],
+        [
+          "1995691522301502963/2500",
+          "283613417241610565736207/125"
+        ],
+        [
+          "1991675820463683963/2500",
+          "59329703844331254812016/25"
+        ],
+        [
+          "-87300082308931974237/302500",
+          "180038799840983398594226543232/4159375"
+        ],
+        [
+          "2011636265099703963/2500",
+          "-45744125144340441031668/25"
+        ],
+        [
+          "2272526295428463963/2500",
+          "42757984535982230487924/25"
+        ],
+        [
+          "1503210425886875643/2500",
+          "-38151526622689145307612096/3125"
+        ],
+        [
+          "4097008629968307963/2500",
+          "5646906528265793323477728/125"
+        ],
+        [
+          "-4214627090107436037/2500",
+          "347481235619874295982784/25"
+        ],
+        [
+          "-4286867704871206917/2500",
+          "7908076757935336422533184/3125"
+        ],
+        [
+          "2370196158954621963/2500",
+          "-525615450087990602649834/125"
+        ],
+        [
+          "1413211709116340763/2500",
+          "-8656294084875353684303172/625"
+        ],
+        [
+          "1393051482651853563/2500",
+          "8883343866131697948751584/625"
+        ],
+        [
+          "7276328769460083963/2500",
+          "-3489771189059720333679456/25"
+        ],
+        [
+          "2242050556212719763/2500",
+          "127529996000317992666207/625"
+        ],
+        [
+          "2627963595108366963/2500",
+          "-1245357238227836830836831/125"
+        ],
+        [
+          "-117633957766679333/22500",
+          "24070171294368009488760271/675"
+        ],
+        [
+          "1877090830089068643/2500",
+          "-15482328946215778257235821/3125"
+        ],
+        [
+          "2257147333292836803/2500",
+          "-3656974610948053220077833/3125"
+        ],
+        [
+          "448181756234595236427/1322500",
+          "7135319538314143819863217452/304175"
+        ]
+      ],
+      "known_basis_mod2_certificate": {
+        "combined_binary_rank": 20,
+        "method": "exact images in products of E(F_p)/2E(F_p)",
+        "point_transformation": {
+          "X": "x",
+          "Y": "y"
+        },
+        "prime_bound": 2000,
+        "primes": [
+          19,
+          29,
+          43,
+          47,
+          59,
+          61,
+          67,
+          71,
+          103,
+          107,
+          109,
+          127,
+          131,
+          139,
+          151,
+          163
+        ],
+        "rows": [
+          {
+            "group_order": 26,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ],
+            "prime": 19,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 40,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            "prime": 29,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 54,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            ],
+            "prime": 43,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 58,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            "prime": 47,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 72,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 59,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 76,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 61,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 80,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            "prime": 67,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 84,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ],
+            "prime": 71,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 120,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1
+              ]
+            ],
+            "prime": 103,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 128,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 107,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 122,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 109,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 130,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ]
+            ],
+            "prime": 127,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 150,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            ],
+            "prime": 131,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 160,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1
+              ]
+            ],
+            "prime": 139,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 156,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 151,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 184,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ],
+            "prime": 163,
+            "quotient_dimension": 2
+          }
+        ],
+        "short_model": [
+          "0",
+          "0",
+          "0",
+          "-13807877357798360546359539121202476107/6250000",
+          "9844145394428104000494649465829070161633934100386217347/7812500000"
+        ]
+      },
+      "known_basis_sha256": "1b5dff7e01ec1266cc4dfff40c170e4b2499e9ef05115d2e63f2c149c8f16c83",
+      "known_kummer_image_dimension": 20,
+      "label": "Fermigier--Mestre u=28917/20",
+      "log_conductor": "159.93482522552545339840138409496203860033602762598444576466041725048663568492918",
+      "next_exact_gate": "compute the complete 2-Selmer dimension; subtract the certified known Kummer image dimension, then materialize only a basis of the residual quotient as minimized locally tested covers",
+      "no_rational_two_torsion_witness": {
+        "group_order": 49,
+        "prime": 37
+      },
+      "rank21_directions_needed": 1,
+      "rational_two_torsion_dimension": 0,
+      "root_number": 1,
+      "source_artifact": {
+        "path": "artifacts/generated-results/elliptic-curves/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json",
+        "sha256": "0a45bd473d1eba34e1b548eb71c29b0e12bfcc90d74059e5be4aefd7e236d149"
+      },
+      "two_division_cubic_coefficients_ascending": [
+        9844145394428104000494649465829070161633934100386217347,
+        -17259846697247950682949423901503095133750,
+        0,
+        7812500000
+      ]
+    },
+    {
+      "basis_provenance": {
+        "claim": "nineteen exact independent points with full mod-2 Kummer image; no global saturation claim",
+        "method": "PARI ellsaturation discovery from the certified mod-3 basis, followed by exact mod-2 finite-quotient certification",
+        "saturation_prime_bound": 3,
+        "seed_basis_sha256": "cfcdf33e95f20b448c822668140331b5b9e16597a62e8f82c0fd3a63b4d7c176"
+      },
+      "certified_known_rank": 19,
+      "conductor": "326790686135053856797792526410276285369892843806582733814182307532218",
+      "descent_model": [
+        "0",
+        "0",
+        "0",
+        "-30713288939222179048493214833137/22413546288",
+        "160656023361413821744485316230066015936432293449/8718017791273056"
+      ],
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-639860186233795396843608642357",
+        "185944471483117795919620263190737781477557921"
+      ],
+      "id": "family2-u483",
+      "known_basis": [
+        [
+          "6970193728491673/259308",
+          "-345746977375988232/343"
+        ],
+        [
+          "1903381061043673/259308",
+          "-7108422528248394624/2401"
+        ],
+        [
+          "4031011322781913/259308",
+          "6768365726695147808/7203"
+        ],
+        [
+          "20797258328490169/259308",
+          "-148394366965673124956/7203"
+        ],
+        [
+          "389332481667193/259308",
+          "9715604694135654556/2401"
+        ],
+        [
+          "-10691271465410087/259308",
+          "110904186364683686656/50421"
+        ],
+        [
+          "7969955800728601/259308",
+          "2379212927239352072/1029"
+        ],
+        [
+          "11570207678451145/259308",
+          "798966988578242029062/117649"
+        ],
+        [
+          "13919480565143833/259308",
+          "10266649776232546136/1029"
+        ],
+        [
+          "4426209074607769/259308",
+          "-5208946214998152/49"
+        ],
+        [
+          "21818112768557785/259308",
+          "375364191940964982624/16807"
+        ],
+        [
+          "4182636679258969/259308",
+          "-318546651112839568/441"
+        ],
+        [
+          "25231410806743513/259308",
+          "-613612863325780705024/21609"
+        ],
+        [
+          "-1157034082323671/259308",
+          "106857538212790642222/21609"
+        ],
+        [
+          "-86471425042631/259308",
+          "657341065955039909476/151263"
+        ],
+        [
+          "49124825585781625/259308",
+          "-1749927616209642311068/21609"
+        ],
+        [
+          "2035252988715241/259308",
+          "-61713894676683364522/21609"
+        ],
+        [
+          "6663428485606873/259308",
+          "-7210693471224975232/16807"
+        ],
+        [
+          "21185737409316313/259308",
+          "51036513682211857536/2401"
+        ]
+      ],
+      "known_basis_mod2_certificate": {
+        "combined_binary_rank": 19,
+        "method": "exact images in products of E(F_p)/2E(F_p)",
+        "point_transformation": {
+          "X": "x",
+          "Y": "y"
+        },
+        "prime_bound": 2000,
+        "primes": [
+          13,
+          17,
+          31,
+          47,
+          59,
+          67,
+          71,
+          73,
+          79,
+          83,
+          97,
+          101,
+          127,
+          151,
+          179
+        ],
+        "rows": [
+          {
+            "group_order": 20,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 13,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 24,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1
+              ]
+            ],
+            "prime": 17,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 42,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ]
+            ],
+            "prime": 31,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 56,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 47,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 72,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            ],
+            "prime": 59,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 80,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0
+              ]
+            ],
+            "prime": 67,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 86,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            "prime": 71,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 82,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0
+              ]
+            ],
+            "prime": 73,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 92,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1
+              ]
+            ],
+            "prime": 79,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 88,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 83,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 104,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ],
+            "prime": 97,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 122,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            ],
+            "prime": 101,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 148,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 127,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 170,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1
+              ]
+            ],
+            "prime": 151,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 206,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ]
+            ],
+            "prime": 179,
+            "quotient_dimension": 1
+          }
+        ],
+        "short_model": [
+          "0",
+          "0",
+          "0",
+          "-30713288939222179048493214833137/22413546288",
+          "160656023361413821744485316230066015936432293449/8718017791273056"
+        ]
+      },
+      "known_basis_sha256": "d76274305b402db8f177b5d29d37891f2d1fb7df80a91938994706a838958bee",
+      "known_kummer_image_dimension": 19,
+      "label": "family2_u483",
+      "log_conductor": "157.759935999987990974526937211245084387717188402099368978989",
+      "next_exact_gate": "compute the complete 2-Selmer dimension; subtract the certified known Kummer image dimension, then materialize only a basis of the residual quotient as minimized locally tested covers",
+      "no_rational_two_torsion_witness": {
+        "group_order": 9,
+        "prime": 5
+      },
+      "rank21_directions_needed": 2,
+      "rational_two_torsion_dimension": 0,
+      "root_number": -1,
+      "source_artifact": {
+        "path": "archive/elliptic-curves/artifacts/snapshots/pre-cleanup-2026-08-24/elliptic_mestre_dsquare_rank19_frontiers.json",
+        "sha256": "e78613cc35ad523242a6d3af529a4b59bece136a8f2b7880bead3ef7094144be"
+      },
+      "two_division_cubic_coefficients_ascending": [
+        160656023361413821744485316230066015936432293449,
+        -11946302292377737207060017827926633794,
+        0,
+        8718017791273056
+      ]
+    },
+    {
+      "basis_provenance": {
+        "claim": "nineteen exact independent points with full mod-2 Kummer image; no global saturation claim",
+        "method": "PARI ellsaturation discovery from the certified mod-3 basis, followed by exact mod-2 finite-quotient certification",
+        "saturation_prime_bound": 3,
+        "seed_basis_sha256": "6ea2924633ed408bf9409024bfc71fe66e6b9e8ac13fe90233cf8d068f734c4d"
+      },
+      "certified_known_rank": 19,
+      "conductor": "176845205059215127535222459641448779448573222533452613099206007351792110",
+      "descent_model": [
+        "0",
+        "0",
+        "0",
+        "-1559220378128693788182547348414900107/878013976576",
+        "369335164133828779680696252993105492318163811489173347/411360084193574912"
+      ],
+      "global_minimal_model": [
+        "1",
+        "-1",
+        "1",
+        "-14853112884170608407469777362587",
+        "21717789706067374061109415673917936898882673611"
+      ],
+      "id": "family3-u660",
+      "known_basis": [
+        [
+          "647781247422488763/937024",
+          "-5532688410829346464425/234256"
+        ],
+        [
+          "609814945501261083/937024",
+          "-7803937544077613070405/58564"
+        ],
+        [
+          "363375332317336923/937024",
+          "5507077467118663845045/10648"
+        ],
+        [
+          "642245933510680203/937024",
+          "-2192895194245172296245/42592"
+        ],
+        [
+          "640601138005848603/937024",
+          "-3364478312014657545435/58564"
+        ],
+        [
+          "852995793684494043/937024",
+          "243155928699989192229615/1288408"
+        ],
+        [
+          "640226436013482363/937024",
+          "151358497483004984319525/2576816"
+        ],
+        [
+          "596959293595844763/937024",
+          "-50983095208716699844725/322102"
+        ],
+        [
+          "-155154890332462437/937024",
+          "350980195476779457231825/322102"
+        ],
+        [
+          "2153426032176198363/937024",
+          "-3855419756152147554400575/1288408"
+        ],
+        [
+          "203497093467087003/937024",
+          "232809570951048524074005/322102"
+        ],
+        [
+          "307497849079200363/937024",
+          "277337484279619276292325/468512"
+        ],
+        [
+          "826374805771454523/937024",
+          "-342059826845733139933335/2576816"
+        ],
+        [
+          "-1276766411969049957/937024",
+          "-285890110151392911370185/322102"
+        ],
+        [
+          "-1027901460655289637/937024",
+          "-13152901163255998878825/10648"
+        ],
+        [
+          "493627474761470523/937024",
+          "77167749544604958085515/234256"
+        ],
+        [
+          "909078617648532915/937024",
+          "-3059768535902215871183541/10307264"
+        ],
+        [
+          "-1437747695899764237/937024",
+          "94912463624187080111175/937024"
+        ],
+        [
+          "842202554640626763/937024",
+          "-859243200837328735380225/5153632"
+        ]
+      ],
+      "known_basis_mod2_certificate": {
+        "combined_binary_rank": 19,
+        "method": "exact images in products of E(F_p)/2E(F_p)",
+        "point_transformation": {
+          "X": "x",
+          "Y": "y"
+        },
+        "prime_bound": 2000,
+        "primes": [
+          17,
+          23,
+          31,
+          37,
+          41,
+          47,
+          53,
+          59,
+          67,
+          71,
+          73,
+          79,
+          83,
+          97,
+          101,
+          109,
+          131,
+          151
+        ],
+        "rows": [
+          {
+            "group_order": 24,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1
+              ]
+            ],
+            "prime": 17,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 32,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ]
+            ],
+            "prime": 23,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 38,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 31,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 46,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0
+              ]
+            ],
+            "prime": 37,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 54,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 41,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 60,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ],
+            "prime": 47,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 66,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ],
+            "prime": 53,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 72,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ]
+            ],
+            "prime": 59,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 66,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1
+              ]
+            ],
+            "prime": 67,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 84,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ],
+            "prime": 71,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 90,
+            "matrix_rows": [
+              [
+                1,
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0
+              ]
+            ],
+            "prime": 73,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 96,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1
+              ]
+            ],
+            "prime": 79,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 100,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "prime": 83,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 112,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                0
+              ]
+            ],
+            "prime": 97,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 120,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ],
+            "prime": 101,
+            "quotient_dimension": 2
+          },
+          {
+            "group_order": 124,
+            "matrix_rows": [
+              [
+                0,
+                1,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1
+              ]
+            ],
+            "prime": 109,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 152,
+            "matrix_rows": [
+              [
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                1,
+                0,
+                1,
+                1,
+                1,
+                0,
+                1,
+                1,
+                0,
+                1,
+                1,
+                1,
+                1
+              ]
+            ],
+            "prime": 131,
+            "quotient_dimension": 1
+          },
+          {
+            "group_order": 170,
+            "matrix_rows": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1,
+                0
+              ]
+            ],
+            "prime": 151,
+            "quotient_dimension": 1
+          }
+        ],
+        "short_model": [
+          "0",
+          "0",
+          "0",
+          "-1559220378128693788182547348414900107/878013976576",
+          "369335164133828779680696252993105492318163811489173347/411360084193574912"
+        ]
+      },
+      "known_basis_sha256": "f40419b6127fbcf98f2ecd21924d1dbe99b720654d634c6723978b12ec679171",
+      "known_kummer_image_dimension": 19,
+      "label": "family3_u660",
+      "log_conductor": "164.053646218834994361087060488995676944024623069995922094661",
+      "next_exact_gate": "compute the complete 2-Selmer dimension; subtract the certified known Kummer image dimension, then materialize only a basis of the residual quotient as minimized locally tested covers",
+      "no_rational_two_torsion_witness": {
+        "group_order": 55,
+        "prime": 43
+      },
+      "rank21_directions_needed": 2,
+      "rational_two_torsion_dimension": 0,
+      "root_number": -1,
+      "source_artifact": {
+        "path": "archive/elliptic-curves/artifacts/snapshots/pre-cleanup-2026-08-24/elliptic_mestre_dsquare_rank19_frontiers.json",
+        "sha256": "e78613cc35ad523242a6d3af529a4b59bece136a8f2b7880bead3ef7094144be"
+      },
+      "two_division_cubic_coefficients_ascending": [
+        369335164133828779680696252993105492318163811489173347,
+        -730513457797830584088981623300561678930784,
+        0,
+        411360084193574912
+      ]
+    }
+  ]
+}

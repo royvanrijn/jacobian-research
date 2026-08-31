@@ -25,6 +25,10 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   low-conductor frontiers and conditional fixed-fibre diagnostics.
 - `certify_nagao_rank20_t5081.py`: exact Nagao rank-at-least-20 certificate.
 - `newfamily/certify_rank_t83_6.py`: exact-rank-14 Sage/PARI replay.
+- `elkies_residual_selmer_gate.py`: fail-closed rank-32 residual-dimension
+  policy; signatures and incomplete descent cannot authorize point search.
+- `run_elkies_2026_rank28_residual_selmer.py`: resource-bounded genuine PARI
+  2-descent on the public rank-28 positive control.
 
 ## Shared arithmetic
 
@@ -40,6 +44,9 @@ the same arithmetic.
 - Files containing `bnf_free`, `residual_selmer`, or `curve273` implement the
   unfinished residual 2-Selmer chain. Intermediate success is not a rank
   theorem.
+- For Elkies compact-`t` candidates, residual dimension below 15 rejects rank
+  32. Only a completed unconditional global/local descent of dimension at
+  least 15 may unlock a same-curve two-cover or expensive point search.
 - The retained `fermigier_rank20`, `mixed_small_prime`, and
   `six_root_low_conductor` drivers support the open low-conductor gate.
 - `newfamily/` has its own [workflow index](newfamily/README.md).

@@ -382,6 +382,94 @@ birational are isomorphic, and the transported origin fixes the marking. QED.
 The q8 missing-`Dx` and double-2-cover failures are concrete examples of why
 this theorem needs exact denominators and point-map degrees.
 
+### Proposition F1: direct bisection compilation from a height-ten trace
+
+Let
+
+```text
+E: y^2=x^3+A(t)x+B(t)
+```
+
+be an integral rootless elliptic K3 over a characteristic-zero field, in the
+standard degree bounds `deg(A)<=8`, `deg(B)<=12`.  Let a height-ten section be
+written in coprime form
+
+```text
+tau=(Nx/h^2,Ny/h^3),       deg(h)=3,       gcd(Nx,h)=1.
+```
+
+There is a unique polynomial `M` of degree below six satisfying
+
+```text
+M*Nx+Ny == 0 mod h^2.
+```
+
+Put
+
+```text
+U = M^2-Nx,
+R = M*Nx+Ny,
+N = M^4-6*M^2*Nx-8*M*Ny-3*Nx^2-4*A*h^4.
+```
+
+Then `h^2` divides `U`, `h^6` divides `N`, and the residual intersections of
+the line through `-tau` with slope `M/h` satisfy
+
+```text
+x^2-(U/h^2)*x+(R^2-B*h^6)/(h^4*Nx)=0.
+```
+
+Its discriminant is
+
+```text
+h^2*q(t),       q=N/h^6,       deg(q)<=2.
+```
+
+If the class of `tau` modulo twice the Mordell--Weil lattice is one of the
+section-nonnegative norm-ten bisection classes, then the residual curve is the
+corresponding irreducible rational bisection.  In particular `q` is a
+non-square squarefree quadratic after removing a rational square, and its
+class is the exact quadratic branch squareclass.
+
+#### Proof
+
+Invertibility of `Nx` modulo `h^2` gives existence and uniqueness of `M`.
+The section identity is
+
+```text
+Ny^2=Nx^3+A*Nx*h^4+B*h^6.
+```
+
+The congruence for `M` and this identity first give `h^2 | U`.  In the
+localization at `h`, write `M=-Ny/Nx+h^2*k`; then
+
+```text
+U/h^2 == -2*(Ny/Nx)*k mod h^2,
+R/h^2 == k*Nx mod h^2.
+```
+
+The exact identity
+
+```text
+Nx*N = Nx*U^2-4*R^2+4*B*h^6
+```
+
+therefore shows `h^6 | N`; coprimality removes `Nx`.  Substituting the line
+through `-tau` into the cubic and removing its known root gives the displayed
+quadratic.  Its discriminant is `N/h^4=h^2*q`.  The K3 degree bounds give
+`deg(N)<=20`, hence `deg(q)<=2`.  Finally, the lattice argument in
+[`BISECTION_COLLISION_SEARCH.md`](BISECTION_COLLISION_SEARCH.md) proves that a
+surviving class is an irreducible smooth rational bisection, excluding a split
+or constant residual cover and identifying its trace class with `tau mod 2M`.
+QED.
+
+This proposition replaces a nonlinear generic Riemann--Roch solve at the
+rootless endpoint by one exact elliptic group-law computation and one linear
+polynomial inversion modulo `h^2`.  It does not predict collisions between the
+resulting quadratic squareclasses.
+
+<!-- status-consumer: EC-K3-BISECT-EQUATION-BATCH a993e11257ca08a8 -->
+
 ## 8. What a bounded neighbour search really proves
 
 ### Theorem G: completeness inside a declared lattice box

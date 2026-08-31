@@ -13,6 +13,8 @@ import sys
 import tempfile
 from time import perf_counter
 import unittest
+import statistics
+from math import sqrt
 
 
 SCRIPT = Path(__file__).with_name("search_h92_q12o5867_rootless_nagao.py")
@@ -205,6 +207,99 @@ class ProjectiveNagaoSieveTests(unittest.TestCase):
                 record["block_score_units_1e12"],
                 list(candidate.block_score_units),
             )
+
+    def test_cpp_complete_worst_block_control_ranks_match_python(self) -> None:
+        compiler = shutil.which("g++")
+        if compiler is None:
+            self.skipTest("g++ is unavailable")
+        requested = ((19, 31, 43), (23, 37, 47), (29, 41, 53))
+        blocks, rejected = SIEVE.build_residue_tables(self.model, requested)
+        self.assertEqual(rejected, ())
+        controls = ((0, 1), (1, 1), (-1, 1))
+
+        standards = {}
+        for block in blocks:
+            for prime, table in block.items():
+                values = [
+                    symbol.contribution_units
+                    for symbol in table
+                    if symbol.good_reduction
+                ]
+                standards[prime] = (
+                    statistics.fmean(values),
+                    statistics.pstdev(values),
+                )
+
+        def python_key(pair):
+            numerator, denominator = pair
+            signals = []
+            good = bad = 0
+            for block in blocks:
+                total = 0.0
+                for prime, table in block.items():
+                    index = SIEVE.projective_index(numerator, denominator, prime)
+                    symbol = table[index]
+                    if symbol.good_reduction:
+                        mean, deviation = standards[prime]
+                        total += (symbol.contribution_units - mean) / deviation
+                        good += 1
+                    else:
+                        bad += 1
+                signals.append(total / sqrt(len(block)))
+            height = 1 if denominator == 0 else max(abs(numerator), denominator)
+            return (
+                min(signals),
+                statistics.fmean(signals),
+                good,
+                -bad,
+                -height,
+                -denominator,
+                -numerator,
+            )
+
+        population = [
+            (candidate.numerator, candidate.denominator)
+            for candidate in SIEVE.primitive_parameters(20, 20)
+        ]
+        expected_ranks = [
+            1 + sum(python_key(pair) > python_key(control) for pair in population)
+            for control in controls
+        ]
+
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            temporary = Path(temporary_directory)
+            table_path = temporary / "tables.txt"
+            binary_path = temporary / "scan"
+            output_path = temporary / "result.json"
+            SIEVE.export_cpp_tables(table_path, self.model, blocks)
+            subprocess.run(
+                [compiler, "-O3", "-std=c++17", str(CPP), "-o", str(binary_path)],
+                check=True,
+            )
+            completed = subprocess.run(
+                [
+                    str(binary_path),
+                    str(table_path),
+                    "20",
+                    "20",
+                    "1",
+                    "1,1,1",
+                    "10",
+                    str(output_path),
+                    "1",
+                    ",".join(f"{a}/{b}" for a, b in controls),
+                ],
+                capture_output=True,
+                text=True,
+            )
+            self.assertIn(completed.returncode, (0, 3))
+            result = json.loads(output_path.read_text())
+        self.assertEqual(result["population_count"], len(population))
+        self.assertEqual(
+            [record["population_rank"] for record in result["positive_controls"]],
+            expected_ranks,
+        )
+        self.assertEqual(result["scoring"]["primary_ranking_key"], "minimum block signal")
 
 
 if __name__ == "__main__":

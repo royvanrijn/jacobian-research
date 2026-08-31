@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Specialize and certify the q12o5867 rootless rank-17 basis."""
+"""Specialize and certify the compact published rootless rank-17 basis."""
 
 from __future__ import annotations
 
@@ -22,10 +22,12 @@ from ecsearch.q12o5867_specialization import (  # noqa: E402
 )
 
 
-DEFAULT_MODEL = REPOSITORY / "artifacts/local/elkies-k3/q12o5867-smooth-rr-qq.json"
+DEFAULT_MODEL = (
+    REPOSITORY / "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json"
+)
 DEFAULT_SECTIONS = (
     REPOSITORY
-    / "artifacts/local/elkies-k3/q12o5867-rootless-selected-basis-qq.json"
+    / "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json"
 )
 
 
@@ -52,7 +54,8 @@ def default_output(a: int, b: int) -> Path:
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
-            "Homogeneously specialize q12o5867 at the projective parameter "
+            "Homogeneously specialize the compact published R17 family at "
+            "the projective parameter "
             "(a:b), minimize exactly with PARI, and certify its 17 sections."
         )
     )
@@ -112,4 +115,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

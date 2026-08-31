@@ -13,6 +13,9 @@ the archive is classified by historical programme rather than promoted file-by-f
 
 <!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-MOD131-HORIZONTAL 2249c509c1217d7c -->
 <!-- status-consumer: EC-K3-H3-Q4O164-Q8O376-QQ-HORIZONTAL 688f0a5f6d989e9c -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R18-COVER 6b4ee5bbc1afc01e -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R19-PAIRED f1e135d2ba803e80 -->
 
 ## Local Sage 10.9 installation
 
@@ -943,6 +946,50 @@ The optional orbit5867 endpoint and its pinned-route composition replay with:
   --status PASS_EXACT_Q323_FREE_Q4O1584_Q4O164_Q8O376_Q12O5867_PINNED_R17_ROUTE \
   --output artifacts/generated-results/elkies-k3-h3-q4o208-q323-free-q4o1584-q4o164-q8o376-q12o5867-pinned-r17-route-certificate.json
 ```
+
+### Elkies 2026 compact-t positive controls and residual gate
+
+The published compact chart is now the only active direct specialization
+coordinate. Replay all seventeen sections and the exact coordinate match, then
+certify the four public exceptional fibres with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/verify_elkies_2026_published_r17_target.sage
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/match_h92_q12o5867_to_elkies_2026_qq.sage
+python3 elliptic-curves/scripts/verify_elkies_2026_high_rank_calibrations.py
+```
+
+The last command imports public exact point sets of lengths 25--28 and
+certifies one combined generic-plus-complement independence matrix at each
+fibre, with quotient gains `8,9,10,11`.
+
+The accepted complete scoring calibration is:
+
+```bash
+python3 elkies-k3/scripts/calibrate_elkies_2026_positive_controls_nagao.py
+```
+
+It enumerates every primitive compact `t=a/b` through height 10,000, uses
+three disjoint 34-prime ensembles, ranks first by weakest standardized block,
+and fails unless every control lies in the top one percent. This is a
+heuristic ranking gate, not rank evidence.
+
+The next arithmetic gate is the actual residual 2-Selmer quotient:
+
+```bash
+python3 elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py \
+  --timeout 300 --overwrite
+```
+
+The pinned attempt times out without a Selmer dimension and therefore forbids
+search. `probe_q12o5867_pari_two_cover.py` now requires a passing
+`--residual-selmer-gate` for the identical minimal curve. BNF-free signatures,
+norm-one candidates, incomplete class ledgers, and local candidates cannot
+satisfy it. Do not run raw `ratpoints`, slope-box, two-cover point search, or
+equivalent expensive paths before the residual dimension is certified at
+least 15.
 
 ### Fixed-corridor reverse lift from the q12/o5867 endpoint
 

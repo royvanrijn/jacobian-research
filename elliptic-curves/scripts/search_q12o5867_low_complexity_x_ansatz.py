@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Search q12o5867 rank jumps with low-complexity section x-interpolants.
+"""Search the rootless R17 family with low-complexity section x-interpolants.
 
 For ordered generic section abscissas ``x_i(u)`` and a small rational lambda,
 set
@@ -58,12 +58,14 @@ from pari_bridge import pari_version  # noqa: E402
 
 Q = Fraction
 Point = tuple[Fraction, Fraction]
-DEFAULT_MODEL = REPOSITORY / "artifacts/local/elkies-k3/q12o5867-smooth-rr-qq.json"
+DEFAULT_MODEL = (
+    REPOSITORY / "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json"
+)
 DEFAULT_SECTIONS = (
     REPOSITORY
-    / "artifacts/local/elkies-k3/q12o5867-rootless-selected-basis-qq.json"
+    / "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json"
 )
-DEFAULT_ANCHORS = ((-7801, 1463), (601, 418), (677, 3402), (-267, 847))
+DEFAULT_ANCHORS = ((-2, 377), (-308, 251), (2456, 135), (-9529, 5471))
 
 
 def sha256_file(path: Path) -> str:

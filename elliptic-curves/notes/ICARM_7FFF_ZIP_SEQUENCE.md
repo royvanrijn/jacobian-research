@@ -3,12 +3,14 @@
 ## Result
 
 ICARM curves 281, 282, 285 and 286 were submitted by `7fff-zip` on
-2026-08-22, with reported rank lower bounds 19, 20, 21 and 21.  The
-dependency-free checker
+2026-08-22, with reported rank lower bounds 19, 20, 21 and 21.  The exact
+checker
 [`analyze_icarm_7fff_zip_sequence.py`](../cas/analyze_icarm_7fff_zip_sequence.py)
 independently verifies all 81 displayed rational points and proves each
 displayed set independent using exact products of good-reduction quotients
-`E(F_p)/2E(F_p)`.  It also proves trivial rational torsion for each curve.
+`E(F_p)/2E(F_p)`.  It also proves trivial rational torsion for each curve and
+uses repository-local PARI/GP to replay global minimalization and the complete
+local Tate data for the two rank-at-least-21 curves 285 and 286.
 
 The most important consequence is curve 285:
 
@@ -22,11 +24,31 @@ N = 1746512979501225597635228204059275382729246622846831247192424343764785450672
 log(N) = 173.25150319151186...
 ```
 
-Thus its 21-point lower bound is independently certified and its
-ICARM-reported conductor lies well below the strict `182.72` threshold.  The
-current lightweight replay does not independently run Tate's algorithm or
-global minimalization, so the conductor component remains attributed to the
-public database pending a PARI/Sage replay.
+Thus its 21-point lower bound and exact conductor are independently replayed,
+and `log(N)` lies well below the strict `182.72` threshold.
+
+## Global minimality and local conductor replay
+
+For both curves, `ellminimalmodel` returns the displayed integral model with
+global change `[1,0,0,0]`.  PARI's local Tate calculation gives:
+
+```text
+285: p=2   (v(Delta),f,Kodaira,c)=(10,4,I2*,4)
+     p=3   (2,1,I2,2)       p=7  (5,1,I5,5)
+     p=17  (4,1,I4,4)       p=59 (2,1,I2,2)
+     p=q70 (1,1,I1,1)
+
+286: p=2   (13,1,I13,13)    p=3   (8,2,I2*,4)
+     p=5   (8,1,I8,8)       p=19  (4,1,I4,4)
+     p=193 (2,1,I2,2)
+     p=313,30133,145063,q22,q39: (1,1,I1,1)
+```
+
+Here `q70` and `q22,q39` denote the large exponent-one primes printed in the
+factorizations below.  Every local minimal change is `[1,0,0,0]`.  Multiplying
+the displayed prime powers `p^f` reconstructs the public conductor exactly;
+the Tamagawa products are respectively `320` and `3328`, and both root
+numbers are `-1`.  This closes the previous repository-local conductor gap.
 
 ## Exact comparison
 

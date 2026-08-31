@@ -892,19 +892,20 @@ def main() -> None:
                 assert "section-translation orbit" in str(error)
             else:
                 raise AssertionError("a vector from a different translation orbit was accepted")
-        alternate_table = (
-            ROOT / "artifacts/generated-results/"
-            "elkies-k3-q80-alternate-rootless-bisection-orbits.tsv"
-        )
-        alternate_frame = (
-            ROOT / "artifacts/generated-results/"
-            "q80-alternate-fifth-q6-rootless-transport.json"
-        )
-        assert alternate_table.is_file() and alternate_frame.is_file()
-        with alternate_table.open(newline="") as stream:
-            alternate_rows = list(csv.DictReader(stream, delimiter="\t"))[:2]
-        assert len(alternate_rows) == 2
         with TemporaryDirectory() as directory:
+            # Exercise the alternate-frame schema without depending on large,
+            # ignored generated q80 artifacts.  The matrix need only be a
+            # declared exact rank-17 frame for this parser/attachment test;
+            # the actual alternate q80 enumeration has its own Sage replay.
+            alternate_frame = Path(directory) / "alternate-frame.json"
+            pinned_gram = load_integral_gram(RANK17_GRAM, rank=17)
+            alternate_frame.write_text(json.dumps({
+                "rootless_frame": [list(row) for row in pinned_gram],
+            }))
+            alternate_rows = [
+                {"orbit_mask": "14", "hex": "0x0000e", "alternate_rank17_w": vector_14},
+                {"orbit_mask": "53", "hex": "0x00035", "alternate_rank17_w": vector_53},
+            ]
             table = Path(directory) / "alternate-orbits.tsv"
             table.write_text(
                 "orbit_mask\thex\talternate_rank17_w\n"

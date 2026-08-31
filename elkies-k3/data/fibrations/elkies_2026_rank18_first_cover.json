@@ -1,0 +1,41 @@
+{
+  "schema": "elkies-k3.elkies-2026-rank18-first-cover.v1",
+  "status": "PASS_EXACT_ELKIES_2026_FIRST_RANK18_COVER_SECTION",
+  "source": {
+    "arxiv": "2608.25406v1",
+    "published_input": "u^2=4225*t^2+38636*t+289444",
+    "derived_coordinates": "repository exact trace-and-chord recovery"
+  },
+  "cover": {
+    "equation": "u^2=q(t)",
+    "q_coefficients_low_to_high": ["289444", "38636", "4225"],
+    "rational_parameter": "r",
+    "parameterization": {
+      "t": "(289444-r^2)/(130*r-38636)",
+      "u": "65*t+r",
+      "inverse": "r=u-65*t",
+      "points_at_infinity": ["u/t=65", "u/t=-65"]
+    }
+  },
+  "trace_recovery": {
+    "published_basis_vector": [0, 0, 1, -1, 1, -1, 1, -1, 1, 0, 1, 1, 0, -1, -1, 0, 0],
+    "height": 10,
+    "mod_2_support_one_based": [3, 4, 5, 6, 7, 8, 9, 11, 12, 14, 15],
+    "branch_divisibility_filter_rank": 16,
+    "branch_divisibility_kernel_dimension": 1,
+    "h_coefficients_low_to_high": ["6582398638123/489117408", "1742378122451/1956469632", "8709182195/244558704", "1"],
+    "line_slope_numerator_M_coefficients_low_to_high": ["-6318671180290181423095/489117408", "-16827585595348028424103/9782348160", "-109995648693989654147/752488320", "-28600122784288794763/4891174080", "-4881318052208851/47030520", "-5839214015518/5878815"],
+    "line_slope": "m(t)=M(t)/h(t)",
+    "chord_discriminant_identity": "disc_x=(127170526080*h(t))^2*q(t)"
+  },
+  "eighteenth_section": {
+    "coordinate_form": "x=x0(t)+x1(t)*u; y=y0(t)+y1(t)*u",
+    "x0_coefficients_low_to_high": ["460616562639587423", "61544942274614409", "11682658506785981/2", "163024962070048", "1216010212300"],
+    "x1_coefficients_low_to_high": ["855711822955990", "113254577959315/2", "2264387370700", "63585263040"],
+    "y0_coefficients_low_to_high": ["-441929137834774631820718940", "-88340690629574988024582045", "-22334275911806988301256955/2", "-1363110071200934708267785/2", "-26423100426660280883085", "-689209766348986114440", "-6652384198263573120"],
+    "y1_coefficients_low_to_high": ["-821427253437723585002350", "-218758612739524369513339/2", "-18589264629284251550843/2", "-371801596195754331919", "-6599542006586366552", "-63156938791842688"],
+    "galois_trace": "P18(t,u)+P18(t,-u)=tau(t)",
+    "independence_mechanism": "nonzero anti-invariant P18(t,u)-P18(t,-u), as in Lemma 5 of arXiv:2608.25406v1"
+  },
+  "proof_boundary": "The exact verifier reconstructs tau from the published 17-section basis, replays the chord discriminant, checks the two coefficient identities modulo u^2-q(t), verifies the conic parameterization, and checks the Galois trace. Rank at least 18 then follows from the paper's Galois-invariance lemma."
+}

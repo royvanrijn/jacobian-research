@@ -517,7 +517,7 @@ this the **Q60 Compact Comparison**, not the source route.
 | route/family | lattice / chamber | characteristic-zero equations | intended use |
 |---|---|---|---|
 | H3 Source Family | source polarization and marked family exact | exact `E7+E8/MW2` source | canonical beginning |
-| H3 Selected Degree-Two Corridor | complete to pinned R17, with lossless inverse NS transport back to H3 | exact through q4/orbit164 `2A3+2A1/MW9`; q8/orbit376 is active | primary selected continuation, not optimality claim |
+| H3 Selected Degree-Two Corridor | complete to pinned R17, with lossless inverse NS transport back to H3 | exact through q8/orbit376 and q12/orbit5867, including source identity and full saturated R17 | completed construction proof; arithmetic base-change search is now primary |
 | Q80 Low-q Compiler Route | complete to rootless/MW17 | terminal CM24 shadow exact; generic rootless endpoint remains a lattice certificate | secondary construction/compiler |
 | Q80 CM24 Regression Route | specialization lattice/equation corridor complete | complete through `4A2+A3+A5/MW2` | regression and module discovery |
 | Low-q MW2 Backtrack | exact transport from MW17 to MW2 | endpoint rational model exists, but this is not the source route | reverse provenance / alternate reconstruction |

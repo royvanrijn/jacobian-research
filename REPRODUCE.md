@@ -14,6 +14,11 @@ dependency-light gate is:
 make verify-elliptic-curves PYTHON=python3
 ```
 
+The active Elkies rank-32 programme is the compact-`t` positive-control and
+residual 2-Selmer section of that catalogue. It requires an actual completed
+global/local descent before any expensive point search; a score or timeout is
+never an authorization.
+
 ## Level-474 branch in the Kumar H92 chart
 
 This exact Sage replay downloads the pinned Humbert-21 equation and extracts
@@ -2567,6 +2572,13 @@ The full exact table, CM24 comparison, and claim boundary are in
 
 ## Rootless MW17 bisection-orbit enumeration
 
+<!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS 345b9fb977057133 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R18-COVER 6b4ee5bbc1afc01e -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R19-PAIRED f1e135d2ba803e80 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL f99c98cdb6b8cd7d -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE f5600026fe1e9656 -->
+
 The rootless `U + (-M)` lattice has a finite degree-two quotient under section
 translation. The following exact lattice calculation enumerates its
 section-nonnegative `(-2)` bisection-class orbits and writes their canonical
@@ -2580,9 +2592,10 @@ sage -python elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage \
 
 It is a completed lattice quotient, not a bounded height search. In any
 rootless K3 realization, the section-nonnegative classes are consequently
-irreducible smooth rational bisections; their equations are still absent. It
-does not yet construct branch divisors, quadratic extensions, collision
-hashes, or a rank-19 family; see
+irreducible smooth rational bisections.  The equation stage for the first
+1,000 priority classes is replayed below; this lattice command itself does not
+construct branch divisors, quadratic extensions, collision hashes, or a
+rank-19 family.  See
 [`elkies-k3/BISECTION_COLLISION_SEARCH.md`](elkies-k3/BISECTION_COLLISION_SEARCH.md).
 <!-- status-consumer: EC-K3-BISECT-ORBIT 81da2fd80c3623b6 -->
 
@@ -2603,6 +2616,41 @@ R17BISECTDISJOINT|orbits=39120|norm4_masks=1311|active_masks=1311|pairs=8895801|
 The count ranks later equation-level work only; equal quadratic extensions and
 their anti-invariant heights remain unknown.
 <!-- status-consumer: EC-K3-BISECT-DISJOINT-FRONTIER c7ad7497253ac0b3 -->
+
+Rank every surviving pinned orbit by the exact published-section group-law
+and chord-input score, retain the first 1,000, and compute their induced
+disjoint-pair graph:
+
+```bash
+sage -python elkies-k3/scripts/rank_elkies_2026_bisection_orbits.sage \
+  --pool-size 1000
+```
+
+Expected terminal status:
+
+```text
+ELKIES2026BISECTIONPRIORITY|orbits=39120|pool=1000|disjoint_pairs=11823|status=PASS_EXACT_R17_BISECTION_EQUATION_PRIORITY
+```
+
+Construct all 1,000 exact residual-chord bisections and normalize their
+quadratic extensions:
+
+```bash
+sage -python elkies-k3/scripts/construct_elkies_2026_bisections.sage \
+  --limit 1000
+
+.venv/bin/python elkies-k3/scripts/hash_bisection_extensions.py \
+  --input artifacts/generated-results/elkies-2026-equation-bisections.json \
+  --output artifacts/generated-results/elkies-2026-equation-bisection-collisions.json
+```
+
+The direct compiler solves `M*Nx+Ny=0 mod h^2` for each height-ten trace,
+then verifies the exact quadratic relation and the lifted section over its
+double cover.  All 1,000 records pass and all branch at smooth fibres; their
+squareclasses are pairwise distinct, so this first bounded batch contains no
+collision.
+
+<!-- status-consumer: EC-K3-BISECT-EQUATION-BATCH a993e11257ca08a8 -->
 
 The equation-friendlier alternate q80 q6 endpoint has a distinct rootless
 rank-17 lattice.  Its short shell is too large for PARI's materialized vector
@@ -2632,14 +2680,16 @@ data, missing anti-invariant height data, and indefinite declared height
 lattices.
 Its optional complete-coverage mode also accepts the alternate q80 table when
 the input declares its rootless-frame artifact and uses
-`alternate_rank17_w`; both coverage modes are part of the regression.
+`alternate_rank17_w`.  The self-test exercises that alternate-frame schema
+with a temporary exact frame, while the actual q80 frame enumeration remains
+the separate Sage replay above.
 For a collision with smooth branch fibres and rootless double pullback, it can
 instead compute the anti-invariant height form from exact lifted-section
 intersections using `2*(P_i.tau(P_j)-P_i.P_j)`, checking the diagonal values
-`P_i^2=-4` and `P_i.tau(P_i)=2`. No actual rootless cover is supplied by this
-test.
+`P_i^2=-4` and `P_i.tau(P_i)=2`.  The synthetic test itself supplies no new
+rootless cover; the production 1,000-cover input is the batch above.
 
-<!-- status-consumer: EC-K3-BISECT-EXTENSION-PROTOCOL 64e387993e523b0b -->
+<!-- status-consumer: EC-K3-BISECT-EXTENSION-PROTOCOL f0dca8afe83627cd -->
 
 ## Fast structural check
 

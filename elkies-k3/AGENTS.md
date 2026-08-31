@@ -14,9 +14,14 @@ the only authority for what is proved.
   the certified H3 source, has geometric Picard rank `19`, and has full
   saturated Mordell--Weil lattice pinned R17 of rank `17` and determinant
   `948`. `q12/orbit4484` remains a certified but unnecessary fallback.
-- The next primary objective is arithmetic specialization from this certified
-  endpoint. Fixed-corridor reverse lifts, q323, alternate routes, and further
-  compiler optimization are parked unless they directly support that goal.
+- The next primary objective is arithmetic specialization in the published
+  compact `t` chart, with the rank-25--28 fibres locked as positive controls.
+  A candidate must pass an actual residual 2-Selmer gate before any two-cover,
+  `ratpoints`, slope-box, or comparable point search. The rank-18 conic and
+  paired-cover `E0` searches are supporting routes, not the current priority.
+  Fixed-corridor reverse lifts, q323, alternate routes, ICARM family inference,
+  and further compiler optimization are parked unless they directly support
+  that goal.
 
 ## Start here
 
@@ -40,6 +45,22 @@ the only authority for what is proved.
   Do not resume alternate suffixes, q323, changed-zero searches, compiler
   optimization, or fixed-corridor reverse lifting unless they directly
   produce a needed source-identity or specialization certificate.
+- Use the four disclosed parameters `-2/377`, `-308/251`, `2456/135`, and
+  `-9529/5471` as calibration anchors. Public exact point sets now give one
+  combined finite-reduction certificate for the generic 17 plus quotient
+  gains `8,9,10,11`; all four lower bounds are locally replayed. The rank-28
+  fibre is a positive control with four directions still needed for rank 32,
+  not permission for an ungated raw point search.
+- Prefer `data/fibrations/elkies_2026_published_r17_model.json` and its compact
+  section/chord record for specialization. Keep the raw q12 coordinate as a
+  construction regression only.
+- Use three or more pairwise-disjoint prime ensembles and rank by weakest-block
+  performance. A score is usable only after it strongly ranks all four exact
+  positive controls.
+- Compute the actual quotient `Sel_2(E_t)/<P1,...,P17>`. Residual dimension
+  below 15 exactly rejects rank 32. Kummer signatures, norm-one cubic
+  elements, incomplete relation collections, and candidate local classes are
+  not Selmer upper bounds and never authorize expensive search.
 - Treat optional intermediate route completeness as secondary to the endpoint
   theorem and its arithmetic applications.
 

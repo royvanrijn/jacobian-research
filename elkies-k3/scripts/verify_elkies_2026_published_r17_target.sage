@@ -7,7 +7,8 @@ Weierstrass model and a height Gram matrix for 17 integral sections.
 
 This script treats the paper as an *independent endpoint oracle* and checks:
 
-* the published P1=(x1,y1) lies on the published Weierstrass equation;
+* all 17 published sections, reconstructed from the quadratic chord data, lie
+  on the published Weierstrass equation;
 * the published model is a rootless elliptic K3 (24 simple discriminant zeros);
 * the published 17x17 height Gram is positive definite with determinant 948;
 * it has 1311 +/- pairs of norm-4 vectors, as stated in the paper;
@@ -17,10 +18,11 @@ The last check is much stronger than the previous determinant/genus/fingerprint
 identification: it gives an explicit integral basis transformation between the
 newly published Mordell-Weil basis and our pinned R17 lattice.
 
-This verifier does NOT identify a q8/q12 equation-side child with the published
-model.  That still requires a marked endpoint/base-coordinate identification.
+The separate coordinate matcher identifies the q12 equation-side endpoint with
+this compact model.
 """
 
+from hashlib import sha256
 import json
 from pathlib import Path
 
@@ -30,6 +32,8 @@ from sage.all import PolynomialRing, QQ, QuadraticForm, ZZ, matrix
 ROOT = Path(__file__).resolve().parents[2]
 PINNED = ROOT / "elkies-k3/data/lattice/rank17_gram.txt"
 OUTPUT = ROOT / "artifacts/generated-results/elkies-2026-published-r17-target.json"
+MODEL_DATA = ROOT / "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json"
+SECTION_DATA = ROOT / "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json"
 
 
 def load_matrix(path):
@@ -104,6 +108,46 @@ y1 = (
 assert y1**2 == x1**3 + A * x1 + B
 assert A.degree() == 8 and B.degree() == 12
 
+# Reconstruct all published ordinates from the displayed quadratic chords.
+model_bytes = MODEL_DATA.read_bytes()
+section_bytes = SECTION_DATA.read_bytes()
+model_data = json.loads(model_bytes)
+section_data = json.loads(section_bytes)
+assert model_data["status"] == "PASS_TRANSCRIBED_PUBLISHED_R17_MODEL"
+assert (
+    section_data["status"]
+    == "PASS_TRANSCRIBED_PUBLISHED_R17_SECTIONS_AND_CHORDS"
+)
+A_data = R([QQ(value) for value in model_data["A_coefficients_low_to_high"]])
+B_data = R([QQ(value) for value in model_data["B_coefficients_low_to_high"]])
+assert A_data == A and B_data == B
+published_sections = []
+for expected_index, record in enumerate(section_data["sections"]):
+    assert record["basis_index"] == expected_index
+    x_coordinate = R([QQ(value) for value in record["x_coefficients_low_to_high"]])
+    if expected_index == 0:
+        y_coordinate = R(
+            [QQ(value) for value in record["y_coefficients_low_to_high"]]
+        )
+        assert x_coordinate == x1 and y_coordinate == y1
+    else:
+        chord = record["chord"]
+        reference_index = int(chord["reference_basis_index"])
+        assert 0 <= reference_index < expected_index
+        reference_x, reference_y = published_sections[reference_index]
+        slope = R(
+            [QQ(value) for value in chord["slope_coefficients_low_to_high"]]
+        )
+        assert slope.degree() <= 2
+        y_coordinate = reference_y + slope * (x_coordinate - reference_x)
+    assert x_coordinate.degree() <= 4 and y_coordinate.degree() <= 6
+    assert (1 if y_coordinate.leading_coefficient() > 0 else -1) == record[
+        "leading_y_sign"
+    ]
+    assert y_coordinate**2 == x_coordinate**3 + A * x_coordinate + B
+    published_sections.append((x_coordinate, y_coordinate))
+assert len(published_sections) == 17
+
 Delta = R(-16 * (4 * A**3 + 27 * B**2))
 assert Delta.degree() == 24
 assert Delta.gcd(Delta.derivative()).degree() == 0
@@ -176,7 +220,12 @@ payload = {
         "form": "y^2=x^3-27*S(t)*x+(27/4)*T(t)",
         "degrees_A_B_Delta": [int(A.degree()), int(B.degree()), int(Delta.degree())],
         "rootless_semistable": True,
-        "P1_identity": True,
+        "published_section_identities": len(published_sections),
+        "quadratic_chords_replayed": 16,
+    },
+    "inputs": {
+        str(MODEL_DATA): sha256(model_bytes).hexdigest(),
+        str(SECTION_DATA): sha256(section_bytes).hexdigest(),
     },
     "published_height_lattice": {
         "rank": 17,
@@ -197,9 +246,9 @@ payload = {
         "rank_at_least_28": "-9529/5471",
     },
     "proof_boundary": (
-        "This identifies the paper's published rootless MW17 height lattice exactly with "
-        "the repository's pinned R17 lattice. It does not yet identify the base parameter "
-        "or Weierstrass coordinates of a q12-derived equation with the published model."
+        "This checks every transcribed published section and chord and identifies the "
+        "published rootless MW17 height lattice exactly with the repository's pinned "
+        "R17 lattice. The separate coordinate matcher identifies the q12 endpoint."
     ),
 }
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)

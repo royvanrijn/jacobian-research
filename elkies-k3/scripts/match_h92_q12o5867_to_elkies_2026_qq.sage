@@ -12,7 +12,6 @@ search chart.
 import argparse
 from hashlib import sha256
 import json
-from math import gcd
 from pathlib import Path
 
 from sage.all import PolynomialRing, QQ

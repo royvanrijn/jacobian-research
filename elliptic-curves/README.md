@@ -7,9 +7,9 @@ small conductor. The original target was to find either
 - `rank E(Q) >= 30`.
 
 The second branch is proved and has since been improved to rank at least 31.
-The first branch has two public candidates whose point independence is replayed
-exactly here, but whose conductor/minimality calculations have not yet been
-independently reconstructed in this repository.
+The first branch is now completely replayed for two public candidates: point
+independence, global minimality, and every local conductor exponent are all
+checked repository-locally.
 
 [`MATH_STATUS.json`](../MATH_STATUS.json) is the sole status authority. This
 page is a map of that record, not a second status database.
@@ -21,7 +21,7 @@ page is a map of that record, not a second status database.
 | ICARM curve 302 | `rank E(Q) >= 31`, trivial torsion, global minimality, exact discriminant/conductor and local fibre data; two exact independence implementations | No unconditional rank upper bound; no K3-family identification |
 | ICARM curve 356 | `rank E(Q) >= 29`, trivial torsion, global minimality, exact conductor and local fibre data; current size record at the rank-at-least-29 threshold | No unconditional rank upper bound; strong common-17-section fingerprint with curve 351, but no family or K3 identification |
 | ICARM curve 273 | `rank E(Q) >= 30`, independently replayed | No unconditional exact-rank statement |
-| ICARM curves 285 and 286 | Twenty-one displayed points on each curve are independent; trivial torsion | Their sub-threshold conductors are imported public data, not yet a repository-local Tate-algorithm replay |
+| ICARM curves 285 and 286 | Twenty-one displayed points on each curve are independent; trivial torsion; global minimality and exact conductor reconstructed from local Tate data | Rank lower bounds only; no unconditional upper bounds |
 | Fermigier `E22` | `rank E(Q) >= 22` | `log N=182.724910...`, so it misses the strict cutoff |
 | ICARM curve 245 | `rank E(Q) >= 20` and exact `log N=150.668907...` | One point short; no rank upper bound |
 | Fermigier--Mestre `u=28917/20` | `rank E(Q) >= 20` and exact `log N=159.934825...` | One point short; no rank upper bound |
@@ -35,6 +35,8 @@ The canonical statements are:
 - `ECR30`: [curve 273 rank-at-least-30 certificate](notes/ICARM_CURVE273_RANK30.md);
 - `EC-R21-ICARM`: [curves 285/286 point-independence replay](notes/ICARM_7FFF_ZIP_SEQUENCE.md);
 - `EC-R20-IC245`: [curve 245 low-conductor rank-20 replay](notes/ICARM_CURVE245_RANK20.md);
+- [conductor-first descent inputs for the four rank-19/20 near misses](notes/CONDUCTOR_FIRST_NEAR_MISS_DESCENT.md);
+<!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
 - `EC-NF-R14`: [new-family exact rank-14 specialization](notes/NEWFAMILY_RANK14_T83_6.md);
 - `OP-EC-NEXT`: rank 32, exact-rank, low-conductor certification, and K3 continuation.
 
@@ -62,9 +64,9 @@ There are four live arithmetic gates.
 
 1. Prove an unconditional upper bound for curve 302 or find a rank-at-least-32
    curve.
-2. Reconstruct global minimality and every local conductor exponent for ICARM
-   curves 285 and 286. Their 21-point independence certificates are already
-   exact.
+2. Compute residual descent quotients for the four low-conductor rank-19/20
+   near misses, construct any surviving covers, and search their surrounding
+   families in conductor-first order.
 3. Complete the residual 2-Selmer calculation for curve 273; Selmer classes
    must not be promoted to Mordell--Weil directions without the remaining
    global argument.

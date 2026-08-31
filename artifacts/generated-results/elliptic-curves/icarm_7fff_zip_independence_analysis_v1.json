@@ -2136,6 +2136,115 @@
         "discriminant": "-233380186227384058848703372008258431165712778081959663733431061992386884073488788139008"
       },
       "log_conductor": 173.25150319151186,
+      "pari_global_and_local_reduction": {
+        "conductor": "1746512979501225597635228204059275382729246622846831247192424343764785450672",
+        "conductor_reconstructed_from_local_exponents": "1746512979501225597635228204059275382729246622846831247192424343764785450672",
+        "engine": "PARI/GP 2.15.4",
+        "global_minimal_change": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "global_minimal_model": [
+          "0",
+          "-1",
+          "0",
+          "-108391804584990603814796450120",
+          "13755098120758219348428060610562384253731136"
+        ],
+        "local_reductions": [
+          {
+            "conductor_exponent": 4,
+            "kodaira_code": -6,
+            "kodaira_symbol": "I2*",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 10,
+            "prime": "2",
+            "tamagawa_number": 4
+          },
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 6,
+            "kodaira_symbol": "I2",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 2,
+            "prime": "3",
+            "tamagawa_number": 2
+          },
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 9,
+            "kodaira_symbol": "I5",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 5,
+            "prime": "7",
+            "tamagawa_number": 5
+          },
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 8,
+            "kodaira_symbol": "I4",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 4,
+            "prime": "17",
+            "tamagawa_number": 4
+          },
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 6,
+            "kodaira_symbol": "I2",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 2,
+            "prime": "59",
+            "tamagawa_number": 2
+          },
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 5,
+            "kodaira_symbol": "I1",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 1,
+            "prime": "5182408071918843462574265904842838694420448840522572897950269262939709",
+            "tamagawa_number": 1
+          }
+        ],
+        "minimal_discriminant": "-233380186227384058848703372008258431165712778081959663733431061992386884073488788139008",
+        "reported_conductor_matches": true,
+        "root_number": -1,
+        "source_model_is_global_minimal": true,
+        "tamagawa_product": 320
+      },
       "point_membership_verified": 21,
       "rank_lower_bound_source_claim": 21,
       "torsion_certificate": {
@@ -2898,6 +3007,171 @@
         "discriminant": "-55238036499572174457018031144729080372840647735935725107263389724288692295039993012310400000000"
       },
       "log_conductor": 177.88055301928193,
+      "pari_global_and_local_reduction": {
+        "conductor": "178872103474086290116257971972938572215182078046668234704327697980888381040890",
+        "conductor_reconstructed_from_local_exponents": "178872103474086290116257971972938572215182078046668234704327697980888381040890",
+        "engine": "PARI/GP 2.15.4",
+        "global_minimal_change": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "global_minimal_model": [
+          "1",
+          "-1",
+          "1",
+          "-11525691028496208487693310738282",
+          "18833323594165105316445398903949581636278347689"
+        ],
+        "local_reductions": [
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 17,
+            "kodaira_symbol": "I13",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 13,
+            "prime": "2",
+            "tamagawa_number": 13
+          },
+          {
+            "conductor_exponent": 2,
+            "kodaira_code": -6,
+            "kodaira_symbol": "I2*",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 8,
+            "prime": "3",
+            "tamagawa_number": 4
+          },
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 12,
+            "kodaira_symbol": "I8",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 8,
+            "prime": "5",
+            "tamagawa_number": 8
+          },
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 8,
+            "kodaira_symbol": "I4",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 4,
+            "prime": "19",
+            "tamagawa_number": 4
+          },
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 6,
+            "kodaira_symbol": "I2",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 2,
+            "prime": "193",
+            "tamagawa_number": 2
+          },
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 5,
+            "kodaira_symbol": "I1",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 1,
+            "prime": "313",
+            "tamagawa_number": 1
+          },
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 5,
+            "kodaira_symbol": "I1",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 1,
+            "prime": "30133",
+            "tamagawa_number": 1
+          },
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 5,
+            "kodaira_symbol": "I1",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 1,
+            "prime": "145063",
+            "tamagawa_number": 1
+          },
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 5,
+            "kodaira_symbol": "I1",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 1,
+            "prime": "2052244018292853705583",
+            "tamagawa_number": 1
+          },
+          {
+            "conductor_exponent": 1,
+            "kodaira_code": 5,
+            "kodaira_symbol": "I1",
+            "local_minimal_change": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "minimal_discriminant_valuation": 1,
+            "prime": "193026453955572059145432582176976218143",
+            "tamagawa_number": 1
+          }
+        ],
+        "minimal_discriminant": "-55238036499572174457018031144729080372840647735935725107263389724288692295039993012310400000000",
+        "reported_conductor_matches": true,
+        "root_number": -1,
+        "source_model_is_global_minimal": true,
+        "tamagawa_product": 3328
+      },
       "point_membership_verified": 21,
       "rank_lower_bound_source_claim": 21,
       "torsion_certificate": {
@@ -2937,7 +3211,8 @@
       "all 81 submitted rational points lie on their stated curves",
       "all four curves are nonsingular and have trivial rational torsion",
       "the submitted point sets are independent by exact finite-reduction certificates",
-      "no pair has the same j-invariant, hence no pair is a quadratic-twist pair"
+      "no pair has the same j-invariant, hence no pair is a quadratic-twist pair",
+      "curves 285 and 286 are already global minimal models and their reported conductors are reconstructed from complete local Tate data"
     ]
   },
   "pairwise": [
@@ -3014,5 +3289,5 @@
     }
   ],
   "schema": "icarm-7fff-zip-sequence-analysis-v1",
-  "scope": "exact equation/point/invariant/torsion audit plus descriptive fingerprints"
+  "scope": "exact equation/point/invariant/torsion audit, PARI global and local reduction for curves 285/286, plus descriptive fingerprints"
 }

@@ -1,0 +1,66 @@
+{
+  "schema": "elkies-k3.elkies-2026-rank19-paired-cover.v1",
+  "status": "PASS_EXACT_ELKIES_2026_PAIRED_COVER_DATA",
+  "source": {
+    "arxiv": "2608.25406v1",
+    "published_inputs": [
+      "u1^2=4225*t^2+38636*t+289444",
+      "u2^2=54756*t^2-3269604*t+22473889",
+      "E0: y^2=x^3+1029367969*x^2-42900734074705920*x"
+    ],
+    "derived_coordinates_and_maps": "repository exact trace, quartic, and plane-cubic recovery"
+  },
+  "second_cover": {
+    "q_coefficients_low_to_high": ["22473889", "-3269604", "54756"],
+    "trace_published_basis_vector": [0, 0, 1, -1, 0, 1, -1, 0, 1, 0, 0, 0, -1, 0, 0, 0, -1],
+    "trace_height": 10,
+    "mod_2_support_one_based": [3, 4, 6, 7, 9, 13, 17],
+    "branch_divisibility_filter_rank": 16,
+    "h_coefficients_low_to_high": ["-2718890615/2140254012", "-8268961757/2140254012", "-2655564325/1070127006", "1"],
+    "line_slope_numerator_M_coefficients_low_to_high": ["-135271666316932355/2140254012", "-16666915870027841/54878308", "-633504217401243997/1426836008", "-127153131708585779/1070127006", "387164704723139/3540536", "-325773950307/23293"],
+    "chord_discriminant_identity": "disc_x=(445172834496*h(t))^2*q2(t)",
+    "new_section": {
+      "coordinate_form": "x=x0(t)+x1(t)*u2; y=y0(t)+y1(t)*u2",
+      "x0_coefficients_low_to_high": ["1334676419465003", "4293739321954940", "2773884943124672", "-1078442180727912", "89585684954220"],
+      "x1_coefficients_low_to_high": ["-282764623960", "-859972022728", "-552357379600", "222586417248"],
+      "y0_coefficients_low_to_high": ["70625230136428635482360", "323347828408328755399368", "443311980182661937201296", "82257675773424834036640", "-130193985667278670761312", "21896298822971956249152", "-957440023623877981824"],
+      "y1_coefficients_low_to_high": ["-14068253296960964920", "-67601010768832923096", "-98826657914594063532", "-26447851395385842032", "24340270656534302652", "-3113075019600872352"]
+    }
+  },
+  "quartic_model": {
+    "parameter": "r",
+    "equation": "v^2=F(r)",
+    "F_coefficients_low_to_high": ["74698868489239696", "-348786049427920", "221786712628", "425048520", "54756"],
+    "relation_to_covers": {
+      "t": "(289444-r^2)/(130*r-38636)",
+      "u1": "65*t+r",
+      "u2": "v/(130*r-38636)"
+    }
+  },
+  "E0": {
+    "weierstrass_coefficients_a1_a2_a3_a4_a6": ["0", "1029367969", "0", "-42900734074705920", "0"],
+    "rank": 4,
+    "torsion": "Z/2Z",
+    "generators": [
+      ["-18849024", "-1080583130880"],
+      ["-16954560", "-1009152365760"],
+      ["31894992000/361", "15236563007318400/6859"],
+      ["49103208784/9", "11855832438363760/27"]
+    ],
+    "map_to_quartic": {
+      "D_r": "52185783681*x+1059345*y-6263787913107172000",
+      "N_r": "353115*x^2-11678422142720*x+5060365752*y-11169586606652709110400",
+      "r": "N_r/(6*D_r)",
+      "N_v": "-374070609675*x^4-1262669417762632050150*x^3-36855166009032630*x^2*y-114715231694728757153730694872*x^2+8847349875747356163120000*x*y+216106179689746438488*y^2+38307169603405848869388504507946225920*x-1312089579845411619858383870444800*y-852206441604893556996964937733302157803520000",
+      "v": "-13*N_v/(6*D_r^2)"
+    },
+    "map_to_t": "Let r=N_r/(6*D_r); then t=(289444-r^2)/(130*r-38636).",
+    "map_boundary": "The displayed affine formulas extend across their apparent poles as the recovered morphism E0 -> P1_t."
+  },
+  "rank_consequence": {
+    "generic_rank_lower_bound_over_E0": 19,
+    "new_sections": ["first-cover P18(t,u1)", "second-cover P19(t,u2)"],
+    "mechanism": "the independent anti-invariant characters of Gal(Q(E0)/Q(t))=(Z/2Z)^2"
+  },
+  "proof_boundary": "The exact verifier checks both cover sections, the quartic and E0 maps modulo the E0 equation, the four displayed E0 points, and a finite-quotient independence certificate. Exact rank 4 is additionally the paper's statement; the local certificate proves rank at least 4."
+}

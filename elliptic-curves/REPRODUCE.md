@@ -189,11 +189,70 @@ certificate.  See
 The command exactly replays equation membership, finite-reduction
 independence, torsion, invariants, and pairwise `j` comparisons for curves
 281, 282, 285, and 286. For curves 285 and 286 it proves the 21-point rank
-lower bound. It currently reads the conductor integers from the pinned public
-source; it does not independently rerun global minimization or Tate's
-algorithm. See [`ICARM_7FFF_ZIP_SEQUENCE.md`](notes/ICARM_7FFF_ZIP_SEQUENCE.md).
+lower bound, verifies that the displayed model is global minimal, and
+reconstructs the exact conductor from every local Tate datum. See
+[`ICARM_7FFF_ZIP_SEQUENCE.md`](notes/ICARM_7FFF_ZIP_SEQUENCE.md).
+
+### Elkies 2026 compact-t rank-32 search gates
+
+Replay the compact rank-17 model, the exact q12 coordinate match, and the four
+rank-25--28 public positive controls:
+
+```sh
+SAGE=/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python
+$SAGE elkies-k3/scripts/verify_elkies_2026_published_r17_target.sage
+$SAGE elkies-k3/scripts/match_h92_q12o5867_to_elkies_2026_qq.sage
+python3 elliptic-curves/scripts/verify_elkies_2026_high_rank_calibrations.py
+```
+
+The control checker proves combined quotient gains `8,9,10,11` over the fixed
+generic rank 17. Run the complete height-10000 three-ensemble calibration with:
+
+```sh
+python3 elkies-k3/scripts/calibrate_elkies_2026_positive_controls_nagao.py
+```
+
+Its weakest-block ranks strongly recover all four controls, but remain
+heuristic. Attempt the actual rank-28 residual 2-Selmer computation with:
+
+```sh
+python3 elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py \
+  --timeout 300 --overwrite
+```
+
+The pinned run is an exact-backend timeout, not a Selmer bound. It emits a
+fail-closed artifact: residual dimension below 15 would exactly reject rank
+32, while only a completed unconditional dimension at least 15 authorizes
+two-cover solving or expensive point search. The authorization is bound to the
+same global minimal model. See
+[`ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md`](../elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md).
 
 ## Low-conductor exact baselines
+
+### Conductor-first descent targets
+
+```sh
+.venv/bin/python elliptic-curves/cas/build_conductor_first_near_miss_targets.py --check
+
+.venv/bin/python -m unittest \
+  elliptic-curves/tests/test_conductor_first_near_miss_descent.py
+```
+
+This pins exact full-dimensional mod-2 known subgroups for ICARM 245, the
+Fermigier rank-20 near miss, and both split-infinity rank-19 fibres.  It is a
+descent-input certificate, not a complete Selmer result.  Generate an
+unconditional relative Magma job with
+
+```sh
+.venv/bin/python elliptic-curves/cas/build_conductor_first_near_miss_magma.py \
+  --target icarm-245 \
+  --output artifacts/local/elliptic-curves/icarm245-relative-2selmer.m
+```
+
+See
+[`CONDUCTOR_FIRST_NEAR_MISS_DESCENT.md`](notes/CONDUCTOR_FIRST_NEAR_MISS_DESCENT.md)
+for all four target identifiers and the strict family-stage queue.
+<!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
 
 ### ICARM curve 245
 
