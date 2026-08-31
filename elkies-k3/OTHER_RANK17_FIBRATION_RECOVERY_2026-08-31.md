@@ -31,6 +31,54 @@ This is not yet the rank-29 identification.  The second frame still lacks a
 generic characteristic-zero Weierstrass equation and hence has no `j`-map to
 test against the rank-29 curve.
 
+## Gate A: intrinsic fingerprint and rank-29 embedding search
+
+The alternate frame now has an exact intrinsic fingerprint.  With
+`theta_L(q)=sum_v q^(v.v/2)`, its exactly enumerated initial theta expansion is
+
+```text
+1 + 2626*q^2 + 53290*q^3 + 460360*q^4 + O(q^5).
+```
+
+The `O(q^5)` is a declared computation boundary, not a claim that the full
+infinite theta series is determined.  There are 1,313 unoriented minimal
+norm-four lines.  Joining two lines when their absolute pairing is two gives
+a connected graph with 92,676 edges and the complete degree distribution
+stored in the certificate.  The lattice automorphism group has order four;
+its action on the cyclic discriminant group `Z/948Z` has image
+`{1,473,475,947}`.  The minimal-line count already differs from the published
+frame's 1,311, in addition to the exact `qfisom` non-isometry.
+
+Specialization distortion was calibrated in the correct basis: the seventeen
+known generic sections on each published rank-25--28 fibre.  After fitting the
+scalar in `H_t approximately h*G_published`, the observed errors are:
+
+| control | fitted `h` | relative Frobenius error | maximum `|residual|/h` |
+| --- | ---: | ---: | ---: |
+| rank 25 | 9.790535 | 0.174808 | 0.829330 |
+| rank 26 | 10.335812 | 0.158529 | 0.788986 |
+| rank 27 | 10.547799 | 0.170800 | 0.704497 |
+| rank 28 | 13.624052 | 0.135631 | 0.732249 |
+
+The replacement rank-29 test enumerates all 11,692 unoriented integral vectors
+of displayed height at most 70 in the full 29-dimensional public-point
+lattice.  It searches integral `29 by 17` matrices, rather than subsets of the
+29 generators.  Across 1,000 deterministic seeded construction/refinement
+trials, the best matrix has exact rational column rank 17 and fitted scale
+`h=15.394989`, but relative Frobenius error `0.210330` and maximum
+`|residual|/h=0.882957`.  It therefore misses both positive-control envelopes.
+
+This is a calibrated bounded negative experiment.  It closes the old subset
+comparison as evidence, but it neither proves non-embedding nor excludes a
+generic subgroup requiring a vector above height 70 or a better discrete
+search path.  In particular it does not demote the alternate equation as the
+main reconstruction target.
+
+The exact invariant artifact is
+[`elkies-k3-other-rank17-invariants.json`](../artifacts/generated-results/elkies-k3-other-rank17-invariants.json),
+and the calibrated bounded-search ledger is
+[`elkies-k3-other-rank17-rank29-gate-a.json`](../artifacts/generated-results/elkies-k3-other-rank17-rank29-gate-a.json).
+
 ## Exact published-fibration exclusions
 
 | target | rank lower bound | degree | irreducible-mod-prime witness |
@@ -140,6 +188,16 @@ The two exact frames now in hand are mandatory positive controls for that
 enumeration.  Any purported complete classifier that returns fewer than two
 rootless frame classes is wrong.
 
+The exact first-pass audit is now recorded in
+[`ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md`](ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md).
+The target genus has mass
+`77731517730627488307787/925557271717478400`, forcing at least 167,967
+isometry classes in the full genus.  Thus an unfiltered genus traversal is not
+the cheap route.  The same audit rejects all 65 old files under
+`seeds/target-genus-rootless-pneighbor`: they occupy a different 2-adic and
+79-adic genus and contribute no new `J2` control.  Niemeier filtering should
+therefore precede, not follow, exhaustive positive-definite enumeration.
+
 ## Rank-29-first construction gate
 
 For each constructed candidate equation, compute its reduced `j`-map and form
@@ -169,10 +227,18 @@ not proof of a common fibration.
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python -c \
   'from sage.all import *; globals()["__file__"]="/home/royvanrijn/src/jacobian-research/elkies-k3/scripts/canonicalize_other_rank17_candidate.sage"; load(__file__)'
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/compute_other_rank17_invariants.sage
+
+python3 elkies-k3/scripts/gate_a_alternate_rank17_rank29.py \
+  --short-bound 70 --trials 1000 --seed 291317 \
+  --top-choices 8 --refinement-passes 2
 ```
 
 The first command proves the `j`-exclusions and control factor.  The next two
 replay rootlessness, non-isometry, nefness, and the cost model.  The last one
-pins the alternate `U` embedding in H3/R17 NS coordinates.  None constructs
-the missing characteristic-zero equation or proves a complete fibration
-classification.
+of those three pins the alternate `U` embedding in H3/R17 NS coordinates.  The
+final two commands compute the exact bounded intrinsic invariants and replay
+the calibrated full-lattice Gate A search.  None constructs the missing
+characteristic-zero equation or proves a complete fibration classification.

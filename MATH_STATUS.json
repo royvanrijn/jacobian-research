@@ -1843,6 +1843,40 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-R17-NONTHIN-RANK-JUMPS",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Non-thin rank-at-least-18 specializations of the published R17 K3 fibration",
+      "scope": "Let pi_R17:X->P1_Q be the published rootless rank-17 fibration on the certified H3 K3. Its 24I1 fibre configuration makes every fibre reduced and makes the j-map nonconstant. The exact H3 E7+E8/MW2 source is a different Jacobian elliptic fibration over Q on the same K3, and the seventeen independent Q(t)-sections of pi_R17 make X(Q) Zariski dense. Pasten--Salgado, Manuscripta Math. 175 (2024), Theorem 1.1, therefore implies that {t in P1(Q): rank E_t(Q)>17}, interpreted on the smooth-fibre locus, is not thin. Finite modification at the 24 singular parameters does not affect thinness. Thus rank-at-least-18 fibres cannot be exhausted by finitely many thin base-change families. This result gives no effective height bound, no exact rank for an individual fibre, and does not use the alternate rootless rank-17 candidate.",
+      "canonical_source": "elkies-k3/PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md",
+      "dependencies": [
+        "EC-K3-H3-SOURCE",
+        "EC-K3-H3-Q12O5867-QQ-ROOTLESS",
+        "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
+        "EC-K3-ELKIES-2026-R17",
+        "external: Pasten--Salgado, Manuscripta Math. 175 (2024), Theorem 1.1"
+      ],
+      "checker": null,
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "README.md",
+        "elkies-k3/README.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS",
       "kind": "reproduction",
       "state": "proved",
@@ -35955,6 +35989,46 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
+    },
+    {
+      "id": "EC-K3-H3-Q12O5867-POINT-FACTORY",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Exact q12/orbit5867 arbitrary-point map and five-control parent calibration",
+      "scope": "On the common affine open, the stored q12 chord pencil, its exact square factor, the nonbranch pointed binary quartic at parent base s=0, and the certified raw-q12 to published-R17 isomorphism compose to mutually inverse rational point maps between the P1229-pointed 4A1/MW13 parent and the compact published rootless R17 fibration. Every one of the 42 points in the public complement bases at ranks 25--28 and t=3/8 passes exact parent equation, child equation, and forward/inverse round-trip checks. After normalizing the parent base by its three finite I2 supports, the ten rank-28 directions invisible to the complete rational-bisection atlas have projective base heights of 66--116 bits and numerical canonical heights 319.355--558.684; none is simple by these two declared measures. This finite calibration does not prove absence of a small word in the specialized generic MW13 subgroup. The current P1229-pointed equation package does not pin a saturated thirteen-section equation basis, so specialized MW13 membership and coefficient vectors, positive-rank parent-fibre enumeration, and quotient-escape tests remain open and are not claimed.",
+      "canonical_source": "elkies-k3/Q12O5867_GENUS_ONE_POINT_FACTORY_2026-08-31.md",
+      "dependencies": [
+        "EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR",
+        "EC-K3-H3-Q12O5867-QQ-ROOTLESS",
+        "EC-K3-ELKIES-2026-R17",
+        "EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES"
+      ],
+      "checker": "elkies-k3/scripts/q12o5867_genus_one_point_factory.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:89fb001b3b9f5877502483df5790cb9dfcc93edf2fcca4933b57d7a860c46c39",
+      "software_lock": [
+        "elkies-k3/scripts/q12o5867_genus_one_point_factory.sage",
+        "artifacts/local/elkies-k3/q4o164-q8o376-smooth-rr-qq.json",
+        "artifacts/local/elkies-k3/q12o5867-target-horizontal-qq.json",
+        "artifacts/local/elkies-k3/q12o5867-smooth-rr-qq.json",
+        "artifacts/generated-results/elkies-k3-h3-q12o5867-elkies-2026-coordinate-match.json",
+        "artifacts/generated-results/elkies-k3-q12o5867-genus-one-point-factory-controls.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/Q12O5867_GENUS_ONE_POINT_FACTORY_2026-08-31.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
     }
   ]
 }

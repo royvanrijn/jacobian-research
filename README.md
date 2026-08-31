@@ -22,6 +22,16 @@ two-prime Picard rank 19, and the saturated determinant-948 Mordell--Weil
 lattice prove that endpoint is the published rank-17 family; arithmetic
 specialization and residual descent are now the primary frontier.
 
+Pasten--Salgado's double-elliptic-K3 theorem now gives an unconditional
+qualitative specialization result for that endpoint: the rational parameters
+whose smooth fibres have rank at least 18 form a non-thin subset of
+`P1(Q)`. The short [hypothesis audit and proof](elkies-k3/PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md)
+uses the rootless `24I1` model, the different H3 `E7+E8/MW2` fibration over
+`Q` on the same K3, and Zariski density from the positive R17 section rank.
+It does not depend on the alternate rootless rank-17 candidate.
+
+<!-- status-consumer: EC-K3-R17-NONTHIN-RANK-JUMPS c9ed2e62cc456bdb -->
+
 This repository verifies a three-dimensional polynomial Keller map with a
 three-point collision, explains it through a tangent-map normal form, and
 develops weighted, cancellation, decorated-normalization, Hurwitz, and

@@ -1,5 +1,7 @@
 # Reproducing the results
 
+<!-- status-consumer: EC-K3-H3-Q12O5867-POINT-FACTORY 9399c93ee42ee2a4 -->
+
 The Makefile is the public verification interface.  Run commands from the
 repository root after creating the Python environment described in the main
 [README](README.md).
@@ -35,6 +37,19 @@ and 24 inconclusive place tests, but no everywhere-local or Selmer class. The
 eleven public complement directions now provide genuine cover controls with
 exact rational witnesses and certify residual Selmer dimension at least 11;
 the complete upper bound and threshold 15 remain open.
+
+The exact q12/orbit5867 arbitrary-point map and its backward calibration on
+all 42 public-complement points are replayed by:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/q12o5867_genus_one_point_factory.sage \
+  --mode controls \
+  --output artifacts/generated-results/elkies-k3-q12o5867-genus-one-point-factory-controls.json
+```
+
+This certifies the birational round trips and records numerical parent heights;
+it does not yet provide coordinates in a specialized equation-level MW13 basis.
 
 ## Level-474 branch in the Kumar H92 chart
 
@@ -2744,6 +2759,24 @@ This proves a second rootless `J2` frame class of rank 17 and determinant 948,
 not a complete fibration classification or a rank-29 fibre identification.
 See
 [`elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md`](elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md).
+
+Audit the two-control rootless `J2` corpus, its exact local genus, and the mass
+obstruction to an unfiltered full-genus traversal:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/audit_rootless_j2_completeness_track.sage --check
+```
+
+The target genus mass is
+`77731517730627488307787/925557271717478400`, which forces at least 167,967
+full-genus isometry classes because every automorphism group contains
+`+/-identity`.  The audit retains the two mandatory non-isometric rootless
+controls and rejects all 65 old `target-genus-rootless-pneighbor` files as one
+different 2-adic and 79-adic genus (nineteen isometry classes there).  This is
+an exact corpus correction and route-selection certificate, not a complete
+Kneser--Nishiyama classification.  See
+[`elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md`](elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md).
 
 Classify all distinct biquadratic pair bases, build the complete exact
 5,566-row immediate-point arithmetic catalogue, replay the completed bounded

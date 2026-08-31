@@ -118,6 +118,15 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
   verifier now give the exact paired-base elliptic model and a birational map
   producing nine explicit rational specialization parameters.
 
+- Pasten--Salgado's theorem applies directly to the published R17 fibration:
+  `24I1` gives non-isotriviality and reduced fibres, H3 is a different
+  `QQ`-elliptic fibration on the same K3, and the positive R17 section rank
+  makes the rational points Zariski dense. Hence the smooth rational fibres
+  of rank at least 18 form a non-thin subset of `P1(Q)`. See
+  [`PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md`](PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md).
+
+<!-- status-consumer: EC-K3-R17-NONTHIN-RANK-JUMPS c9ed2e62cc456bdb -->
+
 <!-- status-consumer: EC-K3-H3-A11-Q8-QQ-2A5 b7aaf4bf483eac68 -->
 <!-- status-consumer: EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE 86e7a3affbf35a9e -->
 <!-- status-consumer: EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE e8dbe599e076f13d -->

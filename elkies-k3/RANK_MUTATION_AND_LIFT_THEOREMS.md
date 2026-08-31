@@ -339,6 +339,29 @@ from `3` to `13/4`.
 This is why the Q80 CM24 child is a typed specialization node rather than the
 generic rootless endpoint.
 
+### Theorem E2: non-thin jumps from a second elliptic fibration
+
+Let `K` be a number field and let `pi:X->P1_K` be a non-isotrivial elliptic
+K3 fibration without non-reduced fibres. If `X` has a different elliptic
+fibration over `K`, then Pasten--Salgado prove that the following are
+equivalent:
+
+```text
+X(K) is Zariski dense;
+pi has infinitely many rank-jump fibres;
+{t in P1(K) : rank X_t(K) > rank MW(X,pi)} is not thin.
+```
+
+For the published R17 fibration, the exact `24I1` certificate gives
+non-isotriviality and reduced fibres, the H3 `E7+E8/MW2` model is a different
+elliptic fibration over `QQ` on the same K3, and the positive R17 section rank
+gives Zariski density. Since its generic Mordell--Weil rank is exactly 17,
+the rank-at-least-18 specialization locus is not thin. The complete
+hypothesis audit is
+[`PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md`](PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md).
+
+<!-- status-consumer: EC-K3-R17-NONTHIN-RANK-JUMPS c9ed2e62cc456bdb -->
+
 ## 7. Correctness of an equation lift
 
 ### Theorem F: conditional lattice-to-equation correctness
@@ -836,3 +859,6 @@ once.
 - N. Elkies and A. Kumar,
   [*K3 surfaces and equations for Hilbert modular surfaces*](https://arxiv.org/abs/1209.3527),
   for explicit K3 moduli navigation by elliptic fibrations.
+- H. Pasten and C. Salgado,
+  [*Non-thin rank jumps for double elliptic K3 surfaces*](https://doi.org/10.1007/s00229-024-01554-2),
+  *Manuscripta Mathematica* **175** (2024), 771--781, Theorem 1.1.

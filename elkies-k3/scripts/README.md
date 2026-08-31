@@ -19,6 +19,7 @@ rather than promoted file-by-file.
 <!-- status-consumer: EC-K3-ELKIES-2026-R18-COVER 6b4ee5bbc1afc01e -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R19-PAIRED f1e135d2ba803e80 -->
 <!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
+<!-- status-consumer: EC-K3-H3-Q12O5867-POINT-FACTORY 9399c93ee42ee2a4 -->
 
 ## Local Sage 10.9 installation
 
@@ -1016,6 +1017,21 @@ python3 elliptic-curves/scripts/verify_elkies_2026_high_rank_calibrations.py
 The last command imports public exact point sets of lengths 25--28 and
 certifies one combined generic-plus-complement independence matrix at each
 fibre, with quotient gains `8,9,10,11`.
+
+The final neighbour's arbitrary-point map and its five-control backward
+calibration are replayed with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/q12o5867_genus_one_point_factory.sage \
+  --mode controls \
+  --output artifacts/generated-results/elkies-k3-q12o5867-genus-one-point-factory-controls.json
+```
+
+The script exposes both the forward parent-to-published map and its inverse,
+and checks all 42 public-complement points by exact round trip. See
+[`../Q12O5867_GENUS_ONE_POINT_FACTORY_2026-08-31.md`](../Q12O5867_GENUS_ONE_POINT_FACTORY_2026-08-31.md)
+for the formulas and the current MW13-coordinate boundary.
 
 The accepted complete scoring calibration is:
 
