@@ -44,6 +44,45 @@ parser.add_argument(
     action="store_true",
     help="stop after p-adic interpolation, held-outs, and the numerator-cube check",
 )
+parser.add_argument(
+    "--holdout-prime",
+    action="append",
+    default=[],
+    type=int,
+    help=(
+        "transported prime to exclude from CRT/LLL and reserve for literal replay; "
+        "repeat for multiple holdouts"
+    ),
+)
+parser.add_argument(
+    "--reconstruction-granularity",
+    choices=("auto", "bundle", "component", "pair", "scalar"),
+    default="auto",
+    help=(
+        "shared-denominator bundle reconstruction, separate projective blocks for "
+        "the rational and omega components, one algebraic coefficient pair at a "
+        "time, or independent rational coordinates"
+    ),
+)
+parser.add_argument(
+    "--base-normalization",
+    choices=("pinned", "i6-i4", "i6-i4-i2trace"),
+    default="pinned",
+    help=(
+        "reconstruct in the pinned U coordinate or in the intrinsic coordinate "
+        "z=L6(U)/L4(U), which sends the I6 and I4 fibres to zero and infinity; "
+        "i6-i4-i2trace also removes the remaining scaling with the cubic I2 trace"
+    ),
+)
+parser.add_argument(
+    "--intrinsic-basis",
+    choices=("monomial", "evaluations"),
+    default="monomial",
+    help=(
+        "reconstruct intrinsic factor coefficients directly or reconstruct exact values "
+        "at residue-distinct p-adic sample nodes before exact interpolation"
+    ),
+)
 args = parser.parse_args()
 for name in ("manifest", "transport", "source", "operands", "output"):
     setattr(args, name, getattr(args, name).resolve())
@@ -69,8 +108,15 @@ digits = int(manifest["specialization"]["digits"])
 modulus = prime**digits
 omega_square_modular = int(source["quadratic_field"]["omega_square_modulus"]) % modulus
 ALL_TRANSPORTED_PRIMES = sorted(int(value) for value in transport["transported_models"])
-HELD_OUT_TRANSPORTED_PRIMES = []
-RECONSTRUCTION_TRANSPORTED_PRIMES = list(ALL_TRANSPORTED_PRIMES)
+HELD_OUT_TRANSPORTED_PRIMES = sorted(set(args.holdout_prime))
+unknown_holdouts = sorted(set(HELD_OUT_TRANSPORTED_PRIMES) - set(ALL_TRANSPORTED_PRIMES))
+if unknown_holdouts:
+    raise ValueError(f"holdout primes are absent from the transported models: {unknown_holdouts}")
+if prime in HELD_OUT_TRANSPORTED_PRIMES:
+    raise ValueError("p=19 supplies the p-adic residue and cannot be a transported-prime holdout")
+RECONSTRUCTION_TRANSPORTED_PRIMES = [
+    value for value in ALL_TRANSPORTED_PRIMES if value not in HELD_OUT_TRANSPORTED_PRIMES
+]
 ZERO = (0, 0)
 ONE = (1, 0)
 
@@ -392,6 +438,147 @@ interpolated = {
     "denominator": [list(mul(tuple(value), normalization)) for value in j_denominator],
 }
 degree = 24
+expected_p19_j = transport["transported_models"]["19"]["j"]
+for exact_key, finite_key in (
+    ("numerator", "numerator_coefficients_low_to_high_1_omega"),
+    ("denominator", "denominator_coefficients_low_to_high_1_omega"),
+):
+    reduction = [[value % prime for value in pair] for pair in interpolated[exact_key]]
+    if reduction != expected_p19_j[finite_key]:
+        raise ArithmeticError(f"interpolated {exact_key} does not replay the transported p=19 j-map")
+for path, payload in held_out:
+    u_value = c(payload["specialization"]["base_U_coefficients_1_omega"])
+    expected = c(payload["weierstrass"]["j_mod_19_power_1_omega"])
+    numerator_value = evaluate_modular(interpolated["numerator"], u_value)
+    denominator_value = evaluate_modular(interpolated["denominator"], u_value)
+    if not is_unit(denominator_value) or divide(numerator_value, denominator_value) != expected:
+        raise ArithmeticError(f"held-out j replay failed at {path}")
+if args.interpolation_only:
+    print(
+        f"Q80THIRDQ12JINTERPOLATE|digits={digits}|samples=20|heldout=3|"
+        "degrees=24,24|cube_degree=8|status=PASS_P_ADIC_INTERPOLATION_ONLY"
+    )
+    raise SystemExit(0)
+
+
+raw_modular_denominator_factors = modular_squarefree_decomposition(
+    interpolated["denominator"]
+)
+raw_factor_degrees = {
+    multiplicity: len(factor) - 1
+    for multiplicity, factor in raw_modular_denominator_factors.items()
+}
+if raw_factor_degrees != {1: 8, 2: 3, 4: 1, 6: 1}:
+    raise ArithmeticError(
+        f"unexpected raw modular denominator multiplicities: {raw_factor_degrees}"
+    )
+
+
+def modular_poly_pair_scale(value, scalar):
+    return [list(mul(tuple(coefficient), tuple(scalar))) for coefficient in value]
+
+
+def modular_poly_linear_fraction_transform(value, source_degree, r6, r4):
+    """Return (z-1)^source_degree * value((r6-z*r4)/(z-1))."""
+    numerator_linear = [list(r6), list(neg(tuple(r4)))]
+    denominator_linear = [[-1 % modulus, 0], [1, 0]]
+    result = [[0, 0]]
+    for index, coefficient in enumerate(value):
+        term = modular_poly_mul(
+            modular_poly_power(numerator_linear, index),
+            modular_poly_power(denominator_linear, source_degree - index),
+        )
+        result = modular_poly_add(
+            result, modular_poly_pair_scale(term, coefficient)
+        )
+    return modular_poly_trim(result)
+
+
+def modular_poly_variable_scale(value, scalar):
+    return [
+        list(mul(tuple(coefficient), power(tuple(scalar), index)))
+        for index, coefficient in enumerate(value)
+    ]
+
+
+base_normalization = {
+    "kind": "pinned",
+    "coordinate": "U",
+    "transformation": None,
+}
+expected_factor_degrees = {1: 8, 2: 3, 4: 1, 6: 1}
+if args.base_normalization in ("i6-i4", "i6-i4-i2trace"):
+    r6 = raw_modular_denominator_factors[6][0]
+    r4 = raw_modular_denominator_factors[4][0]
+    transformed_numerator = modular_poly_linear_fraction_transform(
+        interpolated["numerator"], degree, r6, r4
+    )
+    transformed_denominator = modular_poly_linear_fraction_transform(
+        interpolated["denominator"], degree, r6, r4
+    )
+    transformed_normalization = inverse(tuple(transformed_denominator[-1]))
+    interpolated = {
+        "degrees_numerator_denominator": [
+            len(transformed_numerator) - 1,
+            len(transformed_denominator) - 1,
+        ],
+        "numerator": [
+            list(mul(tuple(value), transformed_normalization))
+            for value in transformed_numerator
+        ],
+        "denominator": [
+            list(mul(tuple(value), transformed_normalization))
+            for value in transformed_denominator
+        ],
+    }
+    if interpolated["degrees_numerator_denominator"] != [24, 20]:
+        raise ArithmeticError(
+            "the intrinsic I6/I4 normalization did not produce j degrees 24/20"
+        )
+    i2_trace_scale = None
+    if args.base_normalization == "i6-i4-i2trace":
+        first_normalized_factors = modular_squarefree_decomposition(
+            interpolated["denominator"]
+        )
+        i2_trace_scale = first_normalized_factors[2][2]
+        if not is_unit(tuple(i2_trace_scale)):
+            raise ArithmeticError("the cubic I2 trace scale is not a p-adic unit")
+        rescaled_numerator = modular_poly_variable_scale(
+            interpolated["numerator"], i2_trace_scale
+        )
+        rescaled_denominator = modular_poly_variable_scale(
+            interpolated["denominator"], i2_trace_scale
+        )
+        rescaled_normalization = inverse(tuple(rescaled_denominator[-1]))
+        interpolated = {
+            "degrees_numerator_denominator": [24, 20],
+            "numerator": [
+                list(mul(tuple(value), rescaled_normalization))
+                for value in rescaled_numerator
+            ],
+            "denominator": [
+                list(mul(tuple(value), rescaled_normalization))
+                for value in rescaled_denominator
+            ],
+        }
+    base_normalization = {
+        "kind": "intrinsic_i6_i4",
+        "coordinate": "w" if i2_trace_scale is not None else "z",
+        "transformation": (
+            "w=(L6(U)/L4(U))/a2, where a2 is the z^2 coefficient of the monic cubic I2 factor"
+            if i2_trace_scale is not None
+            else "z=L6(U)/L4(U)=(U+r6)/(U+r4)"
+        ),
+        "p19_power_r6_r4_coefficients_1_omega": [r6, r4],
+        "p19_power_i2_trace_scale_coefficients_1_omega": i2_trace_scale,
+        "distinguished_fibres": {
+            ("w=0" if i2_trace_scale is not None else "z=0"): "I6",
+            ("w=infinity" if i2_trace_scale is not None else "z=infinity"): "I4",
+        },
+    }
+    expected_factor_degrees = {1: 8, 2: 3, 6: 1}
+
+denominator_degree = len(interpolated["denominator"]) - 1
 modular_denominator_factors = modular_squarefree_decomposition(
     interpolated["denominator"]
 )
@@ -399,9 +586,9 @@ modular_factor_degrees = {
     multiplicity: len(factor) - 1
     for multiplicity, factor in modular_denominator_factors.items()
 }
-if modular_factor_degrees != {1: 8, 2: 3, 4: 1, 6: 1}:
+if modular_factor_degrees != expected_factor_degrees:
     raise ArithmeticError(
-        f"unexpected modular denominator multiplicities: {modular_factor_degrees}"
+        f"unexpected normalized modular denominator multiplicities: {modular_factor_degrees}"
     )
 
 
@@ -426,29 +613,7 @@ if [
     list(mul(modular_numerator_leading, tuple(coefficient)))
     for coefficient in modular_poly_power(modular_cube_root, 3)
 ] != interpolated["numerator"]:
-    raise ArithmeticError("the interpolated p-adic j numerator is not a scalar times a cube")
-
-expected_p19_j = transport["transported_models"]["19"]["j"]
-for exact_key, finite_key in (
-    ("numerator", "numerator_coefficients_low_to_high_1_omega"),
-    ("denominator", "denominator_coefficients_low_to_high_1_omega"),
-):
-    reduction = [[value % prime for value in pair] for pair in interpolated[exact_key]]
-    if reduction != expected_p19_j[finite_key]:
-        raise ArithmeticError(f"interpolated {exact_key} does not replay the transported p=19 j-map")
-for path, payload in held_out:
-    u_value = c(payload["specialization"]["base_U_coefficients_1_omega"])
-    expected = c(payload["weierstrass"]["j_mod_19_power_1_omega"])
-    numerator_value = evaluate_modular(interpolated["numerator"], u_value)
-    denominator_value = evaluate_modular(interpolated["denominator"], u_value)
-    if not is_unit(denominator_value) or divide(numerator_value, denominator_value) != expected:
-        raise ArithmeticError(f"held-out j replay failed at {path}")
-if args.interpolation_only:
-    print(
-        f"Q80THIRDQ12JINTERPOLATE|digits={digits}|samples=20|heldout=3|"
-        "degrees=24,24|cube_degree=8|status=PASS_P_ADIC_INTERPOLATION_ONLY"
-    )
-    raise SystemExit(0)
+    raise ArithmeticError("the normalized p-adic j numerator is not a scalar times a cube")
 
 
 def rational_mod(value, local_prime):
@@ -459,13 +624,104 @@ def rational_mod(value, local_prime):
     return numerator * pow(denominator, -1, local_prime) % local_prime
 
 
+finite_normalized_j_cache = {}
+
+
+def finite_normalized_j(local_prime):
+    if local_prime in finite_normalized_j_cache:
+        return finite_normalized_j_cache[local_prime]
+    record = transport["transported_models"][str(local_prime)]["j"]
+    if args.base_normalization == "pinned":
+        finite_normalized_j_cache[local_prime] = record
+        return record
+    finite = GF(local_prime)
+    x_ring = PolynomialRing(finite, "x")
+    x = x_ring.gen()
+    local_omega_square = finite(omega_square_exact)
+    quadratic = GF(local_prime**2, "w", modulus=x**2 - local_omega_square)
+    w = quadratic.gen()
+    z_ring = PolynomialRing(quadratic, "z")
+    z = z_ring.gen()
+
+    def decode(coefficients):
+        return z_ring([quadratic(a) + quadratic(b) * w for a, b in coefficients])
+
+    numerator_polynomial = decode(
+        record["numerator_coefficients_low_to_high_1_omega"]
+    )
+    denominator_polynomial = decode(
+        record["denominator_coefficients_low_to_high_1_omega"]
+    )
+    grouped = {}
+    for factor, multiplicity in denominator_polynomial.factor():
+        grouped[multiplicity] = grouped.get(multiplicity, z_ring.one()) * factor.monic()
+    r6 = grouped[6].monic()[0]
+    r4 = grouped[4].monic()[0]
+    numerator_linear = quadratic(r6) - quadratic(r4) * z
+    denominator_linear = z - 1
+
+    def transform(polynomial):
+        return sum(
+            coefficient * numerator_linear**index * denominator_linear ** (degree - index)
+            for index, coefficient in enumerate(polynomial.list())
+        )
+
+    transformed_numerator = transform(numerator_polynomial)
+    transformed_denominator = transform(denominator_polynomial)
+    scale = transformed_denominator.leading_coefficient() ** -1
+    transformed_numerator *= scale
+    transformed_denominator *= scale
+    if args.base_normalization == "i6-i4-i2trace":
+        transformed_grouped = {}
+        for factor, multiplicity in transformed_denominator.factor():
+            transformed_grouped[multiplicity] = (
+                transformed_grouped.get(multiplicity, z_ring.one()) * factor.monic()
+            )
+        i2_trace_scale = transformed_grouped[2].monic()[2]
+        transformed_numerator = z_ring(
+            [
+                coefficient * i2_trace_scale**index
+                for index, coefficient in enumerate(transformed_numerator.list())
+            ]
+        )
+        transformed_denominator = z_ring(
+            [
+                coefficient * i2_trace_scale**index
+                for index, coefficient in enumerate(transformed_denominator.list())
+            ]
+        )
+        scale = transformed_denominator.leading_coefficient() ** -1
+        transformed_numerator *= scale
+        transformed_denominator *= scale
+
+    def encode(polynomial):
+        encoded = []
+        for coefficient in polynomial.list():
+            coordinates = list(coefficient.polynomial())
+            coordinates += [finite(0)] * (2 - len(coordinates))
+            encoded.append([int(coordinates[0]), int(coordinates[1])])
+        return encoded
+
+    result = {
+        "numerator_coefficients_low_to_high_1_omega": encode(transformed_numerator),
+        "denominator_coefficients_low_to_high_1_omega": encode(transformed_denominator),
+    }
+    if [len(result["numerator_coefficients_low_to_high_1_omega"]) - 1,
+        len(result["denominator_coefficients_low_to_high_1_omega"]) - 1] != [24, 20]:
+        raise ArithmeticError(
+            f"finite I6/I4 normalization has unexpected degrees at p={local_prime}"
+        )
+    finite_normalized_j_cache[local_prime] = result
+    return result
+
+
 def validate_candidate_at_finite_primes(candidate, selected_primes=None):
     selected_primes = set(selected_primes or ALL_TRANSPORTED_PRIMES)
     for local_prime_text, model in transport["transported_models"].items():
         local_prime = int(local_prime_text)
         if local_prime not in selected_primes:
             continue
-        expected = model["j"]
+        expected = finite_normalized_j(local_prime)
         for exact_key, finite_key in (
             ("numerator", "numerator_coefficients_low_to_high_1_omega"),
             ("denominator", "denominator_coefficients_low_to_high_1_omega"),
@@ -510,7 +766,7 @@ def reconstruct_projectively(record):
         if row[-1] < 0:
             row = [-value for value in row]
         candidate = {
-            "degrees_numerator_denominator": [degree, degree],
+            "degrees_numerator_denominator": [degree, denominator_degree],
             "numerator": [[QQ(0), QQ(0)] for unused in record["numerator"]],
             "denominator": [[QQ(0), QQ(0)] for unused in record["denominator"]],
         }
@@ -584,11 +840,53 @@ def reconstruct_pair_block(modular_pairs, validator, label, lattice_modulus=modu
     )
 
 
+def reconstruct_scalar_block(residues, validator, label, lattice_modulus=modulus):
+    lattice_modulus = ZZ(lattice_modulus)
+    residues = [ZZ(value) % lattice_modulus for value in residues]
+    dimension = len(residues) + 1
+    lattice = Matrix(ZZ, dimension, dimension)
+    for index in range(dimension - 1):
+        lattice[index, index] = lattice_modulus
+    for index, value in enumerate(residues):
+        lattice[dimension - 1, index] = value
+    lattice[dimension - 1, dimension - 1] = 1
+    reduced = lattice.LLL(delta=0.99)
+    diagnostics = []
+    for row in sorted(reduced.rows(), key=lambda value: value.dot_product(value)):
+        row = list(row)
+        if not row[-1] or row[-1] % prime == 0:
+            continue
+        common = math.gcd(*(abs(int(value)) for value in row))
+        if common > 1:
+            row = [value // common for value in row]
+        if row[-1] < 0:
+            row = [-value for value in row]
+        candidate = [QQ(value) / QQ(row[-1]) for value in row[:-1]]
+        maximum_bits = max(abs(ZZ(value)).nbits() for value in row)
+        diagnostics.append(maximum_bits)
+        if validator(candidate):
+            return candidate, {
+                "method": "projective LLL for one quadratic-basis component",
+                "lattice_dimension": dimension,
+                "maximum_primitive_coordinate_bits": maximum_bits,
+                "random_lattice_boundary_bits": int(
+                    math.ceil(lattice_modulus.nbits() * (dimension - 1) / dimension)
+                ),
+                "short_rows_tested": len(diagnostics),
+                "validated_primes": RECONSTRUCTION_TRANSPORTED_PRIMES,
+            }
+    raise ArithmeticError(
+        f"{label}: no component-wise projective LLL row validates; "
+        f"short-row bits={diagnostics[:8]}"
+    )
+
+
 def reconstruct_scalar_asymmetric(residue, validator, label, lattice_modulus=modulus):
     lattice_modulus = ZZ(lattice_modulus)
     old_remainder, remainder = lattice_modulus, ZZ(residue) % lattice_modulus
     old_cofactor, cofactor = ZZ(0), ZZ(1)
     diagnostics = []
+    candidates = []
     while remainder:
         if cofactor and cofactor % prime:
             candidate = QQ(remainder) / QQ(cofactor)
@@ -596,20 +894,32 @@ def reconstruct_scalar_asymmetric(residue, validator, label, lattice_modulus=mod
             denominator_bits = ZZ(candidate.denominator()).nbits()
             diagnostics.append([numerator_bits, denominator_bits])
             if validator(candidate):
-                return candidate, {
-                    "method": "extended-Euclidean asymmetric rational reconstruction",
-                    "numerator_bits": numerator_bits,
-                    "denominator_bits": denominator_bits,
-                    "bit_sum": numerator_bits + denominator_bits,
-                    "euclidean_candidates_tested": len(diagnostics),
-                    "validated_primes": RECONSTRUCTION_TRANSPORTED_PRIMES,
-                }
+                candidates.append(
+                    (
+                        max(numerator_bits, denominator_bits),
+                        numerator_bits + denominator_bits,
+                        candidate,
+                        numerator_bits,
+                        denominator_bits,
+                    )
+                )
         quotient = old_remainder // remainder
         old_remainder, remainder = remainder, old_remainder - quotient * remainder
         old_cofactor, cofactor = cofactor, old_cofactor - quotient * cofactor
-    raise ArithmeticError(
-        f"{label}: no asymmetric convergent validates; tail={diagnostics[-8:]}"
-    )
+    if not candidates:
+        raise ArithmeticError(
+            f"{label}: no asymmetric convergent validates; tail={diagnostics[-8:]}"
+        )
+    unused_maximum, unused_sum, candidate, numerator_bits, denominator_bits = min(candidates)
+    return candidate, {
+        "method": "minimum-height extended-Euclidean asymmetric rational reconstruction",
+        "numerator_bits": numerator_bits,
+        "denominator_bits": denominator_bits,
+        "bit_sum": numerator_bits + denominator_bits,
+        "euclidean_candidates_tested": len(diagnostics),
+        "valid_convergents": len(candidates),
+        "validated_primes": RECONSTRUCTION_TRANSPORTED_PRIMES,
+    }
 
 
 def rational_record(record):
@@ -824,7 +1134,7 @@ def finite_denominator_factors(local_prime):
     )
     w = quadratic.gen()
     polynomial_ring = PolynomialRing(quadratic, "U")
-    record = transport["transported_models"][str(local_prime)]["j"]
+    record = finite_normalized_j(local_prime)
     denominator_polynomial = polynomial_ring(
         [
             quadratic(a) + quadratic(b) * w
@@ -841,7 +1151,7 @@ def finite_denominator_factors(local_prime):
             coordinates = list(coefficient.polynomial())
             coordinates += [finite(0)] * (2 - len(coordinates))
             encoded[multiplicity].append([int(coordinates[0]), int(coordinates[1])])
-    if {key: len(value) - 1 for key, value in encoded.items()} != {1: 8, 2: 3, 4: 1, 6: 1}:
+    if {key: len(value) - 1 for key, value in encoded.items()} != expected_factor_degrees:
         raise ArithmeticError(f"unexpected finite denominator factors at p={local_prime}")
     finite_denominator_factor_cache[local_prime] = encoded
     return encoded
@@ -872,9 +1182,11 @@ def crt_extend_pair(padic_pair, finite_pair_getter):
 crt_cube_root_lower = []
 for coefficient_index, padic_pair in enumerate(modular_cube_root[:-1]):
     def finite_cube_coefficient(local_prime, index=coefficient_index):
-        model = transport["transported_models"][str(local_prime)]
         return finite_cube_root_from_numerator(
-            model["j"]["numerator_coefficients_low_to_high_1_omega"], local_prime
+            finite_normalized_j(local_prime)[
+                "numerator_coefficients_low_to_high_1_omega"
+            ],
+            local_prime,
         )[index]
 
     crt_cube_root_lower.append(crt_extend_pair(padic_pair, finite_cube_coefficient))
@@ -895,21 +1207,218 @@ def validate_cube_root(candidate_lower, selected_primes=RECONSTRUCTION_TRANSPORT
         except ZeroDivisionError:
             return False
         expected = finite_cube_root_from_numerator(
-            model["j"]["numerator_coefficients_low_to_high_1_omega"], local_prime
+            finite_normalized_j(local_prime)[
+                "numerator_coefficients_low_to_high_1_omega"
+            ],
+            local_prime,
         )
         if reduction != expected:
             return False
     return True
 
 
-try:
-    exact_cube_root_lower, cube_reconstruction = reconstruct_pair_block(
-        crt_cube_root_lower,
-        validate_cube_root,
-        "monic degree-8 c4 factor",
-        lattice_modulus=reconstruction_modulus,
+def exact_pair_power(value, exponent):
+    result = list(EONE)
+    base = list(value)
+    while exponent:
+        if exponent & 1:
+            result = emul(result, base)
+        base = emul(base, base)
+        exponent >>= 1
+    return result
+
+
+def exact_pair_linear_solve(rows, unknown_count):
+    matrix = [[list(value) for value in row] for row in rows]
+    rank = 0
+    for column in range(unknown_count):
+        pivot = next(
+            (index for index in range(rank, len(matrix)) if matrix[index][column] != EZERO),
+            None,
+        )
+        if pivot is None:
+            raise ArithmeticError(f"exact evaluation interpolation lost pivot {column}")
+        matrix[rank], matrix[pivot] = matrix[pivot], matrix[rank]
+        inverse_pivot = einv(matrix[rank][column])
+        matrix[rank] = [emul(value, inverse_pivot) for value in matrix[rank]]
+        for row_index in range(len(matrix)):
+            if row_index == rank:
+                continue
+            factor = matrix[row_index][column]
+            if factor == EZERO:
+                continue
+            matrix[row_index] = [
+                esub(matrix[row_index][index], emul(factor, matrix[rank][index]))
+                for index in range(unknown_count + 1)
+            ]
+        rank += 1
+    return [matrix[index][-1] for index in range(unknown_count)]
+
+
+def finite_pair_evaluate(coefficients, exact_node, local_prime):
+    local_omega_square = rational_mod(omega_square_exact, local_prime)
+
+    def local_mul(left, right):
+        return [
+            (left[0] * right[0] + local_omega_square * left[1] * right[1])
+            % local_prime,
+            (left[0] * right[1] + left[1] * right[0]) % local_prime,
+        ]
+
+    node = [rational_mod(value, local_prime) for value in exact_node]
+    result = [0, 0]
+    for coefficient in reversed(coefficients):
+        product = local_mul(result, node)
+        result = [
+            (product[0] + coefficient[0]) % local_prime,
+            (product[1] + coefficient[1]) % local_prime,
+        ]
+    return result
+
+
+exact_cube_root_lower = None
+cube_reconstruction = None
+if args.intrinsic_basis == "evaluations":
+    if args.base_normalization != "pinned":
+        raise ValueError("evaluation-basis reconstruction currently requires the exact pinned U nodes")
+    evaluation_nodes = [
+        [QQ(value) for value in payload["specialization"]["base_U_coefficients_1_omega"]]
+        for unused_path, payload in training[:8]
+    ]
+    reconstructed_values = []
+    evaluation_diagnostics = []
+    for evaluation_index, exact_node in enumerate(evaluation_nodes):
+        padic_node = c([int(value) for value in exact_node])
+        padic_value = evaluate_modular(modular_cube_root, padic_node)
+
+        def finite_evaluation(local_prime, node=exact_node):
+            coefficients = finite_cube_root_from_numerator(
+                finite_normalized_j(local_prime)[
+                    "numerator_coefficients_low_to_high_1_omega"
+                ],
+                local_prime,
+            )
+            return finite_pair_evaluate(coefficients, node, local_prime)
+
+        crt_value = crt_extend_pair(padic_value, finite_evaluation)
+
+        def validate_evaluation(candidate, node=exact_node):
+            for local_prime in RECONSTRUCTION_TRANSPORTED_PRIMES:
+                expected = finite_evaluation(local_prime, node)
+                try:
+                    reduction = [rational_mod(value, local_prime) for value in candidate[0]]
+                except ZeroDivisionError:
+                    return False
+                if reduction != expected:
+                    return False
+            return True
+
+        if args.reconstruction_granularity == "scalar":
+            reconstructed_value = []
+            scalar_diagnostics = []
+            for omega_index, residue in enumerate(crt_value):
+                def validate_evaluation_scalar(candidate):
+                    return math.gcd(
+                        int(candidate.denominator()), int(reconstruction_modulus)
+                    ) == 1
+
+                coordinate, scalar_diagnostic = reconstruct_scalar_asymmetric(
+                    residue,
+                    validate_evaluation_scalar,
+                    f"c4 factor evaluation {evaluation_index} coordinate {omega_index}",
+                    lattice_modulus=reconstruction_modulus,
+                )
+                reconstructed_value.append(coordinate)
+                scalar_diagnostics.append(scalar_diagnostic)
+            diagnostic = {
+                "method": "independent scalar evaluation reconstruction",
+                "coordinates": scalar_diagnostics,
+            }
+        else:
+            reconstructed, diagnostic = reconstruct_pair_block(
+                [crt_value],
+                validate_evaluation,
+                f"c4 factor evaluation {evaluation_index}",
+                lattice_modulus=reconstruction_modulus,
+            )
+            reconstructed_value = reconstructed[0]
+        reconstructed_values.append(reconstructed_value)
+        evaluation_diagnostics.append(diagnostic)
+    interpolation_rows = []
+    for node, value in zip(evaluation_nodes, reconstructed_values):
+        powers = [exact_pair_power(node, exponent) for exponent in range(9)]
+        interpolation_rows.append(powers[:8] + [esub(value, powers[8])])
+    exact_cube_root_lower = exact_pair_linear_solve(interpolation_rows, 8)
+    if not validate_cube_root(exact_cube_root_lower):
+        raise ArithmeticError("evaluation-basis c4-factor reconstruction failed full replay")
+    cube_reconstruction = {
+        "method": "residue-distinct intrinsic evaluations followed by exact interpolation",
+        "evaluation_nodes_coefficients_1_omega": [
+            [[str(value) for value in pair] for pair in evaluation_nodes]
+        ][0],
+        "evaluations": evaluation_diagnostics,
+    }
+
+if exact_cube_root_lower is None and args.reconstruction_granularity == "component":
+    reconstructed_components = []
+    component_diagnostics = []
+    for omega_index in range(2):
+        component_residues = [pair[omega_index] for pair in crt_cube_root_lower]
+
+        def validate_cube_component(candidate, coordinate=omega_index):
+            for local_prime in RECONSTRUCTION_TRANSPORTED_PRIMES:
+                expected = finite_cube_root_from_numerator(
+                    finite_normalized_j(local_prime)[
+                        "numerator_coefficients_low_to_high_1_omega"
+                    ],
+                    local_prime,
+                )
+                try:
+                    reduction = [rational_mod(value, local_prime) for value in candidate]
+                except ZeroDivisionError:
+                    return False
+                if reduction != [pair[coordinate] for pair in expected[:-1]]:
+                    return False
+            return True
+
+        component, diagnostic = reconstruct_scalar_block(
+            component_residues,
+            validate_cube_component,
+            f"c4 factor quadratic-basis component {omega_index}",
+            lattice_modulus=reconstruction_modulus,
+        )
+        reconstructed_components.append(component)
+        component_diagnostics.append(diagnostic)
+    exact_cube_root_lower = [
+        [reconstructed_components[0][index], reconstructed_components[1][index]]
+        for index in range(len(crt_cube_root_lower))
+    ]
+    if not validate_cube_root(exact_cube_root_lower):
+        raise ArithmeticError("component-wise c4-factor reconstruction failed full replay")
+    cube_reconstruction = {
+        "method": "separate projective reconstruction of rational and omega polynomial components",
+        "components": component_diagnostics,
+    }
+
+joint_error = None
+if exact_cube_root_lower is None and args.reconstruction_granularity in ("auto", "bundle"):
+    try:
+        exact_cube_root_lower, cube_reconstruction = reconstruct_pair_block(
+            crt_cube_root_lower,
+            validate_cube_root,
+            "monic degree-8 c4 factor",
+            lattice_modulus=reconstruction_modulus,
+        )
+    except ArithmeticError as error:
+        if args.reconstruction_granularity == "bundle":
+            raise
+        joint_error = error
+elif exact_cube_root_lower is None:
+    joint_error = ArithmeticError(
+        f"bundle reconstruction disabled by --reconstruction-granularity="
+        f"{args.reconstruction_granularity}"
     )
-except ArithmeticError as joint_error:
+if exact_cube_root_lower is None:
     exact_cube_root_lower = []
     coefficient_diagnostics = []
     for coefficient_index, modular_pair in enumerate(crt_cube_root_lower):
@@ -919,7 +1428,9 @@ except ArithmeticError as joint_error:
                 if local_prime not in RECONSTRUCTION_TRANSPORTED_PRIMES:
                     continue
                 expected = finite_cube_root_from_numerator(
-                    model["j"]["numerator_coefficients_low_to_high_1_omega"],
+                    finite_normalized_j(local_prime)[
+                        "numerator_coefficients_low_to_high_1_omega"
+                    ],
                     local_prime,
                 )[index]
                 reduction = [rational_mod(value, local_prime) for value in candidate[0]]
@@ -927,16 +1438,26 @@ except ArithmeticError as joint_error:
                     return False
             return True
 
-        try:
-            reconstructed, diagnostic = reconstruct_pair_block(
-                [modular_pair],
-                validate_cube_root_coefficient,
-                f"c4 factor coefficient {coefficient_index}",
-                lattice_modulus=reconstruction_modulus,
+        pair_error = None
+        if args.reconstruction_granularity != "scalar":
+            try:
+                reconstructed, diagnostic = reconstruct_pair_block(
+                    [modular_pair],
+                    validate_cube_root_coefficient,
+                    f"c4 factor coefficient {coefficient_index}",
+                    lattice_modulus=reconstruction_modulus,
+                )
+                exact_pair = reconstructed[0]
+                diagnostic["fallback_level"] = "coefficient_pair"
+            except ArithmeticError as error:
+                if args.reconstruction_granularity == "pair":
+                    raise
+                pair_error = error
+        else:
+            pair_error = ArithmeticError(
+                "coefficient-pair reconstruction disabled by scalar mode"
             )
-            exact_pair = reconstructed[0]
-            diagnostic["fallback_level"] = "coefficient_pair"
-        except ArithmeticError as pair_error:
+        if pair_error is not None:
             exact_pair = []
             scalar_diagnostics = []
             for omega_index, residue in enumerate(modular_pair):
@@ -945,21 +1466,13 @@ except ArithmeticError as joint_error:
                     index=coefficient_index,
                     coordinate=omega_index,
                 ):
-                    for local_prime_text, model in transport["transported_models"].items():
-                        local_prime = int(local_prime_text)
-                        if local_prime not in RECONSTRUCTION_TRANSPORTED_PRIMES:
-                            continue
-                        expected = finite_cube_root_from_numerator(
-                            model["j"]["numerator_coefficients_low_to_high_1_omega"],
-                            local_prime,
-                        )[index][coordinate]
-                        try:
-                            reduction = rational_mod(candidate, local_prime)
-                        except ZeroDivisionError:
-                            return False
-                        if reduction != expected:
-                            return False
-                    return True
+                    # Every convergent already satisfies the one combined CRT
+                    # congruence.  Only denominator invertibility is needed here;
+                    # validate_cube_root performs the full finite-prime replay
+                    # after all coordinates have been selected.
+                    return math.gcd(
+                        int(candidate.denominator()), int(reconstruction_modulus)
+                    ) == 1
 
                 exact_coordinate, scalar_diagnostic = reconstruct_scalar_asymmetric(
                     residue,
@@ -979,7 +1492,8 @@ except ArithmeticError as joint_error:
     if not validate_cube_root(exact_cube_root_lower):
         raise ArithmeticError("separate c4-factor coefficient reconstruction failed full replay")
     cube_reconstruction = {
-        "method": "separate coefficient reconstruction after joint boundary failure",
+        "method": "separate intrinsic-coefficient reconstruction",
+        "requested_granularity": args.reconstruction_granularity,
         "joint_failure": str(joint_error),
         "coefficients": coefficient_diagnostics,
     }
@@ -990,16 +1504,15 @@ if HELD_OUT_TRANSPORTED_PRIMES and not validate_cube_root(
     raise ArithmeticError("reconstructed degree-8 cube root failed held-out-prime replay")
 
 
-factor_multiplicities = (1, 2, 4, 6)
+factor_multiplicities = tuple(sorted(expected_factor_degrees))
 def finite_j_leading(local_prime):
-    return transport["transported_models"][str(local_prime)]["j"][
+    return finite_normalized_j(local_prime)[
         "numerator_coefficients_low_to_high_1_omega"
     ][-1]
 
 
-modular_invariant_bundle = [
-    crt_extend_pair(interpolated["numerator"][-1], finite_j_leading)
-]
+modular_invariant_bundle = [crt_extend_pair(interpolated["numerator"][-1], finite_j_leading)]
+modular_invariant_specs = [("numerator_leading", None, None)]
 for multiplicity in factor_multiplicities:
     for coefficient_index, padic_pair in enumerate(
         modular_denominator_factors[multiplicity][:-1]
@@ -1014,6 +1527,16 @@ for multiplicity in factor_multiplicities:
         modular_invariant_bundle.append(
             crt_extend_pair(padic_pair, finite_factor_coefficient)
         )
+        modular_invariant_specs.append(
+            ("denominator_factor", multiplicity, coefficient_index)
+        )
+
+
+def finite_invariant_pair(spec, local_prime):
+    kind, multiplicity, coefficient_index = spec
+    if kind == "numerator_leading":
+        return finite_j_leading(local_prime)
+    return finite_denominator_factors(local_prime)[multiplicity][coefficient_index]
 
 
 def decode_invariant_bundle(candidate):
@@ -1053,18 +1576,144 @@ def validate_invariant_bundle(candidate):
     )
 
 
-invariant_bundle, scale_reconstruction = reconstruct_pair_block(
-    modular_invariant_bundle,
-    validate_invariant_bundle,
-    "j leading scalar and squarefree denominator factors",
-    lattice_modulus=reconstruction_modulus,
-)
+invariant_bundle = None
+invariant_joint_error = None
+if args.reconstruction_granularity == "component":
+    reconstructed_components = []
+    component_diagnostics = []
+    for omega_index in range(2):
+        component_residues = [pair[omega_index] for pair in modular_invariant_bundle]
+
+        def validate_invariant_component(candidate, coordinate=omega_index):
+            for local_prime in RECONSTRUCTION_TRANSPORTED_PRIMES:
+                expected = [
+                    finite_invariant_pair(spec, local_prime)[coordinate]
+                    for spec in modular_invariant_specs
+                ]
+                try:
+                    reduction = [rational_mod(value, local_prime) for value in candidate]
+                except ZeroDivisionError:
+                    return False
+                if reduction != expected:
+                    return False
+            return True
+
+        component, diagnostic = reconstruct_scalar_block(
+            component_residues,
+            validate_invariant_component,
+            f"intrinsic invariant quadratic-basis component {omega_index}",
+            lattice_modulus=reconstruction_modulus,
+        )
+        reconstructed_components.append(component)
+        component_diagnostics.append(diagnostic)
+    invariant_bundle = [
+        [reconstructed_components[0][index], reconstructed_components[1][index]]
+        for index in range(len(modular_invariant_bundle))
+    ]
+    if not validate_invariant_bundle(invariant_bundle):
+        raise ArithmeticError("component-wise intrinsic-invariant reconstruction failed full replay")
+    scale_reconstruction = {
+        "method": "separate projective reconstruction of rational and omega invariant components",
+        "components": component_diagnostics,
+    }
+elif args.reconstruction_granularity in ("auto", "bundle"):
+    try:
+        invariant_bundle, scale_reconstruction = reconstruct_pair_block(
+            modular_invariant_bundle,
+            validate_invariant_bundle,
+            "j leading scalar and squarefree denominator factors",
+            lattice_modulus=reconstruction_modulus,
+        )
+    except ArithmeticError as error:
+        if args.reconstruction_granularity == "bundle":
+            raise
+        invariant_joint_error = error
+else:
+    invariant_joint_error = ArithmeticError(
+        f"bundle reconstruction disabled by --reconstruction-granularity="
+        f"{args.reconstruction_granularity}"
+    )
+if invariant_bundle is None:
+    invariant_bundle = []
+    invariant_diagnostics = []
+    for bundle_index, (modular_pair, spec) in enumerate(
+        zip(modular_invariant_bundle, modular_invariant_specs)
+    ):
+        def validate_invariant_pair(candidate, local_spec=spec):
+            for local_prime in RECONSTRUCTION_TRANSPORTED_PRIMES:
+                expected = finite_invariant_pair(local_spec, local_prime)
+                try:
+                    reduction = [rational_mod(value, local_prime) for value in candidate[0]]
+                except ZeroDivisionError:
+                    return False
+                if reduction != expected:
+                    return False
+            return True
+
+        pair_error = None
+        if args.reconstruction_granularity != "scalar":
+            try:
+                reconstructed, diagnostic = reconstruct_pair_block(
+                    [modular_pair],
+                    validate_invariant_pair,
+                    f"intrinsic invariant coefficient {bundle_index}",
+                    lattice_modulus=reconstruction_modulus,
+                )
+                exact_pair = reconstructed[0]
+                diagnostic["fallback_level"] = "coefficient_pair"
+            except ArithmeticError as error:
+                if args.reconstruction_granularity == "pair":
+                    raise
+                pair_error = error
+        else:
+            pair_error = ArithmeticError(
+                "coefficient-pair reconstruction disabled by scalar mode"
+            )
+        if pair_error is not None:
+            exact_pair = []
+            scalar_diagnostics = []
+            for omega_index, residue in enumerate(modular_pair):
+                def validate_invariant_scalar(
+                    candidate,
+                    local_spec=spec,
+                    coordinate=omega_index,
+                ):
+                    # As above, the combined residue already encodes every
+                    # reconstruction prime.  The full intrinsic bundle is
+                    # replayed after these scalar choices are assembled.
+                    return math.gcd(
+                        int(candidate.denominator()), int(reconstruction_modulus)
+                    ) == 1
+
+                exact_coordinate, scalar_diagnostic = reconstruct_scalar_asymmetric(
+                    residue,
+                    validate_invariant_scalar,
+                    f"intrinsic invariant coefficient {bundle_index} coordinate {omega_index}",
+                    lattice_modulus=reconstruction_modulus,
+                )
+                exact_pair.append(exact_coordinate)
+                scalar_diagnostics.append(scalar_diagnostic)
+            diagnostic = {
+                "fallback_level": "asymmetric_scalar",
+                "pair_failure": str(pair_error),
+                "coordinates": scalar_diagnostics,
+            }
+        invariant_bundle.append(exact_pair)
+        invariant_diagnostics.append(diagnostic)
+    if not validate_invariant_bundle(invariant_bundle):
+        raise ArithmeticError("separate intrinsic-invariant reconstruction failed full replay")
+    scale_reconstruction = {
+        "method": "separate intrinsic-coefficient reconstruction",
+        "requested_granularity": args.reconstruction_granularity,
+        "joint_failure": str(invariant_joint_error),
+        "coefficients": invariant_diagnostics,
+    }
 leading, reconstructed_denominator_factors, denominator = decode_invariant_bundle(
     invariant_bundle
 )
 numerator = [emul(leading, coefficient) for coefficient in poly_power(cube_root, 3)]
 exact = {
-    "degrees_numerator_denominator": [degree, degree],
+    "degrees_numerator_denominator": [degree, denominator_degree],
     "numerator": numerator,
     "denominator": denominator,
 }
@@ -1076,6 +1725,7 @@ if HELD_OUT_TRANSPORTED_PRIMES and not validate_candidate_at_finite_primes(
     raise ArithmeticError("structured exact j candidate failed held-out-prime replay")
 reconstruction = {
     "method": "j=c4^3/Delta structured reconstruction",
+    "requested_granularity": args.reconstruction_granularity,
     "combined_reconstruction_modulus_bits": int(reconstruction_modulus.nbits()),
     "CRT_auxiliary_primes": CRT_AUXILIARY_PRIMES,
     "monic_degree8_cube_root": cube_reconstruction,
@@ -1095,7 +1745,6 @@ if [emul(leading, coefficient) for coefficient in poly_power(cube_root, 3)] != n
 # Good reduction therefore certifies pairwise coprimality over QQ(omega)
 # without repeating a very large rational-function gcd computation.
 squarefree_factors = reconstructed_denominator_factors
-expected_factor_degrees = {1: 8, 2: 3, 4: 1, 6: 1}
 actual_factor_degrees = {
     multiplicity: len(factor) - 1 for multiplicity, factor in squarefree_factors.items()
 }
@@ -1124,6 +1773,45 @@ def encode_polynomial(coefficients):
     return [encode_pair(pair) for pair in coefficients]
 
 
+proved_claims = [
+    "unique modular interpolation of the five long coefficients at their certified small degree bounds through 19^digits",
+    "symbolic modular composition of c4, Delta, and the degree-(24,24) j-map in the pinned U gauge",
+    "three held-out certified p-adic sample replays",
+    (
+        "one structured projective reconstruction candidate using the p-adic residue and "
+        f"{len(CRT_AUXILIARY_PRIMES)} aligned auxiliary primes"
+    ),
+    "the displayed characteristic-zero numerator cube and denominator squarefree identities",
+]
+not_proved_claims = [
+    "literal characteristic-zero substitution into the exact genus-one pencil or a reconstructed Jacobian",
+    "a characteristic-zero fibre theorem or transported component marking",
+    "an equation over QQ rather than the displayed quadratic coefficient field",
+]
+if HELD_OUT_TRANSPORTED_PRIMES:
+    proved_claims.append(
+        "literal replay at transported primes excluded from CRT/LLL: "
+        + ",".join(str(value) for value in HELD_OUT_TRANSPORTED_PRIMES)
+    )
+else:
+    not_proved_claims.insert(
+        0, "replay at a new aligned prime not consumed by the CRT reconstruction"
+    )
+reproduce_parts = [
+    "sage -python elkies-k3/scripts/reconstruct_q80_third_q12_j_map_p19_adic.sage",
+    f"--manifest {args.manifest.relative_to(ROOT)}",
+    f"--transport {args.transport.relative_to(ROOT)}",
+    f"--source {args.source.relative_to(ROOT)}",
+    f"--operands {args.operands.relative_to(ROOT)}",
+    f"--output {args.output.relative_to(ROOT)}",
+    f"--reconstruction-granularity {args.reconstruction_granularity}",
+    f"--base-normalization {args.base_normalization}",
+]
+for heldout_prime in HELD_OUT_TRANSPORTED_PRIMES:
+    reproduce_parts.append(f"--holdout-prime {heldout_prime}")
+output_base_variable = base_normalization["coordinate"]
+
+
 output = {
     "schema": "elkies-k3.q80-third-q12-j-map-p19-adic-reconstructed-qq.v1",
     "status": "PASS_CANDIDATE_EXACT_THIRD_Q12_J_MAP_RECONSTRUCTION_QQ",
@@ -1135,20 +1823,42 @@ output = {
         "quadratic_discriminant": str(quadratic_discriminant),
     },
     "gauge": {
-        "base_coordinate": "the exact common U coordinate pinned by the transported models",
-        "base_PGL2_change_applied": False,
+        "base_coordinate": (
+            f"the intrinsic {output_base_variable} coordinate defined in base_normalization"
+            if args.base_normalization != "pinned"
+            else "the exact common U coordinate pinned by the transported models"
+        ),
+        "base_normalization": base_normalization,
+        "base_PGL2_change_applied": args.base_normalization != "pinned",
         "weierstrass_scaling_dependence": False,
         "section_sign_dependence": False,
-        "denominator_normalization": "monic of degree 24 in U",
+        "denominator_normalization": (
+            f"monic of degree 20 in {output_base_variable} with the I4 fibre at infinity"
+            if args.base_normalization != "pinned"
+            else "monic of degree 24 in U"
+        ),
     },
     "j_map": {
-        "degrees_numerator_denominator": [degree, degree],
-        "numerator_coefficients_low_to_high_U": encode_polynomial(exact["numerator"]),
-        "denominator_coefficients_low_to_high_U": encode_polynomial(exact["denominator"]),
+        "degrees_numerator_denominator": [degree, denominator_degree],
+        "base_variable": output_base_variable,
+        (
+            f"numerator_coefficients_low_to_high_{output_base_variable}"
+            if args.base_normalization != "pinned"
+            else "numerator_coefficients_low_to_high_U"
+        ): encode_polynomial(exact["numerator"]),
+        (
+            f"denominator_coefficients_low_to_high_{output_base_variable}"
+            if args.base_normalization != "pinned"
+            else "denominator_coefficients_low_to_high_U"
+        ): encode_polynomial(exact["denominator"]),
     },
     "exact_invariant_structure": {
         "numerator_leading_scalar": encode_pair(leading),
-        "monic_c4_factor_degree8_coefficients_low_to_high_U": encode_polynomial(cube_root),
+        (
+            f"monic_c4_factor_degree8_coefficients_low_to_high_{output_base_variable}"
+            if args.base_normalization != "pinned"
+            else "monic_c4_factor_degree8_coefficients_low_to_high_U"
+        ): encode_polynomial(cube_root),
         "identity": "numerator = numerator_leading_scalar * monic_c4_factor^3",
         "denominator_squarefree_factor_degrees_by_multiplicity": {
             str(key): value for key, value in sorted(actual_factor_degrees.items())
@@ -1157,7 +1867,11 @@ output = {
             str(key): encode_polynomial(value)
             for key, value in sorted(squarefree_factors.items())
         },
-        "fibre_multiplicity_shape": "I6 + I4 + 3 I2 + 8 simple residual discriminant points",
+        "fibre_multiplicity_shape": (
+            f"I6 at {output_base_variable}=0 + I4 at {output_base_variable}=infinity + 3 I2 + 8 simple residual discriminant points"
+            if args.base_normalization != "pinned"
+            else "I6 + I4 + 3 I2 + 8 simple residual discriminant points"
+        ),
     },
     "reconstruction": reconstruction,
     "validation": {
@@ -1184,21 +1898,10 @@ output = {
         "sha256": sha256(Path(__file__).resolve()),
     },
     "claim_boundary": {
-        "proved": [
-            "unique modular interpolation of the five long coefficients at their certified small degree bounds through 19^digits",
-            "symbolic modular composition of c4, Delta, and the degree-(24,24) j-map in the pinned U gauge",
-            "three held-out certified p-adic sample replays",
-            "one structured projective LLL candidate using the p-adic residue and all six aligned auxiliary primes",
-            "the displayed characteristic-zero numerator cube and denominator squarefree identities",
-        ],
-        "not_proved": [
-            "replay at a new aligned prime not consumed by the CRT reconstruction",
-            "literal characteristic-zero substitution into the exact genus-one pencil or a reconstructed Jacobian",
-            "a characteristic-zero fibre theorem or transported component marking",
-            "an equation over QQ rather than the displayed quadratic coefficient field",
-        ],
+        "proved": proved_claims,
+        "not_proved": not_proved_claims,
     },
-    "reproduce": "sage -python elkies-k3/scripts/reconstruct_q80_third_q12_j_map_p19_adic.sage",
+    "reproduce": " ".join(reproduce_parts),
 }
 serialized = json.dumps(output, indent=2, sort_keys=True) + "\n"
 if args.check:
@@ -1209,6 +1912,8 @@ else:
     args.output.write_text(serialized)
 print(
     f"Q80THIRDQ12JRECONSTRUCT|digits={digits}|samples={len(training) + len(held_out)}|"
-    "primes=19,61,67,83,89,103,131|"
+    f"reconstruction_primes={','.join(str(value) for value in RECONSTRUCTION_TRANSPORTED_PRIMES)}|"
+    f"holdout_primes={','.join(str(value) for value in HELD_OUT_TRANSPORTED_PRIMES) or 'none'}|"
+    f"granularity={args.reconstruction_granularity}|"
     "status=PASS_CANDIDATE_EXACT_THIRD_Q12_J_MAP_RECONSTRUCTION_QQ"
 )

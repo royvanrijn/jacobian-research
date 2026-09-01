@@ -2827,6 +2827,35 @@ classification; the retained embedding cover is not deduplicated to full
 automorphism embedding-orbit or `J1` counts.  See
 [`elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md`](elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md).
 
+Build or byte-check the surface-first rank-seven auxiliary catalogue:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_leech_co0_backend.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_leech_co0_backend.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_rank7_auxiliary_catalogue.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_rank7_auxiliary_catalogue.sage --check
+```
+
+The first two commands pin the separate Leech ambient directly from the
+AtlasRep `2.Co1=Co0` action: the invariant form is one-dimensional and its
+primitive positive integral generator is the even unimodular rank-24 lattice
+of minimum four with 196,560 minimal vectors. No rank-seven Leech embedding
+orbit is enumerated yet. The catalogue imports exact primitive embeddings from the current
+`N(2A7+2D5)` mutation shell and the determinant-720 `N(24A1)` Golay design,
+deduplicates first by `(T,NS)` and only then by auxiliary/frame isometry, and
+retains legacy `NS....` identifiers as aliases. It has 49 exact surface
+classes and 510 MW15--17 frames. The 23 rooted backends and separate Leech
+backend are split into 96 determinant-band shards; all remain open because the
+two imported searches have bounded, narrower completeness statements. See
+[`elkies-k3/RANK7_AUXILIARY_CATALOGUE_2026-09-01.md`](elkies-k3/RANK7_AUXILIARY_CATALOGUE_2026-09-01.md).
+
 Build or byte-check the first determinant-varying Picard-19 lattice-foundry
 shell:
 
@@ -2845,8 +2874,137 @@ exact inside that shell.  The generator is not a complete determinant-5,000
 classification.  See
 [`elkies-k3/LATTICE_FOUNDRY_REPORT_2026-09-01.md`](elkies-k3/LATTICE_FOUNDRY_REPORT_2026-09-01.md).
 
-Replay or byte-check the exact `NS0024` rootful source and its certified
-degree-two route to a new rootless MW17 frame with
+The default low-MW source-discovery workflow is the direct prescribed-root
+Niemeier enumerator
+`elkies-k3/scripts/enumerate_lattice_foundry_prescribed_root_sources.sage`.
+It fixes each selected NS class's rank-seven auxiliary and searches its
+primitive Niemeier embeddings with the desired rank-15--17 complement roots
+built into the enumeration.  Every retained source is attached to all
+catalogued MW15--17 target frames in the same NS class.  Unlike the older
+cyclic-gluing Kneser scout, this workflow also covers the foundry classes with
+noncyclic discriminant group.
+
+The calculation is exact inside the root types, support counts, ambient
+classes, and auxiliary-embedding shell declared by the command.  It certifies
+the primitive auxiliary embedding, saturated complement, complete complement
+root system, and resulting geometric MW rank.  It does not by itself prove a
+rational marking, an equation over a number field, or a physical
+elliptic-neighbour route, and a miss is not a classification beyond that
+declared slice.  Exact repetitions with the same deterministic reduced Gram
+are merged; distinct reduced Grams are not claimed to be distinct integral-
+isometry or `J2` classes.
+
+Run or byte-check the narrow determinant-948 `NS0001` positive control over
+all rooted Niemeier ambients with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_lattice_foundry_prescribed_root_sources.sage \
+  --all-ambients \
+  --source-root-rank-min 15 --source-root-rank-max 15 \
+  --source-support-min 2 --source-support-max 2 \
+  --require-hit --require-h3-control \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-ns0001-all-ambients-v1.json
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_lattice_foundry_prescribed_root_sources.sage \
+  --all-ambients \
+  --source-root-rank-min 15 --source-root-rank-max 15 \
+  --source-support-min 2 --source-support-max 2 \
+  --require-hit --require-h3-control \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-ns0001-all-ambients-v1.json \
+  --check
+```
+
+Here `--require-h3-control` requires an exact `E7+E8/MW2` root profile and an
+integrally isometric binary Mordell--Weil height form.  It is deliberately not
+a full rank-17 frame-isometry assertion.
+
+Run or byte-check the declared production slice over every foundry NS class,
+restricted to two- or three-support all-`A` sources in `N(3E8)`, with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_lattice_foundry_prescribed_root_sources.sage \
+  --all-ns --ambient-label 3E8 \
+  --source-support-min 2 --source-support-max 3 --all-a-only \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-all-ns-3e8-all-a-v1.json
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_lattice_foundry_prescribed_root_sources.sage \
+  --all-ns --ambient-label 3E8 \
+  --source-support-min 2 --source-support-max 3 --all-a-only \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-all-ns-3e8-all-a-v1.json \
+  --check
+```
+
+This exact declared slice finds 97 reduced-Gram MW2 source representatives in
+23 of the 48 NS classes: 64 with root type `A2+A6+A7` and 33 with root type
+`A1+2A7`.  It finds no MW0 or MW1 source in this slice.  Distinct reduced
+Grams may still duplicate an integral-isometry or `J2` class, and the 25
+slice misses are not non-existence theorems.
+
+The full-support rank-16/17 (MW0--1 at Picard rank 19) census is split into
+four disjoint ambient shards so it can run in parallel:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_lattice_foundry_prescribed_root_sources.sage \
+  --all-ns --ambient-label 2A7_2D5 --ambient-label 2A9_D6 \
+  --ambient-label 2D12 --ambient-label 3D8 \
+  --source-root-rank-min 16 --source-root-rank-max 17 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-a-v1.json
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_lattice_foundry_prescribed_root_sources.sage \
+  --all-ns --ambient-label 3E8 --ambient-label 4D6 \
+  --ambient-label 4E6 --ambient-label A11_D7_E6 \
+  --source-root-rank-min 16 --source-root-rank-max 17 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-b-v1.json
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_lattice_foundry_prescribed_root_sources.sage \
+  --all-ns --ambient-label A15_D9 --ambient-label A17_E7 \
+  --ambient-label D10_2E7 \
+  --source-root-rank-min 16 --source-root-rank-max 17 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-c-v1.json
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_lattice_foundry_prescribed_root_sources.sage \
+  --all-ns --ambient-label D16_E8 --ambient-label D24 \
+  --source-root-rank-min 16 --source-root-rank-max 17 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-d-v1.json
+```
+
+Append `--check` to any shard command for an exact byte replay.  Audit the
+four shards and regenerate the compact aggregate accounting with
+
+```bash
+python3 elkies-k3/scripts/summarize_lattice_foundry_prescribed_root_shards.py \
+  --input artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-a-v1.json \
+  --input artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-b-v1.json \
+  --input artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-c-v1.json \
+  --input artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-d-v1.json \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-all-ambients-summary-v1.json
+```
+
+The summary distinguishes shard-local occurrences from exact repeated
+`(NS, reduced-Gram digest)` identities across ambients.  It does not identify
+unequal reduced Grams up to integral isometry or `J2`.
+
+The audited census has 2,134 reduced-Gram source representatives, all MW1,
+covering all 48 NS classes.  It finds no MW0 representative.  There are no
+repeated exact `(NS, reduced-Gram digest)` identities between shards.  Of the
+MW1 inventory, 245 representatives in 33 NS classes have at most two supports
+and only `A`-type components.  These are exact results inside the declared
+thirteen-ambient, sixteen-D5-anchor, sixth-norm-at-most-24 embedding cover;
+they are not pairwise integral-isometry counts or a global MW0 non-existence
+theorem.  The aggregate summary has SHA-256
+`c5e610ac5baf12e01f86d506a6b42b6593a48f8949311eee095dfc27b55f9ad6`.
+
+For bounded-search provenance, replay or byte-check the exact `NS0024`
+rootful source found by the older Kneser scout and its certified degree-two
+route to a new rootless MW17 frame with
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -2916,13 +3074,49 @@ rootless foundry targets, with
 
 The source ranking attaches every catalogued MW15--17 frame in the same
 Neron--Severi class and never infers a rational marking or route from the
-lattice. The current 20-candidate bounded ledger contains no MW0--2 source.
-The multisection replay is complete for degree-two low-height translation
-orbits; degree-three/four results are exact only for the declared 256 sampled
-cosets per frame. See
+lattice. It combines 75 individual source certificates with the 97 exact rows
+of the declared `3E8`/all-`A` prescribed-root slice; the latter supply 97 MW2
+rows but have no inferred minimum-pole, rational-marking, or route data. The
+multisection replay is complete for degree-two low-height translation orbits;
+degree-three/four results in that pilot artifact are exact only for the
+declared 256 sampled cosets per frame.
+
+Exhaust all `3^17` degree-three translation cosets on the current MW2
+source-ranked top five with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/complete_lattice_foundry_degree3_spectrum.py \
+  --frame-id NS0028-F005 --frame-id NS0011-F002 \
+  --frame-id NS0022-F011 --frame-id NS0005-F008 \
+  --frame-id NS0001-F001 \
+  --workers 8 --chunk-size 1000000 --float-type dd \
+  --audit-precision 256 --audit-stride 4096 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-degree3-complete-current-source-top5-v1.json
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/complete_lattice_foundry_degree3_spectrum.py \
+  --frame-id NS0028-F005 --frame-id NS0011-F002 \
+  --frame-id NS0022-F011 --frame-id NS0005-F008 \
+  --frame-id NS0001-F001 \
+  --workers 8 --chunk-size 1000000 --float-type dd \
+  --audit-precision 256 --audit-stride 4096 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-degree3-complete-current-source-top5-v1.json \
+  --check
+```
+
+An initial run may add
+`--reuse-checkpoint artifacts/generated-results/elkies-k3-lattice-foundry-degree3-complete-top5-v1.json.partial`
+to reuse the three already-complete frame blocks. The final artifact and its
+adjacent `.partial` checkpoint are independent of that acceleration: the
+check requires complete task coverage, exact histogram totals, pinned Gram
+hashes, and the deterministic cross-precision audit accounting. The stable
+whole-file SHA-256 of the current-top-five artifact is
+`8be0e881f5c170366dada6319aed9a09fed689eacc032fcaf5ee70878d735fd0`.
+See
 [`elkies-k3/LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md`](elkies-k3/LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md).
 
-The representative direct high-rank-frame source hunt is
+The representative historical random high-rank-frame source scout is
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -2937,7 +3131,8 @@ The representative direct high-rank-frame source hunt is
 
 It starts at MW15 and emits the exact best bounded source even though the
 MW0--2 target is missed; it finds `A1+2A3+A6/MW4`. This is a Kneser discovery
-walk, not a certified physical elliptic-neighbour route.
+walk, not a certified physical elliptic-neighbour route, and is retained for
+bounded provenance/replay rather than as the default foundry workflow.
 
 Classify all distinct biquadratic pair bases, build the complete exact
 5,566-row immediate-point arithmetic catalogue, replay the completed bounded

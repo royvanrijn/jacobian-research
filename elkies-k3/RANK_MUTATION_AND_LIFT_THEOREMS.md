@@ -810,11 +810,14 @@ components meeting once, so `D` would meet either component in `-1`, contrary
 to section nonnegativity.  An irreducible arithmetic-genus-zero curve on a
 smooth K3 is smooth and rational. QED.
 
-The complete degree-two and bounded sampled degree-three/four applications
-are recorded in
+The complete degree-two, complete selected-frame degree-three, and bounded
+sampled degree-four applications are recorded in
 [`LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md`](LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md).
-Coset abundance is only a discovery coordinate; the published R17 experience
-shows that it is not by itself a predictor of exceptional specialization rank.
+The degree-three certificate exhausts all `3^17` cosets on each selected
+rootless frame; it does not strengthen the geometric boundary in the
+proposition.  Coset abundance is only a discovery coordinate; the published
+R17 experience shows that it is not by itself a predictor of exceptional
+specialization rank.
 
 ## 8. What a bounded neighbour search really proves
 

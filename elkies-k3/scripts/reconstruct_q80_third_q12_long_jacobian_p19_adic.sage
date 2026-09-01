@@ -7,7 +7,7 @@ import json
 import math
 from pathlib import Path
 
-from sage.all import Matrix, QQ, ZZ
+from sage.all import CRT_list, Matrix, QQ, ZZ
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -39,6 +39,13 @@ parser.add_argument(
     default=RESULTS / "q80-third-q12-long-jacobian-p19-adic-reconstructed-qq.json",
 )
 parser.add_argument("--check", action="store_true")
+parser.add_argument(
+    "--holdout-prime",
+    action="append",
+    default=[],
+    type=int,
+    help="transported prime excluded from CRT/LLL and reserved for literal replay",
+)
 args = parser.parse_args()
 args.manifest = args.manifest.resolve()
 args.transport = args.transport.resolve()
@@ -66,6 +73,22 @@ prime = 19
 digits = int(manifest["specialization"]["digits"])
 modulus = prime**digits
 omega_square = int(source["quadratic_field"]["omega_square_modulus"]) % modulus
+ALL_TRANSPORTED_PRIMES = sorted(int(value) for value in transport["transported_models"])
+HELD_OUT_TRANSPORTED_PRIMES = sorted(set(args.holdout_prime))
+unknown_holdouts = sorted(set(HELD_OUT_TRANSPORTED_PRIMES) - set(ALL_TRANSPORTED_PRIMES))
+if unknown_holdouts:
+    raise ValueError(f"holdout primes are absent from the transported models: {unknown_holdouts}")
+if prime in HELD_OUT_TRANSPORTED_PRIMES:
+    raise ValueError("p=19 supplies the p-adic residue and cannot be a holdout")
+RECONSTRUCTION_TRANSPORTED_PRIMES = [
+    value for value in ALL_TRANSPORTED_PRIMES if value not in HELD_OUT_TRANSPORTED_PRIMES
+]
+CRT_AUXILIARY_PRIMES = [
+    value for value in RECONSTRUCTION_TRANSPORTED_PRIMES if value != prime
+]
+reconstruction_modulus = ZZ(modulus)
+for local_prime in CRT_AUXILIARY_PRIMES:
+    reconstruction_modulus *= local_prime
 ZERO = (0, 0)
 ONE = (1, 0)
 
@@ -223,9 +246,12 @@ def rational_mod(value, local_prime):
     return numerator * pow(denominator, -1, local_prime) % local_prime
 
 
-def validate_candidate_at_finite_primes(candidate, name):
+def validate_candidate_at_finite_primes(candidate, name, selected_primes=None):
+    selected_primes = set(selected_primes or ALL_TRANSPORTED_PRIMES)
     for local_prime_text, model in transport["transported_models"].items():
         local_prime = int(local_prime_text)
+        if local_prime not in selected_primes:
+            continue
         expected = model["weierstrass"][name]
         for exact_key, finite_key in (
             ("numerator", "numerator_coefficients_low_to_high_1_omega"),
@@ -297,11 +323,13 @@ def reconstruct_projectively(record, name):
 
 
 def reconstruct_pair_block(modular_pairs, validator, label):
-    residues = [ZZ(value) % modulus for pair in modular_pairs for value in pair]
+    residues = [
+        ZZ(value) % reconstruction_modulus for pair in modular_pairs for value in pair
+    ]
     dimension = len(residues) + 1
     lattice = Matrix(ZZ, dimension, dimension)
     for index in range(dimension - 1):
-        lattice[index, index] = modulus
+        lattice[index, index] = reconstruction_modulus
     for index, value in enumerate(residues):
         lattice[dimension - 1, index] = value
     lattice[dimension - 1, dimension - 1] = 1
@@ -327,11 +355,11 @@ def reconstruct_pair_block(modular_pairs, validator, label):
                 "lattice_dimension": dimension,
                 "maximum_primitive_coordinate_bits": maximum_bits,
                 "random_lattice_boundary_bits": int(
-                    math.ceil(ZZ(modulus).nbits() * (dimension - 1) / dimension)
+                    math.ceil(reconstruction_modulus.nbits() * (dimension - 1) / dimension)
                 ),
                 "short_rows_tested": len(diagnostics),
                 "validated_primes": sorted(
-                    int(value) for value in transport["transported_models"]
+                    int(value) for value in RECONSTRUCTION_TRANSPORTED_PRIMES
                 ),
             }
     raise ArithmeticError(
@@ -398,10 +426,24 @@ for name, exponent in denominator_exponents.items():
         raise ArithmeticError(f"{name}: denominator is not the expected common H power")
 
 
-def validate_H(lower_coefficients):
-    candidate = lower_coefficients + [[QQ(1), QQ(0)]]
+def crt_extend_pair(padic_pair, finite_pair_getter):
+    moduli = [ZZ(modulus)] + [ZZ(value) for value in CRT_AUXILIARY_PRIMES]
+    result = []
+    for omega_index, padic_residue in enumerate(padic_pair):
+        residues = [ZZ(padic_residue)] + [
+            ZZ(finite_pair_getter(local_prime)[omega_index])
+            for local_prime in CRT_AUXILIARY_PRIMES
+        ]
+        result.append(int(CRT_list(residues, moduli)))
+    return result
+
+
+def validate_H(candidate, selected_primes=RECONSTRUCTION_TRANSPORTED_PRIMES):
+    selected_primes = set(selected_primes)
     for prime_text, model in transport["transported_models"].items():
         local_prime = int(prime_text)
+        if local_prime not in selected_primes:
+            continue
         reduction = [
             [rational_mod(value, local_prime) for value in pair] for pair in candidate
         ]
@@ -412,26 +454,43 @@ def validate_H(lower_coefficients):
     return True
 
 
-exact_H_lower = []
-H_reconstruction = {"method": "quadratic coefficient pairs reconstructed separately", "coefficients": []}
-for coefficient_index, modular_pair in enumerate(modular_H[:-1]):
-    def validate_H_coefficient(candidate, index=coefficient_index):
-        for prime_text, model in transport["transported_models"].items():
-            local_prime = int(prime_text)
-            reduction = [rational_mod(value, local_prime) for value in candidate[0]]
-            expected = model["weierstrass"]["a1"][
-                "denominator_coefficients_low_to_high_1_omega"
-            ][index]
-            if reduction != expected:
-                return False
-        return True
+inverse_two = pow(2, -1, modulus)
+modular_H_root_constant = list(mul(tuple(modular_H[1]), (inverse_two, 0)))
+modular_H_root = [modular_H_root_constant, [1, 0]]
+if modular_pair_polynomial_power(modular_H_root, 2) != modular_H:
+    raise ArithmeticError("the p-adic common denominator H is not a monic linear square")
 
-    reconstructed, diagnostic = reconstruct_pair_block(
-        [modular_pair], validate_H_coefficient, f"H coefficient {coefficient_index}"
-    )
-    exact_H_lower.append(reconstructed[0])
-    H_reconstruction["coefficients"].append(diagnostic)
-exact_H = exact_H_lower + [[QQ(1), QQ(0)]]
+
+def finite_H_root_constant(local_prime):
+    h_linear = transport["transported_models"][str(local_prime)]["weierstrass"]["a1"][
+        "denominator_coefficients_low_to_high_1_omega"
+    ][1]
+    inverse_local_two = pow(2, -1, local_prime)
+    return [value * inverse_local_two % local_prime for value in h_linear]
+
+
+def validate_H_root(candidate):
+    for local_prime in RECONSTRUCTION_TRANSPORTED_PRIMES:
+        try:
+            reduction = [rational_mod(value, local_prime) for value in candidate[0]]
+        except ZeroDivisionError:
+            return False
+        if reduction != finite_H_root_constant(local_prime):
+            return False
+    return True
+
+
+crt_H_root_constant = crt_extend_pair(modular_H_root_constant, finite_H_root_constant)
+reconstructed_H_root, H_root_diagnostic = reconstruct_pair_block(
+    [crt_H_root_constant], validate_H_root, "linear square root of common denominator H"
+)
+exact_H_root = [reconstructed_H_root[0], [QQ(1), QQ(0)]]
+exact_H = None
+H_reconstruction = {
+    "method": "reconstruct monic linear factor and square exactly",
+    "identity": "H=(U+r)^2",
+    "linear_factor": H_root_diagnostic,
+}
 
 
 def rational_record(record):
@@ -476,12 +535,23 @@ def exact_pair_polynomial_power(value, exponent):
     return result
 
 
+exact_H = exact_pair_polynomial_power(exact_H_root, 2)
+if not validate_H(exact_H, RECONSTRUCTION_TRANSPORTED_PRIMES):
+    raise ArithmeticError("exact squared common denominator H failed reconstruction-prime replay")
+if HELD_OUT_TRANSPORTED_PRIMES and not validate_H(
+    exact_H, HELD_OUT_TRANSPORTED_PRIMES
+):
+    raise ArithmeticError("exact squared common denominator H failed held-out-prime replay")
+
+
 exact = {}
 reconstruction = {"common_denominator_H": H_reconstruction}
 for name in names:
     def validate_numerator(candidate, coefficient_name=name):
         for prime_text, model in transport["transported_models"].items():
             local_prime = int(prime_text)
+            if local_prime not in RECONSTRUCTION_TRANSPORTED_PRIMES:
+                continue
             reduction = [
                 [rational_mod(value, local_prime) for value in pair]
                 for pair in candidate
@@ -503,6 +573,8 @@ for name in names:
         ):
             for prime_text, model in transport["transported_models"].items():
                 local_prime = int(prime_text)
+                if local_prime not in RECONSTRUCTION_TRANSPORTED_PRIMES:
+                    continue
                 reduction = [rational_mod(value, local_prime) for value in candidate[0]]
                 expected = model["weierstrass"][coefficient_name][
                     "numerator_coefficients_low_to_high_1_omega"
@@ -511,8 +583,16 @@ for name in names:
                     return False
             return True
 
+        crt_pair = crt_extend_pair(
+            modular_pair,
+            lambda local_prime, coefficient_name=name, index=coefficient_index: transport[
+                "transported_models"
+            ][str(local_prime)]["weierstrass"][coefficient_name][
+                "numerator_coefficients_low_to_high_1_omega"
+            ][index],
+        )
         reconstructed, diagnostic = reconstruct_pair_block(
-            [modular_pair],
+            [crt_pair],
             validate_numerator_coefficient,
             f"{name} numerator coefficient {coefficient_index}",
         )
@@ -527,8 +607,14 @@ for name in names:
             exact_H, denominator_exponents[name]
         ),
     }
-    if not validate_candidate_at_finite_primes(exact[name], name):
+    if not validate_candidate_at_finite_primes(
+        exact[name], name, RECONSTRUCTION_TRANSPORTED_PRIMES
+    ):
         raise ArithmeticError(f"{name}: structured candidate full record failed")
+    if HELD_OUT_TRANSPORTED_PRIMES and not validate_candidate_at_finite_primes(
+        exact[name], name, HELD_OUT_TRANSPORTED_PRIMES
+    ):
+        raise ArithmeticError(f"{name}: structured candidate failed held-out-prime replay")
     reconstruction[name] = {
         "denominator_power_of_H": denominator_exponents[name],
         "numerator": numerator_reconstruction,

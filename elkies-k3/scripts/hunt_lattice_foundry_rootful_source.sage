@@ -336,6 +336,14 @@ parser = argparse.ArgumentParser(description=DESCRIPTION)
 parser.add_argument("--database", type=Path, default=DATABASE)
 parser.add_argument("--ns-id", default="NS0024")
 parser.add_argument("--target-frame-id", default="NS0024-F005")
+parser.add_argument(
+    "--start-source-artifact",
+    type=Path,
+    help=(
+        "restart the Kneser beam from the exact source Gram in an earlier "
+        "same-NS rootful-source certificate instead of from the catalogue target"
+    ),
+)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 parser.add_argument(
     "--root-adapted-frame-output", type=Path, default=DEFAULT_FRAME_OUTPUT
@@ -380,6 +388,42 @@ target_root_rank, target_root_count = root_rank_and_count(target)
 assert target_root_rank == int(target_row["root_rank"])
 target_mw_rank = 17 - target_root_rank
 
+start = target
+start_record = {
+    "kind": "CATALOGUE_TARGET_FRAME",
+    "frame_id": arguments.target_frame_id,
+    "root_type": target_row["root_type"],
+    "root_rank": target_root_rank,
+    "mw_rank_for_rho_19": target_mw_rank,
+    "gram_sha256": gram_digest(target),
+}
+start_source_path = None
+if arguments.start_source_artifact is not None:
+    start_source_path = arguments.start_source_artifact.resolve()
+    start_payload = json.loads(start_source_path.read_text())
+    if start_payload.get("schema") != "elkies-k3.lattice-foundry-rootful-source.v1":
+        raise ValueError("start source is not a rootful-source certificate")
+    if start_payload["target"]["ns_id"] != arguments.ns_id:
+        raise ValueError("start source belongs to a different NS class")
+    start = matrix(ZZ, start_payload["source"]["gram"])
+    if start.det() != determinant or Genus(start) != Genus(target):
+        raise ValueError("start source is not in the catalogue target genus")
+    start_root_rank, start_root_count = root_rank_and_count(start)
+    if start_root_rank != int(start_payload["source"]["root_rank"]):
+        raise ValueError("start source root rank does not replay")
+    start_record = {
+        "kind": "CERTIFIED_ROOTFUL_SOURCE_RESTART",
+        "artifact": str(start_source_path.relative_to(ROOT)),
+        "artifact_sha256": hashlib.sha256(start_source_path.read_bytes()).hexdigest(),
+        "root_type": start_payload["source"]["root_type"],
+        "root_rank": start_root_rank,
+        "mw_rank_for_rho_19": 17 - start_root_rank,
+        "gram_sha256": gram_digest(start),
+    }
+else:
+    start_root_rank = target_root_rank
+    start_root_count = target_root_count
+
 random.seed(arguments.seed)
 set_random_seed(arguments.seed)
 requested_primes = [ZZ(value) for value in arguments.primes.split(",")]
@@ -387,24 +431,25 @@ primes = [prime for prime in requested_primes if determinant % prime]
 if not primes:
     raise ValueError("every requested p-neighbour prime divides the determinant")
 
-start_form = form_from_gram(target)
+start_form = form_from_gram(start)
 frontier = [
     {
-        "root_rank": target_root_rank,
-        "root_count": target_root_count,
+        "root_rank": start_root_rank,
+        "root_count": start_root_count,
         "form": start_form,
         "path": [],
         "path_digests": [],
     }
 ]
-seen = {reduced_key(target)}
+seen = {reduced_key(start)}
 best = frontier[0]
 retained_candidates = list(frontier)
 generation_accounting = []
 
 print(
     f"FOUNDRYSOURCE|stage=start|ns={arguments.ns_id}|target={arguments.target_frame_id}"
-    f"|det={determinant}|target_root_rank={arguments.target_root_rank}",
+    f"|det={determinant}|start_root_rank={start_root_rank}"
+    f"|target_root_rank={arguments.target_root_rank}",
     flush=True,
 )
 
@@ -536,7 +581,7 @@ assert source_minimized["mw_height"] is not None
 source_mw_rank = 17 - source_root_rank
 
 replayed_form, replayed_digests = replay_path(
-    target, best["path"], best["path_digests"], determinant
+    start, best["path"], best["path_digests"], determinant
 )
 assert replayed_form.Hessian_matrix() == source_raw
 
@@ -653,6 +698,12 @@ payload = {
         "elkies-k3/scripts/hunt_lattice_foundry_rootful_source.sage"
     ),
 }
+
+if start_source_path is not None:
+    payload["search"]["start"] = start_record
+    payload["inputs"][str(start_source_path.relative_to(ROOT))] = hashlib.sha256(
+        start_source_path.read_bytes()
+    ).hexdigest()
 
 serialized = json.dumps(payload, indent=2, sort_keys=True) + "\n"
 frame_text = "\n".join(

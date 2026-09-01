@@ -172,7 +172,9 @@ output = {
         + (
             ["all 25 numerator and 25 denominator coefficient pairs match literally after reduction"]
             if all_match
-            else ["the candidate and blind p=163 j-maps differ literally in the pinned exact gauge"]
+            else [
+                f"the candidate and blind p={prime} j-maps differ literally in the pinned exact gauge"
+            ]
         ),
         "not_proved": [
             "literal characteristic-zero substitution into the exact pencil",
@@ -199,7 +201,7 @@ output = {
 serialized = json.dumps(output, indent=2, sort_keys=True) + "\n"
 if args.check:
     if not args.output.exists() or args.output.read_text() != serialized:
-        raise SystemExit(f"p=163 held-out replay artifact is stale: {args.output}")
+        raise SystemExit(f"p={prime} held-out replay artifact is stale: {args.output}")
 else:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(serialized)

@@ -621,7 +621,7 @@ fails literally in the pinned exact gauge: all 25 numerator coefficient
 pairs and 24 of 25 denominator coefficient pairs differ.  The rejection
 certificate is
 `q80-third-q12-j-map-p163-heldout-replay.json`, SHA-256
-`39c4164125e7238a57803e91d24d34fade0ad465417d5084c126ea9608a4a507`.
+`1da5975fc1f546b9e213fe2a44272e115c9442e78ba8030bf05336b866fe4e60`.
 Thus `q80-third-q12-j-map-p19-adic-reconstructed-qq.json` is rejected; its
 one-bit-below-random LLL vectors were spurious, and it must not be promoted by
 characteristic-zero substitution.
@@ -631,3 +631,69 @@ rank-29 and ICARM 398--400 recognition gate is defined for the final rootless
 Q80 endpoint.  Comparing those curves with this intermediate map would test
 the wrong fibration and is not a substitute for constructing the endpoint
 `j`-map.
+
+### Ninth/tenth-prime and intrinsic-basis audit
+
+The adversarial sequence was continued rather than treating `p=163` as an
+isolated accident.  Incorporating `p=163` produces the eight-prime candidate
+
+```text
+q80-third-q12-j-map-p19-adic-reconstructed-eight-prime-qq.json
+sha256 e3625bac3e7c77b42e30eb432f5d6dd3094d6024f069d79fd240ed024e550e78
+```
+
+and the independently produced `p=191` model rejects it with the same literal
+profile: all 25 numerator pairs and 24 of 25 denominator pairs disagree.  The
+replay certificate has SHA-256
+`8f3afbe80907698bc21c7255cac93021bc452c0911d1b17b840361c7145bb651`.
+After incorporating `p=191`, the nine-prime candidate
+
+```text
+q80-third-q12-j-map-p19-adic-reconstructed-nine-prime-qq.json
+sha256 dcbc03ee6e032fecbb0d4ede1af2e74939e754c7f4ee0771c5ebe7e81140d949
+```
+
+is independently rejected at `p=199`, again with all 25 numerator pairs and
+24 of 25 denominator pairs unequal.  That replay has SHA-256
+`198518bb83fa9f8667c70ab919cfdb19e25c0ec1f3eba46204c6cfdf4f6ace01`.
+The ten-prime candidate including `p=199` remains only an unvalidated lattice
+output.  Its degree-eight cube block is two bits below its random boundary and
+its denominator-factor block is one bit below; there is no fresh-prime replay
+for it.
+
+The reconstruction worker now separates reconstruction primes from repeatable
+`--holdout-prime` gates and supports four structured tests:
+
+1. separate projective blocks for the rational and `omega` polynomial
+   components;
+2. coefficient-pair and scalar reconstruction;
+3. exact interpolation after reconstructing the intrinsic degree-eight
+   `c4` factor at eight residue-distinct `19^1024` sample values;
+4. the base normalization `z=L6(U)/L4(U)` and its further scale fixing by the
+   cubic `I2` trace coefficient.
+
+Every alternative is rejected by the untouched `p=199` cube factor.  Thus the
+failure is not just the common denominator of the original dimension-17
+vector or the pinned base coordinate.  Multiple evaluation points at one
+fixed modulus change the lattice basis and expose nonlinear structure, but
+once they determine the same coefficient vector modulo `19^1024` they do not
+multiply the available p-adic precision.
+
+The long-model audit exposes one additional exact modular factorization:
+through `19^1024`, and at all ten aligned finite primes,
+
+```text
+H(U) = (U+r)^2.
+```
+
+Reconstructing `r` rather than the expanded constant `r^2` is the correct
+intrinsic long-model gate, but the nine-prime reconstruction is still rejected
+at `p=199`.  This is a negative computation, not a characteristic-zero square
+theorem.
+
+The next precision run is therefore justified only in the restructured form:
+lift the exact pencil and conductor factors to `19^2048`, compile several
+residue-distinct samples, reconstruct the cube/fibre factors and the linear
+factor of `H`, and retain `p=199` or a later independently produced prime as a
+literal holdout.  The `19^2051` exact-pencil compilation is available locally;
+the checkpointed `19^2048` factor/root lift is the active computation.

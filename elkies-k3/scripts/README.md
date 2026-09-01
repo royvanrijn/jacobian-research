@@ -454,6 +454,31 @@ the p19-adic/auxiliary-prime candidate.  The final rootless Q80 endpoint
 `j`-map remains a separate open construction prerequisite for the E29 and
 ICARM 398--400 historical-recognition test.
 
+The continuation through `p=191` and `p=199`, together with the intrinsic
+evaluation, Galois-component, base-normalization, and factored-`H` probes, is
+recorded canonically in
+[`../Q80_THIRD_Q12_COMMON_PRODUCER_2026-09-01.md`](../Q80_THIRD_Q12_COMMON_PRODUCER_2026-09-01.md).
+Replay the two later blind comparisons with:
+
+```bash
+python3 elkies-k3/scripts/certify_q80_third_q12_j_map_p163_heldout.py \
+  --prime 191 \
+  --candidate artifacts/generated-results/q80-third-q12-j-map-p19-adic-reconstructed-eight-prime-qq.json \
+  --output artifacts/generated-results/q80-third-q12-j-map-p191-heldout-replay.json
+python3 elkies-k3/scripts/certify_q80_third_q12_j_map_p163_heldout.py \
+  --prime 199 \
+  --candidate artifacts/generated-results/q80-third-q12-j-map-p19-adic-reconstructed-nine-prime-qq.json \
+  --output artifacts/generated-results/q80-third-q12-j-map-p199-heldout-replay.json
+```
+
+Both commands return `FAIL`, with 25 numerator-pair and 24 denominator-pair
+mismatches.  The generic reconstructor accepts repeatable `--holdout-prime`,
+`--reconstruction-granularity`, `--intrinsic-basis`, and
+`--base-normalization` options; a held-out mismatch raises before an artifact
+is written.  The long-model worker now CRT-combines the selected reconstruction
+primes and reconstructs the monic linear factor in `H=(U+r)^2`, but its
+nine-prime value of `r` is also rejected at `p=199`.
+
 The long-equation worker remains useful after the invariant gate.  It too
 produces only a candidate until literal characteristic-zero replay in the
 63-term pencil.  Coefficientwise rational reconstruction remains
@@ -558,6 +583,20 @@ The current proof boundary and replay commands are in
 
 ### Picard-19 lattice foundry
 
+- `build_rank7_auxiliary_catalogue.sage` is the surface-first merge layer for
+  the determinant-banded factory. It imports exact backend records, groups
+  first by `(T,NS)`, then by partner auxiliary and frame isometry, retains all
+  primitive ambient embeddings, and emits four determinant bands across 23
+  rooted backends plus a separate Leech/`Co0` backend. Its first artifact has
+  49 surface classes and 510 MW15--17 frame classes. All 96 backend-band
+  shards remain explicitly open: this script is not itself an embedding
+  enumerator and does not promote bounded foundry inputs to completeness.
+- `build_leech_co0_backend.sage` derives the invariant integral Gram matrix of
+  the AtlasRep 24-dimensional `2.Co1=Co0` representation. It certifies an even
+  unimodular rank-24 lattice of minimum four with 196,560 minimal vectors,
+  pins the two exact `Co0` generators, and marks rank-seven embedding-orbit
+  enumeration open. This is the separate Leech ambient backend, not a Leech
+  determinant-band census.
 - `build_lattice_foundry.sage` consumes the complete H3 `J2` controls and the
   hash-pinned Niemeier catalogue, then runs a JSON-declared auxiliary mutation
   shell. It saturates every rank-seven auxiliary, retains full ambient
@@ -570,11 +609,49 @@ The current proof boundary and replay commands are in
   determinant-5000 auxiliary classification. Its separate locked regression
   still replays the complete H3 result: published R17 and alternate Q80, with
   no third rootless `J2` frame.
-- `hunt_lattice_foundry_rootful_source.sage` performs a deterministic exact
-  positive-frame neighbour hunt. It accepts any exact foundry frame, including
-  MW15/MW16 starts, and `--allow-below-target` records the best exact bounded
-  source when the requested root rank is missed. The original exact promoted
-  `NS0024` sources are
+- `enumerate_lattice_foundry_prescribed_root_sources.sage` is the default
+  source-discovery workflow. For each selected foundry NS class it fixes the
+  stored rank-seven auxiliary, enumerates prescribed rank-15--17 root faces in
+  the rooted Niemeier lattices, solves the remaining auxiliary embedding
+  conditions exactly, and accepts a source only after primitive-embedding,
+  saturated-complement, full-root-system, and genus gates. Exact repetitions
+  with the same deterministic reduced Gram are merged, but distinct reduced
+  Grams may still represent the same integral-isometry or `J2` class.
+  Each source is attached to every catalogued MW15--17 target frame in the
+  same NS class; choosing one target frame is not part of the source search.
+  Because this construction works with the full auxiliary embedding rather
+  than the cyclic discriminant gluing used by the older hunter, it also covers
+  the foundry classes with noncyclic discriminant group.
+- A prescribed-root run is exact only for its declared root-type, support, and
+  Niemeier embedding shell. A retained complement certifies a complex
+  lattice-level fibration and its exact root/MW rank; it does not construct a
+  rational marking, a characteristic-zero equation, or a physical
+  elliptic-neighbour corridor. A miss is not a classification outside the
+  declared slice.
+- The first complete production slice uses `N(3E8)`, all 48 foundry NS
+  classes, and all-`A` root systems of rank 15--17 with two or three supports.
+  It finds 97 reduced-Gram MW2 representatives in 23 NS classes: 64 of type
+  `A2+A6+A7` and 33 of type `A1+2A7`. The all-ambient NS0001 control also
+  recovers `E7+E8/MW2` and the pinned H3 binary height form. These are exact
+  slice results, not rational source models or `J2`-deduplicated counts.
+- `summarize_lattice_foundry_prescribed_root_shards.py` independently audits
+  disjoint prescribed-root shards, checks their input hashes and declared
+  MW/root-rank window, and records both shard-local source occurrences and
+  exact repeated `(NS, reduced-Gram digest)` identities. It deliberately does
+  not identify unequal reduced Grams up to lattice isometry or `J2`.
+- The full-support rank-16/17 census covers all 48 foundry NS classes, all 13
+  D5-admissible rooted Niemeier ambients, and all 16 stored D5 anchor orbits.
+  It records 2,134 reduced-Gram representatives, all MW1, with every NS class
+  covered and no MW0 row. There are no repeated exact `(NS, Gram digest)`
+  identities across shards. The MW0 miss is exact only inside this declared
+  embedding cover and is not a global non-existence theorem.
+- `hunt_lattice_foundry_rootful_source.sage` and
+  `run_lattice_foundry_mw3_broad_scout.py` are retained for bounded Kneser
+  discovery provenance and byte-for-byte replay of their existing artifacts,
+  not as the default source-search strategy. The hunter accepts any exact
+  foundry frame, including MW15/MW16 starts, and `--allow-below-target`
+  records the best exact bounded source when the requested root rank is
+  missed. The original exact promoted `NS0024` sources are
   `5A1+A2+A5/MW5` in `N(A11+D7+E6)` and the more equation-friendly
   `A3+A4+A6/MW4` in `N(A15+D9)`; both are saturated complements of the same
   primitive rank-seven auxiliary.
@@ -582,13 +659,25 @@ The current proof boundary and replay commands are in
   the MW0--2-first equation objective, attaches all catalogued MW15--17 target
   frames, and leaves rational marking, Galois orbit, parametrization, and
   uncertified route costs explicitly unknown. Audited low-degree
-  multisection richness is retained only as the final heuristic tie-break.
+  multisection richness is retained only as the final heuristic tie-break. It
+  consumes both individual rootful-source certificates and the rows of the
+  prescribed-root inventory, without widening the latter's declared finite
+  search scope.
 - `sample_lattice_foundry_multisection_spectrum.sage` computes complete
   degree-two low-height translation-coset spectra on selected rootless foundry
   frames and deterministic exact-CVP samples in degrees three and four. It
   replays the published R17 count of 39,120 rational bisection orbits; sampled
   higher-degree coordinates are discovery heuristics, not curve censuses or
   rank predictions.
+- `complete_lattice_foundry_degree3_spectrum.py` exhausts all `3^17`
+  translation cosets for each selected rootless frame, using inversion to
+  halve the CVP workload, exact integral norm recomputation for every returned
+  candidate, deterministic 256-bit MPFR cross-precision audits, and resumable
+  chunk checkpoints. The primary pinned batch is the current top five from the
+  declared MW2 source inventory; a second artifact retains the five
+  pre-prescribed-root route-aware leaders plus R17. Both lattice censuses are
+  complete, but effectivity, nefness, irreducibility, arithmetic descent, and
+  specialization rank gain remain open.
 - `certify_lattice_foundry_route.sage` consumes an ordered route manifest,
   replays every primitive isotropic split, checks component/all-section and
   Proposition-C2 finite horizontal walls, composes determinant-one NS
