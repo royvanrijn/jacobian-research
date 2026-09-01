@@ -1,6 +1,7 @@
 # The q12/orbit5867 genus-one point factory
 
 <!-- status-consumer: EC-K3-H3-Q12O5867-POINT-FACTORY 9399c93ee42ee2a4 -->
+<!-- status-consumer: EC-K3-H3-Q12O5867-TWO-PRIMARY-BOUNDARY 783482d8f700105d -->
 
 ## Outcome
 
@@ -19,12 +20,14 @@ isomorphism. Both directions are literal rational formulas. All 42 points in
 the five public complement bases pass exact parent equation, child equation,
 and forward/inverse round-trip checks.
 
-This closes the birational engineering gate. It does not yet close the
-specialized-MW13 coordinate gate: the repository pins the parent MW13 lattice
-and many exact parent sections, but does not contain one equation-level
-saturated thirteen-section basis in the P1229-pointed coordinates. The
-artifact therefore records exact parent points and 128-bit canonical heights,
-but does not invent MW13 coefficient vectors.
+This closes the birational engineering gate.  The bounded specialized-MW13
+coordinate route has now also reached its declared stopping boundary.  Three
+exact targeted halvings kill the abstract index-eight quotient, but the
+equation-level characteristic-zero sections certified within the boundary
+still span index two.  Consequently the artifact continues to record exact
+parent points and 128-bit canonical heights without inventing MW13 coefficient
+vectors, and q12/orbit5867 is closed as the proposed rank-32 point-production
+route.  The exact birational map remains a theorem.
 
 ## Exact formulas
 
@@ -171,6 +174,99 @@ Consequently no MW13 words are assigned to the 42 controls, the ten invisible
 rank-28 directions remain inconclusive, and parent-point enumeration remains
 disallowed.  This rejects the proposed recovery workflow; it does not prove
 that no saturated equation-level MW13 basis exists by a widened shell.
+
+## Exhaustive two-primary boundary
+
+The bounded follow-up enumerates every one of the 16 equation incidence modes
+at the four `I2` fibres.  The complete signed polynomial shells have 890, 926,
+and 938 sections at `p=83,89,137`; every profile is nonempty at every prime.
+The profile histograms are retained machine-readably.  Equation-mode bits are
+not used as a global linear relabeling of the marked component pairings: exact
+Q4 and recovered-half controls show that such a relabeling is invalid.  Full
+NS names are instead certified by exact smooth section intersections against
+pinned named anchors, with the reductions at all three primes retained as
+independent fingerprints.
+
+The strict unique part of the historical `p=89` shell has row HNF
+
+```text
+e0
+e1+e10+e11+e12
+e2+e11+e12
+e3
+e4+e10+e11
+e5+e11+e12
+e6+e10+e12
+e7+e11+e12
+e8+e10+e11+e12
+e9+e12
+2e10
+2e11
+2e12
+```
+
+and Smith factors `1^10,2,2,2`.  Thus the quotient is canonically
+`(Z/2Z)^3`.  Minimum-`L1` independent doubled targets can be represented by
+physical classes 146, 30, and 22, with quotient keys `001`, `010`, and `101`
+and current-section words
+
+```text
+2*146 = 144 + 170 - 873
+2*30  = 4 + 14 + 145
+2*22  = 43 - 500 + 726.
+```
+
+For each word, the duplication quartic over `QQ(u)` factors as `1+3`.  Its
+linear factor gives a literal polynomial section.  Exact curve substitution,
+doubling, full-NS intersection naming, Shioda height, and three-prime profile
+fingerprints give
+
+| class | quotient key | equation profile | height |
+| ---: | :---: | :---: | ---: |
+| 146 | `001` | `0101` | `3` |
+| 30 | `010` | `1101` | `5/2` |
+| 22 | `101` | `1110` | `5/2` |
+
+Adding these three abstract MW vectors reduces the Smith index from eight to
+one.  This is not yet an equation-level saturated basis: the 24 exact sections
+available after the declared lifts have rank 13, Smith factors
+`1^12,2`, and height determinant `237`, whereas the saturated determinant is
+`237/4`.  The remaining exact-pool coset is represented in the marked shell by
+classes `21,48,216,516,543,701`.  Four corresponding regular `p=89` branches
+do not rationally reconstruct (`216,701,543,48`); the two reconstructed
+branches acquire the exact intersection names `21 -> 26` and `516 -> 521`.
+No fourth halving or wider shell is permitted by the stopping rule.
+
+Therefore no thirteen-section saturated equation basis and no words for the
+42 public controls are promoted.  In particular the ten atlas-invisible
+rank-28 directions cannot be tested for short MW13 words.  They remain large
+and unstructured under the exact invariants already available, so no bounded
+parent-MW enumeration is authorized.  This closes q12/orbit5867 as the
+rank-32 point-production route while retaining the arbitrary-point birational
+theorem.
+
+Replay the exact boundary with:
+
+```bash
+for p in 83 89 137; do
+  ~/.local/share/jacobian-sage-10.9/bin/python \
+    elkies-k3/scripts/construct_h92_q12o5867_p0_shell_modp.sage \
+    --prime "$p" --all-component-profiles --include-all-records \
+    --output "artifacts/local/elkies-k3/q12o5867-p0-shell-all-profiles-mod${p}.json"
+done
+
+~/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/identify_h92_q12o5867_two_primary_cosets_mod89.sage
+~/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/attempt_h92_q12o5867_three_target_halvings_qq.sage
+~/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/audit_h92_q12o5867_target_support_cross_prime.sage
+~/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/verify_h92_q12o5867_three_halvings_and_basis_qq.sage
+```
+
+The final certificate is
+[`../artifacts/generated-results/elkies-k3-q12o5867-two-primary-boundary.json`](../artifacts/generated-results/elkies-k3-q12o5867-two-primary-boundary.json).
 
 ## Replay
 

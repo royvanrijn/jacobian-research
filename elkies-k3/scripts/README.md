@@ -20,6 +20,7 @@ rather than promoted file-by-file.
 <!-- status-consumer: EC-K3-ELKIES-2026-R19-PAIRED f1e135d2ba803e80 -->
 <!-- status-consumer: EC-K3-BISECT-BIQUADRATIC-R19 707bffd8b85f8f3e -->
 <!-- status-consumer: EC-K3-H3-Q12O5867-POINT-FACTORY 9399c93ee42ee2a4 -->
+<!-- status-consumer: EC-K3-H3-Q12O5867-TWO-PRIMARY-BOUNDARY 783482d8f700105d -->
 
 ## Local Sage 10.9 installation
 
@@ -155,14 +156,125 @@ replay with:
   --output artifacts/generated-results/q80-fixed-u-minus2-p19-height-shell-with-po1.json
 ```
 
-The current direct `P.O=2` target exporter has a 24-variable, 25-equation
-sparse auxiliary chart (at most 119 terms per equation here).  It explicitly
-inverts `h` at the finite `I1*` root and excludes the nodal specialization, so
-it is only the chart regular and non-nodal there, not a complete `P.O=2`
-section scheme.  Its unsliced bounded solve timed out.  The next computation
-is deterministic `(h0,h1,l)` slicing of that chart, followed by the missing
-pole-at-star chart; only then can the full rank-five Gram `det=237/4` and the
-pinned horizontal coordinates `(-1,1,-1,1,0)` be matched.
+The direct `P.O=2` exporter and its sliced variants are now superseded.  The
+complete MW5 embedding identifies `Q=H-P4` as a polynomial section.  The
+exact degree-four polynomial-section scheme has radical degree 12; its
+quadratic factor `T^2+12T+3` supplies the unique Frobenius orbit with
+`P.O=2`, height `8`, identity components at both star fibres, and the pinned
+intersection fingerprint.  Two independent decoders certify the same orbit.
+
+The connected quotient is also compiled.  Smith saturation of
+`{1,x,h*z_H}` followed by shifted Popov reduction gives a seven-dimensional
+ambient.  The resolved D7 complete ideal `(Y,U^2,ZU,Z^3)` contributes four
+conditions and the complete D5 fibre contributes one; the rank-five matrix
+leaves the required two-dimensional pencil.  Removing `h^2*x-Nx` gives an
+irreducible moving equation of degrees `(2,9,3)` in `(new base,W,x)`.
+Primitivity, square zero, old-fibre degree three, separability, and K3
+adjunction certify generic genus one without invoking Singular's unsupported
+normalization over an algebraic finite field.
+
+Replay and verify the immutable 18-file p=19 pin with:
+
+```bash
+sage -python elkies-k3/scripts/certify_q80_po0_rur_third_q12_modp.sage
+sage -python elkies-k3/scripts/compile_q80_third_q12_um2_p19_resolved_pencil.sage
+sage -python elkies-k3/scripts/verify_q80_third_q12_um2_p19_resolved_genus.sage
+python3 elkies-k3/scripts/pin_q80_third_q12_p19_pipeline.py
+```
+
+`sample_q80_third_q12_weierstrass_mod19_quadratic.sage` is the exact mapped
+fibre primitive for the child Jacobian.  It uses the rational simple infinity
+branch `xi=-6`, a finite integral basis, and exact local regularity at the
+double branch `xi=-16` to recover `L(2P)` and `L(3P)`.  The deterministic
+batch now retains 156 smooth mapped fibres: 148 interpolation fibres and
+eight held out.  `interpolate_q80_third_q12_jacobian_mod19_quadratic.sage`
+recovers and replays the generic long model, and
+`interpolate_q80_third_q12_maps_mod19_quadratic.sage` jointly interpolates
+compact bivariate map blocks.  The latter verifies literal generic
+function-field identities in both directions; its inverse weighted bounds
+are 4 for `W` and 10 for the old cubic coordinate.
+
+`minimize_q80_third_q12_jacobian_mod19_quadratic.sage` clears the unique
+Laurent-gauge pole by the exact admissible scaling and produces a short K3
+model with coefficient degrees `(8,12)`.  Its degree-24 discriminant has
+configuration `I6+I4+3I2+8I1`, hence root lattice `A5+A3+3A1`.  This proves
+the exact minimal p=19 child equation and maps.  The component certifier then
+transports eleven old D7/D5 curves and the old zero into the full
+`A5+A3+3A1` graph, selects the simple-branch component `R5` as the new zero,
+and sends the old zero to the `I6` base factor.  This is an exact finite-field
+marking; it does not infer characteristic-zero MW rank from Shioda--Tate.
+Replay the completed equation, map, marking, and invariant-encoding checkpoint
+with:
+
+```bash
+python3 elkies-k3/scripts/batch_q80_third_q12_weierstrass_mod19_quadratic.py \
+  --attempts 160 --workers 6
+sage -python elkies-k3/scripts/interpolate_q80_third_q12_jacobian_mod19_quadratic.sage
+sage -python elkies-k3/scripts/minimize_q80_third_q12_jacobian_mod19_quadratic.sage
+sage -python elkies-k3/scripts/interpolate_q80_third_q12_maps_mod19_quadratic.sage
+sage -python elkies-k3/scripts/certify_q80_third_q12_um2_p19_component_marking.sage
+python3 elkies-k3/scripts/encode_q80_third_q12_p19_frobenius_invariants.py
+```
+
+The Frobenius encoder writes every parent, child, and map coefficient as
+trace plus an anti-invariant multiple of `eta=2r+12`, with `eta^2=18`, and
+keeps section sign, base `PGL2`, and Weierstrass scaling in separate ledgers.
+
+The polynomial-closure producer is now prime-independent.  At both `p=19`
+and the next good prime `p=61`, its degree-12 geometric support gives 156
+signed pair tests, exactly two unsigned target hits, and one orbit modulo
+Frobenius and section sign.  The generic connected compiler gives the same
+Smith degrees `(0,0,6)`, rank-five correction gate, two-plane, moving degrees
+`(2,9,3)`, and primitive irreducible genus-one certificate.  Certify this
+second-prime alignment with:
+
+```bash
+python3 elkies-k3/scripts/align_q80_third_q12_common_producer_primes.py
+sage -python elkies-k3/scripts/certify_q80_first_marking_field_um2_local_behavior.sage
+```
+
+The second command closes the proposed first-marking-field shortcut: at
+`u=-2` that exact quadratic number field splits at 19, whereas the q12
+horizontal needs `GF(19^2)`.  It is inert at 61, but this alone does not prove
+that the p=61 horizontal descends from a section over that number field.
+
+The p=61 compiler is now complete.  The generic mapped-fibre adapter replaces
+Sage's characteristic-`p` power-map normalization with Singular's
+Grauert--Remmert module normalization and the same reversed-Hermite basis
+reduction.  It retains all 72 deterministic samples, interpolates the generic
+long Jacobian and maps both ways, minimizes to `I6+I4+3I2+8I1`, and transports
+the `R5` zero and `A5+A3+3A1` marking.  Replay the completed child with:
+
+```bash
+python3 elkies-k3/scripts/batch_q80_third_q12_weierstrass_modp2.py \
+  --input artifacts/generated-results/q80-third-q12-um2-p61-resolved-pencil.json \
+  --attempts 72 --workers 6 \
+  --sample-dir artifacts/local/elkies-k3/q80-third-q12-p61-weierstrass-samples \
+  --output artifacts/generated-results/q80-third-q12-p61-weierstrass-sample-batch.json
+sage -python elkies-k3/scripts/interpolate_q80_third_q12_jacobian_modp2.py \
+  --input artifacts/generated-results/q80-third-q12-p61-weierstrass-sample-batch.json \
+  --output artifacts/generated-results/q80-third-q12-p61-jacobian-interpolated.json
+sage -python elkies-k3/scripts/minimize_q80_third_q12_jacobian_modp2.py \
+  --input artifacts/generated-results/q80-third-q12-p61-jacobian-interpolated.json \
+  --output artifacts/generated-results/q80-third-q12-p61-jacobian-minimal.json
+python3 elkies-k3/scripts/align_q80_third_q12_full_children_primes.py
+```
+
+The full alignment certificate has 1,947 ordered coefficient slots at each
+prime.  Trace, norm, and coefficient discriminant are ready for the CRT/LLL
+interface; the local anti-invariant generator is intentionally not identified
+across primes.  The same complete pipeline now also passes at `p=67`.  Compile
+the first reconstruction batch with:
+
+```bash
+python3 elkies-k3/scripts/compile_q80_third_q12_frobenius_crt_interface.py
+```
+
+This accumulates all slots at `19`, `61`, and `67` modulo `77653` and reserves
+the independently audited good prime `71`.  The current **ACTIVE_COMPILER**
+gate is further good-prime collection followed by held-out replay; the present
+small modulus is not a rational reconstruction and no characteristic-zero
+equation is claimed.
 
 ### Rootless J2 classification controls
 
@@ -777,6 +889,26 @@ Orbit42/D12 profile rule:
   Terminal status is
   `PASS_EXACT_QQ_Q12O5867_SMOOTH_RR_ROOTLESS_JACOBIAN`. No elimination or
   Groebner basis is used.
+- `construct_h92_q12o5867_p0_shell_modp.sage`,
+  `identify_h92_q12o5867_two_primary_cosets_mod89.sage`,
+  `attempt_h92_q12o5867_three_target_halvings_qq.sage`,
+  `audit_h92_q12o5867_target_support_cross_prime.sage`, and
+  `verify_h92_q12o5867_three_halvings_and_basis_qq.sage` — **CLOSED EXACT
+  TWO-PRIMARY BOUNDARY**.  The shell constructor's
+  `--all-component-profiles` mode exhausts all 16 equation incidence modes at
+  `p=83,89,137`.  The historical current subgroup has Smith factors
+  `1^10,2,2,2`.  Three minimum-`L1` independent targets have exact QQ
+  polynomial halves (classes 146, 30, 22), literal doubling identities,
+  profiles `0101,1101,1110`, and heights `3,5/2,5/2`; abstractly they reduce
+  the index from eight to one.  Exact full-NS names are obtained from smooth
+  intersection fingerprints, not from a global permutation of equation-mode
+  bits.  The bounded equation-level pool nevertheless has rank 13 and index
+  two, with height determinant 237 instead of `237/4`.  The declared boundary
+  therefore supplies no saturated thirteen-section equation basis and no
+  words for the 42 controls; q12/orbit5867 is closed as the rank-32
+  point-production route while its exact arbitrary-point map is retained.
+  The final certificate is
+  `artifacts/generated-results/elkies-k3-q12o5867-two-primary-boundary.json`.
 - `construct_h92_q12o5867_rootless_p0_shell_mod131.sage`,
   `select_h92_q12o5867_rootless_mod131_basis.py`,
   `lift_h92_q12o5867_rootless_selected_basis_qq.sage`, and

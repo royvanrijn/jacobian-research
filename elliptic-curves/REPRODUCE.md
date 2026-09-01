@@ -83,23 +83,62 @@ it does not prove a common family or rootless-K3 realization.  See
 [`ICARM_WGXLI_RANK17_LINEAGE.md`](notes/ICARM_WGXLI_RANK17_LINEAGE.md).
 
 Eliminate the section and surface coefficients from the literal five-fibre
-rootless-K3 ansatz, then exhaust its distinct normalized first-jet chart over
-`GF(17)`:
+rootless-K3 ansatz, then exhaust every normalized projective first-jet chart
+over `GF(17)`, `GF(53)`, and `GF(67)`:
 
-<!-- status-consumer: EC-ICARM-WGXLI-R17-FIRST-JET ae24ab60702262b8 -->
+<!-- status-consumer: EC-ICARM-WGXLI-R17-FIRST-JET 11b13e24c5e42a14 -->
 
 ```sh
 sage -python \
   elliptic-curves/cas/eliminate_icarm_wgxli_rank17_first_jet.sage \
-  --prime 17 --threads 4 --pair-timeout 10 --check
+  --prime 17 --jobs 4 --threads 1 --pair-timeout 60 --check \
+  --output \
+  artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod17_v2.json
+
+sage -python \
+  elliptic-curves/cas/eliminate_icarm_wgxli_rank17_first_jet.sage \
+  --prime 53 --jobs 14 --threads 1 --pair-timeout 60 --check \
+  --output \
+  artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod53_v2.json
+
+sage -python \
+  elliptic-curves/cas/eliminate_icarm_wgxli_rank17_first_jet.sage \
+  --prime 67 --jobs 32 --threads 1 --pair-timeout 180 \
+  --reuse-unit-outputs --check \
+  --output \
+  artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod67_v1.json
 ```
 
-The 182 fixed-parameter ideals all have Groebner basis `[1]`, with no timeout;
-the known published-R17 differentiated identities provide a positive control.
-This is an exact necessary-condition obstruction at one prime.  It does not
-exclude bad/colliding parameter reduction, a changed Mordell--Weil basis, or a
-different family shape.  See
+All 210, 2550, and 4160 fixed-parameter ideals respectively have Groebner
+basis `[1]`, with no timeout. The compact certified published-R17 model and
+all seventeen sections give nondegenerate positive controls at 53 and 67 in
+the finite and both infinity orientations. This exact necessary-condition
+obstruction does not exclude bad or colliding parameter reduction at all
+three primes, a changed Mordell--Weil basis, or a different family shape. See
 [`ICARM_WGXLI_RANK17_FIRST_JET_ELIMINATION.md`](notes/ICARM_WGXLI_RANK17_FIRST_JET_ELIMINATION.md).
+
+Replay the bounded relative-sign and fingerprint-permutation search, the
+one-elementary-mutation search, and the artifact-bound formal rejection:
+
+<!-- status-consumer: EC-ICARM-WGXLI-R17-BOUNDED-REBASING 6e0c7b116b5b25c3 -->
+
+```sh
+sage -python \
+  elliptic-curves/cas/analyze_icarm_wgxli_rank17_rebasing.sage --check
+
+.venv/bin/python \
+  elliptic-curves/cas/construct_icarm_wgxli_rank17_bounded_mutation.py --check
+
+.venv/bin/python \
+  elliptic-curves/cas/certify_icarm_wgxli_rank17_bounded_rejection.py --check
+```
+
+The declared search has one retained exact mutation, `P4 -> P4-P1`; its
+complete mod-17 and mod-53 projective first-jet charts are both empty. This is
+a finite rejection inside the recorded sign, permutation, one-shear,
+coefficient, anchor, and height bounds, not an unrestricted `GL(17,Z)`
+search. See
+[`ICARM_WGXLI_RANK17_BOUNDED_REBASING.md`](notes/ICARM_WGXLI_RANK17_BOUNDED_REBASING.md).
 
 ### ICARM curve 302: rank at least 31
 

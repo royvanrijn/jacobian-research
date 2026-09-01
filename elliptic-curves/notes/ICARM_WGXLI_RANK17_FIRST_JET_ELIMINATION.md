@@ -1,166 +1,156 @@
-# First-jet elimination for the five-fibre `wgxli` target
+# Projective first-jet elimination for the five-fibre `wgxli` target
 
-Status: **exact finite-field necessary-condition elimination in one complete
-distinct-parameter chart; literal rootless-K3 interpolation rejected modulo
-17 unless the unknown model has bad or colliding reduction**.
+Status: **exact finite-field necessary-condition elimination in every
+normalized projective parameter chart; the literal displayed-sign,
+displayed-order interpolation is rejected modulo 17, 53, and 67**.
 
-This is not a characteristic-zero nonexistence theorem.  It assumes that the
+This is not a characteristic-zero nonexistence theorem. It assumes that the
 first seventeen public points on curves 351, 356, 376, 377, and 385 are
-literally corresponding sections, with their displayed signs, in the
-rootless-K3 degree bounds.
+literally corresponding sections of a rootless-K3 `(8,12;4,6)` model.
 
 ## Outcome
 
-All polynomial coefficients of the proposed surface and sections can be
-removed before a nonlinear solve.  After the gauges
+After the weighted gauges
 
 ```text
 t_351=0,  t_356=1,  t_385=-1,  u_351=1,
 ```
 
-the only intrinsic continuous unknowns are
+the eliminator exhausts the ordered pair `(t_376,t_377)` in
+`P1(F_p)\{0,1,-1}`. This includes the finite chart and both distinct boundary
+charts in which exactly one residual parameter is infinity. The results are
 
 ```text
-t_376, t_377, u_356, u_376, u_377, u_385.
+field     projective ordered pairs     geometric solutions     timeouts
+GF(17)                         210                       0            0
+GF(53)                        2550                       0            0
+GF(67)                        4160                       0            0
 ```
 
-The exact first-jet equations introduce ten linear auxiliary values
-`A'(t_k),B'(t_k)` but no unknown section or surface coefficients.  Exhausting
-the complete distinct-node chart over `GF(17)` gives
+For each fixed pair, `msolve` returns the unit ideal `[1]`. Thus the test is
+over the algebraic closure, not a search for only `F_p`-rational solutions.
+A literal rational model would have to leave the distinct normalized chart
+through bad or colliding parameter/scaling reduction at all three primes.
+
+## Projective elimination
+
+Write a base point as `[T:Z]`, and let the five normalized nodes be
+`[a_k:b_k]`. For a proposed family
 
 ```text
-ordered (t_376,t_377) pairs tested: 182
-pairs with a geometric solution:       0
-timeouts:                              0
+Y^2 = X^3 + A(T,Z) X + B(T,Z)
 ```
 
-Each fixed-pair ideal was solved over the algebraic closure, not merely by
-enumerating `GF(17)`-rational points.  Thus a literal characteristic-zero
-model with integral good reduction of the parameters and scalings at 17
-would force a collision among the five reduced base parameters.  The result
-does not exclude such a collision or another bad denominator at 17.
-
-## Removing the 52 unknowns
-
-Write the five canonical short fibres as
+the binary degrees are 8 and 12, while each section has binary degrees 4 and
+6. Put
 
 ```text
-Y^2 = X^3 + A_k X + B_k
+L(T,Z) = product_k (b_k*T-a_k*Z).
 ```
 
-and put `w_k=u_k^-1`.  Family coordinates at the proposed parameter `t_k`
-are
+Five values determine a binary quartic `x_i`. Every binary sextic ordinate
+through its five displayed values is uniquely
 
 ```text
-x_i(t_k)=w_k^2 X_{i,k},       y_i(t_k)=w_k^3 Y_{i,k},
-A(t_k)=w_k^4 A_k,             B(t_k)=w_k^6 B_k.
+y_i = ybar_i + L*ell_i,
 ```
 
-Let
+where `ell_i` is a binary linear form. This isolates, and then eliminates,
+the 34 free ordinate coefficients for the seventeen sections.
+
+Differentiate the section equation in the local parameter at each node
+(`t=T/Z` at finite nodes and `s=Z/T` at infinity). If
 
 ```text
-L(t)=product_k (t-t_k).
+alpha_k = A'(t_k),       beta_k = B'(t_k),
+c_ik = 2*y_i(t_k)*L'(t_k),
+R_ik = x_i(t_k)*alpha_k + beta_k
+       - (2*y_i*ybar_i' - 3*x_i^2*x_i' - A*x_i')(t_k),
 ```
 
-Five values determine the quartic `x_i(t)` uniquely.  Every sextic ordinate
-through its five values has the unique form
+then
 
 ```text
-y_i(t) = ybar_i(t) + L(t)*(r_i+s_i*t),
+c_ik*ell_i(t_k) = R_ik.
 ```
 
-where `ybar_i` is the degree-at-most-four Lagrange interpolant.  This already
-isolates the 34 free ordinate coefficients as the pairs `(r_i,s_i)`.
+The five right sides divided by `c_ik` must be values of one binary linear
+form. Using the nodes at 0 and 1 eliminates `ell_i` and gives three
+compatibility equations per section, hence 51 equations. The five values and
+five local derivatives of the binary octic `A` satisfy the unique left-kernel
+relation of their `10 x 9` evaluation matrix. One more equation saturates the
+four remaining fibre scales. Each modular chart therefore has 15 variables:
+four nonlinear scales, ten derivative auxiliaries, and one saturation
+inverse. There are 52 nonzero equations at 17 and 53 at both 53 and 67.
 
-Differentiate the section identity
+This is the projective form of the earlier affine Hermite calculation. It
+also explains the pair counts
 
 ```text
-y_i^2=x_i^3+A*x_i+B
+(p-2)*(p-3),
 ```
 
-at each fibre.  With
+rather than the affine-only `(p-3)*(p-4)` count.
 
-```text
-alpha_k=A'(t_k),   beta_k=B'(t_k),
-c_ik=2*y_i(t_k)*L'(t_k),
-d_ik=2*y_i(t_k)*ybar_i'(t_k)
-     -3*x_i(t_k)^2*x_i'(t_k)-A(t_k)*x_i'(t_k),
-R_ik=x_i(t_k)*alpha_k+beta_k-d_ik,
-```
+## Published-R17 positive controls
 
-the differentiated identity is simply
+The compact certified published-R17 model and all seventeen reconstructed
+sections replay the eliminated equations at both clean primes requested for
+the collision test. At each of 53 and 67 the checker uses a nonsingular
+finite control chart and both nonsingular infinity orientations; every chart
+has all 53 nonzero equations and an exact witness. Thus the clean-prime empty
+target charts are not explained by the mod-17 degeneration or by omitting a
+projective boundary.
 
-```text
-c_ik*(r_i+s_i*t_k)=R_ik.
-```
+The mod-17 compact control also gives exact witnesses, but some reduced
+control equations vanish identically. The 53 and 67 controls are the
+nondegenerate positive controls.
 
-Because the right side divided by `c_ik` must be affine in `t_k`, the two
-ordinate unknowns disappear.  Using the fibres at `0` and `1`, each of the
-other three fibres gives
+## Interpretation
 
-```text
-c_i0*c_i1*R_ik
- - c_ik*((1-t_k)*c_i1*R_i0+t_k*c_i0*R_i1) = 0.
-```
-
-There are three such equations for each of seventeen sections, hence 51
-first-jet equations.  The five values and five `alpha_k` have a unique
-degree-at-most-nine Hermite interpolant; `deg(A)<=8` removes its leading
-coefficient.  One saturation equation makes the four remaining `w_k`
-nonzero.  At 17 the Hermite leading equation vanishes identically after
-reduction, leaving 52 nonzero equations in each chart.
-
-Relative to the earlier 52-variable interpolation count, this removes
-
-```text
-34 free section-ordinate coefficients,
-12 free coefficients of A and B,
-```
-
-and enumerates the two base parameters.  Each modular chart consequently has
-only four nonlinear scaling variables, ten linear derivative auxiliaries,
-and one saturation inverse.
-
-## Positive control and interpretation
-
-The same differentiated identities replay exactly on all seventeen sections
-of the certified published R17 surface at the five control nodes
-
-```text
-0, 1, 2, 3, -1  (mod 17).
-```
-
-The eliminator is therefore detecting a failure of the literal five-fibre
-input, not an algebraic error visible on the known family control.
-
-The mod-17 result leaves three live explanations:
-
-1. the unknown rational parameters or scalings have bad/colliding reduction
-   at 17;
-2. the public points preserve a nearby rank-17 lattice basis but not literal
-   corresponding sections;
-3. the common lineage is not a rootless K3 with section degrees `(4,6)`.
+The literal basis is only the first exact gate. The bounded sign,
+permutation, and elementary-mutation analysis is recorded in
+[`ICARM_WGXLI_RANK17_BOUNDED_REBASING.md`](ICARM_WGXLI_RANK17_BOUNDED_REBASING.md).
+Neither numerical height-Gram correlation nor this necessary-condition test
+alone proves or disproves unrestricted common-family membership.
 
 ## Reproduction
 
-From the repository root:
+From the repository root, with Sage and `msolve` available:
 
 ```bash
 sage -python \
   elliptic-curves/cas/eliminate_icarm_wgxli_rank17_first_jet.sage \
-  --prime 17 --threads 4 --pair-timeout 10 \
+  --prime 17 --jobs 4 --threads 1 --pair-timeout 60 \
   --output \
-  artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod17_v1.json
+  artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod17_v2.json
 
 sage -python \
   elliptic-curves/cas/eliminate_icarm_wgxli_rank17_first_jet.sage \
-  --prime 17 --threads 4 --pair-timeout 10 --check
+  --prime 53 --jobs 14 --threads 1 --pair-timeout 60 \
+  --output \
+  artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod53_v2.json
+
+sage -python \
+  elliptic-curves/cas/eliminate_icarm_wgxli_rank17_first_jet.sage \
+  --prime 67 --jobs 32 --threads 1 --pair-timeout 180 \
+  --reuse-unit-outputs \
+  --output \
+  artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod67_v1.json
 ```
 
-The replay requires Sage and `msolve`.  The generated artifact has SHA-256
+The 67 run was first exhausted with a 60-second per-chart limit; its timeout
+charts were then rerun with the displayed 180-second command. Reuse occurs
+only when the old output is exactly the unit ideal and its newly rendered
+input hash matches the previous artifact. Missing, partial, nonunit, and
+hash-mismatched outputs are solved again. Use the same command with `--check`
+to replay an artifact. Runtime fields are ignored by the checker; all
+solver-input hashes and mathematical statuses are compared.
+
+The generated mod-17, mod-53, and mod-67 artifacts have SHA-256 hashes
 
 ```text
-de1ebb881e881f29a4e2850e6d75bb234f6a5acd1e55ffb8e87aed8b786f0971
+67d642871268d339c5b4c8ea55e601c546aa7da089ceb07f5d21664cec5b8994
+ca5547ccd1a246f020c057715e798d951863e9b679955f365037d21ea399fa2a
+0cba1fc3c6ff80509ea564de9f945b3a3d1eb3047df0c05de64ea5e31fe45041
 ```
-
-and records the hash of every one of the 182 generated solver inputs.

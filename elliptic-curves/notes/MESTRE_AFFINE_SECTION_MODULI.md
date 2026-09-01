@@ -387,6 +387,13 @@ comparison, not by itself a conductor bound.
 
 ## Local two-section continuation at the rank-13 seed
 
+Update: the local-scheme question in this subsection is now resolved in
+[the two-section incidence-germ note](MESTRE_TWO_SECTION_INCIDENCE_GERM.md).
+An exact saturated root-coordinate chart proves that the labelled germ is a
+single reduced smooth surface of multiplicity one; the bounded jets below are
+its truncations.  Generic Mordell--Weil dependence versus independence on
+that surface remains open.
+
 The two labelled nonvisible sections
 
 \[

@@ -31854,8 +31854,8 @@
       "id": "EC-ICARM-WGXLI-R17-FIRST-JET",
       "kind": "example",
       "state": "proved",
-      "title": "Complete mod-17 first-jet obstruction for literal five-fibre wgxli interpolation",
-      "scope": "For the five canonical short fibres 351, 356, 376, 377 and 385 with their ordered first seventeen displayed points, five-point interpolation and differentiated section identities eliminate all 34 free sextic-ordinate coefficients and all twelve free surface coefficients from the literal rootless-K3 ansatz. After the gauges t_351=0, t_356=1, t_385=-1 and inverse Weierstrass scale w_351=1, the remaining intrinsic variables are t_376,t_377 and four nonzero fibre scalings; ten fibre-derivative values A'(t_k),B'(t_k) are linear auxiliaries. Over GF(17), all 182 ordered choices of distinct t_376,t_377 outside {0,1,-1} give a 52-equation saturated ideal with Groebner basis [1] over the algebraic closure, with no solver timeout. The differentiated identities replay on all seventeen sections of the exact published-R17 positive control. Hence no literal model exists in this complete distinct normalized mod-17 chart. This does not exclude a QQ model whose parameters or scalings have bad or colliding reduction at 17, a relabelled or integrally changed Mordell--Weil basis, or a family outside the rootless-K3 degree bounds.",
+      "title": "Complete projective mod-17, mod-53 and mod-67 first-jet obstructions for literal five-fibre wgxli interpolation",
+      "scope": "For the five canonical short fibres 351, 356, 376, 377 and 385 with their ordered first seventeen displayed points, binary interpolation and differentiated section identities eliminate all 34 free sextic-ordinate coefficients and all twelve free surface coefficients from the literal rootless-K3 (8,12;4,6) ansatz. After the gauges t_351=0, t_356=1, t_385=-1 and inverse Weierstrass scale w_351=1, every ordered pair (t_376,t_377) in P1(F_p) minus the three fixed nodes is tested, including both infinity orientations. At p=17, 53 and 67 respectively, all 210, 2550 and 4160 projective charts have saturated Groebner basis [1] over the algebraic closure, with no unresolved timeout in the final artifacts. The compact certified published-R17 model and all seventeen reconstructed sections give nondegenerate exact positive controls at both 53 and 67 in a finite chart and both infinity orientations. Hence no literal model exists in any tested distinct normalized projective chart. This does not exclude a QQ model whose parameters or scalings have bad or colliding reduction at all tested primes, a relabelled or integrally changed Mordell--Weil basis, or a family outside the rootless-K3 degree bounds.",
       "canonical_source": "elliptic-curves/notes/ICARM_WGXLI_RANK17_FIRST_JET_ELIMINATION.md",
       "dependencies": [
         "EC-ICARM-WGXLI-R17-LINEAGE",
@@ -31866,11 +31866,54 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:4313c3d04f1133b109cf76ba7c5e2189c3f5765f4dfb22e54724dede079440ea",
+      "artifact_hash": "sha256:f198a81bd105d643e62cbe25240f0a48e7bee9bde0eebf96854cd4ec91804d0f",
       "software_lock": [
         "elliptic-curves/cas/eliminate_icarm_wgxli_rank17_first_jet.sage",
         "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_lineage_v1.json",
-        "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod17_v1.json"
+        "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod17_v2.json",
+        "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod53_v2.json",
+        "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod67_v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/notes/ICARM_WGXLI_RANK17_LINEAGE.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-ICARM-WGXLI-R17-BOUNDED-REBASING",
+      "kind": "example",
+      "state": "proved",
+      "title": "Bounded signed-permutation and one-shear rejection for the five-fibre wgxli target",
+      "scope": "For ICARM curves 351, 356, 376, 377 and 385, every one of 2^16 relative diagonal signs is tested for each of the ten canonical-height Gram pairs. All pairwise minima are simultaneously attained at displayed relative signs, and a 10% near-optimal band retains no other relative assignment, modulo common generic-section inversion. A fingerprint graph using stable denominator roots and integrality, exact identity/nonidentity component data on locally minimal models, and scale-free height-row patterns has respectively 1,1,21,2,1 perfect matchings for the five fibres; only displayed order survives its declared 10% residual band, and exact elliptic inversion verifies all 85 retained points. After that signed-permutation candidate fails complete projective first-jet elimination at 17 and 53, a complete one-common-shear search fixes anchor labels 2,3,5,15,16,17, bounds column l1 norm by 2 and changed height by 1.25 on every fibre, and requires at least 1% numerical joint-objective improvement. Of 352 unimodular transformations, only P4 -> P4-P1 is proposed. Exact rational group-law construction verifies the five changed points and clean reduction at 17 and 53; all 210 and 2550 projective first-jet charts at those primes have unit ideal over the algebraic closure, with no timeout. Thus the five records share a numerical/private-pipeline fingerprint but have no rootless-K3 (8,12;4,6) realization under this declared signed-permutation and one-anchor-preserving-elementary-mutation rebasing. This is not an unrestricted GL(17,Z) rejection and does not exclude repeated mutations, larger bounds, another family shape, or bad/colliding parameter reduction at every tested prime.",
+      "canonical_source": "elliptic-curves/notes/ICARM_WGXLI_RANK17_BOUNDED_REBASING.md",
+      "dependencies": [
+        "EC-ICARM-WGXLI-R17-LINEAGE",
+        "EC-ICARM-WGXLI-R17-FIRST-JET",
+        "EC-K3-ELKIES-2026-R17"
+      ],
+      "checker": "elliptic-curves/cas/certify_icarm_wgxli_rank17_bounded_rejection.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4196653ef7f2fa7fc9e416721e57eb1840e1f0db6153c6c4fe79853c681c82b9",
+      "software_lock": [
+        "elliptic-curves/cas/analyze_icarm_wgxli_rank17_rebasing.sage",
+        "elliptic-curves/cas/construct_icarm_wgxli_rank17_bounded_mutation.py",
+        "elliptic-curves/cas/eliminate_icarm_wgxli_rank17_first_jet.sage",
+        "elliptic-curves/cas/certify_icarm_wgxli_rank17_bounded_rejection.py",
+        "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_signed_permutation_rebasing_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_mutation_p4_minus_p1_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_mutation_p4_minus_p1_first_jet_mod17_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_mutation_p4_minus_p1_first_jet_mod53_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_bounded_rejection_v1.json"
       ],
       "supersedes_notes": [],
       "supersedes": [],
@@ -36169,6 +36212,45 @@
       "narrows_problems": [],
       "consumers": [
         "REPRODUCE.md",
+        "elkies-k3/Q12O5867_GENUS_ONE_POINT_FACTORY_2026-08-31.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-H3-Q12O5867-TWO-PRIMARY-BOUNDARY",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Closed exhaustive two-primary boundary for the q12/orbit5867 point-production route",
+      "scope": "All 16 equation incidence modes at the four I2 fibres are exhaustively enumerated at p=83,89,137. The historical current subgroup has Smith factors 1^10,2,2,2. Three independent minimum-L1 doubled targets, represented by physical classes 146, 30, and 22 with quotient keys 001, 010, and 101, have exact QQ(u) duplication quartics of factor degrees 1+3. The recovered polynomial halves pass literal curve substitution and doubling, exact full-NS intersection naming, stable three-prime equation profiles 0101,1101,1110, Shioda heights 3,5/2,5/2, and abstract Smith index reduction 8 to 1. Nevertheless the 24 characteristic-zero equation sections certified within the declared boundary span rank 13 at exact index 2, with Smith factors 1^12,2 and height determinant 237 rather than the saturated 237/4. The remaining marked parity class is represented by 21,48,216,516,543,701: four modular branches do not rationally reconstruct, while the two reconstructed branches relabel exactly as 21 to 26 and 516 to 521. Under the explicit stop rule there is no fourth halving, unrestricted inverse-degree shell, arbitrary parent-fibre search, or ratpoints-bound increase. Hence no saturated thirteen-section equation basis or MW13 words for the 42 controls are claimed; q12/orbit5867 is closed as the proposed rank-32 point-production route, while the exact arbitrary-point birational theorem is retained.",
+      "canonical_source": "elkies-k3/Q12O5867_GENUS_ONE_POINT_FACTORY_2026-08-31.md",
+      "dependencies": [
+        "EC-K3-H3-Q12O5867-POINT-FACTORY",
+        "EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR"
+      ],
+      "checker": "elkies-k3/scripts/verify_h92_q12o5867_three_halvings_and_basis_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:14cd932698341fb10dc429a6fd0131e162c1b4c0252dd63eca45f6e90b6192f7",
+      "software_lock": [
+        "elkies-k3/scripts/construct_h92_q12o5867_p0_shell_modp.sage",
+        "elkies-k3/scripts/classify_h92_q12o5867_p0_shell_against_lattice_mod89.sage",
+        "elkies-k3/scripts/identify_h92_q12o5867_two_primary_cosets_mod89.sage",
+        "elkies-k3/scripts/attempt_h92_q12o5867_three_target_halvings_mod89.sage",
+        "elkies-k3/scripts/attempt_h92_q12o5867_three_target_halvings_qq.sage",
+        "elkies-k3/scripts/audit_h92_q12o5867_target_support_cross_prime.sage",
+        "elkies-k3/scripts/verify_h92_q12o5867_three_halvings_and_basis_qq.sage",
+        "artifacts/generated-results/elkies-k3-q12o5867-two-primary-boundary.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
         "elkies-k3/Q12O5867_GENUS_ONE_POINT_FACTORY_2026-08-31.md",
         "elkies-k3/scripts/README.md"
       ],

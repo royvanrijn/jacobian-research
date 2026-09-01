@@ -147,13 +147,23 @@ solver should saturate the distinct-parameter, nonzero-scaling, and
 interpolation-denominator factors before CRT/LLL reconstruction.
 
 The first-jet elimination now removes all 34 free ordinate coefficients and
-all twelve free surface coefficients before solving.  Its complete distinct
-mod-17 chart has no solution for literal labels and signs.  See
+all twelve free surface coefficients before solving. Its complete projective
+mod-17, mod-53, and mod-67 charts, including both infinity orientations, have
+no solution for literal labels and signs. See
 [`ICARM_WGXLI_RANK17_FIRST_JET_ELIMINATION.md`](ICARM_WGXLI_RANK17_FIRST_JET_ELIMINATION.md).
-This is an exact necessary-condition obstruction in that reduction chart, not
-a characteristic-zero nonexistence theorem.
+This is an exact necessary-condition obstruction in those reduction charts,
+not a characteristic-zero nonexistence theorem.
 
-<!-- status-consumer: EC-ICARM-WGXLI-R17-FIRST-JET ae24ab60702262b8 -->
+<!-- status-consumer: EC-ICARM-WGXLI-R17-FIRST-JET 11b13e24c5e42a14 -->
+
+The subsequent bounded rebasing audit exhausts relative diagonal signs and
+fingerprint-indistinguishable permutations. It then exhausts one common,
+anchor-preserving elementary shear under the recorded coefficient and height
+bounds. The sole proposed shear `P4 -> P4-P1` is constructed exactly and also
+fails the complete mod-17 and mod-53 projective eliminations. See
+[`ICARM_WGXLI_RANK17_BOUNDED_REBASING.md`](ICARM_WGXLI_RANK17_BOUNDED_REBASING.md).
+
+<!-- status-consumer: EC-ICARM-WGXLI-R17-BOUNDED-REBASING 6e0c7b116b5b25c3 -->
 
 The bounded fixed-root Mestre census is not repeated or enlarged here.  Its
 negative result for curve 356 remains exactly the previously declared census

@@ -16446,3 +16446,28 @@ Its exact conclusions are relative saturation index one, intersection ranks
 the first seventeen onto each complete bad-component product.  Canonical
 heights remain high-precision numerical data.  See
 [`elliptic-curves/notes/RECORD_CURVES_273_302_FIRST17_SUBGROUPS.md`](elliptic-curves/notes/RECORD_CURVES_273_302_FIRST17_SUBGROUPS.md).
+
+## Six-root Mestre two-section local surface
+
+Certify the characteristic-zero root-coordinate component through
+`(0,25,95,143,168,205)` and its two labelled affine sections with
+
+```bash
+Singular -q elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
+```
+
+The verifier reconstructs the Mestre remainder recursively, localizes the
+two-equation root surface away from the non-seed resultant factor, and proves
+all six ordinate-eliminated residuals vanish.  It also checks that the source
+is smooth with the two labelled coordinates as local parameters.  The lucky
+finite-characteristic repetitions are
+
+```bash
+Singular -q -u 17 elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
+Singular -q -u 29 elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
+```
+
+Prime 37 is good for the original incidence tangent but unlucky for this
+particular component separator: the removed resultant factor meets the
+reduced seed there.  See
+[`elliptic-curves/notes/MESTRE_TWO_SECTION_INCIDENCE_GERM.md`](elliptic-curves/notes/MESTRE_TWO_SECTION_INCIDENCE_GERM.md).

@@ -53,6 +53,13 @@ parser.add_argument(
     "--include-all-records", action="store_true",
     help="retain the complete signed polynomial shell for downstream diagnostics",
 )
+parser.add_argument(
+    "--all-component-profiles", action="store_true",
+    help=(
+        "enumerate all 16 incidence profiles at the four I2 fibres; the "
+        "default retains the historical 0000/1000 shell"
+    ),
+)
 args = parser.parse_args()
 prime = ZZ(args.prime)
 if not prime.is_prime() or prime in (2, 3):
@@ -555,14 +562,14 @@ static int rootsquare(const int *r,int *y){
 }
 static void emit(int mode,int *x,int *y){printf("M%d|X=",mode);for(int i=0;i<5;i++)printf("%s%d",i?",":"",x[i]);printf("|Y=");for(int i=0;i<7;i++)printf("%s%d",i?",":"",y[i]);puts("");}
 int main(void){
- int allowed[2][5][P],n[2][5]={0};
- for(int mode=0;mode<2;mode++)for(int j=0;j<5;j++)for(int x=0;x<P;x++){
+ int allowed[@MODES@][5][P],n[@MODES@][5]={0};
+ for(int mode=0;mode<@MODES@;mode++)for(int j=0;j<5;j++)for(int x=0;x<P;x++){
   int rhs;if(j<4)rhs=md((long long)x*x%P*x+(long long)val(A,8,pts[j])*x+val(B,12,pts[j]));else rhs=md((long long)x*x%P*x+(long long)A[8]*x+B[12]);
   if(!square(rhs))continue;
-  if(j<3 || j==4){int profile=(mode==1 && j==0);int node=(j==4?nodes[3]:nodes[j]);if((x==node)!=profile)continue;}
+  if(j<3 || j==4){int bit=(j==4?3:j);int profile=(mode>>bit)&1;int node=(j==4?nodes[3]:nodes[j]);if((x==node)!=profile)continue;}
   allowed[mode][j][n[mode][j]++]=x;
  }
- for(int mode=0;mode<2;mode++){
+ for(int mode=0;mode<@MODES@;mode++){
   fprintf(stderr,"MODE%d|lists=%d,%d,%d,%d,%d\n",mode,n[mode][0],n[mode][1],n[mode][2],n[mode][3],n[mode][4]);
   for(int i0=0;i0<n[mode][0];i0++)for(int i1=0;i1<n[mode][1];i1++)for(int i2=0;i2<n[mode][2];i2++)for(int i3=0;i3<n[mode][3];i3++)for(int i4=0;i4<n[mode][4];i4++){
    int vv[5]={allowed[mode][0][i0],allowed[mode][1][i1],allowed[mode][2][i2],allowed[mode][3][i3],allowed[mode][4][i4]},x[5],x2[9]={0},x3[13]={0},rhs[13],y[7];
@@ -577,6 +584,7 @@ int main(void){
 }
 '''
 C_SOURCE = C_SOURCE.replace("@P@", str(int(prime)))
+C_SOURCE = C_SOURCE.replace("@MODES@", "16" if args.all_component_profiles else "2")
 C_SOURCE = C_SOURCE.replace("@A@", c_array([A[i] for i in range(9)]))
 C_SOURCE = C_SOURCE.replace("@B@", c_array([B[i] for i in range(13)]))
 C_SOURCE = C_SOURCE.replace("@PTS@", c_array(evaluation_points))
@@ -659,7 +667,9 @@ for line in shell_result.stdout.splitlines():
     seen.add(key)
     assert Y**2 == X**3+A*X+B
     profile = component_profile(X, Y)
-    assert profile == ([0, 0, 0, 0] if mode_text == "M0" else [1, 0, 0, 0])
+    mode = int(mode_text[1:])
+    expected_profile = [(mode >> bit) & 1 for bit in range(4)]
+    assert profile == expected_profile
     parent = inverse_parent_base(X, Y)
     records.append({
         "x_coefficients_low_to_high": list(map(int, X.list())),
@@ -834,6 +844,17 @@ payload = {
     },
     "direct_shell": {
         "unique_signed_section_count": len(records),
+        "component_profile_scope": "all_16" if args.all_component_profiles else "historical_0000_1000",
+        "component_profile_histogram": {
+            "".join(map(str, profile)): sum(
+                record["equation_component_profile"] == list(profile)
+                for record in records
+            )
+            for profile in (
+                tuple((mode >> bit) & 1 for bit in range(4))
+                for mode in range(16 if args.all_component_profiles else 2)
+            )
+        },
         "profile_0000_count": sum(record["equation_component_profile"] == [0, 0, 0, 0] for record in records),
         "profile_1000_count": sum(record["equation_component_profile"] == [1, 0, 0, 0] for record in records),
         "generated_C_helper_stderr": shell_result.stderr.splitlines(),
@@ -863,6 +884,7 @@ payload = {
         "reproducing_command": (
             "sage -python elkies-k3/scripts/construct_h92_q12o5867_p0_shell_modp.sage "
             f"--prime {prime} "
+            f"{'--all-component-profiles ' if args.all_component_profiles else ''}"
             f"{'--include-all-records ' if args.include_all_records else ''}"
             f"--output {output_display}"
         ),

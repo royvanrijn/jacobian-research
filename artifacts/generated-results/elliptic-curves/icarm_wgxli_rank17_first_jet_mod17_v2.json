@@ -1,7 +1,13 @@
 {
   "chart": {
     "complete": true,
-    "ordered_pair_count": 182,
+    "normalized_chart_types": [
+      "both residual nodes finite",
+      "t_376 at infinity",
+      "t_377 at infinity"
+    ],
+    "ordered_pair_count": 210,
+    "parameter_space": "ordered pairs in P1(F_p) minus the three fixed nodes",
     "required_distinct_nodes": [
       0,
       1,
@@ -39,25 +45,25 @@
   },
   "pair_records": [
     {
-      "msolve_input_sha256": "1b23feaceadba6beff2a4fd4e51f97f606a73fb7eeeb063696c2725548e86966",
+      "msolve_input_sha256": "d552267e2f01b096417040c1bc515251a90fca77c4f7f8e519205f978472cc77",
       "msolve_returncode": 0,
       "nodes_376_377": [
         2,
         3
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.06565026499447413,
+      "runtime_seconds": 0.17588727599650156,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "4ab825f750e9523c8b6048867d5d2ddb47a01da15b05ade614c236ac2348e514",
+      "msolve_input_sha256": "591055759656c3395bc74bfc6811cf8397b06458338044ef68c9660bd6b12085",
       "msolve_returncode": 0,
       "nodes_376_377": [
         2,
         4
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.36638853100157576,
+      "runtime_seconds": 0.6216352449991973,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -68,150 +74,161 @@
         5
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03368015600426588,
+      "runtime_seconds": 0.040021437001996674,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "b598b9cdab6e6db500de9e62e76c5c19de770cb579f8cbd4ae1a12f50470b7c4",
+      "msolve_input_sha256": "4f1629a5eb3e0cd5b5b89c571557f79946062aa4bd44ca5e40140a65ed505818",
       "msolve_returncode": 0,
       "nodes_376_377": [
         2,
         6
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03361503199994331,
+      "runtime_seconds": 0.040668462999747135,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "152749ae62813a0c56d5ba1827a804acf94b35e9e3704a31991b3ca4de08607b",
+      "msolve_input_sha256": "6e816e1abee35d1005e471dfa96e41a1f3158f1afb36dac4b2ee2eaaa9c1c486",
       "msolve_returncode": 0,
       "nodes_376_377": [
         2,
         7
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03296687799593201,
+      "runtime_seconds": 0.12805949999892619,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "ec7225eafbfb64d6d2c02024e55ce0623425d609040f359a07016f3030e35484",
+      "msolve_input_sha256": "1192f1c513eae1292462355a7c753aca740bbef89b2599f8e1008b9108a35f33",
       "msolve_returncode": 0,
       "nodes_376_377": [
         2,
         8
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03301940199889941,
+      "runtime_seconds": 0.12760782599798404,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "867838ef710223c7f8b8bee9e7cadab01cbf217ee691b1cfae0bd35ae1159d20",
+      "msolve_input_sha256": "b111105125d4d4b0b49935de434683104b5148634febaf6615c25595ab487978",
       "msolve_returncode": 0,
       "nodes_376_377": [
         2,
         9
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033011697996698786,
+      "runtime_seconds": 0.08279164499981562,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "56748a87cb196c758d0451d6fb1c1381c310c06a3b000f7d111f06f46890a14c",
+      "msolve_input_sha256": "db562b15ada996ee0020fff1d714c4122c3dac3523122ca72791d0f317f006f8",
       "msolve_returncode": 0,
       "nodes_376_377": [
         2,
         10
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032794022001326084,
+      "runtime_seconds": 0.13695373700466007,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "d0b8866bbbc0c76258cdced733713e58154ea06359bf876c4560d1613b0ce1d8",
+      "msolve_input_sha256": "728c9fbec3fb67fc8e9b4a1b2f994deaf799c0c1f29a50b8812b88b5d8f3cbb2",
       "msolve_returncode": 0,
       "nodes_376_377": [
         2,
         11
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03277433399489382,
+      "runtime_seconds": 0.12830147999920882,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "95cf5b499c57bd81d9ab9beba255c0f24c432d0b39ff5d45de4cef89f81a4832",
+      "msolve_input_sha256": "622b4b7bd9a047dfa2c37a3ff5bf85e8192fe3f919861a677f9843a0dd06621c",
       "msolve_returncode": 0,
       "nodes_376_377": [
         2,
         12
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033034241998393554,
+      "runtime_seconds": 0.06974277900008019,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "6c5add4a2798c698ea0cce433e2408291a8c1774a4296461e4439a571bb25c43",
+      "msolve_input_sha256": "3a48516552fbb224f7e3cc528c963a0e39d3ac40dd449c5b14770521b667c2b2",
       "msolve_returncode": 0,
       "nodes_376_377": [
         2,
         13
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03291195200290531,
+      "runtime_seconds": 0.06828836900240276,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "7edfa2046c97e0de99640043efc3e09931f65876652984049c1cb40c3cf17051",
+      "msolve_input_sha256": "c58a3d239f6baac92db3c20e5ec60417fa50ace53762faea29cae499fbf67952",
       "msolve_returncode": 0,
       "nodes_376_377": [
         2,
         14
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032913132999965455,
+      "runtime_seconds": 0.06854540100175655,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "dab218e8e709b637cd6ef93ab12f95f97c786a8cb4eb6f829e64eeb9a7d02d15",
+      "msolve_input_sha256": "40f78b8cb9d4471d4c1499d4b662090228e12dc4fdf7a456f168ddddce9d1256",
       "msolve_returncode": 0,
       "nodes_376_377": [
         2,
         15
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033271981999860145,
+      "runtime_seconds": 0.06792807800229639,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "fcf5747db63fc75e7d33f3b9640c81fe950f0360e79f499124a5b2bda79ca55a",
+      "msolve_input_sha256": "72c5d62f84e27c9049febe3f89d36115cdabffc9051323348e9231e54d2fadf1",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        2,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.07956200400076341,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "d411c02677bcdfdc2c9c9ff4005c870fc03a7b81d7f00ed0612314fa4d1e790f",
       "msolve_returncode": 0,
       "nodes_376_377": [
         3,
         2
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.06481055699987337,
+      "runtime_seconds": 0.13236097399931168,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "c2c1f7a90586a4324f28eaee720178c8b5f5439021abb02bc71ec2400a4c328b",
+      "msolve_input_sha256": "04f32726d465f81b48d0804d989bd6afa4c2def364e94309426268c7caa12446",
       "msolve_returncode": 0,
       "nodes_376_377": [
         3,
         4
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032784796996566,
+      "runtime_seconds": 0.0811423150007613,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "49a7d8bce0439b2ddb6cef4a2566d2e277c6d577c79d17f7937300b59db00b53",
+      "msolve_input_sha256": "a169ab6ecfea0028f4d26ab3134f2e5c23fc9d3b498f91e1292c4781b261f476",
       "msolve_returncode": 0,
       "nodes_376_377": [
         3,
         5
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.016807605999929365,
+      "runtime_seconds": 0.0696172989992192,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -222,139 +239,150 @@
         6
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03305293299490586,
+      "runtime_seconds": 0.07561883099697297,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "fad1d7309e35f72fb39919ab8ac9f0d4333b09ea8e33b97bfbf75a6a51a13d3e",
+      "msolve_input_sha256": "33625d75d534e53bff15baaebba669dd59559e2985686f81b814e54c9b4e1ac7",
       "msolve_returncode": 0,
       "nodes_376_377": [
         3,
         7
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032866272995306645,
+      "runtime_seconds": 0.07524419700348517,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "50852f3b411c76f9c16321b3c9eabbc20760fb5bcbcbb12af70999033b70feb6",
+      "msolve_input_sha256": "a2d2af4a02a7774ee62e1dfe7972f33a3c2dc7a656d082087096ba051caa4f01",
       "msolve_returncode": 0,
       "nodes_376_377": [
         3,
         8
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03301728299993556,
+      "runtime_seconds": 0.06814711000333773,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "a6fe0f85e5655fe69e0f797210c036cd5fe2d03e90ad12d6ca51b8a145160cc5",
+      "msolve_input_sha256": "2c76165a0221fd465e1931b546388b6021912fa4af6caf8683479f0a90e11941",
       "msolve_returncode": 0,
       "nodes_376_377": [
         3,
         9
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 1.0171657930040965,
+      "runtime_seconds": 2.0856919910002034,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "20814fda61b29355138c766b77a042e9381f7045f7e9ff242fdbeebaa93f2e45",
+      "msolve_input_sha256": "b3cfb742ce615cea952b0404a2b1af89110d64dbf152ea4551ff20373a4ffd35",
       "msolve_returncode": 0,
       "nodes_376_377": [
         3,
         10
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032892166993406136,
+      "runtime_seconds": 0.07801213399943663,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "20b874061220739a4e1e628881daba8b61d5033c4e5725bd3719741dc7c98388",
+      "msolve_input_sha256": "33354df83d96e62af38e0b5eb198d90250563321dec463113f8c1428b26b11bc",
       "msolve_returncode": 0,
       "nodes_376_377": [
         3,
         11
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03280717299639946,
+      "runtime_seconds": 0.04937316500581801,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "3912c77b17c5e2f46fa39b8d9ae3b9a7c5724aa8cd099e405e2915bae0d4a5e2",
+      "msolve_input_sha256": "c032755a5d1411040d263ba4b7da66d634b95dc50c66833fe0747b3a386d0edb",
       "msolve_returncode": 0,
       "nodes_376_377": [
         3,
         12
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03289169799973024,
+      "runtime_seconds": 0.06958828100323444,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "13a5d16e1d6462c5a452732abafe7ee06d9da9cdc1fcf429fbaa210dddd3ee32",
+      "msolve_input_sha256": "12f92044dd744a07af367039a8c7976429272fa0b2080332b63f3c7a0055d72a",
       "msolve_returncode": 0,
       "nodes_376_377": [
         3,
         13
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033164560998557135,
+      "runtime_seconds": 0.04347632900316967,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "c56836d7d8153496328763048a81c6a967f98d5864053ccec1ce2d3f59cdbf8d",
+      "msolve_input_sha256": "904783d4c0722093ec5af493d533c3263abda32efa3bc2df80603e8aad7ec40c",
       "msolve_returncode": 0,
       "nodes_376_377": [
         3,
         14
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03298030199948698,
+      "runtime_seconds": 0.07896875299775274,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "01509f3a7e2b2c854926f5d921a07d9ed9617226762db7405ad84b5b71150ccf",
+      "msolve_input_sha256": "45565bb9920e475aad1cf44726686585054fbfe7bbb6033da742162265995b2d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         3,
         15
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03295733800041489,
+      "runtime_seconds": 0.0705430800007889,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "d1763b408df4ab878dd18a50e34a029e2f073c47dfe6d956c48279634f2ee514",
+      "msolve_input_sha256": "4df9cedf5da2ae9210d6ff4dbe6ef75c890d8aed3ffd50c22d13d7ec2dfcd2a7",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        3,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.08497553099732613,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "9b3e73f2ade554bfd23a1481ef15a1a829b8ea801416a7598d4b48e7e45aa9b9",
       "msolve_returncode": 0,
       "nodes_376_377": [
         4,
         2
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 1.5684898370018345,
+      "runtime_seconds": 3.6988342640033807,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "e36a54305c42e253ac91ccb271d256aa1deea928c0e071b5aa48b6bf4dd40802",
+      "msolve_input_sha256": "96ff18bc3aa6c89e0f9b456a9c0397e0832c0b3506cf2f9fbc912c92fdec55c6",
       "msolve_returncode": 0,
       "nodes_376_377": [
         4,
         3
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03296337299980223,
+      "runtime_seconds": 0.13156974199955584,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "ce0cee7860fd464c2de70bcc24dadce0f8eaa1a5382f2783f64d16a2f7d22f53",
+      "msolve_input_sha256": "4227ee2d44e88cb4f47d5de66a927a69d12cb53091a886f23af3d62e108a9347",
       "msolve_returncode": 0,
       "nodes_376_377": [
         4,
         5
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.0166436520012212,
+      "runtime_seconds": 0.08224871900165454,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -365,7 +393,7 @@
         6
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033251341999857686,
+      "runtime_seconds": 0.0839179670001613,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -376,95 +404,106 @@
         7
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032864423003047705,
+      "runtime_seconds": 0.0872896020009648,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "866f100fbd089d37e3646f8ff943a34154e0424172d6b555060b3b7aa00626c9",
+      "msolve_input_sha256": "78875b01b160c149559141cb40746539191565d070ffb7fe01841bdca3b34571",
       "msolve_returncode": 0,
       "nodes_376_377": [
         4,
         8
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03297835300327279,
+      "runtime_seconds": 0.03698245100531494,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "b4821ee47674e5469dc68acb704310828a2cb07a1ee51a5f4c9d1e44e9cab069",
+      "msolve_input_sha256": "b0ec80b0a75fccd7f003649d0669eee8929520209b3f4d1aa827b5ab1a99121a",
       "msolve_returncode": 0,
       "nodes_376_377": [
         4,
         9
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03296057800616836,
+      "runtime_seconds": 0.08430532200145535,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "abd0b1f91be2f768ed7c3637a579ac327defecdf61a924da32cb840ef864cb42",
+      "msolve_input_sha256": "3d9275adbb8400525f8e50b187ea0cb064681b6e63fae3f1f82cd581442c4b80",
       "msolve_returncode": 0,
       "nodes_376_377": [
         4,
         10
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03314268199756043,
+      "runtime_seconds": 0.1329771009986871,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "797fce41b0da1fcd29eb8df837084796a2e0406ad56c3522e017fd1dd069c1f0",
+      "msolve_input_sha256": "76237860aced60717270e71919bf90587054ecfdd1a0f5c7bb2f3fa968f8029d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         4,
         11
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03307687200140208,
+      "runtime_seconds": 0.08213104500464397,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "c9d35485e7a0a293ea59b5d1ecf41c2086255cd4e24e1c5c5fe9307a83b13a83",
+      "msolve_input_sha256": "8618473323498bdc629ca6cdd19918c27437e63e65debede79ebf42bb4ca2575",
       "msolve_returncode": 0,
       "nodes_376_377": [
         4,
         12
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03292580299603287,
+      "runtime_seconds": 0.18357195100543322,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "9bbdfe1ee8a6b2dea01db03e46ddcb65346f680e16dfb49ad6bce4c367501cb6",
+      "msolve_input_sha256": "dbf659bc90ab9a2e5550a84231836ee38974658eb0d0e69a8237dc5c2d0e54cf",
       "msolve_returncode": 0,
       "nodes_376_377": [
         4,
         13
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.016865666999365203,
+      "runtime_seconds": 0.08027791600034107,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "54f67973d9a4d200c008737cc36af68f72d599638d6dfc5986464e737cae60b7",
+      "msolve_input_sha256": "2f8a5ed490a68f636e69001ea28e31dc70b605fef43b55cfd723662e7a436641",
       "msolve_returncode": 0,
       "nodes_376_377": [
         4,
         14
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032909292000113055,
+      "runtime_seconds": 0.08042871399811702,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "27fc441558acba23cdf1dff599f67ec30f0f6410cb13133f82cb537144797f52",
+      "msolve_input_sha256": "cbf207d26c84c08f5a3908ed1d4b60fd489730effd61542de591909401c3668e",
       "msolve_returncode": 0,
       "nodes_376_377": [
         4,
         15
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032846682996023446,
+      "runtime_seconds": 0.03740308100532275,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "9bdabfc5644b4017a5820f0048e30f0f367a75ea855a3f49458f56bc449c3888",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        4,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.085282546999224,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -475,95 +514,95 @@
         2
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03307428200059803,
+      "runtime_seconds": 0.03663455099740531,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "3127da7cb8dd3e6b9613eb6c15e504c48c66f4b7d6c4851a8d1d0a31d7656064",
+      "msolve_input_sha256": "68ad49246b8a0a00da477e17df040a10f17308392a8708293b06172e2af5eea5",
       "msolve_returncode": 0,
       "nodes_376_377": [
         5,
         3
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03298623200680595,
+      "runtime_seconds": 0.08693843299988657,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "f013c53b887dd5ffbac622ff2cf322dab92ae3ba8608ed934eba890912bf4f46",
+      "msolve_input_sha256": "f897fae3aac6ec27aa71612bda4ff3d9f9f9bf2e4c1709fa02933e6c91200e26",
       "msolve_returncode": 0,
       "nodes_376_377": [
         5,
         4
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033143371998448856,
+      "runtime_seconds": 0.13294628599396674,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "9e834e43b852436b61dc1bc253aa042daea4c98d1432d861a360c5acae5f4e9f",
+      "msolve_input_sha256": "3daff27508c08c8d7605c674a6de0951d7a03868155cba110efe8466c92a93a9",
       "msolve_returncode": 0,
       "nodes_376_377": [
         5,
         6
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03284391299530398,
+      "runtime_seconds": 0.04771394599811174,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "812b1a70b63707589e8f69c32b3800c20a8f80aaae12b7ac86023eecff6ad0e6",
+      "msolve_input_sha256": "fde3f6ac8b4782f7b0f6f62c88749431c7f7e3bf6a3880d6c662e8f48ecb726e",
       "msolve_returncode": 0,
       "nodes_376_377": [
         5,
         7
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033162102998176124,
+      "runtime_seconds": 0.04013163299532607,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "425a14d01103098614b1eb0451f1ae7cb5f8615575289198b6041e1d30c3e56c",
+      "msolve_input_sha256": "fa3be66252e02ee91a4e9710280859e3a78ee0ec9953ba5117349dfbca9cd4ec",
       "msolve_returncode": 0,
       "nodes_376_377": [
         5,
         8
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03313640200212831,
+      "runtime_seconds": 0.08378940700640669,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "bb517d812be6690ecee96e8ea9a9b27292a2dd4a17e0154b7d79975c14c36d57",
+      "msolve_input_sha256": "023d7a83c5acc4d96dc1fcdbfd8204bcc28b4e7a27d7f84a41e62c5940eb0379",
       "msolve_returncode": 0,
       "nodes_376_377": [
         5,
         9
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.016858285998750944,
+      "runtime_seconds": 0.033948345000681,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "25547ced86c249be097dff390aa0ced3105afad7c2a742752b6fefc6b8eff708",
+      "msolve_input_sha256": "5a1630160cf0213430bd42352b15fa70eca31021f3141f30278ff32e72813457",
       "msolve_returncode": 0,
       "nodes_376_377": [
         5,
         10
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.016806856001494452,
+      "runtime_seconds": 0.04065959899890004,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "b99081de9a96d07ac3caac566a7e29c1180e9ec79f5878c237e2030b3904c7db",
+      "msolve_input_sha256": "50627a6184998325155748d6a5dc6ed077fe8efa409735a2868887e819a211b4",
       "msolve_returncode": 0,
       "nodes_376_377": [
         5,
         11
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032936941999651026,
+      "runtime_seconds": 0.06861185699381167,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -574,51 +613,62 @@
         12
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03287944299518131,
+      "runtime_seconds": 0.06723161799891386,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "d80598c0d9d7eca89009f36cc8df838a3aa1363ab558aec1f9363bdab3b59ca5",
+      "msolve_input_sha256": "852f688872cc685e2e8853baf25447e4037579d240f986acf7bbf4ef65adc36f",
       "msolve_returncode": 0,
       "nodes_376_377": [
         5,
         13
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.0329296229974716,
+      "runtime_seconds": 0.03852767899661558,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "51f8cbb8043fea65c8ebd883192bd6f6a178536f1e83f6e160e94a07d3178b41",
+      "msolve_input_sha256": "b70f50f151929068c77978b759b9f89dc7893d4c97efd9f6d6893254608bb17b",
       "msolve_returncode": 0,
       "nodes_376_377": [
         5,
         14
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03321781200065743,
+      "runtime_seconds": 0.06958008599758614,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "82b813af9fddeafc3d86d5459b625d0c1d4c1d072db6e57304ce7aff7c4943b4",
+      "msolve_input_sha256": "948007d640c3dd6256976b9c45dcf186b7df3eba13a47ac02cb515a9c0f20957",
       "msolve_returncode": 0,
       "nodes_376_377": [
         5,
         15
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 5.879541454996797,
+      "runtime_seconds": 14.776731291000033,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "35d9ed09bf13c5e2a8b0f14d8fc09805e15d9a63edc0fdd07a8fe3dc95783eb0",
+      "msolve_input_sha256": "e430f63f74d2490acef14eb95a0e1fe2b791e365ce7aa475ad9987d9f28533ec",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        5,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.07224107599904528,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "5e41d2f24399cb8b87a07ce9223b398d5c35a3b0e7c0a17347fff845def7f72d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         6,
         2
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.016714506004063878,
+      "runtime_seconds": 0.05536219900386641,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -629,7 +679,7 @@
         3
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.01681185499910498,
+      "runtime_seconds": 0.043323707999661565,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -640,51 +690,51 @@
         4
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03293705300166039,
+      "runtime_seconds": 0.08022744600020815,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "6e22c9542dd2ee8ad4a57def445d1f5fffe732758d2cd3683782ab8645163cb2",
+      "msolve_input_sha256": "48715a5f9be64a2369cca58fcfe9bde3cb21f1f6f00bbbf39ede5d57c86a9e9a",
       "msolve_returncode": 0,
       "nodes_376_377": [
         6,
         5
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03309510200051591,
+      "runtime_seconds": 0.1310392919986043,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "0b7c98319025b7eff90c97b7af4af1e61991341e2f3663cb632c74fc50f8653e",
+      "msolve_input_sha256": "98042b6f7ffaa9de0f16de62d1c417edebd204eb6acf7db6e303dd84c2c8e243",
       "msolve_returncode": 0,
       "nodes_376_377": [
         6,
         7
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033860961004393175,
+      "runtime_seconds": 0.06865316699986579,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "814d8892439d8b3d0609b766efc6fccdf97f8b9f13f17c0ca6ceeb90849e648c",
+      "msolve_input_sha256": "d385ea10ef5bf7917b4014b0d0d437d69e975560b1a047b236919ce11ca6cb69",
       "msolve_returncode": 0,
       "nodes_376_377": [
         6,
         8
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.017048550995241385,
+      "runtime_seconds": 0.07190563200128963,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "01b997fa3bf1244691c4d1d5d7f1ee3f2059bbf92d03c404793cca1a1000a365",
+      "msolve_input_sha256": "95a7e010253bad49c6e3c0c85eed3f278eb032f496e5a7a46ca46bccf83e5f96",
       "msolve_returncode": 0,
       "nodes_376_377": [
         6,
         9
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03314451299957,
+      "runtime_seconds": 0.08570644300198182,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -695,84 +745,95 @@
         10
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03311420199315762,
+      "runtime_seconds": 0.0730633850034792,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "439127edac86fbb4800d4b7c0fc24e620fedeab2c9dd638ffb8debbecc018fcb",
+      "msolve_input_sha256": "dc073066d327578bec4d057f44811fe26b4f1d21b963f4db7e004dee0ac552b4",
       "msolve_returncode": 0,
       "nodes_376_377": [
         6,
         11
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032949232001556084,
+      "runtime_seconds": 0.038192872001673095,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "89bce8c7354f8f3fd406604d703d0ed07113cb87990a22514c25f4b8672e0222",
+      "msolve_input_sha256": "d3e7829a8583f4c2bd49e6d3bcca2cd52634f0289c736f0f2560f36e34ad9ff0",
       "msolve_returncode": 0,
       "nodes_376_377": [
         6,
         12
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.016923964998568408,
+      "runtime_seconds": 0.04850951600383269,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "f90a2ad74c58e593106452bc99eb72dc23c44645b83e9d9eae4102e7e4da239d",
+      "msolve_input_sha256": "335cea82c593c743ae919a6dd2d76eaaa1e2a23c602280a99db95d98449347d2",
       "msolve_returncode": 0,
       "nodes_376_377": [
         6,
         13
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033463180996477604,
+      "runtime_seconds": 0.07054700699518435,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "e666ac9f6a700de967db07680ea66705452f14c9ed98a432dc67ce00aac7d03b",
+      "msolve_input_sha256": "280ee4efd187a9be2d6c3d1c43537ffd233a3da657a3b654e26feca0a45c2206",
       "msolve_returncode": 0,
       "nodes_376_377": [
         6,
         14
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03308065099554369,
+      "runtime_seconds": 0.06726238300325349,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "58d9a05b54205c62124c20f3ba43820b694be25fc6042653120a049ab66bdff4",
+      "msolve_input_sha256": "6de49196b16f5c2c05492add84fd9bbc413e56ca584c42c2e5ef61ba504c12f7",
       "msolve_returncode": 0,
       "nodes_376_377": [
         6,
         15
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033461322003859095,
+      "runtime_seconds": 0.07024170100339688,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "689eea5c99cede2dc1e6604600a1610df4d3b4588b8e87dc45181fe9c3270b8a",
+      "msolve_input_sha256": "1b60d9ae13336665baed5990982fbbcb50241c789c2acf9203ff580fb98d7025",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        6,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 1.9797843470005319,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "b024e232c2807768ac287f26eec29a95db5377534d2d374bf5f90546ee50f279",
       "msolve_returncode": 0,
       "nodes_376_377": [
         7,
         2
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03325203200074611,
+      "runtime_seconds": 0.08749789899593452,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "02aee0e509a7ea258284a4d00d62d81df7328e1a873341dea4379f415737f52a",
+      "msolve_input_sha256": "de1c96e9d689e0d7b4fcc0ea7a789d3736c048b913de3a59ed7baa35d75c8941",
       "msolve_returncode": 0,
       "nodes_376_377": [
         7,
         3
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03298892299790168,
+      "runtime_seconds": 0.04251729899988277,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -783,106 +844,106 @@
         4
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03302624299976742,
+      "runtime_seconds": 0.06847051699878648,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "8678936d281e022447c0972be64079c2739c385e86bc1bbdcd0596f86bda1acc",
+      "msolve_input_sha256": "523980a08de6158a10c008e504dfcacd7e26aa509cc64c822274fed2a3753680",
       "msolve_returncode": 0,
       "nodes_376_377": [
         7,
         5
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03294498799368739,
+      "runtime_seconds": 0.1318923619983252,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "cf6ecf918c351bb90e8320668c3bd0d287e5a31aaabfc1a89a006d1b13bc890b",
+      "msolve_input_sha256": "b780fe389c791e70c01acb594ce89dc487a05598d7664e71cd08480b56609a7c",
       "msolve_returncode": 0,
       "nodes_376_377": [
         7,
         6
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032950691995210946,
+      "runtime_seconds": 0.11988259200006723,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "8bc3fc2f7ab19ebd92b6a0bad49353f83b0a384e1ebcc76e97abf15ee45c1667",
+      "msolve_input_sha256": "0de6e85096854611187def2045770443078d508058e4b81d43f5b402d7c3001f",
       "msolve_returncode": 0,
       "nodes_376_377": [
         7,
         8
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.016858545001014136,
+      "runtime_seconds": 0.041491539996059146,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "0cd68cbb6aa9f7f921e8d52687c98be41337686c7190fbbec9e0d45ff3e63f1d",
+      "msolve_input_sha256": "42cc98c5a0cde7ba86d30e6b7e449f231a917061ac1698c8a5f3a5bffc454b82",
       "msolve_returncode": 0,
       "nodes_376_377": [
         7,
         9
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033114372003183234,
+      "runtime_seconds": 0.12910181299957912,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "4a67551248367f61c45852cabea269b389a3fffd9a8ca62674504a76004edfe8",
+      "msolve_input_sha256": "0c05ddaaed49098192ef02ae6463a5773022aa288828169778eeb56b0f102ea4",
       "msolve_returncode": 0,
       "nodes_376_377": [
         7,
         10
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.01676020499871811,
+      "runtime_seconds": 0.08031402499909746,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "276159d6e46a13d4d98430c185382ce0591d46b5b62b65dd418e0d3e475f1deb",
+      "msolve_input_sha256": "b84f38a0918e434795ec6d7c7617b47dd90cdbcf6ea2ffe01e79689ac59af4d3",
       "msolve_returncode": 0,
       "nodes_376_377": [
         7,
         11
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.0331734490027884,
+      "runtime_seconds": 0.07485370300128125,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "aa201b7fc8c0091559821552d1d27123a21e11e74c174835e5a3441980a99fb3",
+      "msolve_input_sha256": "0b0314bac0bd0464a62c49a3012af6704ac811ac9a2b518f0b350ec74d4e2765",
       "msolve_returncode": 0,
       "nodes_376_377": [
         7,
         12
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03281301300012274,
+      "runtime_seconds": 0.03865635299735004,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "3f39d72ab2ca58ed90de05e5fd4f879b6fbf6bd8b68e5bff3db5be1b4165693b",
+      "msolve_input_sha256": "27df76cc8e8028d8c762ffe2b0b962783c5e2a2db77a58241426fc81034c9d2c",
       "msolve_returncode": 0,
       "nodes_376_377": [
         7,
         13
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.017058495999663137,
+      "runtime_seconds": 0.04947469699982321,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "ab7e8b4616bd2f213ac2619e6fc26128e312e4ea2b2c3677d896fa2cf85286b1",
+      "msolve_input_sha256": "6da25c1560e30d21d35db53bd2d060f2324b2f4608ae666c4691fe6ac584fa21",
       "msolve_returncode": 0,
       "nodes_376_377": [
         7,
         14
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.6663173360066139,
+      "runtime_seconds": 1.5846428759978153,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -893,117 +954,128 @@
         15
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03293376699730288,
+      "runtime_seconds": 0.12931373700121185,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "1b2355a4b4f57a136d55cbeefce53673404bcb909b2c190f7e55e551f13f37fe",
+      "msolve_input_sha256": "16cd5cd95063efacad3d460a87c8b835b6700ff59f0d3f3670ecab1f4b79448a",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        7,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.13355836999835446,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "0c186fbb54b70aba7a4fbc9f09e7708912a91fd2487dff2f083404fbf215116d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         8,
         2
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032891443006519694,
+      "runtime_seconds": 0.12573296600021422,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "179bf18dff6c9f3787e4dd14826afa77c49e961edd2f1c87ba2de7f4939bdf3d",
+      "msolve_input_sha256": "839d9b2701ecdf9810f59cd9a074de823833afd14f95ff3bc3bae328691139e7",
       "msolve_returncode": 0,
       "nodes_376_377": [
         8,
         3
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033074496997869574,
+      "runtime_seconds": 0.08851411000068765,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "a8c5ef2bc5cf751429b57baa1fb5d37e07c1e7f24c44451ece03c806b3b4394e",
+      "msolve_input_sha256": "d6b002f7783b3e3957999e7d818d3b6fadc7cea16c29077395cf7bc352e80ba9",
       "msolve_returncode": 0,
       "nodes_376_377": [
         8,
         4
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032904373001656495,
+      "runtime_seconds": 0.08176377199561102,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "31a66f2802da648d9bc86dfcbd223b94244e0d3b0d3536a53bef044a5fc57302",
+      "msolve_input_sha256": "2158be8e6e0b7da1544bd4213b2fc3c558daf163368b8c8f728a022571c403da",
       "msolve_returncode": 0,
       "nodes_376_377": [
         8,
         5
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03287683200323954,
+      "runtime_seconds": 0.07475306899868883,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "6219a195a30de83d9788279a6b2161b1220c301a22d9ae6884064d078a759de4",
+      "msolve_input_sha256": "1c4ad297fe50a6c4aa1d202150596aee02496aa1799f73187fb2a3fc253ca6bd",
       "msolve_returncode": 0,
       "nodes_376_377": [
         8,
         6
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03337076199386502,
+      "runtime_seconds": 0.05283902000519447,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "0bb9d7550859bcc8a50430f984ae5a61e81c5999bc7d0370497aac6d55a89304",
+      "msolve_input_sha256": "3511f10c6244babfffe36d0b066fc5ceb1fb78d3a583a956da190a79fe70baf7",
       "msolve_returncode": 0,
       "nodes_376_377": [
         8,
         7
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.016877385998668615,
+      "runtime_seconds": 0.050743137995596044,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "e49504a24abe1816bee1d41d0e69023d4f6d81eccf5e9613095213f96aa5254c",
+      "msolve_input_sha256": "ca545b27e6323e44d31b7f8f2b732a91dd565599054332acd4656ed8e66baefe",
       "msolve_returncode": 0,
       "nodes_376_377": [
         8,
         9
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03293906299950322,
+      "runtime_seconds": 0.06932288999814773,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "b15d1dda4a3ac8341d0a3f2deb62a8b21c9743d988c32966359541e668ecd9b5",
+      "msolve_input_sha256": "c77c5020893e88542d9309d617150190c12d9c7509e69a7463545ef5bcd1fbe0",
       "msolve_returncode": 0,
       "nodes_376_377": [
         8,
         10
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 5.028387997997925,
+      "runtime_seconds": 13.829336177004734,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "74046a3dbd81b4f21c6c61a3b65a8683a69a0c3de82cdca8ed68994654e00ed3",
+      "msolve_input_sha256": "a076b04972e2a6cf0a4a1f66c2a1aad55fe43ae21cd60613f1a28612494e796d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         8,
         11
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.01704553000308806,
+      "runtime_seconds": 0.03754867699899478,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "2769bfb367a21822644e3ceac8b66003adb930e3fd47958ada05d6e318d20518",
+      "msolve_input_sha256": "50ec559202911e79b9c35eba3603f96c81e5560bccfeb93905440035ab05e437",
       "msolve_returncode": 0,
       "nodes_376_377": [
         8,
         12
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03315241199743468,
+      "runtime_seconds": 0.036689469998236746,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -1014,216 +1086,238 @@
         13
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03297673099586973,
+      "runtime_seconds": 0.07250783799827332,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "93d916faee44eb2bac55e9a5909f85e9ab14ce08076549c833c3260493efb7f9",
+      "msolve_input_sha256": "2b1122751e6c4336b9f0549e5ff090b8fae6d195586a8b5ee75cfd9aa7e1a575",
       "msolve_returncode": 0,
       "nodes_376_377": [
         8,
         14
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03292166300525423,
+      "runtime_seconds": 0.06917047399474541,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "5d827186fabb215cef5ddb4e6fc114486a9282b3ba2ddb9cfbe7f0a1239e98cd",
+      "msolve_input_sha256": "1370644890c878ea1b29a577c1c086f0e9ae74c52203209e1c818c5b76ed72ac",
       "msolve_returncode": 0,
       "nodes_376_377": [
         8,
         15
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.017087635002098978,
+      "runtime_seconds": 0.08483338699443266,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "4e2fb9d85f49e70eb950bdfc6a3fba3690ec13c33fee162c76d627fd53585f21",
+      "msolve_input_sha256": "980dd3cd61db8a05f66ea2d7b158ff7a8bfd1b12f604d424496fe761ed0856b1",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        8,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.08073022600001423,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "d9149db4e537cce00cac9066d568eaa301e3eb6168a46e58a74adbe616d40b46",
       "msolve_returncode": 0,
       "nodes_376_377": [
         9,
         2
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032906243002798874,
+      "runtime_seconds": 0.03606334100186359,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "991e3783ad7e07f5b964aa3e36c3045cbbc9220af87093abe56134c69ce75a1f",
+      "msolve_input_sha256": "43b89aeecc104eaefad1bb92cf5fa840b9a014a8a6c5de6755d1a620cf31da03",
       "msolve_returncode": 0,
       "nodes_376_377": [
         9,
         3
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 1.268194696000137,
+      "runtime_seconds": 2.591567217001284,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "dd938a9008408fbb5755e05bc794fff2c49c61b290ed11cf09c42a3f83bdc55d",
+      "msolve_input_sha256": "1e9b53d49640a231772f7894891242ab29beb0cb76a040d1da376ced828194fb",
       "msolve_returncode": 0,
       "nodes_376_377": [
         9,
         4
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032999725997797213,
+      "runtime_seconds": 0.0762445030050003,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "ebb4e9cc7dfe05a0e2e633caeccaff59a5dae33888d75429f917878d6a3749d8",
+      "msolve_input_sha256": "6adfc51a37b666d99050587baafae69ca0c5aee374fe446f1b796dead2c5e424",
       "msolve_returncode": 0,
       "nodes_376_377": [
         9,
         5
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032993241999065503,
+      "runtime_seconds": 0.09207613699982176,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "ff84e339aae9cc64d8515687d952b48bd5a084672f581f45de20fe56bd6991af",
+      "msolve_input_sha256": "461023d2fae7392383a72a51dbdf5003062145f02cf21f952f3d7baf2e1ca92d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         9,
         6
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033278579998295754,
+      "runtime_seconds": 0.08511396699759644,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "04f667e806b82d34a76c82567d3e423dfc35c3059ac84ed9906a963e9da0e439",
+      "msolve_input_sha256": "5be394377baa9d97a52dbc61ef834e8519893f24f9a9d4c7b808ad83297cc620",
       "msolve_returncode": 0,
       "nodes_376_377": [
         9,
         7
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033035430999007076,
+      "runtime_seconds": 0.07721115999447647,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "719d6c0023d73d88afd22b8959357a45c4aea2d999fcb6a837819fd09d9440c5",
+      "msolve_input_sha256": "07d03adefc21290a9ee94113406dc373beae6a6944d26e818cdaf9be866ed002",
       "msolve_returncode": 0,
       "nodes_376_377": [
         9,
         8
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033042602000932675,
+      "runtime_seconds": 0.06619219499407336,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "9ab77714307d683352c476e7bc6d62ee884c2499632f4a42be761c2b117e792f",
+      "msolve_input_sha256": "d2d2ced3454afede44cd695c6d4fd1bfa307c877d06113e7988d0cb0e40e96b0",
       "msolve_returncode": 0,
       "nodes_376_377": [
         9,
         10
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033335221000015736,
+      "runtime_seconds": 0.03872218600008637,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "ca84ba3fa3bb4a0726a67bbe3856a0e1646ad0849f717e8f431951ed5241a9cc",
+      "msolve_input_sha256": "e94111d274485a85d53a97f9957cf6aba89cfc24eadc535a5f751c1d994aff53",
       "msolve_returncode": 0,
       "nodes_376_377": [
         9,
         11
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033252115004870575,
+      "runtime_seconds": 0.13277247000223724,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "06bdc622ba49adf046958c3c918aad3d832058b57d0caceb62c5d835575a8096",
+      "msolve_input_sha256": "d5c1aa71cf940a8f7a940cc5e066456a0f9abd65253a4c9fd7ea238e88ea25e4",
       "msolve_returncode": 0,
       "nodes_376_377": [
         9,
         12
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03311714300070889,
+      "runtime_seconds": 0.13294714599760482,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "f3b686c1cbf22f9271ceb5fb08d7d4b0d34e5d8215739a0487e34a3da1f92456",
+      "msolve_input_sha256": "6d0e0fd33363fe50f8a7026323c768bbd7ee607e36697fc9d926aef126673bc4",
       "msolve_returncode": 0,
       "nodes_376_377": [
         9,
         13
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03309426199848531,
+      "runtime_seconds": 0.18604483699891716,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "1cb25aa966a87f9dec55fc1454cabc14f59194119b2e230ac22ee131f0abe92e",
+      "msolve_input_sha256": "59b035b50ac1bcdeec94c7fed6ab3342a3f4026baa116c762726d0f9656a25f8",
       "msolve_returncode": 0,
       "nodes_376_377": [
         9,
         14
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.017145285004517063,
+      "runtime_seconds": 0.08205423199979123,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "7d0cd0f975e7f453e1500796c49c3855d5c9bf4b31d4c21f46b94e6938215964",
+      "msolve_input_sha256": "2620dda6dab93655d0cda8def8c34c8e6773231a9f26ce6ecebb9613e6a28dd5",
       "msolve_returncode": 0,
       "nodes_376_377": [
         9,
         15
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.016985986003419384,
+      "runtime_seconds": 0.04897557599906577,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "1f602c74ed3985f145707bd8e63a562905d09d490eca6398670dde73ff045e56",
+      "msolve_input_sha256": "caddd180b623c06d085277c0c02a4181776dc60de19c2b8a27a7faf51e994a4f",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        9,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.0844249360015965,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "fb8c014841b8dcf2cac799722978de03d0a12c43b0630b0806d13e574f7c3bcc",
       "msolve_returncode": 0,
       "nodes_376_377": [
         10,
         2
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03320813099708175,
+      "runtime_seconds": 0.13785093199840048,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "6b8fec9d6983acd2333395d4f2140e1b80b4b61a2adba9fdacbf013604fbdae6",
+      "msolve_input_sha256": "8ab0f39cf8c92bc4f74990d305d668d0844dd80bc57f7a2ac6f67b0eb842ae4c",
       "msolve_returncode": 0,
       "nodes_376_377": [
         10,
         3
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03339063299790723,
+      "runtime_seconds": 0.03747075700084679,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "7991bba6d20c07272f2442cbc091062c6ea08b2cbe00a4af9c2418272c9d837c",
+      "msolve_input_sha256": "3609430187f458b97c1b32c1e076ec2d7de12261b5d5166b1e9d72d840796f39",
       "msolve_returncode": 0,
       "nodes_376_377": [
         10,
         4
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033347970005706884,
+      "runtime_seconds": 0.07925424499990186,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "b2bedca1dec4eb384892a5e90edd96087fba61e0a7a55e4e9f6b86a63ae8a86e",
+      "msolve_input_sha256": "2166c03b1ad178da908d37ccc41ec4b67781ce079a9164f4d44bbc8bdd446c37",
       "msolve_returncode": 0,
       "nodes_376_377": [
         10,
         5
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03316576199722476,
+      "runtime_seconds": 0.13476946800074074,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -1234,447 +1328,480 @@
         6
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.016969765994872432,
+      "runtime_seconds": 0.03903813199576689,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "6789b9a2becaabb4fc7f48d86211b3b1a0884c6987d6c2f24e3195c669d6cb7a",
+      "msolve_input_sha256": "29d530cce8e25c80a829a64f49b8c47b490b664d0b7dd99aa1238727de399101",
       "msolve_returncode": 0,
       "nodes_376_377": [
         10,
         7
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032963593999738805,
+      "runtime_seconds": 0.03733484599797521,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "894ade9fd412f5f6a09fb3a4c4723a6cffb3c9fe6e356aa691bba03a412b91c6",
+      "msolve_input_sha256": "cd86987d9ffa393cd0fab95de3f5aee1a65a2b50db2085d5d4a9773e8dff185d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         10,
         8
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 4.777608227996097,
+      "runtime_seconds": 10.4369748159952,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "2ce0a37006dead9e367d06bae86501ea3f974ea155c5588cb26ce68038d36dcd",
+      "msolve_input_sha256": "b24c5dee3da039c7508c3667d7aafb48b029fb755ac21dd399e9130a982e21b4",
       "msolve_returncode": 0,
       "nodes_376_377": [
         10,
         9
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033109791002061684,
+      "runtime_seconds": 0.06941092500346713,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "860a5d2f7fc5887deb1c2a9a69677f82f7ec913252c5d7dff425d4e78ddf7523",
+      "msolve_input_sha256": "c4e408ff46b9afaa2e979c6ab5c76910591f3444bba401fd2302b14ea5209b78",
       "msolve_returncode": 0,
       "nodes_376_377": [
         10,
         11
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.01688723999541253,
+      "runtime_seconds": 0.09012068900483428,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "bb2dd3ad77bc2a2839775d61f71c731b281ee7c2e2c3261cd0ccaaea1cee1667",
+      "msolve_input_sha256": "0adb78560e78b512bd409aa764d96134dfaf7b553349ac6d68a0436a5380cac7",
       "msolve_returncode": 0,
       "nodes_376_377": [
         10,
         12
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03313664199959021,
+      "runtime_seconds": 0.13192226299725007,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "fac495f6249c8911c478816baaa9dd9768d2454d1ca1a43caa0ce2df1dc9c5a6",
+      "msolve_input_sha256": "0496c0c03b777d67250705238f953a7c9755034a8f360ed86721f2832e60a303",
       "msolve_returncode": 0,
       "nodes_376_377": [
         10,
         13
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03356630099733593,
+      "runtime_seconds": 0.08359079100046074,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "9589f956a1e7eee721bfb59f5abfd9a1c24827cc0f77e2465e0219615e195a18",
+      "msolve_input_sha256": "7f7e5d12360b8359830f99032f28b51e5de961986e84b3a70f4d500d5ac6aad9",
       "msolve_returncode": 0,
       "nodes_376_377": [
         10,
         14
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03282607199798804,
+      "runtime_seconds": 0.08154665899928659,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "9b27069a4748a724850c62a528124c75a7d90a80006fa9d10889263067e9f2b2",
+      "msolve_input_sha256": "69812df984419b37e28dd479c603e543352f13af55845751744d6cf50bb94df2",
       "msolve_returncode": 0,
       "nodes_376_377": [
         10,
         15
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.0332324030023301,
+      "runtime_seconds": 0.13931870999658713,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "e7514f047273b945c2c37f663005b2c2ae1a6a85110953094e29d9acdd729ace",
+      "msolve_input_sha256": "1da90589e1db492c46b755454c1156ce24466a34e9b861aaeb0501767868471c",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        10,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.1348007039996446,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "e1d24b6ec0b9dc4252f1fc0703079d082b7e17dcbf896dfb3ceb6fa30323be45",
       "msolve_returncode": 0,
       "nodes_376_377": [
         11,
         2
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03303361300640972,
+      "runtime_seconds": 0.06957355300255585,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "76178acc91c2959fdacc47a5b6067ea6bc1143790d4f39e0ce32397bdc701a20",
+      "msolve_input_sha256": "363a4921497b5dba7f5ee66b9fed0a4e39135d4fd1ef3fc801e2fea63aa2e5b3",
       "msolve_returncode": 0,
       "nodes_376_377": [
         11,
         3
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.016958934000285808,
+      "runtime_seconds": 0.0372399320040131,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "6c9109af85c24b9ade7c9dedfcf9fab6f57da8d442bcd091850b3dfaef2b2f82",
+      "msolve_input_sha256": "b0f463653733fd1a21c36e08e3bd657e4ca228ff8f1b511b921e84a13ce3957d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         11,
         4
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.017165915000077803,
+      "runtime_seconds": 0.08408732600219082,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "85ab938784a0ae24ef0f52231203f2b7f3a76e52c84f4ddc5c6f4288df6517e3",
+      "msolve_input_sha256": "85dad7547e9b5dbc8907d9ea114e637d01a83df3673ea86ec388f6cffbc11f73",
       "msolve_returncode": 0,
       "nodes_376_377": [
         11,
         5
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03341692100366345,
+      "runtime_seconds": 0.08171637899795314,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "a0a8bff5676b3f9f3154841818c25dc1667e6bbc7f07c7b3f2152a0c75dde41d",
+      "msolve_input_sha256": "62c7555c8de98b98bb80f74d110a68400a78a58845384f4da6be2cb94cafbbbc",
       "msolve_returncode": 0,
       "nodes_376_377": [
         11,
         6
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03303916299773846,
+      "runtime_seconds": 0.08636524100438692,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "6806653985712160d8381e9a4ba925a2103b0d7a78ebce9130ad3d096e73d20d",
+      "msolve_input_sha256": "450ea337fef6226bc5b15175b2268e645de5787d334bedd564fbff9384ff62c1",
       "msolve_returncode": 0,
       "nodes_376_377": [
         11,
         7
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03316182400158141,
+      "runtime_seconds": 0.07860009300202364,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "59faab7f468a2b0e09f9f69d51e0a9e20702ec7f638b943ad7fb66a3fcc6b757",
+      "msolve_input_sha256": "5c5244212d602f02ff8a748967f006b51280f85941a61b77ccd1998864f20300",
       "msolve_returncode": 0,
       "nodes_376_377": [
         11,
         8
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03301468300196575,
+      "runtime_seconds": 0.1711562709970167,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "ce495da026b74985dc98f1862c1a7bcaea9e91fc4aad343c9a28889042e2ffd5",
+      "msolve_input_sha256": "5abfb1ac665656d86caa3b2e45d97c3d92d111036b1432b6adce0f7ed92ebb07",
       "msolve_returncode": 0,
       "nodes_376_377": [
         11,
         9
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03304578299866989,
+      "runtime_seconds": 0.06786127800296526,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "7ee1a7b2b659f3f6f48f8a7827a344913fd9059c1a303a876fbb44064b174359",
+      "msolve_input_sha256": "039cf66ab01f3fb1b73202ad2b4dc40971e7cc2c9dadc5c11a8365acc467bc26",
       "msolve_returncode": 0,
       "nodes_376_377": [
         11,
         10
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033284002005530056,
+      "runtime_seconds": 0.0401384990036604,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "9a952d7d68a1c0854bbee8442f83ed9c8d83a43f90594f392a8ac008116111ca",
+      "msolve_input_sha256": "73c1317c022fa6ca7e901c26a331eabfca964b11504b9d28e53a2852cdf0479d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         11,
         12
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03315500099415658,
+      "runtime_seconds": 0.036736866997671314,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "1a3288568138af2a1561f4d7ee94bac6766fb86971b7d02eb18c9569cb6510e5",
+      "msolve_input_sha256": "da5d2f7bd87a7a9f4937805b74c4ee5771b380e8a7af0f64527b073d01e3534c",
       "msolve_returncode": 0,
       "nodes_376_377": [
         11,
         13
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03308572099922458,
+      "runtime_seconds": 0.13203388799593085,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "f6f0435121ca7d7bc8b21417df6459453f82ddac449b8f53f3ae47ee735f8220",
+      "msolve_input_sha256": "816a80436013c2fd257df63c4558f76bae26baba45b1b8ad1bf105325ea52aa1",
       "msolve_returncode": 0,
       "nodes_376_377": [
         11,
         14
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03337075200397521,
+      "runtime_seconds": 0.14550941899506142,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "d6a65bf9a1c1fc545ead7413c81fcf205b4c7be7505afcd98cd414f4d39e5363",
+      "msolve_input_sha256": "bf237f0a38312d02660bbc2af2f4bb46ee0a2ea7b1354747f935d1d2838509fe",
       "msolve_returncode": 0,
       "nodes_376_377": [
         11,
         15
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.06520115600142162,
+      "runtime_seconds": 0.13587902799918083,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "b06c428a7fa956a1694360e617078e64ccf2b4ba847338c6d549a8ba5f30f735",
+      "msolve_input_sha256": "18a90fbc8650b46fdbb6bb490d1c1aa6204ba3c5322c2f082a64c464d8ba5c52",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        11,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.13178422800410772,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "1e24fcc35144a2c363b1a64f36a684c6248b510e615a52272e6fce61a359f00c",
       "msolve_returncode": 0,
       "nodes_376_377": [
         12,
         2
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03315288200246869,
+      "runtime_seconds": 0.07535208600165788,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "337f1b8d70f8958ee11634461cd9336817490ac3e7f0d13a166ad79aeee8d1c5",
+      "msolve_input_sha256": "7774f7dd25ff9be1aaf2c30c2f327dadd02ffb88319f110c463cfb0182bf6f75",
       "msolve_returncode": 0,
       "nodes_376_377": [
         12,
         3
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03312370200001169,
+      "runtime_seconds": 0.13768541400349932,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "e7f89a3ef4b25719567bbf058cd19840cfe832c7895c2f194216e8f40af334a5",
+      "msolve_input_sha256": "3c5a379e53a5b946e0642b5b0bc652cfd8139ca543469ecb63563ca87217843d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         12,
         4
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03308161300083157,
+      "runtime_seconds": 0.13045349200547207,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "cad116ae2f614deebabd047b03b6137bfc36b68251ef14d91a30cd4b82d40afc",
+      "msolve_input_sha256": "5b7112fffee21dd0159201e48fa0f4112be163d5ab94a31ecf10a06df8742a0f",
       "msolve_returncode": 0,
       "nodes_376_377": [
         12,
         5
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03322287300397875,
+      "runtime_seconds": 0.15731708599923877,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "f10a602fe7a4e57784e24d5f17c7d41d9a97163084e677c10373ce5b49a58091",
+      "msolve_input_sha256": "97f70ea6ea3f5cfda041c31e014278251450487b69db9ab0a555ea763a5189b1",
       "msolve_returncode": 0,
       "nodes_376_377": [
         12,
         6
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.01702606599428691,
+      "runtime_seconds": 0.09107488399604335,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "daf6db73d79e83c58b6cba3123f9fa130718c336409c59a5a41faeaf41d6114e",
+      "msolve_input_sha256": "3c78636a3bfaeccb2da97ca1c1f6a65d65e0cc7b75f62640d865897e5fb7315d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         12,
         7
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.017130061001807917,
+      "runtime_seconds": 0.08715871300228173,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "00c4a77517b4f5f52165ec19df5c934d0e50bcc487ff69038cedbde32482afeb",
+      "msolve_input_sha256": "f6a16940596bb631cd7349ef334be75696df49c80171140907c6b99f370ee55c",
       "msolve_returncode": 0,
       "nodes_376_377": [
         12,
         8
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03311845300049754,
+      "runtime_seconds": 0.13134346099832328,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "944d6072fa71ba953c52bfc3e0ad574e0f59b5e98b39d2086f1acaa3d41909ae",
+      "msolve_input_sha256": "c2a454549c206452427af80424a788a75cb609c7c3bab4c5a3b63f7063d4d4c3",
       "msolve_returncode": 0,
       "nodes_376_377": [
         12,
         9
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.016890261002117768,
+      "runtime_seconds": 0.07098405299620936,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "cd17b27926761707fd8f6f89e6db35382c3f3196f289d017f15a46e737be492b",
+      "msolve_input_sha256": "f9803bc1409e0c416d79d04d3a478b2c7d3e4c915c0c68e48f5c171497f3301c",
       "msolve_returncode": 0,
       "nodes_376_377": [
         12,
         10
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03319496200128924,
+      "runtime_seconds": 0.13971399400179507,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "ac0fea3e7de03eb28c695d873af979be2c8c119a8f64800df31b0d7718353168",
+      "msolve_input_sha256": "bd8dfcae44b829dc99821da8848aba013dae98608c65e4f7316908384971c1ec",
       "msolve_returncode": 0,
       "nodes_376_377": [
         12,
         11
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.017159584996988997,
+      "runtime_seconds": 0.054575053000007756,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "5990dc7df15916e9d287110819c46a19e063fc8ffb5c631dcf165a2e483c6886",
+      "msolve_input_sha256": "59752c97e21a94459244095a77234101ac927c14bdd284eff2a3f709e5025606",
       "msolve_returncode": 0,
       "nodes_376_377": [
         12,
         13
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 7.134001430000353,
+      "runtime_seconds": 18.895725064001454,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "658bfe6bbc56ef8cf3107b38e3ac47c293127b3464d8357c2e544fd5ccda2c5d",
+      "msolve_input_sha256": "9be3dd8814d05a72e299835f4b8a7dbe1fc89f9d980346f1529169dc3a03dfbd",
       "msolve_returncode": 0,
       "nodes_376_377": [
         12,
         14
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033268182996835094,
+      "runtime_seconds": 0.08089495699823601,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "5ee34e190667efeceac88b9441eeb6584e47b60cb69819d43a85e6e71a743a92",
+      "msolve_input_sha256": "ebbf5f9e62f36793f8300fde693f5f58bebee8c2b4481844940b31132792d008",
       "msolve_returncode": 0,
       "nodes_376_377": [
         12,
         15
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03306756199890515,
+      "runtime_seconds": 0.03656219299591612,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "6c5293ecc7634a14d1593040d08c8763bfe4a1d684fc074f2c23039cc26638d0",
+      "msolve_input_sha256": "6f75638b8a036e3d934c616d495d80fb8e48b120a640fd170a63fa05861c3cb1",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        12,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03527030599798309,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "3d2abe721da99d60c905920d1e0d5146af6b1e46d1a998528708a9278b7aea05",
       "msolve_returncode": 0,
       "nodes_376_377": [
         13,
         2
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03314708200196037,
+      "runtime_seconds": 0.036927038003341295,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "46d7bfd2b3dc8952c0eaf638493dd99f1f14b85f39df19c1417dc8d7c1e1270f",
+      "msolve_input_sha256": "185502fff091399d2f5b3a084c3ab6c4e917b5aafc689828968323e5b1e62197",
       "msolve_returncode": 0,
       "nodes_376_377": [
         13,
         3
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033141662999696564,
+      "runtime_seconds": 0.038779718001023866,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "8be341b4ecfc744181bd490c34b184eecee03508c93c9b4f736d48fff03d60c4",
+      "msolve_input_sha256": "f7b465ecb7b4b33ce29f0588de4ec6f44dd01fd79552fc8f46768bca54bd875c",
       "msolve_returncode": 0,
       "nodes_376_377": [
         13,
         4
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.0652669170012814,
+      "runtime_seconds": 0.06718111700320151,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "61fc596ea136d153016c5cefdedff53d7311f5a49f1bed134d295121b2dfc8e1",
+      "msolve_input_sha256": "8a5e2f360cd7306d1ad851e2a68b65f5adf7aa7a660619e6d1fb160e93bbc954",
       "msolve_returncode": 0,
       "nodes_376_377": [
         13,
         5
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.032962163000775035,
+      "runtime_seconds": 0.12883525100187398,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "4ba4b2c1d293ec564abb6b3c41b7a87d6f90a95989265582152d1e40bc19bec5",
+      "msolve_input_sha256": "b93fdcdca49254c686476c68cc8e61830a44b92066b93bc378bff66bcc929973",
       "msolve_returncode": 0,
       "nodes_376_377": [
         13,
         6
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033058222994441167,
+      "runtime_seconds": 0.037167478003539145,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "cd374501682de8ecb580bfbd81eceb91675aec513164b7ba2de432fb5f92340d",
+      "msolve_input_sha256": "5eff960421d29f2819fb6b9ae601c34a9221926e3d750bafbad2d469b559e685",
       "msolve_returncode": 0,
       "nodes_376_377": [
         13,
         7
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03305931299837539,
+      "runtime_seconds": 0.03759733599872561,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -1685,271 +1812,293 @@
         8
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03308225799992215,
+      "runtime_seconds": 0.13589154800138203,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "2925f30a845ab06973170ea823649c3a8ae045291cc2cf72b30049236af55a1e",
+      "msolve_input_sha256": "299d07acffd097ed93c531e43dcdbedd4203c9ed90b25f9c46ea02f02b17e584",
       "msolve_returncode": 0,
       "nodes_376_377": [
         13,
         9
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033220422999875154,
+      "runtime_seconds": 0.13418333200388588,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "81996c86afd435c1197737d311202b36f33500a54b4e4e65dd0761b9c14fdceb",
+      "msolve_input_sha256": "76ea8e4076298efa4a87338be30c3eaddaf7ebfe20d8fae35ea691ad0f6e50d7",
       "msolve_returncode": 0,
       "nodes_376_377": [
         13,
         10
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033000233001075685,
+      "runtime_seconds": 0.1276751530022011,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "03d0c3a8d31dbfdd52d28708dd5a6789f4ba9702e447702aa3d71717534b0d7a",
+      "msolve_input_sha256": "0b1adbd42b82ced94f4ce410ba6f68a870741a9fc5e442fff6a3f58583b78fa7",
       "msolve_returncode": 0,
       "nodes_376_377": [
         13,
         11
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033155282006191555,
+      "runtime_seconds": 0.07215224900573958,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "795109fcad6d62da0247f6b6f9c43f8a6acc2ae7300870b570c941c0b31c3ea7",
+      "msolve_input_sha256": "581158b7a8716608ee8e989fa9270de74f7a3f9ac4b74a4cd90496c690bf369b",
       "msolve_returncode": 0,
       "nodes_376_377": [
         13,
         12
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 1.0177777470016736,
+      "runtime_seconds": 2.0417883879999863,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "aff08d2592445a1a32cf3f0421cfb11db2e9eaee3cb36224279fe41ce5cbbc55",
+      "msolve_input_sha256": "346a86136e748364d0d6ad90e4430b8eba4ddefd140048830f9ed832de90ecb9",
       "msolve_returncode": 0,
       "nodes_376_377": [
         13,
         14
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03305810299934819,
+      "runtime_seconds": 0.12767622300452786,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "fc412ead17d92abd85778010b9c6dad06397709e191a3034a141f4a8102af88e",
+      "msolve_input_sha256": "cd2d49d80f179fdb09daced38fd15e4adf08f63e87f6b4e5eb465d8ee57f5074",
       "msolve_returncode": 0,
       "nodes_376_377": [
         13,
         15
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03326566200121306,
+      "runtime_seconds": 0.1349133929979871,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "b62ea5eb688cf0fc443d8cba84a50f2e6cdffa641b525646c02933c9f2e600fb",
+      "msolve_input_sha256": "9f699754567ac712c6394d0761f9103ec687f1c4be1caa36b270a0f256abd88e",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        13,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.13246523999987403,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "9f3c925fdf5bbba3822c5babc4bf388165ef815391a243ee3a6c46b2c60cf91c",
       "msolve_returncode": 0,
       "nodes_376_377": [
         14,
         2
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03314857299847063,
+      "runtime_seconds": 0.13139203999890015,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "b87efe9859a8321da7d4fa20767f4ca5b4230b08bfe67836a11f82758a0b23cc",
+      "msolve_input_sha256": "29b08115f51fb07a043bf35adbfa4f63c5767dd44aaff3c682726ca81e2dbbf1",
       "msolve_returncode": 0,
       "nodes_376_377": [
         14,
         3
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03301908299908973,
+      "runtime_seconds": 0.13093404800019925,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "757ffc90827c0ea1ce743f95b10fdab090e67a2b980cf10f2274dcd4e75d846d",
+      "msolve_input_sha256": "d0fec1e8216bab3655068df3277f0278b5f199b945cf4704788b391f9642718e",
       "msolve_returncode": 0,
       "nodes_376_377": [
         14,
         4
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03315131300041685,
+      "runtime_seconds": 0.0865573709961609,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "208bdac93721125b5828bcf75f8293cf4a5f9cd5b63ec840aaf3eef48d8e7a2c",
+      "msolve_input_sha256": "5cdb3b4fc82056aa1c58cf26dfd4186bd0562176771150dcba5790dc0ba7f4e9",
       "msolve_returncode": 0,
       "nodes_376_377": [
         14,
         5
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033352422004099935,
+      "runtime_seconds": 0.0894789279991528,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "ab761753c70c026db31da9d50c6a43a42b3ce20497967cd5ffb4692fc21c2be1",
+      "msolve_input_sha256": "29b74c21187515add80eef0777348ffbdbb6b7b6ee410534e71fd953020786ac",
       "msolve_returncode": 0,
       "nodes_376_377": [
         14,
         6
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03311024199501844,
+      "runtime_seconds": 0.14196494600037113,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "a4a97adb711e03738439cee536edc64c0876f8992f29ca22f08a03558b76f48c",
+      "msolve_input_sha256": "1614ef7a591e2228411ae472583aaa0df3a51ab87e72b61e4eea010ebb305b4e",
       "msolve_returncode": 0,
       "nodes_376_377": [
         14,
         7
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 4.677493511997454,
+      "runtime_seconds": 12.232825826999033,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "f71f5e205edc3fdbabf957006b625455a8d35247bd16a7743e38f7eacdef235b",
+      "msolve_input_sha256": "33d1ca4c757bcbfb1e3c4cf7dc1921af3f4629d1edd91f0e0807ce2236d3f140",
       "msolve_returncode": 0,
       "nodes_376_377": [
         14,
         8
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03302217300370103,
+      "runtime_seconds": 0.08437365500140004,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "aafabadbe88a63f41e99e9fa349920c47c027ae5048da661244f5748beefd0a7",
+      "msolve_input_sha256": "b3f17db98692ecf219b57aefd82f2df3a8c68bdde19fd46d9766299a154bcc11",
       "msolve_returncode": 0,
       "nodes_376_377": [
         14,
         9
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03304732299875468,
+      "runtime_seconds": 0.12953967900102725,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "a6c5df1d4ad58547f5db384351b3420290a5816d6790ca6e81c0a7a44d01050b",
+      "msolve_input_sha256": "c5391ec9ac09584363862c85d30bece0a6d5ef196ca6dfd89d0aaa3f0faae7e2",
       "msolve_returncode": 0,
       "nodes_376_377": [
         14,
         10
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03301717300200835,
+      "runtime_seconds": 0.14138636099960422,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "1dad4e9faa5277ba49e68d18952cfe0c3dd586ca58c1b5ab22153aaad5155aa1",
+      "msolve_input_sha256": "fb8a780d2ceefe5336af4be54f9dc85f3f536000c2c7d055576d85faa3f6b817",
       "msolve_returncode": 0,
       "nodes_376_377": [
         14,
         11
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.01689173100021435,
+      "runtime_seconds": 0.0844981900008861,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "f8ab795760750cecc00eddd6465c6f4e63d99f65e1fb0d3ba39f13a9a832cd40",
+      "msolve_input_sha256": "cec612c871cf4f2ed81b91a01023eb7395f7ee7d136aecfb591eb7ad0939559d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         14,
         12
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03304597300302703,
+      "runtime_seconds": 0.08043742699373979,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "1255fe501bde7bf5aeb16309434b4c8c72f4a7a15ec3d58f287dfb57a05cfa64",
+      "msolve_input_sha256": "7475430f3b254664f340b33703db20b4b97c4c1c7ceb4f61099975c9075ee79f",
       "msolve_returncode": 0,
       "nodes_376_377": [
         14,
         13
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03313158299715724,
+      "runtime_seconds": 0.11980264000158058,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "d94d23903de3db013b1e6494d1546f3caeb20755f921be7e74f7ebbecce365bc",
+      "msolve_input_sha256": "6b9dcda15e584aee6b4c297970e6cddece963e7fa3f408bed64489799fb5a2fb",
       "msolve_returncode": 0,
       "nodes_376_377": [
         14,
         15
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033370942997862585,
+      "runtime_seconds": 0.07736400100111496,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "99cce4754d3c55fd8321dca5806314cff0687614e08e5c08fb3df5ac891f1de0",
+      "msolve_input_sha256": "2bbc60ec38983089e14240fb6838797ea308945d65f034f2c3219e60c8bed3a5",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        14,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.07119045199942775,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "c6dde488f8772180eeb365330bfee06f0634fe30e9b240b4bf5a4c02bcc9ba7d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         15,
         2
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03307489299913868,
+      "runtime_seconds": 0.03592690899677109,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "11f86e7eef57848cf3e5dc9e4fa04f471285a43cfdbc6e2f8ea7b35f026836b2",
+      "msolve_input_sha256": "c00ed9821b65e7391abfd74665ba0d5f863e7a06773d149c1d8e453c8d734123",
       "msolve_returncode": 0,
       "nodes_376_377": [
         15,
         3
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.0329649330014945,
+      "runtime_seconds": 0.13310162099514855,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "c84c71eef5f199482807a9aaeb184cff7ca39ac650cf14e28248f12554f91dbd",
+      "msolve_input_sha256": "101319500f12a4da059b561f3491b53f603de27a53ebc89645799d1f6a9852f0",
       "msolve_returncode": 0,
       "nodes_376_377": [
         15,
         4
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03311180300079286,
+      "runtime_seconds": 0.13947687100153416,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "d66614588c905c321e5962d1371d6557f95f47e97ce7859edfe22799eccbca3b",
+      "msolve_input_sha256": "6eaa8dcab1a32cf0c88359b01478977c7d0c72d991752f1319fc21f392f5956c",
       "msolve_returncode": 0,
       "nodes_376_377": [
         15,
         5
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 1.4186897330000647,
+      "runtime_seconds": 2.8299535830010427,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "630a859c41bb27a7679cb38820e656ece9e034e14ca621fbe95821adf3bbcf9d",
+      "msolve_input_sha256": "93486372f402b00ec7fd186ff83f9be3785d5beb4f272b391142cde320da1204",
       "msolve_returncode": 0,
       "nodes_376_377": [
         15,
         6
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033245192003960256,
+      "runtime_seconds": 0.1351804229998379,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
@@ -1960,111 +2109,295 @@
         7
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.0335135019995505,
+      "runtime_seconds": 0.13148925099812914,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "c19d53725ca284621415eba6028ea55eba837c029ed502a64f28faeb4941b1ff",
+      "msolve_input_sha256": "49e74b3a1ccd20be6549ef3b4688e3840615f2fad32c6eae7988ce449c367b1f",
       "msolve_returncode": 0,
       "nodes_376_377": [
         15,
         8
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03333408800244797,
+      "runtime_seconds": 0.087356281997927,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "8c906181c192a0c3f4ab2189b78a2e5d1dd622f21f39f320ac98849af893a92f",
+      "msolve_input_sha256": "e50fab52b3842de2d570ad9c253ed2bb23803495e81e67c41e38bacb3703bd2c",
       "msolve_returncode": 0,
       "nodes_376_377": [
         15,
         9
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03311787800339516,
+      "runtime_seconds": 0.1255756719983765,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "ec36a9f81c9d7df0719001db5bb9c98490d46b81c147c960e4c348247148e110",
+      "msolve_input_sha256": "41b2d9a5a86148d21f871424ef1c9773cf2997eb33e8d49c9fafa8922a13cdfa",
       "msolve_returncode": 0,
       "nodes_376_377": [
         15,
         10
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03307820799818728,
+      "runtime_seconds": 0.12796364399400773,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "47f685ee90eb3da73f63eb74a672b172189daf49de258e8a6a0655ad6fd93216",
+      "msolve_input_sha256": "81dea86008652b598c200e353604c6473ba7ec917ce35b3e95bbb0abc148ee4d",
       "msolve_returncode": 0,
       "nodes_376_377": [
         15,
         11
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.03291224400163628,
+      "runtime_seconds": 0.1306538900025771,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "0fcc10241a7a06c3efc76ce7adfc70f22cafee94dc1f89b0b3405769b2f4a097",
+      "msolve_input_sha256": "8d45d93ae8e70242372fec3011643193fbcabf6bbc2ce1afd07cd38ca84b44d9",
       "msolve_returncode": 0,
       "nodes_376_377": [
         15,
         12
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033253613000852056,
+      "runtime_seconds": 0.1416119939967757,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "98c185dcd7b25ceeca1f390ad51b9d044921ae984d927d4959340f7d2edc7fd8",
+      "msolve_input_sha256": "47a5afa0ab5af865529462f4dc7f97ce08d0d8849bc9fe3573c325cbdac7e3e4",
       "msolve_returncode": 0,
       "nodes_376_377": [
         15,
         13
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.01721737099433085,
+      "runtime_seconds": 0.08597970600385452,
       "status": "NO_GEOMETRIC_SOLUTION"
     },
     {
-      "msolve_input_sha256": "796d71f6d9d21ce12e394258be0526b263ceb9cf07eca7d56050d65d1f669eee",
+      "msolve_input_sha256": "93714309b89971d999eef4dab4d0405ae8206fbebadc7711c7922c4600203d63",
       "msolve_returncode": 0,
       "nodes_376_377": [
         15,
         14
       ],
       "output_prefix": "[-1]:",
-      "runtime_seconds": 0.033248072999413125,
+      "runtime_seconds": 0.1385054440033855,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "9a367ad735f001aa70a0a9bda0a9cd3a006b6054618091a02cc915cdd9236f08",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        15,
+        null
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.13424470700556412,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "081f8fc43b510f3927586b7ab0f23d10fb8d483c7c15a3e06e1bb99ff5f424f5",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        2
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.07217214300180785,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "9d67d6113c8c2696d054b0afef73eb58aa22a0646e10177beff3bcdd5cc63161",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        3
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.06921266700373963,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "aaea696895885f5481fae89e219986ec996a10f07cf044baf0e3b5a88afb1912",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        4
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.07611449200339848,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "c7f5768630abf0e3c4e5108edd92137cf6d85aa679ae86111d40c7484b71ea67",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        5
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.0564511139964452,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "e9438d0a4add2c5df22997f4ac42f2943f2c3ac069e27d8ae535c1cdefa70e4a",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        6
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 2.0886476719970233,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "7ac2d3de3e417fcca8f9ecec9a12a03669719aa1c8ae1c308516f881b2aa2f2b",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        7
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.0839006550013437,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "9e7f36ff1c08c953e163823b74b113e0004de1f3bee10155a2054398c2290372",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        8
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.1301087390020257,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "76d867f432c50dab74d56aec3202af0787162ef89dd72ad30b571a3e9b41745b",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        9
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.08145969600445824,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "29532632a82e9601481937a4a4d7c7d8c23ad15133d8d3a77c2c0bfaaccb482d",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        10
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.08529599800385768,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "724af1bdb5a55328534d0f0c768816f5c7b0c31edee7bfe019b0b3202c60f595",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        11
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.138212152000051,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "c25e5451bb1662970cf5251a3c254dc376b4e42cbc0aeb70ce95952eb7776e96",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        12
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.078480773998308,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "78675a471ab03509446c3eca8a8b9ada34c496267401469e4832000d58155ebe",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        13
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.18568818100175122,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "c91d7ba0662e0e507e871a40304d911b4945fb5cb12ea8ad8a7c37d8ffcd150e",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        14
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.12501989400334423,
+      "status": "NO_GEOMETRIC_SOLUTION"
+    },
+    {
+      "msolve_input_sha256": "3ff4521e3d918f85c27a0a03d2e45891553912c30c89b0186b93bb1248e06f97",
+      "msolve_returncode": 0,
+      "nodes_376_377": [
+        null,
+        15
+      ],
+      "output_prefix": "[-1]:",
+      "runtime_seconds": 0.03979189300298458,
       "status": "NO_GEOMETRIC_SOLUTION"
     }
   ],
   "positive_control": {
     "available": true,
-    "model": "artifacts/local/elkies-k3/q12o5867-smooth-rr-qq.json",
-    "nodes": [
-      0,
-      1,
-      2,
-      3,
-      -1
+    "model": "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
+    "normalized_chart_controls": [
+      {
+        "nodes_376_377": [
+          2,
+          4
+        ],
+        "nonzero_equation_count": 48,
+        "status": "PASS_DEGENERATE_ELIMINATED_SYSTEM_WITNESS"
+      },
+      {
+        "nodes_376_377": [
+          "infinity",
+          2
+        ],
+        "nonzero_equation_count": 45,
+        "status": "PASS_DEGENERATE_ELIMINATED_SYSTEM_WITNESS"
+      },
+      {
+        "nodes_376_377": [
+          2,
+          "infinity"
+        ],
+        "nonzero_equation_count": 45,
+        "status": "PASS_DEGENERATE_ELIMINATED_SYSTEM_WITNESS"
+      }
     ],
-    "sections": "artifacts/local/elkies-k3/q12o5867-rootless-selected-basis-qq.json",
-    "status": "PASS_EXACT_DIFFERENTIATED_IDENTITIES",
+    "sections": "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json",
+    "status": "PASS_EXACT_PROJECTIVE_FIRST_JET_SYSTEM",
     "verified_section_count": 17
   },
   "prime": 17,
   "proof_boundary": "This is an exact necessary-condition computation in the distinct normalized mod-p chart for literal point labels and signs. It does not exclude a QQ model with bad/colliding reduction at this prime, a relabelled or integrally changed Mordell-Weil basis, or degree bounds outside the rootless-K3 ansatz.",
-  "runtime_seconds": 12.01877286099625,
+  "runtime_seconds": 52.664646125995205,
   "schema": "icarm.wgxli-rank17-first-jet-elimination.v1",
   "solver": {
     "banner": "",
     "chart_jobs": 4,
     "meaning_of_empty_output": "A reduced Groebner basis [1] proves no solution over the algebraic closure for that fixed parameter pair.",
     "name": "msolve",
-    "pair_timeout_seconds": 10.0,
+    "pair_timeout_seconds": 60.0,
     "threads": 1
   },
   "status": "PASS_COMPLETE_DISTINCT_CHART_EMPTY"

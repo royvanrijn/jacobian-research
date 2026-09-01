@@ -6,7 +6,9 @@ points on each fibre.  After the weighted PGL2 and Weierstrass gauges
 
     t_351=0, t_356=1, t_385=-1, u_351=1,
 
-the script exhausts the remaining ordered pair (t_376,t_377) over GF(p).
+the script exhausts the remaining ordered pair (t_376,t_377) over P1(GF(p)),
+including the two boundary charts in which exactly one residual node is at
+infinity.
 For each pair it eliminates the 34 free ordinate-interpolation coefficients
 from the differentiated section identities and asks msolve whether the
 resulting first-jet system has a solution over the algebraic closure.
@@ -31,7 +33,7 @@ import subprocess
 import sys
 import time
 
-from sage.all import GF, PolynomialRing, prod
+from sage.all import GF, PolynomialRing, matrix, prod, vector
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -64,6 +66,14 @@ def parse_args() -> argparse.Namespace:
         help="number of independent parameter charts solved concurrently",
     )
     parser.add_argument("--pair-timeout", type=float, default=10.0)
+    parser.add_argument(
+        "--reuse-unit-outputs",
+        action="store_true",
+        help=(
+            "reuse an existing msolve output only when it is exactly the unit ideal; "
+            "all missing, partial, timeout, or nonunit outputs are solved again"
+        ),
+    )
     parser.add_argument("--max-pairs", type=int)
     parser.add_argument("--check", action="store_true")
     return parser.parse_args()
@@ -110,19 +120,70 @@ def load_fibres(path: Path, prime: int):
     return raw, by_id
 
 
-def interpolate(polynomial_ring, nodes, values):
-    t = polynomial_ring.gen()
-    return sum(
-        polynomial_ring(
-            values[index]
-            / prod(nodes[index] - nodes[other] for other in range(5) if other != index)
-        )
-        * prod(t - nodes[other] for other in range(5) if other != index)
-        for index in range(5)
+def node_coordinates(field, node):
+    """Return the fixed homogeneous representative of a point of P1."""
+    return (field(1), field(0)) if node is None else (field(node), field(1))
+
+
+def evaluation_row(field, degree: int, node):
+    a_value, b_value = node_coordinates(field, node)
+    return vector(
+        field,
+        [a_value**index * b_value ** (degree - index) for index in range(degree + 1)],
     )
 
 
-def build_pair_system(fibres, prime: int, node_376: int, node_377: int):
+def derivative_row(field, degree: int, node):
+    """Differentiate in t on [t:1], and in s on [1:s] at infinity."""
+    if node is None:
+        return vector(
+            field,
+            [field(index == degree - 1) for index in range(degree + 1)],
+        )
+    t_value = field(node)
+    return vector(
+        field,
+        [
+            field(0) if index == 0 else field(index) * t_value ** (index - 1)
+            for index in range(degree + 1)
+        ],
+    )
+
+
+def interpolate_binary_form(ring, field, nodes, values, degree: int):
+    """Choose one homogeneous degree-d form having the displayed values."""
+    evaluation = matrix(field, [evaluation_row(field, degree, node) for node in nodes])
+    if evaluation.rank() != 5:
+        raise ValueError("the projective interpolation nodes must be distinct")
+    pivots = evaluation.pivots()
+    if len(pivots) != 5:
+        raise AssertionError("binary-form evaluation did not have five pivots")
+    square = evaluation.matrix_from_columns(pivots)
+    coefficients_at_pivots = square.change_ring(ring).solve_right(vector(ring, values))
+    coefficients = [ring.zero()] * (degree + 1)
+    for index, coefficient in zip(pivots, coefficients_at_pivots):
+        coefficients[index] = coefficient
+    return vector(ring, coefficients)
+
+
+def node_polynomial_derivative(field, nodes, index: int):
+    """Derivative of prod(T-tZ), including the Z factor for infinity."""
+    node = nodes[index]
+    a_value, b_value = node_coordinates(field, node)
+    answer = field(1)
+    for other, other_node in enumerate(nodes):
+        if other == index:
+            continue
+        if other_node is None:
+            answer *= b_value
+        else:
+            answer *= a_value - field(other_node) * b_value
+    return answer
+
+
+def build_pair_system(
+    fibres, prime: int, node_376, node_377, require_generic_equation_count=True
+):
     field = GF(prime)
     names = (
         ("w356", "w376", "w377", "w385")
@@ -142,13 +203,13 @@ def build_pair_system(fibres, prime: int, node_376: int, node_377: int):
     alphas = [variables[f"alpha{index}"] for index in range(5)]
     betas = [variables[f"beta{index}"] for index in range(5)]
     inverse = variables["inverse"]
-    polynomial_ring = PolynomialRing(ring, "t")
-    t = polynomial_ring.gen()
-    nodes = list(map(field, (0, 1, node_376, node_377, -1)))
-    if len(set(nodes)) != 5:
+    nodes = [0, 1, node_376, node_377, -1]
+    coordinates = [node_coordinates(field, node) for node in nodes]
+    if len(set(coordinates)) != 5:
         raise ValueError("the normalized nodes must be distinct")
-    node_polynomial = prod(t - node for node in nodes)
-    node_derivatives = [ring(node_polynomial.derivative()(node)) for node in nodes]
+    node_derivatives = [
+        ring(node_polynomial_derivative(field, nodes, index)) for index in range(5)
+    ]
 
     family_A_values = [
         ring(mod_fraction(field, fibres[curve_id]["short_model"][0])) * weight**4
@@ -162,21 +223,25 @@ def build_pair_system(fibres, prime: int, node_376: int, node_377: int):
             x_value, y_value = fibres[curve_id]["short_points_first_17"][position]
             x_values.append(ring(mod_fraction(field, x_value)) * weight**2)
             y_values.append(ring(mod_fraction(field, y_value)) * weight**3)
-        x_interpolant = interpolate(polynomial_ring, nodes, x_values)
-        y_interpolant = interpolate(polynomial_ring, nodes, y_values)
-        x_derivative = x_interpolant.derivative()
-        y_derivative = y_interpolant.derivative()
+        x_interpolant = interpolate_binary_form(ring, field, nodes, x_values, 4)
+        y_interpolant = interpolate_binary_form(ring, field, nodes, y_values, 6)
 
         ordinate_coefficients = []
         derivative_right_sides = []
         for index, node in enumerate(nodes):
             x_value = x_values[index]
             y_value = y_values[index]
+            x_derivative = ring(
+                derivative_row(field, 4, node) * x_interpolant
+            )
+            y_derivative = ring(
+                derivative_row(field, 6, node) * y_interpolant
+            )
             ordinate_coefficients.append(2 * y_value * node_derivatives[index])
             known_part = (
-                2 * y_value * ring(y_derivative(node))
-                - 3 * x_value**2 * ring(x_derivative(node))
-                - family_A_values[index] * ring(x_derivative(node))
+                2 * y_value * y_derivative
+                - 3 * x_value**2 * x_derivative
+                - family_A_values[index] * x_derivative
             )
             derivative_right_sides.append(
                 x_value * alphas[index] + betas[index] - known_part
@@ -187,45 +252,45 @@ def build_pair_system(fibres, prime: int, node_376: int, node_377: int):
         # must be affine in the base parameter because every sextic ordinate
         # differs from its five-point quartic interpolant by L(t)*(r+s*t).
         for index in range(2, 5):
-            node = ring(nodes[index])
+            a_value, b_value = coordinates[index]
+            a_value = ring(a_value)
+            b_value = ring(b_value)
             equations.append(
                 ordinate_coefficients[0]
                 * ordinate_coefficients[1]
                 * derivative_right_sides[index]
                 - ordinate_coefficients[index]
                 * (
-                    (1 - node)
+                    (b_value - a_value)
                     * ordinate_coefficients[1]
                     * derivative_right_sides[0]
-                    + node
+                    + a_value
                     * ordinate_coefficients[0]
                     * derivative_right_sides[1]
                 )
             )
 
-    # Five values and five first derivatives have a unique degree-at-most-nine
-    # Hermite interpolant.  The K3 bound deg(A)<=8 kills its leading term.
-    hermite_A = polynomial_ring.zero()
-    for index, node in enumerate(nodes):
-        lagrange = prod(
-            (t - nodes[other]) / (node - nodes[other])
-            for other in range(5)
-            if other != index
-        )
-        lagrange_derivative = ring(lagrange.derivative()(node))
-        hermite_A += (
-            family_A_values[index]
-            * (1 - 2 * lagrange_derivative * (t - node))
-            * lagrange**2
-            + alphas[index] * (t - node) * lagrange**2
-        )
-    equations.append(ring(hermite_A[9]))
+    # A binary octic has nine coefficients.  Its five values and five local
+    # first derivatives therefore satisfy the unique left-kernel relation of
+    # this 10-by-9 evaluation matrix.  This is the projective replacement for
+    # killing the t^9 coefficient of the affine Hermite interpolant.
+    value_rows = [evaluation_row(field, 8, node) for node in nodes]
+    derivative_rows = [derivative_row(field, 8, node) for node in nodes]
+    hermite_matrix = matrix(field, value_rows + derivative_rows)
+    hermite_relations = hermite_matrix.left_kernel().basis()
+    if len(hermite_relations) != 1:
+        raise AssertionError("binary-octic first jets did not have one relation")
+    relation = hermite_relations[0]
+    equations.append(
+        sum(ring(relation[index]) * family_A_values[index] for index in range(5))
+        + sum(ring(relation[index + 5]) * alphas[index] for index in range(5))
+    )
     equations.append(inverse * prod(weights[1:]) - 1)
     equations = [equation for equation in equations if equation]
-    # There are nominally 53 equations.  At p=17 the Hermite leading-term
-    # equation vanishes identically because the reduced published A-values do;
-    # retain the resulting 52 nonzero equations.
-    if len(equations) not in (52, 53):
+    # There are nominally 53 equations.  At p=17 the binary-octic first-jet
+    # relation vanishes on the literal input; retain the resulting 52 nonzero
+    # equations.
+    if require_generic_equation_count and len(equations) not in (52, 53):
         raise AssertionError(
             f"expected 52 or 53 nonzero first-jet equations, got {len(equations)}"
         )
@@ -287,17 +352,25 @@ _WORKER_PRIME = None
 _WORKER_WORK = None
 _WORKER_THREADS = None
 _WORKER_TIMEOUT = None
+_WORKER_REUSE_UNIT_OUTPUTS = None
+_WORKER_TRUSTED_INPUT_HASHES = None
 
 
-def initialize_chart_worker(fibres, prime, work, threads, pair_timeout) -> None:
+def initialize_chart_worker(
+    fibres, prime, work, threads, pair_timeout, reuse_unit_outputs,
+    trusted_input_hashes,
+) -> None:
     """Install read-only run data once in each chart worker."""
     global _WORKER_FIBRES, _WORKER_PRIME, _WORKER_WORK
-    global _WORKER_THREADS, _WORKER_TIMEOUT
+    global _WORKER_THREADS, _WORKER_TIMEOUT, _WORKER_REUSE_UNIT_OUTPUTS
+    global _WORKER_TRUSTED_INPUT_HASHES
     _WORKER_FIBRES = fibres
     _WORKER_PRIME = prime
     _WORKER_WORK = work
     _WORKER_THREADS = threads
     _WORKER_TIMEOUT = pair_timeout
+    _WORKER_REUSE_UNIT_OUTPUTS = reuse_unit_outputs
+    _WORKER_TRUSTED_INPUT_HASHES = trusted_input_hashes
 
 
 def build_and_solve_chart(pair) -> dict[str, object]:
@@ -306,15 +379,35 @@ def build_and_solve_chart(pair) -> dict[str, object]:
     names, equations = build_pair_system(
         _WORKER_FIBRES, _WORKER_PRIME, node_376, node_377
     )
-    stem = f"a{node_376}-b{node_377}"
+    left_text = "inf" if node_376 is None else str(node_376)
+    right_text = "inf" if node_377 is None else str(node_377)
+    stem = f"a{left_text}-b{right_text}"
     msolve_input = _WORKER_WORK / f"{stem}.ms"
     msolve_output = _WORKER_WORK / f"{stem}.solve"
     render_msolve(msolve_input, names, equations, _WORKER_PRIME)
-    result = solve_chart(
-        msolve_input, msolve_output, _WORKER_THREADS, _WORKER_TIMEOUT
+    input_hash = sha256_file(msolve_input)
+    cached_output = (
+        msolve_output.read_text(errors="replace").strip()
+        if (
+            _WORKER_REUSE_UNIT_OUTPUTS
+            and _WORKER_TRUSTED_INPUT_HASHES.get((node_376, node_377)) == input_hash
+            and msolve_output.exists()
+        )
+        else ""
     )
+    if cached_output in ("[-1]", "[-1]:"):
+        result = {
+            "status": "NO_GEOMETRIC_SOLUTION",
+            "msolve_returncode": 0,
+            "output_prefix": cached_output,
+            "runtime_seconds": 0.0,
+        }
+    else:
+        result = solve_chart(
+            msolve_input, msolve_output, _WORKER_THREADS, _WORKER_TIMEOUT
+        )
     result["nodes_376_377"] = [node_376, node_377]
-    result["msolve_input_sha256"] = sha256_file(msolve_input)
+    result["msolve_input_sha256"] = input_hash
     result["equation_count"] = len(equations)
     return result
 
@@ -322,79 +415,149 @@ def build_and_solve_chart(pair) -> dict[str, object]:
 def positive_control(prime: int) -> dict[str, object]:
     """Check the eliminated identities on the exact published R17 model."""
     field = GF(prime)
-    model_path = ROOT / "artifacts/local/elkies-k3/q12o5867-smooth-rr-qq.json"
-    sections_path = (
-        ROOT / "artifacts/local/elkies-k3/q12o5867-rootless-selected-basis-qq.json"
-    )
+    model_path = ROOT / "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json"
+    sections_path = ROOT / "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json"
     if not model_path.exists() or not sections_path.exists():
         return {"available": False}
     model = json.loads(model_path.read_text())
     sections = json.loads(sections_path.read_text())
     try:
-        A = [
+        A = vector(field, [
             mod_fraction(field, value)
-            for value in model["child"]["minimal_A_coefficients_low_to_high"]
-        ]
-        B = [
+            for value in model["A_coefficients_low_to_high"]
+        ])
+        B = vector(field, [
             mod_fraction(field, value)
-            for value in model["child"]["minimal_B_coefficients_low_to_high"]
-        ]
+            for value in model["B_coefficients_low_to_high"]
+        ])
     except ZeroDivisionError:
         return {
             "available": False,
             "reason": "published-R17 control model has a coefficient denominator at this prime",
         }
-    nodes = list(map(field, (0, 1, 2, 3, -1)))
-
-    def evaluate(coefficients, value):
-        return sum(coefficient * value**index for index, coefficient in enumerate(coefficients))
-
-    def derivative_value(coefficients, value):
-        return sum(
-            index * coefficient * value ** (index - 1)
-            for index, coefficient in enumerate(coefficients)
-            if index
-        )
-
-    # Literal differentiation is enough to validate the eliminated affine-jet
-    # identity, including the signs and the deg(A)<=8 Hermite constraint.
-    verified = 0
+    control_polynomial_ring = PolynomialRing(field, "q")
+    reconstructed_sections = []
     for row in sections["sections"]:
         try:
-            X = [
+            X_polynomial = control_polynomial_ring([
                 mod_fraction(field, value)
-                for value in row["section"]["x_coefficients_low_to_high"]
-            ]
-            Y = [
-                mod_fraction(field, value)
-                for value in row["section"]["y_coefficients_low_to_high"]
-            ]
+                for value in row["x_coefficients_low_to_high"]
+            ])
+            if not reconstructed_sections:
+                Y_polynomial = control_polynomial_ring([
+                    mod_fraction(field, value)
+                    for value in row["y_coefficients_low_to_high"]
+                ])
+            else:
+                chord = row["chord"]
+                reference_x, reference_y = reconstructed_sections[
+                    int(chord["reference_basis_index"])
+                ]
+                slope = control_polynomial_ring([
+                    mod_fraction(field, value)
+                    for value in chord["slope_coefficients_low_to_high"]
+                ])
+                Y_polynomial = reference_y + slope * (X_polynomial - reference_x)
         except ZeroDivisionError:
             return {
                 "available": False,
                 "reason": "published-R17 control section has a coefficient denominator at this prime",
             }
-        for node in nodes:
-            x_value = evaluate(X, node)
-            y_value = evaluate(Y, node)
-            if y_value**2 != x_value**3 + evaluate(A, node) * x_value + evaluate(B, node):
-                raise AssertionError("published-R17 positive-control section failed")
-            if (
-                2 * y_value * derivative_value(Y, node)
-                != 3 * x_value**2 * derivative_value(X, node)
-                + derivative_value(A, node) * x_value
-                + evaluate(A, node) * derivative_value(X, node)
-                + derivative_value(B, node)
-            ):
-                raise AssertionError("published-R17 differentiated identity failed")
-        verified += 1
+        reconstructed_sections.append((X_polynomial, Y_polynomial))
+    section_coefficients = [
+        (
+            vector(field, list(X) + [field(0)] * (5 - len(list(X)))),
+            vector(field, list(Y) + [field(0)] * (7 - len(list(Y)))),
+        )
+        for X, Y in reconstructed_sections
+    ]
+
+    allowed_control_nodes = [
+        value for value in range(prime) if field(value) not in (0, 1, -1)
+    ]
+    control_chart_candidates = (
+        (
+            (left, right)
+            for left in allowed_control_nodes
+            for right in allowed_control_nodes
+            if left != right
+        ),
+        ((None, right) for right in allowed_control_nodes),
+        ((left, None) for left in allowed_control_nodes),
+    )
+    chart_records = []
+    for candidates in control_chart_candidates:
+        selected = None
+        degenerate_fallback = None
+        for node_376, node_377 in candidates:
+            nodes = [0, 1, node_376, node_377, -1]
+            synthetic = {}
+            nonsingular_control_fibres = True
+            for curve_id, node in zip(FIBRE_IDS, nodes):
+                a_value = evaluation_row(field, 8, node) * A
+                b_value = evaluation_row(field, 12, node) * B
+                if 4 * a_value**3 + 27 * b_value**2 == 0:
+                    nonsingular_control_fibres = False
+                    break
+                points = []
+                for X, Y in section_coefficients:
+                    x_value = evaluation_row(field, 4, node) * X
+                    y_value = evaluation_row(field, 6, node) * Y
+                    if y_value**2 != x_value**3 + a_value * x_value + b_value:
+                        raise AssertionError("published-R17 positive-control section failed")
+                    points.append((str(int(x_value)), str(int(y_value))))
+                synthetic[curve_id] = {
+                    "short_model": [str(int(a_value)), str(int(b_value))],
+                    "short_points_first_17": points,
+                }
+            if not nonsingular_control_fibres:
+                continue
+            names, equations = build_pair_system(
+                synthetic,
+                prime,
+                node_376,
+                node_377,
+                require_generic_equation_count=False,
+            )
+            assignments = {name: field(1) for name in names}
+            for index, node in enumerate(nodes):
+                assignments[f"alpha{index}"] = derivative_row(field, 8, node) * A
+                assignments[f"beta{index}"] = derivative_row(field, 12, node) * B
+            ring = equations[0].parent()
+            substitution = {ring(name): value for name, value in assignments.items()}
+            if any(equation.subs(substitution) != 0 for equation in equations):
+                raise AssertionError("published-R17 eliminated first-jet control failed")
+            record = {
+                "nodes_376_377": [
+                    "infinity" if node_376 is None else node_376,
+                    "infinity" if node_377 is None else node_377,
+                ],
+                "nonzero_equation_count": len(equations),
+                "status": (
+                    "PASS_ELIMINATED_SYSTEM_WITNESS"
+                    if len(equations) in (52, 53)
+                    else "PASS_DEGENERATE_ELIMINATED_SYSTEM_WITNESS"
+                ),
+            }
+            if degenerate_fallback is None or len(equations) > degenerate_fallback[
+                "nonzero_equation_count"
+            ]:
+                degenerate_fallback = record
+            if len(equations) in (52, 53):
+                selected = record
+                break
+        if selected is None:
+            selected = degenerate_fallback
+        if selected is None:
+            raise AssertionError("no published-R17 control chart found")
+        chart_records.append(selected)
     return {
         "available": True,
         "model": str(model_path.relative_to(ROOT)),
         "sections": str(sections_path.relative_to(ROOT)),
-        "nodes": [0, 1, 2, 3, -1],
-        "verified_section_count": verified,
-        "status": "PASS_EXACT_DIFFERENTIATED_IDENTITIES",
+        "verified_section_count": len(section_coefficients),
+        "normalized_chart_controls": chart_records,
+        "status": "PASS_EXACT_PROJECTIVE_FIRST_JET_SYSTEM",
     }
 
 
@@ -405,12 +568,25 @@ def main() -> None:
     started = time.monotonic()
     input_raw, fibres = load_fibres(arguments.input, arguments.prime)
     field = GF(arguments.prime)
-    allowed = [value for value in range(arguments.prime) if field(value) not in (0, 1, -1)]
+    allowed = [
+        value for value in range(arguments.prime) if field(value) not in (0, 1, -1)
+    ] + [None]
     pairs = [(left, right) for left in allowed for right in allowed if left != right]
     if arguments.max_pairs is not None:
         pairs = pairs[: arguments.max_pairs]
     work = arguments.work_dir / f"p{arguments.prime}"
     work.mkdir(parents=True, exist_ok=True)
+    trusted_input_hashes = {}
+    if arguments.reuse_unit_outputs:
+        if not arguments.output.exists():
+            raise SystemExit(
+                "--reuse-unit-outputs requires the previous output artifact"
+            )
+        previous = json.loads(arguments.output.read_text())
+        trusted_input_hashes = {
+            tuple(row["nodes_376_377"]): row["msolve_input_sha256"]
+            for row in previous.get("pair_records", [])
+        }
     records = []
     solution_pairs = []
     timeout_pairs = []
@@ -427,6 +603,8 @@ def main() -> None:
             work,
             arguments.threads,
             arguments.pair_timeout,
+            arguments.reuse_unit_outputs,
+            trusted_input_hashes,
         ),
     ) as executor:
         # executor.map preserves canonical pair order, so artifacts are
@@ -462,8 +640,8 @@ def main() -> None:
                     flush=True,
                 )
 
-    complete = arguments.max_pairs is None and len(pairs) == (arguments.prime - 3) * (
-        arguments.prime - 4
+    complete = arguments.max_pairs is None and len(pairs) == (arguments.prime - 2) * (
+        arguments.prime - 3
     )
     status = (
         "PASS_COMPLETE_DISTINCT_CHART_EMPTY"
@@ -503,6 +681,12 @@ def main() -> None:
         },
         "chart": {
             "required_distinct_nodes": [0, 1, -1, "t_376", "t_377"],
+            "parameter_space": "ordered pairs in P1(F_p) minus the three fixed nodes",
+            "normalized_chart_types": [
+                "both residual nodes finite",
+                "t_376 at infinity",
+                "t_377 at infinity",
+            ],
             "ordered_pair_count": len(pairs),
             "complete": complete,
             "solution_pair_count": len(solution_pairs),
@@ -531,6 +715,11 @@ def main() -> None:
         ),
         "runtime_seconds": time.monotonic() - started,
     }
+    if arguments.reuse_unit_outputs:
+        payload["solver"]["reuse_policy"] = (
+            "reuse only an existing exact unit-ideal output [-1] or [-1]: whose "
+            "rendered input hash matches the previous artifact; rerun every other chart"
+        )
     if arguments.check:
         if not arguments.output.exists():
             raise SystemExit(f"missing output artifact: {arguments.output}")

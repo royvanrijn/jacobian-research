@@ -39,6 +39,14 @@ parser.add_argument("--prime", type=int, default=89)
 parser.add_argument("--shell", type=Path)
 parser.add_argument("--output", type=Path)
 parser.add_argument("--fibres", type=int, default=3)
+parser.add_argument(
+    "--profile-permutation",
+    default="historical",
+    help=(
+        "comma-separated current-root indices in equation-I2 order; use "
+        "'historical' to retain the pinned 0000/0100 classifier"
+    ),
+)
 args = parser.parse_args()
 prime = ZZ(args.prime)
 if not prime.is_prime() or prime in (2, 3):
@@ -616,8 +624,19 @@ def expected_index(trials):
     return expected_cache[supports].get(signature, [])
 
 
+if args.profile_permutation == "historical":
+    profile_permutation = None
+else:
+    profile_permutation = tuple(map(int, args.profile_permutation.split(",")))
+    if sorted(profile_permutation) != list(range(4)):
+        raise ValueError("profile permutation must contain 0,1,2,3 exactly once")
+
+
 def expected_equation_profile(item):
     profile = list(map(int, item["current_component_pairings"]))
+    assert all(value in (0, 1) for value in profile)
+    if profile_permutation is not None:
+        return [profile[index] for index in profile_permutation]
     if profile == [0, 0, 0, 0]:
         return [0, 0, 0, 0]
     if profile == [0, 1, 0, 0]:
@@ -630,16 +649,33 @@ realizations = {}
 for shell_index, record in enumerate(shell["all_records"]):
     X = U(record["x_coefficients_low_to_high"])
     Y = U(record["y_coefficients_low_to_high"])
-    old_t, unused_W, old_x, old_y = invert_child_section(X, Y)
-    degree = rational_degree(old_t)
-    assert degree == record["inverse_parent_degree"]
-    if degree == 0:
+    inverse_chart_exceptional = False
+    try:
+        old_t, unused_W, old_x, old_y = invert_child_section(X, Y)
+    except ZeroDivisionError:
+        # A complete component-profile shell can meet the complementary
+        # resolved-pencil chart where both displayed affine restrictions
+        # vanish.  Retain the exact profile/degree classification rather than
+        # silently dropping the section; the ordinary Abel signature is simply
+        # unavailable on this chart.
+        inverse_chart_exceptional = True
+        old_t = None
+        degree = record["inverse_parent_degree"]
         trials = []
-        trace_matches = []
+        trace_matches = [
+            item["class_index"] for item in physical_classes
+            if item["q4o164_parent_degree"] == degree
+        ]
     else:
-        trials = trace_signature(old_t, old_x, old_y, degree)
-        assert len(trials) == args.fibres
-        trace_matches = expected_index(trials)
+        degree = rational_degree(old_t)
+        assert degree == record["inverse_parent_degree"]
+        if degree == 0:
+            trials = []
+            trace_matches = []
+        else:
+            trials = trace_signature(old_t, old_x, old_y, degree)
+            assert len(trials) == args.fibres
+            trace_matches = expected_index(trials)
     compatible = [
         index for index in trace_matches
         if expected_equation_profile(physical_classes[index]) == record["equation_component_profile"]
@@ -648,13 +684,15 @@ for shell_index, record in enumerate(shell["all_records"]):
     row = {
         "shell_index": shell_index,
         "equation_component_profile": record["equation_component_profile"],
-        "inverse_parent_degree": int(degree),
-        "constant_parent_base_modp": int(F(old_t)) if degree == 0 else None,
+        "inverse_parent_degree": None if degree is None else int(degree),
+        "constant_parent_base_modp": int(F(old_t)) if degree == 0 and old_t is not None else None,
+        "inverse_resolved_pencil_chart_exceptional": inverse_chart_exceptional,
         "ordinary_coefficient_jacobian_rank": record["ordinary_coefficient_jacobian_rank"],
         "ordinary_fibre_trials": trials,
         "trace_matching_lattice_class_indices": trace_matches,
         "profile_compatible_lattice_class_indices": compatible,
         "classification": (
+            "POINTING_INVERSE_UNDEFINED" if degree is None else
             "NONDOMINANT_PARENT_MAP" if degree == 0 else
             "UNIQUE_PHYSICAL_LATTICE_CLASS" if len(compatible) == 1 else
             "AMBIGUOUS_PHYSICAL_LATTICE_CLASS" if compatible else
@@ -1107,8 +1145,11 @@ def display_path(path):
 
 
 counts = {}
+profile_counts = {}
 for row in classifications:
     counts[row["classification"]] = counts.get(row["classification"], 0)+1
+    profile_key = "".join(map(str, row["equation_component_profile"]))
+    profile_counts[profile_key] = profile_counts.get(profile_key, 0)+1
 payload = {
     "schema": "elkies-k3.h92-q12o5867-p0-shell-lattice-classification-modp.v1",
     "status": (
@@ -1129,6 +1170,10 @@ payload = {
     },
     "polynomial_shell": {
         "signed_record_count": len(classifications),
+        "equation_component_profile_histogram": profile_counts,
+        "marked_to_equation_profile_permutation_zero_based": (
+            list(profile_permutation) if profile_permutation is not None else None
+        ),
         "classification_counts": counts,
         "uniquely_realized_lattice_class_count": len(realizations),
         "profile_compatible_possible_lattice_class_count": len(possible_realizations),

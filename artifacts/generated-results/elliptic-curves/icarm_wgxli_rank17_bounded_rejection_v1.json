@@ -1,0 +1,49 @@
+{
+  "bounded_mutation_enumerated_count": 352,
+  "bounded_mutation_retained_count": 1,
+  "conclusion": "The five records share the pinned numerical/private-pipeline fingerprint, but have no rootless-K3 (8,12;4,6) realization under the declared signed-permutation and one-anchor-preserving-elementary-mutation rebasing.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod17_v2.json": "67d642871268d339c5b4c8ea55e601c546aa7da089ceb07f5d21664cec5b8994",
+    "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod53_v2.json": "ca5547ccd1a246f020c057715e798d951863e9b679955f365037d21ea399fa2a",
+    "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_first_jet_mod67_v1.json": "0cba1fc3c6ff80509ea564de9f945b3a3d1eb3047df0c05de64ea5e31fe45041",
+    "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_lineage_v1.json": "f875f3917486c78089c6ba618daaef7dea07cb36152dd192d0f00c5d425c1c03",
+    "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_mutation_p4_minus_p1_first_jet_mod17_v1.json": "b1e308be23a6af087f8ff5ea69ae55e0dc3e55e72bfd458f89a30cab5ebeda62",
+    "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_mutation_p4_minus_p1_first_jet_mod53_v1.json": "4ede15dca6c6cab88401a1539fbd99dfb372d4c3fb91317b5a985b87d83dbc54",
+    "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_mutation_p4_minus_p1_v1.json": "44a6b1bb54fd84313e194f02511d95fcec16dee0eb03ba23315dfc1adaefd3aa",
+    "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_signed_permutation_rebasing_v1.json": "2da02bed8982f94833d88a0fbd9e154cf693b792e3f4f1c99910a300a257b4f7"
+  },
+  "literal_projective_first_jet_rejections": {
+    "17": 210,
+    "53": 2550,
+    "67": 4160
+  },
+  "negative_controls": [
+    [
+      363,
+      364,
+      378
+    ],
+    [
+      389,
+      390,
+      391
+    ]
+  ],
+  "proof_boundary": "This is a finite exact rejection inside the recorded bounds. It is not an unrestricted GL(17,Z) search, does not exclude larger or repeated basis mutations, and does not exclude a different family shape or reductions bad at every tested prime. Numerical Gram alignment is used only to define the finite candidates; every retained candidate is constructed exactly and rejected by algebraically closed modular elimination.",
+  "retained_bounded_mutation": "P4-P1",
+  "retained_mutation_projective_first_jet_rejections": {
+    "17": 210,
+    "53": 2550
+  },
+  "retained_signed_permutation": "displayed signs and displayed order",
+  "retained_signed_permutation_count": 1,
+  "schema": "icarm.wgxli-rank17-bounded-rejection.v1",
+  "status": "PASS_FORMAL_BOUNDED_REJECTION_AT_TWO_CLEAN_PRIMES",
+  "target_curves": [
+    351,
+    356,
+    376,
+    377,
+    385
+  ]
+}

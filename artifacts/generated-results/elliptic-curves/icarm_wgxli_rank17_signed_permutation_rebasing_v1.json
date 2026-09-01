@@ -1,0 +1,3664 @@
+{
+  "bounded_permutation_search": {
+    "height_row_absolute_slack": 0.025,
+    "height_row_relative_slack": 0.2,
+    "local_component_fraction_slack": 0.2,
+    "per_fibre": {
+      "351": {
+        "candidate_sets_new_label_to_allowed_old_points": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ],
+          [
+            7
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            10
+          ],
+          [
+            11
+          ],
+          [
+            12
+          ],
+          [
+            13
+          ],
+          [
+            14
+          ],
+          [
+            15
+          ],
+          [
+            16
+          ],
+          [
+            17
+          ]
+        ],
+        "matching_records": [
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.11220111822209557
+          }
+        ],
+        "perfect_matching_count": 1,
+        "retained_within_10_percent_of_displayed_residual": [
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "relative_signs": "+++++++++++++++++",
+            "residual_against_356": 0.11220111822209623
+          }
+        ]
+      },
+      "356": {
+        "candidate_sets": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ],
+          [
+            7
+          ],
+          [
+            8
+          ],
+          [
+            9
+          ],
+          [
+            10
+          ],
+          [
+            11
+          ],
+          [
+            12
+          ],
+          [
+            13
+          ],
+          [
+            14
+          ],
+          [
+            15
+          ],
+          [
+            16
+          ],
+          [
+            17
+          ]
+        ],
+        "matching_records": [
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.0
+          }
+        ],
+        "perfect_matching_count": 1
+      },
+      "376": {
+        "candidate_sets_new_label_to_allowed_old_points": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            5
+          ],
+          [
+            6,
+            9,
+            14
+          ],
+          [
+            6,
+            7,
+            9,
+            10,
+            12,
+            14
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            7,
+            9,
+            12,
+            14
+          ],
+          [
+            10
+          ],
+          [
+            11
+          ],
+          [
+            9,
+            12,
+            14
+          ],
+          [
+            13
+          ],
+          [
+            7,
+            12,
+            14
+          ],
+          [
+            15
+          ],
+          [
+            16
+          ],
+          [
+            17
+          ]
+        ],
+        "matching_records": [
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.1251807876454675
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              12,
+              10,
+              11,
+              9,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.15846525836808603
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              8,
+              7,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.17546085707933307
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              12,
+              8,
+              7,
+              10,
+              11,
+              9,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.18938031525494978
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              14,
+              13,
+              12,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.19268211614356537
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              14,
+              10,
+              11,
+              9,
+              13,
+              12,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.1934330166410741
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              9,
+              6,
+              8,
+              7,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.2018111299532379
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              14,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              7,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.21359034329210955
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              8,
+              14,
+              10,
+              11,
+              12,
+              13,
+              7,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.21388440770384842
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              14,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              7,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.21805534123039377
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              14,
+              6,
+              8,
+              7,
+              10,
+              11,
+              9,
+              13,
+              12,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.22353200767504602
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              12,
+              8,
+              9,
+              10,
+              11,
+              14,
+              13,
+              7,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.2246032272569848
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              12,
+              8,
+              14,
+              10,
+              11,
+              9,
+              13,
+              7,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.2253670384994124
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              8,
+              7,
+              10,
+              11,
+              14,
+              13,
+              12,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.22716793358235135
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              9,
+              6,
+              8,
+              14,
+              10,
+              11,
+              12,
+              13,
+              7,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.22940294765653682
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              9,
+              6,
+              8,
+              7,
+              10,
+              11,
+              14,
+              13,
+              12,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.23149501827185298
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              14,
+              8,
+              7,
+              10,
+              11,
+              9,
+              13,
+              12,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.23182994795872922
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              8,
+              12,
+              10,
+              11,
+              14,
+              13,
+              7,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.2330011516102779
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              14,
+              6,
+              8,
+              12,
+              10,
+              11,
+              9,
+              13,
+              7,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.23311489376520703
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              14,
+              8,
+              12,
+              10,
+              11,
+              9,
+              13,
+              7,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.23754097108879205
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              9,
+              6,
+              8,
+              12,
+              10,
+              11,
+              14,
+              13,
+              7,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.23997547866153432
+          }
+        ],
+        "perfect_matching_count": 21,
+        "retained_within_10_percent_of_displayed_residual": [
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "relative_signs": "+++++++++++++++++",
+            "residual_against_356": 0.12518078764546758
+          }
+        ]
+      },
+      "377": {
+        "candidate_sets_new_label_to_allowed_old_points": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ],
+          [
+            6,
+            7,
+            9,
+            10,
+            12,
+            13,
+            14
+          ],
+          [
+            8
+          ],
+          [
+            6,
+            7,
+            9,
+            12,
+            14
+          ],
+          [
+            10
+          ],
+          [
+            11
+          ],
+          [
+            12
+          ],
+          [
+            13
+          ],
+          [
+            14
+          ],
+          [
+            15
+          ],
+          [
+            16
+          ],
+          [
+            17
+          ]
+        ],
+        "matching_records": [
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.13644362992241268
+          },
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              8,
+              7,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.17091048043831147
+          }
+        ],
+        "perfect_matching_count": 2,
+        "retained_within_10_percent_of_displayed_residual": [
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "relative_signs": "+++++++++++++++++",
+            "residual_against_356": 0.1364436299224126
+          }
+        ]
+      },
+      "385": {
+        "candidate_sets_new_label_to_allowed_old_points": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            3
+          ],
+          [
+            4
+          ],
+          [
+            5
+          ],
+          [
+            6
+          ],
+          [
+            7,
+            12
+          ],
+          [
+            8
+          ],
+          [
+            9
+          ],
+          [
+            10
+          ],
+          [
+            11
+          ],
+          [
+            12
+          ],
+          [
+            13
+          ],
+          [
+            14
+          ],
+          [
+            15
+          ],
+          [
+            16
+          ],
+          [
+            17
+          ]
+        ],
+        "matching_records": [
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "signless_residual_against_356": 0.10498027500108868
+          }
+        ],
+        "perfect_matching_count": 1,
+        "retained_within_10_percent_of_displayed_residual": [
+          {
+            "permutation_new_label_to_old_point": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ],
+            "relative_signs": "+++++++++++++++++",
+            "residual_against_356": 0.1049802750010892
+          }
+        ]
+      }
+    },
+    "reference_curve": 356,
+    "stable_denominator_anchors": [
+      {
+        "label": 2,
+        "modal_denominator_root": 1,
+        "support": 5
+      },
+      {
+        "label": 3,
+        "modal_denominator_root": 5,
+        "support": 4
+      },
+      {
+        "label": 5,
+        "modal_denominator_root": 71,
+        "support": 5
+      },
+      {
+        "label": 15,
+        "modal_denominator_root": 1,
+        "support": 5
+      },
+      {
+        "label": 16,
+        "modal_denominator_root": 7,
+        "support": 4
+      },
+      {
+        "label": 17,
+        "modal_denominator_root": 41,
+        "support": 5
+      }
+    ]
+  },
+  "exact_local_component_fingerprints": {
+    "351": {
+      "meaning": "Exact identity/nonidentity component status on the supplied global minimal model; oriented component labels are deliberately not inferred.",
+      "places": [
+        {
+          "kodaira_symbol": "I17",
+          "prime": 2,
+          "tamagawa_number": 17
+        },
+        {
+          "kodaira_symbol": "IV",
+          "prime": 3,
+          "tamagawa_number": 3
+        },
+        {
+          "kodaira_symbol": "I0*",
+          "prime": 5,
+          "tamagawa_number": 4
+        },
+        {
+          "kodaira_symbol": "I3",
+          "prime": 7,
+          "tamagawa_number": 3
+        },
+        {
+          "kodaira_symbol": "IV",
+          "prime": 11,
+          "tamagawa_number": 3
+        },
+        {
+          "kodaira_symbol": "I5",
+          "prime": 13,
+          "tamagawa_number": 5
+        },
+        {
+          "kodaira_symbol": "I3",
+          "prime": 19,
+          "tamagawa_number": 3
+        },
+        {
+          "kodaira_symbol": "IV",
+          "prime": 23,
+          "tamagawa_number": 3
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 31,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 43,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 59,
+          "tamagawa_number": 2
+        }
+      ],
+      "points": [
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 9,
+          "normalized_nonidentity_fraction": 0.8181818181818182,
+          "normalized_tamagawa_weight": 0.5446524064171123,
+          "point_index": 1
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nonidentity_place_count": 4,
+          "normalized_nonidentity_fraction": 0.36363636363636365,
+          "normalized_tamagawa_weight": 0.2870766488413547,
+          "point_index": 2
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.5454545454545454,
+          "normalized_tamagawa_weight": 0.3931372549019608,
+          "point_index": 3
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.5454545454545454,
+          "normalized_tamagawa_weight": 0.37798573975044564,
+          "point_index": 4
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.5454545454545454,
+          "normalized_tamagawa_weight": 0.3931372549019608,
+          "point_index": 5
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.6363636363636364,
+          "normalized_tamagawa_weight": 0.4385918003565062,
+          "point_index": 6
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.6363636363636364,
+          "normalized_tamagawa_weight": 0.42647058823529416,
+          "point_index": 7
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.6363636363636364,
+          "normalized_tamagawa_weight": 0.4385918003565062,
+          "point_index": 8
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.7272727272727273,
+          "normalized_tamagawa_weight": 0.49919786096256685,
+          "point_index": 9
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.6363636363636364,
+          "normalized_tamagawa_weight": 0.42647058823529416,
+          "point_index": 10
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.5454545454545454,
+          "normalized_tamagawa_weight": 0.37344028520499106,
+          "point_index": 11
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 10,
+          "normalized_nonidentity_fraction": 0.9090909090909091,
+          "normalized_tamagawa_weight": 0.605258467023173,
+          "point_index": 12
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.5454545454545454,
+          "normalized_tamagawa_weight": 0.3855614973262032,
+          "point_index": 13
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.7272727272727273,
+          "normalized_tamagawa_weight": 0.4916221033868093,
+          "point_index": 14
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.6363636363636364,
+          "normalized_tamagawa_weight": 0.4537433155080214,
+          "point_index": 15
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.6363636363636364,
+          "normalized_tamagawa_weight": 0.4385918003565062,
+          "point_index": 16
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.6363636363636364,
+          "normalized_tamagawa_weight": 0.44616755793226387,
+          "point_index": 17
+        }
+      ]
+    },
+    "356": {
+      "meaning": "Exact identity/nonidentity component status on the supplied global minimal model; oriented component labels are deliberately not inferred.",
+      "places": [
+        {
+          "kodaira_symbol": "I1*",
+          "prime": 2,
+          "tamagawa_number": 4
+        },
+        {
+          "kodaira_symbol": "I10",
+          "prime": 3,
+          "tamagawa_number": 10
+        },
+        {
+          "kodaira_symbol": "I7",
+          "prime": 5,
+          "tamagawa_number": 7
+        },
+        {
+          "kodaira_symbol": "I6",
+          "prime": 13,
+          "tamagawa_number": 6
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 23,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I3",
+          "prime": 29,
+          "tamagawa_number": 3
+        },
+        {
+          "kodaira_symbol": "I4",
+          "prime": 37,
+          "tamagawa_number": 4
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 41,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 139,
+          "tamagawa_number": 2
+        }
+      ],
+      "points": [
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.6666666666666666,
+          "normalized_tamagawa_weight": 0.49153439153439155,
+          "point_index": 1
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.7777777777777778,
+          "normalized_tamagawa_weight": 0.5563492063492064,
+          "point_index": 2
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "nonidentity_place_count": 5,
+          "normalized_nonidentity_fraction": 0.5555555555555556,
+          "normalized_tamagawa_weight": 0.4148148148148148,
+          "point_index": 3
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.6666666666666666,
+          "normalized_tamagawa_weight": 0.5007936507936508,
+          "point_index": 4
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.7777777777777778,
+          "normalized_tamagawa_weight": 0.5563492063492064,
+          "point_index": 5
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.7777777777777778,
+          "normalized_tamagawa_weight": 0.5470899470899471,
+          "point_index": 6
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.7777777777777778,
+          "normalized_tamagawa_weight": 0.5656084656084656,
+          "point_index": 7
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 5,
+          "normalized_nonidentity_fraction": 0.5555555555555556,
+          "normalized_tamagawa_weight": 0.3703703703703704,
+          "point_index": 8
+        },
+        {
+          "identity_component_bits": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.7777777777777778,
+          "normalized_tamagawa_weight": 0.5563492063492064,
+          "point_index": 9
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 9,
+          "normalized_nonidentity_fraction": 1.0,
+          "normalized_tamagawa_weight": 0.6952380952380952,
+          "point_index": 10
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 5,
+          "normalized_nonidentity_fraction": 0.5555555555555556,
+          "normalized_tamagawa_weight": 0.36851851851851847,
+          "point_index": 11
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.6666666666666666,
+          "normalized_tamagawa_weight": 0.5007936507936508,
+          "point_index": 12
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.7777777777777778,
+          "normalized_tamagawa_weight": 0.5378306878306878,
+          "point_index": 13
+        },
+        {
+          "identity_component_bits": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.6666666666666666,
+          "normalized_tamagawa_weight": 0.46111111111111114,
+          "point_index": 14
+        },
+        {
+          "identity_component_bits": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 4,
+          "normalized_nonidentity_fraction": 0.4444444444444444,
+          "normalized_tamagawa_weight": 0.3037037037037037,
+          "point_index": 15
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "nonidentity_place_count": 5,
+          "normalized_nonidentity_fraction": 0.5555555555555556,
+          "normalized_tamagawa_weight": 0.4148148148148148,
+          "point_index": 16
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "nonidentity_place_count": 5,
+          "normalized_nonidentity_fraction": 0.5555555555555556,
+          "normalized_tamagawa_weight": 0.4285714285714286,
+          "point_index": 17
+        }
+      ]
+    },
+    "376": {
+      "meaning": "Exact identity/nonidentity component status on the supplied global minimal model; oriented component labels are deliberately not inferred.",
+      "places": [
+        {
+          "kodaira_symbol": "I22",
+          "prime": 2,
+          "tamagawa_number": 22
+        },
+        {
+          "kodaira_symbol": "I7",
+          "prime": 3,
+          "tamagawa_number": 7
+        },
+        {
+          "kodaira_symbol": "I7",
+          "prime": 7,
+          "tamagawa_number": 7
+        },
+        {
+          "kodaira_symbol": "I5",
+          "prime": 13,
+          "tamagawa_number": 5
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 37,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 107,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 179,
+          "tamagawa_number": 2
+        }
+      ],
+      "points": [
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 1.0,
+          "normalized_tamagawa_weight": 0.7098330241187385,
+          "point_index": 1
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 1.0,
+          "normalized_tamagawa_weight": 0.7098330241187385,
+          "point_index": 2
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "nonidentity_place_count": 4,
+          "normalized_nonidentity_fraction": 0.5714285714285714,
+          "normalized_tamagawa_weight": 0.4526901669758812,
+          "point_index": 3
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 4,
+          "normalized_nonidentity_fraction": 0.5714285714285714,
+          "normalized_tamagawa_weight": 0.4445269016697588,
+          "point_index": 4
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 5,
+          "normalized_nonidentity_fraction": 0.7142857142857143,
+          "normalized_tamagawa_weight": 0.5159554730983302,
+          "point_index": 5
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.8571428571428571,
+          "normalized_tamagawa_weight": 0.638404452690167,
+          "point_index": 6
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.8571428571428571,
+          "normalized_tamagawa_weight": 0.638404452690167,
+          "point_index": 7
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 3,
+          "normalized_nonidentity_fraction": 0.42857142857142855,
+          "normalized_tamagawa_weight": 0.32207792207792213,
+          "point_index": 8
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 5,
+          "normalized_nonidentity_fraction": 0.7142857142857143,
+          "normalized_tamagawa_weight": 0.5159554730983302,
+          "point_index": 9
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.8571428571428571,
+          "normalized_tamagawa_weight": 0.638404452690167,
+          "point_index": 10
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 5,
+          "normalized_nonidentity_fraction": 0.7142857142857143,
+          "normalized_tamagawa_weight": 0.5241187384044527,
+          "point_index": 11
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.8571428571428571,
+          "normalized_tamagawa_weight": 0.5955473098330241,
+          "point_index": 12
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 4,
+          "normalized_nonidentity_fraction": 0.5714285714285714,
+          "normalized_tamagawa_weight": 0.4445269016697588,
+          "point_index": 13
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 5,
+          "normalized_nonidentity_fraction": 0.7142857142857143,
+          "normalized_tamagawa_weight": 0.5669758812615956,
+          "point_index": 14
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 4,
+          "normalized_nonidentity_fraction": 0.5714285714285714,
+          "normalized_tamagawa_weight": 0.4445269016697588,
+          "point_index": 15
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nonidentity_place_count": 2,
+          "normalized_nonidentity_fraction": 0.2857142857142857,
+          "normalized_tamagawa_weight": 0.2588126159554731,
+          "point_index": 16
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.8571428571428571,
+          "normalized_tamagawa_weight": 0.638404452690167,
+          "point_index": 17
+        }
+      ]
+    },
+    "377": {
+      "meaning": "Exact identity/nonidentity component status on the supplied global minimal model; oriented component labels are deliberately not inferred.",
+      "places": [
+        {
+          "kodaira_symbol": "I1*",
+          "prime": 2,
+          "tamagawa_number": 4
+        },
+        {
+          "kodaira_symbol": "I8",
+          "prime": 3,
+          "tamagawa_number": 8
+        },
+        {
+          "kodaira_symbol": "I6",
+          "prime": 5,
+          "tamagawa_number": 6
+        },
+        {
+          "kodaira_symbol": "IV",
+          "prime": 11,
+          "tamagawa_number": 3
+        },
+        {
+          "kodaira_symbol": "I6",
+          "prime": 13,
+          "tamagawa_number": 6
+        },
+        {
+          "kodaira_symbol": "I4",
+          "prime": 19,
+          "tamagawa_number": 4
+        },
+        {
+          "kodaira_symbol": "IV",
+          "prime": 23,
+          "tamagawa_number": 3
+        },
+        {
+          "kodaira_symbol": "I3",
+          "prime": 29,
+          "tamagawa_number": 3
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 37,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 103,
+          "tamagawa_number": 2
+        }
+      ],
+      "points": [
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.8,
+          "normalized_tamagawa_weight": 0.5708333333333333,
+          "point_index": 1
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.8,
+          "normalized_tamagawa_weight": 0.5625,
+          "point_index": 2
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.6,
+          "normalized_tamagawa_weight": 0.4041666666666667,
+          "point_index": 3
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.6,
+          "normalized_tamagawa_weight": 0.4083333333333333,
+          "point_index": 4
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.8,
+          "normalized_tamagawa_weight": 0.5875,
+          "point_index": 5
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.8,
+          "normalized_tamagawa_weight": 0.5875,
+          "point_index": 6
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.7,
+          "normalized_tamagawa_weight": 0.4833333333333333,
+          "point_index": 7
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.7,
+          "normalized_tamagawa_weight": 0.4833333333333333,
+          "point_index": 8
+        },
+        {
+          "identity_component_bits": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.7,
+          "normalized_tamagawa_weight": 0.4958333333333333,
+          "point_index": 9
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.8,
+          "normalized_tamagawa_weight": 0.5708333333333333,
+          "point_index": 10
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.6,
+          "normalized_tamagawa_weight": 0.3958333333333333,
+          "point_index": 11
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.8,
+          "normalized_tamagawa_weight": 0.5458333333333333,
+          "point_index": 12
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.6,
+          "normalized_tamagawa_weight": 0.4625,
+          "point_index": 13
+        },
+        {
+          "identity_component_bits": [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.7,
+          "normalized_tamagawa_weight": 0.4958333333333333,
+          "point_index": 14
+        },
+        {
+          "identity_component_bits": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 5,
+          "normalized_nonidentity_fraction": 0.5,
+          "normalized_tamagawa_weight": 0.3541666666666667,
+          "point_index": 15
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 5,
+          "normalized_nonidentity_fraction": 0.5,
+          "normalized_tamagawa_weight": 0.3625,
+          "point_index": 16
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.7,
+          "normalized_tamagawa_weight": 0.5291666666666667,
+          "point_index": 17
+        }
+      ]
+    },
+    "385": {
+      "meaning": "Exact identity/nonidentity component status on the supplied global minimal model; oriented component labels are deliberately not inferred.",
+      "places": [
+        {
+          "kodaira_symbol": "I16",
+          "prime": 2,
+          "tamagawa_number": 16
+        },
+        {
+          "kodaira_symbol": "I6",
+          "prime": 5,
+          "tamagawa_number": 6
+        },
+        {
+          "kodaira_symbol": "I6",
+          "prime": 7,
+          "tamagawa_number": 6
+        },
+        {
+          "kodaira_symbol": "I5",
+          "prime": 11,
+          "tamagawa_number": 5
+        },
+        {
+          "kodaira_symbol": "I5",
+          "prime": 13,
+          "tamagawa_number": 5
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 29,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 37,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 41,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 43,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 47,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 73,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 89,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 109,
+          "tamagawa_number": 2
+        },
+        {
+          "kodaira_symbol": "I2",
+          "prime": 127,
+          "tamagawa_number": 2
+        }
+      ],
+      "points": [
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 9,
+          "normalized_nonidentity_fraction": 0.6428571428571429,
+          "normalized_tamagawa_weight": 0.39553571428571427,
+          "point_index": 1
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.5714285714285714,
+          "normalized_tamagawa_weight": 0.4074404761904762,
+          "point_index": 2
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.5,
+          "normalized_tamagawa_weight": 0.32648809523809524,
+          "point_index": 3
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.5714285714285714,
+          "normalized_tamagawa_weight": 0.3836309523809524,
+          "point_index": 4
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.5714285714285714,
+          "normalized_tamagawa_weight": 0.4074404761904762,
+          "point_index": 5
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 7,
+          "normalized_nonidentity_fraction": 0.5,
+          "normalized_tamagawa_weight": 0.3479166666666667,
+          "point_index": 6
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 10,
+          "normalized_nonidentity_fraction": 0.7142857142857143,
+          "normalized_tamagawa_weight": 0.47886904761904764,
+          "point_index": 7
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 9,
+          "normalized_nonidentity_fraction": 0.6428571428571429,
+          "normalized_tamagawa_weight": 0.4217261904761905,
+          "point_index": 8
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 5,
+          "normalized_nonidentity_fraction": 0.35714285714285715,
+          "normalized_tamagawa_weight": 0.23124999999999998,
+          "point_index": 9
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.5714285714285714,
+          "normalized_tamagawa_weight": 0.35982142857142857,
+          "point_index": 10
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.42857142857142855,
+          "normalized_tamagawa_weight": 0.29077380952380955,
+          "point_index": 11
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 10,
+          "normalized_nonidentity_fraction": 0.7142857142857143,
+          "normalized_tamagawa_weight": 0.4574404761904762,
+          "point_index": 12
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 11,
+          "normalized_nonidentity_fraction": 0.7857142857142857,
+          "normalized_tamagawa_weight": 0.49077380952380956,
+          "point_index": 13
+        },
+        {
+          "identity_component_bits": [
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.5714285714285714,
+          "normalized_tamagawa_weight": 0.3836309523809524,
+          "point_index": 14
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 9,
+          "normalized_nonidentity_fraction": 0.6428571428571429,
+          "normalized_tamagawa_weight": 0.4431547619047619,
+          "point_index": 15
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 6,
+          "normalized_nonidentity_fraction": 0.42857142857142855,
+          "normalized_tamagawa_weight": 0.29077380952380955,
+          "point_index": 16
+        },
+        {
+          "identity_component_bits": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "nonidentity_place_count": 8,
+          "normalized_nonidentity_fraction": 0.5714285714285714,
+          "normalized_tamagawa_weight": 0.3860119047619048,
+          "point_index": 17
+        }
+      ]
+    }
+  },
+  "exact_signed_permutation_group_law_replay": {
+    "all_85_transformed_points_verified": true,
+    "curves": {
+      "351": {
+        "transformed_points_sha256": "a923709e3bbec58a19973e463cb13bc2a2bce86bc7461c6ef72761e2afe24407",
+        "verified_point_count": 17
+      },
+      "356": {
+        "transformed_points_sha256": "0e962ee61dd3d1e76f3098fbec449d91baab5eb7535db9780612636bd5169fdc",
+        "verified_point_count": 17
+      },
+      "376": {
+        "transformed_points_sha256": "4fefc65d1486258ae6cec87d2a371b90b0f3ec564c5d9eecc14b7d14b4c40ac6",
+        "verified_point_count": 17
+      },
+      "377": {
+        "transformed_points_sha256": "e894ff5eef9e19b367adb9495eaadef0b1d60f71d9a1215f6456a7dfc2f79ac5",
+        "verified_point_count": 17
+      },
+      "385": {
+        "transformed_points_sha256": "30049c6dae85cbcda100e999721b0d580e3484277c773c2bc1c8f47c56cbe599",
+        "verified_point_count": 17
+      }
+    },
+    "operation": "permutation followed by elliptic inversion (x,y)->(x,-y)"
+  },
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_lineage_v1.json": "f875f3917486c78089c6ba618daaef7dea07cb36152dd192d0f00c5d425c1c03",
+    "https://elliptic-rank.icarm.cloud/database.json": "18699517c2969c8c3a250ae612d5caae9fb23c379fe054ba3c7fdf2ec2a83e50"
+  },
+  "negative_controls": {
+    "all_pair_best_signed_fits": {
+      "351/356": {
+        "relative_frobenius_residual": 0.11220111822209623,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.4208782482875446
+      },
+      "351/363": {
+        "relative_frobenius_residual": 0.4775090767469441,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.9924602017459713
+      },
+      "351/364": {
+        "relative_frobenius_residual": 0.48409449070292365,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.1122113969105274
+      },
+      "351/376": {
+        "relative_frobenius_residual": 0.18111101353332257,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.8807498725869669
+      },
+      "351/377": {
+        "relative_frobenius_residual": 0.15875125232239254,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.8765727158608414
+      },
+      "351/378": {
+        "relative_frobenius_residual": 0.4846385530752907,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.9426304300850835
+      },
+      "351/385": {
+        "relative_frobenius_residual": 0.14730984771630803,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.5869071464473365
+      },
+      "351/389": {
+        "relative_frobenius_residual": 0.3900356714545784,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.0058698817016425
+      },
+      "351/390": {
+        "relative_frobenius_residual": 0.3730552337153354,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.32479134430419
+      },
+      "351/391": {
+        "relative_frobenius_residual": 0.36756064761545904,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.4513406679629701
+      },
+      "351/393": {
+        "relative_frobenius_residual": 0.4700195849561572,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.8552113281189416
+      },
+      "351/395": {
+        "relative_frobenius_residual": 0.48781576106508145,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.2114014147206935
+      },
+      "356/363": {
+        "relative_frobenius_residual": 0.45430666510443724,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.7037251349658045
+      },
+      "356/364": {
+        "relative_frobenius_residual": 0.46387875769850573,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.7874946979331907
+      },
+      "356/376": {
+        "relative_frobenius_residual": 0.12518078764546758,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.6213797830800714
+      },
+      "356/377": {
+        "relative_frobenius_residual": 0.1364436299224126,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.6150947428286059
+      },
+      "356/378": {
+        "relative_frobenius_residual": 0.45354051039679155,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.6716759155146996
+      },
+      "356/385": {
+        "relative_frobenius_residual": 0.1049802750010892,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.1158381159097792
+      },
+      "356/389": {
+        "relative_frobenius_residual": 0.37509721946679103,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.7081767070850994
+      },
+      "356/390": {
+        "relative_frobenius_residual": 0.3483325616705619,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.9360357887020272
+      },
+      "356/391": {
+        "relative_frobenius_residual": 0.34995735945306383,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.0223736965929087
+      },
+      "356/393": {
+        "relative_frobenius_residual": 0.4365411856070322,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.6096270066117304
+      },
+      "356/395": {
+        "relative_frobenius_residual": 0.44605487186704007,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.868596847260312
+      },
+      "363/364": {
+        "relative_frobenius_residual": 0.11287319854224344,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.1180945410098033
+      },
+      "363/376": {
+        "relative_frobenius_residual": 0.46812084423093114,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.7006053601879341
+      },
+      "363/377": {
+        "relative_frobenius_residual": 0.43808511611612294,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.706560805164275
+      },
+      "363/378": {
+        "relative_frobenius_residual": 0.12020643573798721,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.9471219480431388
+      },
+      "363/385": {
+        "relative_frobenius_residual": 0.48531460283986644,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.2419011632157848
+      },
+      "363/389": {
+        "relative_frobenius_residual": 0.43664190876140613,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.8700305453799643
+      },
+      "363/390": {
+        "relative_frobenius_residual": 0.39524342108929245,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.1611691352312818
+      },
+      "363/391": {
+        "relative_frobenius_residual": 0.4097332383030431,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.2602903536370602
+      },
+      "363/393": {
+        "relative_frobenius_residual": 0.464069071303681,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.7598161515439159
+      },
+      "363/395": {
+        "relative_frobenius_residual": 0.46200591343226005,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.089569814895002
+      },
+      "364/376": {
+        "relative_frobenius_residual": 0.4778440231578401,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.6189244780974346
+      },
+      "364/377": {
+        "relative_frobenius_residual": 0.45106695397580526,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.6233939130195825
+      },
+      "364/378": {
+        "relative_frobenius_residual": 0.1366120344511875,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.8398713445221809
+      },
+      "364/385": {
+        "relative_frobenius_residual": 0.48891730095546665,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.101095348276788
+      },
+      "364/389": {
+        "relative_frobenius_residual": 0.42658998722744307,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.7772976471040202
+      },
+      "364/390": {
+        "relative_frobenius_residual": 0.3880309112406951,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.0353368398955507
+      },
+      "364/391": {
+        "relative_frobenius_residual": 0.39818122194707983,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.1262368745322617
+      },
+      "364/393": {
+        "relative_frobenius_residual": 0.4701217430407305,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.6727832836588318
+      },
+      "364/395": {
+        "relative_frobenius_residual": 0.4617679985907189,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.9683957952938987
+      },
+      "376/377": {
+        "relative_frobenius_residual": 0.16422020623678482,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.9779111787271344
+      },
+      "376/378": {
+        "relative_frobenius_residual": 0.4637112983578625,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.0661233299453095
+      },
+      "376/385": {
+        "relative_frobenius_residual": 0.14149560851021284,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.77349186343965
+      },
+      "376/389": {
+        "relative_frobenius_residual": 0.393985223191631,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.1211212661211327
+      },
+      "376/390": {
+        "relative_frobenius_residual": 0.36184307478443595,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.4863510683395202
+      },
+      "376/391": {
+        "relative_frobenius_residual": 0.37254196683917684,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.6171379472684395
+      },
+      "376/393": {
+        "relative_frobenius_residual": 0.45058740457237834,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.9658474032258654
+      },
+      "376/395": {
+        "relative_frobenius_residual": 0.4423599563305036,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.3896949656178215
+      },
+      "377/378": {
+        "relative_frobenius_residual": 0.43368464172769966,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.0937057272847373
+      },
+      "377/385": {
+        "relative_frobenius_residual": 0.16596006132174002,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.7820511589831465
+      },
+      "377/389": {
+        "relative_frobenius_residual": 0.4167126883958645,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.11847979790217
+      },
+      "377/390": {
+        "relative_frobenius_residual": 0.3798749854914354,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.487708033805086
+      },
+      "377/391": {
+        "relative_frobenius_residual": 0.3837745922767796,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.6231493267375678
+      },
+      "377/393": {
+        "relative_frobenius_residual": 0.4537893288342334,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.9724833569421044
+      },
+      "377/395": {
+        "relative_frobenius_residual": 0.4665929973308535,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.3824643115897213
+      },
+      "378/385": {
+        "relative_frobenius_residual": 0.4831212470966445,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.3035361357828763
+      },
+      "378/389": {
+        "relative_frobenius_residual": 0.43938912842196776,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.910586808864178
+      },
+      "378/390": {
+        "relative_frobenius_residual": 0.39381142822736503,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.217922335390579
+      },
+      "378/391": {
+        "relative_frobenius_residual": 0.4104833797702952,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.3205155289414883
+      },
+      "378/393": {
+        "relative_frobenius_residual": 0.4617625424507438,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.7975028109854094
+      },
+      "378/395": {
+        "relative_frobenius_residual": 0.45345475072349356,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.1477282951210581
+      },
+      "385/389": {
+        "relative_frobenius_residual": 0.39249702429772815,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.6262279164041084
+      },
+      "385/390": {
+        "relative_frobenius_residual": 0.3592196048509706,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.8305632839603936
+      },
+      "385/391": {
+        "relative_frobenius_residual": 0.36174038113502494,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.9068113249836782
+      },
+      "385/393": {
+        "relative_frobenius_residual": 0.45054056977133083,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.5391370749838087
+      },
+      "385/395": {
+        "relative_frobenius_residual": 0.46088474659493184,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.7675976728617087
+      },
+      "389/390": {
+        "relative_frobenius_residual": 0.14161548392739723,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.2939368676067948
+      },
+      "389/391": {
+        "relative_frobenius_residual": 0.1266350648136638,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.4170968061802454
+      },
+      "389/393": {
+        "relative_frobenius_residual": 0.46174002651860596,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.7867494963434238
+      },
+      "389/395": {
+        "relative_frobenius_residual": 0.42171168003222903,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.1518654636096453
+      },
+      "390/391": {
+        "relative_frobenius_residual": 0.10586783674135344,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.0868015757729448
+      },
+      "390/393": {
+        "relative_frobenius_residual": 0.4287246659233829,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.613041880039231
+      },
+      "390/395": {
+        "relative_frobenius_residual": 0.3652226824707656,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.9047404426134885
+      },
+      "391/393": {
+        "relative_frobenius_residual": 0.4295690021956993,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.5606598668473364
+      },
+      "391/395": {
+        "relative_frobenius_residual": 0.38171618314183997,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 0.8218965002311289
+      },
+      "393/395": {
+        "relative_frobenius_residual": 0.4278236555765954,
+        "relative_signs": "+++++++++++++++++",
+        "scale_left_to_right": 1.294555445003388
+      }
+    },
+    "components": [
+      [
+        351,
+        356,
+        376,
+        377,
+        385
+      ],
+      [
+        363,
+        364,
+        378
+      ],
+      [
+        389,
+        390,
+        391
+      ],
+      [
+        393
+      ],
+      [
+        395
+      ]
+    ],
+    "required_separate_components": [
+      [
+        363,
+        364,
+        378
+      ],
+      [
+        389,
+        390,
+        391
+      ]
+    ],
+    "signed_residual_cutoff": 0.2,
+    "status": "PASS_CONTROLS_REMAIN_SEPARATE"
+  },
+  "proof_boundary": "The sign enumeration is exhaustive and its joint optimum follows because all ten pairwise minima are simultaneously attained. The permutation enumeration is complete only inside the explicitly declared fingerprint graph and numerical slacks. Gram alignment proposes rebasing; it neither constructs exact elliptic points nor proves common-family membership.",
+  "retained_signed_permutation_candidates": [
+    {
+      "351": {
+        "permutation_new_label_to_old_point": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "residual_against_356": 0.11220111822209623,
+        "signs": "+++++++++++++++++"
+      },
+      "356": {
+        "permutation_new_label_to_old_point": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "residual_against_356": 0.0,
+        "signs": "+++++++++++++++++"
+      },
+      "376": {
+        "permutation_new_label_to_old_point": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "residual_against_356": 0.12518078764546758,
+        "signs": "+++++++++++++++++"
+      },
+      "377": {
+        "permutation_new_label_to_old_point": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "residual_against_356": 0.1364436299224126,
+        "signs": "+++++++++++++++++"
+      },
+      "385": {
+        "permutation_new_label_to_old_point": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "residual_against_356": 0.1049802750010892,
+        "signs": "+++++++++++++++++"
+      }
+    }
+  ],
+  "runtime_seconds": 3.8229769480021787,
+  "schema": "icarm.wgxli-rank17-signed-permutation-rebasing.v1",
+  "sign_alignment": {
+    "global_sign_gauge": "the reference fibre is fixed to +...+; a common diagonal sign on all five fibres is independent global section inversion, and D and -D act identically in each pairwise Gram fit",
+    "joint_minimum": 0.21213241870077748,
+    "joint_objective": "sum over ten pairs of squared scale-fitted relative Frobenius residuals",
+    "minimum_increment_for_any_nontrivial_pair_sign": 0.15876042945482075,
+    "near_relative_band": 0.1,
+    "only_displayed_signs_jointly_near_optimal": true,
+    "pair_records": {
+      "351/356": {
+        "best": {
+          "relative_frobenius_residual": 0.11220111822209623,
+          "relative_signs": "+++++++++++++++++",
+          "scale_left_to_right": 1.4208782482875446
+        },
+        "near_optimal_relative_signs": [
+          {
+            "relative_frobenius_residual": 0.11220111822209623,
+            "relative_signs": "+++++++++++++++++",
+            "scale_left_to_right": 1.4208782482875446
+          }
+        ],
+        "next_distinct": {
+          "relative_frobenius_residual": 0.41933151010093805,
+          "relative_signs": "+++++++-+++++++++",
+          "scale_left_to_right": 1.2981173584855534
+        }
+      },
+      "351/376": {
+        "best": {
+          "relative_frobenius_residual": 0.18111101353332257,
+          "relative_signs": "+++++++++++++++++",
+          "scale_left_to_right": 0.8807498725869669
+        },
+        "near_optimal_relative_signs": [
+          {
+            "relative_frobenius_residual": 0.18111101353332257,
+            "relative_signs": "+++++++++++++++++",
+            "scale_left_to_right": 0.8807498725869669
+          }
+        ],
+        "next_distinct": {
+          "relative_frobenius_residual": 0.4587898290969657,
+          "relative_signs": "+++++++-+++++++++",
+          "scale_left_to_right": 0.79574524563475
+        }
+      },
+      "351/377": {
+        "best": {
+          "relative_frobenius_residual": 0.15875125232239254,
+          "relative_signs": "+++++++++++++++++",
+          "scale_left_to_right": 0.8765727158608414
+        },
+        "near_optimal_relative_signs": [
+          {
+            "relative_frobenius_residual": 0.15875125232239254,
+            "relative_signs": "+++++++++++++++++",
+            "scale_left_to_right": 0.8765727158608414
+          }
+        ],
+        "next_distinct": {
+          "relative_frobenius_residual": 0.4289083696650704,
+          "relative_signs": "++-++++++++++++++",
+          "scale_left_to_right": 0.8020209499182402
+        }
+      },
+      "351/385": {
+        "best": {
+          "relative_frobenius_residual": 0.14730984771630803,
+          "relative_signs": "+++++++++++++++++",
+          "scale_left_to_right": 1.5869071464473365
+        },
+        "near_optimal_relative_signs": [
+          {
+            "relative_frobenius_residual": 0.14730984771630803,
+            "relative_signs": "+++++++++++++++++",
+            "scale_left_to_right": 1.5869071464473365
+          }
+        ],
+        "next_distinct": {
+          "relative_frobenius_residual": 0.42552883265064334,
+          "relative_signs": "+++++++-+++++++++",
+          "scale_left_to_right": 1.4519031674025191
+        }
+      },
+      "356/376": {
+        "best": {
+          "relative_frobenius_residual": 0.12518078764546758,
+          "relative_signs": "+++++++++++++++++",
+          "scale_left_to_right": 0.6213797830800714
+        },
+        "near_optimal_relative_signs": [
+          {
+            "relative_frobenius_residual": 0.12518078764546758,
+            "relative_signs": "+++++++++++++++++",
+            "scale_left_to_right": 0.6213797830800714
+          }
+        ],
+        "next_distinct": {
+          "relative_frobenius_residual": 0.4472565137511772,
+          "relative_signs": "++++++++++++++++-",
+          "scale_left_to_right": 0.5601719808928074
+        }
+      },
+      "356/377": {
+        "best": {
+          "relative_frobenius_residual": 0.1364436299224126,
+          "relative_signs": "+++++++++++++++++",
+          "scale_left_to_right": 0.6150947428286059
+        },
+        "near_optimal_relative_signs": [
+          {
+            "relative_frobenius_residual": 0.1364436299224126,
+            "relative_signs": "+++++++++++++++++",
+            "scale_left_to_right": 0.6150947428286059
+          }
+        ],
+        "next_distinct": {
+          "relative_frobenius_residual": 0.45991958950405687,
+          "relative_signs": "++-++++++++++++++",
+          "scale_left_to_right": 0.5513360625469641
+        }
+      },
+      "356/385": {
+        "best": {
+          "relative_frobenius_residual": 0.1049802750010892,
+          "relative_signs": "+++++++++++++++++",
+          "scale_left_to_right": 1.1158381159097792
+        },
+        "near_optimal_relative_signs": [
+          {
+            "relative_frobenius_residual": 0.1049802750010892,
+            "relative_signs": "+++++++++++++++++",
+            "scale_left_to_right": 1.1158381159097792
+          }
+        ],
+        "next_distinct": {
+          "relative_frobenius_residual": 0.45738655788180227,
+          "relative_signs": "+++++++-+++++++++",
+          "scale_left_to_right": 0.997792603417793
+        }
+      },
+      "376/377": {
+        "best": {
+          "relative_frobenius_residual": 0.16422020623678482,
+          "relative_signs": "+++++++++++++++++",
+          "scale_left_to_right": 0.9779111787271344
+        },
+        "near_optimal_relative_signs": [
+          {
+            "relative_frobenius_residual": 0.16422020623678482,
+            "relative_signs": "+++++++++++++++++",
+            "scale_left_to_right": 0.9779111787271344
+          }
+        ],
+        "next_distinct": {
+          "relative_frobenius_residual": 0.46300039493843487,
+          "relative_signs": "++++++++++++++++-",
+          "scale_left_to_right": 0.8787090829210829
+        }
+      },
+      "376/385": {
+        "best": {
+          "relative_frobenius_residual": 0.14149560851021284,
+          "relative_signs": "+++++++++++++++++",
+          "scale_left_to_right": 1.77349186343965
+        },
+        "near_optimal_relative_signs": [
+          {
+            "relative_frobenius_residual": 0.14149560851021284,
+            "relative_signs": "+++++++++++++++++",
+            "scale_left_to_right": 1.77349186343965
+          }
+        ],
+        "next_distinct": {
+          "relative_frobenius_residual": 0.45383575800025905,
+          "relative_signs": "++++++++++++++++-",
+          "scale_left_to_right": 1.59639412916218
+        }
+      },
+      "377/385": {
+        "best": {
+          "relative_frobenius_residual": 0.16596006132174002,
+          "relative_signs": "+++++++++++++++++",
+          "scale_left_to_right": 1.7820511589831465
+        },
+        "near_optimal_relative_signs": [
+          {
+            "relative_frobenius_residual": 0.16596006132174002,
+            "relative_signs": "+++++++++++++++++",
+            "scale_left_to_right": 1.7820511589831465
+          }
+        ],
+        "next_distinct": {
+          "relative_frobenius_residual": 0.4703427145996242,
+          "relative_signs": "+++++++-+++++++++",
+          "scale_left_to_right": 1.5947465405305286
+        }
+      }
+    },
+    "relative_signs_enumerated_per_pair": 65536
+  },
+  "software": {
+    "numpy": "2.5.2",
+    "pari_gp": "[2, 15, 4]"
+  },
+  "status": "PASS_BOUNDED_SIGN_AND_PERMUTATION_ALIGNMENT"
+}

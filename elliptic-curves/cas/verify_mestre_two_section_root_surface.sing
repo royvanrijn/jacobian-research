@@ -1,0 +1,207 @@
+// Exact recursive certificate for the root-coordinate surface suggested by
+// the six-root two-section germ at (0,25,95,143,168,205).
+//
+// Use normalized labelled roots (0,1,r3,r4,r5,r6).  On the open chart
+//
+//   e = r3-r4+1 != 0,  d = r3-r5-r6+1 != 0,
+//
+// introduce their inverses ie,id and impose the sparse incidence relation
+//
+//   r3/e + r5+r6-r4 = (r3-r5*r6)/d.
+//
+// The two proposed affine abscissae are
+//
+//   x01=r3/e,              x11=(r5-r6)/e,
+//   x02=(r3-r5*r6)/d,      x12=-r4/d.
+//
+// This verifier rebuilds the Mestre remainder by monic-square recursion and
+// reduces M and both triples (E2,E1,E0) by the root-surface ideal.  It never
+// prints or stores the expanded universal degree-40/50/60 residuals.
+
+option(redSB);
+
+string coefficientField = system("--user-option");
+if (coefficientField == "")
+{
+  coefficientField = "0";
+}
+execute(
+  "ring RootSurface = "+coefficientField
+  +",(T,X,r3,r4,r5,r6,ie,id,iq),dp;"
+);
+
+proc coefficientIn(poly f, poly variable, int exponent)
+{
+  int index;
+  int factorial = 1;
+  for (index=1; index<=exponent; index=index+1)
+  {
+    f = diff(f,variable);
+    factorial = factorial*index;
+  }
+  return(subst(f,variable,0)/factorial);
+}
+
+poly q = X*(X-1)*(X-r3)*(X-r4)*(X-r5)*(X-r6);
+poly a1 = coefficientIn(q,X,5);
+poly a2 = coefficientIn(q,X,4);
+poly a3 = coefficientIn(q,X,3);
+poly a4 = coefficientIn(q,X,2);
+poly a5 = coefficientIn(q,X,1);
+poly M =
+  a1^5-6*a1^3*a2+7*a1^2*a3+8*a1*a2^2
+  -8*a1*a4-12*a2*a3+24*a5;
+poly D = 5*a1^4-24*a1^2*a2+32*a1*a3+16*a2^2-64*a4;
+
+poly e = r3-r4+1;
+poly d = r3-r5-r6+1;
+poly sparseRelation =
+  r3*ie+r5+r6-r4-(r3-r5*r6)*id;
+// The complete intersection (M,sparseRelation) has two components on this
+// inverse chart.  Q is the degree-four non-seed resultant factor; Q(seed) is
+// nonzero, so inverting it removes that extraneous component and retains the
+// degree-ten projection factor through the selected seed.
+poly Q =
+  r3^3*r4-2*r3^2*r4^2+r3*r4^3-r3^3*r5+r3^2*r4*r5+r3*r4^2*r5
+  -r4^3*r5+r3^2*r5^2-2*r3*r4*r5^2+r4^2*r5^2-r3^3
+  +2*r3^2*r4-2*r3*r4^2+r4^3-r3^2*r5+r4^2*r5+2*r3*r5^2
+  -2*r4*r5^2+2*r3*r4-2*r4^2-r3*r5+r4*r5+r5^2-r3+r4-r5;
+ideal componentIdeal = M,e*ie-1,d*id-1,sparseRelation,Q*iq-1;
+ideal componentBasis = std(componentIdeal);
+
+proc nfProduct(poly left, poly right)
+{
+  return(reduce(left*right,componentBasis));
+}
+
+if (reduce(M,componentBasis) != 0
+    || reduce(e*ie-1,componentBasis) != 0
+    || reduce(d*id-1,componentBasis) != 0
+    || reduce(sparseRelation,componentBasis) != 0
+    || reduce(Q*iq-1,componentBasis) != 0)
+{
+  "ERROR: root-surface standard basis failed its generators";
+  exit(2);
+}
+
+// Rebuild the unique monic square approximant through X-degree six.  Reduce
+// coefficients on the component after each recursive correction.
+poly productShifted = subst(q,X,X-T)*subst(q,X,X+T);
+poly g = X^6;
+int lowerDegree;
+int targetDegree;
+poly correction;
+for (lowerDegree=5; lowerDegree>=0; lowerDegree=lowerDegree-1)
+{
+  targetDegree = 6+lowerDegree;
+  correction =
+    (coefficientIn(productShifted,X,targetDegree)
+     -coefficientIn(g*g,X,targetDegree))/2;
+  correction = reduce(correction,componentBasis);
+  g = reduce(g+correction*X^lowerDegree,componentBasis);
+}
+poly numeratorR = reduce(g*g-productShifted,componentBasis);
+poly R = numeratorR/T^2;
+if (numeratorR-T^2*R != 0)
+{
+  "ERROR: recursive remainder is not divisible by T^2";
+  exit(2);
+}
+
+proc sectionResiduals(poly intercept, poly slope)
+{
+  poly sectionValue = reduce(subst(R,X,intercept+slope*T),componentBasis);
+  poly f0 = coefficientIn(sectionValue,T,0);
+  poly f1 = coefficientIn(sectionValue,T,1);
+  poly f2 = coefficientIn(sectionValue,T,2);
+  poly f3 = coefficientIn(sectionValue,T,3);
+  poly f4 = coefficientIn(sectionValue,T,4);
+  poly f5 = coefficientIn(sectionValue,T,5);
+  poly s2 = reduce((1-slope^2)^2*D/4,componentBasis);
+  poly s2Squared = nfProduct(s2,s2);
+  poly s2Cubed = nfProduct(s2Squared,s2);
+  poly s2Fourth = nfProduct(s2Cubed,s2);
+  poly s2Fifth = nfProduct(s2Fourth,s2);
+  poly N1 = reduce(4*nfProduct(s2,f4)-nfProduct(f5,f5),componentBasis);
+  poly N0 = reduce(8*nfProduct(s2Squared,f3)-nfProduct(N1,f5),componentBasis);
+  poly E2 = reduce(
+    64*nfProduct(s2Cubed,f2)-nfProduct(N1,N1)-4*nfProduct(N0,f5),
+    componentBasis
+  );
+  poly E1 = reduce(
+    64*nfProduct(s2Fourth,f1)-nfProduct(N0,N1),
+    componentBasis
+  );
+  poly E0 = reduce(
+    256*nfProduct(s2Fifth,f0)-nfProduct(N0,N0),
+    componentBasis
+  );
+  return(ideal(E2,E1,E0));
+}
+
+poly x01 = reduce(r3*ie,componentBasis);
+poly x11 = reduce((r5-r6)*ie,componentBasis);
+poly x02 = reduce((r3-r5*r6)*id,componentBasis);
+poly x12 = reduce(-r4*id,componentBasis);
+ideal firstResiduals = sectionResiduals(x01,x11);
+ideal secondResiduals = sectionResiduals(x02,x12);
+
+if (size(firstResiduals) != 0 || size(secondResiduals) != 0)
+{
+  "ERROR: a proposed section residual survived on the root surface";
+  "first_residual_sizes",size(firstResiduals[1]),size(firstResiduals[2]),size(firstResiduals[3]);
+  "second_residual_sizes",size(secondResiduals[1]),size(secondResiduals[2]),size(secondResiduals[3]);
+  exit(2);
+}
+
+// Exact seed check in the normalized root coordinates.
+ideal seedPoint =
+  r3-19/5,r4-143/25,r5-168/25,r6-41/5,
+  ie+25/23,id+25/253,iq-15625/629592;
+ideal seedBasis = std(seedPoint);
+int seedRecovered =
+  reduce(M,seedBasis) == 0
+  && reduce(e*ie-1,seedBasis) == 0
+  && reduce(d*id-1,seedBasis) == 0
+  && reduce(sparseRelation,seedBasis) == 0
+  && reduce(Q*iq-1,seedBasis) == 0
+  && reduce(x01+95/23,seedBasis) == 0
+  && reduce(x11-37/23,seedBasis) == 0
+  && reduce(x02-583/115,seedBasis) == 0
+  && reduce(x12-13/23,seedBasis) == 0;
+if (!seedRecovered)
+{
+  "ERROR: the proposed surface missed the pinned labelled seed";
+}
+
+// The five component equations plus the two proposed local parameters have
+// a nonsingular 7-by-7 Jacobian in (r3,r4,r5,r6,ie,id,iq).  Hence the source
+// chart is smooth of dimension two and (x02,x12) are etale local coordinates.
+ideal localCoordinateSystem = componentIdeal,x02,x12;
+matrix localCoordinateJacobian[7][7];
+int jacobianRow;
+int jacobianColumn;
+for (jacobianRow=1; jacobianRow<=7; jacobianRow=jacobianRow+1)
+{
+  for (jacobianColumn=1; jacobianColumn<=7; jacobianColumn=jacobianColumn+1)
+  {
+    localCoordinateJacobian[jacobianRow,jacobianColumn] = reduce(
+      diff(localCoordinateSystem[jacobianRow],var(jacobianColumn+2)),
+      seedBasis
+    );
+  }
+}
+poly localCoordinateJacobianDeterminant = det(localCoordinateJacobian);
+int sourceSmoothAndParametersEtale = localCoordinateJacobianDeterminant != 0;
+
+"MESTRE_TWO_SECTION_ROOT_SURFACE_V1";
+"coefficient_characteristic",coefficientField;
+"component_dimension_in_root_inverse_chart",dim(componentBasis)-2;
+"component_standard_basis_size",size(componentBasis);
+"first_section_residuals_zero",size(firstResiduals) == 0;
+"second_section_residuals_zero",size(secondResiduals) == 0;
+"seed_recovered",seedRecovered;
+"source_smooth_and_x02_x12_etale",sourceSmoothAndParametersEtale;
+"local_coordinate_jacobian_determinant",localCoordinateJacobianDeterminant;
+"expanded_universal_residuals_materialized",0;
+"DONE";

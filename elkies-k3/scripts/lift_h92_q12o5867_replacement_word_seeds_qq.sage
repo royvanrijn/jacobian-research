@@ -29,10 +29,22 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--reconstruction-start", type=int, default=64)
 parser.add_argument("--maximum-precision", type=int, default=4096)
 parser.add_argument(
+    "--class-index", action="append", type=int, default=[],
+    help="lift the first regular uniquely classified seed for this physical class",
+)
+parser.add_argument(
+    "--class-shell", action="append", default=[], metavar="CLASS:SHELL",
+    help="lift an explicitly selected regular shell seed carrying the supplied modular class label",
+)
+parser.add_argument("--shell", type=Path, default=SHELL)
+parser.add_argument("--classifier", type=Path, default=CLASSIFIER)
+parser.add_argument(
     "--output",
     default="artifacts/local/elkies-k3/q12o5867-replacement-word-seeds-qq.json",
 )
 args = parser.parse_args()
+SHELL = args.shell if args.shell.is_absolute() else ROOT / args.shell
+CLASSIFIER = args.classifier if args.classifier.is_absolute() else ROOT / args.classifier
 OUTPUT = Path(args.output)
 if not OUTPUT.is_absolute():
     OUTPUT = ROOT / OUTPUT
@@ -55,7 +67,7 @@ q8 = json.loads(Q8.read_text())
 shell = json.loads(SHELL.read_text())
 classifier = json.loads(CLASSIFIER.read_text())
 assert q8["status"] == "PASS_EXACT_QQ_Q8O376_4A1_RR_JACOBIAN_AND_P1229_ZERO"
-assert shell["prime"] == 89 and len(shell["all_records"]) == 300
+assert shell["prime"] == 89 and len(shell["all_records"]) > 0
 assert classifier["prime"] == 89
 prime = ZZ(shell["prime"])
 
@@ -86,7 +98,7 @@ def select_seed(shell_index, lattice_class_index):
     return seed
 
 
-seed_specs = (
+default_seed_specs = (
     {
         "key": "replacement_class499_shell206",
         "lattice_class_index": 499,
@@ -104,6 +116,64 @@ seed_specs = (
         "full_NS_name_certified": True,
     },
 )
+
+requested_class_shells = []
+for value in args.class_shell:
+    class_text, separator, shell_text = value.partition(":")
+    if not separator:
+        raise ValueError("--class-shell must have the form CLASS:SHELL")
+    requested_class_shells.append((int(class_text), int(shell_text)))
+
+if args.class_index or requested_class_shells:
+    seed_specs = []
+    requests = [(class_index, None) for class_index in args.class_index] + requested_class_shells
+    for class_index, requested_shell_index in requests:
+        matches = [
+            row for row in classifier["polynomial_shell"]["records"]
+            if row["ordinary_coefficient_jacobian_rank"] == 12
+            and row["profile_compatible_lattice_class_indices"] == [class_index]
+        ]
+        if requested_shell_index is not None:
+            matches = [row for row in matches if row["shell_index"] == requested_shell_index]
+        if not matches:
+            resolved_indices = {
+                int(result["shell_index"])
+                for result in classifier["polynomial_shell"].get(
+                    "complete_pairwise_intersection_disambiguation", []
+                )
+                if result["resolved_uniquely"]
+                and result["surviving_class_alternatives"] == [class_index]
+            }
+            matches = [
+                classifier["polynomial_shell"]["records"][index]
+                for index in sorted(resolved_indices)
+                if classifier["polynomial_shell"]["records"][index][
+                    "ordinary_coefficient_jacobian_rank"
+                ] == 12
+            ]
+            if requested_shell_index is not None:
+                matches = [
+                    row for row in matches
+                    if row["shell_index"] == requested_shell_index
+                ]
+        if not matches:
+            raise ValueError(f"no regular uniquely classified seed for class {class_index}")
+        selected = min(matches, key=lambda row: row["shell_index"])
+        shell_index = int(selected["shell_index"])
+        seed_specs.append({
+            "key": f"physical_class{class_index}_shell{shell_index}",
+            "lattice_class_index": class_index,
+            "shell_index": shell_index,
+            "seed": select_seed(shell_index, class_index),
+            "selection_reason": (
+                "first regular uniquely Abel/profile-classified modular seed in shell order; "
+                "the supplied class index is a seed label, not a cross-prime NS-name proof"
+            ),
+            "full_NS_name_certified": False,
+        })
+    seed_specs = tuple(seed_specs)
+else:
+    seed_specs = default_seed_specs
 
 K = Qp(prime, prec=maximum_precision, type="capped-rel")
 RT = PolynomialRing(K, "v")
@@ -296,8 +366,16 @@ for spec in seed_specs:
     )
 
 payload = {
-    "schema": "elkies-k3.h92-q12o5867-replacement-word-seeds-qq.v1",
-    "status": "PASS_EXACT_QQ_Q12O5867_REPLACEMENT_CLASS499_CLASS511_SECTIONS",
+    "schema": (
+        "elkies-k3.h92-q12o5867-selected-p0-sections-qq.v1"
+        if args.class_index else
+        "elkies-k3.h92-q12o5867-replacement-word-seeds-qq.v1"
+    ),
+    "status": (
+        "PASS_EXACT_QQ_Q12O5867_SELECTED_P0_SECTIONS"
+        if args.class_index else
+        "PASS_EXACT_QQ_Q12O5867_REPLACEMENT_CLASS499_CLASS511_SECTIONS"
+    ),
     "surface": {
         "model": "exact q8/o376 child",
         "equation": "y^2=x^3+A(v)*x+B(v)",
