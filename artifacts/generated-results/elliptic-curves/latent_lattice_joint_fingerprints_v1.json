@@ -1,0 +1,588 @@
+{
+  "algorithm": {
+    "fingerprint": "induced unit/scaled relation density and degree profiles; scale-free ray/relation height profiles; relative point complexity; mod-2/mod-3 projective-class multiplicity profiles",
+    "fingerprint_bounds": {
+      "finite_primes": [
+        2,
+        3
+      ],
+      "nearest_neighbour_chunk_size": 16,
+      "projective_multiplicities": 16,
+      "quantiles": 16
+    },
+    "finite_seed_edges": 3000,
+    "proposal_dimension": 17,
+    "proposal_strategy": "independent finite-rarity stratified relation growth",
+    "selection": "minimum mean nearest-candidate distance to each other fibre",
+    "standardization": "joint coordinatewise median/MAD with standard-deviation fallback"
+  },
+  "candidate_ledger": {
+    "compressed_bytes": 8091722,
+    "path": "artifacts/generated-results/elliptic-curves/latent_lattice_joint_fingerprint_ledger_v1.json.gz",
+    "sha256": "5d87c0bf43b1845e13564f356e593fd3755302e450fd8c4fc5c749d1e461b173",
+    "uncompressed_bytes": 31034986
+  },
+  "controls": [
+    {
+      "label": "rank_at_least_25",
+      "ledger_seconds": "82.255447404008009",
+      "proposal_count": 1888,
+      "ray_count": 2155,
+      "selected_score": {
+        "candidate_index": 323,
+        "fibre_index": 0,
+        "maximum_distance": "0.79996706303224319",
+        "mean_distance": "0.68114892313227104",
+        "mutual_neighbour_count": 2,
+        "other_fibre_neighbours": [
+          {
+            "candidate_index": 266,
+            "distance": "0.57307646335485085",
+            "fibre_index": 1
+          },
+          {
+            "candidate_index": 990,
+            "distance": "0.67040324300971921",
+            "fibre_index": 2
+          },
+          {
+            "candidate_index": 991,
+            "distance": "0.79996706303224319",
+            "fibre_index": 3
+          }
+        ]
+      },
+      "selected_source_index": 323,
+      "selected_truth_overlap": 13,
+      "ternary_relation_count": 14512,
+      "top_ten_mean_distance": [
+        {
+          "maximum_distance": "0.79996706303224319",
+          "mean_distance": "0.68114892313227104",
+          "mutual_neighbour_count": 2,
+          "source_index": 323,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.77050895263760877",
+          "mean_distance": "0.70018885854623347",
+          "mutual_neighbour_count": 3,
+          "source_index": 47,
+          "truth_overlap": 12
+        },
+        {
+          "maximum_distance": "0.9207535937419834",
+          "mean_distance": "0.72481413416509832",
+          "mutual_neighbour_count": 2,
+          "source_index": 377,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.86012759654168724",
+          "mean_distance": "0.72766552960089836",
+          "mutual_neighbour_count": 1,
+          "source_index": 125,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.83895611653411595",
+          "mean_distance": "0.73224644207496359",
+          "mutual_neighbour_count": 2,
+          "source_index": 368,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.82268485799182489",
+          "mean_distance": "0.73784844529733018",
+          "mutual_neighbour_count": 0,
+          "source_index": 94,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.83712447658346012",
+          "mean_distance": "0.73965409330682885",
+          "mutual_neighbour_count": 0,
+          "source_index": 435,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.85644273768181489",
+          "mean_distance": "0.73976752182914318",
+          "mutual_neighbour_count": 0,
+          "source_index": 151,
+          "truth_overlap": 12
+        },
+        {
+          "maximum_distance": "0.90639933083893343",
+          "mean_distance": "0.7409244196033784",
+          "mutual_neighbour_count": 1,
+          "source_index": 143,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.80445273204403622",
+          "mean_distance": "0.74115682193743293",
+          "mutual_neighbour_count": 0,
+          "source_index": 77,
+          "truth_overlap": 12
+        }
+      ],
+      "truth_mean_distance_rank": 201,
+      "truth_mutual_first_rank": 344,
+      "truth_score": {
+        "candidate_index": 1792,
+        "fibre_index": 0,
+        "maximum_distance": "1.1411774269165318",
+        "mean_distance": "0.86115291302274699",
+        "mutual_neighbour_count": 0,
+        "other_fibre_neighbours": [
+          {
+            "candidate_index": 215,
+            "distance": "1.1411774269165318",
+            "fibre_index": 1
+          },
+          {
+            "candidate_index": 142,
+            "distance": "0.6299870352032122",
+            "fibre_index": 2
+          },
+          {
+            "candidate_index": 518,
+            "distance": "0.8122942769484971",
+            "fibre_index": 3
+          }
+        ]
+      },
+      "truth_source_index": 1792
+    },
+    {
+      "label": "rank_at_least_26",
+      "ledger_seconds": "76.351218921001418",
+      "proposal_count": 1667,
+      "ray_count": 1921,
+      "selected_score": {
+        "candidate_index": 266,
+        "fibre_index": 1,
+        "maximum_distance": "0.77271734268596193",
+        "mean_distance": "0.68889719369098446",
+        "mutual_neighbour_count": 2,
+        "other_fibre_neighbours": [
+          {
+            "candidate_index": 323,
+            "distance": "0.57307646335485085",
+            "fibre_index": 0
+          },
+          {
+            "candidate_index": 981,
+            "distance": "0.72089777503214059",
+            "fibre_index": 2
+          },
+          {
+            "candidate_index": 947,
+            "distance": "0.77271734268596193",
+            "fibre_index": 3
+          }
+        ]
+      },
+      "selected_source_index": 266,
+      "selected_truth_overlap": 14,
+      "ternary_relation_count": 9966,
+      "top_ten_mean_distance": [
+        {
+          "maximum_distance": "0.77271734268596193",
+          "mean_distance": "0.68889719369098446",
+          "mutual_neighbour_count": 2,
+          "source_index": 266,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.75138753200857933",
+          "mean_distance": "0.70292850514829219",
+          "mutual_neighbour_count": 2,
+          "source_index": 295,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.7543524818963605",
+          "mean_distance": "0.7306854822196206",
+          "mutual_neighbour_count": 3,
+          "source_index": 215,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.80481937169622908",
+          "mean_distance": "0.74571882831286018",
+          "mutual_neighbour_count": 1,
+          "source_index": 155,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.78466391025960291",
+          "mean_distance": "0.74592092073113081",
+          "mutual_neighbour_count": 1,
+          "source_index": 158,
+          "truth_overlap": 15
+        },
+        {
+          "maximum_distance": "0.80865152225679149",
+          "mean_distance": "0.76868379591387548",
+          "mutual_neighbour_count": 0,
+          "source_index": 80,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.82258219454864845",
+          "mean_distance": "0.76897072606458627",
+          "mutual_neighbour_count": 2,
+          "source_index": 97,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.79571075934720026",
+          "mean_distance": "0.77019793315896523",
+          "mutual_neighbour_count": 1,
+          "source_index": 143,
+          "truth_overlap": 15
+        },
+        {
+          "maximum_distance": "0.8153211168100335",
+          "mean_distance": "0.77049391609746587",
+          "mutual_neighbour_count": 0,
+          "source_index": 253,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.81870502214432694",
+          "mean_distance": "0.77338851346810866",
+          "mutual_neighbour_count": 0,
+          "source_index": 207,
+          "truth_overlap": 15
+        }
+      ],
+      "truth_mean_distance_rank": 1014,
+      "truth_mutual_first_rank": 1027,
+      "truth_score": {
+        "candidate_index": 1666,
+        "fibre_index": 1,
+        "maximum_distance": "1.3555581114649773",
+        "mean_distance": "1.0734508452713252",
+        "mutual_neighbour_count": 0,
+        "other_fibre_neighbours": [
+          {
+            "candidate_index": 329,
+            "distance": "1.3555581114649773",
+            "fibre_index": 0
+          },
+          {
+            "candidate_index": 848,
+            "distance": "1.0552967325381566",
+            "fibre_index": 2
+          },
+          {
+            "candidate_index": 592,
+            "distance": "0.80949769181084175",
+            "fibre_index": 3
+          }
+        ]
+      },
+      "truth_source_index": 1666
+    },
+    {
+      "label": "rank_at_least_27",
+      "ledger_seconds": "91.016457236997667",
+      "proposal_count": 1239,
+      "ray_count": 2313,
+      "selected_score": {
+        "candidate_index": 1000,
+        "fibre_index": 2,
+        "maximum_distance": "0.69121252498179675",
+        "mean_distance": "0.66068532605084307",
+        "mutual_neighbour_count": 3,
+        "other_fibre_neighbours": [
+          {
+            "candidate_index": 17,
+            "distance": "0.65289739218711051",
+            "fibre_index": 0
+          },
+          {
+            "candidate_index": 215,
+            "distance": "0.69121252498179675",
+            "fibre_index": 1
+          },
+          {
+            "candidate_index": 891,
+            "distance": "0.63794606098362183",
+            "fibre_index": 3
+          }
+        ]
+      },
+      "selected_source_index": 1000,
+      "selected_truth_overlap": 13,
+      "ternary_relation_count": 16205,
+      "top_ten_mean_distance": [
+        {
+          "maximum_distance": "0.69121252498179675",
+          "mean_distance": "0.66068532605084307",
+          "mutual_neighbour_count": 3,
+          "source_index": 1000,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.78466391025960291",
+          "mean_distance": "0.67054846950296676",
+          "mutual_neighbour_count": 1,
+          "source_index": 767,
+          "truth_overlap": 15
+        },
+        {
+          "maximum_distance": "0.68709166410042577",
+          "mean_distance": "0.67242947592630353",
+          "mutual_neighbour_count": 1,
+          "source_index": 1120,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.81411295906129688",
+          "mean_distance": "0.67344368098514862",
+          "mutual_neighbour_count": 0,
+          "source_index": 941,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.80203312165091545",
+          "mean_distance": "0.68160700559021059",
+          "mutual_neighbour_count": 1,
+          "source_index": 954,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.87605487562023099",
+          "mean_distance": "0.68843775623554893",
+          "mutual_neighbour_count": 0,
+          "source_index": 815,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.77224333094161035",
+          "mean_distance": "0.69569470598520355",
+          "mutual_neighbour_count": 2,
+          "source_index": 1026,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.90216605430435837",
+          "mean_distance": "0.69685140863785577",
+          "mutual_neighbour_count": 0,
+          "source_index": 827,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.83178976867345045",
+          "mean_distance": "0.69712550754183555",
+          "mutual_neighbour_count": 1,
+          "source_index": 848,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.92316976751199409",
+          "mean_distance": "0.69910500113406238",
+          "mutual_neighbour_count": 0,
+          "source_index": 838,
+          "truth_overlap": 14
+        }
+      ],
+      "truth_mean_distance_rank": 1190,
+      "truth_mutual_first_rank": 1200,
+      "truth_score": {
+        "candidate_index": 1227,
+        "fibre_index": 2,
+        "maximum_distance": "1.5358832359935162",
+        "mean_distance": "1.0987020308649795",
+        "mutual_neighbour_count": 0,
+        "other_fibre_neighbours": [
+          {
+            "candidate_index": 1792,
+            "distance": "1.0138477620982882",
+            "fibre_index": 0
+          },
+          {
+            "candidate_index": 1610,
+            "distance": "1.5358832359935162",
+            "fibre_index": 1
+          },
+          {
+            "candidate_index": 691,
+            "distance": "0.74637509450313411",
+            "fibre_index": 3
+          }
+        ]
+      },
+      "truth_source_index": 1227
+    },
+    {
+      "label": "rank_at_least_28",
+      "ledger_seconds": "103.97152151999762",
+      "proposal_count": 1093,
+      "ray_count": 2423,
+      "selected_score": {
+        "candidate_index": 857,
+        "fibre_index": 3,
+        "maximum_distance": "0.86239571283179561",
+        "mean_distance": "0.70481261306726228",
+        "mutual_neighbour_count": 1,
+        "other_fibre_neighbours": [
+          {
+            "candidate_index": 377,
+            "distance": "0.68961717896172736",
+            "fibre_index": 0
+          },
+          {
+            "candidate_index": 215,
+            "distance": "0.86239571283179561",
+            "fibre_index": 1
+          },
+          {
+            "candidate_index": 941,
+            "distance": "0.5624249474082641",
+            "fibre_index": 2
+          }
+        ]
+      },
+      "selected_source_index": 857,
+      "selected_truth_overlap": 14,
+      "ternary_relation_count": 17036,
+      "top_ten_mean_distance": [
+        {
+          "maximum_distance": "0.86239571283179561",
+          "mean_distance": "0.70481261306726228",
+          "mutual_neighbour_count": 1,
+          "source_index": 857,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.86560171698623745",
+          "mean_distance": "0.71747981966496199",
+          "mutual_neighbour_count": 2,
+          "source_index": 955,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.82210428415484527",
+          "mean_distance": "0.72832647888410673",
+          "mutual_neighbour_count": 0,
+          "source_index": 947,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.80736396739863736",
+          "mean_distance": "0.73184441437560144",
+          "mutual_neighbour_count": 1,
+          "source_index": 930,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.84752162447869539",
+          "mean_distance": "0.73184946882570612",
+          "mutual_neighbour_count": 0,
+          "source_index": 820,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.7543524818963605",
+          "mean_distance": "0.73247547881109609",
+          "mutual_neighbour_count": 1,
+          "source_index": 925,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.79996706303224319",
+          "mean_distance": "0.73247938784000455",
+          "mutual_neighbour_count": 1,
+          "source_index": 991,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.80713245208055595",
+          "mean_distance": "0.73773111771109257",
+          "mutual_neighbour_count": 2,
+          "source_index": 964,
+          "truth_overlap": 13
+        },
+        {
+          "maximum_distance": "0.88828924578091428",
+          "mean_distance": "0.73791430658625234",
+          "mutual_neighbour_count": 1,
+          "source_index": 899,
+          "truth_overlap": 14
+        },
+        {
+          "maximum_distance": "0.9098523144376891",
+          "mean_distance": "0.7426162163345017",
+          "mutual_neighbour_count": 1,
+          "source_index": 941,
+          "truth_overlap": 13
+        }
+      ],
+      "truth_mean_distance_rank": 1084,
+      "truth_mutual_first_rank": 1085,
+      "truth_score": {
+        "candidate_index": 1067,
+        "fibre_index": 3,
+        "maximum_distance": "1.4248472467127533",
+        "mean_distance": "1.1873417412508505",
+        "mutual_neighbour_count": 0,
+        "other_fibre_neighbours": [
+          {
+            "candidate_index": 1640,
+            "distance": "1.4248472467127533",
+            "fibre_index": 0
+          },
+          {
+            "candidate_index": 1666,
+            "distance": "1.2592260492779437",
+            "fibre_index": 1
+          },
+          {
+            "candidate_index": 870,
+            "distance": "0.87795192776185449",
+            "fibre_index": 2
+          }
+        ]
+      },
+      "truth_source_index": 1067
+    }
+  ],
+  "exact_truth_selection_count": 0,
+  "gate_decision": "CLOSED. Candidate-level joint selection does not choose the exact R17 truth in all fibres (0/4); modify the fingerprint before any target use.",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/latent_lattice_calibration_truth_v1.json": "357113254603a7910b781514bfdf2c147132a5e02c676c31513efb1786187224",
+    "artifacts/generated-results/elliptic-curves/latent_lattice_finite_calibration_v1.json": "26406425a6626b8047d904ba6d63b601ead22b4a892cd77afef80c23725e0a04",
+    "elliptic-curves/cas/calibrate_latent_lattice_joint_fingerprints.py": "2178c3d5cc31a982287903e02cc5998d99b92fd547052776dcbb3d468fd4ffe6",
+    "elliptic-curves/cas/elkies_rank25.py": "26d0ae962ceb0b3e0de1727e56c32d8289ccf12dbe0d6a57271365753d61a842",
+    "elliptic-curves/cas/elkies_rank26.py": "0d2a443f43216226acefe7d2dde551600bd154674e4dd1aaab5fe873007e098d",
+    "elliptic-curves/cas/elkies_rank27.py": "f8a4bc96a74f3b3cf8aebae2126116ee3f6ae9b4da6ad2f4103dc8e7b06d0945",
+    "elliptic-curves/cas/elkies_rank28.py": "2165728c26b643fc65735825a09527b2b432639348131f2ea8a17e19ff569adb",
+    "elliptic-curves/latent_lattice/__init__.py": "01555c4a8127f85629b6b08c912221036104b0cfef3e5d9cb4367b87925bdef3",
+    "elliptic-curves/latent_lattice/codes.py": "6ce61f4f881f0a06cdc9b8aba9c0b4d6afbbd23c9cfa42cfb7fab9584fac6dc9",
+    "elliptic-curves/latent_lattice/consensus.py": "7fb198b33a5e4a43bba13bece9f75b9cc767298c6b183281936077e9719bc9ec",
+    "elliptic-curves/latent_lattice/elliptic.py": "f0ba1ab3fa5711276dbf43da47a46f6d30830d00e56ddada94a11cd91dc57bd8",
+    "elliptic-curves/latent_lattice/fingerprints.py": "d98c65916d789081716e13bc0860d14aef7214b7ae96203e8a6bf88cb4f5ab76",
+    "elliptic-curves/latent_lattice/finite.py": "3b3bf4d77dc4e48714baf2f1c02a6f2670d77a9f3e80459194703f94e1636b0a",
+    "elliptic-curves/latent_lattice/height.py": "4de7238f6da25302128759451543febc8e0e4299551d5e10d12419311221f91b",
+    "elliptic-curves/latent_lattice/integer.py": "2e1c9b3459cb65ec6bd3012870858648cc23af5dbbaa35d16fed6fd1511dce19",
+    "elliptic-curves/latent_lattice/local.py": "f0782964d0097def467c192a84f22e72f81ebfc8e04135b9cc2c758f8da3d909",
+    "elliptic-curves/latent_lattice/matching.py": "652db89a7143ff186e0b3ea873a1e23acdb9f2bf3cb128457db95270f8b1ae8b",
+    "elliptic-curves/latent_lattice/pari.py": "f9fe2ff27fd2d9b60069a353285baaa09c247c178e4c3f059f8f3524bd3d9e91",
+    "elliptic-curves/latent_lattice/relations.py": "e1c85705f2e348fcc4bddd0402ccfd1275ee56c507bd471e0a3e32b2ef06a86b",
+    "elliptic-curves/latent_lattice/subspace.py": "91b5843182eac5713c8bda5dcdef8a17e3fbb130bb0eaa403be4f325e23361be"
+  },
+  "proof_boundary": "Proposal coordinates, induced relation counts, projective-class multiplicities, rational truth overlaps, and candidate identities are exact within the declared finite clouds and proposal bounds. Canonical heights, arithmetic profiles, robust standardization, distances, and nearest-neighbour selection are numerical or heuristic. Withheld R17 embeddings are postselection diagnostics only.",
+  "schema": "elliptic-curves.latent-lattice-joint-fingerprints.v1",
+  "scope": "Phase-0 R17 rank-25--28 controls only; no wgxli target is loaded",
+  "software": {
+    "numpy": "1.26.4",
+    "python": "3.12.3"
+  },
+  "status": "FAIL_JOINT_R17_FINGERPRINT_SELECTION_GATE_CLOSED",
+  "total_elapsed_seconds": "360.09024493899778"
+}

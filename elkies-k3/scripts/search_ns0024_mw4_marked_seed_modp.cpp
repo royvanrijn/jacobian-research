@@ -11,7 +11,7 @@
 using Poly = std::vector<int>;
 
 static int p;
-static bool partial_mode=false, partial_all_mode=false;
+static bool partial_mode=false, partial_all_mode=false, resolved_basis_mode=false;
 static long long fibre_tests = 0, fibre_hits = 0;
 static long long p1_tests = 0, p1_hits = 0, p2_tests = 0, p2_hits = 0;
 static long long p3_tests = 0, p3_hits = 0, p4_tests = 0;
@@ -67,6 +67,19 @@ static Poly branch_jet(const Poly& a, int root, int precision) {
     Poly h3 = multiply(h2, h, precision - 1);
     for (int& value : h3) value = mod(2 * value);
     return h3;
+}
+
+static Poly center_jet(const Poly& a, int root, int precision) {
+    const int inv3 = inverse(3), inv2root = inverse(mod(2 * root));
+    Poly center(precision, 0);
+    center[0] = root;
+    for (int degree = 1; degree < precision; ++degree) {
+        int known = 0;
+        for (int left = 1; left < degree; ++left)
+            known = mod(known + 1LL * center[left] * center[degree - left]);
+        center[degree] = mod((-1LL * a[degree] * inv3 - known) * inv2root);
+    }
+    return center;
 }
 
 static Poly curve_rhs(const Poly& x, const Poly& a, const Poly& b, int maximum_degree) {
@@ -427,6 +440,36 @@ static bool orient_first_three(std::array<Section,3>& sections,
     return false;
 }
 
+static bool orient_resolved_first_three(std::array<Section,3>& sections,
+                                        const Poly& a, int r1, int ri) {
+    // Recommended minimum-pole basis from the exact 120-basis frontier:
+    // Q1=(6,0,0), Q2=q4/orbit1=(2,1,1), Q3=(4,2,0).  Relative to Q2 the
+    // component labels are (3,0,0), (1,1,1), (2,2,0).
+    const int expected_profiles[3][3]={{3,0,0},{1,1,1},{2,2,0}};
+    const int expected_intersections[3][3]={{-2,1,1},{1,-2,0},{1,0,-2}};
+    const int orders[3]={7,5,4};
+    std::array<ECPoint,3> raw;
+    for (int index=0;index<3;++index) raw[index]=ec_point(sections[index]);
+    for (int mask=0;mask<8;++mask) {
+        std::array<ECPoint,3> point=raw;
+        for (int index=0;index<3;++index)
+            if ((mask>>index)&1) point[index]=point_neg(point[index]);
+        bool pass=true;
+        for (int index=0;index<3 && pass;++index)
+          for (int fibre=0;fibre<3;++fibre)
+            if (component_label(point[index],point[1],orders[fibre],fibre,r1,ri,a)
+                != expected_profiles[index][fibre]) pass=false;
+        for (int i=0;i<3 && pass;++i) for (int j=0;j<i;++j)
+            if (section_intersection(point[i],point[j],a)
+                != expected_intersections[i][j]) pass=false;
+        if (!pass) continue;
+        for (int index=0;index<3;++index) if ((mask>>index)&1)
+            for (int& entry:sections[index].y) entry=mod(-entry);
+        return true;
+    }
+    return false;
+}
+
 static bool orient_exact_marked_basis(std::array<Section,4>& sections,
                                       const Poly& a, int r1, int ri) {
     const int expected_profiles[4][3] = {{1,0,0},{2,1,3},{2,1,1},{1,1,1}};
@@ -447,6 +490,38 @@ static bool orient_exact_marked_basis(std::array<Section,4>& sections,
                     != expected_profiles[index][fibre]) pass=false;
         for (int i=0;i<4 && pass;++i) for (int j=0;j<i;++j)
             if (section_intersection(point[i],point[j],a)!=expected_intersections[i][j]) pass=false;
+        if (!pass) continue;
+        for (int index=0;index<4;++index) if ((mask>>index)&1)
+            for (int& entry:sections[index].y) entry=mod(-entry);
+        return true;
+    }
+    return false;
+}
+
+static bool orient_exact_resolved_basis(std::array<Section,4>& sections,
+                                        const Poly& a, int r1, int ri) {
+    // component_label(Q,P4) returns the multiplier m with Q-m*P4 in the
+    // identity component.  The absolute P4 labels are (6,4,3), so convert
+    // the absolute basis profiles by their inverses before comparing.
+    const int expected_profiles[4][3] = {{1,0,0},{5,4,3},{3,3,0},{1,1,1}};
+    const int expected_intersections[4][4] = {
+        {-2,1,1,1},{1,-2,0,2},{1,0,-2,2},{1,2,2,-2}
+    };
+    std::array<ECPoint,4> raw;
+    for (int index=0;index<4;++index) raw[index]=ec_point(sections[index]);
+    for (int mask=0;mask<16;++mask) {
+        std::array<ECPoint,4> point=raw;
+        for (int index=0;index<4;++index) if ((mask>>index)&1)
+            point[index]=point_neg(point[index]);
+        bool pass=true;
+        const int orders[3]={7,5,4};
+        for (int index=0;index<4 && pass;++index)
+            for (int fibre=0;fibre<3;++fibre)
+                if (component_label(point[index],point[3],orders[fibre],fibre,r1,ri,a)
+                    != expected_profiles[index][fibre]) pass=false;
+        for (int i=0;i<4 && pass;++i) for (int j=0;j<i;++j)
+            if (section_intersection(point[i],point[j],a)!=expected_intersections[i][j])
+                pass=false;
         if (!pass) continue;
         for (int index=0;index<4;++index) if ((mask>>index)&1)
             for (int& entry:sections[index].y) entry=mod(-entry);
@@ -519,9 +594,40 @@ static bool scan_sections(const Poly& a, const Poly& b, int r1, int ri, std::arr
         ++p2_hits;
         all_node_sections.push_back(Section{x,y,{1}});
     }
-    if (all_node_sections.size()<2) return false;
+    if (all_node_sections.size() < (resolved_basis_mode ? 1 : 2)) return false;
 
     std::vector<std::array<Section,3>> triples;
+    if (resolved_basis_mode) {
+        Poly a0 = {a[0],a[1],a[2]};
+        Poly center0 = center_jet(a0,1,3);
+        int a1_derivative = 0;
+        for (int index=1;index<int(a.size());++index)
+            a1_derivative=mod(a1_derivative+1LL*index*a[index]);
+        const int center1_derivative=mod(-1LL*a1_derivative*inverse(mod(6*r1)));
+        const int sum01=mod(1+center0[1]+center0[2]);
+        const int value_rhs=mod(r1-sum01);
+        const int derivative_rhs=mod(center1_derivative-center0[1]-2*center0[2]);
+        Poly x3(5,0);
+        x3[0]=1; x3[1]=center0[1]; x3[2]=center0[2];
+        x3[4]=mod(derivative_rhs-3LL*value_rhs);
+        x3[3]=mod(4LL*value_rhs-derivative_rhs);
+        Poly y3;
+        if (!section_square_root(x3,a,b,6,y3) || y3[0] || y3[1] || y3[2]
+            || evaluate(y3,1)) return false;
+        int y3_derivative=0;
+        for (int index=1;index<int(y3.size());++index)
+            y3_derivative=mod(y3_derivative+1LL*index*y3[index]);
+        if (y3_derivative || (x3[4]==ri && y3[6]==0)) return false;
+        const Section forced_third{x3,y3,{1}};
+        for (const Section& Q1:first_sections)
+          for (const Section& Q2:all_node_sections) {
+            ++p3_tests;
+            std::array<Section,3> oriented={Q1,Q2,forced_third};
+            if (!orient_resolved_first_three(oriented,a,r1,ri)) continue;
+            ++p3_hits;
+            triples.push_back(oriented);
+        }
+    } else {
     for (const Section& P1:first_sections)
       for (int second=0;second<int(all_node_sections.size());++second)
        for (int third=0;third<int(all_node_sections.size());++third) {
@@ -534,6 +640,7 @@ static bool scan_sections(const Poly& a, const Poly& b, int r1, int ri, std::arr
         ++p3_hits;
         triples.push_back(oriented);
     }
+    }
     if (triples.empty()) return false;
     if (partial_mode) {
         if (partial_all_mode) all_partial_triples=triples;
@@ -543,7 +650,9 @@ static bool scan_sections(const Poly& a, const Poly& b, int r1, int ri, std::arr
     std::vector<Section> fourth_sections=collect_p4(a,b,r1,ri);
     for (const auto& triple:triples) for (const Section& P4:fourth_sections) {
         std::array<Section,4> candidate={triple[0],triple[1],triple[2],P4};
-        if (orient_exact_marked_basis(candidate,a,r1,ri)) {
+        if ((resolved_basis_mode
+             ? orient_exact_resolved_basis(candidate,a,r1,ri)
+             : orient_exact_marked_basis(candidate,a,r1,ri))) {
             answer=candidate;
             return true;
         }
@@ -553,7 +662,7 @@ static bool scan_sections(const Poly& a, const Poly& b, int r1, int ri, std::arr
 
 int main(int argc, char** argv) {
     if (argc != 2 && argc != 4 && argc != 5) {
-        std::cerr << "usage: search_ns0024_mw4_marked_seed_modp PRIME [R1 RI [partial|partial-all]]\n";
+        std::cerr << "usage: search_ns0024_mw4_marked_seed_modp PRIME [R1 RI [partial|partial-all|resolved|resolved-all|resolved-full]]\n";
         return 2;
     }
     p = std::stoi(argv[1]);
@@ -565,12 +674,16 @@ int main(int argc, char** argv) {
         {1,7,21,35,35,21},{1,8,28,56,70,56},{1,9,36,84,126,126},
         {1,10,45,120,210,252},{1,11,55,165,330,462},{1,12,66,220,495,792}
     };
+    const std::string scan_mode = argc == 5 ? std::string(argv[4]) : "";
     partial_mode = argc == 5 && (
-        std::string(argv[4]) == "partial" || std::string(argv[4]) == "partial-all"
+        scan_mode == "partial" || scan_mode == "partial-all"
+        || scan_mode == "resolved" || scan_mode == "resolved-all"
     );
-    partial_all_mode = argc == 5 && std::string(argv[4]) == "partial-all";
-    if (argc == 5 && !partial_mode) {
-        std::cerr << "the fourth argument must be 'partial' or 'partial-all'\n";
+    partial_all_mode = scan_mode == "partial-all" || scan_mode == "resolved-all";
+    resolved_basis_mode = scan_mode == "resolved" || scan_mode == "resolved-all"
+        || scan_mode == "resolved-full";
+    if (argc == 5 && !partial_mode && !resolved_basis_mode) {
+        std::cerr << "unsupported scan mode\n";
         return 2;
     }
     const int r1_begin = argc >= 4 ? std::stoi(argv[2]) : 1;

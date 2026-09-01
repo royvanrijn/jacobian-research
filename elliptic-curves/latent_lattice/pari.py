@@ -140,6 +140,89 @@ def row_embedding_smith_invariant_factors(
     return factors
 
 
+def row_embedding_saturation_indices(
+    matrices: Sequence[Sequence[Sequence[int]]],
+    *,
+    batch_size: int = 128,
+    timeout: float = 300.0,
+) -> tuple[int, ...]:
+    """Batch the saturation index of each full-row-rank embedding matrix.
+
+    For a ``k x n`` row matrix, the product of its nonzero Smith factors is
+    the index of the generated row lattice in its primitive closure.  One GP
+    process handles the declared batch so large candidate ledgers do not pay
+    subprocess startup once per matrix.
+    """
+
+    matrices = tuple(
+        tuple(tuple(map(int, row)) for row in matrix) for matrix in matrices
+    )
+    if not matrices:
+        return ()
+    row_counts = []
+    for matrix in matrices:
+        if not matrix or not matrix[0] or any(len(row) != len(matrix[0]) for row in matrix):
+            raise ValueError("batch embedding matrices must be nonempty and rectangular")
+        row_counts.append(len(matrix))
+    if batch_size < 1:
+        raise ValueError("batch_size must be positive")
+    parsed = []
+    for start in range(0, len(matrices), batch_size):
+        batch = matrices[start : start + batch_size]
+        literals = ",".join(gp_matrix(matrix) for matrix in batch)
+        program = f"""
+V=[{literals}];
+for(i=1,#V,s=matsnf(V[i]);z=1;r=0;for(j=1,#s,if(s[j],z*=abs(s[j]);r++));print(i,"|",r,"|",z));
+"""
+        lines = run_gp(program, timeout=timeout)
+        batch_parsed = {}
+        for line in lines:
+            index, rank, value = line.split("|")
+            batch_parsed[int(index)] = (int(rank), int(value))
+        if set(batch_parsed) != set(range(1, len(batch) + 1)):
+            raise ArithmeticError("PARI batch Smith output indices changed")
+        parsed.extend(batch_parsed[index] for index in range(1, len(batch) + 1))
+    if any(rank != row_counts[index] for index, (rank, _value) in enumerate(parsed)):
+        raise ValueError("batch embedding matrix is not full row rank")
+    return tuple(value for _rank, value in parsed)
+
+
+def exact_rational_ranks(
+    matrices: Sequence[Sequence[Sequence[int]]],
+    *,
+    batch_size: int = 128,
+    timeout: float = 300.0,
+) -> tuple[int, ...]:
+    """Batch exact rational ranks of rectangular integer matrices in PARI."""
+
+    matrices = tuple(
+        tuple(tuple(map(int, row)) for row in matrix) for matrix in matrices
+    )
+    if not matrices:
+        return ()
+    if batch_size < 1:
+        raise ValueError("batch_size must be positive")
+    for matrix in matrices:
+        if not matrix or not matrix[0] or any(len(row) != len(matrix[0]) for row in matrix):
+            raise ValueError("rank matrices must be nonempty and rectangular")
+    answer = []
+    for start in range(0, len(matrices), batch_size):
+        batch = matrices[start : start + batch_size]
+        literals = ",".join(gp_matrix(matrix) for matrix in batch)
+        lines = run_gp(
+            f'V=[{literals}];for(i=1,#V,print(i,"|",matrank(V[i])));',
+            timeout=timeout,
+        )
+        parsed = {}
+        for line in lines:
+            index, rank = line.split("|")
+            parsed[int(index)] = int(rank)
+        if set(parsed) != set(range(1, len(batch) + 1)):
+            raise ArithmeticError("PARI batch rank output indices changed")
+        answer.extend(parsed[index] for index in range(1, len(batch) + 1))
+    return tuple(answer)
+
+
 def row_embedding_is_primitive(rows: Sequence[Sequence[int]]) -> bool:
     """Certify that a rectangular row embedding has primitive image."""
 

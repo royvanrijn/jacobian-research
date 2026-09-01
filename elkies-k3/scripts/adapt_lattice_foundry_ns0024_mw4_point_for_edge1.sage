@@ -4,11 +4,11 @@
 status: ACTIVE_COMPILER
 claim: exact finite-extension source-marking replay and lossless compiler handoff
 
-The recovery pipeline currently emits a compact P4 residue-algebra point plus
-an oriented MW3 seed.  This adapter joins those two records, independently
-replays the four section equations, fibre profile, component labels, and
-intersection Gram matrix, and only then emits the certified source format
-accepted by ``compile_lattice_foundry_ns0024_edge1_modp.sage``.
+The recovery pipeline may emit either a compact P4 point plus a prime-field
+MW3 seed, or one joint closed point carrying the surface and all four sections
+over the same ``GF(p^d)``.  This adapter independently replays the section
+equations, fibre profile, component labels, and intersection Gram matrix, and
+only then emits the certified source format accepted by the edge compiler.
 """
 
 import argparse
@@ -21,8 +21,8 @@ from sage.all import EllipticCurve, GF, PolynomialRing, ZZ, sage_eval
 
 ROOT = Path(__file__).resolve().parents[2]
 BASIS = ROOT / "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-mw4-minimum-basis.json"
-EXPECTED_PROFILES = ((1, 0, 0), (2, 1, 3), (2, 1, 1), (1, 1, 1))
-EXPECTED_INTERSECTIONS = (
+ORIGINAL_PROFILES = ((1, 0, 0), (2, 1, 3), (2, 1, 1), (1, 1, 1))
+ORIGINAL_INTERSECTIONS = (
     (-2, 1, 2, 1),
     (1, -2, 0, 1),
     (2, 0, -2, 1),
@@ -41,9 +41,12 @@ def display_path(path):
         return str(path)
 
 
-def parse_seed(path, prime_field):
+def parse_seed(path, prime_field, seed_index):
+    records = [line for line in path.read_text().splitlines() if line.strip()]
+    if seed_index < 0 or seed_index >= len(records):
+        raise ValueError("seed index is outside the MW3 seed file")
     fields = {}
-    for item in path.read_text().strip().split("|")[1:]:
+    for item in records[seed_index].strip().split("|")[1:]:
         key, value = item.split("=", 1)
         fields[key] = value
     if fields.get("p") is None:
@@ -58,6 +61,7 @@ def parse_seed(path, prime_field):
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--point", type=Path, required=True)
 parser.add_argument("--seed", type=Path, help="override the seed path recorded by the point")
+parser.add_argument("--seed-index", type=int, help="override the zero-based seed record index")
 parser.add_argument("--output", type=Path, required=True)
 parser.add_argument("--check", action="store_true")
 args = parser.parse_args()
@@ -67,36 +71,80 @@ output_path = args.output.resolve()
 point = json.loads(point_path.read_text())
 if point.get("schema") != "elkies-k3.lattice-foundry-ns0024-mw4-point-modp.v1":
     raise ValueError("input is not an NS0024 MW4 residue-algebra point")
-if point.get("status") != "PASS_EXACT_MW4_MARKED_POINT_OVER_QUADRATIC_EXTENSION":
+accepted_point_statuses = {
+    "PASS_EXACT_MW4_MARKED_POINT_OVER_FINITE_FIELD",
+    # Backward-compatible status emitted by the first quadratic extractor.
+    "PASS_EXACT_MW4_MARKED_POINT_OVER_QUADRATIC_EXTENSION",
+}
+if point.get("status") not in accepted_point_statuses:
     raise ValueError("input residue-algebra point does not carry an exact marking certificate")
 
-seed_path = (args.seed or Path(point["mw3_seed"])).resolve()
+basis = json.loads(BASIS.read_text())
+if basis.get("status") != "PASS_EXACT_MINIMUM_POLE_FOUR_SECTION_BASIS":
+    raise ValueError("pinned abstract MW4 basis is not certified")
+basis_marking = point.get("basis_marking", "original")
+if basis_marking == "original":
+    expected_profiles = ORIGINAL_PROFILES
+    expected_intersections = ORIGINAL_INTERSECTIONS
+    horizontal_name = "P3"
+elif basis_marking == "resolved_component_depth_recommendation":
+    recommendation = basis["enumeration"]["resolved_component_depth_recommendation"]
+    expected_profiles = tuple(tuple(row) for row in recommendation["profiles_I7_I5_I4"])
+    expected_intersections = tuple(
+        tuple(row) for row in recommendation["section_intersection_gram"]
+    )
+    horizontal_name = "P{}".format(recommendation["q4_orbit1_basis_index"])
+else:
+    raise ValueError("unsupported compact-point basis marking")
+
+embedded_source = point.get("source")
+if embedded_source is None:
+    if args.seed is None and "mw3_seed" not in point:
+        raise ValueError("point has neither an embedded source nor an MW3 seed")
+    seed_path = (args.seed or Path(point["mw3_seed"])).resolve()
+    seed_index = args.seed_index if args.seed_index is not None else int(point.get("mw3_seed_index", 0))
+else:
+    if args.seed is not None or args.seed_index is not None:
+        raise ValueError("seed overrides cannot be used with an embedded joint source")
+    seed_path = None
+    seed_index = None
 prime = ZZ(point["prime"])
 if not prime.is_prime() or prime in (2, 3, 5, 7):
     raise ValueError("adapter requires a good prime outside 2,3,5,7")
 prime_field = GF(prime)
-seed_fields, seed_values = parse_seed(seed_path, prime_field)
-if ZZ(seed_fields["p"]) != prime:
-    raise ValueError("residue-algebra point and MW3 seed use different primes")
 
-extension_record = point["extension"]
-generator_name = extension_record["generator"]
-extension_polynomial_ring = PolynomialRing(prime_field, generator_name)
-extension_indeterminate = extension_polynomial_ring.gen()
-modulus = extension_polynomial_ring(
-    sage_eval(
-        extension_record["modulus"],
-        locals={generator_name: extension_indeterminate},
-    )
-).monic()
-if modulus.degree() != 2 or not modulus.is_irreducible():
-    raise ValueError("quadratic-point extension modulus must be irreducible of degree two")
-constant_field = GF(prime ** modulus.degree(), generator_name, modulus=modulus)
-generator = constant_field.gen()
+extension_record = point.get("extension")
+if extension_record is None:
+    generator_name = None
+    modulus = None
+    extension_degree = 1
+    constant_field = prime_field
+    generator = None
+else:
+    generator_name = extension_record["generator"]
+    extension_polynomial_ring = PolynomialRing(prime_field, generator_name)
+    extension_indeterminate = extension_polynomial_ring.gen()
+    modulus = extension_polynomial_ring(
+        sage_eval(
+            extension_record["modulus"],
+            locals={generator_name: extension_indeterminate},
+        )
+    ).monic()
+    if modulus.degree() < 2 or not modulus.is_irreducible():
+        raise ValueError("finite-extension modulus must be irreducible of degree at least two")
+    extension_degree = modulus.degree()
+    constant_field = GF(prime ** extension_degree, generator_name, modulus=modulus)
+    generator = constant_field.gen()
 
 
 def decode(entry):
-    if not isinstance(entry, list) or len(entry) != modulus.degree():
+    if extension_record is None:
+        if isinstance(entry, list):
+            if len(entry) != 1:
+                raise ValueError("prime-field coefficient has the wrong coordinate length")
+            entry = entry[0]
+        return constant_field(entry)
+    if not isinstance(entry, list) or len(entry) != extension_degree:
         raise ValueError("extension coefficient has the wrong coordinate length")
     return sum(constant_field(value) * generator**index for index, value in enumerate(entry))
 
@@ -104,16 +152,41 @@ def decode(entry):
 old_ring = PolynomialRing(constant_field, "t")
 t = old_ring.gen()
 old_field = old_ring.fraction_field()
-A = old_ring(seed_values("A"))
-B = old_ring(seed_values("B"))
+if embedded_source is None:
+    seed_fields, seed_values = parse_seed(seed_path, prime_field, seed_index)
+    if ZZ(seed_fields["p"]) != prime:
+        raise ValueError("residue-algebra point and MW3 seed use different primes")
+    A = old_ring(seed_values("A"))
+    B = old_ring(seed_values("B"))
+    embedded_first_three = None
+    r1 = constant_field(int(seed_fields["r1"]))
+    ri = constant_field(int(seed_fields["ri"]))
+else:
+    A = old_ring([decode(value) for value in embedded_source["A_coefficients_low_to_high"]])
+    B = old_ring([decode(value) for value in embedded_source["B_coefficients_low_to_high"]])
+    embedded_first_three = embedded_source["sections"]
+    r1 = decode(embedded_source["r1"])
+    ri = decode(embedded_source["ri"])
+
 curve = EllipticCurve(old_field, [0, 0, 0, A, B])
-
-
-def seed_point(index):
-    return curve(old_field(old_ring(seed_values(f"P{index}X"))), old_field(old_ring(seed_values(f"P{index}Y"))))
-
-
-first_three = [seed_point(index) for index in (1, 2, 3)]
+if embedded_first_three is None:
+    first_three = [
+        curve(
+            old_field(old_ring(seed_values(f"P{index}X"))),
+            old_field(old_ring(seed_values(f"P{index}Y"))),
+        )
+        for index in (1, 2, 3)
+    ]
+else:
+    first_three = []
+    for index in (1, 2, 3):
+        record = embedded_first_three[f"P{index}"]
+        first_three.append(
+            curve(
+                old_field(old_ring([decode(value) for value in record["X_coefficients_low_to_high"]])),
+                old_field(old_ring([decode(value) for value in record["Y_coefficients_low_to_high"]])),
+            )
+        )
 X4 = old_ring([decode(value) for value in point["P4"]["X_coefficients_low_to_high"]])
 Y4 = old_ring([decode(value) for value in point["P4"]["Y_coefficients_low_to_high"]])
 H4 = old_ring([decode(value) for value in point["P4"]["H_coefficients_low_to_high"]])
@@ -133,10 +206,6 @@ if tuple(map(int, orders)) != (7, 5, 4):
 residual = old_ring(discriminant // (t**7 * (t - 1)**5))
 if residual.degree() != 8 or residual.gcd(residual.derivative()).degree() != 0:
     raise ValueError("MW3 seed residual discriminant is not eight separated I1 fibres")
-
-r1 = constant_field(int(seed_fields["r1"]))
-ri = constant_field(int(seed_fields["ri"]))
-
 
 def finite_value(value, support):
     numerator, denominator = value.numerator(), value.denominator()
@@ -192,32 +261,35 @@ def intersection(left, right):
     return degree // 2
 
 
-profiles = tuple(
+relative_profiles = tuple(
     tuple(component_label(point_value, fourth, order, fibre) for fibre, order in enumerate((7, 5, 4)))
     for point_value in points
 )
+p4_profile = expected_profiles[3]
+profiles = tuple(
+    tuple(
+        (relative_profiles[index][fibre] * p4_profile[fibre]) % order
+        for fibre, order in enumerate((7, 5, 4))
+    )
+    for index in range(4)
+)
 intersections = tuple(tuple(intersection(left, right) for right in points) for left in points)
-if profiles != EXPECTED_PROFILES:
+if profiles != expected_profiles:
     raise ValueError("joined point has the wrong component marking: {}".format(profiles))
-if intersections != EXPECTED_INTERSECTIONS:
+if intersections != expected_intersections:
     raise ValueError("joined point has the wrong section intersection Gram matrix")
-if tuple(tuple(item) for item in point["component_profiles_I7_I5_I4"]) != EXPECTED_PROFILES:
+if tuple(tuple(item) for item in point["component_profiles_I7_I5_I4"]) != expected_profiles:
     raise ValueError("point metadata disagrees with the replayed component marking")
-if tuple(tuple(item) for item in point["section_intersection_gram"]) != EXPECTED_INTERSECTIONS:
+if tuple(tuple(item) for item in point["section_intersection_gram"]) != expected_intersections:
     raise ValueError("point metadata disagrees with the replayed intersection matrix")
-
-basis = json.loads(BASIS.read_text())
-if basis.get("status") != "PASS_EXACT_MINIMUM_POLE_FOUR_SECTION_BASIS":
-    raise ValueError("pinned abstract MW4 basis is not certified")
 profile_record = {
-    item["name"]: item["components_I7_I5_I4"] for item in basis["basis"]
+    "P{}".format(index + 1): list(expected_profiles[index]) for index in range(4)
 }
 
 payload = {
     "schema": "elkies-k3.lattice-foundry-ns0024-mw4-family-modp.v1",
     "status": "PASS_EXACT_MODULAR_NS0024_MW4_FAMILY_MARKING",
     "prime": int(prime),
-    "extension": {"generator": generator_name, "modulus": str(modulus)},
     "parameters": [],
     "surface": {
         "A_coefficients_low_to_high": [str(value) for value in A.list()],
@@ -231,15 +303,16 @@ payload = {
     },
     "marking": {
         "minimum_basis_sha256": digest(BASIS),
+        "basis_variant": basis_marking,
+        "horizontal": horizontal_name,
         "normalized_supports": {"I7": "0", "I5": "1", "I4": "infinity"},
         "section_profiles_I7_I5_I4": profile_record,
         "section_intersection_gram": [list(row) for row in intersections],
     },
     "inputs": {
-        "paths": [display_path(point_path), display_path(seed_path), display_path(BASIS)],
+        "paths": [display_path(point_path), display_path(BASIS)],
         "sha256": {
             display_path(point_path): digest(point_path),
-            display_path(seed_path): digest(seed_path),
             display_path(BASIS): digest(BASIS),
         },
     },
@@ -253,12 +326,24 @@ payload = {
             "a characteristic-zero lift, or Picard rank 19."
         ),
     },
-    "reproduce": (
+}
+if seed_path is not None:
+    payload["inputs"]["paths"].insert(1, display_path(seed_path))
+    payload["inputs"]["mw3_seed_index"] = seed_index
+    payload["inputs"]["sha256"][display_path(seed_path)] = digest(seed_path)
+    payload["reproduce"] = (
         "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python "
         "elkies-k3/scripts/adapt_lattice_foundry_ns0024_mw4_point_for_edge1.sage "
-        "--point {} --seed {} --output {}"
-    ).format(display_path(point_path), display_path(seed_path), display_path(output_path)),
-}
+        "--point {} --seed {} --seed-index {} --output {}"
+    ).format(display_path(point_path), display_path(seed_path), seed_index, display_path(output_path))
+else:
+    payload["reproduce"] = (
+        "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python "
+        "elkies-k3/scripts/adapt_lattice_foundry_ns0024_mw4_point_for_edge1.sage "
+        "--point {} --output {}"
+    ).format(display_path(point_path), display_path(output_path))
+if extension_record is not None:
+    payload["extension"] = {"generator": generator_name, "modulus": str(modulus)}
 
 serialized = json.dumps(payload, indent=2, sort_keys=True) + "\n"
 if args.check:
@@ -270,6 +355,6 @@ else:
 
 print(
     "NS0024MW4ADAPTER|p={}|degree={}|profile=I7+I5+I4+8I1|"
-    "sections=4|marking=PASS|status=PASS".format(prime, modulus.degree()),
+    "sections=4|marking=PASS|status=PASS".format(prime, extension_degree),
     flush=True,
 )

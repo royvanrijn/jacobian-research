@@ -82,6 +82,24 @@ class HermiteSignature:
         }
 
 
+@dataclass(frozen=True)
+class PrimitiveHermiteSignature:
+    """Hermite statistic of the exact primitive closure of a row embedding."""
+
+    ambient_rank: int
+    saturation_index: int
+    minimum_vector_count: int
+    hermite: HermiteSignature
+
+    def to_record(self) -> dict[str, object]:
+        return {
+            "ambient_rank": self.ambient_rank,
+            "saturation_index": self.saturation_index,
+            "minimum_vector_count": self.minimum_vector_count,
+            **self.hermite.to_record(),
+        }
+
+
 def hermite_signature(
     gram: Sequence[Sequence[float | str]],
     *,
@@ -114,6 +132,83 @@ def hermite_signature_distance(left: HermiteSignature, right: HermiteSignature) 
     if left.rank != right.rank:
         return float("inf")
     return abs(float(left.log_hermite_invariant) - float(right.log_hermite_invariant))
+
+
+def primitive_hermite_signatures(
+    ambient_gram: Sequence[Sequence[float | str]],
+    basis_matrices: Sequence[Sequence[Sequence[int]]],
+    *,
+    digits: int = 80,
+    maximum_vectors: int = 100_000,
+    batch_size: int = 64,
+    timeout: float = 300.0,
+) -> tuple[PrimitiveHermiteSignature, ...]:
+    """Batch shape statistics after exact saturation of row embeddings.
+
+    For each integral ``k x n`` matrix, PARI first computes its Smith index
+    and its primitive row closure by the double integer-kernel construction.
+    The numerical height Gram is restricted only after that exact step.  The
+    minimum search is complete through the shortest diagonal bound returned
+    by LLL unless the declared vector cap is reached, in which case the
+    routine refuses to return a signature.
+    """
+
+    ambient_rows = [tuple(row) for row in ambient_gram]
+    if not ambient_rows or any(len(row) != len(ambient_rows) for row in ambient_rows):
+        raise ValueError("ambient Gram must be nonempty and square")
+    matrices = tuple(
+        tuple(tuple(map(int, row)) for row in matrix) for matrix in basis_matrices
+    )
+    if not matrices:
+        return ()
+    if batch_size < 1 or maximum_vectors < 1:
+        raise ValueError("batch_size and maximum_vectors must be positive")
+    ambient_rank = len(ambient_rows)
+    for matrix in matrices:
+        if (
+            not matrix
+            or any(len(row) != ambient_rank for row in matrix)
+            or len(matrix) > ambient_rank
+        ):
+            raise ValueError("embedding and ambient Gram dimensions differ")
+    ambient_literal = _gp_real_matrix(ambient_rows)
+    answer = []
+    for start in range(0, len(matrices), batch_size):
+        batch = matrices[start : start + batch_size]
+        literals = ",".join(
+            "Mat([" + ";".join(
+                ",".join(str(value) for value in row) for row in matrix
+            ) + "])"
+            for matrix in batch
+        )
+        program = f"""
+default(realprecision,{int(digits)});H={ambient_literal};V=[{literals}];
+for(i=1,#V,B=V[i];k=matsize(B)[1];n=matsize(B)[2];s=matsnf(B);z=1;r=0;for(j=1,#s,if(s[j],z*=abs(s[j]);r++));if(r!=k,error("embedding is not full row rank"));P=if(k==n,matid(n),matkerint(matkerint(B)~)~);G=P*H*P~;U=qflllgram(G);R=U~*G*U;b=vecmin(vector(k,j,R[j,j]));Q=qfminim(R,b,{int(maximum_vectors)},2);W=Q[3];L=vector(matsize(W)[2],j,W[,j]~*R*W[,j]);mn=vecmin(L);D=matdet(G);print(i,"|",k,"|",n,"|",z,"|",#L,"|",mn,"|",D,"|",log(mn)-log(D)/k));
+"""
+        lines = run_gp(program, timeout=timeout)
+        parsed = {}
+        for line in lines:
+            fields = line.split("|")
+            if len(fields) != 8:
+                raise ArithmeticError("PARI primitive-Hermite output changed")
+            index, rank, returned_ambient, saturation, count = map(int, fields[:5])
+            if count >= maximum_vectors:
+                raise ArithmeticError("primitive Hermite search reached maximum_vectors cap")
+            parsed[index] = PrimitiveHermiteSignature(
+                ambient_rank=returned_ambient,
+                saturation_index=saturation,
+                minimum_vector_count=count,
+                hermite=HermiteSignature(
+                    rank=rank,
+                    minimum=fields[5],
+                    determinant=fields[6],
+                    log_hermite_invariant=fields[7],
+                ),
+            )
+        if set(parsed) != set(range(1, len(batch) + 1)):
+            raise ArithmeticError("PARI primitive-Hermite output indices changed")
+        answer.extend(parsed[index] for index in range(1, len(batch) + 1))
+    return tuple(answer)
 
 
 @dataclass(frozen=True)

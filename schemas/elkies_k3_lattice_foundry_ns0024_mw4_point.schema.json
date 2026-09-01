@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "elkies_k3_lattice_foundry_ns0024_mw4_point.schema.json",
+  "title": "Exact finite-field NS0024 MW4 marked point",
+  "type": "object",
+  "required": [
+    "schema",
+    "status",
+    "prime",
+    "basis_marking",
+    "P4",
+    "component_profiles_I7_I5_I4",
+    "section_intersection_gram",
+    "proof_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "elkies-k3.lattice-foundry-ns0024-mw4-point-modp.v1"
+    },
+    "status": {
+      "enum": [
+        "PASS_EXACT_MW4_MARKED_POINT_OVER_FINITE_FIELD",
+        "PASS_EXACT_MW4_MARKED_POINT_OVER_QUADRATIC_EXTENSION"
+      ]
+    },
+    "prime": {"type": "integer", "minimum": 11},
+    "basis_marking": {
+      "enum": ["original", "resolved_component_depth_recommendation"]
+    },
+    "extension": {
+      "type": "object",
+      "required": ["generator", "modulus"],
+      "properties": {
+        "generator": {"type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_]*$"},
+        "modulus": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "mw3_seed": {"type": "string"},
+    "mw3_seed_index": {"type": "integer", "minimum": 0},
+    "source": {
+      "type": "object",
+      "required": [
+        "A_coefficients_low_to_high",
+        "B_coefficients_low_to_high",
+        "r1",
+        "ri",
+        "sections"
+      ],
+      "properties": {
+        "A_coefficients_low_to_high": {"$ref": "#/$defs/coefficient_list"},
+        "B_coefficients_low_to_high": {"$ref": "#/$defs/coefficient_list"},
+        "r1": {"$ref": "#/$defs/coefficient"},
+        "ri": {"$ref": "#/$defs/coefficient"},
+        "sections": {
+          "type": "object",
+          "required": ["P1", "P2", "P3"],
+          "properties": {
+            "P1": {"$ref": "#/$defs/polynomial_section"},
+            "P2": {"$ref": "#/$defs/polynomial_section"},
+            "P3": {"$ref": "#/$defs/polynomial_section"}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "P4": {
+      "type": "object",
+      "required": [
+        "X_coefficients_low_to_high",
+        "Y_coefficients_low_to_high",
+        "H_coefficients_low_to_high"
+      ],
+      "properties": {
+        "X_coefficients_low_to_high": {"$ref": "#/$defs/coefficient_list"},
+        "Y_coefficients_low_to_high": {"$ref": "#/$defs/coefficient_list"},
+        "H_coefficients_low_to_high": {"$ref": "#/$defs/coefficient_list"}
+      },
+      "additionalProperties": false
+    },
+    "component_profiles_I7_I5_I4": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {"type": "integer"}
+      }
+    },
+    "section_intersection_gram": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {"type": "integer"}
+      }
+    },
+    "proof_boundary": {"type": ["string", "object"]}
+  },
+  "$defs": {
+    "coefficient": {
+      "oneOf": [
+        {"type": "integer"},
+        {"type": "array", "minItems": 1, "items": {"type": "integer"}}
+      ]
+    },
+    "coefficient_list": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/coefficient"}
+    },
+    "polynomial_section": {
+      "type": "object",
+      "required": ["X_coefficients_low_to_high", "Y_coefficients_low_to_high"],
+      "properties": {
+        "X_coefficients_low_to_high": {"$ref": "#/$defs/coefficient_list"},
+        "Y_coefficients_low_to_high": {"$ref": "#/$defs/coefficient_list"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "anyOf": [
+    {"required": ["mw3_seed"]},
+    {"required": ["source"]}
+  ],
+  "additionalProperties": true
+}

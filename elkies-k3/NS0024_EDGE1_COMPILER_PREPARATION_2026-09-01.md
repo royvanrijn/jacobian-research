@@ -140,13 +140,35 @@ and `U` are reserved for the old and new elliptic bases.  A single model is
 represented by an empty `parameters` array, while a generic modular family
 uses one parameter.
 
-The recovery search may first produce an isolated marked point as a compact
-P4 record over `GF(p^d)` plus an oriented MW3 seed.  The independent adapter
+The recovery search may first produce an isolated marked point either as a
+compact P4 record over `GF(p^d)` plus an oriented prime-field MW3 seed, or as
+one joint record carrying the surface and all four sections over `GF(p^d)`.
+The independent adapter
 [`scripts/adapt_lattice_foundry_ns0024_mw4_point_for_edge1.sage`](scripts/adapt_lattice_foundry_ns0024_mw4_point_for_edge1.sage)
 joins those records and replays all four curve equations, the `I7+I5+I4+8I1`
 profile, every component label, and the complete section-intersection Gram
 matrix before granting the compiler input status.  Thus finite-extension
 points need no manual transcription.
+
+A direct prime-field `MW4SEED` hit can be converted without hand editing by
+[`scripts/convert_lattice_foundry_ns0024_mw4_seed_to_point.py`](scripts/convert_lattice_foundry_ns0024_mw4_seed_to_point.py).
+The converter is lossless only; it does not bypass the adapter's independent
+source-marking replay.
+
+For a joint zero-dimensional slice, the preferred extractor is
+[`scripts/extract_lattice_foundry_ns0024_joint_rur_point.sage`](scripts/extract_lattice_foundry_ns0024_joint_rur_point.sage).
+It decodes every irreducible eliminant factor in its own arbitrary-degree
+residue field and invokes the independent joint source verifier before this
+adapter.  The older quadratic fixed-MW3 assumption is absent from that path.
+
+The minimum-pole certificate also enumerates the q4-containing basis frontier.
+Its resolved component-depth recommendation has absolute profiles
+`(6,0,0),(2,1,1),(4,2,0),(6,4,3)` and Gram matrix
+`[[-2,1,1,1],[1,-2,0,2],[1,0,-2,2],[1,2,2,-2]]`; in that basis the same
+abstract q4/orbit1 horizontal is named `P2`.  The adapter and compiler accept
+either pinned basis variant, replay absolute labels, and select the horizontal
+from the bound marking.  This avoids confusing absolute component labels with
+the relative multipliers returned when `P4` is used as a local generator.
 
 The compiler independently checks:
 
@@ -156,7 +178,8 @@ The compiler independently checks:
 - all four displayed section identities and their pole profile `(0,0,0,1)`;
 - the finite-node incidence fingerprint, all `I7/I5/I4` component labels,
   and the complete section-intersection Gram matrix forced by the marking;
-- the resolved component-1 orientation of `P3` at the split `I5`;
+- the resolved component-1 orientation of the bound q4 horizontal (`P3` in
+  the original basis, `P2` in the resolved recommendation) at the split `I5`;
 - the complete `4 -> 2 -> 2` resolved-RR calculation;
 - exact square removal, binary-quartic degree four, finite minimization, the
   infinity boundary, target root data, and Euler number 24.
@@ -199,7 +222,6 @@ first form the certified compiler input and then compile it:
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/adapt_lattice_foundry_ns0024_mw4_point_for_edge1.sage \
   --point artifacts/generated-results/<mw4-point>.json \
-  --seed artifacts/generated-results/<mw3-seed>.txt \
   --output artifacts/generated-results/<mw4-source>.json
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -214,14 +236,14 @@ The same two stages can be dispatched in one fail-closed command:
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/run_lattice_foundry_ns0024_edge1_handoff.sage \
   --input artifacts/generated-results/<mw4-point>.json \
-  --seed artifacts/generated-results/<mw3-seed>.txt \
   --source-output artifacts/generated-results/<mw4-source>.json \
   --edge-output artifacts/generated-results/<mw4-source>-edge1.json
 ```
 
-For an input already in the certified family schema, omit `--seed` and
-`--source-output`.  Add `--check` to replay the complete handoff without
-rewriting either artifact.
+For the older split compact-point format, add `--seed
+artifacts/generated-results/<mw3-seed>.txt`.  For an input already in the
+certified family schema, omit both `--seed` and `--source-output`.  Add
+`--check` to replay the complete handoff without rewriting either artifact.
 
 Then rerun the same command with `--check`.  Do not update
 `MATH_STATUS.json` merely because a modular family compiles: characteristic

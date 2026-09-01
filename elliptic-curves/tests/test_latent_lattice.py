@@ -17,6 +17,9 @@ from latent_lattice import (
     cloud_height_signature,
     cross_bound_intersection_proposals,
     exact_partial_relation_replay,
+    exact_intersection_consensus,
+    exact_graph_walk_consensus,
+    exact_rational_ranks,
     canonical_unoriented,
     canonical_rational_unoriented,
     finite_quotient_block,
@@ -36,10 +39,12 @@ from latent_lattice import (
     point_complexity,
     partial_replay_finite_signature,
     primitive_column_closure,
+    primitive_hermite_signatures,
     rational_nullspace,
     rational_rank,
     row_basis_coordinates,
     row_embedding_is_primitive,
+    row_embedding_saturation_indices,
     row_embedding_smith_invariant_factors,
     recover_exact_embedding,
     repeated_cross_bound_intersection_ledger,
@@ -148,6 +153,18 @@ class LatentLatticeTests(unittest.TestCase):
         )
         self.assertTrue(row_embedding_is_primitive(expected_rectangular))
         self.assertFalse(row_embedding_is_primitive(((2, 0, 0), (0, 1, 0))))
+        self.assertEqual(
+            row_embedding_saturation_indices(
+                (((1, 0, 0), (0, 1, 0)), ((2, 0, 0), (0, 1, 0)))
+            ),
+            (1, 2),
+        )
+        self.assertEqual(
+            exact_rational_ranks((((1, 0), (0, 1)), ((1, 2), (2, 4)))),
+            (2, 1),
+        )
+        with self.assertRaises(ValueError):
+            row_embedding_saturation_indices((((1, 0), (2, 0)),))
 
         # A rank-one mapped component is saturated and replayed without an
         # arbitrary completion to the rank-two source ambient lattice.
@@ -369,6 +386,50 @@ class LatentLatticeTests(unittest.TestCase):
         first = hermite_signature(((2.0, 0.0), (0.0, 3.0)))
         second = hermite_signature(((35.0, 21.0), (21.0, 21.0)))
         self.assertLess(hermite_signature_distance(first, second), 1e-12)
+
+    def test_primitive_hermite_signature_saturates_before_restriction(self) -> None:
+        signatures = primitive_hermite_signatures(
+            ((2.0, 0.0), (0.0, 3.0)),
+            (((1, 0), (0, 1)), ((2, 0), (0, 1))),
+        )
+        self.assertEqual(tuple(item.saturation_index for item in signatures), (1, 2))
+        self.assertLess(
+            hermite_signature_distance(signatures[0].hermite, signatures[1].hermite),
+            1e-12,
+        )
+
+    def test_intersection_consensus_uses_exact_codimension_one_support(self) -> None:
+        ledger = exact_intersection_consensus(
+            (
+                ((1, 0, 0, 0), (0, 1, 0, 0)),
+                ((1, 0, 0, 0), (0, 0, 1, 0)),
+                ((1, 0, 0, 0), (0, 0, 0, 1)),
+                ((0, 1, 0, 0), (0, 0, 1, 0)),
+            ),
+            (4.0, 3.0, 2.0, 1.0),
+            pool_size=4,
+        )
+        self.assertEqual(ledger.exact_pair_count, 6)
+        self.assertEqual(ledger.candidates[0].codimension_one_intersection_count, 3)
+        self.assertEqual(ledger.selected.source_index, 0)
+
+    def test_graph_walk_consensus_records_exact_walk_counts(self) -> None:
+        ledger = exact_graph_walk_consensus(
+            (
+                ((1, 0, 0, 0), (0, 1, 0, 0)),
+                ((1, 0, 0, 0), (0, 0, 1, 0)),
+                ((1, 0, 0, 0), (0, 0, 0, 1)),
+                ((0, 1, 0, 0), (0, 0, 1, 0)),
+            ),
+            (1.0, 0.99, 0.98, 0.97),
+            pool_size=4,
+            shape_gap_threshold=0.02,
+        )
+        self.assertEqual(ledger.exact_pair_count, 6)
+        self.assertEqual(ledger.codimension_one_edge_count, 5)
+        self.assertEqual(ledger.selector_mode, "exact_graph_walk_consensus")
+        self.assertGreater(ledger.candidates[0].triangle_count, 0)
+        self.assertEqual(ledger.selected.source_index, 0)
 
     def test_intrinsic_shell_relations_are_scale_and_basis_invariant(self) -> None:
         first = intrinsic_shell_signature(

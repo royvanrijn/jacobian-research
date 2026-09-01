@@ -8,7 +8,7 @@ The input must use the schema
 ``elkies-k3.lattice-foundry-ns0024-mw4-family-modp.v1`` and bind its four
 displayed sections to the exact minimum-pole source marking.  The compiler is
 fail-closed: it replays the source fibre profile and section equations, checks
-the P3 split-I5 orientation, constructs the complete 4-to-2 resolved toric
+the marked horizontal section's split-I5 orientation, constructs the complete 4-to-2 resolved toric
 module for ``-C2-2*C3-C4``, and compiles the same kernel to the child
 Jacobian.  Success requires the exact geometric fibre profile
 ``I1*+I5+I3+I2+7I1`` (root system ``D5+A4+A2+A1``).
@@ -158,14 +158,34 @@ if marking.get("minimum_basis_sha256") != expected_basis_hash:
     raise ValueError("input marking does not bind the pinned NS0024 MW4 basis")
 if marking.get("normalized_supports") != {"I7": "0", "I5": "1", "I4": "infinity"}:
     raise ValueError("input family uses a different reducible-fibre normalization")
-expected_profiles = {
-    item["name"]: item["components_I7_I5_I4"] for item in basis["basis"]
-}
+basis_variant = marking.get("basis_variant", "original")
+if basis_variant == "original":
+    expected_profiles = {
+        item["name"]: item["components_I7_I5_I4"] for item in basis["basis"]
+    }
+    expected_intersection_gram = basis["section_intersection_gram"]
+    expected_poles = {item["name"]: item["P_dot_O"] for item in basis["basis"]}
+    horizontal_name = "P3"
+elif basis_variant == "resolved_component_depth_recommendation":
+    recommendation = basis["enumeration"]["resolved_component_depth_recommendation"]
+    expected_profiles = {
+        "P{}".format(index + 1): row
+        for index, row in enumerate(recommendation["profiles_I7_I5_I4"])
+    }
+    expected_intersection_gram = recommendation["section_intersection_gram"]
+    expected_poles = {
+        "P{}".format(index + 1): value
+        for index, value in enumerate(recommendation["pole_orders"])
+    }
+    horizontal_name = "P{}".format(recommendation["q4_orbit1_basis_index"])
+else:
+    raise ValueError("unsupported NS0024 basis variant")
 if marking.get("section_profiles_I7_I5_I4") != expected_profiles:
     raise ValueError("input section profiles do not match the pinned MW4 marking")
-expected_intersection_gram = basis["section_intersection_gram"]
 if marking.get("section_intersection_gram") != expected_intersection_gram:
     raise ValueError("input marking does not declare the pinned section intersection Gram matrix")
+if marking.get("horizontal", horizontal_name) != horizontal_name:
+    raise ValueError("input marking identifies the wrong q4/orbit1 horizontal section")
 
 order_zero = int(discriminant.valuation(t))
 order_one = int(discriminant.valuation(t - 1))
@@ -194,7 +214,7 @@ for name, (x_value, y_value) in sections.items():
         raise ValueError("{} misses the source Weierstrass family".format(name))
     x_den = old_ring(x_value.denominator()).monic()
     y_den = old_ring(y_value.denominator()).monic()
-    expected_pole = next(item["P_dot_O"] for item in basis["basis"] if item["name"] == name)
+    expected_pole = expected_poles[name]
     if expected_pole == 0:
         if x_den.degree() or y_den.degree():
             raise ValueError("{} is not polynomial despite P.O=0".format(name))
@@ -224,10 +244,8 @@ def hits_finite_node(point, support):
 
 
 expected_node_hits = {
-    "P1": (True, False),
-    "P2": (True, True),
-    "P3": (True, True),
-    "P4": (True, True),
+    name: (profile[0] != 0, profile[1] != 0)
+    for name, profile in expected_profiles.items()
 }
 for name, point in sections.items():
     actual = (hits_finite_node(point, coefficient_field(0)), hits_finite_node(point, coefficient_field(1)))
@@ -301,12 +319,20 @@ def component_label(point, reference, order, fibre_index):
 
 
 p4_reference = section_points["P4"]
-actual_profiles = {
+relative_profiles = {
     name: [
         component_label(point, p4_reference, order, fibre_index)
         for fibre_index, order in enumerate((7, 5, 4))
     ]
     for name, point in section_points.items()
+}
+p4_profile = expected_profiles["P4"]
+actual_profiles = {
+    name: [
+        (relative_profiles[name][fibre_index] * p4_profile[fibre_index]) % order
+        for fibre_index, order in enumerate((7, 5, 4))
+    ]
+    for name in section_points
 }
 if actual_profiles != expected_profiles:
     raise ValueError("displayed sections have the wrong complete component marking: {}".format(actual_profiles))
@@ -333,8 +359,8 @@ actual_intersection_gram = [
 if actual_intersection_gram != expected_intersection_gram:
     raise ValueError("displayed sections have the wrong intersection Gram matrix")
 
-P3x, P3y = sections["P3"]
-ambient = ("1", "t", "t^2", "m_P3")
+horizontal_x, horizontal_y = sections[horizontal_name]
+ambient = ("1", "t", "t^2", "m_{}".format(horizontal_name))
 chord_expansions = ((1, 0), (t, 0), (t**2, 0), (0, 1))
 toric_block = split_multiplicative_toric_chord_condition(
     "NS0024 edge1 split-I5 C2+2C3+C4 quotient",
@@ -344,14 +370,14 @@ toric_block = split_multiplicative_toric_chord_condition(
     coefficient_field(1),
     A,
     B,
-    P3x,
-    P3y,
+    horizontal_x,
+    horizontal_y,
     5,
     1,
     {2: 1, 3: 2, 4: 1},
     (
-        "exact q4/orbit1 divisor D=O+P3+2F-C2-2C3-C4 from the pinned "
-        "NS0024 source marking"
+        "exact q4/orbit1 divisor D=O+{}+2F-C2-2C3-C4 from the pinned "
+        "NS0024 source marking".format(horizontal_name)
     ),
 )
 compiled = compile_resolved_conditions(
@@ -380,8 +406,8 @@ resolved_hop = compile_resolved_degree_two_chord_hop(
     ((1, 0), (tt, 0), (tt**2, 0), (0, 1)),
     old_over_new_ring,
     new_field(U_poly),
-    lift_polynomial(P3x.numerator()) / lift_polynomial(P3x.denominator()),
-    lift_polynomial(P3y.numerator()) / lift_polynomial(P3y.denominator()),
+    lift_polynomial(horizontal_x.numerator()) / lift_polynomial(horizontal_x.denominator()),
+    lift_polynomial(horizontal_y.numerator()) / lift_polynomial(horizontal_y.denominator()),
     lift_polynomial(A),
     old_b=lift_polynomial(B),
 )
@@ -446,14 +472,15 @@ payload = {
         "displayed_sections": sorted(sections),
         "section_profiles_I7_I5_I4": actual_profiles,
         "section_intersection_gram": actual_intersection_gram,
-        "horizontal": "P3",
+        "basis_variant": basis_variant,
+        "horizontal": horizontal_name,
         "horizontal_component_I5": 1,
     },
     "edge": {
         "q": 4,
         "orbit_index": 1,
         "old_fibre_degree": 2,
-        "divisor_identity": preparation["edge"]["divisor_identity"],
+        "divisor_identity": "O+{}+2F-C2-2C3-C4".format(horizontal_name),
     },
     "resolved_RR": {
         "ambient_basis": list(ambient),

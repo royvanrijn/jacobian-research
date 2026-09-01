@@ -147,6 +147,71 @@ for left in range(4):
 assert shioda == quotient_basis * height * quotient_basis.transpose()
 assert shioda.det() == QQ(95) / 14
 
+
+def optimal_basis_record(entry):
+    candidate = tuple(vector(ZZ, item) for item in entry[3])
+    candidate_profiles = tuple(profile(item) for item in candidate)
+    candidate_quotient = matrix(ZZ, [list(item[13:]) for item in candidate])
+    candidate_poles = tuple((item * frame * item - 4) // 2 for item in candidate)
+    candidate_intersection = matrix(ZZ, 4, 4)
+    for left in range(4):
+        for right in range(4):
+            kl = (candidate[left] * frame * candidate[left] - 2) // 2
+            kr = (candidate[right] * frame * candidate[right] - 2) // 2
+            candidate_intersection[left, right] = (
+                kl + kr - candidate[left] * frame * candidate[right]
+            )
+    target_q4_coordinate = (-1, 0, 0, 0)
+    return {
+        "profiles_I7_I5_I4": [list(map(int, row)) for row in candidate_profiles],
+        "component_depth_sum": int(sum(
+            min(label, order - label)
+            for row in candidate_profiles
+            for label, order in zip(row, orders)
+            if label
+        )),
+        "pole_orders": list(map(int, candidate_poles)),
+        "quotient_coordinates": rows(candidate_quotient),
+        "quotient_determinant": int(candidate_quotient.det()),
+        "section_intersection_gram": rows(candidate_intersection),
+        "contains_q4_orbit1_projection": any(
+            tuple(map(int, row)) == target_q4_coordinate
+            for row in candidate_quotient.rows()
+        ),
+        "q4_orbit1_basis_index": next((
+            index
+            for index, row in enumerate(candidate_quotient.rows(), 1)
+            if tuple(map(int, row)) == target_q4_coordinate
+        ), None),
+    }
+
+
+optimal_basis_records = [optimal_basis_record(entry) for entry in best_bases]
+q4_basis_frontier = []
+for entry in minimum_bases:
+    record = optimal_basis_record(entry)
+    if not record["contains_q4_orbit1_projection"]:
+        continue
+    node_count = sum(
+        label != 0 for row in record["profiles_I7_I5_I4"] for label in row
+    )
+    pair_intersection_sum = sum(
+        record["section_intersection_gram"][left][right]
+        for left in range(4) for right in range(left)
+    )
+    record["labelled_node_incidences"] = int(node_count)
+    record["total_pair_intersection"] = int(pair_intersection_sum)
+    q4_basis_frontier.append(record)
+q4_basis_frontier.sort(key=lambda record: (
+    -record["component_depth_sum"],
+    record["total_pair_intersection"],
+    -record["labelled_node_incidences"],
+    record["profiles_I7_I5_I4"],
+    record["quotient_coordinates"],
+))
+assert q4_basis_frontier
+resolved_chart_recommendation = q4_basis_frontier[0]
+
 payload = {
     "schema": "elkies-k3.lattice-foundry-ns0024-mw4-minimum-basis.v1",
     "status": "PASS_EXACT_MINIMUM_POLE_FOUR_SECTION_BASIS",
@@ -164,6 +229,9 @@ payload = {
         "maximum_labelled_singular_node_incidences": int(-best_score[0]),
         "minimum_total_pair_intersection_at_maximum_incidences": int(best_score[1]),
         "number_of_bases_at_optimum": len(best_bases),
+        "optimal_bases": optimal_basis_records,
+        "q4_containing_basis_count": len(q4_basis_frontier),
+        "resolved_component_depth_recommendation": resolved_chart_recommendation,
         "completeness": "PARI qfminim exhausts all frame vectors through norm six; the physical chamber inequalities are exact.",
     },
     "basis": [

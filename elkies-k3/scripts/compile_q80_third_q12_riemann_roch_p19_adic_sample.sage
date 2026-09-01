@@ -241,7 +241,8 @@ simple_x_ring = PolynomialRing(simple_series_ring, "X")
 X = simple_x_ring.gen()
 simple_equation = simple_x_ring(infinity_equation(s, X))
 simple_root = simple_series_ring(simple_seed)
-for unused in range(8):
+newton_iterations = max(8, digits.bit_length() + 2)
+for unused in range(newton_iterations):
     simple_root -= simple_equation(simple_root) / simple_equation.derivative()(simple_root)
 if simple_equation(simple_root).valuation() < series_precision - 6:
     raise ArithmeticError("simple infinity branch did not converge")
@@ -348,7 +349,7 @@ for branch_index, c3_branch_value in enumerate(c3_values):
     double_root = double_series_ring(
         branch_map(double_seed) + branch_map(c2_value) * sd**2 + c3_branch_value * sd**3
     )
-    for unused in range(9):
+    for unused in range(newton_iterations + 1):
         double_root -= double_equation(double_root) / double_equation.derivative()(double_root)
     if double_equation(double_root).valuation() < 2 * series_precision - 9:
         raise ArithmeticError("double infinity branch did not converge")

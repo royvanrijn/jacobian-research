@@ -88,23 +88,51 @@
           "type": "string",
           "pattern": "^[0-9a-f]{64}$"
         },
+        "basis_variant": {
+          "enum": ["original", "resolved_component_depth_recommendation"]
+        },
+        "horizontal": {"enum": ["P2", "P3"]},
         "normalized_supports": {
           "const": {"I7": "0", "I5": "1", "I4": "infinity"}
         },
         "section_profiles_I7_I5_I4": {
-          "const": {
-            "P1": [1, 0, 0],
-            "P2": [2, 1, 3],
-            "P3": [2, 1, 1],
-            "P4": [1, 1, 1]
-          }
+          "oneOf": [
+            {
+              "const": {
+                "P1": [1, 0, 0],
+                "P2": [2, 1, 3],
+                "P3": [2, 1, 1],
+                "P4": [1, 1, 1]
+              }
+            },
+            {
+              "const": {
+                "P1": [6, 0, 0],
+                "P2": [2, 1, 1],
+                "P3": [4, 2, 0],
+                "P4": [6, 4, 3]
+              }
+            }
+          ]
         },
         "section_intersection_gram": {
-          "const": [
-            [-2, 1, 2, 1],
-            [1, -2, 0, 1],
-            [2, 0, -2, 1],
-            [1, 1, 1, -2]
+          "oneOf": [
+            {
+              "const": [
+                [-2, 1, 2, 1],
+                [1, -2, 0, 1],
+                [2, 0, -2, 1],
+                [1, 1, 1, -2]
+              ]
+            },
+            {
+              "const": [
+                [-2, 1, 1, 1],
+                [1, -2, 0, 2],
+                [1, 0, -2, 2],
+                [1, 2, 2, -2]
+              ]
+            }
           ]
         }
       },

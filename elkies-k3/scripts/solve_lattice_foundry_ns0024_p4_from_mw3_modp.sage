@@ -9,8 +9,15 @@ from sage.all import GF, PolynomialRing, ZZ
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--seed", type=Path, required=True)
+parser.add_argument(
+    "--seed-index",
+    type=int,
+    default=0,
+    help="zero-based record index when the seed file contains multiple MW3SEED lines",
+)
 parser.add_argument("--export-msolve", type=Path, required=True)
 parser.add_argument("--c-minpoly", help="optional monic quadratic coefficients u,v for c^2+u*c+v")
+parser.add_argument("--c-value", type=int, help="optional base-field value of c")
 parser.add_argument(
     "--recursive-y",
     action="store_true",
@@ -27,9 +34,14 @@ parser.add_argument(
 args = parser.parse_args()
 if args.recursive_y and args.sparse_y:
     raise SystemExit("choose at most one of --recursive-y and --sparse-y")
+if args.c_minpoly and args.c_value is not None:
+    raise SystemExit("choose at most one of --c-minpoly and --c-value")
 
+seed_records = [line for line in args.seed.resolve().read_text().splitlines() if line.strip()]
+if args.seed_index < 0 or args.seed_index >= len(seed_records):
+    raise SystemExit("--seed-index is outside the seed file")
 fields = {}
-for item in args.seed.resolve().read_text().strip().split("|")[1:]:
+for item in seed_records[args.seed_index].strip().split("|")[1:]:
     key, value = item.split("=", 1)
     fields[key] = value
 prime = ZZ(fields["p"])
@@ -130,6 +142,8 @@ equations = [entry for entry in equations if entry != 0]
 if args.c_minpoly:
     u, constant = (field(int(value)) for value in args.c_minpoly.split(","))
     equations.append(c**2 + u*c + constant)
+if args.c_value is not None:
+    equations.append(c - field(args.c_value))
 
 output = args.export_msolve.resolve()
 output.write_text(

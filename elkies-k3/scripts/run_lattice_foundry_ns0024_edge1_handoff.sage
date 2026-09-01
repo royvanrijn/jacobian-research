@@ -5,7 +5,7 @@ status: ACTIVE_COMPILER
 claim: deterministic dispatch from a certified source family or compact marked point
 
 For a certified family, this invokes the edge compiler directly.  For a compact
-quadratic-extension P4 point, it first runs the independent source-marking
+finite-field P4 point, it first runs the independent source-marking
 adapter and then invokes the same compiler.  Every subprocess is fail-closed;
 no output status is synthesized by this runner.
 """
@@ -39,6 +39,7 @@ def run(command):
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--input", type=Path, required=True)
 parser.add_argument("--seed", type=Path, help="optional MW3 seed override for a compact point")
+parser.add_argument("--seed-index", type=int, help="optional zero-based MW3 seed record override")
 parser.add_argument(
     "--source-output",
     type=Path,
@@ -54,8 +55,8 @@ record = json.loads(input_path.read_text())
 schema = record.get("schema")
 
 if schema == FAMILY_SCHEMA:
-    if args.seed is not None or args.source_output is not None:
-        raise SystemExit("--seed/--source-output apply only to a compact point input")
+    if args.seed is not None or args.seed_index is not None or args.source_output is not None:
+        raise SystemExit("--seed/--seed-index/--source-output apply only to a compact point input")
     source_path = input_path
     mode = "family"
 elif schema == POINT_SCHEMA:
@@ -72,6 +73,8 @@ elif schema == POINT_SCHEMA:
     ]
     if args.seed is not None:
         adapter_command.extend(("--seed", args.seed.resolve()))
+    if args.seed_index is not None:
+        adapter_command.extend(("--seed-index", args.seed_index))
     if args.check:
         adapter_command.append("--check")
     run(adapter_command)

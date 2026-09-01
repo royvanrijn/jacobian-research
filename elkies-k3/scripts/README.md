@@ -339,6 +339,13 @@ factorization, repeated root, generic integrality, and the complete pinned
 child with both maps have replayed through `19^16`.  The exact source currently
 supports a next precision run near 60 digits before its `19^64` ceiling.
 
+That ceiling has been removed: an exact `19^260` pencil now supports a fully
+certified conductor, basis, and pinned child through `19^256`.  Rational
+reconstruction remains underdetermined—successful-looking coordinates are at
+the square-root modulus boundary and most coordinates fail—so no exact child
+is claimed.  The next useful target is at least 1,024 p-adic digits, with
+checkpointing added before the longer lift.
+
 The p=61 compiler is now complete.  The generic mapped-fibre adapter replaces
 Sage's characteristic-`p` power-map normalization with Singular's
 Grauert--Remmert module normalization and the same reversed-Hermite basis
@@ -473,11 +480,35 @@ The current proof boundary and replay commands are in
   certified model over `GF(p)`, `GF(p^d)`, or a one-parameter function field
   and fails closed unless the exact resolved two-plane, quartic, and
   `A1+A2+A4+D5` child gates all pass.
+- `recover_lattice_foundry_ns0024_mw4_family_resolved_modp.sage` now exports a
+  joint resolved-depth13 MW3/MW4 ideal.  Surface and all marked-section
+  coordinates remain algebraic, so a closed point may place the entire MW3
+  marking over `GF(p^d)`.  The forced Q3 section, exact-depth saturations,
+  identity-component open charts, generic surface hyperplanes, and MW3-only
+  diagnostic mode are explicit.
+- `extract_lattice_foundry_ns0024_joint_gb_point.sage` decodes a
+  zero-dimensional joint basis over an arbitrary irreducible residue-field
+  modulus, scans the Frobenius-field points, and emits only after replaying all
+  four equations, fibre orders, absolute profiles, and the full Gram.
+- `extract_lattice_foundry_ns0024_joint_rur_point.sage` is the primary
+  arbitrary-degree path.  It requires the exporter's fixed full-coordinate
+  RUR anchor, a squarefree degree-equals-quotient eliminant, exact substitution
+  in the original joint system, and factor-local Frobenius decoding; each
+  factor is then passed through the independent joint-GB source verifier.  The
+  first exact marking is sent through the adapter and edge-1 compiler
+  automatically; `--no-edge1` exists only for extractor diagnostics.
 - `adapt_lattice_foundry_ns0024_mw4_point_for_edge1.sage` is the lossless
-  bridge from the residue-algebra recovery format. It joins a compact P4 point
-  over a quadratic extension to its MW3 seed and independently replays all
-  curve equations, fibre orders, component labels, and section intersections
-  before granting compiler-input status.
+  bridge from the residue-algebra recovery format. It accepts either a compact
+  P4 point plus an indexed prime-field MW3 seed, or a joint point embedding the
+  surface and all three MW3 sections over the same finite extension, and
+  independently replays every source gate before granting compiler-input status.
+  Both the original minimum-pole basis and the exact q4-containing resolved
+  component-depth recommendation are supported; the latter binds `P2` as the
+  same abstract q4/orbit1 horizontal class.
+- `convert_lattice_foundry_ns0024_mw4_seed_to_point.py` losslessly converts a
+  direct prime-field `MW4SEED` record into that same compact point schema.  It
+  deliberately grants no geometric status beyond conversion; the adapter is
+  still the independent four-section/profile/Gram gate.
 - `run_lattice_foundry_ns0024_edge1_handoff.sage` is the single-command entry
   point. It dispatches a certified family directly to the compiler, or runs
   the marked-point adapter first when given the compact residue-algebra format;

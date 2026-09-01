@@ -2,14 +2,19 @@
 
 ## Outcome
 
-The calibration gate fails.  Consequently the method was **not** applied to
+The current Phase-0 graph-selector component passes under the exact graph-walk
+consensus described below.  The correctness-fixed blind dimension scan
+estimates 13 on the Fermigier control, so rank 12 lies in its declared
+plus-or-minus-one window but is not uniquely selected end to end.  By the
+explicit method-only scope of this run, the method was **not** applied to
 ICARM 351, 356, 376, 377, or 385, and it produces no candidate generic lattice
 or target embedding.
 
-This is a bounded negative result about the selector, not a nonexistence result
-for a common wgxli lattice.  In particular it does not satisfy success level C
-from the research brief: no exhaustive search of all primitive sublattices of
-dimensions 10 through 20 has been performed.
+The earlier failed selectors remain bounded negative results, not
+nonexistence results for a common wgxli lattice.  The new control pass also
+does not satisfy target success level C from the research brief: no exhaustive
+search of all primitive target sublattices of dimensions 10 through 20 has
+been performed.
 
 The original `v1` selector artifact is retained as a historical first pass.
 It predates two correctness fixes: non-unit identities `a +/- b = m*c` are no
@@ -302,6 +307,114 @@ multi-center component or a joint cross-fibre invariant capable of ranking
 partial stars before local beam loss.  Neither a wider edgewise beam nor the
 current single-center star is calibrated for target use.
 
+## Primitive-shape intersection consensus
+
+The next invariant compares whole candidate subspaces rather than individual
+rays or stars.  A truth-free replay ledger stores every finite-seeded R17
+proposal, its exact primitive embedding matrix, its induced finite relation
+fingerprint, and the 80-digit ambient height Gram.  All 5,887 proposal
+matrices are Smith-audited; every one is primitive.  The primitive closure is
+nevertheless recomputed before restricting the height form, so the same code
+also handles nonsaturated future proposals correctly.
+
+For each fibre, the numerical prefilter retains the 64 largest scale-free
+Hermite invariants.  Every one of the `64 choose 2 = 2016` pairs is then
+ranked exactly over `Q`.  A candidate receives the equal-weight sum of:
+
+```text
+within-pool normalized Hermite extremality
+  + fraction of pooled candidates meeting it in dimension at least k-1.
+```
+
+This fixed score selects the exact withheld R17 subgroup in all four positive
+controls.  The selected source indices are 1792, 1666, 1227, and 1067, and
+the pinned artifact includes the four exact primitive `17 x r` embedding
+matrices.  It also expresses each selected basis in the published section
+basis, Smith-certifies the four changes as unimodular, and transports the
+exact pinned R17 Gram into every selected basis.  Thus the positive control
+recovers the subgroup and its abstract lattice, rather than merely a
+17-dimensional rational span.  The result is materially stronger than
+nearest-neighbour matching
+of the compact relation fingerprints, primitive Hermite extremality alone,
+theta profiles, or intrinsic-shell relation profiles; each of those
+intermediate selectors fails and remains recorded as such.
+
+The same invariant does not complete the Fermigier calibration.  The
+truth-free ICARM-245 replay fixes the earlier height-28/29, top-200 by
+top-200, 40,000-pair bound and serializes all 128 primitive rank-12
+candidates.  Thus later selector experiments do not rerun the expensive
+elliptic arithmetic.  The earlier dimension scan selects 12, not the forced
+rank-17 core.  Intersection consensus moves the exact Fermigier subspace from
+zero-based proposal rank 65 to zero-based rank 12 in the fixed top-64 pool,
+but selects candidate 11, whose intersection with truth has dimension 9.
+This is improved identification and correct dimension calibration, not exact
+recovery.
+
+Finite codes remain audit data rather than a positive identity score.  When
+the ICARM-245 candidates are compared with the two other Fermigier truth
+profiles using source-free active-block matching, the exact truth ranks 113
+of 128 on development blocks and 73 of 128 on disjoint held-out blocks
+(zero-based ranks).  Folding that adverse signal into the selector would be
+post-hoc overfitting, so it is explicitly excluded.
+
+At this intermediate stage the positive artifact had status
+`PASS_R17_EXACT_INTERSECTION_CONSENSUS`, while the negative-control artifact
+has status `PARTIAL_FERMIGIER_DIMENSION_PASS_SELECTOR_GATE_CLOSED`.  Phase 0
+was not yet complete.  The exact graph-walk refinement below supersedes that
+selector result; no wgxli curve is loaded in either calculation.
+
+## Exact graph-walk Phase-0 calibration
+
+The calibrated refinement keeps the same primitive Hermite prefilter and
+exact codimension-one candidate graph, but replaces degree alone by two exact
+graph statistics.  For adjacency matrix `A`, every candidate receives:
+
+- its exact triangle count; and
+- its exact length-four walk count, the corresponding entry of `A^4 1`.
+
+Ties are assigned average rank percentiles.  If the two largest Hermite
+invariants differ by at least `0.005`, the separated extremum is selected.
+Otherwise the score is
+
+```text
+1.5 * (triangle percentile + length-four-walk percentile)
+    + Hermite percentile.
+```
+
+The default pool contains the 64 largest primitive Hermite candidates.  The
+selector recovers all four exact R17 subgroups and the exact primitive
+rank-12 Fermigier rational space.  The selected R17 bases are transported by
+exact unimodular matrices to the published section bases and carry the exact
+pinned R17 Gram.  The selected Fermigier candidate is source index 65, the
+withheld primitive closure itself, rather than merely a high-overlap
+candidate.
+
+This result is stable throughout the declared calibration box:
+
+- pool sizes `64,80,96,112,128`;
+- Hermite-gap thresholds `0.004,0.005,0.006,0.007`; and
+- graph weights `1.25,1.5,1.75`.
+
+All 300 conditional fixed-dimension control selections in that box are exact.
+Recomputing all ambient
+height Grams and primitive Hermite signatures at 120 digits also leaves all
+five default selections unchanged.  Thus
+`latent_lattice_graph_walk_calibration_v1.json` has status
+`PASS_PHASE0_GRAPH_WALK_CONTROL_CALIBRATION_WITH_DIMENSION_WINDOW`.
+
+The pass has two important boundaries.  The graph, its rational intersection
+edges, triangle counts, walk counts, embedding matrices, and R17 transports
+are exact within the pinned proposal ledgers.  Hermite ordering, percentile
+weights, gap threshold, and extrapolation to an unseen family remain
+heuristic.  Moreover the Fermigier selector recovers the correct primitive
+rational space but does not blindly infer which index-`2^11` sublattice is
+generated by the published generic sections.  That index remains a withheld
+postselection audit.  The corrected blind scan estimates 13 rather than
+uniquely 12, so the graph result is explicitly conditional on retaining the
+rank-12 ledger from that window.  The next authorized step is a stronger
+dimension-consensus calibration or unseen-fibre validation, not a provenance
+or K3 claim.
+
 ## What is proved and what is heuristic
 
 Exact within the recorded bounds:
@@ -359,6 +472,27 @@ PYTHONPATH=elliptic-curves:elliptic-curves/cas \
   elliptic-curves/cas/calibrate_latent_lattice_star_component.py --check
 
 PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 \
+  elliptic-curves/cas/calibrate_latent_lattice_joint_fingerprints.py --check
+
+PYTHONPATH=elliptic-curves \
+  python3 elliptic-curves/cas/calibrate_latent_lattice_joint_shape.py --check
+
+PYTHONPATH=elliptic-curves \
+  python3 \
+  elliptic-curves/cas/calibrate_latent_lattice_intersection_consensus.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 elliptic-curves/cas/build_latent_lattice_fermigier_replay.py --check
+
+PYTHONPATH=elliptic-curves \
+  python3 elliptic-curves/cas/calibrate_latent_lattice_fermigier_replay.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 \
+  elliptic-curves/cas/calibrate_latent_lattice_graph_walk_consensus.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
   python3 -m unittest elliptic-curves/tests/test_latent_lattice.py -v
 ```
 
@@ -380,5 +514,21 @@ The exact proper-subspace validator and bounded selector failure is
 [`latent_lattice_partial_replay_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_partial_replay_v1.json).
 The finite-aware center-star proposal failure is
 [`latent_lattice_star_component_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_star_component_v1.json).
+The truth-free R17 proposal and compact-fingerprint replay is
+[`latent_lattice_joint_fingerprint_ledger_v1.json.gz`](../../artifacts/generated-results/elliptic-curves/latent_lattice_joint_fingerprint_ledger_v1.json.gz),
+with its failed nearest-neighbour summary in
+[`latent_lattice_joint_fingerprints_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_joint_fingerprints_v1.json).
+The primitive shape replay and its failed one-statistic summary are
+[`latent_lattice_joint_shape_ledger_v1.json.gz`](../../artifacts/generated-results/elliptic-curves/latent_lattice_joint_shape_ledger_v1.json.gz)
+and
+[`latent_lattice_joint_shape_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_joint_shape_v1.json).
+The exact positive-control consensus is
+[`latent_lattice_intersection_consensus_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_intersection_consensus_v1.json).
+The truth-free Fermigier replay and its partial calibration are
+[`latent_lattice_fermigier_replay_v1.json.gz`](../../artifacts/generated-results/elliptic-curves/latent_lattice_fermigier_replay_v1.json.gz)
+and
+[`latent_lattice_fermigier_consensus_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_fermigier_consensus_v1.json).
+The current Phase-0 passing control artifact is
+[`latent_lattice_graph_walk_calibration_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_graph_walk_calibration_v1.json).
 The superseded `v1` bytes remain available for provenance but are not the
 active replay target.

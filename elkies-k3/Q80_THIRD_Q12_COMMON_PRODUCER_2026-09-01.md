@@ -472,5 +472,34 @@ Their SHA-256 hashes are, respectively,
 `5d1d1999bc1d53c7fd20b3a5f5f904fb248a332b0871f712e69b580d54a8273f`,
 `852fb6503c10696d38b41443137b9bcf392309f51cbe89064b48ecc4b61572ca`, and
 `7a3ba5d0d4d8bb97e140b63fcd4c637183373e7ab06c82768a8d7ff075122098`.
-The next precision target is the source-supported ceiling near 60 digits,
-then generic long-equation interpolation at that precision.
+The exact pencil was subsequently recompiled modulo `19^260`.  The complete
+factor/root lift, generic integral-basis test, and pinned child with maps both
+ways now pass through `19^256`.  The source, factor, basis, and child hashes
+are, respectively:
+
+```text
+1ef2f30c59990caa8e71f3612ae563ac3de34a7b4128532cb26d7c6a824a0410
+e13b1a0f7fd980bc121838ea97053724ba5f26ff9f8775c24e5df7d5bd533403
+0183bfc64128e6ab3e686ec1b12cfdf26172041ceba1d9979b1338fc90077d41
+c2986e59579b6a34c660bad3ca2be39866377dbf2e293089350d9156e0a12af8
+```
+
+Rational reconstruction of the pinned long coefficients is still
+insufficient: most coordinates fail, and every returned fraction lies at the
+543--544-bit boundary of the 1,088-bit modulus.  No such fraction is accepted
+as exact.  The next target should be at least `19^1024`, preferably with
+checkpointed factor lifting, before repeating generic interpolation.
+
+Two prospective shortcuts were tested and rejected.  Reloading a completed
+lower-precision JSON factor artifact into a larger p-adic field does not
+preserve the normalized fraction-field representatives needed by the Hensel
+system, while solving the full current 9-by-9 p-adic Jacobian is already too
+slow at low precision.  Neither mode is retained in the certified worker; its
+hash again agrees with the precision-5 and precision-256 artifacts.  A useful
+checkpoint implementation must instead save native Sage state at the final
+target precision.  The tempting first-marking genus-two shortcut is not an
+alternative: the exact local-behaviour certificate already proves that field
+splits at 19, while the target field is inert.  The exact fixed-`u` pencil is
+already available over the different quadratic descent field `QQ(a*b)`; the
+remaining issue is reconstructing its Jacobian and maps, not identifying its
+coefficient field.

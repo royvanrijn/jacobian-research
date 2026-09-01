@@ -11,6 +11,7 @@ embeddings are revealed only after the joint scores are fixed.
 from __future__ import annotations
 
 import argparse
+import gzip
 from hashlib import sha256
 import importlib
 import json
@@ -32,6 +33,7 @@ from latent_lattice import (  # noqa: E402
     build_relation_complex,
     candidate_relation_fingerprint,
     enumerate_short_vectors,
+    height_gram,
     independent_relation_growth_proposals,
     joint_nearest_candidate_scores,
     primitive_span_basis,
@@ -43,6 +45,7 @@ ARTIFACTS = ROOT / "artifacts/generated-results/elliptic-curves"
 TRUTH = ARTIFACTS / "latent_lattice_calibration_truth_v1.json"
 FINITE = ARTIFACTS / "latent_lattice_finite_calibration_v1.json"
 OUTPUT = ARTIFACTS / "latent_lattice_joint_fingerprints_v1.json"
+LEDGER_OUTPUT = ARTIFACTS / "latent_lattice_joint_fingerprint_ledger_v1.json.gz"
 HEIGHT_BOUNDS = {
     "rank_at_least_25": 40.0,
     "rank_at_least_26": 43.0,
@@ -80,6 +83,7 @@ def overlap_dimension(left, right) -> int:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--ledger-output", type=Path, default=LEDGER_OUTPUT)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     truth_document = json.loads(TRUTH.read_text())
@@ -113,6 +117,10 @@ def main() -> None:
         heights = tuple(record.canonical_height for record in records)
         arithmetic = tuple(record.arithmetic for record in records)
         complex_ = build_relation_complex(vectors)
+        ambient_gram = tuple(
+            tuple(value for value in row)
+            for row in height_gram(curve, points, digits=80)
+        )
         development = tuple(
             finite_block(record)
             for record in finite_by_label[label]["development_blocks"]
@@ -164,6 +172,7 @@ def main() -> None:
                 "label": label,
                 "records": records,
                 "complex": complex_,
+                "ambient_gram": ambient_gram,
                 "proposals": proposals,
                 "fingerprints": fingerprints,
                 "overlaps": overlaps,
@@ -253,6 +262,43 @@ def main() -> None:
         else "FAIL_JOINT_R17_FINGERPRINT_SELECTION_GATE_CLOSED"
     )
     library_sources = tuple(sorted((ELLIPTIC / "latent_lattice").glob("*.py")))
+    ledger_payload = {
+        "schema": "elliptic-curves.latent-lattice-joint-fingerprint-ledger.v1",
+        "scope": "Blind R17 control candidates; withheld truth overlaps excluded",
+        "fingerprint_bounds": FINGERPRINT_BOUNDS,
+        "feature_names": list(states[0]["fingerprints"][0].feature_names),
+        "fibres": [
+            {
+                "label": state["label"],
+                "ambient_rank": len(state["records"][0].coordinates),
+                "ray_count": len(state["records"]),
+                "ambient_height_gram": [
+                    list(row) for row in state["ambient_gram"]
+                ],
+                "candidates": [
+                    {
+                        "source_index": index,
+                        "basis_rows": [list(row) for row in proposal.basis_rows],
+                        "inlier_indices": list(proposal.inlier_indices),
+                        "ray_count": fingerprint.ray_count,
+                        "ternary_relation_count": fingerprint.ternary_relation_count,
+                        "scaled_relation_count": fingerprint.scaled_relation_count,
+                        "integral_ray_count": fingerprint.integral_ray_count,
+                        "feature_values": list(fingerprint.feature_values),
+                    }
+                    for index, (proposal, fingerprint) in enumerate(
+                        zip(state["proposals"], state["fingerprints"])
+                    )
+                ],
+            }
+            for state in states
+        ],
+    }
+    ledger_rendered = (
+        json.dumps(ledger_payload, sort_keys=True, separators=(",", ":")) + "\n"
+    ).encode()
+    ledger_bytes = gzip.compress(ledger_rendered, compresslevel=9, mtime=0)
+    ledger_sha256 = sha256(ledger_bytes).hexdigest()
     payload = {
         "schema": "elliptic-curves.latent-lattice-joint-fingerprints.v1",
         "status": status,
@@ -272,6 +318,12 @@ def main() -> None:
         },
         "controls": controls,
         "exact_truth_selection_count": exact_selection_count,
+        "candidate_ledger": {
+            "path": str(args.ledger_output.relative_to(ROOT)),
+            "sha256": ledger_sha256,
+            "compressed_bytes": len(ledger_bytes),
+            "uncompressed_bytes": len(ledger_rendered),
+        },
         "total_elapsed_seconds": f"{time.monotonic() - started:.17g}",
         "gate_decision": (
             "OPEN_FOR_FERMIGIER_CALIBRATION. All four R17 fibres select their exact "
@@ -306,7 +358,12 @@ def main() -> None:
     }
     rendered = json.dumps(payload, indent=2, sort_keys=True) + "\n"
     if args.check:
-        if not args.output.exists() or args.output.read_text() != rendered:
+        if (
+            not args.output.exists()
+            or args.output.read_text() != rendered
+            or not args.ledger_output.exists()
+            or args.ledger_output.read_bytes() != ledger_bytes
+        ):
             raise SystemExit("latent-lattice joint-fingerprint artifact is stale")
         print(
             "LATENTJOINT|check=PASS|"
@@ -314,6 +371,8 @@ def main() -> None:
         )
         return
     args.output.parent.mkdir(parents=True, exist_ok=True)
+    args.ledger_output.parent.mkdir(parents=True, exist_ok=True)
+    args.ledger_output.write_bytes(ledger_bytes)
     args.output.write_text(rendered)
     print(
         f"LATENTJOINT|status={status}|output={args.output}|"
