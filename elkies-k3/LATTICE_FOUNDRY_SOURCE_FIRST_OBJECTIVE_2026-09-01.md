@@ -198,9 +198,112 @@ and `3*5^8 = 1,171,875` normalized `A` polynomials.  It finds 966
 Hermite-compatible sign branches and no squarefree fibre model.  A bounded
 characteristic-seven scan of 100,000 coefficient/cross-ratio cases finds 26
 compatible branches and again no squarefree model.  The latter is only a
-pilot.  The pole-zero geometry still makes NS0007 the preferred next target,
-but equation discovery should move to a better prime or a characteristic-zero
-elimination rather than lengthening the characteristic-five search.
+pilot.  The pole-zero geometry justified testing NS0007 first, but the empty
+complete characteristic-five fibre chart moves it behind the later NS0034,
+NS0043, and NS0030 tests below.
+
+The first arithmetic-support extension is also negative.  Since the `I2` and
+`I4` multiplicities are unique, Frobenius fixes their supports.  After putting
+them at zero and infinity, respectively, the two equal `I7` supports may form
+one irreducible quadratic orbit.  Scaling the base leaves the trace-one
+quadratics `t^2-t+n` and one trace-zero squareclass; these give four support
+orbits over `GF(7)` and six over `GF(11)`.  The Hermite jets are evaluated in
+the quadratic residue field and descended coefficientwise to the prime field.
+No tangent-cone split condition is imposed at the `I4` or `I7` fibres.  The
+normalization `A(0)=-3` fixes one local twist at the `I2`: it is nonsplit at
+7 and split at 11, so this is not an exhaustive two-twist scan at either
+prime.
+
+A coprime-stride sample of 100,000 normalized degree-eight `A` polynomials in
+each support orbit checks 400,000 rows at 7 and 600,000 rows at 11.  At 7,
+336,032 signed branches pass the local square gate and 133 pass the descended
+Hermite compatibility equations.  At 11 the corresponding counts are
+540,420 and 24.  In both runs no compatible branch has the exact prescribed
+orders `(2,7,4)` at zero, the quadratic support, and infinity; consequently
+neither run produces a squarefree residual quartic or a finite-field fibre
+model.  These are exact results for the displayed deterministic samples, not
+exhaustive prime obstructions and not evidence that the characteristic-zero
+NS0007 source does not exist.  No `GF(13)` or characteristic-zero elimination
+was run.  The pinned sample artifacts have SHA-256
+`a6f9d7933678a1a4f34e322f06efb5c82d9bddededc435d947d5e2a3f7437996`
+and
+`bc683b8e87e4d589d308a002070a898a53f4a02e86ab22d69ee301403ac216b7`.
+
+### Later pole-zero candidates: NS0034, NS0043, and NS0030
+
+The next exact pole-zero source is `NS0034-S008` from the group-a shard.  It
+has root type `A2+A3+A4+A7`, MW height `19/8`, primitive root lattice, and
+component corrections
+
+```text
+I4: 3/4,   I8: 7/8,   I3: 0,   I5: 0.
+```
+
+The same NS class contains rootless MW17 frames `NS0034-F006`,
+`NS0034-F014`, and `NS0034-F018`.  The complete normalized split `GF(5)`
+fibre census finds five exact `I4+I8+I3+I5+4I1` models, but the exhaustive
+component-adapted `5^8` section chart on each model finds no marked section.
+This is an exact obstruction only for that displayed characteristic-five
+chart.
+
+At `GF(7)`, the fixed slice `lambda=2,A8=1` is now complete.  It checks all
+`7^7=823543` remaining `A` polynomials; 1,210,104 signed branches pass the
+local square gate, 505 satisfy Hermite compatibility, and exactly one has the
+prescribed fibre orders and squarefree residual quartic.  Its exhaustive
+`7^8=5764801` section chart contains eight polynomial sections, but none has
+both required depth-one I4/I8 contacts and smooth identity specialization at
+I3/I5.  The fibre and section artifacts have SHA-256
+`f671cbf5e08f329d118eee74956bad3a3d8c6be456a442f7ba129a661cbe8883`
+and
+`6f5cb66f9d2f42ed3729b168066412237858c514d657a144d039b2e65e1c1131`.
+The A-eliminated 20-variable nodal-Hermite ideal is positive-dimensional
+before exact-order saturation; its boundary components are not a source
+family certificate.
+
+The source-first ledger then reveals a cleaner target that was hidden by the
+earlier rootless-MW17 emphasis.  `NS0043-S005` has the same three-support
+semistable profile `I9+I7+I3+5I1` as the NS0011 equation gate, but its MW
+height is exactly four and its minimum pole is zero.  Therefore every
+component correction is zero.  Its determinant is 756, and the same NS class
+has four catalogued MW15 frames `NS0043-F001` through `NS0043-F004`.
+
+This profile lets the complete seven-model NS0011 `GF(5)` fibre census be
+reused without a new fibre search.  Exhausting all `5^5` possible polynomial
+X-coordinates on every model finds no polynomial section in the square local
+twist.  The nonsquare quadratic twist contains 54 polynomial sections, but no
+section meets the smooth identity component at all three reducible fibres.
+The failures split among seven component patterns; 26 sections hit
+nonidentity components at I9, I7, and I3 simultaneously.  Thus the union of
+the two local twist classes is an exact obstruction for the displayed split
+`GF(5)` normalization.  The corresponding square/nonsquare artifacts have
+SHA-256
+`8d69b9a1b3137a6c95dfb76525bcd509bd593c89ee2850d18e3ecaf07c89d5db`
+and
+`cf56b3fe520be6369cfeacffd33b1dc16b939fc518a5edc8c4bffc18b81fd7f2`.
+The two stored `GF(7)` fibre models give the same two-twist negative section
+result, but their parent fibre scan is bounded.
+
+The next promoted semistable source is `NS0030-S001`.  It sacrifices support
+count for a stronger endpoint balance: root type `2A1+A2+2A6`, MW height
+`17/14`, pole zero, determinant 714, one same-NS MW15 frame, and one same-NS
+MW16 frame `NS0030-F002`.  Exact projection to the five root components gives
+corrections
+
+```text
+I3: 0,   one I2: 0,   other I2: 1/2,
+one I7: 6/7,   other I7: 10/7.
+```
+
+The ordered five-support ansatz normalizes the I3 and identity I2 at zero and
+one, the depth-one I2/I7 at `lambda,mu`, and the depth-two I7 at infinity.
+A coprime-stride `GF(5)` pilot checks 100,000 normalized `A` polynomials in
+each of the six ordered support pairs.  Among 600,000 rows it finds 346 signed
+Hermite-compatible branches and no branch with the exact prescribed orders
+and squarefree residual cubic.  This is bounded routing evidence only; its
+artifact SHA-256 is
+`8cd522e1f7144b18083b9c92a99f155aa595861f0fcabcf114a69b80559f3bbb`.
+The remaining coefficient rows, the second local twist, characteristic-zero
+descent, and a neighbour corridor remain open.
 
 ## Direct prescribed-root enumeration
 

@@ -602,19 +602,23 @@ The current proof boundary and replay commands are in
   union/MW gate, exact modular saturation prefilters, integral
   Construction-A saturation, prefix-stabilizer quotienting, residual-`M24`
   transporter deduplication, saturated complements, root counts, and ternary
-  discriminant-form gates. The pinned contiguous `0:250` and `250:500`
-  shards retain 205 and 86 local residual-M24 records; 285 of their combined
-  291 records have matching ternary genera. The separate multi-shard
+  discriminant-form gates. The pinned eight contiguous 250-prefix shards
+  through index 2,000 retain 1,267 local residual-M24 records; 1,253 have matching
+  ternary genera. The separate multi-shard
   full-Weyl quotient closes the sign action and cross-shard duplicates for
-  this input; the remaining 10,047 prefixes and auxiliaries outside the
+  this input; the remaining 8,547 prefixes and auxiliaries outside the
   positive seven-octad language remain open.
+- `build_24a1_octad_completion_manifest.sage` discovers the exact completion
+  shards, validates a gap-free and overlap-free prefix interval starting at
+  zero, and pins every artifact hash and local accounting value. It is the
+  shared input contract for the full-Weyl quotient and catalogue.
 - `canonicalize_24a1_weyl_m24_shard.sage` applies the missing full
   `W(24A1) semidirect M24` quotient to that completion shard. It replaces the
   impossible enumeration of `2^24` signs by an exact comparison of the 24
   doubled physical coordinate covectors modulo sign, intrinsic auxiliary
   isometries, and GAP `M24` transporters. It accepts contiguous completion
-  shards and preserves local provenance. The combined 291 records give five
-  intrinsic auxiliary classes and 16 full embedding orbits; 13 pass the
+  shards and preserves local provenance. The combined 1,267 records give five
+  intrinsic auxiliary classes and 23 full embedding orbits; 18 pass the
   ternary-genus gate. Every collapse has an explicit row-isometry,
   coordinate-permutation, and coordinate-sign witness, and every full orbit
   has a certified stabilizer order.
@@ -625,6 +629,16 @@ The current proof boundary and replay commands are in
   future embedding is retained by this experiment only after its full
   ambient stabilizer induces an action satisfying
   `rank_GF2(g_M-I)>0` on the complement modulo two.
+- `enumerate_2a7_2d5_4a_fixed_rank7.sage` closes the first exact
+  symmetry-first family. It enumerates every primitive corank-one rank-seven
+  sublattice of the common `4A` fixed lattice through determinant 5,000 using
+  the dual-lattice determinant identity. All 336 embeddings have literal
+  `2B,2C,4A` stabilizers and nontrivial complement actions modulo two; they
+  reduce to three auxiliary and five frame isometry classes, including 304
+  rootless/MW17 embeddings. The ternary gate rejects all of them because
+  their discriminant groups have length seven. This is a complete negative
+  result for the declared pointwise-fixed family, not for nontrivial
+  seven-dimensional `4A` representations.
 - `build_leech_co0_backend.sage` derives the invariant integral Gram matrix of
   the AtlasRep 24-dimensional `2.Co1=Co0` representation. It certifies an even
   unimodular rank-24 lattice of minimum four with 196,560 minimal vectors,
@@ -706,6 +720,37 @@ The current proof boundary and replay commands are in
   `I2+I4+2I7+4I1` model. This is an exact obstruction only for that displayed
   characteristic-five chart. The stored `GF(7)` run is a bounded
   100,000-case negative pilot.
+- The same probe now also accepts `--candidate ns0034` and optional fixed
+  `lambda`/leading-`A` slices.  The primitive `NS0034-S008` source has
+  `A2+A3+A4+A7/MW1`, height `19/8`, pole zero, and three rootless MW17
+  endpoints.  A complete fixed `GF(7)` slice at `lambda=2,A8=1` checks all
+  `7^7` remaining `A` polynomials and has a unique exact squarefree fibre
+  model.  `scan_lattice_foundry_ns0034_pole0_sections_modp.sage` exhausts its
+  `7^8` component-adapted section tuples and finds eight polynomial sections,
+  but none with the required I4/I8 depths and I3/I5 identity components.
+  This excludes only that fixed modular slice.
+- `build_lattice_foundry_ns0034_fibre_hermite_modp.sage` writes the raw
+  28-variable nodal-Hermite system.  The A-eliminated
+  `build_lattice_foundry_ns0034_fibre_hermite_reduced_modp.sage` fixes an
+  infinity square-root branch and reduces it to 20 cubic-or-lower equations.
+  The pinned `p=7,lambda=2,A8=1,hi0=3` solve is positive-dimensional because
+  the divisibility locus includes higher-order/collided fibre boundaries;
+  exact residual-order testing is still required.
+- `scan_lattice_foundry_ns0043_pole0_sections_modp.sage` reuses the complete
+  seven-model `I9+I7+I3+5I1` fibre census for the stronger source-first
+  `NS0043-S005` marking.  This source has MW1, height four, pole zero, zero
+  component corrections, and four same-NS MW15 targets.  Exhausting both
+  local quadratic-twist classes at `GF(5)` finds 54 polynomial sections in
+  the nonsquare twist and none in the square twist, but no section meets all
+  three smooth identity components.  The two stored `GF(7)` fibre models give
+  the same bounded two-twist negative result.
+- `probe_lattice_foundry_ns0030_source_ansatz_modp.sage` promotes a pole-zero
+  semistable source attached to both MW15 and MW16 targets.  It imposes the
+  ordered `I3+I2+I2+I7+I7` branch jets with exact corrections
+  `0,0,1/2,6/7,10/7`.  The pinned coprime-stride `GF(5)` pilot checks 100,000
+  normalized `A` polynomials for each of six ordered support pairs, finds 346
+  Hermite-compatible signed branches, and no exact squarefree fibre model.
+  This is bounded routing evidence, not a prime obstruction.
 - `hunt_lattice_foundry_rootful_source.sage` and
   `run_lattice_foundry_mw3_broad_scout.py` are retained for bounded Kneser
   discovery provenance and byte-for-byte replay of their existing artifacts,

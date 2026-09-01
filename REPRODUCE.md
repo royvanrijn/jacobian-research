@@ -2853,6 +2853,60 @@ Build or byte-check the surface-first rank-seven auxiliary catalogue:
   --prefix-start 250 --prefix-stop 500 --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 500 --prefix-stop 750
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 500 --prefix-stop 750 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 750 --prefix-stop 1000
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 750 --prefix-stop 1000 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1000 --prefix-stop 1250
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1000 --prefix-stop 1250 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1250 --prefix-stop 1500
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1250 --prefix-stop 1500 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1500 --prefix-stop 1750
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1500 --prefix-stop 1750 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1750 --prefix-stop 2000
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1750 --prefix-stop 2000 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_24a1_octad_completion_manifest.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_24a1_octad_completion_manifest.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/canonicalize_24a1_weyl_m24_shard.sage
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -2863,6 +2917,12 @@ Build or byte-check the surface-first rank-seven auxiliary catalogue:
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_cross_niemeier_mod2_priority.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_2a7_2d5_4a_fixed_rank7.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_2a7_2d5_4a_fixed_rank7.sage --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_leech_co0_backend.sage
@@ -2880,18 +2940,24 @@ Build or byte-check the surface-first rank-seven auxiliary catalogue:
 The first two commands enumerate exact residual-`M24` orbits of unordered
 Golay-octad subsets through size five; the orbit counts are
 `1,3,16,206,10547`, and every orbit-stabilizer mass equals
-`binomial(759,k)`. The next four commands complete prefix indices `0:500` in
-two contiguous shards. After exact saturation and local residual-`M24`
-deduplication they retain 291 records, with MW-rank distribution
-`71,195,25` in ranks 12, 13, and 14; 285 pass the ternary genus gate. This is
+`binomial(759,k)`. The next sixteen commands complete prefix indices `0:2000` in
+eight contiguous shards. After exact saturation and local residual-`M24`
+deduplication they retain 1,267 records, with MW-rank distribution
+`260,970,37` in ranks 12, 13, and 14; 1,253 pass the ternary genus gate. This is
 an exact partial frontier in the positive seven-octad language. The next two
-commands apply the full `2^24 semidirect M24` quotient across both shards:
-the 291 local records become 16 full embedding orbits, with MW-rank
-distribution `4,10,2` in ranks 12, 13, and 14, and 13 pass the ternary-genus
-gate. The following two commands
+commands build and byte-check the gap-free, hash-pinned shard manifest. The
+following two commands apply the full `2^24 semidirect M24` quotient across all
+eight shards: the 1,267 local records become 23 full embedding orbits, with
+MW-rank distribution `5,13,5` in ranks 12, 13, and 14, and 18 pass the
+ternary-genus gate. The following two commands
 build the cross-Niemeier mod-2 scheduler, prioritizing `2B`, `2C`, `4A` and
 analogous component permutations but requiring the exact gate
-`rank_GF2(g_M-I)>0`. Neither artifact is a complete `24A1:D0001-0500`
+`rank_GF2(g_M-I)>0`. The next two commands close the primitive corank-one
+family inside the common rank-eight `4A` fixed lattice of `N(2A7+2D5)`.
+They enumerate 336 embeddings, with MW-rank distribution `16,16,304` in
+ranks 13, 15, and 17. Every embedding has nontrivial `2B,2C,4A` complement
+action modulo two, but all five frame classes fail the ternary gate because
+their discriminant groups have length seven. Neither artifact is a complete `24A1:D0001-0500`
 result: the remaining prefixes and non-positive-octad generator languages are
 open.
 
@@ -3128,6 +3194,107 @@ an exact obstruction for the displayed characteristic-five fibre chart, not
 a characteristic-zero nonexistence theorem.  The corresponding
 `mod7-pilot-v1.json` artifact covers only 100,000 coefficient/cross-ratio
 cases and is a bounded negative result.
+
+Replay the bounded arithmetic-support samples, in which the two `I7` fibres
+form one irreducible quadratic Frobenius orbit, with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0007_source_ansatz_modp.sage \
+  --prime 7 --support-configuration conjugate-i7 \
+  --max-a-samples-per-lambda 100000 --sample-stride 104729 \
+  --sample-offset 1 --examples 20 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0007-source-ansatz-conjugate-i7-mod7-sample-v1.json
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0007_source_ansatz_modp.sage \
+  --prime 11 --support-configuration conjugate-i7 \
+  --max-a-samples-per-lambda 100000 --sample-stride 104729 \
+  --sample-offset 17 --examples 20 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0007-source-ansatz-conjugate-i7-mod11-sample-v1.json
+```
+
+The prime-7 run checks four support orbits and 400,000 normalized `A`
+polynomials; 133 signed branches pass the descended Hermite equations and none
+has the exact prescribed fibre orders.  The prime-11 run checks six support
+orbits and 600,000 polynomials; its corresponding counts are 24 and zero.
+Neither sample produces a squarefree residual quartic.  These are bounded
+negative arithmetic-chart experiments, not exhaustive prime obstructions.
+The `A(0)=-3` normalization fixes only one local `I2` twist at each prime,
+while the `I4` and conjugate `I7` tangent characters are unrestricted.
+
+Build the reduced NS0034 nodal-Hermite system, replay the complete fixed
+`GF(7)` fibre slice, and exhaust its pole-zero section chart with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_lattice_foundry_ns0034_fibre_hermite_reduced_modp.sage \
+  --prime 7 --lambda-value 2 --A8 1 --hi0 3 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0007_source_ansatz_modp.sage \
+  --candidate ns0034 --prime 7 --fixed-lambda-value 2 --fixed-A8 1 \
+  --examples 100 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0034-source-ansatz-mod7-lambda2-A8-1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_lattice_foundry_ns0034_pole0_sections_modp.sage \
+  --input artifacts/generated-results/elkies-k3-lattice-foundry-ns0034-source-ansatz-mod7-lambda2-A8-1.json \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0034-pole0-sections-mod7-lambda2-A8-1.json \
+  --check
+```
+
+The fixed fibre slice exhausts `7^7=823543` normalized `A` polynomials.  Of
+1,210,104 locally eligible signed branches, 505 satisfy the Hermite equations
+and exactly one has the prescribed `I4+I8+I3+I5+4I1` orders with squarefree
+residual quartic.  Its complete `7^8=5764801` section chart contains eight
+polynomial sections but no `NS0034-S008` marked section.  This is an exact
+obstruction only for `lambda=2,A8=1` in the displayed characteristic-seven
+normalization.  The reduced 20-equation Hermite ideal is positive-dimensional
+before residual-order saturation and is not itself a source-family
+certificate.
+
+Replay both local twist classes of the equation-friendlier NS0043
+`A2+A6+A8/MW1` pole-zero marking on the complete `GF(5)` fibre census with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_lattice_foundry_ns0043_pole0_sections_modp.sage \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_lattice_foundry_ns0043_pole0_sections_modp.sage \
+  --quadratic-twist 2 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0043-pole0-sections-mod5-nonsquare-twist.json \
+  --check
+```
+
+The source has height four, zero component corrections, determinant 756, and
+four same-NS MW15 targets.  The square twist contains no polynomial section;
+the nonsquare twist contains 54, but every one meets a nonidentity component
+at one or more of the `I9,I7,I3` supports.  Together these are an exact
+two-twist obstruction for the displayed split `GF(5)` normalization, not a
+characteristic-zero nonexistence result.  The corresponding two `mod7` pilot
+artifacts exhaust the section charts only on the two stored bounded-sample
+fibre models.
+
+Replay the promoted NS0030 pole-zero source pilot attached to an MW16 target:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0030_source_ansatz_modp.sage \
+  --max-a-samples-per-support-pair 100000 --sample-stride 17 \
+  --examples 100 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0030-source-ansatz-mod5-pilot100k-v1.json \
+  --check
+```
+
+This scans 100,000 normalized `A` polynomials in each of the six ordered
+`GF(5)` support pairs for the profile `2I2+I3+2I7+3I1`.  It finds 346 signed
+Hermite-compatible branches and no exact squarefree residual cubic.  The
+600,000-row result is bounded; the remaining coefficient rows and the second
+local twist are not covered.
 
 For bounded-search provenance, replay or byte-check the exact `NS0024`
 rootful source found by the older Kneser scout and its certified degree-two

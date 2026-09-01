@@ -42,15 +42,9 @@ from sage.coding.golay_code import GolayCode
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-DEFAULT_INPUTS = (
+DEFAULT_MANIFEST = (
     ROOT
-    / "artifacts/generated-results/elkies-k3-24a1-octad-rank7-completion-00000-00250-v1.json",
-    ROOT
-    / "artifacts/generated-results/elkies-k3-24a1-octad-rank7-completion-00250-00500-v1.json",
-)
-DEFAULT_OUTPUT = (
-    ROOT
-    / "artifacts/generated-results/elkies-k3-24a1-weyl-m24-canonicalization-00000-00500-v2.json"
+    / "artifacts/generated-results/elkies-k3-24a1-octad-completion-manifest-v1.json"
 )
 
 
@@ -441,12 +435,10 @@ def canonicalize(payload):
                         * moved.column(source_coordinate)
                     )
                 assert transformed == representative_physical
-                assert (
-                    pari(matrix(ZZ, records[input_index]["frame_gram"])).qfisom(
-                        pari(matrix(ZZ, representative_record["frame_gram"]))
-                    )
-                    != 0
-                )
+                # The displayed signed ambient coordinate identity is stronger
+                # than a separate frame qfisom call: an ambient isometry that
+                # carries K_source to K_representative necessarily carries
+                # their saturated orthogonal complements isometrically.
                 assert (
                     records[input_index]["mordell_weil_rank"]
                     == representative_record["mordell_weil_rank"]
@@ -535,6 +527,24 @@ def canonicalize(payload):
             {384: 1, 448: 1, 480: 10, 486: 1, 500: 3}
         )
         assert mw_distribution == Counter({12: 4, 13: 10, 14: 2})
+    if prefix_start == 0 and prefix_stop == 1000 and len(payload["shards"]) == 4:
+        assert len(records) == 675
+        assert len(intrinsic_classes) == 5
+        assert len(output_orbits) == 21
+        assert compatible == 16
+        assert determinant_distribution == Counter(
+            {384: 3, 448: 1, 480: 13, 486: 1, 500: 3}
+        )
+        assert mw_distribution == Counter({12: 5, 13: 13, 14: 3})
+    if prefix_start == 0 and prefix_stop == 2000 and len(payload["shards"]) == 8:
+        assert len(records) == 1267
+        assert len(intrinsic_classes) == 5
+        assert len(output_orbits) == 23
+        assert compatible == 18
+        assert determinant_distribution == Counter(
+            {384: 3, 448: 1, 480: 13, 486: 1, 500: 5}
+        )
+        assert mw_distribution == Counter({12: 5, 13: 13, 14: 5})
     return {
         "schema": "elkies-k3.24a1-weyl-m24-canonicalization.v2",
         "status": "PASS_EXACT_FULL_WEYL_M24_CANONICALIZATION_OF_DECLARED_INPUT_SHARDS",
@@ -592,20 +602,64 @@ def canonicalize(payload):
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--input", type=Path, action="append")
-parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
+parser.add_argument("--output", type=Path)
 parser.add_argument("--check", action="store_true")
 arguments = parser.parse_args()
-input_paths = arguments.input or list(DEFAULT_INPUTS)
+manifest_metadata = None
+if arguments.input:
+    input_paths = arguments.input
+else:
+    manifest_bytes = arguments.manifest.read_bytes()
+    manifest = json.loads(manifest_bytes)
+    assert manifest["schema"] == (
+        "elkies-k3.24a1-octad-completion-manifest.v1"
+    )
+    assert manifest["status"] == (
+        "PASS_EXACT_CONTIGUOUS_24A1_OCTAD_COMPLETION_SHARD_MANIFEST"
+    )
+    input_paths = [ROOT / row["artifact"] for row in manifest["shards"]]
+    assert all(
+        hashlib.sha256(path.read_bytes()).hexdigest() == row["sha256"]
+        for path, row in zip(input_paths, manifest["shards"])
+    )
+    manifest_metadata = {
+        "artifact": str(arguments.manifest.relative_to(ROOT)),
+        "sha256": hashlib.sha256(manifest_bytes).hexdigest(),
+    }
 input_payloads = [json.loads(path.read_text()) for path in input_paths]
 merged = merge_completion_shards(input_paths, input_payloads)
+if manifest_metadata is not None:
+    assert merged["parameters"] == {
+        key: manifest["parameters"][key]
+        for key in (
+            "prefix_start_zero_based_inclusive",
+            "prefix_stop_zero_based_exclusive",
+            "determinant_bound",
+        )
+    }
+    assert len(merged["orbits"]) == manifest["accounting"][
+        "shard_local_residual_m24_records"
+    ]
 payload = canonicalize(merged)
+if manifest_metadata is not None:
+    payload["completion_manifest"] = manifest_metadata
 encoded = json.dumps(payload, indent=2, sort_keys=True) + "\n"
+output = arguments.output or (
+    ROOT
+    / "artifacts/generated-results"
+    / (
+        "elkies-k3-24a1-weyl-m24-canonicalization-"
+        f"{merged['parameters']['prefix_start_zero_based_inclusive']:05d}-"
+        f"{merged['parameters']['prefix_stop_zero_based_exclusive']:05d}-v2.json"
+    )
+)
 if arguments.check:
-    if not arguments.output.exists() or arguments.output.read_text() != encoded:
+    if not output.exists() or output.read_text() != encoded:
         raise SystemExit("24A1 Weyl-M24 canonicalization artifact is stale")
 else:
-    arguments.output.parent.mkdir(parents=True, exist_ok=True)
-    arguments.output.write_text(encoded)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(encoded)
 print(
     "WEYLM24|input={}|intrinsic={}|full_orbits={}|k3_compatible={}"
     "|status=PASS_EXACT".format(

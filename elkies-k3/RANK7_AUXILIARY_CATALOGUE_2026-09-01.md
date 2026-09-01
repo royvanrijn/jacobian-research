@@ -55,8 +55,8 @@ backends carry narrower statements:
 - `ROOTED-24A1` contains one exact Golay-octad design found by a bounded,
   nonexhaustive proposal search.
 
-The `24A1` backend now also has an exact canonical-prefix layer and a first
-rank-seven completion shard.  The M24 orbit counts of unordered Golay-octad
+The `24A1` backend now also has an exact canonical-prefix layer and a
+contiguous rank-seven completion frontier.  The M24 orbit counts of unordered Golay-octad
 subsets of sizes one through five are
 
 ```text
@@ -66,30 +66,30 @@ subsets of sizes one through five are
 At every size the independent orbit-stabilizer mass equals
 `binomial(759,k)`.  The size-three count `16` independently agrees with the
 published octad-triple classification of Kelsey--Rowley.  Completing prefix
-indices `0:500` in two contiguous shards by two octads, imposing
+indices `0:2000` in eight contiguous shards by two octads, imposing
 coordinate-union size at least 19, and saturating in the integral
-Construction-A model gives 291 shard-local residual-M24 records with primitive
+Construction-A model gives 1,267 shard-local residual-M24 records with primitive
 determinant at most 500.  Their determinant distribution is
 
 ```text
-384: 1, 448: 1, 480: 221, 486: 4, 500: 64,
+384: 5, 448: 1, 480: 809, 486: 8, 500: 444,
 ```
 
-and their MW-rank distribution is `MW12: 71, MW13: 195, MW14: 25`.  Exact
-ternary discriminant-form gates retain 285 of the 291 local records.  Eight
+and their MW-rank distribution is `MW12: 260, MW13: 970, MW14: 37`.  Exact
+ternary discriminant-form gates retain 1,253 of the 1,267 local records.  Forty
 retained spans have primitive-closure index two; they demonstrate why a raw
 determinant cutoff is invalid.
 
 The full Weyl-sign quotient is now exact for this declared input.  Using the
 24 doubled physical coordinate covectors, intrinsic auxiliary isometries, and
-exact M24 transporters across both shards, the 291 local records collapse to 16
+exact M24 transporters across all eight shards, the 1,267 local records collapse to 23
 `2^24 semidirect M24` embedding orbits.  Their determinant distribution is
-`384:1, 448:1, 480:10, 486:1, 500:3`, their MW-rank distribution is
-`MW12:4, MW13:10, MW14:2`, and 13 pass the ternary-genus gate.  Every member
+`384:3, 448:1, 480:13, 486:1, 500:5`, their MW-rank distribution is
+`MW12:5, MW13:13, MW14:5`, and 18 pass the ternary-genus gate.  Every member
 has an explicit row-isometry, coordinate-permutation, and coordinate-sign
 witness; every representative has an exact full stabilizer and orbit size.
 
-These records are not merged into the main surface catalogue yet: only 500
+These records are not merged into the main surface catalogue yet: only 2,000
 of 10,547 five-prefix orbits have been completed, and the generator language
 contains only positive octad vectors.  Moreover, the ternary output is a
 genus gate rather than a class enumeration of all possible transcendental
@@ -118,6 +118,30 @@ rank_GF2(g_M - I) > 0.
 
 Only then are fixed-point and orbit distributions on the rational subset of
 `M/2M` used to rank source searches.
+
+The first exact symmetry-first family is now closed.  The two `4A` elements
+are inverse and have a common primitive rank-eight fixed lattice `F` of
+determinant 4,096; in the computed chamber section all eight `Dih_4` elements
+fix `F` pointwise.  Every primitive corank-one `K` in `F` is therefore fixed
+pointwise by literal `2B`, `2C`, and `4A` elements.  The dual-lattice identity
+
+```text
+det(K) = det(F) * a H_F^(-1) a^t
+```
+
+makes the determinant-5,000 search finite and complete in this family.  It
+gives 336 primitive embeddings, three auxiliary isometry classes, and five
+frame classes.  Their MW-rank distribution is
+`MW13:16, MW15:16, MW17:304`; every requested outer class acts nontrivially on
+the complement modulo two, with `4A` moving nine dimensions.
+
+This entire attractive-looking family nevertheless fails the K3 gate.  Every
+auxiliary/frame discriminant group has length seven, while a rank-three
+transcendental lattice has discriminant length at most three.  Accordingly,
+none of the 42 determinant-2,048 or 50 determinant-4,096 even ternary genera
+matches.  This is an exact exclusion of the pointwise-`4A`-fixed corank-one
+family, not an exclusion of rank-seven auxiliaries with a nontrivial `4A`
+action on `K`; the latter is the next symmetry-first search space.
 
 The other 21 rooted backends are not yet enumerated. The separate Leech
 backend now has an exact ambient Gram matrix and two certified `Co0`
@@ -175,6 +199,60 @@ discriminant form remain different surface records.
   --prefix-start 250 --prefix-stop 500 --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 500 --prefix-stop 750
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 500 --prefix-stop 750 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 750 --prefix-stop 1000
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 750 --prefix-stop 1000 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1000 --prefix-stop 1250
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1000 --prefix-stop 1250 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1250 --prefix-stop 1500
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1250 --prefix-stop 1500 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1500 --prefix-stop 1750
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1500 --prefix-stop 1750 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1750 --prefix-stop 2000
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 1750 --prefix-stop 2000 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_24a1_octad_completion_manifest.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_24a1_octad_completion_manifest.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/canonicalize_24a1_weyl_m24_shard.sage
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -185,6 +263,12 @@ discriminant form remain different surface records.
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_cross_niemeier_mod2_priority.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_2a7_2d5_4a_fixed_rank7.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_2a7_2d5_4a_fixed_rank7.sage --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_leech_co0_backend.sage
@@ -213,10 +297,10 @@ enumerator required to emit:
 5. a shard-completeness certificate consumed by this catalogue.
 
 The natural first rooted target remains `24A1:D0001-0500`.  Full Weyl-sign
-canonicalization is closed for the declared `0:500` input; the next gates are
-sharded completion of prefix indices `500:10547` and enlargement beyond the
+canonicalization is closed for the declared `0:2000` input; the next gates are
+sharded completion of prefix indices `2000:10547` and enlargement beyond the
 positive-octad generator language.  Neither may be replaced by the present
-16-orbit partial count.
+23-orbit partial count.
 The natural Leech target is a minimal-vector-generated rank-seven shard with a
 declared reduced-basis bound; it must remain separate because rootlessness is
 automatic there and the orbit group is `Co0`.
