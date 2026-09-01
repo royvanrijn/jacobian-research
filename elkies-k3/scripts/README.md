@@ -378,10 +378,30 @@ requires reduction to every transported model at
 sage -python elkies-k3/scripts/reconstruct_q80_third_q12_long_jacobian_p19_adic.sage
 ```
 
-This produces only a candidate until exact maps give a literal
-characteristic-zero replay in the 63-term pencil.  Coefficientwise rational
-reconstruction remains inadmissible: its successes still lie at the
-square-root modulus boundary.
+The preferred route now reconstructs invariants before the long model and
+maps.  The degree-`24/24` `j`-map is composed symbolically modulo `19^1024`
+from the five small-support long coefficients, so the existing 17 training
+samples plus three held-outs suffice:
+
+```bash
+sage -python elkies-k3/scripts/reconstruct_q80_third_q12_j_map_p19_adic.sage
+```
+
+`reconstruct_q80_third_q12_j_map_p19_adic.sage` exploits
+`numerator = scalar * degree8_polynomial^3` and the denominator multiplicity
+shape `I6+I4+3I2+8I1`, and uses three p-adic held-outs.  Its current candidate
+consumes all six aligned auxiliary primes in the CRT modulus; the two
+structured LLL vectors land only one bit below their random boundaries.  A
+new eighth aligned prime or literal exact-pencil replay is therefore required
+for promotion.  The output is a reconstruction candidate, not a
+characteristic-zero Jacobian theorem.  The active order is
+`j -> (c4^3,Delta) -> minimal Jacobian -> maps`; the common invariant scaling
+must be separated from base `PGL2` gauge and Weierstrass scaling.
+
+The long-equation worker remains useful after the invariant gate.  It too
+produces only a candidate until literal characteristic-zero replay in the
+63-term pencil.  Coefficientwise rational reconstruction remains
+inadmissible: its successes still lie at the square-root modulus boundary.
 
 The p=61 compiler is now complete.  The generic mapped-fibre adapter replaces
 Sage's characteristic-`p` power-map normalization with Singular's
@@ -522,18 +542,25 @@ The current proof boundary and replay commands are in
   coordinates remain algebraic, so a closed point may place the entire MW3
   marking over `GF(p^d)`.  The forced Q3 section, exact-depth saturations,
   identity-component open charts, generic surface hyperplanes, and MW3-only
-  diagnostic mode are explicit.
+  diagnostic mode are explicit.  `--explicit-formal-centers` retains the nine
+  `I5/I4` center jets with sparse exact recurrences and avoids recursive
+  inverse-power expansion; bounded msolve F4 batches are the reproducible
+  low-memory route for the resulting joint system.
 - `extract_lattice_foundry_ns0024_joint_gb_point.sage` decodes a
   zero-dimensional joint basis over an arbitrary irreducible residue-field
   modulus, scans the Frobenius-field points, and emits only after replaying all
-  four equations, fibre orders, absolute profiles, and the full Gram.
+  four equations, fibre orders, absolute profiles, and the full Gram.  Its
+  arithmetic-realizability audit separates the surface, four-section, and
+  auxiliary orientation orbits; on each surface-fixed Frobenius power it
+  certifies the integral action and fixed rank in the marked MW4 lattice.
 - `extract_lattice_foundry_ns0024_joint_rur_point.sage` is the primary
   arbitrary-degree path.  It requires the exporter's fixed full-coordinate
   RUR anchor, a squarefree degree-equals-quotient eliminant, exact substitution
   in the original joint system, and factor-local Frobenius decoding; each
-  factor is then passed through the independent joint-GB source verifier.  The
-  first exact marking is sent through the adapter and edge-1 compiler
-  automatically; `--no-edge1` exists only for extractor diagnostics.
+  factor is then passed through the independent joint-GB source verifier and
+  retained in a compact closed-point/Galois audit.  The first exact marking is
+  sent through the adapter and edge-1 compiler automatically; `--no-edge1`
+  exists only for extractor diagnostics.
 - `adapt_lattice_foundry_ns0024_mw4_point_for_edge1.sage` is the lossless
   bridge from the residue-algebra recovery format. It accepts either a compact
   P4 point plus an indexed prime-field MW3 seed, or a joint point embedding the

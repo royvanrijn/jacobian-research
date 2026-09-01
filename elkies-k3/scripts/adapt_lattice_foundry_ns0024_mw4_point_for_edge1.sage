@@ -323,10 +323,12 @@ payload = {
         ),
         "not_proved": (
             "This isolated finite-field point does not prove a one-dimensional modular component, "
-            "a characteristic-zero lift, or Picard rank 19."
+            "a characteristic-zero lift, Picard rank 19, NS=NS_Q, or generic MW rank four over Q(t)."
         ),
     },
 }
+if "arithmetic_realizability" in point:
+    payload["arithmetic_realizability"] = point["arithmetic_realizability"]
 if seed_path is not None:
     payload["inputs"]["paths"].insert(1, display_path(seed_path))
     payload["inputs"]["mw3_seed_index"] = seed_index

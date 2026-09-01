@@ -27,6 +27,44 @@ search is cheaper:
 The exact compact ledger is
 `artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-modp-census.json`.
 
+## Arithmetic realizability is an independent open gate
+
+The foundry currently proves a geometric K3/Neron--Severi realization and a
+geometric MW4-to-MW17 route.  It does **not** prove
+
+```text
+NS(X)=NS_Q(X),
+rank MW(Q(t))=4 at the source,
+or rank MW(Q(t))=17 at the rootless target.
+```
+
+This distinction is essential for the rational-record application.  A
+geometric Mordell--Weil basis may carry a nontrivial Galois action and need
+not contribute its full rank over `QQ(t)`.
+
+Every joint closed-point extraction now carries an early arithmetic gate.
+The verifier computes three Frobenius orbit sizes separately: the unmarked
+surface coefficients `(A,B)`, the four sections, and the full resolved marking
+including the chosen `I7/I5` orientation roots.  Only a Frobenius power fixing
+`(A,B)` acts on the MW lattice of one surface.  When such a power exists, the
+verifier expresses the four conjugate sections in the certified MW4 basis,
+checks the resulting integral matrix against the exact height Gram of
+determinant `95/14`, and records `rank MW4^(Frob=1)`.  Any extra field needed
+only by the orientation roots is recorded without lowering the section rank.
+
+If the unmarked surface itself has orbit size greater than one, the factor is
+recorded as inconclusive for rational descent: it is a closed orbit of
+conjugate surfaces, not a nontrivial Frobenius action on one prime-field
+surface.  If the surface is prime-field fixed but the fixed MW rank is below
+four, that is warning evidence against full rational descent of that
+realization.  Repeated full fixed rank across good primes is positive evidence
+only; neither pattern proves `NS=NS_Q` without a common characteristic-zero
+producer and a descent argument.
+
+The same gate is ultimately required at the rootless endpoint with fixed rank
+seventeen.  Until both source and target arithmetic gates close, NS0024 is not
+classified as a high-rank family over `QQ(t)`.
+
 ## Improved exact basis
 
 The old objective maximized labelled-node incidences and then minimized total
@@ -100,6 +138,16 @@ too restrictive for the next search.  The replacement resolved-depth13 ideal
 solves the surface, Q1, Q2, forced Q3, and Q4 jointly over `GF(p)`.  A closed
 point of degree `d` therefore places all four sections over one residue field
 `GF(p^d)`.
+
+The exporter also supports `--explicit-formal-centers`.  This retains the five
+`I5` and four `I4` formal-center jet coefficients as auxiliary variables with
+their exact quadratic recurrences.  It is equivalent on the existing
+`r1 != 0`, `ri != 0` chart but avoids recursively expanding high powers of
+`r1_inverse` and `ri_inverse`.  On the pinned one-hyperplane `p=11` system it
+changes the export from 46 variables, 56 equations and about 1.15 MB to 55
+variables, 65 equations and about 86 KB; the largest exact-order saturation
+row drops from about 295 KB to under 2 KB.  These are implementation-size
+measurements, not mathematical evidence for a point.
 
 The intended dimension count is two after MW3 and one after MW4.  Hence the
 first exact-point attempt uses one generic affine hyperplane in the eight
@@ -220,12 +268,26 @@ sage -python elkies-k3/scripts/solve_lattice_foundry_ns0024_p4_from_mw3_modp.sag
 sage -python elkies-k3/scripts/extract_lattice_foundry_ns0024_p4_gb_solution.sage --help
 sage -python elkies-k3/scripts/recover_lattice_foundry_ns0024_mw4_family_resolved_modp.sage \
   --prime 11 --surface-hyperplane 1,2,3,4,5,6,7,8,9 \
-  --fixed-rur-anchor \
+  --fixed-rur-anchor --explicit-formal-centers \
   --export-msolve /tmp/ns0024-joint-p11.ms
+msolve -t 32 -v 2 -g 1 -m 4096 \
+  -f /tmp/ns0024-joint-p11.ms -o /tmp/ns0024-joint-p11.rur
 sage -python elkies-k3/scripts/extract_lattice_foundry_ns0024_joint_gb_point.sage --help
 sage -python elkies-k3/scripts/extract_lattice_foundry_ns0024_joint_rur_point.sage --help
 python3 elkies-k3/scripts/summarize_lattice_foundry_ns0024_modp_census.py --help
 ```
+
+Once certified joint-point artifacts exist at several primes, aggregate their
+Frobenius gates with repeated
+`--joint-point LABEL artifacts/generated-results/<point>.json`.  The summary
+reports the prime-field fixed-rank histogram and keeps its evidentiary boundary
+separate from characteristic-zero descent.
+
+The RUR extractor audits every irreducible eliminant factor as a closed point,
+including rejected exact-marking factors and the arithmetic-realizability
+summary of every accepted factor.  It selects the first accepted factor only
+for the existing single-point edge-1 handoff; that selection does not truncate
+the factor census.
 
 The long census commands, directory hashes, exact counts, and proof boundary
 are recorded in the compact generated ledger cited above.

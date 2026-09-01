@@ -18,6 +18,14 @@ parser.add_argument(
     metavar=("LABEL", "DIRECTORY", "LOG_GLOB"),
     default=[],
 )
+parser.add_argument(
+    "--joint-point",
+    action="append",
+    nargs=2,
+    metavar=("LABEL", "POINT_JSON"),
+    default=[],
+    help="aggregate the arithmetic-realizability audit from a certified joint point",
+)
 parser.add_argument("--output", type=Path, required=True)
 args = parser.parse_args()
 
@@ -92,6 +100,76 @@ for label, raw_directory, pattern in args.p4_census:
     }
 
 
+joint_galois_rows = []
+for label, raw_path in args.joint_point:
+    path = Path(raw_path).resolve()
+    point = json.loads(path.read_text())
+    if point.get("schema") != "elkies-k3.lattice-foundry-ns0024-mw4-point-modp.v1":
+        raise ValueError(f"joint point has the wrong schema: {path}")
+    audit = point.get("arithmetic_realizability")
+    if not isinstance(audit, dict):
+        raise ValueError(f"joint point has no arithmetic-realizability audit: {path}")
+    factor_audit = point.get("rur", {}).get("factor_audit")
+    accepted_factors = (
+        [
+            row
+            for row in factor_audit
+            if row.get("outcome") == "PASS_EXACT_RESOLVED_MW4_MARKING"
+        ]
+        if isinstance(factor_audit, list)
+        else []
+    )
+    sources = accepted_factors or [audit]
+    artifact_sha256 = hashlib.sha256(path.read_bytes()).hexdigest()
+    for source in sources:
+        factor_index = source.get("factor_index")
+        joint_galois_rows.append(
+            {
+                "label": (
+                    f"{label}:factor{factor_index}" if factor_index is not None else label
+                ),
+                "path": str(path),
+                "sha256": artifact_sha256,
+                "factor_index": factor_index,
+                "prime": int(point["prime"]),
+                "residue_degree": int(
+                    source["residue_degree"]
+                    if "residue_degree" in source
+                    else source["degree"]
+                ),
+                "surface_frobenius_orbit_size": int(
+                    source["surface_frobenius_orbit_size"]
+                ),
+                "section_marking_frobenius_orbit_size": int(
+                    source["section_marking_frobenius_orbit_size"]
+                ),
+                "resolved_oriented_marking_frobenius_orbit_size": int(
+                    source["resolved_oriented_marking_frobenius_orbit_size"]
+                ),
+                "relative_section_degree_over_surface_field": int(
+                    source["relative_section_degree_over_surface_field"]
+                ),
+                "relative_orientation_degree_over_section_field": int(
+                    source["relative_orientation_degree_over_section_field"]
+                ),
+                "action_closes_on_marked_mw4": bool(
+                    source["action_closes_on_marked_mw4"]
+                ),
+                "status": (
+                    source["status"]
+                    if "status" in source
+                    else source["arithmetic_realizability_status"]
+                ),
+                "relative_fixed_marked_mw4_rank": source.get(
+                    "relative_fixed_marked_mw4_rank"
+                ),
+                "prime_field_fixed_marked_mw4_rank": source.get(
+                    "prime_field_fixed_marked_mw4_rank"
+                ),
+            }
+        )
+
+
 payload = {
     "schema": "elkies-k3.lattice-foundry-ns0024-modp-census.v2",
     "status": "PASS_EXACT_BOUNDED_MODULAR_CENSUS_NO_TWO_PRIME_FAMILY",
@@ -110,6 +188,40 @@ payload = {
         "q4/orbit1 edge child, and characteristic-zero reconstruction remain open."
     ),
 }
+if joint_galois_rows:
+    fixed_rank_histogram = {}
+    for row in joint_galois_rows:
+        rank = row["prime_field_fixed_marked_mw4_rank"]
+        if rank is not None:
+            fixed_rank_histogram[str(rank)] = fixed_rank_histogram.get(str(rank), 0) + 1
+    payload["joint_closed_point_galois_gates"] = {
+        "points": joint_galois_rows,
+        "prime_field_surface_points": sum(
+            row["surface_frobenius_orbit_size"] == 1 for row in joint_galois_rows
+        ),
+        "prime_field_fixed_marked_mw4_rank_histogram": fixed_rank_histogram,
+        "full_mw4_fixed_primes": sorted(
+            {
+                row["prime"]
+                for row in joint_galois_rows
+                if row["prime_field_fixed_marked_mw4_rank"] == 4
+            }
+        ),
+        "warning_primes": sorted(
+            {
+                row["prime"]
+                for row in joint_galois_rows
+                if row["prime_field_fixed_marked_mw4_rank"] is not None
+                and row["prime_field_fixed_marked_mw4_rank"] < 4
+            }
+        ),
+        "proof_boundary": (
+            "These are exact Frobenius actions on certified finite-field MW4 fibres. "
+            "Repeated full fixed rank is positive arithmetic-realizability evidence, "
+            "while smaller fixed rank is warning evidence. Neither proves or disproves "
+            "NS=NS_Q for a characteristic-zero family without a common producer and descent."
+        ),
+    }
 args.output.resolve().parent.mkdir(parents=True, exist_ok=True)
 args.output.resolve().write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
 print(

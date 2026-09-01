@@ -560,3 +560,42 @@ projective LLL per long coefficient, and independent reduction to all seven
 aligned finite-prime models.  Literal characteristic-zero substitution into
 the exact pencil remains mandatory before promoting the result from a
 candidate equation to an exact Jacobian.
+
+### Invariant-first reconstruction order
+
+The immediate reconstruction gate is now the fixed-gauge degree-`24/24`
+`j`-map, not the 3,484 coefficients of the two birational maps.  The cheaper
+route needs only the existing 17 support-determining long-coefficient samples
+and three held-outs: it interpolates the five small rational functions modulo
+`19^1024`, then composes `c4`, `Delta`, and `j` symbolically.  Its numerator is
+a scalar times the cube of a monic degree-8 polynomial, while the denominator
+has squarefree degrees `8,3,1,1` at multiplicities `1,2,4,6`.  Reconstructing
+those intrinsic blocks replaces an unstructured dimension-99 lattice by
+dimension-17 and dimension-29 projective problems.
+
+The resulting order is
+
+```text
+j -> (c4^3, Delta) -> minimal Jacobian -> birational maps.
+```
+
+The monic normalization of the `j` denominator pins the rational-function
+representative but is not by itself a Weierstrass scaling.  The subsequent
+`(c4^3,Delta)` step must therefore record its common scaling separately.
+Neither modular reconstruction nor the exact numerator-cube and denominator-
+factor identities alone prove literal characteristic-zero agreement with the
+63-term pencil.
+
+The sample and reconstruction commands are
+
+```bash
+sage -python elkies-k3/scripts/reconstruct_q80_third_q12_j_map_p19_adic.sage
+```
+
+The resulting candidate uses `19^1024` together with all six aligned
+auxiliary primes `61,67,83,89,103,131`.  Its dimension-17 and dimension-29
+primitive vectors have respectively 4,130 and 4,237 bits against random
+boundaries 4,131 and 4,238.  All auxiliary primes were therefore consumed by
+CRT; a new eighth aligned good prime is mandatory before promotion.  The
+candidate artifact remains explicitly non-theorem status until that replay
+or literal exact-pencil substitution succeeds.

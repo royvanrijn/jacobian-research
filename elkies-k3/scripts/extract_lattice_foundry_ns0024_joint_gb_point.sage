@@ -16,9 +16,24 @@ hard-coded to two.
 import argparse
 import json
 from collections import Counter
+from itertools import product
 from pathlib import Path
 
-from sage.all import EllipticCurve, GF, PolynomialRing, ZZ, binomial, sage_eval
+from sage.all import (
+    EllipticCurve,
+    GF,
+    PolynomialRing,
+    QQ,
+    ZZ,
+    binomial,
+    ceil,
+    divisors,
+    identity_matrix,
+    matrix,
+    sage_eval,
+    sqrt,
+    vector,
+)
 
 
 RESOLVED_PROFILES = ((6, 0, 0), (2, 1, 1), (4, 2, 0), (6, 4, 3))
@@ -28,6 +43,35 @@ RESOLVED_GRAM = (
     (1, 0, -2, 2),
     (1, 2, 2, -2),
 )
+SOURCE_PO = (0, 0, 0, 1)
+FIBRE_ORDERS = (7, 5, 4)
+
+
+def fibre_correction(left, right, order):
+    return QQ(min(left, right) * (order - max(left, right))) / order
+
+
+SOURCE_HEIGHT_GRAM = matrix(
+    QQ,
+    4,
+    4,
+    lambda left, right: (
+        2
+        + SOURCE_PO[left]
+        + SOURCE_PO[right]
+        - RESOLVED_GRAM[left][right]
+        - sum(
+            fibre_correction(
+                RESOLVED_PROFILES[left][place],
+                RESOLVED_PROFILES[right][place],
+                FIBRE_ORDERS[place],
+            )
+            for place in range(3)
+        )
+    ),
+)
+if SOURCE_HEIGHT_GRAM.det() != QQ(95) / 14:
+    raise ArithmeticError("resolved source height Gram no longer has regulator 95/14")
 
 
 parser = argparse.ArgumentParser(description=__doc__)
@@ -129,6 +173,159 @@ def encoded(value):
         int(coefficients[index]) if index < len(coefficients) else 0
         for index in range(degree)
     ]
+
+
+def frobenius_polynomial(polynomial, power):
+    return function_ring(
+        [extension(coefficient).frobenius(power) for coefficient in polynomial]
+    )
+
+
+def frobenius_function(value, power):
+    return function_field(
+        frobenius_polynomial(value.numerator(), power)
+        / frobenius_polynomial(value.denominator(), power)
+    )
+
+
+def frobenius_point(point, power, curve):
+    if point.is_zero():
+        return point
+    return curve(
+        frobenius_function(point[0], power),
+        frobenius_function(point[1], power),
+    )
+
+
+def polynomial_tuple_fixed(polynomials, power):
+    return all(frobenius_polynomial(polynomial, power) == polynomial for polynomial in polynomials)
+
+
+def point_tuple_fixed(points, power, curve):
+    return all(frobenius_point(point, power, curve) == point for point in points)
+
+
+def first_orbit_size(predicate):
+    for orbit_size in divisors(degree):
+        if predicate(int(orbit_size)):
+            return int(orbit_size)
+    raise ArithmeticError("finite-field tuple did not close under full Frobenius orbit")
+
+
+def vectors_of_norm(target_norm):
+    inverse = SOURCE_HEIGHT_GRAM.inverse()
+    bounds = [
+        int(ceil(sqrt(target_norm * inverse[index, index])))
+        for index in range(4)
+    ]
+    for entries in product(*(range(-bound, bound + 1) for bound in bounds)):
+        candidate = vector(ZZ, entries)
+        if candidate * SOURCE_HEIGHT_GRAM * candidate == target_norm:
+            yield candidate
+
+
+def frobenius_mw4_audit(A, B, r1, ri, points, curve):
+    """Separate the surface orbit from the relative action on marked MW4."""
+    surface_orbit = first_orbit_size(
+        lambda power: polynomial_tuple_fixed((A, B), power)
+    )
+    section_marking_orbit = first_orbit_size(
+        lambda power: (
+            polynomial_tuple_fixed((A, B), power)
+            and point_tuple_fixed(points, power, curve)
+        )
+    )
+    resolved_marking_orbit = first_orbit_size(
+        lambda power: (
+            polynomial_tuple_fixed((A, B), power)
+            and extension(r1).frobenius(power) == r1
+            and extension(ri).frobenius(power) == ri
+            and point_tuple_fixed(points, power, curve)
+        )
+    )
+    if section_marking_orbit % surface_orbit:
+        raise ArithmeticError("section orbit is not divisible by the surface orbit")
+    if resolved_marking_orbit % section_marking_orbit:
+        raise ArithmeticError("resolved marking orbit is not divisible by the section orbit")
+
+    relative_order = section_marking_orbit // surface_orbit
+    columns = []
+    failures = []
+    for point_index, point in enumerate(points):
+        conjugate = frobenius_point(point, surface_orbit, curve)
+        matches = []
+        for coordinates in vectors_of_norm(SOURCE_HEIGHT_GRAM[point_index, point_index]):
+            candidate = sum(
+                (ZZ(coordinates[index]) * points[index] for index in range(4)),
+                curve(0),
+            )
+            if candidate == conjugate:
+                matches.append(coordinates)
+        if len(matches) != 1:
+            failures.append(
+                {
+                    "section": point_index + 1,
+                    "matching_lattice_vectors": [list(map(int, item)) for item in matches],
+                }
+            )
+        else:
+            columns.append(matches[0])
+
+    audit = {
+        "prime": int(prime),
+        "residue_degree": int(degree),
+        "surface_frobenius_orbit_size": surface_orbit,
+        "section_marking_frobenius_orbit_size": section_marking_orbit,
+        "resolved_oriented_marking_frobenius_orbit_size": resolved_marking_orbit,
+        "relative_section_degree_over_surface_field": relative_order,
+        "relative_orientation_degree_over_section_field": (
+            resolved_marking_orbit // section_marking_orbit
+        ),
+        "source_height_gram": [list(map(str, row)) for row in SOURCE_HEIGHT_GRAM.rows()],
+        "source_height_gram_determinant": str(SOURCE_HEIGHT_GRAM.det()),
+        "action_closes_on_marked_mw4": not failures,
+        "action_failures": failures,
+        "interpretation_boundary": (
+            "Only Frobenius powers fixing the unmarked surface define an action on this "
+            "MW4 fibre. A surface orbit of size greater than one is inconclusive for "
+            "descent of a characteristic-zero family over Q. Repeated good-prime fixed-rank "
+            "data are an arithmetic-realizability gate, not a proof that NS=NS_Q."
+        ),
+    }
+    if failures:
+        audit["status"] = "WARN_RELATIVE_FROBENIUS_DOES_NOT_CLOSE_ON_MARKED_MW4"
+        return audit
+
+    action = matrix(ZZ, 4, 4)
+    for column, coordinates in enumerate(columns):
+        action.set_column(column, coordinates)
+    identity = identity_matrix(ZZ, 4)
+    isometry = action.transpose() * SOURCE_HEIGHT_GRAM * action == SOURCE_HEIGHT_GRAM
+    order_check = action**relative_order == identity
+    fixed_rank = 4 - (action - identity).rank()
+    audit.update(
+        {
+            "relative_frobenius_action_columns": [
+                list(map(int, action.column(index))) for index in range(4)
+            ],
+            "relative_frobenius_action_determinant": int(action.det()),
+            "height_isometry": bool(isometry),
+            "relative_order_check": bool(order_check),
+            "relative_fixed_marked_mw4_rank": int(fixed_rank),
+            "prime_field_fixed_marked_mw4_rank": (
+                int(fixed_rank) if surface_orbit == 1 else None
+            ),
+        }
+    )
+    if not isometry or not order_check or abs(action.det()) != 1:
+        audit["status"] = "FAIL_INVALID_RELATIVE_FROBENIUS_ACTION"
+    elif surface_orbit != 1:
+        audit["status"] = "INCONCLUSIVE_SURFACE_NOT_FIXED_OVER_PRIME_FIELD"
+    elif fixed_rank == 4:
+        audit["status"] = "PASS_FULL_MW4_FIXED_AT_THIS_REDUCTION"
+    else:
+        audit["status"] = "WARN_PRIME_FIELD_FIXED_MW_RANK_LT4"
+    return audit
 
 
 accepted = []
@@ -284,7 +481,10 @@ for solution in solutions:
     if gram != RESOLVED_GRAM:
         failure_counts["gram"] += 1
         continue
-    accepted.append((A, B, r1, ri, X1, Y1, X2, Y2, X3, Y3, X4, Y4, h))
+    galois_audit = frobenius_mw4_audit(A, B, r1, ri, points, curve)
+    accepted.append(
+        (A, B, r1, ri, X1, Y1, X2, Y2, X3, Y3, X4, Y4, h, galois_audit)
+    )
 
 print(
     "NS0024JOINTMARKING|accepted={}|failures={}".format(
@@ -295,7 +495,7 @@ print(
 if not accepted:
     raise SystemExit("no decoded joint point has the exact resolved MW4 marking")
 
-A, B, r1, ri, X1, Y1, X2, Y2, X3, Y3, X4, Y4, h = accepted[0]
+A, B, r1, ri, X1, Y1, X2, Y2, X3, Y3, X4, Y4, h, galois_audit = accepted[0]
 payload = {
     "schema": "elkies-k3.lattice-foundry-ns0024-mw4-point-modp.v1",
     "status": "PASS_EXACT_MW4_MARKED_POINT_OVER_FINITE_FIELD",
@@ -328,13 +528,15 @@ payload = {
     },
     "component_profiles_I7_I5_I4": [list(row) for row in RESOLVED_PROFILES],
     "section_intersection_gram": [list(row) for row in RESOLVED_GRAM],
+    "arithmetic_realizability": galois_audit,
     "residue_algebra_dimension": int(quotient_dimension),
     "decoded_solutions": len(solutions),
     "exact_marking_solutions": len(accepted),
     "inputs": {"system": str(system_path), "groebner_basis": str(gb_path)},
     "proof_boundary": (
         "This is an exact isolated finite-field marked point. It does not prove "
-        "a positive-dimensional marked family or a characteristic-zero lift."
+        "a positive-dimensional marked family, a characteristic-zero lift, NS=NS_Q, "
+        "or generic Mordell-Weil rank 4 (and hence not rank 17) over Q(t)."
     ),
 }
 if degree > 1:

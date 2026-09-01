@@ -33,6 +33,23 @@ This is success level A at the lattice/arithmetic/route layer. It is not yet
 an equation: no effective equation-side zero, resolved Riemann--Roch pencil,
 or characteristic-zero Weierstrass model is claimed.
 
+It is also not yet an arithmetic high-rank-family result.  The foundry proves
+the geometric NS and MW lattices, but not `NS(X)=NS_Q(X)`, a source MW4 basis
+over `QQ(t)`, or a rootless MW17 basis over `QQ(t)`.  The foundry score now
+therefore has an additional independent coordinate:
+
+```text
+arithmetic realizability = (
+  source prime-field Frobenius-fixed MW rank,
+  target prime-field Frobenius-fixed MW rank,
+  characteristic-zero descent status
+).
+```
+
+For NS0024 all three entries are currently unproved or unmeasured.  A
+geometrically simple route cannot outrank a slightly more expensive route with
+certified trivial Galois action merely on equation cost.
+
 ## Exact arithmetic class
 
 The new surface class has
@@ -167,6 +184,19 @@ modular MW4 family or marked point can therefore be sent directly through the
 resolved RR, quartic, and `A1+A2+A4+D5` child gates.  This is compiler
 readiness, not an equation promotion; see
 [`NS0024_EDGE1_COMPILER_PREPARATION_2026-09-01.md`](NS0024_EDGE1_COMPILER_PREPARATION_2026-09-01.md).
+
+The joint-point verifier now separates the Frobenius orbits of the unmarked
+surface, the four sections, and the auxiliary resolved-fibre orientation.
+Whenever a Frobenius power fixes the surface, it computes the exact integral
+action on the MW4 height lattice and its fixed rank.  Prime-field surfaces with
+fixed rank below four are warning evidence; surface orbits of degree greater
+than one are inconclusive rather than being misclassified as section Galois
+action.  A larger field needed only for the chosen `I7/I5` orientation is
+reported separately and does not lower the section fixed rank.
+Cross-prime summaries are supported by the modular census tool.  This is an
+early rejection and ranking gate, not a proof of `NS=NS_Q`; the analogous
+fixed-rank-seventeen gate remains required after a rootless equation is
+available.
 
 ## Positive controls and search boundary
 

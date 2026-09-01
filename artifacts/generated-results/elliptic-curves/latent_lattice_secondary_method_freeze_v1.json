@@ -1,0 +1,210 @@
+{
+  "algorithm": {
+    "cloud_protocol": {
+      "adaptive_bound_rule": "choose the first bound with at least 1800 rays; reject the fibre if none occurs before bound 80 or if enumeration reaches 100000 rays",
+      "canonical_height_digits": 80,
+      "height_candidate_bounds": [
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58,
+        60,
+        62,
+        64,
+        66,
+        68,
+        70,
+        72,
+        74,
+        76,
+        78,
+        80
+      ],
+      "persistence_cutoffs_by_height_order": [
+        "3/4",
+        "7/8",
+        "1"
+      ],
+      "population": "full displayed independent subgroup; primitive unoriented short rays"
+    },
+    "component_protocol": {
+      "adaptive_parent_proposal_fraction": "3/4",
+      "channel_weights": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "components_retained_per_parent": 8,
+      "dense_hyperplane_samples_per_parent": 400,
+      "distance_normalization": "empirical lower-is-better percentile separately for every fibre pair/channel",
+      "exact_rational_space_deduplication": true,
+      "exact_saturation_after_proposal_or_merge": true,
+      "global_replay_development_fraction": "3/4",
+      "maximum_source_height_angle_profile_distance": "0.029999999999999999",
+      "parent_pool_size": 16,
+      "post_prune_objective": "maximize exact held-out replayed rays per total candidate rank",
+      "random_seed": 20260901,
+      "structural_channels": [
+        "abstract relation/height component fingerprint",
+        "primitive Hermite signature after exact saturation",
+        "development finite-code signature"
+      ],
+      "structural_pruning_quantile": "0.10000000000000001"
+    },
+    "dimension_protocol": {
+      "beam_subspace_scan": {
+        "beam_width": 8,
+        "branch_width": 80,
+        "pool": 300,
+        "seed_rule": "10000 + ICARM record number"
+      },
+      "candidate_dimensions": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "rank17_assumed": false,
+      "score": "for k, take the minimum integrality-LLR over k-1,k,k+1 at every persistence cutoff; maximize this cross-cutoff bottleneck, then the k score, then prefer smaller k"
+    },
+    "finite_protocol": {
+      "block_rule": "for each relation prime, first three usable one-dimensional quotient blocks are development and next three are validation; reduction-prime identities and quotient bases are forgotten in cross-fibre signatures",
+      "coordinate_modular_rank_prunes": [
+        2,
+        3
+      ],
+      "good_reduction_prime_bound": 251,
+      "primitive_embedding_required": true,
+      "relation_primes": [
+        2,
+        3
+      ],
+      "validation_blocks_used_in_selection": false
+    },
+    "forbidden_under_tag": [
+      "displayed-label sign/permutation search",
+      "unrestricted GL(k,Z)",
+      "forcing k=17",
+      "R17/Q80 provenance inference from shells",
+      "equation or first-jet interpolation",
+      "changing a parameter after inspecting any target outcome"
+    ]
+  },
+  "algorithm_fields_changed": [],
+  "algorithm_tag": "LATENT-LATTICE-E29-398-400-FROZEN-2026-09-01-v1",
+  "cloud_protocol": {
+    "adaptive_bound_rule": "choose the first bound with at least 1800 rays; reject the fibre if none occurs before bound 80 or if enumeration reaches 100000 rays",
+    "canonical_height_digits": 80,
+    "height_candidate_bounds": [
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80
+    ],
+    "persistence_cutoffs_by_height_order": [
+      "3/4",
+      "7/8",
+      "1"
+    ],
+    "population": "full displayed independent subgroup; primitive unoriented short rays"
+  },
+  "created_date": "2026-09-01",
+  "dimension_acceptance": "one frozen dimension must recur in all four fibres",
+  "dimension_protocol": {
+    "beam_subspace_scan": {
+      "beam_width": 8,
+      "branch_width": 80,
+      "pool": 300,
+      "seed_rule": "10000 + ICARM record number"
+    },
+    "candidate_dimensions": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "rank17_assumed": false,
+    "score": "for k, take the minimum integrality-LLR over k-1,k,k+1 at every persistence cutoff; maximize this cross-cutoff bottleneck, then the k score, then prefer smaller k"
+  },
+  "hold_out_protocol": "all four choices of three training fibres and one untouched fibre",
+  "inherits_algorithm_tag": "LATENT-LATTICE-WGXLI-FROZEN-2026-09-01-v1",
+  "inherits_manifest_sha256": "ef6f8b7be7a14095efa7529fb795d237e06465ba1cec023dcb4845287609c9f4",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/latent_lattice_target_method_freeze_v1.json": "ef6f8b7be7a14095efa7529fb795d237e06465ba1cec023dcb4845287609c9f4",
+    "elliptic-curves/data/elkies_2026_r17_j_recognition_targets.json": "94f0b9f504682b12d45c7e0962830ac6b1a1fea8f7313cd282bec9ab2875e337"
+  },
+  "no_tuning_rule": "After this manifest is written, no target observation may change a bound, seed, threshold, channel weight, score ordering, dimension rule, parent/component pool, finite-prime policy, or hold-out rule under this algorithm tag. A changed method requires a new tag and remains invalid as confirmation on these five records.",
+  "proof_boundary": "This manifest changes only the target identities and the logically necessary four-of-four recurrence/leave-one-out wording. Every computational parameter and score is inherited unchanged from the pre-wgxli primary freeze.",
+  "schema": "elliptic-curves.latent-lattice-secondary-method-freeze.v1",
+  "status": "FROZEN_UNCHANGED_SECONDARY_TARGET_METHOD_NO_TUNING",
+  "target_metadata_was_known_after_primary_freeze": true,
+  "target_records": [
+    12,
+    398,
+    399,
+    400
+  ],
+  "target_source_sha256": {
+    "12": "206ef6992f433155d349618d55c289a00cf9014eb222da059c57e0db76131c0e",
+    "398": "5e09b5ed49cde24d20fcf300794e58a47f7f75ac7bba98c92b68ff3654df49f4",
+    "399": "92125a3aafd44ff45028ade826ef62338667164a402b3264507816e3c2009ead",
+    "400": "704f2292b4395923e2887a4ddd7a35f03d46baed42f5c75aac2dfe8519dd4275"
+  }
+}

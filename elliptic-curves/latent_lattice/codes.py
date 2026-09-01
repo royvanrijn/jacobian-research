@@ -432,9 +432,11 @@ def _prime_signature(
     complex_: RelationComplex,
     retained: Sequence[bool],
     block: FiniteQuotientBlock,
+    classes: tuple[tuple[int, ...], ...] | None = None,
 ) -> tuple[PrimeCodeSignature, tuple[tuple[int, ...], ...]]:
     ell = block.relation_prime
-    classes = tuple(block.vector_class(vertex) for vertex in complex_.vertices)
+    if classes is None:
+        classes = tuple(block.vector_class(vertex) for vertex in complex_.vertices)
     restricted = _restricted_prime_matrix(basis_rows, block)
     image_dimension = _modular_rank(restricted, ell)
     orbit_counts = Counter(
@@ -479,13 +481,15 @@ def _component_signature(
     complex_: RelationComplex,
     retained: Sequence[bool],
     block: ComponentBlock,
+    classes: tuple[int, ...] | None = None,
 ) -> tuple[ComponentCodeSignature, tuple[int, ...]]:
     modulus = block.modulus
     if modulus < 1:
         raise ValueError("component modulus must be positive")
     if len(block.classes) != len(basis_rows[0]):
         raise ValueError("component block and candidate ambient widths differ")
-    classes = tuple(block.vector_class(vertex) for vertex in complex_.vertices)
+    if classes is None:
+        classes = tuple(block.vector_class(vertex) for vertex in complex_.vertices)
     restricted_values = tuple(block.vector_class(row) for row in basis_rows)
     divisor = modulus
     for value in restricted_values:
@@ -548,6 +552,8 @@ def candidate_finite_signature(
     *,
     finite_blocks: Sequence[FiniteQuotientBlock] = (),
     component_blocks: Sequence[ComponentBlock] = (),
+    _finite_classes: Sequence[tuple[tuple[int, ...], ...]] | None = None,
+    _component_classes: Sequence[tuple[int, ...]] | None = None,
 ) -> CandidateFiniteSignature:
     """Restrict exact finite codes to a candidate rational subspace.
 
@@ -558,13 +564,29 @@ def candidate_finite_signature(
     """
 
     retained = _candidate_mask(complex_.vertices, basis_rows)
+    if _finite_classes is not None and len(_finite_classes) != len(finite_blocks):
+        raise ValueError("precomputed finite-class block count differs")
+    if _component_classes is not None and len(_component_classes) != len(component_blocks):
+        raise ValueError("precomputed component-class block count differs")
     prime_results = [
-        _prime_signature(basis_rows, complex_, retained, block)
-        for block in finite_blocks
+        _prime_signature(
+            basis_rows,
+            complex_,
+            retained,
+            block,
+            None if _finite_classes is None else _finite_classes[index],
+        )
+        for index, block in enumerate(finite_blocks)
     ]
     component_results = [
-        _component_signature(basis_rows, complex_, retained, block)
-        for block in component_blocks
+        _component_signature(
+            basis_rows,
+            complex_,
+            retained,
+            block,
+            None if _component_classes is None else _component_classes[index],
+        )
+        for index, block in enumerate(component_blocks)
     ]
     prime_signatures = tuple(sorted((item[0] for item in prime_results), key=repr))
     component_signatures = tuple(
@@ -640,6 +662,42 @@ def candidate_finite_signature(
         joint_vertex_type_histogram=_histogram(joint_vertices),
         joint_ternary_type_histogram=_histogram(joint_edges),
         canonical_digest=digest,
+    )
+
+
+def candidate_finite_signatures(
+    basis_matrices: Sequence[Sequence[Sequence[int]]],
+    complex_: RelationComplex,
+    *,
+    finite_blocks: Sequence[FiniteQuotientBlock] = (),
+    component_blocks: Sequence[ComponentBlock] = (),
+) -> tuple[CandidateFiniteSignature, ...]:
+    """Batch candidate restrictions with exact finite classes cached once.
+
+    This is mathematically identical to repeated
+    :func:`candidate_finite_signature` calls.  It avoids recomputing every
+    ambient ray class for every candidate, which is important in a frozen
+    dimension scan with hundreds of proper subspaces.
+    """
+
+    finite_classes = tuple(
+        tuple(block.vector_class(vertex) for vertex in complex_.vertices)
+        for block in finite_blocks
+    )
+    component_classes = tuple(
+        tuple(block.vector_class(vertex) for vertex in complex_.vertices)
+        for block in component_blocks
+    )
+    return tuple(
+        candidate_finite_signature(
+            basis_rows,
+            complex_,
+            finite_blocks=finite_blocks,
+            component_blocks=component_blocks,
+            _finite_classes=finite_classes,
+            _component_classes=component_classes,
+        )
+        for basis_rows in basis_matrices
     )
 
 

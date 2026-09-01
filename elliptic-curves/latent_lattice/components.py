@@ -16,6 +16,11 @@ from typing import Sequence
 import numpy as np
 
 from .integer import modular_rank, rational_nullspace, rational_rank
+from .codes import CandidateFiniteSignature, finite_signature_distance
+from .fingerprints import (
+    CandidateRelationFingerprint,
+    robust_standardize_fingerprint_families,
+)
 from .matching import PartialRelationReplay, exact_partial_relation_replay
 from .relations import RelationComplex
 
@@ -59,6 +64,388 @@ class ExactComponentMerge:
     held_out_replayed_ray_count: int
     held_out_rays_per_added_rank: float
     height_angle_rms: float
+
+
+@dataclass(frozen=True)
+class ReplayedComponentCandidate:
+    """One exact rational component after global replay and deduplication.
+
+    ``origin_indices`` records every proposal occurrence which produced the
+    same rational space.  Development and held-out sets belong to the ambient
+    fibre, not to an enclosing parent; this is what makes replay counts
+    comparable across different parent proposals.
+    """
+
+    basis_rows: tuple[tuple[int, ...], ...]
+    origin_indices: tuple[int, ...]
+    development_replayed_ray_indices: tuple[int, ...]
+    held_out_replayed_ray_indices: tuple[int, ...]
+    full_replayed_ray_indices: tuple[int, ...]
+    full_replayed_relation_indices: tuple[int, ...]
+    rational_rank: int
+    modular_ranks: tuple[tuple[int, int], ...]
+
+    @property
+    def held_out_rays_per_rank(self) -> float:
+        return len(self.held_out_replayed_ray_indices) / max(1, self.rational_rank)
+
+
+@dataclass(frozen=True)
+class JointComponentBundle:
+    """One cross-fibre bundle under equal-weight structural channels."""
+
+    candidate_indices: tuple[int, ...]
+    relation_distance_percentile: float
+    hermite_distance_percentile: float
+    finite_distance_percentile: float
+    mean_combined_distance_percentile: float
+    maximum_combined_distance_percentile: float
+    held_out_replayed_ray_count: int
+    held_out_rays_per_rank: float
+
+
+@dataclass(frozen=True)
+class JointComponentBundleLedger:
+    """Frozen structural pruning followed by exact replay optimization."""
+
+    structural_quantile: float
+    generated_bundle_count: int
+    eligible_bundle_count: int
+    structurally_retained_bundle_count: int
+    selected: JointComponentBundle
+    bundles: tuple[JointComponentBundle, ...]
+
+
+def exact_rational_space_key(
+    basis_rows: Sequence[Sequence[int]],
+) -> tuple[int, tuple[tuple[int, ...], ...]]:
+    """Return a basis-independent exact key for a rational row space.
+
+    The right nullspace is computed from an exact RREF with deterministic
+    pivot order.  Its primitive oriented rows therefore canonically describe
+    the rational space, including when the ambient coordinate width exceeds
+    the candidate rank by more than one.
+    """
+
+    rank = rational_rank(basis_rows)
+    if not basis_rows or rank != len(basis_rows):
+        raise ValueError("space key needs a nonempty independent row basis")
+    width = len(basis_rows[0])
+    if any(len(row) != width for row in basis_rows):
+        raise ValueError("space-key row widths differ")
+    kernel = () if rank == width else rational_nullspace(basis_rows)
+    return rank, kernel
+
+
+def replay_and_deduplicate_components(
+    vectors: Sequence[Sequence[int]],
+    complex_: RelationComplex,
+    candidate_basis_rows: Sequence[Sequence[Sequence[int]]],
+    *,
+    development_indices: Sequence[int],
+    held_out_indices: Sequence[int],
+    finite_primes: Sequence[int] = (2, 3),
+) -> tuple[ReplayedComponentCandidate, ...]:
+    """Replay proposed spaces globally and collapse exact duplicates.
+
+    The input indices refer to ``vectors``.  They must form a disjoint split;
+    vectors outside both sets are allowed but are counted only by full replay.
+    Every membership and induced-relation count is exact.  The function does
+    not saturate proposal bases: callers must do that immediately after each
+    component construction or merge, before invoking this audit.
+    """
+
+    if not vectors or not candidate_basis_rows:
+        return ()
+    development = frozenset(map(int, development_indices))
+    held_out = frozenset(map(int, held_out_indices))
+    if development & held_out:
+        raise ValueError("development and held-out ray sets overlap")
+    if development | held_out and (
+        min(development | held_out) < 0 or max(development | held_out) >= len(vectors)
+    ):
+        raise ValueError("development/held-out index outside the vector population")
+    vertex_by_ray = {
+        tuple(vector): index for index, vector in enumerate(complex_.vertices)
+    }
+    # RelationComplex vertices are canonical unoriented rays; normalize the
+    # caller population through the same constructor-independent convention.
+    from .integer import canonical_unoriented
+
+    input_to_vertex = tuple(vertex_by_ray[canonical_unoriented(vector)] for vector in vectors)
+    by_key: dict[
+        tuple[int, tuple[tuple[int, ...], ...]],
+        dict[str, object],
+    ] = {}
+    for origin, raw_basis in enumerate(candidate_basis_rows):
+        basis = tuple(tuple(map(int, row)) for row in raw_basis)
+        key = exact_rational_space_key(basis)
+        rank = key[0]
+        normals = key[1]
+        masks = [
+            all(
+                sum(int(value) * int(coefficient) for value, coefficient in zip(vector, normal))
+                == 0
+                for normal in normals
+            )
+            for vector in vectors
+        ]
+        replayed = tuple(index for index, keep in enumerate(masks) if keep)
+        replayed_vertices = frozenset(input_to_vertex[index] for index in replayed)
+        relation_indices = tuple(
+            index
+            for index, relation in enumerate(complex_.ternary_relations)
+            if set(relation) <= replayed_vertices
+        )
+        modular_ranks = tuple(
+            (int(prime), modular_rank(basis, int(prime))) for prime in finite_primes
+        )
+        previous = by_key.get(key)
+        if previous is None:
+            by_key[key] = {
+                "basis": basis,
+                "origins": [origin],
+                "development": tuple(index for index in replayed if index in development),
+                "held_out": tuple(index for index in replayed if index in held_out),
+                "full": replayed,
+                "relations": relation_indices,
+                "modular_ranks": modular_ranks,
+            }
+            continue
+        previous["origins"].append(origin)
+        # Equality of the exact key already proves equality of rational
+        # spaces; replay equality is checked defensively against programming
+        # or canonicalization mistakes.
+        if previous["full"] != replayed or previous["relations"] != relation_indices:
+            raise ArithmeticError("equal rational-space keys produced unequal replay")
+    answer = [
+        ReplayedComponentCandidate(
+            basis_rows=record["basis"],
+            origin_indices=tuple(record["origins"]),
+            development_replayed_ray_indices=record["development"],
+            held_out_replayed_ray_indices=record["held_out"],
+            full_replayed_ray_indices=record["full"],
+            full_replayed_relation_indices=record["relations"],
+            rational_rank=key[0],
+            modular_ranks=record["modular_ranks"],
+        )
+        for key, record in by_key.items()
+    ]
+    return tuple(
+        sorted(
+            answer,
+            key=lambda item: (
+                -item.held_out_rays_per_rank,
+                -len(item.held_out_replayed_ray_indices),
+                -len(item.full_replayed_ray_indices),
+                -len(item.full_replayed_relation_indices),
+                item.origin_indices,
+            ),
+        )
+    )
+
+
+def _distance_percentiles(matrix: np.ndarray) -> np.ndarray:
+    """Replace finite distances by empirical lower-is-better percentiles."""
+
+    values = np.asarray(matrix, dtype=float)
+    if values.size == 0 or not np.all(np.isfinite(values)):
+        raise ValueError("distance channel contains no finite population")
+    ordered = np.sort(np.unique(values.ravel()))
+    if len(ordered) == 1:
+        return np.zeros_like(values)
+    return np.searchsorted(ordered, values, side="left") / (len(ordered) - 1)
+
+
+def joint_component_bundle_ledger(
+    relation_families: Sequence[Sequence[CandidateRelationFingerprint]],
+    hermite_families: Sequence[Sequence[float | str]],
+    finite_families: Sequence[Sequence[CandidateFiniteSignature]],
+    held_out_replay_families: Sequence[Sequence[int]],
+    candidate_ranks: Sequence[int],
+    *,
+    eligible_families: Sequence[Sequence[bool]] | None = None,
+    structural_quantile: float = 0.10,
+) -> JointComponentBundleLedger:
+    """Match components jointly, then optimize held-out rays per rank.
+
+    Relation/height, primitive-Hermite, and development finite-code distances
+    are each converted to empirical percentiles for every pair of fibres and
+    receive equal weight.  Candidate bundles are generated by nearest matches
+    from every possible anchor.  The best declared structural quantile is an
+    early-pruning set; only inside it does exact held-out replay decide.
+
+    This routine deliberately accepts only *development* finite signatures.
+    Supplying disjoint validation signatures is a caller responsibility, and
+    they must not be passed here.
+    """
+
+    fibre_count = len(relation_families)
+    if fibre_count < 3 or len(candidate_ranks) != fibre_count:
+        raise ValueError("joint component selection needs at least three fibres")
+    if not 0.0 < structural_quantile <= 1.0:
+        raise ValueError("structural quantile must lie in (0,1]")
+    if not (
+        len(hermite_families)
+        == len(finite_families)
+        == len(held_out_replay_families)
+        == fibre_count
+    ):
+        raise ValueError("joint component family counts differ")
+    widths = tuple(len(family) for family in relation_families)
+    if any(width == 0 for width in widths):
+        raise ValueError("joint component families must be nonempty")
+    if any(
+        len(hermite_families[index]) != width
+        or len(finite_families[index]) != width
+        or len(held_out_replay_families[index]) != width
+        for index, width in enumerate(widths)
+    ):
+        raise ValueError("component channel widths differ")
+    if eligible_families is None:
+        eligible_families = tuple(tuple(True for _ in range(width)) for width in widths)
+    if len(eligible_families) != fibre_count or any(
+        len(eligible_families[index]) != width for index, width in enumerate(widths)
+    ):
+        raise ValueError("eligibility channel widths differ")
+
+    relation_matrices = robust_standardize_fingerprint_families(relation_families)
+    hermite_values = tuple(np.asarray(family, dtype=float) for family in hermite_families)
+    pair_channels: dict[tuple[int, int], tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]] = {}
+    for left in range(fibre_count):
+        for right in range(left + 1, fibre_count):
+            relation = np.sqrt(
+                np.mean(
+                    (
+                        relation_matrices[left][:, None, :]
+                        - relation_matrices[right][None, :, :]
+                    )
+                    ** 2,
+                    axis=2,
+                )
+            )
+            hermite = np.abs(
+                hermite_values[left][:, None] - hermite_values[right][None, :]
+            )
+            finite = np.asarray(
+                [
+                    [
+                        finite_signature_distance(
+                            left_signature,
+                            right_signature,
+                            include_components=False,
+                        )
+                        for right_signature in finite_families[right]
+                    ]
+                    for left_signature in finite_families[left]
+                ],
+                dtype=float,
+            )
+            relation_percentile = _distance_percentiles(relation)
+            hermite_percentile = _distance_percentiles(hermite)
+            finite_percentile = _distance_percentiles(finite)
+            combined = (
+                relation_percentile + hermite_percentile + finite_percentile
+            ) / 3.0
+            pair_channels[(left, right)] = (
+                relation_percentile,
+                hermite_percentile,
+                finite_percentile,
+                combined,
+            )
+
+    keys = set()
+    for anchor in range(fibre_count):
+        for candidate in range(widths[anchor]):
+            key = [None] * fibre_count
+            key[anchor] = candidate
+            for other in range(fibre_count):
+                if other == anchor:
+                    continue
+                if anchor < other:
+                    combined = pair_channels[(anchor, other)][3]
+                    choice = int(np.argmin(combined[candidate]))
+                else:
+                    combined = pair_channels[(other, anchor)][3]
+                    choice = int(np.argmin(combined[:, candidate]))
+                key[other] = choice
+            keys.add(tuple(map(int, key)))
+
+    bundles = []
+    for key in sorted(keys):
+        if not all(eligible_families[fibre][candidate] for fibre, candidate in enumerate(key)):
+            continue
+        relation_pieces = []
+        hermite_pieces = []
+        finite_pieces = []
+        combined_pieces = []
+        for left in range(fibre_count):
+            for right in range(left + 1, fibre_count):
+                channels = pair_channels[(left, right)]
+                indices = (key[left], key[right])
+                relation_pieces.append(float(channels[0][indices]))
+                hermite_pieces.append(float(channels[1][indices]))
+                finite_pieces.append(float(channels[2][indices]))
+                combined_pieces.append(float(channels[3][indices]))
+        held_out = sum(
+            int(held_out_replay_families[fibre][candidate])
+            for fibre, candidate in enumerate(key)
+        )
+        total_rank = sum(map(int, candidate_ranks))
+        bundles.append(
+            JointComponentBundle(
+                candidate_indices=key,
+                relation_distance_percentile=float(np.mean(relation_pieces)),
+                hermite_distance_percentile=float(np.mean(hermite_pieces)),
+                finite_distance_percentile=float(np.mean(finite_pieces)),
+                mean_combined_distance_percentile=float(np.mean(combined_pieces)),
+                maximum_combined_distance_percentile=float(np.max(combined_pieces)),
+                held_out_replayed_ray_count=held_out,
+                held_out_rays_per_rank=held_out / max(1, total_rank),
+            )
+        )
+    if not bundles:
+        raise ArithmeticError("no joint component bundle survived eligibility pruning")
+    structural = sorted(
+        bundles,
+        key=lambda item: (
+            item.maximum_combined_distance_percentile,
+            item.mean_combined_distance_percentile,
+            -item.held_out_rays_per_rank,
+            item.candidate_indices,
+        ),
+    )
+    retained_count = max(1, int(np.ceil(structural_quantile * len(structural))))
+    retained = structural[:retained_count]
+    selected = max(
+        retained,
+        key=lambda item: (
+            item.held_out_rays_per_rank,
+            item.held_out_replayed_ray_count,
+            -item.maximum_combined_distance_percentile,
+            -item.mean_combined_distance_percentile,
+            tuple(-index for index in item.candidate_indices),
+        ),
+    )
+    ordered = tuple(
+        sorted(
+            bundles,
+            key=lambda item: (
+                item.maximum_combined_distance_percentile,
+                item.mean_combined_distance_percentile,
+                -item.held_out_rays_per_rank,
+                item.candidate_indices,
+            ),
+        )
+    )
+    return JointComponentBundleLedger(
+        structural_quantile=float(structural_quantile),
+        generated_bundle_count=len(keys),
+        eligible_bundle_count=len(bundles),
+        structurally_retained_bundle_count=retained_count,
+        selected=selected,
+        bundles=ordered,
+    )
 
 
 def height_angle_profile(

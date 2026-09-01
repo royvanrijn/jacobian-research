@@ -1,0 +1,172 @@
+{
+  "algorithm_tag": "LATENT-LATTICE-WGXLI-FROZEN-2026-09-01-v1",
+  "calibration_boundary": {
+    "center_free_rank16_component_proposal_recall": "exact withheld component occurs uniquely in 4/4 ledgers",
+    "equal_weight_rank16_component_selection": "recovers the particular withheld component in 2/4 controls",
+    "fermigier_dimension_persistence": "selects dimension 12 at both declared cutoffs",
+    "interpretation": "The target run is exploratory and fail-closed. Component-selection calibration is not a theorem and is not strong enough for a provenance claim by itself.",
+    "one_rank_completion_after_component_selection": "recovers R17 in 3/4 controls",
+    "r17_rank17_graph_selector": "passes 4/4 positive-control fibres"
+  },
+  "cloud_protocol": {
+    "adaptive_bound_rule": "choose the first bound with at least 1800 rays; reject the fibre if none occurs before bound 80 or if enumeration reaches 100000 rays",
+    "canonical_height_digits": 80,
+    "height_candidate_bounds": [
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80
+    ],
+    "persistence_cutoffs_by_height_order": [
+      "3/4",
+      "7/8",
+      "1"
+    ],
+    "population": "full displayed independent subgroup; primitive unoriented short rays"
+  },
+  "component_protocol": {
+    "adaptive_parent_proposal_fraction": "3/4",
+    "channel_weights": [
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "components_retained_per_parent": 8,
+    "dense_hyperplane_samples_per_parent": 400,
+    "distance_normalization": "empirical lower-is-better percentile separately for every fibre pair/channel",
+    "exact_rational_space_deduplication": true,
+    "exact_saturation_after_proposal_or_merge": true,
+    "global_replay_development_fraction": "3/4",
+    "maximum_source_height_angle_profile_distance": "0.029999999999999999",
+    "parent_pool_size": 16,
+    "post_prune_objective": "maximize exact held-out replayed rays per total candidate rank",
+    "random_seed": 20260901,
+    "structural_channels": [
+      "abstract relation/height component fingerprint",
+      "primitive Hermite signature after exact saturation",
+      "development finite-code signature"
+    ],
+    "structural_pruning_quantile": "0.10000000000000001"
+  },
+  "created_date": "2026-09-01",
+  "cross_validation_protocol": {
+    "dimension_acceptance": "one k must recur in at least four independent fibre scans",
+    "folds": "all five choices of one held-out fibre",
+    "held_out_prediction": "select the held-out component using training structural signatures and development finite blocks only; evaluate global held-out rays and validation finite blocks afterward",
+    "strong_signal": "the same k and compatible component embeddings pass at least four folds, including successful prediction in each corresponding untouched fibre",
+    "training_acceptance": "a compatible primitive component bundle must occur in all four training fibres",
+    "training_fibre_count": 4
+  },
+  "dimension_protocol": {
+    "beam_subspace_scan": {
+      "beam_width": 8,
+      "branch_width": 80,
+      "pool": 300,
+      "seed_rule": "10000 + ICARM record number"
+    },
+    "candidate_dimensions": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "rank17_assumed": false,
+    "score": "for k, take the minimum integrality-LLR over k-1,k,k+1 at every persistence cutoff; maximize this cross-cutoff bottleneck, then the k score, then prefer smaller k"
+  },
+  "finite_protocol": {
+    "block_rule": "for each relation prime, first three usable one-dimensional quotient blocks are development and next three are validation; reduction-prime identities and quotient bases are forgotten in cross-fibre signatures",
+    "coordinate_modular_rank_prunes": [
+      2,
+      3
+    ],
+    "good_reduction_prime_bound": 251,
+    "primitive_embedding_required": true,
+    "relation_primes": [
+      2,
+      3
+    ],
+    "validation_blocks_used_in_selection": false
+  },
+  "forbidden_under_tag": [
+    "displayed-label sign/permutation search",
+    "unrestricted GL(k,Z)",
+    "forcing k=17",
+    "R17/Q80 provenance inference from shells",
+    "equation or first-jet interpolation",
+    "changing a parameter after inspecting any target outcome"
+  ],
+  "frozen_inputs": {
+    "artifacts/generated-results/elliptic-curves/latent_lattice_calibration_v2.json": "f77cce7ed315c7d3931152b447fbdf7adf971c84a9f509a3d7b941ca68a58597",
+    "artifacts/generated-results/elliptic-curves/latent_lattice_dimension_persistence_v1.json": "7e46dadeb9781ae6a7acc452c9a63d1f7f1c7ad73a7913d6b5eea5ad35bba83d",
+    "artifacts/generated-results/elliptic-curves/latent_lattice_finite_calibration_v1.json": "26406425a6626b8047d904ba6d63b601ead22b4a892cd77afef80c23725e0a04",
+    "artifacts/generated-results/elliptic-curves/latent_lattice_graph_walk_calibration_v1.json": "cb2d5406275b633ecae20cf37cba0795b1e589d14ebeb0bf16f75a6ee31a9ec4",
+    "artifacts/generated-results/elliptic-curves/latent_lattice_joint_component_calibration_v1.json": "2a6e482a7c5d89efd93314288c3d8788b663fa573442d34ed7d3a8f5987f4601",
+    "elliptic-curves/cas/calibrate_latent_lattice_dimension_persistence.py": "d0cfd8c19f1c1c1d48a645c37900bb3bde89f2a5e507a6045b5d0494e172f7ad",
+    "elliptic-curves/cas/calibrate_latent_lattice_graph_walk_consensus.py": "76b94a417b6136c515dc3474b99a4eff437de679859fd19906264261fbdf85d9",
+    "elliptic-curves/cas/calibrate_latent_lattice_joint_components.py": "3d6760c0cb00e7283389f67e15bd860f0baea2b42099dfdc95b5d323bd1c0322",
+    "elliptic-curves/cas/calibrate_latent_lattice_method.py": "de78e355e0ded9db033290386cf49c4120c057ed9a8f2a6a5f128d0c2c27375e",
+    "elliptic-curves/latent_lattice/__init__.py": "c0da16670d1e3700db895333580d9ec7d1d09643d7c69d6fb510f451a5e8e672",
+    "elliptic-curves/latent_lattice/codes.py": "9d59d975442c3563bd9ba7105087a2810a358cce7a561f614f85fb27163ef93b",
+    "elliptic-curves/latent_lattice/components.py": "05d21e827d00cc3c9c2e0b5f120f57e89610239b54a8f1314c2ceb8fe5d289ee",
+    "elliptic-curves/latent_lattice/consensus.py": "7fb198b33a5e4a43bba13bece9f75b9cc767298c6b183281936077e9719bc9ec",
+    "elliptic-curves/latent_lattice/elliptic.py": "f0ba1ab3fa5711276dbf43da47a46f6d30830d00e56ddada94a11cd91dc57bd8",
+    "elliptic-curves/latent_lattice/fingerprints.py": "d98c65916d789081716e13bc0860d14aef7214b7ae96203e8a6bf88cb4f5ab76",
+    "elliptic-curves/latent_lattice/finite.py": "3b3bf4d77dc4e48714baf2f1c02a6f2670d77a9f3e80459194703f94e1636b0a",
+    "elliptic-curves/latent_lattice/height.py": "4de7238f6da25302128759451543febc8e0e4299551d5e10d12419311221f91b",
+    "elliptic-curves/latent_lattice/integer.py": "2e1c9b3459cb65ec6bd3012870858648cc23af5dbbaa35d16fed6fd1511dce19",
+    "elliptic-curves/latent_lattice/local.py": "f0782964d0097def467c192a84f22e72f81ebfc8e04135b9cc2c758f8da3d909",
+    "elliptic-curves/latent_lattice/matching.py": "652db89a7143ff186e0b3ea873a1e23acdb9f2bf3cb128457db95270f8b1ae8b",
+    "elliptic-curves/latent_lattice/pari.py": "f9fe2ff27fd2d9b60069a353285baaa09c247c178e4c3f059f8f3524bd3d9e91",
+    "elliptic-curves/latent_lattice/relations.py": "e1c85705f2e348fcc4bddd0402ccfd1275ee56c507bd471e0a3e32b2ef06a86b",
+    "elliptic-curves/latent_lattice/subspace.py": "91b5843182eac5713c8bda5dcdef8a17e3fbb130bb0eaa403be4f325e23361be"
+  },
+  "no_tuning_rule": "After this manifest is written, no target observation may change a bound, seed, threshold, channel weight, score ordering, dimension rule, parent/component pool, finite-prime policy, or hold-out rule under this algorithm tag. A changed method requires a new tag and remains invalid as confirmation on these five records.",
+  "proof_boundary": "The manifest freezes a bounded experimental algorithm, not a lattice-existence theorem. Exact arithmetic subroutines remain exact within their declared clouds; height selection, dimension persistence, component sampling, structural distances, and cutoffs are heuristic.",
+  "schema": "elliptic-curves.latent-lattice-target-method-freeze.v1",
+  "software": {
+    "python": "3.12.3"
+  },
+  "status": "FROZEN_EXPERIMENTAL_TARGET_METHOD_NO_TUNING",
+  "target_data_read_before_freeze": false,
+  "target_records": [
+    351,
+    356,
+    376,
+    377,
+    385
+  ]
+}

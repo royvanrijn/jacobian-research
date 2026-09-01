@@ -86,6 +86,14 @@ parser.add_argument(
     action="store_true",
     help="append a prime-independent full-coordinate separating-element anchor",
 )
+parser.add_argument(
+    "--explicit-formal-centers",
+    action="store_true",
+    help=(
+        "retain the I5/I4 formal-center jet coefficients as sparse auxiliary "
+        "variables instead of recursively substituting powers of r1^-1 and ri^-1"
+    ),
+)
 parser.add_argument("--groebner", action="store_true")
 parser.add_argument("--surface-only", action="store_true")
 args = parser.parse_args()
@@ -107,6 +115,11 @@ if not args.surface_only:
 surface_names = (
     [f"a{index}" for index in range(1, 7)]
     + ["r1", "ri", "r1_inverse", "ri_inverse"]
+    + (
+        [f"center1_{index}" for index in range(1, 6)]
+        + [f"center_infinity_{index}" for index in range(1, 5)]
+        if args.explicit_formal_centers else []
+    )
     + open_inverse_names
 )
 p1_names = (
@@ -142,6 +155,19 @@ def formal_center(a_jet, root, root_inverse, precision):
         )
         center.append((-a_jet[degree] / 3 - known) * root_inverse / 2)
     return center
+
+
+def retained_formal_center(prefix, a_jet, root, precision):
+    """Return a sparse formal center and its exact quadratic recurrence."""
+    center = [ring(root)] + [v[f"{prefix}_{degree}"] for degree in range(1, precision)]
+    recurrence = []
+    for degree in range(1, precision):
+        square_coefficient = sum(
+            center[left] * center[degree - left]
+            for left in range(degree + 1)
+        )
+        recurrence.append(3 * square_coefficient + a_jet[degree])
+    return center, recurrence
 
 
 def cube_coefficients(values, precision):
@@ -198,9 +224,21 @@ a_at_one = [
     sum(a[index] * binomial(index, jet) for index in range(jet, 9))
     for jet in range(6)
 ]
-center1 = formal_center(a_at_one, r1, r1_inverse, 6)
+if args.explicit_formal_centers:
+    center1, center1_equations = retained_formal_center(
+        "center1", a_at_one, r1, 6
+    )
+    equations += center1_equations
+else:
+    center1 = formal_center(a_at_one, r1, r1_inverse, 6)
 a_at_infinity = [a[8 - index] for index in range(5)]
-center_infinity = formal_center(a_at_infinity, ri, ri_inverse, 5)
+if args.explicit_formal_centers:
+    center_infinity, center_infinity_equations = retained_formal_center(
+        "center_infinity", a_at_infinity, ri, 5
+    )
+    equations += center_infinity_equations
+else:
+    center_infinity = formal_center(a_at_infinity, ri, ri_inverse, 5)
 b_bottom = cube_coefficients(center0, 7)
 b_at_one = cube_coefficients(center1, 5)
 b_top_reversed = cube_coefficients(center_infinity, 4)
@@ -440,7 +478,8 @@ print(
     f"|equations={len(equations)}|q3_infinity_chart={args.q3_infinity_chart}"
     f"|q1_identity_charts={args.q1_i5_identity_chart},{args.q1_i4_identity_chart}"
     f"|slices={','.join('{}={}'.format(name, value) for name, value in slices.items())}"
-    f"|hyperplanes={len(hyperplanes)}|fixed_rur_anchor={int(args.fixed_rur_anchor)}",
+    f"|hyperplanes={len(hyperplanes)}|fixed_rur_anchor={int(args.fixed_rur_anchor)}"
+    f"|explicit_formal_centers={int(args.explicit_formal_centers)}",
     flush=True,
 )
 if args.export_msolve is not None:

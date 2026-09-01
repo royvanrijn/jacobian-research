@@ -131,8 +131,8 @@ print(
     flush=True,
 )
 
-accepted = None
-factor_failures = []
+accepted_candidates = []
+factor_audit = []
 with tempfile.TemporaryDirectory(prefix="ns0024-joint-rur-") as temporary:
     temporary_path = Path(temporary)
     for factor_index, (factor, unused) in enumerate(factorization):
@@ -204,36 +204,78 @@ with tempfile.TemporaryDirectory(prefix="ns0024-joint-rur-") as temporary:
             command, cwd=ROOT, text=True, capture_output=True, check=False
         )
         if completed.returncode:
-            factor_failures.append(
+            factor_audit.append(
                 {
+                    "factor_index": factor_index,
                     "factor": str(factor),
                     "degree": degree,
+                    "outcome": "REJECTED_BY_EXACT_MW4_MARKING_VERIFIER",
                     "verifier_tail": (completed.stdout + completed.stderr)[-1000:],
                 }
             )
             continue
-        accepted = json.loads(candidate_path.read_text())
-        accepted["rur"] = {
+        candidate = json.loads(candidate_path.read_text())
+        arithmetic = candidate["arithmetic_realizability"]
+        factor_audit.append(
+            {
+                "factor_index": factor_index,
+                "factor": str(factor),
+                "degree": degree,
+                "outcome": "PASS_EXACT_RESOLVED_MW4_MARKING",
+                "surface_frobenius_orbit_size": arithmetic[
+                    "surface_frobenius_orbit_size"
+                ],
+                "section_marking_frobenius_orbit_size": arithmetic[
+                    "section_marking_frobenius_orbit_size"
+                ],
+                "resolved_oriented_marking_frobenius_orbit_size": arithmetic[
+                    "resolved_oriented_marking_frobenius_orbit_size"
+                ],
+                "relative_section_degree_over_surface_field": arithmetic[
+                    "relative_section_degree_over_surface_field"
+                ],
+                "relative_orientation_degree_over_section_field": arithmetic[
+                    "relative_orientation_degree_over_section_field"
+                ],
+                "action_closes_on_marked_mw4": arithmetic[
+                    "action_closes_on_marked_mw4"
+                ],
+                "relative_fixed_marked_mw4_rank": arithmetic.get(
+                    "relative_fixed_marked_mw4_rank"
+                ),
+                "prime_field_fixed_marked_mw4_rank": arithmetic.get(
+                    "prime_field_fixed_marked_mw4_rank"
+                ),
+                "arithmetic_realizability_status": arithmetic["status"],
+            }
+        )
+        candidate["rur"] = {
             "quotient_dimension": int(quotient_degree),
             "elimination_polynomial": str(elimination),
             "selected_factor": str(factor),
+            "selected_factor_index": factor_index,
             "selected_factor_degree": degree,
             "fixed_separator": "rur_anchor",
             "squarefree_degree_equals_quotient_dimension": True,
             "original_joint_equations_replayed": True,
             "frobenius_orbit_size": degree,
         }
-        accepted["inputs"] = {
+        candidate["inputs"] = {
             "system": str(system_path),
             "system_sha256": digest(system_path),
             "rur_solution": str(solution_path),
             "rur_solution_sha256": digest(solution_path),
         }
-        break
+        accepted_candidates.append(candidate)
 
-if accepted is None:
-    print("NS0024JOINTRURFAILURES|{}".format(json.dumps(factor_failures)), flush=True)
+if not accepted_candidates:
+    print("NS0024JOINTRURFAILURES|{}".format(json.dumps(factor_audit)), flush=True)
     raise SystemExit("no RUR factor passes the exact resolved MW4 source marking")
+accepted = accepted_candidates[0]
+accepted["rur"]["irreducible_factor_count"] = len(factorization)
+accepted["rur"]["accepted_factor_count"] = len(accepted_candidates)
+accepted["rur"]["all_factors_interpreted"] = True
+accepted["rur"]["factor_audit"] = factor_audit
 output_path.parent.mkdir(parents=True, exist_ok=True)
 output_path.write_text(json.dumps(accepted, indent=2, sort_keys=True) + "\n")
 edge_text = "skipped"

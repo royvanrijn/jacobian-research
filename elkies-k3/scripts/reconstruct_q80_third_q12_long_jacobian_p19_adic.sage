@@ -29,6 +29,11 @@ parser.add_argument(
     default=RESULTS / "q80-third-q12-exact-pencil-p19-adic-precision1028.json",
 )
 parser.add_argument(
+    "--operands",
+    type=Path,
+    default=RESULTS / "q80-third-q12-um2-biquadratic-closure-operands-p19-hensel-qq.json",
+)
+parser.add_argument(
     "--output",
     type=Path,
     default=RESULTS / "q80-third-q12-long-jacobian-p19-adic-reconstructed-qq.json",
@@ -38,6 +43,7 @@ args = parser.parse_args()
 args.manifest = args.manifest.resolve()
 args.transport = args.transport.resolve()
 args.source = args.source.resolve()
+args.operands = args.operands.resolve()
 args.output = args.output.resolve()
 
 
@@ -48,10 +54,13 @@ def sha256(path):
 manifest = json.loads(args.manifest.read_text())
 transport = json.loads(args.transport.read_text())
 source = json.loads(args.source.read_text())
+operands = json.loads(args.operands.read_text())
 if manifest.get("status") != "PASS_EXACT_THIRD_Q12_WEIERSTRASS_P19_ADIC_SAMPLE_BATCH":
     raise ValueError("high-precision sample batch is not certified")
 if transport.get("status") != "PASS_EXACT_TRANSPORTED_THIRD_Q12_LONG_JACOBIANS_COMMON_QUADRATIC_GAUGE":
     raise ValueError("finite-prime exact-gauge transport is not certified")
+if operands.get("status") != "PASS_EXACT_QQ_THIRD_Q12_BIQUADRATIC_CLOSURE_OPERANDS_P19_HENSEL":
+    raise ValueError("exact closure operands are not certified")
 
 prime = 19
 digits = int(manifest["specialization"]["digits"])
@@ -287,10 +296,243 @@ def reconstruct_projectively(record, name):
     )
 
 
+def reconstruct_pair_block(modular_pairs, validator, label):
+    residues = [ZZ(value) % modulus for pair in modular_pairs for value in pair]
+    dimension = len(residues) + 1
+    lattice = Matrix(ZZ, dimension, dimension)
+    for index in range(dimension - 1):
+        lattice[index, index] = modulus
+    for index, value in enumerate(residues):
+        lattice[dimension - 1, index] = value
+    lattice[dimension - 1, dimension - 1] = 1
+    reduced = lattice.LLL(delta=0.99)
+    diagnostics = []
+    for row in sorted(reduced.rows(), key=lambda value: value.dot_product(value)):
+        row = list(row)
+        if not row[-1] or row[-1] % prime == 0:
+            continue
+        common = math.gcd(*(abs(int(value)) for value in row))
+        if common > 1:
+            row = [value // common for value in row]
+        if row[-1] < 0:
+            row = [-value for value in row]
+        pairs = [
+            [QQ(row[2 * index]) / QQ(row[-1]), QQ(row[2 * index + 1]) / QQ(row[-1])]
+            for index in range(len(modular_pairs))
+        ]
+        maximum_bits = max(abs(ZZ(value)).nbits() for value in row)
+        diagnostics.append(maximum_bits)
+        if validator(pairs):
+            return pairs, {
+                "lattice_dimension": dimension,
+                "maximum_primitive_coordinate_bits": maximum_bits,
+                "random_lattice_boundary_bits": int(
+                    math.ceil(ZZ(modulus).nbits() * (dimension - 1) / dimension)
+                ),
+                "short_rows_tested": len(diagnostics),
+                "validated_primes": sorted(
+                    int(value) for value in transport["transported_models"]
+                ),
+            }
+    raise ArithmeticError(
+        f"{label}: no structured projective LLL row validates; "
+        f"short-row bits={diagnostics[:8]}"
+    )
+
+
+def reconstruct_scalar_asymmetric(residue, validator, label):
+    old_remainder, remainder = ZZ(modulus), ZZ(residue) % modulus
+    old_cofactor, cofactor = ZZ(0), ZZ(1)
+    diagnostics = []
+    while remainder:
+        if cofactor and cofactor % prime:
+            candidate = QQ(remainder) / QQ(cofactor)
+            numerator_bits = abs(ZZ(candidate.numerator())).nbits()
+            denominator_bits = ZZ(candidate.denominator()).nbits()
+            diagnostics.append([numerator_bits, denominator_bits])
+            if validator(candidate):
+                return candidate, {
+                    "method": "extended-Euclidean asymmetric rational reconstruction",
+                    "numerator_bits": numerator_bits,
+                    "denominator_bits": denominator_bits,
+                    "bit_sum": numerator_bits + denominator_bits,
+                    "euclidean_candidates_tested": len(diagnostics),
+                    "validated_primes": sorted(
+                        int(value) for value in transport["transported_models"]
+                    ),
+                }
+        quotient = old_remainder // remainder
+        old_remainder, remainder = remainder, old_remainder - quotient * remainder
+        old_cofactor, cofactor = cofactor, old_cofactor - quotient * cofactor
+    raise ArithmeticError(
+        f"{label}: no asymmetric convergent validates; tail={diagnostics[-8:]}"
+    )
+
+
+def modular_pair_polynomial_multiply(left, right):
+    result = [[0, 0] for unused in range(len(left) + len(right) - 1)]
+    for left_index, left_value in enumerate(left):
+        for right_index, right_value in enumerate(right):
+            product = mul(tuple(left_value), tuple(right_value))
+            result[left_index + right_index] = list(
+                add(tuple(result[left_index + right_index]), product)
+            )
+    return result
+
+
+def modular_pair_polynomial_power(value, exponent):
+    result = [[1, 0]]
+    base = value
+    while exponent:
+        if exponent & 1:
+            result = modular_pair_polynomial_multiply(result, base)
+        base = modular_pair_polynomial_multiply(base, base)
+        exponent >>= 1
+    return result
+
+
+denominator_exponents = {"a1": 1, "a2": 2, "a3": 2, "a4": 3, "a6": 4}
+modular_H = interpolated["a1"]["denominator"]
+for name, exponent in denominator_exponents.items():
+    if interpolated[name]["denominator"] != modular_pair_polynomial_power(modular_H, exponent):
+        raise ArithmeticError(f"{name}: denominator is not the expected common H power")
+
+
+def validate_H(lower_coefficients):
+    candidate = lower_coefficients + [[QQ(1), QQ(0)]]
+    for prime_text, model in transport["transported_models"].items():
+        local_prime = int(prime_text)
+        reduction = [
+            [rational_mod(value, local_prime) for value in pair] for pair in candidate
+        ]
+        if reduction != model["weierstrass"]["a1"][
+            "denominator_coefficients_low_to_high_1_omega"
+        ]:
+            return False
+    return True
+
+
+exact_H_lower = []
+H_reconstruction = {"method": "quadratic coefficient pairs reconstructed separately", "coefficients": []}
+for coefficient_index, modular_pair in enumerate(modular_H[:-1]):
+    def validate_H_coefficient(candidate, index=coefficient_index):
+        for prime_text, model in transport["transported_models"].items():
+            local_prime = int(prime_text)
+            reduction = [rational_mod(value, local_prime) for value in candidate[0]]
+            expected = model["weierstrass"]["a1"][
+                "denominator_coefficients_low_to_high_1_omega"
+            ][index]
+            if reduction != expected:
+                return False
+        return True
+
+    reconstructed, diagnostic = reconstruct_pair_block(
+        [modular_pair], validate_H_coefficient, f"H coefficient {coefficient_index}"
+    )
+    exact_H_lower.append(reconstructed[0])
+    H_reconstruction["coefficients"].append(diagnostic)
+exact_H = exact_H_lower + [[QQ(1), QQ(0)]]
+
+
+def rational_record(record):
+    return QQ(ZZ(record["numerator"])) / QQ(ZZ(record["denominator"]))
+
+
+q1 = rational_record(operands["biquadratic_field"]["q1"])
+q2 = rational_record(operands["biquadratic_field"]["q2"])
+omega_square_exact = QQ(16) * q1 * q2
+
+
+def exact_pair_add(left, right):
+    return [left[0] + right[0], left[1] + right[1]]
+
+
+def exact_pair_multiply(left, right):
+    return [
+        left[0] * right[0] + omega_square_exact * left[1] * right[1],
+        left[0] * right[1] + left[1] * right[0],
+    ]
+
+
+def exact_pair_polynomial_multiply(left, right):
+    result = [[QQ(0), QQ(0)] for unused in range(len(left) + len(right) - 1)]
+    for left_index, left_value in enumerate(left):
+        for right_index, right_value in enumerate(right):
+            result[left_index + right_index] = exact_pair_add(
+                result[left_index + right_index],
+                exact_pair_multiply(left_value, right_value),
+            )
+    return result
+
+
+def exact_pair_polynomial_power(value, exponent):
+    result = [[QQ(1), QQ(0)]]
+    base = value
+    while exponent:
+        if exponent & 1:
+            result = exact_pair_polynomial_multiply(result, base)
+        base = exact_pair_polynomial_multiply(base, base)
+        exponent >>= 1
+    return result
+
+
 exact = {}
-reconstruction = {}
+reconstruction = {"common_denominator_H": H_reconstruction}
 for name in names:
-    exact[name], reconstruction[name] = reconstruct_projectively(interpolated[name], name)
+    def validate_numerator(candidate, coefficient_name=name):
+        for prime_text, model in transport["transported_models"].items():
+            local_prime = int(prime_text)
+            reduction = [
+                [rational_mod(value, local_prime) for value in pair]
+                for pair in candidate
+            ]
+            if reduction != model["weierstrass"][coefficient_name][
+                "numerator_coefficients_low_to_high_1_omega"
+            ]:
+                return False
+        return True
+
+    numerator = []
+    numerator_reconstruction = {
+        "method": "quadratic coefficient pairs reconstructed separately",
+        "coefficients": [],
+    }
+    for coefficient_index, modular_pair in enumerate(interpolated[name]["numerator"]):
+        def validate_numerator_coefficient(
+            candidate, coefficient_name=name, index=coefficient_index
+        ):
+            for prime_text, model in transport["transported_models"].items():
+                local_prime = int(prime_text)
+                reduction = [rational_mod(value, local_prime) for value in candidate[0]]
+                expected = model["weierstrass"][coefficient_name][
+                    "numerator_coefficients_low_to_high_1_omega"
+                ][index]
+                if reduction != expected:
+                    return False
+            return True
+
+        reconstructed, diagnostic = reconstruct_pair_block(
+            [modular_pair],
+            validate_numerator_coefficient,
+            f"{name} numerator coefficient {coefficient_index}",
+        )
+        numerator.append(reconstructed[0])
+        numerator_reconstruction["coefficients"].append(diagnostic)
+    exact[name] = {
+        "degrees_numerator_denominator": interpolated[name][
+            "degrees_numerator_denominator"
+        ],
+        "numerator": numerator,
+        "denominator": exact_pair_polynomial_power(
+            exact_H, denominator_exponents[name]
+        ),
+    }
+    if not validate_candidate_at_finite_primes(exact[name], name):
+        raise ArithmeticError(f"{name}: structured candidate full record failed")
+    reconstruction[name] = {
+        "denominator_power_of_H": denominator_exponents[name],
+        "numerator": numerator_reconstruction,
+    }
 
 
 def encode_exact(candidate):
@@ -308,7 +550,14 @@ def encode_exact(candidate):
 output = {
     "schema": "elkies-k3.q80-third-q12-long-jacobian-p19-adic-reconstructed-qq.v1",
     "status": "PASS_CANDIDATE_THIRD_Q12_LONG_JACOBIAN_RECONSTRUCTION_QQ",
-    "specialization": {"u": "-2", "coefficient_field_basis": ["1", "omega"]},
+    "specialization": {
+        "u": "-2",
+        "coefficient_field_basis": ["1", "omega"],
+        "omega_square": str(omega_square_exact),
+    },
+    "common_denominator_H_coefficients_low_to_high_U_1_omega": [
+        [str(value) for value in pair] for pair in exact_H
+    ],
     "weierstrass": {name: encode_exact(exact[name]) for name in names},
     "reconstruction": reconstruction,
     "validation": {
@@ -324,6 +573,10 @@ output = {
         "manifest": {"path": str(args.manifest.relative_to(ROOT)), "sha256": sha256(args.manifest)},
         "transport": {"path": str(args.transport.relative_to(ROOT)), "sha256": sha256(args.transport)},
         "source": {"path": str(args.source.relative_to(ROOT)), "sha256": sha256(args.source)},
+        "operands": {
+            "path": str(args.operands.relative_to(ROOT)),
+            "sha256": sha256(args.operands),
+        },
     },
     "worker": {
         "path": str(Path(__file__).resolve().relative_to(ROOT)),
@@ -334,6 +587,7 @@ output = {
             "unique modular interpolation at the certified long-coefficient degree bounds through 19^digits",
             "three held-out p-adic sample replays",
             "projective LLL candidates reducing to all seven independently transported finite-prime models",
+            "the common denominator identities a1:H, a2:H^2, a3:H^2, a4:H^3, a6:H^4",
         ],
         "not_proved": [
             "literal characteristic-zero substitution into the exact genus-one pencil",

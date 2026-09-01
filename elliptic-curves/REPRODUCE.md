@@ -144,6 +144,20 @@ metric/relation search nevertheless reaches only 49 replayed rays against a
 100-ray gate on rank 25.  Its status is
 `FAIL_BLIND_R17_RECOVERY_GATE_CLOSED`; no wgxli curve is loaded.
 
+Freeze and replay the later explicitly authorized no-tuning target run:
+
+```sh
+python3 elliptic-curves/cas/freeze_latent_lattice_target_method.py --check
+
+python3 elliptic-curves/cas/run_frozen_wgxli_latent_lattice.py --check
+```
+
+The frozen tag is `LATENT-LATTICE-WGXLI-FROZEN-2026-09-01-v1`.  Its first
+target run selects dimensions `10, FAIL, 10, 13, FAIL`; because no dimension
+recurs in four fibres, the precommitted gate stops before component matching.
+This is a bounded negative result for that frozen selector, not a
+nonexistence theorem for a common subgroup.
+
 The proper-subspace replay calibrator saturates a supervised rank-16 R17
 relation path before lifting it.  Its exact lift replays 194 source rays and
 318 ternary relations and has primitive target image; the attached finite

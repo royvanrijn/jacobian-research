@@ -13,6 +13,7 @@ from latent_lattice import (
     bounded_metric_relation_search,
     bounded_metric_star_component_search,
     candidate_finite_signature,
+    candidate_finite_signatures,
     candidate_relation_fingerprint,
     candidate_finite_signature_from_record,
     cloud_height_profile_distance,
@@ -29,6 +30,7 @@ from latent_lattice import (
     finite_rarity_weights,
     finite_signature_distance,
     dense_two_core_component,
+    exact_rational_space_key,
     hermite_signature,
     hermite_signature_distance,
     height_angle_profile,
@@ -42,6 +44,7 @@ from latent_lattice import (
     merge_component_vertex_maps,
     modular_rank,
     overlapping_star_components,
+    replay_and_deduplicate_components,
     relation_metric_profile_distance,
     relation_metric_signature,
     point_complexity,
@@ -96,6 +99,32 @@ class LatentLatticeTests(unittest.TestCase):
             row_basis_coordinates(((1, 0),), ((2, 0),))
         self.assertEqual(modular_rank(((1, 0), (0, 2)), 2), 1)
         self.assertEqual(modular_rank(((1, 0), (0, 2)), 3), 2)
+
+    def test_exact_component_global_replay_and_deduplication(self) -> None:
+        vectors = ((1, 0, 0), (0, 1, 0), (1, 1, 0), (0, 0, 1))
+        complex_ = build_relation_complex(vectors)
+        self.assertEqual(
+            exact_rational_space_key(((1, 0, 0), (0, 1, 0))),
+            exact_rational_space_key(((1, 1, 0), (1, -1, 0))),
+        )
+        replayed = replay_and_deduplicate_components(
+            vectors,
+            complex_,
+            (
+                ((1, 0, 0), (0, 1, 0)),
+                ((1, 1, 0), (1, -1, 0)),
+                ((1, 0, 0), (0, 0, 1)),
+            ),
+            development_indices=(0, 1),
+            held_out_indices=(2, 3),
+        )
+        self.assertEqual(len(replayed), 2)
+        plane = next(item for item in replayed if len(item.origin_indices) == 2)
+        self.assertEqual(plane.origin_indices, (0, 1))
+        self.assertEqual(plane.development_replayed_ray_indices, (0, 1))
+        self.assertEqual(plane.held_out_replayed_ray_indices, (2,))
+        self.assertEqual(len(plane.full_replayed_relation_indices), 1)
+        self.assertEqual(dict(plane.modular_ranks), {2: 2, 3: 2})
 
     def test_general_weierstrass_group_law(self) -> None:
         curve = EllipticCurve((0, 0, 0, -1, 0))
@@ -194,6 +223,12 @@ class LatentLatticeTests(unittest.TestCase):
         )
         self.assertEqual(finite_signature.candidate_dimension, 1)
         self.assertEqual(finite_signature.retained_ray_count, 1)
+        self.assertEqual(
+            candidate_finite_signatures(
+                (expected_rectangular,), rectangular
+            ),
+            (candidate_finite_signature(expected_rectangular, rectangular),),
+        )
 
         metric_search = bounded_metric_relation_search(
             first,

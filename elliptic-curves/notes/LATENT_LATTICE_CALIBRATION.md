@@ -2,6 +2,42 @@
 
 ## Outcome
 
+### Frozen wgxli run (2026-09-01)
+
+The user subsequently authorized one cautious target run after an immutable
+method freeze.  The content-addressed tag is
+`LATENT-LATTICE-WGXLI-FROZEN-2026-09-01-v1`; its manifest hash is
+`ef6f8b7be7a14095efa7529fb795d237e06465ba1cec023dcb4845287609c9f4`.
+The manifest fixes dimensions `10..20`, adaptive cloud bounds, all seeds and
+beam widths, the three-cutoff persistence score, finite-code ensembles, the
+component sampler, equal structural-channel weights, and fivefold hold-out
+rules.  It explicitly forbids target-informed tuning under the tag.
+
+The independent dimension stage used every displayed public generator and
+returned:
+
+| ICARM fibre | ambient rank | bound | rays | frozen dimension result |
+|---|---:|---:|---:|---:|
+| 351 | 25 | 38 | 1,806 | 10 |
+| 356 | 29 | 58 | 2,655 | fail: dimensions 19/20 missing at one or more cutoffs |
+| 376 | 22 | 30 | 2,054 | 10 |
+| 377 | 23 | 34 | 3,300 | 13 |
+| 385 | 29 | 62 | 2,099 | fail: dimensions 18/19/20 missing at every cutoff |
+
+Thus no dimension recurs in at least four fibres.  The frozen result is
+`FAIL_FROZEN_DIMENSION_RECURRENCE`, with artifact hash
+`c5ca3a8746ce2d889ad0f9ff0f1eb9015f320ae0f820147da966ff0b45b5732e`.
+By the precommitted protocol, relation-component matching, primitive-Hermite
+matching, finite-index matching, held-out component prediction, and equation
+interpolation were not run.  In particular this run returns no candidate
+abstract wgxli lattice and no embeddings.
+
+This is a bounded negative result for the tagged proposal/persistence method,
+not a theorem that the five curves have no common primitive subgroup of
+dimension `10..20`.  The two failed fibres reflect proposal omissions inside
+the fixed beam.  The values 10 and 13 are statistical selector outputs, not
+proved generic ranks.
+
 The current bounded Phase-0 control gate passes.  Exact graph-walk consensus
 recovers the five fixed-dimension control spaces, and the cross-dimension
 persistence audit described below changes the Fermigier estimate from 13 to
