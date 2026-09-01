@@ -2,9 +2,10 @@
 
 <!-- status-consumer: EC-M2S-GERM 536eee72664ba729 -->
 
-Status: exact characteristic-zero local-scheme theorem and exact component
-identity.  The Mordell--Weil relation problem on the recovered component is
-not settled here, so this note makes no generic-rank-14 claim.
+Status: exact characteristic-zero local-scheme and Mordell--Weil dependence
+theorem.  The germ is a smooth surface, but the two labelled sections give
+only one non-visible direction.  The germ is therefore closed as a possible
+generic-rank-14 route.
 
 ## 1. The labelled seed
 
@@ -39,8 +40,8 @@ All root differences, the root discriminant, \(D\),
 \((1-x_{11}^2)(1-x_{12}^2)\), the difference of the two displayed affine
 lines, and every recursion denominator are nonzero at the seed.  Hence any
 saturation by their product has the same localization and completion at the
-seed as \(I\).  The arithmetic square root is treated on the etale double
-cover \(w^2=D\), where \(D=(528/25)^2\) at the selected lift.
+seed as \(I\).  In fact \(D\) is already a square in the recovered component
+function field; the orientation used below has \(w=528/25\) at the seed.
 
 ## 2. Recovered root-coordinate surface
 
@@ -116,8 +117,36 @@ zero, but (2.3) vanishes at the reduced seed, so 37 is unlucky for this
 particular component separator even though it remains a good prime for the
 original tangent calculation.
 
-On the double cover \(w^2=D\), both cubic ordinates are recovered without a
-new elimination.  For either line write
+There is no generic quadratic extension for the cubic ordinates.  Put
+\(a=r_3,b=r_4\), and define
+
+\[
+\begin{aligned}
+A={}&3a^2-3b^2-6a+3,\\
+B={}&-a^4+6a^3b-7a^2b^2+6ab^3-b^4-8a^3-6a^2b
+ +2ab^2+6b^3\\
+ &+18a^2-6ab-7b^2-8a+6b-1,\\
+C={}&12a^4b^2-12a^2b^4-48a^3b^2+24ab^4+72a^2b^2
+ -12b^4-48ab^2+12b^2,\\
+E={}&-144a^4b^3+144a^3b^4+144a^4b^2+144a^3b^3
+ -288a^2b^4-288a^3b^2\\
+ &+144a^2b^3+144ab^4+144a^2b^2-144ab^3.
+\end{aligned}
+\]
+
+Then, on the open set \(AD+C\ne0\),
+
+\[
+w=-\frac{D^2+BD+E}{AD+C}
+\tag{2.5}
+\]
+
+satisfies \(w^2=D\) identically modulo the component ideal and has the
+selected positive seed orientation.  This is a characteristic-zero normal
+form identity, not a reconstruction from pointwise finite-field squares.
+
+Both cubic ordinates are therefore rational on \(\mathcal S\).  For either
+line write
 
 \[
 s=\frac{(1-x_1^2)w}{2},\quad
@@ -185,7 +214,62 @@ This explains the rank-six Jacobian and all previously vanishing obstruction
 jets for the selected pair: they are the tangent and finite truncations of an
 actual smooth surface, not evidence for a hidden nonreduced curve.
 
-## 4. What this does and does not settle
+The reduced one-section fibre at the seed consists of the six distinct
+non-visible companions.  Over the two-dimensional moduli image of
+\(\mathcal S\), these are six etale local sheets.  Choosing any two sheets
+therefore gives a two-dimensional pair germ.  This accounts for the exact
+rank-six Jacobian for all fifteen unordered companion pairs: the phenomenon
+comes from a common two-dimensional moduli locus, not from fifteen unrelated
+nilpotent tangent excesses.  The selected pair is off the diagonal and is not
+hyperelliptically conjugate; scheme-theoretically it is one pairwise
+correspondence component in the pullback of the one-section cover.
+
+## 4. Generic Mordell--Weil dependence
+
+Let \(V(r,\epsilon)\) denote the primitive visible point with abscissa
+\(r+\epsilon T\) and ordinate \(g(r+\epsilon T)/T\), where \(g\) is the monic
+square approximant.  Orient \(P_1,P_2\) by (2.5).  Over
+\(\mathbb Q(\mathcal S)(T)\), exact covariant arithmetic gives
+
+\[
+\boxed{
+P_2=P_1+V(0,+)+V(r_4,-)+V(r_5,+)+V(r_6,-).
+}
+\tag{4.1}
+\]
+
+The compact certificate uses Riemann--Roch instead of a large expanded
+addition chain.  For a Jacobian-projective point \((X:Y:Z)\), use the row
+
+\[
+(Z^6,\;XZ^4,\;YZ^3,\;X^2Z^2,\;XYZ,\;X^3),
+\tag{4.2}
+\]
+
+which evaluates the basis \(1,x,y,x^2,xy,x^3\) of \(L(6O)\).  The determinant
+of the six rows belonging to
+
+\[
+P_2,-P_1,-V(0,+),-V(r_4,-),-V(r_5,+),-V(r_6,-)
+\]
+
+has zero normal form modulo the characteristic-zero component ideal.  A
+five-by-five cofactor is nonzero on the generic component modulo 17, and the
+six points are generically distinct, so the determinant is a genuine
+degree-six divisor relation.  Abel's theorem gives (4.1).  Direct generic
+group-law checks on three irreducible degree-eight component fibres over
+\(\mathbb F_{17}\), at \((r_3,r_4)=(3,6),(3,7),(3,11)\), independently
+return the same relation.  Primes 17, 29, 31 and 37 also agree that (2.5)
+lies in the degree-four subfield of the labelled degree-eight root
+presentation.
+
+Thus this is outcome B: the local scheme is reduced and smooth, but its two
+sections are generically dependent modulo the visible Mestre subgroup.  It
+is neither a tangent intersection nor a nilpotent thickening.  Reversing the
+choice of \(w\) negates both \(P_1\) and \(P_2\) and changes the visible sum in
+(4.1) to its negative.
+
+## 5. Consequences and boundary of the theorem
 
 The component is not the fixed-root D-square curve.  That curve is a
 one-dimensional specialization through the displayed moduli point, and its
@@ -204,53 +288,40 @@ same root surface after the relabelling
 
 There (2.1) gives the exact pair
 \(5/3-T/21\) and \(619/69+31T/21\).  This supplies a distant exact point on
-the recovered surface, not an independence certificate.
+the recovered surface and a specialization control for (4.1).
 
-The following remain open and are not promoted by the local theorem:
+At both known rational root points, exact finite-reduction quotient panels
+gain one direction after adjoining \(P_1\) and no further direction after
+adjoining \(P_2\), as (4.1) predicts.  On the fixed-root family, all other
+companions were already known exact combinations of the visible sections,
+split infinity and \(P_1\); (4.1) is the two-dimensional explanation behind
+that control.
 
-- normalization or a low-genus model of the full surface (2.4);
-- a generic visible-subgroup relation, or two-direction independence, for
-  the two recovered sections;
-- split-infinity parameterization, generic rank at least 14, a third section,
-  or a discriminant/conductor comparison.
+Equation (2.5) concerns the leading square used by the affine cubic
+ordinates.  It does not by itself replace the usual split-infinity conic in
+the elliptic base parameter \(T\).  Since (4.1) rules out a second generic
+direction before that base change, imposing split infinity cannot turn this
+pair into a rank-14 construction.
 
-At each of the two known rational root points, current finite-reduction tests
-gain at most one direction after adjoining the pair.  This is evidence for a
-generic dependence relation, but it is not yet its proof.
+The normalization and birational type of the global projective closure of
+(2.4) remain uncomputed.  They are no longer an obstruction to classifying
+the germ or its displayed Mordell--Weil content.  No generic rank upper bound,
+saturation theorem, third-section theorem, or new conductor comparison is
+claimed.
 
-There is also a sharp split-infinity signal, again not promoted to a theorem.
-At the two rational points the leading invariant is respectively
-
-\[
-D=(528/25)^2,
-\qquad
-D=(14400/529)^2.
-\]
-
-An exhaustive enumeration of the root-distinct open chart \(edQ\ne0\) gives
-only nonzero-square values of \(D\) at all 112, 280, 544 and 744 component
-points over \(\mathbb F_{17},\mathbb F_{29},\mathbb F_{31}\) and
-\(\mathbb F_{37}\), respectively.  This is evidence that \(D\) may already
-be a square in the component function field; pointwise squareness over finite
-fields does not prove that assertion.
-
-The precise globalization obstruction is now the following.  In the
-degree-eight presentation of the component over
-\(\mathbb Q(r_3,r_4)\), one must either reconstruct and verify a rational
-square root of \(D\), or prove that the quadratic cover is nontrivial, and
-then perform the visible-subgroup relation calculation in that exact field.
-The available algebra system does not factor or extract square roots in this
-two-transcendental algebraic function-field tower.  Direct covariant normal
-forms on the root chart were stopped after they failed to construct the first
-two generic Jacobian points within a compact resource bound.  Thus neither
-split infinity nor generic dependence is certified here.
-
-## 5. Reproduction
+## 6. Reproduction
 
 The characteristic-zero component identity is:
 
 ```bash
 Singular -q elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
+```
+
+The characteristic-zero visible-dependence determinant is:
+
+```bash
+Singular -q \
+  elliptic-curves/cas/verify_mestre_two_section_visible_relation_parameter.sing
 ```
 
 The two fully lucky modular repetitions are:
@@ -275,4 +346,15 @@ The explicitly experimental split-infinity audit is:
 
 ```bash
 python3 elliptic-curves/cas/probe_mestre_two_section_split_infinity.py
+```
+
+It is retained only as an independent finite-field control; the exact square
+identity (2.5) supersedes its former conjectural interpretation.  A fast
+degree-eight modular fibre replay, including the nonzero cofactor, is:
+
+```bash
+MESTRE_RELATION_PRIME=17 MESTRE_COMPONENT_SQRT=1 \
+MESTRE_SPECIALIZE_AB=3,6 \
+MESTRE_TEST_RELATION_DETERMINANT=1 \
+  sage elliptic-curves/cas/verify_mestre_two_section_component_relation.sage
 ```

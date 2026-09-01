@@ -8,7 +8,9 @@ from typing import Sequence
 
 import numpy as np
 
+from .integer import canonical_unoriented, content
 from .pari import run_gp
+from .relations import RelationComplex, build_relation_complex
 
 
 @dataclass(frozen=True)
@@ -114,6 +116,86 @@ def hermite_signature_distance(left: HermiteSignature, right: HermiteSignature) 
     return abs(float(left.log_hermite_invariant) - float(right.log_hermite_invariant))
 
 
+@dataclass(frozen=True)
+class RelationMetricSignature:
+    """Scale-free length geometry on an induced additive relation complex."""
+
+    relation_count: int
+    quantile_count: int
+    normalized_sorted_log_length_quantiles: tuple[str, ...]
+
+    def profile(self) -> np.ndarray:
+        return np.asarray(self.normalized_sorted_log_length_quantiles, dtype=float)
+
+    def to_record(self) -> dict[str, object]:
+        return {
+            "retained_ternary_relation_count": self.relation_count,
+            "quantile_count": self.quantile_count,
+            "normalized_sorted_log_length_quantiles": list(
+                self.normalized_sorted_log_length_quantiles
+            ),
+        }
+
+
+def relation_metric_signature(
+    vectors: Sequence[Sequence[int]],
+    heights: Sequence[float | str],
+    inlier_indices: Sequence[int],
+    complex_: RelationComplex,
+    *,
+    quantiles: int = 64,
+) -> RelationMetricSignature:
+    """Sketch normalized edge-length triples on the candidate subcomplex."""
+
+    if len(vectors) != len(heights):
+        raise ValueError("vector and height populations differ")
+    if quantiles < 2:
+        raise ValueError("at least two relation-metric quantiles are required")
+    input_index = {
+        canonical_unoriented(vector): index for index, vector in enumerate(vectors)
+    }
+    if len(input_index) != len(vectors):
+        raise ValueError("vector population repeats an unoriented ray")
+    if set(input_index) != set(complex_.vertices):
+        raise ValueError("vectors and relation-complex vertices differ")
+    retained_input = set(map(int, inlier_indices))
+    retained = tuple(input_index[vertex] in retained_input for vertex in complex_.vertices)
+    log_heights = np.log(np.asarray([float(value) for value in heights], dtype=float))
+    triples = []
+    for edge in complex_.ternary_relations:
+        if not all(retained[index] for index in edge):
+            continue
+        values = np.sort(
+            np.asarray(
+                [log_heights[input_index[complex_.vertices[index]]] for index in edge],
+                dtype=float,
+            )
+        )
+        triples.append(values - float(np.mean(values)))
+    if not triples:
+        raise ValueError("candidate has no retained ternary relation")
+    matrix = np.asarray(triples, dtype=float)
+    positions = np.linspace(0.0, 1.0, int(quantiles))
+    profile = np.concatenate(
+        [np.quantile(matrix[:, column], positions) for column in range(3)]
+    )
+    return RelationMetricSignature(
+        relation_count=len(triples),
+        quantile_count=int(quantiles),
+        normalized_sorted_log_length_quantiles=tuple(
+            f"{value:.17g}" for value in profile
+        ),
+    )
+
+
+def relation_metric_profile_distance(
+    left: RelationMetricSignature, right: RelationMetricSignature
+) -> float:
+    if left.quantile_count != right.quantile_count:
+        return float("inf")
+    return float(np.sqrt(np.mean((left.profile() - right.profile()) ** 2)))
+
+
 def cloud_height_profile_distance(
     left: CloudHeightSignature, right: CloudHeightSignature
 ) -> float:
@@ -199,6 +281,178 @@ class ThetaSignature:
             "unoriented_vector_count": self.vector_count,
             "lengths": list(self.lengths),
         }
+
+
+@dataclass(frozen=True)
+class IntrinsicShellSignature:
+    """Exact additive complex on a complete numerically bounded lattice shell.
+
+    The selected vectors and their relations are exact integer data.  Only the
+    decision that a vector lies below the declared canonical-height boundary
+    is numerical.
+    """
+
+    rank: int
+    minimum: str
+    enumeration_bound: str
+    growth_steps: int
+    raw_vector_count: int
+    primitive_vector_count: int
+    normalized_log_height_quantiles: tuple[str, ...]
+    relation_complex: RelationComplex
+
+    def to_record(self, *, include_relations: bool = False) -> dict[str, object]:
+        return {
+            "rank": self.rank,
+            "minimum": self.minimum,
+            "enumeration_bound": self.enumeration_bound,
+            "growth_steps": self.growth_steps,
+            "raw_unoriented_vector_count": self.raw_vector_count,
+            "primitive_unoriented_vector_count": self.primitive_vector_count,
+            "normalized_log_height_quantiles": list(
+                self.normalized_log_height_quantiles
+            ),
+            "relation_complex": self.relation_complex.to_record(
+                include_relations=include_relations
+            ),
+        }
+
+
+@dataclass(frozen=True)
+class IntrinsicShellDistance:
+    """Decomposed soft distance between two exact intrinsic shell complexes."""
+
+    height_quantile_rms: float
+    centered_degree_quantile_rms: float
+    log_population_difference: float
+    log_edge_density_difference: float
+    total: float
+
+
+def intrinsic_shell_profile_distance(
+    left: IntrinsicShellSignature,
+    right: IntrinsicShellSignature,
+) -> IntrinsicShellDistance:
+    """Compare deformed shells without requiring literal graph isomorphism."""
+
+    if left.rank != right.rank:
+        return IntrinsicShellDistance(*(float("inf"),) * 5)
+    left_height = np.asarray(left.normalized_log_height_quantiles, dtype=float)
+    right_height = np.asarray(right.normalized_log_height_quantiles, dtype=float)
+    if len(left_height) != len(right_height):
+        return IntrinsicShellDistance(*(float("inf"),) * 5)
+    quantiles = len(left_height)
+
+    def degree_profile(signature: IntrinsicShellSignature) -> np.ndarray:
+        values = np.log1p(
+            np.asarray(signature.relation_complex.additive_degrees, dtype=float)
+        )
+        values -= float(np.mean(values))
+        return np.quantile(values, np.linspace(0.0, 1.0, quantiles))
+
+    height_distance = float(np.sqrt(np.mean((left_height - right_height) ** 2)))
+    degree_distance = float(
+        np.sqrt(np.mean((degree_profile(left) - degree_profile(right)) ** 2))
+    )
+    population_distance = abs(
+        log(left.primitive_vector_count / right.primitive_vector_count)
+    )
+    left_density = (len(left.relation_complex.ternary_relations) + 1) / (
+        left.primitive_vector_count + 1
+    )
+    right_density = (len(right.relation_complex.ternary_relations) + 1) / (
+        right.primitive_vector_count + 1
+    )
+    density_distance = abs(log(left_density / right_density))
+    total = (
+        height_distance
+        + degree_distance
+        + 0.25 * population_distance
+        + 0.25 * density_distance
+    )
+    return IntrinsicShellDistance(
+        height_quantile_rms=height_distance,
+        centered_degree_quantile_rms=degree_distance,
+        log_population_difference=population_distance,
+        log_edge_density_difference=density_distance,
+        total=total,
+    )
+
+
+def intrinsic_shell_signature(
+    gram: Sequence[Sequence[float | str]],
+    *,
+    minimum_vectors: int = 128,
+    quantiles: int = 64,
+    growth: float = 1.12,
+    maximum_steps: int = 40,
+    maximum_vectors: int = 100_000,
+    digits: int = 80,
+    timeout: float = 300.0,
+) -> IntrinsicShellSignature:
+    """Enumerate a complete intrinsic shell and retain its exact relations.
+
+    PARI chooses a complete norm boundary on an LLL-reduced Gram.  Its vectors
+    are mapped back to the supplied integral basis, filtered to primitive
+    unoriented rays, and canonicalized before relation construction.
+    """
+
+    if minimum_vectors < 1:
+        raise ValueError("minimum_vectors must be positive")
+    if quantiles < 2:
+        raise ValueError("at least two height quantiles are required")
+    if not 1.0 < growth < 2.0:
+        raise ValueError("growth must lie strictly between one and two")
+    if maximum_vectors < minimum_vectors:
+        raise ValueError("maximum_vectors must be at least minimum_vectors")
+    literal = _gp_real_matrix(gram)
+    program = f"""
+default(realprecision,{int(digits)});
+G={literal};U=qflllgram(G);R=U~*G*U;
+B=vecmin(vector(matsize(R)[1],i,R[i,i]));
+Q=qfminim(R,B,{int(maximum_vectors)},2);s=0;
+while(matsize(Q[3])[2] < {int(minimum_vectors)} && s < {int(maximum_steps)},{{B=B*{float(growth):.17g};Q=qfminim(R,B,{int(maximum_vectors)},2);s++}});
+V=U*Q[3];L=vector(matsize(V)[2],j,V[,j]~*G*V[,j]);mn=vecmin(L);
+print("META|",matsize(G)[1],"|",mn,"|",B,"|",s,"|",#L);
+print("BEGIN");for(j=1,matsize(V)[2],{{for(i=1,matsize(V)[1],if(i>1,print1(","));print1(V[i,j]));print("|",L[j])}});print("END");
+"""
+    lines = run_gp(program, timeout=timeout)
+    rank, minimum, bound, steps, raw_count = next(
+        line.split("|")[1:] for line in lines if line.startswith("META|")
+    )
+    vectors: dict[tuple[int, ...], float] = {}
+    for line in lines[lines.index("BEGIN") + 1 : lines.index("END")]:
+        raw_text, height_text = line.split("|", 1)
+        raw = tuple(map(int, raw_text.split(",")))
+        if content(raw) != 1:
+            continue
+        vector = canonical_unoriented(raw)
+        height = float(height_text)
+        old = vectors.setdefault(vector, height)
+        if abs(old - height) > 1e-8 * max(1.0, abs(height)):
+            raise ArithmeticError("opposite shell vectors have inconsistent heights")
+    if len(vectors) < minimum_vectors:
+        raise ArithmeticError(
+            "complete raw shell did not contain the requested primitive population"
+        )
+    if int(raw_count) >= maximum_vectors:
+        raise ArithmeticError("intrinsic shell reached maximum_vectors cap")
+    ordered = tuple(sorted(vectors))
+    log_heights = np.log(np.asarray([vectors[vector] for vector in ordered]))
+    log_heights -= float(np.mean(log_heights))
+    profile = np.quantile(log_heights, np.linspace(0.0, 1.0, int(quantiles)))
+    return IntrinsicShellSignature(
+        rank=int(rank),
+        minimum=minimum,
+        enumeration_bound=bound,
+        growth_steps=int(steps),
+        raw_vector_count=int(raw_count),
+        primitive_vector_count=len(ordered),
+        normalized_log_height_quantiles=tuple(
+            f"{value:.17g}" for value in profile
+        ),
+        relation_complex=build_relation_complex(ordered),
+    )
 
 
 def theta_signature(

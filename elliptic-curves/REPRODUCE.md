@@ -98,6 +98,10 @@ PYTHONPATH=elliptic-curves:elliptic-curves/cas \
 PYTHONPATH=elliptic-curves:elliptic-curves/cas \
   python3 \
   elliptic-curves/cas/calibrate_finite_aware_latent_lattice.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 \
+  elliptic-curves/cas/calibrate_latent_lattice_shape.py --check
 ```
 
 The active `v2` artifact uses corrected unit/scaled relation semantics and
@@ -113,6 +117,16 @@ quotient ensembles.  It recovers R17 in all four bounded proposal ledgers but
 reaches only 11/12, 11/12, and 8/12 on the three Fermigier controls; finite
 profile matching leaves the rank-25 truth at rank 188.  Its status is
 `FAIL_FINITE_PROPOSAL_RECALL`, so it likewise leaves the target gate closed.
+
+The shape replay adds exact cross-bound rational intersections and primitive
+closure.  It tests the top 200 height-28 enclosures against the top 200
+height-29 enclosures on ICARM 245 and puts the true rank-12 Fermigier subgroup
+at rank 65 among 2,939 exact candidates.  All four R17 truth spaces occur in
+the finite-seeded ledgers, and the rank-25 held-out experiment succeeds, but
+symmetric leave-one-out selection succeeds on only one of four R17 fibres.
+Its status is `PASS_PROPOSAL_CALIBRATION_SELECTOR_FAIL`; target use remains
+forbidden.  The full `--check` regenerates the control clouds and can take
+several minutes.
 
 Eliminate the section and surface coefficients from the literal five-fibre
 rootless-K3 ansatz, then exhaust every normalized projective first-jet chart

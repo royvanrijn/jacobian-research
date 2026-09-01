@@ -16516,12 +16516,13 @@ the first seventeen onto each complete bad-component product.  Canonical
 heights remain high-precision numerical data.  See
 [`elliptic-curves/notes/RECORD_CURVES_273_302_FIRST17_SUBGROUPS.md`](elliptic-curves/notes/RECORD_CURVES_273_302_FIRST17_SUBGROUPS.md).
 
-## Six-root Mestre two-section local surface
+## Six-root Mestre two-section surface and dependence relation
 
 <!-- status-consumer: EC-M2S-GERM 536eee72664ba729 -->
 
 Certify the characteristic-zero root-coordinate component through
-`(0,25,95,143,168,205)` and its two labelled affine sections with
+`(0,25,95,143,168,205)`, its two labelled affine sections, and the rational
+square root of the leading invariant with
 
 ```bash
 Singular -q elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
@@ -16530,8 +16531,25 @@ Singular -q elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
 The verifier reconstructs the Mestre remainder recursively, localizes the
 two-equation root surface away from the non-seed resultant factor, and proves
 all six ordinate-eliminated residuals vanish.  It also checks that the source
-is smooth with the two labelled coordinates as local parameters.  The fully
-lucky finite-characteristic repetitions are
+is smooth with the two labelled coordinates as local parameters.
+
+Certify the generic visible dependence relation
+
+```text
+P2 = P1 + V(0,+) + V(r4,-) + V(r5,+) + V(r6,-)
+```
+
+by an exact `L(6O)` determinant over the component function field with
+
+```bash
+Singular -q \
+  elliptic-curves/cas/verify_mestre_two_section_visible_relation_parameter.sing
+```
+
+This second verifier first replays the root-surface certificate, then moves
+the elliptic base parameter into the coefficient field `Q(T)` and reduces
+the Riemann--Roch determinant by the exact component ideal.  The fully lucky
+finite-characteristic repetitions of the local certificate are
 
 ```bash
 Singular -q -u 17 elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
@@ -16545,13 +16563,22 @@ unlucky for this particular component separator: the removed resultant factor
 meets the reduced seed there.  See
 [`elliptic-curves/notes/MESTRE_TWO_SECTION_INCIDENCE_GERM.md`](elliptic-curves/notes/MESTRE_TWO_SECTION_INCIDENCE_GERM.md).
 
-Audit the split-infinity signal on the recovered component with
+The older finite-field audit
 
 ```bash
 python3 elliptic-curves/cas/probe_mestre_two_section_split_infinity.py
 ```
 
-This exhaustive finite-field calculation is labelled as an experiment.  It
-finds no nonsquare value of the leading invariant on the root-distinct
-`edQ != 0` chart at 17, 29, 31 or 37, but it is not a function-field square
-certificate.
+is retained as an independent experiment.  Its pointwise square observations
+at 17, 29, 31 and 37 are superseded by the characteristic-zero rational square
+identity in the root-surface verifier.
+
+An independent degree-eight modular fibre determinant and nonzero-cofactor
+check is
+
+```bash
+MESTRE_RELATION_PRIME=17 MESTRE_COMPONENT_SQRT=1 \
+MESTRE_SPECIALIZE_AB=3,6 \
+MESTRE_TEST_RELATION_DETERMINANT=1 \
+  sage elliptic-curves/cas/verify_mestre_two_section_component_relation.sage
+```

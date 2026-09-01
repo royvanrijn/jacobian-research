@@ -1,0 +1,307 @@
+// Fast characteristic-zero Riemann--Roch certificate over Q(T).
+//
+// First run the root-surface checker in its polynomial ring.  Extract only
+// the recursive quartic coefficients, the two triangular ordinate inputs,
+// and the four visible approximant values.  Then move T into the coefficient
+// field and perform the divisor determinant modulo the same exact component
+// ideal.  This is algebraically the same identity, but avoids eliminating T.
+execute(read("elliptic-curves/cas/verify_mestre_two_section_root_surface.sing"));
+
+poly relationSectionValue1 = reduce(
+  subst(R,X,x01+x11*T),componentBasis
+);
+poly relationSectionValue2 = reduce(
+  subst(R,X,x02+x12*T),componentBasis
+);
+
+string savedM = string(M);
+string savedD = string(D);
+string savedQ = string(Q);
+string savedSplitA = string(splitA);
+string savedSplitB = string(splitB);
+string savedSplitC = string(splitC);
+string savedSplitE = string(splitE);
+string savedQuarticE = string(coefficientIn(R,X,0));
+string savedQuarticD = string(coefficientIn(R,X,1));
+string savedQuarticC = string(coefficientIn(R,X,2));
+string savedQuarticB = string(coefficientIn(R,X,3));
+string savedQuarticA = string(coefficientIn(R,X,4));
+string savedF13 = string(coefficientIn(relationSectionValue1,T,3));
+string savedF14 = string(coefficientIn(relationSectionValue1,T,4));
+string savedF15 = string(coefficientIn(relationSectionValue1,T,5));
+string savedF23 = string(coefficientIn(relationSectionValue2,T,3));
+string savedF24 = string(coefficientIn(relationSectionValue2,T,4));
+string savedF25 = string(coefficientIn(relationSectionValue2,T,5));
+string savedVisible0PlusY = string(reduce(subst(g,X,T),componentBasis));
+string savedVisible4MinusY = string(
+  reduce(subst(g,X,r4-T),componentBasis)
+);
+string savedVisible5PlusY = string(
+  reduce(subst(g,X,r5+T),componentBasis)
+);
+string savedVisible6MinusY = string(
+  reduce(subst(g,X,r6-T),componentBasis)
+);
+
+// The projection to (r3,r4) is generically finite of degree eight.  Treating
+// r3,r4 as parameters makes every normal form below a calculation in that
+// finite algebra over Q(T,r3,r4), rather than in a positive-dimensional
+// polynomial quotient.
+ring RelationSurface = (0,T,r3,r4),(r5,r6,ie,id,iq),dp;
+execute("poly M="+savedM+";");
+execute("poly D="+savedD+";");
+execute("poly Q="+savedQ+";");
+execute("poly splitA="+savedSplitA+";");
+execute("poly splitB="+savedSplitB+";");
+execute("poly splitC="+savedSplitC+";");
+execute("poly splitE="+savedSplitE+";");
+execute("poly quarticE="+savedQuarticE+";");
+execute("poly quarticD="+savedQuarticD+";");
+execute("poly quarticC="+savedQuarticC+";");
+execute("poly quarticB="+savedQuarticB+";");
+execute("poly quarticA="+savedQuarticA+";");
+execute("poly f13="+savedF13+";");
+execute("poly f14="+savedF14+";");
+execute("poly f15="+savedF15+";");
+execute("poly f23="+savedF23+";");
+execute("poly f24="+savedF24+";");
+execute("poly f25="+savedF25+";");
+execute("poly visible0PlusY="+savedVisible0PlusY+";");
+execute("poly visible4MinusY="+savedVisible4MinusY+";");
+execute("poly visible5PlusY="+savedVisible5PlusY+";");
+execute("poly visible6MinusY="+savedVisible6MinusY+";");
+
+poly e = r3-r4+1;
+poly d = r3-r5-r6+1;
+poly sparseRelation =
+  r3*ie+r5+r6-r4-(r3-r5*r6)*id;
+ideal componentIdeal = M,e*ie-1,d*id-1,sparseRelation,Q*iq-1;
+ideal componentBasis = std(componentIdeal);
+
+proc nfProduct(poly left, poly right)
+{
+  return(reduce(left*right,componentBasis));
+}
+
+proc nfSquare(poly value)
+{
+  return(nfProduct(value,value));
+}
+
+proc nfPower(poly value, int exponent)
+{
+  poly answer = 1;
+  int index;
+  for (index=1; index<=exponent; index=index+1)
+  {
+    answer = nfProduct(answer,value);
+  }
+  return(answer);
+}
+
+poly splitNumerator = reduce(
+  -nfSquare(D)-nfProduct(splitB,D)-splitE,componentBasis
+);
+poly splitDenominator = reduce(nfProduct(splitA,D)+splitC,componentBasis);
+if (reduce(
+  nfSquare(splitNumerator)-nfProduct(D,nfSquare(splitDenominator)),
+  componentBasis
+) != 0)
+{
+  "ERROR: leading square identity failed after moving to Q(T)";
+  exit(2);
+}
+
+poly x01 = reduce(r3*ie,componentBasis);
+poly x11 = reduce((r5-r6)*ie,componentBasis);
+poly x02 = reduce((r3-r5*r6)*id,componentBasis);
+poly x12 = reduce(-r4*id,componentBasis);
+
+proc nonvisibleOrdinate(poly slope, poly f3, poly f4, poly f5)
+{
+  poly slopeSquared = nfSquare(slope);
+  poly Sn = nfProduct(1-slopeSquared,splitNumerator);
+  poly Sd = 2*splitDenominator;
+  poly Sn2 = nfSquare(Sn);
+  poly Sn3 = nfProduct(Sn2,Sn);
+  poly Sn4 = nfSquare(Sn2);
+  poly Sn5 = nfProduct(Sn4,Sn);
+  poly Sn6 = nfSquare(Sn3);
+  poly Sd2 = nfSquare(Sd);
+  poly N1n = reduce(
+    4*nfProduct(Sn2,f4)-nfProduct(nfSquare(f5),Sd2),
+    componentBasis
+  );
+  poly N0n = reduce(
+    8*nfProduct(Sn4,f3)-nfProduct(nfProduct(N1n,f5),Sd2),
+    componentBasis
+  );
+  poly yNumerator = reduce(
+    nfProduct(N0n,Sd2)
+    +2*T*nfProduct(nfProduct(N1n,Sn2),Sd2)
+    +8*T^2*nfProduct(nfProduct(f5,Sn4),Sd2)
+    +16*T^3*Sn6,
+    componentBasis
+  );
+  poly yDenominator = reduce(16*nfProduct(Sn5,Sd),componentBasis);
+  return(ideal(yNumerator,yDenominator));
+}
+
+poly covariantG0 = reduce(
+  nfSquare(quarticB)/16-nfProduct(quarticA,quarticC)/6,
+  componentBasis
+);
+poly covariantG1 = reduce(
+  nfProduct(quarticB,quarticC)/12-nfProduct(quarticA,quarticD)/2,
+  componentBasis
+);
+poly covariantG2 = reduce(
+  nfSquare(quarticC)/12-nfProduct(quarticB,quarticD)/8
+  -nfProduct(quarticA,quarticE),
+  componentBasis
+);
+poly covariantG3 = reduce(
+  nfProduct(quarticC,quarticD)/12-nfProduct(quarticB,quarticE)/2,
+  componentBasis
+);
+poly covariantG4 = reduce(
+  nfSquare(quarticD)/16-nfProduct(quarticC,quarticE)/6,
+  componentBasis
+);
+
+proc covariantPoint(poly xValue, poly yNumerator, poly yDenominator)
+{
+  poly x2 = nfSquare(xValue);
+  poly x3 = nfProduct(x2,xValue);
+  poly x4 = nfSquare(x2);
+  poly gv = reduce(
+    covariantG0*x4+covariantG1*x3+covariantG2*x2
+    +covariantG3*xValue+covariantG4,
+    componentBasis
+  );
+  poly gx = reduce(
+    4*covariantG0*x3+3*covariantG1*x2
+    +2*covariantG2*xValue+covariantG3,
+    componentBasis
+  );
+  poly gy = reduce(
+    covariantG1*x3+2*covariantG2*x2
+    +3*covariantG3*xValue+4*covariantG4,
+    componentBasis
+  );
+  poly ux = reduce(
+    4*quarticA*x3+3*quarticB*x2
+    +2*quarticC*xValue+quarticD,
+    componentBasis
+  );
+  poly uy = reduce(
+    quarticB*x3+2*quarticC*x2
+    +3*quarticD*xValue+4*quarticE,
+    componentBasis
+  );
+  poly hv = reduce((nfProduct(ux,gy)-nfProduct(uy,gx))/8,componentBasis);
+  poly denominator2 = nfSquare(yDenominator);
+  poly denominator3 = nfProduct(denominator2,yDenominator);
+  return(ideal(
+    36*nfProduct(gv,denominator2),
+    108*nfProduct(hv,denominator3),
+    yNumerator
+  ));
+}
+
+ideal ordinate1 = nonvisibleOrdinate(x11,f13,f14,f15);
+ideal ordinate2 = nonvisibleOrdinate(x12,f23,f24,f25);
+"nonvisible_ordinates_constructed",1;
+ideal point1 = covariantPoint(x01+x11*T,ordinate1[1],ordinate1[2]);
+ideal point2 = covariantPoint(x02+x12*T,ordinate2[1],ordinate2[2]);
+"nonvisible_covariant_points_constructed",1;
+ideal visible0plus = covariantPoint(T,visible0PlusY,T);
+ideal visible4minus = covariantPoint(r4-T,visible4MinusY,T);
+ideal visible5plus = covariantPoint(r5+T,visible5PlusY,T);
+ideal visible6minus = covariantPoint(r6-T,visible6MinusY,T);
+"visible_support_constructed",1;
+
+ideal relationPoints =
+  point2[1],point2[2],point2[3],
+  point1[1],-point1[2],point1[3],
+  visible0plus[1],-visible0plus[2],visible0plus[3],
+  visible4minus[1],-visible4minus[2],visible4minus[3],
+  visible5plus[1],-visible5plus[2],visible5plus[3],
+  visible6minus[1],-visible6minus[2],visible6minus[3];
+
+matrix relationMatrix[6][6];
+int rowIndex;
+int offset;
+poly rowX;
+poly rowY;
+poly rowZ;
+for (rowIndex=1; rowIndex<=6; rowIndex=rowIndex+1)
+{
+  offset = 3*(rowIndex-1);
+  rowX = relationPoints[offset+1];
+  rowY = relationPoints[offset+2];
+  rowZ = relationPoints[offset+3];
+  relationMatrix[rowIndex,1] = nfPower(rowZ,6);
+  relationMatrix[rowIndex,2] = nfProduct(rowX,nfPower(rowZ,4));
+  relationMatrix[rowIndex,3] = nfProduct(rowY,nfPower(rowZ,3));
+  relationMatrix[rowIndex,4] = nfProduct(nfSquare(rowX),nfSquare(rowZ));
+  relationMatrix[rowIndex,5] = nfProduct(nfProduct(rowX,rowY),rowZ);
+  relationMatrix[rowIndex,6] = nfPower(rowX,3);
+}
+"riemann_roch_matrix_constructed",1;
+
+proc nfDeterminant(matrix inputMatrix)
+{
+  int matrixSize = nrows(inputMatrix);
+  if (matrixSize == 1)
+  {
+    return(reduce(inputMatrix[1,1],componentBasis));
+  }
+  poly answer = 0;
+  int expansionColumn;
+  int sourceRow;
+  int sourceColumn;
+  int targetRow;
+  int targetColumn;
+  poly term;
+  for (expansionColumn=1; expansionColumn<=matrixSize;
+       expansionColumn=expansionColumn+1)
+  {
+    matrix submatrix[matrixSize-1][matrixSize-1];
+    targetRow = 1;
+    for (sourceRow=2; sourceRow<=matrixSize; sourceRow=sourceRow+1)
+    {
+      targetColumn = 1;
+      for (sourceColumn=1; sourceColumn<=matrixSize;
+           sourceColumn=sourceColumn+1)
+      {
+        if (sourceColumn != expansionColumn)
+        {
+          submatrix[targetRow,targetColumn] = inputMatrix[sourceRow,sourceColumn];
+          targetColumn = targetColumn+1;
+        }
+      }
+      targetRow = targetRow+1;
+    }
+    term = nfProduct(
+      inputMatrix[1,expansionColumn],nfDeterminant(submatrix)
+    );
+    if (expansionColumn % 2 == 1)
+    {
+      answer = reduce(answer+term,componentBasis);
+    }
+    else
+    {
+      answer = reduce(answer-term,componentBasis);
+    }
+  }
+  return(answer);
+}
+
+poly relationDeterminant = nfDeterminant(relationMatrix);
+
+"MESTRE_TWO_SECTION_VISIBLE_RELATION_V1";
+"coefficient_field","Q(T)";
+"relation","P2=P1+V(0,+)+V(r4,-)+V(r5,+)+V(r6,-)";
+"riemann_roch_determinant_zero",relationDeterminant == 0;
+"DONE";

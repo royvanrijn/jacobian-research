@@ -6,6 +6,7 @@ from latent_lattice import (
     EllipticCurve,
     FiniteQuotientBlock,
     ShortVectorRecord,
+    aggregate_repeated_intersection_ledgers,
     build_relation_complex,
     candidate_finite_signature,
     candidate_finite_signature_from_record,
@@ -19,11 +20,17 @@ from latent_lattice import (
     finite_signature_distance,
     hermite_signature,
     hermite_signature_distance,
+    intrinsic_shell_signature,
+    intrinsic_shell_profile_distance,
+    relation_metric_profile_distance,
+    relation_metric_signature,
     point_complexity,
     primitive_column_closure,
     rational_nullspace,
     rational_rank,
+    row_basis_coordinates,
     recover_exact_embedding,
+    repeated_cross_bound_intersection_ledger,
     theta_profile_distance,
     theta_signature,
 )
@@ -51,6 +58,13 @@ class LatentLatticeTests(unittest.TestCase):
         self.assertEqual(len(kernel), 1)
         self.assertEqual(sum(a * b for a, b in zip((1, 2, 3), kernel[0])), 0)
         self.assertEqual(sum(a * b for a, b in zip((0, 1, 0), kernel[0])), 0)
+        coordinates = row_basis_coordinates(
+            ((3, 5, 8), (-1, 2, 1)),
+            ((1, 1, 2), (0, 1, 1)),
+        )
+        self.assertEqual(coordinates, ((3, 2), (-1, 3)))
+        with self.assertRaises(ValueError):
+            row_basis_coordinates(((1, 0),), ((2, 0),))
 
     def test_general_weierstrass_group_law(self) -> None:
         curve = EllipticCurve((0, 0, 0, -1, 0))
@@ -178,6 +192,34 @@ class LatentLatticeTests(unittest.TestCase):
         second = hermite_signature(((35.0, 21.0), (21.0, 21.0)))
         self.assertLess(hermite_signature_distance(first, second), 1e-12)
 
+    def test_intrinsic_shell_relations_are_scale_and_basis_invariant(self) -> None:
+        first = intrinsic_shell_signature(
+            ((2.0, 0.0), (0.0, 3.0)), minimum_vectors=4, quantiles=4
+        )
+        second = intrinsic_shell_signature(
+            ((35.0, 21.0), (21.0, 21.0)), minimum_vectors=4, quantiles=4
+        )
+        self.assertEqual(first.primitive_vector_count, second.primitive_vector_count)
+        self.assertEqual(
+            first.relation_complex.canonical_digest,
+            second.relation_complex.canonical_digest,
+        )
+        self.assertLess(intrinsic_shell_profile_distance(first, second).total, 1e-12)
+
+    def test_relation_metric_signature_is_scale_and_basis_invariant(self) -> None:
+        vectors = ((1, 0), (0, 1), (1, 1), (1, -1))
+        complex_ = build_relation_complex(vectors)
+        first = relation_metric_signature(vectors, (2, 3, 5, 7), range(4), complex_, quantiles=5)
+        transformed = tuple((x + 2 * y, x + y) for x, y in vectors)
+        second = relation_metric_signature(
+            transformed,
+            (22, 33, 55, 77),
+            (3, 2, 1, 0),
+            build_relation_complex(transformed),
+            quantiles=5,
+        )
+        self.assertLess(relation_metric_profile_distance(first, second), 1e-12)
+
     def test_finite_candidate_signature_forgets_all_basis_choices(self) -> None:
         vectors = (
             (1, 0, 0),
@@ -299,6 +341,64 @@ class LatentLatticeTests(unittest.TestCase):
         self.assertEqual(len(proposals), 1)
         self.assertEqual(proposals[0].support, 3)
         self.assertEqual(proposals[0].basis_rows, ((1, 0, 0, 0), (0, 1, 0, 0)))
+
+    def test_repeated_cross_bound_ledger_counts_exact_spaces(self) -> None:
+        coordinates = (
+            (1, 0, 0, 0),
+            (0, 1, 0, 0),
+            (1, 1, 0, 0),
+            (0, 0, 1, 0),
+        )
+        records = tuple(
+            ShortVectorRecord(
+                vector,
+                "1",
+                None,
+                {"integral": index < 3, "total_bits": index + 1},
+            )
+            for index, vector in enumerate(coordinates)
+        )
+        complex_ = build_relation_complex(coordinates)
+        from latent_lattice import GrowthProposal
+
+        left = (
+            GrowthProposal(3, ((1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0)), (), 0, 0, 0.0, 0.0),
+            GrowthProposal(3, ((1, 1, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0)), (), 0, 0, 0.0, 0.0),
+        )
+        right = (
+            GrowthProposal(3, ((1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 0, 1)), (), 0, 0, 0.0, 0.0),
+            GrowthProposal(3, ((1, 1, 0, 0), (0, 1, 0, 0), (0, 0, 0, 1)), (), 0, 0, 0.0, 0.0),
+        )
+        finite = FiniteQuotientBlock(5, 2, 4, 2, 1, ((1, 0, 0, 1),))
+        ledger = repeated_cross_bound_intersection_ledger(
+            records,
+            complex_,
+            left,
+            right,
+            target_dimension=2,
+            finite_blocks=(finite,),
+        )
+        self.assertEqual(ledger.tested_pair_count, 4)
+        self.assertEqual(ledger.modular_surviving_pair_count, 4)
+        self.assertEqual(ledger.exact_candidate_count, 1)
+        self.assertEqual(len(ledger.scored_candidates), 1)
+        self.assertEqual(len(ledger.proposals), 1)
+        proposal = ledger.proposals[0]
+        self.assertEqual(proposal.occurrence_count, 4)
+        self.assertEqual(proposal.best_pair, (0, 0))
+        self.assertEqual(proposal.support, 3)
+        self.assertGreater(proposal.induced_ternary_relation_count, 0)
+        self.assertIsNotNone(proposal.finite_signature)
+        self.assertEqual(
+            proposal.primitive_basis_rows,
+            ((1, 0, 0, 0), (0, 1, 0, 0)),
+        )
+        aggregate = aggregate_repeated_intersection_ledgers(
+            (("h1-h2", ledger), ("h2-h3", ledger)), minimum_pair_support=2
+        )
+        self.assertEqual(len(aggregate), 1)
+        self.assertEqual(aggregate[0].pair_support, 2)
+        self.assertEqual(aggregate[0].total_occurrence_count, 8)
 
 
 if __name__ == "__main__":

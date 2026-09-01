@@ -134,6 +134,46 @@ the exact finite calculations within the declared ensembles and a bounded
 failure of this generator/selector.  It neither proves that finite codes are
 useless in a later joint method nor that a common generic lattice is absent.
 
+## Cross-bound finite-aware shape calibration
+
+The next control-only replay separates proposal recall from selection.  On
+ICARM 245 it independently constructs rank-15 enclosure ledgers from the
+complete height-28 and height-29 clouds, retains the leading 200 enclosures
+at each bound, and tests all 40,000 pairs.  Two finite-field annihilator keys
+are rejection filters only.  Every survivor is regrouped by its exact
+rational annihilator, and every retained candidate is primitively saturated.
+
+The fixed score
+
+```text
+arithmetic LLR + 0.1 * induced ternary relations
+               + 2 * exact cross-bound occurrence count
+```
+
+gives 3,799 surviving pairs and 2,939 distinct exact rank-12 spaces.  There
+are no two-prime collisions in this run.  The exact primitive Fermigier
+subgroup occurs twice, has 144 retained rays and 535 induced ternary
+relations, and ranks 65th.  Thus the earlier blind v1 dimension scan selects
+12 rather than a fake forced rank-17 core, and the exact truth is moved into a
+bounded top-128 ledger.  Rank 65 is materially better proposal recall, but it
+is not blind recovery.
+
+For the four R17 controls, finite-seeded ledgers contain the exact truth at
+source ranks 1792, 1666, 1227, and 1067.  A scale-free cloud-height shortlist
+followed by the intrinsic Hermite statistic recovers rank 25 exactly when the
+rank-26--28 truth lattices are the training controls.  The symmetric
+leave-one-out experiment, however, selects truth in only one of four fibres:
+the other truth cloud ranks are 1266, 482, and 200, outside the top-64 Hermite
+stage.  An exact additive complex on an intrinsic complete shortest shell was
+also tested; all four true R17 specializations have different shell digests
+at the declared 128-vector minimum, so that invariant is too brittle under
+specialization.
+
+Accordingly `latent_lattice_shape_calibration_v1.json` has status
+`PASS_PROPOSAL_CALIBRATION_SELECTOR_FAIL`.  Exact R17 recall, a held-out R17
+recovery, blind dimension 12, and top-128 Fermigier recall pass.  Symmetric
+joint selection does not.  The wgxli gate remains closed.
+
 ## What is proved and what is heuristic
 
 Exact within the recorded bounds:
@@ -170,6 +210,9 @@ PYTHONPATH=elliptic-curves:elliptic-curves/cas \
   python3 elliptic-curves/cas/calibrate_finite_aware_latent_lattice.py --check
 
 PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 elliptic-curves/cas/calibrate_latent_lattice_shape.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
   python3 -m unittest elliptic-curves/tests/test_latent_lattice.py -v
 ```
 
@@ -179,5 +222,7 @@ and
 [`latent_lattice_calibration_v2.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_calibration_v2.json).
 The finite-aware replay is
 [`latent_lattice_finite_calibration_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_finite_calibration_v1.json).
+The cross-bound shape replay is
+[`latent_lattice_shape_calibration_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_shape_calibration_v1.json).
 The superseded `v1` bytes remain available for provenance but are not the
 active replay target.

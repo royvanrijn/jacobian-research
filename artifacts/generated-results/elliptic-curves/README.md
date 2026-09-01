@@ -32,6 +32,12 @@ Important distinctions made explicit by the catalogue:
   held-out finite-code ensembles.  It passes R17 proposal recall but fails the
   Fermigier control and finite-profile selection, so it also forbids target
   use.
+  `latent_lattice_shape_calibration_v1.json` adds exact multiplicity-preserving
+  cross-bound enclosure intersections.  It puts the primitive Fermigier
+  rank-12 truth at rank 65 in a bounded top-128 ledger and exactly recovers the
+  held-out R17 rank-25 control, but symmetric R17 selection still fails.  Its
+  status is `PASS_PROPOSAL_CALIBRATION_SELECTOR_FAIL`, so it likewise forbids
+  target use.
 
 - `icarm_273_282_302_family_discovery_v1.json` screens 2,334 generated
   one-parameter families exactly.  It rediscovers curve 282 in both the

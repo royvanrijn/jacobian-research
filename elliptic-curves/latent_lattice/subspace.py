@@ -10,7 +10,11 @@ from typing import Any, Sequence
 
 import numpy as np
 
-from .codes import finite_rarity_scores
+from .codes import (
+    CandidateFiniteSignature,
+    candidate_finite_signature,
+    finite_rarity_scores,
+)
 from .finite import FiniteQuotientBlock
 from .integer import rational_nullspace, rational_rank
 from .local import ComponentBlock
@@ -240,6 +244,403 @@ def exact_span_mask(
     vectors_object = np.asarray(vectors, dtype=object)
     products = vectors_object @ np.asarray(kernel, dtype=object).T
     return np.all(products == 0, axis=1)
+
+
+@dataclass(frozen=True)
+class RepeatedIntersectionScore:
+    """Exact rational intersection statistics before primitive truncation."""
+
+    exact_annihilator_rows: tuple[tuple[int, ...], ...]
+    inlier_indices: tuple[int, ...]
+    support: int
+    integral_support: int
+    arithmetic_llr: float
+    induced_ternary_relation_count: int
+    occurrence_count: int
+    best_rank_sum: int
+    best_pair: tuple[int, int]
+    source_pairs: tuple[tuple[int, int], ...]
+    search_score: float
+
+
+@dataclass(frozen=True)
+class RepeatedIntersectionProposal:
+    """One exact primitive core repeatedly proposed across two cloud bounds.
+
+    ``occurrence_count`` is counted only after exact rational row-space replay.
+    The modular keys used by the search are rejection filters and never merge
+    distinct rational spaces in this record.
+    """
+
+    dimension: int
+    primitive_basis_rows: tuple[tuple[int, ...], ...]
+    exact_annihilator_rows: tuple[tuple[int, ...], ...]
+    inlier_indices: tuple[int, ...]
+    support: int
+    integral_support: int
+    arithmetic_llr: float
+    induced_ternary_relation_count: int
+    occurrence_count: int
+    best_rank_sum: int
+    best_pair: tuple[int, int]
+    source_pairs: tuple[tuple[int, int], ...]
+    search_score: float
+    finite_signature: CandidateFiniteSignature | None = None
+
+    def to_record(self) -> dict[str, object]:
+        answer: dict[str, object] = {
+            "dimension": self.dimension,
+            "primitive_basis_rows": [list(row) for row in self.primitive_basis_rows],
+            "exact_annihilator_rows": [list(row) for row in self.exact_annihilator_rows],
+            "inlier_indices": list(self.inlier_indices),
+            "support": self.support,
+            "integral_support": self.integral_support,
+            "arithmetic_likelihood_ratio": f"{self.arithmetic_llr:.17g}",
+            "induced_ternary_relation_count": self.induced_ternary_relation_count,
+            "occurrence_count": self.occurrence_count,
+            "best_rank_sum": self.best_rank_sum,
+            "best_pair": list(self.best_pair),
+            "source_pairs": [list(pair) for pair in self.source_pairs],
+            "search_score": f"{self.search_score:.17g}",
+        }
+        if self.finite_signature is not None:
+            answer["finite_signature"] = self.finite_signature.to_record()
+        return answer
+
+
+@dataclass(frozen=True)
+class RepeatedIntersectionLedger:
+    """Bounded exact replay of repeated cross-bound enclosure intersections."""
+
+    dimension: int
+    scored_candidates: tuple[RepeatedIntersectionScore, ...]
+    proposals: tuple[RepeatedIntersectionProposal, ...]
+    tested_pair_count: int
+    modular_surviving_pair_count: int
+    modular_candidate_count: int
+    exact_candidate_count: int
+    bounds: dict[str, object]
+
+    def summary_record(self) -> dict[str, object]:
+        return {
+            "dimension": self.dimension,
+            "tested_pair_count": self.tested_pair_count,
+            "modular_surviving_pair_count": self.modular_surviving_pair_count,
+            "modular_candidate_count": self.modular_candidate_count,
+            "exact_candidate_count": self.exact_candidate_count,
+            "retained_primitive_candidate_count": len(self.proposals),
+            "bounds": dict(self.bounds),
+        }
+
+
+@dataclass(frozen=True)
+class MultiBoundIntersectionScore:
+    """Exact recurrence of one rational core across several bound pairs."""
+
+    exact_annihilator_rows: tuple[tuple[int, ...], ...]
+    pair_support: int
+    total_occurrence_count: int
+    reciprocal_rank_sum: float
+    normalized_rank_sum: float
+    total_pair_score: float
+    source_ranks: tuple[tuple[str, int], ...]
+
+
+def aggregate_repeated_intersection_ledgers(
+    ledgers: Sequence[tuple[str, RepeatedIntersectionLedger]],
+    *,
+    minimum_pair_support: int = 1,
+) -> tuple[MultiBoundIntersectionScore, ...]:
+    """Aggregate all exact pre-closure keys, not only retained proposals.
+
+    Ordering is lexicographic: number of independent bound pairs first,
+    reciprocal within-pair rank second, exact occurrence multiplicity third,
+    and the sum of pair scores fourth.  No withheld subgroup label enters the
+    ordering.
+    """
+
+    if not ledgers:
+        return ()
+    if minimum_pair_support < 1 or minimum_pair_support > len(ledgers):
+        raise ValueError("minimum_pair_support is outside the ledger count")
+    dimensions = {ledger.dimension for _label, ledger in ledgers}
+    if len(dimensions) != 1:
+        raise ValueError("multi-bound ledgers have different dimensions")
+    grouped: dict[tuple[tuple[int, ...], ...], dict[str, object]] = {}
+    for label, ledger in ledgers:
+        population = max(1, len(ledger.scored_candidates))
+        for rank, candidate in enumerate(ledger.scored_candidates):
+            state = grouped.setdefault(
+                candidate.exact_annihilator_rows,
+                {
+                    "occurrence": 0,
+                    "reciprocal": 0.0,
+                    "normalized": 0.0,
+                    "score": 0.0,
+                    "ranks": [],
+                },
+            )
+            state["occurrence"] = int(state["occurrence"]) + candidate.occurrence_count
+            state["reciprocal"] = float(state["reciprocal"]) + 1.0 / (rank + 1)
+            state["normalized"] = float(state["normalized"]) + rank / population
+            state["score"] = float(state["score"]) + candidate.search_score
+            state["ranks"].append((str(label), rank))  # type: ignore[union-attr]
+    answers = []
+    for exact_key, state in grouped.items():
+        ranks = tuple(sorted(state["ranks"]))  # type: ignore[arg-type]
+        if len(ranks) < minimum_pair_support:
+            continue
+        answers.append(
+            MultiBoundIntersectionScore(
+                exact_annihilator_rows=exact_key,
+                pair_support=len(ranks),
+                total_occurrence_count=int(state["occurrence"]),
+                reciprocal_rank_sum=float(state["reciprocal"]),
+                normalized_rank_sum=float(state["normalized"]),
+                total_pair_score=float(state["score"]),
+                source_ranks=ranks,
+            )
+        )
+    answers.sort(
+        key=lambda item: (
+            item.pair_support,
+            item.reciprocal_rank_sum,
+            item.total_occurrence_count,
+            item.total_pair_score,
+            item.exact_annihilator_rows,
+        ),
+        reverse=True,
+    )
+    return tuple(answers)
+
+
+def repeated_cross_bound_intersection_ledger(
+    records: Sequence[ShortVectorRecord],
+    complex_: RelationComplex,
+    left_enclosures: Sequence[GrowthProposal],
+    right_enclosures: Sequence[GrowthProposal],
+    *,
+    target_dimension: int,
+    left_count: int = 200,
+    right_count: int = 200,
+    modular_primes: Sequence[int] = (1_000_003, 1_000_033),
+    maximum_candidates: int | None = None,
+    arithmetic_weight: float = 1.0,
+    relation_weight: float = 0.1,
+    multiplicity_weight: float = 2.0,
+    finite_blocks: Sequence[FiniteQuotientBlock] = (),
+    component_blocks: Sequence[ComponentBlock] = (),
+) -> RepeatedIntersectionLedger:
+    """Find exact primitive cores repeated in two independent enclosure lists.
+
+    The fast stage joins annihilator row spaces over every declared finite
+    field.  Every surviving pair is then recomputed over ``Q`` and grouped by
+    its exact rational annihilator.  Only after label-free scoring are the
+    retained candidates primitively saturated.  Finite-code signatures are
+    attached for later matching/audit; they do not enter the default score,
+    because calibration shows that fibre reduction codes can be nuisance
+    variables rather than generic-lattice identities.
+
+    ``maximum_candidates`` bounds the expensive primitive-closure stage.  The
+    ledger still reports the total exact candidate count before truncation.
+    """
+
+    if not records:
+        raise ValueError("intersection ledger needs an evaluation cloud")
+    record_coordinates = tuple(record.coordinates for record in records)
+    if set(record_coordinates) != set(complex_.vertices):
+        raise ValueError("records and relation-complex vertices differ")
+    ambient = len(record_coordinates[0])
+    if not 1 <= target_dimension < ambient:
+        raise ValueError("target dimension must be below the ambient rank")
+    primes = tuple(map(int, modular_primes))
+    if not primes or any(prime <= 2 for prime in primes):
+        raise ValueError("at least one odd modular screening prime is required")
+    left = tuple(left_enclosures[: int(left_count)])
+    right = tuple(right_enclosures[: int(right_count)])
+    if any(
+        not proposal.basis_rows
+        or any(len(row) != ambient for row in proposal.basis_rows)
+        for proposal in (*left, *right)
+    ):
+        raise ValueError("enclosure ambient widths differ from the cloud")
+
+    kernels = {
+        (side, prime): tuple(
+            modular_right_kernel_basis(proposal.basis_rows, prime)
+            for proposal in proposals
+        )
+        for side, proposals in (("left", left), ("right", right))
+        for prime in primes
+    }
+    exact_groups: dict[
+        tuple[tuple[int, ...], ...],
+        list[tuple[int, int]],
+    ] = {}
+    modular_keys: set[tuple[tuple[tuple[int, ...], ...], ...]] = set()
+    modular_survivors = 0
+    expected_annihilator_dimension = ambient - target_dimension
+    for left_index, left_proposal in enumerate(left):
+        for right_index, right_proposal in enumerate(right):
+            joint_keys = []
+            for prime in primes:
+                key = modular_row_space_key(
+                    kernels[("left", prime)][left_index]
+                    + kernels[("right", prime)][right_index],
+                    prime,
+                )
+                if len(key) != expected_annihilator_dimension:
+                    break
+                joint_keys.append(key)
+            else:
+                modular_survivors += 1
+                modular_keys.add(tuple(joint_keys))
+                basis = exact_row_space_intersection(
+                    left_proposal.basis_rows,
+                    right_proposal.basis_rows,
+                    saturate=False,
+                )
+                if len(basis) != target_dimension:
+                    continue
+                exact_key = rational_nullspace(basis)
+                if len(exact_key) != expected_annihilator_dimension:
+                    raise ArithmeticError("exact intersection annihilator has wrong rank")
+                exact_groups.setdefault(exact_key, []).append(
+                    (left_index, right_index)
+                )
+
+    features = arithmetic_feature_flags(records)
+    integral = np.asarray(
+        [bool(record.arithmetic.get("integral", False)) for record in records],
+        dtype=bool,
+    )
+    relation_mask_order = {
+        vector: index for index, vector in enumerate(complex_.vertices)
+    }
+    relation_edges = np.asarray(complex_.ternary_relations, dtype=np.int64)
+    scored: list[
+        tuple[
+            float,
+            int,
+            int,
+            tuple[tuple[int, ...], ...],
+            tuple[int, ...],
+            int,
+            float,
+            int,
+            tuple[tuple[int, int], ...],
+        ]
+    ] = []
+    for exact_key, raw_pairs in exact_groups.items():
+        basis = rational_nullspace(exact_key)
+        mask = exact_span_mask(record_coordinates, basis)
+        relation_mask = np.zeros(len(complex_.vertices), dtype=bool)
+        for input_index in np.flatnonzero(mask):
+            relation_mask[relation_mask_order[record_coordinates[input_index]]] = True
+        induced = (
+            int(np.sum(np.all(relation_mask[relation_edges], axis=1)))
+            if len(relation_edges)
+            else 0
+        )
+        llr = arithmetic_enrichment_llr(mask, features)
+        pairs = tuple(sorted(raw_pairs))
+        best_rank_sum = min(sum(pair) for pair in pairs)
+        score = (
+            arithmetic_weight * llr
+            + relation_weight * induced
+            + multiplicity_weight * len(pairs)
+        )
+        scored.append(
+            (
+                score,
+                len(pairs),
+                best_rank_sum,
+                exact_key,
+                tuple(map(int, np.flatnonzero(mask))),
+                int(np.sum(mask & integral)),
+                llr,
+                induced,
+                pairs,
+            )
+        )
+    scored.sort(
+        key=lambda item: (item[0], item[1], -item[2], item[3]),
+        reverse=True,
+    )
+    score_records = tuple(
+        RepeatedIntersectionScore(
+            exact_annihilator_rows=exact_key,
+            inlier_indices=indices,
+            support=len(indices),
+            integral_support=integral_support,
+            arithmetic_llr=llr,
+            induced_ternary_relation_count=induced,
+            occurrence_count=count,
+            best_rank_sum=best_rank_sum,
+            best_pair=min(pairs, key=lambda pair: (sum(pair), pair)),
+            source_pairs=pairs,
+            search_score=score,
+        )
+        for score, count, best_rank_sum, exact_key, indices, integral_support, llr, induced, pairs in scored
+    )
+    if maximum_candidates is not None:
+        if maximum_candidates < 1:
+            raise ValueError("maximum_candidates must be positive")
+        retained_scores = score_records[: int(maximum_candidates)]
+    else:
+        retained_scores = score_records
+
+    proposals = []
+    for item in retained_scores:
+        exact_key = item.exact_annihilator_rows
+        primitive = primitive_span_basis(rational_nullspace(exact_key))
+        if rational_nullspace(primitive) != exact_key:
+            raise ArithmeticError("primitive closure changed the rational intersection")
+        finite_signature = None
+        if finite_blocks or component_blocks:
+            finite_signature = candidate_finite_signature(
+                primitive,
+                complex_,
+                finite_blocks=finite_blocks,
+                component_blocks=component_blocks,
+            )
+        proposals.append(
+            RepeatedIntersectionProposal(
+                dimension=target_dimension,
+                primitive_basis_rows=primitive,
+                exact_annihilator_rows=exact_key,
+                inlier_indices=item.inlier_indices,
+                support=item.support,
+                integral_support=item.integral_support,
+                arithmetic_llr=item.arithmetic_llr,
+                induced_ternary_relation_count=item.induced_ternary_relation_count,
+                occurrence_count=item.occurrence_count,
+                best_rank_sum=item.best_rank_sum,
+                best_pair=item.best_pair,
+                source_pairs=item.source_pairs,
+                search_score=item.search_score,
+                finite_signature=finite_signature,
+            )
+        )
+    return RepeatedIntersectionLedger(
+        dimension=target_dimension,
+        scored_candidates=score_records,
+        proposals=tuple(proposals),
+        tested_pair_count=len(left) * len(right),
+        modular_surviving_pair_count=modular_survivors,
+        modular_candidate_count=len(modular_keys),
+        exact_candidate_count=len(exact_groups),
+        bounds={
+            "left_count": len(left),
+            "right_count": len(right),
+            "modular_primes": list(primes),
+            "maximum_candidates": maximum_candidates,
+            "arithmetic_weight": arithmetic_weight,
+            "relation_weight": relation_weight,
+            "multiplicity_weight": multiplicity_weight,
+            "finite_signature_attached": bool(finite_blocks or component_blocks),
+        },
+    )
 
 
 def cross_bound_intersection_proposals(
