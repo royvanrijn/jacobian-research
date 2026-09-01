@@ -2831,6 +2831,40 @@ Build or byte-check the surface-first rank-seven auxiliary catalogue:
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_prefix_orbits.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_prefix_orbits.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 0 --prefix-stop 250
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 0 --prefix-stop 250 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 250 --prefix-stop 500
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
+  --prefix-start 250 --prefix-stop 500 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_24a1_weyl_m24_shard.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_24a1_weyl_m24_shard.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_cross_niemeier_mod2_priority.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_cross_niemeier_mod2_priority.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_leech_co0_backend.sage
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -2843,7 +2877,25 @@ Build or byte-check the surface-first rank-seven auxiliary catalogue:
   elkies-k3/scripts/build_rank7_auxiliary_catalogue.sage --check
 ```
 
-The first two commands pin the separate Leech ambient directly from the
+The first two commands enumerate exact residual-`M24` orbits of unordered
+Golay-octad subsets through size five; the orbit counts are
+`1,3,16,206,10547`, and every orbit-stabilizer mass equals
+`binomial(759,k)`. The next four commands complete prefix indices `0:500` in
+two contiguous shards. After exact saturation and local residual-`M24`
+deduplication they retain 291 records, with MW-rank distribution
+`71,195,25` in ranks 12, 13, and 14; 285 pass the ternary genus gate. This is
+an exact partial frontier in the positive seven-octad language. The next two
+commands apply the full `2^24 semidirect M24` quotient across both shards:
+the 291 local records become 16 full embedding orbits, with MW-rank
+distribution `4,10,2` in ranks 12, 13, and 14, and 13 pass the ternary-genus
+gate. The following two commands
+build the cross-Niemeier mod-2 scheduler, prioritizing `2B`, `2C`, `4A` and
+analogous component permutations but requiring the exact gate
+`rank_GF2(g_M-I)>0`. Neither artifact is a complete `24A1:D0001-0500`
+result: the remaining prefixes and non-positive-octad generator languages are
+open.
+
+The following two commands pin the separate Leech ambient directly from the
 AtlasRep `2.Co1=Co0` action: the invariant form is one-dimensional and its
 primitive positive integral generator is the even unimodular rank-24 lattice
 of minimum four with 196,560 minimal vectors. No rank-seven Leech embedding
@@ -3002,6 +3054,81 @@ they are not pairwise integral-isometry counts or a global MW0 non-existence
 theorem.  The aggregate summary has SHA-256
 `c5e610ac5baf12e01f86d506a6b42b6593a48f8949311eee095dfc27b55f9ad6`.
 
+Audit the minimum section pole on every MW1 row with primitive root lattice:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/audit_lattice_foundry_rank1_section_poles.sage
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/audit_lattice_foundry_rank1_section_poles.sage --check
+```
+
+The audit certifies exact affine-CVP norms, section poles, and independent
+256-bit MPFR agreement for 1,342 primitive-root rows.  It leaves 792
+nonprimitive-root rows open rather than guessing their torsion/glue section
+lattice.  The result is
+`artifacts/generated-results/elkies-k3-lattice-foundry-rank1-section-poles-v1.json`.
+
+Replay the NS0011 `A2+A6+A8/MW1` equation gate over `GF(5)` with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0011_source_ansatz_modp.sage --examples 7
+
+python3 - <<'PY'
+import json, subprocess
+from pathlib import Path
+source = Path('artifacts/generated-results/elkies-k3-lattice-foundry-ns0011-source-ansatz-mod5.json')
+data = json.loads(source.read_text())
+exe = '/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python'
+script = 'elkies-k3/scripts/build_lattice_foundry_ns0011_pole2_section_modp.sage'
+for example, model in enumerate(data['examples']):
+    a8 = model['A_coefficients_low_to_high'][8]
+    b12 = model['B_coefficients_low_to_high'][12]
+    nonzero = sum((c**3 + a8*c + b12) % 5 in (1, 4) for c in range(5))
+    for branch in range(nonzero):
+        subprocess.run([exe, script, '--example', str(example), '--branch',
+                        str(branch), '--eliminate-r-count', '9'], check=True)
+    subprocess.run([exe, script, '--example', str(example),
+                    '--zero-y-branch', '0'], check=True)
+PY
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_lattice_foundry_ns0011_pole2_sections_modp.sage
+```
+
+The first command exhausts all `5^8` normalized fibre coefficients and stores
+all seven exact squarefree `I9+I7+I3+5I1` models.  The builder encodes the
+exact I9/I7 component depths as a sparse pole-two square-root system.  The
+final tensor-product scan exhausts 19 infinity charts and 1,484,375 affine
+tuples.  Its empty result is a finite-field obstruction for this displayed
+split normalized chart only; it is not a characteristic-zero nonexistence
+claim.  The bounded `GF(7)` pilot and its exact section-chart census are stored
+as the corresponding `mod7-pilot-v1.json` artifacts; its fibre scan covers
+only 500,000 of `7^8` coefficient tuples.
+
+Replay the still cheaper NS0007 `A1+A3+2A6/MW1` fibre gate with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0007_source_ansatz_modp.sage \
+  --examples 30
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0007_source_ansatz_modp.sage \
+  --examples 30 --check
+```
+
+This source has exact height `11/4`, minimum pole zero, component corrections
+`1/2,3/4,0,0`, and rootless same-NS MW17 endpoints `NS0007-F003` and
+`NS0007-F014`.  The complete split `GF(5)` scan exhausts all three
+cross-ratios and `3*5^8` normalized `A` polynomials.  It finds 966
+Hermite-compatible branches but no squarefree `I2+I4+2I7+4I1` model.  This is
+an exact obstruction for the displayed characteristic-five fibre chart, not
+a characteristic-zero nonexistence theorem.  The corresponding
+`mod7-pilot-v1.json` artifact covers only 100,000 coefficient/cross-ratio
+cases and is a bounded negative result.
+
 For bounded-search provenance, replay or byte-check the exact `NS0024`
 rootful source found by the older Kneser scout and its certified degree-two
 route to a new rootless MW17 frame with
@@ -3074,12 +3201,28 @@ rootless foundry targets, with
 
 The source ranking attaches every catalogued MW15--17 frame in the same
 Neron--Severi class and never infers a rational marking or route from the
-lattice. It combines 75 individual source certificates with the 97 exact rows
-of the declared `3E8`/all-`A` prescribed-root slice; the latter supply 97 MW2
-rows but have no inferred minimum-pole, rational-marking, or route data. The
+lattice. It combines 75 individual source certificates, the 97 exact MW2 rows
+of the declared `3E8`/all-`A` slice, and all 2,134 MW1 rows of the full-support
+census. Primitive-root MW1 rows consume the exact pole audit; nonprimitive
+rows retain an open pole status. No row receives inferred rational-marking or
+route data. The
 multisection replay is complete for degree-two low-height translation orbits;
 degree-three/four results in that pilot artifact are exact only for the
 declared 256 sampled cosets per frame.
+
+Recover the umbral stabilizer images and orbit-resolved short-vector and
+multisection-coset data for R17, Q80, and four selected foundry frames with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/analyze_lattice_foundry_umbral_orbits.sage \
+  --d3-orbit-seeds 512 --pari-stack-gb 4
+```
+
+The stabilizer, norm-four, and degree-two results are exact; degree three is
+exact only inside the deterministic invariant sample. The interpretation and
+comparison with lambency-eight umbral trace data are recorded in
+[`elkies-k3/UMBRAL_COMPLEMENT_ORBIT_PILOT_2026-09-02.md`](elkies-k3/UMBRAL_COMPLEMENT_ORBIT_PILOT_2026-09-02.md).
 
 Exhaust all `3^17` degree-three translation cosets on the current MW2
 source-ranked top five with

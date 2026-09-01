@@ -591,6 +591,40 @@ The current proof boundary and replay commands are in
   49 surface classes and 510 MW15--17 frame classes. All 96 backend-band
   shards remain explicitly open: this script is not itself an embedding
   enumerator and does not promote bounded foundry inputs to completeness.
+- `enumerate_24a1_octad_prefix_orbits.sage` induces the exact `M24` action on
+  all 759 Golay octads and uses set-stabilizer augmentation plus exact GAP
+  transporters. It proves the unordered-octad-subset orbit counts
+  `1,3,16,206,10547` through size five, including the independent
+  orbit-stabilizer mass identities. This is canonical-prefix infrastructure,
+  not a rank-seven determinant-band census.
+- `enumerate_24a1_octad_rank7_completion_shard.sage` completes a declared
+  half-open range of those five-prefix orbits by two octads. It applies the
+  union/MW gate, exact modular saturation prefilters, integral
+  Construction-A saturation, prefix-stabilizer quotienting, residual-`M24`
+  transporter deduplication, saturated complements, root counts, and ternary
+  discriminant-form gates. The pinned contiguous `0:250` and `250:500`
+  shards retain 205 and 86 local residual-M24 records; 285 of their combined
+  291 records have matching ternary genera. The separate multi-shard
+  full-Weyl quotient closes the sign action and cross-shard duplicates for
+  this input; the remaining 10,047 prefixes and auxiliaries outside the
+  positive seven-octad language remain open.
+- `canonicalize_24a1_weyl_m24_shard.sage` applies the missing full
+  `W(24A1) semidirect M24` quotient to that completion shard. It replaces the
+  impossible enumeration of `2^24` signs by an exact comparison of the 24
+  doubled physical coordinate covectors modulo sign, intrinsic auxiliary
+  isometries, and GAP `M24` transporters. It accepts contiguous completion
+  shards and preserves local provenance. The combined 291 records give five
+  intrinsic auxiliary classes and 16 full embedding orbits; 13 pass the
+  ternary-genus gate. Every collapse has an explicit row-isometry,
+  coordinate-permutation, and coordinate-sign witness, and every full orbit
+  has a certified stabilizer order.
+- `build_cross_niemeier_mod2_priority.sage` turns the umbral stabilizer idea
+  into a 23-backend scheduling ledger. It gives first priority to the exact
+  `A7^2 D5^2` classes `2B,2C,4A`, then to backends with order-four or swap
+  component-permutation envelopes. Multiplicity is only a heuristic: a
+  future embedding is retained by this experiment only after its full
+  ambient stabilizer induces an action satisfying
+  `rank_GF2(g_M-I)>0` on the complement modulo two.
 - `build_leech_co0_backend.sage` derives the invariant integral Gram matrix of
   the AtlasRep 24-dimensional `2.Co1=Co0` representation. It certifies an even
   unimodular rank-24 lattice of minimum four with 196,560 minimal vectors,
@@ -645,6 +679,33 @@ The current proof boundary and replay commands are in
   covered and no MW0 row. There are no repeated exact `(NS, Gram digest)`
   identities across shards. The MW0 miss is exact only inside this declared
   embedding cover and is not a global non-existence theorem.
+- `audit_lattice_foundry_rank1_section_poles.sage` solves the exact affine
+  closest-vector problem for every primitive-root MW1 row and every multiple
+  capable of improving the current norm. It certifies 1,342 rows with exact
+  rational recomputation and independent 256-bit MPFR agreement, while 792
+  nonprimitive-root rows remain explicitly open for torsion/glue analysis.
+  This separates genuinely cheap generators from deceptively simple
+  one-support fibre configurations.
+- `probe_lattice_foundry_ns0011_source_ansatz_modp.sage` exhausts the
+  normalized split semistable fibre ansatz for the selected
+  `A2+A6+A8/MW1` source. `build_lattice_foundry_ns0011_pole2_section_modp.sage`
+  compiles its exact I9-depth-two and I7-depth-one component data into
+  `R(t)^2=H(t)` pole-two charts, and
+  `scan_lattice_foundry_ns0011_pole2_sections_modp.sage` evaluates those
+  charts exhaustively as polynomial functions. The complete `GF(5)` chart is
+  empty after seven fibre models, 19 infinity charts, and 1,484,375 affine
+  tuples. This is a local obstruction for the displayed normalized split
+  chart, not a characteristic-zero nonexistence theorem; the `GF(7)` result is
+  only a bounded fibre-sample pilot.
+- `probe_lattice_foundry_ns0007_source_ansatz_modp.sage` targets the cheaper
+  `A1+A3+2A6/MW1` alternative, whose exact generator has pole zero and only
+  depth-one conditions at I2 and I4. It normalizes the four supports to
+  `0,1,lambda,infinity` and imposes all 20 branch jets. The complete split
+  `GF(5)` scan covers `3*5^8` normalized A polynomials, finds 966
+  Hermite-compatible sign branches, and finds no squarefree
+  `I2+I4+2I7+4I1` model. This is an exact obstruction only for that displayed
+  characteristic-five chart. The stored `GF(7)` run is a bounded
+  100,000-case negative pilot.
 - `hunt_lattice_foundry_rootful_source.sage` and
   `run_lattice_foundry_mw3_broad_scout.py` are retained for bounded Kneser
   discovery provenance and byte-for-byte replay of their existing artifacts,
@@ -669,6 +730,12 @@ The current proof boundary and replay commands are in
   replays the published R17 count of 39,120 rational bisection orbits; sampled
   higher-degree coordinates are discovery heuristics, not curve censuses or
   rank predictions.
+- `analyze_lattice_foundry_umbral_orbits.sage` reconstructs the lambency-eight
+  umbral group section for `N(2A7+2D5)`, computes full auxiliary-embedding
+  stabilizers across the primitive gluing, and resolves their actions on
+  norm-four vectors and rational degree-two cosets. Its degree-three data are
+  exact only inside deterministic group-invariant samples; it claims no
+  correspondence with an umbral module.
 - `complete_lattice_foundry_degree3_spectrum.py` exhausts all `3^17`
   translation cosets for each selected rootless frame, using inversion to
   halve the CVP workload, exact integral norm recomputation for every returned

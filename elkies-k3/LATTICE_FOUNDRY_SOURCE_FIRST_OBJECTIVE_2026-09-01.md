@@ -35,6 +35,13 @@ No rational marking, equation, nef corridor, or arithmetic descent is claimed.
 A miss in this slice is not a theorem that the NS class lacks an MW0--2
 fibration.
 
+The subsequent full rank-16/17 pass changes the practical conclusion.  Its
+thirteen rooted-Niemeier ambients produce 2,134 MW1 reduced-Gram rows and hit
+all 48 foundry NS classes; no MW0 row occurs in that declared embedding cover.
+Thus the present bottleneck is no longer finding a low-rank source.  It is
+selecting a source whose generator has a small equation footprint and then
+descending its marking.
+
 As a positive control, the complete NS0001 rank-15/two-support run across all
 sixteen D5-anchor orbits finds 19 `E7+E8/MW2` representatives in `N(3E8)`.
 Their binary height forms recover the three known Kumar classes; seven
@@ -99,8 +106,9 @@ The ranking is reproduced by
 from
 [`../artifacts/generated-results/elkies-k3-lattice-foundry-source-ranking-v2.json`](../artifacts/generated-results/elkies-k3-lattice-foundry-source-ranking-v2.json).
 
-The ranking now consumes both the individual rootful-source certificates and
-the 97 rows of the direct prescribed-root inventory.  A prescribed-root row
+The ranking now consumes 75 individual rootful-source certificates, the 97
+MW2 rows of the first direct slice, and all 2,134 MW1 rows of the full-support
+census, for 2,306 stored candidates in 48 NS classes.  A prescribed-root row
 retains its declared finite-slice scope; the scorer does not promote it to a
 complete fibration classification or invent a rational marking or route.
 
@@ -120,6 +128,79 @@ and neighbour cost remain open on these prescribed-root rows, so their present
 order is decided by the final audited multisection coordinates, beginning with
 the exact degree-two count.  It is a ranking of the declared stored inventory,
 not a claim that unsearched slices cannot contain a better source.
+
+### Minimum-section pole audit and the current equation candidate
+
+Support count alone is a poor proxy for the source equation.  The exact
+rank-one pole audit solves an affine CVP in each primitive rank-16 root lattice
+for every multiple capable of improving the current norm.  Of 2,134 MW1 rows,
+1,342 have primitive root lattice and pass exact rational norm recomputation
+plus an independent 256-bit MPFR closest-vector audit.  The remaining 792 are
+left open because their root lattice is nonprimitive and torsion/glue can
+change the section lattice.
+
+The sharp warning is `NS0022`: its one-support `A16/MW1` source wins the
+support-first lexicographic score, but its generator has height `1018/17` and
+minimum pole order 30.  It is not an equation-friendly source merely because
+it has one reducible support.  The useful Pareto alternatives among classes
+with a rootless MW17 endpoint are:
+
+| supports | example source | exact minimum pole |
+|---:|---|---:|
+| 1 | NS0022 `A16/MW1` | 30 |
+| 2 | NS0001 `A11+A5/MW1` | 5 |
+| 3 | NS0011 `A2+A6+A8/MW1` | 2 |
+| 4 | NS0007 `A1+A3+2A6/MW1` | 0 |
+
+The current equation-balanced test case is therefore the primitive NS0011
+row `NS0011-S005` from the group-a shard, with Gram SHA-256
+`0e57d9632ce02df3ff4778ed25b3e66a3d7985f614cc198a884851ca6d9ca86c`.
+It has semistable-compatible profile `I3+I7+I9+5I1`, MW height `352/63`,
+minimum pole two, and the exact component corrections
+
+```text
+A2/I3: 0,   A6/I7: 6/7,   A8/I9: 14/9.
+```
+
+Its same-NS rootless endpoint `NS0011-F002` has 40,507 exact rational
+bisection candidates and 19,023,996 exact rational trisection candidates.
+This choice is a Pareto/equation judgment; it does not silently replace the
+declared support-first score by a new theorem.
+
+The first equation gate is informative but negative.  An exhaustive split
+`GF(5)` Hermite scan finds seven normalized squarefree fibre models with
+profile `I9+I7+I3+5I1`.  Component-adapted pole-two systems then cover all
+12 nonzero-`y` and seven smooth zero-`y` infinity charts.  Exact tensor-product
+evaluation checks 1,484,375 affine tuples and finds no section.  The nodal
+zero-`y` point is excluded because it lies on a nonidentity `I3` component.
+This is an exact local obstruction for the displayed normalized split
+characteristic-five chart, not a characteristic-zero nonexistence theorem.
+
+A bounded characteristic-seven discovery run checks 500,000 of `7^8` fibre
+coefficients, finds two squarefree fibre models, and exhausts all seven of
+their pole-two infinity charts (5,764,801 tuples) without a section.  Because
+the fibre scan is not exhaustive, this is only a bounded negative pilot.
+Other primes, nonsplit reductions, and characteristic-zero descent remain
+open.
+
+The next equation target is now NS0007 rather than a longer NS0011 prime
+search.  The primitive group-c row `NS0007-S025` has root type
+`A1+A3+2A6`, MW height `11/4`, and exact minimum pole zero.  Its generator
+has corrections `1/2,3/4,0,0`, hence only depth-one node conditions at the
+`I2` and `I4` fibres and identity-component specialization at both `I7`
+fibres.  The expected semistable profile is
+`I2+I4+2I7+4I1`, and the same NS class already contains the rootless MW17
+frames `NS0007-F003` and `NS0007-F014`.
+
+This candidate also has a characteristic-five obstruction, but at the earlier
+fibre gate: the complete normalized split scan covers all three cross-ratios
+and `3*5^8 = 1,171,875` normalized `A` polynomials.  It finds 966
+Hermite-compatible sign branches and no squarefree fibre model.  A bounded
+characteristic-seven scan of 100,000 coefficient/cross-ratio cases finds 26
+compatible branches and again no squarefree model.  The latter is only a
+pilot.  The pole-zero geometry still makes NS0007 the preferred next target,
+but equation discovery should move to a better prime or a characteristic-zero
+elimination rather than lengthening the characteristic-five search.
 
 ## Direct prescribed-root enumeration
 

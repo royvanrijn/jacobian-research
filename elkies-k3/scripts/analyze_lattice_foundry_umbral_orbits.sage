@@ -1,6 +1,12 @@
 #!/usr/bin/env sage-python
 """Pilot umbral-orbit analysis for selected lattice-foundry complements.
 
+Status: exact finite computation, except for the explicitly sampled degree-three data.
+Claim: recovers stabilizer images and orbit-resolved short-vector/coset counts.
+Inputs: rooted Niemeier catalogue, foundry catalogue, and rootless-J2 catalogue.
+Output: artifacts/generated-results/elkies-k3-lattice-foundry-umbral-orbits-v1.json.
+Supersedes: no earlier computation.
+
 The ambient is the Niemeier lattice with root system ``2A7+2D5``.  Its
 umbral group is realized by the canonical chamber-preserving section
 ``Aut(N,Phi)`` used in Cheng--Duncan--Harvey.  For a stored auxiliary
@@ -507,15 +513,6 @@ def selected_embeddings(foundry, rootless):
     return result
 
 
-def summarize_class_values(group_rows, values):
-    result = {}
-    for label in ("1A", "2A", "2B", "2C", "4A"):
-        class_values = [value for row, value in zip(group_rows, values) if row["class"] == label]
-        if class_values:
-            result[label] = sorted(set(map(int, class_values)))
-    return result
-
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
@@ -621,8 +618,6 @@ def main():
         outer_rows = [group[index] for index in full_stabilizer["outer_indices"]]
 
         shell = norm_four_vectors(complement_gram)
-        shell_image = lambda point, action: tuple_mod(vector(ZZ, point) * action, 0x7FFFFFFF)
-        # tuple_mod with a large modulus would corrupt negative coordinates; use a direct map.
         shell_image = lambda point, action: tuple(map(int, vector(ZZ, point) * action))
         shell_fixed = fixed_counts(shell, actions, shell_image)
         shell_orbits = orbit_histogram(shell, actions, shell_image)

@@ -14,6 +14,11 @@ claim: exact (T,NS)-first deduplication of the imported one-root 2A7+2D5
 inputs: artifacts/generated-results/elkies-k3-lattice-foundry-v1.json,
   artifacts/generated-results/elkies-k3-golay-octad-rank17-det720.json,
   artifacts/generated-results/elkies-k3-rooted-niemeier-catalog.json,
+  artifacts/generated-results/elkies-k3-24a1-octad-prefix-orbits-v1.json,
+  artifacts/generated-results/elkies-k3-24a1-octad-rank7-completion-00000-00250-v1.json,
+  artifacts/generated-results/elkies-k3-24a1-octad-rank7-completion-00250-00500-v1.json,
+  artifacts/generated-results/elkies-k3-24a1-weyl-m24-canonicalization-00000-00500-v2.json,
+  artifacts/generated-results/elkies-k3-cross-niemeier-mod2-priority-v1.json,
   artifacts/generated-results/elkies-k3-leech-co0-backend-v1.json
 output: artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json
 """
@@ -32,6 +37,21 @@ ROOT = HERE.parents[1]
 DEFAULT_FOUNDRY = ROOT / "artifacts/generated-results/elkies-k3-lattice-foundry-v1.json"
 DEFAULT_GOLAY = ROOT / "artifacts/generated-results/elkies-k3-golay-octad-rank17-det720.json"
 DEFAULT_NIEMEIER = ROOT / "artifacts/generated-results/elkies-k3-rooted-niemeier-catalog.json"
+DEFAULT_24A1_PREFIX = ROOT / "artifacts/generated-results/elkies-k3-24a1-octad-prefix-orbits-v1.json"
+DEFAULT_24A1_COMPLETIONS = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-24a1-octad-rank7-completion-00000-00250-v1.json",
+    ROOT
+    / "artifacts/generated-results/elkies-k3-24a1-octad-rank7-completion-00250-00500-v1.json",
+)
+DEFAULT_24A1_WEYL_M24 = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-24a1-weyl-m24-canonicalization-00000-00500-v2.json"
+)
+DEFAULT_MOD2_PRIORITY = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-cross-niemeier-mod2-priority-v1.json"
+)
 DEFAULT_LEECH = ROOT / "artifacts/generated-results/elkies-k3-leech-co0-backend-v1.json"
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json"
 
@@ -320,26 +340,81 @@ def finalize_surfaces(surfaces):
             )
 
 
-def backend_registry(niemeier, leech_foundation, surfaces):
+def backend_registry(
+    niemeier,
+    octad_prefix,
+    octad_completions,
+    octad_weyl_m24,
+    mod2_priority,
+    leech_foundation,
+    surfaces,
+):
     imported = Counter()
     for surface in surfaces:
         for frame in surface["frames"]:
             for provenance in frame["provenance"]:
                 imported[provenance["backend_id"]] += 1
     rooted = []
+    assert octad_prefix["schema"] == "elkies-k3.24a1-octad-prefix-orbits.v1"
+    assert octad_prefix["status"] == (
+        "PASS_EXACT_M24_OCTAD_SUBSET_ORBITS_THROUGH_SIZE_5"
+    )
+    assert len(octad_completions) == 2
+    completion_ranges = []
+    for octad_completion in octad_completions:
+        assert octad_completion["schema"] == (
+            "elkies-k3.24a1-octad-rank7-completion-shard.v1"
+        )
+        assert octad_completion["status"] == (
+            "PASS_EXACT_DECLARED_24A1_OCTAD_COMPLETION_SHARD"
+        )
+        assert octad_completion["parameters"]["determinant_bound"] == 500
+        completion_ranges.append(
+            (
+                octad_completion["parameters"][
+                    "prefix_start_zero_based_inclusive"
+                ],
+                octad_completion["parameters"][
+                    "prefix_stop_zero_based_exclusive"
+                ],
+            )
+        )
+    assert sorted(completion_ranges) == [(0, 250), (250, 500)]
+    assert octad_weyl_m24["schema"] == (
+        "elkies-k3.24a1-weyl-m24-canonicalization.v2"
+    )
+    assert octad_weyl_m24["status"] == (
+        "PASS_EXACT_FULL_WEYL_M24_CANONICALIZATION_OF_DECLARED_INPUT_SHARDS"
+    )
+    assert octad_weyl_m24["accounting"][
+        "input_shard_local_residual_m24_records"
+    ] == (
+        sum(
+            payload["statistics"]["retained_m24_orbits"]
+            for payload in octad_completions
+        )
+    )
+    assert mod2_priority["schema"] == (
+        "elkies-k3.cross-niemeier-mod2-priority.v1"
+    )
+    assert mod2_priority["status"] == (
+        "PASS_EXACT_PRIORITY_LEDGER_HEURISTIC_BACKEND_ORDER"
+    )
+    priority_by_backend = {
+        row["backend_id"]: row for row in mod2_priority["backends"]
+    }
     for row in niemeier["rooted_niemeier_lattices"]:
         backend_id = f"ROOTED-{row['label']}"
         if row["label"] == "2A7_2D5":
             state = "PARTIAL_IMPORTED_ONE_ROOT_MUTATION_SHELL"
             group = "W(2A7+2D5) semidirect G^X; residual orbit data exact only in the control shell"
         elif row["label"] == "24A1":
-            state = "PARTIAL_IMPORTED_ONE_GOLAY_OCTAD_DESIGN"
+            state = "PARTIAL_POSITIVE_OCTAD_FULL_WEYL_M24_500_OF_10547"
             group = "2^24 root sign changes semidirect M24, with Golay/M24 support canonicalization required"
         else:
             state = "OPEN_NOT_ENUMERATED"
             group = "W(X) semidirect G^X"
-        rooted.append(
-            {
+        backend = {
                 "backend_id": backend_id,
                 "kind": "rooted_niemeier",
                 "ambient_label": row["label"],
@@ -348,8 +423,59 @@ def backend_registry(niemeier, leech_foundation, surfaces):
                 "state": state,
                 "imported_frame_isometry_classes": imported[backend_id],
                 "completeness_through_determinant_5000": False,
+                "cross_niemeier_mod2_priority": {
+                    "tier": priority_by_backend[backend_id]["priority_tier"],
+                    "requested_stabilizer_action_types": priority_by_backend[
+                        backend_id
+                    ]["requested_stabilizer_action_types"],
+                    "evidence_status": priority_by_backend[backend_id][
+                        "evidence_status"
+                    ],
+                    "required_gate": "rank_GF2(g_M-I)>0",
+                },
             }
-        )
+        if row["label"] == "24A1":
+            backend["octad_prefix_payload_sha256"] = hashlib.sha256(
+                json.dumps(octad_prefix, sort_keys=True).encode()
+            ).hexdigest()
+            backend["complete_octad_subset_orbits_through_size"] = 5
+            backend["size_five_octad_orbits"] = octad_prefix["accounting"][-1][
+                "orbit_count"
+            ]
+            backend["rank7_completion_payload_sha256s"] = [
+                hashlib.sha256(
+                    json.dumps(payload, sort_keys=True).encode()
+                ).hexdigest()
+                for payload in octad_completions
+            ]
+            backend["rank7_completion_prefixes_processed"] = sum(
+                payload["statistics"]["prefixes_processed"]
+                for payload in octad_completions
+            )
+            backend["rank7_completion_shard_local_residual_m24_records"] = sum(
+                payload["statistics"]["retained_m24_orbits"]
+                for payload in octad_completions
+            )
+            backend["rank7_completion_shard_local_k3_compatible_genus_records"] = sum(
+                record["k3_discriminant_gate"]["matching_even_ternary_genera"] > 0
+                for payload in octad_completions
+                for record in payload["orbits"]
+            )
+            backend["rank7_completion_weyl_sign_canonicalization"] = (
+                "PASS_EXACT_ON_DECLARED_0_250_INPUT"
+            )
+            backend["weyl_m24_payload_sha256"] = hashlib.sha256(
+                json.dumps(octad_weyl_m24, sort_keys=True).encode()
+            ).hexdigest()
+            backend["rank7_full_weyl_m24_embedding_orbits"] = octad_weyl_m24[
+                "accounting"
+            ]["full_weyl_m24_embedding_orbits"]
+            backend["rank7_k3_compatible_full_weyl_m24_orbits"] = (
+                octad_weyl_m24["accounting"][
+                    "k3_compatible_full_embedding_orbits_by_ternary_genus_gate"
+                ]
+            )
+        rooted.append(backend)
     assert leech_foundation["schema"] == "elkies-k3.leech-co0-backend.v1"
     assert leech_foundation["status"] == (
         "PASS_EXACT_LEECH_GRAM_AND_CO0_ATLAS_ACTION_BACKEND_FOUNDATION"
@@ -375,12 +501,29 @@ def backend_registry(niemeier, leech_foundation, surfaces):
     return rooted, leech
 
 
-def build_payload(foundry, golay, niemeier, leech_foundation):
+def build_payload(
+    foundry,
+    golay,
+    niemeier,
+    octad_prefix,
+    octad_completions,
+    octad_weyl_m24,
+    mod2_priority,
+    leech_foundation,
+):
     surfaces = []
     imported_foundry_embeddings = import_foundry(foundry, surfaces)
     imported_golay_embeddings = import_golay(golay, surfaces)
     finalize_surfaces(surfaces)
-    rooted, leech = backend_registry(niemeier, leech_foundation, surfaces)
+    rooted, leech = backend_registry(
+        niemeier,
+        octad_prefix,
+        octad_completions,
+        octad_weyl_m24,
+        mod2_priority,
+        leech_foundation,
+        surfaces,
+    )
 
     frame_rows = [frame for surface in surfaces for frame in surface["frames"]]
     mw_distribution = Counter(frame["mw_rank_for_rho_19"] for frame in frame_rows)
@@ -393,7 +536,12 @@ def build_payload(foundry, golay, niemeier, leech_foundation):
                     "shard_id": f"{backend['backend_id']}:{band_id}",
                     "backend_id": backend["backend_id"],
                     "determinant_band": [lower, upper],
-                    "state": "OPEN",
+                    "state": (
+                        "PARTIAL_POSITIVE_OCTAD_PREFIXES_0_500_FULL_WEYL_M24"
+                        if backend["backend_id"] == "ROOTED-24A1"
+                        and band_id == "D0001-0500"
+                        else "OPEN"
+                    ),
                     "orbit_completeness_certificate": None,
                 }
             )
@@ -412,7 +560,10 @@ def build_payload(foundry, golay, niemeier, leech_foundation):
                 "No rooted backend or Leech backend is complete for all primitive "
                 "rank-seven embeddings through determinant 5000. The imported "
                 "2A7+2D5 mutation shell and 24A1 Golay design retain their original "
-                "bounded completeness statements. Surface IDs catalogue exact "
+                "bounded completeness statements. The 24A1 completion shard covers "
+                "only positive seven-octad generators for prefixes 0:500; their "
+                "full Weyl-M24 quotient is exact, but the remaining prefixes and "
+                "signed/non-octad generator languages remain open. Surface IDs catalogue exact "
                 "records, not an assertion that the determinant bands are closed."
             ),
         },
@@ -430,6 +581,17 @@ def build_payload(foundry, golay, niemeier, leech_foundation):
                 "lattice has signature (1,18) and rank >= length(A_NS)+2, so its "
                 "genus is a single isometry class."
             ),
+            "cross_niemeier_umbral_mod2_priority": {
+                "seed_classes_for_A7_2_D5_2": ["2B", "2C", "4A"],
+                "negative_control_classes": ["1A", "2A"],
+                "required_acceptance_gate": "rank_GF2(g_M-I)>0",
+                "policy": (
+                    "Prioritize full ambient stabilizers with non-scalar "
+                    "component permutations whose induced complement action "
+                    "remains nontrivial modulo two; component multiplicity "
+                    "alone is only a scheduling heuristic."
+                ),
+            },
         },
         "accounting": {
             "surface_classes_by_T_NS": len(surfaces),
@@ -496,6 +658,10 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--foundry", type=Path, default=DEFAULT_FOUNDRY)
 parser.add_argument("--golay", type=Path, default=DEFAULT_GOLAY)
 parser.add_argument("--niemeier", type=Path, default=DEFAULT_NIEMEIER)
+parser.add_argument("--octad-prefix", type=Path, default=DEFAULT_24A1_PREFIX)
+parser.add_argument("--octad-completion", type=Path, action="append")
+parser.add_argument("--octad-weyl-m24", type=Path, default=DEFAULT_24A1_WEYL_M24)
+parser.add_argument("--mod2-priority", type=Path, default=DEFAULT_MOD2_PRIORITY)
 parser.add_argument("--leech", type=Path, default=DEFAULT_LEECH)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 parser.add_argument("--check", action="store_true")
@@ -504,9 +670,23 @@ arguments = parser.parse_args()
 foundry_payload = json.loads(arguments.foundry.read_text())
 golay_payload = json.loads(arguments.golay.read_text())
 niemeier_payload = json.loads(arguments.niemeier.read_text())
+octad_prefix_payload = json.loads(arguments.octad_prefix.read_text())
+octad_completion_paths = arguments.octad_completion or list(DEFAULT_24A1_COMPLETIONS)
+octad_completion_payloads = [
+    json.loads(path.read_text()) for path in octad_completion_paths
+]
+octad_weyl_m24_payload = json.loads(arguments.octad_weyl_m24.read_text())
+mod2_priority_payload = json.loads(arguments.mod2_priority.read_text())
 leech_payload = json.loads(arguments.leech.read_text())
 payload = build_payload(
-    foundry_payload, golay_payload, niemeier_payload, leech_payload
+    foundry_payload,
+    golay_payload,
+    niemeier_payload,
+    octad_prefix_payload,
+    octad_completion_payloads,
+    octad_weyl_m24_payload,
+    mod2_priority_payload,
+    leech_payload,
 )
 encoded = json.dumps(payload, indent=2, sort_keys=True) + "\n"
 

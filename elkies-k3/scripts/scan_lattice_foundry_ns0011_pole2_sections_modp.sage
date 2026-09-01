@@ -61,6 +61,19 @@ def evaluate_everywhere(polynomial, prime: int) -> np.ndarray:
     return values
 
 
+def audit_function_table(polynomial, table: np.ndarray, prime: int) -> int:
+    """Cross-check deterministic table entries by direct Sage evaluation."""
+    flat = table.reshape(-1)
+    total = flat.size
+    indices = sorted({0, total - 1, *range(0, total, max(1, total // 31))})
+    shape = (prime,) * polynomial.parent().ngens()
+    for index in indices:
+        values = tuple(int(value) for value in np.unravel_index(index, shape))
+        if int(polynomial(*values)) % prime != int(flat[index]) % prime:
+            raise ArithmeticError("tensor polynomial-function audit failed")
+    return len(indices)
+
+
 def parse_msolve(path: Path):
     lines = path.read_text().splitlines()
     names = lines[0].split(",")
@@ -140,8 +153,13 @@ for metadata_path in metadata_paths:
         range(len(equations)), key=lambda index: len(equations[index].monomials())
     )
     surviving_counts = []
+    tensor_audit_points = 0
     for equation_index in evaluation_order:
-        solution_mask &= evaluate_everywhere(equations[equation_index], prime) == 0
+        table = evaluate_everywhere(equations[equation_index], prime)
+        tensor_audit_points += audit_function_table(
+            equations[equation_index], table, prime
+        )
+        solution_mask &= table == 0
         surviving_counts.append(int(solution_mask.sum()))
         if not surviving_counts[-1]:
             break
@@ -196,6 +214,7 @@ for metadata_path in metadata_paths:
             "affine_points_scanned": prime ** ring.ngens(),
             "equation_evaluation_order": evaluation_order,
             "surviving_counts_after_each_equation": surviving_counts,
+            "direct_tensor_audit_points": tensor_audit_points,
             "solution_count": len(materialized),
             "solutions": materialized,
         }
@@ -214,14 +233,24 @@ for metadata_path in zero_y_metadata_paths:
     ring = PolynomialRing(GF(prime), names=names, order="degrevlex")
     outer = PolynomialRing(ring, "t")
     H = outer(metadata["system"]["H"])
-    coefficient_tables = [
-        evaluate_everywhere(ring(H[index]), prime).reshape(-1)
-        for index in range(19)
-    ]
+    coefficient_tables = []
+    tensor_audit_points = 0
+    for index in range(19):
+        coefficient = ring(H[index])
+        table = evaluate_everywhere(coefficient, prime)
+        tensor_audit_points += audit_function_table(coefficient, table, prime)
+        coefficient_tables.append(table.reshape(-1))
     solution_data = []
+    square_audit_points = 0
+    square_audit_stride = max(1, prime ** len(names) // 31)
     for flat_index in range(prime ** len(names)):
         coefficients = [int(table[flat_index]) for table in coefficient_tables]
         root = square_root_coefficients(coefficients, prime)
+        if flat_index % square_audit_stride == 0 or flat_index + 1 == prime ** len(names):
+            base_audit = PolynomialRing(GF(prime), "u")
+            if bool(base_audit(coefficients).is_square()) != (root is not None):
+                raise ArithmeticError("polynomial-square audit failed")
+            square_audit_points += 1
         if root is None:
             continue
         values = tuple(
@@ -260,6 +289,8 @@ for metadata_path in zero_y_metadata_paths:
             "example_index": metadata["input"]["example_index"],
             "infinity_x_y": metadata["infinity"]["selected_x_y"],
             "affine_points_scanned": prime ** len(names),
+            "direct_tensor_audit_points": tensor_audit_points,
+            "direct_polynomial_square_audit_points": square_audit_points,
             "solution_count": len(solution_data),
             "solutions": solution_data,
         }
@@ -277,23 +308,40 @@ if len(records) != expected_charts:
         f"found {len(records)} charts but metadata declares {expected_charts}"
     )
 total_solutions = sum(record["solution_count"] for record in records + zero_y_records)
+source_artifact = ROOT / json.loads(metadata_paths[0].read_text())["input"]["artifact"]
+source_scan = json.loads(source_artifact.read_text())["scan"]
+fibre_scan_exhausted = bool(source_scan["exhausted"])
+scan_prime = int(json.loads(metadata_paths[0].read_text())["prime"])
+if total_solutions:
+    scan_status = (
+        "PASS_EXACT_EXHAUSTIVE_MODULAR_SECTION_SCAN_WITH_SOLUTIONS"
+        if fibre_scan_exhausted
+        else "PASS_EXACT_SECTION_SCAN_FOR_BOUNDED_FIBRE_SAMPLE_WITH_SOLUTIONS"
+    )
+else:
+    scan_status = (
+        "PASS_EXACT_EXHAUSTIVE_MODULAR_SECTION_SCAN_EMPTY"
+        if fibre_scan_exhausted
+        else "PASS_EXACT_SECTION_SCAN_FOR_BOUNDED_FIBRE_SAMPLE_EMPTY"
+    )
 output_payload = {
     "schema": "elkies-k3.lattice-foundry-ns0011-pole2-sections-modp-scan.v1",
-    "status": (
-        "PASS_EXACT_EXHAUSTIVE_NONZERO_Y_MODULAR_SECTION_SCAN_WITH_SOLUTIONS"
-        if total_solutions
-        else "PASS_EXACT_EXHAUSTIVE_NONZERO_Y_MODULAR_SECTION_SCAN_EMPTY"
-    ),
-    "prime": records and json.loads((ROOT / records[0]["system_metadata"]).read_text())["prime"],
+    "status": scan_status,
+    "prime": scan_prime,
     "scope": {
         "stored_fibre_models": len({record["example_index"] for record in records}),
+        "fibre_ansatz_scan_exhausted": fibre_scan_exhausted,
+        "fibre_coefficients_scanned": source_scan["samples_consumed"],
+        "fibre_coefficients_in_full_normalized_scan": source_scan[
+            "normalized_A_polynomials"
+        ],
         "nonzero_y_infinity_charts_up_to_section_negation": len(records),
         "smooth_zero_y_infinity_charts": len(zero_y_records),
         "affine_points_per_chart": records[0]["affine_points_scanned"],
         "nodal_zero_y_points_excluded_by_I3_identity_component": True,
     },
     "accounting": {
-        "total_nonzero_y_chart_solutions": total_solutions,
+        "total_chart_solutions": total_solutions,
         "charts_with_solutions": sum(
             bool(record["solution_count"]) for record in records + zero_y_records
         ),
@@ -302,15 +350,16 @@ output_payload = {
     "smooth_zero_y_charts": zero_y_records,
     "proof_boundary": {
         "proved": (
-            "The tensor-product calculation exhausts every GF(5) point of every "
-            "nonzero-y and smooth zero-y infinity chart exported for the seven "
-            "stored fibre models. The nodal zero-y point is excluded by the I3 "
+            f"The tensor-product calculation exhausts every GF({scan_prime}) point of every "
+            "nonzero-y and smooth zero-y infinity chart exported for every "
+            "stored fibre model. The nodal zero-y point is excluded by the I3 "
             "identity-component condition. "
             "Each displayed solution is independently checked in the homogeneous "
             "Weierstrass equation."
         ),
         "not_proved": (
-            "A characteristic-zero lift, a rational source parameterization, "
+            ("" if fibre_scan_exhausted else "Unscanned fibre models, ")
+            + "a characteristic-zero lift, a rational source parameterization, "
             "and the neighbour route are not covered."
         ),
     },

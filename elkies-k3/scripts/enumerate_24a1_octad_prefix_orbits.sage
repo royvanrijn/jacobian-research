@@ -23,7 +23,6 @@ import argparse
 import hashlib
 import json
 import math
-import time
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -151,7 +150,6 @@ def equivalent(group_gap, left, right):
 
 
 def extend_orbits(representatives, group, group_gap, octads, relation, size):
-    started = time.monotonic()
     candidates = set()
     for parent_index, subset in enumerate(representatives, start=1):
         stabilizer = group.stabilizer(Set(subset), action="OnSets")
@@ -194,7 +192,6 @@ def extend_orbits(representatives, group, group_gap, octads, relation, size):
         "invariant_buckets": len(buckets),
         "exact_duplicate_candidates": duplicates,
         "retained_orbits": len(retained),
-        "elapsed_seconds": time.monotonic() - started,
     }
 
 
@@ -283,7 +280,6 @@ def build(maximum_size):
             "invariant_buckets": 1,
             "exact_duplicate_candidates": 0,
             "retained_orbits": 1,
-            "elapsed_seconds": 0.0,
             **layer_accounting,
         }
     )

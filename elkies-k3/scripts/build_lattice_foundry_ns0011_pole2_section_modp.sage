@@ -270,8 +270,13 @@ metadata = {
     "proof_boundary": (
         "Exact algebra over the displayed finite field builds the pole-two "
         "section chart with I9 depth two, I7 depth one, and I3 identity-component "
-        "data. The chart fixes a nonzero-y leading point and excludes the listed "
-        "zero-y points. A solution must still be found, lifted to characteristic "
+        "data. The chart fixes "
+        + (
+            "a smooth zero-y leading point; the nodal point is excluded by the I3 identity-component condition. "
+            if args.zero_y_branch is not None
+            else "a nonzero-y leading point and excludes the listed zero-y points. "
+        )
+        + "A solution must still be found, lifted to characteristic "
         "zero, and tied to a rational one-parameter NS0011 source family."
     ),
 }
