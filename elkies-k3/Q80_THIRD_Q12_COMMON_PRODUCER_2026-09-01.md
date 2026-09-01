@@ -496,10 +496,67 @@ preserve the normalized fraction-field representatives needed by the Hensel
 system, while solving the full current 9-by-9 p-adic Jacobian is already too
 slow at low precision.  Neither mode is retained in the certified worker; its
 hash again agrees with the precision-5 and precision-256 artifacts.  A useful
-checkpoint implementation must instead save native Sage state at the final
-target precision.  The tempting first-marking genus-two shortcut is not an
+checkpoint implementation must instead save native Sage state, or canonical
+coefficient residues, at the final target precision.  The tempting
+first-marking genus-two shortcut is not an
 alternative: the exact local-behaviour certificate already proves that field
 splits at 19, while the target field is inert.  The exact fixed-`u` pencil is
 already available over the different quadratic descent field `QQ(a*b)`; the
 remaining issue is reconstructing its Jacobian and maps, not identifying its
 coefficient field.
+
+## Precision 1024 gate
+
+The exact 63-term pencil is now compiled modulo `19^1028`, and the conductor
+factorization and repeated root pass through `19^1024`.  A restart test at
+target precision 10 stopped once in the factor loop and once in the repeated-
+root loop; the resumed output agrees coefficientwise with a fresh run.  For
+the full lift, fixed-inverse digit corrections reached valuation 48.  Full-
+precision 9-by-9 Newton solves at good `U` values, followed by interpolation
+on the already certified rational-function supports and three held-outs,
+then advanced
+
+```text
+48, 96, 192, 384, 768, 1024.
+```
+
+The repeated root similarly advances
+
+```text
+1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024.
+```
+
+At precision 16 the accelerated `L,Q,D,A,B` records are byte-for-byte equal
+to the prior fixed-digit artifact.  The actual hybrid execution, final
+checkpoint, canonical worker, and coefficientwise comparison of checkpoint
+`L,Q,D` with the final artifact are separately pinned by
+
+```text
+q80-third-q12-discriminant-factors-p19-adic-precision1024-execution.json
+```
+
+with SHA-256
+`47b02dc8483f068e82bcd5b32689a1c5d30fd8affc0231e4b0266f6d9b46485b`.
+The source and final factor hashes are
+
+```text
+e0327dd535c4571a36d8b720e453090f7893087ae0c0c7aa1c65ed71d5964cbf
+81757b810266bc6000959562e02dd80a276a1476d26536af1be83940e1ead961
+```
+
+Generic integral-basis divisibility also passes through `19^1024`; its hash
+is
+`c10bce1e647179f207c7cf291cadf9aa392f7ef27c9e1c69773d87b8f4ff06ea`.
+The legacy-aligned sample independently recovers dimensions `1,1,2,3`, pole
+orders `2,3`, the long Weierstrass equation, and maps in both directions at
+the same precision.  Its hash is
+`fff901bba6a6b8868edc9af724c12e407882e47c00c422f0d546354c211c0098`.
+
+Coefficientwise rational reconstruction at this precision is still not a
+certificate: successful fractions occur at the 2,175-bit square-root
+boundary and some slots fail.  The next reconstruction therefore uses the
+known rational-function supports, residue-distinct high-precision samples,
+projective LLL per long coefficient, and independent reduction to all seven
+aligned finite-prime models.  Literal characteristic-zero substitution into
+the exact pencil remains mandatory before promoting the result from a
+candidate equation to an exact Jacobian.

@@ -343,8 +343,45 @@ That ceiling has been removed: an exact `19^260` pencil now supports a fully
 certified conductor, basis, and pinned child through `19^256`.  Rational
 reconstruction remains underdetermined—successful-looking coordinates are at
 the square-root modulus boundary and most coordinates fail—so no exact child
-is claimed.  The next useful target is at least 1,024 p-adic digits, with
-checkpointing added before the longer lift.
+is claimed from that artifact.
+
+The 1,024-digit gate is now complete.  The checkpoint launcher stores
+canonical rational-function coefficients at the final target precision and
+can resume both the factor and repeated-root stages.  Its pointwise Newton
+mode solves the full 9-by-9 system at good `U` values and interpolates on the
+certified supports, giving quadratic valuation growth.  The actual hybrid
+execution is separately pinned because the immutable canonical worker's
+embedded algorithm label describes only the fixed-digit baseline.  Replay
+the provenance gate with:
+
+```bash
+python3 elkies-k3/scripts/certify_q80_third_q12_p19_precision1024_execution.py --check
+```
+
+The exact pencil through `19^1028`, factor/root lift, generic integral-basis
+divisibility, and one complete child sample with maps both ways now pass
+through `19^1024`.  A batch worker compiles residue-distinct samples with
+per-output dependency/hash validation:
+
+```bash
+python3 elkies-k3/scripts/batch_q80_third_q12_riemann_roch_p19_adic_samples.py \
+  --workers 8 --limit 20
+```
+
+Twenty samples are the support-minimal equation batch: seventeen determine
+the degree-`8/8` coefficient and three are held out.  The reconstruction
+worker then performs projective LLL separately for each long coefficient and
+requires reduction to every transported model at
+`p=19,61,67,83,89,103,131`:
+
+```bash
+sage -python elkies-k3/scripts/reconstruct_q80_third_q12_long_jacobian_p19_adic.sage
+```
+
+This produces only a candidate until exact maps give a literal
+characteristic-zero replay in the 63-term pencil.  Coefficientwise rational
+reconstruction remains inadmissible: its successes still lie at the
+square-root modulus boundary.
 
 The p=61 compiler is now complete.  The generic mapped-fibre adapter replaces
 Sage's characteristic-`p` power-map normalization with Singular's

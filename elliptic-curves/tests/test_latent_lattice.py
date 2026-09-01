@@ -8,6 +8,8 @@ from latent_lattice import (
     ShortVectorRecord,
     aggregate_repeated_intersection_ledgers,
     build_relation_complex,
+    biconnected_components,
+    bounded_dense_hyperplanes,
     bounded_metric_relation_search,
     bounded_metric_star_component_search,
     candidate_finite_signature,
@@ -26,14 +28,20 @@ from latent_lattice import (
     finite_rarity_scores,
     finite_rarity_weights,
     finite_signature_distance,
+    dense_two_core_component,
     hermite_signature,
     hermite_signature_distance,
+    height_angle_profile,
+    height_angle_profile_distance,
     intrinsic_shell_signature,
     intrinsic_shell_profile_distance,
     joint_nearest_candidate_scores,
     lift_relation_vertex_bijection,
     lift_relation_vertex_injection,
+    maximal_star_components,
+    merge_component_vertex_maps,
     modular_rank,
+    overlapping_star_components,
     relation_metric_profile_distance,
     relation_metric_signature,
     point_complexity,
@@ -248,6 +256,67 @@ class LatentLatticeTests(unittest.TestCase):
         self.assertTrue(star.candidates)
         self.assertGreaterEqual(star.maximum_partial_replay_ray_count, 3)
         self.assertTrue(star.candidates[0].replay.primitive_target_image)
+
+        stars = maximal_star_components(first)
+        self.assertTrue(stars)
+        self.assertEqual(stars[0].mod2_rank, 2)
+        self.assertTrue(overlapping_star_components(first))
+        self.assertEqual(
+            dense_two_core_component(first, minimum_relation_degree=1).rational_rank,
+            2,
+        )
+        self.assertTrue(biconnected_components(first))
+
+        plane_heavy = build_relation_complex(
+            (
+                (1, 0, 0),
+                (0, 1, 0),
+                (1, 1, 0),
+                (1, -1, 0),
+                (2, 1, 0),
+                (0, 0, 1),
+            )
+        )
+        hyperplanes = bounded_dense_hyperplanes(
+            plane_heavy,
+            sample_count=100,
+            random_seed=7,
+            maximum_components=8,
+        )
+        self.assertEqual(hyperplanes.ambient_rank, 3)
+        self.assertEqual(len(hyperplanes.components[0].vertex_indices), 5)
+        self.assertEqual(hyperplanes.components[0].rational_rank, 2)
+        angle_profile = height_angle_profile(
+            first.vertices, ((1.0, 0.0), (0.0, 1.0))
+        )
+        scaled_angle_profile = height_angle_profile(
+            first.vertices, ((3.0, 0.0), (0.0, 3.0))
+        )
+        self.assertAlmostEqual(
+            height_angle_profile_distance(angle_profile, scaled_angle_profile),
+            0.0,
+        )
+
+        left_map = [-1] * len(first.vertices)
+        right_map = [-1] * len(first.vertices)
+        for source_index, target_index in enumerate(vertex_map):
+            if source_index in (0, 1, 2):
+                left_map[source_index] = target_index
+            if source_index in (1, 2, 3):
+                right_map[source_index] = target_index
+        merges = merge_component_vertex_maps(
+            first,
+            transformed,
+            left_map,
+            right_map,
+            held_out_source_indices=(3,),
+            source_gram=((1.0, 0.0), (0.0, 1.0)),
+            target_gram=((2.0, -1.0), (-1.0, 1.0)),
+            maximum_height_angle_rms=1.0,
+        )
+        self.assertTrue(merges)
+        self.assertEqual(merges[0].replay.replayed_source_rank, 2)
+        self.assertEqual(merges[0].held_out_replayed_ray_count, 1)
 
         fingerprint_vectors = first.vertices
         fingerprint_heights = (1.0, 1.3, 2.1, 2.8)
