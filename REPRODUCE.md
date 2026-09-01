@@ -2896,6 +2896,49 @@ frame `NS0024-F005`. The modular checks prove only the exact
 `I7+I5+I4+8I1` fibre profile; four MW-section conditions, the `NS0024`
 marking, and characteristic-zero lifting remain open.
 
+Rank all stored same-NS source fibrations against the MW0--2-first equation
+objective, and replay the low-degree multisection spectrum on the selected
+rootless foundry targets, with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/score_lattice_foundry_sources.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/sample_lattice_foundry_multisection_spectrum.sage \
+  --sample-count 256 --height-slack 4 \
+  --frame-id NS0001-F001 --frame-id NS0002-F007 \
+  --frame-id NS0005-F008 --frame-id NS0011-F002 \
+  --frame-id NS0022-F011 --frame-id NS0024-F005 \
+  --frame-id NS0028-F005 --frame-id NS0032-F011 \
+  --frame-id NS0033-F026 --check
+```
+
+The source ranking attaches every catalogued MW15--17 frame in the same
+Neron--Severi class and never infers a rational marking or route from the
+lattice. The current 20-candidate bounded ledger contains no MW0--2 source.
+The multisection replay is complete for degree-two low-height translation
+orbits; degree-three/four results are exact only for the declared 256 sampled
+cosets per frame. See
+[`elkies-k3/LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md`](elkies-k3/LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md).
+
+The representative direct high-rank-frame source hunt is
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/hunt_lattice_foundry_rootful_source.sage \
+  --ns-id NS0005 --target-frame-id NS0005-F001 \
+  --generations 12 --beam 12 --samples-per-parent 60 \
+  --primes 3,7,11,13,17,23 --seed 20262906 \
+  --target-root-rank 15 --allow-below-target \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0005-mw2-source-from-high-mw-scout-v1.json \
+  --root-adapted-frame-output artifacts/generated-results/elkies-k3-lattice-foundry-ns0005-mw2-source-from-high-mw-scout-root-adapted.txt
+```
+
+It starts at MW15 and emits the exact best bounded source even though the
+MW0--2 target is missed; it finds `A1+2A3+A6/MW4`. This is a Kneser discovery
+walk, not a certified physical elliptic-neighbour route.
+
 Classify all distinct biquadratic pair bases, build the complete exact
 5,566-row immediate-point arithmetic catalogue, replay the completed bounded
 rank-lower-bound ledger, and verify the simplest rank-at-least-nine base:

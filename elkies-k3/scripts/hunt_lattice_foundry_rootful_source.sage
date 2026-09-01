@@ -2,10 +2,10 @@
 """Hunt and Niemeier-certify a low-MW companion for a foundry target.
 
 This is the source-fibration half of the lattice foundry.  Starting from one
-exact rootless frame in the generated database, it walks the Kneser
-p-neighbour graph of the *same positive-definite genus*, maximizing exact ADE
-root rank.  A hit is not promoted from genus data alone: the script glues the
-source frame to the stored rank-seven auxiliary along an explicit
+exact frame in the generated database (rootless or already high-MW), it walks
+the Kneser p-neighbour graph of the *same positive-definite genus*, maximizing
+exact ADE root rank.  A hit is not promoted from genus data alone: the script
+glues the source frame to the stored rank-seven auxiliary along an explicit
 discriminant anti-isometry, constructs the even unimodular rank-24 ambient,
 and recovers the source as the saturated orthogonal complement.
 
@@ -19,6 +19,8 @@ claim: exact source certificate for any emitted hit; no completeness claim for
 inputs: artifacts/generated-results/elkies-k3-lattice-foundry-v1.json
 outputs: artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-hunt.json
 """
+
+DESCRIPTION = __doc__
 
 import argparse
 import hashlib
@@ -330,7 +332,7 @@ def replay_path(start, path, expected_digests, determinant):
     return current, observed
 
 
-parser = argparse.ArgumentParser(description=__doc__)
+parser = argparse.ArgumentParser(description=DESCRIPTION)
 parser.add_argument("--database", type=Path, default=DATABASE)
 parser.add_argument("--ns-id", default="NS0024")
 parser.add_argument("--target-frame-id", default="NS0024-F005")
@@ -374,7 +376,9 @@ target = matrix(ZZ, target_row["gram"])
 auxiliary = matrix(ZZ, ns_row["auxiliary_gram"])
 determinant = int(target.det())
 assert determinant == int(auxiliary.det())
-assert root_rank_and_count(target) == (0, 0)
+target_root_rank, target_root_count = root_rank_and_count(target)
+assert target_root_rank == int(target_row["root_rank"])
+target_mw_rank = 17 - target_root_rank
 
 random.seed(arguments.seed)
 set_random_seed(arguments.seed)
@@ -386,8 +390,8 @@ if not primes:
 start_form = form_from_gram(target)
 frontier = [
     {
-        "root_rank": 0,
-        "root_count": 0,
+        "root_rank": target_root_rank,
+        "root_count": target_root_count,
         "form": start_form,
         "path": [],
         "path_digests": [],
@@ -395,6 +399,7 @@ frontier = [
 ]
 seen = {reduced_key(target)}
 best = frontier[0]
+retained_candidates = list(frontier)
 generation_accounting = []
 
 print(
@@ -459,6 +464,7 @@ for generation in range(1, arguments.generations + 1):
     if not next_frontier:
         raise RuntimeError("source-hunt beam died before producing a candidate")
     frontier = next_frontier
+    retained_candidates.extend(frontier)
     if (
         frontier[0]["root_rank"], frontier[0]["root_count"]
     ) > (best["root_rank"], best["root_count"]):
@@ -488,6 +494,26 @@ for generation in range(1, arguments.generations + 1):
         and not arguments.continue_through_bound
     ):
         break
+
+# A high-root frame with a nonprimitive root lattice does not yet provide the
+# integral root-plus-MW source coordinates required by this certificate.
+# Select the best certifiable retained beam state instead of failing only at
+# the end or silently treating a torsion/glue problem as an MW basis.
+certifiable_best = None
+for candidate in sorted(
+    retained_candidates,
+    key=lambda row: (-row["root_rank"], -row["root_count"], len(row["path"])),
+):
+    candidate_minimized = minimize_child_frame(candidate["form"].Hessian_matrix())
+    if (
+        candidate_minimized["root_lattice_primitive"]
+        and candidate_minimized["mw_height"] is not None
+    ):
+        certifiable_best = candidate
+        break
+if certifiable_best is None:
+    raise RuntimeError("bounded source hunt retained no primitive-root source frame")
+best = certifiable_best
 
 if (
     best["root_rank"] < arguments.target_root_rank
@@ -557,8 +583,9 @@ payload = {
         "frame_id": arguments.target_frame_id,
         "gram": rows(target),
         "gram_sha256": gram_digest(target),
-        "root_type": "0",
-        "mw_rank_for_rho_19": 17,
+        "root_type": target_row["root_type"],
+        "root_rank": target_root_rank,
+        "mw_rank_for_rho_19": target_mw_rank,
         "determinant": determinant,
     },
     "source": {

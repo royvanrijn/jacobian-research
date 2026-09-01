@@ -411,7 +411,10 @@ def main() -> None:
         "reproduce": (
             "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python "
             "elkies-k3/scripts/sample_lattice_foundry_multisection_spectrum.sage "
-            f"--sample-count {arguments.sample_count} --height-slack {arguments.height_slack}"
+            f"--sample-count {arguments.sample_count} --height-slack {arguments.height_slack} "
+            + " ".join(
+                f"--frame-id {row[0]['frame_id']}" for row in selected
+            )
         ),
     }
     serialized = json.dumps(output, indent=2, sort_keys=True) + "\n"

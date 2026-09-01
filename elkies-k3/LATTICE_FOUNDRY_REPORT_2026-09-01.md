@@ -1,5 +1,11 @@
 # Lattice foundry report — 2026-09-01
 
+> **Updated optimization directive.**  This report records the first
+> target-first foundry run.  New searches start from any same-`NS/T`
+> MW15--17 frame and optimize first for an MW0--2, arithmetically rational,
+> equation-friendly source.  See
+> [`LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md`](LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md).
+
 ## Outcome
 
 The first deterministic foundry shell found 136 rootless rank-17 frame

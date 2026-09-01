@@ -753,6 +753,69 @@ Frobenius-character census in
 is only a candidate-ranking mechanism until an additional rational section
 and its independence are certified.
 
+### Proposition F5: rootless low-degree multisections are coset minima
+
+Let a rootless elliptic K3 have
+
+```text
+NS(X) = U + M(-1),
+```
+
+where `F=e` is the fibre, `e.f=1`, and `M` is positive definite and even.
+Every divisor class with fibre degree `d>0`, arithmetic genus `g`, and
+`M(-1)` coordinate `w` has the form
+
+```text
+D = ((norm_M(w)+2g-2)/(2d))*e + d*f + w.
+```
+
+It is integral precisely when the displayed first coefficient is integral.
+Translation by the section indexed by `x in M` replaces `w` by `w+d*x`.
+Moreover, for the section
+
+```text
+S_x = ((norm_M(x)-2)/2)*e + f + x,
+```
+
+one has
+
+```text
+2d*(D.S_x) = norm_M(w-d*x) - (2d^2-2g+2).
+```
+
+Consequently `D` is nonnegative on every section if and only if the exact
+minimum of its coset in `M/dM` is at least
+
+```text
+2d^2-2g+2.
+```
+
+For `(d,g)=(2,0)` the threshold is ten.  Every such effective class is an
+irreducible smooth rational bisection: rootlessness removes vertical root
+components, while a decomposition into two sections would have intersection
+one by adjunction and hence negative intersection with either component.
+For `g>=1` or `d>=3`, the same calculation certifies the lattice class and
+all-section nonnegativity, but not global nefness, irreducibility, arithmetic
+descent, or a Mordell--Weil rank gain.
+
+#### Proof
+
+The formula for `D` is exactly the adjunction equation `D^2=2g-2`.  Substituting
+the displayed section class gives the completed-square identity.  Translation
+therefore preserves the residue class of `w` modulo `dM` and the minimum over
+all sections is the corresponding positive-definite coset minimum.  When
+`d=2,g=0`, Riemann--Roch and `D.F>0` make `D`, rather than `-D`, effective.
+If it split horizontally, adjunction forces two rational degree-one
+components meeting once, so `D` would meet either component in `-1`, contrary
+to section nonnegativity.  An irreducible arithmetic-genus-zero curve on a
+smooth K3 is smooth and rational. QED.
+
+The complete degree-two and bounded sampled degree-three/four applications
+are recorded in
+[`LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md`](LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md).
+Coset abundance is only a discovery coordinate; the published R17 experience
+shows that it is not by itself a predictor of exceptional specialization rank.
+
 ## 8. What a bounded neighbour search really proves
 
 ### Theorem G: completeness inside a declared lattice box
@@ -862,3 +925,6 @@ once.
 - H. Pasten and C. Salgado,
   [*Non-thin rank jumps for double elliptic K3 surfaces*](https://doi.org/10.1007/s00229-024-01554-2),
   *Manuscripta Mathematica* **175** (2024), 771--781, Theorem 1.1.
+- A. Garbagnati and C. Salgado,
+  [*Rank jumps and Multisections of elliptic fibrations on K3 surfaces*](https://arxiv.org/abs/2505.15159),
+  for the geometric relation between multisections and rank jumps.

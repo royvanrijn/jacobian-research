@@ -571,10 +571,24 @@ The current proof boundary and replay commands are in
   still replays the complete H3 result: published R17 and alternate Q80, with
   no third rootless `J2` frame.
 - `hunt_lattice_foundry_rootful_source.sage` performs a deterministic exact
-  positive-frame neighbour hunt for `NS0024`. The exact promoted sources are
+  positive-frame neighbour hunt. It accepts any exact foundry frame, including
+  MW15/MW16 starts, and `--allow-below-target` records the best exact bounded
+  source when the requested root rank is missed. The original exact promoted
+  `NS0024` sources are
   `5A1+A2+A5/MW5` in `N(A11+D7+E6)` and the more equation-friendly
   `A3+A4+A6/MW4` in `N(A15+D9)`; both are saturated complements of the same
   primitive rank-seven auxiliary.
+- `score_lattice_foundry_sources.sage` ranks every stored same-NS source by
+  the MW0--2-first equation objective, attaches all catalogued MW15--17 target
+  frames, and leaves rational marking, Galois orbit, parametrization, and
+  uncertified route costs explicitly unknown. Audited low-degree
+  multisection richness is retained only as the final heuristic tie-break.
+- `sample_lattice_foundry_multisection_spectrum.sage` computes complete
+  degree-two low-height translation-coset spectra on selected rootless foundry
+  frames and deterministic exact-CVP samples in degrees three and four. It
+  replays the published R17 count of 39,120 rational bisection orbits; sampled
+  higher-degree coordinates are discovery heuristics, not curve censuses or
+  rank predictions.
 - `certify_lattice_foundry_route.sage` consumes an ordered route manifest,
   replays every primitive isotropic split, checks component/all-section and
   Proposition-C2 finite horizontal walls, composes determinant-one NS
@@ -636,6 +650,9 @@ The current proof boundary and replay commands are in
 
 The scope, counts, certified route, and open equation gates are recorded in
 [`../LATTICE_FOUNDRY_REPORT_2026-09-01.md`](../LATTICE_FOUNDRY_REPORT_2026-09-01.md).
+The source-first objective, bounded high-rank-frame trials, and multisection
+score are recorded in
+[`../LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md`](../LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md).
 
 ### Complete bisection pair-cover arithmetic
 
