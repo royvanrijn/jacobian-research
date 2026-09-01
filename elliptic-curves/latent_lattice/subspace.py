@@ -10,7 +10,10 @@ from typing import Any, Sequence
 
 import numpy as np
 
+from .codes import finite_rarity_scores
+from .finite import FiniteQuotientBlock
 from .integer import rational_nullspace, rational_rank
+from .local import ComponentBlock
 from .pari import ShortVectorRecord, gp_matrix, primitive_column_closure, run_gp
 from .relations import RelationComplex, build_relation_complex
 
@@ -227,14 +230,76 @@ print("BEGIN");for(i=1,matsize(K)[1],for(j=1,matsize(K)[2],if(j>1,print1("|"));p
 def exact_span_mask(
     vectors: Sequence[Sequence[int]], basis_rows: Sequence[Sequence[int]]
 ) -> np.ndarray:
-    if basis_rows and len(basis_rows) == len(basis_rows[0]) and modular_rank(basis_rows) == len(basis_rows):
+    if not basis_rows:
+        return np.zeros(len(vectors), dtype=bool)
+    if len(basis_rows) == len(basis_rows[0]) and rational_rank(basis_rows) == len(basis_rows):
         return np.ones(len(vectors), dtype=bool)
-    kernel = integer_right_kernel(basis_rows)
-    if not kernel or not kernel[0]:
+    kernel = rational_nullspace(basis_rows)
+    if not kernel:
         return np.ones(len(vectors), dtype=bool)
     vectors_object = np.asarray(vectors, dtype=object)
-    products = vectors_object @ np.asarray(kernel, dtype=object)
+    products = vectors_object @ np.asarray(kernel, dtype=object).T
     return np.all(products == 0, axis=1)
+
+
+def cross_bound_intersection_proposals(
+    records: Sequence[ShortVectorRecord],
+    left_enclosures: Sequence[GrowthProposal],
+    right_enclosures: Sequence[GrowthProposal],
+    *,
+    target_dimension: int,
+    left_count: int = 200,
+    right_count: int = 200,
+) -> tuple[GrowthProposal, ...]:
+    """Intersect independently generated enclosures from two finite clouds.
+
+    The two ledgers must use the same displayed ambient basis.  Modular rank
+    is only a rejection filter; every retained intersection is recomputed over
+    ``Q``, primitively saturated, and replayed against ``records`` exactly.
+    """
+
+    if not records:
+        raise ValueError("intersection proposals need an evaluation cloud")
+    vectors = tuple(record.coordinates for record in records)
+    integral = np.asarray(
+        [bool(record.arithmetic.get("integral", False)) for record in records],
+        dtype=bool,
+    )
+    features = arithmetic_feature_flags(records)
+    retained: dict[tuple[tuple[int, ...], ...], GrowthProposal] = {}
+    for left in left_enclosures[: int(left_count)]:
+        for right in right_enclosures[: int(right_count)]:
+            expected = left.dimension + right.dimension - target_dimension
+            if modular_rank(left.basis_rows + right.basis_rows) != expected:
+                continue
+            basis = exact_row_space_intersection(left.basis_rows, right.basis_rows)
+            if len(basis) != target_dimension:
+                continue
+            key = modular_row_space_key(basis)
+            if key in retained:
+                continue
+            mask = exact_span_mask(vectors, basis)
+            support = int(mask.sum())
+            arithmetic_llr = arithmetic_enrichment_llr(mask, features)
+            retained[key] = GrowthProposal(
+                dimension=target_dimension,
+                basis_rows=basis,
+                inlier_indices=tuple(map(int, np.flatnonzero(mask))),
+                support=support,
+                integral_support=int(np.sum(mask & integral)),
+                arithmetic_llr=arithmetic_llr,
+                search_score=arithmetic_llr,
+            )
+    proposals = list(retained.values())
+    proposals.sort(
+        key=lambda proposal: (
+            proposal.search_score,
+            proposal.support,
+            proposal.basis_rows,
+        ),
+        reverse=True,
+    )
+    return tuple(proposals)
 
 
 def numerical_span_mask(vectors: np.ndarray, basis_rows: np.ndarray) -> np.ndarray:
@@ -409,6 +474,8 @@ def independent_relation_growth_proposals(
     maximum_proposals: int | None = None,
     priority_mode: str = "arithmetic",
     seed_strategy: str = "top",
+    finite_blocks: Sequence[FiniteQuotientBlock] = (),
+    component_blocks: Sequence[ComponentBlock] = (),
 ) -> tuple[GrowthProposal, ...]:
     """Grow one deterministic path from each high-arithmetic relation seed.
 
@@ -420,8 +487,8 @@ def independent_relation_growth_proposals(
 
     if not 2 <= dimension <= len(records[0].coordinates):
         raise ValueError("dimension is outside the ambient range")
-    if priority_mode not in {"arithmetic", "relations"}:
-        raise ValueError("priority_mode must be 'arithmetic' or 'relations'")
+    if priority_mode not in {"arithmetic", "relations", "finite"}:
+        raise ValueError("priority_mode must be 'arithmetic', 'relations', or 'finite'")
     if seed_strategy not in {"top", "stratified"}:
         raise ValueError("seed_strategy must be 'top' or 'stratified'")
     record_by_vector = {record.coordinates: record for record in records}
@@ -455,8 +522,22 @@ def independent_relation_growth_proposals(
         np.asarray(complex_.additive_degrees, dtype=float)
         + np.asarray(complex_.divisibility_degrees, dtype=float)
     )
+    finite_priority = np.asarray(
+        finite_rarity_scores(
+            [record.coordinates for record in ordered],
+            finite_blocks=finite_blocks,
+            component_blocks=component_blocks,
+        ),
+        dtype=float,
+    )
+    if priority_mode == "finite" and not (finite_blocks or component_blocks):
+        raise ValueError("finite priority needs at least one finite code block")
     if priority_mode == "relations":
         edge_priority = np.sum(relation_priority[edges], axis=1)
+    elif priority_mode == "finite":
+        edge_priority = np.sum(
+            finite_priority[edges] + 0.05 * relation_priority[edges], axis=1
+        )
     ranked_edges = np.argsort(-edge_priority, kind="stable")
     retained_seed_count = min(seed_edges, len(edges))
     if seed_strategy == "top" or retained_seed_count == len(edges):
@@ -481,8 +562,12 @@ def independent_relation_growth_proposals(
                     counts * (1.0 + 0.12 * favorable + 0.4 * integral)
                     - 0.005 * total_bits
                 )
-            else:
+            elif priority_mode == "relations":
                 scores = counts * (1.0 + 0.05 * relation_priority)
+            else:
+                scores = counts * (
+                    1.0 + 0.05 * relation_priority + 0.05 * finite_priority
+                )
             ranked = np.argsort(-scores, kind="stable")
             addition = next(
                 (
@@ -509,6 +594,8 @@ def independent_relation_growth_proposals(
         integral_support = int(np.sum(mask & integral))
         if priority_mode == "relations":
             base_score = support + 0.01 * float(np.sum(relation_priority[mask]))
+        elif priority_mode == "finite":
+            base_score = support + 0.01 * float(np.sum(finite_priority[mask]))
         else:
             base_score = arithmetic_llr
         # The population term prevents the Bernoulli likelihood from choosing

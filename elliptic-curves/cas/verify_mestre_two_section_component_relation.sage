@@ -10,12 +10,14 @@ that field; later gates will use the same field for exact covariant group law.
 
 import argparse
 import os
+from itertools import product as cartesian_product
 
 from sage.all import (
     GF,
     QQ,
     FractionField,
     FunctionField,
+    EllipticCurve,
     PolynomialRing,
     matrix,
     prod,
@@ -106,8 +108,11 @@ def build_component_field(prime: int):
         raise AssertionError(f"expected a linear r6 gcd, found degree {common.degree()}")
     r6 = -common[0]
     values = (component(r3), component(r4), alpha, r6)
-    specialized_leading = specialize_r5(raw_leading)
-    leading = specialized_leading(r6)
+    if os.environ.get("MESTRE_SLICE_A") or os.environ.get("MESTRE_BASE_LINE") == "1":
+        leading = component(0)
+    else:
+        specialized_leading = specialize_r5(raw_leading)
+        leading = specialized_leading(r6)
     return component, values, seed_polynomial, leading
 
 
@@ -115,6 +120,124 @@ def replay(prime: int) -> None:
     component, roots, seed_polynomial, leading = build_component_field(prime)
     print("component_field_constructed 1", flush=True)
     r3, r4, r5, r6 = roots
+    specialization_text = os.environ.get("MESTRE_SPECIALIZE_AB")
+    if specialization_text:
+        if prime == 0:
+            raise ValueError("an (a,b) specialization requires positive characteristic")
+        first_text, second_text = specialization_text.split(",", maxsplit=1)
+        first = GF(prime)(int(first_text))
+        second = GF(prime)(int(second_text))
+        generic_component = component
+        generic_base = generic_component.base_ring()
+        modulus_ring = PolynomialRing(GF(prime), names=("theta_polynomial",))
+
+        def specialize_base(value):
+            value = generic_base(value)
+            numerator = value.numerator()(first, second)
+            denominator = value.denominator()(first, second)
+            if denominator == 0:
+                raise ZeroDivisionError("specialization met a coefficient denominator")
+            return GF(prime)(numerator) / GF(prime)(denominator)
+
+        specialized_modulus = modulus_ring(
+            [specialize_base(value) for value in generic_component.modulus().list()]
+        )
+        if specialized_modulus.degree() != 8 or not specialized_modulus.is_irreducible():
+            raise AssertionError("specialized component polynomial was not irreducible")
+        component = GF(
+            prime**8, names=("theta",), modulus=specialized_modulus
+        )
+        theta = component.gen()
+
+        def specialize_component(value):
+            coefficients = list(generic_component(value).lift())
+            return component(
+                sum(
+                    component(specialize_base(coefficient)) * theta**index
+                    for index, coefficient in enumerate(coefficients)
+                )
+            )
+
+        roots = tuple(specialize_component(value) for value in roots)
+        leading = specialize_component(leading)
+        r3, r4, r5, r6 = roots
+        print(
+            f"component_specialized_ab {int(first)} {int(second)}",
+            flush=True,
+        )
+    slice_text = os.environ.get("MESTRE_SLICE_A")
+    if slice_text:
+        if prime != 0:
+            raise ValueError("the rational a-slice mode requires characteristic zero")
+        slice_value = QQ(slice_text)
+        generic_base = component.base_ring()
+        slice_polynomial_ring = PolynomialRing(QQ, names=("B",))
+        B = slice_polynomial_ring.gen()
+        slice_base = FractionField(slice_polynomial_ring)
+        slice_component_ring = PolynomialRing(slice_base, names=("C",))
+
+        def specialize_a(value):
+            value = generic_base(value)
+            numerator = value.numerator()(slice_value, B)
+            denominator = value.denominator()(slice_value, B)
+            if denominator == 0:
+                raise ZeroDivisionError("a-slice annihilated a generic denominator")
+            return slice_base(numerator) / slice_base(denominator)
+
+        slice_modulus = slice_component_ring(
+            [specialize_a(value) for value in component.modulus().list()]
+        )
+        slice_factorization = list(slice_modulus.factor())
+        print("MESTRE_TWO_SECTION_COMPONENT_A_SLICE_V1")
+        print(f"a {slice_value}")
+        print(
+            "factor_degrees",
+            [factor.degree() for factor, _ in slice_factorization],
+        )
+        for factor, exponent in slice_factorization:
+            print("FACTOR", factor.degree(), exponent)
+            print(factor)
+        print("DONE")
+        return
+    if os.environ.get("MESTRE_BASE_LINE") == "1":
+        if prime != 0:
+            raise ValueError("the rational base-line mode requires characteristic zero")
+        generic_base = component.base_ring()
+        line_polynomial_ring = PolynomialRing(QQ, names=("U",))
+        U = line_polynomial_ring.gen()
+        line_base = FractionField(line_polynomial_ring)
+        line_component_ring = PolynomialRing(line_base, names=("C",))
+        a0 = QQ(19) / 5
+        b0 = QQ(143) / 25
+        a1_line = QQ(175) / 23
+        b1_line = QQ(93) / 23
+        line_a = line_base(a0 + U * (a1_line - a0))
+        line_b = line_base(b0 + U * (b1_line - b0))
+
+        def specialize_line(value):
+            value = generic_base(value)
+            numerator = value.numerator()(line_a, line_b)
+            denominator = value.denominator()(line_a, line_b)
+            if denominator == 0:
+                raise ZeroDivisionError("base line annihilated a generic denominator")
+            return line_base(numerator) / line_base(denominator)
+
+        line_modulus = line_component_ring(
+            [specialize_line(value) for value in component.modulus().list()]
+        )
+        line_factorization = list(line_modulus.factor())
+        print("MESTRE_TWO_SECTION_COMPONENT_BASE_LINE_V1")
+        print("a", line_a)
+        print("b", line_b)
+        print(
+            "factor_degrees",
+            [factor.degree() for factor, _ in line_factorization],
+        )
+        for factor, exponent in line_factorization:
+            print("FACTOR", factor.degree(), exponent)
+            print(factor)
+        print("DONE")
+        return
     if os.environ.get("MESTRE_QUADRATIC_TOWER") == "1":
         base = component.base_ring()
         alpha = component.gen()
@@ -646,16 +769,233 @@ def replay(prime: int) -> None:
     P1 = covariant_point(x01 + x11 * T, y1)
     P2 = covariant_point(x02 + x12 * T, y2)
     print("affine_covariant_points_constructed 1", flush=True)
+    if os.environ.get("MESTRE_DISCOVER_GENERIC_RELATION") == "1":
+        if not specialization_text:
+            raise ValueError("generic relation discovery requires MESTRE_SPECIALIZE_AB")
+        all_visible_projective = []
+        all_visible_labels = []
+        for index, root in enumerate((cover(0), cover(1), r3, r4, r5, r6)):
+            for sign in (-1, 1):
+                x_value = root + sign * T
+                y_numerator = t_ring(approximant(x_value))
+                all_visible_projective.append(
+                    covariant_point(x_value, y_numerator, T)
+                )
+                all_visible_labels.append(
+                    f"V{index}{'-' if sign == -1 else '+'}"
+                )
+        elliptic_function_field = FractionField(t_ring)
+        invariant_j = (
+            72 * quartic[4] * quartic[2] * quartic[0]
+            + 9 * quartic[3] * quartic[2] * quartic[1]
+            - 27 * quartic[4] * quartic[1] ** 2
+            - 27 * quartic[3] ** 2 * quartic[0]
+            - 2 * quartic[2] ** 3
+        )
+        coefficient_b = -27 * invariant_j
+        elliptic_curve = EllipticCurve(
+            elliptic_function_field,
+            [
+                elliptic_function_field(coefficient_a),
+                elliptic_function_field(coefficient_b),
+            ],
+        )
+
+        def elliptic_point(projective):
+            xx, yy, zz = (
+                elliptic_function_field(value) for value in projective
+            )
+            return elliptic_curve(xx / zz**2, yy / zz**3)
+
+        baseline = [elliptic_point(value) for value in all_visible_projective]
+        baseline.append(elliptic_point(P1))
+        target = elliptic_point(P2)
+        labels = [*all_visible_labels, "P1"]
+        origin = elliptic_curve(0)
+
+        def point_key(point):
+            return tuple(point)
+
+        def signed_sums(points):
+            for coefficients_here in cartesian_product(
+                (-1, 0, 1), repeat=len(points)
+            ):
+                total_here = origin
+                for coefficient, point in zip(coefficients_here, points):
+                    if coefficient == 1:
+                        total_here += point
+                    elif coefficient == -1:
+                        total_here -= point
+                yield point_key(total_here), coefficients_here
+
+        split_index = 6
+        left_table = {
+            key: coefficients_here
+            for key, coefficients_here in signed_sums(baseline[:split_index])
+        }
+        discovered = []
+        for right_key, right_coefficients in signed_sums(baseline[split_index:]):
+            right_point = elliptic_curve(list(right_key))
+            for target_sign in (1, -1):
+                needed = point_key(target_sign * target - right_point)
+                if needed not in left_table:
+                    continue
+                coefficients_here = left_table[needed] + right_coefficients
+                discovered.append(
+                    (
+                        target_sign,
+                        tuple(
+                            (labels[index], coefficient)
+                            for index, coefficient in enumerate(coefficients_here)
+                            if coefficient
+                        ),
+                    )
+                )
+            if len(discovered) >= 12:
+                break
+        print("MESTRE_TWO_SECTION_GENERIC_RELATION_DISCOVERY_V1")
+        print(f"characteristic {prime}")
+        print(f"component_specialization {specialization_text}")
+        print(f"relations_found {len(discovered)}")
+        for relation in discovered:
+            print("RELATION", relation)
+        print("DONE")
+        return
     visible = {}
     # The proposed relation only uses the r5 and r6 visible pairs.  Avoid
     # constructing the other eight covariant points in this high-degree
     # function field.
-    for index, root in ((4, r5), (5, r6)):
-        for sign in (-1, 1):
-            x_value = root + sign * T
-            y_numerator = t_ring(approximant(x_value))
-            visible[index, sign] = covariant_point(x_value, y_numerator, T)
+    for index, sign, root in (
+        (0, 1, cover(0)),
+        (3, -1, r4),
+        (4, -1, r5),
+        (4, 1, r5),
+        (5, -1, r6),
+        (5, 1, r6),
+    ):
+        x_value = root + sign * T
+        y_numerator = t_ring(approximant(x_value))
+        visible[index, sign] = covariant_point(x_value, y_numerator, T)
     print("support_visible_points_constructed 1", flush=True)
+
+    if os.environ.get("MESTRE_TEST_RELATION_DETERMINANT") == "1":
+        relation_points = (
+            P2,
+            negative(P1),
+            negative(visible[0, 1]),
+            negative(visible[3, -1]),
+            negative(visible[4, 1]),
+            negative(visible[5, -1]),
+        )
+
+        def riemann_roch_row(point):
+            xx, yy, zz = point
+            return (
+                zz**6,
+                xx * zz**4,
+                yy * zz**3,
+                xx**2 * zz**2,
+                xx * yy * zz,
+                xx**3,
+            )
+
+        relation_matrix = matrix(
+            t_ring, [riemann_roch_row(point) for point in relation_points]
+        )
+        relation_determinant = relation_matrix.det()
+        print("relation_determinant_computed 1", flush=True)
+        pole_six_cofactor = relation_matrix.matrix_from_rows_and_columns(
+            range(5), range(5)
+        ).det()
+        print("pole_six_cofactor_computed 1", flush=True)
+        print("MESTRE_TWO_SECTION_RELATION_RIEMANN_ROCH_V1")
+        print(f"characteristic {prime}")
+        print(
+            "relation",
+            "P2=P1+V(0,+)+V(r4,-)+V(r5,+)+V(r6,-)",
+        )
+        print("six_point_determinant_zero", int(relation_determinant == 0))
+        print("pole_order_six_cofactor_nonzero", int(pole_six_cofactor != 0))
+        print("DONE")
+        return
+
+    if os.environ.get("MESTRE_TEST_DISCOVERED_RELATION") == "1":
+        left_pair = add(P1, visible[0, 1])
+        print("relation_left_pair_constructed 1", flush=True)
+        middle_pair = add(visible[3, -1], visible[4, 1])
+        print("relation_middle_pair_constructed 1", flush=True)
+        four_term_side = add(left_pair, middle_pair)
+        print("relation_four_term_side_constructed 1", flush=True)
+        predicted_p2 = add(four_term_side, visible[5, -1])
+        print("relation_predicted_p2_constructed 1", flush=True)
+        relation_verified = equal(P2, predicted_p2)
+        print("MESTRE_TWO_SECTION_DISCOVERED_RELATION_V1")
+        print(f"characteristic {prime}")
+        print(f"seed_projection_degree {seed_polynomial.degree()}")
+        print(
+            "relation",
+            "P2=P1+V(0,+)+V(r4,-)+V(r5,+)+V(r6,-)",
+        )
+        print("generic_visible_relation_verified", int(relation_verified))
+        print("DONE")
+        return
+
+    if os.environ.get("MESTRE_AFFINE_GROUPLAW") == "1":
+        elliptic_function_field = FractionField(t_ring)
+
+        def affine(point):
+            if point[2] == 0:
+                return None
+            xx, yy, zz = (elliptic_function_field(value) for value in point)
+            return xx / zz**2, yy / zz**3
+
+        def affine_negative(point):
+            return None if point is None else (point[0], -point[1])
+
+        def affine_add(left, right):
+            if left is None:
+                return right
+            if right is None:
+                return left
+            x1a, y1a = left
+            x2a, y2a = right
+            if x1a == x2a:
+                if y1a == -y2a:
+                    return None
+                slope = (3 * x1a**2 + elliptic_function_field(coefficient_a)) / (
+                    2 * y1a
+                )
+            else:
+                slope = (y2a - y1a) / (x2a - x1a)
+            x3a = slope**2 - x1a - x2a
+            y3a = slope * (x1a - x3a) - y1a
+            return x3a, y3a
+
+        P1_affine = affine(P1)
+        P2_affine = affine(P2)
+        visible_affine = {key: affine(value) for key, value in visible.items()}
+        print("affine_group_coordinates_normalized 1", flush=True)
+        r5_difference_affine = affine_add(
+            visible_affine[4, -1], affine_negative(visible_affine[4, 1])
+        )
+        print("r5_visible_difference_constructed 1", flush=True)
+        r6_difference_affine = affine_add(
+            affine_negative(visible_affine[5, -1]), visible_affine[5, 1]
+        )
+        print("r6_visible_difference_constructed 1", flush=True)
+        visible_sum_affine = affine_add(r5_difference_affine, r6_difference_affine)
+        print("visible_side_constructed 1", flush=True)
+        total_affine = affine_add(P1_affine, P2_affine)
+        print("nonvisible_side_constructed 1", flush=True)
+        relation_signs = [(1, 1)] if total_affine == visible_sum_affine else []
+        print("MESTRE_TWO_SECTION_COMPONENT_FUNCTION_FIELD_V1")
+        print(f"characteristic {prime}")
+        print(f"seed_projection_degree {seed_polynomial.degree()}")
+        print("leading_square_root_in_component 1")
+        print(f"section_relation_signs {relation_signs}")
+        print(f"generic_visible_relation_verified {int(bool(relation_signs))}")
+        print("DONE")
+        return
 
     # Balance the addition tree.  Jacobian-projective coordinate degrees grow
     # under addition, so this is materially smaller than a four-term chain.
@@ -666,11 +1006,19 @@ def replay(prime: int) -> None:
     visible_sum = add(r5_difference, r6_difference)
     print("visible_side_constructed 1", flush=True)
     # The common square-root orientation is fixed by the recursive leading
-    # coefficient.  On the pinned D-square curve its exact specialization is
-    # P1+P2=V(r5,-)-V(r5,+)-V(r6,-)+V(r6,+).
-    total = add(P1, P2)
-    print("nonvisible_side_constructed 1", flush=True)
-    relation_signs = [(1, 1)] if equal(total, visible_sum) else []
+    # coefficient.  Test all conjugation signs against both orientations of
+    # the visible combination known on the pinned D-square curve.
+    relation_signs = []
+    for first_sign in (-1, 1):
+        for second_sign in (-1, 1):
+            first_point = P1 if first_sign == 1 else negative(P1)
+            second_point = P2 if second_sign == 1 else negative(P2)
+            total = add(first_point, second_point)
+            if equal(total, visible_sum):
+                relation_signs.append((first_sign, second_sign, 1))
+            if equal(total, negative(visible_sum)):
+                relation_signs.append((first_sign, second_sign, -1))
+    print("nonvisible_signs_tested 1", flush=True)
 
     print("MESTRE_TWO_SECTION_COMPONENT_FUNCTION_FIELD_V1")
     print(f"characteristic {prime}")

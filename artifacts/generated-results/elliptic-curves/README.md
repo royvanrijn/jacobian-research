@@ -23,11 +23,15 @@ strict:
 Important distinctions made explicit by the catalogue:
 
 - `latent_lattice_calibration_truth_v1.json` contains exact withheld control
-  embeddings; it is not selector input. `latent_lattice_calibration_v1.json`
-  records that the bounded coordinate-free relation selector recovers only
-  one of four R17 controls and misses the Fermigier rank-12 space on ICARM 245.
-  Its status closes the target-search gate and is not a nonexistence theorem
+  embeddings; it is not selector input. `latent_lattice_calibration_v2.json`
+  is the active corrected-semantics gate artifact.  It still rejects the
+  bounded selector before any target search.  The superseded `v1` selector
+  bytes are retained only for provenance and are not a nonexistence theorem
   for a common wgxli lattice.
+  `latent_lattice_finite_calibration_v1.json` adds disjoint development and
+  held-out finite-code ensembles.  It passes R17 proposal recall but fails the
+  Fermigier control and finite-profile selection, so it also forbids target
+  use.
 
 - `icarm_273_282_302_family_discovery_v1.json` screens 2,334 generated
   one-parameter families exactly.  It rediscovers curve 282 in both the

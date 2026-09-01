@@ -5,8 +5,16 @@
 The first deterministic foundry shell found 136 rootless rank-17 frame
 classes on determinant-changing Picard-19 lattice classes after exact
 saturation and ternary-realizability gates. A subsequent exact source hunt
-and neighbour replay promotes `NS0024` (discriminant 950) to the preferred
-lattice-level outcome:
+and two independent neighbour replays promote `NS0024` (discriminant 950) to
+the preferred lattice-level outcome.  The simpler equation source is
+
+```text
+A3+A4+A6 / MW4
+    -- thirteen primitive nef degree-two edges, q only 4 or 6 -->
+catalogue rootless frame NS0024-F005 / MW17.
+```
+
+The shorter fallback route is
 
 ```text
 5A1+A2+A5 / MW5
@@ -14,12 +22,12 @@ lattice-level outcome:
 new rootless frame / MW17.
 ```
 
-The source is a saturated complement in `N(A11+D7+E6)`. Every route edge has
-complete component, all-section, and finite horizontal-wall gates; all eleven
-physical Weyl reflection counts are zero; and the composed 19-dimensional
-integral marking is unimodular. The terminal positive frame is not integrally
-isometric to any of the three rootless `NS0024` frames in the initial shell,
-so the route itself discovers a fourth exact class.
+The MW4 source is a saturated complement in `N(A15+D9)`; the MW5 source is a
+saturated complement in `N(A11+D7+E6)`. Every edge in both routes has complete
+component, all-section, and finite horizontal-wall gates. All 24 physical
+Weyl reflection counts are zero, and both composed 19-dimensional integral
+markings are unimodular. The MW4 route lands on `NS0024-F005`; the MW5 route
+discovers a fourth rootless `NS0024` frame not present in the initial shell.
 
 This is success level A at the lattice/arithmetic/route layer. It is not yet
 an equation: no effective equation-side zero, resolved Riemann--Roch pencil,
@@ -42,14 +50,43 @@ certificate glues `NS` and `T` to the even unimodular lattice of signature
 `(3,19)`, hence to the K3 lattice. This is the same certified `NS0024/T`
 class for source and target; it is not the determinant-948 H3 surface.
 
-The equation-friendly source has root rank 12, MW rank 5, trivial torsion,
-and determinant-predicted MW regulator `475/288`. Its root lattice is
-primitive. It has 46 norm-two vectors, 2,712 norm-four vectors, and
-automorphism group order 276,480. Exact cyclic discriminant gluing embeds the
-rank-seven auxiliary primitively into `N(A11+D7+E6)` and recovers the source
-as its saturated orthogonal complement.
+The preferred equation source has type `A3+A4+A6`, root rank 13, MW rank 4,
+trivial torsion, and determinant-predicted MW regulator `95/14`. Its root
+lattice is primitive. It has 74 norm-two vectors, 4,236 norm-four vectors,
+and automorphism group order 29,030,400. Exact cyclic discriminant gluing
+embeds the rank-seven auxiliary primitively into `N(A15+D9)` and recovers the
+source as its saturated orthogonal complement. The exact MW5 source remains
+the shorter-route fallback, with regulator `475/288`, 46 roots, 2,712
+norm-four vectors, and automorphism order 276,480.
 
 ## Certified route
+
+The MW4 route is
+
+| edge | q | orbit | source | target | old-fibre degree | P.O | Weyl reflections |
+| ---: | ---: | ---: | --- | --- | ---: | ---: | ---: |
+| 1 | 4 | 1 | `A3+A4+A6/MW4` | `A1+A2+A4+D5/MW5` | 2 | 0 | 0 |
+| 2 | 4 | 1 | `A1+A2+A4+D5/MW5` | `A1+A5+D5/MW6` | 2 | 0 | 0 |
+| 3 | 4 | 2 | `A1+A5+D5/MW6` | `2A1+A8/MW7` | 2 | 0 | 0 |
+| 4 | 4 | 117 | `2A1+A8/MW7` | `A1+A2+A6/MW8` | 2 | 0 | 0 |
+| 5 | 4 | 19 | `A1+A2+A6/MW8` | `A1+A7/MW9` | 2 | 0 | 0 |
+| 6 | 4 | 378 | `A1+A7/MW9` | `A3+A4/MW10` | 2 | 0 | 0 |
+| 7 | 4 | 15 | `A3+A4/MW10` | `A6/MW11` | 2 | 0 | 0 |
+| 8 | 6 | 2,869 | `A6/MW11` | `A5/MW12` | 2 | 1 | 0 |
+| 9 | 6 | 13,213 | `A5/MW12` | `A4/MW13` | 2 | 1 | 0 |
+| 10 | 6 | 33,270 | `A4/MW13` | `A3/MW14` | 2 | 1 | 0 |
+| 11 | 6 | 131,644 | `A3/MW14` | `A2/MW15` | 2 | 1 | 0 |
+| 12 | 6 | 274,563 | `A2/MW15` | `A1/MW16` | 2 | 1 | 0 |
+| 13 | 6 | 490,638 | `A1/MW16` | `rootless/MW17` | 2 | 1 | 0 |
+
+Its cost vector is `(2,6,0,91,13,64)`. The six late `q=4` shells are
+exhausted exactly (7,294; 14,794; 28,838; 54,202; 97,023; and 160,610
+dominant classes). The final q=6 shell required a 4 GiB PARI stack, enumerated
+3,597,071 MW quotient vectors, and tested 490,638 dominant classes. Thus the
+route is cheap to execute but expensive to discover; that distinction is a
+separate cost coordinate.
+
+The shorter MW5 fallback route is
 
 | edge | q | orbit | source | target | old-fibre degree | P.O | Weyl reflections |
 | ---: | ---: | ---: | --- | --- | ---: | ---: | ---: |
@@ -99,17 +136,21 @@ rank.
 
 ## Equation promotion
 
-The source root type admits the semistable planning profile
-`I6 + I3 + 5I2 + 5I1`, whose Euler numbers total 24. Root type alone does not
-prove those Kodaira symbols, so additive alternatives remain in the ansatz
-ledger. Since `rho=19`, the K3 moduli dimension is one. A rational or
-low-genus parameter is plausible enough for modular reconnaissance, but no
-such parametrization has yet been proved.
+The MW4 root type has the semistable profile `I7 + I5 + I4 + 8I1`. Normalizing
+the three reducible supports to `0`, `1`, and infinity gives a short
+Weierstrass ansatz with `deg A <= 8`, `deg B <= 12`. The sixteen branch-jet
+conditions have rank thirteen in the `B` coefficients and impose three exact
+compatibility equations on `A`. The fibre stratum has dimension five; four
+additional MW-section conditions are still needed to reach the expected
+one-dimensional `NS0024` locus.
 
-The next authorized computation is therefore a small-prime source-equation
-ansatz, followed by zero/component marking on edge 1. Expensive
-characteristic-zero reconstruction remains closed until those modular and
-resolved-RR gates pass. Direct construction from the rootless equation is
+Exact searches over `F_11`, `F_13`, and `F_17` each produced three models
+with geometric fibre profile `I7+I5+I4+8I1` and squarefree residual degree-eight
+discriminant. They consumed 22,493, 56,305, and 56,538 samples respectively.
+This proves modular feasibility of the fibre ansatz only. It does not prove
+the four MW sections, the `NS0024` marking, a characteristic-zero lift, or an
+equation-side lift of edge 1. Expensive characteristic-zero reconstruction
+therefore remains closed. Direct construction from the rootless equation is
 not the preferred entry point.
 
 ## Positive controls and search boundary
@@ -140,8 +181,22 @@ for the pinned determinant-948 auxiliary.
   elkies-k3/scripts/hunt_lattice_foundry_rootful_source.sage
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/hunt_lattice_foundry_rootful_source.sage \
+  --generations 22 --beam 30 --samples-per-parent 150 \
+  --target-root-rank 13 --continue-through-bound \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-hunt-r13.json \
+  --root-adapted-frame-output artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-r13-root-adapted.txt
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_lattice_foundry_route.sage \
   --manifest elkies-k3/data/lattice-foundry/ns0024-nef-route-v1.json
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_lattice_foundry_route.sage \
+  --manifest elkies-k3/data/lattice-foundry/ns0024-r13-nef-route-v1.json
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0024_source_ansatz_modp.sage
 ```
 
 Each command also supports `--check` after its output has been generated.
@@ -154,6 +209,9 @@ Configuration:
 Route specification:
 [`data/lattice-foundry/ns0024-nef-route-v1.json`](data/lattice-foundry/ns0024-nef-route-v1.json)
 
+MW4 route specification:
+[`data/lattice-foundry/ns0024-r13-nef-route-v1.json`](data/lattice-foundry/ns0024-r13-nef-route-v1.json)
+
 Database:
 [`artifacts/generated-results/elkies-k3-lattice-foundry-v1.json`](../artifacts/generated-results/elkies-k3-lattice-foundry-v1.json)
 
@@ -162,3 +220,12 @@ Source certificate:
 
 Route certificate:
 [`artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-nef-route.json`](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-nef-route.json)
+
+MW4 source and route certificates:
+[`artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-hunt-r13.json`](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-hunt-r13.json),
+[`artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-r13-nef-route.json`](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-r13-nef-route.json)
+
+Modular ansatz certificates:
+[`p=11`](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-ansatz-mod11.json),
+[`p=13`](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-ansatz-mod13.json),
+[`p=17`](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-ansatz-mod17.json)

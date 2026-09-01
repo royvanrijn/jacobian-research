@@ -14,9 +14,10 @@ The fixed `u=-2` construction has passed the horizontal lift gate.
 - The exact horizontal passes a direct test at the previously reserved good
   prime `p=71` for all four sign conjugates.
 
-The active gate is now the complete connected correction over that exact
-biquadratic field, followed by its genus-one Jacobian. No characteristic-zero
-child equation or Mordell--Weil rank is asserted at this checkpoint.
+The complete connected correction, exact two-dimensional pencil, and generic
+genus-one gate now pass over that biquadratic field. The active gate is the
+Jacobian with explicit maps. No characteristic-zero child equation or
+Mordell--Weil rank is asserted at this checkpoint.
 
 ## Exact closure operands
 
@@ -90,7 +91,8 @@ sage elkies-k3/scripts/certify_q80_third_q12_biquadratic_horizontal_qq.sage
 ```
 
 This proves the exact horizontal and an independent held-out-prime
-realization. It does not yet prove the exact resolved pencil or child.
+realization. The separate exact connected compiler below now proves its
+resolved pencil, but not yet the child Jacobian.
 
 ## Why the earlier CRT route is retired
 
@@ -131,7 +133,7 @@ boundary explicitly excludes rational reconstruction.
 ## Active exact-child path
 
 The immutable `p=19` connected compiler uses only field arithmetic after it
-loads the horizontal. The exact adapter rebuilds the same sequence over
+loads the horizontal. The exact adapter now certifies the same sequence over
 `K=QQ(a,b)`:
 
 1. Smith saturation with degrees `(0,0,6)`;
@@ -147,16 +149,47 @@ Run it with:
 sage -python elkies-k3/scripts/compile_q80_third_q12_biquadratic_resolved_pencil_qq.py
 ```
 
-Once that exact pencil is pinned, the remaining ordered gates are:
+The resulting 117 MB artifact has SHA-256
+`ac67210166cd414945e1fa373e8f0d5829ff8231daf83c764c376a32ff4b641e` and
+contains 63 exact nonzero moving-equation terms:
 
-1. certify generic genus one over `K`;
-2. retain explicit birational maps in both directions;
-3. minimize the exact Jacobian;
-4. factor its discriminant and certify `I6+I4+3I2+8I1`;
-5. transport the old components and zero to certify `A5+A3+3A1`;
-6. use finite fields only as independent replays, not to infer the
+```text
+artifacts/generated-results/
+  q80-third-q12-um2-biquadratic-resolved-pencil-qq.json
+```
+
+Irreducibility of one good `p=19` reduction of the 63-term exact moving
+equation proves characteristic-zero irreducibility. Together with the pinned
+primitive isotropic divisor, complete pencil, old-fibre degree three,
+Bertini, and K3 adjunction, this certifies a smooth generic genus-one member:
+
+```bash
+sage -python elkies-k3/scripts/verify_q80_third_q12_biquadratic_resolved_genus_qq.sage
+```
+
+The remaining ordered gates are:
+
+1. compute the exact Jacobian and retain birational maps in both directions;
+2. minimize the exact Jacobian;
+3. factor its discriminant and certify `I6+I4+3I2+8I1`;
+4. transport the old components and zero to certify `A5+A3+3A1`;
+5. use finite fields only as independent replays, not to infer the
    characteristic-zero Mordell--Weil rank.
 
 The failed first-marking genus-two-cover hypothesis remains closed: its
 quadratic field splits at `p=19`, so it cannot supply the mandatory local
 quadratic control there.
+
+## Recommended Jacobian lift
+
+The next worker should not ask a generic characteristic-zero normalization
+backend to rediscover the curve. The finite `p=19` child already pins the
+long-Weierstrass and two-way map supports, degree bounds, gauges, and one
+nonsingular solution. Use those data as a seed for a Hensel lift of the
+generic map identities against the exact 63-term pencil, with the Jacobian
+and map coefficients lifted together. Exact reconstruction is accepted only
+after literal substitution over `K`; `p=71` remains an independent replay.
+
+This route preserves the newly identified biquadratic branch. It avoids both
+the retired branch-mixed CRT coefficients and an expensive unspecialized
+normalization over the 36,335-bit field presentation.

@@ -11,6 +11,12 @@ for a common wgxli lattice.  In particular it does not satisfy success level C
 from the research brief: no exhaustive search of all primitive sublattices of
 dimensions 10 through 20 has been performed.
 
+The original `v1` selector artifact is retained as a historical first pass.
+It predates two correctness fixes: non-unit identities `a +/- b = m*c` are no
+longer collapsed to unit ternary relations, and proposal indices now refer to
+the caller's height-ordered record list rather than canonical vertex order.
+The active replay artifact is `v2`; `v1` must not be refreshed in place.
+
 ## Exact withheld truth
 
 The calibration-truth artifact recovers coordinates by a 120--150 digit
@@ -38,25 +44,95 @@ only an isomorphism invariant, not a complete canonical-labelling theorem.
 
 | control | ambient rank | bound | lines | selected/truth intersection |
 |---|---:|---:|---:|---:|
-| R17 rank-at-least 25 | 25 | 40 | 2,155 | 13/17 |
-| R17 rank-at-least 26 | 26 | 43 | 1,921 | 16/17 |
-| R17 rank-at-least 27 | 27 | 52 | 2,313 | 15/17 |
+| R17 rank-at-least 25 | 25 | 40 | 2,155 | 14/17 |
+| R17 rank-at-least 26 | 26 | 43 | 1,921 | 17/17 |
+| R17 rank-at-least 27 | 27 | 52 | 2,313 | 17/17 |
 | R17 rank-at-least 28 | 28 | 60 | 2,423 | 17/17 |
 
-Thus only one of four positive controls is recovered exactly.
+Thus three of four positive controls are recovered exactly by the active v2
+selector.
 
-On ICARM 245, the maximum-integrality-likelihood dimension is 12, so the new
-scan avoids the old forced-rank-17 error.  It nevertheless selects a rank-12
-space whose intersection with the withheld Fermigier space has dimension only
-6.  A second search grown from 3,000 exact additive hyperedges has intersection
-dimension 5.  For comparison, the withheld true space contains 144 retained
-lines, 112 integral lines, and has integrality likelihood-ratio statistic
-18.3623; recognizing that statistic after supplying truth does not constitute
-blind recovery.
+On ICARM 245, the corrected v2 maximum-integrality-likelihood scan selects
+dimension 13, so it fails the requirement to recover approximately dimension
+12.  Its selected space intersects the withheld Fermigier space in dimension
+6.  A second rank-12 search grown from 3,000 exact additive hyperedges has
+intersection dimension 5.  For comparison, the withheld true space contains
+144 retained lines and 112 integral lines; recognizing its statistics after
+supplying truth does not constitute blind recovery.
 
 Exact finite `E(F_p)/2E(F_p)` and `E(F_p)/3E(F_p)` codes and exact component
 codes at the declared multiplicative places `2,5,13,19,37` were added to the
 curve-245 complex.  They do not repair the failed subspace proposal stage.
+
+## Post-v1 high-recall audit
+
+The corrected library also contains a bounded enclosure/core-extension
+proposal channel.  This materially improves recall but does not yet supply a
+valid joint selector:
+
+- all four R17 controls contain the exact rank-17 truth in both the
+  arithmetic-priority and relation-only 3,000-seed ledgers; in the
+  arithmetic channel it is the final (lowest-scoring) proposal in every
+  fibre, showing that the old score direction was wrong for generic sections;
+- ICARM 245 improves from a 6/12 selected intersection to a direct 11/12
+  proposal; the exact primitive Fermigier space occurs once in a 5,385-entry
+  rank-12 extension ledger and at rank 65 after a two-cutoff enclosure-
+  intersection/arithmetic/relation score;
+- ICARM 282 reaches 11/12 at direct blind rank 1 and contains the exact
+  Fermigier space once at refined blind rank 34 of 4,904; and
+- the `u=28917/20` sibling has 68 retained truth rays spanning rank 12, but
+  the direct 3,000-seed channels reach only 8/12.  Truth-containing pairwise
+  enclosures first occur at rank 18, not rank 15.  Exhaustive coordinate-
+  subset height, relation-count, normalized-Gram, and LLL two-generator-shell
+  controls do not select the truth (best ranks 491 before LLL and 781 after
+  LLL among the filtered coordinate proposals).
+
+These are bounded diagnostic observations, not a new successful calibration
+artifact.  They establish high recall on R17 and substantial improvement on
+the Fermigier controls, while also showing that single-fibre support,
+integrality, truncated theta data, and elementary reduced-Gram signatures are
+still inadequate selectors.  Therefore the target gate remains closed.
+
+## Finite-aware calibration
+
+The reusable finite layer now separates two roles that the earlier pass had
+conflated:
+
+- a **source-local proposal key**, which uses actual quotient classes only to
+  branch from rare finite fingerprints inside one fibre; and
+- a **source-free candidate signature**, which retains candidate image ranks,
+  unoriented class multiplicities, cyclic element orders, and induced
+  unit/scaled relation types.  Its digest forgets public point labels,
+  quotient bases, component orientations, reduction-prime names, and the
+  ordering of equal-type blocks.
+
+For each control fibre, the finite calibration uses the first three
+one-dimensional quotient blocks for each of `ell=2,3` as development data and
+the next three as an untouched validation set.  All reduction primes are at
+most 251.  Finite-priority proposal generation contains the exact R17 space
+in all four positive controls, at blind ranks 1792, 1666, 1227, and 1067.  It
+reaches maximum truth intersections 11/12 on ICARM 245, 11/12 on ICARM 282,
+and 8/12 at `u=28917/20`.  It therefore passes R17 proposal recall but fails
+the required Fermigier calibration.
+
+Finite profile matching is not a selector by itself.  In the explicit
+leave-rank-25-out diagnostic, all rank-25 proposals are compared with the
+rank-26--28 R17 development profiles.  The true rank-25 R17 space improves
+from source rank 1792 to finite-profile rank 188, but a false candidate is
+still selected.  Disjoint held-out blocks do not turn this into recovery.
+
+One necessary nuisance separation emerged from the negative controls.  On
+the `u=28917/20` fibre all six sampled mod-2 quotient maps vanish on the known
+rank-12 subgroup, although they do not vanish on the full displayed rank-20
+subgroup.  This is exact fibre-specific divisibility/saturation information,
+not an abstract height-lattice invariant.  The artifact consequently reports
+both strict profiles and profiles conditioned on active quotient blocks; it
+does not match raw finite classes or silently discard inactive blocks.
+
+The finite-aware artifact remains `FAIL_FINITE_PROPOSAL_RECALL`.  It proves
+the exact finite calculations within the declared ensembles and a bounded
+failure of this generator/selector.  It neither proves that finite codes are
+useless in a later joint method nor that a common generic lattice is absent.
 
 ## What is proved and what is heuristic
 
@@ -91,11 +167,17 @@ PYTHONPATH=elliptic-curves:elliptic-curves/cas \
   python3 elliptic-curves/cas/calibrate_latent_lattice_method.py --check
 
 PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 elliptic-curves/cas/calibrate_finite_aware_latent_lattice.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
   python3 -m unittest elliptic-curves/tests/test_latent_lattice.py -v
 ```
 
 The two pinned outputs are
 [`latent_lattice_calibration_truth_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_calibration_truth_v1.json)
 and
-[`latent_lattice_calibration_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_calibration_v1.json).
-
+[`latent_lattice_calibration_v2.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_calibration_v2.json).
+The finite-aware replay is
+[`latent_lattice_finite_calibration_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_finite_calibration_v1.json).
+The superseded `v1` bytes remain available for provenance but are not the
+active replay target.

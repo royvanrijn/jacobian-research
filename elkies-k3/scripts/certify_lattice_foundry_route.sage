@@ -239,7 +239,8 @@ else:
 database = json.loads(DATABASE.read_text())
 source_hunt = json.loads(SOURCE_HUNT.read_text())
 assert database["status"] == "PASS_EXACT_DECLARED_SHELL_NEW_K3_TARGETS_ROUTE_GATE_OPEN"
-assert source_hunt["status"] == "PASS_EXACT_NEW_K3_ROOTFUL_MW5_SOURCE_AND_NIEMEIER_CERTIFICATE"
+assert source_hunt["status"].startswith("PASS_EXACT_NEW_K3_ROOTFUL_MW")
+assert source_hunt["status"].endswith("_SOURCE_AND_NIEMEIER_CERTIFICATE")
 assert source_hunt["niemeier_certificate"]["primitive_auxiliary_embedding"]
 assert source_hunt["niemeier_certificate"]["saturated_orthogonal_complement"]
 assert source_hunt["niemeier_certificate"]["complement_integrally_isometric_to_source"]

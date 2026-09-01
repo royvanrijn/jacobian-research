@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "elkies_k3_lattice_foundry_modular_ansatz.schema.json",
+  "title": "NS0024 MW4 modular source-fibre ansatz",
+  "type": "object",
+  "required": [
+    "schema",
+    "status",
+    "prime",
+    "seed",
+    "search_bound",
+    "samples_consumed",
+    "accounting",
+    "ansatz",
+    "examples",
+    "source_certificate",
+    "source_sha256",
+    "proof_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "elkies-k3.lattice-foundry-ns0024-source-ansatz-modp.v1"
+    },
+    "status": {
+      "enum": [
+        "PASS_EXACT_MODULAR_SOURCE_FIBRE_ANSATZ",
+        "PASS_BOUNDED_NO_MODULAR_SOURCE_FIBRE_ANSATZ"
+      ]
+    },
+    "prime": {"type": "integer", "minimum": 5},
+    "seed": {"type": "integer"},
+    "search_bound": {"type": "integer", "minimum": 1},
+    "samples_consumed": {"type": "integer", "minimum": 1},
+    "accounting": {
+      "type": "object",
+      "required": [
+        "branch_eligible",
+        "hermite_compatible",
+        "exact_prescribed_orders",
+        "accepted_squarefree_examples"
+      ]
+    },
+    "ansatz": {
+      "type": "object",
+      "required": [
+        "short_weierstrass",
+        "degree_bounds",
+        "normalized_reducible_supports",
+        "fibre_stratum_dimension_after_scaling_and_base_normalization",
+        "expected_NS0024_MW4_locus_dimension",
+        "expected_MW_conditions_still_missing"
+      ]
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "A_coefficients_low_to_high",
+          "B_coefficients_low_to_high",
+          "discriminant_orders",
+          "residual_discriminant_coefficients_low_to_high",
+          "residual_squarefree_over_algebraic_closure",
+          "geometric_fibre_profile"
+        ]
+      }
+    },
+    "source_certificate": {"type": "string"},
+    "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "proof_boundary": {
+      "type": "object",
+      "required": ["proved", "not_proved"]
+    }
+  },
+  "additionalProperties": true
+}

@@ -50,7 +50,7 @@ TRUTH = (
 OUTPUT = (
     ROOT
     / "artifacts/generated-results/elliptic-curves"
-    / "latent_lattice_calibration_v1.json"
+    / "latent_lattice_calibration_v2.json"
 )
 POSITIVE_BOUNDS = {25: 40.0, 26: 43.0, 27: 52.0, 28: 60.0}
 DIMENSIONS = tuple(range(10, 21))
@@ -274,7 +274,7 @@ def main() -> None:
         record["withheld_truth_recovered_exactly"] for record in positives
     )
     payload = {
-        "schema": "elliptic-curves.latent-lattice-calibration.v1",
+        "schema": "elliptic-curves.latent-lattice-calibration.v2",
         "status": "FAIL_CALIBRATION_TARGET_GATE_CLOSED",
         "algorithm": {
             "short_vector_population": (
@@ -282,8 +282,9 @@ def main() -> None:
                 "canonical-height bound in the full displayed subgroup"
             ),
             "relation_structure": (
-                "complete unoriented ternary additive hypergraph; coordinate-free "
-                "four-round color-refinement invariant"
+                "complete unoriented unit-content ternary additive hypergraph; "
+                "non-unit a+/-b=m*c relations retain multiplier and source/target "
+                "roles; coordinate-free four-round color-refinement invariant"
             ),
             "selector": (
                 "bounded exact-saturation beam search with pool=300, beam=8, "

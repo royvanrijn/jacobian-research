@@ -2868,6 +2868,34 @@ Weyl repair, and carries full integral NS markings to a rootless MW17 frame.
 Its equation-side resolved-RR dimensions remain planning estimates; no
 Weierstrass equation is asserted.
 
+Replay the exact `A3+A4+A6/MW4` source route and its modular fibre-ansatz
+gate with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_lattice_foundry_route.sage \
+  --manifest elkies-k3/data/lattice-foundry/ns0024-r13-nef-route-v1.json --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0024_source_ansatz_modp.sage --check
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0024_source_ansatz_modp.sage \
+  --prime 13 --max-samples 200000 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-ansatz-mod13.json \
+  --check
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0024_source_ansatz_modp.sage \
+  --prime 17 --max-samples 300000 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-ansatz-mod17.json \
+  --check
+```
+
+The MW4 route has thirteen primitive-nef degree-two edges, uses only
+`q=4,6`, has zero physical Weyl repairs, and lands on rootless catalogue
+frame `NS0024-F005`. The modular checks prove only the exact
+`I7+I5+I4+8I1` fibre profile; four MW-section conditions, the `NS0024`
+marking, and characteristic-zero lifting remain open.
+
 Classify all distinct biquadratic pair bases, build the complete exact
 5,566-row immediate-point arithmetic catalogue, replay the completed bounded
 rank-lower-bound ledger, and verify the simplest rank-at-least-nine base:

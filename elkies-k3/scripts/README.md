@@ -288,9 +288,26 @@ correction over the biquadratic field:
 sage -python elkies-k3/scripts/compile_q80_third_q12_biquadratic_resolved_pencil_qq.py
 ```
 
-Its target is the exact two-dimensional resolved pencil.  The child Jacobian,
-maps, minimal fibres, and transported marking remain subsequent gates; no
-characteristic-zero child equation or Mordell--Weil rank is claimed here.
+This now pins the exact two-dimensional resolved pencil: Smith degrees
+`(0,0,6)`, ambient dimension seven, connected D7/D5 rank five, kernel
+dimension two, and 63 moving-equation terms of degrees `(2,9,3)`.  The
+117 MB artifact is
+`artifacts/generated-results/q80-third-q12-um2-biquadratic-resolved-pencil-qq.json`
+(SHA-256 `ac67210166cd414945e1fa373e8f0d5829ff8231daf83c764c376a32ff4b641e`).
+The child Jacobian, maps, minimal fibres, and transported marking remain
+subsequent gates; no characteristic-zero child equation or Mordell--Weil rank
+is claimed here.
+
+Certify the generic characteristic-zero genus with:
+
+```bash
+sage -python elkies-k3/scripts/verify_q80_third_q12_biquadratic_resolved_genus_qq.sage
+```
+
+This reduces the exact 63-term equation at the good prime `19`, proves that
+reduction irreducible, and lifts irreducibility to characteristic zero.
+Primitivity, completeness of the pencil, Bertini, and K3 adjunction then give
+generic genus one.  It does not compute the Jacobian or its maps.
 
 ### Rootless J2 classification controls
 
@@ -341,15 +358,21 @@ The current proof boundary and replay commands are in
   still replays the complete H3 result: published R17 and alternate Q80, with
   no third rootless `J2` frame.
 - `hunt_lattice_foundry_rootful_source.sage` performs a deterministic exact
-  positive-frame neighbour hunt for `NS0024`, then independently glues the
-  resulting `5A1+A2+A5/MW5` source to the same primitive rank-seven auxiliary
-  in `N(A11+D7+E6)` and checks that the complement is saturated.
+  positive-frame neighbour hunt for `NS0024`. The exact promoted sources are
+  `5A1+A2+A5/MW5` in `N(A11+D7+E6)` and the more equation-friendly
+  `A3+A4+A6/MW4` in `N(A15+D9)`; both are saturated complements of the same
+  primitive rank-seven auxiliary.
 - `certify_lattice_foundry_route.sage` consumes an ordered route manifest,
   replays every primitive isotropic split, checks component/all-section and
   Proposition-C2 finite horizontal walls, composes determinant-one NS
-  markings, and scores the terminal rootless frame. The pinned route has
-  eleven degree-two edges, only `q=4,6`, zero physical Weyl repairs, and lands
-  on a fourth rootless `NS0024` frame class with MW rank 17.
+  markings, and scores the terminal rootless frame. The two pinned routes have
+  eleven and thirteen degree-two edges, use only `q=4,6`, and require zero
+  physical Weyl repairs. The MW5 route discovers a fourth rootless `NS0024`
+  class; the MW4 route lands on catalogue frame `NS0024-F005`.
+- `probe_lattice_foundry_ns0024_source_ansatz_modp.sage` imposes the
+  `I7+I5+I4+8I1` branch jets of the MW4 source over a finite field. Exact
+  examples at 11, 13, and 17 prove fibre-stratum feasibility only; the four
+  MW sections and `NS0024` marking remain open gates.
 
 The scope, counts, certified route, and open equation gates are recorded in
 [`../LATTICE_FOUNDRY_REPORT_2026-09-01.md`](../LATTICE_FOUNDRY_REPORT_2026-09-01.md).

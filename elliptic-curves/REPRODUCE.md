@@ -94,13 +94,25 @@ PYTHONPATH=elliptic-curves:elliptic-curves/cas \
 PYTHONPATH=elliptic-curves:elliptic-curves/cas \
   python3 \
   elliptic-curves/cas/calibrate_latent_lattice_method.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 \
+  elliptic-curves/cas/calibrate_finite_aware_latent_lattice.py --check
 ```
 
-The calibration recovers only one of four R17 spaces and misses half of the
-Fermigier rational space on ICARM 245.  Its status is therefore
+The active `v2` artifact uses corrected unit/scaled relation semantics and
+record indexing.  Its bounded selector still fails the control gate, despite
+later high-recall diagnostics recovering all four R17 spaces in their
+proposal ledgers and improving ICARM 245 to 11/12 before extension.  Its status is therefore
 `FAIL_CALIBRATION_TARGET_GATE_CLOSED`: it makes no claim about the existence
 of a common lattice on curves 351, 356, 376, 377, and 385.  See
 [`LATENT_LATTICE_CALIBRATION.md`](notes/LATENT_LATTICE_CALIBRATION.md).
+
+The finite-aware replay uses disjoint development and held-out good-reduction
+quotient ensembles.  It recovers R17 in all four bounded proposal ledgers but
+reaches only 11/12, 11/12, and 8/12 on the three Fermigier controls; finite
+profile matching leaves the rank-25 truth at rank 188.  Its status is
+`FAIL_FINITE_PROPOSAL_RECALL`, so it likewise leaves the target gate closed.
 
 Eliminate the section and surface coefficients from the literal five-fibre
 rootless-K3 ansatz, then exhaust every normalized projective first-jet chart

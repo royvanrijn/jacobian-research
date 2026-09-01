@@ -226,15 +226,13 @@ W = base_ring.gen()'''
         re.DOTALL,
     )
     coordinate_replacement = '''def field_coordinates(value):
-    values = list(finite(value).list())
-    values += [QQ.zero()] * (4 - len(values))
-    v0, v1, v2, v3 = values[:4]
-    return [
-        str(v0 + v2*(q1_exact + q2_exact)),
-        str(v1 + v3*(q1_exact + 3*q2_exact)),
-        str(v1 + v3*(3*q1_exact + q2_exact)),
-        str(2*v2),
-    ]'''
+    try:
+        converted_value = finite(value)
+    except Exception as error:
+        raise TypeError(
+            f"cannot encode field value type={type(value)!r} repr={value!r}"
+        ) from error
+    return [str(converted_value)]'''
     source, coordinate_replacements = coordinate_pattern.subn(coordinate_replacement, source, count=1)
     pole_old = '''h_factors = tuple(x_denominator.factor())
 if len(h_factors) != 1 or int(h_factors[0][1]) != 2:
@@ -375,7 +373,128 @@ popov_module = popov_module.matrix_from_columns(canonical_order)'''
     if source.count(popov_line) != 1:
         raise ArithmeticError("immutable core Popov call no longer matches adapter contract")
     source = source.replace(popov_line, popov_canonical, 1)
+    fibre_pattern = re.compile(
+        r"delta = 4 \* A\*\*3 \+ 27 \* B\*\*2\n"
+        r"star_factor = next\(factor for factor, exponent in delta\.factor\(\) if exponent == 7\)\n"
+        r"star_root = -star_factor\[0\] / star_factor\[1\]\n"
+        r"node_ring = PolynomialRing\(finite, \"x_node\"\)\n"
+        r"x_node = node_ring\.gen\(\)\n"
+        r"node_cubic = x_node\*\*3 \+ A\(star_root\) \* x_node \+ B\(star_root\)\n"
+        r"singular_roots = node_cubic\.gcd\(node_cubic\.derivative\(\)\)\.roots\(\n"
+        r"    multiplicities=False\n"
+        r"\)\n"
+        r"if len\(singular_roots\) != 1:\n"
+        r"    raise ArithmeticError\(\"finite I1\* cubic has no unique singular x\"\)\n"
+        r"singular_x = singular_roots\[0\]",
+    )
+    fibre_replacement = '''rational_base_ring = PolynomialRing(QQ, "W_rational")
+def quotient_constant_to_rational(coefficient):
+    lifted = finite(coefficient).lift()
+    if lifted.degree() > 0:
+        raise ArithmeticError("parent coefficient is not rational")
+    return QQ(lifted[0])
 
+rational_A = rational_base_ring([quotient_constant_to_rational(coefficient) for coefficient in A.list()])
+rational_B = rational_base_ring([quotient_constant_to_rational(coefficient) for coefficient in B.list()])
+rational_delta = 4*rational_A**3 + 27*rational_B**2
+rational_star_factor = next(
+    factor for factor, exponent in rational_delta.factor() if exponent == 7
+)
+rational_star_root = -rational_star_factor[0] / rational_star_factor[1]
+star_root = finite(rational_star_root)
+rational_node_ring = PolynomialRing(QQ, "x_node_rational")
+x_node_rational = rational_node_ring.gen()
+rational_node_cubic = (
+    x_node_rational**3
+    + rational_A(rational_star_root)*x_node_rational
+    + rational_B(rational_star_root)
+)
+singular_factor = rational_node_cubic.gcd(rational_node_cubic.derivative()).monic()
+if singular_factor.degree() == 1:
+    rational_singular_x = -singular_factor[0] / singular_factor[1]
+elif singular_factor.degree() == 2 and singular_factor.discriminant() == 0:
+    rational_singular_x = -singular_factor[1] / (2*singular_factor[2])
+else:
+    raise ArithmeticError("finite I1* cubic has no unique singular x")
+if singular_factor(rational_singular_x):
+    raise ArithmeticError("finite I1* singular root replay failed")
+singular_x = finite(rational_singular_x)'''
+    source, fibre_replacements = fibre_pattern.subn(fibre_replacement, source, count=1)
+    if fibre_replacements != 1:
+        raise ArithmeticError("immutable core D5 factor block no longer matches adapter contract")
+    elimination_pattern = re.compile(
+        r"nonzero_coefficients = tuple\(value for value in eliminated\.list\(\) if value\)\n"
+        r"fixed_factor = nonzero_coefficients\[0\]\n"
+        r"for coefficient in nonzero_coefficients\[1:\]:\n"
+        r"    fixed_factor = fixed_factor\.gcd\(coefficient\)\n"
+        r"expected_fixed = plane_ring\(h\(W0\) \*\* 2 \* x0 - Nx\(W0\)\)\n"
+        r"if fixed_factor \* expected_fixed\.leading_coefficient\(\) != \(\n"
+        r"    expected_fixed \* fixed_factor\.leading_coefficient\(\)\n"
+        r"\):\n"
+        r"    raise ArithmeticError\(\"elimination fixed factor is not h\^2\*x-Nx\"\)\n"
+        r"moving = parameter_polynomials\(\n"
+        r"    \[coefficient // fixed_factor for coefficient in eliminated\.list\(\)\]\n"
+        r"\)",
+    )
+    elimination_replacement = '''expected_fixed = plane_ring(h(W0) ** 2 * x0 - Nx(W0))
+def divide_by_horizontal_factor(coefficient):
+    x_degree = coefficient.degree(x0)
+    coefficients = [base_ring.zero()] * (x_degree + 1)
+    for exponent, scalar in coefficient.dict().items():
+        w_degree, current_x_degree = exponent
+        coefficients[current_x_degree] += finite(scalar) * W**w_degree
+    quotient_coefficients = [base_ring.zero()] * x_degree
+    divisor_leading = h**2
+    divisor_constant = -Nx
+    for current_x_degree in range(x_degree, 0, -1):
+        quotient, remainder = coefficients[current_x_degree].quo_rem(divisor_leading)
+        if remainder:
+            raise ArithmeticError("elimination leading coefficient is not divisible by h^2")
+        quotient_coefficients[current_x_degree - 1] = quotient
+        coefficients[current_x_degree] = base_ring.zero()
+        coefficients[current_x_degree - 1] -= quotient * divisor_constant
+    if coefficients[0]:
+        raise ArithmeticError("elimination has a nonzero horizontal-factor remainder")
+    answer = sum(
+        plane_ring(quotient(W0)) * x0**degree
+        for degree, quotient in enumerate(quotient_coefficients)
+    )
+    if answer * expected_fixed != coefficient:
+        raise ArithmeticError("horizontal-factor synthetic division replay failed")
+    return answer
+
+moving_coefficients = []
+for coefficient in eliminated.list():
+    moving_coefficients.append(divide_by_horizontal_factor(coefficient))
+fixed_factor = expected_fixed
+moving = parameter_polynomials(moving_coefficients)'''
+    source, elimination_replacements = elimination_pattern.subn(
+        elimination_replacement, source, count=1
+    )
+    if elimination_replacements != 1:
+        raise ArithmeticError("immutable core elimination block no longer matches adapter contract")
+    residue_lines = '''    numerator = local_ring(value.numerator())
+    denominator = local_ring(value.denominator())'''
+    residue_normalization = '''    numerator = local_ring(value.numerator())
+    denominator = local_ring(value.denominator())
+    # Fraction reduction over an explicit algebraic quotient field does not
+    # always cancel a common exceptional monomial.  Remove the common t-power
+    # literally before testing whether the remaining denominator is a unit.
+    numerator_t_order = min(exponent[0] for exponent in numerator.dict())
+    denominator_t_order = min(exponent[0] for exponent in denominator.dict())
+    common_t_order = min(numerator_t_order, denominator_t_order)
+    if common_t_order:
+        numerator = local_ring({
+            (exponent[0] - common_t_order, exponent[1], exponent[2]): coefficient
+            for exponent, coefficient in numerator.dict().items()
+        })
+        denominator = local_ring({
+            (exponent[0] - common_t_order, exponent[1], exponent[2]): coefficient
+            for exponent, coefficient in denominator.dict().items()
+        })'''
+    if source.count(residue_lines) != 1:
+        raise ArithmeticError("immutable core residue normalization no longer matches adapter contract")
+    source = source.replace(residue_lines, residue_normalization, 1)
     saved_argv = sys.argv
     namespace = {"__file__": str(CORE), "__name__": "__main__"}
     sys.argv = [str(CORE), "--output", str(core_output)]
@@ -393,7 +512,9 @@ compiled["status"] = "PASS_EXACT_QQ_THIRD_Q12_BIQUADRATIC_RESOLVED_PENCIL"
 compiled["specialization"] = {
     "u": "-2",
     "field_degree": 4,
-    "basis": ["1", "a", "b", "a*b"],
+    "primitive_element": "theta=a+b",
+    "primitive_polynomial": "theta^4-2*(q1+q2)*theta^2+(q1-q2)^2",
+    "coefficient_encoding": "one exact Sage expression in theta per coefficient",
 }
 compiled["inputs"] = {
     "surface": {"path": str(args.surface.relative_to(ROOT)), "sha256": sha256(args.surface)},
