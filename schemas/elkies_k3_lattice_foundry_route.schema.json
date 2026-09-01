@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "elkies_k3_lattice_foundry_route.schema.json",
+  "title": "Exact Picard-19 lattice-foundry nef route",
+  "type": "object",
+  "required": [
+    "schema",
+    "status",
+    "ns_id",
+    "determinant",
+    "source",
+    "terminal",
+    "edges",
+    "exhausted_cheaper_shells",
+    "equation_cost_vector",
+    "proof_boundary",
+    "inputs"
+  ],
+  "properties": {
+    "schema": {
+      "const": "elkies-k3.lattice-foundry-nef-route.v1"
+    },
+    "status": {
+      "const": "PASS_EXACT_NEW_K3_ROOTFUL_TO_ROOTLESS_NEF_ROUTE"
+    },
+    "ns_id": {
+      "type": "string"
+    },
+    "determinant": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source": {
+      "type": "object",
+      "required": ["root_type", "root_rank", "mw_rank", "niemeier_ambient"]
+    },
+    "terminal": {
+      "type": "object",
+      "required": [
+        "root_type",
+        "mw_rank",
+        "frame_gram",
+        "frame_gram_sha256",
+        "intrinsics",
+        "composed_transport_terminal_to_source",
+        "catalogue_isometry_matches",
+        "novel_relative_to_declared_foundry_shell"
+      ]
+    },
+    "edges": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "edge_index",
+          "q",
+          "old_fibre_degree",
+          "primitive_isotropic",
+          "physical_nef_profile",
+          "negative_horizontal_walls",
+          "edge_transport_child_to_parent",
+          "composed_transport_child_to_source"
+        ]
+      }
+    },
+    "exhausted_cheaper_shells": {
+      "type": "array"
+    },
+    "equation_cost_vector": {
+      "type": "object",
+      "required": [
+        "maximum_old_fibre_degree",
+        "maximum_q",
+        "edge_count",
+        "physical_weyl_reflections",
+        "root_rank_area",
+        "sum_q"
+      ]
+    },
+    "proof_boundary": {
+      "type": "object",
+      "required": ["proved", "not_proved"]
+    },
+    "inputs": {
+      "type": "object",
+      "required": ["paths", "sha256"]
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,114 +1,162 @@
-# Q80 third-q12 common producer checkpoint
+# Q80 third-q12 exact-lift checkpoint
 
 ## Status
 
-The fixed `u=-2` construction now has two distinct layers.
+The fixed `u=-2` construction has passed the horizontal lift gate.
 
-First, `p=19` is complete as an exact finite-field child: the resolved
-genus-one pencil, generic Jacobian, birational maps in both directions,
-minimal `I6+I4+3I2+8I1` model, transported `A5+A3+3A1` component marking,
-and Frobenius-invariant coefficient encoding all have independent literal
-replay certificates.
+- The exact `p=19` child remains fully certified: resolved genus-one pencil,
+  Jacobian and maps in both directions, minimal `I6+I4+3I2+8I1` model, and
+  transported `A5+A3+3A1` marking.
+- The complete finite-field pipeline also passes at
+  `p=61,67,83,89,103,131` with the same discrete profiles.
+- Exact Hensel reconstruction proves that the characteristic-zero horizontal
+  is defined over a biquadratic field, not one quadratic field.
+- The exact horizontal passes a direct test at the previously reserved good
+  prime `p=71` for all four sign conjugates.
 
-Second, one common polynomial-closure producer selects the same horizontal
-orbit and connected genus-one divisor at `p=19` and `p=61`.  The p=61
-realization is now complete as well: 72 exact mapped fibres, the generic long
-Jacobian, birational maps in both directions, the minimal short child, and the
-transported component/zero marking all pass literal replay.
+The active gate is now the complete connected correction over that exact
+biquadratic field, followed by its genus-one Jacobian. No characteristic-zero
+child equation or Mordell--Weil rank is asserted at this checkpoint.
 
-## Prime-independent producer
+## Exact closure operands
 
-The producer starts from one audited good-reduction surface at rational `u`.
-It exports the six-variable polynomial-section closure, decodes every
-degree-at-most-two RUR support point in one quadratic finite field, tests all
-pairwise differences, and quotients accepted results by section sign and
-Frobenius.  Its acceptance rule is exactly:
+The six characteristic-zero polynomial-closure equations are even in the
+leading coordinate `l`. Replacing `l^2` by `q` leaves five rational unknowns.
+At each of the two `p=19` operand branches, the resulting five-by-five
+Jacobian is nonsingular. Newton--Hensel doubling and exact rational
+reconstruction produce two literal solutions of the original six equations.
+
+Write their reconstructed leading squares as `q1` and `q2`. Exact square
+tests prove that `q1`, `q2`, and `q1/q2` are nonsquares over `QQ`. Hence the
+two operands generate the degree-four field
+
+```text
+K = QQ(a,b),   a^2=q1,   b^2=q2.
+```
+
+The certificate includes exact substitution into all six closure equations
+and literal reduction to the original `p=19` operand pair:
+
+```text
+artifacts/generated-results/
+  q80-third-q12-um2-biquadratic-closure-operands-p19-hensel-qq.json
+```
+
+Replay it with:
+
+```bash
+sage elkies-k3/scripts/lift_q80_third_q12_closure_operands_p19_qq.sage \
+  --biquadratic-operands
+```
+
+The largest reconstructed coefficient has 36,335 bits. These sizes explain
+why a direct low-height rational search did not expose the lift.
+
+## Exact horizontal and held-out prime
+
+The two reconstructed operands can be composed exactly on the original
+characteristic-zero Weierstrass model. In the basis `(1,a,b,a*b)`, the
+result has
+
+```text
+x in span(1,a*b),   y in span(a,b).
+```
+
+Literal substitution proves the characteristic-zero Weierstrass identity.
+This is a degree-four point in general, although its `x` coordinate descends
+to the third quadratic subfield `QQ(a*b)`.
+
+The same certificate reduces the exact object directly at the previously
+reserved `p=71`. There both `q1` and `q2` are nonsquares while `q1*q2` is a
+square. All four sign conjugates pass:
 
 - `P.O=2`;
-- canonical height `8`;
-- identity component at the finite `I1*` (`D5`) fibre;
-- identity component at the infinite `I3*` (`D7`) fibre.
+- height `8` by both height computations;
+- the finite `I1*` identity component condition;
+- the expected numerator and denominator degree profiles.
 
-At each of 19 and 61 the closure has squarefree geometric degree 12.  The
-producer tests 156 relative-sign pairs, retains two unsigned candidates, and
-finds one Frobenius/sign orbit.  The RUR happens to split differently at the
-two primes; this is local factorization data and is not part of the alignment.
+Modulo section sign, the four conjugates give two unsigned classes. The
+certificate is:
 
-The generic connected compiler then gives, at both primes:
+```text
+artifacts/generated-results/
+  q80-third-q12-um2-biquadratic-horizontal-qq.json
+```
 
-| invariant | value |
-| --- | --- |
-| Smith degrees | `(0,0,6)` |
-| saturated ambient dimension | `7` |
-| complete D7 gate rank | `4` |
-| combined D7+D5 gate rank | `5` |
-| pencil dimension | `2` |
-| moving degrees `(new base,W,x)` | `(2,9,3)` |
-| divisor square / old-fibre degree | `0 / 3` |
-| generic member | primitive, separable, irreducible, genus one |
+Replay it with:
 
-The resolved-pencil alignment certificate is
-`artifacts/generated-results/q80-third-q12-um2-p19-p61-common-producer-alignment.json`.
-The stronger completed-child certificate is
-`artifacts/generated-results/q80-third-q12-um2-p19-p61-full-child-alignment.json`.
-It aligns 1,947 ordered Frobenius-invariant coefficient slots and deliberately
-does not identify the two local quadratic generators.
+```bash
+sage elkies-k3/scripts/certify_q80_third_q12_biquadratic_horizontal_qq.sage
+```
 
-## First-marking field test
+This proves the exact horizontal and an independent held-out-prime
+realization. It does not yet prove the exact resolved pencil or child.
 
-The stretch hypothesis has a decisive local answer.  Write the exact
-first-marking genus-two cover as `w^2=f(t)`, with
-`t=u-u_CM24`, and specialize at `u=-2`.  The value `f(-2-u_CM24)` is a
-nonzero nonsquare rational number, so it defines a quadratic number field.
-Its reduction is:
+## Why the earlier CRT route is retired
 
-- `16` at 19, a square: the number field splits at 19;
-- `2` at 61, a nonsquare: the number field is inert at 61.
+The exact square classes have the following local characters, listed as
+`(q1,q2,q1*q2)`:
 
-Therefore the quadratic p=19 horizontal field cannot be the reduction of
-this first-marking number field.  At p=61 the residue fields are isomorphic
-(the radicand-to-target-discriminant ratio is the square `12`), but that
-abstract local agreement does not identify the horizontal as the reduction
-of a characteristic-zero section.  Descending this particular genus-two
-cover cannot explain the mandatory p=19 control.
+| prime | characters | inert operand |
+| ---: | :---: | :---: |
+| 19 | `(-,+,-)` | `q1` |
+| 61 | `(+,-,-)` | `q2` |
+| 67 | `(+,-,-)` | `q2` |
+| 83 | `(-,+,-)` | `q1` |
+| 89 | `(+,-,-)` | `q2` |
+| 103 | `(-,+,-)` | `q1` |
+| 131 | `(+,-,-)` | `q2` |
 
-The replay certificate is
-`artifacts/generated-results/q80-first-marking-field-um2-local-behavior.json`.
+Thus the unique local quadratic target alternates between the two independent
+global square classes. Local trace, norm, and coefficient discriminant are
+generator-free at one prime, but they are not all reductions of a single
+quadratic conjugation quotient across this mixed prime set. The old CRT
+integers therefore cannot be used as rational reconstruction candidates.
 
-## Normalization breakthrough and next reconstruction path
+The seven-prime artifact remains useful as a literal residue and branch
+diagnostic. It is now schema-versioned and status-labelled accordingly:
 
-The original p=61 mapped-fibre worker spent more than eight minutes and over
-1.1 GB in Sage's non-prime-constant-field maximal-order routine.  A second
-fibre showed the same behavior.  The cause is algorithmic: that routine uses
-a characteristic-`p` power map, so its intermediate degrees grow with `p`.
+```text
+artifacts/generated-results/
+  q80-third-q12-um2-frobenius-crt-interface.json
+```
 
-`sample_q80_third_q12_weierstrass_modp2.py` now uses Singular's
-Grauert--Remmert module normalization and the same reversed-Hermite module
-reduction as Sage.  The formerly blocked p=61 fibre completes in about one
-second.  A deterministic batch then retained all 72 attempted fibres (64
-training and eight held out), after which generic interpolation and literal
-map replay recovered:
+```bash
+python3 elkies-k3/scripts/compile_q80_third_q12_frobenius_crt_interface.py
+```
 
-- long coefficient degrees `(2/2,4/4,4/4,6/6,8/8)`;
-- forward-map block degrees identical to p=19;
-- inverse weighted bounds `4` and `10`;
-- minimal degrees `(8,12)` and fibres `I6+I4+3I2+8I1`;
-- the `R5` zero and old-zero alignment with the unique `I6` factor.
+It accumulates 1,947 ordered local slots modulo `7739891239523`, but its claim
+boundary explicitly excludes rational reconstruction.
 
-The coefficient interface uses trace, norm, and coefficient discriminant as
-generator-free CRT values.  The anti-invariant coefficient remains local
-until a characteristic-zero quadratic field is reconstructed.  Section sign,
-base `PGL2`, and Weierstrass scaling have separate pinned ledgers.  The next
-step is therefore additional-prime collection with held-out primes, not
-another horizontal search.
+## Active exact-child path
 
-That collection has begun.  The complete common pipeline also passes at
-`p=67`: one horizontal orbit, the same connected pencil, 72/72 mapped fibres,
-the same generic map degree profile, minimal `I6+I4+3I2+8I1`, the transported
-`R5` marking, and 1,947 invariant slots.  The CRT interface now accumulates
-the generator-free values at `19`, `61`, and `67`, with combined modulus
-`77653`; `p=71` is certified good and reserved for held-out replay.  The
-interface artifact is
-`artifacts/generated-results/q80-third-q12-um2-frobenius-crt-interface.json`.
-This modulus is intentionally reported as too small for rational
-reconstruction.  No equation over `QQ` is asserted at this checkpoint.
+The immutable `p=19` connected compiler uses only field arithmetic after it
+loads the horizontal. The exact adapter rebuilds the same sequence over
+`K=QQ(a,b)`:
+
+1. Smith saturation with degrees `(0,0,6)`;
+2. the seven-dimensional shifted-Popov ambient;
+3. the complete connected `D7` ideal;
+4. the finite connected `D5` quotient;
+5. the rank-five gate and two-dimensional kernel;
+6. the moving equation of degrees `(2,9,3)`.
+
+Run it with:
+
+```bash
+sage -python elkies-k3/scripts/compile_q80_third_q12_biquadratic_resolved_pencil_qq.py
+```
+
+Once that exact pencil is pinned, the remaining ordered gates are:
+
+1. certify generic genus one over `K`;
+2. retain explicit birational maps in both directions;
+3. minimize the exact Jacobian;
+4. factor its discriminant and certify `I6+I4+3I2+8I1`;
+5. transport the old components and zero to certify `A5+A3+3A1`;
+6. use finite fields only as independent replays, not to infer the
+   characteristic-zero Mordell--Weil rank.
+
+The failed first-marking genus-two-cover hypothesis remains closed: its
+quadratic field splits at `p=19`, so it cannot supply the mandatory local
+quadratic control there.

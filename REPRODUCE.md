@@ -2827,6 +2827,47 @@ classification; the retained embedding cover is not deduplicated to full
 automorphism embedding-orbit or `J1` counts.  See
 [`elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md`](elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md).
 
+Build or byte-check the first determinant-varying Picard-19 lattice-foundry
+shell:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_lattice_foundry.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_lattice_foundry.sage --check
+```
+
+The JSON specification declares exactly 768 one-root mutations of the two
+stored `N(2A7+2D5)` control embeddings.  Saturation, complements, root data,
+integral-isometry deduplication, and ternary discriminant-form realization are
+exact inside that shell.  The generator is not a complete determinant-5,000
+classification.  See
+[`elkies-k3/LATTICE_FOUNDRY_REPORT_2026-09-01.md`](elkies-k3/LATTICE_FOUNDRY_REPORT_2026-09-01.md).
+
+Replay or byte-check the exact `NS0024` rootful source and its certified
+degree-two route to a new rootless MW17 frame with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/hunt_lattice_foundry_rootful_source.sage
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/hunt_lattice_foundry_rootful_source.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_lattice_foundry_route.sage \
+  --manifest elkies-k3/data/lattice-foundry/ns0024-nef-route-v1.json
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_lattice_foundry_route.sage \
+  --manifest elkies-k3/data/lattice-foundry/ns0024-nef-route-v1.json --check
+```
+
+The source is `5A1+A2+A5/MW5` in `N(A11+D7+E6)`. The route has eleven
+primitive-nef old-degree-two edges, uses only `q=4,6`, requires no physical
+Weyl repair, and carries full integral NS markings to a rootless MW17 frame.
+Its equation-side resolved-RR dimensions remain planning estimates; no
+Weierstrass equation is asserted.
+
 Classify all distinct biquadratic pair bases, build the complete exact
 5,566-row immediate-point arithmetic catalogue, replay the completed bounded
 rank-lower-bound ledger, and verify the simplest rank-at-least-nine base:
@@ -16449,6 +16490,8 @@ heights remain high-precision numerical data.  See
 
 ## Six-root Mestre two-section local surface
 
+<!-- status-consumer: EC-M2S-GERM 536eee72664ba729 -->
+
 Certify the characteristic-zero root-coordinate component through
 `(0,25,95,143,168,205)` and its two labelled affine sections with
 
@@ -16459,15 +16502,28 @@ Singular -q elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
 The verifier reconstructs the Mestre remainder recursively, localizes the
 two-equation root surface away from the non-seed resultant factor, and proves
 all six ordinate-eliminated residuals vanish.  It also checks that the source
-is smooth with the two labelled coordinates as local parameters.  The lucky
-finite-characteristic repetitions are
+is smooth with the two labelled coordinates as local parameters.  The fully
+lucky finite-characteristic repetitions are
 
 ```bash
 Singular -q -u 17 elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
-Singular -q -u 29 elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
+Singular -q -u 31 elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
 ```
 
-Prime 37 is good for the original incidence tangent but unlucky for this
-particular component separator: the removed resultant factor meets the
-reduced seed there.  See
+At 29 the component and section identities pass, but the selected etale
+Jacobian minor vanishes because its characteristic-zero numerator is
+divisible by 29.  Prime 37 is good for the original incidence tangent but
+unlucky for this particular component separator: the removed resultant factor
+meets the reduced seed there.  See
 [`elliptic-curves/notes/MESTRE_TWO_SECTION_INCIDENCE_GERM.md`](elliptic-curves/notes/MESTRE_TWO_SECTION_INCIDENCE_GERM.md).
+
+Audit the split-infinity signal on the recovered component with
+
+```bash
+python3 elliptic-curves/cas/probe_mestre_two_section_split_infinity.py
+```
+
+This exhaustive finite-field calculation is labelled as an experiment.  It
+finds no nonsquare value of the leading invariant on the root-distinct
+`edQ != 0` chart at 17, 29, 31 or 37, but it is not a function-field square
+certificate.

@@ -1,0 +1,27 @@
+{
+  "schema": "elkies-k3.lattice-foundry-route-specification.v1",
+  "database": "artifacts/generated-results/elkies-k3-lattice-foundry-v1.json",
+  "source_hunt": "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-hunt.json",
+  "steps": [
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step01.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step02.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step03.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step04.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step05.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step06q6.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step07q6.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step08q6.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step09q6.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step10q6.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step11q6.json"
+  ],
+  "exhausted_cheaper_shells": [
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step06.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step07.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step08.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step09.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step10.json",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-route-step11.json"
+  ],
+  "output": "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-nef-route.json"
+}

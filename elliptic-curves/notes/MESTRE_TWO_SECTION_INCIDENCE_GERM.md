@@ -1,5 +1,7 @@
 # The six-root Mestre two-section incidence germ
 
+<!-- status-consumer: EC-M2S-GERM 536eee72664ba729 -->
+
 Status: exact characteristic-zero local-scheme theorem and exact component
 identity.  The Mordell--Weil relation problem on the recovered component is
 not settled here, so this note makes no generic-rank-14 claim.
@@ -105,10 +107,14 @@ the Mestre remainder and reducing recursively by
 \]
 
 gives zero for all six section residuals over \(\mathbb Q\).  The same exact
-normal-form calculation succeeds modulo 17 and 29.  Modulo 37 the section
-identities still reduce to zero, but (2.3) vanishes at the reduced seed, so
-37 is unlucky for this particular component separator even though it remains
-a good prime for the original tangent calculation.
+normal-form calculation succeeds modulo 17, 29 and 31.  The full component,
+seed and etale-coordinate checks agree at 17 and 31.  At 29 the selected
+Jacobian minor vanishes because the numerator in (3.1) has one factor of 29,
+so that prime is lucky for the component identity but unlucky for this local
+coordinate certificate.  Modulo 37 the section identities still reduce to
+zero, but (2.3) vanishes at the reduced seed, so 37 is unlucky for this
+particular component separator even though it remains a good prime for the
+original tangent calculation.
 
 On the double cover \(w^2=D\), both cubic ordinates are recovered without a
 new elimination.  For either line write
@@ -212,6 +218,33 @@ At each of the two known rational root points, current finite-reduction tests
 gain at most one direction after adjoining the pair.  This is evidence for a
 generic dependence relation, but it is not yet its proof.
 
+There is also a sharp split-infinity signal, again not promoted to a theorem.
+At the two rational points the leading invariant is respectively
+
+\[
+D=(528/25)^2,
+\qquad
+D=(14400/529)^2.
+\]
+
+An exhaustive enumeration of the root-distinct open chart \(edQ\ne0\) gives
+only nonzero-square values of \(D\) at all 112, 280, 544 and 744 component
+points over \(\mathbb F_{17},\mathbb F_{29},\mathbb F_{31}\) and
+\(\mathbb F_{37}\), respectively.  This is evidence that \(D\) may already
+be a square in the component function field; pointwise squareness over finite
+fields does not prove that assertion.
+
+The precise globalization obstruction is now the following.  In the
+degree-eight presentation of the component over
+\(\mathbb Q(r_3,r_4)\), one must either reconstruct and verify a rational
+square root of \(D\), or prove that the quadratic cover is nontrivial, and
+then perform the visible-subgroup relation calculation in that exact field.
+The available algebra system does not factor or extract square roots in this
+two-transcendental algebraic function-field tower.  Direct covariant normal
+forms on the root chart were stopped after they failed to construct the first
+two generic Jacobian points within a compact resource bound.  Thus neither
+split infinity nor generic dependence is certified here.
+
 ## 5. Reproduction
 
 The characteristic-zero component identity is:
@@ -220,12 +253,15 @@ The characteristic-zero component identity is:
 Singular -q elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
 ```
 
-The two lucky modular repetitions are:
+The two fully lucky modular repetitions are:
 
 ```bash
 Singular -q -u 17 elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
-Singular -q -u 29 elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
+Singular -q -u 31 elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
 ```
+
+At 29 the component and section gates pass but the displayed local-coordinate
+minor vanishes; at 37 the selected component separator vanishes at the seed.
 
 The earlier tangent, obstruction and formal-jet record remains reproducible
 with:
@@ -233,4 +269,10 @@ with:
 ```bash
 python3 elliptic-curves/cas/probe_mestre_two_section_local_continuation.py \
   --precision 4 --bivariate-order 5 --line-order 12
+```
+
+The explicitly experimental split-infinity audit is:
+
+```bash
+python3 elliptic-curves/cas/probe_mestre_two_section_split_infinity.py
 ```

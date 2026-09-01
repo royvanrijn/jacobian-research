@@ -14,6 +14,13 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--surface", type=Path, required=True)
 parser.add_argument("--system", type=Path, required=True)
 parser.add_argument("--output", type=Path, required=True)
+parser.add_argument(
+    "--fixed-rur-anchor", action="store_true",
+    help=(
+        "append a fixed generic linear-form coordinate so RUR factors can be "
+        "aligned across primes"
+    ),
+)
 args = parser.parse_args()
 args.surface = args.surface.resolve()
 args.system = args.system.resolve()
@@ -73,9 +80,10 @@ star = star_factors[0]
 if (valuation(A, star), valuation(B, star), valuation(delta, star)) != (2, 3, 7):
     raise ArithmeticError("finite exponent-seven place is not minimal I1*")
 
-names = ("l", "x0", "x1", "x2", "x3", "sat")
+base_names = ("l", "x0", "x1", "x2", "x3", "sat")
+names = base_names + (("rur_anchor",) if args.fixed_rur_anchor else ())
 scheme = PolynomialRing(finite, names=names, order="degrevlex")
-l, x0, x1, x2, x3, sat = scheme.gens()
+l, x0, x1, x2, x3, sat = scheme.gens()[:6]
 fraction = scheme.fraction_field()
 polynomial = PolynomialRing(fraction, "W_section")
 W_section = polynomial.gen()
@@ -99,6 +107,12 @@ if any(identity[index] for index in range(6, 13)):
     raise ArithmeticError("top-down section recursion did not close")
 residual = [scheme(identity[index].numerator()) for index in range(6)]
 residual.append(sat * l - 1)
+if args.fixed_rur_anchor:
+    rur_anchor = scheme.gen(6)
+    # This primitive form is the first successful msolve separator recorded
+    # by the p=61 control.  Pinning it removes msolve's prime-dependent random
+    # coordinate while retaining a generic multiplication matrix there.
+    residual.append(rur_anchor - (4*l - 15*x0 + 19*x1 - 35*x2 + 8*x3 - 5*sat))
 if any(not value for value in residual):
     raise ArithmeticError("unexpected zero closure equation")
 
@@ -130,6 +144,10 @@ output = {
         "equations": len(residual),
         "term_counts": [len(value.dict()) for value in residual],
         "leading_parameterization": "x4=l^2,y6=l^3,l!=0",
+        "fixed_rur_anchor": (
+            "rur_anchor=4*l-15*x0+19*x1-35*x2+8*x3-5*sat"
+            if args.fixed_rur_anchor else None
+        ),
     },
     "system": {
         "path": str(args.system.relative_to(ROOT)),
@@ -145,6 +163,10 @@ output = {
         "proved": [
             "arbitrary certified good-prime polynomial-section closure scheme",
             "no rational polynomial-shell enumeration is required",
+            *(
+                ["prime-independent fixed linear-form RUR anchor exported"]
+                if args.fixed_rur_anchor else []
+            ),
         ],
         "not_proved": [
             "existence or selection of a target quadratic horizontal",
@@ -154,12 +176,14 @@ output = {
     "reproduce": (
         "sage -python elkies-k3/scripts/produce_q80_third_q12_polynomial_closure_modp.sage "
         f"--surface {args.surface} --system {args.system} --output {args.output}"
+        f"{' --fixed-rur-anchor' if args.fixed_rur_anchor else ''}"
     ),
 }
 args.output.parent.mkdir(parents=True, exist_ok=True)
 args.output.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n")
 print(
-    f"Q80POLYCLOSUREPRODUCER|u={parameter['u']}|prime={prime}|variables=6|equations=7|"
+    f"Q80POLYCLOSUREPRODUCER|u={parameter['u']}|prime={prime}|variables={len(names)}|"
+    f"equations={len(residual)}|fixed_anchor={int(args.fixed_rur_anchor)}|"
     "status=PASS_EXACT_POLYNOMIAL_CLOSURE_PRODUCER_EXPORTED",
     flush=True,
 )

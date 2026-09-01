@@ -32293,6 +32293,36 @@
       "priority": "primary"
     },
     {
+      "id": "EC-M2S-GERM",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "The six-root Mestre two-section incidence germ is a smooth surface",
+      "scope": "At the labelled normalized seed (0,1,19/5,143/25,168/25,41/5) with affine abscissae x1=-95/23+37*T/23 and x2=583/115+13*T/23, the saturated two-section incidence germ is a single reduced smooth two-dimensional component.  On the open root chart edQ!=0 it is the exact surface M=H=0 with H=r3/(r3-r4+1)+r5+r6-r4-(r3-r5*r6)/(r3-r5-r6+1); the declared rational formulas for both affine lines make all six recursive section residuals vanish identically.  A nonzero exact seven-by-seven Jacobian minor makes x02,x12 local coordinates on the source, while the independent seven-by-eight incidence Jacobian has rank six.  Hence the whole localized incidence local ring is regular with completion Q[[u,v]], tangent cone A2, Hilbert--Samuel function h(n)=n+1, multiplicity one, one minimal prime, and no embedded prime or nilpotent thickening.  This does not prove a generic visible-section relation, independence of the two sections, split infinity, generic rank at least 14, a third section, or a conductor comparison.",
+      "canonical_source": "elliptic-curves/notes/MESTRE_TWO_SECTION_INCIDENCE_GERM.md",
+      "dependencies": [],
+      "checker": "elliptic-curves/cas/verify_mestre_two_section_root_surface.sing",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ccede915c59573c81dab7c4d16392702efe1054a2cbba0ea5fde45bd588e5017",
+      "software_lock": [
+        "elliptic-curves/cas/verify_mestre_two_section_root_surface.sing"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elliptic-curves/notes/MESTRE_AFFINE_SECTION_MODULI.md",
+        "elliptic-curves/notes/MESTRE_TWO_SECTION_INCIDENCE_GERM.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-FG12",
       "kind": "theorem",
       "state": "proved",

@@ -22,6 +22,13 @@ strict:
 
 Important distinctions made explicit by the catalogue:
 
+- `latent_lattice_calibration_truth_v1.json` contains exact withheld control
+  embeddings; it is not selector input. `latent_lattice_calibration_v1.json`
+  records that the bounded coordinate-free relation selector recovers only
+  one of four R17 controls and misses the Fermigier rank-12 space on ICARM 245.
+  Its status closes the target-search gate and is not a nonexistence theorem
+  for a common wgxli lattice.
+
 - `icarm_273_282_302_family_discovery_v1.json` screens 2,334 generated
   one-parameter families exactly.  It rediscovers curve 282 in both the
   canonical Fermigier coordinate `u=11671/42` and the generated six-root

@@ -1,0 +1,66 @@
+// Modular minimal-prime probe for the leading-square cover of the recovered
+// Mestre two-section surface.  This is a reconstruction aid, not by itself a
+// characteristic-zero certificate.
+
+LIB "primdec.lib";
+option(redSB);
+
+string coefficientField = system("--user-option");
+if (coefficientField == "")
+{
+  coefficientField = "17";
+}
+execute(
+  "ring SplitCover = "+coefficientField
+  +",(w,r3,r4,r5,r6,ie,id,iq),(lp(1),dp(7));"
+);
+
+poly a1 = -(1+r3+r4+r5+r6);
+poly a2 =
+  r3+r4+r5+r6+r3*r4+r3*r5+r3*r6+r4*r5+r4*r6+r5*r6;
+poly a3 = -(
+  r3*r4+r3*r5+r3*r6+r4*r5+r4*r6+r5*r6
+  +r3*r4*r5+r3*r4*r6+r3*r5*r6+r4*r5*r6
+);
+poly a4 =
+  r3*r4*r5+r3*r4*r6+r3*r5*r6+r4*r5*r6+r3*r4*r5*r6;
+poly a5 = -r3*r4*r5*r6;
+poly M =
+  a1^5-6*a1^3*a2+7*a1^2*a3+8*a1*a2^2
+  -8*a1*a4-12*a2*a3+24*a5;
+poly D = 5*a1^4-24*a1^2*a2+32*a1*a3+16*a2^2-64*a4;
+
+poly e = r3-r4+1;
+poly d = r3-r5-r6+1;
+poly H = r3*ie+r5+r6-r4-(r3-r5*r6)*id;
+poly Q =
+  r3^3*r4-2*r3^2*r4^2+r3*r4^3-r3^3*r5+r3^2*r4*r5+r3*r4^2*r5
+  -r4^3*r5+r3^2*r5^2-2*r3*r4*r5^2+r4^2*r5^2-r3^3
+  +2*r3^2*r4-2*r3*r4^2+r4^3-r3^2*r5+r4^2*r5+2*r3*r5^2
+  -2*r4*r5^2+2*r3*r4-2*r4^2-r3*r5+r4*r5+r5^2-r3+r4-r5;
+
+ideal componentIdeal = M,e*ie-1,d*id-1,H,Q*iq-1;
+ideal coverIdeal = componentIdeal,w^2-D;
+ideal componentBasis = std(componentIdeal);
+ideal coverBasis = std(coverIdeal);
+
+"MESTRE_TWO_SECTION_SPLIT_COVER_PROBE_V1";
+"characteristic",coefficientField;
+"component_dimension",dim(componentBasis)-1;
+"cover_dimension",dim(coverBasis);
+"cover_standard_basis_size",size(coverBasis);
+"MINIMAL_PRIMES_START";
+list branches = minAssGTZ(coverIdeal);
+"minimal_prime_count",size(branches);
+int branchIndex;
+for (branchIndex=1;branchIndex<=size(branches);branchIndex=branchIndex+1)
+{
+  ideal branchBasis = std(branches[branchIndex]);
+  "BRANCH",branchIndex;
+  "dimension",dim(branchBasis);
+  "degree",deg(branchBasis);
+  "basis_size",size(branchBasis);
+  branchBasis;
+}
+"MINIMAL_PRIMES_END";
+"DONE";

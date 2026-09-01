@@ -82,6 +82,26 @@ This pins three additional candidate fibres and canonical short-model data;
 it does not prove a common family or rootless-K3 realization.  See
 [`ICARM_WGXLI_RANK17_LINEAGE.md`](notes/ICARM_WGXLI_RANK17_LINEAGE.md).
 
+Calibrate the basis-independent latent-lattice selector against the four
+published R17 positive controls and the exact Fermigier rank-12 negative
+control before using it on the wgxli cluster:
+
+```sh
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 \
+  elliptic-curves/cas/build_latent_lattice_calibration_truth.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 \
+  elliptic-curves/cas/calibrate_latent_lattice_method.py --check
+```
+
+The calibration recovers only one of four R17 spaces and misses half of the
+Fermigier rational space on ICARM 245.  Its status is therefore
+`FAIL_CALIBRATION_TARGET_GATE_CLOSED`: it makes no claim about the existence
+of a common lattice on curves 351, 356, 376, 377, and 385.  See
+[`LATENT_LATTICE_CALIBRATION.md`](notes/LATENT_LATTICE_CALIBRATION.md).
+
 Eliminate the section and surface coefficients from the literal five-fibre
 rootless-K3 ansatz, then exhaust every normalized projective first-jet chart
 over `GF(17)`, `GF(53)`, and `GF(67)`:

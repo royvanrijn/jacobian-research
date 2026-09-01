@@ -220,23 +220,34 @@ The Frobenius encoder writes every parent, child, and map coefficient as
 trace plus an anti-invariant multiple of `eta=2r+12`, with `eta^2=18`, and
 keeps section sign, base `PGL2`, and Weierstrass scaling in separate ledgers.
 
-The polynomial-closure producer is now prime-independent.  At both `p=19`
-and the next good prime `p=61`, its degree-12 geometric support gives 156
-signed pair tests, exactly two unsigned target hits, and one orbit modulo
-Frobenius and section sign.  The generic connected compiler gives the same
-Smith degrees `(0,0,6)`, rank-five correction gate, two-plane, moving degrees
-`(2,9,3)`, and primitive irreducible genus-one certificate.  Certify this
-second-prime alignment with:
+The polynomial-closure producer is prime-independent as a finite-field
+worker.  Complete children with the same resolved-pencil and minimal-fibre
+profiles have been certified at `p=19,61,67,83,89,103,131`.  This local
+agreement is not, by itself, a common quadratic lift.
+
+Exact Hensel lifting of both `p=19` closure operands supplies the missing
+global interpretation.  After the even substitution `q=l^2`, the five
+closure equations have nonsingular Jacobian on both branches.  Newton--Hensel
+lifting plus exact reconstruction gives two independent rational square
+classes `q1,q2`, with literal replay in all six characteristic-zero closure
+equations.  Composing the operands over
+`QQ(a,b)`, `a^2=q1`, `b^2=q2`, proves an exact height-eight horizontal: its
+`x` coordinate lies in `QQ(a*b)` and its `y` coordinate has `a` and `b`
+parts.  All four sign conjugates pass a direct, formerly held-out `p=71`
+surface test.  Replay these certificates with:
 
 ```bash
-python3 elkies-k3/scripts/align_q80_third_q12_common_producer_primes.py
-sage -python elkies-k3/scripts/certify_q80_first_marking_field_um2_local_behavior.sage
+sage elkies-k3/scripts/lift_q80_third_q12_closure_operands_p19_qq.sage \
+  --biquadratic-operands
+sage elkies-k3/scripts/certify_q80_third_q12_biquadratic_horizontal_qq.sage
 ```
 
-The second command closes the proposed first-marking-field shortcut: at
-`u=-2` that exact quadratic number field splits at 19, whereas the q12
-horizontal needs `GF(19^2)`.  It is inert at 61, but this alone does not prove
-that the p=61 horizontal descends from a section over that number field.
+The exact splitting characters explain the earlier alignment puzzle.  At
+`19,83,103`, `q1` is inert and `q2` splits; at `61,67,89,131`, the roles are
+reversed; `q1*q2` is inert at every one of these primes.  Thus the single
+local quadratic orbit alternates between two global branches.  The former
+trace/norm CRT accumulation mixed distinct conjugation quotients and is now
+retained only as a diagnostic residue ledger, not as a reconstruction input.
 
 The p=61 compiler is now complete.  The generic mapped-fibre adapter replaces
 Sage's characteristic-`p` power-map normalization with Singular's
@@ -260,21 +271,26 @@ sage -python elkies-k3/scripts/minimize_q80_third_q12_jacobian_modp2.py \
 python3 elkies-k3/scripts/align_q80_third_q12_full_children_primes.py
 ```
 
-The full alignment certificate has 1,947 ordered coefficient slots at each
-prime.  Trace, norm, and coefficient discriminant are ready for the CRT/LLL
-interface; the local anti-invariant generator is intentionally not identified
-across primes.  The same complete pipeline now also passes at `p=67`.  Compile
-the first reconstruction batch with:
+The full finite-field alignment certificate has 1,947 ordered coefficient
+slots at each prime.  Compile and replay the retired branch-mixed ledger with:
 
 ```bash
 python3 elkies-k3/scripts/compile_q80_third_q12_frobenius_crt_interface.py
 ```
 
-This accumulates all slots at `19`, `61`, and `67` modulo `77653` and reserves
-the independently audited good prime `71`.  The current **ACTIVE_COMPILER**
-gate is further good-prime collection followed by held-out replay; the present
-small modulus is not a rational reconstruction and no characteristic-zero
-equation is claimed.
+This formally accumulates the seven local residue sets modulo
+`7739891239523`, pins the alternating square-class diagnostic, and explicitly
+rejects interpreting the centered CRT integers as common rational
+coefficients.  The current **ACTIVE_COMPILER** gate is the exact connected
+correction over the biquadratic field:
+
+```bash
+sage -python elkies-k3/scripts/compile_q80_third_q12_biquadratic_resolved_pencil_qq.py
+```
+
+Its target is the exact two-dimensional resolved pencil.  The child Jacobian,
+maps, minimal fibres, and transported marking remain subsequent gates; no
+characteristic-zero child equation or Mordell--Weil rank is claimed here.
 
 ### Rootless J2 classification controls
 
@@ -309,6 +325,34 @@ equation is claimed.
 
 The current proof boundary and replay commands are in
 [`../ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md`](../ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md).
+
+### Picard-19 lattice foundry
+
+- `build_lattice_foundry.sage` consumes the complete H3 `J2` controls and the
+  hash-pinned Niemeier catalogue, then runs a JSON-declared auxiliary mutation
+  shell. It saturates every rank-seven auxiliary, retains full ambient
+  markings, computes and isometry-deduplicates all rank-17 complements,
+  classifies roots/MW ranks, solves the even ternary signature-`(2,1)`
+  discriminant-form gate, and emits target, companion, route, and equation
+  ledgers.
+- The initial `one-root-control-shell-v1` run is complete only inside its 768
+  declared mutations. It is a deterministic discovery shell, not a complete
+  determinant-5000 auxiliary classification. Its separate locked regression
+  still replays the complete H3 result: published R17 and alternate Q80, with
+  no third rootless `J2` frame.
+- `hunt_lattice_foundry_rootful_source.sage` performs a deterministic exact
+  positive-frame neighbour hunt for `NS0024`, then independently glues the
+  resulting `5A1+A2+A5/MW5` source to the same primitive rank-seven auxiliary
+  in `N(A11+D7+E6)` and checks that the complement is saturated.
+- `certify_lattice_foundry_route.sage` consumes an ordered route manifest,
+  replays every primitive isotropic split, checks component/all-section and
+  Proposition-C2 finite horizontal walls, composes determinant-one NS
+  markings, and scores the terminal rootless frame. The pinned route has
+  eleven degree-two edges, only `q=4,6`, zero physical Weyl repairs, and lands
+  on a fourth rootless `NS0024` frame class with MW rank 17.
+
+The scope, counts, certified route, and open equation gates are recorded in
+[`../LATTICE_FOUNDRY_REPORT_2026-09-01.md`](../LATTICE_FOUNDRY_REPORT_2026-09-01.md).
 
 ### Complete bisection pair-cover arithmetic
 

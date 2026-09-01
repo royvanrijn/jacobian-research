@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openai.local/schemas/elkies_k3_lattice_foundry_database.schema.json",
+  "title": "Picard-19 elliptic K3 lattice foundry database",
+  "type": "object",
+  "required": [
+    "schema",
+    "status",
+    "search_specification",
+    "positive_controls",
+    "accounting",
+    "ns_classes",
+    "rootless_targets",
+    "companion_fibrations",
+    "route_ledger",
+    "equation_shortlist",
+    "completeness_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "elkies-k3.lattice-foundry-database.v1"
+    },
+    "status": {
+      "type": "string"
+    },
+    "search_specification": {
+      "type": "object"
+    },
+    "positive_controls": {
+      "type": "object"
+    },
+    "accounting": {
+      "type": "object"
+    },
+    "ns_classes": {
+      "type": "array"
+    },
+    "rootless_targets": {
+      "type": "array"
+    },
+    "companion_fibrations": {
+      "type": "array"
+    },
+    "route_ledger": {
+      "type": "array"
+    },
+    "equation_shortlist": {
+      "type": "array"
+    },
+    "completeness_boundary": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

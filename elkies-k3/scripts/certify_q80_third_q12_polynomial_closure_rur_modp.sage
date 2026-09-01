@@ -52,7 +52,7 @@ parametrization = payload[5]
 if parametrization[0] != 1:
     raise ArithmeticError("unexpected number of RUR blocks")
 elimination_data, denominator_data, coordinate_data = parametrization[1]
-if denominator_data != [0, [1]] or len(coordinate_data) != 6:
+if denominator_data != [0, [1]] or len(coordinate_data) not in (6, 7):
     raise ArithmeticError("unsupported RUR denominator or coordinate count")
 
 base_finite = GF(prime)
@@ -62,10 +62,12 @@ squarefree = elimination.squarefree_part()
 factorization = tuple(squarefree.factor())
 if any(int(exponent) != 1 or factor.degree() not in (1, 2) for factor, exponent in factorization):
     raise ArithmeticError("producer currently requires square-free linear/quadratic RUR support")
-coordinate_polynomials = [elimination_ring(block[0][1]) for block in coordinate_data]
+coordinate_polynomials = [elimination_ring(block[0][1]) for block in coordinate_data[:6]]
 
-# Decode every factor in one common quadratic field.  This makes pairwise
-# sums between different quadratic factors available without composita.
+# Decode every factor in one common field of degree at most two.  This makes
+# pairwise sums between different quadratic factors available without
+# composita, while retaining split primes over the base field as a distinct
+# producer case.
 quadratic_factor = next((factor for factor, unused in factorization if factor.degree() == 2), None)
 if quadratic_factor is None:
     field = base_finite
@@ -108,6 +110,8 @@ singular_x = singular_roots[0]
 
 
 def coordinates(value):
+    if extension_degree == 1:
+        return [int(field(value))]
     values = list(field(value).list()) + [base_finite.zero()] * extension_degree
     return [int(values[index]) for index in range(extension_degree)]
 
@@ -322,7 +326,7 @@ output = {
     },
     "claim_boundary": {
         "proved": [
-            "all square-free closure RUR points decoded in one common quadratic field",
+            "all square-free closure RUR points decoded in one common field of degree at most two",
             "complete pairwise sum/difference traversal of the decoded support",
             "literal target height, pole order, and additive-fibre identity profile",
         ],

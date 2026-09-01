@@ -11,7 +11,16 @@ that field; later gates will use the same field for exact covariant group law.
 import argparse
 import os
 
-from sage.all import GF, QQ, FractionField, PolynomialRing, prod
+from sage.all import (
+    GF,
+    QQ,
+    FractionField,
+    FunctionField,
+    PolynomialRing,
+    matrix,
+    prod,
+    vector,
+)
 
 
 def build_component_field(prime: int):
@@ -37,6 +46,27 @@ def build_component_field(prime: int):
         for k in range(j + 1, 4)
     )
     c4 = prod(roots)
+    full_a1 = -(1 + sum(roots))
+    full_a2 = sum(roots) + c2
+    full_a3 = -(c2 + sum(
+        roots[i] * roots[j] * roots[k]
+        for i in range(4)
+        for j in range(i + 1, 4)
+        for k in range(j + 1, 4)
+    ))
+    full_a4 = (
+        sum(
+            roots[i] * roots[j] * roots[k]
+            for i in range(4)
+            for j in range(i + 1, 4)
+            for k in range(j + 1, 4)
+        )
+        + c4
+    )
+    raw_leading = (
+        5 * full_a1**4 - 24 * full_a1**2 * full_a2
+        + 32 * full_a1 * full_a3 + 16 * full_a2**2 - 64 * full_a4
+    )
     mestre = (
         c1**5 + c1**4 - 6 * c1**3 * c2 - 5 * c1**2 * c2
         + 8 * c1 * c2**2 + 7 * c1**2 * c3 + 4 * c2**2
@@ -76,36 +106,402 @@ def build_component_field(prime: int):
         raise AssertionError(f"expected a linear r6 gcd, found degree {common.degree()}")
     r6 = -common[0]
     values = (component(r3), component(r4), alpha, r6)
-    return component, values, seed_polynomial
+    specialized_leading = specialize_r5(raw_leading)
+    leading = specialized_leading(r6)
+    return component, values, seed_polynomial, leading
 
 
 def replay(prime: int) -> None:
-    component, roots, seed_polynomial = build_component_field(prime)
+    component, roots, seed_polynomial, leading = build_component_field(prime)
     print("component_field_constructed 1", flush=True)
     r3, r4, r5, r6 = roots
-    a1 = -(r3 + r4 + r5 + r6 + 1)
-    a2 = (
-        r3 + r4 + r5 + r6
-        + r3 * r4 + r3 * r5 + r3 * r6
-        + r4 * r5 + r4 * r6 + r5 * r6
-    )
-    a3 = -(
-        r3 * r4 + r3 * r5 + r3 * r6 + r4 * r5 + r4 * r6 + r5 * r6
-        + r3 * r4 * r5 + r3 * r4 * r6 + r3 * r5 * r6 + r4 * r5 * r6
-    )
-    a4 = (
-        r3 * r4 * r5 + r3 * r4 * r6 + r3 * r5 * r6 + r4 * r5 * r6
-        + r3 * r4 * r5 * r6
-    )
-    leading = 5 * a1**4 - 24 * a1**2 * a2 + 32 * a1 * a3 + 16 * a2**2 - 64 * a4
-    square_ring = PolynomialRing(component, names=("omega",))
-    omega = square_ring.gen()
-    cover = component.extension(omega**2 - leading, names=("w",))
-    # Work on the generic quadratic leading-square cover.  The exact
-    # ordinate checks below would fail if this formal extension collapsed.
-    cover.modulus().is_irreducible.set_cache(True)
-    w = cover.gen()
-    print("leading_square_cover_constructed 1", flush=True)
+    if os.environ.get("MESTRE_QUADRATIC_TOWER") == "1":
+        base = component.base_ring()
+        alpha = component.gen()
+
+        def component_coordinates(value):
+            coefficients = list(component(value).lift())
+            coefficients += [base(0)] * (8 - len(coefficients))
+            return vector(base, coefficients[:8])
+
+        delta_powers = [component(1)]
+        for _ in range(3):
+            delta_powers.append(delta_powers[-1] * leading)
+
+        # Write alpha^2-S(delta)*alpha+P(delta)=0.  This is a linear
+        # calculation in the alpha power basis, despite the quadratic tower
+        # it uncovers.
+        columns = [
+            component_coordinates(-power * alpha) for power in delta_powers
+        ] + [component_coordinates(power) for power in delta_powers]
+        tower_matrix = matrix(
+            base, 8, 8, lambda row, column: columns[column][row]
+        )
+        solution = tower_matrix.solve_right(-component_coordinates(alpha**2))
+        trace = sum(solution[index] * delta_powers[index] for index in range(4))
+        norm = sum(
+            solution[4 + index] * delta_powers[index] for index in range(4)
+        )
+        if alpha**2 - trace * alpha + norm != 0:
+            raise AssertionError("quadratic tower relation did not verify")
+
+        discriminant = trace**2 - 4 * norm
+        quotient = discriminant / leading
+        subfield_columns = [component_coordinates(power) for power in delta_powers]
+        subfield_matrix = matrix(
+            base, 8, 4, lambda row, column: subfield_columns[column][row]
+        )
+        pivot_rows = subfield_matrix.transpose().pivots()
+        square_submatrix = subfield_matrix.matrix_from_rows(pivot_rows)
+
+        def subfield_coordinates(value):
+            target = component_coordinates(value)
+            answer = square_submatrix.solve_right(
+                vector(base, [target[index] for index in pivot_rows])
+            )
+            if subfield_matrix * answer != target:
+                raise AssertionError("element did not lie in the degree-four subfield")
+            return answer
+
+        quotient_coordinates = subfield_coordinates(quotient)
+        leading_coordinates = subfield_coordinates(leading)
+        minimal_polynomial = leading.minpoly()
+
+        # If q has degree four, then q is a square in F(q) exactly when
+        # minpoly_q(Y^2) has a degree-four factor.  For such a factor
+        # Y^4+A Y^3+B Y^2+C Y+E, its root is recovered inside F(q) by
+        #     sqrt(q)=-(q^2+Bq+E)/(Aq+C).
+        # This avoids the much larger four-coefficient square-root system.
+        y_ring = PolynomialRing(base, names=("Y",))
+        Y = y_ring.gen()
+
+        def square_via_even_minpoly(value):
+            value_minpoly = value.minpoly()
+            even_polynomial = sum(
+                base(coefficient) * Y ** (2 * index)
+                for index, coefficient in enumerate(value_minpoly.list())
+            )
+            factorization = list(even_polynomial.factor())
+            degrees = [factor.degree() for factor, _ in factorization]
+            candidate = None
+            candidate_factor = None
+            for factor, _ in factorization:
+                if factor.degree() != value_minpoly.degree():
+                    continue
+                factor = factor.monic()
+                if factor.degree() != 4:
+                    continue
+                aa = factor[3]
+                bb = factor[2]
+                cc = factor[1]
+                ee = factor[0]
+                denominator = aa * value + cc
+                if denominator == 0:
+                    continue
+                proposed = -(value**2 + bb * value + ee) / denominator
+                if proposed**2 == value:
+                    candidate = proposed
+                    candidate_factor = factor
+                    break
+            return value_minpoly, degrees, candidate, candidate_factor
+
+        (
+            quotient_minpoly,
+            quotient_factor_degrees,
+            quotient_square_root,
+            quotient_square_factor,
+        ) = square_via_even_minpoly(quotient)
+        (
+            leading_minpoly,
+            leading_factor_degrees,
+            leading_square_root,
+            leading_square_factor,
+        ) = square_via_even_minpoly(leading)
+        quotient_is_square = quotient_square_root is not None
+        leading_is_square = leading_square_root is not None
+        component_square_root = leading_square_root
+        if component_square_root is None and quotient_square_root is not None:
+            component_square_root = (2 * alpha - trace) / quotient_square_root
+        component_is_square = (
+            component_square_root is not None
+            and component_square_root**2 == leading
+        )
+
+        print("MESTRE_TWO_SECTION_QUADRATIC_TOWER_V1")
+        print(f"characteristic {prime}")
+        print(f"component_degree {seed_polynomial.degree()}")
+        print(f"subfield_degree {minimal_polynomial.degree()}")
+        print(f"tower_matrix_rank {tower_matrix.rank()}")
+        print("quadratic_relation_verified 1")
+        print(
+            "discriminant_over_D_square_in_subfield",
+            int(quotient_is_square),
+        )
+        print(
+            "D_square_in_subfield",
+            int(leading_is_square),
+        )
+        print("discriminant_over_D_minpoly_degree", quotient_minpoly.degree())
+        print("quotient_even_factor_degrees", quotient_factor_degrees)
+        print("D_minpoly_degree", leading_minpoly.degree())
+        print("leading_even_factor_degrees", leading_factor_degrees)
+        print("D_square_in_component", int(component_is_square))
+        print("component_square_root_verified", int(component_is_square))
+        if os.environ.get("MESTRE_TOWER_VERBOSE") == "1":
+            print("TRACE_COEFFICIENTS")
+            for value in solution[:4]:
+                print(value)
+            print("NORM_COEFFICIENTS")
+            for value in solution[4:]:
+                print(value)
+            print("DISCRIMINANT_OVER_D_COORDINATES")
+            for value in quotient_coordinates:
+                print(value)
+            if quotient_square_factor is not None:
+                print("QUOTIENT_SQUARE_FACTOR")
+                print(quotient_square_factor)
+            if leading_square_factor is not None:
+                print("LEADING_SQUARE_FACTOR")
+                print(leading_square_factor)
+        if os.environ.get("MESTRE_TOWER_FACTOR_ONLY") == "1":
+            print("LEADING_SQUARE_FACTOR")
+            print(leading_square_factor)
+        print("DONE")
+        return
+    if os.environ.get("MESTRE_MINPOLY_D") == "1":
+        minimal_polynomial = leading.minpoly()
+        print("MESTRE_TWO_SECTION_LEADING_MINPOLY_V1")
+        print(f"characteristic {prime}")
+        print(f"degree {minimal_polynomial.degree()}")
+        print(minimal_polynomial)
+        print("DONE")
+        return
+    if os.environ.get("MESTRE_SAMPLE_SQRT") == "1":
+        if prime == 0:
+            raise ValueError("finite-extension square-root samples require a prime")
+        ground = GF(prime)
+        sample_ring = PolynomialRing(ground, names=("c",))
+        c_sample = sample_ring.gen()
+
+        def specialize_base(value, first, second):
+            value = component.base_ring()(value)
+            numerator = value.numerator()(ground(first), ground(second))
+            denominator = value.denominator()(ground(first), ground(second))
+            if denominator == 0:
+                raise ZeroDivisionError
+            return ground(numerator) / ground(denominator)
+
+        lifted_leading = leading.lift()
+        requested = int(os.environ.get("MESTRE_SAMPLE_COUNT", "12"))
+        interpolate = os.environ.get("MESTRE_INTERPOLATE_SQRT") == "1"
+        found = 0
+        sample_records = []
+
+        def interpolate_records():
+            if not interpolate:
+                return
+            display_ring = PolynomialRing(ground, names=("A", "B"))
+            A, B = display_ring.gens()
+            declared_training_count = int(
+                os.environ.get("MESTRE_TRAINING_COUNT", str(len(sample_records)))
+            )
+            training_count = min(declared_training_count, len(sample_records))
+            training_records = sample_records[:training_count]
+            holdout_records = sample_records[training_count:]
+            summary_only = os.environ.get("MESTRE_INTERPOLATE_SUMMARY") == "1"
+            for ratio_index in range(7):
+                reconstructed = False
+                for degree in range(1, 41):
+                    exponents = [
+                        (first_degree, total_degree - first_degree)
+                        for total_degree in range(degree + 1)
+                        for first_degree in range(total_degree + 1)
+                    ]
+                    if 2 * len(exponents) > len(training_records) + 1:
+                        break
+                    rows = []
+                    for first, second, ratios in training_records:
+                        values = [
+                            ground(first) ** first_degree * ground(second) ** second_degree
+                            for first_degree, second_degree in exponents
+                        ]
+                        ratio = ground(ratios[ratio_index])
+                        rows.append(values + [-ratio * value for value in values])
+                    kernel = matrix(ground, rows).right_kernel()
+                    if kernel.dimension() != 1:
+                        continue
+                    vector = list(kernel.basis()[0])
+                    count = len(exponents)
+                    numerator_coefficients = vector[:count]
+                    denominator_coefficients = vector[count:]
+                    pivot = next(value for value in denominator_coefficients if value)
+                    numerator_coefficients = [value / pivot for value in numerator_coefficients]
+                    denominator_coefficients = [value / pivot for value in denominator_coefficients]
+                    numerator = sum(
+                        coefficient * A**first_degree * B**second_degree
+                        for coefficient, (first_degree, second_degree)
+                        in zip(numerator_coefficients, exponents)
+                    )
+                    denominator = sum(
+                        coefficient * A**first_degree * B**second_degree
+                        for coefficient, (first_degree, second_degree)
+                        in zip(denominator_coefficients, exponents)
+                    )
+                    holdout_failures = 0
+                    for first, second, ratios in holdout_records:
+                        numerator_value = numerator(ground(first), ground(second))
+                        denominator_value = denominator(ground(first), ground(second))
+                        if (
+                            denominator_value == 0
+                            or numerator_value
+                            != ground(ratios[ratio_index]) * denominator_value
+                        ):
+                            holdout_failures += 1
+                    if holdout_failures:
+                        continue
+                    print(f"RATIO {ratio_index} DEGREE {degree}")
+                    print(f"HOLDOUTS {len(holdout_records)} FAILURES 0")
+                    if summary_only:
+                        print(f"NUMERATOR_TERMS {len(numerator.dict())}")
+                        print(f"DENOMINATOR_TERMS {len(denominator.dict())}")
+                    else:
+                        print(f"NUMERATOR {numerator}")
+                        print(f"DENOMINATOR {denominator}")
+                    reconstructed = True
+                    break
+                if not reconstructed:
+                    print(f"RATIO {ratio_index} UNRESOLVED")
+
+        print("MESTRE_TWO_SECTION_SQUARE_ROOT_SAMPLES_V1")
+        print(f"characteristic {prime}")
+        for first in range(prime):
+            for second in range(prime):
+                try:
+                    specialized_modulus = sample_ring(
+                        [
+                            specialize_base(value, first, second)
+                            for value in component.modulus().list()
+                        ]
+                    )
+                    if specialized_modulus.degree() != 8 or not specialized_modulus.is_irreducible():
+                        continue
+                    specialized_leading = sample_ring(
+                        [
+                            specialize_base(value, first, second)
+                            for value in lifted_leading.list()
+                        ]
+                    )
+                except ZeroDivisionError:
+                    continue
+                extension = GF(prime**8, names=("theta",), modulus=specialized_modulus)
+                theta = extension.gen()
+                leading_value = extension(
+                    sum(
+                        extension(specialized_leading[index]) * theta**index
+                        for index in range(len(specialized_leading.list()))
+                    )
+                )
+                if not leading_value.is_square():
+                    print(f"NONSQUARE {first} {second}")
+                    raise AssertionError("an irreducible specialization made D nonsquare")
+                root = leading_value.sqrt(all=True)[0]
+                root_coefficients = list(root.polynomial())
+                root_coefficients += [ground(0)] * (8 - len(root_coefficients))
+                normalization_index = max(
+                    index for index, value in enumerate(root_coefficients) if value
+                )
+                normalization = root_coefficients[normalization_index]
+                ratios = [int(value / normalization) for value in root_coefficients]
+                sample_records.append((first, second, ratios))
+                if not interpolate:
+                    print(
+                        "SAMPLE",
+                        first,
+                        second,
+                        normalization_index,
+                        *ratios,
+                    )
+                found += 1
+                if requested > 0 and found >= requested:
+                    interpolate_records()
+                    print(f"sample_count {found}")
+                    print("DONE")
+                    return
+        if requested == 0:
+            interpolate_records()
+            print(f"sample_count {found}")
+            print("DONE")
+            return
+        raise AssertionError(f"found only {found} irreducible specializations")
+    if os.environ.get("MESTRE_SOLVE_SQRT") == "1":
+        base = component.base_ring()
+        coefficient_ring = PolynomialRing(
+            base,
+            names=tuple(f"s{index}" for index in range(8)),
+            order="degrevlex",
+        )
+        coefficients = coefficient_ring.gens()
+        alpha_ring = PolynomialRing(coefficient_ring, names=("c",))
+        c = alpha_ring.gen()
+        modulus = alpha_ring(
+            [coefficient_ring(value) for value in component.modulus().list()]
+        )
+        lifted_leading = leading.lift()
+        leading_polynomial = alpha_ring(
+            [coefficient_ring(value) for value in lifted_leading.list()]
+        )
+        candidate = sum(coefficients[index] * c**index for index in range(8))
+        remainder = (candidate**2 - leading_polynomial).quo_rem(modulus)[1]
+        equations = [remainder[index] for index in range(8)]
+        square_root_ideal = coefficient_ring.ideal(equations)
+        print("MESTRE_TWO_SECTION_SQUARE_ROOT_SYSTEM_V1")
+        print(f"characteristic {prime}")
+        print(f"equation_count {len(equations)}")
+        basis = square_root_ideal.groebner_basis()
+        basis_ideal = coefficient_ring.ideal(basis)
+        print(f"ideal_dimension {basis_ideal.dimension()}", flush=True)
+        print(f"basis_size {len(basis)}")
+        for value in basis:
+            print(value)
+        print("DONE")
+        return
+    if os.environ.get("MESTRE_COMPONENT_SQRT") == "1":
+        split_a = 3 * r3**2 - 3 * r4**2 - 6 * r3 + 3
+        split_b = (
+            -r3**4 + 6 * r3**3 * r4 - 7 * r3**2 * r4**2
+            + 6 * r3 * r4**3 - r4**4 - 8 * r3**3 - 6 * r3**2 * r4
+            + 2 * r3 * r4**2 + 6 * r4**3 + 18 * r3**2
+            - 6 * r3 * r4 - 7 * r4**2 - 8 * r3 + 6 * r4 - 1
+        )
+        split_c = (
+            12 * r3**4 * r4**2 - 12 * r3**2 * r4**4
+            - 48 * r3**3 * r4**2 + 24 * r3 * r4**4
+            + 72 * r3**2 * r4**2 - 12 * r4**4
+            - 48 * r3 * r4**2 + 12 * r4**2
+        )
+        split_e = (
+            -144 * r3**4 * r4**3 + 144 * r3**3 * r4**4
+            + 144 * r3**4 * r4**2 + 144 * r3**3 * r4**3
+            - 288 * r3**2 * r4**4 - 288 * r3**3 * r4**2
+            + 144 * r3**2 * r4**3 + 144 * r3 * r4**4
+            + 144 * r3**2 * r4**2 - 144 * r3 * r4**3
+        )
+        w = -(leading**2 + split_b * leading + split_e) / (
+            split_a * leading + split_c
+        )
+        if w**2 != leading:
+            raise AssertionError("component square-root formula failed")
+        cover = component
+        print("leading_square_in_component_verified 1", flush=True)
+    else:
+        square_ring = PolynomialRing(component, names=("omega",))
+        omega = square_ring.gen()
+        cover = component.extension(omega**2 - leading, names=("w",))
+        # Work on the generic quadratic leading-square cover.  The exact
+        # ordinate checks below would fail if this formal extension collapsed.
+        cover.modulus().is_irreducible.set_cache(True)
+        w = cover.gen()
+        print("leading_square_cover_constructed 1", flush=True)
 
     roots = tuple(cover(value) for value in roots)
     r3, r4, r5, r6 = roots
