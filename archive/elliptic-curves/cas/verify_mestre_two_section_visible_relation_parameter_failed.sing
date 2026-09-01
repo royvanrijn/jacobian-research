@@ -1,3 +1,4 @@
+// ARCHIVED FAILED EXPERIMENT: the generic determinant reduction was stopped.
 // Fast characteristic-zero Riemann--Roch certificate over Q(T).
 //
 // First run the root-surface checker in its polynomial ring.  Extract only

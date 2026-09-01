@@ -1,3 +1,4 @@
+// ARCHIVED FAILED EXPERIMENT: denominator-cleared covariant reduction stopped.
 // Characteristic-zero visible-dependence certificate in intrinsic coordinates.
 //
 // Put a=r3, b=r4, s=r5+r6 and z=r5.  Eliminating p=r5*r6 from the sparse

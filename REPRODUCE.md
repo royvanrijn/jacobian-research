@@ -16518,7 +16518,7 @@ heights remain high-precision numerical data.  See
 
 ## Six-root Mestre two-section surface and dependence relation
 
-<!-- status-consumer: EC-M2S-GERM 536eee72664ba729 -->
+<!-- status-consumer: EC-M2S-GERM c7707c1e464f037b -->
 
 Certify the characteristic-zero root-coordinate component through
 `(0,25,95,143,168,205)`, its two labelled affine sections, and the rational
@@ -16533,23 +16533,18 @@ two-equation root surface away from the non-seed resultant factor, and proves
 all six ordinate-eliminated residuals vanish.  It also checks that the source
 is smooth with the two labelled coordinates as local parameters.
 
-Certify the generic visible dependence relation
+Replay the accepted visible-dependence classification
 
 ```text
 P2 = P1 + V(0,+) + V(r4,-) + V(r5,+) + V(r6,-)
 ```
 
-by an exact `L(6O)` determinant over the component function field with
-
-```bash
-Singular -q \
-  elliptic-curves/cas/verify_mestre_two_section_visible_relation_parameter.sing
-```
-
-This second verifier first replays the root-surface certificate, then moves
-the elliptic base parameter into the coefficient field `Q(T)` and reduces
-the Riemann--Roch determinant by the exact component ideal.  The fully lucky
-finite-characteristic repetitions of the local certificate are
+on an irreducible degree-eight fibre, including a nonzero `L(6O)` cofactor,
+with the modular command below.  The attempted characteristic-zero
+determinant scripts were stopped during denominator-cleared covariant normal
+forms and are preserved under `archive/elliptic-curves/cas/`; they are not
+certificates.  The fully lucky finite-characteristic repetitions of the
+local certificate are
 
 ```bash
 Singular -q -u 17 elliptic-curves/cas/verify_mestre_two_section_root_surface.sing

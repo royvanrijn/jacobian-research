@@ -12,7 +12,18 @@ symbol.  An incomplete chart list can yield a diagnostic kernel, but only a
 complete list can certify ``h0(D)=2``.
 """
 
-from sage.all import EllipticCurve, PolynomialRing, QQ, ZZ, gcd, matrix, prod, vector
+from sage.all import (
+    EllipticCurve,
+    FunctionField,
+    LaurentSeriesRing,
+    PolynomialRing,
+    QQ,
+    ZZ,
+    gcd,
+    matrix,
+    prod,
+    vector,
+)
 
 
 def intersection(left, right, gram):
@@ -449,6 +460,250 @@ def quotient_condition(
         "coefficient_field": coefficient_field,
         "quotient_basis": tuple(map(str, quotient_basis)),
         "provenance": str(provenance),
+    }
+
+
+def split_multiplicative_toric_chord_condition(
+    name,
+    ambient_basis,
+    chord_expansions,
+    old_base_ring,
+    support,
+    old_a,
+    old_b,
+    marked_x,
+    marked_y,
+    fibre_order,
+    marked_component,
+    required_component_vanishing,
+    provenance,
+    precision=None,
+):
+    """Compile an exact split-``I_n`` toric condition for a marked chord.
+
+    The caller supplies actual equation data and a resolved divisor profile;
+    this routine does not infer either from a Kodaira label.  Locally at
+    ``s=t-support`` it uses the standard nodal coordinates
+
+    ``a=r*s^j, b=u*s^(n-j)/r, y=(a+b)/2, w=(b-a)/2``
+
+    on component ``C_j``.  The analytic centre ``c`` satisfies
+    ``c^2=-A/3`` and ``c^3+A*c+B=u*s^n``; ``rho`` is recovered from
+    ``rho^3-3*c*rho=w`` and ``x=c+w/rho``.  The marked section selects the
+    orientation by requiring valuations ``(j,n-j)`` for
+    ``y-rho*(x-c), y+rho*(x-c)``.
+
+    Each ambient element is a pair ``(alpha,beta)`` representing
+    ``alpha+beta*m`` for ``m=(y+marked_y)/(x-marked_x)``, whose finite pole
+    is the marked section.  All coefficients below the caller-declared
+    component vanishing orders are converted to exact linear rows over the
+    coefficient field.
+
+    ``required_component_vanishing`` is resolved geometry, not ADE shorthand.
+    For NS0024 edge 1 it is ``{2:1,3:2,4:1}`` on the split ``I5`` met by the
+    horizontal in component 1.
+    """
+    ambient_basis = tuple(ambient_basis)
+    chord_expansions = tuple(chord_expansions)
+    if len(chord_expansions) != len(ambient_basis):
+        raise ValueError("chord expansions have incompatible ambient dimension")
+    if old_base_ring.ngens() != 1:
+        raise ValueError("old base ring must have exactly one coordinate")
+    coefficient_field = old_base_ring.base_ring()
+    fibre_order = ZZ(fibre_order)
+    marked_component = ZZ(marked_component)
+    if fibre_order < 2 or not (1 <= marked_component < fibre_order):
+        raise ValueError("invalid split multiplicative fibre/component order")
+    requested = {
+        ZZ(component): ZZ(order)
+        for component, order in dict(required_component_vanishing).items()
+    }
+    if not requested or any(
+        component <= 0 or component >= fibre_order or order <= 0
+        for component, order in requested.items()
+    ):
+        raise ValueError("resolved component vanishing data are invalid")
+    if precision is None:
+        precision = int(max(requested.values()) + fibre_order + 6)
+    precision = ZZ(precision)
+    if precision <= max(requested.values()) + fibre_order:
+        raise ValueError("toric Laurent precision is too small")
+
+    component_field = FunctionField(coefficient_field, "resolved_component_parameter")
+    component_parameter = component_field.gen()
+    series_ring = LaurentSeriesRing(
+        component_field, "resolved_uniformizer", default_prec=int(precision)
+    )
+    uniformizer = series_ring.gen()
+    support = coefficient_field(support)
+
+    def shifted(value):
+        value = old_base_ring.fraction_field()(value)
+
+        def shifted_polynomial(poly):
+            poly = old_base_ring(poly)
+            result = series_ring(0)
+            for degree, coefficient in enumerate(poly.list()):
+                result += component_field(coefficient) * (
+                    component_field(support) + uniformizer
+                )**degree
+            return result
+
+        return shifted_polynomial(value.numerator()) / shifted_polynomial(
+            value.denominator()
+        )
+
+    a_local = shifted(old_a)
+    b_local = shifted(old_b)
+    x_local = shifted(marked_x)
+    y_local = shifted(marked_y)
+    a0 = coefficient_field(old_base_ring(old_a)(support))
+    b0 = coefficient_field(old_base_ring(old_b)(support))
+    if a0 == 0:
+        raise ValueError("multiplicative support has vanishing short A coefficient")
+    node_x = coefficient_field(-3 * b0 / (2 * a0))
+    if node_x**3 + a0 * node_x + b0 or 3 * node_x**2 + a0:
+        raise ValueError("declared support is not a nodal short-Weierstrass fibre")
+
+    def newton_square_root(value, initial):
+        result = series_ring(component_field(initial))
+        for unused in range(6):
+            result = (result + value / result) / 2
+        if (result**2 - value).valuation() < precision - 3:
+            raise ArithmeticError("split multiplicative centre square root lost precision")
+        return result
+
+    centre = newton_square_root(-a_local / 3, node_x)
+    nodal_unit_series = centre**3 + a_local * centre + b_local
+    if nodal_unit_series.valuation() != fibre_order:
+        raise ValueError(
+            "declared split multiplicative order is {}, equation has {}".format(
+                fibre_order, nodal_unit_series.valuation()
+            )
+        )
+    nodal_unit = nodal_unit_series / uniformizer**fibre_order
+    tangent_square = coefficient_field(3 * node_x)
+    if not tangent_square.is_square():
+        raise ValueError("declared multiplicative fibre is not split over the coefficient field")
+    tangent = coefficient_field(tangent_square.sqrt())
+
+    orientation_candidates = []
+    for initial in (tangent, -tangent):
+        rho_section = newton_square_root(x_local + 2 * centre, initial)
+        w_section = rho_section * (x_local - centre)
+        left = y_local - w_section
+        right = y_local + w_section
+        orientation_candidates.append(
+            (initial, int(left.valuation()), int(right.valuation()))
+        )
+    matching = [
+        row for row in orientation_candidates
+        if row[1:] == (marked_component, fibre_order - marked_component)
+    ]
+    if len(matching) != 1:
+        raise ValueError(
+            "marked section does not select the requested resolved component: {}".format(
+                orientation_candidates
+            )
+        )
+    tangent = matching[0][0]
+
+    def toric_point(component):
+        left = component_parameter * uniformizer**component
+        right = (
+            nodal_unit * uniformizer**(fibre_order - component)
+            / component_parameter
+        )
+        y_value = (left + right) / 2
+        w_value = (right - left) / 2
+        rho = series_ring(component_field(tangent))
+        for unused in range(6):
+            residual = rho**3 - 3 * centre * rho - w_value
+            derivative = 3 * rho**2 - 3 * centre
+            rho -= residual / derivative
+        if (rho**3 - 3 * centre * rho - w_value).valuation() < precision - fibre_order:
+            raise ArithmeticError("split multiplicative toric rho lost precision")
+        x_value = centre + w_value / rho
+        return x_value, y_value
+
+    def rational_function_rows(values):
+        nonzero = [value for value in values if value]
+        if not nonzero:
+            return ()
+        common = nonzero[0].denominator().parent().one()
+        for value in nonzero:
+            common = common.lcm(value.denominator())
+        numerators = [(value * common).numerator() for value in values]
+        degree = max([poly.degree() for poly in numerators if poly] + [-1])
+        answer = []
+        for power in range(degree + 1):
+            row = tuple(
+                coefficient_field(poly[power])
+                if poly and power <= poly.degree()
+                else coefficient_field(0)
+                for poly in numerators
+            )
+            if any(row):
+                answer.append(row)
+        return tuple(answer)
+
+    def canonical(row):
+        row = tuple(coefficient_field(value) for value in row)
+        pivot = next(value for value in row if value)
+        return tuple(value / pivot for value in row)
+
+    rows = []
+    diagnostics = []
+    local_expansions = tuple(
+        (shifted(alpha), shifted(beta)) for alpha, beta in chord_expansions
+    )
+    for component, required_order in sorted(requested.items()):
+        x_value, y_value = toric_point(component)
+        chord = (y_value + y_local) / (x_value - x_local)
+        pullbacks = tuple(alpha + beta * chord for alpha, beta in local_expansions)
+        minimum = min(int(value.valuation()) for value in pullbacks if value)
+        component_rows = []
+        for order in range(minimum, int(required_order)):
+            coefficient_values = tuple(
+                component_field(value[order]) if value else component_field(0)
+                for value in pullbacks
+            )
+            component_rows.extend(rational_function_rows(coefficient_values))
+        canonical_rows = []
+        for row in component_rows:
+            normalized = canonical(row)
+            if normalized not in rows:
+                rows.append(normalized)
+            if normalized not in canonical_rows:
+                canonical_rows.append(normalized)
+        diagnostics.append({
+            "component": int(component),
+            "required_vanishing": int(required_order),
+            "minimum_ambient_valuation": int(minimum),
+            "independent_trace_rows": len(canonical_rows),
+        })
+    condition_matrix = matrix(coefficient_field, rows)
+    return {
+        "name": str(name),
+        "matrix": condition_matrix,
+        "coefficient_field": coefficient_field,
+        "quotient_basis": tuple(
+            "resolved_toric_trace_row_{}".format(index)
+            for index in range(len(rows))
+        ),
+        "provenance": str(provenance),
+        "resolved_toric_diagnostics": {
+            "fibre_order": int(fibre_order),
+            "marked_component": int(marked_component),
+            "required_component_vanishing": tuple(
+                (int(component), int(order))
+                for component, order in sorted(requested.items())
+            ),
+            "orientation_candidates": tuple(orientation_candidates),
+            "selected_tangent": tangent,
+            "component_traces": tuple(diagnostics),
+            "rank": int(condition_matrix.rank()),
+        },
     }
 
 

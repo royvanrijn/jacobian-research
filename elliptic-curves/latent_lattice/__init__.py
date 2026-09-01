@@ -15,12 +15,19 @@ Nothing in this package promotes a bounded match to a generic-family theorem.
 from .elliptic import EllipticCurve, Point, point_complexity
 from .integer import (
     canonical_unoriented,
+    canonical_rational_unoriented,
+    modular_rank,
     primitive_coordinates,
     rational_nullspace,
     rational_rank,
     row_basis_coordinates,
 )
-from .relations import RelationComplex, build_relation_complex
+from .relations import (
+    RelationComplex,
+    build_relation_complex,
+    lift_relation_vertex_bijection,
+    lift_relation_vertex_injection,
+)
 from .finite import FiniteQuotientBlock, discriminant, finite_quotient_block
 from .local import ComponentBlock, multiplicative_component_block
 from .codes import (
@@ -54,12 +61,32 @@ from .height import (
     theta_profile_distance,
     theta_signature,
 )
+from .fingerprints import (
+    CandidateRelationFingerprint,
+    JointCandidateScore,
+    candidate_relation_fingerprint,
+    joint_nearest_candidate_scores,
+    robust_standardize_fingerprint_families,
+)
+from .matching import (
+    MetricRelationEmbedding,
+    MetricRelationSearchLedger,
+    PartialRelationReplay,
+    StarComponentCandidate,
+    StarComponentSearchLedger,
+    bounded_metric_relation_search,
+    bounded_metric_star_component_search,
+    exact_partial_relation_replay,
+    partial_replay_finite_signature,
+)
 from .pari import (
     ExactEmbedding,
     ShortVectorRecord,
     enumerate_short_vectors,
     height_gram,
     primitive_column_closure,
+    row_embedding_is_primitive,
+    row_embedding_smith_invariant_factors,
     recover_exact_embedding,
 )
 from .subspace import (
@@ -96,13 +123,20 @@ __all__ = [
     "RepeatedIntersectionProposal",
     "RepeatedIntersectionScore",
     "MultiBoundIntersectionScore",
+    "MetricRelationEmbedding",
+    "MetricRelationSearchLedger",
+    "PartialRelationReplay",
+    "StarComponentCandidate",
+    "StarComponentSearchLedger",
     "ComponentBlock",
     "CandidateFiniteSignature",
+    "CandidateRelationFingerprint",
     "ComponentCodeSignature",
     "CloudHeightSignature",
     "HermiteSignature",
     "IntrinsicShellSignature",
     "IntrinsicShellDistance",
+    "JointCandidateScore",
     "RelationMetricSignature",
     "Point",
     "PrimeCodeSignature",
@@ -113,7 +147,14 @@ __all__ = [
     "beam_subspace_scan",
     "aggregate_repeated_intersection_ledgers",
     "build_relation_complex",
+    "bounded_metric_relation_search",
+    "bounded_metric_star_component_search",
+    "exact_partial_relation_replay",
+    "partial_replay_finite_signature",
+    "lift_relation_vertex_bijection",
+    "lift_relation_vertex_injection",
     "candidate_finite_signature",
+    "candidate_relation_fingerprint",
     "candidate_finite_signature_from_record",
     "cloud_height_profile_distance",
     "cloud_height_signature",
@@ -123,9 +164,11 @@ __all__ = [
     "hermite_signature_distance",
     "intrinsic_shell_signature",
     "intrinsic_shell_profile_distance",
+    "joint_nearest_candidate_scores",
     "relation_metric_profile_distance",
     "relation_metric_signature",
     "canonical_unoriented",
+    "canonical_rational_unoriented",
     "enumerate_short_vectors",
     "finite_quotient_block",
     "finite_joint_class_key",
@@ -139,10 +182,13 @@ __all__ = [
     "independent_row_basis",
     "independent_relation_growth_proposals",
     "modular_row_space_key",
+    "modular_rank",
     "modular_right_kernel_basis",
     "multiplicative_component_block",
     "point_complexity",
     "primitive_column_closure",
+    "row_embedding_is_primitive",
+    "row_embedding_smith_invariant_factors",
     "primitive_span_basis",
     "repeated_cross_bound_intersection_ledger",
     "primitive_coordinates",
@@ -151,6 +197,7 @@ __all__ = [
     "relation_seeded_subspace_scan",
     "rational_rank",
     "row_basis_coordinates",
+    "robust_standardize_fingerprint_families",
     "recover_exact_embedding",
     "restricted_height_gram",
     "theta_profile_distance",

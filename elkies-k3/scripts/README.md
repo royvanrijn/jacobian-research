@@ -244,10 +244,100 @@ sage elkies-k3/scripts/certify_q80_third_q12_biquadratic_horizontal_qq.sage
 
 The exact splitting characters explain the earlier alignment puzzle.  At
 `19,83,103`, `q1` is inert and `q2` splits; at `61,67,89,131`, the roles are
-reversed; `q1*q2` is inert at every one of these primes.  Thus the single
-local quadratic orbit alternates between two global branches.  The former
-trace/norm CRT accumulation mixed distinct conjugation quotients and is now
-retained only as a diagnostic residue ledger, not as a reconstruction input.
+reversed; `q1*q2` is inert at every one of these primes.  The old local
+generator therefore alternated between an `a`-presentation and a
+`b`-presentation.  Its trace/norm CRT accumulation remains diagnostic and
+must not be interpreted directly as rational reconstruction.
+
+The exact connected pencil supplies the missing common quotient.  Every one
+of its 63 coefficients lies in
+
+```text
+QQ(theta^2) = QQ(a*b),  theta=a+b,
+omega=2*theta^2-2*(q1+q2)=4*a*b,  omega^2=16*q1*q2.
+```
+
+`align_q80_third_q12_exact_quadratic_pencil_primes.py` reduces this exact
+quadratic field at all seven collected primes.  At each prime it finds the
+unique signed scale from `omega` to the local anti-invariant generator and
+the unique induced symmetric-square base-`PGL2` transformation for which all
+63 moving-equation coefficients replay.  Thus the seven complete local
+children are now canonically anchored to one global quadratic pencil; their
+child and map coefficients still need to be transported through these base
+gauges before a new CRT/LLL reconstruction is valid.  Replay the alignment
+with:
+
+```bash
+python3 elkies-k3/scripts/align_q80_third_q12_exact_quadratic_pencil_primes.py --check
+```
+
+The explicit recovered `2x2` base matrices make the alignment executable.
+`transport_q80_third_q12_long_jacobians_exact_quadratic.sage` applies their
+inverse substitutions to the six generalized-pipeline long Jacobians and
+rewrites every coefficient in the common basis `(1,omega)`.  It verifies the
+transport by literal recomputation of the discriminant and `j` invariant.
+The resulting seven-prime long-model coefficient schema has 292 slots.  Both
+directions of the generic maps also transport with a common schema, producing
+3,484 coefficient slots.  Compile the valid CRT ledgers with:
+
+```bash
+sage -python elkies-k3/scripts/transport_q80_third_q12_long_jacobians_exact_quadratic.sage --check
+python3 elkies-k3/scripts/compile_q80_third_q12_long_jacobian_quadratic_crt.py --check
+sage -python elkies-k3/scripts/transport_q80_third_q12_maps_exact_quadratic.sage --check
+python3 elkies-k3/scripts/compile_q80_third_q12_maps_quadratic_crt.py --check
+```
+
+The CRT modulus is `7739891239523`.  It is not yet large enough for rational
+reconstruction; additional complete primes remain to be transported.  The
+mandatory legacy p=19 child and its two-way maps are included through a
+separate exact generator/base-gauge alignment artifact.
+
+The p-adic route avoids accumulating thousands of small primes.  The exact
+pencil compiler writes all 63 coefficients modulo `19^64` directly in the
+global `(1,omega)` basis.  The discriminant worker then lifts the intrinsic
+`L^3 Q^2 D` factorization and its repeated root through five digits using a
+rank-nine fixed finite-field Jacobian inverse.  It exports the normalized
+candidate `(z^2+A*z+B)/(LQ)` for the cubic integral basis.  Replay with:
+
+```bash
+python3 elkies-k3/scripts/compile_q80_third_q12_exact_pencil_p19_adic.py --check
+sage -python elkies-k3/scripts/lift_q80_third_q12_discriminant_factors_p19_adic.sage --check
+python3 elkies-k3/scripts/verify_q80_third_q12_integral_basis_mod19_power.py --check
+sage -python elkies-k3/scripts/compile_q80_third_q12_riemann_roch_p19_adic_sample.sage --check
+python3 elkies-k3/scripts/interpolate_q80_third_q12_long_jacobian_p19_adic.py --check
+```
+
+The conductor/root lift and the candidate's generic integrality modulo `19^5`
+are certified.  The dedicated verifier uses a single fixed global
+`U`-denominator and checks the trace, second symmetric coefficient, and
+determinant divisibilities by `LQ`, `(LQ)^2`, and `(LQ)^3` coefficientwise.
+The first p-adic Riemann--Roch sample is also complete.  At the exact-gauge
+base value `U=16+7*omega`, which reduces to the legacy `T=1` positive control,
+the worker flattens the double-branch field to a quartic extension of
+`QQ_19`, imposes regularity at both conjugate branches, and descends the
+normalized pole-two and pole-three generators back to `QQ_19(omega)`.  It
+recovers dimensions `1,1,2,3`, the long Weierstrass equation, and maps in both
+directions through all five available digits.  The infinity roots are derived
+from each base residue, so the same worker applies to arbitrary good
+`U in QQ_19(omega)` rather than only the legacy sample.
+
+Ninety-five accepted residue-distinct samples now support the generic long
+equation.  Rational interpolation gives the exact-gauge coefficient degrees
+`2/2,4/4,4/4,6/6,8/8` modulo `19^5`; two samples are held out, and every
+interpolated coefficient reduces literally to the independently transported
+generic p=19 model.  The maps are now generic as well.  Before interpolation,
+the worker cancels the p-adically invisible common conductor factors by
+solving `n*D-d*N=0` at the transported `W`-degree bounds.  Ninety-three maps
+remain canonical (91 training, two held out), including the degree-`40/40`
+inverse old-`x` map.  Every scalar map function replays the held-outs and
+reduces to the transported generic p=19 map.  None of these modular
+certificates is a characteristic-zero claim.
+
+The conductor worker now compresses its rational functions after every Hensel
+digit.  This removes the former valuation-four expression-growth wall:
+factorization, repeated root, generic integrality, and the complete pinned
+child with both maps have replayed through `19^16`.  The exact source currently
+supports a next precision run near 60 digits before its `19^64` ceiling.
 
 The p=61 compiler is now complete.  The generic mapped-fibre adapter replaces
 Sage's characteristic-`p` power-map normalization with Singular's
@@ -272,7 +362,8 @@ python3 elkies-k3/scripts/align_q80_third_q12_full_children_primes.py
 ```
 
 The full finite-field alignment certificate has 1,947 ordered coefficient
-slots at each prime.  Compile and replay the retired branch-mixed ledger with:
+slots at each prime.  Compile and replay the untransported branch-mixed ledger
+with:
 
 ```bash
 python3 elkies-k3/scripts/compile_q80_third_q12_frobenius_crt_interface.py
@@ -281,8 +372,7 @@ python3 elkies-k3/scripts/compile_q80_third_q12_frobenius_crt_interface.py
 This formally accumulates the seven local residue sets modulo
 `7739891239523`, pins the alternating square-class diagnostic, and explicitly
 rejects interpreting the centered CRT integers as common rational
-coefficients.  The current **ACTIVE_COMPILER** gate is the exact connected
-correction over the biquadratic field:
+coefficients.  The exact connected correction over the biquadratic field is:
 
 ```bash
 sage -python elkies-k3/scripts/compile_q80_third_q12_biquadratic_resolved_pencil_qq.py
@@ -294,9 +384,12 @@ dimension two, and 63 moving-equation terms of degrees `(2,9,3)`.  The
 117 MB artifact is
 `artifacts/generated-results/q80-third-q12-um2-biquadratic-resolved-pencil-qq.json`
 (SHA-256 `ac67210166cd414945e1fa373e8f0d5829ff8231daf83c764c376a32ff4b641e`).
-The child Jacobian, maps, minimal fibres, and transported marking remain
-subsequent gates; no characteristic-zero child equation or Mordell--Weil rank
-is claimed here.
+The current **ACTIVE_COMPILER** gate is to transport each already certified
+finite child and its two-way maps through the exact quadratic generator and
+base-`PGL2` alignments, then rebuild the CRT/LLL interface in that common
+gauge.  The characteristic-zero child Jacobian, maps, minimal fibres, and
+transported marking remain subsequent gates; no characteristic-zero child
+equation or Mordell--Weil rank is claimed here.
 
 Certify the generic characteristic-zero genus with:
 
@@ -373,6 +466,22 @@ The current proof boundary and replay commands are in
   `I7+I5+I4+8I1` branch jets of the MW4 source over a finite field. Exact
   examples at 11, 13, and 17 prove fibre-stratum feasibility only; the four
   MW sections and `NS0024` marking remain open gates.
+- `prepare_lattice_foundry_ns0024_edge1_compiler.sage` certifies the abstract
+  q4/orbit1 handoff: horizontal `P3`, divisor
+  `O+P3+2F-C2-2C3-C4`, four-dimensional chord ambient, and expected resolved
+  rank two. `compile_lattice_foundry_ns0024_edge1_modp.sage` consumes a
+  certified model over `GF(p)`, `GF(p^d)`, or a one-parameter function field
+  and fails closed unless the exact resolved two-plane, quartic, and
+  `A1+A2+A4+D5` child gates all pass.
+- `adapt_lattice_foundry_ns0024_mw4_point_for_edge1.sage` is the lossless
+  bridge from the residue-algebra recovery format. It joins a compact P4 point
+  over a quadratic extension to its MW3 seed and independently replays all
+  curve equations, fibre orders, component labels, and section intersections
+  before granting compiler-input status.
+- `run_lattice_foundry_ns0024_edge1_handoff.sage` is the single-command entry
+  point. It dispatches a certified family directly to the compiler, or runs
+  the marked-point adapter first when given the compact residue-algebra format;
+  `--check` replays both generated artifacts without rewriting them.
 
 The scope, counts, certified route, and open equation gates are recorded in
 [`../LATTICE_FOUNDRY_REPORT_2026-09-01.md`](../LATTICE_FOUNDRY_REPORT_2026-09-01.md).

@@ -153,6 +153,21 @@ equation-side lift of edge 1. Expensive characteristic-zero reconstruction
 therefore remains closed. Direct construction from the rootless equation is
 not the preferred entry point.
 
+The edge-1 compiler is now prepared independently of that missing family.
+The exact minimum-pole basis identifies the q4/orbit1 horizontal as `P3` and
+gives the literal correction
+`D=O+P3+2F-C2-2C3-C4` on the normalized split `I5`.  The reusable toric
+adapter compiles the complete four-dimensional chord ambient and is locked by
+an exact rank-two Tate-`I5` regression over prime, quadratic-extension, and
+one-parameter function fields.  A compact residue-algebra point over
+`GF(p^d)` can be joined to its oriented MW3 seed by an independent adapter
+which replays the full component and intersection marking; no manual
+transcription to a prime-field model is required.  An incoming certified
+modular MW4 family or marked point can therefore be sent directly through the
+resolved RR, quartic, and `A1+A2+A4+D5` child gates.  This is compiler
+readiness, not an equation promotion; see
+[`NS0024_EDGE1_COMPILER_PREPARATION_2026-09-01.md`](NS0024_EDGE1_COMPILER_PREPARATION_2026-09-01.md).
+
 ## Positive controls and search boundary
 
 The initial run contains 48 auxiliary classes, 509 frame classes, and 138
@@ -197,6 +212,12 @@ for the pinned determinant-948 auxiliary.
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/probe_lattice_foundry_ns0024_source_ansatz_modp.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/prepare_lattice_foundry_ns0024_edge1_compiler.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/verify_elliptic_neighbor_compiler.sage
 ```
 
 Each command also supports `--check` after its output has been generated.
@@ -224,6 +245,9 @@ Route certificate:
 MW4 source and route certificates:
 [`artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-hunt-r13.json`](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-hunt-r13.json),
 [`artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-r13-nef-route.json`](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-r13-nef-route.json)
+
+Edge-1 compiler preparation:
+[`artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-edge1-compiler-preparation.json`](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-edge1-compiler-preparation.json)
 
 Modular ansatz certificates:
 [`p=11`](../artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-ansatz-mod11.json),

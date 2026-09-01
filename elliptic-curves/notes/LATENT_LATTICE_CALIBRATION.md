@@ -174,6 +174,134 @@ Accordingly `latent_lattice_shape_calibration_v1.json` has status
 recovery, blind dimension 12, and top-128 Fermigier recall pass.  Symmetric
 joint selection does not.  The wgxli gate remains closed.
 
+### Post-artifact recurrence and relation-consensus audits
+
+A third cutoff does not repair the selector.  The height-27 ledger has 3,281
+rank-15 enclosures, with truth-containing enclosures only at blind ranks 490,
+1456, and 2012.  Under the declared adaptive bounds 512 x 200, 512 x 200,
+and 200 x 200, the exact rank-12 truth ranks 184 on the 27--28 pair and 65 on
+the 28--29 pair, and is absent on 27--29.  Among all pre-closure exact keys it
+ranks 165 under the lexicographic multi-bound recurrence score; 138 false
+cores recur in all three pair ledgers.  Strict cutoff recurrence is therefore
+rejected within these bounds.
+
+The Fermigier height comparison also exposed an essential saturation
+distinction.  On ICARM 245 the published generic rank-12 subgroup has Smith
+factors `2,2,...,2,1` and index `2^11` in its primitive closure; on ICARM 282
+the Smith factors are `12,2,...,2`.  A primitive intersection candidate must
+be compared with the closure Gram, not the stored generic-subgroup Gram.  The
+corrected primitive-shell profile still fails (the ICARM 245 truth ranks 209
+among the first 256 two-bound candidates), so it is retained only as a
+diagnostic.
+
+The exact coefficient-relation benchmark is substantially stronger.
+After expressing every retained truth ray in the corresponding generic basis,
+157 rays occur in at least three controls and span rank 17.  In every
+leave-one-fibre-out split, the training two-of-three core has 113--137 rays
+visible on the held-out fibre, again spanning rank 17.  The replayed
+`latent_lattice_relation_consensus_v1.json` therefore has status
+`PASS_CONTROL_EXACT_RELATION_SIGNALS`.  Rational-ray normalization now clears
+denominators before canonicalization and records those denominators as
+finite-index metadata.  This is necessary on ICARM 245, where all retained
+primitive-closure rays have denominator 2 relative to the displayed generic
+subgroup, and on ICARM 282, where denominators 2, 4, 6, and 12 occur.  The
+aligned ICARM 282 / `u=28917/20` sibling pair has 30 common rational rays
+spanning rank 12.  ICARM 245 is a different Fermigier--Mestre family and is
+not asserted to share their labelled rays.
+
+The relation benchmark remains deliberately supervised: published embeddings
+align the coefficient systems.  The exact hypergraph validator independently
+lifts the active held-out cores to primitive rectangular matrices of shapes
+`17 x 25`, `17 x 26`, `17 x 27`, and `17 x 28`.  Its Smith factors are all
+one, and exact full-cloud replay finds respectively 238, 266, 291, and 304
+training-core rays, each spanning rank 17.  Thus cutoff loss does not destroy
+the signal once an injection is supplied.
+
+The current blind unequal-cloud proposal generator still fails.  It combines
+relation-star seeds, robust scale-free height-angle pruning, a bounded beam,
+codimension-one metric reseeding, exact rectangular lifting, and exact global
+replay.  In the frozen rank-25 box it tests 256 center pairs, retains a beam of
+500 for 80 steps, expands 39,714 states, and makes 500 exact-lift attempts.
+It reaches rank 17 but no candidate passes the 100-ray global-replay gate; the
+maximum is 49 versus the supervised truth value 238.  Its artifact status is
+`FAIL_BLIND_R17_RECOVERY_GATE_CLOSED`.
+
+This failure is informative.  Exact relations plus height angles can produce
+primitive false rank-17 subspaces; a sampled false core had only
+9-dimensional intersection with R17.  Disjoint finite quotient profiles
+separate that false core (`0.1530` development distance) from truth
+(`0.04583`), but finite scoring cannot select a truth candidate absent from
+the proposal ledger.  The next selector must match whole relation components
+jointly or score exact partial-subspace replay before full rank.  No wider
+edgewise beam is authorized by this calibration.
+
+## Exact proper-subspace replay calibration
+
+The partial-subspace alternative is now implemented without completing a
+proper component to a square ambient basis.  Given a partial ray injection,
+the code takes the primitive closure of its source span, rewrites every mapped
+ray in intrinsic integer coordinates, lifts the induced relation injection,
+and replays every supplied source ray lying in that rational subspace.  The
+rectangular target matrix is Smith-tested.  The same matrix can be restricted
+to good-reduction quotient and bad-component codes through the existing
+source-free finite signature.
+
+On the supervised rank-25 R17 control, the deterministic truth path after 287
+relation-frontier steps has 103 rays and rank 16.  Exact saturation and lift
+find two global-sign choices.  The source hyperplane contains 362 supplied
+rays; 194 replay into the held-out target cloud, span rank 16, and support 318
+target ternary relations.  The target Smith factors are all one.  Its finite
+signature uses the disjoint three-development plus three-held-out quotient
+blocks and retains 279 target-cloud rays in the target rational subspace.
+
+This strong validator does not yet repair proposal selection.  In the frozen
+oracle-center search, all 128 retained seed lineages receive a descendant
+slot, and at most 400 proper subspaces of ranks at least 10 are audited before
+beam truncation.  The run expands 44,697 states, but its best audited partial
+map replays only 29 rays and 22 relations; its best full-rank lift replays 47
+rays, and no embedding crosses the 100-ray gate.  Therefore
+`latent_lattice_partial_replay_v1.json` has status
+`PASS_EXACT_PARTIAL_REPLAY_SELECTOR_FAIL`.
+
+What this changes is the failure diagnosis: a large correct rank-16 component
+is exactly distinguishable once proposed, but one- or two-vertex edgewise
+continuations lose it even when the correct center pair is supplied.  The next
+bounded generator must propose whole components or maintain richer
+within-seed branch diversity, with finite codes used to prune those branches.
+Simply widening the old global beam is not justified.  No wgxli record was
+loaded.
+
+## Finite-aware center-star proposal
+
+The first whole-component proposal unit assigns a center together with several
+incident ternary relations.  Each matched arm adds both noncentral rays at
+once; candidate arms are height-ordered, but every accepted partial map is
+checked for equal total ranks over `F_2` and `F_3`.  This is a necessary exact
+condition for the primitive integral embeddings sought here.  The beam is
+stratified by matched-edge count and rational rank so cutoff-heavy components
+are not discarded solely for having fewer visible arms.
+
+On the supervised rank-25 control, the complete visible truth star at source
+vertex 116 and target vertex 15 has 10 incident relations, 21 rays, and rank
+11.  Its exact primitive lift replays 32 of the 40 source-hyperplane rays and
+26 ternary relations; the associated six-block finite signature retains 35
+target rays.  Thus a correct star is exactly certifiable once supplied.
+
+The bounded proposal ledger processes 20 star layers with a beam of 512,
+expands 9,282 states, rejects 4,152 branches by mod-2/mod-3 rank, and makes 500
+exact partial-replay audits.  It returns 476 distinct target subspaces, but the
+largest postselection intersection with the rank-11 truth star is only 9.
+Checking every newly introduced pair and triple over both finite fields takes
+151 seconds in the same box, rejects no additional branch, and leaves the same
+9/11 ceiling.  It is retained as an explicit expensive option, not the
+default.
+
+Accordingly `latent_lattice_star_component_v1.json` has status
+`FAIL_STAR_COMPONENT_RECALL_GATE_CLOSED`.  The next generator needs a
+multi-center component or a joint cross-fibre invariant capable of ranking
+partial stars before local beam loss.  Neither a wider edgewise beam nor the
+current single-center star is calibrated for target use.
+
 ## What is proved and what is heuristic
 
 Exact within the recorded bounds:
@@ -213,6 +341,24 @@ PYTHONPATH=elliptic-curves:elliptic-curves/cas \
   python3 elliptic-curves/cas/calibrate_latent_lattice_shape.py --check
 
 PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 elliptic-curves/cas/calibrate_latent_lattice_relation_consensus.py --check
+
+sage -python \
+  elliptic-curves/cas/calibrate_latent_lattice_hypergraph_matcher.sage --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 \
+  elliptic-curves/cas/calibrate_latent_lattice_metric_relation_search.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 \
+  elliptic-curves/cas/calibrate_latent_lattice_partial_replay.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 \
+  elliptic-curves/cas/calibrate_latent_lattice_star_component.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
   python3 -m unittest elliptic-curves/tests/test_latent_lattice.py -v
 ```
 
@@ -224,5 +370,15 @@ The finite-aware replay is
 [`latent_lattice_finite_calibration_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_finite_calibration_v1.json).
 The cross-bound shape replay is
 [`latent_lattice_shape_calibration_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_shape_calibration_v1.json).
+The exact supervised relation benchmark is
+[`latent_lattice_relation_consensus_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_relation_consensus_v1.json).
+The exact rectangular validator is
+[`latent_lattice_hypergraph_matcher_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_hypergraph_matcher_v1.json).
+The bounded blind unequal-cloud failure is
+[`latent_lattice_metric_relation_search_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_metric_relation_search_v1.json).
+The exact proper-subspace validator and bounded selector failure is
+[`latent_lattice_partial_replay_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_partial_replay_v1.json).
+The finite-aware center-star proposal failure is
+[`latent_lattice_star_component_v1.json`](../../artifacts/generated-results/elliptic-curves/latent_lattice_star_component_v1.json).
 The superseded `v1` bytes remain available for provenance but are not the
 active replay target.

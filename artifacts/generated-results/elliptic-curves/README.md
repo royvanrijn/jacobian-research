@@ -38,6 +38,32 @@ Important distinctions made explicit by the catalogue:
   held-out R17 rank-25 control, but symmetric R17 selection still fails.  Its
   status is `PASS_PROPOSAL_CALIBRATION_SELECTOR_FAIL`, so it likewise forbids
   target use.
+  `latent_lattice_relation_consensus_v1.json` is a supervised exact-signal
+  benchmark: every R17 leave-one-out split retains a rank-17 coefficient core
+  on the held-out fibre, while exact rational-ray normalization records the
+  fibre-specific Fermigier saturation denominators.  The published embeddings
+  supply the alignments, so its `PASS_CONTROL_EXACT_RELATION_SIGNALS` status
+  does not authorize blind target use.
+  `latent_lattice_hypergraph_matcher_v1.json` certifies exact equal-core
+  rebasing and primitive rectangular `17 x r` lifts for all four supervised
+  held-out controls.  Full-cloud replay sees 238, 266, 291, and 304 rays.
+  `latent_lattice_metric_relation_search_v1.json` is the complementary blind
+  bounded experiment: 39,714 states and 500 lift attempts reach at most 49
+  replayed rays against a 100-ray gate.  Its
+  `FAIL_BLIND_R17_RECOVERY_GATE_CLOSED` status keeps all targets gated.
+  `latent_lattice_partial_replay_v1.json` adds exact proper-subspace
+  saturation and replay.  A supervised 103-ray rank-16 path lifts to a
+  primitive target image and replays 194 rays and 318 relations; its six-block
+  finite signature is exact.  The independently bounded oracle-center beam
+  makes 400 partial audits but sees at most 29 replayed rays and no full
+  embedding.  Its `PASS_EXACT_PARTIAL_REPLAY_SELECTOR_FAIL` status therefore
+  keeps the same gate closed.
+  `latent_lattice_star_component_v1.json` tests a whole center star with exact
+  mod-2/mod-3 rank pruning.  The supervised visible truth star has rank 11 and
+  a primitive 32-ray replay, while the 512-state, 500-audit bounded ledger
+  reaches withheld overlap only 9/11.  Its
+  `FAIL_STAR_COMPONENT_RECALL_GATE_CLOSED` status is another proposal-generator
+  failure and does not authorize targets.
 
 - `icarm_273_282_302_family_discovery_v1.json` screens 2,334 generated
   one-parameter families exactly.  It rediscovers curve 282 in both the

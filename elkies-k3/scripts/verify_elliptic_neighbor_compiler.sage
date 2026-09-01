@@ -251,6 +251,77 @@ assert marked_section_generic_fibre_basis(2, "m_-P1") == (
 assert marked_section_generic_fibre_basis(1, "unused") == (
     {"kind": "weierstrass_monomial", "x_power": 0, "y_power": 0},
 )
+
+# NS0024 edge 1 uses the component-1 split-I5 chord module with vertical
+# correction -C2-2*C3-C4.  The universal Tate-normal-form 5-torsion curve is
+# a compact exact regression for that resolved local adapter.
+tate_field = GF(101)
+tate_ring = PolynomialRing(tate_field, "s")
+tate_s = tate_ring.gen()
+tate_a1 = 1-tate_s
+tate_a2 = -tate_s
+tate_a3 = -tate_s
+tate_b2 = tate_a1**2+4*tate_a2
+tate_b4 = tate_a1*tate_a3
+tate_b6 = tate_a3**2
+tate_c4 = tate_b2**2-24*tate_b4
+tate_c6 = -tate_b2**3+36*tate_b2*tate_b4-216*tate_b6
+tate_a = -tate_c4/48
+tate_b = -tate_c6/864
+tate_px = tate_b2/12
+tate_py = tate_a3/2
+assert tate_py**2 == tate_px**3+tate_a*tate_px+tate_b
+assert (4*tate_a**3+27*tate_b**2).valuation(tate_s) == 5
+tate_toric = split_multiplicative_toric_chord_condition(
+    "Tate-I5 component-1 middle-double regression",
+    ("1", "s", "s^2", "m"),
+    ((1, 0), (tate_s, 0), (tate_s**2, 0), (0, 1)),
+    tate_ring, 0, tate_a, tate_b, tate_px, tate_py,
+    5, 1, {2: 1, 3: 2, 4: 1},
+    "exact split-I5 toric regression for NS0024 edge-1 local module",
+)
+assert tate_toric["matrix"].rank() == 2
+tate_compiled = compile_resolved_conditions(
+    ("1", "s", "s^2", "m"), (tate_toric,), complete=True,
+    coefficient_field=tate_field,
+)
+assert tate_compiled["kernel_dimension"] == 2
+assert tate_compiled["h0_certified"]
+# The incoming MW4 object is expected to be a one-parameter family, so replay
+# the same exact adapter over GF(101)(u), not only over a finite constant field.
+nested_parameter_ring = PolynomialRing(tate_field, "u")
+nested_field = nested_parameter_ring.fraction_field()
+nested_ring = PolynomialRing(nested_field, "s")
+nested_s = nested_ring.gen()
+nested_toric = split_multiplicative_toric_chord_condition(
+    "Tate-I5 nested-family-field regression",
+    ("1", "s", "s^2", "m"),
+    ((1, 0), (nested_s, 0), (nested_s**2, 0), (0, 1)),
+    nested_ring, 0,
+    nested_ring(tate_a), nested_ring(tate_b),
+    nested_ring(tate_px), nested_ring(tate_py),
+    5, 1, {2: 1, 3: 2, 4: 1},
+    "same split-I5 adapter over the expected GF(p)(u) coefficient field",
+)
+assert nested_toric["matrix"].rank() == 2
+# Residue-algebra recovery can materialize an isolated source point over a
+# finite constant-field extension before a rational point or generic family
+# is known.  The same resolved module must therefore be field-generic in this
+# direction as well.
+quadratic_constant_field = GF(101**2, "z")
+quadratic_ring = PolynomialRing(quadratic_constant_field, "s")
+quadratic_s = quadratic_ring.gen()
+quadratic_toric = split_multiplicative_toric_chord_condition(
+    "Tate-I5 quadratic-constant-field regression",
+    ("1", "s", "s^2", "m"),
+    ((1, 0), (quadratic_s, 0), (quadratic_s**2, 0), (0, 1)),
+    quadratic_ring, 0,
+    quadratic_ring(tate_a), quadratic_ring(tate_b),
+    quadratic_ring(tate_px), quadratic_ring(tate_py),
+    5, 1, {2: 1, 3: 2, 4: 1},
+    "same split-I5 adapter over GF(p^2) for residue-algebra handoff",
+)
+assert quadratic_toric["matrix"].rank() == 2
 assert balanced_marked_chord_power_basis(1) == (
     {"kind": "m_power", "m_power": 0, "x_power": 0, "chord_symbol": "m",
      "pole_order_at_O": 0, "pole_order_at_marked_section": 0},
@@ -805,4 +876,7 @@ assert overlay["base_kernel_dimension"] == 1
 assert overlay["overlay_rank_on_base_kernel"] == 1
 assert overlay["stacked_rank"] == 3 and overlay["stacked_kernel_dimension"] == 0
 
-print("ELLIPTICNEIGHBOR|ambient=4|conditions=2|rank=2|kernel=2|status=PASS")
+print(
+    "ELLIPTICNEIGHBOR|ambient=4|conditions=2|rank=2|kernel=2|"
+    "split_I5_toric_rank=2|finite_extension_rank=2|status=PASS"
+)

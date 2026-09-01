@@ -32296,8 +32296,8 @@
       "id": "EC-M2S-GERM",
       "kind": "theorem",
       "state": "proved",
-      "title": "The six-root Mestre two-section incidence germ is a smooth surface",
-      "scope": "At the labelled normalized seed (0,1,19/5,143/25,168/25,41/5) with affine abscissae x1=-95/23+37*T/23 and x2=583/115+13*T/23, the saturated two-section incidence germ is a single reduced smooth two-dimensional component.  On the open root chart edQ!=0 it is the exact surface M=H=0 with H=r3/(r3-r4+1)+r5+r6-r4-(r3-r5*r6)/(r3-r5-r6+1); the declared rational formulas for both affine lines make all six recursive section residuals vanish identically.  A nonzero exact seven-by-seven Jacobian minor makes x02,x12 local coordinates on the source, while the independent seven-by-eight incidence Jacobian has rank six.  Hence the whole localized incidence local ring is regular with completion Q[[u,v]], tangent cone A2, Hilbert--Samuel function h(n)=n+1, multiplicity one, one minimal prime, and no embedded prime or nilpotent thickening.  This does not prove a generic visible-section relation, independence of the two sections, split infinity, generic rank at least 14, a third section, or a conductor comparison.",
+      "title": "The six-root Mestre two-section germ is smooth with rational leading square",
+      "scope": "At the labelled normalized seed (0,1,19/5,143/25,168/25,41/5) with affine abscissae x1=-95/23+37*T/23 and x2=583/115+13*T/23, the saturated two-section incidence germ is a single reduced smooth two-dimensional component. On the open root chart edQ!=0 it is the exact surface M=H=0 with H=r3/(r3-r4+1)+r5+r6-r4-(r3-r5*r6)/(r3-r5-r6+1); both recursive section triples vanish identically, x02,x12 are etale local coordinates, and the local ring has completion Q[[u,v]], tangent cone A2, Hilbert--Samuel function h(n)=n+1, multiplicity one, one minimal prime, and no embedded prime or nilpotent thickening. The leading invariant is an exact rational square in the component function field, with w=-(D^2+B*D+E)/(A*D+C) and the displayed A,B,C,E in the canonical note. The recovered relation P2=P1+V(0,+)+V(r4,-)+V(r5,+)+V(r6,-) has exact determinant, nonzero-cofactor, and direct group-law checks on the irreducible degree-eight fibres (r3,r4)=(3,6),(3,7),(3,11) over F_17, and agrees with the known rational specialization controls. The direct characteristic-zero relation determinant was stopped before completion, so that relation is not promoted to a characteristic-zero theorem. The surface is nevertheless closed as an operational generic-rank-14 discovery route. No generic rank upper bound, saturation theorem, third-section theorem, normalization, or new conductor comparison is claimed.",
       "canonical_source": "elliptic-curves/notes/MESTRE_TWO_SECTION_INCIDENCE_GERM.md",
       "dependencies": [],
       "checker": "elliptic-curves/cas/verify_mestre_two_section_root_surface.sing",
@@ -32305,7 +32305,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:ccede915c59573c81dab7c4d16392702efe1054a2cbba0ea5fde45bd588e5017",
+      "artifact_hash": "sha256:b836f6d9aaa761695d6012479eb65aead09238b67dcaa1cca44487599cddb26c",
       "software_lock": [
         "elliptic-curves/cas/verify_mestre_two_section_root_surface.sing"
       ],

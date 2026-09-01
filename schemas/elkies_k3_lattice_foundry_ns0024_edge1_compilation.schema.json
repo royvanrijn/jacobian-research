@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "elkies_k3_lattice_foundry_ns0024_edge1_compilation.schema.json",
+  "title": "Exact modular NS0024 edge-1 resolved-RR compilation",
+  "type": "object",
+  "required": [
+    "schema",
+    "status",
+    "prime",
+    "parameters",
+    "source",
+    "edge",
+    "resolved_RR",
+    "quartic",
+    "child",
+    "inputs",
+    "proof_boundary",
+    "reproduce"
+  ],
+  "properties": {
+    "schema": {
+      "const": "elkies-k3.lattice-foundry-ns0024-edge1-compilation-modp.v1"
+    },
+    "status": {
+      "const": "PASS_EXACT_MODULAR_NS0024_EDGE1_RESOLVED_RR_AND_JACOBIAN"
+    },
+    "prime": {"type": "integer", "minimum": 11},
+    "extension": {
+      "type": ["object", "null"],
+      "description": "Constant-field extension inherited from the certified source input."
+    },
+    "parameters": {"type": "array", "maxItems": 1, "items": {"type": "string"}},
+    "resolved_RR": {
+      "type": "object",
+      "required": [
+        "ambient_basis",
+        "condition_matrix",
+        "condition_rank",
+        "kernel_dimension",
+        "h0",
+        "kernel_basis",
+        "toric_diagnostics",
+        "complete_resolved_chart_cover"
+      ],
+      "properties": {
+        "condition_rank": {"const": 2},
+        "kernel_dimension": {"const": 2},
+        "h0": {"const": 2},
+        "complete_resolved_chart_cover": {"const": true}
+      }
+    },
+    "quartic": {
+      "type": "object",
+      "required": ["degree", "coefficients_low_to_high", "certified_square_factor"],
+      "properties": {"degree": {"const": 4}}
+    },
+    "child": {
+      "type": "object",
+      "required": [
+        "root_type",
+        "root_rank",
+        "root_determinant",
+        "euler_number",
+        "lattice_predicted_mw_rank_for_rho_19"
+      ],
+      "properties": {
+        "root_type": {"const": "A1+A2+A4+D5"},
+        "root_rank": {"const": 12},
+        "root_determinant": {"const": 120},
+        "euler_number": {"const": 24},
+        "lattice_predicted_mw_rank_for_rho_19": {"const": 5}
+      }
+    }
+  },
+  "additionalProperties": true
+}

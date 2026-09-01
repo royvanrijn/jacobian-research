@@ -9,7 +9,7 @@ import subprocess
 from typing import Sequence
 
 from .elliptic import EllipticCurve, Point, point_complexity
-from .integer import canonical_unoriented, content
+from .integer import canonical_unoriented, content, rational_rank
 
 
 def gp_rational(value: int | str | Fraction) -> str:
@@ -109,6 +109,43 @@ print("END");
     return tuple(tuple(row) for row in oriented)
 
 
+def row_embedding_smith_invariant_factors(
+    rows: Sequence[Sequence[int]],
+) -> tuple[int, ...]:
+    """Return nonzero Smith factors of a full-row-rank embedding matrix.
+
+    A ``k x n`` matrix records the images of a basis of ``Z^k`` in
+    ``Z^n``.  Its image is primitive exactly when every returned factor is
+    one.  PARI's integer Smith form is exact; no Mordell--Weil saturation
+    assumption enters this calculation.
+    """
+
+    if not rows or not rows[0]:
+        raise ValueError("embedding matrix must be nonempty")
+    width = len(rows[0])
+    if any(len(row) != width for row in rows):
+        raise ValueError("embedding matrix rows have inconsistent widths")
+    if rational_rank(rows) != len(rows):
+        raise ValueError("embedding matrix is not full row rank")
+    lines = run_gp(f"print(matsnf({gp_matrix(rows)}));")
+    if len(lines) != 1 or not lines[0].startswith("["):
+        raise ArithmeticError("PARI did not return Smith invariants")
+    factors = tuple(
+        abs(int(value.strip()))
+        for value in lines[0].strip("[]").split(",")
+        if int(value.strip()) != 0
+    )
+    if len(factors) != len(rows):
+        raise ArithmeticError("embedding matrix Smith rank changed")
+    return factors
+
+
+def row_embedding_is_primitive(rows: Sequence[Sequence[int]]) -> bool:
+    """Certify that a rectangular row embedding has primitive image."""
+
+    return all(value == 1 for value in row_embedding_smith_invariant_factors(rows))
+
+
 def _parse_block(lines: Sequence[str], begin: str, end: str) -> list[str]:
     start = lines.index(begin) + 1
     stop = lines.index(end, start)
@@ -157,17 +194,7 @@ class ExactEmbedding:
         rows = self.rows()
         if not rows:
             return ()
-        lines = run_gp(f"print(matsnf({gp_matrix(rows)}));")
-        if len(lines) != 1 or not lines[0].startswith("["):
-            raise ArithmeticError("PARI did not return Smith invariants")
-        factors = tuple(
-            abs(int(value.strip()))
-            for value in lines[0].strip("[]").split(",")
-            if int(value.strip()) != 0
-        )
-        if len(factors) != len(self.columns):
-            raise ArithmeticError("embedding matrix is not full column rank")
-        return factors
+        return row_embedding_smith_invariant_factors(rows)
 
     def is_primitive(self) -> bool:
         return all(value == 1 for value in self.smith_invariant_factors())

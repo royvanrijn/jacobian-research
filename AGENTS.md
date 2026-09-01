@@ -22,6 +22,19 @@ changes narrow, reproducible, and explicit about what has actually been proved.
 - Generated results belong in `artifacts/generated-results/`, with their
   reproducing command documented.
 
+## Research approach
+
+- Always consider and, when practical, perform a literature search before
+  starting new mathematical work.
+- Review relevant prior work in the repository, including which approaches
+  succeeded or failed, before designing a new approach.
+- When a computation reaches time or memory limits, first seek algorithmic or
+  code improvements, sharper mathematical reductions, or alternative methods.
+  Use larger runs or expensive Gröbner-basis computations only with a clear
+  justification.
+- Additional tools may be installed when needed, but first check carefully
+  whether the required tool or capability is already available.
+
 ## Mathematical status
 
 - `MATH_STATUS.json` is the sole status authority. `STATUS.md` is generated;

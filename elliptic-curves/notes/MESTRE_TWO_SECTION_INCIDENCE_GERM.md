@@ -1,11 +1,13 @@
 # The six-root Mestre two-section incidence germ
 
-<!-- status-consumer: EC-M2S-GERM 536eee72664ba729 -->
+<!-- status-consumer: EC-M2S-GERM c7707c1e464f037b -->
 
-Status: exact characteristic-zero local-scheme and Mordell--Weil dependence
-theorem.  The germ is a smooth surface, but the two labelled sections give
-only one non-visible direction.  The germ is therefore closed as a possible
-generic-rank-14 route.
+Status: exact characteristic-zero local-scheme and leading-square theorem,
+with a pinned generic-dependence relation supported by exact modular
+function-field checks.  The direct characteristic-zero Riemann--Roch
+determinant was stopped before completion.  The germ is closed as a possible
+generic-rank-14 route, but the relation is not promoted here to a
+characteristic-zero theorem.
 
 ## 1. The labelled seed
 
@@ -224,12 +226,11 @@ nilpotent tangent excesses.  The selected pair is off the diagonal and is not
 hyperelliptically conjugate; scheme-theoretically it is one pairwise
 correspondence component in the pullback of the one-section cover.
 
-## 4. Generic Mordell--Weil dependence
+## 4. Mordell--Weil dependence classification
 
 Let \(V(r,\epsilon)\) denote the primitive visible point with abscissa
 \(r+\epsilon T\) and ordinate \(g(r+\epsilon T)/T\), where \(g\) is the monic
-square approximant.  Orient \(P_1,P_2\) by (2.5).  Over
-\(\mathbb Q(\mathcal S)(T)\), exact covariant arithmetic gives
+square approximant.  Orient \(P_1,P_2\) by (2.5).  The recovered relation is
 
 \[
 \boxed{
@@ -238,8 +239,9 @@ P_2=P_1+V(0,+)+V(r_4,-)+V(r_5,+)+V(r_6,-).
 \tag{4.1}
 \]
 
-The compact certificate uses Riemann--Roch instead of a large expanded
-addition chain.  For a Jacobian-projective point \((X:Y:Z)\), use the row
+The attempted compact characteristic-zero certificate uses Riemann--Roch
+instead of a large expanded addition chain.  For a Jacobian-projective point
+\((X:Y:Z)\), use the row
 
 \[
 (Z^6,\;XZ^4,\;YZ^3,\;X^2Z^2,\;XYZ,\;X^3),
@@ -253,21 +255,27 @@ of the six rows belonging to
 P_2,-P_1,-V(0,+),-V(r_4,-),-V(r_5,+),-V(r_6,-)
 \]
 
-has zero normal form modulo the characteristic-zero component ideal.  A
-five-by-five cofactor is nonzero on the generic component modulo 17, and the
-six points are generically distinct, so the determinant is a genuine
-degree-six divisor relation.  Abel's theorem gives (4.1).  Direct generic
-group-law checks on three irreducible degree-eight component fibres over
-\(\mathbb F_{17}\), at \((r_3,r_4)=(3,6),(3,7),(3,11)\), independently
-return the same relation.  Primes 17, 29, 31 and 37 also agree that (2.5)
-lies in the degree-four subfield of the labelled degree-eight root
+is exactly zero on three irreducible degree-eight component fibres over
+\(\mathbb F_{17}\), at \((r_3,r_4)=(3,6),(3,7),(3,11)\).  Direct
+short-Weierstrass addition independently returns (4.1) on all three fibres.
+At \((3,6)\), a five-by-five cofactor is nonzero, so this is a genuine
+degree-six divisor relation there.  Primes 17, 29, 31 and 37 also agree that
+(2.5) lies in the degree-four subfield of the labelled degree-eight root
 presentation.
 
-Thus this is outcome B: the local scheme is reduced and smooth, but its two
-sections are generically dependent modulo the visible Mestre subgroup.  It
-is neither a tangent intersection nor a nilpotent thickening.  Reversing the
-choice of \(w\) negates both \(P_1\) and \(P_2\) and changes the visible sum in
-(4.1) to its negative.
+The characteristic-zero determinant reduction was attempted both on the
+localized root chart and on the intrinsic degree-eight algebra.  Both runs
+were stopped during denominator-cleared covariant normal forms; neither
+returned a nonzero residual or a completed zero certificate.  Those scripts
+are archived as failed experiments.  Consequently (4.1) is the accepted
+classification and closes this discovery route, but its characteristic-zero
+generic proof remains the precise uncompleted certificate.
+
+Geometrically this is outcome B: the local scheme is reduced and smooth, and
+the labelled pair follows the visible-dependence pattern rather than adding a
+second direction.  It is neither a tangent intersection nor a nilpotent
+thickening.  Reversing the choice of \(w\) negates both \(P_1\) and \(P_2\)
+and changes the visible sum in (4.1) to its negative.
 
 ## 5. Consequences and boundary of the theorem
 
@@ -299,9 +307,9 @@ that control.
 
 Equation (2.5) concerns the leading square used by the affine cubic
 ordinates.  It does not by itself replace the usual split-infinity conic in
-the elliptic base parameter \(T\).  Since (4.1) rules out a second generic
-direction before that base change, imposing split infinity cannot turn this
-pair into a rank-14 construction.
+the elliptic base parameter \(T\).  Relation (4.1), the specialization
+controls, and the fixed-root exact relations are the basis for closing this
+pair as a rank-14 construction route.
 
 The normalization and birational type of the global projective closure of
 (2.4) remain uncomputed.  They are no longer an obstruction to classifying
@@ -315,13 +323,6 @@ The characteristic-zero component identity is:
 
 ```bash
 Singular -q elliptic-curves/cas/verify_mestre_two_section_root_surface.sing
-```
-
-The characteristic-zero visible-dependence determinant is:
-
-```bash
-Singular -q \
-  elliptic-curves/cas/verify_mestre_two_section_visible_relation_parameter.sing
 ```
 
 The two fully lucky modular repetitions are:

@@ -36,6 +36,29 @@ def canonical_unoriented(values: Sequence[int]) -> tuple[int, ...]:
     return coordinates
 
 
+def canonical_rational_unoriented(
+    values: Sequence[int | Fraction],
+) -> tuple[int, ...]:
+    """Return the primitive integer representative of a rational line.
+
+    This is the finite-index-aware counterpart of
+    :func:`canonical_unoriented`: denominators from a nonsaturated reference
+    subgroup are cleared exactly before content and orientation are removed.
+    The cleared denominator should be recorded separately when its saturation
+    class is part of the arithmetic metadata.
+    """
+
+    rational = tuple(Fraction(value) for value in values)
+    if not any(rational):
+        raise ValueError("the zero vector has no primitive representative")
+    denominator = 1
+    for value in rational:
+        denominator = lcm(denominator, value.denominator)
+    return canonical_unoriented(
+        tuple(int(value * denominator) for value in rational)
+    )
+
+
 def rational_rank(rows: Sequence[Sequence[int]]) -> int:
     """Compute row rank over Q by exact fraction-free-sized elimination."""
 
@@ -63,6 +86,43 @@ def rational_rank(rows: Sequence[Sequence[int]]) -> int:
             matrix[index] = [
                 value - multiplier * pivot_entry
                 for value, pivot_entry in zip(matrix[index], matrix[rank])
+            ]
+        rank += 1
+        if rank == len(matrix):
+            break
+    return rank
+
+
+def modular_rank(rows: Sequence[Sequence[int]], prime: int) -> int:
+    """Return exact row rank over ``F_prime`` for a prime modulus."""
+
+    prime = int(prime)
+    if prime < 2:
+        raise ValueError("modular rank needs a prime modulus")
+    matrix = [[int(value) % prime for value in row] for row in rows]
+    if not matrix:
+        return 0
+    width = len(matrix[0])
+    if any(len(row) != width for row in matrix):
+        raise ValueError("matrix rows have inconsistent widths")
+    rank = 0
+    for column in range(width):
+        pivot = next(
+            (index for index in range(rank, len(matrix)) if matrix[index][column]),
+            None,
+        )
+        if pivot is None:
+            continue
+        matrix[rank], matrix[pivot] = matrix[pivot], matrix[rank]
+        inverse = pow(matrix[rank][column], -1, prime)
+        matrix[rank] = [(value * inverse) % prime for value in matrix[rank]]
+        for index in range(len(matrix)):
+            if index == rank or not matrix[index][column]:
+                continue
+            multiplier = matrix[index][column]
+            matrix[index] = [
+                (value - multiplier * pivot_value) % prime
+                for value, pivot_value in zip(matrix[index], matrix[rank])
             ]
         rank += 1
         if rank == len(matrix):

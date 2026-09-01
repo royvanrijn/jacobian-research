@@ -102,6 +102,25 @@ PYTHONPATH=elliptic-curves:elliptic-curves/cas \
 PYTHONPATH=elliptic-curves:elliptic-curves/cas \
   python3 \
   elliptic-curves/cas/calibrate_latent_lattice_shape.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 \
+  elliptic-curves/cas/calibrate_latent_lattice_relation_consensus.py --check
+
+sage -python \
+  elliptic-curves/cas/calibrate_latent_lattice_hypergraph_matcher.sage --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 \
+  elliptic-curves/cas/calibrate_latent_lattice_metric_relation_search.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 \
+  elliptic-curves/cas/calibrate_latent_lattice_partial_replay.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas \
+  python3 \
+  elliptic-curves/cas/calibrate_latent_lattice_star_component.py --check
 ```
 
 The active `v2` artifact uses corrected unit/scaled relation semantics and
@@ -118,6 +137,32 @@ reaches only 11/12, 11/12, and 8/12 on the three Fermigier controls; finite
 profile matching leaves the rank-25 truth at rank 188.  Its status is
 `FAIL_FINITE_PROPOSAL_RECALL`, so it likewise leaves the target gate closed.
 
+The exact hypergraph validator recovers primitive rectangular `17 x r` maps
+when supervised ray injections are supplied, and full-cloud replay sees
+238--304 training-core rays in every R17 held-out fibre.  The blind bounded
+metric/relation search nevertheless reaches only 49 replayed rays against a
+100-ray gate on rank 25.  Its status is
+`FAIL_BLIND_R17_RECOVERY_GATE_CLOSED`; no wgxli curve is loaded.
+
+The proper-subspace replay calibrator saturates a supervised rank-16 R17
+relation path before lifting it.  Its exact lift replays 194 source rays and
+318 ternary relations and has primitive target image; the attached finite
+signature uses six disjoint good-reduction quotient blocks.  A separate
+400-audit oracle-center beam still loses this component and accepts no full
+embedding.  Its status is `PASS_EXACT_PARTIAL_REPLAY_SELECTOR_FAIL`, so the
+new invariant is a validator but not yet an authorized blind selector.  This
+command requires system `python3` with NumPy and PARI/GP; the repository
+`.venv` does not currently provide NumPy.
+
+The center-star component experiment assigns several incident ternary
+relations jointly and enforces exact mod-2/mod-3 rank compatibility before
+partial replay.  In its oracle-center rank-25 box, 4,152 finite-incompatible
+branches are rejected, but the best of 476 exact candidates intersects the
+rank-11 visible truth star in dimension only 9.  The more expensive pair/triple
+finite-matroid diagnostic gives the same result.  Its status is
+`FAIL_STAR_COMPONENT_RECALL_GATE_CLOSED`; it is a bounded proposal failure,
+not evidence against R17.
+
 The shape replay adds exact cross-bound rational intersections and primitive
 closure.  It tests the top 200 height-28 enclosures against the top 200
 height-29 enclosures on ICARM 245 and puts the true rank-12 Fermigier subgroup
@@ -127,6 +172,12 @@ symmetric leave-one-out selection succeeds on only one of four R17 fibres.
 Its status is `PASS_PROPOSAL_CALIBRATION_SELECTOR_FAIL`; target use remains
 forbidden.  The full `--check` regenerates the control clouds and can take
 several minutes.
+
+The relation-consensus replay is a supervised signal audit.  In each R17
+leave-one-out split, the exact coefficient rays supported by two training
+fibres and visible on the held-out fibre span rank 17.  This proves that a
+full-rank exact common-relation signal survives the numerical cutoffs; it does
+not recover the unknown integral alignments and is not a blind selector.
 
 Eliminate the section and surface coefficients from the literal five-fibre
 rootless-K3 ansatz, then exhaust every normalized projective first-jet chart

@@ -365,6 +365,7 @@ def main() -> None:
         r17["symmetric_leave_one_out_exact_selection_count"] == 4
         and fermigier["truth_rank"] == 0
     )
+    library_sources = tuple(sorted((ELLIPTIC / "latent_lattice").glob("*.py")))
     payload = {
         "schema": "elliptic-curves.latent-lattice-shape-calibration.v1",
         "status": (
@@ -422,6 +423,7 @@ def main() -> None:
                 DIMENSION_SCAN,
                 ELLIPTIC / "cas/icarm_curve245.py",
                 *(ELLIPTIC / "cas" / f"elkies_rank{rank}.py" for rank in range(25, 29)),
+                *library_sources,
                 Path(__file__).resolve(),
             )
         },

@@ -8,12 +8,17 @@ from latent_lattice import (
     ShortVectorRecord,
     aggregate_repeated_intersection_ledgers,
     build_relation_complex,
+    bounded_metric_relation_search,
+    bounded_metric_star_component_search,
     candidate_finite_signature,
+    candidate_relation_fingerprint,
     candidate_finite_signature_from_record,
     cloud_height_profile_distance,
     cloud_height_signature,
     cross_bound_intersection_proposals,
+    exact_partial_relation_replay,
     canonical_unoriented,
+    canonical_rational_unoriented,
     finite_quotient_block,
     finite_rarity_scores,
     finite_rarity_weights,
@@ -22,13 +27,20 @@ from latent_lattice import (
     hermite_signature_distance,
     intrinsic_shell_signature,
     intrinsic_shell_profile_distance,
+    joint_nearest_candidate_scores,
+    lift_relation_vertex_bijection,
+    lift_relation_vertex_injection,
+    modular_rank,
     relation_metric_profile_distance,
     relation_metric_signature,
     point_complexity,
+    partial_replay_finite_signature,
     primitive_column_closure,
     rational_nullspace,
     rational_rank,
     row_basis_coordinates,
+    row_embedding_is_primitive,
+    row_embedding_smith_invariant_factors,
     recover_exact_embedding,
     repeated_cross_bound_intersection_ledger,
     theta_profile_distance,
@@ -51,6 +63,10 @@ class LatentLatticeTests(unittest.TestCase):
         self.assertEqual(canonical_unoriented((2, -4, 0)), (1, -2, 0))
         with self.assertRaises(ValueError):
             canonical_unoriented((0, 0))
+        self.assertEqual(
+            canonical_rational_unoriented((Fraction(1, 2), Fraction(-3, 4))),
+            (2, -3),
+        )
 
     def test_exact_rank(self) -> None:
         self.assertEqual(rational_rank(((1, 2, 3), (2, 4, 6), (0, 1, 0))), 2)
@@ -65,6 +81,8 @@ class LatentLatticeTests(unittest.TestCase):
         self.assertEqual(coordinates, ((3, 2), (-1, 3)))
         with self.assertRaises(ValueError):
             row_basis_coordinates(((1, 0),), ((2, 0),))
+        self.assertEqual(modular_rank(((1, 0), (0, 2)), 2), 1)
+        self.assertEqual(modular_rank(((1, 0), (0, 2)), 3), 2)
 
     def test_general_weierstrass_group_law(self) -> None:
         curve = EllipticCurve((0, 0, 0, -1, 0))
@@ -90,6 +108,166 @@ class LatentLatticeTests(unittest.TestCase):
         )
         self.assertEqual(first.canonical_digest, transformed.canonical_digest)
         self.assertEqual(first.wl_profile(), transformed.wl_profile())
+        target_index = {vector: index for index, vector in enumerate(transformed.vertices)}
+        vertex_map = tuple(
+            target_index[canonical_unoriented((x + 2 * y, x + y))]
+            for x, y in first.vertices
+        )
+        lifts = lift_relation_vertex_bijection(first, transformed, vertex_map)
+        self.assertIn(((1, 1), (2, 1)), lifts)
+        self.assertIn(((-1, -1), (-2, -1)), lifts)
+        larger = build_relation_complex(transformed.vertices + ((2, 1),))
+        larger_index = {vector: index for index, vector in enumerate(larger.vertices)}
+        injection = tuple(
+            larger_index[canonical_unoriented((x + 2 * y, x + y))]
+            for x, y in first.vertices
+        )
+        injected_lifts = lift_relation_vertex_injection(first, larger, injection)
+        self.assertIn(((1, 1), (2, 1)), injected_lifts)
+
+        rectangular = build_relation_complex(
+            tuple((x + 2 * y, x + y, x - y) for x, y in first.vertices)
+            + ((0, 0, 1),)
+        )
+        rectangular_index = {
+            vector: index for index, vector in enumerate(rectangular.vertices)
+        }
+        rectangular_map = tuple(
+            rectangular_index[
+                canonical_unoriented((x + 2 * y, x + y, x - y))
+            ]
+            for x, y in first.vertices
+        )
+        rectangular_lifts = lift_relation_vertex_injection(
+            first, rectangular, rectangular_map
+        )
+        expected_rectangular = ((1, 1, 1), (2, 1, -1))
+        self.assertIn(expected_rectangular, rectangular_lifts)
+        self.assertEqual(
+            row_embedding_smith_invariant_factors(expected_rectangular), (1, 1)
+        )
+        self.assertTrue(row_embedding_is_primitive(expected_rectangular))
+        self.assertFalse(row_embedding_is_primitive(((2, 0, 0), (0, 1, 0))))
+
+        # A rank-one mapped component is saturated and replayed without an
+        # arbitrary completion to the rank-two source ambient lattice.
+        partial_map = [-1] * len(first.vertices)
+        for source_index, vector in enumerate(first.vertices):
+            if vector[1] == 0:
+                partial_map[source_index] = rectangular_index[
+                    canonical_unoriented((vector[0], vector[0], vector[0]))
+                ]
+        partial = exact_partial_relation_replay(first, rectangular, partial_map)
+        self.assertTrue(partial)
+        self.assertEqual(partial[0].source_rank, 1)
+        self.assertEqual(partial[0].source_subspace_ray_count, 1)
+        self.assertEqual(len(partial[0].integral_matrix), 1)
+        self.assertEqual(partial[0].replayed_source_rank, 1)
+        self.assertTrue(partial[0].primitive_target_image)
+        finite_signature = partial_replay_finite_signature(
+            partial[0], rectangular
+        )
+        self.assertEqual(finite_signature.candidate_dimension, 1)
+        self.assertEqual(finite_signature.retained_ray_count, 1)
+
+        metric_search = bounded_metric_relation_search(
+            first,
+            rectangular,
+            ((1.0, 0.0), (0.0, 1.0)),
+            ((1.0, 0.0, 0.0), (0.0, 1.0, 0.0), (0.0, 0.0, 3.0)),
+            source_center_limit=4,
+            target_center_limit=7,
+            seed_edges_per_center=4,
+            beam_width=100,
+            maximum_steps=10,
+            norm_log_tolerance=3.0,
+            angle_tolerance=1.0,
+            angle_hard_tolerance=1.0,
+        )
+        self.assertTrue(metric_search.embeddings)
+        self.assertGreaterEqual(
+            metric_search.embeddings[0].global_replay_ray_count, 3
+        )
+        self.assertEqual(metric_search.embeddings[0].global_replay_source_rank, 2)
+        self.assertTrue(
+            any(
+                row_embedding_is_primitive(matrix)
+                for embedding in metric_search.embeddings
+                for matrix in embedding.integral_matrices
+            )
+        )
+
+        rank_three = build_relation_complex(
+            ((1, 0, 0), (0, 1, 0), (1, 1, 0), (0, 0, 1), (1, 0, 1))
+        )
+        rank_four = build_relation_complex(
+            tuple((*vector, 0) for vector in rank_three.vertices)
+            + ((0, 0, 0, 1),)
+        )
+        source_center = rank_three.vertices.index((1, 0, 0))
+        target_center = rank_four.vertices.index((1, 0, 0, 0))
+        star = bounded_metric_star_component_search(
+            rank_three,
+            rank_four,
+            ((1.0, 0.0, 0.0), (0.0, 1.0, 0.0), (0.0, 0.0, 1.0)),
+            (
+                (1.0, 0.0, 0.0, 0.0),
+                (0.0, 1.0, 0.0, 0.0),
+                (0.0, 0.0, 1.0, 0.0),
+                (0.0, 0.0, 0.0, 2.0),
+            ),
+            source_center_indices=(source_center,),
+            target_center_indices=(target_center,),
+            source_edge_limit=2,
+            beam_width=64,
+            maximum_partial_replay_attempts=16,
+            minimum_partial_replay_rank=2,
+            partial_replay_candidate_limit=16,
+            minimum_partial_replay_rays=3,
+            norm_log_tolerance=1.0,
+            angle_tolerance=1.0,
+            angle_hard_tolerance=1.0,
+        )
+        self.assertTrue(star.candidates)
+        self.assertGreaterEqual(star.maximum_partial_replay_ray_count, 3)
+        self.assertTrue(star.candidates[0].replay.primitive_target_image)
+
+        fingerprint_vectors = first.vertices
+        fingerprint_heights = (1.0, 1.3, 2.1, 2.8)
+        fingerprint_arithmetic = tuple(
+            {"integral": index % 2 == 0, "total_bits": 10 + index}
+            for index in range(4)
+        )
+        fingerprint = candidate_relation_fingerprint(
+            fingerprint_vectors,
+            fingerprint_heights,
+            fingerprint_arithmetic,
+            range(4),
+            first,
+            dimension=2,
+            quantiles=4,
+            projective_multiplicities=4,
+        )
+        transformed_vectors = tuple(
+            canonical_unoriented((x + 2 * y, x + y))
+            for x, y in fingerprint_vectors
+        )
+        transformed_fingerprint = candidate_relation_fingerprint(
+            transformed_vectors,
+            fingerprint_heights,
+            fingerprint_arithmetic,
+            range(4),
+            build_relation_complex(transformed_vectors),
+            dimension=2,
+            quantiles=4,
+            projective_multiplicities=4,
+        )
+        self.assertEqual(fingerprint, transformed_fingerprint)
+        joint = joint_nearest_candidate_scores(
+            ((fingerprint,), (transformed_fingerprint,))
+        )
+        self.assertEqual(float(joint[0][0].mean_distance), 0.0)
+        self.assertEqual(joint[0][0].mutual_neighbour_count, 1)
 
     def test_general_finite_quotient_code_is_a_homomorphism(self) -> None:
         curve = EllipticCurve((0, 0, 0, -1, 1))
