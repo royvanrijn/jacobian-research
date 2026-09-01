@@ -25,7 +25,7 @@ from pathlib import Path
 sys.set_int_max_str_digits(0)
 ROOT = Path(__file__).resolve().parents[2]
 RESULTS = ROOT / "artifacts/generated-results"
-PRIMES = (19, 61, 67, 83, 89, 103, 131)
+BASE_PRIMES = (19, 61, 67, 83, 89, 103, 131)
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument(
@@ -36,7 +36,7 @@ parser.add_argument(
     "--operands", type=Path,
     default=RESULTS / "q80-third-q12-um2-biquadratic-closure-operands-p19-hensel-qq.json",
 )
-for prime in PRIMES:
+for prime in BASE_PRIMES:
     infix = "common-" if prime == 19 else ""
     parser.add_argument(
         f"--p{prime}", type=Path,
@@ -46,12 +46,28 @@ parser.add_argument(
     "--output", type=Path,
     default=RESULTS / "q80-third-q12-um2-exact-quadratic-pencils-aligned.json",
 )
+parser.add_argument(
+    "--extra-prime",
+    action="append",
+    nargs=2,
+    metavar=("PRIME", "RESOLVED_PENCIL"),
+    default=[],
+    help="append an independently compiled inert good prime",
+)
 parser.add_argument("--check", action="store_true")
 args = parser.parse_args()
 args.exact_pencil = args.exact_pencil.resolve()
 args.operands = args.operands.resolve()
 args.output = args.output.resolve()
-local_paths = {prime: getattr(args, f"p{prime}").resolve() for prime in PRIMES}
+extra_paths = {}
+for prime_text, path_text in args.extra_prime:
+    prime = int(prime_text)
+    if prime in BASE_PRIMES or prime in extra_paths:
+        raise ValueError(f"duplicate extra prime {prime}")
+    extra_paths[prime] = Path(path_text).resolve()
+PRIMES = BASE_PRIMES + tuple(sorted(extra_paths))
+local_paths = {prime: getattr(args, f"p{prime}").resolve() for prime in BASE_PRIMES}
+local_paths.update(extra_paths)
 
 
 def sha256(path):
@@ -442,7 +458,7 @@ output = {
     "claim_boundary": {
         "proved": [
             "the exact 63-term connected pencil descends from QQ(a,b) to QQ(a*b)",
-            "the same global quadratic field remains inert at all seven collected primes",
+            f"the same global quadratic field remains inert at all {len(PRIMES)} collected primes",
             "a unique signed local generator scale is fixed at every prime by literal coefficient replay",
             "a base-PGL2 gauge induced on quadratic V coefficients aligns every local pencil with the exact pencil",
         ],
@@ -459,7 +475,20 @@ output = {
             "--exact-pencil", str(args.exact_pencil.relative_to(ROOT)),
             "--operands", str(args.operands.relative_to(ROOT)),
         ]
-        + [item for prime in PRIMES for item in (f"--p{prime}", str(local_paths[prime].relative_to(ROOT)))]
+        + [
+            item
+            for prime in BASE_PRIMES
+            for item in (f"--p{prime}", str(local_paths[prime].relative_to(ROOT)))
+        ]
+        + [
+            item
+            for prime in sorted(extra_paths)
+            for item in (
+                "--extra-prime",
+                str(prime),
+                str(local_paths[prime].relative_to(ROOT)),
+            )
+        ]
         + ["--output", str(args.output.relative_to(ROOT))]
     ),
 }
@@ -471,7 +500,7 @@ else:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(serialized)
 print(
-    "Q80THIRDQ12QUADRATICALIGN|field=QQ(ab)|omega=4ab|primes=19,61,67,83,89,103,131|"
-    "coefficients=63x7|local_generators=unique|base_gauges=PGL2|"
+    f"Q80THIRDQ12QUADRATICALIGN|field=QQ(ab)|omega=4ab|primes={','.join(map(str, PRIMES))}|"
+    f"coefficients=63x{len(PRIMES)}|local_generators=unique|base_gauges=PGL2|"
     "status=PASS_EXACT_QQ_THIRD_Q12_QUADRATIC_PENCIL_DESCENT_AND_LOCAL_ALIGNMENT"
 )

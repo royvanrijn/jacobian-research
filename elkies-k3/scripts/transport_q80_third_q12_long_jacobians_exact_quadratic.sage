@@ -12,14 +12,14 @@ from sage.all import GF, PolynomialRing
 
 ROOT = Path(__file__).resolve().parents[2]
 RESULTS = ROOT / "artifacts/generated-results"
-PRIMES = (19, 61, 67, 83, 89, 103, 131)
+BASE_PRIMES = (19, 61, 67, 83, 89, 103, 131)
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument(
     "--alignment", type=Path,
     default=RESULTS / "q80-third-q12-um2-exact-quadratic-pencils-p19-legacy-aligned.json",
 )
-for prime in PRIMES:
+for prime in BASE_PRIMES:
     parser.add_argument(
         f"--p{prime}", type=Path,
         default=RESULTS / f"q80-third-q12-p{prime}-jacobian-interpolated.json",
@@ -28,11 +28,27 @@ parser.add_argument(
     "--output", type=Path,
     default=RESULTS / "q80-third-q12-long-jacobians-exact-quadratic-gauge.json",
 )
+parser.add_argument(
+    "--extra-prime",
+    action="append",
+    nargs=2,
+    metavar=("PRIME", "JACOBIAN"),
+    default=[],
+    help="append a Jacobian whose pencil occurs in the supplied alignment",
+)
 parser.add_argument("--check", action="store_true")
 args = parser.parse_args()
 args.alignment = args.alignment.resolve()
 args.output = args.output.resolve()
-paths = {prime: getattr(args, f"p{prime}").resolve() for prime in PRIMES}
+extra_paths = {}
+for prime_text, path_text in args.extra_prime:
+    prime = int(prime_text)
+    if prime in BASE_PRIMES or prime in extra_paths:
+        raise ValueError(f"duplicate extra prime {prime}")
+    extra_paths[prime] = Path(path_text).resolve()
+PRIMES = BASE_PRIMES + tuple(sorted(extra_paths))
+paths = {prime: getattr(args, f"p{prime}").resolve() for prime in BASE_PRIMES}
+paths.update(extra_paths)
 
 
 def sha256(path):
@@ -219,7 +235,7 @@ output = {
     },
     "claim_boundary": {
         "proved": [
-            "seven independently computed generic long Jacobians transported to one exact base coordinate",
+            f"{len(PRIMES)} independently computed generic long Jacobians transported to one exact base coordinate",
             "all coefficients expressed in reductions of the one exact quadratic basis (1,omega)",
             "common rational-function degree shapes and literal discriminant/j replay",
         ],
@@ -228,9 +244,29 @@ output = {
             "CRT/LLL reconstruction or a characteristic-zero Jacobian equation",
         ],
     },
-    "reproduce": (
-        "sage -python "
-        "elkies-k3/scripts/transport_q80_third_q12_long_jacobians_exact_quadratic.sage"
+    "reproduce": " ".join(
+        [
+            "sage",
+            "-python",
+            "elkies-k3/scripts/transport_q80_third_q12_long_jacobians_exact_quadratic.sage",
+            "--alignment",
+            str(args.alignment.relative_to(ROOT)),
+        ]
+        + [
+            item
+            for prime in BASE_PRIMES
+            for item in (f"--p{prime}", str(paths[prime].relative_to(ROOT)))
+        ]
+        + [
+            item
+            for prime in sorted(extra_paths)
+            for item in (
+                "--extra-prime",
+                str(prime),
+                str(paths[prime].relative_to(ROOT)),
+            )
+        ]
+        + ["--output", str(args.output.relative_to(ROOT))]
     ),
 }
 serialized = json.dumps(output, indent=2, sort_keys=True) + "\n"
@@ -242,6 +278,6 @@ else:
     args.output.write_text(serialized)
 print(
     "Q80THIRDQ12LONGTRANSPORT|field=QQ(omega)|base=V_exact|"
-    "primes=19,61,67,83,89,103,131|invariants=Delta,j|"
+    f"primes={','.join(map(str, PRIMES))}|invariants=Delta,j|"
     "status=PASS_EXACT_TRANSPORTED_THIRD_Q12_LONG_JACOBIANS_COMMON_QUADRATIC_GAUGE"
 )

@@ -398,6 +398,62 @@ characteristic-zero Jacobian theorem.  The active order is
 `j -> (c4^3,Delta) -> minimal Jacobian -> maps`; the common invariant scaling
 must be separated from base `PGL2` gauge and Weierstrass scaling.
 
+The independent eighth-prime replay is now complete at `p=163`.  The
+horizontal, resolved pencil, genus-one gate, 72-sample Jacobian batch, generic
+interpolation, quadratic-field alignment, and long-model transport were all
+produced before reducing the candidate.  The alignment and transport workers
+accept repeatable `--extra-prime PRIME PATH` arguments, avoiding a second
+implementation.  In the legacy p=19 base gauge, replay with:
+
+```bash
+sage -python elkies-k3/scripts/certify_q80_fixed_u_marked_third_q12.sage \
+  --u=-2 --prime 163 --prime-audit-only \
+  --output artifacts/generated-results/q80-fixed-u-minus2-p163-good-reduction.json
+sage -python elkies-k3/scripts/produce_q80_third_q12_polynomial_closure_modp.sage \
+  --surface artifacts/generated-results/q80-fixed-u-minus2-p163-good-reduction.json \
+  --system artifacts/local/elkies-k3/q80-third-q12-um2-p163-polynomial-closure.ms \
+  --output artifacts/generated-results/q80-third-q12-um2-p163-polynomial-closure-scheme.json
+msolve -t 16 \
+  -f artifacts/local/elkies-k3/q80-third-q12-um2-p163-polynomial-closure.ms \
+  -o artifacts/local/elkies-k3/q80-third-q12-um2-p163-polynomial-closure.solve
+sage -python elkies-k3/scripts/certify_q80_third_q12_polynomial_closure_rur_modp.sage \
+  --surface artifacts/generated-results/q80-fixed-u-minus2-p163-good-reduction.json \
+  --scheme artifacts/generated-results/q80-third-q12-um2-p163-polynomial-closure-scheme.json \
+  --solution artifacts/local/elkies-k3/q80-third-q12-um2-p163-polynomial-closure.solve \
+  --output artifacts/generated-results/q80-third-q12-um2-p163-common-producer-horizontal.json
+sage -python elkies-k3/scripts/compile_q80_third_q12_resolved_pencil_modp2.py \
+  --surface artifacts/generated-results/q80-fixed-u-minus2-p163-good-reduction.json \
+  --horizontal artifacts/generated-results/q80-third-q12-um2-p163-common-producer-horizontal.json \
+  --output artifacts/generated-results/q80-third-q12-um2-p163-resolved-pencil.json
+sage -python elkies-k3/scripts/verify_q80_third_q12_resolved_genus_modp2.sage \
+  --input artifacts/generated-results/q80-third-q12-um2-p163-resolved-pencil.json \
+  --output artifacts/generated-results/q80-third-q12-um2-p163-resolved-genus.json
+python3 elkies-k3/scripts/batch_q80_third_q12_weierstrass_modp2.py \
+  --input artifacts/generated-results/q80-third-q12-um2-p163-resolved-pencil.json \
+  --attempts 72 --workers 4 \
+  --sample-dir artifacts/local/elkies-k3/q80-third-q12-p163-weierstrass-samples \
+  --output artifacts/generated-results/q80-third-q12-p163-weierstrass-sample-batch.json
+sage -python elkies-k3/scripts/interpolate_q80_third_q12_jacobian_modp2.py \
+  --input artifacts/generated-results/q80-third-q12-p163-weierstrass-sample-batch.json \
+  --output artifacts/generated-results/q80-third-q12-p163-jacobian-interpolated.json
+python3 elkies-k3/scripts/align_q80_third_q12_exact_quadratic_pencil_primes.py \
+  --p19 artifacts/generated-results/q80-third-q12-um2-p19-resolved-pencil.json \
+  --extra-prime 163 artifacts/generated-results/q80-third-q12-um2-p163-resolved-pencil.json \
+  --output artifacts/generated-results/q80-third-q12-um2-exact-quadratic-pencils-p19-legacy-aligned-p163-heldout.json
+sage -python elkies-k3/scripts/transport_q80_third_q12_long_jacobians_exact_quadratic.sage \
+  --alignment artifacts/generated-results/q80-third-q12-um2-exact-quadratic-pencils-p19-legacy-aligned-p163-heldout.json \
+  --extra-prime 163 artifacts/generated-results/q80-third-q12-p163-jacobian-interpolated.json \
+  --output artifacts/generated-results/q80-third-q12-long-jacobians-exact-quadratic-gauge-p163-heldout.json
+python3 elkies-k3/scripts/certify_q80_third_q12_j_map_p163_heldout.py
+```
+
+The last command returns
+`FAIL_Q80_THIRD_Q12_J_MAP_BLIND_P163_REPLAY`: all 25 numerator pairs and 24
+of 25 denominator pairs mismatch.  This rejects, rather than merely weakens,
+the p19-adic/auxiliary-prime candidate.  The final rootless Q80 endpoint
+`j`-map remains a separate open construction prerequisite for the E29 and
+ICARM 398--400 historical-recognition test.
+
 The long-equation worker remains useful after the invariant gate.  It too
 produces only a candidate until literal characteristic-zero replay in the
 63-term pencil.  Coefficientwise rational reconstruction remains

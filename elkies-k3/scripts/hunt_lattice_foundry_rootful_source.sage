@@ -349,6 +349,14 @@ parser.add_argument(
     action="store_true",
     help="continue improving root count after the requested rank is first reached",
 )
+parser.add_argument(
+    "--allow-below-target",
+    action="store_true",
+    help=(
+        "emit the exact best source reached by the bounded search even when its "
+        "root rank is below --target-root-rank; this changes no completeness claim"
+    ),
+)
 parser.add_argument("--check", action="store_true")
 arguments = parser.parse_args()
 
@@ -370,8 +378,10 @@ assert root_rank_and_count(target) == (0, 0)
 
 random.seed(arguments.seed)
 set_random_seed(arguments.seed)
-primes = [ZZ(value) for value in arguments.primes.split(",")]
-assert all(determinant % prime for prime in primes)
+requested_primes = [ZZ(value) for value in arguments.primes.split(",")]
+primes = [prime for prime in requested_primes if determinant % prime]
+if not primes:
+    raise ValueError("every requested p-neighbour prime divides the determinant")
 
 start_form = form_from_gram(target)
 frontier = [
@@ -479,7 +489,10 @@ for generation in range(1, arguments.generations + 1):
     ):
         break
 
-if best["root_rank"] < arguments.target_root_rank:
+if (
+    best["root_rank"] < arguments.target_root_rank
+    and not arguments.allow_below_target
+):
     raise RuntimeError(
         f"bounded source hunt reached root rank {best['root_rank']}, below target "
         f"{arguments.target_root_rank}"
@@ -532,6 +545,10 @@ payload = {
         "samples_per_parent": arguments.samples_per_parent,
         "primes": list(map(int, primes)),
         "target_root_rank": arguments.target_root_rank,
+        "target_root_rank_reached": (
+            best["root_rank"] >= arguments.target_root_rank
+        ),
+        "allow_below_target": arguments.allow_below_target,
         "visited_reduced_keys": len(seen),
         "generation_accounting": generation_accounting,
     },

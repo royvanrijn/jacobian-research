@@ -158,6 +158,25 @@ recurs in four fibres, the precommitted gate stops before component matching.
 This is a bounded negative result for that frozen selector, not a
 nonexistence theorem for a common subgroup.
 
+Freeze and check the unchanged secondary E29 plus ICARM 398--400 audit:
+
+```sh
+python3 elliptic-curves/cas/freeze_latent_lattice_secondary_method.py --check
+
+python3 elliptic-curves/cas/finalize_latent_lattice_secondary_audit.py --check
+```
+
+The complete execution first ran
+`run_frozen_secondary_latent_lattice.py`: E29 completed and ICARM 398 hit the
+unchanged 600-second resource limit.  Curves 399 and 400 were then run in
+isolated invocations of that same adapter so the resource failure could not
+suppress their audits; no search parameter or resource limit changed.  The
+consolidated status is
+`FAIL_FROZEN_SECONDARY_GATE_RESOURCE_AND_DIMENSION`, with selected outcomes
+`FAIL, FAIL, 12, 16`.  See
+[`LATENT_LATTICE_REVERSE_ENGINEERING_REPORT.md`](notes/LATENT_LATTICE_REVERSE_ENGINEERING_REPORT.md)
+for the exact/heuristic boundary and the decision to park the project.
+
 The proper-subspace replay calibrator saturates a supervised rank-16 R17
 relation path before lifting it.  Its exact lift replays 194 source rays and
 318 ternary relations and has primitive target image; the attached finite

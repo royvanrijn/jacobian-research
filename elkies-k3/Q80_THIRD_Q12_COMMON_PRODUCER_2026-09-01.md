@@ -599,3 +599,35 @@ boundaries 4,131 and 4,238.  All auxiliary primes were therefore consumed by
 CRT; a new eighth aligned good prime is mandatory before promotion.  The
 candidate artifact remains explicitly non-theorem status until that replay
 or literal exact-pencil substitution succeeds.
+
+### Blind eighth-prime rejection
+
+The required clean replay was carried out at the next selected inert good
+prime `p=163`.  The common producer was run before the characteristic-zero
+candidate was reduced: the third-q12 horizontal, two-dimensional resolved
+pencil, genus-one test, 72 finite Jacobian samples, generic interpolation,
+exact quadratic-field alignment, and legacy base-gauge transport all pass.
+The final independent inputs are pinned by
+
+```text
+resolved pencil: 11cb2c5493d814023e2697ded83db5fec15d34a02a11601ae0e053fad569ab67
+interpolated Jacobian: 2d86b70cbad4537d1121f0308ac5faf5cbc8ea8a1635c504ee93fcdfcea73131
+eight-prime alignment: 90f409015757a6ebca8214ca16cad28caa6879c1cdbc6b602db171776ba01751
+eight-prime transport: f5acf0aeca875e4717bad8fc76b5b20eb00f299f9f8063b7c602c7c0df1e8c48
+```
+
+Only after those files existed was the candidate reduced modulo `163`.  It
+fails literally in the pinned exact gauge: all 25 numerator coefficient
+pairs and 24 of 25 denominator coefficient pairs differ.  The rejection
+certificate is
+`q80-third-q12-j-map-p163-heldout-replay.json`, SHA-256
+`39c4164125e7238a57803e91d24d34fade0ad465417d5084c126ea9608a4a507`.
+Thus `q80-third-q12-j-map-p19-adic-reconstructed-qq.json` is rejected; its
+one-bit-below-random LLL vectors were spurious, and it must not be promoted by
+characteristic-zero substitution.
+
+This `j`-map belongs to the intermediate `A5+A3+3A1/MW6` fibration.  The
+rank-29 and ICARM 398--400 recognition gate is defined for the final rootless
+Q80 endpoint.  Comparing those curves with this intermediate map would test
+the wrong fibration and is not a substitute for constructing the endpoint
+`j`-map.

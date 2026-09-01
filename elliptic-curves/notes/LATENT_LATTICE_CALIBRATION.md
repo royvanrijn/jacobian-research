@@ -2,6 +2,26 @@
 
 ## Outcome
 
+The concise method and target closeout is
+[`LATENT_LATTICE_REVERSE_ENGINEERING_REPORT.md`](LATENT_LATTICE_REVERSE_ENGINEERING_REPORT.md).
+After a second independently frozen failure on E29 and ICARM 398--400, this
+research line is parked pending new record fibres.  The control technique is
+retained; neither target failure is promoted to a subgroup nonexistence
+theorem.
+
+### Frozen E29 and ICARM 398--400 run (2026-09-01)
+
+The unchanged secondary tag is
+`LATENT-LATTICE-E29-398-400-FROZEN-2026-09-01-v1`, with manifest hash
+`8795cdd203ba1c698e0f0534c14a45a91c37a6f4d405e795a9f2f295f86bfcba`.
+E29 failed closed because dimensions 19 and 20 were absent from at least one
+persistence cutoff.  ICARM 398 hit the unchanged 600-second PARI resource
+bound at the first height candidate.  Independent invocations selected 12 on
+ICARM 399 and 16 on ICARM 400.  Hence the required four-of-four recurrence
+failed and all component and later stages remained gated off.  The consolidated
+artifact hash is
+`e89f6156a22f7a5b762e6c525db7b95b4d625ac1a96d712ca8f4053aa05f62cb`.
+
 ### Frozen wgxli run (2026-09-01)
 
 The user subsequently authorized one cautious target run after an immutable
@@ -38,15 +58,13 @@ dimension `10..20`.  The two failed fibres reflect proposal omissions inside
 the fixed beam.  The values 10 and 13 are statistical selector outputs, not
 proved generic ranks.
 
-The current bounded Phase-0 control gate passes.  Exact graph-walk consensus
+The bounded Phase-0 graph-walk and dimension controls pass.  Exact graph-walk consensus
 recovers the five fixed-dimension control spaces, and the cross-dimension
 persistence audit described below changes the Fermigier estimate from 13 to
 12 at both independent height bounds.  A separate center-free component
 calibration also recovers the exact primitive rank-16 R17 component in the
-rank-25 control and completes it to rank 17.  By the explicit method-only
-scope of this run, the method was **not** applied to
-ICARM 351, 356, 376, 377, or 385, and it produces no candidate generic lattice
-or target embedding.
+rank-25 control and completes it to rank 17.  The two later target applications
+described above produce no candidate generic lattice or target embedding.
 
 The earlier failed selectors remain bounded negative results, not
 nonexistence results for a common wgxli lattice.  The new control pass also
