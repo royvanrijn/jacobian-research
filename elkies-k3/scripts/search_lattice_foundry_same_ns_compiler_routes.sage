@@ -21,7 +21,8 @@ exact while leaving repaired presentations to a later widening.
 
 The beam pruning makes graph coverage bounded; a miss is not an obstruction.
 Every emitted route nevertheless retains exact unimodular transports and an
-integral isometry from its rootless terminal frame to the requested target.
+integral isometry from its terminal frame to the requested target of the same
+root rank.
 """
 
 from __future__ import annotations
@@ -84,6 +85,16 @@ K314AD_SOURCES = (
     / "artifacts/generated-results/"
     "elkies-k3-k3-14ad03cd7c1848b2-semistable-mw0-2-sources-large-a-partner1-v1.json"
 )
+K3CF7F_TARGET = (
+    ROOT
+    / "artifacts/generated-results/"
+    "elkies-k3-k3-cf7f6c91a3a40d32-source-search-target-partner2-lattice-only-v1.json"
+)
+K3CF7F_SOURCES = (
+    ROOT
+    / "artifacts/generated-results/"
+    "elkies-k3-k3-cf7f6c91a3a40d32-semistable-mw0-2-sources-large-a-partner2-v1.json"
+)
 
 
 CASE_DATA = {
@@ -139,6 +150,14 @@ CASE_DATA = {
         "target_artifact": K314AD_TARGET,
         "default_output": ROOT
         / "artifacts/generated-results/elkies-k3-k3-14ad03cd7c1848b2-same-ns-compiler-routes-v1.json",
+    },
+    "k3cf7f": {
+        "source_artifact": K3CF7F_SOURCES,
+        "source_id": "K3-cf7f6c91a3a40d32-S0223",
+        "target_ids": ("K3-cf7f6c91a3a40d32-F001",),
+        "target_artifact": K3CF7F_TARGET,
+        "default_output": ROOT
+        / "artifacts/generated-results/elkies-k3-k3-cf7f6c91a3a40d32-same-ns-compiler-routes-v1.json",
     },
 }
 
@@ -313,19 +332,32 @@ def load_case(case_name):
     if config.get("target_artifact") is not None:
         target_payload = json.loads(config["target_artifact"].read_text())
         target_row = target_payload["frame"]
-        targets = {target_row["frame_id"]: matrix(ZZ, target_row["gram"])}
+        targets = {
+            target_row["frame_id"]: {
+                "frame": matrix(ZZ, target_row["gram"]),
+                "root_rank": int(target_row["root_rank"]),
+            }
+        }
         target_inputs = {
             relative(config["target_artifact"]): digest(config["target_artifact"])
         }
     elif case_name == "golay720":
         target_payload = json.loads(GOLAY_TARGET.read_text())
-        targets = {"G720-F001": matrix(ZZ, target_payload["frame"]["gram"])}
+        targets = {
+            "G720-F001": {
+                "frame": matrix(ZZ, target_payload["frame"]["gram"]),
+                "root_rank": int(target_payload["frame"].get("root_rank", 0)),
+            }
+        }
         target_inputs = {relative(GOLAY_TARGET): digest(GOLAY_TARGET)}
     else:
         foundry = json.loads(FOUNDRY.read_text())
         ns = next(row for row in foundry["ns_classes"] if row["ns_id"] == "NS0031")
         targets = {
-            row["frame_id"]: matrix(ZZ, row["gram"])
+            row["frame_id"]: {
+                "frame": matrix(ZZ, row["gram"]),
+                "root_rank": int(row["root_rank"]),
+            }
             for row in ns["frames"]
             if row["frame_id"] in config["target_ids"]
         }
@@ -395,23 +427,90 @@ def search_case(
     cap_from_mw_rank,
     rank_first,
     accepted_per_state_cap,
+    retain_frontier_witnesses,
+    resume_frontier_artifact,
+    resume_root_rank,
+    resume_frontier_depth,
 ):
     config, source, source_frame, source_root_rank, targets, target_inputs = load_case(case_name)
     source_ns = block_diagonal_matrix(U2, -source_frame)
-    initial = {
-        "frame": source_frame,
-        "root_rank": source_root_rank,
-        "to_source": matrix(ZZ, 19, 19, 1),
-        "edges": [],
-    }
-    frontier = [initial]
+    resume_inputs = {}
+    if resume_frontier_artifact is None:
+        initial_states = [
+            {
+                "frame": source_frame,
+                "root_rank": source_root_rank,
+                "to_source": matrix(ZZ, 19, 19, 1),
+                "edges": [],
+            }
+        ]
+    else:
+        resume_payload = json.loads(resume_frontier_artifact.read_text())
+        resume_results = [
+            row for row in resume_payload["results"] if row["case"] == case_name
+        ]
+        if len(resume_results) != 1:
+            raise ValueError("resume artifact must contain exactly one matching case")
+        if resume_frontier_depth is None:
+            witness = resume_results[0]["frontier_witnesses_by_root_rank"].get(
+                str(resume_root_rank)
+            )
+            if witness is None:
+                raise ValueError(
+                    "requested root-rank witness is absent from resume artifact"
+                )
+            resume_rows = [witness]
+        else:
+            depth_rows = [
+                row
+                for row in resume_results[0]["retained_frontiers_by_depth"]
+                if int(row["depth"]) == resume_frontier_depth
+            ]
+            if len(depth_rows) != 1:
+                raise ValueError("requested retained frontier depth is absent or ambiguous")
+            resume_rows = depth_rows[0]["states"]
+            if resume_root_rank is not None:
+                resume_rows = [
+                    row
+                    for row in resume_rows
+                    if int(row["root_rank"]) == resume_root_rank
+                ]
+            if not resume_rows:
+                raise ValueError("no retained frontier states match the resume filter")
+        initial_states = []
+        for witness in resume_rows:
+            state = {
+                "frame": matrix(ZZ, witness["frame"]),
+                "root_rank": int(witness["root_rank"]),
+                "to_source": matrix(ZZ, witness["composed_transport_to_source"]),
+                "edges": witness["edges"],
+            }
+            resumed_ns = block_diagonal_matrix(U2, -state["frame"])
+            if state["to_source"] * source_ns * state["to_source"].transpose() != resumed_ns:
+                raise ArithmeticError("resume witness transport does not recover the source NS")
+            initial_states.append(state)
+        resume_inputs[relative(resume_frontier_artifact)] = digest(
+            resume_frontier_artifact
+        )
+    starting_depths = {len(state["edges"]) for state in initial_states}
+    if len(starting_depths) != 1:
+        raise ValueError("all resumed states must have the same route depth")
+    starting_depth = starting_depths.pop()
+    if max_depth <= starting_depth:
+        raise ValueError("maximum depth must exceed the resumed route depth")
+    frontier = initial_states
     accounting = []
     hits = []
+    frontier_witnesses = {}
+    retained_frontiers = []
     expansion_index = 0
-    seen = {matrix_key(source_frame): (0, 0, 0, 0, 0)}
+    seen = {
+        matrix_key(state["frame"]): route_cost(state["edges"])
+        for state in initial_states
+    }
     with tempfile.TemporaryDirectory(prefix=f"{case_name}-compiler-route-") as temporary:
         workdir = Path(temporary)
-        for depth in range(1, max_depth + 1):
+        for depth in range(starting_depth + 1, max_depth + 1):
             candidates = []
             raw_edges = accepted_edges = 0
             shell_summaries = []
@@ -515,11 +614,30 @@ def search_case(
                         "to_source": to_source,
                         "edges": edges,
                     }
-                    if child_state["root_rank"] == 0:
-                        for target_id, target in targets.items():
-                            isometry = integral_isometry(child, target)
+                    if retain_frontier_witnesses:
+                        witness = {
+                            "root_rank": child_state["root_rank"],
+                            "mw_rank": 17 - child_state["root_rank"],
+                            "cost": list(route_cost(edges)),
+                            "frame": rows(child),
+                            "composed_transport_to_source": rows(to_source),
+                            "edges": edges,
+                        }
+                        previous = frontier_witnesses.get(str(child_state["root_rank"]))
+                        if previous is None or tuple(witness["cost"]) < tuple(previous["cost"]):
+                            frontier_witnesses[str(child_state["root_rank"])] = witness
+                    matching_targets = {
+                        target_id: target
+                        for target_id, target in targets.items()
+                        if target["root_rank"] == child_state["root_rank"]
+                    }
+                    matched_target = False
+                    if matching_targets:
+                        for target_id, target in matching_targets.items():
+                            isometry = integral_isometry(child, target["frame"])
                             if isometry is None:
                                 continue
+                            matched_target = True
                             hits.append(
                                 {
                                     "target_frame_id": target_id,
@@ -530,6 +648,7 @@ def search_case(
                                     "composed_transport_terminal_to_source": rows(to_source),
                                 }
                             )
+                    if matched_target:
                         continue
                     key = matrix_key(child)
                     cost = route_cost(edges)
@@ -588,6 +707,23 @@ def search_case(
                 if not added:
                     break
                 bucket_index += 1
+            if retain_frontier_witnesses:
+                retained_frontiers.append(
+                    {
+                        "depth": depth,
+                        "states": [
+                            {
+                                "root_rank": state["root_rank"],
+                                "mw_rank": 17 - state["root_rank"],
+                                "cost": list(route_cost(state["edges"])),
+                                "frame": rows(state["frame"]),
+                                "composed_transport_to_source": rows(state["to_source"]),
+                                "edges": state["edges"],
+                            }
+                            for state in next_frontier
+                        ],
+                    }
+                )
             accounting.append(
                 {
                     "depth": depth,
@@ -640,6 +776,14 @@ def search_case(
             "maximum_horizontal_P_dot_O": max_pole,
             "beam_width": beam_width,
             "maximum_depth": max_depth,
+            "starting_depth": starting_depth,
+            "resumed_root_rank": (
+                resume_root_rank if resume_frontier_artifact is not None else None
+            ),
+            "resumed_frontier_depth": resume_frontier_depth,
+            "resumed_state_count": (
+                len(initial_states) if resume_frontier_artifact is not None else None
+            ),
             "mw_vector_cap": mw_vector_cap,
             "mw_vector_cap_from_mw_rank": (
                 cap_from_mw_rank if mw_vector_cap is not None else None
@@ -661,9 +805,18 @@ def search_case(
         },
         "accounting": accounting,
         "best_routes_by_target": best_by_target,
+        **(
+            {
+                "frontier_witnesses_by_root_rank": frontier_witnesses,
+                "retained_frontiers_by_depth": retained_frontiers,
+            }
+            if retain_frontier_witnesses
+            else {}
+        ),
         "inputs": {
             relative(config["source_artifact"]): digest(config["source_artifact"]),
             relative(NEIGHBOR_SCRIPT): digest(NEIGHBOR_SCRIPT),
+            **resume_inputs,
             **target_inputs,
         },
     }
@@ -695,6 +848,26 @@ def main():
             "the default prioritizes compiler cost before root rank"
         ),
     )
+    parser.add_argument(
+        "--retain-frontier-witnesses",
+        action="store_true",
+        help="retain the cheapest full marked state encountered at every root rank",
+    )
+    parser.add_argument(
+        "--resume-frontier-artifact",
+        type=Path,
+        help="resume from a retained full marked state in an earlier route artifact",
+    )
+    parser.add_argument(
+        "--resume-root-rank",
+        type=int,
+        help="root-rank witness or retained-frontier filter to resume",
+    )
+    parser.add_argument(
+        "--resume-frontier-depth",
+        type=int,
+        help="resume all retained states at this depth, optionally filtered by root rank",
+    )
     parser.add_argument("--output", type=Path)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
@@ -712,6 +885,16 @@ def main():
         parser.error("every q must be a positive multiple of the old-fibre degree")
     if len(cases) > 1 and args.output is not None:
         parser.error("--output is available only with one --case")
+    if args.resume_frontier_artifact is None and (
+        args.resume_root_rank is not None or args.resume_frontier_depth is not None
+    ):
+        parser.error("resume filters require --resume-frontier-artifact")
+    if args.resume_frontier_artifact is not None and (
+        args.resume_root_rank is None and args.resume_frontier_depth is None
+    ):
+        parser.error("resume requires --resume-root-rank or --resume-frontier-depth")
+    if args.resume_frontier_artifact is not None and len(cases) != 1:
+        parser.error("frontier resume is available only with one --case")
     results = [
         search_case(
             case_name,
@@ -724,6 +907,12 @@ def main():
             args.cap_from_mw_rank,
             args.rank_first,
             args.accepted_per_state_cap,
+            args.retain_frontier_witnesses,
+            args.resume_frontier_artifact.resolve()
+            if args.resume_frontier_artifact is not None
+            else None,
+            args.resume_root_rank,
+            args.resume_frontier_depth,
         )
         for case_name in cases
     ]
@@ -740,7 +929,7 @@ def main():
                 "Every retained edge is exact and has primitive fibre, complete physical "
                 "component/all-section/finite-horizontal-wall gates, "
                 "zero physical Weyl repairs, and bidirectional unimodular NS transport. Every "
-                "reported terminal is integrally isometric to the named rootless frame."
+                "reported terminal is integrally isometric to the named target frame."
             ),
             "not_proved": (
                 "Beam pruning is not a complete graph search. Repaired presentations, other q "
@@ -773,6 +962,32 @@ def main():
                     else []
                 ),
                 *(["--rank-first"] if args.rank_first else []),
+                *(
+                    ["--retain-frontier-witnesses"]
+                    if args.retain_frontier_witnesses
+                    else []
+                ),
+                *(
+                    [
+                        "--resume-frontier-artifact",
+                        relative(args.resume_frontier_artifact),
+                        *(
+                            ["--resume-root-rank", str(args.resume_root_rank)]
+                            if args.resume_root_rank is not None
+                            else []
+                        ),
+                        *(
+                            [
+                                "--resume-frontier-depth",
+                                str(args.resume_frontier_depth),
+                            ]
+                            if args.resume_frontier_depth is not None
+                            else []
+                        ),
+                    ]
+                    if args.resume_frontier_artifact is not None
+                    else []
+                ),
                 *(
                     ["--accepted-per-state-cap", str(args.accepted_per_state_cap)]
                     if args.accepted_per_state_cap is not None

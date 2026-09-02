@@ -1,0 +1,62 @@
+{
+  "backend": {
+    "license": "open_source",
+    "method": "certified persisted BNF + Simon field-Selmer/local conditions + explicit intersections of quadrics",
+    "pari_version": "(2, 17, 3)",
+    "sage_version": "10.9"
+  },
+  "claim_boundary": [
+    "No Selmer result is recorded without a full certified BNF, all Simon local conditions, and exact point squareclass embeddings.",
+    "The Selmer worker receives no known rational points; exceptional points are loaded only after blind raw-basis cover searches finish.",
+    "A bounded cover-search miss is not evidence of a nontrivial Tate-Shafarevich class."
+  ],
+  "completed_case_count": 0,
+  "input_manifest": {
+    "path": "artifacts/generated-results/elliptic-curves/elkies_2026_relative_2selmer_suite_inputs_v1.json",
+    "sha256": "9d9713d69b59764c3fabcc726296f1ec6c6b44c0be9ceabc0c00652472ce1867"
+  },
+  "parameters": {
+    "auxiliary_prime_bound": 5000,
+    "bnf_tech": [
+      0.1,
+      4.0,
+      20
+    ],
+    "bnf_timeout_seconds": 600.0,
+    "embedding_timeout_seconds": 300.0,
+    "pari_stack_bytes": 2000000000,
+    "random_seed": 20260902,
+    "raw_basis_search_bound": 8,
+    "rss_limit_bytes": 4000000000,
+    "selected_case_ids": [
+      "control-r21-t3_8"
+    ],
+    "selmer_timeout_seconds": 600.0
+  },
+  "runs": [
+    {
+      "bnf": {
+        "log": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-checkpointed-v1/control-r21-t3_8/bnf.log",
+        "log_sha256": "7157965163b50737ad080dfc25573c3a80b7d1cc0e25466665592e87beac2398",
+        "outcome": "strict_wall_timeout",
+        "peak_observed_rss_bytes": 256798720,
+        "returncode": -15,
+        "rss_limit_bytes": 4000000000,
+        "timeout_seconds": 600.0,
+        "wall_seconds": 600.0650722090213,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "case_id": "control-r21-t3_8",
+      "classification": null,
+      "exceptional_embedding": null,
+      "generic_embedding": null,
+      "parameter": "3/8",
+      "role": "held-out-positive-control",
+      "selmer": null,
+      "status": "INCOMPLETE_BNF"
+    }
+  ],
+  "schema": "elliptic-curves.elkies-2026-relative-2selmer-checkpointed-run.v1",
+  "status": "INCOMPLETE_ONE_OR_MORE_CHECKPOINTED_DESCENTS"
+}

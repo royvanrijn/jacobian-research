@@ -1,0 +1,326 @@
+{
+  "bounded_degree_2_2_twist_section_elimination": {
+    "ansatz": "x=p*u^2+q*u+r, y=s*u^2+v*u+w, p=z^2, s=z^3",
+    "constant_equation": "(r-2)*(r+1)^2=0",
+    "r_2_resultant": "(4096) * z^6 * (27*z^2*L^3 - 72*z^2*L^2 + 64)",
+    "r_minus_1_resultant": "(4096) * L^3 * z^8 * (3*z^2*L - 4*z + 1)^2 * (3*z^2*L + 4*z + 1)^2",
+    "scope": "Complete for nonzero leading coefficient and nonzero lambda in this polynomial degree-(2,2) ansatz; it is not a complete search over rational-function sections."
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-repeated-fibre-rational-base-change-audit-v1.json": "7bb12308cf379b091b7c55f767df253690cad659284b3b9c51a4dbf55b8b178c"
+  },
+  "low_complexity_rational_surface_catalogue": [
+    {
+      "equation": "y^2=x^3+(u-3)x+(a*u-2)",
+      "fibre_profile": "III*+3I1",
+      "id": "Kimura-E7",
+      "moduli_dimension": 1,
+      "mw_lattice": [
+        [
+          "1/2"
+        ]
+      ],
+      "priority": "high roots, but the E6+A1 seed has a simpler rational generator",
+      "rational_section_subfamily": "a=-c^2-2, P=(-a,c*(a-1))",
+      "root_lattice": "E7",
+      "torsion": "trivial"
+    },
+    {
+      "equation": "y^2=x^3+u^2*(u^2-3)x+u^3*(a*u^3+u^2-2)",
+      "fibre_profile": "I3*+3I1",
+      "id": "Kimura-D7",
+      "moduli_dimension": 1,
+      "mw_lattice": [
+        [
+          "1/4"
+        ]
+      ],
+      "priority": "rank-budget seed; a compact QQ generator was not compiled here",
+      "root_lattice": "D7",
+      "torsion": "trivial generically"
+    },
+    {
+      "equation": "y^2=x^3+(u-3)x+(c^2*u^2+u-2)",
+      "fibre_profile": "IV*+I2+2I1",
+      "id": "Kimura-E6A1-rational-generator",
+      "moduli_dimension": 1,
+      "mw_lattice": [
+        [
+          "1/6"
+        ]
+      ],
+      "priority": "selected seed",
+      "root_lattice": "E6+A1",
+      "section": "(-1,c*u)",
+      "torsion": "trivial"
+    },
+    {
+      "equation_reference": "artifacts/generated-results/elkies-k3-repeated-fibre-rational-base-change-audit-v1.json",
+      "fibre_profile": "I6+I3+3I1",
+      "id": "Golay-rational-control",
+      "moduli_dimension": 0,
+      "mw_lattice": [
+        [
+          "1/2"
+        ]
+      ],
+      "rank_decomposition": "1 invariant + 1 anti-invariant",
+      "root_lattice": "A5+A2",
+      "status": "exact QQ control; source NS determinant is 20, not Golay 720",
+      "torsion": "Z/3"
+    },
+    {
+      "base_field": "GF(7)",
+      "equation_reference": "artifacts/generated-results/elkies-k3-repeated-fibre-rational-base-change-audit-v1.json",
+      "fibre_profile": "I8+4I1",
+      "id": "NS0031-mod7-control",
+      "moduli_dimension": 0,
+      "mw_rank_from_shioda_tate": 1,
+      "rank_decomposition": "one nonzero invariant trace + one nonzero anti-invariant direction",
+      "root_lattice": "A7",
+      "status": "finite-field precursor, not an E/QQ(u) entry"
+    }
+  ],
+  "new_families": [
+    {
+      "arithmetic_open": {
+        "branch_smoothness_value": "-(2*k^2+1)*(9*k^2-20)^2/(3*k^2-4)^2",
+        "comment": "For rational k outside {-2,0,2}, the displayed denominators, branch degree, and generic rational-surface/K3 fibre profiles are valid; further special-fibre rank jumps are not excluded.",
+        "excluded_rational_values": [
+          "-2",
+          "0",
+          "2"
+        ],
+        "rational_parameter": "k in QQ",
+        "residual_I1_discriminant": "16*(9*k^4+12*k^2+16)^3/(3*k^2-4)^6"
+      },
+      "base_changed_k3": {
+        "anti_invariant_section": {
+          "X": "p*lambda^2+q*lambda*H+r*H^2",
+          "Y": "lambda*t*(s*lambda^2+v*lambda*H+w*H^2)"
+        },
+        "equation": "Y^2=X^3+H^3*(lambda-3H)*X+H^4*(c^2*lambda^2+lambda*H-2H^2), H=1-t^2",
+        "fibre_profile": "2IV*+I4+4I1",
+        "invariant_section": {
+          "X": "-H^2",
+          "Y": "c*lambda*H^2"
+        },
+        "mordell_weil_determinant": "1",
+        "mordell_weil_height_gram": [
+          [
+            "1/3",
+            "0"
+          ],
+          [
+            "0",
+            "3"
+          ]
+        ],
+        "mordell_weil_rank_exact_generic": 2,
+        "mordell_weil_saturation": "exact; no index-three overlattice",
+        "neron_severi_determinant_absolute": "36",
+        "neron_severi_smith_nontrivial": [
+          3,
+          12
+        ],
+        "nonisotrivial_marked_configuration_invariant": "(2*k^6 - 71/9*k^4 + 440/81*k^2 + 400/81)/(k^4 + 8/3*k^2 + 16/9)",
+        "picard_rank_exact_generic": 19,
+        "picard_rank_lower_bound": 19,
+        "rank_decomposition": "rank E(QQ(k)(u))=1 plus rank E^(d)(QQ(k)(u))=1",
+        "rank_sum_lower_bound": 2,
+        "root_lattice": "2E6+A3",
+        "root_rank": 15
+      },
+      "height_calibration_k_equals_1": {
+        "anti_invariant": {
+          "height": "3",
+          "intersection_with_zero": 214,
+          "multiplier": 12,
+          "x_denominator_degree": 426,
+          "x_numerator_degree": 432
+        },
+        "invariant": {
+          "height": "1/3",
+          "intersection_with_zero": 22,
+          "multiplier": 12,
+          "x_denominator_degree": 44,
+          "x_numerator_degree": 48
+        },
+        "saturation_fibre_t_equals_3": {
+          "all_nondivisible_by_3": true,
+          "curve_a_invariants": [
+            "0",
+            "0",
+            "0",
+            "-11904",
+            "-490496"
+          ],
+          "curve_discriminant": "4025676201984",
+          "points": {
+            "P0": [
+              "-64",
+              "96"
+            ],
+            "P0+P1": [
+              "2112",
+              "-96928"
+            ],
+            "P0-P1": [
+              "4416/25",
+              "-213536/125"
+            ],
+            "P1": [
+              "-271/4",
+              "-567/8"
+            ]
+          }
+        },
+        "twist_good_fibre_u_equals_1": {
+          "curve_a_invariants": [
+            "0",
+            "0",
+            "0",
+            "-49/8",
+            "1029/64"
+          ],
+          "order": "infinite",
+          "point": [
+            "7/2",
+            "-49/8"
+          ]
+        }
+      },
+      "label": "E6A1-clean-rminus1",
+      "parameters": {
+        "c": "2/3*k/(k^2 - 4/3)",
+        "lambda": "-3/4*k^4 + 4*k^2 - 4"
+      },
+      "quadratic_cover": {
+        "branch_values": [
+          "u=0 (I2)",
+          "u=lambda (smooth generically)"
+        ],
+        "map": "u=lambda/(1-t^2)",
+        "squareclass": "d(u)=u*(u-lambda)"
+      },
+      "rational_surface": {
+        "equation": "y^2=x^3+(u-3)*x+c^2*u^2+u-2",
+        "fibre_profile": "IV*+I2+2I1",
+        "generator": {
+          "x": "-1",
+          "y": "c*u"
+        },
+        "mordell_weil_group": "Z",
+        "mordell_weil_lattice_gram": [
+          [
+            "1/6"
+          ]
+        ],
+        "root_lattice": "E6+A1",
+        "root_rank": 7,
+        "torsion": "trivial"
+      },
+      "twist_section": {
+        "model": "d(u)*y^2=x^3+(u-3)*x+c^2*u^2+u-2",
+        "x_coefficients_low_to_high": [
+          "-1",
+          "1/3*k^2/(k^2 - 4/3)",
+          "4/9/(k^4 - 8/3*k^2 + 16/9)"
+        ],
+        "y_coefficients_low_to_high": [
+          "0",
+          "(2/9*k^2 + 4/9)/(k^4 - 8/3*k^2 + 16/9)",
+          "8/27/(k^6 - 4*k^4 + 16/3*k^2 - 64/27)"
+        ]
+      }
+    },
+    {
+      "base_changed_k3": {
+        "anti_invariant_section": {
+          "X": "p*lambda^2+q*lambda*H+r*H^2",
+          "Y": "lambda*t*(s*lambda^2+v*lambda*H+w*H^2)"
+        },
+        "equation": "Y^2=X^3+H^3*(lambda-3H)*X+H^4*(c^2*lambda^2+lambda*H-2H^2), H=1-t^2",
+        "fibre_profile": "2IV*+I4+4I1",
+        "invariant_section": {
+          "X": "-H^2",
+          "Y": "c*lambda*H^2"
+        },
+        "picard_rank_lower_bound": 19,
+        "rank_sum_lower_bound": 2,
+        "root_lattice": "2E6+A3",
+        "root_rank": 15
+      },
+      "label": "E6A1-secondary-r2",
+      "parameters": {
+        "auxiliary_h": "(1/2*k^2 + 8/3)/k",
+        "auxiliary_m": "(-1/2*k^2 + 8/3)/k",
+        "c": "(-2*k^3 + 32/3*k)/(k^4 - 64/3*k^2 + 256/9)",
+        "conic": "3*(h^2-m^2)=16",
+        "lambda": "(-1/12*k^4 + 16/9*k^2 - 64/27)/k^2"
+      },
+      "quadratic_cover": {
+        "branch_values": [
+          "u=0 (I2)",
+          "u=lambda (smooth generically)"
+        ],
+        "map": "u=lambda/(1-t^2)",
+        "squareclass": "d(u)=u*(u-lambda)"
+      },
+      "rational_surface": {
+        "equation": "y^2=x^3+(u-3)*x+c^2*u^2+u-2",
+        "fibre_profile": "IV*+I2+2I1",
+        "generator": {
+          "x": "-1",
+          "y": "c*u"
+        },
+        "mordell_weil_group": "Z",
+        "mordell_weil_lattice_gram": [
+          [
+            "1/6"
+          ]
+        ],
+        "root_lattice": "E6+A1",
+        "root_rank": 7,
+        "torsion": "trivial"
+      },
+      "twist_section": {
+        "model": "d(u)*y^2=x^3+(u-3)*x+c^2*u^2+u-2",
+        "x_coefficients_low_to_high": [
+          "2",
+          "(32*k^6 + 2048/3*k^4 + 8192/9*k^2)/(k^8 - 32/3*k^6 - 512/3*k^4 - 8192/27*k^2 + 65536/81)",
+          "4096*k^6/(k^12 - 32*k^10 + 256/3*k^8 + 81920/27*k^6 + 65536/27*k^4 - 2097152/81*k^2 + 16777216/729)"
+        ],
+        "y_coefficients_low_to_high": [
+          "(-6*k^5 - 256*k^3 - 512/3*k)/(k^6 - 16*k^4 - 256/3*k^2 + 4096/27)",
+          "(-3072*k^9 - 163840/3*k^7 - 262144/3*k^5)/(k^14 - 80/3*k^12 - 256/3*k^10 + 94208/27*k^8 + 1507328/81*k^6 - 1048576/81*k^4 - 83886080/729*k^2 + 268435456/2187)",
+          "-262144*k^9/(k^18 - 48*k^16 + 512*k^14 + 40960/9*k^12 - 524288/9*k^10 - 8388608/27*k^8 + 167772160/243*k^6 + 536870912/243*k^4 - 4294967296/729*k^2 + 68719476736/19683)"
+        ]
+      }
+    }
+  ],
+  "pareto_selection": {
+    "objectives": {
+      "arithmetic_parameter": "k in QQ outside an explicit finite bad locus",
+      "base_equation_monomial_count": 6,
+      "generic_picard_rank": 19,
+      "quadratic_map_degree": 2,
+      "rank_sum": 2,
+      "rational_moduli_dimension": 1,
+      "rational_sections": 2,
+      "twist_section_degree_pair": [
+        2,
+        2
+      ]
+    },
+    "reason": "It has the same exact rank and Picard outcome as the secondary component, but substantially smaller c, lambda, and twist-section formulas.",
+    "winner": "E6A1-clean-rminus1"
+  },
+  "proof_boundary": {
+    "not_proved": "The catalogue is a low-complexity rank-seven seed list, not the full Oguiso--Shioda classification.  The ansatz does not search higher-degree or rational-function twist sections.  No claim is made that rank sum two is globally maximal among all quadratic base changes, or that every rational specialization retains exact rank two.",
+    "proved": "The rational-surface and twist section identities, quadratic map, deck characters, degree-(2,2) ansatz resultants, fibre-root budget, exact specialized heights, non-torsion specialization, nonconstant marked fibre invariant, generic Picard rank 19, and generic rank decomposition 1+1 are exact."
+  },
+  "reproduce": "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python elkies-k3/scripts/certify_rational_surface_quadratic_rank_search.sage",
+  "schema": "elkies-k3.rational-surface-quadratic-rank-search.v1",
+  "status": "PASS_EXACT_NEW_ONE_MODULUS_PICARD19_QUADRATIC_BASE_CHANGE"
+}

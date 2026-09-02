@@ -408,9 +408,12 @@ formulations fail the untouched `p=199` replay.  Their shortest vectors remain
 at the random-lattice boundary.  Exact closure operands already have heights
 up to 36,335 bits, so `19^8192` would still be too small; the first justified
 target is `19^12288`, with a random boundary near 46,400 bits.  The exact pencil
-at precision 12291 is complete and the checkpointed factor/root lift is in
-progress.  Once it finishes, certify the generic basis at the five digits
-actually used by the basis theorem with:
+at precision 12291, checkpointed factor/root lift, five-digit generic basis
+check, and all 20 residue-distinct Riemann--Roch samples are now complete.  The
+sample worker uses compact conductor-power arithmetic for its exact relation
+replay; this preserves the certified output while removing the former generic
+rational-function normalization bottleneck.  The basis check is reproduced
+with:
 
 ```bash
 python3 elkies-k3/scripts/verify_q80_third_q12_integral_basis_mod19_power.py \
@@ -419,6 +422,15 @@ python3 elkies-k3/scripts/verify_q80_third_q12_integral_basis_mod19_power.py \
   --verification-digits 5 \
   --output artifacts/local/elkies-k3/q80-third-q12-integral-basis-mod19-power-lift12288-check5.json
 ```
+
+Reconstruction at `19^12288` is still negative.  The separate-component and
+coupled quadratic-projective degree-eight factors use 46,446-bit primitive
+coordinates against a 46,448-bit random boundary, and independent `p=199`
+replay rejects both with 25 of 25 numerator pairs and 24 of 25 denominator
+pairs unequal.  Since `omega^2=16q1q2` itself has 33,886/33,890-bit
+numerator/denominator height, the next route must retain the exact field and
+denominator factors intrinsically instead of simply rerunning the same LLL at
+larger precision.
 
 The full hashes, failed holdouts, and height justification are recorded in
 [`../Q80_THIRD_Q12_COMMON_PRODUCER_2026-09-01.md`](../Q80_THIRD_Q12_COMMON_PRODUCER_2026-09-01.md).
@@ -1283,6 +1295,29 @@ The current proof boundary and replay commands are in
   5.  The selected pole-zero source reaches MW14 but not the exact MW16 target
   in the capped depth-eight degree-two beam.  These are scoped modular and
   bounded-route negatives, not characteristic-zero or graph obstructions.
+- `scan_k3_04b_a3_a4_a9_pole1_marking_modp.sage` and
+  `certify_k3_04b_a3_a4_a9_marked_gf5_hensel.sage` now derive arbitrary
+  three-support root-rank-16 MW1 fibre orders and component depths while
+  retaining byte-compatible determinant-500 defaults.  The marking scanner
+  exhausts any affine numerator-X space left by fewer than seven component
+  jets; the Hensel checker builds the corresponding dynamic fibre/component
+  system.
+- `certify_k3_cf7f_a4_2a6_mw1_formal_smoothness.sage` promotes the new
+  determinant-714 `A4+2A6/MW1` source opposite an `A1/MW16` target.  Its
+  nonsquare `GF(7)` chart has four marked sections on two models; both seeds
+  have one-dimensional smooth tangents and lift through `7^8`.  The exact
+  node/discriminant identity forces the eight omitted residual equations, so
+  the branch is formally smooth over `Z_7`.
+- `scan_k3_cf7f_a4_2a6_mw1_rational_parameters.sage` checks 23 small integral
+  `m8` values across both smooth det714 residue disks through `7^40`; none has
+  a full coefficientwise rational reconstruction.  The bounded miss is not
+  an irrationality result.
+- `certify_k3_cf7f_equation_first_candidate.sage` aggregates both auxiliary
+  source censuses (463 and 548 rows), proves the two MW1 representatives are
+  integrally isometric, and pins the modular, formal, rational-scan, and
+  corridor gates.  The degree-two beam reaches an MW15 intermediate at depth
+  six but not the exact MW16 target through depth eight.  Det714 is the active
+  second formally smooth MW1 promotion after det500.
 - `build_rank7_rational_moduli_source_optimizer.py` maintains the evaluated
   source-first queue for the six catalogue surfaces having rational moduli and
   a rootless MW17 frame.  Determinant 500 is the active formally smooth MW1
@@ -2526,6 +2561,78 @@ is the exact resolved `D=O+P-C2-6F` two-plane, binary quartic, minimized
 coefficient-growth diagnostic: direct lifting in the former million-bit
 normalization remained unresolved even at precision `167^8192`.  None of
 these constructions uses a Groebner basis or surface elimination.
+
+## E6+A1 rational-surface quadratic-base-change family
+
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-EQUATION 8cfa9387612ac443 -->
+
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2 2130bc147519ac6b -->
+
+The exact construction and its integral K3 dissection replay with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_rational_surface_quadratic_rank_search.sage
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6a1_rho19_k3_dissection.sage
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6a1_rho19_genuine_q2_neighbors.sage
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/compile_e6a1_rho19_orbit103_rr_weierstrass.sage
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6a1_rho19_orbit103_arithmetic_and_orbit96_audit.sage
+```
+
+The first script verifies the rational surface, twist section, quadratic
+pullback, height matrix, saturation, and complete degree-`(2,2)` polynomial
+ansatz.  The second pins `NS`, `T=U(3)+<4>`, four singular-K3 boundary
+lattices, the determinant-36 neighbor frame, and the complete smallest
+nominal degree-two obstruction.  The third performs the complete genuine
+norm-eight quadratic-neighbour census, proves nefness for eighteen MW-rank-3
+frames, and selects the sparse divisor `P0+P1+A3_2` for equation compilation.
+The fourth certifies the complete resolved basis `<1,z>`, eliminates it to a
+binary quartic with rational origin, and produces the explicit
+`2I1*+2I3+4I1` Weierstrass model with two polynomial rational points.
+The fifth certifies that those two points are independent and exhaust the
+`QQ(k)(r)` rank, exhibits the anti-invariant third geometric direction over
+`QQ(sqrt(-3))`, and rejects the naive orbit-96 tangent trace because its exact
+root type is `2E6+A3`, not `A7+D7`.
+See
+[`../E6A1_RHO19_K3_DISSECTION_2026-09-02.md`](../E6A1_RHO19_K3_DISSECTION_2026-09-02.md)
+and
+[`../E6A1_RHO19_GENUINE_Q2_NEIGHBORS_2026-09-02.md`](../E6A1_RHO19_GENUINE_Q2_NEIGHBORS_2026-09-02.md)
+and
+[`../E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md`](../E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md).
+
+## E6 rank-three and rationalized D6 continuation
+
+<!-- status-consumer: EC-K3-RES-QBC-E6-II-RANK3-RHO19 5b10608e230145e9 -->
+
+<!-- status-consumer: EC-K3-RES-D6-RATIONALIZED-SECTION-CHART 06442a208822d255 -->
+
+The exact `E6` rank-sum-three construction replays with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6_ii_rank3_quadratic_base_change.sage
+```
+
+It proves the rational-surface rank two, twist rank one, generic K3 profile
+`2E6+A2/MW3`, Picard rank 19, saturated determinant-24 `NS`, and an exact
+Blichfeldt obstruction to every rootless MW17 fibration in that `NS`.
+
+The rationalized `D6` marked-section frontier and its bounded height-30
+two-section leading-coefficient gate replay with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_rationalized_d6_rank2_section_chart.sage
+```
+
+This second command is an **ACTIVE_SEARCH**.  It proves the displayed QQ
+chart and the declared finite box only; it does not prove nonexistence of a
+rank-sum-four family.  See
+[`../E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md`](../E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md).
 
 ## Rule for future additions
 

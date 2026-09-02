@@ -1,11 +1,12 @@
 #!/usr/bin/env sage-python
-"""Certify the tangent and finite Hensel gate for the marked GF(5) MW1 seed."""
+"""Certify the tangent and finite Hensel gate for a marked pole-one MW1 seed."""
 
 from __future__ import annotations
 
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 
 from sage.all import GF, PolynomialRing, ZZ, matrix, vector
@@ -24,6 +25,7 @@ DEFAULT_OUTPUT = (
     ROOT / "artifacts/generated-results/"
     "elkies-k3-k3-04b86146cc6b284b-a3-a4-a9-marked-gf5-hensel-v1.json"
 )
+SCHEMA = "elkies-k3.k3-04b-a3-a4-a9-marked-gfp-hensel.v1"
 
 
 def relative(path: Path) -> str:
@@ -49,7 +51,17 @@ NAMES = (
 )
 
 
-def build_system(base_ring, normalization_scale=1):
+def fibre_orders(root_type):
+    orders = []
+    for term in root_type.split("+"):
+        match = re.fullmatch(r"(?:(\d+))?A(\d+)", term)
+        if match is None:
+            raise ValueError("source is not semistable")
+        orders.extend([int(match.group(2)) + 1] * int(match.group(1) or 1))
+    return orders
+
+
+def build_system(base_ring, orders, depths, normalization_scale=1):
     coefficient_ring = PolynomialRing(base_ring, names=NAMES, order="degrevlex")
     variables = list(coefficient_ring.gens())
     cursor = 0
@@ -82,21 +94,28 @@ def build_system(base_ring, normalization_scale=1):
     discriminant_core = 4 * A**3 + 27 * B**2
     node_numerator = 2 * A * N + 3 * B * C**2
     section_residual = M**2 - N**3 - A * N * C**4 - B * C**6
+    if len(orders) != 3 or len(depths) != 3:
+        raise ValueError("marked system requires three supports")
     blocks = {
         "normalization": [a[0] + 3 * base_ring(normalization_scale)],
-        "fibre_at_zero": [discriminant_core[index] for index in range(4)],
-        "fibre_at_one": [discriminant_core(t + 1)[index] for index in range(5)],
-        "fibre_at_infinity": [discriminant_core[index] for index in range(15, 25)],
+        "fibre_at_zero": [discriminant_core[index] for index in range(orders[0])],
+        "fibre_at_one": [discriminant_core(t + 1)[index] for index in range(orders[1])],
+        "fibre_at_infinity": [
+            discriminant_core[index] for index in range(25 - orders[2], 25)
+        ],
         "component_marking": (
-            [node_numerator[index] for index in range(2)]
-            + [m[index] for index in range(2)]
-            + [node_numerator[index] for index in range(10, 15)]
-            + [m[index] for index in range(5, 10)]
+            [node_numerator[index] for index in range(depths[0])]
+            + [m[index] for index in range(depths[0])]
+            + [node_numerator(t + 1)[index] for index in range(depths[1])]
+            + [M(t + 1)[index] for index in range(depths[1])]
+            + [node_numerator[index] for index in range(15 - depths[2], 15)]
+            + [m[index] for index in range(10 - depths[2], 10)]
         ),
         "pole_one_section": [section_residual[index] for index in range(19)],
     }
     equations = [equation for block in blocks.values() for equation in block]
-    if len(equations) != 53:
+    expected_count = 1 + sum(orders) + 2 * sum(depths) + 19
+    if len(equations) != expected_count:
         raise ArithmeticError("unexpected equation count")
     return variables, blocks, equations
 
@@ -104,6 +123,7 @@ def build_system(base_ring, normalization_scale=1):
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--fibres", type=Path, default=DEFAULT_FIBRES)
 parser.add_argument("--marking", type=Path, default=DEFAULT_MARKING)
+parser.add_argument("--schema", default=SCHEMA)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 parser.add_argument("--lift-precision", type=int, default=8)
 parser.add_argument("--marked-model-rank", type=int, default=0)
@@ -121,6 +141,11 @@ if arguments.lift_precision < 1:
 fibres_path = arguments.fibres.resolve()
 marking_path = arguments.marking.resolve()
 output_path = arguments.output.resolve()
+legacy_profile = (
+    fibres_path == DEFAULT_FIBRES.resolve()
+    and marking_path == DEFAULT_MARKING.resolve()
+    and arguments.schema == SCHEMA
+)
 fibres = json.loads(fibres_path.read_text())
 marking = json.loads(marking_path.read_text())
 prime = int(fibres.get("prime"))
@@ -132,6 +157,18 @@ if marking.get("status") != (
     raise ValueError("Hensel gate requires a positive marking artifact")
 if int(marking.get("prime")) != prime:
     raise ValueError("fibre and marking primes differ")
+orders = fibre_orders(marking["source"]["root_type"])
+depths = marking["source"].get(
+    "component_depths_at_normalized_supports",
+    marking["source"].get("component_depths_at_I4_I5_I10"),
+)
+if len(orders) != 3 or sum(order - 1 for order in orders) != 16:
+    raise ValueError("marked seed is not a three-support MW1 source")
+if depths is None or len(depths) != 3:
+    raise ValueError("marking artifact omits the component depths")
+expected_supports = [f"0:I{orders[0]}", f"1:I{orders[1]}", f"infinity:I{orders[2]}"]
+if fibres["ansatz"]["normalized_reducible_supports"] != expected_supports:
+    raise ValueError("fibre and marking support profiles differ")
 
 if not 0 <= arguments.marked_model_rank < len(marking["models"]):
     parser.error("marked model rank is outside the positive marking inventory")
@@ -145,7 +182,7 @@ fibre = fibres["examples"][example_index]
 field = GF(prime)
 twist_integer = int(marking["quadratic_twist"])
 variables, equation_blocks, equations = build_system(
-    field, field(twist_integer) ** 2
+    field, orders, depths, field(twist_integer) ** 2
 )
 twist = field(marking["quadratic_twist"])
 point_values = (
@@ -194,7 +231,7 @@ for name, block in equation_blocks.items():
     block_ranks[name] = int(jacobian[:row_count, :].rank())
 
 integer_variables, unused_blocks, integer_equations = build_system(
-    ZZ, twist_integer**2
+    ZZ, orders, depths, twist_integer**2
 )
 lift_coordinates = [int(value) for value in point]
 lift_steps = []
@@ -273,7 +310,7 @@ status = (
     )
 )
 payload = {
-    "schema": "elkies-k3.k3-04b-a3-a4-a9-marked-gfp-hensel.v1",
+    "schema": arguments.schema,
     "status": status,
     "prime": prime,
     "inputs": {
@@ -289,7 +326,9 @@ payload = {
     },
     "system": {
         "normalization": (
-            f"A(0)=-3*{twist_integer}^2; I4,I5,I10 at 0,1,infinity; C monic"
+            f"A(0)=-3*{twist_integer}^2; "
+            + ",".join(f"I{order}" for order in orders)
+            + " at 0,1,infinity; C monic"
         ),
         "variable_count": len(variables),
         "equation_count": len(equations),
@@ -315,16 +354,24 @@ payload = {
         "achieved_precision_exponent": achieved,
         "modulus": lift_modulus,
         "coordinates_modulus": lift_coordinates,
-        "all_53_residuals_zero_modulus": True,
+        (
+            "all_53_residuals_zero_modulus"
+            if legacy_profile
+            else f"all_{len(equations)}_residuals_zero_modulus"
+        ): True,
         "steps": lift_steps,
         "failure": lift_failure,
     },
     "proof_boundary": {
         "proved": (
-            f"The displayed GF({prime}) point solves all 53 normalized integral fibre, "
+            f"The displayed GF({prime}) point solves all {len(equations)} normalized integral fibre, "
             "section, and component-jet equations. The exact maximal Jacobian "
             "minor certifies the tangent dimension, and the integer coordinates "
-            "solve every equation modulo the reported power of five."
+            + (
+                "solve every equation modulo the reported power of five."
+                if legacy_profile
+                else f"solve every equation modulo the reported power of {prime}."
+            )
         ),
         "not_proved": (
             "For an overdetermined presentation, a one-dimensional tangent and "
@@ -350,6 +397,22 @@ payload = {
             if output_path != DEFAULT_OUTPUT.resolve()
             else ""
         )
+        + (
+            f" --fibres {relative(fibres_path)}"
+            if fibres_path != DEFAULT_FIBRES.resolve()
+            else ""
+        )
+        + (
+            f" --marking {relative(marking_path)}"
+            if marking_path != DEFAULT_MARKING.resolve()
+            else ""
+        )
+        + (f" --schema {arguments.schema}" if arguments.schema != SCHEMA else "")
+        + (
+            f" --lift-precision {arguments.lift_precision}"
+            if arguments.lift_precision != 8
+            else ""
+        )
     ),
 }
 if arguments.free_parameter_integer is not None:
@@ -367,7 +430,7 @@ else:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(serialized)
 print(
-    "K304BEHENSEL|"
+    "K3MW1HENSEL|"
     f"variables={len(variables)}|equations={len(equations)}|rank={rank}|"
     f"tangent_dimension={len(variables)-rank}|minor={minor}|"
     f"lift_precision={achieved}|status={'PASS' if status.startswith('PASS_ONE') else 'FAILED_GATE'}",

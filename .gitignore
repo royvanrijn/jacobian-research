@@ -82,6 +82,11 @@ elkies-k3/results/**/*.sqlite
 /artifacts/generated-results
 !/artifacts/generated-results/
 /artifacts/generated-results/*
+!/artifacts/generated-results/elkies-k3-rational-surface-quadratic-rank-search-v1.json
+!/artifacts/generated-results/elkies-k3-e6a1-rho19-k3-dissection-v1.json
+!/artifacts/generated-results/elkies-k3-e6a1-rho19-genuine-q2-neighbors-v1.json
+!/artifacts/generated-results/elkies-k3-e6a1-rho19-orbit103-rr-weierstrass-v1.json
+!/artifacts/generated-results/elkies-k3-e6a1-rho19-orbit103-arithmetic-orbit96-audit-v1.json
 !/artifacts/generated-results/elkies-k3-rank17-to-h3-reverse-transport.json
 !/artifacts/generated-results/elkies-k3-other-rank17-candidate.json
 !/artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json

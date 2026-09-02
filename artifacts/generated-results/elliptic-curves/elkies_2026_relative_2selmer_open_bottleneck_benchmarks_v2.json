@@ -1,0 +1,373 @@
+{
+  "case_id": "control-r21-t3_8",
+  "claim_boundary": [
+    "Every recorded run stops before a certified global cubic class/unit group, so none computes a 2-Selmer dimension or rank upper bound.",
+    "The BNF-free factor-base quotients are bounded relation models, not complete class groups; displayed residual dimensions 34 and 125 are not Selmer bounds.",
+    "Changing PARI tuning constants or technical parameters did not complete the rank-21 prerequisite within the declared limits.",
+    "PARI 2.19 development's new six-parameter threaded relation engine reached a 1,996-ideal factor base in 300 seconds but still lacked 1,635 requested relations; this is progress telemetry, not a class-group bound.",
+    "Adding every S-prime ideal to Hecke's exact factor base and a direct S-multiplier collector also gave zero quotient gain; this still is not a factor-base generation proof.",
+    "Later full-Selmer stages remain gated, although the separate exact known-Kummer audit succeeds on all controls and candidates."
+  ],
+  "custom_pari_restart_experiment": {
+    "backend": "PARI/GP 2.17.4 locally compiled from open-source release",
+    "compile_time_changes": {
+      "src/basemath/buch2.c:MINSFB": "3 -> 3",
+      "src/basemath/buch2.c:RANDOM_BITS": "default -> 2",
+      "src/basemath/buch2.c:SFB_MAX": "3 -> 0"
+    },
+    "configuration": {
+      "bnf_tech": [0.01, 4, 20],
+      "field_model": "polredbest-reduced cubic"
+    },
+    "log": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-custom-pari-v2/control-r21-t3_8-variant-a/bnf.log",
+    "log_sha256": "8201bfc6c17b03ef2168ee739154c5d15a4b8d1a79cda31968f9bc2df17f23a6",
+    "outcome": "strict_wall_timeout_during_repeated_factorbase_growth",
+    "peak_rss_bytes": 59760640,
+    "timeout_seconds": 180,
+    "wall_seconds": 180.0
+  },
+  "pari_219_threaded_relation_experiments": {
+    "backend": "PARI/GP 2.19.0 development 1-6af5b91, locally compiled with pthread support from the official GPL source",
+    "binary": "artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91/bin/gp",
+    "binary_sha256": "4dbfdea9207e3f9977d97db73545cc0aafd8eca656bcda1e798d4bb60ab2039b",
+    "build": {
+      "official_git_source": "https://pari.math.u-bordeaux.fr/git/pari.git",
+      "source_commit": "6af5b91cfaeb6939331945f301e65bd775f6cdef",
+      "source_commit_date": "2026-08-30",
+      "configure_log": "artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91-configure.log",
+      "configure_log_sha256": "9bd957870b8cab88bd2c0ba7142c0a6fec5a509d342da60e27a12b9163f40489",
+      "build_log": "artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91-build.log",
+      "build_log_sha256": "40b93178a296ea1294eba25c95a67ddb4a51faf86cd9b54379cdd39dd8a34cd8",
+      "install_log": "artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91-install.log",
+      "install_log_sha256": "dfcc6ba6609003e8d970b6c1c676dfa940bff34d32b413f267ebd3b67ab8dce1"
+    },
+    "program": "elliptic-curves/cas/run_elkies_2026_pari219_bnf_benchmark.py",
+    "program_sha256": "8ee87a8d5fa43bc74996a9f7bfc3d16f6132b16869811bde073b1ecd70705bd0",
+    "field_model": "polredbest-reduced rank-21 cubic",
+    "runs": [
+      {
+        "bnf_tech": [0.03, 4, 4, 500, 1, 4],
+        "timeout_seconds": 90,
+        "outcome": "strict_wall_timeout_during_repeated_factorbase_growth",
+        "last_factorbase_bound": 2884,
+        "last_factorbase_ideals": 468,
+        "latest_requested_relations": 191,
+        "random_relation_round_count": 2188,
+        "peak_rss_bytes": 44040192,
+        "user_cpu_seconds": 281.91,
+        "log": "artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91/rank21/idex1-90s.log",
+        "log_sha256": "96e43b5364dd10c968d39cdad798d7c34f45a40991fc60ffed84c4af450ae99d"
+      },
+      {
+        "bnf_tech": [0.03, 4, 4, 500, 3, 4],
+        "timeout_seconds": 60,
+        "outcome": "strict_wall_timeout_no_ideal_power_gain",
+        "last_factorbase_bound": 2884,
+        "last_factorbase_ideals": 468,
+        "peak_rss_bytes": 42545152,
+        "user_cpu_seconds": 200.28,
+        "log": "artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91/rank21/idex3-60s.log",
+        "log_sha256": "30698cda871f72e244f8d4252cd1459fd51b801c9c62ebb5987dd785a77d0e17"
+      },
+      {
+        "bnf_tech": [0.03, 4, 4, 500, 10, 4],
+        "timeout_seconds": 60,
+        "outcome": "strict_wall_timeout_larger_ideal_power_worse",
+        "last_factorbase_bound": 1442,
+        "last_factorbase_ideals": 261,
+        "peak_rss_bytes": 36003840,
+        "user_cpu_seconds": 200.67,
+        "log": "artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91/rank21/idex10-60s.log",
+        "log_sha256": "4971e76a26bacf2f1721a33f47f022449cfaec6590238122a51b335f7b8d7027"
+      },
+      {
+        "bnf_tech": [0.03, 4, -1, 5000, 1, 4],
+        "timeout_seconds": 60,
+        "outcome": "strict_wall_timeout_tenfold_trial_factor_budget_worse",
+        "last_factorbase_bound": 721,
+        "last_factorbase_ideals": 163,
+        "peak_rss_bytes": 32837632,
+        "user_cpu_seconds": 232.7,
+        "log": "artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91/rank21/maxfact5000-nrpid-minus1-60s.log",
+        "log_sha256": "0540f9a61e8b3ad0236909c75120a80e758cd6200a35ca880aaf4051ed550ab2"
+      },
+      {
+        "bnf_tech": [0.03, 4, -1, 500, 1, 8],
+        "timeout_seconds": 60,
+        "outcome": "strict_wall_timeout_best_short_stage_depth",
+        "last_factorbase_bound": 5768,
+        "last_factorbase_ideals": 805,
+        "peak_rss_bytes": 63635456,
+        "user_cpu_seconds": 417.41,
+        "log": "artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91/rank21/threads8-nrpid-minus1-60s.log",
+        "log_sha256": "67d898e5eefd44704c43820e5702b4484638f5dc4cf28f46ae47a5ac496f1c67"
+      },
+      {
+        "bnf_tech": [0.03, 4, -1, 500, 1, 12],
+        "timeout_seconds": 60,
+        "outcome": "strict_wall_timeout_same_stage_depth_at_higher_cpu_cost",
+        "last_factorbase_bound": 5768,
+        "last_factorbase_ideals": 805,
+        "peak_rss_bytes": 64978944,
+        "user_cpu_seconds": 603.12,
+        "log": "artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91/rank21/threads12-nrpid-minus1-60s.log",
+        "log_sha256": "750c9ff623099a6a6800a244169b79732dbd4d7ea23a3ba1cb07207e6cbc212f"
+      },
+      {
+        "bnf_tech": [0.03, 4, -1, 500, 1, 8],
+        "timeout_seconds": 300,
+        "outcome": "strict_wall_timeout_with_large_remaining_relation_deficit",
+        "last_factorbase_bound": 16348,
+        "factorbase_ceiling": 96259,
+        "last_factorbase_ideals": 1996,
+        "latest_requested_relations": 1635,
+        "latest_requested_ideals": 1630,
+        "random_relation_round_count": 6143,
+        "peak_rss_bytes": 140156928,
+        "user_cpu_seconds": 2190.47,
+        "wall_seconds": 300.01,
+        "log": "artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91/rank21/threads8-nrpid-minus1-300s.log",
+        "log_sha256": "90805198e605c6045daa7646938d835cf4fd395168c87ad62d024d45bf278c02"
+      }
+    ],
+    "conclusion": "The new threaded engine improves factor-base traversal and remains memory-light, but no tested setting completes bnfinit. The 300-second best run still has a four-digit relation deficit, so no BNF certification or Selmer stage is reached.",
+    "warning": "The displayed requested-relation counts are PARI progress telemetry, not class-group, S-class-group, Selmer, or rank dimensions."
+  },
+  "hecke_bound_240_experiments": [
+    {
+      "GRH": true,
+      "backend": "Hecke 0.40.2 on Julia 1.12.6",
+      "bound": 240,
+      "initial_relation_rank": 14,
+      "log": "artifacts/local/elliptic-curves/hecke-relative-selmer-v2/control-r21-t3_8-bound240/class-unit.log",
+      "log_sha256": "cb7747b830c73a4727bb36a8ae9cc13690acd2b6b206dfe5327c36e5d33540a9",
+      "method": 2,
+      "outcome": "strict_wall_timeout_before_tentative_class_group",
+      "peak_rss_bytes": 1496895488,
+      "target_relation_rank": 57,
+      "timeout_seconds": 180,
+      "wall_seconds": 180.42
+    },
+    {
+      "GRH": true,
+      "backend": "Hecke 0.40.2 on Julia 1.12.6",
+      "bound": 240,
+      "initial_relation_rank": 14,
+      "log": "artifacts/local/elliptic-curves/hecke-relative-selmer-v2/control-r21-t3_8-bound240-method3/class-unit.log",
+      "log_sha256": "0ddbf4d2fabceac21551c9b7b4bbbd2d47ab7b26952f9aeb12bb5622fd4a9e32",
+      "method": 3,
+      "outcome": "strict_wall_timeout_after_724423_zero-gain_pivot_trials",
+      "peak_rss_bytes": 3006738432,
+      "target_relation_rank": 57,
+      "timeout_seconds": 180,
+      "wall_seconds": 181.01
+    }
+  ],
+  "hecke_s_class_monitor": {
+    "augmented_mod2_rank": 23,
+    "backend": "Hecke 0.40.2 on Julia 1.12.6",
+    "checkpoint": "artifacts/local/elliptic-curves/elkies-r17-hecke-s-class-v1/control-r21-bound240-method2.toml",
+    "checkpoint_sha256": "c1e7ebd2ea86718b6f5c98091189772f237bd9aeb5dac247e32e430498076ba7",
+    "declared_S_columns_visible_in_factorbase": 16,
+    "factorbase_bound": 240,
+    "factorbase_columns": 57,
+    "factorbase_mod2_quotient_dimension": 34,
+    "outcome": "strict_wall_timeout_with_exact_zero-gain_checkpoint",
+    "principal_relation_count": 14,
+    "timeout_seconds": 120,
+    "warning": "This is an exact quotient of the materialized factor base only; absent S ideals, factor-base generation, units, and Selmer local conditions remain unproved."
+  },
+  "hecke_s_class_specialized_experiments": {
+    "backend": "Hecke 0.40.2 on Julia 1.12.6",
+    "program": "elliptic-curves/cas/run_elkies_2026_s_class_hecke_monitor.jl",
+    "program_sha256": "548a2f0ed29a0b553f8e52365be601bd93a923e2539ba5b44e61e264c4f05bdd",
+    "archimedean_parameter_sweep": [
+      {
+        "valuation_radius": 1,
+        "enumeration_limit": 3,
+        "random_seed": 20260902,
+        "timeout_seconds": 45,
+        "principal_relation_count": 14,
+        "factorbase_mod2_quotient_dimension": 34,
+        "peak_rss_bytes": 1546477568,
+        "checkpoint": "artifacts/local/elliptic-curves/elkies-r17-hecke-s-class-v1/parameter-sweep/val1-limit3.toml",
+        "checkpoint_sha256": "25c9a20648bebad0f9b9e1145af3d03c93a6ef8207e0d1e7c285656480459d1c",
+        "log_sha256": "113b16f94605d9bc361b12dcc5257a5bb50ff7b3f419efb4ad1275419d089662"
+      },
+      {
+        "valuation_radius": 4,
+        "enumeration_limit": 3,
+        "random_seed": 20260902,
+        "timeout_seconds": 45,
+        "principal_relation_count": 14,
+        "factorbase_mod2_quotient_dimension": 34,
+        "peak_rss_bytes": 1547022336,
+        "checkpoint": "artifacts/local/elliptic-curves/elkies-r17-hecke-s-class-v1/parameter-sweep/val4-limit3.toml",
+        "checkpoint_sha256": "b1d9282f88e2b3754f48fcde65e3c53cafc814bde5d83c3c92effde373b4f1bd",
+        "log_sha256": "8ee57ddae40110f2bfe0e082db769fe44f917f5fc211b768027c08400c560bb6"
+      },
+      {
+        "valuation_radius": 12,
+        "enumeration_limit": 2,
+        "random_seed": 20260902,
+        "timeout_seconds": 45,
+        "principal_relation_count": 14,
+        "factorbase_mod2_quotient_dimension": 34,
+        "peak_rss_bytes": 1545920512,
+        "checkpoint": "artifacts/local/elliptic-curves/elkies-r17-hecke-s-class-v1/parameter-sweep/val12-limit2.toml",
+        "checkpoint_sha256": "10d4c0b1e3d7e8b24a3ac2f4522cdf73ef97d9e2d83fd22e0d79c45f8becdd57",
+        "log_sha256": "fab9f7d31492ec6654cbf865ef8edee03712f807b6b98ed21bd7dbfa948e324d"
+      }
+    ],
+    "all_S_ideals_augmented_factorbase": {
+      "method": 2,
+      "valuation_radius": 4,
+      "enumeration_limit": 3,
+      "random_seed": 20260902,
+      "factorbase_columns": 66,
+      "declared_S_columns_visible_in_factorbase": 25,
+      "missing_S_ideals": 0,
+      "principal_relation_count": 15,
+      "augmented_mod2_rank": 32,
+      "factorbase_mod2_quotient_dimension": 34,
+      "outcome": "strict_wall_timeout_with_exact_zero-gain_checkpoint",
+      "timeout_seconds": 120,
+      "wall_seconds": 123.21,
+      "peak_rss_bytes": 1561526272,
+      "checkpoint": "artifacts/local/elliptic-curves/elkies-r17-hecke-s-class-v1/s-augmented/rank21-bound240-val4-limit3-120s.toml",
+      "checkpoint_sha256": "a2ede03b365b7892ce614f5d1bb4d65b023f4437a0886666d16f60a5b273200e",
+      "log_sha256": "3701ef8745926e8733971e3d5bd8aa17d202387c5a1dfe9a7575d02752fea1b9"
+    },
+    "direct_S_multiplier_collector": {
+      "method": 4,
+      "valuation_radius": 4,
+      "enumeration_limit": 2,
+      "random_seed": 20260902,
+      "factorbase_columns": 66,
+      "declared_S_columns_visible_in_factorbase": 25,
+      "missing_S_ideals": 0,
+      "principal_relation_count": 15,
+      "augmented_mod2_rank": 32,
+      "factorbase_mod2_quotient_dimension": 34,
+      "outcome": "strict_wall_timeout_with_exact_zero-gain_checkpoint",
+      "timeout_seconds": 120,
+      "wall_seconds": 123.52,
+      "peak_rss_bytes": 1574998016,
+      "checkpoint": "artifacts/local/elliptic-curves/elkies-r17-hecke-s-class-v1/s-targeted/rank21-bound240-val4-limit2-120s.toml",
+      "checkpoint_sha256": "a69087555afced42d62fd480b8140370aaab9f177a2bbdd21b4283e0ea64c900",
+      "log_sha256": "a98a9a61adc881e086f2e3ee41efac46a0517fbfef856ab55a6c7aa3b06ed518"
+    },
+    "warning": "These are exact quotients of a bounded materialized factor base. Even with every S ideal visible, residual dimension 34 is not a class-group, S-class-group, Selmer, or rank bound."
+  },
+  "input_manifest": {
+    "path": "artifacts/generated-results/elliptic-curves/elkies_2026_relative_2selmer_suite_inputs_v1.json",
+    "sha256": "9d9713d69b59764c3fabcc726296f1ec6c6b44c0be9ceabc0c00652472ce1867"
+  },
+  "pari_technical_parameter_sweep": [
+    {
+      "bnf_tech": [0.01, 4, 20],
+      "log": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-tech-sweep-v1/c0p01_4_20/cache/control-r21-t3_8/bnf.log",
+      "log_sha256": "3eb1fc203406d02278796c6f740461dda6ebf5b210e608c33823628dca621969",
+      "outcome": "strict_wall_timeout",
+      "peak_rss_bytes": 265748480,
+      "timeout_seconds": 240,
+      "wall_seconds": 240.043
+    },
+    {
+      "bnf_tech": [0.03, 4, 20],
+      "log": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-tech-sweep-v1/c0p03_4_20/cache/control-r21-t3_8/bnf.log",
+      "log_sha256": "59544221abb8d9a3e14618f5acdade779427beb9a241986a68aa7ecc33fb3157",
+      "outcome": "strict_wall_timeout",
+      "peak_rss_bytes": 249769984,
+      "timeout_seconds": 240,
+      "wall_seconds": 240.08
+    },
+    {
+      "bnf_tech": [0.1, 4, 0],
+      "log": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-tech-sweep-v1/c0p1_4_0/cache/control-r21-t3_8/bnf.log",
+      "log_sha256": "18c9c75de0b1831edac3c236289235d1baf12c7beb07bb823e62e1b83237fdb4",
+      "outcome": "strict_wall_timeout",
+      "peak_rss_bytes": 256872448,
+      "timeout_seconds": 240,
+      "wall_seconds": 240.052
+    },
+    {
+      "bnf_tech": [0.3, 4, 20],
+      "log": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-tech-sweep-v1/c0p3_4_20/cache/control-r21-t3_8/bnf.log",
+      "log_sha256": "265f4f33431df2d131b7632f207ea067a7920b808ba44102e28578ec49dcaae3",
+      "outcome": "strict_wall_timeout",
+      "peak_rss_bytes": 258289664,
+      "timeout_seconds": 240,
+      "wall_seconds": 240.076
+    }
+  ],
+  "pari_flag_zero_experiment": {
+    "backend": "Sage 10.9 with PARI 2.17.3",
+    "bnf_flag": 0,
+    "bnf_tech": [0.03, 4, 20],
+    "log": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-flag0-rank21-v1/control-r21-t3_8/bnf.log",
+    "log_sha256": "03502989c0fdc3190bf6f088923c3f61a55d8c7f36368b57cdb6a2f8e66a0db0",
+    "outcome": "strict_wall_timeout_during_relation_collection",
+    "peak_rss_bytes": 260067328,
+    "result": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-flag0-rank21-v1/result.json",
+    "result_sha256": "120aa2627de7d68935c41f3b63cbc4035f7bd6816440e953b363bc12a4ab3796",
+    "timeout_seconds": 600,
+    "wall_seconds": 600.2392782770039
+  },
+  "relation_ledger_experiments": [
+    {
+      "after_canonical_S_dimension": 34,
+      "candidates": 25170,
+      "cycles": 449,
+      "factorbase_bound": 240,
+      "ledger": "artifacts/local/elliptic-curves/elkies-r17-bnf-free-v1/control-r21-cycle-pairs/ledger.json",
+      "ledger_sha256": "e96e33889d0bf679635dcb17d5cf76d657644f50b234d3635bca71807a337bed",
+      "log": "artifacts/local/elliptic-curves/elkies-r17-bnf-free-v1/control-r21-cycle-pairs/run.log",
+      "log_sha256": "ab53784bc805641cb3a01882b374257eec4fbd39dc6b5249b9dc2736b735356c",
+      "outcome": "completed_bounded_ledger_zero_after_S_gain",
+      "peak_rss_bytes": 316129280,
+      "relation_rank": 2,
+      "special_ideal_mode": "cycle-pairs within factorbase",
+      "wall_seconds": 139.43
+    },
+    {
+      "after_canonical_S_dimension": 34,
+      "candidates": 48824,
+      "cycles": 96,
+      "factorbase_bound": 240,
+      "ledger": "artifacts/local/elliptic-curves/elkies-r17-bnf-free-v1/control-r21-outside-specials/ledger.json",
+      "ledger_sha256": "f9179113d80b89425a264255f318f6a07a94d6fc60af2cacf9b4de2337d99547",
+      "log": "artifacts/local/elliptic-curves/elkies-r17-bnf-free-v1/control-r21-outside-specials/run.log",
+      "log_sha256": "d52ec1c151f38819c5b633950bfbebf3b134a2b2ad235a84319ca6c5b8ee9d56",
+      "outcome": "completed_bounded_ledger_zero_after_S_gain",
+      "peak_rss_bytes": 374456320,
+      "relation_rank": 2,
+      "special_ideal_mode": "cycle-pairs outside factorbase",
+      "wall_seconds": 280.63
+    },
+    {
+      "after_canonical_S_dimension": 125,
+      "after_canonical_S_rank_gain": 0,
+      "candidates": 6560,
+      "cycles": 666,
+      "factorbase_bound": 1000,
+      "factorbase_columns": 310,
+      "large_prime_edges": 3215,
+      "large_prime_incidence_nullity": 666,
+      "large_prime_incidence_rank": 2549,
+      "large_prime_vertices": 7511,
+      "ledger": "artifacts/local/elliptic-curves/elkies-r17-bnf-free-v2/control-r21-hypergraph/ledger.json",
+      "ledger_sha256": "1de81487709a87de46c43c34e74633b4c030d0476461c71a2a7ae9f8a6287d54",
+      "log": "artifacts/local/elliptic-curves/elkies-r17-bnf-free-v2/control-r21-hypergraph/run.log",
+      "log_sha256": "f18b69737e0f241e7a18a68abc8d914606077c5d470f61603ac76e18c0bd3584",
+      "norm_factor_mode": "exact",
+      "outcome": "completed_exact_multi_large_prime_hypergraph_zero_after_S_gain",
+      "peak_rss_bytes": 279097344,
+      "relation_rank": 1,
+      "special_ideal_mode": "cycle-pairs with sparse-hypergraph elimination",
+      "wall_seconds": 26.54
+    }
+  ],
+  "schema": "elliptic-curves.elkies-2026-relative-2selmer-open-bottleneck-benchmarks.v2",
+  "status": "INCOMPLETE_GLOBAL_CLASS_UNIT_GROUP"
+}

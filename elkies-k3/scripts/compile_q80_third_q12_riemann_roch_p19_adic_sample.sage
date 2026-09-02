@@ -553,107 +553,8 @@ def element_from_coordinates(coordinates):
     return result
 
 
-def e_mul(left, right):
-    coefficients = [old_function.zero()] * 5
-    for left_degree, left_coefficient in enumerate(left):
-        for right_degree, right_coefficient in enumerate(right):
-            coefficients[left_degree + right_degree] += left_coefficient * right_coefficient
-    # z^3=-b*z^2-c*z-d for the monic cubic z^3+b*z^2+c*z+d.
-    b_cubic = monic_equation[2]
-    c_cubic = monic_equation[1]
-    d_cubic = monic_equation[0]
-    for degree in (4, 3):
-        coefficient = coefficients[degree]
-        coefficients[degree] = old_function.zero()
-        coefficients[degree - 3] -= coefficient * d_cubic
-        coefficients[degree - 2] -= coefficient * c_cubic
-        coefficients[degree - 1] -= coefficient * b_cubic
-    return tuple(coefficients[:3])
-
-
-def e_pow(value, exponent):
-    result = ONE_E
-    base = value
-    while exponent:
-        if exponent & 1:
-            result = e_mul(result, base)
-        base = e_mul(base, base)
-        exponent >>= 1
-    return result
-
-
 x_element = element_from_coordinates(x_quadratic_coordinates)
 y_element = element_from_coordinates(y_quadratic_coordinates)
-relation_terms = (
-    e_pow(y_element, 2),
-    e_mul(x_element, y_element),
-    y_element,
-    e_scale(e_pow(x_element, 3), -1),
-    e_scale(e_pow(x_element, 2), -1),
-    e_scale(x_element, -1),
-    e_scale(ONE_E, -1),
-)
-
-
-def constant_relation_kernel(function_values):
-    rows = []
-    for component in range(3):
-        values = [value[component] for value in function_values]
-        numerators = [value.numerator() for value in values]
-        denominators = [value.denominator() for value in values]
-        cleared_numerators = []
-        for index, numerator in enumerate(numerators):
-            cleared = numerator
-            for other_index, denominator in enumerate(denominators):
-                if other_index != index:
-                    cleared *= denominator
-            cleared_numerators.append(cleared)
-        maximum_degree = max(
-            (-1 if not numerator else int(numerator.degree()))
-            for numerator in cleared_numerators
-        )
-        for degree in range(maximum_degree + 1):
-            rows.append([numerator[degree] for numerator in cleared_numerators])
-    return Matrix(quadratic, rows).right_kernel()
-
-
-relation_kernel = constant_relation_kernel(relation_terms)
-if relation_kernel.dimension() != 1:
-    raise ArithmeticError(
-        f"p-adic Weierstrass relation has dimension {relation_kernel.dimension()}"
-    )
-relation = vector(quadratic, relation_kernel.basis()[0])
-if relation[0].valuation() != 0 or relation[3].valuation() != 0:
-    raise ArithmeticError("p-adic Weierstrass relation has non-unit leading terms")
-relation /= relation[0]
-cubic_scale = relation[3]
-a1 = relation[1]
-a2 = relation[4]
-a3 = relation[2] * cubic_scale
-a4 = relation[5] * cubic_scale
-a6 = relation[6] * cubic_scale**2
-curve = EllipticCurve(quadratic, [a1, a2, a3, a4, a6])
-if curve.discriminant().valuation() != 0:
-    raise ArithmeticError("p-adic Weierstrass sample is not smooth")
-
-weierstrass_x = e_scale(x_element, cubic_scale)
-weierstrass_y = e_scale(y_element, cubic_scale)
-literal_relation = e_add(
-    e_add(
-        e_add(e_pow(weierstrass_y, 2), e_scale(e_mul(weierstrass_x, weierstrass_y), a1)),
-        e_scale(weierstrass_y, a3),
-    ),
-    e_scale(
-        e_add(
-            e_add(
-                e_add(e_pow(weierstrass_x, 3), e_scale(e_pow(weierstrass_x, 2), a2)),
-                e_scale(weierstrass_x, a4),
-            ),
-            e_scale(ONE_E, a6),
-        ),
-        -1,
-    ),
-)
 
 
 def gauss_valuation(polynomial):
@@ -662,48 +563,14 @@ def gauss_valuation(polynomial):
     return min(coefficient.valuation() for coefficient in polynomial.list())
 
 
-for coefficient in literal_relation:
-    if gauss_valuation(coefficient.denominator()) != 0:
-        raise ArithmeticError("literal-replay denominator is not a p-adic unit")
-    if gauss_valuation(coefficient.numerator()) < digits:
-        raise ArithmeticError("literal Weierstrass replay failed modulo 19^5")
-
-
-def local_r_coordinates_mod19(value):
-    constant, anti = residue_coordinates(value)
-    # omega -> 16*(2*r+12)=2+13*r modulo 19.
-    return [(constant + 2 * anti) % prime, (13 * anti) % prime]
-
-
-weierstrass_coefficients = [a1, a2, a3, a4, a6]
-local_weierstrass = [local_r_coordinates_mod19(value) for value in weierstrass_coefficients]
-is_legacy_sample = base_constant % prime == 16 and base_anti % prime == 7
-if is_legacy_sample and local_weierstrass != control["weierstrass"]["a1_a2_a3_a4_a6"]:
-    raise ArithmeticError(
-        "p-adic Weierstrass equation does not reduce to the legacy T=1 positive control"
-    )
-
-
-def rational_function_record(value):
-    value = old_function(value)
-    return {
-        "numerator_coefficients_low_to_high_W_mod_19_power_1_omega": [
-            residue_coordinates(coefficient) for coefficient in value.numerator().list()
-        ],
-        "denominator_coefficients_low_to_high_W_mod_19_power_1_omega": [
-            residue_coordinates(coefficient) for coefficient in value.denominator().list()
-        ],
-    }
-
-
-def function_record(value):
-    return {
-        "coefficients_low_to_high_z": [
-            rational_function_record(coefficient) for coefficient in value
-        ]
-    }
-
-
+# All RR generators have denominators supported on the degree-five conductor.
+# Keep products in the compact representation
+#
+#     (H-exponent, three polynomial numerators in the basis 1,z,z^2)
+#
+# instead of repeatedly canonicalizing generic rational functions in W.  The
+# old generic multiplication dominated high-precision sample production even
+# though the same compact algebra was already used below for the inverse maps.
 conductor_polynomial = conductor.numerator()
 if conductor.denominator() != 1 or conductor_polynomial.degree() != 5:
     raise ArithmeticError("specialized conductor is not a degree-five polynomial")
@@ -731,8 +598,6 @@ def rational_element_to_conductor_power(value, exponent):
     return exponent, tuple(result)
 
 
-X_H = rational_element_to_conductor_power(weierstrass_x, 2)
-Y_H = rational_element_to_conductor_power(weierstrass_y, 3)
 ONE_H = (0, (conductor_polynomial.parent().one(),) + (conductor_polynomial.parent().zero(),) * 2)
 W_H = (0, (conductor_polynomial.parent().gen(),) + (conductor_polynomial.parent().zero(),) * 2)
 Z_H = (0, (conductor_polynomial.parent().zero(), conductor_polynomial.parent().one(), conductor_polynomial.parent().zero()))
@@ -811,6 +676,95 @@ def h_relation_kernel(function_values):
                 if kernel.dimension() <= 1:
                     return kernel, good_values
     return Matrix(quadratic, rows).right_kernel(), good_values
+
+
+raw_X_H = rational_element_to_conductor_power(x_element, 2)
+raw_Y_H = rational_element_to_conductor_power(y_element, 3)
+relation_terms = (
+    h_pow(raw_Y_H, 2),
+    h_mul(raw_X_H, raw_Y_H),
+    raw_Y_H,
+    h_scale(h_pow(raw_X_H, 3), -1),
+    h_scale(h_pow(raw_X_H, 2), -1),
+    h_scale(raw_X_H, -1),
+    h_scale(ONE_H, -1),
+)
+relation_kernel, unused_relation_values = h_relation_kernel(relation_terms)
+if relation_kernel.dimension() != 1:
+    raise ArithmeticError(
+        f"p-adic Weierstrass relation has dimension {relation_kernel.dimension()}"
+    )
+relation = vector(quadratic, relation_kernel.basis()[0])
+if relation[0].valuation() != 0 or relation[3].valuation() != 0:
+    raise ArithmeticError("p-adic Weierstrass relation has non-unit leading terms")
+relation /= relation[0]
+cubic_scale = relation[3]
+a1 = relation[1]
+a2 = relation[4]
+a3 = relation[2] * cubic_scale
+a4 = relation[5] * cubic_scale
+a6 = relation[6] * cubic_scale**2
+curve = EllipticCurve(quadratic, [a1, a2, a3, a4, a6])
+if curve.discriminant().valuation() != 0:
+    raise ArithmeticError("p-adic Weierstrass sample is not smooth")
+
+weierstrass_x = e_scale(x_element, cubic_scale)
+weierstrass_y = e_scale(y_element, cubic_scale)
+X_H = h_scale(raw_X_H, cubic_scale)
+Y_H = h_scale(raw_Y_H, cubic_scale)
+literal_relation = h_add(
+    h_add(
+        h_add(h_pow(Y_H, 2), h_scale(h_mul(X_H, Y_H), a1)),
+        h_scale(Y_H, a3),
+    ),
+    h_scale(
+        h_add(
+            h_add(
+                h_add(h_pow(X_H, 3), h_scale(h_pow(X_H, 2), a2)),
+                h_scale(X_H, a4),
+            ),
+            h_scale(ONE_H, a6),
+        ),
+        -1,
+    ),
+)
+if not h_is_zero_mod_19_power(literal_relation):
+    raise ArithmeticError(f"literal Weierstrass replay failed modulo 19^{digits}")
+
+
+def local_r_coordinates_mod19(value):
+    constant, anti = residue_coordinates(value)
+    # omega -> 16*(2*r+12)=2+13*r modulo 19.
+    return [(constant + 2 * anti) % prime, (13 * anti) % prime]
+
+
+weierstrass_coefficients = [a1, a2, a3, a4, a6]
+local_weierstrass = [local_r_coordinates_mod19(value) for value in weierstrass_coefficients]
+is_legacy_sample = base_constant % prime == 16 and base_anti % prime == 7
+if is_legacy_sample and local_weierstrass != control["weierstrass"]["a1_a2_a3_a4_a6"]:
+    raise ArithmeticError(
+        "p-adic Weierstrass equation does not reduce to the legacy T=1 positive control"
+    )
+
+
+def rational_function_record(value):
+    value = old_function(value)
+    return {
+        "numerator_coefficients_low_to_high_W_mod_19_power_1_omega": [
+            residue_coordinates(coefficient) for coefficient in value.numerator().list()
+        ],
+        "denominator_coefficients_low_to_high_W_mod_19_power_1_omega": [
+            residue_coordinates(coefficient) for coefficient in value.denominator().list()
+        ],
+    }
+
+
+def function_record(value):
+    return {
+        "coefficients_low_to_high_z": [
+            rational_function_record(coefficient) for coefficient in value
+        ]
+    }
 
 
 def inverse_formula(target, weighted_bound):

@@ -101,6 +101,35 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   process introduces generic and held-out control points only afterward and
   labels recovered classes with exact finite-reduction coordinates. Resource
   stops remain incomplete artifacts.
+- `run_elkies_2026_relative_2selmer_checkpointed.py`: resumable open descent
+  which persists a fully certified cubic BNF, transports it through an exact
+  `polredbest` field isomorphism, applies Simon's norm/sign/local conditions,
+  embeds MW17 by exact squareclass tests, and builds/searches explicit
+  intersections of quadrics for quotient classes before loading held-out
+  exceptional points. Enumeration limits and resource stops are recorded
+  fail-closed.
+- `run_elkies_2026_pari219_bnf_benchmark.py`: owns and benchmarks the six-
+  parameter threaded BNF collector introduced on PARI's 2.19 development
+  branch. It retains a binary checkpoint only after `bnfcertify`; timeouts
+  retain factor-base and relation-deficit telemetry but no class-group or
+  Selmer claim.
+- `audit_elkies_2026_known_kummer_quotients.py`: fast class-group-free exact
+  audit of the *supplied* Kummer subgroup. It evaluates `4*x(P)-zeta` in
+  squarefree residue factors of an integral two-division polynomial, certifies
+  MW17 plus the known exceptional directions on all five controls, and checks
+  MW17 on the ten high-Nagao inputs. It neither computes a Selmer upper bound
+  nor searches for unknown directions.
+- `build_elkies_2026_known_quotient_covers.py`: enumerates all 3,851 nonzero
+  classes in the five certified known exceptional quotient subgroups and
+  constructs an exact intersection of quadrics with a verified rational point
+  for every class. The compact manifest hashes the full local ledger; this is
+  a realized-class control corpus, not a full Selmer quotient.
+- `run_elkies_2026_s_class_hecke_monitor.jl`: checkpoints Hecke's exact
+  principal relation rows modulo S columns while its open-source class-group
+  collector runs. It can add every S-prime ideal to the factor base and method
+  4 directly multiplies target ideals by S-ideals before short-element
+  enumeration. Closing its bounded factor-base quotient would still require a
+  factor-base generation proof, units, and local Selmer conditions.
 
 ## Shared arithmetic
 

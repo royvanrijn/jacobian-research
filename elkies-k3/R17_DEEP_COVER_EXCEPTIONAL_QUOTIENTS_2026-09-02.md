@@ -1,5 +1,7 @@
 # R17 low-genus covers at the rank-25--28 fibres
 
+<!-- status-consumer: EC-K3-ELKIES-2026-LOW-GENUS-COVER-QUOTIENTS 31a6363906ad0ac0 -->
+
 ## Result
 
 The tested degree-three and degree-four equation universes add no exceptional

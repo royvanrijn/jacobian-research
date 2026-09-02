@@ -126,6 +126,42 @@ Important distinctions made explicit by the catalogue:
   the strict 120-second limit inside `ellrankinit` at 230,608,896 bytes peak
   observed RSS, so it contains no Selmer dimension or candidate-promotion
   evidence.
+- `elkies_2026_relative_2selmer_checkpointed_rank21_c1p1_600s_v1.json`
+  calibrates the separated BNF stage on the rank-21 control with PARI
+  `tech=[0.1,4,20]`. Relation collection reaches the strict 600-second limit
+  at 256,798,720 bytes peak observed RSS. Its status is `INCOMPLETE_BNF`; the
+  later Selmer, embedding, and quotient-cover stages were not run and no rank
+  or Selmer bound is claimed.
+- `elkies_2026_relative_2selmer_global_engine_benchmarks_v1.json` records two
+  further 600-second rank-21 global-field failures: a reduced-field,
+  locally tuned PARI 2.17.4 build and exact Hecke 0.40.2 method 2. Both stop
+  before the class group is available, so neither run reaches the Selmer,
+  embedding, or covering stages.
+- `elkies_2026_relative_2selmer_open_bottleneck_benchmarks_v2.json` extends
+  that fail-closed benchmark with four PARI technical-parameter trials, two
+  Hecke bound-240 trials, an aggressive PARI restart build, and three exact
+  bounded relation ledgers. It also pins three archimedean Hecke variants, an
+  exact factor base augmented by all 25 S-prime ideals, and a direct
+  S-multiplier relation collector. It now also records the official PARI 2.19
+  development branch's six-parameter threaded engine: the best 300-second
+  run reaches a 1,996-ideal factor base but retains a 1,635-relation request.
+  The third ledger uses exact multi-large-prime sparse-hypergraph elimination
+  at factor-base bound 1,000; its 666 closed dependencies give zero rank gain
+  modulo the canonical S-span.
+  None completes the global class/unit group; relation deficits and residual
+  dimension 34 are explicitly not Selmer bounds.
+- `elkies_2026_known_kummer_quotients_controls_v1.json` and
+  `elkies_2026_known_kummer_quotients_suite_v1.json` are class-group-free
+  exact lower-bound audits. Residue squareclasses certify known mod-2 ranks
+  `21,25,26,27,28`, hence exceptional dimensions `4,8,9,10,11`, on the five
+  controls and generic rank 17 on all ten high-Nagao candidates. They do not
+  compute the full Selmer quotient, unknown classes, or blind recovery.
+- `elkies_2026_known_exceptional_quotient_covers_v1.json` pins all 42 basis
+  covers and hashes the full local enumeration of 3,851 nonzero classes in
+  the known exceptional control subgroups. Every explicit intersection of
+  quadrics has a verified rational witness. These are realized positive
+  controls; the artifact does not assert that the known subgroup exhausts the
+  relative Selmer quotient.
 - `elkies_2026_bisection_specialization_controls_v1.json` is the complete
   195,600-test evaluation of the 39,120 equation-level bisections at the four
   rank-25--28 controls and ICARM curve 394. It finds split counts

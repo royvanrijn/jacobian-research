@@ -1,6 +1,11 @@
 #!/usr/bin/env sage-python
 """Certify the lattice and boundary anatomy of the new E6+A1 rho-19 K3.
 
+status: ACTIVE_PROOF
+claim: generic NS/T, saturation, singular boundaries, and first chamber obstruction
+inputs: rational-surface quadratic-rank-search certificate
+outputs: elkies-k3-e6a1-rho19-k3-dissection-v1.json
+
 This companion to ``certify_rational_surface_quadratic_rank_search.sage``
 pins the integral Neron--Severi lattice, its discriminant form and saturation,
 the generic transcendental lattice, the positive frame used by elliptic-
@@ -481,11 +486,12 @@ root_gram = root_basis * positive_frame * root_basis.transpose()
 if len(roots) != 156 or root_basis.rank() != 15 or root_gram.det() != 36:
     raise ArithmeticError("generic frame root system changed")
 
-# Complete smallest degree-two isotropic layer.  In the split coordinates
-# NS=U+(-M), a class D=e+2f+w is isotropic exactly when w^2=4.  Reduce every
-# norm-four vector to the chamber of the current 2E6+A3 Weyl group, then split
-# U for one representative of every orbit.  This is a lattice census only;
-# it does not replace the effective-cone/nef gate.
+# Complete nominal smallest degree-two isotropic layer.  In split coordinates
+# NS=U+(-M), a class D=e+2f+w is isotropic exactly when w^2=4, but D.O=-1.
+# Thus O is fixed and D-O has old-fibre degree one: these are section pencils
+# written in a misleading degree-two presentation, not genuine 2-neighbours.
+# The child-frame recurrence below is retained as a regression for that exact
+# obstruction.
 all_short = IntegralLattice(positive_frame).short_vectors(5)
 positive_roots = [
     vector(ZZ, item)
@@ -531,6 +537,15 @@ for orbit_index, representative in enumerate(degree_two_orbits):
     )
     if divisor * generic_ns * divisor != 0 or gcd(list(divisor)) != 1:
         raise ArithmeticError("degree-two orbit did not give a primitive isotropic class")
+    zero_pairing = divisor * generic_ns * old_zero
+    reduced_divisor = divisor - old_zero
+    if zero_pairing != -1:
+        raise ArithmeticError("nominal degree-two zero-section obstruction changed")
+    if (
+        reduced_divisor * generic_ns * reduced_divisor != 0
+        or reduced_divisor * generic_ns * old_fibre != 1
+    ):
+        raise ArithmeticError("zero-section removal did not give a degree-one pencil")
     child_frame = split_primitive_isotropic(generic_ns, divisor)
     child_roots = root_data(child_frame)
     if child_roots != (15, 156, 36):
@@ -540,6 +555,11 @@ for orbit_index, representative in enumerate(degree_two_orbits):
             "orbit": orbit_index,
             "dominant_w": list(representative),
             "isotropic_divisor_in_ns_basis": [int(entry) for entry in divisor],
+            "intersection_with_old_zero": int(zero_pairing),
+            "fixed_component": "O with multiplicity one",
+            "reduced_degree_one_divisor_in_ns_basis": [
+                int(entry) for entry in reduced_divisor
+            ],
             "child_frame_digest": matrix_digest(child_frame),
             "child_root_data": list(child_roots),
         }
@@ -847,13 +867,26 @@ payload = {
             "weyl_orbit_count": len(degree_two_orbits),
             "orbit_records": degree_two_records,
             "result": (
-                "Every orbit has child root data (15,156,36), so this layer "
-                "does not lower the root rank."
+                "Every class has D.O=-1 and reduces by the fixed zero section "
+                "to old-fibre degree one. The repeated child root data "
+                "(15,156,36) therefore describe section presentations, not "
+                "genuine degree-two neighbors."
             ),
             "scope": (
                 "Complete for this isotropic shape modulo the current "
-                "2E6+A3 Weyl group; global nefness was not asserted."
+                "2E6+A3 Weyl group; the physical zero-section obstruction is exact."
             ),
+        },
+        "nominal_degree_three_obstruction": {
+            "shape": "D=e+3*f+w with w^2=6 in U+(-M)",
+            "intersection_with_old_zero": -2,
+            "fixed_component": "O with multiplicity two",
+            "degree_after_removal": 1,
+            "result": "The norm-six layer is likewise not a genuine degree-three neighbor.",
+        },
+        "first_genuine_shapes": {
+            "degree_two": "D=2*e+2*f+w with w^2=8 and D.O=0",
+            "degree_three": "D=3*e+3*f+w with w^2=18 and D.O=0",
         },
     },
 }

@@ -17861,7 +17861,13 @@ MESTRE_TEST_RELATION_DETERMINANT=1 \
 
 ## Rational-surface quadratic rank search
 
-<!-- status-consumer: EC-K3-RES-QBC-E6A1-RHO19 933ad73d68dd2a8e -->
+<!-- status-consumer: EC-K3-RES-QBC-E6A1-RHO19 7103fa2a1a4e7ba2 -->
+
+<!-- status-consumer: EC-K3-E6A1-RHO19-GENUINE-Q2-MW3 cd4314040bb028f7 -->
+
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-EQUATION 8cfa9387612ac443 -->
+
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2 2130bc147519ac6b -->
 
 Generate and byte-check the low-complexity rational-surface catalogue, the
 Golay/NS0031 control import, the complete polynomial degree-`(2,2)` twist
@@ -17873,10 +17879,84 @@ section elimination, and the new one-modulus `E6+A1` Picard-19 family with
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_rational_surface_quadratic_rank_search.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6a1_rho19_k3_dissection.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6a1_rho19_k3_dissection.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6a1_rho19_genuine_q2_neighbors.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6a1_rho19_genuine_q2_neighbors.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/compile_e6a1_rho19_orbit103_rr_weierstrass.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/compile_e6a1_rho19_orbit103_rr_weierstrass.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6a1_rho19_orbit103_arithmetic_and_orbit96_audit.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6a1_rho19_orbit103_arithmetic_and_orbit96_audit.sage --check
 ```
 
 The replay proves the displayed generic rank decomposition `1+1`, K3 height
-matrix `diag(1/3,3)`, and generic Picard rank 19.  Its ansatz completeness is
+matrix `diag(1/3,3)`, generic Picard rank 19, exact MW saturation, generic
+transcendental lattice `U(3)+<4>`, four singular-K3 boundary lattices, and the
+complete zero-section obstruction in the nominal norm-four and norm-six
+layers.  The final replay exhausts the genuine norm-eight quadratic layer:
+`119` Weyl orbits, `116` primitive classes, `90` physical degree-two classes,
+and `18` nef MW-rank-3 frames in four root types.  The ansatz completeness is
 limited to nondegenerate polynomial twist sections with both `x` and `y` of
-degree at most two.  See
-[`elkies-k3/RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md`](elkies-k3/RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md).
+degree at most two, and the genuine neighbor census is limited to isotropic
+classes `2*e+2*f-w` with `w^2=8`.  The orbit-103 replay additionally proves
+the complete resolved basis for `P0+P1+A3_2`, its binary quartic with rational
+origin, and the explicit `2I1*+2I3+4I1` Jacobian equation.  The final replay
+proves arithmetic rank two, exhibits the anti-invariant third geometric
+direction over `QQ(sqrt(-3))`, and rejects the naive orbit-96 tangent trace by
+its actual `2E6+A3` fibre fingerprint.  See
+[`elkies-k3/RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md`](elkies-k3/RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md)
+and
+[`elkies-k3/E6A1_RHO19_K3_DISSECTION_2026-09-02.md`](elkies-k3/E6A1_RHO19_K3_DISSECTION_2026-09-02.md)
+and
+[`elkies-k3/E6A1_RHO19_GENUINE_Q2_NEIGHBORS_2026-09-02.md`](elkies-k3/E6A1_RHO19_GENUINE_Q2_NEIGHBORS_2026-09-02.md)
+and
+[`elkies-k3/E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md`](elkies-k3/E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md).
+
+### E6 rank sum three and rationalized D6 frontier
+
+<!-- status-consumer: EC-K3-RES-QBC-E6-II-RANK3-RHO19 5b10608e230145e9 -->
+
+<!-- status-consumer: EC-K3-RES-D6-RATIONALIZED-SECTION-CHART 06442a208822d255 -->
+
+Generate and byte-check the exact `E6` rank split `2+1`, generic Picard-rank
+19 K3, saturated determinant-24 Neron--Severi lattice, and same-NS rootless
+MW17 impossibility with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6_ii_rank3_quadratic_base_change.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6_ii_rank3_quadratic_base_change.sage --check
+```
+
+Replay the rational `D6` equation, its polynomial marked-section chart, and
+the bounded height-30 necessary-condition search for a second section with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_rationalized_d6_rank2_section_chart.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_rationalized_d6_rank2_section_chart.sage --check
+```
+
+The D6 search is bounded and is not a rank-four nonexistence theorem.  The
+proof and search boundaries are recorded in
+[`elkies-k3/E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md`](elkies-k3/E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md).

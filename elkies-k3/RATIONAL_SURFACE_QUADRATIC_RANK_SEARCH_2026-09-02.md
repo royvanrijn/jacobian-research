@@ -1,6 +1,6 @@
 # Rational elliptic surfaces and quadratic rank decompositions — 2026-09-02
 
-<!-- status-consumer: EC-K3-RES-QBC-E6A1-RHO19 933ad73d68dd2a8e -->
+<!-- status-consumer: EC-K3-RES-QBC-E6A1-RHO19 7103fa2a1a4e7ba2 -->
 
 ## Outcome
 
@@ -53,7 +53,10 @@ budget are replayed by
 Its generated certificate is
 [`../artifacts/generated-results/elkies-k3-rational-surface-quadratic-rank-search-v1.json`](../artifacts/generated-results/elkies-k3-rational-surface-quadratic-rank-search-v1.json).
 Its SHA-256 hash is
-`10e7a5ff43eeafc6085914492853f52597079ea1a8d762be564afae6e2c3a8dc`.
+`888c7bba059af4cff18a8baa359b60f227575a4835d28b7764f62c42690f8d8c`.
+The integral lattice, saturation, transcendental lattice, special fibres, and
+first neighbor layer are analysed separately in
+[`E6A1_RHO19_K3_DISSECTION_2026-09-02.md`](E6A1_RHO19_K3_DISSECTION_2026-09-02.md).
 
 This is a new equation family in the repository.  It is not being attributed
 to the literature cited below.  The underlying `E6+A1` rational-surface chart
@@ -213,6 +216,12 @@ Q(lambda)/Q(0)
 which is nonconstant.  Hence the lattice-polarized K3 family is
 non-isotrivial.  A non-isotrivial one-dimensional K3 family with nineteen
 independent divisor classes has generic Picard rank exactly nineteen.
+
+The integral divisor Gram has discriminant group `Z/3+Z/12`.  Its only
+possible proper even overlattices have index three.  At `(k,t)=(1,3)`, none
+of `P0`, `P1`, `P0+P1`, or `P0-P1` is three-divisible on the exact good fibre, so the
+displayed MW lattice is saturated and `abs(disc NS)=36` is exact.  The full
+argument and Gram matrix are in the dissection note linked above.
 Shioda--Tate now makes the MW rank exactly two and the twist rank exactly one.
 
 For rational `k`, the clean arithmetic open is especially simple:

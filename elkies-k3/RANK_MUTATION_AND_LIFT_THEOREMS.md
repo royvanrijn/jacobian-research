@@ -123,6 +123,42 @@ rank-3 Elkies--K3 calculation. A non-square mismatch cannot be repaired by
 finite-index saturation alone; one of the roots, torsion, heights, Picard rank,
 or NS discriminant is wrong.
 
+### Proposition B2: determinant obstruction to a rootless fibration
+
+<!-- status-consumer: EC-K3-RES-QBC-E6-II-RANK3-RHO19 5b10608e230145e9 -->
+
+Suppose a Picard-rank `rho` K3 surface has a rootless Jacobian elliptic
+fibration.  Put `n=rho-2` and let `D=abs(disc NS(X))`.  If `B_n` is any
+proved upper bound for the Hermite constant `gamma_n`, then
+
+```text
+D >= (4/B_n)^n.
+```
+
+In particular Blichfeldt's bound
+
+```text
+B_n=(2/pi)*Gamma(2+n/2)^(2/n)
+```
+
+gives `(4/B_17)^17=28.8658...`.  A Picard-rank-19 K3 with `D<=28` therefore
+cannot carry a rootless MW17 fibration.
+
+#### Proof
+
+The rootless MW frame is even and positive definite, hence its minimum is at
+least four.  Rootlessness also makes every fibre correction in Shioda's
+height formula zero.  A torsion section would then have height
+`4+2(P.O)>0`, a contradiction, so MW torsion is automatically trivial.
+Theorem B identifies the frame determinant with `D`.  Its Hermite invariant
+is therefore at least `4/D^(1/n)`, while the definition of the Hermite
+constant bounds this above by `B_n`.  Rearranging gives the claim. QED.
+
+The determinant-24 `2E6+A2/MW3` family in
+[`E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md`](E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md)
+is an exact application: the requested same-NS rootless search terminates
+negatively before any neighbour enumeration.
+
 ## 4. When an isotropic lattice vector is an elliptic fibration
 
 ### Theorem C: fibration from a primitive nef isotropic class
@@ -234,6 +270,60 @@ through norm `2*b^2-1` and retain `z=+/-1`. This is the gate used by
 `probe_h92_pinned_r17_targeted_shell_cvp.sage` for the degree-three and
 degree-four reverse searches. It certifies each retained candidate; the
 target-directed ray/scale sampling that proposes candidates remains bounded.
+
+### Proposition C2.2: the old-zero coefficient-swap obstruction
+
+<!-- status-consumer: EC-K3-E6A1-RHO19-GENUINE-Q2-MW3 cd4314040bb028f7 -->
+
+In split coordinates
+
+```text
+NS(X)=U+M(-1),     F=e,     O=f-e,
+```
+
+write an isotropic candidate as
+
+```text
+D=a*e+b*f+w,     w.M.w=2*a*b,     a,b>0.
+```
+
+Then
+
+```text
+D.O=a-b.
+```
+
+If `a<b` and `D` has the effective sign, the old zero is a fixed component.
+Removing it with its exact multiplicity exchanges the two hyperbolic
+coefficients:
+
+```text
+D-(b-a)O = b*e+a*f+w.
+```
+
+In particular the apparent degree-`b` presentation reduces to old-fibre
+degree `a`.  A zero-neutral search at old degree `q` must therefore start at
+`a>=q`; its smallest norm shell is `w.M.w=2q^2`, not `2q`.  For `q=2` and
+`q=3` the first possible shells have norms eight and eighteen.
+
+#### Proof
+
+The identities follow immediately from `e^2=f^2=0`, `e.f=1`, and
+`O=f-e`.  If `D.O<0`, the irreducible effective `(-2)`-curve `O` is fixed.
+The reflection/fixed-component update is
+
+```text
+D <- D+(D.O)O = D-(b-a)O,
+```
+
+which is the displayed coefficient swap and preserves `D^2`.  Its pairing
+with `F=e` is `a`, proving the degree reduction. QED.
+
+The determinant-36 `E6+A1` K3 supplies an exact regression: all fourteen
+nominal `e+2f+w`, `w^2=4`, Weyl orbits reduce to degree one, and the nominal
+norm-six cubic layer has the same obstruction.  Its complete genuine
+norm-eight quadratic census is
+[`E6A1_RHO19_GENUINE_Q2_NEIGHBORS_2026-09-02.md`](E6A1_RHO19_GENUINE_Q2_NEIGHBORS_2026-09-02.md).
 
 ### Proposition C3: certified neighbour loops can change the zero cheaply
 

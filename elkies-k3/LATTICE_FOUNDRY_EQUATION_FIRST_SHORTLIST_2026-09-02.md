@@ -663,6 +663,116 @@ T-arithmetic curve, wider or mixed-degree corridors, and the rootful target's
 `D.F=2,3,4` spectrum remain open.  The existing rootless translation-coset
 formula is not applied to this `A1` target.
 
+## Determinant 714: a formally smooth MW1 source opposite MW16
+
+Continuing the source-first expansion produces a genuine new promotion on
+`K3-cf7f6c91a3a40d32`.  Its named target `F001` has root type `A1` and MW
+rank 16.  Both partner auxiliaries were searched in the complete six-large-
+ambient semistable MW0--2 cut.  Partner one gives 463 MW2 rows and no MW1
+row; 186 have complete bases through pole two.  Partner two gives 548 rows:
+546 MW2 and **two MW1**, with 216 and 2 complete low-pole bases respectively.
+
+The two MW1 rows `S0223` and `S0430` are integrally isometric.  Their common
+source profile is
+
+```text
+reducible fibres:       I5 + I7 + I7
+MW group:               Z, height 102/35
+torsion:                trivial
+basis pole profile:     [1]
+component depths:       (1,2,1)
+target:                 A1 / MW16
+```
+
+The normalized fibre census exhausts all `5^8` and `7^8` degree-eight `A`
+polynomials.  It finds 6 squarefree models over `GF(5)` and 20 over `GF(7)`.
+Both `GF(5)` twist classes and the square `GF(7)` class are empty at the MW1
+marking gate.  The nonsquare `GF(7)` chart is positive: four signed pole-one
+sections occur on two distinct fibre models, all with the exact depths
+`(1,2,1)`.  The fibre artifacts have SHA-256
+`6e35bc342ce730d914c1f98c852222a3ea3fc5def1585235cd47f896b20d1d4d`
+and
+`61f442f5a3d18aafd844b282ac74e83a2641d8531ebb30569297dba4bff6a448`;
+the positive marking artifact has SHA-256
+`60550e97b4ab3f18b0869b479970efdbd372acad29bb07d6b29b8817c4483cf7`.
+
+Both geometrically distinct marked seeds have Jacobian rank 39 in 40
+variables and lift through `7^8`; their unit minors are 2 and 6 modulo 7.
+The apparent 47-equation overdetermination is again exact.  The universal
+node/discriminant identity and the `I5,I7,I7` orders with depths `(1,2,1)`
+force the degree-at-most-18 section residual to be
+`t^2*(t-1)^4*q(t)` with `deg(q)<=10`.  The unit minor retains residual
+coefficients 2 through 12, which kill all eleven coefficients of `q`
+triangularly.  Hence the marked branch is one-dimensional and formally smooth
+over `Z_7`.  The two Hensel and formal certificates have SHA-256
+`e38e8b98f47b10b322530201fe319fc516e6f6cb36aa26d1def0aff02f0eae14`,
+`d7b4e460fb607f37a4395c0abf6e05695faa02e172e06668303bbb95b7466ad5`,
+and
+`6aea3aee698ab94b4b3042ee2ef546919ab62ad3f96a8315419c83d303da3a53`.
+
+A bounded rational scan fixes the unique free coordinate `m8` at every
+allowed integer in `[-40,40]` across both residue disks.  All 23 candidates
+lift through `7^40`, but none reconstructs all forty coefficients over `Q`.
+Its SHA-256 is
+`2e5f32db3decc1774236463908feb23570c4574b213b8c8cba7f96b0af9009a6`.
+This is not an irrationality result.
+
+The marked equations nevertheless give an exact affine curve chart over
+`QQ`: 40 coefficients, 39 independent equations on the certified
+localization, and relative dimension one at the `GF(7)` seed.  The candidate
+T-arithmetic datum has quaternion discriminant 51 and local level 7.  An
+independent Ogg-formula calculation gives genus 21 for `X_0^51(7)` and genus
+two for its full Atkin--Lehner quotient, agreeing with the published
+low-genus table.  This strongly explains the failed rational scan, but the
+Eichler-order identification and a birational map from the marked chart to a
+genus-two equation remain open.  The algebraization artifact has SHA-256
+`b54e40a1dda8b5a2fee91145e5229bffa4004a8a09a526bcd24ddb9102b39309`.
+
+The route compiler formerly compared only root-rank-zero children with named
+targets, even in its declared `A2/MW15` and `A1/MW16` cases.  This was a
+terminal-recognition bug, not a neighbour-enumeration or finite-field bug.
+The stored old beams did not conceal hits: determinants 384, 654, and 714
+bottomed out at root ranks 4, 3, and 2, while their targets have root ranks 2,
+1, and 1.  The corrected recognizer passes direct regression checks at target
+root ranks 0, 1, and 2.
+
+The regenerated determinant-714 beam retains every marked state.  At depth
+six its eight states have root ranks `(2,2,3,3,3,4,4,4)`; the two MW15 states
+have the same compiler cost `(1,4,2,6,0)` and differ in the final q4 orbit.
+The frontier artifact has SHA-256
+`43b61a24864f4c0c1f26d8cf2984848fe2cc360a09f1374e9de67cc6834bbc72`.
+A targeted last-edge search from both MW15 states tests 65,963 capped
+candidates: degree two at q4, q6, q8; degree three at q6, q9, q12; and degree
+four at q8, q12, with pole at most two.  The q4 shell has 92 fully physical
+survivors but no target; every other declared shell is empty at the physical
+gate.  The four artifacts have SHA-256
+`15273eb9400742c6f50700dd02872030c745c43726647512832aecde7f3aba9e`,
+`943588934fcf6e3e9bfd587889ed659d0b13b740f65ac2a7f07951db08065d77`,
+`30c3b7fdf341d2b989cff420c2056abb1a51f1b5c9ecfc617d69de20822ff586`,
+and
+`ed947f2652d27e3209d3cc4a6ba64b6b3ffa87e49bd85d5b15e2d411ca149ecb`.
+
+The rootful A1 target spectrum uses `(M/dM)/W(A1)`, not the rootless formula
+verbatim.  Its complete degree-two low-height census has 98,304 Weyl/section-
+translation orbits: 26,908 rational bisections of minimum norm ten, 47,943
+genus-one bisections of minimum norm eight, and 27 orbits whose minimum is
+above ten.  In deterministic 256-orbit exact-CVP samples, degree three has 40
+rational and 68 genus-one candidates; degree four has 22, 39, and 42
+candidates of genera zero, one, and two.  These are lattice spectra, not
+irreducibility, arithmetic-descent, or rank-jump theorems.  The artifact has
+SHA-256
+`99f96f29b8ad8b887b4ef92b3859e6fb0075d94378292954c42aea074ffbcb10`.
+
+The aggregate promotion certificate has SHA-256
+`a3fc378d7c2faf73ef26d4eed5e9dc451693b9f03535e1cd0312814d4eb90cc5`.
+
+Determinant 714 is therefore the strongest new rank-tradeoff candidate: a
+formally smooth MW1 source opposite MW16, with an exact MW15 corridor
+intermediate.  It remains behind determinant 500 on target rank and current
+equation simplicity, and it still lacks a rational point or explicit
+hyperelliptic model for the marked moduli curve, primitive-closure and Picard
+audits, an exact target route, and a resolved T-arithmetic identification.
+
 ## Determinant 750: rational moduli, but no ideal source in the large-ambient cut
 
 The next genus-zero rootless MW17 target in the expanded Pareto order is
@@ -1006,6 +1116,56 @@ python3 elkies-k3/scripts/extract_rank7_catalogue_source_search_target.py \
   --check
 
 python3 elkies-k3/scripts/certify_k3_14ad_equation_first_candidate.py --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0028_source_ansatz_modp.sage \
+  --source artifacts/generated-results/elkies-k3-k3-cf7f6c91a3a40d32-semistable-mw0-2-sources-large-a-partner2-v1.json \
+  --ns-id K3-cf7f6c91a3a40d32 \
+  --source-id K3-cf7f6c91a3a40d32-S0223 --prime 7 --examples 0 \
+  --output artifacts/generated-results/elkies-k3-k3-cf7f6c91a3a40d32-a4-2a6-mw1-fibre-ansatz-mod7-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_k3_04b_a3_a4_a9_pole1_marking_modp.sage \
+  --fibres artifacts/generated-results/elkies-k3-k3-cf7f6c91a3a40d32-a4-2a6-mw1-fibre-ansatz-mod7-v1.json \
+  --sources artifacts/generated-results/elkies-k3-k3-cf7f6c91a3a40d32-semistable-mw0-2-sources-large-a-partner2-v1.json \
+  --source-id K3-cf7f6c91a3a40d32-S0223 \
+  --surface-id K3-cf7f6c91a3a40d32 \
+  --schema elkies-k3.k3-cf7f-a4-2a6-mw1-pole1-marking-modp.v1 \
+  --quadratic-twist 3 \
+  --output artifacts/generated-results/elkies-k3-k3-cf7f6c91a3a40d32-a4-2a6-mw1-pole1-marking-mod7-nonsquare-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_k3_cf7f_a4_2a6_mw1_formal_smoothness.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_k3_cf7f_a4_2a6_mw1_rational_parameters.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_k3_cf7f_moduli_algebraization.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_lattice_foundry_same_ns_compiler_routes.sage \
+  --case k3cf7f --q 4 --degree 2 --max-pole 1 --beam-width 8 \
+  --max-depth 6 --mw-vector-cap 2000 --cap-from-mw-rank 4 --rank-first \
+  --retain-frontier-witnesses \
+  --output artifacts/generated-results/elkies-k3-k3-cf7f6c91a3a40d32-same-ns-compiler-routes-rankfirst-frontiers-depth6-v2.json \
+  --check
+
+# Resume both root-rank-two states at depth six.  The four checked artifacts
+# use respectively: (degree,q,cap) = (2,4,2000), (2,6+8,5000),
+# (3,6+9+12,5000), and (4,8+12,3000).
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/sample_lattice_foundry_multisection_spectrum.sage \
+  --target-artifact artifacts/generated-results/elkies-k3-k3-cf7f6c91a3a40d32-source-search-target-partner2-lattice-only-v1.json \
+  --sample-count 256 --height-slack 4 --pari-stack-gb 4 \
+  --output artifacts/generated-results/elkies-k3-k3-cf7f6c91a3a40d32-rootful-a1-multisection-spectrum-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_k3_cf7f_equation_first_candidate.sage --check
 
 python3 elkies-k3/scripts/build_rank7_rational_moduli_source_optimizer.py --check
 ```

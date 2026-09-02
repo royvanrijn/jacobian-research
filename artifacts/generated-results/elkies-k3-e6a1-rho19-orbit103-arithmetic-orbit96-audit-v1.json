@@ -1,0 +1,116 @@
+{
+  "coefficient_comparison": {
+    "orbit103_reducible_fibre_count": 4,
+    "orbit103_source_divisor_complexity": {
+      "l1": 3,
+      "max_abs": 1
+    },
+    "orbit96_abstract_source_divisor_complexity": {
+      "l1": 12,
+      "max_abs": 2
+    },
+    "orbit96_expected_reducible_fibre_count": 2,
+    "status": "NOT_COMPARABLE_WITHOUT_A_PHYSICALLY_MARKED_A7D7_EQUATION",
+    "warning": "The displayed low-coefficient tangent-trace equation is a negative control, not an A7+D7 competitor. It must not be used to claim coefficient optimality.",
+    "weierstrass_degree_floor": {
+      "A": 8,
+      "B": 12
+    }
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-e6a1-rho19-genuine-q2-neighbors-v1.json": "07a6cdb181e9c2febdfcf085954608ef40b07a654fc652624bae195e4128d179",
+    "artifacts/generated-results/elkies-k3-e6a1-rho19-orbit103-rr-weierstrass-v1.json": "c7f08349b9ab874131285cde40023f40b70e35f0d8f90d735d7af446b7a5419a"
+  },
+  "orbit103_arithmetic": {
+    "arithmetic_rank": 2,
+    "base_field": "QQ(k)(r)",
+    "conclusion": "There is no third independent generator over QQ(k)(r); the third geometric direction is anti-invariant over QQ(sqrt(-3)).",
+    "geometric_rank": 3,
+    "independence_proof": "Q_plus and Q_minus have equal positive height 17/12. In the torsion-free geometric MW group, dependence would therefore force Q_plus=+/-Q_minus, contradicted by their exact coordinates.",
+    "rank_decomposition": "3 geometric = 2 invariant + 1 anti-invariant",
+    "rational_independent_points": [
+      "Q_plus",
+      "Q_minus"
+    ],
+    "rational_point_height": "17/12",
+    "third_geometric_direction": {
+      "X_coefficients_low_to_high": [
+        "-480*k^2 - 192",
+        "-1152*k",
+        "-48*k^2 - 672",
+        "-96*k",
+        "-6*k^2 - 12"
+      ],
+      "Y_over_sqrt_minus3_coefficients_low_to_high": [
+        "8064*k^2 - 1536",
+        "4032*k^3 + 20736*k",
+        "14112*k^2 + 12672",
+        "672*k^3 + 12672*k",
+        "648*k^2 + 3168",
+        "-36*k^3 + 144*k",
+        "-18*k^2 - 24"
+      ],
+      "field": "QQ(k,sqrt(-3))(r)",
+      "galois_action": "sqrt(-3)->-sqrt(-3) sends Q_delta to -Q_delta",
+      "source": "the two projective points at old-base infinity on the binary quartic"
+    }
+  },
+  "orbit96_audit": {
+    "abstract_target": {
+      "mw_height_gram": [
+        [
+          "3/8",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "3"
+        ]
+      ],
+      "orbit": 96,
+      "root_type": "A7+D7",
+      "source_divisor_complexity": {
+        "l1": 12,
+        "max_abs": 2
+      }
+    },
+    "missing_gate": "The abstract E6 simple-root coordinates must be identified with a complete resolved physical E6 component marking on the equation.",
+    "naive_equation_tangent_trace": {
+      "C2_coefficients_low_to_high": [
+        "-1/4*k^4 + 4/3*k^2 - 7/3",
+        "0",
+        "1"
+      ],
+      "C4_coefficients_low_to_high": [
+        "-1/8*k^6 + 11/8*k^4 - 4*k^2 + 3",
+        "0",
+        "-3/8*k^4 + 2*k^2 - 4",
+        "0",
+        "1"
+      ],
+      "equation": "y^2=x^3-3*(z^2-1)^3*C2(z)*x-2*(z^2-1)^4*C4(z)",
+      "fibre_profile": "2IV*+I4+4I1",
+      "function": "(t+1)*(y-y0-m_tan*(x-x0))/(x-x0)^2, with the opposite orientation giving the same Jacobian",
+      "rejection": "This is not the abstract A7+D7 orbit-96 fibration.",
+      "root_data": [
+        15,
+        156,
+        36
+      ],
+      "root_type": "2E6+A3"
+    }
+  },
+  "proof_boundary": {
+    "open": "A physically resolved E6 marking and a genuine orbit-96 A7+D7 Weierstrass equation are still required for coefficient optimality.",
+    "proved": "Exact orbit-103 arithmetic rank two, explicit anti-invariant third geometric direction, and exact rejection of the naive orbit-96 tangent trace by its fibre fingerprint."
+  },
+  "schema": "elkies-k3.e6a1-rho19-orbit103-arithmetic-orbit96-audit.v1",
+  "status": "PASS_EXACT_ARITHMETIC_RANK2_AND_FAIL_CLOSED_A7D7_GATE"
+}

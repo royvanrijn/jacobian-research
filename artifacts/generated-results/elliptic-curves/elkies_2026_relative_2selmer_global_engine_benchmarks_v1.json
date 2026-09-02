@@ -1,0 +1,57 @@
+{
+  "case_id": "control-r21-t3_8",
+  "claim_boundary": [
+    "These are global cubic-field class-group benchmarks, not 2-Selmer computations.",
+    "Neither backend completed an exact class group, so no Selmer dimension, rank bound, quotient class, or exceptional-point recovery is claimed.",
+    "The rank-25--28 controls and high-Nagao candidates were not run through later stages because the frozen rank-21 prerequisite failed."
+  ],
+  "input_manifest": {
+    "path": "artifacts/generated-results/elliptic-curves/elkies_2026_relative_2selmer_suite_inputs_v1.json",
+    "sha256": "9d9713d69b59764c3fabcc726296f1ec6c6b44c0be9ceabc0c00652472ce1867"
+  },
+  "reduced_field_polynomial": "x^3 - x^2 - 774250153578278482962797863407542*x + 4105678984643853583390832544029019669185034999158",
+  "runs": [
+    {
+      "backend": "PARI/GP 2.17.4, locally compiled open-source experimental build",
+      "configuration": {
+        "bnf_tech": [
+          0.01,
+          4,
+          20
+        ],
+        "compile_time_changes": {
+          "src/basemath/buch2.c:MINSFB": "3 -> 32",
+          "src/basemath/buch2.c:SFB_MAX": "3 -> 12"
+        },
+        "field_model": "polredbest-reduced cubic",
+        "pari_stack_bytes": 2000000000
+      },
+      "log": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-custom-pari-v1/control-r21-t3_8/bnf.log",
+      "log_sha256": "0e7d7294cf97c3af64514b2295495a3a4bdf731b019300d2375808a64934bf8d",
+      "outcome": "strict_wall_timeout_during_relation_collection",
+      "peak_rss_bytes": 34402304,
+      "timeout_seconds": 600,
+      "wall_seconds": 600.0
+    },
+    {
+      "backend": "Hecke 0.40.2 on Julia 1.12.6",
+      "configuration": {
+        "GRH": false,
+        "compatibility_patch": [
+          "degree(clg.FB.ideals[1].parent.order) -> degree(order(clg.FB.ideals[1]))",
+          "parent(clg.FB.ideals[1]).order -> order(clg.FB.ideals[1])"
+        ],
+        "field_model": "polredbest-reduced cubic",
+        "method": 2
+      },
+      "log": "artifacts/local/elliptic-curves/hecke-relative-selmer-v1/control-r21-t3_8-method2-patched/class-unit.log",
+      "log_sha256": "4399e3ef6c7b388e1a3db7c5d54e41bb18e175a41a13227f6746036305d75ef9",
+      "outcome": "strict_wall_timeout_during_tentative_class_group",
+      "peak_rss_bytes": 3954507776,
+      "timeout_seconds": 600,
+      "wall_seconds": 600.22
+    }
+  ],
+  "schema": "elliptic-curves.elkies-2026-relative-2selmer-global-engine-benchmarks.v1",
+  "status": "INCOMPLETE_GLOBAL_CLASS_GROUP"
+}

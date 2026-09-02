@@ -345,31 +345,40 @@ def supervise_source(
             started = time.monotonic()
             peak_rss = 0
             outcome = "running"
-            while process.poll() is None:
-                elapsed = time.monotonic() - started
-                if elapsed >= timeout:
-                    outcome = "strict_wall_timeout"
-                    stop_process_group(process, signal.SIGTERM)
+            try:
+                while process.poll() is None:
+                    elapsed = time.monotonic() - started
+                    if elapsed >= timeout:
+                        outcome = "strict_wall_timeout"
+                        stop_process_group(process, signal.SIGTERM)
+                        try:
+                            process.wait(timeout=5)
+                        except subprocess.TimeoutExpired:
+                            stop_process_group(process, signal.SIGKILL)
+                            process.wait()
+                        break
                     try:
-                        process.wait(timeout=5)
-                    except subprocess.TimeoutExpired:
-                        stop_process_group(process, signal.SIGKILL)
-                        process.wait()
-                    break
+                        peak_rss = max(peak_rss, read_rss_bytes(process.pid))
+                    except (FileNotFoundError, ProcessLookupError):
+                        pass
+                    if peak_rss > rss_limit_bytes:
+                        outcome = "strict_rss_limit"
+                        stop_process_group(process, signal.SIGTERM)
+                        try:
+                            process.wait(timeout=5)
+                        except subprocess.TimeoutExpired:
+                            stop_process_group(process, signal.SIGKILL)
+                            process.wait()
+                        break
+                    time.sleep(0.25)
+            except BaseException:
+                stop_process_group(process, signal.SIGTERM)
                 try:
-                    peak_rss = max(peak_rss, read_rss_bytes(process.pid))
-                except (FileNotFoundError, ProcessLookupError):
-                    pass
-                if peak_rss > rss_limit_bytes:
-                    outcome = "strict_rss_limit"
-                    stop_process_group(process, signal.SIGTERM)
-                    try:
-                        process.wait(timeout=5)
-                    except subprocess.TimeoutExpired:
-                        stop_process_group(process, signal.SIGKILL)
-                        process.wait()
-                    break
-                time.sleep(0.25)
+                    process.wait(timeout=5)
+                except subprocess.TimeoutExpired:
+                    stop_process_group(process, signal.SIGKILL)
+                    process.wait()
+                raise
             wall_seconds = time.monotonic() - started
         if outcome == "running":
             outcome = (

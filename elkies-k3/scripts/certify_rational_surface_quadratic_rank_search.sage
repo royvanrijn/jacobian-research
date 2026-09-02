@@ -1,6 +1,11 @@
 #!/usr/bin/env sage-python
 """Certify a bounded rational-surface quadratic-base-change search.
 
+status: ACTIVE_PROOF
+claim: exact E6+A1 quadratic-base-change family and bounded degree-(2,2) search
+inputs: repeated-fibre rational-base-change audit certificate
+outputs: elkies-k3-rational-surface-quadratic-rank-search-v1.json
+
 The search starts with the one-modulus E6+A1 rational elliptic surfaces
 
     y^2 = x^3 + (u-3)x + c^2*u^2 + u - 2,

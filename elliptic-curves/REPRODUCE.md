@@ -762,6 +762,139 @@ Applying the identical frozen method to the top high-Nagao candidate
 `elkies_2026_relative_2selmer_open_nagao0001_120s_v1.json` artifact contains
 no Selmer dimension and does not promote the candidate.
 
+The checkpointed replacement separates the certified cubic BNF from the
+Selmer, point-embedding, and quotient-cover stages:
+
+```sh
+python3 elliptic-curves/cas/run_elkies_2026_relative_2selmer_checkpointed.py \
+  --manifest artifacts/generated-results/elliptic-curves/elkies_2026_relative_2selmer_suite_inputs_v1.json \
+  --cache-dir artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-checkpointed-v2 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_relative_2selmer_checkpointed_rank21_v2.json \
+  --case control-r21-t3_8 --bnf-timeout 600 --selmer-timeout 600 \
+  --cover-timeout 600 --embedding-timeout 300 \
+  --rss-limit-bytes 4000000000 --pari-stack-bytes 2000000000 \
+  --bnf-tech 0.01,4,20 --raw-basis-search-bound 8 \
+  --quotient-search-bound 8 --quotient-class-limit 4095 \
+  --auxiliary-prime-bound 5000 --overwrite
+```
+
+This version applies `polredbest` before the global field computation and
+stores both directions of the exact field isomorphism. Its Simon local-image
+routine evaluates `x-theta` in the reduced field, while every returned Selmer
+class is transported back to the curve cubic before the explicit
+intersection of quadrics is built. After MW17 is embedded, all nonzero
+quotient classes up to `--quotient-class-limit` are constructed and searched
+without exceptional coordinates; those coordinates are loaded only for the
+final labels. A certified BNF is persisted with `writebin` and hash-checked on
+reuse. The small-curve integration smoke test agrees with `ell2cover`, embeds
+the known point exactly, and recovers its explicit cover point.
+
+The first original-field checkpoint trial with `--bnf-tech 0.1,4,20` reaches
+the strict 600-second BNF limit at 256,798,720 bytes observed RSS. It records
+`INCOMPLETE_BNF`, hence no Selmer dimension. Two further open-source global
+field calibrations also fail the frozen 600-second gate. A locally compiled
+PARI 2.17.4 using the reduced cubic and enlarged relation sub-factorbase times
+out at 34,402,304 bytes peak RSS. Hecke 0.40.2 `class_group(...; GRH=false,
+method=2)` times out at 3,954,507,776 bytes peak RSS. Their exact configurations
+and log hashes are recorded in
+`elkies_2026_relative_2selmer_global_engine_benchmarks_v1.json`. None of these
+timeouts is a rank or Selmer bound. Because the rank-21 control gate did not
+complete, the frozen pipeline does not advance to rank 25--28 or the Nagao
+candidates.
+
+The class-group-free known-Kummer stage does run on every control and
+candidate. It certifies independence of the supplied point squareclasses but
+does not upper-bound the Selmer group:
+
+```sh
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elliptic-curves/cas/audit_elkies_2026_known_kummer_quotients.py \
+  --manifest artifacts/generated-results/elliptic-curves/elkies_2026_relative_2selmer_suite_inputs_v1.json \
+  --prime-bound 5000 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_known_kummer_quotients_suite_v1.json \
+  --overwrite
+```
+
+The pinned full-suite run certifies known Kummer ranks `21,25,26,27,28` on
+the controls and generic rank 17 on all ten high-Nagao candidates. It takes
+11.50 seconds and peaks at 241,004 KiB RSS on the recorded host. Exact PARI
+parameter sweeps, Hecke trials, and bounded relation-ledger failures at the
+remaining global class/unit gate are summarized in
+`elkies_2026_relative_2selmer_open_bottleneck_benchmarks_v2.json`.
+
+The current official PARI development branch has a newer six-parameter,
+threaded relation engine. After building commit
+`6af5b91cfaeb6939331945f301e65bd775f6cdef` with pthread support, replay the
+best rank-21 calibration with:
+
+```sh
+python3 elliptic-curves/cas/run_elkies_2026_pari219_bnf_benchmark.py \
+  --gp artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91/bin/gp \
+  --case-id control-r21-t3_8 --timeout-seconds 300 \
+  --threads 8 --c1 0.03 --c2 4 --nrpid -1 \
+  --max-factorizations 500 --ideal-power 1 \
+  --source-commit 6af5b91cfaeb6939331945f301e65bd775f6cdef \
+  --log artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91/rank21/replay-300s.log \
+  --checkpoint artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91/rank21/replay-bnf.bin \
+  --output artifacts/local/elliptic-curves/pari-2.19.0-dev-6af5b91/rank21/replay-result.json \
+  --overwrite
+```
+
+The pinned 300-second run traverses factor-base bounds through `16348`, with
+1,996 ideals, but ends after 6,143 random-relation rounds still requesting
+1,635 relations in 1,630 ideals. It uses 2,190.47 user CPU seconds and peaks
+at 136,872 KiB RSS. Four-, eight-, and twelve-thread trials, ideal powers 1,
+3, and 10, disabling the small-norm phase, and a tenfold trial-factor budget
+are recorded. None completes `bnfinit`, so no checkpoint, Selmer dimension,
+or rank bound results.
+
+The independent exact-factor multi-large-prime collector can be replayed on
+the same reduced cubic with factor-base bound 1,000, cycle-pair special
+ideals, and sparse-hypergraph elimination. The pinned 26.54-second run retains
+3,215 partial edges and closes 666 dependencies, but its exact rank-one row is
+already in the canonical S-span, so the post-S rank gain is zero. This bounded
+125-dimensional factor-base quotient is not an S-class or Selmer bound; its
+ledger and log hashes are pinned in the same bottleneck artifact.
+
+Recreate the isolated open-source Hecke environment and the two specialized
+S-class checkpoints with:
+
+```sh
+mkdir -p artifacts/local/elliptic-curves/hecke-0.40.2-environment
+julia --project=artifacts/local/elliptic-curves/hecke-0.40.2-environment \
+  -e 'using Pkg; Pkg.add(PackageSpec(name="Hecke", version="0.40.2"))'
+
+julia --project=artifacts/local/elliptic-curves/hecke-0.40.2-environment \
+  --threads=2 elliptic-curves/cas/run_elkies_2026_s_class_hecke_monitor.jl \
+  --timeout-seconds 120 --include-s-in-factor-base true --method 2 \
+  --valuation-radius 4 --enumeration-limit 3 --random-seed 20260902 \
+  --checkpoint artifacts/local/elliptic-curves/elkies-r17-hecke-s-class-v1/s-augmented/rank21-bound240-val4-limit3-120s.toml
+
+julia --project=artifacts/local/elliptic-curves/hecke-0.40.2-environment \
+  --threads=2 elliptic-curves/cas/run_elkies_2026_s_class_hecke_monitor.jl \
+  --timeout-seconds 120 --include-s-in-factor-base true --method 4 \
+  --valuation-radius 4 --enumeration-limit 2 --random-seed 20260902 \
+  --checkpoint artifacts/local/elliptic-curves/elkies-r17-hecke-s-class-v1/s-targeted/rank21-bound240-val4-limit2-120s.toml
+```
+
+Both runs materialize all 25 S-ideal columns and stop with exact bounded
+factor-base quotient dimension 34 and no post-initialization relation gain.
+This is not a class-group, S-class-group, Selmer, or rank bound.
+
+Construct every explicit two-cover in the five known exceptional quotient
+subgroups:
+
+```sh
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elliptic-curves/cas/build_elkies_2026_known_quotient_covers.py \
+  --overwrite
+```
+
+This verifies 3,851 rationally realized intersections of quadrics. The
+generated manifest retains all basis covers and hashes the complete 25 MiB
+ledger in `artifacts/local/elliptic-curves/`; it is not a full-Selmer
+enumeration.
+
 ## Bisection specialization controls
 
 <!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-SPECIALIZATION-CONTROLS 04f49e48e1c1dd88 -->

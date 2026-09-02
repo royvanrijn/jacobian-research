@@ -1,0 +1,300 @@
+{
+  "child_weierstrass": {
+    "A4_coefficients_low_to_high": [
+      "976*k^4 - 768*k^2",
+      "1984*k^3 - 768*k",
+      "8*k^4 + 1216*k^2",
+      "16*k^3 + 192*k",
+      "k^4"
+    ],
+    "B6_coefficients_low_to_high": [
+      "26560*k^6 - 4608*k^4 - 55296*k^2",
+      "85632*k^5 - 13824*k^3 - 110592*k",
+      "1488*k^6 + 91776*k^4 + 4608*k^2 - 55296",
+      "3072*k^5 + 35072*k^3 + 27648*k",
+      "12*k^6 + 1920*k^4 + 2304*k^2 + 13824",
+      "24*k^5 + 288*k^3",
+      "k^6"
+    ],
+    "equation": "y^2=x^3-27*(r^2-4)^2*A4*x+54*(r^2-4)^3*B6",
+    "explicit_rational_points": {
+      "Q_minus": [
+        "3*k^2*r^4 + (-48*k - 288)*r^3 + (-72*k^2 - 864*k + 1152)*r^2 + (-576*k^2 + 2496*k - 1152)*r + 1392*k^2 - 1152*k",
+        "(-216*k^2 - 864*k - 864)*r^5 + (-216*k^3 - 2592*k^2 - 4320*k + 13824)*r^4 + (-1728*k^3 - 5184*k^2 + 55296*k - 48384)*r^3 + (-1728*k^3 + 76032*k^2 - 145152*k + 55296)*r^2 + (34560*k^3 - 141696*k^2 + 124416*k - 13824)*r - 44928*k^3 + 69120*k^2 - 13824*k"
+      ],
+      "Q_plus": [
+        "3*k^2*r^4 + (-48*k + 288)*r^3 + (-72*k^2 + 864*k + 1152)*r^2 + (576*k^2 + 2496*k + 1152)*r + 1392*k^2 + 1152*k",
+        "(216*k^2 - 864*k + 864)*r^5 + (216*k^3 - 2592*k^2 + 4320*k + 13824)*r^4 + (-1728*k^3 + 5184*k^2 + 55296*k + 48384)*r^3 + (1728*k^3 + 76032*k^2 + 145152*k + 55296)*r^2 + (34560*k^3 + 141696*k^2 + 124416*k + 13824)*r + 44928*k^3 + 69120*k^2 + 13824*k"
+      ]
+    },
+    "short_a_coefficients_low_to_high": [
+      "-421632*k^4 + 331776*k^2",
+      "-857088*k^3 + 331776*k",
+      "207360*k^4 - 691200*k^2",
+      "421632*k^3 - 248832*k",
+      "-25056*k^4 + 283392*k^2",
+      "-50112*k^3 + 62208*k",
+      "-32832*k^2",
+      "-432*k^3 - 5184*k",
+      "-27*k^4"
+    ],
+    "short_b_coefficients_low_to_high": [
+      "-91791360*k^6 + 15925248*k^4 + 191102976*k^2",
+      "-295944192*k^5 + 47775744*k^3 + 382205952*k",
+      "63700992*k^6 - 329121792*k^4 - 159252480*k^2 + 191102976",
+      "211341312*k^5 - 157040640*k^3 - 382205952*k",
+      "-13395456*k^6 + 234233856*k^4 + 39813120*k^2 - 191102976",
+      "-47609856*k^5 + 98869248*k^3 + 143327232*k",
+      "497664*k^6 - 54743040*k^4 + 71663616",
+      "2695680*k^5 - 22726656*k^3 - 23887872*k",
+      "75168*k^6 + 3711744*k^4 - 1244160*k^2 - 11943936",
+      "150336*k^5 + 1707264*k^3 + 1492992*k",
+      "103680*k^4 + 124416*k^2 + 746496",
+      "1296*k^5 + 15552*k^3",
+      "54*k^6"
+    ]
+  },
+  "elimination": {
+    "binary_quartic_in_t_coefficients_after_r_normalization": [
+      "(4/(k^6 - 8*k^4 + 16*k^2))*r^4 + (24/(k^5 - 8*k^3 + 16*k))*r^3 + ((24*k^2 + 48)/(k^6 - 8*k^4 + 16*k^2))*r^2 + (64/(k^5 - 8*k^3 + 16*k))*r - 16/(k^4 - 4*k^2)",
+      "(4/(k^5 - 8*k^3 + 16*k))*r^4 + ((8*k^2 + 48)/(k^6 - 8*k^4 + 16*k^2))*r^3 + (144/(k^5 - 8*k^3 + 16*k))*r^2 + ((64*k^2 + 192)/(k^6 - 8*k^4 + 16*k^2))*r + 128/(k^5 - 8*k^3 + 16*k)",
+      "(1/(k^4 - 8*k^2 + 16))*r^4 + (8/(k^5 - 8*k^3 + 16*k))*r^3 + (96/(k^6 - 8*k^4 + 16*k^2))*r^2 + (160/(k^5 - 8*k^3 + 16*k))*r + 80/(k^4 - 8*k^2 + 16)",
+      "(-16/(k^6 - 8*k^4 + 16*k^2))*r^3 + (-48/(k^5 - 8*k^3 + 16*k))*r^2 + ((-32*k^2 - 64)/(k^6 - 8*k^4 + 16*k^2))*r - 64/(k^5 - 8*k^3 + 16*k)",
+      "(-48/(k^6 - 8*k^4 + 16*k^2))*r^2 + (-96/(k^5 - 8*k^3 + 16*k))*r - 48/(k^4 - 8*k^2 + 16)"
+    ],
+    "jacobian_identification": "The binary quartic has a QQ(k,r)-point, so the genus-one pencil is isomorphic to its displayed Jacobian after choosing that point as origin.",
+    "quadratic_in_old_x": [
+      "z^2*t^8 - 4/k*z*t^7 + ((-1/4*k^4 + k^2 - 4)*z^2 + (k^2 - 2)*z + (2*k^2 + 4)/k^2)*t^6 + (((k^4 - 6*k^2 + 20)/k)*z + (-2*k^2 - 4)/k)*t^5 + ((1/2*k^4 - k^2 + 2)*z^2 + (-4*k^2 + 10)*z + (k^2 - 16)/k^2)*t^4 + (((-2*k^4 + 12*k^2 - 28)/k)*z + (4*k^2 + 8)/k)*t^3 + ((-1/4*k^4 - k^2 + 4)*z^2 + (5*k^2 - 14)*z + (-8*k^2 + 20)/k^2)*t^2 + (((k^4 - 6*k^2 + 12)/k)*z + (-2*k^2 - 4)/k)*t + (k^2 - 3)*z^2 + (-2*k^2 + 6)*z + (5*k^2 - 8)/k^2",
+      "2*z^2*t^4 - 4/k*z*t^3 + ((-1/4*k^4 + k^2 - 4)*z^2 + (k^2 - 2)*z - 1)*t^2 + (((-2*k^2 + 12)/k)*z + 4/k)*t + (k^2 - 2)*z^2 - 2*z - 4/k^2",
+      "z^2"
+    ],
+    "radicand_square_factor": "t - 2/k",
+    "rational_points": [
+      {
+        "t": "1",
+        "w": "(1/(k^2 - 2*k))*r^2 + (4/(k^2 - 2*k))*r + 4/(k^2 - 2*k)"
+      },
+      {
+        "t": "-1",
+        "w": "(1/(k^2 + 2*k))*r^2 + (-4/(k^2 + 2*k))*r + 4/(k^2 + 2*k)"
+      }
+    ]
+  },
+  "fibre_certificate": {
+    "euler_number": 24,
+    "finite_fibres": [
+      {
+        "degree": 1,
+        "euler_number": 7,
+        "factor": "r + 2",
+        "kodaira": "I1*",
+        "minimal_orders": [
+          2,
+          3,
+          7
+        ],
+        "raw_orders": [
+          2,
+          3,
+          7
+        ],
+        "root_determinant": 4,
+        "root_rank": 5,
+        "scaling": 0
+      },
+      {
+        "degree": 1,
+        "euler_number": 3,
+        "factor": "r + k",
+        "kodaira": "I3",
+        "minimal_orders": [
+          0,
+          0,
+          3
+        ],
+        "raw_orders": [
+          0,
+          0,
+          3
+        ],
+        "root_determinant": 3,
+        "root_rank": 2,
+        "scaling": 0
+      },
+      {
+        "degree": 1,
+        "euler_number": 7,
+        "factor": "r - 2",
+        "kodaira": "I1*",
+        "minimal_orders": [
+          2,
+          3,
+          7
+        ],
+        "raw_orders": [
+          2,
+          3,
+          7
+        ],
+        "root_determinant": 4,
+        "root_rank": 5,
+        "scaling": 0
+      },
+      {
+        "degree": 4,
+        "euler_number": 1,
+        "factor": "r^4 + ((22/3*k^4 + 240*k^2 + 288)/(k^5 + 4/3*k^3))*r^3 + ((-2/3*k^4 + 4784/3*k^2 + 288)/(k^4 + 4/3*k^2))*r^2 + ((8104/3*k^4 - 960*k^2 - 1152)/(k^5 + 4/3*k^3))*r + (1352*k^4 - 2816/3*k^2 - 1152)/(k^4 + 4/3*k^2)",
+        "kodaira": "I1",
+        "minimal_orders": [
+          0,
+          0,
+          1
+        ],
+        "raw_orders": [
+          0,
+          0,
+          1
+        ],
+        "root_determinant": 1,
+        "root_rank": 0,
+        "scaling": 0
+      }
+    ],
+    "infinity": {
+      "kodaira": "I3",
+      "orders": [
+        0,
+        0,
+        3
+      ]
+    },
+    "profile": "2I1*+2I3+4I1",
+    "residual_I1_quartic_coefficients_low_to_high": [
+      "(1352*k^4 - 2816/3*k^2 - 1152)/(k^4 + 4/3*k^2)",
+      "(8104/3*k^4 - 960*k^2 - 1152)/(k^5 + 4/3*k^3)",
+      "(-2/3*k^4 + 4784/3*k^2 + 288)/(k^4 + 4/3*k^2)",
+      "(22/3*k^4 + 240*k^2 + 288)/(k^5 + 4/3*k^3)",
+      "1"
+    ],
+    "root_data": [
+      14,
+      92,
+      144
+    ],
+    "root_type": "2D5+2A2"
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-e6a1-rho19-genuine-q2-neighbors-v1.json": "07a6cdb181e9c2febdfcf085954608ef40b07a654fc652624bae195e4128d179"
+  },
+  "mordell_weil": {
+    "arithmetic_field_warning": "The geometric rank-three lattice is exact. The two displayed QQ(k,r)-points are explicit, but this certificate does not claim that they generate the full arithmetic Mordell--Weil group.",
+    "geometric_rank": 3,
+    "height_gram": [
+      [
+        "1/6",
+        "1/12",
+        "1/12"
+      ],
+      [
+        "1/12",
+        "17/12",
+        "2/3"
+      ],
+      [
+        "1/12",
+        "2/3",
+        "17/12"
+      ]
+    ],
+    "proof": "The equation realizes the certified orbit-103 pencil on the same rho=19 K3; Shioda--Tate with root rank 14 gives rank 3, and the saturated frame certificate supplies torsion and the height lattice.",
+    "regulator": "1/4",
+    "torsion": "trivial"
+  },
+  "parameter_exclusions": [
+    "k=0",
+    "k=2",
+    "k=-2",
+    "3*k^2=4",
+    "3*k^2+4=0",
+    "zeros of the displayed residual-quartic discriminant"
+  ],
+  "pencil_parameter": {
+    "m": "(y1-y0)/(x1-x0)",
+    "new_base_normalization": "r=k*(k^2-4)*z/2-k",
+    "normalized_secant_L_times_m": "2/k*t^3 + (-1/2*k^2 + 1)*t^2 + ((k^2 - 6)/k)*t + 1",
+    "z": "(t-2/k)*(y+y0+m*(x-x0))/((x-x0)*(x-x1))"
+  },
+  "proof_boundary": {
+    "open": "An explicit three-section arithmetic basis over QQ(k)(r), its field-of-definition decomposition, and coefficient-optimality against the A7+D7 secondary pencil are not asserted.",
+    "proved": "Complete resolved H0 basis, exact elimination, rational quartic origin, clean Weierstrass equation, fibre profile, geometric MW rank three, torsion, and height-lattice isometry."
+  },
+  "resolved_riemann_roch": {
+    "basis": [
+      "1",
+      "z"
+    ],
+    "completeness_reason": "The source certificate proves D primitive nef isotropic, hence h0(D)=2; the two displayed independent global sections therefore form all of H0(D).",
+    "divisor": "P0+P1+A3_2",
+    "finite_base_regularization": "multiply the secant by L=t-2/k",
+    "generic_horizontal_poles": [
+      "P0 with multiplicity one",
+      "P1 with multiplicity one"
+    ],
+    "h0": 2,
+    "infinity_resolved_charts": {
+      "middle_A3_2": {
+        "equation_initial_form": "(1/4) * (12*xi^2 + 4*eta^2 + (-3*k^4 + 16*k^2 - 64)*xi + (-k^6 + 14*k^4 - 48*k^2 + 80))",
+        "equation_order": 4,
+        "z_initial_form": "(2/k) * (xi - 2)^-1 * (4*xi + (-k^4 + 4*k^2 - 8))^-1 * (4*xi + (2*k)*eta + (-k^4 + 4*k^2 - 8))",
+        "z_order": -1
+      },
+      "side_A3_1_or_A3_3": {
+        "equation_initial_form": "3*xi^2 + eta^2",
+        "equation_order": 2,
+        "z_initial_form": "(1/k) * xi^-2 * (2*xi + k*eta)",
+        "z_order": 0
+      }
+    },
+    "ivstar_tropical_inputs": [
+      {
+        "ord_L": 0,
+        "ord_a": 3,
+        "ord_b": 4,
+        "ord_mL": 0,
+        "ord_x_P0": 2,
+        "ord_x_P1": 0,
+        "ord_y_P0": 2,
+        "ord_y_P1": 0,
+        "place": "t=1"
+      },
+      {
+        "ord_L": 0,
+        "ord_a": 3,
+        "ord_b": 4,
+        "ord_mL": 0,
+        "ord_x_P0": 2,
+        "ord_x_P1": 0,
+        "ord_y_P0": 2,
+        "ord_y_P1": 0,
+        "place": "t=-1"
+      }
+    ]
+  },
+  "schema": "elkies-k3.e6a1-rho19-orbit103-rr-weierstrass.v1",
+  "source_k3": {
+    "D": "3*k^2-4",
+    "H": "1-t^2",
+    "P0": [
+      "-t^4 + 2*t^2 - 1",
+      "(-1/2*k^3 + 2*k)*t^4 + (k^3 - 4*k)*t^2 - 1/2*k^3 + 2*k"
+    ],
+    "P1": [
+      "-t^4 + (1/4*k^4 - k^2 + 2)*t^2 - k^2 + 3",
+      "(-1/8*k^6 + 3/4*k^4 - 4)*t^3 + (3/4*k^4 - 6*k^2 + 12)*t"
+    ],
+    "c": "2*k/D",
+    "equation": "Y^2=X^3+H^3*(lambda-3H)*X+H^4*(c^2*lambda^2+lambda*H-2H^2)",
+    "lambda": "-(k^2-4)*D/4"
+  },
+  "status": "PASS_EXACT_RESOLVED_RR_QUARTIC_AND_WEIERSTRASS"
+}

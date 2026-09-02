@@ -737,12 +737,44 @@ meaningful height margin is `19^12288`, whose boundary is about 46,400 bits.
 
 The exact pencil has now been compiled at precision 12291, SHA-256
 `c2df2b3011e1f75c84d359974bc929e51eb47a3aececcf2ffb510b72fa5f2ad4`.
-The checkpointed pointwise factor/root lift to `19^12288` is the active run;
-its log and checkpoint are respectively
-`artifacts/local/elkies-k3/q80-third-q12-p19-target12288-lift.log` and
-`artifacts/local/elkies-k3/q80-third-q12-p19-target12288-checkpoint.json`.
-The generic integral-basis verifier now accepts an explicit
-`--verification-digits 5`, matching the actual theorem claimed and avoiding a
-spurious full-precision determinant calculation.  After the lift, the order
-remains `j -> (c4^3,Delta) -> minimal Jacobian -> birational maps`, with
-`p=199` retained as the literal holdout.
+The checkpointed pointwise factor/root lift to `19^12288` completed with
+SHA-256
+`ab776b418520968f14bc21bdc28ca3c53578e0b5e59c4a54f7a2eb271d3f878a`;
+its final checkpoint has SHA-256
+`f3c0c8ea90839f4cf26a74f16a6f64dee352f54952f830e2187c829b53f84f37`.
+The generic integral-basis check at the five digits used by its theorem passes
+with SHA-256
+`bd25930a8e5aed900e2add74ae6b4a6b3006c1eea558a0271c233368af9fe502`.
+
+The Riemann--Roch sample worker was then changed internally to replay the
+Weierstrass relation in the existing compact conductor-power algebra instead
+of repeatedly canonicalizing generic rational functions.  At precision 256
+this reduces the same calculation from 212.6 seconds to 2.87 seconds; at
+precision 2048 the new output is identical to the old certified sample apart
+from the recorded worker hash.  This made the complete set of 20
+residue-distinct `19^12288` samples practical.  Every sample passes the four
+Riemann--Roch dimensions, long equation, and maps in both directions.  The
+manifest has SHA-256
+`a6a307360c358ff88be5c0f213ff02c319cfcd0d395d2411c9d128e3eab8e279`.
+
+The extra precision does not validate the characteristic-zero reconstruction.
+Both a separate-component candidate (SHA-256
+`de1ad26a2c1fb749df82c0ebf205ce7a1a57ecda2694fc02eea820ee438470e7`)
+and the coupled quadratic-projective candidate (SHA-256
+`fb3ad92b66d3ca807f29483ac5f25bf91493ee9265b8378c02ccf523b76fa868`)
+remain at the random-lattice boundary: the degree-eight factor uses 46,446-bit
+primitive coordinates against a 46,448-bit boundary.  Independent reduction
+at the untouched prime `p=199` rejects both, with all 25 numerator pairs and
+24 of 25 denominator pairs unequal.  The replay certificates have SHA-256
+`80432448d96e6168c09344bcd32df0483c75dc1a70490ec877c3e6e328385016`
+and
+`370b414a9d591e9099377a98c0fd25107953144fa180309beb8efc581088e2fa`.
+
+This also shows why the previous height estimate was not a bound on the
+normalized `j` coefficients.  In the exact coefficient field used by the
+reconstructor, `omega^2=16q1q2` already has a 33,886-bit numerator and a
+33,890-bit denominator.  The next reconstruction should therefore retain the
+known field and denominator factors symbolically, or use a better integral
+field/base normalization, rather than merely increase the same LLL modulus.
+The order remains
+`j -> (c4^3,Delta) -> minimal Jacobian -> birational maps`.
