@@ -587,10 +587,20 @@ The current proof boundary and replay commands are in
   the determinant-banded factory. It imports exact backend records, groups
   first by `(T,NS)`, then by partner auxiliary and frame isometry, retains all
   primitive ambient embeddings, and emits four determinant bands across 23
-  rooted backends plus a separate Leech/`Co0` backend. Its first artifact has
-  49 surface classes and 510 MW15--17 frame classes. All 96 backend-band
+  rooted backends plus a separate Leech/`Co0` backend. Its current artifact has
+  122 surface classes and 596 MW12--17 frame classes. All 96 backend-band
   shards remain explicitly open: this script is not itself an embedding
   enumerator and does not promote bounded foundry inputs to completeness.
+- `build_rank7_surface_pareto.py` ranks all imported surfaces by the exact
+  core metrics available for every row: maximum catalogued MW rank, easiest
+  known source MW rank, source reducible-fibre support count, and determinant.
+  It attaches exact pole, stabilizer, rootless short-vector, and bounded
+  multisection evidence where existing artifacts provide it, and emits
+  coverage-restricted enriched frontiers without imputing missing equations,
+  fields, routes, conductor data, or moduli geometry. The current core
+  frontier has four of 122 surfaces; there are 39 exact-pole and 78
+  nontrivial-symmetry rows, while the certified-route frontier is explicitly
+  empty.
 - `enumerate_24a1_octad_prefix_orbits.sage` induces the exact `M24` action on
   all 759 Golay octads and uses set-stabilizer augmentation plus exact GAP
   transporters. It proves the unordered-octad-subset orbit counts
@@ -639,6 +649,16 @@ The current proof boundary and replay commands are in
   their discriminant groups have length seven. This is a complete negative
   result for the declared pointwise-fixed family, not for nontrivial
   seven-dimensional `4A` representations.
+- `enumerate_2a7_2d5_2c_fixed_high_mw_seed.sage` is the first positive
+  symmetry-first factory shell. It tests all 11,440 rank-seven coordinate
+  direct summands of a pinned integral LLL basis of `Fix(2C)`, filters by
+  determinant 5,000, discriminant length three, and MW rank 12--17, and then
+  closes the 97 survivors under the exact `Dih_4` section. All 97 section
+  orbits pass the nontrivial mod-2 `2C` gate; 73 distinct discriminant forms
+  each have one matching ternary genus. `(T,NS)`-first deduplication yields
+  73 surfaces, 76 partner auxiliaries, and 86 frames. This is exact in the
+  declared coordinate shell, not a complete fixed-lattice or full-Weyl
+  enumeration.
 - `build_leech_co0_backend.sage` derives the invariant integral Gram matrix of
   the AtlasRep 24-dimensional `2.Co1=Co0` representation. It certifies an even
   unimodular rank-24 lattice of minimum four with 196,560 minimal vectors,

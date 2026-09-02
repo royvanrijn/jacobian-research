@@ -3,8 +3,10 @@
 ## Exact imported catalogue
 
 The first surface-first catalogue layer is now replayable. It imports the
-exact `N(2A7+2D5)` one-root foundry shell and the exact determinant-720
-`N(24A1)` Golay-octad design, then deduplicates in the required order:
+exact `N(2A7+2D5)` one-root foundry shell, the bounded symmetry-first `2C`
+fixed-lattice seed shell, the bounded `N(6A4)` double-swap shell, and the
+exact determinant-720 `N(24A1)` Golay-octad design, then deduplicates in the
+required order:
 
 ```text
 (transcendental lattice T, Neron--Severi lattice NS)
@@ -16,14 +18,15 @@ exact `N(2A7+2D5)` one-root foundry shell and the exact determinant-720
 The current exact imported inventory has
 
 ```text
-49  (T,NS) surface classes
-49  rank-seven partner-auxiliary isometry classes
-510 frame isometry classes
-769 retained primitive embedding records.
+161 (T,NS) surface classes
+180 rank-seven partner-auxiliary isometry classes
+724 frame isometry classes
+1,027 retained primitive embedding-orbit records.
 ```
 
-All 510 imported frames have generic Mordell--Weil rank in the requested
-high-rank window: 110 have MW15, 261 have MW16, and 139 have MW17. This is an
+All 724 imported frames have generic Mordell--Weil rank in the requested
+high-rank window: 20 have MW12, 190 have MW13, one has MW14, 113 have MW15,
+261 have MW16, and 139 have MW17. This is an
 inventory of exact records, not a completeness statement for any determinant
 band.
 
@@ -47,13 +50,19 @@ D2001-5000.
 
 There are 24 separate backends: the 23 rooted Niemeier lattices and one Leech
 backend. Their Cartesian product with the four determinant bands gives 96
-explicit enumeration shards. All 96 remain open. The two imported rooted
-backends carry narrower statements:
+explicit enumeration shards. All 96 remain open. The four rooted backends
+with imported or bounded search records carry narrower statements:
 
-- `ROOTED-2A7_2D5` is complete only in the declared 768-element one-root
-  mutation shell around the two determinant-948 controls;
+- `ROOTED-2A7_2D5` contains the declared 768-element one-root mutation shell
+  around the two determinant-948 controls and the exact 7-of-16 coordinate
+  seed shell in a pinned `2C` fixed-lattice basis; neither is a complete
+  determinant-band census;
 - `ROOTED-24A1` contains one exact Golay-octad design found by a bounded,
-  nonexhaustive proposal search.
+  nonexhaustive proposal search;
+- `ROOTED-4D6` closes one exact component-transposition coordinate shell but
+  finds no MW12--17 seed;
+- `ROOTED-6A4` imports one exact double-swap coordinate shell canonicalized
+  under its complete 240-element chamber-preserving residual group.
 
 The `24A1` backend now also has an exact canonical-prefix layer and a
 contiguous rank-seven completion frontier.  The M24 orbit counts of unordered Golay-octad
@@ -143,7 +152,51 @@ matches.  This is an exact exclusion of the pointwise-`4A`-fixed corank-one
 family, not an exclusion of rank-seven auxiliaries with a nontrivial `4A`
 action on `K`; the latter is the next symmetry-first search space.
 
-The other 21 rooted backends are not yet enumerated. The separate Leech
+The rank-sixteen `2C` fixed lattice gives the first positive symmetry-first
+catalogue increment.  In a pinned integral LLL basis, all
+`binomial(16,7)=11,440` coordinate direct summands are tested.  After the
+determinant, discriminant-length, and MW12--17 gates, 97 seeds remain.  Closing
+under the exact `Dih_4` section gives 97 embedding orbits of size four; each
+has a literal `2C` stabilizer whose action on `M/2M` moves six, seven, or eight
+dimensions.  The 73 distinct frame discriminant forms all have exactly one
+matching ternary genus.
+
+Required `(T,NS)`-first deduplication produces 73 new surface classes, 76
+partner-auxiliary classes, and 86 frame classes.  Their post-frame-dedup MW
+distribution is `MW12:16, MW13:66, MW14:1, MW15:3`.  Thirteen surfaces have
+two inequivalent frames; several pair MW12 and MW13 presentations of the same
+surface.  The computation is exact inside the declared coordinate-summand
+language and exact under the residual `Dih_4` section.  It does not enumerate
+all primitive rank-seven sublattices of `Fix(2C)` and does not yet quotient by
+the full Weyl group.
+
+The first exact cross-backend comparison beyond `A7^2D5^2` separates a useful
+positive shell from a negative control. For `N(4D6)`, a lifted `S4` section
+contains literal component transpositions with primitive rank-sixteen fixed
+lattice of determinant 256. All 11,440 coordinate rank-seven summands of its
+pinned LLL basis are tested: 183 fail discriminant length and the remaining
+11,257 have MW rank below 12. Thus this declared shell contributes no target,
+without excluding other `4D6` auxiliaries.
+
+For `N(6A4)`, exhaustive glue testing shows that the chamber-preserving
+component/diagram group has order 240 and component-permutation image order
+120; the abstract `S6` envelope is therefore not used as if every permutation
+lifted. A cycle-shape `1^2 2^2` involution has primitive rank-sixteen fixed
+lattice of determinant 256. Its 11,440 coordinate summands leave 161 MW12--13
+seeds after all lattice gates. Every selected involution acts nontrivially on
+`M/2M`, moving six or seven dimensions. Exact canonicalization under all 240
+residual elements gives 161 orbits of size 120; all 42 distinct discriminant
+forms have one matching ternary genus.
+
+Local `(T,NS)`-first deduplication gives 42 surfaces, 55 auxiliary classes,
+and 128 frames, with post-dedup distribution `MW12:4, MW13:124`. Global
+deduplication adds only 39 surfaces: three already occur in `N(2A7+2D5)` and
+gain alternative `6A4` frames. This is direct evidence that surface-first
+cross-backend merging is necessary. The shell is not all primitive
+rank-seven sublattices of `Fix(g)` or `N(6A4)`, and its exact residual quotient
+does not replace the open full Weyl quotient.
+
+The other 19 rooted backends are not yet enumerated. The separate Leech
 backend now has an exact ambient Gram matrix and two certified `Co0`
 generators, but no primitive rank-seven embedding orbit has yet been
 enumerated. In particular, the catalogue does not turn the old mutation shell
@@ -172,6 +225,42 @@ discriminant length is at most three. Nikulin's indefinite uniqueness
 criterion therefore applies to signature `(1,18)`: the discriminant form
 determines the NS isometry class. Different ternary lattices with the same
 discriminant form remain different surface records.
+
+## Typed Pareto discovery ledger
+
+The catalogue-wide discovery ordering is
+[`../artifacts/generated-results/elkies-k3-rank7-surface-pareto-v1.json`](../artifacts/generated-results/elkies-k3-rank7-surface-pareto-v1.json).
+Its universal frontier minimizes the tuple
+
+```text
+(- maximum catalogued generic MW rank,
+ easiest known exact source MW rank,
+ source reducible-fibre support count,
+ determinant).
+```
+
+All 161 surfaces have these four exact lattice metrics. Forty-eight use the
+existing external low-MW source certificates; the other 113 use only their
+easiest currently imported frame, with that weaker inventory scope recorded
+in the row. The core Pareto frontier has four surfaces:
+
+```text
+K3-ebaf00b3723751ba  (MW17 from MW1, support 1, determinant 950)
+K3-8188cdcda8c57b2d  (MW17 from MW1, support 2, determinant 948)
+K3-f43753fb154e3406  (MW17 from MW17, support 0, determinant 720)
+K3-14ad03cd7c1848b2  (MW16 from MW1, support 1, determinant 654).
+```
+
+Missing arithmetic data are never imputed. Separate enriched frontiers use
+only rows carrying the required evidence: 39 surfaces have exact minimum-pole
+data, 117 have nontrivial exact stabilizer evidence, nine have the existing
+degree-two-exact/degree-three-and-four-bounded multisection data, and 34 have
+rootless target short-vector data. No surface currently has a certified
+physical neighbour route, so that coverage frontier is empty. Equation
+construction, field of definition, conductor prospects, and moduli
+genus/rationality remain typed `UNKNOWN` unless an input artifact certifies
+them. Pareto leadership is a search priority, not an optimality or arithmetic
+rank theorem.
 
 ## Replay
 
@@ -271,6 +360,24 @@ discriminant form remain different surface records.
   elkies-k3/scripts/enumerate_2a7_2d5_4a_fixed_rank7.sage --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_2a7_2d5_2c_fixed_high_mw_seed.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_2a7_2d5_2c_fixed_high_mw_seed.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_4d6_swap_fixed_high_mw_seed.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_4d6_swap_fixed_high_mw_seed.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_6a4_double_swap_fixed_high_mw_seed.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_6a4_double_swap_fixed_high_mw_seed.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_leech_co0_backend.sage
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -281,6 +388,10 @@ discriminant form remain different surface records.
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_rank7_auxiliary_catalogue.sage --check
+
+python3 elkies-k3/scripts/build_rank7_surface_pareto.py
+
+python3 elkies-k3/scripts/build_rank7_surface_pareto.py --check
 ```
 
 ## Next exact frontier

@@ -9,8 +9,9 @@ bounded discovery artifact can never masquerade as the requested all-orbit
 census.
 
 status: ACTIVE_SEARCH_INFRASTRUCTURE
-claim: exact (T,NS)-first deduplication of the imported one-root 2A7+2D5
-  shell and the certified 24A1 Golay-octad design.
+claim: exact (T,NS)-first deduplication of the imported one-root and 2C-fixed
+  2A7+2D5 shells, the 6A4 double-swap shell, and the certified 24A1
+  Golay-octad design.
 inputs: artifacts/generated-results/elkies-k3-lattice-foundry-v1.json,
   artifacts/generated-results/elkies-k3-golay-octad-rank17-det720.json,
   artifacts/generated-results/elkies-k3-rooted-niemeier-catalog.json,
@@ -18,6 +19,10 @@ inputs: artifacts/generated-results/elkies-k3-lattice-foundry-v1.json,
   artifacts/generated-results/elkies-k3-24a1-octad-completion-manifest-v1.json,
   artifacts/generated-results/elkies-k3-24a1-weyl-m24-canonicalization-00000-02000-v2.json,
   artifacts/generated-results/elkies-k3-cross-niemeier-mod2-priority-v1.json,
+  artifacts/generated-results/elkies-k3-2a7-2d5-4a-fixed-rank7-v1.json,
+  artifacts/generated-results/elkies-k3-2a7-2d5-2c-fixed-high-mw-seed-v1.json,
+  artifacts/generated-results/elkies-k3-4d6-swap-fixed-high-mw-seed-v1.json,
+  artifacts/generated-results/elkies-k3-6a4-double-swap-fixed-high-mw-seed-v1.json,
   artifacts/generated-results/elkies-k3-leech-co0-backend-v1.json
 output: artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json
 """
@@ -48,6 +53,18 @@ DEFAULT_MOD2_PRIORITY = (
 DEFAULT_4A_FIXED = (
     ROOT
     / "artifacts/generated-results/elkies-k3-2a7-2d5-4a-fixed-rank7-v1.json"
+)
+DEFAULT_2C_FIXED_SEED = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-2a7-2d5-2c-fixed-high-mw-seed-v1.json"
+)
+DEFAULT_4D6_SWAP_FIXED_SEED = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-4d6-swap-fixed-high-mw-seed-v1.json"
+)
+DEFAULT_6A4_DOUBLE_SWAP_FIXED_SEED = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-6a4-double-swap-fixed-high-mw-seed-v1.json"
 )
 DEFAULT_LEECH = ROOT / "artifacts/generated-results/elkies-k3-leech-co0-backend-v1.json"
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json"
@@ -310,6 +327,205 @@ def import_golay(payload, surfaces):
     return 1
 
 
+def import_2c_fixed_seed(payload, surfaces):
+    assert payload["schema"] == (
+        "elkies-k3.2a7-2d5-2c-fixed-high-mw-seed.v1"
+    )
+    assert payload["status"] == (
+        "PASS_EXACT_DECLARED_2C_FIXED_HIGH_MW_SEED_SHELL_T_NS_FIRST"
+    )
+    assert payload["parameters"]["determinant_bound"] == 5000
+    assert payload["parameters"]["minimum_mw_rank"] == 12
+    assert payload["accounting"]["surface_classes_after_T_NS_first_dedup"] == 73
+    imported_orbits = 0
+    for source_surface in payload["surfaces_T_NS_first"]:
+        key = source_surface["surface_key"]
+        surface = find_or_add_surface(surfaces, key)
+        partner_index_by_id = {}
+        for partner in source_surface["partner_auxiliaries"]:
+            auxiliary = matrix(ZZ, partner["gram"])
+            provenance = {
+                "backend_id": "ROOTED-2A7_2D5",
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-2a7-2d5-2c-fixed-high-mw-seed-v1.json"
+                ),
+                "source_surface_id": source_surface["surface_id"],
+                "source_partner_id": partner["partner_id"],
+                "section_orbit_ids": partner["section_orbit_ids"],
+                "scope": (
+                    "complete_only_in_declared_7_of_16_LLL_coordinate_"
+                    "summand_shell_closed_under_Dih_4_section"
+                ),
+                "representative_auxiliary_basis_in_ambient": partner[
+                    "representative_auxiliary_basis_in_ambient"
+                ],
+            }
+            partner_index_by_id[partner["partner_id"]] = add_partner(
+                surface, auxiliary, provenance
+            )
+        for source_frame in source_surface["frames"]:
+            frame = matrix(ZZ, source_frame["gram"])
+            root_data = source_frame["root_data"]
+            metadata = {
+                "root_type": root_data["root_type"],
+                "root_rank": root_data["root_rank"],
+                "mw_rank_for_rho_19": root_data["mw_rank_for_rho_19"],
+                "signed_root_count": root_data["signed_root_count"],
+                "root_determinant": root_data["root_determinant"],
+                "determinant_predicted_mw_regulator": str(
+                    QQ(frame.det()) / root_data["root_determinant"]
+                ),
+            }
+            provenance = {
+                "backend_id": "ROOTED-2A7_2D5",
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-2a7-2d5-2c-fixed-high-mw-seed-v1.json"
+                ),
+                "source_surface_id": source_surface["surface_id"],
+                "source_frame_id": source_frame["frame_id"],
+                "section_orbit_ids": source_frame["section_orbit_ids"],
+                "representative_complement_basis_in_ambient": source_frame[
+                    "representative_complement_basis_in_ambient"
+                ],
+                "literal_section_stabilizer": source_frame[
+                    "representative_literal_section_stabilizer"
+                ],
+                "scope": (
+                    "complete_only_in_declared_7_of_16_LLL_coordinate_"
+                    "summand_shell_closed_under_Dih_4_section"
+                ),
+            }
+            partner_indices = sorted(
+                {partner_index_by_id[value] for value in source_frame["partner_ids"]}
+            )
+            assert partner_indices
+            frame_index = add_frame(
+                surface,
+                frame,
+                metadata,
+                provenance,
+                partner_indices[0],
+                certified_distinct_batch=source_surface["surface_id"],
+            )
+            for partner_index in partner_indices[1:]:
+                if partner_index not in surface["frames"][frame_index][
+                    "partner_auxiliary_indices"
+                ]:
+                    surface["frames"][frame_index][
+                        "partner_auxiliary_indices"
+                    ].append(partner_index)
+            imported_orbits += len(source_frame["section_orbit_ids"])
+    assert imported_orbits == payload["accounting"]["Dih_4_section_embedding_orbits"]
+    return imported_orbits
+
+
+def import_6a4_double_swap_fixed_seed(payload, surfaces):
+    assert payload["schema"] == (
+        "elkies-k3.6a4-double-swap-fixed-high-mw-seed.v1"
+    )
+    assert payload["status"] == (
+        "PASS_EXACT_DECLARED_6A4_DOUBLE_SWAP_FIXED_HIGH_MW_SEED_SHELL_T_NS_FIRST"
+    )
+    assert payload["parameters"]["determinant_bound"] == 5000
+    assert payload["parameters"]["minimum_mw_rank"] == 12
+    assert payload["residual_group"]["order"] == 240
+    assert payload["accounting"][
+        "surface_classes_after_T_NS_first_dedup"
+    ] == 42
+    imported_orbits = 0
+    for source_surface in payload["surfaces_T_NS_first"]:
+        surface = find_or_add_surface(surfaces, source_surface["surface_key"])
+        partner_index_by_id = {}
+        for partner in source_surface["partner_auxiliaries"]:
+            auxiliary = matrix(ZZ, partner["gram"])
+            provenance = {
+                "backend_id": "ROOTED-6A4",
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-6a4-double-swap-fixed-high-mw-seed-v1.json"
+                ),
+                "source_surface_id": source_surface["surface_id"],
+                "source_partner_id": partner["partner_id"],
+                "residual_group_orbit_ids": partner[
+                    "residual_group_orbit_ids"
+                ],
+                "scope": (
+                    "complete_only_in_declared_7_of_16_LLL_coordinate_"
+                    "summand_shell_closed_under_exact_order_240_residual_group"
+                ),
+                "representative_auxiliary_basis_in_ambient": partner[
+                    "representative_auxiliary_basis_in_ambient"
+                ],
+            }
+            partner_index_by_id[partner["partner_id"]] = add_partner(
+                surface, auxiliary, provenance
+            )
+        for source_frame in source_surface["frames"]:
+            frame = matrix(ZZ, source_frame["gram"])
+            root_data = source_frame["root_data"]
+            metadata = {
+                "root_type": root_data["root_type"],
+                "root_rank": root_data["root_rank"],
+                "mw_rank_for_rho_19": root_data["mw_rank_for_rho_19"],
+                "signed_root_count": root_data["signed_root_count"],
+                "root_determinant": root_data["root_determinant"],
+                "determinant_predicted_mw_regulator": str(
+                    QQ(frame.det()) / root_data["root_determinant"]
+                ),
+            }
+            provenance = {
+                "backend_id": "ROOTED-6A4",
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-6a4-double-swap-fixed-high-mw-seed-v1.json"
+                ),
+                "source_surface_id": source_surface["surface_id"],
+                "source_frame_id": source_frame["frame_id"],
+                "residual_group_orbit_ids": source_frame[
+                    "residual_group_orbit_ids"
+                ],
+                "representative_complement_basis_in_ambient": source_frame[
+                    "representative_complement_basis_in_ambient"
+                ],
+                "literal_residual_stabilizer": source_frame[
+                    "representative_literal_residual_stabilizer"
+                ],
+                "scope": (
+                    "complete_only_in_declared_7_of_16_LLL_coordinate_"
+                    "summand_shell_closed_under_exact_order_240_residual_group"
+                ),
+            }
+            partner_indices = sorted(
+                {
+                    partner_index_by_id[value]
+                    for value in source_frame["partner_ids"]
+                }
+            )
+            assert partner_indices
+            frame_index = add_frame(
+                surface,
+                frame,
+                metadata,
+                provenance,
+                partner_indices[0],
+                certified_distinct_batch=source_surface["surface_id"],
+            )
+            for partner_index in partner_indices[1:]:
+                if partner_index not in surface["frames"][frame_index][
+                    "partner_auxiliary_indices"
+                ]:
+                    surface["frames"][frame_index][
+                        "partner_auxiliary_indices"
+                    ].append(partner_index)
+            imported_orbits += len(source_frame["residual_group_orbit_ids"])
+    assert imported_orbits == payload["accounting"][
+        "residual_group_embedding_orbits"
+    ]
+    return imported_orbits
+
+
 def finalize_surfaces(surfaces):
     surfaces.sort(key=lambda item: (item["determinant"], item["surface_id"]))
     seen_ids = set()
@@ -345,6 +561,9 @@ def backend_registry(
     octad_weyl_m24,
     mod2_priority,
     four_a_fixed,
+    two_c_fixed_seed,
+    four_d6_swap_fixed_seed,
+    six_a4_double_swap_fixed_seed,
     leech_foundation,
     surfaces,
 ):
@@ -441,14 +660,63 @@ def backend_registry(
     assert four_a_fixed["accounting"][
         "family_rejected_by_discriminant_length"
     ]
+    assert two_c_fixed_seed["schema"] == (
+        "elkies-k3.2a7-2d5-2c-fixed-high-mw-seed.v1"
+    )
+    assert two_c_fixed_seed["status"] == (
+        "PASS_EXACT_DECLARED_2C_FIXED_HIGH_MW_SEED_SHELL_T_NS_FIRST"
+    )
+    assert two_c_fixed_seed["accounting"][
+        "Dih_4_section_embedding_orbits"
+    ] == 97
+    assert two_c_fixed_seed["accounting"][
+        "surface_classes_after_T_NS_first_dedup"
+    ] == 73
+    assert four_d6_swap_fixed_seed["schema"] == (
+        "elkies-k3.4d6-swap-fixed-high-mw-seed.v1"
+    )
+    assert four_d6_swap_fixed_seed["status"] == (
+        "PASS_EXACT_DECLARED_4D6_SWAP_FIXED_HIGH_MW_SEED_SHELL_T_NS_FIRST"
+    )
+    assert four_d6_swap_fixed_seed["accounting"][
+        "coordinate_subsets_tested"
+    ] == 11440
+    assert four_d6_swap_fixed_seed["accounting"][
+        "high_mw_mod2_accepted_seeds"
+    ] == 0
+    assert six_a4_double_swap_fixed_seed["schema"] == (
+        "elkies-k3.6a4-double-swap-fixed-high-mw-seed.v1"
+    )
+    assert six_a4_double_swap_fixed_seed["status"] == (
+        "PASS_EXACT_DECLARED_6A4_DOUBLE_SWAP_FIXED_HIGH_MW_SEED_SHELL_T_NS_FIRST"
+    )
+    assert six_a4_double_swap_fixed_seed["residual_group"]["order"] == 240
+    assert six_a4_double_swap_fixed_seed["accounting"][
+        "surface_classes_after_T_NS_first_dedup"
+    ] == 42
     priority_by_backend = {
         row["backend_id"]: row for row in mod2_priority["backends"]
     }
     for row in niemeier["rooted_niemeier_lattices"]:
         backend_id = f"ROOTED-{row['label']}"
         if row["label"] == "2A7_2D5":
-            state = "PARTIAL_IMPORTED_ONE_ROOT_MUTATION_SHELL"
+            state = (
+                "PARTIAL_IMPORTED_ONE_ROOT_MUTATION_AND_"
+                "2C_FIXED_HIGH_MW_SEED_SHELLS"
+            )
             group = "W(2A7+2D5) semidirect G^X; residual orbit data exact only in the control shell"
+        elif row["label"] == "6A4":
+            state = "PARTIAL_IMPORTED_DOUBLE_SWAP_FIXED_HIGH_MW_SEED_SHELL"
+            group = (
+                "W(6A4) semidirect G^X; the complete 240-element "
+                "chamber-preserving residual group is exact in the imported shell"
+            )
+        elif row["label"] == "4D6":
+            state = "PARTIAL_EXACT_SWAP_FIXED_HIGH_MW_NEGATIVE_SHELL"
+            group = (
+                "W(4D6) semidirect G^X; an exact lifted S4 section is "
+                "used in the declared negative shell"
+            )
         elif row["label"] == "24A1":
             state = (
                 "PARTIAL_POSITIVE_OCTAD_FULL_WEYL_M24_"
@@ -553,6 +821,114 @@ def backend_registry(
                     "determinant 5000; not all rank-seven sublattices of the ambient"
                 ),
             }
+            backend["exact_2C_fixed_high_mw_seed_shell"] = {
+                "status": two_c_fixed_seed["status"],
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-2a7-2d5-2c-fixed-high-mw-seed-v1.json"
+                ),
+                "coordinate_subsets_tested": two_c_fixed_seed["accounting"][
+                    "coordinate_subsets_tested"
+                ],
+                "Dih_4_section_embedding_orbits": two_c_fixed_seed[
+                    "accounting"
+                ]["Dih_4_section_embedding_orbits"],
+                "surface_classes_after_T_NS_first_dedup": two_c_fixed_seed[
+                    "accounting"
+                ]["surface_classes_after_T_NS_first_dedup"],
+                "partner_auxiliary_isometry_classes": two_c_fixed_seed[
+                    "accounting"
+                ]["partner_auxiliary_isometry_classes_after_surface_dedup"],
+                "frame_isometry_classes": two_c_fixed_seed["accounting"][
+                    "frame_isometry_classes_after_surface_dedup"
+                ],
+                "mw_rank_distribution": two_c_fixed_seed["accounting"][
+                    "section_orbit_mw_rank_distribution"
+                ],
+                "selected_stabilizer_class": "2C",
+                "all_selected_actions_nontrivial_mod_2": True,
+                "canonicalization": "exact under Dih_4 section; full Weyl quotient open",
+                "completeness_scope": (
+                    "all 7-of-16 coordinate direct summands of one pinned LLL "
+                    "basis of Fix(2C), then Dih_4-section closure; not all "
+                    "rank-seven sublattices of Fix(2C)"
+                ),
+            }
+        if row["label"] == "4D6":
+            backend["exact_component_swap_fixed_high_mw_seed_shell"] = {
+                "status": four_d6_swap_fixed_seed["status"],
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-4d6-swap-fixed-high-mw-seed-v1.json"
+                ),
+                "coordinate_subsets_tested": four_d6_swap_fixed_seed[
+                    "accounting"
+                ]["coordinate_subsets_tested"],
+                "discriminant_length_rejected": four_d6_swap_fixed_seed[
+                    "accounting"
+                ]["discriminant_length_rejected"],
+                "mw_rank_below_factory_floor_rejected": (
+                    four_d6_swap_fixed_seed["accounting"][
+                        "mw_rank_below_factory_floor_rejected"
+                    ]
+                ),
+                "high_mw_mod2_accepted_seeds": 0,
+                "selected_stabilizer_type": "single D6-component transposition",
+                "canonicalization": "exact under a lifted S4 section",
+                "completeness_scope": (
+                    "all 7-of-16 coordinate direct summands of one pinned LLL "
+                    "basis of the selected swap fixed lattice; not all rank-seven "
+                    "sublattices of Fix(g) or N(4D6)"
+                ),
+            }
+        if row["label"] == "6A4":
+            backend["exact_double_swap_fixed_high_mw_seed_shell"] = {
+                "status": six_a4_double_swap_fixed_seed["status"],
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-6a4-double-swap-fixed-high-mw-seed-v1.json"
+                ),
+                "coordinate_subsets_tested": six_a4_double_swap_fixed_seed[
+                    "accounting"
+                ]["coordinate_subsets_tested"],
+                "residual_group_order": six_a4_double_swap_fixed_seed[
+                    "residual_group"
+                ]["order"],
+                "residual_group_embedding_orbits": (
+                    six_a4_double_swap_fixed_seed["accounting"][
+                        "residual_group_embedding_orbits"
+                    ]
+                ),
+                "surface_classes_after_T_NS_first_dedup": (
+                    six_a4_double_swap_fixed_seed["accounting"][
+                        "surface_classes_after_T_NS_first_dedup"
+                    ]
+                ),
+                "partner_auxiliary_isometry_classes": (
+                    six_a4_double_swap_fixed_seed["accounting"][
+                        "partner_auxiliary_isometry_classes_after_surface_dedup"
+                    ]
+                ),
+                "frame_isometry_classes": six_a4_double_swap_fixed_seed[
+                    "accounting"
+                ]["frame_isometry_classes_after_surface_dedup"],
+                "mw_rank_distribution": six_a4_double_swap_fixed_seed[
+                    "accounting"
+                ]["orbit_mw_rank_distribution"],
+                "selected_stabilizer_class": six_a4_double_swap_fixed_seed[
+                    "parameters"
+                ]["selected_class"],
+                "all_selected_actions_nontrivial_mod_2": True,
+                "canonicalization": (
+                    "exact under all 240 chamber-preserving residual "
+                    "component/diagram automorphisms; full Weyl quotient open"
+                ),
+                "completeness_scope": (
+                    "all 7-of-16 coordinate direct summands of one pinned LLL "
+                    "basis of the selected double-swap fixed lattice; not all "
+                    "rank-seven sublattices of Fix(g) or N(6A4)"
+                ),
+            }
         rooted.append(backend)
     assert leech_foundation["schema"] == "elkies-k3.leech-co0-backend.v1"
     assert leech_foundation["status"] == (
@@ -589,6 +965,9 @@ def build_payload(
     octad_weyl_m24,
     mod2_priority,
     four_a_fixed,
+    two_c_fixed_seed,
+    four_d6_swap_fixed_seed,
+    six_a4_double_swap_fixed_seed,
     leech_foundation,
 ):
     frontier_stop = octad_completion_manifest["parameters"][
@@ -597,6 +976,12 @@ def build_payload(
     surfaces = []
     imported_foundry_embeddings = import_foundry(foundry, surfaces)
     imported_golay_embeddings = import_golay(golay, surfaces)
+    imported_2c_section_orbits = import_2c_fixed_seed(
+        two_c_fixed_seed, surfaces
+    )
+    imported_6a4_residual_orbits = import_6a4_double_swap_fixed_seed(
+        six_a4_double_swap_fixed_seed, surfaces
+    )
     finalize_surfaces(surfaces)
     rooted, leech = backend_registry(
         niemeier,
@@ -606,6 +991,9 @@ def build_payload(
         octad_weyl_m24,
         mod2_priority,
         four_a_fixed,
+        two_c_fixed_seed,
+        four_d6_swap_fixed_seed,
+        six_a4_double_swap_fixed_seed,
         leech_foundation,
         surfaces,
     )
@@ -613,6 +1001,42 @@ def build_payload(
     frame_rows = [frame for surface in surfaces for frame in surface["frames"]]
     mw_distribution = Counter(frame["mw_rank_for_rho_19"] for frame in frame_rows)
     band_distribution = Counter(surface["determinant_band"] for surface in surfaces)
+    assert len(surfaces) == 161
+    assert sum(len(surface["partner_auxiliaries"]) for surface in surfaces) == 180
+    assert len(frame_rows) == 724
+    assert mw_distribution == Counter(
+        {17: 139, 16: 261, 15: 113, 14: 1, 13: 190, 12: 20}
+    )
+    assert band_distribution == Counter(
+        {
+            "D0501-1000": 19,
+            "D1001-2000": 61,
+            "D2001-5000": 81,
+        }
+    )
+    cross_backend_6a4_surfaces = [
+        surface
+        for surface in surfaces
+        if "ROOTED-6A4"
+        in {
+            provenance["backend_id"]
+            for frame in surface["frames"]
+            for provenance in frame["provenance"]
+        }
+        and len(
+            {
+                provenance["backend_id"]
+                for frame in surface["frames"]
+                for provenance in frame["provenance"]
+            }
+        )
+        > 1
+    ]
+    assert [surface["surface_id"] for surface in cross_backend_6a4_surfaces] == [
+        "K3-11919eb0b07e0580",
+        "K3-ce4de7dfd2f10738",
+        "K3-513a666a3ed34e0a",
+    ]
     backend_shards = []
     for backend in rooted + [leech]:
         for band_id, lower, upper in BANDS:
@@ -648,7 +1072,14 @@ def build_payload(
                 "2A7+2D5 mutation shell and 24A1 Golay design retain their original "
                 "bounded completeness statements. The exact 4A-fixed corank-one "
                 "family is closed and rejected by discriminant length, but does not "
-                "cover non-pointwise-fixed auxiliaries. The 24A1 completion shard covers "
+                "cover non-pointwise-fixed auxiliaries. The imported 2C-fixed high-MW "
+                "coordinate shell is exact only for its pinned 7-of-16 LLL seed language "
+                "and Dih_4-section quotient; it is not a full fixed-lattice or Weyl-orbit "
+                "census. The 4D6 component-swap coordinate shell is an exact bounded "
+                "negative family, not a backend exclusion. The 6A4 double-swap shell "
+                "uses the full 240-element chamber residual group but still covers only "
+                "one pinned 7-of-16 fixed-lattice coordinate language, not the full Weyl "
+                "quotient or all primitive auxiliaries. The 24A1 completion shard covers "
                 f"only positive seven-octad generators for prefixes 0:{frontier_stop}; their "
                 "full Weyl-M24 quotient is exact, but the remaining prefixes and "
                 "signed/non-octad generator languages remain open. Surface IDs catalogue exact "
@@ -697,7 +1128,15 @@ def build_payload(
                 band_id: band_distribution[band_id] for band_id, unused_l, unused_u in BANDS
             },
             "imported_primitive_embedding_records": (
-                imported_foundry_embeddings + imported_golay_embeddings
+                imported_foundry_embeddings
+                + imported_golay_embeddings
+                + imported_2c_section_orbits
+                + imported_6a4_residual_orbits
+            ),
+            "6A4_source_surface_classes_before_global_dedup": 42,
+            "6A4_new_surface_classes_after_global_T_NS_dedup": 39,
+            "6A4_surface_classes_overlapping_prior_backends": len(
+                cross_backend_6a4_surfaces
             ),
             "rooted_backends": len(rooted),
             "leech_backends": 1,
@@ -756,6 +1195,17 @@ parser.add_argument("--octad-completion", type=Path, action="append")
 parser.add_argument("--octad-weyl-m24", type=Path)
 parser.add_argument("--mod2-priority", type=Path, default=DEFAULT_MOD2_PRIORITY)
 parser.add_argument("--four-a-fixed", type=Path, default=DEFAULT_4A_FIXED)
+parser.add_argument("--two-c-fixed-seed", type=Path, default=DEFAULT_2C_FIXED_SEED)
+parser.add_argument(
+    "--four-d6-swap-fixed-seed",
+    type=Path,
+    default=DEFAULT_4D6_SWAP_FIXED_SEED,
+)
+parser.add_argument(
+    "--six-a4-double-swap-fixed-seed",
+    type=Path,
+    default=DEFAULT_6A4_DOUBLE_SWAP_FIXED_SEED,
+)
 parser.add_argument("--leech", type=Path, default=DEFAULT_LEECH)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 parser.add_argument("--check", action="store_true")
@@ -797,6 +1247,13 @@ octad_weyl_m24_path = arguments.octad_weyl_m24 or (
 octad_weyl_m24_payload = json.loads(octad_weyl_m24_path.read_text())
 mod2_priority_payload = json.loads(arguments.mod2_priority.read_text())
 four_a_fixed_payload = json.loads(arguments.four_a_fixed.read_text())
+two_c_fixed_seed_payload = json.loads(arguments.two_c_fixed_seed.read_text())
+four_d6_swap_fixed_seed_payload = json.loads(
+    arguments.four_d6_swap_fixed_seed.read_text()
+)
+six_a4_double_swap_fixed_seed_payload = json.loads(
+    arguments.six_a4_double_swap_fixed_seed.read_text()
+)
 leech_payload = json.loads(arguments.leech.read_text())
 payload = build_payload(
     foundry_payload,
@@ -808,6 +1265,9 @@ payload = build_payload(
     octad_weyl_m24_payload,
     mod2_priority_payload,
     four_a_fixed_payload,
+    two_c_fixed_seed_payload,
+    four_d6_swap_fixed_seed_payload,
+    six_a4_double_swap_fixed_seed_payload,
     leech_payload,
 )
 encoded = json.dumps(payload, indent=2, sort_keys=True) + "\n"

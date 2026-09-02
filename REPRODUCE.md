@@ -2925,6 +2925,12 @@ Build or byte-check the surface-first rank-seven auxiliary catalogue:
   elkies-k3/scripts/enumerate_2a7_2d5_4a_fixed_rank7.sage --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_2a7_2d5_2c_fixed_high_mw_seed.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_2a7_2d5_2c_fixed_high_mw_seed.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_leech_co0_backend.sage
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -2935,6 +2941,10 @@ Build or byte-check the surface-first rank-seven auxiliary catalogue:
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_rank7_auxiliary_catalogue.sage --check
+
+python3 elkies-k3/scripts/build_rank7_surface_pareto.py
+
+python3 elkies-k3/scripts/build_rank7_surface_pareto.py --check
 ```
 
 The first two commands enumerate exact residual-`M24` orbits of unordered
@@ -2957,7 +2967,11 @@ family inside the common rank-eight `4A` fixed lattice of `N(2A7+2D5)`.
 They enumerate 336 embeddings, with MW-rank distribution `16,16,304` in
 ranks 13, 15, and 17. Every embedding has nontrivial `2B,2C,4A` complement
 action modulo two, but all five frame classes fail the ternary gate because
-their discriminant groups have length seven. Neither artifact is a complete `24A1:D0001-0500`
+their discriminant groups have length seven. The following two commands test
+all 11,440 coordinate direct summands of a pinned `2C` fixed-lattice basis.
+The 97 high-MW survivors give 97 exact `Dih_4`-section orbits and 73 admissible
+`(T,NS)` surfaces; post-deduplication they contribute 86 frames with MW-rank
+distribution `16,66,1,3` in ranks 12 through 15. Neither artifact is a complete `24A1:D0001-0500`
 result: the remaining prefixes and non-positive-octad generator languages are
 open.
 
@@ -2966,13 +2980,21 @@ AtlasRep `2.Co1=Co0` action: the invariant form is one-dimensional and its
 primitive positive integral generator is the even unimodular rank-24 lattice
 of minimum four with 196,560 minimal vectors. No rank-seven Leech embedding
 orbit is enumerated yet. The catalogue imports exact primitive embeddings from the current
-`N(2A7+2D5)` mutation shell and the determinant-720 `N(24A1)` Golay design,
+`N(2A7+2D5)` mutation and `2C` fixed-lattice seed shells and the determinant-720 `N(24A1)` Golay design,
 deduplicates first by `(T,NS)` and only then by auxiliary/frame isometry, and
-retains legacy `NS....` identifiers as aliases. It has 49 exact surface
-classes and 510 MW15--17 frames. The 23 rooted backends and separate Leech
+retains legacy `NS....` identifiers as aliases. It has 122 exact surface
+classes and 596 MW12--17 frames. The 23 rooted backends and separate Leech
 backend are split into 96 determinant-band shards; all remain open because the
 two imported searches have bounded, narrower completeness statements. See
 [`elkies-k3/RANK7_AUXILIARY_CATALOGUE_2026-09-01.md`](elkies-k3/RANK7_AUXILIARY_CATALOGUE_2026-09-01.md).
+
+The final two commands build and byte-check the typed surface-wide discovery
+ordering. Its exact four-metric core frontier has four of 122 surfaces.
+Coverage-restricted enriched ledgers contain 39 surfaces with exact
+minimum-pole evidence and 78 with nontrivial stabilizer evidence; no certified
+physical neighbour route is currently available. Missing equation, field,
+route, conductor, and moduli data are retained as typed unknowns rather than
+imputed.
 
 Build or byte-check the first determinant-varying Picard-19 lattice-foundry
 shell:
