@@ -153,6 +153,18 @@ def main():
     golay_rejection_path = (
         "artifacts/generated-results/elkies-k3-golay-det720-3a5-saturation-rejection-v1.json"
     )
+    bridge_reglue_path = (
+        "artifacts/generated-results/"
+        "elkies-k3-integral-rank-transfer-bridge-reglue-v1.json"
+    )
+    character_glue_path = (
+        "artifacts/generated-results/"
+        "elkies-k3-integral-character-glue-calculus-v1.json"
+    )
+    norm12_glue_path = (
+        "artifacts/generated-results/"
+        "elkies-k3-r17-norm12-103b2-mw-glue-v1.json"
+    )
 
     j2 = load_json(j2_path)
     foundry = load_json(foundry_path)
@@ -167,6 +179,9 @@ def main():
     r17_pair = load_json(r17_pair_path)
     r17_split = load_json(r17_split_path)
     golay_rejection = load_json(golay_rejection_path)
+    bridge_reglue = load_json(bridge_reglue_path)
+    character_glue = load_json(character_glue_path)
+    norm12_glue = load_json(norm12_glue_path)
 
     assert j2["status"] == "PASS_EXACT_ROOTLESS_J2_CONTROLS_AND_OFF_GENUS_REJECTION_NOT_COMPLETE"
     assert ns0024_route["status"] == "PASS_EXACT_NEW_K3_ROOTFUL_TO_ROOTLESS_NEF_ROUTE"
@@ -188,6 +203,17 @@ def main():
     assert r17_split["status"] == "PASS_EXACT_SIMULTANEOUS_SPLIT_HITS_QUOTIENTED"
     assert golay_rejection["status"] == (
         "PASS_EXACT_RATIONAL_POINT_REJECTED_NS_DET20_TORSION3_HALF_SECTION"
+    )
+    assert bridge_reglue["status"] == "PASS_EXACT_BRIDGE_REGLUE_CERTIFICATES"
+    assert bridge_reglue["aggregate"]["edge_count"] == 42
+    assert character_glue["status"] == (
+        "PASS_EXACT_INVOLUTION_GRAPH_GLUE_CLASSIFICATION"
+    )
+    assert norm12_glue["status"] == (
+        "PASS_EXACT_VISIBLE_MW_GLUE_AND_SPECIALIZATION_RANK_AT_LEAST_18"
+    )
+    assert norm12_glue["specialized_MW_subgroup"]["status"] == (
+        "PASS_FULL_ECLIB_SATURATION_OF_DISPLAYED_RANK18_SUBGROUP"
     )
 
     U = matrix(ZZ, [[0, 1], [1, 0]])
@@ -652,6 +678,9 @@ def main():
                 r17_pair_path,
                 r17_split_path,
                 golay_rejection_path,
+                bridge_reglue_path,
+                character_glue_path,
+                norm12_glue_path,
                 "elkies-k3/data/lattice/rank17_gram.txt",
             ]
         },
@@ -675,12 +704,28 @@ def main():
                 "integrality_warning": "A finite quotient between rational Mordell-Weil height blocks is not by itself a Nikulin discriminant-form glue subgroup.",
                 "root_effect": "An overlattice alone cannot remove roots already present.",
                 "reversible": True,
+                "E6_graph_classification": {
+                    "2_plus_1_graph_isometry_types": 2,
+                    "2_plus_2_full_graph_count": character_glue[
+                        "E6_2_plus_2"
+                    ]["full_graph_count"],
+                    "2_plus_2_full_graph_isometry_classes": character_glue[
+                        "E6_2_plus_2"
+                    ]["integral_isometry_class_count"],
+                },
             },
             "Kneser_reglue_candidate": {
                 "definition": "Replace, rather than merely enlarge, isotropic glue across a common index-p sublattice.",
                 "finite_form_effect": "Preserves the genus for ordinary p-neighbors while removing old cosets and adding new ones.",
                 "root_effect": "Can annihilate roots and is the appropriate atomic candidate for an inverted calculus.",
-                "observed_edge_identification": "not yet computed for the four U-change corridors",
+                "observed_edge_identification": "not the intrinsic description of the 42 observed clicks; it remains an optional decomposition and genus-connectivity move",
+                "reversible": True,
+            },
+            "rank_two_cyclic_bridge_replacement": {
+                "definition": "For consecutive frames set K=W_old intersect W_new and C_i=K^perp in W_i; replace the rank-two bridge and its maximal cyclic graph glue over fixed K.",
+                "finite_form_effect": "The ambient frame discriminant form stays fixed, while the bridge form and embedded cyclic graph subgroup change.",
+                "root_effect": "Phi(W_old) intersect Phi(W_new)=Phi(K); all removed and introduced roots are enumerated in bridge/glue cosets.",
+                "observed_edge_identification": "proved for all 42 selected H3, Q80, NS0024, and Golay720 edges",
                 "reversible": True,
             },
         },
@@ -805,23 +850,14 @@ def main():
             },
             {
                 "id": "R17_norm12_simultaneous_split_specialization",
-                "tuple": {
-                    "L": {
-                        "name": "specialized_section_lattice_at_t=1/25",
-                        "rank": ">=18",
-                        "determinant_absolute": "not determined",
-                    },
-                    "G": {
-                        "name": "not a computed deck-action lattice record",
-                        "order": "not applicable to the specialization quotient certificate",
-                    },
-                    "L_chi": "not determined",
-                    "A_L": "not determined",
-                    "q_L": "not determined",
-                    "glue_subgroups": "not determined",
-                },
+                "tuple": norm12_glue["tuple"],
                 "transition": {
-                    "operation": "simultaneous_specialization_split",
+                    "operation": "quadratic_pullback_character_graph_glue_then_specialization_split",
+                    "cover_character_glue_index": 2,
+                    "visible_cover_rank": 18,
+                    "visible_cover_minimum": norm12_glue[
+                        "saturated_visible_MW_lattice"
+                    ]["minimum"],
                     "parameter": "1/25",
                     "split_classes": [
                         "norm8-orbit-0f6b1",
@@ -829,9 +865,15 @@ def main():
                     ],
                     "certified_rank_lower_bound": 18,
                     "independent_escape_basis_labels": ["norm12-orbit-103b2"],
+                    "specialized_rank18_subgroup_saturation": norm12_glue[
+                        "specialized_MW_subgroup"
+                    ]["status"],
+                    "specialized_rank18_subgroup_saturation_index": norm12_glue[
+                        "specialized_MW_subgroup"
+                    ]["saturation_index"],
                 },
-                "classification_status": "success recorded, but no integral Gram, finite form, or glue mutation has yet been extracted",
-                "proof_boundary": "Finite-quotient escape proves one new specialization direction modulo the generic MW17 subgroup; it is not a generic rank transfer or a completed lattice/glue tuple.",
+                "classification_status": "complete integral character/glue tuple in the displayed cover-level rank-18 rational span; displayed specialized rank-18 subgroup primitive",
+                "proof_boundary": "The cover-level rank-18 character span and its index-two saturation are exact. Extra anti-invariant cover directions and a specialization rank upper bound are not proved; the specialized canonical-height matrix is not treated as an integral discriminant form.",
             },
         ],
         "scope_boundary": {
@@ -844,12 +886,19 @@ def main():
             "q_4_or_6_count": q_histogram.get("4", 0) + q_histogram.get("6", 0),
             "discriminant_form_changes": 0,
             "nonunimodular_transports": 0,
+            "bridge_reglue": bridge_reglue["aggregate"],
+            "distinct_cyclic_bridge_glue_orders": sorted(
+                {
+                    edge["bridge_replacement"]["common_cyclic_glue_order"]
+                    for edge in bridge_reglue["edges"]
+                }
+            ),
         },
         "main_conclusion": {
-            "positive": "Three operations recur: primitive-U change, maximal graph glue/complement, and character-primary saturation.",
+            "positive": "Four exact layers recur: primitive-U change, rank-two cyclic bridge replacement, maximal graph glue/complement, and character-primary saturation.",
             "negative": "No same-NS corridor click is detected by a change of finite discriminant form; a pure overlattice extension cannot annihilate an existing root.",
-            "inversion_target": "Compute common-substructure p-neighbor/reglue data for frame classes, then enumerate only reversible regluings whose actual new cosets pass minimum at least four.",
-            "missing_exact_experiment": "For each consecutive frame pair compute a common embedded lattice K, both quotient glue subgroups H_old,H_new, prime-factor indices, and root survival by glue coset.",
+            "inversion_target": "For a fixed rank-fifteen core K, enumerate positive even binary bridges C and cyclic anti-isometric graph embeddings into A_K; retain only overlattices whose complete norm-two coset profile is empty.",
+            "missing_exact_experiment": "Enumerate and automorphism-deduplicate admissible bridge replacements beyond the 42 observed edges, then certify connectivity or genus completeness by a spinor-genus or mass calculation.",
         },
         "negative_controls": [
             {

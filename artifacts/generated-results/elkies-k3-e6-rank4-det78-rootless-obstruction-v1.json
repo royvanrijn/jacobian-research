@@ -1,0 +1,308 @@
+{
+  "accounting": {
+    "available_projection_norm": "13/4",
+    "fixed_root_A3_subsystems_before_weyl_quotient": 5325,
+    "leech_excluded_by_auxiliary_roots": 1,
+    "minimum_residual_root_rank": 14,
+    "primitive_root_anchor_cover": 1591,
+    "projection_norm_lower_bound": "7",
+    "residual_root_rank_distribution": {
+      "14": 24,
+      "15": 721,
+      "16": 619,
+      "17": 198,
+      "18": 29
+    },
+    "rooted_niemeier_classes_processed": 23,
+    "strict_contradiction": true
+  },
+  "ambient_accounting": [
+    {
+      "A3_fixed_root_subsystems": 946,
+      "A3_weyl_orbits": 2,
+      "niemeier": "D24",
+      "primitive_root_anchor_cover": 2,
+      "residual_root_rank_16": 1,
+      "residual_root_rank_17": 1
+    },
+    {
+      "A3_fixed_root_subsystems": 756,
+      "A3_weyl_orbits": 3,
+      "niemeier": "D16_E8",
+      "primitive_root_anchor_cover": 13,
+      "residual_root_rank_16": 2,
+      "residual_root_rank_17": 9,
+      "residual_root_rank_18": 2
+    },
+    {
+      "A3_fixed_root_subsystems": 1134,
+      "A3_weyl_orbits": 3,
+      "niemeier": "3E8",
+      "primitive_root_anchor_cover": 30,
+      "residual_root_rank_17": 12,
+      "residual_root_rank_18": 18
+    },
+    {
+      "A3_fixed_root_subsystems": 253,
+      "A3_weyl_orbits": 1,
+      "niemeier": "A24",
+      "primitive_root_anchor_cover": 1,
+      "residual_root_rank_15": 1
+    },
+    {
+      "A3_fixed_root_subsystems": 380,
+      "A3_weyl_orbits": 4,
+      "niemeier": "2D12",
+      "primitive_root_anchor_cover": 16,
+      "residual_root_rank_16": 8,
+      "residual_root_rank_17": 8
+    },
+    {
+      "A3_fixed_root_subsystems": 240,
+      "A3_weyl_orbits": 2,
+      "niemeier": "A17_E7",
+      "primitive_root_anchor_cover": 9,
+      "residual_root_rank_15": 1,
+      "residual_root_rank_16": 6,
+      "residual_root_rank_17": 2
+    },
+    {
+      "A3_fixed_root_subsystems": 360,
+      "A3_weyl_orbits": 4,
+      "niemeier": "D10_2E7",
+      "primitive_root_anchor_cover": 40,
+      "residual_root_rank_15": 1,
+      "residual_root_rank_16": 6,
+      "residual_root_rank_17": 25,
+      "residual_root_rank_18": 8
+    },
+    {
+      "A3_fixed_root_subsystems": 182,
+      "A3_weyl_orbits": 3,
+      "niemeier": "A15_D9",
+      "primitive_root_anchor_cover": 13,
+      "residual_root_rank_15": 4,
+      "residual_root_rank_16": 8,
+      "residual_root_rank_17": 1
+    },
+    {
+      "A3_fixed_root_subsystems": 198,
+      "A3_weyl_orbits": 6,
+      "niemeier": "3D8",
+      "primitive_root_anchor_cover": 54,
+      "residual_root_rank_15": 6,
+      "residual_root_rank_16": 18,
+      "residual_root_rank_17": 30
+    },
+    {
+      "A3_fixed_root_subsystems": 110,
+      "A3_weyl_orbits": 2,
+      "niemeier": "2A12",
+      "primitive_root_anchor_cover": 8,
+      "residual_root_rank_15": 8
+    },
+    {
+      "A3_fixed_root_subsystems": 135,
+      "A3_weyl_orbits": 4,
+      "niemeier": "A11_D7_E6",
+      "primitive_root_anchor_cover": 36,
+      "residual_root_rank_15": 8,
+      "residual_root_rank_16": 21,
+      "residual_root_rank_17": 6,
+      "residual_root_rank_18": 1
+    },
+    {
+      "A3_fixed_root_subsystems": 180,
+      "A3_weyl_orbits": 4,
+      "niemeier": "4E6",
+      "primitive_root_anchor_cover": 72,
+      "residual_root_rank_16": 24,
+      "residual_root_rank_17": 48
+    },
+    {
+      "A3_fixed_root_subsystems": 84,
+      "A3_weyl_orbits": 4,
+      "niemeier": "2A9_D6",
+      "primitive_root_anchor_cover": 34,
+      "residual_root_rank_15": 18,
+      "residual_root_rank_16": 16
+    },
+    {
+      "A3_fixed_root_subsystems": 112,
+      "A3_weyl_orbits": 8,
+      "niemeier": "4D6",
+      "primitive_root_anchor_cover": 120,
+      "residual_root_rank_15": 12,
+      "residual_root_rank_16": 72,
+      "residual_root_rank_17": 36
+    },
+    {
+      "A3_fixed_root_subsystems": 63,
+      "A3_weyl_orbits": 3,
+      "niemeier": "3A8",
+      "primitive_root_anchor_cover": 27,
+      "residual_root_rank_15": 24,
+      "residual_root_rank_16": 3
+    },
+    {
+      "A3_fixed_root_subsystems": 60,
+      "A3_weyl_orbits": 6,
+      "niemeier": "2A7_2D5",
+      "primitive_root_anchor_cover": 86,
+      "residual_root_rank_14": 12,
+      "residual_root_rank_15": 22,
+      "residual_root_rank_16": 32,
+      "residual_root_rank_17": 20
+    },
+    {
+      "A3_fixed_root_subsystems": 40,
+      "A3_weyl_orbits": 4,
+      "niemeier": "4A6",
+      "primitive_root_anchor_cover": 60,
+      "residual_root_rank_15": 48,
+      "residual_root_rank_16": 12
+    },
+    {
+      "A3_fixed_root_subsystems": 30,
+      "A3_weyl_orbits": 7,
+      "niemeier": "4A5_D4",
+      "primitive_root_anchor_cover": 124,
+      "residual_root_rank_14": 12,
+      "residual_root_rank_15": 88,
+      "residual_root_rank_16": 24
+    },
+    {
+      "A3_fixed_root_subsystems": 36,
+      "A3_weyl_orbits": 18,
+      "niemeier": "6D4",
+      "primitive_root_anchor_cover": 360,
+      "residual_root_rank_15": 360
+    },
+    {
+      "A3_fixed_root_subsystems": 18,
+      "A3_weyl_orbits": 6,
+      "niemeier": "6A4",
+      "primitive_root_anchor_cover": 150,
+      "residual_root_rank_15": 120,
+      "residual_root_rank_16": 30
+    },
+    {
+      "A3_fixed_root_subsystems": 8,
+      "A3_weyl_orbits": 8,
+      "niemeier": "8A3",
+      "primitive_root_anchor_cover": 336,
+      "residual_root_rank_16": 336
+    },
+    {
+      "niemeier": "12A2",
+      "primitive_root_anchor_cover": 0
+    },
+    {
+      "niemeier": "24A1",
+      "primitive_root_anchor_cover": 0
+    }
+  ],
+  "auxiliary": {
+    "determinant": 78,
+    "gram": [
+      [
+        2,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        -1,
+        2,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ]
+    ],
+    "gram_sha256": "470802fbec420262d1d020160ef4a935eb42837f2d603450523dd755543558de",
+    "last_norm": 4,
+    "last_pairings": [
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "last_schur_norm": "13/4",
+    "root_rank": 6,
+    "root_type": "A3+A2+A1"
+  },
+  "claim": {
+    "argument": "A rootless target frame would glue primitively with the rank-seven Nishiyama auxiliary inside a positive even unimodular rank-24 lattice. The auxiliary contains A3+A2+A1, so the ambient is one of the 23 rooted Niemeier lattices. The exhaustive residual-Weyl anchor cover gives residual root rank at least 14. After moving the final auxiliary vector to the dominant chamber, rootlessness forces every simple-root Dynkin label to be a positive integer. For simply-laced Cartan matrices the inverse is entrywise nonnegative with diagonal at least 1/2, so its residual projection has norm at least 14/2=7, contradicting the exact Schur-complement budget 13/4.",
+    "boundary": "This is a genus-wide J2/frame obstruction. It is not a classification of all frame isometry classes, elliptic equations, or J1 surface-automorphism orbits.",
+    "proved": "No positive-definite rank-17 lattice in the genus of the pinned determinant-78 E6 frame is rootless. Equivalently, at the J2/frame level, the associated Picard-rank-19 Neron-Severi lattice has no rootless Mordell--Weil-rank-17 elliptic fibration."
+  },
+  "finite_quadratic_form_check": {
+    "auxiliary_invariants": [
+      78
+    ],
+    "opposite_forms_isometric": true,
+    "target_frame_invariants": [
+      78
+    ]
+  },
+  "inputs": {
+    "catalog": "artifacts/generated-results/elkies-k3-rooted-niemeier-catalog.json",
+    "catalog_sha256": "abbfb31ca37af8fb739fbbd0bd2575a3b63d8d1031ef4f962d5a79e674d2ce53",
+    "source_frame": "elkies-k3/data/lattice/e6_rank4_det78_frame.txt",
+    "source_frame_sha256": "b441ba2d8440ddd226bcb839a065a2a25ffbd99f58e7a1223088479402080f04"
+  },
+  "schema": "elkies-k3.e6-rank4-det78-rootless-obstruction.v1",
+  "status": "PASS_GLOBAL_ROOTLESS_OBSTRUCTION"
+}

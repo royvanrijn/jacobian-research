@@ -1,0 +1,553 @@
+{
+  "E6_2_plus_1": {
+    "actual_glue_index": 1,
+    "alternative_index_two_graphs": [
+      {
+        "gram": [
+          [
+            16,
+            0,
+            -4
+          ],
+          [
+            0,
+            8,
+            4
+          ],
+          [
+            -4,
+            4,
+            6
+          ]
+        ],
+        "intrinsics": {
+          "automorphism_group_order": 8,
+          "determinant_absolute": 384,
+          "minimum": 6,
+          "minimum_vectors_signed": 4,
+          "rank": 3,
+          "root_count_signed": 0,
+          "smith_invariants": [
+            2,
+            8,
+            24
+          ]
+        },
+        "plus_line_generator_mod_2": [
+          0,
+          1
+        ]
+      },
+      {
+        "gram": [
+          [
+            16,
+            0,
+            -4
+          ],
+          [
+            0,
+            8,
+            4
+          ],
+          [
+            -4,
+            4,
+            6
+          ]
+        ],
+        "intrinsics": {
+          "automorphism_group_order": 8,
+          "determinant_absolute": 384,
+          "minimum": 6,
+          "minimum_vectors_signed": 4,
+          "rank": 3,
+          "root_count_signed": 0,
+          "smith_invariants": [
+            2,
+            8,
+            24
+          ]
+        },
+        "plus_line_generator_mod_2": [
+          1,
+          0
+        ]
+      },
+      {
+        "gram": [
+          [
+            16,
+            0,
+            4
+          ],
+          [
+            0,
+            8,
+            4
+          ],
+          [
+            4,
+            4,
+            6
+          ]
+        ],
+        "intrinsics": {
+          "automorphism_group_order": 8,
+          "determinant_absolute": 384,
+          "minimum": 6,
+          "minimum_vectors_signed": 4,
+          "rank": 3,
+          "root_count_signed": 0,
+          "smith_invariants": [
+            2,
+            8,
+            24
+          ]
+        },
+        "plus_line_generator_mod_2": [
+          1,
+          1
+        ]
+      }
+    ],
+    "alternative_integral_isometry_class_count": 1,
+    "alternative_nonzero_graph_count": 3,
+    "conclusion": "There are exactly two graph-glue isometry types: the actual index-one pure sum and one index-two type. The latter has smaller minimum and is a negative control, not a root killer.",
+    "pure_character_lattice": {
+      "gram": [
+        [
+          16,
+          -8,
+          0
+        ],
+        [
+          -8,
+          16,
+          0
+        ],
+        [
+          0,
+          0,
+          8
+        ]
+      ],
+      "intrinsics": {
+        "automorphism_group_order": 24,
+        "determinant_absolute": 1536,
+        "minimum": 8,
+        "minimum_vectors_signed": 2,
+        "rank": 3,
+        "root_count_signed": 0,
+        "smith_invariants": [
+          8,
+          8,
+          24
+        ]
+      }
+    }
+  },
+  "E6_2_plus_2": {
+    "actual_scaled_saturated_gram": [
+      [
+        16,
+        -8,
+        8,
+        -4
+      ],
+      [
+        -8,
+        16,
+        -4,
+        8
+      ],
+      [
+        8,
+        -4,
+        26,
+        2
+      ],
+      [
+        -4,
+        8,
+        2,
+        26
+      ]
+    ],
+    "conclusion": "The six full graph identifications form one integral isometry class. Hence the observed two half-sums exhaust the index-four character-glue possibilities up to integral isometry.",
+    "full_graph_count": 6,
+    "full_graphs": [
+      {
+        "gram": [
+          [
+            16,
+            -8,
+            8,
+            -4
+          ],
+          [
+            -8,
+            16,
+            -4,
+            8
+          ],
+          [
+            8,
+            -4,
+            26,
+            2
+          ],
+          [
+            -4,
+            8,
+            2,
+            26
+          ]
+        ],
+        "graph_matrix_over_F2": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "intrinsics": {
+          "automorphism_group_order": 8,
+          "determinant_absolute": 89856,
+          "minimum": 16,
+          "minimum_vectors_signed": 6,
+          "rank": 4,
+          "root_count_signed": 0,
+          "smith_invariants": [
+            2,
+            4,
+            12,
+            936
+          ]
+        }
+      },
+      {
+        "gram": [
+          [
+            16,
+            -8,
+            8,
+            -4
+          ],
+          [
+            -8,
+            16,
+            -4,
+            8
+          ],
+          [
+            8,
+            -4,
+            26,
+            24
+          ],
+          [
+            -4,
+            8,
+            24,
+            56
+          ]
+        ],
+        "graph_matrix_over_F2": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "intrinsics": {
+          "automorphism_group_order": 8,
+          "determinant_absolute": 89856,
+          "minimum": 16,
+          "minimum_vectors_signed": 6,
+          "rank": 4,
+          "root_count_signed": 0,
+          "smith_invariants": [
+            2,
+            4,
+            12,
+            936
+          ]
+        }
+      },
+      {
+        "gram": [
+          [
+            16,
+            -8,
+            8,
+            -4
+          ],
+          [
+            -8,
+            16,
+            -4,
+            8
+          ],
+          [
+            8,
+            -4,
+            26,
+            2
+          ],
+          [
+            -4,
+            8,
+            2,
+            26
+          ]
+        ],
+        "graph_matrix_over_F2": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "intrinsics": {
+          "automorphism_group_order": 8,
+          "determinant_absolute": 89856,
+          "minimum": 16,
+          "minimum_vectors_signed": 6,
+          "rank": 4,
+          "root_count_signed": 0,
+          "smith_invariants": [
+            2,
+            4,
+            12,
+            936
+          ]
+        }
+      },
+      {
+        "gram": [
+          [
+            16,
+            -8,
+            8,
+            -4
+          ],
+          [
+            -8,
+            16,
+            -4,
+            8
+          ],
+          [
+            8,
+            -4,
+            26,
+            24
+          ],
+          [
+            -4,
+            8,
+            24,
+            56
+          ]
+        ],
+        "graph_matrix_over_F2": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "intrinsics": {
+          "automorphism_group_order": 8,
+          "determinant_absolute": 89856,
+          "minimum": 16,
+          "minimum_vectors_signed": 6,
+          "rank": 4,
+          "root_count_signed": 0,
+          "smith_invariants": [
+            2,
+            4,
+            12,
+            936
+          ]
+        }
+      },
+      {
+        "gram": [
+          [
+            16,
+            -8,
+            8,
+            -4
+          ],
+          [
+            -8,
+            16,
+            -4,
+            8
+          ],
+          [
+            8,
+            -4,
+            56,
+            24
+          ],
+          [
+            -4,
+            8,
+            24,
+            26
+          ]
+        ],
+        "graph_matrix_over_F2": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "intrinsics": {
+          "automorphism_group_order": 8,
+          "determinant_absolute": 89856,
+          "minimum": 16,
+          "minimum_vectors_signed": 6,
+          "rank": 4,
+          "root_count_signed": 0,
+          "smith_invariants": [
+            2,
+            4,
+            12,
+            936
+          ]
+        }
+      },
+      {
+        "gram": [
+          [
+            16,
+            -8,
+            8,
+            -4
+          ],
+          [
+            -8,
+            16,
+            -4,
+            8
+          ],
+          [
+            8,
+            -4,
+            56,
+            24
+          ],
+          [
+            -4,
+            8,
+            24,
+            26
+          ]
+        ],
+        "graph_matrix_over_F2": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "intrinsics": {
+          "automorphism_group_order": 8,
+          "determinant_absolute": 89856,
+          "minimum": 16,
+          "minimum_vectors_signed": 6,
+          "rank": 4,
+          "root_count_signed": 0,
+          "smith_invariants": [
+            2,
+            4,
+            12,
+            936
+          ]
+        }
+      }
+    ],
+    "integral_isometry_class_count": 1,
+    "pure_character_lattice": {
+      "gram": [
+        [
+          16,
+          -8,
+          0,
+          0
+        ],
+        [
+          -8,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          88,
+          16
+        ],
+        [
+          0,
+          0,
+          16,
+          88
+        ]
+      ],
+      "intrinsics": {
+        "automorphism_group_order": 48,
+        "determinant_absolute": 1437696,
+        "minimum": 16,
+        "minimum_vectors_signed": 6,
+        "rank": 4,
+        "root_count_signed": 0,
+        "smith_invariants": [
+          8,
+          8,
+          24,
+          936
+        ]
+      }
+    },
+    "required_glue_index": 4
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-e6-ii-rank3-quadratic-base-change-v1.json": "6f6fc9578e1de7da675356a74c49b66a666543699fc153f676a373c4c767c4d6",
+    "artifacts/generated-results/elkies-k3-e6-rank4-linear-chord-incidence-v1.json": "78c20f6864b1145dfd432dd73ab0580d3c48b6726b297b3125c170efba416bcd"
+  },
+  "proof_boundary": {
+    "not_proved": "The scaled lattice classification does not independently prove geometric section descent; that is supplied by the two input equation certificates.",
+    "proved": "Complete finite graph enumeration and exact integral-isometry classification after scaling the rational height pairing by 12."
+  },
+  "reproduce": "sage -python elkies-k3/scripts/certify_integral_character_glue_calculus.sage --check",
+  "schema": "elkies-k3.integral-character-glue-calculus.v1",
+  "status": "PASS_EXACT_INVOLUTION_GRAPH_GLUE_CLASSIFICATION",
+  "theorem": {
+    "root_warning": "Graph glue only enlarges the pure eigensum, so it cannot remove a norm-two vector already present there.",
+    "statement": "For an even lattice L with involution, L/(L+ plus L-) is killed by two and embeds in both eigendiscriminant groups as an isotropic anti-isometry graph. Conversely every such graph defines an even involution-stable overlattice."
+  }
+}

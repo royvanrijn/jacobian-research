@@ -1398,15 +1398,16 @@ injective map between finite groups of equal order. QED.
 
 The exact checker
 [`certify_integral_rank_transfer_bridge_reglue.sage`](scripts/certify_integral_rank_transfer_bridge_reglue.sage)
-applies this theorem to all 13 selected NS0024 edges and all six selected
-Golay-720 edges.  Every edge has rank-15 core and rank-two bridges.  In all 19
+applies this theorem to all 42 selected H3, Q80, NS0024, and Golay-720 edges.
+Every edge has rank-15 core and rank-two bridges.  In all 42
 cases both bridge discriminant groups and both glue groups are cyclic, the
 old and new glue orders agree, and each glue projects isomorphically onto the
 full bridge discriminant group.  Thus these clicks are exactly **rank-two
 cyclic bridge replacements**, with glue orders
 
 ```text
-23, 31, 47, 63, 119, 143, 191, 215, 303, 359, 1231.
+15, 23, 31, 47, 63, 95, 119, 127, 143, 159,
+191, 215, 303, 359, 799, 991, 1231, 1535, 2447, 3231.
 ```
 
 The generated certificate is
@@ -1416,6 +1417,41 @@ removed, surviving, and introduced norm-two vectors on every edge.  This is
 an exact theorem and replay for the selected marked edges, not a completeness
 claim for all primitive `U` embeddings or a proof that every rootless frame is
 reachable by such edges.
+
+### Negative experiment H0: the orthogonal split is not a useful predictor
+
+For any proposed replacement, `K+C_new` is a sublattice of `W_new`.
+Consequently
+
+```text
+rank Phi(K) + rank Phi(C_new) <= rank Phi(W_new)
+```
+
+and the analogous inequality holds for signed root counts.  These are exact,
+no-false-negative screens for a specified child root budget.  They are not,
+however, selective on the preserved H3 first-hit data.  The exact benchmark
+[`benchmark_integral_rank_transfer_bridge_predictor.sage`](scripts/benchmark_integral_rank_transfer_bridge_predictor.sage)
+tests 2,892 historical candidates through five first hits.  The core-only
+bound rejects zero; adding the rank-two bridge rejects 178, leaving 2,714 and
+giving only a `2892/2714 = 1.066...` projected reduction in full child
+classifications.  The terminal rootless q6 window retains all 1,247
+candidates.
+
+This is a bounded retrospective counterexample to the proposed **screening
+heuristic**, not to Theorem H.  It shows that the missing information is the
+norm-two profile of the nonzero graph-glue cosets.  No new construction
+algorithm is claimed until a predeclared coset score succeeds on an untouched
+shell and is demonstrably cheaper than direct child-root enumeration.
+
+There is nevertheless exploratory fixed-core evidence in the rank-two data.
+For the four observed rootless terminal cores, the same checker exhausts all
+14 admissible binary bridge classes of the observed prime determinants and
+their compatible oriented graph labels.  Five classes are rootless.  The
+rank-two-only rule "retain maximum bridge minimum" keeps five classes, four
+rootless: precision rises from `5/14` to `4/5`, a `56/25 = 2.24` enrichment,
+with `4/5` rootless recall and a projected `14/5 = 2.8` reduction in full
+classifications.  This selected-core census does not repair the prospective
+gap: both the core and determinant were learned from successful edges.
 
 ### Corollary H1: a good-prime neighbour is a finite hyperbolic-line swap
 
@@ -1542,6 +1578,287 @@ A concrete result still requires an explicit neighbour witness or a separate
 spinor-genus/mass computation.  Combined with Theorem H2, however, it proves
 that any such rootless neighbour is realized by another `U` on the same
 Picard-rank-19 K3 at the lattice/fibration level.
+
+### Theorem H4: mass-complete decorated glue calculus
+
+Let `G` be a genus of positive-definite even lattices of rank at least three,
+let `W_0` lie in `G`, and fix a finite set of good odd primes.  Run an exact
+Kneser-neighbour breadth-first search from `W_0`, deduplicating vertices by
+integral isometry and computing `|O(W)|` exactly.  If the visited vertices
+satisfy
+
+```text
+sum over visited [W] of 1/|O(W)| = mass(G),
+```
+
+then the list is the complete genus.  In particular, `G` contains a rootless
+lattice if and only if the list contains one, and every such lattice is
+reached from `W_0` by a finite sequence of the discriminant-line mutations in
+Corollary H1.  Decorating every edge by
+
+```text
+(A_K,q_K,H_old,H_new,rho_K on H_old union H_new)
+```
+
+makes the change in its complete root set an exact finite calculation.
+Combined with Theorem H2, this is a terminating constructive calculus for
+rootless MW-rank-17 frames at `O(NS)`/J2 level whenever the mass closes.
+
+#### Proof
+
+Every enumerated neighbour remains in `G`.  The Minkowski--Siegel mass is the
+sum of `1/|O(W)|` over all integral isometry classes in `G`, with every term
+positive.  Equality therefore leaves no missing class.  The search tree gives
+a neighbour path from `W_0` to each listed vertex, and Corollary H1 identifies
+each edge and its root transfer with the displayed finite decorated form.
+Theorem H2 converts the frame classes to `O(NS)`-orbits of hyperbolic-plane
+embeddings. QED.
+
+The mass equality is a certificate, not a stopping heuristic.  Standard
+Kneser theory supplies finite prime sets which connect the relevant class set,
+but a particular implementation must still prove connectivity or close the
+mass.  Nor can the decoration be reduced to the bare finite quadratic form:
+the Leech lattice and the 23 rooted Niemeier lattices all have trivial
+discriminant form, while only the Leech lattice is rootless.  Coset minima or
+the equivalent function `rho_K` are indispensable state.
+
+### Theorem H5: the determinant-78 E6 frame genus is globally rootful
+
+Let `P` be the positive rank-17 frame genus of the saturated determinant-78
+E6 `2+2` Neron--Severi lattice.  Every lattice in this genus contains a root.
+Consequently this Picard-rank-19 lattice has no rootless MW-rank-17 fibration
+at `O(NS)`/J2 level.
+
+#### Proof
+
+The rank-seven Nishiyama auxiliary `K` has determinant 78 and contains the
+primitive root lattice
+
+```text
+S=A3 direct_sum A2 direct_sum A1.
+```
+
+In the standard basis its final generator `v` has square four and pairs only
+as `(-1,0,0)` with the `A3` factor.  Hence the projection of `v` to `S` has
+square `3/4`, leaving the exact orthogonal norm budget
+
+```text
+v_perp^2 = 4-3/4 = 13/4.
+```
+
+The discriminant form of `K` is anti-isometric to that of `P`.  If a rootless
+`W` lay in the genus of `P`, their full graph glue would give a positive even
+unimodular rank-24 lattice `N` containing `K` and `W=K^perp` primitively.
+Because `K` contains roots, `N` is one of the 23 rooted Niemeier lattices.
+
+The exact residual-Weyl enumeration described below covers every primitive
+embedding of `S` in those 23 lattices.  Across its 1,591 root-anchor
+representatives, the residual root system
+
+```text
+R(N) intersect S^perp
+```
+
+always has rank at least 14.  Apply its Weyl group, which fixes `S`, to move
+`v` into the dominant chamber.  If `W` were rootless, `v` could be orthogonal
+to no residual root, so all Dynkin labels on the residual simple roots would
+be positive integers.  For every simply-laced Cartan matrix `C`, `C^-1` is
+entrywise nonnegative and every diagonal entry is at least `1/2`.  Therefore
+the squared norm of the residual projection is at least
+
+```text
+(1,...,1) C^-1 (1,...,1)^t >= rank(C)/2 >= 7,
+```
+
+contradicting the available norm `13/4`. QED.
+
+The focused mode of
+[`classify_e6_rank4_det78_niemeier_frames.sage`](scripts/classify_e6_rank4_det78_niemeier_frames.sage)
+checks the opposite discriminant forms, enumerates 5,325 fixed-root A3
+subsystems and the complete 1,591 primitive `A3+A2+A1` residual-Weyl anchor
+cover, and obtains residual-rank distribution
+
+```text
+14:24, 15:721, 16:619, 17:198, 18:29.
+```
+
+The replay artifact is
+[`elkies-k3-e6-rank4-det78-rootless-obstruction-v1.json`](../artifacts/generated-results/elkies-k3-e6-rank4-det78-rootless-obstruction-v1.json).
+This closes the earlier degree-at-most-four search globally at J2 level; it
+does not classify all frame isometry classes or construct equations.
+
+## 7B. Integral character glue
+
+### Theorem I: involution eigensublattices are joined by a 2-primary graph
+
+Let `L` be an even integral lattice with an isometric involution `sigma`, and
+let
+
+```text
+L+ = L intersect ker(sigma-1),
+L- = L intersect ker(sigma+1).
+```
+
+Then `L+` and `L-` are primitive and orthogonal, and
+
+```text
+H=L/(L+ direct_sum L-)
+```
+
+is killed by two.  Under the even-overlattice correspondence, `H` embeds in
+both `A_L+ [2]` and `A_L- [2]` and is the graph of an anti-isometry between
+2-elementary subgroups of the two eigendiscriminant forms.  Conversely, any
+such isotropic graph defines an even involution-stable overlattice of
+`L+ direct_sum L-`.
+
+#### Proof
+
+If a nonzero multiple of `x` lies in either eigensublattice, torsion-freeness
+of `L` shows that `x` has the same eigenvalue, proving primitivity.  For
+`x` in `L+` and `y` in `L-`, invariance of the pairing gives
+
+```text
+(x,y)=(sigma*x,sigma*y)=-(x,y),
+```
+
+so the eigensublattices are orthogonal.  Every `z` in `L` satisfies
+
+```text
+2z=(z+sigma*z)+(z-sigma*z),
+```
+
+which proves the exponent-two assertion.  Nikulin's correspondence realizes
+`L` by an isotropic subgroup of `A_L+ + A_L-`.  Primitivity makes both
+projections injective, exactly as in Theorem H, so this subgroup is an
+anti-isometry graph.  Conversely an isotropic graph gives an even
+overlattice.  On 2-torsion the actions `+1` and `-1` coincide, hence the graph
+is stable under the induced involution and the involution extends. QED.
+
+The checker
+[`certify_integral_character_glue_calculus.sage`](scripts/certify_integral_character_glue_calculus.sage)
+exhausts the graph possibilities in the two E6 examples after multiplying
+the rational MW height pairing by 12 to obtain an even integral model.
+
+- For E6 `2+1`, the actual index is one.  There are three possible nonzero
+  order-two graphs, all in one integral isometry class; that alternative
+  lowers the scaled minimum from eight to six and is a concrete control that
+  adding glue can create shorter vectors but cannot remove old ones.
+- For E6 `2+2`, full index-four saturation forces a graph isomorphism between
+  two copies of `F_2^2`.  All six graph isomorphisms give one integral
+  isometry class, of determinant 89,856, minimum 16, six signed minimal
+  vectors, and automorphism-group order eight.  Thus the observed half-sums
+  exhaust the full graph choices up to integral isometry.
+
+The exact finite enumeration is stored in
+[`elkies-k3-integral-character-glue-calculus-v1.json`](../artifacts/generated-results/elkies-k3-integral-character-glue-calculus-v1.json).
+It classifies the integral character glue; the input equation certificates
+remain responsible for geometric existence and descent of the sections.
+
+<!-- status-consumer: EC-K3-R17-RANK28-INTEGRAL-CHARACTER-GLUE 617f1838d8581fcd -->
+
+### Corollary I1: the eleven fitted rank-28 lifts admit one character-glue type
+
+On each of the eleven exact genus-one double covers fitted through the public
+rank-28 specialization, let `R_i` be the lifted section, let `sigma_i` be the
+deck involution, and put
+
+```text
+tau=R_i+sigma_i(R_i),       T_i=R_i-sigma_i(R_i).
+```
+
+All eleven covers have the same trace `tau=-P2-P5`.  In the pulled-back
+Mordell--Weil height lattice,
+
+```text
+tau^2=T_i^2=16,       tau.T_i=0,       2R_i=tau+T_i.
+```
+
+Hence every direction is obtained from the pure rank-two character lattice
+
+```text
+<16>_+ direct_sum <16>_-
+```
+
+by adjoining the diagonal half-sum.  The glue subgroup has order two and is
+represented by `(8,8)` in `Z/16+Z/16` in the Smith coordinates induced by
+`(tau,T_i)`; the saturated carrier is isometric to `<8>+<8>`.  The eleven
+quartic branch polynomials define eleven distinct squareclasses, so this is
+one repeated integral pattern on eleven distinct characters, not one cover
+with an eleven-dimensional anti-invariant space.  The pattern is relative to
+the chosen trace pencil and is not an intrinsic invariant of an isolated
+fibre point.
+
+#### Proof
+
+The trace has norm eight in `R17`, and height pairings double under the
+degree-two base change, giving `tau^2=16`.  The equation certificate gives
+`T_i^2=16`; invariant and anti-invariant characters are orthogonal.  The
+half-sum identity follows from the definitions.  Theorem I then identifies
+the order-two graph glue.  Direct basis change gives Gram matrices
+
+```text
+[16 8]          [8 0]
+[ 8 8]    and   [0 8]
+```
+
+in bases `(tau,R_i)` and `(R_i,sigma_i(R_i))`.  Finally, two squarefree
+irreducible quartics represent the same class in `QQ(t)^*/QQ(t)^{*2}` only
+if they are proportional; primitive normalization makes the eleven stored
+polynomials pairwise distinct. QED.
+
+The exact derived replay is
+[`certify_rank28_integral_character_glue.py`](scripts/certify_rank28_integral_character_glue.py),
+with certificate
+[`elkies-k3-r17-rank28-integral-character-glue-v1.json`](../artifacts/generated-results/elkies-k3-r17-rank28-integral-character-glue-v1.json).
+It inherits geometric existence and height 16 from the genus-one-bisection
+certificate.  It does not find a new specialization, make the eleven covers
+split together away from the fitted fibre, or prove rank 32.
+
+### Corollary I2: the norm-twelve `0x103b2` cover has exact visible glue
+
+For the genus-one double cover attached to the R17 trace class `0x103b2`, let
+`R` be the displayed lift, `sigma` the deck involution, and
+
+```text
+tau=R+sigma(R),       T=R-sigma(R).
+```
+
+Then the invariant and anti-invariant lattices in their displayed rational
+span are
+
+```text
+L+=R17(2),       L-=<16>,       tau^2=24,       2R=tau+T.
+```
+
+The full integral saturation in this span is obtained by adjoining the one
+order-two graph class `(tau/2,T/2)`.  It has rank 18, determinant
+`497025024`, minimum eight, and no roots.  Its pure character lattice has
+determinant `1988100096`; its complete Smith group and finite quadratic form
+are stored in the certificate.  At `t=1/25` the cover splits and the resulting
+point is independent of the specialized generic MW17 subgroup, proving rank
+at least 18 on that fibre.
+
+#### Proof
+
+Heights double under the quadratic pullback, so the norm-twelve trace has
+square 24.  The exact bisection intersection computation gives `T^2=16`, and
+the two characters are orthogonal.  Thus `R=(tau+T)/2` is an isotropic
+order-two discriminant class.  Theorem I and primitivity of both integral
+eigensublattices show that this is the full saturation inside the declared
+rational span.  The determinant follows by division by the square of the
+index; exact shortest-vector enumeration gives minimum eight and no roots.
+The square identity at `t=1/25` and the independent finite-quotient reductions
+give the final rank lower bound. QED.
+
+The replay is
+[`certify_r17_norm12_103b2_mw_glue.sage`](scripts/certify_r17_norm12_103b2_mw_glue.sage),
+with artifact
+[`elkies-k3-r17-norm12-103b2-mw-glue-v1.json`](../artifacts/generated-results/elkies-k3-r17-norm12-103b2-mw-glue-v1.json).
+The exact claim is saturation of the displayed cover-level rational span and
+specialized rank at least 18.  Exact eclib saturation at each prime dividing
+the index bound is run in an isolated process and proves that the displayed
+specialized rank-18 subgroup is primitive.  An upper bound for the
+specialized rank is not claimed.
 
 ## 8. What a bounded neighbour search really proves
 

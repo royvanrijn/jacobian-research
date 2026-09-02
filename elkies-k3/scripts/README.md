@@ -2717,7 +2717,8 @@ full saturated integral NS Gram and verifies its unimodular split against
 `data/lattice/e6_rank4_det78_frame.txt`.
 
 <!-- status-consumer: EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD 3bcfe3534656b26f -->
-<!-- status-consumer: EC-K3-E6-RANK4-ROOTLESS-Q2Q4-CENSUS a7e08603b9700395 -->
+<!-- status-consumer: EC-K3-E6-RANK4-ROOTLESS-Q2Q4-CENSUS 2351738f44774cfe -->
+<!-- status-consumer: EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL bd12c183aa886b15 -->
 
 The complete zero-neutral rootless search through old degree four replays with
 
@@ -2727,10 +2728,55 @@ The complete zero-neutral rootless search through old degree four replays with
 ```
 
 It exhausts `80,123` Weyl-dominant classes, of which `79,837` are primitive,
-and finds no rootless child in degrees two, three, or four.  This is exact for
-those shells; degree at least five, multi-step routes, a rootless frame, and a
-`QQ(k)` parameterization remain open.  See
+and finds no rootless child in degrees two, three, or four.  The genus-wide
+root obstruction replays with
+
+```bash
+sage -python classify_e6_rank4_det78_niemeier_frames.sage \
+  --rootless-obstruction --check
+```
+
+Its complete 1,591-anchor Niemeier residual census proves that the entire
+determinant-78 frame genus is rootful at `O(NS)`/J2 level.  A `QQ(k)`
+rank-four parameterization and a full frame-isometry classification are not
+claimed.  See
 [`../E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md`](../E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md).
+
+## Integral rank-transfer glue calculus
+
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 2d15a35bdecc0493 -->
+<!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
+<!-- status-consumer: EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE 52de13c8443f2b7d -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK e79b6132483233bf -->
+
+```bash
+sage -python certify_integral_rank_transfer_bridge_reglue.sage --check
+sage -python benchmark_integral_rank_transfer_bridge_predictor.sage --check
+sage -python certify_integral_character_glue_calculus.sage --check
+sage -python certify_r17_norm12_103b2_mw_glue.sage \
+  --skip-specialization-saturation --check
+sage -python build_integral_rank_transfer_glue_census.sage --check
+```
+
+The bridge checker certifies the rank-15 common core, rank-two cyclic bridge
+replacement, graph glue, and exact root transfer for all 42 selected marked
+corridor edges.  The character checker exhausts the integral E6 `2+1` and
+`2+2` involution graph glues.  The norm-twelve checker gives the exact
+`0x103b2` cover-level visible lattice and preserves rank at least 18 at the
+specialization.  The pinned artifact also proves the displayed specialized
+rank-18 subgroup primitive by isolating every possible eclib saturation prime;
+the skip-mode byte check reuses that record.  These lattice/J2 checks
+intentionally separate equation and rank-upper-bound claims.
+
+The predictor benchmark replays five H3 first-hit histories without
+enumerating candidate-child roots.  The exact `K+C_new` lower-bound screen
+rejects only 178 of 2,892 candidates, so it is preserved as a negative
+experiment rather than promoted to a construction algorithm.  It also
+exhausts 14 binary bridge classes on the four observed rootless terminal
+cores.  Maximizing bridge minimum retains five classes, four rootless, versus
+five rootless classes without screening (`2.24x` precision enrichment and
+`80%` recall).  This second result is explicitly selected-core evidence, not
+an out-of-sample q-neighbor benchmark.
 
 <!-- status-consumer: EC-K3-RES-D5-TWO-MARKED-TWO-TWIST-POLYNOMIAL ea0496c9566cfdc3 -->
 

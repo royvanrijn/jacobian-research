@@ -343,7 +343,7 @@ E6 family, rootless MW17 is not ruled out by this numerical bound.
 
 ## Complete low-degree rootless search
 
-<!-- status-consumer: EC-K3-E6-RANK4-ROOTLESS-Q2Q4-CENSUS a7e08603b9700395 -->
+<!-- status-consumer: EC-K3-E6-RANK4-ROOTLESS-Q2Q4-CENSUS 2351738f44774cfe -->
 
 Write the integral split as `NS=U+M(-1)`, with `F=e` and `O=f-e`.  Proposition
 C2.2 of
@@ -376,6 +376,26 @@ at least five and multi-step routes remain open.  A separate seeded
 but not zero; because that run samples rather than exhausts the genus, it is
 routing evidence only and is not part of the proof claim.
 
+## Global frame-genus obstruction
+
+<!-- status-consumer: EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL bd12c183aa886b15 -->
+
+The later equation-free argument in Theorem H5 of
+[`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md)
+closes that bounded-search gap.  The determinant-78 rank-seven Nishiyama
+auxiliary contains a primitive `A3+A2+A1`.  A complete residual-Weyl anchor
+enumeration over all 23 rooted Niemeier lattices finds 1,591 primitive anchor
+representatives, and every residual root system has rank at least 14.  A
+rootless complement would force the final auxiliary vector to have positive
+Dynkin label on every residual simple root, requiring projected norm at least
+`14/2=7`; its exact available norm is only `13/4`.  This contradiction proves
+that every rank-17 lattice in the target genus is rootful.
+
+Thus degree at least five and multi-step routes are no longer open at the
+`O(NS)`/J2 lattice level: no rootless MW17 frame exists for this saturated
+Neron--Severi lattice.  This does not classify all frame isometry classes or
+elliptic equations.
+
 ## Replay and status boundary
 
 Run
@@ -386,12 +406,18 @@ Run
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_e6_rank4_rootless_low_degree_search.sage
+
+sage -python \
+  elkies-k3/scripts/classify_e6_rank4_det78_niemeier_frames.sage \
+  --rootless-obstruction
 ```
 
 The generated certificate is
 [`../artifacts/generated-results/elkies-k3-e6-rank4-linear-chord-incidence-v1.json`](../artifacts/generated-results/elkies-k3-e6-rank4-linear-chord-incidence-v1.json).
 The complete low-degree search artifact is
 [`../artifacts/generated-results/elkies-k3-e6-rank4-rootless-low-degree-search-v1.json`](../artifacts/generated-results/elkies-k3-e6-rank4-rootless-low-degree-search-v1.json).
+The genus-wide obstruction artifact is
+[`../artifacts/generated-results/elkies-k3-e6-rank4-det78-rootless-obstruction-v1.json`](../artifacts/generated-results/elkies-k3-e6-rank4-det78-rootless-obstruction-v1.json).
 
 Proved here: the exact incidence decomposition; the displayed `QQ(k)`
 parameterization of the unordered genus-zero quotient; the genus-one ordered
@@ -401,10 +427,12 @@ four over the ordered incidence field; generic geometric `rho=19`, saturated
 determinant `78`, and passage of the necessary rootless-MW17 determinant
 screen; the full geometric integral NS marking; and absence of a rootless
 child in the complete zero-neutral old-degree two, three, and four shells.
+The cited Theorem H5 additionally proves genus-wide rootless nonexistence at
+J2 level.
 
 Not proved here: a rank-four family over `QQ(k)`, which this incidence cannot
-supply; an actual rootless MW17 fibration; or nonexistence in degree at least
-five or along a multi-step route.
+supply; a classification of all J2 frame classes; or a J1 classification
+modulo automorphisms of the K3 surface.
 
 The E6 rational-surface normal form and quadratic-base-change rank splitting
 are compatible with Kimura's construction; the incidence component, sections,

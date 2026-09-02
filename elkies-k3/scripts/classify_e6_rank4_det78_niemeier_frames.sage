@@ -7,7 +7,8 @@ then add A2 and A1 in the successive orthogonal root systems.  For every
 primitive root anchor, the last norm-four auxiliary generator is enumerated
 exactly modulo the residual Weyl group by dominant Dynkin labels and an exact
 fixed-space ellipsoid.  Saturated orthogonal complements are classified by
-their roots and deduplicated by PARI integral isometry.
+their roots and deduplicated by an exact root-span/glue isometry test, with
+PARI used only for the low-rank root-orthogonal quotient (or a rootless frame).
 
 This is a J2/frame classification.  It does not quotient by automorphisms of
 the K3 surface and it does not construct equations or neighbour corridors.
@@ -44,6 +45,11 @@ ROOT = Path(__file__).resolve().parents[2]
 CATALOG = ROOT / "artifacts/generated-results/elkies-k3-rooted-niemeier-catalog.json"
 SOURCE_FRAME = ROOT / "elkies-k3/data/lattice/e6_rank4_det78_frame.txt"
 OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-e6-rank4-det78-niemeier-frames-v1.json"
+OBSTRUCTION_OUTPUT = (
+    ROOT
+    / "artifacts/generated-results/"
+    "elkies-k3-e6-rank4-det78-rootless-obstruction-v1.json"
+)
 
 A3 = CartanMatrix(["A", 3])
 A2 = CartanMatrix(["A", 2])
@@ -297,13 +303,14 @@ def shifted_ellipsoid_shell(quadratic, centre, norm):
     return result
 
 
-def ade_type(gram):
-    roots = signed_roots(gram)
+def ade_type(gram, roots=None, parts=None):
+    roots = signed_roots(gram) if roots is None else roots
     if not roots:
         return "0", 0, 0
+    parts = root_components(gram, roots) if parts is None else parts
     pieces = []
     rank = 0
-    for component in root_components(gram, roots):
+    for component in parts:
         component_rank = matrix(ZZ, component).rank()
         invariant = (int(component_rank), len(component))
         pieces.append(TYPE_FROM_INVARIANT[invariant])
@@ -317,8 +324,8 @@ def ade_type(gram):
     return label, int(rank), len(roots)
 
 
-def root_span_data(gram):
-    roots = signed_roots(gram)
+def root_span_data(gram, roots=None):
+    roots = signed_roots(gram) if roots is None else roots
     if not roots:
         return [], 1, True
     basis = matrix(ZZ, roots).row_module().basis_matrix()
@@ -349,13 +356,13 @@ def matrix_group(generators, degree, expected_order):
     return list(seen.values())
 
 
-def root_glue_data(value):
+def root_glue_data(value, roots=None, parts=None):
     """Root basis, integral orthogonal quotient and finite outer data."""
     value = matrix(ZZ, value)
-    roots = signed_roots(value)
+    roots = signed_roots(value) if roots is None else roots
     if not roots:
         return {"rank": 0, "gram": value}
-    parts = root_components(value, roots)
+    parts = root_components(value, roots) if parts is None else parts
     simple_parts = [simple_roots(value, part) for part in parts]
     simple = matrix(ZZ, [row for part in simple_parts for row in part.rows()])
     cartan = simple * value * simple.transpose()
@@ -425,7 +432,13 @@ def graph_isometry_matrices(left, right):
 
 
 def integral_glue_extensions(
-    left, right, left_data, right_data, root_maps, quotient_maps
+    left,
+    right,
+    left_data,
+    right_data,
+    root_maps,
+    quotient_maps,
+    stop_after_one=False,
 ):
     """Return the number of integral extensions of the block isometries.
 
@@ -452,16 +465,35 @@ def integral_glue_extensions(
     quotient_parts = [
         quotient_left * item * quotient_right for item in quotient_maps
     ]
+    # Integrality is the congruence root_part + quotient_part == 0 mod d.
+    # Join the two finite residue multisets instead of testing their Cartesian
+    # product (which can have tens of thousands of pairs for one comparison).
+    root_residues = {}
+    quotient_residues = {}
+    for part in root_parts:
+        key = tuple(int(entry % denominator) for entry in part.list())
+        multiplicity, unused = root_residues.get(key, (0, part))
+        root_residues[key] = (multiplicity + 1, part)
+    for part in quotient_parts:
+        key = tuple(int(entry % denominator) for entry in part.list())
+        multiplicity, unused = quotient_residues.get(key, (0, part))
+        quotient_residues[key] = (multiplicity + 1, part)
+
     count = 0
-    for root_part in root_parts:
-        for quotient_part in quotient_parts:
-            numerator = root_part + quotient_part
-            if not all(entry % denominator == 0 for entry in numerator.list()):
-                continue
-            trial = matrix(ZZ, numerator / denominator)
-            assert abs(trial.det()) == 1
-            assert trial * right * trial.transpose() == left
-            count += 1
+    for root_key, (root_multiplicity, root_part) in root_residues.items():
+        needed = tuple((-entry) % denominator for entry in root_key)
+        match = quotient_residues.get(needed)
+        if match is None:
+            continue
+        quotient_multiplicity, quotient_part = match
+        numerator = root_part + quotient_part
+        assert all(entry % denominator == 0 for entry in numerator.list())
+        trial = matrix(ZZ, numerator / denominator)
+        assert abs(trial.det()) == 1
+        assert trial * right * trial.transpose() == left
+        if stop_after_one:
+            return 1
+        count += root_multiplicity * quotient_multiplicity
     return count
 
 
@@ -481,7 +513,13 @@ def root_glue_isometric(left, right, left_data=None, right_data=None):
         return False
     return bool(
         integral_glue_extensions(
-            left, right, left_data, right_data, root_maps, quotient_maps
+            left,
+            right,
+            left_data,
+            right_data,
+            root_maps,
+            quotient_maps,
+            stop_after_one=True,
         )
     )
 
@@ -515,10 +553,21 @@ def root_glue_automorphism_order(value, data=None):
 
 
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument("--output", type=Path, default=OUTPUT)
+parser.add_argument("--output", type=Path)
 parser.add_argument("--check", action="store_true")
 parser.add_argument("--ambient", action="append", default=[])
+parser.add_argument(
+    "--rootless-obstruction",
+    action="store_true",
+    help=(
+        "certify only the residual-root-rank obstruction; this skips the "
+        "expensive last-vector and frame-isometry classification"
+    ),
+)
 arguments = parser.parse_args()
+output_path = arguments.output or (
+    OBSTRUCTION_OUTPUT if arguments.rootless_obstruction else OUTPUT
+)
 
 # Rootful rank-17 isometry tests can use substantially more than PARI's
 # one-gigabyte default stack even after root-type bucketing.
@@ -546,6 +595,8 @@ total_label_tuples = 0
 total_ellipsoid = 0
 total_integral = 0
 total_primitive = 0
+minimum_residual_root_rank = 24
+residual_root_rank_distribution = Counter()
 
 for ambient_entry in catalog["rooted_niemeier_lattices"]:
     label = ambient_entry["label"]
@@ -623,6 +674,12 @@ for ambient_entry in catalog["rooted_niemeier_lattices"]:
             ZZ,
             [row for part in simple_components for row in part.rows()],
         ) if simple_components else matrix(ZZ, 0, 24)
+        residual_rank = residual_simple.nrows()
+        minimum_residual_root_rank = min(minimum_residual_root_rank, residual_rank)
+        residual_root_rank_distribution[residual_rank] += 1
+        counts[f"residual_root_rank_{residual_rank}"] += 1
+        if arguments.rootless_obstruction:
+            continue
         component_choices = [
             dominant_labels_up_to(
                 (part * gram * part.transpose()).inverse(), RESIDUAL_BUDGET
@@ -695,14 +752,25 @@ for ambient_entry in catalog["rooted_niemeier_lattices"]:
                 complement_basis = (auxiliary_basis * gram).right_kernel_matrix()
                 complement = complement_basis * gram * complement_basis.transpose()
                 assert complement.nrows() == 17 and complement.det() == 78
-                assert Genus(complement) == target_genus
                 lll_change = complement.LLL_gram().transpose()
                 assert abs(lll_change.det()) == 1
                 complement = lll_change * complement * lll_change.transpose()
                 complement_basis = lll_change * complement_basis
-                root_type, root_rank, signed_root_count = ade_type(complement)
-                root_smith, root_determinant, root_primitive = root_span_data(complement)
-                glue_data = root_glue_data(complement)
+                complement_roots = signed_roots(complement)
+                complement_root_parts = root_components(
+                    complement, complement_roots
+                ) if complement_roots else []
+                root_type, root_rank, signed_root_count = ade_type(
+                    complement, complement_roots, complement_root_parts
+                )
+                root_smith, root_determinant, root_primitive = root_span_data(
+                    complement, complement_roots
+                )
+                glue_data = root_glue_data(
+                    complement, complement_roots, complement_root_parts
+                )
+                quotient_determinant = abs(int(glue_data["quotient"].det())) \
+                    if root_rank else 78
                 record = {
                     "niemeier": label,
                     "anchor_index": anchor_index,
@@ -725,6 +793,8 @@ for ambient_entry in catalog["rooted_niemeier_lattices"]:
                 for class_row in classes:
                     if class_row["root_type"] != root_type:
                         continue
+                    if class_row["quotient_determinant"] != quotient_determinant:
+                        continue
                     isometric = root_glue_isometric(
                         class_row["gram"],
                         complement,
@@ -735,6 +805,11 @@ for ambient_entry in catalog["rooted_niemeier_lattices"]:
                         matched = class_row
                         break
                 if matched is None:
+                    # A primitive complement in an even unimodular Niemeier
+                    # lattice has the opposite discriminant form to the
+                    # auxiliary.  Check the resulting genus once per new
+                    # isometry class rather than once per duplicate embedding.
+                    assert Genus(complement) == target_genus
                     matched = {
                         "gram": complement,
                         "glue_data": glue_data,
@@ -744,6 +819,7 @@ for ambient_entry in catalog["rooted_niemeier_lattices"]:
                         "root_smith_invariants": root_smith,
                         "root_determinant": root_determinant,
                         "root_lattice_primitive": root_primitive,
+                        "quotient_determinant": quotient_determinant,
                         "embedding_count_in_cover": 0,
                         "niemeier_counts": Counter(),
                         "representative": record,
@@ -763,6 +839,109 @@ for ambient_entry in catalog["rooted_niemeier_lattices"]:
         ),
         flush=True,
     )
+
+if arguments.rootless_obstruction:
+    complete_run = not selected
+    assert ROOT_GRAM.det() == 24
+    assert auxiliary.det() == source_frame.det() == 78
+    auxiliary_form = Genus(auxiliary).discriminant_form().normal_form()
+    target_form = Genus(source_frame).discriminant_form().normal_form()
+    negative_target_form = Genus(-source_frame).discriminant_form().normal_form()
+    assert auxiliary_form.invariants() == target_form.invariants()
+    assert (
+        auxiliary_form.gram_matrix_quadratic()
+        == negative_target_form.gram_matrix_quadratic()
+    )
+    if complete_run:
+        assert len(ambient_rows) == 23
+        assert total_root_anchors > 0
+        assert minimum_residual_root_rank >= 14
+        assert QQ(minimum_residual_root_rank) / 2 > RESIDUAL_BUDGET
+    obstruction = {
+        "schema": "elkies-k3.e6-rank4-det78-rootless-obstruction.v1",
+        "status": "PASS_GLOBAL_ROOTLESS_OBSTRUCTION" if complete_run else "PASS_PARTIAL_AMBIENT_AUDIT",
+        "claim": {
+            "proved": (
+                "No positive-definite rank-17 lattice in the genus of the pinned "
+                "determinant-78 E6 frame is rootless. Equivalently, at the J2/frame "
+                "level, the associated Picard-rank-19 Neron-Severi lattice has no "
+                "rootless Mordell--Weil-rank-17 elliptic fibration."
+            ),
+            "argument": (
+                "A rootless target frame would glue primitively with the rank-seven "
+                "Nishiyama auxiliary inside a positive even unimodular rank-24 "
+                "lattice. The auxiliary contains A3+A2+A1, so the ambient is one of "
+                "the 23 rooted Niemeier lattices. The exhaustive residual-Weyl anchor "
+                "cover gives residual root rank at least 14. After moving the final "
+                "auxiliary vector to the dominant chamber, rootlessness forces every "
+                "simple-root Dynkin label to be a positive integer. For simply-laced "
+                "Cartan matrices the inverse is entrywise nonnegative with diagonal "
+                "at least 1/2, so its residual projection has norm at least 14/2=7, "
+                "contradicting the exact Schur-complement budget 13/4."
+            ),
+            "boundary": (
+                "This is a genus-wide J2/frame obstruction. It is not a classification "
+                "of all frame isometry classes, elliptic equations, or J1 surface-"
+                "automorphism orbits."
+            ),
+        },
+        "inputs": {
+            "catalog": str(CATALOG.relative_to(ROOT)),
+            "catalog_sha256": hashlib.sha256(CATALOG.read_bytes()).hexdigest(),
+            "source_frame": str(SOURCE_FRAME.relative_to(ROOT)),
+            "source_frame_sha256": hashlib.sha256(SOURCE_FRAME.read_bytes()).hexdigest(),
+        },
+        "finite_quadratic_form_check": {
+            "auxiliary_invariants": list(map(int, auxiliary_form.invariants())),
+            "target_frame_invariants": list(map(int, target_form.invariants())),
+            "opposite_forms_isometric": True,
+        },
+        "auxiliary": {
+            "gram": rows(auxiliary),
+            "gram_sha256": gram_sha256(auxiliary),
+            "determinant": 78,
+            "root_type": "A3+A2+A1",
+            "root_rank": 6,
+            "last_pairings": list(map(int, LAST_PAIRINGS)),
+            "last_norm": 4,
+            "last_schur_norm": "13/4",
+        },
+        "accounting": {
+            "rooted_niemeier_classes_processed": len(ambient_rows),
+            "leech_excluded_by_auxiliary_roots": 1,
+            "fixed_root_A3_subsystems_before_weyl_quotient": total_a3_subsystems,
+            "primitive_root_anchor_cover": total_root_anchors,
+            "minimum_residual_root_rank": minimum_residual_root_rank,
+            "residual_root_rank_distribution": {
+                str(key): value
+                for key, value in sorted(residual_root_rank_distribution.items())
+            },
+            "projection_norm_lower_bound": str(QQ(minimum_residual_root_rank) / 2),
+            "available_projection_norm": str(RESIDUAL_BUDGET),
+            "strict_contradiction": bool(
+                QQ(minimum_residual_root_rank) / 2 > RESIDUAL_BUDGET
+            ),
+        },
+        "ambient_accounting": ambient_rows,
+    }
+    payload = json.dumps(obstruction, indent=2, sort_keys=True) + "\n"
+    if arguments.check:
+        if output_path.read_text() != payload:
+            raise SystemExit("determinant-78 rootless-obstruction artifact is stale")
+    else:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_path.write_text(payload)
+    print(
+        "DET78OBSTRUCTION|anchors={}|minimum_residual_rank={}|"
+        "projection_lower_bound={}|budget={}|status=PASS".format(
+            total_root_anchors,
+            minimum_residual_root_rank,
+            QQ(minimum_residual_root_rank) / 2,
+            RESIDUAL_BUDGET,
+        ),
+        flush=True,
+    )
+    raise SystemExit(0)
 
 class_rows = []
 weighted_mass = QQ(0)
@@ -785,6 +964,7 @@ for index, class_row in enumerate(classes, start=1):
             "root_smith_invariants": class_row["root_smith_invariants"],
             "root_determinant": class_row["root_determinant"],
             "root_lattice_primitive": class_row["root_lattice_primitive"],
+            "root_orthogonal_quotient_determinant": class_row["quotient_determinant"],
             "automorphism_group_order": automorphism_order,
             "embedding_count_in_enumerated_cover": class_row["embedding_count_in_cover"],
             "niemeier_provenance_counts": dict(sorted(class_row["niemeier_counts"].items())),
@@ -868,11 +1048,11 @@ result = {
 
 payload = json.dumps(result, indent=2, sort_keys=True) + "\n"
 if arguments.check:
-    if arguments.output.read_text() != payload:
+    if output_path.read_text() != payload:
         raise SystemExit("determinant-78 Niemeier artifact is stale")
 else:
-    arguments.output.parent.mkdir(parents=True, exist_ok=True)
-    arguments.output.write_text(payload)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(payload)
 
 print(
     "DET78NIEMEIER|embeddings={}|classes={}|rootless={}|source_matches={}|status=PASS".format(

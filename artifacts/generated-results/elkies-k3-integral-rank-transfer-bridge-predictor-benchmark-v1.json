@@ -1,0 +1,1924 @@
+{
+  "aggregate": {
+    "bridge_core_rank_and_count_bound_passes_through_first_hits": 2892,
+    "bridge_core_rank_bound_passes_through_first_hits": 2892,
+    "bridge_split_rank_and_count_bound_passes_through_first_hits": 2714,
+    "bridge_split_rank_bound_passes_through_first_hits": 2714,
+    "classification_reduction_fraction": "89/1446",
+    "classification_speedup_factor": "1446/1357",
+    "edge_count": 5,
+    "raw_full_child_classifications_through_first_hits": 2892,
+    "selected_hits_preserved": 5
+  },
+  "benchmark_design": {
+    "edges": [
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "limitations": "Retrospective, one corridor, five edges, and target budgets taken from the observed route. It tests screening efficiency, not out-of-sample route discovery or completeness.",
+    "negative_labels": "Every earlier orbit was rejected by the historical exact full-child classification; the selected orbit was the first target hit.",
+    "q80_exclusion": "The retained Q80 score tables contain only already rank-growing children, so they do not supply an unbiased negative candidate set.",
+    "selection": "Four consecutive historical H3 suffix searches with complete MW quotient shells and deterministic first-hit stopping, plus the pinned capped/streamed terminal q6 first-hit window."
+  },
+  "conclusion": {
+    "fixed_core_reglue_answer": "Across the four complete terminal fixed-core binary-bridge censuses, 5 of 14 bridge classes are rootless. The exploratory maximum-minimum rule retains 5 classes, 4 rootless. This is strong enrichment inside a selected successful core, but not a prospective q-neighbor construction test.",
+    "new_construction_algorithm_gate": "Not passed. A glue-coset-minimum score must next be predeclared and tested on an untouched prospective shell, with its runtime compared against direct child-root enumeration.",
+    "observed_answer": "The bridge core alone rejects no candidate. Adding the roots of the rank-two bridge rejects only 178 of 2892 classifications; this is not a substantial improvement over raw enumeration.",
+    "result": "mixed_retrospective_evidence"
+  },
+  "edges": [
+    {
+      "bridge_core_rank_and_count_bound_passes_through_first_hit": 52,
+      "bridge_core_rank_bound_passes_through_first_hit": 52,
+      "bridge_split_rank_and_count_bound_passes_through_first_hit": 52,
+      "bridge_split_rank_bound_passes_through_first_hit": 52,
+      "classification_reduction_fraction": "0",
+      "classification_speedup_factor": "1",
+      "corridor": "H3",
+      "edge_index": 9,
+      "enumeration": {
+        "dominant_orbit_count": 36824,
+        "height_gram": [
+          [
+            "2",
+            "-1/2",
+            "-1",
+            "-1",
+            "-1/2",
+            "-1",
+            "1",
+            "1",
+            "1",
+            "1/2",
+            "-1",
+            "1"
+          ],
+          [
+            "-1/2",
+            "2",
+            "-1/2",
+            "-1/2",
+            "1",
+            "0",
+            "0",
+            "1/2",
+            "-1",
+            "1/2",
+            "-1/2",
+            "-1/2"
+          ],
+          [
+            "-1",
+            "-1/2",
+            "5/2",
+            "1/2",
+            "1/2",
+            "1",
+            "-1",
+            "-1/2",
+            "1/2",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "-1",
+            "-1/2",
+            "1/2",
+            "5/2",
+            "1/2",
+            "0",
+            "-1",
+            "-1/2",
+            "-1/2",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1/2",
+            "1",
+            "1/2",
+            "1/2",
+            "5/2",
+            "1/2",
+            "-1",
+            "1/2",
+            "-1",
+            "1",
+            "0",
+            "1/2"
+          ],
+          [
+            "-1",
+            "0",
+            "1",
+            "0",
+            "1/2",
+            "5/2",
+            "0",
+            "0",
+            "-1",
+            "-1/2",
+            "3/2",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "-1",
+            "-1",
+            "-1",
+            "0",
+            "5/2",
+            "1",
+            "1/2",
+            "0",
+            "0",
+            "1/2"
+          ],
+          [
+            "1",
+            "1/2",
+            "-1/2",
+            "-1/2",
+            "1/2",
+            "0",
+            "1",
+            "5/2",
+            "-1/2",
+            "1",
+            "-1",
+            "1"
+          ],
+          [
+            "1",
+            "-1",
+            "1/2",
+            "-1/2",
+            "-1",
+            "-1",
+            "1/2",
+            "-1/2",
+            "3",
+            "1/2",
+            "0",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1/2",
+            "0",
+            "0",
+            "1",
+            "-1/2",
+            "0",
+            "1",
+            "1/2",
+            "2",
+            "-1",
+            "1/2"
+          ],
+          [
+            "-1",
+            "-1/2",
+            "1",
+            "0",
+            "0",
+            "3/2",
+            "0",
+            "-1",
+            "0",
+            "-1",
+            "5/2",
+            "0"
+          ],
+          [
+            "1",
+            "-1/2",
+            "0",
+            "0",
+            "1/2",
+            "0",
+            "1/2",
+            "1",
+            "1/2",
+            "1/2",
+            "0",
+            "5/2"
+          ]
+        ],
+        "mw_projection_representatives": 35267,
+        "pari_signed_mw_vector_count": 70534
+      },
+      "historical_first_hit_orbit": 52,
+      "lower_bound_histogram_through_first_hit": [
+        {
+          "bridge_root_rank": 1,
+          "bridge_signed_root_count": 2,
+          "candidate_count": 43,
+          "core_root_rank": 0,
+          "core_signed_root_count": 0
+        },
+        {
+          "bridge_root_rank": 1,
+          "bridge_signed_root_count": 2,
+          "candidate_count": 9,
+          "core_root_rank": 1,
+          "core_signed_root_count": 2
+        }
+      ],
+      "old_fibre_degree": 2,
+      "q": 4,
+      "raw_full_child_classifications_through_first_hit": 52,
+      "requested_target_root_rank_at_most": 4,
+      "requested_target_signed_root_count_at_most": 8,
+      "selected_candidate_bridge_split": {
+        "bridge_determinant_absolute": 127,
+        "bridge_root_rank": 1,
+        "bridge_signed_root_count": 2,
+        "core_root_rank": 0,
+        "core_signed_root_count": 0,
+        "cyclic_glue_order_if_maximal": 127,
+        "reduced_bridge_gram": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            64
+          ]
+        ],
+        "split_root_rank_lower_bound": 1,
+        "split_signed_root_count_lower_bound": 2
+      },
+      "source": "H3-08-5A1",
+      "source_root_rank": 5,
+      "source_signed_root_count": 10,
+      "target": "H3-09-4A1"
+    },
+    {
+      "bridge_core_rank_and_count_bound_passes_through_first_hit": 114,
+      "bridge_core_rank_bound_passes_through_first_hit": 114,
+      "bridge_split_rank_and_count_bound_passes_through_first_hit": 111,
+      "bridge_split_rank_bound_passes_through_first_hit": 111,
+      "classification_reduction_fraction": "1/38",
+      "classification_speedup_factor": "38/37",
+      "corridor": "H3",
+      "edge_index": 10,
+      "enumeration": {
+        "dominant_orbit_count": 53342,
+        "height_gram": [
+          [
+            "2",
+            "1/2",
+            "1/2",
+            "-1/2",
+            "1/2",
+            "-1/2",
+            "-1/2",
+            "-1",
+            "-1/2",
+            "-1/2",
+            "-1/2",
+            "-1",
+            "-1/2"
+          ],
+          [
+            "1/2",
+            "5/2",
+            "-1",
+            "1",
+            "-1",
+            "-1",
+            "1/2",
+            "-1",
+            "0",
+            "-1",
+            "1/2",
+            "-1",
+            "-1"
+          ],
+          [
+            "1/2",
+            "-1",
+            "5/2",
+            "0",
+            "1",
+            "1",
+            "-1",
+            "-1/2",
+            "1/2",
+            "-1/2",
+            "-1",
+            "1",
+            "1"
+          ],
+          [
+            "-1/2",
+            "1",
+            "0",
+            "5/2",
+            "0",
+            "-1/2",
+            "1",
+            "-1",
+            "0",
+            "-1",
+            "0",
+            "-1/2",
+            "-1/2"
+          ],
+          [
+            "1/2",
+            "-1",
+            "1",
+            "0",
+            "5/2",
+            "1",
+            "-1",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "-1",
+            "1",
+            "-1/2",
+            "1",
+            "5/2",
+            "-1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "3/2",
+            "1/2"
+          ],
+          [
+            "-1/2",
+            "1/2",
+            "-1",
+            "1",
+            "-1",
+            "-1",
+            "5/2",
+            "0",
+            "-1",
+            "0",
+            "-1/2",
+            "-1",
+            "-1"
+          ],
+          [
+            "-1",
+            "-1",
+            "-1/2",
+            "-1",
+            "1/2",
+            "1",
+            "0",
+            "3",
+            "-1/2",
+            "1/2",
+            "0",
+            "1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "0",
+            "1/2",
+            "0",
+            "0",
+            "1",
+            "-1",
+            "-1/2",
+            "5/2",
+            "1/2",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "-1/2",
+            "-1",
+            "-1/2",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "1/2",
+            "1/2",
+            "5/2",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1/2",
+            "1/2",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "-1/2",
+            "0",
+            "1",
+            "0",
+            "5/2",
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "-1",
+            "1",
+            "-1/2",
+            "1/2",
+            "3/2",
+            "-1",
+            "1/2",
+            "1",
+            "0",
+            "0",
+            "3",
+            "3/2"
+          ],
+          [
+            "-1/2",
+            "-1",
+            "1",
+            "-1/2",
+            "0",
+            "1/2",
+            "-1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "3/2",
+            "5/2"
+          ]
+        ],
+        "mw_projection_representatives": 47481,
+        "pari_signed_mw_vector_count": 94962
+      },
+      "historical_first_hit_orbit": 114,
+      "lower_bound_histogram_through_first_hit": [
+        {
+          "bridge_root_rank": 1,
+          "bridge_signed_root_count": 2,
+          "candidate_count": 86,
+          "core_root_rank": 0,
+          "core_signed_root_count": 0
+        },
+        {
+          "bridge_root_rank": 1,
+          "bridge_signed_root_count": 2,
+          "candidate_count": 25,
+          "core_root_rank": 1,
+          "core_signed_root_count": 2
+        },
+        {
+          "bridge_root_rank": 1,
+          "bridge_signed_root_count": 2,
+          "candidate_count": 3,
+          "core_root_rank": 3,
+          "core_signed_root_count": 6
+        }
+      ],
+      "old_fibre_degree": 2,
+      "q": 4,
+      "raw_full_child_classifications_through_first_hit": 114,
+      "requested_target_root_rank_at_most": 3,
+      "requested_target_signed_root_count_at_most": 6,
+      "selected_candidate_bridge_split": {
+        "bridge_determinant_absolute": 143,
+        "bridge_root_rank": 1,
+        "bridge_signed_root_count": 2,
+        "core_root_rank": 0,
+        "core_signed_root_count": 0,
+        "cyclic_glue_order_if_maximal": 143,
+        "reduced_bridge_gram": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            72
+          ]
+        ],
+        "split_root_rank_lower_bound": 1,
+        "split_signed_root_count_lower_bound": 2
+      },
+      "source": "H3-09-4A1",
+      "source_root_rank": 4,
+      "source_signed_root_count": 8,
+      "target": "H3-10-3A1"
+    },
+    {
+      "bridge_core_rank_and_count_bound_passes_through_first_hit": 498,
+      "bridge_core_rank_bound_passes_through_first_hit": 498,
+      "bridge_split_rank_and_count_bound_passes_through_first_hit": 496,
+      "bridge_split_rank_bound_passes_through_first_hit": 496,
+      "classification_reduction_fraction": "1/249",
+      "classification_speedup_factor": "249/248",
+      "corridor": "H3",
+      "edge_index": 11,
+      "enumeration": {
+        "dominant_orbit_count": 77175,
+        "height_gram": [
+          [
+            "5/2",
+            "1/2",
+            "1",
+            "-1",
+            "1",
+            "1",
+            "1",
+            "-1/2",
+            "1",
+            "1",
+            "-1",
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "1/2",
+            "5/2",
+            "-1",
+            "1",
+            "-1",
+            "1",
+            "0",
+            "-1/2",
+            "0",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "1",
+            "-1",
+            "3",
+            "-1/2",
+            "1/2",
+            "1/2",
+            "3/2",
+            "1",
+            "1",
+            "1/2",
+            "-1/2",
+            "-3/2",
+            "-1",
+            "1/2"
+          ],
+          [
+            "-1",
+            "1",
+            "-1/2",
+            "3",
+            "-1/2",
+            "1",
+            "-1",
+            "0",
+            "1/2",
+            "-1/2",
+            "1",
+            "-1/2",
+            "1/2",
+            "1"
+          ],
+          [
+            "1",
+            "-1",
+            "1/2",
+            "-1/2",
+            "3",
+            "-1/2",
+            "-1/2",
+            "-1",
+            "3/2",
+            "-1",
+            "-1/2",
+            "-1",
+            "1/2",
+            "-1/2"
+          ],
+          [
+            "1",
+            "1",
+            "1/2",
+            "1",
+            "-1/2",
+            "3",
+            "1",
+            "0",
+            "1/2",
+            "1/2",
+            "0",
+            "-1/2",
+            "1/2",
+            "1"
+          ],
+          [
+            "1",
+            "0",
+            "3/2",
+            "-1",
+            "-1/2",
+            "1",
+            "3",
+            "0",
+            "1/2",
+            "1/2",
+            "-1",
+            "-1/2",
+            "-1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "-1/2",
+            "1",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "5/2",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "1",
+            "1/2",
+            "3/2",
+            "1/2",
+            "1/2",
+            "0",
+            "3",
+            "-1/2",
+            "-1/2",
+            "-3/2",
+            "1",
+            "1/2"
+          ],
+          [
+            "1",
+            "1",
+            "1/2",
+            "-1/2",
+            "-1",
+            "1/2",
+            "1/2",
+            "1",
+            "-1/2",
+            "3",
+            "1/2",
+            "1",
+            "-1/2",
+            "1/2"
+          ],
+          [
+            "-1",
+            "1",
+            "-1/2",
+            "1",
+            "-1/2",
+            "0",
+            "-1",
+            "0",
+            "-1/2",
+            "1/2",
+            "3",
+            "1/2",
+            "-1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "-3/2",
+            "-1/2",
+            "-1",
+            "-1/2",
+            "-1/2",
+            "0",
+            "-3/2",
+            "1",
+            "1/2",
+            "3",
+            "1/2",
+            "1/2"
+          ],
+          [
+            "1",
+            "1",
+            "-1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "-1/2",
+            "-1",
+            "1",
+            "-1/2",
+            "-1/2",
+            "1/2",
+            "3",
+            "3/2"
+          ],
+          [
+            "1",
+            "1",
+            "1/2",
+            "1",
+            "-1/2",
+            "1",
+            "0",
+            "0",
+            "1/2",
+            "1/2",
+            "0",
+            "1/2",
+            "3/2",
+            "3"
+          ]
+        ],
+        "mw_projection_representatives": 68311,
+        "pari_signed_mw_vector_count": 136622
+      },
+      "historical_first_hit_orbit": 498,
+      "lower_bound_histogram_through_first_hit": [
+        {
+          "bridge_root_rank": 1,
+          "bridge_signed_root_count": 2,
+          "candidate_count": 467,
+          "core_root_rank": 0,
+          "core_signed_root_count": 0
+        },
+        {
+          "bridge_root_rank": 1,
+          "bridge_signed_root_count": 2,
+          "candidate_count": 29,
+          "core_root_rank": 1,
+          "core_signed_root_count": 2
+        },
+        {
+          "bridge_root_rank": 1,
+          "bridge_signed_root_count": 2,
+          "candidate_count": 2,
+          "core_root_rank": 2,
+          "core_signed_root_count": 4
+        }
+      ],
+      "old_fibre_degree": 2,
+      "q": 4,
+      "raw_full_child_classifications_through_first_hit": 498,
+      "requested_target_root_rank_at_most": 2,
+      "requested_target_signed_root_count_at_most": 4,
+      "selected_candidate_bridge_split": {
+        "bridge_determinant_absolute": 31,
+        "bridge_root_rank": 1,
+        "bridge_signed_root_count": 2,
+        "core_root_rank": 1,
+        "core_signed_root_count": 2,
+        "cyclic_glue_order_if_maximal": 31,
+        "reduced_bridge_gram": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            16
+          ]
+        ],
+        "split_root_rank_lower_bound": 2,
+        "split_signed_root_count_lower_bound": 4
+      },
+      "source": "H3-10-3A1",
+      "source_root_rank": 3,
+      "source_signed_root_count": 6,
+      "target": "H3-11-2A1"
+    },
+    {
+      "bridge_core_rank_and_count_bound_passes_through_first_hit": 981,
+      "bridge_core_rank_bound_passes_through_first_hit": 981,
+      "bridge_split_rank_and_count_bound_passes_through_first_hit": 808,
+      "bridge_split_rank_bound_passes_through_first_hit": 808,
+      "classification_reduction_fraction": "173/981",
+      "classification_speedup_factor": "981/808",
+      "corridor": "H3",
+      "edge_index": 12,
+      "enumeration": {
+        "dominant_orbit_count": 111428,
+        "height_gram": [
+          [
+            "3",
+            "1",
+            "-1",
+            "-3/2",
+            "3/2",
+            "-1",
+            "-1",
+            "-3/2",
+            "3/2",
+            "-3/2",
+            "-1",
+            "3/2",
+            "-3/2",
+            "1",
+            "-3/2"
+          ],
+          [
+            "1",
+            "3",
+            "1",
+            "1/2",
+            "-1/2",
+            "-1",
+            "-1",
+            "-3/2",
+            "1/2",
+            "-3/2",
+            "0",
+            "-1/2",
+            "-3/2",
+            "-1",
+            "-3/2"
+          ],
+          [
+            "-1",
+            "1",
+            "3",
+            "3/2",
+            "-1/2",
+            "-1",
+            "1",
+            "1/2",
+            "1/2",
+            "1/2",
+            "1",
+            "-3/2",
+            "1/2",
+            "-1",
+            "-1/2"
+          ],
+          [
+            "-3/2",
+            "1/2",
+            "3/2",
+            "7/2",
+            "-2",
+            "1/2",
+            "3/2",
+            "1/2",
+            "-1",
+            "0",
+            "3/2",
+            "-1",
+            "1/2",
+            "-3/2",
+            "1"
+          ],
+          [
+            "3/2",
+            "-1/2",
+            "-1/2",
+            "-2",
+            "7/2",
+            "-3/2",
+            "-1/2",
+            "-1",
+            "1/2",
+            "1/2",
+            "-3/2",
+            "1/2",
+            "-1",
+            "1/2",
+            "-1/2"
+          ],
+          [
+            "-1",
+            "-1",
+            "-1",
+            "1/2",
+            "-3/2",
+            "3",
+            "0",
+            "3/2",
+            "-3/2",
+            "-1/2",
+            "1",
+            "-1/2",
+            "3/2",
+            "0",
+            "1/2"
+          ],
+          [
+            "-1",
+            "-1",
+            "1",
+            "3/2",
+            "-1/2",
+            "0",
+            "3",
+            "3/2",
+            "-1/2",
+            "1/2",
+            "0",
+            "1/2",
+            "1/2",
+            "0",
+            "1/2"
+          ],
+          [
+            "-3/2",
+            "-3/2",
+            "1/2",
+            "1/2",
+            "-1",
+            "3/2",
+            "3/2",
+            "7/2",
+            "0",
+            "1",
+            "1/2",
+            "-1",
+            "3/2",
+            "1/2",
+            "0"
+          ],
+          [
+            "3/2",
+            "1/2",
+            "1/2",
+            "-1",
+            "1/2",
+            "-3/2",
+            "-1/2",
+            "0",
+            "7/2",
+            "1/2",
+            "-1/2",
+            "1/2",
+            "-1",
+            "3/2",
+            "-3/2"
+          ],
+          [
+            "-3/2",
+            "-3/2",
+            "1/2",
+            "0",
+            "1/2",
+            "-1/2",
+            "1/2",
+            "1",
+            "1/2",
+            "7/2",
+            "1/2",
+            "-1/2",
+            "1",
+            "1/2",
+            "3/2"
+          ],
+          [
+            "-1",
+            "0",
+            "1",
+            "3/2",
+            "-3/2",
+            "1",
+            "0",
+            "1/2",
+            "-1/2",
+            "1/2",
+            "3",
+            "-3/2",
+            "3/2",
+            "-1",
+            "1/2"
+          ],
+          [
+            "3/2",
+            "-1/2",
+            "-3/2",
+            "-1",
+            "1/2",
+            "-1/2",
+            "1/2",
+            "-1",
+            "1/2",
+            "-1/2",
+            "-3/2",
+            "7/2",
+            "-1",
+            "3/2",
+            "1/2"
+          ],
+          [
+            "-3/2",
+            "-3/2",
+            "1/2",
+            "1/2",
+            "-1",
+            "3/2",
+            "1/2",
+            "3/2",
+            "-1",
+            "1",
+            "3/2",
+            "-1",
+            "7/2",
+            "1/2",
+            "1"
+          ],
+          [
+            "1",
+            "-1",
+            "-1",
+            "-3/2",
+            "1/2",
+            "0",
+            "0",
+            "1/2",
+            "3/2",
+            "1/2",
+            "-1",
+            "3/2",
+            "1/2",
+            "3",
+            "-1/2"
+          ],
+          [
+            "-3/2",
+            "-3/2",
+            "-1/2",
+            "1",
+            "-1/2",
+            "1/2",
+            "1/2",
+            "0",
+            "-3/2",
+            "3/2",
+            "1/2",
+            "1/2",
+            "1",
+            "-1/2",
+            "7/2"
+          ]
+        ],
+        "mw_projection_representatives": 107775,
+        "pari_signed_mw_vector_count": 215550
+      },
+      "historical_first_hit_orbit": 981,
+      "lower_bound_histogram_through_first_hit": [
+        {
+          "bridge_root_rank": 1,
+          "bridge_signed_root_count": 2,
+          "candidate_count": 808,
+          "core_root_rank": 0,
+          "core_signed_root_count": 0
+        },
+        {
+          "bridge_root_rank": 1,
+          "bridge_signed_root_count": 2,
+          "candidate_count": 173,
+          "core_root_rank": 1,
+          "core_signed_root_count": 2
+        }
+      ],
+      "old_fibre_degree": 2,
+      "q": 4,
+      "raw_full_child_classifications_through_first_hit": 981,
+      "requested_target_root_rank_at_most": 1,
+      "requested_target_signed_root_count_at_most": 2,
+      "selected_candidate_bridge_split": {
+        "bridge_determinant_absolute": 31,
+        "bridge_root_rank": 1,
+        "bridge_signed_root_count": 2,
+        "core_root_rank": 0,
+        "core_signed_root_count": 0,
+        "cyclic_glue_order_if_maximal": 31,
+        "reduced_bridge_gram": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            16
+          ]
+        ],
+        "split_root_rank_lower_bound": 1,
+        "split_signed_root_count_lower_bound": 2
+      },
+      "source": "H3-11-2A1",
+      "source_root_rank": 2,
+      "source_signed_root_count": 4,
+      "target": "H3-12-A1"
+    },
+    {
+      "bridge_core_rank_and_count_bound_passes_through_first_hit": 1247,
+      "bridge_core_rank_bound_passes_through_first_hit": 1247,
+      "bridge_split_rank_and_count_bound_passes_through_first_hit": 1247,
+      "bridge_split_rank_bound_passes_through_first_hit": 1247,
+      "classification_reduction_fraction": "0",
+      "classification_speedup_factor": "1",
+      "corridor": "H3",
+      "edge_index": 13,
+      "enumeration": {
+        "height_gram": [
+          [
+            "7/2",
+            "3/2",
+            "3/2",
+            "3/2",
+            "-3/2",
+            "3/2",
+            "3/2",
+            "-3/2",
+            "-3/2",
+            "3/2",
+            "-3/2",
+            "3/2",
+            "-1/2",
+            "3/2",
+            "3/2",
+            "1/2"
+          ],
+          [
+            "3/2",
+            "7/2",
+            "-1/2",
+            "-1/2",
+            "-3/2",
+            "-1/2",
+            "3/2",
+            "-3/2",
+            "1/2",
+            "3/2",
+            "-3/2",
+            "-1/2",
+            "-3/2",
+            "1/2",
+            "-1/2",
+            "3/2"
+          ],
+          [
+            "3/2",
+            "-1/2",
+            "7/2",
+            "1/2",
+            "1/2",
+            "3/2",
+            "3/2",
+            "1/2",
+            "-3/2",
+            "-1/2",
+            "-1/2",
+            "1/2",
+            "-1/2",
+            "3/2",
+            "1/2",
+            "-3/2"
+          ],
+          [
+            "3/2",
+            "-1/2",
+            "1/2",
+            "7/2",
+            "1/2",
+            "1/2",
+            "-1/2",
+            "-3/2",
+            "-3/2",
+            "-1/2",
+            "1/2",
+            "3/2",
+            "3/2",
+            "-1/2",
+            "1/2",
+            "-1/2"
+          ],
+          [
+            "-3/2",
+            "-3/2",
+            "1/2",
+            "1/2",
+            "7/2",
+            "1/2",
+            "-1/2",
+            "1/2",
+            "1/2",
+            "-3/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "-1/2",
+            "-3/2",
+            "-1/2"
+          ],
+          [
+            "3/2",
+            "-1/2",
+            "3/2",
+            "1/2",
+            "1/2",
+            "7/2",
+            "3/2",
+            "1/2",
+            "-3/2",
+            "1/2",
+            "-3/2",
+            "3/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "-1/2"
+          ],
+          [
+            "3/2",
+            "3/2",
+            "3/2",
+            "-1/2",
+            "-1/2",
+            "3/2",
+            "7/2",
+            "1/2",
+            "-1/2",
+            "3/2",
+            "-3/2",
+            "1/2",
+            "-1/2",
+            "3/2",
+            "1/2",
+            "-1/2"
+          ],
+          [
+            "-3/2",
+            "-3/2",
+            "1/2",
+            "-3/2",
+            "1/2",
+            "1/2",
+            "1/2",
+            "7/2",
+            "-1/2",
+            "-1/2",
+            "1/2",
+            "-1/2",
+            "1/2",
+            "-1/2",
+            "-1/2",
+            "-1/2"
+          ],
+          [
+            "-3/2",
+            "1/2",
+            "-3/2",
+            "-3/2",
+            "1/2",
+            "-3/2",
+            "-1/2",
+            "-1/2",
+            "7/2",
+            "-1/2",
+            "-1/2",
+            "-3/2",
+            "-3/2",
+            "1/2",
+            "-1/2",
+            "1/2"
+          ],
+          [
+            "3/2",
+            "3/2",
+            "-1/2",
+            "-1/2",
+            "-3/2",
+            "1/2",
+            "3/2",
+            "-1/2",
+            "-1/2",
+            "7/2",
+            "-3/2",
+            "1/2",
+            "-1/2",
+            "1/2",
+            "3/2",
+            "1/2"
+          ],
+          [
+            "-3/2",
+            "-3/2",
+            "-1/2",
+            "1/2",
+            "1/2",
+            "-3/2",
+            "-3/2",
+            "1/2",
+            "-1/2",
+            "-3/2",
+            "7/2",
+            "-1/2",
+            "3/2",
+            "-1/2",
+            "-1/2",
+            "-1/2"
+          ],
+          [
+            "3/2",
+            "-1/2",
+            "1/2",
+            "3/2",
+            "1/2",
+            "3/2",
+            "1/2",
+            "-1/2",
+            "-3/2",
+            "1/2",
+            "-1/2",
+            "7/2",
+            "3/2",
+            "1/2",
+            "1/2",
+            "1/2"
+          ],
+          [
+            "-1/2",
+            "-3/2",
+            "-1/2",
+            "3/2",
+            "1/2",
+            "1/2",
+            "-1/2",
+            "1/2",
+            "-3/2",
+            "-1/2",
+            "3/2",
+            "3/2",
+            "7/2",
+            "-3/2",
+            "-1/2",
+            "-1/2"
+          ],
+          [
+            "3/2",
+            "1/2",
+            "3/2",
+            "-1/2",
+            "-1/2",
+            "1/2",
+            "3/2",
+            "-1/2",
+            "1/2",
+            "1/2",
+            "-1/2",
+            "1/2",
+            "-3/2",
+            "7/2",
+            "3/2",
+            "-1/2"
+          ],
+          [
+            "3/2",
+            "-1/2",
+            "1/2",
+            "1/2",
+            "-3/2",
+            "1/2",
+            "1/2",
+            "-1/2",
+            "-1/2",
+            "3/2",
+            "-1/2",
+            "1/2",
+            "-1/2",
+            "3/2",
+            "7/2",
+            "-1/2"
+          ],
+          [
+            "1/2",
+            "3/2",
+            "-3/2",
+            "-1/2",
+            "-1/2",
+            "-1/2",
+            "-1/2",
+            "-1/2",
+            "1/2",
+            "1/2",
+            "-1/2",
+            "1/2",
+            "-1/2",
+            "-1/2",
+            "-1/2",
+            "7/2"
+          ]
+        ],
+        "mw_projection_representatives": 10000,
+        "mw_vector_cap": 10000,
+        "pari_signed_mw_vector_count": 7187438,
+        "stream_first_global_index": 1001,
+        "stream_last_global_index": 2247
+      },
+      "historical_first_hit_global_stream_index": 2247,
+      "lower_bound_histogram_through_first_hit": [
+        {
+          "bridge_root_rank": 0,
+          "bridge_signed_root_count": 0,
+          "candidate_count": 1247,
+          "core_root_rank": 0,
+          "core_signed_root_count": 0
+        }
+      ],
+      "old_fibre_degree": 2,
+      "q": 6,
+      "raw_full_child_classifications_through_first_hit": 1247,
+      "requested_target_root_rank_at_most": 0,
+      "requested_target_signed_root_count_at_most": 0,
+      "selected_candidate_bridge_split": {
+        "bridge_determinant_absolute": 47,
+        "bridge_root_rank": 0,
+        "bridge_signed_root_count": 0,
+        "core_root_rank": 0,
+        "core_signed_root_count": 0,
+        "cyclic_glue_order_if_maximal": 47,
+        "reduced_bridge_gram": [
+          [
+            6,
+            1
+          ],
+          [
+            1,
+            8
+          ]
+        ],
+        "split_root_rank_lower_bound": 0,
+        "split_signed_root_count_lower_bound": 0
+      },
+      "source": "H3-12-A1",
+      "source_root_rank": 1,
+      "source_signed_root_count": 2,
+      "target": "H3-13-ROOTLESS",
+      "tested_stream_window": [
+        1001,
+        2247
+      ]
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json": "1d6e18fe4663a832a9a581c6ba1de670c1226852825f7017de68bdd3bdc674b0",
+    "artifacts/generated-results/elkies-k3-rank17-to-h3-reverse-transport.json": "db9518ee9ba5ffb520898242cbff06894900ea1fea2908476e40433a212af4d2"
+  },
+  "predictor": {
+    "excluded_information": "No candidate child frame or candidate child roots are constructed; new roots introduced by bridge/glue cosets are deliberately unknown.",
+    "input": "the old marked frame, proposed U-prime, and requested child root-rank/root-count budget",
+    "name": "mandatory orthogonal bridge-split root budget",
+    "rule": "Reject when the root rank or signed root count of the orthogonal subsystem Phi(K)+Phi(C_new) exceeds the requested child budget.",
+    "safety": "Exact with no false negatives for the declared budget because K+C_new is a sublattice of every child frame completing this U-prime."
+  },
+  "reproduce": "sage -python elkies-k3/scripts/benchmark_integral_rank_transfer_bridge_predictor.sage --check",
+  "schema": "elkies-k3.integral-rank-transfer-bridge-predictor-benchmark.v1",
+  "status": "PASS_EXACT_RETROSPECTIVE_BRIDGE_PREDICTOR_BENCHMARKS",
+  "terminal_binary_bridge_census": {
+    "aggregate": {
+      "binary_bridge_class_count": 14,
+      "candidate_reduction_fraction": "9/14",
+      "corridor_count": 4,
+      "maximum_minimum_retained_classes": 5,
+      "maximum_minimum_rootless_classes": 4,
+      "maximum_minimum_rootless_precision": "4/5",
+      "maximum_minimum_rootless_recall": "4/5",
+      "precision_enrichment_factor": "56/25",
+      "projected_classification_speedup_factor": "14/5",
+      "rootless_binary_bridge_classes": 5,
+      "unfiltered_rootless_precision": "5/14"
+    },
+    "corridors": [
+      {
+        "binary_bridge_class_count": 7,
+        "classes": [
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 3,
+                "signed_root_count": 4
+              },
+              {
+                "core_glue_multiplier": 188,
+                "signed_root_count": 4
+              }
+            ],
+            "bridge_gram": [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                96
+              ]
+            ],
+            "bridge_minimum": 2,
+            "rootless": false,
+            "signed_root_count": 4
+          },
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 10,
+                "signed_root_count": 2
+              },
+              {
+                "core_glue_multiplier": 181,
+                "signed_root_count": 2
+              }
+            ],
+            "bridge_gram": [
+              [
+                4,
+                1
+              ],
+              [
+                1,
+                48
+              ]
+            ],
+            "bridge_minimum": 4,
+            "rootless": false,
+            "signed_root_count": 2
+          },
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 24,
+                "signed_root_count": 0
+              },
+              {
+                "core_glue_multiplier": 167,
+                "signed_root_count": 0
+              }
+            ],
+            "bridge_gram": [
+              [
+                6,
+                1
+              ],
+              [
+                1,
+                32
+              ]
+            ],
+            "bridge_minimum": 6,
+            "rootless": true,
+            "signed_root_count": 0
+          },
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 94,
+                "signed_root_count": 4
+              },
+              {
+                "core_glue_multiplier": 97,
+                "signed_root_count": 4
+              }
+            ],
+            "bridge_gram": [
+              [
+                8,
+                1
+              ],
+              [
+                1,
+                24
+              ]
+            ],
+            "bridge_minimum": 8,
+            "rootless": false,
+            "signed_root_count": 4
+          },
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 13,
+                "signed_root_count": 10
+              },
+              {
+                "core_glue_multiplier": 178,
+                "signed_root_count": 10
+              }
+            ],
+            "bridge_gram": [
+              [
+                10,
+                3
+              ],
+              [
+                3,
+                20
+              ]
+            ],
+            "bridge_minimum": 10,
+            "rootless": false,
+            "signed_root_count": 10
+          },
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 80,
+                "signed_root_count": 2
+              },
+              {
+                "core_glue_multiplier": 111,
+                "signed_root_count": 2
+              }
+            ],
+            "bridge_gram": [
+              [
+                12,
+                1
+              ],
+              [
+                1,
+                16
+              ]
+            ],
+            "bridge_minimum": 12,
+            "rootless": false,
+            "signed_root_count": 2
+          },
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 18,
+                "signed_root_count": 0
+              },
+              {
+                "core_glue_multiplier": 173,
+                "signed_root_count": 0
+              }
+            ],
+            "bridge_gram": [
+              [
+                12,
+                5
+              ],
+              [
+                5,
+                18
+              ]
+            ],
+            "bridge_minimum": 12,
+            "rootless": true,
+            "signed_root_count": 0
+          }
+        ],
+        "corridor": "NS0024",
+        "cyclic_glue_order": 191,
+        "edge_index": 13,
+        "maximum_bridge_minimum": 12,
+        "maximum_minimum_retained_classes": 2,
+        "maximum_minimum_rootless_classes": 1,
+        "rootless_binary_bridge_classes": 2
+      },
+      {
+        "binary_bridge_class_count": 2,
+        "classes": [
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 5,
+                "signed_root_count": 4
+              },
+              {
+                "core_glue_multiplier": 18,
+                "signed_root_count": 4
+              }
+            ],
+            "bridge_gram": [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                12
+              ]
+            ],
+            "bridge_minimum": 2,
+            "rootless": false,
+            "signed_root_count": 4
+          },
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 1,
+                "signed_root_count": 0
+              },
+              {
+                "core_glue_multiplier": 22,
+                "signed_root_count": 0
+              }
+            ],
+            "bridge_gram": [
+              [
+                4,
+                1
+              ],
+              [
+                1,
+                6
+              ]
+            ],
+            "bridge_minimum": 4,
+            "rootless": true,
+            "signed_root_count": 0
+          }
+        ],
+        "corridor": "Golay720",
+        "cyclic_glue_order": 23,
+        "edge_index": 6,
+        "maximum_bridge_minimum": 4,
+        "maximum_minimum_retained_classes": 1,
+        "maximum_minimum_rootless_classes": 1,
+        "rootless_binary_bridge_classes": 1
+      },
+      {
+        "binary_bridge_class_count": 3,
+        "classes": [
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 10,
+                "signed_root_count": 8
+              },
+              {
+                "core_glue_multiplier": 37,
+                "signed_root_count": 8
+              }
+            ],
+            "bridge_gram": [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                24
+              ]
+            ],
+            "bridge_minimum": 2,
+            "rootless": false,
+            "signed_root_count": 8
+          },
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 12,
+                "signed_root_count": 2
+              },
+              {
+                "core_glue_multiplier": 35,
+                "signed_root_count": 2
+              }
+            ],
+            "bridge_gram": [
+              [
+                4,
+                1
+              ],
+              [
+                1,
+                12
+              ]
+            ],
+            "bridge_minimum": 4,
+            "rootless": false,
+            "signed_root_count": 2
+          },
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 7,
+                "signed_root_count": 0
+              },
+              {
+                "core_glue_multiplier": 40,
+                "signed_root_count": 0
+              }
+            ],
+            "bridge_gram": [
+              [
+                6,
+                1
+              ],
+              [
+                1,
+                8
+              ]
+            ],
+            "bridge_minimum": 6,
+            "rootless": true,
+            "signed_root_count": 0
+          }
+        ],
+        "corridor": "H3",
+        "cyclic_glue_order": 47,
+        "edge_index": 13,
+        "maximum_bridge_minimum": 6,
+        "maximum_minimum_retained_classes": 1,
+        "maximum_minimum_rootless_classes": 1,
+        "rootless_binary_bridge_classes": 1
+      },
+      {
+        "binary_bridge_class_count": 2,
+        "classes": [
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 11,
+                "signed_root_count": 2
+              },
+              {
+                "core_glue_multiplier": 12,
+                "signed_root_count": 2
+              }
+            ],
+            "bridge_gram": [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                12
+              ]
+            ],
+            "bridge_minimum": 2,
+            "rootless": false,
+            "signed_root_count": 2
+          },
+          {
+            "admissible_oriented_graph_labels": [
+              {
+                "core_glue_multiplier": 7,
+                "signed_root_count": 0
+              },
+              {
+                "core_glue_multiplier": 16,
+                "signed_root_count": 0
+              }
+            ],
+            "bridge_gram": [
+              [
+                4,
+                1
+              ],
+              [
+                1,
+                6
+              ]
+            ],
+            "bridge_minimum": 4,
+            "rootless": true,
+            "signed_root_count": 0
+          }
+        ],
+        "corridor": "Q80",
+        "cyclic_glue_order": 23,
+        "edge_index": 10,
+        "maximum_bridge_minimum": 4,
+        "maximum_minimum_retained_classes": 1,
+        "maximum_minimum_rootless_classes": 1,
+        "rootless_binary_bridge_classes": 1
+      }
+    ],
+    "design": "For each of the four observed rootless terminal cores, enumerate all Minkowski-reduced positive even binary bridge classes of the observed prime determinant and every compatible oriented cyclic graph label in the frame discriminant genus.",
+    "predictor": "Retain the binary bridge class or classes having maximum lattice minimum.",
+    "selection_warning": "The core and bridge determinant come from the observed successful edge. This is a complete fixed-core reglue census but is not an out-of-sample method for choosing a core from the old frame."
+  }
+}

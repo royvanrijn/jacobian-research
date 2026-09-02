@@ -6,6 +6,8 @@
 
 <!-- status-consumer: EC-K3-R17-RANK28-GENUS1-MIXED-TRACE-SPLITTING-H10000 c7aa09836b842b60 -->
 
+<!-- status-consumer: EC-K3-R17-RANK28-INTEGRAL-CHARACTER-GLUE 617f1838d8581fcd -->
+
 ## Outcome
 
 The first exact positive-control experiment succeeds for all eleven public
@@ -153,6 +155,70 @@ It is anti-invariant under the cover involution and is therefore independent
 of the invariant R17 subgroup.  Each constructed cover consequently has
 generic Mordell--Weil rank at least 18 over its genus-one base.
 
+## Integral character/glue signature
+
+The common trace turns the eleven equation certificates into one repeated
+integral lattice operation.  On the double cover belonging to `Q_i`, write
+
+```text
+R_i'=sigma(R_i),       T_i=R_i-R_i'.
+```
+
+The trace identity and the height calculation give
+
+```text
+R_i+R_i'=tau,          2R_i=tau+T_i,
+tau^2=16,              T_i^2=16,              tau.T_i=0.
+```
+
+Here `tau^2=16` is exact: `tau` has norm eight in `R17`, and heights double
+under the degree-two base change.  Character orthogonality gives the zero
+cross-pairing.  Thus the pure invariant/anti-invariant character sum has Gram
+
+```text
+diag(16,16).
+```
+
+The section `R_i=(tau+T_i)/2` adjoins the order-two isotropic graph element
+represented by `(8,8)` in the Smith coordinates induced by the eigenbasis
+`(tau,T_i)`:
+
+```text
+A_<16> + A_<16> = Z/16 + Z/16.
+```
+
+This is an index-two extension.  In the bases `(tau,R_i)` and
+`(R_i,R_i')` its Gram matrices are respectively
+
+```text
+[16 8]          [8 0]
+[ 8 8]    and   [0 8].
+```
+
+Consequently **all eleven exact lifts fitted from this trace pencil have the
+same rank-two integral character/glue carrier**: the pure eigensum
+`<16>_+ + <16>_-` is saturated to `<8>+<8>` by the diagonal half-sum.
+This is precisely the involution graph-glue operation of Theorem I in
+[`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md).
+
+This signature is relative to the chosen trace pencil; it is not an intrinsic
+invariant of an isolated fibre point `Q_i`.  Nor does the common pattern mean
+that one double cover supplies eleven new directions.  Exact normalization
+gives eleven pairwise-distinct squareclasses
+`q_i(t)` in `QQ(t)^*/QQ(t)^{*2}`.  They are eleven different deck characters,
+each carrying the same abstract two-dimensional lattice pattern and the same
+invariant trace.  This is also not a root-annihilating bridge reglue: it is a
+character-saturation extension, so it cannot remove a vector already present
+in the pure eigensum.
+
+The derived exact certificate is
+[`../artifacts/generated-results/elkies-k3-r17-rank28-integral-character-glue-v1.json`](../artifacts/generated-results/elkies-k3-r17-rank28-integral-character-glue-v1.json).
+This is the structural payoff of the rank-28 positive control.  A
+mechanism-first continuation should keep the trace/glue carrier fixed and
+study simultaneous rational fibres of the distinct pointed genus-one deck
+characters; another scalar specialization score would not test this shared
+mechanism.
+
 ## First simultaneous-splitting gate
 
 The eleven certified quartics were frozen and searched away from the fitted
@@ -254,6 +320,14 @@ The certificate records every `lambda`, quartic, residual quadratic, lifted
 section, rational cover witness, short-model target, Kummer generator and
 input hash.  Its proof boundary is one equation-cheapest finite-pole trace;
 it does not classify all genus-one pencils or promote a new rank record.
+
+Extract and byte-check the common integral character/glue signature with
+
+```bash
+python3 elkies-k3/scripts/certify_rank28_integral_character_glue.py
+
+python3 elkies-k3/scripts/certify_rank28_integral_character_glue.py --check
+```
 
 Run and replay the frozen-quartic simultaneous-splitting search with
 

@@ -16,11 +16,23 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
+import csv
 import hashlib
 import json
 from pathlib import Path
 
-from sage.all import QQ, ZZ, block_diagonal_matrix, identity_matrix, matrix, pari, vector
+from sage.all import (
+    Genus,
+    QQ,
+    ZZ,
+    block_diagonal_matrix,
+    gcd,
+    identity_matrix,
+    matrix,
+    pari,
+    vector,
+    xgcd,
+)
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -46,6 +58,62 @@ def rows(value):
 
 def rational_rows(value):
     return [[str(entry) for entry in row] for row in value.rows()]
+
+
+def discriminant_form_key(gram):
+    normal = Genus(gram).discriminant_form().normal_form()
+    return {
+        "invariants": list(map(int, normal.invariants())),
+        "quadratic_gram": rational_rows(normal.gram_matrix_quadratic()),
+        "value_module": str(normal.value_module_qf()),
+    }
+
+
+def load_matrix(relative_path):
+    return matrix(
+        ZZ,
+        [
+            [ZZ(value) for value in line.split()]
+            for line in (ROOT / relative_path).read_text().splitlines()
+            if line.strip() and not line.lstrip().startswith("#")
+        ],
+    )
+
+
+def bezout_vector(pairings):
+    current = ZZ(0)
+    coefficients = [ZZ(0)] * len(pairings)
+    for index, pairing in enumerate(pairings):
+        if not pairing:
+            continue
+        common, left, right = xgcd(current, ZZ(pairing))
+        coefficients = [left * value for value in coefficients]
+        coefficients[index] += right
+        current = common
+    assert abs(current) == 1
+    return vector(
+        ZZ, coefficients if current == 1 else [-value for value in coefficients]
+    )
+
+
+def split_neighbor(parent, q, a, b, coordinates):
+    ns = block_diagonal_matrix(U, -parent)
+    coordinates = vector(ZZ, coordinates)
+    fibre = vector(ZZ, [a, b] + list(coordinates))
+    assert a * b == q
+    assert coordinates * parent * coordinates == 2 * q
+    assert fibre * ns * fibre == 0
+    assert gcd([abs(ZZ(value)) for value in ns * fibre]) == 1
+    mate = bezout_vector(list(ns * fibre))
+    mate -= ZZ(mate * ns * mate) // 2 * fibre
+    complement = matrix(
+        ZZ, [list(fibre * ns), list(mate * ns)]
+    ).right_kernel_matrix()
+    child = -(complement * ns * complement.transpose())
+    transport = matrix(ZZ, [list(fibre), list(mate)] + complement.rows())
+    assert abs(transport.det()) == 1
+    assert transport * ns * transport.transpose() == block_diagonal_matrix(U, -child)
+    return child, transport
 
 
 def signed_roots(gram):
@@ -114,6 +182,17 @@ def bridge_glue(frame, frame_basis, core_basis):
                 ],
                 "norm": norm,
                 "q_mod_2Z": "0",
+                "primary_components": [
+                    {
+                        "prime": int(prime),
+                        "order": int(prime**exponent),
+                        "frame_coordinates": [
+                            int((order // (prime**exponent)) * value)
+                            for value in frame_coordinates
+                        ],
+                    }
+                    for prime, exponent in ZZ(order).factor()
+                ],
             }
         )
 
@@ -140,6 +219,7 @@ def bridge_glue(frame, frame_basis, core_basis):
         "bridge_rank": bridge_coordinates.nrows(),
         "bridge_gram": rows(bridge_gram),
         "bridge_discriminant_group_invariants": bridge_smith,
+        "bridge_discriminant_form": discriminant_form_key(bridge_gram),
         "bridge_determinant_absolute": abs(int(bridge_gram.det())),
         "K_plus_C_index_in_W": index,
         "glue_group_invariants": [order for order in diagonal if order > 1],
@@ -212,6 +292,7 @@ def certify_embedded_edge(
             "rank": core_rank,
             "gram": rows(core_gram),
             "determinant_absolute": abs(int(core_gram.det())),
+            "discriminant_form": discriminant_form_key(core_gram),
             "root_count_signed": len(core_root_ambient),
         },
         "old_frame": old_data,
@@ -278,6 +359,9 @@ def main():
         "artifacts/generated-results/"
         "elkies-k3-rank17-to-h3-reverse-transport.json"
     )
+    q80_start_path = "elkies-k3/data/fibrations/kumar_q80_e6_d5_a3_mw3_frame.txt"
+    q80_prefix_path = "elkies-k3/data/fibrations/kumar_q80_lowq_alternate_prefix.tsv"
+    q80_suffix_path = "elkies-k3/data/fibrations/kumar_q80_new_lowq_rootless_path.tsv"
 
     ns_route = load_json(ns_route_path)
     ns_source = load_json(ns_source_path)
@@ -351,7 +435,57 @@ def main():
         )
         certificates.append(record)
 
+    q80_steps = []
+    for path, count in ((q80_prefix_path, 2), (q80_suffix_path, 8)):
+        with (ROOT / path).open() as handle:
+            selected_rows = list(csv.DictReader(handle, delimiter="\t"))[:count]
+        assert len(selected_rows) == count
+        q80_steps.extend(selected_rows)
+    assert len(q80_steps) == 10
+    current_frame = load_matrix(q80_start_path)
+    common_ns = block_diagonal_matrix(U, -current_frame)
+    current_basis = identity_matrix(ZZ, 19)
+    current_root_rank = 14
+    for edge_index, step in enumerate(q80_steps, 1):
+        q = ZZ(step["q"])
+        a = ZZ(step["a"])
+        b = ZZ(step["b"])
+        coordinates = vector(ZZ, map(ZZ, step["v"].split(",")))
+        child_frame, local_transport = split_neighbor(
+            current_frame, q, a, b, coordinates
+        )
+        new_basis = local_transport * current_basis
+        target_root_rank = int(step["root_rank"])
+        metadata = {
+            "q": q,
+            "old_fibre_degree": b,
+            "source_root_rank": current_root_rank,
+            "target_root_rank": target_root_rank,
+        }
+        record = certify_embedded_edge(
+            "Q80",
+            edge_index,
+            common_ns,
+            current_frame,
+            current_basis[2:, :],
+            child_frame,
+            new_basis[2:, :],
+            metadata,
+        )
+        certificates.append(record)
+        current_frame = child_frame
+        current_basis = new_basis
+        current_root_rank = target_root_rank
+    assert current_root_rank == 0 and not signed_roots(current_frame)
+
     bridge_rank_histogram = Counter(row["old_frame"]["bridge_rank"] for row in certificates)
+    corridor_edge_counts = Counter(row["corridor"] for row in certificates)
+    assert corridor_edge_counts == {
+        "H3": 13,
+        "Q80": 10,
+        "NS0024": 13,
+        "Golay720": 6,
+    }
     core_rootless_count = sum(row["core"]["root_count_signed"] == 0 for row in certificates)
     signed_root_count_decreasing = sum(
         row["root_transfer"]["removed_signed_roots"]
@@ -391,11 +525,18 @@ def main():
                 golay_route_path,
                 golay_source_path,
                 h3_path,
+                q80_start_path,
+                q80_prefix_path,
+                q80_suffix_path,
             ]
         },
         "aggregate": {
             "edge_count": len(certificates),
-            "corridors": ["H3", "NS0024", "Golay720"],
+            "corridors": ["H3", "Q80", "NS0024", "Golay720"],
+            "corridor_edge_counts": {
+                corridor: count
+                for corridor, count in sorted(corridor_edge_counts.items())
+            },
             "bridge_rank_histogram": {
                 str(rank): count for rank, count in sorted(bridge_rank_histogram.items())
             },
@@ -420,14 +561,13 @@ def main():
         "proof_boundary": {
             "proved": (
                 "The abstract bridge-core theorem is elementary lattice theory. "
-                "For all selected H3, NS0024, and Golay-720 edges, exact marked NS "
+                "For all selected H3, Q80, NS0024, and Golay-720 edges, exact marked NS "
                 "transports certify K, C_old, C_new, both finite glue groups, "
                 "explicit isotropic generators, and complete norm-two transfer."
             ),
             "not_proved": (
-                "No completeness theorem for possible U-pivots is asserted. "
-                "The Q80 corridor is not included until its older TSV route "
-                "format is normalized to the same marking interface."
+                "No completeness theorem for possible U-pivots is asserted, "
+                "and no equation-level realization follows from this lattice replay."
             ),
         },
         "reproduce": (
@@ -445,7 +585,10 @@ def main():
         return
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(serialized)
-    print(output.relative_to(ROOT))
+    try:
+        print(output.relative_to(ROOT))
+    except ValueError:
+        print(output)
 
 
 if __name__ == "__main__":

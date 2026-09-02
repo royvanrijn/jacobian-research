@@ -1,0 +1,434 @@
+{
+  "aggregate": {
+    "common_glue_signature_count": 11,
+    "direction_count": 11,
+    "distinct_deck_character_squareclasses": 11,
+    "shared_trace_classes": 1
+  },
+  "common_rank_two_carrier": {
+    "determinant_ratio": 4,
+    "eigenbasis": [
+      "tau (invariant)",
+      "T_i=R_i-sigma(R_i) (anti-invariant)"
+    ],
+    "glue_subgroup": {
+      "ambient_discriminant_group": "Z/16 direct_sum Z/16",
+      "generator_in_smith_coordinates": [
+        8,
+        8
+      ],
+      "identity": "2R_i=tau+T_i",
+      "order": 2,
+      "quadratic_value_in_Q_mod_2Z": "0"
+    },
+    "index_of_pure_eigensum": 2,
+    "involution_in_branch_basis": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "pure_eigensum_determinant": 256,
+    "pure_eigensum_gram": [
+      [
+        "16",
+        "0"
+      ],
+      [
+        "0",
+        "16"
+      ]
+    ],
+    "saturated_carrier_determinant": 64,
+    "saturated_carrier_gram_in_basis_Ri_sigmaRi": [
+      [
+        "8",
+        "0"
+      ],
+      [
+        "0",
+        "8"
+      ]
+    ],
+    "saturated_carrier_gram_in_basis_tau_Ri": [
+      [
+        "16",
+        "8"
+      ],
+      [
+        "8",
+        "8"
+      ]
+    ],
+    "saturated_carrier_isometry_class": "<8> direct_sum <8>"
+  },
+  "common_trace": {
+    "height_after_degree_two_pullback": 16,
+    "height_on_R17": 8,
+    "pinned_R17_coordinates": [
+      -2,
+      0,
+      2,
+      -2,
+      -1,
+      0,
+      0,
+      1,
+      -1,
+      0,
+      -1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      2
+    ],
+    "published_basis_expression": "-P2-P5"
+  },
+  "directions": [
+    {
+      "deck_character_squareclass_primitive_polynomial_sha256": "4e7600e984dc67591c51435f04b008173552ae1bfd7763bb4b6cbafb647224c9",
+      "direction": "Q1",
+      "integral_character_glue_signature": {
+        "anti_invariant_generator": "T_Q1=R-sigma(R)",
+        "anti_invariant_height": 16,
+        "carrier_isometry_class": "<8> direct_sum <8>",
+        "coordinate_convention": "Smith coordinates induced by the eigenbasis (tau,T_i)",
+        "discriminant_group_graph_generator": [
+          8,
+          8
+        ],
+        "discriminant_group_moduli": [
+          16,
+          16
+        ],
+        "glue_order": 2,
+        "half_sum_identity": "2R=tau+T",
+        "invariant_height_after_pullback": 16,
+        "invariant_trace": "tau=-P2-P5"
+      },
+      "kummer_generator_coefficients": [
+        "-76469403285157718638516948677/895915105649281",
+        "-1",
+        "0"
+      ],
+      "pencil_parameter_lambda": "-320264452394709918473212591937812547598371/180778914572461925869414955068479254",
+      "source_public_point_index_one_based": 1
+    },
+    {
+      "deck_character_squareclass_primitive_polynomial_sha256": "7762b686a9f901bcc35d46c9f671faf42342f9e1cf52881fec90ed8595f9ef36",
+      "direction": "Q2",
+      "integral_character_glue_signature": {
+        "anti_invariant_generator": "T_Q2=R-sigma(R)",
+        "anti_invariant_height": 16,
+        "carrier_isometry_class": "<8> direct_sum <8>",
+        "coordinate_convention": "Smith coordinates induced by the eigenbasis (tau,T_i)",
+        "discriminant_group_graph_generator": [
+          8,
+          8
+        ],
+        "discriminant_group_moduli": [
+          16,
+          16
+        ],
+        "glue_order": 2,
+        "half_sum_identity": "2R=tau+T",
+        "invariant_height_after_pullback": 16,
+        "invariant_trace": "tau=-P2-P5"
+      },
+      "kummer_generator_coefficients": [
+        "84042355177249263247851163323/895915105649281",
+        "-1",
+        "0"
+      ],
+      "pencil_parameter_lambda": "3057441376483781033610315165428/299734416386886063157453",
+      "source_public_point_index_one_based": 2
+    },
+    {
+      "deck_character_squareclass_primitive_polynomial_sha256": "09452781296aaff6a9dfa2fe21d4350887a3d582c61bd7d03e8cc6a0d923395c",
+      "direction": "Q3",
+      "integral_character_glue_signature": {
+        "anti_invariant_generator": "T_Q3=R-sigma(R)",
+        "anti_invariant_height": 16,
+        "carrier_isometry_class": "<8> direct_sum <8>",
+        "coordinate_convention": "Smith coordinates induced by the eigenbasis (tau,T_i)",
+        "discriminant_group_graph_generator": [
+          8,
+          8
+        ],
+        "discriminant_group_moduli": [
+          16,
+          16
+        ],
+        "glue_order": 2,
+        "half_sum_identity": "2R=tau+T",
+        "invariant_height_after_pullback": 16,
+        "invariant_trace": "tau=-P2-P5"
+      },
+      "kummer_generator_coefficients": [
+        "-60182497946245286299645391877/895915105649281",
+        "-1",
+        "0"
+      ],
+      "pencil_parameter_lambda": "-33355563800059920611598186272475323925234/26196722144001283945068021531563387",
+      "source_public_point_index_one_based": 3
+    },
+    {
+      "deck_character_squareclass_primitive_polynomial_sha256": "3e674bcbd936c36883ec365e53607470082f2418099547e8c972992cf592d414",
+      "direction": "Q4",
+      "integral_character_glue_signature": {
+        "anti_invariant_generator": "T_Q4=R-sigma(R)",
+        "anti_invariant_height": 16,
+        "carrier_isometry_class": "<8> direct_sum <8>",
+        "coordinate_convention": "Smith coordinates induced by the eigenbasis (tau,T_i)",
+        "discriminant_group_graph_generator": [
+          8,
+          8
+        ],
+        "discriminant_group_moduli": [
+          16,
+          16
+        ],
+        "glue_order": 2,
+        "half_sum_identity": "2R=tau+T",
+        "invariant_height_after_pullback": 16,
+        "invariant_trace": "tau=-P2-P5"
+      },
+      "kummer_generator_coefficients": [
+        "77008689365009639993747356923/895915105649281",
+        "-1",
+        "0"
+      ],
+      "pencil_parameter_lambda": "580522526095850992539552330134420904786/108818833669597295012642404321381",
+      "source_public_point_index_one_based": 4
+    },
+    {
+      "deck_character_squareclass_primitive_polynomial_sha256": "78e9093aebf9c072a5a1821d68bdf611759fc55bbf67470612edd4f13c197857",
+      "direction": "Q5",
+      "integral_character_glue_signature": {
+        "anti_invariant_generator": "T_Q5=R-sigma(R)",
+        "anti_invariant_height": 16,
+        "carrier_isometry_class": "<8> direct_sum <8>",
+        "coordinate_convention": "Smith coordinates induced by the eigenbasis (tau,T_i)",
+        "discriminant_group_graph_generator": [
+          8,
+          8
+        ],
+        "discriminant_group_moduli": [
+          16,
+          16
+        ],
+        "glue_order": 2,
+        "half_sum_identity": "2R=tau+T",
+        "invariant_height_after_pullback": 16,
+        "invariant_trace": "tau=-P2-P5"
+      },
+      "kummer_generator_coefficients": [
+        "99926145606404579389396507323/895915105649281",
+        "-1",
+        "0"
+      ],
+      "pencil_parameter_lambda": "-677412654955890248909216028973947836133/49738623769879533734439717152459",
+      "source_public_point_index_one_based": 7
+    },
+    {
+      "deck_character_squareclass_primitive_polynomial_sha256": "3184b816c6730fe54bd752d2b464a909f802a86460d0fa2c728676a98897942b",
+      "direction": "Q6",
+      "integral_character_glue_signature": {
+        "anti_invariant_generator": "T_Q6=R-sigma(R)",
+        "anti_invariant_height": 16,
+        "carrier_isometry_class": "<8> direct_sum <8>",
+        "coordinate_convention": "Smith coordinates induced by the eigenbasis (tau,T_i)",
+        "discriminant_group_graph_generator": [
+          8,
+          8
+        ],
+        "discriminant_group_moduli": [
+          16,
+          16
+        ],
+        "glue_order": 2,
+        "half_sum_identity": "2R=tau+T",
+        "invariant_height_after_pullback": 16,
+        "invariant_trace": "tau=-P2-P5"
+      },
+      "kummer_generator_coefficients": [
+        "53797886255778802471506017403/895915105649281",
+        "-1",
+        "0"
+      ],
+      "pencil_parameter_lambda": "808658006593198642437988854185730233580461450979/333721111151718352257961069613825139520558",
+      "source_public_point_index_one_based": 8
+    },
+    {
+      "deck_character_squareclass_primitive_polynomial_sha256": "1f493d638f058ed8ec2a38530887701783c3cf3532c78c5ca32c970a72ea4963",
+      "direction": "Q7",
+      "integral_character_glue_signature": {
+        "anti_invariant_generator": "T_Q7=R-sigma(R)",
+        "anti_invariant_height": 16,
+        "carrier_isometry_class": "<8> direct_sum <8>",
+        "coordinate_convention": "Smith coordinates induced by the eigenbasis (tau,T_i)",
+        "discriminant_group_graph_generator": [
+          8,
+          8
+        ],
+        "discriminant_group_moduli": [
+          16,
+          16
+        ],
+        "glue_order": 2,
+        "half_sum_identity": "2R=tau+T",
+        "invariant_height_after_pullback": 16,
+        "invariant_trace": "tau=-P2-P5"
+      },
+      "kummer_generator_coefficients": [
+        "67263776230351944906326349243/895915105649281",
+        "-1",
+        "0"
+      ],
+      "pencil_parameter_lambda": "85978637433195955435614775516394871/24539315353301744419574628176",
+      "source_public_point_index_one_based": 9
+    },
+    {
+      "deck_character_squareclass_primitive_polynomial_sha256": "d5e30641e5f1269c32b52a734fc5b48a56429a68300edb269f10e947d1ed9caf",
+      "direction": "Q8",
+      "integral_character_glue_signature": {
+        "anti_invariant_generator": "T_Q8=R-sigma(R)",
+        "anti_invariant_height": 16,
+        "carrier_isometry_class": "<8> direct_sum <8>",
+        "coordinate_convention": "Smith coordinates induced by the eigenbasis (tau,T_i)",
+        "discriminant_group_graph_generator": [
+          8,
+          8
+        ],
+        "discriminant_group_moduli": [
+          16,
+          16
+        ],
+        "glue_order": 2,
+        "half_sum_identity": "2R=tau+T",
+        "invariant_height_after_pullback": 16,
+        "invariant_trace": "tau=-P2-P5"
+      },
+      "kummer_generator_coefficients": [
+        "84540979473048906107458785723/895915105649281",
+        "-1",
+        "0"
+      ],
+      "pencil_parameter_lambda": "19455232139578220354890733028353498286/1758178339753965735995437682533",
+      "source_public_point_index_one_based": 11
+    },
+    {
+      "deck_character_squareclass_primitive_polynomial_sha256": "698ef8e719bfe92e221b4b076a2907aa567ce23b85a651a86d730f50ced38a11",
+      "direction": "Q9",
+      "integral_character_glue_signature": {
+        "anti_invariant_generator": "T_Q9=R-sigma(R)",
+        "anti_invariant_height": 16,
+        "carrier_isometry_class": "<8> direct_sum <8>",
+        "coordinate_convention": "Smith coordinates induced by the eigenbasis (tau,T_i)",
+        "discriminant_group_graph_generator": [
+          8,
+          8
+        ],
+        "discriminant_group_moduli": [
+          16,
+          16
+        ],
+        "glue_order": 2,
+        "half_sum_identity": "2R=tau+T",
+        "invariant_height_after_pullback": 16,
+        "invariant_trace": "tau=-P2-P5"
+      },
+      "kummer_generator_coefficients": [
+        "61548867656400762840024308043/895915105649281",
+        "-1",
+        "0"
+      ],
+      "pencil_parameter_lambda": "26396251662349299898896381499645275321/8941165420513554228117610911226",
+      "source_public_point_index_one_based": 15
+    },
+    {
+      "deck_character_squareclass_primitive_polynomial_sha256": "1d710e94084d56134f8ea2b993cbe72df995f01993b37c7a299f3e6fc42ade85",
+      "direction": "Q10",
+      "integral_character_glue_signature": {
+        "anti_invariant_generator": "T_Q10=R-sigma(R)",
+        "anti_invariant_height": 16,
+        "carrier_isometry_class": "<8> direct_sum <8>",
+        "coordinate_convention": "Smith coordinates induced by the eigenbasis (tau,T_i)",
+        "discriminant_group_graph_generator": [
+          8,
+          8
+        ],
+        "discriminant_group_moduli": [
+          16,
+          16
+        ],
+        "glue_order": 2,
+        "half_sum_identity": "2R=tau+T",
+        "invariant_height_after_pullback": 16,
+        "invariant_trace": "tau=-P2-P5"
+      },
+      "kummer_generator_coefficients": [
+        "722829098807886763036019841723/895915105649281",
+        "-1",
+        "0"
+      ],
+      "pencil_parameter_lambda": "-17186676146310403779873375442692831513/639439648947147438351732575383",
+      "source_public_point_index_one_based": 19
+    },
+    {
+      "deck_character_squareclass_primitive_polynomial_sha256": "70e537f5fa9c59605745b242b70ea2d13703f1affe60f2f0aead707f9c3eabd9",
+      "direction": "Q11",
+      "integral_character_glue_signature": {
+        "anti_invariant_generator": "T_Q11=R-sigma(R)",
+        "anti_invariant_height": 16,
+        "carrier_isometry_class": "<8> direct_sum <8>",
+        "coordinate_convention": "Smith coordinates induced by the eigenbasis (tau,T_i)",
+        "discriminant_group_graph_generator": [
+          8,
+          8
+        ],
+        "discriminant_group_moduli": [
+          16,
+          16
+        ],
+        "glue_order": 2,
+        "half_sum_identity": "2R=tau+T",
+        "invariant_height_after_pullback": 16,
+        "invariant_trace": "tau=-P2-P5"
+      },
+      "kummer_generator_coefficients": [
+        "107126980234127865538095288123/895915105649281",
+        "-1",
+        "0"
+      ],
+      "pencil_parameter_lambda": "-638706993687308259244193603341907142/39267337187199606029163470081",
+      "source_public_point_index_one_based": 22
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json": "0169f4b764268c63e7919496be8570e1a794ab5ddcc4856aeee69a3f5e5e5deb",
+    "elkies-k3/data/lattice/rank17_gram.txt": "ea1330ce903c55624de1705ebedf36f6f5964cdd6ce911927001db82626ff237",
+    "elkies-k3/scripts/certify_rank28_integral_character_glue.py": "67dbcc75ed70921544f68200cd82af772b0b53accad12554b586ade84268f12b"
+  },
+  "mechanism_assessment": {
+    "essential_distinction": "The eleven quartics define eleven distinct deck characters. This is one repeated local integral pattern, not one double cover carrying eleven anti-invariant directions, and not an intrinsic invariant of an isolated fibre point.",
+    "positive": "All eleven exact lifts fitted from the chosen trace pencil have the same rank-two index-two character-glue pattern, invariant trace, and abstract carrier lattice.",
+    "reglue_boundary": "This is character saturation by adjoining a half-sum, not a root-annihilating bridge reglue: it enlarges the pure eigensum and cannot remove a vector already present there.",
+    "search_consequence": "A mechanism-first search should enumerate rational members of a fixed low-complexity trace pencil and seek simultaneous rational fibres of their distinct genus-one deck characters, rather than add another Nagao feature."
+  },
+  "parameter": "-9529/5471",
+  "proof_boundary": {
+    "inherited": "Equation identities, smooth irreducible covers, literal target specialization, and anti-invariant height 16 are inherited from the input theorem certificate.",
+    "not_proved": "No one cover supplies more than one certified exceptional character, no new specialization is found, and no rank-32 lower or upper bound is claimed.",
+    "proved": "The rank-two Gram, index-two graph glue, common trace, and pairwise distinct deck squareclasses follow exactly from the pinned R17 Gram and the exact genus-one-bisection certificate, relative to its chosen trace pencil."
+  },
+  "reproducing_command": "python3 elkies-k3/scripts/certify_rank28_integral_character_glue.py",
+  "schema": "elkies-k3.r17-rank28-integral-character-glue.v1",
+  "status": "PASS_EXACT_COMMON_RANK_TWO_CHARACTER_GLUE_FOR_ALL_ELEVEN"
+}

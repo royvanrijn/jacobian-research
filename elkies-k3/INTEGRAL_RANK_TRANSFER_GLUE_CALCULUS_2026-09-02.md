@@ -1,5 +1,11 @@
 # Integral rank transfer: an equation-free glue calculus (2026-09-02)
 
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 2d15a35bdecc0493 -->
+<!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
+<!-- status-consumer: EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL bd12c183aa886b15 -->
+<!-- status-consumer: EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE 52de13c8443f2b7d -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK e79b6132483233bf -->
+
 ## Outcome
 
 The proposed experiment has a sharp first answer.
@@ -28,9 +34,9 @@ K=W intersect W'=(U+U')^perp(-1)
 
 contains precisely the roots that survive the click.  Each frame is a finite
 graph-glue extension of `K+C_i`, where `C_i=K^perp` inside that frame.  On all
-13 NS0024 edges and all six Golay-720 edges, `K` has rank 15, both `C_i` have
-rank two, and the two glue groups are cyclic of the same order and project
-onto the full bridge discriminant.  Thus all 19 checked clicks are exact
+42 selected H3, Q80, NS0024, and Golay-720 edges, `K` has rank 15, both `C_i`
+have rank two, and the two glue groups are cyclic of the same order and
+project onto the full bridge discriminant.  Thus all 42 selected clicks are exact
 rank-two cyclic bridge replacements.  The certificate is
 [`elkies-k3-integral-rank-transfer-bridge-reglue-v1.json`](../artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json).
 
@@ -50,13 +56,20 @@ L- = <T1,T2>,            det(L-) = 52,
 
 The pure character sum has determinant `208/3`; adjoining the two half-sums
 has index four and gives determinant `13/3`.  Thus the exact saturation
-quotient is `(Z/2)^2`.
+quotient is `(Z/2)^2`.  Exhausting all six graph isomorphisms between the two
+`F_2^2` eigensubgroups shows that they form one integral isometry class after
+the factor-12 scaling.  The E6 `2+1` case has exactly two graph-glue types:
+the actual index-one sum and one alternative index-two class, the latter with
+smaller minimum.  See
+[`elkies-k3-integral-character-glue-calculus-v1.json`](../artifacts/generated-results/elkies-k3-integral-character-glue-calculus-v1.json).
 
 The requested equation-free tuples and all 42 selected same-`NS` corridor
 edges are stored in
 [`elkies-k3-integral-rank-transfer-glue-census-v1.json`](../artifacts/generated-results/elkies-k3-integral-rank-transfer-glue-census-v1.json).
-This note is a theory-extraction experiment.  It does not change
-`MATH_STATUS.json` and does not assert the conjectural neighbor calculus below.
+The local bridge and character statements, and the mass-complete decorated
+neighbour algorithm, are now theorems recorded in
+[`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md).
+They do not assert uniform small-move connectivity or an equation-level lift.
 
 ## The tuple convention
 
@@ -173,10 +186,10 @@ also appear in explicit base-change constructions; see
 | NS0024 | `L=NS0024`, rank 19, determinant 950; `A_NS=Z/950`, normalized `q_NS=diag(1/2,2/25,4/19)` | trivial, hence `L_triv=NS` | thirteen primitive-`U` changes; source also arises by cyclic order-950 graph glue in `N(A15+D9)` | exact lattice route, equation and rational descent open |
 | Golay-720 | `L=NS`, rank 19, determinant 720; `A_NS=(2,6,60)` with exact form in the census | trivial, hence `L_triv=NS` | order-720 maximal graph glue in `N(24A1)`; an exact three-generator graph among 96 anti-isometries gives the rootful `N(4A5+D4)` companion; six later changes of `U` | binary-octad construction and route exact; rational source equation open |
 | E6 `2+1` | `L=12(MW_+ direct_sum MW_-)`, rank 3, determinant 1536; exact `A_L,q_L` in the census | `C2`; scaled blocks have ranks `2+1`; unscaled determinants `4/3`, `2/3` | character glue zero, index one | ambient `NS` has determinant 24 and roots `2E6+A2`; same-NS rootless MW17 is impossible by the determinant bound |
-| E6 `2+2` | `L=12(MW_+ direct_sum MW_-)`, rank 4, determinant 1,437,696; exact `A_L,q_L` in the census | `C2`; scaled blocks have ranks `2+2`; unscaled determinants `4/3`, `52` | two half-sums give `(Z/2)^2`, index four; this is literal even glue only in the scaled model | ambient `NS` has determinant 78 and roots `2E6+A1`; ordered incidence has `2+2`, rational quotient `1+1` |
+| E6 `2+2` | `L=12(MW_+ direct_sum MW_-)`, rank 4, determinant 1,437,696; exact `A_L,q_L` in the census | `C2`; scaled blocks have ranks `2+2`; unscaled determinants `4/3`, `52` | two half-sums give `(Z/2)^2`, index four; this is literal even glue only in the scaled model | ambient `NS` has determinant 78 and roots `2E6+A1`; ordered incidence has `2+2`, rational quotient `1+1`; a complete Niemeier residual-rank obstruction proves its entire frame genus rootful |
 | R17 genus-one bisection cover | `L=R17(2)+<16>`, the orthogonal character sublattice, rank 18 | `C2`; invariant rank 17 and one certified anti-invariant height-16 line | `2R=tau+T` gives a certified `Z/2` half-sum extension of index two; only further saturation is unknown | rank at least 18, not an exact total-rank or full-MW claim |
 | paired rational R17 norm-ten bisections | `L=R17(4)+<24>+<24>`, the orthogonal character sublattice, rank 19 | `V4`; two distinct nontrivial characters give the height-24 lines | the two independent half-sums give `(Z/2)^2`, index four; further saturation and the product character are unknown | all 765,167,640 pairs are geometrically genus-one `V4` covers; rational points are separate |
-| norm-12 / norm-8 simultaneous split | specialized section lattice at `t=1/25`, certified rank at least 18; Gram and finite form not determined | no integral deck-action lattice extracted | norm-12 class `0x103b2` escapes specialized generic MW17; no glue mutation yet identified | exact specialization quotient direction, not a generic rank-transfer theorem |
+| norm-12 / norm-8 simultaneous split | on the norm-12 cover, `L=R17(2)+<16>`, rank 18, determinant 1,988,100,096; exact `A_L,q_L` in the census | `C2`; invariant `R17(2)` and primitive anti-invariant `<16>` | `2R=tau+T` gives the full `Z/2` graph saturation in the displayed rational span; the saturated visible lattice has determinant 497,025,024, minimum 8, and no roots | at `t=1/25`, `0x103b2` gives an independent direction and rank at least 18; total cover anti-rank and specialization rank upper bound remain open |
 
 The H3 entry is deliberately not written as three arrows.  `J2` means an
 integral frame-isometry class.  The historical H3 corridor, the Niemeier J2
@@ -216,7 +229,7 @@ with a determinant-one integral marking transport and
 rank(R')-rank(R) = -(rank(MW')-rank(MW)).
 ```
 
-For the 19 normalized marked edges, the finer operation is
+For all 42 normalized marked edges, the finer operation is
 
 ```text
 W  = overlattice(K+C_old, H_old)
@@ -227,7 +240,8 @@ where `rank(K)=15`, both bridges have rank two, and `H_old,H_new` are cyclic
 maximal bridge graphs of equal order.  The observed orders are
 
 ```text
-23, 31, 47, 63, 119, 143, 191, 215, 303, 359, 1231.
+15, 23, 31, 47, 63, 95, 119, 127, 143, 159,
+191, 215, 303, 359, 799, 991, 1231, 1535, 2447, 3231.
 ```
 
 This proves that the geometric route labels `q=4,6` are not the finite glue
@@ -354,12 +368,12 @@ An edge is root-annihilating only when old roots lie in removed cosets or leave
 the new frame, and no new coset has norm two.  Minimum at least four is the
 terminal rootless gate for the positive rank-17 frame.
 
-### Completed bridge computation and remaining normalization
+### Completed bridge computation
 
-The bridge-core computation is complete for NS0024 and Golay-720.  For each of
-their 19 edges the verifier computes the common rank-15 lattice, both rank-two
-bridges, Smith-coordinate glue generators, and the complete root-transfer
-partition.  It verifies
+The bridge-core computation is complete for H3, Q80, NS0024, and Golay-720.
+For each of their 42 selected edges the verifier computes the common rank-15
+lattice, both rank-two bridges, Smith-coordinate glue generators, and the
+complete root-transfer partition.  It verifies
 
 ```text
 Phi(W_old) intersect Phi(W_new) = Phi(K)
@@ -368,22 +382,90 @@ Phi(W_old) intersect Phi(W_new) = Phi(K)
 and applies the finite gate: the new frame is rootless exactly when neither
 the core nor any selected new glue coset contains a norm-two vector.
 
-The remaining exact normalization is to put the 13 H3 and ten Q80 edges into
-the same marked-transport interface.  For each remaining pair:
+The reusable per-edge algorithm is:
 
-1. choose abstract integral representatives of consecutive frames in their
-   common genus and record a rational isometry embedding both into one common
-   rational quadratic space;
+1. embed consecutive frames through their exact markings in the common `NS`;
 2. compute `K=W_old intersect W_new` directly in the common `NS` marking;
 3. compute both bridge lattices and graph subgroups;
 4. label every norm-two vector by surviving, removed, or newly introduced
    glue coset;
-5. deduplicate successful labels under the relevant automorphism groups.
+5. deduplicate successful labels under the relevant automorphism groups when
+   enumerating new mutations.
 
 No separate rational isometry or Kneser chain is required for the local
 theorem: the common `NS` marking supplies the canonical carrier `K`.  A later
 good-prime Kneser decomposition remains useful for connectivity, but is not
 the definition of the observed click.
+
+### First predictive test: the split bound is not selective
+
+The normalization makes one exact pre-classification screen available.  For a
+proposed new `U'`, both the roots of the common core `K` and the roots of the
+rank-two bridge `C_new` survive in the child, because
+
+```text
+K + C_new subset W_new.
+```
+
+Thus their orthogonal sum gives a mandatory lower bound on both child root
+rank and signed root count.  Rejecting a candidate when this lower bound
+exceeds a predeclared target budget has no false negatives for that budget and
+does not enumerate roots of the glued rank-17 child.
+
+The retrospective benchmark
+[`elkies-k3-integral-rank-transfer-bridge-predictor-benchmark-v1.json`](../artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-predictor-benchmark-v1.json)
+replays five exact H3 first-hit histories.  Four use complete MW-quotient
+shells; the terminal q6 case uses its pinned capped stream window.  The result
+is negative:
+
+```text
+raw child classifications through the five first hits:  2,892
+pass the core-only bound:                              2,892
+pass the K + C_new bound:                             2,714
+classifications rejected:                               178  (6.15%)
+projected classification speedup:                    1.066x
+```
+
+The per-edge retained counts are `52/52`, `111/114`, `496/498`, `808/981`,
+and `1247/1247`; in particular the rootless terminal stream receives no
+benefit.  This is not substantially better than raw q-neighbor enumeration,
+so the evidence does **not** support a new construction algorithm.
+
+### Exploratory terminal reglue test: bridge minimum is enriched
+
+The same benchmark also asks the narrower question suggested by the completed
+normalization.  For each observed rootless terminal core, it fixes that core
+and its observed prime bridge determinant, then exhausts every
+Minkowski-reduced positive even binary bridge class and every compatible
+oriented cyclic graph label in the target discriminant genus.  Full root
+enumeration labels the outcome but is not part of the tested predictor.
+
+```text
+admissible binary bridge classes:                    14
+rootless classes without screening:                   5  (35.7%)
+classes of maximum bridge minimum:                     5
+rootless classes retained:                             4  (80.0%)
+rootless recall:                                       4/5
+precision enrichment:                               2.24x
+projected full-classification speedup:               2.80x
+```
+
+The rule selects the unique rootless class in H3, Q80, and Golay-720.  For
+NS0024 the maximum minimum is shared by two classes, one rootless and one
+rootful, and a second rootless class of smaller minimum is missed.  Thus the
+rank-two bridge data do predict successful reglues substantially better than
+unfiltered enumeration **inside these four fixed successful cores**.
+
+This is exploratory enrichment, not yet a new construction algorithm.  The
+cores and determinants were selected from the observed successful edges, so
+the test does not measure whether bridge data can choose a promising core
+from a raw q-neighbor shell.  The broader H3 test also shows why that gap
+matters: most spoiling roots occur in nonzero graph-glue cosets.  The next
+test must therefore declare a core-generation rule and a cheap coset-minimum
+score before examining an untouched shell, then compare both success rate and
+runtime with direct child-root enumeration.  The retained Q80 score tables
+contain only already rank-growing children and do not supply an unbiased
+negative corpus for that prospective test.
 
 ## Recent evidence and failure map
 
@@ -400,9 +482,12 @@ The last three commits explain why the character/glue layer is now visible.
   height-16 anti-invariant directions but not full saturation.
 - The subsequent high-throughput genus-one search found one simultaneous
   split at `t=1/25`: the norm-twelve class `0x103b2` contributes an exact
-  quotient direction beyond specialized generic MW17.  Its integral Gram and
-  glue mutation have not yet been extracted, so the census records the
-  success with explicit unknown tuple fields rather than guessing them.
+  quotient direction beyond specialized generic MW17.  Its cover-level
+  character tuple is now exact: `R17(2)+<16>` acquires one order-two graph
+  class and becomes a rootless visible rank-18 lattice.  Isolating the large
+  eclib prime checks makes the full specialization saturation fit in memory;
+  the displayed rank-18 subgroup is primitive, though no rank upper bound is
+  known.
 
 Other preserved failures constrain the theory:
 
@@ -418,25 +503,51 @@ Other preserved failures constrain the theory:
 
 ## Reproduction
 
-Generate the deterministic equation-free census:
-
-```bash
-sage -python \
-  elkies-k3/scripts/build_integral_rank_transfer_glue_census.sage
-```
-
-Verify the pinned artifact byte for byte:
-
-```bash
-sage -python \
-  elkies-k3/scripts/build_integral_rank_transfer_glue_census.sage --check
-```
-
 Replay the bridge-core theorem on all normalized marked edges:
 
 ```bash
 sage -python \
   elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage --check
+```
+
+Replay the retrospective bridge-split predictor benchmark:
+
+```bash
+sage -python \
+  elkies-k3/scripts/benchmark_integral_rank_transfer_bridge_predictor.sage --check
+```
+
+Byte-check the norm-12 `0x103b2` character tuple while reusing its pinned full
+specialization-saturation record:
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_103b2_mw_glue.sage \
+  --skip-specialization-saturation --check
+```
+
+Replay the exhaustive involution-graph classification:
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_integral_character_glue_calculus.sage --check
+```
+
+Replay the genus-wide determinant-78 E6 obstruction:
+
+```bash
+sage -python \
+  elkies-k3/scripts/classify_e6_rank4_det78_niemeier_frames.sage \
+  --rootless-obstruction --check
+```
+
+Then generate and byte-check the deterministic equation-free census:
+
+```bash
+sage -python \
+  elkies-k3/scripts/build_integral_rank_transfer_glue_census.sage
+sage -python \
+  elkies-k3/scripts/build_integral_rank_transfer_glue_census.sage --check
 ```
 
 The builder recomputes Smith invariants and normalized finite quadratic forms
@@ -456,7 +567,11 @@ symmetry **selecting a rootless coinvariant sublattice**; see
 [Nikulin](https://arxiv.org/abs/1109.2879) and
 [Garbagnati--Sarti](https://arxiv.org/abs/math/0603742).
 
-What is new and still open here is not the finite-form formalism.  It is a
-local, computable criterion which predicts from a reglue label that roots will
-be annihilated, together with a theorem that the relevant marked elliptic K3
-frames are connected by a controlled set of such moves.
+The equation-free `O(NS)`/J2 calculus is complete in the following precise
+sense: a mass-closing neighbour enumeration terminates with the whole frame
+genus, and the decorated glue-coset root profile decides every edge exactly.
+The bare tuple `(A,q,H)` is not enough--the Leech and rooted Niemeier lattices
+already disprove that--so coset minima or root counts are essential data.
+What remains open is a uniform small-prime or short-path bound, J1
+classification modulo surface automorphisms, and a general lift of a lattice
+path to explicit elliptic equations over a prescribed ground field.

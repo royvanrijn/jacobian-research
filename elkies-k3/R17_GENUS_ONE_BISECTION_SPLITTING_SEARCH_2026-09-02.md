@@ -1,6 +1,7 @@
 # High-throughput R17 genus-one-bisection splitting search (2026-09-02)
 
 <!-- status-consumer: EC-K3-R17-GENUS1-HIGH-THROUGHPUT-SPLITTING cad3d98ce58c89e7 -->
+<!-- status-consumer: EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE 52de13c8443f2b7d -->
 
 ## Result
 
@@ -46,6 +47,98 @@ product of `E(F_p)/2E(F_p)` quotients and independently in a product of
 specialized generic MW17 subgroup.  This proves one quotient direction at
 this fibre, hence a rank-at-least-18 specialization; it does not give a new
 record rank.
+
+The equation-free follow-up extracts the complete integral character tuple
+inside the displayed cover-level rank-18 rational span.  It is the order-two
+graph saturation of `R17(2)+<16>`, with determinant `497025024`, minimum
+eight, and no roots.  Running each possible eclib saturation prime in an
+isolated process proves that the displayed 18-point subgroup is primitive.
+No specialization rank upper bound is claimed.
+
+## Integral dissection of `0x103b2`
+
+The census field that was previously unknown is now the exact tuple
+
+```text
+(L,A_L,q_L,G,{L_chi},{H_chi})
+```
+
+for the displayed cover-level rational span.  Here
+
+```text
+G=C2,
+L=L_+ orthogonal-sum L_-=R17(2) orthogonal-sum <16>,
+rank(L)=18,  det(L)=1988100096,
+A_L=(Z/2)^16 + Z/8 + Z/3792,
+H_chi=<(tau/2,T/2)> congruent to Z/2,
+2R=tau+T.
+```
+
+The two projections of the glue generator have quadratic values `6` and `4`
+in `QQ/2ZZ`, so their sum is isotropic.  Adjoining it has index two and gives
+the full integral saturation inside the declared 18-dimensional rational
+span.  The saturated visible lattice has determinant `497025024`, Smith group
+`(Z/2)^14 + Z/8 + Z/3792`, minimum eight, no roots, and signed shell counts
+
+```text
+norm 8: 2622,   norm 10: 3058,   norm 12: 58254.
+```
+
+Those three counts form a unique fingerprint among the 143 selected covers
+(126 fingerprints occur).  This is an integral distinction, not the cause of
+the specialization: all 143 have the same basic `C2` character dimensions and
+half-sum architecture.  At `t=1/25`, 141 other covers do not split.  The only
+other split is norm-eight `0x0f6b1`, whose point is the specialized generic
+section `P16`, so all 142 other covers fail to add a quotient direction.  The
+third cover surviving all twelve local sieve primes, norm-eight `0x0c601`, is
+an exact global nonsquare.
+
+The trace representative of `0x103b2` has norm 12 and pinned coordinates
+
+```text
+(0,-1,1,1,-1,1,-1,0,1,1,0,1,1,-1,-1,0,-1).
+```
+
+Its branch and trace-pole quartics are irreducible with Galois group `S4`.
+The four simple branch points avoid both the trace poles and the original
+`24I1` discriminant.  Consequently the pulled surface has `48I1`, no
+reducible-fibre component groups, and zero local component corrections.  The
+exact intersections give `tau^2=24`, `T^2=16`, `R^2=10`, and `R.O=1`.
+
+All eleven rank-28 exceptional directions instead share the single norm-eight
+trace `0x1c6bc=-P2-P5`; the mask difference is `0xc50e`, of Hamming weight
+seven.  They have the same `R17(2)+<16>` character lattice, the same order-two
+graph architecture, and the same saturated determinant and discriminant
+form, but not the same integral visible lattice.  Exact integral isometry
+testing rejects an isometry, and their shell counts are
+`(2638,2910,58886)`.  Their branch quartics likewise avoid the trace poles and
+the original surface discriminant, so the local component correction is zero
+on both sides; the target differs by having a rigid norm-twelve member and a
+quartic `S4` trace-pole field rather than a fitted norm-eight pencil with a
+quadratic trace denominator.  Their trace has square 16 after pullback, so
+their lifts have height eight and `R.O=0`; the norm-twelve trace raises the
+target lift to height ten.
+
+At the specialization, the new point has numerical canonical height
+`36.7815147269...` and orthogonal quotient defect `4.52376134659...`; its
+shortest integral coset representative requires the nonzero generic correction
+
+```text
+(1,1,-2,2,1,-2,1,0,-2,-1,2,1,2,-2,2,-1,1)
+```
+
+and has height `22.1020672139...`.  By comparison, each rank-28 exceptional
+point is already its own shortest coset representative, with raw height
+`47.265917...` to `48.717476...` and quotient defect `16.530291...` to
+`27.069127...`.  Thus `0x103b2` sits much closer to the specialized generic
+real span, but in a genuinely shifted integral coset.  Exact eclib saturation
+at `2,3,5,7,79813,239999` gives index one, proving the displayed specialized
+rank-18 subgroup primitive.  This still supplies no rank upper bound and does
+not exclude further anti-invariant directions on the cover.
+
+The complete Gram matrices, finite quadratic forms, local polynomials, square
+identity, and bridge-height data are stored in
+[`elkies-k3-r17-norm12-103b2-mw-glue-v1.json`](../artifacts/generated-results/elkies-k3-r17-norm12-103b2-mw-glue-v1.json).
 
 ## Trace geometry
 

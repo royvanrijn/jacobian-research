@@ -36838,6 +36838,40 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-R17-RANK28-INTEGRAL-CHARACTER-GLUE",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Common rank-two integral character glue for the eleven fitted rank-28 lifts",
+      "scope": "Relative to the chosen norm-eight trace pencil with tau=-P2-P5, each of the eleven exact genus-one-cover lifts through the public rank-28 specialization has invariant trace tau of pulled-back height 16 and an anti-invariant difference T_i of height 16, with tau.T_i=0 and 2R_i=tau+T_i. Thus the pure carrier <16>_+ direct sum <16>_- is extended by the diagonal order-two isotropic graph class represented by (8,8) in the Smith coordinates induced by (tau,T_i), giving an index-two saturated carrier isometric to <8> direct sum <8>. Primitive normalization proves that the eleven irreducible squarefree quartics define eleven distinct deck-character squareclasses. This is one repeated character-saturation pattern for eleven fitted lifts, not an intrinsic invariant of an isolated fibre point, one cover carrying eleven anti-invariant directions, a root-annihilating bridge reglue, a new specialization, or a rank-32 result.",
+      "canonical_source": "elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-R17-RANK28-GENUS1-BISECTION-PILOT"
+      ],
+      "checker": "elkies-k3/scripts/certify_rank28_integral_character_glue.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:67dbcc75ed70921544f68200cd82af772b0b53accad12554b586ade84268f12b",
+      "software_lock": [
+        "elkies-k3/scripts/certify_rank28_integral_character_glue.py",
+        "elkies-k3/data/lattice/rank17_gram.txt",
+        "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-rank28-integral-character-glue-v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD",
       "kind": "theorem",
       "state": "proved",
@@ -36874,7 +36908,7 @@
       "kind": "reproduction",
       "state": "proved",
       "title": "Complete determinant-78 E6 rank-four rootless census through old degree four",
-      "scope": "For the full saturated determinant-78 NS lattice of the E6 rank-four incidence family, every zero-neutral primitive isotropic class D=q*e+q*f-w with q=2,3,4 and w^2=2q^2 is enumerated modulo the full Weyl group of the old 2E6+A1 fibre roots. Exact Dynkin-label and rank-four closest-vector enumeration gives 280, 6242, and 73601 dominant classes; 277, 6239, and 73321 are primitive. Primitive U splitting and exact norm-two enumeration in every child frame finds no rootless child. This proves absence only in the complete declared degree-two, degree-three, and degree-four shells; degree at least five, multi-step routes, and global rootless nonexistence remain open.",
+      "scope": "For the full saturated determinant-78 NS lattice of the E6 rank-four incidence family, every zero-neutral primitive isotropic class D=q*e+q*f-w with q=2,3,4 and w^2=2q^2 is enumerated modulo the full Weyl group of the old 2E6+A1 fibre roots. Exact Dynkin-label and rank-four closest-vector enumeration gives 280, 6242, and 73601 dominant classes; 277, 6239, and 73321 are primitive. Primitive U splitting and exact norm-two enumeration in every child frame finds no rootless child. This entry certifies those bounded shells; the later EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL theorem closes degree at least five and multi-step routes globally at O(NS)/J2 level.",
       "canonical_source": "elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md",
       "dependencies": [
         "EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD"
@@ -36900,7 +36934,9 @@
         "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],
-      "replaced_by": [],
+      "replaced_by": [
+        "EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL"
+      ],
       "priority": "primary"
     },
     {
@@ -37000,6 +37036,183 @@
         "elkies-k3/README.md",
         "elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md",
         "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Mass-complete decorated glue calculus for elliptic K3 frame transfer",
+      "scope": "For two primitive hyperbolic planes in one even lattice, their positive frames share a primitive bridge core K; each frame is a finite graph-glue extension of K plus its orthogonal bridge, and their common roots are exactly the roots of K. For good odd-prime neighbours this becomes a split discriminant-plane line swap, with the exact root change determined by the glue-coset root profile rho_K. In Picard rank 19, Nikulin uniqueness identifies O(NS)-orbits of primitive U embeddings with rank-17 positive frame classes of the prescribed opposite discriminant form. An exact neighbour BFS whose reciprocal automorphism-order sum closes the genus mass is therefore a terminating decision and construction procedure for rootless MW17 frames at O(NS)/J2 level. The checker validates the local theorem on all 42 marked H3, Q80, NS0024, and Golay-720 corridor edges: every edge is a rank-two cyclic bridge replacement with explicit glue generators and complete removed, surviving, and introduced root sets. This does not give a uniform short-path bound, J1 classification, or equation lift.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [],
+      "checker": "elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:51cd30ab81bf871c5176f852235f02fbe1ac219b38cd98f604bfeaf7e39d0ded",
+      "software_lock": [
+        "elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json"
+      ],
+      "supersedes_notes": [
+        "bare discriminant-form data alone predicts root annihilation"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-INTEGRAL-CHARACTER-GLUE",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Integral involution eigensublattices and exhaustive E6 graph glue",
+      "scope": "For an involution of an even lattice, the primitive orthogonal plus and minus eigensublattices have an exponent-two saturation quotient which is exactly the graph of an anti-isometry between 2-elementary discriminant subgroups; conversely every such isotropic graph gives an involution-stable even overlattice. Exhaustive enumeration after the explicit factor-12 integral scaling gives two graph-glue types for E6 2+1, with all three nonzero order-two graphs isometric, and one integral isometry class for all six full F2^2 graph isomorphisms in E6 2+2. The result classifies the integral character glue, not geometric existence or arithmetic descent of sections.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD"
+      ],
+      "checker": "elkies-k3/scripts/certify_integral_character_glue_calculus.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a1f249645b58fcccab943a149cb6783b417c90aad7121f702dfa2ebd7dc0732d",
+      "software_lock": [
+        "elkies-k3/scripts/certify_integral_character_glue_calculus.sage",
+        "artifacts/generated-results/elkies-k3-integral-character-glue-calculus-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Global root obstruction for the determinant-78 E6 frame genus",
+      "scope": "Every positive rank-17 lattice in the genus of the saturated determinant-78 E6 2+2 frame contains a root. A primitive A3+A2+A1 anchor in the rank-seven Nishiyama auxiliary leaves the final generator an exact residual norm budget 13/4. Exhaustive residual-Weyl enumeration covers 1591 primitive anchors across all 23 rooted Niemeier lattices and finds residual root rank at least 14. Rootlessness would force positive Dynkin labels and hence residual projection norm at least 14/2=7, a contradiction. Therefore the associated Picard-rank-19 NS lattice has no rootless MW17 fibration at O(NS)/J2 level. This is not a full frame-isometry or elliptic-equation classification.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD"
+      ],
+      "checker": "elkies-k3/scripts/classify_e6_rank4_det78_niemeier_frames.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c5974ef2ab9a73c904699baf462d873cab590a704da16787bcb22e933dee55e4",
+      "software_lock": [
+        "elkies-k3/scripts/classify_e6_rank4_det78_niemeier_frames.sage",
+        "elkies-k3/data/lattice/e6_rank4_det78_frame.txt",
+        "artifacts/generated-results/elkies-k3-rooted-niemeier-catalog.json",
+        "artifacts/generated-results/elkies-k3-e6-rank4-det78-rootless-obstruction-v1.json"
+      ],
+      "supersedes_notes": [
+        "degree at least five and multi-step determinant-78 rootless routes remain open",
+        "passing the determinant-78 Hermite screen suggests a rootless frame exists"
+      ],
+      "supersedes": [
+        "EC-K3-E6-RANK4-ROOTLESS-Q2Q4-CENSUS"
+      ],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Integral character glue for the R17 norm-twelve 0x103b2 cover",
+      "scope": "For the genus-one double cover attached to R17 trace class 0x103b2, the displayed invariant and anti-invariant lattices are R17(2) and <16>. The relation 2R=tau+T gives the full order-two graph saturation inside their declared rank-18 rational span. The saturated visible lattice has determinant 497025024, exact finite quadratic form, minimum eight, and no roots. At t=1/25 the branch quartic is a rational square and the resulting point is independent of the specialized generic MW17 subgroup, proving rank at least 18. Isolated exact eclib saturation at every prime dividing the index bound proves that the displayed specialized rank-18 subgroup is primitive. Extra anti-invariant directions on the cover and a specialization rank upper bound are not proved.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-R17-GENUS1-HIGH-THROUGHPUT-SPLITTING",
+        "EC-K3-INTEGRAL-CHARACTER-GLUE"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_norm12_103b2_mw_glue.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c674ccd82742ba3140da857e2064e488a35e6380c1f809ad99332495013d457b",
+      "software_lock": [
+        "elkies-k3/scripts/certify_r17_norm12_103b2_mw_glue.sage",
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-mw-glue-v1.json"
+      ],
+      "supersedes_notes": [
+        "the norm-twelve 0x103b2 integral Gram and glue mutation are unknown"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Retrospective bridge-split root-budget predictor benchmark",
+      "scope": "On five exact historical H3 first-hit search windows, the mandatory roots in the common rank-15 core plus new rank-two bridge give a safe pre-classification lower bound with no false negatives for the declared target root budgets. Of 2892 candidate child classifications through the five first hits, the core-only bound rejects none and the core-plus-bridge bound rejects 178, retaining 2714 and giving only a projected 1.066x speedup; the terminal rootless stream retains all 1247 candidates. This is an exact retrospective negative experiment, not an out-of-sample predictor or connectivity theorem. It shows that a useful next predictor must include selected glue-coset minima and must be benchmarked against direct child-root enumeration.",
+      "canonical_source": "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS"
+      ],
+      "checker": "elkies-k3/scripts/benchmark_integral_rank_transfer_bridge_predictor.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d5d35b38d78315f0cd880283284a5a6d645ff6c0b143593be13ee429f7d19d76",
+      "software_lock": [
+        "elkies-k3/scripts/benchmark_integral_rank_transfer_bridge_predictor.sage",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-predictor-benchmark-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
         "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],

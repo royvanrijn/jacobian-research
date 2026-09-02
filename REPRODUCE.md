@@ -18036,7 +18036,8 @@ and
 [`elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md`](elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md).
 
 <!-- status-consumer: EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD 3bcfe3534656b26f -->
-<!-- status-consumer: EC-K3-E6-RANK4-ROOTLESS-Q2Q4-CENSUS a7e08603b9700395 -->
+<!-- status-consumer: EC-K3-E6-RANK4-ROOTLESS-Q2Q4-CENSUS 2351738f44774cfe -->
+<!-- status-consumer: EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL bd12c183aa886b15 -->
 
 Replay the systematic E6 node-collision linear-chord incidence, its exact
 genus-`0/2` unordered component decomposition, the `QQ(k)` parameterization
@@ -18056,6 +18057,10 @@ saturated geometric determinant-78 `NS` with
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_e6_rank4_rootless_low_degree_search.sage --check
+
+sage -python \
+  elkies-k3/scripts/classify_e6_rank4_det78_niemeier_frames.sage \
+  --rootless-obstruction --check
 ```
 
 The unordered quotient is `P1_QQ`, with smooth point `(S,M)=(2,16)` and
@@ -18073,9 +18078,51 @@ ordered genus-one function field, while the descended `QQ(k)` family has
 exact arithmetic rank two.  The first checker emits this descent certificate
 and the full geometric determinant-78 NS marking.  The second exhausts the
 zero-neutral old-degree two, three, and four shells and finds no rootless frame
-among their `79,837` primitive classes.  It does not claim global rootless
-nonexistence or a degree-at-least-five result.  See
+among their `79,837` primitive classes.  The focused Niemeier checker then
+covers 1,591 primitive `A3+A2+A1` anchors in all 23 rooted Niemeier lattices;
+the residual root rank is always at least 14, which exceeds the final
+auxiliary vector's `13/4` norm budget under the rootless hypothesis.  This
+proves global rootless nonexistence for the determinant-78 frame genus at
+`O(NS)`/J2 level.  See
 [`elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md`](elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md).
+
+### Integral rank-transfer and character-glue calculus
+
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 2d15a35bdecc0493 -->
+<!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
+<!-- status-consumer: EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE 52de13c8443f2b7d -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK e79b6132483233bf -->
+
+Generate and byte-check the equation-free census, then replay the local
+bridge and involution graph-glue theorems with
+
+```bash
+sage -python elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage --check
+sage -python elkies-k3/scripts/benchmark_integral_rank_transfer_bridge_predictor.sage --check
+sage -python elkies-k3/scripts/certify_integral_character_glue_calculus.sage --check
+sage -python elkies-k3/scripts/certify_r17_norm12_103b2_mw_glue.sage \
+  --skip-specialization-saturation --check
+sage -python elkies-k3/scripts/build_integral_rank_transfer_glue_census.sage
+sage -python elkies-k3/scripts/build_integral_rank_transfer_glue_census.sage --check
+```
+
+The bridge replay covers all 42 marked H3, Q80, NS0024, and Golay-720 edges,
+including exact common cores, cyclic graph glue, and complete root transfer.
+The retrospective H3 predictor replay then shows that the mandatory
+`K+C_new` root-budget screen rejects only 178 of 2,892 historical candidates
+(`1.066x` projected speedup).  Its complete terminal fixed-core census also
+finds exploratory rank-two signal: maximizing the bridge minimum retains four
+rootless classes among five candidates, versus five among all 14 classes
+(`2.24x` precision enrichment, `80%` recall).  Because those cores and
+determinants come from successful edges, neither retrospective test passes the
+prospective new-algorithm gate.
+The character replay exhausts the E6 `2+1` and `2+2` involution graphs after
+the declared factor-12 integral scaling.  The norm-twelve byte check reuses
+the pinned full saturation record; generating that artifact without the skip
+flag runs every possible saturation prime in a separate memory-bounded
+process.  The accompanying mass criterion is
+a terminating genus-completeness certificate at J2 level; equation lifts and
+J1 surface-automorphism orbits remain separate.
 
 <!-- status-consumer: EC-K3-RES-D5-TWO-MARKED-TWO-TWIST-POLYNOMIAL ea0496c9566cfdc3 -->
 
@@ -18119,6 +18166,8 @@ slice, not for a general two-marked A4 surface.
 
 <!-- status-consumer: EC-K3-R17-RANK28-GENUS1-BISECTION-PILOT 80fa6e59107cc9e6 -->
 
+<!-- status-consumer: EC-K3-R17-RANK28-INTEGRAL-CHARACTER-GLUE 617f1838d8581fcd -->
+
 Generate and byte-check the norm-eight trace census and the exact genus-one
 bisection pencil members through all eleven rank-28 exceptional targets with
 
@@ -18138,6 +18187,21 @@ exact Kummer barcode matches, and independent height-16 anti-invariant
 sections.  Fitting one member of a genus-one pencil through each already known
 point is not a point-discovery or rank-32 certificate.  See
 [`elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md`](elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md).
+
+Extract the common integral character/glue carrier from that exact certificate
+with
+
+```bash
+python3 elkies-k3/scripts/certify_rank28_integral_character_glue.py
+
+python3 elkies-k3/scripts/certify_rank28_integral_character_glue.py --check
+```
+
+This proves that all eleven lifts fitted from the chosen trace pencil repeat
+the same index-two graph glue `<16>_+ + <16>_- -> <8>+<8>` with trace
+`-P2-P5`, while their eleven deck squareclasses remain distinct.  The
+signature is relative to that pencil; it does not put eleven directions on
+one cover or produce a new specialization.
 
 ### Published-R17 frozen-quartic simultaneous-splitting search
 
