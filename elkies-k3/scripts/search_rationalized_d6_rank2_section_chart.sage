@@ -1,15 +1,15 @@
 #!/usr/bin/env sage-python
-"""Replay a rational D6 marked-section chart and its bounded two-section gate.
+"""Replay a rational D6 marked-section chart and its exact two-section gate.
 
 status: ACTIVE_SEARCH
-claim: the Kimura D6 chart can be written over QQ without the normalized
-       sqrt(3), and one polynomial section has a two-parameter rational chart
+claim: the Kimura D6 chart is rational over QQ, one polynomial section has a
+       two-parameter chart, and that chart contains no nontrivial section pair
 inputs: --height-bound (default 30)
 outputs: elkies-k3-rationalized-d6-section-chart-search-v1.json
 
-The bounded search concerns only the necessary equal-leading-coefficient
-condition for two sections inside this particular polynomial chart.  It is
-not a nonexistence theorem for a second section or for a rank-sum-four family.
+The exact obstruction concerns only pairs obtained from this particular
+polynomial marked-section chart.  It is not a nonexistence theorem for a
+second section in a larger D6 chart or for a rank-sum-four family.
 """
 
 from __future__ import annotations
@@ -20,7 +20,7 @@ from fractions import Fraction
 from math import gcd
 from pathlib import Path
 
-from sage.all import PolynomialRing, QQ
+from sage.all import EllipticCurve, PolynomialRing, QQ
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -85,6 +85,25 @@ opposite_expected = (h + j) * (h**3 * j - h**2 * j**2 + h * j**3 + 64)
 if same_numerator != same_expected or opposite_numerator != opposite_expected:
     raise ArithmeticError("D6 leading-coefficient correspondence changed")
 
+# Both nontrivial correspondence curves are birational to
+#
+#     E: Y^2=X^3+X^2+X.
+#
+# For the same-sign curve put k=j/h, x=h*j and Y=8*k/x, X=k.  For the
+# opposite-sign curve use the same k,x,Y and X=-k.  E(Q) has rank zero and
+# torsion Z/2={O,(0,0)}.  The affine torsion point forces k=0, while O lies at
+# the omitted boundary, so neither curve has a nondegenerate rational point.
+correspondence_jacobian = EllipticCurve(QQ, [0, 1, 0, 1, 0])
+correspondence_rank = correspondence_jacobian.rank(proof=True)
+correspondence_torsion = correspondence_jacobian.torsion_points()
+if correspondence_rank != 0:
+    raise ArithmeticError("D6 correspondence Jacobian rank changed")
+if len(correspondence_torsion) != 2:
+    raise ArithmeticError("D6 correspondence Jacobian torsion changed")
+affine_torsion = [point for point in correspondence_torsion if point != correspondence_jacobian(0)]
+if len(affine_torsion) != 1 or affine_torsion[0][0] != 0 or affine_torsion[0][1] != 0:
+    raise ArithmeticError("D6 correspondence torsion support changed")
+
 
 def rationals_of_height(bound):
     values = set()
@@ -119,7 +138,7 @@ for h_value in values:
 
 payload = {
     "schema": "elkies-k3.rationalized-d6-section-chart-search.v1",
-    "status": "PASS_EXACT_CHART_BOUNDED_GATE",
+    "status": "PASS_EXACT_CHART_TWO_SECTION_OBSTRUCTION",
     "rational_d6_model": {
         "equation": (
             "y^2=x^3+u^2*(-u^2+a*u-3)*x+"
@@ -143,17 +162,29 @@ payload = {
         "nontrivial_opposite_sign_hits": [
             [str(left), str(right)] for left, right in opposite_hits
         ],
+        "exact_correspondence_obstruction": {
+            "elliptic_curve": "Y^2=X^3+X^2+X",
+            "same_sign_map": "X=j/h, x=h*j, Y=8*(j/h)/x",
+            "opposite_sign_map": "X=-j/h, x=h*j, Y=8*(j/h)/x",
+            "rank_over_QQ": int(correspondence_rank),
+            "torsion_points": [
+                "O" if point == correspondence_jacobian(0)
+                else [str(point[0]), str(point[1])]
+                for point in correspondence_torsion
+            ],
+            "nondegenerate_rational_points": 0,
+        },
     },
     "proof_boundary": {
         "proved": (
             "The QQ D6 equation, generic fibre valuation, marked-section "
-            "identity, correspondence factorization, and exhaustive stated "
-            "height-box search."
+            "identity, correspondence factorization, exact rank-zero elliptic-curve "
+            "obstruction for both nontrivial correspondence curves, and exhaustive "
+            "stated height-box regression."
         ),
         "not_proved": (
-            "The correspondence curves have no rational points globally; a "
-            "second rational section is impossible; or rank sum four is "
-            "impossible in any larger D6 chart."
+            "A second rational section is impossible in a larger D6 section "
+            "chart; or rank sum four is impossible on a D6 surface."
         ),
     },
 }
@@ -170,7 +201,7 @@ else:
 print(
     "D6QQ|surface=I2star+4I1|marked_sections=1|"
     f"height_box={arguments.height_bound}|same_hits={len(same_hits)}|"
-    f"opposite_hits={len(opposite_hits)}|status=PASS_BOUNDED",
+    f"opposite_hits={len(opposite_hits)}|correspondence_rank=0|status=PASS_EXACT",
     flush=True,
 )
 print(f"OUTPUT|{output_path}", flush=True)

@@ -1,9 +1,9 @@
 #!/usr/bin/env sage-python
-"""Certify orbit-103 arithmetic descent and audit the orbit-96 tangent trace.
+"""Certify orbit-103 arithmetic descent and compare the corrected orbit 96.
 
 status: ACTIVE_PROOF
-claim: orbit-103 arithmetic MW rank two and fail-closed A7+D7 comparison gate
-inputs: elkies-k3-e6a1-rho19-orbit103-rr-weierstrass-v1.json
+claim: orbit-103 arithmetic MW rank two and exact orbit-96 comparison
+inputs: orbit-103 Weierstrass and orbit-96 physical/Galois certificates
 outputs: elkies-k3-e6a1-rho19-orbit103-arithmetic-orbit96-audit-v1.json
 
 The two polynomial orbit-103 sections are rational and independent.  A third
@@ -12,11 +12,11 @@ binary quartic; its ordinate is proportional to sqrt(-3), and conjugation is
 elliptic negation.  The geometric rank-three certificate then forces generic
 arithmetic rank exactly two over QQ(k)(r).
 
-The abstract orbit-96 record has horizontal trace 2*P0.  The obvious resolved
-tangent function on the displayed equation is compiled exactly here.  Its
-minimal Jacobian has the old 2IV*+I4+4I1 fingerprint, not A7+D7.  Thus the
-current abstract E6 root basis is not enough to make an equation-level
-coefficient comparison; an explicit physical E6 marking is a required gate.
+The former orbit-96 rejection was caused by a coefficient-parent error: its
+simplified tangent slope was left in a fraction field, so zero-argument
+``discriminant()`` did not compute the discriminant in the old x-coordinate.
+The dependent physical certificate now supplies the genuine A7+D7 equation
+and its exact ``1+chi_-3+1`` Mordell--Weil representation.
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from sage.all import EllipticCurve, PolynomialRing, QQ, ZZ, factor
+from sage.all import EllipticCurve, PolynomialRing, QQ
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -34,6 +34,7 @@ HERE = Path(__file__).resolve().parent
 GEN = ROOT / "artifacts/generated-results"
 SOURCE = GEN / "elkies-k3-e6a1-rho19-orbit103-rr-weierstrass-v1.json"
 Q2_SOURCE = GEN / "elkies-k3-e6a1-rho19-genuine-q2-neighbors-v1.json"
+ORBIT96_SOURCE = GEN / "elkies-k3-e6a1-rho19-orbit96-rr-galois-v1.json"
 DEFAULT_OUTPUT = (
     GEN / "elkies-k3-e6a1-rho19-orbit103-arithmetic-orbit96-audit-v1.json"
 )
@@ -55,16 +56,21 @@ def polynomial_coefficients(polynomial):
     return [str(polynomial[index]) for index in range(polynomial.degree() + 1)]
 
 
-if not SOURCE.exists() or not Q2_SOURCE.exists():
-    raise FileNotFoundError("orbit-103 equation and q=2 census artifacts are required")
+if not SOURCE.exists() or not Q2_SOURCE.exists() or not ORBIT96_SOURCE.exists():
+    raise FileNotFoundError("orbit-103, q=2 census, and orbit-96 artifacts are required")
 source = json.loads(SOURCE.read_text())
 q2_source = json.loads(Q2_SOURCE.read_text())
+orbit96_source = json.loads(ORBIT96_SOURCE.read_text())
 if source.get("status") != "PASS_EXACT_RESOLVED_RR_QUARTIC_AND_WEIERSTRASS":
     raise ArithmeticError("orbit-103 equation source is not exact")
 if q2_source.get("status") != (
     "PASS_EXACT_COMPLETE_GENUINE_Q2_CENSUS_AND_18_NEF_MW3_FRAMES"
 ):
     raise ArithmeticError("q=2 neighbor source is not exact")
+if orbit96_source.get("status") != (
+    "PASS_EXACT_PHYSICAL_A7D7_WEIERSTRASS_AND_MW_2_PLUS_CHI_MINUS3"
+):
+    raise ArithmeticError("orbit-96 physical/Galois source is not exact")
 if source["mordell_weil"]["geometric_rank"] != 3:
     raise ArithmeticError("orbit-103 geometric rank changed")
 if source["mordell_weil"]["torsion"] != "trivial":
@@ -199,99 +205,6 @@ if arithmetic_rank != rational_independent_rank:
     raise ArithmeticError("orbit-103 Galois rank decomposition changed")
 
 
-# Audit the tempting orbit-96 tangent trace.  Orbit 96 has abstract horizontal
-# trace 2*P0, but its E6 root coordinates have not been matched to resolved
-# equation components.  Compile the unique generic-fibre tangent function
-# (both signs give the same Jacobian) with the apparent t=-1 regularizer.
-T_RING = PolynomialRing(K, "t")
-t = T_RING.gen()
-FT = T_RING.fraction_field()
-k_t = FT(k_polynomial)
-D_parameter = 3 * k_t**2 - 4
-c = 2 * k_t / D_parameter
-lam = -(k_t**2 - 4) * D_parameter / 4
-H = 1 - t**2
-old_a = H**3 * (lam - 3 * H)
-old_b = H**4 * (c**2 * lam**2 + lam * H - 2 * H**2)
-x0 = -H**2
-y0 = c * lam * H**2
-tangent_slope = FT((3 * x0**2 + old_a) / (2 * y0))
-if tangent_slope != ((-3 * k_t**2 / 4 + 1) / k_t) * (t - 1) * (t + 1):
-    raise ArithmeticError("P0 tangent slope changed")
-
-Z_RING = PolynomialRing(K, "z")
-z = Z_RING.gen()
-KZ = Z_RING.fraction_field()
-TZ_RING = PolynomialRing(KZ, "t")
-tz = TZ_RING.gen()
-XZ_RING = PolynomialRing(TZ_RING, "x")
-x = XZ_RING.gen()
-kz = KZ(k_polynomial)
-Dz = 3 * kz**2 - 4
-cz = 2 * kz / Dz
-lamz = -(kz**2 - 4) * Dz / 4
-Hz = 1 - tz**2
-az = Hz**3 * (lamz - 3 * Hz)
-bz = Hz**4 * (cz**2 * lamz**2 + lamz * Hz - 2 * Hz**2)
-x0z = -Hz**2
-y0z = cz * lamz * Hz**2
-mz = (3 * x0z**2 + az) / (2 * y0z)
-regularizer = tz + 1
-pole_factor = x - x0z
-
-standard_models = []
-for sign in (1, -1):
-    # sign=+1 has poles at +P0; sign=-1 has poles at -P0.
-    scaled_line = sign * regularizer * (y0z + mz * pole_factor)
-    cleared = (
-        (z * pole_factor**2 - scaled_line) ** 2
-        - regularizer**2 * (x**3 + az * x + bz)
-    )
-    quadratic, remainder = cleared.quo_rem(pole_factor**2)
-    if remainder or quadratic.degree() != 2:
-        raise ArithmeticError("orbit-96 tangent trace did not leave a quadratic")
-    quartic, square_factor = squarefree_binary_quartic(
-        TZ_RING(quadratic.discriminant()), TZ_RING
-    )
-    if quartic.degree() != 3 or square_factor**2 != tz**2:
-        raise ArithmeticError("orbit-96 tangent trace quartic changed")
-    standard_models.append(binary_quartic_jacobian_coefficients(quartic)[:2])
-if standard_models[0] != standard_models[1]:
-    raise ArithmeticError("the two tangent orientations lost their common Jacobian")
-
-standard_a, standard_b = standard_models[0]
-minimalizing_unit = KZ(z / (6 * (z + 1)))
-tangent_a = Z_RING(minimalizing_unit**4 * standard_a)
-tangent_b = Z_RING(minimalizing_unit**6 * standard_b)
-C2 = Z_RING(z**2 - kz**4 / 4 + 4 * kz**2 / 3 - QQ(7) / 3)
-C4 = Z_RING(
-    z**4
-    + (-3 * kz**4 / 8 + 2 * kz**2 - 4) * z**2
-    - kz**6 / 8 + 11 * kz**4 / 8 - 4 * kz**2 + 3
-)
-expected_tangent_a = Z_RING(-3 * (z**2 - 1) ** 3 * C2)
-expected_tangent_b = Z_RING(-2 * (z**2 - 1) ** 4 * C4)
-if tangent_a != expected_tangent_a or tangent_b != expected_tangent_b:
-    raise ArithmeticError("clean tangent-trace equation changed")
-
-tangent_classification = classify_finite_short_weierstrass_fibres(
-    Z_RING, tangent_a, tangent_b
-)
-finite_profile = sorted(
-    (item["kodaira"], item["degree"])
-    for item in tangent_classification["finite_fibres"]
-)
-if finite_profile != [("I1", 4), ("IV*", 1), ("IV*", 1)]:
-    raise ArithmeticError(f"unexpected tangent-trace fibres: {finite_profile}")
-if tangent_classification["infinity_boundary"]["normalized_orders"] != (0, 0, 4):
-    raise ArithmeticError("tangent trace lost its I4 fibre at infinity")
-if (
-    tangent_classification["finite_root_rank"],
-    tangent_classification["finite_euler_number"],
-    tangent_classification["finite_root_determinant"],
-) != (12, 20, 9):
-    raise ArithmeticError("tangent trace is no longer the 2E6+A3 frame")
-
 orbit96 = q2_source["secondary_fibre_simple_compiler_target"]
 if orbit96["orbit"] != 96 or orbit96["root_type"] != "A7+D7":
     raise ArithmeticError("secondary abstract target changed")
@@ -304,10 +217,11 @@ if orbit103["divisor_complexity"] != {"max_abs": 1, "l1": 3}:
 
 payload = {
     "schema": "elkies-k3.e6a1-rho19-orbit103-arithmetic-orbit96-audit.v1",
-    "status": "PASS_EXACT_ARITHMETIC_RANK2_AND_FAIL_CLOSED_A7D7_GATE",
+    "status": "PASS_EXACT_BOTH_ORBITS_ARITHMETIC_RANK2_AND_CHI_MINUS3",
     "inputs": {
         relative(SOURCE): digest(SOURCE),
         relative(Q2_SOURCE): digest(Q2_SOURCE),
+        relative(ORBIT96_SOURCE): digest(ORBIT96_SOURCE),
     },
     "orbit103_arithmetic": {
         "base_field": "QQ(k)(r)",
@@ -342,46 +256,29 @@ payload = {
             "mw_height_gram": orbit96["mw_height_gram"],
             "source_divisor_complexity": orbit96["divisor_complexity"],
         },
-        "naive_equation_tangent_trace": {
-            "function": (
-                "(t+1)*(y-y0-m_tan*(x-x0))/(x-x0)^2, with the opposite "
-                "orientation giving the same Jacobian"
-            ),
-            "equation": "y^2=x^3-3*(z^2-1)^3*C2(z)*x-2*(z^2-1)^4*C4(z)",
-            "C2_coefficients_low_to_high": polynomial_coefficients(C2),
-            "C4_coefficients_low_to_high": polynomial_coefficients(C4),
-            "fibre_profile": "2IV*+I4+4I1",
-            "root_type": "2E6+A3",
-            "root_data": [15, 156, 36],
-            "rejection": "This is not the abstract A7+D7 orbit-96 fibration.",
-        },
-        "missing_gate": (
-            "The abstract E6 simple-root coordinates must be identified with a "
-            "complete resolved physical E6 component marking on the equation."
-        ),
+        "corrected_equation": orbit96_source["weierstrass"],
+        "arithmetic": orbit96_source["mordell_weil"],
+        "historical_parent_bug": orbit96_source["elimination_parent_regression"],
     },
     "coefficient_comparison": {
         "orbit103_source_divisor_complexity": orbit103["divisor_complexity"],
         "orbit96_abstract_source_divisor_complexity": orbit96["divisor_complexity"],
         "orbit103_reducible_fibre_count": 4,
         "orbit96_expected_reducible_fibre_count": 2,
-        "weierstrass_degree_floor": {"A": 8, "B": 12},
-        "status": "NOT_COMPARABLE_WITHOUT_A_PHYSICALLY_MARKED_A7D7_EQUATION",
-        "warning": (
-            "The displayed low-coefficient tangent-trace equation is a negative "
-            "control, not an A7+D7 competitor. It must not be used to claim "
-            "coefficient optimality."
-        ),
+        "orbit96_weierstrass_degrees": {"A": 6, "B": 9},
+        "orbit103_weierstrass_degrees": {"A": 8, "B": 12},
+        "arithmetic_ranks": {"orbit96": 2, "orbit103": 2},
+        "nontrivial_characters": {"orbit96": "chi_-3", "orbit103": "chi_-3"},
+        "status": "EXACT_PHYSICAL_AND_ARITHMETIC_COMPARISON",
     },
     "proof_boundary": {
         "proved": (
-            "Exact orbit-103 arithmetic rank two, explicit anti-invariant third "
-            "geometric direction, and exact rejection of the naive orbit-96 "
-            "tangent trace by its fibre fingerprint."
+            "Exact orbit-103 arithmetic rank two and comparison with the "
+            "corrected physical orbit-96 A7+D7 equation and MW representation."
         ),
         "open": (
-            "A physically resolved E6 marking and a genuine orbit-96 A7+D7 "
-            "Weierstrass equation are still required for coefficient optimality."
+            "Polynomial Weierstrass coordinates for the orbit-96 lattice "
+            "generators and arithmetic ranks after numerical specialization."
         ),
     },
 }
@@ -401,7 +298,7 @@ else:
 
 print(
     "E6A1O103ARITH|rank_Qkr=2|rank_geom=3|anti=sqrt(-3)|"
-    "orbit96_tangent=REJECT_2E6+A3|status=PASS_EXACT",
+    "orbit96=I8+I3star+7I1,rank2,chi_-3|status=PASS_EXACT",
     flush=True,
 )
 print(f"OUTPUT|{output_path}", flush=True)

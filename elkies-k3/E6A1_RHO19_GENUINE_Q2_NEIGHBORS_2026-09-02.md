@@ -2,9 +2,11 @@
 
 <!-- status-consumer: EC-K3-E6A1-RHO19-GENUINE-Q2-MW3 cd4314040bb028f7 -->
 
-<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-EQUATION 8cfa9387612ac443 -->
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-EQUATION 827d75cb8d14d7f4 -->
 
-<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2 2130bc147519ac6b -->
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2 387d6237125637a3 -->
+
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT96-A7D7-GALOIS ba008502f0e5533f -->
 
 ## Result
 
@@ -202,14 +204,15 @@ If the number of child reducible fibres matters more than source-divisor
 sparsity, orbit `96` is the secondary target.  It has roots `A7+D7`, MW height
 `diag(3/8,1,3)`, and old-basis complexity `(2,12)`.
 
-The abstract `E6` root basis used by this census has not yet been matched to a
-complete resolved physical `E6` marking on the equation.  The obvious
-equation-side `P0` tangent trace has been compiled as a fail-closed test: its
-fibres are `2IV*+I4+4I1`, with roots `2E6+A3`, so it is not orbit `96` and
-cannot be used as a low-coefficient `A7+D7` competitor.  The declared Pareto
-comparison is currently exact only for source-divisor complexity and fibre
-count.  Weierstrass coefficient optimality requires the missing physical
-marking and a genuine `A7+D7` compilation.
+Orbit `96` has now been compiled exactly.  The physical IV* chart attachment
+sends the old E6 root order to chart components `(2,1,4,6,5,3)`, and the
+resolved tangent function realizes the full divisor.  Its Weierstrass model
+has fibres `I8+I3*+7I1`, as required by `A7+D7`.  The former `2E6+A3`
+rejection was caused by calling the zero-argument polynomial discriminant
+after the tangent slope had promoted the coefficient ring to a fraction-field
+tower.  The corrected model has arithmetic rank two and Galois representation
+`1+chi_-3+1`; see
+[`E6A1_RHO19_ORBIT96_WEIERSTRASS_GALOIS_2026-09-02.md`](E6A1_RHO19_ORBIT96_WEIERSTRASS_GALOIS_2026-09-02.md).
 
 ## Reproduction and boundary
 
@@ -225,6 +228,9 @@ marking and a genuine `A7+D7` compilation.
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_e6a1_rho19_orbit103_arithmetic_and_orbit96_audit.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/compile_e6a1_rho19_orbit96_rr_galois.sage --check
 ```
 
 Pinned SHA-256 values are
@@ -232,12 +238,14 @@ Pinned SHA-256 values are
 ```text
 checker  e7f8eb8a336fba9ee457245816a6ab11c58de17e1939ee011234c96b0a7c1428
 artifact 07a6cdb181e9c2febdfcf085954608ef40b07a654fc652624bae195e4128d179
-descent/audit checker  23988e2a5e608301ebf393fb157c0c03a02ae353760aadf1fbe5ed5a689304c1
-descent/audit artifact 1daae6cc371f04b541ac1127748db75924098bc959c30ffbe067bbd3027a41d9
+descent/audit checker  5cfc2180a49c1a2a0bd7c119dca1e10e24e2ca459c17740101bdef8848b6b643
+descent/audit artifact ee01cf2950ab893591a06ee08b6565f738e7c8731653cf98ff1297a76370cfbe
+orbit-96 checker       08c2629837f74aa90f9b09df9fe68104f542b226af892d056bff6c08577c01d0
+orbit-96 artifact      f72b312561b01cbce6e9fa47f6c96a6ff6e1ec7aca406169f79434995cc6046f
 ```
 
 The orbit census, physical reductions, child root systems, torsion, free MW
 height lattices, and nefness of the eighteen rank-three frames are exact.  The
 orbit-103 equation and arithmetic rank-two descent are exact in the dependent
-certificates.  The naive orbit-96 tangent is exactly rejected, but a genuine
-physically marked `A7+D7` equation and coefficient comparison remain open.
+certificates.  Orbit 96 is now physically marked and equation-explicit, with
+exact arithmetic rank two and the same `chi_-3` line as orbit 103.

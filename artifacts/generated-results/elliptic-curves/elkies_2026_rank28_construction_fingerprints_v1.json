@@ -1,0 +1,3483 @@
+{
+  "claim_boundary": [
+    "The public complement and generic subgroup independence are inherited exact certificates.",
+    "Kummer, defining-polynomial, factorization, Galois-group, Frobenius, and isogeny data are exact.",
+    "Canonical heights are PARI decimals, not interval-certified reals.",
+    "Closest-vector results are complete for each rounded integral Gram and stable at three scales; this is a numerical stability certificate, not an exact canonical-height CVP theorem.",
+    "A rational point on one fibre has no intrinsic divisor class or K3 intersection profile without a chosen multisection through it.",
+    "The clustering is exploratory and the selected eleven-point basis is not a population sample."
+  ],
+  "clustering": {
+    "boundary": "The eleven points are a selected positive-control basis. Feature scaling, equal view weights, linkage, and silhouette selection are exploratory choices; cluster membership does not certify a shared construction.",
+    "candidate_silhouettes": {
+      "2": "0.26148199538441697",
+      "3": "0.20060883986253977",
+      "4": "0.20956850820139625",
+      "5": "0.28140190531954751"
+    },
+    "clusters": [
+      {
+        "cluster": 1,
+        "members": [
+          "Q1",
+          "Q2"
+        ],
+        "size": 2
+      },
+      {
+        "cluster": 2,
+        "members": [
+          "Q4",
+          "Q5"
+        ],
+        "size": 2
+      },
+      {
+        "cluster": 3,
+        "members": [
+          "Q3",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9"
+        ],
+        "size": 5
+      },
+      {
+        "cluster": 4,
+        "members": [
+          "Q11"
+        ],
+        "size": 1
+      },
+      {
+        "cluster": 5,
+        "members": [
+          "Q10"
+        ],
+        "size": 1
+      }
+    ],
+    "consensus_distance_matrix": [
+      [
+        "0",
+        "0.799373324264",
+        "0.952816374881",
+        "0.949151350068",
+        "1.20699390375",
+        "1.11816467451",
+        "1.12303159528",
+        "1.14073093775",
+        "1.03527020846",
+        "1.26791158168",
+        "1.19119065021"
+      ],
+      [
+        "0.799373324264",
+        "0",
+        "0.895495105515",
+        "0.982733984443",
+        "1.19687332796",
+        "0.990310259598",
+        "0.930564890949",
+        "0.936026466977",
+        "0.869076063735",
+        "1.32064342255",
+        "1.20095389912"
+      ],
+      [
+        "0.952816374881",
+        "0.895495105515",
+        "0",
+        "0.981708634212",
+        "1.14868566796",
+        "0.857231263242",
+        "0.830358718155",
+        "1.03015042881",
+        "0.766802141911",
+        "1.32984607429",
+        "1.11226012453"
+      ],
+      [
+        "0.949151350068",
+        "0.982733984443",
+        "0.981708634212",
+        "0",
+        "0.880320548579",
+        "0.995646171625",
+        "0.995697070444",
+        "0.957783418139",
+        "0.935009935803",
+        "1.19752377932",
+        "1.10272053591"
+      ],
+      [
+        "1.20699390375",
+        "1.19687332796",
+        "1.14868566796",
+        "0.880320548579",
+        "0",
+        "1.0140396807",
+        "1.08717881936",
+        "0.980023630251",
+        "1.04729638048",
+        "1.23556875805",
+        "0.922834017787"
+      ],
+      [
+        "1.11816467451",
+        "0.990310259598",
+        "0.857231263242",
+        "0.995646171625",
+        "1.0140396807",
+        "0",
+        "0.817990874286",
+        "0.885362644098",
+        "0.839020707591",
+        "1.14385407878",
+        "0.880534978624"
+      ],
+      [
+        "1.12303159528",
+        "0.930564890949",
+        "0.830358718155",
+        "0.995697070444",
+        "1.08717881936",
+        "0.817990874286",
+        "0",
+        "0.781393460521",
+        "0.617606134281",
+        "1.11498727973",
+        "0.930979870716"
+      ],
+      [
+        "1.14073093775",
+        "0.936026466977",
+        "1.03015042881",
+        "0.957783418139",
+        "0.980023630251",
+        "0.885362644098",
+        "0.781393460521",
+        "0",
+        "0.778316789374",
+        "1.23084345978",
+        "0.948621773752"
+      ],
+      [
+        "1.03527020846",
+        "0.869076063735",
+        "0.766802141911",
+        "0.935009935803",
+        "1.04729638048",
+        "0.839020707591",
+        "0.617606134281",
+        "0.778316789374",
+        "0",
+        "1.03983849496",
+        "1.07047900635"
+      ],
+      [
+        "1.26791158168",
+        "1.32064342255",
+        "1.32984607429",
+        "1.19752377932",
+        "1.23556875805",
+        "1.14385407878",
+        "1.11498727973",
+        "1.23084345978",
+        "1.03983849496",
+        "0",
+        "1.12019132471"
+      ],
+      [
+        "1.19119065021",
+        "1.20095389912",
+        "1.11226012453",
+        "1.10272053591",
+        "0.922834017787",
+        "0.880534978624",
+        "0.930979870716",
+        "0.948621773752",
+        "1.07047900635",
+        "1.12019132471",
+        "0"
+      ]
+    ],
+    "linkage": "average",
+    "selected_cluster_count": 5,
+    "selected_mean_silhouette": "0.28140190531954751",
+    "status": "HEURISTIC_CONSENSUS_CLUSTERING_NOT_A_THEOREM",
+    "views_equal_weight": [
+      "arithmetic_size",
+      "bad_place_kummer",
+      "division_field_frobenius",
+      "quotient_height_angle"
+    ]
+  },
+  "division_field_common_audit": {
+    "common_unramified_frobenius_primes": [
+      23,
+      29,
+      37,
+      43,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97,
+      101,
+      103,
+      107,
+      109,
+      113,
+      127,
+      131,
+      139,
+      149,
+      151,
+      157,
+      163,
+      167,
+      173,
+      179,
+      181,
+      191,
+      193
+    ],
+    "full_preimage_point_field_note": "The multiplication y-map is linear in the source y-coordinate, so after fixing [n]R=Q the selected y(R) is rational in x(R) and Q; the displayed degree-4/9 x-polynomial therefore defines a full preimage point field.",
+    "levels": {
+      "2": {
+        "all_irreducible": true,
+        "all_polynomial_discriminants_same_squareclass": true,
+        "common_galois_group": {
+          "name": "S4",
+          "order": 24,
+          "pari_sign": -1,
+          "transitive_group_id": 5
+        }
+      },
+      "3": {
+        "all_irreducible": true,
+        "all_polynomial_discriminants_same_squareclass": true,
+        "common_galois_group": {
+          "name": "E(9):2S_4",
+          "order": 432,
+          "pari_sign": -1,
+          "transitive_group_id": 26
+        }
+      }
+    }
+  },
+  "exceptional_quotient": "displayed free quotient L_t/M_t of rank 11",
+  "generic_R17_symbolic_reproduction": {
+    "interpretation": "These irreducible generic multiplication covers reproduce the degree-4 and degree-9 preimage objects symbolically on R17. They are universal in X and therefore do not produce an exceptional specialization section by themselves.",
+    "meaning": "F_n(z;X)=numerator(x([n]R))-X*denominator(x([n]R))",
+    "model": "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
+    "templates": {
+      "2": {
+        "degree_in_preimage_x": 4,
+        "factor_count_over_Q_A_B_X": 1,
+        "formula": "x^4 + (-4*X)*x^3 + (-2*A)*x^2 + (-4*A*X - 8*B)*x + (A^2 - 4*B*X)",
+        "irreducible_over_Q_A_B_X": true,
+        "published_R17_expanded_polynomial_sha256": "44bc06a134dc01567d3df35fb3dc5e6d703af59fb77bd3b843ce94e1f8f8f8eb",
+        "published_R17_expanded_serialized_bytes": 3132,
+        "published_R17_factor_count_over_Q_t_X": 1,
+        "published_R17_irreducible_over_Q_t_X": true
+      },
+      "3": {
+        "degree_in_preimage_x": 9,
+        "factor_count_over_Q_A_B_X": 1,
+        "formula": "x^9 + (-9*X)*x^8 + (-12*A)*x^7 + (-36*A*X - 96*B)*x^6 + (30*A^2 - 72*B*X)*x^5 + (-30*A^2*X - 24*A*B)*x^4 + (36*A^3 - 144*A*B*X + 48*B^2)*x^3 + (12*A^3*X + 48*A^2*B - 144*B^2*X)*x^2 + (9*A^4 + 24*A^2*B*X + 96*A*B^2)*x + (-A^4*X + 8*A^3*B + 64*B^3)",
+        "irreducible_over_Q_A_B_X": true,
+        "published_R17_expanded_polynomial_sha256": "37a1fd90503e2742b5f489ddbf018b4bfdc794ef4c7d8e88b4054a7611c80520",
+        "published_R17_expanded_serialized_bytes": 32399,
+        "published_R17_factor_count_over_Q_t_X": 1,
+        "published_R17_irreducible_over_Q_t_X": true
+      }
+    }
+  },
+  "generic_subgroup": "specialized saturated R17 subgroup M_t of rank 17",
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/elkies_2026_exceptional_specialization_relations_v1.json": "37566ee1c19a6afcd0d4d3f8ec243ba8388136588cc34fdc369c178f90c825b4",
+    "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_generic17_local_signature_v1.json": "b86e7dd934def09faf9c307bd2167a223021c3b9984b99fd80880e84ab23cb19",
+    "artifacts/generated-results/elliptic-curves/elkies_2026_rank28_public11_selmer_candidates_v1.json": "ec00ecacdaeea04b37daac69b2c891d95af1a1c9ecd0d0296312794259426875",
+    "artifacts/generated-results/elliptic-curves/latent_lattice_calibration_truth_v1.json": "357113254603a7910b781514bfdf2c147132a5e02c676c31513efb1786187224",
+    "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+    "elliptic-curves/cas/analyze_elkies_2026_rank28_construction_fingerprints.py": "cd388f0ec1c417393812a2d0d31427e822b685d71819ef226c1bee00097b30ae",
+    "elliptic-curves/cas/elkies_rank28.py": "2165728c26b643fc65735825a09527b2b432639348131f2ea8a17e19ff569adb"
+  },
+  "mechanism_assessment": {
+    "best_next_geometric_test": "Search higher-genus degree-two curves or targeted higher-degree multisections whose specializations realize the exact eleven Kummer classes, using the Kummer class as the target constraint rather than enumerating parameters by Nagao score.",
+    "largest_exploratory_consensus_cluster": 5,
+    "operation_exposing_all_eleven": "The cubic 2-descent Kummer map Q |-> x(Q)-theta exposes 11/11 directions and materializes a rational two-cover for each.",
+    "single_operation_explains_7_to_10_as_a_construction": false,
+    "small_division_field_result": "All eleven directions have the same maximal observed degree/Galois type at [2] and [3], and the curve has no nontrivial Q-rational isogeny. These operations do not isolate a 7--10 direction construction class.",
+    "why_this_is_not_yet_a_rank32_search_mechanism": "The Kummer map represents any known rational point; it does not construct the point before it is known. The generic R17 multiplication covers are irreducible universal covers in X, not new sections."
+  },
+  "parameter": "-9529/5471",
+  "rational_isogeny_graph": {
+    "degree_matrix": "Mat(1)",
+    "engine": "PARI ellisomat(E,0,1)",
+    "isogeny_class_size": 1,
+    "nontrivial_Q_rational_isogeny_available": false
+  },
+  "records": [
+    {
+      "coordinate_size": {
+        "logarithmic_x_height_natural": "62.923169276154695",
+        "x_algebraic_degree_over_Q": 1,
+        "x_projective_height_bits": 91,
+        "y_projective_height_bits": 138
+      },
+      "divisor_class": {
+        "reason": "A point on an elliptic fibre is codimension two on the K3. A divisor class exists only after choosing a multisection through it.",
+        "status": "NOT_INTRINSIC_FOR_A_FIBRE_POINT"
+      },
+      "kummer_two_cover": {
+        "exposes_direction": true,
+        "generator_coefficients": [
+          "-8496600365017524293168549852",
+          "-1",
+          "0"
+        ],
+        "generator_maximum_height_bits": 93,
+        "norm": "4321558850531212794554058542855542479309890738049778985789293831408357169248757760000",
+        "norm_square_root": "2078835936415188295643759071041951862742400",
+        "normalization": "alpha=X(Q)-theta",
+        "verified_rational_cover_witness": [
+          "1",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      "label": "Q1",
+      "local_kummer_code": "0x1a0800820e0019",
+      "parent_transport": {
+        "exact_roundtrip": true,
+        "parent_crossratio_base": "15136696172816634623943829563299/21464601274143611809786041479424",
+        "parent_crossratio_base_projective_height_bits": 105,
+        "parent_point_canonical_height_128bit": "431.85413474974756910853944213951592325"
+      },
+      "preimage_2": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "695691563732034890907222484078260499720211910266356909820383642609990148773300777296433984538885673699503909761",
+          "-446360651825508425955531597608334450601089320452676752423205158101445733445200210212",
+          "40135524831151053170066416412304635228097317404481500614",
+          "8496600365017524293168549852",
+          "1"
+        ],
+        "defining_polynomial_sha256": "1a261ad0d23e023f1198d3d300a7bc9f28b96960f85707cfe9a68b0b57937cd3",
+        "degree": 4,
+        "factor_degrees_over_Q": [
+          4
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "4",
+          "103": "4",
+          "107": "2.2",
+          "109": "1.1.2",
+          "113": "1.3",
+          "127": "1.3",
+          "131": "2.2",
+          "139": "4",
+          "149": "1.3",
+          "151": "1.3",
+          "157": "1.1.2",
+          "163": "1.1.2",
+          "167": "1.3",
+          "173": "4",
+          "179": "1.3",
+          "181": "4",
+          "191": "1.3",
+          "193": "1.1.2",
+          "23": "1.3",
+          "29": "1.1.2",
+          "37": "1.3",
+          "43": "4",
+          "53": "1.3",
+          "59": "2.2",
+          "61": "1.3",
+          "67": "4",
+          "71": "1.1.2",
+          "73": "1.3",
+          "79": "1.3",
+          "83": "1.1.2",
+          "89": "1.1.2",
+          "97": "1.3"
+        },
+        "galois_group": {
+          "name": "S4",
+          "order": 24,
+          "pari_sign": -1,
+          "transitive_group_id": 5
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 369,
+        "polynomial_discriminant": "4180798287325966176734591109137600649163131917009065980604268360201331939206134352528631050586767874053502079880238300388401622153227358996030781017594557242342545917415239689704463949209980630033410824499055460291876908711940351819083328668532450850537999235307120698558179783865039123963697956309754460368354398332518400000000000000",
+        "polynomial_discriminant_bits": 1109,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "preimage_3": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "739035307376208841187140324247668790941156545740547366391622443276498209039787015650876892839318330349349051138061036702922682075282327999545927208392182621573661570851454211821857517160238402412790421740765626774206692290141267713861367434121012823",
+          "-1538880434366022630595850333308761378736677735881636888669698616508224463712083952093674332713909887756484091790190982788817110831264148757271043334173916240248962139537002820052781511698042689719687519751293448603956800311",
+          "1236221715407116571462003971450509115072885318632898991258197806720770735375778281479585741412817296240292498742524367206173056253850555285734801083723005026596116112826886410443707852282688232412",
+          "-445523914062615913648927401528495721457640429167431478910359944305832629885769837730988074240763123124595602682139172414987539883069679144896989608487364462123649641644",
+          "42270069788201907738583393025757560054453477909963909313424393980817162181893536809689392584386537210834561022677159881228803470601325818418",
+          "17355029207592456361561084702393835771161774494973996975260919031798053048261510635106149688701242416137382465086",
+          "-4844804549510309188808576035164793918899799708207950349716144527708310099989820236052",
+          "240813148986906319020398498473827811368583904426889003684",
+          "19117350821289429659629237167",
+          "1"
+        ],
+        "defining_polynomial_sha256": "3b4d023f23f29fbba4dc2c78167d76f16e2b12f3f6641df2b4d2d854ceddd38c",
+        "degree": 9,
+        "factor_degrees_over_Q": [
+          9
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "3.6",
+          "103": "1.2.6",
+          "107": "3.6",
+          "109": "1.2.6",
+          "113": "1.8",
+          "127": "1.2.2.2.2",
+          "131": "1.8",
+          "139": "3.3.3",
+          "149": "1.8",
+          "151": "1.4.4",
+          "157": "1.4.4",
+          "163": "1.4.4",
+          "167": "1.8",
+          "173": "1.8",
+          "179": "1.8",
+          "181": "3.3.3",
+          "191": "1.8",
+          "193": "3.3.3",
+          "23": "3.6",
+          "29": "1.8",
+          "37": "1.2.2.2.2",
+          "43": "1.4.4",
+          "53": "1.1.1.2.2.2",
+          "59": "1.1.1.2.2.2",
+          "61": "1.4.4",
+          "67": "1.1.1.3.3",
+          "71": "1.8",
+          "73": "1.4.4",
+          "79": "1.1.1.3.3",
+          "83": "3.6",
+          "89": "1.8",
+          "97": "3.3.3"
+        },
+        "galois_group": {
+          "name": "E(9):2S_4",
+          "order": 432,
+          "pari_sign": -1,
+          "transitive_group_id": 26
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 827,
+        "polynomial_discriminant": "-36404613810527752530263694549022508478607212542861679553607862290207859017865743950439811683628624975977517397990047629324243794666380592536240393823694635434725512594970233945687559660259126983532459851040720805654295877717599646699301277417077343966872200236799376635735244697259386370151870225004228623563052277308322715342106279040847340720916664228752948288857922098892571415838678698301727443562285790601302293110159476945208252029695609278440251476689483078908317959688218011942795037409179981429984570207818685978061808924298027801779920878491992142192607614933356793655588424763673276594915751663419854475072063602326762320214897197751382752589496434926348554039585585526115807279662380451599593604338972425055475719952995894112679925937676887274721365637865973291762617579447791408857995499701418690712470721222396228137645189800284401643401706311723592190559074337943556309642762375947244281857038404610885891925418415830661885086105040170150429725000584743098865849204603034399223861621288218214151508359670553552673372497535348469869461538698121239436451297086597323841715776130583406786058695362343218383214849933649322988224313214614168088687075108337587372574291119468058648133521384629918587415849006258815530468776649673515365722578805234932944999718837991735261363822374941437251820246426451721048914072257135712160582125885542965527722506396065163751459318480600387895626513935109423440350461129371523644939387150724705030805664947422852062681114881554836437496617094505439961746177118086910257898702594903192492206357539829419471068481385170885076369320405840079860820996101812382735606055209161620138982982347611063290611608926918262275911337388499319840024528533364649587889900074006552095672700928039919864279326009155749687389716249753649801053529616688593577600180702993142114596358120857641349725829348997654006733930323874671587636551545595793958875802082949618409759708092457813194078945280000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "polynomial_discriminant_bits": 6623,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "public_point": [
+        "-2124150091254381073292137463",
+        "259854492051899599030515511070780628911531"
+      ],
+      "rational_bisection_relations_involving_direction": [],
+      "relative_height": {
+        "all_multipliers_n_at_least_2_excluded_from_first_shell_by_continuous_quotient_lower_bound": true,
+        "first_shell_representative": {
+          "canonical_height_recomputed_from_90_digit_gram": "47.26591716166384805901515605024800",
+          "correction_in_specialized_generic_R17_basis": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "in_or_below_specialized_generic_first_shell": true,
+          "rounded_minimum_heights": [
+            "47.2659",
+            "47.26592",
+            "47.265917"
+          ],
+          "specialized_generic_first_shell_height": "47.87855238606437426789368363679301",
+          "specialized_generic_first_shell_vector": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "stable_across_integer_gram_scales": [
+            10000,
+            100000,
+            1000000
+          ]
+        },
+        "intersection_analogue": {
+          "quotient_height_correlations": [
+            "0.99999999999999978",
+            "0.14529022903594885",
+            "0.32541718874838027",
+            "-0.095558795466388596",
+            "-0.2286549096903297",
+            "-0.3601988664220534",
+            "-0.14810667283560752",
+            "-0.23231382431237149",
+            "-0.24041830924596211",
+            "-0.19126421795147888",
+            "0.0072910241871295993"
+          ],
+          "status": "HEIGHT_PAIRING_PROFILE_NOT_K3_INTERSECTION",
+          "strongest_negative": {
+            "correlation": "-0.3601988664220534",
+            "label": "Q6"
+          },
+          "strongest_positive": {
+            "correlation": "0.32541718874838027",
+            "label": "Q3"
+          }
+        },
+        "orthogonal_projection_coefficients_in_generic_basis": [
+          "0.022181532146573613594760258855785",
+          "0.21042192136637426864755023248576",
+          "-0.77290277807422018325746702218635",
+          "0.28647297694290958440573403013555",
+          "0.16432912383358067698077738656924",
+          "-0.36065360555506336930886243038685",
+          "0.64575719946190801982925247371039",
+          "0.13317512455087505770339983761695",
+          "0.093474100645415503287549761033749",
+          "-0.89491412335887555068353702100957",
+          "0.97727813507191130231287567679069",
+          "-0.058896837200187525612935831223962",
+          "0.53276168361166959614812842804959",
+          "-0.025321072628464167401982261429659",
+          "0.19531311004204363353795341815887",
+          "-0.42309787895427715815871876065562",
+          "0.98358331872166817516557690544618"
+        ],
+        "quotient_height_defect": "16.530291478996403602167541621283",
+        "raw_canonical_height": "47.265917161663848059015156050248",
+        "smallest_positive_multiplier_entering_first_shell": 1
+      },
+      "source_public_point_index_one_based": 1
+    },
+    {
+      "coordinate_size": {
+        "logarithmic_x_height_natural": "63.017599472446648",
+        "x_algebraic_degree_over_Q": 1,
+        "x_projective_height_bits": 91,
+        "y_projective_height_bits": 134
+      },
+      "divisor_class": {
+        "reason": "A point on an elliptic fibre is codimension two on the K3. A divisor class exists only after choosing a multisection through it.",
+        "status": "NOT_INTRINSIC_FOR_A_FIBRE_POINT"
+      },
+      "kummer_two_cover": {
+        "exposes_direction": true,
+        "generator_coefficients": [
+          "9338039464138807027539018148",
+          "-1",
+          "0"
+        ],
+        "generator_maximum_height_bits": 93,
+        "norm": "22793762710707513844257337517456727258373789200623123698611677337532577750876160000",
+        "norm_square_root": "150976033563965091486410671229456562470400",
+        "normalization": "alpha=X(Q)-theta",
+        "verified_rational_cover_witness": [
+          "1",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      "label": "Q2",
+      "local_kummer_code": "0x1a0080820e4019",
+      "parent_transport": {
+        "exact_roundtrip": true,
+        "parent_crossratio_base": "-593639052710827230629849/329594550547137255749376",
+        "parent_crossratio_base_projective_height_bits": 79,
+        "parent_point_canonical_height_128bit": "351.55743373838534876769885726517354597"
+      },
+      "preimage_2": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "80724436638876188356199690600219111636018786607304662599979289579467946711333868119037311986919118570756345761",
+          "-88459336966638669762377370042818228432610300345552222876097610310315816571346858212",
+          "40135524831151053170066416425680615099964565895012176614",
+          "-9338039464138807027539018148",
+          "1"
+        ],
+        "defining_polynomial_sha256": "09b5ba8aea7ee6b007b722d5b74134caa614211b65398f6f12aface31baccd20",
+        "degree": 4,
+        "factor_degrees_over_Q": [
+          4
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "1.1.2",
+          "103": "1.1.2",
+          "107": "1.1.1.1",
+          "109": "1.1.2",
+          "113": "1.3",
+          "127": "1.3",
+          "131": "2.2",
+          "139": "1.1.2",
+          "149": "1.3",
+          "151": "1.3",
+          "157": "4",
+          "163": "4",
+          "167": "1.3",
+          "173": "4",
+          "179": "1.3",
+          "181": "1.1.2",
+          "191": "1.3",
+          "193": "4",
+          "23": "1.3",
+          "29": "1.1.2",
+          "37": "1.3",
+          "43": "4",
+          "53": "1.3",
+          "59": "2.2",
+          "61": "1.3",
+          "67": "1.1.2",
+          "71": "1.1.2",
+          "73": "1.3",
+          "79": "1.3",
+          "83": "4",
+          "89": "1.1.2",
+          "97": "1.3"
+        },
+        "galois_group": {
+          "name": "S4",
+          "order": 24,
+          "pari_sign": -1,
+          "transitive_group_id": 5
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 366,
+        "polynomial_discriminant": "116308216727285856982573218742721934389826397444502234032044956221149626441677801702681840029066124475116724085357991665150324755761499761789710922233671700213858271721620375447988403729705650812073173076307752117212919209269006276248739761723165381279135215747400792473253482191046273209347594374705793708369274470400000000000000",
+        "polynomial_discriminant_bits": 1094,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "preimage_3": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "15932321655270559412829699528208287885463060692068656168203315144946955353737184301944995164454971066130871671513163663985640236062142710768394259961640630125145455009386096576703278870557986632311562083083750376023010247717227021750427077183812823",
+          "-52941188781656454569068667250921531493355104522905442543356771295763259457988686422679535342421546966931332321698476391259312527253625532449171821039292909749227738161787859629732912322992574918696905440324909249487440311",
+          "40442857733157965616916050741036735659736807418441806223078999919630418976403714335189546745175451455351248904111154249578659882606372489511151105538881881362219659666766137811645619008721500412",
+          "-1247402866412173220028619254397179905046667342845866594820088163680284369063810145729771025401255903260896003789131088170220498109074226728682533291548106566821265644",
+          "-11597019372872261593162713593647867793468929408817754357741176584074987978170127708267306648121760120217636454475224968318972314236614201582",
+          "6285620919915599715642674416567978951916470463372668477203994677732342230181985503989041652645675171955246145086",
+          "-1623692715780481383070187987075147919383488527243829583832304537203742593596732096052",
+          "240813148986906319020398498554083690599787395370073059684",
+          "-21010588794312315811962790833",
+          "1"
+        ],
+        "defining_polynomial_sha256": "a9fa8066f2c26e01707b6b9d56aa211e26be9bf681ef9d78fc6afcbcbb6419fc",
+        "degree": 9,
+        "factor_degrees_over_Q": [
+          9
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "3.6",
+          "103": "1.2.6",
+          "107": "3.6",
+          "109": "1.2.6",
+          "113": "1.8",
+          "127": "1.2.2.2.2",
+          "131": "1.8",
+          "139": "3.3.3",
+          "149": "1.8",
+          "151": "1.4.4",
+          "157": "1.4.4",
+          "163": "1.4.4",
+          "167": "1.8",
+          "173": "1.8",
+          "179": "1.8",
+          "181": "3.3.3",
+          "191": "1.8",
+          "193": "3.3.3",
+          "23": "3.6",
+          "29": "1.8",
+          "37": "1.2.2.2.2",
+          "43": "1.4.4",
+          "53": "1.1.1.2.2.2",
+          "59": "1.1.1.2.2.2",
+          "61": "1.4.4",
+          "67": "1.1.1.3.3",
+          "71": "1.8",
+          "73": "1.4.4",
+          "79": "3.3.3",
+          "83": "3.6",
+          "89": "1.8",
+          "97": "3.3.3"
+        },
+        "galois_group": {
+          "name": "E(9):2S_4",
+          "order": 432,
+          "pari_sign": -1,
+          "transitive_group_id": 26
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 822,
+        "polynomial_discriminant": "-28174667108923685027534814113986706942632923015798102605818629574257713186882903856094897374193574753379036757020109145631958035328987155301995839842118500995231094188213788773636406153782087088847573214849283463766607389101139763407387956211058097020885441491409111412563322737192234402904246105205420635214197971277091081048338837152265503750385485640327631201999581566204829277000555531488051300649312907895535876728878898044834983459767997701618015431308538817169043860449756302726256741602351816281638961659294317897411373842348805976031080297703470966145930058958531126878568104300998468928390423458393555152551045597107139429760116593178270366502263072996517438256136114585090357537097904766943447977775340810819201353684935263429198967067589675409012911793718083499444211340334082974882348615101234710880479228786760179979936867971081434908650892789016340744371157501948820017952661747134508738997409496588781677294100598302879372079168968019446220095673809909984731062349004806817919034222233738817662147574839330106767685882625421882952043204986258613615636770364828639262368471894627168450435840249447124412824078700889951824909726191965268792553282351341465185318023398358053135222089217702661306488003186654878837624311629171807628222975217711071173249759172932756665731992476386588611262080768738132157497121895630970422845539994221819333714234796870582266759539924720654690245665045435942143876073419201098651684015607675719159566328147999550673806824845625103936578242662447386527986334205305097414934355153814730764158330920586329402088050999340003848025346864742092090522125522816454361744683397587654958628793805647062260876719494459735635272274663704996141851023570857819497490778086281718240458876035765199015026306546995199188873946752791278338206678805995856287960874556866484949068971242158492143021751995413529455939286930409523711545193623487111566120521617617649652453173612332974080000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "polynomial_discriminant_bits": 6593,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "public_point": [
+        "2334509866034701756884754537",
+        "18872004195494469180868316552803627931531"
+      ],
+      "rational_bisection_relations_involving_direction": [
+        {
+          "cover_degree": 2,
+          "cover_label": "orbit-15a68",
+          "generic_correction_coordinates": [
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            -2,
+            2,
+            0,
+            -1,
+            -1,
+            4,
+            1,
+            3,
+            1,
+            -1,
+            -2,
+            3
+          ],
+          "quotient_vector": [
+            0,
+            1,
+            0,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0
+          ],
+          "trace_lattice_norm": 10
+        }
+      ],
+      "relative_height": {
+        "all_multipliers_n_at_least_2_excluded_from_first_shell_by_continuous_quotient_lower_bound": true,
+        "first_shell_representative": {
+          "canonical_height_recomputed_from_90_digit_gram": "47.34159952433953355755215520758200",
+          "correction_in_specialized_generic_R17_basis": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "in_or_below_specialized_generic_first_shell": true,
+          "rounded_minimum_heights": [
+            "47.3416",
+            "47.3416",
+            "47.3416"
+          ],
+          "specialized_generic_first_shell_height": "47.87855238606437426789368363679301",
+          "specialized_generic_first_shell_vector": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "stable_across_integer_gram_scales": [
+            10000,
+            100000,
+            1000000
+          ]
+        },
+        "intersection_analogue": {
+          "quotient_height_correlations": [
+            "0.14529022903594885",
+            "0.99999999999999989",
+            "0.24369737601931726",
+            "0.17366457373374994",
+            "-0.4905034190618664",
+            "0.11104542052137061",
+            "-0.21022987093835038",
+            "0.097800837130554263",
+            "0.38732876037858727",
+            "0.069294689783131261",
+            "-0.23676900366485054"
+          ],
+          "status": "HEIGHT_PAIRING_PROFILE_NOT_K3_INTERSECTION",
+          "strongest_negative": {
+            "correlation": "-0.4905034190618664",
+            "label": "Q5"
+          },
+          "strongest_positive": {
+            "correlation": "0.38732876037858727",
+            "label": "Q9"
+          }
+        },
+        "orthogonal_projection_coefficients_in_generic_basis": [
+          "0.36050378898677328713577028719210",
+          "0.17986050176581739716904198579445",
+          "-0.77669439852430778184626516689771",
+          "0.74161348608190543425258512838669",
+          "0.32378059503797452081560519094936",
+          "-0.68289890474562478931028434928897",
+          "0.81118737095868365384520105334996",
+          "0.42439135259982043093402200054253",
+          "-0.29079641756023465485983481361304",
+          "-0.64489735370620732082479153453903",
+          "0.86315554599196823674728471441059",
+          "0.21527076363174348383153568557709",
+          "1.0794027586975262779145173197740",
+          "-0.80866247877600355801658192382069",
+          "0.41741254988578156865231799280055",
+          "-0.70479778892284299505053482266042",
+          "0.67685586136319143637213238981491"
+        ],
+        "quotient_height_defect": "25.033733346993264720173115008332",
+        "raw_canonical_height": "47.341599524339533557552155207582",
+        "smallest_positive_multiplier_entering_first_shell": 1
+      },
+      "source_public_point_index_one_based": 2
+    },
+    {
+      "coordinate_size": {
+        "logarithmic_x_height_natural": "62.683660150637273",
+        "x_algebraic_degree_over_Q": 1,
+        "x_projective_height_bits": 91,
+        "y_projective_height_bits": 138
+      },
+      "divisor_class": {
+        "reason": "A point on an elliptic fibre is codimension two on the K3. A divisor class exists only after choosing a multisection through it.",
+        "status": "NOT_INTRINSIC_FOR_A_FIBRE_POINT"
+      },
+      "kummer_two_cover": {
+        "exposes_direction": true,
+        "generator_coefficients": [
+          "-6686944216249476255516154652",
+          "-1",
+          "0"
+        ],
+        "generator_maximum_height_bits": 93,
+        "norm": "4054887078476328976597195775662217108545242118484918113130883555044499108242434560000",
+        "norm_square_root": "2013675018089147615523839328454297492238400",
+        "normalization": "alpha=X(Q)-theta",
+        "verified_rational_cover_witness": [
+          "1",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      "label": "Q3",
+      "local_kummer_code": "0x190888820e002f",
+      "parent_transport": {
+        "exact_roundtrip": true,
+        "parent_crossratio_base": "24373918876883401382347720487/36314370531398930577307578112",
+        "parent_crossratio_base_projective_height_bits": 95,
+        "parent_point_canonical_height_128bit": "442.21622209908542866069166174095883679"
+      },
+      "preimage_2": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "633291702927724994274530178931985249305530025289165429665243211708780217904641793960676418210400501118779670161",
+          "-410044902178145837769231534294602937771964786744520540733112489355200218127112817412",
+          "40135524831151053170066416413661877339673353432720797014",
+          "6686944216249476255516154652",
+          "1"
+        ],
+        "defining_polynomial_sha256": "1c40f6932db1c36ef6b00a5cfd96b99644868401672f296e4708ed8b8f691ed9",
+        "degree": 4,
+        "factor_degrees_over_Q": [
+          4
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "1.1.2",
+          "103": "1.1.2",
+          "107": "2.2",
+          "109": "4",
+          "113": "1.3",
+          "127": "1.3",
+          "131": "2.2",
+          "139": "1.1.2",
+          "149": "1.3",
+          "151": "1.3",
+          "157": "4",
+          "163": "4",
+          "167": "1.3",
+          "173": "4",
+          "179": "1.3",
+          "181": "1.1.2",
+          "191": "1.3",
+          "193": "1.1.2",
+          "23": "1.3",
+          "29": "4",
+          "37": "1.3",
+          "43": "1.1.2",
+          "53": "1.3",
+          "59": "2.2",
+          "61": "1.3",
+          "67": "1.1.2",
+          "71": "1.1.2",
+          "73": "1.3",
+          "79": "1.3",
+          "83": "4",
+          "89": "4",
+          "97": "1.3"
+        },
+        "galois_group": {
+          "name": "S4",
+          "order": 24,
+          "pari_sign": -1,
+          "transitive_group_id": 5
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 369,
+        "polynomial_discriminant": "3680746265426899314059620025436751027307890270826766243779893305880983889224080386620012245528595838216688981203744850734088073975242064152889978584950792930899195450813415735677746538326743347749734423402923029928802241263258890072437344476854478804358576980820485430128271492505012441953591791992931559572283323737702400000000000000",
+        "polynomial_discriminant_bits": 1109,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "preimage_3": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "665663051090821782843501740840586041828539714611701927616571305076330644964771193765193530989050362033125771191642365674029205384912490379845015080361616978970160207738755346204631258643787419833636877642968907537283232128605010742685436588063932823",
+          "-1388104241618276629370542679982768915598202923703552254543837562100055127136535002989908483958096029121670090242050733953516329097429429890278076311653272729654013435105018473150162476686426669159240713571263174594538696311",
+          "1114887694474501108104971391670413232788392814721780311589333189171579329709970295957628850935419952542147570468608919554173304086072592443549264132953406263653932830382313845090194779607210357612",
+          "-400443793132724428320607531710204010777759689023857945797137422341897989633513282845454304826474314719655828755852982526281245760149469593134804120684375845984729815244",
+          "36804251019200959260136220871174407277355841297868563957011364857773868282785700023537052201773487509622351197846100848652218855517039040418",
+          "16231831713114878222172623209434039516871237271707849762644807660114153489252243029851679476072299671821559617086",
+          "-4517962802684045895131875465341210303437678904834544444509382235326828570211751590052",
+          "240813148986906319020398498481971264038040120596324782084",
+          "15045624486561321574911347967",
+          "1"
+        ],
+        "defining_polynomial_sha256": "df476b6f5d76dc57a2f8589daaffaeed11377e7cd6d57bab0bd8cee5888c23b9",
+        "degree": 9,
+        "factor_degrees_over_Q": [
+          9
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "3.6",
+          "103": "1.2.6",
+          "107": "3.6",
+          "109": "1.2.6",
+          "113": "1.8",
+          "127": "1.2.2.2.2",
+          "131": "1.8",
+          "139": "1.1.1.1.1.1.1.1.1",
+          "149": "1.8",
+          "151": "1.4.4",
+          "157": "1.4.4",
+          "163": "1.4.4",
+          "167": "1.8",
+          "173": "1.8",
+          "179": "1.8",
+          "181": "1.1.1.3.3",
+          "191": "1.8",
+          "193": "3.3.3",
+          "23": "1.1.1.2.2.2",
+          "29": "1.8",
+          "37": "1.2.2.2.2",
+          "43": "1.4.4",
+          "53": "3.6",
+          "59": "3.6",
+          "61": "1.4.4",
+          "67": "3.3.3",
+          "71": "1.8",
+          "73": "1.4.4",
+          "79": "1.1.1.3.3",
+          "83": "3.6",
+          "89": "1.8",
+          "97": "3.3.3"
+        },
+        "galois_group": {
+          "name": "E(9):2S_4",
+          "order": 432,
+          "pari_sign": -1,
+          "transitive_group_id": 26
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 827,
+        "polynomial_discriminant": "-28216929922392996485323702888874918512220430962824544152048288872928492069534073061804815964934622853899063177888288019255448372482028144730805934033078460003420374446458186207937843762512893447959541182191788903889430477878446257803419425872615373448475822038161270685307441607610392573155431581962672982489887009301526467695914979727507277454998894021585653436275413263719262096562108601171013322044135294231274686282143290112269829064202186449394600816806192618929638056936781244381074700108437978464815604606593756360128536439133316869762698707475969801919919640653518811842308200251365714975394743527682872634085687593554074294511674060282241507650964986101553374027224940776238591776517206375809447295973098856337404335284048999351425093853978423683908511631208368094758610950525998235276028630817238940619258870864382099119505931296389310900938807438899516769634232486312608374803473219378176284773318689386185391504052612842977016502209399077113889509329937827629679975489368046364279009188858868330740877631427330622608594275749681675286624067832937448096755072158093401705420911465257860235091466962276503562969414872767579992109731219299404847584677790960384220581381417981013158839566688470716151353600332301347244037175762309750798744187542997430651851123024320131575854979146708132662676584436295600534059638198875246579021060010277838749191352665868411303189537550443899261162034174815741667957123845997471338262674168948990384493645668892977929111629222427036129881036231339348058280571247547453679235834224749996560711036870194955072604624923919760892616154022402965339196263498029262478387518794768927144656061519784955791175711227097016260275183201101336223175115120675506252524063353173786203626393834947047931057329018243151304804661063646768658163538954314090507407804846984402584914053018681470110166709616434817030377595932499446755536917894230692135713847209166973862174162399355347646944378880000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "polynomial_discriminant_bits": 6623,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "public_point": [
+        "-1671736054062369063879038663",
+        "251709377261144287808506947241319126049131"
+      ],
+      "rational_bisection_relations_involving_direction": [],
+      "relative_height": {
+        "all_multipliers_n_at_least_2_excluded_from_first_shell_by_continuous_quotient_lower_bound": true,
+        "first_shell_representative": {
+          "canonical_height_recomputed_from_90_digit_gram": "47.48093675482066652016240131376900",
+          "correction_in_specialized_generic_R17_basis": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "in_or_below_specialized_generic_first_shell": true,
+          "rounded_minimum_heights": [
+            "47.4809",
+            "47.48094",
+            "47.480937"
+          ],
+          "specialized_generic_first_shell_height": "47.87855238606437426789368363679301",
+          "specialized_generic_first_shell_vector": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "stable_across_integer_gram_scales": [
+            10000,
+            100000,
+            1000000
+          ]
+        },
+        "intersection_analogue": {
+          "quotient_height_correlations": [
+            "0.32541718874838027",
+            "0.24369737601931726",
+            "0.99999999999999989",
+            "0.32399765668101516",
+            "-0.39889869604740841",
+            "-0.35472043081350052",
+            "-0.29164042797243406",
+            "-0.39092085847267721",
+            "0.33435650963126501",
+            "-0.34105883248625146",
+            "-0.37328538778757503"
+          ],
+          "status": "HEIGHT_PAIRING_PROFILE_NOT_K3_INTERSECTION",
+          "strongest_negative": {
+            "correlation": "-0.39889869604740841",
+            "label": "Q5"
+          },
+          "strongest_positive": {
+            "correlation": "0.33435650963126501",
+            "label": "Q9"
+          }
+        },
+        "orthogonal_projection_coefficients_in_generic_basis": [
+          "0.14122980132926586456998241363225",
+          "0.26673373817791497989060264401479",
+          "0.22148345522057471648393060392140",
+          "-0.60187096558521676924957821719747",
+          "0.85548110121524353319555072100063",
+          "-1.0999964721466911416108908761083",
+          "0.54159545565422756587462883433961",
+          "-0.52086899817822559537322458044302",
+          "-0.25343297324416764595699886276621",
+          "0.76650032019801556872663339209722",
+          "0.92587514114777375493055464800110",
+          "0.39639740202494297448157576998359",
+          "0.52888964731823881848984734678852",
+          "-0.32112620288714971034385136848327",
+          "-0.62118826966311631126792924151945",
+          "-0.47755118220708212215770547602509",
+          "0.24735963352911667088672980193660"
+        ],
+        "quotient_height_defect": "27.069127488629630788956142806637",
+        "raw_canonical_height": "47.480936754820666520162401313769",
+        "smallest_positive_multiplier_entering_first_shell": 1
+      },
+      "source_public_point_index_one_based": 3
+    },
+    {
+      "coordinate_size": {
+        "logarithmic_x_height_natural": "62.930196836766079",
+        "x_algebraic_degree_over_Q": 1,
+        "x_projective_height_bits": 91,
+        "y_projective_height_bits": 135
+      },
+      "divisor_class": {
+        "reason": "A point on an elliptic fibre is codimension two on the K3. A divisor class exists only after choosing a multisection through it.",
+        "status": "NOT_INTRINSIC_FOR_A_FIBRE_POINT"
+      },
+      "kummer_two_cover": {
+        "exposes_direction": true,
+        "generator_coefficients": [
+          "8556521040556626665971928548",
+          "-1",
+          "0"
+        ],
+        "generator_maximum_height_bits": 93,
+        "norm": "85917032468742042125678963933014537727453723439490869740694215123158338377341440000",
+        "norm_square_root": "293116073371526390140412234170196352148800",
+        "normalization": "alpha=X(Q)-theta",
+        "verified_rational_cover_witness": [
+          "1",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      "label": "Q4",
+      "local_kummer_code": "0x180088024e48b6",
+      "parent_transport": {
+        "exact_roundtrip": true,
+        "parent_crossratio_base": "-6022538025037028862310934572344887/9933546790743811574343675865014528",
+        "parent_crossratio_base_projective_height_bits": 113,
+        "parent_point_canonical_height_128bit": "472.84394746733170182243079159385954827"
+      },
+      "preimage_2": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "107672451531501185305374671876162142140016825956028620260761732347985465367281012761110839956855549963402356561",
+          "-104142663014480983115449309776394629729632100142254123697100898973103823183699892612",
+          "40135524831151053170066416425094476282277930623836859414",
+          "-8556521040556626665971928548",
+          "1"
+        ],
+        "defining_polynomial_sha256": "b1e115763cbd9adc99c395bc80e93ee8ca1371e9248982c95f0f53aa6a307467",
+        "degree": 4,
+        "factor_degrees_over_Q": [
+          4
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "1.1.2",
+          "103": "4",
+          "107": "2.2",
+          "109": "1.1.2",
+          "113": "1.3",
+          "127": "1.3",
+          "131": "2.2",
+          "139": "1.1.2",
+          "149": "1.3",
+          "151": "1.3",
+          "157": "1.1.2",
+          "163": "1.1.2",
+          "167": "1.3",
+          "173": "4",
+          "179": "1.3",
+          "181": "4",
+          "191": "1.3",
+          "193": "1.1.2",
+          "23": "1.3",
+          "29": "1.1.2",
+          "37": "1.3",
+          "43": "1.1.2",
+          "53": "1.3",
+          "59": "2.2",
+          "61": "1.3",
+          "67": "1.1.2",
+          "71": "4",
+          "73": "1.3",
+          "79": "1.3",
+          "83": "1.1.2",
+          "89": "1.1.2",
+          "97": "1.3"
+        },
+        "galois_group": {
+          "name": "S4",
+          "order": 24,
+          "pari_sign": -1,
+          "transitive_group_id": 5
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 366,
+        "polynomial_discriminant": "1652482572375983193877011682449054223824483707897840777833945757837552306117447763861741327036892713250187425316761322702287534917896189713380988642521890358219559755293381969908420226009339043426868731551395515668517144886397575190255567818294234119356033635554197779771733541940866908942571912562585874027425195622400000000000000",
+        "polynomial_discriminant_bits": 1097,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "preimage_3": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "47618877195592256853796538438635760180129936224983760374789911494159400872342751107231287343692458495204013017682269267018717842953242927677040675109140666491966382481454513636444238384360932606514368314754264743132993688397768983845266607546652823",
+          "-118055421974608075489190292926314041289627123903847676205434970737933409850988803155032340499453397831951228646941131339769982787599285988935299369770445072915345749642974723142623155812439541084752878269700462470593832311",
+          "92842189413211311582162548686593445003166428761904386027954610737922065522658329207140251044791311840330588613645009532845615834687794521106304565665510254065721936371985845185145505026913120812",
+          "-20715711842129394264254534070188060445106111329870640499012661927518708868257443133395867205050371852301819795986229350583652095861689928213067292284122328266386272844",
+          "-9236549915266461801894913003951265277815239798783583985365261295605756541372380635210257321280358324360134861847566989065809781677650807582",
+          "6770685187982849660727824079676103435419015991827347172700266259238853764159351214935394754069622996534051649086",
+          "-1764842650211062203247835444677335531056684725414146691219575718715774747294383454052",
+          "240813148986906319020398498550566857693667583743021156484",
+          "-19252172341252409998436839233",
+          "1"
+        ],
+        "defining_polynomial_sha256": "75c9e64179a0091a4ec55c9453efa0cea0ef47d7f0023e29b1371112e8cc1102",
+        "degree": 9,
+        "factor_degrees_over_Q": [
+          9
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "1.1.1.2.2.2",
+          "103": "1.2.6",
+          "107": "1.1.1.2.2.2",
+          "109": "1.2.6",
+          "113": "1.8",
+          "127": "1.2.2.2.2",
+          "131": "1.8",
+          "139": "3.3.3",
+          "149": "1.8",
+          "151": "1.4.4",
+          "157": "1.4.4",
+          "163": "1.4.4",
+          "167": "1.8",
+          "173": "1.8",
+          "179": "1.8",
+          "181": "1.1.1.3.3",
+          "191": "1.8",
+          "193": "3.3.3",
+          "23": "3.6",
+          "29": "1.8",
+          "37": "1.2.2.2.2",
+          "43": "1.4.4",
+          "53": "1.1.1.2.2.2",
+          "59": "3.6",
+          "61": "1.4.4",
+          "67": "1.1.1.3.3",
+          "71": "1.8",
+          "73": "1.4.4",
+          "79": "1.1.1.3.3",
+          "83": "1.1.1.2.2.2",
+          "89": "1.8",
+          "97": "3.3.3"
+        },
+        "galois_group": {
+          "name": "E(9):2S_4",
+          "order": 432,
+          "pari_sign": -1,
+          "transitive_group_id": 26
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 823,
+        "polynomial_discriminant": "-5687373830169568561502907937063492633146057950734803275176027675457551348951241333532707096218104189635508904989799909923869472607058619971034790965026782712952004367434953987563602120025964201177226374145699440793584877369124059601604753030598340819861185002427177335907925222838860243684154274083777473697310956219474478893276550851493599068566445443608783090754549613413161638029317751318797972381469436214669842216708148539242990052616063990508146824595387820944580899564039054514682335769680884851965252924524479628159104963967237431581335515252478327459377894335537880681724666899656307093984685982101283902170518817420040217757218706133285425115796318282401909115957638264754427166165158015529917199055372548458826202372336829641698027397013169335806699626651397853229461369273636929739213535872096273465300211701345244550659452303763058154210028112168327395241983859238326279108383027835476816357746541697306815330316107499837281739287791261600134243216113179624913540140047752926766371140541685528799248465249237650107951675187270574196703305468611624512731077989695105385690894722227678047225976527393109403147462674768370124399268783720221522589438865360084184430431783059931808726092067183451616877528297806016877999289506121828839825297369712350979597072434079680406471554674451038470811193683815019699848995565821634160412304793732191485324549954304690824138670994303840279359516055108495176515849444748387853582218150651175783811856787594409729244761656069381668475867072407574439889823749764655771057923000018021209031758284109336216372100824069043406611474781529340570413688694682562130365665301660964908594194434582435752113480232269239851741146775642509637358757569956281432683353590470786095422772824525667964703226698802358869082080865320648766156465060952493486466362787326225739137152113168153336806608525724920760597253314288656377233471526114100744720629312734910700723216454454744186880000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "polynomial_discriminant_bits": 6600,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "public_point": [
+        "2139130260139156666492982137",
+        "36639509171439729202421459692941297527531"
+      ],
+      "rational_bisection_relations_involving_direction": [
+        {
+          "cover_degree": 2,
+          "cover_label": "orbit-15a68",
+          "generic_correction_coordinates": [
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            -2,
+            2,
+            0,
+            -1,
+            -1,
+            4,
+            1,
+            3,
+            1,
+            -1,
+            -2,
+            3
+          ],
+          "quotient_vector": [
+            0,
+            1,
+            0,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0
+          ],
+          "trace_lattice_norm": 10
+        }
+      ],
+      "relative_height": {
+        "all_multipliers_n_at_least_2_excluded_from_first_shell_by_continuous_quotient_lower_bound": true,
+        "first_shell_representative": {
+          "canonical_height_recomputed_from_90_digit_gram": "47.56150575667920759152411026992100",
+          "correction_in_specialized_generic_R17_basis": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "in_or_below_specialized_generic_first_shell": true,
+          "rounded_minimum_heights": [
+            "47.5615",
+            "47.56151",
+            "47.561506"
+          ],
+          "specialized_generic_first_shell_height": "47.87855238606437426789368363679301",
+          "specialized_generic_first_shell_vector": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "stable_across_integer_gram_scales": [
+            10000,
+            100000,
+            1000000
+          ]
+        },
+        "intersection_analogue": {
+          "quotient_height_correlations": [
+            "-0.095558795466388596",
+            "0.17366457373374994",
+            "0.32399765668101516",
+            "1.0000000000000002",
+            "0.057994069756195733",
+            "-0.32909253260926641",
+            "0.12482674988284394",
+            "-0.15519564882642706",
+            "0.37395348535236428",
+            "0.20049568927307357",
+            "-0.23891105301453405"
+          ],
+          "status": "HEIGHT_PAIRING_PROFILE_NOT_K3_INTERSECTION",
+          "strongest_negative": {
+            "correlation": "-0.32909253260926641",
+            "label": "Q6"
+          },
+          "strongest_positive": {
+            "correlation": "0.37395348535236428",
+            "label": "Q9"
+          }
+        },
+        "orthogonal_projection_coefficients_in_generic_basis": [
+          "0.28213154713686493703938348441202",
+          "0.32339331638710785678087060566923",
+          "-0.63148022637954963930895539154931",
+          "0.068382801900879291340809913959548",
+          "0.54292502508452873169836670937727",
+          "-0.92714011711680387655372827635555",
+          "1.2033454844655506013220681658658",
+          "0.084470801854205521777057494338280",
+          "0.14930343925601328006744423713660",
+          "-0.13295451121675136732684862513969",
+          "0.87074678067361685104574807525908",
+          "0.12876591032521736181854921720470",
+          "0.72080321313802868441296081367077",
+          "0.17278927494332046525077822290711",
+          "-0.60388349735899205358426640448335",
+          "-0.68773861781051542314645674446420",
+          "0.77756358693684167879244126973982"
+        ],
+        "quotient_height_defect": "18.967882878616286966390049922838",
+        "raw_canonical_height": "47.561505756679207591524110269921",
+        "smallest_positive_multiplier_entering_first_shell": 1
+      },
+      "source_public_point_index_one_based": 4
+    },
+    {
+      "coordinate_size": {
+        "logarithmic_x_height_natural": "63.190709941577332",
+        "x_algebraic_degree_over_Q": 1,
+        "x_projective_height_bits": 92,
+        "y_projective_height_bits": 134
+      },
+      "divisor_class": {
+        "reason": "A point on an elliptic fibre is codimension two on the K3. A divisor class exists only after choosing a multisection through it.",
+        "status": "NOT_INTRINSIC_FOR_A_FIBRE_POINT"
+      },
+      "kummer_two_cover": {
+        "exposes_direction": true,
+        "generator_coefficients": [
+          "11102905067378286598821834148",
+          "-1",
+          "0"
+        ],
+        "generator_maximum_height_bits": 94,
+        "norm": "10560859756684662400937531566673525003320115010283743952538950947244519746600960000",
+        "norm_square_root": "102766043792123584896023279879259944793600",
+        "normalization": "alpha=X(Q)-theta",
+        "verified_rational_cover_witness": [
+          "1",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      "label": "Q5",
+      "local_kummer_code": "0x888802404036",
+      "parent_transport": {
+        "exact_roundtrip": true,
+        "parent_crossratio_base": "63558715033019589761529470921730977/3692718805338790007186991979084032",
+        "parent_crossratio_base_projective_height_bits": 116,
+        "parent_point_canonical_height_128bit": "558.68418531545689987397009485523658674"
+      },
+      "preimage_2": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "19869026037570031303769561572817624702279954908695365966722912079316848335377307781466747601732101561319577761",
+          "-53042433345407412303952771141413155099949716390029409853428145811639731952918634212",
+          "40135524831151053170066416427004264302394175573474288614",
+          "-11102905067378286598821834148",
+          "1"
+        ],
+        "defining_polynomial_sha256": "90f451da3a6e109ac499ba05bf664191f2fb5e93871005e4a517809d726d39a1",
+        "degree": 4,
+        "factor_degrees_over_Q": [
+          4
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "1.1.2",
+          "103": "4",
+          "107": "2.2",
+          "109": "1.1.2",
+          "113": "1.3",
+          "127": "1.3",
+          "131": "2.2",
+          "139": "1.1.2",
+          "149": "1.3",
+          "151": "1.3",
+          "157": "1.1.2",
+          "163": "4",
+          "167": "1.3",
+          "173": "1.1.2",
+          "179": "1.3",
+          "181": "1.1.2",
+          "191": "1.3",
+          "193": "1.1.2",
+          "23": "1.3",
+          "29": "4",
+          "37": "1.3",
+          "43": "4",
+          "53": "1.3",
+          "59": "2.2",
+          "61": "1.3",
+          "67": "4",
+          "71": "4",
+          "73": "1.3",
+          "79": "1.3",
+          "83": "4",
+          "89": "4",
+          "97": "1.3"
+        },
+        "galois_group": {
+          "name": "S4",
+          "order": 24,
+          "pari_sign": -1,
+          "transitive_group_id": 5
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 364,
+        "polynomial_discriminant": "24967605993134328963680193054698081959488993785364785779046183961558398712542672220393843127626962457768396531812380130563211774262230387800899722478872665107766624798963758507871590087621758090876817326838059624615408863557641328194947432736061082471926575936052775842973657842891285075012944043556173253469169254400000000000000",
+        "polynomial_discriminant_bits": 1091,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "preimage_3": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "-55623908205471308641196201551232130140694674682671158471702655804122274781666751959942645198330187532184851107194941605174097591825238729544471654818356510153193604902376977113408644982407987724225287753953296604043751138127943068270214987862587177",
+          "94103163566193920083206391737798902977110815723773197287368535488354818642157136071155993009650937945165986916509182263845723763602936591574676342111091171847799270733308348598373752194241253068278194146541954376984879689",
+          "-77888041864807103816725886665604645118838891937440914953614513903213439313802299070675781853354118057232680187960701613599386579431599576708605831484560400527382587742907945553349189361537283588",
+          "42716946312962920361735667161695120773029130742241207717875071819604743976325748617932651193273396487299145207212650054089446579802294624352171900718964518319763246356",
+          "-16927554428118802048469756707240721684571390205391042897852899372913523312691532615882401878814941926874849994152460353998447671993524441582",
+          "5190223529092088888698932093756000054518090175671879747692734222735677203815062100708746313224224104219530305086",
+          "-1304940583189400065944366596962502259389543271644124266632250304322946661066264416052",
+          "240813148986906319020398498562025585814365053440845731684",
+          "-24981536401601144847349126833",
+          "1"
+        ],
+        "defining_polynomial_sha256": "fd572cb5e7eac744fddcceff551caaea9973df78f70fa5b4a1ab41211378474e",
+        "degree": 9,
+        "factor_degrees_over_Q": [
+          9
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "3.6",
+          "103": "1.2.6",
+          "107": "3.6",
+          "109": "1.2.6",
+          "113": "1.8",
+          "127": "1.2.2.2.2",
+          "131": "1.8",
+          "139": "3.3.3",
+          "149": "1.8",
+          "151": "1.4.4",
+          "157": "1.4.4",
+          "163": "1.4.4",
+          "167": "1.8",
+          "173": "1.8",
+          "179": "1.8",
+          "181": "3.3.3",
+          "191": "1.8",
+          "193": "3.3.3",
+          "23": "3.6",
+          "29": "1.8",
+          "37": "1.2.2.2.2",
+          "43": "1.4.4",
+          "53": "1.1.1.2.2.2",
+          "59": "3.6",
+          "61": "1.4.4",
+          "67": "3.3.3",
+          "71": "1.8",
+          "73": "1.4.4",
+          "79": "3.3.3",
+          "83": "3.6",
+          "89": "1.8",
+          "97": "1.1.1.3.3"
+        },
+        "galois_group": {
+          "name": "E(9):2S_4",
+          "order": 432,
+          "pari_sign": -1,
+          "transitive_group_id": 26
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 823,
+        "polynomial_discriminant": "-1298350064396511946526360779380804415128833002541895759717878868304265179462202253419688323943507495959398793416151592596386797856964370645525932350413990113732223624563100578865872185282086804053980678243629086743532157537306645686437794515501461942979580622573857753381307692895345574033006356483625052472973415875152157231677776752420551028176864210805355962392304025212238162085050262730300265004703928032527475705650543821681141275558003383610344731317009987796350813710341736552463297559706962739044309447028701382603450469548884740763874614482749401132965140331291286072280320732833925688897588825962454021163815579078458472892940359256063987845873350241918376459699634639862122596034441131713807549683560637051488819248873323673375749206418564110939375592523728524353135017623668302244542367571081012348232581062879016555995212290360316009590819795839043544273810073154584547472353696989888210179684914550582689327981307750374611897116130106197568679784103664843067577593697614354426560924153567739145127899494258223528132457367559269794671149923948076204130482188633126823096746340958456675158231622553442812978399138945897844069490335252397771499081895688220505717663578213155834069500986408849613410370416182103676228722010776793916051434033052493733570175129634053618418271811972520334331746202289849414939896635510144258456713223997995086935147617201177767251365289342417220949576563321859471117852395635152594560875903136958095613709184760553446514287313274540437070063062088952277242269722504301601910182448170014986939016671627314793639247836418221702864158597608199282052665853889351416420179943939446518072322474769399527238059696109741281181885402940400610886972274626471837713971100904875188247737342358354402129896786941537553014094554438333249684241145441918061209894798140416576521334216533981047147203911414308530899258396000527929600634988099743161143844918927927478327835581145415680000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "polynomial_discriminant_bits": 6588,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "public_point": [
+        "2775726266844571649705458537",
+        "12845755474014060248869487699082640369931"
+      ],
+      "rational_bisection_relations_involving_direction": [
+        {
+          "cover_degree": 2,
+          "cover_label": "orbit-15a68",
+          "generic_correction_coordinates": [
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            -2,
+            2,
+            0,
+            -1,
+            -1,
+            4,
+            1,
+            3,
+            1,
+            -1,
+            -2,
+            3
+          ],
+          "quotient_vector": [
+            0,
+            1,
+            0,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0
+          ],
+          "trace_lattice_norm": 10
+        }
+      ],
+      "relative_height": {
+        "all_multipliers_n_at_least_2_excluded_from_first_shell_by_continuous_quotient_lower_bound": true,
+        "first_shell_representative": {
+          "canonical_height_recomputed_from_90_digit_gram": "48.00963519273644795348118857027300",
+          "correction_in_specialized_generic_R17_basis": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "in_or_below_specialized_generic_first_shell": false,
+          "rounded_minimum_heights": [
+            "48.0096",
+            "48.00964",
+            "48.009635"
+          ],
+          "specialized_generic_first_shell_height": "47.87855238606437426789368363679301",
+          "specialized_generic_first_shell_vector": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "stable_across_integer_gram_scales": [
+            10000,
+            100000,
+            1000000
+          ]
+        },
+        "intersection_analogue": {
+          "quotient_height_correlations": [
+            "-0.2286549096903297",
+            "-0.4905034190618664",
+            "-0.39889869604740841",
+            "0.057994069756195733",
+            "1.0000000000000002",
+            "0.10962218665079319",
+            "-0.032367196091918814",
+            "0.41699364243855713",
+            "-0.10736873737826848",
+            "-0.070152140555429912",
+            "0.30757501437496299"
+          ],
+          "status": "HEIGHT_PAIRING_PROFILE_NOT_K3_INTERSECTION",
+          "strongest_negative": {
+            "correlation": "-0.4905034190618664",
+            "label": "Q2"
+          },
+          "strongest_positive": {
+            "correlation": "0.41699364243855713",
+            "label": "Q8"
+          }
+        },
+        "orthogonal_projection_coefficients_in_generic_basis": [
+          "-0.30587714378931717178390245886732",
+          "0.40244578489960563092793852354267",
+          "-0.17438410993349198055720776247709",
+          "0.015303871169200618822083492655905",
+          "0.48208678815105403683929688277590",
+          "-0.32760569307034962363163050872108",
+          "-0.39799951419306315013479029962512",
+          "-0.30673400572508486575105011965259",
+          "-0.29716599361228109847141700690571",
+          "0.43496258141436878230093611476053",
+          "-0.61400614185305864129368301555567",
+          "-0.36562329321451687661820527253742",
+          "-0.31045201658356252139954890443959",
+          "-0.061560424452482389529837924828864",
+          "0.19934397705068193745506417156889",
+          "0.50231865306543130682328045582878",
+          "-0.042474243239611105893858640641284"
+        ],
+        "quotient_height_defect": "20.092834100906144587204224364234",
+        "raw_canonical_height": "48.009635192736447953481188570273",
+        "smallest_positive_multiplier_entering_first_shell": null
+      },
+      "source_public_point_index_one_based": 7
+    },
+    {
+      "coordinate_size": {
+        "logarithmic_x_height_natural": "62.571512749852985",
+        "x_algebraic_degree_over_Q": 1,
+        "x_projective_height_bits": 91,
+        "y_projective_height_bits": 137
+      },
+      "divisor_class": {
+        "reason": "A point on an elliptic fibre is codimension two on the K3. A divisor class exists only after choosing a multisection through it.",
+        "status": "NOT_INTRINSIC_FOR_A_FIBRE_POINT"
+      },
+      "kummer_two_cover": {
+        "exposes_direction": true,
+        "generator_coefficients": [
+          "5977542917308755830167335268",
+          "-1",
+          "0"
+        ],
+        "generator_maximum_height_bits": 93,
+        "norm": "501112278900533273166037536737284997609231044831020592011270259536417721260818534400",
+        "norm_square_root": "707892844221873225431849264868224034626880",
+        "normalization": "alpha=X(Q)-theta",
+        "verified_rational_cover_witness": [
+          "1",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      "label": "Q6",
+      "local_kummer_code": "0x1b0008800e4476",
+      "parent_transport": {
+        "exact_roundtrip": true,
+        "parent_crossratio_base": "5524324389678539541980111/29331484644412400594376192",
+        "parent_crossratio_base_projective_height_bits": 85,
+        "parent_point_canonical_height_128bit": "387.60435511205280800204670029127436669"
+      },
+      "preimage_2": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "196599774005210736485892658706900300572636146895609627707784163394883604254103561652404532523453878469651062001",
+          "-155896983266786113675131562541188251629338069308146010932051301333090797494719102532",
+          "40135524831151053170066416423160242689842027496983414454",
+          "-5977542917308755830167335268",
+          "1"
+        ],
+        "defining_polynomial_sha256": "0c6bc9d2a74500babab34530fc6176c9581bf661f6f1fcaa64813132a5bb7a0e",
+        "degree": 4,
+        "factor_degrees_over_Q": [
+          4
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "4",
+          "103": "4",
+          "107": "2.2",
+          "109": "1.1.2",
+          "113": "1.3",
+          "127": "1.3",
+          "131": "2.2",
+          "139": "1.1.2",
+          "149": "1.3",
+          "151": "1.3",
+          "157": "1.1.2",
+          "163": "4",
+          "167": "1.3",
+          "173": "1.1.2",
+          "179": "1.3",
+          "181": "1.1.2",
+          "191": "1.3",
+          "193": "1.1.2",
+          "23": "1.3",
+          "29": "1.1.2",
+          "37": "1.3",
+          "43": "1.1.2",
+          "53": "1.3",
+          "59": "2.2",
+          "61": "1.3",
+          "67": "4",
+          "71": "4",
+          "73": "1.3",
+          "79": "1.3",
+          "83": "4",
+          "89": "4",
+          "97": "1.3"
+        },
+        "galois_group": {
+          "name": "S4",
+          "order": 24,
+          "pari_sign": -1,
+          "transitive_group_id": 5
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 367,
+        "polynomial_discriminant": "56214511418951538499221208667558143645375953455659819982714022457052970977017398258655630985579528071735377753452303904722524775323258194477757290488126538023475756846248161649376836355970932436866116972591595944156882366592914736270256084431834572121995779750413246951409547072519144357369471991502783929761186823001866240000000000",
+        "polynomial_discriminant_bits": 1103,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "preimage_3": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "152183185692633264113847698573005665772453965292091283571667947792480165259472138999717158240944897731888080309102310858720300728123216901633536217669348486111530500442350234712409285655023388935090902256694743696026784703707710611500580202947564823",
+          "-332929669144577887762989636772269889884609404175150037176674380266963433103068947290104461432050515961490080561506074963594623437480144360121406747176759020711758767223747377838534280212966469884937692889808065434968977911",
+          "265757793189065757600307686275832623925975527265075047954072362435171134248118944286452724096071772149260551060504477561893977709017360702186848907881563174296387802917063795500571018841421155532",
+          "-84960317509733636485203445964234302978525411765656815823244160480864821223660885883762501557663418407548216430008652185761714499809101333893711634055049965168472209804",
+          "-1447099394244950276749035969607423449466655541840844493783258529611265135811455843252078489549253131322701082870824492888181179968916968382",
+          "8371376992509621581977147843095179169476909943776945581629812615180373986615184080093234841508275678445701236286",
+          "-2230631532481808378284975719560478128154038447907173676328326639178349806712996008452",
+          "240813148986906319020398498538961456139052164981900486724",
+          "-13449471563944700617876504353",
+          "1"
+        ],
+        "defining_polynomial_sha256": "b7e0da55141ecfc2de2b104a0ac7f6b153c577726830935640e94f1b03023385",
+        "degree": 9,
+        "factor_degrees_over_Q": [
+          9
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "3.6",
+          "103": "1.2.6",
+          "107": "1.1.1.2.2.2",
+          "109": "1.2.6",
+          "113": "1.8",
+          "127": "1.2.2.2.2",
+          "131": "1.8",
+          "139": "1.1.1.1.1.1.1.1.1",
+          "149": "1.8",
+          "151": "1.4.4",
+          "157": "1.4.4",
+          "163": "1.4.4",
+          "167": "1.8",
+          "173": "1.8",
+          "179": "1.8",
+          "181": "1.1.1.3.3",
+          "191": "1.8",
+          "193": "3.3.3",
+          "23": "1.1.1.2.2.2",
+          "29": "1.8",
+          "37": "1.2.2.2.2",
+          "43": "1.4.4",
+          "53": "3.6",
+          "59": "3.6",
+          "61": "1.4.4",
+          "67": "3.3.3",
+          "71": "1.8",
+          "73": "1.4.4",
+          "79": "3.3.3",
+          "83": "3.6",
+          "89": "1.8",
+          "97": "3.3.3"
+        },
+        "galois_group": {
+          "name": "E(9):2S_4",
+          "order": 432,
+          "pari_sign": -1,
+          "transitive_group_id": 26
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 825,
+        "polynomial_discriminant": "-6581651463506189833677521139807019747078160171960996222446621127912128712419891367266622004801420373424324547004573639916871586467745079940206371956677721695777707107481872393089969617265120597945106408478252534298401799528225385138009755858256757254229256610880067404418052281750291787753771946827960803995266320512563013363870925985484028668540392240913649527131154702616325101182189481001289296317389608626654959882400526486205408991066029970525499416296863914052005197813842939025830861547819962982245647291955729774051171543167596028185379251671074182367976738446732423404392768664191716167657706699763984020210776040484317602836667016927213477073182228526020890357786612679878318397590137450971033832668704089042870169625997530586163673593843762262774359484981918637285803984081947605195514929498369857333946669919680444518228515538555211858677522722306331391960920347257248950132483972183280714127629555883417147869673549697648314299398367245605709557114163161846517536301069546188775697113632635300856729810876677724702992024893483613672972911055117730292382049236370157611992333349906971274702001451265613031172554273791784451431874907776940223718114739428739890904910045383771556807844572355183956611959328360535561768783676134116318988468616630512119893990176673439982558902516206917815185488593445096748434994349280884050631339101448021336472293210997373615542018986777952747142680009386811812478446088749092537350286803471621387731695620707206977448706687832254443705684518147541793666256284845331266930307499886346824852724922638955535371219920129871441828239833716860973023289487519924333044832824428548997098682763619672554051061347479997697087020892966075352676885282626309691503942497540317332125333597533639223447896564156131489992469660293262089342110335683498503880959884043314761689120688913396548855315815444456563346222633059108046446585584367320790058884283060173146143843352268295680143779482828800000000000000000000000000000000000000000000000000000000000000000000",
+        "polynomial_discriminant_bits": 6611,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "public_point": [
+        "1494385729327188957541833817",
+        "88486605527733405986116494514049233411451"
+      ],
+      "rational_bisection_relations_involving_direction": [],
+      "relative_height": {
+        "all_multipliers_n_at_least_2_excluded_from_first_shell_by_continuous_quotient_lower_bound": true,
+        "first_shell_representative": {
+          "canonical_height_recomputed_from_90_digit_gram": "48.05829105171109484321384195365900",
+          "correction_in_specialized_generic_R17_basis": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "in_or_below_specialized_generic_first_shell": false,
+          "rounded_minimum_heights": [
+            "48.0583",
+            "48.05829",
+            "48.058291"
+          ],
+          "specialized_generic_first_shell_height": "47.87855238606437426789368363679301",
+          "specialized_generic_first_shell_vector": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "stable_across_integer_gram_scales": [
+            10000,
+            100000,
+            1000000
+          ]
+        },
+        "intersection_analogue": {
+          "quotient_height_correlations": [
+            "-0.3601988664220534",
+            "0.11104542052137061",
+            "-0.35472043081350052",
+            "-0.32909253260926641",
+            "0.10962218665079319",
+            "1.0000000000000002",
+            "-0.3705408894094665",
+            "0.42612164493394683",
+            "-0.24314607041675429",
+            "0.31335348061114804",
+            "0.30781078465530726"
+          ],
+          "status": "HEIGHT_PAIRING_PROFILE_NOT_K3_INTERSECTION",
+          "strongest_negative": {
+            "correlation": "-0.3705408894094665",
+            "label": "Q7"
+          },
+          "strongest_positive": {
+            "correlation": "0.42612164493394683",
+            "label": "Q8"
+          }
+        },
+        "orthogonal_projection_coefficients_in_generic_basis": [
+          "-1.0599855966158452244390719917788",
+          "-0.32939137471911481201708104086586",
+          "0.51138258508475252660868942091749",
+          "-0.53391658889523753182886447015184",
+          "-0.26332854504233807069463775497579",
+          "0.61768247711875752863172730144490",
+          "-0.40545402637876524297437989183413",
+          "-0.14921826611245090808548356126183",
+          "0.35202585458918939851071437101717",
+          "0.18177807450048621476367322453729",
+          "-0.83915985798659961547813207428293",
+          "-0.081128459154067543843987798679046",
+          "-0.78203569286986886614655979931596",
+          "0.41577615796418743496466672428466",
+          "-0.27335190394023133719798470195578",
+          "-0.064607761446256828394610461570612",
+          "-0.25730615072078329762131482134561"
+        ],
+        "quotient_height_defect": "24.742882953169269326348501645029",
+        "raw_canonical_height": "48.058291051711094843213841953659",
+        "smallest_positive_multiplier_entering_first_shell": null
+      },
+      "source_public_point_index_one_based": 8
+    },
+    {
+      "coordinate_size": {
+        "logarithmic_x_height_natural": "62.794900420894919",
+        "x_algebraic_degree_over_Q": 1,
+        "x_projective_height_bits": 91,
+        "y_projective_height_bits": 136
+      },
+      "divisor_class": {
+        "reason": "A point on an elliptic fibre is codimension two on the K3. A divisor class exists only after choosing a multisection through it.",
+        "status": "NOT_INTRINSIC_FOR_A_FIBRE_POINT"
+      },
+      "kummer_two_cover": {
+        "exposes_direction": true,
+        "generator_coefficients": [
+          "7473752914483549434036261028",
+          "-1",
+          "0"
+        ],
+        "generator_maximum_height_bits": 93,
+        "norm": "224580476133759082639160431582597281890964244983154488976559971387286787365471846400",
+        "norm_square_root": "473899225715509143454715606693908904974080",
+        "normalization": "alpha=X(Q)-theta",
+        "verified_rational_cover_witness": [
+          "1",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      "label": "Q7",
+      "local_kummer_code": "0x198088804e446f",
+      "parent_transport": {
+        "exact_roundtrip": true,
+        "parent_crossratio_base": "-14142766518900660871343/150335943291066583999744",
+        "parent_crossratio_base_projective_height_bits": 77,
+        "parent_point_canonical_height_128bit": "352.16507950006437544764785363783815052"
+      },
+      "preimage_2": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "145008041718785737786582255393190221121734706982142047418209777700395007310864809600199599032568549723634999521",
+          "-125871396519673425775861780522519814595124730462809066446448740168928200556146273892",
+          "40135524831151053170066416424282400187723122699885108774",
+          "-7473752914483549434036261028",
+          "1"
+        ],
+        "defining_polynomial_sha256": "5934bbdcde891ba3fa2bc403eba74c6c9179d4e1cd5dff264dcb4fbb0411d035",
+        "degree": 4,
+        "factor_degrees_over_Q": [
+          4
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "1.1.2",
+          "103": "1.1.2",
+          "107": "2.2",
+          "109": "4",
+          "113": "1.3",
+          "127": "1.3",
+          "131": "2.2",
+          "139": "1.1.2",
+          "149": "1.3",
+          "151": "1.3",
+          "157": "4",
+          "163": "1.1.2",
+          "167": "1.3",
+          "173": "4",
+          "179": "1.3",
+          "181": "1.1.2",
+          "191": "1.3",
+          "193": "1.1.2",
+          "23": "1.3",
+          "29": "1.1.2",
+          "37": "1.3",
+          "43": "1.1.2",
+          "53": "1.3",
+          "59": "2.2",
+          "61": "1.3",
+          "67": "1.1.2",
+          "71": "1.1.2",
+          "73": "1.3",
+          "79": "1.3",
+          "83": "1.1.2",
+          "89": "4",
+          "97": "1.3"
+        },
+        "galois_group": {
+          "name": "S4",
+          "order": 24,
+          "pari_sign": -1,
+          "transitive_group_id": 5
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 366,
+        "polynomial_discriminant": "11290738470226545847526778226172613436634728114473767255571054248369322124242847236844672824193891339643326202998871408656398927015200729641838848810485986311055517288072770844139221055843860112759956735723300090681748686792310561346926193467889226808022635013461175095774394555606252099429546543228031396597105032838512640000000000",
+        "polynomial_discriminant_bits": 1100,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "preimage_3": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "91519559929141190986725549681380495632191069980058810216363754980774040234028364037070717677228327722420591344152108496554542539477656781540935066438615459606424199232757265011788291530259476304576939834128494206299046682675474335561549572121060823",
+          "-208269054983867264034366419630633365542744224361754268179026701704320668246342213545873933965006482109389169904655704882114638568435310736062645973624801888949297760794150282623430728508590263270976695348271629516559702711",
+          "165439743685362002405006710152914303346091658137410745709958869741975341473602568090889002254227269602944374597834598182900154184428969692879749164221918598364879462334932181176717249995522655292",
+          "-47688414968983291869128285981178897651535827524212879774813190876442718020133802342368702162303444009972734731726793651681553212178552075852077383280253780657960901484",
+          "-5966196953464780012239852648845551050943480662922318694511544243437695701525799932059798978463345104276120707776274834936696329406356084782",
+          "7442725811353971605389560583178167458636669834241101098249457739371659192028854042783122988194876388570256653886",
+          "-1960401251757794187191547681392462194846118398299141175961270061194529719874545633652",
+          "240813148986906319020398498545694401126338736199310652644",
+          "-16815944057587986226581587313",
+          "1"
+        ],
+        "defining_polynomial_sha256": "6264e3f271641928c8f1f9f8660cf6e0eb3244c5bb80116167107401cb97d983",
+        "degree": 9,
+        "factor_degrees_over_Q": [
+          9
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "3.6",
+          "103": "1.2.6",
+          "107": "3.6",
+          "109": "1.2.6",
+          "113": "1.8",
+          "127": "1.2.2.2.2",
+          "131": "1.8",
+          "139": "3.3.3",
+          "149": "1.8",
+          "151": "1.4.4",
+          "157": "1.4.4",
+          "163": "1.4.4",
+          "167": "1.8",
+          "173": "1.8",
+          "179": "1.8",
+          "181": "3.3.3",
+          "191": "1.8",
+          "193": "3.3.3",
+          "23": "1.1.1.2.2.2",
+          "29": "1.8",
+          "37": "1.2.2.2.2",
+          "43": "1.4.4",
+          "53": "3.6",
+          "59": "1.1.1.2.2.2",
+          "61": "1.4.4",
+          "67": "3.3.3",
+          "71": "1.8",
+          "73": "1.4.4",
+          "79": "3.3.3",
+          "83": "3.6",
+          "89": "1.8",
+          "97": "1.1.1.3.3"
+        },
+        "galois_group": {
+          "name": "E(9):2S_4",
+          "order": 432,
+          "pari_sign": -1,
+          "transitive_group_id": 26
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 824,
+        "polynomial_discriminant": "-265511108011449699908869862526620933106965105212048009414357804291741635184865119171397468796073379640340427283023703150557467454812926697589469783538937602816010088851105681855040088515994533144095639218275805938898576217833462301676132037486038232204641046003795453925042174569358745110743138236643529448913062500102012637350259613412105025530223973418363002926204814733305372690406577878820865167577483711579019195780264729723664773597972375143950423234781018789969282291331047314506340012020563199208441005759304065849612016779013264020240732617462746117119706534044728591008049712506327675652799232340793324286265328863821890291195796956747606009482782370033214157183344222507080690230708925238411453944744125647387727333047028970254696480555369332792624792807511443475123140327523497318579303299708949821691850471568606596568193051851430961031406317441588736933179008954627375956391200164239586727428625354742393858939618290302269460615355535565900186894462761151336192930634214321743203613312120601593620324660676250889948236245721149781910776963937695335229896705924722318709570484170459048614894354311391985977807399008254622938616910842462971586279660470123437712772089657626354355285523087510750219234070767304118073699898275890895436124382987118117648976872897160187793471755548963068827843151463605790870174433107864076223102713166532338835632130287181504219482472055579471130828436330464594732159385361213540661747166342094198726665767239751656314645342506024823382968013378058895631574218343218634353182942694124717560202581577612685196477723509899016186521303977562748996835134185944894184603303580825637421009636875984190206265238996540614210604966395270816036719122452890420854366120709955373510831146349719340434696245257385249535569657213268910613928691708719042210981210405297366242294047208027660424368776637495371630371228785433091899129080479391656246019040748089663014437300771599913320327204044800000000000000000000000000000000000000000000000000000000000000000000",
+        "polynomial_discriminant_bits": 6606,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "public_point": [
+        "1868438228620887358509065257",
+        "59237403214437708712725140393059358589131"
+      ],
+      "rational_bisection_relations_involving_direction": [],
+      "relative_height": {
+        "all_multipliers_n_at_least_2_excluded_from_first_shell_by_continuous_quotient_lower_bound": true,
+        "first_shell_representative": {
+          "canonical_height_recomputed_from_90_digit_gram": "48.06720353578867051733801505699400",
+          "correction_in_specialized_generic_R17_basis": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "in_or_below_specialized_generic_first_shell": false,
+          "rounded_minimum_heights": [
+            "48.0672",
+            "48.0672",
+            "48.067204"
+          ],
+          "specialized_generic_first_shell_height": "47.87855238606437426789368363679301",
+          "specialized_generic_first_shell_vector": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "stable_across_integer_gram_scales": [
+            10000,
+            100000,
+            1000000
+          ]
+        },
+        "intersection_analogue": {
+          "quotient_height_correlations": [
+            "-0.14810667283560752",
+            "-0.21022987093835038",
+            "-0.29164042797243406",
+            "0.12482674988284394",
+            "-0.032367196091918814",
+            "-0.3705408894094665",
+            "1",
+            "-0.17031424229391026",
+            "0.11290668678300951",
+            "-0.11712513506008246",
+            "0.32496247800562"
+          ],
+          "status": "HEIGHT_PAIRING_PROFILE_NOT_K3_INTERSECTION",
+          "strongest_negative": {
+            "correlation": "-0.3705408894094665",
+            "label": "Q6"
+          },
+          "strongest_positive": {
+            "correlation": "0.32496247800562",
+            "label": "Q11"
+          }
+        },
+        "orthogonal_projection_coefficients_in_generic_basis": [
+          "1.3599095025022443600169156319401",
+          "0.63569235718989878494503595121549",
+          "-0.50927424461112055569408312287681",
+          "-0.98387091079594039419655873211343",
+          "2.4384450157550331294832190423876",
+          "-2.8341161506889726511494676549940",
+          "3.0627195694518329697806667011663",
+          "0.080803562174116545855096235847834",
+          "-0.92993231742790845778415300048215",
+          "0.44472279519078724994661341825809",
+          "2.9897268319796448366764335579523",
+          "1.1321934825473883561570462826321",
+          "1.9042316413373457965168108308207",
+          "-0.80149157664801204080690809622751",
+          "-1.5399511232592021520007336673106",
+          "-1.7071431430751655034894944398845",
+          "1.8069629950487965374361962062886"
+        ],
+        "quotient_height_defect": "20.620290097788699254473212255993",
+        "raw_canonical_height": "48.067203535788670517338015056994",
+        "smallest_positive_multiplier_entering_first_shell": null
+      },
+      "source_public_point_index_one_based": 9
+    },
+    {
+      "coordinate_size": {
+        "logarithmic_x_height_natural": "63.023514953367226",
+        "x_algebraic_degree_over_Q": 1,
+        "x_projective_height_bits": 91,
+        "y_projective_height_bits": 134
+      },
+      "divisor_class": {
+        "reason": "A point on an elliptic fibre is codimension two on the K3. A divisor class exists only after choosing a multisection through it.",
+        "status": "NOT_INTRINSIC_FOR_A_FIBRE_POINT"
+      },
+      "kummer_two_cover": {
+        "exposes_direction": true,
+        "generator_coefficients": [
+          "9393442163672100678606531748",
+          "-1",
+          "0"
+        ],
+        "generator_maximum_height_bits": 93,
+        "norm": "19584166412919867447284951410614414107491933642144516639771917249856437273600000000",
+        "norm_square_root": "139943440049613856300886331912269041440000",
+        "normalization": "alpha=X(Q)-theta",
+        "verified_rational_cover_witness": [
+          "1",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      "label": "Q8",
+      "local_kummer_code": "0x188808800e046f",
+      "parent_transport": {
+        "exact_roundtrip": true,
+        "parent_crossratio_base": "-2521875713914905526735900092509/1271681027619287644556625339136",
+        "parent_crossratio_base_projective_height_bits": 101,
+        "parent_point_canonical_height_128bit": "457.81780835546964586747089487576304657"
+      },
+      "preimage_2": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "78814062261172436091589671809992430309345574485670776099963301808612601612165342776533965538197696689021332961",
+          "-87347528755223015663862578579991794725629259061140731305588924086556369397187187812",
+          "40135524831151053170066416425722167124614536133312811814",
+          "-9393442163672100678606531748",
+          "1"
+        ],
+        "defining_polynomial_sha256": "b997b9b41fdba38ec1664e55b6f91ef3c487a463a88a2d2513f5aded3df53fc2",
+        "degree": 4,
+        "factor_degrees_over_Q": [
+          4
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "1.1.2",
+          "103": "1.1.2",
+          "107": "1.1.1.1",
+          "109": "4",
+          "113": "1.3",
+          "127": "1.3",
+          "131": "2.2",
+          "139": "1.1.2",
+          "149": "1.3",
+          "151": "1.3",
+          "157": "4",
+          "163": "1.1.2",
+          "167": "1.3",
+          "173": "1.1.2",
+          "179": "1.3",
+          "181": "1.1.2",
+          "191": "1.3",
+          "193": "4",
+          "23": "1.3",
+          "29": "1.1.2",
+          "37": "1.3",
+          "43": "1.1.2",
+          "53": "1.3",
+          "59": "1.1.1.1",
+          "61": "1.3",
+          "67": "1.1.2",
+          "71": "4",
+          "73": "1.3",
+          "79": "1.3",
+          "83": "1.1.2",
+          "89": "1.1.2",
+          "97": "1.3"
+        },
+        "galois_group": {
+          "name": "S4",
+          "order": 24,
+          "pari_sign": -1,
+          "transitive_group_id": 5
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 366,
+        "polynomial_discriminant": "85859535181974759425439207699408560035536017896556245016384459957119070057581548139353587902856885973056688005797436847832479320802059190927810250338841087676859794947239358798548266102104175084451629766342713855089056472216825363667113572485285028214505648920425474631258354961832519048751523950848261488640000000000000000000000",
+        "polynomial_discriminant_bits": 1093,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "preimage_3": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "13686026925840085599704267582309962565173509180984793316858265340977761374856541004353940615503938603930924986614164612645465610486569682802871814833151934132610363682763758514202387817086237192534828455563904751168593086438403470549443646646372823",
+          "-48325169263659040937602965738529451340395682189470330966192572877102348220972038498649644051350530744721707429359147135266995099066350334538845715978151550342626995604568765959592396069807399181102077092096728870323568311",
+          "36728211550526904752070979406857299117049265315667016181296365060500554178354126590682371132889286930898478687191941096902741791643287722367479443646988043825677709020197767636896434321066654012",
+          "132726942504053197881467363776048995756876807603899137450342427835648277893402701483514722089080567115585542566578290133486657199140148214372672810237410706451409556",
+          "-11764355645660076436492291868739581740122636800311187791135617462829350700345525604680910957170303769396296270089206463556771626526404705582",
+          "6251234181116932174879694078333892414133611758296625397038268994494116646837248623689403240554854553516578881086",
+          "-1613686441877740496183554863909710016020659155684126159697851017263857479744196968052",
+          "240813148986906319020398498554333002747687216799876870884",
+          "-21135244868262226526864696433",
+          "1"
+        ],
+        "defining_polynomial_sha256": "d1e810810e7a24715f919608ad5e727ccd46c5bee513edd01985a86a2e449c4f",
+        "degree": 9,
+        "factor_degrees_over_Q": [
+          9
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "1.1.1.2.2.2",
+          "103": "1.2.6",
+          "107": "1.1.1.2.2.2",
+          "109": "1.2.6",
+          "113": "1.8",
+          "127": "1.2.2.2.2",
+          "131": "1.8",
+          "139": "3.3.3",
+          "149": "1.8",
+          "151": "1.4.4",
+          "157": "1.4.4",
+          "163": "1.4.4",
+          "167": "1.8",
+          "173": "1.8",
+          "179": "1.8",
+          "181": "3.3.3",
+          "191": "1.8",
+          "193": "3.3.3",
+          "23": "3.6",
+          "29": "1.8",
+          "37": "1.2.2.2.2",
+          "43": "1.4.4",
+          "53": "1.1.1.2.2.2",
+          "59": "3.6",
+          "61": "1.4.4",
+          "67": "1.1.1.3.3",
+          "71": "1.8",
+          "73": "1.4.4",
+          "79": "3.3.3",
+          "83": "3.6",
+          "89": "1.8",
+          "97": "1.1.1.3.3"
+        },
+        "galois_group": {
+          "name": "E(9):2S_4",
+          "order": 432,
+          "pari_sign": -1,
+          "transitive_group_id": 26
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 821,
+        "polynomial_discriminant": "-15353771230346024546096033300680671656756605007883336449438048288936472075011017475009082058334590604880086639335543927389220291018103671832687769479489646726794533725942557459960296177106586436106788460050255312047496236337136574814301834473950003136582406244763518769595525970302821462904738474257125520373669107494871737201549096281628853770098675954347662265951071619138502971389170870244768120723815415865698857224889789526157932391805358887935272647843697664243864359754526590824492386184993090651218602670346565149801791110582637573144186717054715638186652540991512522422551111871774531459255346143351749721920968306094350463137198338082593980378836969513341391278024855947612346697699751042816336661093742163454266166961495198078643244759940814916614318962343041420958576586309354092449064057150616879021596129207749217978449291776750668061607928274611858943202451548041749458147952854320277048773537922872771057003320608998029289955607242491031060121589486450155832729038220529909449890363670510591239132380136415370795657225509078843005787979561855389381973516402953377933093867964459324325804080700887649472091701823899134426798804943022893540534081778312234305241495473464452388652285362561143707300934390644966325592777902779449505099426563355039637215504186949771954749627791628971696537166371982693622238938049502253771220802455389683970380554827310123484834087490860927945124017993116669714381379800108752922922366195169924223512746956191356673062365020222643236290936893056641523733281959233876037027487805947592562371270824784476525773342607725538157877738835052485400717014175552153651125269238517197399670259854450710607717735660130942266634253891468220116050215612749937352538386696933918717898609773214025373051582953968745927261612143855276219385970652147765819522493101328128876575955798063431602557677432550273898093429522794828115055885462661530607978857317819796684800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "polynomial_discriminant_bits": 6592,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "public_point": [
+        "2348360540918025169651632937",
+        "17492930006200557857340332476448804363531"
+      ],
+      "rational_bisection_relations_involving_direction": [
+        {
+          "cover_degree": 2,
+          "cover_label": "orbit-15a68",
+          "generic_correction_coordinates": [
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            -2,
+            2,
+            0,
+            -1,
+            -1,
+            4,
+            1,
+            3,
+            1,
+            -1,
+            -2,
+            3
+          ],
+          "quotient_vector": [
+            0,
+            1,
+            0,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0
+          ],
+          "trace_lattice_norm": 10
+        }
+      ],
+      "relative_height": {
+        "all_multipliers_n_at_least_2_excluded_from_first_shell_by_continuous_quotient_lower_bound": true,
+        "first_shell_representative": {
+          "canonical_height_recomputed_from_90_digit_gram": "48.09775970593733699377322450393400",
+          "correction_in_specialized_generic_R17_basis": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "in_or_below_specialized_generic_first_shell": false,
+          "rounded_minimum_heights": [
+            "48.0978",
+            "48.09776",
+            "48.09776"
+          ],
+          "specialized_generic_first_shell_height": "47.87855238606437426789368363679301",
+          "specialized_generic_first_shell_vector": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "stable_across_integer_gram_scales": [
+            10000,
+            100000,
+            1000000
+          ]
+        },
+        "intersection_analogue": {
+          "quotient_height_correlations": [
+            "-0.23231382431237149",
+            "0.097800837130554263",
+            "-0.39092085847267721",
+            "-0.15519564882642706",
+            "0.41699364243855713",
+            "0.42612164493394683",
+            "-0.17031424229391026",
+            "0.99999999999999989",
+            "-0.097175468260771919",
+            "0.42679571976448072",
+            "0.17561228916157429"
+          ],
+          "status": "HEIGHT_PAIRING_PROFILE_NOT_K3_INTERSECTION",
+          "strongest_negative": {
+            "correlation": "-0.39092085847267721",
+            "label": "Q3"
+          },
+          "strongest_positive": {
+            "correlation": "0.42679571976448072",
+            "label": "Q10"
+          }
+        },
+        "orthogonal_projection_coefficients_in_generic_basis": [
+          "0.74543714386380355524087942984165",
+          "0.17263440089941737468273283651953",
+          "-0.99977852742847243658435593871846",
+          "0.46275041885745597680424348452376",
+          "0.98252744356390432607718006741826",
+          "-1.2221466574797366182908131019824",
+          "1.6167766152612842837756015455509",
+          "0.39427945914355318886661608038445",
+          "-0.66956166864871478670958846742271",
+          "-0.45331532547367233620829400493171",
+          "1.6191256637097106836869781316279",
+          "0.51928361530930247196744387967264",
+          "1.2686142477846842884432283073724",
+          "-0.39659287576406603306498122180573",
+          "0.082212446876841993304008565452043",
+          "-1.0271561134532371164852176312923",
+          "1.7081873160281315295088504162570"
+        ],
+        "quotient_height_defect": "22.834605295501732786958242087195",
+        "raw_canonical_height": "48.097759705937336993773224503934",
+        "smallest_positive_multiplier_entering_first_shell": null
+      },
+      "source_public_point_index_one_based": 11
+    },
+    {
+      "coordinate_size": {
+        "logarithmic_x_height_natural": "62.706110027710331",
+        "x_algebraic_degree_over_Q": 1,
+        "x_projective_height_bits": 91,
+        "y_projective_height_bits": 136
+      },
+      "divisor_class": {
+        "reason": "A point on an elliptic fibre is codimension two on the K3. A divisor class exists only after choosing a multisection through it.",
+        "status": "NOT_INTRINSIC_FOR_A_FIBRE_POINT"
+      },
+      "kummer_two_cover": {
+        "exposes_direction": true,
+        "generator_coefficients": [
+          "6838763072933418093336034228",
+          "-1",
+          "0"
+        ],
+        "generator_maximum_height_bits": 93,
+        "norm": "330844318125905060611872371550993829957316872952926131248210450557186951990356998400",
+        "norm_square_root": "575190679797495554492350537651821183407280",
+        "normalization": "alpha=X(Q)-theta",
+        "verified_rational_cover_witness": [
+          "1",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      "label": "Q9",
+      "local_kummer_code": "0x180088000e046f",
+      "parent_transport": {
+        "exact_roundtrip": true,
+        "parent_crossratio_base": "88398081737725635700903887/1601626665520512977353907584",
+        "parent_crossratio_base_projective_height_bits": 91,
+        "parent_point_canonical_height_128bit": "421.32832102328443540404030540266884285"
+      },
+      "preimage_2": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "166903514928905330754029966774717724579625228676583868479198283426711179914479267125128238286737590291919753421",
+          "-138614221796205410368117476753936254487364764326208354154176841285160179304530814092",
+          "40135524831151053170066416423806157806560524194359938674",
+          "-6838763072933418093336034228",
+          "1"
+        ],
+        "defining_polynomial_sha256": "f02d984016110d672b87b71cbe1f8878efbfd93f89ff71f06770be9c79b3ae5d",
+        "degree": 4,
+        "factor_degrees_over_Q": [
+          4
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "1.1.2",
+          "103": "1.1.2",
+          "107": "2.2",
+          "109": "1.1.2",
+          "113": "1.3",
+          "127": "1.3",
+          "131": "2.2",
+          "139": "1.1.2",
+          "149": "1.3",
+          "151": "1.3",
+          "157": "4",
+          "163": "1.1.2",
+          "167": "1.3",
+          "173": "4",
+          "179": "1.3",
+          "181": "1.1.2",
+          "191": "1.3",
+          "193": "4",
+          "23": "1.3",
+          "29": "4",
+          "37": "1.3",
+          "43": "4",
+          "53": "1.3",
+          "59": "2.2",
+          "61": "1.3",
+          "67": "4",
+          "71": "1.1.2",
+          "73": "1.3",
+          "79": "1.3",
+          "83": "1.1.2",
+          "89": "4",
+          "97": "1.3"
+        },
+        "galois_group": {
+          "name": "S4",
+          "order": 24,
+          "pari_sign": -1,
+          "transitive_group_id": 5
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 367,
+        "polynomial_discriminant": "24503364048952823079142237257655661125156398575027482324001464010349447444190643793141086280715540167976959399114236463441593305110290635350670142200126515623820422511462788798311813355078050691379267404679631559850762975093233360793996648323276747903410113621213623593516706808958299256930950694538257882611370884735959040000000000",
+        "polynomial_discriminant_bits": 1101,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "preimage_3": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "117265134537085837090677112722518291497562650751142795832826108004517897933258191983900659334184291091158427992073377598641574331878580138421880508878665379160622758514141542445542679082101105599156916757145012612817124253635094502707663550221530823",
+          "-261174879555900315666617927418789026067463539081813014582153441433225635417637330182000695488531380977924600242353846399681806033403828414349837876228379888869362970502182160023812574719639097215014656613932730247659788711",
+          "208014611170045213601717912507999835319552498006875640026357967396459655526479862163721695357625448568026162494710562809284004753873734462707280262981213427141497943628757342490319869269991545992",
+          "-63506568525845328393064148159277429526035698986854731700288984460033771176797772075273093285408615915433697567398742055511142427604592342849313331216582431058731654084",
+          "-4048297027320022187283063191482121240335692808014639810356835670621666765500970193076059289467447627719667306277570792364581328511177220282",
+          "7836844329136124278803619388160347948367487086071355143429998801475510603664507867601391404816006927534843085886",
+          "-2075086679246582048521848947475210153876278703069734765329394244097129733093430985152",
+          "240813148986906319020398498542836946839363145166159632044",
+          "-15387216914100190710006077013",
+          "1"
+        ],
+        "defining_polynomial_sha256": "9f622aed238e97d399423848c8570953b6620f088c5c83190d68ab9405e92007",
+        "degree": 9,
+        "factor_degrees_over_Q": [
+          9
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "3.6",
+          "103": "1.2.6",
+          "107": "3.6",
+          "109": "1.2.6",
+          "113": "1.8",
+          "127": "1.2.2.2.2",
+          "131": "1.8",
+          "139": "3.3.3",
+          "149": "1.8",
+          "151": "1.4.4",
+          "157": "1.4.4",
+          "163": "1.4.4",
+          "167": "1.8",
+          "173": "1.8",
+          "179": "1.8",
+          "181": "3.3.3",
+          "191": "1.8",
+          "193": "1.1.1.1.1.1.1.1.1",
+          "23": "1.1.1.2.2.2",
+          "29": "1.8",
+          "37": "1.2.2.2.2",
+          "43": "1.4.4",
+          "53": "3.6",
+          "59": "3.6",
+          "61": "1.4.4",
+          "67": "1.1.1.3.3",
+          "71": "1.8",
+          "73": "1.4.4",
+          "79": "3.3.3",
+          "83": "3.6",
+          "89": "1.8",
+          "97": "3.3.3"
+        },
+        "galois_group": {
+          "name": "E(9):2S_4",
+          "order": 432,
+          "pari_sign": -1,
+          "transitive_group_id": 26
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 825,
+        "polynomial_discriminant": "-1250516493648333382456461127810449603040588100468774503432040274871745083138155260673254364158086520069755569146806932446182546081219900715850193551168631889694568866262695672265222324320503582782145459725110489768492409327456609525137404065360584669946835914231378418468875894112851308546229577237601244739829148127726362350587421976476662227992768511779921003667404051920143737635879734908918475307030515470752796776017715219752748711925810943606229427116024607882878354791046289731464936850491121524114395555317404522060212239536431968051932176653330610521201201506001542210304970870515056588004350969616183159859113587788737653985138433876655023558366396699991920676936302713044972900425019957336728833237643949460600162431556568775846006965117983589837216164563496617650699938374701914853122414931707763048057928859626786674193276051882958814169986638410334276548367773962780162270481698181636783512474503814266449937781687477569005603599175001212303434975353759263789682635134128901544740125731610448906804646275668573996469104018357331298186102665240198873438640817540340773410985915315217977533847664329603526082055279842719789812079127146706975393581728205975132331072549634985683374103701855876853871558809424250585283578726086656894017121096601554198052576886030093425397329261103976843137635509304189662744099012742511591867266659239547055520136546450697156570159309526607241587142051348708544736721542810184609180796444177935358704195694639194456867802860349987017699184153988249527731995582378258855689095628345621564866009224298226765032361926902831433318367976552540781747096839745143109636318841276853251057023865743284164523235716641400551642541651975713754517177169136798479291990197091809190041710370054607660952932148422139550642197640432484950661269572599613123664449056343546221993598963257912896742677938970134391853999860830833718927116138221817112262019003375028439895850271460764813527729622220800000000000000000000000000000000000000000000000000000000000000000000",
+        "polynomial_discriminant_bits": 6608,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "public_point": [
+        "1709690768233354523334008557",
+        "71898834974686089466159700529215980921631"
+      ],
+      "rational_bisection_relations_involving_direction": [],
+      "relative_height": {
+        "all_multipliers_n_at_least_2_excluded_from_first_shell_by_continuous_quotient_lower_bound": true,
+        "first_shell_representative": {
+          "canonical_height_recomputed_from_90_digit_gram": "48.31143456684728937913468166492400",
+          "correction_in_specialized_generic_R17_basis": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "in_or_below_specialized_generic_first_shell": false,
+          "rounded_minimum_heights": [
+            "48.3114",
+            "48.31143",
+            "48.311435"
+          ],
+          "specialized_generic_first_shell_height": "47.87855238606437426789368363679301",
+          "specialized_generic_first_shell_vector": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "stable_across_integer_gram_scales": [
+            10000,
+            100000,
+            1000000
+          ]
+        },
+        "intersection_analogue": {
+          "quotient_height_correlations": [
+            "-0.24041830924596211",
+            "0.38732876037858727",
+            "0.33435650963126501",
+            "0.37395348535236428",
+            "-0.10736873737826848",
+            "-0.24314607041675429",
+            "0.11290668678300951",
+            "-0.097175468260771919",
+            "1.0000000000000002",
+            "-0.20379889361273051",
+            "-0.41735644316066056"
+          ],
+          "status": "HEIGHT_PAIRING_PROFILE_NOT_K3_INTERSECTION",
+          "strongest_negative": {
+            "correlation": "-0.41735644316066056",
+            "label": "Q11"
+          },
+          "strongest_positive": {
+            "correlation": "0.38732876037858727",
+            "label": "Q2"
+          }
+        },
+        "orthogonal_projection_coefficients_in_generic_basis": [
+          "1.3139605751514232964680309842574",
+          "-0.79697120459386334715079525469776",
+          "0.39250326669006199235500848191808",
+          "0.63659849304027929939978789399066",
+          "-0.27451938261118491082322800710311",
+          "0.82271341197928570570427834190517",
+          "-0.15982806572200147262127995799898",
+          "0.41300961530946983599367384774898",
+          "-0.049578290878663251648651974292260",
+          "-0.47431403368510693569941148552463",
+          "0.13328743854841680652918694538059",
+          "0.47904037356230212332389220461083",
+          "0.76855797163130258747229227992963",
+          "0.12780600477516329835823238948063",
+          "0.44800774603223398890637346569342",
+          "0.21527918646752128596265151837370",
+          "0.46676123443337078124467997491503"
+        ],
+        "quotient_height_defect": "21.128954946073414321465219355019",
+        "raw_canonical_height": "48.311434566847289379134681664924",
+        "smallest_positive_multiplier_entering_first_shell": null
+      },
+      "source_public_point_index_one_based": 15
+    },
+    {
+      "coordinate_size": {
+        "logarithmic_x_height_natural": "65.169451388741166",
+        "x_algebraic_degree_over_Q": 1,
+        "x_projective_height_bits": 95,
+        "y_projective_height_bits": 141
+      },
+      "divisor_class": {
+        "reason": "A point on an elliptic fibre is codimension two on the K3. A divisor class exists only after choosing a multisection through it.",
+        "status": "NOT_INTRINSIC_FOR_A_FIBRE_POINT"
+      },
+      "kummer_two_cover": {
+        "exposes_direction": true,
+        "generator_coefficients": [
+          "80314344311987418115113315748",
+          "-1",
+          "0"
+        ],
+        "generator_maximum_height_bits": 97,
+        "norm": "494478313085843284623660193207449395172431831870605745025054564527416731621986304000000",
+        "norm_square_root": "22236868329102533151592725792415107354048000",
+        "normalization": "alpha=X(Q)-theta",
+        "verified_rational_cover_witness": [
+          "1",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      "label": "Q10",
+      "local_kummer_code": "0x8008004e0cf6",
+      "parent_transport": {
+        "exact_roundtrip": true,
+        "parent_crossratio_base": "-55314970015557256243/31803607895257711872",
+        "parent_crossratio_base_projective_height_bits": 66,
+        "parent_point_canonical_height_128bit": "319.35490106524932919069414632980517203"
+      },
+      "preimage_2": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "-2366652953770384945214676415985262898386950271424648872280136743534593390222660491524690764181027581968027699039",
+          "1335876285855448731778156644580174830370300590829367666288454165111179441048468988188",
+          "40135524831151053170066416478912843735851024210692899814",
+          "-80314344311987418115113315748",
+          "1"
+        ],
+        "defining_polynomial_sha256": "198a434063efc2ed9f59df7258a03b34c58572ea5922fb89c9e5c78f6d229557",
+        "degree": 4,
+        "factor_degrees_over_Q": [
+          4
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "1.1.2",
+          "103": "1.1.2",
+          "107": "2.2",
+          "109": "1.1.2",
+          "113": "1.3",
+          "127": "1.3",
+          "131": "2.2",
+          "139": "4",
+          "149": "1.3",
+          "151": "1.3",
+          "157": "4",
+          "163": "4",
+          "167": "1.3",
+          "173": "4",
+          "179": "1.3",
+          "181": "4",
+          "191": "1.3",
+          "193": "1.1.2",
+          "23": "1.3",
+          "29": "4",
+          "37": "1.3",
+          "43": "4",
+          "53": "1.3",
+          "59": "2.2",
+          "61": "1.3",
+          "67": "4",
+          "71": "1.1.2",
+          "73": "1.3",
+          "79": "1.3",
+          "83": "1.1.2",
+          "89": "1.1.2",
+          "97": "1.3"
+        },
+        "galois_group": {
+          "name": "S4",
+          "order": 24,
+          "pari_sign": -1,
+          "transitive_group_id": 5
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 370,
+        "polynomial_discriminant": "54735973848655895723550743459910704104280702672066476404922582902058222813156819235116955080944296659307776115462084634648420954666559211624284279499496296756345523103921040858226947019504812720182200026200536647712040481168059344740860223743904252198333834233597967742863233149814240043810221992927125111641261782073344000000000000000000",
+        "polynomial_discriminant_bits": 1122,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "preimage_3": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "-2861792064290272962184882528731710471533233364169559861721054100830885490145639838912655297259845341088276733255981483711311368971712157023740845439431764109037122510720551998200215382222731241587963805302263476252773088047701840558837703368647227177",
+          "5860633623509198467506451379018314934363030315867829997508020044155621571433873487242070084222044931085478854415484774577062284406414661700155540754088219819191602723914536554024892281924048714383659936819187495311096111689",
+          "-4718384096211217584458019440321944688911533954463623739959473949191438020564462060449552595122571747711615535165259833100241661022643989998482273223943989307983606552300903862191323285738969961988",
+          "1766834565565022007435382748433986578138560284784588988054287071720653164493949553790875579399235160570729366908006543016064586814986450779247245747105480105961024097556",
+          "-225971235964130597633843352973518331476820469216309923493562096438567915646186606483044231073733307164903873992099441389902918085209013465582",
+          "-37767172107451100688633095514789717833895759195067301282245031447546959855204191972079029697170822756321209278914",
+          "11195327889618305230794618144531789609842709493330449418488964755682055350034568351948",
+          "240813148986906319020398498873477062415106145264157398884",
+          "-180707274701971690759004960433",
+          "1"
+        ],
+        "defining_polynomial_sha256": "f403063305167b99b67c6faa866db2f82fba21ef33dcf79f88b04d150f41d7ba",
+        "degree": 9,
+        "factor_degrees_over_Q": [
+          9
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "3.6",
+          "103": "1.2.6",
+          "107": "3.6",
+          "109": "1.2.6",
+          "113": "1.8",
+          "127": "1.2.2.2.2",
+          "131": "1.8",
+          "139": "3.3.3",
+          "149": "1.8",
+          "151": "1.4.4",
+          "157": "1.4.4",
+          "163": "1.4.4",
+          "167": "1.8",
+          "173": "1.8",
+          "179": "1.8",
+          "181": "3.3.3",
+          "191": "1.8",
+          "193": "3.3.3",
+          "23": "3.6",
+          "29": "1.8",
+          "37": "1.2.2.2.2",
+          "43": "1.4.4",
+          "53": "3.6",
+          "59": "1.1.1.2.2.2",
+          "61": "1.4.4",
+          "67": "1.1.1.3.3",
+          "71": "1.8",
+          "73": "1.4.4",
+          "79": "3.3.3",
+          "83": "3.6",
+          "89": "1.8",
+          "97": "3.3.3"
+        },
+        "galois_group": {
+          "name": "E(9):2S_4",
+          "order": 432,
+          "pari_sign": -1,
+          "transitive_group_id": 26
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 829,
+        "polynomial_discriminant": "-6239987188950577224716937708167966319494309535267037052509867862039186539866847748820064377160168636648231007382444038435472960969095950391633646503724344410339089976131624459440947930197799384211282569866987731250398932016906122918695893356067065737675097287922423889564827418174234916526255844933335192257935783915944991622343157855872658742458907476336905211003629280341587422298461657531484521667511321776141380161116605094602384258946771531806306876117878953049622817009848692424675340482579459793394895551959028527756664583569902515735710381253059316458774343053281202463547875000465898434969272991102086909057680995276850616924172037659667980183319843991079863707128143985942958245642657144749110424744569812473299899540821432461692288975482554949787293805336485146154649125859851081485339959043775076391594013767618729789830071318701384600022142520671790016686685736500434821997516828403405527415619353457588326935450494868175737096364522886767708301239381258277364682059735361768125222365221447323497095865176470043524366540998908716519986960788340761105628492482349494498323396970546888556498227413835637377865265819643568784087330131521115775089098398289779291407513323577599559375111379224895026252577484311256577076129977151861731103499109197301170045171794684576277273363518929599360264192167454851284074664859955978830310596126409725649059990898545616199676959654942491687424385981974273496261975747456883379997211631934391272663345674915205950478173079007796896610068769890604303511696351477662753995020462076066649006049622387019599738722612192246094098970736427211908952807232544143706303905604739536392129230139841866048003752647235529201016481104529693060936297817918439951499018346958165295731631240370653971170162632789534467754769112352428961186592895500676604894856364390398976070799845289568824686444891280394130686548127222683222250361779824077770731816699069014089157270677168159427047456768000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "polynomial_discriminant_bits": 6650,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "public_point": [
+        "20078586077996854528778328937",
+        "2779608541137806604656051725624624030091531"
+      ],
+      "rational_bisection_relations_involving_direction": [
+        {
+          "cover_degree": 2,
+          "cover_label": "orbit-15a68",
+          "generic_correction_coordinates": [
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            -2,
+            2,
+            0,
+            -1,
+            -1,
+            4,
+            1,
+            3,
+            1,
+            -1,
+            -2,
+            3
+          ],
+          "quotient_vector": [
+            0,
+            1,
+            0,
+            -1,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0
+          ],
+          "trace_lattice_norm": 10
+        }
+      ],
+      "relative_height": {
+        "all_multipliers_n_at_least_2_excluded_from_first_shell_by_continuous_quotient_lower_bound": true,
+        "first_shell_representative": {
+          "canonical_height_recomputed_from_90_digit_gram": "48.62526356525424956756120883457200",
+          "correction_in_specialized_generic_R17_basis": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "in_or_below_specialized_generic_first_shell": false,
+          "rounded_minimum_heights": [
+            "48.6253",
+            "48.62526",
+            "48.625264"
+          ],
+          "specialized_generic_first_shell_height": "47.87855238606437426789368363679301",
+          "specialized_generic_first_shell_vector": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "stable_across_integer_gram_scales": [
+            10000,
+            100000,
+            1000000
+          ]
+        },
+        "intersection_analogue": {
+          "quotient_height_correlations": [
+            "-0.19126421795147888",
+            "0.069294689783131261",
+            "-0.34105883248625146",
+            "0.20049568927307357",
+            "-0.070152140555429912",
+            "0.31335348061114804",
+            "-0.11712513506008246",
+            "0.42679571976448072",
+            "-0.20379889361273051",
+            "0.99999999999999978",
+            "-0.25781405886709519"
+          ],
+          "status": "HEIGHT_PAIRING_PROFILE_NOT_K3_INTERSECTION",
+          "strongest_negative": {
+            "correlation": "-0.34105883248625146",
+            "label": "Q3"
+          },
+          "strongest_positive": {
+            "correlation": "0.42679571976448072",
+            "label": "Q8"
+          }
+        },
+        "orthogonal_projection_coefficients_in_generic_basis": [
+          "0.36669078704477346024536170175538",
+          "0.35934893357113063634319075504499",
+          "0.37714225426540660990199269388281",
+          "-0.24074254694423758442893223135186",
+          "-0.22824434134203022831100907672387",
+          "1.2401603690715617123423801909110",
+          "-0.084351198426332061647121694396768",
+          "0.30396445181482750997386488461912",
+          "0.99241776183476895789533186460717",
+          "0.12642650413138621512178039742166",
+          "-1.7062957443625661979743868779862",
+          "-0.69919190667775311034868178441430",
+          "-1.1451453514715539489513134268300",
+          "0.20417495879605767448526708496349",
+          "0.25054084020144885748487666743157",
+          "0.48910579758806330836912160963466",
+          "-0.51842327278905566353270903656195"
+        ],
+        "quotient_height_defect": "21.117864336231687625635819480253",
+        "raw_canonical_height": "48.625263565254249567561208834572",
+        "smallest_positive_multiplier_entering_first_shell": null
+      },
+      "source_public_point_index_one_based": 19
+    },
+    {
+      "coordinate_size": {
+        "logarithmic_x_height_natural": "63.260293434396289",
+        "x_algebraic_degree_over_Q": 1,
+        "x_projective_height_bits": 92,
+        "y_projective_height_bits": 135
+      },
+      "divisor_class": {
+        "reason": "A point on an elliptic fibre is codimension two on the K3. A divisor class exists only after choosing a multisection through it.",
+        "status": "NOT_INTRINSIC_FOR_A_FIBRE_POINT"
+      },
+      "kummer_two_cover": {
+        "exposes_direction": true,
+        "generator_coefficients": [
+          "11902997803791985059788365348",
+          "-1",
+          "0"
+        ],
+        "generator_maximum_height_bits": 94,
+        "norm": "71391521369752465671315242632585013430508017406144690454105576798544062058178560000",
+        "norm_square_root": "267191918608614481559475267265898651318400",
+        "normalization": "alpha=X(Q)-theta",
+        "verified_rational_cover_witness": [
+          "1",
+          "0",
+          "0",
+          "1"
+        ]
+      },
+      "label": "Q11",
+      "local_kummer_code": "0x38808000e0036",
+      "parent_transport": {
+        "exact_roundtrip": true,
+        "parent_crossratio_base": "273302553164396048260111/7060119364715074772736",
+        "parent_crossratio_base_projective_height_bits": 78,
+        "parent_point_canonical_height_128bit": "355.45545916528539316854941025147076904"
+      },
+      "preimage_2": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "-7719461099470827554790884239995560399515313135900782481869874214926058013019272173438689171004256114045539839",
+          "-36986362400629617797527221083587409994178220349322181645616372538655492820776037412",
+          "40135524831151053170066416427604333854704449419199187014",
+          "-11902997803791985059788365348",
+          "1"
+        ],
+        "defining_polynomial_sha256": "821ebe685ed32948f20e4b10929ac3581a286373f05171482e7c6b4f5383b7d7",
+        "degree": 4,
+        "factor_degrees_over_Q": [
+          4
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "1.1.2",
+          "103": "4",
+          "107": "1.1.1.1",
+          "109": "4",
+          "113": "1.3",
+          "127": "1.3",
+          "131": "2.2",
+          "139": "1.1.2",
+          "149": "1.3",
+          "151": "1.3",
+          "157": "1.1.2",
+          "163": "4",
+          "167": "1.3",
+          "173": "1.1.2",
+          "179": "1.3",
+          "181": "1.1.2",
+          "191": "1.3",
+          "193": "1.1.2",
+          "23": "1.3",
+          "29": "4",
+          "37": "1.3",
+          "43": "1.1.2",
+          "53": "1.3",
+          "59": "1.1.1.1",
+          "61": "1.3",
+          "67": "1.1.2",
+          "71": "4",
+          "73": "1.3",
+          "79": "1.3",
+          "83": "1.1.2",
+          "89": "4",
+          "97": "1.3"
+        },
+        "galois_group": {
+          "name": "S4",
+          "order": 24,
+          "pari_sign": -1,
+          "transitive_group_id": 5
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 362,
+        "polynomial_discriminant": "1140963168906875543510629126436308129588125031610497127206889322821435638813187537832037822129554188388068629169698243038443697609463426135222268010311664744717408108754786905217232877013183100803530181407870037003111537420931353448283511278113155991210255673592204908229900370541016338536415745459354714730809157222400000000000000",
+        "polynomial_discriminant_bits": 1097,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "preimage_3": {
+        "defining_polynomial_coefficients_low_to_high": [
+          "-88063556670284144171389372258904704766309446391404643818534572816587462117218880458513935725832057085177515350167115697222351516720284596747499663061910076785728050040715105617592347435261710814883046052470571804012815084886450324488836234269067177",
+          "160764963778188596767140052882193120480242303383902243214449827751487522984159783293745825745632959323284792831289837225698524322877671143398623666994266814641497035966183476663103522788229334071746575787470518116696703689",
+          "-131532746077892542208327113225923256330604707901335281545757845612881897149577635940070890747319748403158905232368808039587943497883551058511650543270241975883037441667105463941715726394668372388",
+          "62647957702729627104072369122158937033377045744268534637439922219151676729783137212450928629291447098758030533837777555230870859697243561795800053391853547106895324756",
+          "-19344125055974497504488799285125031447886492477455129235629040443631932234497757300604250479659191760258105438921337633732993401216207509582",
+          "4693630760625353429244844068980858084182775200311319125097632363487361425177558607650142491858111513873674817086",
+          "-1160435944686399915386536646442070553437599807277759212763744553523019330414155740052",
+          "240813148986906319020398498565626003128226696515195122084",
+          "-26781745058531966384523822033",
+          "1"
+        ],
+        "defining_polynomial_sha256": "157711d5cd3041b10a662fbeff19dd8a9ffeac297429015fdf4b626bb17f47fd",
+        "degree": 9,
+        "factor_degrees_over_Q": [
+          9
+        ],
+        "frobenius_factorization_patterns": {
+          "101": "3.6",
+          "103": "1.2.6",
+          "107": "3.6",
+          "109": "1.2.6",
+          "113": "1.8",
+          "127": "1.2.2.2.2",
+          "131": "1.8",
+          "139": "3.3.3",
+          "149": "1.8",
+          "151": "1.4.4",
+          "157": "1.4.4",
+          "163": "1.4.4",
+          "167": "1.8",
+          "173": "1.8",
+          "179": "1.8",
+          "181": "1.1.1.3.3",
+          "191": "1.8",
+          "193": "3.3.3",
+          "23": "3.6",
+          "29": "1.8",
+          "37": "1.2.2.2.2",
+          "43": "1.4.4",
+          "53": "3.6",
+          "59": "1.1.1.2.2.2",
+          "61": "1.4.4",
+          "67": "1.1.1.3.3",
+          "71": "1.8",
+          "73": "1.4.4",
+          "79": "1.1.1.3.3",
+          "83": "3.6",
+          "89": "1.8",
+          "97": "3.3.3"
+        },
+        "galois_group": {
+          "name": "E(9):2S_4",
+          "order": 432,
+          "pari_sign": -1,
+          "transitive_group_id": 26
+        },
+        "irreducible_over_Q": true,
+        "maximum_coefficient_projective_height_bits": 824,
+        "polynomial_discriminant": "-2711322948843454697365710559958309238912996828429161834983147035657692584421521992838837413285345861517841946766849017880528390390277293637029365599637790673253251775609759095292854766338208025514987795135741390431840707108411713989601239558661228401168985759335518726745138174657234316708145038132668505552578588034306729846636090178192941731200980918779720918569220309693346785940329775096585164353485059248757466391623681711852385334903551201364972953609136814579047929492610444390798730192237387829956776687690324204846522132218169823598447206636775565327606668783166288552696995042878518781343577019423709978689387434883665678364238651310881958341415260935800703189287044487511929132343089329678929846816738962489638932803381367620523495703502140664416957368478230514579088787421656455896377687984653452146290157210719611065322844753037374153657066802005638516377136579151539411102007064463648291387223693557394783632324821110406063878361344797311444251012398454132303601135555541892609469303923858313636857408235825509743119870802806394278657735401559419247519413538252987771813636297057942014221601449360167280940782045702954883435329372974885361281933867631273752371937726206981062116381628873302984634064067783258159911032698036461737304425451754765686087881458477212908761131429139639331211921092510941032777424016126727051785781361080230344432691693788069804614286327442459277898281023162974668942142245592481646920609065712531825675539400039171660635672350173884745575432747721957402709703732089585668860571681627747508773736800997471021596111236385090854668884188281107802231248881089596952370840061840520627302086148276024690669337032742921373914312115148977278573179563208473060088148718348784008820650761301199412055230060425193444590215745990242723028760425448644187486454974107972545234450595564228612868380975339371578322612914008988742553085618301123567349412416224615491132774269091452026880000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "polynomial_discriminant_bits": 6599,
+        "selected_preimage_y_rational_in_x_field": true
+      },
+      "public_point": [
+        "2975749450947996264947091337",
+        "33398989826075322320208934410104857869131"
+      ],
+      "rational_bisection_relations_involving_direction": [],
+      "relative_height": {
+        "all_multipliers_n_at_least_2_excluded_from_first_shell_by_continuous_quotient_lower_bound": true,
+        "first_shell_representative": {
+          "canonical_height_recomputed_from_90_digit_gram": "48.71747608406009349296080914344300",
+          "correction_in_specialized_generic_R17_basis": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "in_or_below_specialized_generic_first_shell": false,
+          "rounded_minimum_heights": [
+            "48.7175",
+            "48.71748",
+            "48.717476"
+          ],
+          "specialized_generic_first_shell_height": "47.87855238606437426789368363679301",
+          "specialized_generic_first_shell_vector": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "stable_across_integer_gram_scales": [
+            10000,
+            100000,
+            1000000
+          ]
+        },
+        "intersection_analogue": {
+          "quotient_height_correlations": [
+            "0.0072910241871295993",
+            "-0.23676900366485054",
+            "-0.37328538778757503",
+            "-0.23891105301453405",
+            "0.30757501437496299",
+            "0.30781078465530726",
+            "0.32496247800562",
+            "0.17561228916157429",
+            "-0.41735644316066056",
+            "-0.25781405886709519",
+            "1"
+          ],
+          "status": "HEIGHT_PAIRING_PROFILE_NOT_K3_INTERSECTION",
+          "strongest_negative": {
+            "correlation": "-0.41735644316066056",
+            "label": "Q9"
+          },
+          "strongest_positive": {
+            "correlation": "0.32496247800562",
+            "label": "Q7"
+          }
+        },
+        "orthogonal_projection_coefficients_in_generic_basis": [
+          "0.13572553178005658728147009212738",
+          "-0.59178922315990608023030103343534",
+          "0.39265522940087014511378508305291",
+          "0.44884196279837398139455978158606",
+          "-0.13883326284961104629179255683600",
+          "-0.41075126087013642051930034444523",
+          "-0.0026035684992942433872425493355710",
+          "-0.11324429083620686467102149653931",
+          "-0.42184963829259524079096408759732",
+          "0.20653036743665285812854221035965",
+          "0.46288130460023890620759206202495",
+          "0.62287470700426823658956533950543",
+          "0.65147690522419653219866957168317",
+          "-0.39460563425171033873401076759101",
+          "0.28811886508588911170523653914742",
+          "-0.16516539819449752166889380112056",
+          "0.38905911568758507986321062141044"
+        ],
+        "quotient_height_defect": "18.869401993931621731359646268033",
+        "raw_canonical_height": "48.717476084060093492960809143443",
+        "smallest_positive_multiplier_entering_first_shell": null
+      },
+      "source_public_point_index_one_based": 22
+    }
+  ],
+  "reproducing_command": "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python elliptic-curves/cas/analyze_elkies_2026_rank28_construction_fingerprints.py",
+  "schema": "elliptic-curves.elkies-2026-rank28-construction-fingerprints.v1",
+  "status": "PASS_EXACT_KUMMER_DIVISION_FIELDS_AND_STABLE_NUMERICAL_RELATIVE_HEIGHT_FINGERPRINTS"
+}

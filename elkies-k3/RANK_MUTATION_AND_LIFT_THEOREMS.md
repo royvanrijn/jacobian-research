@@ -544,6 +544,17 @@ produce rational-function `a_i`, so new searches should begin in the chart.
 The implementation and Golay/NS0031 controls are in
 [`SECTION_FIRST_NORMAL_FORM_COMPILER_2026-09-02.md`](SECTION_FIRST_NORMAL_FORM_COMPILER_2026-09-02.md).
 
+A route-specific obstruction illustrates why the chosen section chart is part
+of the hypotheses.  In the rationalized `D6` polynomial marked-section chart,
+the two nontrivial equal-leading-coefficient correspondences are both
+birational to `Y^2=X^3+X^2+X`.  This elliptic curve has rank zero over `QQ`
+and only the degenerate boundary torsion, so that chart contains no
+nontrivial rational pair.  The result is exact for the declared chart and says
+nothing about a larger rational-function or section-first `D6` chart.  See
+[`LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md`](LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md).
+
+<!-- status-consumer: EC-K3-RES-D6-RATIONALIZED-SECTION-CHART a94042dd2d76797c -->
+
 ### Theorem F: conditional lattice-to-equation correctness
 
 Let `D` satisfy Theorem C and let `O.D=1`. Suppose an exact compiler provides:
@@ -584,6 +595,45 @@ birational are isomorphic, and the transported origin fixes the marking. QED.
 
 The q8 missing-`Dx` and double-2-cover failures are concrete examples of why
 this theorem needs exact denominators and point-map degrees.
+
+### Proposition F0b: quadratic-elimination parent gate
+
+Let `R` be an integral domain of characteristic different from two, and let
+
+```text
+q(X)=a*X^2+b*X+c in R[X].
+```
+
+An equation lift may pass the quadratic-discriminant gate only after checking
+both
+
+```text
+parent(q)=R[X],
+q.discriminant()=b^2-4*a*c in R.
+```
+
+In particular, a coefficient that simplifies into `R` must be explicitly
+coerced back to `R` before forming `q`.  Leaving it in `Frac(R)` can promote
+the ambient polynomial to a different coefficient tower, where a
+zero-argument `discriminant()` method need not dispatch to the intended
+variable or parent.  Factorization, square stripping, and binary-quartic
+invariants computed before this gate do not certify the neighbour.
+
+#### Proof
+
+For a quadratic over `R`, the discriminant is identically `b^2-4ac`; equality
+after coercion is an exact algebraic check.  Every later squarefree-quartic and
+Jacobian operation is functorial in that element, so a different element
+computes a different genus-one curve. QED.
+
+The orbit-96 `A7+D7` lift is the motivating counterexample.  Its tangent slope
+is polynomial in the old base but was retained in a fraction-field parent.
+The resulting spurious degree-three residual reproduced the old `2E6+A3`
+frame.  The parent gate gives the genuine degree-four residual and the
+`I8+I3*+7I1` Jacobian; see
+[`E6A1_RHO19_ORBIT96_WEIERSTRASS_GALOIS_2026-09-02.md`](E6A1_RHO19_ORBIT96_WEIERSTRASS_GALOIS_2026-09-02.md).
+
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT96-A7D7-GALOIS ba008502f0e5533f -->
 
 ### Proposition F1: direct bisection compilation from a height-ten trace
 
@@ -678,6 +728,109 @@ result back.  The cover coordinate transforms by
 `u_t=t*u_s`, so it preserves the quadratic squareclass and all displayed
 coefficient identities.  In the complete published-R17 batch this chart is
 needed only for orbit `0x0c54f`.
+
+### Proposition F1.1: the height-eight genus-one bisection pencil
+
+<!-- status-consumer: EC-K3-R17-RANK28-GENUS1-BISECTION-PILOT 80fa6e59107cc9e6 -->
+
+In the setup of Proposition F1, let `tau` instead have height eight and a
+finite-pole presentation
+
+```text
+tau=(Nx/h^2,Ny/h^3),       deg(h)=2,       gcd(Nx,h)=1.
+```
+
+Let `M0` be the unique polynomial of degree below four satisfying
+
+```text
+M0*Nx+Ny == 0 mod h^2.
+```
+
+For `lambda` in the ground field put
+
+```text
+M_lambda=M0+lambda*h^2
+```
+
+and define `N_lambda` by the formula for `N` in Proposition F1.  Then
+
+```text
+h^6 divides N_lambda,
+q_lambda=N_lambda/h^6,
+deg(q_lambda)<=4.
+```
+
+The line of slope `M_lambda/h` through `-tau` cuts out the residual quadratic
+from Proposition F1.  If `q_lambda` is squarefree of degree four, its
+normalization is a genus-one bisection.  Over
+`s^2=q_lambda(t)` its two lifts are
+
+```text
+x=(M_lambda^2-Nx)/(2*h^2) + (h/2)*s,
+y=y0+(M_lambda/2)*s,
+```
+
+where `y0` is obtained by substituting the constant part of `x` in the line.
+Their sum is the pullback of `tau`.
+
+More precisely, let `t0` be rational with `h(t0)!=0`, and let
+`Q=(x_Q,y_Q)` be a rational point of the smooth fibre with
+`x_Q!=x(tau(t0))`.  There is a unique member of the pencil through `Q`, namely
+
+```text
+lambda_Q =
+  (h(t0)*(y_Q+y(tau(t0)))/(x_Q-x(tau(t0)))-M0(t0))/h(t0)^2.
+```
+
+At the corresponding rational point of the cover,
+
+```text
+s_Q=(2*x_Q-(M_lambda^2-Nx)/h^2 evaluated at t0)/h(t0),
+```
+
+one has `s_Q^2=q_lambda(t0)` and the lifted point is literally `Q`.
+Consequently its Kummer barcode is exactly `x_Q-theta`, not merely a class
+selected by a numerical or local proxy.
+
+If in addition `q_lambda` is coprime to the surface discriminant and to `h`,
+and the displayed lift has the standard integral degree bounds, the
+anti-invariant section is independent of the invariant Mordell--Weil group
+and has height sixteen.
+
+#### Proof
+
+The congruence and divisibility proof is unchanged from Proposition F1,
+because every `M_lambda` has the same residue modulo `h^2`.  A height-eight
+section on a rootless elliptic K3 has `tau.O=2`; in the finite chart this gives
+`deg(h)=2`, `deg(Nx)<=8`, and `deg(Ny)<=12`.  Thus
+`deg(M_lambda)<=4`, every term of `N_lambda` has degree at most sixteen, and
+division by `h^6` leaves degree at most four.  The residual quadratic and
+lift formulas follow by direct substitution.  Riemann--Hurwitz gives genus
+one when the branch divisor consists of four simple points.
+
+Solving the line-incidence equation at `t0` gives the displayed unique
+`lambda_Q`; substituting it gives both the cover witness and literal equality
+with `Q`.  Finally the degree-two pullback has `chi=4`, so an integral section
+disjoint from zero has self-intersection `-4`.  Coprimality with `h` makes the
+two conjugate lifts meet transversely at exactly the four branch points and
+nowhere else.  Their difference therefore has height
+
+```text
+2*(4-(-4))=16.
+```
+
+It is anti-invariant under the deck involution and hence orthogonal to, and
+independent of, the invariant Mordell--Weil subgroup. QED.
+
+The first published-R17 positive-control application uses the
+equation-cheapest trace `tau=-P2-P5`.  All eleven exceptional rank-28 targets
+select rational pencil parameters; their branch polynomials are irreducible
+squarefree quartics coprime to the 24 singular fibres.  This `11/11` incidence
+is the expected base-point-free pencil behavior.  The equation-level content
+is the exact quartic, smooth-branch, Kummer, lift, and height certificate, not
+a claim that fitting a pencil member through a known point discovers that
+point.  See
+[`R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md`](R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md).
 
 ### Theorem F2: complete injectivity on the published rootless R17 survivor set
 

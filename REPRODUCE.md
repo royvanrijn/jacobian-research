@@ -17865,9 +17865,13 @@ MESTRE_TEST_RELATION_DETERMINANT=1 \
 
 <!-- status-consumer: EC-K3-E6A1-RHO19-GENUINE-Q2-MW3 cd4314040bb028f7 -->
 
-<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-EQUATION 8cfa9387612ac443 -->
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-EQUATION 827d75cb8d14d7f4 -->
 
-<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2 2130bc147519ac6b -->
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2 387d6237125637a3 -->
+
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-SPECIALIZATION-RANK7 bf1d025228805b31 -->
+
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT96-A7D7-GALOIS ba008502f0e5533f -->
 
 Generate and byte-check the low-complexity rational-surface catalogue, the
 Golay/NS0031 control import, the complete polynomial degree-`(2,2)` twist
@@ -17903,6 +17907,12 @@ section elimination, and the new one-modulus `E6+A1` Picard-19 family with
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_e6a1_rho19_orbit103_arithmetic_and_orbit96_audit.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/compile_e6a1_rho19_orbit96_rr_galois.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/compile_e6a1_rho19_orbit96_rr_galois.sage --check
 ```
 
 The replay proves the displayed generic rank decomposition `1+1`, K3 height
@@ -17917,22 +17927,53 @@ degree at most two, and the genuine neighbor census is limited to isotropic
 classes `2*e+2*f-w` with `w^2=8`.  The orbit-103 replay additionally proves
 the complete resolved basis for `P0+P1+A3_2`, its binary quartic with rational
 origin, and the explicit `2I1*+2I3+4I1` Jacobian equation.  The final replay
-proves arithmetic rank two, exhibits the anti-invariant third geometric
-direction over `QQ(sqrt(-3))`, and rejects the naive orbit-96 tangent trace by
-its actual `2E6+A3` fibre fingerprint.  See
+proves orbit-103 arithmetic rank two and exhibits its anti-invariant third
+geometric direction over `QQ(sqrt(-3))`.  The orbit-96 replay attaches the
+physical E6 components, guards the quadratic coefficient parent, produces the
+genuine `I8+I3*+7I1` equation, and proves arithmetic rank two with the same
+`chi_-3` line.  See
 [`elkies-k3/RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md`](elkies-k3/RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md)
 and
 [`elkies-k3/E6A1_RHO19_K3_DISSECTION_2026-09-02.md`](elkies-k3/E6A1_RHO19_K3_DISSECTION_2026-09-02.md)
 and
 [`elkies-k3/E6A1_RHO19_GENUINE_Q2_NEIGHBORS_2026-09-02.md`](elkies-k3/E6A1_RHO19_GENUINE_Q2_NEIGHBORS_2026-09-02.md)
 and
-[`elkies-k3/E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md`](elkies-k3/E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md).
+[`elkies-k3/E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md`](elkies-k3/E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md)
+and
+[`elkies-k3/E6A1_RHO19_ORBIT96_WEIERSTRASS_GALOIS_2026-09-02.md`](elkies-k3/E6A1_RHO19_ORBIT96_WEIERSTRASS_GALOIS_2026-09-02.md).
+
+Search for genuinely new rational specialization directions on orbit 103,
+without using its known `sqrt(-3)` direction, with
+
+```bash
+python3 elkies-k3/scripts/search_e6a1_orbit103_specializations.py
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_e6a1_orbit103_specialization_rank.sage \
+  --lane small_coefficient_finalists --candidate-limit 1000 \
+  --height 0 --pari-effort 0 --max-rank 24 \
+  --reduction-prime-bound 500
+
+python3 elkies-k3/scripts/test_e6a1_orbit103_specializations.py
+```
+
+The trace pass exhausts `H(k)<=3000`, promotes eight `k` values through
+`H(r)<=5000`, and runs a separate `k=1`, `H(r)<=500` coefficient lane.  The
+exact promotion pass certifies the distribution
+`2:33, 3:251, 4:366, 5:240, 6:103, 7:7` on all 1000 selected fibres.  A
+system-GP fallback completes the 617 bundled-PARI precision errors.  Every lower bound
+uses exact points and a combined mod-3 finite-quotient certificate against
+`Q_plus,Q_minus`.  No fibre certifies rank at least eight, and neither the
+trace scores nor failed point searches are rank upper bounds.  See
+[`elkies-k3/E6A1_ORBIT103_SPECIALIZATION_SEARCH_2026-09-02.md`](elkies-k3/E6A1_ORBIT103_SPECIALIZATION_SEARCH_2026-09-02.md).
 
 ### E6 rank sum three and rationalized D6 frontier
 
 <!-- status-consumer: EC-K3-RES-QBC-E6-II-RANK3-RHO19 5b10608e230145e9 -->
 
-<!-- status-consumer: EC-K3-RES-D6-RATIONALIZED-SECTION-CHART 06442a208822d255 -->
+<!-- status-consumer: EC-K3-RES-QBC-E6-II-Q2-MW4 3aa5084463780acc -->
+
+<!-- status-consumer: EC-K3-RES-D6-RATIONALIZED-SECTION-CHART a94042dd2d76797c -->
 
 Generate and byte-check the exact `E6` rank split `2+1`, generic Picard-rank
 19 K3, saturated determinant-24 Neron--Severi lattice, and same-NS rootless
@@ -17946,8 +17987,24 @@ MW17 impossibility with
   elkies-k3/scripts/certify_e6_ii_rank3_quadratic_base_change.sage --check
 ```
 
-Replay the rational `D6` equation, its polynomial marked-section chart, and
-the bounded height-30 necessary-condition search for a second section with
+Generate and byte-check the complete first genuine `q=2` shell, including
+the six nef `A6+D7/MW4` frames, with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_e6_ii_rank3_q2_neighbor_candidates.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_e6_ii_rank3_q2_neighbor_candidates.sage --check
+```
+
+This is a complete exact census of the first zero-neutral degree-two shell.
+It proves geometric MW rank four for six neighbours, but it does not compile
+their equations or prove that all four directions descend to `QQ(r)`.
+
+Replay the rational `D6` equation, its polynomial marked-section chart, the
+exact rank-zero correspondence obstruction, and the retained height-30
+regression with
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -17957,6 +18014,153 @@ the bounded height-30 necessary-condition search for a second section with
   elkies-k3/scripts/search_rationalized_d6_rank2_section_chart.sage --check
 ```
 
-The D6 search is bounded and is not a rank-four nonexistence theorem.  The
-proof and search boundaries are recorded in
-[`elkies-k3/E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md`](elkies-k3/E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md).
+The obstruction is exact only inside the declared D6 polynomial chart; it is
+not a rank-four nonexistence theorem for larger rational-function charts.
+
+Run the complete good non-`j=0` `GF(11)` shared-simple-pole two-twist census
+with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_e6_shared_pole_two_twist_sections_modp.sage \
+  --prime 11 --enumerate --skip-msolve
+```
+
+This tests `9,663,060` section candidates.  Every survivor is classified as
+either the dependent pair `S,-2S` or a constant-section component whose
+rational rank-two compatibility conic has no nondegenerate `QQ` point.  It is
+a complete modular result for the declared ansatz, not a global `2+2`
+obstruction.  The proof and search boundaries are recorded in
+[`elkies-k3/E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md`](elkies-k3/E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md)
+and
+[`elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md`](elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md).
+
+<!-- status-consumer: EC-K3-E6-RANK4-ROOTLESS-Q2Q4-CENSUS a7e08603b9700395 -->
+
+Replay the systematic E6 node-collision linear-chord incidence, its exact
+genus-`0/2` component decomposition, the independent `2+2` height witness,
+and the saturated determinant-78 `NS` with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6_rank4_linear_chord_incidence.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6_rank4_linear_chord_incidence.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6_rank4_rootless_low_degree_search.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_e6_rank4_rootless_low_degree_search.sage --check
+```
+
+This is a one-dimensional family over the function field of a curve defined
+over `QQ`, not a coefficient-height scan.  The first checker emits the full
+integral determinant-78 NS marking.  The second exhausts the zero-neutral
+old-degree two, three, and four shells and finds no rootless frame among their
+`79,837` primitive classes.  It does not claim a `QQ(k)` parameterization,
+global rootless nonexistence, or a degree-at-least-five result.  See
+[`elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md`](elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md).
+
+<!-- status-consumer: EC-K3-RES-D5-TWO-MARKED-TWO-TWIST-POLYNOMIAL ea0496c9566cfdc3 -->
+
+Replay the exact two-marked D5 seed and its complete `GF(11)` polynomial
+two-twist census with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_d5_two_marked_two_twist_polynomial_modp.sage \
+  --prime 11
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_d5_two_marked_two_twist_polynomial_modp.sage \
+  --prime 11 --check
+```
+
+The exact part certifies an `I1*` seed with two independent invariant
+sections.  The modular part checks 146,410 section incidences and finds one
+quadratic twist with two distinct-`x` polynomial sections.  It is a modular
+lifting candidate, not a characteristic-zero `2+2` or height-determinant
+certificate.
+
+<!-- status-consumer: EC-K3-RES-A4-TWO-POINT-TATE-SLICE-OBSTRUCTION b9729a0a8f2f17be -->
+
+Replay the exact obstruction in the normalized two-point A4 Tate slice with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_a4_two_point_tate_slice_obstruction.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_a4_two_point_tate_slice_obstruction.sage --check
+```
+
+The `I5` jet has two branches.  Both force either an extra repeated
+discriminant root (generically an `I2` fibre) or a linear dependence between
+the two automatic points.  This is exact only for the declared `r=s=1` Tate
+slice, not for a general two-marked A4 surface.
+
+### Published-R17 barcode-targeted genus-one bisections
+
+<!-- status-consumer: EC-K3-R17-RANK28-GENUS1-BISECTION-PILOT 80fa6e59107cc9e6 -->
+
+Generate and byte-check the norm-eight trace census and the exact genus-one
+bisection pencil members through all eleven rank-28 exceptional targets with
+
+```bash
+sage -python \
+  elkies-k3/scripts/search_elkies_2026_rank28_genus_one_bisections.sage
+
+sage -python \
+  elkies-k3/scripts/search_elkies_2026_rank28_genus_one_bisections.sage \
+  --check
+```
+
+The default pilot completely equation-ranks the 63,925 minimum-norm-eight
+translation classes and executes the cheapest trace `-P2-P5`.  All eleven
+target-fitted members have irreducible squarefree quartic branch polynomials,
+exact Kummer barcode matches, and independent height-16 anti-invariant
+sections.  Fitting one member of a genus-one pencil through each already known
+point is not a point-discovery or rank-32 certificate.  See
+[`elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md`](elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md).
+
+### Published-R17 frozen-quartic simultaneous-splitting search
+
+<!-- status-consumer: EC-K3-R17-RANK28-GENUS1-SIMULTANEOUS-SPLITTING-H10000 40fb0bc465e3e95c -->
+
+Run the exhaustive compact projective scan through height `10,000` and the
+canonical pointed-Jacobian subgroup search through `30P` with
+
+```bash
+sage -python \
+  elkies-k3/scripts/search_elkies_2026_rank28_simultaneous_splitting.sage
+
+sage -python \
+  elkies-k3/scripts/search_elkies_2026_rank28_simultaneous_splitting.sage \
+  --check
+```
+
+The compact scan checks all `121,589,943` primitive parameters in the declared
+box.  Exact replay finds only the fitted rank-28 control `-9529/5471`; there is
+no new simultaneous split in the box or in the eleven cyclic subgroup ranges.
+This is a bounded negative search, not a global rational-point obstruction.
+
+### Published-R17 mixed-trace genus-one splitting search
+
+<!-- status-consumer: EC-K3-R17-RANK28-GENUS1-MIXED-TRACE-SPLITTING-H10000 c7aa09836b842b60 -->
+
+```bash
+sage -python \
+  elkies-k3/scripts/search_elkies_2026_rank28_mixed_trace_splitting.sage
+
+sage -python \
+  elkies-k3/scripts/search_elkies_2026_rank28_mixed_trace_splitting.sage \
+  --check
+```
+
+This constructs `77` exact target-fitted quartics from the seven cheapest
+distinct finite-pole norm-eight traces and repeats the complete height-10,000
+scan, requiring survivors from at least two trace pencils.  Exact replay finds
+only the original control, where all 77 split.  The negative conclusion is
+restricted to the selected trace prefix and compact parameter box.

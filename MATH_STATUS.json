@@ -35055,7 +35055,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:92ebfc3777c74b765e91e072026821b72efc413b5dfcc187b7e389c3e7abde31",
+      "artifact_hash": "sha256:146c0fdeddb2b5de44989bb650b36e28e600a1d5a8ea61f54f05df09db65a3df",
       "software_lock": [
         "elkies-k3/scripts/rank_elkies_2026_bisection_orbits.sage",
         "elkies-k3/scripts/construct_elkies_2026_bisections.sage",
@@ -36425,7 +36425,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Resolved orbit-103 pencil and explicit 2D5+2A2 Mordell--Weil-rank-three equation",
-      "scope": "For the determinant-36 E6+A1 Picard-rank-19 K3, the orbit-103 divisor D=P0+P1+A3_2 has complete resolved Riemann--Roch basis <1,z>, where z=(t-2/k)*(y+y0+m*(x-x0))/((x-x0)*(x-x1)) and m=(y1-y0)/(x1-x0). Exact IV* valuation inequalities and the resolved I4 side/middle charts prove that its only vertical pole is A3_2 with multiplicity one. Elimination gives a squarefree binary quartic with rational points at t=+/-1. After r=k*(k^2-4)*z/2-k and a constant Weierstrass scaling, its Jacobian is y^2=x^3-27*(r^2-4)^2*A4(r)*x+54*(r^2-4)^3*B6(r), with the explicit degree-four and degree-six coefficient polynomials in the canonical note and certificate. The exact fibres are I1* at r=+/-2, I3 at r=-k and infinity, and four residual I1 fibres, hence roots 2D5+2A2, Euler number 24, trivial torsion, geometric Mordell--Weil rank three, regulator 1/4, and the certified rank-three height lattice. Two polynomial QQ(k,r)-points are displayed and checked. Their exact arithmetic descent and the fail-closed A7+D7 comparison gate are recorded in the dependent status EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2.",
+      "scope": "For the determinant-36 E6+A1 Picard-rank-19 K3, the orbit-103 divisor D=P0+P1+A3_2 has complete resolved Riemann--Roch basis <1,z>, where z=(t-2/k)*(y+y0+m*(x-x0))/((x-x0)*(x-x1)) and m=(y1-y0)/(x1-x0). Exact IV* valuation inequalities and the resolved I4 side/middle charts prove that its only vertical pole is A3_2 with multiplicity one. Elimination gives a squarefree binary quartic with rational points at t=+/-1. After r=k*(k^2-4)*z/2-k and a constant Weierstrass scaling, its Jacobian is y^2=x^3-27*(r^2-4)^2*A4(r)*x+54*(r^2-4)^3*B6(r), with the explicit degree-four and degree-six coefficient polynomials in the canonical note and certificate. The exact fibres are I1* at r=+/-2, I3 at r=-k and infinity, and four residual I1 fibres, hence roots 2D5+2A2, Euler number 24, trivial torsion, geometric Mordell--Weil rank three, regulator 1/4, and the certified rank-three height lattice. Two polynomial QQ(k,r)-points are displayed and checked. Their exact arithmetic descent and corrected comparison with the physical orbit-96 A7+D7 model are recorded in the dependent statuses.",
       "canonical_source": "elkies-k3/E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md",
       "dependencies": [
         "EC-K3-E6A1-RHO19-GENUINE-Q2-MW3"
@@ -36456,25 +36456,65 @@
       "priority": "derived"
     },
     {
+      "id": "EC-K3-E6A1-RHO19-ORBIT96-A7D7-GALOIS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Physical orbit-96 A7+D7 equation and Mordell--Weil representation 1+chi_-3+1",
+      "scope": "For the determinant-36 E6+A1 Picard-rank-19 K3, the orbit-96 divisor is D96=2P0+(2,1,2,2,1,0)_E6a+(1,0,0,0,0,0)_E6b+A3_2. The ordinary IV* resolution has chart order (leaf,+outer,-outer,+inner,-inner,central), coordinate valuations u=(2,1,1,2,2,3), x=(2,2,2,3,3,4), y=(3,2,2,4,4,6), and the marked P0 entrance fixes the physical root-to-chart map (2,1,4,6,5,3). These data prove that z=(t+1)*(y+y0+m_tan*(x-x0))/(x-x0)^2 has exactly the vertical pole cycles in D96, so <1,z> is the complete resolved H0 basis. Coercing m_tan back to the old-base polynomial ring and checking the quadratic discriminant against b^2-4ac gives a squarefree quartic with rational points. Its Jacobian is y^2=x^3-27*I6(z)*x-27*J9(z), with coefficient lists in the canonical note and certificate, and fibres I8 at zero, I3* at infinity, and seven I1 fibres. Thus the roots are A7+D7, Euler number 24, torsion is trivial, geometric MW rank is three, and the saturated height lattice is diag(3/8,1,3). With E6a_6 as zero, three exact section divisor classes generate this lattice. Sqrt(-3)-conjugation swaps only the old I4 side components and acts on the height basis as diag(1,-1,1). Hence the generator fields are QQ(k)(z), QQ(k,sqrt(-3))(z), QQ(k)(z), and the arithmetic rank over QQ(k)(z) is exactly two. Orbit 96 has the same chi_-3 line as orbit 103, not a complementary quadratic character. Polynomial child-coordinate formulas for all generators and ranks of numerical specializations are not claimed.",
+      "canonical_source": "elkies-k3/E6A1_RHO19_ORBIT96_WEIERSTRASS_GALOIS_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-E6A1-RHO19-GENUINE-Q2-MW3"
+      ],
+      "checker": "elkies-k3/scripts/compile_e6a1_rho19_orbit96_rr_galois.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:08c2629837f74aa90f9b09df9fe68104f542b226af892d056bff6c08577c01d0",
+      "software_lock": [
+        "artifacts/generated-results/elkies-k3-e6a1-rho19-k3-dissection-v1.json",
+        "artifacts/generated-results/elkies-k3-e6a1-rho19-genuine-q2-neighbors-v1.json",
+        "elkies-k3/scripts/compile_e6a1_rho19_orbit96_rr_galois.sage",
+        "artifacts/generated-results/elkies-k3-e6a1-rho19-orbit96-rr-galois-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/scripts/README.md",
+        "elkies-k3/E6A1_RHO19_GENUINE_Q2_NEIGHBORS_2026-09-02.md",
+        "elkies-k3/E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md",
+        "elkies-k3/E6A1_RHO19_ORBIT96_WEIERSTRASS_GALOIS_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2",
       "kind": "theorem",
       "state": "proved",
-      "title": "Orbit-103 arithmetic rank two, anti-invariant third direction, and fail-closed A7+D7 comparison gate",
-      "scope": "On the exact orbit-103 2D5+2A2 Weierstrass K3, the two polynomial QQ(k)(r)-sections Q+ and Q- each have P.O=0 and local corrections 5/4+2/3+2/3, hence height 17/12. They are neither equal nor negatives; trivial geometric torsion and equality of their positive heights therefore prove independence. The old-base binary quartic has leading coefficient -48*(r+k)^2/(k^2*(k^2-4)^2). Its infinity points give an explicit section Q_delta=(X_delta,sqrt(-3)*Y_delta0), with the degree-four and degree-six polynomials displayed in the canonical note. Exact substitution holds and sqrt(-3)-conjugation sends Q_delta to -Q_delta. Thus the geometric rank-three MW representation contains a nonzero anti-invariant line, while Q+ and Q- span a rank-two invariant subspace. The generic arithmetic rank over QQ(k)(r) is exactly two: no third independent rational generator exists, and the third geometric direction is defined over QQ(sqrt(-3)). For the abstract orbit-96 A7+D7 target, exact compilation of the tempting P0 tangent trace instead gives y^2=x^3-3*(z^2-1)^3*C2*x-2*(z^2-1)^4*C4, with fibres 2IV*+I4+4I1 and roots 2E6+A3. It is a negative control, not the A7+D7 fibration. Orbit 103 wins the declared source-divisor metrics (max coefficient,L1)=(1,3) versus (2,12), while abstract orbit 96 wins reducible-fibre count two versus four; Weierstrass coefficient optimality is not comparable until the abstract E6 root basis is matched to a complete resolved physical E6 marking and the genuine A7+D7 equation is compiled.",
+      "title": "Orbit-103 arithmetic rank two and comparison with the physical orbit-96 A7+D7 model",
+      "scope": "On the exact orbit-103 2D5+2A2 Weierstrass K3, the two polynomial QQ(k)(r)-sections Q+ and Q- each have P.O=0 and local corrections 5/4+2/3+2/3, hence height 17/12. They are neither equal nor negatives; trivial geometric torsion and equality of their positive heights therefore prove independence. The old-base binary quartic has leading coefficient -48*(r+k)^2/(k^2*(k^2-4)^2). Its infinity points give an explicit section Q_delta=(X_delta,sqrt(-3)*Y_delta0), with the degree-four and degree-six polynomials displayed in the canonical note. Exact substitution holds and sqrt(-3)-conjugation sends Q_delta to -Q_delta. Thus the geometric rank-three MW representation contains a nonzero anti-invariant line, while Q+ and Q- span a rank-two invariant subspace. The generic arithmetic rank over QQ(k)(r) is exactly two. The corrected physical orbit-96 certificate gives fibres I8+I3*+7I1, arithmetic rank two, and representation 1+chi_-3+1. Thus orbit 103 is source-divisor-sparser, orbit 96 is fibre-sparser and has lower displayed Weierstrass degrees, but neither supplies a third rational direction and their nontrivial quadratic characters are the same.",
       "canonical_source": "elkies-k3/E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md",
       "dependencies": [
         "EC-K3-E6A1-RHO19-ORBIT103-EQUATION",
-        "EC-K3-E6A1-RHO19-GENUINE-Q2-MW3"
+        "EC-K3-E6A1-RHO19-GENUINE-Q2-MW3",
+        "EC-K3-E6A1-RHO19-ORBIT96-A7D7-GALOIS"
       ],
       "checker": "elkies-k3/scripts/certify_e6a1_rho19_orbit103_arithmetic_and_orbit96_audit.sage",
       "proof_type": "exact_symbolic",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:23988e2a5e608301ebf393fb157c0c03a02ae353760aadf1fbe5ed5a689304c1",
+      "artifact_hash": "sha256:5cfc2180a49c1a2a0bd7c119dca1e10e24e2ca459c17740101bdef8848b6b643",
       "software_lock": [
         "artifacts/generated-results/elkies-k3-e6a1-rho19-orbit103-rr-weierstrass-v1.json",
         "artifacts/generated-results/elkies-k3-e6a1-rho19-genuine-q2-neighbors-v1.json",
+        "artifacts/generated-results/elkies-k3-e6a1-rho19-orbit96-rr-galois-v1.json",
         "elkies-k3/scripts/certify_e6a1_rho19_orbit103_arithmetic_and_orbit96_audit.sage",
         "artifacts/generated-results/elkies-k3-e6a1-rho19-orbit103-arithmetic-orbit96-audit-v1.json"
       ],
@@ -36487,6 +36527,44 @@
         "elkies-k3/scripts/README.md",
         "elkies-k3/E6A1_RHO19_GENUINE_Q2_NEIGHBORS_2026-09-02.md",
         "elkies-k3/E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-E6A1-RHO19-ORBIT103-SPECIALIZATION-RANK7",
+      "kind": "example",
+      "state": "proved",
+      "title": "Seven exact orbit-103 specializations of rank at least seven",
+      "scope": "For the orbit-103 E6+A1 family, a bounded two-stage local-trace search exhausts rational k of projective height at most 3000, retains eight k values, exhausts rational r of height at most 5000 for each, and separately retains the top 1000 k=1 candidates of r-height at most 500. These finite Nagao scores are heuristic rankings only. On the complete selected compact prefix, exact point promotion gives finite-quotient-certified lower-bound counts rank 2:33, 3:251, 4:366, 5:240, 6:103, and 7:7. The seven rank-at-least-seven fibres have k=1 and r=-493/161,-83/223,494/305,-234/367,151/332,445/372,-59/401. In each case exact substitution and one combined mod-3 finite-quotient certificate prove Q_plus,Q_minus together with five new rational points independent. The known sqrt(-3) anti-invariant section is not used. Sage's bundled PARI fails on 617 selected candidates, but a bounded system-GP fallback completes all of them under the same exact certificate gate. No selected fibre has certified rank at least eight; the selected distribution is not a frequency statement for the full height box, no rank upper bound is claimed, and the proposed rank-8--12 success condition remains unmet.",
+      "canonical_source": "elkies-k3/E6A1_ORBIT103_SPECIALIZATION_SEARCH_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2"
+      ],
+      "checker": "elkies-k3/scripts/probe_e6a1_orbit103_specialization_rank.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:84b48cc119c30daa9a6989d0f365c6046ba0ea122ed384bb9043f19c2bde83e8",
+      "software_lock": [
+        "artifacts/generated-results/elkies-k3-e6a1-rho19-orbit103-rr-weierstrass-v1.json",
+        "elkies-k3/scripts/search_e6a1_orbit103_specializations.py",
+        "artifacts/generated-results/elkies-k3-e6a1-orbit103-specialization-search-v1.json",
+        "elkies-k3/scripts/probe_e6a1_orbit103_specialization_rank.sage",
+        "artifacts/generated-results/elkies-k3-e6a1-orbit103-specialization-rank-probes-v1.json",
+        "elkies-k3/scripts/test_e6a1_orbit103_specializations.py"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/scripts/README.md",
+        "elkies-k3/E6A1_RHO19_ORBIT103_WEIERSTRASS_2026-09-02.md",
+        "elkies-k3/E6A1_ORBIT103_SPECIALIZATION_SEARCH_2026-09-02.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -36585,6 +36663,7 @@
       "consumers": [
         "REPRODUCE.md",
         "elkies-k3/E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md",
+        "elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md",
         "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "elkies-k3/scripts/README.md"
       ],
@@ -36593,22 +36672,26 @@
       "priority": "primary"
     },
     {
-      "id": "EC-K3-RES-D6-RATIONALIZED-SECTION-CHART",
-      "kind": "example",
-      "state": "partial",
-      "title": "Rationalized D6 surface and bounded marked-section frontier",
-      "scope": "The generic D6 rational elliptic surface is written over QQ as y^2=x^3+u^2*(-u^2+a*u-3)*x+u^3*(g*u^3+b*u^2+a*u-2), without the customary sqrt(3) normalization at infinity. A two-parameter polynomial section chart is verified by literal substitution. Equality up to sign of the leading y coefficients for two sections in this chart yields two explicit correspondence equations; an exhaustive rational numerator/denominator height box through 30 finds no nontrivial pair. This is a bounded necessary-condition search, not a global rational-point theorem, a second-section obstruction, or a rank-sum-four result.",
+      "id": "EC-K3-RES-QBC-E6-II-Q2-MW4",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete first quadratic-neighbour shell with six nef A6+D7 Mordell--Weil-rank-four frames",
+      "scope": "For the determinant-24 Picard-rank-19 E6+II quadratic-base-change K3, every zero-neutral old-degree-two class is represented in the split marking by D=2e+2f-w with w^2=8. Exact dominant-label and rank-three closest-vector enumeration gives 268 current-Weyl orbits, of which three are nonprimitive. Physical reduction leaves 211 classes at old degree two, 42 at degree one, and 12 at degree zero. The minimum child root rank is 13 and occurs in exactly six classes, all with root type A6+D7. Each has no physical fixed component, passes the complete old-section height-ellipsoid gate and the degree-two horizontal-root exclusion, and therefore defines a nef Jacobian fibration of exact geometric Mordell--Weil rank four, trivial torsion, and regulator 6/7. The q=2 shell contains no lower-root or rootless frame; independently, EC-K3-RES-QBC-E6-II-RANK3-RHO19 rules out every same-NS rootless MW17 frame. No child equation or arithmetic descent of the four geometric generators over QQ(r) is asserted.",
       "canonical_source": "elkies-k3/E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md",
-      "dependencies": [],
-      "checker": "elkies-k3/scripts/search_rationalized_d6_rank2_section_chart.sage",
+      "dependencies": [
+        "EC-K3-RES-QBC-E6-II-RANK3-RHO19"
+      ],
+      "checker": "elkies-k3/scripts/search_e6_ii_rank3_q2_neighbor_candidates.sage",
       "proof_type": "exact_symbolic",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:56ee19fff7c815a99be1bf9341e421b620b67ed97efe926d37a598cc5c47e80b",
+      "artifact_hash": "sha256:9c34734fce6b4cf9ecd9347ae44607d8b7f1333ea4cf8cccf50262d313da5c6b",
       "software_lock": [
-        "elkies-k3/scripts/search_rationalized_d6_rank2_section_chart.sage",
-        "artifacts/generated-results/elkies-k3-rationalized-d6-section-chart-search-v1.json"
+        "elkies-k3/scripts/certify_e6_ii_rank3_quadratic_base_change.sage",
+        "artifacts/generated-results/elkies-k3-e6-ii-rank3-quadratic-base-change-v1.json",
+        "elkies-k3/scripts/search_e6_ii_rank3_q2_neighbor_candidates.sage",
+        "artifacts/generated-results/elkies-k3-e6-ii-rank3-q2-neighbor-candidates-v1.json"
       ],
       "supersedes_notes": [],
       "supersedes": [],
@@ -36622,6 +36705,266 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "EC-K3-RES-D6-RATIONALIZED-SECTION-CHART",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Rationalized D6 surface and exact obstruction in its polynomial two-section chart",
+      "scope": "The generic D6 rational elliptic surface is written over QQ as y^2=x^3+u^2*(-u^2+a*u-3)*x+u^3*(g*u^3+b*u^2+a*u-2), without the customary sqrt(3) normalization at infinity. A two-parameter polynomial section chart is verified by literal substitution. Equality up to sign of the leading y coefficients for two sections yields two nontrivial correspondence curves. Explicit birational maps identify both with Y^2=X^3+X^2+X, whose Mordell--Weil group over QQ has rank zero and torsion {O,(0,0)}; both torsion points are degenerate or omitted correspondence boundaries. Hence this particular polynomial marked-section chart contains no nontrivial rational pair. This does not obstruct a second section in a larger D6 rational-function chart or a rank-sum-four construction.",
+      "canonical_source": "elkies-k3/E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md",
+      "dependencies": [],
+      "checker": "elkies-k3/scripts/search_rationalized_d6_rank2_section_chart.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8f6b56d1fbdf454e7573cc9a93f9e5081923dc844df4f354c27eaf26a852d543",
+      "software_lock": [
+        "elkies-k3/scripts/search_rationalized_d6_rank2_section_chart.sage",
+        "artifacts/generated-results/elkies-k3-rationalized-d6-section-chart-search-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/E6_II_RANK3_QUADRATIC_BASE_CHANGE_2026-09-02.md",
+        "elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-RES-D5-TWO-MARKED-TWO-TWIST-POLYNOMIAL",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Exact two-marked D5 seed and complete GF(11) polynomial two-twist census",
+      "scope": "The rational elliptic surface y^2=x^3+u^2*(-3*u^2-13*u-3)*x+u^3*(2*u^3-17*u^2-12*u-2) has discriminant order seven at u=0 with squarefree residual finite discriminant, and contains the sections P=(-u-2*u^2,u^2) and Q=(-u-u^2,u^2*(1-2*u)). At u=1 they specialize to a signed Mordell--Weil basis on the exact rank-two curve y^2=x^3-19*x-29, proving P,Q independent over QQ(u). Over GF(11), complete enumeration of all 110 monic squarefree quadratic twists d and all 1331 polynomial x of degree at most two tests 146410 incidences in the chart d*y^2=x^3+f*x+g with degree y at most two. Exactly one twist, d=u^2-2*u-2, has two distinct-x sections. No relation with coefficient box [-12,12]^2 is found, but that bounded check is not a height or independence certificate. No characteristic-zero lift, rational 2+2 family, or rank-sum-five construction is asserted.",
+      "canonical_source": "elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md",
+      "dependencies": [],
+      "checker": "elkies-k3/scripts/search_d5_two_marked_two_twist_polynomial_modp.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:99a407a3252552c2ee48616c3d8170a83620fe0d4c5fd16ff1957a27a9c5704c",
+      "software_lock": [
+        "elkies-k3/scripts/search_d5_two_marked_two_twist_polynomial_modp.sage",
+        "artifacts/generated-results/elkies-k3-d5-two-marked-two-twist-polynomial-p11-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-RES-A4-TWO-POINT-TATE-SLICE-OBSTRUCTION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Exact dependence or extra-fibre obstruction in the normalized two-point A4 Tate slice",
+      "scope": "In the normalized two-point Tate slice y^2+a1*x*y+a3*y=x^3+a2*x^2 with a1=1+A*u, h=H*u, kappa=B*u+C*u^2, a2=kappa, and a3=h*(1-h-a1)+kappa, the points P=(0,0) and Q=(h,h^2) are automatic. On B nonzero, the u^4 discriminant coefficient is -B^2*(H+B)*(A+H-B), so an I5 fibre at u=0 has branches H=-B and H=B-A. In both branches Delta/u^5 contains the square factor (B+(A*B-B^2+C)*u)^2. Avoiding the resulting extra repeated discriminant root, generically an I2 fibre, forces C=B^2-A*B; exact function-field group arithmetic then gives P+2Q=0 on H=-B and 3P+2Q=0 on H=B-A. Thus this particular pure-A4 slice cannot provide two independent marked directions. This does not obstruct a general two-point Tate chart with nonconstant Bezout data or a two-marked A4 surface outside the declared slice.",
+      "canonical_source": "elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md",
+      "dependencies": [],
+      "checker": "elkies-k3/scripts/certify_a4_two_point_tate_slice_obstruction.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e906f11ac31dcbefd5cb734dbac5d977862878a583925a49653c6c7a4fa13271",
+      "software_lock": [
+        "elkies-k3/scripts/certify_a4_two_point_tate_slice_obstruction.sage",
+        "artifacts/generated-results/elkies-k3-a4-two-point-tate-slice-obstruction-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
+      "id": "EC-K3-R17-RANK28-GENUS1-BISECTION-PILOT",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Exact norm-eight genus-one bisection pencil through all eleven published R17 rank-28 targets",
+      "scope": "On the published rootless R17 elliptic K3, complete enumeration of the minimum-norm-eight shell gives 230,040 stored short representatives and exactly 63,925 translation classes. The equation-cheapest class has trace tau=-P2-P5, trace denominator degree two, and one-addition equation cost. For tau=(Nx/h^2,Ny/h^3), the unique degree-below-four M0 satisfying M0*Nx+Ny=0 modulo h^2 extends to the genus-one pencil M=M0+lambda*h^2. For each of the eleven public exceptional points at t=-9529/5471, the exact line-incidence equation gives a rational lambda. All eleven normalized branch polynomials q=(M^4-6*M^2*Nx-8*M*Ny-3*Nx^2-4*A*h^4)/h^6 are irreducible squarefree quartics over QQ, coprime to h and the degree-24 surface discriminant. Exact substitution verifies a rational cover witness, both residual x and y equations, the lifted section, and literal equality x(P)-theta=x(Q_i)-theta in the short-model cubic algebra. Each degree-two base change has a height-16 anti-invariant section independent of invariant R17 and hence generic rank at least 18 over its genus-one base. The 11/11 incidence is the expected selection of the unique member of a genus-one pencil through each nondegenerate point; it does not discover the known points, classify all 63,925 pencils or the 43 norm-twelve deep classes, produce a rank-32 specialization, or prove simultaneous splitting away from the fitted control.",
+      "canonical_source": "elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-R17",
+        "EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS",
+        "EC-K3-ELKIES-2026-LOW-GENUS-COVER-QUOTIENTS"
+      ],
+      "checker": "elkies-k3/scripts/search_elkies_2026_rank28_genus_one_bisections.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:7b02e934c0173fe36aaee5142fe34e8fcdbf3ffe32e6a259a2a094eba0051d9b",
+      "software_lock": [
+        "elkies-k3/scripts/search_elkies_2026_rank28_genus_one_bisections.sage",
+        "elkies-k3/scripts/construct_elkies_2026_bisections.sage",
+        "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "E6 linear-chord incidence curve with arithmetic rank split 2+2 and determinant-78 NS",
+      "scope": "In the full split marked E6 chart y^2=x^3+(a*u-3)*x+(u^2+c*u-2), coefficient elimination for two complete node-collision linear-chord pencils with common squareclass u*(u-M) gives one-dimensional unordered incidence components of geometric genera zero and two. Over the function field of the genus-zero QQ component, the two marked invariant sections and two chord-derived anti-invariant sections are independent. A complete good-reduction pole-growth witness gives anti-invariant height Gram [[22/3,4/3],[4/3,22/3]]. The chord sections satisfy 2*R1=P+T1 and 2*R2=Q+T2, so the saturated rank-four MW height determinant is 13/3. The K3 has generic fibres 2IV*+I2+6I1, generic Picard rank 19, trivial torsion, and abs(det NS)=78. Resolved component and smooth-section incidences give a full integral rank-19 NS Gram with Smith invariants 1^18,78 and a unimodular split NS=U+M(-1). The necessary Blichfeldt/Hermite screen for a rootless rank-17 MW frame passes. This result is a family over a curve defined over QQ; it does not certify a QQ(k) parameterization, a rational specialization of the base curve, or an actual rootless MW17 fibration.",
+      "canonical_source": "elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md",
+      "dependencies": [],
+      "checker": "elkies-k3/scripts/certify_e6_rank4_linear_chord_incidence.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:08aaa1fd9edbc9a4ecdb9ab45a98c6eef411ef209d45505bca07e5ddde9d52ca",
+      "software_lock": [
+        "elkies-k3/scripts/certify_e6_rank4_linear_chord_incidence.sage",
+        "elkies-k3/data/lattice/e6_rank4_det78_frame.txt",
+        "artifacts/generated-results/elkies-k3-e6-rank4-linear-chord-incidence-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-E6-RANK4-ROOTLESS-Q2Q4-CENSUS",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Complete determinant-78 E6 rank-four rootless census through old degree four",
+      "scope": "For the full saturated determinant-78 NS lattice of the E6 rank-four incidence family, every zero-neutral primitive isotropic class D=q*e+q*f-w with q=2,3,4 and w^2=2q^2 is enumerated modulo the full Weyl group of the old 2E6+A1 fibre roots. Exact Dynkin-label and rank-four closest-vector enumeration gives 280, 6242, and 73601 dominant classes; 277, 6239, and 73321 are primitive. Primitive U splitting and exact norm-two enumeration in every child frame finds no rootless child. This proves absence only in the complete declared degree-two, degree-three, and degree-four shells; degree at least five, multi-step routes, and global rootless nonexistence remain open.",
+      "canonical_source": "elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD"
+      ],
+      "checker": "elkies-k3/scripts/certify_e6_rank4_rootless_low_degree_search.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:207feacd377f432dfb869765e96d6df8c91892800b73f3ee59c19fc567e06538",
+      "software_lock": [
+        "elkies-k3/scripts/certify_e6_rank4_rootless_low_degree_search.sage",
+        "elkies-k3/data/lattice/e6_rank4_det78_frame.txt",
+        "artifacts/generated-results/elkies-k3-e6-rank4-linear-chord-incidence-v1.json",
+        "artifacts/generated-results/elkies-k3-e6-rank4-rootless-low-degree-search-v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-RANK28-GENUS1-SIMULTANEOUS-SPLITTING-H10000",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Bounded simultaneous-splitting search for the eleven frozen R17 genus-one quartics",
+      "scope": "For the eleven irreducible squarefree quartics fitted through the published rank-28 fibre at t0=-9529/5471, an exhaustive scan visits all 121589943 primitive rationals t=a/b with |a|<=10000 and 1<=b<=10000. Sixteen exact good-prime square-residue masks leave 7889 possible simultaneous splits, and 15861 exact integer-square tests leave exactly the original t0, where all eleven covers split; there is no new simultaneous split in the declared box. Independently, every pointed quartic has a canonical non-torsion Jacobian point from the opposite ordinate above t0, and exact enumeration of 2P through 30P on all eleven Jacobians finds no cross-split, reaching projective coordinate sizes up to 682732 bits. Since no new hit survives, specialization quotient-independence testing is vacuous. This is an exact bounded negative experiment, not a global nonexistence theorem for rational points on the pairwise fibre products and not a rank-32 certificate.",
+      "canonical_source": "elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-R17-RANK28-GENUS1-BISECTION-PILOT"
+      ],
+      "checker": "elkies-k3/scripts/search_elkies_2026_rank28_simultaneous_splitting.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b1868f37096e791c4e16ca63fb08a9339696de1d241fb7686ac25963713d29c8",
+      "software_lock": [
+        "elkies-k3/scripts/search_elkies_2026_rank28_simultaneous_splitting.sage",
+        "elkies-k3/scripts/scan_elkies_2026_rank28_genus_one_splitting.cpp",
+        "artifacts/generated-results/elkies-k3-r17-rank28-simultaneous-splitting-h10000-v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-RANK28-GENUS1-MIXED-TRACE-SPLITTING-H10000",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Bounded mixed-trace splitting search across 77 target-fitted R17 genus-one quartics",
+      "scope": "The seven equation-cheapest distinct finite-pole norm-eight R17 traces each fit eleven exact irreducible squarefree quartics through the public rank-28 complement, giving 77 certified covers. An exhaustive mixed-trace scan visits all 121589943 primitive rationals t=a/b with |a|<=10000 and 1<=b<=10000. Sixteen good-prime residue masks, retaining only candidates supported by at least two distinct trace pencils, leave 5179 parameters; 10461 exact integer-square tests leave exactly t0=-9529/5471, where all 77 quartics split. No parameter away from t0 in the declared box splits quartics from two selected traces, so specialization quotient-independence is vacuous. This is a bounded negative experiment for a seven-trace prefix, not a global obstruction for the remaining norm-eight traces, norm-twelve classes, or trisections.",
+      "canonical_source": "elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-R17-RANK28-GENUS1-BISECTION-PILOT",
+        "EC-K3-R17-RANK28-GENUS1-SIMULTANEOUS-SPLITTING-H10000"
+      ],
+      "checker": "elkies-k3/scripts/search_elkies_2026_rank28_mixed_trace_splitting.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1a0e76104fbed81840d292bbe7bbeb00241c6eb88c787a72358f97fc461d2fbe",
+      "software_lock": [
+        "elkies-k3/scripts/search_elkies_2026_rank28_mixed_trace_splitting.sage",
+        "elkies-k3/scripts/scan_elkies_2026_rank28_mixed_trace_splitting.cpp",
+        "artifacts/generated-results/elkies-k3-r17-rank28-mixed-trace-splitting-h10000-v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
     }
   ]
 }

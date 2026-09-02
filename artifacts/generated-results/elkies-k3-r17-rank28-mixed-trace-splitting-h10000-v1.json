@@ -1,0 +1,771 @@
+{
+  "compact_projective_scan": {
+    "exact_square_tests": 10461,
+    "height": 10000,
+    "maximum_exact_split_quartic_count": 77,
+    "maximum_exact_split_trace_count": 7,
+    "mixed_trace_simultaneous_splits": [
+      {
+        "projective_pair": [
+          -9529,
+          5471
+        ],
+        "split_quartic_count": 77,
+        "split_quartics": [
+          {
+            "flat_index_zero_based": 0,
+            "integral_square_root": "303507680352793842108956096391102947670268326358251325641500217530972826919798685482275784656043809127176688111436778871264929271096454062560",
+            "target_index_one_based": 1,
+            "target_label": "Q1",
+            "trace_index_one_based": 1
+          },
+          {
+            "flat_index_zero_based": 1,
+            "integral_square_root": "8328429408734321904187199291867687109033231976524609868960621610171951746300976609680507843860",
+            "target_index_one_based": 2,
+            "target_label": "Q2",
+            "trace_index_one_based": 1
+          },
+          {
+            "flat_index_zero_based": 2,
+            "integral_square_root": "123157761349477160236199533856594125761737103516844514746992754811508837113986652643598213483687486269087702173255864642874003857562379440",
+            "target_index_one_based": 3,
+            "target_label": "Q3",
+            "trace_index_one_based": 1
+          },
+          {
+            "flat_index_zero_based": 3,
+            "integral_square_root": "56416288362142812843178205792242040237195039447926345296247846013317537973276367711156973235446080002192360033472415181832704880",
+            "target_index_one_based": 4,
+            "target_label": "Q4",
+            "trace_index_one_based": 1
+          },
+          {
+            "flat_index_zero_based": 4,
+            "integral_square_root": "2088142235967231792216401784943739137544055392033067343591768513570000592094182393686591134805794415059504831374182087283513190",
+            "target_index_one_based": 5,
+            "target_label": "Q5",
+            "trace_index_one_based": 1
+          },
+          {
+            "flat_index_zero_based": 5,
+            "integral_square_root": "2219000490367923126919514001598593270222913753401712264497208856855555512876734543577429547203864545156597400148398330167734327145584753929054552025362758364537938240",
+            "target_index_one_based": 6,
+            "target_label": "Q6",
+            "trace_index_one_based": 1
+          },
+          {
+            "flat_index_zero_based": 6,
+            "integral_square_root": "86453823778156226876091563727961520832572532055455843186588598415079091297691519851102980272898558480915329756160",
+            "target_index_one_based": 7,
+            "target_label": "Q7",
+            "trace_index_one_based": 1
+          },
+          {
+            "flat_index_zero_based": 7,
+            "integral_square_root": "11147646361983956403672133583200990316734052302269405179305188501290592420536930860342909897676502401132593622423503237032",
+            "target_index_one_based": 8,
+            "target_label": "Q8",
+            "trace_index_one_based": 1
+          },
+          {
+            "flat_index_zero_based": 8,
+            "integral_square_root": "1298688024936477437049921446307814922710828415717119658613488063118761517467860300274935453250861619734528720872613661034560",
+            "target_index_one_based": 9,
+            "target_label": "Q9",
+            "trace_index_one_based": 1
+          },
+          {
+            "flat_index_zero_based": 9,
+            "integral_square_root": "167239875212012891183672693440220299654394568244065870870665924427951950102394831848093242488844577744282757439553554566",
+            "target_index_one_based": 10,
+            "target_label": "Q10",
+            "trace_index_one_based": 1
+          },
+          {
+            "flat_index_zero_based": 10,
+            "integral_square_root": "525968598397107011959870845886802776239458716365636953407287017309548899697134055230014548369242083564070322574160",
+            "target_index_one_based": 11,
+            "target_label": "Q11",
+            "trace_index_one_based": 1
+          },
+          {
+            "flat_index_zero_based": 11,
+            "integral_square_root": "3283074101410187567756867740851550698151963237323824899130990667697095014701997357955363317507802237659336268487346605371547560841231872000",
+            "target_index_one_based": 1,
+            "target_label": "Q1",
+            "trace_index_one_based": 2
+          },
+          {
+            "flat_index_zero_based": 12,
+            "integral_square_root": "1510139387438439126787719016090761547208975681244381782227214329025496353364400138073777307937217210682766544335872000",
+            "target_index_one_based": 2,
+            "target_label": "Q2",
+            "trace_index_one_based": 2
+          },
+          {
+            "flat_index_zero_based": 13,
+            "integral_square_root": "3951657260723030623224864776630014030139617362697165990208396943159020533158027383857956240739256951166231717818660131799040",
+            "target_index_one_based": 3,
+            "target_label": "Q3",
+            "trace_index_one_based": 2
+          },
+          {
+            "flat_index_zero_based": 14,
+            "integral_square_root": "13128302595449056716913014894471430653516014665966876817319574921945350359049903434488556838933813059110020500084341013226268208640000000",
+            "target_index_one_based": 4,
+            "target_label": "Q4",
+            "trace_index_one_based": 2
+          },
+          {
+            "flat_index_zero_based": 15,
+            "integral_square_root": "445169668065900781200084811067157644983537409178284802532750792247433345335716594794827796952065063383040",
+            "target_index_one_based": 5,
+            "target_label": "Q5",
+            "trace_index_one_based": 2
+          },
+          {
+            "flat_index_zero_based": 16,
+            "integral_square_root": "863483098768997253838485394231326003868703724564495659840904709924909808081353929661487257058451691960805717795856311035278119411712",
+            "target_index_one_based": 6,
+            "target_label": "Q6",
+            "trace_index_one_based": 2
+          },
+          {
+            "flat_index_zero_based": 17,
+            "integral_square_root": "92215813519986428685660013315267419826614606675840780659165647318927027406731850991688914227760000",
+            "target_index_one_based": 7,
+            "target_label": "Q7",
+            "trace_index_one_based": 2
+          },
+          {
+            "flat_index_zero_based": 18,
+            "integral_square_root": "10447384670477617975448059042426631606790806099037516129902437831676517834743745677415910335146136496655677110776119296",
+            "target_index_one_based": 8,
+            "target_label": "Q8",
+            "trace_index_one_based": 2
+          },
+          {
+            "flat_index_zero_based": 19,
+            "integral_square_root": "7391833990623070147406081537014454416076698843997686354268498715302694947240568506395530240000",
+            "target_index_one_based": 9,
+            "target_label": "Q9",
+            "trace_index_one_based": 2
+          },
+          {
+            "flat_index_zero_based": 20,
+            "integral_square_root": "100835435376444200055708827031772922149292132309431323845471957213062468830324474879910146318685729063407672589206940981457819922432",
+            "target_index_one_based": 10,
+            "target_label": "Q10",
+            "trace_index_one_based": 2
+          },
+          {
+            "flat_index_zero_based": 21,
+            "integral_square_root": "2417757927057418977137456834392295369367823784270315268755910836337883206807244851556606162821084030055067798638886347067180482560",
+            "target_index_one_based": 11,
+            "target_label": "Q11",
+            "trace_index_one_based": 2
+          },
+          {
+            "flat_index_zero_based": 22,
+            "integral_square_root": "41141748926716827997555103506907990840497511259248168617890954967574060026823570123591775225426741783704996154599097600",
+            "target_index_one_based": 1,
+            "target_label": "Q1",
+            "trace_index_one_based": 3
+          },
+          {
+            "flat_index_zero_based": 23,
+            "integral_square_root": "64159215496875692215218865472623175281570902509315296819920172766427887489516810471876360265917227233961161600",
+            "target_index_one_based": 2,
+            "target_label": "Q2",
+            "trace_index_one_based": 3
+          },
+          {
+            "flat_index_zero_based": 24,
+            "integral_square_root": "9100045334585113907421270993054390040063749658369066244090064364483668491320567579357632671375630289714527784960",
+            "target_index_one_based": 3,
+            "target_label": "Q3",
+            "trace_index_one_based": 3
+          },
+          {
+            "flat_index_zero_based": 25,
+            "integral_square_root": "385993190512729611315756278055349936338693795975260338364842190285478385220417295915414397137435362114274349889409509683200",
+            "target_index_one_based": 4,
+            "target_label": "Q4",
+            "trace_index_one_based": 3
+          },
+          {
+            "flat_index_zero_based": 26,
+            "integral_square_root": "28559674639883237277996857142465994434556659070051415293955326918242185147819323046682346428670747740",
+            "target_index_one_based": 5,
+            "target_label": "Q5",
+            "trace_index_one_based": 3
+          },
+          {
+            "flat_index_zero_based": 27,
+            "integral_square_root": "62294301365553401590440498355346380442149992098516397483799756946371349778232969675045761568932321937852790868704146024472748790460087027767652661846528",
+            "target_index_one_based": 6,
+            "target_label": "Q6",
+            "trace_index_one_based": 3
+          },
+          {
+            "flat_index_zero_based": 28,
+            "integral_square_root": "20067289022552891914859499337473932423847433324060151493088145047354319201780568748153874359984572355489920",
+            "target_index_one_based": 7,
+            "target_label": "Q7",
+            "trace_index_one_based": 3
+          },
+          {
+            "flat_index_zero_based": 29,
+            "integral_square_root": "9039075418380249328943038321204377733199599217126195691109187408660690642236204239776026876376889211126817218457644800",
+            "target_index_one_based": 8,
+            "target_label": "Q8",
+            "trace_index_one_based": 3
+          },
+          {
+            "flat_index_zero_based": 30,
+            "integral_square_root": "135080339538237898298515946885105870504305605758582812469628909350596231216315098269982463058860944582722099159587555145414846552382720",
+            "target_index_one_based": 9,
+            "target_label": "Q9",
+            "trace_index_one_based": 3
+          },
+          {
+            "flat_index_zero_based": 31,
+            "integral_square_root": "11589106871064381984624183282902253769604627366677384421285481295175596553414620605700088383136445608308707038679604526195100",
+            "target_index_one_based": 10,
+            "target_label": "Q10",
+            "trace_index_one_based": 3
+          },
+          {
+            "flat_index_zero_based": 32,
+            "integral_square_root": "6029214054418093524140991900918957975165287799016360141745322774182820141927214232633904790218394645023172853723829788160",
+            "target_index_one_based": 11,
+            "target_label": "Q11",
+            "trace_index_one_based": 3
+          },
+          {
+            "flat_index_zero_based": 33,
+            "integral_square_root": "4162634124679897101104532629858932962680687538454498117143636118614710989584607624450255331844648346905026384944517857443758040",
+            "target_index_one_based": 1,
+            "target_label": "Q1",
+            "trace_index_one_based": 4
+          },
+          {
+            "flat_index_zero_based": 34,
+            "integral_square_root": "17379679110523102610235566877208847575609880821718125241161602842715167993987208035749440",
+            "target_index_one_based": 2,
+            "target_label": "Q2",
+            "trace_index_one_based": 4
+          },
+          {
+            "flat_index_zero_based": 35,
+            "integral_square_root": "63295495407807359761816606069712660014925733445347022631275412920419622172204233986743029135069715176590322208026560",
+            "target_index_one_based": 3,
+            "target_label": "Q3",
+            "trace_index_one_based": 4
+          },
+          {
+            "flat_index_zero_based": 36,
+            "integral_square_root": "299866186674504708941682272449559535313154828622923072986684119272665343661265245522651310342440725700426462020626177417920",
+            "target_index_one_based": 4,
+            "target_label": "Q4",
+            "trace_index_one_based": 4
+          },
+          {
+            "flat_index_zero_based": 37,
+            "integral_square_root": "2325424179521035438313684838768630248531590846596304628887963226415625198848957025305734448747250035083504965413806210252046078240",
+            "target_index_one_based": 5,
+            "target_label": "Q5",
+            "trace_index_one_based": 4
+          },
+          {
+            "flat_index_zero_based": 38,
+            "integral_square_root": "13648307501211336823665104870032873992122664832989042918200545659159231542530860574548430209233994936028669209882644331533042222677419970560",
+            "target_index_one_based": 6,
+            "target_label": "Q6",
+            "trace_index_one_based": 4
+          },
+          {
+            "flat_index_zero_based": 39,
+            "integral_square_root": "23742393028708309854126711804702110975192393203261718213175378169321493099122439831215469906957040",
+            "target_index_one_based": 7,
+            "target_label": "Q7",
+            "trace_index_one_based": 4
+          },
+          {
+            "flat_index_zero_based": 40,
+            "integral_square_root": "8624636733026772729387643748254107803265460715972984664971506003342064560266003978470716019142755273347968",
+            "target_index_one_based": 8,
+            "target_label": "Q8",
+            "trace_index_one_based": 4
+          },
+          {
+            "flat_index_zero_based": 41,
+            "integral_square_root": "7375230122579381333017179718760456424705485631761125831961117559175624898516297405925774549694808411697626224875685372076782465235040",
+            "target_index_one_based": 9,
+            "target_label": "Q9",
+            "trace_index_one_based": 4
+          },
+          {
+            "flat_index_zero_based": 42,
+            "integral_square_root": "1018990797813731954327251368899599917797473227032704828105736294250518516136280238019300881643883358496",
+            "target_index_one_based": 10,
+            "target_label": "Q10",
+            "trace_index_one_based": 4
+          },
+          {
+            "flat_index_zero_based": 43,
+            "integral_square_root": "29848625013604999155649834581033530703120706379930261276865756453957225400664760624150551815687406974902547639570560",
+            "target_index_one_based": 11,
+            "target_label": "Q11",
+            "trace_index_one_based": 4
+          },
+          {
+            "flat_index_zero_based": 44,
+            "integral_square_root": "6318834589977626060058555344595037394856427045549378146591147551969385077416943223390668460347504101445651750205016246727822124168431640",
+            "target_index_one_based": 1,
+            "target_label": "Q1",
+            "trace_index_one_based": 5
+          },
+          {
+            "flat_index_zero_based": 45,
+            "integral_square_root": "16173925301973218279258262196846811548455744440708401515022421254771072635026864715840",
+            "target_index_one_based": 2,
+            "target_label": "Q2",
+            "trace_index_one_based": 5
+          },
+          {
+            "flat_index_zero_based": 46,
+            "integral_square_root": "13145424765275109087164757490728670825882458384801064691461500639204217672613567253141002147543137067401084839360",
+            "target_index_one_based": 3,
+            "target_label": "Q3",
+            "trace_index_one_based": 5
+          },
+          {
+            "flat_index_zero_based": 47,
+            "integral_square_root": "854618312944358356509202636030179853533882191655714087485027416952040674953630080351129689500449100434198720",
+            "target_index_one_based": 4,
+            "target_label": "Q4",
+            "trace_index_one_based": 5
+          },
+          {
+            "flat_index_zero_based": 48,
+            "integral_square_root": "26949091103897932053263919023229960390608981011190854396117256301624126845668576824549550876878228960",
+            "target_index_one_based": 5,
+            "target_label": "Q5",
+            "trace_index_one_based": 5
+          },
+          {
+            "flat_index_zero_based": 49,
+            "integral_square_root": "245513262915517926689092088917321953073781067130358633222960070857039168429003145352049903510793331366781082168745289246190651970560",
+            "target_index_one_based": 6,
+            "target_label": "Q6",
+            "trace_index_one_based": 5
+          },
+          {
+            "flat_index_zero_based": 50,
+            "integral_square_root": "81304698408986908428115081211285529521078696636440098866599674700917440901771722331719779440",
+            "target_index_one_based": 7,
+            "target_label": "Q7",
+            "trace_index_one_based": 5
+          },
+          {
+            "flat_index_zero_based": 51,
+            "integral_square_root": "147387752439301837489737471337480583485856541334580458495447618233919334617841940847195787942905728",
+            "target_index_one_based": 8,
+            "target_label": "Q8",
+            "trace_index_one_based": 5
+          },
+          {
+            "flat_index_zero_based": 52,
+            "integral_square_root": "94266196760725361180927760679536394910523319201339266779321199328626625416902542384228278309810396666108530247212640",
+            "target_index_one_based": 9,
+            "target_label": "Q9",
+            "trace_index_one_based": 5
+          },
+          {
+            "flat_index_zero_based": 53,
+            "integral_square_root": "23997216350953673659821253933871071895389816334967850787586812909032310928375084471735408915470437153995744",
+            "target_index_one_based": 10,
+            "target_label": "Q10",
+            "trace_index_one_based": 5
+          },
+          {
+            "flat_index_zero_based": 54,
+            "integral_square_root": "201631787774350336290772978775649121663267418596786813941638503091102616293887428979944373223533440",
+            "target_index_one_based": 11,
+            "target_label": "Q11",
+            "trace_index_one_based": 5
+          },
+          {
+            "flat_index_zero_based": 55,
+            "integral_square_root": "38190937455909680106347849880367289113485283910353330160613197308835781508349846741484827477815829686273805169250313297406332989065390757521825709237183583207478720",
+            "target_index_one_based": 1,
+            "target_label": "Q1",
+            "trace_index_one_based": 6
+          },
+          {
+            "flat_index_zero_based": 56,
+            "integral_square_root": "20395952035188981326869366577600067155068826426207189778868021154291909523791780494301273084843520",
+            "target_index_one_based": 2,
+            "target_label": "Q2",
+            "trace_index_one_based": 6
+          },
+          {
+            "flat_index_zero_based": 57,
+            "integral_square_root": "662227626570137406253012695024280624641314198902637633269990445693497274062954815333916409015193429595726884371439207864033884815670227113632217148800",
+            "target_index_one_based": 3,
+            "target_label": "Q3",
+            "trace_index_one_based": 6
+          },
+          {
+            "flat_index_zero_based": 58,
+            "integral_square_root": "1021279355850724049435711582188806957502953794382577943304633912929483521890659472931007174686652295230652072194956578908961753714034781600640",
+            "target_index_one_based": 4,
+            "target_label": "Q4",
+            "trace_index_one_based": 6
+          },
+          {
+            "flat_index_zero_based": 59,
+            "integral_square_root": "163373172966958262172393432592019717540494468044751843484165647782818304472588627200",
+            "target_index_one_based": 5,
+            "target_label": "Q5",
+            "trace_index_one_based": 6
+          },
+          {
+            "flat_index_zero_based": 60,
+            "integral_square_root": "1746554680652190093881012414576207698425367052161767294735115235090991199061453450253181225257393081315132958755922015030875772122997346398160790560",
+            "target_index_one_based": 6,
+            "target_label": "Q6",
+            "trace_index_one_based": 6
+          },
+          {
+            "flat_index_zero_based": 61,
+            "integral_square_root": "1552730981426086499146664676769546090522526631009216512006109625978606562228922683476476822930816",
+            "target_index_one_based": 7,
+            "target_label": "Q7",
+            "trace_index_one_based": 6
+          },
+          {
+            "flat_index_zero_based": 62,
+            "integral_square_root": "35581458082850078089104792673777390572527354563463724918336717934944413099456713556678397965285783171455900296614400",
+            "target_index_one_based": 8,
+            "target_label": "Q8",
+            "trace_index_one_based": 6
+          },
+          {
+            "flat_index_zero_based": 63,
+            "integral_square_root": "647176474611249492632153449844577930932195026895673484071669046610288950732211216220554030399394980784749046",
+            "target_index_one_based": 9,
+            "target_label": "Q9",
+            "trace_index_one_based": 6
+          },
+          {
+            "flat_index_zero_based": 64,
+            "integral_square_root": "601446677956666107971482564963617750271092299926555446367431017395061587200",
+            "target_index_one_based": 10,
+            "target_label": "Q10",
+            "trace_index_one_based": 6
+          },
+          {
+            "flat_index_zero_based": 65,
+            "integral_square_root": "69381351064210693457812283257028292095211964718772103131808823331506313625532587937156215614616437330734673487595655028484332716800",
+            "target_index_one_based": 11,
+            "target_label": "Q11",
+            "trace_index_one_based": 6
+          },
+          {
+            "flat_index_zero_based": 66,
+            "integral_square_root": "2903004412176955975622032724370337471920636945194650236939520598983959120346893852782794305692337547410923777555485481682583049079163584",
+            "target_index_one_based": 1,
+            "target_label": "Q1",
+            "trace_index_one_based": 7
+          },
+          {
+            "flat_index_zero_based": 67,
+            "integral_square_root": "2854348836996937056938411638671611376592945741863279320919922786896669319393294296408486589996330511593226898009024",
+            "target_index_one_based": 2,
+            "target_label": "Q2",
+            "trace_index_one_based": 7
+          },
+          {
+            "flat_index_zero_based": 68,
+            "integral_square_root": "127178106393300192100138749917510261955867143409744607885830497878574292872159815658626604679376624306955663461488600",
+            "target_index_one_based": 3,
+            "target_label": "Q3",
+            "trace_index_one_based": 7
+          },
+          {
+            "flat_index_zero_based": 69,
+            "integral_square_root": "766525813891773481382193448236684379750989974619245823697012692425483841270096806892147981075969268891523483000800980894144637093267512",
+            "target_index_one_based": 4,
+            "target_label": "Q4",
+            "trace_index_one_based": 7
+          },
+          {
+            "flat_index_zero_based": 70,
+            "integral_square_root": "24869091627395031080789525616918094744135100123934025938368221778415292586181705398400",
+            "target_index_one_based": 5,
+            "target_label": "Q5",
+            "trace_index_one_based": 7
+          },
+          {
+            "flat_index_zero_based": 71,
+            "integral_square_root": "42828138516603091056860287560500694766467812604365446592850963593079945070146139663429743274659254839766076791365442990140008108810189632820209654401440",
+            "target_index_one_based": 6,
+            "target_label": "Q6",
+            "trace_index_one_based": 7
+          },
+          {
+            "flat_index_zero_based": 72,
+            "integral_square_root": "56987152700802838321772040854254197752578634587878101166647588659420011330522240",
+            "target_index_one_based": 7,
+            "target_label": "Q7",
+            "trace_index_one_based": 7
+          },
+          {
+            "flat_index_zero_based": 73,
+            "integral_square_root": "974039494394332710455681194055420071935610491868612326591322240954076112637904684636662076160372193238775698398486979232480",
+            "target_index_one_based": 8,
+            "target_label": "Q8",
+            "trace_index_one_based": 7
+          },
+          {
+            "flat_index_zero_based": 74,
+            "integral_square_root": "14982472471402064913957395611771149177558377822878962054439486263448387430599425811752283012761544883911194308650466938379891457873240",
+            "target_index_one_based": 9,
+            "target_label": "Q9",
+            "trace_index_one_based": 7
+          },
+          {
+            "flat_index_zero_based": 75,
+            "integral_square_root": "678989175376198154010885531586758957912601971357562994201658742941285422525819709985969688024950770669555840",
+            "target_index_one_based": 10,
+            "target_label": "Q10",
+            "trace_index_one_based": 7
+          },
+          {
+            "flat_index_zero_based": 76,
+            "integral_square_root": "9168373664958040984574686639437444942534526789148735002247847504763349863641093019896955186179218459548205391849432247047891883377591600",
+            "target_index_one_based": 11,
+            "target_label": "Q11",
+            "trace_index_one_based": 7
+          }
+        ],
+        "split_trace_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "t": "-9529/5471"
+      }
+    ],
+    "modular_candidate_count": 5179,
+    "new_mixed_trace_splits_away_from_t0": [],
+    "region": "primitive t=a/b with |a| <= 10000, 1 <= b <= 10000",
+    "residue_primes": [
+      59,
+      73,
+      97,
+      101,
+      107,
+      131,
+      137,
+      149,
+      163,
+      167,
+      173,
+      179,
+      181,
+      199,
+      211,
+      223
+    ],
+    "scanner_summary": "MIXEDTRACEG1SCAN|height=10000|primitive=121589943|modular_candidates=5179|status=PASS"
+  },
+  "construction": {
+    "all_quartics_irreducible_squarefree": true,
+    "constructor_command": [
+      "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+      "/home/royvanrijn/src/jacobian-research/elkies-k3/scripts/search_elkies_2026_rank28_genus_one_bisections.sage",
+      "--trace-limit",
+      "7",
+      "--output",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elkies-k3/r17-rank28-mixed-trace-splitting/fitted-quartics.json"
+    ],
+    "constructor_output_sha256": "e1702a7cb52c3d506dc22f65bf6d813521b76da6ed08f1dbb415d780c3a15f89",
+    "quartic_count": 77,
+    "targets_per_trace": 11,
+    "trace_count": 7,
+    "trace_published_basis_vectors": [
+      [
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "implementation": {
+    "compile_command": [
+      "/usr/bin/g++",
+      "-O3",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-pedantic",
+      "/home/royvanrijn/src/jacobian-research/elkies-k3/scripts/scan_elkies_2026_rank28_mixed_trace_splitting.cpp",
+      "-o",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elkies-k3/r17-rank28-mixed-trace-splitting/scan-mixed-trace-splitting"
+    ],
+    "constructor": "elkies-k3/scripts/search_elkies_2026_rank28_genus_one_bisections.sage",
+    "constructor_sha256": "7b02e934c0173fe36aaee5142fe34e8fcdbf3ffe32e6a259a2a094eba0051d9b",
+    "residue_table_sha256": "df19414ed33ee9eaf47229ef52482ae9e2755adf69be3a24bc272991c7553f2d",
+    "scan_command": [
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elkies-k3/r17-rank28-mixed-trace-splitting/scan-mixed-trace-splitting",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elkies-k3/r17-rank28-mixed-trace-splitting/mixed-square-residue-masks.bin",
+      "10000",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elkies-k3/r17-rank28-mixed-trace-splitting/mixed-compact-candidates.txt"
+    ],
+    "scanner": "elkies-k3/scripts/scan_elkies_2026_rank28_mixed_trace_splitting.cpp",
+    "scanner_sha256": "e2a148eeaf6777813b793cc24f1eb13c732444607cb3752dd50690ae6f7d2a02",
+    "script": "elkies-k3/scripts/search_elkies_2026_rank28_mixed_trace_splitting.sage",
+    "script_sha256": "1a0e76104fbed81840d292bbe7bbeb00241c6eb88c787a72358f97fc461d2fbe"
+  },
+  "proof_boundary": "The t-line enumeration is exhaustive only in the displayed primitive box and only for the selected equation-cheapest trace prefix. An empty result is not a global rational-point obstruction and does not test the remaining norm-eight trace classes or trisections.",
+  "reproducing_command": "sage -python elkies-k3/scripts/search_elkies_2026_rank28_mixed_trace_splitting.sage",
+  "schema": "elkies-k3.r17-rank28-mixed-trace-splitting.v1",
+  "specialization_and_quotient_independence": "vacuous: no new exact mixed-trace split survived",
+  "status": "PASS_EXHAUSTIVE_BOUNDED_NO_NEW_MIXED_TRACE_SPLIT"
+}

@@ -233,6 +233,14 @@ Important distinctions made explicit by the catalogue:
   `elkies_2026_rank28_public11_global_cover_witness_audit_v1.json` rechecks the
   witnesses and records local solubility at every place. These are positive
   controls, not an ambient Selmer enumeration or upper bound.
+- `elkies_2026_rank28_construction_fingerprints_v1.json` reverse-engineers the
+  eleven public complement directions relative to specialized R17.  It records
+  stable rounded-Gram closest representatives, quotient-height profiles, exact
+  Kummer and bad-place codes, irreducible `[2]`/`[3]` preimage fields and their
+  Galois/Frobenius data, the trivial rational-isogeny graph, symbolic generic
+  R17 multiplication covers, and an explicitly heuristic consensus clustering.
+  The cubic Kummer map exposes all eleven known directions but is a
+  representation of known points, not yet a construction of unknown ones.
 - `newfamily_rank14_t83_6_v1.json` proves only rank at least 14; the separate
   `newfamily_rank14_t83_6_pari_exact_rank_v1.json` supplies the PARI interval
   `[14,14]` used for the exact-rank statement.

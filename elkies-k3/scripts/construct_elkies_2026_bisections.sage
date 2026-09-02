@@ -123,9 +123,13 @@ def invert_rational(function, weight, R, K):
     return K(t**exponent * reverse_numerator / reverse_denominator)
 
 
-def local_chord_data(X, Y, A, B, Delta, R, K):
-    """Construct the chord in an affine base chart where all three poles are finite."""
+def trace_chord_frame(X, Y, R):
+    """Return the denominator frame and least regular residual-chord slope.
 
+    The congruence is independent of the genus of the residual bisection.  A
+    rational bisection uses the least representative ``M0``.  For a genus-one
+    bisection pencil the regular representatives are ``M0 + lambda*h^2``.
+    """
     x_denominator = R(X.denominator())
     if not x_denominator.is_square():
         raise ArithmeticError("trace x denominator is not a square")
@@ -133,18 +137,26 @@ def local_chord_data(X, Y, A, B, Delta, R, K):
     h /= h.leading_coefficient()
     assert X.denominator() == h**2
     assert Y.denominator() == h**3
-    if h.degree() != 3:
-        raise ArithmeticError(f"trace denominator has degree {h.degree()}, not three")
     Nx = R(X * h**2)
     Ny = R(Y * h**3)
     modulus = h**2
     if Nx.gcd(modulus) != 1:
         raise ArithmeticError("trace numerator is not invertible modulo h^2")
-    M = R((-Ny * Nx.inverse_mod(modulus)) % modulus)
-    assert M.degree() < 6
-    assert (M * Nx + Ny) % modulus == 0
-    assert (M**2 - Nx) % modulus == 0
-    assert M.gcd(h).degree() == 0
+    M0 = R((-Ny * Nx.inverse_mod(modulus)) % modulus)
+    assert M0.degree() < 2 * h.degree()
+    assert (M0 * Nx + Ny) % modulus == 0
+    assert (M0**2 - Nx) % modulus == 0
+    assert M0.gcd(h).degree() == 0
+    return {"h": h, "Nx": Nx, "Ny": Ny, "M0": M0}
+
+
+def chord_data_from_slope_numerator(h, Nx, Ny, M, A, B, Delta, R, K, expected_q_degree):
+    """Compile and verify a residual chord from a regular slope numerator."""
+
+    modulus = h**2
+    M = R(M)
+    if (M * Nx + Ny) % modulus:
+        raise ArithmeticError("slope numerator is not regular modulo h^2")
 
     discriminant_numerator = (
         M**4 - 6 * M**2 * Nx - 8 * M * Ny - 3 * Nx**2 - 4 * A * h**4
@@ -153,8 +165,10 @@ def local_chord_data(X, Y, A, B, Delta, R, K):
     if remainder:
         raise ArithmeticError("chord discriminant is not divisible by h^6")
     q = R(quotient)
-    if q.degree() != 2 or q.gcd(q.derivative()).degree() != 0:
-        raise ArithmeticError("residual cover is not a squarefree quadratic")
+    if q.degree() != expected_q_degree or q.gcd(q.derivative()).degree() != 0:
+        raise ArithmeticError(
+            f"residual cover is not squarefree of degree {expected_q_degree}"
+        )
 
     sum_x = R((M**2 - Nx) // h**2)
     product_x = K(((M * Nx + Ny) ** 2 - B * h**6) / (h**4 * Nx))
@@ -179,6 +193,20 @@ def local_chord_data(X, Y, A, B, Delta, R, K):
         "x0": x0, "x1": x1, "y0": y0, "y1": y1,
         "branch_fibres_smooth": q.gcd(Delta).degree() == 0,
     }
+
+
+def local_chord_data(X, Y, A, B, Delta, R, K):
+    """Construct the rational chord where all three trace poles are finite."""
+
+    frame = trace_chord_frame(X, Y, R)
+    if frame["h"].degree() != 3:
+        raise ArithmeticError(
+            f"trace denominator has degree {frame['h'].degree()}, not three"
+        )
+    return chord_data_from_slope_numerator(
+        frame["h"], frame["Nx"], frame["Ny"], frame["M0"],
+        A, B, Delta, R, K, expected_q_degree=2,
+    )
 
 
 def construct_record(row, *, R, K, E, basis, A, B, Delta, pinned):

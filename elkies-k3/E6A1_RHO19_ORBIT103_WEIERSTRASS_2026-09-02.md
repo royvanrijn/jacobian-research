@@ -1,8 +1,12 @@
 # Orbit-103 resolved pencil and Weierstrass equation — 2026-09-02
 
-<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-EQUATION 8cfa9387612ac443 -->
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-EQUATION 827d75cb8d14d7f4 -->
 
-<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2 2130bc147519ac6b -->
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2 387d6237125637a3 -->
+
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT103-SPECIALIZATION-RANK7 bf1d025228805b31 -->
+
+<!-- status-consumer: EC-K3-E6A1-RHO19-ORBIT96-A7D7-GALOIS ba008502f0e5533f -->
 
 ## Result
 
@@ -328,25 +332,38 @@ In particular there is **no** third independent generator over `QQ(k)(r)`.
 The former arithmetic-rank-three search target was obstructed by descent, not
 by failure to find a sufficiently small formula.
 
-## The orbit-96 `A7+D7` comparison gate
+## Rational specialization search
+
+The obstruction has also been used as a controlled specialization baseline:
+every new rational direction is tested against `Q_plus,Q_minus`, while the
+known anti-invariant `sqrt(-3)` direction is excluded.  A two-stage bounded
+Nagao scan through `H(k)<=3000`, followed by the compact `k=1`, `H(r)<=500`
+promotion lane, certifies seven fibres of rank at least seven.  Each has five
+new exact rational directions beyond the generic arithmetic rank two.  No
+completed candidate certifies rank at least eight, so the proposed rank-8--12
+success condition remains open.  Methods, exact bounds, backend fallback,
+and reproduction commands are in
+[`E6A1_ORBIT103_SPECIALIZATION_SEARCH_2026-09-02.md`](E6A1_ORBIT103_SPECIALIZATION_SEARCH_2026-09-02.md).
+
+## The orbit-96 `A7+D7` comparison
 
 The abstract norm-eight census selects orbit `96` as the secondary target.  It
 has root type `A7+D7`, height lattice `diag(3/8,1,3)`, two reducible fibres,
 and old-basis complexity `(max_abs,L1)=(2,12)`, versus `(1,3)` for orbit `103`.
 
-However, orbit `96` uses old `E6` simple-root coordinates that have not been
-identified with a complete resolved physical `E6` marking on the displayed
-equation.  The tempting equation-side tangent trace can be tested exactly.
+The physical component marking and corrected elimination are now complete.
 With
 
 ```text
 m_tan = ((1-3*k^2/4)/k)*(t-1)*(t+1),
 
-z_96,trace = (t+1)*(y-y0-m_tan*(x-x0))/(x-x0)^2,
+z_96 = (t+1)*(y+y0+m_tan*(x-x0))/(x-x0)^2,
 ```
 
-the opposite tangent orientation gives the same Jacobian.  After exact
-elimination and minimalization it is
+the tangent slope must first be coerced back to the polynomial ring in `t`.
+The earlier audit omitted that coercion.  Sage then evaluated
+`quadratic.discriminant()` in the wrong coefficient parent and produced the
+spurious model
 
 ```text
 y^2 = x^3 - 3*(z^2-1)^3*C2(z)*x - 2*(z^2-1)^4*C4(z),
@@ -357,30 +374,40 @@ C4(z) = z^4+(-3*k^4/8+2*k^2-4)*z^2
               -k^6/8+11*k^4/8-4*k^2+3.
 ```
 
-Its exact fibre profile is
+with fibre profile
 
 ```text
 2IV*+I4+4I1,   roots 2E6+A3,   root data (15,156,36),
 ```
 
-not `A7+D7`.  This low-coefficient equation is therefore a negative control,
-not the secondary competitor.  Comparing it with orbit `103` would be a false
-optimality claim.
+not `A7+D7`.  That rejection is superseded.  Using the literal quadratic
+formula in the correct polynomial parent gives a squarefree quartic and the
+genuine model
+
+```text
+y^2=x^3-27*I6(z)*x-27*J9(z),
+```
+
+with fibres `I8+I3*+7I1`.  The coefficient lists, physical IV* marking, and
+MW generators are in
+[`E6A1_RHO19_ORBIT96_WEIERSTRASS_GALOIS_2026-09-02.md`](E6A1_RHO19_ORBIT96_WEIERSTRASS_GALOIS_2026-09-02.md).
 
 The valid comparison currently is:
 
-| metric | orbit 103 | abstract orbit 96 |
+| metric | orbit 103 | orbit 96 |
 |---|---:|---:|
 | old-basis coefficient maximum | `1` | `2` |
 | old-basis `L1` | `3` | `12` |
 | reducible fibres | `4` | `2` |
-| minimal K3 degree bounds `(A,B)` | `(8,12)` | `(8,12)` |
-| exact physical Weierstrass equation | yes | not yet |
+| displayed Weierstrass degrees `(A,B)` | `(8,12)` | `(6,9)` |
+| arithmetic MW rank | `2` | `2` |
+| nontrivial MW character | `chi_-3` | `chi_-3` |
+| exact physical Weierstrass equation | yes | yes |
 
-Thus orbit `103` is proved source-divisor-optimal between the two declared
-targets, while orbit `96` remains fibre-count-optimal.  Weierstrass coefficient
-optimality is not yet comparable: it requires first resolving the physical
-`E6` marking and then compiling the genuine `A7+D7` pencil.
+Thus orbit `103` remains source-divisor-sparser, while orbit `96` wins both
+reducible-fibre count and displayed Weierstrass degree.  Arithmetically neither
+has a third rational direction, and orbit `96` repeats rather than complements
+the quadratic character of orbit `103`.
 
 ## Reproduction and boundary
 
@@ -396,6 +423,9 @@ optimality is not yet comparable: it requires first resolving the physical
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_e6a1_rho19_orbit103_arithmetic_and_orbit96_audit.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/compile_e6a1_rho19_orbit96_rr_galois.sage --check
 ```
 
 Pinned SHA-256 values are
@@ -403,12 +433,19 @@ Pinned SHA-256 values are
 ```text
 equation checker   258da7f13d2c0186bd5b4d32eb2debaaa9c685b136d0350c45dac2e85ca72498
 equation artifact  c7f08349b9ab874131285cde40023f40b70e35f0d8f90d735d7af446b7a5419a
-descent checker    23988e2a5e608301ebf393fb157c0c03a02ae353760aadf1fbe5ed5a689304c1
-descent artifact   1daae6cc371f04b541ac1127748db75924098bc959c30ffbe067bbd3027a41d9
+descent checker    5cfc2180a49c1a2a0bd7c119dca1e10e24e2ca459c17740101bdef8848b6b643
+descent artifact   ee01cf2950ab893591a06ee08b6565f738e7c8731653cf98ff1297a76370cfbe
+orbit-96 checker   08c2629837f74aa90f9b09df9fe68104f542b226af892d056bff6c08577c01d0
+orbit-96 artifact  f72b312561b01cbce6e9fa47f6c96a6ff6e1ec7aca406169f79434995cc6046f
 ```
 
 The resolved `H0` basis, binary quartic, rational origin, Weierstrass equation,
 two rational points, exact arithmetic rank two, anti-invariant third geometric
 direction, fibre profile, geometric MW rank, torsion, and height lattice are
-exact.  A physically marked `A7+D7` equation and a genuine Weierstrass
-coefficient-optimality comparison remain open.
+exact.  The physically marked `A7+D7` equation and its arithmetic comparison
+are exact in the orbit-96 certificate; polynomial coordinates for its three
+lattice generators and specialized arithmetic ranks remain open.
+
+The separate rational-specialization search proves seven rank-at-least-seven
+fibres, but no rank-at-least-eight fibre; see
+[`E6A1_ORBIT103_SPECIALIZATION_SEARCH_2026-09-02.md`](E6A1_ORBIT103_SPECIALIZATION_SEARCH_2026-09-02.md).

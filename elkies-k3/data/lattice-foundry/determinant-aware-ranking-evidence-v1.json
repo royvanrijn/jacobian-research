@@ -1,0 +1,104 @@
+{
+  "schema": "elkies-k3.determinant-aware-ranking-evidence.v1",
+  "policy": {
+    "published_r17_reference_determinant": 948,
+    "published_r17_reference_norm_four_unoriented_pairs": 1311,
+    "rank_jump_coordinate": "Evidence for a rank-jump mechanism is a separate coordinate. Raw multisection counts are not a ranking input.",
+    "readiness_gate": "Expensive equation scoring is authorized only after exact arithmetic field-of-definition evidence, a positive source-equation precursor, and at least a marking-level exact compiler corridor are all attached."
+  },
+  "surfaces": [
+    {
+      "surface_id": "K3-8188cdcda8c57b2d",
+      "arithmetic_field_of_definition": {
+        "tier": 0,
+        "status": "PASS_EXACT_QQ_SOURCE_AND_TARGET_MARKINGS",
+        "evidence": [
+          "MATH_STATUS.json",
+          "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json"
+        ]
+      },
+      "source_equation_precursor": {
+        "tier": 0,
+        "status": "PASS_EXACT_CHARACTERISTIC_ZERO_SOURCE_AND_TARGET_EQUATIONS",
+        "evidence": [
+          "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json"
+        ]
+      },
+      "compiler_corridor": {
+        "tier": 0,
+        "status": "PASS_EXACT_EQUATION_LEVEL_QQ_CORRIDOR",
+        "evidence": [
+          "artifacts/generated-results/elkies-k3-h3-q4o208-q323-free-q4o1584-q4o164-q8o376-q12o5867-pinned-r17-route-certificate.json"
+        ]
+      },
+      "rank_jump_mechanism": {
+        "tier": 0,
+        "status": "PASS_THEOREM_NONTHIN_RANK_JUMPS",
+        "evidence": [
+          "elkies-k3/PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md"
+        ],
+        "raw_multisection_counts_used": false
+      }
+    },
+    {
+      "surface_id": "K3-f43753fb154e3406",
+      "arithmetic_field_of_definition": {
+        "tier": 2,
+        "status": "OPEN_QQ_FIELD_OF_DEFINITION_LOCAL_Z7_EVIDENCE_ONLY",
+        "evidence": [
+          "artifacts/generated-results/elkies-k3-golay-det720-3a5-formal-smoothness-v1.json"
+        ]
+      },
+      "source_equation_precursor": {
+        "tier": 1,
+        "status": "PASS_ONE_PARAMETER_FORMAL_Z7_MARKED_FAMILY_PRECURSOR",
+        "evidence": [
+          "artifacts/generated-results/elkies-k3-golay-det720-3a5-formal-smoothness-v1.json"
+        ]
+      },
+      "compiler_corridor": {
+        "tier": 1,
+        "status": "PASS_EXACT_MARKING_LEVEL_PHYSICAL_CORRIDOR",
+        "evidence": [
+          "artifacts/generated-results/elkies-k3-golay-det720-3a5-to-mw17-physical-corridor-v1.json"
+        ]
+      },
+      "rank_jump_mechanism": {
+        "tier": 3,
+        "status": "UNKNOWN_NO_ARITHMETIC_RANK_JUMP_MECHANISM_CERTIFICATE",
+        "evidence": [],
+        "raw_multisection_counts_used": false
+      }
+    },
+    {
+      "surface_id": "K3-d1b1381f87d69f1c",
+      "arithmetic_field_of_definition": {
+        "tier": 2,
+        "status": "OPEN_QQ_FIELD_OF_DEFINITION_FINITE_Z7_LIFT_ONLY",
+        "evidence": [
+          "artifacts/generated-results/elkies-k3-lattice-foundry-ns0031-marked-gf7-hensel-v1.json"
+        ]
+      },
+      "source_equation_precursor": {
+        "tier": 1,
+        "status": "PASS_ONE_DIMENSIONAL_MARKED_TANGENT_AND_FINITE_Z7_LIFT_PRECURSOR",
+        "evidence": [
+          "artifacts/generated-results/elkies-k3-lattice-foundry-ns0031-marked-gf7-hensel-v1.json"
+        ]
+      },
+      "compiler_corridor": {
+        "tier": 1,
+        "status": "PASS_EXACT_MARKING_LEVEL_PHYSICAL_CORRIDOR",
+        "evidence": [
+          "artifacts/generated-results/elkies-k3-ns0031-a1-2a7-to-f017-physical-corridor-v1.json"
+        ]
+      },
+      "rank_jump_mechanism": {
+        "tier": 3,
+        "status": "UNKNOWN_NO_ARITHMETIC_RANK_JUMP_MECHANISM_CERTIFICATE",
+        "evidence": [],
+        "raw_multisection_counts_used": false
+      }
+    }
+  ]
+}

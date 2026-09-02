@@ -87,6 +87,13 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-e6a1-rho19-genuine-q2-neighbors-v1.json
 !/artifacts/generated-results/elkies-k3-e6a1-rho19-orbit103-rr-weierstrass-v1.json
 !/artifacts/generated-results/elkies-k3-e6a1-rho19-orbit103-arithmetic-orbit96-audit-v1.json
+!/artifacts/generated-results/elkies-k3-e6a1-rho19-orbit96-rr-galois-v1.json
+!/artifacts/generated-results/elkies-k3-e6a1-orbit103-specialization-search-v1.json
+!/artifacts/generated-results/elkies-k3-e6a1-orbit103-specialization-rank-probes-v1.json
+!/artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json
+!/artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json
+!/artifacts/generated-results/elkies-k3-r17-rank28-simultaneous-splitting-h10000-v1.json
+!/artifacts/generated-results/elkies-k3-r17-rank28-mixed-trace-splitting-h10000-v1.json
 !/artifacts/generated-results/elkies-k3-rank17-to-h3-reverse-transport.json
 !/artifacts/generated-results/elkies-k3-other-rank17-candidate.json
 !/artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json

@@ -1,0 +1,200 @@
+{
+  "compact_projective_scan": {
+    "exact_square_tests": 15861,
+    "height": 10000,
+    "modular_candidate_count": 7889,
+    "new_simultaneous_splits_away_from_t0": [],
+    "region": "primitive t=a/b with |a| <= 10000, 1 <= b <= 10000",
+    "residue_primes": [
+      19,
+      23,
+      31,
+      37,
+      43,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97,
+      101,
+      107
+    ],
+    "scanner_summary": "GENUS1SPLITSCAN|height=10000|primitive=121589943|modular_candidates=7889|status=PASS",
+    "simultaneous_splits": [
+      {
+        "integral_square_roots": {
+          "1": "303507680352793842108956096391102947670268326358251325641500217530972826919798685482275784656043809127176688111436778871264929271096454062560",
+          "10": "167239875212012891183672693440220299654394568244065870870665924427951950102394831848093242488844577744282757439553554566",
+          "11": "525968598397107011959870845886802776239458716365636953407287017309548899697134055230014548369242083564070322574160",
+          "2": "8328429408734321904187199291867687109033231976524609868960621610171951746300976609680507843860",
+          "3": "123157761349477160236199533856594125761737103516844514746992754811508837113986652643598213483687486269087702173255864642874003857562379440",
+          "4": "56416288362142812843178205792242040237195039447926345296247846013317537973276367711156973235446080002192360033472415181832704880",
+          "5": "2088142235967231792216401784943739137544055392033067343591768513570000592094182393686591134805794415059504831374182087283513190",
+          "6": "2219000490367923126919514001598593270222913753401712264497208856855555512876734543577429547203864545156597400148398330167734327145584753929054552025362758364537938240",
+          "7": "86453823778156226876091563727961520832572532055455843186588598415079091297691519851102980272898558480915329756160",
+          "8": "11147646361983956403672133583200990316734052302269405179305188501290592420536930860342909897676502401132593622423503237032",
+          "9": "1298688024936477437049921446307814922710828415717119658613488063118761517467860300274935453250861619734528720872613661034560"
+        },
+        "is_original_target_parameter": true,
+        "projective_pair": [
+          -9529,
+          5471
+        ],
+        "split_target_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "t": "-9529/5471"
+      }
+    ]
+  },
+  "implementation": {
+    "compile_command": [
+      "/usr/bin/g++",
+      "-O3",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-pedantic",
+      "/home/royvanrijn/src/jacobian-research/elkies-k3/scripts/scan_elkies_2026_rank28_genus_one_splitting.cpp",
+      "-o",
+      "/home/royvanrijn/src/jacobian-research/artifacts/local/elkies-k3/r17-rank28-genus-one-splitting/scan-genus-one-splitting"
+    ],
+    "residue_table_sha256": "593807f477c373b90855ae90c77c799fa106c4bef5f115f4a38f1f2ddd34e80e",
+    "scanner_source": "elkies-k3/scripts/scan_elkies_2026_rank28_genus_one_splitting.cpp",
+    "scanner_source_sha256": "75c888ceb931a68945fa64f2001804b69cfdf560c3b15aecb22ecc28ad37f052",
+    "script": "elkies-k3/scripts/search_elkies_2026_rank28_simultaneous_splitting.sage",
+    "script_sha256": "b1868f37096e791c4e16ca63fb08a9339696de1d241fb7686ac25963713d29c8"
+  },
+  "input": {
+    "frozen_quartic_count": 11,
+    "original_target_parameter": "-9529/5471",
+    "path": "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+    "sha256": "0169f4b764268c63e7919496be8570e1a794ab5ddcc4856aeee69a3f5e5e5deb"
+  },
+  "pointed_jacobian_multiple_scan": {
+    "canonical_point": "opposite ordinate above t0 on the pointed quartic",
+    "canonical_point_is_nontorsion_for_every_cover": true,
+    "exact_cross_tests": 8,
+    "per_cover": [
+      {
+        "maximum_projective_coordinate_bits": 621123,
+        "modular_cross_survivors": 1,
+        "multiples_tested": [
+          2,
+          30
+        ],
+        "source_target_index_one_based": 1
+      },
+      {
+        "maximum_projective_coordinate_bits": 386035,
+        "modular_cross_survivors": 0,
+        "multiples_tested": [
+          2,
+          30
+        ],
+        "source_target_index_one_based": 2
+      },
+      {
+        "maximum_projective_coordinate_bits": 598930,
+        "modular_cross_survivors": 0,
+        "multiples_tested": [
+          2,
+          30
+        ],
+        "source_target_index_one_based": 3
+      },
+      {
+        "maximum_projective_coordinate_bits": 521803,
+        "modular_cross_survivors": 0,
+        "multiples_tested": [
+          2,
+          30
+        ],
+        "source_target_index_one_based": 4
+      },
+      {
+        "maximum_projective_coordinate_bits": 544651,
+        "modular_cross_survivors": 0,
+        "multiples_tested": [
+          2,
+          30
+        ],
+        "source_target_index_one_based": 5
+      },
+      {
+        "maximum_projective_coordinate_bits": 682732,
+        "modular_cross_survivors": 1,
+        "multiples_tested": [
+          2,
+          30
+        ],
+        "source_target_index_one_based": 6
+      },
+      {
+        "maximum_projective_coordinate_bits": 482398,
+        "modular_cross_survivors": 1,
+        "multiples_tested": [
+          2,
+          30
+        ],
+        "source_target_index_one_based": 7
+      },
+      {
+        "maximum_projective_coordinate_bits": 495295,
+        "modular_cross_survivors": 2,
+        "multiples_tested": [
+          2,
+          30
+        ],
+        "source_target_index_one_based": 8
+      },
+      {
+        "maximum_projective_coordinate_bits": 500627,
+        "modular_cross_survivors": 3,
+        "multiples_tested": [
+          2,
+          30
+        ],
+        "source_target_index_one_based": 9
+      },
+      {
+        "maximum_projective_coordinate_bits": 529687,
+        "modular_cross_survivors": 0,
+        "multiples_tested": [
+          2,
+          30
+        ],
+        "source_target_index_one_based": 10
+      },
+      {
+        "maximum_projective_coordinate_bits": 491328,
+        "modular_cross_survivors": 0,
+        "multiples_tested": [
+          2,
+          30
+        ],
+        "source_target_index_one_based": 11
+      }
+    ],
+    "simultaneous_split_hits": []
+  },
+  "proof_boundary": "The compact t-line result is exhaustive only in the displayed primitive box. The Jacobian result is exhaustive only in the cyclic subgroups and multiple range shown. Their union is a bounded negative experiment, not a theorem that the fibre products have no further rational points.",
+  "reproducing_command": "sage -python elkies-k3/scripts/search_elkies_2026_rank28_simultaneous_splitting.sage",
+  "schema": "elkies-k3.r17-rank28-genus-one-simultaneous-splitting.v1",
+  "specialization_and_quotient_independence": "vacuous: no new exact simultaneous split survived",
+  "status": "PASS_EXHAUSTIVE_BOUNDED_NO_NEW_SIMULTANEOUS_SPLIT"
+}

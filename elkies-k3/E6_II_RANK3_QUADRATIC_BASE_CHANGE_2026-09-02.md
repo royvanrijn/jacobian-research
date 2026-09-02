@@ -2,7 +2,9 @@
 
 <!-- status-consumer: EC-K3-RES-QBC-E6-II-RANK3-RHO19 5b10608e230145e9 -->
 
-<!-- status-consumer: EC-K3-RES-D6-RATIONALIZED-SECTION-CHART 06442a208822d255 -->
+<!-- status-consumer: EC-K3-RES-QBC-E6-II-Q2-MW4 3aa5084463780acc -->
+
+<!-- status-consumer: EC-K3-RES-D6-RATIONALIZED-SECTION-CHART a94042dd2d76797c -->
 
 ## Outcome
 
@@ -179,6 +181,86 @@ It has no rational `r`: the quartic gives `r^2=6+/-3*sqrt(3)`.  This is an
 obstruction only for that declared low-degree chart, not a global failure of
 the rank-four target.  No rank-sum-four family is promoted by this note.
 
+## Complete first quadratic-neighbour shell
+
+The requested immediate low-`q` follow-up is complete.  In the split marking
+
+```text
+NS(X)=U+M(-1),     F=e,     O=f-e,
+```
+
+the first zero-neutral old-degree-two classes are
+
+```text
+D=2e+2f-w,     w.M.w=8.
+```
+
+Exact dominant-label enumeration for `2E6+A2`, followed by a closest-vector
+enumeration in the rank-three root-orthogonal kernel, gives `268` Weyl
+orbits.  Three are divisible degree-one presentations, leaving `265`
+primitive classes.  Reduction against the old zero and all finite and affine
+fibre components gives
+
+```text
+old degree 2: 211,     old degree 1: 42,     old degree 0: 12.
+```
+
+The minimum child root rank in the entire shell is thirteen.  It occurs in
+exactly six classes, all of type
+
+```text
+A6+D7,     geometric MW rank 4,     regulator 6/7,
+```
+
+with primitive root lattice and trivial torsion.  All six remain at old
+degree two with no physical fixed component.  They also pass the complete
+old-section gate.  In the saturated basis `P,Q,S`, the old height matrix is
+
+```text
+[ 4/3  -2/3   0  ]
+[ -2/3  4/3   0  ]
+[ 0      0    2/3].
+```
+
+For each candidate, Proposition C2 reduces every potentially negative old
+section to the strict finite ellipsoid
+
+```text
+(n-delta/2)^T H (n-delta/2) < 2.
+```
+
+There are nine points in each ellipsoid, and every tested intersection is
+nonnegative.  A remaining negative irreducible root would have old degree
+two.  Then `D-C` would be an effective vertical square-zero class `lF`, while
+`C^2=(D-lF)^2=-4l=-2` forces `l=1/2`, contradicting primitivity of `F`.
+Thus all six classes are nef Jacobian fibrations of exact geometric MW rank
+four.
+
+The sparse compiler target is orbit `215`, selected by minimum
+`(max_abs,L1,orbit)=(2,12,215)` in the old `NS` basis.  Its divisor is
+
+```text
+2E6a_1 + E6a_2 + 2E6a_3 + 2E6a_4 + E6a_5 + E6b_6 + A2_1 + 2S,
+```
+
+in the certificate's deterministic component ordering.
+
+This first shell is not R17-like: its best possible MW rank is four.  More
+strongly, the determinant-24 Hermite obstruction above rules out a rootless
+MW17 fibration in **every** neighbour shell, not just `q=2`.  The six MW4
+fibrations are nevertheless useful next compiler targets.  Their equation
+models and arithmetic descent over `QQ(r)` remain open; geometric rank four
+does not yet imply that all four generators are rational.
+
+The exact replay and generated certificate are
+[`scripts/search_e6_ii_rank3_q2_neighbor_candidates.sage`](scripts/search_e6_ii_rank3_q2_neighbor_candidates.sage)
+and
+[`../artifacts/generated-results/elkies-k3-e6-ii-rank3-q2-neighbor-candidates-v1.json`](../artifacts/generated-results/elkies-k3-e6-ii-rank3-q2-neighbor-candidates-v1.json).
+Their SHA-256 hashes are respectively
+`9c34734fce6b4cf9ecd9347ae44607d8b7f1333ea4cf8cccf50262d313da5c6b`
+and
+`f597609d2cc6a3d2c838191195f376ffb9087aa427ea04f8c89fc3ddab37c5ff`.
+
 ## Rationalized D6 frontier
 
 The square root in the commonly printed `D6` normal form is a normalization
@@ -216,13 +298,25 @@ h*j*(h^2+h*j+j^2)=64,
 h*j*(h^2-h*j+j^2)=-64.
 ```
 
-An exhaustive rational-height box through 30 finds no nontrivial pair on
-either branch.  Replay that bounded result with
+The bounded height-30 miss upgrades to an exact obstruction for this chart.
+For the first branch put `k=j/h`, `x=h*j`, `X=k`, and `Y=8*k/x`; for the
+second use the same variables with `X=-k`.  Both correspondence curves are
+birational to
+
+```text
+Y^2=X^3+X^2+X.
+```
+
+This elliptic curve has rank zero over `QQ` and torsion
+`{O,(0,0)}`.  The affine torsion point forces `k=0`, while `O` is an omitted
+boundary point.  Hence neither nontrivial branch has a nondegenerate rational
+point: two sections cannot coexist inside this particular polynomial marked
+chart.  Replay the exact rank computation and the retained height-box
+regression with
 [`scripts/search_rationalized_d6_rank2_section_chart.sage`](scripts/search_rationalized_d6_rank2_section_chart.sage)
 and inspect
 [`../artifacts/generated-results/elkies-k3-rationalized-d6-section-chart-search-v1.json`](../artifacts/generated-results/elkies-k3-rationalized-d6-section-chart-search-v1.json).
-The box is not a rational-point theorem and does not exclude larger D6
-section charts.
+This is not an obstruction to a second section in a larger `D6` chart.
 
 ## Status boundary
 
@@ -233,15 +327,17 @@ Proved here:
   section of small degree;
 - generic K3 Picard rank 19, saturated `NS`, and determinant 24;
 - impossibility of a rootless MW17 fibration in the same `NS`;
+- a complete first genuine `q=2` shell with six nef `A6+D7/MW4` frames;
 - a rational `D6` chart and one exact polynomial marked-section family;
-- the stated bounded D6 necessary-condition search.
+- the exact two-section obstruction in the stated D6 polynomial chart.
 
 Still open here:
 
 - a rational one-parameter rank-sum-four family;
 - two independent anti-invariant directions in either the `E6` or `D6`
   chart;
-- a same-NS rootless search for a future rank-four success.
+- equation compilation and arithmetic descent for the six `A6+D7/MW4`
+  neighbours.
 
 The `E6` and `D6` surface normal forms are adapted from the rational elliptic
 surface charts in [Kimura](https://arxiv.org/abs/1802.05195).  The section

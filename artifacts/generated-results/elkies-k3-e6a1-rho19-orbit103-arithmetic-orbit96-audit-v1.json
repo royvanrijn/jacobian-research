@@ -1,25 +1,37 @@
 {
   "coefficient_comparison": {
+    "arithmetic_ranks": {
+      "orbit103": 2,
+      "orbit96": 2
+    },
+    "nontrivial_characters": {
+      "orbit103": "chi_-3",
+      "orbit96": "chi_-3"
+    },
     "orbit103_reducible_fibre_count": 4,
     "orbit103_source_divisor_complexity": {
       "l1": 3,
       "max_abs": 1
+    },
+    "orbit103_weierstrass_degrees": {
+      "A": 8,
+      "B": 12
     },
     "orbit96_abstract_source_divisor_complexity": {
       "l1": 12,
       "max_abs": 2
     },
     "orbit96_expected_reducible_fibre_count": 2,
-    "status": "NOT_COMPARABLE_WITHOUT_A_PHYSICALLY_MARKED_A7D7_EQUATION",
-    "warning": "The displayed low-coefficient tangent-trace equation is a negative control, not an A7+D7 competitor. It must not be used to claim coefficient optimality.",
-    "weierstrass_degree_floor": {
-      "A": 8,
-      "B": 12
-    }
+    "orbit96_weierstrass_degrees": {
+      "A": 6,
+      "B": 9
+    },
+    "status": "EXACT_PHYSICAL_AND_ARITHMETIC_COMPARISON"
   },
   "inputs": {
     "artifacts/generated-results/elkies-k3-e6a1-rho19-genuine-q2-neighbors-v1.json": "07a6cdb181e9c2febdfcf085954608ef40b07a654fc652624bae195e4128d179",
-    "artifacts/generated-results/elkies-k3-e6a1-rho19-orbit103-rr-weierstrass-v1.json": "c7f08349b9ab874131285cde40023f40b70e35f0d8f90d735d7af446b7a5419a"
+    "artifacts/generated-results/elkies-k3-e6a1-rho19-orbit103-rr-weierstrass-v1.json": "c7f08349b9ab874131285cde40023f40b70e35f0d8f90d735d7af446b7a5419a",
+    "artifacts/generated-results/elkies-k3-e6a1-rho19-orbit96-rr-galois-v1.json": "f72b312561b01cbce6e9fa47f6c96a6ff6e1ec7aca406169f79434995cc6046f"
   },
   "orbit103_arithmetic": {
     "arithmetic_rank": 2,
@@ -81,36 +93,240 @@
         "max_abs": 2
       }
     },
-    "missing_gate": "The abstract E6 simple-root coordinates must be identified with a complete resolved physical E6 component marking on the equation.",
-    "naive_equation_tangent_trace": {
-      "C2_coefficients_low_to_high": [
-        "-1/4*k^4 + 4/3*k^2 - 7/3",
-        "0",
+    "arithmetic": {
+      "arithmetic_rank_over_QQ_k_z": 2,
+      "field_proof": "Over QQ(k) the split IV* components and old sections are rational; sqrt(-3)-conjugation only swaps A3_1 and A3_3.  Its exact action on the saturated MW quotient is diag(1,-1,1).",
+      "galois_action_in_height_basis": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "generator_fields": [
+        "QQ(k)(z)",
+        "QQ(k,sqrt(-3))(z)",
+        "QQ(k)(z)"
+      ],
+      "generator_heights": [
+        "3/8",
+        "1",
+        "3"
+      ],
+      "generator_section_classes_in_old_ns_basis": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          2,
+          4,
+          4,
+          2,
+          1,
+          2,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          -1,
+          6,
+          3,
+          6,
+          6,
+          3,
+          1,
+          3,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          6,
+          1
+        ]
+      ],
+      "geometric_rank": 3,
+      "height_gram": [
+        [
+          "3/8",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "3"
+        ]
+      ],
+      "new_zero_class_in_old_ns_basis": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rank_decomposition": "1 + chi_{-3} + 1",
+      "regulator": "9/8",
+      "torsion": "trivial"
+    },
+    "corrected_equation": {
+      "I6_coefficients_low_to_high": [
+        "1",
+        "(12*k^2 - 16)/k",
+        "(36*k^4 - 192*k^2 + 64)/k^2",
+        "(32*k^4 - 704*k^2 + 768)/k",
+        "48*k^4 - 256*k^2 + 2560",
+        "768*k^3 - 3072*k",
+        "64*k^6 - 512*k^4 + 1024*k^2"
+      ],
+      "J9_coefficients_low_to_high": [
+        "-2",
+        "(-36*k^2 + 48)/k",
+        "(-216*k^4 + 864*k^2 - 384)/k^2",
+        "(-528*k^6 + 5568*k^4 - 6912*k^2 + 1024)/k^3",
+        "(-720*k^6 + 14208*k^4 - 45312*k^2 + 18432)/k^2",
+        "(-864*k^6 + 8064*k^4 - 102912*k^2 + 116736)/k",
+        "-960*k^6 + 768*k^4 + 21504*k^2 + 184320",
+        "1152*k^7 - 10752*k^5 + 141312*k^3 - 466944*k",
+        "18432*k^6 - 147456*k^4 + 294912*k^2",
+        "1024*k^9 - 12288*k^7 + 49152*k^5 - 65536*k^3"
+      ],
+      "equation": "y^2=x^3-27*I6(z)*x-27*J9(z)",
+      "euler_number": 24,
+      "fibres": "I8 at z=0, I3* at z=infinity, seven residual I1",
+      "reduced_discriminant_factorization": "(-69657034752*k^15 + 1393140695040*k^13 - 11145125560320*k^11 + 44580502241280*k^9 - 89161004482560*k^7 + 71328803586048*k^5) * z^8 * (z^7 + ((9/8*k^4 + 15*k^2 + 2)/(k^5 - 4*k^3))*z^6 + ((15/8*k^6 + 7/2*k^4 + 82*k^2 + 24)/(k^8 - 8*k^6 + 16*k^4))*z^5 + ((55/32*k^8 - 23/2*k^6 + 65*k^4 + 80*k^2 + 88)/(k^11 - 12*k^9 + 48*k^7 - 64*k^5))*z^4 + ((9/8*k^8 - 111/8*k^6 - 29/2*k^4 + 10*k^2 + 24)/(k^12 - 12*k^10 + 48*k^8 - 64*k^6))*z^3 + ((87/128*k^8 - 31/16*k^6 - 13/2*k^4 - 3*k^2 + 2)/(k^13 - 12*k^11 + 48*k^9 - 64*k^7))*z^2 + ((27/128*k^6 + 9/32*k^4 - 3/8*k^2 - 1/2)/(k^12 - 12*k^10 + 48*k^8 - 64*k^6))*z + (9/512*k^4 + 3/64*k^2 + 1/32)/(k^11 - 12*k^9 + 48*k^7 - 64*k^5))",
+      "residual_I1_coefficients_low_to_high": [
+        "(9/512*k^4 + 3/64*k^2 + 1/32)/(k^11 - 12*k^9 + 48*k^7 - 64*k^5)",
+        "(27/128*k^6 + 9/32*k^4 - 3/8*k^2 - 1/2)/(k^12 - 12*k^10 + 48*k^8 - 64*k^6)",
+        "(87/128*k^8 - 31/16*k^6 - 13/2*k^4 - 3*k^2 + 2)/(k^13 - 12*k^11 + 48*k^9 - 64*k^7)",
+        "(9/8*k^8 - 111/8*k^6 - 29/2*k^4 + 10*k^2 + 24)/(k^12 - 12*k^10 + 48*k^8 - 64*k^6)",
+        "(55/32*k^8 - 23/2*k^6 + 65*k^4 + 80*k^2 + 88)/(k^11 - 12*k^9 + 48*k^7 - 64*k^5)",
+        "(15/8*k^6 + 7/2*k^4 + 82*k^2 + 24)/(k^8 - 8*k^6 + 16*k^4)",
+        "(9/8*k^4 + 15*k^2 + 2)/(k^5 - 4*k^3)",
         "1"
       ],
-      "C4_coefficients_low_to_high": [
-        "-1/8*k^6 + 11/8*k^4 - 4*k^2 + 3",
-        "0",
-        "-3/8*k^4 + 2*k^2 - 4",
-        "0",
-        "1"
-      ],
-      "equation": "y^2=x^3-3*(z^2-1)^3*C2(z)*x-2*(z^2-1)^4*C4(z)",
-      "fibre_profile": "2IV*+I4+4I1",
-      "function": "(t+1)*(y-y0-m_tan*(x-x0))/(x-x0)^2, with the opposite orientation giving the same Jacobian",
-      "rejection": "This is not the abstract A7+D7 orbit-96 fibration.",
       "root_data": [
-        15,
-        156,
-        36
+        14,
+        140,
+        32
       ],
-      "root_type": "2E6+A3"
+      "root_type": "A7+D7",
+      "short_a_coefficients_low_to_high": [
+        "-27",
+        "(-324*k^2 + 432)/k",
+        "(-972*k^4 + 5184*k^2 - 1728)/k^2",
+        "(-864*k^4 + 19008*k^2 - 20736)/k",
+        "-1296*k^4 + 6912*k^2 - 69120",
+        "-20736*k^3 + 82944*k",
+        "-1728*k^6 + 13824*k^4 - 27648*k^2"
+      ],
+      "short_b_coefficients_low_to_high": [
+        "54",
+        "(972*k^2 - 1296)/k",
+        "(5832*k^4 - 23328*k^2 + 10368)/k^2",
+        "(14256*k^6 - 150336*k^4 + 186624*k^2 - 27648)/k^3",
+        "(19440*k^6 - 383616*k^4 + 1223424*k^2 - 497664)/k^2",
+        "(23328*k^6 - 217728*k^4 + 2778624*k^2 - 3151872)/k",
+        "25920*k^6 - 20736*k^4 - 580608*k^2 - 4976640",
+        "-31104*k^7 + 290304*k^5 - 3815424*k^3 + 12607488*k",
+        "-497664*k^6 + 3981312*k^4 - 7962624*k^2",
+        "-27648*k^9 + 331776*k^7 - 1327104*k^5 + 1769472*k^3"
+      ]
+    },
+    "historical_parent_bug": {
+      "historical_failure": "Leaving m_tan in Frac(KZ[t]) changes the x-polynomial parent; zero-argument discriminant() then returned a different expression.",
+      "quadratic_discriminant_checked_as": "b^2-4*a*c",
+      "quartic_coefficients_low_to_high": [
+        "(-4*k^3 + 16*k)*z^3 - 12*z^2 + ((3*k^2 - 4)/k)*z + 1",
+        "(4*k^3 - 16*k)*z^3 + ((3*k^2 - 4)/k)*z + 2",
+        "(4*k^3 - 16*k)*z^3 + 24*z^2 + ((-3*k^2 + 4)/k)*z + 1",
+        "(-4*k^3 + 16*k)*z^3 + ((-3*k^2 + 4)/k)*z",
+        "-12*z^2"
+      ],
+      "rational_points": [
+        [
+          "t=-1",
+          "w=0"
+        ],
+        [
+          "t=1",
+          "w=2"
+        ],
+        [
+          "t=1",
+          "w=-2"
+        ]
+      ],
+      "required_parent": "Univariate Polynomial Ring in x over Univariate Polynomial Ring in t over Fraction Field of Univariate Polynomial Ring in z over Fraction Field of Univariate Polynomial Ring in k over Rational Field",
+      "square_factor": "t + 1"
     }
   },
   "proof_boundary": {
-    "open": "A physically resolved E6 marking and a genuine orbit-96 A7+D7 Weierstrass equation are still required for coefficient optimality.",
-    "proved": "Exact orbit-103 arithmetic rank two, explicit anti-invariant third geometric direction, and exact rejection of the naive orbit-96 tangent trace by its fibre fingerprint."
+    "open": "Polynomial Weierstrass coordinates for the orbit-96 lattice generators and arithmetic ranks after numerical specialization.",
+    "proved": "Exact orbit-103 arithmetic rank two and comparison with the corrected physical orbit-96 A7+D7 equation and MW representation."
   },
   "schema": "elkies-k3.e6a1-rho19-orbit103-arithmetic-orbit96-audit.v1",
-  "status": "PASS_EXACT_ARITHMETIC_RANK2_AND_FAIL_CLOSED_A7D7_GATE"
+  "status": "PASS_EXACT_BOTH_ORBITS_ARITHMETIC_RANK2_AND_CHI_MINUS3"
 }
