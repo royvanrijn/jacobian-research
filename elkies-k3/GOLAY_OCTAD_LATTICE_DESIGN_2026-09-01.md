@@ -190,6 +190,145 @@ prescribed-support enumeration for a rank-15 two/three-support companion.  A
 longer undirected Kneser beam is lower-value: the present beam already shows
 that root rank grows readily to 13 but not to the preferred source band.
 
+## Direct all-Niemeier source closeout — 2026-09-02
+
+The prescribed-support search has now been run directly for the fixed
+determinant-720 auxiliary.  The auxiliary is rootless, so the older `D5`-anchor
+enumerator does not apply.  Instead, its ordered norm-four octad basis is
+embedded one vector at a time.  At each prefix the next vector is placed in a
+dominant chamber for the residual Weyl group; at the final vector, zero Dynkin
+labels prescribe root rank 15 or 16 and one to three root supports before the
+remaining exact shifted ellipsoid is solved.
+
+The unrestricted run covers all 23 rooted Niemeier lattices and has no
+candidate or label limit.  It retains 4,823 deterministic reduced-Gram rows:
+
+```text
+MW rank 1       32 rows
+MW rank 2     4791 rows
+total         4823 rows
+```
+
+These are stored rows, not an assertion of 4,823 integral-isometry classes.
+Equal deterministic reduced Grams are merged, but diagram/umbral
+automorphisms are not quotiented and a general rank-17 isometry classification
+is not used as a discovery gate.
+
+The separate pole audit resolves primitive and nonprimitive root lattices
+uniformly.  It computes the exact Smith quotient by the roots, enumerates
+every torsion/free MW class whose exact height lower bound can permit frame
+norm at most eight, and repeats each affine closest-vector decision with
+double-double and MPFR-256 GSO arithmetic.  Returned norms, root pairings,
+Smith classes, and unimodular MW bases are checked exactly.  The strict result
+is
+
+```text
+complete MW basis with every P.O. <= 2       1587 rows
+  MW1                                           16 rows
+  MW2                                         1571 rows
+```
+
+The useful Pareto leaders are:
+
+| representative | root type | MW | supports | all-`A` | complete basis P.O. | MW height Gram |
+|---|---|---:|---:|---:|---:|---|
+| `G720-S0046` | `A4+A8+D4` | 1 | 3 | no | `[1]` | `[[4]]` |
+| `G720-S0224` | `A1+A11+D4` | 1 | 3 | no | `[2]` | `[[15/2]]` |
+| `G720-S0260` | `A11+A4` | 2 | 2 | yes | `[0,0]` | `[[4,-2],[-2,4]]` |
+| `G720-S0780` | `A2+D13` | 2 | 2 | no | `[2,2]` | `[[8,-6],[-6,12]]` |
+| `G720-S0422` | `A1+A4+D10` | 2 | 3 | no | `[1,1]` | `[[9/2,-3/2],[-3/2,9/2]]` |
+
+All five displayed rows have primitive roots and trivial torsion.  The
+equation-shape leader is `G720-S0260`: geometrically its semistable fibre
+profile is
+
+```text
+I12 + I5 + 7I1,
+```
+
+its two displayed pole-zero sections give a unimodular basis of the free MW
+quotient, and `det(A11)*det(A4)*det(MW) = 12*5*12 = 720`.
+Four stored `A11+A4/[0,0]` rows occur in `N(A15+D9)`; the table names the
+first deterministic representative.  The MW1 leader instead has only one
+section condition to impose, but trades the second support for a `D4` fibre.
+
+This clears the requested lattice gate and is strictly more attractive than
+the older NS0024 `A3+A4+A6/MW4` three-support baseline on MW rank, support
+count, and complete-basis pole cost.  It is not yet a construction-level
+replacement: NS0024 has a certified marked degree-two corridor, while the
+Golay-720 rows still have no rational source marking, Weierstrass equation, or
+marked route to the rootless target.
+
+Several negative and near-miss slices remain useful routing information:
+
+- `N(D24)` gives 23 `D15/MW2` rows but no non-torsion section through pole
+  two.
+- `N(A24)` gives 90 one-support `A15/MW2` rows, none with a complete basis
+  through pole two.
+- `N(4A6)` and `N(4E6)` give no retained source in the declared window.
+- `N(4A5+D4)` gives 59 three-support `3A5/MW2` rows with 3-torsion.  Each has
+  a pole-zero non-torsion direction, but the cheap sections span only one
+  free-MW line, so this known glue home is a near miss rather than the winner.
+- The older 34,101-class Kneser beam therefore failed because it did not enter
+  the required root-rank band; direct prescribed-root enumeration was the
+  decisive change.
+
+### First equation gate for `G720-S0260`
+
+The normalized semistable fibre ansatz has also passed its first finite-field
+gate.  Over `GF(5)`, fix `I12` at zero, `I5` at infinity, and normalize
+`A(0)=-3` in
+
+```text
+y^2 = x^3 + A(t)x + B(t),  deg(A)<=8, deg(B)<=12.
+```
+
+An exhaustive scan of all `5^8 = 390625` normalized `A` polynomials solves
+the rank-13 Hermite system for the 17 prescribed discriminant jets.  Of 916
+compatible signed local branches, 208 have the exact orders `(12,5)` and 164
+have squarefree residual degree-seven discriminant.  Thus the bare
+`I12+I5+7I1` equation stratum is nonempty and abundant modulo 5.
+
+This is encouraging but is not yet the determinant-720 source equation.  The
+two pole-zero sections, the full lattice marking, a characteristic-zero lift,
+and a rational parameter remain open.  Replay the exact modular census with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_golay_det720_a11_a4_source_ansatz_modp.sage \
+  --prime 5 --check
+```
+
+The artifact is
+[`../artifacts/generated-results/elkies-k3-golay-det720-a11-a4-source-ansatz-mod5-v1.json`](../artifacts/generated-results/elkies-k3-golay-det720-a11-a4-source-ansatz-mod5-v1.json),
+SHA-256
+`52fc4cf278bb0d8631ec9de32c82603af3bd9e7f4ffab7b5a12fc473fe77e17e`.
+
+Replay the source enumeration and its independent pole audit with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_golay_det720_prescribed_root_sources.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/audit_golay_det720_source_poles.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/audit_golay_det720_source_poles.sage --check
+```
+
+The generated artifacts are
+[`../artifacts/generated-results/elkies-k3-golay-octad-det720-prescribed-root-sources-v1.json`](../artifacts/generated-results/elkies-k3-golay-octad-det720-prescribed-root-sources-v1.json)
+with SHA-256
+`f203027cae98df3f1cf69286dd149a73ef93f35ee9408130d89e39a856dbb7af`,
+and
+[`../artifacts/generated-results/elkies-k3-golay-octad-det720-source-poles-v1.json`](../artifacts/generated-results/elkies-k3-golay-octad-det720-source-poles-v1.json)
+with SHA-256
+`ddeda8fd0059ec7b1e45f09d87be1a0dd6815152ee12bcd2bb3fb313e6e46bf8`.
+The 1587-row success count is a complete-basis statement; the source
+artifact's larger minimum-section count is the weaker metric and should not be
+substituted for it.
+
 ## Literature boundary
 
 The ambient construction is the standard Golay-code description of
@@ -197,3 +336,10 @@ The ambient construction is the standard Golay-code description of
 is the Kneser--Nishiyama method.  The repository contribution here is the
 specific septuple and its exact determinant, saturation, short-shell, and
 ternary-realizability certificate.
+
+Primary context is Nishiyama's original K3/Niemeier construction
+([J. Math. Kyoto Univ. 22 (1982), 293--304](https://www.jstage.jst.go.jp/article/math1924/22/2/22_2_293/_article)),
+the lattice-polarized K3 review of Braun--Kimura--Watari
+([arXiv:1312.4421](https://arxiv.org/abs/1312.4421)), and Shimada's exact
+elliptic-K3 ADE/Mordell--Weil classification framework
+([arXiv:math/0505140](https://arxiv.org/abs/math/0505140)).

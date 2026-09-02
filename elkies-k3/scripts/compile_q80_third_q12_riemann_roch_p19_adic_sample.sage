@@ -969,7 +969,7 @@ else:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(serialized)
 print(
-    f"Q80THIRDQ12PADICRR|p=19|digits=5|U={base_constant}+{base_anti}omega|"
+    f"Q80THIRDQ12PADICRR|p=19|digits={digits}|U={base_constant}+{base_anti}omega|"
     f"RR=1,1,2,3|poles=2,3|weierstrass=1|maps=both|legacy={int(is_legacy_sample)}|"
     "status=PASS_EXACT_THIRD_Q12_WEIERSTRASS_P19_ADIC_SAMPLE",
     flush=True,

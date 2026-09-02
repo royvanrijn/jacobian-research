@@ -2837,6 +2837,12 @@ Build or byte-check the surface-first rank-seven auxiliary catalogue:
   elkies-k3/scripts/enumerate_24a1_octad_prefix_orbits.sage --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/run_24a1_octad_rank7_completion_frontier.py --jobs 3
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/run_24a1_octad_rank7_completion_frontier.py --jobs 3 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/enumerate_24a1_octad_rank7_completion_shard.sage \
   --prefix-start 0 --prefix-stop 250
 
@@ -2913,12 +2919,6 @@ Build or byte-check the surface-first rank-seven auxiliary catalogue:
   elkies-k3/scripts/canonicalize_24a1_weyl_m24_shard.sage --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
-  elkies-k3/scripts/build_cross_niemeier_mod2_priority.sage
-
-/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
-  elkies-k3/scripts/build_cross_niemeier_mod2_priority.sage --check
-
-/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/enumerate_2a7_2d5_4a_fixed_rank7.sage
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -2929,6 +2929,216 @@ Build or byte-check the surface-first rank-seven auxiliary catalogue:
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/enumerate_2a7_2d5_2c_fixed_high_mw_seed.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_4d6_swap_fixed_high_mw_seed.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_4d6_swap_fixed_high_mw_seed.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_6a4_double_swap_fixed_high_mw_seed.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_6a4_double_swap_fixed_high_mw_seed.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_4a5_d4_order4_fixed_high_mw_seed.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_4a5_d4_order4_fixed_high_mw_seed.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_4a6_4e6_residual_sections.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_4a6_4e6_residual_sections.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_4a6_4e6_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_4a6_4e6_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_4a6_4e6_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_4a6_4e6_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_8a3_glue_code_residual_group.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_8a3_glue_code_residual_group.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_8a3_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_8a3_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_8a3_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_8a3_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_6d4_hexacode_residual_group.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_6d4_hexacode_residual_group.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_6d4_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_6d4_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_6d4_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_6d4_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_3e8_residual_group.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_3e8_residual_group.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_3e8_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_3e8_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_3d8_glue_residual_group.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_3d8_glue_residual_group.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_3d8_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_3d8_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_3d8_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_3d8_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_2d12_glue_residual_group.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_2d12_glue_residual_group.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_2d12_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_2d12_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_d10_2e7_residual_group.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_d10_2e7_residual_group.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_d10_2e7_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_d10_2e7_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_2a12_residual_group.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_2a12_residual_group.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_2a12_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_2a12_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_2a9_d6_residual_group.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_2a9_d6_residual_group.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_2a9_d6_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_2a9_d6_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_2a9_d6_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_2a9_d6_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_3a8_residual_group.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_3a8_residual_group.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_3a8_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_3a8_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_3a8_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_3a8_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_12a2_ternary_golay_residual_group.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_12a2_ternary_golay_residual_group.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_12a2_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_12a2_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_12a2_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/canonicalize_12a2_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_eta_only_niemeier_residual_groups.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_eta_only_niemeier_residual_groups.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_eta_only_niemeier_fixed_coordinate_shells.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_eta_only_niemeier_fixed_coordinate_shells.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_cross_niemeier_mod2_priority.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_cross_niemeier_mod2_priority.sage --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_leech_co0_backend.sage
@@ -2950,19 +3160,18 @@ python3 elkies-k3/scripts/build_rank7_surface_pareto.py --check
 The first two commands enumerate exact residual-`M24` orbits of unordered
 Golay-octad subsets through size five; the orbit counts are
 `1,3,16,206,10547`, and every orbit-stabilizer mass equals
-`binomial(759,k)`. The next sixteen commands complete prefix indices `0:2000` in
-eight contiguous shards. After exact saturation and local residual-`M24`
-deduplication they retain 1,267 records, with MW-rank distribution
-`260,970,37` in ranks 12, 13, and 14; 1,253 pass the ternary genus gate. This is
-an exact partial frontier in the positive seven-octad language. The next two
-commands build and byte-check the gap-free, hash-pinned shard manifest. The
-following two commands apply the full `2^24 semidirect M24` quotient across all
-eight shards: the 1,267 local records become 23 full embedding orbits, with
-MW-rank distribution `5,13,5` in ranks 12, 13, and 14, and 18 pass the
-ternary-genus gate. The following two commands
-build the cross-Niemeier mod-2 scheduler, prioritizing `2B`, `2C`, `4A` and
-analogous component permutations but requiring the exact gate
-`rank_GF2(g_M-I)>0`. The next two commands close the primitive corank-one
+`binomial(759,k)`. The next two commands run or byte-check all 10,547
+five-prefix orbits in 43 contiguous shards. The following sixteen commands
+are independent first-eight-shard examples and may be omitted after the full
+runner. After exact saturation and local residual-`M24` deduplication the full
+frontier retains 3,051 records, with MW-rank distribution `387,2423,241` in
+ranks 12, 13, and 14; 3,015 pass the ternary genus gate. The next two commands
+build and byte-check the gap-free, hash-pinned shard manifest. The following
+two commands apply the full `2^24 semidirect M24` quotient across all 43
+shards: the 3,051 local records become 24 full embedding orbits, with MW-rank
+distribution `5,13,6` in ranks 12, 13, and 14, and 18 pass the ternary-genus
+gate. These yield two `(T,NS)` keys and add one global surface, two auxiliaries,
+and eighteen frames after catalogue deduplication. The next two commands close the primitive corank-one
 family inside the common rank-eight `4A` fixed lattice of `N(2A7+2D5)`.
 They enumerate 336 embeddings, with MW-rank distribution `16,16,304` in
 ranks 13, 15, and 17. Every embedding has nontrivial `2B,2C,4A` complement
@@ -2971,27 +3180,145 @@ their discriminant groups have length seven. The following two commands test
 all 11,440 coordinate direct summands of a pinned `2C` fixed-lattice basis.
 The 97 high-MW survivors give 97 exact `Dih_4`-section orbits and 73 admissible
 `(T,NS)` surfaces; post-deduplication they contribute 86 frames with MW-rank
-distribution `16,66,1,3` in ranks 12 through 15. Neither artifact is a complete `24A1:D0001-0500`
-result: the remaining prefixes and non-positive-octad generator languages are
-open.
+distribution `16,66,1,3` in ranks 12 through 15. The next two commands test
+the analogous `4D6` component-transposition coordinate shell. Of 11,440
+summands, 183 fail discriminant length and all remaining 11,257 have MW rank
+below 12, an exact negative result only for that shell. The following two
+commands derive all 240 chamber-preserving residual automorphisms of `N(6A4)`
+and canonicalize a double-swap fixed-lattice shell under the whole group. Its
+161 MW12--13 orbits yield 42 local `(T,NS)` surfaces, 55 auxiliary classes,
+and 128 frames. All selected involutions act nontrivially modulo two. The
+next two commands derive the 48 chamber-preserving residual
+automorphisms of `N(4A5+D4)` and close an order-four fixed-lattice coordinate
+shell.  Its 39 high-MW seeds give 39 residual orbits and nine local
+`(T,NS)` surfaces, auxiliary classes, and rootless frames, with distribution
+`MW13:7, MW17:2`; all nine surfaces are globally new.  The order-four action
+moves eleven complement dimensions modulo two.  The next six commands recover
+the exact `N(4A6)` and `N(4E6)` residual groups, exhaust every fixed-coordinate
+shell attached to a nonidentity matrix conjugacy class of fixed rank at least
+seven, and apply the residual, ternary, and `(T,NS)` gates.  The groups have
+orders 24 and 48 with component images `A4` and `S4`.  Of 26,064 coordinate
+summands, only order-three classes give high-MW seeds: 86 for `4A6` and 48 for
+`4E6`.  Residual canonicalization and the ternary gate yield nine `4A6`
+surfaces with ten frames (`MW12:2, MW13:8`) and one `4E6` MW12 surface/frame;
+all ten are globally new. The next six commands recover the order-256
+`N(8A3)/A3^8` glue code, exhaust all `2^8 8!` signed component maps, and
+certify the complete order-2,688 residual group with order-1,344 component
+image. Seven eligible fixed-rank classes contribute 24,600 coordinate
+summands and 1,166 high-MW/mod-two seeds. Full residual canonicalization gives
+1,162 orbits, of which 1,160 pass the ternary gate; `(T,NS)`-first
+deduplication gives 435 local surfaces, 523 auxiliary classes, and 574 frames.
+Twenty-four surfaces overlap prior backends, so the global catalogue gains
+411. The next six commands recover the order-64 `N(6D4)/D4^6` hexacode,
+exhaust all `6^6 6!` triality-permutation maps, and certify the complete
+order-2,160 residual group with kernel three and full `S6` component image.
+Eleven eligible classes contribute 25,416 coordinate summands and 472
+high-MW/mod-two seeds. Full quotienting gives 466 orbits, 456 K3-compatible
+orbits, and 218 local surfaces with 255 auxiliaries and 289 frames. Fifty
+surfaces overlap prior backends, so `6D4` adds 168 global surfaces, 251
+auxiliaries, and 285 frames. The next four commands intrinsically recover the
+three `E8` components of `N(3E8)`, certify the complete order-six residual
+`S3`, and scan both nonidentity fixed-coordinate classes. Their fixed ranks
+16 and 8 contribute 11,448 rank-seven coordinate summands; none survives the
+determinant/length/MW12--17/nontrivial-mod-two gates, so canonicalization and
+catalogue merging are vacuous for this declared shell. The next six commands
+recover the order-eight `N(3D8)/D8^3` glue code, reject 42 of the 48 possible
+component/diagram maps, and certify the natural order-six residual `S3`.
+The two nonidentity classes again contribute 11,448 coordinate summands. The
+transposition class gives 40 qualified seeds (`MW12:28, MW13:12`), while the
+three-cycle class is negative. Full residual quotienting gives 40 orbits; 25
+pass the ternary gate and `(T,NS)`-first deduplication gives seven local
+surfaces, auxiliaries, and frames. One surface overlaps the existing
+`2A7+2D5`/`6A4` class, but its auxiliary and frame are new; the other six
+surfaces are new. The next four commands recover the order-four
+`N(2D12)/D12^2` glue code, reject six of eight component/diagram maps, and
+certify the natural order-two component-swap residual group. Its rank-twelve
+fixed lattice contributes 792 coordinate summands, none of which survives
+all determinant/length/MW12--17/nontrivial-mod-two gates. Canonicalization and
+catalogue merging are therefore vacuous for this declared shell. The next
+four commands recover the mixed `D10+2E7` root decomposition and test all four
+diagram/permutation chamber maps. Glue rejects the `D10` flip and `E7` swap
+separately and retains only their simultaneous product. Its rank-sixteen
+fixed lattice contributes 11,440 coordinate summands, again with no seed
+surviving all pre-quotient gates. The next four commands recover the
+index-thirteen `N(2A12)/A12^2` quotient and certify the cyclic order-four
+residual group. Its order-four classes have fixed rank six; the sole eligible
+order-two class has a rank-twelve fixed lattice whose 792 coordinate summands
+also yield no seed. The next six commands recover the index-twenty
+`N(2A9+D6)/(A9^2+D6)` quotient, test all sixteen component/diagram maps, and
+certify the complete cyclic order-four residual group. The three nonidentity
+fixed lattices have ranks `16,10,10`; their 11,680 coordinate summands yield
+no order-two seed and 32 qualified seeds for each inverse order-four class.
+Exact residual quotienting gives 32 orbits, 13 K3-compatible orbits, and five
+local surfaces, auxiliaries, and frames (`MW13:4, MW17:1`). One surface
+overlaps `8A3`; four surfaces but all five auxiliaries and frames are new.
+The next six commands recover the index-27 `N(3A8)/A8^3` quotient, test all
+48 component/diagram maps, and certify the exact order-twelve residual group
+`{+/-1} x S3`. Four nonidentity classes have fixed rank at least seven; their
+13,032 coordinate summands yield 189 qualified transposition-fixed seeds
+(`MW12:135, MW13:54`) and no seed in the central-involution,
+signed-transposition, or three-cycle shells. Exact residual quotienting gives
+189 size-six orbits, all K3-compatible, and 25 local surfaces with 30
+auxiliaries and 64 frames. Twenty surfaces overlap earlier backends, so five
+surfaces, twelve auxiliaries, and all 64 frames are new. The next six commands
+recover the intrinsic ternary Golay `[12,6,6]` glue of `N(12A2)`, certify its
+full residual group `2.M12` of order 190,080 and 26 conjugacy classes, and
+scan all 13,968 eligible fixed-coordinate summands. The 237 qualified seeds
+become 214 exact residual orbits, 210 K3-compatible orbits, and 99 local
+surfaces with 108 auxiliaries and 151 frames. Forty-seven surfaces overlap
+earlier backends, so 52 surfaces, 86 auxiliaries, and 143 frames are new.
+The next four commands intrinsically recover all six remaining rooted
+residual groups. Exhausting their component diagram maps proves trivial
+groups for `D24` and `D16+E8` and order-two eta groups for `A24`, `A17+E7`,
+`A15+D9`, and `A11+D7+E6`. The four nontrivial fixed-coordinate languages
+contain 35,112 subsets but no MW12--17 seed: `A24` fails discriminant length,
+and every length-admissible mixed-system frame has MW rank below 12. The
+following two commands
+build the cross-Niemeier mod-2 scheduler, prioritizing `2B`, `2C`, `4A` and
+analogous component permutations but requiring the exact gate
+`rank_GF2(g_M-I)>0`.  These fixed-lattice shells
+remain bounded coordinate languages; they are not full
+backend or Weyl-orbit censuses. Likewise, the `24A1` prefix frontier and
+non-positive-octad generator languages remain open.
 
 The following two commands pin the separate Leech ambient directly from the
 AtlasRep `2.Co1=Co0` action: the invariant form is one-dimensional and its
 primitive positive integral generator is the even unimodular rank-24 lattice
 of minimum four with 196,560 minimal vectors. No rank-seven Leech embedding
 orbit is enumerated yet. The catalogue imports exact primitive embeddings from the current
-`N(2A7+2D5)` mutation and `2C` fixed-lattice seed shells and the determinant-720 `N(24A1)` Golay design,
+`N(2A7+2D5)` mutation and `2C` fixed-lattice seed shells, the `N(6A4)`
+double-swap, `N(4A5+D4)` order-four, and
+`N(2A9+D6)`/`N(3A8)`/`N(3D8)`/`N(4A6)`/`N(4E6)`/`N(6D4)`/`N(8A3)`/`N(12A2)` all-class
+coordinate shells, the exact negative `N(2A12)`, `N(2D12)`, `N(D10+2E7)`,
+`N(3E8)`, `N(A24)`, `N(A17+E7)`, `N(A15+D9)`, and `N(A11+D7+E6)` coordinate
+scans, and the
+determinant-720 `N(24A1)` Golay design,
 deduplicates first by `(T,NS)` and only then by auxiliary/frame isometry, and
-retains legacy `NS....` identifiers as aliases. It has 122 exact surface
-classes and 596 MW12--17 frames. The 23 rooted backends and separate Leech
+retains legacy `NS....` identifiers as aliases. Three of the 42 local `6A4`
+surfaces overlap prior `2A7+2D5` classes, while all nine local `4A5+D4`
+and all ten `4A6`/`4E6` surfaces are new. Of the 435 local `8A3` surfaces, 24
+overlap earlier backends and 411 are new. Of 218 local `6D4` surfaces, 50
+overlap and 168 are new. Of seven local `3D8` surfaces, one overlaps and six
+are new, while all seven auxiliaries and frames are new. Of five local
+`2A9+D6` surfaces, one overlaps `8A3` and four are new, while all five
+auxiliaries and frames are new. Of 25 local `3A8` surfaces, 20 overlap earlier
+backends and five are new; twelve auxiliaries and all 64 frames are new. The
+99 local `12A2` surfaces include 47 overlaps, so 52 are new; 86 auxiliaries
+and 143 frames are new. The completed positive seven-octad `24A1` subfamily
+adds one new determinant-480 surface and thirteen frames, while its
+determinant-500 surface overlaps `12A2` and gains five frames. The global
+catalogue therefore has 827 exact surface classes, 1,074 auxiliaries, and
+1,840 MW12--17
+frames. The 23 rooted
+backends and separate Leech
 backend are split into 96 determinant-band shards; all remain open because the
-two imported searches have bounded, narrower completeness statements. See
+imported searches have bounded, narrower completeness statements. See
 [`elkies-k3/RANK7_AUXILIARY_CATALOGUE_2026-09-01.md`](elkies-k3/RANK7_AUXILIARY_CATALOGUE_2026-09-01.md).
 
 The final two commands build and byte-check the typed surface-wide discovery
-ordering. Its exact four-metric core frontier has four of 122 surfaces.
+ordering. Its exact four-metric core frontier has fourteen of 827 surfaces.
 Coverage-restricted enriched ledgers contain 39 surfaces with exact
-minimum-pole evidence and 78 with nontrivial stabilizer evidence; no certified
+minimum-pole evidence and 787 with nontrivial stabilizer evidence; no certified
 physical neighbour route is currently available. Missing equation, field,
 route, conductor, and moduli data are retained as typed unknowns rather than
 imputed.
@@ -3157,6 +3484,23 @@ nonprimitive-root rows open rather than guessing their torsion/glue section
 lattice.  The result is
 `artifacts/generated-results/elkies-k3-lattice-foundry-rank1-section-poles-v1.json`.
 
+Audit the cheapest complete MW basis on all 97 primitive rank-two rows:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/audit_lattice_foundry_rank2_section_basis_poles.sage
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/audit_lattice_foundry_rank2_section_basis_poles.sage --check
+```
+
+The exact height bound makes the tail enumeration finite.  Each affine CVP is
+repeated with double-double and MPFR-256 arithmetic, every returned frame norm
+is recomputed integrally, and all determinant-one tail pairs are compared.
+The result is
+`artifacts/generated-results/elkies-k3-lattice-foundry-rank2-section-basis-poles-v1.json`
+with SHA-256
+`387a95156a06acb342fa4233f0aa69fb09e4c53fd69020a19e686da7cc4bcf38`.
+
 Replay the NS0011 `A2+A6+A8/MW1` equation gate over `GF(5)` with:
 
 ```bash
@@ -3245,6 +3589,65 @@ negative arithmetic-chart experiments, not exhaustive prime obstructions.
 The `A(0)=-3` normalization fixes only one local `I2` twist at each prime,
 while the `I4` and conjugate `I7` tangent characters are unrestricted.
 
+Build and audit the globally reduced fixed-`lambda=2` `GF(7)` pole-zero
+system with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_lattice_foundry_ns0007_pole0_reduced_modp.sage \
+  --prime 7 --lambda-value 2
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_lattice_foundry_ns0007_pole0_reduced_modp.sage \
+  --prime 7 --lambda-value 2 --compact-factored-msolve
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/audit_lattice_foundry_ns0007_compact_msolve_encoding.sage \
+  --check
+```
+
+The audit proves equality of all 19 equations after Sage parses and expands
+them.  It does not license the compact syntax for msolve: that syntax produced
+12 false nonunit cases in the first 10,000 assignments, while the expanded
+input proves that all 10,000 are unit ideals.  The census runner refuses
+factored input by default.  Replay the pinned expanded prefix with:
+
+```bash
+python3 \
+  elkies-k3/scripts/run_lattice_foundry_ns0007_p7_fixed_case_census.py \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0007-pole0-fixed-case-leading-prefix-10000-mod7-v1.json \
+  --workers 16 --solver-mode leading-ideal --timeout-seconds 10 \
+  --start-index 0 --limit 10000 --progress-every 5000
+```
+
+On the pinned run, seven cases timed out under transient host pressure.  Each
+was rerun as a singleton with a 60-second bound and resolved to the unit
+ideal.  Replay the checked merge with:
+
+```bash
+python3 \
+  elkies-k3/scripts/repair_lattice_foundry_ns0007_p7_fixed_case_census.py \
+  --base artifacts/generated-results/elkies-k3-lattice-foundry-ns0007-pole0-fixed-case-leading-prefix-10000-mod7-v1.json \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0007-pole0-fixed-case-leading-prefix-10000-resolved-mod7-v1.json \
+  artifacts/local/elkies-k3/ns0007-pole0-leading-replays/p7-lambda2-009065.json \
+  artifacts/local/elkies-k3/ns0007-pole0-leading-replays/p7-lambda2-009066.json \
+  artifacts/local/elkies-k3/ns0007-pole0-leading-replays/p7-lambda2-009067.json \
+  artifacts/local/elkies-k3/ns0007-pole0-leading-replays/p7-lambda2-009068.json \
+  artifacts/local/elkies-k3/ns0007-pole0-leading-replays/p7-lambda2-009069.json \
+  artifacts/local/elkies-k3/ns0007-pole0-leading-replays/p7-lambda2-009071.json \
+  artifacts/local/elkies-k3/ns0007-pole0-leading-replays/p7-lambda2-009072.json \
+  --check
+```
+
+The resolved artifact has SHA-256
+`7d30c0302547240427f8eecf8e5d38ffe36f0f11546f1104e5b2c2a44b18331d`.
+It is an exact bounded prefix of the `7^6=117649` base-field assignments in
+the displayed fixed-lambda chart, not an exhaustive chart obstruction and not
+a characteristic-zero nonexistence result.  Long continuations should use
+nonoverlapping `--start-index/--limit` shards and then
+`combine_lattice_foundry_ns0007_p7_fixed_case_census.py`; the combiner accepts
+only contiguous, fully expanded, terminal shards.
+
 Build the reduced NS0034 nodal-Hermite system, replay the complete fixed
 `GF(7)` fibre slice, and exhaust its pole-zero section chart with:
 
@@ -3301,7 +3704,7 @@ characteristic-zero nonexistence result.  The corresponding two `mod7` pilot
 artifacts exhaust the section charts only on the two stored bounded-sample
 fibre models.
 
-Replay the promoted NS0030 pole-zero source pilot attached to an MW16 target:
+Replay the completed NS0030 pole-zero source census attached to an MW16 target:
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -3310,13 +3713,125 @@ Replay the promoted NS0030 pole-zero source pilot attached to an MW16 target:
   --examples 100 \
   --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0030-source-ansatz-mod5-pilot100k-v1.json \
   --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0030_source_ansatz_modp.sage \
+  --max-a-samples-per-support-pair 290625 --sample-stride 17 \
+  --sample-offset 137500 --examples 100 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0030-source-ansatz-mod5-suffix290625-v1.json \
+  --check
+
+python3 elkies-k3/scripts/combine_lattice_foundry_ns0030_source_ansatz_modp.py \
+  --check
 ```
 
-This scans 100,000 normalized `A` polynomials in each of the six ordered
-`GF(5)` support pairs for the profile `2I2+I3+2I7+3I1`.  It finds 346 signed
-Hermite-compatible branches and no exact squarefree residual cubic.  The
-600,000-row result is bounded; the remaining coefficient rows and the second
-local twist are not covered.
+The two adjacent segments of the same coprime-stride permutation cover all
+`5^8` normalized `A` polynomials in each of the six ordered `GF(5)` support
+pairs for the profile `2I2+I3+2I7+3I1`.  Among 2,343,750 rows, 1,536 signed
+branches satisfy Hermite compatibility and none has the exact prescribed
+orders.  This is a complete obstruction for the displayed normalized
+characteristic-five chart, not a characteristic-zero nonexistence theorem.
+
+Replay the current marked MW1--MW16 equation lead `NS0048-S030` with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0048_source_ansatz_modp.sage \
+  --prime 5 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0048-source-ansatz-mod5.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0048_source_ansatz_modp.sage \
+  --prime 7 --examples 100 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0048-source-ansatz-mod7.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_lattice_foundry_ns0048_pole0_sections_xonly_modp.sage \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_lattice_foundry_ns0048_pole0_sections_xonly_modp.sage \
+  --quadratic-twist 3 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0048-pole0-sections-xonly-mod7-nonsquare-twist.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/audit_lattice_foundry_ns0048_marked_family_modp.sage \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/audit_lattice_foundry_ns0048_marked_family_modp.sage \
+  --fibres artifacts/generated-results/elkies-k3-lattice-foundry-ns0048-source-ansatz-mod11-suffix600k-v1.json \
+  --sections artifacts/generated-results/elkies-k3-lattice-foundry-ns0048-pole0-sections-xonly-mod11-suffix600k-v1.json \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0048-marked-family-jacobian-mod11-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/lift_lattice_foundry_ns0048_marked_family_padic.sage \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_lattice_foundry_ns0048_tate_family_modp.sage \
+  --prime 11 --fixed-lambda 10 --check
+```
+
+The source has root type `A1+A4+A6+D5`, MW height `37/14`, pole zero,
+determinant 740, and same-NS MW16 endpoint `NS0048-F001`.  The complete
+`GF(7)` fibre census has six models; the X-only section scan finds one marked
+sign pair in the square twist and none in the nonsquare twist.  The marked
+family has Jacobian rank 18 in 19 variables at both the characteristic-seven
+point and a point in the bounded characteristic-eleven suffix.  The latter
+lifts through `11^80` with one parameter fixed but does not rationally
+reconstruct.  These are modular and p-adic source-locus certificates, not a
+rational K3 equation or a neighbour corridor.
+
+Replay the equation-level audit of the multisection-leading MW2--MW17
+candidate NS0028 with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0028_source_ansatz_modp.sage \
+  --prime 5 --examples 0 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_lattice_foundry_ns0028_pole0_section_pairs_modp.sage \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_lattice_foundry_ns0028_pole0_section_pairs_modp.sage \
+  --quadratic-twist 2 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0028-pole0-section-pairs-mod5-nonsquare-twist.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0028_source_ansatz_modp.sage \
+  --prime 7 --examples 0 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0028-source-ansatz-mod7.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_lattice_foundry_ns0028_pole0_section_pairs_modp.sage \
+  --input artifacts/generated-results/elkies-k3-lattice-foundry-ns0028-source-ansatz-mod7.json \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0028-pole0-section-pairs-mod7.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_lattice_foundry_ns0028_pole0_section_pairs_modp.sage \
+  --input artifacts/generated-results/elkies-k3-lattice-foundry-ns0028-source-ansatz-mod7.json \
+  --quadratic-twist 3 \
+  --output artifacts/generated-results/elkies-k3-lattice-foundry-ns0028-pole0-section-pairs-mod7-nonsquare-twist.json \
+  --check
+```
+
+The exact lattice source has profile `A2+A6+A7/MW2`; both generators have
+pole zero and require only depth-one node contacts.  The complete fibre scans
+find 25 models at 5 and 112 at 7.  Neither twist at 5 contains either marked
+section.  At 7 the square twist has ten copies of one generator and the
+nonsquare twist has ten copies of the other plus two of the first, but never
+both on one model.  This is an exact two-prime obstruction for the displayed
+normalized charts only.
 
 For bounded-search provenance, replay or byte-check the exact `NS0024`
 rootful source found by the older Kneser scout and its certified degree-two
@@ -3393,8 +3908,12 @@ Neron--Severi class and never infers a rational marking or route from the
 lattice. It combines 75 individual source certificates, the 97 exact MW2 rows
 of the declared `3E8`/all-`A` slice, and all 2,134 MW1 rows of the full-support
 census. Primitive-root MW1 rows consume the exact pole audit; nonprimitive
-rows retain an open pole status. No row receives inferred rational-marking or
-route data. The
+rows retain an open pole status.  The 97 primitive MW2 rows consume the exact
+complete-basis audit, which ranks the minimum possible maximum basis pole
+before the cheapest single-section pole.  Thus NS0028 has profile `[0,0]`,
+NS0005 `[0,1]`, and the equation-first NS0011 source `[1,1]`; a different
+NS0011 row has a cheap individual section but only profile `[0,2]`. No row
+receives inferred rational-marking or route data. The
 multisection replay is complete for degree-two low-height translation orbits;
 degree-three/four results in that pilot artifact are exact only for the
 declared 256 sampled cosets per frame.
@@ -3413,8 +3932,8 @@ exact only inside the deterministic invariant sample. The interpretation and
 comparison with lambency-eight umbral trace data are recorded in
 [`elkies-k3/UMBRAL_COMPLEMENT_ORBIT_PILOT_2026-09-02.md`](elkies-k3/UMBRAL_COMPLEMENT_ORBIT_PILOT_2026-09-02.md).
 
-Exhaust all `3^17` degree-three translation cosets on the current MW2
-source-ranked top five with
+Exhaust all `3^17` degree-three translation cosets on the pinned five-surface
+batch selected by the earlier cheapest-single-section MW2 ranking with
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \

@@ -476,6 +476,24 @@ def canonicalize(payload):
                     "representative_octad_indices_one_based": representative_record[
                         "octad_indices_one_based"
                     ],
+                    "representative_auxiliary_basis_in_ambient": representative_record[
+                        "auxiliary_ambient_basis"
+                    ],
+                    "representative_auxiliary_gram": representative_record[
+                        "auxiliary_gram"
+                    ],
+                    "representative_complement_basis_in_ambient": representative_record[
+                        "frame_ambient_basis"
+                    ],
+                    "representative_frame_gram": representative_record[
+                        "frame_gram"
+                    ],
+                    "frame_discriminant_form_normal_key": representative_record[
+                        "k3_discriminant_gate"
+                    ]["frame_discriminant_form_normal_key"],
+                    "ternary_genus_representatives": representative_record[
+                        "k3_discriminant_gate"
+                    ]["ternary_genus_representatives"],
                     "input_shard_local_record_indices_zero_based": orbit[
                         "members"
                     ],
@@ -545,6 +563,19 @@ def canonicalize(payload):
             {384: 3, 448: 1, 480: 13, 486: 1, 500: 5}
         )
         assert mw_distribution == Counter({12: 5, 13: 13, 14: 5})
+    if (
+        prefix_start == 0
+        and prefix_stop == 10547
+        and len(payload["shards"]) == 43
+    ):
+        assert len(records) == 3051
+        assert len(intrinsic_classes) == 5
+        assert len(output_orbits) == 24
+        assert compatible == 18
+        assert determinant_distribution == Counter(
+            {384: 3, 448: 2, 480: 13, 486: 1, 500: 5}
+        )
+        assert mw_distribution == Counter({12: 5, 13: 13, 14: 6})
     return {
         "schema": "elkies-k3.24a1-weyl-m24-canonicalization.v2",
         "status": "PASS_EXACT_FULL_WEYL_M24_CANONICALIZATION_OF_DECLARED_INPUT_SHARDS",

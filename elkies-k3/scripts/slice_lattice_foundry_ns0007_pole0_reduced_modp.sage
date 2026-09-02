@@ -1,5 +1,11 @@
 #!/usr/bin/env sage-python
-"""Specialize the four a2 coefficients in an NS0007 reduced modular system."""
+"""Specialize coefficients in an NS0007 reduced modular system.
+
+The four ``a2`` entries remain the primary slice.  Repeated ``--fix`` options
+can additionally pin node-jet variables, for example
+``--fix si_0=1 --fix sl_0=3``.  This supports exact complexity probes before
+committing to a large finite-field slice census.
+"""
 
 from __future__ import annotations
 
@@ -26,6 +32,12 @@ parser.add_argument(
     "--a2",
     required=True,
     help="four comma-separated values or * for a2_4,a2_3,a2_2,a2_1",
+)
+parser.add_argument(
+    "--fix",
+    action="append",
+    default=[],
+    help="additional variable specialization NAME=VALUE (repeatable)",
 )
 parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
 parser.add_argument("--check", action="store_true")
@@ -57,6 +69,20 @@ fixed = {
     for name, value in zip(fixed_names, values)
     if value is not None
 }
+extra_fixed = {}
+for assignment in args.fix:
+    if assignment.count("=") != 1:
+        raise SystemExit("--fix requires NAME=VALUE")
+    name, value_text = assignment.split("=", 1)
+    name = name.strip()
+    if name not in old_names:
+        raise SystemExit(f"unknown --fix variable {name!r}")
+    if name in fixed_names:
+        raise SystemExit(f"specialize {name} through --a2, not --fix")
+    if name in extra_fixed:
+        raise SystemExit(f"duplicate --fix variable {name!r}")
+    extra_fixed[name] = field(int(value_text))
+fixed.update(extra_fixed)
 new_names = [name for name in old_names if name not in fixed]
 new_ring = PolynomialRing(field, names=new_names, order="degrevlex")
 new_generators = new_ring.gens_dict()
@@ -76,9 +102,12 @@ if inconsistent_constant:
     equations = [new_ring.one()]
 
 tag = "-".join("x" if value is None else str(int(value)) for value in values)
+extra_tag = "".join(
+    f"-{name}-{int(value)}" for name, value in sorted(extra_fixed.items())
+)
 output_dir = args.output_dir.resolve()
 output_dir.mkdir(parents=True, exist_ok=True)
-stem = f"p{prime}-lambda{metadata['lambda']}-a2-{tag}"
+stem = f"p{prime}-lambda{metadata['lambda']}-a2-{tag}{extra_tag}"
 msolve_path = output_dir / f"{stem}.ms"
 output_metadata_path = output_dir / f"{stem}.json"
 msolve_text = ",".join(new_names) + "\n" + str(prime) + "\n"
@@ -97,6 +126,9 @@ output = {
     "a2_coefficients_high_to_low": [
         None if value is None else int(value) for value in values
     ],
+    "additional_fixed_variables": {
+        name: int(value) for name, value in sorted(extra_fixed.items())
+    },
     "system": {
         "variables": new_names,
         "variable_count": len(new_names),
@@ -109,7 +141,8 @@ output = {
     },
     "proof_boundary": (
         "Exact substitution fixes the displayed a2 polynomial in the reduced "
-        "finite-field NS0007 chart. Solver output still requires independent "
+        "finite-field NS0007 chart and any explicitly named node jets. Solver "
+        "output still requires independent "
         "decoding and geometric verification."
     ),
 }
@@ -122,8 +155,9 @@ else:
     output_metadata_path.write_text(metadata_text)
 
 print(
-    "FOUNDRYNS0007A2SLICE|"
-    f"p={prime}|lambda={metadata['lambda']}|a2={tag}|"
+        "FOUNDRYNS0007A2SLICE|"
+        f"p={prime}|lambda={metadata['lambda']}|a2={tag}|"
+        f"extra_fixed={len(extra_fixed)}|"
     f"vars={len(new_names)}|eqs={len(equations)}|"
     f"max_degree={max(equation.degree() for equation in equations)}|status=PASS",
     flush=True,

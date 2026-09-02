@@ -73,13 +73,31 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 parser.add_argument("--quadratic-twist", type=int, default=1)
+parser.add_argument(
+    "--mode",
+    choices=("ns0028-pair", "infinity-pole0"),
+    default="ns0028-pair",
+    help=(
+        "retain the original NS0028 pair scan, or scan only a pole-zero section "
+        "with depth one at the infinity support and identity at the finite supports"
+    ),
+)
 parser.add_argument("--check", action="store_true")
 arguments = parser.parse_args()
 
 input_path = arguments.input.resolve()
+output_path = arguments.output.resolve()
 payload = json.loads(input_path.read_text())
-if payload["schema"] != "elkies-k3.lattice-foundry-ns0028-source-ansatz-modp.v1":
-    raise ValueError("unexpected NS0028 fibre-ansatz schema")
+pair_mode = arguments.mode == "ns0028-pair"
+expected_schema = (
+    "elkies-k3.lattice-foundry-ns0028-source-ansatz-modp.v1"
+    if pair_mode
+    else "elkies-k3.lattice-foundry-three-support-semistable-source-ansatz-modp.v1"
+)
+if payload["schema"] != expected_schema:
+    raise ValueError("unexpected three-support fibre-ansatz schema")
+if not pair_mode and payload["source"].get("root_type") not in ("A1+2A7", "A2+A6+A7"):
+    raise ValueError("generic infinity section mode requires a supported root profile")
 if payload["accounting"]["stored_examples"] != payload["accounting"]["squarefree_examples_with_signs"]:
     raise ValueError("section-pair scan requires every squarefree fibre model")
 prime = int(payload["prime"])
@@ -116,20 +134,24 @@ for example_index, example in enumerate(payload["examples"]):
     # and add t(t-1) times an arbitrary quadratic.
     p_remainder = ring(node_zero + (node_one - node_zero) * t)
     p_sections = []
-    for q_values in itertools.product(field, repeat=3):
+    for q_values in (itertools.product(field, repeat=3) if pair_mode else ()):
         X = p_remainder + t * (t - 1) * ring(q_values)
         for Y in polynomial_roots(X**3 + A * X + B):
             shifted_X_zero = series_zero(ring(X(t)))
             shifted_Y_zero = series_zero(ring(Y(t)))
             shifted_X_one = series_one(ring(X(t + 1)))
             shifted_Y_one = series_one(ring(Y(t + 1)))
-            depth_zero = min(
-                int((shifted_X_zero - center_zero).valuation()),
-                int(shifted_Y_zero.valuation()),
+            depth_zero = int(
+                min(
+                    (shifted_X_zero - center_zero).valuation(),
+                    shifted_Y_zero.valuation(),
+                )
             )
-            depth_one = min(
-                int((shifted_X_one - center_one).valuation()),
-                int(shifted_Y_one.valuation()),
+            depth_one = int(
+                min(
+                    (shifted_X_one - center_one).valuation(),
+                    shifted_Y_one.valuation(),
+                )
             )
             local_X_infinity = reversed_local(X, 4, infinity_ring)
             local_Y_infinity = reversed_local(Y, 6, infinity_ring)
@@ -155,9 +177,11 @@ for example_index, example in enumerate(payload["examples"]):
         for Y in polynomial_roots(X**3 + A * X + B):
             local_X_infinity = reversed_local(X, 4, infinity_ring)
             local_Y_infinity = reversed_local(Y, 6, infinity_ring)
-            depth_infinity = min(
-                int((local_X_infinity - center_infinity).valuation()),
-                int(local_Y_infinity.valuation()),
+            depth_infinity = int(
+                min(
+                    (local_X_infinity - center_infinity).valuation(),
+                    local_Y_infinity.valuation(),
+                )
             )
             smooth_zero = not (X(0) == node_zero and Y(0) == 0)
             smooth_one = not (X(1) == node_one and Y(1) == 0)
@@ -209,7 +233,7 @@ for example_index, example in enumerate(payload["examples"]):
     records.append(
         {
             "example_index": example_index,
-            "P_X_polynomials_scanned": prime**3,
+            "P_X_polynomials_scanned": prime**3 if pair_mode else 0,
             "Q_X_polynomials_scanned": prime**4,
             "P_marked_section_count": len(p_sections),
             "Q_marked_section_count": len(q_sections),
@@ -221,12 +245,25 @@ for example_index, example in enumerate(payload["examples"]):
     )
 
 total_pairs = sum(record["marked_pair_count"] for record in records)
+total_q_sections = sum(record["Q_marked_section_count"] for record in records)
 output = {
-    "schema": "elkies-k3.lattice-foundry-ns0028-pole0-section-pairs-modp.v1",
+    "schema": (
+        "elkies-k3.lattice-foundry-ns0028-pole0-section-pairs-modp.v1"
+        if pair_mode
+        else "elkies-k3.lattice-foundry-three-support-infinity-pole0-sections-modp.v1"
+    ),
     "status": (
-        "PASS_EXACT_EXHAUSTIVE_STORED_MODELS_WITH_MARKED_SECTION_PAIRS"
-        if total_pairs
-        else "PASS_EXACT_EXHAUSTIVE_STORED_MODELS_EMPTY_MARKED_PAIR_CHART"
+        (
+            "PASS_EXACT_EXHAUSTIVE_STORED_MODELS_WITH_MARKED_SECTION_PAIRS"
+            if total_pairs
+            else "PASS_EXACT_EXHAUSTIVE_STORED_MODELS_EMPTY_MARKED_PAIR_CHART"
+        )
+        if pair_mode
+        else (
+            "PASS_EXACT_EXHAUSTIVE_STORED_MODELS_WITH_INFINITY_POLE0_SECTIONS"
+            if total_q_sections
+            else "PASS_EXACT_EXHAUSTIVE_STORED_MODELS_EMPTY_INFINITY_POLE0_SECTION_CHART"
+        )
     ),
     "prime": prime,
     "quadratic_twist": int(twist),
@@ -238,43 +275,75 @@ output = {
     "scope": {
         "stored_fibre_models": len(records),
         "all_squarefree_fibre_models_stored": True,
-        "P_X_polynomials_per_model": prime**3,
+        "P_X_polynomials_per_model": prime**3 if pair_mode else 0,
         "Q_X_polynomials_per_model": prime**4,
         "all_polynomial_Y_square_roots_retained": True,
         "fibre_ansatz_scan_exhausted": bool(payload["scan"]["exhausted"]),
-        "pair_intersections_restricted_to_smooth_fibres": True,
-    },
+        "pair_intersections_restricted_to_smooth_fibres": pair_mode,
+    }
+    | (
+        {}
+        if pair_mode
+        else {
+            "scan_mode": "infinity-pole0",
+            "section_condition": (
+                "degree-four X with depth one at the infinity node and smooth "
+                "identity specialization at both finite reducible supports"
+            ),
+        }
+    ),
     "accounting": {
-        "total_P_X_polynomials_scanned": len(records) * prime**3,
+        "total_P_X_polynomials_scanned": len(records) * prime**3 if pair_mode else 0,
         "total_Q_X_polynomials_scanned": len(records) * prime**4,
         "models_with_P": sum(bool(record["P_marked_section_count"]) for record in records),
         "models_with_Q": sum(bool(record["Q_marked_section_count"]) for record in records),
         "models_with_marked_pairs": sum(bool(record["marked_pair_count"]) for record in records),
         "total_P_sections": sum(record["P_marked_section_count"] for record in records),
-        "total_Q_sections": sum(record["Q_marked_section_count"] for record in records),
+        "total_Q_sections": total_q_sections,
         "total_marked_pairs": total_pairs,
     },
     "models": records,
     "proof_boundary": {
         "proved": (
-            "For every stored fibre model, both component-adapted pole-zero X "
-            "charts and all polynomial Y square roots are exhausted. Retained "
-            "pairs have exact component depths, smooth-fibre intersection number, "
-            "MW height Gram, regulator, and NS determinant."
+            (
+                "For every stored fibre model, both component-adapted pole-zero X "
+                "charts and all polynomial Y square roots are exhausted. Retained "
+                "pairs have exact component depths, smooth-fibre intersection number, "
+                "MW height Gram, regulator, and NS determinant."
+            )
+            if pair_mode
+            else (
+                "For every stored fibre model, the complete component-adapted "
+                "degree-four X chart and all polynomial Y square roots are "
+                "exhausted. Retained sections have exact depth one at infinity "
+                "and smooth identity specialization at both finite supports."
+            )
         ),
         "not_proved": (
-            "A finite-field marked pair is not a rational source family, a "
-            "characteristic-zero lift, or a physical neighbour corridor."
+            (
+                "A finite-field marked pair is not a rational source family, a "
+                "characteristic-zero lift, or a physical neighbour corridor."
+            )
+            if pair_mode
+            else (
+                "A finite-field marked section is not a full MW2 marking, a "
+                "characteristic-zero family, or a physical neighbour corridor."
+            )
         ),
     },
     "reproduce": (
         "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python "
         "elkies-k3/scripts/scan_lattice_foundry_ns0028_pole0_section_pairs_modp.sage"
+        + (
+            f" --mode infinity-pole0 --input {relative(input_path)} "
+            f"--output {relative(output_path)}"
+            if not pair_mode
+            else ""
+        )
         + (f" --quadratic-twist {int(twist)}" if twist != 1 else "")
     ),
 }
 serialized = json.dumps(output, indent=2, sort_keys=True) + "\n"
-output_path = arguments.output.resolve()
 if arguments.check:
     if output_path.read_text() != serialized:
         raise SystemExit("NS0028 pole-zero section-pair scan is stale")
@@ -283,8 +352,8 @@ else:
     output_path.write_text(serialized)
 
 print(
-    "FOUNDRYNS0028POLE0PAIRS|"
-    f"models={len(records)}|P={output['accounting']['total_P_sections']}|"
+    ("FOUNDRYNS0028POLE0PAIRS|" if pair_mode else "FOUNDRY3ASUPPORTINFINITYPOLE0|")
+    + f"models={len(records)}|P={output['accounting']['total_P_sections']}|"
     f"Q={output['accounting']['total_Q_sections']}|pairs={total_pairs}|status=PASS",
     flush=True,
 )

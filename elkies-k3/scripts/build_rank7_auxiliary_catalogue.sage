@@ -10,19 +10,27 @@ census.
 
 status: ACTIVE_SEARCH_INFRASTRUCTURE
 claim: exact (T,NS)-first deduplication of the imported one-root and 2C-fixed
-  2A7+2D5 shells, the 6A4 double-swap shell, and the certified 24A1
-  Golay-octad design.
+  2A7+2D5 shells, the 6A4 double-swap, 4A5+D4 order-four, and
+  2A9+D6/3A8/3D8/4A6/4E6/6D4/8A3/12A2 all-residual-class coordinate shells, and the certified
+  24A1 Golay-octad design and complete positive seven-octad subfamily.
 inputs: artifacts/generated-results/elkies-k3-lattice-foundry-v1.json,
   artifacts/generated-results/elkies-k3-golay-octad-rank17-det720.json,
   artifacts/generated-results/elkies-k3-rooted-niemeier-catalog.json,
   artifacts/generated-results/elkies-k3-24a1-octad-prefix-orbits-v1.json,
   artifacts/generated-results/elkies-k3-24a1-octad-completion-manifest-v1.json,
-  artifacts/generated-results/elkies-k3-24a1-weyl-m24-canonicalization-00000-02000-v2.json,
+  artifacts/generated-results/elkies-k3-24a1-weyl-m24-canonicalization-00000-10547-v2.json,
   artifacts/generated-results/elkies-k3-cross-niemeier-mod2-priority-v1.json,
   artifacts/generated-results/elkies-k3-2a7-2d5-4a-fixed-rank7-v1.json,
   artifacts/generated-results/elkies-k3-2a7-2d5-2c-fixed-high-mw-seed-v1.json,
   artifacts/generated-results/elkies-k3-4d6-swap-fixed-high-mw-seed-v1.json,
   artifacts/generated-results/elkies-k3-6a4-double-swap-fixed-high-mw-seed-v1.json,
+  artifacts/generated-results/elkies-k3-4a5-d4-order4-fixed-high-mw-seed-v1.json,
+  artifacts/generated-results/elkies-k3-4a6-4e6-fixed-coordinate-shells-v1.json,
+  artifacts/generated-results/elkies-k3-8a3-fixed-coordinate-shells-v1.json,
+  artifacts/generated-results/elkies-k3-6d4-fixed-coordinate-shells-v1.json,
+  artifacts/generated-results/elkies-k3-3d8-fixed-coordinate-shells-v1.json,
+  artifacts/generated-results/elkies-k3-2a9-d6-fixed-coordinate-shells-v1.json,
+  artifacts/generated-results/elkies-k3-12a2-fixed-coordinate-shells-v1.json,
   artifacts/generated-results/elkies-k3-leech-co0-backend-v1.json
 output: artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json
 """
@@ -65,6 +73,36 @@ DEFAULT_4D6_SWAP_FIXED_SEED = (
 DEFAULT_6A4_DOUBLE_SWAP_FIXED_SEED = (
     ROOT
     / "artifacts/generated-results/elkies-k3-6a4-double-swap-fixed-high-mw-seed-v1.json"
+)
+DEFAULT_4A5_D4_ORDER4_FIXED_SEED = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-4a5-d4-order4-fixed-high-mw-seed-v1.json"
+)
+DEFAULT_4A6_4E6_FIXED_SHELLS = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-4a6-4e6-fixed-coordinate-shells-v1.json"
+)
+DEFAULT_8A3_FIXED_SHELLS = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-8a3-fixed-coordinate-shells-v1.json"
+)
+DEFAULT_6D4_FIXED_SHELLS = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-6d4-fixed-coordinate-shells-v1.json"
+)
+DEFAULT_3D8_FIXED_SHELLS = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-3d8-fixed-coordinate-shells-v1.json"
+)
+DEFAULT_2A9_D6_FIXED_SHELLS = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-2a9-d6-fixed-coordinate-shells-v1.json"
+)
+DEFAULT_3A8_FIXED_SHELLS = (
+    ROOT / "artifacts/generated-results/elkies-k3-3a8-fixed-coordinate-shells-v1.json"
+)
+DEFAULT_12A2_FIXED_SHELLS = (
+    ROOT / "artifacts/generated-results/elkies-k3-12a2-fixed-coordinate-shells-v1.json"
 )
 DEFAULT_LEECH = ROOT / "artifacts/generated-results/elkies-k3-leech-co0-backend-v1.json"
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json"
@@ -327,6 +365,83 @@ def import_golay(payload, surfaces):
     return 1
 
 
+def import_24a1_positive_octad_full_orbits(payload, surfaces):
+    assert payload["schema"] == (
+        "elkies-k3.24a1-weyl-m24-canonicalization.v2"
+    )
+    assert payload["status"] == (
+        "PASS_EXACT_FULL_WEYL_M24_CANONICALIZATION_OF_DECLARED_INPUT_SHARDS"
+    )
+    assert payload["parameters"] == {
+        "prefix_start_zero_based_inclusive": 0,
+        "prefix_stop_zero_based_exclusive": 10547,
+        "determinant_bound": 500,
+    }
+    assert payload["accounting"]["full_weyl_m24_embedding_orbits"] == 24
+    assert payload["accounting"][
+        "k3_compatible_full_embedding_orbits_by_ternary_genus_gate"
+    ] == 18
+    imported_records = 0
+    for orbit in payload["embedding_orbits"]:
+        matches = orbit["ternary_genus_representatives"]
+        assert len(matches) == orbit["matching_even_ternary_genera"]
+        if not matches:
+            continue
+        auxiliary = matrix(ZZ, orbit["representative_auxiliary_gram"])
+        frame = matrix(ZZ, orbit["representative_frame_gram"])
+        assert auxiliary.nrows() == 7 and frame.nrows() == 17
+        assert auxiliary.det() == frame.det() == orbit["determinant"]
+        root_rank = 17 - orbit["mordell_weil_rank"]
+        assert orbit["frame_root_system"] == f"{root_rank}A1"
+        ns_form = negate_discriminant_form_normal_key(
+            orbit["frame_discriminant_form_normal_key"]
+        )
+        for ternary_rows in matches:
+            ternary = matrix(ZZ, ternary_rows)
+            assert abs(ternary.det()) == frame.det()
+            key = surface_key(ns_form, ternary)
+            surface = find_or_add_surface(surfaces, key)
+            provenance = {
+                "backend_id": "ROOTED-24A1",
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-24a1-weyl-m24-canonicalization-"
+                    "00000-10547-v2.json"
+                ),
+                "full_weyl_m24_orbit_id": orbit["orbit_id"],
+                "intrinsic_auxiliary_class_id": orbit[
+                    "intrinsic_auxiliary_class_id"
+                ],
+                "full_group_stabilizer": orbit["full_group_stabilizer"],
+                "representative_input_origin": orbit[
+                    "representative_input_origin"
+                ],
+                "representative_auxiliary_basis_in_ambient": orbit[
+                    "representative_auxiliary_basis_in_ambient"
+                ],
+                "representative_complement_basis_in_ambient": orbit[
+                    "representative_complement_basis_in_ambient"
+                ],
+                "scope": (
+                    "complete_positive_seven_octad_generator_subfamily_"
+                    "through_determinant_500_under_full_2^24_semidirect_M24;_"
+                    "one_exact_representative_per_matching_ternary_genus"
+                ),
+            }
+            partner_index = add_partner(surface, auxiliary, provenance)
+            metadata = {
+                "root_type": orbit["frame_root_system"],
+                "root_rank": root_rank,
+                "mw_rank_for_rho_19": orbit["mordell_weil_rank"],
+                "signed_root_count": 2 * root_rank,
+                "root_determinant": 2**root_rank,
+            }
+            add_frame(surface, frame, metadata, provenance, partner_index)
+            imported_records += 1
+    assert imported_records == 18
+    return imported_records
+
+
 def import_2c_fixed_seed(payload, surfaces):
     assert payload["schema"] == (
         "elkies-k3.2a7-2d5-2c-fixed-high-mw-seed.v1"
@@ -526,6 +641,231 @@ def import_6a4_double_swap_fixed_seed(payload, surfaces):
     return imported_orbits
 
 
+def import_4a5_d4_order4_fixed_seed(payload, surfaces):
+    assert payload["schema"] == (
+        "elkies-k3.4a5-d4-order4-fixed-high-mw-seed.v1"
+    )
+    assert payload["status"] == (
+        "PASS_EXACT_DECLARED_4A5_D4_ORDER4_FIXED_HIGH_MW_SEED_SHELL_T_NS_FIRST"
+    )
+    assert payload["parameters"]["determinant_bound"] == 5000
+    assert payload["parameters"]["minimum_mw_rank"] == 12
+    assert payload["residual_group"]["order"] == 48
+    assert payload["accounting"][
+        "surface_classes_after_T_NS_first_dedup"
+    ] == 9
+    imported_orbits = 0
+    for source_surface in payload["surfaces_T_NS_first"]:
+        surface = find_or_add_surface(surfaces, source_surface["surface_key"])
+        partner_index_by_id = {}
+        for partner in source_surface["partner_auxiliaries"]:
+            auxiliary = matrix(ZZ, partner["gram"])
+            provenance = {
+                "backend_id": "ROOTED-4A5_D4",
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-4a5-d4-order4-fixed-high-mw-seed-v1.json"
+                ),
+                "source_surface_id": source_surface["surface_id"],
+                "source_partner_id": partner["partner_id"],
+                "residual_group_orbit_ids": partner[
+                    "residual_group_orbit_ids"
+                ],
+                "scope": (
+                    "complete_only_in_declared_7_of_10_LLL_coordinate_"
+                    "summand_shell_closed_under_exact_order_48_residual_group"
+                ),
+                "representative_auxiliary_basis_in_ambient": partner[
+                    "representative_auxiliary_basis_in_ambient"
+                ],
+            }
+            partner_index_by_id[partner["partner_id"]] = add_partner(
+                surface, auxiliary, provenance
+            )
+        for source_frame in source_surface["frames"]:
+            frame = matrix(ZZ, source_frame["gram"])
+            root_data = source_frame["root_data"]
+            metadata = {
+                "root_type": root_data["root_type"],
+                "root_rank": root_data["root_rank"],
+                "mw_rank_for_rho_19": root_data["mw_rank_for_rho_19"],
+                "signed_root_count": root_data["signed_root_count"],
+                "root_determinant": root_data["root_determinant"],
+                "determinant_predicted_mw_regulator": str(
+                    QQ(frame.det()) / root_data["root_determinant"]
+                ),
+            }
+            if source_frame["rootless_intrinsics"] is not None:
+                metadata["rootless_intrinsics"] = source_frame[
+                    "rootless_intrinsics"
+                ]
+            provenance = {
+                "backend_id": "ROOTED-4A5_D4",
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-4a5-d4-order4-fixed-high-mw-seed-v1.json"
+                ),
+                "source_surface_id": source_surface["surface_id"],
+                "source_frame_id": source_frame["frame_id"],
+                "residual_group_orbit_ids": source_frame[
+                    "residual_group_orbit_ids"
+                ],
+                "representative_complement_basis_in_ambient": source_frame[
+                    "representative_complement_basis_in_ambient"
+                ],
+                "literal_residual_stabilizer": source_frame[
+                    "representative_literal_residual_stabilizer"
+                ],
+                "scope": (
+                    "complete_only_in_declared_7_of_10_LLL_coordinate_"
+                    "summand_shell_closed_under_exact_order_48_residual_group"
+                ),
+            }
+            partner_indices = sorted(
+                {
+                    partner_index_by_id[value]
+                    for value in source_frame["partner_ids"]
+                }
+            )
+            assert partner_indices
+            frame_index = add_frame(
+                surface,
+                frame,
+                metadata,
+                provenance,
+                partner_indices[0],
+                certified_distinct_batch=source_surface["surface_id"],
+            )
+            for partner_index in partner_indices[1:]:
+                if partner_index not in surface["frames"][frame_index][
+                    "partner_auxiliary_indices"
+                ]:
+                    surface["frames"][frame_index][
+                        "partner_auxiliary_indices"
+                    ].append(partner_index)
+            imported_orbits += len(source_frame["residual_group_orbit_ids"])
+    assert imported_orbits == payload["accounting"][
+        "residual_group_embedding_orbits"
+    ]
+    return imported_orbits
+
+
+def import_all_residual_fixed_shells(
+    payload,
+    surfaces,
+    expected_schema,
+    expected_status,
+    expected_labels,
+    source_artifact,
+):
+    assert payload["schema"] == expected_schema
+    assert payload["status"] == expected_status
+    assert payload["parameters"]["determinant_bound"] == 5000
+    assert payload["parameters"]["minimum_mw_rank"] == 12
+    assert {row["ambient_label"] for row in payload["backends"]} == set(
+        expected_labels
+    )
+    imported_orbits = 0
+    for backend in payload["backends"]:
+        backend_id = backend["backend_id"]
+        label = backend["ambient_label"]
+        assert backend_id == f"ROOTED-{label}"
+        residual_order = backend["residual_group"]["order"]
+        scope = (
+            "complete_only_in_declared_coordinate_summands_of_pinned_LLL_"
+            "fixed_lattice_bases_for_every_nonidentity_residual_matrix_"
+            "conjugacy_class_of_fixed_rank_at_least_7_closed_under_exact_"
+            f"order_{residual_order}_residual_group"
+        )
+        for source_surface in backend["surfaces_T_NS_first"]:
+            surface = find_or_add_surface(
+                surfaces, source_surface["surface_key"]
+            )
+            partner_index_by_id = {}
+            for partner in source_surface["partner_auxiliaries"]:
+                auxiliary = matrix(ZZ, partner["gram"])
+                provenance = {
+                    "backend_id": backend_id,
+                    "source_artifact": source_artifact,
+                    "source_surface_id": source_surface["surface_id"],
+                    "source_partner_id": partner["partner_id"],
+                    "residual_group_orbit_ids": partner[
+                        "residual_group_orbit_ids"
+                    ],
+                    "scope": scope,
+                    "representative_auxiliary_basis_in_ambient": partner[
+                        "representative_auxiliary_basis_in_ambient"
+                    ],
+                }
+                partner_index_by_id[partner["partner_id"]] = add_partner(
+                    surface, auxiliary, provenance
+                )
+            for source_frame in source_surface["frames"]:
+                frame = matrix(ZZ, source_frame["gram"])
+                root_data = source_frame["root_data"]
+                metadata = {
+                    "root_type": root_data["root_type"],
+                    "root_rank": root_data["root_rank"],
+                    "mw_rank_for_rho_19": root_data[
+                        "mw_rank_for_rho_19"
+                    ],
+                    "signed_root_count": root_data["signed_root_count"],
+                    "root_determinant": root_data["root_determinant"],
+                    "determinant_predicted_mw_regulator": str(
+                        QQ(frame.det()) / root_data["root_determinant"]
+                    ),
+                }
+                if source_frame["rootless_intrinsics"] is not None:
+                    metadata["rootless_intrinsics"] = source_frame[
+                        "rootless_intrinsics"
+                    ]
+                provenance = {
+                    "backend_id": backend_id,
+                    "source_artifact": source_artifact,
+                    "source_surface_id": source_surface["surface_id"],
+                    "source_frame_id": source_frame["frame_id"],
+                    "residual_group_orbit_ids": source_frame[
+                        "residual_group_orbit_ids"
+                    ],
+                    "representative_complement_basis_in_ambient": source_frame[
+                        "representative_complement_basis_in_ambient"
+                    ],
+                    "literal_residual_stabilizer": source_frame[
+                        "representative_literal_residual_stabilizer"
+                    ],
+                    "scope": scope,
+                }
+                partner_indices = sorted(
+                    {
+                        partner_index_by_id[value]
+                        for value in source_frame["partner_ids"]
+                    }
+                )
+                assert partner_indices
+                frame_index = add_frame(
+                    surface,
+                    frame,
+                    metadata,
+                    provenance,
+                    partner_indices[0],
+                    certified_distinct_batch=source_surface["surface_id"],
+                )
+                for partner_index in partner_indices[1:]:
+                    if partner_index not in surface["frames"][frame_index][
+                        "partner_auxiliary_indices"
+                    ]:
+                        surface["frames"][frame_index][
+                            "partner_auxiliary_indices"
+                        ].append(partner_index)
+                imported_orbits += len(
+                    source_frame["residual_group_orbit_ids"]
+                )
+    assert imported_orbits == payload["accounting"][
+        "k3_compatible_residual_group_embedding_orbits"
+    ]
+    return imported_orbits
+
+
 def finalize_surfaces(surfaces):
     surfaces.sort(key=lambda item: (item["determinant"], item["surface_id"]))
     seen_ids = set()
@@ -564,6 +904,14 @@ def backend_registry(
     two_c_fixed_seed,
     four_d6_swap_fixed_seed,
     six_a4_double_swap_fixed_seed,
+    four_a5_d4_order4_fixed_seed,
+    four_a6_four_e6_fixed_shells,
+    eight_a3_fixed_shells,
+    six_d4_fixed_shells,
+    three_d8_fixed_shells,
+    two_a9_d6_fixed_shells,
+    three_a8_fixed_shells,
+    twelve_a2_fixed_shells,
     leech_foundation,
     surfaces,
 ):
@@ -694,6 +1042,104 @@ def backend_registry(
     assert six_a4_double_swap_fixed_seed["accounting"][
         "surface_classes_after_T_NS_first_dedup"
     ] == 42
+    assert four_a5_d4_order4_fixed_seed["schema"] == (
+        "elkies-k3.4a5-d4-order4-fixed-high-mw-seed.v1"
+    )
+    assert four_a5_d4_order4_fixed_seed["status"] == (
+        "PASS_EXACT_DECLARED_4A5_D4_ORDER4_FIXED_HIGH_MW_SEED_SHELL_T_NS_FIRST"
+    )
+    assert four_a5_d4_order4_fixed_seed["residual_group"]["order"] == 48
+    assert four_a5_d4_order4_fixed_seed["accounting"][
+        "surface_classes_after_T_NS_first_dedup"
+    ] == 9
+    assert four_a6_four_e6_fixed_shells["schema"] == (
+        "elkies-k3.4a6-4e6-fixed-coordinate-shells.v1"
+    )
+    assert four_a6_four_e6_fixed_shells["status"] == (
+        "PASS_EXACT_DECLARED_FIXED_COORDINATE_SHELLS_T_NS_FIRST"
+    )
+    a6_e6_by_label = {
+        row["ambient_label"]: row
+        for row in four_a6_four_e6_fixed_shells["backends"]
+    }
+    assert a6_e6_by_label["4A6"]["accounting"][
+        "surface_classes_after_T_NS_first_dedup"
+    ] == 9
+    assert a6_e6_by_label["4E6"]["accounting"][
+        "surface_classes_after_T_NS_first_dedup"
+    ] == 1
+    assert eight_a3_fixed_shells["schema"] == (
+        "elkies-k3.8a3-fixed-coordinate-shells.v1"
+    )
+    assert eight_a3_fixed_shells["status"] == (
+        "PASS_EXACT_DECLARED_8A3_FIXED_COORDINATE_SHELLS_T_NS_FIRST"
+    )
+    eight_a3_backend = eight_a3_fixed_shells["backends"][0]
+    assert eight_a3_backend["ambient_label"] == "8A3"
+    assert eight_a3_backend["residual_group"]["order"] == 2688
+    assert eight_a3_backend["accounting"][
+        "surface_classes_after_T_NS_first_dedup"
+    ] == 435
+    assert six_d4_fixed_shells["schema"] == (
+        "elkies-k3.6d4-fixed-coordinate-shells.v1"
+    )
+    assert six_d4_fixed_shells["status"] == (
+        "PASS_EXACT_DECLARED_6D4_FIXED_COORDINATE_SHELLS_T_NS_FIRST"
+    )
+    six_d4_backend = six_d4_fixed_shells["backends"][0]
+    assert six_d4_backend["ambient_label"] == "6D4"
+    assert six_d4_backend["residual_group"]["order"] == 2160
+    assert six_d4_backend["accounting"][
+        "surface_classes_after_T_NS_first_dedup"
+    ] == 218
+    assert three_d8_fixed_shells["schema"] == (
+        "elkies-k3.3d8-fixed-coordinate-shells.v1"
+    )
+    assert three_d8_fixed_shells["status"] == (
+        "PASS_EXACT_DECLARED_3D8_FIXED_COORDINATE_SHELLS_T_NS_FIRST"
+    )
+    three_d8_backend = three_d8_fixed_shells["backends"][0]
+    assert three_d8_backend["ambient_label"] == "3D8"
+    assert three_d8_backend["residual_group"]["order"] == 6
+    assert three_d8_backend["accounting"][
+        "surface_classes_after_T_NS_first_dedup"
+    ] == 7
+    assert two_a9_d6_fixed_shells["schema"] == (
+        "elkies-k3.2a9-d6-fixed-coordinate-shells.v1"
+    )
+    assert two_a9_d6_fixed_shells["status"] == (
+        "PASS_EXACT_DECLARED_2A9_D6_FIXED_COORDINATE_SHELLS_T_NS_FIRST"
+    )
+    two_a9_d6_backend = two_a9_d6_fixed_shells["backends"][0]
+    assert two_a9_d6_backend["ambient_label"] == "2A9_D6"
+    assert two_a9_d6_backend["residual_group"]["order"] == 4
+    assert two_a9_d6_backend["accounting"][
+        "surface_classes_after_T_NS_first_dedup"
+    ] == 5
+    assert three_a8_fixed_shells["schema"] == (
+        "elkies-k3.3a8-fixed-coordinate-shells.v1"
+    )
+    assert three_a8_fixed_shells["status"] == (
+        "PASS_EXACT_DECLARED_3A8_FIXED_COORDINATE_SHELLS_T_NS_FIRST"
+    )
+    three_a8_backend = three_a8_fixed_shells["backends"][0]
+    assert three_a8_backend["ambient_label"] == "3A8"
+    assert three_a8_backend["residual_group"]["order"] == 12
+    assert three_a8_backend["accounting"][
+        "surface_classes_after_T_NS_first_dedup"
+    ] == 25
+    assert twelve_a2_fixed_shells["schema"] == (
+        "elkies-k3.12a2-fixed-coordinate-shells.v1"
+    )
+    assert twelve_a2_fixed_shells["status"] == (
+        "PASS_EXACT_DECLARED_12A2_FIXED_COORDINATE_SHELLS_T_NS_FIRST"
+    )
+    twelve_a2_backend = twelve_a2_fixed_shells["backends"][0]
+    assert twelve_a2_backend["ambient_label"] == "12A2"
+    assert twelve_a2_backend["residual_group"]["order"] == 190080
+    assert twelve_a2_backend["accounting"][
+        "surface_classes_after_T_NS_first_dedup"
+    ] == 99
     priority_by_backend = {
         row["backend_id"]: row for row in mod2_priority["backends"]
     }
@@ -717,10 +1163,110 @@ def backend_registry(
                 "W(4D6) semidirect G^X; an exact lifted S4 section is "
                 "used in the declared negative shell"
             )
+        elif row["label"] == "4A5_D4":
+            state = "PARTIAL_IMPORTED_ORDER4_FIXED_HIGH_MW_SEED_SHELL"
+            group = (
+                "W(4A5+D4) semidirect G^X; the complete 48-element "
+                "chamber-preserving residual group is exact in the imported shell"
+            )
+        elif row["label"] in ("4A6", "4E6"):
+            source_backend = a6_e6_by_label[row["label"]]
+            state = "PARTIAL_IMPORTED_ALL_RESIDUAL_CLASS_FIXED_COORDINATE_SHELLS"
+            group = (
+                f"W({row['label']}) semidirect G^X; the complete "
+                f"{source_backend['residual_group']['order']}-element "
+                "chamber-preserving residual group is exact in the imported shells"
+            )
+        elif row["label"] == "8A3":
+            state = "PARTIAL_IMPORTED_ALL_RESIDUAL_CLASS_FIXED_COORDINATE_SHELLS"
+            group = (
+                "W(8A3) semidirect G^X; the complete 2688-element "
+                "glue-code residual group is exact in the imported shells"
+            )
+        elif row["label"] == "6D4":
+            state = "PARTIAL_IMPORTED_ALL_RESIDUAL_CLASS_FIXED_COORDINATE_SHELLS"
+            group = (
+                "W(6D4) semidirect G^X; the complete 2160-element "
+                "hexacode triality residual group is exact in the imported shells"
+            )
+        elif row["label"] == "3D8":
+            state = "PARTIAL_IMPORTED_ALL_RESIDUAL_CLASS_FIXED_COORDINATE_SHELLS"
+            group = (
+                "W(3D8) semidirect G^X; the complete 6-element "
+                "glue-preserving residual S3 is exact in the imported shells"
+            )
+        elif row["label"] == "2A9_D6":
+            state = "PARTIAL_IMPORTED_ALL_RESIDUAL_CLASS_FIXED_COORDINATE_SHELLS"
+            group = (
+                "W(2A9+D6) semidirect G^X; the complete cyclic order-four "
+                "glue-preserving residual group is exact in the imported shells"
+            )
+        elif row["label"] == "3A8":
+            state = "PARTIAL_IMPORTED_ALL_RESIDUAL_CLASS_FIXED_COORDINATE_SHELLS"
+            group = (
+                "W(3A8) semidirect G^X; the complete order-twelve "
+                "glue-preserving residual group {+/-1} times S3 is exact in "
+                "the imported shells"
+            )
+        elif row["label"] == "12A2":
+            state = "PARTIAL_IMPORTED_ALL_RESIDUAL_CLASS_FIXED_COORDINATE_SHELLS"
+            group = (
+                "W(12A2) semidirect G^X; the complete order-190080 "
+                "ternary Golay monomial residual group 2.M12 is exact in "
+                "the imported shells"
+            )
+        elif row["label"] == "3E8":
+            state = "PARTIAL_EXACT_ALL_RESIDUAL_CLASS_FIXED_COORDINATE_NEGATIVE_SHELL"
+            group = (
+                "W(3E8) semidirect G^X; the complete 6-element residual S3 "
+                "is exact in the declared negative coordinate shell"
+            )
+        elif row["label"] == "2D12":
+            state = "PARTIAL_EXACT_ALL_RESIDUAL_CLASS_FIXED_COORDINATE_NEGATIVE_SHELL"
+            group = (
+                "W(2D12) semidirect G^X; the complete 2-element residual S2 "
+                "is exact in the declared negative coordinate shell"
+            )
+        elif row["label"] == "D10_2E7":
+            state = "PARTIAL_EXACT_ALL_RESIDUAL_CLASS_FIXED_COORDINATE_NEGATIVE_SHELL"
+            group = (
+                "W(D10+2E7) semidirect G^X; the complete order-two coupled "
+                "D10-diagram/E7-swap residual group is exact in the declared "
+                "negative coordinate shell"
+            )
+        elif row["label"] == "2A12":
+            state = "PARTIAL_EXACT_ALL_ELIGIBLE_RESIDUAL_CLASS_FIXED_COORDINATE_NEGATIVE_SHELL"
+            group = (
+                "W(2A12) semidirect G^X; the complete cyclic order-four "
+                "residual group is exact and its sole eligible fixed-coordinate "
+                "shell is negative"
+            )
+        elif row["label"] in (
+            "D24",
+            "D16_E8",
+            "A24",
+            "A17_E7",
+            "A15_D9",
+            "A11_D7_E6",
+        ):
+            eta_control = mod2_priority["exact_eta_only_controls"][row["label"]]
+            if eta_control["residual_group_order"] == 1:
+                state = "EXACT_TRIVIAL_RESIDUAL_GROUP_AUXILIARY_ENUMERATION_OPEN"
+                group = (
+                    f"W({row['label']}); the exhaustive chamber lift test proves "
+                    "that G^X is trivial"
+                )
+            else:
+                state = "PARTIAL_EXACT_ETA_FIXED_COORDINATE_NEGATIVE_SHELL"
+                group = (
+                    f"W({row['label']}) semidirect C2; the complete eta residual "
+                    "involution and its declared negative coordinate shell are exact"
+                )
         elif row["label"] == "24A1":
+            assert frontier_stop == 10547
             state = (
-                "PARTIAL_POSITIVE_OCTAD_FULL_WEYL_M24_"
-                f"{frontier_stop}_OF_10547"
+                "PARTIAL_COMPLETE_POSITIVE_SEVEN_OCTAD_"
+                "SUBFAMILY_FULL_WEYL_M24"
             )
             group = "2^24 root sign changes semidirect M24, with Golay/M24 support canonicalization required"
         else:
@@ -929,6 +1475,245 @@ def backend_registry(
                     "rank-seven sublattices of Fix(g) or N(6A4)"
                 ),
             }
+        if row["label"] == "4A5_D4":
+            backend["exact_order4_fixed_high_mw_seed_shell"] = {
+                "status": four_a5_d4_order4_fixed_seed["status"],
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-4a5-d4-order4-fixed-high-mw-seed-v1.json"
+                ),
+                "coordinate_subsets_tested": four_a5_d4_order4_fixed_seed[
+                    "accounting"
+                ]["coordinate_subsets_tested"],
+                "residual_group_order": four_a5_d4_order4_fixed_seed[
+                    "residual_group"
+                ]["order"],
+                "residual_group_embedding_orbits": (
+                    four_a5_d4_order4_fixed_seed["accounting"][
+                        "residual_group_embedding_orbits"
+                    ]
+                ),
+                "surface_classes_after_T_NS_first_dedup": (
+                    four_a5_d4_order4_fixed_seed["accounting"][
+                        "surface_classes_after_T_NS_first_dedup"
+                    ]
+                ),
+                "partner_auxiliary_isometry_classes": (
+                    four_a5_d4_order4_fixed_seed["accounting"][
+                        "partner_auxiliary_isometry_classes_after_surface_dedup"
+                    ]
+                ),
+                "frame_isometry_classes": four_a5_d4_order4_fixed_seed[
+                    "accounting"
+                ]["frame_isometry_classes_after_surface_dedup"],
+                "mw_rank_distribution": four_a5_d4_order4_fixed_seed[
+                    "accounting"
+                ]["orbit_mw_rank_distribution"],
+                "selected_stabilizer_class": four_a5_d4_order4_fixed_seed[
+                    "parameters"
+                ]["selected_class"],
+                "all_selected_actions_nontrivial_mod_2": True,
+                "canonicalization": (
+                    "exact under all 48 chamber-preserving residual "
+                    "component/diagram automorphisms; full Weyl quotient open"
+                ),
+                "completeness_scope": (
+                    "all 7-of-10 coordinate direct summands of one pinned LLL "
+                    "basis of the selected order-four fixed lattice; not all "
+                    "rank-seven sublattices of Fix(g) or N(4A5+D4)"
+                ),
+            }
+        if row["label"] in (
+            "2A9_D6",
+            "3A8",
+            "3D8",
+            "4A6",
+            "4E6",
+            "6D4",
+            "8A3",
+            "12A2",
+        ):
+            source_backends = {
+                "2A9_D6": two_a9_d6_backend,
+                "3A8": three_a8_backend,
+                "12A2": twelve_a2_backend,
+                "3D8": three_d8_backend,
+                "4A6": a6_e6_by_label["4A6"],
+                "4E6": a6_e6_by_label["4E6"],
+                "6D4": six_d4_backend,
+                "8A3": eight_a3_backend,
+            }
+            source_payloads = {
+                "2A9_D6": two_a9_d6_fixed_shells,
+                "3A8": three_a8_fixed_shells,
+                "12A2": twelve_a2_fixed_shells,
+                "3D8": three_d8_fixed_shells,
+                "4A6": four_a6_four_e6_fixed_shells,
+                "4E6": four_a6_four_e6_fixed_shells,
+                "6D4": six_d4_fixed_shells,
+                "8A3": eight_a3_fixed_shells,
+            }
+            source_artifacts = {
+                "2A9_D6": "elkies-k3-2a9-d6-fixed-coordinate-shells-v1.json",
+                "3A8": "elkies-k3-3a8-fixed-coordinate-shells-v1.json",
+                "12A2": "elkies-k3-12a2-fixed-coordinate-shells-v1.json",
+                "3D8": "elkies-k3-3d8-fixed-coordinate-shells-v1.json",
+                "4A6": "elkies-k3-4a6-4e6-fixed-coordinate-shells-v1.json",
+                "4E6": "elkies-k3-4a6-4e6-fixed-coordinate-shells-v1.json",
+                "6D4": "elkies-k3-6d4-fixed-coordinate-shells-v1.json",
+                "8A3": "elkies-k3-8a3-fixed-coordinate-shells-v1.json",
+            }
+            source_backend = source_backends[row["label"]]
+            backend["exact_all_residual_class_fixed_coordinate_shells"] = {
+                "status": source_payloads[row["label"]]["status"],
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    + source_artifacts[row["label"]]
+                ),
+                "residual_group_order": source_backend["residual_group"][
+                    "order"
+                ],
+                "component_permutation_image_order": source_backend[
+                    "residual_group"
+                ].get(
+                    "component_permutation_image_order",
+                    source_backend["residual_group"].get(
+                        "a9_component_permutation_image_order"
+                    ),
+                ),
+                "coordinate_subsets_tested": source_backend[
+                    "source_probe_accounting"
+                ]["coordinate_subsets_tested"],
+                "residual_group_embedding_orbits": source_backend[
+                    "accounting"
+                ]["residual_group_embedding_orbits"],
+                "surface_classes_after_T_NS_first_dedup": source_backend[
+                    "accounting"
+                ]["surface_classes_after_T_NS_first_dedup"],
+                "partner_auxiliary_isometry_classes": source_backend[
+                    "accounting"
+                ]["partner_auxiliary_isometry_classes_after_surface_dedup"],
+                "frame_isometry_classes": source_backend["accounting"][
+                    "frame_isometry_classes_after_surface_dedup"
+                ],
+                "mw_rank_distribution": source_backend["accounting"][
+                    "orbit_mw_rank_distribution"
+                ],
+                "nontrivial_mod2_stabilizer_class_coverage": source_backend[
+                    "accounting"
+                ]["nontrivial_mod2_stabilizer_class_coverage"],
+                "canonicalization": (
+                    "exact under the complete chamber-preserving residual "
+                    "group; full Weyl quotient open"
+                ),
+                "completeness_scope": (
+                    "all coordinate rank-seven summands of one pinned LLL "
+                    "basis for every nonidentity residual matrix conjugacy "
+                    "class of fixed rank at least seven; not all primitive "
+                    "fixed-lattice or ambient auxiliaries"
+                ),
+            }
+        if row["label"] == "3E8":
+            backend["exact_all_residual_class_fixed_coordinate_negative_shell"] = {
+                "status": (
+                    "PASS_EXACT_PRE_RESIDUAL_QUOTIENT_3E8_COORDINATE_SHELL_SCAN"
+                ),
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-3e8-fixed-coordinate-shell-probe-v1.json"
+                ),
+                **mod2_priority["exact_3E8_control"],
+                "canonicalization": "vacuous because no seed passes the pre-quotient gates",
+                "completeness_scope": (
+                    "all 7-of-fixed-rank coordinate summands in both nonidentity "
+                    "residual-class pinned LLL bases; not all primitive invariant "
+                    "rank-seven sublattices or full Weyl embedding orbits"
+                ),
+            }
+        if row["label"] == "2D12":
+            backend["exact_all_residual_class_fixed_coordinate_negative_shell"] = {
+                "status": (
+                    "PASS_EXACT_PRE_RESIDUAL_QUOTIENT_2D12_COORDINATE_SHELL_SCAN"
+                ),
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-2d12-fixed-coordinate-shell-probe-v1.json"
+                ),
+                **mod2_priority["exact_2D12_control"],
+                "canonicalization": "vacuous because no seed passes the pre-quotient gates",
+                "completeness_scope": (
+                    "all 7-of-12 coordinate summands in the component-swap "
+                    "fixed-lattice pinned LLL basis; not all primitive invariant "
+                    "rank-seven sublattices or full Weyl embedding orbits"
+                ),
+            }
+        if row["label"] == "D10_2E7":
+            backend["exact_all_residual_class_fixed_coordinate_negative_shell"] = {
+                "status": (
+                    "PASS_EXACT_PRE_RESIDUAL_QUOTIENT_D10_2E7_COORDINATE_SHELL_SCAN"
+                ),
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-d10-2e7-fixed-coordinate-shell-probe-v1.json"
+                ),
+                **mod2_priority["exact_D10_2E7_control"],
+                "canonicalization": "vacuous because no seed passes the pre-quotient gates",
+                "completeness_scope": (
+                    "all 7-of-16 coordinate summands in the coupled-residual-"
+                    "involution fixed-lattice pinned LLL basis; not all primitive "
+                    "invariant rank-seven sublattices or full Weyl embedding orbits"
+                ),
+            }
+        if row["label"] == "2A12":
+            backend["exact_all_eligible_residual_class_fixed_coordinate_negative_shell"] = {
+                "status": (
+                    "PASS_EXACT_PRE_RESIDUAL_QUOTIENT_2A12_COORDINATE_SHELL_SCAN"
+                ),
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-2a12-fixed-coordinate-shell-probe-v1.json"
+                ),
+                **mod2_priority["exact_2A12_control"],
+                "canonicalization": "vacuous because no seed passes the pre-quotient gates",
+                "completeness_scope": (
+                    "all 7-of-12 coordinate summands for the sole nonidentity "
+                    "residual class of fixed rank at least seven; not all "
+                    "primitive invariant rank-seven sublattices or full Weyl orbits"
+                ),
+            }
+        if row["label"] in mod2_priority["exact_eta_only_controls"]:
+            eta_control = mod2_priority["exact_eta_only_controls"][row["label"]]
+            backend["exact_eta_residual_group"] = {
+                "status": "PASS_EXACT_ETA_ONLY_SIX_NIEMEIER_RESIDUAL_GROUPS",
+                "source_artifact": (
+                    "artifacts/generated-results/"
+                    "elkies-k3-eta-only-niemeier-residual-groups-v1.json"
+                ),
+                **eta_control,
+                "completeness_scope": (
+                    "every product of irreducible-component Dynkin-diagram "
+                    "automorphisms is tested for an integral ambient lift"
+                ),
+            }
+            if eta_control["residual_group_order"] > 1:
+                backend["exact_eta_fixed_coordinate_negative_shell"] = {
+                    "status": (
+                        "PASS_EXACT_PRE_RESIDUAL_QUOTIENT_ETA_ONLY_"
+                        "COORDINATE_SHELL_SCAN"
+                    ),
+                    "source_artifact": (
+                        "artifacts/generated-results/"
+                        "elkies-k3-eta-only-niemeier-fixed-coordinate-shell-probe-v1.json"
+                    ),
+                    "canonicalization": (
+                        "vacuous because no seed passes the pre-quotient gates"
+                    ),
+                    "completeness_scope": (
+                        "all rank-seven coordinate summands of one pinned LLL "
+                        "basis for the sole nonidentity eta class; not all "
+                        "primitive invariant or ambient rank-seven sublattices"
+                    ),
+                }
         rooted.append(backend)
     assert leech_foundation["schema"] == "elkies-k3.leech-co0-backend.v1"
     assert leech_foundation["status"] == (
@@ -968,6 +1753,14 @@ def build_payload(
     two_c_fixed_seed,
     four_d6_swap_fixed_seed,
     six_a4_double_swap_fixed_seed,
+    four_a5_d4_order4_fixed_seed,
+    four_a6_four_e6_fixed_shells,
+    eight_a3_fixed_shells,
+    six_d4_fixed_shells,
+    three_d8_fixed_shells,
+    two_a9_d6_fixed_shells,
+    three_a8_fixed_shells,
+    twelve_a2_fixed_shells,
     leech_foundation,
 ):
     frontier_stop = octad_completion_manifest["parameters"][
@@ -976,11 +1769,73 @@ def build_payload(
     surfaces = []
     imported_foundry_embeddings = import_foundry(foundry, surfaces)
     imported_golay_embeddings = import_golay(golay, surfaces)
+    imported_24a1_positive_octad_full_orbits = (
+        import_24a1_positive_octad_full_orbits(octad_weyl_m24, surfaces)
+    )
     imported_2c_section_orbits = import_2c_fixed_seed(
         two_c_fixed_seed, surfaces
     )
     imported_6a4_residual_orbits = import_6a4_double_swap_fixed_seed(
         six_a4_double_swap_fixed_seed, surfaces
+    )
+    imported_4a5_d4_residual_orbits = import_4a5_d4_order4_fixed_seed(
+        four_a5_d4_order4_fixed_seed, surfaces
+    )
+    imported_4a6_4e6_residual_orbits = import_all_residual_fixed_shells(
+        four_a6_four_e6_fixed_shells,
+        surfaces,
+        "elkies-k3.4a6-4e6-fixed-coordinate-shells.v1",
+        "PASS_EXACT_DECLARED_FIXED_COORDINATE_SHELLS_T_NS_FIRST",
+        ("4A6", "4E6"),
+        "artifacts/generated-results/elkies-k3-4a6-4e6-fixed-coordinate-shells-v1.json",
+    )
+    imported_8a3_residual_orbits = import_all_residual_fixed_shells(
+        eight_a3_fixed_shells,
+        surfaces,
+        "elkies-k3.8a3-fixed-coordinate-shells.v1",
+        "PASS_EXACT_DECLARED_8A3_FIXED_COORDINATE_SHELLS_T_NS_FIRST",
+        ("8A3",),
+        "artifacts/generated-results/elkies-k3-8a3-fixed-coordinate-shells-v1.json",
+    )
+    imported_6d4_residual_orbits = import_all_residual_fixed_shells(
+        six_d4_fixed_shells,
+        surfaces,
+        "elkies-k3.6d4-fixed-coordinate-shells.v1",
+        "PASS_EXACT_DECLARED_6D4_FIXED_COORDINATE_SHELLS_T_NS_FIRST",
+        ("6D4",),
+        "artifacts/generated-results/elkies-k3-6d4-fixed-coordinate-shells-v1.json",
+    )
+    imported_3d8_residual_orbits = import_all_residual_fixed_shells(
+        three_d8_fixed_shells,
+        surfaces,
+        "elkies-k3.3d8-fixed-coordinate-shells.v1",
+        "PASS_EXACT_DECLARED_3D8_FIXED_COORDINATE_SHELLS_T_NS_FIRST",
+        ("3D8",),
+        "artifacts/generated-results/elkies-k3-3d8-fixed-coordinate-shells-v1.json",
+    )
+    imported_2a9_d6_residual_orbits = import_all_residual_fixed_shells(
+        two_a9_d6_fixed_shells,
+        surfaces,
+        "elkies-k3.2a9-d6-fixed-coordinate-shells.v1",
+        "PASS_EXACT_DECLARED_2A9_D6_FIXED_COORDINATE_SHELLS_T_NS_FIRST",
+        ("2A9_D6",),
+        "artifacts/generated-results/elkies-k3-2a9-d6-fixed-coordinate-shells-v1.json",
+    )
+    imported_3a8_residual_orbits = import_all_residual_fixed_shells(
+        three_a8_fixed_shells,
+        surfaces,
+        "elkies-k3.3a8-fixed-coordinate-shells.v1",
+        "PASS_EXACT_DECLARED_3A8_FIXED_COORDINATE_SHELLS_T_NS_FIRST",
+        ("3A8",),
+        "artifacts/generated-results/elkies-k3-3a8-fixed-coordinate-shells-v1.json",
+    )
+    imported_12a2_residual_orbits = import_all_residual_fixed_shells(
+        twelve_a2_fixed_shells,
+        surfaces,
+        "elkies-k3.12a2-fixed-coordinate-shells.v1",
+        "PASS_EXACT_DECLARED_12A2_FIXED_COORDINATE_SHELLS_T_NS_FIRST",
+        ("12A2",),
+        "artifacts/generated-results/elkies-k3-12a2-fixed-coordinate-shells-v1.json",
     )
     finalize_surfaces(surfaces)
     rooted, leech = backend_registry(
@@ -994,6 +1849,14 @@ def build_payload(
         two_c_fixed_seed,
         four_d6_swap_fixed_seed,
         six_a4_double_swap_fixed_seed,
+        four_a5_d4_order4_fixed_seed,
+        four_a6_four_e6_fixed_shells,
+        eight_a3_fixed_shells,
+        six_d4_fixed_shells,
+        three_d8_fixed_shells,
+        two_a9_d6_fixed_shells,
+        three_a8_fixed_shells,
+        twelve_a2_fixed_shells,
         leech_foundation,
         surfaces,
     )
@@ -1001,17 +1864,18 @@ def build_payload(
     frame_rows = [frame for surface in surfaces for frame in surface["frames"]]
     mw_distribution = Counter(frame["mw_rank_for_rho_19"] for frame in frame_rows)
     band_distribution = Counter(surface["determinant_band"] for surface in surfaces)
-    assert len(surfaces) == 161
-    assert sum(len(surface["partner_auxiliaries"]) for surface in surfaces) == 180
-    assert len(frame_rows) == 724
+    assert len(surfaces) == 827
+    assert sum(len(surface["partner_auxiliaries"]) for surface in surfaces) == 1074
+    assert len(frame_rows) == 1840
     assert mw_distribution == Counter(
-        {17: 139, 16: 261, 15: 113, 14: 1, 13: 190, 12: 20}
+        {12: 454, 13: 719, 14: 94, 15: 141, 16: 261, 17: 171}
     )
     assert band_distribution == Counter(
         {
-            "D0501-1000": 19,
-            "D1001-2000": 61,
-            "D2001-5000": 81,
+            "D0001-0500": 71,
+            "D0501-1000": 280,
+            "D1001-2000": 300,
+            "D2001-5000": 176,
         }
     )
     cross_backend_6a4_surfaces = [
@@ -1028,15 +1892,303 @@ def build_payload(
                 provenance["backend_id"]
                 for frame in surface["frames"]
                 for provenance in frame["provenance"]
+                if provenance["backend_id"] != "ROOTED-12A2"
             }
         )
         > 1
     ]
-    assert [surface["surface_id"] for surface in cross_backend_6a4_surfaces] == [
+    assert {
         "K3-11919eb0b07e0580",
         "K3-ce4de7dfd2f10738",
         "K3-513a666a3ed34e0a",
+    } <= {surface["surface_id"] for surface in cross_backend_6a4_surfaces}
+    assert len(cross_backend_6a4_surfaces) == 29
+    four_a5_d4_surfaces = [
+        surface
+        for surface in surfaces
+        if "ROOTED-4A5_D4"
+        in {
+            provenance["backend_id"]
+            for frame in surface["frames"]
+            for provenance in frame["provenance"]
+        }
     ]
+    assert len(four_a5_d4_surfaces) == 9
+    a6_e6_surfaces = [
+        surface
+        for surface in surfaces
+        if {
+            provenance["backend_id"]
+            for frame in surface["frames"]
+            for provenance in frame["provenance"]
+        }
+        & {"ROOTED-4A6", "ROOTED-4E6"}
+    ]
+    assert len(a6_e6_surfaces) == 10
+    eight_a3_surfaces = [
+        surface
+        for surface in surfaces
+        if "ROOTED-8A3"
+        in {
+            provenance["backend_id"]
+            for frame in surface["frames"]
+            for provenance in frame["provenance"]
+        }
+    ]
+    assert len(eight_a3_surfaces) == 435
+    eight_a3_backend_sets = Counter(
+        tuple(
+            sorted(
+                {
+                    provenance["backend_id"]
+                    for frame in surface["frames"]
+                    for provenance in frame["provenance"]
+                    if provenance["backend_id"] != "ROOTED-12A2"
+                }
+            )
+        )
+        for surface in eight_a3_surfaces
+    )
+    assert eight_a3_backend_sets == Counter(
+        {
+            ("ROOTED-8A3",): 372,
+            ("ROOTED-2A9_D6", "ROOTED-8A3"): 1,
+            ("ROOTED-2A7_2D5", "ROOTED-8A3"): 5,
+            ("ROOTED-3A8", "ROOTED-8A3"): 5,
+            ("ROOTED-6A4", "ROOTED-8A3"): 6,
+            ("ROOTED-6D4", "ROOTED-8A3"): 32,
+            ("ROOTED-2A7_2D5", "ROOTED-6A4", "ROOTED-8A3"): 1,
+            ("ROOTED-2A7_2D5", "ROOTED-6D4", "ROOTED-8A3"): 1,
+            ("ROOTED-3A8", "ROOTED-6A4", "ROOTED-8A3"): 5,
+            ("ROOTED-3A8", "ROOTED-6D4", "ROOTED-8A3"): 1,
+            ("ROOTED-6A4", "ROOTED-6D4", "ROOTED-8A3"): 5,
+            (
+                "ROOTED-3A8",
+                "ROOTED-6A4",
+                "ROOTED-6D4",
+                "ROOTED-8A3",
+            ): 1,
+        }
+    )
+    six_d4_surfaces = [
+        surface
+        for surface in surfaces
+        if "ROOTED-6D4"
+        in {
+            provenance["backend_id"]
+            for frame in surface["frames"]
+            for provenance in frame["provenance"]
+        }
+    ]
+    assert len(six_d4_surfaces) == 218
+    six_d4_backend_sets = Counter(
+        tuple(
+            sorted(
+                {
+                    provenance["backend_id"]
+                    for frame in surface["frames"]
+                    for provenance in frame["provenance"]
+                    if provenance["backend_id"] != "ROOTED-12A2"
+                }
+            )
+        )
+        for surface in six_d4_surfaces
+    )
+    assert six_d4_backend_sets == Counter(
+        {
+            ("ROOTED-6D4",): 168,
+            ("ROOTED-2A7_2D5", "ROOTED-6D4"): 7,
+            ("ROOTED-4A5_D4", "ROOTED-6D4"): 1,
+            ("ROOTED-4E6", "ROOTED-6D4"): 1,
+            ("ROOTED-6A4", "ROOTED-6D4"): 1,
+            ("ROOTED-6D4", "ROOTED-8A3"): 32,
+            ("ROOTED-2A7_2D5", "ROOTED-6D4", "ROOTED-8A3"): 1,
+            ("ROOTED-3A8", "ROOTED-6D4", "ROOTED-8A3"): 1,
+            ("ROOTED-6A4", "ROOTED-6D4", "ROOTED-8A3"): 5,
+            (
+                "ROOTED-3A8",
+                "ROOTED-6A4",
+                "ROOTED-6D4",
+                "ROOTED-8A3",
+            ): 1,
+        }
+    )
+    three_d8_surfaces = [
+        surface
+        for surface in surfaces
+        if "ROOTED-3D8"
+        in {
+            provenance["backend_id"]
+            for frame in surface["frames"]
+            for provenance in frame["provenance"]
+        }
+    ]
+    assert len(three_d8_surfaces) == 7
+    three_d8_backend_sets = Counter(
+        tuple(
+            sorted(
+                {
+                    provenance["backend_id"]
+                    for frame in surface["frames"]
+                    for provenance in frame["provenance"]
+                    if provenance["backend_id"] != "ROOTED-12A2"
+                }
+            )
+        )
+        for surface in three_d8_surfaces
+    )
+    assert three_d8_backend_sets == Counter(
+        {
+            ("ROOTED-3D8",): 6,
+            ("ROOTED-2A7_2D5", "ROOTED-3D8", "ROOTED-6A4"): 1,
+        }
+    )
+    two_a9_d6_surfaces = [
+        surface
+        for surface in surfaces
+        if "ROOTED-2A9_D6"
+        in {
+            provenance["backend_id"]
+            for frame in surface["frames"]
+            for provenance in frame["provenance"]
+        }
+    ]
+    assert len(two_a9_d6_surfaces) == 5
+    two_a9_d6_backend_sets = Counter(
+        tuple(
+            sorted(
+                {
+                    provenance["backend_id"]
+                    for frame in surface["frames"]
+                    for provenance in frame["provenance"]
+                    if provenance["backend_id"] != "ROOTED-12A2"
+                }
+            )
+        )
+        for surface in two_a9_d6_surfaces
+    )
+    assert two_a9_d6_backend_sets == Counter(
+        {
+            ("ROOTED-2A9_D6",): 4,
+            ("ROOTED-2A9_D6", "ROOTED-8A3"): 1,
+        }
+    )
+    three_a8_surfaces = [
+        surface
+        for surface in surfaces
+        if "ROOTED-3A8"
+        in {
+            provenance["backend_id"]
+            for frame in surface["frames"]
+            for provenance in frame["provenance"]
+        }
+    ]
+    assert len(three_a8_surfaces) == 25
+    three_a8_backend_sets = Counter(
+        tuple(
+            sorted(
+                {
+                    provenance["backend_id"]
+                    for frame in surface["frames"]
+                    for provenance in frame["provenance"]
+                    if provenance["backend_id"] != "ROOTED-12A2"
+                }
+            )
+        )
+        for surface in three_a8_surfaces
+    )
+    assert three_a8_backend_sets == Counter(
+        {
+            ("ROOTED-3A8",): 5,
+            ("ROOTED-3A8", "ROOTED-6A4"): 8,
+            ("ROOTED-3A8", "ROOTED-8A3"): 5,
+            ("ROOTED-3A8", "ROOTED-6A4", "ROOTED-8A3"): 5,
+            ("ROOTED-3A8", "ROOTED-6D4", "ROOTED-8A3"): 1,
+            (
+                "ROOTED-3A8",
+                "ROOTED-6A4",
+                "ROOTED-6D4",
+                "ROOTED-8A3",
+            ): 1,
+        }
+    )
+    twelve_a2_surfaces = [
+        surface
+        for surface in surfaces
+        if "ROOTED-12A2"
+        in {
+            provenance["backend_id"]
+            for frame in surface["frames"]
+            for provenance in frame["provenance"]
+        }
+    ]
+    assert len(twelve_a2_surfaces) == 99
+    twelve_a2_backend_sets = Counter(
+        tuple(
+            sorted(
+                {
+                    provenance["backend_id"]
+                    for frame in surface["frames"]
+                    for provenance in frame["provenance"]
+                }
+            )
+        )
+        for surface in twelve_a2_surfaces
+    )
+    assert twelve_a2_backend_sets == Counter(
+        {
+            ("ROOTED-12A2",): 51,
+            ("ROOTED-12A2", "ROOTED-24A1"): 1,
+            ("ROOTED-12A2", "ROOTED-2A7_2D5"): 2,
+            ("ROOTED-12A2", "ROOTED-3A8", "ROOTED-8A3"): 1,
+            ("ROOTED-12A2", "ROOTED-6A4"): 5,
+            ("ROOTED-12A2", "ROOTED-6D4"): 5,
+            ("ROOTED-12A2", "ROOTED-8A3"): 13,
+            ("ROOTED-12A2", "ROOTED-2A7_2D5", "ROOTED-6A4"): 1,
+            ("ROOTED-12A2", "ROOTED-2A7_2D5", "ROOTED-6D4"): 1,
+            ("ROOTED-12A2", "ROOTED-3A8", "ROOTED-6A4"): 1,
+            ("ROOTED-12A2", "ROOTED-6A4", "ROOTED-6D4"): 1,
+            ("ROOTED-12A2", "ROOTED-6D4", "ROOTED-8A3"): 6,
+            ("ROOTED-12A2", "ROOTED-6A4", "ROOTED-8A3"): 2,
+            (
+                "ROOTED-12A2",
+                "ROOTED-2A7_2D5",
+                "ROOTED-6A4",
+                "ROOTED-8A3",
+            ): 1,
+            (
+                "ROOTED-12A2",
+                "ROOTED-2A7_2D5",
+                "ROOTED-6D4",
+                "ROOTED-8A3",
+            ): 1,
+            (
+                "ROOTED-12A2",
+                "ROOTED-3A8",
+                "ROOTED-6A4",
+                "ROOTED-8A3",
+            ): 3,
+            (
+                "ROOTED-12A2",
+                "ROOTED-3A8",
+                "ROOTED-6D4",
+                "ROOTED-8A3",
+            ): 1,
+            (
+                "ROOTED-12A2",
+                "ROOTED-6A4",
+                "ROOTED-6D4",
+                "ROOTED-8A3",
+            ): 2,
+            (
+                "ROOTED-12A2",
+                "ROOTED-3A8",
+                "ROOTED-6A4",
+                "ROOTED-6D4",
+                "ROOTED-8A3",
+            ): 1,
+        }
+    )
     backend_shards = []
     for backend in rooted + [leech]:
         for band_id, lower, upper in BANDS:
@@ -1046,8 +2198,8 @@ def build_payload(
                     "backend_id": backend["backend_id"],
                     "determinant_band": [lower, upper],
                     "state": (
-                        "PARTIAL_POSITIVE_OCTAD_PREFIXES_"
-                        f"0_{frontier_stop}_FULL_WEYL_M24"
+                        "PARTIAL_COMPLETE_POSITIVE_SEVEN_OCTAD_"
+                        "SUBFAMILY_FULL_WEYL_M24"
                         if backend["backend_id"] == "ROOTED-24A1"
                         and band_id == "D0001-0500"
                         else "OPEN"
@@ -1079,10 +2231,22 @@ def build_payload(
                 "negative family, not a backend exclusion. The 6A4 double-swap shell "
                 "uses the full 240-element chamber residual group but still covers only "
                 "one pinned 7-of-16 fixed-lattice coordinate language, not the full Weyl "
-                "quotient or all primitive auxiliaries. The 24A1 completion shard covers "
-                f"only positive seven-octad generators for prefixes 0:{frontier_stop}; their "
-                "full Weyl-M24 quotient is exact, but the remaining prefixes and "
-                "signed/non-octad generator languages remain open. Surface IDs catalogue exact "
+                "quotient or all primitive auxiliaries. The 4A5+D4 order-four shell "
+                "uses its full 48-element chamber residual group but covers only one "
+                "pinned 7-of-10 fixed-lattice coordinate language. "
+                "The 2A9+D6, 3A8, 3D8, 4A6, 4E6, 6D4, 8A3, and 12A2 shells exhaust the coordinate summands of "
+                "pinned LLL bases for every eligible residual matrix conjugacy "
+                "class, but do not enumerate all primitive fixed-lattice "
+                "sublattices or apply the full Weyl quotient. The A24, A17+E7, "
+                "A15+D9, and A11+D7+E6 eta-fixed coordinate languages are exact "
+                "negative controls, while D24 and D16+E8 have trivial residual "
+                "groups; none of these facts closes their all-primitive auxiliary "
+                "enumeration. The 24A1 completion shards exhaust all 10,547 "
+                "five-octad prefix orbits in the positive seven-octad generator "
+                "language; their full Weyl-M24 quotient is exact, but signed/non-octad "
+                "generator languages remain open. The imported ternary genus "
+                "representatives are exact K3 examples, not an enumeration of every "
+                "class inside each indefinite ternary genus. Surface IDs catalogue exact "
                 "records, not an assertion that the determinant bands are closed."
             ),
         },
@@ -1130,14 +2294,79 @@ def build_payload(
             "imported_primitive_embedding_records": (
                 imported_foundry_embeddings
                 + imported_golay_embeddings
+                + imported_24a1_positive_octad_full_orbits
                 + imported_2c_section_orbits
                 + imported_6a4_residual_orbits
+                + imported_4a5_d4_residual_orbits
+                + imported_4a6_4e6_residual_orbits
+                + imported_8a3_residual_orbits
+                + imported_6d4_residual_orbits
+                + imported_3d8_residual_orbits
+                + imported_2a9_d6_residual_orbits
+                + imported_3a8_residual_orbits
+                + imported_12a2_residual_orbits
             ),
             "6A4_source_surface_classes_before_global_dedup": 42,
             "6A4_new_surface_classes_after_global_T_NS_dedup": 39,
-            "6A4_surface_classes_overlapping_prior_backends": len(
+            "6A4_surface_classes_overlapping_prior_backends": 3,
+            "6A4_surface_classes_in_any_current_cross_backend_overlap": len(
                 cross_backend_6a4_surfaces
             ),
+            "4A5_D4_source_surface_classes_before_global_dedup": 9,
+            "4A5_D4_new_surface_classes_after_global_T_NS_dedup": 9,
+            "4A5_D4_surface_classes_overlapping_prior_backends": 0,
+            "4A6_source_surface_classes_before_global_dedup": 9,
+            "4A6_new_surface_classes_after_global_T_NS_dedup": 9,
+            "4A6_surface_classes_overlapping_prior_backends": 0,
+            "4E6_source_surface_classes_before_global_dedup": 1,
+            "4E6_new_surface_classes_after_global_T_NS_dedup": 1,
+            "4E6_surface_classes_overlapping_prior_backends": 0,
+            "8A3_source_surface_classes_before_global_dedup": 435,
+            "8A3_new_surface_classes_after_global_T_NS_dedup": 411,
+            "8A3_surface_classes_overlapping_prior_backends": 24,
+            "8A3_surface_classes_overlapping_2A7_2D5": 7,
+            "8A3_surface_classes_overlapping_6A4": 18,
+            "6D4_source_surface_classes_before_global_dedup": 218,
+            "6D4_new_surface_classes_after_global_T_NS_dedup": 168,
+            "6D4_surface_classes_overlapping_prior_backends": 50,
+            "6D4_surface_classes_overlapping_8A3": 40,
+            "6D4_surface_classes_overlapping_2A7_2D5": 8,
+            "6D4_surface_classes_overlapping_6A4": 7,
+            "6D4_surface_classes_overlapping_4A5_D4": 1,
+            "6D4_surface_classes_overlapping_4E6": 1,
+            "6D4_partner_classes_added_after_global_dedup": 251,
+            "6D4_frame_classes_added_after_global_dedup": 285,
+            "3D8_source_surface_classes_before_global_dedup": 7,
+            "3D8_new_surface_classes_after_global_T_NS_dedup": 6,
+            "3D8_surface_classes_overlapping_prior_backends": 1,
+            "3D8_surface_classes_overlapping_2A7_2D5": 1,
+            "3D8_surface_classes_overlapping_6A4": 1,
+            "3D8_partner_classes_added_after_global_dedup": 7,
+            "3D8_frame_classes_added_after_global_dedup": 7,
+            "2A9_D6_source_surface_classes_before_global_dedup": 5,
+            "2A9_D6_new_surface_classes_after_global_T_NS_dedup": 4,
+            "2A9_D6_surface_classes_overlapping_prior_backends": 1,
+            "2A9_D6_surface_classes_overlapping_8A3": 1,
+            "2A9_D6_partner_classes_added_after_global_dedup": 5,
+            "2A9_D6_frame_classes_added_after_global_dedup": 5,
+            "3A8_source_surface_classes_before_global_dedup": 25,
+            "3A8_new_surface_classes_after_global_T_NS_dedup": 5,
+            "3A8_surface_classes_overlapping_prior_backends": 20,
+            "3A8_surface_classes_overlapping_6A4": 14,
+            "3A8_surface_classes_overlapping_8A3": 12,
+            "3A8_surface_classes_overlapping_6D4": 2,
+            "3A8_partner_classes_added_after_global_dedup": 12,
+            "3A8_frame_classes_added_after_global_dedup": 64,
+            "12A2_source_surface_classes_before_global_dedup": 99,
+            "12A2_new_surface_classes_after_global_T_NS_dedup": 52,
+            "12A2_surface_classes_overlapping_prior_backends": 47,
+            "12A2_surface_classes_overlapping_2A7_2D5": 6,
+            "12A2_surface_classes_overlapping_3A8": 7,
+            "12A2_surface_classes_overlapping_6A4": 17,
+            "12A2_surface_classes_overlapping_6D4": 18,
+            "12A2_surface_classes_overlapping_8A3": 31,
+            "12A2_partner_classes_added_after_global_dedup": 86,
+            "12A2_frame_classes_added_after_global_dedup": 143,
             "rooted_backends": len(rooted),
             "leech_backends": 1,
             "open_backend_band_shards": len(backend_shards),
@@ -1206,6 +2435,46 @@ parser.add_argument(
     type=Path,
     default=DEFAULT_6A4_DOUBLE_SWAP_FIXED_SEED,
 )
+parser.add_argument(
+    "--four-a5-d4-order4-fixed-seed",
+    type=Path,
+    default=DEFAULT_4A5_D4_ORDER4_FIXED_SEED,
+)
+parser.add_argument(
+    "--four-a6-four-e6-fixed-shells",
+    type=Path,
+    default=DEFAULT_4A6_4E6_FIXED_SHELLS,
+)
+parser.add_argument(
+    "--eight-a3-fixed-shells",
+    type=Path,
+    default=DEFAULT_8A3_FIXED_SHELLS,
+)
+parser.add_argument(
+    "--six-d4-fixed-shells",
+    type=Path,
+    default=DEFAULT_6D4_FIXED_SHELLS,
+)
+parser.add_argument(
+    "--three-d8-fixed-shells",
+    type=Path,
+    default=DEFAULT_3D8_FIXED_SHELLS,
+)
+parser.add_argument(
+    "--two-a9-d6-fixed-shells",
+    type=Path,
+    default=DEFAULT_2A9_D6_FIXED_SHELLS,
+)
+parser.add_argument(
+    "--three-a8-fixed-shells",
+    type=Path,
+    default=DEFAULT_3A8_FIXED_SHELLS,
+)
+parser.add_argument(
+    "--twelve-a2-fixed-shells",
+    type=Path,
+    default=DEFAULT_12A2_FIXED_SHELLS,
+)
 parser.add_argument("--leech", type=Path, default=DEFAULT_LEECH)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 parser.add_argument("--check", action="store_true")
@@ -1254,6 +2523,30 @@ four_d6_swap_fixed_seed_payload = json.loads(
 six_a4_double_swap_fixed_seed_payload = json.loads(
     arguments.six_a4_double_swap_fixed_seed.read_text()
 )
+four_a5_d4_order4_fixed_seed_payload = json.loads(
+    arguments.four_a5_d4_order4_fixed_seed.read_text()
+)
+four_a6_four_e6_fixed_shells_payload = json.loads(
+    arguments.four_a6_four_e6_fixed_shells.read_text()
+)
+eight_a3_fixed_shells_payload = json.loads(
+    arguments.eight_a3_fixed_shells.read_text()
+)
+six_d4_fixed_shells_payload = json.loads(
+    arguments.six_d4_fixed_shells.read_text()
+)
+three_d8_fixed_shells_payload = json.loads(
+    arguments.three_d8_fixed_shells.read_text()
+)
+two_a9_d6_fixed_shells_payload = json.loads(
+    arguments.two_a9_d6_fixed_shells.read_text()
+)
+three_a8_fixed_shells_payload = json.loads(
+    arguments.three_a8_fixed_shells.read_text()
+)
+twelve_a2_fixed_shells_payload = json.loads(
+    arguments.twelve_a2_fixed_shells.read_text()
+)
 leech_payload = json.loads(arguments.leech.read_text())
 payload = build_payload(
     foundry_payload,
@@ -1268,6 +2561,14 @@ payload = build_payload(
     two_c_fixed_seed_payload,
     four_d6_swap_fixed_seed_payload,
     six_a4_double_swap_fixed_seed_payload,
+    four_a5_d4_order4_fixed_seed_payload,
+    four_a6_four_e6_fixed_shells_payload,
+    eight_a3_fixed_shells_payload,
+    six_d4_fixed_shells_payload,
+    three_d8_fixed_shells_payload,
+    two_a9_d6_fixed_shells_payload,
+    three_a8_fixed_shells_payload,
+    twelve_a2_fixed_shells_payload,
     leech_payload,
 )
 encoded = json.dumps(payload, indent=2, sort_keys=True) + "\n"

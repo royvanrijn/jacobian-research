@@ -133,6 +133,31 @@ def symmetry_evidence(
                 }
             )
         for provenance in frame["provenance"]:
+            full_weyl_m24 = provenance.get("full_group_stabilizer")
+            if full_weyl_m24 is not None:
+                evidence.append(
+                    {
+                        "frame_id": frame["frame_id"],
+                        "full_weyl_m24_orbit_id": provenance[
+                            "full_weyl_m24_orbit_id"
+                        ],
+                        "status": "PASS_EXACT_FULL_WEYL_M24_STABILIZER",
+                        "ambient_stabilizer_order": int(
+                            full_weyl_m24["full_embedding_stabilizer_order"]
+                        ),
+                        "compatible_intrinsic_automorphisms": int(
+                            full_weyl_m24["compatible_intrinsic_automorphisms"]
+                        ),
+                        "ordered_partition_stabilizer_order_in_M24": int(
+                            full_weyl_m24[
+                                "ordered_partition_stabilizer_order_in_M24"
+                            ]
+                        ),
+                        "free_weyl_sign_factor": int(
+                            full_weyl_m24["free_weyl_sign_factor"]
+                        ),
+                    }
+                )
             stabilizer = provenance.get("literal_section_stabilizer")
             if stabilizer is None:
                 stabilizer = provenance.get("literal_residual_stabilizer")
@@ -144,7 +169,13 @@ def symmetry_evidence(
                     "source_frame_id": provenance.get("source_frame_id"),
                     "status": "PASS_EXACT_LITERAL_SECTION_STABILIZER_LOWER_BOUND",
                     "ambient_stabilizer_order_lower_bound": len(stabilizer),
-                    "classes": [row["class"] for row in stabilizer],
+                    "classes": [
+                        row.get(
+                            "class",
+                            row.get("residual_conjugacy_class_id"),
+                        )
+                        for row in stabilizer
+                    ],
                     "moved_dimensions_mod_2": [
                         row["moved_dimension_mod_2"] for row in stabilizer
                     ],
@@ -502,33 +533,69 @@ def build(
     ]
 
     assert len(records) == catalogue["accounting"]["surface_classes_by_T_NS"]
-    assert len(records) == 161
-    assert sum(
+    external_source_count = sum(
         row["easiest_known_source"]["source_kind"]
         == "external_rootful_source_inventory"
         for row in records
-    ) == 48
-    assert sum(
+    )
+    fallback_source_count = sum(
         row["easiest_known_source"]["source_kind"]
         == "easiest_currently_catalogued_frame"
         for row in records
-    ) == 113
-    assert len(multi_frame_surfaces) == 81
+    )
+    target_short_count = sum(
+        row["target_mw_short_vector_spectrum"]["status"]
+        == "PASS_EXACT_AVAILABLE_TARGET_SHORT_VECTOR_EVIDENCE"
+        for row in records
+    )
+    assert len(records) == 827
+    assert external_source_count == 48
+    assert fallback_source_count == 779
+    assert len(multi_frame_surfaces) == 278
     assert len(pole_records) == 39
     assert len(route_records) == 0
-    assert len(symmetry_records) == 117
+    assert len(symmetry_records) == 787
     assert len(multisection_records) == 9
-    assert len(core_layers) == 74
+    assert target_short_count == 66
+    assert len(core_layers) == 170
     assert core_layers[0] == [
         "K3-ebaf00b3723751ba",
         "K3-8188cdcda8c57b2d",
-        "K3-f43753fb154e3406",
+        "K3-04b86146cc6b284b",
+        "K3-8ac51f68b787ce02",
         "K3-14ad03cd7c1848b2",
+        "K3-b2de852aaed731d6",
+        "K3-6ce16abb9de3c7c5",
+        "K3-e70cc236e31b7170",
+        "K3-a9325e1542295e0f",
+        "K3-c4e34d1319a61b31",
+        "K3-be060aee9b10a819",
+        "K3-ea9158beda34935a",
+        "K3-b42a9aa79eed289c",
+        "K3-211c5672907d017a",
     ]
     assert len(pole_layers[0]) == 8
     assert symmetry_layers[0] == [
         "K3-ebaf00b3723751ba",
         "K3-8188cdcda8c57b2d",
+        "K3-04b86146cc6b284b",
+        "K3-8ac51f68b787ce02",
+        "K3-10a14a46c14b3150",
+        "K3-ca31c09879c3ba42",
+        "K3-cf7f6c91a3a40d32",
+        "K3-b2de852aaed731d6",
+        "K3-6ce16abb9de3c7c5",
+        "K3-e70cc236e31b7170",
+        "K3-b5b83bcf5c522a81",
+        "K3-2aee4bcbd39fc7f2",
+        "K3-a9325e1542295e0f",
+        "K3-26591006f08250cd",
+        "K3-c4e34d1319a61b31",
+        "K3-be060aee9b10a819",
+        "K3-ea9158beda34935a",
+        "K3-1a18142741d9183c",
+        "K3-b42a9aa79eed289c",
+        "K3-211c5672907d017a",
     ]
 
     return {

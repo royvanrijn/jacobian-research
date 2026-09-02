@@ -1,0 +1,290 @@
+{
+  "schema": "elkies-k3-lattice-foundry-source-equation-attempts-v1",
+  "status": "CURATED_BACKFILL_OF_DOCUMENTED_FOUNDRY_SOURCE_ATTEMPTS",
+  "scope": "MW1 source-equation attempts documented in LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md through 2026-09-02",
+  "candidate_identity": "The pair (source_artifact, source_id) is the stable key. source_id alone is not unique across prescribed-root shards.",
+  "trial_unit": "One finite-field source ansatz chart at one prime. A trial is model_eligible only when its declared chart is exhaustive. Exact section scans over models from a bounded fibre scan remain evidence but are excluded from fitted rates.",
+  "outcome_definitions": {
+    "fibre_success": "At least one squarefree model with the exact prescribed fibre orders occurs in the declared chart.",
+    "marked_section_success": "At least one model carries the complete prescribed MW marking, not merely an unmarked section.",
+    "positive_dimensional_marked_locus": "A marked modular point has a certified positive-dimensional local locus. Boundary components before exact-order saturation do not count.",
+    "equation_success": "An exact characteristic-zero source equation with the requested marking is certified."
+  },
+  "attempts": [
+    {
+      "source_artifact": "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-a-v1.json",
+      "source_id": "NS0011-S005",
+      "selection_provenance": "equation-balanced semistable test case",
+      "trials": [
+        {
+          "prime": 5,
+          "extension_degree": 1,
+          "coverage": "exhaustive_declared_chart",
+          "model_eligible": true,
+          "fibre_success": true,
+          "marked_section_success": false,
+          "fibre_models": 7,
+          "models_with_marked_sections": 0,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0011-source-ansatz-mod5.json",
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0011-pole2-sections-mod5.json"
+          ]
+        },
+        {
+          "prime": 7,
+          "extension_degree": 1,
+          "coverage": "bounded_fibre_scan_exact_section_scans_on_stored_models",
+          "model_eligible": false,
+          "fibre_success": true,
+          "marked_section_success": false,
+          "fibre_models": 2,
+          "models_with_marked_sections": 0,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0011-source-ansatz-mod7-pilot-v1.json",
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0011-pole2-sections-mod7-pilot-v1.json"
+          ]
+        }
+      ],
+      "positive_dimensional_marked_locus": false,
+      "positive_dimensional_locus_status": "NO_MARKED_POINT_FOUND_IN_ELIGIBLE_CHART",
+      "equation_success": false,
+      "equation_status": "NO_CHARACTERISTIC_ZERO_SOURCE_EQUATION"
+    },
+    {
+      "source_artifact": "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-c-v1.json",
+      "source_id": "NS0007-S025",
+      "selection_provenance": "first pole-zero semistable follow-up",
+      "trials": [
+        {
+          "prime": 5,
+          "extension_degree": 1,
+          "coverage": "exhaustive_declared_chart",
+          "model_eligible": true,
+          "fibre_success": false,
+          "marked_section_success": false,
+          "fibre_models": 0,
+          "models_with_marked_sections": 0,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0007-source-ansatz-mod5.json"
+          ]
+        },
+        {
+          "prime": 7,
+          "extension_degree": 1,
+          "coverage": "bounded_split_support_scan",
+          "model_eligible": false,
+          "fibre_success": false,
+          "marked_section_success": false,
+          "fibre_models": 0,
+          "models_with_marked_sections": 0,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0007-source-ansatz-mod7-pilot-v1.json"
+          ]
+        },
+        {
+          "prime": 7,
+          "extension_degree": 2,
+          "coverage": "bounded_conjugate_support_scan",
+          "model_eligible": false,
+          "fibre_success": false,
+          "marked_section_success": false,
+          "fibre_models": 0,
+          "models_with_marked_sections": 0,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0007-source-ansatz-conjugate-i7-mod7-sample-v1.json"
+          ]
+        },
+        {
+          "prime": 11,
+          "extension_degree": 2,
+          "coverage": "bounded_conjugate_support_scan",
+          "model_eligible": false,
+          "fibre_success": false,
+          "marked_section_success": false,
+          "fibre_models": 0,
+          "models_with_marked_sections": 0,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0007-source-ansatz-conjugate-i7-mod11-sample-v1.json"
+          ]
+        }
+      ],
+      "positive_dimensional_marked_locus": false,
+      "positive_dimensional_locus_status": "NO_MARKED_POINT_FOUND",
+      "equation_success": false,
+      "equation_status": "NO_CHARACTERISTIC_ZERO_SOURCE_EQUATION"
+    },
+    {
+      "source_artifact": "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-a-v1.json",
+      "source_id": "NS0034-S008",
+      "selection_provenance": "later pole-zero semistable candidate",
+      "trials": [
+        {
+          "prime": 5,
+          "extension_degree": 1,
+          "coverage": "exhaustive_declared_chart",
+          "model_eligible": true,
+          "fibre_success": true,
+          "marked_section_success": false,
+          "fibre_models": 5,
+          "models_with_marked_sections": 0,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0034-source-ansatz-mod5.json",
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0034-pole0-sections-mod5.json"
+          ]
+        },
+        {
+          "prime": 7,
+          "extension_degree": 1,
+          "coverage": "exhaustive_fixed_lambda_and_leading_coefficient_slice",
+          "model_eligible": true,
+          "fibre_success": true,
+          "marked_section_success": false,
+          "fibre_models": 1,
+          "models_with_marked_sections": 0,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0034-source-ansatz-mod7-lambda2-A8-1.json",
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0034-pole0-sections-mod7-lambda2-A8-1.json"
+          ]
+        }
+      ],
+      "positive_dimensional_marked_locus": false,
+      "positive_dimensional_locus_status": "UNMARKED_BOUNDARY_COMPONENTS_BEFORE_EXACT_ORDER_SATURATION_EXCLUDED",
+      "equation_success": false,
+      "equation_status": "NO_CHARACTERISTIC_ZERO_SOURCE_EQUATION"
+    },
+    {
+      "source_artifact": "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-a-v1.json",
+      "source_id": "NS0043-S005",
+      "selection_provenance": "pole-zero identity-component semistable candidate",
+      "trials": [
+        {
+          "prime": 5,
+          "extension_degree": 1,
+          "coverage": "exhaustive_declared_fibre_chart_and_both_twists",
+          "model_eligible": true,
+          "fibre_success": true,
+          "marked_section_success": false,
+          "fibre_models": 7,
+          "models_with_marked_sections": 0,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0011-source-ansatz-mod5.json",
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0043-pole0-sections-mod5.json",
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0043-pole0-sections-mod5-nonsquare-twist.json"
+          ]
+        },
+        {
+          "prime": 7,
+          "extension_degree": 1,
+          "coverage": "bounded_fibre_scan_exact_both_twist_section_scans_on_stored_models",
+          "model_eligible": false,
+          "fibre_success": true,
+          "marked_section_success": false,
+          "fibre_models": 2,
+          "models_with_marked_sections": 0,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0043-pole0-sections-mod7-pilot-v1.json",
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0043-pole0-sections-mod7-nonsquare-twist-pilot-v1.json"
+          ]
+        }
+      ],
+      "positive_dimensional_marked_locus": false,
+      "positive_dimensional_locus_status": "NO_MARKED_POINT_FOUND_IN_ELIGIBLE_CHART",
+      "equation_success": false,
+      "equation_status": "NO_CHARACTERISTIC_ZERO_SOURCE_EQUATION"
+    },
+    {
+      "source_artifact": "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-a-v1.json",
+      "source_id": "NS0030-S001",
+      "selection_provenance": "five-support pole-zero endpoint-balanced candidate",
+      "trials": [
+        {
+          "prime": 5,
+          "extension_degree": 1,
+          "coverage": "exhaustive_declared_chart",
+          "model_eligible": true,
+          "fibre_success": false,
+          "marked_section_success": false,
+          "fibre_models": 0,
+          "models_with_marked_sections": 0,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0030-source-ansatz-mod5-complete-v1.json"
+          ]
+        }
+      ],
+      "positive_dimensional_marked_locus": false,
+      "positive_dimensional_locus_status": "NO_MARKED_POINT_FOUND",
+      "equation_success": false,
+      "equation_status": "NO_CHARACTERISTIC_ZERO_SOURCE_EQUATION"
+    },
+    {
+      "source_artifact": "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-group-b-v1.json",
+      "source_id": "NS0048-S030",
+      "selection_provenance": "marked MW1-to-MW16 additive-fibre lead",
+      "trials": [
+        {
+          "prime": 5,
+          "extension_degree": 1,
+          "coverage": "exhaustive_declared_chart",
+          "model_eligible": true,
+          "fibre_success": false,
+          "marked_section_success": false,
+          "fibre_models": 0,
+          "models_with_marked_sections": 0,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0048-source-ansatz-mod5.json"
+          ]
+        },
+        {
+          "prime": 7,
+          "extension_degree": 1,
+          "coverage": "exhaustive_declared_chart_and_both_twists",
+          "model_eligible": true,
+          "fibre_success": true,
+          "marked_section_success": true,
+          "fibre_models": 6,
+          "models_with_marked_sections": 1,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0048-source-ansatz-mod7.json",
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0048-pole0-sections-mod7.json",
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0048-pole0-sections-mod7-nonsquare-twist.json"
+          ]
+        },
+        {
+          "prime": 11,
+          "extension_degree": 1,
+          "coverage": "bounded_fibre_scan_exact_section_scans_on_stored_models",
+          "model_eligible": false,
+          "fibre_success": true,
+          "marked_section_success": true,
+          "fibre_models": 14,
+          "models_with_marked_sections": 1,
+          "artifacts": [
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0048-source-ansatz-mod11-suffix600k-v1.json",
+            "artifacts/generated-results/elkies-k3-lattice-foundry-ns0048-pole0-sections-xonly-mod11-suffix600k-v1.json"
+          ]
+        }
+      ],
+      "positive_dimensional_marked_locus": true,
+      "positive_dimensional_locus_status": "JACOBIAN_RANK_18_FOR_22_EQUATIONS_IN_19_VARIABLES_AT_PRIMES_7_AND_11",
+      "equation_success": false,
+      "equation_status": "PADIC_LIFT_TO_11_ADIC_PRECISION_80_DID_NOT_RATIONALLY_RECONSTRUCT"
+    }
+  ],
+  "excluded_from_mw1_model": [
+    {
+      "source_artifact": "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-all-ns-3e8-all-a-v1.json",
+      "source_ids": [
+        "NS0028-S001",
+        "NS0028-S002"
+      ],
+      "mw_rank": 2,
+      "reason": "The equation ansatz requires the marked pair. Complete characteristic-5 and characteristic-7 charts find fibre models but no model carrying both prescribed sections. This is valuable out-of-band evidence but is not a rank-one training row."
+    },
+    {
+      "source_id": "H3-E7-E8-MW2-HISTORICAL-CONTROL",
+      "mw_rank": 2,
+      "reason": "This is an exact characteristic-zero equation success and a useful external positive control, but it predates the normalized foundry attempt protocol and lacks comparable trial exposures."
+    }
+  ],
+  "proof_boundary": "The ledger backfills the six MW1 foundry sources explicitly discussed in the canonical source-first note. It is not yet a complete retrospective ledger for every historical H3, Q80, reverse-route, or archived equation experiment. Empty finite-field charts are local or bounded negative evidence, never characteristic-zero nonexistence proofs."
+}

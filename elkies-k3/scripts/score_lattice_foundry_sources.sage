@@ -12,10 +12,11 @@ them.
 The ordering is lexicographic.  Sources of Mordell--Weil rank at most two
 form a preferred band.  Inside and after that band the coordinates are MW
 rank, number of reducible-fibre supports, semistable compatibility, expected
-fibre-stratum dimension, minimum nonzero-section pole order, marking Galois
-orbit, expected coefficient conditions, and finally certified neighbour cost.
-An audited low-degree multisection vector is used only as a final heuristic
-tie-break after corridor cost.
+fibre-stratum dimension, the cheapest complete MW-basis maximum pole, the
+cheapest single nonzero-section pole, marking Galois orbit, expected
+coefficient conditions, and finally certified neighbour cost.  An audited
+low-degree multisection vector is used only as a final heuristic tie-break
+after corridor cost.
 
 This is a discovery ranking, not a theorem that the coordinates are
 statistically predictive or that an A-type root system has a semistable
@@ -41,15 +42,19 @@ DEFAULT_OUTPUT = (
     ROOT / "artifacts/generated-results/elkies-k3-lattice-foundry-source-ranking-v2.json"
 )
 DATABASE = ROOT / "artifacts/generated-results/elkies-k3-lattice-foundry-v1.json"
-MULTISECTION_SPECTRUM = (
+MULTISECTION_SPECTRA = [
     ROOT
-    / "artifacts/generated-results/elkies-k3-lattice-foundry-multisection-spectrum-v1.json"
-)
+    / "artifacts/generated-results/elkies-k3-lattice-foundry-multisection-spectrum-v1.json",
+    ROOT
+    / "artifacts/generated-results/elkies-k3-lattice-foundry-ns0031-rootless-mw17-multisection-pilot-v1.json",
+]
 COMPLETE_DEGREE3_SPECTRA = [
     ROOT
     / "artifacts/generated-results/elkies-k3-lattice-foundry-degree3-complete-top5-v1.json",
     ROOT
     / "artifacts/generated-results/elkies-k3-lattice-foundry-degree3-complete-current-source-top5-v1.json",
+    ROOT
+    / "artifacts/generated-results/elkies-k3-lattice-foundry-degree3-complete-ns0031-pilot-top5-v1.json",
 ]
 PRESCRIBED_ROOT_INVENTORIES = [
     ROOT
@@ -67,6 +72,11 @@ PRESCRIBED_ROOT_INVENTORIES = [
 RANK1_SECTION_POLES = (
     ROOT
     / "artifacts/generated-results/elkies-k3-lattice-foundry-rank1-section-poles-v1.json"
+)
+RANK2_SECTION_BASIS_POLES = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-lattice-foundry-"
+    "rank2-section-basis-poles-v1.json"
 )
 
 
@@ -221,7 +231,7 @@ def main() -> None:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--database", type=Path, default=DATABASE)
     parser.add_argument(
-        "--multisection-spectrum", type=Path, default=MULTISECTION_SPECTRUM
+        "--multisection-spectrum", type=Path, action="append", default=[]
     )
     parser.add_argument(
         "--complete-degree3-spectrum",
@@ -238,6 +248,11 @@ def main() -> None:
     parser.add_argument(
         "--rank1-section-poles", type=Path, default=RANK1_SECTION_POLES
     )
+    parser.add_argument(
+        "--rank2-section-basis-poles",
+        type=Path,
+        default=RANK2_SECTION_BASIS_POLES,
+    )
     parser.add_argument("--target-mw-min", type=int, default=15)
     parser.add_argument("--target-mw-max", type=int, default=17)
     parser.add_argument("--check", action="store_true")
@@ -249,12 +264,24 @@ def main() -> None:
     routes = route_artifacts()
     database_path = arguments.database.resolve()
     database = json.loads(database_path.read_text())
-    multisection_path = arguments.multisection_spectrum.resolve()
-    multisection_payload = json.loads(multisection_path.read_text())
-    multisection_by_frame = {
-        row["frame_id"]: dict(row["richness_coordinates"])
-        for row in multisection_payload["targets"]
-    }
+    multisection_paths = [
+        path.resolve()
+        for path in (arguments.multisection_spectrum or MULTISECTION_SPECTRA)
+    ]
+    multisection_by_frame = {}
+    for multisection_path in multisection_paths:
+        multisection_payload = json.loads(multisection_path.read_text())
+        if multisection_payload.get("schema") != (
+            "elkies-k3.lattice-foundry-multisection-spectrum.v1"
+        ):
+            raise ValueError(f"unexpected multisection schema: {multisection_path}")
+        for row in multisection_payload["targets"]:
+            frame_id = row["frame_id"]
+            richness = dict(row["richness_coordinates"])
+            prior = multisection_by_frame.get(frame_id)
+            if prior is not None and prior != richness:
+                raise ValueError(f"conflicting multisection rows for {frame_id}")
+            multisection_by_frame[frame_id] = richness
     complete_degree3_paths = [
         path.resolve()
         for path in (
@@ -322,6 +349,20 @@ def main() -> None:
         (row["source_artifact"], row["source_id"]): row
         for row in rank1_section_poles_payload["sources"]
     }
+    rank2_section_basis_poles_path = (
+        arguments.rank2_section_basis_poles.resolve()
+    )
+    rank2_section_basis_poles_payload = json.loads(
+        rank2_section_basis_poles_path.read_text()
+    )
+    if rank2_section_basis_poles_payload.get("schema") != (
+        "elkies-k3.lattice-foundry-rank2-section-basis-poles.v1"
+    ):
+        raise ValueError("unexpected rank-two section-basis-pole schema")
+    rank2_section_basis_poles = {
+        (row["ns_id"], row["source_id"]): row
+        for row in rank2_section_basis_poles_payload["sources"]
+    }
     high_rank_targets_by_ns = {}
     for ns in database["ns_classes"]:
         targets = []
@@ -371,9 +412,18 @@ def main() -> None:
                     "source_id": entry["source_id"],
                     "marking_payload": {},
                     "route": None,
-                    "compute_minimum_pole": False,
+                    # Rank-two rows use the stronger affine-CVP artifact below,
+                    # which proves both the cheapest section and the cheapest
+                    # complete tail basis without a full rank-17 norm shell.
+                    "compute_minimum_pole": (
+                        int(entry["source"]["mw_rank_for_rho_19"]) == 3
+                        and bool(entry["source"]["root_lattice_primitive"])
+                    ),
                     "stored_minimum_pole": rank1_section_poles.get(
                         (relative(path), entry["source_id"])
+                    ),
+                    "stored_rank2_basis_pole": rank2_section_basis_poles.get(
+                        (entry["ns_id"], entry["source_id"])
                     ),
                     "certificate_scope": (
                         "EXACT_WITHIN_DECLARED_PRESCRIBED_ROOT_SLICE"
@@ -393,9 +443,20 @@ def main() -> None:
             semistable_compatible = all(
                 row["type"].startswith("A") for row in components
             )
-            if record["compute_minimum_pole"]:
+            stored_rank2_basis = record.get("stored_rank2_basis_pole")
+            if mw_rank == 2 and stored_rank2_basis is not None:
+                minimum = stored_rank2_basis["minimum_nonzero_section"]
+                pole = {
+                    "status": stored_rank2_basis["status"],
+                    "pole_order": minimum["section_pole_order"],
+                    "frame_norm": minimum["minimum_frame_norm"],
+                    "tail": minimum["tail"],
+                    "root_coordinates": minimum["root_coordinates"],
+                    "evidence": relative(rank2_section_basis_poles_path),
+                }
+            elif record["compute_minimum_pole"]:
                 pole = minimum_nonzero_section_pole(source)
-            elif record["stored_minimum_pole"] is None:
+            elif record.get("stored_minimum_pole") is None:
                 pole = {
                     "status": "OPEN_NOT_ENUMERATED_FOR_PRESCRIBED_ROOT_INVENTORY",
                     "pole_order": None,
@@ -418,6 +479,37 @@ def main() -> None:
                             ],
                         }
                     )
+            if mw_rank == 0:
+                basis_pole = {
+                    "status": "PASS_EMPTY_MW_BASIS_CONVENTION",
+                    "maximum_pole_order": 0,
+                    "sorted_pole_profile": [],
+                }
+            elif mw_rank == 1 and pole["pole_order"] is not None:
+                basis_pole = {
+                    "status": pole["status"],
+                    "maximum_pole_order": pole["pole_order"],
+                    "sorted_pole_profile": [pole["pole_order"]],
+                    "evidence": pole.get("evidence"),
+                }
+            elif mw_rank == 2 and stored_rank2_basis is not None:
+                basis_pole = {
+                    "status": stored_rank2_basis["status"],
+                    "maximum_pole_order": stored_rank2_basis[
+                        "minimum_basis_maximum_pole_order"
+                    ],
+                    "sorted_pole_profile": stored_rank2_basis[
+                        "minimum_basis_sorted_pole_profile"
+                    ],
+                    "basis": stored_rank2_basis["minimum_basis"],
+                    "evidence": relative(rank2_section_basis_poles_path),
+                }
+            else:
+                basis_pole = {
+                    "status": "OPEN_COMPLETE_MW_BASIS_NOT_AUDITED",
+                    "maximum_pole_order": None,
+                    "sorted_pole_profile": None,
+                }
             marking = marking_record(record["marking_payload"])
             route = record["route"]
             galois_orbit = marking["characteristic_zero_galois_orbit_size"]
@@ -446,6 +538,11 @@ def main() -> None:
                 len(components),
                 0 if semistable_compatible else 1,
                 18 - root_rank,
+                (
+                    basis_pole["maximum_pole_order"]
+                    if basis_pole["maximum_pole_order"] is not None
+                    else 10**9
+                ),
                 pole["pole_order"] if pole["pole_order"] is not None else 10**9,
                 0 if galois_orbit is not None else 1,
                 galois_orbit if galois_orbit is not None else 10**9,
@@ -482,6 +579,7 @@ def main() -> None:
                     "dimension_status": (
                         "EXPECTED_FROM_LATTICE_CODIMENSION_NOT_AN_INDEPENDENCE_PROOF"
                     ),
+                    "minimum_complete_mw_basis_pole": basis_pole,
                     "minimum_nonzero_section_pole": pole,
                     "arithmetic_marking": marking,
                     "admissible_high_rank_targets": high_rank_targets,
@@ -524,10 +622,14 @@ def main() -> None:
         row["rootless_surface_rank"] = rank
 
     inputs[relative(database_path)] = digest(database_path)
-    inputs[relative(multisection_path)] = digest(multisection_path)
+    for multisection_path in multisection_paths:
+        inputs[relative(multisection_path)] = digest(multisection_path)
     for complete_degree3_path in complete_degree3_paths:
         inputs[relative(complete_degree3_path)] = digest(complete_degree3_path)
     inputs[relative(rank1_section_poles_path)] = digest(rank1_section_poles_path)
+    inputs[relative(rank2_section_basis_poles_path)] = digest(
+        rank2_section_basis_poles_path
+    )
     output = {
         "schema": "elkies-k3.lattice-foundry-source-ranking.v2",
         "status": "PASS_EXACT_SOURCE_METRICS_WITH_TYPED_OPEN_ARITHMETIC_AND_ROUTE_GATES",
@@ -538,6 +640,7 @@ def main() -> None:
             "reducible-fibre support count",
             "semistable compatibility",
             "expected fibre-stratum dimension",
+            "minimum complete MW-basis maximum pole order",
             "minimum nonzero-section pole order",
             "known marking before unknown marking, then Galois orbit size",
             "expected coefficient conditions",
@@ -547,9 +650,10 @@ def main() -> None:
         "proof_boundary": {
             "proved": (
                 "Root/MW data, support counts, A-type compatibility, and displayed "
-                "minimum pole orders are exact consequences of the source lattices. "
-                "Minimum pole order remains explicitly open on prescribed-root "
-                "inventory rows where that extra enumeration was not run."
+                "minimum pole orders and audited rank-two basis-pole profiles are "
+                "exact consequences of the source lattices. Minimum pole or full "
+                "basis pole remains explicitly open on rows where the relevant "
+                "extra enumeration was not run."
             ),
             "not_proved": (
                 "Expected dimensions and coefficient conditions are deformation-count "

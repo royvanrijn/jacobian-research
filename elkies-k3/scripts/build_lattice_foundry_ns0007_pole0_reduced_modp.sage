@@ -36,6 +36,29 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--prime", type=int, default=7)
 parser.add_argument("--lambda-value", type=int, default=2)
 parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
+parser.add_argument(
+    "--split-a2-node-constants-over-base-field",
+    action="store_true",
+    help=(
+        "append x^p-x for the four a2 coefficients and the two constant "
+        "I7 node jets, encoding all base-field slices in one ideal"
+    ),
+)
+parser.add_argument(
+    "--fixed-a2-node-case",
+    help=(
+        "six comma-separated base-field values for "
+        "a2_4,a2_3,a2_2,a2_1,si_0,sl_0; append exact linear equations"
+    ),
+)
+parser.add_argument(
+    "--compact-factored-msolve",
+    action="store_true",
+    help=(
+        "retain the final I4 and exact-I2 equations in factored input syntax "
+        "instead of expanding them into tens of thousands of monomials"
+    ),
+)
 parser.add_argument("--check", action="store_true")
 args = parser.parse_args()
 
@@ -125,16 +148,61 @@ equations += [q0**2 - r0 * p0**2, q0**3 - 2 * r0**2 * k1]
 # nonvanishing of K0=a2(0)*(a3/t)^2-(a4/t)^2.
 exact_i2_open = coefficient_ring(3 * a3[1] ** 2 - a4[1] ** 2)
 equations += [g["u0"] * exact_i2_open - 1]
-if len(equations) != len(names) or any(not equation for equation in equations):
+base_field_split_variables = [
+    "a2_4",
+    "a2_3",
+    "a2_2",
+    "a2_1",
+    "si_0",
+    "sl_0",
+]
+if args.split_a2_node_constants_over_base_field and args.fixed_a2_node_case:
+    raise SystemExit("the base-field split and one fixed case are mutually exclusive")
+fixed_case_values = None
+if args.fixed_a2_node_case:
+    fixed_case_tokens = args.fixed_a2_node_case.split(",")
+    if len(fixed_case_tokens) != len(base_field_split_variables):
+        raise SystemExit("--fixed-a2-node-case requires six comma-separated values")
+    fixed_case_values = [field(int(token)) for token in fixed_case_tokens]
+    equations += [
+        g[name] - value
+        for name, value in zip(base_field_split_variables, fixed_case_values)
+    ]
+if args.split_a2_node_constants_over_base_field:
+    equations += [
+        g[name] ** int(prime) - g[name] for name in base_field_split_variables
+    ]
+expected_equations = len(names) + (
+    len(base_field_split_variables)
+    if args.split_a2_node_constants_over_base_field or fixed_case_values is not None
+    else 0
+)
+if len(equations) != expected_equations or any(not equation for equation in equations):
     raise ArithmeticError("unexpected reduced equation accounting")
 
 output_dir = args.output_dir.resolve()
 output_dir.mkdir(parents=True, exist_ok=True)
-stem = f"p{prime}-lambda{int(lambda_value)}"
+stem = f"p{prime}-lambda{int(lambda_value)}" + (
+    "-baseFieldA2Node0"
+    if args.split_a2_node_constants_over_base_field
+    else ""
+)
+if fixed_case_values is not None:
+    stem += "-case-" + "-".join(str(int(value)) for value in fixed_case_values)
+if args.compact_factored_msolve:
+    stem += "-compact"
 msolve_path = output_dir / f"{stem}.ms"
 metadata_path = output_dir / f"{stem}.json"
 msolve_text = ",".join(names) + "\n" + str(prime) + "\n"
-msolve_text += ",\n".join(str(equation).replace("**", "^") for equation in equations) + "\n"
+equation_texts = [str(equation).replace("**", "^") for equation in equations]
+if args.compact_factored_msolve:
+    equation_texts[16:19] = [
+        f"({q0})^2-({r0})*({p0})^2",
+        f"({q0})^3-2*({r0})^2*({k1})",
+        f"u0*({exact_i2_open})-1",
+    ]
+    equation_texts = [text.replace("**", "^") for text in equation_texts]
+msolve_text += ",\n".join(equation_texts) + "\n"
 
 metadata = {
     "schema": "elkies-k3.lattice-foundry-ns0007-pole0-reduced-modp-system.v1",
@@ -176,9 +244,34 @@ metadata = {
             "split_I7_at_lambda": 14,
             "additional_I4_at_1": 2,
             "exact_I2_rabinowitsch": 1,
+            "base_field_splitting_polynomials": (
+                len(base_field_split_variables)
+                if args.split_a2_node_constants_over_base_field
+                else 0
+            ),
         },
+        "base_field_split_variables": (
+            base_field_split_variables
+            if args.split_a2_node_constants_over_base_field
+            else []
+        ),
+        "fixed_a2_node_case": (
+            {
+                name: int(value)
+                for name, value in zip(
+                    base_field_split_variables, fixed_case_values
+                )
+            }
+            if fixed_case_values is not None
+            else None
+        ),
         "equation_total_degrees": [int(equation.degree()) for equation in equations],
         "equation_term_counts": [len(equation.monomials()) for equation in equations],
+        "msolve_polynomial_encoding": (
+            "FACTORED_FINAL_I4_AND_EXACT_I2"
+            if args.compact_factored_msolve
+            else "FULLY_EXPANDED"
+        ),
         "msolve_input": relative(msolve_path),
         "msolve_sha256": hashlib.sha256(msolve_text.encode()).hexdigest(),
     },

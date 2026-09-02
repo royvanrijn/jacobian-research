@@ -588,7 +588,8 @@ The current proof boundary and replay commands are in
   first by `(T,NS)`, then by partner auxiliary and frame isometry, retains all
   primitive ambient embeddings, and emits four determinant bands across 23
   rooted backends plus a separate Leech/`Co0` backend. Its current artifact has
-  122 surface classes and 596 MW12--17 frame classes. All 96 backend-band
+  827 surface classes, 1,074 auxiliary classes, and 1,840 MW12--17 frame
+  classes. All 96 backend-band
   shards remain explicitly open: this script is not itself an embedding
   enumerator and does not promote bounded foundry inputs to completeness.
 - `build_rank7_surface_pareto.py` ranks all imported surfaces by the exact
@@ -598,7 +599,7 @@ The current proof boundary and replay commands are in
   multisection evidence where existing artifacts provide it, and emits
   coverage-restricted enriched frontiers without imputing missing equations,
   fields, routes, conductor data, or moduli geometry. The current core
-  frontier has four of 122 surfaces; there are 39 exact-pole and 78
+  frontier has fourteen of 827 surfaces; there are 39 exact-pole and 787
   nontrivial-symmetry rows, while the certified-route frontier is explicitly
   empty.
 - `enumerate_24a1_octad_prefix_orbits.sage` induces the exact `M24` action on
@@ -612,12 +613,15 @@ The current proof boundary and replay commands are in
   union/MW gate, exact modular saturation prefilters, integral
   Construction-A saturation, prefix-stabilizer quotienting, residual-`M24`
   transporter deduplication, saturated complements, root counts, and ternary
-  discriminant-form gates. The pinned eight contiguous 250-prefix shards
-  through index 2,000 retain 1,267 local residual-M24 records; 1,253 have matching
-  ternary genera. The separate multi-shard
-  full-Weyl quotient closes the sign action and cross-shard duplicates for
-  this input; the remaining 8,547 prefixes and auxiliaries outside the
-  positive seven-octad language remain open.
+  discriminant-form gates. The pinned 43 contiguous shards exhaust all 10,547
+  five-prefix orbits and retain 3,051 local residual-M24 records; 3,015 have
+  matching ternary genera. The separate multi-shard full-Weyl quotient closes
+  the sign action and cross-shard duplicates for this complete positive
+  seven-octad input; signed/non-octad generator languages remain open.
+- `run_24a1_octad_rank7_completion_frontier.py` reproducibly runs or
+  byte-checks that whole contiguous frontier, with an optional bounded number
+  of parallel subprocesses. It orchestrates the exact shard enumerator; the
+  manifest remains the gap/overlap and hash authority.
 - `build_24a1_octad_completion_manifest.sage` discovers the exact completion
   shards, validates a gap-free and overlap-free prefix interval starting at
   zero, and pins every artifact hash and local accounting value. It is the
@@ -627,9 +631,10 @@ The current proof boundary and replay commands are in
   impossible enumeration of `2^24` signs by an exact comparison of the 24
   doubled physical coordinate covectors modulo sign, intrinsic auxiliary
   isometries, and GAP `M24` transporters. It accepts contiguous completion
-  shards and preserves local provenance. The combined 1,267 records give five
-  intrinsic auxiliary classes and 23 full embedding orbits; 18 pass the
-  ternary-genus gate. Every collapse has an explicit row-isometry,
+  shards and preserves local provenance. The combined 3,051 records give five
+  intrinsic auxiliary classes and 24 full embedding orbits; 18 pass the
+  ternary-genus gate and are imported `(T,NS)` first into the catalogue. Every
+  collapse has an explicit row-isometry,
   coordinate-permutation, and coordinate-sign witness, and every full orbit
   has a certified stabilizer order.
 - `build_cross_niemeier_mod2_priority.sage` turns the umbral stabilizer idea
@@ -638,7 +643,15 @@ The current proof boundary and replay commands are in
   component-permutation envelopes. Multiplicity is only a heuristic: a
   future embedding is retained by this experiment only after its full
   ambient stabilizer induces an action satisfying
-  `rank_GF2(g_M-I)>0` on the complement modulo two.
+  `rank_GF2(g_M-I)>0` on the complement modulo two. It imports the exact
+  negative all-class fixed-coordinate control for `3E8` and keeps
+  non-coordinate transposition- and three-cycle-invariant languages open. It
+  also imports the positive all-class `3D8` control with 40 residual orbits
+  and seven local surfaces, plus the exact negative 792-coordinate `2D12`
+  swap control, 11,440-coordinate coupled `D10+2E7` involution control, and
+  792-coordinate `2A12` order-two control. The positive `2A9+D6` control
+  contributes 32 residual orbits and five local surfaces. The positive `3A8`
+  control contributes 189 residual orbits and 25 local surfaces.
 - `enumerate_2a7_2d5_4a_fixed_rank7.sage` closes the first exact
   symmetry-first family. It enumerates every primitive corank-one rank-seven
   sublattice of the common `4A` fixed lattice through determinant 5,000 using
@@ -659,6 +672,159 @@ The current proof boundary and replay commands are in
   73 surfaces, 76 partner auxiliaries, and 86 frames. This is exact in the
   declared coordinate shell, not a complete fixed-lattice or full-Weyl
   enumeration.
+- `enumerate_4d6_swap_fixed_high_mw_seed.sage` lifts an exact `S4` component
+  section in `N(4D6)` and tests all 11,440 coordinate rank-seven summands of
+  a pinned LLL basis of a component-transposition fixed lattice. Exactly 183
+  fail discriminant length and all remaining 11,257 have MW rank below 12.
+  This closes one bounded negative shell, not the `4D6` backend.
+- `enumerate_6a4_double_swap_fixed_high_mw_seed.sage` enumerates all 240
+  chamber-preserving component/diagram automorphisms of `N(6A4)` before
+  searching the fixed lattice of a literal double component swap. The 11,440
+  coordinate summands yield 161 MW12--13 seeds. Full residual-group
+  canonicalization, exact ternary gates, and `(T,NS)`-first deduplication give
+  42 source surfaces, 55 auxiliary classes, and 128 frames. Three surfaces
+  overlap `N(2A7+2D5)`, so the global catalogue gains 39 surfaces. This is
+  exact in the declared coordinate language and residual quotient, not a
+  full fixed-lattice or Weyl census.
+- `enumerate_4a5_d4_order4_fixed_high_mw_seed.sage` enumerates all 48
+  chamber-preserving component/diagram automorphisms of `N(4A5+D4)` and
+  selects a lifted order-four double component swap.  Of its 120 coordinate
+  rank-seven summands, 39 survive with MW rank 13--17 and nontrivial mod-two
+  complement action.  Full residual canonicalization and exact ternary gates
+  give nine surfaces, nine auxiliary classes, and nine rootless frames, with
+  post-dedup distribution `MW13:7, MW17:2`.  This is exact only in the
+  declared coordinate language and residual quotient.
+- `probe_4a6_4e6_residual_sections.sage` exhausts the 384 possible
+  component/diagram maps in each of `N(4A6)` and `N(4E6)`.  The exact
+  residual groups have orders 24 and 48, component images `A4` and `S4`, and
+  seven and eight matrix conjugacy classes respectively.
+- `probe_4a6_4e6_fixed_coordinate_shells.sage` tests all 26,064 coordinate
+  summands from every nonidentity residual class of fixed rank at least
+  seven.  It finds 86 `4A6` and 48 `4E6` high-MW/mod-two seeds, all from
+  order-three classes; the involution, order-four, and order-six coordinate
+  shells are negative at or before the MW12 gate.
+- `canonicalize_4a6_4e6_fixed_coordinate_shells.sage` closes those seeds
+  under the complete residual groups and applies the ternary and
+  `(T,NS)`-first gates.  It gives nine `4A6` surfaces with ten frames
+  (`MW12:2, MW13:8`) and one `4E6` MW12 surface/frame.  All ten are new in the
+  global catalogue.  This is exact for the declared coordinate languages,
+  not a full fixed-lattice or Weyl census.
+- `probe_8a3_glue_code_residual_group.sage` recovers the order-256 glue code
+  `N(8A3)/A3^8` in `(Z/4)^8`, exhausts all `2^8 8!` signed component maps,
+  and certifies the complete order-2,688 integral residual group, its
+  order-1,344 component image, and 16 matrix conjugacy classes.
+- `probe_8a3_fixed_coordinate_shells.sage` exhausts 24,600 rank-seven
+  coordinate summands from the seven nonidentity residual classes of fixed
+  rank at least seven. Exactly 1,166 pass the determinant, length, MW12--17,
+  and nontrivial mod-two gates.
+- `canonicalize_8a3_fixed_coordinate_shells.sage` quotients those seeds under
+  all 2,688 residual elements. A mod-251 RREF rejects impossible equalities;
+  all candidates are rechecked by integral HNF. The 1,162 orbits give 435
+  local `(T,NS)` surfaces, 523 auxiliaries, and 574 frames. Twenty-four
+  surfaces overlap earlier backends, so the global catalogue gains 411.
+- `probe_6d4_hexacode_residual_group.sage` recovers the order-64 glue code
+  `N(6D4)/D4^6` in `((Z/2)^2)^6`, exhausts all `6^6 6!` local-triality and
+  component-permutation maps, and certifies the complete order-2,160
+  residual group, its kernel of order three, full `S6` component image, and
+  16 matrix conjugacy classes.
+- `probe_6d4_fixed_coordinate_shells.sage` scans all 25,416 coordinate
+  summands attached to the eleven nonidentity residual classes of fixed rank
+  at least seven. Exactly 472 pass the determinant, length, MW12--17, and
+  nontrivial mod-two gates.
+- `canonicalize_6d4_fixed_coordinate_shells.sage` closes those seeds under
+  all 2,160 residual elements and applies the exact ternary/T-NS gates. The
+  466 orbits give 218 local surfaces, 255 auxiliaries, and 289 frames. Fifty
+  surfaces overlap prior backends, so the global catalogue gains 168.
+- `probe_3d8_glue_residual_group.sage` recovers the order-eight
+  `N(3D8)/D8^3` glue code, tests all 48 component/diagram maps, and certifies
+  the natural order-six component-permutation `S3` with trivial diagram
+  kernel.
+- `probe_3d8_fixed_coordinate_shells.sage` scans all 11,448 coordinate
+  summands for the transposition and three-cycle classes. The transposition
+  shell gives 40 high-MW/mod-two seeds (`MW12:28, MW13:12`); the three-cycle
+  shell is negative.
+- `canonicalize_3d8_fixed_coordinate_shells.sage` closes those seeds under
+  the residual `S3` and applies the exact ternary/T-NS gates. Its 40 orbits
+  give seven local surfaces, auxiliaries, and frames. One surface overlaps
+  the existing `2A7+2D5`/`6A4` class, so six surfaces but all seven
+  auxiliaries and frames are new globally.
+- `probe_2d12_glue_residual_group.sage` recovers the order-four
+  `N(2D12)/D12^2` glue code, tests all eight component/diagram maps, and
+  certifies the natural order-two component-swap residual group with trivial
+  diagram kernel.
+- `probe_2d12_fixed_coordinate_shells.sage` scans all 792 rank-seven
+  coordinate summands of the rank-twelve swap-fixed lattice. None passes the
+  determinant, length, MW12--17, and nontrivial mod-two gates, making residual
+  canonicalization and catalogue import vacuous for this declared shell.
+- `probe_d10_2e7_residual_group.sage` recovers the mixed root decomposition
+  and tests all four `D10`-diagram/`E7`-component chamber maps. Only the
+  simultaneous diagram involution and component swap lifts integrally,
+  giving the complete order-two residual group.
+- `probe_d10_2e7_fixed_coordinate_shells.sage` scans all 11,440 rank-seven
+  coordinate summands of the rank-sixteen fixed lattice. None passes the
+  determinant, length, MW12--17, and nontrivial mod-two gates, so the declared
+  coordinate shell contributes no catalogue row.
+- `probe_2a12_residual_group.sage` recovers the index-thirteen root quotient,
+  tests all eight component/diagram maps, and certifies the complete cyclic
+  order-four residual group with fixed ranks `24,12,6,6`.
+- `probe_2a12_fixed_coordinate_shells.sage` scans all 792 coordinate summands
+  for the sole nonidentity class of fixed rank at least seven. None passes the
+  determinant, length, MW12--17, and nontrivial mod-two gates, so no residual
+  canonicalization or catalogue import is needed for this declared shell.
+- `probe_2a9_d6_residual_group.sage` recovers the index-twenty root quotient,
+  tests all sixteen component/diagram maps, and certifies the complete cyclic
+  order-four residual group with fixed ranks `24,16,10,10`.
+- `probe_2a9_d6_fixed_coordinate_shells.sage` scans all 11,680 coordinate
+  summands for the three nonidentity residual classes. The order-two shell is
+  negative, while each inverse order-four class gives 32 qualified seeds.
+- `canonicalize_2a9_d6_fixed_coordinate_shells.sage` quotients the 64 seeds
+  by the exact residual `C4` and applies the ternary/T-NS gates. The 32 orbits
+  give five local surfaces, auxiliaries, and frames (`MW13:4, MW17:1`). One
+  surface overlaps `8A3`, so four surfaces but all five auxiliaries and frames
+  are new globally.
+- `probe_3a8_residual_group.sage` recovers the index-27 `A8^3` root quotient,
+  tests all 48 component/diagram maps, and certifies the complete order-twelve
+  residual group `{+/-1} x S3`, including its six matrix conjugacy classes.
+- `probe_3a8_fixed_coordinate_shells.sage` scans all 13,032 coordinate
+  summands for the four nonidentity classes of fixed rank at least seven. The
+  transposition class gives 189 qualified seeds (`MW12:135, MW13:54`); the
+  central involution, signed transposition, and three-cycle shells are
+  negative.
+- `canonicalize_3a8_fixed_coordinate_shells.sage` closes the seeds under the
+  exact residual group and applies the ternary/T-NS gates. All 189 orbits pass
+  and give 25 local surfaces, 30 auxiliaries, and 64 frames. Twenty surfaces
+  overlap earlier backends, so five surfaces, twelve auxiliaries, and all 64
+  frames are new globally.
+- `probe_12a2_ternary_golay_residual_group.sage` intrinsically recovers the
+  index-729 `A2^12` root quotient as the self-dual ternary Golay `[12,6,6]`
+  code and certifies its full order-190,080 monomial group `2.M12`, its
+  order-95,040 component image, and all 26 conjugacy classes.
+- `probe_12a2_fixed_coordinate_shells.sage` scans all 13,968 coordinate
+  summands in the nine nonidentity classes of fixed rank at least seven and
+  retains 237 MW12--17 seeds.
+- `canonicalize_12a2_fixed_coordinate_shells.sage` checks all 190,080 group
+  images with an exact mod-two rejection filter and integral-HNF equality
+  certificates. The 214 residual orbits give 210 K3-compatible orbits, 99
+  local surfaces, 108 auxiliaries, and 151 frames. Globally, 52 surfaces, 86
+  auxiliaries, and 143 frames are new.
+- `probe_eta_only_niemeier_residual_groups.sage` intrinsically recovers the
+  roots and quotients of the six remaining rooted systems and exhausts every
+  product of component diagram maps. It proves trivial residual groups for
+  `D24` and `D16+E8`, and order-two eta groups for `A24`, `A17+E7`,
+  `A15+D9`, and `A11+D7+E6`.
+- `probe_eta_only_niemeier_fixed_coordinate_shells.sage` scans all 35,112
+  eligible coordinate summands for the four nontrivial eta classes. `A24`
+  fails discriminant length uniformly; every length-admissible mixed-system
+  frame has MW rank below 12. Hence all four declared coordinate languages
+  are exact negative controls.
+- `probe_3e8_residual_group.sage` recovers the three `E8` root components
+  intrinsically and certifies the complete chamber residual `S3` as all six
+  component permutations. Its transposition and three-cycle classes have
+  fixed ranks 16 and 8 and fixed determinants 256 and 6,561.
+- `probe_3e8_fixed_coordinate_shells.sage` scans all 11,448 rank-seven
+  coordinate summands for those two nonidentity classes. None passes the
+  determinant, length, MW12--17, and nontrivial mod-two gates, so no residual
+  canonicalization or catalogue import is required for this declared shell.
 - `build_leech_co0_backend.sage` derives the invariant integral Gram matrix of
   the AtlasRep 24-dimensional `2.Co1=Co0` representation. It certifies an even
   unimodular rank-24 lattice of minimum four with 196,560 minimal vectors,
@@ -767,10 +933,56 @@ The current proof boundary and replay commands are in
 - `probe_lattice_foundry_ns0030_source_ansatz_modp.sage` promotes a pole-zero
   semistable source attached to both MW15 and MW16 targets.  It imposes the
   ordered `I3+I2+I2+I7+I7` branch jets with exact corrections
-  `0,0,1/2,6/7,10/7`.  The pinned coprime-stride `GF(5)` pilot checks 100,000
-  normalized `A` polynomials for each of six ordered support pairs, finds 346
-  Hermite-compatible signed branches, and no exact squarefree fibre model.
-  This is bounded routing evidence, not a prime obstruction.
+  `0,0,1/2,6/7,10/7`.
+  `combine_lattice_foundry_ns0030_source_ansatz_modp.py` certifies that the
+  prefix and suffix are adjacent segments of the same coprime-stride
+  permutation.  The combined `GF(5)` census therefore covers all
+  `6*5^8=2,343,750` normalized `A` polynomials, finds 1,536
+  Hermite-compatible signed branches, and no exact prescribed fibre orders.
+  This is a complete obstruction only for the displayed normalized chart.
+- `probe_lattice_foundry_ns0048_source_ansatz_modp.sage` puts the star fibre
+  of the `A1+A4+A6+D5/MW1` source at infinity, reducing the short-model bounds
+  to `(6,9)`.  The complete `GF(7)` census has six
+  `I5+I7+I2+I1*+3I1` models.
+  `scan_lattice_foundry_ns0048_pole0_sections_xonly_modp.sage` exhausts only
+  the three remaining X parameters and finds one marked sign pair with height
+  `37/14` and determinant 740.  The independent tensor scanner is retained as
+  a cross-check.
+- `audit_lattice_foundry_ns0048_marked_family_modp.sage` evaluates the full
+  22-equation section-built family at the surviving points.  It proves
+  Jacobian rank 18 in 19 variables at both `p=7` and a bounded `p=11` point.
+  `lift_lattice_foundry_ns0048_marked_family_padic.sage` Hensel-lifts the
+  latter through `11^80` after fixing a local parameter, but exact rational
+  reconstruction fails.  `build_lattice_foundry_ns0048_tate_family_modp.sage`
+  translates the section to `(0,0)` and removes the forced support square from
+  the discriminant; this cuts the one-dimensional system from 21,606 to 9,071
+  monomials.  None of these modular or p-adic certificates supplies a rational
+  source equation or an MW16 corridor.
+- `probe_lattice_foundry_ns0028_source_ansatz_modp.sage` tests the
+  multisection-leading `A2+A6+A7/MW2` source.  Both exact generators have pole
+  zero and only depth-one node contacts.  The complete normalized fibre
+  censuses contain 25 models at `GF(5)` and 112 at `GF(7)`.
+  `scan_lattice_foundry_ns0028_pole0_section_pairs_modp.sage` exhausts the
+  three-parameter P and four-parameter Q X charts and both twist classes.  It
+  finds no section at 5; at 7 it finds each individual section type, but never
+  on the same fibre model.  This rejects the displayed two-prime charts, not
+  the characteristic-zero lattice source.
+- `build_lattice_foundry_ns0007_pole0_reduced_modp.sage` eliminates the
+  global `a3,a4` coefficients from the pole-zero `NS0007-S025` chart and
+  emits its 19-variable, 19-equation fixed-lambda system.
+  `run_lattice_foundry_ns0007_p7_fixed_case_census.py` partitions the six
+  displayed base-field coefficients into exact lexicographic ranges and uses
+  isolated `msolve -g 1` processes to classify unit versus nonunit ideals.
+  Only the fully expanded input is certifying: although
+  `audit_lattice_foundry_ns0007_compact_msolve_encoding.sage` proves that the
+  compact strings expand to the same Sage polynomials, msolve reports false
+  nonunit ideals on the factored syntax.  The runner therefore rejects that
+  syntax by default.  `combine_lattice_foundry_ns0007_p7_fixed_case_census.py`
+  verifies contiguous expanded-shard coverage and fails on gaps, overlaps,
+  timeouts, solver errors, or noncertifying syntax.
+  `repair_lattice_foundry_ns0007_p7_fixed_case_census.py` replaces only
+  declared timeout/error entries with checked terminal singleton replays and
+  records both the raw artifact and every replay hash.
 - `hunt_lattice_foundry_rootful_source.sage` and
   `run_lattice_foundry_mw3_broad_scout.py` are retained for bounded Kneser
   discovery provenance and byte-for-byte replay of their existing artifacts,
@@ -788,7 +1000,15 @@ The current proof boundary and replay commands are in
   multisection richness is retained only as the final heuristic tie-break. It
   consumes both individual rootful-source certificates and the rows of the
   prescribed-root inventory, without widening the latter's declared finite
-  search scope.
+  search scope.  For primitive MW2 rows it ranks the exact cheapest complete
+  basis maximum pole before the cheapest individual-section pole.
+- `audit_lattice_foundry_rank2_section_basis_poles.sage` uses the exact MW
+  height Schur complement to bound all tail classes capable of improving the
+  displayed basis, solves every affine root-lattice CVP with double-double and
+  MPFR-256 GSO arithmetic, recomputes the returned norms exactly, and compares
+  all determinant-one tail pairs.  The pinned artifact covers all 97
+  primitive MW2 rows in the declared all-A inventory; it is an exhaustive
+  tail-class calculation with a stated numerical CVP branch boundary.
 - `sample_lattice_foundry_multisection_spectrum.sage` computes complete
   degree-two low-height translation-coset spectra on selected rootless foundry
   frames and deterministic exact-CVP samples in degrees three and four. It
@@ -805,11 +1025,61 @@ The current proof boundary and replay commands are in
   translation cosets for each selected rootless frame, using inversion to
   halve the CVP workload, exact integral norm recomputation for every returned
   candidate, deterministic 256-bit MPFR cross-precision audits, and resumable
-  chunk checkpoints. The primary pinned batch is the current top five from the
-  declared MW2 source inventory; a second artifact retains the five
+  chunk checkpoints. The primary pinned batch is the five surfaces selected
+  by the earlier cheapest-single-section MW2 ranking; a second artifact retains the five
   pre-prescribed-root route-aware leaders plus R17. Both lattice censuses are
   complete, but effectivity, nefness, irreducibility, arithmetic descent, and
   specialization rank gain remain open.
+- `enumerate_golay_det720_prescribed_root_sources.sage` applies the
+  prescribed-root search directly to the rootless Golay-octad rank-seven
+  auxiliary.  Its complete declared 23-Niemeier, root-rank-15/16,
+  one-to-three-support run returns 4,823 distinct reduced-Gram MW1/MW2 source
+  rows.  `audit_golay_det720_source_poles.sage` performs the complete
+  Smith-quotient pole audit through frame norm eight; the compact
+  `build_golay_det720_equation_first_shortlist.py` ledger retains all 177
+  semistable rows with a complete basis of pole at most two.  Reduced-Gram
+  distinctness is not asserted to be integral-isometry distinctness.
+- `classify_golay_det720_ideal_source_isometries.sage` completely classifies
+  the 48-row ideal cut (MW2, semistable, at most three supports, pole profile
+  `[0,0]`) into three marked integral-isometry classes of sizes 35, 4, and 9.
+  Their representatives are precisely the already-tested `3A5`, `A11+A4`,
+  and `A3+A4+A8` charts, so the modular marking gates cover the whole cut.
+- `probe_golay_det720_a11_a4_source_ansatz_modp.sage` and
+  `scan_golay_det720_a11_a4_pole0_pairs_modp.sage` exhaust the normalized
+  `I12+I5` chart and its two pole-zero generators at 5 and 7.  Individual
+  sections occur, but no complete marked MW2 pair occurs in either twist
+  class.  The generalized three-support fibre scanner together with
+  `scan_golay_det720_three_support_pole0_pairs_modp.sage` similarly rejects
+  the tested `A3+A4+A8` charts and finds 24 marked pairs in the nonsquare
+  `GF(7)` `3A5` chart for `G720-S0128`.
+- `certify_golay_det720_3a5_marked_gf7_lift.sage` certifies Jacobian rank 45
+  in 46 variables and lifts all 55 marked equations through `7^8`.
+  `certify_golay_det720_3a5_formal_smoothness.sage` then proves that the ten
+  nonpivot section equations are forced by the discriminant/node identity and
+  component depths.  The unit minor therefore gives a one-parameter formal
+  `Z_7` marked family.  With `--free-parameter-integer 10`, the lift reaches
+  a small rational point at precision `7^40`.
+- `certify_golay_det720_3a5_source_qq.sage` rationally reconstructs that point
+  and replays all 55 equations over `QQ`.  It certifies a split
+  `3I6+6I1` model, rational section heights `5/6` and `4`, and a rank-19 NS
+  sublattice of determinant `-720`.  The separate
+  `certify_golay_det720_3a5_picard19.sage` uses exact `F_p` and `F_(p^2)`
+  counts at 17 and 19; the rank-20 reductions have incompatible Artin--Tate
+  square classes, proving geometric Picard rank 19.  Saturation and target-NS
+  identity remain open.
+- `build_golay_det720_foundry_adapter.py` exposes the certified rootless MW17
+  Gram to the generic spectrum programs without pretending that it belonged
+  to the original consolidated foundry search.  Its complete degree-three
+  census has 15,717,830 rational and 31,988,690 genus-one trisection
+  translation cosets.  These are below the NS0031 leaders, so equation cost
+  and multisection richness remain separate optimization coordinates.
+- `search_golay_det720_degree2_source_corridor.sage` exhausts all 64,515
+  section-nonnegative integral genus-one degree-two classes on that rootless
+  target: 64,355 have coset minimum eight and 160 have minimum twelve.
+  Exactly 64,512 define primitive elliptic fibres.  Minimum-eight children
+  have root system `rA1` with `1 <= r <= 11`, and every minimum-twelve child
+  is rootless, so none is the marked `3A5/MW2` source.  This closes the full
+  one-edge degree-two corridor, not higher-degree or multi-edge routes.
 - `certify_lattice_foundry_route.sage` consumes an ordered route manifest,
   replays every primitive isotropic split, checks component/all-section and
   Proposition-C2 finite horizontal walls, composes determinant-one NS

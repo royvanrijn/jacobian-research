@@ -1,12 +1,15 @@
 #!/usr/bin/env sage-python
-"""Exhaust the normalized NS0028 ``I3+I7+I8`` fibre ansatz modulo p.
+"""Exhaust a normalized three-support semistable fibre ansatz modulo p.
 
-The selected exact source ``NS0028-S001`` has root type ``A2+A6+A7``,
-Mordell--Weil rank two, and two independent pole-zero generators.  This first
-gate imposes only the three semistable reducible fibres, normalized at zero,
-one, and infinity.  It scans every degree-eight short-Weierstrass A polynomial
-when ``--max-samples`` is zero and solves the overdetermined Hermite problem
-for B exactly.
+The default selected exact source ``NS0028-S001`` has root type
+``A2+A6+A7``.  ``--ns-id`` and ``--source-id`` also allow another primitive
+MW2 source with exactly three A-type components of total root rank 15, such as
+the ``A1+2A7`` source on NS0005.  A source inventory without ``ns_id`` fields,
+such as the Golay-720 prescribed-root census, can be addressed by a synthetic
+``--ns-id`` label because its source IDs are globally unique.  This first gate imposes only the three
+semistable reducible fibres, normalized at zero, one, and infinity.  It scans
+every degree-eight short-Weierstrass A polynomial when ``--max-samples`` is
+zero and solves the overdetermined Hermite problem for B exactly.
 
 Stored models prove only finite-field feasibility of the fibre stratum.  The
 two polynomial sections, the full NS0028 marking, characteristic-zero descent,
@@ -19,6 +22,7 @@ import argparse
 import hashlib
 import itertools
 import json
+import re
 from pathlib import Path
 
 from sage.all import GF, PolynomialRing, binomial, matrix, vector
@@ -88,8 +92,22 @@ def order_at(poly, point):
     return min(index for index, value in enumerate(shifted.list()) if value)
 
 
+def semistable_fibre_orders(root_type):
+    orders = []
+    for term in root_type.split("+"):
+        match = re.fullmatch(r"(?:(\d+))?A(\d+)", term)
+        if match is None:
+            raise ValueError("source root type is not a sum of A components")
+        multiplicity = int(match.group(1) or 1)
+        orders.extend([int(match.group(2)) + 1] * multiplicity)
+    if len(orders) != 3 or sum(order - 1 for order in orders) != 15:
+        raise ValueError("source must have three A components of total rank 15")
+    return orders
+
+
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
+parser.add_argument("--ns-id", default="NS0028")
 parser.add_argument("--source-id", default="NS0028-S001")
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 parser.add_argument("--prime", type=int, default=5)
@@ -113,40 +131,54 @@ if arguments.examples < 0 or arguments.max_samples < 0:
 source_path = arguments.source.resolve()
 output_path = arguments.output.resolve()
 source_payload = json.loads(source_path.read_text())
-source_entry = next(
+source_matches = [
     row
     for row in source_payload["sources"]
-    if row["ns_id"] == "NS0028" and row["source_id"] == arguments.source_id
-)
+    if row["source_id"] == arguments.source_id
+    and (row.get("ns_id", arguments.ns_id) == arguments.ns_id)
+]
+if len(source_matches) != 1:
+    raise ValueError(
+        f"expected one source row for {arguments.ns_id}:{arguments.source_id}, "
+        f"found {len(source_matches)}"
+    )
+source_entry = source_matches[0]
 source = source_entry["source"]
-assert source["root_type"] == "A2+A6+A7"
 assert source["root_rank"] == 15
 assert source["mw_rank_for_rho_19"] == 2
 assert source["root_lattice_primitive"] and source["torsion"] == 1
-assert source["mw_height_gram"] in (
-    [["52/21", "-1"], ["-1", "25/8"]],
-    [["52/21", "1"], ["1", "25/8"]],
+fibre_orders = semistable_fibre_orders(source["root_type"])
+default_ns0028 = (
+    arguments.ns_id == "NS0028"
+    and arguments.source_id == "NS0028-S001"
+    and fibre_orders == [3, 7, 8]
 )
+if default_ns0028:
+    assert source["mw_height_gram"] in (
+        [["52/21", "-1"], ["-1", "25/8"]],
+        [["52/21", "1"], ["1", "25/8"]],
+    )
 
 field = GF(arguments.prime)
 assert field.characteristic() not in (2, 3)
 ring = PolynomialRing(field, "t")
 t = ring.gen()
 
-# Three jets at zero, seven at one, and eight at infinity impose the
-# I3+I7+I8 profile.  B has thirteen coefficients, so five compatibility
-# equations remain on the normalized degree-eight A polynomial.
+# The three declared jets at zero, one, and infinity impose the semistable
+# profile.  Their orders total 18.  B has thirteen coefficients, so five
+# compatibility equations remain on the normalized degree-eight A polynomial.
+order_zero, order_one, order_infinity = fibre_orders
 rows = []
-for jet in range(3):
+for jet in range(order_zero):
     rows.append([field(index == jet) for index in range(13)])
-for jet in range(7):
+for jet in range(order_one):
     rows.append(
         [
             field(binomial(index, jet)) if index >= jet else field.zero()
             for index in range(13)
         ]
     )
-for jet in range(8):
+for jet in range(order_infinity):
     rows.append([field(index == 12 - jet) for index in range(13)])
 hermite = matrix(field, rows)
 assert hermite.nrows() == 18 and hermite.ncols() == hermite.rank() == 13
@@ -169,15 +201,15 @@ for digits in itertools.product(range(arguments.prime), repeat=8):
     if not a_coefficients[8]:
         continue
     A = ring(a_coefficients)
-    at_zero = a_coefficients[:3]
+    at_zero = a_coefficients[:order_zero]
     at_one = [
         sum(
             a_coefficients[index] * field(binomial(index, jet))
             for index in range(jet, 9)
         )
-        for jet in range(7)
+        for jet in range(order_one)
     ]
-    at_infinity = [a_coefficients[8 - jet] for jet in range(8)]
+    at_infinity = [a_coefficients[8 - jet] for jet in range(order_infinity)]
     positive = (
         multiplicative_branch(at_zero, 1),
         multiplicative_branch(at_one, 1),
@@ -205,10 +237,10 @@ for digits in itertools.product(range(arguments.prime), repeat=8):
                 order_at(discriminant_core, field.one()),
                 24 - discriminant_core.degree(),
             )
-            if orders != (3, 7, 8):
+            if orders != tuple(fibre_orders):
                 continue
             exact_orders += 1
-            divisor = t**3 * (t - 1) ** 7
+            divisor = t**order_zero * (t - 1) ** order_one
             residual, remainder = discriminant_core.quo_rem(divisor)
             assert not remainder and residual.degree() == 6
             if residual(0) == 0 or residual(1) == 0:
@@ -231,9 +263,9 @@ for digits in itertools.product(range(arguments.prime), repeat=8):
                             int(value) for value in b_coefficients
                         ],
                         "discriminant_orders": {
-                            "0": 3,
-                            "1": 7,
-                            "infinity": 8,
+                            "0": order_zero,
+                            "1": order_one,
+                            "infinity": order_infinity,
                         },
                         "residual_discriminant_coefficients_low_to_high": [
                             int(value) for value in residual
@@ -245,13 +277,42 @@ for digits in itertools.product(range(arguments.prime), repeat=8):
                             }
                             for factor, multiplicity in residual.factor()
                         ],
-                        "geometric_fibre_profile": "I3+I7+I8+6I1",
+                        "geometric_fibre_profile": (
+                            f"I{order_zero}+I{order_one}+I{order_infinity}+6I1"
+                        ),
                     }
                 )
 
 exhausted = sample == exhaustive_total and not arguments.max_samples
+fibre_profile = f"I{order_zero}+I{order_one}+I{order_infinity}+6I1"
+normalized_supports = [
+    f"0:I{order_zero}",
+    f"1:I{order_one}",
+    f"infinity:I{order_infinity}",
+]
+dimension_key = (
+    "expected_NS0028_MW2_locus_dimension"
+    if default_ns0028
+    else f"expected_{arguments.ns_id}_MW2_locus_dimension"
+)
+section_marking = (
+    {
+        "P": "pole zero; depth one at I3 and I7; identity at I8",
+        "Q": "pole zero; identity at I3 and I7; depth one at I8",
+        "height_gram": source["mw_height_gram"],
+    }
+    if default_ns0028
+    else {
+        "status": "NOT_IMPOSED_AT_FIBRE_GATE",
+        "height_gram": source["mw_height_gram"],
+    }
+)
 payload = {
-    "schema": "elkies-k3.lattice-foundry-ns0028-source-ansatz-modp.v1",
+    "schema": (
+        "elkies-k3.lattice-foundry-ns0028-source-ansatz-modp.v1"
+        if default_ns0028
+        else "elkies-k3.lattice-foundry-three-support-semistable-source-ansatz-modp.v1"
+    ),
     "status": (
         "PASS_EXACT_EXHAUSTIVE_MODULAR_SOURCE_FIBRE_ANSATZ"
         if exhausted and squarefree
@@ -278,18 +339,14 @@ payload = {
         "short_weierstrass": "y^2=x^3+A(t)x+B(t)",
         "degree_bounds": {"A": 8, "B": 12},
         "normalization": "A(0)=-3; supports at 0,1,infinity",
-        "normalized_reducible_supports": ["0:I3", "1:I7", "infinity:I8"],
+        "normalized_reducible_supports": normalized_supports,
         "hermite_conditions": 18,
         "B_coefficient_rank": 13,
         "compatibility_equations_on_A": 5,
         "expected_fibre_stratum_dimension": 3,
-        "expected_NS0028_MW2_locus_dimension": 1,
+        dimension_key: 1,
         "expected_MW_conditions_still_missing": 2,
-        "section_marking": {
-            "P": "pole zero; depth one at I3 and I7; identity at I8",
-            "Q": "pole zero; identity at I3 and I7; depth one at I8",
-            "height_gram": source["mw_height_gram"],
-        },
+        "section_marking": section_marking,
     },
     "examples": examples,
     "source": {
@@ -297,22 +354,43 @@ payload = {
         "artifact_sha256": hashlib.sha256(source_path.read_bytes()).hexdigest(),
         "source_id": arguments.source_id,
         "source_gram_sha256": source["gram_sha256"],
-    },
+    }
+    | (
+        {}
+        if default_ns0028
+        else {
+            "ns_id": arguments.ns_id,
+            "determinant": int(source_entry.get("determinant", source["determinant"])),
+            "root_type": source["root_type"],
+            "mw_height_gram": source["mw_height_gram"],
+        }
+    ),
     "proof_boundary": {
         "proved": (
             "Every stored example is an exact short Weierstrass K3 model over "
-            "the displayed finite field with fibre profile I3+I7+I8+6I1."
+            f"the displayed finite field with fibre profile {fibre_profile}."
         ),
         "not_proved": (
-            "The two pole-zero MW sections, full NS0028 lattice marking, rational "
-            "parameterization, characteristic-zero lifting, and neighbour route "
-            "are not proved."
+            "The two MW sections, full lattice marking, rational parameterization, "
+            "characteristic-zero lifting, and neighbour route are not proved."
+            if not default_ns0028
+            else (
+                "The two pole-zero MW sections, full NS0028 lattice marking, rational "
+                "parameterization, characteristic-zero lifting, and neighbour route "
+                "are not proved."
+            )
         ),
     },
     "reproduce": (
         "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python "
         "elkies-k3/scripts/probe_lattice_foundry_ns0028_source_ansatz_modp.sage "
-        f"--prime {arguments.prime} --examples {arguments.examples}"
+        + (
+            f"--ns-id {arguments.ns_id} --source-id {arguments.source_id} "
+            f"--output {display_path(output_path)} "
+            if not default_ns0028
+            else ""
+        )
+        + f"--prime {arguments.prime} --examples {arguments.examples}"
     ),
 }
 
@@ -324,9 +402,14 @@ else:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(serialized)
 
-print(
+progress_prefix = (
     "FOUNDRYNS0028ANSATZ|"
-    f"p={arguments.prime}|samples={sample}|compatible={compatible}|"
+    if default_ns0028
+    else f"FOUNDRY3ASEMISTABLEANSATZ|ns={arguments.ns_id}|source={arguments.source_id}|"
+)
+print(
+    progress_prefix
+    + f"p={arguments.prime}|samples={sample}|compatible={compatible}|"
     f"squarefree={squarefree}|stored={len(examples)}|exhausted={int(exhausted)}|"
     f"status={'PASS' if squarefree else 'BOUNDED_NEGATIVE'}",
     flush=True,

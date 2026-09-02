@@ -57,14 +57,16 @@ The exact ranking artifact orders candidates lexicographically by:
 2. number of reducible-fibre supports;
 3. compatibility with a semistable all-`A` configuration;
 4. expected fibre-stratum dimension;
-5. minimum nonzero-section pole order;
-6. known rational marking before unknown marking, then Galois orbit size;
-7. expected number of additional coefficient conditions;
-8. certified neighbour cost, with an unknown route ranked last;
-9. the five audited low-degree multisection coordinates as a final tie-break.
+5. minimum possible maximum pole order of a complete MW basis;
+6. minimum nonzero-section pole order;
+7. known rational marking before unknown marking, then Galois orbit size;
+8. expected number of additional coefficient conditions;
+9. certified neighbour cost, with an unknown route ranked last;
+10. the five audited low-degree multisection coordinates as a final tie-break.
 
 Root rank, MW rank, support count, all-`A` compatibility, and the displayed
-minimum pole order are exact lattice computations.  The deformation count
+single-section and complete-basis pole orders are exact lattice computations.
+The deformation count
 
 ```text
 expected fibre-stratum dimension = 18 - root rank = 1 + MW rank
@@ -112,24 +114,29 @@ census, for 2,306 stored candidates in 48 NS classes.  A prescribed-root row
 retains its declared finite-slice scope; the scorer does not promote it to a
 complete fibration classification or invent a rational marking or route.
 
-Restricted to that pinned 97-row MW2 inventory and classes with an audited
-rootless MW17 target, the surface leaders are
+Restricted to that pinned 97-row MW2 inventory and classes with a rootless
+MW17 target, the surface leaders after the complete-basis pole audit are
 
-| rank | NS | source root type | source MW | audited target |
-|---:|---|---|---:|---|
-| 1 | NS0028 | `A2+A6+A7` | 2 | NS0028-F005 |
-| 2 | NS0011 | `A1+2A7` | 2 | NS0011-F002 |
-| 3 | NS0022 | `A1+2A7` | 2 | NS0022-F011 |
-| 4 | NS0005 | `A1+2A7` | 2 | NS0005-F008 |
-| 5 | NS0001 | `A2+A6+A7` | 2 | NS0001-F001 (R17) |
+| rank | NS | source root type | source MW | best basis pole profile | one rootless target |
+|---:|---|---|---:|---:|---|
+| 1 | NS0028 | `A2+A6+A7` | 2 | `[0,0]` | NS0028-F005 |
+| 2 | NS0007 | `A2+A6+A7` | 2 | `[0,0]` | NS0007-F003 |
+| 3 | NS0005 | `A1+2A7` | 2 | `[0,1]` | NS0005-F008 |
+| 4 | NS0031 | `A1+2A7` | 2 | `[0,1]` | NS0031-F002 |
+| 5 | NS0036 | `A2+A6+A7` | 2 | `[0,1]` | NS0036-F001 |
 
-All five have three all-`A` supports.  Minimum section pole, rational marking,
-and neighbour cost remain open on these prescribed-root rows, so their present
-order is decided by the final audited multisection coordinates, beginning with
-the exact degree-two count.  It is a ranking of the declared stored inventory,
-not a claim that unsearched slices cannot contain a better source.
+All five have three all-`A` supports.  The affine-CVP audit enumerates every
+tail class capable of improving the displayed MW basis and then compares every
+unimodular pair.  Among all 97 rows, the best maximum pole is zero for 4 rows,
+one for 48, two for 22, three for 6, four for 10, five for 6, and twenty for
+one.  A cheap single section is therefore not a sufficient source metric:
+`NS0011-S001` has minimum pole zero but best complete-basis profile `[0,2]`,
+whereas `NS0011-S002` has `[1,1]` and is the equation-first choice on that
+surface.  Rational marking and neighbour cost remain open.  This is a ranking
+of the declared stored inventory, not a claim that unsearched slices cannot
+contain a better source.
 
-### Minimum-section pole audit and the current equation candidate
+### Section-basis pole audits and the current equation candidate
 
 Support count alone is a poor proxy for the source equation.  The exact
 rank-one pole audit solves an affine CVP in each primitive rank-16 root lattice
@@ -138,6 +145,15 @@ for every multiple capable of improving the current norm.  Of 2,134 MW1 rows,
 plus an independent 256-bit MPFR closest-vector audit.  The remaining 792 are
 left open because their root lattice is nonprimitive and torsion/glue can
 change the section lattice.
+
+For MW2 the cheapest single section is also insufficient.  The rank-two audit
+uses the exact height Schur complement to enumerate every quotient class below
+the displayed-basis upper bound, repeats every affine CVP in double-double and
+MPFR-256 arithmetic, recomputes the integral norm exactly, and compares every
+tail pair of determinant one.  It thereby certifies the minimum possible
+maximum pole of a complete source marking, subject only to the stated
+cross-precision CVP boundary.  Its artifact has SHA-256
+`387a95156a06acb342fa4233f0aa69fb09e4c53fd69020a19e686da7cc4bcf38`.
 
 The sharp warning is `NS0022`: its one-support `A16/MW1` source wins the
 support-first lexicographic score, but its generator has height `1018/17` and
@@ -229,6 +245,26 @@ was run.  The pinned sample artifacts have SHA-256
 and
 `bc683b8e87e4d589d308a002070a898a53f4a02e86ab22d69ee301403ac216b7`.
 
+A section-first elimination now gives a much smaller fixed-`lambda=2`
+`GF(7)` chart: 19 variables and 19 equations after reconstructing `a3,a4`
+from the two split `I7` node jets.  Fixing
+`a2_4,a2_3,a2_2,a2_1,si_0,sl_0` partitions the chart into `7^6=117649`
+independent exact ideals.  The first 10,000 fully expanded cases are all unit
+ideals.  This is a bounded prefix only; the remaining 107,649 cases, other
+cross-ratios, other primes, descent, and characteristic zero remain open.
+Seven cases in the pinned parallel run first hit its 10-second timeout and
+were then resolved individually with a 60-second bound; the repair artifact
+retains the raw-run and singleton hashes and has SHA-256
+`7d30c0302547240427f8eecf8e5d38ffe36f0f11546f1104e5b2c2a44b18331d`.
+
+An attempted speedup exposed an important computational trap.  The compact
+factored strings expand to exactly the same 19 Sage polynomials, but msolve's
+factored-input path reported 12 nonunit cases in this prefix.  Clean expanded
+replay proves all 12 unit, beginning with lexicographic index 5932.  The false
+full-census artifact was removed, the runner now refuses factored syntax by
+default, and the shard combiner accepts only fully expanded inputs.  No source
+model is claimed from the rejected outputs.
+
 ### Later pole-zero candidates: NS0034, NS0043, and NS0030
 
 The next exact pole-zero source is `NS0034-S008` from the group-a shard.  It
@@ -296,14 +332,102 @@ one I7: 6/7,   other I7: 10/7.
 
 The ordered five-support ansatz normalizes the I3 and identity I2 at zero and
 one, the depth-one I2/I7 at `lambda,mu`, and the depth-two I7 at infinity.
-A coprime-stride `GF(5)` pilot checks 100,000 normalized `A` polynomials in
-each of the six ordered support pairs.  Among 600,000 rows it finds 346 signed
-Hermite-compatible branches and no branch with the exact prescribed orders
-and squarefree residual cubic.  This is bounded routing evidence only; its
-artifact SHA-256 is
-`8cd522e1f7144b18083b9c92a99f155aa595861f0fcabcf114a69b80559f3bbb`.
-The remaining coefficient rows, the second local twist, characteristic-zero
-descent, and a neighbour corridor remain open.
+The completed `GF(5)` certificate joins two adjacent segments of one
+coprime-stride permutation for each of the six ordered support pairs.  It
+therefore covers all `6*5^8=2,343,750` normalized `A` polynomials exactly
+once.  Of 960,000 locally eligible signed branches, 1,536 satisfy Hermite
+compatibility, exactly 256 per support pair, and none has the exact prescribed
+orders.  Thus no squarefree residual cubic or section scan remains in this
+displayed normalized chart.  This is an exact characteristic-five chart
+obstruction, not a characteristic-zero nonexistence theorem.  The complete
+artifact has SHA-256
+`807570f44a1aedd69ea952c4a8cb39df3a2f28afdd78615bac5f3d6bcb36e52f`.
+
+### A marked MW1--MW16 lead: NS0048
+
+Allowing an MW16 rather than insisting on a rootless MW17 endpoint exposes a
+substantially better equation lead.  The primitive source `NS0048-S030` has
+root type `A1+A4+A6+D5`, MW rank one, determinant 740, generator height
+`37/14`, and minimum pole zero.  Its exact component corrections are
+
+```text
+I5: 0,   I7: 6/7,   I1*: 0,   I2: 1/2.
+```
+
+Putting the `I1*` fibre at infinity reduces the short-model degree bounds to
+`deg A<=6, deg B<=9`; the finite supports have profile `I5+I7+I2`, and the
+same NS class contains the MW16 frame `NS0048-F001`.  The complete normalized
+`GF(5)` fibre chart checks 46,875 rows and has no exact model.  In contrast,
+the complete `GF(7)` chart checks 588,245 rows and finds six squarefree
+`I5+I7+I2+I1*+3I1` models.  Exhausting the component-adapted `7^3` X chart on
+each model finds 38 polynomial sections and exactly one marked sign pair, with
+the required depths `(1,1)`, identity components at I5/I1*, height `37/14`,
+and determinant 740.  The nonsquare twist has no marked section.
+
+A disjoint bounded `GF(11)` suffix checks 5.4 million coefficient rows, finds
+14 squarefree fibre models, and again finds one marked sign pair in the square
+twist.  At the displayed marked points in characteristics 7 and 11, the
+22-equation, 19-variable section-built family has Jacobian rank 18.  Thus both
+points lie on smooth one-dimensional modular loci.  Fixing `a1=1` at the
+characteristic-eleven point gives a unique Hensel lift through `11^80`, but
+its coordinates do not rationally reconstruct.  The same failure occurs for
+the other natural nonzero-tangent coordinate charts tested locally; this is
+not evidence that the curve has no rational point.
+
+Translating the marked section to `(0,0)` gives
+
+```text
+y^2+a3*y=x^3+a2*x^2+a4*x,
+a3=(t-1)(t-lambda)r,  a4=(t-1)(t-lambda)s.
+```
+
+Factoring the forced support square from the discriminant cuts the
+one-dimensional modular system from 21,606 to 9,071 monomials while retaining
+the pinned modular point and Jacobian rank.  The fixed-`lambda` system falls
+only from 7,218 to 6,503 monomials, so repeating the earlier multi-GiB msolve
+attempt is not yet justified.  A rational source equation and a physical
+corridor to `NS0048-F001` remain open.  The principal fibre and marked-section
+artifacts have SHA-256
+`571404a53ee1f9f6ffab8c002d56827d4ffe364939e0cd706ab5fb81e80a4114`
+and
+`6b7e7259fd693d2779bf7258f8cf9deee10402bd16b077a77c4791508edb2bc4`.
+
+### The multisection leader tested at equation level: NS0028
+
+The complete degree-three census below makes `NS0028-F005` the richest of the
+current rootless MW17 batch.  Its two prescribed-root sources `NS0028-S001`
+and `NS0028-S002` have the semistable root type `A2+A6+A7`, MW rank two,
+determinant 1132, and height Gram
+
+```text
+[52/21  -1]       [52/21   1]
+[   -1 25/8]  or  [    1 25/8].
+```
+
+The complete norm-four shell proves that both generators have pole zero.  One
+has corrections `2/3,6/7,0` at `(I3,I7,I8)` and the other has
+`0,0,7/8`; hence the marked equation asks only for depth-one node contacts at
+I3/I7 for `P` and at I8 for `Q`.  This makes the expected source profile
+`I3+I7+I8+6I1` unusually attractive.
+
+The fibre profile is plentiful but the pair marking is not.  The complete
+normalized `GF(5)` scan finds 25 squarefree fibre models; exhaustive
+component-adapted X-only scans of both twist classes find neither `P` nor `Q`.
+The complete `GF(7)` scan finds 112 squarefree models.  In the square twist it
+finds ten `Q` sections and no `P`; in the nonsquare twist it finds ten `P`
+sections and two `Q` sections, but the two types occur on disjoint models.
+Consequently neither characteristic contains a marked MW2 pair in the
+displayed normalized chart.  The characteristic-seven fibre and two section
+artifacts have SHA-256
+`59e22a036d740ffe9e480115c2730caf4c77da25d872449e9de82307611ce4a3`,
+`6fd66ef0e495e5814867698e3aa987da236be1fe01d53c8dce9fabbf93439cb0`,
+and
+`9514cc738c2a2546071bc2a9588e64aee07aa4ff618dfd59fec89aa1b4603136`.
+
+This is exactly the kind of distinction the source-first optimizer needs:
+NS0028 wins the low-degree multisection predictor and has exceptionally cheap
+abstract sections, but NS0048 is presently the stronger equation lead because
+its full marking already lies on smooth modular curves at two primes.
 
 ## Direct prescribed-root enumeration
 
@@ -448,8 +572,11 @@ R17 is not extremal even for the exact minimal rational-bisection coordinate.
 Genus-one bisection counts are exact lattice-candidate counts, but global
 nefness, irreducibility, and arithmetic descent are not yet certified.
 
-The primary complete degree-three run covers the current top five from the
-pinned MW2 source ranking above.  For every frame it visits all
+The primary complete degree-three run covers the five surfaces frozen from the
+earlier cheapest-single-section MW2 ranking: NS0028, NS0011, NS0022, NS0005,
+and R17/NS0001.  The later complete-basis audit changes the source ranking, so
+this is now a deliberately pinned comparison batch rather than a claim that
+those are the current optimizer top five.  For every frame it visits all
 `3^17 = 129,140,163` translation cosets.  Inversion reduces the CVP work to
 `64,570,082` representatives per frame, so the certificate accounts for
 645,700,815 cosets and 322,850,410 inversion representatives.

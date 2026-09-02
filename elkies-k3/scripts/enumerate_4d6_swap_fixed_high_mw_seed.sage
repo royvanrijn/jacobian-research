@@ -576,6 +576,13 @@ def build(catalog, determinant_bound, minimum_mw_rank):
         for orbit in orbit_records
     )
     assert counters["coordinate_subsets_tested"] == 11440
+    assert counters["determinant_rejected"] == 0
+    assert counters["discriminant_length_rejected"] == 183
+    assert counters["mw_rank_below_factory_floor_rejected"] == 11257
+    assert counters["mod2_trivial_rejected"] == 0
+    assert len(seed_records) == 0
+    assert len(orbit_records) == 0
+    assert len(surface_rows) == 0
     assert len(orbit_records) <= len(seed_records)
     assert all(
         orbit["section_orbit_size"] in (1, 2, 3, 4, 6, 8, 12, 24)

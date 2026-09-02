@@ -142,6 +142,34 @@ parser.add_argument("--check", action="store_true")
 arguments = parser.parse_args()
 paths = arguments.shard or sorted(GENERATED.glob(PATTERN))
 result = build(paths)
+if arguments.shard is None:
+    assert result["parameters"] == {
+        "prefix_start_zero_based_inclusive": 0,
+        "prefix_stop_zero_based_exclusive": 10547,
+        "determinant_bound": 500,
+        "prefix_artifact_sha256": (
+            "abc7674c272cdd80cbad5e88199be9f190cf8d498e80979d7cd879623706ba83"
+        ),
+    }
+    assert result["accounting"] == {
+        "completion_shards": 43,
+        "prefixes_processed": 10547,
+        "shard_local_residual_m24_records": 3051,
+        "shard_local_k3_compatible_genus_records": 3015,
+        "primitive_closure_index_distribution": {"1": 2907, "2": 144},
+        "determinant_distribution": {
+            "384": 17,
+            "448": 7,
+            "480": 1982,
+            "486": 12,
+            "500": 1033,
+        },
+        "mordell_weil_rank_distribution": {
+            "12": 387,
+            "13": 2423,
+            "14": 241,
+        },
+    }
 encoded = json.dumps(result, indent=2, sort_keys=True) + "\n"
 if arguments.check:
     if not arguments.output.exists() or arguments.output.read_text() != encoded:

@@ -59,6 +59,13 @@ parser.add_argument(
     action="store_true",
     help="replace dense discriminant I7 conditions by sparse split-node jets",
 )
+parser.add_argument(
+    "--fixed-a2-node-case",
+    help=(
+        "with --parametrize-I7-nodes, append linear equations fixing "
+        "a2_4,a2_3,a2_2,a2_1,si_0,sl_0 to six comma-separated values"
+    ),
+)
 parser.add_argument("--check", action="store_true")
 args = parser.parse_args()
 
@@ -154,8 +161,29 @@ else:
     equations += [coefficient_ring(H[index]) for index in range(14, 21)]
 if args.saturate_exact_I2:
     equations.append(generators["u0"] * coefficient_ring(H[0]) - 1)
+fixed_case_variables = [
+    "a2_4",
+    "a2_3",
+    "a2_2",
+    "a2_1",
+    "si_0",
+    "sl_0",
+]
+fixed_case_values = None
+if args.fixed_a2_node_case:
+    if not args.parametrize_I7_nodes:
+        raise SystemExit("--fixed-a2-node-case requires --parametrize-I7-nodes")
+    tokens = args.fixed_a2_node_case.split(",")
+    if len(tokens) != len(fixed_case_variables):
+        raise SystemExit("--fixed-a2-node-case requires six comma-separated values")
+    fixed_case_values = [field(int(token)) for token in tokens]
+    equations += [
+        generators[name] - value
+        for name, value in zip(fixed_case_variables, fixed_case_values)
+    ]
 expected_equations = 30 if args.parametrize_I7_nodes else 16
 expected_equations += int(args.saturate_exact_I2)
+expected_equations += len(fixed_case_variables) if fixed_case_values is not None else 0
 if len(equations) != expected_equations or any(not equation for equation in equations):
     raise ArithmeticError("unexpected section-first equation accounting")
 
@@ -166,6 +194,8 @@ stem = f"p{prime}-lambda{int(lambda_value)}" + (
 ) + (
     "-satI2" if args.saturate_exact_I2 else ""
 )
+if fixed_case_values is not None:
+    stem += "-case-" + "-".join(str(int(value)) for value in fixed_case_values)
 msolve_path = output_dir / f"{stem}.ms"
 metadata_path = output_dir / f"{stem}.json"
 msolve_text = ",".join(names) + "\n" + str(prime) + "\n"
@@ -213,6 +243,14 @@ metadata = {
             "exact_I2_rabinowitsch": int(args.saturate_exact_I2),
         },
         "split_I7_node_parametrization": bool(args.parametrize_I7_nodes),
+        "fixed_a2_node_case": (
+            {
+                name: int(value)
+                for name, value in zip(fixed_case_variables, fixed_case_values)
+            }
+            if fixed_case_values is not None
+            else None
+        ),
         "equation_total_degrees": [int(equation.degree()) for equation in equations],
         "equation_term_counts": [len(equation.monomials()) for equation in equations],
         "msolve_input": relative(msolve_path),
