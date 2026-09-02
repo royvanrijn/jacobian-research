@@ -116,6 +116,12 @@ parser.add_argument("--threads", type=int, default=4, help="threads per msolve p
 parser.add_argument("--jobs", type=int, default=2, help="concurrent msolve processes")
 parser.add_argument("--timeout", type=float, default=180.0, help="seconds per distinct system")
 parser.add_argument("--max-groups", type=int, help="optional pilot limit")
+parser.add_argument(
+    "--block",
+    type=int,
+    action="append",
+    help="solve only the distinct-system group containing this block (repeatable)",
+)
 parser.add_argument("--msolve", type=Path, default=Path(shutil.which("msolve") or "msolve"))
 parser.add_argument("--output-dir", type=Path)
 parser.add_argument("--summary", type=Path)
@@ -134,6 +140,8 @@ tag = (
     f"singleton-{candidate['key']}"
     if candidate["kind"] == "singleton"
     else f"product-{candidate['key'].replace(':', '-')}"
+    if candidate["kind"] == "product"
+    else f"genus-one-{candidate['key']}"
 )
 prime = int(export["prime"])
 if args.output_dir is None:
@@ -159,6 +167,20 @@ for system in export["systems"]:
         raise ArithmeticError(f"system digest mismatch: {system_path}")
     groups_by_digest.setdefault(actual_digest, []).append(system)
 groups = sorted(groups_by_digest.values(), key=lambda group: int(group[0]["block_index"]))
+if args.block:
+    requested_blocks = set(args.block)
+    groups = [
+        group
+        for group in groups
+        if requested_blocks.intersection(int(item["block_index"]) for item in group)
+    ]
+    covered_requested = {
+        int(item["block_index"])
+        for group in groups
+        for item in group
+    }.intersection(requested_blocks)
+    if covered_requested != requested_blocks:
+        raise ValueError(f"unknown requested blocks: {sorted(requested_blocks - covered_requested)}")
 if args.max_groups is not None:
     groups = groups[: args.max_groups]
 
@@ -281,7 +303,7 @@ for result in results:
     classification = str(result["classification"])
     counts[classification] = counts.get(classification, 0) + 1
 covered_blocks = sum(len(result["equivalent_blocks"]) for result in results)
-complete = len(results) == len(groups_by_digest) and all(
+complete = not args.block and len(results) == len(groups_by_digest) and all(
     result["status"] == "completed" and result["classification"] in {
         "empty_over_algebraic_closure",
         "zero_dimensional",
@@ -309,6 +331,7 @@ payload = {
         "jobs": args.jobs,
         "threads_per_job": args.threads,
         "timeout_seconds_per_distinct_system": args.timeout,
+        "requested_blocks": args.block,
         "msolve": str(msolve_path),
         "msolve_sha256": msolve_digest,
     },

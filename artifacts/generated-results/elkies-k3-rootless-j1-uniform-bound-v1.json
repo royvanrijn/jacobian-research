@@ -1,0 +1,117 @@
+{
+  "conclusion": {
+    "complete_rootless_j2_class_count": 2,
+    "rootless_j1_class_count_lower_bound": 2,
+    "rootless_j1_class_count_upper_bound": 8,
+    "uniform_j1_multiplicity_upper_bound_per_j2_class": 4
+  },
+  "finite_form_rows": [
+    {
+      "cyclic_discriminant_form_generator_q": "773/948",
+      "frame_automorphism_discriminant_image_recorded_but_not_used": [
+        1,
+        947
+      ],
+      "hodge_image_units_mod_948": [
+        1,
+        947
+      ],
+      "hodge_left_cosets": [
+        [
+          1,
+          947
+        ],
+        [
+          157,
+          791
+        ],
+        [
+          317,
+          631
+        ],
+        [
+          473,
+          475
+        ]
+      ],
+      "j2_class": "published_R17",
+      "orthogonal_group_units_mod_948": [
+        1,
+        157,
+        317,
+        473,
+        475,
+        631,
+        791,
+        947
+      ],
+      "uniform_j1_multiplicity_upper_bound": 4
+    },
+    {
+      "cyclic_discriminant_form_generator_q": "1541/948",
+      "frame_automorphism_discriminant_image_recorded_but_not_used": [
+        1,
+        473,
+        475,
+        947
+      ],
+      "hodge_image_units_mod_948": [
+        1,
+        947
+      ],
+      "hodge_left_cosets": [
+        [
+          1,
+          947
+        ],
+        [
+          157,
+          791
+        ],
+        [
+          317,
+          631
+        ],
+        [
+          473,
+          475
+        ]
+      ],
+      "j2_class": "alternate_Q80",
+      "orthogonal_group_units_mod_948": [
+        1,
+        157,
+        317,
+        473,
+        475,
+        631,
+        791,
+        947
+      ],
+      "uniform_j1_multiplicity_upper_bound": 4
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-rootless-j2-niemeier-controls.json": "13e83ef68ec0e3c9f474b81955fb7a3842849546f164080bb1faa98a66481881",
+    "artifacts/generated-results/elkies-k3-rootless-j2-niemeier-first.json": "6b6cdacf9afc1b62c757c76de30a9a5fee7b3c66599f07a16afa18cc26a554b1"
+  },
+  "schema": "elkies-k3.rootless-j1-uniform-bound.v1",
+  "scope": {
+    "not_proved": "The exact J1 count, representatives for its surface-automorphism orbits, or a frame-dependent improvement from the recorded frame automorphism images.",
+    "proved": "The exact finite-form quotient in the uniform J1 multiplicity bound has four cosets for each of the two complete rootless J2 classes. Together with the rank-three Hodge-rigidity lemma, the rootless J1 count is at least two and at most eight."
+  },
+  "status": "PASS_EXACT_ROOTLESS_J1_UNIFORM_BOUND_NOT_CLASSIFICATION",
+  "theorem_inputs": {
+    "hodge_discriminant_image_units_mod_948": [
+      1,
+      947
+    ],
+    "hodge_isometry_group": [
+      "+identity",
+      "-identity"
+    ],
+    "literature_bound": "Braun--Kimura--Watari, arXiv:1312.4421, Proposition C'",
+    "picard_rank": 19,
+    "transcendental_rank": 3
+  }
+}

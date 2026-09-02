@@ -2800,6 +2800,7 @@ See
 [`elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md`](elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md).
 
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J2-COMPLETE c6f054948b04b507 -->
+<!-- status-consumer: EC-K3-H3-ROOTLESS-J1-UNIFORM-BOUND b71330a75ad2c9ad -->
 
 Audit the two-control rootless `J2` corpus, its exact local genus, the mass
 obstruction to an unfiltered full-genus traversal, and the complete
@@ -2823,6 +2824,8 @@ Niemeier-first classification:
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/classify_rootless_j2_niemeier_first.sage --check
+
+python3 elkies-k3/scripts/certify_rootless_j1_uniform_bound.py --check
 ```
 
 The target genus mass is
@@ -2848,6 +2851,11 @@ classes, the published R17 control and the alternate Q80 control, both with
 classification; the retained embedding cover is not deduplicated to full
 automorphism embedding-orbit or `J1` counts.  See
 [`elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md`](elkies-k3/ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md).
+The final dependency-free replay uses rank-three Hodge rigidity and the exact
+eight-element discriminant-form isometry group to give a uniform `J1`
+multiplicity bound of four per frame.  Thus the complete rootless `J1` count
+is rigorously in `[2,8]`; exact surface-automorphism representatives remain
+open.
 
 Build or byte-check the surface-first rank-seven auxiliary catalogue:
 
@@ -18037,7 +18045,7 @@ and
 
 <!-- status-consumer: EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD 3bcfe3534656b26f -->
 <!-- status-consumer: EC-K3-E6-RANK4-ROOTLESS-Q2Q4-CENSUS 2351738f44774cfe -->
-<!-- status-consumer: EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL bd12c183aa886b15 -->
+<!-- status-consumer: EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL 648ec884ce7152bb -->
 
 Replay the systematic E6 node-collision linear-chord incidence, its exact
 genus-`0/2` unordered component decomposition, the `QQ(k)` parameterization
@@ -18058,7 +18066,13 @@ saturated geometric determinant-78 `NS` with
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_e6_rank4_rootless_low_degree_search.sage --check
 
-sage -python \
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/classify_e6_rank4_det78_niemeier_frames.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/classify_e6_rank4_det78_niemeier_frames.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/classify_e6_rank4_det78_niemeier_frames.sage \
   --rootless-obstruction --check
 ```
@@ -18081,17 +18095,24 @@ zero-neutral old-degree two, three, and four shells and finds no rootless frame
 among their `79,837` primitive classes.  The focused Niemeier checker then
 covers 1,591 primitive `A3+A2+A1` anchors in all 23 rooted Niemeier lattices;
 the residual root rank is always at least 14, which exceeds the final
-auxiliary vector's `13/4` norm budget under the rootless hypothesis.  This
-proves global rootless nonexistence for the determinant-78 frame genus at
-`O(NS)`/J2 level.  See
-[`elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md`](elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md).
+auxiliary vector's `13/4` norm budget under the rootless hypothesis.  The full
+Niemeier run enumerates `37,397` primitive embedding-cover points and
+deduplicates them to exactly `1,549` J2 frame classes.  Their root ranks run
+from 10 through 17, with distribution
+`10:1, 11:45, 12:249, 13:543, 14:477, 15:200, 16:33, 17:1`; hence the maximum
+MW rank is 7 and no rootless MW17 frame exists.  The reciprocal-automorphism
+sum equals the exact genus mass
+`1463420154787/4131952105881600`.  See
+[`elkies-k3/E6_RANK4_DET78_NIEMEIER_CLASSIFICATION_2026-09-03.md`](elkies-k3/E6_RANK4_DET78_NIEMEIER_CLASSIFICATION_2026-09-03.md).
 
 ### Integral rank-transfer and character-glue calculus
 
-<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 2d15a35bdecc0493 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 7eeeeaa80d9b2bf3 -->
 <!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
 <!-- status-consumer: EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE 52de13c8443f2b7d -->
-<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK e79b6132483233bf -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK 3127e24cc505f646 -->
+<!-- status-consumer: EC-K3-E6-DET78-PROSPECTIVE-BRIDGE-NEGATIVE d23a0abd146c2ed9 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-THETA-CONVOLUTION 5ebbd3d242fdb3db -->
 
 Generate and byte-check the equation-free census, then replay the local
 bridge and involution graph-glue theorems with
@@ -18099,6 +18120,8 @@ bridge and involution graph-glue theorems with
 ```bash
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage --check
 sage -python elkies-k3/scripts/benchmark_integral_rank_transfer_bridge_predictor.sage --check
+sage -python elkies-k3/scripts/benchmark_e6_det78_prospective_bridge_predictor.sage --check
+sage -python elkies-k3/scripts/certify_integral_rank_transfer_theta_convolution.sage --check
 sage -python elkies-k3/scripts/certify_integral_character_glue_calculus.sage --check
 sage -python elkies-k3/scripts/certify_r17_norm12_103b2_mw_glue.sage \
   --skip-specialization-saturation --check
@@ -18116,6 +18139,21 @@ rootless classes among five candidates, versus five among all 14 classes
 (`2.24x` precision enrichment, `80%` recall).  Because those cores and
 determinants come from successful edges, neither retrospective test passes the
 prospective new-algorithm gate.
+The blind determinant-78 replay closes the first untouched-shell gate as a
+negative control: all 277 primitive candidates have glue-coset minimum two,
+despite child root ranks 12 through 15 and 31 distinct classes in the
+mass-closed truth catalogue.  Hence bridge minimum alone is not a prospective
+ranking statistic; the next design must retain the decorated root profile on
+glue classes.  Since this held-out genus has no rootless class, positive
+rootless recall remains untested.
+The theta-convolution replay then implements the exact inverse gate on the
+four complete terminal fixed-core censuses.  Starting from the four cyclic
+bridge determinants, it independently enumerates all fourteen reduced
+positive even binary bridges, derives all 28 oriented graph multipliers from
+finite-form isotropy, and checks their theta convolutions without constructing
+rank-17 children.  It reproduces every independent signed-root count and
+selects exactly the five rootless classes.  This is a proved fixed-core
+zero-support enumerator, not a speedup or automatic core-generation theorem.
 The character replay exhausts the E6 `2+1` and `2+2` involution graphs after
 the declared factor-12 integral scaling.  The norm-twelve byte check reuses
 the pinned full saturation record; generating that artifact without the skip

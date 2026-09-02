@@ -1418,6 +1418,80 @@ an exact theorem and replay for the selected marked edges, not a completeness
 claim for all primitive `U` embeddings or a proof that every rootless frame is
 reachable by such edges.
 
+### Corollary H0: theta convolution gives an inverse glue enumerator
+
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-THETA-CONVOLUTION 5ebbd3d242fdb3db -->
+
+Let `K` and `C` be positive-definite even lattices.  For a discriminant class
+`a in A_K` and a nonnegative rational number `nu`, define the finite coset
+theta coefficient
+
+```text
+theta_K(a,nu) = #{x in K dual : x modulo K=a and x^2=nu},
+```
+
+and define `theta_C` similarly.  If `H` is an isotropic subgroup of
+`A_K direct_sum A_C` and `W_H` is the corresponding even overlattice of
+`K direct_sum C`, then
+
+```text
+#Phi(W_H)
+ = sum over (a,b) in H
+     sum over nu in QQ intersect [0,2]
+       theta_K(a,nu) * theta_C(b,2-nu).
+```
+
+Only finitely many `nu` contribute.  Put
+
+```text
+rho_KC(a,b)
+ = sum_nu theta_K(a,nu) * theta_C(b,2-nu).
+```
+
+Then `W_H` is rootless if and only if every element of `H` lies in the zero
+support of `rho_KC`.  For graph glue, allowed root-annihilating mutations can
+therefore be generated directly:
+
+1. compute the low-norm coset theta tables of `K` once;
+2. compute the rank-two table of each proposed bridge `C`;
+3. convolve the two tables;
+4. enumerate isotropic graph subgroups contained in the zero support;
+5. construct and classify only the surviving overlattices.
+
+#### Proof
+
+The overlattice is the disjoint union
+
+```text
+W_H = union over (a,b) in H of (K+a) direct_sum (C+b).
+```
+
+Orthogonality makes the norm of `(x,y)` equal to `x^2+y^2`.  Counting the
+vectors of total norm two in each disjoint coset gives the convolution
+formula.  Every summand is a nonnegative integer, so the total vanishes
+exactly when the convolution vanishes on every selected glue class. QED.
+
+This is the exact inverted operation sought by the foundry: for a fixed core
+and bridge universe it enumerates root-annihilating glue before constructing
+rank-17 children.  It does not solve core generation, bound the number of
+bridge classes, or guarantee a speedup.  Negative experiment H0a below shows
+that computing only the least coset norm can be slower than direct root
+enumeration and loses all ranking information on one held-out shell; cached
+theta convolution must be benchmarked separately.
+
+The exact implementation
+[`certify_integral_rank_transfer_theta_convolution.sage`](scripts/certify_integral_rank_transfer_theta_convolution.sage)
+computes and hash-locks the complete norm-at-most-two theta tables for the
+four terminal H3, Q80, NS0024, and Golay-720 cores.  Starting only from each
+cyclic bridge determinant, it independently enumerates every reduced positive
+even binary bridge and recovers the complete fourteen-class universe.  It
+then derives all 28 oriented graph multipliers from finite-form isotropy alone
+and evaluates their convolutions before reading child outcomes or constructing
+any rank-17 child.  The convolution count agrees with the stored independent
+child-root count in every case and selects exactly the five rootless bridge
+classes.  This proves the inverse enumerator on that complete fixed-core
+universe; it does not yet prove a speedup or a core-generation rule.
+
 ### Negative experiment H0: the orthogonal split is not a useful predictor
 
 For any proposed replacement, `K+C_new` is a sublattice of `W_new`.
@@ -1452,6 +1526,43 @@ rootless: precision rises from `5/14` to `4/5`, a `56/25 = 2.24` enrichment,
 with `4/5` rootless recall and a projected `14/5 = 2.8` reduction in full
 classifications.  This selected-core census does not repair the prospective
 gap: both the core and determinant were learned from successful edges.
+
+### Negative experiment H0a: bridge minimum is constant on an untouched shell
+
+<!-- status-consumer: EC-K3-E6-DET78-PROSPECTIVE-BRIDGE-NEGATIVE d23a0abd146c2ed9 -->
+
+The predeclared score from H0 was next tested prospectively on the complete
+zero-neutral old-degree-two shell of the determinant-78 E6
+`2E6+A1/MW4` frame.  The core-generation rule starts only from that source
+frame; the successful H3, Q80, NS0024, and Golay corridors are excluded.
+For each primitive child, the score
+
+```text
+min { minimum of a nonzero graph-glue coset of K+C_new }
+```
+
+is computed before enumerating child roots.  The mass-complete 1,549-class
+E6 catalogue is consulted only afterward to label the outcome.
+
+The complete shell has 280 dominant source-Weyl classes, of which 277 are
+primitive.  Every one of those 277 candidates has score exactly two, while
+their child root ranks range from 12 through 15 and they occupy 31 `J2`
+classes.  Therefore this scalar score has zero ranking power on the declared
+untouched shell.  On the recorded workstation the exact coset scoring took
+51.01 seconds, versus 0.48 seconds for direct norm-two enumeration and
+root-rank classification, so it was about `106x` slower.  The separate J2
+isometry lookup belongs to truth-set evaluation and is excluded from that
+comparison; these wall-clock timings are not theorem fields.
+
+This exact negative control does not refute Theorem H or the decorated
+root-profile calculus.  It identifies the missing datum more sharply:
+prospective inversion must retain the distribution of norm-two vectors among
+the candidate glue classes (the function `rho_K`, or a proved bound on it),
+not merely the least lattice norm.  Because the determinant-78 genus is
+globally rootful, the experiment cannot measure rootless recall; a positive
+prospective gate still needs an untouched mass-complete genus containing a
+rootless class.  The replay is
+[`benchmark_e6_det78_prospective_bridge_predictor.sage`](scripts/benchmark_e6_det78_prospective_bridge_predictor.sage).
 
 ### Corollary H1: a good-prime neighbour is a finite hyperbolic-line swap
 
@@ -1547,6 +1658,81 @@ classification modulo `Aut(X)` and does not remove the need for chamber or
 equation certificates.  It does, however, make the foundry's target exact:
 enumerating rootless classes in the one prescribed finite-form genus is
 equivalent to enumerating rank-17 frame classes at J2 level.
+
+### Corollary H2a: rank-three Hodge rigidity and a finite rootless J1 bound
+
+<!-- status-consumer: EC-K3-H3-ROOTLESS-J1-UNIFORM-BOUND b71330a75ad2c9ad -->
+
+Let `X` be a complex projective K3 surface of Picard rank 19.  Then
+
+```text
+Isom(T_X)^Hodge = {+identity,-identity}.
+```
+
+Consequently the Braun--Kimura--Watari uniform multiplicity bound for every
+fixed frame class `[P]` in `J2(X)` is
+
+```text
+# inverse_image_J1([P])
+    <= | image(Isom(T_X)^Hodge) backslash Isom(q_T) |.
+```
+
+For the pinned determinant-948 H3/R17 surface, the cyclic discriminant form
+has
+
+```text
+Isom(q_T) = {1,157,317,473,475,631,791,947} modulo 948,
+image(Isom(T_X)^Hodge) = {1,947}.
+```
+
+Thus each rootless `J2` frame has `J1` multiplicity at most four.  The
+mass-complete rootless `J2` classification has exactly two frame classes, so
+the number `n_rootless_J1` of rootless Jacobian fibrations modulo surface
+automorphisms satisfies the unconditional finite interval
+
+```text
+2 <= n_rootless_J1 <= 8.
+```
+
+#### Proof
+
+The real transcendental space has signature `(2,1)`.  A Hodge isometry `g`
+acts on `H^(2,0)` by an eigenvalue `zeta`, on `H^(0,2)` by its conjugate, and
+on the real orthogonal line by `epsilon=+1` or `-1`.  All three eigenvalues
+have absolute value one.  Since `g` is integral, they are roots of unity.  If
+`zeta` is nonreal, the rational `epsilon`-eigenspace is a nonzero rational
+`(1,1)` subspace of `T_X`, contradicting
+`T_X intersect NS(X)_QQ=0`.  If `zeta=+1` or `-1` and `epsilon` has the
+opposite sign, the same contradiction applies.  Hence `g` is scalar and is
+`+identity` or `-identity`; both occur.
+
+Proposition C' of Braun--Kimura--Watari bounds the `J1` multiplicity of every
+`J2` class by the displayed discriminant-form coset count.  Direct exact
+enumeration of units `u modulo 948` satisfying
+
+```text
+q(u*g)=q(g) modulo 2*ZZ
+```
+
+gives the eight listed units for either pinned generator of the form.  The
+image of `-identity` is `947`, so the quotient has four cosets.  The complete
+rootless `J2` classification supplies two distinct realized frame classes;
+the map from `J1` to `J2` is surjective on them.  Summing the two upper bounds
+gives eight, while distinct `J2` classes give the lower bound two. QED.
+
+The finite calculation and both input hashes are locked by
+[`certify_rootless_j1_uniform_bound.py`](scripts/certify_rootless_j1_uniform_bound.py)
+and
+[`elkies-k3-rootless-j1-uniform-bound-v1.json`](../artifacts/generated-results/elkies-k3-rootless-j1-uniform-bound-v1.json).
+The external multiplicity theorem is
+[Braun--Kimura--Watari, Proposition C'](https://arxiv.org/abs/1312.4421).
+
+This is a strict advance from an unbounded `J1` frontier to a finite list, but
+it is not the exact `J1` classification.  In particular, the recorded images
+of the two frame automorphism groups in the discriminant form do not by
+themselves justify replacing the uniform quotient by a smaller
+frame-dependent quotient: that requires ample-cone stabilizer control or an
+equivalent surface-automorphism computation.
 
 ### Theorem H3: conditional one-click root annihilation
 

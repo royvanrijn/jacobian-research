@@ -32,11 +32,18 @@ SCRIPTS = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPTS))
 
 from screen_elkies_2026_quadratic_twist_ranks import (  # noqa: E402
+    Candidate,
     DEFAULT_BISECTIONS,
     DEFAULT_MODEL,
     DEFAULT_PAIRS,
     load_candidates,
+    square_equivalent_integer_polynomial,
     valuation,
+)
+
+DEFAULT_GENUS_ONE_CONSTRUCTIONS = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-r17-genus-one-bisection-splitting-search-v1.json"
 )
 
 
@@ -60,10 +67,22 @@ parser = argparse.ArgumentParser(description=__doc__)
 target = parser.add_mutually_exclusive_group(required=True)
 target.add_argument("--singleton-mask", type=int)
 target.add_argument("--product-key")
+target.add_argument("--genus-one-label")
 parser.add_argument("--prime", type=int, required=True)
+parser.add_argument(
+    "--allow-infinity-two-torsion",
+    action="store_true",
+    help=(
+        "export only non-2-torsion leading blocks when every smooth chart fibre "
+        "has rational 2-torsion; this is a discovery sieve, not an exhaustive scheme"
+    ),
+)
 parser.add_argument("--bisections", type=Path, default=DEFAULT_BISECTIONS)
 parser.add_argument("--pairs", type=Path, default=DEFAULT_PAIRS)
 parser.add_argument("--model", type=Path, default=DEFAULT_MODEL)
+parser.add_argument(
+    "--genus-one-constructions", type=Path, default=DEFAULT_GENUS_ONE_CONSTRUCTIONS
+)
 parser.add_argument(
     "--output-dir",
     type=Path,
@@ -81,9 +100,31 @@ if args.singleton_mask is not None:
     key = str(args.singleton_mask)
     candidate = next((item for item in singletons if item.key == key), None)
     chi = 3
-else:
+elif args.product_key is not None:
     key = str(args.product_key)
     candidate = next((item for item in products if item.key == key), None)
+    chi = 4
+else:
+    key = str(args.genus_one_label)
+    constructions = json.loads(args.genus_one_constructions.read_text())
+    source_record = next(
+        (
+            item
+            for item in constructions["construction"]["records"]
+            if item["label"] == key
+        ),
+        None,
+    )
+    candidate = None if source_record is None else Candidate(
+        kind="genus_one",
+        key=key,
+        masks=(int(source_record["lattice_orbit_mask"]),),
+        coefficients=square_equivalent_integer_polynomial(
+            source_record["branch_polynomial_q_coefficients_low_to_high"]
+        ),
+        forced_twist_rank=1,
+        metadata={"orbit_hex": f"0x{int(source_record['lattice_orbit_mask']):05x}"},
+    )
     chi = 4
 if candidate is None:
     raise ValueError(f"unknown twist candidate {key}")
@@ -128,6 +169,7 @@ def infinity_fibre_data(coefficient_a, coefficient_b):
 
 
 chart_parameter = None
+complete_infinity_cover = True
 a_infinity = field(A[4 * chi])
 b_infinity = field(B[6 * chi])
 infinity_discriminant, leading_points, rational_two_torsion_x = infinity_fibre_data(
@@ -161,12 +203,64 @@ if not infinity_discriminant or rational_two_torsion_x:
             leading_points = candidate_points
             rational_two_torsion_x = candidate_two_torsion
             break
-if not infinity_discriminant or rational_two_torsion_x:
+if (not infinity_discriminant or rational_two_torsion_x) and args.allow_infinity_two_torsion:
+    # Some small characteristics have rational 2-torsion on every smooth
+    # rational chart fibre.  The high-to-low Y recursion still applies to
+    # every leading point with y != 0.  Exporting those blocks is useful as a
+    # discovery sieve, but sections meeting a rational 2-torsion point at
+    # infinity are omitted and the union must not be called exhaustive.
+    fallback = None
+    for candidate_parameter in field:
+        candidate_a = field(A(candidate_parameter))
+        candidate_b = field(B(candidate_parameter))
+        candidate_discriminant, candidate_points, candidate_two_torsion = (
+            infinity_fibre_data(candidate_a, candidate_b)
+        )
+        non_two_torsion_points = [
+            point for point in candidate_points if point[1] != 0
+        ]
+        if candidate_discriminant and non_two_torsion_points:
+            fallback = (
+                candidate_parameter,
+                candidate_a,
+                candidate_b,
+                candidate_discriminant,
+                non_two_torsion_points,
+                candidate_two_torsion,
+            )
+            break
+    if fallback is not None:
+        (
+            chart_parameter,
+            a_infinity,
+            b_infinity,
+            infinity_discriminant,
+            leading_points,
+            rational_two_torsion_x,
+        ) = fallback
+        transformed_a = sum(
+            A[index] * (chart_parameter * t + 1) ** index * t ** (4 * chi - index)
+            for index in range(A.degree() + 1)
+        )
+        transformed_b = sum(
+            B[index] * (chart_parameter * t + 1) ** index * t ** (6 * chi - index)
+            for index in range(B.degree() + 1)
+        )
+        A = base_ring(transformed_a)
+        B = base_ring(transformed_b)
+        complete_infinity_cover = False
+if not infinity_discriminant or (rational_two_torsion_x and complete_infinity_cover):
     raise ArithmeticError(
         "no smooth rational chart fibre without rational 2-torsion was found"
     )
 
-tag = f"singleton-{key}" if candidate.kind == "singleton" else f"product-{key.replace(':', '-') }"
+tag = (
+    f"singleton-{key}"
+    if candidate.kind == "singleton"
+    else f"product-{key.replace(':', '-')}"
+    if candidate.kind == "product"
+    else f"genus-one-{key}"
+)
 output_dir = args.output_dir.resolve() / tag / f"p{prime}"
 output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -218,11 +312,19 @@ for block_index, (leading_x, leading_y) in enumerate(leading_points):
 
 record = {
     "schema": "elkies-k3.elkies-2026-twist-polynomial-section-msolve-export.v1",
-    "status": "PASS_EXACT_MODP_REDUCED_POLYNOMIAL_SECTION_EXPORT",
+    "status": (
+        "PASS_EXACT_MODP_REDUCED_POLYNOMIAL_SECTION_EXPORT"
+        if complete_infinity_cover
+        else "PASS_EXACT_MODP_NON_TWO_TORSION_BLOCK_EXPORT"
+    ),
     "proof_boundary": (
         "The union of the exported systems is the complete polynomial P.O=0 section "
         "scheme over the displayed finite field because the infinity fibre is smooth and "
         "has no rational 2-torsion. Solver results and characteristic-zero lifting are separate."
+        if complete_infinity_cover
+        else "Only leading blocks with y != 0 are exported. Sections meeting a rational "
+        "2-torsion point at infinity are omitted, so this is a discovery sieve and not a "
+        "complete polynomial-section scheme."
     ),
     "candidate": {
         "kind": candidate.kind,
@@ -235,6 +337,12 @@ record = {
     "prime": prime,
     "reduced_twist_q_coefficients_low_to_high": [int(value) for value in q.list()],
     "twist_degrees_A_B": [int(A.degree()), int(B.degree())],
+    "twist_A_coefficients_low_to_high": [
+        int(A[index]) for index in range(4 * chi + 1)
+    ],
+    "twist_B_coefficients_low_to_high": [
+        int(B[index]) for index in range(6 * chi + 1)
+    ],
     "infinity_fibre": {
         "chart": (
             "original_infinity"
@@ -249,7 +357,16 @@ record = {
     "systems": systems,
     "inputs": {
         str(path.resolve().relative_to(ROOT)): digest(path)
-        for path in (args.bisections, args.pairs, args.model)
+        for path in (
+            args.bisections,
+            args.pairs,
+            args.model,
+            *(
+                (args.genus_one_constructions,)
+                if candidate.kind == "genus_one"
+                else ()
+            ),
+        )
     },
 }
 record_path = output_dir / "export.json"

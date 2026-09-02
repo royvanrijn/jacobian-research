@@ -587,6 +587,7 @@ generic genus one.  It does not compute the Jacobian or its maps.
 ### Rootless J2 classification controls
 
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J2-COMPLETE c6f054948b04b507 -->
+<!-- status-consumer: EC-K3-H3-ROOTLESS-J1-UNIFORM-BOUND b71330a75ad2c9ad -->
 
 - `audit_rootless_j2_completeness_track.sage` certifies the two non-isometric
   target-genus controls, rejects the mislabeled old neighbour corpus, and
@@ -614,6 +615,11 @@ generic genus one.  It does not compute the Jacobian or its maps.
   alternate Q80.  This completes `J2` frame-isometry classification while
   deliberately not asserting that its retained cover counts are embedding-
   orbit or `J1` counts.
+- `certify_rootless_j1_uniform_bound.py` is the dependency-free finite-form
+  replay for Corollary H2a.  It locks the two complete rootless `J2` inputs,
+  enumerates all eight isometries of the cyclic determinant-948 quadratic
+  form, and verifies the four cosets modulo the rank-three Hodge image
+  `{+1,-1}`.  It proves `2 <= #J1_rootless <= 8`, not the exact `J1` count.
 
 The current proof boundary and replay commands are in
 [`../ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md`](../ROOTLESS_J2_COMPLETENESS_TRACK_2026-08-31.md).
@@ -2718,7 +2724,7 @@ full saturated integral NS Gram and verifies its unimodular split against
 
 <!-- status-consumer: EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD 3bcfe3534656b26f -->
 <!-- status-consumer: EC-K3-E6-RANK4-ROOTLESS-Q2Q4-CENSUS 2351738f44774cfe -->
-<!-- status-consumer: EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL bd12c183aa886b15 -->
+<!-- status-consumer: EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL 648ec884ce7152bb -->
 
 The complete zero-neutral rootless search through old degree four replays with
 
@@ -2728,30 +2734,35 @@ The complete zero-neutral rootless search through old degree four replays with
 ```
 
 It exhausts `80,123` Weyl-dominant classes, of which `79,837` are primitive,
-and finds no rootless child in degrees two, three, or four.  The genus-wide
-root obstruction replays with
+and finds no rootless child in degrees two, three, or four.  The complete
+genus-wide J2 frame classification replays with
 
 ```bash
-sage -python classify_e6_rank4_det78_niemeier_frames.sage \
-  --rootless-obstruction --check
+sage -python classify_e6_rank4_det78_niemeier_frames.sage --check
 ```
 
-Its complete 1,591-anchor Niemeier residual census proves that the entire
-determinant-78 frame genus is rootful at `O(NS)`/J2 level.  A `QQ(k)`
-rank-four parameterization and a full frame-isometry classification are not
-claimed.  See
-[`../E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md`](../E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md).
+Its complete 1,591-anchor Niemeier census yields 37,397 primitive
+embedding-cover points and exactly 1,549 integral-isometry classes.  The exact
+root-rank distribution is `10:1, 11:45, 12:249, 13:543, 14:477, 15:200,
+16:33, 17:1`, and the reciprocal-automorphism sum closes the exact genus mass.
+Thus the determinant-78 frame genus is rootful at `O(NS)`/J2 level and has
+maximum MW rank 7.  The faster `--rootless-obstruction --check` mode is an
+independent residual-rank cross-check, not the primary class certificate.  See
+[`../E6_RANK4_DET78_NIEMEIER_CLASSIFICATION_2026-09-03.md`](../E6_RANK4_DET78_NIEMEIER_CLASSIFICATION_2026-09-03.md).
 
 ## Integral rank-transfer glue calculus
 
-<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 2d15a35bdecc0493 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 7eeeeaa80d9b2bf3 -->
 <!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
 <!-- status-consumer: EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE 52de13c8443f2b7d -->
-<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK e79b6132483233bf -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK 3127e24cc505f646 -->
+<!-- status-consumer: EC-K3-E6-DET78-PROSPECTIVE-BRIDGE-NEGATIVE d23a0abd146c2ed9 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-THETA-CONVOLUTION 5ebbd3d242fdb3db -->
 
 ```bash
 sage -python certify_integral_rank_transfer_bridge_reglue.sage --check
 sage -python benchmark_integral_rank_transfer_bridge_predictor.sage --check
+sage -python benchmark_e6_det78_prospective_bridge_predictor.sage --check
 sage -python certify_integral_character_glue_calculus.sage --check
 sage -python certify_r17_norm12_103b2_mw_glue.sage \
   --skip-specialization-saturation --check
@@ -2777,6 +2788,24 @@ cores.  Maximizing bridge minimum retains five classes, four rootless, versus
 five rootless classes without screening (`2.24x` precision enrichment and
 `80%` recall).  This second result is explicitly selected-core evidence, not
 an out-of-sample q-neighbor benchmark.
+
+`benchmark_e6_det78_prospective_bridge_predictor.sage` supplies the first
+genuinely held-out shell.  It generates all 277 primitive zero-neutral
+old-degree-two children of the determinant-78 E6 source before consulting the
+mass-closed 1,549-class truth catalogue.  Every candidate has the same least
+nonzero glue-coset minimum two, although root ranks range from 12 to 15.  This
+is an exact negative control for that scalar score, not a rootless-positive
+predictor benchmark.
+
+`certify_integral_rank_transfer_theta_convolution.sage` implements the exact
+replacement for that scalar score.  It caches all dual-coset theta
+coefficients through norm two for the four terminal cores.  From their cyclic
+bridge determinants it independently enumerates all fourteen reduced positive
+even binary bridges, derives all 28 oriented graph multipliers from
+finite-form isotropy, and convolves their tables.  It recovers every child
+root count and all five rootless classes without constructing a rank-17 child
+during prediction.  Its scope is the complete declared fixed-core universe;
+it does not claim a speedup or automatic core generation.
 
 <!-- status-consumer: EC-K3-RES-D5-TWO-MARKED-TWO-TWIST-POLYNOMIAL ea0496c9566cfdc3 -->
 

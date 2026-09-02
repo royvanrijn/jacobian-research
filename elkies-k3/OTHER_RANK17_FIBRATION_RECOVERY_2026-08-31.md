@@ -157,9 +157,12 @@ coordinates:
 
 [`elkies-k3-other-rank17-candidate.json`](../artifacts/generated-results/elkies-k3-other-rank17-candidate.json).
 
-The distinctness proved here is `J2` distinctness of frame lattices.  A complete
-`J1` classification up to automorphisms of the K3 surface is stronger and is
-not claimed.
+The distinctness proved here is `J2` distinctness of frame lattices.  The
+complete `J1` classification up to automorphisms of the K3 surface remains
+open, but Corollary H2a of
+[`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md)
+now proves that the rootless `J1` count is finite and lies between two and
+eight.
 
 ## Candidate ranking by actual equation cost
 
@@ -233,6 +236,25 @@ embedding-orbit counts because anchor-stabilizer duplicates are retained.
 Thus there is no third rootless `J2` equation candidate; the alternate frame
 is the unique non-published construction target.
 
+## Finite J1 boundary
+
+<!-- status-consumer: EC-K3-H3-ROOTLESS-J1-UNIFORM-BOUND b71330a75ad2c9ad -->
+
+Picard rank 19 forces the rank-three transcendental Hodge-isometry group to be
+exactly `{+id,-id}`.  The cyclic determinant-948 quadratic form has eight
+isometries,
+
+```text
+{1,157,317,473,475,631,791,947} modulo 948.
+```
+
+Braun--Kimura--Watari Proposition C' therefore bounds the `J1` multiplicity
+of each `J2` class by four.  Since the Niemeier classification gives exactly
+two rootless `J2` classes, the rootless `J1` count lies in `[2,8]`.  This is a
+usable finite search boundary, not the exact classification.  The smaller
+quotients suggested by the frame automorphism images are not promoted because
+they still require ample-cone stabilizer control.
+
 ## Rank-29-first construction gate
 
 For each constructed candidate equation, compute its reduced `j`-map and form
@@ -269,6 +291,8 @@ not proof of a common fibration.
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/classify_rootless_j2_niemeier_first.sage --check
 
+python3 elkies-k3/scripts/certify_rootless_j1_uniform_bound.py --check
+
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_elkies_2026_r17_isogeny_exclusions.sage --check
 
@@ -285,7 +309,9 @@ replay rootlessness, non-isometry, nefness, and the cost model.  The following
 command pins the alternate `U` embedding in H3/R17 NS coordinates, and the
 first Niemeier replay certifies the auxiliary and both positive-control
 gluings.  The complete Niemeier replay proves that those controls are exactly
-the two rootless `J2` frame classes.  The final two commands compute the exact
-bounded intrinsic invariants and replay the calibrated full-lattice Gate A
-search.  None constructs the missing characteristic-zero equation or refines
-the completed `J2` classification to `J1` surface-automorphism orbits.
+the two rootless `J2` frame classes.  The dependency-free `J1` replay checks
+the four-coset uniform multiplicity bound and the resulting interval `[2,8]`.
+The final two commands compute the exact bounded intrinsic invariants and
+replay the calibrated full-lattice Gate A search.  None constructs the missing
+characteristic-zero equation or completes the exact `J1`
+surface-automorphism classification.

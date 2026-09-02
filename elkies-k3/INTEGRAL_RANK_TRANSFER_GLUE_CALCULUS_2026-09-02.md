@@ -1,10 +1,11 @@
 # Integral rank transfer: an equation-free glue calculus (2026-09-02)
 
-<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 2d15a35bdecc0493 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 7eeeeaa80d9b2bf3 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-THETA-CONVOLUTION 5ebbd3d242fdb3db -->
 <!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
-<!-- status-consumer: EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL bd12c183aa886b15 -->
+<!-- status-consumer: EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL 648ec884ce7152bb -->
 <!-- status-consumer: EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE 52de13c8443f2b7d -->
-<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK e79b6132483233bf -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK 3127e24cc505f646 -->
 
 ## Outcome
 
@@ -368,6 +369,31 @@ An edge is root-annihilating only when old roots lie in removed cosets or leave
 the new frame, and no new coset has norm two.  Minimum at least four is the
 terminal rootless gate for the positive rank-17 frame.
 
+For repeated reglues over a fixed core, this gate can be inverted exactly.
+Precompute the low-norm discriminant-coset theta coefficients of `K` and each
+rank-two bridge `C`.  The norm-two count in a glue class `(a,b)` is their
+convolution
+
+```text
+rho_KC(a,b)=sum_nu theta_K(a,nu)*theta_C(b,2-nu).
+```
+
+An isotropic graph subgroup produces a rootless overlattice exactly when it
+is contained in the zero support of `rho_KC`.  Thus the enumerator may list
+zero-support graph subgroups first and construct only their children.  This
+is an exact acceptance calculus, not a statistical predictor; its practical
+value depends on reusing the core table across enough bridge and graph
+choices.
+
+The implementation certificate covers the complete fourteen-class terminal
+binary-bridge universe for H3, Q80, NS0024, and Golay-720.  From the four
+cyclic bridge determinants it independently enumerates the fourteen reduced
+positive even binary bridges, computes their tables and four core theta
+tables, derives all 28 oriented graph multipliers from finite-form isotropy,
+and tests them without constructing a rank-17 child.  It reproduces every
+stored signed root count and accepts exactly the five rootless bridge classes:
+[`elkies-k3-integral-rank-transfer-theta-convolution-v1.json`](../artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json).
+
 ### Completed bridge computation
 
 The bridge-core computation is complete for H3, Q80, NS0024, and Golay-720.
@@ -467,6 +493,36 @@ runtime with direct child-root enumeration.  The retained Q80 score tables
 contain only already rank-growing children and do not supply an unbiased
 negative corpus for that prospective test.
 
+### Held-out prospective test: bridge minimum is not selective
+
+<!-- status-consumer: EC-K3-E6-DET78-PROSPECTIVE-BRIDGE-NEGATIVE d23a0abd146c2ed9 -->
+
+The predeclared protocol was run without successful-corridor inputs on the
+complete determinant-78 E6 old-degree-two shell.  Candidate generation uses
+only the source `2E6+A1/MW4` frame and its root Weyl group.  For each child,
+the common rank-15 core, new rank-two bridge, and every nonzero graph-glue
+coset minimum are computed before root enumeration or truth-catalogue lookup.
+
+```text
+dominant source-Weyl classes:                         280
+primitive candidates:                                277
+distinct mass-closed J2 classes reached:              31
+bridge glue-coset minimum distribution:           {2:277}
+child root-rank distribution: {12:18,13:168,14:71,15:20}
+```
+
+Thus the least nonzero glue-coset minimum is constant and supplies no ranking
+signal on this genuinely held-out shell.  The recorded scoring time is 51.01
+seconds, versus 0.48 seconds for direct norm-two enumeration and root-rank
+classification: the score is about `106x` slower on this workload.  The
+separate 145.06-second J2 isometry lookup is truth-set evaluation and is
+excluded from that comparison; all timings are non-certificate metadata.  The
+E6 genus is globally rootful, so this is a negative control, not a positive
+recall test.  It rules out the scalar minimum score here while leaving the
+exact decorated profile `rho_K` as the necessary next object.
+See
+[`elkies-k3-e6-rank4-det78-prospective-bridge-predictor-v1.json`](../artifacts/generated-results/elkies-k3-e6-rank4-det78-prospective-bridge-predictor-v1.json).
+
 ## Recent evidence and failure map
 
 The last three commits explain why the character/glue layer is now visible.
@@ -515,6 +571,20 @@ Replay the retrospective bridge-split predictor benchmark:
 ```bash
 sage -python \
   elkies-k3/scripts/benchmark_integral_rank_transfer_bridge_predictor.sage --check
+```
+
+Replay the blind determinant-78 prospective negative control:
+
+```bash
+sage -python \
+  elkies-k3/scripts/benchmark_e6_det78_prospective_bridge_predictor.sage --check
+```
+
+Replay the exact inverse theta-convolution enumerator:
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_integral_rank_transfer_theta_convolution.sage --check
 ```
 
 Byte-check the norm-12 `0x103b2` character tuple while reusing its pinned full

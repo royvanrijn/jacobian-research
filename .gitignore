@@ -95,10 +95,14 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-r17-rank28-simultaneous-splitting-h10000-v1.json
 !/artifacts/generated-results/elkies-k3-r17-rank28-mixed-trace-splitting-h10000-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-glue-census-v1.json
+!/artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json
+!/artifacts/generated-results/elkies-k3-rootless-j1-uniform-bound-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-predictor-benchmark-v1.json
+!/artifacts/generated-results/elkies-k3-e6-rank4-det78-prospective-bridge-predictor-v1.json
 !/artifacts/generated-results/elkies-k3-integral-character-glue-calculus-v1.json
 !/artifacts/generated-results/elkies-k3-e6-rank4-det78-rootless-obstruction-v1.json
+!/artifacts/generated-results/elkies-k3-e6-rank4-det78-niemeier-frames-v1.json
 !/artifacts/generated-results/elkies-k3-r17-rank28-integral-character-glue-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-103b2-mw-glue-v1.json
 !/artifacts/generated-results/elkies-k3-rank17-to-h3-reverse-transport.json

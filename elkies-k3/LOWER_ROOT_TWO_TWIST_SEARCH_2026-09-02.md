@@ -269,6 +269,169 @@ pair with a common twist.  That last search is only a bounded lifting pilot.
 The generated modular summary is
 [`../artifacts/generated-results/elkies-k3-d5-two-marked-two-twist-polynomial-p11-v1.json`](../artifacts/generated-results/elkies-k3-d5-two-marked-two-twist-polynomial-p11-v1.json).
 
+### Regular low-section slices through the `p=11,13` survivors
+
+The `p=11` and `p=13` pairs admit a smaller exact local chart.  Restrict the
+first twist section to
+
+```text
+x=u*(A+B*u),       y=C*u^2.
+```
+
+The four nonzero coefficient equations factor triangularly as
+
+```text
+(A-2)*(A+1)^2=0,
+C^2*d0=3*A^2*B-13*A-3*B-12,
+C^2*d1=3*A*B^2-3*A-13*B-17,
+C^2=(B-1)^2*(B+2).
+```
+
+On the two branches containing the modular survivors, put
+
+```text
+B=t^2-2,       C=t*(t^2-3).
+```
+
+Then the monic twist coefficients are
+
+```text
+A=-1:
+  d0=1/(t^2*(t^2-3)^2),
+  d1=-(3*t^2+1)/(t^2-3)^2;
+
+A=2:
+  d0=(9*t^2-56)/(t^2*(t^2-3)^2),
+  d1=(6*t^4-37*t^2+27)/(t^2*(t^2-3)^2).
+```
+
+The `p=11` point lies on the first branch at `t=8`, and the `p=13` point
+lies on the second at `t=2`.  After substituting a general second polynomial
+section, its seven coefficient equations form a square system in `t` and the
+six section coefficients.  The coefficient Jacobians have full rank seven;
+their determinants are `-2 mod 11` and `-3 mod 13`.  Thus both modular points
+are reduced isolated points of these slices and each has a unique multivariate
+Hensel lift over `Z_11` or `Z_13`.
+Exact group arithmetic over each finite function field verifies that the two
+sections are neither equal nor opposite and that neither is plus or minus
+twice the other.  Their higher coefficients are nonzero.  Thus these local
+points are off the repeated, `S,-2S`, and constant-section components.
+
+Lifting to 800 p-adic digits did not produce a rational tuple.  At the
+declared checkpoints, coefficientwise rational reconstruction was either
+undefined or failed literal substitution in the seven exact equations.  The
+one accidental simultaneous reconstruction at 400 digits on the `p=11`
+branch had roughly 690-bit coordinates, failed substitution, and did not
+persist to 800 digits.  This is a reproducible negative lifting experiment,
+not a proof that the p-adic branches are nonrational.  In particular, neither
+branch is promoted to a characteristic-zero `2+2` source.
+
+The replay is
+[`scripts/lift_d5_two_marked_two_twist_low_section_slices.sage`](scripts/lift_d5_two_marked_two_twist_low_section_slices.sage):
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/lift_d5_two_marked_two_twist_low_section_slices.sage \
+  --digits 800
+```
+
+It writes
+[`../artifacts/generated-results/elkies-k3-d5-two-marked-two-twist-low-slices-v1.json`](../artifacts/generated-results/elkies-k3-d5-two-marked-two-twist-low-slices-v1.json)
+and exact characteristic-zero `msolve` inputs under
+`artifacts/local/elkies-k3/d5-two-marked-two-twist-low-slices/`.  The exported
+systems invert `x20*t*(t^2-3)`: this removes the tautological repeated-section
+component and the denominator-clearing boundary while retaining both target
+points.  A resource-bounded exact elimination attempt on the first residual
+system was interrupted after more than three minutes without a result.  Exact
+local eliminants, or a proof of
+nonrationality of either p-adic branch, remain open.  The `p=7` survivor and
+the two `p=17` boundary survivors do not lie in these two low-section slices.
+
+### The `p=7` survivor is obstructed modulo `7^3`
+
+At the ordered `p=7` pair, the full fourteen-equation coefficient Jacobian
+has rank thirteen.  Its right kernel in the script's coefficient order is
+
+```text
+(1,2,1,6,2,3,6,5,1,0,5,3,6,0),
+```
+
+and its left kernel is
+
+```text
+(1,4,2,1,4,2,1,0,0,0,0,0,0,0).
+```
+
+Solving the first underdetermined Hensel equation gives all seven lifts from
+modulo `7` to modulo `7^2`.  For every one of these lifts, pairing the next
+Hensel right-hand side with the displayed left kernel gives `1 mod 7`.
+Consequently none lifts modulo `7^3`.  In particular there is no solution of
+the shared coefficient ideal over `Z_7` reducing to this ordered point, and
+therefore no rational coefficient tuple integral at seven which reduces to
+it.  This is an exact vertical-characteristic-seven obstruction, not a
+bounded rational reconstruction failure.
+
+The twist discriminant and the coefficient pivot `x11-x21` are units at the
+point.  Exact group arithmetic over `GF(7)(u)` also checks that the two points
+are neither equal nor opposite and that neither is plus or minus twice the
+other.  Thus the obstruction is computed off the repeated-section and
+`S,-2S` components.
+The nonzero higher coefficients also exclude the constant-section component.
+
+### The two `p=17` survivors are a bad-fibre boundary mechanism
+
+Both `p=17` pairs have
+
+```text
+d=u*(u+k),
+x_i=u*(a_i+b_i*u),
+y_i=u*(c_i+e_i*u),       c_i != 0.
+```
+
+Before setting `d0=0`, the coefficient of `u^2` in each section identity is
+`d0*c_i^2`.  Hence the local unit condition `c_i!=0` forces `d0=0` exactly.
+After dividing by `u^3`, each section is governed by
+
+```text
+a^3-3*a-2-k*c^2=0,
+3*a^2*b-2*k*c*e-c^2-13*a-3*b-12=0,
+3*a*b^2-k*e^2-2*c*e-3*a-13*b-17=0,
+b^3-e^2-3*b+2=0.
+```
+
+The shared eight-equation system in the nine variables
+`k,a1,b1,c1,e1,a2,b2,c2,e2` has Jacobian rank eight at both modular hits.
+Thus they are smooth points of an expected boundary curve, not isolated
+points of the open K3-twist locus.  Exact `GF(17)(u)` group arithmetic again
+excludes equality, opposition, and either plus-or-minus-double relation.
+Nonzero higher coefficients exclude constant sections as well.
+
+This boundary cannot supply the intended D5 K3 source.  Indeed the short
+twist has coefficients `d^2*f,d^3*g`; minimalizing at `u=0` by
+`X=u^2*X', Y=u^3*Y'` gives
+
+```text
+A_min=(u+k)^2*(-3*u^2-13*u-3),
+B_min=(u+k)^3*(2*u^3-17*u^2-12*u-2).
+```
+
+These have degrees four and six.  The affine discriminant has degree eleven,
+with the twelfth discriminant zero at infinity.  Generically the old `I1*`
+becomes `I1` at `u=0`, while the other zero of `d` gives `I0*`; infinity is
+also `I1`.  The old discriminant is a unit at `u=-k` for both displayed
+modular values.  The minimal twist therefore has `chi=1`: it is a rational
+elliptic surface, not the `chi=2` K3 required by the declared
+arithmetic-source/NS gate.
+Saturating the coefficient ideal by `d0` removes both `p=17` survivors.
+
+For completeness, fixing the displayed residues `k=5` and `k=8` makes each
+boundary section system square with nonzero Jacobian determinant.  Their
+unique fixed-`k` Hensel lifts were followed for 400 digits; neither yielded a
+rational tuple under literal reconstruction.  This last statement is only a
+fixed-slice negative experiment.  The exact reason for rejecting these two
+survivors from the current search is the rational-surface minimalization, not
+the reconstruction failure.
+
 ## Exact A4 two-point Tate-slice obstruction
 
 The simplest section-first A4 entrance uses
@@ -312,9 +475,13 @@ that a two-marked A4 surface is impossible.
 
 ## Next experiment
 
-The D5 candidate should next be lifted by slicing the shared coefficient
-ideal around its modular points, rather than attacking the unsliced Groebner
-system.  A successful lift still needs an exact twist-height determinant.
+The remaining D5 lift task is to compute exact local eliminants for the two
+regular `p=11,13` low-section slices above, or to find a different rational
+slice through their residual zero-dimensional loci.  The `p=7` point cannot
+lift even modulo `7^3`, and the two `p=17` points are removed by the `d0!=0`
+K3-source gate, so enlarging those three local searches would repeat a closed
+mechanism.  A successful characteristic-zero lift still needs an exact
+twist-height determinant.
 In parallel, the A4 chart should restore nonconstant coprime Bezout data
 `r,s` in the two-point Tate construction, impose the `I5` discriminant jets
 afterward, and retain surface moduli in the simultaneous twist equations.
@@ -336,14 +503,21 @@ Exact here:
 - the D5 seed, its fibre calculation, its two invariant sections, and their
   independence by exact specialization;
 - the complete `GF(11)` enumeration of the declared D5 polynomial twist
-  ansatz; and
+  ansatz;
+- the exact low-section parameterization and full-rank local Jacobians at the
+  `p=11,13` D5 survivors, giving unique p-adic lifts in those slices;
+- the exact second-order Hensel obstruction eliminating the `p=7` survivor;
+- the forced `d0=0` boundary classification and rational-surface
+  minimalization eliminating both `p=17` survivors from the K3-source locus;
+  and
 - the exact dependence/extra-repeated-fibre dichotomy in the declared A4
   two-point Tate slice.
 
 Not proved here:
 
 - nonexistence of a rational `2+2` family on E6, D6, D5, or A4 surfaces;
-- a characteristic-zero lift or twist-height matrix for the D5 modular pair;
+- rationality or nonrationality of either lifted D5 p-adic branch, a
+  characteristic-zero lift, or a twist-height matrix for a D5 modular pair;
   or
 - any `3+2` or rank-sum-five construction.
 
