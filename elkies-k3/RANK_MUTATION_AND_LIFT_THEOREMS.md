@@ -909,6 +909,79 @@ proposition.  Coset abundance is only a discovery coordinate; the published
 R17 experience shows that it is not by itself a predictor of exceptional
 specialization rank.
 
+### Proposition F6: the intrinsic multisection-coset metric and degree overlap
+
+In the setup of Proposition F5, define
+
+```text
+mu_d(c) = min { norm_M(w) : w mod dM = c },       c in M/dM.
+```
+
+Let `C` and `D` be degree-`d` divisor classes of arithmetic genera `g` and
+`h`, with horizontal coordinates in cosets `c` and `c'`.  Then their minimum
+intersection under independent translations by sections is
+
+```text
+min C.D = mu_d(c-c')/2 + g + h - 2.
+```
+
+Thus `mu_d(c-c')` is an intrinsic translation-quotient metric.  Any threshold
+graph or hypergraph defined from it is preserved by `Aut(M)` and does not
+depend on chosen shortest representatives.  In particular, representative
+angle distributions are useful equation gauges but are not quotient
+invariants unless a representative-selection rule is pinned.
+
+Regard `M/dM` as the `d`-torsion subgroup `(1/d)M/M` of the real lattice
+torus.  If `d` divides `e`, the natural inclusion is
+
+```text
+c mod dM  |->  (e/d)c mod eM,
+```
+
+and its coset minima satisfy the exact scaling law
+
+```text
+mu_e((e/d)c) = (e/d)^2 * mu_d(c).
+```
+
+For arbitrary positive `d,e`, the literal intersection of their torsion
+subgroups is the `gcd(d,e)`-torsion subgroup.  Hence coprime degree structures
+meet only at zero; a stronger comparison between them requires an explicitly
+defined common-modulus or CRT compatibility relation rather than a
+representative-dependent overlap count.
+
+#### Proof
+
+Choose representatives `w+d*x` and `v+d*y`.  Substitution of the adjunction
+coefficients from Proposition F5 gives
+
+```text
+C.D = norm_M((w+d*x)-(v+d*y))/2 + g + h - 2.
+```
+
+As `x-y` ranges over `M`, minimizing gives the first formula.  Lattice
+automorphisms preserve norms, differences and congruence classes, proving the
+invariance statement.
+
+For `d|e`, every representative of `(e/d)c mod eM` has the form
+
+```text
+(e/d)w + e*x = (e/d)(w+d*x),
+```
+
+so taking norms and minima proves the scaling law in both directions.  The
+torsion-intersection statement follows coordinatewise from Bezout, or from
+the elementary identity between the `d`- and `e`-torsion subgroups of a free
+real torus. QED.
+
+The first complete R17 application is
+[`R17_MULTISECTION_DIVERSITY_2026-09-02.md`](R17_MULTISECTION_DIVERSITY_2026-09-02.md).
+It finds, among other things, that the 39,120 rational bisection vertices form
+one connected zero-intersection graph, while their natural degree-four images
+are genus-one quadrisection vertices of minimum norm 40.  These are exact
+lattice statements; they do not promote the sampled degree-three or
+degree-four graph data to geometric curves.
+
 ## 8. What a bounded neighbour search really proves
 
 ### Theorem G: completeness inside a declared lattice box

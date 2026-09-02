@@ -1,0 +1,190 @@
+{
+  "anchors": [
+    {
+      "certificate": {
+        "path": "artifacts/generated-results/elliptic-curves/elliptic_nagao_rank20_t5081_rank20_certificate.json",
+        "sha256": "118acd2facd382bb1fcc34f56e68f6967b9309215c30635ba889b0feb28daec7"
+      },
+      "certified_rank_lower_bound": 20,
+      "constructor_parameter_T": "5081/47",
+      "exceptional_quotient_rank_lower_bound": 8,
+      "generic_rank": 12,
+      "id": "nagao-section7-rank20-t5081",
+      "paper_parameter_t": "5081/94",
+      "scores": {
+        "training": {
+          "equal_primary_score_count_before_tie_break": 1,
+          "percentile_from_bottom": 0.5044108686416675,
+          "rank_position_one_based": 9041935,
+          "score": 22.083895112108,
+          "score_scaled_by_1e12": 22083895112108,
+          "tie_break": "higher score, then lower projective height, numerator, denominator",
+          "top_fraction": 0.4955891861684131
+        },
+        "validation": {
+          "equal_primary_score_count_before_tie_break": 1,
+          "percentile_from_bottom": 0.9586148812986306,
+          "rank_position_one_based": 755065,
+          "score": 10.257278318956,
+          "score_scaled_by_1e12": 10257278318956,
+          "tie_break": "higher score, then lower projective height, numerator, denominator",
+          "top_fraction": 0.04138517351145002
+        }
+      }
+    }
+  ],
+  "evaluation_role": "retrospective_external_positive_replay_not_prospective_holdout",
+  "frozen_feature_specification": {
+    "bands_disjoint": true,
+    "fit_to_rank_jump_labels": false,
+    "point_or_rank_results_used_by_scanner": false,
+    "rank_formula": "sum good ((2-a_p)/(p+1-a_p))*log(p); bad and denominator primes contribute zero",
+    "score_scale": 1000000000000,
+    "training_primes": [
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79,
+      83,
+      89,
+      97,
+      101,
+      103,
+      107,
+      109,
+      113,
+      127,
+      131,
+      137,
+      139,
+      149,
+      151,
+      157,
+      163,
+      167,
+      173,
+      179,
+      181,
+      191,
+      193,
+      197,
+      199
+    ],
+    "validation_primes": [
+      211,
+      223,
+      227,
+      229,
+      233,
+      239,
+      241,
+      251,
+      257,
+      263,
+      269,
+      271,
+      277,
+      281,
+      283,
+      293,
+      307,
+      311,
+      313,
+      317,
+      331,
+      337,
+      347,
+      349,
+      353,
+      359,
+      367,
+      373,
+      379,
+      383,
+      389,
+      397
+    ]
+  },
+  "inputs": {
+    "archive/elliptic-curves/artifacts/generated-results/elliptic_nagao_section7_global.json": "c86c2b39acfe278802d3b654e134d3031772013e984d81e2b78073eca1f53568",
+    "artifacts/generated-results/elliptic-curves/elliptic_nagao_rank20_t5081_rank20_certificate.json": "118acd2facd382bb1fcc34f56e68f6967b9309215c30635ba889b0feb28daec7",
+    "elliptic-curves/cas/scan_nagao_section7_rank_jump_replay.cpp": "2b7f34dbb86a5e807581c97652b196c1ba3625f9a56d7e0a841689f23dd7935b",
+    "elliptic-curves/cas/search_nagao_rank20_t5081_neighborhood.py": "5cd9fccdc2559e0510edba8993ef6fc86e0eb366d0c3e31d470c7ed04d89f9a8"
+  },
+  "interpretation": {
+    "invalid": "this is not a prospective holdout and supplies no negative labels; the fibre was historically known before this replay",
+    "selection_boundary": "the archived global search explicitly excluded 5081/47 before frontier selection, but this full-population diagnostic ranks it",
+    "valid": "exact within-box ranks and recall for the two frozen label-blind score bands, using one externally known certified positive"
+  },
+  "population": {
+    "a_max": 30000,
+    "b_max": 1000,
+    "censored_unlabelled_count": 18244818,
+    "censoring_rule": "unlabelled fibres are never assigned quotient rank zero and do not enter precision, specificity, ROC, or classification accuracy",
+    "certified_positive_count": 1,
+    "definition": "every positive primitive (a,b) with 1<=a<=A_MAX and 1<=b<=B_MAX, before bounded training-only frontier retention",
+    "negative_label_count": 0,
+    "primitive_parameter_count": 18244819
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 elliptic-curves/cas/build_nagao_section7_rank_jump_replay.py",
+  "retrieval": {
+    "training": {
+      "gain_at_least_8": {
+        "mean_reciprocal_rank": 1.1059579614319281e-07,
+        "positions": [
+          9041935
+        ],
+        "positive_count": 1,
+        "recall_at_budget": {
+          "10": 0.0,
+          "100": 0.0,
+          "1000": 0.0,
+          "100000": 0.0,
+          "16133": 0.0,
+          "8000": 0.0
+        }
+      }
+    },
+    "validation": {
+      "gain_at_least_8": {
+        "mean_reciprocal_rank": 1.324389290988193e-06,
+        "positions": [
+          755065
+        ],
+        "positive_count": 1,
+        "recall_at_budget": {
+          "10": 0.0,
+          "100": 0.0,
+          "1000": 0.0,
+          "100000": 0.0,
+          "16133": 0.0,
+          "8000": 0.0
+        }
+      }
+    }
+  },
+  "schema": "elliptic-curves.nagao-section7-rank-jump-replay.v1",
+  "software": {
+    "compiler_command": "c++",
+    "language_standard": "C++17",
+    "optimization": "-O3 -DNDEBUG"
+  },
+  "status": "PASS_COMPLETE_RETROSPECTIVE_EXTERNAL_POSITIVE_REPLAY",
+  "target": "retrieval of certified escape from the generic rank-12 lattice"
+}

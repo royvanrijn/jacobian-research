@@ -1,0 +1,312 @@
+{
+  "anchors": [
+    {
+      "canonical_parameter_u": "19754/39",
+      "certificate": {
+        "path": "artifacts/generated-results/elliptic-curves/elliptic_fermigier_rank22_points.json",
+        "sha256": "ccc621010628e5c6eb1233c1ca32f894c25128cd11fc9751c6db559a3cdf973b"
+      },
+      "certified_rank_lower_bound": 22,
+      "exceptional_quotient_rank_lower_bound": 10,
+      "generic_rank": 12,
+      "id": "fermigier-E22",
+      "normalized_parameter_T": "39508/39",
+      "scores": {
+        "discovery_composite": {
+          "equal_primary_score_count_before_tie_break": 1,
+          "percentile_from_bottom": 0.9546938746919298,
+          "rank_position_one_based": 2755324,
+          "score": 4.628566658,
+          "score_scaled_by_1e9": 4628566658,
+          "tie_break": "higher score, then lower projective height, denominator, numerator",
+          "top_fraction": 0.045306141751196946
+        },
+        "discovery_rank": {
+          "equal_primary_score_count_before_tie_break": 1,
+          "percentile_from_bottom": 0.9546971139878982,
+          "rank_position_one_based": 2755127,
+          "score": 4.628566658,
+          "score_scaled_by_1e9": 4628566658,
+          "tie_break": "higher score, then lower projective height, denominator, numerator",
+          "top_fraction": 0.04530290245522849
+        },
+        "held_composite": {
+          "equal_primary_score_count_before_tie_break": 1,
+          "percentile_from_bottom": 0.9415241469618265,
+          "rank_position_one_based": 3556250,
+          "score": 3.453500268,
+          "score_scaled_by_1e9": 3453500268,
+          "tie_break": "higher score, then lower projective height, denominator, numerator",
+          "top_fraction": 0.05847586948130025
+        },
+        "held_rank": {
+          "equal_primary_score_count_before_tie_break": 1,
+          "percentile_from_bottom": 0.9415256432863601,
+          "rank_position_one_based": 3556159,
+          "score": 3.453500268,
+          "score_scaled_by_1e9": 3453500268,
+          "tie_break": "higher score, then lower projective height, denominator, numerator",
+          "top_fraction": 0.0584743731567666
+        }
+      }
+    },
+    {
+      "canonical_parameter_u": "28917/20",
+      "certificate": {
+        "path": "artifacts/generated-results/elliptic-curves/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json",
+        "sha256": "0a45bd473d1eba34e1b548eb71c29b0e12bfcc90d74059e5be4aefd7e236d149"
+      },
+      "certified_rank_lower_bound": 20,
+      "exceptional_quotient_rank_lower_bound": 8,
+      "generic_rank": 12,
+      "id": "fermigier-rank20-near-miss",
+      "normalized_parameter_T": "28917/10",
+      "scores": {
+        "discovery_composite": {
+          "equal_primary_score_count_before_tie_break": 1,
+          "percentile_from_bottom": 0.9495126947844572,
+          "rank_position_one_based": 3070421,
+          "score": 4.579825161,
+          "score_scaled_by_1e9": 4579825161,
+          "tie_break": "higher score, then lower projective height, denominator, numerator",
+          "top_fraction": 0.050487321658669496
+        },
+        "discovery_rank": {
+          "equal_primary_score_count_before_tie_break": 1,
+          "percentile_from_bottom": 0.9495163287154675,
+          "rank_position_one_based": 3070200,
+          "score": 4.579825161,
+          "score_scaled_by_1e9": 4579825161,
+          "tie_break": "higher score, then lower projective height, denominator, numerator",
+          "top_fraction": 0.0504836877276592
+        },
+        "held_composite": {
+          "equal_primary_score_count_before_tie_break": 1,
+          "percentile_from_bottom": 0.7938763954377295,
+          "rank_position_one_based": 12535549,
+          "score": 2.826160633,
+          "score_scaled_by_1e9": 2826160633,
+          "tie_break": "higher score, then lower projective height, denominator, numerator",
+          "top_fraction": 0.20612362100539722
+        },
+        "held_rank": {
+          "equal_primary_score_count_before_tie_break": 1,
+          "percentile_from_bottom": 0.7938801115843735,
+          "rank_position_one_based": 12535323,
+          "score": 2.826160633,
+          "score_scaled_by_1e9": 2826160633,
+          "tie_break": "higher score, then lower projective height, denominator, numerator",
+          "top_fraction": 0.2061199048587532
+        }
+      }
+    }
+  ],
+  "evaluation_role": "retrospective_frozen_rule_replay_not_prospective_holdout",
+  "frozen_feature_specification": {
+    "bands_disjoint": true,
+    "composite_formula": "rank_scaled + floor(power_scaled/16)",
+    "discovery_primes": [
+      401,
+      409,
+      419,
+      421,
+      431,
+      433,
+      439,
+      443,
+      449,
+      457,
+      461,
+      463,
+      467,
+      479,
+      487,
+      491,
+      499
+    ],
+    "fit_to_rank_jump_labels": false,
+    "held_primes": [
+      503,
+      509,
+      521,
+      523,
+      541,
+      547,
+      557,
+      563,
+      569,
+      571,
+      577,
+      587,
+      593,
+      599
+    ],
+    "point_or_rank_results_used_by_scanner": false,
+    "power_formula": "sum log(p) for exact affine congruences p^2 | H(a/b); denominator primes contribute zero",
+    "rank_formula": "sum good ((2-a_p)/(p+1-a_p))*log(p); bad and denominator primes contribute zero",
+    "score_scale": 1000000000
+  },
+  "inputs": {
+    "archive/elliptic-curves/artifacts/generated-results/elliptic_fermigier_global.json": "d4085a457f3aea0549b446ad328803d81e63282c5ef17577515275fc80429a2d",
+    "elliptic-curves/cas/fermigier_mestre.py": "6932c04fa699683ec112f25801adaa74ccb5e16dfa789b28ad56abf720c51090",
+    "elliptic-curves/cas/scan_fermigier_rank_jump_replay.cpp": "dfaef1b8a45554efcd8ba2ec26952733e781f93bcfa2ec010e68fe9b0024119d"
+  },
+  "interpretation": {
+    "invalid": "this is not a prospective holdout: E22 was an explicitly known calibration when the historical global score was designed",
+    "next_gate": "use only a score ordering with acceptable positive retrieval to rank new fibres, then require a residual Selmer/quotient certificate",
+    "valid": "exact within-box ranks and recall for four predeclared score orderings, using only the two certified positive anchors"
+  },
+  "population": {
+    "a_max": 100000,
+    "b_max": 1000,
+    "censored_unlabelled_count": 60815682,
+    "censoring_rule": "unlabelled fibres are never assigned quotient rank zero and do not enter precision, specificity, ROC, or classification accuracy",
+    "certified_positive_count": 2,
+    "definition": "every primitive 0<=a<=A, 1<=b<=B; T=a/b; T and -T identified",
+    "negative_label_count": 0,
+    "primitive_parameter_count": 60815684
+  },
+  "reproducing_command": "PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 elliptic-curves/cas/build_fermigier_rank_jump_replay.py",
+  "retrieval": {
+    "discovery_composite": {
+      "gain_at_least_10": {
+        "mean_reciprocal_rank": 3.629337239468026e-07,
+        "positions": [
+          2755324
+        ],
+        "positive_count": 1,
+        "recall_at_budget": {
+          "10": 0.0,
+          "100": 0.0,
+          "1000": 0.0,
+          "100000": 0.0,
+          "16133": 0.0,
+          "8000": 0.0
+        }
+      },
+      "gain_at_least_8": {
+        "mean_reciprocal_rank": 3.4431098009270807e-07,
+        "positions": [
+          2755324,
+          3070421
+        ],
+        "positive_count": 2,
+        "recall_at_budget": {
+          "10": 0.0,
+          "100": 0.0,
+          "1000": 0.0,
+          "100000": 0.0,
+          "16133": 0.0,
+          "8000": 0.0
+        }
+      }
+    },
+    "discovery_rank": {
+      "gain_at_least_10": {
+        "mean_reciprocal_rank": 3.6295967481716815e-07,
+        "positions": [
+          2755127
+        ],
+        "positive_count": 1,
+        "recall_at_budget": {
+          "10": 0.0,
+          "100": 0.0,
+          "1000": 0.0,
+          "100000": 0.0,
+          "16133": 0.0,
+          "8000": 0.0
+        }
+      },
+      "gain_at_least_8": {
+        "mean_reciprocal_rank": 3.4433567741900683e-07,
+        "positions": [
+          2755127,
+          3070200
+        ],
+        "positive_count": 2,
+        "recall_at_budget": {
+          "10": 0.0,
+          "100": 0.0,
+          "1000": 0.0,
+          "100000": 0.0,
+          "16133": 0.0,
+          "8000": 0.0
+        }
+      }
+    },
+    "held_composite": {
+      "gain_at_least_10": {
+        "mean_reciprocal_rank": 2.81195079086116e-07,
+        "positions": [
+          3556250
+        ],
+        "positive_count": 1,
+        "recall_at_budget": {
+          "10": 0.0,
+          "100": 0.0,
+          "1000": 0.0,
+          "100000": 0.0,
+          "16133": 0.0,
+          "8000": 0.0
+        }
+      },
+      "gain_at_least_8": {
+        "mean_reciprocal_rank": 1.8048410534085432e-07,
+        "positions": [
+          3556250,
+          12535549
+        ],
+        "positive_count": 2,
+        "recall_at_budget": {
+          "10": 0.0,
+          "100": 0.0,
+          "1000": 0.0,
+          "100000": 0.0,
+          "16133": 0.0,
+          "8000": 0.0
+        }
+      }
+    },
+    "held_rank": {
+      "gain_at_least_10": {
+        "mean_reciprocal_rank": 2.812022747014405e-07,
+        "positions": [
+          3556159
+        ],
+        "positive_count": 1,
+        "recall_at_budget": {
+          "10": 0.0,
+          "100": 0.0,
+          "1000": 0.0,
+          "100000": 0.0,
+          "16133": 0.0,
+          "8000": 0.0
+        }
+      },
+      "gain_at_least_8": {
+        "mean_reciprocal_rank": 1.8048842226551663e-07,
+        "positions": [
+          3556159,
+          12535323
+        ],
+        "positive_count": 2,
+        "recall_at_budget": {
+          "10": 0.0,
+          "100": 0.0,
+          "1000": 0.0,
+          "100000": 0.0,
+          "16133": 0.0,
+          "8000": 0.0
+        }
+      }
+    }
+  },
+  "schema": "elliptic-curves.fermigier-rank-jump-replay.v1",
+  "software": {
+    "compiler_command": "c++",
+    "language_standard": "C++17",
+    "optimization": "-O3 -DNDEBUG"
+  },
+  "status": "PASS_COMPLETE_RETROSPECTIVE_FROZEN_SCORE_REPLAY",
+  "target": "retrieval of certified escape from the generic rank-12 lattice"
+}

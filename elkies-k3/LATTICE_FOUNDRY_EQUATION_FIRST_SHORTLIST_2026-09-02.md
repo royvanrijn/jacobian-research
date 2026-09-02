@@ -522,6 +522,74 @@ graph rejection: other `q`, degrees, pole orders, repaired presentations, and
 wider beams remain open.  The artifact has SHA-256
 `aabc732debe6378eafeaac651f0f3a6c5ba181cbc8f55059a53a976499eb9bb2`.
 
+## Determinant 384: the first explicit MW-rank tradeoff candidate
+
+The source-first expansion to lower target rank immediately finds a much
+better abstract source on `K3-6ce16abb9de3c7c5`.  Its imported target
+`F001` has root type `A2` and MW rank 15.  The complete six-large-ambient,
+semistable MW0--2, one-to-three-support cut contains **144** source Grams, all
+of MW rank two:
+
+| source root type | supports | rows |
+|---|---:|---:|
+| `A10+A5` | 2 | 69 |
+| `A15` | 1 | 45 |
+| `A2+A5+A8` | 3 | 30 |
+
+Fifty rows have a complete physical MW basis through pole two.  The best cut
+consists of 24 `A10+A5` rows with pole profile `[0,1]`; exact isometry testing
+puts all 24 in one integral frame class and one marked-basis profile:
+
+```text
+reducible fibres:       I6 + I11
+generator depths:      (0,4), (0,2)
+required smooth P.Q:   1
+MW rank / basis poles: 2 / [0,1]
+```
+
+This validates the proposed tradeoff sharply: an MW2 source for an MW15
+target appears in abundance even though five rational-moduli rootless MW17
+surfaces have no source at all in the same ideal cut.  The lattice-only
+adapter, source census, and frame classifier have SHA-256
+`6ea0566c456d1a431a39aabebad06569237fa5081ec7f18529c2cfc2147267ec`,
+`e52d1fda05b7a799848a7b4190c7508473428cf977f22f2cff0fd95d3b9c6fe8`,
+and
+`5e57127ccc2cb14cf7fc2904a00d9c74cc00ebcb239241b7a839bade284d9492`.
+
+The two-support fibre chart is also rich.  Exhaustive scans find 152
+squarefree normalized `I6+I11+7I1` models over `GF(5)` and 1,032 over
+`GF(7)`.  But the best chart is marking-poor.  At `GF(5)`, the square twist
+has 16/0 individual sections in the two generator classes; the nonsquare
+twist has 8/16 and four models with both classes, but no required pair.  At
+`GF(7)`, the square twist has 108/60 sections with no common model; the
+nonsquare twist has 84/228 sections and 72 component-matched pairs on twelve
+models, all with the wrong smooth intersection.  Thus all four normalized
+charts are empty at the full MW2 marking gate.  The fibre artifacts have
+SHA-256
+`cb77aa2773c31e83a57c9408f36b3b59925fdff32ebfbb2521079ed351011ecd`
+and
+`b3a5cf83075844e781e6ae6d84fbd4c4710c191fe58fdfd3094aaa1c22ed9c19`;
+the four marking artifacts have SHA-256
+`9aa5aa45f512785150a93160dbaf0fe5090d0ed7f5394a4bc47c6e5280b8a00f`,
+`9a1107ed0b54fa5042d7b0dbc2262d237147833376bcf570e5a8703bc607559f`,
+`64f87cc5cf4ba54c9b5d358b5cd120633a874fee0d066f778251a611b673b275`,
+and
+`6633682bf4b45d398176807fbbe91142bebb7c3408520906e0a4f0b315c6580a`.
+
+The first same-NS corridor beam reaches root rank four, hence MW13, in five
+degree-two edges but does not reach the exact `A2/MW15` target through depth
+eight.  Its SHA-256 is
+`0d757c26dc5ad4b6ee80f5ae63a6804a882ec2df6c3e1942074e427901f063b4`.
+The T-arithmetic curve is still unidentified because the even-Clifford order
+is non-Eichler at a ramified prime; the lattice-only adapter explicitly keeps
+equation authorization false.  The aggregate candidate certificate has
+SHA-256
+`b83dc19fb8ffd717b8a0f29d9a581f07d2e096d8b75c6355948568a415e5ebcb`.
+Accordingly determinant 384 is the new lattice-source leader but remains
+behind the formally smooth determinant-500 MW1 branch at the rational-marking
+gate.  The next test is its `A2+A5+A8` pole-`[0,1]` source class; its first
+`GF(5)` fibre census already contains 82 squarefree models.
+
 ## Determinant 750: rational moduli, but no ideal source in the large-ambient cut
 
 The next genus-zero rootless MW17 target in the expanded Pareto order is
@@ -563,12 +631,24 @@ artifacts have SHA-256
 and
 `af4e04ebfa08ba2fa0bbe5900c7f79cd9d38252f3c385d46f6ce0cf5a6ad5735`.
 
+The last two rational-moduli rootless MW17 surfaces also miss the ideal cut.
+For determinant 1500, `K3-99a0b9b18de6e19b`, the sole auxiliary has 120
+terminal embeddings, all in `A15+D9` and all nonprimitive.  For determinant
+1728, `K3-dc0e324e4ac40dbc`, the sole auxiliary has 360 terminals in `A24`,
+152 in `A17+E7`, and 256 in `A15+D9`; again every terminal is nonprimitive.
+The search artifacts have SHA-256
+`75155f554e943833308e1233637d061d512c15120816d66812c758dcdd798b0c`
+and
+`8722e6abeba3a4ba150b3ae3e75cf664993e4b01612dc5614756cd5828a86d36`.
+
 A live rational-moduli optimizer now records the resulting queue.  Among the
 six catalogue surfaces with rational moduli and a rootless MW17 frame,
-determinant 500 remains the sole active promotion; determinants 750, 864, and
-1296 are scoped ideal-source rejections; determinants 1500 and 1728 remain
-queued in that order.  This ledger has SHA-256
-`26e81e447a48bfeaa0a22a2d888f606bc946f97ce27f8b44a7e86aa954b53cb0`.
+determinant 500 remains the sole active promotion and the other five are
+scoped ideal-source rejections.  The rootless-MW17 rational queue is therefore
+exhausted at this cut; the next source-first expansion is to rational-moduli
+MW15/MW16 targets, not to equation work on the rejected MW17 rows.  This
+ledger has SHA-256
+`8747e1f950585ad6ae1c6e2aa03b2a26442a9c47829325b4fd22576dcbe93b77`.
 
 ## Reproduction and proof boundary
 
@@ -802,6 +882,32 @@ python3 elkies-k3/scripts/extract_rank7_catalogue_source_search_target.py \
   --ambient-label A24 --ambient-label A17_E7 --ambient-label A15_D9 --check
 
 # Repeat the preceding two commands with partner1 replaced by partner2.
+
+python3 elkies-k3/scripts/extract_rank7_catalogue_source_search_target.py \
+  --surface-id K3-6ce16abb9de3c7c5 --partner-index 1 \
+  --frame-id K3-6ce16abb9de3c7c5-F001 --lattice-only \
+  --output artifacts/generated-results/elkies-k3-k3-6ce16abb9de3c7c5-source-search-target-partner1-lattice-only-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/classify_k3_6ce_a5_a10_mw2_sources.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_k3_6ce_a5_a10_fibre_ansatz_modp.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_k3_6ce_a5_a10_mw2_marking_modp.sage \
+  --output artifacts/generated-results/elkies-k3-k3-6ce16abb9de3c7c5-a5-a10-mw2-marking-mod5-square-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_lattice_foundry_same_ns_compiler_routes.sage \
+  --case k36ce --q 4 --degree 2 --max-pole 1 --beam-width 8 \
+  --max-depth 8 --mw-vector-cap 2000 --cap-from-mw-rank 4 --rank-first \
+  --output artifacts/generated-results/elkies-k3-k3-6ce16abb9de3c7c5-same-ns-compiler-routes-rankfirst-cap2000-v1.json \
+  --check
+
+python3 elkies-k3/scripts/certify_k3_6ce_equation_first_candidate.py --check
 
 python3 elkies-k3/scripts/build_rank7_rational_moduli_source_optimizer.py --check
 ```

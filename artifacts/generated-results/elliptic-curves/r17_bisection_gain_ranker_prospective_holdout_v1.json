@@ -1,0 +1,170 @@
+{
+  "commitment": {
+    "bisection_label_file_read": false,
+    "budgets": [
+      "1/100",
+      "1/20",
+      "1/10"
+    ],
+    "evaluation_methods": [
+      "frozen learned contrast",
+      "weakest-block Nagao",
+      "partial conductor-quality proxy",
+      "negative log projective height"
+    ],
+    "frozen_model_sha256": "dda5ff55a2470ebe42cc8255b7e91d5633d2d9d116c26c7870dc6bf813c0d4b4",
+    "model_artifact_sha256": "f6f07cf5a19c71adb73ed193fcb98af6640b08749689646debff61201e9e4d36"
+  },
+  "frozen_model_sha256": "dda5ff55a2470ebe42cc8255b7e91d5633d2d9d116c26c7870dc6bf813c0d4b4",
+  "generation": {
+    "command": "python3 elliptic-curves/scripts/evaluate_r17_bisection_ranker_prospective.py",
+    "script_sha256": "cbcc91b72e965e442aa305494c33d5b452f7e5c510de6fc0c57a28e45a305953"
+  },
+  "inputs": {
+    "/home/royvanrijn/src/jacobian-research/artifacts/generated-results/elliptic-curves/r17_bisection_gain_ranker_quarantined_replay_v1.json": "f6f07cf5a19c71adb73ed193fcb98af6640b08749689646debff61201e9e4d36",
+    "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/r17-prospective-holdout-summary.json": "acbe5e9700a498995a23462265c4a9c0b47f7c5b560852fbe8215bb51dc79810",
+    "/home/royvanrijn/src/jacobian-research/artifacts/local/elliptic-curves/r17-prospective-holdout.jsonl": "acbd9c534aac5e71090120326eb573275c8fbef0d25c19ca8172845eccc2cce1"
+  },
+  "methods": {
+    "frozen_learned_contrast": {
+      "average_precision": 0.06960821933018378,
+      "budgets": [
+        {
+          "candidate_count": 50,
+          "certified_gain_sum": 6,
+          "enrichment_over_random": 6.381702127659574,
+          "population_fraction": "1/100",
+          "positive_count": 6,
+          "positive_recall": 0.06382978723404255
+        },
+        {
+          "candidate_count": 250,
+          "certified_gain_sum": 23,
+          "enrichment_over_random": 4.892638297872341,
+          "population_fraction": "1/20",
+          "positive_count": 23,
+          "positive_recall": 0.24468085106382978
+        },
+        {
+          "candidate_count": 500,
+          "certified_gain_sum": 36,
+          "enrichment_over_random": 3.8290212765957445,
+          "population_fraction": "1/10",
+          "positive_count": 36,
+          "positive_recall": 0.3829787234042553
+        }
+      ],
+      "roc_auc": 0.7535406771206108
+    },
+    "negative_log_projective_height": {
+      "average_precision": 0.040756977225136506,
+      "budgets": [
+        {
+          "candidate_count": 50,
+          "certified_gain_sum": 3,
+          "enrichment_over_random": 3.190851063829787,
+          "population_fraction": "1/100",
+          "positive_count": 3,
+          "positive_recall": 0.031914893617021274
+        },
+        {
+          "candidate_count": 250,
+          "certified_gain_sum": 15,
+          "enrichment_over_random": 2.978127659574468,
+          "population_fraction": "1/20",
+          "positive_count": 14,
+          "positive_recall": 0.14893617021276595
+        },
+        {
+          "candidate_count": 500,
+          "certified_gain_sum": 27,
+          "enrichment_over_random": 2.765404255319149,
+          "population_fraction": "1/10",
+          "positive_count": 26,
+          "positive_recall": 0.2765957446808511
+        }
+      ],
+      "roc_auc": 0.6582069967683866
+    },
+    "partial_conductor_quality_proxy": {
+      "average_precision": 0.030417982451251442,
+      "budgets": [
+        {
+          "candidate_count": 50,
+          "certified_gain_sum": 1,
+          "enrichment_over_random": 1.0636170212765959,
+          "population_fraction": "1/100",
+          "positive_count": 1,
+          "positive_recall": 0.010638297872340425
+        },
+        {
+          "candidate_count": 250,
+          "certified_gain_sum": 9,
+          "enrichment_over_random": 1.9145106382978723,
+          "population_fraction": "1/20",
+          "positive_count": 9,
+          "positive_recall": 0.09574468085106383
+        },
+        {
+          "candidate_count": 500,
+          "certified_gain_sum": 17,
+          "enrichment_over_random": 1.8081489361702128,
+          "population_fraction": "1/10",
+          "positive_count": 17,
+          "positive_recall": 0.18085106382978725
+        }
+      ],
+      "roc_auc": 0.6598824473507277
+    },
+    "weakest_block_nagao": {
+      "average_precision": 0.026380296045391813,
+      "budgets": [
+        {
+          "candidate_count": 50,
+          "certified_gain_sum": 1,
+          "enrichment_over_random": 1.0636170212765959,
+          "population_fraction": "1/100",
+          "positive_count": 1,
+          "positive_recall": 0.010638297872340425
+        },
+        {
+          "candidate_count": 250,
+          "certified_gain_sum": 8,
+          "enrichment_over_random": 1.7017872340425533,
+          "population_fraction": "1/20",
+          "positive_count": 8,
+          "positive_recall": 0.0851063829787234
+        },
+        {
+          "candidate_count": 500,
+          "certified_gain_sum": 13,
+          "enrichment_over_random": 1.3827021276595746,
+          "population_fraction": "1/10",
+          "positive_count": 13,
+          "positive_recall": 0.13829787234042554
+        }
+      ],
+      "roc_auc": 0.5873858633179344
+    }
+  },
+  "population": {
+    "censored_parameters": [
+      "2838/5917"
+    ],
+    "censored_row_count": 1,
+    "certified_gain_sum": 95,
+    "committed_row_count": 5000,
+    "positive_count": 94,
+    "positive_rate": 0.01880376075215043,
+    "usable_row_count": 4999
+  },
+  "proof_boundary": [
+    "The cohort and four evaluation methods were committed before its bisection labels were computed.",
+    "This evaluates known-bisection visibility, not total rank or residual Selmer dimension.",
+    "Censored rows are omitted rather than treated as negatives.",
+    "Timing-bearing raw-label hashes are excluded from the deterministic evaluation artifact."
+  ],
+  "schema": "elliptic-curves.r17-bisection-gain-ranker-prospective-holdout.v1",
+  "semantic_label_sha256_excluding_timings": "83437f95ef0ca260829bab8931e4619a3181f71501640719ad451fe2d86f0d3a",
+  "status": "EXPERIMENTAL_PROSPECTIVE_BISECTION_TARGET_EVALUATION"
+}

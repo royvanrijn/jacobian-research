@@ -1,0 +1,119 @@
+{
+  "schema": "elliptic-curves.fermigier-baseline-rankers.v1",
+  "evaluation_role": "retrospective_development_not_prospective_holdout",
+  "objective": "Evaluate pre-existing and explicitly formulaic pre-point-search Fermigier rankings without fitting to the two certified quotient jumps.",
+  "corpus": {
+    "path": "artifacts/local/elliptic-curves/fermigier-labelled-corpus-v1.jsonl.gz",
+    "summary": "artifacts/local/elliptic-curves/fermigier-labelled-corpus-v1-summary.json"
+  },
+  "admitted_positive_ids": [
+    "fermigier-E22",
+    "fermigier-rank20-near-miss"
+  ],
+  "budgets": [10, 100, 1000, 5000, 20000],
+  "rankers": [
+    {
+      "id": "family-residual-staged-composite",
+      "feature_source": "family_residual_score_h100000_b200_top20000",
+      "field": "rank_jump_score",
+      "direction": "higher",
+      "role": "primary_formulaic_development_baseline",
+      "initial_population_count": 12195252,
+      "materialized_population_count": 20000,
+      "selection": "five-stage caps 8000000,2000000,500000,100000,20000 at prime cutoffs 100,200,400,1000,2000",
+      "leakage_boundary": "the score formula does not use ranks or points, but the cap widths were chosen with E22 in view"
+    },
+    {
+      "id": "family-residual-cumulative-s0",
+      "feature_source": "family_residual_score_h100000_b200_top20000",
+      "field": "cumulative_S0",
+      "direction": "higher",
+      "role": "component_diagnostic_only",
+      "initial_population_count": 12195252,
+      "materialized_population_count": 20000,
+      "selection": "same staged composite funnel; component ordering is only within its retained finalists",
+      "leakage_boundary": "diagnostic inspected as one member of a predeclared four-component panel"
+    },
+    {
+      "id": "family-residual-cumulative-s5",
+      "feature_source": "family_residual_score_h100000_b200_top20000",
+      "field": "cumulative_S5",
+      "direction": "higher",
+      "role": "component_diagnostic_only",
+      "initial_population_count": 12195252,
+      "materialized_population_count": 20000,
+      "selection": "same staged composite funnel; component ordering is only within its retained finalists",
+      "leakage_boundary": "diagnostic inspected as one member of a predeclared four-component panel"
+    },
+    {
+      "id": "family-residual-window-s0",
+      "feature_source": "family_residual_score_h100000_b200_top20000",
+      "field": "window_S0",
+      "direction": "higher",
+      "role": "component_diagnostic_only",
+      "initial_population_count": 12195252,
+      "materialized_population_count": 20000,
+      "selection": "same staged composite funnel; component ordering is only within its retained finalists",
+      "leakage_boundary": "diagnostic inspected as one member of a predeclared four-component panel"
+    },
+    {
+      "id": "family-residual-window-s5",
+      "feature_source": "family_residual_score_h100000_b200_top20000",
+      "field": "window_S5",
+      "direction": "higher",
+      "role": "component_diagnostic_only",
+      "initial_population_count": 12195252,
+      "materialized_population_count": 20000,
+      "selection": "same staged composite funnel; component ordering is only within its retained finalists",
+      "leakage_boundary": "diagnostic inspected as one member of a predeclared four-component panel"
+    },
+    {
+      "id": "legacy-global-score",
+      "feature_source": "global_score_top5000",
+      "field": "score",
+      "direction": "higher",
+      "role": "historical_development_baseline",
+      "initial_population_count": 12195252,
+      "materialized_population_count": 5000,
+      "selection": "historical staged funnel ending with 100000 candidates at the final cutoff, then retaining 5000",
+      "leakage_boundary": "the run log survives but the exact historical generator does not"
+    },
+    {
+      "id": "legacy-multibound-composite",
+      "feature_source": "multibound_score_top5000",
+      "field": "combined",
+      "direction": "higher",
+      "role": "historical_development_baseline",
+      "initial_population_count": 12195252,
+      "materialized_population_count": 5000,
+      "selection": "historical multibound funnel; 500000 survived its s400 filter before the retained table",
+      "leakage_boundary": "only E22 is present, and the exact historical generator does not survive"
+    },
+    {
+      "id": "legacy-broad-ensemble",
+      "feature_source": "broad_ensemble",
+      "field": "ensemble_rank",
+      "direction": "lower",
+      "role": "historical_development_baseline",
+      "initial_population_count": 76053495,
+      "materialized_population_count": 6071,
+      "selection": "union of historical score-channel finalist sets",
+      "leakage_boundary": "only E22 is present, and the exact historical generator does not survive"
+    },
+    {
+      "id": "legacy-hot-neighborhood-score",
+      "feature_source": "hot_neighborhood_score_top5000",
+      "field": "score",
+      "direction": "higher",
+      "role": "control_only_baseline",
+      "initial_population_count": 487250,
+      "materialized_population_count": 5000,
+      "selection": "top 5000 from the recovered hot-neighborhood parameter population",
+      "leakage_boundary": "neither admitted positive belongs to this retained table"
+    }
+  ],
+  "interpretation": {
+    "valid": "retrieval ranks inside each materialized finalist cohort and descriptive overlap with censored bounded-search outcomes",
+    "invalid": "full-population final-cutoff ranks for fibres discarded at an earlier stage, prospective holdout performance, rank prediction, or a negative label for any censored fibre"
+  }
+}

@@ -1,0 +1,2902 @@
+{
+  "fingerprints": [
+    {
+      "certified_rank_lower_bound": 21,
+      "control_role": "lower-jump mechanism control; added after the four published high-rank controls and not used to retune their feature construction",
+      "degree_visibility": [
+        {
+          "atlas_size": 39120,
+          "atlas_status": "complete_equation_level_atlas",
+          "class_multiplicity_histogram": {
+            "1": 3,
+            "2": 1,
+            "3": 1,
+            "5": 1,
+            "8": 1
+          },
+          "cover_degree": 2,
+          "distinct_nonzero_quotient_classes": 7,
+          "interpretation": "This is the exact vector matroid of split bisection classes in the certified mod-2 quotient coordinates. It measures cover overlap and intersection of visible directions, not full Mordell--Weil dependence.",
+          "minimal_dependency_circuits": {
+            "count_by_cardinality": {
+              "1": 4,
+              "2": 42,
+              "3": 131,
+              "4": 58,
+              "5": 48
+            },
+            "example_limit": 128,
+            "examples": [
+              [
+                "orbit-0be21"
+              ],
+              [
+                "orbit-10aaa"
+              ],
+              [
+                "orbit-06f04"
+              ],
+              [
+                "orbit-126e6"
+              ],
+              [
+                "orbit-05980",
+                "orbit-01926"
+              ],
+              [
+                "orbit-05980",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-18fd5"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-00ca6"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-0888a"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-07843",
+                "orbit-02d31"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-05443"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-055ad"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-0976c"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-045c2"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-0fb68"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-196a3"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-06faa"
+              ],
+              [
+                "orbit-05443",
+                "orbit-055ad"
+              ],
+              [
+                "orbit-05443",
+                "orbit-0976c"
+              ],
+              [
+                "orbit-05443",
+                "orbit-045c2"
+              ],
+              [
+                "orbit-05443",
+                "orbit-0fb68"
+              ],
+              [
+                "orbit-05443",
+                "orbit-196a3"
+              ],
+              [
+                "orbit-05443",
+                "orbit-06faa"
+              ],
+              [
+                "orbit-18fd5",
+                "orbit-00ca6"
+              ],
+              [
+                "orbit-18fd5",
+                "orbit-0888a"
+              ],
+              [
+                "orbit-18fd5",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-055ad",
+                "orbit-0976c"
+              ],
+              [
+                "orbit-055ad",
+                "orbit-045c2"
+              ],
+              [
+                "orbit-055ad",
+                "orbit-0fb68"
+              ],
+              [
+                "orbit-055ad",
+                "orbit-196a3"
+              ],
+              [
+                "orbit-055ad",
+                "orbit-06faa"
+              ],
+              [
+                "orbit-00ca6",
+                "orbit-0888a"
+              ],
+              [
+                "orbit-00ca6",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-0976c",
+                "orbit-045c2"
+              ],
+              [
+                "orbit-0976c",
+                "orbit-0fb68"
+              ],
+              [
+                "orbit-0976c",
+                "orbit-196a3"
+              ],
+              [
+                "orbit-0976c",
+                "orbit-06faa"
+              ],
+              [
+                "orbit-045c2",
+                "orbit-0fb68"
+              ],
+              [
+                "orbit-045c2",
+                "orbit-196a3"
+              ],
+              [
+                "orbit-045c2",
+                "orbit-06faa"
+              ],
+              [
+                "orbit-0fb68",
+                "orbit-196a3"
+              ],
+              [
+                "orbit-0fb68",
+                "orbit-06faa"
+              ],
+              [
+                "orbit-196a3",
+                "orbit-06faa"
+              ],
+              [
+                "orbit-01926",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-0888a",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-05980",
+                "orbit-04d17",
+                "orbit-090a3"
+              ],
+              [
+                "orbit-05980",
+                "orbit-04d17",
+                "orbit-05443"
+              ],
+              [
+                "orbit-05980",
+                "orbit-04d17",
+                "orbit-055ad"
+              ],
+              [
+                "orbit-05980",
+                "orbit-04d17",
+                "orbit-0976c"
+              ],
+              [
+                "orbit-05980",
+                "orbit-04d17",
+                "orbit-045c2"
+              ],
+              [
+                "orbit-05980",
+                "orbit-04d17",
+                "orbit-0fb68"
+              ],
+              [
+                "orbit-05980",
+                "orbit-04d17",
+                "orbit-196a3"
+              ],
+              [
+                "orbit-05980",
+                "orbit-04d17",
+                "orbit-06faa"
+              ],
+              [
+                "orbit-05980",
+                "orbit-090a3",
+                "orbit-18fd5"
+              ],
+              [
+                "orbit-05980",
+                "orbit-090a3",
+                "orbit-00ca6"
+              ],
+              [
+                "orbit-05980",
+                "orbit-090a3",
+                "orbit-0888a"
+              ],
+              [
+                "orbit-05980",
+                "orbit-090a3",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-05980",
+                "orbit-05443",
+                "orbit-18fd5"
+              ],
+              [
+                "orbit-05980",
+                "orbit-05443",
+                "orbit-00ca6"
+              ],
+              [
+                "orbit-05980",
+                "orbit-05443",
+                "orbit-0888a"
+              ],
+              [
+                "orbit-05980",
+                "orbit-05443",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-05980",
+                "orbit-18fd5",
+                "orbit-055ad"
+              ],
+              [
+                "orbit-05980",
+                "orbit-18fd5",
+                "orbit-0976c"
+              ],
+              [
+                "orbit-05980",
+                "orbit-18fd5",
+                "orbit-045c2"
+              ],
+              [
+                "orbit-05980",
+                "orbit-18fd5",
+                "orbit-0fb68"
+              ],
+              [
+                "orbit-05980",
+                "orbit-18fd5",
+                "orbit-196a3"
+              ],
+              [
+                "orbit-05980",
+                "orbit-18fd5",
+                "orbit-06faa"
+              ],
+              [
+                "orbit-05980",
+                "orbit-055ad",
+                "orbit-00ca6"
+              ],
+              [
+                "orbit-05980",
+                "orbit-055ad",
+                "orbit-0888a"
+              ],
+              [
+                "orbit-05980",
+                "orbit-055ad",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-05980",
+                "orbit-00ca6",
+                "orbit-0976c"
+              ],
+              [
+                "orbit-05980",
+                "orbit-00ca6",
+                "orbit-045c2"
+              ],
+              [
+                "orbit-05980",
+                "orbit-00ca6",
+                "orbit-0fb68"
+              ],
+              [
+                "orbit-05980",
+                "orbit-00ca6",
+                "orbit-196a3"
+              ],
+              [
+                "orbit-05980",
+                "orbit-00ca6",
+                "orbit-06faa"
+              ],
+              [
+                "orbit-05980",
+                "orbit-0976c",
+                "orbit-0888a"
+              ],
+              [
+                "orbit-05980",
+                "orbit-0976c",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-05980",
+                "orbit-045c2",
+                "orbit-0888a"
+              ],
+              [
+                "orbit-05980",
+                "orbit-045c2",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-05980",
+                "orbit-0fb68",
+                "orbit-0888a"
+              ],
+              [
+                "orbit-05980",
+                "orbit-0fb68",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-05980",
+                "orbit-196a3",
+                "orbit-0888a"
+              ],
+              [
+                "orbit-05980",
+                "orbit-196a3",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-05980",
+                "orbit-0888a",
+                "orbit-06faa"
+              ],
+              [
+                "orbit-05980",
+                "orbit-06faa",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-07843",
+                "orbit-1f786"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-090a3",
+                "orbit-01926"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-090a3",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-05443",
+                "orbit-01926"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-05443",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-1f786",
+                "orbit-02d31"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-055ad",
+                "orbit-01926"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-055ad",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-0976c",
+                "orbit-01926"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-0976c",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-045c2",
+                "orbit-01926"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-045c2",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-0fb68",
+                "orbit-01926"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-0fb68",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-196a3",
+                "orbit-01926"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-196a3",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-01926",
+                "orbit-06faa"
+              ],
+              [
+                "orbit-04d17",
+                "orbit-06faa",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-101f2",
+                "orbit-1f786",
+                "orbit-08e3a"
+              ],
+              [
+                "orbit-07843",
+                "orbit-18fd5",
+                "orbit-1f786"
+              ],
+              [
+                "orbit-07843",
+                "orbit-1f786",
+                "orbit-00ca6"
+              ],
+              [
+                "orbit-07843",
+                "orbit-1f786",
+                "orbit-0888a"
+              ],
+              [
+                "orbit-07843",
+                "orbit-1f786",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-18fd5",
+                "orbit-01926"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-18fd5",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-00ca6",
+                "orbit-01926"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-00ca6",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-01926",
+                "orbit-0888a"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-01926",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-0888a",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-090a3",
+                "orbit-0eba4",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-05443",
+                "orbit-18fd5",
+                "orbit-01926"
+              ],
+              [
+                "orbit-05443",
+                "orbit-18fd5",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-05443",
+                "orbit-00ca6",
+                "orbit-01926"
+              ],
+              [
+                "orbit-05443",
+                "orbit-00ca6",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-05443",
+                "orbit-01926",
+                "orbit-0888a"
+              ],
+              [
+                "orbit-05443",
+                "orbit-01926",
+                "orbit-0eba4"
+              ],
+              [
+                "orbit-05443",
+                "orbit-0888a",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-05443",
+                "orbit-0eba4",
+                "orbit-01e36"
+              ],
+              [
+                "orbit-18fd5",
+                "orbit-1f786",
+                "orbit-02d31"
+              ],
+              [
+                "orbit-18fd5",
+                "orbit-055ad",
+                "orbit-01926"
+              ],
+              [
+                "orbit-18fd5",
+                "orbit-055ad",
+                "orbit-01e36"
+              ]
+            ],
+            "examples_truncated": true,
+            "total_count": 283
+          },
+          "minimum_spanning_packet_size": 4,
+          "nonzero_visible_cover_count": 21,
+          "spanning_packet_count_at_minimum_size": 619,
+          "split_cover_count": 25,
+          "subset_rank_histogram_by_cardinality": {
+            "0": {
+              "0": 1
+            },
+            "1": {
+              "0": 4,
+              "1": 21
+            },
+            "10": {
+              "1": 66,
+              "2": 186353,
+              "3": 1300344,
+              "4": 1781997
+            },
+            "11": {
+              "1": 12,
+              "2": 168510,
+              "3": 1556445,
+              "4": 2732433
+            },
+            "12": {
+              "1": 1,
+              "2": 126096,
+              "3": 1563113,
+              "4": 3511090
+            },
+            "13": {
+              "2": 77537,
+              "3": 1318765,
+              "4": 3803998
+            },
+            "14": {
+              "2": 38761,
+              "3": 933513,
+              "4": 3485126
+            },
+            "15": {
+              "2": 15504,
+              "3": 552333,
+              "4": 2700923
+            },
+            "16": {
+              "2": 4845,
+              "3": 271320,
+              "4": 1766810
+            },
+            "17": {
+              "2": 1140,
+              "3": 109497,
+              "4": 970938
+            },
+            "18": {
+              "2": 190,
+              "3": 35739,
+              "4": 444771
+            },
+            "19": {
+              "2": 20,
+              "3": 9215,
+              "4": 167865
+            },
+            "2": {
+              "0": 6,
+              "1": 126,
+              "2": 168
+            },
+            "20": {
+              "2": 1,
+              "3": 1810,
+              "4": 51319
+            },
+            "21": {
+              "3": 255,
+              "4": 12395
+            },
+            "22": {
+              "3": 23,
+              "4": 2277
+            },
+            "23": {
+              "3": 1,
+              "4": 299
+            },
+            "24": {
+              "4": 25
+            },
+            "25": {
+              "4": 1
+            },
+            "3": {
+              "0": 4,
+              "1": 361,
+              "2": 1400,
+              "3": 535
+            },
+            "4": {
+              "0": 1,
+              "1": 679,
+              "2": 6066,
+              "3": 5285,
+              "4": 619
+            },
+            "5": {
+              "1": 948,
+              "2": 18407,
+              "3": 26896,
+              "4": 6879
+            },
+            "6": {
+              "1": 1016,
+              "2": 43448,
+              "3": 93755,
+              "4": 38881
+            },
+            "7": {
+              "1": 829,
+              "2": 83086,
+              "3": 248509,
+              "4": 148276
+            },
+            "8": {
+              "1": 504,
+              "2": 130920,
+              "3": 525322,
+              "4": 424829
+            },
+            "9": {
+              "1": 221,
+              "2": 171244,
+              "3": 907773,
+              "4": 963737
+            }
+          },
+          "visible_cover_labels": [
+            "orbit-05980",
+            "orbit-04d17",
+            "orbit-101f2",
+            "orbit-07843",
+            "orbit-090a3",
+            "orbit-05443",
+            "orbit-18fd5",
+            "orbit-1f786",
+            "orbit-02d31",
+            "orbit-055ad",
+            "orbit-0be21",
+            "orbit-00ca6",
+            "orbit-0976c",
+            "orbit-045c2",
+            "orbit-0fb68",
+            "orbit-08e3a",
+            "orbit-196a3",
+            "orbit-01926",
+            "orbit-0888a",
+            "orbit-06faa",
+            "orbit-10aaa",
+            "orbit-06f04",
+            "orbit-0eba4",
+            "orbit-01e36",
+            "orbit-126e6"
+          ],
+          "visible_exceptional_span_dimension_over_f2": 4
+        },
+        {
+          "atlas_status": "not_available_for_this_family",
+          "cover_degree": 3,
+          "reason": "The foundry has exact lattice coset censuses on selected frames, but no complete equation-level trisection atlas specialized to these four published R17 fibres. Missing is not zero.",
+          "visible_exceptional_span_dimension": null
+        },
+        {
+          "atlas_status": "not_available_for_this_family",
+          "cover_degree": 4,
+          "reason": "Current quadrisection data are sampled lattice candidates, not a complete descended cover atlas. Missing is not zero.",
+          "visible_exceptional_span_dimension": null
+        }
+      ],
+      "generic_rank": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-354803089674674467206754048738095",
+        "2558194545892203175112161719607326368645810580537"
+      ],
+      "label": "icarm_curve394_rank_at_least_21",
+      "parameter": "3/8",
+      "quotient_height_geometry": {
+        "definition": "orthogonal projection of the displayed height lattice away from the real span of the specialized generic subgroup",
+        "enumeration": {
+          "algorithm": "PARI qflllgram plus complete qfminim/Fincke-Pohst",
+          "complete_for_successive_minima": true,
+          "enumerated_signed_vector_count": 8,
+          "maximum_stored_half_vectors": 500000,
+          "sufficient_height_bound": "5.7148368437222689727810804982865869987965600288631750407782749317715440387386111"
+        },
+        "numerical_boundary": "canonical heights and projected Gram use PARI realprecision=80; the point identities and quotient basis are exact, but these real height decimals are not interval certificates",
+        "quotient_determinant": "397.06688201775133450828593049085176649683144271382937621976496347457150505467377",
+        "quotient_gram": [
+          [
+            "8.8446656939409846018115715343130277852747743945763173040350292911653222917135017",
+            "4.4280538795661779853090896018402519180877289918629430703344059026853004610705483",
+            "3.4496777457709936168646188846281715571400822193881885361181857722506659423458773",
+            "-0.14377222972115682315184901860175246425215453384841818603410420607411020231377752"
+          ],
+          [
+            "4.4280538795661779853090896018402519180877289918629430703344059026853004610705483",
+            "5.7148368437222689727810804982865869987965600288631750407782749317715440387386111",
+            "1.5112121575935040358461393694042883691930350874712189076203431925808159432430236",
+            "0.15820674885582776572846135267503827662310582452523618877810352693240253342838483"
+          ],
+          [
+            "3.4496777457709936168646188846281715571400822193881885361181857722506659423458773",
+            "1.5112121575935040358461393694042883691930350874712189076203431925808159432430236",
+            "5.6552697634221803410442403122759899062904089084545922896259476417478841384451654",
+            "-0.97155366364147991358263957494715432794166432089200610212157612023398924585590341"
+          ],
+          [
+            "-0.14377222972115682315184901860175246425215453384841818603410420607411020231377752",
+            "0.15820674885582776572846135267503827662310582452523618877810352693240253342838483",
+            "-0.97155366364147991358263957494715432794166432089200610212157612023398924585590341",
+            "3.1936948874119065013161456106641165300336138046469794580965839071053221513819437"
+          ]
+        ],
+        "quotient_rank": 4,
+        "shortest_quotient_vectors": [
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "projected_height": "3.1936948874119065013161456106641165300336138046469794580965839071053221513819437"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "projected_height": "5.6552697634221803410442403122759899062904089084545922896259476417478841384451654"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              -1,
+              0,
+              0
+            ],
+            "projected_height": "5.7033947785308976039744728289191109478958764397136062041444924175662654083110162"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "projected_height": "5.7148368437222689727810804982865869987965600288631750407782749317715440387386111"
+          }
+        ],
+        "successive_minima": [
+          "3.1936948874119065013161456106641165300336138046469794580965839071053221513819437",
+          "5.6552697634221803410442403122759899062904089084545922896259476417478841384451654",
+          "5.7033947785308976039744728289191109478958764397136062041444924175662654083110162",
+          "5.7148368437222689727810804982865869987965600288631750407782749317715440387386111"
+        ]
+      },
+      "quotient_structure": {
+        "ambient_certified_subgroup_rank": 21,
+        "formula": "dim_Fell((L/M) tensor F_ell) = free_rank(L/M) + number of Smith factors divisible by ell",
+        "free_quotient_rank_lower_bound": 4,
+        "scope": "L is the certified subgroup generated by the displayed public basis; the full E(Q)/M quotient may be larger or less saturated",
+        "smith_invariant_factors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "specialized_generic_is_primitive_in_displayed_subgroup": true,
+        "specialized_generic_saturation_index_in_displayed_subgroup": 1,
+        "specialized_generic_subgroup_rank": 17,
+        "tensor_dimensions_over_f_ell": {
+          "2": 4,
+          "3": 4,
+          "5": 4
+        },
+        "torsion_invariant_factors": []
+      },
+      "response_variables": {
+        "degree_two_visible_dimension_over_f2": 4,
+        "primary_lower_bound": 4,
+        "prime_local_dimensions": {
+          "2": 4,
+          "3": 4,
+          "5": 4
+        }
+      }
+    },
+    {
+      "certified_rank_lower_bound": 25,
+      "degree_visibility": [
+        {
+          "atlas_size": 39120,
+          "atlas_status": "complete_equation_level_atlas",
+          "class_multiplicity_histogram": {
+            "1": 6
+          },
+          "cover_degree": 2,
+          "distinct_nonzero_quotient_classes": 6,
+          "interpretation": "This is the exact vector matroid of split bisection classes in the certified mod-2 quotient coordinates. It measures cover overlap and intersection of visible directions, not full Mordell--Weil dependence.",
+          "minimal_dependency_circuits": {
+            "count_by_cardinality": {
+              "4": 1
+            },
+            "example_limit": 128,
+            "examples": [
+              [
+                "orbit-1cb25",
+                "orbit-0cff7",
+                "orbit-1ea09",
+                "orbit-0d4ca"
+              ]
+            ],
+            "examples_truncated": false,
+            "total_count": 1
+          },
+          "minimum_spanning_packet_size": 5,
+          "nonzero_visible_cover_count": 6,
+          "spanning_packet_count_at_minimum_size": 4,
+          "split_cover_count": 6,
+          "subset_rank_histogram_by_cardinality": {
+            "0": {
+              "0": 1
+            },
+            "1": {
+              "1": 6
+            },
+            "2": {
+              "2": 15
+            },
+            "3": {
+              "3": 20
+            },
+            "4": {
+              "3": 1,
+              "4": 14
+            },
+            "5": {
+              "4": 2,
+              "5": 4
+            },
+            "6": {
+              "5": 1
+            }
+          },
+          "visible_cover_labels": [
+            "orbit-1cb25",
+            "orbit-0cff7",
+            "orbit-1ea09",
+            "orbit-051a1",
+            "orbit-0d4ca",
+            "orbit-1d5bb"
+          ],
+          "visible_exceptional_span_dimension_over_f2": 5
+        },
+        {
+          "atlas_status": "not_available_for_this_family",
+          "cover_degree": 3,
+          "reason": "The foundry has exact lattice coset censuses on selected frames, but no complete equation-level trisection atlas specialized to these four published R17 fibres. Missing is not zero.",
+          "visible_exceptional_span_dimension": null
+        },
+        {
+          "atlas_status": "not_available_for_this_family",
+          "cover_degree": 4,
+          "reason": "Current quadrisection data are sampled lattice candidates, not a complete descended cover atlas. Missing is not zero.",
+          "visible_exceptional_span_dimension": null
+        }
+      ],
+      "generic_rank": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-1222583105876029916237789137035775062690200",
+        "523967447200209449943328506898413682821590945806099349816040000"
+      ],
+      "label": "rank_at_least_25",
+      "parameter": "-2/377",
+      "quotient_height_geometry": {
+        "definition": "orthogonal projection of the displayed height lattice away from the real span of the specialized generic subgroup",
+        "enumeration": {
+          "algorithm": "PARI qflllgram plus complete qfminim/Fincke-Pohst",
+          "complete_for_successive_minima": true,
+          "enumerated_signed_vector_count": 26,
+          "maximum_stored_half_vectors": 500000,
+          "sufficient_height_bound": "11.758930875129027186594584586248441408870158218461988233936610354611321157953949"
+        },
+        "numerical_boundary": "canonical heights and projected Gram use PARI realprecision=80; the point identities and quotient basis are exact, but these real height decimals are not interval certificates",
+        "quotient_determinant": "7472869.7530387236376738762083810120929282394156006225605939110543962155498090566",
+        "quotient_gram": [
+          [
+            "11.226782151373291644664640183385097618332786995933326632297163072919926766368564",
+            "-1.5428825697276300134390871155330833286637592744325527728496086085195431590391963",
+            "-2.1708358938538890044185796611529584964728477190316749785136074538849010938845991",
+            "4.5439077336361200411758761787593488952191966318020583697566360377662292489839268",
+            "-0.93087343273125792490307950011768486270900762107027278132665176127291447859052334",
+            "-3.4193163811255053863623475076415148580160525318172396741771920073278256407325149",
+            "0.69760571265074543532805223484722115981815107771499585746941476471332693875295638",
+            "-0.93517977468327028194443681594498953259262418298524487382697621120376678646331932"
+          ],
+          [
+            "-1.5428825697276300134390871155330833286637592744325527728496086085195431590391963",
+            "8.8757678653595894897887794973144288586544705821664364666179706016531517251578987",
+            "2.0526516184707337046078668208307998448878415772368368434682572206045774867018815",
+            "-3.4223807981682028889488939320701136011180484703702262280994009441851311734764239",
+            "-1.2357253399757997875174785716156933906118792055992434408597616260055845602436635",
+            "2.5537677358320461594531863130730468299184658223799374049666220607796672726376175",
+            "3.1449483989484599446272665378686427193137292986284866197260120159420989171459771",
+            "4.3108779650410979748982381195696445796210955411444198430413600493689495819754837"
+          ],
+          [
+            "-2.1708358938538890044185796611529584964728477190316749785136074538849010938845991",
+            "2.0526516184707337046078668208307998448878415772368368434682572206045774867018815",
+            "9.1536632201862174741144905326203237100818937344984936509800891441019954818851299",
+            "-1.6412280602254201540611933939665716502489529319100735037659681107444789275678018",
+            "3.1405476967448107526877109971250347251742590118704392926375134136271704461573858",
+            "-1.7288037488960929900285689893519713128561325660594256662628976124100951016589196",
+            "-1.8767355108436966401604108049184547092508441265430775188582160511119920251384516",
+            "-1.1464635395614455751437787110014381987776857516548721882641376608728587085671202"
+          ],
+          [
+            "4.5439077336361200411758761787593488952191966318020583697566360377662292489839268",
+            "-3.4223807981682028889488939320701136011180484703702262280994009441851311734764239",
+            "-1.6412280602254201540611933939665716502489529319100735037659681107444789275678018",
+            "9.0805051938584518681798250122799832382126122470541774316462346487354299128470185",
+            "3.5434649820914388301561143163175375227037328376502514947092443098905005563205548",
+            "-1.6201923660209987921719168956296449236482538523477097360084073392603461764290318",
+            "-0.88578349064313992774068563494823213568355260286906845945207521819859925128526682",
+            "-1.8306938450721334384895462836523341805122588851615519753773430578014334859052444"
+          ],
+          [
+            "-0.93087343273125792490307950011768486270900762107027278132665176127291447859052334",
+            "-1.2357253399757997875174785716156933906118792055992434408597616260055845602436635",
+            "3.1405476967448107526877109971250347251742590118704392926375134136271704461573858",
+            "3.5434649820914388301561143163175375227037328376502514947092443098905005563205548",
+            "11.758930875129027186594584586248441408870158218461988233936610354611321157953949",
+            "-4.0159787718213389949562335261354132680916108472455326611594029621886894059271208",
+            "2.2586723083002517762975129755873847924822769864476626440346633201628876780266025",
+            "-5.2236904857425865644260759579191482086868924667817961897950602604455006920191675"
+          ],
+          [
+            "-3.4193163811255053863623475076415148580160525318172396741771920073278256407325149",
+            "2.5537677358320461594531863130730468299184658223799374049666220607796672726376175",
+            "-1.7288037488960929900285689893519713128561325660594256662628976124100951016589196",
+            "-1.6201923660209987921719168956296449236482538523477097360084073392603461764290318",
+            "-4.0159787718213389949562335261354132680916108472455326611594029621886894059271208",
+            "8.3449078325956749394187142468500129195328470601315595189151122799808397931175411",
+            "-1.2128532318893922704666084580728378819093557824035638795815604289278142365287066",
+            "3.3915664339871091739030818425273299994387956295756294160300601999018856191719775"
+          ],
+          [
+            "0.69760571265074543532805223484722115981815107771499585746941476471332693875295638",
+            "3.1449483989484599446272665378686427193137292986284866197260120159420989171459771",
+            "-1.8767355108436966401604108049184547092508441265430775188582160511119920251384516",
+            "-0.88578349064313992774068563494823213568355260286906845945207521819859925128526682",
+            "2.2586723083002517762975129755873847924822769864476626440346633201628876780266025",
+            "-1.2128532318893922704666084580728378819093557824035638795815604289278142365287066",
+            "10.192867182830072574226848236001103165921651312178906419544327252406937113456419",
+            "1.5665842302715282586471119535792207351620693131207361168078845973970349612470286"
+          ],
+          [
+            "-0.93517977468327028194443681594498953259262418298524487382697621120376678646331932",
+            "4.3108779650410979748982381195696445796210955411444198430413600493689495819754837",
+            "-1.1464635395614455751437787110014381987776857516548721882641376608728587085671202",
+            "-1.8306938450721334384895462836523341805122588851615519753773430578014334859052444",
+            "-5.2236904857425865644260759579191482086868924667817961897950602604455006920191675",
+            "3.3915664339871091739030818425273299994387956295756294160300601999018856191719775",
+            "1.5665842302715282586471119535792207351620693131207361168078845973970349612470286",
+            "10.677562251449690642822593867482393736283573240818859219577056548088993829892518"
+          ]
+        ],
+        "quotient_rank": 8,
+        "shortest_quotient_vectors": [
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "projected_height": "8.3449078325956749394187142468500129195328470601315595189151122799808397931175411"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "8.8757678653595894897887794973144288586544705821664364666179706016531517251578987"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "9.0805051938584518681798250122799832382126122470541774316462346487354299128470185"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "9.1536632201862174741144905326203237100818937344984936509800891441019954818851299"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "projected_height": "10.192867182830072574226848236001103165921651312178906419544327252406937113456419"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "projected_height": "10.677562251449690642822593867482393736283573240818859219577056548088993829892518"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              0,
+              0,
+              -1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "projected_height": "10.744428182187120868094295762079826218765711287105761326553680877875891322035855"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "projected_height": "10.931574186727084182814897125657533435695852740696456000112307051004246391099449"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "11.111511462881635580070816645454184894630985888480161442065403362018319291052069"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "11.219471877959503430492712838146383066107005979383387324430125646122898181247729"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "11.226782151373291644664640183385097618332786995933326632297163072919926766368564"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              -1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            "projected_height": "11.427685611210711058861016664554362057918124342472740190330368498590434033993881"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "11.758930875129027186594584586248441408870158218461988233936610354611321157953949"
+          }
+        ],
+        "successive_minima": [
+          "8.3449078325956749394187142468500129195328470601315595189151122799808397931175411",
+          "8.8757678653595894897887794973144288586544705821664364666179706016531517251578987",
+          "9.0805051938584518681798250122799832382126122470541774316462346487354299128470185",
+          "9.1536632201862174741144905326203237100818937344984936509800891441019954818851299",
+          "10.192867182830072574226848236001103165921651312178906419544327252406937113456419",
+          "10.677562251449690642822593867482393736283573240818859219577056548088993829892518",
+          "10.744428182187120868094295762079826218765711287105761326553680877875891322035855",
+          "11.219471877959503430492712838146383066107005979383387324430125646122898181247729"
+        ]
+      },
+      "quotient_structure": {
+        "ambient_certified_subgroup_rank": 25,
+        "formula": "dim_Fell((L/M) tensor F_ell) = free_rank(L/M) + number of Smith factors divisible by ell",
+        "free_quotient_rank_lower_bound": 8,
+        "scope": "L is the certified subgroup generated by the displayed public basis; the full E(Q)/M quotient may be larger or less saturated",
+        "smith_invariant_factors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "specialized_generic_is_primitive_in_displayed_subgroup": true,
+        "specialized_generic_saturation_index_in_displayed_subgroup": 1,
+        "specialized_generic_subgroup_rank": 17,
+        "tensor_dimensions_over_f_ell": {
+          "2": 8,
+          "3": 8,
+          "5": 8
+        },
+        "torsion_invariant_factors": []
+      },
+      "response_variables": {
+        "degree_two_visible_dimension_over_f2": {
+          "dimension_in_known_public_complement": 5,
+          "dimension_modulo_generic_17": 5,
+          "distinct_known_public_classes": 6,
+          "escape_basis_labels": [],
+          "finite_quotient_escape_count": 0,
+          "known_public_complement_dimension": 8
+        },
+        "primary_lower_bound": 8,
+        "prime_local_dimensions": {
+          "2": 8,
+          "3": 8,
+          "5": 8
+        }
+      }
+    },
+    {
+      "certified_rank_lower_bound": 26,
+      "degree_visibility": [
+        {
+          "atlas_size": 39120,
+          "atlas_status": "complete_equation_level_atlas",
+          "class_multiplicity_histogram": {
+            "1": 3
+          },
+          "cover_degree": 2,
+          "distinct_nonzero_quotient_classes": 3,
+          "interpretation": "This is the exact vector matroid of split bisection classes in the certified mod-2 quotient coordinates. It measures cover overlap and intersection of visible directions, not full Mordell--Weil dependence.",
+          "minimal_dependency_circuits": {
+            "count_by_cardinality": {},
+            "example_limit": 128,
+            "examples": [],
+            "examples_truncated": false,
+            "total_count": 0
+          },
+          "minimum_spanning_packet_size": 3,
+          "nonzero_visible_cover_count": 3,
+          "spanning_packet_count_at_minimum_size": 1,
+          "split_cover_count": 3,
+          "subset_rank_histogram_by_cardinality": {
+            "0": {
+              "0": 1
+            },
+            "1": {
+              "1": 3
+            },
+            "2": {
+              "2": 3
+            },
+            "3": {
+              "3": 1
+            }
+          },
+          "visible_cover_labels": [
+            "orbit-0da89",
+            "orbit-12c1b",
+            "orbit-1ea54"
+          ],
+          "visible_exceptional_span_dimension_over_f2": 3
+        },
+        {
+          "atlas_status": "not_available_for_this_family",
+          "cover_degree": 3,
+          "reason": "The foundry has exact lattice coset censuses on selected frames, but no complete equation-level trisection atlas specialized to these four published R17 fibres. Missing is not zero.",
+          "visible_exceptional_span_dimension": null
+        },
+        {
+          "atlas_status": "not_available_for_this_family",
+          "cover_degree": 4,
+          "reason": "Current quadrisection data are sampled lattice candidates, not a complete descended cover atlas. Missing is not zero.",
+          "visible_exceptional_span_dimension": null
+        }
+      ],
+      "generic_rank": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-271568164801421919805097494520335727505515190",
+        "1673523352045742769296938739782713519216640490554763586630258973092"
+      ],
+      "label": "rank_at_least_26",
+      "parameter": "-308/251",
+      "quotient_height_geometry": {
+        "definition": "orthogonal projection of the displayed height lattice away from the real span of the specialized generic subgroup",
+        "enumeration": {
+          "algorithm": "PARI qflllgram plus complete qfminim/Fincke-Pohst",
+          "complete_for_successive_minima": true,
+          "enumerated_signed_vector_count": 48,
+          "maximum_stored_half_vectors": 500000,
+          "sufficient_height_bound": "15.020107688549164571810372738599651431837024473200588400591917262821208442182380"
+        },
+        "numerical_boundary": "canonical heights and projected Gram use PARI realprecision=80; the point identities and quotient basis are exact, but these real height decimals are not interval certificates",
+        "quotient_determinant": "192910844.18132283877171606135434790690886842366543232116426278853663484818924467",
+        "quotient_gram": [
+          [
+            "14.511870816067239187828974235622810323261170594893950712485707508939779227287312",
+            "0.16636045212025602597948195615522615497915190162747659326914149257343504308780426",
+            "-4.9916281346581287387016805785278825955480037655168903976005446032602958909195380",
+            "-1.5089173951558928326422943180270277201804155268276199054762252919443059196290021",
+            "-3.6399866557269024521123399868389211148371435295862032231821447702751695264741276",
+            "-2.8163536544765278465958381364994380102838356689147247423574774597098830275276844",
+            "3.2229625363069250557593526898397497576711013115912758133877390052020176742003646",
+            "-1.0375095226722786242992528324448971764588998350455177176457340902230228759972150",
+            "-3.9647810087217454466777249638153781855170282270792108685397173079026496269818356"
+          ],
+          [
+            "0.16636045212025602597948195615522615497915190162747659326914149257343504308780426",
+            "13.258387999438038362372032670789123601575774102235373250970759079302845453895504",
+            "3.2172217548481252758162435857126418917738356650213908119573737202587785332329206",
+            "-8.3777168064456685653517261164896794582436630815793839758257865788568226487445917",
+            "-3.5935002350613188133824970181055899790295157451752982410068010359293109769776799",
+            "-6.1672512290491322055311686103247261801207718817623887907266415904573812973269971",
+            "-6.6066624099428588496286282970355765289865292517531253254828780673463456523791383",
+            "-5.5507129047955352068533608773814687877773167104348103783784358055721520130240158",
+            "-6.0114468844713769253151965484898445714620994573887758603647467528191490722133089"
+          ],
+          [
+            "-4.9916281346581287387016805785278825955480037655168903976005446032602958909195380",
+            "3.2172217548481252758162435857126418917738356650213908119573737202587785332329206",
+            "12.057222281042100953232471906224007629734572472234264956427496012028462648998101",
+            "-2.9722756139864890153289103707203456355939074842022153594355926574234957565543881",
+            "-0.022888633607171543539891586694128795082060982775215121620230706241615920504111596",
+            "0.81614712782230990436585480394099484475528422189369625485342869223548955595815144",
+            "-7.1048267549765458005432110455157440908951527390124201434294257192121652801599566",
+            "0.78879290390339524049771552247160781559034332096935311741314054718653153894301566",
+            "-5.5561569841667018264319733880432207793832588082464195217740673644125980344633098"
+          ],
+          [
+            "-1.5089173951558928326422943180270277201804155268276199054762252919443059196290021",
+            "-8.3777168064456685653517261164896794582436630815793839758257865788568226487445917",
+            "-2.9722756139864890153289103707203456355939074842022153594355926574234957565543881",
+            "17.038479440312933804690247020759782972200714665535298478370613015336395775626764",
+            "10.858340379472873244612479606393819625163298348722820163975132251169854815892022",
+            "9.0730507053449624824930282962220183357819858586929919000531288410055975506937979",
+            "6.5680135171633733292684762440318079314274744051368770674266605211527110463784071",
+            "0.93150162950952779681002569189761977131618568240108913987111442943604477366154599",
+            "7.4722177029451394046916622327197581249330768656118571288208648853786407900064633"
+          ],
+          [
+            "-3.6399866557269024521123399868389211148371435295862032231821447702751695264741276",
+            "-3.5935002350613188133824970181055899790295157451752982410068010359293109769776799",
+            "-0.022888633607171543539891586694128795082060982775215121620230706241615920504111596",
+            "10.858340379472873244612479606393819625163298348722820163975132251169854815892022",
+            "19.503402812986992685731816931913169264065167820215357851208504929603042784366681",
+            "-0.61943524006783904894575044011892806289748712820175644652772649784473537586525748",
+            "4.2170935677575592769137041258949645786344925174525310556220299474013347394795220",
+            "-4.2629939249049646569158739910640907692334774835309481996303186376506140836305832",
+            "-0.74731368085227733263467499817777931069855779557076384827184843365268878106100304"
+          ],
+          [
+            "-2.8163536544765278465958381364994380102838356689147247423574774597098830275276844",
+            "-6.1672512290491322055311686103247261801207718817623887907266415904573812973269971",
+            "0.81614712782230990436585480394099484475528422189369625485342869223548955595815144",
+            "9.0730507053449624824930282962220183357819858586929919000531288410055975506937979",
+            "-0.61943524006783904894575044011892806289748712820175644652772649784473537586525748",
+            "15.666675899963722988624480192569123129610939021252058693693852364952429477228384",
+            "-2.1169407912073693276316052866904981775828045937896675338379692371072476866034381",
+            "7.8844268630054203079010154915091693341431060990959750370668018091487168721926163",
+            "6.8471030760726312117941410703356361499834400578035901524696828072124543827574283"
+          ],
+          [
+            "3.2229625363069250557593526898397497576711013115912758133877390052020176742003646",
+            "-6.6066624099428588496286282970355765289865292517531253254828780673463456523791383",
+            "-7.1048267549765458005432110455157440908951527390124201434294257192121652801599566",
+            "6.5680135171633733292684762440318079314274744051368770674266605211527110463784071",
+            "4.2170935677575592769137041258949645786344925174525310556220299474013347394795220",
+            "-2.1169407912073693276316052866904981775828045937896675338379692371072476866034381",
+            "16.461954395524995122821663353221301696800693934613884780539808922459323631294449",
+            "0.66067323366221273281647018685638346646769938316805480761888080852339172690965202",
+            "2.8884878776448332621569511001838413847691671364965741527233136759291529854701019"
+          ],
+          [
+            "-1.0375095226722786242992528324448971764588998350455177176457340902230228759972150",
+            "-5.5507129047955352068533608773814687877773167104348103783784358055721520130240158",
+            "0.78879290390339524049771552247160781559034332096935311741314054718653153894301566",
+            "0.93150162950952779681002569189761977131618568240108913987111442943604477366154599",
+            "-4.2629939249049646569158739910640907692334774835309481996303186376506140836305832",
+            "7.8844268630054203079010154915091693341431060990959750370668018091487168721926163",
+            "0.66067323366221273281647018685638346646769938316805480761888080852339172690965202",
+            "15.971046429978025372729071356439158603396797376384282087147204589207972243029343",
+            "7.7362584028347449914383969788750298230153696194572124067143632725650712197606424"
+          ],
+          [
+            "-3.9647810087217454466777249638153781855170282270792108685397173079026496269818356",
+            "-6.0114468844713769253151965484898445714620994573887758603647467528191490722133089",
+            "-5.5561569841667018264319733880432207793832588082464195217740673644125980344633098",
+            "7.4722177029451394046916622327197581249330768656118571288208648853786407900064633",
+            "-0.74731368085227733263467499817777931069855779557076384827184843365268878106100304",
+            "6.8471030760726312117941410703356361499834400578035901524696828072124543827574283",
+            "2.8884878776448332621569511001838413847691671364965741527233136759291529854701019",
+            "7.7362584028347449914383969788750298230153696194572124067143632725650712197606424",
+            "15.304838057509763897045408078954338640481827348342996586695181796023169245190792"
+          ]
+        ],
+        "quotient_rank": 9,
+        "shortest_quotient_vectors": [
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              -1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "11.106905503492299926944027459772543318191278835767578002160995129851492552319674"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              -1,
+              1,
+              0,
+              -1,
+              -1,
+              1,
+              -1
+            ],
+            "projected_height": "11.488531435983393632627998636454112486620970597595458373269815213095684437948465"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              0,
+              1,
+              -2,
+              1,
+              2,
+              1,
+              -1,
+              1
+            ],
+            "projected_height": "11.838899360642747079183794620970018679788597104378568196399923064680203107616583"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "12.057222281042100953232471906224007629734572472234264956427496012028462648998101"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              -1,
+              0,
+              -1,
+              2,
+              -1,
+              -1,
+              -1,
+              1,
+              -2
+            ],
+            "projected_height": "12.166692286888582699017113178433650108410701966478710985052694398342726913121458"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              0,
+              1,
+              -2,
+              1,
+              1,
+              1,
+              -1,
+              1
+            ],
+            "projected_height": "12.678887171855858873110894189233527814420741896004034420464608342570582925653457"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              -1,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1
+            ],
+            "projected_height": "12.848798899525952014484096360028193472580988813786170679779726765840324016746837"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              0,
+              1,
+              -1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            "projected_height": "12.871573065901914245666472868547078478967242277062778567442038516079426261231608"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "13.258387999438038362372032670789123601575774102235373250970759079302845453895504"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "13.541433826859635036358827458569547657289162604611903777689798936925595932033085"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              -1,
+              -1,
+              0,
+              0
+            ],
+            "projected_height": "13.651099708370241637350170912661558909027817906162168949968757104217036316798310"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              -1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            "projected_height": "13.690976784269110423589838357044576755157843814282770634138608600560239031265260"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              -1,
+              0,
+              -2,
+              2,
+              -1,
+              -1,
+              -1,
+              1,
+              -2
+            ],
+            "projected_height": "13.818855050648171476468988969277435517736460914244324154561457839141467599343132"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              1
+            ],
+            "projected_height": "13.844761761372254171939448378663871151684159979408357153963391895991136494363294"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              -1,
+              0,
+              -1,
+              1,
+              0,
+              -1,
+              -1,
+              1,
+              -1
+            ],
+            "projected_height": "13.993655564608021781908285195014874535805239216396583941779440755028499514030824"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "projected_height": "14.309523166614004474967713168413821144744960928823309450108453496063455719972636"
+          }
+        ],
+        "successive_minima": [
+          "11.106905503492299926944027459772543318191278835767578002160995129851492552319674",
+          "11.488531435983393632627998636454112486620970597595458373269815213095684437948465",
+          "11.838899360642747079183794620970018679788597104378568196399923064680203107616583",
+          "12.057222281042100953232471906224007629734572472234264956427496012028462648998101",
+          "12.166692286888582699017113178433650108410701966478710985052694398342726913121458",
+          "12.678887171855858873110894189233527814420741896004034420464608342570582925653457",
+          "13.258387999438038362372032670789123601575774102235373250970759079302845453895504",
+          "13.541433826859635036358827458569547657289162604611903777689798936925595932033085",
+          "13.651099708370241637350170912661558909027817906162168949968757104217036316798310"
+        ]
+      },
+      "quotient_structure": {
+        "ambient_certified_subgroup_rank": 26,
+        "formula": "dim_Fell((L/M) tensor F_ell) = free_rank(L/M) + number of Smith factors divisible by ell",
+        "free_quotient_rank_lower_bound": 9,
+        "scope": "L is the certified subgroup generated by the displayed public basis; the full E(Q)/M quotient may be larger or less saturated",
+        "smith_invariant_factors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "specialized_generic_is_primitive_in_displayed_subgroup": true,
+        "specialized_generic_saturation_index_in_displayed_subgroup": 1,
+        "specialized_generic_subgroup_rank": 17,
+        "tensor_dimensions_over_f_ell": {
+          "2": 9,
+          "3": 9,
+          "5": 9
+        },
+        "torsion_invariant_factors": []
+      },
+      "response_variables": {
+        "degree_two_visible_dimension_over_f2": {
+          "dimension_in_known_public_complement": 3,
+          "dimension_modulo_generic_17": 3,
+          "distinct_known_public_classes": 3,
+          "escape_basis_labels": [],
+          "finite_quotient_escape_count": 0,
+          "known_public_complement_dimension": 9
+        },
+        "primary_lower_bound": 9,
+        "prime_local_dimensions": {
+          "2": 9,
+          "3": 9,
+          "5": 9
+        }
+      }
+    },
+    {
+      "certified_rank_lower_bound": 27,
+      "degree_visibility": [
+        {
+          "atlas_size": 39120,
+          "atlas_status": "complete_equation_level_atlas",
+          "class_multiplicity_histogram": {
+            "1": 2
+          },
+          "cover_degree": 2,
+          "distinct_nonzero_quotient_classes": 2,
+          "interpretation": "This is the exact vector matroid of split bisection classes in the certified mod-2 quotient coordinates. It measures cover overlap and intersection of visible directions, not full Mordell--Weil dependence.",
+          "minimal_dependency_circuits": {
+            "count_by_cardinality": {},
+            "example_limit": 128,
+            "examples": [],
+            "examples_truncated": false,
+            "total_count": 0
+          },
+          "minimum_spanning_packet_size": 2,
+          "nonzero_visible_cover_count": 2,
+          "spanning_packet_count_at_minimum_size": 1,
+          "split_cover_count": 2,
+          "subset_rank_histogram_by_cardinality": {
+            "0": {
+              "0": 1
+            },
+            "1": {
+              "1": 2
+            },
+            "2": {
+              "2": 1
+            }
+          },
+          "visible_cover_labels": [
+            "orbit-195a4",
+            "orbit-00edf"
+          ],
+          "visible_exceptional_span_dimension_over_f2": 2
+        },
+        {
+          "atlas_status": "not_available_for_this_family",
+          "cover_degree": 3,
+          "reason": "The foundry has exact lattice coset censuses on selected frames, but no complete equation-level trisection atlas specialized to these four published R17 fibres. Missing is not zero.",
+          "visible_exceptional_span_dimension": null
+        },
+        {
+          "atlas_status": "not_available_for_this_family",
+          "cover_degree": 4,
+          "reason": "Current quadrisection data are sampled lattice candidates, not a complete descended cover atlas. Missing is not zero.",
+          "visible_exceptional_span_dimension": null
+        }
+      ],
+      "generic_rank": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-55671146865244401916117773020296610079754015500970",
+        "161981895322788558220906653027519611838007321625214218991719656790551905956"
+      ],
+      "label": "rank_at_least_27",
+      "parameter": "2456/135",
+      "quotient_height_geometry": {
+        "definition": "orthogonal projection of the displayed height lattice away from the real span of the specialized generic subgroup",
+        "enumeration": {
+          "algorithm": "PARI qflllgram plus complete qfminim/Fincke-Pohst",
+          "complete_for_successive_minima": true,
+          "enumerated_signed_vector_count": 180,
+          "maximum_stored_half_vectors": 500000,
+          "sufficient_height_bound": "24.699684174900849961434301064086923427970656015577365554664617212857043237239236"
+        },
+        "numerical_boundary": "canonical heights and projected Gram use PARI realprecision=80; the point identities and quotient basis are exact, but these real height decimals are not interval certificates",
+        "quotient_determinant": "22010407579.977256854836639543407082296030678788938381767766309581113288229373636",
+        "quotient_gram": [
+          [
+            "17.615987550624327690598268420648960839545577660887857636204034172215606885419608",
+            "-2.8774201047218073530656529939735650300791731530662302557328068150094781072303559",
+            "2.8067008373346329622303886750809480493130498560839811317745488941928421283242594",
+            "0.0091614467947978093141535331655367389382521457129698054030015545619495753493036212",
+            "5.0590029729934202773167307590210372740733851040547862668727531312868586146977693",
+            "7.2577238900730930787356930214534228358147566894213080657096691933736565918035608",
+            "1.6180468444668949196637307869924819926100031274675222928295844772308084867185871",
+            "-3.1368262956325409396541663249552558489699158658753410425895561509069690518357704",
+            "-2.5068015068646470891485323085227150214548672620149702468685794930946330621187443",
+            "2.5231389745540028095866214490909009285882381333003463357490046105800153357205539"
+          ],
+          [
+            "-2.8774201047218073530656529939735650300791731530662302557328068150094781072303559",
+            "20.739613169892617082003020122751919283873895672462620306295910754851871595293112",
+            "-8.3711209228290681368968047414939657384742127969526369317973938251987374745355068",
+            "-4.1279564276482780993221908043223753440314944752067479466551463090990772683799732",
+            "0.73693862629653954268081946344056015739242205127296222248331649756891357610130147",
+            "-11.048889352639780223078265250079543787727692018778125802114304333571652715045998",
+            "-6.6712504125234289211103878355375075735209840524439992376783953693823050977775145",
+            "-0.069547130867296992119017167424182259756499200497090834338981224358294425690762890",
+            "10.892781216801609676313986589511614327472309762609900070401529215708847235985261",
+            "0.31085924889335319253687602307871832788418618966917698612718635034444959201804108"
+          ],
+          [
+            "2.8067008373346329622303886750809480493130498560839811317745488941928421283242594",
+            "-8.3711209228290681368968047414939657384742127969526369317973938251987374745355068",
+            "24.430377438872196292270972088385189098603371348009741868026835710215946649437545",
+            "-0.46805633884640170903418528214713294769907784795555391536523113397116722427206237",
+            "1.1429846282597541287310252437122072273888694254007484397305990278214032114948826",
+            "1.2535581290698696717155926435272961819496591380602708260981268633169000865723054",
+            "-1.6881068367067406616828278892279203813748775374964010759364122884666540127301071",
+            "13.506079194491686022186212143836900414506713498092842146314537711933401469938520",
+            "5.7245376610729789112804234211720718898244901824192129567990497974890260682783538",
+            "-9.8646342397650863809916143014601214380059050677835103236824287535494966394268058"
+          ],
+          [
+            "0.0091614467947978093141535331655367389382521457129698054030015545619495753493036212",
+            "-4.1279564276482780993221908043223753440314944752067479466551463090990772683799732",
+            "-0.46805633884640170903418528214713294769907784795555391536523113397116722427206237",
+            "21.905143852525686778200709509570326331777106390220905207746792578803407856984219",
+            "-1.0800464560999673379916924403428160534768496484182802860949123123765876786087091",
+            "11.595099120763641941358017848480130403272133527234885486983600635935880737768684",
+            "2.1408026776884837243647988835101119032983950976162683756486989199960068798707508",
+            "-2.7901474625614247792344983844053796865967431081166565376037284275900497746269758",
+            "-11.201391683820413068636931716570716903899280144819698707093914938394468447359658",
+            "4.3318198734241907418228440943918431429252538124124553074980347340579396314972897"
+          ],
+          [
+            "5.0590029729934202773167307590210372740733851040547862668727531312868586146977693",
+            "0.73693862629653954268081946344056015739242205127296222248331649756891357610130147",
+            "1.1429846282597541287310252437122072273888694254007484397305990278214032114948826",
+            "-1.0800464560999673379916924403428160534768496484182802860949123123765876786087091",
+            "17.341110772666388852279288249718534317501421242740944555513408050142548891551864",
+            "-2.2645873208892926464431885337917287182840552684773173006113946565375089679018756",
+            "-7.1824379527771757138700985996540422450569834517513772520396882633126294715925168",
+            "-7.7862068863809857283772431931625840741446069896641085086833488376269027734089284",
+            "4.1888671904138070925171892301880721342091563998806571338269554498579383701458613",
+            "3.9973717847886292185096949946431229044012970294572509671149315526215177483065402"
+          ],
+          [
+            "7.2577238900730930787356930214534228358147566894213080657096691933736565918035608",
+            "-11.048889352639780223078265250079543787727692018778125802114304333571652715045998",
+            "1.2535581290698696717155926435272961819496591380602708260981268633169000865723054",
+            "11.595099120763641941358017848480130403272133527234885486983600635935880737768684",
+            "-2.2645873208892926464431885337917287182840552684773173006113946565375089679018756",
+            "18.887720265340332161848094589006405546809119418059330497064322012217161924440920",
+            "6.4592657713980537973906960663492435569134354965753852024270416868828231206985715",
+            "-0.33519628459718862715085916847061545699163351792342658620188931094503510040344172",
+            "-13.022999800158029065191286227304509498610541191326247107837435825433327052072309",
+            "6.6755032169751693058154171501060013274411314068067981072784699406885085514056529"
+          ],
+          [
+            "1.6180468444668949196637307869924819926100031274675222928295844772308084867185871",
+            "-6.6712504125234289211103878355375075735209840524439992376783953693823050977775145",
+            "-1.6881068367067406616828278892279203813748775374964010759364122884666540127301071",
+            "2.1408026776884837243647988835101119032983950976162683756486989199960068798707508",
+            "-7.1824379527771757138700985996540422450569834517513772520396882633126294715925168",
+            "6.4592657713980537973906960663492435569134354965753852024270416868828231206985715",
+            "17.461561392085115240257864685054551294404400478495934986431226734159480606285511",
+            "-1.0609630755969130600148650561044519308405748944805652325594185890462562267759832",
+            "-10.432102242489695359375754020108059261472151531600957994576375450492054190848917",
+            "3.6249805150594961033098235602066628359905363870426870166671203880909799379238200"
+          ],
+          [
+            "-3.1368262956325409396541663249552558489699158658753410425895561509069690518357704",
+            "-0.069547130867296992119017167424182259756499200497090834338981224358294425690762890",
+            "13.506079194491686022186212143836900414506713498092842146314537711933401469938520",
+            "-2.7901474625614247792344983844053796865967431081166565376037284275900497746269758",
+            "-7.7862068863809857283772431931625840741446069896641085086833488376269027734089284",
+            "-0.33519628459718862715085916847061545699163351792342658620188931094503510040344172",
+            "-1.0609630755969130600148650561044519308405748944805652325594185890462562267759832",
+            "23.782484976941065428715094849953368117380117984567170194970331091800277454409387",
+            "8.0158553522253535802137074433983579950997880864488333634226225769638355222071474",
+            "-11.444037211712414685489776575002391945214565415359875363626465054712581269123129"
+          ],
+          [
+            "-2.5068015068646470891485323085227150214548672620149702468685794930946330621187443",
+            "10.892781216801609676313986589511614327472309762609900070401529215708847235985261",
+            "5.7245376610729789112804234211720718898244901824192129567990497974890260682783538",
+            "-11.201391683820413068636931716570716903899280144819698707093914938394468447359658",
+            "4.1888671904138070925171892301880721342091563998806571338269554498579383701458613",
+            "-13.022999800158029065191286227304509498610541191326247107837435825433327052072309",
+            "-10.432102242489695359375754020108059261472151531600957994576375450492054190848917",
+            "8.0158553522253535802137074433983579950997880864488333634226225769638355222071474",
+            "21.639900048094364940573715214054632886807274680512457506136907965065580706844888",
+            "-8.7698392290962960175905126716587731430607553786717705884158382519278767082009977"
+          ],
+          [
+            "2.5231389745540028095866214490909009285882381333003463357490046105800153357205539",
+            "0.31085924889335319253687602307871832788418618966917698612718635034444959201804108",
+            "-9.8646342397650863809916143014601214380059050677835103236824287535494966394268058",
+            "4.3318198734241907418228440943918431429252538124124553074980347340579396314972897",
+            "3.9973717847886292185096949946431229044012970294572509671149315526215177483065402",
+            "6.6755032169751693058154171501060013274411314068067981072784699406885085514056529",
+            "3.6249805150594961033098235602066628359905363870426870166671203880909799379238200",
+            "-11.444037211712414685489776575002391945214565415359875363626465054712581269123129",
+            "-8.7698392290962960175905126716587731430607553786717705884158382519278767082009977",
+            "13.622454753231411949084206942074383127897241634315655101208976310007520541694518"
+          ]
+        ],
+        "quotient_rank": 10,
+        "shortest_quotient_vectors": [
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "projected_height": "13.622454753231411949084206942074383127897241634315655101208976310007520541694518"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            "projected_height": "14.481620713118638972039237348452019436395311715919293787526358326416088527141190"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1
+            ],
+            "projected_height": "14.516865306747648006819748642022967354848228788163074568926377292382635457857646"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "projected_height": "16.055008581635876198778191710382723701743909325389037623752687393962625771423918"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            "projected_height": "16.833011055451864865865277920836437357742516217021319762463708753340177393977302"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              -1,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              1
+            ],
+            "projected_height": "17.179284551447755750074204807304181072474237494329404113529287827867332344489166"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "17.341110772666388852279288249718534317501421242740944555513408050142548891551864"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "17.461561392085115240257864685054551294404400478495934986431226734159480606285511"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "17.529554729953388797694584211599237255227631052965699199131624099925728089642036"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "17.602665876338735057332768401616471072041958753810464730843913319148808305887771"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "17.615987550624327690598268420648960839545577660887857636204034172215606885419608"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              -1,
+              0,
+              1,
+              -1,
+              -1,
+              0,
+              0,
+              1,
+              1
+            ],
+            "projected_height": "17.633458361744049316535752865678181904306073556838957886239414873990680166631431"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              -1
+            ],
+            "projected_height": "17.722676343133184854476896812811469728583005557484571430514207771217347832137411"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              1,
+              -1,
+              1
+            ],
+            "projected_height": "17.825839908852210496283480483725045346266479310761499764286005709239859454982114"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              -1,
+              0
+            ],
+            "projected_height": "18.237256955200089462080071858893065658267372095806476503415383798240952931432564"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1
+            ],
+            "projected_height": "18.323563712573435479371950427539329350488802846758376321870954513124473912278452"
+          }
+        ],
+        "successive_minima": [
+          "13.622454753231411949084206942074383127897241634315655101208976310007520541694518",
+          "14.481620713118638972039237348452019436395311715919293787526358326416088527141190",
+          "14.516865306747648006819748642022967354848228788163074568926377292382635457857646",
+          "16.055008581635876198778191710382723701743909325389037623752687393962625771423918",
+          "16.833011055451864865865277920836437357742516217021319762463708753340177393977302",
+          "17.341110772666388852279288249718534317501421242740944555513408050142548891551864",
+          "17.461561392085115240257864685054551294404400478495934986431226734159480606285511",
+          "17.602665876338735057332768401616471072041958753810464730843913319148808305887771",
+          "17.615987550624327690598268420648960839545577660887857636204034172215606885419608",
+          "17.722676343133184854476896812811469728583005557484571430514207771217347832137411"
+        ]
+      },
+      "quotient_structure": {
+        "ambient_certified_subgroup_rank": 27,
+        "formula": "dim_Fell((L/M) tensor F_ell) = free_rank(L/M) + number of Smith factors divisible by ell",
+        "free_quotient_rank_lower_bound": 10,
+        "scope": "L is the certified subgroup generated by the displayed public basis; the full E(Q)/M quotient may be larger or less saturated",
+        "smith_invariant_factors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "specialized_generic_is_primitive_in_displayed_subgroup": true,
+        "specialized_generic_saturation_index_in_displayed_subgroup": 1,
+        "specialized_generic_subgroup_rank": 17,
+        "tensor_dimensions_over_f_ell": {
+          "2": 10,
+          "3": 10,
+          "5": 10
+        },
+        "torsion_invariant_factors": []
+      },
+      "response_variables": {
+        "degree_two_visible_dimension_over_f2": {
+          "dimension_in_known_public_complement": 2,
+          "dimension_modulo_generic_17": 2,
+          "distinct_known_public_classes": 2,
+          "escape_basis_labels": [],
+          "finite_quotient_escape_count": 0,
+          "known_public_complement_dimension": 10
+        },
+        "primary_lower_bound": 10,
+        "prime_local_dimensions": {
+          "2": 10,
+          "3": 10,
+          "5": 10
+        }
+      }
+    },
+    {
+      "certified_rank_lower_bound": 28,
+      "degree_visibility": [
+        {
+          "atlas_size": 39120,
+          "atlas_status": "complete_equation_level_atlas",
+          "class_multiplicity_histogram": {
+            "1": 1
+          },
+          "cover_degree": 2,
+          "distinct_nonzero_quotient_classes": 1,
+          "interpretation": "This is the exact vector matroid of split bisection classes in the certified mod-2 quotient coordinates. It measures cover overlap and intersection of visible directions, not full Mordell--Weil dependence.",
+          "minimal_dependency_circuits": {
+            "count_by_cardinality": {},
+            "example_limit": 128,
+            "examples": [],
+            "examples_truncated": false,
+            "total_count": 0
+          },
+          "minimum_spanning_packet_size": 1,
+          "nonzero_visible_cover_count": 1,
+          "spanning_packet_count_at_minimum_size": 1,
+          "split_cover_count": 1,
+          "subset_rank_histogram_by_cardinality": {
+            "0": {
+              "0": 1
+            },
+            "1": {
+              "1": 1
+            }
+          },
+          "visible_cover_labels": [
+            "orbit-15a68"
+          ],
+          "visible_exceptional_span_dimension_over_f2": 1
+        },
+        {
+          "atlas_status": "not_available_for_this_family",
+          "cover_degree": 3,
+          "reason": "The foundry has exact lattice coset censuses on selected frames, but no complete equation-level trisection atlas specialized to these four published R17 fibres. Missing is not zero.",
+          "visible_exceptional_span_dimension": null
+        },
+        {
+          "atlas_status": "not_available_for_this_family",
+          "cover_degree": 4,
+          "reason": "Current quadrisection data are sampled lattice candidates, not a complete descended cover atlas. Missing is not zero.",
+          "visible_exceptional_span_dimension": null
+        }
+      ],
+      "generic_rank": 17,
+      "global_minimal_model": [
+        "1",
+        "-1",
+        "1",
+        "-20067762415575526585033208209338542750930230312178956502",
+        "34481611795030556467032985690390720374855944359319180361266008296291939448732243429"
+      ],
+      "label": "rank_at_least_28",
+      "parameter": "-9529/5471",
+      "quotient_height_geometry": {
+        "definition": "orthogonal projection of the displayed height lattice away from the real span of the specialized generic subgroup",
+        "enumeration": {
+          "algorithm": "PARI qflllgram plus complete qfminim/Fincke-Pohst",
+          "complete_for_successive_minima": true,
+          "enumerated_signed_vector_count": 124,
+          "maximum_stored_half_vectors": 500000,
+          "sufficient_height_bound": "26.252282591071785793193936763415752468641651810896164181093663348181557450803043"
+        },
+        "numerical_boundary": "canonical heights and projected Gram use PARI realprecision=80; the point identities and quotient basis are exact, but these real height decimals are not interval certificates",
+        "quotient_determinant": "1087672580258.5552157243444075754668111308527389670920923020952281235528428963254",
+        "quotient_gram": [
+          [
+            "20.620290097788699254473212255993256617815054921129845878004052111451562476692452",
+            "-0.65882954025486135122908441472126477463265048110530045447486492906358260980746192",
+            "-6.8902065497161108140192837674337747847821737358652302383766602629404445868657291",
+            "-4.7764432272944710854341891883540069948547226439199290900385258584200872468129744",
+            "-2.7344013953927084422801133377158131959528142487078489591707756075572554406841237",
+            "-2.3567095261953347436008420741889753827165873784006512385961281861088836151488690",
+            "-10.861717813693120730876713578350726526148934795897668116968132653103556997253360",
+            "1.3618945410546270765191857929983216933438370938442955028915498142672585682479283",
+            "-2.4686781776575725454252522563831603634708195223474844922143523791241413030633579",
+            "3.0362707565690208867726691084692257710611842020878232143207932704174710880011631",
+            "6.4100242369270656331128890605856462004320593699712455924639499460658066401645618"
+          ],
+          [
+            "-0.65882954025486135122908441472126477463265048110530045447486492906358260980746192",
+            "20.092834100906144587204224364233863586585644378729001033094390088595793866133802",
+            "-9.3029426707844468392717284523358654525474521994688633120786172850764176929731344",
+            "-11.000829892489135904810056999566850237565984497896233010700230692418133334418721",
+            "-4.1671716131935580781874408717775802197937516647337338363878987115793507711667966",
+            "2.2122665549808636096907032163045677277512440527095814891390119339943222276496235",
+            "-5.2946865799754276598819392024917504803948883261469509682731901367405440682667594",
+            "-6.5394820074696410269574213987148034851064728033624792858289394664095149947353115",
+            "-1.1321751425020618755592317925087859631337261737022192708776739378134360125222613",
+            "8.1034960536955390845673593684918692103542028632492545791421056111005540369120329",
+            "5.9889504591542147175491023440861727194220949496067643466982517774303144493794602"
+          ],
+          [
+            "-6.8902065497161108140192837674337747847821737358652302383766602629404445868657291",
+            "-9.3029426707844468392717284523358654525474521994688633120786172850764176929731344",
+            "27.069127488629630788956142806636548824658485179412040639782219969591972754863636",
+            "6.3438191372039215543423739867741036909899543219922125316745809679940707940220822",
+            "6.8836356238556149283501946961393131815970248659785980831637781107949614705966934",
+            "-7.9962418344448343107998994999039346977066249671298525444715752167318195493491584",
+            "14.875961688280939748418765702431518961028769916999747602937855629223210060635860",
+            "8.1199753684423054608337792475251672459201139130624401322443223388778140348976475",
+            "-7.3415612698084199711751401626461146650037820396182620065547674674892249886244034",
+            "-11.133018545256980668326510218983750509573767582409011664080322601738936571454718",
+            "-8.4364004659579388507236637920913515098638455171470107235242231008667391247312356"
+          ],
+          [
+            "-4.7764432272944710854341891883540069948547226439199290900385258584200872468129744",
+            "-11.000829892489135904810056999566850237565984497896233010700230692418133334418721",
+            "6.3438191372039215543423739867741036909899543219922125316745809679940707940220822",
+            "25.033733346993264720173115008332262963767699528373125406500336209525859207019138",
+            "2.9555579234492261074563407582980850062744108060179135919441443457450589158324810",
+            "-8.9080278349078941756432766910479949583020832692228766291566282835690696843193550",
+            "1.3616317767888935612216324710085961223004685787268406363169135575680964115581990",
+            "0.16899257682217812639345098055670003150702728611010893391667642750651122724056215",
+            "-3.7842818543269796301498695818244941263464242978226222861538540745096368871191966",
+            "-7.9148654017878482447428423847915005290582942448942448222199611854977097589101446",
+            "-5.1459637905232924778205736961112162557165633191666163563986324008193620744866011"
+          ],
+          [
+            "-2.7344013953927084422801133377158131959528142487078489591707756075572554406841237",
+            "-4.1671716131935580781874408717775802197937516647337338363878987115793507711667966",
+            "6.8836356238556149283501946961393131815970248659785980831637781107949614705966934",
+            "2.9555579234492261074563407582980850062744108060179135919441443457450589158324810",
+            "16.530291478996403602167541621282758309552633729596474128034305623661565792574760",
+            "4.4931074326714616046414256520360821640119744124017115091800255534265645387164642",
+            "7.6964822303757661884698635072500614871218334251295646549922274675186922634409848",
+            "8.7353121021415836397132026475819734540833461071172510834458802675498827189268764",
+            "1.6920778959738091252297977037328110157407179704472993980992245021209209631454537",
+            "-0.63783130532813663772565250873423916724393690213962292528580304000533443877978307",
+            "0.12876797413612732480583692254699817485560211271210435107851906838143665711069050"
+          ],
+          [
+            "-2.3567095261953347436008420741889753827165873784006512385961281861088836151488690",
+            "2.2122665549808636096907032163045677277512440527095814891390119339943222276496235",
+            "-7.9962418344448343107998994999039346977066249671298525444715752167318195493491584",
+            "-8.9080278349078941756432766910479949583020832692228766291566282835690696843193550",
+            "4.4931074326714616046414256520360821640119744124017115091800255534265645387164642",
+            "21.128954946073414321465219355018970792907617987255726851688564824790170015964007",
+            "-1.2418686835323231503950036840338943390647427153826890324880093843500930690289703",
+            "-7.8056046839546102580187040051994893161446034961161718292081183901491596359495819",
+            "7.4862792598219555210844939528512432139782545984918749605583014711213484174299872",
+            "9.0005331427998387074280147544965640369829084718761428159005661823044575730085482",
+            "8.3334570120412164505478270691710830556915684363294614107067955578845206727847788"
+          ],
+          [
+            "-10.861717813693120730876713578350726526148934795897668116968132653103556997253360",
+            "-5.2946865799754276598819392024917504803948883261469509682731901367405440682667594",
+            "14.875961688280939748418765702431518961028769916999747602937855629223210060635860",
+            "1.3616317767888935612216324710085961223004685787268406363169135575680964115581990",
+            "7.6964822303757661884698635072500614871218334251295646549922274675186922634409848",
+            "-1.2418686835323231503950036840338943390647427153826890324880093843500930690289703",
+            "24.310862414632906272353128255089537667479321113915780166051844679764422174545348",
+            "13.803637229216397888586563328903029732252885875036854443104240258361085047349892",
+            "-2.5072108837903336619090877393869209534928583098340807768814265824127487720496734",
+            "-5.8045583399557030835713691817708458444010098421609630748849237274439416373580443",
+            "-8.6606982461228265229959496179270507974298005648555240183415112548714264069127590"
+          ],
+          [
+            "1.3618945410546270765191857929983216933438370938442955028915498142672585682479283",
+            "-6.5394820074696410269574213987148034851064728033624792858289394664095149947353115",
+            "8.1199753684423054608337792475251672459201139130624401322443223388778140348976475",
+            "0.16899257682217812639345098055670003150702728611010893391667642750651122724056215",
+            "8.7353121021415836397132026475819734540833461071172510834458802675498827189268764",
+            "-7.8056046839546102580187040051994893161446034961161718292081183901491596359495819",
+            "13.803637229216397888586563328903029732252885875036854443104240258361085047349892",
+            "27.827773686706411361885807905939564582848658915935284024350159096411899759926455",
+            "2.3521307085842096535339322148756394858732427214168094441077383201958967280373737",
+            "-14.220847220411482506731930600326501847883322505922276390643549630825687636541790",
+            "-5.4023970980516502200174630387601762542445096014486257764019791713348468417372281"
+          ],
+          [
+            "-2.4686781776575725454252522563831603634708195223474844922143523791241413030633579",
+            "-1.1321751425020618755592317925087859631337261737022192708776739378134360125222613",
+            "-7.3415612698084199711751401626461146650037820396182620065547674674892249886244034",
+            "-3.7842818543269796301498695818244941263464242978226222861538540745096368871191966",
+            "1.6920778959738091252297977037328110157407179704472993980992245021209209631454537",
+            "7.4862792598219555210844939528512432139782545984918749605583014711213484174299872",
+            "-2.5072108837903336619090877393869209534928583098340807768814265824127487720496734",
+            "2.3521307085842096535339322148756394858732427214168094441077383201958967280373737",
+            "18.967882878616286966390049922838497482281918587479543679511701278788895725549583",
+            "-4.6471741848356297169795488578026782427365620741816090808735414235217002783709017",
+            "4.5198574765592740689185613751666304263968673932258590083174287725020700279431624"
+          ],
+          [
+            "3.0362707565690208867726691084692257710611842020878232143207932704174710880011631",
+            "8.1034960536955390845673593684918692103542028632492545791421056111005540369120329",
+            "-11.133018545256980668326510218983750509573767582409011664080322601738936571454718",
+            "-7.9148654017878482447428423847915005290582942448942448222199611854977097589101446",
+            "-0.63783130532813663772565250873423916724393690213962292528580304000533443877978307",
+            "9.0005331427998387074280147544965640369829084718761428159005661823044575730085482",
+            "-5.8045583399557030835713691817708458444010098421609630748849237274439416373580443",
+            "-14.220847220411482506731930600326501847883322505922276390643549630825687636541790",
+            "-4.6471741848356297169795488578026782427365620741816090808735414235217002783709017",
+            "25.752981312735905438470665520060838171243775202195473313168253400166338373871257",
+            "-1.4729175723597143039562142631951884143235737829084566073943489221782781572550547"
+          ],
+          [
+            "6.4100242369270656331128890605856462004320593699712455924639499460658066401645618",
+            "5.9889504591542147175491023440861727194220949496067643466982517774303144493794602",
+            "-8.4364004659579388507236637920913515098638455171470107235242231008667391247312356",
+            "-5.1459637905232924778205736961112162557165633191666163563986324008193620744866011",
+            "0.12876797413612732480583692254699817485560211271210435107851906838143665711069050",
+            "8.3334570120412164505478270691710830556915684363294614107067955578845206727847788",
+            "-8.6606982461228265229959496179270507974298005648555240183415112548714264069127590",
+            "-5.4023970980516502200174630387601762542445096014486257764019791713348468417372281",
+            "4.5198574765592740689185613751666304263968673932258590083174287725020700279431624",
+            "-1.4729175723597143039562142631951884143235737829084566073943489221782781572550547",
+            "18.869401993931621731359646268033038837782918552683878993868127316119747003454884"
+          ]
+        ],
+        "quotient_rank": 11,
+        "shortest_quotient_vectors": [
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "16.530291478996403602167541621282758309552633729596474128034305623661565792574760"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              0,
+              -1,
+              0,
+              1,
+              0,
+              1,
+              -1,
+              0,
+              -1,
+              -1
+            ],
+            "projected_height": "17.605824026693330166514108116158750811887629224917831008330062275149989031056336"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1
+            ],
+            "projected_height": "18.869401993931621731359646268033038837782918552683878993868127316119747003454884"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "projected_height": "18.967882878616286966390049922838497482281918587479543679511701278788895725549583"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              -1,
+              0,
+              -1,
+              -1
+            ],
+            "projected_height": "19.205638169976434774042262207927941549763607144444200403719839193733154907813464"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "20.092834100906144587204224364233863586585644378729001033094390088595793866133802"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              -1,
+              -1
+            ],
+            "projected_height": "20.166618961403900794826369281137124330603839276342888528705802844004518506491789"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "20.620290097788699254473212255993256617815054921129845878004052111451562476692452"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              -1,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "20.704427031199725496747223016518202964651719421423273942478210436164083185461893"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              1,
+              0,
+              -1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            "projected_height": "20.738596104198672234708635275221054859564589058940607854798114416376282275337281"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              1,
+              -1,
+              0,
+              1,
+              0,
+              1,
+              -1,
+              0,
+              -1,
+              -1
+            ],
+            "projected_height": "20.957238991560448703346779779356677464585947039625508867286943534888956401542008"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              1,
+              1,
+              1
+            ],
+            "projected_height": "21.117864336231687625635819480253077060773175223814428044411141313714491460968753"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "21.128954946073414321465219355018970792907617987255726851688564824790170015964007"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              1,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              1,
+              -1,
+              0,
+              -1,
+              -1
+            ],
+            "projected_height": "21.371139667341189582254229670875587206581029509814586673457601745007442408676808"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "21.628066526700657564471739656863048570080266459328325599958353390909974808137263"
+          },
+          {
+            "coordinates_in_smith_quotient_basis": [
+              0,
+              0,
+              1,
+              0,
+              -1,
+              1,
+              -1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "projected_height": "21.796661390608671189167621757194943308009637751704319258333265723239863189560358"
+          }
+        ],
+        "successive_minima": [
+          "16.530291478996403602167541621282758309552633729596474128034305623661565792574760",
+          "17.605824026693330166514108116158750811887629224917831008330062275149989031056336",
+          "18.869401993931621731359646268033038837782918552683878993868127316119747003454884",
+          "18.967882878616286966390049922838497482281918587479543679511701278788895725549583",
+          "19.205638169976434774042262207927941549763607144444200403719839193733154907813464",
+          "20.092834100906144587204224364233863586585644378729001033094390088595793866133802",
+          "20.166618961403900794826369281137124330603839276342888528705802844004518506491789",
+          "20.620290097788699254473212255993256617815054921129845878004052111451562476692452",
+          "20.704427031199725496747223016518202964651719421423273942478210436164083185461893",
+          "20.738596104198672234708635275221054859564589058940607854798114416376282275337281",
+          "21.951408783636444628351270693337116482475673110759658832652556557349940849202317"
+        ]
+      },
+      "quotient_structure": {
+        "ambient_certified_subgroup_rank": 28,
+        "formula": "dim_Fell((L/M) tensor F_ell) = free_rank(L/M) + number of Smith factors divisible by ell",
+        "free_quotient_rank_lower_bound": 11,
+        "scope": "L is the certified subgroup generated by the displayed public basis; the full E(Q)/M quotient may be larger or less saturated",
+        "smith_invariant_factors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "specialized_generic_is_primitive_in_displayed_subgroup": true,
+        "specialized_generic_saturation_index_in_displayed_subgroup": 1,
+        "specialized_generic_subgroup_rank": 17,
+        "tensor_dimensions_over_f_ell": {
+          "2": 11,
+          "3": 11,
+          "5": 11
+        },
+        "torsion_invariant_factors": []
+      },
+      "response_variables": {
+        "degree_two_visible_dimension_over_f2": {
+          "dimension_in_known_public_complement": 1,
+          "dimension_modulo_generic_17": 1,
+          "distinct_known_public_classes": 1,
+          "escape_basis_labels": [],
+          "finite_quotient_escape_count": 0,
+          "known_public_complement_dimension": 11
+        },
+        "primary_lower_bound": 11,
+        "prime_local_dimensions": {
+          "2": 11,
+          "3": 11,
+          "5": 11
+        }
+      }
+    }
+  ],
+  "height_precision_decimal_digits": 80,
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/elkies_2026_bisection_specialization_controls_v1.json": "bffd8a2f5f2814b2587fbb4f7509bcdd2e78caa971360736360afca395258f7f",
+    "artifacts/generated-results/elliptic-curves/elkies_2026_high_rank_positive_controls_v2.json": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc",
+    "artifacts/generated-results/elliptic-curves/icarm_curve394_rank21_v1.json": "52baf1357f91e01f9fab1722bdcfb55c86bd8ef9051bd2318a186d6a007ff476",
+    "artifacts/generated-results/elliptic-curves/latent_lattice_calibration_truth_v1.json": "357113254603a7910b781514bfdf2c147132a5e02c676c31513efb1786187224",
+    "elliptic-curves/cas/elkies_rank25.py": "26d0ae962ceb0b3e0de1727e56c32d8289ccf12dbe0d6a57271365753d61a842",
+    "elliptic-curves/cas/elkies_rank26.py": "0d2a443f43216226acefe7d2dde551600bd154674e4dd1aaab5fe873007e098d",
+    "elliptic-curves/cas/elkies_rank27.py": "f8a4bc96a74f3b3cf8aebae2126116ee3f6ae9b4da6ad2f4103dc8e7b06d0945",
+    "elliptic-curves/cas/elkies_rank28.py": "2165728c26b643fc65735825a09527b2b432639348131f2ea8a17e19ff569adb"
+  },
+  "modeling_guidance": {
+    "geometric_responses": [
+      "successive minima of the projected quotient height lattice",
+      "shortest projected quotient-vector heights"
+    ],
+    "mechanism_responses": [
+      "degree-d visible quotient-code dimension",
+      "cover-code matroid circuits and spanning packets"
+    ],
+    "primary_response": "certified lower bound for rank of L_t / sp_t(MW_generic)",
+    "prime_local_responses": [
+      "dim_F2((L_t/M_t) tensor F2)",
+      "dim_F3((L_t/M_t) tensor F3)",
+      "dim_F5((L_t/M_t) tensor F5)"
+    ],
+    "rank32_gate": "rank 32 from generic rank 17 requires at least 15 free quotient directions; prime-local torsion dimensions alone do not supply those directions"
+  },
+  "proof_boundary": "Smith data, finite quotient codes, and degree-two cover evaluation are exact for the displayed certified subgroups. Canonical heights are high-precision numerical values. The public bases give rank lower bounds and are not asserted to be saturated full E(Q) bases. Degree-three and degree-four visibility are explicitly missing, not zero.",
+  "reproducing_command": "PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 elliptic-curves/cas/build_elkies_2026_rank_jump_fingerprints.py",
+  "schema": "elliptic-curves.elkies-2026-rank-jump-fingerprints.v1",
+  "status": "PASS_CERTIFIED_SUBGROUP_QUOTIENT_FINGERPRINTS",
+  "target": "escape from the specialized generic Mordell--Weil lattice, not direct prediction of total fibre rank"
+}

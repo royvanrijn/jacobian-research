@@ -5,7 +5,12 @@ import argparse
 import hashlib
 import json
 import shlex
+import sys
 from pathlib import Path
+
+
+if hasattr(sys, "set_int_max_str_digits"):
+    sys.set_int_max_str_digits(0)
 
 
 ROOT = Path(__file__).resolve().parents[2]

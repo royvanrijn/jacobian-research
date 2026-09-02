@@ -95,6 +95,12 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
   `TwoSelmerGroup(Bound := -1)` first, exits below residual dimension 15, and
   on a pass removes all 28 certified points before materializing only the
   unexplained cover classes; Magma is not installed on this host.
+  A separate
+  [quotient-first fingerprint](../elliptic-curves/notes/ELKIES_RANK_JUMP_FINGERPRINTS.md)
+  records exact Smith/mod-2/3/5 structure, projected quotient-height
+  successive minima, and the complete degree-two cover-code matroid for each
+  control. Its visible degree-two dimensions are `5,3,2,1`; higher-degree
+  cover visibility is not yet available and is not recorded as zero.
   The first conic cover has an explicit eighteenth section and rational
   parameter; the paired cover has both new sections, exact maps from the
   rank-at-least-four curve `E0`, and a Mordell--Weil-lattice Nagao sieve; these
@@ -117,6 +123,25 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
   For the simpler rank-at-least-nine base, the latter note and its promoted
   verifier now give the exact paired-base elliptic model and a birational map
   producing nine explicit rational specialization parameters.
+- The first structure-sensitive multisection audit now replaces raw
+  `(N_2,N_3)` as the preferred discovery profile on R17.  The complete
+  degree-two quotient has covering radius `sqrt(3)`; its 39,120 rational
+  vertices form one connected zero-intersection graph with 8,895,801 edges
+  and 157,553,175 triangles, while 43 deeper genus-one cosets were invisible
+  to the old first-shell count.  The natural `M/2M -> M/4M` inclusion sends
+  every rational bisection to a genus-one norm-40 quadrisection vertex, so the
+  old degree-four height cap 38 removed this entire inherited mechanism.
+  The completed degree-two comparison is genuinely discriminating:
+  `NS0032-F011` has 41,421 rational vertices but only 20,933 automorphism
+  orbits, whereas all 41,376 vertices of `NS0028-F005` remain distinct
+  orbits; their graph and deep-hole rankings also differ.  Exact calibration
+  at the rank-21/25/26/27/28 fibres further shows that geometric lattice span
+  can collapse sharply in the exceptional quotient: the 25 split rank-21
+  covers span `17 -> 4`, while six rank-25 covers span `6 -> 5`.  Independent
+  rank-26/27 directions need not be close in the quotient graph.  Degree-three
+  graph and non-inherited degree-four results remain sampled.
+  See
+  [`R17_MULTISECTION_DIVERSITY_2026-09-02.md`](R17_MULTISECTION_DIVERSITY_2026-09-02.md).
 
 - Pasten--Salgado's theorem applies directly to the published R17 fibration:
   `24I1` gives non-isotriviality and reduced fibres, H3 is a different

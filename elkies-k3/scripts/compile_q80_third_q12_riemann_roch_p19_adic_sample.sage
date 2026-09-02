@@ -10,6 +10,7 @@ infinity branches, and constructs normalized generators of L(2P),L(3P).
 import argparse
 import hashlib
 import json
+import sys
 from pathlib import Path
 
 from sage.all import (
@@ -22,6 +23,10 @@ from sage.all import (
     LaurentSeriesRing,
     vector,
 )
+
+
+if hasattr(sys, "set_int_max_str_digits"):
+    sys.set_int_max_str_digits(0)
 
 
 ROOT = Path(__file__).resolve().parents[2]

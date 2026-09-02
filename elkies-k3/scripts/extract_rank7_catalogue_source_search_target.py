@@ -85,6 +85,14 @@ def main() -> None:
     parser.add_argument("--surface-id", required=True)
     parser.add_argument("--partner-index", type=int)
     parser.add_argument("--frame-id")
+    parser.add_argument(
+        "--lattice-only",
+        action="store_true",
+        help=(
+            "permit exact same-surface lattice source search before the modular-curve "
+            "solver gate opens; the output remains unauthorized for equation work"
+        ),
+    )
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--check", action="store_true")
     arguments = parser.parse_args()
@@ -117,7 +125,10 @@ def main() -> None:
         raise ArithmeticError("selected surface has no T-arithmetic row")
     if not arithmetic["pre_solver_gate"]["arithmetic_attempt_recorded"]:
         raise ArithmeticError("selected surface has not passed the T-arithmetic gate")
-    if not arithmetic["pre_solver_gate"]["equation_solver_may_launch"]:
+    if (
+        not arithmetic["pre_solver_gate"]["equation_solver_may_launch"]
+        and not arguments.lattice_only
+    ):
         raise ArithmeticError(
             "selected surface has typed-open T-arithmetic curve identification; "
             "equation-target extraction remains blocked"
@@ -157,7 +168,11 @@ def main() -> None:
 
     output = {
         "schema": "elkies-k3.rank7-catalogue-source-search-target.v1",
-        "status": "PASS_EXACT_CATALOGUE_SOURCE_SEARCH_TARGET_EXTRACTION",
+        "status": (
+            "PASS_EXACT_CATALOGUE_LATTICE_ONLY_SOURCE_SEARCH_TARGET_EXTRACTION"
+            if arguments.lattice_only
+            else "PASS_EXACT_CATALOGUE_SOURCE_SEARCH_TARGET_EXTRACTION"
+        ),
         "input": {
             "catalogue": relative(catalogue_path),
             "catalogue_sha256": digest(catalogue_path),
@@ -208,9 +223,19 @@ def main() -> None:
         "reproduce": (
             "python3 elkies-k3/scripts/extract_rank7_catalogue_source_search_target.py "
             f"--surface-id {surface['surface_id']} --partner-index {partner_index} "
-            f"--frame-id {frame['frame_id']} --output {relative(arguments.output.resolve())}"
+            f"--frame-id {frame['frame_id']} "
+            + ("--lattice-only " if arguments.lattice_only else "")
+            + f"--output {relative(arguments.output.resolve())}"
         ),
     }
+    if arguments.lattice_only:
+        output["equation_work_authorized"] = False
+        output["proof_boundary"]["proved"] = (
+            "The ordered auxiliary and target frame are exact records on the same "
+            "catalogue (T,NS) surface and have the same determinant. A hash-matched "
+            "T-arithmetic attempt is attached; lattice-only mode does not promote its "
+            "closed equation gate."
+        )
     serialized = json.dumps(output, indent=2, sort_keys=True) + "\n"
     output_path = arguments.output.resolve()
     if arguments.check:

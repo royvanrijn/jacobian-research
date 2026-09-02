@@ -458,7 +458,21 @@ python3 elkies-k3/scripts/calibrate_elkies_2026_positive_controls_nagao.py
 ```
 
 Its weakest-block ranks strongly recover all four controls, but remain
-heuristic. Attempt the actual rank-28 residual 2-Selmer computation with:
+heuristic. Build the separate embargoed 100,000-row Level 0--2 feature
+population and five-lane training cohort with:
+
+```sh
+python3 elliptic-curves/scripts/build_r17_training_dataset.py \
+  --count 100000 --height 10000 --seed 20260902 \
+  --lane-size 1000 --cover-panel-size 128 \
+  --summary artifacts/local/elliptic-curves/r17-training-summary.json
+```
+
+This raw experimental dataset excludes all four controls and makes no rank,
+Selmer, exact-conductor, or rational-cover claim. See
+[`R17_TRAINING_DATA_PROTOCOL.md`](notes/R17_TRAINING_DATA_PROTOCOL.md).
+
+Attempt the actual rank-28 residual 2-Selmer computation with:
 
 ```sh
 python3 elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py \
@@ -708,6 +722,41 @@ unchanged. Exact relation blocks prove that the displayed generated subgroup
 ranks remain `25,26,27,28,21`; they do not bound the full curve ranks. See
 [`ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md`](notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md).
 
+Attach complete known-bisection labels to the frozen 4,922-row training
+cohort, then replay the first train-only ranker on the quarantined controls:
+
+```sh
+python3 elliptic-curves/scripts/label_r17_training_bisections.py \
+  --workers 4 --prime-bound 199
+python3 elliptic-curves/scripts/train_r17_bisection_ranker.py
+python3 elliptic-curves/scripts/train_r17_bisection_ranker.py --check
+```
+
+The label run performs 192,548,640 exact square tests. The frozen learned
+score retrieves the rank-27 control but not rank 28 inside the sampled top one
+percent; the unmodified weakest-block Nagao baseline retrieves both. See
+[`R17_TRAINING_DATA_PROTOCOL.md`](notes/R17_TRAINING_DATA_PROTOCOL.md) for the
+mechanism boundary and the no-post-holdout-tuning rule.
+
+Validate that the frozen model generalizes to its narrower bisection target on
+a cohort committed before label generation:
+
+```sh
+python3 elliptic-curves/scripts/build_r17_prospective_holdout.py
+python3 elliptic-curves/scripts/label_r17_training_bisections.py \
+  --input artifacts/local/elliptic-curves/r17-prospective-holdout.jsonl \
+  --output artifacts/local/elliptic-curves/r17-prospective-holdout-bisection-labels.jsonl \
+  --summary artifacts/local/elliptic-curves/r17-prospective-holdout-bisection-labels-summary.json \
+  --workers 4 --prime-bound 199
+python3 elliptic-curves/scripts/evaluate_r17_bisection_ranker_prospective.py \
+  --check
+```
+
+The 5,000-row prospective cohort has 94 certified-positive usable rows. The
+frozen score has ROC AUC 0.754 and 6.38-fold top-one-percent enrichment for
+bisection gain, while still failing the separate rank-28 retrieval test. This
+confirms a response-target mismatch rather than simple train-fold memorization.
+
 Resolve the visible and invisible quotient spaces and test the 2024 rank-29
 curve and ICARM 273, 302, and 398--400 against the published fibration:
 
@@ -912,6 +961,72 @@ These commands respectively replay the sub-cutoff rank-at-least-20 near miss,
 the exact generic-rank/E22 independence certificates, and the family/model
 normalization. The literal parameter factor-two discrepancy in the printed
 Fermigier source remains open.
+
+Build their quotient-first fingerprints and replay the complete frozen global
+score box with:
+
+```sh
+PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
+  elliptic-curves/cas/build_fermigier_rank_jump_fingerprints.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
+  elliptic-curves/cas/build_fermigier_rank_jump_replay.py --check
+```
+
+The second command exhausts 60,815,684 primitive parameters. Its zero recall
+through budget 100,000 is a retrospective negative retrieval result, not a
+rank-zero label for any unsearched fibre. See
+[`notes/FERMIGIER_RANK_JUMP_REPLAY.md`](notes/FERMIGIER_RANK_JUMP_REPLAY.md).
+
+Build the Nagao section-7 rank-20 quotient fingerprint and replay its two
+frozen score bands over all 18,244,819 primitive parameters with:
+
+```sh
+PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
+  elliptic-curves/cas/build_nagao_section7_rank_jump_fingerprint.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
+  elliptic-curves/cas/build_nagao_section7_rank_jump_replay.py --check
+```
+
+The quotient has free rank 8, Smith index 2048, and tensor dimensions
+`19/8/8` over `F_2/F_3/F_5`. The replay positions are 9,041,935 and 755,065;
+this is retrospective development evidence with censored unlabelled fibres.
+
+### Rank-jump laboratory
+
+```sh
+.venv/bin/python elliptic-curves/scripts/build_fermigier_labelled_corpus.py
+
+.venv/bin/python elliptic-curves/scripts/evaluate_fermigier_corpus_baselines.py
+
+.venv/bin/python elliptic-curves/scripts/run_rank_jump_laboratory.py
+
+.venv/bin/python elliptic-curves/scripts/run_rank_jump_laboratory.py \
+  --output artifacts/local/elliptic-curves/rank_jump_laboratory_v1_result.json
+```
+
+The corpus command recovers 517,922 canonical Fermigier parameters from the
+hashed local score/search files, attaches the two exact positives, and writes
+compressed JSONL plus a summary below `artifacts/local/elliptic-curves/`.
+Its coordinate, censoring, and missing-lineage boundaries are documented in
+[`notes/FERMIGIER_LABELLED_CORPUS.md`](notes/FERMIGIER_LABELLED_CORPUS.md).
+The no-fit baseline panel and the complete family-residual sweep are described
+in
+[`notes/FERMIGIER_BASELINE_EVALUATION.md`](notes/FERMIGIER_BASELINE_EVALUATION.md).
+The laboratory command validates every pinned label/ranking SHA-256 and prints
+a compact status line. The optional output form writes the full retrieval
+report locally. The laboratory treats bounded point-search misses as censored
+controls and measures only within-family retrieval of certified rank jumps;
+see [`notes/RANK_JUMP_LABORATORY.md`](notes/RANK_JUMP_LABORATORY.md).
+
+The R17 fingerprint builder, including the `t=3/8` rank-21 mechanism control,
+is checked separately with:
+
+```sh
+PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
+  elliptic-curves/cas/build_elkies_2026_rank_jump_fingerprints.py --check
+```
 
 ### Mestre frontiers
 

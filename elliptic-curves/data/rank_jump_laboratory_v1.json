@@ -1,0 +1,341 @@
+{
+  "schema": "elliptic-curves.rank-jump-laboratory.v1",
+  "objective": "Within each established family, rank rational parameters using only information available before a full point search and measure retrieval of certified exceptional quotient-rank fibres.",
+  "label_policy": {
+    "positive": "The arithmetic generic rank and a specialization rank lower bound are both proved, so the displayed difference is a certified lower bound for the specialization quotient rank.",
+    "control": "Ordinary parameters and unsuccessful bounded searches are retrieval background or censored controls, never certified negative-rank labels.",
+    "forbidden": "Numerical rank guesses, uncertified point lists, and the result of the full point search are not labels or ranking features."
+  },
+  "budget_fractions": [
+    "1/10000",
+    "1/2000",
+    "1/1000",
+    "1/200",
+    "1/100"
+  ],
+  "families": [
+    {
+      "id": "published-r17-compact-t",
+      "readiness": "ranked_development_corpus",
+      "proved_arithmetic_generic_rank": 17,
+      "known_positives": [
+        {
+          "id": "r17-rank25",
+          "parameter": "-2/377",
+          "certified_rank_lower_bound": 25,
+          "exceptional_quotient_rank_lower_bound": 8,
+          "certificate_sources": [
+            {
+              "path": "artifacts/generated-results/elliptic-curves/elkies_2026_high_rank_positive_controls_v2.json",
+              "sha256": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc"
+            }
+          ]
+        },
+        {
+          "id": "r17-rank26",
+          "parameter": "-308/251",
+          "certified_rank_lower_bound": 26,
+          "exceptional_quotient_rank_lower_bound": 9,
+          "certificate_sources": [
+            {
+              "path": "artifacts/generated-results/elliptic-curves/elkies_2026_high_rank_positive_controls_v2.json",
+              "sha256": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc"
+            }
+          ]
+        },
+        {
+          "id": "r17-rank27",
+          "parameter": "2456/135",
+          "certified_rank_lower_bound": 27,
+          "exceptional_quotient_rank_lower_bound": 10,
+          "certificate_sources": [
+            {
+              "path": "artifacts/generated-results/elliptic-curves/elkies_2026_high_rank_positive_controls_v2.json",
+              "sha256": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc"
+            }
+          ]
+        },
+        {
+          "id": "r17-rank28",
+          "parameter": "-9529/5471",
+          "certified_rank_lower_bound": 28,
+          "exceptional_quotient_rank_lower_bound": 11,
+          "certificate_sources": [
+            {
+              "path": "artifacts/generated-results/elliptic-curves/elkies_2026_high_rank_positive_controls_v2.json",
+              "sha256": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc"
+            }
+          ]
+        }
+      ],
+      "censored_control_sources": [
+        {
+          "outcome_type": "unlabelled_population_background",
+          "scope": "Complete primitive projective parameter population of height at most 10000; ranks are not known for ordinary members.",
+          "source": {
+            "path": "artifacts/generated-results/elliptic-curves/elkies_2026_compact_t_nagao_positive_control_h10000_v1.json",
+            "sha256": "d5bde371b7aa4dab8edc42c33e671ee5947d125782020632944826106e84e558"
+          }
+        }
+      ],
+      "ranking_runs": [
+        {
+          "id": "three-block-worst-nagao-h10000",
+          "evaluation_role": "development",
+          "latest_feature_stage": "local_arithmetic",
+          "uses_point_search_features": false,
+          "uses_rank_labels_for_scoring": false,
+          "positive_ids": [
+            "r17-rank25",
+            "r17-rank26",
+            "r17-rank27",
+            "r17-rank28"
+          ],
+          "extractor": {
+            "kind": "elkies-positive-control-worst-block-v1",
+            "source": {
+              "path": "artifacts/generated-results/elliptic-curves/elkies_2026_compact_t_nagao_positive_control_h10000_v1.json",
+              "sha256": "d5bde371b7aa4dab8edc42c33e671ee5947d125782020632944826106e84e558"
+            }
+          }
+        },
+        {
+          "id": "held-out-bisection-gain-contrast-sample100000",
+          "evaluation_role": "held_out",
+          "latest_feature_stage": "cover_incidence",
+          "uses_point_search_features": false,
+          "uses_rank_labels_for_scoring": false,
+          "positive_ids": [
+            "r17-rank25",
+            "r17-rank26",
+            "r17-rank27",
+            "r17-rank28"
+          ],
+          "extractor": {
+            "kind": "r17-bisection-gain-quarantined-replay-v1",
+            "metric": "learned_contrast",
+            "source": {
+              "path": "artifacts/generated-results/elliptic-curves/r17_bisection_gain_ranker_quarantined_replay_v1.json",
+              "sha256": "f6f07cf5a19c71adb73ed193fcb98af6640b08749689646debff61201e9e4d36"
+            }
+          }
+        }
+      ],
+      "next_action": "The first mechanically held-out bisection-gain score missed rank 28 at one percent. Do not retune on these controls; add broader certified labels and use a new custodian or future undisclosed fibres."
+    },
+    {
+      "id": "fermigier-mestre-rank12",
+      "readiness": "ranked_development_corpus",
+      "proved_arithmetic_generic_rank": 12,
+      "known_positives": [
+        {
+          "id": "fermigier-e22",
+          "parameter": "19754/39",
+          "certified_rank_lower_bound": 22,
+          "exceptional_quotient_rank_lower_bound": 10,
+          "certificate_sources": [
+            {
+              "path": "artifacts/generated-results/elliptic-curves/elliptic_fermigier_generic_rank_exact.json",
+              "sha256": "234522ec0af3ba6481425aa8c257c14fa7e5605051a10f9db94ea34827aab520"
+            },
+            {
+              "path": "artifacts/generated-results/elliptic-curves/fermigier_rank_certificates_v1.json",
+              "sha256": "94fc64d7f1744f6a20a0396d32914cd36330107db2538e03ee95cc3e32927051"
+            }
+          ]
+        },
+        {
+          "id": "fermigier-rank20-near-miss",
+          "parameter": "28917/20",
+          "certified_rank_lower_bound": 20,
+          "exceptional_quotient_rank_lower_bound": 8,
+          "certificate_sources": [
+            {
+              "path": "artifacts/generated-results/elliptic-curves/elliptic_fermigier_generic_rank_exact.json",
+              "sha256": "234522ec0af3ba6481425aa8c257c14fa7e5605051a10f9db94ea34827aab520"
+            },
+            {
+              "path": "artifacts/generated-results/elliptic-curves/fermigier_rank20_near_miss_v1.json",
+              "sha256": "8416e835887236e9e4eafcb01384a710ce4f1be0628701a97f4a7d7a07fe63b1"
+            }
+          ]
+        }
+      ],
+      "censored_control_sources": [
+        {
+          "outcome_type": "mixed_bounded_search_outcomes",
+          "scope": "Accidental-slice candidates, low/mid numerical-rank fibres, conductor screens, and bounded point-search misses.",
+          "source": {
+            "path": "artifacts/generated-results/elliptic-curves/elliptic_fermigier_rank22_accidental_slices.json",
+            "sha256": "9b955a1153feea846e78e223aff072a847c8a627a63d6029e75be6596ddb05a5"
+          }
+        },
+        {
+          "outcome_type": "mixed_bounded_search_outcomes",
+          "scope": "Twenty-seven conductor-first anchor-neighbourhood fibres with exact local data and partially certified lower bounds.",
+          "source": {
+            "path": "artifacts/generated-results/elliptic-curves/conductor_first_family_anchor_pilot_v1.json",
+            "sha256": "73b9e85ef624aece44bb35e2a1b975010350b1789464b49b0d37acb0a2168f5d"
+          }
+        }
+      ],
+      "ranking_runs": [
+        {
+          "id": "fermigier-global-discovery-rank-replay",
+          "evaluation_role": "development",
+          "latest_feature_stage": "local_arithmetic",
+          "uses_point_search_features": false,
+          "uses_rank_labels_for_scoring": false,
+          "positive_ids": ["fermigier-e22", "fermigier-rank20-near-miss"],
+          "extractor": {
+            "kind": "fermigier-rank-jump-replay-v1",
+            "metric": "discovery_rank",
+            "source": {
+              "path": "artifacts/generated-results/elliptic-curves/fermigier_rank_jump_replay_v1.json",
+              "sha256": "adb90ddc5d343832de9ae5bfb2d705152897cbfae8f9f66201b96cfa32d8ecde"
+            }
+          }
+        },
+        {
+          "id": "fermigier-global-discovery-composite-replay",
+          "evaluation_role": "development",
+          "latest_feature_stage": "local_arithmetic",
+          "uses_point_search_features": false,
+          "uses_rank_labels_for_scoring": false,
+          "positive_ids": ["fermigier-e22", "fermigier-rank20-near-miss"],
+          "extractor": {
+            "kind": "fermigier-rank-jump-replay-v1",
+            "metric": "discovery_composite",
+            "source": {
+              "path": "artifacts/generated-results/elliptic-curves/fermigier_rank_jump_replay_v1.json",
+              "sha256": "adb90ddc5d343832de9ae5bfb2d705152897cbfae8f9f66201b96cfa32d8ecde"
+            }
+          }
+        },
+        {
+          "id": "fermigier-global-held-rank-replay",
+          "evaluation_role": "development",
+          "latest_feature_stage": "local_arithmetic",
+          "uses_point_search_features": false,
+          "uses_rank_labels_for_scoring": false,
+          "positive_ids": ["fermigier-e22", "fermigier-rank20-near-miss"],
+          "extractor": {
+            "kind": "fermigier-rank-jump-replay-v1",
+            "metric": "held_rank",
+            "source": {
+              "path": "artifacts/generated-results/elliptic-curves/fermigier_rank_jump_replay_v1.json",
+              "sha256": "adb90ddc5d343832de9ae5bfb2d705152897cbfae8f9f66201b96cfa32d8ecde"
+            }
+          }
+        },
+        {
+          "id": "fermigier-global-held-composite-replay",
+          "evaluation_role": "development",
+          "latest_feature_stage": "local_arithmetic",
+          "uses_point_search_features": false,
+          "uses_rank_labels_for_scoring": false,
+          "positive_ids": ["fermigier-e22", "fermigier-rank20-near-miss"],
+          "extractor": {
+            "kind": "fermigier-rank-jump-replay-v1",
+            "metric": "held_composite",
+            "source": {
+              "path": "artifacts/generated-results/elliptic-curves/fermigier_rank_jump_replay_v1.json",
+              "sha256": "adb90ddc5d343832de9ae5bfb2d705152897cbfae8f9f66201b96cfa32d8ecde"
+            }
+          }
+        }
+      ],
+      "next_action": "The frozen local scores miss both known positives at every practical budget through 100000, so do not use them for candidate generation. Preserve this negative control and test a new quotient-aware rule on a genuinely separate family or parameter block."
+    },
+    {
+      "id": "nagao-section7-rank12",
+      "readiness": "ranked_development_corpus",
+      "proved_arithmetic_generic_rank": 12,
+      "known_positives": [
+        {
+          "id": "nagao-section7-t5081",
+          "parameter": "5081/47",
+          "certified_rank_lower_bound": 20,
+          "exceptional_quotient_rank_lower_bound": 8,
+          "certificate_sources": [
+            {
+              "path": "artifacts/generated-results/elliptic-curves/elliptic_nagao_section7_picard_bound.json",
+              "sha256": "654b81ab62c19bf70e229f263592da23f9dce073cdf1535ac09e8d02a3d7c59a"
+            },
+            {
+              "path": "artifacts/generated-results/elliptic-curves/elliptic_nagao_rank20_t5081_rank20_certificate.json",
+              "sha256": "118acd2facd382bb1fcc34f56e68f6967b9309215c30635ba889b0feb28daec7"
+            }
+          ]
+        }
+      ],
+      "censored_control_sources": [
+        {
+          "outcome_type": "bounded_search_with_certified_lower_bounds",
+          "scope": "Four rank-at-least-17 frontier fibres selected by bounded searches; absence of further points is censored.",
+          "source": {
+            "path": "artifacts/generated-results/elliptic-curves/elliptic_nagao_rank17_frontier_certificate.json",
+            "sha256": "2960c83f3a6319714f027f32c6dac77eb2c56a0bc173fefdaba0e45a341e1079"
+          }
+        }
+      ],
+      "ranking_runs": [
+        {
+          "id": "nagao-section7-global-training-replay",
+          "evaluation_role": "development",
+          "latest_feature_stage": "local_arithmetic",
+          "uses_point_search_features": false,
+          "uses_rank_labels_for_scoring": false,
+          "positive_ids": [
+            "nagao-section7-t5081"
+          ],
+          "extractor": {
+            "kind": "nagao-section7-rank-jump-replay-v1",
+            "metric": "training",
+            "source": {
+              "path": "artifacts/generated-results/elliptic-curves/nagao_section7_rank_jump_replay_v1.json",
+              "sha256": "fd767d53926b1069b714f74ea8a106264f731f17a0f70b12786b3e31908d04a1"
+            }
+          }
+        },
+        {
+          "id": "nagao-section7-global-validation-replay",
+          "evaluation_role": "development",
+          "latest_feature_stage": "local_arithmetic",
+          "uses_point_search_features": false,
+          "uses_rank_labels_for_scoring": false,
+          "positive_ids": [
+            "nagao-section7-t5081"
+          ],
+          "extractor": {
+            "kind": "nagao-section7-rank-jump-replay-v1",
+            "metric": "validation",
+            "source": {
+              "path": "artifacts/generated-results/elliptic-curves/nagao_section7_rank_jump_replay_v1.json",
+              "sha256": "fd767d53926b1069b714f74ea8a106264f731f17a0f70b12786b3e31908d04a1"
+            }
+          }
+        }
+      ],
+      "next_action": "Use the quotient fingerprint and the stronger validation-band ordering only as development evidence; require a prospective labelled holdout before claiming generalization."
+    },
+    {
+      "id": "mestre-dsquare-split-infinity",
+      "readiness": "pending_quotient_audit",
+      "proved_arithmetic_generic_rank": null,
+      "known_positives": [],
+      "censored_control_sources": [],
+      "ranking_runs": [],
+      "next_action": "The rank-17 and rank-19 fibres are useful controls only after the exact generic rank or the quotient beyond a named saturated generic subgroup is pinned; generic rank at least 13 alone is insufficient."
+    },
+    {
+      "id": "elkies-klagsbrun-e29",
+      "readiness": "excluded_pending_lineage",
+      "proved_arithmetic_generic_rank": null,
+      "known_positives": [],
+      "censored_control_sources": [],
+      "ranking_runs": [],
+      "next_action": "Admit E29 only after exact family lineage and parameter normalization are established."
+    }
+  ]
+}

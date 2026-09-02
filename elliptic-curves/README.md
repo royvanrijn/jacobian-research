@@ -84,6 +84,13 @@ There are five live arithmetic gates.
    rational witnesses, certifying the expected residual Selmer lower bound 11
    while leaving the ambient upper bound open. None authorizes search. The
    unconditional Magma job is generated but not run locally.
+   The same controls now have a reproducible
+   [escape-from-R17 fingerprint](notes/ELKIES_RANK_JUMP_FINGERPRINTS.md):
+   the `t=3/8` mechanism control has quotient rank 4 and the high-rank controls
+   have exact displayed quotient ranks `8,9,10,11`, unit Smith saturation indices,
+   complete projected-height successive minima, and degree-two visible spans
+   `4` and `5,3,2,1`. Degree-three and degree-four visibility remain explicitly
+   missing rather than zero.
 2. Prove an unconditional upper bound for curve 302 or find a rank-at-least-32
    curve.
 3. Compute residual descent quotients for the four low-conductor rank-19/20
@@ -99,7 +106,25 @@ There are five live arithmetic gates.
 
 The low-conductor Fermigier/Mestre search remains useful, but its accumulated
 negative scans are historical calibration. They are indexed in the archive
-and are not part of the active command surface.
+and are not part of the active search command surface.  Their recoverable
+score and outcome data are now joined, with censored rather than fabricated
+negative labels, by the
+[`Fermigier labelled-corpus protocol`](notes/FERMIGIER_LABELLED_CORPUS.md).
+
+The [rank-jump laboratory](notes/RANK_JUMP_LABORATORY.md) inventories
+certified within-family positives and censored controls separately. Its first
+executable corpus replays the complete compact-R17 height-10,000 Nagao
+ranking. Its complete
+[Fermigier replay](notes/FERMIGIER_RANK_JUMP_REPLAY.md) now shows that all four
+frozen local orderings miss both certified quotient jumps through a
+100,000-candidate budget; it is a retrospective negative retrieval result, not
+a prospective holdout. The normalized
+[Nagao section-7 replay](notes/NAGAO_SECTION7_RANK_JUMP_REPLAY.md) adds a
+complete 18,244,819-parameter population and an exact quotient fingerprint:
+free rank 8, mod-`2/3/5` dimensions `19/8/8`, and bounded degree-two searches
+spanning all eight free directions. Its frozen bands rank the positive at
+9,041,935 and 755,065, so this remains development evidence rather than a
+search launch. Mestre and E29 remain behind explicit provenance gates.
 
 ## Repository layout
 

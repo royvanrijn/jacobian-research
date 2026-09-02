@@ -34,6 +34,18 @@ K349_SEARCHES = (
     GEN / "elkies-k3-k3-49b947f9626a0481-semistable-mw0-2-sources-large-a-partner1-v1.json",
     GEN / "elkies-k3-k3-49b947f9626a0481-semistable-mw0-2-sources-large-a-partner2-v1.json",
 )
+K399_ADAPTERS = (
+    GEN / "elkies-k3-k3-99a0b9b18de6e19b-source-search-target-partner1-v1.json",
+)
+K399_SEARCHES = (
+    GEN / "elkies-k3-k3-99a0b9b18de6e19b-semistable-mw0-2-sources-large-a-partner1-v1.json",
+)
+K3DC_ADAPTERS = (
+    GEN / "elkies-k3-k3-dc0e324e4ac40dbc-source-search-target-partner1-v1.json",
+)
+K3DC_SEARCHES = (
+    GEN / "elkies-k3-k3-dc0e324e4ac40dbc-semistable-mw0-2-sources-large-a-partner1-v1.json",
+)
 DEFAULT_OUTPUT = GEN / "elkies-k3-rank7-rational-moduli-source-optimizer-v1.json"
 
 
@@ -70,6 +82,10 @@ def main() -> None:
     k342_searches = [json.loads(path.read_text()) for path in K342_SEARCHES]
     k349_adapters = [json.loads(path.read_text()) for path in K349_ADAPTERS]
     k349_searches = [json.loads(path.read_text()) for path in K349_SEARCHES]
+    k399_adapters = [json.loads(path.read_text()) for path in K399_ADAPTERS]
+    k399_searches = [json.loads(path.read_text()) for path in K399_SEARCHES]
+    k3dc_adapters = [json.loads(path.read_text()) for path in K3DC_ADAPTERS]
+    k3dc_searches = [json.loads(path.read_text()) for path in K3DC_SEARCHES]
 
     rational_mw17 = sorted(
         (
@@ -108,6 +124,14 @@ def main() -> None:
     if [row["auxiliary"]["partner_index_one_based"] for row in k349_adapters] != [1, 2]:
         raise ArithmeticError("determinant-1296 auxiliary coverage changed")
     for search in k349_searches:
+        exact_negative(search)
+    if [row["auxiliary"]["partner_index_one_based"] for row in k399_adapters] != [1]:
+        raise ArithmeticError("determinant-1500 auxiliary coverage changed")
+    for search in k399_searches:
+        exact_negative(search)
+    if [row["auxiliary"]["partner_index_one_based"] for row in k3dc_adapters] != [1]:
+        raise ArithmeticError("determinant-1728 auxiliary coverage changed")
+    for search in k3dc_searches:
         exact_negative(search)
 
     catalogue_rows = {}
@@ -161,15 +185,18 @@ def main() -> None:
             "source_status": "NO_SEMISTABLE_MW0_2_SOURCE_IN_COMPLETE_TWO_AUXILIARY_SIX_LARGE_AMBIENT_CUT",
             "priority": None,
         },
-    ]
-    queued = [
         {
-            **catalogue_rows[surface_id],
-            "source_status": "IDEAL_SOURCE_SEARCH_NOT_YET_RUN",
-            "priority": index,
-        }
-        for index, surface_id in enumerate(expected_ids[4:], start=2)
+            **catalogue_rows[expected_ids[4]],
+            "source_status": "NO_SEMISTABLE_MW0_2_SOURCE_IN_COMPLETE_ONE_AUXILIARY_SIX_LARGE_AMBIENT_CUT",
+            "priority": None,
+        },
+        {
+            **catalogue_rows[expected_ids[5]],
+            "source_status": "NO_SEMISTABLE_MW0_2_SOURCE_IN_COMPLETE_ONE_AUXILIARY_SIX_LARGE_AMBIENT_CUT",
+            "priority": None,
+        },
     ]
+    queued = []
 
     payload = {
         "schema": "elkies-k3.rank7-rational-moduli-source-optimizer.v1",
@@ -186,7 +213,7 @@ def main() -> None:
         "accounting": {
             "rational_moduli_rootless_mw17_surfaces": len(rational_mw17),
             "active_promotions": 1,
-            "scoped_ideal_source_rejections": 3,
+            "scoped_ideal_source_rejections": 5,
             "queued_ideal_source_searches": len(queued),
         },
         "active_candidate": active,
@@ -194,22 +221,24 @@ def main() -> None:
         "scoped_rejections": rejected,
         "decision": (
             "Continue rational algebraization on determinant 500 and widen its corridor "
-            "search beyond the completed q=4 degree-2 pole-1 beam. Test determinant 1500 "
-            "next. Determinants 750, 864, and 1296 should not receive equation work unless "
-            "the source cut is widened."
+            "search beyond the completed q=4 degree-2 pole-1 beam. The rootless-MW17 "
+            "rational-moduli queue is exhausted; expand next to rational-moduli MW15 and "
+            "MW16 target surfaces. The five rejected MW17 surfaces should not receive "
+            "equation work unless the source cut is widened."
         ),
         "proof_boundary": {
             "proved": (
                 "The six rational-moduli rootless MW17 surfaces and their ordering are copied "
                 "from the exact Pareto ledger. The determinant-500 source gates and the "
                 "bounded determinant-500 corridor miss, and the declared two-auxiliary "
-                "ideal-source misses at determinants 750, 864, and 1296 are "
+                "ideal-source misses at determinants 750, 864, 1296, 1500, and 1728 are "
                 "hash-pinned exact computations."
             ),
             "not_proved": (
                 "The queue is an optimization policy, not a completeness theorem. The two "
                 "negative rows exclude only the declared six-large-ambient semistable MW0-2 "
-                "cut, and the queued surfaces have no new low-MW source search yet."
+                "cut. It does not exclude additive fibres, MW3, four-support sources, or "
+                "sources arising in unsearched smaller-component ambients."
             ),
         },
         "inputs": {
@@ -219,6 +248,8 @@ def main() -> None:
             relative(K310_REJECTION): digest(K310_REJECTION),
             **{relative(path): digest(path) for path in K342_ADAPTERS + K342_SEARCHES},
             **{relative(path): digest(path) for path in K349_ADAPTERS + K349_SEARCHES},
+            **{relative(path): digest(path) for path in K399_ADAPTERS + K399_SEARCHES},
+            **{relative(path): digest(path) for path in K3DC_ADAPTERS + K3DC_SEARCHES},
         },
         "reproduce": "python3 elkies-k3/scripts/build_rank7_rational_moduli_source_optimizer.py",
     }
@@ -230,7 +261,7 @@ def main() -> None:
     else:
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(serialized)
-    print("RANK7RATIONALOPT|active=1|rejected=3|queued=2|status=PASS")
+    print("RANK7RATIONALOPT|active=1|rejected=5|queued=0|status=PASS")
 
 
 if __name__ == "__main__":

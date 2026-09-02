@@ -709,3 +709,17 @@ classification:
   Niemeier lattice rather than only its root lattice.
 - I. Shimada,
   [*On elliptic K3 surfaces*](https://arxiv.org/abs/math/0505140).
+
+The subsequent R17-first structure audit shows why these counts should not be
+used alone.  It adds the complete degree-two quotient-distance distribution,
+graph connectivity and clique counts, deep-hole mass, exact degree overlap,
+equation weights, and local squareclass entropy; see
+[`R17_MULTISECTION_DIVERSITY_2026-09-02.md`](R17_MULTISECTION_DIVERSITY_2026-09-02.md).
+Its completed comparison with `NS0032-F011` and `NS0028-F005` is especially
+diagnostic: the latter's 41,376 rational vertices remain 41,376 automorphism
+orbits, while the former's larger set of 41,421 vertices collapses to 20,933
+orbits under its nontrivial mod-two symmetry.  Edge density, triangle count,
+pair-separation entropy, and deep-hole mass also induce different rankings.
+The five-fibre R17 response calibration in the same note shows that this
+global supply profile must remain separate from the fibre-specific map into
+exceptional Mordell--Weil directions.

@@ -2721,6 +2721,28 @@ that adjoining all split points leaves the displayed subgroup ranks at
 `25,26,27,28,21`. These are not upper bounds for the full curves. See
 [`elliptic-curves/notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md`](elliptic-curves/notes/ELKIES_BISECTION_SPECIALIZATION_CONTROLS.md).
 
+Build the quotient-first rank-jump fingerprints for the four R17 controls:
+
+```bash
+PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
+  elliptic-curves/cas/build_elkies_2026_rank_jump_fingerprints.py
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
+  elliptic-curves/cas/build_elkies_2026_rank_jump_fingerprints.py --check
+```
+
+Expected terminal status:
+
+```text
+ELKIES2026RANKJUMPFINGERPRINTS|quotient_ranks=8,9,10,11|degree2_visible=5,3,2,1|status=PASS_CERTIFIED_SUBGROUP_QUOTIENT_FINGERPRINTS|output=artifacts/generated-results/elliptic-curves/elkies_2026_rank_jump_fingerprints_v1.json
+```
+
+The Smith and cover-code fields are exact for the displayed certified
+subgroups. The projected canonical-height Grams and successive minima use 80
+decimal digits. Degree-three and degree-four cover visibility are recorded as
+missing, not zero. See
+[`elliptic-curves/notes/ELKIES_RANK_JUMP_FINGERPRINTS.md`](elliptic-curves/notes/ELKIES_RANK_JUMP_FINGERPRINTS.md).
+
 Resolve the rank-28 visibility quotient, prove that translated trace shells
 cannot enlarge it, and run exact `j`-recognition for the 2024 rank-29 curve
 and ICARM 273, 302, and 398--400 against the published `R17` fibration:
@@ -4029,6 +4051,61 @@ whole-file SHA-256 of the current-top-five artifact is
 `8be0e881f5c170366dada6319aed9a09fed689eacc032fcaf5ee70878d735fd0`.
 See
 [`elkies-k3/LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md`](elkies-k3/LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md).
+
+Compute the first structure-sensitive R17 multisection profile, including the
+complete degree-two quotient metric and graph, the complete degree-three
+one-vertex spectrum, deterministic degree-three/four graph samples, exact
+degree-two-to-four overlap, equation-complexity weights, and Gauss-local
+squareclass signatures, with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/analyze_r17_multisection_diversity.py
+```
+
+The output is
+[`artifacts/generated-results/elkies-k3-r17-multisection-diversity-v1.json`](artifacts/generated-results/elkies-k3-r17-multisection-diversity-v1.json).
+Degree two is complete, including all `2^17` cosets, 8,895,801
+zero-intersection edges, and 157,553,175 graph triangles.  The degree-three
+graph and degree-four data outside the embedded two-torsion subset are sampled
+and are labelled accordingly.  See
+[`elkies-k3/R17_MULTISECTION_DIVERSITY_2026-09-02.md`](elkies-k3/R17_MULTISECTION_DIVERSITY_2026-09-02.md).
+
+Run the exact degree-two diversity comparison on R17, `NS0032-F011`, and
+`NS0028-F005` with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/analyze_r17_multisection_diversity.py \
+  --comparison-only
+```
+
+The output is
+[`artifacts/generated-results/elkies-k3-r17-foundry-degree2-diversity-comparison-v1.json`](artifacts/generated-results/elkies-k3-r17-foundry-degree2-diversity-comparison-v1.json).
+All `2^17` cosets per lattice, automorphism orbits, quotient-pair
+distributions, rational zero-intersection graph components and triangles, and
+the inherited degree-two-to-four mass are complete.  The stable artifact
+SHA-256 is
+`408947ebb3e67048767005a005c3f283cc2bd2b4971e12006716809134a7146c`.
+
+Calibrate the R17 graph on the exact bisections that split at the rank-21 and
+rank-25--28 controls with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/analyze_r17_multisection_diversity.py \
+  --control-calibration-only
+```
+
+This requires the preceding global degree-two comparison and the complete
+bisection-specialization control artifact.  It writes
+[`artifacts/generated-results/elkies-k3-r17-bisection-control-diversity-calibration-v1.json`](artifacts/generated-results/elkies-k3-r17-bisection-control-diversity-calibration-v1.json),
+with SHA-256
+`57945b3431cec5227ff245ae0fa238576529f23ec95bedc9f2667b7d51bc742e`.
+Every induced quotient-distance distribution, graph component, clique count,
+lattice span, equation weight, and displayed exceptional quotient class is
+exact.  The five-control correlations are descriptive and are not a fitted
+rank predictor.
 
 The representative historical random high-rank-frame source scout is
 
@@ -17648,6 +17725,42 @@ classification target.
 The UFD/DVR argument showing that the required half radical divides the
 adjugate motion vector is the written proof in
 `HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md`, not a bounded search.
+
+## Quotient-first rank-jump fingerprints and family replays
+
+Rebuild the R17 mechanism/high-rank quotient fingerprints and the two
+Fermigier quotient fingerprints with
+
+```bash
+PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
+  elliptic-curves/cas/build_elkies_2026_rank_jump_fingerprints.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
+  elliptic-curves/cas/build_fermigier_rank_jump_fingerprints.py --check
+```
+
+Replay all 60,815,684 primitive parameters in the frozen Fermigier global box
+and then validate the laboratory registry with
+
+```bash
+PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
+  elliptic-curves/cas/build_fermigier_rank_jump_replay.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
+  elliptic-curves/cas/build_nagao_section7_rank_jump_fingerprint.py --check
+
+PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
+  elliptic-curves/cas/build_nagao_section7_rank_jump_replay.py --check
+
+.venv/bin/python elliptic-curves/scripts/run_rank_jump_laboratory.py
+```
+
+The complete replay is retrospective and assigns no negative labels to
+unlabelled fibres. See
+[`elliptic-curves/notes/FERMIGIER_RANK_JUMP_REPLAY.md`](elliptic-curves/notes/FERMIGIER_RANK_JUMP_REPLAY.md).
+The Nagao replay likewise assigns no negative labels; its quotient and exact
+18,244,819-row ranks are documented in
+[`elliptic-curves/notes/NAGAO_SECTION7_RANK_JUMP_REPLAY.md`](elliptic-curves/notes/NAGAO_SECTION7_RANK_JUMP_REPLAY.md).
 
 ## First-seventeen subgroup audit for record curves 273 and 302
 

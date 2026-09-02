@@ -5,9 +5,14 @@ import argparse
 import hashlib
 import json
 import math
+import sys
 from pathlib import Path
 
 from sage.all import CRT_list, GF, Matrix, PolynomialRing, QQ, ZZ, inverse_mod
+
+
+if hasattr(sys, "set_int_max_str_digits"):
+    sys.set_int_max_str_digits(0)
 
 
 ROOT = Path(__file__).resolve().parents[2]

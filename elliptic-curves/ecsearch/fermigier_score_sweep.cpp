@@ -109,8 +109,9 @@ std::vector<TraceTable> build_trace_tables() {
 
   std::vector<TraceTable> tables;
   for (int prime : primes_through(2000)) {
-    // The odd-prime quadratic-character formula below does not cover p=2.
-    if (prime == 2) {
+    // The family model has no good fibre at its excluded primes 2 and 3.
+    // Ordinary good-reduction trace residuals are undefined there.
+    if (prime == 2 || prime == 3) {
       continue;
     }
     std::vector<int> character(prime);
@@ -222,8 +223,12 @@ std::vector<TraceTable> build_trace_tables() {
       ++table.good_fibre_count;
     }
     if (table.good_fibre_count == 0) {
-      std::cerr << "family has no good fibre modulo " << prime << '\n';
-      std::abort();
+      // Fixed bad primes of this integral family model carry no ordinary
+      // good-fibre trace signal.  Exclude them exactly as a specialization-
+      // bad prime is excluded below; aborting would make the declared sweep
+      // impossible before reaching its first candidate.
+      std::cerr << "skipping family-bad prime=" << prime << '\n';
+      continue;
     }
     tables.push_back(std::move(table));
   }
@@ -324,6 +329,7 @@ int main(int argc, char** argv) {
   const std::vector<int> bounds = {100, 200, 400, 1000, 2000};
   std::vector<int> table_counts;
   std::vector<double> e22_scores;
+  std::vector<double> rank20_scores;
   for (std::size_t stage = 0; stage < bounds.size(); ++stage) {
     const int bound = bounds[stage];
     const int count = table_count_through(tables, bound);
@@ -337,6 +343,15 @@ int main(int argc, char** argv) {
                                                       count, 19754, 39);
     e22_scores.push_back(
         rank_jump_score(cumulative, window, bound,
+                        stage == 0 ? 0 : bounds[stage - 1]));
+    const ScoreFeatures rank20_cumulative =
+        score_features(tables, 0, count, 28917, 20);
+    const ScoreFeatures rank20_window =
+        stage == 0
+            ? rank20_cumulative
+            : score_features(tables, previous_count, count, 28917, 20);
+    rank20_scores.push_back(
+        rank_jump_score(rank20_cumulative, rank20_window, bound,
                         stage == 0 ? 0 : bounds[stage - 1]));
   }
 
@@ -403,10 +418,16 @@ int main(int argc, char** argv) {
         candidates.begin(), candidates.end(), [&](const Candidate& candidate) {
           return candidate.score >= e22_scores[stage] - 1e-6;
         }));
+    const std::size_t above_rank20 = static_cast<std::size_t>(std::count_if(
+        candidates.begin(), candidates.end(), [&](const Candidate& candidate) {
+          return candidate.score >= rank20_scores[stage] - 1e-6;
+        }));
     std::cerr << "stage=" << bounds[stage]
               << " candidates=" << candidates.size()
               << " e22_rank_jump_score=" << e22_scores[stage]
-              << " at_or_above_e22=" << above_e22 << '\n';
+              << " at_or_above_e22=" << above_e22
+              << " rank20_rank_jump_score=" << rank20_scores[stage]
+              << " at_or_above_rank20=" << above_rank20 << '\n';
     retain_top(candidates, caps[stage]);
   }
 

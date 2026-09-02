@@ -1091,6 +1091,19 @@ The current proof boundary and replay commands are in
   pre-prescribed-root route-aware leaders plus R17. Both lattice censuses are
   complete, but effectivity, nefness, irreducibility, arithmetic descent, and
   specialization rank gain remain open.
+- `analyze_r17_multisection_diversity.py` refines the R17 count-only
+  coordinate into a complete degree-two quotient metric and graph, a complete
+  degree-three one-vertex spectrum, deterministic `Aut(M)`-closed
+  degree-three/four graph samples, exact two-to-four torsion overlap,
+  equation-complexity weights, and Gauss-local squareclass signatures.  It
+  labels representative angles and all higher-degree graph fields by their
+  gauge or sampling boundary.  Its `--comparison-only` mode also gives the
+  complete common degree-two profile, full PARI automorphism action, and exact
+  inherited degree-four mass for R17, `NS0032-F011`, and `NS0028-F005`.
+  `--control-calibration-only` then intersects the R17 graph with the exact
+  split-cover sets at the rank-21/25/26/27/28 controls and counts every induced
+  component and clique together with lattice and exceptional-quotient spans;
+  no new rank theorem is inferred.
 - `enumerate_golay_det720_prescribed_root_sources.sage` applies the
   prescribed-root search directly to the rootless Golay-octad rank-seven
   auxiliary.  Its complete declared 23-Niemeier, root-rank-15/16,
@@ -1225,15 +1238,38 @@ The current proof boundary and replay commands are in
   after four edges but never the target.  Its empty result is bounded by beam
   pruning and the declared compiler coordinates; it is not a complete
   neighbour-graph rejection.
+- `extract_rank7_catalogue_source_search_target.py --lattice-only` separates
+  pure same-surface source discovery from equation authorization.  It permits
+  an exact auxiliary/target adapter when the T-arithmetic curve gate is still
+  open, records `equation_work_authorized: false`, and does not promote the
+  unresolved arithmetic row.
+- `classify_k3_6ce_a5_a10_mw2_sources.sage` classifies the best determinant-384
+  MW2-to-MW15 source cut.  The 24 semistable `A10+A5` rows with two supports
+  and basis poles `[0,1]` form one integral frame class and one marking profile:
+  depths `(0,4)` and `(0,2)` at `I6,I11`, with required smooth intersection
+  one.  `probe_k3_6ce_a5_a10_fibre_ansatz_modp.sage` exhausts the normalized
+  two-support fibre chart, while
+  `scan_k3_6ce_a5_a10_mw2_marking_modp.sage` exhausts its pole-zero/pole-one
+  section marking over each selected finite field and twist.  The fibre scans
+  find 152 squarefree models over `GF(5)` and 1,032 over `GF(7)`, but all four
+  square/nonsquare marking charts are empty at the full basis gate.  The
+  nonsquare `GF(7)` chart has 84 and 228 individual generator sections and 72
+  component-matched pairs, all with the wrong smooth intersection.
+- `certify_k3_6ce_equation_first_candidate.py` aggregates that MW2-to-MW15
+  discovery with its depth-eight same-NS corridor beam.  The beam reaches
+  MW13 after five degree-two edges but not the exact `A2/MW15` target.  The
+  certificate promotes determinant 384 only as the new lattice-source leader;
+  rational marking, T-arithmetic curve identification, rootful-target
+  multisections, and a complete corridor remain open.
 - `build_rank7_rational_moduli_source_optimizer.py` maintains the evaluated
   source-first queue for the six catalogue surfaces having rational moduli and
   a rootless MW17 frame.  Determinant 500 is the active formally smooth MW1
-  promotion; determinants 750, 864, and 1296 have exact two-auxiliary negative
-  results in the declared semistable MW0--2 six-large-ambient cut; determinants
-  1500 and 1728 remain queued.  Each determinant-1296 auxiliary has 402
-  terminal embeddings in the three A-containing ambients, all nonprimitive.
-  Missing source searches are kept typed as unknown rather than scored as
-  failures.
+  promotion; all other five surfaces have exact negative results in the
+  declared semistable MW0--2 six-large-ambient cut.  Each determinant-1296
+  auxiliary has 402 terminal embeddings in the three A-containing ambients;
+  determinants 1500 and 1728 have 120 and 768 respectively.  Every terminal
+  is nonprimitive.  The completed MW17 queue now points explicitly to a
+  rational-moduli MW15/MW16 expansion.
 - `sample_lattice_foundry_multisection_spectrum.sage` and
   `complete_lattice_foundry_degree3_spectrum.py` also accept the expanded
   rank-seven catalogue's `surfaces` schema.  The determinant-500 target has
