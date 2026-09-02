@@ -94,6 +94,13 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   rejection gate precedes all residual-cover construction.
 - `parse_elkies_2026_rank28_relative_descent.py`: accepts only a complete log
   from the exact generated Magma source and emits the common fail-closed gate.
+- `run_elkies_2026_relative_2selmer_open.py`: open-source Sage/PARI replacement
+  for the generalized R17 suite. Its blind worker uses
+  `ellrankinit`/`bnfcertify`/`ell2cover`, stores the complete binary-quartic
+  basis and maps bounded-search points back to the elliptic curve. The parent
+  process introduces generic and held-out control points only afterward and
+  labels recovered classes with exact finite-reduction coordinates. Resource
+  stops remain incomplete artifacts.
 
 ## Shared arithmetic
 

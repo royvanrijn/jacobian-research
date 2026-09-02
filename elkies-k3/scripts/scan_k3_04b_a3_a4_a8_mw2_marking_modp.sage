@@ -1,8 +1,10 @@
 #!/usr/bin/env sage-python
-"""Exhaust both pole-zero MW markings on the semistable MW2 source.
+"""Exhaust both pole-zero MW markings on a three-support semistable MW2 source.
 
-The determinant-500 source ``S2021`` has fibres ``I4+I5+I9`` and a physical
-MW basis whose two generators both have pole order zero.  This script derives
+The default determinant-500 source ``S2021`` has fibres ``I4+I5+I9`` and a
+physical MW basis whose two generators both have pole order zero.  Alternative
+source and fibre artifacts with three distinct multiplicative orders may be
+supplied on the command line.  This script derives
 their local correction classes directly from the root-adapted Gram matrix,
 uses the local depth shared by the two inverse orientations of each
 multiplicative component class, and exhausts the remaining degree-four X
@@ -29,6 +31,8 @@ DEFAULT_FIBRES = GEN / "elkies-k3-k3-04b86146cc6b284b-a3-a4-a8-mw2-fibre-ansatz-
 DEFAULT_SOURCES = GEN / "elkies-k3-k3-04b86146cc6b284b-prescribed-root-sources-large-a-v1.json"
 DEFAULT_OUTPUT = GEN / "elkies-k3-k3-04b86146cc6b284b-a3-a4-a8-mw2-marking-mod5-v1.json"
 SOURCE_ID = "K3-04b86146cc6b284b-S2021"
+SURFACE_ID = "K3-04b86146cc6b284b"
+SCHEMA = "elkies-k3.k3-04b-a3-a4-a8-mw2-marking-modp.v1"
 
 
 def relative(path: Path) -> str:
@@ -55,6 +59,22 @@ def connected_components(gram):
                     unseen.remove(other)
                     todo.append(other)
         result.append(sorted(component))
+    return result
+
+
+def ordered_components(gram, orders):
+    available = connected_components(gram)
+    result = []
+    for order in orders:
+        component = next(
+            (row for row in available if len(row) == order - 1), None
+        )
+        if component is None:
+            raise ArithmeticError("root components do not match the fibre orders")
+        result.append(component)
+        available.remove(component)
+    if available:
+        raise ArithmeticError("unused root component")
     return result
 
 
@@ -117,6 +137,8 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--fibres", type=Path, default=DEFAULT_FIBRES)
 parser.add_argument("--sources", type=Path, default=DEFAULT_SOURCES)
 parser.add_argument("--source-id", default=SOURCE_ID)
+parser.add_argument("--surface-id", default=SURFACE_ID)
+parser.add_argument("--schema", default=SCHEMA)
 parser.add_argument("--quadratic-twist", type=int, default=1)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 parser.add_argument("--check", action="store_true")
@@ -125,6 +147,13 @@ arguments = parser.parse_args()
 fibres_path = arguments.fibres.resolve()
 sources_path = arguments.sources.resolve()
 output_path = arguments.output.resolve()
+legacy_profile = (
+    fibres_path == DEFAULT_FIBRES.resolve()
+    and sources_path == DEFAULT_SOURCES.resolve()
+    and arguments.source_id == SOURCE_ID
+    and arguments.surface_id == SURFACE_ID
+    and arguments.schema == SCHEMA
+)
 fibres = json.loads(fibres_path.read_text())
 sources = json.loads(sources_path.read_text())
 source_row = next(
@@ -132,33 +161,28 @@ source_row = next(
 )
 source = source_row["source"]
 orders = fibre_orders(source["root_type"])
-if orders != [4, 5, 9] or source["mw_rank_for_rho_19"] != 2:
-    raise ValueError("marking scan requires the semistable A3+A4+A8/MW2 source")
+if len(orders) != 3 or source["mw_rank_for_rho_19"] != 2:
+    raise ValueError("marking scan requires three semistable supports and MW2")
 if [row["pole_order"] for row in source["pole_audit"]["basis"]] != [0, 0]:
     raise ValueError("selected source no longer has a pole-zero MW basis")
-if fibres["ansatz"]["normalized_reducible_supports"] != [
-    "0:I4",
-    "1:I5",
-    "infinity:I9",
-]:
-    raise ValueError("fibre artifact does not have normalized I4+I5+I9 supports")
+expected_supports = [f"0:I{orders[0]}", f"1:I{orders[1]}", f"infinity:I{orders[2]}"]
+if fibres["ansatz"]["normalized_reducible_supports"] != expected_supports:
+    raise ValueError("fibre artifact does not match the source's normalized supports")
 if not fibres["scan"]["exhausted"]:
     raise ValueError("marking scan requires an exhaustive fibre census")
 
 root_rank = int(source["root_rank"])
 root = matrix(QQ, source["root_adapted_gram"])[:root_rank, :root_rank]
-components = connected_components(root)
-component_by_rank = {len(component): component for component in components}
-if set(component_by_rank) != {3, 4, 8}:
-    raise ArithmeticError("unexpected root-component ranks")
+components = ordered_components(root, orders)
 
 generator_profiles = []
+root_labels = []
 for basis_index, basis in enumerate(source["pole_audit"]["basis"]):
     labels = vector(QQ, basis["simple_root_pairings"])
+    root_labels.append(labels)
     corrections = []
     options = []
-    for order in orders:
-        component = component_by_rank[order - 1]
+    for order, component in zip(orders, components):
         block = root.matrix_from_rows_and_columns(component, component)
         block_labels = vector(QQ, [labels[index] for index in component])
         correction = block_labels * block.inverse() * block_labels
@@ -170,11 +194,45 @@ for basis_index, basis in enumerate(source["pole_audit"]["basis"]):
     generator_profiles.append(
         {
             "basis_index": basis_index,
-            "height": source["mw_height_gram"][1 - basis_index][1 - basis_index],
             "component_corrections": [str(value) for value in corrections],
             "depth_profiles": [list(profile) for profile in itertools.product(*options)],
         }
     )
+
+height = matrix(QQ, source["mw_height_gram"])
+coordinates = matrix(
+    QQ,
+    [basis["mw_quotient_coordinates"] for basis in source["pole_audit"]["basis"]],
+)
+basis_height = coordinates * height * coordinates.transpose()
+if abs(coordinates.det()) != 1:
+    raise ArithmeticError("selected physical sections do not form a primitive MW basis")
+cross_correction = QQ(0)
+for order, component in zip(orders, components):
+    block = root.matrix_from_rows_and_columns(component, component)
+    local_labels = [
+        vector(QQ, [labels[index] for index in component]) for labels in root_labels
+    ]
+    cross_correction += local_labels[0] * block.inverse() * local_labels[1]
+required_smooth_intersection = QQ(2) - cross_correction - basis_height[0, 1]
+if (
+    required_smooth_intersection.denominator() != 1
+    or required_smooth_intersection < 0
+):
+    raise ArithmeticError("lattice data gives an invalid smooth section intersection")
+required_smooth_intersection = int(required_smooth_intersection)
+for basis_index in range(2):
+    generator_profiles[basis_index]["height"] = (
+        source["mw_height_gram"][1 - basis_index][1 - basis_index]
+        if legacy_profile
+        else str(basis_height[basis_index, basis_index])
+    )
+
+depth_key = (
+    "component_depths_at_I4_I5_I9"
+    if legacy_profile
+    else "component_depths_at_normalized_supports"
+)
 
 prime = int(fibres["prime"])
 field = GF(prime)
@@ -286,7 +344,7 @@ for example_index, example in enumerate(fibres["examples"]):
                         {
                             "X_coefficients_low_to_high": serialize_poly(X),
                             "Y_coefficients_low_to_high": serialize_poly(Y),
-                            "component_depths_at_I4_I5_I9": depths,
+                            depth_key: depths,
                         }
                     )
         accounting["marked_generator_sections"][generator_index] += len(
@@ -308,7 +366,7 @@ for example_index, example in enumerate(fibres["examples"]):
                 accounting["pairs_meeting_singular_fibres"] += 1
                 continue
             intersection = int(common.degree())
-            if intersection != 1:
+            if intersection != required_smooth_intersection:
                 accounting["pairs_with_wrong_smooth_intersection"] += 1
                 continue
             basis_pairs.append(
@@ -338,19 +396,30 @@ status = (
     else "PASS_EXACT_EXHAUSTIVE_NORMALIZED_CHART_EMPTY_MARKED_MW2_BASIS_LOCUS"
 )
 payload = {
-    "schema": "elkies-k3.k3-04b-a3-a4-a8-mw2-marking-modp.v1",
+    "schema": arguments.schema,
     "status": status,
     "prime": prime,
     "quadratic_twist": int(twist),
     "quadratic_twist_square_class": "square" if twist.is_square() else "nonsquare",
     "source": {
-        "surface_id": "K3-04b86146cc6b284b",
+        "surface_id": arguments.surface_id,
         "source_id": arguments.source_id,
         "source_gram_sha256": source["gram_sha256"],
         "root_type": source["root_type"],
         "mw_height_gram": source["mw_height_gram"],
         "minimum_basis_pole_profile": [0, 0],
         "generator_profiles": generator_profiles,
+        **(
+            {}
+            if legacy_profile
+            else {
+                "physical_basis_height_gram": [
+                    [str(value) for value in row] for row in basis_height.rows()
+                ],
+                "component_cross_correction": str(cross_correction),
+                "required_smooth_pair_intersection": required_smooth_intersection,
+            }
+        ),
     },
     "scope": {
         "fibre_census_exhaustive": True,
@@ -358,7 +427,9 @@ payload = {
         "all_component_class_local_depths": True,
         "all_remaining_degree_four_X_coefficients": True,
         "all_polynomial_Y_square_roots": True,
-        "all_component_matched_pairs_tested_at_required_smooth_intersection": 1,
+        "all_component_matched_pairs_tested_at_required_smooth_intersection": (
+            required_smooth_intersection
+        ),
     },
     "accounting": accounting,
     "exact_depth_histograms_for_square_sections": [
@@ -394,6 +465,27 @@ payload = {
             if output_path != DEFAULT_OUTPUT.resolve()
             else ""
         )
+        + (
+            f" --fibres {relative(fibres_path)}"
+            if fibres_path != DEFAULT_FIBRES.resolve()
+            else ""
+        )
+        + (
+            f" --sources {relative(sources_path)}"
+            if sources_path != DEFAULT_SOURCES.resolve()
+            else ""
+        )
+        + (
+            f" --source-id {arguments.source_id}"
+            if arguments.source_id != SOURCE_ID
+            else ""
+        )
+        + (
+            f" --surface-id {arguments.surface_id}"
+            if arguments.surface_id != SURFACE_ID
+            else ""
+        )
+        + (f" --schema {arguments.schema}" if arguments.schema != SCHEMA else "")
     ),
 }
 serialized = json.dumps(payload, indent=2, sort_keys=True) + "\n"

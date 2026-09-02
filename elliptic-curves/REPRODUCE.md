@@ -697,6 +697,71 @@ The parser rejects partial or source-mismatched logs. Magma is not available
 on the current host. See
 [`ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md`](../elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md).
 
+The generalized raw-basis pipeline covers the held-out rank-21 and rank-25--28
+controls and the first ten frozen high-Nagao candidates:
+
+```sh
+python3 elliptic-curves/cas/build_elkies_2026_relative_2selmer_suite.py \
+  --output-dir artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1 \
+  --manifest artifacts/generated-results/elliptic-curves/elkies_2026_relative_2selmer_suite_inputs_v1.json \
+  --candidate-count 10 --search-bound 1000 \
+  --enumerate-class-limit 255 --overwrite
+python3 elliptic-curves/cas/run_elkies_2026_relative_2selmer_suite.py \
+  --manifest artifacts/generated-results/elliptic-curves/elkies_2026_relative_2selmer_suite_inputs_v1.json \
+  --log-dir artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/logs \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_relative_2selmer_suite_run_v1.json \
+  --overwrite
+```
+
+The jobs call `SelmerGroup` on multiplication by two (the shared-map form of
+`TwoSelmerGroup`) with `Raw := true` and `Bound := -1`, embed
+each specialized generic section through `AtoS(mu(P))`, and construct/search
+quotient covers before the public exceptional coordinates are declared. The
+current run artifact is `INCOMPLETE_MAGMA_BACKEND_UNAVAILABLE` for all fifteen
+jobs, so it contains no Selmer dimensions or quotient classifications. On a
+licensed Magma host, rerun the supervisor with explicit per-case wall/RSS
+limits and parse only complete logs with
+`parse_elkies_2026_relative_2selmer_suite.py`. See
+[`notes/ELKIES_R17_RELATIVE_2SELMER_PIPELINE.md`](notes/ELKIES_R17_RELATIVE_2SELMER_PIPELINE.md).
+
+The primary runnable replacement is now the open-source Sage/PARI supervisor:
+
+```sh
+python3 elliptic-curves/cas/run_elkies_2026_relative_2selmer_open.py \
+  --manifest artifacts/generated-results/elliptic-curves/elkies_2026_relative_2selmer_suite_inputs_v1.json \
+  --output-dir artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-open-v1 \
+  --output artifacts/generated-results/elliptic-curves/elkies_2026_relative_2selmer_open_rank21_300s_v1.json \
+  --case control-r21-t3_8 --timeout-per-case 300 \
+  --rss-limit-bytes 4000000000 --pari-stack-bytes 2000000000 \
+  --search-bound 1000 --certificate-prime-bound 1000 --overwrite
+```
+
+The isolated worker receives only the minimal curve. It calls PARI
+`ellrankinit`, proves the returned cubic-field BNF with `bnfcertify`, obtains
+the full locally soluble binary-quartic basis with `ell2cover`, and searches
+each basis quartic with `hyperellratpoints`. Only after that blind phase does
+the supervisor reload the generic and held-out points and label recovered
+classes by exact finite reductions. A completed worker is therefore a
+certified full 2-Selmer basis; an initialization timeout remains missing
+evidence. PARI exposes basis quartics but no public addition operation for
+arbitrary combinations, so the runner explicitly constructs and searches the
+returned basis classes rather than claiming all exponential combinations.
+
+The pinned rank-21 command reaches the strict 300-second wall limit inside
+`ellrankinit`, before `bnfcertify` or `ell2cover`, at 440,283,136 bytes peak
+observed RSS. The artifact is therefore
+`INCOMPLETE_ONE_OR_MORE_OPEN_SOURCE_DESCENTS`, not a Selmer bound. A separate
+small-curve smoke run completed initialization, BNF certification, a
+one-dimensional cover basis, blind quartic search, and the map back to the
+elliptic curve in 1.50 seconds; this validates the worker protocol but says
+nothing about an R17 control.
+
+Applying the identical frozen method to the top high-Nagao candidate
+`t=-5643/6760` with a 120-second diagnostic envelope likewise stops inside
+`ellrankinit`, at 230,608,896 bytes peak observed RSS. The paired
+`elkies_2026_relative_2selmer_open_nagao0001_120s_v1.json` artifact contains
+no Selmer dimension and does not promote the candidate.
+
 ## Bisection specialization controls
 
 <!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-SPECIALIZATION-CONTROLS 04f49e48e1c1dd88 -->
@@ -1027,6 +1092,39 @@ is checked separately with:
 PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
   elliptic-curves/cas/build_elkies_2026_rank_jump_fingerprints.py --check
 ```
+
+### Prospective frozen-R17 height shell
+
+Exhaustively rank the parameter-disjoint compact-`t` shell
+`10000 < H <= 30000` with the unchanged three-block weakest-Nagao rule and
+materialize matched pooled-Nagao and deterministic-random controls:
+
+```sh
+.venv/bin/python elliptic-curves/scripts/run_r17_frozen_nagao_shell.py
+```
+
+The command scores all `972697152` primitive shell parameters. The generated
+ranking is
+[`../artifacts/generated-results/elliptic-curves/r17_frozen_nagao_shell_h10001_30000_v1.json`](../artifacts/generated-results/elliptic-curves/r17_frozen_nagao_shell_h10001_30000_v1.json).
+Run the complete preexisting bisection-atlas evaluation on its three 128-row
+lanes with:
+
+```sh
+.venv/bin/python elliptic-curves/scripts/label_r17_training_bisections.py \
+  --input artifacts/local/elliptic-curves/r17-frozen-shell-h10001-30000-cohort.jsonl \
+  --output artifacts/local/elliptic-curves/r17-frozen-shell-h10001-30000-bisection-labels.jsonl \
+  --summary artifacts/local/elliptic-curves/r17-frozen-shell-h10001-30000-bisection-labels-summary.json \
+  --workers 4 --prime-bound 199
+
+.venv/bin/python elliptic-curves/scripts/summarize_r17_frozen_nagao_shell.py
+```
+
+The compact result certifies one quotient direction beyond the generic 17 on
+seven different fibres: three frozen-rule rows, three ordinary-Nagao controls,
+and one random control. No unrestricted point search is authorized without a
+completed residual 2-Selmer gate. Exact tier commands, hashes, and the single
+censored split row are in
+[`notes/R17_FROZEN_NAGAO_SHELL_2026-09-02.md`](notes/R17_FROZEN_NAGAO_SHELL_2026-09-02.md).
 
 ### Mestre frontiers
 

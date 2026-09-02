@@ -301,6 +301,95 @@ class ProjectiveNagaoSieveTests(unittest.TestCase):
         )
         self.assertEqual(result["scoring"]["primary_ranking_key"], "minimum block signal")
 
+    def test_cpp_rank_region_scores_complete_disjoint_shell(self) -> None:
+        compiler = shutil.which("g++")
+        if compiler is None:
+            self.skipTest("g++ is unavailable")
+        requested = ((19, 31, 43), (23, 37, 47), (29, 41, 53))
+        blocks, rejected = SIEVE.build_residue_tables(self.model, requested)
+        self.assertEqual(rejected, ())
+        standards = {}
+        for block in blocks:
+            for prime, table in block.items():
+                values = [
+                    symbol.contribution_units
+                    for symbol in table
+                    if symbol.good_reduction
+                ]
+                standards[prime] = (
+                    statistics.fmean(values),
+                    statistics.pstdev(values),
+                )
+
+        def score(pair):
+            numerator, denominator = pair
+            signals = []
+            good = bad = 0
+            for block in blocks:
+                total = 0.0
+                for prime, table in block.items():
+                    symbol = table[SIEVE.projective_index(numerator, denominator, prime)]
+                    if symbol.good_reduction:
+                        mean, deviation = standards[prime]
+                        total += (symbol.contribution_units - mean) / deviation
+                        good += 1
+                    else:
+                        bad += 1
+                signals.append(total / sqrt(len(block)))
+            height = max(abs(numerator), denominator)
+            frozen_key = (
+                min(signals),
+                statistics.fmean(signals),
+                good,
+                -bad,
+                -height,
+                -denominator,
+                -numerator,
+            )
+            ordinary_key = (statistics.fmean(signals), *frozen_key)
+            return frozen_key, ordinary_key
+
+        population = [
+            (candidate.numerator, candidate.denominator)
+            for candidate in SIEVE.primitive_parameters(30, 30)
+            if candidate.denominator and candidate.height >= 11
+        ]
+        expected_frozen = sorted(population, key=lambda pair: score(pair)[0], reverse=True)[:20]
+        expected_ordinary = sorted(population, key=lambda pair: score(pair)[1], reverse=True)[:5]
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            temporary = Path(temporary_directory)
+            table_path = temporary / "tables.txt"
+            binary_path = temporary / "scan"
+            output_path = temporary / "result.json"
+            SIEVE.export_cpp_tables(table_path, self.model, blocks)
+            subprocess.run(
+                [compiler, "-O3", "-std=c++17", str(CPP), "-o", str(binary_path)],
+                check=True,
+            )
+            subprocess.run(
+                [
+                    str(binary_path), str(table_path), "30", "30", "1", "1,1,1",
+                    "20", str(output_path), "1", "--rank-region", "11", "5",
+                ],
+                check=True,
+                capture_output=True,
+                text=True,
+            )
+            result = json.loads(output_path.read_text())
+        self.assertEqual(result["population_count"], len(population))
+        self.assertEqual(
+            [tuple(row["score"]["projective_pair"]) for row in result["ranked_prefix"]],
+            expected_frozen,
+        )
+        self.assertEqual(
+            [
+                tuple(row["score"]["projective_pair"])
+                for row in result["ordinary_nagao_control_prefix"]
+            ],
+            expected_ordinary,
+        )
+        self.assertEqual(len(result["random_control_lane"]), 5)
+
 
 if __name__ == "__main__":
     unittest.main()

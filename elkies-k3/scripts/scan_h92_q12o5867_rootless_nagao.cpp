@@ -8,6 +8,8 @@
 // Usage:
 //   scan TABLE NUM DEN BUCKET_WIDTH KEEP1,KEEP2,... FINALISTS OUTPUT.json
 //        [PARAMETER_SCALE [CONTROL_A/B,...]]
+//   scan TABLE NUM DEN 1 1,1,1 FINALISTS OUTPUT.json 1
+//        --rank-region MIN_HEIGHT CONTROL_COUNT
 //
 // The optional scale searches the rational chart u=PARAMETER_SCALE*v while
 // retaining v in balanced height buckets.  It must be nonzero and invertible
@@ -346,14 +348,50 @@ struct FullCalibrationSummary {
   std::vector<Candidate> controls;
   std::vector<std::uint64_t> control_ranks;
   std::vector<Candidate> finalists;
+  std::vector<Candidate> ordinary_finalists;
+  std::vector<std::pair<std::uint64_t, Candidate>> random_controls;
   double seconds = 0.0;
 };
+
+bool ordinary_nagao_better(const Candidate& left, const Candidate& right) {
+  if (left.mean_standardized_block_score() !=
+      right.mean_standardized_block_score())
+    return left.mean_standardized_block_score() >
+           right.mean_standardized_block_score();
+  return calibration_better(left, right);
+}
+
+std::uint64_t splitmix64(std::uint64_t value) {
+  value += 0x9e3779b97f4a7c15ULL;
+  value = (value ^ (value >> 30)) * 0xbf58476d1ce4e5b9ULL;
+  value = (value ^ (value >> 27)) * 0x94d049bb133111ebULL;
+  return value ^ (value >> 31);
+}
+
+std::uint64_t random_control_key(const Candidate& candidate) {
+  const std::uint64_t numerator =
+      static_cast<std::uint64_t>(candidate.numerator);
+  const std::uint64_t denominator =
+      static_cast<std::uint64_t>(candidate.denominator);
+  return splitmix64(splitmix64(0x7231372d7368656cULL ^ numerator) ^
+                    splitmix64(denominator));
+}
+
+bool random_control_better(
+    const std::pair<std::uint64_t, Candidate>& left,
+    const std::pair<std::uint64_t, Candidate>& right) {
+  if (left.first != right.first) return left.first < right.first;
+  if (left.second.denominator != right.second.denominator)
+    return left.second.denominator < right.second.denominator;
+  return left.second.numerator < right.second.numerator;
+}
 
 FullCalibrationSummary scan_full_worst_block(
     std::int64_t numerator_bound, std::int64_t denominator_bound,
     const Tables& tables, std::int64_t parameter_scale,
     const std::vector<std::pair<std::int64_t, std::int64_t>>& control_pairs,
-    int finalist_count) {
+    int finalist_count, std::int64_t minimum_height = 1,
+    int control_count = 0) {
   const auto started = std::chrono::steady_clock::now();
   FullCalibrationSummary summary;
   for (const auto& pair : control_pairs)
@@ -362,20 +400,47 @@ FullCalibrationSummary scan_full_worst_block(
   summary.control_ranks.assign(summary.controls.size(), 1);
   std::vector<Candidate> heap;
   heap.reserve(static_cast<std::size_t>(finalist_count + 1));
+  std::vector<Candidate> ordinary_heap;
+  ordinary_heap.reserve(static_cast<std::size_t>(control_count + 1));
+  std::vector<std::pair<std::uint64_t, Candidate>> random_heap;
+  random_heap.reserve(static_cast<std::size_t>(control_count + 1));
+
+  auto retain = [](std::vector<Candidate>& selected, Candidate candidate,
+                   int count, auto comparator) {
+    if (count == 0) return;
+    if (static_cast<int>(selected.size()) < count) {
+      selected.push_back(std::move(candidate));
+      std::push_heap(selected.begin(), selected.end(), comparator);
+    } else if (comparator(candidate, selected.front())) {
+      std::pop_heap(selected.begin(), selected.end(), comparator);
+      selected.back() = std::move(candidate);
+      std::push_heap(selected.begin(), selected.end(), comparator);
+    }
+  };
 
   auto observe = [&](Candidate candidate) {
+    if (candidate.height < minimum_height) return;
     ++summary.population;
     for (std::size_t i = 0; i < summary.controls.size(); ++i)
       if (calibration_better(candidate, summary.controls[i]))
         ++summary.control_ranks[i];
-    if (static_cast<int>(heap.size()) < finalist_count) {
-      heap.push_back(std::move(candidate));
-      std::push_heap(heap.begin(), heap.end(), calibration_better);
-    } else if (calibration_better(candidate, heap.front())) {
-      std::pop_heap(heap.begin(), heap.end(), calibration_better);
-      heap.back() = std::move(candidate);
-      std::push_heap(heap.begin(), heap.end(), calibration_better);
+    if (control_count > 0) {
+      retain(ordinary_heap, candidate, control_count, ordinary_nagao_better);
+      std::pair<std::uint64_t, Candidate> random_row{
+          random_control_key(candidate), candidate};
+      if (static_cast<int>(random_heap.size()) < control_count) {
+        random_heap.push_back(std::move(random_row));
+        std::push_heap(random_heap.begin(), random_heap.end(),
+                       random_control_better);
+      } else if (random_control_better(random_row, random_heap.front())) {
+        std::pop_heap(random_heap.begin(), random_heap.end(),
+                      random_control_better);
+        random_heap.back() = std::move(random_row);
+        std::push_heap(random_heap.begin(), random_heap.end(),
+                       random_control_better);
+      }
     }
+    retain(heap, std::move(candidate), finalist_count, calibration_better);
   };
 
   Candidate infinity = score_calibration_pair(1, 0, tables);
@@ -449,6 +514,10 @@ FullCalibrationSummary scan_full_worst_block(
   }
   std::sort(heap.begin(), heap.end(), calibration_better);
   summary.finalists = std::move(heap);
+  std::sort(ordinary_heap.begin(), ordinary_heap.end(), ordinary_nagao_better);
+  summary.ordinary_finalists = std::move(ordinary_heap);
+  std::sort(random_heap.begin(), random_heap.end(), random_control_better);
+  summary.random_controls = std::move(random_heap);
   summary.seconds = std::chrono::duration<double>(
                         std::chrono::steady_clock::now() - started)
                         .count();
@@ -733,6 +802,74 @@ void write_full_calibration_json(
   output << "\"\n}\n";
 }
 
+void write_ranked_region_json(
+    const std::string& path, const std::string& table_path,
+    const Tables& tables, std::int64_t numerator_bound,
+    std::int64_t denominator_bound, std::int64_t minimum_height,
+    const FullCalibrationSummary& summary, int argc, char** argv) {
+  std::ofstream output(path);
+  if (!output) throw std::runtime_error("cannot create output file: " + path);
+  output << "{\n"
+         << "  \"schema\": \"elkies-2026-frozen-worst-block-nagao-region-v1\",\n"
+         << "  \"status\": \"PASS_COMPLETE_FROZEN_RULE_REGION_RANKING\",\n"
+         << "  \"proof_boundary\": \"Every primitive parameter in the declared region was scored. Rankings are heuristics, not rank or Selmer bounds. Only the stored leading prefixes are materialized.\",\n"
+         << "  \"model_sha256\": \"" << tables.model_sha256 << "\",\n"
+         << "  \"table_file\": \"" << json_escape(table_path) << "\",\n"
+         << "  \"search\": {\"coordinate\": \"published compact t\", "
+         << "\"numerator_interval\": [-" << numerator_bound << ", "
+         << numerator_bound << "], \"denominator_interval\": [1, "
+         << denominator_bound
+         << "], \"primitive_pairs_only\": true, \"includes_infinity\": false, "
+         << "\"height\": \"max(abs(a),b)\", \"minimum_height_inclusive\": "
+         << minimum_height << ", \"maximum_height_inclusive\": "
+         << std::max(numerator_bound, denominator_bound) << "},\n"
+         << "  \"population_count\": " << summary.population << ",\n"
+         << "  \"frozen_ranking\": {\"primary\": \"minimum standardized block signal\", "
+         << "\"tie_breaker\": \"mean block signal, good primes, bad primes, height, denominator, numerator\", "
+         << "\"prime_ensembles\": [";
+  for (std::size_t block = 0; block < tables.blocks.size(); ++block) {
+    if (block) output << ", ";
+    output << '[';
+    for (std::size_t index = 0; index < tables.blocks[block].size(); ++index) {
+      if (index) output << ", ";
+      output << tables.blocks[block][index].prime;
+    }
+    output << ']';
+  }
+  output << "], \"per_prime_standardization\": \"center and population-standardize over good fibres of P1(F_p)\", "
+         << "\"singular_fibre_policy\": \"mean imputation (standardized contribution zero)\", "
+         << "\"block_normalization\": \"sum(z_p)/sqrt(number of primes in block)\"},\n"
+         << "  \"control_definitions\": {\"ordinary_nagao\": \"descending mean standardized block signal, then the frozen comparator\", "
+         << "\"random\": \"smallest deterministic splitmix64 keys under seed r17-shell\"},\n"
+         << "  \"ranked_prefix\": [\n";
+  for (std::size_t index = 0; index < summary.finalists.size(); ++index) {
+    output << "    {\"population_rank\": " << index + 1 << ", \"score\": ";
+    write_calibration_candidate(output, summary.finalists[index]);
+    output << "}" << (index + 1 == summary.finalists.size() ? "\n" : ",\n");
+  }
+  output << "  ],\n  \"ordinary_nagao_control_prefix\": [\n";
+  for (std::size_t index = 0; index < summary.ordinary_finalists.size(); ++index) {
+    output << "    {\"control_rank\": " << index + 1 << ", \"score\": ";
+    write_calibration_candidate(output, summary.ordinary_finalists[index]);
+    output << "}" << (index + 1 == summary.ordinary_finalists.size() ? "\n" : ",\n");
+  }
+  output << "  ],\n  \"random_control_lane\": [\n";
+  for (std::size_t index = 0; index < summary.random_controls.size(); ++index) {
+    output << "    {\"random_order\": " << index + 1
+           << ", \"hash_key_uint64\": \"" << summary.random_controls[index].first
+           << "\", \"score\": ";
+    write_calibration_candidate(output, summary.random_controls[index].second);
+    output << "}" << (index + 1 == summary.random_controls.size() ? "\n" : ",\n");
+  }
+  output << "  ],\n  \"runtime_seconds\": " << std::setprecision(12)
+         << summary.seconds << ",\n  \"reproducing_command\": \"";
+  for (int i = 0; i < argc; ++i) {
+    if (i) output << ' ';
+    output << json_escape(argv[i]);
+  }
+  output << "\"\n}\n";
+}
+
 void write_json(const std::string& path, const std::string& table_path,
                 const Tables& tables, std::int64_t numerator_bound,
                 std::int64_t denominator_bound, std::int64_t bucket_width,
@@ -845,9 +982,11 @@ void write_json(const std::string& path, const std::string& table_path,
 }  // namespace
 
 int main(int argc, char** argv) {
-  if (argc != 8 && argc != 9 && argc != 10) {
+  if (argc != 8 && argc != 9 && argc != 10 && argc != 12) {
     std::cerr << "usage: " << argv[0]
-              << " TABLE NUM DEN BUCKET_WIDTH KEEP1,KEEP2,... FINALISTS OUTPUT.json [PARAMETER_SCALE [CONTROL_A/B,...]]\n";
+              << " TABLE NUM DEN BUCKET_WIDTH KEEP1,KEEP2,... FINALISTS OUTPUT.json [PARAMETER_SCALE [CONTROL_A/B,...]]\n"
+              << "       " << argv[0]
+              << " TABLE NUM DEN 1 1,1,1 FINALISTS OUTPUT.json 1 --rank-region MIN_HEIGHT CONTROL_COUNT\n";
     return 2;
   }
   try {
@@ -869,6 +1008,35 @@ int main(int argc, char** argv) {
       throw std::runtime_error("unexpected model degrees or score scale");
     if (keeps.size() != tables.blocks.size())
       throw std::runtime_error("one keep count is required per table block");
+
+    if (argc == 12) {
+      if (std::string(argv[9]) != "--rank-region")
+        throw std::runtime_error("unknown complete-ranking mode");
+      if (parameter_scale != 1)
+        throw std::runtime_error(
+            "the compact-t height region requires parameter scale one");
+      if (tables.blocks.size() < 3)
+        throw std::runtime_error(
+            "frozen region ranking requires at least three prime ensembles");
+      const std::int64_t minimum_height = std::stoll(argv[10]);
+      const int control_count = std::stoi(argv[11]);
+      if (minimum_height < 1 ||
+          minimum_height > std::max(numerator_bound, denominator_bound) ||
+          control_count < 1)
+        throw std::runtime_error("invalid ranked-region bounds or control count");
+      const FullCalibrationSummary summary = scan_full_worst_block(
+          numerator_bound, denominator_bound, tables, parameter_scale, {},
+          finalists, minimum_height, control_count);
+      write_ranked_region_json(
+          output_path, table_path, tables, numerator_bound, denominator_bound,
+          minimum_height, summary, argc, argv);
+      std::cout << "PASS ranked_region_population=" << summary.population
+                << " finalists=" << summary.finalists.size()
+                << " controls=" << control_count << " seconds=" << std::fixed
+                << std::setprecision(3) << summary.seconds << " output="
+                << output_path << "\n";
+      return 0;
+    }
 
     if (argc == 10) {
       if (tables.blocks.size() < 3)

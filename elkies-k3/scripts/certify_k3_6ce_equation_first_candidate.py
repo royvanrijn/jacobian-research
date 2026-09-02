@@ -26,6 +26,17 @@ MARKINGS = {
     (7, "nonsquare"): GEN / "elkies-k3-k3-6ce16abb9de3c7c5-a5-a10-mw2-marking-mod7-nonsquare-v1.json",
 }
 CORRIDOR = GEN / "elkies-k3-k3-6ce16abb9de3c7c5-same-ns-compiler-routes-rankfirst-cap2000-v1.json"
+ALTERNATE_CLASSIFIER = GEN / "elkies-k3-k3-6ce16abb9de3c7c5-a2-a5-a8-mw2-source-isometries-v1.json"
+ALTERNATE_FIBRES = {
+    5: GEN / "elkies-k3-k3-6ce16abb9de3c7c5-a2-a5-a8-mw2-fibre-ansatz-mod5-v1.json",
+    7: GEN / "elkies-k3-k3-6ce16abb9de3c7c5-a2-a5-a8-mw2-fibre-ansatz-mod7-v1.json",
+}
+ALTERNATE_MARKINGS = {
+    (5, "square"): GEN / "elkies-k3-k3-6ce16abb9de3c7c5-a2-a5-a8-mw2-marking-mod5-square-v1.json",
+    (5, "nonsquare"): GEN / "elkies-k3-k3-6ce16abb9de3c7c5-a2-a5-a8-mw2-marking-mod5-nonsquare-v1.json",
+    (7, "square"): GEN / "elkies-k3-k3-6ce16abb9de3c7c5-a2-a5-a8-mw2-marking-mod7-square-v1.json",
+    (7, "nonsquare"): GEN / "elkies-k3-k3-6ce16abb9de3c7c5-a2-a5-a8-mw2-marking-mod7-nonsquare-v1.json",
+}
 DEFAULT_OUTPUT = GEN / "elkies-k3-k3-6ce16abb9de3c7c5-equation-first-candidate-v1.json"
 
 
@@ -53,6 +64,9 @@ def main():
     fibres = {prime: load(path) for prime, path in FIBRES.items()}
     markings = {key: load(path) for key, path in MARKINGS.items()}
     corridor = load(CORRIDOR)
+    alternate_classifier = load(ALTERNATE_CLASSIFIER)
+    alternate_fibres = {prime: load(path) for prime, path in ALTERNATE_FIBRES.items()}
+    alternate_markings = {key: load(path) for key, path in ALTERNATE_MARKINGS.items()}
 
     if adapter["status"] != "PASS_EXACT_CATALOGUE_LATTICE_ONLY_SOURCE_SEARCH_TARGET_EXTRACTION":
         raise ArithmeticError("lattice-only adapter status changed")
@@ -93,6 +107,26 @@ def main():
             raise ArithmeticError(f"marking status changed at p={prime}, {square_class}")
         if payload["accounting"]["marked_ordered_basis_pairs"]:
             raise ArithmeticError("empty marking chart contains a basis")
+    if alternate_classifier["accounting"] != {
+        "class_sizes": [17],
+        "integral_isometry_classes": 1,
+        "reduced_gram_rows": 17,
+        "selected_physical_basis_profiles": 2,
+    }:
+        raise ArithmeticError("alternate source classification changed")
+    expected_alternate_fibres = {5: 82, 7: 306}
+    for prime, payload in alternate_fibres.items():
+        if (
+            payload["status"] != "PASS_EXACT_EXHAUSTIVE_MODULAR_SOURCE_FIBRE_ANSATZ"
+            or payload["accounting"]["squarefree_examples_with_signs"]
+            != expected_alternate_fibres[prime]
+        ):
+            raise ArithmeticError(f"alternate fibre gate changed at p={prime}")
+    for (prime, square_class), payload in alternate_markings.items():
+        if payload["status"] != "PASS_EXACT_EXHAUSTIVE_NORMALIZED_CHART_EMPTY_MARKED_MW2_PAIR_LOCUS":
+            raise ArithmeticError(f"alternate marking status changed at p={prime}, {square_class}")
+        if payload["accounting"]["marked_mw2_pairs"]:
+            raise ArithmeticError("alternate empty marking chart contains a pair")
     if corridor["status"] != "PASS_BOUNDED_SAME_NS_COMPILER_ROUTE_EMPTY":
         raise ArithmeticError("corridor status changed")
     route = corridor["results"]
@@ -119,7 +153,38 @@ def main():
             }
         )
 
-    paths = [ADAPTER, SOURCES, CLASSIFIER, *FIBRES.values(), *MARKINGS.values(), CORRIDOR]
+    alternate_marking_summary = []
+    for key in sorted(alternate_markings):
+        payload = alternate_markings[key]
+        accounting = payload["accounting"]
+        alternate_marking_summary.append(
+            {
+                "prime": key[0],
+                "twist_square_class": key[1],
+                "fibre_models": payload["scope"]["fibre_models"],
+                "pole_zero_sections": accounting["pole_zero_sections"],
+                "pole_one_sections": accounting["pole_one_sections"],
+                "component_matched_pair_candidates": accounting[
+                    "component_matched_pair_candidates"
+                ],
+                "pairs_meeting_singular_fibres": accounting[
+                    "pairs_meeting_singular_fibres"
+                ],
+                "marked_basis_pairs": accounting["marked_mw2_pairs"],
+            }
+        )
+
+    paths = [
+        ADAPTER,
+        SOURCES,
+        CLASSIFIER,
+        *FIBRES.values(),
+        *MARKINGS.values(),
+        ALTERNATE_CLASSIFIER,
+        *ALTERNATE_FIBRES.values(),
+        *ALTERNATE_MARKINGS.values(),
+        CORRIDOR,
+    ]
     payload = {
         "schema": "elkies-k3.k3-6ce-equation-first-candidate.v1",
         "status": "PASS_LATTICE_SOURCE_PROMOTION_NORMALIZED_MARKING_GATES_EMPTY",
@@ -160,9 +225,16 @@ def main():
         "equation_gate": {
             "squarefree_fibre_models": expected_fibres,
             "marking_charts": marking_summary,
+            "alternate_A2_A5_A8_pole_0_1_chart": {
+                "integral_frame_classes": 1,
+                "marked_basis_profiles": 2,
+                "squarefree_fibre_models": expected_alternate_fibres,
+                "marking_charts": alternate_marking_summary,
+            },
             "decision": (
-                "Do not launch characteristic-zero lifting from the A10+A5 chart. "
-                "Test the other determinant-384 MW2 marking profiles first."
+                "Do not launch characteristic-zero lifting from either tested pole-[0,1] "
+                "chart. Test the remaining pole-[0,2]/[1,1] sources or the next source-first "
+                "surface before widening these normalized charts."
             ),
         },
         "corridor_gate": {

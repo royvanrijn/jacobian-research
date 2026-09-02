@@ -173,6 +173,8 @@ def census_chunk(task: dict) -> dict:
     audited = 0
     checksum_mod_1 = 0
     checksum_mod_2 = 0
+    retained = []
+    retain_norms = set(task.get("retain_norms", ()))
     modulus_1 = 1_000_000_007
     modulus_2 = 1_000_000_009
     power = DEGREE ** (task["first_nonzero"] + 1)
@@ -189,7 +191,17 @@ def census_chunk(task: dict) -> dict:
         residue_id = base + power * quotient
         checksum_mod_1 = (checksum_mod_1 + residue_id * (norm + 1)) % modulus_1
         checksum_mod_2 = (checksum_mod_2 + residue_id * (norm + 1)) % modulus_2
-        if residue_id % task["audit_stride"] == task["audit_residue"]:
+        retain = norm in retain_norms
+        if retain:
+            retained.append(
+                {
+                    "residue_id": residue_id,
+                    "residue": residue,
+                    "minimum_representative": representative,
+                    "minimum_norm": norm,
+                }
+            )
+        if retain or residue_id % task["audit_stride"] == task["audit_residue"]:
             audit_norm, audit_representative, audit_error = solve_residue(
                 residue, gram, audit_gso, audit_mu, distance_bound
             )
@@ -210,6 +222,7 @@ def census_chunk(task: dict) -> dict:
         "cross_precision_audits": audited,
         "checksum_mod_1000000007": checksum_mod_1,
         "checksum_mod_1000000009": checksum_mod_2,
+        "retained_minimum_representatives": retained,
     }
 
 
@@ -241,6 +254,7 @@ def task_specifications(
                             hashlib.sha256(task_id.encode()).hexdigest()[:8], 16
                         )
                         % arguments.audit_stride,
+                        "retain_norms": arguments.retain_norm,
                     }
                 )
     return tasks
@@ -253,7 +267,7 @@ def configuration_record(
     tasks: list[dict],
 ) -> dict:
     task_text = "\n".join(task["task_id"] for task in tasks) + "\n"
-    return {
+    result = {
         "database": relative(database_path),
         "database_sha256": digest(database_path),
         "frame_ids": [frame["frame_id"] for frame in frames],
@@ -272,6 +286,9 @@ def configuration_record(
         "task_count": len(tasks),
         "task_list_sha256": hashlib.sha256(task_text.encode()).hexdigest(),
     }
+    if arguments.retain_norm:
+        result["retained_minimum_norms"] = sorted(set(arguments.retain_norm))
+    return result
 
 
 def empty_aggregate(frames: list[dict]) -> dict:
@@ -283,6 +300,7 @@ def empty_aggregate(frames: list[dict]) -> dict:
             "cross_precision_audits": 0,
             "checksum_mod_1000000007": 0,
             "checksum_mod_1000000009": 0,
+            "retained_minimum_representatives": [],
         }
         for frame in frames
     }
@@ -300,6 +318,9 @@ def merge_result(aggregate: dict, result: dict) -> None:
     for modulus in (1_000_000_007, 1_000_000_009):
         key = f"checksum_mod_{modulus}"
         row[key] = (row[key] + result[key]) % modulus
+    row.setdefault("retained_minimum_representatives", []).extend(
+        result.get("retained_minimum_representatives", ())
+    )
 
 
 def write_checkpoint(
@@ -345,7 +366,7 @@ def spectrum_row(frame: dict, aggregate: dict) -> dict:
         for norm, count in histogram.items()
         if int(norm) >= 18 and int(norm) % 6 == 0
     )
-    return {
+    result = {
         "frame_id": frame["frame_id"],
         "ns_id": frame["ns_id"],
         "determinant": int(frame["determinant"]),
@@ -389,6 +410,18 @@ def spectrum_row(frame: dict, aggregate: dict) -> dict:
             ],
         },
     }
+    retained = aggregate.get("retained_minimum_representatives", ())
+    if retained:
+        records = sorted(retained, key=lambda row: row["residue_id"])
+        result["retained_inversion_representatives"] = records
+        result["retained_full_coset_count_after_inversion"] = 2 * len(records)
+        result["retained_boundary"] = (
+            "Each stored nonzero residue is the canonical first-nonzero-one "
+            "representative of an inversion pair. Negating both the residue and "
+            "minimum representative restores the second coset. Every retained "
+            "minimum was independently repeated with the MPFR backend."
+        )
+    return result
 
 
 def selected_frames(database: dict, frame_ids: list[str]) -> list[dict]:
@@ -440,6 +473,16 @@ def main() -> None:
     parser.add_argument("--precision", type=int, default=160)
     parser.add_argument("--audit-precision", type=int, default=256)
     parser.add_argument("--audit-stride", type=int, default=4096)
+    parser.add_argument(
+        "--retain-norm",
+        type=int,
+        action="append",
+        default=[],
+        help=(
+            "retain every inversion representative attaining this exact minimum "
+            "norm; repeat the option for several norms"
+        ),
+    )
     parser.add_argument("--smoke-count", type=int, default=0)
     parser.add_argument("--rebuild", action="store_true")
     parser.add_argument(

@@ -63,6 +63,14 @@ checks the frozen ranker on its subsequently computed exact labels. This
 separates genuine bisection-target generalization from the score's failure to
 retrieve the rank-28 control.
 
+`run_r17_frozen_nagao_shell.py` exhaustively scores the disjoint compact-`t`
+shell `10000 < H <= 30000` with the already frozen weakest-block rule and
+creates parameter-disjoint frozen, pooled-Nagao, and random lanes.
+`summarize_r17_frozen_nagao_shell.py` validates the complete bisection-atlas
+outcomes and frozen-rank depth tiers and writes the compact exact-gain result.
+See
+[`../notes/R17_FROZEN_NAGAO_SHELL_2026-09-02.md`](../notes/R17_FROZEN_NAGAO_SHELL_2026-09-02.md).
+
 `build_fermigier_labelled_corpus.py` recovers the existing Fermigier score
 tables, bounded-search outcomes, and two exact positive controls into a
 canonical 517,922-row censoring-aware JSONL corpus.  It resolves the historical

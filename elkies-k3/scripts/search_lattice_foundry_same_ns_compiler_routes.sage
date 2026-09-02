@@ -74,6 +74,16 @@ K36CE_SOURCES = (
     / "artifacts/generated-results/"
     "elkies-k3-k3-6ce16abb9de3c7c5-semistable-mw0-2-sources-large-a-partner1-v1.json"
 )
+K314AD_TARGET = (
+    ROOT
+    / "artifacts/generated-results/"
+    "elkies-k3-k3-14ad03cd7c1848b2-source-search-target-partner1-lattice-only-v1.json"
+)
+K314AD_SOURCES = (
+    ROOT
+    / "artifacts/generated-results/"
+    "elkies-k3-k3-14ad03cd7c1848b2-semistable-mw0-2-sources-large-a-partner1-v1.json"
+)
 
 
 CASE_DATA = {
@@ -121,6 +131,14 @@ CASE_DATA = {
         "target_artifact": K36CE_TARGET,
         "default_output": ROOT
         / "artifacts/generated-results/elkies-k3-k3-6ce16abb9de3c7c5-same-ns-compiler-routes-v1.json",
+    },
+    "k314ad": {
+        "source_artifact": K314AD_SOURCES,
+        "source_id": "K3-14ad03cd7c1848b2-S0050",
+        "target_ids": ("K3-14ad03cd7c1848b2-F001",),
+        "target_artifact": K314AD_TARGET,
+        "default_output": ROOT
+        / "artifacts/generated-results/elkies-k3-k3-14ad03cd7c1848b2-same-ns-compiler-routes-v1.json",
     },
 }
 

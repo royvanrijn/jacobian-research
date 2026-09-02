@@ -1,5 +1,11 @@
 #!/usr/bin/env sage-python
-"""Exhaust the pole-[0,1] MW2 marking on determinant-384 I6+I11 models."""
+"""Exhaust a pole-[0,1] MW2 marking on normalized I6+I11 models.
+
+The determinant-384 source is the pinned default.  A different A5+A10/MW2
+source can reuse the exhaustive fibre census; its component depths, physical
+basis height, and required smooth intersection are derived from its lattice
+data rather than supplied as search parameters.
+"""
 
 from __future__ import annotations
 
@@ -7,6 +13,7 @@ import argparse
 import hashlib
 import itertools
 import json
+import re
 from pathlib import Path
 
 from sage.all import GF, PolynomialRing, PowerSeriesRing, QQ, matrix, vector
@@ -18,6 +25,8 @@ DEFAULT_FIBRES = GEN / "elkies-k3-k3-6ce16abb9de3c7c5-a5-a10-mw2-fibre-ansatz-mo
 DEFAULT_SOURCES = GEN / "elkies-k3-k3-6ce16abb9de3c7c5-semistable-mw0-2-sources-large-a-partner1-v1.json"
 DEFAULT_OUTPUT = GEN / "elkies-k3-k3-6ce16abb9de3c7c5-a5-a10-mw2-marking-mod5-v1.json"
 SOURCE_ID = "K3-6ce16abb9de3c7c5-S0008"
+SURFACE_ID = "K3-6ce16abb9de3c7c5"
+SCHEMA = "elkies-k3.k3-6ce-a5-a10-mw2-marking-modp.v1"
 
 
 def relative(path):
@@ -45,6 +54,18 @@ def connected_components(gram):
                     todo.append(other)
         result.append(sorted(component))
     return sorted(result, key=len)
+
+
+def two_support_orders(root_type):
+    ranks = []
+    for term in root_type.split("+"):
+        match = re.fullmatch(r"A(\d+)", term)
+        if match is None:
+            raise ValueError("source is not a two-A-component semistable frame")
+        ranks.append(int(match.group(1)))
+    if len(ranks) != 2 or sum(ranks) != 15:
+        raise ValueError("source does not have two A components of total rank 15")
+    return [rank + 1 for rank in sorted(ranks)]
 
 
 def formal_center_at_zero(A, B, precision):
@@ -108,6 +129,8 @@ def main():
     parser.add_argument("--fibres", type=Path, default=DEFAULT_FIBRES)
     parser.add_argument("--sources", type=Path, default=DEFAULT_SOURCES)
     parser.add_argument("--source-id", default=SOURCE_ID)
+    parser.add_argument("--surface-id", default=SURFACE_ID)
+    parser.add_argument("--schema", default=SCHEMA)
     parser.add_argument("--quadratic-twist", type=int, default=1)
     parser.add_argument(
         "--max-models", type=int, default=0,
@@ -126,26 +149,34 @@ def main():
     fibres_path = arguments.fibres.resolve()
     sources_path = arguments.sources.resolve()
     output_path = arguments.output.resolve()
+    legacy_profile = (
+        fibres_path == DEFAULT_FIBRES.resolve()
+        and sources_path == DEFAULT_SOURCES.resolve()
+        and arguments.source_id == SOURCE_ID
+        and arguments.surface_id == SURFACE_ID
+        and arguments.schema == SCHEMA
+    )
     fibres = json.loads(fibres_path.read_text())
     sources = json.loads(sources_path.read_text())
     source = next(
         row["source"] for row in sources["sources"] if row["source_id"] == arguments.source_id
     )
-    if fibres["ansatz"]["normalized_reducible_supports"] != ["0:I6", "infinity:I11"]:
-        raise ValueError("marking scan requires normalized I6+I11 fibres")
+    basis = source["pole_audit"]["basis"]
+    orders = two_support_orders(source["root_type"])
+    expected_supports = [f"0:I{orders[0]}", f"infinity:I{orders[1]}"]
+    if fibres["ansatz"]["normalized_reducible_supports"] != expected_supports:
+        raise ValueError("fibre census does not match the selected source supports")
     if not fibres["scan"]["exhausted"]:
         raise ValueError("marking scan requires an exhaustive fibre census")
-    basis = source["pole_audit"]["basis"]
     if not (
-        source["root_type"] == "A10+A5"
-        and source["mw_rank_for_rho_19"] == 2
+        source["mw_rank_for_rho_19"] == 2
         and [section["pole_order"] for section in basis] == [0, 1]
     ):
         raise ValueError("selected source no longer has the required MW2 basis")
 
     root = matrix(QQ, source["root_adapted_gram"])[:15, :15]
     components = connected_components(root)
-    if list(map(len, components)) != [5, 10]:
+    if list(map(len, components)) != [order - 1 for order in orders]:
         raise ArithmeticError("unexpected root components")
     depth_profiles = []
     for section in basis:
@@ -165,8 +196,26 @@ def main():
                 raise ArithmeticError("ambiguous component depth")
             depths.append(options[0])
         depth_profiles.append(depths)
-    if depth_profiles != [[0, 4], [0, 2]]:
-        raise ArithmeticError("selected marking profile changed")
+    labels = [vector(QQ, section["simple_root_pairings"]) for section in basis]
+    component_cross = QQ(0)
+    for component in components:
+        block = root.matrix_from_rows_and_columns(component, component)
+        local = [vector(QQ, [row[index] for index in component]) for row in labels]
+        component_cross += local[0] * block.inverse() * local[1]
+    height = matrix(QQ, source["mw_height_gram"])
+    coordinates = matrix(QQ, [section["mw_quotient_coordinates"] for section in basis])
+    if abs(coordinates.det()) != 1:
+        raise ArithmeticError("selected sections do not form a primitive MW basis")
+    basis_height = coordinates * height * coordinates.transpose()
+    required_intersection = QQ(3) - component_cross - basis_height[0, 1]
+    if required_intersection.denominator() != 1 or required_intersection < 0:
+        raise ArithmeticError("lattice data gives an invalid smooth intersection")
+    required_intersection = int(required_intersection)
+    depth_key = (
+        "component_depths_at_I6_I11"
+        if legacy_profile
+        else "component_depths_at_normalized_supports"
+    )
 
     prime = int(fibres["prime"])
     field = GF(prime)
@@ -206,15 +255,26 @@ def main():
 
         sections = [[], []]
 
-        # Pole-zero generator: X has degree at most four and four infinity jets.
-        linear0 = matrix(
-            field,
-            [
-                [reversed_local(t**degree, 4, infinity_ring)[jet] for degree in range(5)]
-                for jet in range(4)
-            ],
-        )
-        target0 = vector(field, [inf_center[jet] for jet in range(4)])
+        # Pole-zero generator: constrain the lattice-prescribed jets at both supports.
+        rows0 = []
+        targets0 = []
+        for support_index, depth in enumerate(depth_profiles[0]):
+            for jet in range(depth):
+                rows0.append(
+                    [
+                        (
+                            zero_ring(t**degree)
+                            if support_index == 0
+                            else reversed_local(t**degree, 4, infinity_ring)
+                        )[jet]
+                        for degree in range(5)
+                    ]
+                )
+                targets0.append(
+                    (zero_center if support_index == 0 else inf_center)[jet]
+                )
+        linear0 = matrix(field, rows0) if rows0 else matrix(field, 0, 5)
+        target0 = vector(field, targets0)
         for solution in affine_solutions(field, linear0, target0):
             accounting["pole_zero_X_numerators_scanned"] += 1
             X = ring(list(solution))
@@ -234,7 +294,7 @@ def main():
                         {
                             "X_coefficients_low_to_high": serialize(X),
                             "Y_coefficients_low_to_high": serialize(Y),
-                            "component_depths_at_I6_I11": depths,
+                            depth_key: depths,
                         }
                     )
 
@@ -245,19 +305,27 @@ def main():
                 continue
             accounting["pole_one_denominators_scanned"] += 1
             local_C = reversed_local(C, 1, infinity_ring)
-            linear1 = matrix(
-                field,
-                [
-                    [
-                        (
-                            reversed_local(t**degree, 6, infinity_ring) / local_C**2
-                        )[jet]
-                        for degree in range(7)
-                    ]
-                    for jet in range(2)
-                ],
-            )
-            target1 = vector(field, [inf_center[jet] for jet in range(2)])
+            zero_C = zero_ring(C)
+            rows1 = []
+            targets1 = []
+            for support_index, depth in enumerate(depth_profiles[1]):
+                for jet in range(depth):
+                    rows1.append(
+                        [
+                            (
+                                zero_ring(t**degree) / zero_C**2
+                                if support_index == 0
+                                else reversed_local(t**degree, 6, infinity_ring)
+                                / local_C**2
+                            )[jet]
+                            for degree in range(7)
+                        ]
+                    )
+                    targets1.append(
+                        (zero_center if support_index == 0 else inf_center)[jet]
+                    )
+            linear1 = matrix(field, rows1) if rows1 else matrix(field, 0, 7)
+            target1 = vector(field, targets1)
             for solution in affine_solutions(field, linear1, target1):
                 accounting["pole_one_X_numerators_scanned"] += 1
                 Xn = ring(list(solution))
@@ -283,7 +351,7 @@ def main():
                                 "C_coefficients_low_to_high": serialize(C),
                                 "X_numerator_coefficients_low_to_high": serialize(Xn),
                                 "Y_numerator_coefficients_low_to_high": serialize(Yn),
-                                "component_depths_at_I6_I11": depths,
+                                depth_key: depths,
                             }
                         )
 
@@ -305,7 +373,7 @@ def main():
                     accounting["pairs_meeting_singular_fibres"] += 1
                     continue
                 intersection = int(common.degree())
-                if intersection != 1:
+                if intersection != required_intersection:
                     accounting["pairs_with_wrong_smooth_intersection"] += 1
                     continue
                 pairs.append(
@@ -342,20 +410,30 @@ def main():
         )
     )
     payload = {
-        "schema": "elkies-k3.k3-6ce-a5-a10-mw2-marking-modp.v1",
+        "schema": arguments.schema,
         "status": status,
         "prime": prime,
         "quadratic_twist": int(twist),
         "quadratic_twist_square_class": "square" if twist.is_square() else "nonsquare",
         "source": {
-            "surface_id": "K3-6ce16abb9de3c7c5",
+            "surface_id": arguments.surface_id,
             "source_id": arguments.source_id,
             "source_gram_sha256": source["gram_sha256"],
             "root_type": source["root_type"],
             "mw_height_gram": source["mw_height_gram"],
             "minimum_basis_pole_profile": [0, 1],
-            "component_depths_at_I6_I11": depth_profiles,
-            "required_smooth_pair_intersection": 1,
+            depth_key: depth_profiles,
+            "required_smooth_pair_intersection": required_intersection,
+            **(
+                {}
+                if legacy_profile
+                else {
+                    "physical_basis_height_gram": [
+                        [str(value) for value in row] for row in basis_height.rows()
+                    ],
+                    "component_cross_correction": str(component_cross),
+                }
+            ),
         },
         "scope": {
             "fibre_census_exhaustive": not arguments.max_models and not arguments.skip_models,
@@ -364,7 +442,9 @@ def main():
             "all_monic_linear_pole_denominators_away_from_reducible_supports": True,
             "all_pole_one_degree_six_X_numerators": True,
             "all_polynomial_Y_square_roots": True,
-            "all_component_matched_pairs_tested_at_required_smooth_intersection": 1,
+            "all_component_matched_pairs_tested_at_required_smooth_intersection": (
+                required_intersection
+            ),
         }
         | (
             {"fibre_model_offset": arguments.skip_models}
@@ -388,13 +468,21 @@ def main():
             ),
             "not_proved": (
                 "A finite-field marked basis is not a characteristic-zero lift, rational "
-                "marking, primitive determinant-384 specialization, or neighbour route."
+                + (
+                    "marking, primitive determinant-384 specialization, or neighbour route."
+                    if legacy_profile
+                    else "marking, primitive characteristic-zero specialization, or neighbour route."
+                )
             ),
         },
         "reproduce": (
             "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python "
             "elkies-k3/scripts/scan_k3_6ce_a5_a10_mw2_marking_modp.sage"
             + (f" --fibres {relative(fibres_path)}" if fibres_path != DEFAULT_FIBRES.resolve() else "")
+            + (f" --sources {relative(sources_path)}" if sources_path != DEFAULT_SOURCES.resolve() else "")
+            + (f" --source-id {arguments.source_id}" if arguments.source_id != SOURCE_ID else "")
+            + (f" --surface-id {arguments.surface_id}" if arguments.surface_id != SURFACE_ID else "")
+            + (f" --schema {arguments.schema}" if arguments.schema != SCHEMA else "")
             + (f" --quadratic-twist {int(twist)}" if twist != 1 else "")
             + (f" --max-models {arguments.max_models}" if arguments.max_models else "")
             + (f" --skip-models {arguments.skip_models}" if arguments.skip_models else "")

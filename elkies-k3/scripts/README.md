@@ -1247,20 +1247,42 @@ The current proof boundary and replay commands are in
   MW2-to-MW15 source cut.  The 24 semistable `A10+A5` rows with two supports
   and basis poles `[0,1]` form one integral frame class and one marking profile:
   depths `(0,4)` and `(0,2)` at `I6,I11`, with required smooth intersection
-  one.  `probe_k3_6ce_a5_a10_fibre_ansatz_modp.sage` exhausts the normalized
-  two-support fibre chart, while
-  `scan_k3_6ce_a5_a10_mw2_marking_modp.sage` exhausts its pole-zero/pole-one
-  section marking over each selected finite field and twist.  The fibre scans
+  one.  `probe_k3_6ce_a5_a10_fibre_ansatz_modp.sage` now reads any two-A-
+  component rank-15 source orders from the selected lattice artifact and
+  exhausts its normalized two-support fibre chart, while
+  `scan_k3_6ce_a5_a10_mw2_marking_modp.sage` derives the local depths and
+  required intersection and exhausts its pole-zero/pole-one section marking
+  over each selected finite field and twist.  Their pinned defaults remain
+  byte-compatible with the determinant-384 calculation.  The fibre scans
   find 152 squarefree models over `GF(5)` and 1,032 over `GF(7)`, but all four
   square/nonsquare marking charts are empty at the full basis gate.  The
   nonsquare `GF(7)` chart has 84 and 228 individual generator sections and 72
   component-matched pairs, all with the wrong smooth intersection.
+- `classify_k3_6ce_a2_a5_a8_mw2_sources.sage` and
+  `scan_k3_6ce_a2_a5_a8_mw2_marking_modp.sage` test the next determinant-384
+  pole-`[0,1]` source class.  Its 17 rows give one frame class and two marking
+  profiles.  The nonsquare `GF(5)`/`GF(7)` charts carry both individual
+  generator types, but all 28/92 candidate pairs meet singular fibres; both
+  profiles are therefore empty in the displayed normalized charts.
 - `certify_k3_6ce_equation_first_candidate.py` aggregates that MW2-to-MW15
   discovery with its depth-eight same-NS corridor beam.  The beam reaches
   MW13 after five degree-two edges but not the exact `A2/MW15` target.  The
   certificate promotes determinant 384 only as the new lattice-source leader;
   rational marking, T-arithmetic curve identification, rootful-target
   multisections, and a complete corridor remain open.
+- `scan_k3_04b_a3_a4_a8_mw2_marking_modp.sage` now also accepts any
+  three-support semistable MW2 source with a pole-`[0,0]` physical basis,
+  including repeated A-component orders, and derives the required pair
+  intersection from the physical basis lattice.  Its determinant-500 default
+  artifact is unchanged.
+- `certify_k3_14ad_equation_first_candidate.py` aggregates the determinant-654
+  source-first test opposite an `A1/MW16` target.  The six-large-ambient cut
+  has 9 abstract MW1 and 411 MW2 rows, with 127 complete low-pole MW2 bases.
+  Exhaustive normalized marking scans reject five cheapest profiles: three
+  pole-`[0,0]` sources at primes 5 and 7 and two pole-`[0,1]` sources at prime
+  5.  The selected pole-zero source reaches MW14 but not the exact MW16 target
+  in the capped depth-eight degree-two beam.  These are scoped modular and
+  bounded-route negatives, not characteristic-zero or graph obstructions.
 - `build_rank7_rational_moduli_source_optimizer.py` maintains the evaluated
   source-first queue for the six catalogue surfaces having rational moduli and
   a rootless MW17 frame.  Determinant 500 is the active formally smooth MW1

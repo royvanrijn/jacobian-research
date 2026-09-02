@@ -1,0 +1,637 @@
+{
+  "case_count": 15,
+  "cases": [
+    {
+      "case_id": "control-r21-t3_8",
+      "certified_rank_lower_bound": 21,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-354803089674674467206754048738095",
+        "2558194545892203175112161719607326368645810580537"
+      ],
+      "held_out_exceptional_point_count": 4,
+      "nagao_record": null,
+      "parameter": "3/8",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/control-r21-t3_8.m",
+      "program_sha256": "87563423ea5ded0d93420fe142f9f7bf306875518a99fe06cdb9db5c2ca3e3bd",
+      "projective_parameter": [
+        3,
+        8
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/icarm_curve394_rank21_v1.json": "52baf1357f91e01f9fab1722bdcfb55c86bd8ef9051bd2318a186d6a007ff476",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+      },
+      "role": "held-out-positive-control"
+    },
+    {
+      "case_id": "control-r25",
+      "certified_rank_lower_bound": 25,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-1222583105876029916237789137035775062690200",
+        "523967447200209449943328506898413682821590945806099349816040000"
+      ],
+      "held_out_exceptional_point_count": 8,
+      "nagao_record": null,
+      "parameter": "-2/377",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/control-r25.m",
+      "program_sha256": "3c63d27a5655869e9b04eef13e2c9015fe2d1e39b84f1be9684d56319846d946",
+      "projective_parameter": [
+        -2,
+        377
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_high_rank_positive_controls_v2.json": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea",
+        "elliptic-curves/cas/elkies_rank25.py": "26d0ae962ceb0b3e0de1727e56c32d8289ccf12dbe0d6a57271365753d61a842"
+      },
+      "role": "held-out-positive-control"
+    },
+    {
+      "case_id": "control-r26",
+      "certified_rank_lower_bound": 26,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-271568164801421919805097494520335727505515190",
+        "1673523352045742769296938739782713519216640490554763586630258973092"
+      ],
+      "held_out_exceptional_point_count": 9,
+      "nagao_record": null,
+      "parameter": "-308/251",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/control-r26.m",
+      "program_sha256": "778a650a8728d52bd9031171c4a931bef7c78eb7805cf5efb0aa5a3d3834005f",
+      "projective_parameter": [
+        -308,
+        251
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_high_rank_positive_controls_v2.json": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea",
+        "elliptic-curves/cas/elkies_rank26.py": "0d2a443f43216226acefe7d2dde551600bd154674e4dd1aaab5fe873007e098d"
+      },
+      "role": "held-out-positive-control"
+    },
+    {
+      "case_id": "control-r27",
+      "certified_rank_lower_bound": 27,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-55671146865244401916117773020296610079754015500970",
+        "161981895322788558220906653027519611838007321625214218991719656790551905956"
+      ],
+      "held_out_exceptional_point_count": 10,
+      "nagao_record": null,
+      "parameter": "2456/135",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/control-r27.m",
+      "program_sha256": "cfc597dbe8f6a65d8a8c5ba5d43571d00b50dbee83483142dd1459beceba3950",
+      "projective_parameter": [
+        2456,
+        135
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_high_rank_positive_controls_v2.json": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea",
+        "elliptic-curves/cas/elkies_rank27.py": "f8a4bc96a74f3b3cf8aebae2126116ee3f6ae9b4da6ad2f4103dc8e7b06d0945"
+      },
+      "role": "held-out-positive-control"
+    },
+    {
+      "case_id": "control-r28",
+      "certified_rank_lower_bound": 28,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "-1",
+        "1",
+        "-20067762415575526585033208209338542750930230312178956502",
+        "34481611795030556467032985690390720374855944359319180361266008296291939448732243429"
+      ],
+      "held_out_exceptional_point_count": 11,
+      "nagao_record": null,
+      "parameter": "-9529/5471",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/control-r28.m",
+      "program_sha256": "6813a6a82348e0596991388cc70591ffeb159e7af6473be405dacee185f9cc8c",
+      "projective_parameter": [
+        -9529,
+        5471
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_high_rank_positive_controls_v2.json": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea",
+        "elliptic-curves/cas/elkies_rank28.py": "2165728c26b643fc65735825a09527b2b432639348131f2ea8a17e19ff569adb"
+      },
+      "role": "held-out-positive-control"
+    },
+    {
+      "case_id": "nagao-0001",
+      "certified_rank_lower_bound": null,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-56817303978369713008664886040113935940042099056130",
+        "231040727705098324026881325823871820150298800025455548455050641247908987076"
+      ],
+      "held_out_exceptional_point_count": 0,
+      "nagao_record": {
+        "bad_reduction_prime_count": 4,
+        "good_prime_count": 98,
+        "mean_block_signal": 2.745967960600366,
+        "parameter": "-5643/6760",
+        "projective_height": 6760,
+        "projective_pair": [
+          -5643,
+          6760
+        ],
+        "raw_block_score_units_1e12": [
+          14788021758717,
+          17323024587013,
+          16213177890493
+        ],
+        "standardized_block_signals": [
+          2.8541110250131974,
+          2.6832410935914783,
+          2.7005517631964238
+        ],
+        "worst_block_signal": 2.6832410935914783
+      },
+      "parameter": "-5643/6760",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0001.m",
+      "program_sha256": "2df960ef9b9984eb886ccea5105f789767331609cb08148029616cdcdb011610",
+      "projective_parameter": [
+        -5643,
+        6760
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_compact_t_nagao_positive_control_h10000_v1.json": "d5bde371b7aa4dab8edc42c33e671ee5947d125782020632944826106e84e558",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+      },
+      "role": "prospective-high-Nagao-candidate"
+    },
+    {
+      "case_id": "nagao-0002",
+      "certified_rank_lower_bound": null,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-2513669217542077753654984399117716826035495584292576087580",
+        "48405439058049535531757289745562917279836166791759546269831968193335435851226231600400"
+      ],
+      "held_out_exceptional_point_count": 0,
+      "nagao_record": {
+        "bad_reduction_prime_count": 5,
+        "good_prime_count": 97,
+        "mean_block_signal": 2.773033744874828,
+        "parameter": "1452/7817",
+        "projective_height": 7817,
+        "projective_pair": [
+          1452,
+          7817
+        ],
+        "raw_block_score_units_1e12": [
+          15507966665298,
+          16557280568517,
+          16528212179885
+        ],
+        "standardized_block_signals": [
+          2.668168814001203,
+          2.540894851267696,
+          3.1100375693555833
+        ],
+        "worst_block_signal": 2.540894851267696
+      },
+      "parameter": "1452/7817",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0002.m",
+      "program_sha256": "96c8f661f4710d5619f9e85b967078f5d09a21d1d5bce44fbded9a3185ecc8bf",
+      "projective_parameter": [
+        1452,
+        7817
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_compact_t_nagao_positive_control_h10000_v1.json": "d5bde371b7aa4dab8edc42c33e671ee5947d125782020632944826106e84e558",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+      },
+      "role": "prospective-high-Nagao-candidate"
+    },
+    {
+      "case_id": "nagao-0003",
+      "certified_rank_lower_bound": null,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "-1",
+        "1",
+        "-222753457948896747054014375770001677889938244569584109757",
+        "1272708338296449420316164729362374809909641642151733952302705326989097858098153262981"
+      ],
+      "held_out_exceptional_point_count": 0,
+      "nagao_record": {
+        "bad_reduction_prime_count": 4,
+        "good_prime_count": 98,
+        "mean_block_signal": 2.5618624570268276,
+        "parameter": "4298/8873",
+        "projective_height": 8873,
+        "projective_pair": [
+          4298,
+          8873
+        ],
+        "raw_block_score_units_1e12": [
+          14624568798641,
+          17092621814018,
+          16130384543207
+        ],
+        "standardized_block_signals": [
+          2.615555544038457,
+          2.6002254641574702,
+          2.4698063628845555
+        ],
+        "worst_block_signal": 2.4698063628845555
+      },
+      "parameter": "4298/8873",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0003.m",
+      "program_sha256": "4a5e64e079624dd11ce09d8dcb85fd020274124f0577bcf5103303b201a04329",
+      "projective_parameter": [
+        4298,
+        8873
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_compact_t_nagao_positive_control_h10000_v1.json": "d5bde371b7aa4dab8edc42c33e671ee5947d125782020632944826106e84e558",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+      },
+      "role": "prospective-high-Nagao-candidate"
+    },
+    {
+      "case_id": "nagao-0004",
+      "certified_rank_lower_bound": null,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-53412003381826731580573740679549004683406551213121575",
+        "4672605484017956497942976943399630863282748541897701935747554215045578992566857"
+      ],
+      "held_out_exceptional_point_count": 0,
+      "nagao_record": {
+        "bad_reduction_prime_count": 1,
+        "good_prime_count": 101,
+        "mean_block_signal": 2.6718931664376435,
+        "parameter": "-7634/2859",
+        "projective_height": 7634,
+        "projective_pair": [
+          -7634,
+          2859
+        ],
+        "raw_block_score_units_1e12": [
+          16232122597853,
+          17527193933704,
+          17027551837102
+        ],
+        "standardized_block_signals": [
+          2.465467632482799,
+          2.706132027679331,
+          2.844079839150801
+        ],
+        "worst_block_signal": 2.465467632482799
+      },
+      "parameter": "-7634/2859",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0004.m",
+      "program_sha256": "184a7e8f959fc98207ffcdfad280d0940a4a08eba937acc0c0c81e652cac5085",
+      "projective_parameter": [
+        -7634,
+        2859
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_compact_t_nagao_positive_control_h10000_v1.json": "d5bde371b7aa4dab8edc42c33e671ee5947d125782020632944826106e84e558",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+      },
+      "role": "prospective-high-Nagao-candidate"
+    },
+    {
+      "case_id": "nagao-0005",
+      "certified_rank_lower_bound": null,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-99865872651436914494752246696167241955687971739625903660",
+        "388362925348163866935574791183207781841548994008045836747526392821513340980940035472"
+      ],
+      "held_out_exceptional_point_count": 0,
+      "nagao_record": {
+        "bad_reduction_prime_count": 3,
+        "good_prime_count": 99,
+        "mean_block_signal": 2.5435771996733525,
+        "parameter": "-841/8544",
+        "projective_height": 8544,
+        "projective_pair": [
+          -841,
+          8544
+        ],
+        "raw_block_score_units_1e12": [
+          15856609022756,
+          17136238451503,
+          15872326336206
+        ],
+        "standardized_block_signals": [
+          2.737103498893712,
+          2.4572632373200713,
+          2.4363648628062733
+        ],
+        "worst_block_signal": 2.4363648628062733
+      },
+      "parameter": "-841/8544",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0005.m",
+      "program_sha256": "50f3d2668864aa3595969fc8df4f078795b3e635a43e97b361aff67874df7d03",
+      "projective_parameter": [
+        -841,
+        8544
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_compact_t_nagao_positive_control_h10000_v1.json": "d5bde371b7aa4dab8edc42c33e671ee5947d125782020632944826106e84e558",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+      },
+      "role": "prospective-high-Nagao-candidate"
+    },
+    {
+      "case_id": "nagao-0006",
+      "certified_rank_lower_bound": null,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "1",
+        "-42508312255385059519188695300130116017516279028183",
+        "106800398826678186823570950432999916004475754306994641757349877308510852062"
+      ],
+      "held_out_exceptional_point_count": 0,
+      "nagao_record": {
+        "bad_reduction_prime_count": 2,
+        "good_prime_count": 100,
+        "mean_block_signal": 2.546946475197053,
+        "parameter": "461/4420",
+        "projective_height": 4420,
+        "projective_pair": [
+          461,
+          4420
+        ],
+        "raw_block_score_units_1e12": [
+          16918575670688,
+          16355071640103,
+          16549184144805
+        ],
+        "standardized_block_signals": [
+          2.4740111865681955,
+          2.7799063459462983,
+          2.386921893076664
+        ],
+        "worst_block_signal": 2.386921893076664
+      },
+      "parameter": "461/4420",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0006.m",
+      "program_sha256": "f4469807663ee6e87525ffcfbb6bfe95db866aca18e0f479d18980c7b9ec17c5",
+      "projective_parameter": [
+        461,
+        4420
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_compact_t_nagao_positive_control_h10000_v1.json": "d5bde371b7aa4dab8edc42c33e671ee5947d125782020632944826106e84e558",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+      },
+      "role": "prospective-high-Nagao-candidate"
+    },
+    {
+      "case_id": "nagao-0007",
+      "certified_rank_lower_bound": null,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-4436806170163714170950638352071384595869154261472388500",
+        "3588884555480025852703497566777389976466154830856300082289992612349001352492250000"
+      ],
+      "held_out_exceptional_point_count": 0,
+      "nagao_record": {
+        "bad_reduction_prime_count": 2,
+        "good_prime_count": 100,
+        "mean_block_signal": 2.5845003185712634,
+        "parameter": "6695/1353",
+        "projective_height": 6695,
+        "projective_pair": [
+          6695,
+          1353
+        ],
+        "raw_block_score_units_1e12": [
+          16446604552839,
+          16395895496800,
+          17257571687156
+        ],
+        "standardized_block_signals": [
+          2.382469217396449,
+          2.6178777132575455,
+          2.7531540250597955
+        ],
+        "worst_block_signal": 2.382469217396449
+      },
+      "parameter": "6695/1353",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0007.m",
+      "program_sha256": "a2d6ae243b7dee83667fdbd2057f3ad17ee77d028f728eca3faf725d927a7783",
+      "projective_parameter": [
+        6695,
+        1353
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_compact_t_nagao_positive_control_h10000_v1.json": "d5bde371b7aa4dab8edc42c33e671ee5947d125782020632944826106e84e558",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+      },
+      "role": "prospective-high-Nagao-candidate"
+    },
+    {
+      "case_id": "nagao-0008",
+      "certified_rank_lower_bound": null,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-1192909905979867360432818410499002415725187188240",
+        "501677170739570342557670664881781710173615167566685170155011992946753792"
+      ],
+      "held_out_exceptional_point_count": 0,
+      "nagao_record": {
+        "bad_reduction_prime_count": 1,
+        "good_prime_count": 101,
+        "mean_block_signal": 2.404152574144875,
+        "parameter": "1217/151",
+        "projective_height": 1217,
+        "projective_pair": [
+          1217,
+          151
+        ],
+        "raw_block_score_units_1e12": [
+          16656961555270,
+          16931436348732,
+          16784362436264
+        ],
+        "standardized_block_signals": [
+          2.388778024633932,
+          2.382366935741294,
+          2.4413127620593986
+        ],
+        "worst_block_signal": 2.382366935741294
+      },
+      "parameter": "1217/151",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0008.m",
+      "program_sha256": "bc264c5a894805a2d4db2261422949f5d3fe281053076edeeda25cc82df94655",
+      "projective_parameter": [
+        1217,
+        151
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_compact_t_nagao_positive_control_h10000_v1.json": "d5bde371b7aa4dab8edc42c33e671ee5947d125782020632944826106e84e558",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+      },
+      "role": "prospective-high-Nagao-candidate"
+    },
+    {
+      "case_id": "nagao-0009",
+      "certified_rank_lower_bound": null,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "0",
+        "0",
+        "-34387426673588492970998281341329871542625429680316842755035",
+        "2468681576675607526923205946787262322739905749487893700177378683714513469400895678454097"
+      ],
+      "held_out_exceptional_point_count": 0,
+      "nagao_record": {
+        "bad_reduction_prime_count": 1,
+        "good_prime_count": 101,
+        "mean_block_signal": 2.513407698887112,
+        "parameter": "9783/7559",
+        "projective_height": 9783,
+        "projective_pair": [
+          9783,
+          7559
+        ],
+        "raw_block_score_units_1e12": [
+          16338903076486,
+          16817745340696,
+          16977081637165
+        ],
+        "standardized_block_signals": [
+          2.6126235795803745,
+          2.3466505594967466,
+          2.5809489575842157
+        ],
+        "worst_block_signal": 2.3466505594967466
+      },
+      "parameter": "9783/7559",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0009.m",
+      "program_sha256": "b907719af71d16a3281320f6867cd2702e7ac3cb6590471fc7e1b320e4c869dd",
+      "projective_parameter": [
+        9783,
+        7559
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_compact_t_nagao_positive_control_h10000_v1.json": "d5bde371b7aa4dab8edc42c33e671ee5947d125782020632944826106e84e558",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+      },
+      "role": "prospective-high-Nagao-candidate"
+    },
+    {
+      "case_id": "nagao-0010",
+      "certified_rank_lower_bound": null,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "-1",
+        "1",
+        "-821439223767289125246739188939005804530663225143461212292",
+        "9128793239183236873543854931608566007309801327130229387837981114750852660508827009575"
+      ],
+      "held_out_exceptional_point_count": 0,
+      "nagao_record": {
+        "bad_reduction_prime_count": 2,
+        "good_prime_count": 100,
+        "mean_block_signal": 2.4175952013312254,
+        "parameter": "9446/3605",
+        "projective_height": 9446,
+        "projective_pair": [
+          9446,
+          3605
+        ],
+        "raw_block_score_units_1e12": [
+          16144966938633,
+          16196930101931,
+          16381770786196
+        ],
+        "standardized_block_signals": [
+          2.3436942194214296,
+          2.45672696124462,
+          2.452364423327626
+        ],
+        "worst_block_signal": 2.3436942194214296
+      },
+      "parameter": "9446/3605",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0010.m",
+      "program_sha256": "ccd6afa5d612de109a87195322050ec29b65d65ec24a43f84514ca71b6c28ddb",
+      "projective_parameter": [
+        9446,
+        3605
+      ],
+      "provenance": {
+        "artifacts/generated-results/elliptic-curves/elkies_2026_compact_t_nagao_positive_control_h10000_v1.json": "d5bde371b7aa4dab8edc42c33e671ee5947d125782020632944826106e84e558",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+      },
+      "role": "prospective-high-Nagao-candidate"
+    }
+  ],
+  "claim_boundary": "This manifest certifies exact generated inputs only. It contains no completed 2-Selmer group, rank upper bound, or successful cover-search claim.",
+  "method": {
+    "backend": "Magma SelmerGroup([2])/DescentMaps/TwoCover",
+    "blind_phase_uses_public_exceptional_points": false,
+    "cover_search_bound": 1000,
+    "enumerate_nonzero_quotient_class_limit": 255,
+    "generic_embedding": "AtoS(mu(P)) for each specialized generic section",
+    "large_quotient_policy": "construct and search a canonical quotient basis only",
+    "selmer_raw_basis": true,
+    "unconditional_class_group_request": "Bound=-1"
+  },
+  "schema": "elliptic-curves.elkies-2026-relative-2selmer-suite-input.v1",
+  "status": "EXACT_INPUTS_MAGMA_COMPLETION_REQUIRED"
+}

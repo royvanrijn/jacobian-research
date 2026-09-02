@@ -584,11 +584,84 @@ The T-arithmetic curve is still unidentified because the even-Clifford order
 is non-Eichler at a ramified prime; the lattice-only adapter explicitly keeps
 equation authorization false.  The aggregate candidate certificate has
 SHA-256
-`b83dc19fb8ffd717b8a0f29d9a581f07d2e096d8b75c6355948568a415e5ebcb`.
+`266e9e9e94714f224e3559babb696011dfb78c1c3e64efd5c86067a978231d39`.
 Accordingly determinant 384 is the new lattice-source leader but remains
 behind the formally smooth determinant-500 MW1 branch at the rational-marking
-gate.  The next test is its `A2+A5+A8` pole-`[0,1]` source class; its first
-`GF(5)` fibre census already contains 82 squarefree models.
+gate.
+
+The next `A2+A5+A8` pole-`[0,1]` class has also been closed at this gate.  Its
+17 rows form one integral frame class and two marking profiles with identical
+depths `(0,2,1)` and `(1,2,4)`, requiring smooth intersection one or two.
+The fibre scans find 82 squarefree models over `GF(5)` and 306 over `GF(7)`.
+Both square twists have no pole-one generator.  The nonsquare charts contain
+14/10 and 50/42 individual generators at primes 5 and 7, but all 28 and 92
+component-matched pairs meet a singular fibre.  Hence neither intersection
+profile survives.  The classifier, two fibre scans, and four marking scans
+have SHA-256
+`8a4c3ab0d035eaf0f5c7aaca38a4372879ecd6781491103eb810dd84d5f00d1a`,
+`575345033900da7581d62b8ff2d5b9c40673e74739587883a127b0ace5b73795`,
+`87e32f33d10d434e84a8dc2835267451364e2287681eec054bed2885f211b459`,
+`ea9b282db0eb75553abff424e65f817133c5f87d3a99ef1228355b3196bdaceb`,
+`fcc27b3b5b723247f50368c52e6d426d8fda974b4b4570c6703a3bf54f2a730a`,
+`4750975b23a0b0bb1792231803d8fc18afbfd88d1d0fd4c4d64a221c5100746c`,
+and
+`31419c18c0dc863198fe66fb015f349f5a2901974afd659d0a61c2c82769b184`.
+
+## Determinant 654: abundant MW2 sources, but the cheap markings fail
+
+The next MW-rank tradeoff screen is `K3-14ad03cd7c1848b2`.  Its selected
+target `F001` has root type `A1`, hence MW rank 16.  The same complete
+six-large-ambient semistable MW0--2 cut returns **420** source Grams: 9
+abstract MW1 rows and 411 MW2 rows.  The MW1 count is not yet an equation
+advantage: six rows still require glue analysis and the other three have no
+physical basis through pole two.  In contrast, 127 MW2 rows have a complete
+basis through pole two.
+
+The first marking audit exhausts the five cheapest distinct profiles:
+
+| representative | fibres | basis poles | required smooth `P.Q` |
+|---|---|---:|---:|
+| `S0050` | `I3+I6+I9` | `[0,0]` | 1 |
+| `S0093` | `I3+I6+I9` | `[0,0]` | 1 |
+| `S0360` | `3I6` | `[0,0]` | 1 |
+| `S0071` | `I6+I11` | `[0,1]` | 4 |
+| `S0197` | `I8+I9` | `[0,1]` | 2 |
+
+All five are empty at the full marked-basis gate in the displayed exhaustive
+normalized charts.  The three pole-`[0,0]` profiles were tested in both twist
+classes at 5 and 7.  `S0050` comes closest: its nonsquare charts have four
+component-matched pairs at 5 and eight at 7, but two of the latter meet a
+singular fibre and every remaining pair has the wrong smooth intersection.
+`S0093` and `S0360` never put both generator classes on one model.  At prime
+5, `S0071` has 40/16 individual sections and 32 pairs in the nonsquare chart,
+but every pair misses the lattice-required intersection four.  The new
+`I8+I9` census has 168 squarefree models; `S0197` has 8/0 sections in the
+square twist and 0/8 in the nonsquare twist, so the two classes never coexist.
+
+The lattice-only adapter, full source census, `I8+I9` fibre census, its two
+marking scans, and the compact aggregate certificate have SHA-256
+`7ddd99f37ab31c07ba4f60b8298382ad63c05939d4b31f2d77d9a691ebb9f68a`,
+`c3010b3256f0d291dcb1a5dbd285e8489eb6ab3600e71a18d9bc7158e40e4d33`,
+`b32a4adbd94ceaac47f1bfba582d7521b0d89c03b8546c41101bce0f410a3721`,
+`7adb8496a70f9d4109418cabb66c6c063c0447f8baeda22cdecb4af2eacd12fb`,
+`6fdb0a308c01328e67e92871acaa5adc99f851ee08749bdbc788c50435d86306`,
+and
+`c7d76508a27805f4075dc742855b07d86d81f95b0b4dc722ca9cbf58ce9aca99`.
+
+The rank-first same-NS beam from pole-zero source `S0050` reaches root ranks
+13, 9, 4, and 3 in its first four degree-two edges, then stalls at root rank
+3 through depth eight.  It does not hit the exact `A1/MW16` target.  The
+artifact has SHA-256
+`36e29920315709081852f0bc49652025065810d5590877c5be27c8964d977cb7`.
+This is a capped, beam-pruned miss, not a graph obstruction.
+
+Determinant 654 is therefore a strong demonstration that abstract low-MW
+source abundance is not enough: the rational-marking gate must be scored
+before corridor cost.  It is demoted behind the formally smooth determinant-
+500 MW1 branch.  Higher-pole profiles, other normalizations, the unresolved
+T-arithmetic curve, wider or mixed-degree corridors, and the rootful target's
+`D.F=2,3,4` spectrum remain open.  The existing rootless translation-coset
+formula is not applied to this `A1` target.
 
 ## Determinant 750: rational moduli, but no ideal source in the large-ambient cut
 
@@ -908,6 +981,31 @@ python3 elkies-k3/scripts/extract_rank7_catalogue_source_search_target.py \
   --check
 
 python3 elkies-k3/scripts/certify_k3_6ce_equation_first_candidate.py --check
+
+python3 elkies-k3/scripts/extract_rank7_catalogue_source_search_target.py \
+  --surface-id K3-14ad03cd7c1848b2 --partner-index 1 \
+  --frame-id K3-14ad03cd7c1848b2-F001 --lattice-only \
+  --output artifacts/generated-results/elkies-k3-k3-14ad03cd7c1848b2-source-search-target-partner1-lattice-only-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_k3_6ce_a5_a10_fibre_ansatz_modp.sage \
+  --source artifacts/generated-results/elkies-k3-k3-14ad03cd7c1848b2-semistable-mw0-2-sources-large-a-partner1-v1.json \
+  --source-id K3-14ad03cd7c1848b2-S0197 \
+  --surface-id K3-14ad03cd7c1848b2 --determinant 654 \
+  --schema elkies-k3.k3-14ad-a7-a8-mw2-fibre-ansatz-modp.v1 \
+  --prime 5 \
+  --output artifacts/generated-results/elkies-k3-k3-14ad03cd7c1848b2-a7-a8-mw2-fibre-ansatz-mod5-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_lattice_foundry_same_ns_compiler_routes.sage \
+  --case k314ad --q 4 --degree 2 --max-pole 1 --beam-width 8 \
+  --max-depth 8 --mw-vector-cap 2000 --cap-from-mw-rank 4 --rank-first \
+  --output artifacts/generated-results/elkies-k3-k3-14ad03cd7c1848b2-same-ns-compiler-routes-rankfirst-cap2000-v1.json \
+  --check
+
+python3 elkies-k3/scripts/certify_k3_14ad_equation_first_candidate.py --check
 
 python3 elkies-k3/scripts/build_rank7_rational_moduli_source_optimizer.py --check
 ```

@@ -1,5 +1,10 @@
 #!/usr/bin/env sage-python
-"""Exhaust the normalized I6+I11 determinant-384 source chart modulo p."""
+"""Exhaust a normalized two-support rank-15 semistable source chart modulo p.
+
+The determinant-384 I6+I11 source remains the default.  Other primitive
+two-A-component MW2 sources may reuse the same Hermite construction; the two
+multiplicative orders are read from the source root type.
+"""
 
 from __future__ import annotations
 
@@ -7,6 +12,7 @@ import argparse
 import hashlib
 import itertools
 import json
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -17,6 +23,9 @@ ROOT = Path(__file__).resolve().parents[2]
 SOURCES = ROOT / "artifacts/generated-results/elkies-k3-k3-6ce16abb9de3c7c5-semistable-mw0-2-sources-large-a-partner1-v1.json"
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-k3-6ce16abb9de3c7c5-a5-a10-mw2-fibre-ansatz-mod5-v1.json"
 SOURCE_ID = "K3-6ce16abb9de3c7c5-S0008"
+SURFACE_ID = "K3-6ce16abb9de3c7c5"
+DETERMINANT = 384
+SCHEMA = "elkies-k3.k3-6ce-a5-a10-mw2-fibre-ansatz-modp.v1"
 
 
 def display_path(path):
@@ -68,10 +77,25 @@ def order_at(poly, point):
     return min(index for index, value in enumerate(shifted.list()) if value)
 
 
+def two_support_orders(root_type):
+    ranks = []
+    for term in root_type.split("+"):
+        match = re.fullmatch(r"A(\d+)", term)
+        if match is None:
+            raise ValueError("source is not a two-A-component semistable frame")
+        ranks.append(int(match.group(1)))
+    if len(ranks) != 2 or sum(ranks) != 15:
+        raise ValueError("source does not have two A components of total rank 15")
+    return [rank + 1 for rank in sorted(ranks)]
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=SOURCES)
     parser.add_argument("--source-id", default=SOURCE_ID)
+    parser.add_argument("--surface-id", default=SURFACE_ID)
+    parser.add_argument("--determinant", type=int, default=DETERMINANT)
+    parser.add_argument("--schema", default=SCHEMA)
     parser.add_argument("--prime", type=int, default=5)
     parser.add_argument("--examples", type=int, default=0)
     parser.add_argument("--max-samples", type=int, default=0)
@@ -82,23 +106,30 @@ def main():
         parser.error("examples and max-samples must be nonnegative")
 
     source_path = arguments.source.resolve()
+    output_path = arguments.output.resolve()
+    legacy_profile = (
+        source_path == SOURCES.resolve()
+        and arguments.source_id == SOURCE_ID
+        and arguments.surface_id == SURFACE_ID
+        and arguments.determinant == DETERMINANT
+        and arguments.schema == SCHEMA
+    )
     source_payload = json.loads(source_path.read_text())
     matches = [
         row for row in source_payload["sources"] if row["source_id"] == arguments.source_id
     ]
     if len(matches) != 1:
-        raise ValueError("expected one selected determinant-384 source")
+        raise ValueError("expected one selected source")
     source = matches[0]["source"]
     if not (
-        source["root_type"] == "A10+A5"
-        and source["root_rank"] == 15
+        source["root_rank"] == 15
         and source["mw_rank_for_rho_19"] == 2
         and source["root_lattice_primitive"]
         and source["torsion"] == 1
     ):
         raise ArithmeticError("selected source invariants changed")
 
-    order_zero, order_infinity = 6, 11
+    order_zero, order_infinity = two_support_orders(source["root_type"])
     field = GF(arguments.prime)
     if field.characteristic() in (2, 3):
         raise ValueError("prime must differ from 2 and 3")
@@ -186,13 +217,15 @@ def main():
                             {"degree": int(factor.degree()), "multiplicity": int(power)}
                             for factor, power in residual.factor()
                         ],
-                        "geometric_fibre_profile": "I6+I11+7I1",
+                        "geometric_fibre_profile": (
+                            f"I{order_zero}+I{order_infinity}+{residual_i1_count}I1"
+                        ),
                     }
                 )
 
     exhausted = sample == exhaustive_total and not arguments.max_samples
     payload = {
-        "schema": "elkies-k3.k3-6ce-a5-a10-mw2-fibre-ansatz-modp.v1",
+        "schema": arguments.schema,
         "status": (
             "PASS_EXACT_EXHAUSTIVE_MODULAR_SOURCE_FIBRE_ANSATZ"
             if exhausted and squarefree
@@ -228,12 +261,18 @@ def main():
             "short_weierstrass": "y^2=x^3+A(t)x+B(t)",
             "degree_bounds": {"A": 8, "B": 12},
             "normalization": "A(0)=-3; reducible supports at 0 and infinity",
-            "normalized_reducible_supports": ["0:I6", "infinity:I11"],
+            "normalized_reducible_supports": [
+                f"0:I{order_zero}", f"infinity:I{order_infinity}"
+            ],
             "hermite_conditions": 17,
             "B_coefficient_rank": 13,
             "compatibility_equations_on_A": compatibility_equations,
             "expected_fibre_stratum_dimension": 8 - compatibility_equations,
-            "expected_K3_6ce_MW2_locus_dimension": 1,
+            **(
+                {"expected_K3_6ce_MW2_locus_dimension": 1}
+                if legacy_profile
+                else {"expected_selected_MW2_locus_dimension": 1}
+            ),
             "expected_MW_conditions_still_missing": 2,
             "section_marking": {
                 "status": "NOT_IMPOSED_AT_FIBRE_GATE",
@@ -247,15 +286,16 @@ def main():
             "artifact_sha256": hashlib.sha256(source_path.read_bytes()).hexdigest(),
             "source_id": arguments.source_id,
             "source_gram_sha256": source["gram_sha256"],
-            "surface_id": "K3-6ce16abb9de3c7c5",
-            "determinant": 384,
+            "surface_id": arguments.surface_id,
+            "determinant": arguments.determinant,
             "root_type": source["root_type"],
             "mw_height_gram": source["mw_height_gram"],
         },
         "proof_boundary": {
             "proved": (
                 "Every stored example is an exact short-Weierstrass K3 model over "
-                "the displayed finite field with fibre profile I6+I11+7I1."
+                f"the displayed finite field with fibre profile I{order_zero}+"
+                f"I{order_infinity}+{24-order_zero-order_infinity}I1."
             ),
             "not_proved": (
                 "The two MW sections, full lattice marking, rational parameterization, "
@@ -268,10 +308,13 @@ def main():
             "elkies-k3/scripts/probe_k3_6ce_a5_a10_fibre_ansatz_modp.sage "
             f"--source-id {arguments.source_id} --prime {arguments.prime} "
             f"--examples {arguments.examples} --output {display_path(arguments.output)}"
+            + (f" --source {display_path(source_path)}" if source_path != SOURCES.resolve() else "")
+            + (f" --surface-id {arguments.surface_id}" if arguments.surface_id != SURFACE_ID else "")
+            + (f" --determinant {arguments.determinant}" if arguments.determinant != DETERMINANT else "")
+            + (f" --schema {arguments.schema}" if arguments.schema != SCHEMA else "")
         ),
     }
     serialized = json.dumps(payload, indent=2, sort_keys=True) + "\n"
-    output_path = arguments.output.resolve()
     if arguments.check:
         if not output_path.exists() or output_path.read_text() != serialized:
             raise SystemExit(f"stale artifact: {output_path}")

@@ -100,6 +100,32 @@ Important distinctions made explicit by the catalogue:
   and the complete height-10000 three-block calibration. The PARI and eclib
   rank-28 residual-descent artifacts are strict timeouts with no Selmer bound;
   both explicitly forbid point search.
+- `r17_frozen_nagao_shell_h10001_30000_v1.json` exhaustively scores all
+  972,697,152 primitive parameters in the disjoint `10000 < H <= 30000` shell
+  with that unchanged three-block rule and pins pooled-Nagao and deterministic
+  random controls. It is a complete heuristic ranking, not rank evidence.
+- `r17_frozen_nagao_shell_search_v1.json` records the exact preexisting-
+  bisection-atlas outcomes on the three matched 128-row lanes. Seven distinct
+  fibres have one certified quotient direction beyond the generic 17; one
+  split row is censored. No unrestricted point search or Selmer result is
+  claimed.
+- `elkies_2026_relative_2selmer_suite_inputs_v1.json` pins raw-basis
+  unconditional Magma jobs for the rank-21 and rank-25--28 controls and the
+  first ten frozen high-Nagao candidates. The paired
+  `elkies_2026_relative_2selmer_suite_run_v1.json` records that Magma is not
+  available on this host. These are exact inputs and a backend audit, not a
+  completed Selmer computation.
+- `elkies_2026_relative_2selmer_open_rank21_300s_v1.json` is the first run of
+  the open-source Sage/PARI `ell2cover` replacement on the rank-21 control.
+  With twelve proved factor hints, a 2 GB PARI stack, and a 4 GB RSS envelope,
+  it reaches the strict 300-second limit inside `ellrankinit` at 440,283,136
+  bytes peak observed RSS. It returns no BNF certificate, cover basis, or
+  Selmer dimension and is explicitly incomplete.
+- `elkies_2026_relative_2selmer_open_nagao0001_120s_v1.json` applies the same
+  frozen open method to the top high-Nagao candidate `t=-5643/6760`. It reaches
+  the strict 120-second limit inside `ellrankinit` at 230,608,896 bytes peak
+  observed RSS, so it contains no Selmer dimension or candidate-promotion
+  evidence.
 - `elkies_2026_bisection_specialization_controls_v1.json` is the complete
   195,600-test evaluation of the 39,120 equation-level bisections at the four
   rank-25--28 controls and ICARM curve 394. It finds split counts
@@ -116,6 +142,13 @@ Important distinctions made explicit by the catalogue:
   published `R17` fibration, including after quadratic twisting.  The rank-28
   control recovers `5471*t+9529`; other fibrations, families, and isogeny
   constructions remain open.
+- `elkies_2026_deep_cover_exceptional_quotients_v1.json` gives exact integral
+  `L_t/M_t` coordinates for every split degree-two point at the rank-25--28
+  controls and combines them with 69 sampled norm-20 trisections, all 160
+  norm-26 deep trisections, and 53 sampled norm-34 quadrisections.  None of
+  the 282 new covers has a rational component at a control, so the captured
+  ranks remain `5,3,2,1` through degree four.  The norm-20 and degree-four
+  layers are deterministic samples, not complete non-splitting theorems.
 - `elkies_2026_rank28_bad_place_kummer_ledger_v1.json` proves the complete
   factorization of the rank-28 2-division cubic discriminant and contains all
   thirteen finite/2-adic/real local blocks for the generic seventeen points.

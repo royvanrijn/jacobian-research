@@ -1,0 +1,61 @@
+{
+  "backend": {
+    "bnf_certification_required": true,
+    "full_selmer_basis_interface": "PARI ell2cover binary quartics",
+    "license": "open_source",
+    "name": "SageMath/PARI ellrankinit+bnfcertify+ell2cover",
+    "pari_version": "(2, 17, 3)",
+    "sage_python": "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python",
+    "sage_version": "10.9"
+  },
+  "claim_boundary": [
+    "Only a completed worker with successful bnfcertify and ell2cover is recorded as a full 2-Selmer basis.",
+    "The blind worker receives neither generic nor public exceptional points.",
+    "Finite-reduction labels are exact for the displayed point images but do not turn a bounded quartic search miss into non-solubility.",
+    "PARI exposes basis quartics, not an addition operation on arbitrary cover classes; only returned basis classes have explicit quartics here."
+  ],
+  "completed_case_count": 0,
+  "metadata_note": "Software versions and explicit command parameters were appended from the same host after the supervised timeout; the measured run and log fields are unchanged.",
+  "input_manifest": {
+    "path": "artifacts/generated-results/elliptic-curves/elkies_2026_relative_2selmer_suite_inputs_v1.json",
+    "sha256": "9d9713d69b59764c3fabcc726296f1ec6c6b44c0be9ceabc0c00652472ce1867"
+  },
+  "runs": [
+    {
+      "blind_recovery": null,
+      "case_id": "nagao-0001",
+      "classification": null,
+      "factor_hint_prime_count": 0,
+      "parameter": "-5643/6760",
+      "role": "prospective-high-Nagao-candidate",
+      "status": "INCOMPLETE_OPEN_SOURCE_DESCENT",
+      "supervisor": {
+        "log": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-open-v1/logs/nagao-0001.log",
+        "log_sha256": "90826037729286585117af942525e84b556ad103da2565b4ddc25aa6661c0d1b",
+        "outcome": "strict_wall_timeout",
+        "peak_observed_rss_bytes": 230608896,
+        "returncode": -15,
+        "rss_limit_bytes": 4000000000,
+        "timeout_seconds": 120.0,
+        "wall_seconds": 120.23463263400481,
+        "worker_result": null,
+        "worker_result_sha256": null
+      },
+      "worker": null
+    }
+  ],
+  "run_parameters": {
+    "blind_search_bound": 1000,
+    "controls_only": false,
+    "finite_reduction_certificate_prime_bound": 1000,
+    "pari_stack_bytes": 2000000000,
+    "rss_limit_bytes": 4000000000,
+    "selected_case_ids": [
+      "nagao-0001"
+    ],
+    "timeout_per_case_seconds": 120.0
+  },
+  "schema": "elliptic-curves.elkies-2026-relative-2selmer-open-run.v1",
+  "selected_case_count": 1,
+  "status": "INCOMPLETE_ONE_OR_MORE_OPEN_SOURCE_DESCENTS"
+}

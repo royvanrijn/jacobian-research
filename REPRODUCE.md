@@ -17762,6 +17762,22 @@ The Nagao replay likewise assigns no negative labels; its quotient and exact
 18,244,819-row ranks are documented in
 [`elliptic-curves/notes/NAGAO_SECTION7_RANK_JUMP_REPLAY.md`](elliptic-curves/notes/NAGAO_SECTION7_RANK_JUMP_REPLAY.md).
 
+Run the prospective compact-R17 shell experiment, using the unchanged
+weakest-block rule on every primitive parameter with `10000 < H <= 30000`,
+with
+
+```bash
+.venv/bin/python elliptic-curves/scripts/run_r17_frozen_nagao_shell.py
+```
+
+The complete population has `972697152` rows. Exact evaluation of the
+preexisting 39,120-bisection atlas on the frozen, ordinary-Nagao, and random
+128-row lanes, followed by frozen-rank depth replay and compact summarization,
+is documented in
+[`elliptic-curves/notes/R17_FROZEN_NAGAO_SHELL_2026-09-02.md`](elliptic-curves/notes/R17_FROZEN_NAGAO_SHELL_2026-09-02.md).
+It certifies seven separate quotient-rank-one gains beyond the generic 17 and
+runs no unrestricted point search without the mandatory residual-Selmer gate.
+
 ## First-seventeen subgroup audit for record curves 273 and 302
 
 Replay the exact coordinate, finite-Kummer, and bad-component codes together
@@ -17842,3 +17858,25 @@ MESTRE_SPECIALIZE_AB=3,6 \
 MESTRE_TEST_RELATION_DETERMINANT=1 \
   sage elliptic-curves/cas/verify_mestre_two_section_component_relation.sage
 ```
+
+## Rational-surface quadratic rank search
+
+<!-- status-consumer: EC-K3-RES-QBC-E6A1-RHO19 933ad73d68dd2a8e -->
+
+Generate and byte-check the low-complexity rational-surface catalogue, the
+Golay/NS0031 control import, the complete polynomial degree-`(2,2)` twist
+section elimination, and the new one-modulus `E6+A1` Picard-19 family with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_rational_surface_quadratic_rank_search.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_rational_surface_quadratic_rank_search.sage --check
+```
+
+The replay proves the displayed generic rank decomposition `1+1`, K3 height
+matrix `diag(1/3,3)`, and generic Picard rank 19.  Its ansatz completeness is
+limited to nondegenerate polynomial twist sections with both `x` and `y` of
+degree at most two.  See
+[`elkies-k3/RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md`](elkies-k3/RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md).

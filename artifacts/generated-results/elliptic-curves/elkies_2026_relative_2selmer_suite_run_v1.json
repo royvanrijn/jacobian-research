@@ -1,0 +1,103 @@
+{
+  "claim_boundary": "Only parsed complete protocol transcripts can establish a Selmer result. Backend absence, timeout, memory stop, or process failure is missing evidence.",
+  "input_manifest": {
+    "path": "artifacts/generated-results/elliptic-curves/elkies_2026_relative_2selmer_suite_inputs_v1.json",
+    "sha256": "9d9713d69b59764c3fabcc726296f1ec6c6b44c0be9ceabc0c00652472ce1867"
+  },
+  "magma_command_requested": "magma",
+  "magma_command_resolved": null,
+  "runs": [
+    {
+      "case_id": "control-r21-t3_8",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/control-r21-t3_8.m",
+      "program_sha256": "87563423ea5ded0d93420fe142f9f7bf306875518a99fe06cdb9db5c2ca3e3bd"
+    },
+    {
+      "case_id": "control-r25",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/control-r25.m",
+      "program_sha256": "3c63d27a5655869e9b04eef13e2c9015fe2d1e39b84f1be9684d56319846d946"
+    },
+    {
+      "case_id": "control-r26",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/control-r26.m",
+      "program_sha256": "778a650a8728d52bd9031171c4a931bef7c78eb7805cf5efb0aa5a3d3834005f"
+    },
+    {
+      "case_id": "control-r27",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/control-r27.m",
+      "program_sha256": "cfc597dbe8f6a65d8a8c5ba5d43571d00b50dbee83483142dd1459beceba3950"
+    },
+    {
+      "case_id": "control-r28",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/control-r28.m",
+      "program_sha256": "6813a6a82348e0596991388cc70591ffeb159e7af6473be405dacee185f9cc8c"
+    },
+    {
+      "case_id": "nagao-0001",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0001.m",
+      "program_sha256": "2df960ef9b9984eb886ccea5105f789767331609cb08148029616cdcdb011610"
+    },
+    {
+      "case_id": "nagao-0002",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0002.m",
+      "program_sha256": "96c8f661f4710d5619f9e85b967078f5d09a21d1d5bce44fbded9a3185ecc8bf"
+    },
+    {
+      "case_id": "nagao-0003",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0003.m",
+      "program_sha256": "4a5e64e079624dd11ce09d8dcb85fd020274124f0577bcf5103303b201a04329"
+    },
+    {
+      "case_id": "nagao-0004",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0004.m",
+      "program_sha256": "184a7e8f959fc98207ffcdfad280d0940a4a08eba937acc0c0c81e652cac5085"
+    },
+    {
+      "case_id": "nagao-0005",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0005.m",
+      "program_sha256": "50f3d2668864aa3595969fc8df4f078795b3e635a43e97b361aff67874df7d03"
+    },
+    {
+      "case_id": "nagao-0006",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0006.m",
+      "program_sha256": "f4469807663ee6e87525ffcfbb6bfe95db866aca18e0f479d18980c7b9ec17c5"
+    },
+    {
+      "case_id": "nagao-0007",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0007.m",
+      "program_sha256": "a2d6ae243b7dee83667fdbd2057f3ad17ee77d028f728eca3faf725d927a7783"
+    },
+    {
+      "case_id": "nagao-0008",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0008.m",
+      "program_sha256": "bc264c5a894805a2d4db2261422949f5d3fe281053076edeeda25cc82df94655"
+    },
+    {
+      "case_id": "nagao-0009",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0009.m",
+      "program_sha256": "b907719af71d16a3281320f6867cd2702e7ac3cb6590471fc7e1b320e4c869dd"
+    },
+    {
+      "case_id": "nagao-0010",
+      "outcome": "backend_unavailable",
+      "program": "artifacts/local/elliptic-curves/elkies-2026-relative-2selmer-suite-v1/nagao-0010.m",
+      "program_sha256": "ccd6afa5d612de109a87195322050ec29b65d65ec24a43f84514ca71b6c28ddb"
+    }
+  ],
+  "schema": "elliptic-curves.elkies-2026-relative-2selmer-suite-run.v1",
+  "status": "INCOMPLETE_MAGMA_BACKEND_UNAVAILABLE"
+}

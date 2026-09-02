@@ -1,0 +1,512 @@
+{
+  "censored_split_rows": [
+    {
+      "blocker": "generic finite-quotient rank=16; torsion_witness_present=True",
+      "frozen_population_rank": 91,
+      "lane": "frozen_weakest_block",
+      "lane_rank": 91,
+      "parameter": "-12229/7635",
+      "split_bisection_count": 2
+    }
+  ],
+  "certified_new_directions": [
+    {
+      "all_displayed_points_verified_exactly": true,
+      "frozen_population_rank": 9,
+      "independent_bisection_labels": [
+        "orbit-11aa9"
+      ],
+      "lane": "frozen_weakest_block",
+      "lane_rank": 9,
+      "minimum_exceptional_x_naive_height": "6041133584642914747617150821640",
+      "parameter": "28781/3342",
+      "projective_pair": [
+        28781,
+        3342
+      ],
+      "quotient_rank_lower_bound_beyond_generic_17": 1,
+      "specialized_rank_lower_bound": 18,
+      "split_bisection_count": 1,
+      "strongest_frozen_depth_reduction_prime_bound": 997
+    },
+    {
+      "all_displayed_points_verified_exactly": true,
+      "frozen_population_rank": 38,
+      "independent_bisection_labels": [
+        "orbit-1b011"
+      ],
+      "lane": "frozen_weakest_block",
+      "lane_rank": 38,
+      "minimum_exceptional_x_naive_height": "16532094227300203708658998608554172",
+      "parameter": "-26851/25276",
+      "projective_pair": [
+        -26851,
+        25276
+      ],
+      "quotient_rank_lower_bound_beyond_generic_17": 1,
+      "specialized_rank_lower_bound": 18,
+      "split_bisection_count": 1,
+      "strongest_frozen_depth_reduction_prime_bound": 499
+    },
+    {
+      "all_displayed_points_verified_exactly": true,
+      "frozen_population_rank": 121,
+      "independent_bisection_labels": [
+        "orbit-18753"
+      ],
+      "lane": "frozen_weakest_block",
+      "lane_rank": 121,
+      "minimum_exceptional_x_naive_height": "31616424499226029544702982491615",
+      "parameter": "29111/2186",
+      "projective_pair": [
+        29111,
+        2186
+      ],
+      "quotient_rank_lower_bound_beyond_generic_17": 1,
+      "specialized_rank_lower_bound": 18,
+      "split_bisection_count": 1,
+      "strongest_frozen_depth_reduction_prime_bound": 199
+    },
+    {
+      "all_displayed_points_verified_exactly": true,
+      "frozen_population_rank": null,
+      "independent_bisection_labels": [
+        "orbit-0acda"
+      ],
+      "lane": "ordinary_nagao_control",
+      "lane_rank": 8,
+      "minimum_exceptional_x_naive_height": "705301836596275896357112341540",
+      "parameter": "-11677/17012",
+      "projective_pair": [
+        -11677,
+        17012
+      ],
+      "quotient_rank_lower_bound_beyond_generic_17": 1,
+      "specialized_rank_lower_bound": 18,
+      "split_bisection_count": 1,
+      "strongest_frozen_depth_reduction_prime_bound": 199
+    },
+    {
+      "all_displayed_points_verified_exactly": true,
+      "frozen_population_rank": null,
+      "independent_bisection_labels": [
+        "orbit-12f39"
+      ],
+      "lane": "ordinary_nagao_control",
+      "lane_rank": 103,
+      "minimum_exceptional_x_naive_height": "867244268647484391428355050591547",
+      "parameter": "-19909/14703",
+      "projective_pair": [
+        -19909,
+        14703
+      ],
+      "quotient_rank_lower_bound_beyond_generic_17": 1,
+      "specialized_rank_lower_bound": 18,
+      "split_bisection_count": 1,
+      "strongest_frozen_depth_reduction_prime_bound": 199
+    },
+    {
+      "all_displayed_points_verified_exactly": true,
+      "frozen_population_rank": null,
+      "independent_bisection_labels": [
+        "orbit-01362"
+      ],
+      "lane": "ordinary_nagao_control",
+      "lane_rank": 110,
+      "minimum_exceptional_x_naive_height": "737574589805002474213929109347",
+      "parameter": "-25961/9577",
+      "projective_pair": [
+        -25961,
+        9577
+      ],
+      "quotient_rank_lower_bound_beyond_generic_17": 1,
+      "specialized_rank_lower_bound": 18,
+      "split_bisection_count": 1,
+      "strongest_frozen_depth_reduction_prime_bound": 199
+    },
+    {
+      "all_displayed_points_verified_exactly": true,
+      "frozen_population_rank": null,
+      "independent_bisection_labels": [
+        "orbit-1037b"
+      ],
+      "lane": "random_control",
+      "lane_rank": 119,
+      "minimum_exceptional_x_naive_height": "1011376672094951592804039092824227",
+      "parameter": "-2337/28069",
+      "projective_pair": [
+        -2337,
+        28069
+      ],
+      "quotient_rank_lower_bound_beyond_generic_17": 1,
+      "specialized_rank_lower_bound": 18,
+      "split_bisection_count": 1,
+      "strongest_frozen_depth_reduction_prime_bound": 199
+    }
+  ],
+  "frozen_rule": {
+    "changed_after_prospective_shell_opened": false,
+    "ranking": {
+      "block_normalization": "sum(z_p)/sqrt(number of primes in block)",
+      "per_prime_standardization": "center and population-standardize over good fibres of P1(F_p)",
+      "primary": "minimum standardized block signal",
+      "prime_ensembles": [
+        [
+          19,
+          31,
+          43,
+          59,
+          71,
+          83,
+          101,
+          109,
+          131,
+          149,
+          163,
+          179,
+          193,
+          211,
+          229,
+          241,
+          263,
+          277,
+          293,
+          313,
+          337,
+          353,
+          373,
+          389,
+          409,
+          431,
+          443,
+          461,
+          479,
+          499,
+          521,
+          547,
+          569,
+          587
+        ],
+        [
+          23,
+          37,
+          47,
+          61,
+          73,
+          89,
+          103,
+          113,
+          137,
+          151,
+          167,
+          181,
+          197,
+          223,
+          233,
+          251,
+          269,
+          281,
+          307,
+          317,
+          347,
+          359,
+          379,
+          397,
+          419,
+          433,
+          449,
+          463,
+          487,
+          503,
+          523,
+          557,
+          571,
+          593
+        ],
+        [
+          29,
+          41,
+          53,
+          67,
+          79,
+          97,
+          107,
+          127,
+          139,
+          157,
+          173,
+          191,
+          199,
+          227,
+          239,
+          257,
+          271,
+          283,
+          311,
+          331,
+          349,
+          367,
+          383,
+          401,
+          421,
+          439,
+          457,
+          467,
+          491,
+          509,
+          541,
+          563,
+          577,
+          599
+        ]
+      ],
+      "singular_fibre_policy": "mean imputation (standardized contribution zero)",
+      "tie_breaker": "mean block signal, good primes, bad primes, height, denominator, numerator"
+    },
+    "reference": {
+      "path": "artifacts/generated-results/elliptic-curves/elkies_2026_compact_t_nagao_positive_control_h10000_v1.json",
+      "scoring_contract": {
+        "block_normalization": "sum(z_p)/sqrt(number of primes in block)",
+        "per_prime_standardization": "center and population-standardize over good fibres of P1(F_p)",
+        "primary_ranking_key": "minimum block signal",
+        "prime_ensembles": [
+          [
+            19,
+            31,
+            43,
+            59,
+            71,
+            83,
+            101,
+            109,
+            131,
+            149,
+            163,
+            179,
+            193,
+            211,
+            229,
+            241,
+            263,
+            277,
+            293,
+            313,
+            337,
+            353,
+            373,
+            389,
+            409,
+            431,
+            443,
+            461,
+            479,
+            499,
+            521,
+            547,
+            569,
+            587
+          ],
+          [
+            23,
+            37,
+            47,
+            61,
+            73,
+            89,
+            103,
+            113,
+            137,
+            151,
+            167,
+            181,
+            197,
+            223,
+            233,
+            251,
+            269,
+            281,
+            307,
+            317,
+            347,
+            359,
+            379,
+            397,
+            419,
+            433,
+            449,
+            463,
+            487,
+            503,
+            523,
+            557,
+            571,
+            593
+          ],
+          [
+            29,
+            41,
+            53,
+            67,
+            79,
+            97,
+            107,
+            127,
+            139,
+            157,
+            173,
+            191,
+            199,
+            227,
+            239,
+            257,
+            271,
+            283,
+            311,
+            331,
+            349,
+            367,
+            383,
+            401,
+            421,
+            439,
+            457,
+            467,
+            491,
+            509,
+            541,
+            563,
+            577,
+            599
+          ]
+        ],
+        "singular_fibre_policy": "mean imputation (standardized contribution zero)",
+        "tie_breaker": "mean block signal, good primes, bad primes, height, denominator, numerator"
+      },
+      "sha256": "d5bde371b7aa4dab8edc42c33e671ee5947d125782020632944826106e84e558"
+    }
+  },
+  "generation": {
+    "command": ".venv/bin/python elliptic-curves/scripts/summarize_r17_frozen_nagao_shell.py",
+    "script": "elliptic-curves/scripts/summarize_r17_frozen_nagao_shell.py",
+    "script_sha256": "7b9e06fffcd6d01a58fa5c54e7d187847c2ff00be7ca0fe8df928a9ada02d0c6"
+  },
+  "inputs": {
+    "artifacts/local/elliptic-curves/r17-frozen-shell-h10001-30000-bisection-labels-summary.json": "1e4098d4978ab8ca2e26cc796077bfeb1c2bac0bd43a0b712f2a68256b588000",
+    "artifacts/local/elliptic-curves/r17-frozen-shell-h10001-30000-bisection-labels.jsonl": "2cd1c6abf34de6e2d3a4e547f4562631879c4c014aa0178d0f15df4c4f2973cd",
+    "artifacts/local/elliptic-curves/r17-frozen-shell-h10001-30000-cohort.jsonl": "b4b00efe8057e06584b963ee5edd16bff64afb1454781472dab1605869b3e453",
+    "artifacts/local/elliptic-curves/r17-frozen-shell-h10001-30000-deepest-labels.jsonl": "8b0237e25845f8ad7a8559889b3fe2dded785e31902a7a3ee11bf9e967e011b4",
+    "artifacts/local/elliptic-curves/r17-frozen-shell-h10001-30000-deepest-summary.json": "cbfa22c170c5cfa519ee9707f2e77ed2e9ceab90d670d689b1867d10c359b866",
+    "artifacts/local/elliptic-curves/r17-frozen-shell-h10001-30000-medium-labels.jsonl": "f1439244bb5ca00ae58f06b198a971a4f3e98d34845468dcb39c3532ee31309f",
+    "artifacts/local/elliptic-curves/r17-frozen-shell-h10001-30000-medium-summary.json": "d1137703a310e3af0545299d78da8d6cca7c3428c1c0b08bd2d736431cfde98b"
+  },
+  "matched_lane_outcomes": {
+    "frozen_weakest_block": {
+      "certified_quotient_gain_sum": 3,
+      "observed_success_fraction": 0.0234375,
+      "rows": 128,
+      "rows_with_certified_gain": 3
+    },
+    "ordinary_nagao_control": {
+      "certified_quotient_gain_sum": 3,
+      "observed_success_fraction": 0.0234375,
+      "rows": 128,
+      "rows_with_certified_gain": 3
+    },
+    "random_control": {
+      "certified_quotient_gain_sum": 1,
+      "observed_success_fraction": 0.0078125,
+      "rows": 128,
+      "rows_with_certified_gain": 1
+    }
+  },
+  "population": {
+    "all_parameters_scored_without_presieve": true,
+    "complete_primitive_parameter_count": 972697152,
+    "definition": {
+      "coordinate": "published compact t",
+      "denominator_interval": [
+        1,
+        30000
+      ],
+      "height": "max(abs(a),b)",
+      "includes_infinity": false,
+      "maximum_height_inclusive": 30000,
+      "minimum_height_inclusive": 10001,
+      "numerator_interval": [
+        -30000,
+        30000
+      ],
+      "primitive_pairs_only": true
+    },
+    "ranking_artifact": "artifacts/generated-results/elliptic-curves/r17_frozen_nagao_shell_h10001_30000_v1.json",
+    "ranking_artifact_sha256": "b8b4b533f69b08680beffb4384302d3b95b04856670e1f781f121682fe50f112"
+  },
+  "progressive_depth": {
+    "allocation_depended_only_on_frozen_rank": true,
+    "base": {
+      "complete_preexisting_bisection_atlas_size": 39120,
+      "finite_reduction_prime_bound": 199,
+      "rows": 384,
+      "summary": "artifacts/local/elliptic-curves/r17-frozen-shell-h10001-30000-bisection-labels-summary.json",
+      "summary_sha256": "1e4098d4978ab8ca2e26cc796077bfeb1c2bac0bd43a0b712f2a68256b588000"
+    },
+    "deepest": {
+      "finite_reduction_prime_bound": 997,
+      "rows": 16,
+      "selection": "frozen target ranks 1 through 16 only",
+      "summary": "artifacts/local/elliptic-curves/r17-frozen-shell-h10001-30000-deepest-summary.json",
+      "summary_sha256": "cbfa22c170c5cfa519ee9707f2e77ed2e9ceab90d670d689b1867d10c359b866"
+    },
+    "medium": {
+      "finite_reduction_prime_bound": 499,
+      "rows": 48,
+      "selection": "frozen target ranks 17 through 64 only",
+      "summary": "artifacts/local/elliptic-curves/r17-frozen-shell-h10001-30000-medium-summary.json",
+      "summary_sha256": "d1137703a310e3af0545299d78da8d6cca7c3428c1c0b08bd2d736431cfde98b"
+    },
+    "point_mechanism": "complete evaluation of the preexisting certified 39,120-bisection atlas"
+  },
+  "proof_boundary": [
+    "Each positive row has an exact specialized point and an exact finite-reduction quotient-rank lower bound.",
+    "The seven gains occur on seven different fibres; they do not combine into one rank-24 fibre.",
+    "A zero atlas outcome is not a rank-17 claim, and the one censored row has no promoted gain.",
+    "Nagao scores and population ranks remain heuristics.",
+    "No unrestricted rational-point search or residual-Selmer computation was completed."
+  ],
+  "schema": "elliptic-curves.r17-frozen-nagao-shell-search.v1",
+  "status": "PASS_PROSPECTIVE_R17_SHELL_ATLAS_GAINS_NO_DEEP_POINT_SEARCH",
+  "summary_replays": {
+    "base_outcomes": {
+      "censored_rows": 1,
+      "certified_gain_sum": 7,
+      "nonzero_split_covers": 9,
+      "ramified_covers": 0,
+      "rows": 384,
+      "rows_with_certified_gain": 7,
+      "rows_with_split": 8
+    },
+    "deepest_outcomes": {
+      "censored_rows": 0,
+      "certified_gain_sum": 1,
+      "nonzero_split_covers": 1,
+      "ramified_covers": 0,
+      "rows": 16,
+      "rows_with_certified_gain": 1,
+      "rows_with_split": 1
+    },
+    "medium_outcomes": {
+      "censored_rows": 0,
+      "certified_gain_sum": 1,
+      "nonzero_split_covers": 1,
+      "ramified_covers": 0,
+      "rows": 48,
+      "rows_with_certified_gain": 1,
+      "rows_with_split": 1
+    }
+  },
+  "unrestricted_point_search": {
+    "executed": false,
+    "interpretation": "This is a policy/backend boundary, not a rank upper bound or a negative point-search outcome.",
+    "reason": "No candidate has a completed same-fibre residual 2-Selmer quotient of dimension at least 15; all retained ratpoints, eclib, slope-chart, and two-cover entry points therefore fail closed. Magma is absent on the current host."
+  }
+}

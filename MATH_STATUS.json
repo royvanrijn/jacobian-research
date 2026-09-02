@@ -36351,6 +36351,37 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-RES-QBC-E6A1-RHO19",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "One-modulus rational E6+A1 quadratic base changes of generic Picard rank 19",
+      "scope": "For rational parameter k, set D=3*k^2-4, c=2*k/D, lambda=-(k^2-4)*D/4, and d=u*(u-lambda). The rational elliptic surface y^2=x^3+(u-3)*x+c^2*u^2+u-2 has fibres IV*+I2+2I1, trivial torsion, Mordell--Weil lattice [1/6], and generator (-1,c*u). Its d-twist has the exact non-torsion degree-(2,2) section x=4*u^2/D^2+k^2*u/D-1, y=8*u^2/D^3+2*(k^2+2)*u/D^2. Under u=lambda/(1-t^2), the K3 pullback has fibres 2IV*+I4+4I1, invariant/anti-invariant sections with height Gram diag(1/3,3), generic Mordell--Weil rank exactly two, Neron--Severi determinant -36, and generic Picard rank exactly 19. Non-isotriviality follows from the nonconstant marked fibre invariant (2*k^2+1)*(9*k^2-20)^2/(9*(3*k^2+4)^2). The polynomial twist-section elimination is complete only for nonzero-leading degree-(2,2) sections and nonzero lambda; it does not bound higher-degree or rational-function twist ranks or the ranks of every rational specialization.",
+      "canonical_source": "elkies-k3/RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md",
+      "dependencies": [],
+      "checker": "elkies-k3/scripts/certify_rational_surface_quadratic_rank_search.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b0faa6772d7ef35b6b2c9b9e785e92c6938fe30b450d13eec6589f00445171e7",
+      "software_lock": [
+        "elkies-k3/scripts/certify_rational_surface_quadratic_rank_search.sage",
+        "artifacts/generated-results/elkies-k3-rational-surface-quadratic-rank-search-v1.json",
+        "artifacts/generated-results/elkies-k3-repeated-fibre-rational-base-change-audit-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/RATIONAL_SURFACE_QUADRATIC_RANK_SEARCH_2026-09-02.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-K3-NS0031-F017-PHYSICAL-CORRIDOR",
       "kind": "theorem",
       "state": "proved",
@@ -36377,6 +36408,46 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
+    },
+    {
+      "id": "EC-K3-ELKIES-2026-LOW-GENUS-COVER-QUOTIENTS",
+      "kind": "example",
+      "state": "partial",
+      "title": "Degree-three and sampled degree-four low-genus cover visibility at the R17 rank-25--28 fibres",
+      "scope": "For the four published R17 controls, every split point in the complete 39,120-class degree-two atlas is expressed integrally in the ordered known basis, giving exact exceptional quotient ranks 5,3,2,1 at ranks 25,26,27,28. A deterministic inversion-closed 1,025-coset degree-three frontier sample contributes 69 norm-20 equation representatives, all with irreducible residual cubics; the complete deep degree-three census contributes exactly 320 norm-26 translation cosets and 160 inversion representatives, all with irreducible residual cubics and squarefree discriminant degree four. A deterministic inversion-closed 1,025-coset degree-four sample contributes 53 norm-34 equation representatives, with generic factor patterns 45 irreducible quartics and eight 2+2 decompositions. Exact factorization at all four controls finds no rational component in any of these 282 new covers, so the cumulative captured exceptional ranks remain 5,3,2,1 through degrees three and four. There are no parallel duplicate quotient classes; the sole fundamental circuit is orbit-1cb25 - orbit-0cff7 + orbit-1ea09 - orbit-0d4ca=0 at rank 25. The prioritized rank-28 fibre still exposes only Q2-Q4+Q5-Q8+Q10, at trace norm 10 and deterministic group-addition cost 11. Zero gain at the requested degree-four layer triggers the declared stop, so degrees five and six were not tested. The norm-26 shell is complete, but the 69 norm-20 and 53 norm-34 equation sets are bounded deterministic samples; the result does not exclude splitting elsewhere in the 18,024,296 norm-20 cosets or in M/4M, does not prove that the known subgroup is saturated or full, and gives no Mordell--Weil rank upper bound.",
+      "canonical_source": "elkies-k3/R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-R17",
+        "EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES"
+      ],
+      "checker": "elliptic-curves/scripts/analyze_elkies_2026_deep_cover_quotients.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4252284683e90b949596642045b32b5be2e1d5a58e0a353836baaa46bb485b3f",
+      "software_lock": [
+        "elkies-k3/scripts/complete_lattice_foundry_degree3_spectrum.py",
+        "elkies-k3/scripts/construct_elkies_2026_sampled_frontier_trisections.sage",
+        "elkies-k3/scripts/construct_elkies_2026_deep_trisections.sage",
+        "elkies-k3/scripts/construct_elkies_2026_sampled_quadrisections.sage",
+        "elliptic-curves/scripts/analyze_elkies_2026_deep_cover_quotients.py",
+        "artifacts/generated-results/elkies-k3-r17-degree3-deep-cosets-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-sampled-frontier-trisections-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-deep-trisections-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-sampled-quadrisections-v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_deep_cover_exceptional_quotients_v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
     }
   ]
 }

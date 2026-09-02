@@ -1,0 +1,1459 @@
+{
+  "claim": "Exact degree-2 through degree-4 split-cover coordinates in the known exceptional quotients at the rank-25--28 R17 fibres.",
+  "claim_boundary": "Ranks are ranks of displayed classes in the known quotient L_t/M_t. They neither prove that L_t is saturated nor give an upper bound for the full specialized Mordell--Weil group.",
+  "degree_stopping_decision": {
+    "degree_4_test_completed": true,
+    "degree_5_or_6_test_required": false,
+    "rank28_all_eleven_known_directions_explained_by_degree_at_most_4": false,
+    "rank28_degree_4_sample_gained_rank": false,
+    "rule": "Stop increasing degree once rank 11 is reached at the prioritized rank-28 fibre; otherwise continue until a tested degree gains no rank."
+  },
+  "fibres": [
+    {
+      "all_known_directions_explained": false,
+      "cumulative_captured_exceptional_rank": [
+        {
+          "R_t(D)": 1,
+          "maximum_cover_degree": 2
+        },
+        {
+          "R_t(D)": 1,
+          "maximum_cover_degree": 3
+        },
+        {
+          "R_t(D)": 1,
+          "maximum_cover_degree": 4
+        }
+      ],
+      "degree_3_relation_discovery_and_exact_closeout": {
+        "all_relations_verified_by_exact_group_addition": true,
+        "relation_count": 0
+      },
+      "duplicate_and_circuit_structure": {
+        "boundary": "The displayed fundamental circuits are relative to the deterministic complexity-ordered basis; they generate all linear dependencies but are not an enumeration of every circuit of the vector matroid.",
+        "canonical_independent_point_labels": [
+          "d2-orbit-15a68"
+        ],
+        "fundamental_circuits": [],
+        "parallel_duplicate_classes": [],
+        "rank": 1
+      },
+      "exceptional_quotient": {
+        "dimension": 11,
+        "notation": "L_t/M_t",
+        "ordered_basis": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10",
+          "Q11"
+        ],
+        "public_point_indices_one_based": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9,
+          11,
+          15,
+          19,
+          22
+        ]
+      },
+      "known_rank_lower_bound": 28,
+      "label": "rank_at_least_28",
+      "minimum_norm_and_equation_complexity_exposure": {
+        "complexity_ordered_rank_increments": [
+          {
+            "cover_degree": 2,
+            "cover_label": "orbit-15a68",
+            "equation_complexity": {
+              "coefficient_l1": 12,
+              "coordinate_input_bits": 3751,
+              "dependency_count": 11,
+              "group_addition_upper_bound": 11,
+              "maximum_absolute_coefficient": 2,
+              "support_count": 11
+            },
+            "exceptional_quotient_vectors": [
+              [
+                "0",
+                "1",
+                "0",
+                "-1",
+                "1",
+                "0",
+                "0",
+                "-1",
+                "0",
+                "1",
+                "0"
+              ]
+            ],
+            "minimum_lattice_norm": 10,
+            "rank_after": 1,
+            "rank_before": 0
+          }
+        ],
+        "final_rank": 1,
+        "minimum_exposure_of_ordered_public_directions": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "parameter": "-9529/5471",
+      "points": [
+        {
+          "coordinate_denominator": 1,
+          "cover_degree": 2,
+          "cover_label": "orbit-15a68",
+          "equation_complexity": {
+            "coefficient_l1": 12,
+            "coordinate_input_bits": 3751,
+            "dependency_count": 11,
+            "group_addition_upper_bound": 11,
+            "maximum_absolute_coefficient": 2,
+            "support_count": 11
+          },
+          "exact_relation_reused_from_degree2_certificate": true,
+          "exceptional_quotient_coordinates": [
+            "0",
+            "1",
+            "0",
+            "-1",
+            "1",
+            "0",
+            "0",
+            "-1",
+            "0",
+            "1",
+            "0"
+          ],
+          "known_basis_coordinates": [
+            "0",
+            "-1",
+            "-1",
+            "0",
+            "0",
+            "-2",
+            "2",
+            "0",
+            "-1",
+            "-1",
+            "4",
+            "1",
+            "3",
+            "1",
+            "-1",
+            "-2",
+            "3",
+            "0",
+            "1",
+            "0",
+            "-1",
+            "1",
+            "0",
+            "0",
+            "-1",
+            "0",
+            "1",
+            "0"
+          ],
+          "minimum_lattice_norm": 10,
+          "point_label": "d2-orbit-15a68"
+        }
+      ],
+      "tested_cover_universe": {
+        "degree_2_complete_bisection_atlas_size": 39120,
+        "degree_3_complete_deep_translation_cosets": 320,
+        "degree_3_frontier_norm_20_tested_inversion_representatives": 69,
+        "degree_3_frontier_sampled_cosets": 1025,
+        "degree_3_rational_point_count": 0,
+        "degree_3_split_cover_count": 0,
+        "degree_3_tested_inversion_representatives": 160,
+        "degree_4_norm_34_tested_inversion_representatives": 53,
+        "degree_4_rational_point_count": 0,
+        "degree_4_sampled_cosets": 1025,
+        "degree_4_split_cover_count": 0
+      }
+    },
+    {
+      "all_known_directions_explained": false,
+      "cumulative_captured_exceptional_rank": [
+        {
+          "R_t(D)": 2,
+          "maximum_cover_degree": 2
+        },
+        {
+          "R_t(D)": 2,
+          "maximum_cover_degree": 3
+        },
+        {
+          "R_t(D)": 2,
+          "maximum_cover_degree": 4
+        }
+      ],
+      "degree_3_relation_discovery_and_exact_closeout": {
+        "all_relations_verified_by_exact_group_addition": true,
+        "relation_count": 0
+      },
+      "duplicate_and_circuit_structure": {
+        "boundary": "The displayed fundamental circuits are relative to the deterministic complexity-ordered basis; they generate all linear dependencies but are not an enumeration of every circuit of the vector matroid.",
+        "canonical_independent_point_labels": [
+          "d2-orbit-195a4",
+          "d2-orbit-00edf"
+        ],
+        "fundamental_circuits": [],
+        "parallel_duplicate_classes": [],
+        "rank": 2
+      },
+      "exceptional_quotient": {
+        "dimension": 10,
+        "notation": "L_t/M_t",
+        "ordered_basis": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9",
+          "Q10"
+        ],
+        "public_point_indices_one_based": [
+          1,
+          10,
+          11,
+          13,
+          18,
+          22,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "known_rank_lower_bound": 27,
+      "label": "rank_at_least_27",
+      "minimum_norm_and_equation_complexity_exposure": {
+        "complexity_ordered_rank_increments": [
+          {
+            "cover_degree": 2,
+            "cover_label": "orbit-195a4",
+            "equation_complexity": {
+              "coefficient_l1": 8,
+              "coordinate_input_bits": 2865,
+              "dependency_count": 8,
+              "group_addition_upper_bound": 7,
+              "maximum_absolute_coefficient": 1,
+              "support_count": 8
+            },
+            "exceptional_quotient_vectors": [
+              [
+                "0",
+                "-1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1",
+                "1",
+                "0"
+              ]
+            ],
+            "minimum_lattice_norm": 10,
+            "rank_after": 1,
+            "rank_before": 0
+          },
+          {
+            "cover_degree": 2,
+            "cover_label": "orbit-00edf",
+            "equation_complexity": {
+              "coefficient_l1": 11,
+              "coordinate_input_bits": 3461,
+              "dependency_count": 10,
+              "group_addition_upper_bound": 10,
+              "maximum_absolute_coefficient": 2,
+              "support_count": 10
+            },
+            "exceptional_quotient_vectors": [
+              [
+                "1",
+                "0",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            ],
+            "minimum_lattice_norm": 10,
+            "rank_after": 2,
+            "rank_before": 1
+          }
+        ],
+        "final_rank": 2,
+        "minimum_exposure_of_ordered_public_directions": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "parameter": "2456/135",
+      "points": [
+        {
+          "coordinate_denominator": 1,
+          "cover_degree": 2,
+          "cover_label": "orbit-195a4",
+          "equation_complexity": {
+            "coefficient_l1": 8,
+            "coordinate_input_bits": 2865,
+            "dependency_count": 8,
+            "group_addition_upper_bound": 7,
+            "maximum_absolute_coefficient": 1,
+            "support_count": 8
+          },
+          "exact_relation_reused_from_degree2_certificate": true,
+          "exceptional_quotient_coordinates": [
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0"
+          ],
+          "known_basis_coordinates": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "1",
+            "-1",
+            "1",
+            "-1",
+            "-1",
+            "1",
+            "1",
+            "0",
+            "1",
+            "1",
+            "-1",
+            "0",
+            "1",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0"
+          ],
+          "minimum_lattice_norm": 10,
+          "point_label": "d2-orbit-195a4"
+        },
+        {
+          "coordinate_denominator": 1,
+          "cover_degree": 2,
+          "cover_label": "orbit-00edf",
+          "equation_complexity": {
+            "coefficient_l1": 11,
+            "coordinate_input_bits": 3461,
+            "dependency_count": 10,
+            "group_addition_upper_bound": 10,
+            "maximum_absolute_coefficient": 2,
+            "support_count": 10
+          },
+          "exact_relation_reused_from_degree2_certificate": true,
+          "exceptional_quotient_coordinates": [
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "known_basis_coordinates": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "-1",
+            "2",
+            "-2",
+            "0",
+            "1",
+            "0",
+            "-2",
+            "-1",
+            "-1",
+            "0",
+            "1",
+            "1",
+            "-1",
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "minimum_lattice_norm": 10,
+          "point_label": "d2-orbit-00edf"
+        }
+      ],
+      "tested_cover_universe": {
+        "degree_2_complete_bisection_atlas_size": 39120,
+        "degree_3_complete_deep_translation_cosets": 320,
+        "degree_3_frontier_norm_20_tested_inversion_representatives": 69,
+        "degree_3_frontier_sampled_cosets": 1025,
+        "degree_3_rational_point_count": 0,
+        "degree_3_split_cover_count": 0,
+        "degree_3_tested_inversion_representatives": 160,
+        "degree_4_norm_34_tested_inversion_representatives": 53,
+        "degree_4_rational_point_count": 0,
+        "degree_4_sampled_cosets": 1025,
+        "degree_4_split_cover_count": 0
+      }
+    },
+    {
+      "all_known_directions_explained": false,
+      "cumulative_captured_exceptional_rank": [
+        {
+          "R_t(D)": 3,
+          "maximum_cover_degree": 2
+        },
+        {
+          "R_t(D)": 3,
+          "maximum_cover_degree": 3
+        },
+        {
+          "R_t(D)": 3,
+          "maximum_cover_degree": 4
+        }
+      ],
+      "degree_3_relation_discovery_and_exact_closeout": {
+        "all_relations_verified_by_exact_group_addition": true,
+        "relation_count": 0
+      },
+      "duplicate_and_circuit_structure": {
+        "boundary": "The displayed fundamental circuits are relative to the deterministic complexity-ordered basis; they generate all linear dependencies but are not an enumeration of every circuit of the vector matroid.",
+        "canonical_independent_point_labels": [
+          "d2-orbit-0da89",
+          "d2-orbit-12c1b",
+          "d2-orbit-1ea54"
+        ],
+        "fundamental_circuits": [],
+        "parallel_duplicate_classes": [],
+        "rank": 3
+      },
+      "exceptional_quotient": {
+        "dimension": 9,
+        "notation": "L_t/M_t",
+        "ordered_basis": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8",
+          "Q9"
+        ],
+        "public_point_indices_one_based": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          12
+        ]
+      },
+      "known_rank_lower_bound": 26,
+      "label": "rank_at_least_26",
+      "minimum_norm_and_equation_complexity_exposure": {
+        "complexity_ordered_rank_increments": [
+          {
+            "cover_degree": 2,
+            "cover_label": "orbit-0da89",
+            "equation_complexity": {
+              "coefficient_l1": 9,
+              "coordinate_input_bits": 3479,
+              "dependency_count": 10,
+              "group_addition_upper_bound": 8,
+              "maximum_absolute_coefficient": 1,
+              "support_count": 9
+            },
+            "exceptional_quotient_vectors": [
+              [
+                "1",
+                "1",
+                "1",
+                "0",
+                "1",
+                "2",
+                "-1",
+                "-2",
+                "0"
+              ]
+            ],
+            "minimum_lattice_norm": 10,
+            "rank_after": 1,
+            "rank_before": 0
+          },
+          {
+            "cover_degree": 2,
+            "cover_label": "orbit-12c1b",
+            "equation_complexity": {
+              "coefficient_l1": 11,
+              "coordinate_input_bits": 3780,
+              "dependency_count": 11,
+              "group_addition_upper_bound": 10,
+              "maximum_absolute_coefficient": 1,
+              "support_count": 11
+            },
+            "exceptional_quotient_vectors": [
+              [
+                "1",
+                "0",
+                "0",
+                "0",
+                "1",
+                "2",
+                "-1",
+                "-1",
+                "-1"
+              ]
+            ],
+            "minimum_lattice_norm": 10,
+            "rank_after": 2,
+            "rank_before": 1
+          },
+          {
+            "cover_degree": 2,
+            "cover_label": "orbit-1ea54",
+            "equation_complexity": {
+              "coefficient_l1": 13,
+              "coordinate_input_bits": 4387,
+              "dependency_count": 13,
+              "group_addition_upper_bound": 12,
+              "maximum_absolute_coefficient": 2,
+              "support_count": 12
+            },
+            "exceptional_quotient_vectors": [
+              [
+                "1",
+                "1",
+                "0",
+                "0",
+                "1",
+                "2",
+                "-1",
+                "-1",
+                "-1"
+              ]
+            ],
+            "minimum_lattice_norm": 10,
+            "rank_after": 3,
+            "rank_before": 2
+          }
+        ],
+        "final_rank": 3,
+        "minimum_exposure_of_ordered_public_directions": [
+          null,
+          {
+            "cover_degree": 2,
+            "equation_complexity": {
+              "coefficient_l1": 13,
+              "coordinate_input_bits": 4387,
+              "dependency_count": 13,
+              "group_addition_upper_bound": 12,
+              "maximum_absolute_coefficient": 2,
+              "support_count": 12
+            },
+            "first_exposing_cover": "orbit-1ea54",
+            "minimum_lattice_norm": 10,
+            "ordered_public_direction": "Q2"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "parameter": "-308/251",
+      "points": [
+        {
+          "coordinate_denominator": 1,
+          "cover_degree": 2,
+          "cover_label": "orbit-0da89",
+          "equation_complexity": {
+            "coefficient_l1": 9,
+            "coordinate_input_bits": 3479,
+            "dependency_count": 10,
+            "group_addition_upper_bound": 8,
+            "maximum_absolute_coefficient": 1,
+            "support_count": 9
+          },
+          "exact_relation_reused_from_degree2_certificate": true,
+          "exceptional_quotient_coordinates": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "1",
+            "2",
+            "-1",
+            "-2",
+            "0"
+          ],
+          "known_basis_coordinates": [
+            "4",
+            "-1",
+            "-3",
+            "2",
+            "4",
+            "-6",
+            "7",
+            "1",
+            "-4",
+            "0",
+            "9",
+            "3",
+            "6",
+            "-1",
+            "1",
+            "-5",
+            "8",
+            "1",
+            "1",
+            "1",
+            "0",
+            "1",
+            "2",
+            "-1",
+            "-2",
+            "0"
+          ],
+          "minimum_lattice_norm": 10,
+          "point_label": "d2-orbit-0da89"
+        },
+        {
+          "coordinate_denominator": 1,
+          "cover_degree": 2,
+          "cover_label": "orbit-12c1b",
+          "equation_complexity": {
+            "coefficient_l1": 11,
+            "coordinate_input_bits": 3780,
+            "dependency_count": 11,
+            "group_addition_upper_bound": 10,
+            "maximum_absolute_coefficient": 1,
+            "support_count": 11
+          },
+          "exact_relation_reused_from_degree2_certificate": true,
+          "exceptional_quotient_coordinates": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "1",
+            "2",
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "known_basis_coordinates": [
+            "4",
+            "0",
+            "-3",
+            "2",
+            "3",
+            "-5",
+            "6",
+            "1",
+            "-3",
+            "-1",
+            "7",
+            "3",
+            "5",
+            "-1",
+            "1",
+            "-4",
+            "7",
+            "1",
+            "0",
+            "0",
+            "0",
+            "1",
+            "2",
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "minimum_lattice_norm": 10,
+          "point_label": "d2-orbit-12c1b"
+        },
+        {
+          "coordinate_denominator": 1,
+          "cover_degree": 2,
+          "cover_label": "orbit-1ea54",
+          "equation_complexity": {
+            "coefficient_l1": 13,
+            "coordinate_input_bits": 4387,
+            "dependency_count": 13,
+            "group_addition_upper_bound": 12,
+            "maximum_absolute_coefficient": 2,
+            "support_count": 12
+          },
+          "exact_relation_reused_from_degree2_certificate": true,
+          "exceptional_quotient_coordinates": [
+            "1",
+            "1",
+            "0",
+            "0",
+            "1",
+            "2",
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "known_basis_coordinates": [
+            "4",
+            "0",
+            "-2",
+            "1",
+            "4",
+            "-6",
+            "7",
+            "1",
+            "-3",
+            "-1",
+            "8",
+            "4",
+            "5",
+            "-2",
+            "0",
+            "-4",
+            "6",
+            "1",
+            "1",
+            "0",
+            "0",
+            "1",
+            "2",
+            "-1",
+            "-1",
+            "-1"
+          ],
+          "minimum_lattice_norm": 10,
+          "point_label": "d2-orbit-1ea54"
+        }
+      ],
+      "tested_cover_universe": {
+        "degree_2_complete_bisection_atlas_size": 39120,
+        "degree_3_complete_deep_translation_cosets": 320,
+        "degree_3_frontier_norm_20_tested_inversion_representatives": 69,
+        "degree_3_frontier_sampled_cosets": 1025,
+        "degree_3_rational_point_count": 0,
+        "degree_3_split_cover_count": 0,
+        "degree_3_tested_inversion_representatives": 160,
+        "degree_4_norm_34_tested_inversion_representatives": 53,
+        "degree_4_rational_point_count": 0,
+        "degree_4_sampled_cosets": 1025,
+        "degree_4_split_cover_count": 0
+      }
+    },
+    {
+      "all_known_directions_explained": false,
+      "cumulative_captured_exceptional_rank": [
+        {
+          "R_t(D)": 5,
+          "maximum_cover_degree": 2
+        },
+        {
+          "R_t(D)": 5,
+          "maximum_cover_degree": 3
+        },
+        {
+          "R_t(D)": 5,
+          "maximum_cover_degree": 4
+        }
+      ],
+      "degree_3_relation_discovery_and_exact_closeout": {
+        "all_relations_verified_by_exact_group_addition": true,
+        "relation_count": 0
+      },
+      "duplicate_and_circuit_structure": {
+        "boundary": "The displayed fundamental circuits are relative to the deterministic complexity-ordered basis; they generate all linear dependencies but are not an enumeration of every circuit of the vector matroid.",
+        "canonical_independent_point_labels": [
+          "d2-orbit-1cb25",
+          "d2-orbit-0cff7",
+          "d2-orbit-1ea09",
+          "d2-orbit-051a1",
+          "d2-orbit-1d5bb"
+        ],
+        "fundamental_circuits": [
+          {
+            "coefficients": [
+              "1",
+              "-1",
+              "1",
+              "-1"
+            ],
+            "point_labels": [
+              "d2-orbit-1cb25",
+              "d2-orbit-0cff7",
+              "d2-orbit-1ea09",
+              "d2-orbit-0d4ca"
+            ],
+            "type": "fundamental_circuit"
+          }
+        ],
+        "parallel_duplicate_classes": [],
+        "rank": 5
+      },
+      "exceptional_quotient": {
+        "dimension": 8,
+        "notation": "L_t/M_t",
+        "ordered_basis": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "Q8"
+        ],
+        "public_point_indices_one_based": [
+          1,
+          4,
+          6,
+          10,
+          11,
+          16,
+          20,
+          24
+        ]
+      },
+      "known_rank_lower_bound": 25,
+      "label": "rank_at_least_25",
+      "minimum_norm_and_equation_complexity_exposure": {
+        "complexity_ordered_rank_increments": [
+          {
+            "cover_degree": 2,
+            "cover_label": "orbit-1cb25",
+            "equation_complexity": {
+              "coefficient_l1": 5,
+              "coordinate_input_bits": 1920,
+              "dependency_count": 5,
+              "group_addition_upper_bound": 4,
+              "maximum_absolute_coefficient": 1,
+              "support_count": 5
+            },
+            "exceptional_quotient_vectors": [
+              [
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            ],
+            "minimum_lattice_norm": 10,
+            "rank_after": 1,
+            "rank_before": 0
+          },
+          {
+            "cover_degree": 2,
+            "cover_label": "orbit-0cff7",
+            "equation_complexity": {
+              "coefficient_l1": 5,
+              "coordinate_input_bits": 2250,
+              "dependency_count": 6,
+              "group_addition_upper_bound": 4,
+              "maximum_absolute_coefficient": 1,
+              "support_count": 5
+            },
+            "exceptional_quotient_vectors": [
+              [
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "-1",
+                "0"
+              ]
+            ],
+            "minimum_lattice_norm": 10,
+            "rank_after": 2,
+            "rank_before": 1
+          },
+          {
+            "cover_degree": 2,
+            "cover_label": "orbit-1ea09",
+            "equation_complexity": {
+              "coefficient_l1": 6,
+              "coordinate_input_bits": 2242,
+              "dependency_count": 6,
+              "group_addition_upper_bound": 5,
+              "maximum_absolute_coefficient": 1,
+              "support_count": 6
+            },
+            "exceptional_quotient_vectors": [
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1",
+                "-1",
+                "0"
+              ]
+            ],
+            "minimum_lattice_norm": 10,
+            "rank_after": 3,
+            "rank_before": 2
+          },
+          {
+            "cover_degree": 2,
+            "cover_label": "orbit-051a1",
+            "equation_complexity": {
+              "coefficient_l1": 9,
+              "coordinate_input_bits": 3143,
+              "dependency_count": 9,
+              "group_addition_upper_bound": 8,
+              "maximum_absolute_coefficient": 1,
+              "support_count": 9
+            },
+            "exceptional_quotient_vectors": [
+              [
+                "0",
+                "0",
+                "-1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            ],
+            "minimum_lattice_norm": 10,
+            "rank_after": 4,
+            "rank_before": 3
+          },
+          {
+            "cover_degree": 2,
+            "cover_label": "orbit-1d5bb",
+            "equation_complexity": {
+              "coefficient_l1": 11,
+              "coordinate_input_bits": 3762,
+              "dependency_count": 11,
+              "group_addition_upper_bound": 10,
+              "maximum_absolute_coefficient": 1,
+              "support_count": 11
+            },
+            "exceptional_quotient_vectors": [
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "-1",
+                "0",
+                "0",
+                "0"
+              ]
+            ],
+            "minimum_lattice_norm": 10,
+            "rank_after": 5,
+            "rank_before": 4
+          }
+        ],
+        "final_rank": 5,
+        "minimum_exposure_of_ordered_public_directions": [
+          {
+            "cover_degree": 2,
+            "equation_complexity": {
+              "coefficient_l1": 5,
+              "coordinate_input_bits": 1920,
+              "dependency_count": 5,
+              "group_addition_upper_bound": 4,
+              "maximum_absolute_coefficient": 1,
+              "support_count": 5
+            },
+            "first_exposing_cover": "orbit-1cb25",
+            "minimum_lattice_norm": 10,
+            "ordered_public_direction": "Q1"
+          },
+          null,
+          {
+            "cover_degree": 2,
+            "equation_complexity": {
+              "coefficient_l1": 9,
+              "coordinate_input_bits": 3143,
+              "dependency_count": 9,
+              "group_addition_upper_bound": 8,
+              "maximum_absolute_coefficient": 1,
+              "support_count": 9
+            },
+            "first_exposing_cover": "orbit-051a1",
+            "minimum_lattice_norm": 10,
+            "ordered_public_direction": "Q3"
+          },
+          null,
+          {
+            "cover_degree": 2,
+            "equation_complexity": {
+              "coefficient_l1": 11,
+              "coordinate_input_bits": 3762,
+              "dependency_count": 11,
+              "group_addition_upper_bound": 10,
+              "maximum_absolute_coefficient": 1,
+              "support_count": 11
+            },
+            "first_exposing_cover": "orbit-1d5bb",
+            "minimum_lattice_norm": 10,
+            "ordered_public_direction": "Q5"
+          },
+          {
+            "cover_degree": 2,
+            "equation_complexity": {
+              "coefficient_l1": 6,
+              "coordinate_input_bits": 2242,
+              "dependency_count": 6,
+              "group_addition_upper_bound": 5,
+              "maximum_absolute_coefficient": 1,
+              "support_count": 6
+            },
+            "first_exposing_cover": "orbit-1ea09",
+            "minimum_lattice_norm": 10,
+            "ordered_public_direction": "Q6"
+          },
+          {
+            "cover_degree": 2,
+            "equation_complexity": {
+              "coefficient_l1": 5,
+              "coordinate_input_bits": 2250,
+              "dependency_count": 6,
+              "group_addition_upper_bound": 4,
+              "maximum_absolute_coefficient": 1,
+              "support_count": 5
+            },
+            "first_exposing_cover": "orbit-0cff7",
+            "minimum_lattice_norm": 10,
+            "ordered_public_direction": "Q7"
+          },
+          null
+        ]
+      },
+      "parameter": "-2/377",
+      "points": [
+        {
+          "coordinate_denominator": 1,
+          "cover_degree": 2,
+          "cover_label": "orbit-1cb25",
+          "equation_complexity": {
+            "coefficient_l1": 5,
+            "coordinate_input_bits": 1920,
+            "dependency_count": 5,
+            "group_addition_upper_bound": 4,
+            "maximum_absolute_coefficient": 1,
+            "support_count": 5
+          },
+          "exact_relation_reused_from_degree2_certificate": true,
+          "exceptional_quotient_coordinates": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "known_basis_coordinates": [
+            "-3",
+            "-1",
+            "0",
+            "0",
+            "-1",
+            "0",
+            "-2",
+            "-1",
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "-1",
+            "1",
+            "0",
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "minimum_lattice_norm": 10,
+          "point_label": "d2-orbit-1cb25"
+        },
+        {
+          "coordinate_denominator": 1,
+          "cover_degree": 2,
+          "cover_label": "orbit-0cff7",
+          "equation_complexity": {
+            "coefficient_l1": 5,
+            "coordinate_input_bits": 2250,
+            "dependency_count": 6,
+            "group_addition_upper_bound": 4,
+            "maximum_absolute_coefficient": 1,
+            "support_count": 5
+          },
+          "exact_relation_reused_from_degree2_certificate": true,
+          "exceptional_quotient_coordinates": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          "known_basis_coordinates": [
+            "-1",
+            "0",
+            "-1",
+            "0",
+            "1",
+            "-1",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "-1",
+            "-1",
+            "1",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          "minimum_lattice_norm": 10,
+          "point_label": "d2-orbit-0cff7"
+        },
+        {
+          "coordinate_denominator": 1,
+          "cover_degree": 2,
+          "cover_label": "orbit-1ea09",
+          "equation_complexity": {
+            "coefficient_l1": 6,
+            "coordinate_input_bits": 2242,
+            "dependency_count": 6,
+            "group_addition_upper_bound": 5,
+            "maximum_absolute_coefficient": 1,
+            "support_count": 6
+          },
+          "exact_relation_reused_from_degree2_certificate": true,
+          "exceptional_quotient_coordinates": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "-1",
+            "0"
+          ],
+          "known_basis_coordinates": [
+            "-2",
+            "-1",
+            "0",
+            "1",
+            "-2",
+            "2",
+            "-3",
+            "0",
+            "2",
+            "-1",
+            "-3",
+            "-2",
+            "-2",
+            "1",
+            "1",
+            "1",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "-1",
+            "0"
+          ],
+          "minimum_lattice_norm": 10,
+          "point_label": "d2-orbit-1ea09"
+        },
+        {
+          "coordinate_denominator": 1,
+          "cover_degree": 2,
+          "cover_label": "orbit-051a1",
+          "equation_complexity": {
+            "coefficient_l1": 9,
+            "coordinate_input_bits": 3143,
+            "dependency_count": 9,
+            "group_addition_upper_bound": 8,
+            "maximum_absolute_coefficient": 1,
+            "support_count": 9
+          },
+          "exact_relation_reused_from_degree2_certificate": true,
+          "exceptional_quotient_coordinates": [
+            "0",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "known_basis_coordinates": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "minimum_lattice_norm": 10,
+          "point_label": "d2-orbit-051a1"
+        },
+        {
+          "coordinate_denominator": 1,
+          "cover_degree": 2,
+          "cover_label": "orbit-0d4ca",
+          "equation_complexity": {
+            "coefficient_l1": 10,
+            "coordinate_input_bits": 3773,
+            "dependency_count": 11,
+            "group_addition_upper_bound": 9,
+            "maximum_absolute_coefficient": 1,
+            "support_count": 10
+          },
+          "exact_relation_reused_from_degree2_certificate": true,
+          "exceptional_quotient_coordinates": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "known_basis_coordinates": [
+            "-2",
+            "0",
+            "0",
+            "0",
+            "-3",
+            "4",
+            "-3",
+            "1",
+            "3",
+            "-1",
+            "-4",
+            "-2",
+            "-3",
+            "1",
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "minimum_lattice_norm": 10,
+          "point_label": "d2-orbit-0d4ca"
+        },
+        {
+          "coordinate_denominator": 1,
+          "cover_degree": 2,
+          "cover_label": "orbit-1d5bb",
+          "equation_complexity": {
+            "coefficient_l1": 11,
+            "coordinate_input_bits": 3762,
+            "dependency_count": 11,
+            "group_addition_upper_bound": 10,
+            "maximum_absolute_coefficient": 1,
+            "support_count": 11
+          },
+          "exact_relation_reused_from_degree2_certificate": true,
+          "exceptional_quotient_coordinates": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0"
+          ],
+          "known_basis_coordinates": [
+            "1",
+            "0",
+            "0",
+            "-1",
+            "1",
+            "-1",
+            "2",
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "-1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0"
+          ],
+          "minimum_lattice_norm": 10,
+          "point_label": "d2-orbit-1d5bb"
+        }
+      ],
+      "tested_cover_universe": {
+        "degree_2_complete_bisection_atlas_size": 39120,
+        "degree_3_complete_deep_translation_cosets": 320,
+        "degree_3_frontier_norm_20_tested_inversion_representatives": 69,
+        "degree_3_frontier_sampled_cosets": 1025,
+        "degree_3_rational_point_count": 0,
+        "degree_3_split_cover_count": 0,
+        "degree_3_tested_inversion_representatives": 160,
+        "degree_4_norm_34_tested_inversion_representatives": 53,
+        "degree_4_rational_point_count": 0,
+        "degree_4_sampled_cosets": 1025,
+        "degree_4_split_cover_count": 0
+      }
+    }
+  ],
+  "generation": {
+    "checker_sha256": "4252284683e90b949596642045b32b5be2e1d5a58e0a353836baaa46bb485b3f",
+    "command": ".venv/bin/python elliptic-curves/scripts/analyze_elkies_2026_deep_cover_quotients.py",
+    "inputs": {
+      "artifacts/generated-results/elkies-2026-equation-bisections-full.json": "78e037dc4170955b8f79ddce4d1d3e0c0d3e9bb8f9614644c59ccc7d605226c4",
+      "artifacts/generated-results/elkies-k3-r17-deep-trisections-v1.json": "aa8a1ae389e29d0bfb0cea5857d384ef7a5eda71af3e676e0d4a00ccbf961884",
+      "artifacts/generated-results/elkies-k3-r17-sampled-frontier-trisections-v1.json": "50b06032832721df1f3e0e4c104615c015e814b5e1ef965c99c358da567a111b",
+      "artifacts/generated-results/elkies-k3-r17-sampled-quadrisections-v1.json": "46a4295cd5d703ee1606553d498f8c88dcaaf91724f5d0cc88eeca3642a2453b",
+      "artifacts/generated-results/elliptic-curves/elkies_2026_bisection_specialization_controls_v1.json": "bffd8a2f5f2814b2587fbb4f7509bcdd2e78caa971360736360afca395258f7f",
+      "artifacts/generated-results/elliptic-curves/elkies_2026_high_rank_positive_controls_v2.json": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc",
+      "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+      "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+    }
+  },
+  "schema": "elliptic-curves.elkies-2026-deep-cover-exceptional-quotients.v1",
+  "status": "PASS_EXACT_DEEP_COVER_EXCEPTIONAL_QUOTIENT_ANALYSIS"
+}
