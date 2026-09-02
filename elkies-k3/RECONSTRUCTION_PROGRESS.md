@@ -3,7 +3,15 @@
 Status checkpoint: 2026-08-21, consolidated after recovery of the canonical
 Kumar `E7+E8` entrance.
 
-## Goal
+> **Historical snapshot.** The reconstruction goal below has been completed:
+> the selected H3 corridor reaches q12/orbit5867, the rootless Jacobian has
+> `24I1`, and its full saturated determinant-948 Mordell--Weil lattice is the
+> pinned R17 lattice.  This file remains active only as process evidence for
+> the early numerical-collision and route-selection lessons.  Use
+> [`README.md`](README.md) for current status and
+> [`ELKIES_K3_PROCESS_ATLAS.md`](ELKIES_K3_PROCESS_ATLAS.md) for chronology.
+
+## Historical goal
 
 Recover an explicit elliptic K3 fibration realizing the already-recovered
 rank-17 Mordell--Weil lattice, together with explicit generic sections.  Once

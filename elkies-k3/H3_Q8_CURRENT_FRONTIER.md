@@ -1,9 +1,11 @@
-# H3 q=8 current frontier
+# Historical H3 q=8 frontier and repair
 
 > **Historical snapshot (2026-08-22).** This note records the q8 repair and is
 > still authoritative for that edge, but it is not the current programme
-> frontier. The equation route now reaches q4/orbit164 `2A3+2A1/MW9`; start
-> from [`README.md`](README.md) and
+> frontier. The equation route now passes q4/orbit164, q8/orbit376, and
+> q12/orbit5867 to the certified rootless `24I1/MW17` endpoint.  The current
+> programme frontier is residual 2-descent in the compact published `t`
+> chart; start from [`README.md`](README.md) and
 > [`ELKIES_K3_PROCESS_ATLAS.md`](ELKIES_K3_PROCESS_ATLAS.md).
 
 Status at snapshot: 2026-08-22, after the binary-quartic 2-cover and

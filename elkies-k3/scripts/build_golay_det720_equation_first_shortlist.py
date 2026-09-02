@@ -28,6 +28,17 @@ LIFT = GEN / "elkies-k3-golay-det720-3a5-marked-gf7-lift-v1.json"
 FORMAL = GEN / "elkies-k3-golay-det720-3a5-formal-smoothness-v1.json"
 QQ_SOURCE = GEN / "elkies-k3-golay-det720-3a5-source-qq-v1.json"
 PICARD19 = GEN / "elkies-k3-golay-det720-3a5-picard19-v1.json"
+SATURATION_REJECTION = (
+    GEN / "elkies-k3-golay-det720-3a5-saturation-rejection-v1.json"
+)
+RATIONAL_SCANS = [
+    GEN / "elkies-k3-golay-det720-3a5-rational-parameter-scan-v1.json",
+    GEN / "elkies-k3-golay-det720-3a5-rational-parameter-scan-m1-v1.json",
+    GEN / "elkies-k3-golay-det720-3a5-rational-parameter-scan-m2p1-v1.json",
+    GEN / "elkies-k3-golay-det720-3a5-rational-parameter-scan-m3-v1.json",
+    GEN / "elkies-k3-golay-det720-3a5-rational-parameter-scan-m4-v1.json",
+    GEN / "elkies-k3-golay-det720-3a5-rational-parameter-scan-m5-v1.json",
+]
 CORRIDOR = GEN / "elkies-k3-golay-det720-degree2-direct-3a5-corridor-v1.json"
 ISOMETRIES = GEN / "elkies-k3-golay-det720-ideal-source-isometries-v1.json"
 DEFAULT_OUTPUT = GEN / "elkies-k3-golay-det720-equation-first-shortlist-v1.json"
@@ -136,6 +147,8 @@ def build() -> dict:
     formal_payload = json.loads(FORMAL.read_text())
     qq_source_payload = json.loads(QQ_SOURCE.read_text())
     picard_payload = json.loads(PICARD19.read_text())
+    saturation_payload = json.loads(SATURATION_REJECTION.read_text())
+    rational_scan_payloads = [json.loads(path.read_text()) for path in RATIONAL_SCANS]
     corridor_payload = json.loads(CORRIDOR.read_text())
     isometry_payload = json.loads(ISOMETRIES.read_text())
 
@@ -276,6 +289,47 @@ def build() -> dict:
                 "artifact": relative(PICARD19),
                 "sha256": digest(PICARD19),
             }
+            row["rational_point_identity_gate"] = {
+                "status": saturation_payload["status"],
+                "mordell_weil_torsion": saturation_payload["full_surface"][
+                    "mordell_weil_torsion"
+                ],
+                "displayed_Q_is_twice_a_rational_section": True,
+                "actual_NS_determinant": int(
+                    saturation_payload["full_surface"][
+                        "neron_severi_determinant"
+                    ]
+                ),
+                "intended_G720_identity": "REJECTED",
+                "artifact": relative(SATURATION_REJECTION),
+                "sha256": digest(SATURATION_REJECTION),
+            }
+            scan_points = [
+                point
+                for payload in rational_scan_payloads
+                for point in payload["exact_rational_points"]
+            ]
+            row["bounded_rational_parameter_scan"] = {
+                "marked_mod7_disks": len(rational_scan_payloads),
+                "candidate_parameters": sum(
+                    int(payload["search"]["candidate_count"])
+                    for payload in rational_scan_payloads
+                ),
+                "exact_QQ_points": len(scan_points),
+                "all_exact_points_have_rational_3_torsion": all(
+                    point["rational_three_torsion_detected"]
+                    for point in scan_points
+                ),
+                "all_exact_points_have_rational_half_Q": all(
+                    point["rational_halves"]["Q"]["linear_factor"]
+                    for point in scan_points
+                ),
+                "artifacts": [
+                    {"path": relative(path), "sha256": digest(path)}
+                    for path in RATIONAL_SCANS
+                ],
+                "boundary": rational_scan_payloads[0]["proof_boundary"],
+            }
         tested_sources.append(row)
 
     pilot = multisection_payload["targets"][0]
@@ -291,6 +345,8 @@ def build() -> dict:
         FORMAL,
         QQ_SOURCE,
         PICARD19,
+        SATURATION_REJECTION,
+        *RATIONAL_SCANS,
         CORRIDOR,
         ISOMETRIES,
         *(path for paths in FIBRE_ARTIFACTS.values() for path in paths),
@@ -307,9 +363,10 @@ def build() -> dict:
                 "This is the only tested normalized determinant-720 chart with a "
                 "complete marked MW2 pair; its marked point also has tangent dimension "
                 "one; the ten nonpivot equations are forced, giving a one-parameter "
-                "formal Z_7 marked family.  Fixing s6=10 rationally reconstructs an "
-                "exact Q model, and two-prime point counts prove geometric Picard "
-                "rank 19."
+                "formal Z_7 marked family.  The rational s6=10 point has rho=19 but "
+                "is rejected: rational 3-torsion and a half of the displayed "
+                "height-four section enlarge the frame by index six, giving NS "
+                "determinant 20 rather than 720."
             ),
         },
         "source_search": {
@@ -422,7 +479,8 @@ def build() -> dict:
             "boundary": corridor_payload["proof_boundary"]["not_proved"],
         },
         "open_gates": [
-            "prove saturation/NS identity for the exact Q source marking",
+            "find a non-torsion, non-divisible rational point on the formal 3A5 family",
+            "prove saturation/NS identity for that replacement Q source marking",
             "derive a rational parameterization of the one-dimensional source family",
             "search higher-height degree-two, higher-degree, or multi-edge corridors",
             "turn lattice multisection classes into effective irreducible curves",
@@ -432,10 +490,11 @@ def build() -> dict:
             "The source inventory, pole audits, displayed finite-field chart searches, "
             "formal 7-adic family, and target lattice spectra are exact within their "
             "individual declared boundaries.  The ideal 48-row cut is classified into "
-            "three exact marked integral-isometry classes, and one rational source point "
-            "has geometric Picard rank 19.  This report proves no saturation/target NS "
-            "identity, rational parameterization, corridor, effective multisection, or "
-            "specialization rank jump."
+            "three exact marked integral-isometry classes.  The first rational point has "
+            "geometric Picard rank 19 but is exactly rejected from the determinant-720 "
+            "class by its maximal index-six even enlargement.  This report proves no "
+            "replacement Q point in the intended NS class, rational parameterization, "
+            "corridor, effective multisection, or specialization rank jump."
         ),
         "inputs": {relative(path): digest(path) for path in sorted(set(inputs))},
         "reproduce": (

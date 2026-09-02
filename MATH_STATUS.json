@@ -36287,6 +36287,96 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
+    },
+    {
+      "id": "EC-K3-GOLAY-DET720-NS-SATURATION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Primitive determinant-720 Golay Neron--Severi lattice and exact discriminant form",
+      "scope": "Seven pinned Golay octads span a primitive rank-seven determinant-720 auxiliary in N(24A1), and the integral coordinate saturation of its rank-17 orthogonal complement also has index one. For NS=U+frame(-1), the literal signature-(1,18) Gram determinant is +720 and the signed elliptic-K3 convention is disc(NS)=-720. The exact discriminant group is Z/2+Z/6+Z/60, with primary quadratic form q_NS equal to the negative of [[1,1/2],[1/2,1]]+[1/4]+[2/3]+[4/3]+[4/5] in Q/2Z. The displayed signature-(2,1) ternary lattice has determinant -720 and discriminant form -q_NS, so gluing gives a primitive embedding in the K3 lattice; a generic period has exact NS and Picard rank 19. This is a complex-geometric existence theorem, not descent to QQ. The stored s6=10 rational 3I6 specialization is explicitly excluded: its hidden 3-torsion and half-section give index six and determinant 20 instead.",
+      "canonical_source": "elkies-k3/GOLAY_OCTAD_LATTICE_DESIGN_2026-09-01.md",
+      "dependencies": [],
+      "checker": "elkies-k3/scripts/certify_golay_det720_ns_saturation.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:830a741ed371ab619d8ee00ec50739572d9b6b32e9196024696ea6490931aebc",
+      "software_lock": [
+        "elkies-k3/scripts/certify_golay_octad_rank17_design.sage",
+        "elkies-k3/scripts/certify_golay_det720_ns_saturation.sage",
+        "artifacts/generated-results/elkies-k3-golay-octad-rank17-det720.json",
+        "artifacts/generated-results/elkies-k3-golay-det720-ns-saturation-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/GOLAY_OCTAD_LATTICE_DESIGN_2026-09-01.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-GOLAY-DET720-PHYSICAL-CORRIDOR",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Six-edge physical corridor from the determinant-720 3A5 marking to MW17",
+      "scope": "Inside the saturated determinant-720 Neron--Severi lattice, exact primitive degree-two q=4 neighbours give the chain 3A5 -> 4A2+A5 -> 3A1+2A2+A3 -> 4A1+A2 -> 3A1 -> 2A1 -> rootless MW17. Every edge passes the finite/affine component, all-section, and finite horizontal-wall gates and has a unimodular transport. The first five edges have horizontal P.O. at most two; the final edge needs two component-Weyl repairs and has P.O.=4. Hence physical connectivity is proved, but an end-to-end P.O.<=2 corridor remains open. This is a marking-level theorem, not an equation-level QQ corridor: the stored rational 3I6 model has saturated determinant 20 and cannot be its start.",
+      "canonical_source": "elkies-k3/GOLAY_OCTAD_LATTICE_DESIGN_2026-09-01.md",
+      "dependencies": ["EC-K3-GOLAY-DET720-NS-SATURATION"],
+      "checker": "elkies-k3/scripts/certify_golay_det720_physical_corridor.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a65c3a4cda0fd21906dd296a8e0e5cc1232f873d9dc3ad239f7e37dca7bdce2f",
+      "software_lock": [
+        "elkies-k3/scripts/certify_golay_det720_physical_corridor.sage",
+        "artifacts/generated-results/elkies-k3-golay-det720-same-ns-compiler-routes-pole4-witness-v1.json",
+        "artifacts/generated-results/elkies-k3-golay-det720-3a5-to-mw17-physical-corridor-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/GOLAY_OCTAD_LATTICE_DESIGN_2026-09-01.md",
+        "elkies-k3/SAME_NS_COMPILER_ROUTES_2026-09-02.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-NS0031-F017-PHYSICAL-CORRIDOR",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Five-edge physical corridor from the NS0031 A1+2A7 marking to F017/MW17",
+      "scope": "Inside the determinant-1184 NS0031 Neron--Severi lattice, exact primitive degree-two neighbours give the chain A1+2A7 -> A1+2A3+A5 -> 5A1+A3 -> 4A1 -> A1 -> rootless F017/MW17. Every edge passes the finite/affine component, all-section, and finite horizontal-wall gates and has a unimodular transport. The edge (q,P.O.) pairs are (6,0),(8,2),(4,2),(8,6),(8,6); the final edge needs one finite-simple-root Weyl repair. The exact selected-route compiler cost is (6,8,2,5,1). F017 is the trisection-first target in the declared pilot. This is a marking-level physical-connectivity theorem inside a bounded meeting search, not global route optimality or an equation-level QQ corridor.",
+      "canonical_source": "elkies-k3/SAME_NS_COMPILER_ROUTES_2026-09-02.md",
+      "dependencies": [],
+      "checker": "elkies-k3/scripts/certify_ns0031_f017_physical_corridor.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d2d63a59f997f568c2ce79363c9a230fc9e7d59cf3fc2d3ad7956d4fd284ee79",
+      "software_lock": [
+        "elkies-k3/scripts/certify_ns0031_f017_physical_corridor.sage",
+        "artifacts/generated-results/elkies-k3-ns0031-same-ns-compiler-routes-f017-witness-v1.json",
+        "artifacts/generated-results/elkies-k3-ns0031-a1-2a7-to-f017-physical-corridor-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": ["elkies-k3/SAME_NS_COMPILER_ROUTES_2026-09-02.md"],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
     }
   ]
 }

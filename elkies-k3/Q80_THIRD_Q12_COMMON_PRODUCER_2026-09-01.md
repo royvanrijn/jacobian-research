@@ -691,9 +691,58 @@ intrinsic long-model gate, but the nine-prime reconstruction is still rejected
 at `p=199`.  This is a negative computation, not a characteristic-zero square
 theorem.
 
-The next precision run is therefore justified only in the restructured form:
-lift the exact pencil and conductor factors to `19^2048`, compile several
-residue-distinct samples, reconstruct the cube/fibre factors and the linear
-factor of `H`, and retain `p=199` or a later independently produced prime as a
-literal holdout.  The `19^2051` exact-pencil compilation is available locally;
-the checkpointed `19^2048` factor/root lift is the active computation.
+### Complete 2048-digit audit and the next justified precision
+
+The restructured `19^2048` run completed.  Its local certificate chain is
+pinned by
+
+```text
+exact pencil mod 19^2051:                         35670a446fecba6e343f209ce4d6d9bdface5c07134d3c7af99831f7d2cdffc5
+factor/root lift mod 19^2048:               33d1c6fc2fca171a13e218d75bd18bac94dbbf4002358d13a1d778c3f6dd28ea
+generic integral basis:                     509229eb7aa1834541d7b8fd2013806800478c27876f75b36c53fa8ec59775e8
+20-sample residue-distinct manifest:         33488fdc58178e0213c677f76db99bad4808259eac6e8a6a72e170a69bef3172
+```
+
+The first label means the exact-pencil artifact used for this run has 2051
+p-adic digits; its filename is
+`q80-third-q12-exact-pencil-p19-adic-precision2051.json`.  All 20 samples
+independently pass the Riemann--Roch dimensions, long Weierstrass identity,
+and two-way maps at 2048 digits.  The batch producer now defaults to the
+support-determined `--limit 20`; the larger seed inventory is available only
+through an explicit larger limit.  Its former human-readable `digits=5`
+message was a display bug and now reports the runtime precision.
+
+The full 2048-digit reconstruction audit still fails the untouched `p=199`
+cube-factor replay.  The tested formulations include coefficient bundles,
+separate rational and `omega` components, coefficient pairs, scalar
+convergents, the `I6/I4` and `I2`-trace base normalizations, separately
+reconstructed evaluations, one joint lattice across eight residue-distinct
+evaluations, all nine projective coefficient charts, and a projective lattice
+over the quadratic field with its correct two-coordinate `K^*` scale.  The
+nine-prime component candidate has SHA-256
+`71a3c70fb44e4bd5f0c5ae3359d117d416f876438e234a26902041a37cd99ea0`;
+its independent `p=199` rejection certificate has SHA-256
+`dbc37a03ebc9f1745088328c85f2a890040d934d2851e7511d4081a67012428a`.
+The quadratic-projective diagnostic candidate has SHA-256
+`41f49c133a0876a662f90163f205d00c138947c603fabfc15a0f573cdcf36c0d`.
+
+The failure remains quantitatively random.  With combined reconstruction
+modulus bit length 8754, the component lattice returns 7781-bit primitive
+coordinates against a 7782-bit random boundary; the coupled quadratic-field
+projective lattice returns 7780 bits against the same boundary.  In contrast,
+the exact closure operands already record coefficient heights 33,926 and
+36,335 bits.  A target of `19^8192` would place the relevant random boundary
+near 30,900 bits and is therefore not justified.  The first precision with a
+meaningful height margin is `19^12288`, whose boundary is about 46,400 bits.
+
+The exact pencil has now been compiled at precision 12291, SHA-256
+`c2df2b3011e1f75c84d359974bc929e51eb47a3aececcf2ffb510b72fa5f2ad4`.
+The checkpointed pointwise factor/root lift to `19^12288` is the active run;
+its log and checkpoint are respectively
+`artifacts/local/elkies-k3/q80-third-q12-p19-target12288-lift.log` and
+`artifacts/local/elkies-k3/q80-third-q12-p19-target12288-checkpoint.json`.
+The generic integral-basis verifier now accepts an explicit
+`--verification-digits 5`, matching the actual theorem claimed and avoiding a
+spurious full-precision determinant calculation.  After the lift, the order
+remains `j -> (c4^3,Delta) -> minimal Jacobian -> birational maps`, with
+`p=199` retained as the literal holdout.

@@ -62,6 +62,7 @@ if duplicates:
     )
 
 tracked_ignored: list[str] = []
+tracked_files: list[str] = []
 if (ROOT / ".git").exists():
     result = subprocess.run(
         ["git", "ls-files", "-ci", "--exclude-standard"],
@@ -71,6 +72,13 @@ if (ROOT / ".git").exists():
         text=True,
     )
     tracked_ignored = result.stdout.splitlines()
+    tracked_files = subprocess.run(
+        ["git", "ls-files"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.splitlines()
 unexpected_tracked_ignored = [
     path for path in tracked_ignored
     if not path.startswith("artifacts/generated-results/")
@@ -81,8 +89,21 @@ if unexpected_tracked_ignored:
         + "\n".join(unexpected_tracked_ignored)
     )
 
+backup_pattern = re.compile(r"(?:~|\.orig|\.rej|\.bak(?:[-.]|$))")
+active_backups = [
+    path
+    for path in tracked_files
+    if "archive" not in Path(path).parts and backup_pattern.search(Path(path).name)
+]
+if active_backups:
+    raise SystemExit(
+        "backup snapshots must be moved under an explicit archive directory:\n"
+        + "\n".join(active_backups)
+    )
+
 print(
     f"PASS repository hygiene: {len(definitions)} active headline identifiers are "
     f"file-unique; {len(tracked_ignored)} pinned generated artifacts are tracked "
-    "under the ignore guard; no other ignored files are tracked"
+    "under the ignore guard; no other ignored files or active-tree backup "
+    "snapshots are tracked"
 )

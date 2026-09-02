@@ -31,7 +31,8 @@ inputs: artifacts/generated-results/elkies-k3-lattice-foundry-v1.json,
   artifacts/generated-results/elkies-k3-3d8-fixed-coordinate-shells-v1.json,
   artifacts/generated-results/elkies-k3-2a9-d6-fixed-coordinate-shells-v1.json,
   artifacts/generated-results/elkies-k3-12a2-fixed-coordinate-shells-v1.json,
-  artifacts/generated-results/elkies-k3-leech-co0-backend-v1.json
+  artifacts/generated-results/elkies-k3-leech-co0-backend-v1.json,
+  artifacts/generated-results/elkies-k3-leech-minimal-basis-coordinate-shell-v1.json
 output: artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json
 """
 
@@ -105,6 +106,10 @@ DEFAULT_12A2_FIXED_SHELLS = (
     ROOT / "artifacts/generated-results/elkies-k3-12a2-fixed-coordinate-shells-v1.json"
 )
 DEFAULT_LEECH = ROOT / "artifacts/generated-results/elkies-k3-leech-co0-backend-v1.json"
+DEFAULT_LEECH_COORDINATE_SHELL = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-leech-minimal-basis-coordinate-shell-v1.json"
+)
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json"
 
 BANDS = (
@@ -913,6 +918,7 @@ def backend_registry(
     three_a8_fixed_shells,
     twelve_a2_fixed_shells,
     leech_foundation,
+    leech_coordinate_shell,
     surfaces,
 ):
     imported = Counter()
@@ -1719,6 +1725,19 @@ def backend_registry(
     assert leech_foundation["status"] == (
         "PASS_EXACT_LEECH_GRAM_AND_CO0_ATLAS_ACTION_BACKEND_FOUNDATION"
     )
+    assert leech_coordinate_shell["schema"] == (
+        "elkies-k3.leech-minimal-basis-coordinate-shell.v1"
+    )
+    assert leech_coordinate_shell["status"] == (
+        "PASS_EXACT_DECLARED_LEECH_COORDINATE_LANGUAGE_PRE_CO1"
+    )
+    assert leech_coordinate_shell["accounting"]["coordinate_subsets_tested"] == 346104
+    assert leech_coordinate_shell["accounting"][
+        "ternary_compatible_signed_basis_types"
+    ] == 194
+    assert leech_coordinate_shell["accounting"][
+        "preliminary_T_NS_surface_keys"
+    ] == 150
     leech = {
         "backend_id": "LEECH-Co0",
         "kind": "leech",
@@ -1728,10 +1747,40 @@ def backend_registry(
         "co0_generator_sha256": leech_foundation["atlas_representation"][
             "generator_sha256"
         ],
-        "state": "AMBIENT_READY_EMBEDDING_ORBITS_OPEN",
+        "state": "EXACT_DECLARED_COORDINATE_LANGUAGE_PRE_CO1_ORBITS_OPEN",
         "imported_frame_isometry_classes": imported["LEECH-Co0"],
         "complements_automatically_rootless": True,
         "completeness_through_determinant_5000": False,
+        "exact_minimal_basis_coordinate_shell": {
+            "status": leech_coordinate_shell["status"],
+            "source_artifact": (
+                "artifacts/generated-results/"
+                "elkies-k3-leech-minimal-basis-coordinate-shell-v1.json"
+            ),
+            "coordinate_subsets_tested": leech_coordinate_shell["accounting"][
+                "coordinate_subsets_tested"
+            ],
+            "signed_permutation_basis_types": leech_coordinate_shell[
+                "accounting"
+            ]["signed_permutation_basis_types"],
+            "ternary_compatible_signed_basis_types": leech_coordinate_shell[
+                "accounting"
+            ]["ternary_compatible_signed_basis_types"],
+            "preliminary_T_NS_surface_keys": leech_coordinate_shell["accounting"][
+                "preliminary_T_NS_surface_keys"
+            ],
+            "determinant_range": [
+                leech_coordinate_shell["accounting"]["determinant_minimum"],
+                leech_coordinate_shell["accounting"]["determinant_maximum"],
+            ],
+            "catalogue_import_status": (
+                "withheld pending exact Co1 embedding quotient"
+            ),
+            "completeness_scope": (
+                "all 7-of-24 coordinate summands of one certified norm-four "
+                "unimodular ambient basis; not all primitive Leech auxiliaries"
+            ),
+        },
         "warning": (
             "The 290 Hoehn-Mason orbits classify fixed-point sublattices, not all "
             "primitive rank-seven sublattices; they are not a completeness shortcut."
@@ -1762,6 +1811,7 @@ def build_payload(
     three_a8_fixed_shells,
     twelve_a2_fixed_shells,
     leech_foundation,
+    leech_coordinate_shell,
 ):
     frontier_stop = octad_completion_manifest["parameters"][
         "prefix_stop_zero_based_exclusive"
@@ -1858,6 +1908,7 @@ def build_payload(
         three_a8_fixed_shells,
         twelve_a2_fixed_shells,
         leech_foundation,
+        leech_coordinate_shell,
         surfaces,
     )
 
@@ -2244,7 +2295,11 @@ def build_payload(
                 "enumeration. The 24A1 completion shards exhaust all 10,547 "
                 "five-octad prefix orbits in the positive seven-octad generator "
                 "language; their full Weyl-M24 quotient is exact, but signed/non-octad "
-                "generator languages remain open. The imported ternary genus "
+                "generator languages remain open. The Leech minimal-basis coordinate "
+                "language exhausts 346,104 primitive summands and gives 150 exact "
+                "preliminary T/NS keys, but those records remain unimported until the "
+                "full Co1 embedding quotient is certified; it is not an all-primitive "
+                "Leech shard. The imported ternary genus "
                 "representatives are exact K3 examples, not an enumeration of every "
                 "class inside each indefinite ternary genus. Surface IDs catalogue exact "
                 "records, not an assertion that the determinant bands are closed."
@@ -2371,6 +2426,17 @@ def build_payload(
             "leech_backends": 1,
             "open_backend_band_shards": len(backend_shards),
             "complete_backend_band_shards": 0,
+            "leech_pre_co1_coordinate_subsets_tested": leech_coordinate_shell[
+                "accounting"
+            ]["coordinate_subsets_tested"],
+            "leech_pre_co1_ternary_compatible_signed_basis_types": (
+                leech_coordinate_shell["accounting"][
+                    "ternary_compatible_signed_basis_types"
+                ]
+            ),
+            "leech_pre_co1_preliminary_T_NS_surface_keys": leech_coordinate_shell[
+                "accounting"
+            ]["preliminary_T_NS_surface_keys"],
         },
         "backends": {"rooted_niemeier": rooted, "leech": leech},
         "enumeration_shards": backend_shards,
@@ -2476,6 +2542,11 @@ parser.add_argument(
     default=DEFAULT_12A2_FIXED_SHELLS,
 )
 parser.add_argument("--leech", type=Path, default=DEFAULT_LEECH)
+parser.add_argument(
+    "--leech-coordinate-shell",
+    type=Path,
+    default=DEFAULT_LEECH_COORDINATE_SHELL,
+)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 parser.add_argument("--check", action="store_true")
 arguments = parser.parse_args()
@@ -2548,6 +2619,9 @@ twelve_a2_fixed_shells_payload = json.loads(
     arguments.twelve_a2_fixed_shells.read_text()
 )
 leech_payload = json.loads(arguments.leech.read_text())
+leech_coordinate_shell_payload = json.loads(
+    arguments.leech_coordinate_shell.read_text()
+)
 payload = build_payload(
     foundry_payload,
     golay_payload,
@@ -2570,6 +2644,7 @@ payload = build_payload(
     three_a8_fixed_shells_payload,
     twelve_a2_fixed_shells_payload,
     leech_payload,
+    leech_coordinate_shell_payload,
 )
 encoded = json.dumps(payload, indent=2, sort_keys=True) + "\n"
 

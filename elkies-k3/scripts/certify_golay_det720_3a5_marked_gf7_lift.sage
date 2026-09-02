@@ -150,6 +150,18 @@ parser.add_argument("--marking", type=Path, default=DEFAULT_MARKING)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 parser.add_argument("--lift-precision", type=int, default=8)
 parser.add_argument(
+    "--marked-model-rank",
+    type=int,
+    default=0,
+    help="zero-based rank among models carrying at least one marked MW2 pair",
+)
+parser.add_argument(
+    "--marked-pair-index",
+    type=int,
+    default=0,
+    help="zero-based marked-pair index inside the selected model",
+)
+parser.add_argument(
     "--free-parameter-integer",
     type=int,
     help=(
@@ -185,8 +197,12 @@ if marking.get("status") != (
 marked_models = [row for row in marking["models"] if row["marked_mw2_pairs"]]
 if not marked_models or int(marked_models[0]["example_index"]) != 54:
     raise ArithmeticError("the pinned first marked model changed")
-marked_model = marked_models[0]
-pair = marked_model["marked_mw2_pairs"][0]
+if not 0 <= arguments.marked_model_rank < len(marked_models):
+    parser.error("--marked-model-rank is outside the marked-model inventory")
+marked_model = marked_models[arguments.marked_model_rank]
+if not 0 <= arguments.marked_pair_index < len(marked_model["marked_mw2_pairs"]):
+    parser.error("--marked-pair-index is outside the selected model")
+pair = marked_model["marked_mw2_pairs"][arguments.marked_pair_index]
 left_index = int(pair["left_section_index"])
 right_index = int(pair["right_section_index"])
 section_P = marked_model["basis_section_candidates"][0][left_index]
@@ -425,6 +441,13 @@ if arguments.free_parameter_integer is not None:
         f" --free-parameter-integer {arguments.free_parameter_integer} "
         f"--lift-precision {arguments.lift_precision} "
         f"--output {display_path(output_path)}"
+    )
+if arguments.marked_model_rank or arguments.marked_pair_index:
+    output["seed"]["marked_model_rank"] = int(arguments.marked_model_rank)
+    output["seed"]["marked_pair_index"] = int(arguments.marked_pair_index)
+    output["reproduce"] += (
+        f" --marked-model-rank {arguments.marked_model_rank}"
+        f" --marked-pair-index {arguments.marked_pair_index}"
     )
 serialized = json.dumps(output, indent=2, sort_keys=True) + "\n"
 if arguments.check:

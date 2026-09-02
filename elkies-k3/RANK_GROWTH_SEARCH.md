@@ -1,5 +1,14 @@
 # Ignition-first rank-growth search
 
+> **Historical pre-endpoint workflow.** The rank-17 model and its seventeen
+> generic sections have since been recovered exactly.  Current rank-32 work
+> must first pass the fail-closed residual quotient
+> `Sel_2(E_t)/<P1,...,P17>` on the same parameter and minimal curve.  This
+> height-Gram ignition/cascade interface remains useful only after that gate or
+> for replaying historical controls; it is not authorization for a raw point
+> search.  See [`README.md`](README.md) and
+> [`../elliptic-curves/README.md`](../elliptic-curves/README.md).
+
 This workflow implements the search strategy learned from the controlled
 rank-21 experiments:
 
@@ -27,16 +36,18 @@ delta(P) = h(P) - b^T G^-1 b,
 where `b_i = <P, P_i>`.  A positive `delta` is the squared height of the
 component transverse to the current Mordell-Weil span.
 
-## Important current limitation
+## Superseded reconstruction limitation
 
-`data/k3-model/README.md` still records the canonical Elkies rank-17
-Weierstrass model and generic Mordell-Weil sections as artifacts to recover.
-Consequently this code deliberately does **not** invent a specialization or
-point-finding formula.  It consumes height-Gram records produced by the
-specialization/point-search stage.  Once the model and sections are recovered,
-that stage can feed this stable interface directly.
+At the time of this workflow, `data/k3-model/README.md` still listed the
+canonical Elkies rank-17 Weierstrass model and generic Mordell--Weil sections
+as artifacts to recover.  They are now pinned in
+[`data/fibrations/elkies_2026_published_r17_model.json`](data/fibrations/elkies_2026_published_r17_model.json)
+and the endpoint certificates described in [`README.md`](README.md).
+The code still consumes height-Gram records rather than inventing a
+specialization or point-finding formula, but present use is subordinate to the
+residual 2-Selmer gate above.
 
-### Active reconstruction status
+### Historical reconstruction checkpoint
 
 The model-recovery work is now active rather than purely archival.  See
 [`RECONSTRUCTION_PROGRESS.md`](RECONSTRUCTION_PROGRESS.md) for the current

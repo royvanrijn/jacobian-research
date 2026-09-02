@@ -7,7 +7,7 @@ import json
 import math
 from pathlib import Path
 
-from sage.all import CRT_list, GF, Matrix, PolynomialRing, QQ, ZZ
+from sage.all import CRT_list, GF, Matrix, PolynomialRing, QQ, ZZ, inverse_mod
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -56,11 +56,19 @@ parser.add_argument(
 )
 parser.add_argument(
     "--reconstruction-granularity",
-    choices=("auto", "bundle", "component", "pair", "scalar"),
+    choices=(
+        "auto",
+        "bundle",
+        "component",
+        "quadratic-projective",
+        "pair",
+        "scalar",
+    ),
     default="auto",
     help=(
         "shared-denominator bundle reconstruction, separate projective blocks for "
-        "the rational and omega components, one algebraic coefficient pair at a "
+        "the rational and omega components, one projective factor over the quadratic "
+        "field with a two-coordinate scale, one algebraic coefficient pair at a "
         "time, or independent rational coordinates"
     ),
 )
@@ -76,16 +84,30 @@ parser.add_argument(
 )
 parser.add_argument(
     "--intrinsic-basis",
-    choices=("monomial", "evaluations"),
+    choices=("monomial", "evaluations", "joint-evaluations"),
     default="monomial",
     help=(
-        "reconstruct intrinsic factor coefficients directly or reconstruct exact values "
-        "at residue-distinct p-adic sample nodes before exact interpolation"
+        "reconstruct intrinsic factor coefficients directly, reconstruct each exact "
+        "value separately at residue-distinct p-adic sample nodes, or reconstruct all "
+        "node values in one joint projective lattice before exact interpolation"
+    ),
+)
+parser.add_argument(
+    "--c4-pivot",
+    type=int,
+    default=8,
+    help=(
+        "coefficient index 0..8 used to normalize the projective degree-eight "
+        "c4 factor before reconstruction; 8 is the usual monic chart"
     ),
 )
 args = parser.parse_args()
 for name in ("manifest", "transport", "source", "operands", "output"):
     setattr(args, name, getattr(args, name).resolve())
+if not 0 <= args.c4_pivot <= 8:
+    raise ValueError("--c4-pivot must lie between 0 and 8")
+if args.c4_pivot != 8 and args.intrinsic_basis != "monomial":
+    raise ValueError("non-leading c4 pivots currently require --intrinsic-basis monomial")
 
 
 def sha256(path):
@@ -615,6 +637,15 @@ if [
 ] != interpolated["numerator"]:
     raise ArithmeticError("the normalized p-adic j numerator is not a scalar times a cube")
 
+c4_pivot_inverse = inverse(tuple(modular_cube_root[args.c4_pivot]))
+modular_cube_root_in_pivot_chart = [
+    list(mul(tuple(coefficient), c4_pivot_inverse))
+    for coefficient in modular_cube_root
+]
+if modular_cube_root_in_pivot_chart[args.c4_pivot] != [1, 0]:
+    raise ArithmeticError("the selected p-adic c4 pivot did not normalize to one")
+c4_free_indices = [index for index in range(9) if index != args.c4_pivot]
+
 
 def rational_mod(value, local_prime):
     numerator = int(value.numerator()) % local_prime
@@ -836,6 +867,90 @@ def reconstruct_pair_block(modular_pairs, validator, label, lattice_modulus=modu
             }
     raise ArithmeticError(
         f"{label}: no structured projective LLL row validates; "
+        f"short-row bits={diagnostics[:8]}"
+    )
+
+
+def reconstruct_quadratic_projective_factor(
+    modular_free_pairs,
+    validator,
+    label,
+    lattice_modulus=modulus,
+):
+    """Reconstruct one projective polynomial over QQ(omega).
+
+    The selected pivot coefficient supplies a two-coordinate scale ``u+v*omega``.
+    For every other coefficient ``a+b*omega`` the congruences are
+
+        x = a*u + D*b*v,   y = b*u + a*v  (mod M),
+
+    where ``D=omega^2``.  Thus the lattice has sixteen modulus rows and two
+    coupled scale rows, rather than imposing one rational scale on all
+    quadratic coordinates or reconstructing the two components independently.
+    """
+    lattice_modulus = ZZ(lattice_modulus)
+    if len(modular_free_pairs) != 8:
+        raise ValueError("a degree-eight projective factor needs eight free pairs")
+    omega_numerator = ZZ(omega_square_exact.numerator())
+    omega_denominator = ZZ(omega_square_exact.denominator())
+    if math.gcd(int(omega_denominator), int(lattice_modulus)) != 1:
+        raise ZeroDivisionError("quadratic discriminant denominator meets lattice modulus")
+    omega_square_modulus = (
+        omega_numerator * inverse_mod(omega_denominator, lattice_modulus)
+    ) % lattice_modulus
+    dimension = 18
+    lattice = Matrix(ZZ, dimension, dimension)
+    for index in range(16):
+        lattice[index, index] = lattice_modulus
+    scale_one_row = 16
+    scale_omega_row = 17
+    for pair_index, pair in enumerate(modular_free_pairs):
+        a = ZZ(pair[0]) % lattice_modulus
+        b = ZZ(pair[1]) % lattice_modulus
+        lattice[scale_one_row, 2 * pair_index] = a
+        lattice[scale_one_row, 2 * pair_index + 1] = b
+        lattice[scale_omega_row, 2 * pair_index] = omega_square_modulus * b
+        lattice[scale_omega_row, 2 * pair_index + 1] = a
+    lattice[scale_one_row, 16] = 1
+    lattice[scale_omega_row, 17] = 1
+    reduced = lattice.LLL(delta=0.99)
+    diagnostics = []
+    for row in sorted(reduced.rows(), key=lambda value: value.dot_product(value)):
+        row = list(row)
+        pivot_pair = [QQ(row[16]), QQ(row[17])]
+        if pivot_pair == EZERO:
+            continue
+        common = math.gcd(*(abs(int(value)) for value in row))
+        if common > 1:
+            row = [value // common for value in row]
+            pivot_pair = [QQ(row[16]), QQ(row[17])]
+        first_nonzero = next((value for value in row if value), ZZ(1))
+        if first_nonzero < 0:
+            row = [-value for value in row]
+            pivot_pair = [QQ(row[16]), QQ(row[17])]
+        try:
+            candidate_free = [
+                ediv([QQ(row[2 * index]), QQ(row[2 * index + 1])], pivot_pair)
+                for index in range(8)
+            ]
+        except ZeroDivisionError:
+            continue
+        maximum_bits = max(abs(ZZ(value)).nbits() for value in row)
+        diagnostics.append(maximum_bits)
+        if validator(candidate_free):
+            return candidate_free, {
+                "method": "projective LLL over QQ(omega) with a coupled two-coordinate scale",
+                "lattice_dimension": dimension,
+                "congruence_count": 16,
+                "maximum_primitive_coordinate_bits": maximum_bits,
+                "random_lattice_boundary_bits": int(
+                    math.ceil(lattice_modulus.nbits() * 16 / dimension)
+                ),
+                "short_rows_tested": len(diagnostics),
+                "validated_primes": RECONSTRUCTION_TRANSPORTED_PRIMES,
+            }
+    raise ArithmeticError(
+        f"{label}: no quadratic-projective LLL row validates; "
         f"short-row bits={diagnostics[:8]}"
     )
 
@@ -1117,6 +1232,39 @@ def finite_cube_root_from_numerator(coefficients, local_prime):
     return result
 
 
+def finite_c4_factor_in_pivot_chart(local_prime):
+    coefficients = finite_cube_root_from_numerator(
+        finite_normalized_j(local_prime)[
+            "numerator_coefficients_low_to_high_1_omega"
+        ],
+        local_prime,
+    )
+    local_omega_square = rational_mod(omega_square_exact, local_prime)
+
+    def local_mul(left, right):
+        return [
+            (left[0] * right[0] + local_omega_square * left[1] * right[1])
+            % local_prime,
+            (left[0] * right[1] + left[1] * right[0]) % local_prime,
+        ]
+
+    pivot = coefficients[args.c4_pivot]
+    norm = (pivot[0] * pivot[0] - local_omega_square * pivot[1] * pivot[1]) % local_prime
+    if not norm:
+        raise ZeroDivisionError(
+            f"c4 coefficient {args.c4_pivot} is not a unit at p={local_prime}"
+        )
+    inverse_norm = pow(norm, -1, local_prime)
+    pivot_inverse = [
+        pivot[0] * inverse_norm % local_prime,
+        -pivot[1] * inverse_norm % local_prime,
+    ]
+    normalized = [local_mul(value, pivot_inverse) for value in coefficients]
+    if normalized[args.c4_pivot] != [1, 0]:
+        raise ArithmeticError("finite c4 pivot did not normalize to one")
+    return normalized
+
+
 finite_denominator_factor_cache = {}
 
 
@@ -1180,21 +1328,38 @@ def crt_extend_pair(padic_pair, finite_pair_getter):
 
 
 crt_cube_root_lower = []
-for coefficient_index, padic_pair in enumerate(modular_cube_root[:-1]):
+for coefficient_index in c4_free_indices:
+    padic_pair = modular_cube_root_in_pivot_chart[coefficient_index]
+
     def finite_cube_coefficient(local_prime, index=coefficient_index):
-        return finite_cube_root_from_numerator(
-            finite_normalized_j(local_prime)[
-                "numerator_coefficients_low_to_high_1_omega"
-            ],
-            local_prime,
-        )[index]
+        return finite_c4_factor_in_pivot_chart(local_prime)[index]
 
     crt_cube_root_lower.append(crt_extend_pair(padic_pair, finite_cube_coefficient))
 
 
-def validate_cube_root(candidate_lower, selected_primes=RECONSTRUCTION_TRANSPORTED_PRIMES):
+def decode_c4_pivot_chart(candidate_free):
+    if len(candidate_free) != 8:
+        raise ArithmeticError("a degree-eight projective c4 factor needs eight free coefficients")
+    candidate_in_chart = []
+    position = 0
+    for coefficient_index in range(9):
+        if coefficient_index == args.c4_pivot:
+            candidate_in_chart.append([QQ(1), QQ(0)])
+        else:
+            candidate_in_chart.append(list(candidate_free[position]))
+            position += 1
+    leading = candidate_in_chart[-1]
+    if leading == EZERO:
+        raise ZeroDivisionError("the reconstructed c4 factor lost degree eight")
+    return [ediv(coefficient, leading) for coefficient in candidate_in_chart]
+
+
+def validate_cube_root(candidate_free, selected_primes=RECONSTRUCTION_TRANSPORTED_PRIMES):
     selected_primes = set(selected_primes)
-    candidate = candidate_lower + [[QQ(1), QQ(0)]]
+    try:
+        candidate = decode_c4_pivot_chart(candidate_free)
+    except (ArithmeticError, ZeroDivisionError):
+        return False
     for local_prime_text, model in transport["transported_models"].items():
         local_prime = int(local_prime_text)
         if local_prime not in selected_primes:
@@ -1278,15 +1443,14 @@ def finite_pair_evaluate(coefficients, exact_node, local_prime):
 
 exact_cube_root_lower = None
 cube_reconstruction = None
-if args.intrinsic_basis == "evaluations":
+if args.intrinsic_basis in ("evaluations", "joint-evaluations"):
     if args.base_normalization != "pinned":
         raise ValueError("evaluation-basis reconstruction currently requires the exact pinned U nodes")
     evaluation_nodes = [
         [QQ(value) for value in payload["specialization"]["base_U_coefficients_1_omega"]]
         for unused_path, payload in training[:8]
     ]
-    reconstructed_values = []
-    evaluation_diagnostics = []
+    evaluation_records = []
     for evaluation_index, exact_node in enumerate(evaluation_nodes):
         padic_node = c([int(value) for value in exact_node])
         padic_value = evaluate_modular(modular_cube_root, padic_node)
@@ -1301,49 +1465,139 @@ if args.intrinsic_basis == "evaluations":
             return finite_pair_evaluate(coefficients, node, local_prime)
 
         crt_value = crt_extend_pair(padic_value, finite_evaluation)
+        evaluation_records.append((exact_node, crt_value, finite_evaluation))
 
-        def validate_evaluation(candidate, node=exact_node):
-            for local_prime in RECONSTRUCTION_TRANSPORTED_PRIMES:
-                expected = finite_evaluation(local_prime, node)
-                try:
-                    reduction = [rational_mod(value, local_prime) for value in candidate[0]]
-                except ZeroDivisionError:
-                    return False
-                if reduction != expected:
-                    return False
-            return True
+    reconstructed_values = []
+    evaluation_diagnostics = []
+    if args.intrinsic_basis == "joint-evaluations":
+        if args.reconstruction_granularity == "component":
+            reconstructed_components = []
+            component_diagnostics = []
+            for omega_index in range(2):
+                component_residues = [
+                    crt_value[omega_index]
+                    for unused_node, crt_value, unused_finite in evaluation_records
+                ]
 
-        if args.reconstruction_granularity == "scalar":
-            reconstructed_value = []
-            scalar_diagnostics = []
-            for omega_index, residue in enumerate(crt_value):
-                def validate_evaluation_scalar(candidate):
-                    return math.gcd(
-                        int(candidate.denominator()), int(reconstruction_modulus)
-                    ) == 1
+                def validate_evaluation_component(candidate, coordinate=omega_index):
+                    for candidate_value, (unused_node, unused_crt, finite_evaluation) in zip(
+                        candidate, evaluation_records
+                    ):
+                        for local_prime in RECONSTRUCTION_TRANSPORTED_PRIMES:
+                            try:
+                                reduction = rational_mod(candidate_value, local_prime)
+                            except ZeroDivisionError:
+                                return False
+                            if reduction != finite_evaluation(local_prime)[coordinate]:
+                                return False
+                    return True
 
-                coordinate, scalar_diagnostic = reconstruct_scalar_asymmetric(
-                    residue,
-                    validate_evaluation_scalar,
-                    f"c4 factor evaluation {evaluation_index} coordinate {omega_index}",
+                component, diagnostic = reconstruct_scalar_block(
+                    component_residues,
+                    validate_evaluation_component,
+                    f"joint c4 factor evaluations quadratic-basis component {omega_index}",
                     lattice_modulus=reconstruction_modulus,
                 )
-                reconstructed_value.append(coordinate)
-                scalar_diagnostics.append(scalar_diagnostic)
-            diagnostic = {
-                "method": "independent scalar evaluation reconstruction",
-                "coordinates": scalar_diagnostics,
+                reconstructed_components.append(component)
+                component_diagnostics.append(diagnostic)
+            reconstructed_values = [
+                [reconstructed_components[0][index], reconstructed_components[1][index]]
+                for index in range(len(evaluation_records))
+            ]
+            evaluation_diagnostics = {
+                "method": (
+                    "two joint projective evaluation lattices for the rational and "
+                    "omega components"
+                ),
+                "components": component_diagnostics,
             }
         else:
-            reconstructed, diagnostic = reconstruct_pair_block(
-                [crt_value],
-                validate_evaluation,
-                f"c4 factor evaluation {evaluation_index}",
+            crt_values = [
+                crt_value for unused_node, crt_value, unused_finite in evaluation_records
+            ]
+
+            def validate_joint_evaluations(candidate):
+                for candidate_value, (unused_node, unused_crt, finite_evaluation) in zip(
+                    candidate, evaluation_records
+                ):
+                    for local_prime in RECONSTRUCTION_TRANSPORTED_PRIMES:
+                        try:
+                            reduction = [
+                                rational_mod(value, local_prime) for value in candidate_value
+                            ]
+                        except ZeroDivisionError:
+                            return False
+                        if reduction != finite_evaluation(local_prime):
+                            return False
+                interpolation_rows = []
+                for node, value in zip(evaluation_nodes, candidate):
+                    powers = [exact_pair_power(node, exponent) for exponent in range(9)]
+                    interpolation_rows.append(powers[:8] + [esub(value, powers[8])])
+                try:
+                    candidate_lower = exact_pair_linear_solve(interpolation_rows, 8)
+                except (ArithmeticError, ZeroDivisionError):
+                    return False
+                return validate_cube_root(candidate_lower)
+
+            reconstructed_values, joint_diagnostic = reconstruct_pair_block(
+                crt_values,
+                validate_joint_evaluations,
+                "joint residue-distinct c4 factor evaluations",
                 lattice_modulus=reconstruction_modulus,
             )
-            reconstructed_value = reconstructed[0]
-        reconstructed_values.append(reconstructed_value)
-        evaluation_diagnostics.append(diagnostic)
+            evaluation_diagnostics = {
+                "method": "one joint projective lattice for all quadratic node values",
+                "joint_lattice": joint_diagnostic,
+            }
+    else:
+        for evaluation_index, (exact_node, crt_value, finite_evaluation) in enumerate(
+            evaluation_records
+        ):
+
+            def validate_evaluation(candidate):
+                for local_prime in RECONSTRUCTION_TRANSPORTED_PRIMES:
+                    expected = finite_evaluation(local_prime)
+                    try:
+                        reduction = [
+                            rational_mod(value, local_prime) for value in candidate[0]
+                        ]
+                    except ZeroDivisionError:
+                        return False
+                    if reduction != expected:
+                        return False
+                return True
+
+            if args.reconstruction_granularity == "scalar":
+                reconstructed_value = []
+                scalar_diagnostics = []
+                for omega_index, residue in enumerate(crt_value):
+                    def validate_evaluation_scalar(candidate):
+                        return math.gcd(
+                            int(candidate.denominator()), int(reconstruction_modulus)
+                        ) == 1
+
+                    coordinate, scalar_diagnostic = reconstruct_scalar_asymmetric(
+                        residue,
+                        validate_evaluation_scalar,
+                        f"c4 factor evaluation {evaluation_index} coordinate {omega_index}",
+                        lattice_modulus=reconstruction_modulus,
+                    )
+                    reconstructed_value.append(coordinate)
+                    scalar_diagnostics.append(scalar_diagnostic)
+                diagnostic = {
+                    "method": "independent scalar evaluation reconstruction",
+                    "coordinates": scalar_diagnostics,
+                }
+            else:
+                reconstructed, diagnostic = reconstruct_pair_block(
+                    [crt_value],
+                    validate_evaluation,
+                    f"c4 factor evaluation {evaluation_index}",
+                    lattice_modulus=reconstruction_modulus,
+                )
+                reconstructed_value = reconstructed[0]
+            reconstructed_values.append(reconstructed_value)
+            evaluation_diagnostics.append(diagnostic)
     interpolation_rows = []
     for node, value in zip(evaluation_nodes, reconstructed_values):
         powers = [exact_pair_power(node, exponent) for exponent in range(9)]
@@ -1352,11 +1606,32 @@ if args.intrinsic_basis == "evaluations":
     if not validate_cube_root(exact_cube_root_lower):
         raise ArithmeticError("evaluation-basis c4-factor reconstruction failed full replay")
     cube_reconstruction = {
-        "method": "residue-distinct intrinsic evaluations followed by exact interpolation",
+        "method": (
+            "joint residue-distinct intrinsic evaluations followed by exact interpolation"
+            if args.intrinsic_basis == "joint-evaluations"
+            else "residue-distinct intrinsic evaluations followed by exact interpolation"
+        ),
         "evaluation_nodes_coefficients_1_omega": [
             [[str(value) for value in pair] for pair in evaluation_nodes]
         ][0],
         "evaluations": evaluation_diagnostics,
+    }
+
+if (
+    exact_cube_root_lower is None
+    and args.reconstruction_granularity == "quadratic-projective"
+):
+    exact_cube_root_lower, quadratic_projective_diagnostic = (
+        reconstruct_quadratic_projective_factor(
+            crt_cube_root_lower,
+            validate_cube_root,
+            f"degree-eight c4 factor in coefficient-{args.c4_pivot} chart",
+            lattice_modulus=reconstruction_modulus,
+        )
+    )
+    cube_reconstruction = {
+        "method": "one projective factor over the exact quadratic coefficient field",
+        "quadratic_projective_lattice": quadratic_projective_diagnostic,
     }
 
 if exact_cube_root_lower is None and args.reconstruction_granularity == "component":
@@ -1367,17 +1642,12 @@ if exact_cube_root_lower is None and args.reconstruction_granularity == "compone
 
         def validate_cube_component(candidate, coordinate=omega_index):
             for local_prime in RECONSTRUCTION_TRANSPORTED_PRIMES:
-                expected = finite_cube_root_from_numerator(
-                    finite_normalized_j(local_prime)[
-                        "numerator_coefficients_low_to_high_1_omega"
-                    ],
-                    local_prime,
-                )
+                expected = finite_c4_factor_in_pivot_chart(local_prime)
                 try:
                     reduction = [rational_mod(value, local_prime) for value in candidate]
                 except ZeroDivisionError:
                     return False
-                if reduction != [pair[coordinate] for pair in expected[:-1]]:
+                if reduction != [expected[index][coordinate] for index in c4_free_indices]:
                     return False
             return True
 
@@ -1406,7 +1676,7 @@ if exact_cube_root_lower is None and args.reconstruction_granularity in ("auto",
         exact_cube_root_lower, cube_reconstruction = reconstruct_pair_block(
             crt_cube_root_lower,
             validate_cube_root,
-            "monic degree-8 c4 factor",
+            f"degree-8 c4 factor in coefficient-{args.c4_pivot} chart",
             lattice_modulus=reconstruction_modulus,
         )
     except ArithmeticError as error:
@@ -1422,17 +1692,14 @@ if exact_cube_root_lower is None:
     exact_cube_root_lower = []
     coefficient_diagnostics = []
     for coefficient_index, modular_pair in enumerate(crt_cube_root_lower):
-        def validate_cube_root_coefficient(candidate, index=coefficient_index):
+        actual_coefficient_index = c4_free_indices[coefficient_index]
+
+        def validate_cube_root_coefficient(candidate, index=actual_coefficient_index):
             for local_prime_text, model in transport["transported_models"].items():
                 local_prime = int(local_prime_text)
                 if local_prime not in RECONSTRUCTION_TRANSPORTED_PRIMES:
                     continue
-                expected = finite_cube_root_from_numerator(
-                    finite_normalized_j(local_prime)[
-                        "numerator_coefficients_low_to_high_1_omega"
-                    ],
-                    local_prime,
-                )[index]
+                expected = finite_c4_factor_in_pivot_chart(local_prime)[index]
                 reduction = [rational_mod(value, local_prime) for value in candidate[0]]
                 if reduction != expected:
                     return False
@@ -1444,7 +1711,7 @@ if exact_cube_root_lower is None:
                 reconstructed, diagnostic = reconstruct_pair_block(
                     [modular_pair],
                     validate_cube_root_coefficient,
-                    f"c4 factor coefficient {coefficient_index}",
+                    f"c4 factor coefficient {actual_coefficient_index}",
                     lattice_modulus=reconstruction_modulus,
                 )
                 exact_pair = reconstructed[0]
@@ -1463,7 +1730,7 @@ if exact_cube_root_lower is None:
             for omega_index, residue in enumerate(modular_pair):
                 def validate_scalar(
                     candidate,
-                    index=coefficient_index,
+                    index=actual_coefficient_index,
                     coordinate=omega_index,
                 ):
                     # Every convergent already satisfies the one combined CRT
@@ -1477,7 +1744,7 @@ if exact_cube_root_lower is None:
                 exact_coordinate, scalar_diagnostic = reconstruct_scalar_asymmetric(
                     residue,
                     validate_scalar,
-                    f"c4 factor coefficient {coefficient_index} coordinate {omega_index}",
+                    f"c4 factor coefficient {actual_coefficient_index} coordinate {omega_index}",
                     lattice_modulus=reconstruction_modulus,
                 )
                 exact_pair.append(exact_coordinate)
@@ -1497,7 +1764,7 @@ if exact_cube_root_lower is None:
         "joint_failure": str(joint_error),
         "coefficients": coefficient_diagnostics,
     }
-cube_root = exact_cube_root_lower + [[QQ(1), QQ(0)]]
+cube_root = decode_c4_pivot_chart(exact_cube_root_lower)
 if HELD_OUT_TRANSPORTED_PRIMES and not validate_cube_root(
     exact_cube_root_lower, HELD_OUT_TRANSPORTED_PRIMES
 ):
@@ -1726,6 +1993,8 @@ if HELD_OUT_TRANSPORTED_PRIMES and not validate_candidate_at_finite_primes(
 reconstruction = {
     "method": "j=c4^3/Delta structured reconstruction",
     "requested_granularity": args.reconstruction_granularity,
+    "intrinsic_basis": args.intrinsic_basis,
+    "c4_projective_pivot_coefficient_index": args.c4_pivot,
     "combined_reconstruction_modulus_bits": int(reconstruction_modulus.nbits()),
     "CRT_auxiliary_primes": CRT_AUXILIARY_PRIMES,
     "monic_degree8_cube_root": cube_reconstruction,
@@ -1806,6 +2075,8 @@ reproduce_parts = [
     f"--output {args.output.relative_to(ROOT)}",
     f"--reconstruction-granularity {args.reconstruction_granularity}",
     f"--base-normalization {args.base_normalization}",
+    f"--intrinsic-basis {args.intrinsic_basis}",
+    f"--c4-pivot {args.c4_pivot}",
 ]
 for heldout_prime in HELD_OUT_TRANSPORTED_PRIMES:
     reproduce_parts.append(f"--holdout-prime {heldout_prime}")

@@ -602,11 +602,18 @@ def search_ambient(label, ambient, auxiliary, ambient_roots, target_genus, argum
 def build(arguments):
     target_payload = json.loads(arguments.target.read_text())
     catalog_payload = json.loads(arguments.catalog.read_text())
+    golay_default = target_payload.get("schema") == (
+        "elkies-k3.golay-octad-rank17-det720.v1"
+    )
+    target_determinant = int(
+        target_payload.get("determinant", target_payload["frame"]["determinant"])
+    )
     auxiliary = matrix(
         ZZ, target_payload["support_design"]["raw_octad_intersection_gram"]
     )
-    assert auxiliary.nrows() == 7 and auxiliary.det() == 720
+    assert auxiliary.nrows() == 7 and auxiliary.det() == target_determinant
     target_frame = matrix(ZZ, target_payload["frame"]["gram"])
+    assert target_frame.det() == target_determinant
     target_genus = Genus(target_frame)
 
     requested = set(arguments.ambient_label)
@@ -651,26 +658,39 @@ def build(arguments):
             "embedding_count_merged"
         ]
     sources = [merged[key] for key in sorted(merged)]
+    source_prefix = "G720" if golay_default else target_payload["surface_id"]
     for index, row in enumerate(sources, 1):
-        row["source_id"] = f"G720-S{index:04d}"
+        row["source_id"] = f"{source_prefix}-S{index:04d}"
         row["ambient_provenance"] = sorted(set(row["ambient_provenance"]))
 
-    success = [
-        row
-        for row in sources
-        if row["source"]["mw_rank_for_rho_19"] in (1, 2)
-        and row["source"]["support_count"] <= arguments.source_support_max
-        and row["source"]["pole_audit"][
-            "minimum_nonzero_section_pole_order"
+    if golay_default:
+        success = [
+            row
+            for row in sources
+            if row["source"]["mw_rank_for_rho_19"] in (1, 2)
+            and row["source"]["support_count"] <= arguments.source_support_max
+            and row["source"]["pole_audit"][
+                "minimum_nonzero_section_pole_order"
+            ]
+            is not None
+            and row["source"]["pole_audit"][
+                "minimum_nonzero_section_pole_order"
+            ]
+            <= 2
         ]
-        is not None
-        and row["source"]["pole_audit"][
-            "minimum_nonzero_section_pole_order"
+    else:
+        success = [
+            row
+            for row in sources
+            if row["source"]["mw_rank_for_rho_19"] <= 3
+            and row["source"]["support_count"] <= arguments.source_support_max
         ]
-        <= 2
-    ]
     return {
-        "schema": "elkies-k3.golay-octad-det720-prescribed-root-sources.v1",
+        "schema": (
+            "elkies-k3.golay-octad-det720-prescribed-root-sources.v1"
+            if golay_default
+            else "elkies-k3.rank7-ordered-prescribed-root-sources.v1"
+        ),
         "status": (
             "PASS_SUCCESS_CONDITION_HIT" if success else "PASS_EXACT_SEARCH_NO_SUCCESS_HIT"
         ),
@@ -679,11 +699,19 @@ def build(arguments):
             relative(arguments.catalog): digest(arguments.catalog),
         },
         "fixed_auxiliary": {
-            "name": "Golay-octad determinant-720 rank-seven auxiliary",
+            "name": (
+                "Golay-octad determinant-720 rank-seven auxiliary"
+                if golay_default
+                else f"ordered rank-seven auxiliary for {target_payload['surface_id']}"
+            ),
             "gram": rows(auxiliary),
             "gram_sha256": gram_digest(auxiliary),
-            "determinant": 720,
-            "basis_choice": "the seven original octad vectors, all of norm four",
+            "determinant": target_determinant,
+            "basis_choice": (
+                "the seven original octad vectors, all of norm four"
+                if golay_default
+                else "the exact ordered reduced basis selected by the catalogue adapter"
+            ),
         },
         "search_scope": {
             "rooted_niemeier_ambients": [row["label"] for row in ambient_rows],
@@ -703,8 +731,9 @@ def build(arguments):
         },
         "method": {
             "embedding": (
-                "ordered norm-four Golay basis, sequential residual-Weyl dominant "
-                "extension, prescribed final zero Dynkin labels, exact shifted ellipsoids"
+                ("ordered norm-four Golay basis" if golay_default else "ordered auxiliary basis")
+                + ", sequential residual-Weyl dominant extension, prescribed final "
+                "zero Dynkin labels, exact shifted ellipsoids"
             ),
             "acceptance": (
                 "primitive full auxiliary, saturated orthogonal complement, exact "
@@ -721,13 +750,19 @@ def build(arguments):
             "success_condition_hits": len(success),
         },
         "success_condition": {
-            "definition": "MW rank 1 or 2, minimum nonzero-section P.O. <= 2, and support count within the declared few-support bound",
+            "definition": (
+                "MW rank 1 or 2, minimum nonzero-section P.O. <= 2, and "
+                "support count within the declared few-support bound"
+                if golay_default
+                else "MW rank at most 3 and support count within the declared few-support bound"
+            ),
             "source_ids": [row["source_id"] for row in success],
         },
         "proof_boundary": {
             "proved": (
                 "Every retained row is an exact primitive embedding of the fixed "
-                "Golay-720 auxiliary in a hash-pinned full rooted Niemeier lattice, "
+                + ("Golay-720" if golay_default else "rank-seven")
+                + " auxiliary in a hash-pinned full rooted Niemeier lattice, "
                 "with exact saturated complement, roots, MW rank, and pole shell."
             ),
             "search_completeness": (
@@ -746,6 +781,33 @@ def build(arguments):
         "reproduce": (
             "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python "
             "elkies-k3/scripts/enumerate_golay_det720_prescribed_root_sources.sage"
+            if golay_default
+            else (
+                "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python "
+                "elkies-k3/scripts/enumerate_golay_det720_prescribed_root_sources.sage "
+                f"--target {relative(arguments.target)} "
+                f"--catalog {relative(arguments.catalog)} "
+                f"--output {relative(arguments.output)} "
+                f"--source-root-rank-min {arguments.source_root_rank_min} "
+                f"--source-root-rank-max {arguments.source_root_rank_max} "
+                f"--source-support-min {arguments.source_support_min} "
+                f"--source-support-max {arguments.source_support_max} "
+                f"--fixed-dimension-max {arguments.fixed_dimension_max}"
+                + "".join(
+                    f" --ambient-label {label}" for label in arguments.ambient_label
+                )
+                + (
+                    f" --extension-limit {arguments.extension_limit}"
+                    if arguments.extension_limit
+                    else ""
+                )
+                + (
+                    f" --final-label-limit {arguments.final_label_limit}"
+                    if arguments.final_label_limit
+                    else ""
+                )
+                + (" --all-a-only" if arguments.all_a_only else "")
+            )
         ),
     }
 

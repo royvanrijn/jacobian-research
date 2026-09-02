@@ -3147,14 +3147,43 @@ Build or byte-check the surface-first rank-seven auxiliary catalogue:
   elkies-k3/scripts/build_leech_co0_backend.sage --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_leech_minimal_line_action.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_leech_minimal_line_action.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_leech_minimal_basis_coordinate_shell.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_leech_minimal_basis_coordinate_shell.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_rank7_auxiliary_catalogue.sage
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_rank7_auxiliary_catalogue.sage --check
 
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_rank7_t_arithmetic.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_rank7_t_arithmetic.sage --check
+
+python3 \
+  elkies-k3/scripts/compare_leech_coordinate_targets_to_rooted_catalogue.py
+
+python3 \
+  elkies-k3/scripts/compare_leech_coordinate_targets_to_rooted_catalogue.py --check
+
 python3 elkies-k3/scripts/build_rank7_surface_pareto.py
 
 python3 elkies-k3/scripts/build_rank7_surface_pareto.py --check
+
+# Ordered all-Niemeier factory; stops before equation solvers.
+python3 elkies-k3/scripts/build_rank7_all_niemeier_factory.py
+
+python3 elkies-k3/scripts/build_rank7_all_niemeier_factory.py --check
 ```
 
 The first two commands enumerate exact residual-`M24` orbits of unordered
@@ -3284,8 +3313,17 @@ non-positive-octad generator languages remain open.
 The following two commands pin the separate Leech ambient directly from the
 AtlasRep `2.Co1=Co0` action: the invariant form is one-dimensional and its
 primitive positive integral generator is the even unimodular rank-24 lattice
-of minimum four with 196,560 minimal vectors. No rank-seven Leech embedding
-orbit is enumerated yet. The catalogue imports exact primitive embeddings from the current
+of minimum four with 196,560 minimal vectors. The next four commands certify
+the exact `Co1` action on 98,280 antipodal minimal lines and exhaust all
+346,104 rank-seven coordinate summands of one norm-four determinant-one
+ambient basis. The finite language gives 221 signed-basis types, 194
+ternary-compatible types, and 150 preliminary `(T,NS)` keys; it is still
+pre-`Co1` and is not an all-primitive Leech census. The later crosswalk finds
+43 exact rooted-catalogue matches, including 25 with a catalogued MW12 rooted
+frame, and leaves 107 keys absent from the current catalogue. No rank-seven
+Leech embedding orbit is claimed before the Conway quotient.
+
+The catalogue imports exact primitive embeddings from the current
 `N(2A7+2D5)` mutation and `2C` fixed-lattice seed shells, the `N(6A4)`
 double-swap, `N(4A5+D4)` order-four, and
 `N(2A9+D6)`/`N(3A8)`/`N(3D8)`/`N(4A6)`/`N(4E6)`/`N(6D4)`/`N(8A3)`/`N(12A2)` all-class
@@ -3832,6 +3870,31 @@ section.  At 7 the square twist has ten copies of one generator and the
 nonsquare twist has ten copies of the other plus two of the first, but never
 both on one model.  This is an exact two-prime obstruction for the displayed
 normalized charts only.
+
+## Section-first MW1/MW2 normal-form compiler
+
+Generate and byte-check the generalized marked-section frontend with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/compile_section_first_normal_forms.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/compile_section_first_normal_forms.sage --check
+```
+
+The MW1 chart is
+`y^2+a1*x*y+a3*y=x^3+a2*x^2` with the marked point `(0,0)`.
+The MW2 chart additionally compiles
+`Q=(h*r,h^2*s)` by a Bezout relation, so both point equations and their
+affine intersection divisor `h` are identities before fibre tuning.  The
+control artifact has SHA-256
+`6edfa5f3487f020a05772bd2b1a6b5d74586c126d852b87418285ef46f843c34`.
+It replays the rational Golay `3I6+6I1` model and the marked NS0031
+`GF(7)` model 157, including their degree-two smooth intersections and exact
+semistable fibre orders.  It does not change the existing saturation and
+characteristic-zero proof boundaries.  See
+[`elkies-k3/SECTION_FIRST_NORMAL_FORM_COMPILER_2026-09-02.md`](elkies-k3/SECTION_FIRST_NORMAL_FORM_COMPILER_2026-09-02.md).
 
 For bounded-search provenance, replay or byte-check the exact `NS0024`
 rootful source found by the older Kneser scout and its certified degree-two

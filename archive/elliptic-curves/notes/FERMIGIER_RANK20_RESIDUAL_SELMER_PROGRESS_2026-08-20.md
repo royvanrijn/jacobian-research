@@ -234,7 +234,7 @@ The same run now writes a BNF-free signature-map artifact with all twenty
 actual Kummer representatives in ascending power-basis coordinates and their
 packed images in the 51 local and 24 witness coordinates.  It is directly
 consumable by
-[`residual_selmer_quotient.py`](../cas/residual_selmer_quotient.py), which
+[`residual_selmer_quotient.py`](../../../elliptic-curves/cas/residual_selmer_quotient.py), which
 reduces future candidate global squareclasses modulo this faithful known
 Mordell--Weil image.  This records the coordinate system; it is not a Selmer
 upper bound or a class-group computation.

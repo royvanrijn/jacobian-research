@@ -369,10 +369,11 @@ python3 elkies-k3/scripts/batch_q80_third_q12_riemann_roch_p19_adic_samples.py \
 ```
 
 Twenty samples are the support-minimal equation batch: seventeen determine
-the degree-`8/8` coefficient and three are held out.  The reconstruction
-worker then performs projective LLL separately for each long coefficient and
-requires reduction to every transported model at
-`p=19,61,67,83,89,103,131`:
+the degree-`8/8` coefficient and three are held out.  This default deliberately
+does not consume the full seed inventory; pass a larger `--limit` when a later
+calculation needs more residue classes.  The reconstruction worker then
+performs projective LLL separately for each long coefficient and requires
+reduction to every selected transported model:
 
 ```bash
 sage -python elkies-k3/scripts/reconstruct_q80_third_q12_long_jacobian_p19_adic.sage
@@ -389,14 +390,38 @@ sage -python elkies-k3/scripts/reconstruct_q80_third_q12_j_map_p19_adic.sage
 
 `reconstruct_q80_third_q12_j_map_p19_adic.sage` exploits
 `numerator = scalar * degree8_polynomial^3` and the denominator multiplicity
-shape `I6+I4+3I2+8I1`, and uses three p-adic held-outs.  Its current candidate
-consumes all six aligned auxiliary primes in the CRT modulus; the two
-structured LLL vectors land only one bit below their random boundaries.  A
-new eighth aligned prime or literal exact-pencil replay is therefore required
-for promotion.  The output is a reconstruction candidate, not a
-characteristic-zero Jacobian theorem.  The active order is
+shape `I6+I4+3I2+8I1`, and uses three p-adic held-outs.  It supports one joint
+lattice across eight residue-distinct evaluations (`--intrinsic-basis
+joint-evaluations`), any of the nine projective degree-eight coefficient charts
+(`--c4-pivot 0` through `8`), and a coupled two-coordinate projective scale over
+the quadratic coefficient field (`--reconstruction-granularity
+quadratic-projective`).  Repeatable `--holdout-prime` arguments exclude those
+primes from CRT/LLL and require literal replay before an artifact is written.
+The output remains a reconstruction candidate, not a characteristic-zero
+Jacobian theorem.  The active order is
 `j -> (c4^3,Delta) -> minimal Jacobian -> maps`; the common invariant scaling
 must be separated from base `PGL2` gauge and Weierstrass scaling.
+
+The complete restructured `19^2048` audit is negative: all coefficient,
+component, evaluation, base-normalized, pivot-chart, and quadratic-projective
+formulations fail the untouched `p=199` replay.  Their shortest vectors remain
+at the random-lattice boundary.  Exact closure operands already have heights
+up to 36,335 bits, so `19^8192` would still be too small; the first justified
+target is `19^12288`, with a random boundary near 46,400 bits.  The exact pencil
+at precision 12291 is complete and the checkpointed factor/root lift is in
+progress.  Once it finishes, certify the generic basis at the five digits
+actually used by the basis theorem with:
+
+```bash
+python3 elkies-k3/scripts/verify_q80_third_q12_integral_basis_mod19_power.py \
+  --source artifacts/local/elkies-k3/q80-third-q12-exact-pencil-p19-adic-precision12291.json \
+  --lift artifacts/local/elkies-k3/q80-third-q12-discriminant-factors-p19-adic-precision12288.json \
+  --verification-digits 5 \
+  --output artifacts/local/elkies-k3/q80-third-q12-integral-basis-mod19-power-lift12288-check5.json
+```
+
+The full hashes, failed holdouts, and height justification are recorded in
+[`../Q80_THIRD_Q12_COMMON_PRODUCER_2026-09-01.md`](../Q80_THIRD_Q12_COMMON_PRODUCER_2026-09-01.md).
 
 The independent eighth-prime replay is now complete at `p=163`.  The
 horizontal, resolved pencil, genus-one gate, 72-sample Jacobian batch, generic
@@ -592,13 +617,30 @@ The current proof boundary and replay commands are in
   classes. All 96 backend-band
   shards remain explicitly open: this script is not itself an embedding
   enumerator and does not promote bounded foundry inputs to completeness.
+- `build_rank7_t_arithmetic.sage` is the mandatory pre-solver arithmetic
+  layer. For all 827 `(T,NS)` rows it computes primitive similarity data,
+  rational isotropy, the even Clifford quaternion algebra, and the integral
+  Clifford-order reduced discriminant. The current ledger has 550 isotropic
+  and 277 anisotropic rows. Exactly 313 isotropic rows have a certified
+  integral `U` splitting and therefore an exact `Gamma_0(N)` curve with cusps,
+  genus, a genus-zero Hauptmodul lookup, and a cusp-width comparison against
+  modular elliptic surfaces. The other 237 split orders retain typed-open
+  signatures. On the anisotropic side, H3 is the exact `(D,N)=(6,79)` positive
+  control with its genus-13 base curve, genus-two `w_474` quotient, and CM
+  anchors of discriminants `-3` and `-24`; 171 further rows have only an
+  Eichler-level candidate and 105 are certified non-Eichler at a ramified
+  prime. Reduced discriminant alone is never promoted to an Eichler theorem.
+- `build_rank7_all_niemeier_factory.py` is the supported orchestration entry
+  point. It runs catalogue merge, T-arithmetic, and Pareto enrichment in that
+  order and deliberately stops before equation solving.
 - `build_rank7_surface_pareto.py` ranks all imported surfaces by the exact
   core metrics available for every row: maximum catalogued MW rank, easiest
   known source MW rank, source reducible-fibre support count, and determinant.
   It attaches exact pole, stabilizer, rootless short-vector, and bounded
   multisection evidence where existing artifacts provide it, and emits
   coverage-restricted enriched frontiers without imputing missing equations,
-  fields, routes, conductor data, or moduli geometry. The current core
+  fields, routes, or unresolved arithmetic geometry. Every row now carries
+  the hash-matched T-arithmetic pre-solver gate. The current core
   frontier has fourteen of 827 surfaces; there are 39 exact-pole and 787
   nontrivial-symmetry rows, while the certified-route frontier is explicitly
   empty.
@@ -831,6 +873,25 @@ The current proof boundary and replay commands are in
   pins the two exact `Co0` generators, and marks rank-seven embedding-orbit
   enumeration open. This is the separate Leech ambient backend, not a Leech
   determinant-band census.
+- `build_leech_minimal_line_action.sage` recovers all 98,280 antipodal
+  norm-four pairs and the exact transitive `Co1` permutation action. Its line
+  stabilizer has the `Co2` order and suborbits `1,4600,46575,47104`, identified
+  intrinsically by absolute inner products `4,2,0,1`.
+- `probe_leech_minimal_basis_coordinate_shell.sage` certifies a norm-four
+  determinant-one ambient basis and exhausts all 346,104 of its rank-seven
+  coordinate summands. Exact signed-basis canonicalization gives 221 types;
+  207 pass discriminant length, 194 pass the ternary-genus gate, and
+  `(T,NS)`-first deduplication gives 150 preliminary MW17 surface keys. This
+  is an exact declared coordinate language before the `Co1` quotient, not an
+  all-primitive determinant-band census. A 24-bit superset transform also
+  records the complete norm-four-pair distribution of every complement,
+  ranging from 931 to 2,160, for short-vector ranking and Co1 bucketing.
+- `compare_leech_coordinate_targets_to_rooted_catalogue.py` compares those
+  150 keys literally with the rooted catalogue. It finds 43 matches whose
+  easiest currently catalogued rooted frames have MW-rank distribution
+  `MW12:25, MW13:11, MW14:4, MW17:3`; 107 keys are absent from the current
+  catalogue. It does not turn a rooted lattice frame into an equation or a
+  certified physical neighbour corridor.
 - `build_lattice_foundry.sage` consumes the complete H3 `J2` controls and the
   hash-pinned Niemeier catalogue, then runs a JSON-declared auxiliary mutation
   shell. It saturates every rank-seven auxiliary, retains full ambient
@@ -1065,8 +1126,119 @@ The current proof boundary and replay commands are in
   sublattice of determinant `-720`.  The separate
   `certify_golay_det720_3a5_picard19.sage` uses exact `F_p` and `F_(p^2)`
   counts at 17 and 19; the rank-20 reductions have incompatible Artin--Tate
-  square classes, proving geometric Picard rank 19.  Saturation and target-NS
-  identity remain open.
+  square classes, proving geometric Picard rank 19.
+- `certify_golay_det720_3a5_saturation_rejection.sage` detects an exact
+  rational 3-torsion section and an exact rational half of the displayed
+  height-four section on that `s6=10` model.  They give an index-six
+  enlargement.  Exhausting the discriminant-form isotropic subgroups proves
+  that it is maximal, so the full NS determinant is 20, the torsion is
+  `Z/3`, and the free MW height Gram is `diag(5/6,1)`.  Consequently this
+  exceptionally simple Picard-19 rational point is not the determinant-720
+  K3; a replacement rational point must pass torsion and divisibility gates.
+- `scan_golay_det720_3a5_rational_parameters.sage` repeats the exact
+  rational-reconstruction and torsion/divisibility gates in each of the six
+  etale marked `GF(7)` residue disks.  The pinned `|a|,b <= 40` scan tests
+  1,478 reduced parameters, reconstructs exactly three points, and rejects
+  all three as determinant-20 specializations.  Its bounded miss is not an
+  irrationality proof for the remaining formal parameters.
+- `compile_section_first_normal_forms.sage` is the reusable marked-equation
+  frontend for source searches.  Its MW1 Tate-style chart fixes `P=(0,0)`.
+  Its MW2 chart fixes `P=(0,0)`, `Q=(h*r,h^2*s)` and eliminates both section
+  equations and the intersection divisor by one polynomial Bezout identity,
+  leaving discriminant jets as the closed fibre-tuning equations.  The exact
+  regression artifact translates both the rational Golay `3I6` pair and the
+  NS0031 model-157 `GF(7)` pair, preserving their degree-two smooth
+  intersection divisors and their `I_n` discriminant orders.  These are
+  normal-form controls, not new saturation or characteristic-zero source
+  certificates.
+- `extract_rank7_catalogue_source_search_target.py` adapts any selected
+  expanded-catalogue surface, partner auxiliary, and target frame to the
+  ordered prescribed-root engine. It refuses a missing or stale T-arithmetic
+  ledger and attaches the selected exact/typed-open arithmetic row before the
+  target can reach an equation workflow; a typed-open curve identification
+  keeps target extraction blocked. The generalized
+  `enumerate_golay_det720_prescribed_root_sources.sage` retains its locked
+  Golay defaults but also accepts these adapters and dynamic determinants.
+  For `K3-04b86146cc6b284b`, the complete six-large-ambient search in the
+  declared rank-14--17, one-to-three-support window finds 3,101 MW1--3
+  reduced Grams, including three integrally isometric `A3+A4+A9/MW1`
+  representatives with trivial torsion, height `5/2`, and pole profile `[1]`.
+- `certify_k3_04b_equation_first_promotion.sage` explicitly merges those
+  three representatives by integral isometries and promotes the resulting
+  semistable-root-pattern MW1 source opposite the rootless MW17 target.  It
+  records `T=U(5)+<20>` and keeps rational marking, full semistability,
+  equation construction, and the neighbour corridor as open gates.  Its
+  attached complete degree-three census has 12,095,162 rational and
+  29,878,240 genus-one trisection translation cosets.
+- `probe_lattice_foundry_ns0028_source_ansatz_modp.sage` now accepts
+  three-support A-type sources of root rank 14--17 and correctly pads local
+  A-jets beyond degree eight, as required by an `I10` support at infinity.
+  Its exhaustive determinant-500 `GF(5)` chart finds three squarefree
+  `I4+I5+I10+5I1` models among all `5^8` normalized A polynomials.
+- `scan_k3_04b_a3_a4_a9_pole1_marking_modp.sage` exhausts the pole-one
+  section chart on those models.  The seven depth `(2,0,5)` X-jets leave one
+  numerator per denominator; the square twist has four signed MW1 sections
+  and the nonsquare twist has none.  The two distinct positive seeds have
+  rank-38 Jacobians in 40 variables and stop at `5^2` in
+  `certify_k3_04b_a3_a4_a9_marked_gf5_hensel.sage`, so they are retained as
+  finite-field feasibility evidence rather than characteristic-zero lifts.
+  The same scanner exhausts all `7^8` normalized A polynomials at prime 7,
+  finding six squarefree fibre models.  Both twist classes are marking-positive
+  (two and four signed sections), and all three distinct marked seeds have the
+  expected rank-39 Jacobian in 40 variables and lift through `7^8`.  This is a
+  smooth local one-parameter precursor.  The exact node/discriminant identity
+  in `certify_k3_04b_a3_a4_a9_formal_smoothness.sage` forces the 14 excess
+  section equations from the fibre/component jets and the five middle
+  residual coefficients.  The unit minor therefore proves a formally smooth
+  one-dimensional `Z_7` marked family; rational algebraization remains open.
+- `certify_k3_04b_a3_a4_a9_source_qq_rejection.sage` reconstructs the first
+  small rational point (`m4=-20`) and rejects it at the saturation gate.  The
+  displayed height-`5/2` pole-one section is five times a rational pole-zero
+  section of height `1/10`.  Exact discriminant-form enumeration shows that
+  the index-five enlargement is maximal, so the rank-19 primitive closure has
+  determinant 20 rather than 500.
+- `scan_k3_04b_a3_a4_a9_rational_parameters.sage` makes the bounded
+  determinant-500 rational probe reproducible.  It tests 87 integral values
+  of the free coordinate across all three smooth marked `GF(7)` disks at
+  precision `7^40`; 86 have no full coefficientwise reconstruction and the
+  sole exact point is matched literally to the determinant-20 rejection
+  certificate.
+- `classify_k3_04b_semistable_mw2_sources.sage` puts all nine retained
+  semistable `A3+A4+A8/MW2` pole-`[0,0]` rows in one integral frame class.
+  Their selected bases form two exact marking profiles of sizes three and
+  six, but both require depths `(1,0,1)`, `(1,0,3)` and smooth intersection
+  one.  `scan_k3_04b_a3_a4_a8_mw2_marking_modp.sage` exhausts those equation
+  conditions on the 30 `GF(5)` and 114 `GF(7)` squarefree fibre models found
+  by the generalized three-support scanner.  No twist gives a marked basis.
+  The nonsquare `GF(7)` chart has 20 and 32 individual generator sections;
+  all 28 component-matched pairs meet a reducible fibre.
+- `certify_k3_10a_semistable_source_rejection.py` aggregates the complete
+  ideal-source searches for both auxiliary classes of the determinant-750,
+  genus-zero `Gamma_0(3)` surface `K3-10a14a46c14b3150`.  Its rootless MW17
+  target remains exact, but neither auxiliary has a semistable MW0--2 source
+  with at most three supports in the six-large-ambient cut.  This is a scoped
+  negative result, not a complete fibration classification.
+- `search_lattice_foundry_same_ns_compiler_routes.sage` now has a reproducible
+  determinant-500 rank-first beam from the `A3+A4+A9/MW1` source to the named
+  rootless MW17 frame.  With `q=4`, old-fibre degree two, pole order at most
+  one, beam width eight, and depth twelve, it reaches root rank four (MW13)
+  after four edges but never the target.  Its empty result is bounded by beam
+  pruning and the declared compiler coordinates; it is not a complete
+  neighbour-graph rejection.
+- `build_rank7_rational_moduli_source_optimizer.py` maintains the evaluated
+  source-first queue for the six catalogue surfaces having rational moduli and
+  a rootless MW17 frame.  Determinant 500 is the active formally smooth MW1
+  promotion; determinants 750, 864, and 1296 have exact two-auxiliary negative
+  results in the declared semistable MW0--2 six-large-ambient cut; determinants
+  1500 and 1728 remain queued.  Each determinant-1296 auxiliary has 402
+  terminal embeddings in the three A-containing ambients, all nonprimitive.
+  Missing source searches are kept typed as unknown rather than scored as
+  failures.
+- `sample_lattice_foundry_multisection_spectrum.sage` and
+  `complete_lattice_foundry_degree3_spectrum.py` also accept the expanded
+  rank-seven catalogue's `surfaces` schema.  The determinant-500 target has
+  29,040 rational and 63,895 genus-one bisection orbits; its complete
+  degree-three census is checkpointed and byte-checkable separately.
 - `build_golay_det720_foundry_adapter.py` exposes the certified rootless MW17
   Gram to the generic spectrum programs without pretending that it belonged
   to the original consolidated foundry search.  Its complete degree-three

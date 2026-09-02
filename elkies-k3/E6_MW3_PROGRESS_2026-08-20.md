@@ -1,6 +1,11 @@
 # E6 MW3 progress — 2026-08-20
 
-This note records the current frontier of the alternate E6 MW-rank-3 fibration attack.
+> **Historical snapshot.** This note records the 2026-08-20 frontier of the
+> alternate E6/MW3 attack.  The split chart below was rejected, and the
+> selected H3 equation corridor has since reached the certified rootless
+> `24I1/MW17` endpoint.  Use [`README.md`](README.md) for the current residual
+> 2-descent priority and the
+> [`ELKIES_K3_PROCESS_ATLAS.md`](ELKIES_K3_PROCESS_ATLAS.md) for chronology.
 
 ## Neighbor-chain correction
 
@@ -19,8 +24,9 @@ This changes the interpretation of the finite-field work below.  The searched
 split chart was inferred from the Kodaira symbols, not produced by executing
 the recovered neighbor chain on the original K3.  Its exhaustive emptiness is
 a valid bounded result about that chart, but it is not a rejection of the E6
-neighbor.  The next step is a geometric backtrack through the pinned chain,
-not another larger scan.
+neighbor.  At this snapshot the next step was a geometric backtrack through
+the pinned chain, not another larger scan; that historical route decision has
+since been superseded by the completed H3 corridor described above.
 
 ## Exact-open correction
 

@@ -5,7 +5,7 @@ This note continues
 and **supersedes its current-frontier statements where they conflict with this
 file**.
 
-Compact live state:
+Corrected historical q8 state:
 [`H3_Q8_CURRENT_FRONTIER.md`](H3_Q8_CURRENT_FRONTIER.md).
 
 The target remains

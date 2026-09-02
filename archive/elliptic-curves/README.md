@@ -1,10 +1,11 @@
 # Elliptic-curve computational archive
 
 This directory preserves the exploratory and superseded computational history
-removed from the active `elliptic-curves/` surface on 2026-08-24. Nothing was
-discarded: 189 CAS/source programs, 146 matching regression tests, 177
-generated artifacts, and two documentation snapshots are retained byte for
-byte.
+removed from the active `elliptic-curves/` surface.  The main 2026-08-24
+cleanup retained 189 CAS/source programs, 146 matching regression tests, 177
+generated artifacts, and two documentation snapshots byte for byte.  The
+2026-09-02 lifecycle audit added three unreferenced Fermigier search and
+diagnostic notes whose bounded or superseded priorities are no longer active.
 
 This archive is historical. It is not a source of current mathematical status;
 use [`MATH_STATUS.json`](../../MATH_STATUS.json) and the active
@@ -32,6 +33,7 @@ The archive layout is:
 - `ARTIFACT_MIGRATION_2026-08-24.tsv`: every current artifact byte change made
   solely to relocate or disambiguate provenance;
 - `migrations/`: the deterministic one-time metadata migration used here;
+- `notes/`: superseded bounded-search and diagnostic writeups;
 - `REPRODUCE_2026-08-24.txt`: the full pre-cleanup command catalogue;
 - `NEWFAMILY_README_2026-08-24.txt`: the pre-cleanup new-family workflow.
 

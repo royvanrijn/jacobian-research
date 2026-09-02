@@ -271,15 +271,33 @@ def sample_degree(gram, frame_id, degree, genera, sample_count, slack, seed):
 
 
 def target_rows(database):
-    frame_by_id = {
-        frame["frame_id"]: frame
-        for ns in database["ns_classes"]
-        for frame in ns["frames"]
-    }
-    return [
-        (target, frame_by_id[target["frame_id"]])
-        for target in database["rootless_targets"]
-    ]
+    if "ns_classes" in database:
+        frame_by_id = {
+            frame["frame_id"]: frame
+            for ns in database["ns_classes"]
+            for frame in ns["frames"]
+        }
+        return [
+            (target, frame_by_id[target["frame_id"]])
+            for target in database["rootless_targets"]
+        ]
+    if "surfaces" in database:
+        return [
+            (
+                {
+                    "frame_id": frame["frame_id"],
+                    "ns_id": surface["surface_id"],
+                    "determinant": int(frame["determinant"]),
+                    "is_existing_H3_control": False,
+                },
+                frame,
+            )
+            for surface in database["surfaces"]
+            for frame in surface["frames"]
+            if int(frame["root_rank"]) == 0
+            and int(frame["mw_rank_for_rho_19"]) == 17
+        ]
+    raise ValueError("database has neither ns_classes nor surfaces")
 
 
 def main() -> None:
@@ -375,6 +393,7 @@ def main() -> None:
             flush=True,
         )
 
+    output_path = arguments.output.resolve()
     output = {
         "schema": "elkies-k3.lattice-foundry-multisection-spectrum.v1",
         "status": "PASS_EXACT_D2_AND_EXACT_BOUNDED_SAMPLED_D3_D4_LATTICE_SPECTRA",
@@ -411,6 +430,17 @@ def main() -> None:
         "reproduce": (
             "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python "
             "elkies-k3/scripts/sample_lattice_foundry_multisection_spectrum.sage "
+            + (
+                f"--database {relative(database_path)} "
+                if database_path != DATABASE.resolve()
+                else ""
+            )
+            + (
+                f"--output {relative(output_path)} "
+                if output_path != DEFAULT_OUTPUT.resolve()
+                else ""
+            )
+            +
             f"--sample-count {arguments.sample_count} --height-slack {arguments.height_slack} "
             + " ".join(
                 f"--frame-id {row[0]['frame_id']}" for row in selected
@@ -418,7 +448,6 @@ def main() -> None:
         ),
     }
     serialized = json.dumps(output, indent=2, sort_keys=True) + "\n"
-    output_path = arguments.output.resolve()
     if arguments.check:
         if output_path.read_text() != serialized:
             raise SystemExit("multisection-spectrum artifact is stale")

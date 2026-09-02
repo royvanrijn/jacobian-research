@@ -4,9 +4,10 @@
 
 The equation below has `j=0`, so its geometric Mordell--Weil rank is even.
 The intended Picard-rank-19 `E8+A2^3` frame requires Mordell--Weil rank `3`.
-See [`E8_A2_KODAIRA_CORRECTION.md`](E8_A2_KODAIRA_CORRECTION.md) for the exact
-parity obstruction.  The scripts named below are retained only to reproduce
-the historical experiment.
+See
+[`E8_A2_KODAIRA_CORRECTION.md`](../../../elkies-k3/E8_A2_KODAIRA_CORRECTION.md)
+for the exact parity obstruction.  The scripts named below are retained only
+to reproduce the historical experiment.
 
 From the exact NS computation the inherited generic fibration has:
 

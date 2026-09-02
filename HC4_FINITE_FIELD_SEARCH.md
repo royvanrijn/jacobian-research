@@ -270,12 +270,14 @@ The combined experiment does not exclude:
 The sampled dense-support results add exact exclusions for 400 recorded
 families, but they do not exhaust all supports of sizes 6 through 12.
 The later characteristic-zero theorem `HC4E46` closes the complete even
-quartic--sextic moving-cone layer without a support search.  The useful
-next experimental layer is therefore simultaneous cubic and sextic
-interaction, where successive determinant faces need not retain the even
-source/dual cone.  Any family recurring as nonunit over several primes can
-then be passed to rational reconstruction and an exact
-characteristic-zero check.
+quartic--sextic moving-cone layer without a support search.  The subsequent
+theorems `HC4T31`, `HC4T21`, `HC4T11`, and `HC4TC1` also close simultaneous
+cubic--quartic--sextic interaction in the full coordinate Meng chart.  These
+finite-field runs are therefore historical discovery regressions rather than
+the current search frontier.  The live direct layers begin with quintic or
+higher homogeneous corrections and with non-coordinate coisotropic
+embeddings; any modular survivor there still needs rational reconstruction
+and an exact characteristic-zero check.
 
 ## Reproduction
 

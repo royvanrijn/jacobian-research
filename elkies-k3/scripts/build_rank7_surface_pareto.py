@@ -8,9 +8,10 @@ source certificate outranks the surface's own catalogued frames; otherwise
 the easiest catalogued frame is used and its limitation is explicit.
 
 Equation, field, corridor, short-vector, symmetry, and multisection data are
-never imputed.  Separate enriched frontiers compare only rows sharing the
-required evidence.  This is a discovery ordering, not a completeness or
-arithmetic-rank theorem.
+never imputed.  The hash-matched T-arithmetic backend supplies exact or typed
+open modular/Shimura data for every surface.  Separate enriched frontiers
+compare only rows sharing the required evidence.  This is a discovery
+ordering, not a completeness or arithmetic-rank theorem.
 """
 
 from __future__ import annotations
@@ -35,6 +36,9 @@ MULTISECTIONS = (
 )
 UMBRAL = (
     ROOT / "artifacts/generated-results/elkies-k3-lattice-foundry-umbral-orbits-v1.json"
+)
+T_ARITHMETIC = (
+    ROOT / "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json"
 )
 DEFAULT_OUTPUT = (
     ROOT / "artifacts/generated-results/elkies-k3-rank7-surface-pareto-v1.json"
@@ -110,6 +114,44 @@ def route_metrics(route: dict) -> dict:
             "cost": None,
         }
     return {"status": route["status"], "cost": route["cost"]}
+
+
+def t_arithmetic_summary(row: dict) -> dict:
+    source = row["arithmetic_source"]
+    order = source["order_type"]
+    curve = source["base_curve"]
+    is_isotropic = bool(row["rational_isotropy"]["isotropic"])
+    hauptmodul = curve.get("hauptmodul")
+    if hauptmodul is None:
+        hauptmodul = source.get("hauptmodul")
+    return {
+        "status": source["status"],
+        "pre_solver_gate": row["pre_solver_gate"],
+        "rationally_isotropic": is_isotropic,
+        "quaternion_discriminant": int(
+            row["clifford"]["quaternion_discriminant"]
+        ),
+        "clifford_order_reduced_discriminant": int(
+            row["clifford"]["integral_even_clifford_order"][
+                "reduced_discriminant"
+            ]
+        ),
+        "order_type_status": order["status"],
+        "eichler_level": order.get("eichler_level"),
+        "eichler_level_candidate": order.get("eichler_level_candidate"),
+        "curve_status": curve["status"],
+        "curve_label": curve.get("label", curve.get("group")),
+        "genus": curve.get("genus"),
+        "cusp_count": curve.get("cusp_count"),
+        "hauptmodul": hauptmodul,
+        "atkin_lehner": source.get("atkin_lehner"),
+        "cm_screen": source.get("cm_screen"),
+        "explicit_cm_anchors": source.get("explicit_cm_anchors"),
+        "explicit_modular_elliptic_surface_comparison": curve.get(
+            "explicit_modular_elliptic_surface_comparison",
+            source.get("explicit_modular_elliptic_surface_comparison"),
+        ),
+    }
 
 
 def symmetry_evidence(
@@ -280,6 +322,7 @@ def build(
     source_ranking: dict,
     multisections: dict,
     umbral: dict,
+    t_arithmetic: dict,
 ) -> dict:
     assert catalogue["schema"] == "elkies-k3.rank7-auxiliary-catalogue.v1"
     assert catalogue["status"] == (
@@ -293,15 +336,28 @@ def build(
         "elkies-k3.lattice-foundry-multisection-spectrum.v1"
     )
     assert umbral["schema"] == "elkies-k3.lattice-foundry-umbral-orbits.v1"
+    assert t_arithmetic["schema"] == "elkies-k3.rank7-t-arithmetic.v1"
+    assert t_arithmetic["status"] == (
+        "PASS_EXACT_PRE_SOLVER_T_ARITHMETIC_LEDGER_WITH_TYPED_OPEN_CURVE_IDENTIFICATIONS"
+    )
 
     source_by_ns = {row["ns_id"]: row for row in source_ranking["surface_leaders"]}
     multisection_by_frame = {
         row["frame_id"]: row for row in multisections["targets"]
     }
     umbral_by_frame = {row["frame_id"]: row for row in umbral["targets"]}
+    arithmetic_by_surface = {
+        row["surface_id"]: row for row in t_arithmetic["surfaces"]
+    }
+    assert set(arithmetic_by_surface) == {
+        row["surface_id"] for row in catalogue["surfaces"]
+    }
 
     records = []
     for surface in catalogue["surfaces"]:
+        arithmetic = t_arithmetic_summary(
+            arithmetic_by_surface[surface["surface_id"]]
+        )
         frames = surface["frames"]
         maximum_mw = max(frame["mw_rank_for_rho_19"] for frame in frames)
         maximum_frames = [
@@ -435,15 +491,37 @@ def build(
             "low_degree_multisection_spectrum": multisection,
             "determinant_conductor_prospects": {
                 "determinant": int(surface["determinant"]),
-                "conductor_status": "UNKNOWN_NO_ARITHMETIC_SPECIALIZATION_SELECTED",
+                "conductor_status": arithmetic["order_type_status"],
+                "quaternion_discriminant": arithmetic[
+                    "quaternion_discriminant"
+                ],
+                "eichler_level": arithmetic["eichler_level"],
+                "eichler_level_candidate": arithmetic[
+                    "eichler_level_candidate"
+                ],
             },
             "automorphism_symmetry": symmetry,
             "moduli": {
                 "complex_lattice_polarized_dimension": 1,
                 "dimension_status": "EXACT_FROM_PICARD_RANK_19",
-                "genus": None,
-                "rationality": None,
-                "genus_rationality_status": "UNKNOWN_NOT_COMPUTED",
+                "t_arithmetic": arithmetic,
+                "genus": arithmetic["genus"],
+                "rationality": (
+                    True
+                    if arithmetic["genus"] == 0
+                    and arithmetic["curve_status"] == "PASS_EXACT_GAMMA0_CURVE"
+                    else None
+                ),
+                "genus_rationality_status": (
+                    "PASS_EXACT_CURVE_GENUS_ZERO"
+                    if arithmetic["genus"] == 0
+                    else (
+                        "PASS_EXACT_POSITIVE_CURVE_GENUS"
+                        if arithmetic["genus"] is not None
+                        and arithmetic["curve_status"].startswith("PASS_EXACT")
+                        else arithmetic["curve_status"]
+                    )
+                ),
             },
             "core_objectives_minimize": {
                 "negative_maximum_generic_mw_rank": -maximum_mw,
@@ -548,6 +626,22 @@ def build(
         == "PASS_EXACT_AVAILABLE_TARGET_SHORT_VECTOR_EVIDENCE"
         for row in records
     )
+    arithmetic_attempt_count = sum(
+        row["moduli"]["t_arithmetic"]["pre_solver_gate"][
+            "arithmetic_attempt_recorded"
+        ]
+        for row in records
+    )
+    arithmetic_gate_open_count = sum(
+        row["moduli"]["t_arithmetic"]["pre_solver_gate"][
+            "equation_solver_may_launch"
+        ]
+        for row in records
+    )
+    exact_curve_genus_count = sum(
+        row["moduli"]["t_arithmetic"]["curve_status"].startswith("PASS_EXACT")
+        for row in records
+    )
     assert len(records) == 827
     assert external_source_count == 48
     assert fallback_source_count == 779
@@ -557,6 +651,9 @@ def build(
     assert len(symmetry_records) == 787
     assert len(multisection_records) == 9
     assert target_short_count == 66
+    assert arithmetic_attempt_count == 827
+    assert arithmetic_gate_open_count == 314
+    assert exact_curve_genus_count == 314
     assert len(core_layers) == 170
     assert core_layers[0] == [
         "K3-ebaf00b3723751ba",
@@ -611,8 +708,8 @@ def build(
             ),
             "not_proved": (
                 "The imported catalogue and source inventories remain bounded. Missing "
-                "equations, fields, corridors, MW spectra, conductor prospects, and "
-                "moduli genus/rationality are not inferred. A Pareto leader is a search "
+                "equations, fields, corridors, MW spectra, and unresolved arithmetic "
+                "curve data are not inferred. A Pareto leader is a search "
                 "priority, not an arithmetic-rank or optimality theorem."
             ),
         },
@@ -658,6 +755,9 @@ def build(
                 == "PASS_EXACT_AVAILABLE_TARGET_SHORT_VECTOR_EVIDENCE"
                 for row in records
             ),
+            "surfaces_with_pre_solver_T_arithmetic_attempt": arithmetic_attempt_count,
+            "surfaces_with_T_arithmetic_solver_gate_open": arithmetic_gate_open_count,
+            "surfaces_with_exact_base_curve_genus": exact_curve_genus_count,
             "core_pareto_layers": len(core_layers),
             "core_pareto_frontier_size": len(core_layers[0]),
             "exact_pole_pareto_frontier_size": len(pole_layers[0]) if pole_layers else 0,
@@ -699,6 +799,7 @@ def main() -> None:
     parser.add_argument("--source-ranking", type=Path, default=SOURCE_RANKING)
     parser.add_argument("--multisections", type=Path, default=MULTISECTIONS)
     parser.add_argument("--umbral", type=Path, default=UMBRAL)
+    parser.add_argument("--t-arithmetic", type=Path, default=T_ARITHMETIC)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--check", action="store_true")
     arguments = parser.parse_args()
@@ -707,12 +808,19 @@ def main() -> None:
         "source_ranking": arguments.source_ranking.resolve(),
         "multisections": arguments.multisections.resolve(),
         "umbral": arguments.umbral.resolve(),
+        "t_arithmetic": arguments.t_arithmetic.resolve(),
     }
+    payloads = {name: json.loads(path.read_text()) for name, path in paths.items()}
+    if payloads["t_arithmetic"]["input"]["catalogue_sha256"] != digest(
+        paths["catalogue"]
+    ):
+        raise SystemExit("T-arithmetic ledger does not match the catalogue hash")
     result = build(
-        json.loads(paths["catalogue"].read_text()),
-        json.loads(paths["source_ranking"].read_text()),
-        json.loads(paths["multisections"].read_text()),
-        json.loads(paths["umbral"].read_text()),
+        payloads["catalogue"],
+        payloads["source_ranking"],
+        payloads["multisections"],
+        payloads["umbral"],
+        payloads["t_arithmetic"],
     )
     result["inputs"] = {
         relative(path): digest(path) for path in paths.values()

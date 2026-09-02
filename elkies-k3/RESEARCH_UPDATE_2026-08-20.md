@@ -4,8 +4,10 @@
 > described below remains a valid downstream comparison, but it is not the
 > recovered source polarization.  The exact source is the third Kumar frame
 > `H3=[[21/2,3],[3,46]]`: its `H21 cap H92` component has been normalized over
-> `QQ` to the published level-474 genus-two curve.  The current source gate is
-> the marked H3 q6 descent; see
+> `QQ` to the published level-474 genus-two curve.  The marked H3 corridor and
+> direct rootless endpoint gate are now complete; the current programme gate
+> is residual 2-descent in the compact published `t` chart.  See
+> [`README.md`](README.md) and
 > [`KUMAR_E7E8_BACKTRACK.md`](KUMAR_E7E8_BACKTRACK.md).
 
 ## 2026-08-21 upstream correction: backtrack through Kumar, not a guessed CM chart

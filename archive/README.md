@@ -27,7 +27,13 @@ bounded scans, and diagnostics outside the primary proof path.
 
 The [provenance-audits archive](provenance-audits/) preserves dated source
 searches and attribution snapshots that should not be read as active theorem
-statements.
+statements.  Its
+[2026-09-02 experiment-lifecycle audit](provenance-audits/REPOSITORY_EXPERIMENT_LIFECYCLE_AUDIT_2026-09-02.md)
+records the repository-wide stale-frontier and archive pass.
+
+The [Elkies--K3 archive](elkies-k3/) preserves unreferenced early discovery
+notes and points to the separate script-snapshot archive.  Current K3 status
+and navigation remain in [`../elkies-k3/README.md`](../elkies-k3/README.md).
 
 The [high-dimensional GMC archive](high-dimensional-gmc/) preserves the
 former three-real weighted-family searches.  Explicit five-term witnesses

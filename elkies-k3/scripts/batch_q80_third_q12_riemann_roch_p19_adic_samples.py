@@ -5,6 +5,7 @@ import argparse
 import concurrent.futures
 import hashlib
 import json
+import shlex
 import subprocess
 from pathlib import Path
 
@@ -44,7 +45,15 @@ parser.add_argument(
     default=RESULTS / "q80-third-q12-p19-adic-precision1024-sample-manifest.json",
 )
 parser.add_argument("--workers", type=int, default=8)
-parser.add_argument("--limit", type=int)
+parser.add_argument(
+    "--limit",
+    type=int,
+    default=20,
+    help=(
+        "number of residue-distinct seeds to compile; defaults to the 17 "
+        "support-determining samples plus three p-adic holdouts"
+    ),
+)
 args = parser.parse_args()
 args.source = args.source.resolve()
 args.lift = args.lift.resolve()
@@ -53,6 +62,8 @@ args.output_dir = args.output_dir.resolve()
 args.manifest = args.manifest.resolve()
 if args.workers < 1:
     raise ValueError("worker count must be positive")
+if args.limit < 1:
+    raise ValueError("sample limit must be positive")
 
 
 def sha256(path):
@@ -72,8 +83,7 @@ if not seeds:
     import glob
 
     seeds = [Path(path).resolve() for path in sorted(glob.glob(args.seed_pattern))]
-if args.limit is not None:
-    seeds = seeds[: args.limit]
+seeds = seeds[: args.limit]
 if not seeds:
     raise ValueError("no residue-distinct seed samples found")
 
@@ -191,9 +201,27 @@ manifest = {
             "generic interpolation from fewer than the support-determined number of samples",
         ],
     },
-    "reproduce": (
-        "python3 elkies-k3/scripts/batch_q80_third_q12_riemann_roch_p19_adic_samples.py "
-        f"--workers {args.workers}"
+    "reproduce": shlex.join(
+        [
+            "python3",
+            "elkies-k3/scripts/batch_q80_third_q12_riemann_roch_p19_adic_samples.py",
+            "--source",
+            str(args.source.relative_to(ROOT)),
+            "--lift",
+            str(args.lift.relative_to(ROOT)),
+            "--basis",
+            str(args.basis.relative_to(ROOT)),
+            "--seed-pattern",
+            args.seed_pattern,
+            "--output-dir",
+            str(args.output_dir.relative_to(ROOT)),
+            "--manifest",
+            str(args.manifest.relative_to(ROOT)),
+            "--workers",
+            str(args.workers),
+            "--limit",
+            str(args.limit),
+        ]
     ),
 }
 serialized = json.dumps(manifest, indent=2, sort_keys=True) + "\n"

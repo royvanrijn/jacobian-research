@@ -432,18 +432,21 @@ scripts/verify_elliptic_neighbor_compiler_field_generic.sage.
 - [`Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md`](Q80_FINAL_Q6_CLOSEOUT_2026-08-23.md) — completed Q80 terminal characteristic-zero reconstruction and supersession boundary.
 - [`Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md`](Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md) — exact Q80 suffix search lineage and successful marking recovery.
 - [`Q80_CM24_EQUATION_LEDGER_2026-08-22.md`](Q80_CM24_EQUATION_LEDGER_2026-08-22.md) — Q80 CM24 equation ledger, updated with the characteristic-zero closeout.
-- [`H3_Q8_CURRENT_FRONTIER.md`](H3_Q8_CURRENT_FRONTIER.md) — concise H3 q8 exact frontier.
+- [`H3_Q8_CURRENT_FRONTIER.md`](H3_Q8_CURRENT_FRONTIER.md) — historical q8
+  edge summary after the two compiler repairs.
 - [`H3_Q8_REAUDIT_2026-08-22.md`](H3_Q8_REAUDIT_2026-08-22.md) — two-bug diagnosis and exact H3 q8 repair.
 - [`RESEARCH_UPDATE_2026-08-22.md`](RESEARCH_UPDATE_2026-08-22.md) — historical 2026-08-22 repository-wide checkpoint; later Q80 status is superseded by the closeout note above.
 - [`KUMAR_E7E8_BACKTRACK.md`](KUMAR_E7E8_BACKTRACK.md) — source recovery, H2/H3 distinction, and exact H3 lattice corridor.
 - [`data/fibrations/kumar_q80_cm24_equation_progress.tsv`](data/fibrations/kumar_q80_cm24_equation_progress.tsv) — machine-readable Q80 CM24 stage summary.
 - [`Q80_TO_ROOTLESS_PATH_2026-08-21.md`](Q80_TO_ROOTLESS_PATH_2026-08-21.md) — Q80 rootless lattice certificate and historical detailed ledger.
 
-## Next strategic gate
+## Completed H3/Q80 route handoff
 
-For **H3**, the active lifting target is the physical degree-two
+For **H3**, the former lifting target was the physical degree-two
 `q8/orbit376` pencil from the exact C8-pointed `2A3+2A1/MW9` equation to
-`4A1/MW13`.  The q4/orbit1584 predecessor has an exact QQ Riemann--Roch plane,
+`4A1/MW13`.  It and the following q12/orbit5867 edge are now complete; the
+details below preserve the equation-level handoff.  The q4/orbit1584
+predecessor has an exact QQ Riemann--Roch plane,
 quartic, `I4+3I2+8I1+I0*` minimal Jacobian, and second-I6-affine pointing.
 The q4/orbit164 edge has an exact `4 -> 2 -> 2` plane, quartic,
 `I4+2I2+12I1` finite fibres plus `I4` at infinity, and an exact C8 pointing.

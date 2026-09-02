@@ -356,8 +356,11 @@ def spectrum_row(frame: dict, aggregate: dict) -> dict:
         "current_mw2_source_ranked_top_five": (
             frame["frame_id"] in CURRENT_MW2_SOURCE_RANKED_TOP_FIVE
         ),
-        "automorphism_group_order": int(
-            frame["rootless_intrinsics"]["automorphism_group_order"]
+        "automorphism_group_order": (
+            int(frame["rootless_intrinsics"]["automorphism_group_order"])
+            if frame["rootless_intrinsics"].get("automorphism_group_order")
+            is not None
+            else None
         ),
         "translation_cosets": TOTAL_COSETS,
         "inversion_orbits": TOTAL_INVERSION_REPRESENTATIVES,
@@ -389,10 +392,22 @@ def spectrum_row(frame: dict, aggregate: dict) -> dict:
 
 
 def selected_frames(database: dict, frame_ids: list[str]) -> list[dict]:
+    if "ns_classes" in database:
+        classes = [
+            (ns["ns_id"], ns["frames"])
+            for ns in database["ns_classes"]
+        ]
+    elif "surfaces" in database:
+        classes = [
+            (surface["surface_id"], surface["frames"])
+            for surface in database["surfaces"]
+        ]
+    else:
+        raise ValueError("database has neither ns_classes nor surfaces")
     by_id = {
-        frame["frame_id"]: {"ns_id": ns["ns_id"], **frame}
-        for ns in database["ns_classes"]
-        for frame in ns["frames"]
+        frame["frame_id"]: {"ns_id": class_id, **frame}
+        for class_id, frames in classes
+        for frame in frames
     }
     missing = set(frame_ids) - set(by_id)
     if missing:

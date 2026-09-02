@@ -1,5 +1,8 @@
 # Golay-octad design of a rank-17 frame — 2026-09-01
 
+<!-- status-consumer: EC-K3-GOLAY-DET720-NS-SATURATION 306320cad1fd8e6e -->
+<!-- status-consumer: EC-K3-GOLAY-DET720-PHYSICAL-CORRIDOR 0868df67fe8c37ad -->
+
 ## Outcome
 
 Seven octads of the extended binary Golay code give a primitive rank-seven
@@ -33,6 +36,107 @@ general complex K3 with this Neron--Severi lattice has a rootless Jacobian
 fibration of Mordell--Weil rank 17 and height lattice equal to the constructed
 frame.  This does not supply a rational model, arithmetic marking, explicit
 sections over `QQ(t)`, or any exceptional-specialization rank claim.
+
+## Saturation and exact discriminant form
+
+The two integral saturation statements both have index one.  The seven octad
+vectors are primitive in `N(24A1)`, and their rank-17 orthogonal complement is
+primitive as well.  The latter is also formal: it is the kernel of the
+integral pairing map from the Niemeier lattice to the dual of the auxiliary,
+so its quotient is torsion-free.  The independent coordinate-basis saturation
+calculation returns index one.
+
+For the K3 intersection lattice, distinguish the literal determinant from the
+signed convention used in the elliptic-source ledgers:
+
+```text
+NS = U + frame(-1),       signature (1,18)
+det Gram(NS) = +720,
+disc_signed(NS) = -|det Gram(NS)| = -720.
+```
+
+Thus the requested `-720` is a signed discriminant, not the determinant of a
+signature-`(1,18)` Gram matrix.  The discriminant group is
+
+```text
+A_NS = Z/2 + Z/6 + Z/60
+     = (Z/2)^2 + Z/4 + (Z/3)^2 + Z/5.
+```
+
+In the canonical primary normal basis, the exact quadratic form
+`q_NS : A_NS -> Q/2Z` is the negative of
+
+```text
+[1   1/2]  +  [1/4]  +  [2/3]  +  [4/3]  +  [4/5].
+[1/2 1  ]
+```
+
+Equivalently, the displayed matrix is `q_frame=q_T`.  The rank-three lattice
+
+```text
+[ 8 -2  2]
+[-2 -4 10]
+[ 2 10 -4]
+```
+
+has signature `(2,1)`, determinant `-720`, and exactly that finite quadratic
+module.  Hence `q_T=-q_NS`; gluing along this anti-isometry gives an even
+unimodular lattice of signature `(3,19)`, so the embedding of `NS` in the K3
+lattice is primitive.  Since the discriminant length is three and the
+indefinite rank is nineteen, the usual rank-at-least-length-plus-two criterion
+also makes this `NS` isometry class unique in its genus.  A generic period in
+the displayed rank-three complement avoids every extra rational hyperplane,
+and therefore has **exact** Neron--Severi lattice `NS` and Picard rank 19.
+
+The exact replay is
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_golay_det720_ns_saturation.sage --check
+```
+
+with certificate
+[`../artifacts/generated-results/elkies-k3-golay-det720-ns-saturation-v1.json`](../artifacts/generated-results/elkies-k3-golay-det720-ns-saturation-v1.json).
+
+This theorem is geometric, but it does not make the K3 rational over `QQ`.
+In fact the first exact rational `3I6` specialization is a sharp negative
+control: it has rational 3-torsion and a rational half of the displayed
+height-four section, hence index six and signed discriminant `-20`.  It is a
+rational Picard-19 K3, but not the determinant-720 Golay K3.
+
+## Physical corridor to the rootless frame
+
+There is now an exact six-edge marking-level corridor inside the saturated
+determinant-720 Neron--Severi lattice:
+
+```text
+3A5 -> 4A2+A5 -> 3A1+2A2+A3 -> 4A1+A2
+    -> 3A1 -> 2A1 -> rootless MW17.
+```
+
+All six neighbours have old-fibre degree two and `q=4`.  Every fibre is
+primitive; every finite/affine component, all-section, and finite horizontal
+wall gate passes; and every edge carries an exact determinant-one transport.
+The first five edges have horizontal `P.O. <= 2`.  The final `2A1`-to-rootless
+edge is physical after two component-Weyl repairs, but this audited
+presentation has `P.O.=4`.  A bounded rank-first search reaches `A1/MW16`
+while keeping `P.O. <= 2`, and the tested order-eight automorphism group of
+the displayed `2A1` bridge does not lower its final pole; neither computation
+is an optimality proof.  Thus a physical corridor is proved, while the
+stronger end-to-end `P.O. <= 2` corridor remains open.
+
+Replay the selected witness with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_golay_det720_physical_corridor.sage --check
+```
+
+The certificate is
+[`../artifacts/generated-results/elkies-k3-golay-det720-3a5-to-mw17-physical-corridor-v1.json`](../artifacts/generated-results/elkies-k3-golay-det720-3a5-to-mw17-physical-corridor-v1.json).
+This is a corridor from the prescribed `G720-S0128` lattice marking, not from
+the stored rational `s6=10` equation: determinant is invariant under these
+unimodular transports, whereas that equation has saturated determinant 20.
 
 ## The seven-octad design
 

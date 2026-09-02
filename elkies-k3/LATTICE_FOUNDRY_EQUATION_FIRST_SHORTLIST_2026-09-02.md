@@ -212,7 +212,7 @@ fibre type `3A5` and basis pole profile `[0,0]`.
 The compact ledger is
 [`../artifacts/generated-results/elkies-k3-golay-det720-equation-first-shortlist-v1.json`](../artifacts/generated-results/elkies-k3-golay-det720-equation-first-shortlist-v1.json),
 SHA-256
-`c4930c78a67c2e144e8fdb09cb6325e76bfb2933927be10444e11511834439d0`.
+`e5ab02930f87b162d00ebc18a416b03615bbe8e3febbbb10cd85198b9bf601be`.
 It retains all 177 semistable complete-basis rows while hash-pinning the
 153 MB source inventory and 29 MB pole audit.  The latter artifacts have
 SHA-256 respectively
@@ -279,8 +279,48 @@ Artin--Tate discriminant representatives `-256` and `-1440`.  Their ratio
 rational model has geometric Picard rank exactly 19.  The Picard certificate
 has SHA-256
 `82a46940e54c9be162371d689dfd518ca1b9835b13a24b867c33696e99e6c4f3`.
-Saturation of the displayed section/frame lattice—and hence exact identity
-with the abstract determinant-720 target NS class—remains a separate gate.
+
+The subsequent saturation gate **rejects this rational point from the
+determinant-720 class**.  It has the rational 3-torsion section
+
+```text
+x = 3*t^4 + 36/5*t^3 + 258/25*t^2 + 36/5*t + 3,
+y = 1728/5*t^2*(t-1)^2,
+```
+
+and the displayed height-four section `Q` is twice the rational height-one
+section with
+
+```text
+x = 3*t^4 + 36/5*t^3 + 3138/25*t^2 + 36/5*t + 3,
+y = 41472/25*t^3.
+```
+
+These enlarge the displayed frame by index `3*2=6`.  Exact enumeration of
+the discriminant form with Smith invariants `[2,6,60]` finds no isotropic
+subgroup of order greater than six, so this is the full NS lattice.  Its
+determinant is `-720/6^2=-20`, its torsion is `Z/3`, and its free MW height
+Gram is `diag(5/6,1)`.  Thus `s6=10` is a simple Picard-19 K3, but not the K3
+carrying `G720-F001`.  The rejection artifact has SHA-256
+`df50dd78ace634fb1611307cbac802c37ded715ee952c31d649a8aecd78d534e`.
+
+The bounded rational search now covers all six distinct etale marked residue
+disks found in the `GF(7)` chart.  It tests 1,478 reduced rational parameters
+`a/b` with `|a|,b <= 40`, `7` not dividing `b`, reconstructs only after all 55
+equations vanish exactly, and then applies rational 3-division and section
+halving gates.  Exactly three rational parameters reconstruct: `s6=10` in
+two disks and `s6=-8` in one.  Every one has rational 3-torsion and a rational
+half of `Q`, hence belongs to the same wrong determinant-20 locus.  The six
+scan artifacts have SHA-256
+`60ca764fd3012ae190aa1409ca143026df329976c45a1efc72c7afa92f7b0ca0`,
+`cec7abedc99a65dda82b973b7e2b25d287846bc2bc9d176de72ddcd0e1f991fa`,
+`6d223be7bf9d9d85bac9aa5cff7a6349d10a1f507073d1e597efe812d004c835`,
+`55de7b4a6e9ca533a0b5444f5d5ffc68cfd0d9475407ed3fe56570cc22c69d61`,
+`cd22021ee950cd8116255f121f35ff1cedc141f0d715bb4a8ce519ee50c8c379`,
+and
+`180464017a83addf7c7995a7d084d1b8a5260c4a6bee52ba0ef36bef2d217699`.
+This is an exact bounded negative, not a proof that the remaining formal
+parameters are irrational or that no determinant-720 rational point exists.
 
 The target-side result is deliberately less flattering.  The rootless MW17
 frame `G720-F001` has 3,064 norm-four vectors, 34,848 rational bisection
@@ -311,6 +351,224 @@ reaches `G720-S0128`.  The exact negative
 artifact has SHA-256
 `5a83518072cb5f4d010e911a6c99de28c9aaecd6c777b3154bcfacccd1a25ad6`.
 This does not exclude higher-degree edges or a short multi-edge route.
+
+## Determinant 500: MW1 source to a rootless MW17 target
+
+Searching the other fibrations of expanded-catalogue surface
+`K3-04b86146cc6b284b` gives the first candidate that matches the revised
+objective directly.  Its transcendental lattice is
+`U(5)+<20>`.  The pinned target `K3-04b86146cc6b284b-F001` is rootless MW17,
+while a complete search in the six large-component ambients `D24`,
+`D16+E8`, `3E8`, `A24`, `A17+E7`, and `A15+D9` returns 3,101 exact
+MW1--3 source Grams in the declared rank-14--17, one-to-three-support window.
+There are 47 MW1 rows, 236 MW2 rows, and 2,818 MW3 rows.
+
+Three reduced Grams have source type `A3+A4+A9/MW1`; exact PARI isometries
+merge them into one integral class.  Its invariants are
+
+```text
+reducible fibres: I4 + I5 + I10
+MW group:         Z, with height Gram [5/2]
+torsion:          trivial
+support count:    3
+minimum basis PO: 1
+determinant:      200 * (5/2) = 500
+```
+
+Thus this is a one-dimensional Picard-19 lattice family with a semistable
+root pattern and only one additional section condition beyond the expected
+two-dimensional `I4+I5+I10` fibre stratum.  The lattice does not prove that
+the remaining singular fibres are all `I1`, nor does it descend the source
+marking to `Q`; those are the next equation gates.  The exact source inventory
+and compact promotion certificate have SHA-256
+`fd651d8daadbaa2b797e34aa949fce68bd14ea7e13952f73f5ea66699dcf2aba`
+and
+`59381302670d455e3906b27fc3cf58933f088422e3ae661f74bd6137be1eaed0`.
+
+The target is not multisection-leading.  Its exact low-height degree-two
+counts are 29,040 rational and 63,895 genus-one bisection translation orbits.
+A deterministic 1,024-coset exact-CVP pilot finds 96 rational and 226
+genus-one trisection candidates, plus 349 genus-zero-through-two
+quadrisection candidates.  The pilot artifact has SHA-256
+`5273b0c4631c7b2b885905f23ecd9b7d6e40b42aab914fc413c102c48f740800`.
+The complete `3^17` degree-three census gives 12,095,162 rational and
+29,878,240 genus-one trisection translation cosets, with maximum coset
+minimum norm 24.  Its SHA-256 is
+`4e5f1d7011b9f1732343865953cdd8f802a83ae585a675dc8e9bbed5065a2393`.
+These counts confirm rather than overturn the pilot: determinant 500 lies on
+a genuine Pareto frontier, with dramatically better source-equation cost
+than NS0031 or NS0024 but substantially weaker target multisection richness.
+
+The first equation gate is positive but characteristic-5 singular.  The
+complete normalized `GF(5)` fibre scan exhausts all `5^8=390,625` choices of
+`A`, finding three exact squarefree `I4+I5+I10+5I1` models.  On those three
+models the pole-one section chart is especially small: depths `(2,0,5)` at
+`I4,I5,I10` give seven independent X-jets, hence one X numerator for each of
+the three allowed monic linear denominators.  The square twist contains four
+signed marked generators on two models; the nonsquare twist is empty.  The
+fibre, square-marking, and nonsquare-marking artifacts have SHA-256
+`8b923fb250f5327809c01ff52e3ab47ddbbd0a68ca98c4ef3f410db52025afcc`,
+`68aadb4a04e78fdd33a13742339883f2ee3c79d004f9598c4a0a516372f0090f`,
+and
+`ccd1a45faea89705bdf8c00435b6a98850d3e311057f1d6498c8f66dddce299e`.
+
+Neither distinct marked model supplies a smooth 5-adic lift in the displayed
+integral system.  Each 40-variable, 53-equation Jacobian has rank 38 rather
+than the expected 39, and the compatible overdetermined lift stops at
+`5^2`.  The two tangent artifacts have SHA-256
+`0a76a92119ad0e4d22269d109d7fe7f7af2b80c6cd0b82b1cff3f2c2e2de9be1`
+and
+`55bb7500f02b9a52f962e342148a2276b07b29570f1c5556ea89b8e6268262f9`.
+Because the fibre configuration contains `I5`, this is not promoted to a
+characteristic-zero obstruction; the prime-7 chart is the next arithmetic
+gate.
+
+That prime-7 gate succeeds.  The complete `7^8=5,764,801` fibre scan finds
+six squarefree normalized models.  Their square and nonsquare twists contain
+respectively two and four signed pole-one sections with the required depths.
+All three geometrically distinct marked seeds have rank-39 Jacobians in 40
+variables and lift through `7^8`; the pinned square seed has tangent dimension
+one and unit minor `6 mod 7`.  The fibre, square-marking,
+nonsquare-marking, and pinned Hensel artifacts have SHA-256
+`4067b0d98b7ef96ea8591d20537f3cb2211487a46d24b5dbc060782f488e4f95`,
+`6395b2e836a407e4662d5ccac814900d9b8161dbc6bea18db05798804cf45dbc`,
+`8ba842cfcc2eee7411c31c15c665a74a5ed358b4a3d766b873994d1eaabb407f`,
+and
+`d4f35d028c3fa90887e29ac4a16853493ee5a1b4899a654d1bf3dbb282fa5b74`.
+The exact identity
+
+```text
+D=4*A^3+27*B^2, H=2*A*X+3*B*C^2,
+8*A^3*(X^3+A*X*C^4+B*C^6)
+  = D*C^4*(H-B*C^2) - 9*B*H^2*C^2 + H^3
+```
+
+closes formal dependence.  The fibre and component jets force the section
+residual to vanish to order four at zero and order ten at infinity, leaving
+only coefficients 4--8; these are exactly the five residual rows in the unit
+minor.  Hence the 39 retained equations define a one-dimensional formally
+smooth marked branch over `Z_7`.  The formal certificate has SHA-256
+`c676312311c238506f2ce0ec177b5fc142e95d49ee0a784e458ff730205a7d56`.
+Rational algebraization remains open.
+
+A bounded rational probe across all three smooth residue disks tests 87 small
+integer values of the free coordinate at precision `7^40`.  One value,
+`m4=-20` in the first nonsquare disk, reconstructs all forty coordinates and
+gives a strikingly small `Q` model.  It is nevertheless the wrong lattice:
+the displayed height-`5/2` pole-one section is exactly five times the rational
+pole-zero section
+
+```text
+x = 4/3*t^4 - 4/3*t^3 + 5/3*t^2 - 10/3*t + 3,
+y = 16*t^3 - 16*t^2,
+```
+
+whose component depths are `(2,1,3)` and height is `1/10`.  The displayed
+frame has Smith invariants `[5,5,20]`; exhaustive discriminant-form enumeration
+finds six isotropic subgroups of order five and none larger.  Thus the explicit
+fifth root realizes the maximal index-five enlargement, and the rank-19
+primitive closure has determinant `500/5^2=20`.  The exact rational rejection
+artifact has SHA-256
+`2548f5a2e62e1a4e551ed2fe0592df56a398160d56e1ffcbfbfe69aca6572b2e`.
+The scan itself is now a byte-checkable artifact: 86 parameters have no full
+coefficientwise rational reconstruction and the sole exact reconstruction is
+the rejected determinant-20 point.  Its SHA-256 is
+`140910f1521559972a76396c5a2e0873f8edf6e42e977f9a7f9d9b1c4d63a513`.
+This is a bounded integral-parameter result, not a rational-point exclusion.
+As with determinant 720, every future rational reconstruction must pass
+torsion and section-divisibility gates before it is identified with the
+foundry lattice.
+
+The same-surface MW2 alternative has also been tested rather than inferred
+from its lower rank.  Nine retained `A3+A4+A8/MW2` rows have pole profile
+`[0,0]`; exact integral isometries put them in one unmarked frame class.  Their
+chosen physical bases split into two profiles of sizes three and six, but
+both impose the same normalized equation conditions:
+
+```text
+reducible fibres:       I4 + I5 + I9
+generator depths:      (1,0,1), (1,0,3)
+required smooth P.Q:   1
+MW rank / basis poles: 2 / [0,0]
+```
+
+This chart is fibre-rich: exhaustive scans find 30 squarefree normalized
+models over `GF(5)` and 114 over `GF(7)`, versus 3 and 6 for the MW1 chart.
+But it is marking-poor.  Neither twist class at either prime contains a valid
+ordered MW2 basis.  The `GF(7)` nonsquare chart does contain 20 individual
+sections in the first generator class and 32 in the second; on five models
+both classes occur, giving 28 component-matched pairs, but all 28 pairs meet
+at a reducible fibre and fail the required smooth-intersection gate.  Thus
+this is a useful fallback if the MW1 rational gate stays empty, not presently
+a better promoted source.  The isometry, fibre-5, fibre-7, and four marking
+artifacts have SHA-256
+`c06c0d03c9c74c3bb2112197665d6336543ab7f1c179bb168503ce068712cfbc`,
+`130d5d755abfeb8dab673c02a7ca5854c1b4896b78bd9dc788f49cd3cd3dbf1d`,
+`9f24bf1f1e0761ee2bba5b3058d82ffd83b1159fb7057deacd03899f107d47e3`,
+`3e288d5ca45bed9545b56d7b85ad7b85581b55e2d7d019ab8ed2260784041a0d`,
+`38d00092ee2d4952c83dcd144449c2656c27e63903912e02730fe78bd6cba6d2`,
+`5c273eceb1f1506a127bc58de27dafed603e79b3a432e27e1207136b5f95c5d8`,
+and
+`f22c748b9743526951a479bca1a92006bcc5b27ea1559a3ebc6bc6c3791a7f59`.
+
+The first exact same-NS corridor beam from `S0160` is also complete.  It uses
+degree-two old fibres, `q=4`, section pole order at most one, rank-first beam
+width eight, and depth twelve; MW enumeration is capped at 2,000 vectors only
+from MW rank four onward.  The best retained root rank falls from 16 at the
+source to 14, 9, 6, and 4 in the first four edges, hence reaches MW13, but it
+never reaches the named rootless MW17 frame.  Root rank four recurs at every
+depth except seven.  This is a bounded beam miss, not a complete neighbour-
+graph rejection: other `q`, degrees, pole orders, repaired presentations, and
+wider beams remain open.  The artifact has SHA-256
+`aabc732debe6378eafeaac651f0f3a6c5ba181cbc8f55059a53a976499eb9bb2`.
+
+## Determinant 750: rational moduli, but no ideal source in the large-ambient cut
+
+The next genus-zero rootless MW17 target in the expanded Pareto order is
+`K3-10a14a46c14b3150-F001`, of determinant 750.  Its arithmetic ledger
+identifies the moduli curve as `Gamma_0(3)`, so it is attractive before source
+search.  The surface has two catalogue auxiliary classes.  Both have now been
+searched completely in the same six large Niemeier ambients, restricted to
+semistable MW0--2 sources with one to three reducible supports.  Neither
+auxiliary produces an admissible source Gram.  The first has 12 terminal
+embeddings in each of `A17+E7` and `A15+D9`, all nonprimitive; the second has
+36 in `A17+E7` and none elsewhere, again with no retained source.
+
+This is an exact rejection only for the declared ideal cut, not a complete
+fibration classification: smaller-component ambients, additive fibres, MW3,
+and four-support sources remain open.  It nevertheless demotes determinant
+750 behind determinant 500 for the present equation-first objective.  The
+two search artifacts and compact rejection certificate have SHA-256
+`8e822ec7d557b85f693560316e3ed61f7228df7e5b1755b5da11fd31e3a31e87`,
+`d94d0e78c9295a93a1f319b1af91c24e094d15cb5cf312ee5c8cf86f63389bae`,
+and
+`70b5fef7775640fe5757e0fd24e715efc2c0adbaabfdda349686869df6f2be2b`.
+
+The determinant-864 genus-zero `Gamma_0(2)` rootless MW17 surface
+`K3-3425921cd7db891f` has the same outcome.  Its two auxiliary searches find
+many terminal embeddings—312 for the first auxiliary and 332 for the
+second—but no semistable MW0--2 source in the declared cut.  Their SHA-256
+hashes are
+`af9067cf73a6ecf700b4c853177119467732fd20124b537fbc92c2ebb7745551`
+and
+`5143e0425bb1c7a89253b7e2c7dd010a00148e53a089e45a8f5aa4f94a05021c`.
+
+The determinant-1296 genus-zero `Gamma_0(3)` surface
+`K3-49b947f9626a0481` is now rejected in the same scoped cut.  Each of its two
+auxiliary classes has exactly 402 terminal embeddings across the selected
+ambients—168/144 in `A24`, 48/72 in `A17+E7`, and 186/186 in `A15+D9`—but
+every one is nonprimitive and no source Gram survives.  The two exact search
+artifacts have SHA-256
+`de144b84c019cb1c8a962bac68c1a2891d14dca2646b105bc867cf5664d88570`
+and
+`af4e04ebfa08ba2fa0bbe5900c7f79cd9d38252f3c385d46f6ce0cf5a6ad5735`.
+
+A live rational-moduli optimizer now records the resulting queue.  Among the
+six catalogue surfaces with rational moduli and a rootless MW17 frame,
+determinant 500 remains the sole active promotion; determinants 750, 864, and
+1296 are scoped ideal-source rejections; determinants 1500 and 1728 remain
+queued in that order.  This ledger has SHA-256
+`26e81e447a48bfeaa0a22a2d888f606bc946f97ce27f8b44a7e86aa954b53cb0`.
 
 ## Reproduction and proof boundary
 
@@ -384,6 +642,12 @@ rebuilt and checked by
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_golay_det720_3a5_picard19.sage --check
 
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_golay_det720_3a5_saturation_rejection.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_golay_det720_3a5_rational_parameters.sage --check
+
 python3 elkies-k3/scripts/build_golay_det720_foundry_adapter.py --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -401,8 +665,150 @@ python3 elkies-k3/scripts/build_golay_det720_foundry_adapter.py --check
 python3 elkies-k3/scripts/build_golay_det720_equation_first_shortlist.py --check
 ```
 
+The determinant-500 source search and promotion are reproduced by
+
+```bash
+python3 elkies-k3/scripts/extract_rank7_catalogue_source_search_target.py \
+  --surface-id K3-04b86146cc6b284b --partner-index 2 \
+  --frame-id K3-04b86146cc6b284b-F001 \
+  --output artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-source-search-target-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_golay_det720_prescribed_root_sources.sage \
+  --target artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-source-search-target-v1.json \
+  --output artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-prescribed-root-sources-large-a-v1.json \
+  --source-root-rank-min 14 --source-root-rank-max 17 \
+  --source-support-min 1 --source-support-max 3 \
+  --ambient-label A24 --ambient-label A17_E7 --ambient-label A15_D9 \
+  --ambient-label D24 --ambient-label D16_E8 --ambient-label 3E8 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/sample_lattice_foundry_multisection_spectrum.sage \
+  --database artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json \
+  --frame-id K3-04b86146cc6b284b-F001 --sample-count 1024 \
+  --height-slack 4 \
+  --output artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-multisection-spectrum-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/complete_lattice_foundry_degree3_spectrum.py \
+  --database artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json \
+  --frame-id K3-04b86146cc6b284b-F001 --workers 8 \
+  --chunk-size 1000000 --float-type dd --audit-precision 256 \
+  --audit-stride 4096 \
+  --checkpoint artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-degree3-complete-v1.checkpoint.json \
+  --output artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-degree3-complete-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_k3_04b_equation_first_promotion.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0028_source_ansatz_modp.sage \
+  --source artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-prescribed-root-sources-large-a-v1.json \
+  --ns-id K3-04b86146cc6b284b \
+  --source-id K3-04b86146cc6b284b-S0160 --prime 5 --examples 20 \
+  --output artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-a3-a4-a9-fibre-ansatz-mod5-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_k3_04b_a3_a4_a9_pole1_marking_modp.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_k3_04b_a3_a4_a9_marked_gf5_hensel.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0028_source_ansatz_modp.sage \
+  --source artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-prescribed-root-sources-large-a-v1.json \
+  --ns-id K3-04b86146cc6b284b \
+  --source-id K3-04b86146cc6b284b-S0160 --prime 7 --examples 0 \
+  --output artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-a3-a4-a9-fibre-ansatz-mod7-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_k3_04b_a3_a4_a9_pole1_marking_modp.sage \
+  --fibres artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-a3-a4-a9-fibre-ansatz-mod7-v1.json \
+  --output artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-a3-a4-a9-pole1-marking-mod7-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_k3_04b_a3_a4_a9_marked_gf5_hensel.sage \
+  --fibres artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-a3-a4-a9-fibre-ansatz-mod7-v1.json \
+  --marking artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-a3-a4-a9-pole1-marking-mod7-v1.json \
+  --output artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-a3-a4-a9-marked-gf7-hensel-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_k3_04b_a3_a4_a9_formal_smoothness.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_k3_04b_a3_a4_a9_source_qq_rejection.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_k3_04b_a3_a4_a9_rational_parameters.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/classify_k3_04b_semistable_mw2_sources.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0028_source_ansatz_modp.sage \
+  --source artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-prescribed-root-sources-large-a-v1.json \
+  --ns-id K3-04b86146cc6b284b \
+  --source-id K3-04b86146cc6b284b-S2021 --prime 5 --examples 0 \
+  --output artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-a3-a4-a8-mw2-fibre-ansatz-mod5-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_lattice_foundry_ns0028_source_ansatz_modp.sage \
+  --source artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-prescribed-root-sources-large-a-v1.json \
+  --ns-id K3-04b86146cc6b284b \
+  --source-id K3-04b86146cc6b284b-S2021 --prime 7 --examples 0 \
+  --output artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-a3-a4-a8-mw2-fibre-ansatz-mod7-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_k3_04b_a3_a4_a8_mw2_marking_modp.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_k3_04b_a3_a4_a8_mw2_marking_modp.sage \
+  --fibres artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-a3-a4-a8-mw2-fibre-ansatz-mod7-v1.json \
+  --quadratic-twist 3 \
+  --output artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-a3-a4-a8-mw2-marking-mod7-nonsquare-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_lattice_foundry_same_ns_compiler_routes.sage \
+  --case k304b --q 4 --degree 2 --max-pole 1 --beam-width 8 \
+  --max-depth 12 --mw-vector-cap 2000 --cap-from-mw-rank 4 --rank-first \
+  --output artifacts/generated-results/elkies-k3-k3-04b86146cc6b284b-same-ns-compiler-routes-rankfirst-cap2000-v1.json \
+  --check
+
+python3 elkies-k3/scripts/certify_k3_10a_semistable_source_rejection.py --check
+
+python3 elkies-k3/scripts/extract_rank7_catalogue_source_search_target.py \
+  --surface-id K3-49b947f9626a0481 --partner-index 1 \
+  --frame-id K3-49b947f9626a0481-F001 \
+  --output artifacts/generated-results/elkies-k3-k3-49b947f9626a0481-source-search-target-partner1-v1.json \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/enumerate_golay_det720_prescribed_root_sources.sage \
+  --target artifacts/generated-results/elkies-k3-k3-49b947f9626a0481-source-search-target-partner1-v1.json \
+  --output artifacts/generated-results/elkies-k3-k3-49b947f9626a0481-semistable-mw0-2-sources-large-a-partner1-v1.json \
+  --source-root-rank-min 15 --source-root-rank-max 17 \
+  --source-support-min 1 --source-support-max 3 --all-a-only \
+  --ambient-label D24 --ambient-label D16_E8 --ambient-label 3E8 \
+  --ambient-label A24 --ambient-label A17_E7 --ambient-label A15_D9 --check
+
+# Repeat the preceding two commands with partner1 replaced by partner2.
+
+python3 elkies-k3/scripts/build_rank7_rational_moduli_source_optimizer.py --check
+```
+
 All displayed lattice-source data, section-pole profiles, finite-field marking
 counts, formal-local statements, rational equation identities, Picard bound,
 and degree-three counts are copied from hash-pinned exact artifacts.  The
-report constructs no saturation/target-NS identity, rational parameterization,
+report constructs no replacement rational point in the intended determinant-720
+NS class, rational marking or parameterization of the determinant-500 source,
 neighbour route, effective target multisection, or specialization rank jump.

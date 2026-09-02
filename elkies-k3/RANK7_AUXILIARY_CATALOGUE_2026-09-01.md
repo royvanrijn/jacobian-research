@@ -437,11 +437,52 @@ auxiliaries, and the trivial residual groups for `D24` and `D16+E8` provide
 no shortcut to their systematic primitive rank-seven enumeration.
 
 No rooted backend now has an unknown chamber residual group, but no
-determinant-band shard is a complete all-primitive-embedding census. The separate Leech
-backend now has an exact ambient Gram matrix and two certified `Co0`
-generators, but no primitive rank-seven embedding orbit has yet been
-enumerated. In particular, the catalogue does not turn the old mutation shell
-into a determinant-5000 theorem by relabeling it.
+determinant-band shard is a complete all-primitive-embedding census. In
+particular, the catalogue does not turn the old mutation shell into a
+determinant-5000 theorem by relabeling it.
+
+## First Leech coordinate language and rooted-source crosswalk
+
+The separate Leech backend now goes beyond the ambient foundation without
+overstating a Conway quotient. PARI recovers 98,280 antipodal norm-four pairs
+in the pinned exact Gram model. A deterministic set of 24 representatives has
+basis determinant one, so every one of its
+`binomial(24,7)=346,104` coordinate rank-seven summands is primitive. Every
+complement is rootless by the Leech minimum-four certificate and hence gives
+MW17 at Picard rank 19.
+
+All 346,104 summands have determinant between 486 and 1,984, so none meets the
+5,000 rejection boundary. Their 129,064 literal ordered Gram patterns collapse
+to 221 types under exact independent generator signs and permutations. The
+discriminant-length distribution is
+`1:94, 2:30, 3:83, 4:1, 5:12, 7:1`; 207 types reach the ternary gate, 194 have
+exactly one matching even ternary genus, and `(T,NS)`-first deduplication gives
+150 preliminary surface keys. A 24-bit orthogonality-mask transform computes
+the norm-four spectrum of every one of the 346,104 rootless complements
+simultaneously: the number of unoriented norm-four pairs ranges from 931 to
+2,160. This is both a typed MW short-vector metric and an exact first Co1-orbit
+separator.
+
+Those keys use the literal global-catalogue schema. An exact crosswalk finds
+43 already among the 827 rooted-catalogue surfaces and 107 absent from the
+current catalogue. Of the 43 matches, the easiest currently catalogued rooted
+frame has MW-rank distribution `MW12:25, MW13:11, MW14:4, MW17:3`. Thus the
+desired pattern already occurs concretely inside this bounded language:
+
+```text
+Leech MW17 target -> rooted MW12--14 frame
+```
+
+The rooted frames are lattice presentations, not automatically simple
+equations or certified shortest neighbour corridors. The 107 unmatched keys
+are new relative to this catalogue, not a global novelty theorem.
+
+The remaining orbit gate is substantial. The 221 signed-basis types are not
+`Co1` embedding orbits, and the coordinate language is not all primitive
+rank-seven Leech sublattices. Accordingly these 150 keys are recorded in the
+backend registry but withheld from the global surface/frame totals until the
+exact Conway quotient is completed. No primitive rank-seven `Co1` embedding
+orbit is claimed yet.
 
 ## Orbit policy
 
@@ -493,16 +534,70 @@ K3-c4e34d1319a61b31  K3-be060aee9b10a819  K3-ea9158beda34935a
 K3-b42a9aa79eed289c  K3-211c5672907d017a
 ```
 
-Missing arithmetic data are never imputed. Separate enriched frontiers use
+Missing data are never imputed. Separate enriched frontiers use
 only rows carrying the required evidence: 39 surfaces have exact minimum-pole
 data, 787 have nontrivial exact stabilizer evidence, nine have the existing
 degree-two-exact/degree-three-and-four-bounded multisection data, and 66 have
 rootless target short-vector data. No surface currently has a certified
 physical neighbour route, so that coverage frontier is empty. Equation
-construction, field of definition, conductor prospects, and moduli
-genus/rationality remain typed `UNKNOWN` unless an input artifact certifies
-them. Pareto leadership is a search priority, not an optimality or arithmetic
-rank theorem.
+construction, field of definition, and unresolved arithmetic curve data
+remain typed `UNKNOWN` unless an input artifact certifies them. Pareto
+leadership is a search priority, not an optimality or arithmetic-rank theorem.
+
+## Mandatory T-arithmetic pre-solver layer
+
+The factory now inserts
+[`../artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json`](../artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json)
+between `(T,NS)` deduplication and all equation-target extraction. Each of the
+827 rows contains:
+
+1. the primitive-similarity normalization of the literal ternary Gram;
+2. an exact rational isotropy witness or PARI local obstruction prime;
+3. the rational even-Clifford quaternion algebra;
+4. the integral even-Clifford order's reduced-trace pairing and reduced
+   discriminant;
+5. exact modular/Shimura data when the order type is certified, otherwise a
+   typed local-order frontier.
+
+The exact split is `550` isotropic and `277` anisotropic. Among the isotropic
+rows, `313` have a divisibility-one isotropic vector and a recorded unimodular
+splitting
+
+```text
+T_similar = U + <2N>.
+```
+
+For these rows the norm-one Clifford group is certified as `Gamma_0(N)`. The
+backend computes every cusp representative and width, elliptic orbits, index,
+and genus; it triggers a Hauptmodul lookup in genus zero and compares the cusp
+widths/index with the numerical signatures of semistable rational and K3
+modular elliptic surfaces. There are fourteen certified genus-zero rows and
+twelve current eta-quotient/`j` registry hits. The other 237 isotropic rows are
+still exact split Clifford orders, but their congruence subgroup signature is
+left open rather than being guessed from the order discriminant.
+
+For anisotropic `T`, the quaternion discriminant is exact. The quotient of the
+Clifford-order reduced discriminant by it is recorded as the local level index.
+It becomes an Eichler level only after local order type is certified. At
+present 171 rows have a coprime Eichler-level candidate, while 105 are already
+non-Eichler because the order is nonmaximal at a ramified prime. Their
+`X_0^D(N)` genus, Atkin--Lehner labels, and small CM embedding screens are
+therefore explicitly conditional or open.
+
+The determinant-948 H3 surface `K3-8188cdcda8c57b2d` is the exact positive
+control. Its row recovers `(D,N)=(6,79)`, genus `13` for `X_0^6(79)`, the
+genus-two quotient by `w_474`, and the model
+
+```text
+u^2 = 16*t^6 - 19*t^4 + 88*t^2 - 48.
+```
+
+It also attaches the exact CM anchors `Delta=-3` at infinity with singular-K3
+Gram `[[2,1],[1,2]]`, and `Delta=-24` at `(t,u)=(+/-2,+/-32)` with Gram
+`[[4,0],[0,6]]`. This is precisely the arithmetic-source-first logic of
+Elkies's H3 route, now made a hash-checked factory gate. The source-target
+adapter refuses a stale or missing arithmetic ledger, and typed unknowns keep
+the equation-target gate closed until the curve identification is certified.
 
 ## Replay
 
@@ -743,14 +838,41 @@ rank theorem.
   elkies-k3/scripts/build_leech_co0_backend.sage --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_leech_minimal_line_action.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_leech_minimal_line_action.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_leech_minimal_basis_coordinate_shell.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_leech_minimal_basis_coordinate_shell.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_rank7_auxiliary_catalogue.sage
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_rank7_auxiliary_catalogue.sage --check
 
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_rank7_t_arithmetic.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_rank7_t_arithmetic.sage --check
+
+python3 elkies-k3/scripts/compare_leech_coordinate_targets_to_rooted_catalogue.py
+
+python3 elkies-k3/scripts/compare_leech_coordinate_targets_to_rooted_catalogue.py --check
+
 python3 elkies-k3/scripts/build_rank7_surface_pareto.py
 
 python3 elkies-k3/scripts/build_rank7_surface_pareto.py --check
+
+# Supported ordered factory entry point (catalogue -> T arithmetic -> Pareto).
+python3 elkies-k3/scripts/build_rank7_all_niemeier_factory.py
+
+python3 elkies-k3/scripts/build_rank7_all_niemeier_factory.py --check
 ```
 
 ## Next exact frontier
@@ -772,12 +894,23 @@ Weyl-sign/M24 quotient. The next rooted gate is an exact finite generator
 language strictly larger than positive octads—signed octads and non-octad
 short-vector/reduced-basis extensions—without relabeling the 24-orbit
 subfamily as an all-primitive shard certificate.
-The natural Leech target is a minimal-vector-generated rank-seven shard with a
-declared reduced-basis bound; it must remain separate because rootlessness is
-automatic there and the orbit group is `Co0`.
+The immediate Leech gate is now the exact `Co1` quotient of the completed
+minimal-basis coordinate language. After that, enlarge the language to a
+minimal-vector-generated rank-seven shard with a declared reduced-basis bound;
+it must remain separate because rootlessness is automatic there and the orbit
+group is `Co0`.
 
 ## Literature
 
+- N. Elkies, *Shimura curve computations via K3 surfaces of
+  Neron--Severi rank at least 19*, arXiv:`0802.1301`; this is the primary
+  arithmetic-source-first precedent for the H3 positive control.
+- J. Voight, *Quaternion Algebras*, Graduate Texts in Mathematics **288**,
+  Springer (2021); the ternary-form/Clifford-order and arithmetic Fuchsian
+  group dictionary fixes the backend's exact-versus-candidate boundary.
+- O. Padurariu and F. Saia, *Shimura curve Atkin--Lehner quotients of genus at
+  most two*, arXiv:`2509.25368`; its quotient tables independently identify
+  the H3 genus-two model and Atkin--Lehner labels.
 - K. Nishiyama, *The Jacobian fibrations on some K3 surfaces and their
   Mordell--Weil groups*, Japanese Journal of Mathematics **22** (1996),
   293--347, DOI `10.4099/math1924.22.293`.

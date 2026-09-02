@@ -4,6 +4,7 @@
 import argparse
 import hashlib
 import json
+import shlex
 from pathlib import Path
 
 
@@ -16,6 +17,14 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
 parser.add_argument("--lift", type=Path, default=DEFAULT_LIFT)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+parser.add_argument(
+    "--verification-digits",
+    type=int,
+    help=(
+        "reduce the certified source and lift to this many p-adic digits for the "
+        "generic divisibility proof; defaults to the full lift precision"
+    ),
+)
 parser.add_argument("--check", action="store_true")
 args = parser.parse_args()
 args.source = args.source.resolve()
@@ -34,7 +43,10 @@ if source.get("status") != "PASS_EXACT_THIRD_Q12_PENCIL_REDUCTION_MOD_19_POWER":
 if lift.get("status") != "PASS_EXACT_THIRD_Q12_DISCRIMINANT_FACTOR_HENSEL_LIFT_P19":
     raise ValueError("p-adic discriminant/repeated-root lift is not certified")
 prime = 19
-digits = int(lift["specialization"]["digits"])
+lift_digits = int(lift["specialization"]["digits"])
+digits = lift_digits if args.verification_digits is None else int(args.verification_digits)
+if digits < 1 or digits > lift_digits:
+    raise ValueError("verification digits must lie between one and the lift precision")
 modulus = prime**digits
 omega_square = int(source["quadratic_field"]["omega_square_modulus"]) % modulus
 inverse_two = pow(2, -1, modulus)
@@ -459,7 +471,13 @@ if any(value for value in remainders.values()):
 output = {
     "schema": "elkies-k3.q80-third-q12-integral-basis-mod19-power.v1",
     "status": "PASS_EXACT_THIRD_Q12_GENERIC_INTEGRAL_BASIS_MOD19_POWER",
-    "specialization": {"u": "-2", "prime": prime, "digits": digits, "modulus": modulus},
+    "specialization": {
+        "u": "-2",
+        "prime": prime,
+        "digits": digits,
+        "lift_digits": lift_digits,
+        "modulus": modulus,
+    },
     "integral_basis": {
         "basis": ["1", "z", "e"],
         "e_formula": "(z^2+A*z+B)/(L*Q)",
@@ -492,8 +510,8 @@ output = {
     },
     "claim_boundary": {
         "proved": [
-            "generic characteristic-coefficient divisibility for the candidate basis through five p-adic digits",
-            "integrality of e modulo 19^5 over the localized generic coefficient ring",
+            f"generic characteristic-coefficient divisibility for the candidate basis through {digits} p-adic digits",
+            f"integrality of e modulo 19^{digits} over the localized generic coefficient ring",
             "the exact degree and conductor shapes required by p-adic Riemann--Roch",
         ],
         "not_proved": [
@@ -501,7 +519,23 @@ output = {
             "p-adic Riemann--Roch generators, Jacobian, or maps",
         ],
     },
-    "reproduce": "python3 elkies-k3/scripts/verify_q80_third_q12_integral_basis_mod19_power.py",
+    "reproduce": shlex.join(
+        [
+            "python3",
+            "elkies-k3/scripts/verify_q80_third_q12_integral_basis_mod19_power.py",
+            "--source",
+            str(args.source.relative_to(ROOT)),
+            "--lift",
+            str(args.lift.relative_to(ROOT)),
+            "--output",
+            str(args.output.relative_to(ROOT)),
+        ]
+        + (
+            ["--verification-digits", str(digits)]
+            if args.verification_digits is not None
+            else []
+        )
+    ),
 }
 serialized = json.dumps(output, indent=2, sort_keys=True) + "\n"
 if args.check:

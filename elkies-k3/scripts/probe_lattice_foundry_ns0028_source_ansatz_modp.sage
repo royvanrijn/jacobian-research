@@ -3,8 +3,9 @@
 
 The default selected exact source ``NS0028-S001`` has root type
 ``A2+A6+A7``.  ``--ns-id`` and ``--source-id`` also allow another primitive
-MW2 source with exactly three A-type components of total root rank 15, such as
-the ``A1+2A7`` source on NS0005.  A source inventory without ``ns_id`` fields,
+MW1--3 source with exactly three A-type components, such as the
+``A1+2A7`` source on NS0005 or the determinant-500 ``A3+A4+A9/MW1`` source.
+A source inventory without ``ns_id`` fields,
 such as the Golay-720 prescribed-root census, can be addressed by a synthetic
 ``--ns-id`` label because its source IDs are globally unique.  This first gate imposes only the three
 semistable reducible fibres, normalized at zero, one, and infinity.  It scans
@@ -23,6 +24,7 @@ import hashlib
 import itertools
 import json
 import re
+from collections import Counter
 from pathlib import Path
 
 from sage.all import GF, PolynomialRing, binomial, matrix, vector
@@ -100,8 +102,13 @@ def semistable_fibre_orders(root_type):
             raise ValueError("source root type is not a sum of A components")
         multiplicity = int(match.group(1) or 1)
         orders.extend([int(match.group(2)) + 1] * multiplicity)
-    if len(orders) != 3 or sum(order - 1 for order in orders) != 15:
-        raise ValueError("source must have three A components of total rank 15")
+    if len(orders) != 3:
+        raise ValueError("source must have exactly three A components")
+    root_rank = sum(order - 1 for order in orders)
+    if root_rank not in (14, 15, 16, 17):
+        raise ValueError("source root rank must lie between 14 and 17")
+    if sum(orders) < 13 or sum(orders) > 24:
+        raise ValueError("unsupported total multiplicative fibre order")
     return orders
 
 
@@ -144,8 +151,8 @@ if len(source_matches) != 1:
     )
 source_entry = source_matches[0]
 source = source_entry["source"]
-assert source["root_rank"] == 15
-assert source["mw_rank_for_rho_19"] == 2
+assert source["root_rank"] in (14, 15, 16, 17)
+assert source["mw_rank_for_rho_19"] == 17 - source["root_rank"]
 assert source["root_lattice_primitive"] and source["torsion"] == 1
 fibre_orders = semistable_fibre_orders(source["root_type"])
 default_ns0028 = (
@@ -165,8 +172,8 @@ ring = PolynomialRing(field, "t")
 t = ring.gen()
 
 # The three declared jets at zero, one, and infinity impose the semistable
-# profile.  Their orders total 18.  B has thirteen coefficients, so five
-# compatibility equations remain on the normalized degree-eight A polynomial.
+# profile.  B has thirteen coefficients, so the excess Hermite rows become
+# compatibility equations on the normalized degree-eight A polynomial.
 order_zero, order_one, order_infinity = fibre_orders
 rows = []
 for jet in range(order_zero):
@@ -181,15 +188,18 @@ for jet in range(order_one):
 for jet in range(order_infinity):
     rows.append([field(index == 12 - jet) for index in range(13)])
 hermite = matrix(field, rows)
-assert hermite.nrows() == 18 and hermite.ncols() == hermite.rank() == 13
+assert hermite.nrows() == sum(fibre_orders)
+assert hermite.ncols() == hermite.rank() == 13
 compatibility_matrix = hermite.left_kernel().basis_matrix()
-assert compatibility_matrix.nrows() == 5
+compatibility_equations = sum(fibre_orders) - 13
+assert compatibility_matrix.nrows() == compatibility_equations
 
 examples = []
 branch_eligible = 0
 compatible = 0
 exact_orders = 0
 squarefree = 0
+compatible_order_histogram = Counter()
 sample = 0
 exhaustive_total = arguments.prime**8
 for digits in itertools.product(range(arguments.prime), repeat=8):
@@ -201,7 +211,9 @@ for digits in itertools.product(range(arguments.prime), repeat=8):
     if not a_coefficients[8]:
         continue
     A = ring(a_coefficients)
-    at_zero = a_coefficients[:order_zero]
+    at_zero = a_coefficients[:order_zero] + [field.zero()] * max(
+        0, order_zero - len(a_coefficients)
+    )
     at_one = [
         sum(
             a_coefficients[index] * field(binomial(index, jet))
@@ -209,7 +221,10 @@ for digits in itertools.product(range(arguments.prime), repeat=8):
         )
         for jet in range(order_one)
     ]
-    at_infinity = [a_coefficients[8 - jet] for jet in range(order_infinity)]
+    at_infinity = [
+        a_coefficients[8 - jet] if 0 <= 8 - jet <= 8 else field.zero()
+        for jet in range(order_infinity)
+    ]
     positive = (
         multiplicative_branch(at_zero, 1),
         multiplicative_branch(at_one, 1),
@@ -237,12 +252,14 @@ for digits in itertools.product(range(arguments.prime), repeat=8):
                 order_at(discriminant_core, field.one()),
                 24 - discriminant_core.degree(),
             )
+            compatible_order_histogram[orders] += 1
             if orders != tuple(fibre_orders):
                 continue
             exact_orders += 1
             divisor = t**order_zero * (t - 1) ** order_one
             residual, remainder = discriminant_core.quo_rem(divisor)
-            assert not remainder and residual.degree() == 6
+            residual_i1_count = 24 - sum(fibre_orders)
+            assert not remainder and residual.degree() == residual_i1_count
             if residual(0) == 0 or residual(1) == 0:
                 continue
             if residual.gcd(residual.derivative()).degree() != 0:
@@ -278,22 +295,27 @@ for digits in itertools.product(range(arguments.prime), repeat=8):
                             for factor, multiplicity in residual.factor()
                         ],
                         "geometric_fibre_profile": (
-                            f"I{order_zero}+I{order_one}+I{order_infinity}+6I1"
+                            f"I{order_zero}+I{order_one}+I{order_infinity}+"
+                            f"{residual_i1_count}I1"
                         ),
                     }
                 )
 
 exhausted = sample == exhaustive_total and not arguments.max_samples
-fibre_profile = f"I{order_zero}+I{order_one}+I{order_infinity}+6I1"
+residual_i1_count = 24 - sum(fibre_orders)
+fibre_profile = (
+    f"I{order_zero}+I{order_one}+I{order_infinity}+{residual_i1_count}I1"
+)
 normalized_supports = [
     f"0:I{order_zero}",
     f"1:I{order_one}",
     f"infinity:I{order_infinity}",
 ]
+source_mw_rank = int(source["mw_rank_for_rho_19"])
 dimension_key = (
     "expected_NS0028_MW2_locus_dimension"
     if default_ns0028
-    else f"expected_{arguments.ns_id}_MW2_locus_dimension"
+    else f"expected_{arguments.ns_id}_MW{source_mw_rank}_locus_dimension"
 )
 section_marking = (
     {
@@ -334,18 +356,31 @@ payload = {
         "exact_prescribed_orders": exact_orders,
         "squarefree_examples_with_signs": squarefree,
         "stored_examples": len(examples),
-    },
+    }
+    | (
+        {}
+        if default_ns0028
+        else {
+            "compatible_discriminant_order_histogram": {
+                ",".join("null" if value is None else str(value) for value in key): count
+                for key, count in sorted(
+                    compatible_order_histogram.items(),
+                    key=lambda item: tuple(-1 if value is None else value for value in item[0]),
+                )
+            }
+        }
+    ),
     "ansatz": {
         "short_weierstrass": "y^2=x^3+A(t)x+B(t)",
         "degree_bounds": {"A": 8, "B": 12},
         "normalization": "A(0)=-3; supports at 0,1,infinity",
         "normalized_reducible_supports": normalized_supports,
-        "hermite_conditions": 18,
+        "hermite_conditions": sum(fibre_orders),
         "B_coefficient_rank": 13,
-        "compatibility_equations_on_A": 5,
-        "expected_fibre_stratum_dimension": 3,
+        "compatibility_equations_on_A": compatibility_equations,
+        "expected_fibre_stratum_dimension": 8 - compatibility_equations,
         dimension_key: 1,
-        "expected_MW_conditions_still_missing": 2,
+        "expected_MW_conditions_still_missing": source_mw_rank,
         "section_marking": section_marking,
     },
     "examples": examples,
@@ -371,7 +406,7 @@ payload = {
             f"the displayed finite field with fibre profile {fibre_profile}."
         ),
         "not_proved": (
-            "The two MW sections, full lattice marking, rational parameterization, "
+            f"The {source_mw_rank} MW section marking(s), full lattice marking, rational parameterization, "
             "characteristic-zero lifting, and neighbour route are not proved."
             if not default_ns0028
             else (

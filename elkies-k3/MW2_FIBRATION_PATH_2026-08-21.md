@@ -10,9 +10,13 @@ classification nor a proof that the path or terminal frame is optimal.
 A subsequent widened search reaches rank `MW=1` on the older rank-19,
 discriminant-948 lattice from the canonical Kumar entrance.  See
 [`MW1_OPTIMAL_FIBRATION_PATH_2026-08-21.md`](MW1_OPTIMAL_FIBRATION_PATH_2026-08-21.md).
-The explicit neighbor bridge from the rank-17 chain in this note to that
-Kumar frame remains open, so the `q=25,4,4,4` chain below is still the
-preferred fully transported reconstruction path.
+At this 2026-08-21 checkpoint the explicit neighbour bridge from the rank-17
+chain in this note to the Kumar frame was still open, so the
+`q=25,4,4,4` chain was then the preferred transported reconstruction path.
+That routing statement is superseded: the selected H3 equation corridor and
+its rootless q12/orbit5867 endpoint are now complete.  The chain below remains
+an exact low-MW lattice ancestry and historical comparison, not the current
+construction or arithmetic frontier.  See [`README.md`](README.md).
 
 The exact rational model displayed below has since acquired a third
 independent section and is actually a Picard-rank-20, discriminant-43 K3.

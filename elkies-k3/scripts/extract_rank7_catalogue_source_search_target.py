@@ -21,6 +21,9 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CATALOGUE = (
     ROOT / "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json"
 )
+DEFAULT_T_ARITHMETIC = (
+    ROOT / "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json"
+)
 
 
 def relative(path: Path) -> str:
@@ -78,6 +81,7 @@ def validate_gram(value: list[list[int]], rank: int, determinant: int) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--catalogue", type=Path, default=DEFAULT_CATALOGUE)
+    parser.add_argument("--t-arithmetic", type=Path, default=DEFAULT_T_ARITHMETIC)
     parser.add_argument("--surface-id", required=True)
     parser.add_argument("--partner-index", type=int)
     parser.add_argument("--frame-id")
@@ -86,6 +90,7 @@ def main() -> None:
     arguments = parser.parse_args()
 
     catalogue_path = arguments.catalogue.resolve()
+    arithmetic_path = arguments.t_arithmetic.resolve()
     catalogue = json.loads(catalogue_path.read_text())
     if catalogue.get("schema") != "elkies-k3.rank7-auxiliary-catalogue.v1":
         raise ValueError("unexpected rank-seven catalogue schema")
@@ -95,6 +100,28 @@ def main() -> None:
     )
     if surface is None:
         raise ValueError(f"unknown surface id: {arguments.surface_id}")
+    arithmetic_ledger = json.loads(arithmetic_path.read_text())
+    if arithmetic_ledger.get("schema") != "elkies-k3.rank7-t-arithmetic.v1":
+        raise ValueError("unexpected rank-seven T-arithmetic schema")
+    if arithmetic_ledger["input"]["catalogue_sha256"] != digest(catalogue_path):
+        raise ArithmeticError("T-arithmetic ledger does not match catalogue hash")
+    arithmetic = next(
+        (
+            row
+            for row in arithmetic_ledger["surfaces"]
+            if row["surface_id"] == arguments.surface_id
+        ),
+        None,
+    )
+    if arithmetic is None:
+        raise ArithmeticError("selected surface has no T-arithmetic row")
+    if not arithmetic["pre_solver_gate"]["arithmetic_attempt_recorded"]:
+        raise ArithmeticError("selected surface has not passed the T-arithmetic gate")
+    if not arithmetic["pre_solver_gate"]["equation_solver_may_launch"]:
+        raise ArithmeticError(
+            "selected surface has typed-open T-arithmetic curve identification; "
+            "equation-target extraction remains blocked"
+        )
 
     partners = surface["partner_auxiliaries"]
     if arguments.partner_index is None:
@@ -134,6 +161,8 @@ def main() -> None:
         "input": {
             "catalogue": relative(catalogue_path),
             "catalogue_sha256": digest(catalogue_path),
+            "t_arithmetic": relative(arithmetic_path),
+            "t_arithmetic_sha256": digest(arithmetic_path),
         },
         "surface_id": surface["surface_id"],
         "legacy_ns_ids": surface["legacy_ns_ids"],
@@ -162,14 +191,18 @@ def main() -> None:
                 "NO_GOLAY_DESIGN_CLAIM"
             ),
         },
+        "t_arithmetic_pre_solver_gate": arithmetic,
         "proof_boundary": {
             "proved": (
                 "The ordered auxiliary and target frame are exact records on the "
                 "same catalogue (T,NS) surface and have the same determinant."
+                " A hash-matched T-arithmetic attempt is attached before this target "
+                "can be emitted."
             ),
             "not_proved": (
                 "This adapter performs no new embedding search, rational marking, "
-                "equation construction, or neighbour certification."
+                "equation construction, or neighbour certification. Typed open "
+                "arithmetic fields in the attached row are not promoted."
             ),
         },
         "reproduce": (
