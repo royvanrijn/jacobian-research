@@ -1,0 +1,3062 @@
+{
+  "aggregate_same_NS_clicks": {
+    "discriminant_form_changes": 0,
+    "edge_count": 42,
+    "nonunimodular_transports": 0,
+    "old_fibre_degree_histogram": {
+      "2": 42
+    },
+    "q_4_or_6_count": 39,
+    "q_histogram": {
+      "24": 1,
+      "4": 27,
+      "6": 12,
+      "8": 2
+    }
+  },
+  "experiments": [
+    {
+      "J2_result": {
+        "automorphism_orders": [
+          2,
+          4
+        ],
+        "classes": [
+          "published R17",
+          "alternate Q80-derived"
+        ],
+        "meaning": "frame integral-isometry class, not a geometric arrow",
+        "minimum": 4,
+        "norm_four_pairs": [
+          1311,
+          1313
+        ],
+        "rootless_class_count": 2
+      },
+      "frame_family": {
+        "definition": "W_i=U_i^perp(-1)",
+        "determinant_absolute": 948,
+        "discriminant_form": {
+          "invariants": [
+            948
+          ],
+          "quadratic_gram": [
+            [
+              "1/4",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "2/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "6/79"
+            ]
+          ],
+          "value_module": "Q/2Z"
+        },
+        "rank": 17,
+        "saturation_index_in_NS": 1,
+        "terminal_minimum": 4,
+        "terminal_roots": 0
+      },
+      "id": "historical_H3_to_J2_to_R17",
+      "proof_boundary": "The H3 route and J2 classification are exact; J1 surface-automorphism classification is not claimed.",
+      "transitions": [
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 1,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 6,
+          "root_rank_change": -1,
+          "source_mw_rank": 2,
+          "source_root_rank": 15,
+          "source_root_type": "E8+E7",
+          "target_mw_rank": 3,
+          "target_root_rank": 14,
+          "target_root_type": "E8+E6"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 2,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 8,
+          "root_rank_change": -1,
+          "source_mw_rank": 3,
+          "source_root_rank": 14,
+          "source_root_type": "E8+E6",
+          "target_mw_rank": 4,
+          "target_root_rank": 13,
+          "target_root_type": "D13"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 3,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 24,
+          "root_rank_change": -1,
+          "source_mw_rank": 4,
+          "source_root_rank": 13,
+          "source_root_type": "D13",
+          "target_mw_rank": 5,
+          "target_root_rank": 12,
+          "target_root_type": "D12"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 4,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 6,
+          "root_rank_change": -1,
+          "source_mw_rank": 5,
+          "source_root_rank": 12,
+          "source_root_type": "D12",
+          "target_mw_rank": 6,
+          "target_root_rank": 11,
+          "target_root_type": "A11"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 5,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 8,
+          "root_rank_change": -1,
+          "source_mw_rank": 6,
+          "source_root_rank": 11,
+          "source_root_type": "A11",
+          "target_mw_rank": 7,
+          "target_root_rank": 10,
+          "target_root_type": "2A5"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 6,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 7,
+          "source_root_rank": 10,
+          "source_root_type": "2A5",
+          "target_mw_rank": 8,
+          "target_root_rank": 9,
+          "target_root_type": "3A3"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 7,
+          "integral_transport_index": 1,
+          "mw_rank_change": 2,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -2,
+          "source_mw_rank": 8,
+          "source_root_rank": 9,
+          "source_root_type": "3A3",
+          "target_mw_rank": 10,
+          "target_root_rank": 7,
+          "target_root_type": "A3+2A2"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 8,
+          "integral_transport_index": 1,
+          "mw_rank_change": 2,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -2,
+          "source_mw_rank": 10,
+          "source_root_rank": 7,
+          "source_root_type": "A3+2A2",
+          "target_mw_rank": 12,
+          "target_root_rank": 5,
+          "target_root_type": "5A1"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 9,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 12,
+          "source_root_rank": 5,
+          "source_root_type": "5A1",
+          "target_mw_rank": 13,
+          "target_root_rank": 4,
+          "target_root_type": "4A1"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 10,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 13,
+          "source_root_rank": 4,
+          "source_root_type": "4A1",
+          "target_mw_rank": 14,
+          "target_root_rank": 3,
+          "target_root_type": "3A1"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 11,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 14,
+          "source_root_rank": 3,
+          "source_root_type": "3A1",
+          "target_mw_rank": 15,
+          "target_root_rank": 2,
+          "target_root_type": "2A1"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 12,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 15,
+          "source_root_rank": 2,
+          "source_root_type": "2A1",
+          "target_mw_rank": 16,
+          "target_root_rank": 1,
+          "target_root_type": "A1"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 13,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 6,
+          "root_rank_change": -1,
+          "source_mw_rank": 16,
+          "source_root_rank": 1,
+          "source_root_type": "A1",
+          "target_mw_rank": 17,
+          "target_root_rank": 0,
+          "target_root_type": "rootless"
+        }
+      ],
+      "tuple": {
+        "A_L": [
+          948
+        ],
+        "G": {
+          "name": "trivial_on_same_NS_corridor",
+          "order": 1
+        },
+        "L": {
+          "determinant_absolute": 948,
+          "name": "NS_H3",
+          "rank": 19
+        },
+        "L_chi": [
+          {
+            "character": "trivial",
+            "description": "the whole NS_H3 lattice",
+            "discriminant_form": {
+              "invariants": [
+                948
+              ],
+              "quadratic_gram": [
+                [
+                  "7/4",
+                  "0",
+                  "0"
+                ],
+                [
+                  "0",
+                  "4/3",
+                  "0"
+                ],
+                [
+                  "0",
+                  "0",
+                  "2/79"
+                ]
+              ],
+              "value_module": "Q/2Z"
+            },
+            "rank": 19
+          }
+        ],
+        "glue_subgroups": [
+          {
+            "context": "primitive_U_split",
+            "index": 1,
+            "reason": "U is unimodular",
+            "subgroup": "0"
+          },
+          {
+            "ambient": "N(2A7+2D5)",
+            "anti_isometry_count_per_control": 8,
+            "auxiliary_q_generator": "1267/948 in Q/2Z",
+            "context": "J2_Niemeier_complement",
+            "order": 948,
+            "structure": "Z/948",
+            "subgroup": "graph(phi) in A_K plus A_W"
+          }
+        ],
+        "q_L": {
+          "invariants": [
+            948
+          ],
+          "quadratic_gram": [
+            [
+              "7/4",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "4/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "2/79"
+            ]
+          ],
+          "value_module": "Q/2Z"
+        }
+      }
+    },
+    {
+      "endpoint": "alternate Q80-derived rootless J2 class",
+      "frame_family": {
+        "definition": "W_i=U_i^perp(-1)",
+        "determinant_absolute": 948,
+        "discriminant_form": {
+          "invariants": [
+            948
+          ],
+          "quadratic_gram": [
+            [
+              "1/4",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "2/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "6/79"
+            ]
+          ],
+          "value_module": "Q/2Z"
+        },
+        "rank": 17,
+        "saturation_index_in_NS": 1,
+        "terminal_minimum": 4,
+        "terminal_roots": 0
+      },
+      "id": "Q80_low_q_corridor",
+      "proof_boundary": "Exact generic lattice corridor; the alternate generic characteristic-zero equation is open.",
+      "transitions": [
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 1,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 3,
+          "source_root_rank": 14,
+          "source_root_type": "E6+D5+A3",
+          "target_mw_rank": 4,
+          "target_root_rank": 13,
+          "target_root_type": "D9+A4"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 2,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 4,
+          "source_root_rank": 13,
+          "source_root_type": "D9+A4",
+          "target_mw_rank": 5,
+          "target_root_rank": 12,
+          "target_root_type": "D7+D5"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 3,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 6,
+          "root_rank_change": -1,
+          "source_mw_rank": 5,
+          "source_root_rank": 12,
+          "source_root_type": "D7+D5",
+          "target_mw_rank": 6,
+          "target_root_rank": 11,
+          "target_root_type": "D7+D4"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 4,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 6,
+          "source_root_rank": 11,
+          "source_root_type": "D7+D4",
+          "target_mw_rank": 7,
+          "target_root_rank": 10,
+          "target_root_type": "A6+A4"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 5,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 7,
+          "source_root_rank": 10,
+          "source_root_type": "A6+A4",
+          "target_mw_rank": 8,
+          "target_root_rank": 9,
+          "target_root_type": "A6+A3"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 6,
+          "integral_transport_index": 1,
+          "mw_rank_change": 2,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 6,
+          "root_rank_change": -2,
+          "source_mw_rank": 8,
+          "source_root_rank": 9,
+          "source_root_type": "A6+A3",
+          "target_mw_rank": 10,
+          "target_root_rank": 7,
+          "target_root_type": "A4+A2+A1"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 7,
+          "integral_transport_index": 1,
+          "mw_rank_change": 2,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -2,
+          "source_mw_rank": 10,
+          "source_root_rank": 7,
+          "source_root_type": "A4+A2+A1",
+          "target_mw_rank": 12,
+          "target_root_rank": 5,
+          "target_root_type": "A3+A2"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 8,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 12,
+          "source_root_rank": 5,
+          "source_root_type": "A3+A2",
+          "target_mw_rank": 13,
+          "target_root_rank": 4,
+          "target_root_type": "4A1"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 9,
+          "integral_transport_index": 1,
+          "mw_rank_change": 3,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -3,
+          "source_mw_rank": 13,
+          "source_root_rank": 4,
+          "source_root_type": "4A1",
+          "target_mw_rank": 16,
+          "target_root_rank": 1,
+          "target_root_type": "A1"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 10,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 6,
+          "root_rank_change": -1,
+          "source_mw_rank": 16,
+          "source_root_rank": 1,
+          "source_root_type": "A1",
+          "target_mw_rank": 17,
+          "target_root_rank": 0,
+          "target_root_type": "rootless"
+        }
+      ],
+      "tuple": {
+        "A_L": [
+          948
+        ],
+        "G": {
+          "name": "trivial_on_same_NS_corridor",
+          "order": 1
+        },
+        "L": {
+          "determinant_absolute": 948,
+          "name": "NS_H3",
+          "rank": 19
+        },
+        "L_chi": [
+          {
+            "character": "trivial",
+            "description": "the whole NS_H3 lattice",
+            "discriminant_form": {
+              "invariants": [
+                948
+              ],
+              "quadratic_gram": [
+                [
+                  "7/4",
+                  "0",
+                  "0"
+                ],
+                [
+                  "0",
+                  "4/3",
+                  "0"
+                ],
+                [
+                  "0",
+                  "0",
+                  "2/79"
+                ]
+              ],
+              "value_module": "Q/2Z"
+            },
+            "rank": 19
+          }
+        ],
+        "glue_subgroups": [
+          {
+            "context": "primitive_U_split",
+            "index": 1,
+            "reason": "U is unimodular",
+            "subgroup": "0"
+          },
+          {
+            "ambient": "N(2A7+2D5)",
+            "anti_isometry_count_per_control": 8,
+            "auxiliary_q_generator": "1267/948 in Q/2Z",
+            "context": "J2_Niemeier_complement",
+            "order": 948,
+            "structure": "Z/948",
+            "subgroup": "graph(phi) in A_K plus A_W"
+          }
+        ],
+        "q_L": {
+          "invariants": [
+            948
+          ],
+          "quadratic_gram": [
+            [
+              "7/4",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "4/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "2/79"
+            ]
+          ],
+          "value_module": "Q/2Z"
+        }
+      }
+    },
+    {
+      "endpoint": "NS0024-F005",
+      "frame_family": {
+        "definition": "W_i=U_i^perp(-1)",
+        "determinant_absolute": 950,
+        "discriminant_form": {
+          "invariants": [
+            950
+          ],
+          "quadratic_gram": [
+            [
+              "3/2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "2/25",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "2/19"
+            ]
+          ],
+          "value_module": "Q/2Z"
+        },
+        "rank": 17,
+        "saturation_index_in_NS": 1,
+        "terminal_minimum": 4,
+        "terminal_roots": 0
+      },
+      "id": "NS0024_corridor",
+      "proof_boundary": "Exact lattice/arithmetic class and marked route; equation and rational descent are open.",
+      "transitions": [
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 1,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 4,
+          "source_root_rank": 13,
+          "source_root_type": "A3+A4+A6",
+          "target_mw_rank": 5,
+          "target_root_rank": 12,
+          "target_root_type": "A1+A2+A4+D5"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 2,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 5,
+          "source_root_rank": 12,
+          "source_root_type": "A1+A2+A4+D5",
+          "target_mw_rank": 6,
+          "target_root_rank": 11,
+          "target_root_type": "A1+A5+D5"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 3,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 6,
+          "source_root_rank": 11,
+          "source_root_type": "A1+A5+D5",
+          "target_mw_rank": 7,
+          "target_root_rank": 10,
+          "target_root_type": "2A1+A8"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 4,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 7,
+          "source_root_rank": 10,
+          "source_root_type": "2A1+A8",
+          "target_mw_rank": 8,
+          "target_root_rank": 9,
+          "target_root_type": "A1+A2+A6"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 5,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 8,
+          "source_root_rank": 9,
+          "source_root_type": "A1+A2+A6",
+          "target_mw_rank": 9,
+          "target_root_rank": 8,
+          "target_root_type": "A1+A7"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 6,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 9,
+          "source_root_rank": 8,
+          "source_root_type": "A1+A7",
+          "target_mw_rank": 10,
+          "target_root_rank": 7,
+          "target_root_type": "A3+A4"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 7,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 10,
+          "source_root_rank": 7,
+          "source_root_type": "A3+A4",
+          "target_mw_rank": 11,
+          "target_root_rank": 6,
+          "target_root_type": "A6"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 8,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 6,
+          "root_rank_change": -1,
+          "source_mw_rank": 11,
+          "source_root_rank": 6,
+          "source_root_type": "A6",
+          "target_mw_rank": 12,
+          "target_root_rank": 5,
+          "target_root_type": "A5"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 9,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 6,
+          "root_rank_change": -1,
+          "source_mw_rank": 12,
+          "source_root_rank": 5,
+          "source_root_type": "A5",
+          "target_mw_rank": 13,
+          "target_root_rank": 4,
+          "target_root_type": "A4"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 10,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 6,
+          "root_rank_change": -1,
+          "source_mw_rank": 13,
+          "source_root_rank": 4,
+          "source_root_type": "A4",
+          "target_mw_rank": 14,
+          "target_root_rank": 3,
+          "target_root_type": "A3"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 11,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 6,
+          "root_rank_change": -1,
+          "source_mw_rank": 14,
+          "source_root_rank": 3,
+          "source_root_type": "A3",
+          "target_mw_rank": 15,
+          "target_root_rank": 2,
+          "target_root_type": "A2"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 12,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 6,
+          "root_rank_change": -1,
+          "source_mw_rank": 15,
+          "source_root_rank": 2,
+          "source_root_type": "A2",
+          "target_mw_rank": 16,
+          "target_root_rank": 1,
+          "target_root_type": "A1"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 13,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 6,
+          "root_rank_change": -1,
+          "source_mw_rank": 16,
+          "source_root_rank": 1,
+          "source_root_type": "A1",
+          "target_mw_rank": 17,
+          "target_root_rank": 0,
+          "target_root_type": "rootless"
+        }
+      ],
+      "tuple": {
+        "A_L": [
+          950
+        ],
+        "G": {
+          "name": "trivial_on_same_NS_corridor",
+          "order": 1
+        },
+        "L": {
+          "determinant_absolute": 950,
+          "name": "NS0024",
+          "rank": 19
+        },
+        "L_chi": [
+          {
+            "character": "trivial",
+            "description": "the whole NS0024 lattice",
+            "discriminant_form": {
+              "invariants": [
+                950
+              ],
+              "quadratic_gram": [
+                [
+                  "1/2",
+                  "0",
+                  "0"
+                ],
+                [
+                  "0",
+                  "2/25",
+                  "0"
+                ],
+                [
+                  "0",
+                  "0",
+                  "4/19"
+                ]
+              ],
+              "value_module": "Q/2Z"
+            },
+            "rank": 19
+          }
+        ],
+        "glue_subgroups": [
+          {
+            "context": "primitive_U_split",
+            "index": 1,
+            "reason": "U is unimodular",
+            "subgroup": "0"
+          },
+          {
+            "ambient": "N(A15+D9)",
+            "context": "source_Niemeier_complement",
+            "order": 950,
+            "subgroup": "graph of a cyclic discriminant anti-isometry"
+          }
+        ],
+        "q_L": {
+          "invariants": [
+            950
+          ],
+          "quadratic_gram": [
+            [
+              "1/2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "2/25",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "4/19"
+            ]
+          ],
+          "value_module": "Q/2Z"
+        }
+      }
+    },
+    {
+      "frame_family": {
+        "definition": "W_i=U_i^perp(-1)",
+        "determinant_absolute": 720,
+        "discriminant_form": {
+          "invariants": [
+            2,
+            6,
+            60
+          ],
+          "quadratic_gram": [
+            [
+              "1",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "2/3",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "4/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4/5"
+            ]
+          ],
+          "value_module": "Q/2Z"
+        },
+        "rank": 17,
+        "saturation_index_in_NS": 1,
+        "terminal_roots": 0
+      },
+      "id": "Golay_720_construction_and_corridor",
+      "proof_boundary": "Exact abstract K3 NS, complement glue, and lattice corridor; a rational source equation is open.",
+      "rootless_minimum": 4,
+      "rootless_norm_four_vectors": 3064,
+      "transitions": [
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 1,
+          "integral_transport_index": 1,
+          "mw_rank_change": 2,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -2,
+          "source_mw_rank": 2,
+          "source_root_rank": 15,
+          "source_root_type": "3A5",
+          "target_mw_rank": 4,
+          "target_root_rank": 13,
+          "target_root_type": "4A2+A5"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 2,
+          "integral_transport_index": 1,
+          "mw_rank_change": 3,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -3,
+          "source_mw_rank": 4,
+          "source_root_rank": 13,
+          "source_root_type": "4A2+A5",
+          "target_mw_rank": 7,
+          "target_root_rank": 10,
+          "target_root_type": "3A1+2A2+A3"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 3,
+          "integral_transport_index": 1,
+          "mw_rank_change": 4,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -4,
+          "source_mw_rank": 7,
+          "source_root_rank": 10,
+          "source_root_type": "3A1+2A2+A3",
+          "target_mw_rank": 11,
+          "target_root_rank": 6,
+          "target_root_type": "4A1+A2"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 4,
+          "integral_transport_index": 1,
+          "mw_rank_change": 3,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -3,
+          "source_mw_rank": 11,
+          "source_root_rank": 6,
+          "source_root_type": "4A1+A2",
+          "target_mw_rank": 14,
+          "target_root_rank": 3,
+          "target_root_type": "3A1"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 5,
+          "integral_transport_index": 1,
+          "mw_rank_change": 1,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -1,
+          "source_mw_rank": 14,
+          "source_root_rank": 3,
+          "source_root_type": "3A1",
+          "target_mw_rank": 15,
+          "target_root_rank": 2,
+          "target_root_type": "2A1"
+        },
+        {
+          "ambient_discriminant_form_change": "none",
+          "edge_index": 6,
+          "integral_transport_index": 1,
+          "mw_rank_change": 2,
+          "old_fibre_degree": 2,
+          "operation": "primitive_U_change",
+          "q": 4,
+          "root_rank_change": -2,
+          "source_mw_rank": 15,
+          "source_root_rank": 2,
+          "source_root_type": "2A1",
+          "target_mw_rank": 17,
+          "target_root_rank": 0,
+          "target_root_type": "rootless"
+        }
+      ],
+      "tuple": {
+        "A_L": [
+          2,
+          6,
+          60
+        ],
+        "G": {
+          "name": "trivial_on_same_NS_corridor",
+          "order": 1
+        },
+        "L": {
+          "determinant_absolute": 720,
+          "name": "NS_Golay720",
+          "rank": 19
+        },
+        "L_chi": [
+          {
+            "character": "trivial",
+            "description": "the whole NS_Golay720 lattice",
+            "discriminant_form": {
+              "invariants": [
+                2,
+                6,
+                60
+              ],
+              "quadratic_gram": [
+                [
+                  "1",
+                  "1/2",
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                [
+                  "1/2",
+                  "1",
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                [
+                  "0",
+                  "0",
+                  "7/4",
+                  "0",
+                  "0",
+                  "0"
+                ],
+                [
+                  "0",
+                  "0",
+                  "0",
+                  "2/3",
+                  "0",
+                  "0"
+                ],
+                [
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "4/3",
+                  "0"
+                ],
+                [
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "0",
+                  "4/5"
+                ]
+              ],
+              "value_module": "Q/2Z"
+            },
+            "rank": 19
+          }
+        ],
+        "glue_subgroups": [
+          {
+            "ambient": "N(24A1)",
+            "context": "Golay_octad_complement",
+            "order": 720,
+            "structure": "Z/2 + Z/6 + Z/60",
+            "subgroup": "graph(phi) in A_K plus A_W"
+          },
+          {
+            "ambient": "N(4A5+D4)",
+            "anti_isometry_count": 96,
+            "context": "rootful_source_complement",
+            "order": 720,
+            "source_smith_generator_images": [
+              [
+                0,
+                3,
+                30
+              ],
+              [
+                1,
+                0,
+                10
+              ],
+              [
+                1,
+                4,
+                17
+              ]
+            ],
+            "source_smith_generator_orders": [
+              2,
+              6,
+              60
+            ],
+            "structure": "Z/2 + Z/6 + Z/60",
+            "subgroup": "selected three-generator graph glue"
+          },
+          {
+            "context": "primitive_U_split",
+            "index": 1,
+            "reason": "U is unimodular",
+            "subgroup": "0"
+          }
+        ],
+        "q_L": {
+          "invariants": [
+            2,
+            6,
+            60
+          ],
+          "quadratic_gram": [
+            [
+              "1",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "7/4",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "2/3",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "4/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4/5"
+            ]
+          ],
+          "value_module": "Q/2Z"
+        }
+      }
+    },
+    {
+      "id": "E6_quadratic_base_change_2_plus_1",
+      "proof_boundary": "Exact generic ranks, saturation, torsion and determinant 24; same-NS rootless MW17 is impossible by the determinant bound.",
+      "transition": {
+        "character_glue_index": 1,
+        "operation": "quadratic_pullback_then_character_split",
+        "rank_split": "2+1"
+      },
+      "tuple": {
+        "A_L": [
+          8,
+          8,
+          24
+        ],
+        "G": {
+          "name": "quadratic_base_change_deck",
+          "order": 2
+        },
+        "L": {
+          "determinant_absolute": 1536,
+          "name": "12_times_E6_2_plus_1_MW_character_lattice",
+          "rank": 3
+        },
+        "L_chi": [
+          {
+            "character": "+",
+            "gram": [
+              [
+                16,
+                -8
+              ],
+              [
+                -8,
+                16
+              ]
+            ],
+            "rank": 2,
+            "role": "12 times the Mordell-Weil height lattice",
+            "unscaled_determinant": "4/3"
+          },
+          {
+            "character": "-",
+            "gram": [
+              [
+                8
+              ]
+            ],
+            "rank": 1,
+            "role": "12 times the Mordell-Weil height lattice",
+            "unscaled_determinant": "2/3"
+          }
+        ],
+        "bookkeeping": {
+          "ambient_NS": {
+            "A_NS": [
+              2,
+              2,
+              6
+            ],
+            "determinant_absolute": 24,
+            "q_NS": {
+              "invariants": [
+                2,
+                2,
+                6
+              ],
+              "quadratic_gram": [
+                [
+                  "1",
+                  "1/2",
+                  "0",
+                  "0"
+                ],
+                [
+                  "1/2",
+                  "1",
+                  "0",
+                  "0"
+                ],
+                [
+                  "0",
+                  "0",
+                  "1/2",
+                  "0"
+                ],
+                [
+                  "0",
+                  "0",
+                  "0",
+                  "2/3"
+                ]
+              ],
+              "value_module": "Q/2Z"
+            },
+            "rank": 19,
+            "root_rank": 14,
+            "root_system": "2E6+A2"
+          },
+          "minimum_in_scaled_character_lattice": 8,
+          "norm_two_roots_in_scaled_character_lattice": 0,
+          "saturation_index": 1
+        },
+        "glue_subgroups": [
+          {
+            "context": "MW_character_saturation",
+            "determinant_check": "(4/3)*(2/3)=8/9",
+            "index": 1,
+            "kind": "integral_isotypic_saturation",
+            "subgroup": "0"
+          }
+        ],
+        "q_L": {
+          "invariants": [
+            8,
+            8,
+            24
+          ],
+          "quadratic_gram": [
+            [
+              "1/4",
+              "1/8",
+              "0",
+              "0"
+            ],
+            [
+              "1/8",
+              "1/4",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1/8",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "4/3"
+            ]
+          ],
+          "value_module": "Q/2Z"
+        }
+      }
+    },
+    {
+      "id": "E6_quadratic_base_change_2_plus_2",
+      "proof_boundary": "Exact over the ordered genus-one incidence field; no rational rank-four P1 family is claimed.",
+      "transition": {
+        "descent_warning": "The ordered incidence base has genus one; the rational unordered quotient has arithmetic rank two, not four.",
+        "geometric_rank_split": "2+2",
+        "operation": "quadratic_pullback_then_character_split_and_2_glue"
+      },
+      "tuple": {
+        "A_L": [
+          8,
+          8,
+          24,
+          936
+        ],
+        "G": {
+          "name": "quadratic_base_change_deck",
+          "order": 2
+        },
+        "L": {
+          "determinant_absolute": 1437696,
+          "name": "12_times_E6_2_plus_2_pure_MW_character_lattice",
+          "rank": 4
+        },
+        "L_chi": [
+          {
+            "basis": [
+              "P",
+              "Q"
+            ],
+            "character": "+",
+            "gram": [
+              [
+                16,
+                -8
+              ],
+              [
+                -8,
+                16
+              ]
+            ],
+            "rank": 2,
+            "role": "12 times the pure Mordell-Weil height lattice",
+            "unscaled_determinant": "4/3"
+          },
+          {
+            "basis": [
+              "T1",
+              "T2"
+            ],
+            "character": "-",
+            "gram": [
+              [
+                88,
+                16
+              ],
+              [
+                16,
+                88
+              ]
+            ],
+            "rank": 2,
+            "role": "12 times the pure Mordell-Weil height lattice",
+            "unscaled_determinant": "52"
+          }
+        ],
+        "bookkeeping": {
+          "ambient_NS": {
+            "A_NS": [
+              78
+            ],
+            "determinant_absolute": 78,
+            "q_NS": {
+              "invariants": [
+                78
+              ],
+              "quadratic_gram": [
+                [
+                  "1/2",
+                  "0",
+                  "0"
+                ],
+                [
+                  "0",
+                  "2/3",
+                  "0"
+                ],
+                [
+                  "0",
+                  "0",
+                  "4/13"
+                ]
+              ],
+              "value_module": "Q/2Z"
+            },
+            "rank": 19,
+            "root_rank": 13,
+            "root_system": "2E6+A1"
+          },
+          "minimum_in_scaled_pure_character_lattice": 16,
+          "norm_two_roots_in_scaled_pure_character_lattice": 0,
+          "saturation_index": 4
+        },
+        "glue_subgroups": [
+          {
+            "context": "MW_character_saturation",
+            "determinant_after": "13/3",
+            "determinant_before": "208/3",
+            "index": 4,
+            "kind": "even_discriminant_glue_after_scaling_height_by_12",
+            "scaled_determinant_after": 89856,
+            "scaled_determinant_before": 1437696,
+            "scaled_saturated_gram": [
+              [
+                "16",
+                "-8",
+                "8",
+                "-4"
+              ],
+              [
+                "-8",
+                "16",
+                "-4",
+                "8"
+              ],
+              [
+                "8",
+                "-4",
+                "26",
+                "2"
+              ],
+              [
+                "-4",
+                "8",
+                "2",
+                "26"
+              ]
+            ],
+            "structure": "(Z/2)^2",
+            "subgroup": "<(P+T1)/2, (Q+T2)/2>"
+          }
+        ],
+        "q_L": {
+          "invariants": [
+            8,
+            8,
+            24,
+            936
+          ],
+          "quadratic_gram": [
+            [
+              "0",
+              "1/8",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "1/8",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1/8",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1/8",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "4/3",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4/9",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4/13"
+            ]
+          ],
+          "value_module": "Q/2Z"
+        }
+      }
+    },
+    {
+      "id": "R17_genus_one_bisections",
+      "proof_boundary": "The orthogonal character sum and its index-two half-sum extension are exact; further saturation, total anti-rank, and the full MW lattice are not determined.",
+      "transition": {
+        "anti_invariant_height": 16,
+        "base_genus": 1,
+        "operation": "quadratic_pullback_then_visible_anti_invariant_line",
+        "visible_rank_lower_bound": 18
+      },
+      "tuple": {
+        "A_L": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          8,
+          3792
+        ],
+        "G": {
+          "name": "quadratic_base_change_deck",
+          "order": 2
+        },
+        "L": {
+          "determinant_absolute": 1988100096,
+          "name": "orthogonal_character_sublattice_on_R17_genus_one_bisection_cover",
+          "rank": 18
+        },
+        "L_chi": [
+          {
+            "character": "+",
+            "gram": "R17(2)",
+            "rank": 17,
+            "role": "pulled-back invariant Mordell-Weil lattice"
+          },
+          {
+            "character": "-",
+            "gram": [
+              [
+                16
+              ]
+            ],
+            "rank": 1,
+            "role": "certified anti-invariant line"
+          }
+        ],
+        "bookkeeping": {
+          "certified_extension_index": 2,
+          "full_saturation_index": "not determined",
+          "minimum_of_orthogonal_character_sublattice": 8,
+          "norm_two_roots": 0
+        },
+        "glue_subgroups": [
+          {
+            "context": "certified_half_sum_extension",
+            "determinant_after_known_extension": 497025024,
+            "full_saturation_index": "not determined",
+            "index": 2,
+            "known_relation": "for conjugate lifts R,Rprime, R+Rprime=tau",
+            "structure": "Z/2",
+            "subgroup": "<R mod (R17(2)+<T>)>",
+            "warning": "This known index-2 extension need not be the full MW lattice or the full anti-invariant space."
+          }
+        ],
+        "q_L": {
+          "invariants": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            8,
+            3792
+          ],
+          "quadratic_gram": [
+            [
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/2",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/8",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/16",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "6/79"
+            ]
+          ],
+          "value_module": "Q/2Z"
+        }
+      }
+    },
+    {
+      "id": "R17_paired_rational_bisection_V4_composita",
+      "proof_boundary": "These are pairs from the 39120-class rational norm-ten bisection atlas. All are geometrically connected genus-one V4 covers; rational points, product-character rank, and full saturation are not uniform consequences.",
+      "transition": {
+        "base_genus": 1,
+        "new_height_block": [
+          [
+            24,
+            0
+          ],
+          [
+            0,
+            24
+          ]
+        ],
+        "operation": "two_independent_quadratic_pullbacks_then_V4_character_split",
+        "pair_count": 765167640,
+        "visible_rank_lower_bound": 19
+      },
+      "tuple": {
+        "A_L": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          24,
+          24,
+          3792
+        ],
+        "G": {
+          "name": "biquadratic_deck",
+          "order": 4,
+          "structure": "V4"
+        },
+        "L": {
+          "determinant_absolute": 9381033208184832,
+          "name": "orthogonal_character_sublattice_on_R17_paired_rational_bisection_compositum",
+          "rank": 19
+        },
+        "L_chi": [
+          {
+            "character": "1",
+            "gram": "R17(4)",
+            "rank": 17,
+            "role": "pulled-back invariant Mordell-Weil lattice"
+          },
+          {
+            "character": "chi_1",
+            "gram": [
+              [
+                24
+              ]
+            ],
+            "rank": 1,
+            "role": "first pulled anti-invariant line"
+          },
+          {
+            "character": "chi_2",
+            "gram": [
+              [
+                24
+              ]
+            ],
+            "rank": 1,
+            "role": "second pulled anti-invariant line"
+          },
+          {
+            "character": "chi_1_chi_2",
+            "full_MW_rank_warning": "The product-character rank in the full MW lattice is not determined.",
+            "rank": 0,
+            "role": "product-twist eigenspace inside this declared orthogonal character sublattice"
+          }
+        ],
+        "bookkeeping": {
+          "certified_extension_index": 4,
+          "full_saturation_index": "not determined",
+          "minimum_of_orthogonal_character_sublattice": 16,
+          "norm_two_roots": 0
+        },
+        "glue_subgroups": [
+          {
+            "context": "two_certified_half_sum_extensions",
+            "determinant_after_known_extension": 586314575511552,
+            "full_saturation_index": "not determined",
+            "index": 4,
+            "known_relations": [
+              "2R1=tau1+T1",
+              "2R2=tau2+T2"
+            ],
+            "structure": "(Z/2)^2",
+            "subgroup": "<R1,R2> modulo (R17(4)+<T1>+<T2>)",
+            "warning": "The separate anti-character coordinates make these classes independent, but further saturation and product-character rank are unknown."
+          }
+        ],
+        "q_L": {
+          "invariants": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            24,
+            24,
+            3792
+          ],
+          "quadratic_gram": [
+            [
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/2",
+              "1/4",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/4",
+              "1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/8",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "7/8",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/16",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/3",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/3",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "2/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "6/79"
+            ]
+          ],
+          "value_module": "Q/2Z"
+        }
+      }
+    },
+    {
+      "classification_status": "success recorded, but no integral Gram, finite form, or glue mutation has yet been extracted",
+      "id": "R17_norm12_simultaneous_split_specialization",
+      "proof_boundary": "Finite-quotient escape proves one new specialization direction modulo the generic MW17 subgroup; it is not a generic rank transfer or a completed lattice/glue tuple.",
+      "transition": {
+        "certified_rank_lower_bound": 18,
+        "independent_escape_basis_labels": [
+          "norm12-orbit-103b2"
+        ],
+        "operation": "simultaneous_specialization_split",
+        "parameter": "1/25",
+        "split_classes": [
+          "norm8-orbit-0f6b1",
+          "norm12-orbit-103b2"
+        ]
+      },
+      "tuple": {
+        "A_L": "not determined",
+        "G": {
+          "name": "not a computed deck-action lattice record",
+          "order": "not applicable to the specialization quotient certificate"
+        },
+        "L": {
+          "determinant_absolute": "not determined",
+          "name": "specialized_section_lattice_at_t=1/25",
+          "rank": ">=18"
+        },
+        "L_chi": "not determined",
+        "glue_subgroups": "not determined",
+        "q_L": "not determined"
+      }
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elkies-2026-bisection-pair-cover-geometry-full.json": "941b2072d19347d6092ad8eba5ffe2ed7b08c433426360237313241a730172c6",
+    "artifacts/generated-results/elkies-k3-e6-ii-rank3-quadratic-base-change-v1.json": "6f6fc9578e1de7da675356a74c49b66a666543699fc153f676a373c4c767c4d6",
+    "artifacts/generated-results/elkies-k3-e6-rank4-linear-chord-incidence-v1.json": "78c20f6864b1145dfd432dd73ab0580d3c48b6726b297b3125c170efba416bcd",
+    "artifacts/generated-results/elkies-k3-golay-det720-3a5-saturation-rejection-v1.json": "df50dd78ace634fb1611307cbac802c37ded715ee952c31d649a8aecd78d534e",
+    "artifacts/generated-results/elkies-k3-golay-det720-3a5-to-mw17-physical-corridor-v1.json": "fb236108c421587a64555346692f823084a763a5ac30e53354c20a94a1a39258",
+    "artifacts/generated-results/elkies-k3-golay-det720-ns-saturation-v1.json": "2cd7babd5134d878742bdf63b357340359dfaf22d573cd1bd80ddf5434f8f572",
+    "artifacts/generated-results/elkies-k3-golay-octad-det720-source-niemeier.json": "5908cefd3d629bc1cbdec6766188323f238b1c9e21d8246eab116b3574296f46",
+    "artifacts/generated-results/elkies-k3-golay-octad-rank17-det720.json": "420c27b2f830ad66cf5f39180db9ac1d9d443a68363ecb6bbea8f0389ff615b2",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-r13-nef-route.json": "43d21529c9af648059d9d2a61f23326f3981427568bb6f89bd97552929ba4504",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-v1.json": "9bdf0a887730a34837c713694bef4e453964884a57d51a2134003809239ef415",
+    "artifacts/generated-results/elkies-k3-r17-genus-one-bisection-splitting-search-v1.json": "4745f53993675286173298c9444da023825fd4429e74ede582a1d8c14979d07e",
+    "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json": "0169f4b764268c63e7919496be8570e1a794ab5ddcc4856aeee69a3f5e5e5deb",
+    "artifacts/generated-results/elkies-k3-rootless-j2-completeness-track.json": "3c33253fca8280ac6252d9bc074ca1a8d15d93b3a77a7285f3bd68770789d88c",
+    "elkies-k3/data/lattice/rank17_gram.txt": "ea1330ce903c55624de1705ebedf36f6f5964cdd6ce911927001db82626ff237"
+  },
+  "main_conclusion": {
+    "inversion_target": "Compute common-substructure p-neighbor/reglue data for frame classes, then enumerate only reversible regluings whose actual new cosets pass minimum at least four.",
+    "missing_exact_experiment": "For each consecutive frame pair compute a common embedded lattice K, both quotient glue subgroups H_old,H_new, prime-factor indices, and root survival by glue coset.",
+    "negative": "No same-NS corridor click is detected by a change of finite discriminant form; a pure overlattice extension cannot annihilate an existing root.",
+    "positive": "Three operations recur: primitive-U change, maximal graph glue/complement, and character-primary saturation."
+  },
+  "negative_controls": [
+    {
+      "id": "wrong_H3_local_genus",
+      "lesson": "Rank, determinant, parity, minimum and roots do not determine q_L or the genus.",
+      "observation": "65 even rootless determinant-948 seeds form 19 classes but have the wrong 2-adic and 79-adic symbols."
+    },
+    {
+      "glue_structure": "2-primary half-section plus 3-primary torsion",
+      "id": "Golay_rational_3I6_overglue",
+      "lesson": "A simple rational equation can lie on the wrong integral NS overlattice.",
+      "observation": "An index-2 half-section and order-3 torsion give maximal index 6, changing determinant 720 to 20."
+    },
+    {
+      "id": "E6_rank4_descent",
+      "lesson": "Character rank must be computed after descent; unordered incidence does not preserve individual eigensections.",
+      "observation": "The ordered genus-one field has geometric split 2+2, while the rational unordered quotient has rank split 1+1."
+    },
+    {
+      "id": "R17_single_C2_collision",
+      "lesson": "Two anti-invariant gains require a V4 compositum or a new twist-rank mechanism, not two bisections on one quadratic cover.",
+      "observation": "All 39120 rational bisection squareclasses are distinct."
+    }
+  ],
+  "operation_classes": {
+    "Kneser_reglue_candidate": {
+      "definition": "Replace, rather than merely enlarge, isotropic glue across a common index-p sublattice.",
+      "finite_form_effect": "Preserves the genus for ordinary p-neighbors while removing old cosets and adding new ones.",
+      "observed_edge_identification": "not yet computed for the four U-change corridors",
+      "reversible": true,
+      "root_effect": "Can annihilate roots and is the appropriate atomic candidate for an inverted calculus."
+    },
+    "character_saturation": {
+      "definition": "Adjoin |G|-primary finite-index classes to full integral rational-isotypic lattices, or record the quotient first when only rational height blocks are available.",
+      "finite_form_effect": "For the full integral C2 isotypic lattices the saturation quotient is killed by two; a visible or rational-block quotient requires a separate proof. Any actual index changes determinant by its square.",
+      "integrality_warning": "A finite quotient between rational Mordell-Weil height blocks is not by itself a Nikulin discriminant-form glue subgroup.",
+      "reversible": true,
+      "root_effect": "An overlattice alone cannot remove roots already present."
+    },
+    "maximal_graph_glue": {
+      "definition": "Glue primitive orthogonal lattices K,W along the graph of an anti-isometry q_K to -q_W.",
+      "finite_form_effect": "The maximal isotropic graph kills the full discriminant and produces a unimodular ambient.",
+      "reversible": true,
+      "root_effect": "The complement changes when the embedding or anti-isometry changes; roots must be tested in the actual complement."
+    },
+    "primitive_U_change": {
+      "definition": "Replace primitive U by primitive Uprime in fixed NS and take Wprime=Uprime^perp.",
+      "finite_form_effect": "None: U is unimodular, so q_Wprime is fixed by q_NS.",
+      "reversible": true,
+      "root_effect": "Roots may leave or enter the frame because the rational orthogonal complement changes."
+    }
+  },
+  "reproduce": "sage -python elkies-k3/scripts/build_integral_rank_transfer_glue_census.sage --check",
+  "schema": "elkies-k3.integral-rank-transfer-glue-census.v1",
+  "scope_boundary": {
+    "Golay": "Golay here means the binary-octad determinant-720 construction and its source corridor. The ternary-Golay N(12A2) foundry backend is a large frame-family census, not one of the named transition corridors, and is not silently summarized as a single tuple."
+  },
+  "status": "PASS_EXACT_EXTRACTION_WITH_EXPLICIT_OPEN_GLUE_FIELDS",
+  "tuple_order": [
+    "L",
+    "G",
+    "L_chi",
+    "A_L",
+    "q_L",
+    "glue_subgroups"
+  ]
+}

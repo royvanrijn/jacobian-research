@@ -142,6 +142,19 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
   graph and non-inherited degree-four results remain sampled.
   See
   [`R17_MULTISECTION_DIVERSITY_2026-09-02.md`](R17_MULTISECTION_DIVERSITY_2026-09-02.md).
+<!-- status-consumer: EC-K3-R17-GENUS1-HIGH-THROUGHPUT-SPLITTING cad3d98ce58c89e7 -->
+
+- The high-throughput genus-one follow-up compiles 100 structurally diverse
+  equation-cheap norm-eight traces together with all 43 norm-twelve deep
+  classes.  Dynamic simultaneous Legendre masks scan 5,474,328 compact and
+  large-coordinate rational parameters, while 900 further parameters come
+  from pointed-quartic Jacobian multiples.  Exact testing of all 77,704
+  modular extremes finds one norm-eight/norm-twelve collision at `t=1/25`.
+  The norm-twelve point escapes the specialized generic MW17 subgroup in
+  exact mod-2 and mod-3 finite quotients, certifying one new direction and
+  rank at least 18 at that fibre.  This is a bounded search, not a rank-32 or
+  Selmer certificate.  See
+  [`R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md`](R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md).
 
 - Pasten--Salgado's theorem applies directly to the published R17 fibration:
   `24I1` gives non-isotriviality and reduced fibres, H3 is a different

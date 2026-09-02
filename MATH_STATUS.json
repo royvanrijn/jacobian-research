@@ -36841,8 +36841,8 @@
       "id": "EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD",
       "kind": "theorem",
       "state": "proved",
-      "title": "E6 linear-chord incidence curve with arithmetic rank split 2+2 and determinant-78 NS",
-      "scope": "In the full split marked E6 chart y^2=x^3+(a*u-3)*x+(u^2+c*u-2), coefficient elimination for two complete node-collision linear-chord pencils with common squareclass u*(u-M) gives one-dimensional unordered incidence components of geometric genera zero and two. Over the function field of the genus-zero QQ component, the two marked invariant sections and two chord-derived anti-invariant sections are independent. A complete good-reduction pole-growth witness gives anti-invariant height Gram [[22/3,4/3],[4/3,22/3]]. The chord sections satisfy 2*R1=P+T1 and 2*R2=Q+T2, so the saturated rank-four MW height determinant is 13/3. The K3 has generic fibres 2IV*+I2+6I1, generic Picard rank 19, trivial torsion, and abs(det NS)=78. Resolved component and smooth-section incidences give a full integral rank-19 NS Gram with Smith invariants 1^18,78 and a unimodular split NS=U+M(-1). The necessary Blichfeldt/Hermite screen for a rootless rank-17 MW frame passes. This result is a family over a curve defined over QQ; it does not certify a QQ(k) parameterization, a rational specialization of the base curve, or an actual rootless MW17 fibration.",
+      "title": "E6 rational unordered quotient and genus-one ordered rank-four incidence",
+      "scope": "In the full split marked E6 chart y^2=x^3+(a*u-3)*x+(u^2+c*u-2), coefficient elimination for two complete node-collision linear-chord pencils with common squareclass u*(u-M) gives unordered incidence components of geometric genera zero and two. The genus-zero quotient has the smooth rational point (S,M)=(2,16) and the exact parameterization S=-(k^2+1)(k^4+2k^2+13)/(4k(k^2+3)), M=-2(k^2+1)(k^2+3)/k^3. Recovering P=vw shows S^2-4P is a rational square times k^4+6k^2+13. Hence the ordered data v,w,ell_v,ell_w live on the genus-one cover r^2=k^4+6k^2+13, birational to Cremona 52a2: Y^2=X^3-64X-192. A proved rank calculation gives 52a2(Q)=Z/2, and both rational points lie at infinity, so the ordered affine incidence has no Q-point. A nondegenerate point exists over Q(sqrt(53)) at k=2, proving that extension degree two is minimal for an affine point; no constant extension rationalizes the geometrically genus-one family. Over the ordered function field, the two marked invariant sections and two chord-derived anti-invariant sections are independent, with anti-invariant height Gram [[22/3,4/3],[4/3,22/3]] and saturated rank-four MW determinant 13/3. The parameter involution swaps P,Q and T1,T2, so the descended surface over Q(k) has exact arithmetic rank two, not four. Geometrically the K3 has fibres 2IV*+I2+6I1, Picard rank 19, trivial torsion, abs(det NS)=78, and a full integral NS Gram with Smith invariants 1^18,78. The necessary Blichfeldt/Hermite screen for a rootless rank-17 frame passes. No rank-four Q(k) family or actual rootless MW17 fibration is obtained.",
       "canonical_source": "elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md",
       "dependencies": [],
       "checker": "elkies-k3/scripts/certify_e6_rank4_linear_chord_incidence.sage",
@@ -36850,7 +36850,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:08aaa1fd9edbc9a4ecdb9ab45a98c6eef411ef209d45505bca07e5ddde9d52ca",
+      "artifact_hash": "sha256:d06bc77ad91322eed9dd710854cc22a7191633e0cebe60d2c81e540d639240df",
       "software_lock": [
         "elkies-k3/scripts/certify_e6_rank4_linear_chord_incidence.sage",
         "elkies-k3/data/lattice/e6_rank4_det78_frame.txt",
@@ -36860,7 +36860,11 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
@@ -36960,6 +36964,42 @@
       "consumers": [
         "REPRODUCE.md",
         "elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-GENUS1-HIGH-THROUGHPUT-SPLITTING",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "High-throughput norm-eight/deep-norm-twelve R17 genus-one splitting search",
+      "scope": "A diversity-greedy sample of 100 traces from the 1,000 equation-cheapest norm-eight classes and all 43 norm-twelve deep classes gives 143 exact irreducible squarefree branch quartics, each coprime to its trace denominator and the degree-24 R17 surface discriminant. Norm-eight members use distinct generic-section initialization points, no public exceptional targets, and 900 subsequent rational parameter samples from exact group-law multiples on their pointed quartic Jacobians; every norm-twelve deep class has deg(h)=4 and one unique regular quartic member. A dynamic three-word Legendre scanner evaluates 5,474,328 primitive compact or deterministic large-coordinate parameters in twelve primes split into three disjoint blocks, ranks them by weakest-block cover count and F2 trace-mask rank, and leaves 77,704 distinct all-block collisions. Exact testing of every collision performs 160,395 square tests and finds one simultaneous split at t=1/25, for norm-eight class 0x0f6b1 and norm-twelve class 0x103b2. The first point is the neutral generic-section seed. The constructed norm-twelve point is outside the specialized generic MW17 subgroup in independently verified products of E(F_p)/2E(F_p) and E(F_p)/3E(F_p), giving combined finite-quotient rank 18 and an unconditional rank-at-least-18 fibre. The compact height-2000 box is exhaustive, but the trace sample, million-point large-coordinate population, and Jacobian multiple ranges are bounded; local rankings are not Selmer bounds, finite-quotient non-escape is not dependence, and no rank-32 claim is made.",
+      "canonical_source": "elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-R17",
+        "EC-K3-R17-RANK28-GENUS1-BISECTION-PILOT"
+      ],
+      "checker": "elkies-k3/scripts/search_elkies_2026_genus_one_bisection_splitting.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f0914bd338439fd2cf7c06c218a497e13c7768e8986a007fb766107ebc1e249a",
+      "software_lock": [
+        "elkies-k3/scripts/search_elkies_2026_genus_one_bisection_splitting.sage",
+        "elkies-k3/scripts/scan_elkies_2026_genus_one_bisection_splitting.cpp",
+        "artifacts/generated-results/elkies-k3-r17-genus-one-bisection-splitting-search-v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],

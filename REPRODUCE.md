@@ -18035,11 +18035,14 @@ obstruction.  The proof and search boundaries are recorded in
 and
 [`elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md`](elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md).
 
+<!-- status-consumer: EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD 3bcfe3534656b26f -->
 <!-- status-consumer: EC-K3-E6-RANK4-ROOTLESS-Q2Q4-CENSUS a7e08603b9700395 -->
 
 Replay the systematic E6 node-collision linear-chord incidence, its exact
-genus-`0/2` component decomposition, the independent `2+2` height witness,
-and the saturated determinant-78 `NS` with
+genus-`0/2` unordered component decomposition, the `QQ(k)` parameterization
+of the genus-zero quotient, the genus-one ordered-cover descent obstruction,
+the independent `2+2` height witness over that ordered field, and the
+saturated geometric determinant-78 `NS` with
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -18055,12 +18058,23 @@ and the saturated determinant-78 `NS` with
   elkies-k3/scripts/certify_e6_rank4_rootless_low_degree_search.sage --check
 ```
 
-This is a one-dimensional family over the function field of a curve defined
-over `QQ`, not a coefficient-height scan.  The first checker emits the full
-integral determinant-78 NS marking.  The second exhausts the zero-neutral
-old-degree two, three, and four shells and finds no rootless frame among their
-`79,837` primitive classes.  It does not claim a `QQ(k)` parameterization,
-global rootless nonexistence, or a degree-at-least-five result.  See
+The unordered quotient is `P1_QQ`, with smooth point `(S,M)=(2,16)` and
+
+```text
+S=-(k^2+1)*(k^4+2*k^2+13)/(4*k*(k^2+3)),
+M=-2*(k^2+1)*(k^2+3)/k^3.
+```
+
+The ordered incidence needed for the four individual sections is instead
+`r^2=k^4+6*k^2+13`, birational to the rank-zero curve `52a2`.  It has no
+affine `QQ`-point; degree two is minimal for a nondegenerate affine point, with
+one displayed over `QQ(sqrt(53))`.  Thus geometric rank four holds over the
+ordered genus-one function field, while the descended `QQ(k)` family has
+exact arithmetic rank two.  The first checker emits this descent certificate
+and the full geometric determinant-78 NS marking.  The second exhausts the
+zero-neutral old-degree two, three, and four shells and finds no rootless frame
+among their `79,837` primitive classes.  It does not claim global rootless
+nonexistence or a degree-at-least-five result.  See
 [`elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md`](elkies-k3/E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md).
 
 <!-- status-consumer: EC-K3-RES-D5-TWO-MARKED-TWO-TWIST-POLYNOMIAL ea0496c9566cfdc3 -->
@@ -18164,3 +18178,27 @@ distinct finite-pole norm-eight traces and repeats the complete height-10,000
 scan, requiring survivors from at least two trace pencils.  Exact replay finds
 only the original control, where all 77 split.  The negative conclusion is
 restricted to the selected trace prefix and compact parameter box.
+
+### Published-R17 high-throughput genus-one splitting search
+
+<!-- status-consumer: EC-K3-R17-GENUS1-HIGH-THROUGHPUT-SPLITTING cad3d98ce58c89e7 -->
+
+The unbiased 100-plus-43 production profile replays with:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_elkies_2026_genus_one_bisection_splitting.sage \
+  --norm8-count 100 \
+  --equation-pool-size 1000 \
+  --output artifacts/generated-results/elkies-k3-r17-genus-one-bisection-splitting-search-v1.json \
+  --local-directory artifacts/local/elkies-k3/r17-genus-one-bisection-splitting/production-v1
+```
+
+It compiles all 143 quartics into dynamic Legendre masks, evaluates 5,474,328
+compact or deterministic large-coordinate parameters plus 900
+pointed-Jacobian parameters, and exact-tests all 77,704 modular extremes.  The
+single simultaneous split is at `t=1/25`; its norm-twelve point has one exact
+finite-quotient direction beyond generic MW17.  The compact height-2000 box is
+exhaustive, while the trace and other parameter populations remain bounded.
+See
+[`elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md`](elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md).

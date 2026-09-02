@@ -1,10 +1,39 @@
-# E6 rank-sum-four linear-chord incidence — 2026-09-02
+# E6 rank-sum-four ordered incidence and rational quotient — 2026-09-02
 
 ## Outcome
 
-The systematic E6 incidence search reaches rank sum four on a
-one-dimensional curve over `QQ`.  It is not a bounded rational-coefficient
-scan.
+The systematic E6 incidence search reaches geometric rank four on a
+one-dimensional ordered incidence curve.  The genus-zero **unordered**
+quotient is rational over `QQ`, but the ordering needed to define the four
+individual sections is a genus-one double cover.  Consequently the quotient
+does not give a rank-four family over `QQ(k)`.
+
+More precisely, the quotient has the smooth rational point
+
+```text
+(S,M)=(2,16)
+```
+
+and the exact normalization
+
+```text
+S=-(k^2+1)*(k^4+2*k^2+13)/(4*k*(k^2+3)),
+M=-2*(k^2+1)*(k^2+3)/k^3.
+```
+
+The point corresponds to `k=-1`.  It lies on the diagonal boundary `v=w=1`,
+but is smooth on the quotient and therefore suffices to identify its
+normalization with `P1_QQ`.  The ordered lift is
+
+```text
+r^2=k^4+6*k^2+13.
+```
+
+This curve has genus one and is birational to the Cremona curve `52a2`, of
+rank zero and rational torsion `Z/2`.  Its only rational points are the two
+points above `k=infinity`, so there is no nondegenerate affine rational
+incidence.  Rank four holds over the function field of this genus-one curve;
+the descended surface over `QQ(k)` has arithmetic Mordell--Weil rank two.
 
 Put
 
@@ -94,10 +123,66 @@ blow-up the next tangent cone is
 16384*(256*X^2+9*M^2).
 ```
 
-Accordingly this note does **not** assert a `QQ(k)` parameterization or a
-rational point on the quotient.  What is proved is a one-dimensional family
-over the function field `QQ(C_0)` of the genus-zero component, with every
-displayed section defined over that field.
+Those two branches above the origin are defined over `QQ(i)`, but this does
+not obstruct rationality: `(S,M)=(2,16)` is a different smooth rational point.
+Writing `P=v*w`, exact elimination and the normalization above give
+
+```text
+P=(-3*k^8-8*k^6+2*k^4+112*k^2-39)/(16*k^2*(k^2+3)),
+
+S^2-4*P = h(k)^2*(k^4+6*k^2+13),
+h(k)=(k^2-1)*(k^2+7)/(4*k*(k^2+3)).
+```
+
+Thus the quotient parameterization does not by itself order `v,w`.  On the
+ordered cover `r^2=k^4+6*k^2+13`, all incidence data become explicit:
+
+```text
+v=(S+h*r)/2,                 w=(S-h*r)/2,
+
+ell_v=k^2*(k^4+4*k^2+11+(1-k^2)*r)
+      /(4*(k^2+1)*(k^2+3)),
+ell_w=k^2*(k^4+4*k^2+11-(1-k^2)*r)
+      /(4*(k^2+1)*(k^2+3)).
+```
+
+Literal substitution verifies both node-collision equations.  The quotient
+surface itself descends to `QQ(k)`: substituting the symmetric functions gives
+
+```text
+a=-(k^8+7*k^6+29*k^4+37*k^2+22)
+   /(2*k*(k^2+1)*(k^2+3)),
+
+c=(9*k^12+62*k^10+243*k^8+612*k^6+1071*k^4+446*k^2+117)
+   /(32*k^3*(k^2+1)*(k^2+3)).
+```
+
+The ordered curve is not a conic.  The birational maps to
+
+```text
+E_0: Y^2=X^3-64*X-192
+```
+
+are
+
+```text
+X=2*(r+k^2)+2,              Y=4*k*(r+k^2+3),
+k=Y/(2*(X+4)),              r=(X-2)/2-k^2.
+```
+
+Sage's proved Mordell--Weil calculation identifies `E_0` as `52a2` and gives
+`E_0(QQ)={O,(-4,0)}`.  Both points are at infinity in the ordered incidence
+chart.  Hence a nondegenerate affine point needs an extension of degree at
+least two.  Degree two is attained, for example at `k=2` over `QQ(sqrt(53))`:
+
+```text
+S=-185/56,                  M=-35/4,
+v=(-185+33*sqrt(53))/112,   w=(-185-33*sqrt(53))/112,
+ell_v=(43-3*sqrt(53))/35,   ell_w=(43+3*sqrt(53))/35.
+```
+
+This is minimal in degree, but it does not rationalize the family: geometric
+genus one is unchanged by constant field extension.
 
 The half-collision branches at the nodal fibre were also separated.  Their
 small resultant component reduces to
@@ -112,7 +197,7 @@ higher-genus components.  This is why the D6 exact correspondence obstruction
 was retained as the parallel control; it does not replace the successful E6
 node--node component.
 
-## Four independent arithmetic directions
+## Four independent directions on the ordered cover
 
 Let `sqrt(d)` denote the chosen square root on the cover.  For either marked
 section define
@@ -152,16 +237,29 @@ Gram(P,Q) = [ 4/3 -2/3]
             [-2/3  4/3].
 ```
 
-The deck characters make the two blocks orthogonal.  Hence the arithmetic
-rank over `QQ(C_0)(t)` is at least `2+2=4`.  The K3 fibres are
+The quadratic-base-change deck characters make the two blocks orthogonal.
+Hence the rank over the ordered incidence field is at least `2+2=4`.  The K3
+fibres are
 
 ```text
 2IV* + I2 + 6I1,
 ```
 
 so the root rank is thirteen.  The marked family is nonconstant; therefore
-generic Picard rank is nineteen and Shioda--Tate makes the displayed rank
-exactly four.
+generic geometric Picard rank is nineteen and Shioda--Tate makes the displayed
+rank exactly four over the ordered field.
+
+The parameter involution `r -> -r` swaps `P,Q` and swaps `T1,T2`.  Since these
+four directions exhaust the geometric Mordell--Weil space, its fixed subspace
+is exactly
+
+```text
+span(P+Q, T1+T2).
+```
+
+Thus the descended family over `QQ(k)` has exact arithmetic rank two, split
+as one invariant and one anti-invariant direction for the K3 base-change deck
+involution.  It is not the desired rank-four `QQ(k)` source.
 
 ## Saturation and NS determinant
 
@@ -295,16 +393,18 @@ The generated certificate is
 The complete low-degree search artifact is
 [`../artifacts/generated-results/elkies-k3-e6-rank4-rootless-low-degree-search-v1.json`](../artifacts/generated-results/elkies-k3-e6-rank4-rootless-low-degree-search-v1.json).
 
-Proved here: the exact incidence decomposition, a one-dimensional E6 family
-over a curve defined over `QQ`, two independent invariant and two independent
-anti-invariant directions, generic `rho=19`, saturated determinant `78`, and
-passage of the necessary rootless-MW17 determinant screen; the full integral
-NS marking; and absence of a rootless child in the complete zero-neutral
-old-degree two, three, and four shells.
+Proved here: the exact incidence decomposition; the displayed `QQ(k)`
+parameterization of the unordered genus-zero quotient; the genus-one ordered
+normalization `52a2`, its complete rational point set, and a quadratic
+nondegenerate point; exact arithmetic rank two over `QQ(k)` and geometric rank
+four over the ordered incidence field; generic geometric `rho=19`, saturated
+determinant `78`, and passage of the necessary rootless-MW17 determinant
+screen; the full geometric integral NS marking; and absence of a rootless
+child in the complete zero-neutral old-degree two, three, and four shells.
 
-Not proved here: a `QQ(k)` rational parameterization, a rational specialization
-of the incidence base, an actual rootless MW17 fibration, or nonexistence in
-degree at least five or along a multi-step route.
+Not proved here: a rank-four family over `QQ(k)`, which this incidence cannot
+supply; an actual rootless MW17 fibration; or nonexistence in degree at least
+five or along a multi-step route.
 
 The E6 rational-surface normal form and quadratic-base-change rank splitting
 are compatible with Kimura's construction; the incidence component, sections,

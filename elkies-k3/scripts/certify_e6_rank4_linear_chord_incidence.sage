@@ -1,15 +1,17 @@
 #!/usr/bin/env sage-python
-"""Certify the systematic E6 node--node linear-chord rank-four component.
+"""Certify the systematic E6 node--node linear-chord incidence and descent.
 
 status: ACTIVE_PROOF
-claim: a one-dimensional QQ incidence component has two invariant and two
-       independent anti-invariant directions; its saturated NS determinant is 78
+claim: the unordered genus-zero quotient is rational over QQ, while the
+       ordered rank-four incidence is a genus-one double cover with no affine
+       QQ-point; its saturated geometric NS determinant is 78
 inputs: none
 outputs: elkies-k3-e6-rank4-linear-chord-incidence-v1.json
 
-The base is a curve over QQ, not a bounded rational-height search.  This
-checker does not assert that its genus-zero quotient has been parametrized by
-QQ(k), nor does it construct a rootless MW17 neighbour.
+The quotient base is parametrized over QQ exactly.  The individual marked
+sections require the ordered double cover, which is not rational over any
+constant field extension.  This checker does not construct a rootless MW17
+neighbour.
 """
 
 from __future__ import annotations
@@ -19,8 +21,8 @@ import json
 from pathlib import Path
 
 from sage.all import (
-    CartanMatrix, Curve, EllipticCurve, GF, PolynomialRing, QQ, RR, ZZ,
-    factor, gamma, matrix, pi, vector, zero_matrix,
+    CartanMatrix, Curve, EllipticCurve, FunctionField, GF, PolynomialRing,
+    QQ, RR, ZZ, factor, gamma, matrix, pi, vector, zero_matrix,
 )
 
 
@@ -157,6 +159,171 @@ tangent_cone = sum(
 )
 if tangent_cone != 16384*(256*X**2 + 9*m**2):
     raise ArithmeticError("genus-zero branch tangent changed")
+
+# The origin is a poor arithmetic base point, but the same quotient has the
+# smooth rational point (S,M)=(2,16).  Taking k=-1 there gives the following
+# compact normalization.  The two cleared equations have resultant exactly
+# the plane factor (with multiplicity one), while their first nonzero
+# subresultant is linear in k; this certifies birationality rather than merely
+# a dominant rational map.
+Parameter = PolynomialRing(QQ, "k")
+k = Parameter.gen()
+S_parameter = -(
+    (k**2+1)*(k**4+2*k**2+13) / (4*k*(k**2+3))
+)
+M_parameter = -2*(k**2+1)*(k**2+3)/k**3
+P_parameter = (
+    -3*k**8-8*k**6+2*k**4+112*k**2-39
+) / (16*k**2*(k**2+3))
+if genus_zero_factor(S_parameter, M_parameter) != 0:
+    raise ArithmeticError("QQ normalization does not lie on the genus-zero quotient")
+if (
+    S_parameter(k=-1) != 2
+    or M_parameter(k=-1) != 16
+    or genus_zero_factor(2, 16) != 0
+    or genus_zero_factor.derivative(plane_S)(2, 16) == 0
+):
+    raise ArithmeticError("smooth rational normalization point changed")
+
+KSM = PolynomialRing(QQ, names=("k", "S", "M"), order="lex")
+resultant_k, resultant_S, resultant_M = KSM.gens()
+parameter_S_equation = (
+    4*resultant_k*(resultant_k**2+3)*resultant_S
+    +(resultant_k**2+1)*(resultant_k**4+2*resultant_k**2+13)
+)
+parameter_M_equation = (
+    resultant_k**3*resultant_M
+    +2*(resultant_k**2+1)*(resultant_k**2+3)
+)
+parameter_resultant = parameter_S_equation.resultant(
+    parameter_M_equation, resultant_k
+)
+if Plane(str(parameter_resultant)) != genus_zero_factor:
+    raise ArithmeticError("normalization resultant changed")
+parameter_subresultants = parameter_S_equation.subresultants(
+    parameter_M_equation, resultant_k
+)
+if len(parameter_subresultants) < 2 or parameter_subresultants[1].degree(resultant_k) != 1:
+    raise ArithmeticError("normalization inverse is not generically linear")
+
+# Recovering P=v*w from the two symmetric incidence equations leaves one
+# linear common factor.  Its discriminant is not a square in QQ(k): the
+# squarefree obstruction is k^4+6*k^2+13.  Thus the ordered data (v,w and the
+# two slopes) live on a double cover of the rational quotient.
+if (
+    G(S_parameter, P_parameter, M_parameter) != 0
+    or H(S_parameter, P_parameter, M_parameter) != 0
+):
+    raise ArithmeticError("recovered product P does not satisfy the incidence equations")
+ordered_quartic = k**4+6*k**2+13
+ordered_square_factor = (k**2-1)*(k**2+7)/(4*k*(k**2+3))
+if S_parameter**2-4*P_parameter != ordered_square_factor**2*ordered_quartic:
+    raise ArithmeticError("ordered incidence squareclass changed")
+a_parameter = -(
+    k**8+7*k**6+29*k**4+37*k**2+22
+) / (2*k*(k**2+1)*(k**2+3))
+c_parameter = (
+    9*k**12+62*k**10+243*k**8+612*k**6+1071*k**4+446*k**2+117
+) / (32*k**3*(k**2+1)*(k**2+3))
+if (
+    a_parameter != 2*(S_parameter**2-P_parameter+3)/S_parameter
+    or c_parameter != -2*(
+        P_parameter**2+2*S_parameter**2-5*P_parameter+6
+    )/S_parameter
+):
+    raise ArithmeticError("descended rational-surface coefficients changed")
+
+parameter_function_field = FunctionField(QQ, "k")
+function_k = parameter_function_field.gen()
+ordered_polynomial = PolynomialRing(parameter_function_field, "r")
+ordered_variable = ordered_polynomial.gen()
+ordered_function_field = parameter_function_field.extension(
+    ordered_variable**2-(function_k**4+6*function_k**2+13), "r"
+)
+ordered_r = ordered_function_field.gen()
+function_S = -(
+    (function_k**2+1)*(function_k**4+2*function_k**2+13)
+    /(4*function_k*(function_k**2+3))
+)
+function_M = -2*(function_k**2+1)*(function_k**2+3)/function_k**3
+function_difference = (
+    (function_k**2-1)*(function_k**2+7)*ordered_r
+    /(4*function_k*(function_k**2+3))
+)
+function_v = (function_S+function_difference)/2
+function_w = (function_S-function_difference)/2
+slope_common = (
+    function_k**2*(function_k**4+4*function_k**2+11)
+    /(4*(function_k**2+1)*(function_k**2+3))
+)
+slope_radical = (
+    function_k**2*(1-function_k**2)*ordered_r
+    /(4*(function_k**2+1)*(function_k**2+3))
+)
+function_ell_v = slope_common+slope_radical
+function_ell_w = slope_common-slope_radical
+for first, second, slope in (
+    (function_v, function_w, function_ell_v),
+    (function_w, function_v, function_ell_w),
+):
+    if (
+        (first+second)*slope**2*function_M*(slope*function_M-4*first)**2
+        -32*(second**2+3)
+    ) != 0:
+        raise ArithmeticError("ordered node-A parameterization failed")
+    if (
+        slope*(
+            3*slope**2*function_M**2-8*first*slope*function_M
+            -16*first**2-48
+        )-32
+    ) != 0:
+        raise ArithmeticError("ordered node-B parameterization failed")
+
+# The ordered cover is genus one, not a conic.  The displayed birational map
+# takes r^2=k^4+6*k^2+13 to the Cremona curve 52a2:
+#
+#   X=2*(r+k^2)+2,  Y=4*k*(r+k^2+3),
+#   Y^2=X^3-64*X-192.
+#
+# Its Mordell--Weil group over QQ is exactly Z/2.  The two rational points are
+# the two points above k=infinity; hence the affine ordered incidence has no
+# QQ-point.  Degree two is minimal for a nondegenerate affine point, and
+# k=2, r=sqrt(53) supplies one.
+OrderedCurveRing = PolynomialRing(QQ, names=("k", "r"))
+ordered_k, ordered_r_polynomial = OrderedCurveRing.gens()
+ordered_relation = ordered_r_polynomial**2-(
+    ordered_k**4+6*ordered_k**2+13
+)
+elliptic_X = 2*(ordered_r_polynomial+ordered_k**2)+2
+elliptic_Y = 4*ordered_k*(ordered_r_polynomial+ordered_k**2+3)
+elliptic_identity = elliptic_Y**2-(elliptic_X**3-64*elliptic_X-192)
+if elliptic_identity.reduce([ordered_relation]) != 0:
+    raise ArithmeticError("ordered quartic-to-elliptic map changed")
+EllipticMapRing = PolynomialRing(QQ, names=("X", "Y"))
+inverse_X, inverse_Y = EllipticMapRing.gens()
+elliptic_map_field = EllipticMapRing.fraction_field()
+inverse_k = elliptic_map_field(inverse_Y)/(2*(inverse_X+4))
+inverse_r = (inverse_X-2)/2-inverse_k**2
+inverse_relation = inverse_r**2-(inverse_k**4+6*inverse_k**2+13)
+if inverse_relation.numerator().reduce([
+    inverse_Y**2-(inverse_X**3-64*inverse_X-192)
+]) != 0:
+    raise ArithmeticError("ordered elliptic-to-quartic map changed")
+ordered_elliptic_curve = EllipticCurve(QQ, [0, 0, 0, -64, -192])
+rational_torsion_points = ordered_elliptic_curve.torsion_points()
+if (
+    ordered_elliptic_curve.cremona_label() != "52a2"
+    or ordered_elliptic_curve.rank(proof=True) != 0
+    or tuple(ordered_elliptic_curve.torsion_subgroup().invariants()) != (2,)
+    or len(rational_torsion_points) != 2
+    or not any(
+        point[2] != 0 and point[0]/point[2] == -4 and point[1]/point[2] == 0
+        for point in rational_torsion_points
+    )
+):
+    raise ArithmeticError("ordered incidence rational-point certificate changed")
+if ordered_quartic(k=2) != 53:
+    raise ArithmeticError("quadratic nondegenerate incidence witness changed")
 
 
 # ---------------------------------------------------------------------------
@@ -340,18 +507,65 @@ arguments = parser.parse_args()
 
 payload = {
     "schema": "elkies-k3.e6-rank4-linear-chord-incidence.v1",
-    "status": "PASS_EXACT_E6_RANK4_INCIDENCE_CURVE",
+    "status": "PASS_EXACT_E6_RANK4_INCIDENCE_DESCENT",
     "base_curve": {
         "unordered_plane_factor_genus_zero": str(genus_zero_factor),
         "unordered_plane_factor_genus_two": str(genus_two_factor),
         "geometric_genera": [0, 2],
         "genus_zero_origin_second_tangent_cone": str(tangent_cone),
-        "rational_parameterization_status": "not_certified",
+        "normalization_rational_point": {
+            "S_M": [2, 16],
+            "parameter_k": -1,
+            "smooth_gradient_S_M": [
+                int(genus_zero_factor.derivative(plane_S)(2, 16)),
+                int(genus_zero_factor.derivative(plane_M)(2, 16)),
+            ],
+            "incidence_boundary": "v=w=1",
+        },
+        "rational_parameterization": {
+            "S": str(S_parameter),
+            "M": str(M_parameter),
+            "P_vw": str(P_parameter),
+            "inverse_linear_subresultant": str(parameter_subresultants[1]),
+        },
+        "rational_parameterization_status": "certified_over_QQ",
+        "ordered_incidence_normalization": {
+            "equation": "r^2=k^4+6*k^2+13",
+            "geometric_genus": 1,
+            "elliptic_curve": "Y^2=X^3-64*X-192",
+            "cremona_label": ordered_elliptic_curve.cremona_label(),
+            "quartic_to_elliptic_map": {
+                "X": "2*(r+k^2)+2",
+                "Y": "4*k*(r+k^2+3)",
+            },
+            "elliptic_to_quartic_map": {
+                "k": "Y/(2*(X+4))",
+                "r": "(X-2)/2-k^2",
+            },
+            "mordell_weil_rank_over_QQ": int(ordered_elliptic_curve.rank(proof=True)),
+            "torsion_over_QQ": "Z/2",
+            "rational_points": ["O", "(-4,0)"],
+            "affine_rational_points": [],
+            "minimum_degree_for_nondegenerate_affine_point": 2,
+            "quadratic_witness": {
+                "field": "QQ(sqrt(53))",
+                "k": 2,
+                "r": "sqrt(53)",
+                "S": "-185/56",
+                "M": "-35/4",
+                "v": "(-185+33*sqrt(53))/112",
+                "w": "(-185-33*sqrt(53))/112",
+                "ell_v": "(43-3*sqrt(53))/35",
+                "ell_w": "(43+3*sqrt(53))/35",
+            },
+        },
     },
     "surface": {
         "equation": "y^2=x^3+(a*u-3)*x+(u^2+c*u-2)",
         "a": str(a),
         "c": str(c),
+        "a_over_QQ_k": str(a_parameter),
+        "c_over_QQ_k": str(c_parameter),
         "marked_sections": ["(v^2+2,u+v*(v^2+3))", "(w^2+2,u+w*(w^2+3))"],
         "branch_squareclass": "u*(u-M)",
         "k3_fibres_generic": "2IV*+I2+6I1",
@@ -367,7 +581,11 @@ payload = {
         "control_curve_order": int(control.cardinality()),
     },
     "mordell_weil": {
-        "rank_split": "2+2",
+        "geometric_rank": 4,
+        "rank_split_over_ordered_incidence_field": "2+2",
+        "rank_over_QQ_k": 2,
+        "rank_split_over_QQ_k": "1+1",
+        "parameter_descent_action": "r -> -r swaps P,Q and swaps T1,T2",
         "pure_character_height_determinant": str(pure_character_det),
         "saturation_relations": ["2*R1=P+T1", "2*R2=Q+T2"],
         "pure_to_saturated_index": 4,
@@ -408,13 +626,17 @@ payload = {
     },
     "proof_boundary": {
         "proved": (
-            "A one-dimensional QQ incidence component, four independent arithmetic "
-            "directions over its function field, the saturated determinant-78 NS, "
-            "and passage of the necessary rootless rank-17 Hermite screen."
+            "The genus-zero unordered quotient is P1 over QQ with the displayed "
+            "parameterization. Its ordered incidence normalization is the rank-zero "
+            "genus-one curve 52a2 and has no affine QQ-point. The four independent "
+            "directions exist over that ordered function field; their QQ(k)-fixed "
+            "part has rank two. The geometric saturated NS has determinant 78 and "
+            "passes the necessary rootless rank-17 Hermite screen."
         ),
         "not_proved": (
-            "A QQ(k)-parameterization or a rational point on the genus-zero quotient; "
-            "a rootless MW17 fibration; or completeness beyond the linear-chord incidence."
+            "A rank-four family over QQ(k), a rational parameterization of the "
+            "geometrically genus-one ordered incidence, a rootless MW17 fibration, "
+            "or completeness beyond the linear-chord incidence."
         ),
     },
 }
@@ -429,8 +651,9 @@ else:
     output_path.write_text(encoded)
 
 print(
-    "E6RANK4|base_genera=0,2|rank_split=2+2|rho=19|"
-    "mw_det=13/3|NS_det=78|rootless_screen=PASS|status=PASS_EXACT",
+    "E6RANK4|quotient=QQ(k)|ordered=52a2_rank0|"
+    "rank_QQk=2|rank_ordered=4|rho_geom=19|mw_det=13/3|"
+    "NS_det=78|rootless_screen=PASS|status=PASS_EXACT",
     flush=True,
 )
 print(f"OUTPUT|{output_path}", flush=True)

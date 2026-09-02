@@ -2703,14 +2703,20 @@ The systematic E6 node-collision linear-chord incidence replays with
 ```
 
 It eliminates both complete linear-chord pencils, decomposes the unordered
-base into geometric genus-zero and genus-two components, and certifies a good
-reduction anti-invariant height determinant `52`.  Saturating by the two
-literal chord sections changes the pure-character index by four and gives MW
-determinant `13/3`, generic `rho=19`, and `abs(det NS)=78`.  The rootless-MW17
-Hermite screen passes.  The checker now also emits the full saturated integral
-NS Gram and verifies its unimodular split against
+base into geometric genus-zero and genus-two components, and parametrizes the
+genus-zero quotient over `QQ`.  Recovering the ordered section labels gives
+the genus-one cover `r^2=k^4+6*k^2+13`, birational to the rank-zero curve
+`52a2`, so there is no affine ordered `QQ`-point.  The geometric rank-four
+height calculation therefore lives over that ordered function field; the
+descended `QQ(k)` family has exact arithmetic rank two.  The same checker
+certifies the anti-invariant height determinant `52`.  Saturating by the two
+literal chord sections changes the pure-character index by four and gives
+geometric MW determinant `13/3`, generic geometric `rho=19`, and
+`abs(det NS)=78`.  The rootless-MW17 Hermite screen passes.  It also emits the
+full saturated integral NS Gram and verifies its unimodular split against
 `data/lattice/e6_rank4_det78_frame.txt`.
 
+<!-- status-consumer: EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD 3bcfe3534656b26f -->
 <!-- status-consumer: EC-K3-E6-RANK4-ROOTLESS-Q2Q4-CENSUS a7e08603b9700395 -->
 
 The complete zero-neutral rootless search through old degree four replays with
@@ -2809,6 +2815,26 @@ hot loop retains only square survivors belonging to at least two distinct
 trace pencils.  Among `121,589,943` primitive parameters through height
 `10,000`, exact testing recovers only the original 77-fold positive control.
 It does not search the rest of the norm-eight trace frontier.
+
+## High-throughput genus-one bisection splitting
+
+<!-- status-consumer: EC-K3-R17-GENUS1-HIGH-THROUGHPUT-SPLITTING cad3d98ce58c89e7 -->
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/search_elkies_2026_genus_one_bisection_splitting.sage \
+  --norm8-count 100 --equation-pool-size 1000
+```
+
+This active bounded search selects a structurally diverse equation-cheap
+norm-eight sample, adds all 43 norm-twelve deep classes, constructs pointed
+quartics without public exceptional targets, and drives
+`scan_elkies_2026_genus_one_bisection_splitting.cpp`.  The C++ mask width is
+dynamic and each parameter is ranked by weakest-prime-block cover count and
+trace-mask rank.  Exact survivors are mapped back to the R17 fibre and tested
+modulo the specialized generic MW17 subgroup.  The pinned production run
+finds the exact `t=1/25` norm-eight/norm-twelve collision and one escaping
+norm-twelve direction; its no-other-hit statement is bounded.
 
 ## Rule for future additions
 
