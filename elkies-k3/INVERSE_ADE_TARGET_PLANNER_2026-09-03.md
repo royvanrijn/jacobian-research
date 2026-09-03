@@ -2,6 +2,8 @@
 
 Date: 2026-09-03.
 
+<!-- status-consumer: EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA b4a7edb452e6dcc7 -->
+
 ## Outcome
 
 The recovery-first v2 benchmark passes the requested gate
@@ -90,13 +92,21 @@ then materializes one child and independently verifies the rootless graph
 completion. The terminal H3 and Q80 edges each use one proposal and one
 materialization.
 
-This closes historical recovery without pretending to solve the harder
-problem posed by v1. A marked target core in the parent rational space is
-nearly equivalent to the neighbour line itself. If only an abstract child ADE
-metric is known, the terminal affine birth-emptiness solver of Theorem H0l is
-still missing. Candidate-wise affine CVP was tested and remains slower than
-direct completion; batching or forbidden-stratum inversion remains the route
-for that separate problem.
+This closes historical recovery without pretending that the marked target
+solves the harder problem posed by v1: a marked target core in the parent
+rational space is nearly equivalent to the neighbour line itself.  Theorem
+H0l.2 now supplies the previously missing target-free logical predicate.  It
+eliminates the affine variable by projecting scaled dual-lattice shells to
+explicit birth points on the isotropic quadric; rootlessness is the complement
+of those points and the old-root hyperplane sections.  The exact construction
+and exhaustive ternary controls are recorded in
+[`INVERSE_ADE_PROJECTIVE_BIRTH_STRATA_2026-09-03.md`](INVERSE_ADE_PROJECTIVE_BIRTH_STRATA_2026-09-03.md).
+
+This is not yet a rank-15 speed result.  A full scaled shell can have the same
+asymptotic size as the quadric, so a practical planner must choose among shell
+expansion, orbit compression, and lazy affine CVP.  The v2 materialization
+counts above therefore remain historical benchmark data, not measurements of
+the new compiler.
 
 ## What is exact and what remains experimental
 
@@ -137,10 +147,11 @@ it is not one of the 936 bulk rows.
 
 The recovery gate is therefore necessary but not permission to launch 936
 searches. Run the single certified positive control, but keep the bulk foundry
-closed. The next algorithmic task is to obtain compatible marked parent--target
-cores without importing the historical edge, or to batch the discriminant-
-coset birth constraints. The `10x` benchmark comes only after that input
-boundary is fixed.
+closed. The no-birth logic no longer needs marked parent--target cores; the
+remaining data task is to reconstruct compatible source markings and the
+core/bridge/graph inputs that define the scaled shells.  The remaining
+algorithmic task is to compress those projected shells at rank 15.  The `10x`
+benchmark comes only after both boundaries are fixed.
 
 The standard Kneser line parametrization and asymptotic neighbour statistics
 are from Gaetan Chenevier,
@@ -149,8 +160,8 @@ Visible-root filtering in the unimodular setting is developed further in
 [*Unimodular Hunting*](https://arxiv.org/abs/2410.18788). The graph-glue
 completion layer uses Nikulin's
 [*Integral symmetric bilinear forms and some of their applications*](https://www.mathnet.ru/eng/im1677).
-None of those sources turns an abstract rootless ADE request into the missing
-marked target core.
+Those sources provide the standard neighbour and visible-root framework; the
+target-free scaled-shell elimination used here is Theorem H0l.2.
 
 ## Replay
 

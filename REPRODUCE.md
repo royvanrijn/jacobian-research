@@ -18261,6 +18261,37 @@ sum equals the exact genus mass
 `1463420154787/4131952105881600`.  See
 [`elkies-k3/E6_RANK4_DET78_NIEMEIER_CLASSIFICATION_2026-09-03.md`](elkies-k3/E6_RANK4_DET78_NIEMEIER_CLASSIFICATION_2026-09-03.md).
 
+### Rootless genus first-moment certificate
+
+<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS 2f5b874c0c22133b -->
+
+Generate and byte-check the exact Siegel weighted root averages for the
+determinant-78, determinant-948, and determinant-950 rank-17 control genera:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_rootless_genus_first_moment.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_rootless_genus_first_moment.sage --check
+```
+
+The three mass-normalized average signed root counts are exactly
+
+```text
+det 78:  2913380886349/59299224796,
+det 948: 7957563723128755857618/562456712956783562285,
+det 950: 4967763637986279936/352882035745379473.
+```
+
+The determinant-78 value is independently reconstructed from all 1,549
+classes and their automorphism orders.  Every value exceeds two, so the cheap
+`average<2` sufficient criterion is inconclusive on all three controls; it
+does not contradict the explicit rootless determinant-948 and 950 frames.
+The exact higher-ADE mass inversion is proved but not yet implemented for
+these genera.  See
+[`elkies-k3/ROOTLESS_GENUS_THEORY_2026-09-03.md`](elkies-k3/ROOTLESS_GENUS_THEORY_2026-09-03.md).
+
 ### Arithmetic rank transfer and marking gate
 
 <!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 3031dd2365a29cd5 -->
@@ -18287,6 +18318,7 @@ The alternate application proof is
 ### Integral rank-transfer and character-glue calculus
 
 <!-- status-consumer: EC-K3-RELATIVE-U-BRIDGE-LIFTING 800e22abf69b91aa -->
+<!-- status-consumer: EC-K3-LOCAL-BRIDGE-MUTATION-H1C 2db88fff92ef48b9 -->
 <!-- status-consumer: EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION d57544697149506f -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 7eeeeaa80d9b2bf3 -->
 <!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
@@ -18304,6 +18336,7 @@ The alternate application proof is
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH a755a3956c4c97cb -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE d32b35b66a35627c -->
 <!-- status-consumer: EC-K3-NS0024-INVERSE-ADE-MUTATION 5c56f07d14129837 -->
+<!-- status-consumer: EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA b4a7edb452e6dcc7 -->
 
 Generate and byte-check the equation-free census, then replay the local
 bridge and involution graph-glue theorems with
@@ -18314,6 +18347,7 @@ python3 elkies-k3/scripts/build_integral_rank_transfer_claim_provenance.py --che
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage \
   --relative-u-output artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json
+sage -python elkies-k3/scripts/certify_r17_local_bridge_mutation.sage --check
 sage -python elkies-k3/scripts/benchmark_integral_rank_transfer_bridge_predictor.sage --check
 sage -python elkies-k3/scripts/benchmark_e6_det78_prospective_bridge_predictor.sage --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_theta_convolution.sage --check
@@ -18327,6 +18361,7 @@ sage -python elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_birth_d
 sage -python elkies-k3/scripts/analyze_small_genus_defect_graphs.sage --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_root_system_signature.sage --check
 sage -python elkies-k3/scripts/certify_ns0024_inverse_ade_mutation.sage --check
+sage -python elkies-k3/scripts/certify_inverse_ade_projective_birth_strata.sage --check
 sage -python elkies-k3/scripts/certify_integral_character_glue_calculus.sage --check
 sage -python elkies-k3/scripts/certify_r17_norm12_103b2_mw_glue.sage \
   --skip-specialization-saturation --check
@@ -18341,6 +18376,11 @@ a documentation integrity check, not a mathematical verifier.
 
 The relative-`U` theorem and first NS0024 application are recorded in
 [`elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md`](elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md).
+The local-mutation checker proves the symbolic raw-Gram/parity identities,
+replays the glue-support law on all 42 edges, and certifies the new published-
+R17 degree-two `4A1/MW13` fibration with maximal non-cyclic
+`ZZ/4+ZZ/8` bridge.  Exact theta coefficients distinguish its frame from
+both stored H3 `4A1` frames; it is not a historical-route shortcut.
 Rebuild the four completed frames, compare them with the known NS0024 route,
 and export the root-adapted source with
 
@@ -18526,9 +18566,24 @@ and the exact minimum sets are recorded.  All three genera have one proper
 spinor genus.  In determinant 126 the exact directed distance profile is
 `1,2`, and the distance-two path has signed root defects `2 -> 2 -> 0`.  Thus
 fixed-prime traps and nontrivial distance occur in complete finite graphs,
-while no all-good-prime trap or rank-15 Q80 reachability theorem is claimed.
+while those bounded graphs alone make no all-good-prime claim.
 See
 [`elkies-k3/DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md`](elkies-k3/DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md).
+
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MARKED-ROOTLESS-REACHABILITY 354cc7a9fc81f33e -->
+
+The all-good-prime completion is theorem-level but has no computational
+replay.  A finite discriminant/glue marking has compact-open stabilizer and
+therefore defines a level class set in the sense of Chenevier, Theorem 5.9.
+Within that set, a state reaches zero support through finitely many directed
+good-prime edges exactly when its marked spinor/level component contains a
+zero-support state.  In fact every sufficiently large prime with the required
+spinor displacement gives a direct marked neighbour in the chosen rootless
+class; the dual zero-layer survival law makes this edge automatically kill
+every parent physical witness.  The resulting finite prime set is
+non-effective.  This supplies neither a small-prime bound nor an equation or
+elliptic-neighbour lift; see Theorem H0i.3 in
+[`elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md`](elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md).
 The root-system signature replay then enumerates every physical completion
 root `k+c` on the four NS0024 stages and records all pairwise inner products.
 It recovers `D5+E8`, `3A1+A2`, `3A1+A2`, and rootless, together with root
@@ -18546,6 +18601,14 @@ survivors, no births, no extra roots, and metric `3A1+A2`; the subsequently
 materialized child has the identical physical root set.  This proves a finite
 necessary-and-sufficient target predicate for a fixed line, not completeness
 or a runtime bound for finding such a line.
+The projective-birth-strata replay eliminates the affine variable by scaling
+a born root `v` to `z=p*v`.  It exhausts 48 state/prime cases in three
+mass-closed ternary genera and checks all 346 predicted root sets against
+independent child enumerations.  The isotropic-quadric complement predicts
+all 192 rootless lines without a marked target core.  A six-line index-two
+graph-glue control additionally has 16 nonzero-coset births per line and exact
+predicted/materialized equality, giving 352 exact comparisons in total.  See
+[`elkies-k3/INVERSE_ADE_PROJECTIVE_BIRTH_STRATA_2026-09-03.md`](elkies-k3/INVERSE_ADE_PROJECTIVE_BIRTH_STRATA_2026-09-03.md).
 The character replay exhausts the E6 `2+1` and `2+2` involution graphs after
 the declared factor-12 integral scaling.  The norm-twelve byte check reuses
 the pinned full saturation record; generating that artifact without the skip
@@ -18638,6 +18701,30 @@ exact Kummer barcode matches, and independent height-16 anti-invariant
 sections.  Fitting one member of a genus-one pencil through each already known
 point is not a point-discovery or rank-32 certificate.  See
 [`elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md`](elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md).
+
+### Published-R17 multisection-visibility filtration
+
+<!-- status-consumer: EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION 2f41e9f4236f6c9e -->
+
+Generate and byte-check the genus-qualified filtration at all four rank-25--28
+controls with
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_r17_multisection_visibility_filtration.sage
+
+sage -python \
+  elkies-k3/scripts/certify_r17_multisection_visibility_filtration.sage \
+  --check
+```
+
+The checker fits the common norm-eight genus-one bisection pencil through all
+38 displayed exceptional generators.  This proves that the literal all-genus
+displayed filtration is full in degree two, with dimensions `8,9,10,11`.  It
+separately imports the complete rational-bisection dimensions `5,3,2,1` and
+retains the incomplete labels on the sampled degree-three and degree-four
+rational-curve layers.  It does not claim a full Mordell--Weil quotient or an
+exhaustive rational trisection/quadrisection calculation.
 
 Extract the common integral character/glue carrier from that exact certificate
 with

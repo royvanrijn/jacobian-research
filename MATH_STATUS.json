@@ -36675,6 +36675,45 @@
       "priority": "derived"
     },
     {
+      "id": "EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION",
+      "kind": "example",
+      "state": "proved",
+      "title": "All-genus multisection visibility is full in degree two on the four R17 controls",
+      "scope": "For a declared atlas A of geometrically integral multisections, define the displayed visibility space V^A_{<=d}(t;L_t) inside (L_t/M_t) tensor Q as the span of rational branch points at t on curves of degree at most d. The genus qualifier is essential. Using the common norm-eight trace tau=-P2-P5, exact line incidence fits one rational genus-one bisection pencil member through each of the 38 ordered exceptional generators at t=-2/377,-308/251,2456/135,-9529/5471. All 38 branch polynomials are irreducible squarefree quartics coprime to the R17 discriminant and trace denominator; exact cover witnesses, residual equations, target coordinates, and lift degree bounds replay. Hence the literal all-genus displayed filtration is already full in degree two, with dimensions 8,9,10,11. By contrast, the finite irreducible-rational-curve filtration has complete degree-two dimensions 5,3,2,1, while the tested degree-three/four subatlases add nothing. Those higher layers are not complete: there are 18,024,296 norm-20 rational-trisection cosets, of which only 138 sampled cosets have equations, and degree four samples only 1,025 of 4^17 ambient translation cosets. Thus the unqualified degree-at-most-four conjecture holds trivially at degree two on the displayed quotients, whereas the rational-multisection version remains open. This proves no equality L_t=E_t(Q), no saturation or full-rank upper bound, and no degree-three/four rational-curve non-existence statement.",
+      "canonical_source": "elkies-k3/R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-R17",
+        "EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES",
+        "EC-K3-ELKIES-2026-LOW-GENUS-COVER-QUOTIENTS",
+        "EC-K3-R17-RANK28-GENUS1-BISECTION-PILOT"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_multisection_visibility_filtration.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:210c1a57c63c23738e1c0d132a65369c7541f9dd428ec7e1539b21d4a7634033",
+      "software_lock": [
+        "elkies-k3/scripts/certify_r17_multisection_visibility_filtration.sage",
+        "artifacts/generated-results/elkies-k3-r17-multisection-visibility-filtration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_exceptional_specialization_relations_v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_deep_cover_exceptional_quotients_v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-K3-RES-QBC-E6-II-RANK3-RHO19",
       "kind": "theorem",
       "state": "proved",
@@ -37459,6 +37498,49 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-ROOTLESS-GENUS-MASS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Rootless genus mass from local ADE representation averages",
+      "scope": "For any positive even genus G, let mu_0 be the reciprocal-automorphism mass of its rootless classes and let a_1 be the q coefficient of its mass-normalized weighted genus theta series in the convention Q(x)=x^2/2. Since every rootful lattice has at least two signed roots, mu_0/mass(G)>=1-a_1/2, so a_1<2 is a sufficient local-density certificate for m(G)=0. More generally, stratify the genus by its full ADE root lattice R_j, let mu_j be each stratum mass, and let A_i be the weighted representation total of R_i. Then A_i=sum_j r(R_j,R_i)mu_j; the representation matrix is triangular with diagonal |O(R_i)|, and Siegel representation averages compute A_i from local densities. Thus mu_0, and hence whether m(G)=0, is determined by a finite local ADE mass inversion. An exact rank-17 checker computes first-root moments 2913380886349/59299224796, 7957563723128755857618/562456712956783562285, and 4967763637986279936/352882035745379473 for determinants 78, 948, and 950. All exceed two, so the cheap gate is inconclusive on all three controls. For determinant 78 the local value exactly equals the independent weighted sum over the complete 1549-class rootful census. No higher-degree ADE average, exact rootless mass for determinant 948 or 950, generic composite-determinant class enumerator, equation, or J1 classification is supplied.",
+      "canonical_source": "elkies-k3/ROOTLESS_GENUS_THEORY_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL",
+        "EC-K3-H3-ROOTLESS-J2-MINIMAL-ACCESSIBILITY",
+        "EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER",
+        "external: King, A mass formula for unimodular lattices with no roots, Proposition 1"
+      ],
+      "checker": "elkies-k3/scripts/certify_rootless_genus_first_moment.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d468c4abfb443228c7f378e4755010f6df0ec86710dc365e61c33b9838abd621",
+      "software_lock": [
+        "elkies-k3/scripts/certify_rootless_genus_first_moment.sage",
+        "artifacts/generated-results/elkies-k3-rootless-genus-first-moment-v1.json",
+        "elkies-k3/data/lattice/e6_rank4_det78_frame.txt",
+        "elkies-k3/data/lattice/rank17_gram.txt",
+        "artifacts/generated-results/elkies-k3-ns0024-new-rootless-source-route-v1.json",
+        "artifacts/generated-results/elkies-k3-e6-rank4-det78-niemeier-frames-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+        "elkies-k3/LITERATURE_AND_NOVELTY_MAP_2026-09-03.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/ROOTLESS_GENUS_THEORY_2026-09-03.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE",
       "kind": "corollary",
       "state": "proved",
@@ -37974,6 +38056,43 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-INTEGRAL-RANK-TRANSFER-MARKED-ROOTLESS-REACHABILITY",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Marked finite-level rootless reachability",
+      "scope": "Let V be a positive-definite rational quadratic space of dimension greater than two, let Lambda be an integral lattice, and encode a finite discriminant/glue marking by a compact-open level subgroup K^lev of O_V(A_f), with all nonunimodular and marking primes in a finite bad set S. Let X(K^lev) be the finite marked class set, s:X(K^lev)->S(K^lev) its spinor-genus map, and S_1(K^lev) the subgroup of good-prime spinor displacements. Suppose the marking functorially determines a graph-glue completion W_x and its physical reverse-mask witnesses. Then a state x reaches a rootless completion by finitely many witness-killing good-prime core-neighbor edges if and only if a rootless state z exists with s(z)=s(x) modulo S_1(K^lev). In fact, for every sufficiently large good prime p with delta_p=s(z)s(x)^(-1), Chenevier's level-structure equidistribution theorem gives a one-step p-neighbor marked-isomorphic to z. Such a rootless child automatically kills every parent physical witness by the zero-layer survival law and has no replacement birth. The compatible primes form nonempty arithmetic progressions; finiteness of the marked class set gives a finite non-effective sufficient prime set for each component, with at most one prime per required element of S_1(K^lev). Thus fixed-prime traps may persist, but no all-good-prime directed trap exists inside a finite marked component containing a rootless state. No effective prime threshold, infinite-vector marking, core-to-elliptic-neighbor lift, equation, or J1 classification is supplied.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE",
+        "external: Chenevier, Statistics for Kneser p-neighbors, Theorem 5.9 and Remarks 5.10--5.11"
+      ],
+      "checker": null,
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes_notes": [
+        "the finite-level marked reverse-mask reachability equivalence remains conjectural",
+        "a directed trap inside a marked component containing a rootless state may be closed under every compatible good prime"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/LITERATURE_AND_NOVELTY_MAP_2026-09-03.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER",
       "kind": "corollary",
       "state": "proved",
@@ -38044,6 +38163,49 @@
       "consumers": [
         "REPRODUCE.md",
         "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Target-free projective birth strata for inverse ADE",
+      "scope": "Let K and C be positive-definite even lattices, H an isotropic graph glue, and p an odd prime coprime to both discriminants. For the p-neighbour K_ell and the canonical discriminant identification iota:A_(K_ell)->A_K, every born completion root (v,c) is equivalent, after z=p*v, to a vector z in K^dual with [z]=p*iota([v]), z^2=p^2*(2-c^2), and nonzero projective reduction red_p(z)=ell. Conversely the norm equation and an adjusted isotropic lift force the affine-kernel orthogonality, so every such scaled-shell vector gives a birth. Hence the no-birth locus is the isotropic projective quadric minus the projective reductions of finitely many scaled dual shells, and the rootless locus additionally removes the hyperplane sections supporting old-root survival. Pairwise products of old and scaled-shell roots give an exact incidence-cell classifier for arbitrary ADE type without a marked target core. An exhaustive checker covers 48 state/prime cases in three mass-closed ternary genera: all 346 predicted physical root sets equal independent materialized-child root sets, and the quadric complements predict exactly all 192 rootless lines. A separate six-line index-two graph-glue control gives 16 nonzero-coset births on every line and again has exact predicted/materialized root-set equality, for 352 comparisons total. The theorem eliminates the affine variable but proves no uniform speedup: expanded rank-15 shells may be as large as the quadric. It does not make the 936 foundry rows ready because their compatible source marking and core/bridge/graph inputs remain absent.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE",
+        "EC-K3-NS0024-INVERSE-ADE-MUTATION"
+      ],
+      "checker": "elkies-k3/scripts/certify_inverse_ade_projective_birth_strata.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5d9000deb43361fdf4908be02031a1c09933dab55763c27ee4bfe2e27423ce4c",
+      "software_lock": [
+        "elkies-k3/scripts/certify_inverse_ade_projective_birth_strata.sage",
+        "artifacts/generated-results/elkies-k3-inverse-ade-projective-birth-strata-v1.json",
+        "artifacts/generated-results/elkies-k3-small-genus-defect-graphs-v2.json",
+        "elkies-k3/scripts/analyze_small_genus_defect_graphs.sage",
+        "elkies-k3/scripts/plan_inverse_ade_targets.sage"
+      ],
+      "supersedes_notes": [
+        "the abstract-ADE no-birth condition necessarily requires a marked target core or candidate-wise affine CVP"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INVERSE_ADE_PROJECTIVE_BIRTH_STRATA_2026-09-03.md",
+        "elkies-k3/INVERSE_ADE_TARGET_PLANNER_2026-09-03.md",
+        "elkies-k3/LITERATURE_AND_NOVELTY_MAP_2026-09-03.md",
         "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "elkies-k3/scripts/README.md"
       ],
@@ -38271,6 +38433,54 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-LOCAL-BRIDGE-MUTATION-H1C",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Local bridge mutation, glue-defect support, and R17 non-cyclic degree-two control",
+      "scope": "For two primitive rank-four-position U embeddings in one Neron--Severi lattice, the relative cross matrix gives raw bridge Grams A^t J A-J and A J A^t-J. Saturating U_0+U_1 splits off either U and proves equal two-sided saturation index, isomorphic saturated bridge discriminant forms, and common determinant c. If K has determinant k and the two graph-glue orders are h_i, then |det NS|=kc/h_i^2, h_0=h_1=h, and c/h divides gcd(c,|det NS|); hence bridge-glue defect is supported only at ambient discriminant primes. Modulo two, each raw Gram has off-diagonal det(A)-1: even det(A) kills the 2-primary bridge discriminant, whereas odd det(A) with odd saturation index forces two 2-primary generators. Full cyclicity still requires the odd-primary Smith condition; the saturated degree-two matrix [[2,3],[6,8]] gives Z/3+Z/21. In the 42-edge corpus, coprimality forces 35 maximal glues and seven shared-prime cases remain computational. On the published R17 surface, v=b_1 and w=b_7-b_12 yield a primitive maximal Z/4+Z/8 bridge and a nef degree-two 4A1/MW13 fibration with physical zero, primitive root span, and trivial torsion. Its 1301 norm-four pairs distinguish it from the historical and physical-q8 H3 4A1 frames, which have 1263 and 1337, so it is not a shortcut between stored route nodes. No Weierstrass equation, J1 classification, or Galois behavior is claimed.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-RELATIVE-U-BRIDGE-LIFTING",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS",
+        "EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE",
+        "EC-K3-ELKIES-2026-R17"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_local_bridge_mutation.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:75113cdcb04d945273f8faf2f993a8e35740ead31d3d7b97a4df2cc5db2dccd4",
+      "software_lock": [
+        "elkies-k3/scripts/certify_r17_local_bridge_mutation.sage",
+        "elkies-k3/data/lattice/short_vector_basis_gram.txt",
+        "elkies-k3/data/lattice/short_vector_basis_coords.txt",
+        "elkies-k3/data/lattice/rank17_gram.txt",
+        "artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json",
+        "artifacts/generated-results/elkies-k3-h3-pinned-r17-current-suffix-marking.json",
+        "artifacts/generated-results/elkies-k3-h3-q4o164-c8-q8o376-4a1-old_zero-frame.txt",
+        "artifacts/generated-results/elkies-k3-r17-local-bridge-mutation-v1.json"
+      ],
+      "supersedes_notes": [
+        "low degree plus cyclic ambient discriminant forces cyclic bridge discriminant",
+        "even relative-U determinant alone forces full bridge cyclicity",
+        "the new R17 4A1 frame is the historical H3 4A1 stage"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION",
       "kind": "reproduction",
       "state": "proved",
@@ -38305,6 +38515,45 @@
       "consumers": [
         "REPRODUCE.md",
         "elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-UNIVERSAL-DEGREE2-FIBRATION-COMPILER",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Universal marked degree-two chord compiler for elliptic K3 fibrations",
+      "scope": "Let X/P1 be a characteristic-zero relatively minimal Jacobian elliptic K3 with old fibre F and zero O, and let D be a k-defined primitive nef isotropic divisor with D.F=2. Then D has a unique trace section tau and normalized integral vertical correction V. The marked Neron--Severi data determines their classes and coefficients; trace coordinates are obtained by finite group-law additions from supplied equation-level section generators, not from an abstract lattice alone. The pencil H0(D) is the two-dimensional kernel of a finite resolved valuation matrix inside the two generic-fibre channels 1 and (y+y(tau))/(x-x(tau)), or 1 and x for trace zero; no generic surface-wide monomial Riemann--Roch solve is needed. For tau=(Nx/h^2,Ny/h^3), c=O.tau=deg h, and the least explicit effective padding kF-V, the nonzero-trace budget has deg a<=k+2c, deg b<=k+c-2, raw coefficient count 2k+3c, congruence rank 2c, chord ambient dimension 2k+c, and vertical codimension 2k+c-2. The resulting double cover has old-base binary-quartic degree four and new-base degree at most four, so its relative Jacobian has raw new-base degree bounds (8,12,24). A supplied effective rational curve S with S.D=1 points the quartic and fixes the new origin; full Neron--Severi marking still requires exact resolved incidences and unimodular transport. The theorem requires the trace representation, physical component multiplicities, and resolved charts, does not infer local matrices from ADE type alone, and gives input-sensitive rather than absolute constant complexity because fibrewise translations have unbounded trace height.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "external: Brandhorst--Elkies, Equations for a K3 Lehmer map, Section 2.3",
+        "external: Shioda, On the Mordell--Weil lattices, Lemma 5.1"
+      ],
+      "checker": "elkies-k3/scripts/verify_elliptic_neighbor_compiler.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:419807f4f0f2fb08575294aecb57f10a909b7e4969e866ecb3e8b3e048d58180",
+      "software_lock": [
+        "elkies-k3/scripts/elliptic_neighbor_compiler.sage",
+        "elkies-k3/scripts/verify_elliptic_neighbor_compiler.sage",
+        "elkies-k3/scripts/elliptic_neighbor_compiler_field_generic.sage",
+        "elkies-k3/scripts/verify_elliptic_neighbor_compiler_field_generic.sage"
+      ],
+      "supersedes_notes": [
+        "a marked old-degree-two fibration step still requires a generic surface-wide Riemann--Roch solve once its trace and resolved vertical data are supplied"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/README.md",
+        "elkies-k3/LITERATURE_AND_NOVELTY_MAP_2026-09-03.md",
         "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],

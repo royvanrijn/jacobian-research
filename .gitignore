@@ -92,6 +92,7 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-e6a1-orbit103-specialization-rank-probes-v1.json
 !/artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json
 !/artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json
+!/artifacts/generated-results/elkies-k3-r17-multisection-visibility-filtration-v1.json
 !/artifacts/generated-results/elkies-k3-r17-rank28-simultaneous-splitting-h10000-v1.json
 !/artifacts/generated-results/elkies-k3-r17-rank28-mixed-trace-splitting-h10000-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-glue-census-v1.json
@@ -117,6 +118,7 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-inverse-ade-foundry-readiness-v1.json
 !/artifacts/generated-results/elkies-k3-inverse-ade-target-planner-benchmark-v2.json
 !/artifacts/generated-results/elkies-k3-inverse-ade-foundry-readiness-v2.json
+!/artifacts/generated-results/elkies-k3-inverse-ade-projective-birth-strata-v1.json
 !/artifacts/generated-results/elkies-k3-rootless-j1-uniform-bound-v1.json
 !/artifacts/generated-results/elkies-k3-arithmetic-rank-transfer-controls-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json

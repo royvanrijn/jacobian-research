@@ -1538,13 +1538,22 @@ The canonical theorem and full proof boundary are in
 
 ### Generic neighbour and compiler infrastructure
 
+<!-- status-consumer: EC-K3-UNIVERSAL-DEGREE2-FIBRATION-COMPILER fd4b5d71c9497eaf -->
+
 - `exact_neighbor_examples.sage`
 - `run_exact_neighbor_engine.sage`
 - `verify_exact_neighbor_engine.sage`
+- `elliptic_neighbor_compiler.sage`
+- `verify_elliptic_neighbor_compiler.sage`
 - `elliptic_neighbor_compiler_field_generic.sage`
 - `verify_elliptic_neighbor_compiler_field_generic.sage`
 
-These are reusable infrastructure rather than a claim that one particular route is best.
+The core compiler includes the normalized vertical-padding calculation, the
+exact Brandhorst--Elkies coefficient budget for a fully marked old-degree-two
+pencil, and both the nonzero-trace chord and trace-zero `(1,x)` quartic
+branches.  The resolved local quotient data remain explicit inputs; no
+Kodaira/ADE label is silently promoted to a local module.  These are reusable
+infrastructure rather than a claim that one particular route is best.
 
 ### H3 source-family recovery
 
@@ -2823,6 +2832,25 @@ maximum MW rank 7.  The faster `--rootless-obstruction --check` mode is an
 independent residual-rank cross-check, not the primary class certificate.  See
 [`../E6_RANK4_DET78_NIEMEIER_CLASSIFICATION_2026-09-03.md`](../E6_RANK4_DET78_NIEMEIER_CLASSIFICATION_2026-09-03.md).
 
+## Rootless genus theory
+
+<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS 2f5b874c0c22133b -->
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  certify_rootless_genus_first_moment.sage --check
+```
+
+`certify_rootless_genus_first_moment.sage` is an **ACTIVE_PROOF** for the
+degree-one Siegel gate in Theorem H6.  It computes the exact mass-normalized
+signed-root averages of the determinant-78, 948, and 950 rank-17 genera from
+their bad-prime local densities.  It independently recomputes the
+determinant-78 average from the complete 1,549-class census and obtains exact
+agreement.  All three averages exceed two, so this checker records the cheap
+criterion as inconclusive; it does not implement the higher-degree ADE
+representation-mass inversion.  See
+[`../ROOTLESS_GENUS_THEORY_2026-09-03.md`](../ROOTLESS_GENUS_THEORY_2026-09-03.md).
+
 ## Arithmetic rank transfer
 
 <!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 3031dd2365a29cd5 -->
@@ -2860,6 +2888,7 @@ The alternate application proof is
 ## Integral rank-transfer glue calculus
 
 <!-- status-consumer: EC-K3-RELATIVE-U-BRIDGE-LIFTING 800e22abf69b91aa -->
+<!-- status-consumer: EC-K3-LOCAL-BRIDGE-MUTATION-H1C 2db88fff92ef48b9 -->
 <!-- status-consumer: EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION d57544697149506f -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 7eeeeaa80d9b2bf3 -->
 <!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
@@ -2877,12 +2906,14 @@ The alternate application proof is
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH a755a3956c4c97cb -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE d32b35b66a35627c -->
 <!-- status-consumer: EC-K3-NS0024-INVERSE-ADE-MUTATION 5c56f07d14129837 -->
+<!-- status-consumer: EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA b4a7edb452e6dcc7 -->
 
 ```bash
 python3 build_integral_rank_transfer_claim_provenance.py --check
 sage -python certify_integral_rank_transfer_bridge_reglue.sage --check
 sage -python certify_integral_rank_transfer_bridge_reglue.sage \
   --relative-u-output ../../artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json
+sage -python certify_r17_local_bridge_mutation.sage --check
 sage -python benchmark_integral_rank_transfer_bridge_predictor.sage --check
 sage -python benchmark_e6_det78_prospective_bridge_predictor.sage --check
 sage -python certify_integral_rank_transfer_theta_convolution.sage --check
@@ -2892,6 +2923,7 @@ sage -python certify_integral_rank_transfer_weil_compression.sage --check
 sage -python generate_integral_rank_transfer_masked_core_neighbors.sage --check
 sage -python certify_integral_rank_transfer_q80_defect_birth_death.sage --check
 sage -python certify_integral_rank_transfer_root_system_signature.sage --check
+sage -python certify_inverse_ade_projective_birth_strata.sage --check
 sage -python certify_integral_character_glue_calculus.sage --check
 sage -python certify_r17_norm12_103b2_mw_glue.sage \
   --skip-specialization-saturation --check
@@ -2909,7 +2941,12 @@ replacement, graph glue, and exact root transfer for all 42 selected marked
 corridor edges.  Its opt-in relative-`U` replay additionally constructs the
 cross matrix `A`, verifies `Gram(w_1,w_2)=A^t J A-J`, recovers both saturated
 bridges and the old-fibre degree, and checks the determinant square-index law
-in both orientations on all 42 edges.  The character checker exhausts the integral E6 `2+1` and
+in both orientations on all 42 edges.  The local-mutation checker strengthens
+this to equal two-sided saturation and glue order, verifies that coprimality
+forces maximal glue on 35 of the 42 edges, and certifies the new published-R17
+degree-two `4A1/MW13` fibration with maximal non-cyclic `ZZ/4+ZZ/8` bridge.
+Its exact theta coefficients distinguish the new frame from both stored H3
+`4A1` frames.  The character checker exhausts the integral E6 `2+1` and
 `2+2` involution graph glues.  The norm-twelve checker gives the exact
 `0x103b2` cover-level visible lattice and preserves rank at least 18 at the
 specialization.  The pinned artifact also proves the displayed specialized
@@ -3074,6 +3111,17 @@ roots, and recognizes the six survivors as `3A1+A2`.  Materializing the child
 afterward gives the identical physical root set.  This is an exact inverse
 predicate and control, not yet an all-line solver or a complexity result.
 
+`certify_inverse_ade_projective_birth_strata.sage --check` eliminates the
+affine variable by scaling a born vector `v` to the parent dual-shell vector
+`z=p*v` and retaining its projective reduction modulo `p`.  It exhausts all
+346 isotropic lines in 48 state/prime cases from the three mass-closed
+ternary controls; every predicted root set equals the independently
+materialized child root set, and the forbidden-stratum complement gives all
+192 rootless lines.  It also exhausts a six-line index-two graph-glue control
+where every line has 16 births in the nonzero glue coset; the predicted and
+materialized completed-child root sets again agree, for 352 exact comparisons
+overall.  Expanding a rank-15 scaled shell has no claimed complexity bound.
+
 `derive_r17_genus_one_bisection_twist_section.sage` descends the certified
 `0x103b2` split bisection to an exact height-eight section on the quartic
 twist. `export_elkies_2026_twist_polynomial_sections_modp.sage` accepts its
@@ -3172,6 +3220,23 @@ genus-one pencil member through each of the eleven exact rank-28 targets.  It
 certifies quartic branching, exact Kummer barcodes, lifted sections and
 height-16 anti-invariant independence.  Its declared boundary is one trace
 template and one known positive-control fibre, not a rank-32 search.
+
+## Published-R17 multisection-visibility filtration
+
+<!-- status-consumer: EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION 2f41e9f4236f6c9e -->
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_r17_multisection_visibility_filtration.sage \
+  --check
+```
+
+This reuses the exact common norm-eight trace and fits its genus-one
+bisection pencil through all 38 displayed exceptional generators at the four
+rank-25--28 controls.  It records the literal all-genus filtration, which is
+already full in degree two, separately from the finite rational-curve
+filtration.  The latter has a complete degree-two atlas but only bounded
+degree-three and degree-four equation subatlases.
 
 ## Published-R17 frozen-quartic simultaneous splitting
 

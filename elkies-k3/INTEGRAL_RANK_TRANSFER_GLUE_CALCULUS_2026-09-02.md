@@ -237,11 +237,33 @@ two/three-prime union reaches zero from every state.  Exhaustive set selection
 shows that one of primes `5`, `7`, `11`, or `13` already suffices in each
 control, with the exact minimizers depending on the genus.  All three genera
 have one proper spinor genus, so the fixed-prime traps are finer than spinor
-separation.  The resulting candidate global invariant is the marked
-spinor/level component for eventual access, refined at small primes by the
-physical-witness incidence profile.  This is Theorem H0i.2 and the
+separation.  This is Theorem H0i.2 and the
 [`small-genus reachability certificate`](../artifacts/generated-results/elkies-k3-small-genus-defect-graphs-v2.json),
-not yet a marked rank-15 theorem.
+which is a complete finite control rather than a universal small-prime bound.
+
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MARKED-ROOTLESS-REACHABILITY 354cc7a9fc81f33e -->
+
+The all-good-prime statement is now exact at finite discriminant/glue level.
+Such a marking has compact-open stabilizer after its finitely many support
+primes are isolated, so it is a level structure in Chenevier's class set.
+Theorem 5.9 of his `p`-neighbour statistics and the physical zero-layer
+survival law prove Theorem H0i.3:
+
+```text
+finite compatible-prime zero-support reachability
+<=> a zero-support state exists in the same marked spinor/level component.
+```
+
+The reverse implication is stronger than a path: every sufficiently large
+prime with the required spinor displacement gives a direct neighbour in the
+chosen rootless marked class.  Such an edge kills every parent witness,
+because any survivor would remain a root in the zero affine layer of the
+rootless child.  Finiteness of the marked class set gives a finite sufficient
+prime set for the whole component.  The result is non-effective and does not
+cover infinite markings, full embedded-core or chamber data, elliptic-neighbour
+equations, or a uniform small-prime bound.  Thus eventual access is controlled
+by the marked spinor/level component, while actual small-prime SCCs and
+distances are controlled by the physical-witness incidence profile.
 
 Those same physical witnesses now transfer more than zero versus nonzero
 support.  Retaining every completion root `r=k+c` and the pairwise metric

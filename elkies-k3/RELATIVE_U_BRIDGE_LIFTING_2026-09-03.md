@@ -1,6 +1,7 @@
 # Cross-Gram reconstruction of relative `U`-embeddings and the first NS0024 search
 
 <!-- status-consumer: EC-K3-RELATIVE-U-BRIDGE-LIFTING 800e22abf69b91aa -->
+<!-- status-consumer: EC-K3-LOCAL-BRIDGE-MUTATION-H1C 2db88fff92ef48b9 -->
 <!-- status-consumer: EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION d57544697149506f -->
 
 Date: 2026-09-03
@@ -24,6 +25,28 @@ regression verifies the square-index formula but does not supply an example
 with a nontrivial correction.  The theorem note includes a separate exact
 binary example with index four.  The exact regression record is
 [`elkies-k3-relative-u-bridge-lifting-regression-v1.json`](../artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json).
+
+The two-sided strengthening is Theorem H-1c.  The saturation index is the
+same in both directions, the saturated bridges have isomorphic discriminant
+forms, and their graph-glue orders agree.  If their common determinant is
+`c`, the common glue order is `h`, and `D=|det NS|`, then
+
+```text
+c/h divides gcd(c,D).
+```
+
+Thus 35 of the 42 stored maximal glues are forced by coprimality.  Seven
+shared-prime cases still need their exact glue calculation.
+
+The parity conclusion also needs an odd-primary qualification.  Even relative
+determinant kills the 2-primary bridge discriminant, but does not force
+cyclicity at odd primes.  A saturated degree-two lattice counterexample has
+`A=[[2,3],[6,8]]` and bridge Smith form `diag(3,21)`.  Conversely, odd
+relative determinant and odd saturation index force two 2-primary generators.
+The exact R17 control realizes the latter branch geometrically: it gives a nef
+`4A1/MW13` fibration with maximal non-cyclic `ZZ/4+ZZ/8` bridge glue.  Its
+frame is not isometric to either stored H3 `4A1` frame, so it is a new local
+frame rather than a shortcut between the historical nodes.
 
 ## The finite theorem
 
@@ -59,6 +82,30 @@ formalism.  No source checked states the displayed cross-pairing identity as a
 named theorem, but the proof is elementary integral lattice algebra and the
 identity is treated here as a tailored lemma, not a novelty claim.  The new
 results are the 84-presentation replay and the bounded NS0024 obstruction.
+
+Theorem H-1c is likewise recorded as a tailored consequence of Nikulin graph
+glue and unimodular splitting.  Its R17 instance, the 35/42 forced-maximal
+count, and the comparison with the two stored H3 `4A1` frames are new exact
+computations.
+
+## R17 local mutation replay
+
+Generate and byte-check the exact certificate with
+
+```bash
+sage -python elkies-k3/scripts/certify_r17_local_bridge_mutation.sage
+sage -python elkies-k3/scripts/certify_r17_local_bridge_mutation.sage --check
+```
+
+The output is
+[`elkies-k3-r17-local-bridge-mutation-v1.json`](../artifacts/generated-results/elkies-k3-r17-local-bridge-mutation-v1.json).
+Its pinned SHA-256 is
+`71a49d17e95ac5861822530b3476276ab3fee4844f2727cb5af51f45f6bcad96`;
+the record names SageMath 10.9 and hashes every input.
+It checks the symbolic raw-Gram and parity identities, the 42-edge support
+count, the primitive R17 bridge, both saturations and graph-glue orders, the
+nef/physical-zero gate, root span and MW rank, and exact frame invariants.  It
+does not construct a Weierstrass equation or decide a `J1` orbit.
 
 ## NS0024 prospective result
 
@@ -141,10 +188,12 @@ The input frame is
 ## Proof boundary
 
 Proved here: the relative-`U` parameterization, automatic primitivity, the
-square-index bridge correction, bounded finiteness, the 42-hop regression,
-and the stated exact first-edge nonexistence boxes.
+square-index bridge correction, its two-sided saturation/glue strengthening,
+the corrected 2-primary parity law, bounded finiteness, the 42-hop regression,
+the exact R17 maximal non-cyclic local mutation, and the stated exact
+first-edge nonexistence boxes.
 
 Not proved here: a global degree bound, a bound on `t`, existence outside the
 audited boxes, nefness or zero effectivity for an un-audited marking, the
-horizontal-wall certificate, an equation, or a rational map for the new
-NS0024 completion.
+horizontal-wall certificate, an equation or `J1` identification for the new
+R17 fibration, or a rational map for the new NS0024 completion.

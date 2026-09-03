@@ -105,7 +105,7 @@ def integer_quadratic_norm(value, gram):
     )
 
 
-def streaming_short_vectors(gram, *, bound):
+def streaming_short_vectors(gram, *, bound, representative_key=None):
     """Stream every vector of integral norm at most ``bound``.
 
     PARI's ``qfminim`` materializes all short vectors.  The alternate q80
@@ -148,6 +148,7 @@ def streaming_short_vectors(gram, *, bound):
     signed_counts = Counter()
     masks_by_norm = {value: set() for value in range(2, bound+1, 2)}
     representatives = {}
+    representative_keys = {}
     multiplicities = Counter()
     # The exact norm is integral and even.  Thus the 1/4 guard cannot include
     # a norm above ``bound``; it only makes floating branch pruning generous.
@@ -166,9 +167,14 @@ def streaming_short_vectors(gram, *, bound):
             if exact_value == bound:
                 multiplicities[orbit] += 1
                 candidate = tuple(coordinates)
-                prior = representatives.get(orbit)
-                if prior is None or candidate < prior:
+                candidate_key = (
+                    candidate if representative_key is None
+                    else representative_key(candidate)
+                )
+                prior_key = representative_keys.get(orbit)
+                if prior_key is None or candidate_key < prior_key:
                     representatives[orbit] = candidate
+                    representative_keys[orbit] = candidate_key
             return
 
         center = sum(

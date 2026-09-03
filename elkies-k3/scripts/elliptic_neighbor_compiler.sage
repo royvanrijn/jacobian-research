@@ -267,6 +267,130 @@ def certify_generic_fibre_divisor_decomposition(
     }
 
 
+def degree_two_vertical_padding(fiber_twist, fibre_blocks=()):
+    """Compute the least full-fibre padding for a normalized vertical divisor.
+
+    Write the vertical correction of a marked degree-two divisor as
+
+    ``V = n*F + sum(v_{p,i}*Theta_{p,i})``,
+
+    where only nonidentity components are displayed.  A block is a triple
+    ``(name, multiplicities, coefficients)`` in a single reducible fibre.
+    If that fibre is padded by ``r_p`` copies of its full Kodaira divisor,
+    effectivity requires ``r_p>=0`` on the identity component and
+    ``r_p*m_i-v_i>=0`` on every displayed component.  Hence
+
+    ``r_p=max(0,max_i ceil(v_i/m_i))``.
+
+    After these forced local paddings, an additional smooth fibre absorbs a
+    negative remaining full-fibre coefficient.  The returned ``padding`` is
+    the least nonnegative ``k`` for which ``k*F-V`` has this explicit
+    effective representative.  The routine uses supplied physical Kodaira
+    multiplicities; it never infers them from an ADE label.
+    """
+    fiber_twist = ZZ(fiber_twist)
+    local_padding = []
+    total_local = ZZ(0)
+    seen = set()
+    for block in fibre_blocks:
+        if len(block) != 3:
+            raise ValueError(
+                "vertical fibre block must be (name, multiplicities, coefficients)"
+            )
+        name, multiplicities, coefficients = block
+        name = str(name)
+        if name in seen:
+            raise ValueError("duplicate vertical fibre block {}".format(name))
+        seen.add(name)
+        multiplicities = tuple(ZZ(value) for value in multiplicities)
+        coefficients = tuple(ZZ(value) for value in coefficients)
+        if not multiplicities or len(multiplicities) != len(coefficients):
+            raise ValueError("vertical fibre block has incompatible component data")
+        if any(value <= 0 for value in multiplicities):
+            raise ValueError("Kodaira component multiplicities must be positive")
+        ceilings = tuple(-((-value) // multiplicity) for value, multiplicity in zip(
+            coefficients, multiplicities
+        ))
+        padding = max((ZZ(0),) + ceilings)
+        complement = tuple(
+            int(padding*multiplicity-value)
+            for multiplicity, value in zip(multiplicities, coefficients)
+        )
+        if any(value < 0 for value in complement):
+            raise ArithmeticError("vertical padding failed to produce an effective complement")
+        total_local += padding
+        local_padding.append({
+            "name": name,
+            "padding": int(padding),
+            "component_multiplicities": tuple(int(value) for value in multiplicities),
+            "vertical_coefficients": tuple(int(value) for value in coefficients),
+            "effective_complement_coefficients": complement,
+        })
+    padding = max(ZZ(0), fiber_twist+total_local)
+    smooth_padding = padding-fiber_twist-total_local
+    if smooth_padding < 0:
+        raise ArithmeticError("full-fibre padding failed to produce an effective complement")
+    return {
+        "fiber_twist": int(fiber_twist),
+        "local_fibre_padding": tuple(local_padding),
+        "smooth_fibre_padding": int(smooth_padding),
+        "padding": int(padding),
+    }
+
+
+def degree_two_chord_coefficient_bounds(zero_intersection, vertical_padding):
+    """Return the exact Brandhorst--Elkies two-channel coefficient budget.
+
+    Let ``c=O.P`` for the marked trace section and choose ``k>=0`` with
+    ``kF-V`` effective.  On a finite-pole short K3 chart write
+    ``P=(Nx/h^2,Ny/h^3)`` with ``deg(h)=c``.  Proposition 2.17 of
+    Brandhorst--Elkies represents the ambient ``H^0(O+P+kF)`` by
+
+    ``L=a*(x*h^2-Nx)+b*(y*h^3+Ny)``
+
+    with ``deg(a)<=k+2c``, ``deg(b)<=k+c-2``, followed by the fixed
+    congruence ``a*Nx-b*Ny=0 mod h^2``.  For ``c>0`` the raw coefficient
+    count is ``2k+3c``, the congruence has rank ``2c``, and the chord ambient
+    has dimension ``2k+c``.  The same count holds for ``c=0`` once ``k>=1``;
+    the modulus is then the unit ideal and contributes no rows.
+
+    This is an input-sensitive exact bound, not a constant complexity claim.
+    The trace-zero case ``P=O`` uses the separate basis ``(1,x)``.
+    """
+    c = ZZ(zero_intersection)
+    k = ZZ(vertical_padding)
+    if c < 0 or k < 0:
+        raise ValueError("zero intersection and vertical padding must be nonnegative")
+    if c == 0 and k == 0:
+        raise ValueError("the disconnected c=k=0 ambient is not a chord compiler space")
+    degree_a = k+2*c
+    degree_b = k+c-2
+    coefficients_a = degree_a+1
+    coefficients_b = max(ZZ(0), degree_b+1)
+    raw = coefficients_a+coefficients_b
+    congruence_rank = 2*c
+    ambient = raw-congruence_rank
+    expected = 2*k+c
+    if ambient != expected:
+        raise ArithmeticError("two-channel coefficient count disagrees with Riemann--Roch")
+    if ambient < 2:
+        raise ValueError(
+            "the declared ambient cannot contain a two-dimensional isotropic pencil"
+        )
+    return {
+        "zero_intersection": int(c),
+        "vertical_padding": int(k),
+        "degree_a_max": int(degree_a),
+        "degree_b_max": int(degree_b),
+        "coefficient_count_a": int(coefficients_a),
+        "coefficient_count_b": int(coefficients_b),
+        "raw_coefficient_count": int(raw),
+        "pole_congruence_rank": int(congruence_rank),
+        "chord_ambient_dimension": int(ambient),
+        "target_vertical_codimension": int(ambient-2),
+    }
+
+
 def certify_generic_fibre_horizontal_support(
     gram,
     divisor,
@@ -1905,6 +2029,81 @@ def compile_degree_two_chord_hop(
         "parameter": parameter,
         "pencil_determinant": determinant,
         "chord": chord,
+        "radicand": radicand,
+        "binary_quartic": quartic,
+        "square_factor": square_factor,
+        "jacobian_a": coefficient_a,
+        "jacobian_b": coefficient_b,
+        "jacobian_discriminant": discriminant,
+        "transported_parameter_values": transported_values,
+    }
+
+
+def compile_degree_two_trace_zero_hop(
+    old_base_ring,
+    parameter,
+    a0,
+    b0,
+    a1,
+    b1,
+    old_a,
+    old_b,
+    marked_x_coordinates=(),
+):
+    """Compile the trace-zero degree-two pencil in the ``(1,x)`` frame.
+
+    Solving ``parameter=(a1+b1*x)/(a0+b0*x)`` gives ``x=N/D`` with
+    ``N=a1-parameter*a0`` and ``D=parameter*b0-b1``.  For
+    ``y^2=x^3+old_a*x+old_b``, putting ``w=y*D^2`` gives the polynomial
+
+    ``w^2=D*(N^3+old_a*N*D^2+old_b*D^3)``.
+
+    Both ``N`` and ``D`` are linear in the new parameter, so this is the
+    trace-zero quartic branch of the universal degree-two compiler.  As in
+    the nonzero-trace routine, only exact square factors are removed.
+    ``marked_x_coordinates`` contains explicit ``(name,x_value)`` pairs for
+    old sections whose new-base values should be transported.
+    """
+    old_base_field = old_base_ring.fraction_field()
+    parameter, a0, b0, a1, b1, old_a, old_b = tuple(
+        old_base_field(value)
+        for value in (parameter, a0, b0, a1, b1, old_a, old_b)
+    )
+    determinant = a0*b1-a1*b0
+    if not determinant:
+        raise ValueError("degree-two pencil generators are dependent in the (1,x) frame")
+    numerator = a1-parameter*a0
+    denominator = parameter*b0-b1
+    if not denominator:
+        raise ValueError("trace-zero pencil is independent of x")
+    x_value = numerator/denominator
+    radicand = denominator * (
+        numerator**3
+        + old_a*numerator*denominator**2
+        + old_b*denominator**3
+    )
+    if radicand != denominator**4 * (
+        x_value**3+old_a*x_value+old_b
+    ):
+        raise ArithmeticError("trace-zero quartic clearing identity failed")
+    quartic, square_factor = squarefree_binary_quartic(radicand, old_base_ring)
+    coefficient_a, coefficient_b, discriminant = binary_quartic_jacobian_coefficients(
+        quartic
+    )
+    transported_values = {}
+    for name, marked_x in marked_x_coordinates:
+        name = str(name)
+        if name in transported_values:
+            raise ValueError("duplicate transported marked divisor {}".format(name))
+        transported_values[name] = pencil_value_on_marked_section(
+            a0, b0, a1, b1, old_base_field(marked_x)
+        )
+    return {
+        "parameter": parameter,
+        "pencil_determinant": determinant,
+        "x": x_value,
+        "x_numerator": numerator,
+        "x_denominator": denominator,
         "radicand": radicand,
         "binary_quartic": quartic,
         "square_factor": square_factor,

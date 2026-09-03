@@ -362,6 +362,53 @@ except ValueError as error:
     assert "vertical" in str(error)
 else:
     raise AssertionError("positive-degree vertical support was accepted")
+
+# The universal degree-two budget is determined by the trace/vertical data,
+# not by a generic surface monomial search.  The norm-twelve direct hop has
+# c=4 and V=-F: zero nonnegative ambient padding gives a 12-to-4 chord space,
+# after which the effective complement F contributes the final two cuts.
+padding_minus_fibre = degree_two_vertical_padding(-1)
+assert padding_minus_fibre == {
+    "fiber_twist": -1,
+    "local_fibre_padding": (),
+    "smooth_fibre_padding": 1,
+    "padding": 0,
+}
+norm_twelve_budget = degree_two_chord_coefficient_bounds(4, 0)
+assert norm_twelve_budget["degree_a_max"] == 8
+assert norm_twelve_budget["degree_b_max"] == 2
+assert norm_twelve_budget["raw_coefficient_count"] == 12
+assert norm_twelve_budget["pole_congruence_rank"] == 8
+assert norm_twelve_budget["chord_ambient_dimension"] == 4
+assert norm_twelve_budget["target_vertical_codimension"] == 2
+
+# A physical additive-fibre block uses its supplied Kodaira multiplicities.
+# Padding by two full fibres leaves the displayed effective complement and a
+# positive full-fibre twist forces one further smooth-fibre copy.
+mixed_padding = degree_two_vertical_padding(
+    1, (("I0star", (1, 2, 1), (2, 3, -1)),)
+)
+assert mixed_padding["local_fibre_padding"][0]["padding"] == 2
+assert mixed_padding["local_fibre_padding"][0][
+    "effective_complement_coefficients"
+] == (0, 1, 3)
+assert mixed_padding["padding"] == 3
+assert mixed_padding["smooth_fibre_padding"] == 0
+assert degree_two_chord_coefficient_bounds(3, 2)[
+    "chord_ambient_dimension"
+] == 7
+try:
+    degree_two_chord_coefficient_bounds(0, 0)
+except ValueError as error:
+    assert "disconnected" in str(error)
+else:
+    raise AssertionError("the disconnected trace ambient was accepted")
+try:
+    degree_two_chord_coefficient_bounds(1, 0)
+except ValueError as error:
+    assert "two-dimensional" in str(error)
+else:
+    raise AssertionError("a one-dimensional ambient was accepted for a pencil")
 # Higher degree inputs retain a literal repeated-section representative until
 # the caller has separately certified its group-law/chord conversion.
 supported_divisor = 3*decomposition_zero-2*decomposition_fibre
@@ -522,6 +569,31 @@ except ValueError as error:
     assert "does not lie" in str(error)
 else:
     raise AssertionError("off-curve marked point was accepted")
+
+# Trace zero uses the (1,x) frame rather than a chord through a second point.
+# Its raw clearing identity is visibly quartic in the new parameter and must
+# pass through the same squareclass-preserving quartic/Jacobian gate.
+new_parameter_ring = PolynomialRing(QQ, "u")
+new_parameter_field = new_parameter_ring.fraction_field()
+u_parameter = new_parameter_field.gen()
+trace_zero_old_base_ring = PolynomialRing(new_parameter_field, "s")
+s_old = trace_zero_old_base_ring.gen()
+trace_zero_hop = compile_degree_two_trace_zero_hop(
+    trace_zero_old_base_ring,
+    u_parameter,
+    1, 1, s_old, 0,
+    1, 1,
+    marked_x_coordinates=(("x=0", 0),),
+)
+assert trace_zero_hop["x"] == (s_old-u_parameter)/u_parameter
+assert trace_zero_hop["radicand"] == u_parameter * (
+    (s_old-u_parameter)**3
+    +(s_old-u_parameter)*u_parameter**2
+    +u_parameter**3
+)
+assert trace_zero_hop["binary_quartic"].degree() in (3, 4)
+assert trace_zero_hop["jacobian_discriminant"]
+assert trace_zero_hop["transported_parameter_values"]["x=0"] == s_old
 
 # A resolved binary-quartic point transports to the exact Jacobian through
 # covariants; this is a coordinate transport, never a search for a child

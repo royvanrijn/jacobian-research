@@ -6,7 +6,10 @@ from pathlib import Path
 from sage.all import PolynomialRing, QQ, QuadraticField, matrix
 
 HERE = Path(__file__).resolve().parent
-load(str(HERE / "elliptic_neighbor_compiler_field_generic.sage"))
+COMPATIBILITY_LAYER = HERE / "elliptic_neighbor_compiler_field_generic.sage"
+exec(compile(
+    COMPATIBILITY_LAYER.read_text(), str(COMPATIBILITY_LAYER), "exec"
+))
 
 K = QuadraticField(-3, "j")
 ambient = ("a", "b", "c", "d")

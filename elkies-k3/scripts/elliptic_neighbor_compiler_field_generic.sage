@@ -20,7 +20,8 @@ from pathlib import Path
 from sage.all import QQ, matrix, vector
 
 HERE = Path(__file__).resolve().parent
-load(str(HERE / "elliptic_neighbor_compiler.sage"))
+CORE = HERE / "elliptic_neighbor_compiler.sage"
+exec(compile(CORE.read_text(), str(CORE), "exec"))
 
 
 def quotient_condition(

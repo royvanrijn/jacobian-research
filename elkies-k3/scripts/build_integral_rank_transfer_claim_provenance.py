@@ -56,7 +56,7 @@ SOURCE_LOCI = {
     },
     "KNEIGH": {
         "citation_keys": ["Chenevier2022Statistics", "Voight2023Neighbors"],
-        "locus": "Chenevier, equations (1.2)--(1.3) and large-prime equidistribution; Voight, Section 3 and Theorem 3.18",
+        "locus": "Chenevier, equations (1.2)--(1.3), Examples 5.2--5.4, Theorem 5.9, and Remarks 5.10--5.11; Voight, Section 3 and Theorem 3.18",
     },
     "THETA": {
         "citation_keys": ["BruinierStein2009Weil", "KaneKim2026Cosets", "Mueller2024WeilBasis"],
@@ -73,6 +73,14 @@ SOURCE_LOCI = {
     "MASS": {
         "citation_keys": ["ConwaySloane1982LowDimensional"],
         "locus": "Minkowski--Siegel mass formula; Conway--Sloane (1982), neighbour enumeration and exact mass closure",
+    },
+    "ROOT-MASS": {
+        "citation_keys": ["King2003RootlessMass"],
+        "locus": "King (2003), Proposition 1 and Sections 7--9: prescribed-root-system mass inversion from Siegel representation averages",
+    },
+    "CT-CLASS": {
+        "citation_keys": ["ChenevierTaibi2026Rank29"],
+        "locus": "Chenevier--Taibi (2026), inductive classification, isometry invariants, automorphism data, and complete-list verification",
     },
     "ELKIES-2026": {
         "citation_keys": ["Elkies2026R17I"],

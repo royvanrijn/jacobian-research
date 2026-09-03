@@ -96,6 +96,36 @@ Any determinant-384 construction that supplies the missing even rootless
 rank-17 witness will automatically enter the low-determinant design-frontier
 tier on the next replay.
 
+## Genus-theoretic replacement for the witness gate
+
+<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS 2f5b874c0c22133b -->
+
+The present ranking is witness-first because the imported catalogue supplies
+Gram matrices rather than complete local-genus certificates.  The next
+version should insert a genus gate before explicit class generation.  For
+each discriminant form, compute the rootless mass `mu_0(G)` from weighted
+local ADE representation averages and assign one of three exact states:
+
+```text
+mu_0(G)=0       genus excluded before class generation,
+mu_0(G)>0       genus proved rootless-capable and prioritized,
+not computed    fail-closed UNKNOWN.
+```
+
+The degree-one shortcut `[q]Theta_G<2` is a cheap sufficient certificate;
+selected higher ADE averages give intermediate linear-programming bounds,
+and the full triangular root-system inversion decides the sign of `mu_0`.
+This changes the logical input from “an explicit rootless class was already
+found” to “the local genus is proved capable of containing one.”  Explicit
+Gram witnesses remain necessary later for construction and equation work.
+
+The first exact replay does not yet change the 827-row ranking.  Its weighted
+root means for the determinant-78, 948, and 950 controls are approximately
+`49.13`, `14.15`, and `14.08`, all above two.  Thus these controls require
+higher ADE data; determinant 78 remains the mandatory zero-mass calibration.
+The theorem, exact values, and implementation boundary are in
+[`ROOTLESS_GENUS_THEORY_2026-09-03.md`](ROOTLESS_GENUS_THEORY_2026-09-03.md).
+
 ## Readiness gates and current priority
 
 After the lattice gates, the scorer attaches three fail-closed readiness

@@ -1,0 +1,5695 @@
+{
+  "cases": [
+    {
+      "exact_set_comparisons_pass": 4,
+      "genus": "ternary_det112",
+      "isotropic_quadric_points": 4,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            0,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            1
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            2
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 3,
+      "projected_birth_stratum_points": 2,
+      "rootless_lines_from_quadric_complement": [],
+      "scaled_shell_norm": 18,
+      "scaled_shell_signed_vectors": 6,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "e209f8ed212ab2ec04d27ad738cb0ee5cb3246d1aaec4f07b09f584aa5beac1e",
+      "source_state": "D0"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det112",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            1
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            4
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 5,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          4
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 2,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "e209f8ed212ab2ec04d27ad738cb0ee5cb3246d1aaec4f07b09f584aa5beac1e",
+      "source_state": "D0"
+    },
+    {
+      "exact_set_comparisons_pass": 12,
+      "genus": "ternary_det112",
+      "isotropic_quadric_points": 12,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            0,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            0,
+            9
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            8
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            6,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            6,
+            9
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            7,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            7,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            8,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            9,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            10,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            10,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 11,
+      "projected_birth_stratum_points": 8,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          3,
+          3
+        ],
+        [
+          1,
+          3,
+          8
+        ],
+        [
+          1,
+          7,
+          4
+        ],
+        [
+          1,
+          7,
+          7
+        ]
+      ],
+      "scaled_shell_norm": 242,
+      "scaled_shell_signed_vectors": 18,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "e209f8ed212ab2ec04d27ad738cb0ee5cb3246d1aaec4f07b09f584aa5beac1e",
+      "source_state": "D0"
+    },
+    {
+      "exact_set_comparisons_pass": 4,
+      "genus": "ternary_det112",
+      "isotropic_quadric_points": 4,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            0
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            2
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 3,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "scaled_shell_norm": 18,
+      "scaled_shell_signed_vectors": 2,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "ed6a7903961ab8f0bbcf597ef96a5b379f49589539970fe015d109b4464f6345",
+      "source_state": "D1"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det112",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            0,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            0
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            4
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 5,
+      "projected_birth_stratum_points": 2,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 6,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "ed6a7903961ab8f0bbcf597ef96a5b379f49589539970fe015d109b4464f6345",
+      "source_state": "D1"
+    },
+    {
+      "exact_set_comparisons_pass": 12,
+      "genus": "ternary_det112",
+      "isotropic_quadric_points": 12,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            4,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            4,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            5,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            5,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            7,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            7,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            8,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            8,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            9,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            9,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 11,
+      "projected_birth_stratum_points": 8,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          3,
+          3
+        ],
+        [
+          1,
+          7,
+          6
+        ],
+        [
+          1,
+          7,
+          7
+        ]
+      ],
+      "scaled_shell_norm": 242,
+      "scaled_shell_signed_vectors": 18,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "ed6a7903961ab8f0bbcf597ef96a5b379f49589539970fe015d109b4464f6345",
+      "source_state": "D1"
+    },
+    {
+      "exact_set_comparisons_pass": 4,
+      "genus": "ternary_det112",
+      "isotropic_quadric_points": 4,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            0,
+            2
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            0
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 3,
+      "projected_birth_stratum_points": 2,
+      "rootless_lines_from_quadric_complement": [],
+      "scaled_shell_norm": 18,
+      "scaled_shell_signed_vectors": 6,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "84acff55292e4037df563c003e00c5373adeda7b88dde0bf700097c98c3e5cab",
+      "source_state": "D2"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det112",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            0,
+            2
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            0
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 5,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 2,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "84acff55292e4037df563c003e00c5373adeda7b88dde0bf700097c98c3e5cab",
+      "source_state": "D2"
+    },
+    {
+      "exact_set_comparisons_pass": 12,
+      "genus": "ternary_det112",
+      "isotropic_quadric_points": 12,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            10
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            6,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            6,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            7,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            7,
+            10
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            9,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            9,
+            9
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            10,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            10,
+            9
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 11,
+      "projected_birth_stratum_points": 8,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          6,
+          2
+        ],
+        [
+          1,
+          7,
+          10
+        ],
+        [
+          1,
+          9,
+          5
+        ]
+      ],
+      "scaled_shell_norm": 242,
+      "scaled_shell_signed_vectors": 18,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "84acff55292e4037df563c003e00c5373adeda7b88dde0bf700097c98c3e5cab",
+      "source_state": "D2"
+    },
+    {
+      "exact_set_comparisons_pass": 4,
+      "genus": "ternary_det112",
+      "isotropic_quadric_points": 4,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            0,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 3,
+      "projected_birth_stratum_points": 2,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "scaled_shell_norm": 18,
+      "scaled_shell_signed_vectors": 4,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "a4d7e21aaeb529843ff76303c19e30d4bcdff8f6ab07a97ac9ff840d81a09881",
+      "source_state": "Z0"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det112",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            4,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            4,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 5,
+      "projected_birth_stratum_points": 6,
+      "rootless_lines_from_quadric_complement": [],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 12,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "a4d7e21aaeb529843ff76303c19e30d4bcdff8f6ab07a97ac9ff840d81a09881",
+      "source_state": "Z0"
+    },
+    {
+      "exact_set_comparisons_pass": 12,
+      "genus": "ternary_det112",
+      "isotropic_quadric_points": 12,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            9
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            5,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            5,
+            8
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            8,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            8,
+            8
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            9,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            9,
+            9
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 11,
+      "projected_birth_stratum_points": 8,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          1,
+          8,
+          8
+        ],
+        [
+          1,
+          9,
+          9
+        ]
+      ],
+      "scaled_shell_norm": 242,
+      "scaled_shell_signed_vectors": 16,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "a4d7e21aaeb529843ff76303c19e30d4bcdff8f6ab07a97ac9ff840d81a09881",
+      "source_state": "Z0"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det126",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            4,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 5,
+      "projected_birth_stratum_points": 2,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 6,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "673243636440941953646765a9068c364814e04f9ce5ac4306fcf0748f42e129",
+      "source_state": "D0"
+    },
+    {
+      "exact_set_comparisons_pass": 12,
+      "genus": "ternary_det126",
+      "isotropic_quadric_points": 12,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            0,
+            1,
+            8
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            0,
+            1,
+            10
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            0,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            0,
+            9
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            4,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            4,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            7,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            7,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            10,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            10,
+            9
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 11,
+      "projected_birth_stratum_points": 8,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          10,
+          9
+        ]
+      ],
+      "scaled_shell_norm": 242,
+      "scaled_shell_signed_vectors": 18,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "673243636440941953646765a9068c364814e04f9ce5ac4306fcf0748f42e129",
+      "source_state": "D0"
+    },
+    {
+      "exact_set_comparisons_pass": 14,
+      "genus": "ternary_det126",
+      "isotropic_quadric_points": 14,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            8
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            10
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            8
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            4,
+            10
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            6,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            6,
+            11
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            7,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            7,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            9,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            10,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            10,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            12,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            12,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 13,
+      "projected_birth_stratum_points": 10,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          3,
+          8
+        ],
+        [
+          1,
+          6,
+          11
+        ],
+        [
+          1,
+          7,
+          2
+        ],
+        [
+          1,
+          10,
+          5
+        ]
+      ],
+      "scaled_shell_norm": 338,
+      "scaled_shell_signed_vectors": 22,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "673243636440941953646765a9068c364814e04f9ce5ac4306fcf0748f42e129",
+      "source_state": "D0"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det126",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            0,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            0,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 5,
+      "projected_birth_stratum_points": 6,
+      "rootless_lines_from_quadric_complement": [],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 14,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "30f4969e32ace675d2f03db6de935a5527e98479233285540ddefa47167a5160",
+      "source_state": "D1"
+    },
+    {
+      "exact_set_comparisons_pass": 12,
+      "genus": "ternary_det126",
+      "isotropic_quadric_points": 12,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            9
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            4
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            8,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            8,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            9,
+            0
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            9,
+            9
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            10,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            10,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 11,
+      "projected_birth_stratum_points": 4,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          1,
+          6
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          3,
+          7
+        ],
+        [
+          1,
+          8,
+          1
+        ],
+        [
+          1,
+          10,
+          4
+        ],
+        [
+          1,
+          10,
+          7
+        ]
+      ],
+      "scaled_shell_norm": 242,
+      "scaled_shell_signed_vectors": 10,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "30f4969e32ace675d2f03db6de935a5527e98479233285540ddefa47167a5160",
+      "source_state": "D1"
+    },
+    {
+      "exact_set_comparisons_pass": 14,
+      "genus": "ternary_det126",
+      "isotropic_quadric_points": 14,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            8
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            10
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            12
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            10
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            9
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            4,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            4,
+            9
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            5,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            5,
+            11
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            7,
+            11
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            7,
+            12
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            11,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            11,
+            8
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 13,
+      "projected_birth_stratum_points": 10,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          1,
+          0,
+          8
+        ],
+        [
+          1,
+          3,
+          9
+        ],
+        [
+          1,
+          11,
+          7
+        ]
+      ],
+      "scaled_shell_norm": 338,
+      "scaled_shell_signed_vectors": 22,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "30f4969e32ace675d2f03db6de935a5527e98479233285540ddefa47167a5160",
+      "source_state": "D1"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det126",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 5,
+      "projected_birth_stratum_points": 4,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          1,
+          1,
+          4
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 8,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "53650aace0570527725eb4c27d83376de99c6455570a9c13a0c827978a8b9d33",
+      "source_state": "Z0"
+    },
+    {
+      "exact_set_comparisons_pass": 12,
+      "genus": "ternary_det126",
+      "isotropic_quadric_points": 12,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            4,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            10
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            6,
+            8
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            8,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            8,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            10,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            10,
+            8
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 11,
+      "projected_birth_stratum_points": 8,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          1,
+          1,
+          7
+        ],
+        [
+          1,
+          4,
+          10
+        ]
+      ],
+      "scaled_shell_norm": 242,
+      "scaled_shell_signed_vectors": 16,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "53650aace0570527725eb4c27d83376de99c6455570a9c13a0c827978a8b9d33",
+      "source_state": "Z0"
+    },
+    {
+      "exact_set_comparisons_pass": 14,
+      "genus": "ternary_det126",
+      "isotropic_quadric_points": 14,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            11
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            0,
+            10
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            5,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            5,
+            8
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            6,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            6,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            10,
+            8
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            10,
+            10
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            11,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            11,
+            7
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 13,
+      "projected_birth_stratum_points": 8,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          1,
+          11
+        ],
+        [
+          1,
+          0,
+          7
+        ],
+        [
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          6,
+          0
+        ],
+        [
+          1,
+          11,
+          2
+        ]
+      ],
+      "scaled_shell_norm": 338,
+      "scaled_shell_signed_vectors": 16,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "53650aace0570527725eb4c27d83376de99c6455570a9c13a0c827978a8b9d33",
+      "source_state": "Z0"
+    },
+    {
+      "exact_set_comparisons_pass": 4,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 4,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            0,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 4,
+          "line": [
+            1,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 3,
+      "projected_birth_stratum_points": 1,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "scaled_shell_norm": 18,
+      "scaled_shell_signed_vectors": 4,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "235198ed62220b828cd42b4d71b9b7ea8c1cda4fc15c6cd3c8825804cff611ff",
+      "source_state": "D0"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            0,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 5,
+      "projected_birth_stratum_points": 2,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          1,
+          0,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 6,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "235198ed62220b828cd42b4d71b9b7ea8c1cda4fc15c6cd3c8825804cff611ff",
+      "source_state": "D0"
+    },
+    {
+      "exact_set_comparisons_pass": 8,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 8,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            5,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            5,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 7,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          1,
+          0,
+          5
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          1,
+          4,
+          2
+        ],
+        [
+          1,
+          5,
+          1
+        ],
+        [
+          1,
+          5,
+          6
+        ]
+      ],
+      "scaled_shell_norm": 98,
+      "scaled_shell_signed_vectors": 2,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "235198ed62220b828cd42b4d71b9b7ea8c1cda4fc15c6cd3c8825804cff611ff",
+      "source_state": "D0"
+    },
+    {
+      "exact_set_comparisons_pass": 4,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 4,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            1
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 3,
+      "projected_birth_stratum_points": 2,
+      "rootless_lines_from_quadric_complement": [],
+      "scaled_shell_norm": 18,
+      "scaled_shell_signed_vectors": 6,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "1999cd3db4ab5b5487ba708a65e2655f591c3b508d1b433485a9878410c2a9d1",
+      "source_state": "D1"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 5,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          4
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          2
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 2,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "1999cd3db4ab5b5487ba708a65e2655f591c3b508d1b433485a9878410c2a9d1",
+      "source_state": "D1"
+    },
+    {
+      "exact_set_comparisons_pass": 8,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 8,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            5,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            5,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 1,
+      "prime": 7,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          4
+        ],
+        [
+          1,
+          5,
+          2
+        ],
+        [
+          1,
+          5,
+          6
+        ]
+      ],
+      "scaled_shell_norm": 98,
+      "scaled_shell_signed_vectors": 2,
+      "scaled_shell_vectors_reducing_to_zero": 2,
+      "source_gram_sha256": "1999cd3db4ab5b5487ba708a65e2655f591c3b508d1b433485a9878410c2a9d1",
+      "source_state": "D1"
+    },
+    {
+      "exact_set_comparisons_pass": 4,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 4,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            0,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            0,
+            2
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 2,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 2,
+      "prime": 3,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [],
+      "scaled_shell_norm": 18,
+      "scaled_shell_signed_vectors": 4,
+      "scaled_shell_vectors_reducing_to_zero": 4,
+      "source_gram_sha256": "34ad28f8e92d90fd4e13314add8d7ff717c06888839563db8488870b7f924f5a",
+      "source_state": "D2"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 4,
+          "child_signed_roots": 4,
+          "line": [
+            1,
+            2,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 4,
+          "child_signed_roots": 4,
+          "line": [
+            1,
+            3,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 2,
+      "prime": 5,
+      "projected_birth_stratum_points": 2,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 12,
+      "scaled_shell_vectors_reducing_to_zero": 4,
+      "source_gram_sha256": "34ad28f8e92d90fd4e13314add8d7ff717c06888839563db8488870b7f924f5a",
+      "source_state": "D2"
+    },
+    {
+      "exact_set_comparisons_pass": 8,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 8,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            5,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 2,
+      "prime": 7,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          1,
+          0,
+          4
+        ],
+        [
+          1,
+          0,
+          6
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          6
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          1
+        ]
+      ],
+      "scaled_shell_norm": 98,
+      "scaled_shell_signed_vectors": 4,
+      "scaled_shell_vectors_reducing_to_zero": 4,
+      "source_gram_sha256": "34ad28f8e92d90fd4e13314add8d7ff717c06888839563db8488870b7f924f5a",
+      "source_state": "D2"
+    },
+    {
+      "exact_set_comparisons_pass": 4,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 4,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 3,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "scaled_shell_norm": 18,
+      "scaled_shell_signed_vectors": 0,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "0d08e238ec3be29edc26b8e37068b7546e007842f77d406576e5606186dc029b",
+      "source_state": "Z0"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 5,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          4
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          4
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 0,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "0d08e238ec3be29edc26b8e37068b7546e007842f77d406576e5606186dc029b",
+      "source_state": "Z0"
+    },
+    {
+      "exact_set_comparisons_pass": 8,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 8,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            5,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            5,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            6,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            6,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 7,
+      "projected_birth_stratum_points": 4,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          4,
+          0
+        ],
+        [
+          1,
+          4,
+          4
+        ],
+        [
+          1,
+          6,
+          0
+        ],
+        [
+          1,
+          6,
+          6
+        ]
+      ],
+      "scaled_shell_norm": 98,
+      "scaled_shell_signed_vectors": 8,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "0d08e238ec3be29edc26b8e37068b7546e007842f77d406576e5606186dc029b",
+      "source_state": "Z0"
+    },
+    {
+      "exact_set_comparisons_pass": 4,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 4,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 3,
+      "projected_birth_stratum_points": 1,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "scaled_shell_norm": 18,
+      "scaled_shell_signed_vectors": 2,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "3ee46edff79857c31a284465361cb6dc786e328222de2dbc76fb58fc9255a10b",
+      "source_state": "Z1"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 5,
+      "projected_birth_stratum_points": 1,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 2,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "3ee46edff79857c31a284465361cb6dc786e328222de2dbc76fb58fc9255a10b",
+      "source_state": "Z1"
+    },
+    {
+      "exact_set_comparisons_pass": 8,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 8,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            5,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            6,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 7,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          5
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          1,
+          4,
+          3
+        ],
+        [
+          1,
+          5,
+          5
+        ],
+        [
+          1,
+          6,
+          1
+        ]
+      ],
+      "scaled_shell_norm": 98,
+      "scaled_shell_signed_vectors": 0,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "3ee46edff79857c31a284465361cb6dc786e328222de2dbc76fb58fc9255a10b",
+      "source_state": "Z1"
+    },
+    {
+      "exact_set_comparisons_pass": 4,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 4,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 3,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "scaled_shell_norm": 18,
+      "scaled_shell_signed_vectors": 0,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "ecbe383d9fa5d07427343bb3770cd72676fecfbf2825d9eb03b15bc093c36556",
+      "source_state": "Z2"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            0,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 5,
+      "projected_birth_stratum_points": 1,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          1,
+          4,
+          1
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 2,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "ecbe383d9fa5d07427343bb3770cd72676fecfbf2825d9eb03b15bc093c36556",
+      "source_state": "Z2"
+    },
+    {
+      "exact_set_comparisons_pass": 8,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 8,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            3,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            6,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            6,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 7,
+      "projected_birth_stratum_points": 2,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          5
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          3
+        ],
+        [
+          1,
+          6,
+          4
+        ]
+      ],
+      "scaled_shell_norm": 98,
+      "scaled_shell_signed_vectors": 4,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "ecbe383d9fa5d07427343bb3770cd72676fecfbf2825d9eb03b15bc093c36556",
+      "source_state": "Z2"
+    },
+    {
+      "exact_set_comparisons_pass": 4,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 4,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 3,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "scaled_shell_norm": 18,
+      "scaled_shell_signed_vectors": 0,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "513bf9c57812a2f387210bb06f29543f76d82760687bb58fe4ee48e377d8b6bb",
+      "source_state": "Z3"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            3,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 5,
+      "projected_birth_stratum_points": 2,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          4,
+          4
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 4,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "513bf9c57812a2f387210bb06f29543f76d82760687bb58fe4ee48e377d8b6bb",
+      "source_state": "Z3"
+    },
+    {
+      "exact_set_comparisons_pass": 8,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 8,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            5
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            5,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            5,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            6,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 7,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          6
+        ],
+        [
+          1,
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          5,
+          2
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          2
+        ]
+      ],
+      "scaled_shell_norm": 98,
+      "scaled_shell_signed_vectors": 0,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "513bf9c57812a2f387210bb06f29543f76d82760687bb58fe4ee48e377d8b6bb",
+      "source_state": "Z3"
+    },
+    {
+      "exact_set_comparisons_pass": 4,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 4,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 3,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ],
+      "scaled_shell_norm": 18,
+      "scaled_shell_signed_vectors": 0,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "57bdd3e37da61e505d025cd08c0a552bba521f53a7d400c94ca3dedefc01c053",
+      "source_state": "Z4"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 4,
+          "child_signed_roots": 4,
+          "line": [
+            1,
+            2,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 5,
+      "projected_birth_stratum_points": 1,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          4,
+          2
+        ],
+        [
+          1,
+          4,
+          3
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 4,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "57bdd3e37da61e505d025cd08c0a552bba521f53a7d400c94ca3dedefc01c053",
+      "source_state": "Z4"
+    },
+    {
+      "exact_set_comparisons_pass": 8,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 8,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            0,
+            1,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            6,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 7,
+      "projected_birth_stratum_points": 2,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          4,
+          2
+        ],
+        [
+          1,
+          6,
+          6
+        ]
+      ],
+      "scaled_shell_norm": 98,
+      "scaled_shell_signed_vectors": 4,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "57bdd3e37da61e505d025cd08c0a552bba521f53a7d400c94ca3dedefc01c053",
+      "source_state": "Z4"
+    },
+    {
+      "exact_set_comparisons_pass": 4,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 4,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            0,
+            1,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 3,
+      "projected_birth_stratum_points": 0,
+      "rootless_lines_from_quadric_complement": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "scaled_shell_norm": 18,
+      "scaled_shell_signed_vectors": 0,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "f189e69d1f0212c0203918621748c1f39a2071a793cba6cd137efdf88764dba8",
+      "source_state": "Z5"
+    },
+    {
+      "exact_set_comparisons_pass": 6,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 6,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            0,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            2,
+            3
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            4,
+            4
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 5,
+      "projected_birth_stratum_points": 1,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          1,
+          0,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          4,
+          0
+        ],
+        [
+          1,
+          4,
+          4
+        ]
+      ],
+      "scaled_shell_norm": 50,
+      "scaled_shell_signed_vectors": 2,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "f189e69d1f0212c0203918621748c1f39a2071a793cba6cd137efdf88764dba8",
+      "source_state": "Z5"
+    },
+    {
+      "exact_set_comparisons_pass": 8,
+      "genus": "ternary_det316",
+      "isotropic_quadric_points": 8,
+      "line_root_counts": [
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            1,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            2,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 2,
+          "child_signed_roots": 2,
+          "line": [
+            1,
+            4,
+            0
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 4,
+          "child_signed_roots": 4,
+          "line": [
+            1,
+            4,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": false
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            5,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            5,
+            6
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            6,
+            1
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        },
+        {
+          "born_signed_roots": 0,
+          "child_signed_roots": 0,
+          "line": [
+            1,
+            6,
+            2
+          ],
+          "old_surviving_signed_roots": 0,
+          "rootless": true
+        }
+      ],
+      "old_root_hyperplanes": 0,
+      "prime": 7,
+      "projected_birth_stratum_points": 3,
+      "rootless_lines_from_quadric_complement": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          5,
+          2
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          1,
+          6,
+          1
+        ],
+        [
+          1,
+          6,
+          2
+        ]
+      ],
+      "scaled_shell_norm": 98,
+      "scaled_shell_signed_vectors": 8,
+      "scaled_shell_vectors_reducing_to_zero": 0,
+      "source_gram_sha256": "f189e69d1f0212c0203918621748c1f39a2071a793cba6cd137efdf88764dba8",
+      "source_state": "Z5"
+    }
+  ],
+  "control_scope": {
+    "comparison": "Every predicted physical root set is compared in the parent rational space with an independent materialized-child enumeration.",
+    "mass_closed_ternary_genera": 3,
+    "target_predicate": "rootless",
+    "uses_marked_target_core": false,
+    "uses_target_isometry_class": false
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-small-genus-defect-graphs-v2.json": "15ebab42a35c98dcf1d428c002ca2e36c03bf492162622777e3b06bb27c31a69",
+    "elkies-k3/scripts/analyze_small_genus_defect_graphs.sage": "ac89708cdb5ef653222c98e2bab5770dfafe538bd337c23b7432211f36aa3f22",
+    "elkies-k3/scripts/plan_inverse_ade_targets.sage": "6b3dc51f7bf59e304988c3face254c1525da8db175c2e62a826ef7e5b7ef1e3c"
+  },
+  "nonzero_graph_glue_control": {
+    "born_nonzero_glue_signed_roots": 96,
+    "exact_set_comparisons_pass": 6,
+    "isotropic_quadric_points": 6,
+    "line_root_counts": [
+      {
+        "born_core_signed_roots": 4,
+        "born_nonzero_glue_signed_roots": 16,
+        "child_signed_roots": 24,
+        "line": [
+          0,
+          1,
+          2
+        ],
+        "old_surviving_signed_roots": 4
+      },
+      {
+        "born_core_signed_roots": 4,
+        "born_nonzero_glue_signed_roots": 16,
+        "child_signed_roots": 24,
+        "line": [
+          0,
+          1,
+          3
+        ],
+        "old_surviving_signed_roots": 4
+      },
+      {
+        "born_core_signed_roots": 4,
+        "born_nonzero_glue_signed_roots": 16,
+        "child_signed_roots": 24,
+        "line": [
+          1,
+          0,
+          2
+        ],
+        "old_surviving_signed_roots": 4
+      },
+      {
+        "born_core_signed_roots": 4,
+        "born_nonzero_glue_signed_roots": 16,
+        "child_signed_roots": 24,
+        "line": [
+          1,
+          0,
+          3
+        ],
+        "old_surviving_signed_roots": 4
+      },
+      {
+        "born_core_signed_roots": 4,
+        "born_nonzero_glue_signed_roots": 16,
+        "child_signed_roots": 24,
+        "line": [
+          1,
+          2,
+          0
+        ],
+        "old_surviving_signed_roots": 4
+      },
+      {
+        "born_core_signed_roots": 4,
+        "born_nonzero_glue_signed_roots": 16,
+        "child_signed_roots": 24,
+        "line": [
+          1,
+          3,
+          0
+        ],
+        "old_surviving_signed_roots": 4
+      }
+    ],
+    "name": "A1^3 plus A1 with diagonal half-class glue",
+    "parent_completion_root_system": "D4",
+    "prime": 5,
+    "scaled_shell_signed_vectors_by_cell": {
+      "class_0_bridge_-1": 1,
+      "class_0_bridge_0": 30,
+      "class_0_bridge_1": 1,
+      "class_1_bridge_-1/2": 56,
+      "class_1_bridge_1/2": 56
+    }
+  },
+  "proof_boundary": "The theorem is exact in all ranks, but explicitly expanding the scaled shell may be more expensive than candidate-wise affine CVP in rank 15. These exhaustive controls certify correctness, not a uniform complexity bound or readiness of the 936 foundry rows, which still lack bridge/glue and compatible source markings.",
+  "reproduce": "sage -python elkies-k3/scripts/certify_inverse_ade_projective_birth_strata.sage",
+  "schema": "elkies-k3.inverse-ade-projective-birth-strata.v1",
+  "software": {
+    "sage": "10.9"
+  },
+  "status": "PASS_EXHAUSTIVE_PROJECTIVE_BIRTH_STRATA_CONTROLS",
+  "theorem": {
+    "core_birth_shell": "A born norm-two vector v of K_ell is equivalent to z=p*v in K with z^2=2*p^2 and nonzero projective reduction [z mod p]=ell.",
+    "graph_glue_extension": "For bridge vector c and transported graph class a, replace K by the dual coset [z]=p*a and 2*p^2 by p^2*(2-c^2).",
+    "rootless_locus": "Q_p^iso minus the union of old-root hyperplane sections and the projective reduction of the norm-2*p^2 shell."
+  },
+  "totals": {
+    "actual_rootless_lines": 192,
+    "isotropic_lines": 346,
+    "predicted_rootless_lines": 192,
+    "projected_birth_stratum_points": 131,
+    "scaled_shell_signed_vectors": 324,
+    "state_prime_cases": 48
+  }
+}

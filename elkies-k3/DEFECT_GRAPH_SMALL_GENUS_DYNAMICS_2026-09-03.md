@@ -132,55 +132,67 @@ routing information: the least analyzed prime can fail even when another
 single prime succeeds, so “use the smallest good prime” is not an invariant
 strategy.  No present control requires a genuinely mixed two-prime route.
 
-## Literature consequence for the all-prime question
+## The all-prime question is a finite-level theorem
 
-Chenevier's [`p`-neighbour statistics](https://arxiv.org/abs/2104.06846)
-separate two facts that matter here.  In a genus of rank greater than two
-which is one spinor genus, every good-`p` Kneser graph is connected; moreover,
-for a fixed source and target class, sufficiently large compatible primes
-have a neighbour in the target class.  The paper also formulates the
-asymptotic with level structures, which is the relevant setting when the
-defect mask depends on a discriminant marking rather than only on the
-unmarked lattice.
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MARKED-ROOTLESS-REACHABILITY 354cc7a9fc81f33e -->
 
-Consequently, if a zero-defect state lies in the same spinor/level component
-and the physical defect is preserved by that marking, the large-prime theorem
-predicts something stronger than a descending path: for all sufficiently
-large compatible primes there is a one-click neighbour isometric to the
-zero-defect target.  Such an edge necessarily kills every current physical
-witness by H0i.  Since the state set is finite, choosing one such prime for
-each source also gives a finite, but non-effective, prime set sufficient for
-directed reachability.
+Chenevier's
+[`p`-neighbour statistics](https://doi.org/10.24033/bsmf.2852), Theorem 5.9,
+already treat arbitrary compact-open level structure.  The discriminant/glue
+markings used by the reverse-mask calculus fit that setting: after putting
+the finitely many discriminant, bridge, and marking primes in `S`, the
+stabilizer of a distinguished finite quadratic summand, graph subgroup, or
+graph anti-isometry is a compact-open subgroup `K^lev` of the finite adelic
+orthogonal group.  The marked states are therefore Chenevier's finite class
+set
 
-The remaining global obstruction is therefore not ordinary class-set
-connectivity inside a one-spinor-genus component.  It is the marked
-spinor/level decomposition, together with making the large-prime statement
-effective enough to produce a usable prime set.  This qualification is
-essential for the rank-15 reverse masks: an unmarked isometry class need not
-preserve the distinguished discriminant summand and graph multiplier.
+```text
+X(K^lev)=O(V) backslash O_V(A_f)/K^lev.
+```
 
-Sage's exact proper-spinor-kernel quotient has order one in each of the three
-genera above.  Hence the fixed-`3` traps survive after the ordinary spinor
-obstruction has already disappeared.  The experiments point to two different
-scales of state data:
+The intrinsic marked component is the fibre of the spinor-genus map `s`
+after quotienting by `S_1(K^lev)`, the subgroup of good-prime spinor
+displacements.  This definition uses the adelic level structure, not graph
+reachability.
 
-1. the spinor/level component controls eventual all-prime access;
-2. at a specified small prime, the prime-labelled incidence of the individual
-   physical witnesses with all isotropic lines controls the actual directed
-   SCC and distance.
-
-This supports the following conjectural completion of the blank, without
-proving it for marked rank-15 masks:
+Theorem H0i.3 now proves the sharp equivalence suggested by the controls:
 
 ```text
 zero-support reachability under some finite compatible good-prime set
 <=> a zero-support state exists in the same marked spinor/level component.
 ```
 
-The forward implication is formal.  The reverse implication is supplied by
-large-prime equidistribution in the unmarked one-spinor-genus root-defect
-case; its marked-mask version still needs an exact level structure and a
-proof that zero support is preserved by the permitted marked isometries.
+Indeed, every good-prime edge multiplies `s` by an element `delta_p` of
+`S_1(K^lev)`, which proves the forward implication.  Conversely, for a
+rootless target `z` in the same component, put
+`a=s(z)*s(x)^(-1)`.  Chenevier's Remark 5.11 gives infinitely many primes in
+arithmetic progressions with `delta_p=a`, and Theorem 5.9 gives a direct
+`p`-neighbour marked-isomorphic to `z` for every sufficiently large such
+prime.  If any parent physical witness survived that line, H0i.1 would place
+the same norm-two vector in the zero affine layer of the child completion,
+contradicting rootlessness.  The one-click edge is therefore automatically
+directed and has no replacement birth.
+
+Since the marked class set is finite, one sufficiently large prime for each
+required element of `S_1(K^lev)` gives a finite sufficient prime set for the
+whole component.  This is an existence theorem, not an effective algorithm:
+the proof gives neither the threshold nor a small-prime bound.
+
+Sage's exact proper-spinor-kernel quotient has order one in each of the three
+genera above.  Hence the fixed-`3` traps survive after the ordinary spinor
+obstruction has already disappeared.  The experiments and the theorem
+together separate two scales of state data:
+
+1. the marked spinor/level component controls eventual all-prime access;
+2. at a specified small prime, the prime-labelled incidence of the individual
+   physical witnesses with all isotropic lines controls the actual directed
+   SCC and distance.
+
+The finite-level hypothesis is essential.  An unmarked isometry need not
+preserve the distinguished discriminant summand and graph multiplier, while
+an infinite marking that fixes exact rational vectors, a full embedded core,
+a nef chamber, or an equation need not have open stabilizer.  Those stronger
+markings, effectiveness, and equation-level lifting are outside the theorem.
 
 ## Reproduce
 
@@ -196,24 +208,25 @@ the recorded workstation.  It performs no random sampling.
 
 ## Boundary and next experiment
 
-What is proved is an exact finite computation for root defects in three
-ternary genera and all subsets of three declared good primes.  It proves
-fixed-prime traps, nontrivial directed distance, exact minimum sufficient
-prime sets, and one-proper-spinor-genus status for all three controls.  It
-does not prove an all-good-prime trap, a universal finite-prime bound, a scalar
-Lyapunov function, or the corresponding statement for the rank-15 Q80
-completion mask.
+The exact computation proves fixed-prime traps, nontrivial directed distance,
+minimum sufficient sets inside the three declared prime lists, and
+one-proper-spinor-genus status for all three ternary controls.  Theorem H0i.3
+separately proves that no all-good-prime directed trap can persist in a finite
+marked component containing a rootless state.  It gives no effective prime
+threshold, universal small-prime bound, scalar Lyapunov function, or complete
+rank-15 small-prime graph.
 
 The next rank-15 experiment should therefore be more targeted than a large
 unfiltered genus walk:
 
 1. attach the Q80 discriminant marking and bridge multiplier to the state;
-2. determine its spinor/level component, not only its unmarked genus;
+2. determine its finite-level spinor component explicitly, not only its
+   unmarked genus;
 3. enumerate complete neighbour orbits for the smallest feasible good prime;
 4. store the full physical-witness Gram/incidence signature and the complete
    directed destination profile;
-5. close a component by mass or a level-aware neighbour theorem before
-   interpreting an SCC as a trap.
+5. use the finite-level reachability theorem to distinguish a genuine
+   component obstruction from a merely fixed-prime SCC.
 
 The ternary controls say exactly what must be kept: the prime-labelled
 transition profile is already more informative than defect count, while the

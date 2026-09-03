@@ -930,6 +930,279 @@ The complete parameterization, ordered-cover map, quadratic witness, and
 rank-descent calculation are in
 [`E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md`](E6_RANK4_LINEAR_CHORD_INCIDENCE_2026-09-02.md).
 
+<!-- status-consumer: EC-K3-UNIVERSAL-DEGREE2-FIBRATION-COMPILER fd4b5d71c9497eaf -->
+
+### Theorem F1u: universal marked degree-two chord compiler
+
+Let `k` be a characteristic-zero field and let
+
+```text
+pi:X -> P1_k,       E=X_eta/k(t)
+```
+
+be a relatively minimal Jacobian elliptic K3 surface with zero section `O`
+and fibre class `F`.  Let `D` be a `k`-divisor class represented by a line
+bundle and suppose
+
+```text
+D primitive and nef,       D^2=0,       D.F=2.       (F1u.1)
+```
+
+Then the pencil `|D|` can be compiled by a two-channel chord calculation and
+finitely many explicitly determined vertical conditions, as follows.
+
+1. There is a unique trace section `tau in E(k(t))` and a vertical divisor
+   `V` such that
+
+   ```text
+   D ~ O+tau+V.                                      (F1u.2)
+   ```
+
+   Suppose the reducible fibre over `p` has identity component
+   `Theta_(p,0)` and nonidentity components `Theta_(p,i)` of Kodaira
+   multiplicities `m_(p,i)`.  In the normalized expression
+
+   ```text
+   V=nF+sum_(p,i) v_(p,i) Theta_(p,i),               (F1u.3)
+   ```
+
+   all coefficients are determined by the marked Neron--Severi data.  If
+   `W=D-O-tau` and `G_p=(Theta_(p,i).Theta_(p,j))`, then
+
+   ```text
+   n=W.O,       G_p v_p=(W.Theta_(p,j))_j.           (F1u.4)
+   ```
+
+   Thus an abstract marked Neron--Severi basis determines the Mordell--Weil
+   class of `tau` and every vertical coefficient.  If its section generators
+   are also supplied by rational functions on the old Weierstrass model, the
+   coordinates of `tau` are obtained by finitely many old-fibre group-law
+   additions.  Abstract lattice data alone does not manufacture those
+   rational functions.
+
+2. If `tau!=O`, put
+
+   ```text
+   ell_tau=(y+y(tau))/(x-x(tau)).                    (F1u.5)
+   ```
+
+   Its pole divisor on `E` is `O+tau`, and
+
+   ```text
+   H0(E,O_E(O+tau))=k(t) direct_sum k(t)*ell_tau.    (F1u.6)
+   ```
+
+   The function `ell_tau` is the slope of the line through `-tau`; its two
+   residual intersections are exchanged by `Q |-> tau-Q`.  If `tau=O`, the
+   corresponding statements use the basis `(1,x)` and the involution
+   `Q |-> -Q`.
+
+3. The vertical enlargement needed for a finite calculation is canonical
+   once (F1u.3) and the physical component multiplicities are fixed.  Put
+
+   ```text
+   r_p=max(0,max_i ceil(v_(p,i)/m_(p,i))),
+   k=max(0,n+sum_p r_p),
+   s=k-n-sum_p r_p.
+   ```
+
+   For any smooth fibre `F_0` away from the displayed support,
+
+   ```text
+   Z=sF_0+sum_p(r_p F_p-sum_i v_(p,i)Theta_(p,i))    (F1u.7)
+   ```
+
+   is effective and `Z~kF-V`.  Multiplication by its canonical section gives
+   an inclusion
+
+   ```text
+   H0(X,O_X(D)) -> H0(X,O_X(O+tau+kF)),              (F1u.8)
+   ```
+
+   whose image consists exactly of the sections vanishing along `Z`.
+   Pulling the two generic channels `(1,ell_tau)` to the finitely many
+   resolved components in (F1u.7), and truncating at their displayed
+   multiplicities, therefore gives a finite matrix of linear conditions.
+   Its kernel is `H0(X,O_X(D))` and has dimension two.
+
+4. These assertions have exact coordinate bounds.  Choose a global short
+   K3 chart
+
+   ```text
+   y^2=x^3+A(t)x+B(t),       deg A<=8, deg B<=12,
+   tau=(Nx/h^2,Ny/h^3),      c=O.tau=deg h,
+   gcd(Nx,h)=1,
+   ```
+
+   with the intersections of `O` and `tau` away from infinity.  Then
+
+   ```text
+   deg Nx<=2c+4,       deg Ny<=3c+6.                 (F1u.9)
+   ```
+
+   Up to one common denominator, the larger space in (F1u.8) is represented
+   by
+
+   ```text
+   L_(a,b)=a(t)(x h^2-Nx)+b(t)(y h^3+Ny),
+   deg a<=k+2c,       deg b<=k+c-2,                 (F1u.10)
+   a Nx-b Ny == 0 mod h^2.
+   ```
+
+   For `c>0` this starts with exactly `2k+3c` scalar coefficients; the fixed
+   congruence has rank `2c`, leaving a chord ambient of dimension `2k+c`.
+   The complete vertical block has codimension exactly
+
+   ```text
+   2k+c-2.                                           (F1u.11)
+   ```
+
+   The same count holds for a nonzero trace disjoint from `O` when `k>=1`.
+   The hypotheses themselves force `2k+c>=2`; numerical pairs violating
+   this inequality cannot contain `H0(X,O_X(D))`.
+   In the trace-zero case one may add harmless full-fibre padding until
+   `k>=4`; the basis `a(t)+b(t)x`, with
+   `deg a<=k`, `deg b<=k-4`, has dimension `2k-2`, and the vertical
+   codimension is `2k-4`.
+
+5. Let `(f_0,f_1)` be the resulting kernel basis and `u=f_1/f_0`.  Writing
+   `f_i=a_i+b_i ell_tau` on the old generic fibre gives
+
+   ```text
+   ell_tau=(a_1-u a_0)/(u b_0-b_1).                 (F1u.12)
+   ```
+
+   For `tau!=O`, substitution in the old cubic removes the known point
+   `-tau` and leaves a quadratic whose discriminant is
+
+   ```text
+   R=ell_tau^4-6x(tau)ell_tau^2-8y(tau)ell_tau
+       -3x(tau)^2-4A.                               (F1u.13)
+   ```
+
+   If `tau=O`, write the corresponding solution of the pencil relation as
+   `x=N/D`, with `N,D` linear in `u`.  Clearing the odd denominator gives
+
+   ```text
+   w^2=D(N^3+A N D^2+B D^3),                        (F1u.13z)
+   ```
+
+   which is likewise quartic in `u`.
+
+   After clearing denominators and removing only certified square factors,
+   the generic member is a binary quartic
+
+   ```text
+   w^2=q(t,u),       deg_t q=4,       deg_u q<=4.   (F1u.14)
+   ```
+
+   Here degrees are bihomogeneous degrees on the two base lines; special
+   affine charts may display degree below four.  The classical invariants
+   `I(q),J(q)` give the exact relative Jacobian
+
+   ```text
+   Y^2=X^3-27 I X-27 J,                              (F1u.15)
+   ```
+
+   with raw new-base degree bounds
+
+   ```text
+   deg_u(A_new)<=8,  deg_u(B_new)<=12,
+   deg_u(Delta_new)<=24.                             (F1u.16)
+   ```
+
+6. If an effective `k`-rational irreducible curve `S` is supplied with
+   `S.D=1`, then `S` is a section of `|D|`.  Restricting `u` to `S` gives a
+   rational point on (F1u.14), and the pointed quartic-to-Weierstrass
+   conversion sends it to the new zero.  Thus the fibre class and origin are
+   preserved, the degree-two deck involution remains explicit, and every
+   additionally supplied curve can be transported through the same exact
+   maps.  The deck involution need not become negation for the origin `S`.
+   Without such an `S`, (F1u.15) is the relative Jacobian of the genus-one
+   pencil; it is not a certificate that
+   the original torsor is pointed.  Full component and Neron--Severi marking
+   preservation still requires the resolved incidences and a unimodular
+   transport of Proposition D.
+
+#### Proof
+
+The restriction of `O_X(D)` to `E` is a degree-two line bundle.  The
+`k(t)`-isomorphism `E -> Pic^2(E)` sending `T` to `O_E(O+T)` gives a unique
+`tau`.  Equivalently this is Shioda's vertical decomposition, quoted as
+Lemma 2.14 by Brandhorst--Elkies.  Its kernel is generated by the fibre and
+the nonidentity components, proving (F1u.2)--(F1u.3).  Those components are
+disjoint from `O`; pairing first with `O` and then with their negative
+definite Gram matrices proves (F1u.4), including uniqueness and integrality.
+For nonsplit fibres this calculation is made after a finite separable
+splitting extension.  Galois conjugacy permutes the component conditions;
+expanding their joint matrix in a `k`-basis of that extension gives the same
+kernel over `k`, so no split-fibre hypothesis is needed.
+
+The line through `-tau` and a variable point `Q` has slope (F1u.5).  Its
+third intersection is `tau-Q`, so the slope is invariant under that
+involution.  Direct local parameters show simple poles at `O` and `tau` and
+no others.  Riemann--Roch on the genus-one curve gives dimension two, proving
+(F1u.6).  For `tau=O`, the standard degree-two function is `x`.
+
+The definition of `r_p` makes every coefficient of
+`r_pF_p-sum_i v_(p,i)Theta_(p,i)` nonnegative, including the identity
+component.  The definition of `k` makes `s` nonnegative.  This proves
+effectivity in (F1u.7), while all fibres are linearly equivalent, so
+`Z~kF-V`.  The usual inclusion for an effective divisor gives (F1u.8), and
+its image is characterized by the stated vanishing orders.  A valuation
+inequality on a fixed finite-dimensional coefficient space is linear after
+expansion to the required finite order.  Only the finitely many components
+of `Z` occur.  Theorem C gives
+`h0(X,O_X(D))=2`, proving the kernel assertion and (F1u.11).
+
+The pole calculation for a section gives (F1u.9).  Proposition 2.17 of
+Brandhorst--Elkies gives exactly (F1u.10): before the congruence there are
+`2k+3c` coefficients, and regularity at `h=0` has rank `2c`.  This leaves
+`2k+c` dimensions, as also follows from K3 Riemann--Roch.  The same weighted
+pole calculation gives the trace-zero bounds.  Thus the surface calculation
+never needs a generic monomial Riemann--Roch ansatz: it is a rank-two generic
+fibre module followed by finite linear vertical cuts.
+
+Solving the pencil equation gives (F1u.12).  Substitution of the line through
+`-tau` into the cubic and division by the known linear factor gives the
+quadratic and the elementary discriminant identity (F1u.13).  The trace-zero
+identity (F1u.13z) follows directly by substituting `x=N/D` into the old cubic
+and putting `w=yD^2`.  The resulting generic new fibre is smooth of genus one
+by Theorem C and maps separably with degree two to the old base.
+Riemann--Hurwitz therefore gives four geometric
+branch points, proving `deg_t q=4`.  Formula (F1u.12) is fractional linear in
+`u`, while (F1u.13) is quartic in the slope and (F1u.13z) is visibly quartic
+in `(N,D)`; clearing the denominator and square-stripping proves
+`deg_u q<=4`.  The binary-quartic
+invariants are homogeneous of degrees two and three in the coefficients,
+and their discriminant has degree six, proving (F1u.15)--(F1u.16).  Retaining
+the scalar squareclass is essential: deleting a nonsquare would produce a
+quadratic twist.
+
+Finally `S.D=1` makes `S` a degree-one multisection, hence a section, of the
+new pencil.  Its generic point points the quartic, whose standard pointed
+conversion is birational and sends that point to zero.  Because `u`, the
+quartic, and the Weierstrass maps all came from the same two kernel rows, the
+stated markings transport functorially. QED.
+
+This theorem is the marked degree-two specialization of the established
+fibration-hopping construction in Brandhorst--Elkies, Section 2.3, especially
+Lemmas 2.14, 2.16, 2.18 and Proposition 2.17.  The theorem's contribution is
+the fail-closed packaging: the trace, normalized vertical coefficients,
+least effective padding, two-channel dimension, quartic degree bound and
+pointed-marking boundary appear in one certificate.  It does **not** prove
+that ADE type alone determines the local matrices.  Physical component
+multiplicities, resolved charts, orientations and the equation-effective zero
+remain required inputs.
+
+Nor is there an absolute coefficient bound independent of the marking.  If
+`Q` is a non-torsion old section, fibrewise translation sends a degree-two
+fibre `D` to another primitive nef degree-two fibre whose trace is
+`tau+2Q`.  Iterating the translation makes the trace height and coordinate
+degrees unbounded.  Therefore (F1u.9)--(F1u.11) are exact input-sensitive
+bounds; the observation that all 42 selected corpus edges have old-fibre
+degree two does not imply constant compiler cost.
+
 ### Proposition F1: direct bisection compilation from a height-ten trace
 
 Let
@@ -1872,6 +2145,256 @@ The literal historically transported alternate copy has degree 11,511 in the
 published marking; the theorem proves that this is not an intrinsic `J2`
 accessibility obstruction.  Compiling the two-dimensional pencil `|D|`, its
 Weierstrass model, and its `J1` orbit remain separate gates.
+
+### Theorem H-1c: local bridge mutation, glue support, and 2-primary parity
+
+<!-- status-consumer: EC-K3-LOCAL-BRIDGE-MUTATION-H1C 2db88fff92ef48b9 -->
+
+Let `L=NS(X)`, and let `U_0,U_1` be primitive copies of `U` with
+`rank(U_0+U_1)=4`.  Put
+
+```text
+W_i=U_i^perp(-1),       K=W_0 intersect W_1,
+S=U_0+U_1,              bar(S)=saturation_L(S).
+```
+
+Choose ordered `U` bases and let `A` be their cross-pairing matrix.  Let
+`B_i` be the raw rank-two bridge obtained by orthogonally projecting the
+opposite `U` basis into `W_i`, and put `C_i=saturation(B_i)`.  If
+`m=[bar(S):S]`, then
+
+```text
+G_0=A^t*J*A-J,             G_1=A*J*A^t-J,             (H-1c.1)
+
+bar(S)=U_0 direct_sum C_0(-1)
+      =U_1 direct_sum C_1(-1),                         (H-1c.2)
+
+[C_0:B_0]=[C_1:B_1]=m.                                (H-1c.3)
+```
+
+In particular the two saturated bridges have isomorphic finite quadratic
+discriminant forms and the same determinant:
+
+```text
+q_(C_0) isomorphic to q_(C_1),       det(C_0)=det(C_1)=c.  (H-1c.4)
+```
+
+The cross matrix forces the two **raw** binary mutations; the one additional
+datum is the common saturation index.  Their common raw determinant is
+
+```text
+det(G_0)=det(G_1)=2(ad+bc)-1-(det A)^2=m^2*c,          (H-1c.5)
+```
+
+where `A=[[a,b],[c,d]]`.
+
+Now write the graph-glue presentations of Theorem H as
+
+```text
+W_i=Glue(K,C_i,H_i),       h_i=|H_i|,
+```
+
+and put `D=|det L|` and `k=det K`.  Then
+
+```text
+D=k*c/h_i^2,       h_0=h_1=h,       h divides k and c, (H-1c.6)
+
+                         c/h divides gcd(c,D).         (H-1c.7)
+```
+
+Thus every prime supporting the glue defect `c/h` divides the ambient NS
+discriminant.  In particular
+
+```text
+gcd(c,D)=1  implies  h=c.                              (H-1c.8)
+```
+
+This is a support theorem, not a converse: a shared prime permits but does
+not force non-maximal glue.
+
+Finally, the exact parity law concerns the **2-primary part**, not cyclicity
+of the whole discriminant group.  One has
+
+```text
+G_i = [0 det(A)-1; det(A)-1 0] mod 2.                  (H-1c.9)
+```
+
+Consequently:
+
+1. if `det(A)` is even, then `det(G_i)`, `m`, and `c` are odd, so
+   `(A_(C_i))_2=0`;
+2. if `det(A)` and `m` are odd, then both Smith divisors of `C_i` at two are
+   nontrivial, and
+
+   ```text
+   dim_F2(A_(C_i)/2*A_(C_i))=2.                       (H-1c.10)
+   ```
+
+In the saturated case `m=1`, the full discriminant group is cyclic exactly
+when the first Smith divisor is one, equivalently
+
+```text
+gcd(2ac,ad+bc-1,2bd)=1.                               (H-1c.11)
+```
+
+Thus cyclicity implies `det(A)` even, but the converse can fail at odd
+primes.  For elliptic coordinates (H-1.5), `det(A)=d*z-s*t`; in old-fibre
+degree two this gives the corrected dichotomy
+
+```text
+s*t even  implies  (A_(C_i))_2=0,
+s*t odd and m odd  implies  two 2-primary generators. (H-1c.12)
+```
+
+It does **not** give `cyclic bridge iff s*t even` without an additional
+odd-primary Smith condition.
+
+#### Proof
+
+Apply Lemma H-1 in both orientations.  In the first orientation, changing
+from the generators of `U_0+U_1` to `U_0+B_0(-1)` is integral and triangular,
+so
+
+```text
+S=U_0 direct_sum B_0(-1).
+```
+
+Because `U_0` is unimodular, saturation commutes with splitting off this
+summand.  Hence
+
+```text
+bar(S)=U_0 direct_sum saturation(B_0)(-1).
+```
+
+The same argument from `U_1` proves (H-1c.2)--(H-1c.3).  Removing the
+unimodular summand from the two presentations of the same even lattice
+`bar(S)` proves (H-1c.4).  The raw Gram identities are Lemma H-1, and direct
+expansion gives (H-1c.5).
+
+The determinant formula for a finite-index orthogonal graph-glue extension
+is
+
+```text
+det(W_i)=det(K)*det(C_i)/|H_i|^2.
+```
+
+Since `L=U_i direct_sum W_i(-1)`, its absolute determinant is `D`.  The two
+values of `h_i` are positive and have equal squares, so they are equal.
+Primitivity of `K` and `C_i` makes both projections of `H_i` injective, as in
+Theorem H; therefore `h` divides both discriminant-group orders `k` and `c`.
+Writing
+
+```text
+D=(k/h)*(c/h)
+```
+
+proves (H-1c.7)--(H-1c.8).
+
+For (H-1c.9), direct calculation gives
+
+```text
+G_0=[2ac, ad+bc-1; ad+bc-1, 2bd],
+```
+
+and the reverse formula is analogous.  Modulo two, `ad+bc=ad-bc=det(A)`.
+If `det(A)` is even, `G_i` is unimodular over `ZZ_2`, so its determinant is
+odd; (H-1c.5) then makes `m` and `c` odd.  If `det(A)` and `m` are odd, the
+localized raw and saturated bridges agree over `ZZ_2`, while every entry of
+their binary Gram is even.  Both Smith divisors are therefore even, proving
+(H-1c.10).  When `m=1`, the discriminant group is the cokernel of `G_0`; the
+first Smith divisor is the gcd of its three entries, which is (H-1c.11).
+Substitution of (H-1.5) proves (H-1c.12). QED.
+
+The odd-primary qualification is necessary even for a positive saturated
+degree-two bridge.  Take
+
+```text
+A=[2 3; 6 8],       (d,s,t,z)=(2,1,4,1),
+G_0=[24 33; 33 48].
+```
+
+Then `det(A)=-2`, `s*t` is even, and `det(G_0)=63`, but the Smith form is
+`diag(3,21)`.  In `L=U direct_sum G_0(-1)`, use the standard basis of `G_0`
+for the two projected vectors and reconstruct `U'` by (H-1.1).  This realizes
+`m=1` and
+
+```text
+A_C = ZZ/3 + ZZ/21,
+```
+
+so even relative parity does not force full cyclicity.
+
+On the 42 stored bridge edges, all 84 orientations have `m=1`, even
+`det(A)`, odd bridge determinant, and first Smith divisor one.  Hence parity
+explains the absence of a 2-primary part, while cyclicity at odd primes is a
+separate exact Smith computation.  Formula (H-1c.8) forces maximal glue on 35
+of the 42 edges.  The remaining seven have a shared bad prime and require the
+stored glue calculation; all seven are also maximal.
+
+There is an exact non-cyclic geometric control on the published R17 surface.
+In the committed short-vector basis `(b_1,...,b_17)`, put
+
+```text
+v=b_1,       w=b_7-b_12,       C=<v,w>=[4 0; 0 8].
+```
+
+The coordinate change from the pinned R17 basis has determinant one, `C` is
+primitive, and the ambient pairing map onto `A_C` is surjective: `b_5` maps
+to `(1,0)` and `b_2+2b_5` maps to `(0,1)`.  Thus the graph glue is maximal
+and non-cyclic.  Set
+
+```text
+r=-v+w,             r_2=-2v+w,
+F'=3e+2f+r,          O'+F'=4e+3f+r_2.
+```
+
+Then
+
+```text
+A=[2 3; 3 4],        (d,s,t,z)=(2,1,1,0),
+G_0=[12 16; 16 24],  m=1.
+```
+
+The common core has rank 15, determinant 30,336 and no roots.  Both saturated
+bridges have determinant 32, discriminant group `ZZ/4+ZZ/8`, and glue order
+32.  Since `gcd(32,948)=4`, this maximality occurs at a shared bad prime and
+is not forced by (H-1c.8).
+
+The chamber gate is exact.  For every old-chamber root
+`R=alpha*e+beta*f+x` with `beta>0`,
+
+```text
+4*beta*(F'.R)=|beta*r-2x|^2-8.                       (H-1c.13)
+```
+
+The class `r+2R17` has minimum eight and exactly eight norm-eight vectors.
+For a negative intersection, (H-1c.13) rules out `beta>=3`; at `beta=2` it
+would force `x=r` and the root equation would give nonintegral `alpha`; at
+`beta=1` it would require a coset vector of norm at most four.  The old frame
+is rootless at `beta=0`.  Hence `F'` is nef in the old chamber.  The eight
+equality witnesses form four fibre-component pairs summing to `F'`; the four
+components disjoint from `O'=e+f-v` have Gram `4A1`.  All eight component
+intersections with `O'` are nonnegative, four zero and four one, so `O'` is a
+physical zero.  The root span is primitive.  At Picard rank 19,
+Shioda--Tate therefore gives a `4A1/MW13` fibration with trivial torsion.
+
+This new frame is not the historical H3 `4A1` stage.  Its number of
+norm-four pairs is 1,301, whereas the exact transported historical frame has
+1,263 and the physical q8/orbit376 frame has 1,337.  The respective full
+automorphism orders are 32, 32, and 64.  Thus the new construction is a
+distinct `J2` frame class, not a four-hop shortcut between already stored H3
+nodes.  Its important new feature is instead a degree-two rank-four transfer
+with maximal non-cyclic bridge glue.  The complete replay is
+[`elkies-k3-r17-local-bridge-mutation-v1.json`](../artifacts/generated-results/elkies-k3-r17-local-bridge-mutation-v1.json).
+Constructing its elliptic equation, determining its `J1` surface-automorphism
+orbit, and adding a Galois marking remain separate tasks.
+
+The structural part is a tailored consequence of unimodular splitting and
+Nikulin's primitive graph-glue formalism; no foundational novelty is claimed.
+The parity/Smith law is elementary.  The 42-edge support count and the R17
+maximal non-cyclic fibration are new exact computations.  Galois behavior is
+deliberately absent: after a Galois marking is supplied, Theorem A2 gives the
+equivariant rank-transfer identity.
 
 ### Theorem H: common-core graph-glue decomposition and 42-edge corpus
 
@@ -2888,18 +3411,174 @@ marked reverse mask, the analogous conclusion requires the source and target
 to lie in the same compatible level/spinor component; an unmarked lattice
 isometry need not preserve the distinguished discriminant summand.
 
-The finite evidence therefore supports, but does not prove for marked masks,
-the candidate equivalence
+The finite evidence isolates the following equivalence:
 
 ```text
 finite compatible-prime zero-support reachability
 <=> a zero-support state exists in the same marked spinor/level component.
 ```
 
-The unmarked one-spinor-genus root-defect direction follows non-effectively
-from the large-prime theorem.  At specified small primes, the finer state is
+The next theorem proves it for every discriminant/glue marking carried by a
+finite level structure.  At specified small primes, the finer state remains
 the prime-labelled physical-witness incidence/transition profile, not the
 spinor genus or defect count alone.
+
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MARKED-ROOTLESS-REACHABILITY 354cc7a9fc81f33e -->
+
+### Theorem H0i.3: marked rootless reachability at finite level
+
+Let `V` be a positive-definite rational quadratic space of dimension greater
+than two and let `Lambda` be an integral lattice in `V`.  Fix a finite set of
+primes `S` containing `2`, every prime at which `Lambda` is not unimodular,
+and every prime supporting the marking.  A **finite discriminant/glue marking**
+means a label on `Lambda_S` whose stabilizer
+
+```text
+K_S subset O(Lambda_S)
+```
+
+is compact open.  Equivalently for the applications here, the label and the
+orthogonal action on it factor through a finite quotient.  This includes a
+marked discriminant form, a distinguished finite quadratic summand, a fixed
+binary bridge, an isotropic graph subgroup or graph anti-isometry, and any
+finite combination of these data.  If several bridge or graph choices are
+allowed, include the selected choice in the label and apply the statement to
+the resulting finite disjoint union of level class sets.  Put
+
+```text
+K^lev = K_S times product_(q not in S) O(Lambda_q),
+X^lev = O(V) backslash O_V(A_f)/K^lev.
+```
+
+Thus `X^lev` is the finite set of marked isometry classes in the corresponding
+level genus.  Let
+
+```text
+s:X^lev -> S(K^lev)
+```
+
+be Chenevier's spinor-genus map and let `S_1(K^lev)` be the subgroup generated
+by the good-prime spinor displacements.  Define the **marked spinor/level
+component** of `x` to be the fibre of
+
+```text
+x |-> s(x) modulo S_1(K^lev).                       (H0i.8)
+```
+
+This is an adelically defined component, not a reachability definition.
+
+Suppose the marking functorially determines a graph-glue completion
+`W_x` and its reverse-mask physical witnesses, as in H0--H0d.  Let
+
+```text
+Z={z in X^lev : W_z is rootless}.
+```
+
+At an odd prime `p` outside `S`, direct a core `p`-neighbour edge when its
+isotropic line is nonorthogonal modulo `p` to every current physical forbidden
+witness.  Replacement witnesses may be born in the nonzero affine layers.
+Then, for every `x in X^lev`, the following are equivalent:
+
+1. `x` reaches `Z` by a finite sequence of directed good-prime edges;
+2. `Z` contains a state in the marked spinor/level component of `x`.
+
+More strongly, if `z in Z` satisfies
+
+```text
+s(z) = a*s(x),       a in S_1(K^lev),
+```
+
+then for every sufficiently large good prime `p` satisfying
+
+```text
+delta_p=a,                                             (H0i.9)
+```
+
+there is a single `p`-neighbour of `x` marked-isomorphic to `z`.  That edge
+is automatically directed and has no replacement defect.  The compatible
+primes (H0i.9) form a nonempty union of arithmetic progressions and have
+Dirichlet density `1/|S_1(K^lev)|`.
+
+Consequently, for every marked component containing a rootless state, there
+is a finite non-effective set of good primes from which every state in that
+component has a one-edge directed move to a rootless state.  One may choose at
+most one sufficiently large prime for each element of `S_1(K^lev)` occurring
+in that component.  If `S_1(K^lev)` is trivial, one sufficiently large good
+prime works simultaneously for the whole finite component.
+
+#### Proof
+
+First, the discriminant/glue markings used above really are level structures
+in Chenevier's sense.  Their data live on finite modules supported at `S`.
+The action of `O(Lambda_S)` on those modules is continuous with finite image,
+so the stabilizer of the selected label is a finite-index open subgroup of
+the compact group `O(Lambda_S)`, hence compact open.  Chenevier's level-class
+construction therefore identifies their marked genus with `X^lev`.  A marked
+isometry preserves the graph subgroup and extends to an isometry of the
+completed lattices, so rootlessness of `W_x` is well-defined on `X^lev`.
+
+Assume first that a finite directed path
+
+```text
+x=x_0 -> x_1 -> ... -> x_r=z
+```
+
+exists.  For a good `p`-neighbour Chenevier's local spinor calculation gives
+
+```text
+s(x_(i+1))=delta_p*s(x_i),       delta_p in S_1(K^lev).
+```
+
+The class (H0i.8) is therefore constant along every edge.  Since `z` is
+rootless, condition 2 follows.
+
+Conversely, let `z in Z` have the same class (H0i.8) as `x` and put
+`a=s(z)*s(x)^(-1)`.  Then `a` lies in `S_1(K^lev)`.  Chenevier's Remark 5.11
+shows that the good primes with `delta_p=a` form a nonempty union of arithmetic
+progressions, hence are infinite.  Along those primes, his Theorem 5.9 gives
+
+```text
+N_p(x,z)/c_V(p)
+  = (1/|Gamma_z|)/(m_(K^lev)/|S(K^lev)|) + O(p^(-1/2)).   (H0i.10)
+```
+
+The main term is strictly positive.  Thus `N_p(x,z)>0` for every sufficiently
+large compatible prime, and a `p`-neighbour `x'` of `x` is marked-isomorphic
+to `z`.
+
+It remains only to check that the edge retained by equidistribution obeys the
+directed physical-witness rule.  Write its isotropic line as `<y>` and let
+`r=k+c` be any physical root of the parent completion, with `k` in the core
+dual and `c` in the fixed bridge dual.  If `<k,y>=0 mod p`, Theorem H0i.1 puts
+`k` in the zero affine layer of the child dual, with the same discriminant
+label under the canonical prime-to-`p` identification.  The transported graph
+marking then puts `k+c` in the child completion, still with norm two.  This is
+impossible because `x'` is marked-isomorphic to the rootless state `z`.
+Hence every parent witness is nonorthogonal to `y`: the edge is directed.
+Rootlessness of the child also says that none of the nonzero affine layers
+creates a replacement witness.  This proves the equivalence and the stronger
+one-edge assertion.
+
+Finally `X^lev` and `S_1(K^lev)` are finite.  Fix a rootless target in the
+component, take the maximum of the finitely many source--target thresholds in
+(H0i.10), and choose one larger compatible prime for each required spinor
+displacement.  This gives the asserted finite prime set. QED.
+
+This proves the marked rootless-reachability conjecture for precisely the
+finite discriminant/glue states used by the reverse-mask calculus.  It rules
+out an all-good-prime directed trap inside one marked component, while leaving
+the observed fixed-prime traps intact.  It is non-effective: neither
+Chenevier's error term nor this argument supplies a usable threshold.  It
+also does not apply without another argument to an infinite marking that
+fixes exact rational vectors, a complete embedded core, a nef chamber, or an
+equation, because such a stabilizer need not be open.  Nor does it promote a
+core-neighbour to an elliptic-neighbour equation or a `J1` surface orbit.
+
+The external input is Chenevier,
+[*Statistics for Kneser p-neighbors*](https://doi.org/10.24033/bsmf.2852),
+Theorem 5.9 and Remarks 5.10--5.11; his Examples 5.2--5.4 identify ordinary
+and level-marked lattice class sets with `X(K)`.  The physical-witness final
+step is exactly the zero-layer survival theorem H0i.1.
 
 ### Corollary H0j: the NS0024 completed-core path realizes ranks `4,12,12,17`
 
@@ -3270,6 +3949,147 @@ with one materialization each, while deliberately invalidating any speed
 comparison with the weaker ADE-only fixture. The exact legacy-window
 diagnostics and the norm-4/6/8 fingerprints are recorded in
 [`INVERSE_ADE_TARGET_PLANNER_2026-09-03.md`](INVERSE_ADE_TARGET_PLANNER_2026-09-03.md).
+
+<!-- status-consumer: EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA b4a7edb452e6dcc7 -->
+
+### Theorem H0l.2: target-free projective birth strata
+
+Retain the hypotheses of Theorem H0l and assume in addition that `p` is prime
+to `det(C)`.  Reduction gives a canonical isomorphism
+
+```text
+red_p:K dual/p*K dual -> K/p*K,
+```
+
+because `p` is prime to `det(K)`.  For `(a,b) in H` and
+`c in C dual` with `[c]=b` and `c^2<=2`, define
+
+```text
+S_p(a,c)
+ = {z in K dual :
+      [z]=p*a in A_K,
+      z^2=p^2*(2-c^2),
+      red_p(z) != 0},                              (H0l.6)
+
+B_p(a,c)={projective red_p(z) : z in S_p(a,c)}
+          subset Q_p^iso.                          (H0l.7)
+```
+
+Only finitely many `c` and `z` occur.  Let `Omega_old` be the physical roots
+of the parent completion.  For an isotropic line `ell`, the complete physical
+root set of the child completion is the disjoint union
+
+```text
+Omega_ell
+ = {(x,c) in Omega_old : <x,ell>=0 mod p}
+   disjoint_union
+   {(z/p,c) :
+       (a,b) in H, [c]=b, c^2<=2,
+       z in S_p(a,c), projective red_p(z)=ell}.     (H0l.8)
+```
+
+The first set consists of old survivors and the second of births.  In
+particular the **no-birth locus**, with no marked target input, is
+
+```text
+Q_p^iso minus union_((a,b) in H) union_([c]=b,c^2<=2) B_p(a,c),  (H0l.9)
+```
+
+and the rootless locus is exactly
+
+```text
+Q_p^rootless
+ = Q_p^iso
+     minus union_((x,c) in Omega_old/{+1,-1})
+             {ell:<x,ell>=0 mod p}
+     minus union_((a,b),c) B_p(a,c).               (H0l.10)
+```
+
+Thus old roots give projective hyperplane sections and all possible births,
+including nonzero graph-glue births, give explicitly computable
+zero-dimensional arithmetic strata on the quadric.  No target core, target
+isometry class, historical line, or surviving-root equality occurs in
+(H0l.9)--(H0l.10).
+
+For a nonempty target ADE type, decorate every incidence cell with the roots
+in (H0l.8).  Products involving born roots are
+
+```text
+<(x,c),(z/p,c')>   = <x,z>/p+<c,c'>,
+<(z/p,c),(z'/p,c')>= <z,z'>/p^2+<c,c'>.            (H0l.11)
+```
+
+Together with the old-root products, Theorem H0k classifies the cell's exact
+ADE type.  Hence every prescribed abstract ADE locus is a finite union of
+explicit incidence cells, while rootless is the pure complement (H0l.10).
+
+#### Proof
+
+Let `(v,c)` be a born root of the child and put `z=p*v`.  The canonical
+discriminant identification (H0i.5) gives
+
+```text
+[z]=p*iota([v])=p*a.
+```
+
+Its norm is `z^2=p^2*(2-c^2)`.  Formula (H0i.3) writes
+
+```text
+v=x+j*y/p,       x in K_y dual,       0<j<p,
+```
+
+so `z=p*x+j*y` has nonzero projective reduction `ell`.  This maps every birth
+into the second set of (H0l.8).
+
+Conversely, take `z in S_p(a,c)` with projective reduction `ell`, choose an
+adjusted lift `y` of `ell`, and write
+
+```text
+z=p*x+j*y,       x in K dual,       0<j<p.
+```
+
+The class condition in (H0l.6) gives `[x]=a`.  Expanding the norm equation
+gives
+
+```text
+p^2*x^2+2*p*j*<x,y>+j^2*y^2=p^2*(2-c^2).
+```
+
+Every term except `2*p*j*<x,y>` is divisible by `p^2` in `ZZ_(p)`:
+`x^2` and `c^2` are `p`-integral by the good-prime hypotheses, and the
+adjusted lift has `y^2=0 mod 2*p^2`.  Since `<x,y>` is integral and `p` is
+odd, this forces `<x,y>=0 mod p`.  Therefore `x in K_y dual`, so H0i.3 puts
+`z/p=x+j*y/p` in `N_ell dual`.  Its transported class is `a`; the graph
+condition and the norm equation make `(z/p,c)` a child root.  This proves the
+bijection for births.
+
+The zero layer of H0i.3 gives the first set in (H0l.8), and the two layer
+types are disjoint.  Equations (H0l.9) and (H0l.10) follow.  Polarization gives
+(H0l.11), after which Theorem H0k supplies the ADE classification. QED.
+
+The checker
+[`certify_inverse_ade_projective_birth_strata.sage`](scripts/certify_inverse_ade_projective_birth_strata.sage)
+exhausts every isotropic line for every state and analyzed prime in the three
+mass-closed ternary defect genera.  Across 48 state/prime cases, it projects
+324 signed scaled-shell vectors to 131 birth-stratum points and makes 346
+exact root-set comparisons with independently materialized children.  The
+sets agree in every case, and (H0l.10) predicts exactly all 192 rootless
+lines.  A separate index-two graph-glue control exhausts six `p=5` lines;
+every line has 16 born roots in the nonzero glue coset and its complete
+predicted root set equals the independently materialized completion.  Thus
+the checker makes 352 exact set comparisons in total.  The certificate is
+[`elkies-k3-inverse-ade-projective-birth-strata-v1.json`](../artifacts/generated-results/elkies-k3-inverse-ade-projective-birth-strata-v1.json),
+and the construction note is
+[`INVERSE_ADE_PROJECTIVE_BIRTH_STRATA_2026-09-03.md`](INVERSE_ADE_PROJECTIVE_BIRTH_STRATA_2026-09-03.md).
+
+This theorem eliminates the affine variable before line enumeration, but it
+does not prove a uniform speedup.  In rank `r`, a shell at norm proportional
+to `p^2` can itself have order `p^(r-2)` representations, the same scale as
+the projective quadric.  A practical rank-15 implementation must choose among
+explicit shell expansion, automorphism-orbit compression, and the existing
+lazy affine-CVP oracle.  The 936 bulk foundry rows also still lack the
+compatible source marking and core/bridge/graph data needed to instantiate
+the strata; no readiness claim follows from the theorem alone.
 
 ### Negative experiment H0: the orthogonal split is not a useful predictor
 
@@ -3655,6 +4475,73 @@ The replay artifact is
 This closes the earlier degree-at-most-four search globally at J2 level; it
 does not classify all frame isometry classes or construct equations.
 
+### Theorem H6: rootless mass is determined by local ADE representation averages
+
+<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS 2f5b874c0c22133b -->
+
+Let `G` be a positive even genus and put
+
+```text
+mass(G) = sum_[L in G] 1/|O(L)|,
+mu_0(G) = sum_[L in G, Phi(L)=empty] 1/|O(L)|.
+```
+
+With `theta_L(q)=sum_x q^(x^2/2)` and the mass-normalized weighted genus
+theta series `Theta_G`, set `a_1(G)=[q]Theta_G`.  Then
+
+```text
+mu_0(G)/mass(G) >= 1-a_1(G)/2.
+```
+
+In particular `a_1(G)<2` proves that `G` contains a rootless class.
+
+More generally, list the ADE root lattices `R_0=0,R_1,...,R_s` of rank at
+most `rank(G)` in increasing order of root count, and define
+
+```text
+mu_j = sum_[L in G, <Phi(L)> isometric to R_j] 1/|O(L)|,
+A_i  = sum_[L in G] r(L,R_i)/|O(L)|.
+```
+
+Then
+
+```text
+A_i = sum_j r(R_j,R_i) mu_j.
+```
+
+The matrix `U_(i,j)=r(R_j,R_i)` is upper triangular with diagonal
+`|O(R_i)|`; hence it is invertible.  Siegel's weighted representation theorem
+computes every `A_i/mass(G)` from the local genus data.  Consequently
+
+```text
+(mu_0,...,mu_s)^t = U^(-1)(A_0,...,A_s)^t,
+m(G)=0 if and only if mu_0>0.
+```
+
+#### Proof and implementation boundary
+
+The proof, the quantitative refinement using locally excluded root systems,
+and the exact rank-17 local formula are in
+[`ROOTLESS_GENUS_THEORY_2026-09-03.md`](ROOTLESS_GENUS_THEORY_2026-09-03.md).
+This is King's prescribed-root-system mass inversion applied to a fixed even
+genus, not a new mass formula.
+
+The checker
+[`certify_rootless_genus_first_moment.sage`](scripts/certify_rootless_genus_first_moment.sage)
+implements only the `A1` row.  It obtains exact weighted root means
+
+```text
+det 78:  2913380886349/59299224796,
+det 948: 7957563723128755857618/562456712956783562285,
+det 950: 4967763637986279936/352882035745379473.
+```
+
+All exceed two.  Thus the cheap criterion is inconclusive on all three
+controls even though the latter two contain explicit rootless frames.  For
+determinant 78, the local formula agrees exactly with the independent
+weighted sum over the complete 1,549-class census.  Higher ADE averages and
+the full inversion for determinants 948 and 950 have not been computed.
+
 ## 7B. Integral character glue
 
 ### Theorem I: involution eigensublattices are joined by a 2-primary graph
@@ -3895,9 +4782,11 @@ examples:
    be reached by a path whose root rank never increases.
 3. **Controlled equation cost:** such a path can be chosen with uniformly
    bounded pole order, resolved-RR dimension, and coefficient growth.
-4. **Uniform ADE compiler:** the saturated local module is determined by a
-   finite combinatorial package of resolved component and marking data.
-   ADE type alone is demonstrably insufficient.
+4. **Uniform ADE adapter:** Theorem F1u closes the generic-fibre and bounded
+   linear-algebra compiler for every marked old-degree-two divisor.  What is
+   still open is deriving its saturated local matrices from a finite
+   combinatorial package without supplying resolved charts.  ADE type alone
+   is demonstrably insufficient.
 5. **Specialization transfer:** a generic high-rank K3 route yields useful
    rational specializations with independently retained section rank.
 
