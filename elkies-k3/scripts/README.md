@@ -3316,6 +3316,20 @@ sage -python compile_r17_norm12_orbit11952_qq.sage
 sage -python compile_r17_norm12_orbit11952_qq.sage --check
 ```
 
+<!-- status-consumer: EC-K3-R17-NORM12-11952-CONTROL-J-PREIMAGES 1ef38474a0d7f629 -->
+
+`certify_r17_norm12_11952_control_j_preimages.sage` tests whether the four
+published-R17 rank-25--28 control curves occur at rational parameters of the
+alternate family.  It factors the exact degree-24 cross-multiplied `j`-preimage
+polynomial for each control and checks both finite and infinite rational roots.
+All four have no rational alternate preimage, so alternate-native calibration
+fibres are required.
+
+```bash
+sage -python certify_r17_norm12_11952_control_j_preimages.sage
+sage -python certify_r17_norm12_11952_control_j_preimages.sage --check
+```
+
 ## Alternate-Q80 rootless equation handoff
 
 `build_q80_alternate_final_divisor_handoff.sage` is the fail-closed

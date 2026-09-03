@@ -18834,6 +18834,23 @@ and transports sixteen old sections plus `orbit-0adf9` to a saturated
 seventeen-section basis.  See
 [`elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md`](elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md).
 
+<!-- status-consumer: EC-K3-R17-NORM12-11952-CONTROL-J-PREIMAGES 1ef38474a0d7f629 -->
+
+Test exact rational-fibre accessibility of the four published rank-25--28
+controls under the alternate `j`-map:
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_11952_control_j_preimages.sage
+
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_11952_control_j_preimages.sage --check
+```
+
+The four degree-24 preimage polynomials have no rational finite root and no
+root at infinity.  Hence the published controls are not rational fibres of the
+alternate family, even after allowing quadratic twists.
+
 Run the exact `H=10000` point-map-relation control on the deterministic
 seeded sample of ten other pointed covers:
 

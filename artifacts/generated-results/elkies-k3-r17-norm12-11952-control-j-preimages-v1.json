@@ -1,0 +1,95 @@
+{
+  "claim_boundary": {
+    "not_proved": [
+      "absence of algebraic alternate parameters of degree above one",
+      "any rank statistic for rational fibres of the alternate family",
+      "any comparison of low-degree multisection visibility after a different calibration set is chosen"
+    ],
+    "proved": [
+      "no rational parameter of the direct alternate-Q80 family has the same j-invariant as any published rank-25--28 control",
+      "the four old control curves therefore cannot be used as literal rational-fibre specialization controls in the alternate chart"
+    ]
+  },
+  "conclusion": "None of the four published rank-25--28 control curves occurs, even up to geometric isomorphism or quadratic twist, as a rational fibre of the direct alternate-Q80 family.",
+  "controls": [
+    {
+      "factor_degree_exponents_over_QQ": [
+        [
+          24,
+          1
+        ]
+      ],
+      "finite_rational_roots": [],
+      "j_preimage_degree": 24,
+      "published_parameter": "-2/377",
+      "rank_label": "rank_at_least_25",
+      "rational_alternate_fibre": false,
+      "root_at_infinity": false
+    },
+    {
+      "factor_degree_exponents_over_QQ": [
+        [
+          24,
+          1
+        ]
+      ],
+      "finite_rational_roots": [],
+      "j_preimage_degree": 24,
+      "published_parameter": "-308/251",
+      "rank_label": "rank_at_least_26",
+      "rational_alternate_fibre": false,
+      "root_at_infinity": false
+    },
+    {
+      "factor_degree_exponents_over_QQ": [
+        [
+          24,
+          1
+        ]
+      ],
+      "finite_rational_roots": [],
+      "j_preimage_degree": 24,
+      "published_parameter": "2456/135",
+      "rank_label": "rank_at_least_27",
+      "rational_alternate_fibre": false,
+      "root_at_infinity": false
+    },
+    {
+      "factor_degree_exponents_over_QQ": [
+        [
+          24,
+          1
+        ]
+      ],
+      "finite_rational_roots": [],
+      "j_preimage_degree": 24,
+      "published_parameter": "-9529/5471",
+      "rank_label": "rank_at_least_28",
+      "rational_alternate_fibre": false,
+      "root_at_infinity": false
+    }
+  ],
+  "inputs": {
+    "alternate": {
+      "path": "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+      "sha256": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66"
+    },
+    "published": {
+      "path": "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
+      "sha256": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869"
+    }
+  },
+  "method": {
+    "equation": "A_alt(u)^3*B_old(t0)^2-A_old(t0)^3*B_alt(u)^2=0",
+    "finite_gate": "no linear factor over QQ",
+    "infinity_gate": "the degree remains 24",
+    "projective_degree": 24
+  },
+  "reproduce": "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python elkies-k3/scripts/certify_r17_norm12_11952_control_j_preimages.sage --output artifacts/generated-results/elkies-k3-r17-norm12-11952-control-j-preimages-v1.json",
+  "schema": "elkies-k3.r17-norm12-11952-control-j-preimages.v1",
+  "status": "PASS_NO_RATIONAL_ALTERNATE_J_PREIMAGE_FOR_PUBLISHED_RANK25_28_CONTROLS",
+  "worker": {
+    "path": "elkies-k3/scripts/certify_r17_norm12_11952_control_j_preimages.sage",
+    "sha256": "d603f68a73c567497f7209a5639983d430082f35afeb9619cc5f7caeb3ac9245"
+  }
+}

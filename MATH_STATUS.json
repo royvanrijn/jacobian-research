@@ -38361,6 +38361,44 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-11952-CONTROL-J-PREIMAGES",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "No rational alternate-Q80 fibres realize the four published R17 high-rank controls",
+      "scope": "For each published-R17 rank-25--28 control parameter t0=-2/377,-308/251,2456/135,-9529/5471, exact equality of j-invariants with the direct norm12-orbit-11952 alternate-Q80 family is the projective degree-24 equation A_alt(u)^3 B_old(t0)^2-A_old(t0)^3 B_alt(u)^2=0. Each polynomial has no linear factor over QQ and retains degree 24, so it has neither a finite rational root nor a root at infinity. Therefore none of the four control curves occurs, even up to geometric isomorphism or quadratic twist, as a rational fibre of the alternate family. This makes the requested literal transfer of published-control quotient fingerprints inapplicable and requires alternate-native calibration fibres. It does not exclude algebraic alternate parameters, isogenies, or high-rank rational fibres elsewhere in the alternate family, and proves no rank statistic or low-degree visibility comparison.",
+      "canonical_source": "elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_norm12_11952_control_j_preimages.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d603f68a73c567497f7209a5639983d430082f35afeb9619cc5f7caeb3ac9245",
+      "software_lock": [
+        "elkies-k3/scripts/certify_r17_norm12_11952_control_j_preimages.sage",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-control-j-preimages-v1.json"
+      ],
+      "supersedes_notes": [
+        "the four published-R17 rank-25--28 controls can be assumed to occur at rational alternate-Q80 parameters"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
     }
   ]
 }

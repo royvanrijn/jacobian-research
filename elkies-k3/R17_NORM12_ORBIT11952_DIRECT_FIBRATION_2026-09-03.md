@@ -134,6 +134,37 @@ frame has determinant `-1`, and their height Gram is rootless of determinant
 948.  They are therefore a saturated Mordell--Weil basis, not merely seventeen
 independent points.
 
+<!-- status-consumer: EC-K3-R17-NORM12-11952-CONTROL-J-PREIMAGES 1ef38474a0d7f629 -->
+
+## Published controls are not rational fibres
+
+The four published-R17 rank-25--28 controls cannot be reused as literal
+rational-fibre controls in the alternate chart.  For each published parameter
+`t0`, exact cross-multiplication of the two `j`-maps gives
+
+```text
+A_alt(u)^3 B_old(t0)^2 - A_old(t0)^3 B_alt(u)^2 = 0.
+```
+
+Each resulting polynomial has full projective degree 24, has no linear factor
+over `QQ`, and has no root at infinity.  Thus none of the four curves occurs,
+even up to geometric isomorphism or quadratic twist, at a rational alternate
+parameter.  This is an exact accessibility obstruction, not evidence against
+high-rank rational fibres in the alternate family.  Alternate-native controls
+must therefore be found before quotient minima and low-degree visibility can
+be compared fairly.
+
+The exact records are stored in
+[`../artifacts/generated-results/elkies-k3-r17-norm12-11952-control-j-preimages-v1.json`](../artifacts/generated-results/elkies-k3-r17-norm12-11952-control-j-preimages-v1.json).
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_11952_control_j_preimages.sage
+
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_11952_control_j_preimages.sage --check
+```
+
 ## Replay
 
 ```bash
