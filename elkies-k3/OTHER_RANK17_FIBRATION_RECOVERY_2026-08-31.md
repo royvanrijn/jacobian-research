@@ -169,13 +169,17 @@ eight.
 | candidate | structural value | old-fibre degree | RR/local cost | equation status | priority |
 | --- | --- | ---: | --- | --- | ---: |
 | published R17 | exact control and exclusion map | 2 on final construction edge | completed | exact over `QQ` | control |
-| alternate q80 q4--q6 frame | unique non-published rootless `J2` class; strongest rank-29 provenance candidate currently present | 2 | `h0=5`, three local transforms, final kernel 2 | generic characteristic-zero parent/child open; exact `GF(73)` specialization shadow | 1 |
+| direct norm12-orbit-11952 pencil on published R17 | exact degree-two copy of the unique non-published rootless `J2` class, sharing the old zero | 2 | `h0=2`; resolved basis and Jacobian open | exact irreducible smooth genus-one member over `QQ`; pencil equation open | 1 |
+| historical alternate q80 q4--q6 frame | same non-published rootless `J2` class in a different marking | 2 only after reaching its A1 parent; 11,511 from published R17 | `h0=5`, three local transforms, final kernel 2 | generic characteristic-zero parent/child open; exact `GF(73)` specialization shadow | fallback |
 
-The apparent simplicity of the final q6 is conditional on reaching its own
-generic parent equation.  Transporting the q80 corridor directly from the
-current H3 `D12` equation has enormous degree and is not a viable shortcut.
-Construction should resume from the q80 characteristic-zero checkpoints, not
-by pulling this fibre through the published R17 equation.
+The new minimum-accessibility classifier changes the route choice without
+changing the `J2` classification.  Ten of the 43 exact norm-twelve genus-one
+bisections have alternate-Q80 frame complement.  Their fibre intersection with
+published R17 is the absolute minimum two, and the old zero is already their
+section.  See
+[`J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md`](J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md).
+The apparent simplicity of the historical final q6 remains conditional on
+reaching its own generic parent equation, so that route is now a fallback.
 
 ## Classification programme
 

@@ -11,6 +11,7 @@
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 80de8b6727cd3409 -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH a755a3956c4c97cb -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE d32b35b66a35627c -->
+<!-- status-consumer: EC-K3-NS0024-INVERSE-ADE-MUTATION 5c56f07d14129837 -->
 <!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
 <!-- status-consumer: EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL 648ec884ce7152bb -->
 <!-- status-consumer: EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE 52de13c8443f2b7d -->
@@ -223,6 +224,29 @@ not determine those last two invariants.  The exact NS0024 controls recover
 five nonzero graph-glue labels; Q80 controls recognize `4A1` and `A1`.  See
 Theorem H0k and the
 [`metric physical-witness certificate`](../artifacts/generated-results/elkies-k3-integral-rank-transfer-root-system-signature-v1.json).
+
+The forward metric signature now has an exact inverse at a fixed good-prime
+line.  Given `K,C,H` and `y`, old physical roots impose modular survival or
+death conditions `<k,y>=0` or nonzero modulo `p`; every possible birth is a
+vector in one of the finite affine shells
+
+```text
+M+r_a+k_a+j*y/p,       k^2=2-c^2,
+```
+
+joined to a bridge vector `c` through `H`.  Requiring the resulting complete
+metric to equal the desired ADE root system, and every unselected shell to be
+empty, is necessary and sufficient.  For an abstract ADE label this is a
+finite disjunction over marked witness templates; for a selected template it
+is a direct conjunction of modular incidence and affine-CVP constraints.
+
+The first NS0024 `p=17` edge supplies the initial exact control.  Of the 140
+`D5+E8` root lines, six prescribed modular forms vanish and 134 are nonzero;
+the six survivors span `3A1+A2`, while exhaustive nonzero-layer and order-191
+graph-glue enumeration produces no birth or extra root.  Independent child
+construction afterward gives the same physical root set.  See Theorem H0l
+and the
+[`inverse-ADE certificate`](../artifacts/generated-results/elkies-k3-ns0024-inverse-ade-mutation-v1.json).
 
 Literal Nikulin discriminant-form glue occurs in the Niemeier complement
 constructions.  A closely related finite-index saturation quotient occurs in
@@ -768,6 +792,13 @@ Replay the exact inverse theta-convolution enumerator:
 ```bash
 sage -python \
   elkies-k3/scripts/certify_integral_rank_transfer_theta_convolution.sage --check
+```
+
+Replay the first exact inverse-ADE mutation control:
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_ns0024_inverse_ade_mutation.sage --check
 ```
 
 Byte-check the norm-12 `0x103b2` character tuple while reusing its pinned full

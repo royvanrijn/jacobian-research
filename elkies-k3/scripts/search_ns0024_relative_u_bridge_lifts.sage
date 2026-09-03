@@ -21,6 +21,8 @@ import json
 from pathlib import Path
 import runpy
 
+import numpy as np
+
 from sage.all import QQ, ZZ, block_diagonal_matrix, identity_matrix, lcm, matrix, pari, vector
 
 
@@ -227,6 +229,37 @@ def verified_qfisom(left, right):
     raise ArithmeticError("PARI qfisom returned an unrecognized orientation")
 
 
+def exact_int64_pairings(left_rows, gram, right_rows):
+    """Return ``left_rows * gram * right_rows^t`` after an overflow proof.
+
+    The relative-U search spends most of its time rejecting representations by
+    their surviving source roots.  The matrices in this search are small enough
+    for exact signed 64-bit arithmetic, but make that a checked hypothesis rather
+    than silently relying on NumPy overflow behavior.
+    """
+    left = np.asarray(rows(left_rows), dtype=np.int64)
+    middle = np.asarray(rows(gram), dtype=np.int64)
+    right = np.asarray(rows(right_rows), dtype=np.int64)
+    if left.ndim == 1:
+        left = left.reshape((1, -1))
+    if right.ndim == 1:
+        right = right.reshape((1, -1))
+    factors = (
+        left.shape[1] ** 2,
+        int(np.max(np.abs(left), initial=0)),
+        int(np.max(np.abs(middle), initial=0)),
+        int(np.max(np.abs(right), initial=0)),
+    )
+    bound = 1
+    for factor in factors:
+        bound *= factor
+    if bound >= 2**62:
+        raise OverflowError(
+            "relative-U pairing block does not have a certified int64 bound"
+        )
+    return left @ middle @ right.transpose()
+
+
 def construct_relative_u(frame, A, w_1, w_2):
     ns = block_diagonal_matrix(J, -frame)
     w_rows = matrix(ZZ, [list(w_1), list(w_2)])
@@ -252,6 +285,7 @@ def search_edge(
     t_values,
     z_values,
     shell_cache,
+    pairing_chunk_size=20000,
 ):
     counters = Counter()
     degree_summaries = []
@@ -295,7 +329,6 @@ def search_edge(
                     inverse_reduction = reduction.inverse().change_ring(ZZ)
                     shell_2_matrix = matrix(ZZ, [list(value) for value in shell_2])
                     for reduced_w_1 in shell_1:
-                        row = reduced_w_1 * source
                         root_pairings_1 = source_root_matrix * source * reduced_w_1
                         roots_orthogonal_to_first = matrix(
                             ZZ,
@@ -305,89 +338,100 @@ def search_edge(
                                 if pairing == 0
                             ],
                         )
-                        shell_2_pairings = row * shell_2_matrix.transpose()
+                        shell_2_pairings = exact_int64_pairings(
+                            matrix(ZZ, [list(reduced_w_1)]),
+                            source,
+                            shell_2_matrix,
+                        )[0]
                         matching_second_indices = [
                             index
                             for index, pairing in enumerate(shell_2_pairings)
                             if pairing == reduced_gram[0, 1]
                         ]
-                        for second_index in matching_second_indices:
-                            reduced_w_2 = shell_2_matrix.row(second_index)
-                            counters["representations"] += 1
-                            w_rows = inverse_reduction * matrix(
-                                ZZ, [list(reduced_w_1), list(reduced_w_2)]
-                            )
-                            w_1 = w_rows.row(0)
-                            w_2 = w_rows.row(1)
-                            assert w_rows * source * w_rows.transpose() == G_A
-                            second_pairings = (
-                                roots_orthogonal_to_first
-                                * source
-                                * reduced_w_2
-                            )
-                            zero_indices = [
-                                root_index
-                                for root_index, pairing in enumerate(second_pairings)
-                                if pairing == 0
+                        for chunk_start in range(
+                            0, len(matching_second_indices), pairing_chunk_size
+                        ):
+                            chunk_indices = matching_second_indices[
+                                chunk_start : chunk_start + pairing_chunk_size
                             ]
-                            core_root_count = len(zero_indices)
-                            if core_root_count > expected_root_data[1]:
-                                counters["rejected_by_core_root_count"] += 1
-                                continue
-                            core_roots = matrix(
+                            chunk = matrix(
                                 ZZ,
-                                [
-                                    list(roots_orthogonal_to_first.row(root_index))
-                                    for root_index in zero_indices
-                                ],
+                                [list(shell_2_matrix.row(index)) for index in chunk_indices],
                             )
-                            core_root_rank = (
-                                0
-                                if not core_root_count
-                                else core_roots.rank()
+                            root_pairing_block = exact_int64_pairings(
+                                roots_orthogonal_to_first, source, chunk
                             )
-                            if core_root_rank > expected_root_data[0]:
-                                counters["rejected_by_core_root_rank"] += 1
-                                continue
-                            counters["core_root_bound_survivors"] += 1
-                            child, transport, u_prime, complement = construct_relative_u(
-                                source, A, w_1, w_2
+                            zero_counts = np.count_nonzero(
+                                root_pairing_block == 0, axis=0
                             )
-                            counters["primitive_u_markings"] += 1
-                            if root_data(child) != expected_root_data:
-                                continue
-                            counters["root_profile_matches"] += 1
-                            isometry = verified_qfisom(child, target)
-                            if isometry is None:
-                                continue
-                            counters["integral_isometry_matches"] += 1
-                            return {
-                                "status": "HIT",
-                                "degree": degree,
-                                "intersection_coordinates": {
-                                    "F_dot_F_prime": degree,
-                                    "F_dot_O_prime": s,
-                                    "O_dot_F_prime": t,
-                                    "O_dot_O_prime": z,
-                                },
-                                "cross_pairing_A": rows(A),
-                                "positive_projection_gram_G_A": rows(G_A),
-                                "binary_reduction": {
-                                    "basis_change": rows(reduction),
-                                    "reduced_gram": rows(reduced_gram),
-                                },
-                                "projected_vectors_in_source_frame": [
-                                    list(map(int, w_1)),
-                                    list(map(int, w_2)),
-                                ],
-                                "primitive_u_basis_in_source_ns": rows(u_prime),
-                                "child_frame_basis_in_source_ns": rows(complement),
-                                "child_frame_gram": rows(child),
-                                "target_isometry": rows(isometry),
-                                "counters_through_hit": dict(counters),
-                                "degree_summaries_before_hit": degree_summaries,
-                                "search_order": "degree,s,t,z,source-shell vectors",
-                            }, transport
+                            for local_index, second_index in enumerate(chunk_indices):
+                                reduced_w_2 = shell_2_matrix.row(second_index)
+                                counters["representations"] += 1
+                                core_root_count = int(zero_counts[local_index])
+                                if core_root_count > expected_root_data[1]:
+                                    counters["rejected_by_core_root_count"] += 1
+                                    continue
+                                zero_indices = np.flatnonzero(
+                                    root_pairing_block[:, local_index] == 0
+                                )
+                                core_roots = matrix(
+                                    ZZ,
+                                    [
+                                        list(roots_orthogonal_to_first.row(int(root_index)))
+                                        for root_index in zero_indices
+                                    ],
+                                )
+                                core_root_rank = (
+                                    0 if not core_root_count else core_roots.rank()
+                                )
+                                if core_root_rank > expected_root_data[0]:
+                                    counters["rejected_by_core_root_rank"] += 1
+                                    continue
+                                w_rows = inverse_reduction * matrix(
+                                    ZZ, [list(reduced_w_1), list(reduced_w_2)]
+                                )
+                                w_1 = w_rows.row(0)
+                                w_2 = w_rows.row(1)
+                                assert w_rows * source * w_rows.transpose() == G_A
+                                counters["core_root_bound_survivors"] += 1
+                                child, transport, u_prime, complement = construct_relative_u(
+                                    source, A, w_1, w_2
+                                )
+                                counters["primitive_u_markings"] += 1
+                                if root_data(child) != expected_root_data:
+                                    continue
+                                counters["root_profile_matches"] += 1
+                                isometry = verified_qfisom(child, target)
+                                if isometry is None:
+                                    continue
+                                counters["integral_isometry_matches"] += 1
+                                return {
+                                    "status": "HIT",
+                                    "degree": degree,
+                                    "intersection_coordinates": {
+                                        "F_dot_F_prime": degree,
+                                        "F_dot_O_prime": s,
+                                        "O_dot_F_prime": t,
+                                        "O_dot_O_prime": z,
+                                    },
+                                    "cross_pairing_A": rows(A),
+                                    "positive_projection_gram_G_A": rows(G_A),
+                                    "binary_reduction": {
+                                        "basis_change": rows(reduction),
+                                        "reduced_gram": rows(reduced_gram),
+                                    },
+                                    "projected_vectors_in_source_frame": [
+                                        list(map(int, w_1)),
+                                        list(map(int, w_2)),
+                                    ],
+                                    "primitive_u_basis_in_source_ns": rows(u_prime),
+                                    "child_frame_basis_in_source_ns": rows(complement),
+                                    "child_frame_gram": rows(child),
+                                    "target_isometry": rows(isometry),
+                                    "counters_through_hit": dict(counters),
+                                    "degree_summaries_before_hit": degree_summaries,
+                                    "search_order": "degree,s,t,z,source-shell vectors",
+                                }, transport
         degree_summaries.append(
             {
                 "degree": degree,
@@ -556,8 +600,18 @@ def main():
             "sage -python elkies-k3/scripts/search_ns0024_relative_u_bridge_lifts.sage "
             + "--degrees "
             + " ".join(map(str, arguments.degrees))
-            + f" --max-s {arguments.max_s} --max-t {arguments.max_t} "
-            + f"--max-z {arguments.max_z} --output {relative(arguments.output if arguments.output.is_absolute() else ROOT / arguments.output)}"
+            + " --s-values "
+            + " ".join(map(str, s_values))
+            + " --t-values "
+            + " ".join(map(str, t_values))
+            + " --z-values "
+            + " ".join(map(str, z_values))
+            + " --output "
+            + relative(
+                arguments.output
+                if arguments.output.is_absolute()
+                else ROOT / arguments.output
+            )
         ),
     }
     output = arguments.output if arguments.output.is_absolute() else ROOT / arguments.output

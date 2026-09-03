@@ -77,6 +77,186 @@ This proves the rank changes in the H3 and Q80 lattice corridors once the
 marked fibrations, Picard rank, and root systems are certified. It does not
 construct explicit coordinates for the new sections.
 
+### Theorem A2: equivariant arithmetic rank transfer
+
+Let `K` be a characteristic-zero field with algebraic closure `Kbar`, let
+`X/K` be a smooth projective K3 surface, and let
+
+```text
+pi_i:X -> C_i,       i=1,2,
+```
+
+be Jacobian elliptic fibrations defined over `K`, with fibre and zero-section
+classes `F_i,O_i` defined over `K`.  Put
+
+```text
+V = NS(X_Kbar) tensor QQ,
+U_i = <F_i,O_i+F_i>,
+W_i = U_i^perp in V,
+R_i = QQ-span of the nonidentity geometric reducible-fibre components,
+M_i = MW(pi_i over Kbar) tensor QQ.
+```
+
+The continuous action of `G_K` on `NS(X_Kbar)` has finite image `Gamma`.
+Each `U_i` is fixed pointwise, while `W_i` and `R_i` are `Gamma`-stable, and
+there are natural `QQ[Gamma]`-module isomorphisms
+
+```text
+M_i = V/(U_i+R_i) = W_i/R_i.                       (A2.1)
+```
+
+Consequently
+
+```text
+rank MW(pi_i/K(C_i))
+  = dim_QQ (W_i/R_i)^Gamma
+  = dim_QQ V^Gamma - 2 - dim_QQ R_i^Gamma.          (A2.2)
+```
+
+More strongly, in the rational representation ring of `Gamma`,
+
+```text
+[M_2]-[M_1] = [R_1]-[R_2].                         (A2.3)
+```
+
+Taking the multiplicity of the trivial representation gives the arithmetic
+rank-mutation law
+
+```text
+rank MW(pi_2/K(C_2)) - rank MW(pi_1/K(C_1))
+  = dim_QQ R_1^Gamma - dim_QQ R_2^Gamma.            (A2.4)
+```
+
+Thus a geometric root direction transferred to Mordell--Weil contributes a
+`K`-rational rank direction exactly to the extent that its transferred
+representation contains the trivial representation.
+
+#### Proof
+
+The classes `F_i,O_i` are fixed by `G_K`, so `U_i` is the trivial
+two-dimensional representation.  Its Gram matrix is the unimodular
+hyperbolic plane, hence it splits off integrally from `NS(X_Kbar)` and its
+orthogonal complement is Galois-stable.  Galois permutes the geometric
+reducible fibres and their components; because it fixes the zero section, it
+preserves the identity components and therefore preserves `R_i`.
+
+Shioda's natural identification of sections with the Neron--Severi quotient
+is Galois-equivariant and gives
+
+```text
+MW(pi_i over Kbar) = NS(X_Kbar)/(U_i+R_i).
+```
+
+Tensoring with `QQ` and using the orthogonal splitting by `U_i` gives
+(A2.1).  The action on the finitely generated discrete Neron--Severi group is
+continuous, so it factors through a finite quotient `Gamma`.  Taking
+`Gamma`-invariants is exact over `QQ` by averaging.  Applying invariants to
+
+```text
+0 -> R_i -> W_i -> M_i -> 0
+```
+
+and using `V=U_i direct_sum W_i` proves (A2.2).  Galois descent identifies
+the fixed geometric sections with `MW(pi_i/K(C_i))`; tensoring commutes with
+fixed rank for a finitely generated group and a finite action.  Finally
+
+```text
+[M_i]=[V]-[QQ^2]-[R_i]
+```
+
+in the representation ring.  Subtracting the two identities gives (A2.3),
+and taking trivial multiplicities gives (A2.4). QED.
+
+For a general finite Galois image, the canonical decomposition is into
+irreducible rational representations, not necessarily one-dimensional
+characters.  A character-eigenspace decomposition applies to an abelian deck
+or Galois group after passing to a splitting coefficient field.  Integrally,
+the exact object is `(W_i/R_i)^Gamma`: invariants need not commute with
+forming the quotient over `ZZ`, and replacing it by
+`W_i^Gamma/R_i^Gamma` can miss finite-index and cohomological corrections.
+
+### Corollary A2.1: rational-source inheritance
+
+In the setting of Theorem A2, suppose one `K`-defined marked fibration on
+`X` supplies `rho(X_Kbar)` independent divisor classes defined over `K`.
+For example, it is enough that its fibre, zero section, a basis of its
+geometric fibre-root space, and enough independent `K(C)`-sections total
+`rho(X_Kbar)` independent classes.  Then
+
+```text
+V^Gamma=V.                                           (A2.5)
+```
+
+Let `F',O'` be another primitive marked `U` whose classes are represented by
+`K`-divisors, with `F'` nef and isotropic and `O'` an effective irreducible
+`(-2)`-curve satisfying `F'.O'=1`.  Then its Jacobian fibration descends to
+`K`, and
+
+```text
+rank MW(pi'/K(C')) = rho(X_Kbar)-2-rank(R').         (A2.6)
+```
+
+In particular a rootless target on a Picard-rank-19 K3 has arithmetic
+Mordell--Weil rank seventeen.  An integral basis of rational divisors is not
+needed for this rank conclusion; it is needed to certify the full integral
+Neron--Severi and Mordell--Weil lattices.
+
+#### Proof
+
+The independent rational classes span `V`, so every element of `Gamma` fixes
+`V` pointwise, proving (A2.5).  Since `F'` is represented by a divisor over
+`K`, its line bundle is defined over `K`.  Cohomology commutes with the
+extension to `Kbar`; Theorem C gives a two-dimensional, base-point-free
+space of sections after that extension, hence already a `K`-rational pencil.
+The curve `O'` supplies its `K`-rational zero section.  Apply (A2.2) with
+trivial action on `V` and hence on `R'` to obtain (A2.6). QED.
+
+The hypothesis that the new marked `U` descends cannot be omitted.  A
+geometric isotropic class with a nontrivial Galois orbit gives conjugate
+fibrations rather than a fibration over `K`.  Likewise, an abstract
+`O(NS)`-isometry or Kneser path does not show that its target fibre and zero
+classes are represented by `K`-divisors.
+
+### Corollary A2.2: section fields from an arithmetic marking
+
+Let `L/K` be a finite Galois extension over which every geometric section is
+defined, and let `Gamma=Gal(L/K)` act on the integral group
+
+```text
+MW(pi_L) = W/R.
+```
+
+For a section `P`, its field of definition is the fixed field of its
+stabilizer in `Gamma`.  The rational Mordell--Weil rank over every intermediate
+field `L^H` is
+
+```text
+dim_QQ ((W/R) tensor QQ)^H.                         (A2.7)
+```
+
+#### Proof
+
+Sections are uniquely determined by their generic points, and Galois descent
+identifies the sections over `L^H` with the `H`-fixed geometric sections.
+The stabilizer statement and (A2.7) follow. QED.
+
+Theorem A2 and its corollaries are the arithmetic layer of rank transfer.
+Their input is an **arithmetic marking**: the Galois action on one common
+integral Neron--Severi basis, the marked `U`, the physical fibre-component
+embedding, and the induced action on `W/R`.  They do not construct that
+marking from an equation.  The exact checker described below verifies such
+finite marking data and fails closed when a field of definition or target
+`U` descent certificate is absent.
+
+The schema, H3 and E6 controls, and the fail-closed application to the current
+NS0024 completed-core path are recorded in
+[`ARITHMETIC_RANK_TRANSFER_2026-09-03.md`](ARITHMETIC_RANK_TRANSFER_2026-09-03.md).
+The checker
+[`certify_arithmetic_rank_transfer.sage`](scripts/certify_arithmetic_rank_transfer.sage)
+computes the fixed subspaces and verifies (A2.3) by traces on every element of
+the declared finite Galois image.  Its pinned output is
+[`elkies-k3-arithmetic-rank-transfer-controls-v1.json`](../artifacts/generated-results/elkies-k3-arithmetic-rank-transfer-controls-v1.json).
+
 ## 3. The determinant and saturation laws
 
 ### Theorem B: determinant mutation
@@ -1468,6 +1648,142 @@ use relies on the standard correspondence between Jacobian elliptic
 fibrations and primitive `U` embeddings, while primitivity, overlattices, and
 saturation are governed by Nikulin's discriminant-form formalism cited below.
 
+### Theorem H-1b: `J2` elliptic incidence distance and the rootless finite classifier
+
+<!-- status-consumer: EC-K3-H3-ROOTLESS-J2-MINIMAL-ACCESSIBILITY 631f50389e0a3283 -->
+
+Let `X` be a projective K3 surface and let `[W],[W']` be two `J2` frame
+classes realized by Jacobian elliptic fibrations on `X`.  Define
+
+```text
+delta_ell([W],[W'])
+  = min {F.F' : F,F' are nef Jacobian fibre classes
+                  with frame classes [W],[W']}.
+```
+
+Then the minimum exists, is symmetric, and satisfies
+
+```text
+delta_ell([W],[W])=0,
+[W] != [W']  implies  delta_ell([W],[W'])>=2.        (H-1b.1)
+```
+
+This is a one-edge incidence distance; no triangle inequality is asserted.
+Its shortest-path closure on any declared frame graph is a genuine route
+metric.
+
+Suppose now that the source is rootless and write
+
+```text
+NS(X)=U direct_sum M(-1),       F=e.
+```
+
+For fixed `d>0`, every isotropic target fibre of old-fibre degree `d` has the
+form
+
+```text
+D=(a,d,w),       w in M,       w.M.w=2*a*d.          (H-1b.2)
+```
+
+The fibre-preserving Eichler transvection indexed by `x in M` is
+
+```text
+T_x(a,b,w)
+  = (a+(w,x)+b*x^2/2, b, w+b*x).                    (H-1b.3)
+```
+
+Consequently the fixed-`d` candidates modulo source-section translation are
+indexed by the finite group `M/dM`.  For `c in M/dM` put
+
+```text
+mu_d(c)=min {w^2 : w mod dM=c}.
+```
+
+The congruence `w^2 in 2d*ZZ`, divisibility-one test, and Proposition F5 give
+the exact all-section gate
+
+```text
+mu_d(c)>=2d^2,                                      (H-1b.4)
+```
+
+and the minimum old-zero intersection in the translation class is
+
+```text
+min O.D = mu_d(c)/(2d)-d.                           (H-1b.5)
+```
+
+After the finite component and horizontal-wall test of Proposition C2, split
+off `U_D=<D,O_D+D>`, compute `U_D^perp(-1)`, and test integral isometry against
+the target catalogue.  Enumerating all `Aut(M)`-orbits of `M/dM` therefore
+gives a terminating complete classifier at each fixed `d`.  Increasing `d`
+from two and stopping at the first target hit computes `delta_ell` whenever
+the wall gates are complete.  An explicit irreducible genus-one representative
+of (H-1b.2) is an alternative direct nef certificate.
+
+#### Proof
+
+Every `J2` class has a nef representative by Theorem C and Weyl reduction, so
+the defining set is nonempty; its values are nonnegative integers.  Symmetry
+is immediate, and the same marked fibration gives the diagonal value zero.
+If two nef isotropic rays have intersection zero, the Hodge index theorem
+makes them proportional; primitivity makes them equal.  Different zero
+sections on one fixed Jacobian fibration are related by fibrewise translation
+and have isometric frames.
+
+If `F.F'=1`, use `F=e` and write `F'=(a,1,w)`.  Isotropy gives `w^2=2a`.
+Formula (H-1b.3) with `x=-w` sends `F'` to the other standard generator `f`
+while fixing `F`.  Thus the complement of `<F,F'>` is isometric to the source
+frame.  Repeating the argument from the target splitting identifies the same
+complement with the target frame.  Equivalently, in the nef geometry the
+product morphism `(pi,pi'):X -> P1 x P1` would have degree one and make `X`
+birational to a rational surface.  Intersection one cannot join distinct `J2`
+classes, proving (H-1b.1).
+
+Formula (H-1b.3) is checked by direct substitution in the form
+`2ab-w^2`; evenness of `M` makes it integral.  It shows that fixed-degree
+orbits are exactly residue classes modulo `dM`.  Proposition F5 with genus
+one gives
+
+```text
+2d*(D.S_x)=norm(w-d*x)-2d^2,
+```
+
+which proves (H-1b.4); taking the closest translate and using
+`O=(-1,1,0)` gives (H-1b.5).  The remaining steps are finite by Proposition
+C2 and exact integral lattice algorithms. QED.
+
+For the two mass-complete rootless determinant-948 classes on the pinned H3
+surface, the exact value and the zero refinement are
+
+```text
+delta_ell(published R17, alternate Q80)=2,
+min O.F'=min O'.F=1,
+```
+
+and both minima occur with `O'=O`.  Indeed, all 43 exact norm-twelve
+genus-one bisections have `D=(3,2,w)`, hence `D.F=2` and `D.O=1`.  Splitting
+`<D,O+D>` and classifying the rootless determinant-948 complement gives 33
+published-frame copies and ten alternate-frame copies.  Their common
+relative matrix and projected bridge Gram are
+
+```text
+A=[[2,3],[3,2]],       G_A=[[12,12],[12,12]],
+```
+
+so the two `U` embeddings share the zero and have a rank-one relative bridge.
+Because a `(-2)` zero orthogonal to the target fibre would be a target-frame
+root, zero degree one is also minimal for a rootless target.
+
+The exact classification and the cheapest alternate witness
+`norm12-orbit-11952` are recorded in
+[`J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md`](J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md)
+and replayed by
+[`classify_r17_norm12_isotropic_frames.sage`](scripts/classify_r17_norm12_isotropic_frames.sage).
+The literal historically transported alternate copy has degree 11,511 in the
+published marking; the theorem proves that this is not an intrinsic `J2`
+accessibility obstruction.  Compiling the two-dimensional pencil `|D|`, its
+Weierstrass model, and its `J1` orbit remain separate gates.
+
 ### Theorem H: bridge-core root transfer
 
 Let `L` be a nondegenerate even integral lattice and let `U_0,U_1` be copies
@@ -2404,6 +2720,70 @@ it does not by itself prove that separate layer queries are faster than
 forming a child Gram matrix and querying its mask directly.  Runtime is an
 implementation question, not a consequence of (H0i.3).
 
+### Exact finite control H0i.2: fixed-prime defect traps and nontrivial distance
+
+The complete directed graph can differ sharply from the complete unrestricted
+Kneser graph, even in mass-closed ternary genera.  Give a positive even lattice
+the root defect
+
+```text
+V_F(K)=Phi(K),
+```
+
+and direct a good-`p` edge exactly when its line is nonorthogonal modulo `p`
+to every current root.  Theorem H0i says that all old roots then die, while
+Theorem H0i.1 accounts for every replacement root as a birth.
+
+Exact enumeration gives the following finite controls:
+
+| rank/determinant | genus classes | zero states | good primes | directed defective distances | closed defective SCCs |
+| --- | ---: | ---: | --- | --- | --- |
+| `3/112` | 4 | 1 | `{3}` | `infinity,1,infinity` | one two-state cycle |
+| `3/112` | 4 | 1 | `{5}` | `1,1,1` | none |
+| `3/126` | 3 | 1 | `{5}` | `1,2` | none |
+| `3/316` | 9 | 6 | `{3}` | `1,infinity,infinity` | two singletons |
+| `3/316` | 9 | 6 | `{5}` | `1,1,1` | none |
+
+For determinants `112` and `316`, the unrestricted 3-neighbour graphs are
+strongly connected, but their directed 3-graphs contain the displayed traps.
+In determinant `316`, one trap is a self-loop and the other has no directed
+outgoing line.  Prime `5` escapes every defective state, so these are
+fixed-prime or fixed-prime-set traps, not all-good-prime traps.
+
+In determinant `126`, the unique distance-two path has signed defect counts
+
+```text
+2 -> 2 -> 0.
+```
+
+Thus defect cardinality does not determine distance even in a three-class
+genus.  The exact per-prime directed destination profile does distinguish the
+two equal-defect states: one has four lines landing immediately at zero and
+the other has none.  Automorphism order happens to separate reachable and
+unreachable states in both 3-primary controls, but this is recorded only as
+an empirical separator, not as a monotone or universal invariant.
+
+Each class list is certified by equality between its reciprocal-automorphism
+sum and the exact Minkowski--Siegel mass, respectively `3/4`, `3/4`, and
+`39/16`.  Every projective isotropic line is enumerated and every child is
+identified by exact integral isometry.  The certificate, full physical root
+signatures, SCCs and paths are in
+[`DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md`](DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md).
+
+This calculation rules out the implication
+
+```text
+unrestricted good-p connectivity -> defect-directed good-p connectivity
+```
+
+for a fixed prime.  It does not produce a trap closed under all good primes.
+In the opposite direction, Chenevier's large-prime equidistribution implies
+that within one spinor genus a fixed zero-defect isometry class is a direct
+`p`-neighbour of every source for all sufficiently large good primes.  For a
+marked reverse mask, the analogous conclusion requires the source and target
+to lie in the same compatible level/spinor component; an unmarked lattice
+isometry need not preserve the distinguished discriminant summand.
+
 ### Corollary H0j: the NS0024 completed-core path realizes ranks `4,12,12,17`
 
 <!-- status-consumer: EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER 16b64051fb648d66 -->
@@ -2592,6 +2972,132 @@ This theorem supplies an exact acceptance and targeting signature.  It does
 not prove that a prescribed ADE signature is realized in a forced core genus,
 that a neighbour path reaches it, or that its fibration has an equation or a
 specified field of definition.
+
+### Theorem H0l: inverse ADE mutation is modular incidence plus affine CVP
+
+<!-- status-consumer: EC-K3-NS0024-INVERSE-ADE-MUTATION 5c56f07d14129837 -->
+
+Retain the positive even lattices `K,C`, isotropic graph glue
+
+```text
+H subset A_K direct_sum A_C,
+```
+
+and completion `W_H` of Theorem H0k.  Let `p` be odd with
+`p` not dividing `det(K)`, let `ell` be a nonzero isotropic line in `K/pK`,
+and choose a lift `y` with `y^2=0 mod 2*p^2`.  Put
+
+```text
+M={z in K : <z,y>=0 mod p},
+N=K_ell=M+Z*y/p,
+```
+
+and transport `H` to `H_ell` through the canonical discriminant isometry
+`iota:A_N -> A_K` of (H0i.5).
+
+For `a in A_K`, choose `r_a in K dual` representing `a` and
+`k_a in K` such that
+
+```text
+<r_a+k_a,y>=0 mod p.
+```
+
+For `0<=mu<=2` and `0<=j<p`, define the finite affine shell
+
+```text
+E_y(a,mu,j)
+ = {k in M+r_a+k_a+j*y/p : k^2=mu}.              (H0l.1)
+```
+
+Then the complete physical root set of the child completion is
+
+```text
+Omega_y
+ = disjoint union over (a,b) in H
+     disjoint union over c in C dual, [c]=b, c^2<=2
+       disjoint union over 0<=j<p
+         {(k,c) : k in E_y(a,2-c^2,j)}.           (H0l.2)
+```
+
+Its metric is
+
+```text
+g_y((k,c),(k',c'))=<k,k'>+<c,c'>.                (H0l.3)
+```
+
+Consequently a line `ell` produces a prescribed abstract ADE type `R'` if
+and only if the finite metric set `(Omega_y,g_y)` is isometric to the signed
+root system `Phi(R')`.  A prescribed **marked** target signature replaces
+this metric-isometry test by equality with the requested physical witnesses.
+Equivalently, inverse ADE mutation compiles into exactly four kinds of finite
+conditions on `y`:
+
+1. the quadratic congruence making `ell` an isotropic line;
+2. modular linear equalities or inequalities
+   `<k,y>=0` or `!=0 mod p` for requested surviving or dying parent physical
+   roots `(k,c)`;
+3. nonemptiness and the requested pairwise products for specified affine-CVP
+   shells in (H0l.1), accounting for born roots;
+4. emptiness of every remaining shell in (H0l.2), excluding additional
+   norm-two witnesses.
+
+If only the abstract type `R'` is prescribed, it does not say which parent
+roots survive.  The inverse condition is then the finite disjunction over
+the possible marked survival/birth templates having metric `R'`.  Once a
+marked template is selected, the four conditions above are a conjunction
+and are necessary and sufficient.
+
+#### Proof
+
+The complete birth--death law (H0i.3) gives
+
+```text
+N dual = disjoint_union_(0<=j<p) (K_y dual+j*y/p),
+K_y dual={x in K dual : <x,y>=0 mod p},
+```
+
+and (H0i.5) sends every vector in the `j`-th layer to the parent
+discriminant class of its `K_y dual` part.  Writing the vectors of that part
+in class `a` as `M+r_a+k_a` proves (H0l.1).  Transporting `H`, decomposing the
+completion into its graph-glue cosets, and using orthogonality of `K` and `C`
+gives (H0l.2).  Positive definiteness makes every displayed shell finite.
+
+A parent root `(k,c)` belongs to the child precisely when `k` belongs to
+`N dual`, and Theorem H0i says this is equivalent to
+`<k,y>=0 mod p`.  These are exactly the old-witness incidence conditions.
+The `j=0` layer consists of those survivors, while every `j!=0` layer is new
+relative to `K dual`, so the remaining shells are exactly the possible root
+births.  Finally Theorem H0k applied to `Omega_y` says that its complete
+metric is the full child root system and determines its ADE decomposition.
+Thus the target-metric and no-additional-shell conditions are jointly
+necessary and sufficient. QED.
+
+This is the graph-glue analogue of filtering the visible root system of a
+Kneser neighbour by modular incidence.  Chenevier's
+[*Unimodular Hunting*](https://arxiv.org/abs/2410.18788), especially
+Proposition 5.2, gives that visible-root principle for neighbours of the
+standard lattice.  Here (H0l.1)--(H0l.2) add the nonvisible roots born in
+dual affine layers and nonzero completion-glue classes.
+
+The checker
+[`certify_ns0024_inverse_ade_mutation.sage`](scripts/certify_ns0024_inverse_ade_mutation.sage)
+compiles the first NS0024 transition before constructing its child.  At the
+good prime `p=17`, its selected isotropic line imposes zero incidence on
+exactly six of the 140 parent root lines and nonzero incidence on the other
+134.  The six survivors have metric `3A1+A2`; exhaustive affine-layer and
+order-191 graph-glue enumeration finds no born or additional roots.  Only
+after this prediction is fixed does the checker materialize the neighbour;
+independent child enumeration gives the identical physical root set and ADE
+type.  The exact record is
+[`elkies-k3-ns0024-inverse-ade-mutation-v1.json`](../artifacts/generated-results/elkies-k3-ns0024-inverse-ade-mutation-v1.json).
+
+This proves the finite inverse predicate and one nontrivial control.  It does
+not enumerate all lines satisfying an abstract target, prove a favourable
+complexity bound, or turn the good-prime core neighbour into an elliptic
+neighbour, equation, rational map, or field-of-definition result.  In the
+control the target is entirely visible: all six roots survive from the
+parent and no nonzero affine layer contributes.  The stage-two plateau of
+Corollary H0j shows why the affine terms cannot be omitted in general.
 
 ### Negative experiment H0: the orthogonal split is not a useful predictor
 

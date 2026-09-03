@@ -18260,12 +18260,15 @@ sum equals the exact genus mass
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 80de8b6727cd3409 -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH a755a3956c4c97cb -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE d32b35b66a35627c -->
+<!-- status-consumer: EC-K3-NS0024-INVERSE-ADE-MUTATION 5c56f07d14129837 -->
 
 Generate and byte-check the equation-free census, then replay the local
 bridge and involution graph-glue theorems with
 
 ```bash
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage --check
+sage -python elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage \
+  --relative-u-output artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json
 sage -python elkies-k3/scripts/benchmark_integral_rank_transfer_bridge_predictor.sage --check
 sage -python elkies-k3/scripts/benchmark_e6_det78_prospective_bridge_predictor.sage --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_theta_convolution.sage --check
@@ -18276,13 +18279,62 @@ sage -python elkies-k3/scripts/generate_integral_rank_transfer_masked_core_neigh
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_masked_core_controls.sage --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_completion.sage --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_birth_death.sage --check
+sage -python elkies-k3/scripts/analyze_small_genus_defect_graphs.sage --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_root_system_signature.sage --check
+sage -python elkies-k3/scripts/certify_ns0024_inverse_ade_mutation.sage --check
 sage -python elkies-k3/scripts/certify_integral_character_glue_calculus.sage --check
 sage -python elkies-k3/scripts/certify_r17_norm12_103b2_mw_glue.sage \
   --skip-specialization-saturation --check
 sage -python elkies-k3/scripts/build_integral_rank_transfer_glue_census.sage
 sage -python elkies-k3/scripts/build_integral_rank_transfer_glue_census.sage --check
 ```
+
+The relative-`U` theorem and first NS0024 application are recorded in
+[`elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md`](elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md).
+Rebuild the four completed frames, compare them with the known NS0024 route,
+and export the root-adapted source with
+
+```bash
+sage -python elkies-k3/scripts/search_ns0024_relative_u_bridge_lifts.sage \
+  --compare-known-only \
+  --export-adapted-source artifacts/generated-results/elkies-k3-ns0024-completed-d5e8-root-adapted-frame-v1.txt \
+  --output artifacts/generated-results/elkies-k3-ns0024-completed-frame-comparison-v1.json
+```
+
+The exact first-vector obstruction for the prospective `D5+E8/MW4` to
+`3A1+A2/MW12` edge is replayed in degree order by the following compact
+classifications.  Here `q=d(d+t)`, so the degree-two command covers
+`t=0,...,18`, and the degree-three and degree-four commands cover
+`t=0,...,4`.  `--summary-only` omits individual negative witnesses without
+changing the enumeration or root classification.
+
+```bash
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/generated-results/elkies-k3-ns0024-completed-d5e8-root-adapted-frame-v1.txt \
+  --root-rank 13 --degree 2 \
+  --q 4 --q 6 --q 8 --q 10 --q 12 --q 14 --q 16 --q 18 --q 20 --q 22 \
+  --q 24 --q 26 --q 28 --q 30 --q 32 --q 34 --q 36 --q 38 --q 40 \
+  --adapt-mw-at-least 12 --rank-growth-only --include-zero-mw --summary-only \
+  --output artifacts/generated-results/elkies-k3-ns0024-relative-u-degree2-fibre-summary-v1.json
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/generated-results/elkies-k3-ns0024-completed-d5e8-root-adapted-frame-v1.txt \
+  --root-rank 13 --degree 3 --q 9 --q 12 --q 15 --q 18 --q 21 \
+  --adapt-mw-at-least 12 --rank-growth-only --include-zero-mw --summary-only \
+  --output artifacts/generated-results/elkies-k3-ns0024-relative-u-degree3-fibre-summary-v1.json
+sage -python elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage \
+  --frame artifacts/generated-results/elkies-k3-ns0024-completed-d5e8-root-adapted-frame-v1.txt \
+  --root-rank 13 --degree 4 --q 16 --q 20 --q 24 --q 28 --q 32 \
+  --adapt-mw-at-least 12 --rank-growth-only --include-zero-mw --summary-only \
+  --output artifacts/generated-results/elkies-k3-ns0024-relative-u-degree4-fibre-summary-v1.json
+python3 elkies-k3/scripts/certify_ns0024_relative_u_first_edge.py
+python3 elkies-k3/scripts/certify_ns0024_relative_u_first_edge.py --check
+```
+
+The three complete boxes have respective maximum child MW ranks `5,7,8`, so
+the MW12 target is absent.  A future hit should be rerun without
+`--summary-only` and then refined to a literal ordered target `U` with
+`search_ns0024_relative_u_bridge_lifts.sage`; no abstract Kneser path is
+accepted as a marking.
 
 The bridge replay covers all 42 marked H3, Q80, NS0024, and Golay-720 edges,
 including exact common cores, cyclic graph glue, and complete root transfer.
@@ -18409,6 +18461,17 @@ proves the exact transition and zero-defect criterion.  It does not prove that
 the counted abstract
 `Sigma_2` data alone suffice, or that the layered implementation is uniformly
 faster than direct child construction.
+The small-genus graph replay then exhausts every projective isotropic line at
+the declared good primes in three mass-closed even ternary genera.  The
+determinant-112 and determinant-316 unrestricted 3-neighbour graphs are
+strongly connected, while their defect-directed subgraphs have respectively
+a closed two-state cycle and two closed singleton traps.  Prime 5 escapes all
+of those states.  In determinant 126 the exact directed distance profile is
+`1,2`, and the distance-two path has signed root defects `2 -> 2 -> 0`.
+Thus fixed-prime traps and nontrivial distance occur in complete finite
+graphs, while no all-good-prime trap or rank-15 Q80 reachability theorem is
+claimed.  See
+[`elkies-k3/DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md`](elkies-k3/DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md).
 The root-system signature replay then enumerates every physical completion
 root `k+c` on the four NS0024 stages and records all pairwise inner products.
 It recovers `D5+E8`, `3A1+A2`, `3A1+A2`, and rootless, together with root
@@ -18418,6 +18481,14 @@ five nonzero order-191 graph-glue labels.  The same metric classifier recovers
 the Q80 `4A1` and `A1` controls.  The marked coordinates, rather than the
 pairwise metric alone, certify primitive closure and exact Mordell--Weil
 torsion.
+The inverse-ADE replay composes this classifier with the affine dual-layer
+transition before constructing the first NS0024 child.  It compiles 140
+modular root-incidence forms on the `p=17` line: six vanish and 134 are
+nonzero.  Exhaustive graph-glued affine CVP then predicts exactly those six
+survivors, no births, no extra roots, and metric `3A1+A2`; the subsequently
+materialized child has the identical physical root set.  This proves a finite
+necessary-and-sufficient target predicate for a fixed line, not completeness
+or a runtime bound for finding such a line.
 The character replay exhausts the E6 `2+1` and `2+2` involution graphs after
 the declared factor-12 integral scaling.  The norm-twelve byte check reuses
 the pinned full saturation record; generating that artifact without the skip
@@ -18662,6 +18733,26 @@ sage -python \
 The expected identification is `published-R17-J2-class`: the frame is
 rootless of rank 17 and determinant 948, isometric to published R17, and not
 isometric to the alternate Q80 frame.
+
+### Minimal `J2` accessibility through all norm-twelve pencils
+
+<!-- status-consumer: EC-K3-H3-ROOTLESS-J2-MINIMAL-ACCESSIBILITY 631f50389e0a3283 -->
+
+Classify all 43 exact norm-twelve genus-one bisection frames against both
+mass-complete determinant-948 rootless controls:
+
+```bash
+sage -python \
+  elkies-k3/scripts/classify_r17_norm12_isotropic_frames.sage
+sage -python \
+  elkies-k3/scripts/classify_r17_norm12_isotropic_frames.sage --check
+```
+
+The exact distribution is 33 published R17 and ten alternate Q80.  Every
+alternate witness is a nef degree-two fibre sharing the published zero with
+zero-section degree one.  Together with the general lower bound for distinct
+`J2` classes, this proves elliptic incidence distance two.  See
+[`elkies-k3/J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md`](elkies-k3/J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md).
 
 Run the exact `H=10000` point-map-relation control on the deterministic
 seeded sample of ten other pointed covers:

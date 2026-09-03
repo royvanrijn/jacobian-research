@@ -37187,6 +37187,47 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-H3-ROOTLESS-J2-MINIMAL-ACCESSIBILITY",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Minimal elliptic incidence distance two between the two determinant-948 rootless J2 classes",
+      "scope": "For J2 frame classes on one projective K3, define the one-edge elliptic incidence distance as the minimum F.F' over nef Jacobian fibre classes realizing the two frames. The minimum exists and is symmetric. Distinct J2 classes have distance at least two: intersection zero gives the same primitive fibre ray, while intersection one is carried to the standard U by a fibre-preserving Eichler transvection and therefore has isometric orthogonal complements. For a rootless source NS=U+M(-1), fixed-degree candidates modulo source-section translation are indexed by the finite group M/dM; exact coset minima give the all-section and old-zero costs before the finite horizontal-wall and target-isometry gates. On the pinned determinant-948 H3 surface, all 43 exact norm-twelve genus-one bisections D=(3,2,w) are primitive nef degree-two Jacobian fibre classes sharing the old zero. Exact root enumeration and integral-isometry classification give 33 copies of the published R17 frame and ten copies of the alternate Q80 frame. Hence the two distinct rootless J2 classes have exact incidence distance two, minimum directed zero-section cost one, and a shared-zero witness with relative-U matrix [[2,3],[3,2]] and rank-one bridge Gram [[12,12],[12,12]]. The cheapest stored alternate witness is norm12-orbit-11952. This supersedes the interpretation of the historically transported degree-11511 copy as an intrinsic accessibility obstruction. It does not compile the new |D| pencil, give its Weierstrass equation or sections, prove a triangle inequality, or classify J1 surface-automorphism orbits.",
+      "canonical_source": "elkies-k3/J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-H3-ROOTLESS-J2-COMPLETE",
+        "EC-K3-R17-GENUS1-HIGH-THROUGHPUT-SPLITTING"
+      ],
+      "checker": "elkies-k3/scripts/classify_r17_norm12_isotropic_frames.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b02282098fd1464938f808e15e7be0ab40c715acc647d1f5d85f102b8c6d35fe",
+      "software_lock": [
+        "elkies-k3/scripts/classify_r17_norm12_isotropic_frames.sage",
+        "elkies-k3/data/lattice/rank17_gram.txt",
+        "artifacts/generated-results/elkies-k3-r17-genus-one-bisection-splitting-search-v1.json",
+        "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-isotropic-frame-classification-v1.json"
+      ],
+      "supersedes_notes": [
+        "the degree-11511 transported alternate rootless copy measures the intrinsic distance from the published R17 J2 class"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md",
+        "elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-R17-POINTED-COVER-JACOBIAN-CONTROL-H10000",
       "kind": "reproduction",
       "state": "proved",
@@ -37919,6 +37960,47 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-NS0024-INVERSE-ADE-MUTATION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Inverse ADE mutation by modular incidence and affine CVP",
+      "scope": "Let K and C be positive-definite even lattices, H an isotropic graph glue in A_K+A_C, and K_ell the good odd-prime p-neighbour defined by an isotropic line y, with H transported through the canonical prime-to-p discriminant isometry. For each graph class (a,b), bridge vector c in C^dual+b, and affine layer 0<=j<p, the possible child roots are exactly the pairs (k,c) with k in M+r_a+k_a+j*y/p of norm 2-c^2. Thus a prescribed child ADE type is equivalent to a finite conjunction or, for an unmarked abstract target, finite disjunction of: isotropy of y; modular equalities and inequalities <k,y>=0 or nonzero mod p for surviving and dying old roots; affine-CVP nonemptiness and pairwise-metric constraints for born roots; and emptiness of every remaining norm-two shell. The first NS0024 p=17 transition is an exact control: six of 140 parent root lines survive, 134 die, no nonzero affine layer supplies a root, and the six survivors have metric 3A1+A2. The checker fixes this prediction before constructing the child and then obtains the identical physical root set from an independent completed-frame enumeration. This proves the finite inverse predicate and one control, not completeness or a complexity bound for finding a satisfying line, an elliptic-neighbour interpretation, an equation lift, rational maps, or a field of definition.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH",
+        "EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE"
+      ],
+      "checker": "elkies-k3/scripts/certify_ns0024_inverse_ade_mutation.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:17ab2c9130fe55b95cc530ad3963a6d4dd1fa523c49b74fabbf400588f8afbf7",
+      "software_lock": [
+        "elkies-k3/scripts/certify_ns0024_inverse_ade_mutation.sage",
+        "artifacts/generated-results/elkies-k3-ns0024-inverse-ade-mutation-v1.json",
+        "elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_birth_death.sage",
+        "elkies-k3/scripts/certify_integral_rank_transfer_root_system_signature.sage",
+        "elkies-k3/scripts/certify_ns0024_new_rootless_source_route.sage"
+      ],
+      "supersedes_notes": [
+        "the full root-system signature is only a forward acceptance test and cannot be inverted into exact line constraints"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR",
       "kind": "reproduction",
       "state": "proved",
@@ -37982,6 +38064,43 @@
         "REPRODUCE.md",
         "elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md",
         "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-ARITHMETIC-RANK-TRANSFER",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Equivariant arithmetic rank transfer and rational-source inheritance",
+      "scope": "Let X/K be a characteristic-zero K3 and let two Jacobian fibrations have K-defined fibre and zero classes. For the finite Galois image Gamma on V=NS(X_Kbar) tensor QQ, equivariant Shioda--Tate gives M_i=MW_i tensor QQ=(U_i^perp/R_i) as QQ[Gamma]-modules, rank MW_i(K(C_i))=dim V^Gamma-2-dim R_i^Gamma, and [M_2]-[M_1]=[R_1]-[R_2] in the rational representation ring. If one source supplies rho(X_Kbar) independent K-rational divisor classes, the action on V is trivial; every K-divisor-defined primitive nef marked U with an effective zero descends, and a rootless target on a Picard-rank-19 K3 has arithmetic rank 17. The exact verifier checks finite integral Galois actions, fixed spaces, and character identities. It reproduces H3 arithmetic rank 17, the unordered E6 incidence rank 2 inside geometric rank 4, and the E6A1 orbit-103 decomposition 2+chi_-3. Applied fail-closed to the NS0024 completed-core ranks 4,12,12,17, it proves no arithmetic rank there: the current Kneser/J2 path lacks a characteristic-zero rational source marking and field-defined target U data.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
+        "EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2",
+        "EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD",
+        "EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER"
+      ],
+      "checker": "elkies-k3/scripts/certify_arithmetic_rank_transfer.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:048105ab22ad9d8576bb8fe1fa57034005e00bfc7ece2ee2914d8922b8d92533",
+      "software_lock": [
+        "elkies-k3/scripts/certify_arithmetic_rank_transfer.sage",
+        "elkies-k3/data/arithmetic/arithmetic-marking-v1.schema.json",
+        "artifacts/generated-results/elkies-k3-arithmetic-rank-transfer-controls-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/ARITHMETIC_RANK_TRANSFER_2026-09-03.md",
+        "elkies-k3/scripts/README.md",
+        "elkies-k3/README.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],

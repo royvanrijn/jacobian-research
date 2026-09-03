@@ -1,0 +1,2783 @@
+{
+  "determinant": 950,
+  "frame": "artifacts/generated-results/elkies-k3-ns0024-completed-d5e8-root-adapted-frame-v1.txt",
+  "input_ade": "D5+E8",
+  "input_mw_height": [
+    [
+      "6571/4",
+      "5/2",
+      "6879/4",
+      "263"
+    ],
+    [
+      "5/2",
+      "25",
+      "5/2",
+      "0"
+    ],
+    [
+      "6879/4",
+      "5/2",
+      "7259/4",
+      "0"
+    ],
+    [
+      "263",
+      "0",
+      "0",
+      "5310"
+    ]
+  ],
+  "input_mw_rank": 4,
+  "input_root_data": [
+    13,
+    280,
+    4
+  ],
+  "neighbors": [],
+  "status": "PASS_ROOT_ADAPTED_WEYL_NEIGHBORS",
+  "summaries": [
+    {
+      "dominant_orbits": 317,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        3,
+        3
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 98,
+      "mw_projection_representatives": 50,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 2,
+      "primitive_neighbors": 315,
+      "q": 9,
+      "root_histogram": [
+        {
+          "mw_rank": 6,
+          "orbit_count": 4,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 1,
+          "root_count": 104,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 5,
+          "root_count": 140,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 2,
+          "root_count": 146,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 7,
+          "root_count": 96,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 4,
+          "root_count": 100,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 4,
+          "root_count": 102,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 10,
+          "root_count": 106,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 4,
+          "root_count": 110,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3,
+          "root_count": 114,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3,
+          "root_count": 124,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 6,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1,
+          "root_count": 138,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 2,
+          "root_count": 140,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3,
+          "root_count": 142,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 2,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 17,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 7,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 6,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 4,
+          "root_count": 254,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 5,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 7,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 94,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 100,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 8,
+          "root_count": 104,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 106,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6,
+          "root_count": 108,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5,
+          "root_count": 110,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 4,
+          "root_count": 114,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 116,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 118,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 122,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 126,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2,
+          "root_count": 146,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 11,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 158,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 4,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 20,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 182,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 186,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 198,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 252,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 4,
+          "root_count": 254,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 9,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 258,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 4,
+          "root_count": 262,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 13,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 35,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 3,
+          "root_count": 130,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 1,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 2,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 4,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 7,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 6,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 3,
+          "root_count": 300,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 317,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 841,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        4,
+        3
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 184,
+      "mw_projection_representatives": 93,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 0,
+      "primitive_neighbors": 841,
+      "q": 12,
+      "root_histogram": [
+        {
+          "mw_rank": 7,
+          "orbit_count": 6,
+          "root_count": 96,
+          "root_determinant": null,
+          "root_rank": 10
+        },
+        {
+          "mw_rank": 7,
+          "orbit_count": 1,
+          "root_count": 138,
+          "root_determinant": null,
+          "root_rank": 10
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 9,
+          "root_count": 84,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 8,
+          "root_count": 90,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 7,
+          "root_count": 94,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 16,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 13,
+          "root_count": 104,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 6,
+          "root_count": 108,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 5,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 21,
+          "root_count": 140,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 16,
+          "root_count": 146,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 7,
+          "root_count": 150,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 1,
+          "root_count": 252,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 7,
+          "root_count": 82,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 6,
+          "root_count": 86,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 7,
+          "root_count": 88,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 23,
+          "root_count": 92,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 17,
+          "root_count": 96,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 19,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 12,
+          "root_count": 100,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 14,
+          "root_count": 102,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 17,
+          "root_count": 106,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 8,
+          "root_count": 110,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 9,
+          "root_count": 114,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 18,
+          "root_count": 124,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 15,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3,
+          "root_count": 138,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 4,
+          "root_count": 140,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 9,
+          "root_count": 142,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 4,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 36,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 16,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 14,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 7,
+          "root_count": 166,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 11,
+          "root_count": 254,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 30,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 27,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7,
+          "root_count": 94,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2,
+          "root_count": 100,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 15,
+          "root_count": 104,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 106,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 10,
+          "root_count": 108,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7,
+          "root_count": 110,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7,
+          "root_count": 112,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5,
+          "root_count": 114,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6,
+          "root_count": 116,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 10,
+          "root_count": 118,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2,
+          "root_count": 122,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 126,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 14,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 13,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6,
+          "root_count": 146,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 25,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 12,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6,
+          "root_count": 158,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 10,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 33,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 182,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 186,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 4,
+          "root_count": 198,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 252,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7,
+          "root_count": 254,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 9,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 258,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7,
+          "root_count": 262,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 13,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 32,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 78,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 3,
+          "root_count": 130,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 1,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 2,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 6,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 9,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 5,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 1,
+          "root_count": 300,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 841,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 1901,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        5,
+        3
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 298,
+      "mw_projection_representatives": 150,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 0,
+      "primitive_neighbors": 1901,
+      "q": 15,
+      "root_histogram": [
+        {
+          "mw_rank": 7,
+          "orbit_count": 21,
+          "root_count": 96,
+          "root_determinant": null,
+          "root_rank": 10
+        },
+        {
+          "mw_rank": 7,
+          "orbit_count": 6,
+          "root_count": 138,
+          "root_determinant": null,
+          "root_rank": 10
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 28,
+          "root_count": 84,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 28,
+          "root_count": 90,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 22,
+          "root_count": 94,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 53,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 31,
+          "root_count": 104,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 19,
+          "root_count": 108,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 21,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 56,
+          "root_count": 140,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 47,
+          "root_count": 146,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 17,
+          "root_count": 150,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 5,
+          "root_count": 252,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 24,
+          "root_count": 82,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 22,
+          "root_count": 86,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 17,
+          "root_count": 88,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 61,
+          "root_count": 92,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 45,
+          "root_count": 96,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 61,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 28,
+          "root_count": 100,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 45,
+          "root_count": 102,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 50,
+          "root_count": 106,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 21,
+          "root_count": 110,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 22,
+          "root_count": 114,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 38,
+          "root_count": 124,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 31,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 5,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 7,
+          "root_count": 138,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 14,
+          "root_count": 140,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 21,
+          "root_count": 142,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 10,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 74,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 32,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 30,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 11,
+          "root_count": 166,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 28,
+          "root_count": 254,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 59,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 47,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 12,
+          "root_count": 94,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 12,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 4,
+          "root_count": 100,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 30,
+          "root_count": 104,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6,
+          "root_count": 106,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 19,
+          "root_count": 108,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 13,
+          "root_count": 110,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 15,
+          "root_count": 112,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 10,
+          "root_count": 114,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 16,
+          "root_count": 116,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 30,
+          "root_count": 118,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5,
+          "root_count": 122,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 126,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 32,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 26,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 11,
+          "root_count": 146,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 51,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 21,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 13,
+          "root_count": 158,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 18,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 59,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5,
+          "root_count": 182,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 186,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 8,
+          "root_count": 198,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 252,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 19,
+          "root_count": 254,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 39,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5,
+          "root_count": 258,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 17,
+          "root_count": 262,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 19,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 52,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 110,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 4,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 4,
+          "root_count": 130,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 4,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 4,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 15,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 17,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 8,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 2,
+          "root_count": 300,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 1901,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 3784,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        6,
+        3
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 420,
+      "mw_projection_representatives": 211,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 5,
+      "primitive_neighbors": 3779,
+      "q": 18,
+      "root_histogram": [
+        {
+          "mw_rank": 7,
+          "orbit_count": 62,
+          "root_count": 96,
+          "root_determinant": null,
+          "root_rank": 10
+        },
+        {
+          "mw_rank": 7,
+          "orbit_count": 13,
+          "root_count": 138,
+          "root_determinant": null,
+          "root_rank": 10
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 70,
+          "root_count": 84,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 68,
+          "root_count": 90,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 64,
+          "root_count": 94,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 119,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 75,
+          "root_count": 104,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 47,
+          "root_count": 108,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 47,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 123,
+          "root_count": 140,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 88,
+          "root_count": 146,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 33,
+          "root_count": 150,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 9,
+          "root_count": 252,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 68,
+          "root_count": 82,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 56,
+          "root_count": 86,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 43,
+          "root_count": 88,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 148,
+          "root_count": 92,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 104,
+          "root_count": 96,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 140,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 56,
+          "root_count": 100,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 94,
+          "root_count": 102,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 86,
+          "root_count": 106,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 39,
+          "root_count": 110,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 39,
+          "root_count": 114,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 71,
+          "root_count": 124,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 62,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 11,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 16,
+          "root_count": 138,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 30,
+          "root_count": 140,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 40,
+          "root_count": 142,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 15,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 156,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 66,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 48,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 21,
+          "root_count": 166,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 54,
+          "root_count": 254,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 107,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 74,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 35,
+          "root_count": 94,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 29,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 10,
+          "root_count": 100,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 63,
+          "root_count": 104,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 13,
+          "root_count": 106,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 36,
+          "root_count": 108,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 23,
+          "root_count": 110,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 25,
+          "root_count": 112,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 18,
+          "root_count": 114,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 31,
+          "root_count": 116,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 51,
+          "root_count": 118,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 8,
+          "root_count": 122,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5,
+          "root_count": 126,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 60,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 54,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 19,
+          "root_count": 146,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 86,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 39,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 20,
+          "root_count": 158,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 32,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 108,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7,
+          "root_count": 182,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5,
+          "root_count": 186,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 13,
+          "root_count": 198,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 11,
+          "root_count": 252,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 35,
+          "root_count": 254,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 67,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6,
+          "root_count": 258,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 26,
+          "root_count": 262,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 30,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 74,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 166,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 8,
+          "root_count": 130,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 5,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 12,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 22,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 28,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 16,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 15,
+          "root_count": 300,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 3784,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 6868,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        7,
+        3
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 546,
+      "mw_projection_representatives": 274,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 0,
+      "primitive_neighbors": 6868,
+      "q": 21,
+      "root_histogram": [
+        {
+          "mw_rank": 7,
+          "orbit_count": 145,
+          "root_count": 96,
+          "root_determinant": null,
+          "root_rank": 10
+        },
+        {
+          "mw_rank": 7,
+          "orbit_count": 25,
+          "root_count": 138,
+          "root_determinant": null,
+          "root_rank": 10
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 138,
+          "root_count": 84,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 150,
+          "root_count": 90,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 136,
+          "root_count": 94,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 238,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 138,
+          "root_count": 104,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 94,
+          "root_count": 108,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 100,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 236,
+          "root_count": 140,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 160,
+          "root_count": 146,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 52,
+          "root_count": 150,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 6,
+          "orbit_count": 17,
+          "root_count": 252,
+          "root_determinant": null,
+          "root_rank": 11
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 140,
+          "root_count": 82,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 111,
+          "root_count": 86,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 101,
+          "root_count": 88,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 287,
+          "root_count": 92,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 201,
+          "root_count": 96,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 280,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 97,
+          "root_count": 100,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 184,
+          "root_count": 102,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 171,
+          "root_count": 106,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 66,
+          "root_count": 110,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 67,
+          "root_count": 114,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 125,
+          "root_count": 124,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 113,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 18,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 29,
+          "root_count": 138,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 51,
+          "root_count": 140,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 75,
+          "root_count": 142,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 37,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 282,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 109,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 96,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 34,
+          "root_count": 166,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 93,
+          "root_count": 254,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 180,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 119,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 64,
+          "root_count": 94,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 53,
+          "root_count": 98,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 19,
+          "root_count": 100,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 117,
+          "root_count": 104,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 24,
+          "root_count": 106,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 62,
+          "root_count": 108,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 54,
+          "root_count": 110,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 51,
+          "root_count": 112,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 41,
+          "root_count": 114,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 52,
+          "root_count": 116,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 97,
+          "root_count": 118,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 16,
+          "root_count": 122,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7,
+          "root_count": 126,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 103,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 84,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 31,
+          "root_count": 146,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 149,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 60,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 32,
+          "root_count": 158,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 48,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 172,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 11,
+          "root_count": 182,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6,
+          "root_count": 186,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 19,
+          "root_count": 198,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 13,
+          "root_count": 252,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 55,
+          "root_count": 254,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 103,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 15,
+          "root_count": 258,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 41,
+          "root_count": 262,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 46,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 125,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 264,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 10,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 16,
+          "root_count": 130,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 6,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 14,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 27,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 41,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 20,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 5,
+          "root_count": 300,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 6868,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    }
+  ],
+  "summary_only": true,
+  "witness_retention": "Exact enumeration and classification were performed, but individual neighbor witnesses were deliberately omitted from this artifact."
+}

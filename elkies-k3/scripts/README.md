@@ -2803,6 +2803,33 @@ maximum MW rank 7.  The faster `--rootless-obstruction --check` mode is an
 independent residual-rank cross-check, not the primary class certificate.  See
 [`../E6_RANK4_DET78_NIEMEIER_CLASSIFICATION_2026-09-03.md`](../E6_RANK4_DET78_NIEMEIER_CLASSIFICATION_2026-09-03.md).
 
+## Arithmetic rank transfer
+
+<!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 048105ab22ad9d85 -->
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  certify_arithmetic_rank_transfer.sage --check
+```
+
+The checker implements Theorem A2 of
+[`../RANK_MUTATION_AND_LIFT_THEOREMS.md`](../RANK_MUTATION_AND_LIFT_THEOREMS.md).
+From an integral geometric NS Gram, finite Galois generators, and the marked
+`U` and fibre-root basis of each fibration, it computes the exact rational
+fixed NS, root, and Mordell--Weil spaces.  For every declared edge it verifies
+`[M_2]-[M_1]=[R_1]-[R_2]` by traces on every group element.  The input schema
+is
+[`../data/arithmetic/arithmetic-marking-v1.schema.json`](../data/arithmetic/arithmetic-marking-v1.schema.json),
+and `--marking FILE` validates an additional self-contained record.
+
+Pinned controls reproduce arithmetic rank 17 for H3/R17, arithmetic rank two
+inside geometric rank four for the unordered E6 incidence, and the
+`2+chi_-3` orbit-103 decomposition.  The same certificate applies the gate to
+the current NS0024 completed-core path and returns
+`FAIL_CLOSED_GEOMETRIC_ONLY`: the stored Kneser path is not a field-defined
+marked-`U` corridor.  See
+[`../ARITHMETIC_RANK_TRANSFER_2026-09-03.md`](../ARITHMETIC_RANK_TRANSFER_2026-09-03.md).
+
 ## Integral rank-transfer glue calculus
 
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 7eeeeaa80d9b2bf3 -->
@@ -2820,9 +2847,12 @@ independent residual-rank cross-check, not the primary class certificate.  See
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 80de8b6727cd3409 -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH a755a3956c4c97cb -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE d32b35b66a35627c -->
+<!-- status-consumer: EC-K3-NS0024-INVERSE-ADE-MUTATION 5c56f07d14129837 -->
 
 ```bash
 sage -python certify_integral_rank_transfer_bridge_reglue.sage --check
+sage -python certify_integral_rank_transfer_bridge_reglue.sage \
+  --relative-u-output ../../artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json
 sage -python benchmark_integral_rank_transfer_bridge_predictor.sage --check
 sage -python benchmark_e6_det78_prospective_bridge_predictor.sage --check
 sage -python certify_integral_rank_transfer_theta_convolution.sage --check
@@ -2840,13 +2870,35 @@ sage -python build_integral_rank_transfer_glue_census.sage --check
 
 The bridge checker certifies the rank-15 common core, rank-two cyclic bridge
 replacement, graph glue, and exact root transfer for all 42 selected marked
-corridor edges.  The character checker exhausts the integral E6 `2+1` and
+corridor edges.  Its opt-in relative-`U` replay additionally constructs the
+cross matrix `A`, verifies `Gram(w_1,w_2)=A^t J A-J`, recovers both saturated
+bridges and the old-fibre degree, and checks the determinant square-index law
+in both orientations on all 42 edges.  The character checker exhausts the integral E6 `2+1` and
 `2+2` involution graph glues.  The norm-twelve checker gives the exact
 `0x103b2` cover-level visible lattice and preserves rank at least 18 at the
 specialization.  The pinned artifact also proves the displayed specialized
 rank-18 subgroup primitive by isolating every possible eclib saturation prime;
 the skip-mode byte check reuses that record.  These lattice/J2 checks
 intentionally separate equation and rank-upper-bound claims.
+
+The first relative-`U` application to the new completed NS0024 route is
+documented in
+[`../RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md`](../RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md).
+`search_ns0024_relative_u_bridge_lifts.sage` rebuilds the four completed
+frames, compares them with the known route, and performs exact ordered
+representations of `G_A` when a full intersection box is requested.  Before
+that more expensive two-vector step,
+`search_root_adapted_weyl_neighbors.sage --summary-only` can exhaust the
+possible first vectors modulo the source Weyl group while retaining exact
+counts and root histograms but omitting individual negative witnesses.  The
+recorded degree-two, degree-three, and degree-four first-edge boxes contain no
+MW12 child, so no prospective primitive target `U` exists in those boxes.
+After generating the three compact shell summaries, replay their combined
+boundary and counts with
+
+```bash
+python3 certify_ns0024_relative_u_first_edge.py --check
+```
 
 The core-generation checker proves and replays the next inversion.  In every
 maximal graph presentation the core form is exactly
@@ -2950,6 +3002,15 @@ regression certificate; it does not claim that the abstract
 counted theta signature determines line pairings or that this implementation
 has a uniform timing advantage.
 
+`analyze_small_genus_defect_graphs.sage --check` is the complete finite-graph
+control for reachability.  It mass-closes positive even ternary genera of
+determinants 112, 126, and 316, enumerates every isotropic line at good primes
+3 and/or 5, stores every signed physical root and birth/death count, and
+computes SCCs, zero basins, and shortest paths.  It exhibits fixed-prime
+directed traps even when the unrestricted neighbour graph is connected, and
+the exact distance-two defect sequence `2,2,0`.  It is a root-defect
+calibration, not a complete rank-15 reverse-mask graph.
+
 `certify_integral_rank_transfer_root_system_signature.sage --check` expands
 the physical completion witnesses into complete root-line metrics.  For the
 four NS0024 stages it verifies every identity
@@ -2960,6 +3021,16 @@ rootless core has twelve roots in five nonzero graph-glue labels.  Existing
 Q80 `4A1` and `A1` frames are independent target-classification controls.
 Pairwise root products determine ADE data, but the retained frame coordinates
 are essential for primitive closure and exact Mordell--Weil torsion.
+
+`certify_ns0024_inverse_ade_mutation.sage --check` composes that metric
+signature with the good-prime dual-layer law to invert one ADE transition
+before child construction.  For the first NS0024 `p=17` edge it records the
+140 parent physical root lines and their modular linear forms on `y`: exactly
+six must vanish and 134 must be nonzero.  It then exhausts the affine-CVP
+layers joined through the fixed order-191 bridge, finds no births or extra
+roots, and recognizes the six survivors as `3A1+A2`.  Materializing the child
+afterward gives the identical physical root set.  This is an exact inverse
+predicate and control, not yet an all-line solver or a complexity result.
 
 `derive_r17_genus_one_bisection_twist_section.sage` descends the certified
 `0x103b2` split bisection to an exact height-eight section on the quartic
@@ -3173,14 +3244,31 @@ sage -python classify_r17_103b2_isotropic_frame.sage
 sage -python control_pointed_cover_jacobian_ranks.sage
 ```
 
+`classify_r17_norm12_isotropic_frames.sage` applies the same exact splitting
+and two-control isometry test to all 43 norm-twelve genus-one bisections.  It
+finds 33 published-frame copies and ten alternate-Q80 copies.  Every alternate
+copy has old-fibre degree two, shares the old zero, and has zero-section degree
+one.  Since distinct `J2` classes cannot have fibre intersection below two,
+this proves the exact minimum accessibility distance.  The cheapest stored
+alternate witness is `norm12-orbit-11952`.
+
+<!-- status-consumer: EC-K3-H3-ROOTLESS-J2-MINIMAL-ACCESSIBILITY 631f50389e0a3283 -->
+
+```bash
+sage -python classify_r17_norm12_isotropic_frames.sage
+sage -python classify_r17_norm12_isotropic_frames.sage --check
+```
+
 ## Alternate-Q80 rootless equation handoff
 
 `build_q80_alternate_final_divisor_handoff.sage` is the fail-closed
-**ACTIVE_PROOF** input to the alternate-rootless equation compiler.  It
+historical fallback input to the alternate-rootless equation compiler.  It
 replays the physical nef final q6 fibre and zero, full determinant-one NS
 transport, rootless determinant-948 MW17 child, and all 1,313 norm-four
 pairs.  Its artifact deliberately records the immediate `A1/MW16`
-characteristic-zero equation and the resolved function basis as open:
+characteristic-zero equation and the resolved function basis as open.  The
+preferred construction now compiles `norm12-orbit-11952` directly on the
+published R17 equation:
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \

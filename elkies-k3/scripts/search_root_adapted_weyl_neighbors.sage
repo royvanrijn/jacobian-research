@@ -54,6 +54,14 @@ parser.add_argument(
 parser.add_argument("--output", type=Path)
 parser.add_argument("--frames-dir", type=Path)
 parser.add_argument(
+    "--summary-only",
+    action="store_true",
+    help=(
+        "retain exact per-q counts and root histograms but omit the potentially "
+        "large neighbor-witness list from JSON output"
+    ),
+)
+parser.add_argument(
     "--pari-gb",
     type=int,
     default=1,
@@ -161,6 +169,8 @@ parser.add_argument(
     ),
 )
 args = parser.parse_args()
+if args.summary_only and args.frames_dir is not None:
+    parser.error("--summary-only cannot be combined with --frames-dir")
 if args.pari_gb < 1:
     parser.error("--pari-gb must be positive")
 if args.pari_gb != 1:
@@ -671,6 +681,8 @@ for q in sorted(set(args.q)):
     histogram = Counter()
     nonprimitive = 0
     q_records = []
+    primitive_neighbors = 0
+    maximum_child_mw_rank = 17 - root_rank
     screened_orbits = orbit_count if args.stream_first_growth else 0
     stopped_early = False
     if args.stream_first_growth:
@@ -770,8 +782,11 @@ for q in sorted(set(args.q)):
                     "child_mw_height": rational_rows(child_height),
                 }
             )
-        q_records.append(record)
-        all_records.append(record)
+        primitive_neighbors += 1
+        maximum_child_mw_rank = max(maximum_child_mw_rank, child_mw_rank)
+        if not args.summary_only:
+            q_records.append(record)
+            all_records.append(record)
         if args.stop_after_first_growth and adapted_data is not None:
             stopped_early = True
             break
@@ -791,7 +806,7 @@ for q in sorted(set(args.q)):
         "stream_limit_reached": stream_limit_reached,
         "screened_orbits": int(screened_orbits),
         "search_stopped_early": stopped_early,
-        "primitive_neighbors": len(q_records),
+        "primitive_neighbors": primitive_neighbors,
         "nonprimitive_orbits": int(nonprimitive),
         "root_histogram": [
             {
@@ -815,10 +830,10 @@ for q in sorted(set(args.q)):
             factor_b,
             len(mw_vectors),
             orbit_count,
-            len(q_records),
+            primitive_neighbors,
             nonprimitive,
             screened_orbits,
-            max((record["child_mw_rank"] for record in q_records), default=17 - root_rank),
+            maximum_child_mw_rank,
             (
                 "PASS_FIRST_HIT"
                 if stopped_early
@@ -887,6 +902,12 @@ payload = {
     "summaries": summaries,
     "neighbors": all_records,
 }
+if args.summary_only:
+    payload["summary_only"] = True
+    payload["witness_retention"] = (
+        "Exact enumeration and classification were performed, but individual "
+        "neighbor witnesses were deliberately omitted from this artifact."
+    )
 if args.select_orbit_index is not None:
     payload["selected_orbit_indices"] = sorted(set(args.select_orbit_index))
     payload["selection_scope"] = (

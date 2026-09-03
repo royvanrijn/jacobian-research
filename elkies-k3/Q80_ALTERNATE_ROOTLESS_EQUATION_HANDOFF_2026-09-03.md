@@ -1,17 +1,29 @@
 # Alternate Q80 Rootless Equation Handoff (2026-09-03)
 
+<!-- status-consumer: EC-K3-H3-ROOTLESS-J2-MINIMAL-ACCESSIBILITY 631f50389e0a3283 -->
+
 ## Scope and status
 
 This note pins the exact starting point for recovering the characteristic-zero
-equation of the unique alternate rootless determinant-948 `J2` frame.  It does
-not alter the completed two-class rootless-frame classification and does not
-claim an equation-level fibration.
+equation of one historically transported copy of the unique alternate
+rootless determinant-948 `J2` frame.  It does not alter the completed two-class
+rootless-frame classification and does not claim an equation-level fibration.
 
-The lattice handoff is complete and independently replayable.  The equation
-breakthrough (Level A) remains open because there is no characteristic-zero
-equation for the immediate `A1/MW16` parent.  Consequently the resolved polar
-divisor proof, the new Weierstrass model, its 17 explicit sections, and all
-specialization comparisons remain open.
+**Updated construction priority.**  The historical Q80 lift below is no longer
+the preferred route to the frame class.  The exact classifier in
+[`J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md`](J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md)
+finds ten nef degree-two copies of the alternate class directly among the 43
+norm-twelve genus-one bisections on the published R17 equation.  Each shares
+the old zero and has zero-section degree one.  The cheapest stored witness is
+`norm12-orbit-11952`.  Compile its pencil `|D|` before resuming the million-bit
+third-q12 reconstruction recorded here.
+
+The lattice handoff is complete and independently replayable.  Along this
+historical route, the equation breakthrough (Level A) remains open because
+there is no characteristic-zero equation for the immediate `A1/MW16` parent.
+For the new direct route, the open gate is instead the resolved two-dimensional
+Riemann--Roch pencil of one exact genus-one divisor.  The new Weierstrass model,
+its 17 explicit sections, and all specialization comparisons remain open.
 
 ## Exact final divisor
 

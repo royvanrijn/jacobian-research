@@ -7,6 +7,9 @@ equation lifts, and reusable methods, start with
 [`ELKIES_K3_PROCESS_ATLAS.md`](ELKIES_K3_PROCESS_ATLAS.md). For the
 general rank, determinant, fibration, specialization, and lift statements,
 see [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md).
+Its equivariant arithmetic rank-transfer theorem, machine-readable marking
+schema, H3/E6 controls, and fail-closed NS0024 application are summarized in
+[`ARITHMETIC_RANK_TRANSFER_2026-09-03.md`](ARITHMETIC_RANK_TRANSFER_2026-09-03.md).
 Before extending the certified equation route or using its endpoint, read
 [`PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md`](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
 It records what the historical construction supplies, the minimum
@@ -367,6 +370,15 @@ E6+D5+A3/MW3
 ```
 
 Every retained new divisor from `D7+D5/MW5` onward has chamber-reduced old-fibre degree `2`.
+
+The historical chain is no longer the preferred generic equation route to
+its terminal `J2` class.  Exact classification of all 43 norm-twelve
+genus-one bisections on the published R17 equation finds ten degree-two copies
+of the alternate Q80 frame, each sharing the published zero.  Thus the two
+rootless determinant-948 `J2` classes have exact elliptic incidence distance
+two and minimum zero-section cost one.  The direct pencil
+`norm12-orbit-11952` is now the cheapest construction target; see
+[`J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md`](J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md).
 
 The old suffix labels `7774`, `1938`, `6855`, and `candidate1` are search-result identifiers rather than intrinsic names. New notes should use the canonical stage names in [`CONSTRUCTION_ROUTES.md`](CONSTRUCTION_ROUTES.md), while [`Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md`](Q80_LOWQ_SUFFIX_PROVENANCE_2026-08-23.md) records the exact historical search lineage and the successful terminal-marking reconstruction.
 

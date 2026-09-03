@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openai.local/jacobian-research/elkies-k3/arithmetic-marking-v1.schema.json",
+  "title": "Elkies K3 arithmetic marking",
+  "description": "Finite Galois action on a common geometric Neron-Severi lattice with marked Jacobian fibrations.",
+  "type": "object",
+  "required": [
+    "id",
+    "ground_field",
+    "gram",
+    "galois_generators",
+    "fibrations"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ground_field": {
+      "type": "string",
+      "minLength": 1
+    },
+    "gram": {
+      "$ref": "#/$defs/integer_matrix"
+    },
+    "galois_generators": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "matrix"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "matrix": {
+            "$ref": "#/$defs/integer_matrix"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "fibrations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "u_basis_columns",
+          "root_basis_columns",
+          "expected"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "u_basis_columns": {
+            "$ref": "#/$defs/vector_list"
+          },
+          "root_basis_columns": {
+            "$ref": "#/$defs/vector_list"
+          },
+          "expected": {
+            "type": "object",
+            "required": ["geometric_mw_rank", "arithmetic_mw_rank"],
+            "properties": {
+              "geometric_mw_rank": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "arithmetic_mw_rank": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "target"],
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "$defs": {
+    "integer_matrix": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      }
+    },
+    "vector_list": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
