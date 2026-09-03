@@ -6,7 +6,7 @@ Exact and computational mathematics with machine-replayable proof and status rec
 
 **Prime-gap calculations are the active compute priority.**
 
-The elliptic-K3 / high-rank elliptic-curve programme is **paused as of 3 September 2026**. Do not launch large K3, descent, neighbour, or specialization searches unless that programme is explicitly resumed.
+All unrelated compute-heavy research campaigns are parked unless explicitly resumed. In particular, the elliptic-K3 / high-rank elliptic-curve programme is **paused as of 3 September 2026**; do not launch large K3, descent, neighbour, specialization, or other broad searches while prime-gap work owns the compute budget.
 
 ## Canonical repository state
 
@@ -17,7 +17,7 @@ The elliptic-K3 / high-rank elliptic-curve programme is **paused as of 3 Septemb
 - [`artifacts/generated-results/`](artifacts/generated-results/) — generated certificates.
 - [`archive/`](archive/) — superseded or historical research; not a current claim source.
 - [`elkies-k3/README.md`](elkies-k3/README.md) — frozen K3/high-rank milestone and resume point.
-- [`elliptic-curves/README.md`](elliptic-curves/README.md) — elliptic-curve programme notes.
+- [`elliptic-curves/README.md`](elliptic-curves/README.md) — frozen elliptic-curve programme milestone.
 - [`KNOWLEDGE_BASE.md`](KNOWLEDGE_BASE.md) and [`RESEARCH_TIMELINE.md`](RESEARCH_TIMELINE.md) — broader synthesis and chronology.
 
 ## K3 / high-rank milestone at pause
