@@ -1,7 +1,8 @@
 # Cross-Gram reconstruction of relative `U`-embeddings and the first NS0024 search
 
 <!-- status-consumer: EC-K3-RELATIVE-U-BRIDGE-LIFTING 800e22abf69b91aa -->
-<!-- status-consumer: EC-K3-LOCAL-BRIDGE-MUTATION-H1C 2db88fff92ef48b9 -->
+<!-- status-consumer: EC-K3-LOCAL-BRIDGE-MUTATION-H1C 7421328afadcf61f -->
+<!-- status-consumer: EC-K3-PRIME-LOCAL-BRIDGE-MUTATION-H1D d4c6c84967a8fbc5 -->
 <!-- status-consumer: EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION d57544697149506f -->
 
 Date: 2026-09-03
@@ -36,7 +37,14 @@ c/h divides gcd(c,D).
 ```
 
 Thus 35 of the 42 stored maximal glues are forced by coprimality.  Seven
-shared-prime cases still need their exact glue calculation.
+shared-prime cases require local graph data beyond the support theorem.  They
+are now completely classified by Theorem H-1d.  In all seven, the raw bridges
+are already saturated, the common-core determinant forces maximal local glue,
+and every marked maximal graph has the required local NS discriminant form.
+The finite quadratic form therefore fixes the order but not the graph label.
+Exact norm-two coset enumeration distinguishes the alternatives: conditional
+on the stored good-prime glue and the declared old/new ADE systems, the
+historical transported graph is unique on every edge.
 
 The parity conclusion also needs an odd-primary qualification.  Even relative
 determinant kills the 2-primary bridge discriminant, but does not force
@@ -86,7 +94,83 @@ results are the 84-presentation replay and the bounded NS0024 obstruction.
 Theorem H-1c is likewise recorded as a tailored consequence of Nikulin graph
 glue and unimodular splitting.  Its R17 instance, the 35/42 forced-maximal
 count, and the comparison with the two stored H3 `4A1` frames are new exact
-computations.
+computations.  Theorem H-1d and its seven-edge/R17 enumeration are the next
+prime-local layer.
+
+## Prime-local normal form and seven-edge census
+
+Theorem H-1d separates three finite operations at each prime:
+
+1. index-`ell^v_ell(m)` isotropic subgroups of the raw bridge discriminant
+   form classify its possible saturation;
+2. isotropic graph subgroups of `A_(K,ell)+A_(C,ell)` are filtered by
+   `H^perp/H isomorphic to -q_(NS,ell)`;
+3. the rank-four bridge isometry transports the old graph to the new graph,
+   so the two sides are coupled rather than chosen independently.
+
+The first two operations classify unmarked finite modules from the proposed
+input list.  Root births require one extra marked layer: the saturation
+embeddings/transport `tau_ell` and the coset theta minima of the metric
+blocks.  Local Smith invariants by themselves cannot determine ADE births;
+the historical ambient markings supply the missing decoration in the census.
+
+For fixed `K,C` the graph order is forced by
+
+```text
+2 v_ell(|H|)=v_ell(det K)+v_ell(det C)-v_ell(|det NS|).
+```
+
+Away from `det NS`, the quotient form is zero and the graph is the full graph
+of an anti-isometry.  This is one unmarked local orbit.  At the shared bad
+primes the marked graph set can be larger, and the root effect is not encoded
+by `q_NS`: it is decided by the theta/coset minima after the primary graphs
+are assembled.
+
+The seven exact marked graph counts are
+
+```text
+NS0024-8: 10     Golay720-3: 18     Golay720-4: 18
+H3-6:       6     Q80-1:       4     Q80-5:       6     Q80-7: 4.
+```
+
+Their distinct transported ADE-pair counts are respectively
+`10,12,16,6,3,5,4`.  In every case the actual historical ADE pair occurs
+once.  Conversely, all marked graphs pass the local `q_NS` filter, so root
+decoration is essential.
+
+The R17 control has `A_(K,2)=(4,4,8)`, `A_(C,2)=(4,8)` and 32 marked maximal
+graphs.  They yield eight ADE-pair types; the actual rootless-to-`4A1` pair
+has multiplicity four.  It therefore disproves both cyclic one-generator
+glue and uniqueness from the ADE pair.
+
+There is one correction to the proposed global cutoff.  All seven historical
+shared-prime cross matrices have `det(A)=0`, while their raw bridge Grams are
+positive definite.  Hence `ell | 2D det(A)` is not a finite condition.  The
+safe exact normal form is
+
+```text
+global bridge/glue completion
+  = product_(ell | 2 D det(A^t J A-J)) X_ell,
+```
+
+with singleton unmarked factors away from `D`; after the saturated bridges
+are fixed, possible graph-glue defect is supported on
+`ell | gcd(det C,D)`.
+
+Generate and byte-check the census with
+
+```bash
+sage -python elkies-k3/scripts/certify_prime_local_bridge_mutation.sage
+sage -python elkies-k3/scripts/certify_prime_local_bridge_mutation.sage --check
+```
+
+The output is
+[`elkies-k3-prime-local-bridge-mutation-v1.json`](../artifacts/generated-results/elkies-k3-prime-local-bridge-mutation-v1.json),
+with SHA-256
+`c158be14bbb32c8426ff90486194aff0e3fa8feafa66662f9e385d7c48db6909`.
+It records the raw Grams, saturation and valuation ledgers, both local bridge
+forms, local NS forms, every marked graph count, every exact ADE transition,
+and the R17 noncyclic control.
 
 ## R17 local mutation replay
 
@@ -189,11 +273,16 @@ The input frame is
 
 Proved here: the relative-`U` parameterization, automatic primitivity, the
 square-index bridge correction, its two-sided saturation/glue strengthening,
-the corrected 2-primary parity law, bounded finiteness, the 42-hop regression,
-the exact R17 maximal non-cyclic local mutation, and the stated exact
-first-edge nonexistence boxes.
+the corrected 2-primary parity law, the prime-local saturation/graph normal
+form, good-prime unmarked rigidity, bounded finiteness, the 42-hop regression,
+the exact seven-edge bad-prime census, the exact R17 maximal non-cyclic local
+mutation and negative-control census, and the stated exact first-edge
+nonexistence boxes.
 
 Not proved here: a global degree bound, a bound on `t`, existence outside the
 audited boxes, nefness or zero effectivity for an un-audited marking, the
 horizontal-wall certificate, an equation or `J1` identification for the new
-R17 fibration, or a rational map for the new NS0024 completion.
+R17 fibration, a rational map for the new NS0024 completion, variation of the
+stored good-prime graph decorations in the seven-edge census, or automatic
+lifting of every finite discriminant-form automorphism to an integral
+automorphism of the metric blocks.

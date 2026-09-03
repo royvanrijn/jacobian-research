@@ -4,9 +4,10 @@ Exact and computational mathematics with machine-replayable proof and status rec
 
 ## Current focus
 
-**Prime-gap calculations are the active compute priority.**
-
-All unrelated compute-heavy research campaigns are parked unless explicitly resumed. In particular, the elliptic-K3 / high-rank elliptic-curve programme is **paused as of 3 September 2026**; do not launch large K3, descent, neighbour, specialization, or other broad searches while prime-gap work owns the compute budget.
+The repository is open for theorem-directed breakthroughs across its research
+programmes. The elliptic-K3 and high-rank elliptic-curve programmes are active;
+large computations should be launched only with an explicit mathematical gate,
+reproducible inputs, and checkpointed outputs.
 
 ## Canonical repository state
 
@@ -16,11 +17,11 @@ All unrelated compute-heavy research campaigns are parked unless explicitly resu
 - [`verified/`](verified/) — durable verified theorem notes.
 - [`artifacts/generated-results/`](artifacts/generated-results/) — generated certificates.
 - [`archive/`](archive/) — superseded or historical research; not a current claim source.
-- [`elkies-k3/README.md`](elkies-k3/README.md) — frozen K3/high-rank milestone and resume point.
-- [`elliptic-curves/README.md`](elliptic-curves/README.md) — frozen elliptic-curve programme milestone.
+- [`elkies-k3/README.md`](elkies-k3/README.md) — current K3/high-rank milestone and active fronts.
+- [`elliptic-curves/README.md`](elliptic-curves/README.md) — current elliptic-curve programme milestone and active fronts.
 - [`KNOWLEDGE_BASE.md`](KNOWLEDGE_BASE.md) and [`RESEARCH_TIMELINE.md`](RESEARCH_TIMELINE.md) — broader synthesis and chronology.
 
-## K3 / high-rank milestone at pause
+## K3 / high-rank current milestone
 
 The two determinant-948 rootless rank-17 charts on the pinned K3 are explicit over `QQ`.
 
@@ -29,7 +30,7 @@ The two determinant-948 rootless rank-17 charts on the pinned K3 are explicit ov
 - The alternate chart has generic arithmetic rank 17 over `QQ`.
 - The four published rank-25--28 R17 controls have no rational preimage under the alternate-Q80 `j`-map, so future alternate work needs native calibration fibres.
 - Rank `>=32` remains open.
-- Target-directed fibration hopping is frozen after one curated planner-ready end-to-end control; the 936 bulk foundry routes are not planner-ready.
+- Target-directed fibration hopping has one curated planner-ready end-to-end control; the 936 bulk foundry routes are not yet planner-ready.
 
 Historical Q80 transports, large-coordinate reconstruction routes, and expensive third-`q12` work are provenance only. See [`archive/elkies-k3/`](archive/elkies-k3/).
 

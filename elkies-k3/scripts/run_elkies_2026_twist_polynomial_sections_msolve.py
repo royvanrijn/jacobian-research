@@ -141,6 +141,10 @@ tag = (
     if candidate["kind"] == "singleton"
     else f"product-{candidate['key'].replace(':', '-')}"
     if candidate["kind"] == "product"
+    else f"direct-singleton-{candidate['key']}"
+    if candidate["kind"] == "direct_singleton"
+    else f"direct-product-{candidate['key'].replace(':', '--')}"
+    if candidate["kind"] == "direct_product"
     else f"genus-one-{candidate['key']}"
 )
 prime = int(export["prime"])

@@ -1,0 +1,134 @@
+{
+  "inherited_character_group": {
+    "character_count": 121,
+    "distinct_character_count": 121,
+    "distinct_pair_product_count": 7260,
+    "matches_another_inherited_character": [],
+    "matches_another_inherited_character_count": 0,
+    "pair_product_collision_count": 0,
+    "pair_product_collisions": [],
+    "pair_product_count": 7260
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-norm12-orbit-103b2-twist-section-v1.json": "3678dd4e3074e15a4c23d6cc57f491f720afcd55d9c5fc53ca5d4ff78db4d036",
+    "artifacts/generated-results/elkies-k3-r17-genus-one-bisection-splitting-search-v1.json": "4745f53993675286173298c9444da023825fd4429e74ede582a1d8c14979d07e",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-inherited-bisection-covers-v1.json": "6ba1db53ed02de18910456e75dcdad55e87205c7355986080dab1955d83050b9",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json": "0169f4b764268c63e7919496be8570e1a794ab5ddcc4856aeee69a3f5e5e5deb",
+    "elkies-k3/data/lattice/rank17_gram.txt": "ea1330ce903c55624de1705ebedf36f6f5964cdd6ce911927001db82626ff237",
+    "elkies-k3/scripts/hash_bisection_extensions.py": "caae324023836a3084c2589a1a8269cb12304164a0f2e4de9d952fd4c0e790e4"
+  },
+  "older_published_base_catalog": {
+    "characters": [
+      {
+        "formal_extension_sha256": "7dc4f3e4f7a5b6ec9dea8e0730d447784c61371396dddcc4a4e6e410a2d75921",
+        "label": "rank28-Q1",
+        "source": "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+        "source_base": "published R17 t-line"
+      },
+      {
+        "formal_extension_sha256": "bf0baf051b0a92a604a9daf21d4d404da6e6d1e55d4cdc82c397ecb1b7509f03",
+        "label": "rank28-Q2",
+        "source": "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+        "source_base": "published R17 t-line"
+      },
+      {
+        "formal_extension_sha256": "da20ae07d9693d795ded9f28e1cbe08f19c3b893336e5d737e145322fc129cbb",
+        "label": "rank28-Q3",
+        "source": "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+        "source_base": "published R17 t-line"
+      },
+      {
+        "formal_extension_sha256": "73586bb5660be8561e645b2a701133ac4ce9637a3f0198f0a5cfad0ed93cac7d",
+        "label": "rank28-Q4",
+        "source": "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+        "source_base": "published R17 t-line"
+      },
+      {
+        "formal_extension_sha256": "5496fd3c932913af69ce107237f751c3e16ceaa9a0f415ad8b1ae6d1b48902d2",
+        "label": "rank28-Q5",
+        "source": "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+        "source_base": "published R17 t-line"
+      },
+      {
+        "formal_extension_sha256": "9b7c52a60b89334d0a2e90de201740cbc1e99cb6fddd06676feb3a5f3c1af1a3",
+        "label": "rank28-Q6",
+        "source": "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+        "source_base": "published R17 t-line"
+      },
+      {
+        "formal_extension_sha256": "9b375425740e0a34ad063e6607961a51e851304ae6f3d5ad1f8258ef913bdb27",
+        "label": "rank28-Q7",
+        "source": "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+        "source_base": "published R17 t-line"
+      },
+      {
+        "formal_extension_sha256": "6460d9ba31f1b0e98bede760d824024ed864179f5d29b6d57220a5ba250109d4",
+        "label": "rank28-Q8",
+        "source": "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+        "source_base": "published R17 t-line"
+      },
+      {
+        "formal_extension_sha256": "c63af70f16b1849c9d8e21b9378f338728c54ec8f723f059533fc1140e318d5d",
+        "label": "rank28-Q9",
+        "source": "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+        "source_base": "published R17 t-line"
+      },
+      {
+        "formal_extension_sha256": "6dbab8ded2b7db6aa62d5bbf246333a7791d85a0a9342df5e7c4bbf8796919c0",
+        "label": "rank28-Q10",
+        "source": "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+        "source_base": "published R17 t-line"
+      },
+      {
+        "formal_extension_sha256": "7bd14a6e020006eaa5fe1c64e9737fd68d86789c72a877b4eb9a8a33c179711c",
+        "label": "rank28-Q11",
+        "source": "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
+        "source_base": "published R17 t-line"
+      },
+      {
+        "formal_extension_sha256": "1f22de548723fbb47fc2530a434ae9c622446717ddbe18594180195559cedb9a",
+        "label": "q_103b2",
+        "source": "artifacts/generated-results/elkies-k3-norm12-orbit-103b2-twist-section-v1.json",
+        "source_base": "published R17 t-line"
+      }
+    ],
+    "compatibility_gate": {
+      "consequence": "The eleven rank-28 quartics and q_103b2 are characters over the old published t-line. Their source curves have degrees 8 and 9 over the alternate-Q80 u-line, not degree 2, so renaming t to u is only a formal coefficient comparison and cannot supply the third V4 character.",
+      "pairing_convention": "(a,b,w).(a',b',w')=a*b'+b*a'-<w,w'>_R17",
+      "q_103b2": {
+        "degree_over_target_u_line": 9,
+        "is_quadratic_character_of_target_base": false,
+        "source_divisor": {
+          "a": 3,
+          "b": 2,
+          "trace_norm": 12
+        },
+        "trace_pairing_with_target": 3
+      },
+      "rank28_pencil": {
+        "degree_over_target_u_line": 8,
+        "is_quadratic_character_of_target_base": false,
+        "source_divisor": {
+          "a": 2,
+          "b": 2,
+          "trace_norm": 8
+        },
+        "trace_pairing_with_target": 2
+      },
+      "target_fibre": "alternate-Q80",
+      "target_fibre_divisor": {
+        "a": 3,
+        "b": 2,
+        "trace_norm": 12
+      }
+    },
+    "formal_product_match_count": 0,
+    "formal_product_matches": [],
+    "formal_variable_rename_comparison_count": 12
+  },
+  "proof_boundary": "All 7260 products of the 121 exact inherited alternate-Q80-base quadratic characters are compared in QQ(u)^*/QQ(u)^{*2}, including the rational constant squareclass. Older published-base characters are also compared after a formal variable rename, but the exact NS degree gate prevents treating those old-base equations as target-base twist characters.",
+  "reproducing_command": ".venv/bin/python elkies-k3/scripts/analyze_r17_norm12_11952_inherited_products.py --source-label norm12-orbit-11952 --output artifacts/generated-results/elkies-k3-r17-norm12-11952-inherited-product-characters-v1.json",
+  "schema": "elkies-k3.r17-norm12-11952-inherited-product-characters.v1",
+  "status": "PASS_EXACT_NO_INHERITED_PRODUCT_CHARACTER_CLOSURE"
+}

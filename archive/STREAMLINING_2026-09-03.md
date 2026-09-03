@@ -1,8 +1,10 @@
-# Repository streamlining freeze — 2026-09-03
+# Repository streamlining snapshot — 2026-09-03
 
-This records the repository-wide navigation cleanup performed when compute-heavy research was paused in favour of prime-gap calculations.
+This records a repository-wide navigation cleanup and the temporary compute
+policy adopted at that time. That policy is historical: the research programmes
+are active again.
 
-## Freeze point
+## Snapshot point
 
 The complete pre-cleanup tree is preserved at:
 
@@ -21,8 +23,8 @@ Use that snapshot when reconstructing an old narrative, command surface, or hand
 ## What was streamlined
 
 - The root README was reduced from a multi-programme running research diary to a short navigation/status page.
-- Repository, K3, and elliptic-curve agent instructions were reduced to authority rules, pause state, and safe resume points.
-- The K3 and elliptic-curve READMEs were frozen at their current certified milestones rather than retaining stale active-search instructions.
+- Repository, K3, and elliptic-curve agent instructions were reduced to authority rules, the then-current programme state, and safe continuation points.
+- The K3 and elliptic-curve READMEs were reduced to their certified milestones rather than retaining stale active-search instructions.
 - Historical Q80 and reconstruction routes were classified as provenance-only in the K3 archive index.
 - Current proof sources, `MATH_STATUS.json`, `REPRODUCE.md`, generated certificates, scripts, and process-ledger evidence were retained.
 

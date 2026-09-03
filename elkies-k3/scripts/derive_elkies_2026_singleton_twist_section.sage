@@ -63,7 +63,9 @@ def require_polynomial(value, ring, label):
 
 
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument("--mask", type=int, required=True)
+target = parser.add_mutually_exclusive_group(required=True)
+target.add_argument("--mask", type=int)
+target.add_argument("--direct-label")
 parser.add_argument("--prime", type=int, help="optionally identify its exporter block")
 parser.add_argument("--bisections", type=Path, default=DEFAULT_BISECTIONS)
 parser.add_argument("--model", type=Path, default=DEFAULT_MODEL)
@@ -78,23 +80,40 @@ record = next(
     (
         item
         for item in bisections["bisections"]
-        if int(item["lattice_orbit_mask"]) == args.mask
+        if (
+            int(item["lattice_orbit_mask"]) == args.mask
+            if args.mask is not None
+            else item["label"] == args.direct_label
+        )
     ),
     None,
 )
 if record is None:
-    raise ValueError(f"unknown bisection mask {args.mask}")
+    raise ValueError(
+        f"unknown bisection target {args.mask if args.mask is not None else args.direct_label}"
+    )
+mask = int(record["lattice_orbit_mask"])
+direct = args.direct_label is not None
 
 model = json.loads(args.model.read_text())
-if model.get("status") != "PASS_TRANSCRIBED_PUBLISHED_R17_MODEL":
+if model.get("status") == "PASS_TRANSCRIBED_PUBLISHED_R17_MODEL":
+    model_coefficients = model
+elif model.get("status") == "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS":
+    model_coefficients = model["weierstrass_model"]
+else:
     raise ValueError("expected the certified compact published R17 model")
 
 R = PolynomialRing(QQ, "t")
 t = R.gen()
 K = R.fraction_field()
-A = polynomial(R, model["A_coefficients_low_to_high"])
-B = polynomial(R, model["B_coefficients_low_to_high"])
-q = polynomial(R, record["residual_chord"]["q_coefficients"])
+A = polynomial(R, model_coefficients["A_coefficients_low_to_high"])
+B = polynomial(R, model_coefficients["B_coefficients_low_to_high"])
+q = polynomial(
+    R,
+    record["branch"]["numerator_coefficients"]
+    if direct
+    else record["residual_chord"]["q_coefficients"],
+)
 if q.degree() != 2 or q.gcd(q.derivative()).degree() != 0:
     raise ArithmeticError("expected a squarefree quadratic twist polynomial")
 
@@ -147,10 +166,19 @@ if args.prime is not None:
         args.export = (
             ROOT
             / "artifacts/local/elkies-k3/twist-polynomial-sections"
-            / f"singleton-{args.mask}/p{args.prime}/export.json"
+            / (
+                f"direct-singleton-{args.direct_label}/p{args.prime}/export.json"
+                if direct
+                else f"singleton-{args.mask}/p{args.prime}/export.json"
+            )
         )
     export = json.loads(args.export.read_text())
-    if export["candidate"]["kind"] != "singleton" or export["candidate"]["key"] != str(args.mask):
+    expected_kind = "direct_singleton" if direct else "singleton"
+    expected_key = args.direct_label if direct else str(args.mask)
+    if (
+        export["candidate"]["kind"] != expected_kind
+        or export["candidate"]["key"] != expected_key
+    ):
         raise ValueError("modular export does not match the requested singleton")
     if int(export["prime"]) != args.prime:
         raise ValueError("modular export prime mismatch")
@@ -247,8 +275,9 @@ if args.prime is not None:
 payload = {
     "schema": "elkies-k3.elkies-2026-singleton-twist-section.v1",
     "status": "PASS_EXACT_DESCENDED_SINGLETON_TWIST_SECTION",
-    "mask": args.mask,
-    "orbit_hex": f"0x{args.mask:05x}",
+    "label": record.get("label"),
+    "mask": mask,
+    "orbit_hex": f"0x{mask:05x}",
     "construction": "R=P-sigma(P); (X,Y)=(q*x(R),q^2*coefficient_u(y(R)))",
     "twist_model": "Y^2=X^3+A*q^2*X+B*q^3",
     "q_coefficients_low_to_high": polynomial_coefficients(q),
@@ -280,12 +309,16 @@ if args.output is None:
     args.output = (
         ROOT
         / "artifacts/generated-results"
-        / f"elkies-2026-singleton-twist-section-mask-{args.mask}.json"
+        / (
+            f"elkies-k3-r17-norm12-direct-singleton-twist-section-{args.direct_label}.json"
+            if direct
+            else f"elkies-2026-singleton-twist-section-mask-{args.mask}.json"
+        )
     )
 args.output.parent.mkdir(parents=True, exist_ok=True)
 args.output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
 print(
-    f"ELKIES2026TWISTSECTION|mask={args.mask}|degrees={X.degree()},{Y.degree()}"
+    f"ELKIES2026TWISTSECTION|mask={mask}|degrees={X.degree()},{Y.degree()}"
     f"|modular_block={None if modular_identification is None else modular_identification['section_block']}"
     f"|output={args.output}|status=PASS_EXACT",
     flush=True,

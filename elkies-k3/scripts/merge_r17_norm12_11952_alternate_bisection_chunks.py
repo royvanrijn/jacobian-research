@@ -14,6 +14,9 @@ ORBIT_TABLE = ROOT / "artifacts/generated-results/elkies-k3-q80-alternate-rootle
 HISTORICAL_FRAME = ROOT / "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json"
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-full-v1.json"
 EXPECTED_COUNT = 39147
+HIDDEN_TABLE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisection-priority-v1.tsv"
+HIDDEN_FRAME = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisection-priority-v1.json"
+HIDDEN_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisections-full-v1.json"
 
 
 def digest(path: Path) -> str:
@@ -31,18 +34,36 @@ def relative(path: Path) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("chunks", nargs="+", type=Path)
-    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument(
+        "--source-label",
+        choices=("norm12-orbit-11952", "norm12-orbit-103b2"),
+        default="norm12-orbit-11952",
+    )
+    parser.add_argument("--output", type=Path)
     parser.add_argument("--check", action="store_true")
     arguments = parser.parse_args()
+    is_alternate_target = arguments.source_label == "norm12-orbit-11952"
+    expected_count = EXPECTED_COUNT if is_alternate_target else 39120
+    output = arguments.output or (DEFAULT_OUTPUT if is_alternate_target else HIDDEN_OUTPUT)
+    chunk_artifact_schema = (
+        "elkies-k3.r17-norm12-11952-alternate-bisections.v1"
+        if is_alternate_target
+        else "elkies-k3.r17-norm12-103b2-hidden-bisections.v1"
+    )
+    chunk_status = (
+        "PASS_EXACT_ALTERNATE_BISECTION_EQUATION_CHUNK"
+        if is_alternate_target
+        else "PASS_EXACT_103B2_HIDDEN_BISECTION_EQUATION_CHUNK"
+    )
 
     loaded = []
     for path in arguments.chunks:
         payload = json.loads(path.read_text())
         if payload.get("schema") != "elkies-k3.bisection-extension-input.v1":
             raise ValueError(f"{path}: unexpected input schema")
-        if payload.get("artifact_schema") != "elkies-k3.r17-norm12-11952-alternate-bisections.v1":
+        if payload.get("artifact_schema") != chunk_artifact_schema:
             raise ValueError(f"{path}: unexpected artifact schema")
-        if payload.get("status") != "PASS_EXACT_ALTERNATE_BISECTION_EQUATION_CHUNK":
+        if payload.get("status") != chunk_status:
             raise ValueError(f"{path}: chunk did not pass exact construction")
         interval = payload.get("interval", {})
         start = int(interval.get("start_zero_based", -1))
@@ -70,9 +91,9 @@ def main() -> None:
         for chart, count in payload["construction"]["construction_chart_counts"].items():
             chart_counts[chart] = chart_counts.get(chart, 0) + int(count)
         cursor = stop
-    if cursor != EXPECTED_COUNT or len(records) != EXPECTED_COUNT:
+    if cursor != expected_count or len(records) != expected_count:
         raise ValueError(
-            f"chunks cover [0,{cursor}) with {len(records)} records; expected {EXPECTED_COUNT}"
+            f"chunks cover [0,{cursor}) with {len(records)} records; expected {expected_count}"
         )
 
     chunk_manifest = [
@@ -84,19 +105,31 @@ def main() -> None:
         }
         for start, stop, path, _ in loaded
     ]
+    orbit_table = ORBIT_TABLE if is_alternate_target else HIDDEN_TABLE
+    frame_artifact = HISTORICAL_FRAME if is_alternate_target else HIDDEN_FRAME
+    vector_key = "alternate_rank17_w" if is_alternate_target else "direct_hidden_w"
+    complete_status = (
+        "PASS_EXACT_COMPLETE_ALTERNATE_BISECTION_EQUATIONS"
+        if is_alternate_target
+        else "PASS_EXACT_COMPLETE_103B2_HIDDEN_BISECTION_EQUATIONS"
+    )
     result = {
         "schema": "elkies-k3.bisection-extension-input.v1",
-        "artifact_schema": "elkies-k3.r17-norm12-11952-alternate-bisections-full.v1",
-        "status": "PASS_EXACT_COMPLETE_ALTERNATE_BISECTION_EQUATIONS",
+        "artifact_schema": (
+            "elkies-k3.r17-norm12-11952-alternate-bisections-full.v1"
+            if is_alternate_target
+            else "elkies-k3.r17-norm12-103b2-hidden-bisections-full.v1"
+        ),
+        "status": complete_status,
         "base_parameter": "u",
         "invariant_mw_rank": 17,
         "bisections": records,
         "required_lattice_orbits": {
-            "table": relative(ORBIT_TABLE),
-            "sha256": digest(ORBIT_TABLE),
-            "frame_artifact": relative(HISTORICAL_FRAME),
-            "frame_sha256": digest(HISTORICAL_FRAME),
-            "vector_key": "alternate_rank17_w",
+            "table": relative(orbit_table),
+            "sha256": digest(orbit_table),
+            "frame_artifact": relative(frame_artifact),
+            "frame_sha256": digest(frame_artifact),
+            "vector_key": vector_key,
         },
         "construction": {
             "method": "Proposition F1 exact regular residual chord",
@@ -109,26 +142,27 @@ def main() -> None:
         "chunk_manifest": chunk_manifest,
         "reproducing_command": (
             ".venv/bin/python elkies-k3/scripts/merge_r17_norm12_11952_alternate_bisection_chunks.py "
+            + ("" if is_alternate_target else "--source-label norm12-orbit-103b2 ")
             + " ".join(relative(path) for _, _, path, _ in loaded)
-            + f" --output {relative(arguments.output)}"
+            + f" --output {relative(output)}"
         ),
         "proof_boundary": (
             "There is exactly one exact equation-level degree-two cover and verified lifted "
-            "section for every one of the 39147 section-translation classes in the certified "
-            "alternate-Q80 lattice table. Equal-cover claims require the separate exact "
+            f"section for every one of the {expected_count} section-translation classes in the certified "
+            "rootless-frame lattice table. Equal-cover claims require the separate exact "
             "squareclass collision checker."
         ),
     }
     serialized = json.dumps(result, indent=2, sort_keys=True) + "\n"
     if arguments.check:
-        if not arguments.output.exists() or arguments.output.read_text() != serialized:
+        if not output.exists() or output.read_text() != serialized:
             raise ValueError("stored merged artifact differs from replay")
     else:
-        arguments.output.parent.mkdir(parents=True, exist_ok=True)
-        arguments.output.write_text(serialized)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(serialized)
     print(
-        "ALTFULLMERGE|status=PASS_EXACT_COMPLETE_ALTERNATE_BISECTION_EQUATIONS|"
-        f"records={len(records)}|chunks={len(loaded)}|output={relative(arguments.output)}"
+        f"NORM12FULLMERGE|status={complete_status}|"
+        f"records={len(records)}|chunks={len(loaded)}|output={relative(output)}"
     )
 
 

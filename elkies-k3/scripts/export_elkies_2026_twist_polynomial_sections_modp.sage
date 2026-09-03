@@ -1,6 +1,11 @@
 #!/usr/bin/env sage-python
 """Export reduced polynomial-section systems for one quadratic twist.
 
+status: ACTIVE_COMPILER
+claim: exact finite-field P.O=0 section-system export for one declared twist
+inputs: a certified Weierstrass model and certified twist-character records
+outputs: artifacts/local/elkies-k3/twist-polynomial-sections/<candidate>/p<prime>
+
 For an elliptic surface of arithmetic genus ``chi`` in short Weierstrass
 form, a section disjoint from the zero section has
 
@@ -24,7 +29,7 @@ import json
 from pathlib import Path
 import sys
 
-from sage.all import GF, PolynomialRing
+from sage.all import GF, PolynomialRing, QQ
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -37,6 +42,7 @@ from screen_elkies_2026_quadratic_twist_ranks import (  # noqa: E402
     DEFAULT_MODEL,
     DEFAULT_PAIRS,
     load_candidates,
+    multiply_integer_polynomials,
     square_equivalent_integer_polynomial,
     valuation,
 )
@@ -68,6 +74,14 @@ target = parser.add_mutually_exclusive_group(required=True)
 target.add_argument("--singleton-mask", type=int)
 target.add_argument("--product-key")
 target.add_argument("--genus-one-label")
+target.add_argument(
+    "--direct-label",
+    help="label in a direct norm-12 bisection-extension artifact",
+)
+target.add_argument(
+    "--direct-product-key",
+    help="two labels, separated by ':', in a direct bisection-extension artifact",
+)
 parser.add_argument("--prime", type=int, required=True)
 parser.add_argument(
     "--allow-infinity-two-torsion",
@@ -95,15 +109,64 @@ if prime < 5 or not GF(prime).is_prime_field():
     raise ValueError("the modular section exporter requires an odd prime at least five")
 field = GF(prime)
 
-singletons, products, unused_schemas = load_candidates(args.bisections, args.pairs)
 if args.singleton_mask is not None:
+    singletons, products, unused_schemas = load_candidates(args.bisections, args.pairs)
     key = str(args.singleton_mask)
     candidate = next((item for item in singletons if item.key == key), None)
     chi = 3
 elif args.product_key is not None:
+    singletons, products, unused_schemas = load_candidates(args.bisections, args.pairs)
     key = str(args.product_key)
     candidate = next((item for item in products if item.key == key), None)
     chi = 4
+elif args.direct_label is not None or args.direct_product_key is not None:
+    key = str(args.direct_label or args.direct_product_key)
+    direct_covers = json.loads(args.bisections.read_text())
+    if direct_covers.get("schema") != "elkies-k3.bisection-extension-input.v1":
+        raise ValueError("direct cover input has the wrong generic schema")
+    by_label = {item["label"]: item for item in direct_covers["bisections"]}
+    if args.direct_label is not None:
+        source_record = by_label.get(key)
+        candidate = None if source_record is None else Candidate(
+            kind="direct_singleton",
+            key=key,
+            masks=(int(source_record["lattice_orbit_mask"]),),
+            coefficients=square_equivalent_integer_polynomial(
+                source_record["branch"]["numerator_coefficients"]
+            ),
+            forced_twist_rank=1,
+            metadata={"orbit_hex": f"0x{int(source_record['lattice_orbit_mask']):05x}"},
+        )
+        chi = 3
+    else:
+        labels = tuple(key.split(":"))
+        if len(labels) != 2 or labels[0] == labels[1]:
+            raise ValueError("--direct-product-key requires two distinct labels")
+        source_records = tuple(by_label.get(label) for label in labels)
+        if any(record is None for record in source_records):
+            candidate = None
+        else:
+            factors = tuple(
+                square_equivalent_integer_polynomial(
+                    record["branch"]["numerator_coefficients"]
+                )
+                for record in source_records
+            )
+            candidate = Candidate(
+                kind="direct_product",
+                key=key,
+                masks=tuple(int(record["lattice_orbit_mask"]) for record in source_records),
+                coefficients=multiply_integer_polynomials(*factors),
+                forced_twist_rank=0,
+                metadata={
+                    "labels": list(labels),
+                    "orbit_hex": [
+                        f"0x{int(record['lattice_orbit_mask']):05x}"
+                        for record in source_records
+                    ],
+                },
+            )
+        chi = 4
 else:
     key = str(args.genus_one_label)
     constructions = json.loads(args.genus_one_constructions.read_text())
@@ -130,10 +193,14 @@ if candidate is None:
     raise ValueError(f"unknown twist candidate {key}")
 
 model = json.loads(args.model.read_text())
-if model.get("status") != "PASS_TRANSCRIBED_PUBLISHED_R17_MODEL":
-    raise ValueError("expected the certified compact published R17 model")
-base_a = [field(int(value)) for value in model["A_coefficients_low_to_high"]]
-base_b = [field(int(value)) for value in model["B_coefficients_low_to_high"]]
+if model.get("status") == "PASS_TRANSCRIBED_PUBLISHED_R17_MODEL":
+    model_coefficients = model
+elif model.get("status") == "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS":
+    model_coefficients = model["weierstrass_model"]
+else:
+    raise ValueError("expected a certified published or direct norm-12 model")
+base_a = [field(QQ(value)) for value in model_coefficients["A_coefficients_low_to_high"]]
+base_b = [field(QQ(value)) for value in model_coefficients["B_coefficients_low_to_high"]]
 twist_q = polynomial_coefficients_mod(candidate.coefficients, prime)
 
 base_ring = PolynomialRing(field, "t")
@@ -143,6 +210,18 @@ B0 = base_ring(base_b)
 q = base_ring(twist_q)
 if q == 0:
     raise ArithmeticError("twist polynomial reduces to zero")
+if candidate.kind == "direct_product":
+    base_discriminant = -field(16) * (field(4) * A0**3 + field(27) * B0**2)
+    if (
+        q.degree() != 4
+        or not q.is_squarefree()
+        or base_discriminant.degree() != 24
+        or not base_discriminant.is_squarefree()
+        or q.gcd(base_discriminant).degree()
+    ):
+        raise ArithmeticError(
+            "direct product does not have squarefree good reduction away from the 24I1 fibres"
+        )
 A = A0 * q**2
 B = B0 * q**3
 if A.degree() > 4 * chi or B.degree() > 6 * chi:
@@ -259,6 +338,10 @@ tag = (
     if candidate.kind == "singleton"
     else f"product-{key.replace(':', '-')}"
     if candidate.kind == "product"
+    else f"direct-singleton-{key}"
+    if candidate.kind == "direct_singleton"
+    else f"direct-product-{key.replace(':', '--')}"
+    if candidate.kind == "direct_product"
     else f"genus-one-{key}"
 )
 output_dir = args.output_dir.resolve() / tag / f"p{prime}"
@@ -359,13 +442,9 @@ record = {
         str(path.resolve().relative_to(ROOT)): digest(path)
         for path in (
             args.bisections,
-            args.pairs,
             args.model,
-            *(
-                (args.genus_one_constructions,)
-                if candidate.kind == "genus_one"
-                else ()
-            ),
+            *((args.pairs,) if candidate.kind in {"singleton", "product"} else ()),
+            *((args.genus_one_constructions,) if candidate.kind == "genus_one" else ()),
         )
     },
 }

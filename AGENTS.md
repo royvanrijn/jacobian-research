@@ -2,9 +2,12 @@
 
 Research repository. Keep changes reproducible, claims fail-closed, and navigation concise.
 
-## Current compute priority
+## Research posture
 
-**Prime gaps.** All unrelated compute-heavy campaigns are parked unless explicitly resumed. In particular, the elliptic-K3 / high-rank elliptic-curve programme is paused as of 2026-09-03. Do not start large searches, descents, neighbour enumerations, specialization sweeps, or comparable compute-heavy work outside the active prime-gap task without explicit instruction.
+All programmes are open for theorem-directed breakthrough work. Large searches,
+descents, neighbour enumerations, specialization sweeps, and comparable
+compute-heavy campaigns must still be explicitly in scope, mathematically
+motivated, checkpointed, and reproducible.
 
 ## Authority order
 
@@ -38,4 +41,4 @@ When a result supersedes an old route or handoff:
 
 The pre-streamlining repository state is pinned in [`archive/STREAMLINING_2026-09-03.md`](archive/STREAMLINING_2026-09-03.md).
 
-For K3-specific work, follow [`elkies-k3/AGENTS.md`](elkies-k3/AGENTS.md). For elliptic-curve work, follow [`elliptic-curves/AGENTS.md`](elliptic-curves/AGENTS.md). While those programmes are paused, maintenance and small exact verification are fine; new compute campaigns are not.
+For K3-specific work, follow [`elkies-k3/AGENTS.md`](elkies-k3/AGENTS.md). For elliptic-curve work, follow [`elliptic-curves/AGENTS.md`](elliptic-curves/AGENTS.md).

@@ -1,10 +1,11 @@
-# Elliptic curves over `Q` — PAUSED
+# Elliptic curves over `Q` — ACTIVE
 
-**Paused 3 September 2026 to free compute for prime-gap work.**
+This programme is open for theorem-directed breakthroughs in exceptional
+Mordell--Weil rank, low conductor, and the elliptic-K3 constructions behind
+them. `../MATH_STATUS.json` is the sole status authority; this page is the
+active navigation map.
 
-This programme studies exceptional Mordell–Weil rank, low conductor, and the elliptic-K3 constructions behind them. `../MATH_STATUS.json` is the sole status authority; this page is only the resume map.
-
-## Frozen milestone
+## Current milestone
 
 - ICARM curve 302: certified `rank E(Q) >= 31`, trivial torsion, global minimality, exact conductor/local data, and two independent point-independence implementations. No unconditional rank upper bound.
 - ICARM curve 273: independently replayed `rank E(Q) >= 30`.
@@ -13,14 +14,17 @@ This programme studies exceptional Mordell–Weil rank, low conductor, and the e
 - The pinned K3 now has two explicit rootless arithmetic MW17 charts over `QQ`: published R17 and the direct degree-two alternate-Q80 chart from `norm12-orbit-11952`.
 - Rank `>=32`, unconditional exact rank for curve 302, and sharper conductor records remain open.
 
-See [`../elkies-k3/README.md`](../elkies-k3/README.md) for the frozen K3 milestone.
+See [`../elkies-k3/README.md`](../elkies-k3/README.md) for the current K3 milestone.
 
-## Do not launch while paused
+## Compute gates
 
-- broad rank-32 Nagao, point, two-cover, or Selmer searches;
-- residual descent campaigns on the low-conductor near misses;
-- new family sweeps or expensive K3 specialization scans;
-- alternate-Q80 specialization work before native calibration fibres are built.
+- Gate broad rank-32 Nagao, point, two-cover, or Selmer searches with a declared
+  residual arithmetic target.
+- Gate residual descent campaigns on the low-conductor near misses with exact
+  local and quotient data.
+- Give new family sweeps and expensive K3 specialization scans fixed limits and
+  checkpointed outputs.
+- Build native calibration fibres before alternate-Q80 specialization work.
 
 Existing scripts, tests, local checkpoints, and generated certificates are retained for reproducibility.
 
@@ -35,7 +39,7 @@ Existing scripts, tests, local checkpoints, and generated certificates are retai
 - [`notes/ELKIES_RANK_JUMP_FINGERPRINTS.md`](notes/ELKIES_RANK_JUMP_FINGERPRINTS.md) — published-R17 specialization controls and quotient fingerprints.
 - [`../archive/elliptic-curves/`](../archive/elliptic-curves/) — bounded-search history and superseded command surfaces.
 
-## If work resumes
+## Active fronts
 
 The useful gates are still:
 
@@ -48,4 +52,4 @@ A heuristic score, point list without independence, incomplete Selmer calculatio
 
 ## Reproduction
 
-Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../MATH_STATUS.json`. The normal regression suite remains `make verify-elliptic-curves`; long CAS/search jobs are separate targeted replays and are intentionally not part of this pause cleanup.
+Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../MATH_STATUS.json`. The normal regression suite remains `make verify-elliptic-curves`; long CAS/search jobs remain separate targeted replays.

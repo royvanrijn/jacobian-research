@@ -2834,11 +2834,14 @@ independent residual-rank cross-check, not the primary class certificate.  See
 
 ## Rootless genus theory
 
-<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS 2f5b874c0c22133b -->
+<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS e7589727ca8f7e50 -->
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   certify_rootless_genus_first_moment.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  certify_ade_neighbor_mass_score.sage --check
 ```
 
 `certify_rootless_genus_first_moment.sage` is an **ACTIVE_PROOF** for the
@@ -2850,6 +2853,18 @@ agreement.  All three averages exceed two, so this checker records the cheap
 criterion as inconclusive; it does not implement the higher-degree ADE
 representation-mass inversion.  See
 [`../ROOTLESS_GENUS_THEORY_2026-09-03.md`](../ROOTLESS_GENUS_THEORY_2026-09-03.md).
+
+`certify_ade_neighbor_mass_score.sage` is the bounded second-stage
+calibration.  It emits all 3,768 abstract ADE types of rank at most 17,
+aggregates the 621 types realized in the complete determinant-78 census, and
+computes every ADE embedding average through rank four.  Exact PPL primal
+and dual certificates show that those rows still allow rootless fraction
+`0.00275682...`; the checker therefore refuses to infer the true census value
+`mu_0=0`.  It also proves one proper spinor genus for each control, records
+the exact determinant-948 rootless mass `3/4`, the determinant-950 lower
+bound `7/4`, and their Chenevier asymptotic line-hit scores.  It does not
+claim a complete locally admissible list, higher local densities, or finite-
+prime frequencies for determinants 948 and 950.
 
 ## Arithmetic rank transfer
 
@@ -2888,7 +2903,8 @@ The alternate application proof is
 ## Integral rank-transfer glue calculus
 
 <!-- status-consumer: EC-K3-RELATIVE-U-BRIDGE-LIFTING 800e22abf69b91aa -->
-<!-- status-consumer: EC-K3-LOCAL-BRIDGE-MUTATION-H1C 2db88fff92ef48b9 -->
+<!-- status-consumer: EC-K3-LOCAL-BRIDGE-MUTATION-H1C 7421328afadcf61f -->
+<!-- status-consumer: EC-K3-PRIME-LOCAL-BRIDGE-MUTATION-H1D d4c6c84967a8fbc5 -->
 <!-- status-consumer: EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION d57544697149506f -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 7eeeeaa80d9b2bf3 -->
 <!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
@@ -2914,6 +2930,7 @@ sage -python certify_integral_rank_transfer_bridge_reglue.sage --check
 sage -python certify_integral_rank_transfer_bridge_reglue.sage \
   --relative-u-output ../../artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json
 sage -python certify_r17_local_bridge_mutation.sage --check
+sage -python certify_prime_local_bridge_mutation.sage --check
 sage -python benchmark_integral_rank_transfer_bridge_predictor.sage --check
 sage -python benchmark_e6_det78_prospective_bridge_predictor.sage --check
 sage -python certify_integral_rank_transfer_theta_convolution.sage --check
@@ -2924,6 +2941,7 @@ sage -python generate_integral_rank_transfer_masked_core_neighbors.sage --check
 sage -python certify_integral_rank_transfer_q80_defect_birth_death.sage --check
 sage -python certify_integral_rank_transfer_root_system_signature.sage --check
 sage -python certify_inverse_ade_projective_birth_strata.sage --check
+sage -python benchmark_inverse_ade_adaptive_backend.sage --check
 sage -python certify_integral_character_glue_calculus.sage --check
 sage -python certify_r17_norm12_103b2_mw_glue.sage \
   --skip-specialization-saturation --check
@@ -2938,6 +2956,13 @@ checker outputs.
 
 The bridge checker certifies the rank-15 common core, rank-two cyclic bridge
 replacement, graph glue, and exact root transfer for all 42 selected marked
+edges.  `certify_prime_local_bridge_mutation.sage` then exhausts the marked
+shared-prime graph choices on the seven edges not settled by coprimality,
+transports each choice across the rank-four bridge, and classifies its exact
+ADE change.  It also gives the 32-graph noncyclic R17 negative control.  The
+finite quadratic form forces every historical local glue order but does not
+select a graph label; the declared old/new ADE pair uniquely selects the
+historical choice on all seven edges.
 corridor edges.  Its opt-in relative-`U` replay additionally constructs the
 cross matrix `A`, verifies `Gram(w_1,w_2)=A^t J A-J`, recovers both saturated
 bridges and the old-fibre degree, and checks the determinant square-index law
@@ -3122,6 +3147,20 @@ where every line has 16 births in the nonzero glue coset; the predicted and
 materialized completed-child root sets again agree, for 352 exact comparisons
 overall.  Expanding a rank-15 scaled shell has no claimed complexity bound.
 
+`benchmark_inverse_ade_adaptive_backend.sage --check` implements the
+rank-15 backend choice left open by that theorem.  Small shells use full
+projected support; useful graph-compatible symmetry uses projective
+`Aut(K)` orbits; dense support uses candidate-wise affine CVP with early
+exit.  With one fixed seed, blind H3 and Q80 searches recover new terminal
+rootless lines after 25,860 and 25,879 exact predictions, without constructing
+any search candidate; one accepted child and one held-out historical
+regression are then materialized per control, for a 1,500-fold reduction
+against the old terminal window.  Since the new lines differ from the
+historical lines, exact historical coordinates are not determined by the
+declared `K,C,H,p,ADE` input.  A separate blind NS0024 run finds another new
+rootless line after 8,467 exact predictions.  The six-line diagonal half-glue
+control requires exact agreement of all three modes.
+
 `derive_r17_genus_one_bisection_twist_section.sage` descends the certified
 `0x103b2` split bisection to an exact height-eight section on the quartic
 twist. `export_elkies_2026_twist_polynomial_sections_modp.sage` accepts its
@@ -3221,9 +3260,18 @@ certifies quartic branching, exact Kummer barcodes, lifted sections and
 height-16 anti-invariant independence.  Its declared boundary is one trace
 template and one known positive-control fibre, not a rank-32 search.
 
-## Published-R17 multisection-visibility filtration
+## Published-R17 visibility-complexity baseline
 
-<!-- status-consumer: EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION 2f41e9f4236f6c9e -->
+<!-- status-consumer: EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION 5569f42aac3ab952 -->
+
+```bash
+python3 elkies-k3/scripts/derive_r17_visibility_complexity.py --check
+```
+
+This cheap join produces the 38-row leakage-aware ledger.  It distinguishes
+four individually rigid rational-bisection witnesses from 38 target-fitted
+genus-one degree-two incidence witnesses; predeclared-pencil degree remains
+uncertified.  It performs no multisection enumeration.
 
 ```bash
 sage -python \
@@ -3231,12 +3279,12 @@ sage -python \
   --check
 ```
 
-This reuses the exact common norm-eight trace and fits its genus-one
-bisection pencil through all 38 displayed exceptional generators at the four
-rank-25--28 controls.  It records the literal all-genus filtration, which is
-already full in degree two, separately from the finite rational-curve
-filtration.  The latter has a complete degree-two atlas but only bounded
-degree-three and degree-four equation subatlases.
+The underlying checker reuses the exact common norm-eight trace and fits its
+genus-one bisection pencil through all 38 displayed exceptional generators at
+the four rank-25--28 controls.  It records post-hoc all-genus degree-two
+incidence separately from rigid rational curves.  The latter have a complete
+degree-two atlas but only bounded degree-three and degree-four equation
+subatlases.
 
 ## Published-R17 frozen-quartic simultaneous splitting
 
@@ -3395,6 +3443,52 @@ sage -python certify_r17_norm12_11952_control_j_preimages.sage
 sage -python certify_r17_norm12_11952_control_j_preimages.sage --check
 ```
 
+## Alternate-Q80 rational V4 product-twist gate
+
+`select_r17_norm12_11952_v4_pair_shortlist.sage` computes every direct-frame
+intersection in the cheapest-1,024 native prefix.  It selects intersection-one
+bisection pairs and recovers their unique rational intersection from the two
+explicit lifted-section equations.  The promoted first 64 pair bases are
+genus one and have exact `QQ` points.
+
+```bash
+sage -python select_r17_norm12_11952_v4_pair_shortlist.sage --check
+```
+
+`screen_r17_norm12_11952_v4_base_jacobian_ranks.py` runs every PARI rank
+calculation in a timeout-isolated Sage process.  The exact bounded ledger
+proves rank one for seventeen bases; ambiguous intervals and two timeouts stay
+explicit.
+
+```bash
+.venv/bin/python \
+  elkies-k3/scripts/screen_r17_norm12_11952_v4_base_jacobian_ranks.py \
+  --limit 64 --timeout 10 --jobs 2
+
+.venv/bin/python \
+  elkies-k3/scripts/screen_r17_norm12_11952_v4_base_jacobian_ranks.py \
+  --check
+```
+
+`export_elkies_2026_twist_polynomial_sections_modp.sage` now accepts
+`--direct-product-key`.  The bounded driver below exports shortlisted
+`chi=4`, `P.O=0` systems and invokes the checkpointed `msolve` runner with
+declared pair, prime, group, time, and thread limits:
+
+```bash
+.venv/bin/python \
+  elkies-k3/scripts/run_r17_norm12_11952_v4_quartic_po0_campaign.py \
+  --pair-limit 1 --primes-per-pair 1 --max-groups 1 --timeout 15
+
+.venv/bin/python \
+  elkies-k3/scripts/run_r17_norm12_11952_v4_quartic_po0_campaign.py --check
+```
+
+The first certified-rank-one `p=131` export has 70 distinct eight-variable systems.  Its first
+15-second group timed out, so the artifact is an incomplete complexity pilot,
+not a characteristic-zero section or rank result.  See
+[`../R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md`](../R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md).
+
 ## Alternate-Q80 rootless equation handoff
 
 `build_q80_alternate_final_divisor_handoff.sage` is the fail-closed
@@ -3440,6 +3534,28 @@ rational projective normalization it gives only a 10,888-bit (about 0.7
 percent) improvement at a still 1,484,751-bit primitive maximum.  Integer
 content is only 7--12 bits.  The script does not optimize multiplication by a
 general quadratic-field element, base `PGL2`, or model transformations.
+
+## Marked-U realization planner
+
+`plan_marked_u_realizations.sage` is the elliptic-fibration graph planner and
+is intentionally separate from `plan_inverse_ade_targets.sage`. It validates
+an explicit marked `(NS,U,W)`, enumerates physical cross matrices in
+`(F.F',F.O',O.F',O.O')` order, applies declared prime-local bridge constraints
+before representations, constructs literal primitive `U'` splittings, and
+runs exact frame/ADE gates. Nefness and effective-zero gates require
+hash-pinned evidence bound to the candidate. Exact-shell and replay-catalog
+completeness are reported separately.
+
+Replay the published-R17/alternate-Q80, noncyclic `4A1`, reverse-rootless, and
+fail-closed nonhistorical-foundry controls with:
+
+```bash
+sage -python certify_marked_u_realization_planner_controls.sage --check
+```
+
+See
+[`../MARKED_U_REALIZATION_PLANNER_2026-09-03.md`](../MARKED_U_REALIZATION_PLANNER_2026-09-03.md)
+for the input contract and exact boundary.
 
 ## Rule for future additions
 

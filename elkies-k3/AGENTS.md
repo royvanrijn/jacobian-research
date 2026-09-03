@@ -4,19 +4,21 @@ This directory inherits the repository rules. `../MATH_STATUS.json` is the only 
 
 ## Programme state
 
-**PAUSED since 2026-09-03.** Compute is reserved for prime-gap work.
+**ACTIVE.** The programme is open for theorem-directed breakthrough work.
 
-Do not start large specialization, Selmer, point, neighbour, Q80 reconstruction, or foundry searches unless the K3 programme is explicitly resumed. Cheap documentation, literature work, and small exact verification are fine.
+Large specialization, Selmer, point, neighbour, Q80 reconstruction, or foundry
+searches must have an explicit mathematical gate, declared limits, checkpoints,
+and a reproducible certificate plan.
 
-## Start here if maintenance is needed
+## Start here
 
-1. [`README.md`](README.md) — frozen milestone and resume point.
+1. [`README.md`](README.md) — current milestone and active fronts.
 2. [`R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md`](R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md) — canonical alternate-Q80 equation route.
 3. [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md) — reusable theorem/algorithm layer.
 4. [`LITERATURE_AND_NOVELTY_MAP_2026-09-03.md`](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md) — terminology and prior-art boundaries.
 5. `../MATH_STATUS.json` and `../REPRODUCE.md` — exact status and replay.
 
-## Frozen conclusions
+## Current conclusions
 
 - Published R17 and alternate Q80 are both explicit rootless rank-17 fibrations over `QQ` on the pinned determinant-948 K3.
 - The alternate chart's canonical route is the direct degree-two `norm12-orbit-11952` hop, not the historical degree-11511 Q80 transport.

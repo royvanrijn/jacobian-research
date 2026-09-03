@@ -1,12 +1,12 @@
 # Archive
 
-This directory preserves superseded derivations, programme-level notes, checklists, exploratory scans, intermediate write-ups, and frozen navigation states. Archived material is provenance, not a current theorem or task source.
+This directory preserves superseded derivations, programme-level notes, checklists, exploratory scans, intermediate write-ups, and historical navigation states. Archived material is provenance, not a current theorem or task source.
 
 For exact current status use [`../MATH_STATUS.json`](../MATH_STATUS.json); for replay use [`../REPRODUCE.md`](../REPRODUCE.md).
 
-## Latest repository freeze
+## 2026-09-03 repository snapshot
 
-[`STREAMLINING_2026-09-03.md`](STREAMLINING_2026-09-03.md) records the cleanup that parked compute-heavy K3/elliptic-curve work for prime-gap calculations and pins the complete pre-cleanup tree at commit `f47f1a1872881680d9296170f3f9619bcc943c29`.
+[`STREAMLINING_2026-09-03.md`](STREAMLINING_2026-09-03.md) records the navigation cleanup and pins the complete pre-cleanup tree at commit `f47f1a1872881680d9296170f3f9619bcc943c29`. Its old compute policy is historical; the programmes are active again.
 
 ## Main archive areas
 

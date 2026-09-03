@@ -412,6 +412,8 @@ two-dimensional kernel and yields the first exact fibration hop below.
 
 ### Resolved-chart q=6 compiler preflight
 
+<!-- status-consumer: EC-K3-UNIVERSAL-DEGREE2-FIBRATION-COMPILER fd4b5d71c9497eaf -->
+
 The strict equation-level compiler is deliberately separate from the
 lattice-only neighbour engine.  It accepts vertical conditions only as maps
 from an explicit Riemann--Roch ambient basis to finite quotients of actual
@@ -420,9 +422,14 @@ for such a map.  Run its core regression and the first H3 gate with:
 
 ```bash
 sage -python elkies-k3/scripts/verify_elliptic_neighbor_compiler.sage
+sage -python elkies-k3/scripts/verify_elliptic_neighbor_compiler_field_generic.sage
 sage -python elkies-k3/scripts/compile_h3_first_q6_preflight.sage \
   --output artifacts/generated-results/elkies-k3-h3-q6-compiler-preflight.json
 ```
+
+The first two commands also replay the universal old-degree-two coefficient
+budget, effective vertical padding, nonzero-trace chord branch, trace-zero
+`(1,x)` branch, and exact-coefficient-field descent layer.
 
 The H3 search's `q=6` label is not its old-fibre degree: after the recorded
 reflections, `D=O+(-P1)-F` has `D.F=2`.  The preflight therefore records a
@@ -2739,7 +2746,9 @@ ELKIES2026RANKJUMPFINGERPRINTS|quotient_ranks=8,9,10,11|degree2_visible=5,3,2,1|
 
 The Smith and cover-code fields are exact for the displayed certified
 subgroups. The projected canonical-height Grams and successive minima use 80
-decimal digits. Degree-three and degree-four cover visibility are recorded as
+decimal digits.  The legacy `degree2_visible` output field is the rigid
+rational-bisection span coordinate, not an unrestricted visibility degree.
+Rigid degree-three/four and predeclared-pencil responses are recorded as
 missing, not zero. See
 [`elliptic-curves/notes/ELKIES_RANK_JUMP_FINGERPRINTS.md`](elliptic-curves/notes/ELKIES_RANK_JUMP_FINGERPRINTS.md).
 
@@ -4460,8 +4469,9 @@ rank-17 lattice.  Its short shell is too large for PARI's materialized vector
 list, so the same enumerator uses an LLL-reduced streaming traversal with
 exact leaf norms and a PARI count-only cross-check.  It finds 39,147
 section-nonnegative bisection orbits and 805,466 unoriented minimal
-representatives.  This second quotient remains lattice-only: its available
-equation is finite-field and no characteristic-zero branch cover is claimed.
+representatives.  This enumeration is lattice-only; the later direct
+`norm12-orbit-11952` equation and bounded characteristic-zero bisection prefix
+are replayed below.
 
 ```bash
 sage -python elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage \
@@ -18263,7 +18273,7 @@ sum equals the exact genus mass
 
 ### Rootless genus first-moment certificate
 
-<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS 2f5b874c0c22133b -->
+<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS e7589727ca8f7e50 -->
 
 Generate and byte-check the exact Siegel weighted root averages for the
 determinant-78, determinant-948, and determinant-950 rank-17 control genera:
@@ -18292,6 +18302,38 @@ The exact higher-ADE mass inversion is proved but not yet implemented for
 these genera.  See
 [`elkies-k3/ROOTLESS_GENUS_THEORY_2026-09-03.md`](elkies-k3/ROOTLESS_GENUS_THEORY_2026-09-03.md).
 
+### ADE mass / neighbour-score calibration
+
+<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS e7589727ca8f7e50 -->
+
+Generate and byte-check the exact census-stratum, low-rank LP, spinor-genus,
+and asymptotic neighbour-score certificate:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_ade_neighbor_mass_score.sage
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_ade_neighbor_mass_score.sage --check
+```
+
+The determinant-78 census realizes 621 ADE types.  Exact rational LPs over
+all twelve representation rows of rank at most four still allow rootless
+fraction
+
+```text
+11817053639/4286486820968
+  = 0.0027568155...,
+```
+
+so the low-rank LP is correctly reported as inconclusive rather than forced
+to match the true census value `mu_0=0`.  The same replay proves that all three
+control genera have one proper spinor genus, converts the exact determinant-
+948 rootless mass `3/4` to asymptotic line fraction `8.930328...e-6`, and
+converts the determinant-950 lower mass bound `7/4` to probability at least
+`1.020293...e-5`.  Exact finite-prime frequencies for determinants 948 and
+950 are not part of this artifact.
+
 ### Arithmetic rank transfer and marking gate
 
 <!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 3031dd2365a29cd5 -->
@@ -18318,7 +18360,8 @@ The alternate application proof is
 ### Integral rank-transfer and character-glue calculus
 
 <!-- status-consumer: EC-K3-RELATIVE-U-BRIDGE-LIFTING 800e22abf69b91aa -->
-<!-- status-consumer: EC-K3-LOCAL-BRIDGE-MUTATION-H1C 2db88fff92ef48b9 -->
+<!-- status-consumer: EC-K3-LOCAL-BRIDGE-MUTATION-H1C 7421328afadcf61f -->
+<!-- status-consumer: EC-K3-PRIME-LOCAL-BRIDGE-MUTATION-H1D d4c6c84967a8fbc5 -->
 <!-- status-consumer: EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION d57544697149506f -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 7eeeeaa80d9b2bf3 -->
 <!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
@@ -18348,6 +18391,7 @@ sage -python elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage \
   --relative-u-output artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json
 sage -python elkies-k3/scripts/certify_r17_local_bridge_mutation.sage --check
+sage -python elkies-k3/scripts/certify_prime_local_bridge_mutation.sage --check
 sage -python elkies-k3/scripts/benchmark_integral_rank_transfer_bridge_predictor.sage --check
 sage -python elkies-k3/scripts/benchmark_e6_det78_prospective_bridge_predictor.sage --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_theta_convolution.sage --check
@@ -18381,6 +18425,12 @@ replays the glue-support law on all 42 edges, and certifies the new published-
 R17 degree-two `4A1/MW13` fibration with maximal non-cyclic
 `ZZ/4+ZZ/8` bridge.  Exact theta coefficients distinguish its frame from
 both stored H3 `4A1` frames; it is not a historical-route shortcut.
+The prime-local checker enumerates the seven shared-prime exceptions left by
+the support theorem.  Their local graph counts are `10,18,18,6,4,6,4`; every
+graph has the required local NS discriminant form, while exact norm-two
+cosets make the stored old/new ADE pair unique on every edge.  Its R17
+negative control has 32 noncyclic marked graphs, eight ADE-pair types, and
+four graphs with the actual rootless-to-`4A1` transition.
 Rebuild the four completed frames, compare them with the known NS0024 route,
 and export the root-adapted source with
 
@@ -18702,12 +18752,25 @@ sections.  Fitting one member of a genus-one pencil through each already known
 point is not a point-discovery or rank-32 certificate.  See
 [`elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md`](elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md).
 
-### Published-R17 multisection-visibility filtration
+### Published-R17 visibility-complexity baseline
 
-<!-- status-consumer: EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION 2f41e9f4236f6c9e -->
+<!-- status-consumer: EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION 5569f42aac3ab952 -->
 
-Generate and byte-check the genus-qualified filtration at all four rank-25--28
-controls with
+Derive and byte-check the leakage-aware per-direction ledger with
+
+```bash
+python3 elkies-k3/scripts/derive_r17_visibility_complexity.py
+python3 elkies-k3/scripts/derive_r17_visibility_complexity.py --check
+```
+
+This joins pinned certificates; it does not enumerate trisection or
+quadrisection cosets.  Four of the 38 named generators have minimum rigid
+rational-curve degree two, while rational degree remains `UNKNOWN` for 34.
+All 38 have target-fitted genus-one degree-two witnesses of incidence
+codimension one, but no leakage-free predeclared-pencil degree is certified.
+
+The underlying genus-qualified degree filtration at all four controls is
+still replayed with
 
 ```bash
 sage -python \
@@ -18719,12 +18782,12 @@ sage -python \
 ```
 
 The checker fits the common norm-eight genus-one bisection pencil through all
-38 displayed exceptional generators.  This proves that the literal all-genus
-displayed filtration is full in degree two, with dimensions `8,9,10,11`.  It
-separately imports the complete rational-bisection dimensions `5,3,2,1` and
-retains the incomplete labels on the sampled degree-three and degree-four
-rational-curve layers.  It does not claim a full Mordell--Weil quotient or an
-exhaustive rational trisection/quadrisection calculation.
+38 displayed exceptional generators.  This proves the post-hoc all-genus
+degree-two incidence dimensions `8,9,10,11`.  It separately imports the
+complete rational-bisection span dimensions `5,3,2,1` and retains the
+incomplete labels on the sampled degree-three and degree-four rational-curve
+layers.  It does not claim predictive visibility, a full Mordell--Weil
+quotient, or an exhaustive rational trisection/quadrisection calculation.
 
 Extract the common integral character/glue carrier from that exact certificate
 with
@@ -18937,6 +19000,82 @@ sage -python \
 The four degree-24 preimage polynomials have no rational finite root and no
 root at infinity.  Hence the published controls are not rational fibres of the
 alternate family, even after allowing quadratic twists.
+
+### Alternate-Q80 arithmetic laboratory
+
+<!-- status-consumer: EC-K3-R17-NORM12-11952-INHERITED-COVERS eb333139c25202b2 -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-INHERITED-PRODUCTS b0d303c94466c6f9 -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-ALTERNATE-LAB-1024 c2f6309f8d6cc06d -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64 e14368b602eebedb -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64 b12acf0b90056c18 -->
+
+Replay the 121 inherited covers and their 7,260 exact pair products:
+
+```bash
+sage -python \
+  elkies-k3/scripts/construct_r17_norm12_11952_inherited_bisections.sage --check
+
+.venv/bin/python \
+  elkies-k3/scripts/analyze_r17_norm12_11952_inherited_products.py --check
+```
+
+Replay the complete 39,147-class cost ordering, then compile only its cheapest
+1,024 native classes:
+
+```bash
+sage -python \
+  elkies-k3/scripts/rank_r17_norm12_11952_alternate_bisection_orbits.sage --check
+
+sage -python \
+  elkies-k3/scripts/construct_r17_norm12_11952_alternate_bisections.sage \
+  --start 0 --limit 1024 \
+  --output artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-cheapest-1024-v1.json \
+  --check
+
+.venv/bin/python elkies-k3/scripts/hash_bisection_extensions.py \
+  --compact \
+  --input artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-cheapest-1024-v1.json \
+  --output artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-collisions-cheapest-1024-v1.json
+
+sage -python \
+  elkies-k3/scripts/analyze_r17_norm12_11952_alternate_laboratory.sage --check
+```
+
+The combined 1,145 raw records deduplicate to 1,143 direct-frame translation
+classes.  Every cover is a rational conic, distinct classes share no branch
+fibre, all 652,653 paired bases have genus one, and no pair product is a
+catalogued section character.  All 248,225,691 independent triples give
+genus-five covers of generic rank at least 20.  The desired third nontrivial
+`V4` character and the Mordell--Weil groups of the quartic product twists
+remain open.  See
+[`elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_LABORATORY_2026-09-03.md`](elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_LABORATORY_2026-09-03.md).
+
+Certify the first 64 rational genus-one `V4` pair bases selected by exact
+intersection-one incidence, then replay the bounded first product-twist pilot:
+
+```bash
+sage -python \
+  elkies-k3/scripts/select_r17_norm12_11952_v4_pair_shortlist.sage --check
+
+.venv/bin/python \
+  elkies-k3/scripts/screen_r17_norm12_11952_v4_base_jacobian_ranks.py \
+  --limit 64 --timeout 10 --jobs 2
+
+.venv/bin/python \
+  elkies-k3/scripts/screen_r17_norm12_11952_v4_base_jacobian_ranks.py \
+  --check
+
+.venv/bin/python \
+  elkies-k3/scripts/run_r17_norm12_11952_v4_quartic_po0_campaign.py --check
+```
+
+The shortlist checker proves 10,362 intersection-one pairs in the native
+priority prefix and verifies explicit `QQ` points on the selected 64 bases.
+The bounded rank screen completes on 62 bases and proves exact Jacobian rank
+one for seventeen.  The pilot exported the first rank-one-base `chi=4`,
+`P.O=0` system at `p=131`; one of 70 distinct systems timed out at 15 seconds.
+It neither finds nor excludes a quartic product-twist section.  See
+[`elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md`](elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md).
 
 Run the exact `H=10000` point-map-relation control on the deterministic
 seeded sample of ten other pointed covers:

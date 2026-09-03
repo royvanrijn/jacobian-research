@@ -1,10 +1,17 @@
-# R17 multisection-visibility filtrations at the rank-25--28 fibres
+# R17 degree-filtration source calculations at the rank-25--28 fibres
 
 <!-- status-consumer: EC-K3-ELKIES-2026-LOW-GENUS-COVER-QUOTIENTS 31a6363906ad0ac0 -->
 
-<!-- status-consumer: EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION 2f41e9f4236f6c9e -->
+<!-- status-consumer: EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION 5569f42aac3ab952 -->
 
 ## Result
+
+This note supplies the exact degree-filtration calculations now interpreted
+through
+[`R17_VISIBILITY_COMPLEXITY_2026-09-03.md`](R17_VISIBILITY_COMPLEXITY_2026-09-03.md).
+Degree is one coordinate of that invariant.  It must not be reported alone as
+the visibility of a point: the all-genus degree-two result below is post-hoc,
+codimension-one incidence, whereas the rational bisections are rigid.
 
 The tested **rational-curve** degree-three and degree-four equation universes
 add no exceptional direction beyond the complete rational-bisection atlas.
@@ -51,7 +58,7 @@ that `L_t/M_t` has displayed dimensions `8,9,10,11`; they do not prove that
 `L_t=E_t(QQ)` or that `L_t` is saturated there.
 
 For a declared atlas `A` of geometrically integral multisections defined over
-`QQ`, define the displayed multisection-visibility filtration by
+`QQ`, the old displayed degree filtration was
 
 ```text
 V^A_{<=d}(t;L_t)
@@ -67,8 +74,10 @@ to the specialized cover value being a square and both branches being
 rational.  Translation of `C` by a generic section changes `P` by an element
 of `M_t`, so the quotient class is well-defined on translation classes.
 
-The atlas must be part of the notation.  Two natural choices give completely
-different answers:
+The atlas must be part of the notation, and the new visibility-complexity
+ledger additionally records when it was frozen, family dimension, incidence
+codimension, equation cost, and field complexity.  Two natural geometric
+choices already give completely different degree filtrations:
 
 - `A_all` contains all geometrically integral multisections, including moving
   positive-genus systems.
@@ -80,9 +89,10 @@ different answers:
 The numbers `5,3,2,1` belong to `A_rat` in degree two.  They are not the
 degree-two values of the unqualified all-genus filtration.
 
-## Exact all-genus filtration: full already in degree two
+## Exact post-hoc all-genus incidence: full already in degree two
 
-The literal filtration over `A_all` collapses at the first nontrivial layer:
+The literal degree filtration over `A_all` collapses at the first nontrivial
+layer:
 
 | parameter `t` | displayed quotient dimension | `dim V^all_{<=2}(t;L_t)` | `dim V^all_{<=3}` | `dim V^all_{<=4}` |
 |---|---:|---:|---:|---:|
@@ -114,17 +124,20 @@ individually visible on a geometrically integral genus-one bisection.
 
 Thus the proposed statement “degree at most four spans the displayed
 exceptional quotient” is true, but for the unqualified definition it is
-already true in degree two.  The incidence itself reflects the moving pencil:
-a nondegenerate point selects one pencil member.  The substantive arithmetic
-checks are rationality of the selected member, smooth irreducible quartic
-branching away from the bad fibres, and exact recovery of the target point.
+already true in degree two.  This is not predictive visibility: the known
+nondegenerate point imposes one condition on a one-dimensional moving pencil
+and selects its member.  In the visibility-complexity ledger these witnesses
+have class `post-hoc`, genus one, degree two, linear-system dimension one, and
+incidence codimension one.  The substantive arithmetic checks are rationality
+of the selected member, smooth irreducible quartic branching away from the bad
+fibres, and exact recovery of the target point.
 
 The certificate is
 [`../artifacts/generated-results/elkies-k3-r17-multisection-visibility-filtration-v1.json`](../artifacts/generated-results/elkies-k3-r17-multisection-visibility-filtration-v1.json).
 Its SHA-256 is
 `0a42a59df67ecf7299e2718a67718c46391c5d26ed55e431da4f8c35baf4e2ba`.
 
-## Rational-curve filtration: the degree-three/four frontier remains open
+## Rigid rational-curve degree: the degree-three/four frontier remains open
 
 For `A_rat`, the degree-two column in the first table is exact and complete.
 The degree-three and degree-four columns are ranks of the declared tested
@@ -143,17 +156,17 @@ completion: `R17/4R17` has
 
 translation cosets before the rational-curve norm and congruence filters, and
 only a deterministic 1,025-coset sample has been classified and constructed.
-Accordingly, the rational-multisection conjecture
+Accordingly, the rational-multisection spanning conjecture
 
 ```text
 V^rat_{<=4}(t;L_t) = (L_t/M_t) tensor QQ
 ```
 
 is open at all four controls.  The zero gains in the tested layers neither
-prove nor falsify it.  A claim of complete degree three or four would require
-a new target-directed incidence sieve or an exhaustive construction over
-these finite universes; the present per-trace exact interpolation is not a
-credible exhaustive algorithm at those sizes.
+prove nor falsify it.  The preferred next problem is target-directed: given
+`Q in E_t0(QQ)/M_t0`, solve directly for a rational degree-`d` multisection
+through `Q`.  Exhaustive construction over these finite universes is neither
+required nor credible at their present sizes.
 
 ## Tested cover universe
 
@@ -240,8 +253,11 @@ orbit-1cb25 - orbit-0cff7 + orbit-1ea09 - orbit-0d4ca = 0
 The rank-26, rank-27, and rank-28 displayed class sets are independent and
 have no circuit.  The certificate also records every exact quotient vector,
 the complexity-ordered rank increments, and the first tested cover whose span
-contains each ordered public basis direction.  `null` in the latter table
-means that direction is not individually exposed by the tested span.
+contains each ordered public basis direction.  This is a cumulative span-entry
+time, not a claim that the named cover itself represents that basis vector.
+The direct-vector audit finds individual rigid witnesses only for
+`Q1,Q3,Q5,Q6` at rank 25; all other named generators remain `UNKNOWN` for
+rational-curve degree.
 
 ## Reproduction
 
@@ -279,11 +295,13 @@ the pinned common norm-eight trace and fits only the 38 displayed targets.
 
 This is a computation about displayed cover classes and the known subgroup
 `L_t`.  It does not prove that `L_t` is the full specialized Mordell--Weil
-group or give a rank upper bound.  The exact all-genus conclusion is confined
-to the displayed quotient, while the rational-curve calculation does not
-exclude a split cover in the untested norm-20 or degree-four cosets.  The
-degree-five/six non-run is a stopping decision forced by zero rank gain in the
-tested successive layers, not evidence that all degree-five/six covers fail.
+group or give a rank upper bound.  The exact post-hoc all-genus conclusion is
+confined to the displayed quotient, while the rational-curve calculation does
+not exclude a split cover in the untested norm-20 or degree-four cosets.  No
+predeclared-pencil prediction is certified by fitting a member through an
+already known point.  The degree-five/six non-run is a stopping decision
+forced by zero rank gain in the tested successive layers, not evidence that
+all degree-five/six covers fail.
 
 The genus qualifier agrees with Garbagnati--Salgado's definition of a
 multisection as a geometrically integral curve finite of degree greater than

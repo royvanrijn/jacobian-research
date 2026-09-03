@@ -2148,7 +2148,7 @@ Weierstrass model, and its `J1` orbit remain separate gates.
 
 ### Theorem H-1c: local bridge mutation, glue support, and 2-primary parity
 
-<!-- status-consumer: EC-K3-LOCAL-BRIDGE-MUTATION-H1C 2db88fff92ef48b9 -->
+<!-- status-consumer: EC-K3-LOCAL-BRIDGE-MUTATION-H1C 7421328afadcf61f -->
 
 Let `L=NS(X)`, and let `U_0,U_1` be primitive copies of `U` with
 `rank(U_0+U_1)=4`.  Put
@@ -2395,6 +2395,236 @@ The parity/Smith law is elementary.  The 42-edge support count and the R17
 maximal non-cyclic fibration are new exact computations.  Galois behavior is
 deliberately absent: after a Galois marking is supplied, Theorem A2 gives the
 equivariant rank-transfer identity.
+
+### Theorem H-1d: prime-local bridge-mutation normal form
+
+<!-- status-consumer: EC-K3-PRIME-LOCAL-BRIDGE-MUTATION-H1D d4c6c84967a8fbc5 -->
+
+Keep the notation of Theorem H-1c and assume `rank(U_0+U_1)=4`.  At a
+prime `ell`, write
+
+```text
+mu=v_ell(m),   gamma=v_ell(c),   kappa=v_ell(det K),
+delta=v_ell(D),   eta=v_ell(h).
+```
+
+The complete local mutation datum is the following finite list.
+
+There is a data-sufficiency distinction.  The cross matrix, raw Grams,
+saturation index, local Smith modules and `q_NS,ell` determine the finite
+**unmarked module** classifier below.  A root-sensitive classifier for fixed
+integral blocks additionally needs the saturation embeddings (equivalently
+the induced marked map `tau_ell`) and the coset theta/minimum decorations of
+`K` and `C_i`.  Smith invariants alone cannot contain that metric information;
+the seven-edge census supplies it from the exact ambient markings.
+
+1. Start with the two raw bridge forms
+
+   ```text
+   G_0=A^t*J*A-J,       G_1=A*J*A^t-J.               (H-1d.1)
+   ```
+
+   The possible saturated local bridges are the even integral overlattices
+   of `B_i tensor ZZ_ell` of index `ell^mu`.  Equivalently, they are
+   classified by the isotropic subgroups
+
+   ```text
+   M_(i,ell) <= A_(B_i,ell),       |M_(i,ell)|=ell^mu,
+   A_(C_i,ell)=M_(i,ell)^perp/M_(i,ell).             (H-1d.2)
+   ```
+
+   The two choices are not independent.  The two splittings of
+   `bar(S)=saturation(U_0+U_1)` induce an isometry
+
+   ```text
+   tau_ell:q_(C_0,ell) -> q_(C_1,ell).               (H-1d.3)
+   ```
+
+2. For a fixed local bridge, the graph choices are exactly the isotropic
+   subgroups
+
+   ```text
+   H_(i,ell) <= A_(K,ell) + A_(C_i,ell)              (H-1d.4)
+   ```
+
+   whose two projections are injective and which satisfy
+
+   ```text
+   H_(i,ell)^perp/H_(i,ell) isomorphic to q_(W_i,ell)
+                                      = -q_(NS,ell). (H-1d.5)
+   ```
+
+   Again there is only one mutation choice, not one choice on each side:
+
+   ```text
+   H_(1,ell)=(id_(A_K)+tau_ell)(H_(0,ell)).           (H-1d.6)
+   ```
+
+   Its order is forced as soon as `K,C` and `q_NS` are fixed:
+
+   ```text
+   2*eta=kappa+gamma-delta.                           (H-1d.7)
+   ```
+
+   Before `K` is supplied, Theorem H-1c gives only
+
+   ```text
+   max(0,gamma-delta) <= eta <= gamma.                (H-1d.8)
+   ```
+
+3. The primary decomposition of finite quadratic modules gives a bijection
+
+   ```text
+   {global even bridge/glue completions with the fixed markings}
+      = product_ell X_ell,                            (H-1d.9)
+   ```
+
+   where `X_ell` is the finite set defined by (H-1d.2)--(H-1d.6).
+   All but finitely many factors are trivial.  A safe support in the
+   rank-four case is
+
+   ```text
+   ell divides 2*D*det(G_0).                          (H-1d.10)
+   ```
+
+   After the saturated bridges are fixed, non-maximal graph glue can occur
+   only at
+
+   ```text
+   ell divides gcd(c,D).                              (H-1d.11)
+   ```
+
+   If `ell` does not divide `D`, (H-1d.5) has zero quotient.  Injectivity
+   and the order identity then give
+
+   ```text
+   |A_(K,ell)|=|A_(C_i,ell)|=|H_(i,ell)|,
+   q_(K,ell) isomorphic to -q_(C_i,ell).              (H-1d.12)
+   ```
+
+   Thus the glue is the full graph of an anti-isometry and is one orbit
+   under `O(q_(K,ell)) x O(q_(C_i,ell))`.  This is the precise unmarked
+   good-prime rigidity statement.  With fixed integral markings there can
+   still be several graph maps in that orbit; whether discriminant
+   automorphisms lift to `Aut(K)` and `Aut(C_i)` is a separate metric issue.
+
+4. The finite quadratic data alone do not decide root births.  For a marked
+   graph `H_i`, put
+
+   ```text
+   rho_(K,C_i)(a,b)
+      = min {x^2+y^2 : x in a+K, y in b+C_i}.         (H-1d.13)
+   ```
+
+   The completed frame has a new root in the glue class `(a,b)` exactly
+   when `(a,b) in H_i` and `rho_(K,C_i)(a,b)=2`.  Consequently the primary
+   graph choices assemble by (H-1d.9), but their root effect is evaluated by
+   the theta convolution after assembly.  Two choices with the same
+   `q_NS,ell` may have different ADE births.
+
+#### Proof
+
+Even overlattices of an integral lattice are classified by isotropic
+subgroups of its discriminant form.  Applying this to `B_i <= C_i` gives
+(H-1d.2).  Equation (H-1c.2) gives (H-1d.3).  More explicitly, in the
+saturated case `m=1`, the two raw decompositions of `S` are related by the
+unimodular matrix
+
+```text
+T_A = [ A^t*J                    I ]
+      [ I-A*J*A^t*J           -A*J ],                (H-1d.14)
+```
+
+written from the basis `U_0+B_0(-1)` to `U_1+B_1(-1)`.  Direct
+multiplication gives
+
+```text
+T_A*(J direct_sum -G_0)*T_A^t = J direct_sum -G_1.
+```
+
+For general `m`, extend this isometry from `S` to its saturation; its
+restriction on discriminant quotients is `tau_ell`.
+
+Nikulin graph glue for the primitive orthogonal pair `(K,C_i)` gives
+(H-1d.4)--(H-1d.5).  Both descriptions come from the same overlattice of
+`K(-1) direct_sum bar(S)`, so changing the `U` splitting only applies `tau_ell` on the
+bridge factor, proving (H-1d.6).  Taking orders in (H-1d.5), or localizing
+the determinant identity `D=det(K)c/h^2`, proves (H-1d.7).  The support
+bound (H-1d.8) is (H-1c.7) in valuations.
+
+Primary decomposition is orthogonal and commutes with isotropic subgroups,
+orthogonal complements and quotients.  This proves (H-1d.9).  The bridge
+discriminants divide `det(G_0)`, while primes of the core not already in the
+bridge occur in `D` by (H-1d.7), proving the safe support (H-1d.10).
+Theorem H-1c gives (H-1d.11).  If `delta=0`, a zero quotient in
+(H-1d.5) gives `kappa+gamma=2eta`; together with
+`eta<=min(kappa,gamma)` this forces `kappa=gamma=eta`.  Both projections
+are therefore onto and the graph is a full anti-isometry.  Pre- and
+post-composition act transitively on the set of anti-isometries, proving
+(H-1d.12) and its orbit statement.
+
+Finally, every vector in the graph-glue completion lies in one orthogonal
+coset pair `(a+K,b+C_i)` and has squared norm equal to the sum of the two
+squared norms.  Minimizing in each class proves (H-1d.13) and the root gate.
+QED.
+
+The tempting cutoff `ell | 2*D*det(A)` is not a valid literal formulation.
+On all seven stored shared-prime edges below, the cross matrix `A` has
+determinant zero, although `G_0` is positive definite.  Divisibility by zero
+does not define a finite prime set.  Formula (H-1d.10), with the nonzero raw
+bridge determinant, is the required replacement.  The sharper graph-defect
+support after the bridges are known is (H-1d.11).
+
+#### Exact seven-edge census
+
+All seven exceptional stored edges have `m=1`, so their two saturated bridge
+modules are fixed by the raw Grams.  The displayed module is the common
+local discriminant form of the old and new bridge.  “Support orders” are all
+orders permitted by (H-1d.8) before inserting the common core.  The core
+determinant and `q_NS,ell` force the displayed maximal order.  The column
+`graphs` counts marked isotropic graphs with the prime-to-`ell` stored glue
+held fixed; `ADE pairs` counts their distinct transported root transitions.
+
+| edge | `ell` | bridge module `q_(C,ell)` | support orders | forced order | graphs | ADE pairs | historical pair |
+|---|---:|---|---|---:|---:|---:|---|
+| NS0024-8 | 5 | `Z/5 <4/5>` | `1,5` | 5 | 10 | 10 | `A6 -> A5` |
+| Golay720-3 | 3 | `Z/9 <2/9>` | `1,3,9` | 9 | 18 | 12 | `3A1+2A2+A3 -> 4A1+A2` |
+| Golay720-4 | 3 | `Z/9 <2/9>` | `1,3,9` | 9 | 18 | 16 | `4A1+A2 -> 3A1` |
+| H3-6 | 3 | `Z/9 <2/9>` | `3,9` | 9 | 6 | 6 | `2A5 -> 3A3` |
+| Q80-1 | 3 | `Z/3 <4/3>` | `1,3` | 3 | 4 | 3 | `A3+D5+E6 -> A4+D9` |
+| Q80-5 | 3 | `Z/9 <4/9>` | `3,9` | 9 | 6 | 5 | `A4+A6 -> A3+A6` |
+| Q80-7 | 3 | `Z/3 <4/3>` | `1,3` | 3 | 4 | 4 | `A1+A2+A4 -> A2+A3` |
+
+Every enumerated maximal graph has the required `q_NS,ell`; the quadratic
+form forces the order but selects no marked graph label.  The theta/coset
+test does select: after coupling the two sides by `tau_ell`, the historical
+ADE pair has multiplicity one on every edge.  Thus each actual historical
+bad-prime choice is unique conditional on the stored good-prime glue and the
+declared old/new root systems.  Without the root data there are respectively
+`10,18,18,6,4,6,4` local marked possibilities.
+
+The R17 degree-two control is genuinely non-cyclic.  It has
+
+```text
+A_(K,2)=(4,4,8),       A_(C,2)=(4,8),
+|H_2|=32,              q_NS,2 fixed.
+```
+
+There are 32 marked maximal graphs compatible with that finite quadratic
+form and eight distinct transported ADE pairs.  The actual
+`0 -> 4A1` pair has multiplicity four.  Hence neither one cyclic glue
+generator nor `q_NS,2` plus the ADE pair determines the marked mutation.
+This is the promised negative control.
+
+The complete transition histograms, local forms, raw Grams and valuation
+ledgers are generated by
+[`certify_prime_local_bridge_mutation.sage`](scripts/certify_prime_local_bridge_mutation.sage)
+in
+[`elkies-k3-prime-local-bridge-mutation-v1.json`](../artifacts/generated-results/elkies-k3-prime-local-bridge-mutation-v1.json).
+The calculation is exact finite quadratic-module, overlattice and norm-two
+arithmetic.  It does not vary the common core or the stored good-prime glue,
+and it does not assert that every discriminant-form automorphism lifts to an
+integral automorphism of the positive-definite metric blocks.
 
 ### Theorem H: common-core graph-glue decomposition and 42-edge corpus
 
@@ -4475,9 +4705,9 @@ The replay artifact is
 This closes the earlier degree-at-most-four search globally at J2 level; it
 does not classify all frame isometry classes or construct equations.
 
-### Theorem H6: rootless mass is determined by local ADE representation averages
+### Theorem H6: local ADE mass is the asymptotic neighbour distribution
 
-<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS 2f5b874c0c22133b -->
+<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS e7589727ca8f7e50 -->
 
 Let `G` be a positive even genus and put
 
@@ -4518,6 +4748,41 @@ computes every `A_i/mass(G)` from the local genus data.  Consequently
 m(G)=0 if and only if mu_0>0.
 ```
 
+Now let `K` be a compact-open finite level structure on a positive-definite
+rational quadratic space of dimension greater than two.  For a marked spinor
+genus `tau`, define
+
+```text
+mu_R(tau)=sum_[y: s(y)=tau, full root lattice of W_y is R] 1/|Gamma_y|,
+m_sp(K)=m_K/|S(K)|.
+```
+
+Fix a source `x`, a good-prime spinor displacement `a in S_1(K)`, and put
+`tau=a*s(x)`.  Chenevier's level equidistribution theorem, summed over the
+finite target stratum, gives
+
+```text
+# {p-neighbour lines from x producing R}
+-----------------------------------------
+                c_V(p)
+
+       = mu_R(tau)/m_sp(K) + O(p^(-1/2))
+```
+
+as `p` tends to infinity through the compatible progression `delta_p=a`.
+The error is `O(p^(-1))` in dimension greater than four.  In particular, for
+an unmarked rank-17 genus consisting of one spinor genus,
+
+```text
+# {p-neighbour lines producing R} / # {p-neighbour lines}
+  = (U^(-1)A)_R/mass(G) + O(p^(-1)).
+```
+
+For `R=0`, rootless mass is therefore an asymptotic construction score, not
+only an existence invariant.  If a level class set has several spinor
+genera, the numerator must be the marked mass in the fixed target spinor
+genus; mixing prime progressions need not have a limit.
+
 #### Proof and implementation boundary
 
 The proof, the quantitative refinement using locally excluded root systems,
@@ -4526,7 +4791,7 @@ and the exact rank-17 local formula are in
 This is King's prescribed-root-system mass inversion applied to a fixed even
 genus, not a new mass formula.
 
-The checker
+The first-moment checker
 [`certify_rootless_genus_first_moment.sage`](scripts/certify_rootless_genus_first_moment.sage)
 implements only the `A1` row.  It obtains exact weighted root means
 
@@ -4539,8 +4804,34 @@ det 950: 4967763637986279936/352882035745379473.
 All exceed two.  Thus the cheap criterion is inconclusive on all three
 controls even though the latter two contain explicit rootless frames.  For
 determinant 78, the local formula agrees exactly with the independent
-weighted sum over the complete 1,549-class census.  Higher ADE averages and
-the full inversion for determinants 948 and 950 have not been computed.
+weighted sum over the complete 1,549-class census.
+
+The bounded second checker
+[`certify_ade_neighbor_mass_score.sage`](scripts/certify_ade_neighbor_mass_score.sage)
+aggregates all 621 census-realized determinant-78 ADE strata and solves exact
+nonnegative rational LPs with matching primal and dual certificates.  Even
+all ADE representation rows of rank at most four allow rootless fraction
+
+```text
+11817053639/4286486820968
+  = 0.0027568155...,
+```
+
+so they do not recover the true census value `mu_0=0`.  The complete
+determinant-948 rootless classification has exact mass `1/2+1/4=3/4`, hence
+asymptotic rootless fraction
+
+```text
+694167953788108800/77731517730627488307787
+  = 8.930328...e-6.
+```
+
+Four distinct determinant-950 controls give only the lower bound
+`mu_0>=7/4`, hence asymptotic fraction at least `1.020293...e-5`.  The exact
+determinant-950 rootless mass, all complete local-admissibility filters, every
+higher local ADE average, and the finite-good-prime rootless-line frequencies
+remain uncomputed.  The precise theorem and proof boundary are in
+[`ROOTLESS_GENUS_THEORY_2026-09-03.md`](ROOTLESS_GENUS_THEORY_2026-09-03.md).
 
 ## 7B. Integral character glue
 

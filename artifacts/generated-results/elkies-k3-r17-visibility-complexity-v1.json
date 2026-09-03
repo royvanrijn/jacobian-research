@@ -1,0 +1,2647 @@
+{
+  "claim_boundary": {
+    "exact": "Four named generators have minimum rational-curve degree two; all 38 have post-hoc genus-one degree-two, codimension-one witnesses.",
+    "no_exhaustive_campaign": "No norm-20 rational-trisection cosets or M/4M quadrisection cosets are enumerated by this derivation.",
+    "span_warning": "The rational-bisection span dimensions 5,3,2,1 do not mean that 5,3,2,1 ordered basis generators each have one rational-curve witness.",
+    "unknown": "Rational-curve degree remains unknown for 34 named generators, and predeclared-pencil degree remains uncertified for all 38."
+  },
+  "conjecture": "The high-rank controls have increasing rigid visibility complexity, although unrestricted post-hoc all-genus visibility is uniformly degree two.",
+  "definition": {
+    "comparison_rule": "Do not compress the tuple to a scalar without declaring an order or weights before inspecting the controls.",
+    "diagnostic_only_class": "post-hoc",
+    "object": "For a leakage-free atlas A fixed before the target point Q and control fibre t, VC_A(Q) is the Pareto frontier of witness tuples.",
+    "predictive_classes": [
+      "rigid",
+      "predeclared-pencil"
+    ],
+    "witness_tuple": [
+      "mechanism class (categorical: rigid, predeclared-pencil, post-hoc)",
+      "geometric genus",
+      "multisection degree",
+      "linear-system dimension",
+      "incidence codimension",
+      "branch-equation cost",
+      "coefficient-field complexity"
+    ]
+  },
+  "directions": [
+    {
+      "direction": "Q1",
+      "known_rank_lower_bound": 25,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 3,
+        "maximum_absolute_coefficient_bits": 41,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 2,
+        "primitive_integer_coefficients_low_to_high": [
+          388152818881,
+          1527533196332,
+          1295099052676
+        ],
+        "total_absolute_coefficient_bits": 121,
+        "witness_class": "rigid"
+      },
+      "minimum_known_incidence_codimension": 0,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": 2,
+        "reason_degree_one_is_impossible": "Degree-one curves are sections and specialize into M_t, so cannot represent a nonzero class in L_t/M_t.",
+        "status": "PROVED_MINIMUM"
+      },
+      "parameter": "-2/377",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 219,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            21877191227527307719703050394704866115955785538250920364566462464,
+            -130330641236875648247995336438050084442330358373635803076238182272,
+            534537349808396433386974827076777180004666395096574260545058850848,
+            260454805868098912108029205543734517883139499188272534525920893984,
+            27466240887832722685327002862461383120053559183173668757922739201
+          ],
+          "total_absolute_coefficient_bits": 1083
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 86,
+        "pencil_parameter_lambda": "-54822601473105685281318984/9275512527986758507",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "RIGID_VISIBLE",
+      "rigid_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 3,
+          "maximum_absolute_coefficient_bits": 41,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 2,
+          "primitive_integer_coefficients_low_to_high": [
+            388152818881,
+            1527533196332,
+            1295099052676
+          ],
+          "total_absolute_coefficient_bits": 121
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "cover_label": "orbit-1cb25",
+        "exceptional_quotient_vector": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "existing_construction_complexity": {
+          "coefficient_l1": 5,
+          "coordinate_input_bits": 1920,
+          "dependency_count": 5,
+          "group_addition_upper_bound": 4,
+          "maximum_absolute_coefficient": 1,
+          "support_count": 5
+        },
+        "genus": 0,
+        "incidence_codimension": 0,
+        "linear_system_dimension": 0,
+        "mechanism_class": "rigid",
+        "minimum_lattice_norm": 10,
+        "multisection_degree": 2,
+        "status": "PROVED_MINIMUM"
+      },
+      "source_public_point_index_one_based": 1
+    },
+    {
+      "direction": "Q2",
+      "known_rank_lower_bound": 25,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 437,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          217025854767407586245405312966235421070381635130726360148209133570199710411982219093791157823559610068594988645596022177221735394225,
+          -268883825165510363690896695236231558551106588371035690390175499822743694312811276952180773749120828676483616476579338726391629943910,
+          217769208858186195864769715729015458660350128474034187526626276827697643312121955413020578479836453558093628542902206718422841690249,
+          233165442867755739590447578245169597515080934162165345847009717072924258554152252426783045595312805652324582401946127038051585003856,
+          42761455707533710519494717625594537819740636653837559941594824063368482015503285386801324202704708677771798867052104987816627478336
+        ],
+        "total_absolute_coefficient_bits": 2182,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-2/377",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 437,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            217025854767407586245405312966235421070381635130726360148209133570199710411982219093791157823559610068594988645596022177221735394225,
+            -268883825165510363690896695236231558551106588371035690390175499822743694312811276952180773749120828676483616476579338726391629943910,
+            217769208858186195864769715729015458660350128474034187526626276827697643312121955413020578479836453558093628542902206718422841690249,
+            233165442867755739590447578245169597515080934162165345847009717072924258554152252426783045595312805652324582401946127038051585003856,
+            42761455707533710519494717625594537819740636653837559941594824063368482015503285386801324202704708677771798867052104987816627478336
+          ],
+          "total_absolute_coefficient_bits": 2182
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 141,
+        "pencil_parameter_lambda": "1894094103907621524558464883675181609659690/128519478290603343966642293106153739",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 4
+    },
+    {
+      "direction": "Q3",
+      "known_rank_lower_bound": 25,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 3,
+        "maximum_absolute_coefficient_bits": 33,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 2,
+        "primitive_integer_coefficients_low_to_high": [
+          6396254569,
+          2363218858,
+          1578980689
+        ],
+        "total_absolute_coefficient_bits": 96,
+        "witness_class": "rigid"
+      },
+      "minimum_known_incidence_codimension": 0,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": 2,
+        "reason_degree_one_is_impossible": "Degree-one curves are sections and specialize into M_t, so cannot represent a nonzero class in L_t/M_t.",
+        "status": "PROVED_MINIMUM"
+      },
+      "parameter": "-2/377",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 153,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            7003210910600704618140749459417862004496707600,
+            6948673278441160211858127114398420283405585920,
+            2142765473232497354137727657618714782743507256,
+            210114960020850375404754052411700677604430912,
+            5563439865851118878706106389171114613634001
+          ],
+          "total_absolute_coefficient_bits": 747
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 63,
+        "pencil_parameter_lambda": "8818031684275019184/5287603172675",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "RIGID_VISIBLE",
+      "rigid_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 3,
+          "maximum_absolute_coefficient_bits": 33,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 2,
+          "primitive_integer_coefficients_low_to_high": [
+            6396254569,
+            2363218858,
+            1578980689
+          ],
+          "total_absolute_coefficient_bits": 96
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "cover_label": "orbit-051a1",
+        "exceptional_quotient_vector": [
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "existing_construction_complexity": {
+          "coefficient_l1": 9,
+          "coordinate_input_bits": 3143,
+          "dependency_count": 9,
+          "group_addition_upper_bound": 8,
+          "maximum_absolute_coefficient": 1,
+          "support_count": 9
+        },
+        "genus": 0,
+        "incidence_codimension": 0,
+        "linear_system_dimension": 0,
+        "mechanism_class": "rigid",
+        "minimum_lattice_norm": 10,
+        "multisection_degree": 2,
+        "status": "PROVED_MINIMUM"
+      },
+      "source_public_point_index_one_based": 6
+    },
+    {
+      "direction": "Q4",
+      "known_rank_lower_bound": 25,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 341,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          263428584933682690846541851817645703749316391697676728536294882405166056950246878229941563952889346564,
+          913683218333845125454178368723964423184972953055972144600919445667030670789747128317964478140358656788,
+          3566991164324878229695715020195164196323220935945447307211037274599072383304509712724001906492172741541,
+          1553408437132289859574533001269787016038772177990593401386405238090091809767836611859745276615671791822,
+          170438621725962474781858309853073768465464546748869581878395560635033445672485333139297753891195655289
+        ],
+        "total_absolute_coefficient_bits": 1694,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-2/377",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 341,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            263428584933682690846541851817645703749316391697676728536294882405166056950246878229941563952889346564,
+            913683218333845125454178368723964423184972953055972144600919445667030670789747128317964478140358656788,
+            3566991164324878229695715020195164196323220935945447307211037274599072383304509712724001906492172741541,
+            1553408437132289859574533001269787016038772177990593401386405238090091809767836611859745276615671791822,
+            170438621725962474781858309853073768465464546748869581878395560635033445672485333139297753891195655289
+          ],
+          "total_absolute_coefficient_bits": 1694
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 116,
+        "pencil_parameter_lambda": "-42999239968359075474708105440414133/6385359104652443272812563291",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 10
+    },
+    {
+      "direction": "Q5",
+      "known_rank_lower_bound": 25,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 3,
+        "maximum_absolute_coefficient_bits": 35,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 2,
+        "primitive_integer_coefficients_low_to_high": [
+          23743585636,
+          12143358604,
+          9658127089
+        ],
+        "total_absolute_coefficient_bits": 103,
+        "witness_class": "rigid"
+      },
+      "minimum_known_incidence_codimension": 0,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": 2,
+        "reason_degree_one_is_impossible": "Degree-one curves are sections and specialize into M_t, so cannot represent a nonzero class in L_t/M_t.",
+        "status": "PROVED_MINIMUM"
+      },
+      "parameter": "-2/377",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 297,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            35519409586868931386180708080087215588884133885527153912765269445825247503387604762701476,
+            126847287494154232968675573108255234244475492333642396583546299955915556124699610699561380,
+            155413984294597377577300784208057496712506626214176499612802310145313424074215078179721093,
+            61352260556906456003434921971148435012858050161701173955317341855647238474101503445130670,
+            7571317397813070621292452321439737819922667120617178156074461449632135644080221366339881
+          ],
+          "total_absolute_coefficient_bits": 1475
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 101,
+        "pencil_parameter_lambda": "-1505167939945737229124298283827/158247979959654998405393",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "RIGID_VISIBLE",
+      "rigid_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 3,
+          "maximum_absolute_coefficient_bits": 35,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 2,
+          "primitive_integer_coefficients_low_to_high": [
+            23743585636,
+            12143358604,
+            9658127089
+          ],
+          "total_absolute_coefficient_bits": 103
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "cover_label": "orbit-1d5bb",
+        "exceptional_quotient_vector": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        "existing_construction_complexity": {
+          "coefficient_l1": 11,
+          "coordinate_input_bits": 3762,
+          "dependency_count": 11,
+          "group_addition_upper_bound": 10,
+          "maximum_absolute_coefficient": 1,
+          "support_count": 11
+        },
+        "genus": 0,
+        "incidence_codimension": 0,
+        "linear_system_dimension": 0,
+        "mechanism_class": "rigid",
+        "minimum_lattice_norm": 10,
+        "multisection_degree": 2,
+        "status": "PROVED_MINIMUM"
+      },
+      "source_public_point_index_one_based": 11
+    },
+    {
+      "direction": "Q6",
+      "known_rank_lower_bound": 25,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 3,
+        "maximum_absolute_coefficient_bits": 44,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 2,
+        "primitive_integer_coefficients_low_to_high": [
+          11718940411984,
+          7410964194920,
+          1177213677145
+        ],
+        "total_absolute_coefficient_bits": 128,
+        "witness_class": "rigid"
+      },
+      "minimum_known_incidence_codimension": 0,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": 2,
+        "reason_degree_one_is_impossible": "Degree-one curves are sections and specialize into M_t, so cannot represent a nonzero class in L_t/M_t.",
+        "status": "PROVED_MINIMUM"
+      },
+      "parameter": "-2/377",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 258,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            10611848871965206129689279895569212754041312681548352344003238303380160545296,
+            -254761919133518416318783042797978917892814406639903267499459766268787137886720,
+            132147287432305499906250535871245160237442861488056569472220243345432696045368,
+            162664900596003087924439743472427039886767595239874904733557766695180661830720,
+            31031752551801381729301946846127075662138663952968493190087393485991591821361
+          ],
+          "total_absolute_coefficient_bits": 1280
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 94,
+        "pencil_parameter_lambda": "18447102579269622466287861808/904661725210265655643",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "RIGID_VISIBLE",
+      "rigid_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 3,
+          "maximum_absolute_coefficient_bits": 44,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 2,
+          "primitive_integer_coefficients_low_to_high": [
+            11718940411984,
+            7410964194920,
+            1177213677145
+          ],
+          "total_absolute_coefficient_bits": 128
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "cover_label": "orbit-0d4ca",
+        "exceptional_quotient_vector": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        "existing_construction_complexity": {
+          "coefficient_l1": 10,
+          "coordinate_input_bits": 3773,
+          "dependency_count": 11,
+          "group_addition_upper_bound": 9,
+          "maximum_absolute_coefficient": 1,
+          "support_count": 10
+        },
+        "genus": 0,
+        "incidence_codimension": 0,
+        "linear_system_dimension": 0,
+        "mechanism_class": "rigid",
+        "minimum_lattice_norm": 10,
+        "multisection_degree": 2,
+        "status": "PROVED_MINIMUM"
+      },
+      "source_public_point_index_one_based": 16
+    },
+    {
+      "direction": "Q7",
+      "known_rank_lower_bound": 25,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 245,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          4722861150977954951926356731059087736861609729833418034619819767262138000,
+          -30496629860912060754071556260952780974498625437567405450955677476194069760,
+          20557493838490279528616088259266927610055465912466247235095221159419297176,
+          12999138791630216559840816170855551731779303755358224548495258081898350912,
+          1325367601268326972033409494630632254064423958479896896871975103804843201
+        ],
+        "total_absolute_coefficient_bits": 1214,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-2/377",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 245,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            4722861150977954951926356731059087736861609729833418034619819767262138000,
+            -30496629860912060754071556260952780974498625437567405450955677476194069760,
+            20557493838490279528616088259266927610055465912466247235095221159419297176,
+            12999138791630216559840816170855551731779303755358224548495258081898350912,
+            1325367601268326972033409494630632254064423958479896896871975103804843201
+          ],
+          "total_absolute_coefficient_bits": 1214
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 92,
+        "pencil_parameter_lambda": "-4617926537842286115494505744/911861984568722240605",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 20
+    },
+    {
+      "direction": "Q8",
+      "known_rank_lower_bound": 25,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 342,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          1622841729738102913254659353129912667236620963466222802444027548043422715922919684143939620372300208400,
+          6135775771126932931100919044416511097438320479510860086688959820607555884954751051326122208011971472840,
+          8500041605728616584827860849078450882119436614564215683841437185514920429851954391044495702613757481001,
+          3385846985831339401216778623964859017139637679387233125947748658497498613684279434734915412765429477654,
+          404309880322252561882513685051053869877609144377680330839933061849145510657288319488603447652254543849
+        ],
+        "total_absolute_coefficient_bits": 1703,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-2/377",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 342,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            1622841729738102913254659353129912667236620963466222802444027548043422715922919684143939620372300208400,
+            6135775771126932931100919044416511097438320479510860086688959820607555884954751051326122208011971472840,
+            8500041605728616584827860849078450882119436614564215683841437185514920429851954391044495702613757481001,
+            3385846985831339401216778623964859017139637679387233125947748658497498613684279434734915412765429477654,
+            404309880322252561882513685051053869877609144377680330839933061849145510657288319488603447652254543849
+          ],
+          "total_absolute_coefficient_bits": 1703
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 118,
+        "pencil_parameter_lambda": "-191041723301125266938311665534213765/22128033533223105142074754034",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 24
+    },
+    {
+      "direction": "Q1",
+      "known_rank_lower_bound": 26,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 274,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          7480124856053061371047500534848003671023453388747760912004698624090002862308614400,
+          22647068428333385878378750958310790410389510432337790340745437335861302901327479680,
+          27564393436294976077837156165932107482670928526069022362956234683277406770979720384,
+          13313792036827438875373229756101463308543374915429852483498266553883484993523142176,
+          2105656929764203227276990092574185829959770212845415797044933217274011430064730481
+        ],
+        "total_absolute_coefficient_bits": 1364,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-308/251",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 274,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            7480124856053061371047500534848003671023453388747760912004698624090002862308614400,
+            22647068428333385878378750958310790410389510432337790340745437335861302901327479680,
+            27564393436294976077837156165932107482670928526069022362956234683277406770979720384,
+            13313792036827438875373229756101463308543374915429852483498266553883484993523142176,
+            2105656929764203227276990092574185829959770212845415797044933217274011430064730481
+          ],
+          "total_absolute_coefficient_bits": 1364
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 100,
+        "pencil_parameter_lambda": "-893981249308018484637467309880/33366821536006738461161",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 1
+    },
+    {
+      "direction": "Q2",
+      "known_rank_lower_bound": 26,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 227,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          137513588156705120516023890474015401707050915385758169783539045481024,
+          78208649268750838002288129595466147882483661763606088496582383621120,
+          13186094842747551709046574260518962517145465393368238691247377566032,
+          -343882580491416625914296086894954602960737098581892761580253101920,
+          26649050274107046308218539041604745289011852483162968223744257369
+        ],
+        "total_absolute_coefficient_bits": 1109,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-308/251",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 227,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            137513588156705120516023890474015401707050915385758169783539045481024,
+            78208649268750838002288129595466147882483661763606088496582383621120,
+            13186094842747551709046574260518962517145465393368238691247377566032,
+            -343882580491416625914296086894954602960737098581892761580253101920,
+            26649050274107046308218539041604745289011852483162968223744257369
+          ],
+          "total_absolute_coefficient_bits": 1109
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 88,
+        "pencil_parameter_lambda": "-160943474164966686617544744/116056724622386121221",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 2
+    },
+    {
+      "direction": "Q3",
+      "known_rank_lower_bound": 26,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 290,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          453123067064145279676861347092151827664324246789045033665557382585379334089896118677056,
+          1409643499442893625034177985161916779912322774922970548867177771012428948253348461678592,
+          1469102192695740345885827759170152989357084453248206713569617722790405362503297466690512,
+          605212457580123234053957644260878290642694564490719759701230381032471530713994505440416,
+          84472399433496006142648886601756701684019055940384629199444878411814910281138096750649
+        ],
+        "total_absolute_coefficient_bits": 1443,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-308/251",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 290,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            453123067064145279676861347092151827664324246789045033665557382585379334089896118677056,
+            1409643499442893625034177985161916779912322774922970548867177771012428948253348461678592,
+            1469102192695740345885827759170152989357084453248206713569617722790405362503297466690512,
+            605212457580123234053957644260878290642694564490719759701230381032471530713994505440416,
+            84472399433496006142648886601756701684019055940384629199444878411814910281138096750649
+          ],
+          "total_absolute_coefficient_bits": 1443
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 106,
+        "pencil_parameter_lambda": "-45684968659027968709254160257432/3192887923483229238735491",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 4
+    },
+    {
+      "direction": "Q4",
+      "known_rank_lower_bound": 26,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 202,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          3429491261237668445836909618844091973041181122673859732679744,
+          2220935118998374584909230541404615289027301835112127334277888,
+          434739207851215187151477210625220722306138995359697148548208,
+          2631521349284872422233380517993257056719609948365492623264,
+          902418054369971752519175009307083135938099103670337553121
+        ],
+        "total_absolute_coefficient_bits": 983,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-308/251",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 202,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            3429491261237668445836909618844091973041181122673859732679744,
+            2220935118998374584909230541404615289027301835112127334277888,
+            434739207851215187151477210625220722306138995359697148548208,
+            2631521349284872422233380517993257056719609948365492623264,
+            902418054369971752519175009307083135938099103670337553121
+          ],
+          "total_absolute_coefficient_bits": 983
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 79,
+        "pencil_parameter_lambda": "-432821509812769360909704/393433369481287117",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 5
+    },
+    {
+      "direction": "Q5",
+      "known_rank_lower_bound": 26,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 321,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          156666692775387742676246928640055531308130860559313012125570434571274343786520480404118627386384,
+          430897752952404846805700058442780813497607337861691139247979670732547564754586729972025698400768,
+          2512185694320852723405465862174451164814970344539547969129122314845220498376809041048008552188088,
+          1114754287673555835920845464596204323825382862099542389267299737396429933242375339422898626928704,
+          121219676032647831430379695316776532155520208138507924699661527616374334508657068340545883935281
+        ],
+        "total_absolute_coefficient_bits": 1592,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-308/251",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 321,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            156666692775387742676246928640055531308130860559313012125570434571274343786520480404118627386384,
+            430897752952404846805700058442780813497607337861691139247979670732547564754586729972025698400768,
+            2512185694320852723405465862174451164814970344539547969129122314845220498376809041048008552188088,
+            1114754287673555835920845464596204323825382862099542389267299737396429933242375339422898626928704,
+            121219676032647831430379695316776532155520208138507924699661527616374334508657068340545883935281
+          ],
+          "total_absolute_coefficient_bits": 1592
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 111,
+        "pencil_parameter_lambda": "-2500255604691136134210740599194864/381755191405012988477758097",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 6
+    },
+    {
+      "direction": "Q6",
+      "known_rank_lower_bound": 26,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 299,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          312519962054861996817774372639442246382660443872603599529321989862415571951576860515744400,
+          963763628516230182348669558840741777042304859129289483433597591542455997342336277417537280,
+          1005041859247351017238512349264238827059305604473476345603947446295818721736194744386840344,
+          418967987780431228503099058984239147922706798310210272284509191149909977090628073591428416,
+          59314235598960754285596531532314802797908614435593631162802543454445331167127351817717921
+        ],
+        "total_absolute_coefficient_bits": 1489,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-308/251",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 299,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            312519962054861996817774372639442246382660443872603599529321989862415571951576860515744400,
+            963763628516230182348669558840741777042304859129289483433597591542455997342336277417537280,
+            1005041859247351017238512349264238827059305604473476345603947446295818721736194744386840344,
+            418967987780431228503099058984239147922706798310210272284509191149909977090628073591428416,
+            59314235598960754285596531532314802797908614435593631162802543454445331167127351817717921
+          ],
+          "total_absolute_coefficient_bits": 1489
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 106,
+        "pencil_parameter_lambda": "-65208041162421732531467784184080/4311210410362057713577621",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 8
+    },
+    {
+      "direction": "Q7",
+      "known_rank_lower_bound": 26,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 342,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          858769940696425229997340585191312159440590357656100432556415383761351418902448985912340623759841202704,
+          3286838189160747107190796141494644248287698801938805563114406432476937247588026879646194200614038371928,
+          4705645730746727700091190400574924107507745176149716024581326188903387370793446836205876392888949670433,
+          1880372735084650204749949714840463345153609651926185466314020661546973132341239425506161114212955949894,
+          223037311711130155967410537889615705155588909984590923722016051199768893351744274375747292675499043441
+        ],
+        "total_absolute_coefficient_bits": 1699,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-308/251",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 342,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            858769940696425229997340585191312159440590357656100432556415383761351418902448985912340623759841202704,
+            3286838189160747107190796141494644248287698801938805563114406432476937247588026879646194200614038371928,
+            4705645730746727700091190400574924107507745176149716024581326188903387370793446836205876392888949670433,
+            1880372735084650204749949714840463345153609651926185466314020661546973132341239425506161114212955949894,
+            223037311711130155967410537889615705155588909984590923722016051199768893351744274375747292675499043441
+          ],
+          "total_absolute_coefficient_bits": 1699
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 116,
+        "pencil_parameter_lambda": "-45682199757056413021228020878474067/5395468446357188842006694546",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 9
+    },
+    {
+      "direction": "Q8",
+      "known_rank_lower_bound": 26,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 296,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          28663113840654839262410059288952378747975102706635820796374530786525800211818027757032336,
+          100148458192794326700809135170833242793421335305496196743698962635914208556499107545332480,
+          118154364325204614160805520942535887600399007698667043287283984955267215915954395161647128,
+          46603131196933275687036363881300626405227163217254092663810865131955624330355211810227520,
+          5832305116841792579683480378392853217942973080693244846818266342310680944124331542615761
+        ],
+        "total_absolute_coefficient_bits": 1473,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-308/251",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 296,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            28663113840654839262410059288952378747975102706635820796374530786525800211818027757032336,
+            100148458192794326700809135170833242793421335305496196743698962635914208556499107545332480,
+            118154364325204614160805520942535887600399007698667043287283984955267215915954395161647128,
+            46603131196933275687036363881300626405227163217254092663810865131955624330355211810227520,
+            5832305116841792579683480378392853217942973080693244846818266342310680944124331542615761
+          ],
+          "total_absolute_coefficient_bits": 1473
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 105,
+        "pencil_parameter_lambda": "-36640296904124177240186483553072/3693293830825097642318503",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 10
+    },
+    {
+      "direction": "Q9",
+      "known_rank_lower_bound": 26,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 358,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          13694390548477043315493344245094247803623327162792986479700819561828169631673128335337233880377912350518416,
+          -19135077841332576431760680506678216030671616261320871728018458068603364500633098617696179462966858958010496,
+          313711749723766831917715631196467317912090633799717306357278606066654080161226923162719706637176440982719528,
+          146685028480089261099189413491453529376461918858043457817341054643735475929303154165919321244395639791237696,
+          15644408767348904274577738098860420262584526596760269181732683264778143434057721818767271031008586000353377
+        ],
+        "total_absolute_coefficient_bits": 1774,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-308/251",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 358,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            13694390548477043315493344245094247803623327162792986479700819561828169631673128335337233880377912350518416,
+            -19135077841332576431760680506678216030671616261320871728018458068603364500633098617696179462966858958010496,
+            313711749723766831917715631196467317912090633799717306357278606066654080161226923162719706637176440982719528,
+            146685028480089261099189413491453529376461918858043457817341054643735475929303154165919321244395639791237696,
+            15644408767348904274577738098860420262584526596760269181732683264778143434057721818767271031008586000353377
+          ],
+          "total_absolute_coefficient_bits": 1774
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 121,
+        "pencil_parameter_lambda": "-1502945234895841423248118190185115616/244423062560832137525011672741",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 12
+    },
+    {
+      "direction": "Q1",
+      "known_rank_lower_bound": 27,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 240,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          1129183192914154315143792817057827560417419878787422692996675708311348224,
+          444962615841716860102946520050492490009272608903871412973172654060239488,
+          40623590220893092447558475264518301020302111982333516742666141364000736,
+          -7513547522617695722129372256047304118262519034270734906723888078635488,
+          207484983849583157585410690315136579002772549518696222995132394589169
+        ],
+        "total_absolute_coefficient_bits": 1174,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "2456/135",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 240,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            1129183192914154315143792817057827560417419878787422692996675708311348224,
+            444962615841716860102946520050492490009272608903871412973172654060239488,
+            40623590220893092447558475264518301020302111982333516742666141364000736,
+            -7513547522617695722129372256047304118262519034270734906723888078635488,
+            207484983849583157585410690315136579002772549518696222995132394589169
+          ],
+          "total_absolute_coefficient_bits": 1174
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 89,
+        "pencil_parameter_lambda": "-610120826535439611529941336/323249851606975296457",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 1
+    },
+    {
+      "direction": "Q2",
+      "known_rank_lower_bound": 27,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 291,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          2622656606614173111633908483467767929090581414841160481809442578376683187461212268816100,
+          2431874076256909563415545954659774290444193871924492570016125626347628044126690339597760,
+          982734696633975616686771742060137181506434823175794087870199425466573037626276694201524,
+          199754545463330818377477455629538984448232930746215705829632393448449651997818665273896,
+          16255113073142314317002207422539081898228755161338298266652640612327657136582609608201
+        ],
+        "total_absolute_coefficient_bits": 1442,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "2456/135",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 291,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            2622656606614173111633908483467767929090581414841160481809442578376683187461212268816100,
+            2431874076256909563415545954659774290444193871924492570016125626347628044126690339597760,
+            982734696633975616686771742060137181506434823175794087870199425466573037626276694201524,
+            199754545463330818377477455629538984448232930746215705829632393448449651997818665273896,
+            16255113073142314317002207422539081898228755161338298266652640612327657136582609608201
+          ],
+          "total_absolute_coefficient_bits": 1442
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 103,
+        "pencil_parameter_lambda": "8083353537427714099538202667020/1458812496313906803378083",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 10
+    },
+    {
+      "direction": "Q3",
+      "known_rank_lower_bound": 27,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 346,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          116260843840963685945211480860805424900768364224139325967537240083744566291669957730469566674905833920784,
+          65273394793040223151407999627106600988688518527983587170200804059291410411800544274848078942005497628288,
+          10830705232794771470091715761532483308696750308134046124002910782042079280410384334043368025231920730056,
+          -320712008669004034863523606276907145171160062236079544054086387332614134036320150426321429421433030848,
+          21984301629641251462729578817693780077162010671958519489524804560786540508527842204853791092975970449
+        ],
+        "total_absolute_coefficient_bits": 1706,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "2456/135",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 346,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            116260843840963685945211480860805424900768364224139325967537240083744566291669957730469566674905833920784,
+            65273394793040223151407999627106600988688518527983587170200804059291410411800544274848078942005497628288,
+            10830705232794771470091715761532483308696750308134046124002910782042079280410384334043368025231920730056,
+            -320712008669004034863523606276907145171160062236079544054086387332614134036320150426321429421433030848,
+            21984301629641251462729578817693780077162010671958519489524804560786540508527842204853791092975970449
+          ],
+          "total_absolute_coefficient_bits": 1706
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 112,
+        "pencil_parameter_lambda": "-3358232969909411744420192081990016/2380042851615833335881732877",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 11
+    },
+    {
+      "direction": "Q4",
+      "known_rank_lower_bound": 27,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 256,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          68580261649189023474722966188723210640333352961777472093942679139713395934864,
+          30036613600307793384658016035416636556373731827636161841448650519877105075968,
+          3428365843649777799661899114458485848891908739742053199869833017633997507608,
+          -411737686692774811844449968314894377946768382666554295954099407864977334976,
+          11270254326946382615877731095694464825595693243135143400819675885981862561
+        ],
+        "total_absolute_coefficient_bits": 1253,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "2456/135",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 256,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            68580261649189023474722966188723210640333352961777472093942679139713395934864,
+            30036613600307793384658016035416636556373731827636161841448650519877105075968,
+            3428365843649777799661899114458485848891908739742053199869833017633997507608,
+            -411737686692774811844449968314894377946768382666554295954099407864977334976,
+            11270254326946382615877731095694464825595693243135143400819675885981862561
+          ],
+          "total_absolute_coefficient_bits": 1253
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 93,
+        "pencil_parameter_lambda": "-8895795008043586532451269136/5010991656048393133333",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 13
+    },
+    {
+      "direction": "Q5",
+      "known_rank_lower_bound": 27,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 386,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          138686881898113521766416720704896500268378338597136587343540060223390868560395573293076587608782373485861512880394449,
+          83242976008281212628055027600772734993559776893634354195083315383977696825328614341607216078577350325995023386589758,
+          14966598294776098297990305053768033315037996295359999568733701244378754339015280675733303730948095687770019832073633,
+          -180560227613151194296604381273819087029466596403505511778195295193342522721982747885555776166955779291454838931696,
+          30179824792819919825847219271931335990692241483055298671055508314343352498524973934555200054918830732092191931456
+        ],
+        "total_absolute_coefficient_bits": 1906,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "2456/135",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 386,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            138686881898113521766416720704896500268378338597136587343540060223390868560395573293076587608782373485861512880394449,
+            83242976008281212628055027600772734993559776893634354195083315383977696825328614341607216078577350325995023386589758,
+            14966598294776098297990305053768033315037996295359999568733701244378754339015280675733303730948095687770019832073633,
+            -180560227613151194296604381273819087029466596403505511778195295193342522721982747885555776166955779291454838931696,
+            30179824792819919825847219271931335990692241483055298671055508314343352498524973934555200054918830732092191931456
+          ],
+          "total_absolute_coefficient_bits": 1906
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 125,
+        "pencil_parameter_lambda": "-40783404564249777677009838927951603894/31911790496514386339417783383117",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 18
+    },
+    {
+      "direction": "Q6",
+      "known_rank_lower_bound": 27,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 290,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          1435178522918405264080709638063952403795209001363727063658508178058787873544069691232400,
+          697289339967100018361761604179091952969453286299664510918688276116057885050355939777280,
+          94807090852142296564397107967881557082225528127507695295312019893516131623322120416664,
+          -7168171851216262207934960673880087452580187446187651844355716010577909783943410099904,
+          230834423406647901234960429016611570873746176320455888544200288542234323337268324001
+        ],
+        "total_absolute_coefficient_bits": 1424,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "2456/135",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 290,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            1435178522918405264080709638063952403795209001363727063658508178058787873544069691232400,
+            697289339967100018361761604179091952969453286299664510918688276116057885050355939777280,
+            94807090852142296564397107967881557082225528127507695295312019893516131623322120416664,
+            -7168171851216262207934960673880087452580187446187651844355716010577909783943410099904,
+            230834423406647901234960429016611570873746176320455888544200288542234323337268324001
+          ],
+          "total_absolute_coefficient_bits": 1424
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 102,
+        "pencil_parameter_lambda": "-3087492546542694452796184571280/1878758808788989071992341",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 22
+    },
+    {
+      "direction": "Q7",
+      "known_rank_lower_bound": 27,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 417,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          172269937957798011925409987530440680171403633747487355032559816580307911832413723087899514378889036378332869903103056335113849,
+          -110813793145562967278452770432744780441097665238435878852799445301519220458513828453161263762239956496767752839496200184255002,
+          133536929166424153601249623593409659068591671595128198800114686423111510487362026395128196259348540989337283796199968633255793,
+          130041555893401551042001250469670372082597140240800853859751999785861630953209516649584184643266041264030999953432809856996544,
+          23367477991435294817112337785564375904016612182076957242242435733845626409387922058981259974996481469266054018622169387836416
+        ],
+        "total_absolute_coefficient_bits": 2079,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "2456/135",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 417,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            172269937957798011925409987530440680171403633747487355032559816580307911832413723087899514378889036378332869903103056335113849,
+            -110813793145562967278452770432744780441097665238435878852799445301519220458513828453161263762239956496767752839496200184255002,
+            133536929166424153601249623593409659068591671595128198800114686423111510487362026395128196259348540989337283796199968633255793,
+            130041555893401551042001250469670372082597140240800853859751999785861630953209516649584184643266041264030999953432809856996544,
+            23367477991435294817112337785564375904016612182076957242242435733845626409387922058981259974996481469266054018622169387836416
+          ],
+          "total_absolute_coefficient_bits": 2079
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 136,
+        "pencil_parameter_lambda": "51472678300393171564906478525696425089618/3793506025887614177820391695000661",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 24
+    },
+    {
+      "direction": "Q8",
+      "known_rank_lower_bound": 27,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 287,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          158292071030128595651957101216531972950852684198143366042889661255631123163785449541184,
+          87875418162965913885312396215012316200441586200725023096551244541821038707257219506688,
+          68104477584023762061248806696188772972873462780416409896091430491703432466282598628368,
+          31879648164502610194779136895015345249059334326258092090647558847439045861118832529824,
+          4641087956925186271589671944613688386325726055801616543524545014434585211520998688961
+        ],
+        "total_absolute_coefficient_bits": 1426,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "2456/135",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 287,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            158292071030128595651957101216531972950852684198143366042889661255631123163785449541184,
+            87875418162965913885312396215012316200441586200725023096551244541821038707257219506688,
+            68104477584023762061248806696188772972873462780416409896091430491703432466282598628368,
+            31879648164502610194779136895015345249059334326258092090647558847439045861118832529824,
+            4641087956925186271589671944613688386325726055801616543524545014434585211520998688961
+          ],
+          "total_absolute_coefficient_bits": 1426
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 99,
+        "pencil_parameter_lambda": "467388632475178219848941268744/51778783128781001836903",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 25
+    },
+    {
+      "direction": "Q9",
+      "known_rank_lower_bound": 27,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 220,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          1268377496980954472782048649248716788032553364447092304211235329444,
+          560184303964840604379581935192895019141875901100473637425953215268,
+          64934654460925852643988274991946966536660822642538061413111259653,
+          -7530822615173751173194234927625947279886099156704243412490497106,
+          207293158673822383455211132692734345967511969349459503511187241
+        ],
+        "total_absolute_coefficient_bits": 1076,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "2456/135",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 220,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            1268377496980954472782048649248716788032553364447092304211235329444,
+            560184303964840604379581935192895019141875901100473637425953215268,
+            64934654460925852643988274991946966536660822642538061413111259653,
+            -7530822615173751173194234927625947279886099156704243412490497106,
+            207293158673822383455211132692734345967511969349459503511187241
+          ],
+          "total_absolute_coefficient_bits": 1076
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 83,
+        "pencil_parameter_lambda": "-9163368437844761979392151/5190243525820217533",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 26
+    },
+    {
+      "direction": "Q10",
+      "known_rank_lower_bound": 27,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 435,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          -19649763679187026167791618369109359294458314171067715412243162647589330074895554159143005128070430893120124926718632035951024510400,
+          -81077989183347740138406375149949643194774696779137009223283329657493017999517184330693230057009066458727003894298315703764267192320,
+          81738224814695672455378127319966110241581742422600474532603792459985607521054483803551011604276862771565155219766294302762749127376,
+          80313809087176178899339271817047235781567413758489206071374723886038763891268072497845468669275142327390406678924657039491226919584,
+          15232296097896975832143507451456899640250750501243240175444942127218779248505358699052087758215946788726792224037990915457577276329
+        ],
+        "total_absolute_coefficient_bits": 2171,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "2456/135",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 435,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            -19649763679187026167791618369109359294458314171067715412243162647589330074895554159143005128070430893120124926718632035951024510400,
+            -81077989183347740138406375149949643194774696779137009223283329657493017999517184330693230057009066458727003894298315703764267192320,
+            81738224814695672455378127319966110241581742422600474532603792459985607521054483803551011604276862771565155219766294302762749127376,
+            80313809087176178899339271817047235781567413758489206071374723886038763891268072497845468669275142327390406678924657039491226919584,
+            15232296097896975832143507451456899640250750501243240175444942127218779248505358699052087758215946788726792224037990915457577276329
+          ],
+          "total_absolute_coefficient_bits": 2171
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 142,
+        "pencil_parameter_lambda": "5284307478039254614488057932096243569234680/124422332252809095750324494055049361",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 27
+    },
+    {
+      "direction": "Q1",
+      "known_rank_lower_bound": 28,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 446,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          150801859357169769012465958221515982455420364378659846582483912491472196169089671429377252794013911085143984247262903705627886826231056,
+          66257076319561849440568304599255825551643712134314761927969267378145951736006286267174513465755149868955798565587800252674965750719080,
+          7607133949459449778595611568837642717917305608928920651328813851994552963403384918909778226415799464715008895142576554595640471574113,
+          -901629921351754966092919059989827264092233564672226664613908414873593845610509890246709469562288038374631207489463918548459045482330,
+          24728852190213053166300716477308341856382142611295380694007912313124557527907221170060773155962868084822272046369500788382630871681
+        ],
+        "total_absolute_coefficient_bits": 2206,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-9529/5471",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 446,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            150801859357169769012465958221515982455420364378659846582483912491472196169089671429377252794013911085143984247262903705627886826231056,
+            66257076319561849440568304599255825551643712134314761927969267378145951736006286267174513465755149868955798565587800252674965750719080,
+            7607133949459449778595611568837642717917305608928920651328813851994552963403384918909778226415799464715008895142576554595640471574113,
+            -901629921351754966092919059989827264092233564672226664613908414873593845610509890246709469562288038374631207489463918548459045482330,
+            24728852190213053166300716477308341856382142611295380694007912313124557527907221170060773155962868084822272046369500788382630871681
+          ],
+          "total_absolute_coefficient_bits": 2206
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 138,
+        "pencil_parameter_lambda": "-320264452394709918473212591937812547598371/180778914572461925869414955068479254",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 1
+    },
+    {
+      "direction": "Q2",
+      "known_rank_lower_bound": 28,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 289,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          531191362727527396420746007831875550400311270947438765126799062863072053849413784164516,
+          185643079329705410678959075590053373861541381729178767350066220848623048134434973682880,
+          251206132050804908373198699842855858065985393917796017831758236561169998493581540044468,
+          150321872478400577532533383979079682614359069099849293880749487924838569507769859294120,
+          23861760698962593890744214189139911486666400051621604344088037815855339760339588825241
+        ],
+        "total_absolute_coefficient_bits": 1435,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-9529/5471",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 289,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            531191362727527396420746007831875550400311270947438765126799062863072053849413784164516,
+            185643079329705410678959075590053373861541381729178767350066220848623048134434973682880,
+            251206132050804908373198699842855858065985393917796017831758236561169998493581540044468,
+            150321872478400577532533383979079682614359069099849293880749487924838569507769859294120,
+            23861760698962593890744214189139911486666400051621604344088037815855339760339588825241
+          ],
+          "total_absolute_coefficient_bits": 1435
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 102,
+        "pencil_parameter_lambda": "3057441376483781033610315165428/299734416386886063157453",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 2
+    },
+    {
+      "direction": "Q3",
+      "known_rank_lower_bound": 28,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 425,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          63098641464613392525472362742701805639895803303419152084336554090217159514541902538012487881359863092317992012556250966868950009,
+          37956814420790577685598141280481497153828658257351818205249792287358136476204005548123709295546562915270927989615981602319815078,
+          6841856308413886414202192903383344063441455573769079995643039784920637222046087027117050958795291993497175037443366885285682353,
+          -78773645422840240624186344233847474602786846795730433117898596502224650958148045990081504376891769600624414926104339713619136,
+          13801785525500798308644666302131327111334254276305916359778959609286377944160100899890273279022698347015675851701925930935296
+        ],
+        "total_absolute_coefficient_bits": 2099,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-9529/5471",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 425,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            63098641464613392525472362742701805639895803303419152084336554090217159514541902538012487881359863092317992012556250966868950009,
+            37956814420790577685598141280481497153828658257351818205249792287358136476204005548123709295546562915270927989615981602319815078,
+            6841856308413886414202192903383344063441455573769079995643039784920637222046087027117050958795291993497175037443366885285682353,
+            -78773645422840240624186344233847474602786846795730433117898596502224650958148045990081504376891769600624414926104339713619136,
+            13801785525500798308644666302131327111334254276305916359778959609286377944160100899890273279022698347015675851701925930935296
+          ],
+          "total_absolute_coefficient_bits": 2099
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 135,
+        "pencil_parameter_lambda": "-33355563800059920611598186272475323925234/26196722144001283945068021531563387",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 3
+    },
+    {
+      "direction": "Q4",
+      "known_rank_lower_bound": 28,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 395,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          79301720022873669466604810709554629338750956634475331011867518803928732816196756668234320867093354175207891084132311961,
+          74552599343183948859540564971828576527627395892759238805001412624953029457023258335510809266749273589912196345765396230,
+          29554980330165873855096621788254841734745294218190419078414277257973580371503917888798561950303732522217711206090374513,
+          5729031860629459039083895701980782350993717262280849376250609623252230502598735699338567445853533440023289495727979520,
+          440001405772602850941809970479842176766968898077719618603109916605682796221212872909431732241139225046408688989618176
+        ],
+        "total_absolute_coefficient_bits": 1964,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-9529/5471",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 395,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            79301720022873669466604810709554629338750956634475331011867518803928732816196756668234320867093354175207891084132311961,
+            74552599343183948859540564971828576527627395892759238805001412624953029457023258335510809266749273589912196345765396230,
+            29554980330165873855096621788254841734745294218190419078414277257973580371503917888798561950303732522217711206090374513,
+            5729031860629459039083895701980782350993717262280849376250609623252230502598735699338567445853533440023289495727979520,
+            440001405772602850941809970479842176766968898077719618603109916605682796221212872909431732241139225046408688989618176
+          ],
+          "total_absolute_coefficient_bits": 1964
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 129,
+        "pencil_parameter_lambda": "580522526095850992539552330134420904786/108818833669597295012642404321381",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 4
+    },
+    {
+      "direction": "Q5",
+      "known_rank_lower_bound": 28,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 397,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          59819553085271314159580738958630488783964599432771017824010400641948203836767982120585391531867175570688791023844213764,
+          187841037580638819759622023252434167502858045155717201293842866528919437020745608708421053202782187959736125204799758228,
+          196269376969951971741591190773863790125563002930546058893672826982194866813746987405030382491191142051458423769851091173,
+          80074792525779178490866028410961274381069582478710438565605891898237432579623175639765729552970847573102320409942233934,
+          11030182885217244676068164213800163155940464591409289827920661375931735337227721339623778093339563395951054514188243001
+        ],
+        "total_absolute_coefficient_bits": 1977,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-9529/5471",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 397,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            59819553085271314159580738958630488783964599432771017824010400641948203836767982120585391531867175570688791023844213764,
+            187841037580638819759622023252434167502858045155717201293842866528919437020745608708421053202782187959736125204799758228,
+            196269376969951971741591190773863790125563002930546058893672826982194866813746987405030382491191142051458423769851091173,
+            80074792525779178490866028410961274381069582478710438565605891898237432579623175639765729552970847573102320409942233934,
+            11030182885217244676068164213800163155940464591409289827920661375931735337227721339623778093339563395951054514188243001
+          ],
+          "total_absolute_coefficient_bits": 1977
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 129,
+        "pencil_parameter_lambda": "-677412654955890248909216028973947836133/49738623769879533734439717152459",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 7
+    },
+    {
+      "direction": "Q6",
+      "known_rank_lower_bound": 28,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 525,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          72504192217212856745320792877246534608876736169694881577352029110409548870512981607167896879040819450967395498330917581415344394645940768077447240252617535504,
+          73447985905300017334197205229809346925487974477485199518808539284721493129835947239922253720476658524499283645817616612101054232562456015589477790461729896408,
+          23833321019536185560336430500931706369952455089189144414466058293073345812464425684318367115105856112069505123489965360430294110331652434243852059805967373153,
+          2646083259044266972905769880130038698431295836868746685960628800454448348428314208786865754893333678886122727208367318407618786105630857042635791575715909574,
+          77036423290354263889130828496220447039775400385201680317335468826966693149066056796889058164017282545235756169633031392857280365898103113415432790551750961
+        ],
+        "total_absolute_coefficient_bits": 2608,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-9529/5471",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 525,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            72504192217212856745320792877246534608876736169694881577352029110409548870512981607167896879040819450967395498330917581415344394645940768077447240252617535504,
+            73447985905300017334197205229809346925487974477485199518808539284721493129835947239922253720476658524499283645817616612101054232562456015589477790461729896408,
+            23833321019536185560336430500931706369952455089189144414466058293073345812464425684318367115105856112069505123489965360430294110331652434243852059805967373153,
+            2646083259044266972905769880130038698431295836868746685960628800454448348428314208786865754893333678886122727208367318407618786105630857042635791575715909574,
+            77036423290354263889130828496220447039775400385201680317335468826966693149066056796889058164017282545235756169633031392857280365898103113415432790551750961
+          ],
+          "total_absolute_coefficient_bits": 2608
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 160,
+        "pencil_parameter_lambda": "808658006593198642437988854185730233580461450979/333721111151718352257961069613825139520558",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 8
+    },
+    {
+      "direction": "Q7",
+      "known_rank_lower_bound": 28,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 343,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          15121894700154052542648911834615016348157609760211432999111184134018461311726890843774256212960026618944,
+          15291861941489019970490108671362087382543556369241118477458231742579870001969679163710204123889145960720,
+          5302934905493811936772958521788203439974363130348947246971359594698672720847587728266858246770272659697,
+          706526659084869035900971223787002359852446000036682981156135412784616277938738707540899256460830286230,
+          28952882935315485538910301604877653707653824226605169512114001210803814051470852839845304783259066809
+        ],
+        "total_absolute_coefficient_bits": 1701,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-9529/5471",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 343,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            15121894700154052542648911834615016348157609760211432999111184134018461311726890843774256212960026618944,
+            15291861941489019970490108671362087382543556369241118477458231742579870001969679163710204123889145960720,
+            5302934905493811936772958521788203439974363130348947246971359594698672720847587728266858246770272659697,
+            706526659084869035900971223787002359852446000036682981156135412784616277938738707540899256460830286230,
+            28952882935315485538910301604877653707653824226605169512114001210803814051470852839845304783259066809
+          ],
+          "total_absolute_coefficient_bits": 1701
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 117,
+        "pencil_parameter_lambda": "85978637433195955435614775516394871/24539315353301744419574628176",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 9
+    },
+    {
+      "direction": "Q8",
+      "known_rank_lower_bound": 28,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 372,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          7957841581793097716943843931407447384171594522874469871504368522127586245375175212797392303530217640340106607689,
+          1287563565355879398029597013262290218164327221059648570957600244929883632381997540168145759986987633330629253698,
+          4131853750442191479852611084384342048426671634960184346165156783530773631545955790039323374356169676626406629401,
+          2893528933687846827280203056071905638196199054074649882666192621944912782539552821847567099586248749857592103392,
+          480659257236644596042616467459299730480405120357650140738360189077299826029738779821467074804012627830397224704
+        ],
+        "total_absolute_coefficient_bits": 1852,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-9529/5471",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 372,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            7957841581793097716943843931407447384171594522874469871504368522127586245375175212797392303530217640340106607689,
+            1287563565355879398029597013262290218164327221059648570957600244929883632381997540168145759986987633330629253698,
+            4131853750442191479852611084384342048426671634960184346165156783530773631545955790039323374356169676626406629401,
+            2893528933687846827280203056071905638196199054074649882666192621944912782539552821847567099586248749857592103392,
+            480659257236644596042616467459299730480405120357650140738360189077299826029738779821467074804012627830397224704
+          ],
+          "total_absolute_coefficient_bits": 1852
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 124,
+        "pencil_parameter_lambda": "19455232139578220354890733028353498286/1758178339753965735995437682533",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 11
+    },
+    {
+      "direction": "Q9",
+      "known_rank_lower_bound": 28,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 385,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          41113685544260968500143602585326129873061812437571707854444315364868857721650115290452272311468541357690409603435536,
+          41785358039700090844792713853526979991334097775882375598188234762523016349816201051412353679219119991187298338742680,
+          14009022246316741600697785789470970240659888430662686366177119676637928828187210317351431423060343361401794567740593,
+          1696284403727705676262096284002537772734499373604329543166071499017708054458733794388768295409403549434076002840870,
+          57294536702227856180811267387474031045530644354945471514770224677531350746824013705633434043323984252552964233921
+        ],
+        "total_absolute_coefficient_bits": 1908,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-9529/5471",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 385,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            41113685544260968500143602585326129873061812437571707854444315364868857721650115290452272311468541357690409603435536,
+            41785358039700090844792713853526979991334097775882375598188234762523016349816201051412353679219119991187298338742680,
+            14009022246316741600697785789470970240659888430662686366177119676637928828187210317351431423060343361401794567740593,
+            1696284403727705676262096284002537772734499373604329543166071499017708054458733794388768295409403549434076002840870,
+            57294536702227856180811267387474031045530644354945471514770224677531350746824013705633434043323984252552964233921
+          ],
+          "total_absolute_coefficient_bits": 1908
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 125,
+        "pencil_parameter_lambda": "26396251662349299898896381499645275321/8941165420513554228117610911226",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 15
+    },
+    {
+      "direction": "Q10",
+      "known_rank_lower_bound": 28,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 375,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          16302453817463218983467023049371377687663913116247629037980089962948977360341157666819892255032090068495991645636,
+          49364942666300103367991356219808371677064125061571975415698005301927536237012956670416828450690090445836245971284,
+          60168100484122469531083493201892455722880104851995864685267790374912396447064974243672149278965337941984642689173,
+          29085968520124411956796982065164348011458374173311377516392489292543198498269038947027058488973971699051936925806,
+          4602208254471143967565329449156273741003719379062393365827999877807923047090488223451783370517754105532490688937
+        ],
+        "total_absolute_coefficient_bits": 1868,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-9529/5471",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 375,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            16302453817463218983467023049371377687663913116247629037980089962948977360341157666819892255032090068495991645636,
+            49364942666300103367991356219808371677064125061571975415698005301927536237012956670416828450690090445836245971284,
+            60168100484122469531083493201892455722880104851995864685267790374912396447064974243672149278965337941984642689173,
+            29085968520124411956796982065164348011458374173311377516392489292543198498269038947027058488973971699051936925806,
+            4602208254471143967565329449156273741003719379062393365827999877807923047090488223451783370517754105532490688937
+          ],
+          "total_absolute_coefficient_bits": 1868
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 124,
+        "pencil_parameter_lambda": "-17186676146310403779873375442692831513/639439648947147438351732575383",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 19
+    },
+    {
+      "direction": "Q11",
+      "known_rank_lower_bound": 28,
+      "minimum_known_branch_equation_cost": {
+        "coefficient_support": 5,
+        "maximum_absolute_coefficient_bits": 352,
+        "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+        "polynomial_degree": 4,
+        "primitive_integer_coefficients_low_to_high": [
+          2791473043148217258182527268012944407873203249118793548061353738128457637559198488356907181202722880145849,
+          8531622109608934131779201200231282377077062294872426078198964765081161018469231176271572865877446260406358,
+          8948755860134856065590765844511384850809268036716001656645599899975574565218550124627536006611140558089633,
+          3793295615648183649858857393149732129827588807470553767352653263752173240310785742616258924457355963825504,
+          546575058521813081400319616096427146801956167720252522051075769343287872303486104516542755744717288192256
+        ],
+        "total_absolute_coefficient_bits": 1754,
+        "witness_class": "post-hoc"
+      },
+      "minimum_known_incidence_codimension": 1,
+      "minimum_known_predeclared_trace_pencil_degree": {
+        "degree": null,
+        "reason": "The available genus-one certificate chooses the pencil member using this already known target. It cannot be promoted retrospectively to a predeclared predictor.",
+        "status": "UNKNOWN_NO_LEAKAGE_FREE_LEDGER"
+      },
+      "minimum_known_rational_curve_degree": {
+        "degree": null,
+        "search_boundary": "The rational degree-two atlas is complete; the degree-three and degree-four equation atlases are incomplete.",
+        "status": "UNKNOWN"
+      },
+      "parameter": "-9529/5471",
+      "post_hoc_visibility": {
+        "branch_equation_cost": {
+          "coefficient_support": 5,
+          "maximum_absolute_coefficient_bits": 352,
+          "metric": "primitive branch polynomial over QQ; tuple ordered as (support, maximum coefficient bits, total coefficient bits)",
+          "polynomial_degree": 4,
+          "primitive_integer_coefficients_low_to_high": [
+            2791473043148217258182527268012944407873203249118793548061353738128457637559198488356907181202722880145849,
+            8531622109608934131779201200231282377077062294872426078198964765081161018469231176271572865877446260406358,
+            8948755860134856065590765844511384850809268036716001656645599899975574565218550124627536006611140558089633,
+            3793295615648183649858857393149732129827588807470553767352653263752173240310785742616258924457355963825504,
+            546575058521813081400319616096427146801956167720252522051075769343287872303486104516542755744717288192256
+          ],
+          "total_absolute_coefficient_bits": 1754
+        },
+        "coefficient_field": {
+          "degree_over_QQ": 1,
+          "field": "QQ"
+        },
+        "common_trace": "-P2-P5",
+        "genus": 1,
+        "incidence_codimension": 1,
+        "linear_system_dimension": 1,
+        "mechanism_class": "post-hoc",
+        "multisection_degree": 2,
+        "pencil_parameter_height_bits": 119,
+        "pencil_parameter_lambda": "-638706993687308259244193603341907142/39267337187199606029163470081",
+        "status": "PROVED_POST_HOC_INCIDENCE"
+      },
+      "predictive_visibility_status": "UNKNOWN",
+      "rigid_visibility": null,
+      "source_public_point_index_one_based": 22
+    }
+  ],
+  "equation_cost_convention": {
+    "minimum_known_cost_rule": "lexicographic in the displayed ordered tuple",
+    "normalization": "Clear rational denominators in the branch polynomial, divide by integer content, and make the leading coefficient positive.",
+    "ordered_tuple": [
+      "coefficient_support",
+      "maximum_absolute_coefficient_bits",
+      "total_absolute_coefficient_bits"
+    ]
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-multisection-visibility-filtration-v1.json": {
+      "sha256": "0a42a59df67ecf7299e2718a67718c46391c5d26ed55e431da4f8c35baf4e2ba"
+    },
+    "artifacts/generated-results/elliptic-curves/elkies_2026_deep_cover_exceptional_quotients_v1.json": {
+      "sha256": "52430d7f15679c6b24727c6363253f1553a7f9c8b0408bffaa929bfca93dfde0"
+    },
+    "artifacts/generated-results/elliptic-curves/elkies_2026_exceptional_specialization_relations_v1.json": {
+      "sha256": "37566ee1c19a6afcd0d4d3f8ec243ba8388136588cc34fdc369c178f90c825b4"
+    }
+  },
+  "schema": "elkies-k3-r17-visibility-complexity-v1",
+  "status": "PASS_EXACT_DERIVED_BASELINE",
+  "summary_by_rank": [
+    {
+      "certified_predeclared_pencil_visible_generator_count": 0,
+      "displayed_generator_count": 8,
+      "individually_rigid_visible_generator_count": 4,
+      "known_rank_lower_bound": 25,
+      "parameter": "-2/377",
+      "post_hoc_genus_one_degree_two_generator_count": 8,
+      "rational_bisection_visible_span_dimension": 5
+    },
+    {
+      "certified_predeclared_pencil_visible_generator_count": 0,
+      "displayed_generator_count": 9,
+      "individually_rigid_visible_generator_count": 0,
+      "known_rank_lower_bound": 26,
+      "parameter": "-308/251",
+      "post_hoc_genus_one_degree_two_generator_count": 9,
+      "rational_bisection_visible_span_dimension": 3
+    },
+    {
+      "certified_predeclared_pencil_visible_generator_count": 0,
+      "displayed_generator_count": 10,
+      "individually_rigid_visible_generator_count": 0,
+      "known_rank_lower_bound": 27,
+      "parameter": "2456/135",
+      "post_hoc_genus_one_degree_two_generator_count": 10,
+      "rational_bisection_visible_span_dimension": 2
+    },
+    {
+      "certified_predeclared_pencil_visible_generator_count": 0,
+      "displayed_generator_count": 11,
+      "individually_rigid_visible_generator_count": 0,
+      "known_rank_lower_bound": 28,
+      "parameter": "-9529/5471",
+      "post_hoc_genus_one_degree_two_generator_count": 11,
+      "rational_bisection_visible_span_dimension": 1
+    }
+  ]
+}

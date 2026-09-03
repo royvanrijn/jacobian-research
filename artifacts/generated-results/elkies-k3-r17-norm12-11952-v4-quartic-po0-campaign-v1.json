@@ -1,0 +1,50 @@
+{
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-cheapest-1024-v1.json": "6d58c129e0309c63e0b8421837192f2b0e18f6ac331b5608d74c1288566be7fa",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-base-rank-screen-v1.json": "ed41526fca5724f529aaf73d3f695fe2a781eaf4ea6b6fb792a2af5676759f69",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json": "4739e0b24b00e276269b228d7c85a01743caa1dcbc62ef58ea59ca3152d116a0",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "elkies-k3/scripts/export_elkies_2026_twist_polynomial_sections_modp.sage": "2d335a2753da487cefb97f7f6684674bc66f5860bb0b381302c41e3a7433b056",
+    "elkies-k3/scripts/run_elkies_2026_twist_polynomial_sections_msolve.py": "246e1d2d5bed438c4028eeeb879f90e5e0da2d0e3824afe93f35ff78659a04c1",
+    "elkies-k3/scripts/run_r17_norm12_11952_v4_quartic_po0_campaign.py": "b985d723fd969bc211288e19a9bbff37b17114355862459ed25084f04feff22f"
+  },
+  "jobs": [
+    {
+      "attempted_distinct_systems": 1,
+      "classification_counts_by_distinct_system": {
+        "timeout": 1
+      },
+      "export": "artifacts/local/elkies-k3/twist-polynomial-sections/direct-product-alternate-orbit-1463f--alternate-orbit-19bad/p131/export.json",
+      "export_command": "/home/royvanrijn/.local/bin/sage -python /home/royvanrijn/src/jacobian-research/elkies-k3/scripts/export_elkies_2026_twist_polynomial_sections_modp.sage --direct-product-key alternate-orbit-1463f:alternate-orbit-19bad --prime 131 --bisections /home/royvanrijn/src/jacobian-research/artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-cheapest-1024-v1.json --model /home/royvanrijn/src/jacobian-research/artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+      "export_sha256": "9209b97a47d7dbcc20ac503384c2d52560a711cbbb4289f2adee814e1e0470fc",
+      "export_status": "PASS_EXACT_MODP_REDUCED_POLYNOMIAL_SECTION_EXPORT",
+      "pair_key": "alternate-orbit-1463f:alternate-orbit-19bad",
+      "polynomial_section_degree_bounds": {
+        "X": 8,
+        "Y": 12
+      },
+      "prime": 131,
+      "shortlist_rank": 2,
+      "solver_command": "/home/royvanrijn/src/jacobian-research/.venv/bin/python /home/royvanrijn/src/jacobian-research/elkies-k3/scripts/run_elkies_2026_twist_polynomial_sections_msolve.py --export /home/royvanrijn/src/jacobian-research/artifacts/local/elkies-k3/twist-polynomial-sections/direct-product-alternate-orbit-1463f--alternate-orbit-19bad/p131/export.json --threads 4 --jobs 1 --timeout 15.0 --summary /home/royvanrijn/src/jacobian-research/artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-po0-direct-product-alternate-orbit-1463f--alternate-orbit-19bad-p131-msolve.json --max-groups 1",
+      "solver_status": "INCOMPLETE_BOUNDED_MSOLVE_RUN",
+      "summary": "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-po0-direct-product-alternate-orbit-1463f--alternate-orbit-19bad-p131-msolve.json",
+      "summary_sha256": "e9bdc799783bd242a7ea3ad6c2e31828b4586c3d249f3551ee8fa64b232f9fa7",
+      "total_blocks": 140
+    }
+  ],
+  "limits": {
+    "all_distinct_system_groups": false,
+    "base_selection": "exact-rank-one",
+    "concurrent_msolve_processes": 1,
+    "export_only": false,
+    "maximum_distinct_system_groups_per_job": 1,
+    "pair_limit": 1,
+    "primes_per_pair": 1,
+    "threads_per_msolve_process": 4,
+    "timeout_seconds_per_distinct_system": 15.0
+  },
+  "proof_boundary": "Each export is the exact chi=4 polynomial P.O=0 system in the displayed finite-field chart. Only jobs marked complete solve every distinct exported system. Timeouts, empty modular systems, and finite-field solutions are not characteristic-zero Mordell--Weil conclusions. A QQ section must be lifted and verified exactly before any rank-20 claim.",
+  "reproducing_command": "elkies-k3/scripts/run_r17_norm12_11952_v4_quartic_po0_campaign.py --timeout 15 --max-groups 1",
+  "schema": "elkies-k3.r17-norm12-11952-v4-quartic-po0-campaign.v1",
+  "status": "INCOMPLETE_BOUNDED_V4_PO0_CAMPAIGN"
+}

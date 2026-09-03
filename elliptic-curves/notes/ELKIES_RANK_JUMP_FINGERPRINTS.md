@@ -14,7 +14,7 @@ L_t / M_t  ->  E_t(Q) / M_t.
 It therefore gives certified lower-bound proxies for the full specialization
 quotient without assuming that the public basis is saturated in `E_t(Q)`.
 
-| `t` | certified rank | `rank(L_t/M_t)` | dimensions mod 2/3/5 | saturation index of `M_t` in its displayed closure | first / last quotient minimum | split bisections | degree-two visible span over `F_2` |
+| `t` | certified rank | `rank(L_t/M_t)` | dimensions mod 2/3/5 | saturation index of `M_t` in its displayed closure | first / last quotient minimum | split bisections | rigid bisection span over `F_2` |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | `3/8` | 21 | 4 | `4/4/4` | 1 | `3.193695 / 5.714837` | 25 | 4 |
 | `-2/377` | 25 | 8 | `8/8/8` | 1 | `8.344908 / 11.219472` | 6 | 5 |
@@ -30,8 +30,8 @@ Three conclusions matter for candidate ranking.
 
 First, the `t=3/8` mechanism control behaves exactly as its construction
 suggests: the seventeen generic directions plus four public directions give a
-primitive free quotient of rank four, all four directions are visible to the
-degree-two atlas, and the quotient minima are substantially shorter than at
+primitive free quotient of rank four, its rigid bisection span has dimension
+four, and the quotient minima are substantially shorter than at
 the rank-25--28 controls. Its 25 split covers occupy seven nonzero binary
 classes and have an exact 283-circuit incidence census. This control was added
 after the four positive-control feature calculations and was not used to
@@ -45,13 +45,16 @@ separate fibres only when a specialization has a prime-primary saturation
 defect or when one measures a mechanism-specific finite image rather than the
 abstract subgroup quotient.
 
-Third, low-degree cover visibility is not a surrogate for quotient rank. As
-the certified quotient rank increases `8,9,10,11`, the dimension seen by the
-complete degree-two bisection atlas decreases `5,3,2,1`. The rank-25 fibre has
-one four-cover binary circuit and four minimum five-cover spanning packets;
-the other three controls have independent visible bisection packets. Cover
-visibility should therefore be retained as a separate mechanism response,
-not folded into the target rank or quotient-rank label.
+Third, raw visibility degree is not a surrogate for quotient rank.  As the
+certified quotient rank increases `8,9,10,11`, the rigid span seen by the
+complete rational-bisection atlas decreases `5,3,2,1`.  A target-fitted
+moving genus-one pencil, however, passes through every displayed generator in
+degree two.  These are different visibility-complexity classes: the former is
+rigid mechanism response, while the latter is post-hoc codimension-one
+incidence.  The rank-25 fibre has one four-cover binary circuit and four
+minimum five-cover spanning packets; the other three controls have independent
+bisection packets.  Visibility complexity should therefore be retained as a
+separate response, not folded into the target rank or quotient-rank label.
 
 ## Quotient height convention
 
@@ -105,16 +108,17 @@ The full quotient `E_t(Q)/M_t` can still contain additional free directions or
 finite saturation not present in `L_t/M_t`. No exact-rank or full-saturation
 claim is made.
 
-## Cover-degree ledger
+## Visibility-complexity ledger
 
-Degree two is complete: all 39,120 equation-level bisection classes were
+The rigid degree-two coordinate is complete: all 39,120 equation-level
+bisection classes were
 evaluated, and every split point was assigned exact coordinates in the
 certified mod-2 quotient. The fingerprint records the entire vector matroid:
 class multiplicities, rank histograms for every subset cardinality, minimal
 circuits, and minimum spanning-packet counts.
 
-Degree three and degree four are deliberately recorded as missing rather than
-zero. The lattice foundry has complete degree-three coset censuses only on a
+Rigid degree three and degree four are deliberately recorded as missing rather
+than zero. The lattice foundry has complete degree-three coset censuses only on a
 selected six-frame sample and sampled degree-four candidates, but it does not
 yet have complete equation-level cover atlases specialized to these four R17
 fibres. Consequently the current practical response vector is
@@ -123,10 +127,15 @@ fibres. Consequently the current practical response vector is
 (free quotient lower bound,
  mod-2/3/5 quotient dimensions,
  quotient successive minima,
- exact degree-two visible span and cover matroid,
- degree-three visibility = missing,
- degree-four visibility = missing).
+ exact rigid-bisection span and cover matroid,
+ rigid degree-three response = missing,
+ rigid degree-four response = missing,
+ predeclared-pencil response = missing).
 ```
+
+The target-fitted genus-one degree-two result is recorded separately as
+post-hoc incidence and is excluded from predictive features.  See
+[`../../elkies-k3/R17_VISIBILITY_COMPLEXITY_2026-09-03.md`](../../elkies-k3/R17_VISIBILITY_COMPLEXITY_2026-09-03.md).
 
 For rank 32, the decisive target remains fifteen **free** directions beyond
 R17. Neither prime-primary torsion nor fifteen finite local signatures can

@@ -153,7 +153,7 @@ Indeed, choose a prime `p` in `(k,k+H(k)]`, then apply the same hypothesis at
 `k+H(k)` to obtain a prime `q` in
 `(k+H(k),k+H(k)+H(k+H(k))]`.  The primes are distinct and (8a) puts both in
 `(k,k+r+1)`.  The two-prime theorem applies.  This transfer theorem can use
-any future uniform prime-gap estimate without changing the algebraic
+any future uniform short-interval prime estimate without changing the algebraic
 argument.
 
 For example, Baker--Harman--Pintz proved that, for all sufficiently large

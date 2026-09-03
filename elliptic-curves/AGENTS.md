@@ -4,11 +4,13 @@ This programme inherits the repository rules. `../MATH_STATUS.json` remains the 
 
 ## Programme state
 
-**PAUSED since 2026-09-03.** Compute is reserved for prime-gap calculations.
+**ACTIVE.** The programme is open for theorem-directed breakthrough work.
 
-Do not launch rank-32 searches, Selmer/descent campaigns, family sweeps, high-height point searches, or K3 specialization scans unless this programme is explicitly resumed. Maintenance, literature work, and small exact regressions are fine.
+Rank-32 searches, Selmer/descent campaigns, family sweeps, high-height point
+searches, and K3 specialization scans must have an explicit mathematical gate,
+declared limits, checkpoints, and a reproducible certificate plan.
 
-## Frozen targets
+## Current targets
 
 - Rank-at-least-31 is certified for ICARM curve 302; no unconditional exact-rank upper bound is known.
 - Rank-at-least-30 is certified for curve 273.
@@ -16,7 +18,7 @@ Do not launch rank-32 searches, Selmer/descent campaigns, family sweeps, high-he
 - The next record target remains rank `>=32` or a stronger unconditional exact-rank/conductor result.
 - A point list is not a rank lower bound until independence is certified. Selmer dimension, analytic estimates, Nagao scores, and bounded-search survival are not rank lower bounds.
 
-## If work resumes
+## Breakthrough workflow
 
 1. start from [`README.md`](README.md), `../MATH_STATUS.json`, and the canonical curve notes;
 2. require a genuine residual descent/Selmer gate before expensive point search;

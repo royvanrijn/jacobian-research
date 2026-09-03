@@ -115,6 +115,7 @@ descent hypotheses.
 | `H-1a` | bounded relative-marking enumeration | `TAILORED_COROLLARY` | `HOP`, `NIKULIN`, and positive-definite shell finiteness | exact box completeness with coercivity warning | alg, cert |
 | `H-1b` | one-edge elliptic incidence distance | `LIKELY_NEW_ALGORITHM` | no explicit optimization antecedent located; compare `HOP` | finite classifier and exact determinant-948 value two | alg, comp |
 | `H-1c` | local bridge mutation, glue-defect support, and 2-primary parity | `TAILORED_COROLLARY` | `NIKULIN` for primitive graph glue; `HOP` for relative `U` geometry | 35/42 forced-maximal support count; saturated odd-prime counterexample; new R17 maximal non-cyclic bridge | comp, cert |
+| `H-1d` | prime-local bridge-mutation normal form | `TAILORED_COROLLARY` | `NIKULIN`, Propositions 1.4.1 and 1.5.1; `HOP` for the relative `U` transport | seven-edge bad-prime graph/ADE census and 32-graph R17 negative control | alg, comp, cert |
 | `H` | common-core graph-glue decomposition | `TAILORED_COROLLARY` | `NIKULIN` | complete 42-edge rank-15/cyclic-rank-2 corpus | comp, cert |
 | `H0` | low-norm coset-theta convolution | `TAILORED_COROLLARY` | `THETA`, `NIKULIN` | inverse zero-support enumerator | alg, cert |
 | `H0b` | discriminant-form reconstruction of the core genus | `TAILORED_COROLLARY` | `NIKULIN`, Propositions 1.4.1 and 1.5.1 | forced-genus search and 84-presentation replay | alg, comp |
@@ -139,13 +140,13 @@ descent hypotheses.
 | `H3` | conditional large-prime one-click existence | `TAILORED_COROLLARY` | `KNEIGH`, Chenevier's equidistribution theorem | rootless target specialization | -- |
 | `H4` | mass-closing neighbour enumeration | `TAILORED_COROLLARY` | `MASS` plus `KNEIGH` | decorated fail-closed completion criterion | cert |
 | `H5` | determinant-78 frame genus is globally rootful | `NEW_COMPUTATION` | `KN`, `NIKULIN`, `MASS` | complete determinant-specific obstruction | math, comp, cert |
-| `H6` | prescribed-root-system mass inversion | `TAILORED_COROLLARY` | `ROOT-MASS`, King Proposition 1 and Siegel representation averages | arbitrary fixed even genus; exact rank-17 first-moment controls | comp, cert |
+| `H6` | ADE mass as asymptotic neighbour distribution | `TAILORED_COROLLARY` | `ROOT-MASS` for inversion; `KNEIGH`, Theorem 5.9 and Remarks 5.10--5.11 for equidistribution | fixed compatible spinor/level stratum; exact rank-17 mass-score calibration | comp, cert |
 | `I` | involution eigensublattices joined by 2-primary graph glue | `ESTABLISHED` | `NIKULIN` plus rational idempotents | character-saturation bookkeeping | cert |
 | `I1` | one character-glue type on eleven rank-28 lifts | `NEW_COMPUTATION` | `NIKULIN` and the eigenspace argument in `I` | exact repeated pattern on distinct covers | comp |
 | `I2` | exact visible glue on cover `0x103b2` | `NEW_COMPUTATION` | `NIKULIN` and the eigenspace argument in `I` | exact rank-18 visible lattice and specialization | comp, cert |
 | `G` | completeness in a declared lattice box | `TAILORED_COROLLARY` | no explicit antecedent needed beyond positive-definite shell finiteness | explicit bounded-search proof boundary | cert |
 
-<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS 2f5b874c0c22133b -->
+<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS e7589727ca8f7e50 -->
 
 ## What is new, and what is not
 
@@ -166,11 +167,18 @@ maximal non-cyclic `ZZ/4+ZZ/8` bridge glue and its exact non-isometry to both
 stored H3 `4A1` frames.  These remain genuine results even though their
 infrastructure is classical.
 
-The new computation attached to `H6` is narrower: exact local first-root
-moments for determinants 78, 948, and 950, with the determinant-78 value
-independently recovered from all 1,549 classes.  The `<2` gate is
-inconclusive in all three cases; no higher ADE inversion for 948 or 950 is
-claimed.
+The mass-to-neighbour part of `H6` is not claimed as new foundational
+mathematics: it is Chenevier's classwise equidistribution theorem summed over
+the finite root-system stratum, with the marked-spinor normalization kept
+explicit.  The new computation is narrower.  It gives exact local first-root
+moments for determinants 78, 948, and 950; aggregates 621 census-realized
+determinant-78 ADE strata; and proves by exact primal/dual LP certificates
+that all rank-at-most-four ADE rows still permit a `0.00275682...` rootless
+fraction although the complete 1,549-class census has `mu_0=0`.  It also
+converts the exact determinant-948 rootless mass `3/4` and the determinant-950
+lower bound `7/4` into asymptotic line-hit scores.  No complete local-
+admissibility filter, higher local ADE inversion, determinant-950 exact
+rootless mass, or determinant-948/950 finite-prime frequency is claimed.
 
 Likely-new algorithmic contributions, stated conservatively, are reverse
 low-norm theta masks and their antichain/lazy-CVP use, mask-aware forced-genus

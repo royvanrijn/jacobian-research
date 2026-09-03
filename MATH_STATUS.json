@@ -10237,7 +10237,7 @@
       "scope": "The cancellation parameter polynomial is irreducible for every r>=1 in the 1000 columns 1<=m<=1000, in the exact effective Dusart region mr>=89693 and m*Delta(mr)<=1, and above an absolute threshold whenever r>=5(mr)^(21/40).",
       "canonical_source": "cancellation/DIAGONAL_TWO_PRIME_IRREDUCIBILITY.md",
       "dependencies": [
-        "external: prime number theorem, Dusart's explicit prime-interval theorem, and the Baker--Harman--Pintz prime-gap theorem"
+        "external: prime number theorem, Dusart's explicit prime-interval theorem, and the Baker--Harman--Pintz short-interval prime theorem"
       ],
       "checker": "scripts/verify_parameter_irreducibility_adaptive_dusart_frontier.py",
       "proof_type": "unclassified",
@@ -34932,7 +34932,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:811c2b3966db3d8f41185b864dc5f99a9ab6f412b91df90c31bec046345e6209",
+      "artifact_hash": "sha256:c6861cc2623a9bae62b8839eb6fad6f2829c05438255e8ee4cfe7483b31423be",
       "software_lock": [
         "elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage"
       ],
@@ -34991,7 +34991,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:811c2b3966db3d8f41185b864dc5f99a9ab6f412b91df90c31bec046345e6209",
+      "artifact_hash": "sha256:c6861cc2623a9bae62b8839eb6fad6f2829c05438255e8ee4cfe7483b31423be",
       "software_lock": [
         "elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage",
         "elkies-k3/scripts/verify_q80_alternate_fifth_q6_rootless.sage"
@@ -36678,23 +36678,25 @@
       "id": "EC-K3-R17-MULTISECTION-VISIBILITY-FILTRATION",
       "kind": "example",
       "state": "proved",
-      "title": "All-genus multisection visibility is full in degree two on the four R17 controls",
-      "scope": "For a declared atlas A of geometrically integral multisections, define the displayed visibility space V^A_{<=d}(t;L_t) inside (L_t/M_t) tensor Q as the span of rational branch points at t on curves of degree at most d. The genus qualifier is essential. Using the common norm-eight trace tau=-P2-P5, exact line incidence fits one rational genus-one bisection pencil member through each of the 38 ordered exceptional generators at t=-2/377,-308/251,2456/135,-9529/5471. All 38 branch polynomials are irreducible squarefree quartics coprime to the R17 discriminant and trace denominator; exact cover witnesses, residual equations, target coordinates, and lift degree bounds replay. Hence the literal all-genus displayed filtration is already full in degree two, with dimensions 8,9,10,11. By contrast, the finite irreducible-rational-curve filtration has complete degree-two dimensions 5,3,2,1, while the tested degree-three/four subatlases add nothing. Those higher layers are not complete: there are 18,024,296 norm-20 rational-trisection cosets, of which only 138 sampled cosets have equations, and degree four samples only 1,025 of 4^17 ambient translation cosets. Thus the unqualified degree-at-most-four conjecture holds trivially at degree two on the displayed quotients, whereas the rational-multisection version remains open. This proves no equality L_t=E_t(Q), no saturation or full-rank upper bound, and no degree-three/four rational-curve non-existence statement.",
-      "canonical_source": "elkies-k3/R17_DEEP_COVER_EXCEPTIONAL_QUOTIENTS_2026-09-02.md",
+      "title": "R17 visibility-complexity baseline separates rigid and post-hoc mechanisms",
+      "scope": "For an atlas and cost order frozen before the target point Q and fibre t, visibility complexity is the Pareto frontier of the mechanism class, genus, multisection degree, linear-system dimension, incidence codimension, normalized branch-equation cost, and coefficient-field complexity; only rigid and genuinely predeclared-pencil witnesses are predictive. Exact certificate joins at the four published rank-25--28 R17 controls show that four of the 38 ordered displayed generators have minimum rational-curve degree two: Q1,Q3,Q5,Q6 at rank 25. The remaining 34 rational-curve degrees are UNKNOWN because only degree two is complete and the degree-three/four equation subatlases are incomplete. The familiar 5,3,2,1 values are span dimensions of split rational bisections, not counts of individually exposed named generators; those counts are 4,0,0,0. Using the common trace tau=-P2-P5, exact target-fitted line incidence gives every one of the 38 generators a genus-one degree-two witness with linear-system dimension and incidence codimension both one. These are post-hoc incidence witnesses: no leakage-free predeclaration ledger accompanies them, so predeclared trace-pencilled degree remains UNKNOWN for all 38. Primitive branch-polynomial support and coefficient-bit costs, rational pencil-parameter heights, and the earlier construction-cost tuples are recorded direction by direction. No norm-20 rational-trisection or M/4M quadrisection enumeration is performed. This proves no equality L_t=E_t(Q), no saturation or rank upper bound, no rational-curve non-existence in degrees at least three, and no monotonic visibility-complexity theorem; increasing rigid visibility complexity is a conjecture.",
+      "canonical_source": "elkies-k3/R17_VISIBILITY_COMPLEXITY_2026-09-03.md",
       "dependencies": [
         "EC-K3-ELKIES-2026-R17",
         "EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES",
         "EC-K3-ELKIES-2026-LOW-GENUS-COVER-QUOTIENTS",
         "EC-K3-R17-RANK28-GENUS1-BISECTION-PILOT"
       ],
-      "checker": "elkies-k3/scripts/certify_r17_multisection_visibility_filtration.sage",
+      "checker": "elkies-k3/scripts/derive_r17_visibility_complexity.py",
       "proof_type": "exact_symbolic",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:210c1a57c63c23738e1c0d132a65369c7541f9dd428ec7e1539b21d4a7634033",
+      "artifact_hash": "sha256:da149e2043eb7afd3f87177a970beeccc71ceda5b03cf93d658462feb13098df",
       "software_lock": [
+        "elkies-k3/scripts/derive_r17_visibility_complexity.py",
         "elkies-k3/scripts/certify_r17_multisection_visibility_filtration.sage",
+        "artifacts/generated-results/elkies-k3-r17-visibility-complexity-v1.json",
         "artifacts/generated-results/elkies-k3-r17-multisection-visibility-filtration-v1.json",
         "artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json",
         "artifacts/generated-results/elliptic-curves/elkies_2026_exceptional_specialization_relations_v1.json",
@@ -37501,28 +37503,34 @@
       "id": "EC-K3-ROOTLESS-GENUS-MASS",
       "kind": "theorem",
       "state": "proved",
-      "title": "Rootless genus mass from local ADE representation averages",
-      "scope": "For any positive even genus G, let mu_0 be the reciprocal-automorphism mass of its rootless classes and let a_1 be the q coefficient of its mass-normalized weighted genus theta series in the convention Q(x)=x^2/2. Since every rootful lattice has at least two signed roots, mu_0/mass(G)>=1-a_1/2, so a_1<2 is a sufficient local-density certificate for m(G)=0. More generally, stratify the genus by its full ADE root lattice R_j, let mu_j be each stratum mass, and let A_i be the weighted representation total of R_i. Then A_i=sum_j r(R_j,R_i)mu_j; the representation matrix is triangular with diagonal |O(R_i)|, and Siegel representation averages compute A_i from local densities. Thus mu_0, and hence whether m(G)=0, is determined by a finite local ADE mass inversion. An exact rank-17 checker computes first-root moments 2913380886349/59299224796, 7957563723128755857618/562456712956783562285, and 4967763637986279936/352882035745379473 for determinants 78, 948, and 950. All exceed two, so the cheap gate is inconclusive on all three controls. For determinant 78 the local value exactly equals the independent weighted sum over the complete 1549-class rootful census. No higher-degree ADE average, exact rootless mass for determinant 948 or 950, generic composite-determinant class enumerator, equation, or J1 classification is supplied.",
+      "title": "Local ADE masses as asymptotic Kneser-neighbour root-system frequencies",
+      "scope": "For any positive even genus G, reciprocal-automorphism root-stratum masses mu_R are determined by the triangular system A_i=sum_R r(R,R_i)mu_R, whose representation totals A_i are Siegel local-density products; in particular mu_0 decides rootless existence and mu_0/mass(G)>=1-a_1/2. For a compact-open marked level K, source x, target spinor genus tau=a*s(x), and good primes with delta_p=a, summing Chenevier's classwise theorem gives N_(p,R)(x)/c_V(p)=mu_R(tau)/(m_K/|S(K)|)+O(p^(-1/2)), improved to O(p^(-1)) above dimension four. Thus for an unmarked one-spinor-genus rank-17 genus the asymptotic root-system frequency is mu_R(G)/mass(G), making mass(G)/mu_R(G) an unguided compatible-line construction score. A fixed compatible prime progression and marked stratum mass are essential when level spinor genera split. The exact calibration emits all 3768 abstract ADE types of rank at most 17 and the 621 types realized by the complete determinant-78 census. Exact primal/dual rational LPs show that every ADE representation row through rank four still allows rootless fraction 11817053639/4286486820968, so it does not force the true census value mu_0=0. All three controls have one proper spinor genus. Determinant 948 has exact rootless mass 3/4 and asymptotic fraction 694167953788108800/77731517730627488307787; four distinct determinant-950 classes give only mu_0>=7/4 and fraction at least 1554936216485363712/152400929187535759901875. No complete integral local-admissibility filter, higher local ADE inversion, exact determinant-950 rootless mass, determinant-948/950 finite-prime frequency, generic composite-determinant class enumerator, equation, or J1 classification is supplied.",
       "canonical_source": "elkies-k3/ROOTLESS_GENUS_THEORY_2026-09-03.md",
       "dependencies": [
         "EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL",
+        "EC-K3-H3-ROOTLESS-J2-COMPLETE",
         "EC-K3-H3-ROOTLESS-J2-MINIMAL-ACCESSIBILITY",
         "EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER",
-        "external: King, A mass formula for unimodular lattices with no roots, Proposition 1"
+        "external: King, A mass formula for unimodular lattices with no roots, Proposition 1",
+        "external: Chenevier, Statistics for Kneser p-neighbors, Theorem 5.9 and Remarks 5.10--5.11"
       ],
-      "checker": "elkies-k3/scripts/certify_rootless_genus_first_moment.sage",
+      "checker": "elkies-k3/scripts/certify_ade_neighbor_mass_score.sage",
       "proof_type": "hybrid",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:d468c4abfb443228c7f378e4755010f6df0ec86710dc365e61c33b9838abd621",
+      "artifact_hash": "sha256:70935b2731c6f792f877bacd5d54ef06e4992b01eaaf87e81dc069ec0a2f401c",
       "software_lock": [
+        "elkies-k3/scripts/certify_ade_neighbor_mass_score.sage",
+        "artifacts/generated-results/elkies-k3-ade-neighbor-mass-score-v1.json",
         "elkies-k3/scripts/certify_rootless_genus_first_moment.sage",
         "artifacts/generated-results/elkies-k3-rootless-genus-first-moment-v1.json",
         "elkies-k3/data/lattice/e6_rank4_det78_frame.txt",
         "elkies-k3/data/lattice/rank17_gram.txt",
         "artifacts/generated-results/elkies-k3-ns0024-new-rootless-source-route-v1.json",
-        "artifacts/generated-results/elkies-k3-e6-rank4-det78-niemeier-frames-v1.json"
+        "artifacts/generated-results/elkies-k3-e6-rank4-det78-niemeier-frames-v1.json",
+        "artifacts/generated-results/elkies-k3-rootless-j2-niemeier-first.json",
+        "artifacts/generated-results/elkies-k3-lattice-foundry-v1.json"
       ],
       "supersedes_notes": [],
       "supersedes": [],
@@ -38437,7 +38445,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Local bridge mutation, glue-defect support, and R17 non-cyclic degree-two control",
-      "scope": "For two primitive rank-four-position U embeddings in one Neron--Severi lattice, the relative cross matrix gives raw bridge Grams A^t J A-J and A J A^t-J. Saturating U_0+U_1 splits off either U and proves equal two-sided saturation index, isomorphic saturated bridge discriminant forms, and common determinant c. If K has determinant k and the two graph-glue orders are h_i, then |det NS|=kc/h_i^2, h_0=h_1=h, and c/h divides gcd(c,|det NS|); hence bridge-glue defect is supported only at ambient discriminant primes. Modulo two, each raw Gram has off-diagonal det(A)-1: even det(A) kills the 2-primary bridge discriminant, whereas odd det(A) with odd saturation index forces two 2-primary generators. Full cyclicity still requires the odd-primary Smith condition; the saturated degree-two matrix [[2,3],[6,8]] gives Z/3+Z/21. In the 42-edge corpus, coprimality forces 35 maximal glues and seven shared-prime cases remain computational. On the published R17 surface, v=b_1 and w=b_7-b_12 yield a primitive maximal Z/4+Z/8 bridge and a nef degree-two 4A1/MW13 fibration with physical zero, primitive root span, and trivial torsion. Its 1301 norm-four pairs distinguish it from the historical and physical-q8 H3 4A1 frames, which have 1263 and 1337, so it is not a shortcut between stored route nodes. No Weierstrass equation, J1 classification, or Galois behavior is claimed.",
+      "scope": "For two primitive rank-four-position U embeddings in one Neron--Severi lattice, the relative cross matrix gives raw bridge Grams A^t J A-J and A J A^t-J. Saturating U_0+U_1 splits off either U and proves equal two-sided saturation index, isomorphic saturated bridge discriminant forms, and common determinant c. If K has determinant k and the two graph-glue orders are h_i, then |det NS|=kc/h_i^2, h_0=h_1=h, and c/h divides gcd(c,|det NS|); hence bridge-glue defect is supported only at ambient discriminant primes. Modulo two, each raw Gram has off-diagonal det(A)-1: even det(A) kills the 2-primary bridge discriminant, whereas odd det(A) with odd saturation index forces two 2-primary generators. Full cyclicity still requires the odd-primary Smith condition; the saturated degree-two matrix [[2,3],[6,8]] gives Z/3+Z/21. In the 42-edge corpus, coprimality forces 35 maximal glues and isolates seven shared-prime cases for the separate prime-local classification. On the published R17 surface, v=b_1 and w=b_7-b_12 yield a primitive maximal Z/4+Z/8 bridge and a nef degree-two 4A1/MW13 fibration with physical zero, primitive root span, and trivial torsion. Its 1301 norm-four pairs distinguish it from the historical and physical-q8 H3 4A1 frames, which have 1263 and 1337, so it is not a shortcut between stored route nodes. No Weierstrass equation, J1 classification, or Galois behavior is claimed.",
       "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
       "dependencies": [
         "EC-K3-RELATIVE-U-BRIDGE-LIFTING",
@@ -38466,6 +38474,52 @@
         "low degree plus cyclic ambient discriminant forces cyclic bridge discriminant",
         "even relative-U determinant alone forces full bridge cyclicity",
         "the new R17 4A1 frame is the historical H3 4A1 stage"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-PRIME-LOCAL-BRIDGE-MUTATION-H1D",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Prime-local bridge-mutation normal form and complete shared-prime census",
+      "scope": "For a rank-four relative position of primitive U embeddings, the two raw bridge Grams are G_0=A^t J A-J and G_1=A J A^t-J. At each prime l, order-l^v_l(m) isotropic subgroups of the raw discriminant forms classify the possible saturated bridges; the two sides are coupled by the discriminant isometry induced by saturation(U_0+U_1). For fixed K,C and q_NS,l, the local graph glues are precisely the isotropic subgroups H_l of A_K,l+A_C,l with injective projections and H_l^perp/H_l isomorphic to -q_NS,l, and 2v_l(|H_l|)=v_l(det K)+v_l(det C)-v_l(|det NS|). Primary decomposition gives the exact finite product normal form, safely supported on l dividing 2|det NS|det(G_0); after C is fixed, graph-glue defect is supported on l dividing gcd(det C,|det NS|). At primes outside det NS the full anti-isometry graph is one unmarked local orbit, while marked metric refinements can remain. All seven historical shared-prime edges have saturated cyclic local bridges and forced maximal local order. They admit respectively 10,18,18,6,4,6,4 marked bad-prime graphs with the stored good-prime glue fixed; q_NS,l rejects none, but exact theta/coset root classification makes the historical transported ADE pair unique on every edge. The R17 Z/4+Z/8 control has 32 marked graphs, eight ADE-pair types, and multiplicity four for the actual rootless-to-4A1 transition. The proposed support l|2Ddet(A) is invalid literally because all seven cross matrices have det(A)=0; det(G_0) is the required nonzero replacement. The census does not vary K, good-prime graph decorations, equations, or Galois markings, and it does not assert lifting of every discriminant automorphism to the integral metric blocks.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-RELATIVE-U-BRIDGE-LIFTING",
+        "EC-K3-LOCAL-BRIDGE-MUTATION-H1C",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-THETA-CONVOLUTION"
+      ],
+      "checker": "elkies-k3/scripts/certify_prime_local_bridge_mutation.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b7fc1ce99ff39aa9161fcbd9b1e10f7579ca8b22558ec47e73b92188e529604c",
+      "software_lock": [
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/certify_prime_local_bridge_mutation.sage",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json",
+        "artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-local-bridge-mutation-v1.json",
+        "artifacts/generated-results/elkies-k3-prime-local-bridge-mutation-v1.json"
+      ],
+      "supersedes_notes": [
+        "the seven shared-prime historical bridge glues are unresolved",
+        "q_NS at a bad prime determines the marked graph label",
+        "the global finite support can be written literally as l dividing 2Ddet(A) when det(A)=0",
+        "the R17 rootless-to-4A1 ADE pair uniquely determines its non-cyclic marked graph"
       ],
       "supersedes": [],
       "closes_problems": [],
@@ -38551,6 +38605,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
+        "REPRODUCE.md",
         "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "elkies-k3/README.md",
         "elkies-k3/LITERATURE_AND_NOVELTY_MAP_2026-09-03.md",
@@ -38578,7 +38633,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:dfa337755e8d3b9a53abafae80e4b37e3cc44a9515a9d71ff2c0a4e708d73df4",
+      "artifact_hash": "sha256:0c69f87a5b3b5b3d4effbd7362d4bb8f6e2bece2a825e2714a3f216843ee8693",
       "software_lock": [
         "elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage",
         "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
@@ -38644,6 +38699,290 @@
         "REPRODUCE.md",
         "elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md",
         "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-11952-INHERITED-COVERS",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact 121 inherited quadratic covers on alternate Q80",
+      "scope": "For the direct norm12-orbit-11952 alternate-Q80 fibration D=(3,2,w), complete enumeration of the 2,622 oriented published-R17 height-four sections finds exactly 121 with D.S_v=5-<w,v>=2. Restricting the exact compiled coordinate u=L1/L0 to every such rational curve gives a genuine quadratic relation. Exact discriminant normalization retains the rational constant squareclass; all 121 canonical q(u) are squarefree quadratics coprime to the alternate 24I1 discriminant and occupy distinct norm-ten alternate translation classes. For every cover s^2=q(u), the transported section is constructed explicitly over QQ(u,s) and satisfies the alternate Weierstrass equation coefficientwise; its anti-invariant height is 12. This certifies 121 rational genus-zero base changes of generic rank at least 18. Collision, product-character, and native-prefix conclusions are separate results.",
+      "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_LABORATORY_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-BISECT-MULTIQUADRATIC-CHARACTERS"
+      ],
+      "checker": "elkies-k3/scripts/construct_r17_norm12_11952_inherited_bisections.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:2d9255550fe4a8064c9935488e04f26ec9b3b0b7365ca932d886023c97c5740b",
+      "software_lock": [
+        "elkies-k3/scripts/construct_r17_norm12_11952_inherited_bisections.sage",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-inherited-bisection-covers-v1.json"
+      ],
+      "supersedes_notes": [
+        "the 121 transported degree-two curves are only prepared experiments without an exact promoted cover certificate"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_LABORATORY_2026-09-03.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-11952-INHERITED-PRODUCTS",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact 7,260 inherited alternate-Q80 pair-product comparison",
+      "scope": "For the 121 exact inherited alternate-Q80 characters from EC-K3-R17-NORM12-11952-INHERITED-COVERS, all binomial(121,2)=7,260 products are compared in QQ(u)^*/QQ(u)^{*2}, including their rational constant squareclasses. The 121 individual characters are distinct, all 7,260 products are distinct, no product equals a third inherited character, and no formal product matches the twelve older published-base comparison characters. The last comparison is deliberately nonconstructive across bases: exact Neron--Severi intersections show the rank-28 and q_103b2 source curves have degrees 8 and 9 over the alternate u-line, not degree two, so a formal variable rename cannot supply the third V4 character. This excludes inherited-catalogue closure only; sections on uncatalogued quartic product twists remain UNKNOWN.",
+      "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_LABORATORY_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-INHERITED-COVERS",
+        "EC-K3-BISECT-EXTENSION-PROTOCOL"
+      ],
+      "checker": "elkies-k3/scripts/analyze_r17_norm12_11952_inherited_products.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:7cf4395291efd24efd4c16cdcc30f15f08a02d0bd5841ec40a30b18955b8daa0",
+      "software_lock": [
+        "elkies-k3/scripts/analyze_r17_norm12_11952_inherited_products.py",
+        "elkies-k3/scripts/hash_bisection_extensions.py",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-inherited-bisection-covers-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-inherited-product-characters-v1.json"
+      ],
+      "supersedes_notes": [
+        "the inherited 7,260 pair products have not yet been compared with rational constant squareclasses retained"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_LABORATORY_2026-09-03.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-11952-ALTERNATE-LAB-1024",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact cheapest-1,024 alternate-Q80 branch-incidence laboratory",
+      "scope": "The complete 39,147-class alternate-Q80 equation-cost ordering is replayed exactly, but equation compilation is bounded to native priority ranks 1 through 1,024. Every native record has a squarefree quadratic branch divisor away from the 24 singular fibres and a coefficientwise verified height-12 anti-invariant section. Combining these 1,024 records with the 121 inherited covers gives 1,145 raw records. Direct-frame parity transport finds exactly two inherited/native overlaps; in both, the branch divisors agree, their squareclass ratio is 1/4, and their rank-17 vectors differ by 2M, so they are duplicate translation classes rather than section collisions. The remaining 1,143 classes have irreducible pairwise-disjoint branch quadratics, distinct squareclasses, and exact QQ-points on all 1,143 conics. All 652,653 distinct pairs are connected genus-one V4 bases with new height matrix diag(24,24) and generic rank at least 19. Their pair-product squareclasses are all distinct and none matches a catalogued degree-two section character; hence there is no three-nontrivial-character V4 closure in this prefix. Every one of the 248,225,691 triples is instead F2-independent, giving a genus-five (Z/2)^3 cover with new height matrix diag(48,48,48) and generic rank at least 20. No rational point or Mordell--Weil rank is proved for every genus-one pair base, no section search is performed on uncatalogued quartic product twists, and the remaining 38,123 native classes are outside the certificate.",
+      "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_LABORATORY_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-INHERITED-COVERS",
+        "EC-K3-R17-NORM12-11952-INHERITED-PRODUCTS",
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-ALT-BISECT-ORBIT",
+        "EC-K3-BISECT-EXTENSION-PROTOCOL",
+        "EC-K3-BISECT-BIQUADRATIC-R19",
+        "EC-K3-BISECT-MULTIQUADRATIC-CHARACTERS"
+      ],
+      "checker": "elkies-k3/scripts/analyze_r17_norm12_11952_alternate_laboratory.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ee322ec5fedadd526fa84c0e0144b8466c43cf35808a6e01b922db81490ab10c",
+      "software_lock": [
+        "elkies-k3/scripts/rank_r17_norm12_11952_alternate_bisection_orbits.sage",
+        "elkies-k3/scripts/construct_r17_norm12_11952_alternate_bisections.sage",
+        "elkies-k3/scripts/hash_bisection_extensions.py",
+        "elkies-k3/scripts/analyze_r17_norm12_11952_alternate_laboratory.sage",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-priority-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-priority-v1.tsv",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-cheapest-1024-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-collisions-cheapest-1024-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-arithmetic-laboratory-cheapest-1024-v1.json"
+      ],
+      "supersedes_notes": [
+        "the alternate-Q80 norm-ten bisection atlas has no characteristic-zero equation-level arithmetic laboratory"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_LABORATORY_2026-09-03.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact 64-base rational V4 shortlist on alternate Q80",
+      "scope": "Within native alternate-Q80 priority ranks 1 through 1,024, exact direct-frame intersections classify all 523,776 unordered rational-bisection pairs and find 10,362 with intersection number one. For norm-ten bisections C_i=(2,2,w_i), the formula C_i.C_j=8-<w_i,w_j> applies. An intersection-one pair has a unique geometric intersection point; because both curves are defined over QQ, that point is QQ-rational. Exact elimination from the two compiled linear-in-radical section formulas independently recovers and verifies the rational V4 point for each of the selected first 64 pairs. Their branch quadratics remain disjoint, so these are connected genus-one V4 bases, not shared-branch rational bases. Each carries the two certified nontrivial character sections and hence generic rank at least 19. This certificate does not determine base-Jacobian ranks or sections on the quartic product twists and does not prove generic rank at least 20.",
+      "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-ALTERNATE-LAB-1024",
+        "EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION",
+        "EC-K3-BISECT-BIQUADRATIC-R19"
+      ],
+      "checker": "elkies-k3/scripts/select_r17_norm12_11952_v4_pair_shortlist.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:92378e4b3eebf59460dbd2c34660b547fa819eda03cb6d0a0a6c253eb4afec25",
+      "software_lock": [
+        "elkies-k3/scripts/select_r17_norm12_11952_v4_pair_shortlist.sage",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-cheapest-1024-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json"
+      ],
+      "supersedes_notes": [
+        "no rational points have been certified on a selected alternate-Q80 V4 pair-base shortlist"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Seventeen certified rank-one bases in the alternate-Q80 V4 shortlist",
+      "scope": "For the exact 64-base rational alternate-Q80 V4 shortlist, isolated PARI ellrank calls with effort zero and a hard ten-second limit complete on 62 base Jacobians. Seventeen completed intervals are exactly [1,1], proving those seventeen base Jacobians have Mordell--Weil rank one. The other completed intervals are 27 copies of [0,2], eight of [0,4], and ten of [1,3]; two calls time out and retain rank UNKNOWN. No incomplete interval is collapsed to a rank, and the screen proves nothing about sections on the quartic product twists. The first quartic-section campaign target is consequently selected from the certified rank-one bases.",
+      "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64"
+      ],
+      "checker": "elkies-k3/scripts/screen_r17_norm12_11952_v4_base_jacobian_ranks.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d139fd59dbf66745d90896d3fab7a3fcd71c82467dd4e09e80b6a04b14186e20",
+      "software_lock": [
+        "elkies-k3/scripts/screen_r17_norm12_11952_v4_base_jacobian_ranks.py",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-base-rank-screen-v1.json"
+      ],
+      "supersedes_notes": [
+        "all 64 shortlisted alternate-Q80 V4 base-Jacobian ranks are unresolved"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete alternate-Q80 rational-bisection injectivity and character nonclosure",
+      "scope": "For the exact norm12-orbit-11952 alternate-Q80 24I1 equation with saturated rank-17 Mordell--Weil basis, every one of the 39,147 section-nonnegative smooth rational (-2)-bisection translation classes is constructed by an exact chord equation and gives a coefficientwise verified lifted section of anti-invariant height 12. Complete orbit-mask and frame-vector attachment proves equation coverage. Canonicalization in QQ(u)^*/QQ(u)^{*2}, including the rational constant squareclass, gives 39,147 distinct quadratic extensions and no collision, so this complete frame supplies no two-dimensional anti-invariant space on one quadratic cover. Every branch polynomial is an irreducible quadratic and its finite polynomial atom is unique; hence the product of two frame characters cannot equal a third, and exact comparison gives no formal match to the eleven rank-28 quartics or q_103b2. The old rank-28 and q_103b2 source curves have degrees 8 and 9 over the alternate base and therefore are not alternate quadratic-character curves. Consequently this frame and catalogue produce neither the requested rank-at-least-19 rational quadratic base change nor the rank-at-least-20 V4 base; the result does not exclude higher-genus or singular degree-two curves or uncatalogued twist characters.",
+      "canonical_source": "elkies-k3/R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-R17-NORM12-11952-INHERITED-COVERS",
+        "EC-K3-R17-NORM12-11952-INHERITED-PRODUCTS",
+        "EC-K3-ALT-BISECT-ORBIT",
+        "EC-K3-BISECT-EXTENSION-PROTOCOL"
+      ],
+      "checker": "elkies-k3/scripts/analyze_r17_norm12_complete_character_closure.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:04b6b2883307794d5c39f5a6323febe5800aec98362b3e4b21dc5f1bfcc92ef7",
+      "software_lock": [
+        "elkies-k3/scripts/rank_r17_norm12_11952_alternate_bisection_orbits.sage",
+        "elkies-k3/scripts/construct_r17_norm12_11952_alternate_bisections.sage",
+        "elkies-k3/scripts/merge_r17_norm12_11952_alternate_bisection_chunks.py",
+        "elkies-k3/scripts/hash_bisection_extensions.py",
+        "elkies-k3/scripts/analyze_r17_norm12_complete_character_closure.py",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-priority-v1.tsv",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-full-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-collisions-full-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-complete-character-closure-v1.json"
+      ],
+      "supersedes_notes": [
+        "an equal quadratic cover or a three-character closure may remain among the 39,147 alternate-Q80 smooth rational-bisection classes"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-103B2-DIRECT-BISECTION-CHARACTER-EXHAUSTION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Explicit hidden 0x103b2 fibration and complete rational-bisection character exhaustion",
+      "scope": "For the hidden norm12-orbit-103b2 divisor on the published R17 K3, the exact degree-two-neighbor compiler constructs a polynomial 24I1 Jacobian and seventeen rational sections forming a saturated determinant-948 published-R17 frame. The inherited height-four cheap set consists of exactly 82 bisections and includes P4 and P4-P3; their exact covers and lifts give 82 distinct squareclasses. Complete equation construction covers all 39,120 smooth rational (-2)-bisection translation classes in the hidden frame. Canonicalization including rational constants gives 39,120 distinct quadratic extensions and no collision. Every branch is an irreducible quadratic with a unique finite polynomial atom, so no product of two complete-frame characters equals a third. No formal match occurs against the twelve committed old-base characters; moreover the rank-28 and q_103b2 source curves have degrees 12 and 0 over this hidden base and are not quadratic hidden-base character curves. Thus the prescribed fallback supplies neither the requested common-cover anti-invariant rank two nor a three-character V4 closure. Higher-genus or singular degree-two curves and uncatalogued twist characters remain outside the certificate.",
+      "canonical_source": "elkies-k3/R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-R17",
+        "EC-K3-R17-NORM12-103B2-ISOTROPIC-FRAME",
+        "EC-K3-BISECT-EXTENSION-PROTOCOL"
+      ],
+      "checker": "elkies-k3/scripts/analyze_r17_norm12_complete_character_closure.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:04b6b2883307794d5c39f5a6323febe5800aec98362b3e4b21dc5f1bfcc92ef7",
+      "software_lock": [
+        "elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage",
+        "elkies-k3/scripts/construct_r17_norm12_11952_inherited_bisections.sage",
+        "elkies-k3/scripts/rank_r17_norm12_103b2_bisection_orbits.sage",
+        "elkies-k3/scripts/construct_r17_norm12_11952_alternate_bisections.sage",
+        "elkies-k3/scripts/merge_r17_norm12_11952_alternate_bisection_chunks.py",
+        "elkies-k3/scripts/hash_bisection_extensions.py",
+        "elkies-k3/scripts/analyze_r17_norm12_complete_character_closure.py",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisections-full-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisection-collisions-full-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-complete-character-closure-v1.json"
+      ],
+      "supersedes_notes": [
+        "the hidden 0x103b2 rank-17 marking has no explicit direct equation or complete equation-level bisection collision test"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],

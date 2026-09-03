@@ -1,0 +1,71 @@
+{
+  "attempted_distinct_systems": 1,
+  "candidate": {
+    "chi": 4,
+    "key": "alternate-orbit-1463f:alternate-orbit-19bad",
+    "kind": "direct_product",
+    "masks": [
+      83519,
+      105389
+    ],
+    "x_degree_bound": 8,
+    "y_degree_bound": 12
+  },
+  "classification_counts_by_distinct_system": {
+    "timeout": 1
+  },
+  "covered_blocks": 2,
+  "distinct_systems": 70,
+  "export": "artifacts/local/elkies-k3/twist-polynomial-sections/direct-product-alternate-orbit-1463f--alternate-orbit-19bad/p131/export.json",
+  "export_sha256": "9209b97a47d7dbcc20ac503384c2d52560a711cbbb4289f2adee814e1e0470fc",
+  "prime": 131,
+  "proof_boundary": "A complete result describes only polynomial P.O=0 sections within the chi degree bounds over the displayed finite field and chart. It is not a characteristic-zero Mordell-Weil rank upper bound; sections can have bad reduction at this prime.",
+  "results": [
+    {
+      "classification": "timeout",
+      "elapsed_seconds": 15.08603182103252,
+      "equivalent_blocks": [
+        0,
+        1
+      ],
+      "leading_x_y": [
+        [
+          0,
+          19
+        ],
+        [
+          0,
+          112
+        ]
+      ],
+      "log": "artifacts/local/elkies-k3/twist-polynomial-sections/direct-product-alternate-orbit-1463f--alternate-orbit-19bad/p131/msolve/block-000.log",
+      "log_sha256": "a184b3c9dca7f12055a7062230a2e996fc203fe4f2f2ea60aafc66b6d994ceb1",
+      "metrics": "artifacts/local/elkies-k3/twist-polynomial-sections/direct-product-alternate-orbit-1463f--alternate-orbit-19bad/p131/msolve/block-000.time",
+      "metrics_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "representative_block": 0,
+      "returncode": -15,
+      "run_key": {
+        "msolve_sha256": "c2722288d22c3a1eab00c0b818d0204d4a98104d059b2fd4ecb7343e8ef759fa",
+        "system_sha256": "dd40198d1e3d238c725d7361fce979b033b96d83d6fff7a8cb510e579a395678",
+        "threads": 4,
+        "timeout_seconds": 15.0
+      },
+      "solution": "artifacts/local/elkies-k3/twist-polynomial-sections/direct-product-alternate-orbit-1463f--alternate-orbit-19bad/p131/msolve/block-000.solve",
+      "solution_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "timeout",
+      "system": "artifacts/local/elkies-k3/twist-polynomial-sections/direct-product-alternate-orbit-1463f--alternate-orbit-19bad/p131/block-000.ms",
+      "timeout_process_tree_high_water_kbytes": 999956
+    }
+  ],
+  "run_parameters": {
+    "jobs": 1,
+    "msolve": "/usr/bin/msolve",
+    "msolve_sha256": "c2722288d22c3a1eab00c0b818d0204d4a98104d059b2fd4ecb7343e8ef759fa",
+    "requested_blocks": null,
+    "threads_per_job": 4,
+    "timeout_seconds_per_distinct_system": 15.0
+  },
+  "schema": "elkies-k3.elkies-2026-twist-polynomial-section-msolve.v1",
+  "status": "INCOMPLETE_BOUNDED_MSOLVE_RUN",
+  "total_blocks": 140
+}

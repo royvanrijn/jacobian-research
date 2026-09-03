@@ -30,6 +30,10 @@ PRIORITY_CERTIFICATE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-
 ORBIT_TABLE = ROOT / "artifacts/generated-results/elkies-k3-q80-alternate-rootless-bisection-orbits.tsv"
 HISTORICAL_FRAME = ROOT / "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json"
 DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-v1.json"
+HIDDEN_DIRECT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json"
+HIDDEN_PRIORITY = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisection-priority-v1.tsv"
+HIDDEN_PRIORITY_CERTIFICATE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisection-priority-v1.json"
+HIDDEN_DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisections-v1.json"
 CONTENT_TRIAL_PRIMES = tuple(prime_range(2, 1001))
 
 
@@ -193,31 +197,54 @@ def compile_trace(X, Y, A, B, Delta, ring, field, helper):
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--priority-table", type=Path, default=PRIORITY)
+    parser.add_argument(
+        "--source-label",
+        choices=("norm12-orbit-11952", "norm12-orbit-103b2"),
+        default="norm12-orbit-11952",
+    )
+    parser.add_argument("--priority-table", type=Path)
     parser.add_argument("--start", type=int, default=0)
     parser.add_argument("--limit", type=int)
-    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--output", type=Path)
     parser.add_argument(
         "--verbose-records", action="store_true",
         help="retain the reconstructed trace, chord, and image quadratic in every record",
     )
     parser.add_argument("--check", action="store_true")
     arguments = parser.parse_args()
+    is_alternate_target = arguments.source_label == "norm12-orbit-11952"
+    direct_path = DIRECT if is_alternate_target else HIDDEN_DIRECT
+    priority_certificate_path = (
+        PRIORITY_CERTIFICATE if is_alternate_target else HIDDEN_PRIORITY_CERTIFICATE
+    )
+    default_priority = PRIORITY if is_alternate_target else HIDDEN_PRIORITY
+    priority_table = arguments.priority_table or default_priority
+    output = arguments.output or (
+        DEFAULT_OUTPUT if is_alternate_target else HIDDEN_DEFAULT_OUTPUT
+    )
+    expected_count = 39147 if is_alternate_target else 39120
     if arguments.start < 0 or arguments.limit is not None and arguments.limit <= 0:
         parser.error("--start must be nonnegative and --limit must be positive")
 
-    direct = json.loads(DIRECT.read_text())
-    priority_certificate = json.loads(PRIORITY_CERTIFICATE.read_text())
+    direct = json.loads(direct_path.read_text())
+    priority_certificate = json.loads(priority_certificate_path.read_text())
     if direct["weierstrass_model"]["fibre_configuration"] != "24 I1":
         raise ArithmeticError("canonical alternate model is not 24I1")
     if direct["sections"]["status"] != "PASS_EXACT_SATURATED_RANK17_BASIS":
         raise ArithmeticError("canonical alternate section basis is not saturated")
-    if priority_certificate["status"] != "PASS_EXACT_COMPLETE_ALTERNATE_BISECTION_EQUATION_PRIORITY":
-        raise ArithmeticError("alternate priority certificate is not complete")
-    with arguments.priority_table.open(newline="") as stream:
+    expected_priority_status = (
+        "PASS_EXACT_COMPLETE_ALTERNATE_BISECTION_EQUATION_PRIORITY"
+        if is_alternate_target
+        else "PASS_EXACT_COMPLETE_103B2_BISECTION_EQUATION_PRIORITY"
+    )
+    if priority_certificate["status"] != expected_priority_status:
+        raise ArithmeticError("bisection priority certificate is not complete")
+    with priority_table.open(newline="") as stream:
         all_rows = list(csv.DictReader(stream, delimiter="\t"))
-    if len(all_rows) != 39147:
-        raise ArithmeticError("alternate priority table does not contain all 39147 classes")
+    if len(all_rows) != expected_count:
+        raise ArithmeticError(
+            f"priority table does not contain all {expected_count} classes"
+        )
     stop = len(all_rows) if arguments.limit is None else min(
         len(all_rows), arguments.start + arguments.limit
     )
@@ -261,8 +288,12 @@ def main() -> None:
     chart_counts = {"finite": 0, "inverted_at_infinity": 0}
     for offset, row in enumerate(selected_rows):
         section_vector = parse_vector(row["section_basis_w"])
-        direct_vector = parse_vector(row["direct_alternate_w"])
-        historical_vector = parse_vector(row["historical_alternate_w"])
+        direct_vector = parse_vector(
+            row["direct_alternate_w"] if is_alternate_target else row["direct_hidden_w"]
+        )
+        source_vector = parse_vector(
+            row["historical_alternate_w"] if is_alternate_target else row["short_basis_w"]
+        )
         if section_vector * height_gram * section_vector != 10:
             raise ArithmeticError("priority trace word does not have height ten")
         trace = sum(
@@ -294,12 +325,13 @@ def main() -> None:
         if 2 * y0 * y1 != 3 * x0**2 * x1 + x1**3 * q + A * x1:
             raise ArithmeticError("normalized lifted-section linear identity failed")
         orbit = int(row["orbit_mask"], 0)
-        label = f"alternate-orbit-{orbit:05x}"
+        label = (
+            f"alternate-orbit-{orbit:05x}"
+            if is_alternate_target else f"hidden-103b2-orbit-{orbit:05x}"
+        )
         record = {
                 "label": label,
                 "lattice_orbit_mask": orbit,
-                "alternate_rank17_w": list(map(int, historical_vector)),
-                "direct_alternate_w": list(map(int, direct_vector)),
                 "section_basis_w": list(map(int, section_vector)),
                 "priority_rank": int(row["priority_rank"]),
                 "equation_complexity": {
@@ -336,6 +368,12 @@ def main() -> None:
                     "anti_invariant_height": 12,
                 },
             }
+        if is_alternate_target:
+            record["alternate_rank17_w"] = list(map(int, source_vector))
+            record["direct_alternate_w"] = list(map(int, direct_vector))
+        else:
+            record["direct_hidden_w"] = list(map(int, direct_vector))
+            record["short_basis_w"] = list(map(int, source_vector))
         if arguments.verbose_records:
             record["trace_section"] = {
                 "h_coefficients": polynomial_coefficients(h),
@@ -358,10 +396,21 @@ def main() -> None:
                 flush=True,
             )
 
+    input_paths = [HELPER, direct_path, priority_certificate_path, priority_table]
+    if is_alternate_target:
+        input_paths.extend([ORBIT_TABLE, HISTORICAL_FRAME])
     payload = {
         "schema": "elkies-k3.bisection-extension-input.v1",
-        "artifact_schema": "elkies-k3.r17-norm12-11952-alternate-bisections.v1",
-        "status": "PASS_EXACT_ALTERNATE_BISECTION_EQUATION_CHUNK",
+        "artifact_schema": (
+            "elkies-k3.r17-norm12-11952-alternate-bisections.v1"
+            if is_alternate_target
+            else "elkies-k3.r17-norm12-103b2-hidden-bisections.v1"
+        ),
+        "status": (
+            "PASS_EXACT_ALTERNATE_BISECTION_EQUATION_CHUNK"
+            if is_alternate_target
+            else "PASS_EXACT_103B2_HIDDEN_BISECTION_EQUATION_CHUNK"
+        ),
         "base_parameter": "u",
         "invariant_mw_rank": 17,
         "interval": {"start_zero_based": arguments.start, "stop_exclusive": stop},
@@ -376,14 +425,7 @@ def main() -> None:
         },
         "inputs": {
             relative(path): digest(path)
-            for path in (
-                HELPER,
-                DIRECT,
-                PRIORITY_CERTIFICATE,
-                arguments.priority_table,
-                ORBIT_TABLE,
-                HISTORICAL_FRAME,
-            )
+            for path in input_paths
         },
         "software_assumptions": {
             "sage_version": SAGE_VERSION,
@@ -391,26 +433,28 @@ def main() -> None:
         },
         "reproducing_command": (
             "sage -python elkies-k3/scripts/construct_r17_norm12_11952_alternate_bisections.sage "
-            f"--start {arguments.start} --limit {len(records)} --output {relative(arguments.output)}"
+            + ("" if is_alternate_target else "--source-label norm12-orbit-103b2 ")
+            + f"--start {arguments.start} --limit {len(records)} --output {relative(output)}"
             + (" --verbose-records" if arguments.verbose_records else "")
         ),
         "proof_boundary": (
             "Every record in the declared interval has an exact quadratic relation, "
             "a squarefree degree-two branch polynomial coprime to the 24I1 discriminant, "
-            "and a lifted section verified coefficientwise. Complete 39147-class coverage "
+            f"and a lifted section verified coefficientwise. Complete {expected_count}-class coverage "
             "requires merging all disjoint intervals and running the squareclass checker."
         ),
     }
     serialized = json.dumps(payload, indent=2, sort_keys=True) + "\n"
     if arguments.check:
-        if not arguments.output.exists() or arguments.output.read_text() != serialized:
+        if not output.exists() or output.read_text() != serialized:
             raise ArithmeticError("stored alternate bisection chunk differs from replay")
     else:
-        arguments.output.parent.mkdir(parents=True, exist_ok=True)
-        arguments.output.write_text(serialized)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(serialized)
     print(
-        "ALTFULLBISECT|status=PASS_EXACT_ALTERNATE_BISECTION_EQUATION_CHUNK|"
-        f"records={len(records)}|output={relative(arguments.output)}",
+        "NORM12FULLBISECT|status={}|records={}|output={}".format(
+            payload["status"], len(records), relative(output)
+        ),
         flush=True,
     )
 

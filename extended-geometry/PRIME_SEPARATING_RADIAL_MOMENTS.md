@@ -648,8 +648,8 @@ problem:
 
 Nonintegral Beta laws, arcsine/central-binomial moments, and more general
 balanced hypergeometric sequences usually have unbounded Bernstein
-complexity and no prime gap.  They lie between the two theorems and form the
-next genuine frontier.
+complexity and no prime-isolation property.  They lie between the two theorems
+and form the next genuine frontier.
 
 ### The univariate obstruction to a complete classification
 

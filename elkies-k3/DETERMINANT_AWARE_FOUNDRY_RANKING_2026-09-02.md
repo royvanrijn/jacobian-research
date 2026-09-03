@@ -98,7 +98,7 @@ tier on the next replay.
 
 ## Genus-theoretic replacement for the witness gate
 
-<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS 2f5b874c0c22133b -->
+<!-- status-consumer: EC-K3-ROOTLESS-GENUS-MASS e7589727ca8f7e50 -->
 
 The present ranking is witness-first because the imported catalogue supplies
 Gram matrices rather than complete local-genus certificates.  The next
@@ -123,7 +123,19 @@ The first exact replay does not yet change the 827-row ranking.  Its weighted
 root means for the determinant-78, 948, and 950 controls are approximately
 `49.13`, `14.15`, and `14.08`, all above two.  Thus these controls require
 higher ADE data; determinant 78 remains the mandatory zero-mass calibration.
-The theorem, exact values, and implementation boundary are in
+The rank-at-most-four LP is now also known to be insufficient on determinant
+78: even after restricting to its 621 census-realized ADE types, it permits a
+rootless fraction `0.00275682...` although the true value is zero.
+
+Large compatible Kneser neighbours turn an exact rootless mass fraction into
+an asymptotic line-hit probability.  The complete determinant-948 rootless
+classification gives exact fraction `8.930328...e-6`, or an unguided baseline
+of about `111,978` compatible lines per hit.  Four distinct determinant-950
+classes give only the lower probability bound `1.020293...e-5`, hence an
+upper baseline of about `98,011` lines per hit.  These scores apply to the
+unmarked one-spinor-genus controls and are asymptotic; they are not measured
+small-prime frequencies or speedup claims.  The theorem, exact values, and
+implementation boundary are in
 [`ROOTLESS_GENUS_THEORY_2026-09-03.md`](ROOTLESS_GENUS_THEORY_2026-09-03.md).
 
 ## Readiness gates and current priority

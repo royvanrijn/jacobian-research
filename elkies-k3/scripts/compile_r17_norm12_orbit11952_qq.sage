@@ -48,6 +48,8 @@ CLASSIFICATION = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-isotro
 ALTERNATE = ROOT / "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json"
 BISECTIONS = ROOT / "artifacts/generated-results/elkies-2026-equation-bisections-full.json"
 OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json"
+OUTPUT_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json"
+FRAME_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-isotropic-frame-v1.json"
 
 
 def digest(path: Path) -> str:
@@ -158,9 +160,17 @@ def invert_mobius(function, new_variable):
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument(
+        "--source-label",
+        choices=("norm12-orbit-11952", "norm12-orbit-103b2"),
+        default="norm12-orbit-11952",
+    )
+    parser.add_argument("--output", type=Path)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
+    output = args.output or (
+        OUTPUT if args.source_label == "norm12-orbit-11952" else OUTPUT_103B2
+    )
 
     model = json.loads(MODEL.read_text())
     section_data = json.loads(SECTIONS.read_text())
@@ -168,7 +178,7 @@ def main() -> None:
     classification = json.loads(CLASSIFICATION.read_text())
     alternate_payload = json.loads(ALTERNATE.read_text())
     target_payload = json.loads(TARGET.read_text())
-    source_record = find_record(splitting, "norm12-orbit-11952")
+    source_record = find_record(splitting, args.source_label)
 
     Rt = PolynomialRing(QQ, "t")
     Kt = Rt.fraction_field()
@@ -199,7 +209,7 @@ def main() -> None:
     rr_matrix = matrix(QQ, 8, 10, lambda i, j: columns[j][i])
     rr_kernel = rr_matrix.right_kernel_matrix()
     if rr_matrix.rank() != 8 or rr_kernel.nrows() != 2:
-        raise ArithmeticError("orbit-11952 Riemann--Roch kernel is not two-dimensional")
+        raise ArithmeticError("norm-twelve Riemann--Roch kernel is not two-dimensional")
     kernel_rows = [vector(QQ, row) for row in rr_kernel.rows()]
     ab = []
     for row in kernel_rows:
@@ -313,30 +323,39 @@ def main() -> None:
     transport = matrix(ZZ, [list(fibre), list(mate)] + rows(complement))
     frame = -(complement * ns * complement.transpose())
     alternate = matrix(ZZ, alternate_payload["rootless_frame"])
+    expected_frame = (
+        alternate if args.source_label == "norm12-orbit-11952" else pinned
+    )
+    rejected_frame = (
+        pinned if args.source_label == "norm12-orbit-11952" else alternate
+    )
     if abs(transport.det()) != 1 or frame.det() != 948 or int(pari(frame).qfminim(2)[0]):
         raise ArithmeticError("new frame failed its primitive rootless certificate")
-    isometry = pari(frame).qfisom(pari(alternate))
+    isometry = pari(frame).qfisom(pari(expected_frame))
     if isometry == 0:
-        raise ArithmeticError("new frame is not integrally isometric to alternate Q80")
+        raise ArithmeticError("new frame is not integrally isometric to the expected rootless frame")
     isometry = matrix(ZZ, isometry)
-    if isometry * alternate * isometry.transpose() != frame:
-        if isometry.transpose() * frame * isometry == alternate:
+    if isometry * expected_frame * isometry.transpose() != frame:
+        if isometry.transpose() * frame * isometry == expected_frame:
             isometry = matrix(ZZ, isometry.inverse().transpose())
-        elif isometry.transpose() * alternate * isometry == frame:
+        elif isometry.transpose() * expected_frame * isometry == frame:
             isometry = isometry.transpose()
-        elif isometry * frame * isometry.transpose() == alternate:
+        elif isometry * frame * isometry.transpose() == expected_frame:
             isometry = matrix(ZZ, isometry.inverse())
         else:
             raise ArithmeticError("PARI returned an unrecognized qfisom orientation")
-    assert isometry * alternate * isometry.transpose() == frame
-    if pari(frame).qfisom(pari(pinned)) != 0:
-        raise ArithmeticError("new frame unexpectedly matches published R17")
+    assert isometry * expected_frame * isometry.transpose() == frame
+    if pari(frame).qfisom(pari(rejected_frame)) != 0:
+        raise ArithmeticError("new frame unexpectedly matches the other rootless J2 class")
 
     classification_record = next(
         item for item in classification["classification"]["records"]
-        if item["label"] == "norm12-orbit-11952"
+        if item["label"] == args.source_label
     )
-    assert classification_record["frame_class"] == "alternate-Q80"
+    expected_frame_class = (
+        "alternate-Q80" if args.source_label == "norm12-orbit-11952" else "published-R17"
+    )
+    assert classification_record["frame_class"] == expected_frame_class
     assert classification_record["frame_gram_sha256"] == matrix_digest(frame)
 
     def point_on_child(t_section, x_section, y_section):
@@ -384,7 +403,8 @@ def main() -> None:
     # Sixteen honest old sections together with one rational old bisection
     # form a unimodular basis in the new frame.  The bisection supplies the
     # missing index-two glue class that the degree-one old sections alone miss.
-    selected_old_vectors = [
+    selected_old_vectors_by_label = {
+        "norm12-orbit-11952": [
         [0, -1, 0, 0, 0, 0, 0, -1, 1, 1, 0, -1, 1, 0, -1, 0, 1],
         [0, 0, 3, 1, 1, 2, -2, 0, 2, 0, 2, 0, 1, -2, 1, -2, -4],
         [-1, -1, 3, 0, -1, 2, -1, 1, 2, 1, 1, 0, 1, -1, 2, -2, -3],
@@ -401,7 +421,26 @@ def main() -> None:
         [0, 0, 0, 1, 0, 0, 0, -1, 2, 0, 1, 0, 1, -1, 0, -1, -2],
         [-1, 0, 2, -1, 1, 2, -1, 0, 1, 1, 1, 0, 1, -1, 1, -1, -2],
         [-1, 1, 1, -1, 1, 1, -1, -1, 1, 1, 1, -1, 1, -1, 1, 0, -1],
-    ]
+        ],
+        "norm12-orbit-103b2": [
+            [1, 0, -1, 1, 0, -1, 0, -1, 1, 0, 0, 0, 0, 0, -1, 0, 0],
+            [0, 0, 1, -1, -1, 0, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 1],
+            [1, 0, 1, 1, 1, 2, -1, 0, 0, 0, 1, 0, 0, -1, 0, -1, -3],
+            [-1, 0, 1, 0, -1, 1, 0, 0, -1, 0, 0, 1, 0, 0, 0, 1, 0],
+            [0, 0, 0, 1, 1, 1, 0, -2, 0, 0, 1, 0, 0, 0, -1, 0, -1],
+            [0, 0, 1, 1, 0, 2, -1, 0, 0, 0, 1, 0, 0, -1, 0, 0, -2],
+            [1, 0, 0, 2, 1, 0, 0, -1, 1, 0, 1, 0, 0, -1, -1, 0, -2],
+            [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+            [0, -1, 1, 0, -1, 1, 0, 1, 0, 1, 0, 0, 1, -1, 0, 0, -1],
+            [-1, -1, 1, -1, -1, 2, 0, 1, -1, 2, 0, 0, 0, 0, 0, 1, 0],
+            [1, 0, 1, 1, 0, 1, -1, 0, 1, 0, 1, 1, 0, -1, 0, -1, -3],
+            [0, -1, -1, 0, -1, 0, 1, 1, -1, 1, -1, 0, 0, 0, -1, 1, 1],
+            [0, 0, 1, 1, 0, 1, -1, 0, 0, 0, 1, 0, -1, 0, 0, 0, -1],
+            [1, -1, 0, 1, -1, -1, 0, 1, 1, 0, -1, 1, 1, -1, -1, 0, 0],
+            [0, -1, 1, 1, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0],
+        ],
+    }
+    selected_old_vectors = selected_old_vectors_by_label[args.source_label]
     basis_change = matrix(ZZ, target_payload["pinned_identification"]["basis_change_matrix"])
     transport_inverse = transport.inverse()
     section_records = []
@@ -440,75 +479,82 @@ def main() -> None:
         )
 
     full_bisections = json.loads(BISECTIONS.read_text())
-    glue_record = next(
-        record for record in full_bisections["bisections"] if record["label"] == "orbit-0adf9"
-    )
-    glue_w = vector(ZZ, glue_record["pinned_rank17_w"])
-    glue_class = vector(ZZ, [2, 2] + list(glue_w))
-    glue_new_class = glue_class * transport_inverse
-    if glue_new_class[1] != 1 or any(value not in ZZ for value in glue_new_class):
-        raise ArithmeticError("glue bisection did not become an integral child section")
-    glue_new_mw = vector(ZZ, glue_new_class[2:])
+    glue_labels_by_source = {
+        "norm12-orbit-11952": ["orbit-0adf9"],
+        "norm12-orbit-103b2": ["orbit-1d5f2", "orbit-0abc2"],
+    }
+    glue_labels = glue_labels_by_source[args.source_label]
+    for glue_offset, glue_label in enumerate(glue_labels):
+        glue_record = next(
+            record for record in full_bisections["bisections"]
+            if record["label"] == glue_label
+        )
+        glue_w = vector(ZZ, glue_record["pinned_rank17_w"])
+        glue_class = vector(ZZ, [2, 2] + list(glue_w))
+        glue_new_class = glue_class * transport_inverse
+        if glue_new_class[1] != 1 or any(value not in ZZ for value in glue_new_class):
+            raise ArithmeticError("glue bisection did not become an integral child section")
+        glue_new_mw = vector(ZZ, glue_new_class[2:])
 
-    glue_q = Rt([QQ(value) for value in glue_record["residual_chord"]["q_coefficients"]])
-    Rconic = PolynomialRing(QQ, names=("T", "S", "Z"))
-    Tconic, Sconic, Zconic = Rconic.gens()
-    conic = Conic(
-        Sconic**2
-        - (glue_q[2] * Tconic**2 + glue_q[1] * Tconic * Zconic + glue_q[0] * Zconic**2)
-    )
-    has_point, conic_point = conic.has_rational_point(point=True)
-    if not has_point:
-        raise ArithmeticError("glue bisection cover has no rational point")
-    parametrization, _ = conic.parametrization(point=conic_point)
-    parameter_polys = parametrization.defining_polynomials()
-    Rr = PolynomialRing(QQ, "r")
-    Kr = Rr.fraction_field()
-    r = Rr.gen()
-    Tparam, Sparam, Zparam = [Rr(poly(r, 1)) for poly in parameter_polys]
-    t_of_r = Kr(Tparam / Zparam)
-    s_of_r = Kr(Sparam / Zparam)
-    assert s_of_r**2 == evaluate_polynomial(glue_q, t_of_r)
-    lifted = glue_record["lifted_section"]
-    gx0 = Rt([QQ(value) for value in lifted["x0_coefficients"]])
-    gx1 = Rt([QQ(value) for value in lifted["x1_coefficients"]])
-    gy0 = Rt([QQ(value) for value in lifted["y0_coefficients"]])
-    gy1 = Rt([QQ(value) for value in lifted["y1_coefficients"]])
-    x_of_r = evaluate_polynomial(gx0, t_of_r) + evaluate_polynomial(gx1, t_of_r) * s_of_r
-    y_of_r = evaluate_polynomial(gy0, t_of_r) + evaluate_polynomial(gy1, t_of_r) * s_of_r
-    assert y_of_r**2 == evaluate_polynomial(Aold, t_of_r) * x_of_r + x_of_r**3 + evaluate_polynomial(Bold, t_of_r)
-    L0r = evaluate_polynomial(a0, t_of_r) * (
-        x_of_r * evaluate_polynomial(h, t_of_r) ** 2 - evaluate_polynomial(Nx, t_of_r)
-    ) + evaluate_polynomial(b0, t_of_r) * (
-        y_of_r * evaluate_polynomial(h, t_of_r) ** 3 + evaluate_polynomial(Ny, t_of_r)
-    )
-    L1r = evaluate_polynomial(a1, t_of_r) * (
-        x_of_r * evaluate_polynomial(h, t_of_r) ** 2 - evaluate_polynomial(Nx, t_of_r)
-    ) + evaluate_polynomial(b1, t_of_r) * (
-        y_of_r * evaluate_polynomial(h, t_of_r) ** 3 + evaluate_polynomial(Ny, t_of_r)
-    )
-    u_of_r = Kr(L1r / L0r)
-    r_of_u = Ku(invert_mobius(u_of_r, u))
-    glue_t = Ku(evaluate_rational(t_of_r, r_of_u))
-    glue_x = Ku(evaluate_rational(x_of_r, r_of_u))
-    glue_y = Ku(evaluate_rational(y_of_r, r_of_u))
-    glue_X, glue_Y, glue_W = point_on_child(glue_t, glue_x, glue_y)
-    new_mw_rows.append(glue_new_mw)
-    section_records.append(
-        {
-            "basis_index": 16,
-            "source": "published-R17 rational bisection orbit-0adf9",
-            "source_curve_class_in_U_plus_R17_minus": list(map(int, glue_class)),
-            "source_cover_point_T_S_Z": [rational_text(value) for value in conic_point],
-            "new_frame_coordinates": list(map(int, glue_new_mw)),
-            "new_height": int(glue_new_mw * frame * glue_new_mw),
-            "cover_base_map_u_of_r": rational_function_record(u_of_r),
-            "quartic_t_coordinate": rational_function_record(glue_t),
-            "X": rational_function_record(glue_X),
-            "Y": rational_function_record(glue_Y),
-            "equation_verified": True,
-        }
-    )
+        glue_q = Rt([QQ(value) for value in glue_record["residual_chord"]["q_coefficients"]])
+        Rconic = PolynomialRing(QQ, names=("T", "S", "Z"))
+        Tconic, Sconic, Zconic = Rconic.gens()
+        conic = Conic(
+            Sconic**2
+            - (glue_q[2] * Tconic**2 + glue_q[1] * Tconic * Zconic + glue_q[0] * Zconic**2)
+        )
+        has_point, conic_point = conic.has_rational_point(point=True)
+        if not has_point:
+            raise ArithmeticError("glue bisection cover has no rational point")
+        parametrization, _ = conic.parametrization(point=conic_point)
+        parameter_polys = parametrization.defining_polynomials()
+        Rr = PolynomialRing(QQ, "r")
+        Kr = Rr.fraction_field()
+        r = Rr.gen()
+        Tparam, Sparam, Zparam = [Rr(poly(r, 1)) for poly in parameter_polys]
+        t_of_r = Kr(Tparam / Zparam)
+        s_of_r = Kr(Sparam / Zparam)
+        assert s_of_r**2 == evaluate_polynomial(glue_q, t_of_r)
+        lifted = glue_record["lifted_section"]
+        gx0 = Rt([QQ(value) for value in lifted["x0_coefficients"]])
+        gx1 = Rt([QQ(value) for value in lifted["x1_coefficients"]])
+        gy0 = Rt([QQ(value) for value in lifted["y0_coefficients"]])
+        gy1 = Rt([QQ(value) for value in lifted["y1_coefficients"]])
+        x_of_r = evaluate_polynomial(gx0, t_of_r) + evaluate_polynomial(gx1, t_of_r) * s_of_r
+        y_of_r = evaluate_polynomial(gy0, t_of_r) + evaluate_polynomial(gy1, t_of_r) * s_of_r
+        assert y_of_r**2 == evaluate_polynomial(Aold, t_of_r) * x_of_r + x_of_r**3 + evaluate_polynomial(Bold, t_of_r)
+        L0r = evaluate_polynomial(a0, t_of_r) * (
+            x_of_r * evaluate_polynomial(h, t_of_r) ** 2 - evaluate_polynomial(Nx, t_of_r)
+        ) + evaluate_polynomial(b0, t_of_r) * (
+            y_of_r * evaluate_polynomial(h, t_of_r) ** 3 + evaluate_polynomial(Ny, t_of_r)
+        )
+        L1r = evaluate_polynomial(a1, t_of_r) * (
+            x_of_r * evaluate_polynomial(h, t_of_r) ** 2 - evaluate_polynomial(Nx, t_of_r)
+        ) + evaluate_polynomial(b1, t_of_r) * (
+            y_of_r * evaluate_polynomial(h, t_of_r) ** 3 + evaluate_polynomial(Ny, t_of_r)
+        )
+        u_of_r = Kr(L1r / L0r)
+        r_of_u = Ku(invert_mobius(u_of_r, u))
+        glue_t = Ku(evaluate_rational(t_of_r, r_of_u))
+        glue_x = Ku(evaluate_rational(x_of_r, r_of_u))
+        glue_y = Ku(evaluate_rational(y_of_r, r_of_u))
+        glue_X, glue_Y, glue_W = point_on_child(glue_t, glue_x, glue_y)
+        new_mw_rows.append(glue_new_mw)
+        section_records.append(
+            {
+                "basis_index": len(selected_old_vectors) + glue_offset,
+                "source": f"published-R17 rational bisection {glue_label}",
+                "source_curve_class_in_U_plus_R17_minus": list(map(int, glue_class)),
+                "source_cover_point_T_S_Z": [rational_text(value) for value in conic_point],
+                "new_frame_coordinates": list(map(int, glue_new_mw)),
+                "new_height": int(glue_new_mw * frame * glue_new_mw),
+                "cover_base_map_u_of_r": rational_function_record(u_of_r),
+                "quartic_t_coordinate": rational_function_record(glue_t),
+                "X": rational_function_record(glue_X),
+                "Y": rational_function_record(glue_Y),
+                "equation_verified": True,
+            }
+        )
 
     section_coordinate_matrix = matrix(ZZ, new_mw_rows)
     if abs(section_coordinate_matrix.det()) != 1:
@@ -517,11 +563,39 @@ def main() -> None:
     if section_height_gram.det() != 948 or int(pari(section_height_gram).qfminim(2)[0]):
         raise ArithmeticError("recovered section height Gram failed the rootless frame checks")
 
+    is_alternate_target = args.source_label == "norm12-orbit-11952"
+    frame_certificate = {
+        "transport_rows_D_D_plus_O_complement": rows(transport),
+        "transport_determinant": int(transport.det()),
+        "frame_gram": rows(frame),
+        "frame_gram_sha256": matrix_digest(frame),
+        "determinant": int(frame.det()),
+        "roots_of_norm_two": 0,
+    }
+    if is_alternate_target:
+        frame_certificate.update({
+            "integral_isometry_to_alternate_Q80": rows(isometry),
+            "isometric_to_alternate_Q80": True,
+            "isometric_to_published_R17": False,
+        })
+    else:
+        frame_certificate.update({
+            "integral_isometry_to_published_R17": rows(isometry),
+            "isometric_to_published_R17": True,
+            "isometric_to_alternate_Q80": False,
+        })
+    input_paths = [MODEL, SECTIONS, PINNED, TARGET, SPLITTING, CLASSIFICATION, ALTERNATE, BISECTIONS]
+    if not is_alternate_target:
+        input_paths.append(FRAME_103B2)
     result = {
-        "schema": "elkies-k3.r17-norm12-orbit11952-direct-fibration.v1",
+        "schema": (
+            "elkies-k3.r17-norm12-orbit11952-direct-fibration.v1"
+            if is_alternate_target
+            else "elkies-k3.r17-norm12-orbit103b2-direct-fibration.v1"
+        ),
         "status": "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS",
         "divisor": {
-            "label": "norm12-orbit-11952",
+            "label": args.source_label,
             "pinned_trace_vector_w": list(map(int, w)),
             "class_D_in_U_plus_R17_minus": list(map(int, fibre)),
             "identity": "D=O_old+P_w-F_old=(3,2,w)",
@@ -569,22 +643,15 @@ def main() -> None:
             "infinity_orders_c4_c6_Delta": [0, 0, 0],
             "pointed_quartic_map_verified": True,
         },
-        "frame_certificate": {
-            "transport_rows_D_D_plus_O_complement": rows(transport),
-            "transport_determinant": int(transport.det()),
-            "frame_gram": rows(frame),
-            "frame_gram_sha256": matrix_digest(frame),
-            "determinant": int(frame.det()),
-            "roots_of_norm_two": 0,
-            "integral_isometry_to_alternate_Q80": rows(isometry),
-            "isometric_to_alternate_Q80": True,
-            "isometric_to_published_R17": False,
-        },
+        "frame_certificate": frame_certificate,
         "sections": {
             "status": "PASS_EXACT_SATURATED_RANK17_BASIS",
             "rank": 17,
-            "basis_source_profile": {"old_sections": 16, "old_rational_bisections": 1},
-            "glue_source": "orbit-0adf9",
+            "basis_source_profile": {
+                "old_sections": len(selected_old_vectors),
+                "old_rational_bisections": len(glue_labels),
+            },
+            "glue_source": glue_labels[0] if len(glue_labels) == 1 else glue_labels,
             "coordinate_matrix_in_compiled_frame": rows(section_coordinate_matrix),
             "coordinate_matrix_determinant": int(section_coordinate_matrix.det()),
             "height_gram": rows(section_height_gram),
@@ -594,31 +661,45 @@ def main() -> None:
         },
         "inputs": {
             relative(path): digest(path)
-            for path in (MODEL, SECTIONS, PINNED, TARGET, SPLITTING, CLASSIFICATION, ALTERNATE, BISECTIONS)
+            for path in input_paths
         },
         "software_assumptions": {
             "sage_version": SAGE_VERSION,
             "pari_version": ".".join(map(str, pari.version())),
             "required_features": ["Sage exact function fields", "PARI qfminim", "PARI qfisom"],
         },
-        "reproducing_command": "sage -python elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage",
+        "reproducing_command": (
+            "sage -python elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage"
+            + ("" if is_alternate_target else " --source-label norm12-orbit-103b2")
+        ),
         "proof_boundary": (
-            "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
-            "the squarefree degree-24 discriminant, and the primitive rootless alternate-Q80 frame. "
-            "It also transports sixteen old sections and the orbit-0adf9 rational bisection to "
-            "an explicit saturated rank-17 section basis on the new equation."
+            (
+                "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
+                "the squarefree degree-24 discriminant, and the primitive rootless alternate-Q80 frame. "
+                "It also transports sixteen old sections and the orbit-0adf9 rational bisection to "
+                "an explicit saturated rank-17 section basis on the new equation."
+            )
+            if is_alternate_target
+            else (
+                "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
+                "the squarefree degree-24 discriminant, and the primitive rootless published-R17 frame. "
+                "It transports fifteen old sections and both degree-one old rational bisections to "
+                "an explicit saturated rank-17 section basis on the hidden equation."
+            )
         ),
     }
     serialized = json.dumps(result, indent=2, sort_keys=True) + "\n"
     if args.check:
-        if not args.output.exists() or args.output.read_text() != serialized:
-            raise ArithmeticError("stored orbit-11952 direct-fibration artifact differs from replay")
+        if not output.exists() or output.read_text() != serialized:
+            raise ArithmeticError("stored norm-twelve direct-fibration artifact differs from replay")
     else:
-        args.output.parent.mkdir(parents=True, exist_ok=True)
-        args.output.write_text(serialized)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(serialized)
     print(
-        "R17NORM12O11952|h0=2|quartic=4|A=8|B=12|Delta=24|fibres=24I1|"
-        "frame=alternate-Q80|roots=0|sections=17-saturated|output={}".format(relative(args.output)),
+        "R17NORM12DIRECT|label={}|h0=2|quartic=4|A=8|B=12|Delta=24|fibres=24I1|"
+        "frame={}|roots=0|sections=17-saturated|output={}".format(
+            args.source_label, expected_frame_class, relative(output)
+        ),
         flush=True,
     )
 

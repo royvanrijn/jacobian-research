@@ -96,7 +96,7 @@ The certificates are
 and
 [`cas/case2_infinity_resolution.py`](cas/case2_infinity_resolution.py).
 
-## Poisson-square primary filtration — associated-prime gap completed
+## Poisson-square primary filtration — associated-prime filtration completed
 
 The three-band coefficient scheme is not Cohen--Macaulay.  The earlier
 normalized free-resolution attack was aimed at proving the opposite and is
