@@ -1,9 +1,10 @@
-# Arithmetic rank transfer and marking gate (2026-09-03)
+# Galois-equivariant Shioda--Tate balance and arithmetic marking gate (2026-09-03)
 
 ## Outcome
 
-The geometric rank-mutation law now has a Galois-equivariant arithmetic
-version.  Its canonical statement and proof are Theorem A2 and Corollaries
+The classical Shioda--Tate balance now has a Galois-equivariant quotient
+formulation in the repository's marking notation.  Its canonical statement
+and proof are Theorem A2 and Corollaries
 A2.1--A2.2 of
 [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md).
 
@@ -33,9 +34,16 @@ representation-ring identity is
 [M_2]-[M_1]=[R_1]-[R_2].
 ```
 
-Thus rank transfer moves Galois representations, not only dimensions.
+Thus a fibration hop redistributes Galois representations, not only
+dimensions.
 Removing an anti-invariant root creates an anti-invariant Mordell--Weil
 direction and does not raise arithmetic rank.
+
+Shioda's papers on Mordell--Weil lattices and Galois representations already
+establish the Galois action and height compatibility.  The representation-
+ring equality above is a tailored quotient corollary, not a new general
+arithmetic theorem.  The project contribution is the fail-closed integral
+marking schema, verifier, and the exact control computations.
 
 ## Rational-source inheritance
 
@@ -66,7 +74,8 @@ It records:
 3. the marked hyperbolic plane for every fibration;
 4. the embedded geometric fibre-root basis;
 5. expected geometric and arithmetic Mordell--Weil ranks;
-6. optional rank-transfer edges.
+6. optional component labels, section classes, fields, and orbit sizes;
+7. optional rank-transfer edges.
 
 The exact verifier is
 [`scripts/certify_arithmetic_rank_transfer.sage`](scripts/certify_arithmetic_rank_transfer.sage).
@@ -74,8 +83,11 @@ It checks that every action is integral, unimodular, and Gram-preserving;
 closes the finite group; verifies that each `U` is fixed pointwise and each
 root space is stable; computes the rational fixed NS, root, and Mordell--Weil
 spaces; and checks the representation-ring identity by its trace on every
-group element.  Missing descent evidence is typed `UNKNOWN` and never treated
-as rank zero or as arithmetic promotion.
+group element.  Its output includes the induced matrices on the root and
+Mordell--Weil quotient bases, a rational basis of the fixed Mordell--Weil
+space, and orbit--stabilizer data for every supplied section class.  Missing
+descent evidence is typed `UNKNOWN` and never treated as rank zero or as
+arithmetic promotion.
 
 Reproduce the pinned controls with
 
@@ -103,8 +115,11 @@ The generated certificate is
 | unordered E6 incidence over `QQ(k)` | 4 | 2 | two exchanged pairs leave two invariant sums |
 | E6A1 orbit 103 over `QQ(k)(r)` | 3 | 2 | `2*trivial + chi_-3` |
 
-The H3 control uses the exact Picard-rank-19 endpoint and its seventeen
-rational sections.  The E6 incidence control uses the full integral
+The H3 control cross-checks the exact Picard-rank-19 endpoint against the
+separate published-target certificate and its seventeen exact `QQ(t)`
+sections; their unimodular identification with pinned `R17` supplies a
+rational rank-19 divisor span together with fibre and zero.  The E6 incidence
+control uses the full integral
 rank-19 Neron--Severi Gram: conjugation swaps `P,Q` and `R1,R2`, fixes the
 root space, and leaves fixed NS rank seventeen.  Formula (A2.2) then gives
 `17-2-13=2`.  Orbit 103 independently checks the one-dimensional
@@ -152,4 +167,4 @@ The shortest arithmetic promotion route is therefore:
 The existing modular NS0024 searches remain feasibility and Frobenius-ranking
 evidence.  They are not a substitute for steps 1--3.
 
-<!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 68e213d911006214 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 3031dd2365a29cd5 -->

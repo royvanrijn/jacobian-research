@@ -1,0 +1,3217 @@
+{
+  "determinant": 950,
+  "frame": "artifacts/generated-results/elkies-k3-ns0024-completed-d5e8-root-adapted-frame-v1.txt",
+  "input_ade": "D5+E8",
+  "input_mw_height": [
+    [
+      "6571/4",
+      "5/2",
+      "6879/4",
+      "263"
+    ],
+    [
+      "5/2",
+      "25",
+      "5/2",
+      "0"
+    ],
+    [
+      "6879/4",
+      "5/2",
+      "7259/4",
+      "0"
+    ],
+    [
+      "263",
+      "0",
+      "0",
+      "5310"
+    ]
+  ],
+  "input_mw_rank": 4,
+  "input_root_data": [
+    13,
+    280,
+    4
+  ],
+  "neighbors": [],
+  "status": "PASS_ROOT_ADAPTED_WEYL_NEIGHBORS",
+  "summaries": [
+    {
+      "dominant_orbits": 25,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        2,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 18,
+      "mw_projection_representatives": 10,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 2,
+      "primitive_neighbors": 23,
+      "q": 4,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 1,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 1,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 1,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 1,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 2,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 25,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 85,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        3,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 48,
+      "mw_projection_representatives": 25,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 0,
+      "primitive_neighbors": 85,
+      "q": 6,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 3,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 4,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 5,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 6,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 8,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 9,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 4,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 17,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 1,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 2,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 2,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 1,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 85,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 216,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        4,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 86,
+      "mw_projection_representatives": 44,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 5,
+      "primitive_neighbors": 211,
+      "q": 8,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 15,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 6,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 13,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 12,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 18,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 11,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 10,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 8,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 20,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 4,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 20,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 12,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 27,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 3,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 4,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 5,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 5,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 216,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 445,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        5,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 120,
+      "mw_projection_representatives": 61,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 0,
+      "primitive_neighbors": 445,
+      "q": 10,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 42,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 16,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 35,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 26,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 32,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 22,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 23,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 22,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 46,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 10,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 35,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 18,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 23,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 58,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 4,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 8,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 5,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 5,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 445,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 841,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        6,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 184,
+      "mw_projection_representatives": 93,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 12,
+      "primitive_neighbors": 829,
+      "q": 12,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 85,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 30,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 74,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 48,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 64,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 44,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 46,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 48,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 81,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 16,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 12,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 67,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 22,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 14,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 43,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 83,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 8,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 7,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 11,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 15,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 11,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 841,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 1464,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        7,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 266,
+      "mw_projection_representatives": 134,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 0,
+      "primitive_neighbors": 1464,
+      "q": 14,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 165,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 61,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 134,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 91,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 96,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 71,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 81,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 88,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 150,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 27,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 21,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 116,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 50,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 17,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 68,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 153,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 11,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 13,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 21,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 17,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 13,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 1464,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 2421,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        8,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 332,
+      "mw_projection_representatives": 167,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 25,
+      "primitive_neighbors": 2396,
+      "q": 16,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 283,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 108,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 233,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 149,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 149,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 111,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 144,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 155,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 258,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 51,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 38,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 195,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 60,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 31,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 110,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 196,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 17,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 17,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 33,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 35,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 23,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 2421,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 3784,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        9,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 420,
+      "mw_projection_representatives": 211,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 0,
+      "primitive_neighbors": 3784,
+      "q": 18,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 453,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 171,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 382,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 240,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 226,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 162,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 231,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 263,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 393,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 76,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 61,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 292,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 114,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 44,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 162,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 340,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 21,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 28,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 47,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 47,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 31,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 3784,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 5653,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        10,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 498,
+      "mw_projection_representatives": 250,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 49,
+      "primitive_neighbors": 5604,
+      "q": 20,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 705,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 261,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 578,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 367,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 313,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 237,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 369,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 399,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 610,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 113,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 95,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 437,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 129,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 67,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 227,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 419,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 37,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 43,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 74,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 77,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 47,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 5653,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 8261,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        11,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 620,
+      "mw_projection_representatives": 311,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 0,
+      "primitive_neighbors": 8261,
+      "q": 22,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 1047,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 391,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 864,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 537,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 436,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 318,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 544,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 601,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 897,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 176,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 143,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 639,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 224,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 89,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 326,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 667,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 45,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 59,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 101,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 98,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 59,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 8261,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 11668,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        12,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 734,
+      "mw_projection_representatives": 368,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 85,
+      "primitive_neighbors": 11583,
+      "q": 24,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 1493,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 543,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1234,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 761,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 602,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 452,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 804,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 871,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1264,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 251,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 208,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 911,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 261,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 134,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 443,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 824,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 72,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 85,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 142,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 149,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 79,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 11668,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 16073,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        13,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 878,
+      "mw_projection_representatives": 440,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 0,
+      "primitive_neighbors": 16073,
+      "q": 26,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 2115,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 762,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1700,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1077,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 787,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 595,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1130,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1206,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1763,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 351,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 296,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1227,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 404,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 161,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 596,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1230,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 88,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 117,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 190,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 177,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 101,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 16073,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 21890,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        14,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 1014,
+      "mw_projection_representatives": 508,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 141,
+      "primitive_neighbors": 21749,
+      "q": 28,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 2920,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1047,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 2355,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1460,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1035,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 809,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1582,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1668,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2426,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 493,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 414,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1681,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 459,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 219,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 783,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1485,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 134,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 155,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 247,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 256,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 121,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 21890,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 29092,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        15,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 1184,
+      "mw_projection_representatives": 593,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 0,
+      "primitive_neighbors": 29092,
+      "q": 30,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 3919,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1394,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3150,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1951,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1349,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1041,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2106,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2255,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3211,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 651,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 563,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2206,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 692,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 277,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1021,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2139,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 155,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 209,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 324,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 316,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 163,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 29092,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 38069,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        16,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 1326,
+      "mw_projection_representatives": 664,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 216,
+      "primitive_neighbors": 37853,
+      "q": 32,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 5236,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1837,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 4138,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 2574,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1675,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1371,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2870,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2963,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 4264,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 865,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 751,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2900,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 754,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 341,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1290,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2515,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 217,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 260,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 418,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 418,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 196,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 38069,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 49461,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        17,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 1464,
+      "mw_projection_representatives": 733,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 0,
+      "primitive_neighbors": 49461,
+      "q": 34,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 6864,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 2410,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 5451,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3374,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 2127,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 1702,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3720,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3912,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5559,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1142,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 990,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3723,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1111,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 433,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1617,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 3454,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 252,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 338,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 519,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 518,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 245,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 49461,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 62952,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        18,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 1630,
+      "mw_projection_representatives": 816,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 317,
+      "primitive_neighbors": 62635,
+      "q": 36,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 8795,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3063,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 6988,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 4286,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 2649,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 2213,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 4872,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5059,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7115,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1431,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1272,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 4730,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1200,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 544,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2009,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 4029,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 341,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 424,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 656,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 660,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 299,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 62952,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 79219,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        19,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 1872,
+      "mw_projection_representatives": 937,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 0,
+      "primitive_neighbors": 79219,
+      "q": 38,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 11234,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3911,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 8866,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 5452,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3231,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 2666,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6174,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6421,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 8957,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1824,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1623,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5877,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1697,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 650,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2438,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 5334,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 390,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 525,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 798,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 787,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 364,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 79219,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    },
+    {
+      "dominant_orbits": 99555,
+      "dominant_orbits_complete": true,
+      "factor_order": [
+        20,
+        2
+      ],
+      "mw_enumeration_complete": true,
+      "mw_pari_vector_count": 2042,
+      "mw_projection_representatives": 1022,
+      "mw_vector_cap": null,
+      "nonprimitive_orbits": 445,
+      "primitive_neighbors": 99110,
+      "q": 40,
+      "root_histogram": [
+        {
+          "mw_rank": 5,
+          "orbit_count": 14214,
+          "root_count": 132,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 4939,
+          "root_count": 136,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 11259,
+          "root_count": 148,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 6853,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3968,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 5,
+          "orbit_count": 3389,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 12
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7921,
+          "root_count": 128,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 8176,
+          "root_count": 144,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 11306,
+          "root_count": 152,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2312,
+          "root_count": 156,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2048,
+          "root_count": 164,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 7419,
+          "root_count": 168,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 1817,
+          "root_count": 256,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 805,
+          "root_count": 266,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 2990,
+          "root_count": 270,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 6133,
+          "root_count": 280,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 4,
+          "orbit_count": 522,
+          "root_count": 312,
+          "root_determinant": null,
+          "root_rank": 13
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 647,
+          "root_count": 172,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 977,
+          "root_count": 260,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 989,
+          "root_count": 264,
+          "root_determinant": null,
+          "root_rank": 14
+        },
+        {
+          "mw_rank": 3,
+          "orbit_count": 426,
+          "root_count": 282,
+          "root_determinant": null,
+          "root_rank": 14
+        }
+      ],
+      "screened_orbits": 99555,
+      "search_stopped_early": false,
+      "stream_limit_reached": false,
+      "stream_precheck_nonprimitive": 0,
+      "stream_skip": 0,
+      "stream_tested": 0
+    }
+  ],
+  "summary_only": true,
+  "witness_retention": "Exact enumeration and classification were performed, but individual neighbor witnesses were deliberately omitted from this artifact."
+}

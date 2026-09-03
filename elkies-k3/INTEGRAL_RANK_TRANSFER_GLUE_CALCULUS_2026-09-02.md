@@ -1,4 +1,4 @@
-# Integral rank transfer: an equation-free glue calculus (2026-09-02)
+# Target-directed fibration hopping: an equation-free glue calculus (2026-09-02)
 
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 7eeeeaa80d9b2bf3 -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-THETA-CONVOLUTION 5ebbd3d242fdb3db -->
@@ -19,6 +19,18 @@
 
 ## Outcome
 
+Terminology and novelty boundary: **integral rank transfer** remains the
+project label.  A same-surface move is a change of primitive `U`-embedding,
+or a fibration hop, and its rank change is the classical Shioda--Tate rank
+balance.  Nikulin graph gluing, Kneser neighbours, Kneser--Nishiyama frame
+classification, Weyl reduction, and explicit fibration hopping are
+established.  The contribution of this note is the target-directed inverse
+use of those tools and the determinant-specific exact computations below.
+See the
+[`literature and novelty map`](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md)
+for claim-level provenance.  “No explicit antecedent located” is used for
+plausibly new algorithms; no priority claim is made.
+
 The proposed experiment has a sharp first answer.
 
 There are three recurring integral operations in the successful examples:
@@ -31,24 +43,26 @@ There are three recurring integral operations in the successful examples:
    lattice by `|G|`-primary saturation glue.
 
 The first operation accounts for every edge in the H3, Q80, NS0024, and
-Golay-720 corridors.  It is **not** a mutation of the finite quadratic form:
+Golay-720 corridors.  It does **not** change the finite quadratic form:
 because `U` is unimodular, the frame discriminant form is fixed along the
 whole corridor.  The finite form is an admissibility and genus invariant, not
 the object which records which roots disappeared.
 
-There is now an exact local replacement theorem behind these pivots.  For two
+There is now an exact local replacement statement behind these pivots.  For two
 frames `W,W'` in the same `NS`, their common bridge core
 
 ```text
 K=W intersect W'=(U+U')^perp(-1)
 ```
 
-contains precisely the roots that survive the click.  Each frame is a finite
+contains precisely the roots that survive the hop.  Each frame is a finite
 graph-glue extension of `K+C_i`, where `C_i=K^perp` inside that frame.  On all
 42 selected H3, Q80, NS0024, and Golay-720 edges, `K` has rank 15, both `C_i`
 have rank two, and the two glue groups are cyclic of the same order and
-project onto the full bridge discriminant.  Thus all 42 selected clicks are exact
-rank-two cyclic bridge replacements.  The certificate is
+project onto the full bridge discriminant.  Thus all 42 selected hops are
+exact rank-two cyclic bridge replacements.  This 42-edge corpus result is a
+new computation; the common-core and graph-glue formalism is a tailored
+application of Nikulin's established theory.  The certificate is
 [`elkies-k3-integral-rank-transfer-bridge-reglue-v1.json`](../artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json).
 
 The maximality condition also inverts core generation at finite-form level.
@@ -246,7 +260,7 @@ the six survivors span `3A1+A2`, while exhaustive nonzero-layer and order-191
 graph-glue enumeration produces no birth or extra root.  Independent child
 construction afterward gives the same physical root set.  See Theorem H0l
 and the
-[`inverse-ADE certificate`](../artifacts/generated-results/elkies-k3-ns0024-inverse-ade-mutation-v1.json).
+[`target-root-system certificate`](../artifacts/generated-results/elkies-k3-ns0024-inverse-ade-mutation-v1.json).
 
 Literal Nikulin discriminant-form glue occurs in the Niemeier complement
 constructions.  A closely related finite-index saturation quotient occurs in
@@ -410,7 +424,7 @@ large census (151 frame classes after local deduplication), not one of these
 named transition chains.  It should be expanded as a family of tuples rather
 than misrepresented by one aggregate tuple.
 
-## What happened at the same-`NS` clicks
+## What happened at the same-`NS` fibration hops
 
 Across the four selected corridors the census contains 42 exact edges:
 
@@ -463,7 +477,7 @@ some shed several.  Their overwhelming concentration at old degree two and
 theorem.  The route parameter `q=ab` is also **not** a Kneser neighbor prime;
 these labels must not be conflated.
 
-## What happened at the literal glue clicks
+## What happened at the literal glue replacements
 
 ### Maximal graph glue and complementary frames
 
@@ -623,12 +637,12 @@ The reusable per-edge algorithm is:
 4. label every norm-two vector by surviving, removed, or newly introduced
    glue coset;
 5. deduplicate successful labels under the relevant automorphism groups when
-   enumerating new mutations.
+   enumerating new target-directed transitions.
 
 No separate rational isometry or Kneser chain is required for the local
 theorem: the common `NS` marking supplies the canonical carrier `K`.  A later
 good-prime Kneser decomposition remains useful for connectivity, but is not
-the definition of the observed click.
+the definition of the observed hop.
 
 ### First predictive test: the split bound is not selective
 
@@ -794,7 +808,7 @@ sage -python \
   elkies-k3/scripts/certify_integral_rank_transfer_theta_convolution.sage --check
 ```
 
-Replay the first exact inverse-ADE mutation control:
+Replay the first exact target-root-system control:
 
 ```bash
 sage -python \

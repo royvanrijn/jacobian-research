@@ -5,11 +5,18 @@ This directory contains the K3-surface and elliptic-neighbor work used to search
 For the chronological account of rank exchange, cancellations, corrections,
 equation lifts, and reusable methods, start with
 [`ELKIES_K3_PROCESS_ATLAS.md`](ELKIES_K3_PROCESS_ATLAS.md). For the
-general rank, determinant, fibration, specialization, and lift statements,
+target-directed fibration-hopping theorem and certificate ledger,
 see [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md).
-Its equivariant arithmetic rank-transfer theorem, machine-readable marking
+The historical filename is retained for stable links; Shioda--Tate balance,
+Nikulin graph gluing, Kneser--Nishiyama classification, Kneser neighbours,
+and forward fibration hopping are established infrastructure.  The exact
+claim-level boundary between prior work, tailored corollaries, likely-new
+algorithms, and new computations is in
+[`LITERATURE_AND_NOVELTY_MAP_2026-09-03.md`](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md).
+Its Galois-equivariant Shioda--Tate corollary, machine-readable marking
 schema, H3/E6 controls, and fail-closed NS0024 application are summarized in
 [`ARITHMETIC_RANK_TRANSFER_2026-09-03.md`](ARITHMETIC_RANK_TRANSFER_2026-09-03.md).
+<!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 3031dd2365a29cd5 -->
 Before extending the certified equation route or using its endpoint, read
 [`PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md`](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
 It records what the historical construction supplies, the minimum

@@ -1,0 +1,96 @@
+{
+  "conclusion": "No primitive target fibre with the required root rank five occurs in the declared (d,t) boxes. Therefore no choice of the second U' basis vector can give the requested first edge in those boxes.",
+  "fibre_relation": "q=d(d+t), with d=F.F' and t=O.F'",
+  "input_hashes": {
+    "artifacts/generated-results/elkies-k3-ns0024-completed-d5e8-root-adapted-frame-v1.txt": "95c3a7f0ac22bc5c9e8160ea3efa5d23e0ae572d2f961fd815d62cfdcc1b0817",
+    "artifacts/generated-results/elkies-k3-ns0024-completed-frame-comparison-v1.json": "225c8e0e47dc1cedcb9f5308c621e259f0a46aa047aa0054cb8f63c924c27af0",
+    "artifacts/generated-results/elkies-k3-ns0024-relative-u-degree2-fibre-summary-v1.json": "e40fa57e678e00f0eb1eb40591674fc48f24504c5fcd404e86e73864c08bcdd1",
+    "artifacts/generated-results/elkies-k3-ns0024-relative-u-degree3-fibre-summary-v1.json": "14c275a5207574ff79e96f63b664cd6100d8a9946b0133bf12a1c3b5e49afbb6",
+    "artifacts/generated-results/elkies-k3-ns0024-relative-u-degree4-fibre-summary-v1.json": "1b4343610db08cd14e6c669a7b5287783533fd3b838db0772a9e2df13a35cf97"
+  },
+  "known_route_comparison": {
+    "completed_stages": 4,
+    "isometric_matches_to_known_route": 0
+  },
+  "proof_boundary": {
+    "not_proved": "Nonexistence outside the declared boxes; a global degree or t bound; a nef/effective zero, horizontal-wall audit, equation, rational map, or field of definition.",
+    "proved": "Complete exact primitive-fibre enumeration modulo the source root Weyl group for d=2,t=0..18 and d=3,4,t=0..4, including the zero Mordell-Weil projection, with exact child root ranks."
+  },
+  "schema": "elkies-k3.ns0024-relative-u-first-edge-obstruction.v1",
+  "searches": [
+    {
+      "complete_modulo": "source root Weyl group",
+      "degree": 2,
+      "dominant_orbits": 431174,
+      "maximum_child_mw_rank": 5,
+      "primitive_fibres": 429877,
+      "q_values": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40
+      ],
+      "root_rank_five_target_profiles": 0,
+      "t_values": [
+        0,
+        18
+      ]
+    },
+    {
+      "complete_modulo": "source root Weyl group",
+      "degree": 3,
+      "dominant_orbits": 13711,
+      "maximum_child_mw_rank": 7,
+      "primitive_fibres": 13704,
+      "q_values": [
+        9,
+        12,
+        15,
+        18,
+        21
+      ],
+      "root_rank_five_target_profiles": 0,
+      "t_values": [
+        0,
+        4
+      ]
+    },
+    {
+      "complete_modulo": "source root Weyl group",
+      "degree": 4,
+      "dominant_orbits": 79701,
+      "maximum_child_mw_rank": 8,
+      "primitive_fibres": 79375,
+      "q_values": [
+        16,
+        20,
+        24,
+        28,
+        32
+      ],
+      "root_rank_five_target_profiles": 0,
+      "t_values": [
+        0,
+        4
+      ]
+    }
+  ],
+  "source": "completed NS0024 D5+E8/MW4 frame",
+  "status": "PASS_EXACT_BOUNDED_FIRST_EDGE_OBSTRUCTION",
+  "target": "completed NS0024 3A1+A2/MW12 frame"
+}

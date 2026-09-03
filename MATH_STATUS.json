@@ -37309,7 +37309,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:51cd30ab81bf871c5176f852235f02fbe1ac219b38cd98f604bfeaf7e39d0ded",
+      "artifact_hash": "sha256:6ebd8fef90954653c38e77dcaa1bdfc0accc0511eadf4d103bd75593e66b9605",
       "software_lock": [
         "elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage",
         "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json"
@@ -38013,7 +38013,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:6e9eb4538e7e61e61cd20de96a1c97c351ce3c306d8d1ed542fc9e656166da98",
+      "artifact_hash": "sha256:2d6d43e28c836f577b96e7defa860324f4eed3c496c94cde30714ef8bf629802",
       "software_lock": [
         "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
         "elkies-k3/scripts/audit_q80_third_q12_quartic_denominator_candidate.sage",
@@ -38049,12 +38049,47 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:6e9eb4538e7e61e61cd20de96a1c97c351ce3c306d8d1ed542fc9e656166da98",
+      "artifact_hash": "sha256:2d6d43e28c836f577b96e7defa860324f4eed3c496c94cde30714ef8bf629802",
       "software_lock": [
         "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
         "artifacts/generated-results/elkies-k3-q80-third-q12-exact-discriminant-specialization-v1.json",
         "artifacts/local/elkies-k3/q80-third-q12-exact-quartic-subresultant-checkpoint-v1.pickle",
         "artifacts/local/elkies-k3/q80-third-q12-exact-quartic-subresultant-checkpoint-v1.pickle.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-Q80-THIRD-Q12-EXACT-GENERIC-QUARTICS",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact generic quartic-square factorization in the Q80 third-q12 discriminant",
+      "scope": "For the exact characteristic-zero third-q12 genus-one pencil at u=-2 over the certified quadratic descent field, let R be the cubic discriminant after removal of the already proved generic triple linear factor. Starting from the exact specialization R(0,W)=Q0(W)^2*D0(W), the differentiated identity R1=2*Q0*Q1*D0+Q0^2*D1 uniquely determines the degree-at-most-three tangent Q1 because gcd(Q0,D0)=1. Combining Q0 and Q1 with the independently held-out-tested shape Q=W^4+sum_i N_i(V)/(V+h0) W^i, deg N_i at most one, recovers all sixteen cleared numerator coordinates; every coordinate replays the 19^12288 lift. The cleared quartic Qhat=(V+h0)Q has maximum coordinate height 409,278 bits. A full exact two-variable discriminant expansion and five fraction-free W-elimination steps prove that (V+h0)^2*R has zero remainder modulo Qhat^2. All ten apparent powers of V+h0 cancel from the pseudo-quotient, leaving an honest polynomial complementary quartic in W of maximum coordinate height 5,938,792 bits. Thus the generic characteristic-zero factor pattern is exactly (1,3),(4,2),(4,1). This does not construct the Jacobian, its minimal model, or birational maps.",
+      "canonical_source": "elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR",
+        "EC-K3-Q80-THIRD-Q12-EXACT-SPECIALIZED-QUARTICS"
+      ],
+      "checker": "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:2d6d43e28c836f577b96e7defa860324f4eed3c496c94cde30714ef8bf629802",
+      "software_lock": [
+        "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
+        "artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-quartic-factorization-v1.json",
+        "artifacts/local/elkies-k3/q80-third-q12-exact-generic-quartic-jet-v1.json"
       ],
       "supersedes_notes": [],
       "supersedes": [],
@@ -38078,6 +38113,7 @@
       "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
       "dependencies": [
         "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
+        "EC-K3-ELKIES-2026-R17",
         "EC-K3-E6A1-RHO19-ORBIT103-ARITHMETIC-RANK2",
         "EC-K3-RES-QBC-E6-RANK4-LINEAR-CHORD",
         "EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER"
@@ -38087,7 +38123,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:68e213d911006214229395981d6c37624d46fcde377902e6c9d1e7428d1ff3dc",
+      "artifact_hash": "sha256:5da83ef3e89133689ecc4ad364372bd57a5ffc16fa8a94cd58049c5da78b9668",
       "software_lock": [
         "elkies-k3/scripts/certify_arithmetic_rank_transfer.sage",
         "elkies-k3/data/arithmetic/arithmetic-marking-v1.schema.json",
@@ -38098,9 +38134,86 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
+        "REPRODUCE.md",
         "elkies-k3/ARITHMETIC_RANK_TRANSFER_2026-09-03.md",
         "elkies-k3/scripts/README.md",
         "elkies-k3/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-RELATIVE-U-BRIDGE-LIFTING",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Relative-U bridge lifting and bounded marked-fibration completeness",
+      "scope": "Let L=U+W(-1), with U carrying the ordered Gram matrix J, and let U' be another ordered embedded hyperbolic plane with cross-pairing matrix A. The orthogonal projections w_1,w_2 of its basis into W have positive Gram G_A=A^t*J*A-J. Conversely every ordered integral representation of G_A in W reconstructs by u'_j=(J*A)_(bullet j)+w_j an automatically primitive, integrally split U'. If B=<w_1,w_2>, K=B^perp in W and C is the saturation of B, then det(G_A)=[C:B]^2 det(C). For elliptic markings A has rows (d,d+s) and (d+t,d+s+t+z), with d=F.F', s=F.O', t=O.F', z=O.O'. Hence every finite box of these four intersections admits a complete terminating enumeration of literal ordered U' markings. The physical interpretation of s,t,z requires effective-zero audits, and a downstream cost bound gives finiteness only when it provably bounds the four intersections. The exact regression recovers all stored fibre degrees and both saturated bridges on 42 recorded clicks; all 84 oriented projected pairs have index one. A separate binary example realizes index four. No nefness, zero effectivity, equation, rational map, global cost bound, or universal bridge-determinant bound is claimed.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [],
+      "checker": "elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage",
+      "proof_type": "formal",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6ebd8fef90954653c38e77dcaa1bdfc0accc0511eadf4d103bd75593e66b9605",
+      "software_lock": [
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage",
+        "artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json"
+      ],
+      "supersedes_notes": [
+        "relative marked fibrations are represented only by abstract rank-two bridges or positive-definite neighbor paths"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Bounded relative-U obstruction for the first completed NS0024 edge",
+      "scope": "For the completed NS0024 D5+E8/MW4 source frame, write a prospective primitive fibre as F'=(d+t)F+d(O+F)+w, so q=d(d+t), where d=F.F' and t=O.F'. Complete root-Weyl enumeration, including the zero Mordell-Weil projection, tests d=2 with t=0 through 18 and d=3,4 with t=0 through 4. The three searches classify respectively 431174, 13711, and 79701 dominant orbits, of which 429877, 13704, and 79375 are primitive. Their maximum child Mordell-Weil ranks are 5, 7, and 8; no root-rank-five/MW12 child occurs. Therefore no choice of the second U' basis vector can produce the requested completed 3A1+A2/MW12 first edge in these declared boxes, and hence the requested three-edge chain has no lift there. Exact integral isometry also shows that none of the four newly completed frames is a frame on the known 13-edge NS0024 route, even where ADE/MW labels agree. This is bounded nonexistence only: larger t, higher degree, nefness, effective zeros, equations, rational maps, and fields of definition remain open. Since no target fibre exists in the audited boxes, there is no prospective primitive U' marking to output; no abstract Kneser path is substituted for one.",
+      "canonical_source": "elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-RELATIVE-U-BRIDGE-LIFTING",
+        "EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER"
+      ],
+      "checker": "elkies-k3/scripts/certify_ns0024_relative_u_first_edge.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:818ed4cfb270e17de83a3bd69afeb4999cfc274ac4c921aac64e536194e1bd66",
+      "software_lock": [
+        "elkies-k3/scripts/certify_ns0024_relative_u_first_edge.py",
+        "elkies-k3/scripts/search_ns0024_relative_u_bridge_lifts.sage",
+        "elkies-k3/scripts/search_root_adapted_weyl_neighbors.sage",
+        "artifacts/generated-results/elkies-k3-ns0024-completed-d5e8-root-adapted-frame-v1.txt",
+        "artifacts/generated-results/elkies-k3-ns0024-completed-frame-comparison-v1.json",
+        "artifacts/generated-results/elkies-k3-ns0024-relative-u-degree2-fibre-summary-v1.json",
+        "artifacts/generated-results/elkies-k3-ns0024-relative-u-degree3-fibre-summary-v1.json",
+        "artifacts/generated-results/elkies-k3-ns0024-relative-u-degree4-fibre-summary-v1.json",
+        "artifacts/generated-results/elkies-k3-ns0024-relative-u-first-edge-obstruction-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md",
+        "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],

@@ -8,6 +8,10 @@ represents ``G_A=A^t*J*A-J`` in the current positive frame, constructs the
 literal primitive target U, and tests its orthogonal frame against the declared
 target by roots and exact integral isometry.
 
+Positive-definite ``G_A`` gives the generic rank-two relative bridge.  The
+positive-semidefinite rank-one case is retained as well, notably when the two
+markings share their effective zero and ``O.O'=-2``.
+
 This is a bounded lattice search.  It does not certify nefness, an effective
 irreducible zero, equations, or rational maps.
 """
@@ -134,6 +138,10 @@ def signed_vectors_of_norm(gram, norm, cache):
     key = (tuple(map(tuple, rows(gram))), int(norm))
     if key in cache:
         return cache[key]
+    if norm == 0:
+        answer = [vector(ZZ, [0] * gram.nrows())]
+        cache[key] = answer
+        return answer
     result = pari(gram).qfminim(int(norm))
     positive = [
         vector(ZZ, column)
@@ -310,12 +318,37 @@ def search_edge(
                         ],
                     )
                     G_A = A.transpose() * J * A - J
-                    if not G_A.is_positive_definite():
-                        counters["non_positive_grams"] += 1
+                    relative_rank = G_A.rank()
+                    positive_semidefinite = (
+                        G_A[0, 0] >= 0
+                        and G_A[1, 1] >= 0
+                        and G_A.det() >= 0
+                    )
+                    if not positive_semidefinite:
+                        counters["non_semidefinite_grams"] += 1
                         continue
-                    reduction = matrix(ZZ, pari(G_A).qflllgram()).transpose()
+                    if relative_rank == 2:
+                        reduction = matrix(ZZ, pari(G_A).qflllgram()).transpose()
+                    elif relative_rank == 1:
+                        kernel = G_A.right_kernel_matrix().row(0)
+                        kernel_0, kernel_1 = map(ZZ, kernel)
+                        gcd_value, bezout_0, bezout_1 = kernel_0.xgcd(kernel_1)
+                        assert gcd_value == 1
+                        reduction = matrix(
+                            ZZ,
+                            [
+                                [bezout_1, -bezout_0],
+                                [kernel_0, kernel_1],
+                            ],
+                        )
+                    else:
+                        reduction = identity_matrix(ZZ, 2)
                     assert abs(int(reduction.det())) == 1
                     reduced_gram = reduction * G_A * reduction.transpose()
+                    if relative_rank == 1:
+                        assert reduced_gram[0, 0] > 0
+                        assert reduced_gram[0, 1] == reduced_gram[1, 0] == 0
+                        assert reduced_gram[1, 1] == 0
                     shell_1 = signed_vectors_of_norm(
                         source, int(reduced_gram[0, 0]), shell_cache
                     )
@@ -327,7 +360,7 @@ def search_edge(
                         dominant = weyl_dominant(value, source, simple_roots)
                         shell_1_orbits[tuple(dominant)] = dominant
                     shell_1 = [shell_1_orbits[key] for key in sorted(shell_1_orbits)]
-                    counters["positive_grams"] += 1
+                    counters["positive_semidefinite_grams"] += 1
                     counters["first_shell_vectors"] += len(shell_1)
                     counters["second_shell_vectors"] += len(shell_2)
                     inverse_reduction = reduction.inverse().change_ring(ZZ)
@@ -420,6 +453,7 @@ def search_edge(
                                     },
                                     "cross_pairing_A": rows(A),
                                     "positive_projection_gram_G_A": rows(G_A),
+                                    "relative_position_rank": int(relative_rank),
                                     "binary_reduction": {
                                         "basis_change": rows(reduction),
                                         "reduced_gram": rows(reduced_gram),
@@ -469,8 +503,13 @@ def main():
     assert all(value >= 0 for value in (arguments.max_s, arguments.max_t, arguments.max_z))
     s_values = sorted(set(arguments.s_values or range(arguments.max_s + 1)))
     t_values = sorted(set(arguments.t_values or range(arguments.max_t + 1)))
+    # Keep the historical nonnegative box as the default.  The shared-zero
+    # value -2 is supported explicitly via ``--z-values -2 ...``; on large
+    # root systems its rank-one shell should normally be handled with the
+    # root-adapted orbit enumerator rather than a full qfminim shell.
     z_values = sorted(set(arguments.z_values or range(arguments.max_z + 1)))
-    assert all(value >= 0 for value in s_values + t_values + z_values)
+    assert all(value >= 0 for value in s_values + t_values)
+    assert all(value == -2 or value >= 0 for value in z_values)
 
     frames, multipliers, certificate, expected = completed_ns0024_frames()
     known_frames, known_bases = known_ns0024_route_frames()
@@ -575,7 +614,8 @@ def main():
             "F_dot_O_prime_values": s_values,
             "O_dot_F_prime_values": t_values,
             "O_dot_O_prime_values": z_values,
-            "nonnegative_intersections_only": True,
+            "physical_intersection_values_only": True,
+            "shared_zero_value": -2,
         },
         "edges": edges,
         "input_hashes": {

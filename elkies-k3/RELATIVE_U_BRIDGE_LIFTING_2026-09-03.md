@@ -1,4 +1,7 @@
-# Relative-`U` bridge lifting and the first NS0024 search
+# Cross-Gram reconstruction of relative `U`-embeddings and the first NS0024 search
+
+<!-- status-consumer: EC-K3-RELATIVE-U-BRIDGE-LIFTING 800e22abf69b91aa -->
+<!-- status-consumer: EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION d57544697149506f -->
 
 Date: 2026-09-03
 
@@ -6,19 +9,20 @@ Date: 2026-09-03
 
 The proposed matrix identity is correct and gives a complete finite
 parameterization in every declared box of the four marked intersections.  The
-canonical statement and proof are Theorem H-1 and Corollary H-1a in
+canonical statement and proof are Lemma H-1 and Corollary H-1a in
 [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md).
 The necessary qualification is that `F.O'`, `O.F'`, and `O.O'` have their
 physical compiler interpretation only after both derived `(-2)` classes have
 been certified as the actual effective zero curves.  A splitting mate that has
 not passed the chamber audit is only a lattice pseudo-zero.
 
-The identity was replayed on all 42 recorded integral-rank-transfer clicks.
+The identity was replayed on all 42 recorded fibration hops.
 Every stored old-fibre degree is recovered from `A_11`, and the saturation of
 the two projected vectors recovers the stored bridge in both orientations.
 All 84 oriented projected pairs happen to have saturation index one.  Thus the
 regression verifies the square-index formula but does not supply an example
-with a nontrivial correction.  The exact record is
+with a nontrivial correction.  The theorem note includes a separate exact
+binary example with index four.  The exact regression record is
 [`elkies-k3-relative-u-bridge-lifting-regression-v1.json`](../artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json).
 
 ## The finite theorem
@@ -47,11 +51,14 @@ provably bounds those four integers; that coercivity hypothesis cannot be
 omitted.
 
 The literature search found the ingredients separately rather than this
-relative `2 by 2` packaging: primitive `U` embeddings are the standard lattice
-encoding of Jacobian elliptic K3 fibrations, and saturation/overlattice
-corrections belong to Nikulin's discriminant-form formalism.  No source checked
-states the displayed cross-pairing identity as a named theorem; the proof here
-is elementary integral lattice algebra.
+relative `2 by 2` packaging.  Primitive `U` embeddings are the standard
+lattice encoding of Jacobian elliptic K3 fibrations; Brandhorst--Elkies,
+Lemmas 2.5--2.6, connect their relative position to neighbouring frames; and
+saturation/overlattice corrections belong to Nikulin's discriminant-form
+formalism.  No source checked states the displayed cross-pairing identity as a
+named theorem, but the proof is elementary integral lattice algebra and the
+identity is treated here as a tailored lemma, not a novelty claim.  The new
+results are the 84-presentation replay and the bounded NS0024 obstruction.
 
 ## NS0024 prospective result
 
@@ -134,7 +141,7 @@ The input frame is
 ## Proof boundary
 
 Proved here: the relative-`U` parameterization, automatic primitivity, the
-square-index bridge correction, bounded finiteness, the 42-click regression,
+square-index bridge correction, bounded finiteness, the 42-hop regression,
 and the stated exact first-edge nonexistence boxes.
 
 Not proved here: a global degree bound, a bound on `t`, existence outside the

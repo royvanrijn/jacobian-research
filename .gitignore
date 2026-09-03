@@ -98,6 +98,7 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-core-generation-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-reverse-theta-masks-v1.json
+!/artifacts/generated-results/elkies-k3-integral-rank-transfer-claim-provenance-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-weil-compression-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-neighbors-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-controls-v1.json
@@ -111,6 +112,8 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-small-genus-defect-graphs-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-root-system-signature-v1.json
 !/artifacts/generated-results/elkies-k3-ns0024-inverse-ade-mutation-v1.json
+!/artifacts/generated-results/elkies-k3-inverse-ade-target-planner-benchmark-v1.json
+!/artifacts/generated-results/elkies-k3-inverse-ade-foundry-readiness-v1.json
 !/artifacts/generated-results/elkies-k3-rootless-j1-uniform-bound-v1.json
 !/artifacts/generated-results/elkies-k3-arithmetic-rank-transfer-controls-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json
@@ -144,6 +147,8 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-q80-third-q12-pencil-basis-heights-v1.json
 !/artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-linear-conductor-v1.json
 !/artifacts/generated-results/elkies-k3-q80-third-q12-exact-discriminant-specialization-v1.json
+!/artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-quartic-factorization-v1.json
+!/artifacts/generated-results/elkies-k3-q80-third-q12-quartic-jet-direct-division-v1.json
 !/artifacts/generated-results/elkies-k3-q80-third-q12-quartic-denominator-candidate-v1.json
 !/artifacts/generated-results/elliptic-curves/
 !/artifacts/generated-results/elliptic-curves/record_height_lattices_28_29_273_302_v1.json

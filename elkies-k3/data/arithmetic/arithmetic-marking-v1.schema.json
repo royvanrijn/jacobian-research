@@ -63,6 +63,40 @@
           "root_basis_columns": {
             "$ref": "#/$defs/vector_list"
           },
+          "component_labels": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "label",
+                "ns_class",
+                "expected_orbit_size",
+                "field_of_definition"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "ns_class": {
+                  "$ref": "#/$defs/integer_vector"
+                },
+                "expected_orbit_size": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "field_of_definition": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
           "expected": {
             "type": "object",
             "required": ["geometric_mw_rank", "arithmetic_mw_rank"],
@@ -116,6 +150,12 @@
         "items": {
           "type": "integer"
         }
+      }
+    },
+    "integer_vector": {
+      "type": "array",
+      "items": {
+        "type": "integer"
       }
     }
   },

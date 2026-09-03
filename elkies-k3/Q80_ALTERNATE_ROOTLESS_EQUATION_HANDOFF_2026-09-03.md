@@ -283,6 +283,60 @@ exact `Q^2` division, and returned `PASS_CHECK` with the same digest.  This is
 an exact characteristic-zero theorem at `V=0`; it does not yet recover the
 generic quartics over the full `V`-line or the Jacobian.
 
+<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-GENERIC-QUARTICS aa704dc4685e4c9b -->
+
+## Generic quartic breakthrough: 2026-09-03
+
+The exact `V=0` factors remove the projective ambiguity that defeated all
+coefficientwise and blockwise reconstruction attempts.  Write the monic
+linear-stripped discriminant as
+
+```text
+R(V,W) = Q(V,W)^2 D(V,W).
+```
+
+From `R(0,W)=Q0(W)^2 D0(W)`, exact differentiation gives
+
+```text
+R1 = 2 Q0 Q1 D0 + Q0^2 D1.
+```
+
+Since `gcd(Q0,D0)=1`, reduction modulo `Q0` uniquely determines the monic
+quartic tangent `Q1`.  It has maximum coordinate height 417,748 bits.  Combining
+`Q0,Q1` with the already held-out-tested shape
+
+```text
+Q(V,W) = W^4 + sum_i N_i(V)/(V+h0) W^i,
+deg N_i <= 1,
+```
+
+recovers all sixteen rational numerator coordinates exactly.  Every coordinate
+replays the independent `19^12288` lift; the cleared numerator `Qhat=(V+h0)Q`
+has maximum coordinate height 409,278 bits.
+
+This candidate then passes the hard characteristic-zero gate.  A full exact
+two-variable discriminant expansion, literal removal of `(W+r)^3`, and five
+fraction-free `W`-elimination steps give zero remainder in
+
+```text
+(V+h0)^2 Delta/(W+r)^3  mod  Qhat(V,W)^2.
+```
+
+All ten apparent powers of `V+h0` cancel from the pseudo-quotient.  The
+complement is therefore an honest polynomial quartic in `W`, of maximum
+coordinate height 5,938,792 bits, rather than a residual rational function.
+Thus the generic factor pattern `(1,3),(4,2),(4,1)` is now exact over the
+characteristic-zero quadratic descent field.  The canonical factor artifact
+is
+[`../artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-quartic-factorization-v1.json`](../artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-quartic-factorization-v1.json).
+
+A separate Sage-polynomial implementation also completed the three blind
+factor replays at `p=163,191,199`, two direct divisions by `Qhat`, and the full
+multiplication identity before entering an avoidable decimal-integer hashing
+bottleneck.  Its digest has been changed to canonical binary integer encoding
+and a persistent certificate replay is in progress.  The generic Jacobian,
+minimal model, and birational maps remain open.
+
 ## Next gates
 
 Retain the existing `omega` presentation for the current p-adic pipeline.
@@ -294,14 +348,18 @@ joint evaluation lattices have already failed the independent `p=199` replay;
 they should not simply be repeated in the `delta` basis.  Mere rational
 content extraction is closed by the 7--12-bit content calculation.
 
-The specialized degree-four gcd and exact square division are now certified.
-The next justified compiler should use this exact `V=0` quartic together with
-the candidate common denominator `H(V)` and the untouched-prime factorizations
-to recover the generic `Q(V,W)` projectively.  It must finish by literal exact
-division in the original two-variable characteristic-zero discriminant.  A
-general expanded exact gcd and another unstructured high-precision `j`-map LLL
-run have both reached their useful limits.  In parallel, the exact specialized
-factors now provide a normalization anchor for the invariant-first computation
+The specialized and generic quartic factors are now certified.  The next
+justified compiler should recover the exact integral-basis corrections `A,B`
+in
+
+```text
+e = (old_x^2 + A old_x + B)/(L Q),
+```
+
+using the same exact `V=0`-plus-tangent method and the existing trace,
+second-symmetric, and determinant divisibility identities.  This converts the
+normalization of the cubic cover from p-adic candidate data to exact
+characteristic-zero data.  It should then feed the invariant-first computation
 
 ```text
 exact factored pencil -> j -> (c4^3,Delta) -> minimal Jacobian -> maps.
@@ -343,6 +401,11 @@ python3 \
   --attempt-subresultant-prs \
   --output artifacts/generated-results/elkies-k3-q80-third-q12-exact-discriminant-specialization-v1.json \
   --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage \
+  --attempt-generic-quartic-division \
+  --output artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-quartic-factorization-v1.json
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/audit_q80_third_q12_quartic_denominator_candidate.sage \

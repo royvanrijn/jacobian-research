@@ -4,7 +4,8 @@
 status: ACTIVE_PROOF
 claim: exact finite Galois-module rank transfer, H3/E6 controls, and a
        fail-closed NS0024 arithmetic-promotion gate
-inputs: the pinned R17 Gram and existing H3, E6, and NS0024 certificates
+inputs: the pinned R17 Gram, exact rational H3 sections, and existing H3, E6,
+        and NS0024 certificates
 outputs: elkies-k3-arithmetic-rank-transfer-controls-v1.json
 
 The reusable verifier works with a common geometric Neron--Severi lattice,
@@ -21,7 +22,8 @@ import hashlib
 import json
 from pathlib import Path
 
-from sage.all import QQ, ZZ, block_diagonal_matrix, identity_matrix, matrix
+from jsonschema import Draft202012Validator
+from sage.all import QQ, ZZ, block_diagonal_matrix, identity_matrix, matrix, vector
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -29,6 +31,10 @@ GEN = ROOT / "artifacts/generated-results"
 MARKING_SCHEMA = ROOT / "elkies-k3/data/arithmetic/arithmetic-marking-v1.schema.json"
 R17_GRAM = ROOT / "elkies-k3/data/lattice/rank17_gram.txt"
 H3_ENDPOINT = GEN / "elkies-k3-h3-q12o5867-endpoint-certificate.json"
+H3_PUBLISHED_TARGET = GEN / "elkies-2026-published-r17-target.json"
+H3_PUBLISHED_SECTIONS = (
+    ROOT / "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json"
+)
 E6_INCIDENCE = GEN / "elkies-k3-e6-rank4-linear-chord-incidence-v1.json"
 E6_ORBIT103 = (
     GEN / "elkies-k3-e6a1-rho19-orbit103-arithmetic-orbit96-audit-v1.json"
@@ -128,6 +134,8 @@ def extend_to_basis(columns, ambient_rank):
 
 
 def validate_marking(marking):
+    schema = json.loads(MARKING_SCHEMA.read_text())
+    Draft202012Validator(schema).validate(marking)
     gram = matrix(ZZ, marking["gram"])
     if not gram.is_square() or gram.det() == 0:
         raise ArithmeticError(f"{marking['id']} has a degenerate NS Gram matrix")
@@ -169,7 +177,9 @@ def validate_marking(marking):
             restricted_action(action, root_basis, f"{item['id']} root space")
             for action in group
         ]
-        fixed_root_rank = common_fixed_basis(root_actions, root_basis.ncols()).nrows()
+        fixed_root_rank = common_fixed_rational_basis(
+            root_actions, root_basis.ncols()
+        ).nrows()
         geometric_rank = rank - 2 - root_basis.ncols()
         arithmetic_rank = fixed_ns_rank - 2 - fixed_root_rank
         w_basis = (u_basis.transpose() * gram).right_kernel().basis_matrix().transpose()
@@ -198,6 +208,48 @@ def validate_marking(marking):
         fixed_mw_basis = common_fixed_rational_basis(quotient_actions, geometric_rank)
         if fixed_mw_basis.nrows() != arithmetic_rank:
             raise ArithmeticError(f"{item['id']} quotient fixed-space rank disagrees with A2.2")
+        trivial_basis = u_basis.augment(root_basis)
+        full_ns_basis = extend_to_basis(trivial_basis, rank)
+        ns_quotient_actions = []
+        for action in group:
+            conjugated = full_ns_basis.inverse() * action * full_ns_basis
+            trivial_rank = trivial_basis.ncols()
+            if trivial_rank and conjugated[trivial_rank:, :trivial_rank] != 0:
+                raise ArithmeticError(f"{item['id']} NS quotient action is not well-defined")
+            ns_quotient_actions.append(conjugated[trivial_rank:, trivial_rank:])
+        if [action.trace() for action in ns_quotient_actions] != [
+            action.trace() for action in quotient_actions
+        ]:
+            raise ArithmeticError(f"{item['id']} two MW quotient constructions disagree")
+        section_orbits = []
+        for section in item.get("sections", []):
+            section_class = matrix(ZZ, rank, 1, section["ns_class"])
+            coordinates = full_ns_basis.inverse() * section_class
+            quotient_coordinates = vector(
+                QQ, coordinates.column(0)[trivial_basis.ncols():]
+            )
+            orbit = {
+                tuple(action * quotient_coordinates)
+                for action in ns_quotient_actions
+            }
+            stabilizer_order = sum(
+                int(action * quotient_coordinates == quotient_coordinates)
+                for action in ns_quotient_actions
+            )
+            orbit_size = len(orbit)
+            if orbit_size != section["expected_orbit_size"]:
+                raise ArithmeticError(f"{item['id']} section orbit changed for {section['label']}")
+            if stabilizer_order * orbit_size != len(group):
+                raise ArithmeticError(f"{item['id']} section orbit-stabilizer check failed")
+            section_orbits.append(
+                {
+                    "label": section["label"],
+                    "quotient_coordinates": [str(entry) for entry in quotient_coordinates],
+                    "orbit_size": orbit_size,
+                    "stabilizer_order": stabilizer_order,
+                    "declared_field_of_definition": section["field_of_definition"],
+                }
+            )
         expected = item["expected"]
         if geometric_rank != expected["geometric_mw_rank"]:
             raise ArithmeticError(f"{item['id']} geometric MW rank changed")
@@ -225,6 +277,14 @@ def validate_marking(marking):
                 "rational_fixed_mw_basis_in_quotient_coordinates": rational_matrix_rows(
                     fixed_mw_basis
                 ),
+                "galois_action_on_root_basis": [
+                    rational_matrix_rows(action) for action in root_actions
+                ],
+                "galois_action_on_mw_quotient": [
+                    rational_matrix_rows(action) for action in ns_quotient_actions
+                ],
+                "component_labels": item.get("component_labels", []),
+                "section_orbits": section_orbits,
                 "character_traces": traces,
             }
         )
@@ -270,7 +330,7 @@ def validate_marking(marking):
     }
 
 
-def h3_marking(endpoint):
+def h3_marking(endpoint, published_target, published_sections):
     r17 = matrix(ZZ, [
         [int(entry) for entry in line.split()]
         for line in R17_GRAM.read_text().splitlines()
@@ -284,10 +344,40 @@ def h3_marking(endpoint):
         raise ArithmeticError("H3 geometric Picard rank changed")
     if endpoint["mordell_weil"]["full_geometric_mordell_weil_rank"] != 17:
         raise ArithmeticError("H3 geometric MW rank changed")
+    if published_target.get("status") != "PASS_EXACT_PUBLISHED_R17_IS_PINNED_R17":
+        raise ArithmeticError("published H3 R17 certificate is not exact")
+    if published_sections.get("status") != "PASS_TRANSCRIBED_PUBLISHED_R17_SECTIONS_AND_CHORDS":
+        raise ArithmeticError("published H3 section transcription is not exact")
+    if len(published_sections["sections"]) != 17:
+        raise ArithmeticError("published H3 rational section count changed")
+    height = published_target["published_height_lattice"]
+    equation = published_target["published_equation"]
+    identification = published_target["pinned_identification"]
+    if (
+        height["rank"] != 17
+        or height["determinant"] != 948
+        or equation["published_section_identities"] != 17
+        or not equation["rootless_semistable"]
+        or abs(identification["basis_change_determinant"]) != 1
+    ):
+        raise ArithmeticError("published H3 rational R17 evidence changed")
     gram = block_diagonal_matrix(matrix(ZZ, [[0, 1], [1, 0]]), -r17)
     identity = identity_matrix(ZZ, 19)
     fibre = [1] + [0] * 18
     mate = [0, 1] + [0] * 17
+    sections = []
+    for index in range(17):
+        mw_vector = [0] * 17
+        mw_vector[index] = 1
+        section_class = [int((r17[index, index] - 2) / 2), 1] + mw_vector
+        sections.append(
+            {
+                "label": f"rational_pinned_R17_basis_{index + 1}",
+                "ns_class": section_class,
+                "expected_orbit_size": 1,
+                "field_of_definition": "QQ(t)",
+            }
+        )
     return {
         "id": "H3_QQ_rootless_R17",
         "ground_field": "QQ",
@@ -298,6 +388,8 @@ def h3_marking(endpoint):
                 "id": "rootless_R17",
                 "u_basis_columns": [fibre, mate],
                 "root_basis_columns": [],
+                "component_labels": [],
+                "sections": sections,
                 "expected": {"geometric_mw_rank": 17, "arithmetic_mw_rank": 17},
             }
         ],
@@ -323,6 +415,18 @@ def e6_incidence_marking(incidence):
         root = [0] * 19
         root[index] = 1
         roots.append(root)
+    section_records = []
+    for label, index in zip(["P", "Q", "R1", "R2"], range(15, 19)):
+        section_class = [0] * 19
+        section_class[index] = 1
+        section_records.append(
+            {
+                "label": label,
+                "ns_class": section_class,
+                "expected_orbit_size": 2,
+                "field_of_definition": "QQ(k)(r), r^2=k^4+6*k^2+13",
+            }
+        )
     return {
         "id": "E6_rank4_unordered_incidence",
         "ground_field": "QQ(k)",
@@ -333,6 +437,8 @@ def e6_incidence_marking(incidence):
                 "id": "two_IVstar_I2",
                 "u_basis_columns": [fibre, zero_plus_fibre],
                 "root_basis_columns": roots,
+                "component_labels": ns["basis"][2:15],
+                "sections": section_records,
                 "expected": {"geometric_mw_rank": 4, "arithmetic_mw_rank": 2},
             }
         ],
@@ -461,6 +567,8 @@ def build_payload():
         MARKING_SCHEMA,
         R17_GRAM,
         H3_ENDPOINT,
+        H3_PUBLISHED_TARGET,
+        H3_PUBLISHED_SECTIONS,
         E6_INCIDENCE,
         E6_ORBIT103,
         NS0024_ROUTE,
@@ -469,10 +577,12 @@ def build_payload():
         if not path.exists():
             raise FileNotFoundError(path)
     endpoint = json.loads(H3_ENDPOINT.read_text())
+    published_target = json.loads(H3_PUBLISHED_TARGET.read_text())
+    published_sections = json.loads(H3_PUBLISHED_SECTIONS.read_text())
     incidence = json.loads(E6_INCIDENCE.read_text())
     orbit103 = json.loads(E6_ORBIT103.read_text())
     ns0024 = json.loads(NS0024_ROUTE.read_text())
-    h3_input = h3_marking(endpoint)
+    h3_input = h3_marking(endpoint, published_target, published_sections)
     e6_input = e6_incidence_marking(incidence)
     controls = [validate_marking(h3_input), validate_marking(e6_input)]
     transfer_regression = validate_marking(abstract_transfer_marking())

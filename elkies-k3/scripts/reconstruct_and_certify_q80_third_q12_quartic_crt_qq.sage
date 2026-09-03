@@ -531,6 +531,7 @@ for v_degree, w_degree, x_degree, encoded in pencil["moving_equation"][
 def blind_replays(coordinates):
     records = []
     for prime_integer in BLIND_PRIMES:
+        print(f"Q80Q12QJET|stage=blind_replay|prime={prime_integer}", flush=True)
         prime = ZZ(prime_integer)
         constants = GF(prime)
         if constants(delta_square).is_square():
@@ -732,15 +733,26 @@ def exact_divide_by_P(dividend, divisor, H):
 
 def polynomial_digest(value):
     digest = hashlib.sha256()
+
+    def update_integer(integer):
+        integer = ZZ(integer)
+        magnitude = abs(integer)
+        encoded = int(magnitude).to_bytes(
+            max(1, (int(magnitude.nbits()) + 7) // 8),
+            "big",
+        )
+        digest.update(b"-" if integer < 0 else b"+")
+        digest.update(len(encoded).to_bytes(8, "big"))
+        digest.update(encoded)
+
     for w_degree, coefficient in enumerate(w_trim(value)):
         for field_coordinate, polynomial in enumerate(coefficient):
             for v_degree, scalar in enumerate(polynomial.list()):
-                digest.update(
-                    (
-                        f"{w_degree}:{field_coordinate}:{v_degree}:"
-                        f"{scalar.numerator()}/{scalar.denominator()}\n"
-                    ).encode()
-                )
+                digest.update(w_degree.to_bytes(4, "big"))
+                digest.update(field_coordinate.to_bytes(1, "big"))
+                digest.update(v_degree.to_bytes(4, "big"))
+                update_integer(scalar.numerator())
+                update_integer(scalar.denominator())
     return digest.hexdigest()
 
 
@@ -754,6 +766,7 @@ def maximum_bits(value):
 
 
 def exact_division_certificate(coordinates):
+    print("Q80Q12QJET|stage=build_exact_discriminant", flush=True)
     cubic_coefficients = [[KZERO] for _ in range(4)]
     for v_degree, w_degree, x_degree, pair in parsed_terms:
         while len(cubic_coefficients[x_degree]) <= w_degree:
@@ -845,14 +858,19 @@ def exact_division_certificate(coordinates):
     # that its W-leading coefficient already contain H twice.
     H_squared = k_mul(H, H)
     cleared_residual = w_mul(residual, [H_squared])
+    print("Q80Q12QJET|stage=first_exact_P_division", flush=True)
     first_quotient, first_remainder = exact_divide_by_P(cleared_residual, P, H)
     if first_remainder != [KZERO] or len(first_quotient) - 1 != 8:
         raise ArithmeticError("first cleared-quartic division did not give degree eight")
+    print("Q80Q12QJET|stage=second_exact_P_division", flush=True)
     second_quotient, second_remainder = exact_divide_by_P(first_quotient, P, H)
     if second_remainder != [KZERO] or len(second_quotient) - 1 != 4:
         raise ArithmeticError("second cleared-quartic division did not give degree four")
+    print("Q80Q12QJET|stage=direct_multiplication_replay", flush=True)
     if w_mul(w_mul(P, P), second_quotient) != cleared_residual:
         raise ArithmeticError("direct H^2*R=P^2*D multiplication identity failed")
+
+    print("Q80Q12QJET|stage=binary_digests", flush=True)
 
     return {
         "field": f"QQ(delta), delta^2={delta_square}",

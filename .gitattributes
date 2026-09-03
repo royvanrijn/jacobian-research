@@ -1,1 +1,2 @@
 * text=auto eol=lf
+artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-quartic-factorization-v1.json filter=lfs diff=lfs merge=lfs -text

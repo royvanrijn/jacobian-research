@@ -637,6 +637,26 @@ nonleading coefficient of the exponent-two quartic.  It remains candidate
 data for the generic `V`-dependent quartic; exact `Q^2` divisibility is now
 separately proved only at `V=0`, and no Jacobian is claimed.
 
+<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-GENERIC-QUARTICS aa704dc4685e4c9b -->
+
+Recover the generic quartic without another LLL reconstruction by lifting the
+exact repeated factor through the first `V`-adic jet:
+
+```bash
+sage -python \
+  elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage \
+  --attempt-generic-quartic-division \
+  --output artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-quartic-factorization-v1.json
+```
+
+The worker determines `dQ/dV` uniquely from the exact `V=0` factorization,
+replays all sixteen cleared numerator coordinates modulo `19^12288`, expands
+the full characteristic-zero discriminant, and proves zero fraction-free
+remainder after division by the reconstructed quartic square.  The common
+`H` denominator cancels completely from the complementary quartic.  This
+certifies the generic discriminant factors; it does not yet construct the
+Jacobian or its birational maps.
+
 ### Rootless J2 classification controls
 
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J2-COMPLETE c6f054948b04b507 -->
@@ -2805,7 +2825,7 @@ independent residual-rank cross-check, not the primary class certificate.  See
 
 ## Arithmetic rank transfer
 
-<!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 68e213d911006214 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 3031dd2365a29cd5 -->
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -2832,6 +2852,8 @@ marked-`U` corridor.  See
 
 ## Integral rank-transfer glue calculus
 
+<!-- status-consumer: EC-K3-RELATIVE-U-BRIDGE-LIFTING 800e22abf69b91aa -->
+<!-- status-consumer: EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION d57544697149506f -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 7eeeeaa80d9b2bf3 -->
 <!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
 <!-- status-consumer: EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE 52de13c8443f2b7d -->
@@ -2850,6 +2872,7 @@ marked-`U` corridor.  See
 <!-- status-consumer: EC-K3-NS0024-INVERSE-ADE-MUTATION 5c56f07d14129837 -->
 
 ```bash
+python3 build_integral_rank_transfer_claim_provenance.py --check
 sage -python certify_integral_rank_transfer_bridge_reglue.sage --check
 sage -python certify_integral_rank_transfer_bridge_reglue.sage \
   --relative-u-output ../../artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json
@@ -2867,6 +2890,12 @@ sage -python certify_r17_norm12_103b2_mw_glue.sage \
   --skip-specialization-saturation --check
 sage -python build_integral_rank_transfer_glue_census.sage --check
 ```
+
+`build_integral_rank_transfer_claim_provenance.py` checks that every labelled
+theorem, corollary, proposition, lemma, and exact finite control in the
+canonical theorem note has one provenance row, then regenerates the
+machine-readable claim ledger.  It does not change mathematical status or
+checker outputs.
 
 The bridge checker certifies the rank-15 common core, rank-two cyclic bridge
 replacement, graph glue, and exact root transfer for all 42 selected marked

@@ -2880,6 +2880,24 @@ Replay the completed checkpoint, exact division, and 18 MB artifact by adding
 `--check`.  Generic recovery over the full `V`-line, the Jacobian, and its maps
 remain open.
 
+<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-GENERIC-QUARTICS aa704dc4685e4c9b -->
+
+Recover and certify the full generic exponent-two quartic by exact first-order
+lifting from `V=0` followed by fraction-free two-variable division:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage \
+  --attempt-generic-quartic-division \
+  --output artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-quartic-factorization-v1.json
+```
+
+This reconstructs all sixteen cleared numerator coordinates, replays the
+`19^12288` lift, and proves exactly that the full characteristic-zero
+linear-stripped discriminant is divisible by `Q(V,W)^2`.  The complementary
+factor is polynomial and quartic in `W`.  The Jacobian, minimization, and maps
+remain subsequent gates.
+
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J2-COMPLETE c6f054948b04b507 -->
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J1-UNIFORM-BOUND b71330a75ad2c9ad -->
 
@@ -18243,8 +18261,28 @@ sum equals the exact genus mass
 `1463420154787/4131952105881600`.  See
 [`elkies-k3/E6_RANK4_DET78_NIEMEIER_CLASSIFICATION_2026-09-03.md`](elkies-k3/E6_RANK4_DET78_NIEMEIER_CLASSIFICATION_2026-09-03.md).
 
+### Arithmetic rank transfer and marking gate
+
+<!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 3031dd2365a29cd5 -->
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_arithmetic_rank_transfer.sage --check
+```
+
+This replays the finite Galois-module form of Shioda--Tate, including the
+representation-ring rank-transfer identity.  It certifies H3 arithmetic rank
+17, the E6 unordered-incidence fixed rank `2/4`, and the orbit-103
+`2+chi_-3` split.  It applies the same schema fail-closed to the current
+NS0024 completed-core path and records that its ranks `4,12,12,17` remain
+geometric-only until a rational source marking and field-defined target `U`
+are constructed.  See
+[`elkies-k3/ARITHMETIC_RANK_TRANSFER_2026-09-03.md`](elkies-k3/ARITHMETIC_RANK_TRANSFER_2026-09-03.md).
+
 ### Integral rank-transfer and character-glue calculus
 
+<!-- status-consumer: EC-K3-RELATIVE-U-BRIDGE-LIFTING 800e22abf69b91aa -->
+<!-- status-consumer: EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION d57544697149506f -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS 7eeeeaa80d9b2bf3 -->
 <!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
 <!-- status-consumer: EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE 52de13c8443f2b7d -->
@@ -18266,6 +18304,8 @@ Generate and byte-check the equation-free census, then replay the local
 bridge and involution graph-glue theorems with
 
 ```bash
+python3 elkies-k3/scripts/build_integral_rank_transfer_claim_provenance.py
+python3 elkies-k3/scripts/build_integral_rank_transfer_claim_provenance.py --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage \
   --relative-u-output artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json
@@ -18288,6 +18328,11 @@ sage -python elkies-k3/scripts/certify_r17_norm12_103b2_mw_glue.sage \
 sage -python elkies-k3/scripts/build_integral_rank_transfer_glue_census.sage
 sage -python elkies-k3/scripts/build_integral_rank_transfer_glue_census.sage --check
 ```
+
+The first two commands generate and byte-check the claim-level provenance
+artifact from the canonical theorem headings and the literature/novelty map.
+Coverage fails closed when a labelled statement is missing or stale; this is
+a documentation integrity check, not a mathematical verifier.
 
 The relative-`U` theorem and first NS0024 application are recorded in
 [`elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md`](elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md).

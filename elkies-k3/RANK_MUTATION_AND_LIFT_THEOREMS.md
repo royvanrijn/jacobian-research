@@ -1,13 +1,66 @@
-# Rank mutation and lift theorems
+# Target-directed fibration hopping: theorem and certificate ledger
 
-This note extracts general mathematics from the Elkies--K3 calculations. It
-separates statements that follow from standard K3 and elliptic-surface
-theorems, conditional correctness theorems for the equation compiler, and
-genuinely open navigation conjectures.
+This note extracts reusable mathematics from the Elkies--K3 calculations.
+The historical filename and theorem IDs are retained so that certificates and
+status consumers remain stable.  **Integral rank transfer** is the project
+name; the established geometric operation is a **change of primitive
+`U`-embedding**, or **fibration hop**, and the rank identity is the
+**Shioda--Tate rank balance under change of fibration**.  In particular, this
+note does not claim that roots turning into sections, Kneser neighbours,
+Weyl reduction, or equation changes between elliptic K3 fibrations are new.
 
-Status boundary: the proofs below are a theorem-development package, not yet
-new entries in `MATH_STATUS.json`. They do not promote the active orbit42
-artifact or prove that the selected route is optimal.
+The project-specific contribution is the target-directed inverse layer:
+finite low-norm coset obstruction masks, physical-witness-resolved neighbour
+control, target root-system constraints, bounded one-edge incidence
+optimization, and fail-closed certificates separating frame, marking,
+nefness, equation, and arithmetic claims.  The accompanying
+[`literature and novelty map`](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md)
+assigns every labelled statement below one of five provenance classes and
+records an exact antecedent or an explicit unresolved prior-art query.
+
+Status boundary: the proved arithmetic and integral rank-transfer results
+below have typed entries in `MATH_STATUS.json`; conjectural navigation claims
+remain explicitly open.  None of these results promotes the active orbit42
+artifact or proves that a selected route is optimal.
+
+### Provenance classes and claim discipline
+
+The labels used in the provenance map mean:
+
+- `ESTABLISHED`: an imported theorem or a direct restatement in project
+  notation; no novelty claim;
+- `TAILORED_COROLLARY`: a short consequence or packaging of established
+  theory, useful here but not claimed as foundational novelty;
+- `LIKELY_NEW_ALGORITHM`: no explicit antecedent was located in the sources
+  checked for the stated inverse use; this is a conservative search result,
+  not a priority claim;
+- `NEW_COMPUTATION`: a determinant-, corpus-, or model-specific exact
+  calculation, even when all infrastructure is classical;
+- `OPEN_CONJECTURE`: a proposed generalization not proved here.
+
+Mathematical, algorithmic, computational, and certification novelty are
+recorded separately.  “No explicit antecedent located” never means “first”.
+The announced sequel to Elkies's 2026 rank-17 paper is a specific overlap
+risk and must be checked again before publication.
+
+### Established related method: fibration hopping
+
+Brandhorst--Elkies, Section 2, calls the established method **Kneser's
+neighbour method and fibration hopping**.  Its Lemmas 2.5--2.6 relate
+intersecting primitive fibre classes and neighbouring frame lattices; Remark
+2.10 applies Weyl movement toward a nef fibre; Sections 2.3--2.4 give the
+linear-system and explicit 2-neighbour equation procedure.  Kumar's Appendix
+and Elkies--Kumar, Section 5, are earlier equation-level sources.  Accordingly
+the forward implication
+
+```text
+primitive U change -> neighbouring frame -> nef fibre -> equation change
+```
+
+is established infrastructure.  What is investigated below is the inverse
+planning problem: prescribe a root/low-norm outcome, derive finite constraints
+before child construction, choose a marked target and low-incidence copy, and
+then hand it to the established fibration-hopping machinery.
 
 ## 1. Setup
 
@@ -32,9 +85,9 @@ Reg_pi = determinant of the free MW height lattice.
 Changing the elliptic fibration means changing the embedded copy of `U`; it
 does not change `NS(X)`.
 
-## 2. The exact rank-mutation law
+## 2. Shioda--Tate rank balance under change of fibration
 
-### Theorem A: conservation of the divisor budget
+### Theorem A: Shioda--Tate rank balance (historical ID A)
 
 For two Jacobian elliptic fibrations `pi_1` and `pi_2` on the same K3 surface,
 
@@ -48,6 +101,9 @@ Equivalently,
 rank(R_i) + r_i = rho(X) - 2.
 ```
 
+This is the Shioda--Tate formula applied twice; see Shioda and
+Schütt--Shioda, Sections 6 and 11, in the bibliography below.
+
 #### Proof
 
 For each fibration, the trivial lattice has rank `2+rank(R_i)`. The
@@ -60,7 +116,7 @@ rho(X) = 2 + rank(R_i) + r_i.
 Subtract the two formulas. Nothing about the equation, neighbour degree, or
 chosen route is needed. QED.
 
-### Corollary A1: rank cannot appear from nowhere
+### Corollary A1: fixed-`NS` rank-budget corollary
 
 Along any chain of fibrations on one fixed K3,
 
@@ -77,7 +133,7 @@ This proves the rank changes in the H3 and Q80 lattice corridors once the
 marked fibrations, Picard rank, and root systems are certified. It does not
 construct explicit coordinates for the new sections.
 
-### Theorem A2: equivariant arithmetic rank transfer
+### Theorem A2: Galois-equivariant Shioda--Tate quotient identity
 
 Let `K` be a characteristic-zero field with algebraic closure `Kbar`, let
 `X/K` be a smooth projective K3 surface, and let
@@ -120,7 +176,7 @@ More strongly, in the rational representation ring of `Gamma`,
 ```
 
 Taking the multiplicity of the trivial representation gives the arithmetic
-rank-mutation law
+rank-balance law
 
 ```text
 rank MW(pi_2/K(C_2)) - rank MW(pi_1/K(C_1))
@@ -130,6 +186,11 @@ rank MW(pi_2/K(C_2)) - rank MW(pi_1/K(C_1))
 Thus a geometric root direction transferred to Mordell--Weil contributes a
 `K`-rational rank direction exactly to the extent that its transferred
 representation contains the trivial representation.
+
+Shioda's *Mordell--Weil lattices and Galois representation I, III* supplies
+the Galois action preserving the height lattice.  The displayed
+representation-ring subtraction is the project-specific quotient
+repackaging, not a new Galois-representation construction.
 
 #### Proof
 
@@ -257,9 +318,9 @@ computes the fixed subspaces and verifies (A2.3) by traces on every element of
 the declared finite Galois image.  Its pinned output is
 [`elkies-k3-arithmetic-rank-transfer-controls-v1.json`](../artifacts/generated-results/elkies-k3-arithmetic-rank-transfer-controls-v1.json).
 
-## 3. The determinant and saturation laws
+## 3. Shioda discriminant/regulator consequences and saturation
 
-### Theorem B: determinant mutation
+### Theorem B: Shioda discriminant/regulator comparison (historical ID B)
 
 For a Jacobian elliptic fibration,
 
@@ -274,6 +335,9 @@ Reg_2 / Reg_1
   = abs(disc R_1) / abs(disc R_2) * (t_2 / t_1)^2.
 ```
 
+This is Shioda's discriminant formula for the Mordell--Weil lattice, applied
+to two fibrations with the same Néron--Severi lattice.
+
 #### Proof
 
 The trivial lattice is `U + R_pi`. Shioda's orthogonal projection identifies
@@ -285,7 +349,7 @@ second follows by cancelling the fixed discriminant of `NS(X)`. QED.
 This is stronger than rank conservation: it predicts the determinant of the
 new MW lattice before its generators are explicitly lifted.
 
-### Lemma B1: every saturation error is a square
+### Lemma B1: index-square saturation identity
 
 If a full-rank lattice `L_0` has index `n` in its saturation `L`, then
 
@@ -358,6 +422,10 @@ O^2=-2 and O.D=1,
 
 then the pencil is Jacobian: some irreducible component of `O` has degree one
 over the base and is a section. If `O` is irreducible, it is that section.
+
+The primitive-nef-isotropic pencil theorem is standard K3 linear-system
+theory; for the fibration-hopping use and section criterion see
+Brandhorst--Elkies, Theorem 2.1 and Section 2.2, and Kumar, Section 3.2.
 
 #### Proof
 
@@ -571,9 +639,9 @@ the remaining assertions follow functorially. QED.
 This explains why an ADE/MW label is not enough: it omits the embedded `U` and
 the integral transport that identifies the actual fibration.
 
-## 6. Specialization mutation
+## 6. Specialization and Shioda--Tate balance
 
-### Theorem E: specialization balance law
+### Theorem E: Shioda--Tate specialization balance
 
 Consider a smooth characteristic-zero family of K3 surfaces with compatible
 Jacobian fibrations, and a generic-to-special NS specialization map. Whenever
@@ -1493,7 +1561,9 @@ degree-four graph data to geometric curves.
 
 ## 7A. Integral bridge reglue
 
-### Theorem H-1: relative-`U` bridge lifting
+### Lemma H-1: cross-Gram reconstruction of two primitive `U`-embeddings
+
+<!-- status-consumer: EC-K3-RELATIVE-U-BRIDGE-LIFTING 800e22abf69b91aa -->
 
 Let
 
@@ -1602,7 +1672,7 @@ compiler degrees.
 The opt-in exact replay in
 [`certify_integral_rank_transfer_bridge_reglue.sage`](scripts/certify_integral_rank_transfer_bridge_reglue.sage)
 checks (H-1.1)--(H-1.4) in both orientations on all 42 stored H3, Q80,
-NS0024, and Golay-720 clicks.  It recovers every stored old-fibre degree from
+NS0024, and Golay-720 hops.  It recovers every stored old-fibre degree from
 `A_11` and recovers each stored bridge as the saturation of the two projected
 vectors.  All 84 oriented projected pairs happen to be saturated (`m=1`), so
 these controls verify the square-index law but do not exhibit a nontrivial
@@ -1610,6 +1680,22 @@ index.  Some Q80 transported mates give negative values among `s,t,z`, which
 is an exact warning that the 42-edge lattice ledger does not always carry an
 equation-effective zero.  The generated record is
 [`elkies-k3-relative-u-bridge-lifting-regression-v1.json`](../artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json).
+
+The correction in (H-1.4) is genuinely needed.  For example, take the even
+positive binary lattice
+
+```text
+W = [20 14; 14 10],       A = [-8 -5; -5 -4],
+```
+
+and let `w_1,w_2` be twice its ordered basis.  Then
+
+```text
+G_A = [80 56; 56 40] = Gram_W(w_1,w_2),
+```
+
+while `B=<w_1,w_2>=2W`, `C=W`, and `[C:B]=4`.  Thus
+`det(G_A)=64=4^2 det(W)`.
 
 #### Corollary H-1a: bounded relative-marking completeness
 
@@ -1643,12 +1729,15 @@ coefficient height, or another downstream score does not by itself bound
 not global finiteness of literal `U` embeddings, an equation construction, or
 a universal compiler-cost bound.
 
-The relative projection is elementary lattice linear algebra.  Its geometric
-use relies on the standard correspondence between Jacobian elliptic
-fibrations and primitive `U` embeddings, while primitivity, overlattices, and
-saturation are governed by Nikulin's discriminant-form formalism cited below.
+The relative projection is elementary lattice linear algebra, so no novelty
+is claimed for the identity `G_A=A^t*J*A-J`.  Its geometric use relies on the
+standard correspondence between Jacobian elliptic fibrations and primitive
+`U` embeddings and on Brandhorst--Elkies, Lemmas 2.5--2.6; primitivity,
+overlattices, and saturation are governed by Nikulin's discriminant-form
+formalism.  The new computation is the complete 84-presentation replay and
+the bounded target-marking use, not the matrix identity.
 
-### Theorem H-1b: `J2` elliptic incidence distance and the rootless finite classifier
+### Theorem H-1b: one-edge elliptic incidence distance and rootless finite classifier
 
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J2-MINIMAL-ACCESSIBILITY 631f50389e0a3283 -->
 
@@ -1784,7 +1873,7 @@ published marking; the theorem proves that this is not an intrinsic `J2`
 accessibility obstruction.  Compiling the two-dimensional pencil `|D|`, its
 Weierstrass model, and its `J1` orbit remain separate gates.
 
-### Theorem H: bridge-core root transfer
+### Theorem H: common-core graph-glue decomposition and 42-edge corpus
 
 Let `L` be a nondegenerate even integral lattice and let `U_0,U_1` be copies
 of the unimodular hyperbolic plane such that the positive-sign frame lattices
@@ -1873,7 +1962,7 @@ applies this theorem to all 42 selected H3, Q80, NS0024, and Golay-720 edges.
 Every edge has rank-15 core and rank-two bridges.  In all 42
 cases both bridge discriminant groups and both glue groups are cyclic, the
 old and new glue orders agree, and each glue projects isomorphically onto the
-full bridge discriminant group.  Thus these clicks are exactly **rank-two
+full bridge discriminant group.  Thus these hops are exactly **rank-two
 cyclic bridge replacements**, with glue orders
 
 ```text
@@ -1920,7 +2009,7 @@ rho_KC(a,b)
 ```
 
 Then `W_H` is rootless if and only if every element of `H` lies in the zero
-support of `rho_KC`.  For graph glue, allowed root-annihilating mutations can
+support of `rho_KC`.  For graph glue, allowed root-annihilating completions can
 therefore be generated directly:
 
 1. compute the low-norm coset theta tables of `K` once;
@@ -1963,7 +2052,7 @@ child-root count in every case and selects exactly the five rootless bridge
 classes.  This proves the inverse enumerator on that complete fixed-core
 universe; it does not yet prove a speedup or a core-generation rule.
 
-### Theorem H0b: maximal graph glue generates the core genus
+### Theorem H0b: discriminant-form reconstruction of the common-core genus
 
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CORE-GENERATION d0d78c49b44f55ac -->
 
@@ -2015,9 +2104,12 @@ Conversely, identify the `-q_C` summand of `q_K` with `-q_C`.  Its diagonal
 with `q_C` is isotropic and projects isomorphically to `A_C`; quotienting its
 orthogonal complement by that diagonal leaves exactly `q_W`. QED.
 
-This is the missing algebraic inversion one level above theta convolution.
-It changes core discovery from an unstructured search over changes of `U`
-to enumeration of lattice classes in explicitly generated rank-15 genera.
+The finite-form identity is a maximal-projection corollary of Nikulin's
+isotropic graph gluing and primitive-embedding formalism, especially
+Propositions 1.4.1 and 1.5.1; it is not a new foundational gluing theorem.
+The project-specific inverse use changes core discovery from an unstructured
+search over changes of `U` to enumeration of lattice classes in explicitly
+generated rank-15 genera.
 It does **not** say that a genus has a rootless class or provide a general
 fast way to enumerate and mass-close that genus.
 The finite-form step is the graph-specialized consequence of Nikulin's
@@ -2076,7 +2168,7 @@ The resulting bounded core-first procedure is exact:
 The checker
 [`certify_integral_rank_transfer_core_generation.sage`](scripts/certify_integral_rank_transfer_core_generation.sage)
 verifies (H0b.1) on both sides of all 42 recorded H3, Q80, NS0024, and
-Golay-720 clicks, hence on 84 maximal graph presentations.  It records four
+Golay-720 hops, hence on 84 maximal graph presentations.  It records four
 distinct positive terminal core signatures, all of minimum four.  At their
 four determinants it independently enumerates respectively `48, 8, 8, 8`
 even rank-15 genera; the form generated by `q_W orthogonal_sum (-q_C)` picks
@@ -2485,7 +2577,7 @@ and the pinned exact record is
 
 This proves two additional core constructions and one exact near miss.  It
 does not prove a Q80 nonexistence result, beam completeness, or that truncated
-masked support determines which support mutations are reachable.  The
+masked support determines which support transitions are reachable.  The
 failure of count-only and support-only archives on H3/Q80 shows that the next
 classifier must retain more of `Sigma_2` or actual core isometry information.
 
@@ -2595,7 +2687,7 @@ neighbour reachability depends on the pairings of the individual physical
 witnesses with isotropic lines.  No monotone scalar descent, universal path,
 neighbour-graph completeness, or speedup theorem follows.
 
-### Theorem H0i.1: complete defect birth--death law
+### Theorem H0i.1: coset-resolved `p`-neighbour transition formula
 
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH a755a3956c4c97cb -->
 
@@ -2823,7 +2915,7 @@ so the Mordell--Weil ranks are exactly
 4 -> 12 -> 12 -> 17,
 ```
 
-with successive mutations `+8,0,+5`.
+with successive rank changes `+8,0,+5`.
 
 This path separates the two mechanisms in the glue calculus.  At stage 2
 the core is already rootless, but the completed frame still has twelve
@@ -2973,7 +3065,7 @@ not prove that a prescribed ADE signature is realized in a forced core genus,
 that a neighbour path reaches it, or that its fibration has an equation or a
 specified field of definition.
 
-### Theorem H0l: inverse ADE mutation is modular incidence plus affine CVP
+### Theorem H0l: target root-system constraints from modular incidence and affine CVP
 
 <!-- status-consumer: EC-K3-NS0024-INVERSE-ADE-MUTATION 5c56f07d14129837 -->
 
@@ -3029,8 +3121,8 @@ Consequently a line `ell` produces a prescribed abstract ADE type `R'` if
 and only if the finite metric set `(Omega_y,g_y)` is isometric to the signed
 root system `Phi(R')`.  A prescribed **marked** target signature replaces
 this metric-isometry test by equality with the requested physical witnesses.
-Equivalently, inverse ADE mutation compiles into exactly four kinds of finite
-conditions on `y`:
+Equivalently, the target root-system constraint compiles into exactly four
+kinds of finite conditions on `y`:
 
 1. the quadratic congruence making `ell` an isotropic line;
 2. modular linear equalities or inequalities
@@ -3171,7 +3263,7 @@ prospective gate still needs an untouched mass-complete genus containing a
 rootless class.  The replay is
 [`benchmark_e6_det78_prospective_bridge_predictor.sage`](scripts/benchmark_e6_det78_prospective_bridge_predictor.sage).
 
-### Corollary H1: a good-prime neighbour is a finite hyperbolic-line swap
+### Corollary H1: standard good-prime neighbour as a finite hyperbolic-line swap
 
 Let `W_0,W_1` be distinct even `p`-neighbours in one rational quadratic
 space, where `p` is odd and does not divide `det(W_i)`, and put
@@ -3192,7 +3284,7 @@ rho_K(h)=number of norm-two vectors in K dual with residue h,
 
 then surviving roots lie in `h=0`, removed roots lie on
 `H_0 minus {0}`, and introduced roots lie on `H_1 minus {0}`.  Thus a
-good-prime root-annihilating click is decided by the finite decorated form
+good-prime root-annihilating neighbour is decided by the finite decorated form
 
 ```text
 ((A_K)_p, q_K, H_0, H_1, rho_K restricted to H_0 union H_1).
@@ -3222,7 +3314,7 @@ The hypotheses matter.  For `p>2` the move swaps all `p-1` nonzero cosets on
 one line, not one coset.  At `p=2` or `p` dividing the determinant, the local
 module and isotropy rules require a separate calculation.
 
-### Theorem H2: rank-19 frame-genus realization
+### Theorem H2: Kneser--Nishiyama `J2` frame-genus realization in rank 19
 
 Let `S` be an even lattice of signature `(1,r-1)` with
 
@@ -3260,7 +3352,10 @@ nef class; its companion in `U` supplies a degree-one `(-2)` class, so Theorem
 C produces a Jacobian fibration.  If `P` is rootless, Shioda--Tate gives MW
 rank 17. QED.
 
-This is an `O(NS)`/lattice-fibration classification.  It is not a
+This is the established Kneser--Nishiyama frame-classification mechanism,
+specialized using Nikulin's indefinite uniqueness theorem; no general
+classification novelty is claimed.  It is an `O(NS)`/`J2`
+lattice-fibration classification.  It is not a
 classification modulo `Aut(X)` and does not remove the need for chamber or
 equation certificates.  It does, however, make the foundry's target exact:
 enumerating rootless classes in the one prescribed finite-form genus is
@@ -3341,7 +3436,7 @@ themselves justify replacing the uniform quotient by a smaller
 frame-dependent quotient: that requires ample-cone stabilizer control or an
 equivalent surface-automorphism computation.
 
-### Theorem H3: conditional one-click root annihilation
+### Theorem H3: conditional one-neighbour root annihilation
 
 Let `G` be a genus of positive-definite integral lattices of rank greater
 than two, assume `G` is one spinor genus, and suppose it contains a rootless
@@ -3351,8 +3446,8 @@ isometric to `P_star`.
 
 Consequently, after the finite hypotheses “one spinor genus” and “a certified
 rootless class” have been checked, the discriminant-form calculus has an
-honest root-annihilating one-click existence theorem.  In the common
-intersection `K=P intersect P_star`, Corollary H1 identifies the click with a
+honest root-annihilating one-neighbour existence theorem.  In the common
+intersection `K=P intersect P_star`, Corollary H1 identifies the neighbour with a
 split finite quadratic-plane line swap: all old roots outside `K` occur on
 the removed line, while the new line has no norm-two vector.
 
@@ -3386,7 +3481,7 @@ sum over visited [W] of 1/|O(W)| = mass(G),
 
 then the list is the complete genus.  In particular, `G` contains a rootless
 lattice if and only if the list contains one, and every such lattice is
-reached from `W_0` by a finite sequence of the discriminant-line mutations in
+reached from `W_0` by a finite sequence of the discriminant-line swaps in
 Corollary H1.  Decorating every edge by
 
 ```text
@@ -3705,8 +3800,9 @@ An edge is certified at lattice level by a primitive isotropic target, a
 replayable Weyl reduction, and unimodular forward/inverse transports. It is
 certified at equation level only after the hypotheses of Theorem F pass.
 
-Under those hypotheses, rank mutation, regulator mutation, endpoint identity,
-and the equation lift are consequences rather than repeated discoveries.
+Under those hypotheses, Shioda--Tate rank balance, the Shioda
+discriminant/regulator comparison, endpoint identity, and the equation lift
+are consequences rather than repeated discoveries.
 
 ## 10. What remains open
 
@@ -3746,6 +3842,16 @@ once.
 
 ## References
 
+The complete bibliography and claim-by-claim loci are in
+[`references/integral-rank-transfer.bib`](references/integral-rank-transfer.bib)
+and the
+[`literature and novelty map`](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md).
+
+- S. Brandhorst and N. D. Elkies,
+  [*Equations for a K3 Lehmer map*](https://arxiv.org/abs/2103.15101),
+  especially Section 2, “Kneser's neighbor method and fibration hopping,”
+  Lemmas 2.5--2.6 and Sections 2.3--2.4.
+
 - V. V. Nikulin,
   [*Integral symmetric bilinear forms and some of their applications*](https://www.mathnet.ru/eng/im1677),
   especially Proposition 1.4.1 for even overlattices and the indefinite
@@ -3783,3 +3889,28 @@ once.
 - A. Garbagnati and C. Salgado,
   [*Rank jumps and Multisections of elliptic fibrations on K3 surfaces*](https://arxiv.org/abs/2505.15159),
   for the geometric relation between multisections and rank jumps.
+
+## 12. Next end-to-end creation experiment
+
+The next publication-facing experiment is deliberately one complete pipeline,
+not another isolated lattice search:
+
+```text
+inverse target
+  -> norm12-orbit-11952 in the alternate determinant-948 J2 class
+  -> marked U'=<D,O+D> on the published R17 surface
+  -> established degree-two fibration hop from |D|
+  -> exact Weierstrass model, maps, fibres, marking and saturation
+  -> arithmetic field-of-definition gate.
+```
+
+The inverse and accessibility layers are already exact: `D.F=2`, `D.O=1`,
+the old zero is shared, and the complement is the alternate Q80 frame.  The
+remaining work is to compute the full two-dimensional linear system on the
+published equation and then apply the established Brandhorst--Elkies
+fibration-hopping procedure.  Success requires the equation-level hypotheses
+of Theorem F and the arithmetic marking hypotheses of Theorem A2; a matching
+ADE label or Jacobian invariant alone is not completion.  This experiment
+tests the actual claimed synthesis—target selection and route optimization
+before classical equation construction—without treating the classical
+construction step as new.
