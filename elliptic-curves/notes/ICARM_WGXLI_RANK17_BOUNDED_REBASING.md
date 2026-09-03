@@ -9,7 +9,7 @@ the family after a unimodular rebasing with seven simultaneous differences,
 outside the one-mutation bound below.  See
 [`../../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](../../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
 
-<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 00e39f6b05c2688a -->
+<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 291a539d07b842b9 -->
 
 The five records 351, 356, 376, 377, and 385 share a strong numerical and
 private-pipeline fingerprint. They do not give a rootless-K3 `(8,12;4,6)`

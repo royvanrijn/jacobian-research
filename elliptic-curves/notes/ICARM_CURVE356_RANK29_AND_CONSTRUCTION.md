@@ -9,7 +9,7 @@ curves 351, 376, 377, and 385, is an untwisted rational fibre of the
 and the exact displayed quotient `Z^12` are certified in
 [`../../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](../../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
 
-<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 00e39f6b05c2688a -->
+<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 291a539d07b842b9 -->
 
 The curve-351 comparison below is the historical bounded numerical
 fingerprint; the later atlas sweep supplies the family-recognition theorem.

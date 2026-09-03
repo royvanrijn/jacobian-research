@@ -94,6 +94,14 @@ parser.add_argument(
         "variables instead of recursively substituting powers of r1^-1 and ri^-1"
     ),
 )
+parser.add_argument(
+    "--split-section-opens",
+    action="store_true",
+    help=(
+        "give each section-chart nonvanishing condition its own inverse; "
+        "this adds variables but keeps the saturation equations low-degree"
+    ),
+)
 parser.add_argument("--groebner", action="store_true")
 parser.add_argument("--surface-only", action="store_true")
 args = parser.parse_args()
@@ -106,12 +114,50 @@ field = GF(prime)
 open_inverse_names = [
     "exact_i7_order_inverse", "exact_i5_order_inverse", "exact_i4_order_inverse"
 ]
+section_open_inverse_names = {}
 if not args.surface_only:
-    open_inverse_names += [
-        "q1_chart_inverse", "q2_chart_inverse", "q3_chart_inverse",
-    ]
-    if not args.mw3_only:
-        open_inverse_names += ["q4_chart_inverse"]
+    if args.split_section_opens:
+        section_open_inverse_names = {
+            "q1": (
+                "q1_i7_tangent_inverse",
+                "q1_i5_identity_inverse",
+                "q1_i4_identity_inverse",
+            ),
+            "q2": (
+                "q2_i7_tangent_inverse",
+                "q2_i5_tangent_inverse",
+                "q2_i4_tangent_inverse",
+            ),
+            "q3": (
+                "q3_i7_tangent_inverse",
+                "q3_i5_tangent_inverse",
+                "q3_i4_identity_inverse",
+            ),
+        }
+        if not args.mw3_only:
+            section_open_inverse_names["q4"] = (
+                "q4_i7_tangent_inverse",
+                "q4_i5_tangent_inverse",
+                "q4_i4_tangent_inverse",
+                "q4_pole_inverse",
+                "q4_c0_inverse",
+                "q4_c1_inverse",
+            )
+    else:
+        section_open_inverse_names = {
+            "q1": ("q1_chart_inverse",) * 3,
+            "q2": ("q2_chart_inverse",) * 3,
+            "q3": ("q3_chart_inverse",) * 3,
+        }
+        if not args.mw3_only:
+            section_open_inverse_names["q4"] = ("q4_chart_inverse",) * 6
+    open_inverse_names += sorted(
+        {
+            inverse_name
+            for inverse_names in section_open_inverse_names.values()
+            for inverse_name in inverse_names
+        }
+    )
 surface_names = (
     [f"a{index}" for index in range(1, 7)]
     + ["r1", "ri", "r1_inverse", "ri_inverse"]
@@ -308,9 +354,9 @@ equations += section_equations
 q1_i5_open = X1(t=1) - r1 if args.q1_i5_identity_chart == "x" else Y1(t=1)
 q1_i4_open = X1[4] - ri if args.q1_i4_identity_chart == "x" else Y1[6]
 open_factors += [
-    ("q1_chart_inverse", v["p1y1"]),
-    ("q1_chart_inverse", q1_i5_open),
-    ("q1_chart_inverse", q1_i4_open),
+    (section_open_inverse_names["q1"][0], v["p1y1"]),
+    (section_open_inverse_names["q1"][1], q1_i5_open),
+    (section_open_inverse_names["q1"][2], q1_i4_open),
 ]
 
 
@@ -331,9 +377,9 @@ def depth_two_all_node_section(prefix):
 
 X2, Y2, p2_equations = depth_two_all_node_section("p2")
 open_factors += [
-    ("q2_chart_inverse", v["p2y2"]),
-    ("q2_chart_inverse", Y2.derivative()(t=1)),
-    ("q2_chart_inverse", Y2[5]),
+    (section_open_inverse_names["q2"][0], v["p2y2"]),
+    (section_open_inverse_names["q2"][1], Y2.derivative()(t=1)),
+    (section_open_inverse_names["q2"][2], Y2[5]),
 ]
 if args.basis_marking == "resolved-depth13":
     # Q3 has absolute profile (4,2,0).  Depth three at I7 fixes the first
@@ -358,17 +404,17 @@ if args.basis_marking == "resolved-depth13":
         binomial(index, 2) * Y3[index] for index in range(3, 7)
     )
     open_factors += [
-        ("q3_chart_inverse", v["p3y3"]),
-        ("q3_chart_inverse", q3_i5_second_taylor),
+        (section_open_inverse_names["q3"][0], v["p3y3"]),
+        (section_open_inverse_names["q3"][1], q3_i5_second_taylor),
     ]
     q3_infinity_open = q3x4 - ri if args.q3_infinity_chart == "x" else Y3[6]
-    open_factors.append(("q3_chart_inverse", q3_infinity_open))
+    open_factors.append((section_open_inverse_names["q3"][2], q3_infinity_open))
 else:
     X3, Y3, p3_equations = depth_two_all_node_section("p3")
     open_factors += [
-        ("q3_chart_inverse", v["p3y2"]),
-        ("q3_chart_inverse", Y3.derivative()(t=1)),
-        ("q3_chart_inverse", Y3[5]),
+        (section_open_inverse_names["q3"][0], v["p3y2"]),
+        (section_open_inverse_names["q3"][1], Y3.derivative()(t=1)),
+        (section_open_inverse_names["q3"][2], Y3[5]),
     ]
 equations += p2_equations + p3_equations
 
@@ -393,12 +439,12 @@ if not args.mw3_only:
     Y4 = sum(p4y[index - 1] * t**index for index in range(1, 8)) + p4y8 * t**8
     p4_equations = coefficient_equations(Y4**2 - rhs4)
     open_factors += [
-        ("q4_chart_inverse", v["p4y1"]),
-        ("q4_chart_inverse", Y4.derivative()(t=1)),
-        ("q4_chart_inverse", Y4[8]),
-        ("q4_chart_inverse", X4(t=c)),
-        ("q4_chart_inverse", c),
-        ("q4_chart_inverse", c - 1),
+        (section_open_inverse_names["q4"][0], v["p4y1"]),
+        (section_open_inverse_names["q4"][1], Y4.derivative()(t=1)),
+        (section_open_inverse_names["q4"][2], Y4[8]),
+        (section_open_inverse_names["q4"][3], X4(t=c)),
+        (section_open_inverse_names["q4"][4], c),
+        (section_open_inverse_names["q4"][5], c - 1),
     ]
     equations += p4_equations + [Y4(t=1)]
 
@@ -479,7 +525,8 @@ print(
     f"|q1_identity_charts={args.q1_i5_identity_chart},{args.q1_i4_identity_chart}"
     f"|slices={','.join('{}={}'.format(name, value) for name, value in slices.items())}"
     f"|hyperplanes={len(hyperplanes)}|fixed_rur_anchor={int(args.fixed_rur_anchor)}"
-    f"|explicit_formal_centers={int(args.explicit_formal_centers)}",
+    f"|explicit_formal_centers={int(args.explicit_formal_centers)}"
+    f"|split_section_opens={int(args.split_section_opens)}",
     flush=True,
 )
 if args.export_msolve is not None:

@@ -3423,14 +3423,28 @@ lineage hits by proving trivial twist, interpolating a saturated polynomial
 MW17 basis, transporting it to all eight native charts, and certifying the
 five displayed exceptional quotients.
 
+`certify_r17_norm12_icarm_database_sweep.sage` then scans all 474 curve
+equations in the pinned ICARM snapshot against the six representatives.  It
+stores all 2,844 exact projective preimage decisions, transports every hit to
+its native class members, and performs the exact twist tests.  The result is
+69 hit curves and 2,775 misses, with all 376 native comparisons untwisted.
+`certify_r17_norm12_curve12_alternate_q80_quotient.sage` specializes the
+stored `11952` MW17 basis into the independently certified 29 points of curve
+12 and proves the displayed quotient `Z^12` by exact group law and Smith form.
+
 ```bash
 sage -python compile_r17_norm12_record_lineage_atlas.sage --check
 sage -python certify_r17_norm12_wgxli_lineage_fibres.sage --check
+sage -python certify_r17_norm12_icarm_database_sweep.sage --check
+sage -python certify_r17_norm12_curve12_alternate_q80_quotient.sage --check
+sage -python verify_r17_norm12_icarm_database_and_curve12.sage
 ```
 
-The six `j`-classes have sizes `8,5,18,6,2,4`.  Curves 273 and 302 miss all
-43 charts; the five wgxli lineage curves are untwisted fibres of the
-eight-chart `norm12-orbit-074d9` class.  See
+The six `j`-classes have sizes `8,5,18,6,2,4`.  Curves 273, 302, and 398 miss
+all 43 charts; all thirteen wgxli curves are now assigned exactly among five
+of the six classes.  Curve 12 supplies the first native alternate-Q80
+rank-at-least-29 fibre and an exact displayed `Z^12` exceptional quotient.
+See
 [`../R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](../R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
 
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->

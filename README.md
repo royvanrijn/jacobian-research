@@ -23,7 +23,23 @@ reproducible inputs, and checkpointed outputs.
 
 ## K3 / high-rank current milestone
 
-The two determinant-948 rootless rank-17 charts on the pinned K3 are explicit over `QQ`.
+The determinant-948 equation chain is closed through a maximal noncyclic
+bridge.  The next foundry milestone is now the first planner-found arithmetic
+MW17 fibration on a different Neron--Severi lattice; determinant-950 `NS0024`
+is the preferred candidate, and its missing prerequisite is an
+equation-facing characteristic-zero source with a rational rank-19 marking.
+See the
+[`NS0024 arithmetic MW17 objective`](elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
+
+<!-- status-consumer: OP-K3-NS0024-ARITHMETIC-MW17 427e74f6a4eb03e4 -->
+<!-- status-consumer: OP-EC-NEXT e135b23ef9910845 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
+<!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-CONTROL-J-PREIMAGES 1ef38474a0d7f629 -->
+
+The two determinant-948 rootless rank-17 charts on the pinned K3 remain
+explicit over `QQ`.
 
 - **Published Elkies R17:** certified `24 I1`, geometric and arithmetic generic Mordell–Weil rank 17.
 - **Alternate Q80:** canonical direct degree-two hop from `norm12-orbit-11952`; polynomial K3 model with `(deg A, deg B, deg Delta)=(8,12,24)`, `24 I1`, determinant-948 rootless frame, and 17 saturated rational sections.

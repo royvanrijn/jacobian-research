@@ -1,5 +1,13 @@
 # Equation-first shortlist after the complete degree-three census
 
+> **Programme update (2026-09-04).**  This note remains the exact record of
+> its bounded equation-first and finite-field comparisons.  References below
+> to the “current” or “next” equation gate are local to that comparison and no
+> longer set the foundry roadmap.  The live objective is the determinant-950
+> `NS0024` arithmetic MW17 milestone and its rational rank-19
+> characteristic-zero source gate; see
+> [`NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
+
 The strict source-rank ordering is useful, but it is not a sufficient proxy
 for equation time.  On the five rootless MW17 targets whose degree-three
 translation spectra are now complete, a slightly higher-rank source often has

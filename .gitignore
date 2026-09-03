@@ -160,6 +160,8 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-r17-noncyclic-4a1-direct-fibration-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-record-lineage-atlas-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-icarm-database-sweep-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-curve12-alternate-q80-quotient-v1.json
 !/artifacts/generated-results/elkies-k3-norm12-orbit-103b2-twist-section-v1.json
 !/artifacts/generated-results/elkies-k3-norm12-orbit-103b2-p19-polynomial-section-bruteforce-v1.json
 !/artifacts/generated-results/elkies-k3-norm12-orbit-103b2-p29-polynomial-section-bruteforce-v1.json

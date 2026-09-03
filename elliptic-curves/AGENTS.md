@@ -22,7 +22,7 @@ declared limits, checkpoints, and a reproducible certificate plan.
 
 1. start from [`README.md`](README.md), `../MATH_STATUS.json`, and the canonical curve notes;
 2. require a genuine residual descent/Selmer gate before expensive point search;
-3. for alternate Q80, build native calibration fibres first — published R17 rank-25--28 controls do not occur at rational alternate parameters;
+3. use the exact native alternate-Q80 calibration fibres from the complete ICARM sweep — especially rank-at-least-29 curve 12 on `11952` — while keeping the published-R17 rank-25--28 transfer misses as negative controls;
 4. minimize every specialization and re-prove point independence;
 5. pin all external CAS inputs, outputs, software versions, limits, and failure semantics.
 

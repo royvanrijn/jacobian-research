@@ -1,5 +1,17 @@
 # NS0024 MW4 modular recovery frontier — 2026-09-01
 
+> **Source decision (2026-09-04).**  This semistable reconstruction is now the
+> active NS0024 arithmetic-source route.  The direct degree-475 Inose
+> specialization over `QQ` is impossible by the Mazur--Kenku cyclic-isogeny
+> classification; see
+> [`NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md`](NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md).
+> The resolved exporter now also supports `--split-section-opens`.  Giving
+> each chart condition its own inverse lowers the representative explicit-
+> center, one-hyperplane input from about 86 KB to about 59 KB and removes the
+> high-degree grouped chart products.  Exact 55-second probes at `p=11,101`
+> and `65521` did not finish; that is a performance boundary, not evidence of
+> nonexistence.
+
 ## Outcome
 
 The requested marked MW4 source is **not yet recovered**.  No
@@ -148,6 +160,17 @@ changes the export from 46 variables, 56 equations and about 1.15 MB to 55
 variables, 65 equations and about 86 KB; the largest exact-order saturation
 row drops from about 295 KB to under 2 KB.  These are implementation-size
 measurements, not mathematical evidence for a point.
+
+The optional `--split-section-opens` encoding separates the three Q1, three
+Q2, three Q3, and six Q4 nonvanishing conditions.  On the same explicit-center
+one-hyperplane system it uses 65 variables and 75 equations but only about
+59 KB of input, versus 55 variables, 65 equations and about 86 KB for the
+grouped formulation with a fixed RUR anchor.  The extra variables are linear
+inverse witnesses; the benefit is that no section-chart saturation row is a
+large product.  Bounded `msolve` probes in characteristics 11, 101, and 65521
+did not close within 55 seconds, with peak memory between 1.3 and 3.2 GB.
+This validates the leaner encoding and records its current compute boundary;
+it does not assert emptiness, dimension, or a closed point.
 
 The intended dimension count is two after MW3 and one after MW4.  Hence the
 first exact-point attempt uses one generic affine hyperplane in the eight

@@ -82,7 +82,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/POSITIVE_CHARACTERISTIC_DEFORMATION_LANDSCAPE.md",
         "papers/common-arithmetic-fibers/PRIME_TO_CHARACTERISTIC_EXTENSION.md"
       ],
@@ -117,7 +116,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/POSITIVE_CHARACTERISTIC_DEFORMATION_LANDSCAPE.md",
         "papers/common-arithmetic-fibers/PRIME_TO_CHARACTERISTIC_EXTENSION.md"
       ],
@@ -152,7 +150,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/POSITIVE_CHARACTERISTIC_DEFORMATION_LANDSCAPE.md",
         "verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md"
       ],
@@ -190,7 +187,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/README.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "REPRODUCE.md"
@@ -267,7 +263,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/README.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "REPRODUCE.md"
@@ -305,7 +300,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/README.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "REPRODUCE.md"
@@ -342,7 +336,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/README.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "REPRODUCE.md"
@@ -381,7 +374,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/README.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "REPRODUCE.md"
@@ -418,7 +410,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/README.md",
         "extended-geometry/BOUNDARY_PACKAGE_COMPILER.md",
         "plane-jc/LOG_BOUNDARY_COMPILER.md",
@@ -456,7 +447,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "REPRODUCE.md",
         "extended-geometry/BOUNDARY_PACKAGE_COMPILER.md",
@@ -499,7 +489,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "REPRODUCE.md",
         "extended-geometry/PLANE_WILD_BOUNDARY_ATLAS.md",
@@ -545,7 +534,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/POSITIVE_CHARACTERISTIC_DEFORMATION_LANDSCAPE.md",
         "verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md",
         "verified/HUQ_KURUVILLA_PLANE_BOUNDARY_NORMALIZATION.md",
@@ -582,7 +570,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/POSITIVE_CHARACTERISTIC_DEFORMATION_LANDSCAPE.md",
         "papers/common-arithmetic-fibers/PRIME_TO_CHARACTERISTIC_EXTENSION.md",
         "verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md",
@@ -620,7 +607,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/POSITIVE_CHARACTERISTIC_DEFORMATION_LANDSCAPE.md",
         "papers/common-arithmetic-fibers/PRIME_TO_CHARACTERISTIC_EXTENSION.md",
         "verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md",
@@ -658,7 +644,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/POSITIVE_CHARACTERISTIC_DEFORMATION_LANDSCAPE.md",
         "papers/common-arithmetic-fibers/PRIME_TO_CHARACTERISTIC_EXTENSION.md",
         "verified/HUQ_KURUVILLA_CHARACTERISTIC_TWO_AUDIT.md",
@@ -1395,7 +1380,6 @@
       ],
       "consumers": [
         "OP-EC-NEXT",
-        "elkies-k3/README.md",
         "elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md"
       ],
       "invalidates_assumptions": [],
@@ -1430,8 +1414,7 @@
       "narrows_problems": [],
       "consumers": [
         "OP-EC-NEXT",
-        "REPRODUCE.md",
-        "elkies-k3/README.md"
+        "REPRODUCE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -1535,8 +1518,7 @@
       ],
       "consumers": [
         "OP-EC-NEXT",
-        "REPRODUCE.md",
-        "elkies-k3/README.md"
+        "REPRODUCE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -1569,7 +1551,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "elkies-k3/README.md",
         "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],
@@ -1603,7 +1584,6 @@
       "narrows_problems": [],
       "consumers": [
         "REPRODUCE.md",
-        "elkies-k3/README.md",
         "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],
@@ -1638,7 +1618,6 @@
       "consumers": [
         "OP-EC-NEXT",
         "REPRODUCE.md",
-        "elkies-k3/README.md",
         "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],
@@ -1671,7 +1650,6 @@
       "narrows_problems": [],
       "consumers": [
         "REPRODUCE.md",
-        "elkies-k3/README.md",
         "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],
@@ -1712,7 +1690,6 @@
       "consumers": [
         "OP-EC-NEXT",
         "REPRODUCE.md",
-        "elkies-k3/README.md",
         "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],
@@ -1753,7 +1730,6 @@
       "consumers": [
         "OP-EC-NEXT",
         "REPRODUCE.md",
-        "elkies-k3/README.md",
         "elkies-k3/scripts/README.md",
         "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md"
       ],
@@ -1794,7 +1770,6 @@
       "consumers": [
         "OP-EC-NEXT",
         "REPRODUCE.md",
-        "elkies-k3/README.md",
         "elkies-k3/scripts/README.md",
         "elkies-k3/CONSTRUCTION_ROUTES.md",
         "elkies-k3/PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md"
@@ -1836,7 +1811,8 @@
         "REPRODUCE.md",
         "elkies-k3/README.md",
         "elkies-k3/scripts/README.md",
-        "elliptic-curves/ecsearch/q12o5867_specialization.py"
+        "elliptic-curves/ecsearch/q12o5867_specialization.py",
+        "README.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -1868,8 +1844,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
-        "elkies-k3/README.md",
         "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md"
       ],
       "invalidates_assumptions": [],
@@ -1909,8 +1883,7 @@
       ],
       "consumers": [
         "OP-EC-NEXT",
-        "REPRODUCE.md",
-        "elkies-k3/README.md"
+        "REPRODUCE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -1946,8 +1919,7 @@
       ],
       "consumers": [
         "OP-EC-NEXT",
-        "REPRODUCE.md",
-        "elkies-k3/README.md"
+        "REPRODUCE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -1986,8 +1958,7 @@
       "narrows_problems": [],
       "consumers": [
         "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE",
-        "REPRODUCE.md",
-        "elkies-k3/README.md"
+        "REPRODUCE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -2025,8 +1996,7 @@
       "narrows_problems": [],
       "consumers": [
         "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE",
-        "REPRODUCE.md",
-        "elkies-k3/README.md"
+        "REPRODUCE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -2066,8 +2036,7 @@
       "narrows_problems": [],
       "consumers": [
         "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE",
-        "REPRODUCE.md",
-        "elkies-k3/README.md"
+        "REPRODUCE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -2107,8 +2076,7 @@
       "narrows_problems": [],
       "consumers": [
         "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE",
-        "REPRODUCE.md",
-        "elkies-k3/README.md"
+        "REPRODUCE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -2182,7 +2150,6 @@
       "consumers": [
         "OP-EC-NEXT",
         "REPRODUCE.md",
-        "elkies-k3/README.md",
         "elliptic-curves/scripts/probe_q12o5867_pari_two_cover.py",
         "elliptic-curves/scripts/probe_q12o5867_ratpoints.py",
         "elliptic-curves/scripts/probe_q12o5867_section_charts.py",
@@ -2223,7 +2190,6 @@
       "consumers": [
         "OP-EC-NEXT",
         "REPRODUCE.md",
-        "elkies-k3/README.md",
         "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],
@@ -2260,7 +2226,6 @@
       "consumers": [
         "OP-EC-NEXT",
         "REPRODUCE.md",
-        "elkies-k3/README.md",
         "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],
@@ -2413,8 +2378,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "REPRODUCE.md",
-        "elkies-k3/README.md"
+        "REPRODUCE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -6468,7 +6432,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "REPRODUCE.md",
         "cancellation/CUBIC_CLOSURE_ATTACKS.md",
         "cancellation/CUBIC_NORMALIZATION_FRONTEND.md",
@@ -6619,7 +6582,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "REPRODUCE.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "artifacts/generated-results/README.md",
@@ -6663,7 +6625,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "REPRODUCE.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "artifacts/generated-results/README.md",
@@ -6709,7 +6670,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "REPRODUCE.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "artifacts/generated-results/README.md",
@@ -6760,7 +6720,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "REPRODUCE.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "artifacts/generated-results/README.md",
@@ -6802,7 +6761,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "cancellation/CUBIC_CLOSURE_ATTACKS.md",
         "cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md",
@@ -6942,7 +6900,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "cancellation/CUBIC_CLOSURE_ATTACKS.md",
         "cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md"
       ],
@@ -6979,7 +6936,6 @@
         "OP-SUSP"
       ],
       "consumers": [
-        "README.md",
         "REPRODUCE.md",
         "cancellation/CUBIC_CLOSURE_ATTACKS.md",
         "cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md"
@@ -7019,7 +6975,6 @@
         "OP-SUSP"
       ],
       "consumers": [
-        "README.md",
         "REPRODUCE.md",
         "cancellation/CUBIC_GAUGE_STRAIGHTENING.md",
         "cancellation/MINIMAL_BOUNDARY_CLASSIFICATION.md"
@@ -7417,7 +7372,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "REPRODUCE.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "cancellation/CUBIC_NORMALIZATION_FRONTEND.md",
@@ -8005,7 +7959,6 @@
       ],
       "consumers": [
         "KELLER_INVERSE_GALOIS_PROGRAM.md",
-        "README.md",
         "extended-geometry/README.md",
         "REPRODUCE.md"
       ],
@@ -8042,7 +7995,6 @@
       ],
       "consumers": [
         "KELLER_INVERSE_GALOIS_PROGRAM.md",
-        "README.md",
         "extended-geometry/README.md",
         "REPRODUCE.md"
       ],
@@ -8078,7 +8030,6 @@
       ],
       "consumers": [
         "KELLER_INVERSE_GALOIS_PROGRAM.md",
-        "README.md",
         "extended-geometry/README.md",
         "REPRODUCE.md"
       ],
@@ -8114,7 +8065,6 @@
       ],
       "consumers": [
         "KELLER_INVERSE_GALOIS_PROGRAM.md",
-        "README.md",
         "extended-geometry/README.md",
         "REPRODUCE.md"
       ],
@@ -8150,7 +8100,6 @@
       ],
       "consumers": [
         "KELLER_INVERSE_GALOIS_PROGRAM.md",
-        "README.md",
         "extended-geometry/README.md",
         "REPRODUCE.md"
       ],
@@ -15145,9 +15094,7 @@
       "narrows_problems": [
         "OP-GVC2-RP"
       ],
-      "consumers": [
-        "README.md"
-      ],
+      "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "reference"
@@ -15173,7 +15120,6 @@
       "narrows_problems": [],
       "consumers": [
         "GVC2ALL",
-        "README.md",
         "extended-geometry/HOLONOMIC_HYPERGEOMETRIC_ALGORITHMS.md"
       ],
       "invalidates_assumptions": [],
@@ -15204,8 +15150,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "GVC2ALL",
-        "README.md"
+        "GVC2ALL"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15299,8 +15244,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "GVC2ALL",
-        "README.md"
+        "GVC2ALL"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15368,8 +15312,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "GVC2ALL",
-        "README.md"
+        "GVC2ALL"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15433,8 +15376,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "GVC2ALL",
-        "README.md"
+        "GVC2ALL"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15467,8 +15409,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "GVC2ALL",
-        "README.md"
+        "GVC2ALL"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15501,8 +15442,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "GVC2ALL",
-        "README.md"
+        "GVC2ALL"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15535,8 +15475,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "GVC2ALL",
-        "README.md"
+        "GVC2ALL"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15570,8 +15509,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "GVC2ALL",
-        "README.md"
+        "GVC2ALL"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15606,8 +15544,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "GVC2ALL",
-        "README.md"
+        "GVC2ALL"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15643,8 +15580,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "GVC2ALL",
-        "README.md"
+        "GVC2ALL"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15680,8 +15616,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "GVC2ALL",
-        "README.md"
+        "GVC2ALL"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15716,8 +15651,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "GVC2ALL",
-        "README.md"
+        "GVC2ALL"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15749,9 +15683,7 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": [
-        "README.md"
-      ],
+      "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "reference"
@@ -15886,8 +15818,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15924,8 +15855,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -15962,8 +15892,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16000,8 +15929,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16037,8 +15965,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16076,8 +16003,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16118,8 +16044,7 @@
       ],
       "consumers": [
         "GVC2D6U",
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16160,8 +16085,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16201,8 +16125,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16243,8 +16166,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16280,8 +16202,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16321,8 +16242,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16361,8 +16281,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16401,8 +16320,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "GVC2D7U",
-        "README.md"
+        "GVC2D7U"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16436,9 +16354,7 @@
       "narrows_problems": [
         "OP-GVC2-RP"
       ],
-      "consumers": [
-        "README.md"
-      ],
+      "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "reference"
@@ -16474,8 +16390,7 @@
         "OP-GVC2-RP"
       ],
       "consumers": [
-        "OP-GVC2-RP",
-        "README.md"
+        "OP-GVC2-RP"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16571,8 +16486,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "OP-GVC3-LIFT",
-        "README.md"
+        "OP-GVC3-LIFT"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16605,8 +16519,7 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "OP-GVC3-LIFT",
-        "README.md"
+        "OP-GVC3-LIFT"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16674,8 +16587,7 @@
       "consumers": [
         "GVC3HS",
         "GVC3PT",
-        "OP-GVC3-LIFT",
-        "README.md"
+        "OP-GVC3-LIFT"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16704,9 +16616,7 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": [
-        "README.md"
-      ],
+      "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
@@ -16738,8 +16648,7 @@
         "OP-GVC3-MIN"
       ],
       "consumers": [
-        "OP-GVC3-MIN",
-        "README.md"
+        "OP-GVC3-MIN"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16781,8 +16690,7 @@
         "OP-GVC3-MIN"
       ],
       "consumers": [
-        "OP-GVC3-MIN",
-        "README.md"
+        "OP-GVC3-MIN"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16816,8 +16724,7 @@
         "OP-GVC3-MIN"
       ],
       "consumers": [
-        "OP-GVC3-MIN",
-        "README.md"
+        "OP-GVC3-MIN"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16851,8 +16758,7 @@
         "OP-GVC3-MIN"
       ],
       "consumers": [
-        "OP-GVC3-MIN",
-        "README.md"
+        "OP-GVC3-MIN"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16886,8 +16792,7 @@
         "OP-GVC3-MIN"
       ],
       "consumers": [
-        "OP-GVC3-MIN",
-        "README.md"
+        "OP-GVC3-MIN"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16922,8 +16827,7 @@
         "OP-GVC3-MIN"
       ],
       "consumers": [
-        "OP-GVC3-MIN",
-        "README.md"
+        "OP-GVC3-MIN"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16959,8 +16863,7 @@
         "OP-GVC3-MIN"
       ],
       "consumers": [
-        "OP-GVC3-MIN",
-        "README.md"
+        "OP-GVC3-MIN"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -16994,8 +16897,7 @@
         "OP-GVC3-MIN"
       ],
       "consumers": [
-        "OP-GVC3-MIN",
-        "README.md"
+        "OP-GVC3-MIN"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -17058,8 +16960,7 @@
         "OP-GVC3-MIN"
       ],
       "consumers": [
-        "OP-GVC3-MIN",
-        "README.md"
+        "OP-GVC3-MIN"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -17093,8 +16994,7 @@
         "OP-GVC3-MIN"
       ],
       "consumers": [
-        "OP-GVC3-MIN",
-        "README.md"
+        "OP-GVC3-MIN"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -18277,7 +18177,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "OPEN_PROBLEMS_FOR_MAP_EXTENSIONS.md",
         "REPRODUCE.md",
         "extended-geometry/BOUNDARY_PACKAGE_COMPILER.md",
@@ -26729,7 +26628,6 @@
       "consumers": [
         "HC4_ALL_DEGREE_FRONTEND_EXPERIMENTS.md",
         "HC4_DIRECT_HOMOGENEOUS_FILTRATION.md",
-        "README.md",
         "REPRODUCE.md"
       ],
       "invalidates_assumptions": [],
@@ -30014,8 +29912,7 @@
       ],
       "consumers": [
         "QHNW5",
-        "OP-QHNW10",
-        "README.md"
+        "OP-QHNW10"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -30052,8 +29949,7 @@
       ],
       "consumers": [
         "QHNW5",
-        "OP-QHNW10",
-        "README.md"
+        "OP-QHNW10"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -30092,8 +29988,7 @@
       "consumers": [
         "QHNW4",
         "QHNW5",
-        "OP-QHNW10",
-        "README.md"
+        "OP-QHNW10"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -30131,8 +30026,7 @@
       ],
       "consumers": [
         "QHNW5",
-        "OP-QHNW10",
-        "README.md"
+        "OP-QHNW10"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -30172,9 +30066,7 @@
         "OP-QHNW10"
       ],
       "narrows_problems": [],
-      "consumers": [
-        "README.md"
-      ],
+      "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
@@ -31392,7 +31284,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "extended-geometry/DC2_HESSIAN_SYMBOL_OPTIMIZATION.md"
       ],
       "invalidates_assumptions": [],
@@ -31427,9 +31318,7 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": [
-        "README.md"
-      ],
+      "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
@@ -31460,9 +31349,7 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": [
-        "README.md"
-      ],
+      "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
@@ -31496,9 +31383,7 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": [
-        "README.md"
-      ],
+      "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "derived"
@@ -31533,9 +31418,7 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": [
-        "README.md"
-      ],
+      "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
@@ -31570,9 +31453,7 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": [
-        "README.md"
-      ],
+      "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
@@ -35105,7 +34986,6 @@
       "narrows_problems": [],
       "consumers": [
         "REPRODUCE.md",
-        "elkies-k3/README.md",
         "elkies-k3/scripts/README.md",
         "elkies-k3/BISECTION_COLLISION_SEARCH.md",
         "elkies-k3/BISECTION_PAIR_COVER_GEOMETRY_2026-08-31.md",
@@ -35585,7 +35465,6 @@
       ],
       "consumers": [
         "OP-EC-NEXT",
-        "elkies-k3/README.md",
         "elkies-k3/ORBIT42_EQUATION_LIFT.md",
         "EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE"
       ],
@@ -35660,7 +35539,6 @@
       "narrows_problems": [],
       "consumers": [
         "OP-EC-NEXT",
-        "elkies-k3/README.md",
         "elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md"
       ],
       "invalidates_assumptions": [],
@@ -35792,8 +35670,7 @@
       ],
       "consumers": [
         "OP-EC-NEXT",
-        "elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md",
-        "elkies-k3/README.md"
+        "elkies-k3/A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -36049,7 +35926,11 @@
       ],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": [],
+      "consumers": [
+        "README.md",
+        "elkies-k3/README.md",
+        "elliptic-curves/README.md"
+      ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
@@ -36362,7 +36243,9 @@
       "title": "Six-edge physical corridor from the determinant-720 3A5 marking to MW17",
       "scope": "Inside the saturated determinant-720 Neron--Severi lattice, exact primitive degree-two q=4 neighbours give the chain 3A5 -> 4A2+A5 -> 3A1+2A2+A3 -> 4A1+A2 -> 3A1 -> 2A1 -> rootless MW17. Every edge passes the finite/affine component, all-section, and finite horizontal-wall gates and has a unimodular transport. The first five edges have horizontal P.O. at most two; the final edge needs two component-Weyl repairs and has P.O.=4. Hence physical connectivity is proved, but an end-to-end P.O.<=2 corridor remains open. This is a marking-level theorem, not an equation-level QQ corridor: the stored rational 3I6 model has saturated determinant 20 and cannot be its start.",
       "canonical_source": "elkies-k3/GOLAY_OCTAD_LATTICE_DESIGN_2026-09-01.md",
-      "dependencies": ["EC-K3-GOLAY-DET720-NS-SATURATION"],
+      "dependencies": [
+        "EC-K3-GOLAY-DET720-NS-SATURATION"
+      ],
       "checker": "elkies-k3/scripts/certify_golay_det720_physical_corridor.sage",
       "proof_type": "exact_symbolic",
       "independent_replay": false,
@@ -36629,7 +36512,9 @@
       "supersedes": [],
       "closes_problems": [],
       "narrows_problems": [],
-      "consumers": ["elkies-k3/SAME_NS_COMPILER_ROUTES_2026-09-02.md"],
+      "consumers": [
+        "elkies-k3/SAME_NS_COMPILER_ROUTES_2026-09-02.md"
+      ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
@@ -37143,7 +37028,6 @@
       "narrows_problems": [],
       "consumers": [
         "REPRODUCE.md",
-        "elkies-k3/README.md",
         "elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md",
         "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "elkies-k3/scripts/README.md"
@@ -37272,34 +37156,42 @@
       "id": "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
       "kind": "theorem",
       "state": "proved",
-      "title": "Complete 43-chart norm-twelve record-lineage sweep and exact five-fibre R17 realization",
-      "scope": "The universal degree-two compiler applied to every certified norm-twelve shared-zero divisor on the published R17 K3 produces 43 polynomial short Weierstrass models of degrees (8,12,24), with the certified frame distribution 33 published R17 and ten alternate Q80. Exact normalized j-maps and rational PGL2 identities partition them into six classes of sizes 8,5,18,6,2,4. Primitive projective degree-24 j-preimage equations prove that ICARM curves 273 and 302 have no rational parameter in any of the 43 charts; the alternate-Q80 norm12-orbit-11952/curve-302 case is decided by exact QQ rational-root factorization. The eight-chart class represented by norm12-orbit-074d9 contains curves 351,356,376,377,385, giving forty rational chart/fibre matches, all with trivial quadratic twist and explicit QQ-isomorphisms. The unimodular words P2,P3,P4,P5,P8,P11,P13,P15,P16,P17,P1-P2,P1-P6,P1-P7,P1-P9,P1-P10,P1-P12,P1-P14 interpolate to seventeen polynomial generic sections; exact transport gives native polynomial bases on all eight charts. Their Shioda height Gram is positive definite of rank 17, determinant 948, rootless, and integrally isometric to published R17, hence saturated. Exact mod-2 reduction certificates prove independence of every displayed public target point, so the quotients of the displayed subgroups by the specialized generic subgroup are respectively Z^8, Z^12, Z^5, Z^6 and Z^12, with bases given by the displayed points after P17. This proves the record-curve misses only inside the complete certified 43-member shared-zero norm-twelve atlas, not in other rootless fibrations; it proves no Mordell--Weil rank upper bound and no rank-32 curve.",
+      "title": "Complete 43-chart and 474-curve norm-twelve lineage sweep with native alternate-Q80 rank-29 control",
+      "scope": "The universal degree-two compiler applied to every certified norm-twelve shared-zero divisor on the published R17 K3 produces 43 polynomial short Weierstrass models of degrees (8,12,24), with the certified frame distribution 33 published R17 and ten alternate Q80. Exact normalized j-maps and rational PGL2 identities partition them into six classes of sizes 8,5,18,6,2,4. The pinned 2026-09-01 ICARM snapshot contains 474 curve equations and 462 distinct j-invariants. Primitive projective degree-24 preimage tests decide all 2,844 curve/class pairs: 2,775 miss and 69 have exactly one rational root in exactly one class. Of the misses, 2,698 have an explicit projective finite-field no-root prime and 77 are closed by exact QQ factorization. Transporting every hit through the stored PGL2 maps gives 376 native chart/fibre comparisons, all QQ-isomorphic with trivial quadratic twist. All six classes occur. The complete wgxli component decomposition is exact: 351,356,376,377,385 lie in published-R17 class 074d9; 363,364,378 in alternate-Q80 class 08f72; 389,390,391 in published-R17 class 07ca9; 393 in published-R17 class 0e80b; and 395 in alternate-Q80 class 11952. Curves 273,302,398 miss, so there is no pinned rank-30 or rank-31 hit. ICARM curve 12, the independently certified Elkies--Klagsbrun rank-at-least-29 curve, is an untwisted fibre of the native norm12-orbit-11952 alternate-Q80 equation. Its seventeen saturated generic sections specialize to exact integer combinations of the 29 independently certified public points. The 29-by-17 coordinate matrix has rank 17 and Smith factors all one; augmenting it by P2,P11,P4,P3,P6,P8,P17,P10,P28,P24,P19,P15 has determinant plus or minus one, proving that the displayed subgroup modulo the specialized generic subgroup is Z^12. The original five 074d9 displayed quotients remain Z^8,Z^12,Z^5,Z^6,Z^12. These are atlas- and snapshot-bounded theorems, not exclusions from other rootless fibrations or later ICARM records; they prove no Mordell--Weil rank upper bound and no rank-32 curve.",
       "canonical_source": "elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md",
       "dependencies": [
         "EC-K3-H3-ROOTLESS-J2-MINIMAL-ACCESSIBILITY",
         "EC-K3-UNIVERSAL-DEGREE2-FIBRATION-COMPILER",
         "EC-ICARM-WGXLI-R17-LINEAGE",
+        "ECR29",
         "ECR30",
         "ECR31"
       ],
-      "checker": "elkies-k3/scripts/certify_r17_norm12_wgxli_lineage_fibres.sage",
+      "checker": "elkies-k3/scripts/verify_r17_norm12_icarm_database_and_curve12.sage",
       "proof_type": "hybrid",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:ccaca28f9ca46a7b97c8ce20c72258251c2f1bb2d33e14afc932635c27e2fe4a",
+      "artifact_hash": "sha256:16a29adaea65e5c1047f0be04661ddea8adae64b3a6e3b976f8dfeef8518b41c",
       "software_lock": [
         "elkies-k3/scripts/compile_r17_norm12_record_lineage_atlas.sage",
         "elkies-k3/scripts/certify_r17_norm12_wgxli_lineage_fibres.sage",
+        "elkies-k3/scripts/certify_r17_norm12_icarm_database_sweep.sage",
+        "elkies-k3/scripts/certify_r17_norm12_curve12_alternate_q80_quotient.sage",
+        "elkies-k3/scripts/verify_r17_norm12_icarm_database_and_curve12.sage",
         "elliptic-curves/cas/mod2_reduction_independence.py",
         "elkies-k3/data/lattice/rank17_gram.txt",
         "artifacts/generated-results/elkies-k3-r17-norm12-record-lineage-atlas-v1.json",
-        "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json"
+        "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-icarm-database-sweep-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-curve12-alternate-q80-quotient-v1.json"
       ],
       "supersedes_notes": [
         "family reconstruction for the five-member wgxli component remains open",
         "curve 302 has not been excluded from alternate Q80, hidden 103b2, or the other certified norm-twelve shared-zero copies",
-        "the one-shear rejection is operational evidence against a common rootless-R17 family"
+        "the one-shear rejection is operational evidence against a common rootless-R17 family",
+        "alternate Q80 has no native high-rank public calibration fibre",
+        "the remaining wgxli components have not been tested against the six exact j-map classes"
       ],
       "supersedes": [],
       "closes_problems": [],
@@ -37365,7 +37257,8 @@
         "elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md",
         "elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md",
         "elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md",
-        "elkies-k3/scripts/README.md"
+        "elkies-k3/scripts/README.md",
+        "README.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -38763,7 +38656,8 @@
         "elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md",
         "elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md",
         "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
-        "elkies-k3/scripts/README.md"
+        "elkies-k3/scripts/README.md",
+        "README.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -38801,7 +38695,9 @@
       "consumers": [
         "REPRODUCE.md",
         "elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md",
-        "elkies-k3/scripts/README.md"
+        "elkies-k3/scripts/README.md",
+        "README.md",
+        "elkies-k3/README.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -39170,6 +39066,123 @@
       "narrows_problems": [],
       "consumers": [
         "elkies-k3/R17_NORM12_BISECTION_CHARACTER_EXHAUSTION_2026-09-03.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete singular genus-one rational-normalization exclusion on alternate Q80 and hidden 103b2",
+      "scope": "For the direct norm12-orbit-11952 alternate-Q80 and norm12-orbit-103b2 rank-17 equations, exact norm-eight lattice enumeration gives respectively 63,917 and 63,925 minimum translation classes of degree-two arithmetic-genus-one pencils. In each parity class with m minimum representatives up to sign, the finite pencil discriminant has degree 22 and even part of degree exactly 2(m-1); the m known split members, including q_infinity=h^2, therefore exhaust the even-multiplicity locus. Exact factorization, exact odd-part irreducibility, or good-prime projective-root obstruction excludes a rational root of the remaining odd part for every class. Thus neither chart has a nonsplit singular pencil member with rational quadratic normalization, and no new character can collide with the complete smooth atlas, another singular candidate, or enter a three-character relation. Together with smooth rational-bisection injectivity, the rational-normalization branch-character filtration is injective through arithmetic genus one, so its first possible failure has arithmetic genus at least two. This does not assert anything about the elliptic-normalization genus-one row or global arithmetic-genus-two injectivity.",
+      "canonical_source": "elkies-k3/R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION",
+        "EC-K3-R17-NORM12-103B2-DIRECT-BISECTION-CHARACTER-EXHAUSTION"
+      ],
+      "checker": "elkies-k3/scripts/merge_r17_norm12_direct_norm8_singular_search.py",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ec9c5a94c358d411cd3a69aa0789dfa828b7e39fffed78c3850c82ffa2af1a19",
+      "software_lock": [
+        "elkies-k3/scripts/rank_r17_norm12_11952_alternate_norm8_pencils.sage",
+        "elkies-k3/scripts/rank_r17_norm12_103b2_norm8_pencils.sage",
+        "elkies-k3/scripts/search_r17_norm12_direct_singular_bisections.sage",
+        "elkies-k3/scripts/search_r17_norm12_direct_norm8_singular_modp.sage",
+        "elkies-k3/scripts/merge_r17_norm12_direct_norm8_singular_search.py",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-singular-bisection-search-complete-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-singular-bisection-search-complete-v1.json"
+      ],
+      "supersedes_notes": [
+        "a singular arithmetic-genus-one norm-eight pencil member may supply a new rational quadratic character on either direct rank-17 chart"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md",
+        "elkies-k3/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-GENUS2-RATIONAL-NORMALIZATION-SCREEN",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact multi-prime and bounded-CRT genus-two rational-normalization miss on alternate Q80 and hidden 103b2",
+      "scope": "The complete norm-six trace shells, with 26,645 classes on alternate Q80 and 26,672 on hidden 103b2, were screened for two-node arithmetic-genus-two rational normalizations at p=17,23,29,31,37 after elimination to four essential variables. Intersecting full finite-field cover squareclasses, including scalar characters, leaves no smooth-versus-norm-six or distinct-norm-six cover collision on either chart. CRT reconstruction modulo 13,005,833 tests 78,860 distinct rational parameter pairs on alternate Q80 and 107,633 on hidden 103b2 by exact characteristic-zero factorization and section identities, accepting zero candidates. This is a bounded exact negative result only: simultaneous bad-reduction cases, parameter-at-infinity charts, and rational parameters outside the reconstruction bound remain open. It does not prove global arithmetic-genus-two injectivity and produces neither a rank-19 rational quadratic base nor a rank-20 V4 construction.",
+      "canonical_source": "elkies-k3/R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION"
+      ],
+      "checker": "elkies-k3/scripts/reconstruct_r17_norm12_direct_genus2_normalizations.sage",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a5cb9cb14c4c41f8eb15c56b85b2bf583d206bcee3a88b65f1d7094d9be12a5d",
+      "software_lock": [
+        "elkies-k3/scripts/export_r17_norm12_direct_genus2_normalizations_modp.sage",
+        "elkies-k3/scripts/screen_r17_norm12_direct_genus2_normalizations_modp.sage",
+        "elkies-k3/scripts/reconstruct_r17_norm12_direct_genus2_normalizations.sage",
+        "elkies-k3/scripts/analyze_r17_norm12_direct_genus2_cover_collisions.py",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus2-cover-collision-intersection-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-genus2-cover-collision-intersection-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus2-normalization-reconstruction-full-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-genus2-normalization-reconstruction-full-v1.json"
+      ],
+      "supersedes_notes": [
+        "the prepared two-node genus-two modular and CRT workflow has not been run on both direct rank-17 charts"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "OP-K3-NS0024-ARITHMETIC-MW17",
+      "kind": "open_problem",
+      "state": "open",
+      "title": "First planner-found arithmetic MW17 fibration on a different Neron--Severi lattice",
+      "scope": "The determinant-948 published-R17 to noncyclic-4A1/MW13 to published-R17 chain is equation-explicit with thirteen saturated rational sections and target-free reverse selection, so another equation on that same surface is not the next foundry milestone. The open milestone is the first arithmetic rootless MW17 fibration on a different Picard-rank-19 Neron--Severi lattice selected by the planner without a supplied target frame; determinant-950 NS0024 is the preferred class. EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER and EC-K3-NS0024-INVERSE-ADE-MUTATION provide exact geometric frame data, while EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION prevents the completed-core Kneser path from being treated as a marked elliptic corridor. The first missing gate is an explicit characteristic-zero elliptic K3 source over QQ with nineteen QQ-rational divisor classes, an exact determinant-one NS0024 marking, source U and incidence data, and a geometric Picard-rank-19 proof. Completion then requires the marked-U planner to select a primitive nef U' with effective zero from a target-free rootless determinant-950 predicate; an endpoint Weierstrass equation, preferably from the universal degree-two compiler; and seventeen displayed QQ(t)-sections whose saturated Shioda lattice has determinant 950, with torsion excluded, proving arithmetic Mordell--Weil group Z^17. A modular model, Frobenius ranking, abstract core-neighbour route, supplied target Gram, unsaturated section subgroup, or equation without the rational rank-19 marking does not close the problem.",
+      "canonical_source": "elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION",
+        "EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER",
+        "EC-K3-NS0024-INVERSE-ADE-MUTATION",
+        "EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION",
+        "EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA",
+        "EC-K3-ARITHMETIC-RANK-TRANSFER",
+        "EC-K3-RELATIVE-U-BRIDGE-LIFTING",
+        "EC-K3-UNIVERSAL-DEGREE2-FIBRATION-COMPILER"
+      ],
+      "checker": null,
+      "proof_type": "not-applicable",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/AGENTS.md",
+        "README.md",
+        "elkies-k3/README.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],

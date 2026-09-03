@@ -13,16 +13,24 @@ and a reproducible certificate plan.
 ## Start here
 
 1. [`README.md`](README.md) — current milestone and active fronts.
-2. [`R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md`](R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md) — canonical alternate-Q80 equation route.
-3. [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md) — reusable theorem/algorithm layer.
-4. [`LITERATURE_AND_NOVELTY_MAP_2026-09-03.md`](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md) — terminology and prior-art boundaries.
-5. `../MATH_STATUS.json` and `../REPRODUCE.md` — exact status and replay.
+2. [`NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — open different-NS objective and fail-closed source/endpoint gates.
+3. [`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) — determinant-948 noncyclic closure that motivates the pivot.
+4. [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md) — reusable theorem/algorithm layer.
+5. [`LITERATURE_AND_NOVELTY_MAP_2026-09-03.md`](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md) — terminology and prior-art boundaries.
+6. `../MATH_STATUS.json` and `../REPRODUCE.md` — exact status and replay.
 
 ## Current conclusions
 
 - Published R17 and alternate Q80 are both explicit rootless rank-17 fibrations over `QQ` on the pinned determinant-948 K3.
 - The alternate chart's canonical route is the direct degree-two `norm12-orbit-11952` hop, not the historical degree-11511 Q80 transport.
-- The four published rank-25--28 R17 control fibres do not transfer to rational alternate-Q80 parameters; future alternate work needs native controls.
+- The maximal noncyclic determinant-948 bridge is equation-explicit in both
+  directions: `R17 -> 4A1/MW13 -> R17`, with thirteen saturated rational
+  sections and target-free reverse selection.
+- The next foundry milestone is the first planner-found arithmetic MW17
+  fibration on a different NS.  Determinant-950 `NS0024` is preferred, but it
+  remains open until an equation-facing characteristic-zero source has a
+  rational rank-19 marking.
+- The four published rank-25--28 R17 controls do not transfer to rational alternate-Q80 parameters, but the complete ICARM sweep now supplies native controls: curve 12 has rank at least 29 in class `11952`, while curves 363, 364, 378, and 395 give further rank-at-least-24--28 fibres in classes `08f72` and `11952`.
 - Rank `>=32` is open.
 - One curated inverse-ADE/foundry route is end-to-end planner-ready; the 936 bulk routes are not.
 
@@ -33,6 +41,8 @@ and a reproducible certificate plan.
 - broad Q80 suffix, q323, or changed-zero route searches;
 - ungated Nagao/point/Selmer sweeps;
 - bulk foundry route enumeration without complete marked planner inputs.
+- treating another determinant-948 equation as the different-NS foundry
+  milestone.
 
 These remain useful provenance/regression material and are indexed from `../archive/elkies-k3/`.
 
@@ -43,3 +53,5 @@ These remain useful provenance/regression material and are indexed from `../arch
 - Preserve `UNKNOWN` and bounded-negative qualifiers.
 - Do not modify `STATUS.md` manually. If mathematical status genuinely changes, update the canonical proof and `MATH_STATUS.json`, then regenerate status.
 - Preserve scripts and generated certificates even when an operational route is archived.
+
+<!-- status-consumer: OP-K3-NS0024-ARITHMETIC-MW17 427e74f6a4eb03e4 -->

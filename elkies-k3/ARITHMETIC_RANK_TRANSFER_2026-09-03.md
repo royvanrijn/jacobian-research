@@ -165,7 +165,7 @@ arithmetic rank by zero; removing a fixed `A1` then raises both by one.  This
 tests (A2.3) on every group element and is not asserted to be a new geometric
 surface.
 
-## Application to the current NS0024 route
+## Application to the completed-core NS0024 route
 
 The arithmetic promotion gate has been applied to the completed-core path
 
@@ -200,5 +200,11 @@ The shortest arithmetic promotion route is therefore:
 
 The existing modular NS0024 searches remain feasibility and Frobenius-ranking
 evidence.  They are not a substitute for steps 1--3.
+
+This completed-core path is distinct from the certified thirteen-edge
+degree-two lattice corridor beginning at `A3+A4+A6/MW4`.  Neither route has
+the equation-facing characteristic-zero rational rank-19 source marking
+required by the current
+[`NS0024 arithmetic MW17 objective`](NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 
 <!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 3031dd2365a29cd5 -->

@@ -1,10 +1,14 @@
 # Lattice foundry report — 2026-09-01
 
-> **Updated optimization directive.**  This report records the first
-> target-first foundry run.  New searches start from any same-`NS/T`
-> MW15--17 frame and optimize first for an MW0--2, arithmetically rational,
-> equation-friendly source.  See
-> [`LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md`](LATTICE_FOUNDRY_SOURCE_FIRST_OBJECTIVE_2026-09-01.md).
+> **Current programme directive (2026-09-04).**  This report records the first
+> target-first foundry run and establishes determinant-950 `NS0024` as the
+> preferred lattice candidate.  The live milestone is now an arithmetic MW17
+> equation selected target-free by the planner.  Before further route work it
+> requires an equation-facing characteristic-zero source with a rational
+> rank-19 marking.  See
+> [`NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
+> The source rankings below remain exact records of their declared searches,
+> not the current cross-NS work queue.
 
 ## Outcome
 
@@ -35,7 +39,7 @@ Weyl reflection counts are zero, and both composed 19-dimensional integral
 markings are unimodular. The MW4 route lands on `NS0024-F005`; the MW5 route
 discovers a fourth rootless `NS0024` frame not present in the initial shell.
 
-This is success level A at the lattice/arithmetic/route layer. It is not yet
+This is success level A at the lattice/route layer. It is not yet
 an equation: no effective equation-side zero, resolved Riemann--Roch pencil,
 or characteristic-zero Weierstrass model is claimed.
 

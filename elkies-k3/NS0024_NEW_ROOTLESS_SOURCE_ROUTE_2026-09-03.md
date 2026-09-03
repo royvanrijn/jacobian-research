@@ -2,6 +2,19 @@
 
 Date: 2026-09-03.
 
+> **Programme update (2026-09-04).**  The Inose, `D5+E8/MW4`, and
+> thirteen-edge `A3+A4+A6/MW4` approaches are now treated as alternative
+> source strategies for one open objective.  None is the active input to the
+> marked-`U` planner until it supplies an equation-facing characteristic-zero
+> surface with a rational rank-19 marking.  See
+> [`NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
+>
+> **Arithmetic correction (2026-09-04).**  The direct Inose specialization
+> over `QQ` is obstructed: the required cyclic isogeny has degree `475`, which
+> is absent from the complete Mazur--Kenku list.  Only a separately proved
+> quotient or quadratic descent remains open.  See
+> [`NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md`](NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md).
+
 ## Outcome
 
 The new determinant-950 completion is an exact catalog-external rootless frame
@@ -21,7 +34,7 @@ The exact Gram matrix and replay are in
 This identifies a new integral frame class by an exact isometry invariant; it
 does not yet produce a Weierstrass equation for the corresponding fibration.
 
-There is, however, a clean equation **source**.  The canonical foundry source
+There is, however, a symbolic equation **source family**.  The canonical foundry source
 `NS0024-S001` is
 
 ```text
@@ -30,9 +43,10 @@ There is, however, a clean equation **source**.  The canonical foundry source
 
 It is the frame of an Inose fibration attached to a non-isomorphic pair of
 elliptic curves joined by a cyclic isogeny of degree 475.  This gives a
-symbolic Weierstrass source over the level-475 isogeny locus.  The missing
-part is an equation-level fibration change from that Inose model to the new
-rootless frame.
+symbolic Weierstrass family over the level-475 isogeny locus, but not a direct
+arithmetic source over `QQ`.  The direct rational specialization is
+impossible, and any quotient descent would still have to supply the rational
+rank-19 marking before an equation-level fibration change can begin.
 
 ## Exact completed-core route
 
@@ -94,10 +108,20 @@ arising from isogenous elliptic curves*](https://arxiv.org/abs/2209.02463),
 equation (2.7), Proposition 3.1, and Section 5.
 
 This is a genuine equation route at the source-family level, not a numerical
-ansatz.  To obtain one explicit specialization, one still has to provide an
-explicit non-CM point of the desired field on `X0(475)`, construct the two
-475-isogenous curves, and substitute their coefficients in (1).  The present
-calculation does not claim such a point over `QQ`.
+ansatz.  Over `QQ`, however, the complete Mazur--Kenku classification permits
+cyclic isogeny degrees only
+
+```text
+1,...,19, 21, 25, 27, 37, 43, 67, 163.
+```
+
+Therefore `X0(475)(QQ)` has no noncuspidal point, and the direct instruction
+to choose `E1,E2/QQ` with a rational cyclic 475-isogeny cannot be completed.
+The exact application and its boundary are recorded in
+[`NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md`](NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md).
+Rational points on an Atkin--Lehner quotient and quadratic `Q`-curve descents
+are not excluded, but equation descent alone would not prove that the two
+`E8` configurations and the height-950 section descend individually.
 
 ## Why the canonical source is not a cheap compiler start
 
@@ -136,24 +160,25 @@ an exact bounded negative result, not a proof that a higher-`q` route does not
 exist.  It does show that the canonical `2E8/MW1` fibration is a poor start for
 the usual low-pole neighbour compiler.
 
-## Recommended continuation
+## Route-specific continuation
 
-The most credible route is now:
+The active route is now:
 
-1. Use (1) to anchor the surface and source identity on the degree-475
-   isogeny locus.
-2. Locate the `D5+E8/MW4` primitive `U` embedding on that Inose surface and
-   compile its `II*+I1*` equation.  This is the first missing equation step.
-3. Search actual degree-two/three elliptic neighbours from that marked model,
-   using the two `3A1+A2/MW12` completions and the 2,634-vector Gram matrix as
-   exact landing tests.
-4. Once the rootless equation is reached, recover a 17-section basis and
-   verify its height Gram against the stored new frame.
+1. Recover a common characteristic-zero producer for the semistable
+   `A3+A4+A6/MW4` equation and all four resolved sections.
+2. Prove that its nineteen displayed divisor classes are `QQ`-rational,
+   identify their intersection matrix with `NS0024`, and prove geometric
+   Picard rank 19.
+3. Run the marked-`U` planner from that explicit marking with a target-free
+   rootless determinant-950 predicate.  Use the stored thirteen-edge corridor
+   and completed frames only as post-selection controls.
+4. Compile the selected low-degree moves and certify the endpoint equation
+   and saturated rational MW17 basis.
 
-The alternative is to construct the degree-475 Inose section directly by
-Utsumi's general-degree method and start a high-pole fibration change from
-`2E8/MW1`; the pole-473 certificate makes that route substantially less
-attractive.
+The `D5+E8/MW4` route becomes active only if it independently acquires an
+equation and rational marking.  A quotient descent of (1) remains possible in
+principle, but it is a separate arithmetic problem and the pole-473 source
+certificate still makes it a poor compiler start.
 
 ## Replay
 

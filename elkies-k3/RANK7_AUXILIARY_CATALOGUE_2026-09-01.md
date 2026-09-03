@@ -875,7 +875,7 @@ python3 elkies-k3/scripts/build_rank7_all_niemeier_factory.py
 python3 elkies-k3/scripts/build_rank7_all_niemeier_factory.py --check
 ```
 
-## Next exact frontier
+## Next exact catalogue frontier
 
 The next useful computation is not another mutation of the determinant-948
 H3 auxiliary. It is completion of the first orbit-complete backend/band shard, with the

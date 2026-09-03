@@ -1,5 +1,13 @@
 # Source-first optimization for the Picard-19 lattice foundry
 
+> **Programme update (2026-09-04).**  The candidate-ranking and finite-field
+> queue below are retained as exact, dated subcampaign records.  They no
+> longer define the programme-level “next equation” target.  The active
+> foundry milestone is the first planner-found arithmetic MW17 fibration on a
+> different NS, with determinant-950 `NS0024` preferred and a
+> characteristic-zero rational rank-19 source marking as the first gate.  See
+> [`NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
+
 ## Outcome
 
 The foundry objective is now ordered as

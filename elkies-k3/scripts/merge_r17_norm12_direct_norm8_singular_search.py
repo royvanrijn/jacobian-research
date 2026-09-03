@@ -78,8 +78,8 @@ with priority_path.open(newline="") as stream:
         if parity_mask in minimum_count_by_parity_mask:
             raise ValueError(f"duplicate priority-table parity mask: {parity_mask}")
         minimum_count_by_parity_mask[parity_mask] = count
-if len(minimum_count_by_parity_mask) != 63917:
-    raise ValueError("priority table does not contain 63,917 distinct parity classes")
+if not minimum_count_by_parity_mask:
+    raise ValueError("priority table contains no parity classes")
 source_token = args.source_label.removeprefix("norm12-orbit-")
 expected_model = (
     "artifacts/generated-results/"
@@ -175,6 +175,11 @@ for interval, path, _payload in records:
     cursor = interval[1]
 
 expected = int(records[-1][2]["search"]["minimum_norm_eight_translation_classes"])
+if len(minimum_count_by_parity_mask) != expected:
+    raise ValueError(
+        "priority-table class count does not match the singular-search shards: "
+        f"{len(minimum_count_by_parity_mask)} != {expected}"
+    )
 if cursor != expected:
     raise ValueError(f"incomplete coverage: reached {cursor} of {expected}")
 if any(
@@ -187,6 +192,7 @@ allowed_statuses = {
     "PASS_EXACT_PENCIL_DISCRIMINANT_FACTORIZATION",
     "PASS_EXACT_ODD_DISCRIMINANT_IRREDUCIBLE",
     "PASS_MODULAR_NO_RATIONAL_SINGULAR_PARAMETER",
+    "PASS_MODULAR_FULL_DISCRIMINANT_SPLIT_EXHAUSTION",
 }
 unexpected_statuses = set(status_histogram) - allowed_statuses
 if unexpected_statuses:

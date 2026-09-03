@@ -1,7 +1,7 @@
 # Public `wgxli` rank-17 lineage candidates
 
-Status: **historical fingerprint; the five-member family reconstruction is
-now exact**.
+Status: **historical fingerprint; all five numerical components are now
+resolved by exact `j`-class recognition**.
 
 The complete 43-chart norm-twelve sweep has identified curves 351, 356, 376,
 377, and 385 as untwisted rational fibres of one eight-chart published-R17
@@ -9,7 +9,13 @@ class, reconstructed and saturated all seventeen generic sections, and
 computed the displayed exceptional quotients.  See
 [`../../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](../../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
 
-<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 00e39f6b05c2688a -->
+The complete 474-curve follow-up also resolves the remaining components:
+`{363,364,378}` is native alternate-Q80 class `08f72`, `{389,390,391}` is
+published-R17 class `07ca9`, curve 393 is published-R17 class `0e80b`, and
+curve 395 is native alternate-Q80 class `11952`.  All induced twists are
+trivial.
+
+<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 291a539d07b842b9 -->
 
 The fingerprint and inverse-problem discussion below is retained as the
 historical route to that exact result.

@@ -1,5 +1,12 @@
 # Recovering the other rank-17 fibration
 
+> **Superseded navigation (2026-09-04).**  The missing equation and rank-29
+> identification are now exact: ICARM curve 12 is an untwisted fibre of the
+> direct `norm12-orbit-11952` alternate-Q80 equation, with displayed quotient
+> `Z^12`.  See
+> [`R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
+> The remainder of this note is retained as historical route provenance.
+
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
 

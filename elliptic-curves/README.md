@@ -45,9 +45,9 @@ Existing scripts, tests, local checkpoints, and generated certificates are retai
 
 The useful gates are still:
 
-1. use the exact five-fibre R17 parameters and exceptional quotients to target a rank-32 neighbourhood, while separately pursuing an unconditional upper bound for curve 302;
+1. use the exact pinned-ICARM fibre inventory—especially the `074d9` controls and native alternate-Q80 curve 12—to target a rank-32 neighbourhood, while separately pursuing an unconditional upper bound for curve 302;
 2. complete genuinely residual Selmer/descent calculations before authorizing expensive point search;
-3. build native alternate-Q80 calibration fibres before comparing its specialization tail to published R17;
+3. use curve 12 and the other exact native alternate-Q80 fibres from the complete pinned-ICARM sweep to compare its specialization tail to published R17;
 4. pursue low-conductor survivors only after exact quotient/descent gates justify them.
 
 A heuristic score, point list without independence, incomplete Selmer calculation, or bounded miss is not a rank theorem.
@@ -56,4 +56,6 @@ A heuristic score, point list without independence, incomplete Selmer calculatio
 
 Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../MATH_STATUS.json`. The normal regression suite remains `make verify-elliptic-curves`; long CAS/search jobs remain separate targeted replays.
 
-<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 00e39f6b05c2688a -->
+<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 291a539d07b842b9 -->
+<!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
+<!-- status-consumer: OP-EC-NEXT e135b23ef9910845 -->

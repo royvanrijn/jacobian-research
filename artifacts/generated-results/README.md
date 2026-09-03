@@ -19,6 +19,23 @@ This directory contains reproducible outputs from retained research
 computations.  Only outputs with a named generator and verification path below
 are treated as reference artifacts.
 
+- `elkies-k3-r17-norm12-icarm-database-sweep-v1.json` records all 2,844 exact
+  projective preimage decisions for the 474 equations in the pinned ICARM
+  snapshot against the six norm-twelve rational-`PGL2` `j`-classes.  It finds
+  69 rational hits and 2,775 misses and proves all 376 induced native
+  chart/fibre twists trivial.  Generate or check it with
+  `sage -python elkies-k3/scripts/certify_r17_norm12_icarm_database_sweep.sage`
+  and the same command with `--check`; its whole-file SHA-256 is
+  `6529f6dc81fb37f163c7fca761e7eaff1a2ffb7ab40a81cbfc9002e40165dbd2`.
+
+- `elkies-k3-r17-norm12-curve12-alternate-q80-quotient-v1.json` proves that
+  ICARM curve 12 is an untwisted native `11952` alternate-Q80 fibre and that
+  its displayed 29-point subgroup modulo the specialized saturated MW17
+  subgroup is `Z^12`.  Generate or check it with
+  `sage -python elkies-k3/scripts/certify_r17_norm12_curve12_alternate_q80_quotient.sage`
+  and the same command with `--check`; its whole-file SHA-256 is
+  `17986087896ff002ca773796bd91797c4b01d3e09b8913b2c5939870259bdd0d`.
+
 - `elliptic_mestre_two_section_local_continuation.json` records a bounded
   recursive-jet continuation at the normalized six-root Mestre seed
   `(0,25,95,143,168,205)`, with two labelled nonvisible affine sections.  It

@@ -18963,10 +18963,12 @@ zero-section degree one.  Together with the general lower bound for distinct
 
 ### Complete 43-chart norm-twelve record-lineage sweep
 
-<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 00e39f6b05c2688a -->
+<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 291a539d07b842b9 -->
 
 Compile every certified shared-zero norm-twelve chart, normalize and quotient
-its `j`-map, and decide the seven record/lineage target equations:
+its `j`-map, decide the original seven record/lineage target equations, then
+scan the complete pinned ICARM snapshot and close the native alternate-Q80
+rank-29 quotient:
 
 ```bash
 sage -python \
@@ -18976,18 +18978,36 @@ sage -python \
   elkies-k3/scripts/certify_r17_norm12_wgxli_lineage_fibres.sage
 
 sage -python \
+  elkies-k3/scripts/certify_r17_norm12_icarm_database_sweep.sage
+
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_curve12_alternate_q80_quotient.sage
+
+sage -python \
   elkies-k3/scripts/compile_r17_norm12_record_lineage_atlas.sage --check
 
 sage -python \
   elkies-k3/scripts/certify_r17_norm12_wgxli_lineage_fibres.sage --check
+
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_icarm_database_sweep.sage --check
+
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_curve12_alternate_q80_quotient.sage --check
+
+sage -python \
+  elkies-k3/scripts/verify_r17_norm12_icarm_database_and_curve12.sage
 ```
 
 The exact atlas has 43 `(8,12,24)` equations and six rational-`PGL2`
-`j`-classes of sizes `8,5,18,6,2,4`.  Curves 273 and 302 have no rational
-preimage.  The eight-chart `074d9` class contains all five curves
-`351,356,376,377,385`; all forty matches are untwisted.  The follow-up
-reconstructs and transports a saturated polynomial MW17 basis and proves the
-displayed exceptional quotients `Z^8,Z^12,Z^5,Z^6,Z^12`.  See
+`j`-classes of sizes `8,5,18,6,2,4`.  The full 474-curve sweep makes 2,844
+exact class decisions and finds 69 rational hits; all 376 resulting native
+chart comparisons are untwisted.  Every remaining wgxli component is
+recognized.  Curves 273, 302, and 398 miss, so there is no rank-30 or rank-31
+hit.  Curve 12 is an untwisted native `11952` alternate-Q80 rank-at-least-29
+fibre, and exact specialization of the saturated MW17 basis gives displayed
+quotient `Z^12`.  The original `074d9` quotients remain
+`Z^8,Z^12,Z^5,Z^6,Z^12`.  See
 [`elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
 
 ### Direct `norm12-orbit-11952` alternate-Q80 equation
