@@ -237,26 +237,30 @@ def exact_int64_pairings(left_rows, gram, right_rows):
     for exact signed 64-bit arithmetic, but make that a checked hypothesis rather
     than silently relying on NumPy overflow behavior.
     """
-    left = np.asarray(rows(left_rows), dtype=np.int64)
-    middle = np.asarray(rows(gram), dtype=np.int64)
-    right = np.asarray(rows(right_rows), dtype=np.int64)
+    left_values = rows(left_rows)
+    middle_values = rows(gram)
+    right_values = rows(right_rows)
+    dimension = gram.nrows()
+    left_max = max((abs(entry) for row in left_values for entry in row), default=0)
+    middle_max = max(
+        (abs(entry) for row in middle_values for entry in row), default=0
+    )
+    right_max = max(
+        (abs(entry) for row in right_values for entry in row), default=0
+    )
+    intermediate_bound = dimension * left_max * middle_max
+    final_bound = dimension * intermediate_bound * right_max
+    if max(intermediate_bound, final_bound) >= 2**62:
+        raise OverflowError(
+            "relative-U pairing block does not have a certified int64 bound"
+        )
+    left = np.asarray(left_values, dtype=np.int64)
+    middle = np.asarray(middle_values, dtype=np.int64)
+    right = np.asarray(right_values, dtype=np.int64)
     if left.ndim == 1:
         left = left.reshape((1, -1))
     if right.ndim == 1:
         right = right.reshape((1, -1))
-    factors = (
-        left.shape[1] ** 2,
-        int(np.max(np.abs(left), initial=0)),
-        int(np.max(np.abs(middle), initial=0)),
-        int(np.max(np.abs(right), initial=0)),
-    )
-    bound = 1
-    for factor in factors:
-        bound *= factor
-    if bound >= 2**62:
-        raise OverflowError(
-            "relative-U pairing block does not have a certified int64 bound"
-        )
     return left @ middle @ right.transpose()
 
 

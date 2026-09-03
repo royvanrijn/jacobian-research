@@ -38087,7 +38087,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:048105ab22ad9d8576bb8fe1fa57034005e00bfc7ece2ee2914d8922b8d92533",
+      "artifact_hash": "sha256:68e213d911006214229395981d6c37624d46fcde377902e6c9d1e7428d1ff3dc",
       "software_lock": [
         "elkies-k3/scripts/certify_arithmetic_rank_transfer.sage",
         "elkies-k3/data/arithmetic/arithmetic-marking-v1.schema.json",

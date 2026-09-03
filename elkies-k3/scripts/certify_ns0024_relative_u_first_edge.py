@@ -78,6 +78,11 @@ def certify_search(degree, data, q_values, maximum_t, orbit_total,
                for row in summaries)
     assert all(row["primitive_neighbors"] + row["nonprimitive_orbits"]
                == row["dominant_orbits"] for row in summaries)
+    assert all(
+        sum(item["orbit_count"] for item in row["root_histogram"])
+        == row["primitive_neighbors"]
+        for row in summaries
+    )
     assert sum(row["dominant_orbits"] for row in summaries) == orbit_total
     assert sum(row["primitive_neighbors"] for row in summaries) == primitive_total
     maximum_mw = max(

@@ -152,4 +152,4 @@ The shortest arithmetic promotion route is therefore:
 The existing modular NS0024 searches remain feasibility and Frobenius-ranking
 evidence.  They are not a substitute for steps 1--3.
 
-<!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 048105ab22ad9d85 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 68e213d911006214 -->

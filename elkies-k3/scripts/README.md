@@ -2805,7 +2805,7 @@ independent residual-rank cross-check, not the primary class certificate.  See
 
 ## Arithmetic rank transfer
 
-<!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 048105ab22ad9d85 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 68e213d911006214 -->
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
