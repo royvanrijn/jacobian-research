@@ -1,11 +1,21 @@
 # Public `wgxli` rank-17 lineage candidates
 
-Status: **hash-pinned public-source census and bounded numerical fingerprint;
-family reconstruction open**.
+Status: **historical fingerprint; the five-member family reconstruction is
+now exact**.
 
-This note records experimental construction evidence.  It does not prove that
-any two curves are fibres of one family, that the common generic rank is
-seventeen, or that the unknown surface is a rootless K3.
+The complete 43-chart norm-twelve sweep has identified curves 351, 356, 376,
+377, and 385 as untwisted rational fibres of one eight-chart published-R17
+class, reconstructed and saturated all seventeen generic sections, and
+computed the displayed exceptional quotients.  See
+[`../../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](../../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
+
+<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 00e39f6b05c2688a -->
+
+The fingerprint and inverse-problem discussion below is retained as the
+historical route to that exact result.
+
+This note by itself records experimental construction evidence; the later
+atlas certificate supplies the theorem that was still open here.
 
 ## Outcome
 

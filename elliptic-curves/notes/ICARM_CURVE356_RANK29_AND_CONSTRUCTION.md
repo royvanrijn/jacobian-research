@@ -1,11 +1,18 @@
 # ICARM curve 356: rank at least 29, size record, and construction fingerprint
 
 Status: **exact unconditional rank lower bound and exact local arithmetic;
-construction provenance unresolved**.
+published-R17 construction provenance resolved**.
 
-The curve-351 comparison below is a bounded numerical fingerprint.  It is not
-a family-recognition theorem and does not identify either curve with the
-Elkies H3/rootless-`MW17` construction.
+The complete norm-twelve atlas now proves that curve 356, together with
+curves 351, 376, 377, and 385, is an untwisted rational fibre of the
+`norm12-orbit-074d9` published-R17 family.  All seventeen generic sections
+and the exact displayed quotient `Z^12` are certified in
+[`../../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](../../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
+
+<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 00e39f6b05c2688a -->
+
+The curve-351 comparison below is the historical bounded numerical
+fingerprint; the later atlas sweep supplies the family-recognition theorem.
 
 ## Bottom line
 

@@ -41,6 +41,10 @@ DEFAULT_OUTPUT = (
 )
 CHORD_SCRIPT = SCRIPTS / "construct_elkies_2026_bisections.sage"
 HASH_SCRIPT = SCRIPTS / "hash_bisection_extensions.py"
+SCREEN_SCHEMAS = {
+    "elkies-k3.r17-norm12-direct-genus2-normalization-modp-screen.v1",
+    "elkies-k3.r17-norm12-direct-genus2-normalization-modp-search.v1",
+}
 
 
 def load_script(name, path):
@@ -104,6 +108,7 @@ def squareclass_decomposition(polynomial, ring):
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--screen", type=Path, action="append", required=True)
+parser.add_argument("--source-label", default="norm12-orbit-11952")
 parser.add_argument("--model", type=Path, default=DEFAULT_MODEL)
 parser.add_argument("--smooth-collisions", type=Path, default=DEFAULT_SMOOTH_COLLISIONS)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
@@ -116,8 +121,7 @@ hasher = load_script("r17_direct_genus2_reconstruct_hasher", HASH_SCRIPT)
 screen_paths = [path.resolve() for path in args.screen]
 screens = [json.loads(path.read_text()) for path in screen_paths]
 if any(
-    screen.get("schema")
-    != "elkies-k3.r17-norm12-direct-genus2-normalization-modp-screen.v1"
+    screen.get("schema") not in SCREEN_SCHEMAS
     for screen in screens
 ):
     raise ValueError("unexpected modular screen schema")
@@ -303,6 +307,7 @@ output_path = args.output if args.output.is_absolute() else ROOT / args.output
 output_path.parent.mkdir(parents=True, exist_ok=True)
 payload = {
     "schema": "elkies-k3.r17-norm12-direct-genus2-normalization-reconstruction.v1",
+    "source_label": args.source_label,
     "status": (
         "PASS_EXACT_RATIONAL_NORMALIZATION_CANDIDATES"
         if exact_candidates
@@ -339,7 +344,11 @@ payload = {
     "reproducing_command": (
         "sage -python "
         "elkies-k3/scripts/reconstruct_r17_norm12_direct_genus2_normalizations.sage "
+        f"--source-label {args.source_label} "
+        f"--model {relative(model_path)} "
+        f"--smooth-collisions {relative(smooth_path)} "
         + " ".join(f"--screen {relative(path)}" for path in screen_paths)
+        + f" --output {relative(output_path)}"
     ),
 }
 output_path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")

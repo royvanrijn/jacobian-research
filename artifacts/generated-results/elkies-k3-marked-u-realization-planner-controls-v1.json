@@ -1,0 +1,1305 @@
+{
+  "exact_engine_control": {
+    "complete": true,
+    "prime_local_negative_control": {
+      "checks": [
+        {
+          "name": "positive_semidefinite_G_A",
+          "pass": true
+        },
+        {
+          "name": "relative_rank",
+          "pass": true
+        },
+        {
+          "expected_raw_determinant": 31,
+          "name": "det_G_equals_index_squared_det_C",
+          "pass": false
+        }
+      ],
+      "det_A": -1,
+      "pass": false,
+      "prime_support": [
+        2,
+        31
+      ],
+      "ran_before_representation_enumeration": true,
+      "raw_bridge_determinant": 32,
+      "rejection_reasons": [
+        "BRIDGE_SQUARE_INDEX_OBSTRUCTION"
+      ],
+      "relative_rank": 2
+    },
+    "representations_enumerated": 4,
+    "representations_enumerated_after_negative_prefilter": 0,
+    "retained_realizations": 4,
+    "status": "PASS_EXACT_SHELL_AND_PREFILTER_CONTROL"
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-2026-published-r17-target.json": "1d6eb8dcedbdba055d02eb87a3e1a58bb0427739cfa0259c230370028bb601ff",
+    "artifacts/generated-results/elkies-k3-arithmetic-rank-transfer-controls-v1.json": "900aa811cfb8347210dcb9f0b723284b7490849f2044fb6b531a008c63b65e09",
+    "artifacts/generated-results/elkies-k3-inverse-ade-foundry-readiness-v2.json": "b7087af1d0b45492b26bdc4c23aa55c4f034bf908609db4af537759eb89868b4",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-v1.json": "9bdf0a887730a34837c713694bef4e453964884a57d51a2134003809239ef415",
+    "artifacts/generated-results/elkies-k3-r17-local-bridge-mutation-v1.json": "71a49d17e95ac5861822530b3476276ab3fee4844f2727cb5af51f45f6bcad96",
+    "artifacts/generated-results/elkies-k3-r17-norm12-isotropic-frame-classification-v1.json": "60d6186c4c1b91e949b8491d101fdb58fc6b81a5b9d34ce57f6a726d1d74de53",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json": "48381d91e288b2cefb85b1484d351d659748f801ea57d190453bd2db0a56eaab",
+    "elkies-k3/data/lattice/rank17_gram.txt": "ea1330ce903c55624de1705ebedf36f6f5964cdd6ce911927001db82626ff237",
+    "elkies-k3/data/lattice/short_vector_basis_gram.txt": "fbcad6d212e1c38ef39147e879bb64a2e21dbbecf6146f9a4da5c717c6cec037",
+    "elkies-k3/scripts/plan_marked_u_realizations.sage": "df039766f8ab381e5039c5f9244b87b65f348f482ba1b3ad227cea8646fc70e7"
+  },
+  "major_milestone_replay": {
+    "arithmetic_rank_certificate": {
+      "artifact": "artifacts/generated-results/elkies-k3-arithmetic-rank-transfer-controls-v1.json",
+      "field": "QQ(u), equivalently QQ(t) after naming the new pencil coordinate t",
+      "rank": 17,
+      "sha256": "900aa811cfb8347210dcb9f0b723284b7490849f2044fb6b531a008c63b65e09",
+      "status": "PASS_EXACT_ALTERNATE_Q80_ARITHMETIC_RANK_17_BEFORE_EQUATION_COMPILATION"
+    },
+    "boundary": "This replays an already-certified R17 equation route through the new target-free marked-U planner. It is not a claim that equation compilation has been automated for arbitrary planner hits or unready foundry targets.",
+    "characteristic_zero_source": {
+      "artifact": "artifacts/generated-results/elkies-2026-published-r17-target.json",
+      "equation": "y^2=x^3-27*S(t)*x+(27/4)*T(t)",
+      "integrally_identified_with_planner_source_frame": true,
+      "published_section_identities": 17,
+      "sha256": "1d6eb8dcedbdba055d02eb87a3e1a58bb0427739cfa0259c230370028bb601ff",
+      "status": "PASS_EXACT_PUBLISHED_R17_IS_PINNED_R17"
+    },
+    "cost_bound_B": {
+      "maximum_coefficient_l1": 13,
+      "maximum_coordinate_input_bits": 3482,
+      "maximum_new_zero_old_fibre_degree": 1,
+      "maximum_old_fibre_degree": 2,
+      "maximum_old_zero_degree": 1
+    },
+    "equation_compilation": {
+      "artifact": "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+      "equation": "Y^2=X^3+A(u)*X+B(u)",
+      "fibre_configuration": "24 I1",
+      "saturated_section_rank": 17,
+      "sha256": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+      "status": "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS"
+    },
+    "instruction": "find a distinct rootless rank-17 fibration within cost B",
+    "planner_result": {
+      "counters": {
+        "cross_matrices_enumerated": 1,
+        "cross_matrices_reaching_representations": 1,
+        "literal_primitive_u_constructed": 43,
+        "literal_u_rejected_by_equation_cost_bound": 9,
+        "literal_u_rejected_by_target_gate": 33,
+        "representations_enumerated": 43,
+        "retained_realizations": 1
+      },
+      "retained_candidate_ids": [
+        "norm12-orbit-11952"
+      ],
+      "search_completeness": {
+        "catalog_scope": "the 43 exact norm-twelve irreducible smooth genus-one curves in the published-R17 bisection certificate; not every representation of G_A",
+        "complete_over_all_integral_representations_in_declared_box": false,
+        "complete_within_declared_catalog": true,
+        "no_global_claim_from_catalog_mode": true
+      },
+      "search_order": "lexicographic (F.F',F.O',O.F',O.O'); representations deterministic inside each cross matrix; retained candidates ranked by equation cost",
+      "selected": {
+        "bridge": {
+          "rank": 1,
+          "raw_basis": [
+            [
+              1,
+              1,
+              -3,
+              0,
+              0,
+              -1,
+              1,
+              1,
+              -3,
+              -1,
+              -1,
+              0,
+              -2,
+              1,
+              -1,
+              2,
+              2
+            ]
+          ],
+          "saturated_basis": [
+            [
+              1,
+              1,
+              -3,
+              0,
+              0,
+              -1,
+              1,
+              1,
+              -3,
+              -1,
+              -1,
+              0,
+              -2,
+              1,
+              -1,
+              2,
+              2
+            ]
+          ],
+          "saturated_determinant": 12,
+          "saturated_discriminant_invariants": [
+            12
+          ],
+          "saturated_gram": [
+            [
+              12
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "child_frame_gram_sha256": "5be6ae59aa87881c87d819de0e1600898698e47e67a828d9471e864a1cbdb3d9",
+        "cross_pairing_A": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "equation_facing_cost": {
+          "declared_metrics": {
+            "coefficient_l1": 13,
+            "coordinate_input_bits": 3482,
+            "deep_equation_rank": 11,
+            "dependency_count": 10,
+            "group_addition_upper_bound": 12,
+            "maximum_absolute_coefficient": 2,
+            "support_count": 9
+          },
+          "fields": [
+            "old_fibre_degree",
+            "old_zero_degree",
+            "new_zero_old_fibre_degree",
+            "zero_zero_intersection",
+            "maximum_projection_norm_half",
+            "projected_coordinate_l1",
+            "expected_riemann_roch_ambient",
+            "coefficient_l1",
+            "coordinate_input_bits"
+          ],
+          "values": {
+            "coefficient_l1": 13,
+            "coordinate_input_bits": 3482,
+            "expected_riemann_roch_ambient": 10,
+            "maximum_projection_norm_half": 6,
+            "new_zero_old_fibre_degree": 1,
+            "old_fibre_degree": 2,
+            "old_zero_degree": 1,
+            "projected_coordinate_l1": 42,
+            "zero_zero_intersection": -2
+          },
+          "vector": [
+            2,
+            1,
+            1,
+            -2,
+            6,
+            42,
+            10,
+            13,
+            3482
+          ]
+        },
+        "intersection_coordinates": {
+          "F_dot_F_prime": 2,
+          "F_dot_O_prime": 1,
+          "O_dot_F_prime": 1,
+          "O_dot_O_prime": -2
+        },
+        "physical_gates": {
+          "effective_zero": {
+            "artifact": "artifacts/generated-results/elkies-k3-r17-norm12-isotropic-frame-classification-v1.json",
+            "bindings": [
+              {
+                "pass": true,
+                "pointer": "/classification/records/10/isotropic_fibre"
+              },
+              {
+                "pass": true,
+                "pointer": "/classification/records/10/shared_zero"
+              }
+            ],
+            "gate": "effective_zero",
+            "pass": true,
+            "reason": "HASH_PINNED_EXACT_EVIDENCE"
+          },
+          "nefness": {
+            "artifact": "artifacts/generated-results/elkies-k3-r17-norm12-isotropic-frame-classification-v1.json",
+            "bindings": [
+              {
+                "pass": true,
+                "pointer": "/classification/records/10/isotropic_fibre"
+              }
+            ],
+            "gate": "nefness",
+            "pass": true,
+            "reason": "HASH_PINNED_EXACT_EVIDENCE"
+          },
+          "pass": true,
+          "required": true,
+          "shared_zero_consistency": {
+            "pass": true,
+            "required": true
+          }
+        },
+        "positive_projection_gram_G_A": [
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "primitive_u_basis_in_ambient_ns": [
+          [
+            3,
+            2,
+            -1,
+            -1,
+            3,
+            0,
+            0,
+            1,
+            -1,
+            -1,
+            3,
+            1,
+            1,
+            0,
+            2,
+            -1,
+            1,
+            -2,
+            -2
+          ],
+          [
+            2,
+            3,
+            -1,
+            -1,
+            3,
+            0,
+            0,
+            1,
+            -1,
+            -1,
+            3,
+            1,
+            1,
+            0,
+            2,
+            -1,
+            1,
+            -2,
+            -2
+          ]
+        ],
+        "root_ADE_gate": {
+          "ade_type": "rootless",
+          "components": [],
+          "mordell_weil_rank_from_shioda_tate": 17,
+          "root_rank": 0,
+          "signed_root_count": 0
+        },
+        "target_zero_in_ambient_ns": [
+          -1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "selected_candidate_id": "norm12-orbit-11952",
+      "status": "PASS_MARKED_U_REALIZATIONS_FOUND",
+      "target_request": {
+        "ade_type": "rootless",
+        "exclude_source_frame_isometry": true,
+        "root_rank": 0,
+        "target_frame_supplied": false
+      }
+    },
+    "status": "PASS_EXISTING_R17_ROUTE_THROUGH_NEW_PLANNER",
+    "target_gram_supplied": false
+  },
+  "ordered_controls": [
+    {
+      "name": "published-R17 to alternate-Q80 degree-two copy",
+      "order": 1,
+      "result": {
+        "counters": {
+          "cross_matrices_enumerated": 1,
+          "cross_matrices_reaching_representations": 1,
+          "literal_primitive_u_constructed": 43,
+          "literal_u_rejected_by_target_gate": 33,
+          "representations_enumerated": 43,
+          "retained_realizations": 10
+        },
+        "retained_candidate_ids": [
+          "norm12-orbit-11952",
+          "norm12-orbit-08ab4",
+          "norm12-orbit-08f72",
+          "norm12-orbit-091e4",
+          "norm12-orbit-135b7",
+          "norm12-orbit-10f72",
+          "norm12-orbit-1183a",
+          "norm12-orbit-09952",
+          "norm12-orbit-098fc",
+          "norm12-orbit-0ae21"
+        ],
+        "search_completeness": {
+          "catalog_scope": "the 43 exact norm-twelve irreducible smooth genus-one curves in the published-R17 bisection certificate; not every representation of G_A",
+          "complete_over_all_integral_representations_in_declared_box": false,
+          "complete_within_declared_catalog": true,
+          "no_global_claim_from_catalog_mode": true
+        },
+        "search_order": "lexicographic (F.F',F.O',O.F',O.O'); representations deterministic inside each cross matrix; retained candidates ranked by equation cost",
+        "selected": {
+          "bridge": {
+            "rank": 1,
+            "raw_basis": [
+              [
+                1,
+                1,
+                -3,
+                0,
+                0,
+                -1,
+                1,
+                1,
+                -3,
+                -1,
+                -1,
+                0,
+                -2,
+                1,
+                -1,
+                2,
+                2
+              ]
+            ],
+            "saturated_basis": [
+              [
+                1,
+                1,
+                -3,
+                0,
+                0,
+                -1,
+                1,
+                1,
+                -3,
+                -1,
+                -1,
+                0,
+                -2,
+                1,
+                -1,
+                2,
+                2
+              ]
+            ],
+            "saturated_determinant": 12,
+            "saturated_discriminant_invariants": [
+              12
+            ],
+            "saturated_gram": [
+              [
+                12
+              ]
+            ],
+            "saturation_index": 1
+          },
+          "child_frame_gram_sha256": "5be6ae59aa87881c87d819de0e1600898698e47e67a828d9471e864a1cbdb3d9",
+          "cross_pairing_A": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "equation_facing_cost": {
+            "declared_metrics": {
+              "coefficient_l1": 13,
+              "coordinate_input_bits": 3482,
+              "deep_equation_rank": 11,
+              "dependency_count": 10,
+              "group_addition_upper_bound": 12,
+              "maximum_absolute_coefficient": 2,
+              "support_count": 9
+            },
+            "fields": [
+              "old_fibre_degree",
+              "old_zero_degree",
+              "new_zero_old_fibre_degree",
+              "zero_zero_intersection",
+              "maximum_projection_norm_half",
+              "projected_coordinate_l1",
+              "expected_riemann_roch_ambient",
+              "coefficient_l1",
+              "coordinate_input_bits"
+            ],
+            "values": {
+              "coefficient_l1": 13,
+              "coordinate_input_bits": 3482,
+              "expected_riemann_roch_ambient": 10,
+              "maximum_projection_norm_half": 6,
+              "new_zero_old_fibre_degree": 1,
+              "old_fibre_degree": 2,
+              "old_zero_degree": 1,
+              "projected_coordinate_l1": 42,
+              "zero_zero_intersection": -2
+            },
+            "vector": [
+              2,
+              1,
+              1,
+              -2,
+              6,
+              42,
+              10,
+              13,
+              3482
+            ]
+          },
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 1,
+            "O_dot_F_prime": 1,
+            "O_dot_O_prime": -2
+          },
+          "physical_gates": {
+            "effective_zero": {
+              "artifact": "artifacts/generated-results/elkies-k3-r17-norm12-isotropic-frame-classification-v1.json",
+              "bindings": [
+                {
+                  "pass": true,
+                  "pointer": "/classification/records/10/isotropic_fibre"
+                },
+                {
+                  "pass": true,
+                  "pointer": "/classification/records/10/shared_zero"
+                }
+              ],
+              "gate": "effective_zero",
+              "pass": true,
+              "reason": "HASH_PINNED_EXACT_EVIDENCE"
+            },
+            "nefness": {
+              "artifact": "artifacts/generated-results/elkies-k3-r17-norm12-isotropic-frame-classification-v1.json",
+              "bindings": [
+                {
+                  "pass": true,
+                  "pointer": "/classification/records/10/isotropic_fibre"
+                }
+              ],
+              "gate": "nefness",
+              "pass": true,
+              "reason": "HASH_PINNED_EXACT_EVIDENCE"
+            },
+            "pass": true,
+            "required": true,
+            "shared_zero_consistency": {
+              "pass": true,
+              "required": true
+            }
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              12
+            ],
+            [
+              12,
+              12
+            ]
+          ],
+          "primitive_u_basis_in_ambient_ns": [
+            [
+              3,
+              2,
+              -1,
+              -1,
+              3,
+              0,
+              0,
+              1,
+              -1,
+              -1,
+              3,
+              1,
+              1,
+              0,
+              2,
+              -1,
+              1,
+              -2,
+              -2
+            ],
+            [
+              2,
+              3,
+              -1,
+              -1,
+              3,
+              0,
+              0,
+              1,
+              -1,
+              -1,
+              3,
+              1,
+              1,
+              0,
+              2,
+              -1,
+              1,
+              -2,
+              -2
+            ]
+          ],
+          "root_ADE_gate": {
+            "ade_type": "rootless",
+            "components": [],
+            "mordell_weil_rank_from_shioda_tate": 17,
+            "root_rank": 0,
+            "signed_root_count": 0
+          },
+          "target_zero_in_ambient_ns": [
+            -1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "selected_candidate_id": "norm12-orbit-11952",
+        "status": "PASS_MARKED_U_REALIZATIONS_FOUND",
+        "target_request": {
+          "ade_type": "rootless",
+          "exclude_source_frame_isometry": false,
+          "root_rank": 0,
+          "target_frame_supplied": true
+        }
+      }
+    },
+    {
+      "name": "published-R17 to new non-cyclic 4A1/MW13",
+      "order": 2,
+      "result": {
+        "counters": {
+          "cross_matrices_enumerated": 1,
+          "cross_matrices_reaching_representations": 1,
+          "literal_primitive_u_constructed": 1,
+          "representations_enumerated": 1,
+          "retained_realizations": 1
+        },
+        "retained_candidate_ids": [
+          "published-R17-degree2-new-noncyclic-4A1"
+        ],
+        "search_completeness": {
+          "catalog_scope": "single exact H-1c R17 local-mutation witness",
+          "complete_over_all_integral_representations_in_declared_box": false,
+          "complete_within_declared_catalog": true,
+          "no_global_claim_from_catalog_mode": true
+        },
+        "search_order": "lexicographic (F.F',F.O',O.F',O.O'); representations deterministic inside each cross matrix; retained candidates ranked by equation cost",
+        "selected": {
+          "bridge": {
+            "rank": 2,
+            "raw_basis": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "saturated_basis": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "saturated_determinant": 32,
+            "saturated_discriminant_invariants": [
+              4,
+              8
+            ],
+            "saturated_gram": [
+              [
+                4,
+                0
+              ],
+              [
+                0,
+                8
+              ]
+            ],
+            "saturation_index": 1
+          },
+          "child_frame_gram_sha256": "0c5620f18957fc62cb3f34041c48fee0dedb59434a53ca139ba73e7718eec66a",
+          "cross_pairing_A": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "equation_facing_cost": {
+            "declared_metrics": {},
+            "fields": [
+              "old_fibre_degree",
+              "old_zero_degree",
+              "new_zero_old_fibre_degree",
+              "zero_zero_intersection",
+              "maximum_projection_norm_half",
+              "projected_coordinate_l1",
+              "expected_riemann_roch_ambient",
+              "coefficient_l1",
+              "coordinate_input_bits"
+            ],
+            "values": {
+              "coefficient_l1": null,
+              "coordinate_input_bits": null,
+              "expected_riemann_roch_ambient": 2,
+              "maximum_projection_norm_half": 12,
+              "new_zero_old_fibre_degree": 1,
+              "old_fibre_degree": 2,
+              "old_zero_degree": 1,
+              "projected_coordinate_l1": 7,
+              "zero_zero_intersection": 0
+            },
+            "vector": [
+              2,
+              1,
+              1,
+              0,
+              12,
+              7,
+              2,
+              null,
+              null
+            ]
+          },
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 1,
+            "O_dot_F_prime": 1,
+            "O_dot_O_prime": 0
+          },
+          "physical_gates": {
+            "effective_zero": {
+              "artifact": "artifacts/generated-results/elkies-k3-r17-local-bridge-mutation-v1.json",
+              "bindings": [
+                {
+                  "pass": true,
+                  "pointer": "/r17_example/relative_U/target_U_basis_in_U_plus_short_R17"
+                },
+                {
+                  "pass": true,
+                  "pointer": "/r17_example/geometric_gate/new_zero_is_physical"
+                }
+              ],
+              "gate": "effective_zero",
+              "pass": true,
+              "reason": "HASH_PINNED_EXACT_EVIDENCE"
+            },
+            "nefness": {
+              "artifact": "artifacts/generated-results/elkies-k3-r17-local-bridge-mutation-v1.json",
+              "bindings": [
+                {
+                  "pass": true,
+                  "pointer": "/r17_example/relative_U/target_U_basis_in_U_plus_short_R17"
+                },
+                {
+                  "pass": true,
+                  "pointer": "/r17_example/geometric_gate/new_fibre_nef_in_old_chamber"
+                }
+              ],
+              "gate": "nefness",
+              "pass": true,
+              "reason": "HASH_PINNED_EXACT_EVIDENCE"
+            },
+            "pass": true,
+            "required": true,
+            "shared_zero_consistency": {
+              "pass": true,
+              "required": false
+            }
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              16
+            ],
+            [
+              16,
+              24
+            ]
+          ],
+          "primitive_u_basis_in_ambient_ns": [
+            [
+              3,
+              2,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              -2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "root_ADE_gate": {
+            "ade_type": "4A1",
+            "components": [
+              {
+                "rank": 1,
+                "signed_root_count": 2,
+                "type": "A1"
+              },
+              {
+                "rank": 1,
+                "signed_root_count": 2,
+                "type": "A1"
+              },
+              {
+                "rank": 1,
+                "signed_root_count": 2,
+                "type": "A1"
+              },
+              {
+                "rank": 1,
+                "signed_root_count": 2,
+                "type": "A1"
+              }
+            ],
+            "mordell_weil_rank_from_shioda_tate": 13,
+            "root_rank": 4,
+            "signed_root_count": 8
+          },
+          "target_zero_in_ambient_ns": [
+            1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "selected_candidate_id": "published-R17-degree2-new-noncyclic-4A1",
+        "status": "PASS_MARKED_U_REALIZATIONS_FOUND",
+        "target_request": {
+          "ade_type": "4A1",
+          "exclude_source_frame_isometry": false,
+          "root_rank": 4,
+          "target_frame_supplied": false
+        }
+      }
+    },
+    {
+      "name": "new non-cyclic 4A1/MW13 to cheap rootless successor",
+      "order": 3,
+      "result": {
+        "counters": {
+          "cross_matrices_enumerated": 1,
+          "cross_matrices_reaching_representations": 1,
+          "literal_primitive_u_constructed": 1,
+          "representations_enumerated": 1,
+          "retained_realizations": 1
+        },
+        "retained_candidate_ids": [
+          "new-4A1-cheap-return-to-published-rootless"
+        ],
+        "search_completeness": {
+          "catalog_scope": "reverse of the exact H-1c local-mutation witness",
+          "complete_over_all_integral_representations_in_declared_box": false,
+          "complete_within_declared_catalog": true,
+          "no_global_claim_from_catalog_mode": true
+        },
+        "search_order": "lexicographic (F.F',F.O',O.F',O.O'); representations deterministic inside each cross matrix; retained candidates ranked by equation cost",
+        "selected": {
+          "bridge": {
+            "rank": 2,
+            "raw_basis": [
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                1,
+                -1,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                1,
+                -2,
+                1
+              ],
+              [
+                0,
+                4,
+                0,
+                0,
+                0,
+                -2,
+                2,
+                0,
+                5,
+                0,
+                0,
+                0,
+                0,
+                2,
+                -5,
+                8,
+                -4
+              ]
+            ],
+            "saturated_basis": [
+              [
+                2,
+                0,
+                0,
+                0,
+                0,
+                1,
+                -1,
+                0,
+                -1,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                1,
+                -2,
+                1
+              ],
+              [
+                0,
+                4,
+                0,
+                0,
+                0,
+                -2,
+                2,
+                0,
+                5,
+                0,
+                0,
+                0,
+                0,
+                2,
+                -5,
+                8,
+                -4
+              ]
+            ],
+            "saturated_determinant": 32,
+            "saturated_discriminant_invariants": [
+              4,
+              8
+            ],
+            "saturated_gram": [
+              [
+                12,
+                -20
+              ],
+              [
+                -20,
+                36
+              ]
+            ],
+            "saturation_index": 1
+          },
+          "child_frame_gram_sha256": "79f0be821fae2cddbcec6c5a45cfd769b525524aa1629b77c646157e8f588aca",
+          "cross_pairing_A": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "equation_facing_cost": {
+            "declared_metrics": {},
+            "fields": [
+              "old_fibre_degree",
+              "old_zero_degree",
+              "new_zero_old_fibre_degree",
+              "zero_zero_intersection",
+              "maximum_projection_norm_half",
+              "projected_coordinate_l1",
+              "expected_riemann_roch_ambient",
+              "coefficient_l1",
+              "coordinate_input_bits"
+            ],
+            "values": {
+              "coefficient_l1": null,
+              "coordinate_input_bits": null,
+              "expected_riemann_roch_ambient": 2,
+              "maximum_projection_norm_half": 12,
+              "new_zero_old_fibre_degree": 1,
+              "old_fibre_degree": 2,
+              "old_zero_degree": 1,
+              "projected_coordinate_l1": 112,
+              "zero_zero_intersection": 0
+            },
+            "vector": [
+              2,
+              1,
+              1,
+              0,
+              12,
+              112,
+              2,
+              null,
+              null
+            ]
+          },
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 1,
+            "O_dot_F_prime": 1,
+            "O_dot_O_prime": 0
+          },
+          "physical_gates": {
+            "effective_zero": {
+              "artifact": "artifacts/generated-results/elkies-2026-published-r17-target.json",
+              "bindings": [
+                {
+                  "pass": true,
+                  "pointer": "/published_equation/published_section_identities"
+                },
+                {
+                  "candidate_field": "target_zero_in_ambient_ns",
+                  "literal": true,
+                  "pass": true
+                }
+              ],
+              "gate": "effective_zero",
+              "pass": true,
+              "reason": "HASH_PINNED_EXACT_EVIDENCE"
+            },
+            "nefness": {
+              "artifact": "artifacts/generated-results/elkies-2026-published-r17-target.json",
+              "bindings": [
+                {
+                  "pass": true,
+                  "pointer": "/published_equation/rootless_semistable"
+                },
+                {
+                  "candidate_field": "primitive_u_basis_in_ambient_ns",
+                  "literal": true,
+                  "pass": true
+                }
+              ],
+              "gate": "nefness",
+              "pass": true,
+              "reason": "HASH_PINNED_EXACT_EVIDENCE"
+            },
+            "pass": true,
+            "required": true,
+            "shared_zero_consistency": {
+              "pass": true,
+              "required": false
+            }
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              16
+            ],
+            [
+              16,
+              24
+            ]
+          ],
+          "primitive_u_basis_in_ambient_ns": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "root_ADE_gate": {
+            "ade_type": "rootless",
+            "components": [],
+            "mordell_weil_rank_from_shioda_tate": 17,
+            "root_rank": 0,
+            "signed_root_count": 0
+          },
+          "target_zero_in_ambient_ns": [
+            -1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "selected_candidate_id": "new-4A1-cheap-return-to-published-rootless",
+        "status": "PASS_MARKED_U_REALIZATIONS_FOUND",
+        "target_request": {
+          "ade_type": "rootless",
+          "exclude_source_frame_isometry": false,
+          "root_rank": 0,
+          "target_frame_supplied": false
+        }
+      }
+    },
+    {
+      "name": "first non-historical foundry target readiness attempt",
+      "order": 4,
+      "result": {
+        "attempt_order": 4,
+        "compute_campaign_started": false,
+        "historical_corridor_target": false,
+        "missing_inputs": [
+          "common_marked_NS_basis_and_source_U",
+          "rank15_core_plus_rank2_bridge_decomposition",
+          "graph_glue_generator",
+          "good_neighbor_prime_plan",
+          "prescribed_survival_birth_templates",
+          "marked_target_core_in_source_rational_space",
+          "elliptic_neighbor_transport_or_relative_U_lift"
+        ],
+        "reason": "A positive target Gram and a core route do not supply a common marked NS, source U, frame basis, or literal relative-U transport.",
+        "representation_enumeration_started": false,
+        "source_frame_id": "NS0002-F001",
+        "status": "BLOCKED_MISSING_EXPLICIT_MARKED_SOURCE",
+        "target_frame_id": "NS0002-F007",
+        "target_ns_id": "NS0002"
+      }
+    }
+  ],
+  "planner_separation": {
+    "core_planner": "elkies-k3/scripts/plan_inverse_ade_targets.sage",
+    "interface": "A core-class proposal may supply a target request, but acceptance requires a literal primitive nef U' in one explicit marked NS.",
+    "marked_u_planner": "elkies-k3/scripts/plan_marked_u_realizations.sage",
+    "same_graph": false
+  },
+  "proof_boundary": {
+    "not_proved": "Global optimality outside declared bounds/catalogs, an automatic nefness theorem without evidence, generic equation compilation, or readiness of the 936 bulk foundry routes.",
+    "proved": "Exact marked-source validation, lexicographic cross-matrix enumeration, pre-representation prime-local screens, literal primitive-U construction, root/ADE and target-frame gates, exact evidence-bound nef/zero gates, and the four ordered controls above."
+  },
+  "reproduce": "sage -python elkies-k3/scripts/certify_marked_u_realization_planner_controls.sage --check",
+  "schema": "elkies-k3.marked-u-realization-planner-controls.v1",
+  "status": "PASS_MARKED_U_PLANNER_CONTROLS_AND_R17_END_TO_END"
+}

@@ -35132,7 +35132,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:d9f22bf2d80d0222a97b603e092b42e7ad4a19a4b4f8d18cfcd4f1bdaf1904d8",
+      "artifact_hash": "sha256:95576efad183a0e3977cce299d5a1162f8828ad25d6f0fa9d7d20747dc402e12",
       "software_lock": [
         "elkies-k3/scripts/screen_elkies_2026_quadratic_twist_ranks.py",
         "elkies-k3/scripts/derive_elkies_2026_singleton_twist_section.sage",
@@ -37269,6 +37269,56 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete 43-chart norm-twelve record-lineage sweep and exact five-fibre R17 realization",
+      "scope": "The universal degree-two compiler applied to every certified norm-twelve shared-zero divisor on the published R17 K3 produces 43 polynomial short Weierstrass models of degrees (8,12,24), with the certified frame distribution 33 published R17 and ten alternate Q80. Exact normalized j-maps and rational PGL2 identities partition them into six classes of sizes 8,5,18,6,2,4. Primitive projective degree-24 j-preimage equations prove that ICARM curves 273 and 302 have no rational parameter in any of the 43 charts; the alternate-Q80 norm12-orbit-11952/curve-302 case is decided by exact QQ rational-root factorization. The eight-chart class represented by norm12-orbit-074d9 contains curves 351,356,376,377,385, giving forty rational chart/fibre matches, all with trivial quadratic twist and explicit QQ-isomorphisms. The unimodular words P2,P3,P4,P5,P8,P11,P13,P15,P16,P17,P1-P2,P1-P6,P1-P7,P1-P9,P1-P10,P1-P12,P1-P14 interpolate to seventeen polynomial generic sections; exact transport gives native polynomial bases on all eight charts. Their Shioda height Gram is positive definite of rank 17, determinant 948, rootless, and integrally isometric to published R17, hence saturated. Exact mod-2 reduction certificates prove independence of every displayed public target point, so the quotients of the displayed subgroups by the specialized generic subgroup are respectively Z^8, Z^12, Z^5, Z^6 and Z^12, with bases given by the displayed points after P17. This proves the record-curve misses only inside the complete certified 43-member shared-zero norm-twelve atlas, not in other rootless fibrations; it proves no Mordell--Weil rank upper bound and no rank-32 curve.",
+      "canonical_source": "elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-H3-ROOTLESS-J2-MINIMAL-ACCESSIBILITY",
+        "EC-K3-UNIVERSAL-DEGREE2-FIBRATION-COMPILER",
+        "EC-ICARM-WGXLI-R17-LINEAGE",
+        "ECR30",
+        "ECR31"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_norm12_wgxli_lineage_fibres.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ccaca28f9ca46a7b97c8ce20c72258251c2f1bb2d33e14afc932635c27e2fe4a",
+      "software_lock": [
+        "elkies-k3/scripts/compile_r17_norm12_record_lineage_atlas.sage",
+        "elkies-k3/scripts/certify_r17_norm12_wgxli_lineage_fibres.sage",
+        "elliptic-curves/cas/mod2_reduction_independence.py",
+        "elkies-k3/data/lattice/rank17_gram.txt",
+        "artifacts/generated-results/elkies-k3-r17-norm12-record-lineage-atlas-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json"
+      ],
+      "supersedes_notes": [
+        "family reconstruction for the five-member wgxli component remains open",
+        "curve 302 has not been excluded from alternate Q80, hidden 103b2, or the other certified norm-twelve shared-zero copies",
+        "the one-shear rejection is operational evidence against a common rootless-R17 family"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elliptic-curves/README.md",
+        "elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md",
+        "elliptic-curves/notes/ICARM_WGXLI_RANK17_LINEAGE.md",
+        "elliptic-curves/notes/ICARM_WGXLI_RANK17_BOUNDED_REBASING.md",
+        "elliptic-curves/notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17",
       "kind": "theorem",
       "state": "proved",
@@ -38616,6 +38666,59 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Direct noncyclic 4A1/MW13 equation and target-free reverse hop from published R17",
+      "scope": "On Elkies's published R17 K3 equation, the exact relative-U witness with target rows (3,2,-b1+b7-b12) and (4,3,-2b1+b7-b12) is a primitive nef marked U with effective physical zero P_{-b1}, cross matrix [[2,3],[3,4]], and maximal saturated bridge of discriminant group Z/4+Z/8 and order 32. The universal nonzero-trace degree-two chord compiler has ten coefficients, an eight-dimensional resolved congruence image, and a two-dimensional H0 kernel. Pointing the resulting quartic at P_{-b1}, taking its Jacobian, and applying an exact rational PGL2 and weighted scaling gives the QQ model Y^2=X^3+27A0(s)X+54B0(s), with the explicit integral degree-8 and degree-12 polynomials in the canonical source and artifact. Its four I2 fibres are at s=0,1,-146234/269481,infinity and its remaining sixteen singular fibres are I1. The positive determinant-948 frame has exactly eight signed roots with primitive root span 4A1, is integrally isometric to the local-mutation target, and is not isometric to either stored historical H3 4A1 frame. Thirteen explicitly transported QQ(s)-sections together with the four roots form a determinant-one frame basis; their Shioda height determinant is 237/4. Shioda--Tate and primitive trivial lattice therefore give MW(QQ(s))=Z^13 with no torsion. A target-free reverse control supplies only root rank zero and ADE rootless, selects the published R17 marking, and the exact generic inverse recovers the literal published R17 equation. This is the first equation in the repository for this nonhistorical noncyclic frame; it does not claim external priority, a J1 orbit classification, or any rank-jumping specialization.",
+      "canonical_source": "elkies-k3/R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-ELKIES-2026-R17",
+        "EC-K3-RELATIVE-U-BRIDGE-LIFTING",
+        "EC-K3-LOCAL-BRIDGE-MUTATION-H1C",
+        "EC-K3-PRIME-LOCAL-BRIDGE-MUTATION-H1D",
+        "EC-K3-UNIVERSAL-DEGREE2-FIBRATION-COMPILER"
+      ],
+      "checker": "elkies-k3/scripts/compile_r17_noncyclic_4a1_qq.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1929e7df84b1fbc5fb94f481ef80015516a0559f0f3d1b59ffc6adb0b818184a",
+      "software_lock": [
+        "elkies-k3/scripts/compile_r17_noncyclic_4a1_qq.sage",
+        "elkies-k3/scripts/certify_marked_u_realization_planner_controls.sage",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
+        "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json",
+        "elkies-k3/data/lattice/rank17_gram.txt",
+        "elkies-k3/data/lattice/short_vector_basis_gram.txt",
+        "elkies-k3/data/lattice/short_vector_basis_coords.txt",
+        "artifacts/generated-results/elkies-2026-published-r17-target.json",
+        "artifacts/generated-results/elkies-k3-r17-local-bridge-mutation-v1.json",
+        "artifacts/generated-results/elkies-k3-prime-local-bridge-mutation-v1.json",
+        "artifacts/generated-results/elkies-k3-marked-u-realization-planner-controls-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-noncyclic-4a1-direct-fibration-v1.json"
+      ],
+      "supersedes_notes": [
+        "the new R17 noncyclic 4A1/MW13 marking has no characteristic-zero equation, explicit rational section basis, or equation-level reverse hop"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "README.md",
+        "REPRODUCE.md",
+        "elkies-k3/MARKED_U_REALIZATION_PLANNER_2026-09-03.md",
+        "elkies-k3/README.md",
+        "elkies-k3/R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md",
+        "elkies-k3/RELATIVE_U_BRIDGE_LIFTING_2026-09-03.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
       "kind": "reproduction",
       "state": "proved",
@@ -38869,7 +38972,7 @@
       "kind": "reproduction",
       "state": "proved",
       "title": "Seventeen certified rank-one bases in the alternate-Q80 V4 shortlist",
-      "scope": "For the exact 64-base rational alternate-Q80 V4 shortlist, isolated PARI ellrank calls with effort zero and a hard ten-second limit complete on 62 base Jacobians. Seventeen completed intervals are exactly [1,1], proving those seventeen base Jacobians have Mordell--Weil rank one. The other completed intervals are 27 copies of [0,2], eight of [0,4], and ten of [1,3]; two calls time out and retain rank UNKNOWN. No incomplete interval is collapsed to a rank, and the screen proves nothing about sections on the quartic product twists. The first quartic-section campaign target is consequently selected from the certified rank-one bases.",
+      "scope": "For the exact 64-base rational alternate-Q80 V4 shortlist, isolated PARI ellrank calls with effort zero and a hard ten-second limit complete on 62 base Jacobians. Seventeen completed intervals are exactly [1,1], proving those seventeen base Jacobians have Mordell--Weil rank one. The other completed intervals are 27 copies of [0,2], eight of [0,4], and ten of [1,3]; two calls time out and retain rank UNKNOWN. No incomplete interval is collapsed to a rank, and the screen proves nothing about sections on the quartic product twists. These seventeen exact rank-one bases are the declared targets of the separate product-character bisection inversion.",
       "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md",
       "dependencies": [
         "EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64"
@@ -38895,6 +38998,90 @@
         "REPRODUCE.md",
         "elkies-k3/README.md",
         "elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-11952-V4-RANK-ONE-RECORD-CAMPAIGN",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Native alternate-Q80 rank-one V4 periodic record campaign",
+      "scope": "The seventeen exact rank-one alternate-Q80 V4 bases have primitive free generators and explicit maps to u on the actual paired bases, not merely on their product quotients. In every case the visible product-quotient point is saturated, the degree-two-isogeny image has index two on the V4 base, and exact 2-saturation gives the primitive generator. For each base, complete periods of n -> u(nP) modulo the nine primes in three disjoint blocks (131,137,151), (157,167,173), and (181,191,193) rank the integers with 2 <= |n| <= 8 by centered surface-trace and all-native-bisection splitting signals. The best n on every base is materialized over QQ. At those seventeen u-values, batched modular rejection reduces 665,499 potential exact tests of all 39,147 native bisections to 1,772 exact rational-square tests. Exactly the two defining characters split at every fibre and no other class does. All seventeen generic sections and the two defining character sections specialize and are jointly independent by exact mod-2 finite-quotient certificates, proving rank at least 19 on all seventeen fibres. No fibre reaches the rank-20, 24, 28, or 32 promotion thresholds, so residual descent is not triggered. This is a bounded negative split result and no rank upper bound.",
+      "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_V4_RECORD_CAMPAIGN_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64",
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION"
+      ],
+      "checker": "elkies-k3/scripts/run_r17_norm12_11952_alternate_v4_record_campaign.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c27366ecd5ab0b4b5b99c1b99cd9477b6bb94ce521f4063e7092b5a8e562c64d",
+      "software_lock": [
+        "elkies-k3/scripts/prepare_r17_norm12_11952_alternate_v4_rank_one_bases.sage",
+        "elkies-k3/scripts/run_r17_norm12_11952_alternate_v4_record_campaign.sage",
+        "elliptic-curves/cas/elliptic_candidate_record.py",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-base-rank-screen-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-full-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-rank-one-bases-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-record-campaign-v1.json"
+      ],
+      "supersedes_notes": [
+        "the seventeen rank-one alternate-Q80 V4 bases lack primitive generators, explicit maps to u, and native specialization calibration"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/R17_ALTERNATE_Q80_V4_RECORD_CAMPAIGN_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-11952-PRODUCT-BISECTION-INVERSION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete alternate-Q80 norm-eight product-character bisection inversion",
+      "scope": "For the direct norm12-orbit-11952 alternate-Q80 24I1 equation, exact Fincke--Pohst enumeration gives 63,917 section-nonnegative degree-two isotropic translation classes whose parity coset has minimum norm eight. Each class is D_w=(2,2,w), has D_w^2=0, D_w.F=2 and D_w.O=0, and its regular residual chords form the one-parameter family M=M0+lambda*h^2. A synthetic squarefree irreducible genus-one control from orbit 0x0c00d is recovered at lambda=0. For each of the seventeen product quartics belonging to exact rank-one V4 bases, projective comparison of the five old-base quartic coefficients tests every lambda in P1(F_p), including infinity and modular base points. Prime 131 obstructs 63,915 classes; the two traces bad at 131 are both obstructed at 137. No class survives and no exact squareclass hit occurs. Hence none of the seventeen product characters is realized by a disjoint genus-one bisection in the complete norm-eight/pole-order-zero layer. The precise integral dictionary sends a bisection with lifts P,sigma(P) to T=P-sigma(P); its inverse additionally requires T+tau to be divisible by two over the quadratic cover. Because the resulting 2-primary coboundary obstruction has not been proved to vanish, this theorem does not exclude a non-coboundary height-eight product-twist section and does not prove product-twist rank zero or generic V4 rank at least 20.",
+      "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64",
+        "EC-K3-UNIVERSAL-DEGREE2-FIBRATION-COMPILER"
+      ],
+      "checker": "elkies-k3/scripts/search_r17_norm12_11952_product_bisection_inversion.sage",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:483ece6190a420225ce7b590373ec15bfc057a9f9019b76fb9139bcf248987ce",
+      "software_lock": [
+        "elkies-k3/scripts/rank_r17_norm12_11952_alternate_norm8_pencils.sage",
+        "elkies-k3/scripts/search_r17_norm12_11952_product_bisection_inversion.sage",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-norm8-pencil-priority-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-norm8-pencil-priority-v1.tsv",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-product-bisection-inversion-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-product-bisection-inversion-v1.tsv"
+      ],
+      "supersedes_notes": [
+        "the unsliced eight-variable product-twist msolve pilot is the active route for the seventeen exact rank-one alternate-Q80 V4 bases",
+        "the norm-eight product-character bisection-image layer remains an incomplete bounded search"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],

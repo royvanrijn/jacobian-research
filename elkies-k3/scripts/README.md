@@ -3414,6 +3414,25 @@ sage -python classify_r17_norm12_isotropic_frames.sage
 sage -python classify_r17_norm12_isotropic_frames.sage --check
 ```
 
+`compile_r17_norm12_record_lineage_atlas.sage` applies the exact degree-two
+compiler to all 43 charts, exports every `(8,12,24)` equation and normalized
+`j`-map, forms the exact rational-`PGL2` quotient, and solves the projective
+`j(u)=j(E)` equations for curves 273, 302, 351, 356, 376, 377, and 385.
+`certify_r17_norm12_wgxli_lineage_fibres.sage` closes the forty positive
+lineage hits by proving trivial twist, interpolating a saturated polynomial
+MW17 basis, transporting it to all eight native charts, and certifying the
+five displayed exceptional quotients.
+
+```bash
+sage -python compile_r17_norm12_record_lineage_atlas.sage --check
+sage -python certify_r17_norm12_wgxli_lineage_fibres.sage --check
+```
+
+The six `j`-classes have sizes `8,5,18,6,2,4`.  Curves 273 and 302 miss all
+43 charts; the five wgxli lineage curves are untwisted fibres of the
+eight-chart `norm12-orbit-074d9` class.  See
+[`../R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](../R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
+
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
 
 `compile_r17_norm12_orbit11952_qq.sage` performs the direct classical
@@ -3427,6 +3446,20 @@ Q80 transport below is a fallback.
 ```bash
 sage -python compile_r17_norm12_orbit11952_qq.sage
 sage -python compile_r17_norm12_orbit11952_qq.sage --check
+```
+
+<!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
+
+`compile_r17_noncyclic_4a1_qq.sage` applies the same universal degree-two
+compiler to the exact noncyclic local-bridge witness.  It points the quartic
+at the certified physical zero, exports a normalized `4I2+16I1` equation over
+`QQ`, identifies the new nonhistorical `4A1` frame, transports a saturated
+MW13 basis, and checks the target-free inverse back to the literal published
+R17 equation.
+
+```bash
+sage -python compile_r17_noncyclic_4a1_qq.sage
+sage -python compile_r17_noncyclic_4a1_qq.sage --check
 ```
 
 <!-- status-consumer: EC-K3-R17-NORM12-11952-CONTROL-J-PREIMAGES 1ef38474a0d7f629 -->
@@ -3470,24 +3503,35 @@ explicit.
   --check
 ```
 
-`export_elkies_2026_twist_polynomial_sections_modp.sage` now accepts
-`--direct-product-key`.  The bounded driver below exports shortlisted
-`chi=4`, `P.O=0` systems and invokes the checkpointed `msolve` runner with
-declared pair, prime, group, time, and thread limits:
+`rank_r17_norm12_11952_alternate_norm8_pencils.sage` enumerates the complete
+section-nonnegative minimum-norm-eight parity layer of the alternate lattice
+and chooses an equation-cheap trace in every class.  The exact count is
+63,917.
 
 ```bash
-.venv/bin/python \
-  elkies-k3/scripts/run_r17_norm12_11952_v4_quartic_po0_campaign.py \
-  --pair-limit 1 --primes-per-pair 1 --max-groups 1 --timeout 15
-
-.venv/bin/python \
-  elkies-k3/scripts/run_r17_norm12_11952_v4_quartic_po0_campaign.py --check
+sage -python \
+  elkies-k3/scripts/rank_r17_norm12_11952_alternate_norm8_pencils.sage \
+  --check
 ```
 
-The first certified-rank-one `p=131` export has 70 distinct eight-variable systems.  Its first
-15-second group timed out, so the artifact is an incomplete complexity pilot,
-not a characteristic-zero section or rank result.  See
-[`../R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md`](../R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md).
+`search_r17_norm12_11952_product_bisection_inversion.sage` constructs a
+synthetic irreducible control quartic, recovers it through the same inversion
+path, and compares all seventeen rank-one product quartics with every chord
+pencil `M=M0+lambda*h^2`.  Projective finite-field comparison followed by an
+exact rational fallback gives no survivor in the complete layer.
+
+```bash
+sage -python \
+  elkies-k3/scripts/search_r17_norm12_11952_product_bisection_inversion.sage \
+  --check
+```
+
+This exactly exhausts the disjoint norm-eight bisection/coboundary image.  A
+non-coboundary height-eight twist section remains open because the integral
+inverse has a possible 2-primary obstruction.  The older product-twist
+exporter and checkpointed `msolve` driver remain reproducibility tools, not
+the active route.  See
+[`../R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md`](../R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md).
 
 ## Alternate-Q80 rootless equation handoff
 

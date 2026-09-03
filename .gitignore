@@ -156,6 +156,10 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-r17-norm12-103b2-hard-fibre-products-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-11952-control-j-preimages-v1.json
+!/artifacts/generated-results/elkies-k3-marked-u-realization-planner-controls-v1.json
+!/artifacts/generated-results/elkies-k3-r17-noncyclic-4a1-direct-fibration-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-record-lineage-atlas-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json
 !/artifacts/generated-results/elkies-k3-norm12-orbit-103b2-twist-section-v1.json
 !/artifacts/generated-results/elkies-k3-norm12-orbit-103b2-p19-polynomial-section-bruteforce-v1.json
 !/artifacts/generated-results/elkies-k3-norm12-orbit-103b2-p29-polynomial-section-bruteforce-v1.json

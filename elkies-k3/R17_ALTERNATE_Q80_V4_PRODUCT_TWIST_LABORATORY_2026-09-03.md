@@ -1,7 +1,7 @@
 # Alternate-Q80 rational V4 bases and product-twist laboratory
 
 <!-- status-consumer: EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64 e14368b602eebedb -->
-<!-- status-consumer: EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64 b12acf0b90056c18 -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64 f706a4396a0b13af -->
 
 ## Exact result
 
@@ -69,50 +69,51 @@ one.  No ambiguous interval is treated as an exact rank.  The rank artifact is
 SHA-256
 `ed41526fca5724f529aaf73d3f695fe2a781eaf4ea6b6fb792a2af5676759f69`.
 
-## Product-twist compiler and pilot
+## Product-character bisection inversion
 
-For each shortlisted pair the missing third character is the quartic twist
+The unsliced product-twist `msolve` system is no longer the active route.
+The structural inverse problem has now been completed on the entire
+norm-eight/pole-order-zero bisection layer.
 
-```text
-E_alt^(q_i q_j):
-Y^2 = X^3 + A(u)(q_iq_j)^2 X + B(u)(q_iq_j)^3.
-```
-
-This has `chi=4`.  A section disjoint from the zero section lies in the
-polynomial box
+There are exactly `63,917` section-nonnegative degree-two isotropic
+translation classes in the alternate lattice whose trace has norm eight.
+For every class the regular chord pencil
 
 ```text
-deg X <= 8,   deg Y <= 12.
+M=M0+lambda*h^2
 ```
 
-The modular exporter now accepts direct alternate product keys.  It requires
-squarefree good reduction away from the `24I1` discriminant, chooses a smooth
-chart fibre without rational 2-torsion, fixes every affine leading point, and
-exports the recursively reduced systems.  The batch driver records all
-limits and delegates each system to the existing checkpointed `msolve`
-runner.
-
-For the first certified rank-one pair
+was compared with all seventeen product quartics attached to the exact
+rank-one pair bases.  A synthetic quartic constructed from the first known
+norm-eight pencil is recovered at its declared `lambda=0` before the target
+search.  The complete target pass then gives
 
 ```text
-alternate-orbit-1463f : alternate-orbit-19bad
+classes                              63,917
+rank-one product targets                 17
+modular survivors                         0
+exact squareclass hits                     0
 ```
 
-the exact `p=131` export has 140 leading-point blocks and 70 distinct systems,
-each with twelve equations in eight variables.  A single declared 15-second
-pilot group timed out after covering its two sign-equivalent blocks; its
-sampled process-tree high-water mark in the promoted replay was 999,956 KiB.
-This runtime measurement can vary across replays and is a complexity
-measurement only.  It is not a negative section result.
+Prime `131` obstructs `63,915` classes; the two traces with bad reduction in
+that calculation are both obstructed at `137`.  The comparison is projective
+in the five quartic coefficients, includes `lambda=infinity`, and treats a
+zero modular coefficient vector as a survivor.  Thus this is an exact finite
+negative, not a bounded runtime observation.
 
-Accordingly, launching the full shortlist-by-prime collection of unsliced
-systems is not justified by this pilot.  The next computational gate is a dimension-reducing ansatz or a
-cheaper elimination/specialization sieve applied to these exact exports.
+The precise descent dictionary has an integral qualification.  A bisection
+with lifts `P,sigma(P)` gives the twist section `P-sigma(P)`.  Conversely an
+anti-invariant twist section `T` comes from a bisection exactly when
+`T+tau` is divisible by two in the quadratic-cover Mordell--Weil group for
+some generic section `tau`.  The cokernel is 2-primary and has not been
+proved to vanish.  Therefore the computation excludes every minimal
+product-character section in the integral bisection/coboundary image; it does
+not yet exclude a non-coboundary height-eight twist section.
 
-The checkpoint manifests are
-
-- [`../artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-quartic-po0-campaign-v1.json`](../artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-quartic-po0-campaign-v1.json);
-- [`../artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-po0-direct-product-alternate-orbit-1463f--alternate-orbit-19bad-p131-msolve.json`](../artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-po0-direct-product-alternate-orbit-1463f--alternate-orbit-19bad-p131-msolve.json).
+The full theorem, proof, certificates, and boundary are in
+[`R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md`](R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md).
+The older `msolve` export and timeout manifests are retained as historical
+complexity evidence only.
 
 ## Replay
 
@@ -131,18 +132,20 @@ sage -python \
   elkies-k3/scripts/screen_r17_norm12_11952_v4_base_jacobian_ranks.py \
   --check
 
-.venv/bin/python \
-  elkies-k3/scripts/run_r17_norm12_11952_v4_quartic_po0_campaign.py \
-  --pair-limit 1 --primes-per-pair 1 --max-groups 1 --timeout 15
+sage -python \
+  elkies-k3/scripts/rank_r17_norm12_11952_alternate_norm8_pencils.sage \
+  --check
 
-.venv/bin/python \
-  elkies-k3/scripts/run_r17_norm12_11952_v4_quartic_po0_campaign.py --check
+sage -python \
+  elkies-k3/scripts/search_r17_norm12_11952_product_bisection_inversion.sage \
+  --check
 ```
 
 ## Claim boundary
 
 The 64 rational pair-base points, their genus-one geometry, and the seventeen
-exact rank-one base Jacobians are established.  The modular campaign remains
-an incomplete bounded search.  No section on any quartic product twist, no
-third nontrivial `V4` character carrying a section, and no generic
-rank-at-least-20 `V4` base change is claimed.
+exact rank-one base Jacobians are established.  The complete norm-eight
+bisection inversion has no product-character hit, so no generic
+rank-at-least-20 `V4` base change is obtained.  A non-coboundary minimal
+product-twist section remains `UNKNOWN` until the 2-primary integral descent
+quotient is computed.

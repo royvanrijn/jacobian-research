@@ -1,5 +1,7 @@
 # Marked-`U` realization planner (2026-09-03)
 
+<!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
+
 ## Outcome
 
 The elliptic-fibration realization search is now a separate program from the
@@ -113,6 +115,12 @@ The exact control certificate is
 | 2 | published R17 | `4A1` plus the noncyclic bridge profile | the new primitive nef `4A1/MW13` marking with saturated bridge `Z/4+Z/8` |
 | 3 | that new `4A1/MW13` | root rank zero | the reverse degree-two hop to the published rootless frame, with the published equation zero restored literally |
 | 4 | first nonhistorical foundry rootless target (`NS0002-F007`) | attempt only after the marked controls | blocked before enumeration because its bulk route has no common marked `NS`, source `U`, or relative-`U` lift |
+
+The order-three reverse request contains only `root_rank=0` and
+`ADE=rootless`; no target frame Gram is supplied.  The resulting selection is
+therefore a target-free rootless hop rather than a replay forced to the known
+R17 Gram.  Its equation-level inverse is now completed in
+[`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md).
 
 The certificate also contains a small complete exact-shell control. Its
 negative bridge determinant profile is rejected by the square-index constraint

@@ -4,6 +4,7 @@
 <!-- status-consumer: EC-K3-LOCAL-BRIDGE-MUTATION-H1C 7421328afadcf61f -->
 <!-- status-consumer: EC-K3-PRIME-LOCAL-BRIDGE-MUTATION-H1D d4c6c84967a8fbc5 -->
 <!-- status-consumer: EC-K3-NS0024-RELATIVE-U-FIRST-EDGE-OBSTRUCTION d57544697149506f -->
+<!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 
 Date: 2026-09-03
 
@@ -55,6 +56,11 @@ The exact R17 control realizes the latter branch geometrically: it gives a nef
 `4A1/MW13` fibration with maximal non-cyclic `ZZ/4+ZZ/8` bridge glue.  Its
 frame is not isometric to either stored H3 `4A1` frame, so it is a new local
 frame rather than a shortcut between the historical nodes.
+
+The equation-facing follow-up is now complete: the same marking gives an
+explicit `4I2+16I1` model over `QQ`, a saturated arithmetic MW13 basis, and a
+target-free reverse hop to the literal published R17 equation.  See
+[`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md).
 
 ## The finite theorem
 

@@ -18961,6 +18961,35 @@ zero-section degree one.  Together with the general lower bound for distinct
 `J2` classes, this proves elliptic incidence distance two.  See
 [`elkies-k3/J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md`](elkies-k3/J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md).
 
+### Complete 43-chart norm-twelve record-lineage sweep
+
+<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 00e39f6b05c2688a -->
+
+Compile every certified shared-zero norm-twelve chart, normalize and quotient
+its `j`-map, and decide the seven record/lineage target equations:
+
+```bash
+sage -python \
+  elkies-k3/scripts/compile_r17_norm12_record_lineage_atlas.sage
+
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_wgxli_lineage_fibres.sage
+
+sage -python \
+  elkies-k3/scripts/compile_r17_norm12_record_lineage_atlas.sage --check
+
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_wgxli_lineage_fibres.sage --check
+```
+
+The exact atlas has 43 `(8,12,24)` equations and six rational-`PGL2`
+`j`-classes of sizes `8,5,18,6,2,4`.  Curves 273 and 302 have no rational
+preimage.  The eight-chart `074d9` class contains all five curves
+`351,356,376,377,385`; all forty matches are untwisted.  The follow-up
+reconstructs and transports a saturated polynomial MW17 basis and proves the
+displayed exceptional quotients `Z^8,Z^12,Z^5,Z^6,Z^12`.  See
+[`elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
+
 ### Direct `norm12-orbit-11952` alternate-Q80 equation
 
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
@@ -18983,6 +19012,29 @@ rootless determinant-948 frame is alternate Q80 rather than published R17,
 and transports sixteen old sections plus `orbit-0adf9` to a saturated
 seventeen-section basis.  See
 [`elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md`](elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md).
+
+### Direct noncyclic `4A1/MW13` equation and reverse R17 hop
+
+<!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
+
+Compile the primitive nef degree-two marked `U` with physical zero and maximal
+`Z/4+Z/8` bridge directly from the published R17 equation:
+
+```bash
+sage -python \
+  elkies-k3/scripts/compile_r17_noncyclic_4a1_qq.sage
+
+sage -python \
+  elkies-k3/scripts/compile_r17_noncyclic_4a1_qq.sage --check
+```
+
+The exact replay constructs the normalized
+`Y^2=X^3+27*A0(s)*X+54*B0(s)` model, proves the complete fibre configuration
+`4I2+16I1`, rejects both historical H3 `4A1` frame classes, and verifies a
+saturated torsion-free arithmetic MW basis of rank 13.  Its generic inverse
+passes through a target-free rootless marked-`U` selection and recovers the
+literal published R17 equation.  See
+[`elkies-k3/R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](elkies-k3/R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md).
 
 <!-- status-consumer: EC-K3-R17-NORM12-11952-CONTROL-J-PREIMAGES 1ef38474a0d7f629 -->
 
@@ -19007,7 +19059,8 @@ alternate family, even after allowing quadratic twists.
 <!-- status-consumer: EC-K3-R17-NORM12-11952-INHERITED-PRODUCTS b0d303c94466c6f9 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-ALTERNATE-LAB-1024 c2f6309f8d6cc06d -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64 e14368b602eebedb -->
-<!-- status-consumer: EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64 b12acf0b90056c18 -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64 f706a4396a0b13af -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-BISECTION-INVERSION 6cfef74eb08601a6 -->
 
 Replay the 121 inherited covers and their 7,260 exact pair products:
 
@@ -19051,7 +19104,7 @@ remain open.  See
 [`elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_LABORATORY_2026-09-03.md`](elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_LABORATORY_2026-09-03.md).
 
 Certify the first 64 rational genus-one `V4` pair bases selected by exact
-intersection-one incidence, then replay the bounded first product-twist pilot:
+intersection-one incidence and the seventeen exact rank-one base Jacobians:
 
 ```bash
 sage -python \
@@ -19064,18 +19117,36 @@ sage -python \
 .venv/bin/python \
   elkies-k3/scripts/screen_r17_norm12_11952_v4_base_jacobian_ranks.py \
   --check
-
-.venv/bin/python \
-  elkies-k3/scripts/run_r17_norm12_11952_v4_quartic_po0_campaign.py --check
 ```
 
 The shortlist checker proves 10,362 intersection-one pairs in the native
 priority prefix and verifies explicit `QQ` points on the selected 64 bases.
 The bounded rank screen completes on 62 bases and proves exact Jacobian rank
-one for seventeen.  The pilot exported the first rank-one-base `chi=4`,
-`P.O=0` system at `p=131`; one of 70 distinct systems timed out at 15 seconds.
-It neither finds nor excludes a quartic product-twist section.  See
+one for seventeen.  See
 [`elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md`](elkies-k3/R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md).
+
+Replay the complete norm-eight product-character bisection inversion:
+
+```bash
+sage -python \
+  elkies-k3/scripts/rank_r17_norm12_11952_alternate_norm8_pencils.sage \
+  --check
+
+sage -python \
+  elkies-k3/scripts/search_r17_norm12_11952_product_bisection_inversion.sage \
+  --check
+```
+
+The lattice pass enumerates all 63,917 section-nonnegative minimum-norm-eight
+translation classes.  A synthetic irreducible quartic from the first known
+pencil is recovered at its declared `lambda=0`.  Projective coefficient
+comparison then excludes every one of the seventeen product quartics on all
+63,917 pencils: 63,915 classes are obstructed at `p=131`, and the two bad
+traces there are obstructed at `p=137`.  This exactly exhausts the disjoint
+norm-eight bisection/coboundary image.  It does not exclude a non-coboundary
+height-eight twist section until the 2-primary integral descent quotient is
+proved to vanish.  See
+[`elkies-k3/R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md`](elkies-k3/R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md).
 
 Run the exact `H=10000` point-map-relation control on the deterministic
 seeded sample of ten other pointed covers:

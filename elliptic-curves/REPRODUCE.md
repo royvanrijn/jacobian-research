@@ -270,6 +270,23 @@ coefficient, anchor, and height bounds, not an unrestricted `GL(17,Z)`
 search. See
 [`ICARM_WGXLI_RANK17_BOUNDED_REBASING.md`](notes/ICARM_WGXLI_RANK17_BOUNDED_REBASING.md).
 
+Replay the exact resolution supplied by the complete norm-twelve atlas:
+
+<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 00e39f6b05c2688a -->
+
+```sh
+sage -python \
+  elkies-k3/scripts/compile_r17_norm12_record_lineage_atlas.sage --check
+
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_wgxli_lineage_fibres.sage --check
+```
+
+The successful basis uses seven simultaneous differences and was outside the
+one-shear bound above.  It gives five untwisted published-R17 fibres, a
+saturated generic MW17 basis, and exact displayed exceptional quotients.  See
+[`../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
+
 ### ICARM curve 302: rank at least 31
 
 The fast checker verifies both pinned hashes and recomputes the complete exact

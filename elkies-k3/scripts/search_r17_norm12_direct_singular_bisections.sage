@@ -28,7 +28,7 @@ import json
 from pathlib import Path
 import sys
 
-from sage.all import EllipticCurve, PolynomialRing, QQ, ZZ, matrix, pari, vector
+from sage.all import EllipticCurve, GF, PolynomialRing, QQ, ZZ, matrix, pari, vector
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -68,7 +68,10 @@ def digest(path):
 
 
 def relative(path):
-    return str(path.resolve().relative_to(ROOT))
+    try:
+        return str(path.resolve().relative_to(ROOT))
+    except ValueError:
+        return str(path.resolve())
 
 
 def rational_text(value):
@@ -107,6 +110,33 @@ def squareclass_decomposition(polynomial, ring):
     return square_part, reduced
 
 
+def primitive_integer_polynomial(polynomial):
+    """Return the primitive ZZ polynomial defining the same projective roots."""
+
+    denominator = ZZ(polynomial.denominator())
+    integer_ring = PolynomialRing(ZZ, polynomial.parent().variable_name())
+    result = integer_ring(denominator * polynomial)
+    content = ZZ(result.content())
+    if content:
+        result //= content
+    if result.leading_coefficient() < 0:
+        result = -result
+    return result
+
+
+def projective_root_count_mod_prime(polynomial, prime):
+    """Count distinct P1(F_p) roots of a primitive integer polynomial."""
+
+    field = GF(prime)
+    reduced_ring = PolynomialRing(field, polynomial.parent().variable_name())
+    reduced = reduced_ring([field(coefficient) for coefficient in polynomial])
+    if not reduced:
+        return None
+    finite_count = sum(reduced(value) == 0 for value in field)
+    infinity_count = int(field(polynomial.leading_coefficient()) == 0)
+    return int(finite_count + infinity_count)
+
+
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--model", type=Path, default=DEFAULT_MODEL)
 parser.add_argument("--smooth-collisions", type=Path, default=DEFAULT_SMOOTH_COLLISIONS)
@@ -114,6 +144,14 @@ parser.add_argument("--max-l1", type=int, default=3)
 parser.add_argument("--trace-limit", type=int, help="optional deterministic pilot limit")
 parser.add_argument("--start", type=int, default=0, help="first row of the ordered prefix")
 parser.add_argument("--pari-stack-gb", type=int, default=2)
+parser.add_argument(
+    "--rational-root-sieve-primes",
+    default="17,19,23,29,31",
+    help=(
+        "comma-separated primes used as exact necessary local tests for a "
+        "rational projective root of the squarefree pencil discriminant"
+    ),
+)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 args = parser.parse_args()
 if args.max_l1 <= 0 or args.pari_stack_gb <= 0:
@@ -122,6 +160,9 @@ if args.trace_limit is not None and args.trace_limit <= 0:
     parser.error("--trace-limit must be positive")
 if args.start < 0:
     parser.error("--start must be nonnegative")
+sieve_primes = tuple(ZZ(value) for value in args.rational_root_sieve_primes.split(","))
+if not sieve_primes or any(not prime.is_prime() for prime in sieve_primes):
+    parser.error("--rational-root-sieve-primes must be a nonempty prime list")
 
 chord = load_script("r17_direct_singular_chord", CHORD_SCRIPT)
 hasher = load_script("r17_direct_singular_hasher", HASH_SCRIPT)
@@ -207,6 +248,9 @@ bivariate_ring = PolynomialRing(lambda_ring, "u")
 trace_records = []
 candidates = []
 factor_degree_histogram = Counter()
+sieve_exclusion_histogram = Counter()
+exact_factorization_count = 0
+odd_discriminant_irreducibility_exclusion_count = 0
 finite_pole_count = 0
 for trace_index, trace_vector in enumerate(selected):
     trace = sum(
@@ -246,6 +290,56 @@ for trace_index, trace_vector in enumerate(selected):
     if remainder or q_symbolic.degree() != 4:
         raise ArithmeticError("symbolic genus-one branch division failed")
     pencil_discriminant = lambda_ring(q_symbolic.discriminant())
+    # Sage's univariate ``squarefree_part`` is the representative modulo
+    # polynomial squares: factors of even multiplicity disappear and factors
+    # of odd multiplicity remain once.  This is exactly the locus relevant to
+    # nonsplit normalizations; the ubiquitous double roots are split members.
+    odd_multiplicity_discriminant = pencil_discriminant.squarefree_part()
+    primitive_odd_discriminant = primitive_integer_polynomial(
+        odd_multiplicity_discriminant
+    )
+    sieve_records = []
+    excluded_prime = None
+    for sieve_prime in sieve_primes:
+        root_count = projective_root_count_mod_prime(
+            primitive_odd_discriminant, sieve_prime
+        )
+        sieve_records.append(
+            {
+                "prime": int(sieve_prime),
+                "projective_root_count": root_count,
+            }
+        )
+        if root_count == 0:
+            excluded_prime = int(sieve_prime)
+            break
+    record.update(
+        {
+            "pencil_discriminant_degree": int(pencil_discriminant.degree()),
+            "odd_multiplicity_pencil_discriminant_degree": int(
+                odd_multiplicity_discriminant.degree()
+            ),
+            "rational_root_sieve": sieve_records,
+            "rational_singular_parameters": [],
+        }
+    )
+    if excluded_prime is not None:
+        record["status"] = "PASS_MODULAR_NO_RATIONAL_SINGULAR_PARAMETER"
+        record["excluding_prime"] = excluded_prime
+        sieve_exclusion_histogram[str(excluded_prime)] += 1
+        trace_records.append(record)
+        continue
+
+    if (
+        odd_multiplicity_discriminant.degree() > 1
+        and odd_multiplicity_discriminant.is_irreducible()
+    ):
+        record["status"] = "PASS_EXACT_ODD_DISCRIMINANT_IRREDUCIBLE"
+        odd_discriminant_irreducibility_exclusion_count += 1
+        trace_records.append(record)
+        continue
+
+    exact_factorization_count += 1
     factorization = pencil_discriminant.factor()
     factor_profile = tuple(
         (int(factor.degree()), int(exponent)) for factor, exponent in factorization
@@ -254,9 +348,7 @@ for trace_index, trace_vector in enumerate(selected):
     record.update(
         {
             "status": "PASS_EXACT_PENCIL_DISCRIMINANT_FACTORIZATION",
-            "pencil_discriminant_degree": int(pencil_discriminant.degree()),
             "factor_degree_multiplicities": [list(item) for item in factor_profile],
-            "rational_singular_parameters": [],
         }
     )
 
@@ -360,6 +452,7 @@ candidate_collisions = {
     key: labels for key, labels in candidate_collisions.items() if len(labels) >= 2
 }
 
+output = args.output if args.output.is_absolute() else ROOT / args.output
 payload = {
     "schema": "elkies-k3.r17-norm12-direct-singular-bisection-search.v1",
     "status": (
@@ -378,6 +471,17 @@ payload = {
         "processed_trace_count": len(selected),
         "processed_half_open_range": [args.start, args.start + len(selected)],
         "finite_pole_trace_count": finite_pole_count,
+        "rational_root_sieve_primes": list(map(int, sieve_primes)),
+        "modular_rational_root_exclusion_count": sum(
+            sieve_exclusion_histogram.values()
+        ),
+        "modular_rational_root_exclusion_prime_histogram": dict(
+            sorted(sieve_exclusion_histogram.items(), key=lambda item: int(item[0]))
+        ),
+        "exact_discriminant_factorization_count": exact_factorization_count,
+        "odd_discriminant_irreducibility_exclusion_count": (
+            odd_discriminant_irreducibility_exclusion_count
+        ),
         "l1_histogram_best_representative_by_translation_class": {
             str(key): value for key, value in sorted(l1_histogram.items())
         },
@@ -397,8 +501,11 @@ payload = {
         "The norm-eight vector enumeration is complete, but only representatives "
         "within the displayed coefficient-L1 prefix are processed. Even a complete "
         "prefix no-hit is not a global exclusion of singular rational bisections. "
-        "Only odd-multiplicity rational discriminant roots with quadratic normalized "
-        "squareclass are accepted as nonsplit rational-normalization candidates."
+        "A zero projective root count for the primitive squarefree discriminant "
+        "modulo any displayed prime rigorously excludes rational discriminant roots. "
+        "Survivors are factored over QQ. Only odd-multiplicity rational roots with "
+        "quadratic normalized squareclass are accepted as nonsplit rational-normalization "
+        "candidates."
     ),
     "inputs": {
         relative(path): digest(path)
@@ -406,11 +513,14 @@ payload = {
     },
     "reproducing_command": (
         "sage -python elkies-k3/scripts/search_r17_norm12_direct_singular_bisections.sage "
+        f"--model {relative(args.model)} "
+        f"--smooth-collisions {relative(args.smooth_collisions)} "
         f"--max-l1 {args.max_l1} --start {args.start}"
         + ("" if args.trace_limit is None else f" --trace-limit {args.trace_limit}")
+        + f" --rational-root-sieve-primes {args.rational_root_sieve_primes}"
+        + f" --output {relative(output)}"
     ),
 }
-output = args.output if args.output.is_absolute() else ROOT / args.output
 output.parent.mkdir(parents=True, exist_ok=True)
 output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
 print(

@@ -27,10 +27,13 @@ The two determinant-948 rootless rank-17 charts on the pinned K3 are explicit ov
 
 - **Published Elkies R17:** certified `24 I1`, geometric and arithmetic generic Mordell–Weil rank 17.
 - **Alternate Q80:** canonical direct degree-two hop from `norm12-orbit-11952`; polynomial K3 model with `(deg A, deg B, deg Delta)=(8,12,24)`, `24 I1`, determinant-948 rootless frame, and 17 saturated rational sections.
+- **Noncyclic `4A1/MW13`:** an explicit `4 I2 + 16 I1` model over `QQ`, with maximal `Z/4+Z/8` bridge, saturated arithmetic rank 13, and an exact target-free reverse hop to published R17.
 - The alternate chart has generic arithmetic rank 17 over `QQ`.
 - The four published rank-25--28 R17 controls have no rational preimage under the alternate-Q80 `j`-map, so future alternate work needs native calibration fibres.
 - Rank `>=32` remains open.
 - Target-directed fibration hopping has one curated planner-ready end-to-end control; the 936 bulk foundry routes are not yet planner-ready.
+
+<!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 
 Historical Q80 transports, large-coordinate reconstruction routes, and expensive third-`q12` work are provenance only. See [`archive/elkies-k3/`](archive/elkies-k3/).
 

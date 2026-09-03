@@ -463,7 +463,6 @@ def main():
             "target": {
                 "root_rank": 0,
                 "ade_type": "rootless",
-                "frame_gram": rows(short),
             },
             "intersection_box": {
                 "F_dot_F_prime": [2],
@@ -482,6 +481,7 @@ def main():
         }
     )
     assert control_3["status"] == "PASS_MARKED_U_REALIZATIONS_FOUND"
+    assert control_3["target_request"]["target_frame_supplied"] is False
     assert control_3["selected_realization"]["primitive_u_basis_in_ambient_ns"] == rows(
         published_u
     )
