@@ -1,60 +1,39 @@
 # AGENTS.md
 
-This is a research repository of theorem notes, exact certificates, exploratory
-calculations, formalizations, and papers about polynomial Keller maps. Keep
-changes narrow, reproducible, and explicit about what has actually been proved.
+Research repository. Keep changes reproducible, claims fail-closed, and navigation concise.
 
-## Repository map
+## Current compute priority
 
-- `README.md` is the main mathematical overview; `REPRODUCE.md` is the command
-  catalogue.
-- `verified/`, `cancellation/`, `extended-geometry/`, and `plane-jc/` contain
-  active mathematical notes. `formal/` contains Lean developments.
-- `elkies-k3/` has its own `AGENTS.md`. Start its work from
-  `elkies-k3/ELKIES_K3_PROCESS_ATLAS.md` and read
-  `elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md` before generalizing a new
-  behavior. Do not infer the mechanism from an isolated artifact or old search
-  script.
-- `scripts/` contains checkers and experiments. Prefer extending a nearby
-  script over introducing a second implementation of the same calculation.
-- `papers/` contains manuscripts; `archive/` is historical and should not be
-  treated as a current source.
-- Generated results belong in `artifacts/generated-results/`, with their
-  reproducing command documented.
+**Prime gaps.** The elliptic-K3 / high-rank elliptic-curve programme is paused as of 2026-09-03. Do not start expensive K3, elliptic-neighbour, descent, specialization, or broad lattice searches unless that programme is explicitly resumed.
 
-## Research approach
+## Authority order
 
-- Always consider and, when practical, perform a literature search before
-  starting new mathematical work.
-- Review relevant prior work in the repository, including which approaches
-  succeeded or failed, before designing a new approach.
-- When a computation reaches time or memory limits, first seek algorithmic or
-  code improvements, sharper mathematical reductions, or alternative methods.
-  Use larger runs or expensive Gröbner-basis computations only with a clear
-  justification.
-- Additional tools may be installed when needed, but first check carefully
-  whether the required tool or capability is already available.
+1. `MATH_STATUS.json` — mathematical status.
+2. Canonical proof/source notes referenced by that file.
+3. Generated certificates under `artifacts/generated-results/`.
+4. Exploratory notes.
+5. `archive/` — historical context only.
 
-## Mathematical status
+`STATUS.md` is generated. Regenerate it through the repository status renderer; never edit it by hand.
 
-- `MATH_STATUS.json` is the sole status authority. `STATUS.md` is generated;
-  update it with `python3 scripts/render_status.py`, never by hand.
-- Preserve the distinction between theorem, conditional result, computation,
-  experiment, and open problem. A successful bounded search is not a proof.
-- Put proofs in their canonical note or paper. Other documents should link to
-  that source instead of copying the argument or maintaining a second status.
-- Do not silently refresh pinned certificates or generated artifacts. Record
-  the command, parameters, software assumptions, and any changed hash.
+## Editing discipline
 
-## Editing and checks
+- Preserve proof artifacts and replay inputs.
+- Do not infer a theorem from a bounded search or heuristic score.
+- Keep `UNKNOWN` as `UNKNOWN` until an exact certificate closes it.
+- Archive or replace superseded handoffs with short tombstones instead of maintaining parallel status narratives.
+- Keep README pages short and link to canonical proofs.
+- Prefer narrow, cheap checks. Run expensive whole-suite or research calculations only when mathematically necessary and explicitly in scope.
+- Do not rewrite unrelated active branches merely for stylistic consistency.
 
-- Preserve unrelated work in the tree and avoid broad mechanical rewrites.
-- Keep Markdown links relative and run the narrowest relevant verifier first.
-- Python verification normally uses `.venv/bin/python`; dependency-free
-  independent checks deliberately use `python3`.
-- For Python or documentation changes, run `make check`. For the foundational
-  certificate, also run `make verify-minimal`. Use the targeted commands in
-  `REPRODUCE.md` for specialized or expensive calculations rather than running
-  the full suite by default.
-- Report commands that were not run, especially when they require Singular,
-  Macaulay2, Lean, Julia, LaTeX, or a long symbolic computation.
+## Repository hygiene
+
+When a result supersedes an old route or handoff:
+
+1. update the active README/navigation surface;
+2. keep the current theorem in `MATH_STATUS.json` and its canonical proof note;
+3. move historical narrative to `archive/` or leave a concise tombstone pointing at immutable Git history;
+4. retain scripts/certificates when they are useful regressions;
+5. avoid deleting evidence just because it is no longer operational.
+
+For K3-specific work, follow [`elkies-k3/AGENTS.md`](elkies-k3/AGENTS.md). While the programme is paused, maintenance and small exact verification are fine; new compute campaigns are not.
