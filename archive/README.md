@@ -1,47 +1,24 @@
 # Archive
 
-This directory preserves superseded derivations, programme-level notes,
-checklists, exploratory scans, and intermediate write-ups. Redundant status
-systems and superseded dependency tables have been condensed rather than kept
-as competing ledgers. Archived material is not part of the main proof
-navigation.
+This directory preserves superseded derivations, programme-level notes, checklists, exploratory scans, intermediate write-ups, and frozen navigation states. Archived material is provenance, not a current theorem or task source.
 
-See [legacy-notes](legacy-notes/) for the first archived tranche. Generated
-expressions and verification logs live under the top-level `artifacts/`
-directory and are intentionally absent from the front page.
+For exact current status use [`../MATH_STATUS.json`](../MATH_STATUS.json); for replay use [`../REPRODUCE.md`](../REPRODUCE.md).
 
-The [transfer-program archive](transfer-program/) contains finite examples
-from the abandoned transfer programme, failed all-`k` mechanisms, conditional arguments,
-and scoped factorization obstruction.
+## Latest repository freeze
 
-The [cancellation-component archive](cancellation-components/) preserves the
-former fragmented cancellation construction narratives now consolidated into five active documents.
+[`STREAMLINING_2026-09-03.md`](STREAMLINING_2026-09-03.md) records the cleanup that parked compute-heavy K3/elliptic-curve work for prime-gap calculations and pins the complete pre-cleanup tree at commit `f47f1a1872881680d9296170f3f9619bcc943c29`.
 
-The [core-support archive](core-support/) contains superseded combined proofs
-and expanded foundational-through-weighted core audit narratives.  The
-[geometry-support archive](geometry-support/) contains intermediate
-deformation, compactification, and audit notes superseded by stronger active
-theorems.  [Derived constructions](derived-constructions/) and
-[exploratory tooling](tooling/) retain generated-model narratives, searches,
-bounded scans, and diagnostics outside the primary proof path.
+## Main archive areas
 
-The [provenance-audits archive](provenance-audits/) preserves dated source
-searches and attribution snapshots that should not be read as active theorem
-statements.  Its
-[2026-09-02 experiment-lifecycle audit](provenance-audits/REPOSITORY_EXPERIMENT_LIFECYCLE_AUDIT_2026-09-02.md)
-records the repository-wide stale-frontier and archive pass.
+- [`legacy-notes/`](legacy-notes/) — first archived tranche.
+- [`transfer-program/`](transfer-program/) — abandoned transfer programme and scoped obstructions.
+- [`cancellation-components/`](cancellation-components/) — superseded cancellation narratives.
+- [`core-support/`](core-support/) and [`geometry-support/`](geometry-support/) — older combined proofs and intermediate geometry audits.
+- [`derived-constructions/`](derived-constructions/) and [`tooling/`](tooling/) — generated-model narratives, bounded searches, and diagnostics.
+- [`provenance-audits/`](provenance-audits/) — dated source/attribution and lifecycle audits.
+- [`elkies-k3/`](elkies-k3/) — early experiments plus the index of operationally superseded Q80/reconstruction routes.
+- [`elliptic-curves/`](elliptic-curves/) — bounded-search history and old command surfaces.
+- [`high-dimensional-gmc/`](high-dimensional-gmc/) — superseded high-dimensional Gaussian searches.
+- [`hc4-superseded-branches/`](hc4-superseded-branches/) and [`plane-jc-closed-branches/`](plane-jc-closed-branches/) — closed/superseded proof branches.
 
-The [Elkies--K3 archive](elkies-k3/) preserves unreferenced early discovery
-notes and points to the separate script-snapshot archive.  Current K3 status
-and navigation remain in [`../elkies-k3/README.md`](../elkies-k3/README.md).
-
-The [high-dimensional GMC archive](high-dimensional-gmc/) preserves the
-former three-real weighted-family searches.  Explicit five-term witnesses
-settle every real Gaussian dimension `n>=3`; active Gaussian work is now
-restricted to GMC(2).
-
-The [HC4 superseded-branch archive](hc4-superseded-branches/) preserves
-parallel reductions whose local theorem identifiers were reassigned in the
-current relative-nilpotent and direct-filtration proof chains.  The
-[closed plane-JC branch archive](plane-jc-closed-branches/) preserves the
-Laurent/Belyi derivations absorbed by the registered `(72,108)` closure.
+Generated expressions, exact verification logs, and certificates remain under top-level `artifacts/`; scripts may remain outside the archive when they are still useful regressions.
