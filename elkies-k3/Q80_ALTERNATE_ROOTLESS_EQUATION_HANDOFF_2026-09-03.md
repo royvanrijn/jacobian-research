@@ -1,13 +1,15 @@
 # Alternate Q80 Rootless Equation Handoff (2026-09-03)
 
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J2-MINIMAL-ACCESSIBILITY 631f50389e0a3283 -->
+<!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
 
 ## Scope and status
 
-This note pins the exact starting point for recovering the characteristic-zero
-equation of one historically transported copy of the unique alternate
-rootless determinant-948 `J2` frame.  It does not alter the completed two-class
-rootless-frame classification and does not claim an equation-level fibration.
+This note pins the historical transport of one copy of the unique alternate
+rootless determinant-948 `J2` frame.  The direct degree-two construction on
+the published R17 equation is now complete and is the primary equation route;
+the large Q80 transport below is retained as provenance and fallback only.
 
 **Updated construction priority.**  The historical Q80 lift below is no longer
 the preferred route to the frame class.  The exact classifier in
@@ -15,15 +17,26 @@ the preferred route to the frame class.  The exact classifier in
 finds ten nef degree-two copies of the alternate class directly among the 43
 norm-twelve genus-one bisections on the published R17 equation.  Each shares
 the old zero and has zero-section degree one.  The cheapest stored witness is
-`norm12-orbit-11952`.  Compile its pencil `|D|` before resuming the million-bit
-third-q12 reconstruction recorded here.
+`norm12-orbit-11952`.  Its pencil, Weierstrass equation, `24I1` fibre
+certificate, alternate-Q80 marking, and saturated seventeen-section basis are
+compiled in
+[`R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md`](R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md).
+Do not resume the million-bit third-q12 reconstruction unless a separate use
+requires that particular historical marking.
+
+The arithmetic rank no longer waits for that compilation.  The direct
+rational NS marking `U_alt=<D,O+D>` has passed the equivariant
+Shioda--Tate gate and proves `rank E_alt(QQ(t))=17`; see
+[`R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md`](R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md).
+The direct compiler now supplies the new Weierstrass equation and explicit
+alternate sections.  Specialization searches remain separate.
 
 The lattice handoff is complete and independently replayable.  Along this
 historical route, the equation breakthrough (Level A) remains open because
 there is no characteristic-zero equation for the immediate `A1/MW16` parent.
-For the new direct route, the open gate is instead the resolved two-dimensional
-Riemann--Roch pencil of one exact genus-one divisor.  The new Weierstrass model,
-its 17 explicit sections, and all specialization comparisons remain open.
+That route-specific gap no longer blocks the endpoint equation: the direct
+published-R17 hop solves an eight-by-ten Riemann--Roch kernel and constructs the
+endpoint without traversing the Q80 chain.
 
 ## Exact final divisor
 
@@ -375,10 +388,11 @@ resolved fibre components, two-way maps, and NS marking.  The final rootless
 equation must have root rank zero and geometric Mordell--Weil rank 17 before
 section transport begins.
 
+The exact arithmetic generic rank 17 is already proved by the direct marking.
 Hypotheses H1--H5 about multisection visibility, quotient minima, rank-28
 exceptional directions, heuristic enrichment, and specialization tails are
 not yet testable.  They require the equation and saturated 17-section basis;
-no arithmetic-search conclusion is drawn here.
+no specialization-search conclusion is drawn here.
 
 ## Replay
 

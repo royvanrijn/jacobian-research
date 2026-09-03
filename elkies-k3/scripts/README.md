@@ -2826,6 +2826,7 @@ independent residual-rank cross-check, not the primary class certificate.  See
 ## Arithmetic rank transfer
 
 <!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 3031dd2365a29cd5 -->
+<!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -2842,13 +2843,19 @@ is
 [`../data/arithmetic/arithmetic-marking-v1.schema.json`](../data/arithmetic/arithmetic-marking-v1.schema.json),
 and `--marking FILE` validates an additional self-contained record.
 
-Pinned controls reproduce arithmetic rank 17 for H3/R17, arithmetic rank two
-inside geometric rank four for the unordered E6 incidence, and the
-`2+chi_-3` orbit-103 decomposition.  The same certificate applies the gate to
+Pinned controls reproduce arithmetic rank 17 for H3/R17 and promote the
+degree-two `norm12-orbit-11952` alternate-Q80 pencil to exact arithmetic rank
+17 before equation compilation.  The artifact stores its full rational
+divisor basis `(F,O,Q1,...,Q17)`, the columns of `<D,O+D>`, the identity
+Galois action, and the rootless quotient calculation.  The controls also give
+arithmetic rank two inside geometric rank four for the unordered E6 incidence
+and the `2+chi_-3` orbit-103 decomposition.  The same certificate applies the gate to
 the current NS0024 completed-core path and returns
 `FAIL_CLOSED_GEOMETRIC_ONLY`: the stored Kneser path is not a field-defined
 marked-`U` corridor.  See
 [`../ARITHMETIC_RANK_TRANSFER_2026-09-03.md`](../ARITHMETIC_RANK_TRANSFER_2026-09-03.md).
+The alternate application proof is
+[`../R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md`](../R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md).
 
 ## Integral rank-transfer glue calculus
 
@@ -3031,14 +3038,20 @@ regression certificate; it does not claim that the abstract
 counted theta signature determines line pairings or that this implementation
 has a uniform timing advantage.
 
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-GRAPH-REACHABILITY e02f950eba79b32a -->
+
 `analyze_small_genus_defect_graphs.sage --check` is the complete finite-graph
 control for reachability.  It mass-closes positive even ternary genera of
 determinants 112, 126, and 316, enumerates every isotropic line at good primes
-3 and/or 5, stores every signed physical root and birth/death count, and
-computes SCCs, zero basins, and shortest paths.  It exhibits fixed-prime
-directed traps even when the unrestricted neighbour graph is connected, and
-the exact distance-two defect sequence `2,2,0`.  It is a root-defect
-calibration, not a complete rank-15 reverse-mask graph.
+`{3,5,11}`, `{5,11,13}`, and `{3,5,7}`, stores every signed physical root and
+birth/death count, and computes all singleton, pair, and triple unions.  Every
+directed SCC is labelled with its condensation exits; every finite shortest
+path stores a prime and isotropic-line witness.  Exhaustive subset selection
+gives minimum sufficient sets `{5}`/`{11}`, `{5}`/`{11}`/`{13}`, and
+`{5}`/`{7}`.  It exhibits fixed-`3` traps even though the unrestricted graph
+is connected and each genus has one proper spinor genus, as well as the exact
+distance-two defect sequence `2,2,0`.  It is a root-defect calibration, not a
+complete rank-15 reverse-mask graph.
 
 `certify_integral_rank_transfer_root_system_signature.sage --check` expands
 the physical completion witnesses into complete root-line metrics.  For the
@@ -3286,6 +3299,21 @@ alternate witness is `norm12-orbit-11952`.
 ```bash
 sage -python classify_r17_norm12_isotropic_frames.sage
 sage -python classify_r17_norm12_isotropic_frames.sage --check
+```
+
+<!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
+
+`compile_r17_norm12_orbit11952_qq.sage` performs the direct classical
+two-neighbour hop for the cheapest alternate-Q80 witness.  It solves the
+published-model `H^0(O(D))` kernel, constructs and points the quartic,
+minimalizes its Jacobian to a `24I1` K3, identifies the rootless complement
+with alternate Q80, and exports a saturated rank-17 section basis.  This is
+the primary equation compiler for the alternate frame; the giant historical
+Q80 transport below is a fallback.
+
+```bash
+sage -python compile_r17_norm12_orbit11952_qq.sage
+sage -python compile_r17_norm12_orbit11952_qq.sage --check
 ```
 
 ## Alternate-Q80 rootless equation handoff

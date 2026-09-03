@@ -1,5 +1,7 @@
 # Small-genus defect-graph dynamics — 2026-09-03
 
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-GRAPH-REACHABILITY e02f950eba79b32a -->
+
 ## Result
 
 Complete good-prime graphs in three mass-closed positive even ternary genera
@@ -15,13 +17,17 @@ H0i.1 may still create replacement roots.
 
 The exact census gives:
 
-| genus | classes | zero states | prime set | unrestricted graph | directed distances from defective states | closed defective SCCs |
-| --- | ---: | ---: | --- | --- | --- | --- |
-| rank 3, determinant 112 | 4 | 1 | `{3}` | strongly connected | `infinity, 1, infinity` | one two-state cycle |
-| rank 3, determinant 112 | 4 | 1 | `{5}` | strongly connected | `1, 1, 1` | none |
-| rank 3, determinant 126 | 3 | 1 | `{5}` | strongly connected | `1, 2` | none |
-| rank 3, determinant 316 | 9 | 6 | `{3}` | strongly connected | `1, infinity, infinity` | two singletons |
-| rank 3, determinant 316 | 9 | 6 | `{5}` | strongly connected | `1, 1, 1` | none |
+| genus | classes / zero | analyzed good primes | singleton directed distances | minimum sufficient prime sets |
+| --- | ---: | --- | --- | --- |
+| rank 3, determinant 112 | `4 / 1` | `{3,5,11}` | `p=3: infinity,1,infinity`; `p=5,11: 1,1,1` | `{5}`, `{11}` |
+| rank 3, determinant 126 | `3 / 1` | `{5,11,13}` | `p=5: 1,2`; `p=11,13: 1,1` | `{5}`, `{11}`, `{13}` |
+| rank 3, determinant 316 | `9 / 6` | `{3,5,7}` | `p=3: 1,infinity,infinity`; `p=5,7: 1,1,1` | `{5}`, `{7}` |
+
+Every two-prime and three-prime union in the table has universal zero
+reachability, maximum distance one, and one directed SCC.  At every singleton,
+pair, and triple the certificate labels every SCC, records the condensation
+edges, and stores an exact shortest path with a prime and isotropic-line
+witness for each step.
 
 Every row is a complete quotient graph on integral isometry classes, not a
 sample.  The determinant-112, -126, and -316 reciprocal-automorphism sums are
@@ -34,7 +40,7 @@ respectively
 and equal the exact Minkowski--Siegel masses of their genera.
 
 The generated certificate is
-[`../artifacts/generated-results/elkies-k3-small-genus-defect-graphs-v1.json`](../artifacts/generated-results/elkies-k3-small-genus-defect-graphs-v1.json).
+[`../artifacts/generated-results/elkies-k3-small-genus-defect-graphs-v2.json`](../artifacts/generated-results/elkies-k3-small-genus-defect-graphs-v2.json).
 It retains every state Gram matrix, automorphism order, theta shells through
 norm twenty, full signed physical root coordinates and Gram matrix, root
 complement, every projective isotropic line, its child class, and its exact
@@ -59,6 +65,13 @@ directed self-trap and a second, with four signed roots, has no directed
 isotropic line at all.  Both are escaped in one step at `p=5`.  These are
 therefore exact **fixed-prime traps**, not traps for the graph containing all
 good primes.
+
+The unions make this statement completely explicit.  In determinant 112,
+both `{3,5}` and `{3,11}` merge the trapped SCC with the zero basin.  In
+determinant 316, both `{3,5}` and `{3,7}` do the same.  The corresponding
+three-prime unions are strongly connected as directed graphs.  Thus the trap
+is destroyed by adjoining one suitable good prime; it is not merely bypassed
+while some other defective SCC remains closed.
 
 This answers one interpretation of the trap question positively: a closed
 defective region can exist after the prime set is fixed, even when the
@@ -104,6 +117,21 @@ The theta shells and root-complement classes also distinguish the states.
 None of these data is monotone in the examples, and no universal obstruction
 theorem is claimed.
 
+## Minimum-prime-set experiment
+
+For a declared list of good primes, the checker exhausts every nonempty subset
+and solves the finite optimization problem
+
+```text
+minimize |S| subject to every state reaching a zero state in G_S.
+```
+
+The minimum cardinality is one in all three controls, with the complete lists
+of minimizers displayed in the first table.  This is still useful negative
+routing information: the least analyzed prime can fail even when another
+single prime succeeds, so “use the smallest good prime” is not an invariant
+strategy.  No present control requires a genuinely mixed two-prime route.
+
 ## Literature consequence for the all-prime question
 
 Chenevier's [`p`-neighbour statistics](https://arxiv.org/abs/2104.06846)
@@ -131,6 +159,29 @@ effective enough to produce a usable prime set.  This qualification is
 essential for the rank-15 reverse masks: an unmarked isometry class need not
 preserve the distinguished discriminant summand and graph multiplier.
 
+Sage's exact proper-spinor-kernel quotient has order one in each of the three
+genera above.  Hence the fixed-`3` traps survive after the ordinary spinor
+obstruction has already disappeared.  The experiments point to two different
+scales of state data:
+
+1. the spinor/level component controls eventual all-prime access;
+2. at a specified small prime, the prime-labelled incidence of the individual
+   physical witnesses with all isotropic lines controls the actual directed
+   SCC and distance.
+
+This supports the following conjectural completion of the blank, without
+proving it for marked rank-15 masks:
+
+```text
+zero-support reachability under some finite compatible good-prime set
+<=> a zero-support state exists in the same marked spinor/level component.
+```
+
+The forward implication is formal.  The reverse implication is supplied by
+large-prime equidistribution in the unmarked one-spinor-genus root-defect
+case; its marked-mask version still needs an exact level structure and a
+proof that zero support is preserved by the permitted marked isometries.
+
 ## Reproduce
 
 Generate the certificate or byte-check it with:
@@ -146,10 +197,12 @@ the recorded workstation.  It performs no random sampling.
 ## Boundary and next experiment
 
 What is proved is an exact finite computation for root defects in three
-ternary genera.  It proves fixed-prime traps and nontrivial directed distance.
-It does not prove an all-good-prime trap, a universal finite-prime bound, a
-scalar Lyapunov function, or the corresponding statement for the rank-15
-Q80 completion mask.
+ternary genera and all subsets of three declared good primes.  It proves
+fixed-prime traps, nontrivial directed distance, exact minimum sufficient
+prime sets, and one-proper-spinor-genus status for all three controls.  It
+does not prove an all-good-prime trap, a universal finite-prime bound, a scalar
+Lyapunov function, or the corresponding statement for the rank-15 Q80
+completion mask.
 
 The next rank-15 experiment should therefore be more targeted than a large
 unfiltered genus walk:

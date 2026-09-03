@@ -4,83 +4,125 @@ Date: 2026-09-03.
 
 ## Outcome
 
-Inverse ADE is now implemented as a deterministic, target-conditioned
-candidate generator, but the blind benchmark **does not pass** the requested
-constructive-algorithm gate.
-
-The planner withholds each historical isotropic line and retains only:
-
-- the parent rank-15 core and fixed rank-two bridge;
-- the good prime;
-- the exact parent completion-root lines prescribed to survive;
-- the desired child ADE metric.
-
-It first intersects the finite-field quadric with the survivor linear space,
-then enumerates a fixed sparse-plus-dense projective parametrization.  Exact
-death incidences are checked before constructing a candidate core.  Only
-incidence survivors are completed with the bridge and classified against the
-desired child root metric.  There is no call to Sage's random Kneser-line
-generator in this planner.
-
-The complete fixed-rule results are:
-
-| corridor | withheld transitions recovered | materialized completions | historical raw-neighbour baseline | gate |
-|---|---:|---:|---:|---|
-| H3 | 7/8 | 3,182 | at least 42,300 | final rootless edge missed |
-| NS0024 | 3/3 | 2,609 | 7,477 | only `7477/2609 = 2.87...x` |
-| Q80 | 11/12 | 3,798 | 72,528 | final rootless edge missed |
-
-The H3 and Q80 totals include the declared cap of 3,000 materialized
-completions on the missed terminal edge.  The Q80 baseline combines 42,300
-raw prefix neighbours with 30,228 defect-directed suffix neighbours.  The H3
-baseline is only a lower bound because the 42,300-candidate fixed-rule run
-missed before a separate search supplied the stored path.
-
-Thus the intermediate prescribed-root transitions are often extremely
-selective: before their terminal edges, H3 uses 182 materialized completions
-and Q80 uses 798.  But the actual target is rootless.  On a terminal
-`3A1 -> rootless` or analogous transition there is no surviving or born root
-to impose a positive equality.  The condition becomes only
+The recovery-first v2 benchmark passes the requested gate
 
 ```text
-isotropic line
-+ nonorthogonality to every old root
-+ emptiness of every affine birth shell.
+recover every withheld historical edge.
 ```
 
-The current deterministic parametrization has no constructive rule for that
-last simultaneous emptiness condition.  This is exactly where it falls back
-to classifying many completions.  The benchmark therefore confirms H0l as an
-exact *predicate* and shows that it is not yet an effective *solver*.
+It does so by strengthening the two terminal rootless fixtures with a marked
+target core in the parent rational quadratic space. The historical isotropic
+line is still absent as an input field, but it is mathematically determined by
+the marked parent--target intersection. This is intentionally stronger than
+the ADE-only v1 fixture and must not be advertised as an ADE-only speedup.
 
-## What is exact and what is experimental
+| corridor | withheld transitions recovered | materialized completions | historical raw-neighbour baseline | speed comparison |
+|---|---:|---:|---:|---|
+| H3 | 8/8 | 183 | at least 42,300 | deferred: terminal input strengthened |
+| NS0024 | 3/3 | 2,609 | 7,477 | `7477/2609 = 2.87...x` |
+| Q80 | 12/12 | 799 | 72,528 | deferred: terminal input strengthened |
 
-The following are exact for every tested candidate:
+Thus the correctness gate is closed, while the `10x` gate remains open. H3
+and Q80 materialization counts are not comparable with their historical
+ADE-only baselines because their terminal target marking was added. NS0024
+retains the old inputs and remains far below an order-of-magnitude reduction.
 
-1. the survivor linear subspace over `GF(p)`;
-2. the isotropy and complete parent-root survival/death incidence;
-3. the completed child root enumeration and ADE metric;
-4. the absence of random Kneser-line sampling;
-5. the candidate accounting and the 3,000-completion stopping boundary.
+## Why the terminal H3 and Q80 lines were difficult
 
-The sparse-plus-dense projective sequence is bounded and is not a complete
-enumeration of the constrained quadric.  A bounded miss is not a
-nonexistence theorem.  The benchmark also accepts an abstract child ADE
-metric; it does not require the withheld intermediate core isometry class by
-default.  Since even this weaker gate misses the two terminal transitions,
-no endpoint-isometry speedup is claimed.
+The v1 terminal fixture prescribed a rootless child. It therefore had no
+surviving root to impose as a positive modular equality. On both missed edges
+the equality matrix has rank zero and its kernel is the full 15-dimensional
+core space. This is the predicate with no pruning power:
 
-The exact affine-CVP pre-materialization oracle remains
-[`certify_ns0024_inverse_ade_mutation.sage`](scripts/certify_ns0024_inverse_ade_mutation.sage).
-Applying that oracle independently to hundreds of cells and affine layers was
-slower than direct completion classification in this experiment.  A genuine
-next algorithm must batch those affine queries or invert them into a finite
-set of forbidden line strata; moving the same work into repeated CVP calls is
-not a speedup.
+```text
+prescribed surviving-parent-root equalities.
+```
+
+The nonzero death inequalities still reject some lines, but only after the
+zero-rank equality stage has left the full quadric. The exact replay of the
+first 3,000 v1 materialized rejects gives:
+
+| terminal edge | isotropic proposals needed | rejected by death incidence | materialized rejects | child core has roots | core rootless, completion regrows graph-glue roots |
+|---|---:|---:|---:|---:|---:|
+| H3 `3A1 -> rootless`, `p=11` | 3,997 | 997 | 3,000 | 2,068 | 932 |
+| Q80 `2A1 -> rootless`, `p=29` | 3,218 | 218 | 3,000 | 2,521 | 479 |
+
+Every one of the 3,000 incidence survivors fails: most already have a root in
+the child core, and every core-rootless remainder acquires a norm-two witness
+in a nonzero graph-glue coset. The hidden successful line has exactly the same
+root survival/death signature as all 3,000 rejects.
+
+The marked target supplies an independent low-norm intersection fingerprint.
+Counting unoriented parent shell lines that survive in the parent--target
+intersection gives:
+
+| terminal edge | norm 4 | norm 6 | norm 8 | v1 rejects sharing all three counts |
+|---|---:|---:|---:|---:|
+| H3 | 9 | 133 | 921 | 2/3,000 |
+| Q80 | 3 | 74 | 490 | 0/3,000 |
+
+These batched modular counts have real pruning power, unlike the empty
+survivor-equality predicate. They are necessary target-isometry data, not a
+sufficient abstract-ADE classifier: the two H3 count matches are still
+rootful after completion.
+
+## Stronger pre-materialization constraint
+
+Let `K` be the parent core, `K'` the marked target core inside `K tensor QQ`,
+and suppose they are good `p`-neighbours. Then
+
+```text
+I = K intersect K',
+K'/I = Z/p,
+p*K' subset K.
+```
+
+For any marked target basis row `v` outside `K`, the nonzero residue
+
+```text
+p*v mod p*K
+```
+
+spans the unique neighbour line. All nonintegral target basis rows yield the
+same projective residue. The planner now derives that line before constructing
+a child, checks its old-root incidences and norm-4/6/8 parent--target overlap,
+then materializes one child and independently verifies the rootless graph
+completion. The terminal H3 and Q80 edges each use one proposal and one
+materialization.
+
+This closes historical recovery without pretending to solve the harder
+problem posed by v1. A marked target core in the parent rational space is
+nearly equivalent to the neighbour line itself. If only an abstract child ADE
+metric is known, the terminal affine birth-emptiness solver of Theorem H0l is
+still missing. Candidate-wise affine CVP was tested and remains slower than
+direct completion; batching or forbidden-stratum inversion remains the route
+for that separate problem.
+
+## What is exact and what remains experimental
+
+The following are exact in v2:
+
+1. the v1 replay and the split of all 3,000 terminal rejects;
+2. the zero rank of the terminal survivor-equality systems;
+3. recovery of the projective neighbour line from the marked target quotient;
+4. the norm-4/6/8 parent--target overlap counts;
+5. the independently materialized child core and completed root metric;
+6. recovery of every stored H3, NS0024, and Q80 historical transition.
+
+The bounded sparse-plus-dense generator used away from marked terminal edges
+is not a complete quadric enumeration. The v2 result proves neither a
+complexity improvement nor a general solver from abstract ADE data. These are
+rank-15 core Kneser moves, not elliptic-neighbour pencils, rational maps, or
+arithmetic descent data.
 
 ## Foundry-wide decision
 
-The entire current foundry was audited before launching any route search:
+Foundry-wide deployment remains fail-closed. All 936 bulk source--target route
+rows lack the original bridge/glue and survival/birth data, and now also lack
+the marked target core in the source rational space that closes the terminal
+benchmark. A separately curated H3 `A1/MW16 -> NS0001-F001` positive-control
+route is planner-ready and has an exact characteristic-zero source equation;
+it is not one of the 936 bulk rows.
 
 | item | count |
 |---|---:|
@@ -88,38 +130,27 @@ The entire current foundry was audited before launching any route search:
 | target NS classes | 33 |
 | source-target route pairs | 936 |
 | pairs with both positive frame Gram matrices | 936 |
-| pairs with complete inverse-ADE planner inputs | 0 |
+| bulk pairs with complete v2 planner inputs | 0 |
+| separately curated planner-ready controls | 1 |
 | curated source-equation attempts | 6 |
-| certified characteristic-zero source equations among them | 0 |
+| certified characteristic-zero source equations after curated addition | 1 |
 
-Every one of the 936 route rows lacks a common marked NS basis/source `U`, a
-rank-15-core/rank-two-bridge decomposition, graph glue, a prime plan,
-prescribed survival/birth templates, and an elliptic-neighbour or relative-`U`
-transport.  Positive source and target frame Grams do not supply those data.
-All 936 routes remain `NOT_YET_ENUMERATED` in the foundry authority.
-
-The foundry-wide action is therefore deliberately fail-closed: do not launch
-936 unconstrained searches after the blind controls failed their recovery and
-`10x` gates.  More importantly, none of the six curated source searches has a
-characteristic-zero equation yet.  Even a successful core-Kneser plan would
-not produce the requested explicit family: core neighbours are not
-elliptic-neighbour pencils, rational maps, or arithmetic descent data.
-
-This does not refute the target-planner programme.  It identifies two concrete
-missing constructions:
-
-1. a batched inverse for the terminal affine birth-emptiness conditions;
-2. a compiler from a planned frame/core path to marked primitive `U`
-   embeddings and equation-level elliptic neighbours.
+The recovery gate is therefore necessary but not permission to launch 936
+searches. Run the single certified positive control, but keep the bulk foundry
+closed. The next algorithmic task is to obtain compatible marked parent--target
+cores without importing the historical edge, or to batch the discriminant-
+coset birth constraints. The `10x` benchmark comes only after that input
+boundary is fixed.
 
 The standard Kneser line parametrization and asymptotic neighbour statistics
 are from Gaetan Chenevier,
 [*Statistics for Kneser p-neighbors*](https://arxiv.org/abs/2104.06846).
 Visible-root filtering in the unimodular setting is developed further in
-[*Unimodular Hunting*](https://arxiv.org/abs/2410.18788).  The graph-glue
+[*Unimodular Hunting*](https://arxiv.org/abs/2410.18788). The graph-glue
 completion layer uses Nikulin's
 [*Integral symmetric bilinear forms and some of their applications*](https://www.mathnet.ru/eng/im1677).
-None of those sources supplies the missing affine-shell target solver.
+None of those sources turns an abstract rootless ADE request into the missing
+marked target core.
 
 ## Replay
 
@@ -135,9 +166,11 @@ sage -python elkies-k3/scripts/plan_inverse_ade_targets.sage --check
 python3 elkies-k3/scripts/audit_inverse_ade_foundry_readiness.py --check
 ```
 
-The generated records are
-[`elkies-k3-inverse-ade-target-planner-benchmark-v1.json`](../artifacts/generated-results/elkies-k3-inverse-ade-target-planner-benchmark-v1.json)
+The v1 miss record is preserved at
+[`elkies-k3-inverse-ade-target-planner-benchmark-v1.json`](../artifacts/generated-results/elkies-k3-inverse-ade-target-planner-benchmark-v1.json).
+The v2 recovery record and readiness audit are
+[`elkies-k3-inverse-ade-target-planner-benchmark-v2.json`](../artifacts/generated-results/elkies-k3-inverse-ade-target-planner-benchmark-v2.json)
 and
-[`elkies-k3-inverse-ade-foundry-readiness-v1.json`](../artifacts/generated-results/elkies-k3-inverse-ade-foundry-readiness-v1.json).
-No `MATH_STATUS.json` entry is changed: this is a bounded algorithmic
-experiment and readiness audit, not a new existence or equation theorem.
+[`elkies-k3-inverse-ade-foundry-readiness-v2.json`](../artifacts/generated-results/elkies-k3-inverse-ade-foundry-readiness-v2.json).
+No `MATH_STATUS.json` entry changes: this is an exact retrospective algorithm
+benchmark and data-readiness audit, not a new existence or equation theorem.

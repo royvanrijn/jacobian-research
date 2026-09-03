@@ -1185,37 +1185,37 @@
       "unresolved_prior_art_query": "No explicit antecedent was located in the sources checked; search MathSciNet/zbMATH, theses, software, and the announced Elkies construction sequel before any priority claim."
     },
     {
-      "canonical_literature_term": "fixed-prime directed defect traps",
+      "canonical_literature_term": "finite-prime directed defect reachability graphs",
       "canonical_statement": {
-        "hypotheses_and_statement": "The complete directed graph can differ sharply from the complete unrestricted\nKneser graph, even in mass-closed ternary genera.  Give a positive even lattice\nthe root defect\n\n```text\nV_F(K)=Phi(K),\n```\n\nand direct a good-`p` edge exactly when its line is nonorthogonal modulo `p`\nto every current root.  Theorem H0i says that all old roots then die, while\nTheorem H0i.1 accounts for every replacement root as a birth.\n\nExact enumeration gives the following finite controls:\n\n| rank/determinant | genus classes | zero states | good primes | directed defective distances | closed defective SCCs |\n| --- | ---: | ---: | --- | --- | --- |\n| `3/112` | 4 | 1 | `{3}` | `infinity,1,infinity` | one two-state cycle |\n| `3/112` | 4 | 1 | `{5}` | `1,1,1` | none |\n| `3/126` | 3 | 1 | `{5}` | `1,2` | none |\n| `3/316` | 9 | 6 | `{3}` | `1,infinity,infinity` | two singletons |\n| `3/316` | 9 | 6 | `{5}` | `1,1,1` | none |\n\nFor determinants `112` and `316`, the unrestricted 3-neighbour graphs are\nstrongly connected, but their directed 3-graphs contain the displayed traps.\nIn determinant `316`, one trap is a self-loop and the other has no directed\noutgoing line.  Prime `5` escapes every defective state, so these are\nfixed-prime or fixed-prime-set traps, not all-good-prime traps.\n\nIn determinant `126`, the unique distance-two path has signed defect counts\n\n```text\n2 -> 2 -> 0.\n```\n\nThus defect cardinality does not determine distance even in a three-class\ngenus.  The exact per-prime directed destination profile does distinguish the\ntwo equal-defect states: one has four lines landing immediately at zero and\nthe other has none.  Automorphism order happens to separate reachable and\nunreachable states in both 3-primary controls, but this is recorded only as\nan empirical separator, not as a monotone or universal invariant.\n\nEach class list is certified by equality between its reciprocal-automorphism\nsum and the exact Minkowski--Siegel mass, respectively `3/4`, `3/4`, and\n`39/16`.  Every projective isotropic line is enumerated and every child is\nidentified by exact integral isometry.  The certificate, full physical root\nsignatures, SCCs and paths are in\n[`DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md`](DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md).\n\nThis calculation rules out the implication\n\n```text\nunrestricted good-p connectivity -> defect-directed good-p connectivity\n```\n\nfor a fixed prime.  It does not produce a trap closed under all good primes.\nIn the opposite direction, Chenevier's large-prime equidistribution implies\nthat within one spinor genus a fixed zero-defect isometry class is a direct\n`p`-neighbour of every source for all sufficiently large good primes.  For a\nmarked reverse mask, the analogous conclusion requires the source and target\nto lie in the same compatible level/spinor component; an unmarked lattice\nisometry need not preserve the distinguished discriminant summand.",
+        "hypotheses_and_statement": "<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-GRAPH-REACHABILITY e02f950eba79b32a -->\n\nThe complete directed graph can differ sharply from the complete unrestricted\nKneser graph, even in mass-closed ternary genera.  Give a positive even lattice\nthe root defect\n\n```text\nV_F(K)=Phi(K),\n```\n\nand direct a good-`p` edge exactly when its line is nonorthogonal modulo `p`\nto every current root.  Theorem H0i says that all old roots then die, while\nTheorem H0i.1 accounts for every replacement root as a birth.\n\nExact enumeration gives the following finite controls:\n\n| rank/determinant | classes / zero | analyzed good primes | singleton directed distances | minimum sufficient prime sets |\n| --- | ---: | --- | --- | --- |\n| `3/112` | `4 / 1` | `{3,5,11}` | `p=3: infinity,1,infinity`; `p=5,11: 1,1,1` | `{5}`, `{11}` |\n| `3/126` | `3 / 1` | `{5,11,13}` | `p=5: 1,2`; `p=11,13: 1,1` | `{5}`, `{11}`, `{13}` |\n| `3/316` | `9 / 6` | `{3,5,7}` | `p=3: 1,infinity,infinity`; `p=5,7: 1,1,1` | `{5}`, `{7}` |\n\nFor determinants `112` and `316`, the unrestricted 3-neighbour graphs are\nstrongly connected, but their directed 3-graphs contain the displayed traps.\nIn determinant `316`, one trap is a self-loop and the other has no directed\noutgoing line.  Prime `5` escapes every defective state, so these are\nfixed-prime or fixed-prime-set traps, not all-good-prime traps.\n\nFor each genus, exact subset enumeration constructs all three singleton,\nthree two-prime, and one three-prime directed graphs.  Every two-prime and\nthree-prime union has universal zero reachability, maximum distance one, and\none directed SCC.  Every SCC is labelled with its condensation exits, and\nevery finite shortest path stores an actual prime and isotropic-line witness.\nThe displayed minimum sets solve the finite set-selection problem exactly;\ntheir cardinality is one in all three controls, so none yet forces a genuinely\nmixed-prime route.\n\nIn determinant `126`, the unique distance-two path has signed defect counts\n\n```text\n2 -> 2 -> 0.\n```\n\nThus defect cardinality does not determine distance even in a three-class\ngenus.  The exact per-prime directed destination profile does distinguish the\ntwo equal-defect states: one has four lines landing immediately at zero and\nthe other has none.  Automorphism order happens to separate reachable and\nunreachable states in both 3-primary controls, but this is recorded only as\nan empirical separator, not as a monotone or universal invariant.\n\nEach class list is certified by equality between its reciprocal-automorphism\nsum and the exact Minkowski--Siegel mass, respectively `3/4`, `3/4`, and\n`39/16`.  Every projective isotropic line is enumerated and every child is\nidentified by exact integral isometry.  Exact proper-spinor-kernel quotients\nalso show that every genus here is one proper spinor genus.  Thus the\nfixed-`3` traps are not explained by ordinary spinor separation.  The\ncertificate, full physical root signatures, SCCs, paths, and prime-set\noptimization are in\n[`DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md`](DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md).\n\nThis calculation rules out the implication\n\n```text\nunrestricted good-p connectivity -> defect-directed good-p connectivity\n```\n\nfor a fixed prime.  It does not produce a trap closed under all good primes.\nIn the opposite direction, Chenevier's large-prime equidistribution implies\nthat within one spinor genus a fixed zero-defect isometry class is a direct\n`p`-neighbour of every source for all sufficiently large good primes.  For a\nmarked reverse mask, the analogous conclusion requires the source and target\nto lie in the same compatible level/spinor component; an unmarked lattice\nisometry need not preserve the distinguished discriminant summand.\n\nThe finite evidence therefore supports, but does not prove for marked masks,\nthe candidate equivalence\n\n```text\nfinite compatible-prime zero-support reachability\n<=> a zero-support state exists in the same marked spinor/level component.\n```\n\nThe unmarked one-spinor-genus root-defect direction follows non-effectively\nfrom the large-prime theorem.  At specified small primes, the finer state is\nthe prime-labelled physical-witness incidence/transition profile, not the\nspinor genus or defect count alone.",
         "line": 2815,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
-        "statement_sha256": "858f9083cf42dd3e9a56e99614aadf56098787c30dfe0f0dfefbb437cd089146"
+        "statement_sha256": "274c0882835c93e5a0d731e34aaf9f822c9f2d0b5e402c7268e26a30497b6033"
       },
       "confidence": "high",
-      "current_wording": "fixed-prime defect traps and nontrivial distance",
+      "current_wording": "finite-prime defect reachability graphs",
       "kind": "Exact finite control",
       "novelty_axes": {
         "algorithmic": false,
-        "certification": false,
+        "certification": true,
         "computational": true,
         "mathematical": false
       },
       "novelty_class": "NEW_COMPUTATION",
-      "project_adaptation": "mass-closed ternary counterexamples",
+      "project_adaptation": "mass-closed ternary SCCs, paths, all prime subsets, and minimum sufficient sets",
       "repository_id": "H0i.2",
       "resolved_source_loci": [
         "KNEIGH"
       ],
-      "strongest_source": "`KNEIGH` supplies unrestricted neighbours",
+      "strongest_source": "`KNEIGH` supplies unrestricted neighbours and spinor asymptotics",
       "unresolved_prior_art_query": null
     },
     {
       "canonical_literature_term": "NS0024 completed-core rank profile",
       "canonical_statement": {
         "hypotheses_and_statement": "<!-- status-consumer: EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER 16b64051fb648d66 -->\n\nLet `S` be the determinant-950 Picard-rank-19 Neron--Severi lattice\n`NS0024`.  Complete the canonical rank-15 core and its three exact\ngood-prime Kneser neighbours with the order-191 binary bridge class 4.  In\nthe successive core bases the integral graph multipliers may be chosen as\n\n```text\n59, 50, 76, 83\n```\n\n(with sign-paired alternatives `132,141,115,108`).  The exact core and\ncompleted-frame profiles are\n\n| stage | incoming core prime | core root rank/count | completed roots | completed root rank | MW rank |\n| --- | ---: | ---: | --- | ---: | ---: |\n| 0 | -- | `13/280` | `D5+E8` | 13 | 4 |\n| 1 | 17 | `5/12` | `3A1+A2` | 5 | 12 |\n| 2 | 13 | `0/0` | `3A1+A2` | 5 | 12 |\n| 3 | 7 | `0/0` | rootless | 0 | 17 |\n\nEvery completed frame has determinant 950 and discriminant form\nanti-isometric to `q_S`.  Theorem H2 therefore realizes it as the positive\nframe of a primitive hyperbolic-plane embedding in `S`, at `O(S)/J2` level.\nAfter Weyl reduction, Theorem C gives the corresponding Jacobian fibration.\nTheorem A then gives\n\n```text\nrank MW = 19 - 2 - rank R = 17 - rank R,\n```\n\nso the Mordell--Weil ranks are exactly\n\n```text\n4 -> 12 -> 12 -> 17,\n```\n\nwith successive rank changes `+8,0,+5`.\n\nThis path separates the two mechanisms in the glue calculus.  At stage 2\nthe core is already rootless, but the completed frame still has twelve\nroots.  Since roots of the core embed as the zero glue coset, all twelve\nmust lie in nonzero graph-glue cosets.  The rank plateau is therefore exact:\nannihilating the remaining core roots did not increase MW rank because roots\nwere present in the completion glue.  The final step keeps the core rootless\nwhile removing those glue-coset roots, and hence creates the last five MW\ndirections.  The physical-witness survival criterion of Theorem H0i is the\nlocal transition law controlling such removals; Corollaries H0 and H0c turn\nthe surviving decorated cosets into the completed root system, and Theorem A\nturns its rank into MW rank.\n\nThe checker\n[`certify_ns0024_new_rootless_source_route.sage`](scripts/certify_ns0024_new_rootless_source_route.sage)\nreplays all four completions, verifies the core and completed root profiles,\nand checks every determinant and discriminant form.  Its exact record is\n[`elkies-k3-ns0024-new-rootless-source-route-v1.json`](../artifacts/generated-results/elkies-k3-ns0024-new-rootless-source-route-v1.json).\n\nThe primes `17,13,7` are core Kneser-neighbour primes, not elliptic-neighbour\ndegrees.  This corollary proves the ranks and existence of the four\nfibrations over a complex K3 with Neron--Severi lattice `S`; it does not give\na marked elliptic-neighbour corridor, equations, rational maps, a field of\ndefinition, or a universal monotone rank law.",
-        "line": 2879,
+        "line": 2904,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
         "statement_sha256": "36f06a46156ad18bba5f438364ca8aa2af3a6cfc5ba333f431484516008d4659"
@@ -1244,7 +1244,7 @@
       "canonical_literature_term": "marked metric reconstruction of completion roots",
       "canonical_statement": {
         "hypotheses_and_statement": "<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE d32b35b66a35627c -->\n\nLet `K,C` be positive-definite even integral lattices, let\n\n```text\nH subset A_K direct_sum A_C\n```\n\nbe isotropic, and let `W_H` be the corresponding overlattice of `K+C`.  Define\nthe finite set of physical completion witnesses\n\n```text\nOmega_2(K,C,H)\n = {(k,c) in (K dual)+(C dual) :\n      (k mod K,c mod C) in H and k^2+c^2=2}.\n```\n\nFor two witnesses `r=(k,c)` and `r'=(k',c')`, put\n\n```text\ng(r,r')=<k,k'>+<c,c'>.                              (H0k.1)\n```\n\nThen `Omega_2(K,C,H)=Phi(W_H)`, and its complete matrix `g` determines the\nsigned norm-two root system as an abstract metric set.  In particular it\ndetermines:\n\n1. the complete labelled root graph;\n2. the orthogonal ADE decomposition and root rank;\n3. the root lattice `R=<Phi(W_H)>`, its component and total discriminants,\n   and its discriminant form;\n4. the finite list of *possible* even root-overlattice, hence torsion-glue,\n   subgroups, namely the isotropic subgroups of `A_R` which pass the relevant\n   no-new-root test.\n\nIf the signature is **marked**, meaning that it also retains the coordinates\nof every physical witness in one integral basis of `W_H`, then it additionally\ndetermines\n\n```text\nRbar=(R tensor QQ) intersect W_H,\nH_root=Rbar/R,\n```\n\nincluding the invariant factors and exact index.  For a Jacobian elliptic\nfibration with `NS=U direct_sum W_H(-1)`, this quotient is exactly\n`MW_tors`.  Thus a marked metric physical-witness signature determines the\nprimitive closure and actual torsion contribution, while the unmarked metric\nsignature determines only the possible torsion glue.  Rootlessness is the\ncase `Omega_2=empty`.",
-        "line": 2944,
+        "line": 2969,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
         "statement_sha256": "010135ba8271b0c67b5a9555044c8d76c417b32a66df4fee6ba7ca14c9611128"
@@ -1271,7 +1271,7 @@
       "canonical_literature_term": "target root-system constraints for a `p`-neighbour",
       "canonical_statement": {
         "hypotheses_and_statement": "<!-- status-consumer: EC-K3-NS0024-INVERSE-ADE-MUTATION 5c56f07d14129837 -->\n\nRetain the positive even lattices `K,C`, isotropic graph glue\n\n```text\nH subset A_K direct_sum A_C,\n```\n\nand completion `W_H` of Theorem H0k.  Let `p` be odd with\n`p` not dividing `det(K)`, let `ell` be a nonzero isotropic line in `K/pK`,\nand choose a lift `y` with `y^2=0 mod 2*p^2`.  Put\n\n```text\nM={z in K : <z,y>=0 mod p},\nN=K_ell=M+Z*y/p,\n```\n\nand transport `H` to `H_ell` through the canonical discriminant isometry\n`iota:A_N -> A_K` of (H0i.5).\n\nFor `a in A_K`, choose `r_a in K dual` representing `a` and\n`k_a in K` such that\n\n```text\n<r_a+k_a,y>=0 mod p.\n```\n\nFor `0<=mu<=2` and `0<=j<p`, define the finite affine shell\n\n```text\nE_y(a,mu,j)\n = {k in M+r_a+k_a+j*y/p : k^2=mu}.              (H0l.1)\n```\n\nThen the complete physical root set of the child completion is\n\n```text\nOmega_y\n = disjoint union over (a,b) in H\n     disjoint union over c in C dual, [c]=b, c^2<=2\n       disjoint union over 0<=j<p\n         {(k,c) : k in E_y(a,2-c^2,j)}.           (H0l.2)\n```\n\nIts metric is\n\n```text\ng_y((k,c),(k',c'))=<k,k'>+<c,c'>.                (H0l.3)\n```\n\nConsequently a line `ell` produces a prescribed abstract ADE type `R'` if\nand only if the finite metric set `(Omega_y,g_y)` is isometric to the signed\nroot system `Phi(R')`.  A prescribed **marked** target signature replaces\nthis metric-isometry test by equality with the requested physical witnesses.\nEquivalently, the target root-system constraint compiles into exactly four\nkinds of finite conditions on `y`:\n\n1. the quadratic congruence making `ell` an isotropic line;\n2. modular linear equalities or inequalities\n   `<k,y>=0` or `!=0 mod p` for requested surviving or dying parent physical\n   roots `(k,c)`;\n3. nonemptiness and the requested pairwise products for specified affine-CVP\n   shells in (H0l.1), accounting for born roots;\n4. emptiness of every remaining shell in (H0l.2), excluding additional\n   norm-two witnesses.\n\nIf only the abstract type `R'` is prescribed, it does not say which parent\nroots survive.  The inverse condition is then the finite disjunction over\nthe possible marked survival/birth templates having metric `R'`.  Once a\nmarked template is selected, the four conditions above are a conjunction\nand are necessary and sufficient.",
-        "line": 3068,
+        "line": 3093,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
         "statement_sha256": "7a8337a9d8e610528d6c2e38e38eef4849f546c88991ca68110ac0cecf1d5aa5"
@@ -1296,7 +1296,7 @@
       "canonical_literature_term": "good-prime neighbour as isotropic-line swap",
       "canonical_statement": {
         "hypotheses_and_statement": "Let `W_0,W_1` be distinct even `p`-neighbours in one rational quadratic\nspace, where `p` is odd and does not divide `det(W_i)`, and put\n`K=W_0 intersect W_1`.  Then\n\n```text\nW_i/K = H_i is cyclic of order p,\n(A_K)_p is isomorphic to (Z/p)^2,\nH_0 and H_1 are distinct isotropic lines.\n```\n\nThe `p`-primary discriminant form of `K` is split, and the neighbour move is\nexactly the line swap `H_0 -> H_1`; all prime-to-`p` glue is unchanged.  If\n\n```text\nrho_K(h)=number of norm-two vectors in K dual with residue h,\n```\n\nthen surviving roots lie in `h=0`, removed roots lie on\n`H_0 minus {0}`, and introduced roots lie on `H_1 minus {0}`.  Thus a\ngood-prime root-annihilating neighbour is decided by the finite decorated form\n\n```text\n((A_K)_p, q_K, H_0, H_1, rho_K restricted to H_0 union H_1).\n```\n\nMore generally, for any two isotropic glue subgroups in `A_K`,\n\n```text\n#Phi(L_H) = sum over h in H of rho_K(h),\n\n#Phi(L_H1)-#Phi(L_H0)\n  = sum over h in H1 minus H0 of rho_K(h)\n    - sum over h in H0 minus H1 of rho_K(h).\n```",
-        "line": 3266,
+        "line": 3291,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
         "statement_sha256": "8d341808dcd26e46e819903cb8cbecf189b5bdefb680e4e5e5da96216b2829ca"
@@ -1323,7 +1323,7 @@
       "canonical_literature_term": "Kneser--Nishiyama `J2` frame-genus realization",
       "canonical_statement": {
         "hypotheses_and_statement": "Let `S` be an even lattice of signature `(1,r-1)` with\n\n```text\nr >= length(A_S)+2.\n```\n\nThen the `O(S)`-orbits of embedded hyperbolic planes `U` are in bijection\nwith the integral isometry classes of positive-definite even lattices `P` of\nrank `r-2` satisfying\n\n```text\nq_P is isomorphic to -q_S.\n```\n\nThe map sends `U` to `P=U^perp(-1)`.  For the Neron--Severi lattice of a\ncomplex Picard-rank-19 K3, the length hypothesis is automatic because\n`A_NS` is anti-isometric to the discriminant group of the rank-three\ntranscendental lattice.  Therefore a rootless rank-17 lattice in the required\nfinite-form genus is equivalent, at the lattice/fibration level, to a\nrootless Jacobian fibration and hence to Mordell--Weil rank 17.",
-        "line": 3317,
+        "line": 3342,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
         "statement_sha256": "b6bfbde2d3663a951a4f5a49bd9a7ad376924c94bb8489446d23b6075955ab4d"
@@ -1351,7 +1351,7 @@
       "canonical_literature_term": "rank-three Hodge rigidity and finite `J1` bound",
       "canonical_statement": {
         "hypotheses_and_statement": "<!-- status-consumer: EC-K3-H3-ROOTLESS-J1-UNIFORM-BOUND b71330a75ad2c9ad -->\n\nLet `X` be a complex projective K3 surface of Picard rank 19.  Then\n\n```text\nIsom(T_X)^Hodge = {+identity,-identity}.\n```\n\nConsequently the Braun--Kimura--Watari uniform multiplicity bound for every\nfixed frame class `[P]` in `J2(X)` is\n\n```text\n# inverse_image_J1([P])\n    <= | image(Isom(T_X)^Hodge) backslash Isom(q_T) |.\n```\n\nFor the pinned determinant-948 H3/R17 surface, the cyclic discriminant form\nhas\n\n```text\nIsom(q_T) = {1,157,317,473,475,631,791,947} modulo 948,\nimage(Isom(T_X)^Hodge) = {1,947}.\n```\n\nThus each rootless `J2` frame has `J1` multiplicity at most four.  The\nmass-complete rootless `J2` classification has exactly two frame classes, so\nthe number `n_rootless_J1` of rootless Jacobian fibrations modulo surface\nautomorphisms satisfies the unconditional finite interval\n\n```text\n2 <= n_rootless_J1 <= 8.\n```",
-        "line": 3364,
+        "line": 3389,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
         "statement_sha256": "b522fe7253bfad25d86699fe12d177e87b06909f9a28b15de297726fe12e9e10"
@@ -1378,7 +1378,7 @@
       "canonical_literature_term": "conditional large-prime one-click existence",
       "canonical_statement": {
         "hypotheses_and_statement": "Let `G` be a genus of positive-definite integral lattices of rank greater\nthan two, assume `G` is one spinor genus, and suppose it contains a rootless\nclass `P_star`.  For every `P` in `G` and every sufficiently large prime\n`p` not dividing `det(P)`, there is a `p`-neighbour of `P` integrally\nisometric to `P_star`.\n\nConsequently, after the finite hypotheses \u201cone spinor genus\u201d and \u201ca certified\nrootless class\u201d have been checked, the discriminant-form calculus has an\nhonest root-annihilating one-neighbour existence theorem.  In the common\nintersection `K=P intersect P_star`, Corollary H1 identifies the neighbour with a\nsplit finite quadratic-plane line swap: all old roots outside `K` occur on\nthe removed line, while the new line has no norm-two vector.",
-        "line": 3439,
+        "line": 3464,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
         "statement_sha256": "27a088db1e7be9361c4d9731ab60ccc770bebfa3de041e23d2b929ef81ce19c5"
@@ -1405,7 +1405,7 @@
       "canonical_literature_term": "mass-closing neighbour enumeration",
       "canonical_statement": {
         "hypotheses_and_statement": "Let `G` be a genus of positive-definite even lattices of rank at least three,\nlet `W_0` lie in `G`, and fix a finite set of good odd primes.  Run an exact\nKneser-neighbour breadth-first search from `W_0`, deduplicating vertices by\nintegral isometry and computing `|O(W)|` exactly.  If the visited vertices\nsatisfy\n\n```text\nsum over visited [W] of 1/|O(W)| = mass(G),\n```\n\nthen the list is the complete genus.  In particular, `G` contains a rootless\nlattice if and only if the list contains one, and every such lattice is\nreached from `W_0` by a finite sequence of the discriminant-line swaps in\nCorollary H1.  Decorating every edge by\n\n```text\n(A_K,q_K,H_old,H_new,rho_K on H_old union H_new)\n```\n\nmakes the change in its complete root set an exact finite calculation.\nCombined with Theorem H2, this is a terminating constructive calculus for\nrootless MW-rank-17 frames at `O(NS)`/J2 level whenever the mass closes.",
-        "line": 3470,
+        "line": 3495,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
         "statement_sha256": "377e8292e9345da3516a9e2d0c3d11a00c90b6a60b66a59380098d505d69e18e"
@@ -1433,7 +1433,7 @@
       "canonical_literature_term": "determinant-78 frame genus is globally rootful",
       "canonical_statement": {
         "hypotheses_and_statement": "Let `P` be the positive rank-17 frame genus of the saturated determinant-78\nE6 `2+2` Neron--Severi lattice.  Every lattice in this genus contains a root.\nConsequently this Picard-rank-19 lattice has no rootless MW-rank-17 fibration\nat `O(NS)`/J2 level.",
-        "line": 3513,
+        "line": 3538,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
         "statement_sha256": "2bfa451cbddfde8df052b909ec214f73c5782020de3e7332be30644e600a1383"
@@ -1462,7 +1462,7 @@
       "canonical_literature_term": "involution eigensublattices joined by 2-primary graph glue",
       "canonical_statement": {
         "hypotheses_and_statement": "Let `L` be an even integral lattice with an isometric involution `sigma`, and\nlet\n\n```text\nL+ = L intersect ker(sigma-1),\nL- = L intersect ker(sigma+1).\n```\n\nThen `L+` and `L-` are primitive and orthogonal, and\n\n```text\nH=L/(L+ direct_sum L-)\n```\n\nis killed by two.  Under the even-overlattice correspondence, `H` embeds in\nboth `A_L+ [2]` and `A_L- [2]` and is the graph of an anti-isometry between\n2-elementary subgroups of the two eigendiscriminant forms.  Conversely, any\nsuch isotropic graph defines an even involution-stable overlattice of\n`L+ direct_sum L-`.",
-        "line": 3580,
+        "line": 3605,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
         "statement_sha256": "ba335739f10703abffa7258f15bff995f5d619d4b6c75dd5fe920dd89ddd68b5"
@@ -1489,7 +1489,7 @@
       "canonical_literature_term": "one character-glue type on eleven rank-28 lifts",
       "canonical_statement": {
         "hypotheses_and_statement": "On each of the eleven exact genus-one double covers fitted through the public\nrank-28 specialization, let `R_i` be the lifted section, let `sigma_i` be the\ndeck involution, and put\n\n```text\ntau=R_i+sigma_i(R_i),       T_i=R_i-sigma_i(R_i).\n```\n\nAll eleven covers have the same trace `tau=-P2-P5`.  In the pulled-back\nMordell--Weil height lattice,\n\n```text\ntau^2=T_i^2=16,       tau.T_i=0,       2R_i=tau+T_i.\n```\n\nHence every direction is obtained from the pure rank-two character lattice\n\n```text\n<16>_+ direct_sum <16>_-\n```\n\nby adjoining the diagonal half-sum.  The glue subgroup has order two and is\nrepresented by `(8,8)` in `Z/16+Z/16` in the Smith coordinates induced by\n`(tau,T_i)`; the saturated carrier is isometric to `<8>+<8>`.  The eleven\nquartic branch polynomials define eleven distinct squareclasses, so this is\none repeated integral pattern on eleven distinct characters, not one cover\nwith an eleven-dimensional anti-invariant space.  The pattern is relative to\nthe chosen trace pencil and is not an intrinsic invariant of an isolated\nfibre point.",
-        "line": 3647,
+        "line": 3672,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
         "statement_sha256": "bb0d9b24a635e9e40677d1a9ad3eff1a2518dbbc9fe2b6e4cdb4f93776e6ea7f"
@@ -1516,7 +1516,7 @@
       "canonical_literature_term": "exact visible glue on cover `0x103b2`",
       "canonical_statement": {
         "hypotheses_and_statement": "For the genus-one double cover attached to the R17 trace class `0x103b2`, let\n`R` be the displayed lift, `sigma` the deck involution, and\n\n```text\ntau=R+sigma(R),       T=R-sigma(R).\n```\n\nThen the invariant and anti-invariant lattices in their displayed rational\nspan are\n\n```text\nL+=R17(2),       L-=<16>,       tau^2=24,       2R=tau+T.\n```\n\nThe full integral saturation in this span is obtained by adjoining the one\norder-two graph class `(tau/2,T/2)`.  It has rank 18, determinant\n`497025024`, minimum eight, and no roots.  Its pure character lattice has\ndeterminant `1988100096`; its complete Smith group and finite quadratic form\nare stored in the certificate.  At `t=1/25` the cover splits and the resulting\npoint is independent of the specialized generic MW17 subgroup, proving rank\nat least 18 on that fibre.",
-        "line": 3705,
+        "line": 3730,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
         "statement_sha256": "16f2ea51e47f4f2cf64bdaede38d6db349030dfd67b2265d3e89a2a4740adac9"
@@ -1543,7 +1543,7 @@
       "canonical_literature_term": "completeness in a declared lattice box",
       "canonical_statement": {
         "hypotheses_and_statement": "Suppose\n\n```text\nNS(X) = U + M(-1)\n```\n\nwith `M` positive definite. Write a candidate isotropic vector as\n\n```text\nx = a*e + b*f + v,  with v in M(-1).\n```\n\nFor fixed positive integers `a,b`, isotropy is the finite norm equation\n\n```text\nnorm_M(v) = 2ab.\n```\n\nTherefore exact enumeration of all vectors of that norm, followed by\nprimitivity, chamber, section and marking tests, is complete for those `a,b`.\nA finite box `a<=A`, `b<=B` is likewise decidable and complete.",
-        "line": 3753,
+        "line": 3778,
         "path": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
         "scope_rule": "No broader scope is imported from the cited source.",
         "statement_sha256": "16cbe7b7e9a8fa8da9e7d72a4387faee6e2c9dc918101a0f784c21e7ff2cb8d7"
@@ -1569,9 +1569,9 @@
     "bibliography": "elkies-k3/references/integral-rank-transfer.bib",
     "bibliography_sha256": "af6d1c415bba0c3e196773d92736d55e1877e5cfd0ddd292209d5355abfd99c6",
     "literature_map": "elkies-k3/LITERATURE_AND_NOVELTY_MAP_2026-09-03.md",
-    "literature_map_sha256": "b6401e9bcff9ddfa9f4b92fceaf788650d9a952c9367e1d899c780c37b74b4f2",
+    "literature_map_sha256": "7b1e566da0d876616a6d82c908917109b4838792e17d22d58c2f0bb0ff29b451",
     "theorem_note": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
-    "theorem_note_sha256": "cdbaf815261dd7556655c990e3415141e97fa90226c5ae9c0e5b20873373ac81"
+    "theorem_note_sha256": "726ebb4e44f9d6bf47af29849be294c3cf46188d8a8878a32e14dc0db8b80306"
   },
   "publication_risk": "The ledger records search outcomes, not proof of priority. Recheck arXiv:2608.25406 and its announced sequel and obtain specialist review before publication.",
   "repository_snapshot_audited": "fb056eaa153f70da49e5268b6cefaca039b9b819",

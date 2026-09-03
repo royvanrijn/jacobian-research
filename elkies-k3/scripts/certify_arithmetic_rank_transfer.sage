@@ -1,11 +1,12 @@
 #!/usr/bin/env sage-python
-"""Certify the equivariant arithmetic rank-transfer controls.
+"""Certify equivariant rank transfer and the alternate-Q80 arithmetic rank.
 
 status: ACTIVE_PROOF
-claim: exact finite Galois-module rank transfer, H3/E6 controls, and a
+claim: exact finite Galois-module rank transfer, arithmetic rank 17 for the
+       norm12-orbit-11952 alternate-Q80 pencil, H3/E6 controls, and a
        fail-closed NS0024 arithmetic-promotion gate
-inputs: the pinned R17 Gram, exact rational H3 sections, and existing H3, E6,
-        and NS0024 certificates
+inputs: the pinned R17 Gram, exact rational H3 sections and bisections, and
+        existing H3, Q80, E6, and NS0024 certificates
 outputs: elkies-k3-arithmetic-rank-transfer-controls-v1.json
 
 The reusable verifier works with a common geometric Neron--Severi lattice,
@@ -23,7 +24,16 @@ import json
 from pathlib import Path
 
 from jsonschema import Draft202012Validator
-from sage.all import QQ, ZZ, block_diagonal_matrix, identity_matrix, matrix, vector
+from sage.all import (
+    PolynomialRing,
+    QQ,
+    ZZ,
+    block_diagonal_matrix,
+    identity_matrix,
+    matrix,
+    pari,
+    vector,
+)
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -32,6 +42,9 @@ MARKING_SCHEMA = ROOT / "elkies-k3/data/arithmetic/arithmetic-marking-v1.schema.
 R17_GRAM = ROOT / "elkies-k3/data/lattice/rank17_gram.txt"
 H3_ENDPOINT = GEN / "elkies-k3-h3-q12o5867-endpoint-certificate.json"
 H3_PUBLISHED_TARGET = GEN / "elkies-2026-published-r17-target.json"
+H3_PUBLISHED_COORDINATE_MATCH = (
+    GEN / "elkies-k3-h3-q12o5867-elkies-2026-coordinate-match.json"
+)
 H3_PUBLISHED_SECTIONS = (
     ROOT / "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json"
 )
@@ -40,6 +53,13 @@ E6_ORBIT103 = (
     GEN / "elkies-k3-e6a1-rho19-orbit103-arithmetic-orbit96-audit-v1.json"
 )
 NS0024_ROUTE = GEN / "elkies-k3-ns0024-new-rootless-source-route-v1.json"
+R17_BISECTION_SPLITTING = (
+    GEN / "elkies-k3-r17-genus-one-bisection-splitting-search-v1.json"
+)
+R17_NORM12_CLASSIFICATION = (
+    GEN / "elkies-k3-r17-norm12-isotropic-frame-classification-v1.json"
+)
+ALTERNATE_Q80_FRAME = GEN / "q80-alternate-fifth-q6-rootless-transport.json"
 DEFAULT_OUTPUT = GEN / "elkies-k3-arithmetic-rank-transfer-controls-v1.json"
 
 
@@ -397,6 +417,276 @@ def h3_marking(endpoint, published_target, published_sections):
     }
 
 
+def alternate_q80_arithmetic_application(
+    endpoint,
+    published_target,
+    published_sections,
+    coordinate_match,
+    splitting,
+    classification,
+    alternate_payload,
+):
+    """Promote the degree-two alternate-Q80 copy in the rational R17 marking."""
+    # This call checks the exact rank-19 source evidence before its rational
+    # divisor basis is changed from split U+R17(-1) coordinates to
+    # (F,O,Q_1,...,Q_17), where the Q_i are rational pinned-R17 sections.
+    source_marking = h3_marking(endpoint, published_target, published_sections)
+    split_gram = matrix(ZZ, source_marking["gram"])
+    r17 = -split_gram[2:, 2:]
+
+    if coordinate_match.get("status") != "PASS_EXACT_Q12O5867_IS_ELKIES_2026_PUBLISHED_MODEL":
+        raise ArithmeticError("published R17 coordinate identification is not exact")
+
+    if splitting.get("status") != "PASS_EXACT_SIMULTANEOUS_SPLIT_HITS_QUOTIENTED":
+        raise ArithmeticError("R17 bisection source certificate is not exact")
+    if classification.get("status") != "PASS_EXACT_MINIMAL_J2_ACCESSIBILITY":
+        raise ArithmeticError("norm-twelve frame classification is not exact")
+    if alternate_payload.get("schema") != "q80-alternate-fifth-q6-rootless-transport-v1":
+        raise ArithmeticError("alternate-Q80 frame certificate is not exact")
+
+    label = "norm12-orbit-11952"
+    source_records = [
+        row for row in splitting["construction"]["records"] if row["label"] == label
+    ]
+    classified_records = [
+        row for row in classification["classification"]["records"]
+        if row["label"] == label
+    ]
+    if len(source_records) != 1 or len(classified_records) != 1:
+        raise ArithmeticError(f"{label} is not uniquely recorded")
+    source_record = source_records[0]
+    classified = classified_records[0]
+    required_curve_gates = (
+        "branch_polynomial_irreducible_over_Q",
+        "branch_polynomial_squarefree",
+        "branch_polynomial_coprime_to_surface_discriminant",
+        "branch_polynomial_coprime_to_trace_denominator",
+    )
+    if not all(source_record[key] for key in required_curve_gates):
+        raise ArithmeticError(f"{label} lost an exact QQ genus-one curve gate")
+    if source_record["member_selection"] != "unique regular M0 member":
+        raise ArithmeticError(f"{label} lost its regular member selection")
+    if classified["frame_class"] != "alternate-Q80" or not classified["shared_zero"]:
+        raise ArithmeticError(f"{label} is no longer the shared-zero alternate frame")
+
+    w = vector(ZZ, source_record["pinned_rank17_w"])
+    if list(w) != classified["trace_vector"] or w * r17 * w != 12:
+        raise ArithmeticError(f"{label} has inconsistent pinned R17 coordinates")
+    old_fibre = vector(ZZ, [1, 0] + [0] * 17)
+    old_zero = vector(ZZ, [-1, 1] + [0] * 17)
+    fibre = vector(ZZ, [3, 2] + list(w))
+    target_mate = fibre + old_zero
+    target_u = matrix(ZZ, [fibre, target_mate]).transpose()
+    hyperbolic = matrix(ZZ, [[0, 1], [1, 0]])
+    if target_u.transpose() * split_gram * target_u != hyperbolic:
+        raise ArithmeticError(f"{label} does not span the claimed U")
+    if fibre * split_gram * old_fibre != 2 or fibre * split_gram * old_zero != 1:
+        raise ArithmeticError(f"{label} lost its degree-two shared-zero marking")
+
+    complement = matrix(
+        ZZ, [list(fibre * split_gram), list(target_mate * split_gram)]
+    ).right_kernel_matrix()
+    splitting_transport = matrix(
+        ZZ,
+        [list(fibre), list(target_mate)] + [list(row) for row in complement.rows()],
+    )
+    if abs(splitting_transport.det()) != 1:
+        raise ArithmeticError(f"{label} target U is not primitive and integrally split")
+    target_frame = -(complement * split_gram * complement.transpose())
+    if target_frame.det() != 948 or not target_frame.is_positive_definite():
+        raise ArithmeticError(f"{label} target frame has the wrong genus")
+    if int(pari(target_frame).qfminim(2)[0]) != 0:
+        raise ArithmeticError(f"{label} target frame is not rootless")
+    alternate_frame = matrix(ZZ, alternate_payload["rootless_frame"])
+    if pari(target_frame).qfisom(pari(alternate_frame)) == 0:
+        raise ArithmeticError(f"{label} target frame is not alternate Q80")
+
+    # Build a literal rational-divisor basis.  In split coordinates a section
+    # Q_i with frame coordinate e_i is (a_i,1,e_i), where
+    # a_i=(<Q_i,Q_i>-2)/2.  The determinant-one published-to-pinned
+    # identification makes every Q_i an integral combination of the seventeen
+    # published QQ(t)-sections.
+    rational_columns = [old_fibre, old_zero]
+    section_offsets = []
+    for index in range(17):
+        offset = ZZ((r17[index, index] - 2) / 2)
+        section_offsets.append(int(offset))
+        mw_vector = [0] * 17
+        mw_vector[index] = 1
+        rational_columns.append(vector(ZZ, [offset, 1] + mw_vector))
+    split_from_rational = matrix(
+        ZZ, 19, 19, lambda row, column: rational_columns[column][row]
+    )
+    if split_from_rational.det() != 1:
+        raise ArithmeticError("the rational R17 divisor classes are not an integral NS basis")
+    rational_gram = split_from_rational.transpose() * split_gram * split_from_rational
+    rational_from_split = split_from_rational.inverse()
+    rational_fibre = vector(ZZ, rational_from_split * fibre)
+    rational_target_mate = vector(ZZ, rational_from_split * target_mate)
+    expected_rational_fibre = vector(
+        ZZ,
+        [40, -1, -1, -1, 3, 0, 0, 1, -1, -1, 3, 1, 1, 0, 2, -1, 1, -2, -2],
+    )
+    if rational_fibre != expected_rational_fibre:
+        raise ArithmeticError(f"{label} rational-divisor coordinates changed")
+
+    source_u = [
+        [1] + [0] * 18,
+        [1, 1] + [0] * 17,
+    ]
+    sections = []
+    for index in range(17):
+        section_class = [0] * 19
+        section_class[index + 2] = 1
+        sections.append(
+            {
+                "label": f"rational_pinned_R17_section_Q{index + 1}",
+                "ns_class": section_class,
+                "expected_orbit_size": 1,
+                "field_of_definition": "QQ(t)",
+            }
+        )
+    marking = {
+        "id": "published_R17_to_alternate_Q80_norm12_orbit_11952",
+        "ground_field": "QQ",
+        "gram": matrix_rows(rational_gram),
+        "galois_generators": [
+            {"name": "identity", "matrix": matrix_rows(identity_matrix(ZZ, 19))}
+        ],
+        "fibrations": [
+            {
+                "id": "published_R17",
+                "u_basis_columns": source_u,
+                "root_basis_columns": [],
+                "component_labels": [],
+                "sections": sections,
+                "expected": {"geometric_mw_rank": 17, "arithmetic_mw_rank": 17},
+            },
+            {
+                "id": "alternate_Q80_norm12_orbit_11952",
+                "u_basis_columns": [
+                    list(map(int, rational_fibre)),
+                    list(map(int, rational_target_mate)),
+                ],
+                "root_basis_columns": [],
+                "component_labels": [],
+                "sections": [
+                    {
+                        "label": "shared_old_zero_O",
+                        "ns_class": [0, 1] + [0] * 17,
+                        "expected_orbit_size": 1,
+                        "field_of_definition": "QQ(u)",
+                    }
+                ],
+                "expected": {"geometric_mw_rank": 17, "arithmetic_mw_rank": 17},
+            },
+        ],
+        "edges": [
+            {"source": "published_R17", "target": "alternate_Q80_norm12_orbit_11952"}
+        ],
+    }
+    gate_result = validate_marking(marking)
+    by_id = {row["id"]: row for row in gate_result["fibrations"]}
+    target_result = by_id["alternate_Q80_norm12_orbit_11952"]
+    if (
+        gate_result["fixed_ns_rank"] != 19
+        or target_result["root_rank"] != 0
+        or target_result["arithmetic_mw_rank"] != 17
+    ):
+        raise ArithmeticError("alternate-Q80 arithmetic promotion gate failed")
+
+    branch_coefficients = source_record[
+        "branch_polynomial_q_coefficients_low_to_high"
+    ]
+    if len(branch_coefficients) != 5:
+        raise ArithmeticError(f"{label} branch polynomial is no longer quartic")
+    polynomial_ring = PolynomialRing(QQ, "t")
+    branch_polynomial = polynomial_ring(
+        [QQ(coefficient) for coefficient in branch_coefficients]
+    )
+    if (
+        branch_polynomial.degree() != 4
+        or not branch_polynomial.is_irreducible()
+        or not branch_polynomial.is_squarefree()
+    ):
+        raise ArithmeticError(f"{label} branch polynomial failed exact replay")
+    for block, names in (
+        (source_record["lifted_section"], ("x0", "x1", "y0", "y1")),
+        (source_record["trace_section"], ("M0", "Nx", "Ny", "h")),
+    ):
+        for name in names:
+            coefficients = block[f"{name}_coefficients_low_to_high"]
+            if not coefficients:
+                raise ArithmeticError(f"{label} lost the rational map block {name}")
+            for coefficient in coefficients:
+                QQ(coefficient)
+    return {
+        "status": "PASS_EXACT_ALTERNATE_Q80_ARITHMETIC_RANK_17_BEFORE_EQUATION_COMPILATION",
+        "witness": label,
+        "source_rational_ns_basis": {
+            "basis": ["F", "O"] + [f"Q{index + 1}" for index in range(17)],
+            "rank": 19,
+            "gram_determinant": int(rational_gram.det()),
+            "split_from_rational_determinant": int(split_from_rational.det()),
+            "pinned_section_offsets_in_split_basis": section_offsets,
+            "published_to_pinned_section_basis": published_target[
+                "pinned_identification"
+            ],
+            "field_of_definition": "QQ",
+        },
+        "target_marking": {
+            "split_basis": ["F", "O+F"] + [f"w{index + 1}" for index in range(17)],
+            "fibre_in_split_basis": list(map(int, fibre)),
+            "rational_divisor_basis": ["F", "O"]
+            + [f"Q{index + 1}" for index in range(17)],
+            "fibre_D_in_rational_divisor_basis": list(map(int, rational_fibre)),
+            "mate_O_plus_D_in_rational_divisor_basis": list(
+                map(int, rational_target_mate)
+            ),
+            "shared_zero_in_rational_divisor_basis": [0, 1] + [0] * 17,
+            "old_fibre_degree": 2,
+            "old_zero_degree": 1,
+            "primitive_U_splitting_determinant": int(splitting_transport.det()),
+            "frame_determinant": int(target_frame.det()),
+            "frame_root_count": 0,
+            "frame_class": "alternate-Q80",
+        },
+        "descent_evidence": {
+            "source": (
+                "The published fibration, zero, and seventeen rational sections form a determinant-one "
+                "integral basis of the geometric rank-19 Neron-Severi lattice."
+            ),
+            "fibre": (
+                "The exact norm12-orbit-11952 record supplies a unique regular irreducible smooth "
+                "genus-one curve over QQ in class D; hence D is an effective QQ-divisor and is nef."
+            ),
+            "zero": (
+                "The published zero O is a QQ-curve and D.O=1, so it is the QQ-rational zero section "
+                "of the pencil |D|."
+            ),
+            "pencil": (
+                "The primitive nef isotropic QQ-divisor D has h0=2 on the K3, so |D| is a QQ-defined "
+                "Jacobian elliptic pencil even though its base coordinate and Weierstrass equation are not compiled."
+            ),
+        },
+        "arithmetic_marking": marking,
+        "gate_result": gate_result,
+        "conclusion": {
+            "geometric_picard_rank": 19,
+            "fixed_ns_rank": 19,
+            "geometric_root_rank": 0,
+            "arithmetic_mordell_weil_rank": 17,
+            "field": "QQ(u), equivalently QQ(t) after naming the new pencil coordinate t",
+        },
+        "proof_boundary": (
+            "This proves exact arithmetic generic rank 17 for the alternate-Q80 fibration without "
+            "recovering its endpoint sections or compiling its Weierstrass equation. It does not give "
+            "the new base parameter, equation, individual sections, or integral Mordell-Weil Gram in "
+            "an equation-side section basis."
+        ),
+    }
+
+
 def e6_incidence_marking(incidence):
     if incidence.get("status") != "PASS_EXACT_E6_RANK4_INCIDENCE_DESCENT":
         raise ArithmeticError("E6 incidence certificate is not exact")
@@ -568,27 +858,44 @@ def build_payload():
         R17_GRAM,
         H3_ENDPOINT,
         H3_PUBLISHED_TARGET,
+        H3_PUBLISHED_COORDINATE_MATCH,
         H3_PUBLISHED_SECTIONS,
         E6_INCIDENCE,
         E6_ORBIT103,
         NS0024_ROUTE,
+        R17_BISECTION_SPLITTING,
+        R17_NORM12_CLASSIFICATION,
+        ALTERNATE_Q80_FRAME,
     ]
     for path in paths:
         if not path.exists():
             raise FileNotFoundError(path)
     endpoint = json.loads(H3_ENDPOINT.read_text())
     published_target = json.loads(H3_PUBLISHED_TARGET.read_text())
+    coordinate_match = json.loads(H3_PUBLISHED_COORDINATE_MATCH.read_text())
     published_sections = json.loads(H3_PUBLISHED_SECTIONS.read_text())
     incidence = json.loads(E6_INCIDENCE.read_text())
     orbit103 = json.loads(E6_ORBIT103.read_text())
     ns0024 = json.loads(NS0024_ROUTE.read_text())
+    splitting = json.loads(R17_BISECTION_SPLITTING.read_text())
+    classification = json.loads(R17_NORM12_CLASSIFICATION.read_text())
+    alternate_payload = json.loads(ALTERNATE_Q80_FRAME.read_text())
     h3_input = h3_marking(endpoint, published_target, published_sections)
     e6_input = e6_incidence_marking(incidence)
     controls = [validate_marking(h3_input), validate_marking(e6_input)]
     transfer_regression = validate_marking(abstract_transfer_marking())
+    alternate_q80 = alternate_q80_arithmetic_application(
+        endpoint,
+        published_target,
+        published_sections,
+        coordinate_match,
+        splitting,
+        classification,
+        alternate_payload,
+    )
     return {
         "schema": "elkies-k3.arithmetic-rank-transfer-controls.v1",
-        "status": "PASS_EQUIVARIANT_RANK_TRANSFER_CONTROLS_AND_FAIL_CLOSED_NS0024_GATE",
+        "status": "PASS_ALTERNATE_Q80_ARITHMETIC_RANK17_AND_EQUIVARIANT_CONTROLS",
         "inputs": {relative(path): digest(path) for path in paths},
         "arithmetic_marking_schema": {
             "required": [
@@ -623,6 +930,7 @@ def build_payload():
             "result": transfer_regression,
         },
         "module_control": orbit103_module_control(orbit103),
+        "alternate_q80_application": alternate_q80,
         "ns0024_application": ns0024_gate(ns0024),
         "theorem_checks": {
             "galois_actions_integral_and_gram_preserving": True,
@@ -634,7 +942,9 @@ def build_payload():
         "proof_boundary": {
             "proved": (
                 "The exact finite-module verifier reproduces arithmetic rank 17 for the rational H3 endpoint, "
-                "rank 2 from geometric rank 4 for the unordered E6 incidence, and the 2+chi_-3 orbit-103 split."
+                "promotes the norm12-orbit-11952 alternate-Q80 fibration to arithmetic rank 17 over QQ, "
+                "reproduces rank 2 from geometric rank 4 for the unordered E6 incidence, and checks the "
+                "2+chi_-3 orbit-103 split."
             ),
             "application": (
                 "The new NS0024 completed-core route remains geometric-only and is rejected by the arithmetic promotion gate."
@@ -674,7 +984,7 @@ else:
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(rendered)
 print(
-    "ARITHMETICRANKTRANSFER|H3=17|E6_INCIDENCE=2/4|"
+    "ARITHMETICRANKTRANSFER|H3=17|ALTERNATE_Q80=17|E6_INCIDENCE=2/4|"
     "E6_ORBIT103=2/3|NS0024=GEOMETRIC_ONLY|status=PASS",
     flush=True,
 )

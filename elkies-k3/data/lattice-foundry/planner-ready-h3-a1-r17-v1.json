@@ -1,0 +1,153 @@
+{
+  "schema": "elkies-k3.lattice-foundry.single-planner-ready-route.v1",
+  "status": "CURATED_EXACTLY_ONE_ROUTE",
+  "route_count": 1,
+  "routes": [
+    {
+      "route_id": "H3-A1-MW16-TO-NS0001-F001",
+      "selection": {
+        "source_ade_type": "A1",
+        "source_mw_rank_if_rho_19": 16,
+        "target_frame_id": "NS0001-F001",
+        "target_ade_type": "rootless",
+        "target_mw_rank_if_rho_19": 17,
+        "predicted_accessibility_cost": {
+          "core_kneser_moves": 1,
+          "elliptic_neighbor_degree": 2,
+          "physical_edge": "q6 orbit2247"
+        }
+      },
+      "common_marked_NS_basis_and_source_U": {
+        "equation_source": {
+          "path": "artifacts/local/elkies-k3/fixed-final-a1-reverse-rr-qq.json",
+          "sha256": "c75c5073e22c783b7bd59ec120da9f5806a25b8dfb2ef8b91c531c4a40eb540c",
+          "schema": "elkies-k3.fixed-reverse-smooth-rr-qq.v1",
+          "status": "PASS_EXACT_QQ_FIXED_FINAL_A1_REVERSE_RR_JACOBIAN",
+          "weierstrass_model": "y^2=x^3+A(t)x+B(t), with exact QQ coefficient lists in the source artifact"
+        },
+        "pointing_source": {
+          "path": "artifacts/local/elkies-k3/fixed-final-a1-reverse-pointing-qq.json",
+          "sha256": "2d3ea70712236bca46f01cd879eb06f2c8c2fbe768467fbccedb2080c8fad698",
+          "status": "PASS_EXACT_QQ_FIXED_FINAL_A1_REVERSE_POINTING"
+        },
+        "marking_convention": "NS(X)=U_source orthogonal_sum W_source(-1)",
+        "source_U_basis_in_NS_coordinates": [
+          [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        ],
+        "source_frame_reconstruction": {
+          "artifact": "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json",
+          "corridor": "H3",
+          "edge_index": 13,
+          "side": "old_frame",
+          "expected_frame_determinant": 948,
+          "expected_root_rank": 1
+        }
+      },
+      "rank15_core_plus_rank2_bridge_decomposition": {
+        "source_frame_basis": "PARI qflllgram row basis of the reconstructed H3 edge-13 old frame",
+        "bridge_basis_rows_in_source_frame": [
+          [1, -1, 1, 1, -1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, -2],
+          [-1, 6, -3, -2, 1, 2, -2, -1, 1, -1, 2, 1, 1, 1, 1, 1, -2]
+        ],
+        "bridge_gram": [[6, 1], [1, 8]],
+        "bridge_determinant": 47,
+        "core_construction": "integral right kernel of bridge_basis_rows_in_source_frame times source_frame_gram, followed by PARI qflllgram",
+        "core_rank": 15,
+        "core_determinant": 44556,
+        "core_minimum": 4,
+        "core_gram": [
+          [4, 2, 2, -1, -1, 1, -1, 2, 1, 2, 2, 2, 1, 1, 2],
+          [2, 4, 0, -2, 1, -1, 1, 2, 2, 1, 1, 1, 1, 0, 2],
+          [2, 0, 4, -1, -2, 2, 0, 0, 1, 2, 2, 0, -1, 2, 1],
+          [-1, -2, -1, 4, 1, -1, 0, 0, -2, 0, -1, 0, 1, -1, 0],
+          [-1, 1, -2, 1, 4, -1, 2, 0, -1, 0, -2, -1, 0, -2, 0],
+          [1, -1, 2, -1, -1, 4, -1, 0, -1, 1, 0, 0, -1, 0, -1],
+          [-1, 1, 0, 0, 2, -1, 4, -1, 0, 1, 0, -2, -1, 0, 0],
+          [2, 2, 0, 0, 0, 0, -1, 4, 0, 0, 0, 2, 1, 0, 1],
+          [1, 2, 1, -2, -1, -1, 0, 0, 4, 1, 2, 1, 0, 1, 2],
+          [2, 1, 2, 0, 0, 1, 1, 0, 1, 4, 1, 1, 0, 1, 2],
+          [2, 1, 2, -1, -2, 0, 0, 0, 2, 1, 4, 1, 1, 1, 1],
+          [2, 1, 0, 0, -1, 0, -2, 2, 1, 1, 1, 4, 1, 0, 1],
+          [1, 1, -1, 1, 0, -1, -1, 1, 0, 0, 1, 1, 4, -1, 1],
+          [1, 0, 2, -1, -2, 0, 0, 0, 1, 1, 1, 0, -1, 4, 0],
+          [2, 2, 1, 0, 0, -1, 0, 1, 2, 2, 1, 1, 1, 0, 12]
+        ]
+      },
+      "graph_glue_generator": {
+        "cyclic_order": 47,
+        "bridge_class_index": 3,
+        "core_discriminant_generator": [
+          "5/47", "14/47", "29/47", "12/47", "44/47",
+          "21/47", "19/47", "43/47", "26/47", "18/47",
+          "31/47", "44/47", "39/47", "12/47", "11/47"
+        ],
+        "bridge_discriminant_generator": ["8/47", "-1/47"],
+        "core_multiplier": 3,
+        "glue_generator": "(3*core_discriminant_generator, bridge_discriminant_generator)",
+        "expected_source_completion": {
+          "determinant": 948,
+          "ade_type": "A1",
+          "root_rank": 1,
+          "root_line_count": 1
+        }
+      },
+      "good_neighbor_prime_plan": {
+        "ordered_primes": [5],
+        "good_prime_checks": ["odd", "prime does not divide 44556", "source core is nonsingular modulo prime"],
+        "maximum_parameter_support": 3,
+        "dense_probes": 20000,
+        "maximum_materialized_neighbors": 3000,
+        "deterministic_seed_fields": ["prime", "survival equalities", "desired child signature"]
+      },
+      "prescribed_survival_birth_templates": {
+        "surviving_parent_root_line_indices": [],
+        "desired_child_signature": {
+          "ade_type": "rootless",
+          "root_rank": 0,
+          "root_line_count": 0,
+          "components": []
+        },
+        "target_core_overlap_fingerprint": {
+          "source": "marked parent-target core intersection",
+          "parent_shell_line_survivors": {"4": 52, "6": 529, "8": 3067}
+        },
+        "withheld_from_planner": [
+          "selected_isotropic_line",
+          "adjusted_isotropic_lift",
+          "child_core_gram",
+          "target_frame_gram",
+          "target_frame_id",
+          "target_U_basis",
+          "elliptic_neighbor_path"
+        ]
+      },
+      "elliptic_neighbor_transport_or_relative_U_lift": {
+        "verification_only": true,
+        "relative_U_artifact": {
+          "path": "artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json",
+          "sha256": "6d01191d00efd94520d370390f2e28767419b1b0f7f9505a90839519fca4a97f",
+          "corridor": "H3",
+          "edge_index": 13,
+          "direction": "old_to_new",
+          "saturation_index": 1
+        },
+        "physical_edge": {
+          "q": 6,
+          "orbit": 2247,
+          "old_fibre_degree": 2,
+          "source_root_rank": 1,
+          "target_root_rank": 0
+        },
+        "target_identification": {
+          "foundry_artifact": "artifacts/generated-results/elkies-k3-lattice-foundry-v1.json",
+          "foundry_sha256": "9bdf0a887730a34837c713694bef4e453964884a57d51a2134003809239ef415",
+          "frame_id": "NS0001-F001",
+          "endpoint_certificate": "artifacts/generated-results/elkies-k3-h3-q4o164-q8o376-q12o5867-rootless-certificate.json",
+          "endpoint_certificate_sha256": "451201e2f2eecea252ae317b7cee161bc61857784963a65c9a67a59b19383e48"
+        }
+      }
+    }
+  ],
+  "boundary": "This is one curated positive-control route. It neither fills nor duplicates the 936 bulk foundry route rows."
+}

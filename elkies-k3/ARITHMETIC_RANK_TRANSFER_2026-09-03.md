@@ -1,5 +1,7 @@
 # Galois-equivariant Shioda--Tate balance and arithmetic marking gate (2026-09-03)
 
+<!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
+
 ## Outcome
 
 The classical Shioda--Tate balance now has a Galois-equivariant quotient
@@ -112,6 +114,7 @@ The generated certificate is
 | control | geometric rank | fixed rank | arithmetic conclusion |
 | --- | ---: | ---: | --- |
 | H3 rootless R17 over `QQ` | 17 | 17 | arithmetic rank 17 |
+| degree-two alternate Q80, `norm12-orbit-11952` over `QQ` | 17 | 17 | arithmetic rank 17; direct equation and saturated sections now compiled separately |
 | unordered E6 incidence over `QQ(k)` | 4 | 2 | two exchanged pairs leave two invariant sums |
 | E6A1 orbit 103 over `QQ(k)(r)` | 3 | 2 | `2*trivial + chi_-3` |
 
@@ -124,6 +127,37 @@ rank-19 Neron--Severi Gram: conjugation swaps `P,Q` and `R1,R2`, fixes the
 root space, and leaves fixed NS rank seventeen.  Formula (A2.2) then gives
 `17-2-13=2`.  Orbit 103 independently checks the one-dimensional
 anti-invariant field `QQ(sqrt(-3))`.
+
+## Arithmetic promotion of the alternate-Q80 pencil
+
+The gate now consumes the cheapest exact degree-two copy of the alternate-Q80
+frame on the published R17 surface.  In the rational divisor basis
+
+```text
+(F,O,Q1,...,Q17),
+```
+
+where the `Qi` are the determinant-one pinned combinations of the published
+sections, its fibre and mate are
+
+```text
+D   = (40,-1,-1,-1,3,0,0,1,-1,-1,3,1,1,0,2,-1,1,-2,-2),
+O+D = (40, 0,-1,-1,3,0,0,1,-1,-1,3,1,1,0,2,-1,1,-2,-2).
+```
+
+The exact bisection certificate supplies an irreducible smooth genus-one
+`QQ`-curve in class `D`; `D.O=1`, so the rational old zero is also the new
+zero.  The marked plane is primitive, its complement is the rootless
+alternate-Q80 frame, and the rational source basis makes the Galois action on
+the full rank-19 NS space trivial.  The gate therefore certifies
+
+```text
+rank E_alt(QQ(t)) = 17
+```
+
+without compiling the new pencil equation or recovering its seventeen
+sections.  The canonical application proof is
+[`R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md`](R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md).
 
 The verifier also contains an explicitly labelled representation-only `C2`
 regression.  Removing an anti-invariant `A1` raises geometric rank by one and

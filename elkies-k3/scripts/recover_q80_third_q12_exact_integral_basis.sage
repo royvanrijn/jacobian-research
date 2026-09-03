@@ -20,6 +20,8 @@ import argparse
 import hashlib
 import json
 import multiprocessing
+import os
+import pickle
 import re
 import shlex
 import sys
@@ -36,6 +38,7 @@ DEFAULT_PENCIL = RESULTS / "q80-third-q12-um2-biquadratic-resolved-pencil-qq.jso
 DEFAULT_FACTORIZATION = RESULTS / "elkies-k3-q80-third-q12-exact-generic-quartic-factorization-v1.json"
 DEFAULT_PADIC_LIFT = ROOT / "artifacts/local/elkies-k3/q80-third-q12-discriminant-factors-p19-adic-precision12288.json"
 DEFAULT_OUTPUT = RESULTS / "elkies-k3-q80-third-q12-exact-integral-basis-v1.json"
+DEFAULT_SAMPLE_CHECKPOINT = ROOT / "artifacts/local/elkies-k3/q80-third-q12-exact-integral-basis-samples-v1.pickle"
 COEFFICIENT = re.compile(r"^(-?\d+)/(\d+)\*theta\^2 ([+-]) (\d+)/(\d+)$")
 
 
@@ -57,6 +60,7 @@ parser.add_argument("--pencil", type=Path, default=DEFAULT_PENCIL)
 parser.add_argument("--factorization", type=Path, default=DEFAULT_FACTORIZATION)
 parser.add_argument("--padic-lift", type=Path, default=DEFAULT_PADIC_LIFT)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+parser.add_argument("--sample-checkpoint", type=Path, default=DEFAULT_SAMPLE_CHECKPOINT)
 parser.add_argument("--check", action="store_true")
 parser.add_argument("--workers", type=int, default=4)
 parser.add_argument(
@@ -70,7 +74,7 @@ parser.add_argument(
     help="skip the independent coefficient replay (exact gates still run)",
 )
 args = parser.parse_args()
-for name in ("operands", "pencil", "factorization", "padic_lift", "output"):
+for name in ("operands", "pencil", "factorization", "padic_lift", "output", "sample_checkpoint"):
     setattr(args, name, getattr(args, name).resolve())
 
 operands = load_json(args.operands)
@@ -379,8 +383,9 @@ def interpolate_function(samples, values, numerator_degree, denominator_degree):
         )
         right.append(value * sample**denominator_degree)
     solution = Matrix(K, rows).solve_right(vector(K, right))
+    solution = list(solution)
     numerator = V_ring(solution[: numerator_degree + 1])
-    denominator = V_ring(list(solution[numerator_degree + 1 :]) + [K.one()])
+    denominator = V_ring(solution[numerator_degree + 1 :] + [K.one()])
     return F(numerator) / F(denominator)
 
 
@@ -393,14 +398,37 @@ def interpolated_integral_basis():
         for name in ("A", "B")
     }
     maximum_samples = max(sum(profile) + 1 for profiles in degree_profiles.values() for profile in profiles)
+    checkpoint_identity = {
+        "schema": "q80-third-q12-exact-integral-basis-samples-v1",
+        "operands_sha256": sha256(args.operands),
+        "pencil_sha256": sha256(args.pencil),
+        "factorization_sha256": sha256(args.factorization),
+        "formula": "rho=(9ad-bc)/(2(b^2-3ac)); A=b/a+rho; B=-(b/a)rho-2rho^2",
+    }
     sample_results = {}
+    if args.sample_checkpoint.exists():
+        saved = pickle.loads(args.sample_checkpoint.read_bytes())
+        if saved.get("identity") == checkpoint_identity:
+            sample_results = saved.get("results", {})
+            print(
+                f"Q80Q12EXACTIB|stage=resume_samples|count={len(sample_results)}",
+                flush=True,
+            )
+
+    def save_samples():
+        payload = {"identity": checkpoint_identity, "results": sample_results}
+        temporary = args.sample_checkpoint.with_suffix(args.sample_checkpoint.suffix + ".tmp")
+        args.sample_checkpoint.parent.mkdir(parents=True, exist_ok=True)
+        temporary.write_bytes(pickle.dumps(payload, protocol=pickle.HIGHEST_PROTOCOL))
+        os.replace(temporary, args.sample_checkpoint)
+
     candidates = [0, 1, -1, 2, -2, 3, -3, 4, -4, 5, -5, 6, -6]
     print(
         f"Q80Q12EXACTIB|stage=specialize_for_interpolation|needed={maximum_samples}|"
         f"workers={args.workers}",
         flush=True,
     )
-    pending = candidates[:maximum_samples]
+    pending = [candidate for candidate in candidates[:maximum_samples] if candidate not in sample_results]
     reserve = candidates[maximum_samples:]
     context = multiprocessing.get_context("fork")
     while pending and len(sample_results) < maximum_samples:
@@ -408,6 +436,7 @@ def interpolated_integral_basis():
             for candidate, result, error in pool.imap_unordered(specialized_worker, pending):
                 if result is not None:
                     sample_results[candidate] = result
+                    save_samples()
                     print(
                         f"Q80Q12EXACTIB|stage=specialized|V={candidate}|"
                         f"count={len(sample_results)}",

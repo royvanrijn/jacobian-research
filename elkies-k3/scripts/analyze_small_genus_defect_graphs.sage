@@ -16,7 +16,7 @@ from __future__ import annotations
 import argparse
 from collections import Counter, deque
 import hashlib
-from itertools import product
+from itertools import combinations, product
 import json
 from pathlib import Path
 
@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parents[2]
 SCRIPT = Path(__file__).resolve()
 OUTPUT = (
     ROOT
-    / "artifacts/generated-results/elkies-k3-small-genus-defect-graphs-v1.json"
+    / "artifacts/generated-results/elkies-k3-small-genus-defect-graphs-v2.json"
 )
 
 FIXTURES = (
@@ -36,7 +36,7 @@ FIXTURES = (
         "name": "ternary_det112",
         "seed": [[2, -1, 0], [-1, 4, 0], [0, 0, 16]],
         "discovery_prime": 3,
-        "analysis_primes": (3, 5),
+        "analysis_primes": (3, 5, 11),
         "expected_classes": 4,
         "expected_mass": QQ(3) / 4,
         "expected_zero_states": 1,
@@ -45,7 +45,7 @@ FIXTURES = (
         "name": "ternary_det126",
         "seed": [[2, 0, 0], [0, 4, -1], [0, -1, 16]],
         "discovery_prime": 5,
-        "analysis_primes": (5,),
+        "analysis_primes": (5, 11, 13),
         "expected_classes": 3,
         "expected_mass": QQ(3) / 4,
         "expected_zero_states": 1,
@@ -54,7 +54,7 @@ FIXTURES = (
         "name": "ternary_det316",
         "seed": [[2, -1, -1], [-1, 12, -4], [-1, -4, 16]],
         "discovery_prime": 3,
-        "analysis_primes": (3, 5),
+        "analysis_primes": (3, 5, 7),
         "expected_classes": 9,
         "expected_mass": QQ(39) / 16,
         "expected_zero_states": 6,
@@ -275,6 +275,40 @@ def shortest_zero_paths(adjacency, zero_states):
     return distance, paths
 
 
+def labelled_sccs(adjacency, zero_states, distance):
+    """Label every SCC and retain its position in the condensation graph."""
+
+    components = tarjan_scc(adjacency)
+    component_of = {
+        state: index
+        for index, component in enumerate(components)
+        for state in component
+    }
+    result = []
+    for index, component in enumerate(components):
+        outgoing = sorted(
+            {
+                component_of[destination]
+                for source in component
+                for destination in adjacency[source]
+                if component_of[destination] != index
+            }
+        )
+        result.append(
+            {
+                "scc": f"SCC{index}",
+                "states": list(component),
+                "contains_zero_state": bool(set(component) & zero_states),
+                "can_reach_zero": all(state in distance for state in component),
+                "closed": not outgoing,
+                "outgoing_sccs": [f"SCC{target}" for target in outgoing],
+            }
+        )
+    return result, {
+        state: f"SCC{component_of[state]}" for state in sorted(component_of)
+    }
+
+
 def graph_summary(state_records, edge_records, primes):
     state_names = [row["state"] for row in state_records]
     zero_states = {row["state"] for row in state_records if row["zero_support"]}
@@ -291,6 +325,9 @@ def graph_summary(state_records, edge_records, primes):
         directed_adjacency[source].add(destination)
 
     distance, paths = shortest_zero_paths(directed_adjacency, zero_states)
+    directed_components, directed_component_of = labelled_sccs(
+        directed_adjacency, zero_states, distance
+    )
     defective_states = set(state_names) - zero_states
     defective_adjacency = {
         state: directed_adjacency[state] & defective_states
@@ -349,6 +386,38 @@ def graph_summary(state_records, edge_records, primes):
             str(defect): count for defect, count in sorted(histogram.items())
         }
 
+    detailed_paths = {}
+    for state, path in paths.items():
+        if path is None:
+            detailed_paths[state] = None
+            continue
+        steps = []
+        for source, destination in zip(path, path[1:]):
+            selected_rows = [
+                row
+                for row in directed
+                if row["source"] == source and row["destination"] == destination
+            ]
+            line_counts = Counter(row["prime"] for row in selected_rows)
+            witnesses = {}
+            for prime in sorted(line_counts):
+                witnesses[str(prime)] = next(
+                    row["isotropic_line"]
+                    for row in selected_rows
+                    if row["prime"] == prime
+                )
+            steps.append(
+                {
+                    "source": source,
+                    "destination": destination,
+                    "line_count_by_prime": {
+                        str(prime): line_counts[prime] for prime in sorted(line_counts)
+                    },
+                    "example_isotropic_line_by_prime": witnesses,
+                }
+            )
+        detailed_paths[state] = {"states": path, "steps": steps}
+
     return {
         "primes": list(primes),
         "full_graph": {
@@ -362,6 +431,8 @@ def graph_summary(state_records, edge_records, primes):
                 "nonorthogonal modulo p to every signed physical root of the parent."
             ),
             "weighted_adjacency": weighted_rows(directed_weights),
+            "sccs": directed_components,
+            "state_to_scc": directed_component_of,
             "defective_sccs": [list(component) for component in defective_components],
             "closed_defect_traps": [list(component) for component in closed_traps],
             "zero_states": sorted(zero_states),
@@ -373,10 +444,65 @@ def graph_summary(state_records, edge_records, primes):
             "shortest_paths_to_zero": {
                 state: paths[state] for state in state_names
             },
+            "shortest_path_certificates": detailed_paths,
             "one_step_zero_line_count": one_step_zero_lines,
             "directed_destination_defect_histogram": destination_defects,
             "observed_separator": separator,
         },
+    }
+
+
+def prime_set_optimization(graph_records):
+    """Solve the finite set-selection problem for universal zero reachability."""
+
+    summaries = []
+    sufficient = []
+    for graph in graph_records:
+        directed = graph["defect_directed_graph"]
+        unreachable = directed["unreachable_defective_states"]
+        distances = [
+            distance
+            for state, distance in directed["shortest_distance_to_zero"].items()
+            if state.startswith("D") and distance is not None
+        ]
+        row = {
+            "primes": graph["primes"],
+            "cardinality": len(graph["primes"]),
+            "universal_zero_reachability": not unreachable,
+            "unreachable_defective_states": unreachable,
+            "closed_defect_traps": directed["closed_defect_traps"],
+            "maximum_finite_distance": max(distances) if distances else None,
+        }
+        summaries.append(row)
+        if not unreachable:
+            sufficient.append(tuple(graph["primes"]))
+
+    minimum_cardinality = min(map(len, sufficient)) if sufficient else None
+    minimum_sets = (
+        [list(primes) for primes in sufficient if len(primes) == minimum_cardinality]
+        if sufficient
+        else []
+    )
+    inclusion_minimal = [
+        list(primes)
+        for primes in sufficient
+        if not any(set(smaller) < set(primes) for smaller in sufficient)
+    ]
+    fixed_prime_traps = {
+        str(row["primes"][0]): row["closed_defect_traps"]
+        for row in summaries
+        if row["cardinality"] == 1 and row["closed_defect_traps"]
+    }
+    return {
+        "objective": (
+            "smallest subset of the analyzed good primes for which every state "
+            "reaches at least one zero-support state"
+        ),
+        "prime_set_summaries": summaries,
+        "minimum_cardinality": minimum_cardinality,
+        "minimum_prime_sets": minimum_sets,
+        "inclusion_minimal_sufficient_prime_sets": inclusion_minimal,
+        "fixed_prime_traps": fixed_prime_traps,
     }
 
 
@@ -415,10 +541,15 @@ def analyze_fixture(fixture):
     observed_mass = sum(QQ(1) / order for order in automorphism_orders)
     target_genus = Genus(seed)
     target_mass = target_genus.mass()
+    spinor_ambient, spinor_kernel = target_genus._proper_spinor_kernel()
+    proper_spinor_genus_count = int(
+        spinor_ambient.quotient(spinor_kernel).order()
+    )
     assert len(representatives) == fixture["expected_classes"]
     assert target_mass == fixture["expected_mass"]
     assert observed_mass == target_mass
     assert zero_index == fixture["expected_zero_states"]
+    assert proper_spinor_genus_count == 1
 
     edge_records = []
     for prime in fixture["analysis_primes"]:
@@ -475,9 +606,11 @@ def analyze_fixture(fixture):
             destination_order = state_by_name[destination]["automorphism_group_order"]
             assert QQ(count) / source_order == QQ(reverse_count) / destination_order
 
-    prime_sets = [(prime,) for prime in fixture["analysis_primes"]]
-    if len(fixture["analysis_primes"]) > 1:
-        prime_sets.append(tuple(fixture["analysis_primes"]))
+    prime_sets = [
+        primes
+        for size in range(1, len(fixture["analysis_primes"]) + 1)
+        for primes in combinations(fixture["analysis_primes"], size)
+    ]
     graph_records = [
         graph_summary(state_records, edge_records, primes) for primes in prime_sets
     ]
@@ -493,11 +626,14 @@ def analyze_fixture(fixture):
             "target_mass": rational(target_mass),
             "enumerated_mass": rational(observed_mass),
             "mass_closed": True,
+            "proper_spinor_genus_count": proper_spinor_genus_count,
+            "one_proper_spinor_genus": proper_spinor_genus_count == 1,
             "local_symbols": [str(symbol) for symbol in target_genus.local_symbols()],
         },
         "states": state_records,
         "line_edges": edge_records,
         "graphs": graph_records,
+        "prime_set_optimization": prime_set_optimization(graph_records),
     }
 
 
@@ -531,6 +667,13 @@ def main():
         for state, distance in det112_p5["shortest_distance_to_zero"].items()
         if state.startswith("D")
     ) == 1
+    assert by_name["ternary_det112"]["prime_set_optimization"][
+        "minimum_prime_sets"
+    ] == [[5], [11]]
+    for primes in ((3, 5), (3, 11), (5, 11), (3, 5, 11)):
+        assert not graph_for(by_name["ternary_det112"], primes)[
+            "defect_directed_graph"
+        ]["unreachable_defective_states"]
 
     det126_p5 = graph_for(by_name["ternary_det126"], (5,))[
         "defect_directed_graph"
@@ -554,6 +697,13 @@ def main():
         det126_states[state]["physical_defect_signature"]["signed_root_count"]
         for state in distance_two_path
     ] == [2, 2, 0]
+    assert by_name["ternary_det126"]["prime_set_optimization"][
+        "minimum_prime_sets"
+    ] == [[5], [11], [13]]
+    for primes in ((5, 11), (5, 13), (11, 13), (5, 11, 13)):
+        assert not graph_for(by_name["ternary_det126"], primes)[
+            "defect_directed_graph"
+        ]["unreachable_defective_states"]
 
     det316_p3 = graph_for(by_name["ternary_det316"], (3,))[
         "defect_directed_graph"
@@ -567,10 +717,17 @@ def main():
         "defect_directed_graph"
     ]
     assert not det316_p5["unreachable_defective_states"]
+    assert by_name["ternary_det316"]["prime_set_optimization"][
+        "minimum_prime_sets"
+    ] == [[5], [7]]
+    for primes in ((3, 5), (3, 7), (5, 7), (3, 5, 7)):
+        assert not graph_for(by_name["ternary_det316"], primes)[
+            "defect_directed_graph"
+        ]["unreachable_defective_states"]
 
     payload = {
-        "schema": "elkies-k3.small-genus-defect-graphs.v1",
-        "status": "PASS_EXACT_MASS_COMPLETE_SMALL_GENUS_DEFECT_GRAPHS",
+        "schema": "elkies-k3.small-genus-defect-graphs.v2",
+        "status": "PASS_EXACT_MASS_COMPLETE_DEFECT_REACHABILITY_GRAPHS",
         "definition": {
             "state": "integral isometry class in one positive even ternary genus",
             "physical_defect": "the complete signed set of norm-two vectors",
@@ -593,9 +750,17 @@ def main():
                 "directed outgoing line."
             ),
             "finite_prime_escape": (
-                "Prime 5 alone sends every defective state to zero in at most one "
-                "step in determinants 112 and 316.  Thus the observed 3-traps are "
-                "prime-set traps, not all-good-prime traps."
+                "Each genus is analyzed at three good primes and at every nonempty "
+                "subset of those primes.  Every two-prime and three-prime union has "
+                "universal zero reachability.  In particular adjoining either 5 or "
+                "11 removes the determinant-112 3-trap, while adjoining either 5 or "
+                "7 removes the determinant-316 3-traps."
+            ),
+            "minimum_prime_sets": (
+                "The exact minimum-cardinality sufficient sets are {5} and {11} for "
+                "determinant 112; {5}, {11}, and {13} for determinant 126; and {5} "
+                "and {7} for determinant 316.  Thus one prime suffices in every "
+                "present control, although the smallest tested prime can be trapped."
             ),
             "nontrivial_distance": (
                 "The determinant-126 directed 5-graph has defective distances one "
@@ -608,13 +773,22 @@ def main():
                 "root complements, and the per-prime directed destination profile "
                 "distinguish equal-defect states, but no universal monotone is claimed."
             ),
+            "spinor_component_evidence": (
+                "Exact proper-spinor-kernel quotients show that all three genera have "
+                "one proper spinor genus.  Fixed-prime traps therefore persist even "
+                "after the ordinary spinor obstruction has vanished; the empirical "
+                "state needed at small primes is the prime-labelled physical-witness "
+                "incidence/transition profile."
+            ),
         },
         "proof_boundary": {
             "proved": (
                 "Every genus list closes the exact Minkowski--Siegel mass; every "
                 "projective isotropic line at the declared good primes is enumerated; "
-                "every child is classified by exact integral isometry; SCCs and "
-                "shortest paths are computed from the resulting complete graphs."
+                "every child is classified by exact integral isometry; every directed "
+                "SCC is labelled; shortest paths carry prime and line witnesses; all "
+                "one-, two-, and three-prime unions are compared; and the minimum "
+                "sufficient prime sets are solved by exhaustive subset enumeration."
             ),
             "not_proved": (
                 "These root-defect ternary controls do not establish an all-good-prime "

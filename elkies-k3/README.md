@@ -14,9 +14,12 @@ claim-level boundary between prior work, tailored corollaries, likely-new
 algorithms, and new computations is in
 [`LITERATURE_AND_NOVELTY_MAP_2026-09-03.md`](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md).
 Its Galois-equivariant Shioda--Tate corollary, machine-readable marking
-schema, H3/E6 controls, and fail-closed NS0024 application are summarized in
+schema, H3/E6 controls, the arithmetic promotion of the degree-two
+alternate-Q80 pencil, and fail-closed NS0024 application are summarized in
 [`ARITHMETIC_RANK_TRANSFER_2026-09-03.md`](ARITHMETIC_RANK_TRANSFER_2026-09-03.md).
 <!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 3031dd2365a29cd5 -->
+<!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
 Before extending the certified equation route or using its endpoint, read
 [`PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md`](PRIOR_WORK_SHORTCUT_AND_ENDPOINT_CERTIFICATION_2026-08-25.md).
 It records what the historical construction supplies, the minimum
@@ -39,6 +42,13 @@ failed/superseded scripts, see [`scripts/README.md`](scripts/README.md) and
 - Think of one K3 surface with several coordinate systems. A neighbour changes
   the elliptic fibration, moving rank between fibre roots and sections.
 - The generic budget is always `root rank + MW rank = 17`.
+- The cheapest degree-two alternate-Q80 copy on the published R17 surface,
+  `norm12-orbit-11952`, is now equation-explicit.  A direct
+  Brandhorst--Elkies two-neighbour kernel gives a binary quartic and a
+  `24I1` Weierstrass K3 over `QQ`; sixteen old sections plus the rational
+  bisection `orbit-0adf9` give a saturated rootless rank-17 basis of determinant
+  948.  This is now the primary alternate-Q80 equation route.  See
+  [`R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md`](R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md).
 - The physical equation route continues through q8/orbit376 and the preferred
   q12/orbit5867 edge to the pinned rootless `MW17` endpoint; q12/orbit4484 is
   a certified but unnecessary fallback.

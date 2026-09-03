@@ -1,5 +1,8 @@
 # Recovering the other rank-17 fibration
 
+<!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
+
 <!-- status-consumer: EC-K3-H3-OTHER-R17-J2-CANDIDATE f1884d1f6168a934 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES 1c39220ee5fedc77 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17-SMALL-ISOGENY-EXCLUSIONS fc2c4caaa79fb36c -->
@@ -169,7 +172,7 @@ eight.
 | candidate | structural value | old-fibre degree | RR/local cost | equation status | priority |
 | --- | --- | ---: | --- | --- | ---: |
 | published R17 | exact control and exclusion map | 2 on final construction edge | completed | exact over `QQ` | control |
-| direct norm12-orbit-11952 pencil on published R17 | exact degree-two copy of the unique non-published rootless `J2` class, sharing the old zero | 2 | `h0=2`; resolved basis and Jacobian open | exact irreducible smooth genus-one member over `QQ`; pencil equation open | 1 |
+| direct norm12-orbit-11952 pencil on published R17 | exact degree-two copy of the unique non-published rootless `J2` class, sharing the old zero | 2 | exact 8-by-10 RR kernel, binary quartic, `24I1` Jacobian, and saturated 17-section basis | complete over `QQ`; primary alternate-Q80 equation route | 1 |
 | historical alternate q80 q4--q6 frame | same non-published rootless `J2` class in a different marking | 2 only after reaching its A1 parent; 11,511 from published R17 | `h0=5`, three local transforms, final kernel 2 | generic characteristic-zero parent/child open; exact `GF(73)` specialization shadow | fallback |
 
 The new minimum-accessibility classifier changes the route choice without
@@ -180,6 +183,9 @@ section.  See
 [`J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md`](J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md).
 The apparent simplicity of the historical final q6 remains conditional on
 reaching its own generic parent equation, so that route is now a fallback.
+The direct rational marking already proves exact arithmetic generic rank 17
+without that equation; see
+[`R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md`](R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md).
 
 ## Classification programme
 

@@ -114,7 +114,7 @@ descent hypotheses.
 | `H0h` | prospective masked-core controls | `NEW_COMPUTATION` | no separate antecedent applies to this finite certificate; method from `H0g` | exact H3/NS0024 successes and Q80 near miss | comp |
 | `H0i` | witness-resolved directed neighbour search | `LIKELY_NEW_ALGORITHM` | `KNEIGH`, equations (1.2)--(1.3) | physical-witness transition state and exact Q80 path | alg, comp, cert |
 | `H0i.1` | coset-resolved `p`-neighbour transition formula | `LIKELY_NEW_ALGORITHM` | bare affine layers are likely implicit in `KNEIGH`/`THETA`; no transition-oracle antecedent located | predicts all forbidden births and deaths | alg, comp, cert |
-| `H0i.2` | fixed-prime directed defect traps | `NEW_COMPUTATION` | `KNEIGH` supplies unrestricted neighbours | mass-closed ternary counterexamples | comp |
+| `H0i.2` | finite-prime directed defect reachability graphs | `NEW_COMPUTATION` | `KNEIGH` supplies unrestricted neighbours and spinor asymptotics | mass-closed ternary SCCs, paths, all prime subsets, and minimum sufficient sets | comp, cert |
 | `H0j` | NS0024 completed-core rank profile | `NEW_COMPUTATION` | `SHIODA-MW`, `NIKULIN`, `KN` | exact `4,12,12,17` frame-level path | comp, cert |
 | `H0k` | marked metric reconstruction of completion roots | `TAILORED_COROLLARY` | standard ADE recovery plus `NIKULIN` | physical witness coordinates recover saturation/torsion | alg, cert |
 | `H0l` | target root-system constraints for a `p`-neighbour | `LIKELY_NEW_ALGORITHM` | Chenevier's visible-root principle; no antecedent for all affine/glue births located | exact inverse ADE predicate and NS0024 control | alg, comp, cert |

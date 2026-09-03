@@ -1,6 +1,7 @@
 # Geometric accessibility between `J2` frame classes — 2026-09-03
 
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J2-MINIMAL-ACCESSIBILITY 631f50389e0a3283 -->
+<!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
 
 ## Outcome
 
@@ -192,8 +193,12 @@ J2 existence
 For the alternate determinant-948 class, the `J2` minimum is not the
 obstruction: it is optimally two and has an optimally shared zero.  The old
 coefficient monster came from transporting a badly placed representative.
-The remaining cost is the resolved computation of `H0(X,O(D))` and the
-Weierstrass conversion for one of the ten low-degree representatives.
+The arithmetic generic rank is now closed independently: the rational R17 NS
+basis and shared-zero marking promote `norm12-orbit-11952` to exact rank 17
+over `QQ(t)` by equivariant Shioda--Tate.  See
+[`R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md`](R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md).
+The remaining equation cost is the resolved computation of `H0(X,O(D))` and
+the Weierstrass conversion for one of the ten low-degree representatives.
 
 For general foundry outputs, `delta_ell` is still only a lower envelope over
 copies.  If the foundry must start from a particular equation marking, record

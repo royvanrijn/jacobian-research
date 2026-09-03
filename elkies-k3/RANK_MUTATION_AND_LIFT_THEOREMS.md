@@ -2812,7 +2812,9 @@ it does not by itself prove that separate layer queries are faster than
 forming a child Gram matrix and querying its mask directly.  Runtime is an
 implementation question, not a consequence of (H0i.3).
 
-### Exact finite control H0i.2: fixed-prime defect traps and nontrivial distance
+### Exact finite control H0i.2: finite-prime defect reachability graphs
+
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-GRAPH-REACHABILITY e02f950eba79b32a -->
 
 The complete directed graph can differ sharply from the complete unrestricted
 Kneser graph, even in mass-closed ternary genera.  Give a positive even lattice
@@ -2828,19 +2830,26 @@ Theorem H0i.1 accounts for every replacement root as a birth.
 
 Exact enumeration gives the following finite controls:
 
-| rank/determinant | genus classes | zero states | good primes | directed defective distances | closed defective SCCs |
-| --- | ---: | ---: | --- | --- | --- |
-| `3/112` | 4 | 1 | `{3}` | `infinity,1,infinity` | one two-state cycle |
-| `3/112` | 4 | 1 | `{5}` | `1,1,1` | none |
-| `3/126` | 3 | 1 | `{5}` | `1,2` | none |
-| `3/316` | 9 | 6 | `{3}` | `1,infinity,infinity` | two singletons |
-| `3/316` | 9 | 6 | `{5}` | `1,1,1` | none |
+| rank/determinant | classes / zero | analyzed good primes | singleton directed distances | minimum sufficient prime sets |
+| --- | ---: | --- | --- | --- |
+| `3/112` | `4 / 1` | `{3,5,11}` | `p=3: infinity,1,infinity`; `p=5,11: 1,1,1` | `{5}`, `{11}` |
+| `3/126` | `3 / 1` | `{5,11,13}` | `p=5: 1,2`; `p=11,13: 1,1` | `{5}`, `{11}`, `{13}` |
+| `3/316` | `9 / 6` | `{3,5,7}` | `p=3: 1,infinity,infinity`; `p=5,7: 1,1,1` | `{5}`, `{7}` |
 
 For determinants `112` and `316`, the unrestricted 3-neighbour graphs are
 strongly connected, but their directed 3-graphs contain the displayed traps.
 In determinant `316`, one trap is a self-loop and the other has no directed
 outgoing line.  Prime `5` escapes every defective state, so these are
 fixed-prime or fixed-prime-set traps, not all-good-prime traps.
+
+For each genus, exact subset enumeration constructs all three singleton,
+three two-prime, and one three-prime directed graphs.  Every two-prime and
+three-prime union has universal zero reachability, maximum distance one, and
+one directed SCC.  Every SCC is labelled with its condensation exits, and
+every finite shortest path stores an actual prime and isotropic-line witness.
+The displayed minimum sets solve the finite set-selection problem exactly;
+their cardinality is one in all three controls, so none yet forces a genuinely
+mixed-prime route.
 
 In determinant `126`, the unique distance-two path has signed defect counts
 
@@ -2858,8 +2867,11 @@ an empirical separator, not as a monotone or universal invariant.
 Each class list is certified by equality between its reciprocal-automorphism
 sum and the exact Minkowski--Siegel mass, respectively `3/4`, `3/4`, and
 `39/16`.  Every projective isotropic line is enumerated and every child is
-identified by exact integral isometry.  The certificate, full physical root
-signatures, SCCs and paths are in
+identified by exact integral isometry.  Exact proper-spinor-kernel quotients
+also show that every genus here is one proper spinor genus.  Thus the
+fixed-`3` traps are not explained by ordinary spinor separation.  The
+certificate, full physical root signatures, SCCs, paths, and prime-set
+optimization are in
 [`DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md`](DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md).
 
 This calculation rules out the implication
@@ -2875,6 +2887,19 @@ that within one spinor genus a fixed zero-defect isometry class is a direct
 marked reverse mask, the analogous conclusion requires the source and target
 to lie in the same compatible level/spinor component; an unmarked lattice
 isometry need not preserve the distinguished discriminant summand.
+
+The finite evidence therefore supports, but does not prove for marked masks,
+the candidate equivalence
+
+```text
+finite compatible-prime zero-support reachability
+<=> a zero-support state exists in the same marked spinor/level component.
+```
+
+The unmarked one-spinor-genus root-defect direction follows non-effectively
+from the large-prime theorem.  At specified small primes, the finer state is
+the prime-labelled physical-witness incidence/transition profile, not the
+spinor genus or defect count alone.
 
 ### Corollary H0j: the NS0024 completed-core path realizes ranks `4,12,12,17`
 
@@ -3190,6 +3215,61 @@ neighbour, equation, rational map, or field-of-definition result.  In the
 control the target is entirely visible: all six roots survive from the
 parent and no nonzero affine layer contributes.  The stage-two plateau of
 Corollary H0j shows why the affine terms cannot be omitted in general.
+
+### Corollary H0l.1: a marked target core determines the neighbour line
+
+In the setting of Theorem H0l, suppose the target core `N` is supplied not
+merely up to abstract integral isometry but as a marked lattice inside
+`K tensor QQ`. Put `I=K intersect N`. For a good `p`-neighbour,
+
+```text
+[K:I]=[N:I]=p,       p*N subset K.
+```
+
+If `v in N` has nonzero image in `N/I`, then
+
+```text
+ell = <p*v mod p*K> subset K/p*K.                  (H0l.4)
+```
+
+In particular any integral basis of the marked target determines `ell`:
+multiply its rows by `p`, discard zero residues modulo `pK`, and require all
+remaining projective residues to agree. This reconstructs the neighbour line
+before constructing a candidate child.
+
+For every even shell norm `m`, the marked intersection also gives the exact
+necessary fingerprint
+
+```text
+#{+/-x in Phi_m(K) : x in I}
+ = #{+/-x in Phi_m(K) : <x,ell>=0 mod p}.          (H0l.5)
+```
+
+This is a batched modular-incidence check on `ell`.
+
+#### Proof
+
+The standard presentation in Theorem H0l is
+
+```text
+I=M={z in K:<z,y>=0 mod p},
+N=M+Z*(y/p).
+```
+
+Thus `N/I` is generated by `y/p`, while multiplication by `p` sends every
+nonzero class in `N/I` to a nonzero multiple of `y` modulo `pK`. This proves
+(H0l.4), the basis procedure, and independence of the chosen nonintegral
+target row. Finally `x in K` lies in `I` exactly when `<x,y>=0 mod p`, which
+gives (H0l.5). QED.
+
+This corollary is an exact target constraint, not a solution of the
+abstract-ADE inverse problem. A marked embedding of `N` in the parent rational
+space is nearly equivalent information to the neighbour line. In the
+recovery-first inverse-ADE benchmark it closes the H3 and Q80 terminal misses
+with one materialization each, while deliberately invalidating any speed
+comparison with the weaker ADE-only fixture. The exact legacy-window
+diagnostics and the norm-4/6/8 fingerprints are recorded in
+[`INVERSE_ADE_TARGET_PLANNER_2026-09-03.md`](INVERSE_ADE_TARGET_PLANNER_2026-09-03.md).
 
 ### Negative experiment H0: the orthogonal split is not a useful predictor
 
@@ -3890,10 +3970,11 @@ and the
   [*Rank jumps and Multisections of elliptic fibrations on K3 surfaces*](https://arxiv.org/abs/2505.15159),
   for the geometric relation between multisections and rank jumps.
 
-## 12. Next end-to-end creation experiment
+## 12. Completed end-to-end creation experiment
 
-The next publication-facing experiment is deliberately one complete pipeline,
-not another isolated lattice search:
+<!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
+
+The publication-facing end-to-end experiment is now complete:
 
 ```text
 inverse target
@@ -3904,13 +3985,17 @@ inverse target
   -> arithmetic field-of-definition gate.
 ```
 
-The inverse and accessibility layers are already exact: `D.F=2`, `D.O=1`,
-the old zero is shared, and the complement is the alternate Q80 frame.  The
-remaining work is to compute the full two-dimensional linear system on the
-published equation and then apply the established Brandhorst--Elkies
-fibration-hopping procedure.  Success requires the equation-level hypotheses
-of Theorem F and the arithmetic marking hypotheses of Theorem A2; a matching
-ADE label or Jacobian invariant alone is not completion.  This experiment
-tests the actual claimed synthesis—target selection and route optimization
-before classical equation construction—without treating the classical
-construction step as new.
+The direct compiler verifies `D.F=2`, `D.O=1`, the shared old zero, and the
+alternate-Q80 complement.  Proposition 2.17 of Brandhorst--Elkies specializes
+to ten coefficients constrained by eight exact congruence rows, giving
+`h0=2`.  The chord discriminant strips to a binary quartic; its pointed
+Jacobian has degrees `(8,12,24)`, irreducible squarefree discriminant and
+`24I1` fibres.  Sixteen old sections and the rational bisection
+`orbit-0adf9` transport to a determinant-one, saturated rank-17 basis of the
+rootless determinant-948 frame.  The exact construction and replay are in
+[`R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md`](R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md).
+
+This closes the equation-level hypotheses of Theorem F and realizes the
+arithmetic marking supplied by Theorem A2.  It demonstrates the claimed
+synthesis—target selection and route optimization before classical equation
+construction—without treating the classical construction step as new.

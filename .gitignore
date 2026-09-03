@@ -110,10 +110,13 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-completion-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-birth-death-v1.json
 !/artifacts/generated-results/elkies-k3-small-genus-defect-graphs-v1.json
+!/artifacts/generated-results/elkies-k3-small-genus-defect-graphs-v2.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-root-system-signature-v1.json
 !/artifacts/generated-results/elkies-k3-ns0024-inverse-ade-mutation-v1.json
 !/artifacts/generated-results/elkies-k3-inverse-ade-target-planner-benchmark-v1.json
 !/artifacts/generated-results/elkies-k3-inverse-ade-foundry-readiness-v1.json
+!/artifacts/generated-results/elkies-k3-inverse-ade-target-planner-benchmark-v2.json
+!/artifacts/generated-results/elkies-k3-inverse-ade-foundry-readiness-v2.json
 !/artifacts/generated-results/elkies-k3-rootless-j1-uniform-bound-v1.json
 !/artifacts/generated-results/elkies-k3-arithmetic-rank-transfer-controls-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json
@@ -135,6 +138,7 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-r17-norm12-103b2-mw-lattice-sieve-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-103b2-mw-lattice-unit-support8-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-103b2-hard-fibre-products-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json
 !/artifacts/generated-results/elkies-k3-norm12-orbit-103b2-twist-section-v1.json
 !/artifacts/generated-results/elkies-k3-norm12-orbit-103b2-p19-polynomial-section-bruteforce-v1.json
 !/artifacts/generated-results/elkies-k3-norm12-orbit-103b2-p29-polynomial-section-bruteforce-v1.json

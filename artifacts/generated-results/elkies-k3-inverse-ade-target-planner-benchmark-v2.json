@@ -1,0 +1,1239 @@
+{
+  "corridors": [
+    {
+      "corridor": "H3",
+      "edges": [
+        {
+          "edge": 1,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "A1+D5+E8",
+          "parent_root_lines": 141,
+          "planner": {
+            "elapsed_seconds": 0.22542968299239874,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "A1+A2+A6",
+            "predicted_child_root_lines": 25,
+            "quadric_enumerator": {
+              "dense_parameter_probes": 77,
+              "parameter_probes": 1470,
+              "seed_probes": 10,
+              "survivor_subspace_dimension": 7
+            },
+            "selected_isotropic_line": [
+              1,
+              1,
+              2,
+              5,
+              6,
+              1,
+              2,
+              1,
+              6,
+              5,
+              1,
+              1,
+              2,
+              4,
+              3
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 461,
+              "materialized_neighbors": 4,
+              "rejected_by_birth_or_metric_signature": 3,
+              "rejected_by_survival_death_incidence": 457
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 7,
+          "surviving_parent_root_lines": 19,
+          "target_ade_type": "A1+A2+A6",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 2,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "A1+A2+A6",
+          "parent_root_lines": 25,
+          "planner": {
+            "elapsed_seconds": 0.7728359479806386,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "6A1",
+            "predicted_child_root_lines": 6,
+            "quadric_enumerator": {
+              "dense_parameter_probes": 43,
+              "parameter_probes": 8371,
+              "seed_probes": 11,
+              "survivor_subspace_dimension": 12
+            },
+            "selected_isotropic_line": [
+              1,
+              5,
+              0,
+              6,
+              6,
+              0,
+              2,
+              6,
+              0,
+              2,
+              0,
+              5,
+              3,
+              4,
+              2
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 5400,
+              "materialized_neighbors": 7,
+              "rejected_by_birth_or_metric_signature": 6,
+              "rejected_by_survival_death_incidence": 5393
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 7,
+          "surviving_parent_root_lines": 3,
+          "target_ade_type": "6A1",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 3,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "6A1",
+          "parent_root_lines": 6,
+          "planner": {
+            "elapsed_seconds": 0.19113366602687165,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "6A1",
+            "predicted_child_root_lines": 6,
+            "quadric_enumerator": {
+              "parameter_probes": 31,
+              "seed_probes": 4,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              0,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 30,
+              "materialized_neighbors": 11,
+              "rejected_by_birth_or_metric_signature": 10,
+              "rejected_by_survival_death_incidence": 19
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 13,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "6A1",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 4,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "6A1",
+          "parent_root_lines": 6,
+          "planner": {
+            "elapsed_seconds": 0.7469727959833108,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "2A1+A2+A4",
+            "predicted_child_root_lines": 15,
+            "quadric_enumerator": {
+              "parameter_probes": 61,
+              "seed_probes": 8,
+              "survivor_subspace_dimension": 14
+            },
+            "selected_isotropic_line": [
+              1,
+              0,
+              0,
+              11,
+              0,
+              0,
+              0,
+              17,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 58,
+              "materialized_neighbors": 43,
+              "rejected_by_birth_or_metric_signature": 42,
+              "rejected_by_survival_death_incidence": 15
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 19,
+          "surviving_parent_root_lines": 1,
+          "target_ade_type": "2A1+A2+A4",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 5,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "2A1+A2+A4",
+          "parent_root_lines": 15,
+          "planner": {
+            "elapsed_seconds": 0.06518284103367478,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "6A1",
+            "predicted_child_root_lines": 6,
+            "quadric_enumerator": {
+              "parameter_probes": 4,
+              "seed_probes": 9,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              17,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 5,
+              "materialized_neighbors": 4,
+              "rejected_by_birth_or_metric_signature": 3,
+              "rejected_by_survival_death_incidence": 1
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 19,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "6A1",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 6,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "6A1",
+          "parent_root_lines": 6,
+          "planner": {
+            "elapsed_seconds": 1.0716836960054934,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "2A1",
+            "predicted_child_root_lines": 2,
+            "quadric_enumerator": {
+              "parameter_probes": 106,
+              "seed_probes": 15,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              11,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              12
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 94,
+              "materialized_neighbors": 60,
+              "rejected_by_birth_or_metric_signature": 59,
+              "rejected_by_survival_death_incidence": 34
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 17,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "2A1",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 7,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "2A1",
+          "parent_root_lines": 2,
+          "planner": {
+            "elapsed_seconds": 0.9947716189781204,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "3A1",
+            "predicted_child_root_lines": 3,
+            "quadric_enumerator": {
+              "parameter_probes": 68,
+              "seed_probes": 12,
+              "survivor_subspace_dimension": 14
+            },
+            "selected_isotropic_line": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              0,
+              0,
+              0,
+              0,
+              2
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 60,
+              "materialized_neighbors": 53,
+              "rejected_by_birth_or_metric_signature": 52,
+              "rejected_by_survival_death_incidence": 7
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 7,
+          "surviving_parent_root_lines": 1,
+          "target_ade_type": "3A1",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 8,
+          "legacy_terminal_diagnostic": {
+            "hidden_successful_line_comparison": {
+              "marked_target_completion_is_rootless": true,
+              "same_survival_death_incidence_as_all_materialized_rejects": true,
+              "target_core_overlap_fingerprint": {
+                "4": 9,
+                "6": 133,
+                "8": 921
+              }
+            },
+            "legacy_statistics": {
+              "isotropic_lines_proposed": 3997,
+              "legacy_materialized_rejects": 3000,
+              "rejected_by_core_rootlessness": 2068,
+              "rejected_by_nonzero_graph_glue_rootlessness": 932,
+              "rejected_by_survival_death_incidence": 997,
+              "target_core_overlap_fingerprint_accepts": 2,
+              "target_core_overlap_fingerprint_rejects": 2998,
+              "unexpected_rootless_completion": 0
+            },
+            "predicate_diagnosis": {
+              "predicate_with_no_pruning_power": "surviving-parent-root equalities",
+              "reason": "The rootless target prescribes no surviving root, so the equality system has rank zero and leaves the full 15-dimensional space.",
+              "survivor_equality_rank_over_Fp": 0,
+              "survivor_subspace_dimension": 15
+            },
+            "window_size": 3000
+          },
+          "marked_target_core_is_planner_input": true,
+          "parent_ade_type": "3A1",
+          "parent_root_lines": 3,
+          "planner": {
+            "elapsed_seconds": 0.013825414003804326,
+            "marked_target_core_required": true,
+            "marked_target_core_sha256": "1ba796bf2b559939560e8ee4ff8560810b319363dd6aee1bf3eefa7b2cef138e",
+            "predicted_child_ade_type": "rootless",
+            "predicted_child_root_lines": 0,
+            "quadric_enumerator": {
+              "generation": "marked_target_core_intersection",
+              "parameter_probes": 0,
+              "seed_probes": 0,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              9,
+              0,
+              10,
+              3,
+              0,
+              7,
+              3,
+              9,
+              4,
+              5,
+              10,
+              6,
+              8,
+              5
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 1,
+              "materialized_neighbors": 1,
+              "target_core_overlap_predictions": 1
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 11,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "rootless",
+          "withheld_line_not_in_planner_input": true
+        }
+      ],
+      "summary": {
+        "all_withheld_edges_recovered": true,
+        "candidate_reduction_comparable_to_ade_only_baseline": false,
+        "candidate_reduction_factor_if_recovered": null,
+        "historical_raw_neighbor_candidates_lower_bound": 42300,
+        "materialized_completion_candidates": 183,
+        "orders_of_magnitude_gate_at_least_10x": false,
+        "speedup_gate_deferred_until_after_recovery": true
+      }
+    },
+    {
+      "corridor": "NS0024",
+      "edges": [
+        {
+          "edge": 1,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "D5+E8",
+          "parent_root_lines": 140,
+          "planner": {
+            "elapsed_seconds": 11.037051078048535,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "3A1+A2",
+            "predicted_child_root_lines": 6,
+            "quadric_enumerator": {
+              "dense_parameter_probes": 27,
+              "parameter_probes": 31477,
+              "seed_probes": 49,
+              "survivor_subspace_dimension": 10
+            },
+            "selected_isotropic_line": [
+              1,
+              12,
+              4,
+              10,
+              8,
+              11,
+              16,
+              14,
+              8,
+              2,
+              2,
+              8,
+              3,
+              12,
+              14
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 20820,
+              "materialized_neighbors": 194,
+              "rejected_by_birth_or_metric_signature": 193,
+              "rejected_by_survival_death_incidence": 20626
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 17,
+          "surviving_parent_root_lines": 6,
+          "target_ade_type": "3A1+A2",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 2,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "3A1+A2",
+          "parent_root_lines": 6,
+          "planner": {
+            "elapsed_seconds": 0.10914994904305786,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "3A1+A2",
+            "predicted_child_root_lines": 6,
+            "quadric_enumerator": {
+              "parameter_probes": 19,
+              "seed_probes": 14,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 9,
+              "materialized_neighbors": 3,
+              "rejected_by_birth_or_metric_signature": 2,
+              "rejected_by_survival_death_incidence": 6
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 13,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "3A1+A2",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 3,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "3A1+A2",
+          "parent_root_lines": 6,
+          "planner": {
+            "elapsed_seconds": 29.59516866999911,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "rootless",
+            "predicted_child_root_lines": 0,
+            "quadric_enumerator": {
+              "parameter_probes": 10575,
+              "seed_probes": 1,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              0,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              4,
+              0,
+              0,
+              0,
+              0
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 6141,
+              "materialized_neighbors": 2412,
+              "rejected_by_birth_or_metric_signature": 2411,
+              "rejected_by_core_rootlessness": 970,
+              "rejected_by_nonzero_graph_glue_rootlessness": 1441,
+              "rejected_by_survival_death_incidence": 3729
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 7,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "rootless",
+          "withheld_line_not_in_planner_input": true
+        }
+      ],
+      "summary": {
+        "all_withheld_edges_recovered": true,
+        "candidate_reduction_comparable_to_ade_only_baseline": true,
+        "candidate_reduction_factor_if_recovered": "7477/2609",
+        "historical_raw_neighbor_candidates_lower_bound": 7477,
+        "materialized_completion_candidates": 2609,
+        "orders_of_magnitude_gate_at_least_10x": false,
+        "speedup_gate_deferred_until_after_recovery": false
+      }
+    },
+    {
+      "corridor": "Q80",
+      "edges": [
+        {
+          "edge": 1,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "D5+E8",
+          "parent_root_lines": 140,
+          "planner": {
+            "elapsed_seconds": 5.609573058027308,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "2A1+A2+A3",
+            "predicted_child_root_lines": 11,
+            "quadric_enumerator": {
+              "dense_parameter_probes": 2176,
+              "parameter_probes": 56637,
+              "seed_probes": 73,
+              "survivor_subspace_dimension": 11
+            },
+            "selected_isotropic_line": [
+              1,
+              18,
+              18,
+              6,
+              9,
+              11,
+              4,
+              11,
+              9,
+              1,
+              15,
+              12,
+              9,
+              6,
+              1
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 34272,
+              "materialized_neighbors": 26,
+              "rejected_by_birth_or_metric_signature": 25,
+              "rejected_by_survival_death_incidence": 34246
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 19,
+          "surviving_parent_root_lines": 5,
+          "target_ade_type": "2A1+A2+A3",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 2,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "2A1+A2+A3",
+          "parent_root_lines": 11,
+          "planner": {
+            "elapsed_seconds": 0.5555577230406925,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "6A1+A2",
+            "predicted_child_root_lines": 9,
+            "quadric_enumerator": {
+              "parameter_probes": 112,
+              "seed_probes": 5,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              0,
+              0,
+              0,
+              5,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 89,
+              "materialized_neighbors": 43,
+              "rejected_by_birth_or_metric_signature": 42,
+              "rejected_by_survival_death_incidence": 46
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 17,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "6A1+A2",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 3,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "6A1+A2",
+          "parent_root_lines": 9,
+          "planner": {
+            "elapsed_seconds": 0.15572186204371974,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "A1+A2",
+            "predicted_child_root_lines": 4,
+            "quadric_enumerator": {
+              "parameter_probes": 24,
+              "seed_probes": 4,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              9,
+              0,
+              13,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 22,
+              "materialized_neighbors": 12,
+              "rejected_by_birth_or_metric_signature": 11,
+              "rejected_by_survival_death_incidence": 10
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 17,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "A1+A2",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 4,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "A1+A2",
+          "parent_root_lines": 4,
+          "planner": {
+            "elapsed_seconds": 0.38239462702767923,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "3A1",
+            "predicted_child_root_lines": 3,
+            "quadric_enumerator": {
+              "parameter_probes": 59,
+              "seed_probes": 12,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              0,
+              0,
+              0
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 44,
+              "materialized_neighbors": 29,
+              "rejected_by_birth_or_metric_signature": 28,
+              "rejected_by_survival_death_incidence": 15
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 13,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "3A1",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 5,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "3A1",
+          "parent_root_lines": 3,
+          "planner": {
+            "elapsed_seconds": 1.4239595839753747,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "2A1+A3",
+            "predicted_child_root_lines": 8,
+            "quadric_enumerator": {
+              "parameter_probes": 248,
+              "seed_probes": 15,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              0,
+              0,
+              0
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 145,
+              "materialized_neighbors": 107,
+              "rejected_by_birth_or_metric_signature": 106,
+              "rejected_by_survival_death_incidence": 38
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 11,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "2A1+A3",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 6,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "2A1+A3",
+          "parent_root_lines": 8,
+          "planner": {
+            "elapsed_seconds": 0.1462672590278089,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "6A1",
+            "predicted_child_root_lines": 6,
+            "quadric_enumerator": {
+              "parameter_probes": 21,
+              "seed_probes": 12,
+              "survivor_subspace_dimension": 14
+            },
+            "selected_isotropic_line": [
+              1,
+              7,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              11,
+              0,
+              0,
+              7
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 20,
+              "materialized_neighbors": 10,
+              "rejected_by_birth_or_metric_signature": 9,
+              "rejected_by_survival_death_incidence": 10
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 13,
+          "surviving_parent_root_lines": 1,
+          "target_ade_type": "6A1",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 7,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "6A1",
+          "parent_root_lines": 6,
+          "planner": {
+            "elapsed_seconds": 0.12210567097645253,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "2A1+A2",
+            "predicted_child_root_lines": 5,
+            "quadric_enumerator": {
+              "parameter_probes": 24,
+              "seed_probes": 15,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              9,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              17
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 11,
+              "materialized_neighbors": 8,
+              "rejected_by_birth_or_metric_signature": 7,
+              "rejected_by_survival_death_incidence": 3
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 19,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "2A1+A2",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 8,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "2A1+A2",
+          "parent_root_lines": 5,
+          "planner": {
+            "elapsed_seconds": 1.218144040030893,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "2A1",
+            "predicted_child_root_lines": 2,
+            "quadric_enumerator": {
+              "parameter_probes": 135,
+              "seed_probes": 4,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              0,
+              0,
+              7,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 112,
+              "materialized_neighbors": 85,
+              "rejected_by_birth_or_metric_signature": 84,
+              "rejected_by_survival_death_incidence": 27
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 17,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "2A1",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 9,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "2A1",
+          "parent_root_lines": 2,
+          "planner": {
+            "elapsed_seconds": 1.480246381019242,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "3A1",
+            "predicted_child_root_lines": 3,
+            "quadric_enumerator": {
+              "parameter_probes": 172,
+              "seed_probes": 18,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              5,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 148,
+              "materialized_neighbors": 136,
+              "rejected_by_birth_or_metric_signature": 135,
+              "rejected_by_survival_death_incidence": 12
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 13,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "3A1",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 10,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "3A1",
+          "parent_root_lines": 3,
+          "planner": {
+            "elapsed_seconds": 0.19207295699743554,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "2A1",
+            "predicted_child_root_lines": 2,
+            "quadric_enumerator": {
+              "parameter_probes": 20,
+              "seed_probes": 8,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              5,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 19,
+              "materialized_neighbors": 14,
+              "rejected_by_birth_or_metric_signature": 13,
+              "rejected_by_survival_death_incidence": 5
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 13,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "2A1",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 11,
+          "legacy_terminal_diagnostic": null,
+          "marked_target_core_is_planner_input": false,
+          "parent_ade_type": "2A1",
+          "parent_root_lines": 2,
+          "planner": {
+            "elapsed_seconds": 4.247697113023605,
+            "marked_target_core_required": false,
+            "marked_target_core_sha256": null,
+            "predicted_child_ade_type": "2A1",
+            "predicted_child_root_lines": 2,
+            "quadric_enumerator": {
+              "parameter_probes": 601,
+              "seed_probes": 1,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              0,
+              0,
+              6,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              8,
+              0
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 388,
+              "materialized_neighbors": 328,
+              "rejected_by_birth_or_metric_signature": 327,
+              "rejected_by_survival_death_incidence": 60
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 13,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "2A1",
+          "withheld_line_not_in_planner_input": true
+        },
+        {
+          "edge": 12,
+          "legacy_terminal_diagnostic": {
+            "hidden_successful_line_comparison": {
+              "marked_target_completion_is_rootless": true,
+              "same_survival_death_incidence_as_all_materialized_rejects": true,
+              "target_core_overlap_fingerprint": {
+                "4": 3,
+                "6": 74,
+                "8": 490
+              }
+            },
+            "legacy_statistics": {
+              "isotropic_lines_proposed": 3218,
+              "legacy_materialized_rejects": 3000,
+              "rejected_by_core_rootlessness": 2521,
+              "rejected_by_nonzero_graph_glue_rootlessness": 479,
+              "rejected_by_survival_death_incidence": 218,
+              "target_core_overlap_fingerprint_accepts": 0,
+              "target_core_overlap_fingerprint_rejects": 3000,
+              "unexpected_rootless_completion": 0
+            },
+            "predicate_diagnosis": {
+              "predicate_with_no_pruning_power": "surviving-parent-root equalities",
+              "reason": "The rootless target prescribes no surviving root, so the equality system has rank zero and leaves the full 15-dimensional space.",
+              "survivor_equality_rank_over_Fp": 0,
+              "survivor_subspace_dimension": 15
+            },
+            "window_size": 3000
+          },
+          "marked_target_core_is_planner_input": true,
+          "parent_ade_type": "2A1",
+          "parent_root_lines": 2,
+          "planner": {
+            "elapsed_seconds": 0.01021574402693659,
+            "marked_target_core_required": true,
+            "marked_target_core_sha256": "a2bab0f006622e345f0d855749d614953aa89054fcb94601d639d3072d348cdf",
+            "predicted_child_ade_type": "rootless",
+            "predicted_child_root_lines": 0,
+            "quadric_enumerator": {
+              "generation": "marked_target_core_intersection",
+              "parameter_probes": 0,
+              "seed_probes": 0,
+              "survivor_subspace_dimension": 15
+            },
+            "selected_isotropic_line": [
+              1,
+              9,
+              19,
+              24,
+              8,
+              12,
+              16,
+              13,
+              10,
+              15,
+              9,
+              14,
+              5,
+              20,
+              7
+            ],
+            "statistics": {
+              "isotropic_lines_proposed": 1,
+              "materialized_neighbors": 1,
+              "target_core_overlap_predictions": 1
+            },
+            "status": "HIT",
+            "target_core_isometry_required": false
+          },
+          "prime": 29,
+          "surviving_parent_root_lines": 0,
+          "target_ade_type": "rootless",
+          "withheld_line_not_in_planner_input": true
+        }
+      ],
+      "summary": {
+        "all_withheld_edges_recovered": true,
+        "candidate_reduction_comparable_to_ade_only_baseline": false,
+        "candidate_reduction_factor_if_recovered": null,
+        "historical_raw_neighbor_candidates_lower_bound": 72528,
+        "materialized_completion_candidates": 799,
+        "orders_of_magnitude_gate_at_least_10x": false,
+        "speedup_gate_deferred_until_after_recovery": true
+      }
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json": "1d6e18fe4663a832a9a581c6ba1de670c1226852825f7017de68bdd3bdc674b0",
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-controls-v1.json": "ff53d920a3e681d77349833c9333f48d99fe9f40a2bad776d53df67a7302d0bf",
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-beam-v1.json": "e29282c86ca76f1f1a554103a2098668af5b30d4d9a329e48520f3f4ed196289",
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json": "794e786a99aeb8590e97dc8d43181e17ffd2ec416e2cb11996cf506488302d0a",
+    "elkies-k3/scripts/certify_integral_rank_transfer_root_system_signature.sage": "da0db06d2b8422ac3c6cdb1689a718415126a33a9c5a1c473bcaf2c61b701fde",
+    "elkies-k3/scripts/certify_ns0024_inverse_ade_mutation.sage": "17ab2c9130fe55b95cc530ad3963a6d4dd1fa523c49b74fabbf400588f8afbf7",
+    "elkies-k3/scripts/search_integral_rank_transfer_masked_core_controls.sage": "acdadf7c1536c7be45585cda16df0a50afaccceeac67ad3b55750b696dadfc3a"
+  },
+  "planner_rule": {
+    "dense_probes_per_edge": 150000,
+    "maximum_materialized_per_edge": 3000,
+    "maximum_parameter_support": 3,
+    "random_sampling": false,
+    "require_withheld_child_core_isometry": false,
+    "selection_order": [
+      "marked target-core intersection line on terminal rootless edges",
+      "survivor linear subspace",
+      "deterministic projective-quadric parametrization",
+      "exact survivor/death incidence",
+      "target-core norm-4/6/8 overlap fingerprint before materialization",
+      "materialize only target-constraint survivors",
+      "bridge-completion birth and full root-metric classification"
+    ]
+  },
+  "proof_boundary": "The historical isotropic-line field and child Gram matrix remain withheld. For terminal rootless edges, however, a marked child basis in the parent rational space is disclosed; its quotient over the parent intersection mathematically determines the neighbour line. This closes historical-edge recovery but is strictly stronger input than the v1 ADE-only benchmark, so its materialization counts are not a speedup comparison. Other edges retain the bounded sparse parametrization, which is not a complete quadric enumeration. These are rank-15 core Kneser moves, not elliptic-neighbour equations.",
+  "reproduce": "sage -python elkies-k3/scripts/plan_inverse_ade_targets.sage --maximum-parameter-support 3 --dense-probes 150000 --max-materialized 3000",
+  "schema": "elkies-k3.inverse-ade-target-planner-benchmark.v2",
+  "status": "PASS_WITHHELD_HISTORICAL_EDGE_RECOVERY_WITH_MARKED_TERMINAL_TARGETS"
+}

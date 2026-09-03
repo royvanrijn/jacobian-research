@@ -10,6 +10,7 @@
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-CONTROLS 3cbde45fb2cb0f17 -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 80de8b6727cd3409 -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH a755a3956c4c97cb -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-GRAPH-REACHABILITY e02f950eba79b32a -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE d32b35b66a35627c -->
 <!-- status-consumer: EC-K3-NS0024-INVERSE-ADE-MUTATION 5c56f07d14129837 -->
 <!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
@@ -226,6 +227,21 @@ afterward.  This is Theorem H0i.1 and its
 [`birth--death certificate`](../artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-birth-death-v1.json).
 The counted abstract `Sigma_2` table alone still omits the required physical
 line incidence, and no runtime speedup theorem is claimed.
+
+Complete small-genus reachability graphs now calibrate the global dynamics.
+In three mass-closed even ternary genera, three good primes are analyzed both
+separately and in every pair/triple union.  Exact SCC labelling finds a closed
+two-state directed `3`-trap at determinant 112 and two singleton `3`-traps at
+determinant 316, despite unrestricted `3`-connectivity.  Every tested
+two/three-prime union reaches zero from every state.  Exhaustive set selection
+shows that one of primes `5`, `7`, `11`, or `13` already suffices in each
+control, with the exact minimizers depending on the genus.  All three genera
+have one proper spinor genus, so the fixed-prime traps are finer than spinor
+separation.  The resulting candidate global invariant is the marked
+spinor/level component for eventual access, refined at small primes by the
+physical-witness incidence profile.  This is Theorem H0i.2 and the
+[`small-genus reachability certificate`](../artifacts/generated-results/elkies-k3-small-genus-defect-graphs-v2.json),
+not yet a marked rank-15 theorem.
 
 Those same physical witnesses now transfer more than zero versus nonzero
 support.  Retaining every completion root `r=k+c` and the pairwise metric

@@ -18264,6 +18264,7 @@ sum equals the exact genus mass
 ### Arithmetic rank transfer and marking gate
 
 <!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 3031dd2365a29cd5 -->
+<!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -18272,12 +18273,16 @@ sum equals the exact genus mass
 
 This replays the finite Galois-module form of Shioda--Tate, including the
 representation-ring rank-transfer identity.  It certifies H3 arithmetic rank
-17, the E6 unordered-incidence fixed rank `2/4`, and the orbit-103
-`2+chi_-3` split.  It applies the same schema fail-closed to the current
+17 and the degree-two `norm12-orbit-11952` alternate-Q80 arithmetic rank 17,
+the latter directly in the rational divisor basis `(F,O,Q1,...,Q17)` before
+equation compilation.  It also checks the E6 unordered-incidence fixed rank
+`2/4` and the orbit-103 `2+chi_-3` split.  It applies the same schema fail-closed to the current
 NS0024 completed-core path and records that its ranks `4,12,12,17` remain
 geometric-only until a rational source marking and field-defined target `U`
 are constructed.  See
 [`elkies-k3/ARITHMETIC_RANK_TRANSFER_2026-09-03.md`](elkies-k3/ARITHMETIC_RANK_TRANSFER_2026-09-03.md).
+The alternate application proof is
+[`elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md`](elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md).
 
 ### Integral rank-transfer and character-glue calculus
 
@@ -18506,16 +18511,23 @@ proves the exact transition and zero-defect criterion.  It does not prove that
 the counted abstract
 `Sigma_2` data alone suffice, or that the layered implementation is uniformly
 faster than direct child construction.
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-GRAPH-REACHABILITY e02f950eba79b32a -->
+
 The small-genus graph replay then exhausts every projective isotropic line at
-the declared good primes in three mass-closed even ternary genera.  The
+three declared good primes in each of three mass-closed even ternary genera.
+It constructs all singleton, pair, and triple unions; labels every directed
+SCC and condensation exit; stores prime/line witnesses for shortest zero
+paths; and exhaustively solves the minimum sufficient prime-set problem.  The
 determinant-112 and determinant-316 unrestricted 3-neighbour graphs are
 strongly connected, while their defect-directed subgraphs have respectively
 a closed two-state cycle and two closed singleton traps.  Prime 5 escapes all
-of those states.  In determinant 126 the exact directed distance profile is
-`1,2`, and the distance-two path has signed root defects `2 -> 2 -> 0`.
-Thus fixed-prime traps and nontrivial distance occur in complete finite
-graphs, while no all-good-prime trap or rank-15 Q80 reachability theorem is
-claimed.  See
+of those states, every tested two/three-prime union is universally reachable,
+and the exact minimum sets are recorded.  All three genera have one proper
+spinor genus.  In determinant 126 the exact directed distance profile is
+`1,2`, and the distance-two path has signed root defects `2 -> 2 -> 0`.  Thus
+fixed-prime traps and nontrivial distance occur in complete finite graphs,
+while no all-good-prime trap or rank-15 Q80 reachability theorem is claimed.
+See
 [`elkies-k3/DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md`](elkies-k3/DEFECT_GRAPH_SMALL_GENUS_DYNAMICS_2026-09-03.md).
 The root-system signature replay then enumerates every physical completion
 root `k+c` on the four NS0024 stages and records all pairwise inner products.
@@ -18798,6 +18810,29 @@ alternate witness is a nef degree-two fibre sharing the published zero with
 zero-section degree one.  Together with the general lower bound for distinct
 `J2` classes, this proves elliptic incidence distance two.  See
 [`elkies-k3/J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md`](elkies-k3/J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md).
+
+### Direct `norm12-orbit-11952` alternate-Q80 equation
+
+<!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
+
+Compile the cheapest degree-two witness directly on the published R17 model:
+
+```bash
+sage -python \
+  elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage
+
+sage -python \
+  elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage --check
+```
+
+The exact replay solves the eight-by-ten Riemann--Roch congruence for
+`D=(3,2,w)`, constructs the binary-quartic pencil and pointed Jacobian, and
+checks a polynomial `(8,12,24)` K3 model with irreducible squarefree
+discriminant and `24I1` fibres.  It splits off `<D,D+O_old>=U`, proves the
+rootless determinant-948 frame is alternate Q80 rather than published R17,
+and transports sixteen old sections plus `orbit-0adf9` to a saturated
+seventeen-section basis.  See
+[`elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md`](elkies-k3/R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md).
 
 Run the exact `H=10000` point-map-relation control on the deterministic
 seeded sample of ten other pointed covers:
