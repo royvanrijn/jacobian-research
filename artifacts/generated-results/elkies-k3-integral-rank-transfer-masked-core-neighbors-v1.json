@@ -1,0 +1,617 @@
+{
+  "completion_truth_check": {
+    "bridge_class_index": 2,
+    "child_determinant": 720,
+    "child_discriminant_form_matches_target": true,
+    "child_isometric_to_target_frame": true,
+    "child_minimum": 4,
+    "child_rank": 17,
+    "child_signed_root_count": 0,
+    "core_glue_multiplier": 5
+  },
+  "forced_genus": {
+    "bridge_determinant": 23,
+    "canonical_representative_is_rootless": false,
+    "canonical_representative_signed_roots": 96,
+    "corridor": "Golay720",
+    "even_rank15_genera_at_determinant": 48,
+    "forced_core_determinant": 16560,
+    "local_symbols": [
+      "Genus symbol at 2:    1^12:2^-2 [4^1]_1",
+      "Genus symbol at 3:     1^-13 3^-2",
+      "Genus symbol at 5:     1^-14 5^1",
+      "Genus symbol at 23:     1^14 23^-1"
+    ],
+    "matching_finite_form_genera": 1,
+    "selected_bridge_class_index": 2,
+    "target_frame_determinant": 720
+  },
+  "generated_core": {
+    "automorphism_group_order": 2,
+    "bridge_mask_results": [
+      {
+        "bridge_class_index": 1,
+        "isotropic_multipliers": [
+          2,
+          21
+        ],
+        "occupied_forbidden_cells": 3,
+        "sign_reduced_mask_cells": 10,
+        "zero_mask_accepts": false
+      },
+      {
+        "bridge_class_index": 2,
+        "isotropic_multipliers": [
+          5,
+          18
+        ],
+        "occupied_forbidden_cells": 0,
+        "sign_reduced_mask_cells": 11,
+        "zero_mask_accepts": true
+      }
+    ],
+    "determinant": 16560,
+    "distinct_from_historical_core_class": true,
+    "gram": [
+      [
+        4,
+        -2,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        0,
+        -1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        -2
+      ],
+      [
+        -2,
+        4,
+        0,
+        0,
+        -2,
+        2,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        -1,
+        -2,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        4,
+        2,
+        1,
+        1,
+        -2,
+        1,
+        -2,
+        2,
+        0,
+        0,
+        0,
+        1,
+        -2
+      ],
+      [
+        2,
+        0,
+        2,
+        4,
+        2,
+        0,
+        -1,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      [
+        2,
+        -2,
+        1,
+        2,
+        4,
+        -2,
+        -1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        2,
+        1,
+        0,
+        -2,
+        4,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      [
+        -2,
+        0,
+        -2,
+        -1,
+        -1,
+        -1,
+        4,
+        1,
+        0,
+        -2,
+        -1,
+        -1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        -1,
+        1,
+        1,
+        2,
+        -1,
+        1,
+        4,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        -2,
+        -2,
+        0,
+        -1,
+        0,
+        0,
+        4,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        1
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        0,
+        1,
+        -2,
+        -1,
+        0,
+        4,
+        -1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        2,
+        -1,
+        0,
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        4,
+        2,
+        -1,
+        0,
+        -1
+      ],
+      [
+        2,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        1,
+        0,
+        2,
+        4,
+        0,
+        1,
+        -1
+      ],
+      [
+        1,
+        -2,
+        0,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        4,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        4,
+        -1
+      ],
+      [
+        -2,
+        0,
+        -2,
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        4
+      ]
+    ],
+    "historical_core_isometric": false,
+    "lazy_core_cells_queried": 13,
+    "minimum": 4,
+    "rank": 15,
+    "signed_root_count": 0
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json": "1d6e18fe4663a832a9a581c6ba1de670c1226852825f7017de68bdd3bdc674b0",
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json": "794e786a99aeb8590e97dc8d43181e17ffd2ec416e2cb11996cf506488302d0a",
+    "elkies-k3/scripts/certify_integral_rank_transfer_core_generation.sage": "70ed2acf14b1bb1aa84d018a7d1b0152a45aa60c12a769e0ea440e770f5a7466",
+    "elkies-k3/scripts/certify_integral_rank_transfer_reverse_theta_masks.sage": "ef7e990fc8a42d4d8dc7ffea7c65f9205d85968964495e8bfb385e0ce099d87f"
+  },
+  "neighbor_generation": {
+    "certified_neighbor_path": [
+      {
+        "mask_violation_profile": null,
+        "prime": 17,
+        "signed_root_count": 2,
+        "step": 1,
+        "witness": [
+          13,
+          10,
+          16,
+          13,
+          12,
+          9,
+          11,
+          2,
+          7,
+          11,
+          6,
+          7,
+          5,
+          3,
+          10
+        ]
+      },
+      {
+        "mask_violation_profile": [
+          5,
+          2
+        ],
+        "prime": 19,
+        "signed_root_count": 0,
+        "step": 2,
+        "witness": [
+          12,
+          14,
+          18,
+          13,
+          4,
+          16,
+          0,
+          1,
+          18,
+          11,
+          12,
+          6,
+          1,
+          9,
+          4
+        ]
+      },
+      {
+        "mask_violation_profile": [
+          3,
+          2
+        ],
+        "prime": 11,
+        "signed_root_count": 0,
+        "step": 3,
+        "witness": [
+          9,
+          2,
+          1,
+          1,
+          2,
+          8,
+          4,
+          6,
+          6,
+          9,
+          0,
+          3,
+          10,
+          2,
+          0
+        ]
+      },
+      {
+        "mask_violation_profile": [
+          3,
+          2
+        ],
+        "prime": 11,
+        "signed_root_count": 0,
+        "step": 4,
+        "witness": [
+          1,
+          4,
+          8,
+          2,
+          0,
+          7,
+          8,
+          3,
+          9,
+          10,
+          2,
+          3,
+          4,
+          7,
+          6
+        ]
+      },
+      {
+        "mask_violation_profile": [
+          3,
+          2
+        ],
+        "prime": 17,
+        "signed_root_count": 0,
+        "step": 5,
+        "witness": [
+          0,
+          0,
+          0,
+          13,
+          10,
+          7,
+          2,
+          2,
+          0,
+          15,
+          12,
+          0,
+          0,
+          14,
+          3
+        ]
+      },
+      {
+        "mask_violation_profile": null,
+        "prime": 19,
+        "signed_root_count": 2,
+        "step": 6,
+        "witness": [
+          0,
+          13,
+          14,
+          9,
+          18,
+          9,
+          6,
+          16,
+          9,
+          15,
+          15,
+          8,
+          10,
+          4,
+          13
+        ]
+      },
+      {
+        "mask_violation_profile": [
+          3,
+          0
+        ],
+        "prime": 19,
+        "signed_root_count": 0,
+        "step": 7,
+        "witness": [
+          2,
+          16,
+          0,
+          17,
+          17,
+          14,
+          6,
+          11,
+          14,
+          15,
+          17,
+          1,
+          9,
+          10,
+          12
+        ]
+      }
+    ],
+    "diversity_slots": 8,
+    "elite_slots": 12,
+    "hit_generation": 7,
+    "method": "mask-aware good-prime Kneser beam",
+    "primes": [
+      7,
+      11,
+      13,
+      17,
+      19
+    ],
+    "random_seed": 314159,
+    "samples_per_parent": 300,
+    "search_generation_records": [
+      {
+        "best_root_and_mask_profile": [
+          2,
+          null
+        ],
+        "eligible_root_count_at_most_four": 43,
+        "frontier_size": 20,
+        "generation": 1,
+        "hit": false,
+        "unique_raw_neighbors": 300
+      },
+      {
+        "best_root_and_mask_profile": [
+          0,
+          [
+            3,
+            2
+          ]
+        ],
+        "eligible_root_count_at_most_four": 4273,
+        "frontier_size": 20,
+        "generation": 2,
+        "hit": false,
+        "unique_raw_neighbors": 6000
+      },
+      {
+        "best_root_and_mask_profile": [
+          0,
+          [
+            3,
+            2
+          ]
+        ],
+        "eligible_root_count_at_most_four": 4409,
+        "frontier_size": 20,
+        "generation": 3,
+        "hit": false,
+        "unique_raw_neighbors": 6000
+      },
+      {
+        "best_root_and_mask_profile": [
+          0,
+          [
+            3,
+            2
+          ]
+        ],
+        "eligible_root_count_at_most_four": 4369,
+        "frontier_size": 20,
+        "generation": 4,
+        "hit": false,
+        "unique_raw_neighbors": 6000
+      },
+      {
+        "best_root_and_mask_profile": [
+          0,
+          [
+            3,
+            2
+          ]
+        ],
+        "eligible_root_count_at_most_four": 4414,
+        "frontier_size": 20,
+        "generation": 5,
+        "hit": false,
+        "unique_raw_neighbors": 6000
+      },
+      {
+        "best_root_and_mask_profile": [
+          0,
+          [
+            1,
+            4
+          ]
+        ],
+        "eligible_root_count_at_most_four": 4445,
+        "frontier_size": 20,
+        "generation": 6,
+        "hit": false,
+        "unique_raw_neighbors": 6000
+      },
+      {
+        "generation": 7,
+        "hit": true,
+        "unique_raw_neighbors": 4271
+      }
+    ],
+    "search_reexecuted_for_this_artifact": true,
+    "unique_raw_neighbors_before_hit": 34571
+  },
+  "proof_boundary": {
+    "bounded": "The beam parameters are fixed and the discovery is proved only for the Golay-720 control. Completeness, expected running time, success probability, and a uniform algorithm for every forced genus are not proved.",
+    "proved": "The finite-form-forced genus produces a canonical rootful representative; the seven certified good-prime neighbors produce a nonhistorical rootless rank-15 core; its class-2 reverse mask is empty on theta support; and the independently constructed rank-17 completion is rootless and isometric to the declared target frame."
+  },
+  "reproduce": {
+    "full_bounded_search": "sage -python elkies-k3/scripts/generate_integral_rank_transfer_masked_core_neighbors.sage --search --check",
+    "short_certificate": "sage -python elkies-k3/scripts/generate_integral_rank_transfer_masked_core_neighbors.sage --check"
+  },
+  "schema": "elkies-k3.integral-rank-transfer-masked-core-neighbors.v1",
+  "status": "PASS_CONSTRUCTIVE_MASK_AWARE_CORE_GENERATION"
+}

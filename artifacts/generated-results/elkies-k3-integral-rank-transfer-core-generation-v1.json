@@ -1,0 +1,1244 @@
+{
+  "core_first_algorithm": [
+    "Set q_W=-q_NS for the desired Picard-rank-19 frame genus.",
+    "Enumerate a declared finite universe of positive even binary bridges C.",
+    "Generate the rank-15 core genus by q_K=q_W orthogonal_sum (-q_C) and det(K)=det(W)*det(C).",
+    "Enumerate and mass-close lattice classes K in that genus; reject theta_K(0,2)>0 before any glue graph.",
+    "Deduplicate survivors by isomorphism of their theta-decorated discriminant forms through norm two.",
+    "Enumerate anti-isometric bridge summands and retain exactly the zero-support graphs; construct rank-17 frames only for survivors."
+  ],
+  "held_out_e6_early_gate": {
+    "interpretation": "The necessary core-rootlessness gate rejects the full declared E6 source shell without computing a bridge theta table, an isotropic subgroup, or a rank-17 child root system.",
+    "primitive_rank15_cores": 277,
+    "rejected_by_core_minimum_two": 277,
+    "rejected_by_cyclic_order": {
+      "15": 100,
+      "23": 172,
+      "7": 3,
+      "87": 2
+    },
+    "source_shell_complete_by_declared_weyl_enumeration": true,
+    "survivors_before_graph_enumeration": 0,
+    "target_j2_genus_mass_closed": true
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-e6-rank4-det78-prospective-bridge-predictor-v1.json": "8c42abaafbb92c1d5958b0928385933319e4178bd6450517294bef9d34fac60f",
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json": "1d6e18fe4663a832a9a581c6ba1de670c1226852825f7017de68bdd3bdc674b0",
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json": "794e786a99aeb8590e97dc8d43181e17ffd2ec416e2cb11996cf506488302d0a"
+  },
+  "observed_positive_core_classes": [
+    {
+      "admits_zero_support_rank_two_completion": true,
+      "bridge_determinant": 23,
+      "corridor": "Golay720",
+      "determinant": 16560,
+      "discriminant_form": {
+        "invariants": [
+          2,
+          6,
+          1380
+        ],
+        "quadratic_gram": [
+          [
+            "1",
+            "1/2",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1/2",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "2/3",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "4/3",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "4/5",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "10/23"
+          ]
+        ],
+        "value_module": "Q/2Z"
+      },
+      "enumerated_binary_bridge_classes": 2,
+      "even_rank15_genera_at_determinant": 48,
+      "genera_matching_generated_discriminant_form": 1,
+      "generated_core_genus_local_symbols": [
+        "Genus symbol at 2:    1^12:2^-2 [4^1]_1",
+        "Genus symbol at 3:     1^-13 3^-2",
+        "Genus symbol at 5:     1^-14 5^1",
+        "Genus symbol at 23:     1^14 23^-1"
+      ],
+      "minimum": 4,
+      "rank": 15,
+      "theta_signature_through_norm_two": {
+        "dual_vectors_of_norm_at_most_two_including_zero": 9167,
+        "represented_discriminant_classes": 4418,
+        "theta_table_sha256": "e2b687635f262ee28844ee940a9345e8ac357d036ad931c9660251d01c4381f6"
+      },
+      "zero_support_binary_bridge_classes": 1
+    },
+    {
+      "admits_zero_support_rank_two_completion": true,
+      "bridge_determinant": 47,
+      "corridor": "H3",
+      "determinant": 44556,
+      "discriminant_form": {
+        "invariants": [
+          44556
+        ],
+        "quadratic_gram": [
+          [
+            "1/4",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "2/3",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "10/47",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "6/79"
+          ]
+        ],
+        "value_module": "Q/2Z"
+      },
+      "enumerated_binary_bridge_classes": 3,
+      "even_rank15_genera_at_determinant": 8,
+      "genera_matching_generated_discriminant_form": 1,
+      "generated_core_genus_local_symbols": [
+        "Genus symbol at 2:    1^-14:[4^1]_1",
+        "Genus symbol at 3:     1^14 3^-1",
+        "Genus symbol at 47:     1^-14 47^-1",
+        "Genus symbol at 79:     1^-14 79^-1"
+      ],
+      "minimum": 4,
+      "rank": 15,
+      "theta_signature_through_norm_two": {
+        "dual_vectors_of_norm_at_most_two_including_zero": 14629,
+        "represented_discriminant_classes": 8943,
+        "theta_table_sha256": "adbe5669f49672ab4a7255d1535dbe47a09a5812a337ab1334e0f49430aa470d"
+      },
+      "zero_support_binary_bridge_classes": 1
+    },
+    {
+      "admits_zero_support_rank_two_completion": true,
+      "bridge_determinant": 191,
+      "corridor": "NS0024",
+      "determinant": 181450,
+      "discriminant_form": {
+        "invariants": [
+          181450
+        ],
+        "quadratic_gram": [
+          [
+            "3/2",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "2/25",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "2/19",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "14/191"
+          ]
+        ],
+        "value_module": "Q/2Z"
+      },
+      "enumerated_binary_bridge_classes": 7,
+      "even_rank15_genera_at_determinant": 8,
+      "genera_matching_generated_discriminant_form": 1,
+      "generated_core_genus_local_symbols": [
+        "Genus symbol at 2:    1^-14 [2^1]_7",
+        "Genus symbol at 5:     1^14 25^-1",
+        "Genus symbol at 19:     1^14 19^-1",
+        "Genus symbol at 191:     1^14 191^-1"
+      ],
+      "minimum": 4,
+      "rank": 15,
+      "theta_signature_through_norm_two": {
+        "dual_vectors_of_norm_at_most_two_including_zero": 29773,
+        "represented_discriminant_classes": 22579,
+        "theta_table_sha256": "3274332dfee1ca5a432f32c0dd94a9733932da301909faba5056075919b1173f"
+      },
+      "zero_support_binary_bridge_classes": 2
+    },
+    {
+      "admits_zero_support_rank_two_completion": true,
+      "bridge_determinant": 23,
+      "corridor": "Q80",
+      "determinant": 21804,
+      "discriminant_form": {
+        "invariants": [
+          21804
+        ],
+        "quadratic_gram": [
+          [
+            "1/4",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "2/3",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "10/23",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "6/79"
+          ]
+        ],
+        "value_module": "Q/2Z"
+      },
+      "enumerated_binary_bridge_classes": 2,
+      "even_rank15_genera_at_determinant": 8,
+      "genera_matching_generated_discriminant_form": 1,
+      "generated_core_genus_local_symbols": [
+        "Genus symbol at 2:    1^-14:[4^1]_1",
+        "Genus symbol at 3:     1^14 3^-1",
+        "Genus symbol at 23:     1^14 23^-1",
+        "Genus symbol at 79:     1^14 79^-1"
+      ],
+      "minimum": 4,
+      "rank": 15,
+      "theta_signature_through_norm_two": {
+        "dual_vectors_of_norm_at_most_two_including_zero": 10351,
+        "represented_discriminant_classes": 5211,
+        "theta_table_sha256": "7d2addd99d01ec202cfb25417ca0a770ba9db3a39af35459039f33f817cb640b"
+      },
+      "zero_support_binary_bridge_classes": 1
+    }
+  ],
+  "proof_boundary": {
+    "not_proved": "No unbounded bridge-determinant cutoff, uniform algorithm for enumerating or mass-closing every rank-15 genus, complexity bound, speedup theorem, or equation-level fibration lift is claimed.",
+    "proved": "The maximal-graph finite-form equivalence, the exact decorated-theta completion criterion, all 84 recorded splitting identities, and the 277/277 E6 minimum-two rejection."
+  },
+  "recorded_click_replay": {
+    "all_determinant_identities": true,
+    "all_finite_quadratic_form_identities": true,
+    "corridor_presentation_counts": {
+      "Golay720": 12,
+      "H3": 26,
+      "NS0024": 26,
+      "Q80": 20
+    },
+    "edges": 42,
+    "maximal_graph_presentations_checked": 84,
+    "presentations": [
+      {
+        "bridge_determinant": 31,
+        "core_determinant": 29450,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 1,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 31,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 31,
+        "core_determinant": 29450,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 1,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 31,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44650,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 2,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 47,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44650,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 2,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 47,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 143,
+        "core_determinant": 135850,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 3,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 143,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 143,
+        "core_determinant": 135850,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 3,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 143,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 63,
+        "core_determinant": 59850,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 4,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 63,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 63,
+        "core_determinant": 59850,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 4,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 63,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 303,
+        "core_determinant": 287850,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 5,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 303,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 303,
+        "core_determinant": 287850,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 5,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 303,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 1231,
+        "core_determinant": 1169450,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 6,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 1231,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 1231,
+        "core_determinant": 1169450,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 6,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 1231,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44650,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 7,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 47,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44650,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 7,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 47,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 215,
+        "core_determinant": 204250,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 8,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 215,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 215,
+        "core_determinant": 204250,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 8,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 215,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 359,
+        "core_determinant": 341050,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 9,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 359,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 359,
+        "core_determinant": 341050,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 9,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 359,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 119,
+        "core_determinant": 113050,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 10,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 119,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 119,
+        "core_determinant": 113050,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 10,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 119,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44650,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 11,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 47,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44650,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 11,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 47,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44650,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 12,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 47,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44650,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 12,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 47,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 191,
+        "core_determinant": 181450,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 13,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 191,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 191,
+        "core_determinant": 181450,
+        "corridor": "NS0024",
+        "determinant_identity": true,
+        "edge_index": 13,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 950,
+        "glue_order": 191,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 33840,
+        "corridor": "Golay720",
+        "determinant_identity": true,
+        "edge_index": 1,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 720,
+        "glue_order": 47,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 33840,
+        "corridor": "Golay720",
+        "determinant_identity": true,
+        "edge_index": 1,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 720,
+        "glue_order": 47,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 31,
+        "core_determinant": 22320,
+        "corridor": "Golay720",
+        "determinant_identity": true,
+        "edge_index": 2,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 720,
+        "glue_order": 31,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 31,
+        "core_determinant": 22320,
+        "corridor": "Golay720",
+        "determinant_identity": true,
+        "edge_index": 2,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 720,
+        "glue_order": 31,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 63,
+        "core_determinant": 45360,
+        "corridor": "Golay720",
+        "determinant_identity": true,
+        "edge_index": 3,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 720,
+        "glue_order": 63,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 63,
+        "core_determinant": 45360,
+        "corridor": "Golay720",
+        "determinant_identity": true,
+        "edge_index": 3,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 720,
+        "glue_order": 63,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 63,
+        "core_determinant": 45360,
+        "corridor": "Golay720",
+        "determinant_identity": true,
+        "edge_index": 4,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 720,
+        "glue_order": 63,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 63,
+        "core_determinant": 45360,
+        "corridor": "Golay720",
+        "determinant_identity": true,
+        "edge_index": 4,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 720,
+        "glue_order": 63,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 33840,
+        "corridor": "Golay720",
+        "determinant_identity": true,
+        "edge_index": 5,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 720,
+        "glue_order": 47,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 33840,
+        "corridor": "Golay720",
+        "determinant_identity": true,
+        "edge_index": 5,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 720,
+        "glue_order": 47,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 23,
+        "core_determinant": 16560,
+        "corridor": "Golay720",
+        "determinant_identity": true,
+        "edge_index": 6,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 720,
+        "glue_order": 23,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 23,
+        "core_determinant": 16560,
+        "corridor": "Golay720",
+        "determinant_identity": true,
+        "edge_index": 6,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 720,
+        "glue_order": 23,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 23,
+        "core_determinant": 21804,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 1,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 23,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 23,
+        "core_determinant": 21804,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 1,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 23,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 31,
+        "core_determinant": 29388,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 2,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 31,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 31,
+        "core_determinant": 29388,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 2,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 31,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 1535,
+        "core_determinant": 1455180,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 3,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 1535,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 1535,
+        "core_determinant": 1455180,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 3,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 1535,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 215,
+        "core_determinant": 203820,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 4,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 215,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 215,
+        "core_determinant": 203820,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 4,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 215,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 991,
+        "core_determinant": 939468,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 5,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 991,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 991,
+        "core_determinant": 939468,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 5,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 991,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 63,
+        "core_determinant": 59724,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 6,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 63,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 63,
+        "core_determinant": 59724,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 6,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 63,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44556,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 7,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 47,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44556,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 7,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 47,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 127,
+        "core_determinant": 120396,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 8,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 127,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 127,
+        "core_determinant": 120396,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 8,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 127,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 127,
+        "core_determinant": 120396,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 9,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 127,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 127,
+        "core_determinant": 120396,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 9,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 127,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 143,
+        "core_determinant": 135564,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 10,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 143,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 143,
+        "core_determinant": 135564,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 10,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 143,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 31,
+        "core_determinant": 29388,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 11,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 31,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 31,
+        "core_determinant": 29388,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 11,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 31,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 31,
+        "core_determinant": 29388,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 12,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 31,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 31,
+        "core_determinant": 29388,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 12,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 31,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44556,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 13,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 47,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44556,
+        "corridor": "H3",
+        "determinant_identity": true,
+        "edge_index": 13,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 47,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 15,
+        "core_determinant": 14220,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 1,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 15,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 15,
+        "core_determinant": 14220,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 1,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 15,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44556,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 2,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 47,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 47,
+        "core_determinant": 44556,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 2,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 47,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 95,
+        "core_determinant": 90060,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 3,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 95,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 95,
+        "core_determinant": 90060,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 3,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 95,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 143,
+        "core_determinant": 135564,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 4,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 143,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 143,
+        "core_determinant": 135564,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 4,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 143,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 3231,
+        "core_determinant": 3062988,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 5,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 3231,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 3231,
+        "core_determinant": 3062988,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 5,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 3231,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 359,
+        "core_determinant": 340332,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 6,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 359,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 359,
+        "core_determinant": 340332,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 6,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 359,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 159,
+        "core_determinant": 150732,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 7,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 159,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 159,
+        "core_determinant": 150732,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 7,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 159,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 2447,
+        "core_determinant": 2319756,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 8,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 2447,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 2447,
+        "core_determinant": 2319756,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 8,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 2447,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 799,
+        "core_determinant": 757452,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 9,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 799,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 799,
+        "core_determinant": 757452,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 9,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 799,
+        "side": "new"
+      },
+      {
+        "bridge_determinant": 23,
+        "core_determinant": 21804,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 10,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 23,
+        "side": "old"
+      },
+      {
+        "bridge_determinant": 23,
+        "core_determinant": 21804,
+        "corridor": "Q80",
+        "determinant_identity": true,
+        "edge_index": 10,
+        "finite_quadratic_form_identity": true,
+        "frame_determinant": 948,
+        "glue_order": 23,
+        "side": "new"
+      }
+    ]
+  },
+  "reproduce": "sage -python elkies-k3/scripts/certify_integral_rank_transfer_core_generation.sage --check",
+  "schema": "elkies-k3.integral-rank-transfer-core-generation.v1",
+  "status": "PASS_EXACT_MAXIMAL_GRAPH_CORE_GENUS_INVERSION",
+  "theorem": {
+    "complete_core_descriptor": "For any declared finite bridge universe, rank plus the finite quadratic form and all discriminant-coset theta coefficients through norm two determine the complete zero-support completion spectrum of K.",
+    "converse": "A splitting q_K = q_W orthogonal_sum (-q_C) gives the diagonal isotropic graph between the -q_C summand and A_C; its overlattice has discriminant form q_W.",
+    "forward": "The image B in A_K is nondegenerate and anti-isometric to A_C. Hence q_K is q_W orthogonal_sum (-q_C), and det(K)=det(W)*det(C).",
+    "hypotheses": "K, C and W are even nondegenerate lattices; W is the overlattice of K+C defined by an isotropic graph H whose projection H->A_C is an isomorphism.",
+    "rootless_criterion": "For a fixed binary bridge C, K admits a rootless maximal-graph completion exactly when K and C are rootless and some anti-isometry A_C->B in A_K has zero theta convolution on its entire graph."
+  }
+}

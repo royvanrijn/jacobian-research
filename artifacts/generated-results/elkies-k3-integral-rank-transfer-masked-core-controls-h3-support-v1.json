@@ -1,0 +1,764 @@
+{
+  "corridors": [
+    {
+      "all_bridge_class_indices": [
+        1,
+        2,
+        3
+      ],
+      "best_bounded_candidate": {
+        "exact_mask_results": [
+          {
+            "bridge_class_index": 2,
+            "isotropic_multipliers": [
+              9,
+              38
+            ],
+            "occupied_forbidden_cells": 2,
+            "sign_reduced_mask_cells": 17,
+            "zero_mask_accepts": false
+          },
+          {
+            "bridge_class_index": 3,
+            "isotropic_multipliers": [
+              17,
+              30
+            ],
+            "occupied_forbidden_cells": 2,
+            "sign_reduced_mask_cells": 19,
+            "zero_mask_accepts": false
+          }
+        ],
+        "lazy_core_cells_queried": 22,
+        "path": [
+          {
+            "prime": 7,
+            "witness": [
+              6,
+              6,
+              2,
+              5,
+              1,
+              6,
+              2,
+              3,
+              0,
+              3,
+              4,
+              4,
+              4,
+              1,
+              1
+            ]
+          },
+          {
+            "prime": 7,
+            "witness": [
+              5,
+              1,
+              1,
+              1,
+              2,
+              0,
+              0,
+              0,
+              4,
+              5,
+              4,
+              3,
+              3,
+              2,
+              5
+            ]
+          },
+          {
+            "prime": 17,
+            "witness": [
+              12,
+              7,
+              6,
+              15,
+              0,
+              12,
+              0,
+              2,
+              7,
+              13,
+              13,
+              10,
+              9,
+              16,
+              4
+            ]
+          },
+          {
+            "prime": 19,
+            "witness": [
+              18,
+              9,
+              8,
+              1,
+              16,
+              13,
+              16,
+              6,
+              0,
+              11,
+              8,
+              8,
+              5,
+              10,
+              14
+            ]
+          },
+          {
+            "prime": 11,
+            "witness": [
+              7,
+              5,
+              8,
+              9,
+              1,
+              2,
+              5,
+              6,
+              2,
+              7,
+              5,
+              8,
+              4,
+              2,
+              8
+            ]
+          },
+          {
+            "prime": 11,
+            "witness": [
+              1,
+              9,
+              8,
+              8,
+              2,
+              10,
+              1,
+              8,
+              8,
+              5,
+              6,
+              7,
+              4,
+              0,
+              10
+            ]
+          },
+          {
+            "prime": 13,
+            "witness": [
+              10,
+              1,
+              5,
+              3,
+              8,
+              11,
+              1,
+              11,
+              10,
+              7,
+              11,
+              8,
+              9,
+              2,
+              11
+            ]
+          },
+          {
+            "prime": 11,
+            "witness": [
+              2,
+              2,
+              2,
+              6,
+              10,
+              10,
+              9,
+              9,
+              7,
+              1,
+              1,
+              5,
+              5,
+              7,
+              2
+            ]
+          }
+        ],
+        "reduced_core_gram": [
+          [
+            4,
+            -2,
+            1,
+            -2,
+            1,
+            -1,
+            -2,
+            -1,
+            0,
+            0,
+            -1,
+            2,
+            1,
+            -1,
+            -1
+          ],
+          [
+            -2,
+            4,
+            1,
+            1,
+            1,
+            2,
+            2,
+            -1,
+            -1,
+            -1,
+            0,
+            -2,
+            -2,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            4,
+            -2,
+            2,
+            0,
+            0,
+            0,
+            -2,
+            -2,
+            -2,
+            1,
+            0,
+            1,
+            -1
+          ],
+          [
+            -2,
+            1,
+            -2,
+            4,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            -2,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            2,
+            0,
+            4,
+            -1,
+            1,
+            -1,
+            -2,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            2,
+            0,
+            0,
+            -1,
+            4,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          [
+            -2,
+            2,
+            0,
+            1,
+            1,
+            0,
+            4,
+            1,
+            0,
+            -1,
+            0,
+            -1,
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            -1,
+            1,
+            4,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            -1,
+            -2,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            4,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            -2,
+            0,
+            -2,
+            0,
+            -1,
+            -1,
+            1,
+            4,
+            0,
+            -1,
+            1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            0,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            -1,
+            -1,
+            2
+          ],
+          [
+            2,
+            -2,
+            1,
+            -2,
+            0,
+            -1,
+            -1,
+            1,
+            0,
+            -1,
+            0,
+            4,
+            1,
+            -1,
+            0
+          ],
+          [
+            1,
+            -2,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            1,
+            4,
+            -1,
+            -1
+          ],
+          [
+            -1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            4,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            -1,
+            0,
+            2,
+            0,
+            -1,
+            0,
+            4
+          ]
+        ],
+        "signed_root_count": 0
+      },
+      "canonical_representative_signed_roots": 280,
+      "corridor": "H3",
+      "cyclic_bridge_order": 47,
+      "even_rank15_genera_at_determinant": 8,
+      "forced_core_determinant": 44556,
+      "generations": [
+        {
+          "best_root_and_mask_profile": [
+            8,
+            null
+          ],
+          "eligible_neighbor_count": 300,
+          "frontier_size": 20,
+          "generation": 1,
+          "hit": false,
+          "root_count_histogram": {
+            "10": 14,
+            "12": 17,
+            "14": 15,
+            "16": 28,
+            "18": 30,
+            "20": 18,
+            "22": 11,
+            "24": 18,
+            "26": 13,
+            "264": 2,
+            "28": 10,
+            "280": 1,
+            "30": 7,
+            "32": 9,
+            "34": 22,
+            "36": 11,
+            "38": 15,
+            "40": 11,
+            "42": 6,
+            "44": 8,
+            "46": 5,
+            "48": 3,
+            "50": 4,
+            "52": 4,
+            "54": 3,
+            "56": 2,
+            "62": 1,
+            "68": 1,
+            "70": 1,
+            "76": 1,
+            "8": 9
+          },
+          "tested_rootless_neighbors": 0,
+          "unique_raw_neighbors": 300
+        },
+        {
+          "best_root_and_mask_profile": [
+            0,
+            [
+              2,
+              2
+            ]
+          ],
+          "eligible_neighbor_count": 6000,
+          "frontier_size": 20,
+          "generation": 2,
+          "hit": false,
+          "root_count_histogram": {
+            "0": 1314,
+            "10": 150,
+            "12": 69,
+            "14": 61,
+            "16": 42,
+            "18": 16,
+            "2": 2033,
+            "20": 10,
+            "22": 7,
+            "24": 5,
+            "26": 5,
+            "28": 2,
+            "30": 1,
+            "32": 1,
+            "34": 1,
+            "36": 2,
+            "38": 12,
+            "4": 1302,
+            "40": 10,
+            "42": 3,
+            "44": 9,
+            "46": 4,
+            "48": 2,
+            "50": 1,
+            "52": 1,
+            "54": 2,
+            "56": 3,
+            "58": 1,
+            "6": 609,
+            "60": 2,
+            "64": 1,
+            "8": 319
+          },
+          "tested_rootless_neighbors": 1314,
+          "unique_raw_neighbors": 6000
+        },
+        {
+          "best_root_and_mask_profile": [
+            0,
+            [
+              2,
+              2
+            ]
+          ],
+          "eligible_neighbor_count": 6000,
+          "frontier_size": 20,
+          "generation": 3,
+          "hit": false,
+          "root_count_histogram": {
+            "0": 1642,
+            "10": 49,
+            "12": 19,
+            "14": 4,
+            "16": 1,
+            "18": 1,
+            "2": 2407,
+            "38": 4,
+            "4": 1236,
+            "40": 3,
+            "42": 1,
+            "44": 6,
+            "46": 4,
+            "48": 1,
+            "50": 2,
+            "52": 2,
+            "54": 1,
+            "6": 448,
+            "62": 1,
+            "66": 1,
+            "8": 167
+          },
+          "tested_rootless_neighbors": 1642,
+          "unique_raw_neighbors": 6000
+        },
+        {
+          "best_root_and_mask_profile": [
+            0,
+            [
+              2,
+              3
+            ]
+          ],
+          "eligible_neighbor_count": 6000,
+          "frontier_size": 20,
+          "generation": 4,
+          "hit": false,
+          "root_count_histogram": {
+            "0": 1747,
+            "10": 32,
+            "12": 18,
+            "14": 5,
+            "2": 2367,
+            "4": 1218,
+            "6": 427,
+            "8": 186
+          },
+          "tested_rootless_neighbors": 1747,
+          "unique_raw_neighbors": 6000
+        },
+        {
+          "best_root_and_mask_profile": [
+            0,
+            [
+              2,
+              2
+            ]
+          ],
+          "eligible_neighbor_count": 6000,
+          "frontier_size": 20,
+          "generation": 5,
+          "hit": false,
+          "root_count_histogram": {
+            "0": 1729,
+            "10": 31,
+            "12": 10,
+            "14": 5,
+            "2": 2407,
+            "4": 1246,
+            "6": 434,
+            "8": 138
+          },
+          "tested_rootless_neighbors": 1729,
+          "unique_raw_neighbors": 6000
+        },
+        {
+          "best_root_and_mask_profile": [
+            0,
+            [
+              2,
+              2
+            ]
+          ],
+          "eligible_neighbor_count": 6000,
+          "frontier_size": 20,
+          "generation": 6,
+          "hit": false,
+          "root_count_histogram": {
+            "0": 1682,
+            "10": 39,
+            "12": 20,
+            "14": 5,
+            "2": 2441,
+            "4": 1239,
+            "6": 424,
+            "8": 150
+          },
+          "tested_rootless_neighbors": 1682,
+          "unique_raw_neighbors": 6000
+        },
+        {
+          "best_root_and_mask_profile": [
+            0,
+            [
+              2,
+              2
+            ]
+          ],
+          "eligible_neighbor_count": 6000,
+          "frontier_size": 20,
+          "generation": 7,
+          "hit": false,
+          "root_count_histogram": {
+            "0": 1700,
+            "10": 30,
+            "12": 11,
+            "14": 9,
+            "2": 2437,
+            "4": 1206,
+            "6": 466,
+            "8": 141
+          },
+          "tested_rootless_neighbors": 1700,
+          "unique_raw_neighbors": 6000
+        },
+        {
+          "best_root_and_mask_profile": [
+            0,
+            [
+              2,
+              2
+            ]
+          ],
+          "eligible_neighbor_count": 6000,
+          "frontier_size": 20,
+          "generation": 8,
+          "hit": false,
+          "root_count_histogram": {
+            "0": 1754,
+            "10": 27,
+            "12": 5,
+            "14": 11,
+            "16": 1,
+            "2": 2398,
+            "4": 1226,
+            "6": 430,
+            "8": 148
+          },
+          "tested_rootless_neighbors": 1754,
+          "unique_raw_neighbors": 6000
+        }
+      ],
+      "matching_finite_form_genera": 1,
+      "persistent_elite_enabled": false,
+      "proof_boundary": "No zero-mask core occurred in this fixed finite beam. This is not a genus-wide nonexistence result.",
+      "root_descent_enabled": true,
+      "rootless_bridge_class_indices_used_by_search": [
+        2,
+        3
+      ],
+      "search_mask_violation_cap": 3,
+      "support_signature_diversity_enabled": true,
+      "target_frame_determinant": 948,
+      "unique_raw_neighbors": 42300,
+      "zero_mask_core_found": false
+    }
+  ],
+  "fixed_search_rule": {
+    "diversity_slots": 8,
+    "elite_slots": 12,
+    "generations": 8,
+    "mask_violation_cap": 3,
+    "persistent_elite_enabled": false,
+    "primes": [
+      7,
+      11,
+      13,
+      17,
+      19
+    ],
+    "random_seed_reset_per_corridor": 314159,
+    "root_descent_enabled": true,
+    "samples_per_parent": 300,
+    "score": "root count first, then minimum and total occupied reverse-mask cells",
+    "support_signature_diversity_enabled": true,
+    "zero_mask_acceptance_remains_exact_under_cap": true
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json": "1d6e18fe4663a832a9a581c6ba1de670c1226852825f7017de68bdd3bdc674b0",
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json": "794e786a99aeb8590e97dc8d43181e17ffd2ec416e2cb11996cf506488302d0a",
+    "elkies-k3/scripts/certify_integral_rank_transfer_core_generation.sage": "70ed2acf14b1bb1aa84d018a7d1b0152a45aa60c12a769e0ea440e770f5a7466",
+    "elkies-k3/scripts/certify_integral_rank_transfer_reverse_theta_masks.sage": "ef7e990fc8a42d4d8dc7ffea7c65f9205d85968964495e8bfb385e0ce099d87f",
+    "elkies-k3/scripts/generate_integral_rank_transfer_masked_core_neighbors.sage": "076a5d19242d494b5364a224d2c123bf0e947bc81e839cf1cfb2dd6cb2a2818c"
+  },
+  "proof_boundary": "Each hit is checked by exact root enumeration, reverse-mask support, graph glue, and target-frame isometry. A miss closes only the fixed finite beam, not the forced genus.",
+  "schema": "elkies-k3.integral-rank-transfer-masked-core-controls.v1",
+  "status": "PASS_FIXED_RULE_PROSPECTIVE_CONTROLS"
+}

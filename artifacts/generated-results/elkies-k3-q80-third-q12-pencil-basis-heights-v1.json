@@ -1,0 +1,839 @@
+{
+  "basis_relations": {
+    "delta": "delta^2=D, omega=4*sqrt(N)*delta/D for reduced q1*q2=N/D",
+    "omega": "theta^2=(q1+q2)+omega/2",
+    "theta_squared": "theta^2"
+  },
+  "claim_boundary": "The comparison covers exactly the 63 coefficients of the pinned moving equation. It does not optimize global rescaling, base PGL2, Weierstrass transformations, or integral ideals.",
+  "delta_vs_omega_term_counts": {
+    "equal": 0,
+    "higher": 54,
+    "lower": 9
+  },
+  "height_definition": "maximum numerator/denominator bit length among the two rational coordinates of each coefficient, before any global model rescaling",
+  "inputs": {
+    "checker": {
+      "path": "elkies-k3/scripts/audit_q80_third_q12_pencil_basis_heights.py",
+      "sha256": "dbcf723dc4ba57030e98ff7962556388d5a81a465aaf4e09320cccf3bfa7c67d"
+    },
+    "operands": {
+      "path": "artifacts/generated-results/q80-third-q12-um2-biquadratic-closure-operands-p19-hensel-qq.json",
+      "schema": "elkies-k3.q80-third-q12-biquadratic-closure-operands-p19-hensel-qq.v1",
+      "sha256": "b17b4c3def3052fc62d5f37010c64f9642f8e59431807f156c958a0bd50c95db"
+    },
+    "pencil": {
+      "path": "artifacts/generated-results/q80-third-q12-um2-biquadratic-resolved-pencil-qq.json",
+      "schema": "elkies-k3.q80-third-q12-biquadratic-resolved-pencil-qq.v1",
+      "sha256": "ac67210166cd414945e1fa373e8f0d5829ff8231daf83c764c376a32ff4b641e"
+    }
+  },
+  "maximum_delta_minus_omega_bits": 5929,
+  "per_term": [
+    {
+      "degrees_T_W_x": [
+        0,
+        0,
+        0
+      ],
+      "height_bits": {
+        "delta": 1445861,
+        "omega": 1439930,
+        "theta_squared": 1445989
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        0,
+        1
+      ],
+      "height_bits": {
+        "delta": 1427703,
+        "omega": 1421751,
+        "theta_squared": 1427813
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        0,
+        2
+      ],
+      "height_bits": {
+        "delta": 1407105,
+        "omega": 1401135,
+        "theta_squared": 1407191
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        0,
+        3
+      ],
+      "height_bits": {
+        "delta": 874331,
+        "omega": 879226,
+        "theta_squared": 879226
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        1,
+        0
+      ],
+      "height_bits": {
+        "delta": 1439808,
+        "omega": 1433871,
+        "theta_squared": 1439938
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        1,
+        1
+      ],
+      "height_bits": {
+        "delta": 1421650,
+        "omega": 1415694,
+        "theta_squared": 1421752
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        1,
+        2
+      ],
+      "height_bits": {
+        "delta": 1398640,
+        "omega": 1390238,
+        "theta_squared": 1398724
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        2,
+        0
+      ],
+      "height_bits": {
+        "delta": 1433759,
+        "omega": 1427818,
+        "theta_squared": 1433878
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        2,
+        1
+      ],
+      "height_bits": {
+        "delta": 1415591,
+        "omega": 1409628,
+        "theta_squared": 1415688
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        2,
+        2
+      ],
+      "height_bits": {
+        "delta": 1387750,
+        "omega": 1381753,
+        "theta_squared": 1387827
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        3,
+        0
+      ],
+      "height_bits": {
+        "delta": 1427692,
+        "omega": 1421755,
+        "theta_squared": 1427805
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        3,
+        1
+      ],
+      "height_bits": {
+        "delta": 1409537,
+        "omega": 1402354,
+        "theta_squared": 1409630
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        4,
+        0
+      ],
+      "height_bits": {
+        "delta": 1421646,
+        "omega": 1415694,
+        "theta_squared": 1421756
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        4,
+        1
+      ],
+      "height_bits": {
+        "delta": 1398643,
+        "omega": 1392658,
+        "theta_squared": 1398731
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        5,
+        0
+      ],
+      "height_bits": {
+        "delta": 1415594,
+        "omega": 1409623,
+        "theta_squared": 1415697
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        5,
+        1
+      ],
+      "height_bits": {
+        "delta": 1387749,
+        "omega": 1381755,
+        "theta_squared": 1387828
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        6,
+        0
+      ],
+      "height_bits": {
+        "delta": 1409535,
+        "omega": 1403570,
+        "theta_squared": 1409636
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        6,
+        1
+      ],
+      "height_bits": {
+        "delta": 874331,
+        "omega": 879231,
+        "theta_squared": 879231
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        7,
+        0
+      ],
+      "height_bits": {
+        "delta": 1398644,
+        "omega": 1392669,
+        "theta_squared": 1398733
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        8,
+        0
+      ],
+      "height_bits": {
+        "delta": 1387750,
+        "omega": 1381756,
+        "theta_squared": 1387830
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        0,
+        9,
+        0
+      ],
+      "height_bits": {
+        "delta": 874330,
+        "omega": 879231,
+        "theta_squared": 879231
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        0,
+        0
+      ],
+      "height_bits": {
+        "delta": 1434973,
+        "omega": 1429037,
+        "theta_squared": 1435102
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        0,
+        1
+      ],
+      "height_bits": {
+        "delta": 1416816,
+        "omega": 1410856,
+        "theta_squared": 1416921
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        0,
+        2
+      ],
+      "height_bits": {
+        "delta": 1398638,
+        "omega": 1390237,
+        "theta_squared": 1398722
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        0,
+        3
+      ],
+      "height_bits": {
+        "delta": 863432,
+        "omega": 868322,
+        "theta_squared": 868322
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        1,
+        0
+      ],
+      "height_bits": {
+        "delta": 1428920,
+        "omega": 1422977,
+        "theta_squared": 1429044
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        1,
+        1
+      ],
+      "height_bits": {
+        "delta": 1410760,
+        "omega": 1404793,
+        "theta_squared": 1410855
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        1,
+        2
+      ],
+      "height_bits": {
+        "delta": 1387744,
+        "omega": 1379340,
+        "theta_squared": 1387823
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        2,
+        0
+      ],
+      "height_bits": {
+        "delta": 1422869,
+        "omega": 1416926,
+        "theta_squared": 1422986
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        2,
+        1
+      ],
+      "height_bits": {
+        "delta": 1404705,
+        "omega": 1398731,
+        "theta_squared": 1404797
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        2,
+        2
+      ],
+      "height_bits": {
+        "delta": 1376862,
+        "omega": 1370869,
+        "theta_squared": 1376934
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        3,
+        0
+      ],
+      "height_bits": {
+        "delta": 1416812,
+        "omega": 1410862,
+        "theta_squared": 1416925
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        3,
+        1
+      ],
+      "height_bits": {
+        "delta": 1398646,
+        "omega": 1391461,
+        "theta_squared": 1398735
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        4,
+        0
+      ],
+      "height_bits": {
+        "delta": 1410763,
+        "omega": 1404800,
+        "theta_squared": 1410869
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        4,
+        1
+      ],
+      "height_bits": {
+        "delta": 1387749,
+        "omega": 1381766,
+        "theta_squared": 1387831
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        5,
+        0
+      ],
+      "height_bits": {
+        "delta": 1404705,
+        "omega": 1398736,
+        "theta_squared": 1404802
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        5,
+        1
+      ],
+      "height_bits": {
+        "delta": 1376861,
+        "omega": 1370871,
+        "theta_squared": 1376936
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        6,
+        0
+      ],
+      "height_bits": {
+        "delta": 1398652,
+        "omega": 1392673,
+        "theta_squared": 1398742
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        6,
+        1
+      ],
+      "height_bits": {
+        "delta": 863432,
+        "omega": 868326,
+        "theta_squared": 868326
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        7,
+        0
+      ],
+      "height_bits": {
+        "delta": 1387752,
+        "omega": 1381763,
+        "theta_squared": 1387835
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        8,
+        0
+      ],
+      "height_bits": {
+        "delta": 1376862,
+        "omega": 1370872,
+        "theta_squared": 1376937
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        1,
+        9,
+        0
+      ],
+      "height_bits": {
+        "delta": 863431,
+        "omega": 868326,
+        "theta_squared": 868326
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        0,
+        0
+      ],
+      "height_bits": {
+        "delta": 1462828,
+        "omega": 1456899,
+        "theta_squared": 1462954
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        0,
+        1
+      ],
+      "height_bits": {
+        "delta": 1444673,
+        "omega": 1438718,
+        "theta_squared": 1444775
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        0,
+        2
+      ],
+      "height_bits": {
+        "delta": 1426495,
+        "omega": 1418093,
+        "theta_squared": 1426574
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        0,
+        3
+      ],
+      "height_bits": {
+        "delta": 852532,
+        "omega": 857414,
+        "theta_squared": 857414
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        1,
+        0
+      ],
+      "height_bits": {
+        "delta": 1456783,
+        "omega": 1450841,
+        "theta_squared": 1456895
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        1,
+        1
+      ],
+      "height_bits": {
+        "delta": 1438611,
+        "omega": 1432657,
+        "theta_squared": 1438704
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        1,
+        2
+      ],
+      "height_bits": {
+        "delta": 1415616,
+        "omega": 1407200,
+        "theta_squared": 1415687
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        2,
+        0
+      ],
+      "height_bits": {
+        "delta": 1450730,
+        "omega": 1444788,
+        "theta_squared": 1450840
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        2,
+        1
+      ],
+      "height_bits": {
+        "delta": 1432568,
+        "omega": 1426592,
+        "theta_squared": 1432654
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        2,
+        2
+      ],
+      "height_bits": {
+        "delta": 1404720,
+        "omega": 1398731,
+        "theta_squared": 1404784
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        3,
+        0
+      ],
+      "height_bits": {
+        "delta": 1444678,
+        "omega": 1438712,
+        "theta_squared": 1444784
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        3,
+        1
+      ],
+      "height_bits": {
+        "delta": 1426516,
+        "omega": 1419314,
+        "theta_squared": 1426596
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        4,
+        0
+      ],
+      "height_bits": {
+        "delta": 1438626,
+        "omega": 1432664,
+        "theta_squared": 1438724
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        4,
+        1
+      ],
+      "height_bits": {
+        "delta": 1415614,
+        "omega": 1409628,
+        "theta_squared": 1415686
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        5,
+        0
+      ],
+      "height_bits": {
+        "delta": 1432569,
+        "omega": 1426599,
+        "theta_squared": 1432660
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        5,
+        1
+      ],
+      "height_bits": {
+        "delta": 1404719,
+        "omega": 1398732,
+        "theta_squared": 1404785
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        6,
+        0
+      ],
+      "height_bits": {
+        "delta": 1426519,
+        "omega": 1420539,
+        "theta_squared": 1426602
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        6,
+        1
+      ],
+      "height_bits": {
+        "delta": 852532,
+        "omega": 857419,
+        "theta_squared": 857419
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        7,
+        0
+      ],
+      "height_bits": {
+        "delta": 1415620,
+        "omega": 1409632,
+        "theta_squared": 1415696
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        8,
+        0
+      ],
+      "height_bits": {
+        "delta": 1404720,
+        "omega": 1398734,
+        "theta_squared": 1404787
+      }
+    },
+    {
+      "degrees_T_W_x": [
+        2,
+        9,
+        0
+      ],
+      "height_bits": {
+        "delta": 852531,
+        "omega": 857419,
+        "theta_squared": 857419
+      }
+    }
+  ],
+  "projective_conclusion_gate": "DELTA_LOWERS_RATIONAL_PROJECTIVE_HEIGHT_ONLY_MARGINALLY",
+  "rational_projective_delta_minus_omega_bits": -10888,
+  "rational_projective_normalization": {
+    "delta": {
+      "common_denominator_bits": 1484634,
+      "coordinate_count": 126,
+      "integer_content_bits": 7,
+      "nonzero_coordinate_count": 126,
+      "primitive_maximum_bits": 1484751
+    },
+    "omega": {
+      "common_denominator_bits": 1495525,
+      "coordinate_count": 126,
+      "integer_content_bits": 12,
+      "nonzero_coordinate_count": 126,
+      "primitive_maximum_bits": 1495639
+    },
+    "theta_squared": {
+      "common_denominator_bits": 1500372,
+      "coordinate_count": 126,
+      "integer_content_bits": 8,
+      "nonzero_coordinate_count": 126,
+      "primitive_maximum_bits": 1500491
+    }
+  },
+  "raw_conclusion_gate": "DELTA_DOES_NOT_LOWER_RAW_MAXIMUM_COORDINATE_HEIGHT",
+  "reproduce": "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python elkies-k3/scripts/audit_q80_third_q12_pencil_basis_heights.py --write-artifact",
+  "schema": "elkies-k3-q80-third-q12-pencil-basis-heights-v1",
+  "status": "PASS_EXACT_63_TERM_BOUNDED_METRIC",
+  "summaries": {
+    "delta": {
+      "maximum_bits": 1462828,
+      "median_bits": 1409537,
+      "minimum_bits": 852531,
+      "sum_bits": 84189233
+    },
+    "omega": {
+      "maximum_bits": 1456899,
+      "median_bits": 1403570,
+      "minimum_bits": 857414,
+      "sum_bits": 83895209
+    },
+    "theta_squared": {
+      "maximum_bits": 1462954,
+      "median_bits": 1409636,
+      "minimum_bits": 857414,
+      "sum_bits": 84238343
+    }
+  },
+  "term_count": 63
+}

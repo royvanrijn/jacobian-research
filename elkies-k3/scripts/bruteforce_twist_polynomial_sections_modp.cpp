@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <array>
 #include <cstdint>
 #include <fstream>
 #include <iostream>
@@ -150,8 +151,10 @@ int main(int argc, char** argv) {
     std::uint64_t solutions = 0;
     const bool interpolate_values = prime > x_degree;
     for (const auto& [leading_x, leading_y] : representative_y) {
-        auto test_polynomial = [&](const std::vector<int>& X, int first_value) {
-            ++tested;
+        auto test_polynomial = [&](
+            const std::vector<int>& X, int first_value, bool count_tested
+        ) {
+            if (count_tested) ++tested;
             bool passes = true;
             for (int value = first_value; value < prime && passes; ++value) {
                 const int x_value = evaluate(X, value, prime);
@@ -213,7 +216,7 @@ int main(int argc, char** argv) {
             X[x_degree] = leading_x;
             bool finished = false;
             while (!finished) {
-                test_polynomial(X, 0);
+                test_polynomial(X, 0, true);
                 int position = 0;
                 while (position < x_degree) {
                     if (++X[position] < prime) break;
@@ -222,7 +225,7 @@ int main(int argc, char** argv) {
                 }
                 finished = position == x_degree;
             }
-        } else {
+        } else if (prime <= 19) {
             std::vector<std::vector<int>> vandermonde(
                 x_degree, std::vector<int>(x_degree, 1)
             );
@@ -289,7 +292,7 @@ int main(int argc, char** argv) {
             }
             bool finished = false;
             while (!finished) {
-                test_polynomial(X, x_degree);
+                test_polynomial(X, x_degree, true);
                 int position = 0;
                 while (position < x_degree) {
                     const std::size_t old_digit = digits[position];
@@ -323,13 +326,243 @@ int main(int argc, char** argv) {
                 }
                 finished = position == x_degree;
             }
+        } else {
+            // Meet in the middle on eight interpolation values.  The other
+            // fibre-value square conditions are linear constraints on those
+            // values and are imposed with bitsets before the exact polynomial
+            // square test.  This avoids enumerating the full product of eight
+            // roughly half-field-sized domains.
+            std::vector<std::vector<int>> allowed_by_parameter(prime);
+            for (int parameter = 0; parameter < prime; ++parameter) {
+                for (int x_value = 0; x_value < prime; ++x_value) {
+                    const int rhs_value = mod(
+                        static_cast<std::int64_t>(x_value) * x_value % prime * x_value
+                            + static_cast<std::int64_t>(a_values[parameter]) * x_value
+                            + b_values[parameter],
+                        prime
+                    );
+                    if (square[rhs_value]) {
+                        allowed_by_parameter[parameter].push_back(x_value);
+                    }
+                }
+            }
+            std::vector<int> interpolation_points(prime);
+            for (int parameter = 0; parameter < prime; ++parameter) {
+                interpolation_points[parameter] = parameter;
+            }
+            std::stable_sort(
+                interpolation_points.begin(), interpolation_points.end(),
+                [&](int left, int right) {
+                    return allowed_by_parameter[left].size()
+                        < allowed_by_parameter[right].size();
+                }
+            );
+            interpolation_points.resize(x_degree);
+            std::vector<int> remaining_points;
+            for (int parameter = 0; parameter < prime; ++parameter) {
+                if (std::find(
+                        interpolation_points.begin(), interpolation_points.end(), parameter
+                    ) == interpolation_points.end()) {
+                    remaining_points.push_back(parameter);
+                }
+            }
+
+            std::vector<std::vector<int>> vandermonde(
+                x_degree, std::vector<int>(x_degree, 1)
+            );
+            for (int row = 0; row < x_degree; ++row) {
+                for (int column = 1; column < x_degree; ++column) {
+                    vandermonde[row][column] = mod(
+                        static_cast<std::int64_t>(vandermonde[row][column - 1])
+                            * interpolation_points[row],
+                        prime
+                    );
+                }
+            }
+            const auto inverse_vandermonde = invert_matrix(vandermonde, prime);
+            std::array<int, 8> leading_interpolant{};
+            for (int row = 0; row < x_degree; ++row) {
+                int point_power = 1;
+                for (int exponent = 0; exponent < x_degree; ++exponent) {
+                    point_power = mod(
+                        static_cast<std::int64_t>(point_power)
+                            * interpolation_points[row],
+                        prime
+                    );
+                }
+                for (int coefficient = 0; coefficient < x_degree; ++coefficient) {
+                    leading_interpolant[coefficient] = mod(
+                        leading_interpolant[coefficient]
+                            + static_cast<std::int64_t>(
+                                inverse_vandermonde[coefficient][row]
+                            ) * point_power,
+                        prime
+                    );
+                }
+            }
+            std::vector<int> leading_correction(remaining_points.size());
+            for (std::size_t index = 0; index < remaining_points.size(); ++index) {
+                int point_power = 1;
+                for (int exponent = 0; exponent < x_degree; ++exponent) {
+                    point_power = mod(
+                        static_cast<std::int64_t>(point_power) * remaining_points[index],
+                        prime
+                    );
+                }
+                leading_correction[index] = mod(
+                    point_power - evaluate(
+                        std::vector<int>(leading_interpolant.begin(), leading_interpolant.end()),
+                        remaining_points[index], prime
+                    ),
+                    prime
+                );
+            }
+
+            struct HalfTable {
+                std::vector<std::array<unsigned char, 8>> coefficients;
+                std::vector<std::vector<unsigned char>> signatures;
+            };
+            auto build_half = [&](int offset) {
+                HalfTable table;
+                std::array<int, 4> digits{};
+                bool finished = false;
+                while (!finished) {
+                    std::array<unsigned char, 8> coefficients{};
+                    for (int local = 0; local < 4; ++local) {
+                        const int row = offset + local;
+                        const int value = allowed_by_parameter[
+                            interpolation_points[row]
+                        ][digits[local]];
+                        for (int coefficient = 0; coefficient < x_degree; ++coefficient) {
+                            coefficients[coefficient] = static_cast<unsigned char>(mod(
+                                coefficients[coefficient]
+                                    + static_cast<std::int64_t>(
+                                        inverse_vandermonde[coefficient][row]
+                                    ) * value,
+                                prime
+                            ));
+                        }
+                    }
+                    table.coefficients.push_back(coefficients);
+                    std::vector<unsigned char> signature(remaining_points.size());
+                    const std::vector<int> coefficient_vector(
+                        coefficients.begin(), coefficients.end()
+                    );
+                    for (std::size_t index = 0; index < remaining_points.size(); ++index) {
+                        signature[index] = static_cast<unsigned char>(evaluate(
+                            coefficient_vector, remaining_points[index], prime
+                        ));
+                    }
+                    table.signatures.push_back(std::move(signature));
+
+                    int position = 0;
+                    while (position < 4) {
+                        ++digits[position];
+                        const int row = offset + position;
+                        if (digits[position] < static_cast<int>(
+                                allowed_by_parameter[interpolation_points[row]].size()
+                            )) {
+                            break;
+                        }
+                        digits[position] = 0;
+                        ++position;
+                    }
+                    finished = position == 4;
+                }
+                return table;
+            };
+            const HalfTable left_table = build_half(0);
+            const HalfTable right_table = build_half(4);
+            tested += static_cast<std::uint64_t>(left_table.coefficients.size())
+                * right_table.coefficients.size();
+            const std::size_t word_count = (right_table.coefficients.size() + 63) / 64;
+            const int bitset_constraints = std::min<int>(8, remaining_points.size());
+            std::vector<std::vector<std::vector<std::uint64_t>>> compatible(
+                bitset_constraints,
+                std::vector<std::vector<std::uint64_t>>(
+                    prime, std::vector<std::uint64_t>(word_count, 0)
+                )
+            );
+            for (int constraint = 0; constraint < bitset_constraints; ++constraint) {
+                const int parameter = remaining_points[constraint];
+                for (int left_residue = 0; left_residue < prime; ++left_residue) {
+                    for (std::size_t right = 0; right < right_table.coefficients.size(); ++right) {
+                        const int total = mod(
+                            left_residue
+                                + right_table.signatures[right][constraint]
+                                + static_cast<std::int64_t>(leading_x)
+                                    * leading_correction[constraint],
+                            prime
+                        );
+                        if (std::binary_search(
+                                allowed_by_parameter[parameter].begin(),
+                                allowed_by_parameter[parameter].end(), total
+                            )) {
+                            compatible[constraint][left_residue][right / 64]
+                                |= std::uint64_t(1) << (right % 64);
+                        }
+                    }
+                }
+            }
+            std::vector<std::uint64_t> candidates(word_count);
+            for (std::size_t left = 0; left < left_table.coefficients.size(); ++left) {
+                candidates = compatible[0][left_table.signatures[left][0]];
+                for (int constraint = 1; constraint < bitset_constraints; ++constraint) {
+                    const auto& mask = compatible[constraint][
+                        left_table.signatures[left][constraint]
+                    ];
+                    for (std::size_t word = 0; word < word_count; ++word) {
+                        candidates[word] &= mask[word];
+                    }
+                }
+                for (std::size_t word = 0; word < word_count; ++word) {
+                    std::uint64_t bits = candidates[word];
+                    while (bits) {
+                        const int offset = __builtin_ctzll(bits);
+                        const std::size_t right = 64 * word + offset;
+                        bits &= bits - 1;
+                        if (right >= right_table.coefficients.size()) continue;
+                        bool passes = true;
+                        for (std::size_t constraint = bitset_constraints;
+                             constraint < remaining_points.size() && passes;
+                             ++constraint) {
+                            const int total = mod(
+                                left_table.signatures[left][constraint]
+                                    + right_table.signatures[right][constraint]
+                                    + static_cast<std::int64_t>(leading_x)
+                                        * leading_correction[constraint],
+                                prime
+                            );
+                            passes = std::binary_search(
+                                allowed_by_parameter[remaining_points[constraint]].begin(),
+                                allowed_by_parameter[remaining_points[constraint]].end(),
+                                total
+                            );
+                        }
+                        if (!passes) continue;
+                        std::vector<int> X(x_degree + 1, 0);
+                        X[x_degree] = leading_x;
+                        for (int coefficient = 0; coefficient < x_degree; ++coefficient) {
+                            X[coefficient] = mod(
+                                left_table.coefficients[left][coefficient]
+                                    + right_table.coefficients[right][coefficient]
+                                    - static_cast<std::int64_t>(leading_x)
+                                        * leading_interpolant[coefficient],
+                                prime
+                            );
+                        }
+                        test_polynomial(X, prime, false);
+                    }
+                }
+            }
         }
         std::cerr << "completed leading_x=" << leading_x << " tested=" << tested
                   << " solutions=" << solutions << '\n';
     }
     std::cout << "SUMMARY " << tested << ' ' << passed_value_sieve << ' '
               << solutions << ' '
-              << (interpolate_values ? "value_interpolation" : "coefficient_odometer")
+              << (!interpolate_values ? "coefficient_odometer"
+                    : prime <= 19 ? "value_interpolation" : "value_mitm")
               << '\n';
     return 0;
 }

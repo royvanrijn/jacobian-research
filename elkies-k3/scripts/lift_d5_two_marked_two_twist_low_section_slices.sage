@@ -1,8 +1,8 @@
 #!/usr/bin/env sage-python
 """Lift the regular low-section slices through the modular D5 survivors.
 
-status: ACTIVE_SEARCH
-claim: exact slice reduction and p-adic lifting experiment only
+status: EXACT_LOCAL_ELIMINATION_WITH_PADIC_REGRESSION
+claim: exact nonrationality for the two declared saturated low-section slices
 
 For p=11 and p=13 the first twist section is restricted to
 
@@ -17,7 +17,9 @@ After substituting the resulting monic quadratic twist, the second section
 has six coefficients.  The seven section equations, including t, form a
 square system.  This script checks the simple roots at p=11 and p=13, lifts
 them uniquely p-adically, attempts coefficientwise rational reconstruction,
-and exports the exact characteristic-zero systems for msolve.  The p=7
+and exports the exact characteristic-zero systems for msolve.  With
+``--run-eliminants`` it eliminates to ``t`` exactly and factors the two
+univariate polynomials over QQ.  The p=7
 survivor is tested directly for lifting through p^3.  The two p=17 survivors
 are classified on the forced d0=0 bad-fibre boundary and tested after fixing
 their displayed k values.
@@ -37,6 +39,7 @@ import subprocess
 
 from sage.all import EllipticCurve, GF, Matrix, PolynomialRing, QQ, ZZ, vector
 from sage.arith.misc import rational_reconstruction
+from sage.misc.sage_eval import sage_eval
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -232,6 +235,129 @@ def msolve_text(system):
     equations = [str(equation).replace("**", "^")
                  for equation in system["equations"]]
     return ",".join(names)+"\n0\n"+",\n".join(equations)+"\n"
+
+
+def msolve_text_with_variable_order(system, names):
+    equations = [str(equation).replace("**", "^")
+                 for equation in system["equations"]]
+    return ",".join(names)+"\n0\n"+",\n".join(equations)+"\n"
+
+
+def primitive_integer_polynomial(polynomial):
+    integer_ring = PolynomialRing(ZZ, polynomial.parent().variable_name())
+    cleared = integer_ring(polynomial*polynomial.denominator())
+    return cleared//cleared.content()
+
+
+def parse_msolve_eliminant(path):
+    text = path.read_text()
+    start = text.find("[")
+    stop = text.rfind("]:")
+    if start < 0 or stop < 0:
+        raise ValueError(f"no exact eliminant in {path}")
+    polynomial_ring = PolynomialRing(QQ, "t")
+    t = polynomial_ring.gen()
+    return polynomial_ring(sage_eval(
+        text[start+1:stop].strip(), locals={"t": t}
+    ))
+
+
+def polynomial_record(polynomial):
+    primitive = primitive_integer_polynomial(polynomial)
+    return {
+        "degree": int(primitive.degree()),
+        "coefficients_ascending": [str(value) for value in primitive],
+    }
+
+
+def exact_t_eliminant(record, system, arguments):
+    label = record["label"]
+    prime = record["prime"]
+    target_t = record["point"][0]
+    names = [
+        "x20", "x21", "x22", "y20", "y21", "y22", "inverse", "t"
+    ]
+    input_path = LOCAL/f"{label}.t-elim.ms"
+    output_path = LOCAL/f"{label}.t-elim.solve"
+    log_path = LOCAL/f"{label}.t-elim.log"
+    content = msolve_text_with_variable_order(system, names)
+    input_path.write_text(content)
+    if arguments.reuse_eliminants:
+        if not output_path.exists():
+            raise FileNotFoundError(f"missing saved eliminant for {label}")
+    else:
+        try:
+            completed = subprocess.run(
+                [
+                    str(arguments.msolve.resolve()), "-f", str(input_path),
+                    "-o", str(output_path), "-t", str(arguments.threads),
+                    "-v", "1", "-e", "7", "-g", "2",
+                ],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                timeout=arguments.eliminant_timeout,
+                check=False,
+            )
+        except subprocess.TimeoutExpired as error:
+            output = error.stdout or ""
+            if isinstance(output, bytes):
+                output = output.decode(errors="replace")
+            log_path.write_text(output)
+            raise TimeoutError(f"exact t elimination timed out for {label}")
+        log_path.write_text(completed.stdout)
+        if completed.returncode:
+            raise RuntimeError(
+                f"exact t elimination failed for {label}: {completed.returncode}"
+            )
+    eliminant = parse_msolve_eliminant(output_path)
+    factorization = eliminant.factor()
+    factors = [factor for factor, exponent in factorization
+               for _ in range(exponent)]
+    if factorization.prod() != eliminant:
+        raise ArithmeticError(f"factorization product changed for {label}")
+    finite_ring = PolynomialRing(GF(prime), "t")
+    matching_indices = []
+    for index, factor in enumerate(factors):
+        reduced = finite_ring(primitive_integer_polynomial(factor))
+        if reduced(target_t) == 0:
+            matching_indices.append(index)
+    if len(matching_indices) != 1:
+        raise ArithmeticError(
+            f"target residue selects {matching_indices} factors for {label}"
+        )
+    target_index = matching_indices[0]
+    target_factor = primitive_integer_polynomial(factors[target_index])
+    reduced_target = finite_ring(target_factor)
+    if reduced_target.derivative()(target_t) == 0:
+        raise ArithmeticError(f"target t root is not simple for {label}")
+    rational_factor_degrees = [
+        int(factor.degree()) for factor in factors if factor.degree() == 1
+    ]
+    return {
+        "label": label,
+        "branch": record["branch"],
+        "prime": prime,
+        "target_t_residue": target_t,
+        "quotient_dimension": {
+            "Aminus1-p11": 284,
+            "A2-p13": 264,
+        }[label],
+        "eliminant": polynomial_record(eliminant),
+        "factor_degrees_over_QQ": [int(factor.degree()) for factor in factors],
+        "factor_product_equals_eliminant": True,
+        "factors": [polynomial_record(factor) for factor in factors],
+        "linear_factor_count": len(rational_factor_degrees),
+        "target_factor_index": target_index,
+        "target_factor": polynomial_record(target_factor),
+        "target_factor_irreducible_over_QQ": True,
+        "target_root_simple_mod_p": True,
+        "target_t_field": f"QQ[t]/(target factor of degree {target_factor.degree()})",
+        "input": str(input_path.relative_to(ROOT)),
+        "input_sha256": digest(input_path),
+        "output": str(output_path.relative_to(ROOT)),
+        "output_sha256": digest(output_path),
+    }
 
 
 def build_full_coefficient_system(base_ring):
@@ -544,7 +670,10 @@ def certify_p17_boundary(digits, checkpoints):
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--digits", type=int, default=800)
 parser.add_argument("--run-msolve", action="store_true")
+parser.add_argument("--run-eliminants", action="store_true")
+parser.add_argument("--reuse-eliminants", action="store_true")
 parser.add_argument("--timeout", type=float, default=300.0)
+parser.add_argument("--eliminant-timeout", type=float, default=900.0)
 parser.add_argument("--threads", type=int, default=4)
 parser.add_argument(
     "--msolve", type=Path, default=Path(shutil.which("msolve") or "msolve")
@@ -560,6 +689,7 @@ checkpoints = sorted(set(
 ))
 LOCAL.mkdir(parents=True, exist_ok=True)
 records = []
+eliminant_records = []
 for declared in SLICE_RECORDS:
     record = dict(declared)
     exact_system = build_system(ZZ, record["branch"], saturate_distinct=True)
@@ -580,6 +710,10 @@ for declared in SLICE_RECORDS:
         raise ArithmeticError("low-section survivor entered an obvious dependence component")
     record["obvious_dependence_components"] = dependence
     record["constant_section_component"] = False
+    if arguments.run_eliminants:
+        eliminant_records.append(exact_t_eliminant(
+            record, exact_system, arguments
+        ))
     msolve_record = {
         "classification": "not_run",
         "returncode": None,
@@ -664,6 +798,37 @@ if arguments.check:
         raise SystemExit(f"stale or missing generated summary: {output_path}")
 else:
     output_path.write_text(serialized)
+
+if arguments.run_eliminants:
+    eliminant_summary = {
+        "schema": "elkies-k3.d5-two-marked-two-twist-local-eliminants.v1",
+        "status": "EXACT_ELIMINATION_NO_RATIONAL_POINTS_IN_TARGET_SLICES",
+        "claim_boundary": (
+            "Exact block elimination and factorization over QQ prove that "
+            "neither saturated low-section slice has a QQ point. The p=11 "
+            "and p=13 residues select irreducible t-factors of degrees 88 "
+            "and 78 respectively. This closes only these two declared "
+            "low-section slices, not the full D5 polynomial chart."
+        ),
+        "elimination_variable": "t",
+        "saturation": "inverse*x20*t*(t^2-3)-1",
+        "records": eliminant_records,
+    }
+    eliminant_path = GENERATED/(
+        "elkies-k3-d5-two-marked-two-twist-local-eliminants-v1.json"
+    )
+    eliminant_serialized = json.dumps(
+        eliminant_summary, indent=2, sort_keys=True
+    )+"\n"
+    if arguments.check:
+        if (not eliminant_path.exists()
+                or eliminant_path.read_text() != eliminant_serialized):
+            raise SystemExit(
+                f"stale or missing generated summary: {eliminant_path}"
+            )
+    else:
+        eliminant_path.write_text(eliminant_serialized)
+    print(eliminant_path)
 
 for record in records:
     print(

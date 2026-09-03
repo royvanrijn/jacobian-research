@@ -4,7 +4,8 @@
 The exact rank computation is separated from the targeted parameter sweep:
 
 * PARI ``ellrank`` supplies rigorous lower and upper Mordell--Weil bounds;
-* eclib saturation proves that the visible rank-one point is primitive;
+* a small exact quartic point search supplies seventeen independent points,
+  and isolated eclib checks prove that their lattice is saturated;
 * the inverse pointed-quartic map defines exact rational parameters ``t_n``
   from multiples ``n*G``;
 * reductions of those exact parameters give a rational nonsquare witness for
@@ -21,6 +22,7 @@ import hashlib
 import json
 import math
 from pathlib import Path
+import subprocess
 import sys
 
 from sage.all import EllipticCurve, GF, PolynomialRing, QQ, ZZ, gcd, lcm, pari, prime_range
@@ -38,6 +40,9 @@ OUTPUT = (
 TARGET_LABEL = "norm12-orbit-103b2"
 KNOWN_PARAMETER = QQ(1) / 25
 KNOWN_COVER_COORDINATE = QQ("3521934804796232704/643125")
+POINT_SEARCH_HEIGHT = 10_000
+SATURATION_INDEX_BOUND = 137_016_286_412
+SATURATION_PRIMES = (2, 3, 7, 23, 37, 40_251_553)
 
 
 def digest(path: Path) -> str:
@@ -114,6 +119,49 @@ def inverse_parameter(point, constants, parameter):
     local_parameter = (4 * v0**2 * (x_value + c) - d**2) / (2 * v0 * y_value)
     cover_coordinate = (x_value * local_parameter**2 - d * local_parameter) / (2 * v0) - v0
     return QQ(local_parameter + parameter), QQ(cover_coordinate)
+
+
+def forward_point(parameter, cover_coordinate, curve, constants):
+    unused_a, unused_b, c, d, unused_e, v0 = constants
+    local_parameter = QQ(parameter - KNOWN_PARAMETER)
+    if not local_parameter:
+        raise ZeroDivisionError("use the separately constructed point above t=1/25")
+    x_value = (
+        2 * v0 * (QQ(cover_coordinate) + v0) + d * local_parameter
+    ) / local_parameter**2
+    y_value = (
+        4 * v0**2 * (x_value + c) - d**2
+    ) / (2 * v0 * local_parameter)
+    return curve(x_value, y_value)
+
+
+def discover_rank_basis(quartic, curve, constants):
+    """Find the deterministic rank-17 basis from a small quartic point box."""
+
+    raw_points = pari(quartic).hyperellratpoints(POINT_SEARCH_HEIGHT)
+    minimal = curve.global_minimal_model()
+    isomorphism = curve.isomorphism_to(minimal)
+    mapped = []
+    for parameter, cover_coordinate in raw_points:
+        parameter = QQ(parameter)
+        if parameter == KNOWN_PARAMETER:
+            continue
+        mapped.append(isomorphism(forward_point(
+            parameter, QQ(cover_coordinate), curve, constants
+        )))
+    basis, index, regulator = minimal.saturation(mapped, max_prime=2)
+    if len(basis) != 17 or index != 1:
+        raise ArithmeticError(
+            f"the height-{POINT_SEARCH_HEIGHT} quartic search no longer gives the pinned rank-17 basis"
+        )
+    return basis, {
+        "naive_parameter_height_bound": POINT_SEARCH_HEIGHT,
+        "affine_quartic_point_count_including_both_signs": len(raw_points),
+        "mapped_point_count": len(mapped),
+        "independent_point_count_after_relation_reduction": len(basis),
+        "two_saturation_index": int(index),
+        "two_saturated_regulator_approx": str(regulator),
+    }
 
 
 def certify_inverse_map_identity(quartic, curve, constants):
@@ -290,6 +338,123 @@ def targeted_modular_sweep(records, source_index, curve, generator, constants, s
     }
 
 
+def exact_combination_sweep(
+    records, source_index, quartic, curve, minimal, basis, constants,
+    combination_rank, prime_count,
+):
+    """Enumerate exact subset sums in the rank-17 group and cross-test covers."""
+
+    inverse_isomorphism = minimal.isomorphism_to(curve)
+    pointed_basis = [inverse_isomorphism(point) for point in basis[:combination_rank]]
+    subset_points = [curve(0)]
+    for point in pointed_basis:
+        subset_points.extend([old + point for old in subset_points])
+
+    parameters = []
+    seen = set()
+    exceptional_count = 0
+    duplicate_count = 0
+    manifest = hashlib.sha256()
+    for mask, point in enumerate(subset_points[1:], start=1):
+        if point.is_zero() or not point[1]:
+            exceptional_count += 1
+            continue
+        parameter, cover_coordinate = inverse_parameter(point, constants, KNOWN_PARAMETER)
+        if cover_coordinate**2 != quartic(parameter):
+            raise ArithmeticError(f"subset-sum inverse map failed for mask {mask}")
+        key = (int(parameter.numerator()), int(parameter.denominator()))
+        if key in seen:
+            duplicate_count += 1
+            continue
+        seen.add(key)
+        manifest.update(f"{mask}\t{parameter}\t{cover_coordinate}\n".encode())
+        parameters.append((mask, parameter, cover_coordinate))
+
+    integer_curves = [normalized_integer_quartic(record) for record in records]
+    other_indices = [index for index in range(len(records)) if index != source_index]
+    other_labels = [records[index]["label"] for index in other_indices]
+    primes = select_good_primes(integer_curves, curve, pointed_basis[0], constants, prime_count)
+    witness_histogram = {prime: 0 for prime in primes}
+    witness_hash = hashlib.sha256()
+    exact_nonsquare_count = 0
+    simultaneous_splits = []
+
+    for mask, parameter, unused_cover_coordinate in parameters:
+        row = []
+        split_labels = []
+        for record_index in other_indices:
+            scalar, coefficients = integer_curves[record_index]
+            witness = 0
+            for prime in primes:
+                if int(parameter.denominator()) % prime == 0:
+                    continue
+                field = GF(prime)
+                reduced_parameter = mod_rational(parameter, field, prime)
+                value = field(scalar % prime) * sum(
+                    field(coefficients[index] % prime) * reduced_parameter**index
+                    for index in range(5)
+                )
+                if value and not value.is_square():
+                    witness = prime
+                    witness_histogram[prime] += 1
+                    break
+            if not witness:
+                branch = polynomial(
+                    records[record_index]["branch_polynomial_q_coefficients_low_to_high"],
+                    quartic.parent(),
+                )
+                if rational_square_root(branch(parameter)) is None:
+                    exact_nonsquare_count += 1
+                else:
+                    split_labels.append(records[record_index]["label"])
+            row.append(witness)
+        packed = array("H", row)
+        if sys.byteorder != "little":
+            packed.byteswap()
+        witness_hash.update(packed.tobytes())
+        if split_labels:
+            simultaneous_splits.append({
+                "subset_mask": mask,
+                "t": rational_text(parameter),
+                "other_split_cover_labels": split_labels,
+            })
+
+    prefix = [
+        {
+            "subset_mask": mask,
+            "t": rational_text(parameter),
+            "s_on_primitive_quartic": rational_text(cover_coordinate),
+        }
+        for mask, parameter, cover_coordinate in parameters[:8]
+    ]
+    return {
+        "basis_prefix_rank": combination_rank,
+        "nonempty_subset_count": (1 << combination_rank) - 1,
+        "exact_distinct_finite_parameter_count": len(parameters),
+        "exceptional_or_infinite_parameter_count": exceptional_count,
+        "duplicate_parameter_count": duplicate_count,
+        "other_cover_count": len(other_indices),
+        "parameter_cover_pairs": len(parameters) * len(other_indices),
+        "uniformly_good_witness_primes": primes,
+        "witness_prime_histogram": {
+            str(prime): count for prime, count in witness_histogram.items() if count
+        },
+        "exact_fallback_nonsquare_count": exact_nonsquare_count,
+        "simultaneous_splits": simultaneous_splits,
+        "exact_parameter_manifest_sha256": manifest.hexdigest(),
+        "first_witness_matrix_sha256": witness_hash.hexdigest(),
+        "explicit_prefix": prefix,
+        "conclusion": (
+            "Every retained subset sum was converted to an explicit exact rational quartic point. "
+            + (
+                "No other compiled cover splits on this population."
+                if not simultaneous_splits
+                else f"There are {len(simultaneous_splits)} parameters with at least one additional split cover."
+            )
+        ),
+    }
+
+
 def explicit_prefix(quartic, curve, generator, constants, count):
     rows = []
     manifest = hashlib.sha256()
@@ -315,13 +480,22 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--sample-count", type=int, default=10_000)
     parser.add_argument("--explicit-prefix", type=int, default=8)
+    parser.add_argument("--combination-rank", type=int, default=12)
     parser.add_argument("--prime-count", type=int, default=48)
     parser.add_argument("--pari-stack-gb", type=int, default=2)
     parser.add_argument("--skip-rank-descent", action="store_true")
+    parser.add_argument("--skip-full-saturation", action="store_true")
+    parser.add_argument("--saturation-prime", type=int, help=argparse.SUPPRESS)
+    parser.add_argument("--show-saturation-bound", action="store_true", help=argparse.SUPPRESS)
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
-    if args.sample_count < 100 or args.explicit_prefix < 1 or args.prime_count < 16:
+    if (
+        args.sample_count < 100
+        or args.explicit_prefix < 1
+        or not 2 <= args.combination_rank <= 17
+        or args.prime_count < 16
+    ):
         parser.error("use at least 100 samples, one explicit point, and 16 witness primes")
 
     splitting = json.loads(SPLITTING.read_text())
@@ -346,11 +520,25 @@ def main() -> None:
     torsion = minimal.torsion_subgroup()
     if torsion.order() != 1:
         raise ArithmeticError("unexpected rational torsion")
-    saturated_points, saturation_index, regulator = minimal.saturation(
-        [minimal_generator], max_prime=370
-    )
-    if saturation_index != 1 or saturated_points != [minimal_generator]:
-        raise ArithmeticError("the visible point is not primitive in its rank-one span")
+    basis, point_search_record = discover_rank_basis(primitive, curve, constants)
+
+    if args.saturation_prime is not None:
+        if args.saturation_prime not in SATURATION_PRIMES:
+            raise ValueError("the requested prime is not in the pinned saturation set")
+        saturated_points, index, regulator = minimal.saturation(
+            basis,
+            verbose=args.show_saturation_bound,
+            min_prime=args.saturation_prime,
+            max_prime=args.saturation_prime,
+        )
+        if index == 1 and saturated_points != basis:
+            raise ArithmeticError("eclib changed the basis while reporting index one")
+        print(json.dumps({
+            "prime": args.saturation_prime,
+            "saturation_index": int(index),
+            "regulator_approx": str(regulator),
+        }, sort_keys=True))
+        return
 
     if args.skip_rank_descent:
         if not args.output.exists():
@@ -362,21 +550,60 @@ def main() -> None:
         pari.allocatemem(args.pari_stack_gb * 1024**3)
         descent = pari(minimal).ellrank(
             0,
-            pari([[
-                minimal_generator[0],
-                minimal_generator[1],
-            ]]),
+            pari([[point[0], point[1]] for point in basis]),
         )
         rank_bounds = [int(descent[0]), int(descent[1])]
         descent_record = {
             "algorithm": "PARI ellrank with the visible point supplied",
-            "raw_result": str(descent),
             "lower_bound": rank_bounds[0],
             "upper_bound": rank_bounds[1],
             "sha_2_information": int(descent[2]),
+            "returned_independent_point_count": len(descent[3]),
         }
-    if rank_bounds != [1, 1]:
-        raise ArithmeticError(f"the exact Jacobian rank is not one: {rank_bounds}")
+    if rank_bounds != [17, 17]:
+        raise ArithmeticError(f"the exact Jacobian rank is not seventeen: {rank_bounds}")
+
+    if args.skip_full_saturation:
+        if not args.output.exists():
+            raise FileNotFoundError("--skip-full-saturation requires an existing certificate")
+        saturation_record = json.loads(args.output.read_text())["jacobian"]["full_saturation"]
+    else:
+        prime_records = []
+        for prime in SATURATION_PRIMES:
+            command = [
+                sys.executable,
+                str(Path(__file__).resolve()),
+                "--saturation-prime",
+                str(prime),
+            ]
+            if prime == 2:
+                command.append("--show-saturation-bound")
+            completed = subprocess.run(
+                command,
+                cwd=ROOT,
+                check=True,
+                capture_output=True,
+                text=True,
+            )
+            if prime == 2:
+                if (
+                    f"Saturation index bound (for points of good reduction)  = {SATURATION_INDEX_BOUND}"
+                    not in completed.stdout
+                    or "Tamagawa index primes are [ 2 3 7 23 ]" not in completed.stdout
+                ):
+                    raise ArithmeticError("the eclib saturation bound or Tamagawa primes changed")
+            record = json.loads(completed.stdout.strip().splitlines()[-1])
+            if record["saturation_index"] != 1:
+                raise ArithmeticError(f"the rank-17 basis is not {prime}-saturated")
+            prime_records.append(record)
+        saturation_record = {
+            "status": "PASS_FULL_ECLIB_SATURATION",
+            "saturation_index": 1,
+            "eclib_index_bound": SATURATION_INDEX_BOUND,
+            "index_bound_factorization": "2^2 * 23 * 37 * 40251553",
+            "tamagawa_index_primes": [2, 3, 7, 23],
+            "tested_saturation_primes": prime_records,
+        }
 
     map_identity = certify_inverse_map_identity(primitive, curve, constants)
     prefix, prefix_hash = explicit_prefix(
@@ -386,11 +613,15 @@ def main() -> None:
         records, source_index, curve, generator, constants,
         args.sample_count, args.prime_count,
     )
+    combination_sweep = exact_combination_sweep(
+        records, source_index, primitive, curve, minimal, basis, constants,
+        args.combination_rank, args.prime_count,
+    )
 
     a, b, c, d, e, v0 = constants
     result = {
         "schema": "elkies-k3.r17-norm12-103b2-jacobian.v1",
-        "status": "PASS_EXACT_RANK_ONE_AND_TARGETED_NO_OTHER_SPLITS",
+        "status": "PASS_EXACT_RANK_SEVENTEEN_AND_TARGETED_SPLIT_SWEEPS",
         "inputs": {relative(SPLITTING): digest(SPLITTING)},
         "source_cover": {
             "label": TARGET_LABEL,
@@ -416,22 +647,23 @@ def main() -> None:
             "pointed_to_minimal_isomorphism_u_r_s_t": [
                 rational_text(value) for value in isomorphism.tuple()
             ],
-            "generator_on_pointed_model": [
+            "initial_generator_on_pointed_model": [
                 rational_text(generator[0]), rational_text(generator[1])
             ],
-            "generator_on_global_minimal_model": [
+            "initial_generator_on_global_minimal_model": [
                 rational_text(minimal_generator[0]), rational_text(minimal_generator[1])
             ],
-            "generator_canonical_height": str(minimal_generator.height(precision=256)),
+            "initial_generator_canonical_height": str(minimal_generator.height(precision=256)),
+            "generators_on_global_minimal_model": [
+                [rational_text(point[0]), rational_text(point[1])] for point in basis
+            ],
+            "generator_count": len(basis),
+            "point_search": point_search_record,
             "torsion_order": int(torsion.order()),
             "mordell_weil_rank_bounds": rank_bounds,
-            "mordell_weil_group": "Z generated by the displayed point",
+            "mordell_weil_group": "Z^17 generated by the displayed saturated basis",
             "pari_2_descent": descent_record,
-            "rank_one_saturation": {
-                "index": int(saturation_index),
-                "index_bound": 370,
-                "regulator_approx": str(regulator),
-            },
+            "full_saturation": saturation_record,
             "root_number": int(minimal.root_number()),
             "conductor": str(minimal.conductor()),
         },
@@ -444,7 +676,9 @@ def main() -> None:
             },
             "identity_certificate": map_identity,
             "exception_boundary": (
-                "The denominator Y vanishes at -G, not at nG for n>=2, because G is nontorsion."
+                "The displayed inverse formula is undefined at Y=0. The modular sweep skips such reductions "
+                "prime by prime; complete witness coverage proves that none of its exact characteristic-zero "
+                "multiples is exceptional. The subset sweep checks and counts exceptional points directly."
             ),
         },
         "targeted_parameter_sweep": {
@@ -462,9 +696,12 @@ def main() -> None:
                 "exclusion has an independently replayed finite-field nonsquare witness."
             ),
         },
+        "exact_rank_basis_subset_sweep": combination_sweep,
         "proof_boundary": (
-            "PARI's equal 2-descent bounds prove rank one; torsion and saturation make the displayed point a generator. "
-            "The targeted sweep is complete only for the declared multiple interval and the 142 other compiled covers."
+            "PARI's equal 2-descent bounds prove rank seventeen; trivial torsion and the isolated eclib saturation "
+            "checks make the displayed points a full Mordell--Weil basis. "
+            "The two targeted sweeps are complete only for the declared multiple interval, subset population, "
+            "and the 142 other compiled covers."
         ),
         "reproducing_command": (
             "sage -python elkies-k3/scripts/certify_r17_norm12_103b2_jacobian.sage"
@@ -478,9 +715,10 @@ def main() -> None:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(serialized)
     print(
-        f"R17103B2JAC|rank={rank_bounds[0]}|torsion={torsion.order()}|"
-        f"samples={args.sample_count}|other_covers={sweep['other_cover_count']}|"
-        f"unresolved={sweep['unresolved_pair_count']}|output={args.output}"
+        f"R17103B2JAC|rank={rank_bounds[0]}|generators={len(basis)}|torsion={torsion.order()}|"
+        f"multiple_samples={args.sample_count}|subset_samples={combination_sweep['exact_distinct_finite_parameter_count']}|"
+        f"other_covers={sweep['other_cover_count']}|unresolved={sweep['unresolved_pair_count']}|"
+        f"subset_hits={len(combination_sweep['simultaneous_splits'])}|output={args.output}"
     )
 
 

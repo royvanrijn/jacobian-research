@@ -1,0 +1,455 @@
+{
+  "aggregate": {
+    "all_masks_leave_nonzero_cusp_kernel": true,
+    "corridor_count": 4,
+    "maximum_full_to_theta_symmetric_reduction": "115/6",
+    "minimum_cusp_zero_mask_kernel_dimension_lower_bound": 461,
+    "minimum_full_to_theta_symmetric_reduction": "18145/2496",
+    "rank17_children_constructed": 0
+  },
+  "corridors": [
+    {
+      "bridge_discriminant_order": 23,
+      "core_discriminant_order": 16560,
+      "corridor": "Golay720",
+      "cyclic_closure_dimensions": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        20,
+        29,
+        42,
+        57,
+        70,
+        72,
+        72
+      ],
+      "cyclic_submodule_dimension": 72,
+      "equals_full_orthogonal_invariant_space": true,
+      "frame_discriminant_group_invariants": [
+        2,
+        6,
+        60
+      ],
+      "frame_discriminant_order": 720,
+      "frame_discriminant_quadratic_gram": [
+        [
+          "1",
+          "1/2",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/2",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/4",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "2/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "4/3",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "4/5"
+        ]
+      ],
+      "full_to_invariant_reduction": "10",
+      "full_to_theta_symmetric_reduction": "115/6",
+      "full_weil_coefficient_dimension": 16560,
+      "modular_dimension_sieve": {
+        "cusp_forms_dimension": 472,
+        "dimension_integer_uniqueness_certified": true,
+        "isotropic_orbit_count": 4,
+        "mask_classes": [
+          {
+            "bridge_class_index": 1,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 462,
+            "observed_core_accepts": false,
+            "sign_reduced_mask_cells": 10
+          },
+          {
+            "bridge_class_index": 2,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 461,
+            "observed_core_accepts": true,
+            "sign_reduced_mask_cells": 11
+          }
+        ],
+        "modular_forms_dimension": 476,
+        "orthogonal_theta_symmetric_coefficient_dimension": 864,
+        "riemann_roch_ball_precision_bits": 192,
+        "smallest_cusp_zero_mask_kernel_dimension_lower_bound": 461,
+        "weight": "15/2"
+      },
+      "orthogonal_group_order": 96,
+      "orthogonal_invariant_coefficient_dimension": 1656,
+      "orthogonal_orbit_count": 72,
+      "orthogonal_orbit_size_distribution": {
+        "1": 2,
+        "12": 14,
+        "16": 2,
+        "2": 9,
+        "24": 9,
+        "3": 2,
+        "4": 14,
+        "48": 2,
+        "6": 9,
+        "8": 9
+      },
+      "primitive_root_order": 120,
+      "reverse_mask_coordinates_preserved": 2,
+      "split_prime": 601,
+      "theta_symmetric_coefficient_dimension": 864,
+      "weil_phase_level": 120,
+      "zero_orbit_size": 1
+    },
+    {
+      "bridge_discriminant_order": 47,
+      "core_discriminant_order": 44556,
+      "corridor": "H3",
+      "cyclic_closure_dimensions": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        10,
+        15,
+        22,
+        32,
+        47,
+        69,
+        101,
+        148,
+        217,
+        240,
+        240
+      ],
+      "cyclic_submodule_dimension": 240,
+      "equals_full_orthogonal_invariant_space": true,
+      "frame_discriminant_group_invariants": [
+        948
+      ],
+      "frame_discriminant_order": 948,
+      "frame_discriminant_quadratic_gram": [
+        [
+          "1/4",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "2/3",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "6/79"
+        ]
+      ],
+      "full_to_invariant_reduction": "79/20",
+      "full_to_theta_symmetric_reduction": "3713/480",
+      "full_weil_coefficient_dimension": 44556,
+      "modular_dimension_sieve": {
+        "cusp_forms_dimension": 3120,
+        "dimension_integer_uniqueness_certified": true,
+        "isotropic_orbit_count": 1,
+        "mask_classes": [
+          {
+            "bridge_class_index": 1,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 3106,
+            "observed_core_accepts": false,
+            "sign_reduced_mask_cells": 14
+          },
+          {
+            "bridge_class_index": 2,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 3103,
+            "observed_core_accepts": false,
+            "sign_reduced_mask_cells": 17
+          },
+          {
+            "bridge_class_index": 3,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 3101,
+            "observed_core_accepts": true,
+            "sign_reduced_mask_cells": 19
+          }
+        ],
+        "modular_forms_dimension": 3121,
+        "orthogonal_theta_symmetric_coefficient_dimension": 5760,
+        "riemann_roch_ball_precision_bits": 192,
+        "smallest_cusp_zero_mask_kernel_dimension_lower_bound": 3101,
+        "weight": "15/2"
+      },
+      "orthogonal_group_order": 8,
+      "orthogonal_invariant_coefficient_dimension": 11280,
+      "orthogonal_orbit_count": 240,
+      "orthogonal_orbit_size_distribution": {
+        "1": 2,
+        "2": 81,
+        "4": 118,
+        "8": 39
+      },
+      "primitive_root_order": 1896,
+      "reverse_mask_coordinates_preserved": 3,
+      "split_prime": 5689,
+      "theta_symmetric_coefficient_dimension": 5760,
+      "weil_phase_level": 1896,
+      "zero_orbit_size": 1
+    },
+    {
+      "bridge_discriminant_order": 191,
+      "core_discriminant_order": 181450,
+      "corridor": "NS0024",
+      "cyclic_closure_dimensions": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        10,
+        15,
+        22,
+        32,
+        47,
+        69,
+        101,
+        148,
+        217,
+        260,
+        260
+      ],
+      "cyclic_submodule_dimension": 260,
+      "equals_full_orthogonal_invariant_space": true,
+      "frame_discriminant_group_invariants": [
+        950
+      ],
+      "frame_discriminant_order": 950,
+      "frame_discriminant_quadratic_gram": [
+        [
+          "3/2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "2/25",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "2/19"
+        ]
+      ],
+      "full_to_invariant_reduction": "95/26",
+      "full_to_theta_symmetric_reduction": "18145/2496",
+      "full_weil_coefficient_dimension": 181450,
+      "modular_dimension_sieve": {
+        "cusp_forms_dimension": 13485,
+        "dimension_integer_uniqueness_certified": true,
+        "isotropic_orbit_count": 3,
+        "mask_classes": [
+          {
+            "bridge_class_index": 1,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 13458,
+            "observed_core_accepts": false,
+            "sign_reduced_mask_cells": 27
+          },
+          {
+            "bridge_class_index": 2,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 13450,
+            "observed_core_accepts": false,
+            "sign_reduced_mask_cells": 35
+          },
+          {
+            "bridge_class_index": 3,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 13445,
+            "observed_core_accepts": true,
+            "sign_reduced_mask_cells": 40
+          },
+          {
+            "bridge_class_index": 4,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 13444,
+            "observed_core_accepts": false,
+            "sign_reduced_mask_cells": 41
+          },
+          {
+            "bridge_class_index": 5,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 13441,
+            "observed_core_accepts": false,
+            "sign_reduced_mask_cells": 44
+          },
+          {
+            "bridge_class_index": 6,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 13443,
+            "observed_core_accepts": false,
+            "sign_reduced_mask_cells": 42
+          },
+          {
+            "bridge_class_index": 7,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 13443,
+            "observed_core_accepts": true,
+            "sign_reduced_mask_cells": 42
+          }
+        ],
+        "modular_forms_dimension": 13488,
+        "orthogonal_theta_symmetric_coefficient_dimension": 24960,
+        "riemann_roch_ball_precision_bits": 192,
+        "smallest_cusp_zero_mask_kernel_dimension_lower_bound": 13441,
+        "weight": "15/2"
+      },
+      "orthogonal_group_order": 4,
+      "orthogonal_invariant_coefficient_dimension": 49660,
+      "orthogonal_orbit_count": 260,
+      "orthogonal_orbit_size_distribution": {
+        "1": 2,
+        "2": 42,
+        "4": 216
+      },
+      "primitive_root_order": 1900,
+      "reverse_mask_coordinates_preserved": 7,
+      "split_prime": 5701,
+      "theta_symmetric_coefficient_dimension": 24960,
+      "weil_phase_level": 1900,
+      "zero_orbit_size": 1
+    },
+    {
+      "bridge_discriminant_order": 23,
+      "core_discriminant_order": 21804,
+      "corridor": "Q80",
+      "cyclic_closure_dimensions": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        10,
+        15,
+        22,
+        32,
+        47,
+        69,
+        101,
+        148,
+        217,
+        240,
+        240
+      ],
+      "cyclic_submodule_dimension": 240,
+      "equals_full_orthogonal_invariant_space": true,
+      "frame_discriminant_group_invariants": [
+        948
+      ],
+      "frame_discriminant_order": 948,
+      "frame_discriminant_quadratic_gram": [
+        [
+          "1/4",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "2/3",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "6/79"
+        ]
+      ],
+      "full_to_invariant_reduction": "79/20",
+      "full_to_theta_symmetric_reduction": "1817/240",
+      "full_weil_coefficient_dimension": 21804,
+      "modular_dimension_sieve": {
+        "cusp_forms_dimension": 1562,
+        "dimension_integer_uniqueness_certified": true,
+        "isotropic_orbit_count": 1,
+        "mask_classes": [
+          {
+            "bridge_class_index": 1,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 1552,
+            "observed_core_accepts": false,
+            "sign_reduced_mask_cells": 10
+          },
+          {
+            "bridge_class_index": 2,
+            "cusp_zero_mask_kernel_dimension_lower_bound": 1551,
+            "observed_core_accepts": true,
+            "sign_reduced_mask_cells": 11
+          }
+        ],
+        "modular_forms_dimension": 1563,
+        "orthogonal_theta_symmetric_coefficient_dimension": 2880,
+        "riemann_roch_ball_precision_bits": 192,
+        "smallest_cusp_zero_mask_kernel_dimension_lower_bound": 1551,
+        "weight": "15/2"
+      },
+      "orthogonal_group_order": 8,
+      "orthogonal_invariant_coefficient_dimension": 5520,
+      "orthogonal_orbit_count": 240,
+      "orthogonal_orbit_size_distribution": {
+        "1": 2,
+        "2": 81,
+        "4": 118,
+        "8": 39
+      },
+      "primitive_root_order": 1896,
+      "reverse_mask_coordinates_preserved": 2,
+      "split_prime": 5689,
+      "theta_symmetric_coefficient_dimension": 2880,
+      "weil_phase_level": 1896,
+      "zero_orbit_size": 1
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json": "1d6e18fe4663a832a9a581c6ba1de670c1226852825f7017de68bdd3bdc674b0",
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-reverse-theta-masks-v1.json": "4ed3d6cf55eb13abee4576619cb4274d34b067e25531cb2d31004035fd4bf7b3"
+  },
+  "proof_boundary": {
+    "not_proved": "The dimension calculation does not decide whether the affine normalization theta_K(0,0)=1 is compatible with each rejected mask. No integral nonnegative modular signature has yet been enumerated, no allowed signature has been realized by a new lattice, and no end-to-end core-generation or complexity theorem is claimed.",
+    "proved": "Exact preservation of all reverse-mask coordinates under orthogonal averaging, and exact orbit/cyclic dimensions for the four terminal finite quadratic modules."
+  },
+  "reproduce": "sage -python elkies-k3/scripts/certify_integral_rank_transfer_weil_compression.sage --check",
+  "schema": "elkies-k3.integral-rank-transfer-weil-compression.v1",
+  "status": "PASS_EXACT_ZERO_ORBIT_WEIL_COMPRESSION",
+  "theorem": {
+    "cyclic_refinement": "The still smaller candidate is the cyclic Weil submodule generated by e_0. For each of the four observed q_W it equals C[A_W]^{O(q_W)}; full rank is certified after reduction at a prime splitting the recorded cyclotomic phase field.",
+    "dimension": "Modular feasibility may therefore be computed in C[A_W]^{O(q_W)} tensor C[A_C], followed by theta symmetry, instead of the full C[A_K].",
+    "factorization": "The forced finite form is q_K=q_W orthogonal_sum (-q_C), and every reverse-mask coordinate has A_W-coordinate zero.",
+    "modular_dimension_audit": "The invariant Riemann--Roch trace formula computes the exact weight-15/2 modular and cusp dimensions. Any m-cell zero mask has cusp-kernel codimension at most m; every observed mask leaves a positive kernel of the certified recorded dimension.",
+    "projection": "Averaging over O(q_W) commutes with the Weil representation. Because {0} is a singleton orbit, it preserves every masked Fourier coefficient exactly."
+  }
+}

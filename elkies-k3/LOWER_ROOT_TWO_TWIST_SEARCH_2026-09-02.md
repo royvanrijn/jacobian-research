@@ -6,6 +6,8 @@
 
 <!-- status-consumer: EC-K3-RES-D5-TWO-MARKED-TWO-TWIST-POLYNOMIAL ea0496c9566cfdc3 -->
 
+<!-- status-consumer: EC-K3-RES-D5-TWO-MARKED-LOW-SLICE-ELIMINANTS 43d297285eb3655b -->
+
 <!-- status-consumer: EC-K3-RES-A4-TWO-POINT-TATE-SLICE-OBSTRUCTION b9729a0a8f2f17be -->
 
 ## Outcome
@@ -20,16 +22,19 @@ nevertheless gives four useful reductions:
    conic with no nondegenerate rational point when the invariant rank-two
    marking is imposed; and
 3. a rational section-first D5 seed has two exactly independent invariant
-   sections, and its complete `GF(11)` polynomial twist chart has one
-   two-section modular candidate; and
+   sections, its complete `GF(11)` polynomial twist chart has one two-section
+   modular candidate, and exact eliminants rule out rational points on the
+   regular low-section slices through the `p=11,13` candidates; and
 4. the simplest two-point A4 Tate slice forces either an extra repeated
    discriminant root (generically an `I2` fibre) or dependence of its marked
    points.
 
-Thus D5 has passed the first modular discovery gate, although it has not
-passed rational lifting or the height-determinant gate.  Increasing the old
-D6 height box or lifting the raw mod-11 E6 hits would repeat a mechanism
-already rejected exactly.
+Thus D5 passed the first modular discovery gate.  Exact elimination now kills
+the two regular low-section slices through its `p=11,13` survivors: their
+selected characteristic-zero points have degrees 88 and 78 over `QQ`, and
+neither complete saturated slice has a rational point.  This does not close
+the full D5 polynomial chart.  Increasing the old D6 height box or lifting the
+raw mod-11 E6 hits would repeat a mechanism already rejected exactly.
 
 ## Rank budget
 
@@ -322,9 +327,38 @@ declared checkpoints, coefficientwise rational reconstruction was either
 undefined or failed literal substitution in the seven exact equations.  The
 one accidental simultaneous reconstruction at 400 digits on the `p=11`
 branch had roughly 690-bit coordinates, failed substitution, and did not
-persist to 800 digits.  This is a reproducible negative lifting experiment,
-not a proof that the p-adic branches are nonrational.  In particular, neither
-branch is promoted to a characteristic-zero `2+2` source.
+persist to 800 digits.  This remains a reproducible negative lifting
+experiment; the rigorous nonrationality statement comes instead from the
+exact eliminants below.
+
+### Exact local eliminants
+
+Eliminate the six coefficients of the second section and the saturation
+inverse, leaving `t`.  Exact block Groebner elimination over `QQ` gives:
+
+```text
+A=-1: degree 142, irreducible-factor degrees 2,2,4,4,42,88;
+A= 2: degree 128, irreducible-factor degrees 2,4,44,78.
+```
+
+Both eliminants are even.  Their full primitive coefficient vectors and all
+irreducible factors are pinned in
+[`../artifacts/generated-results/elkies-k3-d5-two-marked-two-twist-local-eliminants-v1.json`](../artifacts/generated-results/elkies-k3-d5-two-marked-two-twist-local-eliminants-v1.json).
+The residue `t=8 mod 11` selects the irreducible degree-88 factor in the first
+line, and `t=2 mod 13` selects the irreducible degree-78 factor in the second.
+In both cases the selected root is simple modulo the indicated prime.  Thus
+the exact `t`-fields of the two isolated lifts are
+
+```text
+K_11 = QQ[t]/(H_88(t)),       K_13 = QQ[t]/(H_78(t)),
+```
+
+where `H_88` and `H_78` are the primitive selected factors in that artifact.
+In particular neither target is rational.  More strongly, neither complete
+saturated slice has a `QQ` point: a rational tuple would give a rational `t`,
+but the displayed exact factorizations contain no linear factor over `QQ`.
+This closes the two local slices, not the full fourteen-variable D5
+coefficient ideal or a different first-section slice.
 
 The replay is
 [`scripts/lift_d5_two_marked_two_twist_low_section_slices.sage`](scripts/lift_d5_two_marked_two_twist_low_section_slices.sage):
@@ -341,11 +375,9 @@ and exact characteristic-zero `msolve` inputs under
 `artifacts/local/elkies-k3/d5-two-marked-two-twist-low-slices/`.  The exported
 systems invert `x20*t*(t^2-3)`: this removes the tautological repeated-section
 component and the denominator-clearing boundary while retaining both target
-points.  A resource-bounded exact elimination attempt on the first residual
-system was interrupted after more than three minutes without a result.  Exact
-local eliminants, or a proof of
-nonrationality of either p-adic branch, remain open.  The `p=7` survivor and
-the two `p=17` boundary survivors do not lie in these two low-section slices.
+points.  Run the exact block eliminations with `--run-eliminants`; the first
+uses the longer resource envelope.  The `p=7` survivor and the two `p=17`
+boundary survivors do not lie in these two low-section slices.
 
 ### The `p=7` survivor is obstructed modulo `7^3`
 
@@ -475,12 +507,12 @@ that a two-marked A4 surface is impossible.
 
 ## Next experiment
 
-The remaining D5 lift task is to compute exact local eliminants for the two
-regular `p=11,13` low-section slices above, or to find a different rational
-slice through their residual zero-dimensional loci.  The `p=7` point cannot
-lift even modulo `7^3`, and the two `p=17` points are removed by the `d0!=0`
-K3-source gate, so enlarging those three local searches would repeat a closed
-mechanism.  A successful characteristic-zero lift still needs an exact
+The two regular `p=11,13` low-section slices are now closed by exact
+nonrationality, the `p=7` point cannot lift even modulo `7^3`, and the two
+`p=17` points are removed by the `d0!=0` K3-source gate.  Any remaining D5
+work must therefore change the first-section slice or eliminate the larger
+coefficient ideal; collecting more primes for these five survivors repeats a
+closed mechanism.  A new characteristic-zero lift would still need an exact
 twist-height determinant.
 In parallel, the A4 chart should restore nonconstant coprime Bezout data
 `r,s` in the two-point Tate construction, impose the `I5` discriminant jets
@@ -506,6 +538,10 @@ Exact here:
   ansatz;
 - the exact low-section parameterization and full-rank local Jacobians at the
   `p=11,13` D5 survivors, giving unique p-adic lifts in those slices;
+- the exact degree-142 and degree-128 `t`-eliminants for those saturated
+  slices, their complete rational factorizations, the irreducible degree-88
+  and degree-78 factors selected by the two modular points, and consequently
+  the absence of a rational point on either complete slice;
 - the exact second-order Hensel obstruction eliminating the `p=7` survivor;
 - the forced `d0=0` boundary classification and rational-surface
   minimalization eliminating both `p=17` survivors from the K3-source locus;
@@ -516,8 +552,8 @@ Exact here:
 Not proved here:
 
 - nonexistence of a rational `2+2` family on E6, D6, D5, or A4 surfaces;
-- rationality or nonrationality of either lifted D5 p-adic branch, a
-  characteristic-zero lift, or a twist-height matrix for a D5 modular pair;
+- a characteristic-zero rational lift elsewhere in the D5 coefficient chart,
+  or a twist-height matrix for a D5 modular pair;
   or
 - any `3+2` or rank-sum-five construction.
 

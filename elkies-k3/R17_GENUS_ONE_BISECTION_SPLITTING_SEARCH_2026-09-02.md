@@ -2,6 +2,8 @@
 
 <!-- status-consumer: EC-K3-R17-GENUS1-HIGH-THROUGHPUT-SPLITTING cad3d98ce58c89e7 -->
 <!-- status-consumer: EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE 52de13c8443f2b7d -->
+<!-- status-consumer: EC-K3-R17-NORM12-103B2-MW-LATTICE-SIEVE aa0d8718eb57de6f -->
+<!-- status-consumer: EC-K3-R17-NORM12-103B2-HARD-FIBRE-PRODUCT-H300000 b4fef7ab54b922e0 -->
 
 ## Result
 
@@ -140,6 +142,93 @@ The complete Gram matrices, finite quadratic forms, local polynomials, square
 identity, and bridge-height data are stored in
 [`elkies-k3-r17-norm12-103b2-mw-glue-v1.json`](../artifacts/generated-results/elkies-k3-r17-norm12-103b2-mw-glue-v1.json).
 
+## Jacobian of the newly pointed `0x103b2` quartic
+
+The point at `t=1/25` turns the norm-twelve branch cover into a pointed
+genus-one curve.  After removing a rational square from its published branch
+polynomial, an integral model is
+
+```text
+s^2 = 52558159476080896*t^4 + 63427547377764064*t^3
+      - 88223393949768143*t^2 - 5393571474961890*t
+      + 17005267967107473.
+```
+
+Its global minimal Jacobian is
+
+```text
+y^2 + x*y = x^3
+  - 406976193745649728770658795455438*x
+  + 3426347203723636438735122309348682280972198597892.
+```
+
+The rational torsion subgroup is trivial.  A deterministic
+`hyperellratpoints` search of naive height at most `10000` finds 60 signed
+affine quartic points.  Their 58 non-base images reduce to 17 independent
+points, proving
+
+```text
+rank J_103b2(Q) >= 17.
+```
+
+eclib's saturation-index bound for this subgroup is
+
+```text
+137016286412 = 2^2 * 23 * 37 * 40251553,
+```
+
+with Tamagawa candidates `2,3,7,23`.  Isolated saturation at
+`2,3,7,23,37` has index one.  The exact PARI 2-descent and saturation at the
+remaining candidate `40251553` were stopped after long runs, so no rank upper
+bound or claim that these 17 points generate all of `J_103b2(Q)` is made.
+
+The useful change of strategy does not need those two unfinished bounds.
+Direct Mordell--Weil lattice sieving evaluates every signed coefficient vector
+against all 142 other covers modulo 32 good primes, then replays every local
+survivor exactly.  Two complementary exhaustive shells are certified:
+
+```text
+coefficients in {-1,0,1}, support <= 8:  9,746,882 vectors
+coefficients in {-2,-1,0,1,2}, support <= 5:  6,991,556 vectors
+union after removing overlap:             16,496,324 vectors
+```
+
+The unit shell leaves four local survivors and the radius-two shell leaves
+nine.  In each shell one point is exceptional for the affine inverse map and
+one vector gives the known `t=1/25` collision with norm-eight `0x0f6b1`.
+Every remaining survivor is an exact rational nonsquare on its locally
+surviving cover.  Hence these 16,496,324 structured vectors produce no new
+simultaneous split.  This is a bounded lattice-shell result, not a global
+rational-point theorem for the pairwise fibre products.
+
+The 17 independent points, exact survivor coordinates, prime histories, and
+proof boundaries are stored in
+[`elkies-k3-r17-norm12-103b2-mw-lattice-sieve-v1.json`](../artifacts/generated-results/elkies-k3-r17-norm12-103b2-mw-lattice-sieve-v1.json)
+and
+[`elkies-k3-r17-norm12-103b2-mw-lattice-unit-support8-v1.json`](../artifacts/generated-results/elkies-k3-r17-norm12-103b2-mw-lattice-unit-support8-v1.json).
+Their SHA-256 digests are respectively
+`1bed775cfd4e71b609c7a61066011b04845333250b3aa2da09fe46e0a2bbf1b0`
+and
+`d31b50706764c0a67b807bfa5c71e8a49b31a14fc4120abd890422ceae1929ab`.
+The rank lower bound concerns the genus-one cover's Jacobian over `QQ`; it is
+not a rank statement for the specialized K3 fibre or anti-invariant twist.
+
+The seven covers that occur as false local survivors admit a faster second
+filter.  If `0x103b2` and a partner both split at `t`, then the product of
+their square coordinates gives a rational point on the degree-eight quotient
+
+```text
+z^2 = f_103b2(t) f_partner(t).
+```
+
+Each product is squarefree, so this quotient has genus three.  Exact PARI
+searches through naive height `300000` find no affine rational point on any of
+the seven quotients, and therefore no simultaneous split in that range.  The
+certificate is
+[`elkies-k3-r17-norm12-103b2-hard-fibre-products-v1.json`](../artifacts/generated-results/elkies-k3-r17-norm12-103b2-hard-fibre-products-v1.json).
+This is a bounded necessary-condition search, not a proof that any quotient
+has no rational points globally.
+
 ## Trace geometry
 
 For a norm-eight trace
@@ -240,6 +329,30 @@ The generated artifact has SHA-256
 The C++ scanner is compiled by the Sage driver.  Passing `--exact-limit 0`
 (the default) exact-tests every modular extreme; a positive limit is an
 explicit truncated development run and is recorded as such.
+
+Compute the rank-17 subgroup and run the radius-two/support-five lattice shell
+with:
+
+```bash
+sage -python elkies-k3/scripts/search_r17_norm12_103b2_mw_lattice.sage
+```
+
+The complementary unit/support-eight shell is:
+
+```bash
+sage -python elkies-k3/scripts/search_r17_norm12_103b2_mw_lattice.sage \
+  --max-support 8 --coefficient-radius 1 \
+  --output artifacts/generated-results/\
+elkies-k3-r17-norm12-103b2-mw-lattice-unit-support8-v1.json
+```
+
+Search the seven difficult pairwise genus-three quotients with:
+
+```bash
+sage -python \
+  elkies-k3/scripts/search_r17_norm12_103b2_hard_fibre_products.sage \
+  --height 300000
+```
 
 ## Boundary
 

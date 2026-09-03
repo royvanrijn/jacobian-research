@@ -36807,6 +36807,39 @@
       "priority": "derived"
     },
     {
+      "id": "EC-K3-RES-D5-TWO-MARKED-LOW-SLICE-ELIMINANTS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Exact D5 low-section eliminants and nonrationality of the p=11,13 lifts",
+      "scope": "For the two saturated seven-variable low-section systems through the regular D5 survivors, exact block Groebner elimination over QQ gives a degree-142 t-eliminant on A=-1 with irreducible factor degrees 2,2,4,4,42,88 and a degree-128 t-eliminant on A=2 with factor degrees 2,4,44,78. Neither eliminant has a linear factor over QQ, so neither complete saturated slice has a rational point. The residue t=8 mod 11 selects the irreducible degree-88 factor in the first slice, and t=2 mod 13 selects the irreducible degree-78 factor in the second; both selected roots are simple modulo their primes. Thus the two previously unique p-adic lifts are nonrational algebraic points with exact t-fields QQ[t]/(H88) and QQ[t]/(H78), whose primitive coefficient vectors are pinned. This closes only the two declared low-section slices, not the full D5 polynomial coefficient ideal or another first-section slice.",
+      "canonical_source": "elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-RES-D5-TWO-MARKED-TWO-TWIST-POLYNOMIAL"
+      ],
+      "checker": "elkies-k3/scripts/lift_d5_two_marked_two_twist_low_section_slices.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a9016f4250846b063829265f66b99a7d9a4122e33c102de451bb77ad8e55b7b5",
+      "software_lock": [
+        "elkies-k3/scripts/lift_d5_two_marked_two_twist_low_section_slices.sage",
+        "artifacts/generated-results/elkies-k3-d5-two-marked-two-twist-local-eliminants-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/LOWER_ROOT_TWO_TWIST_SEARCH_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-K3-RES-A4-TWO-POINT-TATE-SLICE-OBSTRUCTION",
       "kind": "theorem",
       "state": "proved",
@@ -37079,6 +37112,79 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-R17-NORM12-103B2-MW-LATTICE-SIEVE",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Rank-17 subgroup and sparse Mordell-Weil lattice sieve for R17 norm-twelve 0x103b2",
+      "scope": "The rational point at t=1/25 points the norm-twelve 0x103b2 genus-one quartic. After removing a rational-square scale, its global minimal Jacobian is y^2+x*y=x^3-406976193745649728770658795455438*x+3426347203723636438735122309348682280972198597892. The rational torsion subgroup is trivial. A deterministic naive-height-10000 quartic search finds 60 signed affine points; the 58 non-base images reduce to 17 independent Jacobian points, proving rank at least 17. A direct Mordell-Weil lattice sieve uses a finite-field group law cross-checked against Sage at each of 32 good primes and exactly replays every local survivor against the other 142 compiled covers. The complete coefficient-radius-two/support-at-most-five shell has 6991556 vectors and nine local survivors; the complete unit-coefficient/support-at-most-eight shell has 9746882 vectors and four local survivors. Their intersection has 242114 vectors, hence their union has 16496324 vectors. In each shell one vector is exceptional for the affine inverse map and the only exact simultaneous split is the known t=1/25 collision with norm-eight 0x0f6b1; every other local survivor is an exact rational nonsquare. This is a bounded coefficient-shell result. The interrupted PARI descent supplied no rank upper bound, saturation at 40251553 remains unfinished, and no claim that the 17 points generate all of J(Q), no global pairwise-fibre-product obstruction, and no new K3 specialization-rank claim is made.",
+      "canonical_source": "elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-R17-GENUS1-HIGH-THROUGHPUT-SPLITTING"
+      ],
+      "checker": "elkies-k3/scripts/search_r17_norm12_103b2_mw_lattice.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:281dac5b31b31b4eb432d66f67673bedbc0881730da5dccd3f5859e9f4bc7df6",
+      "software_lock": [
+        "elkies-k3/scripts/search_r17_norm12_103b2_mw_lattice.sage",
+        "elkies-k3/scripts/certify_r17_norm12_103b2_jacobian.sage",
+        "artifacts/generated-results/elkies-k3-r17-genus-one-bisection-splitting-search-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-mw-lattice-sieve-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-mw-lattice-unit-support8-v1.json"
+      ],
+      "supersedes_notes": [
+        "the norm-twelve 0x103b2 cover has no Jacobian route for targeted parameter generation"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-103B2-HARD-FIBRE-PRODUCT-H300000",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Bounded genus-three quotient search for the seven hard 0x103b2 partners",
+      "scope": "For each of the seven covers norm12-orbit-135b7, norm8-orbit-1723d, norm8-orbit-12e28, norm8-orbit-10092, norm8-orbit-0a0e4, norm12-orbit-06867, and norm12-orbit-08f72 that appears as a false all-prime survivor in the sparse Mordell-Weil shells, the product f_103b2(t)f_partner(t) is a squarefree degree-eight polynomial and defines a genus-three quotient. Simultaneous splitting of the two quartics at a finite rational t necessarily gives an affine rational point on this quotient. Exact PARI hyperellratpoints searches find zero affine rational points on all seven quotients through naive height 300000, hence zero simultaneous splits in that bounded range. This does not determine any complete rational-point set, exclude points above the bound, prove a global fibre-product obstruction, improve the rank-at-least-17 Jacobian statement, or prove exact Jacobian rank.",
+      "canonical_source": "elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-103B2-MW-LATTICE-SIEVE"
+      ],
+      "checker": "elkies-k3/scripts/search_r17_norm12_103b2_hard_fibre_products.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8ed2c25c6a294575dded725614ab6e669b88c38ee88af34b81265d764c227005",
+      "software_lock": [
+        "elkies-k3/scripts/search_r17_norm12_103b2_hard_fibre_products.sage",
+        "elkies-k3/scripts/certify_r17_norm12_103b2_jacobian.sage",
+        "artifacts/generated-results/elkies-k3-r17-genus-one-bisection-splitting-search-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-hard-fibre-products-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS",
       "kind": "theorem",
       "state": "proved",
@@ -37326,6 +37432,282 @@
         "REPRODUCE.md",
         "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
         "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-INTEGRAL-RANK-TRANSFER-CORE-GENERATION",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Maximal-graph core-genus inversion and bounded completion classifier",
+      "scope": "Let W be the even overlattice of a positive rank-15 core K and positive rank-two bridge C defined by an isotropic graph whose projection to A_C is an isomorphism. The image B in A_K is nondegenerate and anti-isometric to A_C, H-perp/H is B-perp, and therefore q_K is isomorphic to q_W orthogonal-sum (-q_C) with det(K)=det(W)det(C). Conversely, such a finite-form splitting constructs a maximal graph completion with discriminant form q_W. Thus a prescribed Picard-rank-19 frame form q_W=-q_NS and binary bridge C generate the rank-15 core genus before any U, isotropic-divisor, or equation search. For any declared finite bridge universe, the discriminant form decorated by every coset theta coefficient through norm two completely determines the zero-support maximal-graph completion spectrum. The checker verifies the determinant and finite-form identities on both sides of all 42 H3, Q80, NS0024, and Golay-720 clicks, 84 presentations total. At the four positive terminal determinants it independently enumerates 48, 8, 8, and 8 even rank-15 genera and in every case selects a unique genus from q_W orthogonal-sum (-q_C). The four observed core classes have minimum four and their 14 bridge classes contain exactly five zero-support completions. The necessary core-rootlessness gate rejects all 277 primitive cores in the complete held-out E6 source shell before graph enumeration. This is an exact bounded core-first calculus, not an unbounded bridge-determinant cutoff, a uniform or fast rank-15 class enumerator, a complexity or speedup theorem, or an equation-level fibration lift.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-THETA-CONVOLUTION",
+        "EC-K3-E6-DET78-PROSPECTIVE-BRIDGE-NEGATIVE"
+      ],
+      "checker": "elkies-k3/scripts/certify_integral_rank_transfer_core_generation.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:70ed2acf14b1bb1aa84d018a7d1b0152a45aa60c12a769e0ea440e770f5a7466",
+      "software_lock": [
+        "elkies-k3/scripts/certify_integral_rank_transfer_core_generation.sage",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-core-generation-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json",
+        "artifacts/generated-results/elkies-k3-e6-rank4-det78-prospective-bridge-predictor-v1.json"
+      ],
+      "supersedes_notes": [
+        "there is no automatic core-generation rule even at finite-form genus level"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-INTEGRAL-RANK-TRANSFER-REVERSE-THETA",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Reverse theta masks and finite compatible-core signature sieve",
+      "scope": "For an even positive split carrier K+C and isotropic graph H, define the reverse mask F_(C,H)={(a,2-nu):(a,b) lies in H and theta_C(b,nu)>0}. Nonnegativity of theta convolution proves that the glued lattice is rootless exactly when theta_K vanishes on every cell of F_(C,H). Thus a bridge and graph prescribe the required core vanishings before K is constructed, and only those cells need be queried. If K is rootless of rank r, vectors contributing to one fixed coset theta coefficient through norm two have pairwise nonpositive inner products, so the orthoplex bound gives theta_K(a,nu)<=2r; for rank 15 every nonconstant coefficient lies in {0,...,30}. For a fixed finite quadratic form and declared finite bridge universe, the mask, symmetry and congruence conditions therefore cut out a finite explicitly enumerable outer set of compatible low-order theta signatures. The checker derives all 28 terminal oriented masks, each containing 18--87 cells. Sign symmetry compiles these to exactly 14 unoriented masks of 10--44 cells, and all 14 are minimal under containment. Lazy exact CVP queries reproduce all accept/reject decisions; an independent later full-table phase reproduces all 28 signed root counts, selecting ten orientations or five unoriented bridge classes without constructing a rank-17 child. Across all graphs for the four cores, only 13, 25, 94, and 13 distinct sign-reduced core cells are queried, versus 4418, 8943, 22579, and 5211 occupied cells in the full truth tables. Recorded lazy phases are about 30--85 times faster, but timings are not theorem fields. Direct realization of only lattices having an allowed vector-valued theta signature, a constrained mass formula, an unbounded determinant cutoff, and a uniform speedup theorem remain open.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-INTEGRAL-RANK-TRANSFER-THETA-CONVOLUTION",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-CORE-GENERATION"
+      ],
+      "checker": "elkies-k3/scripts/certify_integral_rank_transfer_reverse_theta_masks.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ef7e990fc8a42d4d8dc7ffea7c65f9205d85968964495e8bfb385e0ce099d87f",
+      "software_lock": [
+        "elkies-k3/scripts/certify_integral_rank_transfer_reverse_theta_masks.sage",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-reverse-theta-masks-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json"
+      ],
+      "supersedes_notes": [
+        "a complete core theta table must be built before testing a fixed bridge graph"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-INTEGRAL-RANK-TRANSFER-WEIL-COMPRESSION",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Zero-orbit Weil compression for reverse-theta core generation",
+      "scope": "In the forced splitting q_K=q_W orthogonal-sum (-q_C), every reverse-theta mask coordinate has A_W-coordinate zero. Averaging a vector-valued theta series over O(q_W) commutes with the Weil representation and preserves those masked Fourier coefficients exactly because zero is a singleton orbit. Modular feasibility may therefore be computed in C[A_W]^{O(q_W)} tensor C[A_C], followed by theta sign symmetry, instead of the full C[A_K]. The checker reconstructs the four terminal q_W and computes orthogonal-invariant dimensions 72, 240, 260, and 240. Including the bridge factor and theta symmetry gives coefficient dimensions 864, 5760, 24960, and 2880 in place of 16560, 44556, 181450, and 21804, exact reductions by factors between 18145/2496 and 115/6. At a good prime splitting each cyclotomic phase field, the exact S,T closure of e_0 has full orbit-quotient dimension in all four cases, so the controls admit no smaller e_0-cyclic reduction. This is an exact compression of the proposed modular prefilter, not an enumeration of compatible modular signatures, realization of a new core lattice, end-to-end core-generation algorithm, or complexity theorem.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-INTEGRAL-RANK-TRANSFER-CORE-GENERATION",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-REVERSE-THETA"
+      ],
+      "checker": "elkies-k3/scripts/certify_integral_rank_transfer_weil_compression.sage",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9a22e379fc8aaa50823a8955e9de8df525672d048fdddc34b16309f71fc313db",
+      "software_lock": [
+        "elkies-k3/scripts/certify_integral_rank_transfer_weil_compression.sage",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-weil-compression-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-reverse-theta-masks-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json"
+      ],
+      "supersedes_notes": [
+        "the reverse-theta modular feasibility problem must use the full discriminant-group coefficient space"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-INTEGRAL-RANK-TRANSFER-MODULAR-DIMENSION-SIEVE",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Compressed modular-dimension audit and linear-mask nonselectivity",
+      "scope": "For the zero-orbit compressed dual Weil representations attached to the Golay-720, H3, NS0024, and Q80 terminal core genera, the invariant Riemann--Roch trace formula gives exact weight-15/2 modular-form dimensions 476, 3121, 13488, and 1563 and cusp-form dimensions 472, 3120, 13485, and 1562. A reverse mask of m sign-reduced Fourier cells defines at most m linear conditions on the cusp space, so its zero-mask kernel has dimension at least dim(S)-m. Applying this to every one of the fourteen terminal masks gives certified lower bounds from 461 through 13458; in particular every mask leaves a nonzero, highly dimensional cusp kernel. Thus linear modularity plus the reverse vanishings cannot by itself isolate a theta signature or force the modular form to vanish. This does not prove that the affine normalization theta_K(0,0)=1 is feasible for any rejected mask, nor that a surviving modular form has integral nonnegative coefficients or is the theta series of a lattice. Arithmetic theta-cone constraints and lattice realization remain necessary.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-INTEGRAL-RANK-TRANSFER-REVERSE-THETA",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-WEIL-COMPRESSION"
+      ],
+      "checker": "elkies-k3/scripts/certify_integral_rank_transfer_weil_compression.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:9a22e379fc8aaa50823a8955e9de8df525672d048fdddc34b16309f71fc313db",
+      "software_lock": [
+        "elkies-k3/scripts/certify_integral_rank_transfer_weil_compression.sage",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-weil-compression-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-reverse-theta-masks-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json"
+      ],
+      "supersedes_notes": [
+        "the reverse zero masks are likely to make the full modular-form space small or rigid"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-GENERATION",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Bounded mask-aware Kneser generation of a nonhistorical Golay core",
+      "scope": "For the Golay-720 target frame and the second determinant-23 binary bridge class, the maximal-graph finite-form identity generates a unique even positive rank-15 genus of determinant 16560. Its canonical representative is rootful with 96 signed roots. A deterministic good-prime Kneser beam, seeded by 314159 and scored first by root count and then by occupied reverse-theta mask cells, reaches after seven neighbour steps and 34571 unique raw neighbours a minimum-four rootless core with bridge-class mask profile (3,0). Exact replay of the seven stored prime/vector pairs reconstructs the core and proves it is not isometric to the historical Golay core. Its class-2 order-23 graph completion has rank 17, determinant 720, minimum four and no roots, and is integrally isometric to the declared Golay target frame. This proves a bounded constructive core-generation control starting only from the forced genus, not beam completeness, genus closure, success probability, expected running time, uniform performance on other genera, or a speedup theorem.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-INTEGRAL-RANK-TRANSFER-CORE-GENERATION",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-REVERSE-THETA"
+      ],
+      "checker": "elkies-k3/scripts/generate_integral_rank_transfer_masked_core_neighbors.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:076a5d19242d494b5364a224d2c123bf0e947bc81e839cf1cfb2dd6cb2a2818c",
+      "software_lock": [
+        "elkies-k3/scripts/generate_integral_rank_transfer_masked_core_neighbors.sage",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-neighbors-v1.json",
+        "elkies-k3/scripts/certify_integral_rank_transfer_core_generation.sage",
+        "elkies-k3/scripts/certify_integral_rank_transfer_reverse_theta_masks.sage",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json"
+      ],
+      "supersedes_notes": [
+        "the forced core genus and reverse-theta masks have not yet generated any new core lattice class"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-CONTROLS",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "Prospective H3 and NS0024 masked-core constructions with a Q80 near miss",
+      "scope": "Starting from canonical 280-root representatives of the finite-form-forced rank-15 genera, exact good-prime paths construct nonhistorical minimum-four rootless cores for H3 and NS0024. Their viable-bridge mask profiles are respectively (0,2) and (8,4,0,10,6,10). Class-2 graph glue completes the H3 core to the declared determinant-948 rootless target frame; class-4 glue completes the NS0024 core to a determinant-950 rootless rank-17 lattice with the target discriminant form but a new integral isometry class. An eight-step Q80 path instead reaches a nonhistorical rootless core whose sole viable bridge mask retains exactly two sign-paired occupied cells, so it is an exact near miss and no completion is claimed. The compulsory bridge-rootlessness gate removes class 1 in all three corridors because its fixed (0,0) reverse-mask cell is always occupied. The NS0024 support-diversity beam found its hit after 7477 unique raw neighbours. Corrected fixed eight-generation support-diversity runs on H3 and Q80 each examined 42300 raw neighbours without a hit. Those misses are bounded experiments, not genus-wide nonexistence results; beam completeness, uniform success, and a speedup theorem remain open.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-GENERATION",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-REVERSE-THETA"
+      ],
+      "checker": "elkies-k3/scripts/certify_integral_rank_transfer_masked_core_controls.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a0a4013f61ec8418df451b842dbd3621617f90883a5b9e2141ab56f73d39c644",
+      "software_lock": [
+        "elkies-k3/scripts/certify_integral_rank_transfer_masked_core_controls.sage",
+        "elkies-k3/scripts/search_integral_rank_transfer_masked_core_controls.sage",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-controls-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-controls-h3-support-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-controls-ns0024-support-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-controls-q80-support-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json"
+      ],
+      "supersedes_notes": [
+        "the forced-genus mask-aware construction has only one positive Golay control"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact generic cubic linear conductor factor in the Q80 third-q12 discriminant",
+      "scope": "For the exact 63-term characteristic-zero third-q12 genus-one pencil at u=-2, rational reconstruction from the 19^12288 factor lift gives a linear factor L=W+r. A direct integral expansion of the exact discriminant in S=denominator(r)W+numerator(r) proves that the S^0, S^1, and S^2 coefficients vanish identically over QQ(sqrt(q1q2))[V], while the S^3 coefficient is a nonzero degree-eight polynomial. Hence L has exact generic multiplicity three. At V=0 the exact discriminant has degree 15 and maximum coordinate height 5,783,744 bits; stripping L^3 leaves degree 12 at 5,783,726 bits. Separately, all four nonleading coefficients of the expected monic quartic factor share a reconstructed monic linear denominator H(V) modulo 19^12288, and direct reductions of the exact pencil at the untouched inert primes 163, 191, and 199 reproduce both the factor pattern (1,3),(4,1),(4,2) and that common denominator. The H replay is candidate evidence only: exact characteristic-zero recovery of Q, Q^2 divisibility, the remaining discriminant factor, the Jacobian, and birational maps remain open. General expanded PARI and Singular exact-gcd attempts did not complete and are not proof fields.",
+      "canonical_source": "elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md",
+      "dependencies": [],
+      "checker": "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a4a7447b524adcda5859704f3a63990370ccf52c67ba76ce6ce4d09ec7d10862",
+      "software_lock": [
+        "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
+        "elkies-k3/scripts/audit_q80_third_q12_quartic_denominator_candidate.sage",
+        "artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-linear-conductor-v1.json",
+        "artifacts/generated-results/elkies-k3-q80-third-q12-quartic-denominator-candidate-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md",
+        "elkies-k3/Q80_THIRD_Q12_COMMON_PRODUCER_2026-09-01.md",
         "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],

@@ -778,3 +778,28 @@ known field and denominator factors symbolically, or use a better integral
 field/base normalization, rather than merely increase the same LLL modulus.
 The order remains
 `j -> (c4^3,Delta) -> minimal Jacobian -> birational maps`.
+
+<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR 163251202819137c -->
+
+## 2026-09-03 exact conductor continuation
+
+The exact 63-term pencil now yields one generic characteristic-zero conductor
+factor without reconstructing the full `j`-map.  Rational reconstruction from
+the `19^12288` lift gives `L=W+r`; an integral truncated expansion in
+`S=denominator(r)W+numerator(r)` proves that the discriminant coefficients at
+orders zero, one, and two vanish identically in the remaining base variable,
+and that order three is nonzero.  Thus `L^3` divides with exact multiplicity
+three.  The exact certificate is
+[`../artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-linear-conductor-v1.json`](../artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-linear-conductor-v1.json).
+
+The residual exact quartic gcd remains too expensive for the general PARI and
+Singular number-field gcd paths tried here.  The pointwise lift nevertheless
+reveals a common monic linear denominator `H(V)` in all four nonleading
+coefficients of the expected monic quartic.  Direct exact-pencil reductions
+at untouched inert primes 163, 191, and 199 reproduce both the discriminant
+factor pattern `(1,3),(4,1),(4,2)` and this denominator.  That candidate audit
+is
+[`../artifacts/generated-results/elkies-k3-q80-third-q12-quartic-denominator-candidate-v1.json`](../artifacts/generated-results/elkies-k3-q80-third-q12-quartic-denominator-candidate-v1.json).
+It is not a characteristic-zero proof of `Q`; the next implementation should
+be a dedicated modular/subresultant degree-four recovery followed by exact
+division, retaining the proved `L^3` and candidate `H` symbolically.

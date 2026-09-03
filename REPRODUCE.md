@@ -2799,6 +2799,82 @@ not a complete fibration classification or a rank-29 fibre identification.
 See
 [`elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md`](elkies-k3/OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md).
 
+Replay the exact equation-compilation handoff for the final alternate q6
+divisor, including its physical zero, complete NS transport, rootless
+MW17 frame, and the explicit equation-open boundary:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_q80_alternate_final_divisor_handoff.sage --check
+```
+
+Audit the denominator-integral normalization of the exact quadratic descent
+field at the current third-q12 equation frontier:
+
+```bash
+python3 \
+  elkies-k3/scripts/audit_q80_third_q12_descent_field_normalization.py --check
+```
+
+The latter proves `QQ(sqrt(q1*q2))=QQ(sqrt(D))` for the displayed reduced
+denominator `D`, without factoring it.  It does not claim an exact third-q12
+Jacobian or a coefficient-height improvement.  See
+[`elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md`](elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md).
+
+Run the corresponding 63-term raw coefficient-height gate:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/audit_q80_third_q12_pencil_basis_heights.py --check
+```
+
+The denominator-integral `delta` basis is worse than the existing `omega`
+basis on 54 of 63 terms and raises the raw maximum coordinate height by 5,929
+bits.  Rational projective normalization reverses this to a small 10,888-bit
+(about 0.7 percent) improvement, while exposing only 7--12 bits of integer
+content.  This is not the large compression required for reconstruction and
+does not test quadratic-field, base-`PGL2`, or integral-ideal normalization.
+
+<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR 163251202819137c -->
+
+Certify the first exact generic conductor factor of the third-q12
+discriminant and replay the retained quartic-denominator candidate:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage \
+  --base-value 0 --certify-generic-linear --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/audit_q80_third_q12_quartic_denominator_candidate.sage \
+  --check
+```
+
+The first command proves over the full characteristic-zero base that the
+reconstructed linear factor occurs with exact multiplicity three.  The
+second verifies directly from the exact pencil at untouched inert primes
+163, 191, and 199 that all four nonleading coefficients of the exponent-two
+quartic have the predicted common linear denominator.  That denominator is
+still candidate data: exact characteristic-zero recovery and division of the
+quartic square, the Jacobian, and the maps remain open.  See
+[`elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md`](elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md).
+
+Continue the exact quartic-square recovery with a resumable Brown
+subresultant sequence:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage \
+  --attempt-subresultant-prs \
+  --output artifacts/generated-results/elkies-k3-q80-third-q12-exact-discriminant-specialization-v1.json
+```
+
+This long command writes its latest exact state atomically under
+`artifacts/local/elkies-k3/` and resumes it by default.  Use
+`--restart-subresultant-prs` only when intentionally discarding compatibility
+with the retained state.  Until the command finishes its exact `Q^2` division,
+the quartic factors remain open.
+
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J2-COMPLETE c6f054948b04b507 -->
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J1-UNIFORM-BOUND b71330a75ad2c9ad -->
 
@@ -4298,6 +4374,63 @@ solve is exact in the displayed finite field and polynomial degree box: 23
 distinct systems are empty and the sole degree-one system is the known
 `Q/-Q` pair.  It is not a characteristic-zero rank upper bound.  See
 [`elkies-k3/QUADRATIC_TWIST_RANK_CENSUS_2026-08-31.md`](elkies-k3/QUADRATIC_TWIST_RANK_CENSUS_2026-08-31.md).
+
+The separate norm-twelve `0x103b2` audit descends its known anti-invariant
+section and exhausts the `P.O=0` polynomial shell without Magma. The `p=19`
+run takes about one minute; the meet-in-the-middle `p=29` run takes several
+minutes.
+
+```bash
+sage -python elkies-k3/scripts/export_elkies_2026_twist_polynomial_sections_modp.sage \
+  --genus-one-label norm12-orbit-103b2 --prime 37
+sage -python elkies-k3/scripts/derive_r17_genus_one_bisection_twist_section.sage \
+  --prime 37 \
+  --export artifacts/local/elkies-k3/twist-polynomial-sections/\
+genus-one-norm12-orbit-103b2/p37/export.json \
+  --output artifacts/generated-results/\
+elkies-k3-norm12-orbit-103b2-twist-section-v1.json
+
+sage -python elkies-k3/scripts/export_elkies_2026_twist_polynomial_sections_modp.sage \
+  --genus-one-label norm12-orbit-103b2 --prime 19
+sage -python elkies-k3/scripts/derive_r17_genus_one_bisection_twist_section.sage \
+  --prime 19 \
+  --export artifacts/local/elkies-k3/twist-polynomial-sections/\
+genus-one-norm12-orbit-103b2/p19/export.json \
+  --output artifacts/generated-results/\
+elkies-k3-norm12-orbit-103b2-p19-twist-section-v1.json
+python3 elkies-k3/scripts/run_twist_polynomial_sections_bruteforce.py \
+  --export artifacts/local/elkies-k3/twist-polynomial-sections/\
+genus-one-norm12-orbit-103b2/p19/export.json \
+  --known-section artifacts/generated-results/\
+elkies-k3-norm12-orbit-103b2-p19-twist-section-v1.json \
+  --output artifacts/generated-results/\
+elkies-k3-norm12-orbit-103b2-p19-polynomial-section-bruteforce-v1.json
+
+sage -python elkies-k3/scripts/export_elkies_2026_twist_polynomial_sections_modp.sage \
+  --genus-one-label norm12-orbit-103b2 --prime 29
+sage -python elkies-k3/scripts/derive_r17_genus_one_bisection_twist_section.sage \
+  --prime 29 \
+  --export artifacts/local/elkies-k3/twist-polynomial-sections/\
+genus-one-norm12-orbit-103b2/p29/export.json \
+  --output artifacts/local/elkies-k3/twist-polynomial-sections/\
+genus-one-norm12-orbit-103b2/p29/known.json
+python3 elkies-k3/scripts/run_twist_polynomial_sections_bruteforce.py \
+  --export artifacts/local/elkies-k3/twist-polynomial-sections/\
+genus-one-norm12-orbit-103b2/p29/export.json \
+  --known-section artifacts/local/elkies-k3/twist-polynomial-sections/\
+genus-one-norm12-orbit-103b2/p29/known.json \
+  --output artifacts/generated-results/\
+elkies-k3-norm12-orbit-103b2-p29-polynomial-section-bruteforce-v1.json
+sage -python elkies-k3/scripts/hensel_lift_r17_103b2_po0_sections.sage \
+  --precision 800
+```
+
+The `p=19` shell has only the known signed pair. The `p=29` shell has 276
+unsigned solutions and seven full-tangent-rank branches; only the known
+branch converges and reconstructs exactly in the reduced-branch Hensel audit.
+The 269 singular branches and all sections with positive `P.O` remain open,
+so these computations do not determine the full twist rank. See
+[`elkies-k3/R17_103B2_ANTI_INVARIANT_RANK_AUDIT_2026-09-03.md`](elkies-k3/R17_103B2_ANTI_INVARIANT_RANK_AUDIT_2026-09-03.md).
 
 The equation-friendlier alternate q80 q6 endpoint has a distinct rootless
 rank-17 lattice.  Its short shell is too large for PARI's materialized vector
@@ -18113,6 +18246,12 @@ sum equals the exact genus mass
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-BRIDGE-PREDICTOR-BENCHMARK 3127e24cc505f646 -->
 <!-- status-consumer: EC-K3-E6-DET78-PROSPECTIVE-BRIDGE-NEGATIVE d23a0abd146c2ed9 -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-THETA-CONVOLUTION 5ebbd3d242fdb3db -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-CORE-GENERATION d0d78c49b44f55ac -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-REVERSE-THETA eee16ce986ec0a1f -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-WEIL-COMPRESSION 34d2abea91a265f4 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MODULAR-DIMENSION-SIEVE 9622c6eb4d8522bd -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-GENERATION 9a7a1e01cb22f62e -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-CONTROLS 3cbde45fb2cb0f17 -->
 
 Generate and byte-check the equation-free census, then replay the local
 bridge and involution graph-glue theorems with
@@ -18122,6 +18261,11 @@ sage -python elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage
 sage -python elkies-k3/scripts/benchmark_integral_rank_transfer_bridge_predictor.sage --check
 sage -python elkies-k3/scripts/benchmark_e6_det78_prospective_bridge_predictor.sage --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_theta_convolution.sage --check
+sage -python elkies-k3/scripts/certify_integral_rank_transfer_core_generation.sage --check
+sage -python elkies-k3/scripts/certify_integral_rank_transfer_reverse_theta_masks.sage --check
+sage -python elkies-k3/scripts/certify_integral_rank_transfer_weil_compression.sage --check
+sage -python elkies-k3/scripts/generate_integral_rank_transfer_masked_core_neighbors.sage --check
+sage -python elkies-k3/scripts/certify_integral_rank_transfer_masked_core_controls.sage --check
 sage -python elkies-k3/scripts/certify_integral_character_glue_calculus.sage --check
 sage -python elkies-k3/scripts/certify_r17_norm12_103b2_mw_glue.sage \
   --skip-specialization-saturation --check
@@ -18154,6 +18298,74 @@ finite-form isotropy, and checks their theta convolutions without constructing
 rank-17 children.  It reproduces every independent signed-root count and
 selects exactly the five rootless classes.  This is a proved fixed-core
 zero-support enumerator, not a speedup or automatic core-generation theorem.
+The core-generation replay inverts one further layer for maximal graph glue.
+It verifies on all 84 old/new presentations that
+`q_K=q_W orthogonal_sum (-q_C)` and `det(K)=det(W)*det(C)`, so a proposed
+binary bridge and target frame generate the rank-15 core genus before any
+isotropic graph is listed.  Exhaustive even-genus enumeration gives
+`48, 8, 8, 8` candidates at the four terminal determinants and the generated
+finite form selects exactly one in each case.  The theta-decorated
+discriminant form is then a
+complete bounded-bridge completion signature.  Its first necessary gate
+rejects all 277 primitive held-out E6 cores because each already contains a
+root.  This is an exact bounded core-first procedure; an unbounded bridge
+cutoff, uniform genus enumeration, and a complexity or speedup theorem remain
+open.
+The reverse-theta replay then derives the required zero cells of the core from
+each bridge graph alone.  Its 28 terminal masks contain 18--87 cells.  After
+sign symmetry they compile to 14 nonredundant masks of 10--44 cells.  Lazy
+exact CVP queries reproduce every zero-support decision; complete core theta
+tables are computed only afterward and reproduce every signed root count.
+The four all-graph runs query respectively 13, 25, 94, and 13 distinct core
+cells, with no rank-17 child construction.  The accompanying coefficient
+bound makes the allowed rank-15 low-order signature set finite.  Direct
+realization of only those signatures is still open.
+The zero-orbit Weil replay removes the full discriminant-group coefficient
+space from that next modular step.  Orthogonal averaging on the `q_W` factor
+preserves every mask coordinate exactly and, after theta symmetry, reduces
+the four terminal coefficient dimensions from
+`16,560, 44,556, 181,450, 21,804` to
+`864, 5,760, 24,960, 2,880`.  Good-prime `S,T` closure certifies that the
+zero-generated cyclic submodule equals the full orthogonal-orbit quotient in
+all four cases.  This is an exact modular-prefilter compression, not yet a
+compatible-signature enumeration or core realization.
+The same replay evaluates the invariant Riemann--Roch trace formula.  The
+compressed weight-`15/2` modular dimensions are
+`476, 3,121, 13,488, 1,563`, while the cusp dimensions are
+`472, 3,120, 13,485, 1,562`.  Rank--nullity then proves that every 10--44-cell
+terminal mask leaves a cusp kernel of dimension at least 461.  Thus the
+linear modular zero-mask stage is not selective; affine normalization,
+integrality, nonnegativity, and lattice realization remain separate.
+The mask-aware neighbour replay then supplies the first positive constructive
+core-generation control.  Starting from the canonical rootful representative
+of the finite-form-forced Golay-720 core genus, its seven certified
+good-prime neighbours produce a nonhistorical minimum-four core whose
+class-2 reverse mask is empty.  The resulting order-23 completion is rootless
+and isometric to the declared rank-17 target.  The pinned artifact also stores
+the deterministic 34,571-neighbour discovery telemetry.  Rerun that bounded
+search, rather than only the short path certificate, with
+
+```bash
+sage -python elkies-k3/scripts/generate_integral_rank_transfer_masked_core_neighbors.sage \
+  --search --check
+```
+
+This control proves neither beam completeness nor a uniform speedup.
+The prospective control replay then starts from the canonical representatives
+of the H3, NS0024, and Q80 forced genera and follows the extracted exact
+good-prime paths.  It proves new zero-mask H3 and NS0024 cores and their
+rootless rank-17 completions.  The NS0024 child is a new isometry class with
+the target discriminant form.  The Q80 path is certified only as a rootless
+two-cell near miss.  To rerun the corrected support-diversity search itself,
+use for example
+
+```bash
+sage -python elkies-k3/scripts/search_integral_rank_transfer_masked_core_controls.sage \
+  --corridor NS0024 --root-descent --mask-cap 3 --support-diversity
+```
+
+That full driver is a bounded experiment; only the extracted paths and exact
+completion checks are theorem fields.
 The character replay exhausts the E6 `2+1` and `2+2` involution graphs after
 the declared factor-12 integral scaling.  The norm-twelve byte check reuses
 the pinned full saturation record; generating that artifact without the skip
@@ -18163,6 +18375,8 @@ a terminating genus-completeness certificate at J2 level; equation lifts and
 J1 surface-automorphism orbits remain separate.
 
 <!-- status-consumer: EC-K3-RES-D5-TWO-MARKED-TWO-TWIST-POLYNOMIAL ea0496c9566cfdc3 -->
+
+<!-- status-consumer: EC-K3-RES-D5-TWO-MARKED-LOW-SLICE-ELIMINANTS 43d297285eb3655b -->
 
 Replay the exact two-marked D5 seed and its complete `GF(11)` polynomial
 two-twist census with
@@ -18182,6 +18396,25 @@ sections.  The modular part checks 146,410 section incidences and finds one
 quadratic twist with two distinct-`x` polynomial sections.  It is a modular
 lifting candidate, not a characteristic-zero `2+2` or height-determinant
 certificate.
+
+Replay the unique `11`-adic and `13`-adic lifts in their regular low-section
+slices, and compute the exact characteristic-zero eliminants, with
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/lift_d5_two_marked_two_twist_low_section_slices.sage \
+  --run-eliminants --eliminant-timeout 900 --threads 4
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/lift_d5_two_marked_two_twist_low_section_slices.sage \
+  --run-eliminants --eliminant-timeout 900 --threads 4 --check
+```
+
+The saturated `A=-1` and `A=2` slices have `t`-eliminant degrees 142 and
+128, with rational factor degrees `2,2,4,4,42,88` and `2,4,44,78`.
+The modular points select the irreducible degree-88 and degree-78 factors.
+Neither eliminant has a linear rational factor, so neither complete slice has
+a `QQ` point.  This exact result does not close the full D5 polynomial chart.
 
 <!-- status-consumer: EC-K3-RES-A4-TWO-POINT-TATE-SLICE-OBSTRUCTION b9729a0a8f2f17be -->
 
@@ -18304,3 +18537,57 @@ finite-quotient direction beyond generic MW17.  The compact height-2000 box is
 exhaustive, while the trace and other parameter populations remain bounded.
 See
 [`elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md`](elkies-k3/R17_GENUS_ONE_BISECTION_SPLITTING_SEARCH_2026-09-02.md).
+
+### Norm-twelve `0x103b2` Jacobian and targeted split sweeps
+
+<!-- status-consumer: EC-K3-R17-NORM12-103B2-MW-LATTICE-SIEVE aa0d8718eb57de6f -->
+
+Use the newly found point at `t=1/25` to construct the cover Jacobian, extract
+17 independent points, and sieve the other 142 compiled covers over the
+radius-two/support-five lattice shell:
+
+```bash
+sage -python \
+  elkies-k3/scripts/search_r17_norm12_103b2_mw_lattice.sage
+```
+
+The complementary unit/support-eight shell is:
+
+```bash
+sage -python \
+  elkies-k3/scripts/search_r17_norm12_103b2_mw_lattice.sage \
+  --max-support 8 --coefficient-radius 1 \
+  --output artifacts/generated-results/\
+elkies-k3-r17-norm12-103b2-mw-lattice-unit-support8-v1.json
+```
+
+The first shell has 6,991,556 vectors and the second has 9,746,882; their
+intersection has 242,114 vectors, so the union contains 16,496,324 signed
+coefficient vectors.  Thirty-two exact good-prime reductions leave nine and
+four local survivors respectively.  Exact replay recovers only the known
+`t=1/25` overlap with norm-eight `0x0f6b1`; all other finite survivors are
+nonsquares and one vector in each shell is exceptional for the affine inverse
+map.  This proves rank at least 17, not exact rank 17: the PARI rank upper-bound
+run and eclib saturation at `40251553` were stopped without results.  The
+lattice shells are bounded and do not exclude other rational overlaps or
+points outside the known subgroup.
+
+The seven covers appearing as false all-prime survivors can be tested more
+directly through their genus-three quotient curves:
+
+<!-- status-consumer: EC-K3-R17-NORM12-103B2-HARD-FIBRE-PRODUCT-H300000 b4fef7ab54b922e0 -->
+
+```bash
+sage -python \
+  elkies-k3/scripts/search_r17_norm12_103b2_hard_fibre_products.sage \
+  --height 300000
+
+sage -python \
+  elkies-k3/scripts/search_r17_norm12_103b2_hard_fibre_products.sage \
+  --height 300000 --check
+```
+
+All seven quotients have zero affine rational points in PARI's naive-height
+`300000` search, so there are no simultaneous splits in that bounded range.
+This does not determine the complete rational-point sets of the genus-three
+curves.

@@ -315,3 +315,7 @@ The final two commands compute the exact bounded intrinsic invariants and
 replay the calibrated full-lattice Gate A search.  None constructs the missing
 characteristic-zero equation or completes the exact `J1`
 surface-automorphism classification.
+
+The current equation-compilation input, including the physical final fibre
+and zero and the corrected upstream equation boundary, is pinned in
+[`Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md`](Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md).

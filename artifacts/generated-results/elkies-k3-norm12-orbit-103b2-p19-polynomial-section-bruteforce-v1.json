@@ -1,0 +1,77 @@
+{
+  "candidate": {
+    "chi": 4,
+    "key": "norm12-orbit-103b2",
+    "kind": "genus_one",
+    "masks": [
+      66482
+    ],
+    "x_degree_bound": 8,
+    "y_degree_bound": 12
+  },
+  "enumeration": {
+    "enumeration_strategy": "value_interpolation",
+    "passed_value_sieve": 1204667,
+    "representative_sign_solutions": 1,
+    "x_polynomials_tested": 655855200
+  },
+  "export_status": "PASS_EXACT_MODP_REDUCED_POLYNOMIAL_SECTION_EXPORT",
+  "full_shell_tangent_rank_histogram": {
+    "8": 1
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-norm12-orbit-103b2-p19-twist-section-v1.json": "7cc3cd20a81b7be3841e47d21448bd2e8c41026b68521fae2f98f14700cdbbca",
+    "artifacts/local/elkies-k3/twist-polynomial-sections/genus-one-norm12-orbit-103b2/p19/export.json": "863241f5bd62b5124a79e11553509643e4443fc7ec524ee1b28d6a3d4aef0236",
+    "elkies-k3/scripts/bruteforce_twist_polynomial_sections_modp.cpp": "763544adcc6236a1cc127aab90648c1d51a8968bcf85fc0baad37f72ed40bfab"
+  },
+  "known_section_match_indices": [
+    0
+  ],
+  "prime": 19,
+  "proof_boundary": "The enumeration is exhaustive only for the blocks in the input export. It neither supplies a characteristic-zero lift nor bounds the full Mordell-Weil rank. The export proof boundary remains in force.",
+  "schema": "elkies-k3.twist-polynomial-section-bruteforce.v1",
+  "solutions": [
+    {
+      "X_coefficients_low_to_high": [
+        18,
+        12,
+        17,
+        1,
+        14,
+        10,
+        10,
+        16,
+        6
+      ],
+      "Y_coefficients_low_to_high": [
+        0,
+        11,
+        6,
+        18,
+        3,
+        8,
+        10,
+        17,
+        13,
+        3,
+        7,
+        8,
+        9
+      ],
+      "full_shell_tangent_rank": 8,
+      "representative_leading_x_y": [
+        6,
+        9
+      ]
+    }
+  ],
+  "status": "PASS_EXHAUSTIVE_FINITE_FIELD_ENUMERATION_OF_EXPORTED_BLOCKS",
+  "unique_leading_x_values": [
+    3,
+    5,
+    6,
+    14,
+    16,
+    17
+  ]
+}
