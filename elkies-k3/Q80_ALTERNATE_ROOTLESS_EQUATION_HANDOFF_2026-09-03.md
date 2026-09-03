@@ -235,6 +235,7 @@ the following exact nonzero subresultants after removal of `(W+r)^3` at
 | 8 | 39,426,096 | 328.980 seconds |
 | 7 | 50,691,932 | 554.864 seconds |
 | 6 | 61,957,773 | 725.906 seconds |
+| 5 | 73,223,619 | not retained |
 
 The run was then observed at 100 percent CPU and about 1.90 GB RSS computing
 the degree-six-to-five step.  At the next status check PID `1740880` no longer
@@ -247,12 +248,13 @@ The recovery worker now writes an atomic binary Brown-state checkpoint after
 every completed exact subresultant, with a human-readable JSON companion and
 input hashes for the operands, pencil, factor lift, base value, descent field,
 and stripped residual.  A fresh replay has exercised this on the real
-million-bit input and durably recovered degrees ten and nine; the latter has
-the same 28,160,280-bit maximum coordinate height as the lost run.  Its current
-checkpoint is
+million-bit input and durably recovered through degree five, one full step
+beyond the lost run.  Its current checkpoint is
 `artifacts/local/elkies-k3/q80-third-q12-exact-quartic-subresultant-checkpoint-v1.pickle`.
-Any later process loss can resume from the last completed degree rather than
-restarting the sequence.
+The worker has replayed that checkpoint successfully and is continuing with
+the degree-five-to-four step in the detached `q80_exact_quartic` tmux session.
+Any later process loss can resume from degree five rather than restarting the
+sequence.
 
 ## Next gates
 

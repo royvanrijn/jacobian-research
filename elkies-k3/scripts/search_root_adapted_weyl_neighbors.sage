@@ -126,6 +126,14 @@ parser.add_argument(
     ),
 )
 parser.add_argument(
+    "--include-zero-mw",
+    action="store_true",
+    help=(
+        "also enumerate the zero Mordell--Weil projection; this is useful "
+        "for auditing root-supported neighbours, which are omitted by default"
+    ),
+)
+parser.add_argument(
     "--stream-skip",
     type=int,
     default=0,
@@ -485,6 +493,8 @@ for q in sorted(set(args.q)):
     }
     if args.mw_vector_cap is not None:
         cache_key["mw_vector_cap"] = int(args.mw_vector_cap)
+    if args.include_zero_mw:
+        cache_key["include_zero_mw"] = True
     if args.mw_vectors_cache is not None and args.mw_vectors_cache.exists():
         cache_payload = json.loads(args.mw_vectors_cache.read_text())
         assert cache_payload["schema"] == "root-adapted-mw-vectors.v1"
@@ -495,7 +505,11 @@ for q in sorted(set(args.q)):
         mw_pari_count = int(
             cache_payload.get("pari_vector_count", 2 * len(mw_vectors))
         )
-        assert all(value != 0 and value * height * value <= target for value in mw_vectors)
+        assert all(
+            (args.include_zero_mw or value != 0)
+            and value * height * value <= target
+            for value in mw_vectors
+        )
         print(
             "ROOTWEYL_MW_CACHE|q={}|vectors={}|path={}|status=LOADED".format(
                 q, len(mw_vectors), display_path(args.mw_vectors_cache)
@@ -525,6 +539,8 @@ for q in sorted(set(args.q)):
                 key=lambda value: (value * height * value, tuple(value)),
             )
         )
+        if args.include_zero_mw:
+            mw_vectors = (vector(ZZ, [0] * height.nrows()),) + mw_vectors
         if args.mw_vectors_cache is not None:
             args.mw_vectors_cache.parent.mkdir(parents=True, exist_ok=True)
             args.mw_vectors_cache.write_text(

@@ -2809,6 +2809,7 @@ independent residual-rank cross-check, not the primary class certificate.  See
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MODULAR-DIMENSION-SIEVE 9622c6eb4d8522bd -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-GENERATION 9a7a1e01cb22f62e -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-CONTROLS 3cbde45fb2cb0f17 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 b4f8981a10f12384 -->
 
 ```bash
 sage -python certify_integral_rank_transfer_bridge_reglue.sage --check
@@ -2905,6 +2906,22 @@ two-cell near miss.  The long driver found NS0024 after 7,477 raw neighbours;
 the corrected H3 and Q80 support-diversity controls each miss within 42,300
 raw neighbours.  Those misses are bounded experiments, not genus-wide
 obstructions.
+
+`search_integral_rank_transfer_q80_defect_neighbors.sage` expands every
+occupied Q80 mask cell into its exact physical dual vectors.  It samples only
+isotropic lines nonorthogonal to all of them, which by the dual-neighbour
+survival lemma removes every old witness.  Its 10,000-line control finds
+1,397 rootless directed neighbours and no zero mask: all acquire replacement
+defects.
+
+`search_integral_rank_transfer_q80_defect_beam.sage` repeats this operation
+and keeps at most one lowest-defect representative from each integral
+isometry class.  It reaches zero support in generation four after 30,228
+constructed neighbours.  `certify_integral_rank_transfer_q80_defect_completion.sage
+--check` is the short exact replay.  It verifies the four witness-removal
+steps, the replacement counts `4,6,4,4,0`, and the new rootless determinant-948
+completion.  Defect cardinality is not monotone; physical witness incidence
+is the operative transition datum.
 
 `derive_r17_genus_one_bisection_twist_section.sage` descends the certified
 `0x103b2` split bisection to an exact height-eight section on the quartic

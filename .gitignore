@@ -104,6 +104,9 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-controls-h3-support-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-controls-ns0024-support-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-controls-q80-support-v1.json
+!/artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-neighbors-v1.json
+!/artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-beam-v1.json
+!/artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-completion-v1.json
 !/artifacts/generated-results/elkies-k3-rootless-j1-uniform-bound-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-predictor-benchmark-v1.json

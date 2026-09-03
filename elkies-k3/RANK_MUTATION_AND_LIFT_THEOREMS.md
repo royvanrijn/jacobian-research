@@ -2018,6 +2018,89 @@ masked support determines which support mutations are reachable.  The
 failure of count-only and support-only archives on H3/Q80 shows that the next
 classifier must retain more of `Sigma_2` or actual core isometry information.
 
+### Theorem H0i: masked-witness survival and defect-directed Q80 completion
+
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 b4f8981a10f12384 -->
+
+Let `K` be integral, let `p` be a good prime, and let `ell` be an isotropic
+line in `K/pK` represented by `y`.  Write its Kneser neighbour as
+
+```text
+M = {z in K : <z,y> = 0 mod p},
+K_ell = M + Z*(y/p).
+```
+
+For every `x in K dual`, there is an exact survival criterion
+
+```text
+x in K_ell dual  iff  <x,y> = 0 mod p.              (H0i.1)
+```
+
+Indeed, `x` already pairs integrally with the sublattice `M` of `K`.  The
+only additional generator is `y/p`, and its pairing with `x` is integral
+exactly when `p` divides `<x,y>`.  Consequently, if `V_F(K)` is the finite set
+of all physical dual vectors realizing occupied forbidden theta cells, then
+an isotropic line satisfying
+
+```text
+<x,y> != 0 mod p for every x in V_F(K)              (H0i.2)
+```
+
+provably removes every current masked witness before the neighbour is
+constructed.  This is only a removal theorem: `K_ell dual` may contain new
+vectors in the same forbidden cells.
+The isotropic-line parametrization and displayed construction of a
+`p`-neighbour are standard; see Chenevier's
+[*Statistics for Kneser p-neighbors*](https://arxiv.org/abs/2104.06846),
+equations (1.2)--(1.3).  The dual-witness survival criterion above is the
+elementary finite-incidence consequence needed here.
+
+The Q80 control exhibits both sides sharply.  Its H0h near-miss core has two
+occupied signed mask cells realized by four physical dual vectors.  Among
+10,000 sampled isotropic lines at
+`p=7,11,13,17,19,29,31,37,41,43`, exactly 8,919 satisfy (H0i.2).  Of their
+neighbours, 1,397 are rootless, but every one regenerates a forbidden vector;
+the new defect distribution is
+
+```text
+2:28, 4:266, 6:584, 8:413, 10:99, 12:7.
+```
+
+Thus one-step witness killing is not sufficient.  A multistep beam retaining
+the lowest-defect cores in distinct integral isometry classes succeeds.  It
+constructs 30,228 distinct directed neighbours through four generations;
+4,643 are rootless and 116 have the minimal nonzero two-cell defect.  The
+four selected transitions remove every parent witness.  The physical witness
+counts change
+
+```text
+4 -> 6 -> 4 -> 4 -> 0,
+```
+
+so the first three steps are genuine defect replacement and the fourth is
+annihilation.  Combined with the eight-step canonical-seed prefix of H0h,
+this gives a twelve-step exact construction of a new rootless rank-15 Q80
+core.  Its class-2 graph completion has rank 17, determinant 948, minimum
+four, no roots, and the target discriminant form.  It is not integrally
+isometric to the previously declared Q80 target frame.
+
+The short checker
+[`certify_integral_rank_transfer_q80_defect_completion.sage`](scripts/certify_integral_rank_transfer_q80_defect_completion.sage)
+verifies (H0i.1) on every stored transition, proves removal of every old
+witness, recomputes every replacement shell, and constructs the final child.
+The one-step and multistep discovery drivers are
+[`search_integral_rank_transfer_q80_defect_neighbors.sage`](scripts/search_integral_rank_transfer_q80_defect_neighbors.sage)
+and
+[`search_integral_rank_transfer_q80_defect_beam.sage`](scripts/search_integral_rank_transfer_q80_defect_beam.sage).
+The exact certificate is
+[`elkies-k3-integral-rank-transfer-q80-defect-completion-v1.json`](../artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-completion-v1.json).
+
+This is the first finite transition law in the desired constructive calculus.
+It also shows why defect cardinality and occupied support are insufficient:
+neighbour reachability depends on the pairings of the individual physical
+witnesses with isotropic lines.  No monotone scalar descent, universal path,
+neighbour-graph completeness, or speedup theorem follows.
+
 ### Negative experiment H0: the orthogonal split is not a useful predictor
 
 For any proposed replacement, `K+C_new` is a sublattice of `W_new`.

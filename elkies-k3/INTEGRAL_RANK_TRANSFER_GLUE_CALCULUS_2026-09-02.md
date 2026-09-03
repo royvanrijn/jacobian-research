@@ -8,6 +8,7 @@
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MODULAR-DIMENSION-SIEVE 9622c6eb4d8522bd -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-GENERATION 9a7a1e01cb22f62e -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-CONTROLS 3cbde45fb2cb0f17 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 b4f8981a10f12384 -->
 <!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
 <!-- status-consumer: EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL 648ec884ce7152bb -->
 <!-- status-consumer: EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE 52de13c8443f2b7d -->
@@ -163,6 +164,25 @@ after 7,477 neighbours.  The same corrected eight-generation rule examines
 diversity is useful but not a complete surrogate for `Sigma_2` realization or
 core isometry class.  See Corollary H0h and the
 [`prospective control certificate`](../artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-controls-v1.json).
+
+The Q80 near miss is now resolved by passing from masked cells to their
+physical dual-vector witnesses.  If the good-prime neighbour is defined by an
+isotropic line `ell=<y>`, an old dual vector `x` survives exactly when
+`<x,y>=0 mod p`.  Lines nonorthogonal to every forbidden witness therefore
+remove the complete old defect before a neighbour is built.  New forbidden
+vectors can still appear, and this replacement is the dominant behavior:
+among 1,397 rootless one-step Q80 neighbours which kill all four initial
+witnesses, none has zero mask.
+
+An isometry-diverse directed beam transports the two-cell defect through
+physical witness populations `4 -> 6 -> 4 -> 4 -> 0`.  It reaches zero in
+four directed steps after constructing 30,228 distinct neighbours.  Appending
+these steps to the canonical eight-step prefix gives a new rootless Q80 core
+and a new determinant-948 rootless rank-17 completion with the target
+discriminant form.  The exact survival law and path are Theorem H0i.  The
+result identifies the missing state variable: masked support must be
+decorated by the incidence of its individual witnesses against isotropic
+neighbour lines.
 
 Literal Nikulin discriminant-form glue occurs in the Niemeier complement
 constructions.  A closely related finite-index saturation quotient occurs in

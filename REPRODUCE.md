@@ -18252,6 +18252,7 @@ sum equals the exact genus mass
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MODULAR-DIMENSION-SIEVE 9622c6eb4d8522bd -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-GENERATION 9a7a1e01cb22f62e -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-CONTROLS 3cbde45fb2cb0f17 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 b4f8981a10f12384 -->
 
 Generate and byte-check the equation-free census, then replay the local
 bridge and involution graph-glue theorems with
@@ -18266,6 +18267,7 @@ sage -python elkies-k3/scripts/certify_integral_rank_transfer_reverse_theta_mask
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_weil_compression.sage --check
 sage -python elkies-k3/scripts/generate_integral_rank_transfer_masked_core_neighbors.sage --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_masked_core_controls.sage --check
+sage -python elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_completion.sage --check
 sage -python elkies-k3/scripts/certify_integral_character_glue_calculus.sage --check
 sage -python elkies-k3/scripts/certify_r17_norm12_103b2_mw_glue.sage \
   --skip-specialization-saturation --check
@@ -18366,6 +18368,23 @@ sage -python elkies-k3/scripts/search_integral_rank_transfer_masked_core_control
 
 That full driver is a bounded experiment; only the extracted paths and exact
 completion checks are theorem fields.
+The defect-directed Q80 replay then proves the exact neighbour-survival law
+and closes the two-cell near miss.  Each stored line is nonorthogonal modulo
+its good prime to every physical witness of the current defect.  The replay
+checks that all old witnesses leave the new dual lattice, recomputes the
+replacement witnesses, and verifies the sequence `4 -> 6 -> 4 -> 4 -> 0`.
+The resulting class-2 completion is a new rootless determinant-948 rank-17
+class with the target discriminant form.  Rerun the bounded discovery records
+with
+
+```bash
+sage -python elkies-k3/scripts/search_integral_rank_transfer_q80_defect_neighbors.sage --check
+sage -python elkies-k3/scripts/search_integral_rank_transfer_q80_defect_beam.sage --check
+```
+
+The first checks 10,000 one-step lines; the second runs the four-generation
+isometry-diverse directed beam.  Their sampling bounds are experiment fields,
+not completeness claims.
 The character replay exhausts the E6 `2+1` and `2+2` involution graphs after
 the declared factor-12 integral scaling.  The norm-twelve byte check reuses
 the pinned full saturation record; generating that artifact without the skip
