@@ -43,6 +43,17 @@ DEFAULT_SUBRESULTANT_CHECKPOINT = (
     / "artifacts/local/elkies-k3/"
     / "q80-third-q12-exact-quartic-subresultant-checkpoint-v1.pickle"
 )
+DEFAULT_SPECIALIZED_FACTORIZATION = (
+    RESULTS / "elkies-k3-q80-third-q12-exact-discriminant-specialization-v1.json"
+)
+DEFAULT_H_CANDIDATE = (
+    RESULTS / "elkies-k3-q80-third-q12-quartic-denominator-candidate-v1.json"
+)
+DEFAULT_GENERIC_QUARTIC_JET = (
+    ROOT
+    / "artifacts/local/elkies-k3/"
+    / "q80-third-q12-exact-generic-quartic-jet-v1.json"
+)
 SUBRESULTANT_CHECKPOINT_SCHEMA = (
     "elkies-k3-q80-third-q12-exact-quartic-subresultant-checkpoint-v1"
 )
@@ -93,6 +104,14 @@ def pair_record(value):
 
 def pair_polynomial_record(value):
     return [pair_record(coefficient) for coefficient in value]
+
+
+def pair_from_record(value):
+    return rational(value[0]), rational(value[1])
+
+
+def pair_polynomial_from_record(value):
+    return p_trim([pair_from_record(coefficient) for coefficient in value])
 
 
 ZERO = (mpz(0), mpz(0))
@@ -224,6 +243,148 @@ def s_pow(value, exponent, field_square):
     return answer
 
 
+def j_add(left, right):
+    return [p_add(left[0], right[0]), p_add(left[1], right[1])]
+
+
+def j_neg(value):
+    return [p_neg(value[0]), p_neg(value[1])]
+
+
+def j_scale(value, scalar):
+    return [p_scale(value[0], scalar), p_scale(value[1], scalar)]
+
+
+def j_mul(left, right, field_square):
+    return [
+        p_mul(left[0], right[0], field_square),
+        p_add(
+            p_mul(left[0], right[1], field_square),
+            p_mul(left[1], right[0], field_square),
+        ),
+    ]
+
+
+def j_pow(value, exponent, field_square):
+    answer = [[ONE], [ZERO]]
+    power = value
+    while exponent:
+        if exponent & 1:
+            answer = j_mul(answer, power, field_square)
+        exponent //= 2
+        if exponent:
+            power = j_mul(power, power, field_square)
+    return answer
+
+
+def rational_modulus(value, modulus):
+    value = mpq(value)
+    denominator = ZZ(value.denominator)
+    if gcd(mpz(denominator), mpz(modulus)) != 1:
+        raise ZeroDivisionError("rational denominator is not invertible modulo modulus")
+    return ZZ(value.numerator) * inverse_mod(denominator, modulus) % modulus
+
+
+def b_trim(value):
+    value = [p_trim(coefficient) for coefficient in value]
+    while value and value[-1] == [ZERO]:
+        value.pop()
+    return value or [[ZERO]]
+
+
+def b_add(left, right):
+    answer = [[ZERO] for _ in range(max(len(left), len(right)))]
+    for index in range(len(answer)):
+        answer[index] = p_add(
+            left[index] if index < len(left) else [ZERO],
+            right[index] if index < len(right) else [ZERO],
+        )
+    return b_trim(answer)
+
+
+def b_neg(value):
+    return b_trim([p_neg(coefficient) for coefficient in value])
+
+
+def b_scale(value, scalar):
+    return b_trim([p_scale(coefficient, scalar) for coefficient in value])
+
+
+def b_mul(left, right, field_square):
+    answer = [[ZERO] for _ in range(len(left) + len(right) - 1)]
+    for left_index, left_value in enumerate(left):
+        for right_index, right_value in enumerate(right):
+            answer[left_index + right_index] = p_add(
+                answer[left_index + right_index],
+                p_mul(left_value, right_value, field_square),
+            )
+    return b_trim(answer)
+
+
+def b_pow(value, exponent, field_square):
+    answer = [[ONE]]
+    power = value
+    while exponent:
+        if exponent & 1:
+            answer = b_mul(answer, power, field_square)
+        exponent //= 2
+        if exponent:
+            power = b_mul(power, power, field_square)
+    return answer
+
+
+def b_divide_monic_linear(value, constant, field_square):
+    """Divide in W by W+constant, with coefficients in K[V]."""
+    value = b_trim(value)
+    if len(value) < 2:
+        return [[ZERO]], value[0]
+    quotient = [[ZERO] for _ in range(len(value) - 1)]
+    quotient[-1] = value[-1]
+    for degree in range(len(value) - 2, 0, -1):
+        quotient[degree - 1] = p_add(
+            value[degree],
+            p_neg(p_k_scale(quotient[degree], constant, field_square)),
+        )
+    remainder = p_add(
+        value[0],
+        p_neg(p_k_scale(quotient[0], constant, field_square)),
+    )
+    return b_trim(quotient), p_trim(remainder)
+
+
+def b_pseudo_divmod(dividend, divisor, field_square):
+    """Fraction-free W pseudo-division over the domain K[V]."""
+    remainder = b_trim(dividend)
+    divisor = b_trim(divisor)
+    if divisor == [[ZERO]]:
+        raise ZeroDivisionError
+    divisor_degree = len(divisor) - 1
+    divisor_lead = divisor[-1]
+    quotient = [[ZERO]]
+    steps = 0
+    while remainder != [[ZERO]] and len(remainder) - 1 >= divisor_degree:
+        shift = len(remainder) - 1 - divisor_degree
+        remainder_lead = remainder[-1]
+        remainder = b_mul(remainder, [divisor_lead], field_square)
+        quotient = b_mul(quotient, [divisor_lead], field_square)
+        while len(quotient) <= shift:
+            quotient.append([ZERO])
+        quotient[shift] = p_add(quotient[shift], remainder_lead)
+        subtraction = [[ZERO] for _ in range(shift)] + [
+            p_mul(remainder_lead, coefficient, field_square)
+            for coefficient in divisor
+        ]
+        remainder = b_add(remainder, b_neg(subtraction))
+        steps += 1
+        print(
+            "Q80Q12GENERICPSEUDO|"
+            f"step={steps}|remainder_W_degree="
+            f"{-1 if remainder == [[ZERO]] else len(remainder)-1}",
+            flush=True,
+        )
+    return b_trim(quotient), b_trim(remainder), divisor_lead, steps
+
+
 def p_divide_monic_linear(value, constant, field_square):
     """Divide by W+constant, returning quotient and exact remainder."""
     value = p_trim(value)
@@ -301,6 +462,33 @@ def p_divmod_field(dividend, divisor, field_square):
             )
         remainder = p_trim(remainder)
     return p_trim(quotient), remainder
+
+
+def p_inverse_mod(value, modulus, field_square):
+    """Return the inverse of value modulo modulus over the quadratic field."""
+    old_remainder = p_trim(modulus)
+    remainder = p_divmod_field(p_trim(value), old_remainder, field_square)[1]
+    old_coefficient = [ZERO]
+    coefficient = [ONE]
+    while remainder != [ZERO]:
+        quotient, next_remainder = p_divmod_field(
+            old_remainder, remainder, field_square
+        )
+        old_remainder, remainder = remainder, next_remainder
+        old_coefficient, coefficient = coefficient, p_add(
+            old_coefficient,
+            p_neg(p_mul(quotient, coefficient, field_square)),
+        )
+    if len(old_remainder) != 1 or old_remainder[0] == ZERO:
+        raise ArithmeticError("polynomials are not coprime in modular inverse")
+    inverse_gcd = k_inverse(old_remainder[0], field_square)
+    candidate = p_k_scale(old_coefficient, inverse_gcd, field_square)
+    _, candidate = p_divmod_field(candidate, modulus, field_square)
+    product = p_mul(value, candidate, field_square)
+    _, product_remainder = p_divmod_field(product, modulus, field_square)
+    if product_remainder != [ONE]:
+        raise ArithmeticError("polynomial modular inverse fails exact replay")
+    return candidate
 
 
 def p_pseudo_remainder(dividend, divisor, field_square):
@@ -600,12 +788,25 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--operands", type=Path, default=DEFAULT_OPERANDS)
 parser.add_argument("--pencil", type=Path, default=DEFAULT_PENCIL)
 parser.add_argument("--factor-lift", type=Path, default=DEFAULT_FACTOR_LIFT)
+parser.add_argument(
+    "--specialized-factorization",
+    type=Path,
+    default=DEFAULT_SPECIALIZED_FACTORIZATION,
+)
+parser.add_argument("--H-candidate", type=Path, default=DEFAULT_H_CANDIDATE)
+parser.add_argument(
+    "--generic-quartic-jet-artifact",
+    type=Path,
+    default=DEFAULT_GENERIC_QUARTIC_JET,
+)
 parser.add_argument("--base-value", default="0")
 parser.add_argument("--output", type=Path)
 parser.add_argument("--check", action="store_true")
 parser.add_argument("--attempt-quartic-gcd", action="store_true")
 parser.add_argument("--attempt-custom-prs", action="store_true")
 parser.add_argument("--attempt-subresultant-prs", action="store_true")
+parser.add_argument("--attempt-generic-quartic-jet", action="store_true")
+parser.add_argument("--attempt-generic-quartic-division", action="store_true")
 parser.add_argument(
     "--subresultant-checkpoint",
     type=Path,
@@ -622,6 +823,9 @@ args = parser.parse_args()
 args.operands = args.operands.resolve()
 args.pencil = args.pencil.resolve()
 args.factor_lift = args.factor_lift.resolve()
+args.specialized_factorization = args.specialized_factorization.resolve()
+args.H_candidate = args.H_candidate.resolve()
+args.generic_quartic_jet_artifact = args.generic_quartic_jet_artifact.resolve()
 args.subresultant_checkpoint = args.subresultant_checkpoint.resolve()
 if args.output:
     args.output = args.output.resolve()
@@ -638,6 +842,10 @@ product_numerator_root = isqrt(product.numerator)
 if product_numerator_root**2 != product.numerator:
     raise ArithmeticError("reduced q1*q2 numerator is not a square")
 delta_square = product.denominator
+omega_to_delta = mpq(
+    4 * product_numerator_root,
+    product.denominator,
+)
 
 cubic_coefficients = [[ZERO] for _ in range(4)]
 parsed_terms = []
@@ -1004,6 +1212,453 @@ if args.attempt_subresultant_prs:
         "identity": "monic_specialized_discriminant=L^3*Q^2*D at V=0",
     }
     degree_exponents = [[4, 1], [4, 2], [1, 3]]
+generic_quartic_jet = None
+if args.attempt_generic_quartic_jet:
+    if base_value != 0:
+        raise NotImplementedError("the generic quartic jet is anchored at V=0")
+    specialized = json.loads(args.specialized_factorization.read_text())
+    H_artifact = json.loads(args.H_candidate.read_text())
+    if specialized.get("status") != "PASS_EXACT_SPECIALIZED_L3_Q2_D_FACTORIZATION":
+        raise ArithmeticError("specialized factorization artifact is not certified")
+    if specialized["base_value"] != rational_record(mpq(0)):
+        raise ArithmeticError("specialized factorization is not anchored at V=0")
+    if specialized["quadratic_field"]["delta_square"] != str(delta_square):
+        raise ArithmeticError("specialized factorization uses a different descent field")
+    q0 = pair_polynomial_from_record(
+        specialized["monic_factors_by_exponent"]["2"]
+    )
+    d0 = pair_polynomial_from_record(
+        specialized["monic_factors_by_exponent"]["1"]
+    )
+    if len(q0) - 1 != 4 or len(d0) - 1 != 4:
+        raise ArithmeticError("specialized exact factors are not quartics")
+
+    # Clear one global rational denominator/content from the exact moving
+    # cubic, then retain only its V^0 and V^1 coefficients.  This is the exact
+    # dual-number fibre over K[V]/(V^2), not finite differencing.
+    jet_denominator = mpz(1)
+    for _, _, _, exact_value in parsed_terms:
+        for coordinate in exact_value:
+            jet_denominator = lcm(jet_denominator, coordinate.denominator)
+    jet_integer_terms = []
+    jet_content = mpz(0)
+    for v_degree, w_degree, x_degree, exact_value in parsed_terms:
+        integer_value = tuple(
+            coordinate.numerator
+            * (jet_denominator // coordinate.denominator)
+            for coordinate in exact_value
+        )
+        jet_integer_terms.append((v_degree, w_degree, x_degree, integer_value))
+        for coordinate in integer_value:
+            jet_content = gcd(jet_content, abs(coordinate))
+    jet_integer_terms = [
+        (
+            v_degree,
+            w_degree,
+            x_degree,
+            tuple(coordinate // jet_content for coordinate in integer_value),
+        )
+        for v_degree, w_degree, x_degree, integer_value in jet_integer_terms
+    ]
+    cubic_jets = [[[ZERO], [ZERO]] for _ in range(4)]
+    for v_degree, w_degree, x_degree, exact_value in jet_integer_terms:
+        if v_degree > 1:
+            continue
+        coefficient = cubic_jets[x_degree][v_degree]
+        while len(coefficient) <= w_degree:
+            coefficient.append(ZERO)
+        coefficient[w_degree] = k_add(coefficient[w_degree], exact_value)
+        cubic_jets[x_degree][v_degree] = p_trim(coefficient)
+    jet_a, jet_b, jet_c, jet_d = (
+        cubic_jets[3],
+        cubic_jets[2],
+        cubic_jets[1],
+        cubic_jets[0],
+    )
+    discriminant_jet = j_add(
+        j_add(
+            j_add(
+                j_mul(
+                    j_pow(jet_b, 2, delta_square),
+                    j_pow(jet_c, 2, delta_square),
+                    delta_square,
+                ),
+                j_neg(
+                    j_scale(
+                        j_mul(jet_a, j_pow(jet_c, 3, delta_square), delta_square),
+                        4,
+                    )
+                ),
+            ),
+            j_neg(
+                j_scale(
+                    j_mul(j_pow(jet_b, 3, delta_square), jet_d, delta_square),
+                    4,
+                )
+            ),
+        ),
+        j_add(
+            j_neg(
+                j_scale(
+                    j_mul(
+                        j_pow(jet_a, 2, delta_square),
+                        j_pow(jet_d, 2, delta_square),
+                        delta_square,
+                    ),
+                    27,
+                )
+            ),
+            j_scale(
+                j_mul(
+                    j_mul(
+                        j_mul(jet_a, jet_b, delta_square),
+                        jet_c,
+                        delta_square,
+                    ),
+                    jet_d,
+                    delta_square,
+                ),
+                18,
+            ),
+        ),
+    )
+    residual_jet = []
+    for jet_coefficient in discriminant_jet:
+        stripped = jet_coefficient
+        for _ in range(3):
+            stripped, remainder = p_divide_monic_linear(
+                stripped, linear_constant, delta_square
+            )
+            if remainder != ZERO:
+                raise ArithmeticError("generic discriminant jet is not divisible by L^3")
+        residual_jet.append(stripped)
+    residual0, residual1 = residual_jet
+    residual_degree = len(residual0) - 1
+    if residual_degree != 12 or len(residual1) - 1 > residual_degree:
+        raise ArithmeticError("linear-stripped discriminant jet has wrong W-degree")
+    leading0 = residual0[-1]
+    leading1 = (
+        residual1[residual_degree]
+        if len(residual1) > residual_degree
+        else ZERO
+    )
+    inverse_leading0 = k_inverse(leading0, delta_square)
+    r0 = p_k_scale(residual0, inverse_leading0, delta_square)
+    r1 = p_add(
+        p_k_scale(residual1, inverse_leading0, delta_square),
+        p_neg(
+            p_k_scale(
+                r0,
+                k_mul(leading1, inverse_leading0, delta_square),
+                delta_square,
+            )
+        ),
+    )
+    expected_r0 = p_mul(p_mul(q0, q0, delta_square), d0, delta_square)
+    if r0 != expected_r0:
+        raise ArithmeticError("exact V=0 jet does not replay certified Q0^2*D0")
+    quotient_r1_q0, remainder_r1_q0 = p_divmod_field(
+        r1, q0, delta_square
+    )
+    if remainder_r1_q0 != [ZERO]:
+        raise ArithmeticError("Q0 does not divide the exact first discriminant jet")
+    _, tangent_numerator = p_divmod_field(
+        quotient_r1_q0, q0, delta_square
+    )
+    inverse_d0 = p_inverse_mod(d0, q0, delta_square)
+    tangent_product = p_mul(tangent_numerator, inverse_d0, delta_square)
+    _, q1 = p_divmod_field(tangent_product, q0, delta_square)
+    q1 = p_scale(q1, mpq(1, 2))
+    if len(q1) - 1 > 3:
+        raise ArithmeticError("monic quartic tangent has degree above three")
+    differentiated_numerator = p_add(
+        r1,
+        p_neg(
+            p_scale(
+                p_mul(
+                    p_mul(q0, q1, delta_square),
+                    d0,
+                    delta_square,
+                ),
+                2,
+            )
+        ),
+    )
+    q0_squared = p_mul(q0, q0, delta_square)
+    d1, differentiated_remainder = p_divmod_field(
+        differentiated_numerator, q0_squared, delta_square
+    )
+    if differentiated_remainder != [ZERO] or len(d1) - 1 > 3:
+        raise ArithmeticError("recovered quartic tangent fails differentiated identity")
+
+    H_candidate = H_artifact["candidate"]
+    if H_candidate["delta_square"] != str(delta_square):
+        raise ArithmeticError("H candidate uses a different descent field")
+    h0 = (
+        rational(H_candidate["h0_rational"]),
+        rational(H_candidate["h0_delta"]),
+    )
+    q0_coefficients = q0 + [ZERO] * (5 - len(q0))
+    q1_coefficients = q1 + [ZERO] * (4 - len(q1))
+    q_hat = []
+    for w_degree in range(4):
+        constant = k_mul(h0, q0_coefficients[w_degree], delta_square)
+        slope = k_add(
+            q0_coefficients[w_degree],
+            k_mul(h0, q1_coefficients[w_degree], delta_square),
+        )
+        q_hat.append(p_trim([constant, slope]))
+    q_hat.append([h0, ONE])
+
+    # The p-adic lift records these same numerator coefficients in the omega
+    # basis.  The exact V=0 anchor removes the former projective ambiguity.
+    q_lift_records = factor_lift["factorization"]["Q"][
+        "coefficients_low_to_high_W"
+    ]
+    p_adic_mismatches = []
+    for w_degree in range(4):
+        lifted = q_lift_records[w_degree][
+            "numerator_coefficients_low_to_high_U_1_omega"
+        ]
+        if len(lifted) != 2:
+            raise ArithmeticError("p-adic quartic numerator is not linear in V")
+        for v_degree in range(2):
+            exact_delta = q_hat[w_degree][v_degree]
+            exact_omega = (
+                exact_delta[0],
+                exact_delta[1] / mpq(omega_to_delta),
+            )
+            for coordinate in range(2):
+                exact_residue = rational_modulus(
+                    exact_omega[coordinate], modulus
+                )
+                lifted_residue = ZZ(lifted[v_degree][coordinate]) % modulus
+                if exact_residue != lifted_residue:
+                    p_adic_mismatches.append(
+                        [w_degree, v_degree, coordinate]
+                    )
+    if p_adic_mismatches:
+        raise ArithmeticError(
+            "jet-derived quartic numerator fails p-adic replay at "
+            f"{p_adic_mismatches}"
+        )
+    generic_quartic_jet = {
+        "method": "exact first-order Hensel lift at V=0",
+        "identity": "R1=2*Q0*Q1*D0+Q0^2*D1",
+        "R1_maximum_coordinate_bits": p_maximum_coordinate_bits(r1),
+        "Q1_coefficients_low_to_high_W_1_delta": pair_polynomial_record(q1),
+        "Q1_maximum_coordinate_bits": p_maximum_coordinate_bits(q1),
+        "D1_coefficients_low_to_high_W_1_delta": pair_polynomial_record(d1),
+        "D1_maximum_coordinate_bits": p_maximum_coordinate_bits(d1),
+        "Q_numerator_coefficients_low_to_high_W_then_V_1_delta": [
+            pair_polynomial_record(coefficient) for coefficient in q_hat
+        ],
+        "Q_numerator_maximum_coordinate_bits": max(
+            p_maximum_coordinate_bits(coefficient) for coefficient in q_hat
+        ),
+        "H_coefficients_low_to_high_V_1_delta": pair_polynomial_record(
+            [h0, ONE]
+        ),
+        "p_adic_modulus_bits": int(modulus.nbits()),
+        "p_adic_numerator_coordinates_replayed": 16,
+        "p_adic_mismatches": p_adic_mismatches,
+        "claim_boundary": (
+            "The exact first-order deformation and all sixteen p-adic numerator "
+            "coordinates replay. Full generic Q^2 divisibility remains a separate gate."
+        ),
+    }
+generic_quartic_division = None
+if args.attempt_generic_quartic_division:
+    jet_artifact = json.loads(args.generic_quartic_jet_artifact.read_text())
+    if jet_artifact.get("status") != "PASS_EXACT_GENERIC_QUARTIC_FIRST_JET_P19_REPLAY":
+        raise ArithmeticError("generic quartic jet artifact is not certified")
+    jet_inputs = jet_artifact["inputs"]
+    for label, current_path in (
+        ("operands", args.operands),
+        ("pencil", args.pencil),
+        ("factor_lift", args.factor_lift),
+        ("specialized_factorization", args.specialized_factorization),
+        ("H_candidate", args.H_candidate),
+    ):
+        if jet_inputs[label]["sha256"] != sha256(current_path):
+            raise ArithmeticError(f"generic quartic jet has stale {label} input")
+    generic_quartic_jet = jet_artifact["generic_quartic_first_jet"]
+    q_hat = [
+        pair_polynomial_from_record(coefficient)
+        for coefficient in generic_quartic_jet[
+            "Q_numerator_coefficients_low_to_high_W_then_V_1_delta"
+        ]
+    ]
+    if len(q_hat) != 5 or q_hat[-1][-1] != ONE:
+        raise ArithmeticError("saved generic quartic numerator has wrong shape")
+    h0 = q_hat[-1][0]
+    jet_denominator = mpz(1)
+    for _, _, _, exact_value in parsed_terms:
+        for coordinate in exact_value:
+            jet_denominator = lcm(jet_denominator, coordinate.denominator)
+    jet_integer_terms = []
+    jet_content = mpz(0)
+    for v_degree, w_degree, x_degree, exact_value in parsed_terms:
+        integer_value = tuple(
+            coordinate.numerator
+            * (jet_denominator // coordinate.denominator)
+            for coordinate in exact_value
+        )
+        jet_integer_terms.append((v_degree, w_degree, x_degree, integer_value))
+        for coordinate in integer_value:
+            jet_content = gcd(jet_content, abs(coordinate))
+    jet_integer_terms = [
+        (
+            v_degree,
+            w_degree,
+            x_degree,
+            tuple(coordinate // jet_content for coordinate in integer_value),
+        )
+        for v_degree, w_degree, x_degree, integer_value in jet_integer_terms
+    ]
+    print("Q80Q12GENERICDIV|stage=assemble_full_cubic", flush=True)
+    cubic_bivariate = [[[ZERO]] for _ in range(4)]
+    for v_degree, w_degree, x_degree, exact_value in jet_integer_terms:
+        coefficient = cubic_bivariate[x_degree]
+        while len(coefficient) <= w_degree:
+            coefficient.append([ZERO])
+        v_polynomial = coefficient[w_degree]
+        while len(v_polynomial) <= v_degree:
+            v_polynomial.append(ZERO)
+        v_polynomial[v_degree] = k_add(v_polynomial[v_degree], exact_value)
+        coefficient[w_degree] = p_trim(v_polynomial)
+        cubic_bivariate[x_degree] = b_trim(coefficient)
+    full_a, full_b, full_c, full_d = cubic_bivariate[3], cubic_bivariate[2], cubic_bivariate[1], cubic_bivariate[0]
+    print("Q80Q12GENERICDIV|stage=build_full_discriminant", flush=True)
+    full_discriminant = b_add(
+        b_add(
+            b_add(
+                b_mul(
+                    b_pow(full_b, 2, delta_square),
+                    b_pow(full_c, 2, delta_square),
+                    delta_square,
+                ),
+                b_neg(
+                    b_scale(
+                        b_mul(full_a, b_pow(full_c, 3, delta_square), delta_square),
+                        4,
+                    )
+                ),
+            ),
+            b_neg(
+                b_scale(
+                    b_mul(b_pow(full_b, 3, delta_square), full_d, delta_square),
+                    4,
+                )
+            ),
+        ),
+        b_add(
+            b_neg(
+                b_scale(
+                    b_mul(
+                        b_pow(full_a, 2, delta_square),
+                        b_pow(full_d, 2, delta_square),
+                        delta_square,
+                    ),
+                    27,
+                )
+            ),
+            b_scale(
+                b_mul(
+                    b_mul(
+                        b_mul(full_a, full_b, delta_square),
+                        full_c,
+                        delta_square,
+                    ),
+                    full_d,
+                    delta_square,
+                ),
+                18,
+            ),
+        ),
+    )
+    print(
+        "Q80Q12GENERICDIV|stage=strip_L3|"
+        f"discriminant_W_degree={len(full_discriminant)-1}",
+        flush=True,
+    )
+    full_residual = full_discriminant
+    for multiplicity in range(3):
+        full_residual, full_remainder = b_divide_monic_linear(
+            full_residual, linear_constant, delta_square
+        )
+        if full_remainder != [ZERO]:
+            raise ArithmeticError(
+                f"full generic discriminant fails L division {multiplicity+1}"
+            )
+    H_polynomial = [h0, ONE]
+    H_squared = p_mul(H_polynomial, H_polynomial, delta_square)
+    scaled_full_residual = [
+        p_mul(coefficient, H_squared, delta_square)
+        for coefficient in full_residual
+    ]
+    q_hat_squared = b_mul(q_hat, q_hat, delta_square)
+    print(
+        "Q80Q12GENERICDIV|stage=pseudo_divide_Q2|"
+        f"residual_W_degree={len(full_residual)-1}|"
+        f"Q2_W_degree={len(q_hat_squared)-1}",
+        flush=True,
+    )
+    pseudo_quotient, pseudo_remainder, pseudo_lead, pseudo_steps = b_pseudo_divmod(
+        scaled_full_residual, q_hat_squared, delta_square
+    )
+    if pseudo_remainder != [[ZERO]]:
+        raise ArithmeticError(
+            "jet-derived generic quartic square fails full exact pseudo-division"
+        )
+    if len(pseudo_quotient) - 1 != 4:
+        raise ArithmeticError("generic complementary factor is not quartic in W")
+    denominator_H_exponent = 2 * pseudo_steps
+    cancelled_H_exponent = 0
+    simplified_quotient = pseudo_quotient
+    while cancelled_H_exponent < denominator_H_exponent:
+        divided_coefficients = []
+        for coefficient in simplified_quotient:
+            divided, remainder = p_divmod_field(
+                coefficient, H_polynomial, delta_square
+            )
+            if remainder != [ZERO]:
+                divided_coefficients = None
+                break
+            divided_coefficients.append(divided)
+        if divided_coefficients is None:
+            break
+        simplified_quotient = b_trim(divided_coefficients)
+        cancelled_H_exponent += 1
+    denominator_H_exponent -= cancelled_H_exponent
+    generic_quartic_division = {
+        "identity": "H(V)^2*Delta/L^3 is divisible by Qhat(V,W)^2 in K(V)[W]",
+        "full_discriminant_W_degree": len(full_discriminant) - 1,
+        "full_discriminant_V_degree": max(len(value) - 1 for value in full_discriminant),
+        "linear_stripped_W_degree": len(full_residual) - 1,
+        "Qhat_squared_W_degree": len(q_hat_squared) - 1,
+        "pseudo_division_steps": pseudo_steps,
+        "pseudo_remainder_zero": True,
+        "complementary_factor_W_degree": len(simplified_quotient) - 1,
+        "complementary_factor_coefficients_low_to_high_W_then_V_1_delta": [
+            pair_polynomial_record(coefficient)
+            for coefficient in simplified_quotient
+        ],
+        "complementary_factor_common_denominator": (
+            f"H(V)^{denominator_H_exponent}"
+        ),
+        "cancelled_H_exponent": cancelled_H_exponent,
+        "complementary_factor_numerator_maximum_coordinate_bits": max(
+            p_maximum_coordinate_bits(coefficient)
+            for coefficient in simplified_quotient
+        ),
+        "conclusion": "exact generic quartic-square divisibility over the descent field",
+        "claim_boundary": (
+            "The generic discriminant factor Q^2 and a complementary W-quartic are exact. "
+            "Jacobian invariants, minimization, and birational maps remain open."
+        ),
+    }
+    degree_exponents = [[4, 1], [4, 2], [1, 3]]
 if args.attempt_quartic_gcd:
     # Convert only the L-stripped degree-12 residual to Singular.  This gcd is
     # deliberately opt-in: both PARI and Singular exceed the bounded probe
@@ -1045,21 +1700,37 @@ pair_factorization = (
 )
 payload = {
     "schema": (
-        "elkies-k3-q80-third-q12-exact-discriminant-specialization-v1"
-        if factor_data is not None or pair_factorization is not None
+        "elkies-k3-q80-third-q12-exact-generic-quartic-factorization-v1"
+        if generic_quartic_division is not None
         else (
-            "elkies-k3-q80-third-q12-exact-generic-linear-conductor-v1"
-            if generic_linear is not None
-            else "elkies-k3-q80-third-q12-exact-linear-conductor-specialization-v1"
+            "elkies-k3-q80-third-q12-exact-generic-quartic-jet-v1"
+            if generic_quartic_jet is not None
+            else (
+                "elkies-k3-q80-third-q12-exact-discriminant-specialization-v1"
+                if factor_data is not None or pair_factorization is not None
+                else (
+                    "elkies-k3-q80-third-q12-exact-generic-linear-conductor-v1"
+                    if generic_linear is not None
+                    else "elkies-k3-q80-third-q12-exact-linear-conductor-specialization-v1"
+                )
+            )
         )
     ),
     "status": (
-        "PASS_EXACT_SPECIALIZED_L3_Q2_D_FACTORIZATION"
-        if factor_data is not None or pair_factorization is not None
+        "PASS_EXACT_GENERIC_L3_Q2_D_FACTORIZATION"
+        if generic_quartic_division is not None
         else (
-            "PASS_EXACT_GENERIC_LINEAR_CONDUCTOR_MULTIPLICITY_THREE"
-            if generic_linear is not None
-            else "PASS_EXACT_SPECIALIZED_LINEAR_CONDUCTOR_MULTIPLICITY_THREE"
+            "PASS_EXACT_GENERIC_QUARTIC_FIRST_JET_P19_REPLAY"
+            if generic_quartic_jet is not None
+            else (
+                "PASS_EXACT_SPECIALIZED_L3_Q2_D_FACTORIZATION"
+                if factor_data is not None or pair_factorization is not None
+                else (
+                    "PASS_EXACT_GENERIC_LINEAR_CONDUCTOR_MULTIPLICITY_THREE"
+                    if generic_linear is not None
+                    else "PASS_EXACT_SPECIALIZED_LINEAR_CONDUCTOR_MULTIPLICITY_THREE"
+                )
+            )
         )
     ),
     "base_value": rational_record(base_value),
@@ -1100,6 +1771,8 @@ payload = {
     "factor_degree_exponents_recovered": degree_exponents,
     "custom_primitive_remainder_sequence": custom_prs,
     "subresultant_remainder_sequence": subresultant_prs,
+    "generic_quartic_first_jet": generic_quartic_jet,
+    "generic_quartic_factorization": generic_quartic_division,
     "monic_factors_by_exponent": (
         {
             str(exponent): polynomial_record(factor)
@@ -1129,24 +1802,59 @@ payload = {
             "path": str(args.factor_lift.relative_to(ROOT)),
             "sha256": sha256(args.factor_lift),
         },
+        "specialized_factorization": (
+            {
+                "path": str(args.specialized_factorization.relative_to(ROOT)),
+                "sha256": sha256(args.specialized_factorization),
+            }
+            if generic_quartic_jet is not None
+            else None
+        ),
+        "H_candidate": (
+            {
+                "path": str(args.H_candidate.relative_to(ROOT)),
+                "sha256": sha256(args.H_candidate),
+            }
+            if generic_quartic_jet is not None
+            else None
+        ),
+        "generic_quartic_jet_artifact": (
+            {
+                "path": str(args.generic_quartic_jet_artifact.relative_to(ROOT)),
+                "sha256": sha256(args.generic_quartic_jet_artifact),
+            }
+            if generic_quartic_division is not None
+            else None
+        ),
         "worker": {
             "path": str(Path(__file__).resolve().relative_to(ROOT)),
             "sha256": sha256(Path(__file__).resolve()),
         },
     },
     "claim_boundary": (
-        (
-            "The linear factor and multiplicity three are exact over the full "
-            "characteristic-zero base. "
-            if generic_linear is not None
-            else "The linear factor and multiplicity are exact only at the displayed base value. "
+        "The generic L^3*Q^2 factorization and complementary W-quartic are exact "
+        "over the characteristic-zero descent field. No Jacobian or birational map "
+        "is claimed."
+        if generic_quartic_division is not None
+        else (
+            (
+                "The exact first-order V-adic quartic deformation is recovered and "
+                "replays the p-adic numerator data; full generic Q^2 divisibility is open. "
+                if generic_quartic_jet is not None
+                else (
+                    "The linear factor and multiplicity three are exact over the full "
+                    "characteristic-zero base. "
+                    if generic_linear is not None
+                    else "The linear factor and multiplicity are exact only at the displayed base value. "
+                )
+            )
+            + (
+                "The quartic squarefree factors are also exact. "
+                if factor_data is not None or pair_factorization is not None
+                else "The quartic Q and D factors remain unrecovered. "
+            )
+            + "No generic factorization, Jacobian, or birational map is claimed."
         )
-        + (
-            "The quartic squarefree factors are also exact. "
-            if factor_data is not None or pair_factorization is not None
-            else "The quartic Q and D factors remain unrecovered. "
-        )
-        + "No generic factorization, Jacobian, or birational map is claimed."
     ),
     "reproduce": (
         "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python "
@@ -1155,6 +1863,12 @@ payload = {
         + (" --attempt-quartic-gcd" if args.attempt_quartic_gcd else "")
         + (" --attempt-custom-prs" if args.attempt_custom_prs else "")
         + (" --attempt-subresultant-prs" if args.attempt_subresultant_prs else "")
+        + (" --attempt-generic-quartic-jet" if args.attempt_generic_quartic_jet else "")
+        + (
+            " --attempt-generic-quartic-division"
+            if args.attempt_generic_quartic_division
+            else ""
+        )
         + (
             f" --subresultant-checkpoint {args.subresultant_checkpoint.relative_to(ROOT)}"
             if args.attempt_subresultant_prs

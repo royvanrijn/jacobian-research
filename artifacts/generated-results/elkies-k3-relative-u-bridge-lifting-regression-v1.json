@@ -1,0 +1,8394 @@
+{
+  "aggregate": {
+    "all_old_fibre_degrees_recovered": true,
+    "edge_count": 42,
+    "saturation_index_histogram_new_to_old": {
+      "1": 42
+    },
+    "saturation_index_histogram_old_to_new": {
+      "1": 42
+    }
+  },
+  "edges": [
+    {
+      "corridor": "NS0024",
+      "edge_index": 1,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 2,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              16,
+              15
+            ],
+            [
+              15,
+              16
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              0,
+              -3,
+              -1,
+              -3,
+              -5,
+              -6,
+              -8,
+              1,
+              1,
+              1,
+              0,
+              -4,
+              -2,
+              -2,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              -3,
+              -1,
+              -2,
+              -5,
+              -5,
+              -8,
+              1,
+              1,
+              1,
+              0,
+              -4,
+              -2,
+              -2,
+              1,
+              0,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 31,
+          "saturated_bridge_determinant": 31,
+          "saturated_bridge_gram": [
+            [
+              2,
+              9
+            ],
+            [
+              9,
+              56
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 2,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              15
+            ],
+            [
+              15,
+              32
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              2,
+              1,
+              3,
+              2,
+              0,
+              1,
+              0,
+              1,
+              2,
+              2,
+              2,
+              1,
+              2,
+              -1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              6,
+              4,
+              0,
+              2,
+              0,
+              2,
+              4,
+              4,
+              4,
+              2,
+              4,
+              -2,
+              -1,
+              0,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 31,
+          "saturated_bridge_determinant": 31,
+          "saturated_bridge_gram": [
+            [
+              4,
+              1
+            ],
+            [
+              1,
+              8
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 13,
+      "stored_bridges": {
+        "new_determinant": 31,
+        "new_gram": [
+          [
+            2,
+            9
+          ],
+          [
+            9,
+            56
+          ]
+        ],
+        "old_determinant": 31,
+        "old_gram": [
+          [
+            4,
+            1
+          ],
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "target_root_rank": 12
+    },
+    {
+      "corridor": "NS0024",
+      "edge_index": 2,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 4,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              24,
+              23
+            ],
+            [
+              23,
+              24
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              2,
+              -8,
+              -2,
+              6,
+              6,
+              -6,
+              -6,
+              -4,
+              -2,
+              -4,
+              -2,
+              -2,
+              0,
+              0,
+              1,
+              0,
+              -2
+            ],
+            [
+              2,
+              -8,
+              -2,
+              6,
+              6,
+              -6,
+              -5,
+              -4,
+              -2,
+              -3,
+              -2,
+              -2,
+              0,
+              0,
+              1,
+              0,
+              -2
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -9
+            ],
+            [
+              -9,
+              64
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 4,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              23
+            ],
+            [
+              23,
+              72
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              0,
+              0,
+              0,
+              2,
+              2,
+              2,
+              4,
+              2,
+              3,
+              2,
+              0,
+              2,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              6,
+              6,
+              6,
+              12,
+              6,
+              9,
+              6,
+              0,
+              6,
+              -3,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              6,
+              1
+            ],
+            [
+              1,
+              8
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 12,
+      "stored_bridges": {
+        "new_determinant": 47,
+        "new_gram": [
+          [
+            2,
+            -9
+          ],
+          [
+            -9,
+            64
+          ]
+        ],
+        "old_determinant": 47,
+        "old_gram": [
+          [
+            6,
+            1
+          ],
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "target_root_rank": 11
+    },
+    {
+      "corridor": "NS0024",
+      "edge_index": 3,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              18,
+              18
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 16,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              72,
+              71
+            ],
+            [
+              71,
+              72
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -4,
+              -4,
+              -2,
+              -10,
+              -9,
+              -3,
+              -9,
+              -9,
+              -8,
+              -9,
+              -1,
+              -3,
+              0,
+              0,
+              0,
+              -2,
+              0
+            ],
+            [
+              -4,
+              -4,
+              -2,
+              -10,
+              -9,
+              -3,
+              -9,
+              -8,
+              -8,
+              -9,
+              -1,
+              -3,
+              0,
+              0,
+              0,
+              -2,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 143,
+          "saturated_bridge_determinant": 143,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -17
+            ],
+            [
+              -17,
+              216
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              18
+            ],
+            [
+              2,
+              18
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 16,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              71
+            ],
+            [
+              71,
+              648
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              1,
+              1,
+              1,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              9,
+              9,
+              9,
+              9,
+              9,
+              18,
+              18,
+              9,
+              9,
+              9,
+              0,
+              -9,
+              0,
+              0,
+              0,
+              -1,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 143,
+          "saturated_bridge_determinant": 143,
+          "saturated_bridge_gram": [
+            [
+              18,
+              1
+            ],
+            [
+              1,
+              8
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 11,
+      "stored_bridges": {
+        "new_determinant": 143,
+        "new_gram": [
+          [
+            2,
+            -17
+          ],
+          [
+            -17,
+            216
+          ]
+        ],
+        "old_determinant": 143,
+        "old_gram": [
+          [
+            18,
+            1
+          ],
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "target_root_rank": 10
+    },
+    {
+      "corridor": "NS0024",
+      "edge_index": 4,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 6,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              32,
+              31
+            ],
+            [
+              31,
+              32
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -9,
+              -2,
+              -3,
+              -4,
+              -1,
+              -3,
+              -2,
+              -1,
+              -4,
+              -2,
+              2,
+              1,
+              0,
+              -2,
+              0,
+              0,
+              0
+            ],
+            [
+              -9,
+              -2,
+              -3,
+              -3,
+              -1,
+              -3,
+              -2,
+              -1,
+              -4,
+              -2,
+              2,
+              1,
+              0,
+              -2,
+              0,
+              0,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 63,
+          "saturated_bridge_determinant": 63,
+          "saturated_bridge_gram": [
+            [
+              2,
+              7
+            ],
+            [
+              7,
+              56
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              8
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 6,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              31
+            ],
+            [
+              31,
+              128
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              2,
+              2,
+              -2,
+              2,
+              1,
+              1,
+              3,
+              1,
+              -1,
+              1,
+              -1,
+              0,
+              0,
+              -1,
+              0,
+              1,
+              0
+            ],
+            [
+              8,
+              8,
+              -8,
+              8,
+              4,
+              4,
+              12,
+              4,
+              -4,
+              4,
+              -4,
+              0,
+              0,
+              -3,
+              0,
+              4,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 63,
+          "saturated_bridge_determinant": 63,
+          "saturated_bridge_gram": [
+            [
+              8,
+              7
+            ],
+            [
+              7,
+              14
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 10,
+      "stored_bridges": {
+        "new_determinant": 63,
+        "new_gram": [
+          [
+            2,
+            7
+          ],
+          [
+            7,
+            56
+          ]
+        ],
+        "old_determinant": 63,
+        "old_gram": [
+          [
+            8,
+            7
+          ],
+          [
+            7,
+            14
+          ]
+        ]
+      },
+      "target_root_rank": 9
+    },
+    {
+      "corridor": "NS0024",
+      "edge_index": 5,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              38,
+              38
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 36,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              152,
+              151
+            ],
+            [
+              151,
+              152
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -8,
+              -4,
+              -9,
+              9,
+              -9,
+              -15,
+              -9,
+              0,
+              1,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              -2
+            ],
+            [
+              -8,
+              -4,
+              -9,
+              9,
+              -8,
+              -15,
+              -9,
+              0,
+              1,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              -2
+            ]
+          ],
+          "raw_bridge_determinant": 303,
+          "saturated_bridge_determinant": 303,
+          "saturated_bridge_gram": [
+            [
+              2,
+              17
+            ],
+            [
+              17,
+              296
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              38
+            ],
+            [
+              2,
+              38
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 36,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              151
+            ],
+            [
+              151,
+              2888
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              0,
+              2,
+              2,
+              1,
+              2,
+              2,
+              3,
+              1,
+              1,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              38,
+              38,
+              19,
+              38,
+              38,
+              57,
+              19,
+              19,
+              0,
+              0,
+              -19,
+              0,
+              0,
+              0,
+              0,
+              -1
+            ]
+          ],
+          "raw_bridge_determinant": 303,
+          "saturated_bridge_determinant": 303,
+          "saturated_bridge_gram": [
+            [
+              38,
+              1
+            ],
+            [
+              1,
+              8
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 9,
+      "stored_bridges": {
+        "new_determinant": 303,
+        "new_gram": [
+          [
+            2,
+            17
+          ],
+          [
+            17,
+            296
+          ]
+        ],
+        "old_determinant": 303,
+        "old_gram": [
+          [
+            38,
+            1
+          ],
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "target_root_rank": 8
+    },
+    {
+      "corridor": "NS0024",
+      "edge_index": 6,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              154,
+              154
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 152,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              616,
+              615
+            ],
+            [
+              615,
+              616
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -1,
+              17,
+              3,
+              22,
+              20,
+              16,
+              11,
+              -7,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -1,
+              17,
+              3,
+              22,
+              20,
+              16,
+              12,
+              -7,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 1231,
+          "saturated_bridge_determinant": 1231,
+          "saturated_bridge_gram": [
+            [
+              2,
+              23
+            ],
+            [
+              23,
+              880
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              154
+            ],
+            [
+              2,
+              154
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 152,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              615
+            ],
+            [
+              615,
+              47432
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              0,
+              3,
+              1,
+              8,
+              -2,
+              -3,
+              1,
+              6,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              231,
+              77,
+              616,
+              -154,
+              -231,
+              77,
+              462,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -78
+            ]
+          ],
+          "raw_bridge_determinant": 1231,
+          "saturated_bridge_determinant": 1231,
+          "saturated_bridge_gram": [
+            [
+              154,
+              155
+            ],
+            [
+              155,
+              164
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 8,
+      "stored_bridges": {
+        "new_determinant": 1231,
+        "new_gram": [
+          [
+            2,
+            23
+          ],
+          [
+            23,
+            880
+          ]
+        ],
+        "old_determinant": 1231,
+        "old_gram": [
+          [
+            154,
+            155
+          ],
+          [
+            155,
+            164
+          ]
+        ]
+      },
+      "target_root_rank": 7
+    },
+    {
+      "corridor": "NS0024",
+      "edge_index": 7,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 4,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              24,
+              23
+            ],
+            [
+              23,
+              24
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              0,
+              -5,
+              -7,
+              -1,
+              1,
+              -9,
+              -1,
+              2,
+              -2,
+              0,
+              -2,
+              2,
+              0,
+              -1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              -5,
+              -7,
+              -1,
+              2,
+              -9,
+              -1,
+              2,
+              -2,
+              0,
+              -2,
+              2,
+              0,
+              -1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -3
+            ],
+            [
+              -3,
+              28
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 4,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              23
+            ],
+            [
+              23,
+              72
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -2,
+              1,
+              -2,
+              2,
+              3,
+              2,
+              2,
+              -1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              -6,
+              3,
+              -6,
+              6,
+              9,
+              6,
+              6,
+              -3,
+              3,
+              0,
+              3,
+              0,
+              1,
+              3,
+              0,
+              0,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              6,
+              1
+            ],
+            [
+              1,
+              8
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 7,
+      "stored_bridges": {
+        "new_determinant": 47,
+        "new_gram": [
+          [
+            2,
+            -3
+          ],
+          [
+            -3,
+            28
+          ]
+        ],
+        "old_determinant": 47,
+        "old_gram": [
+          [
+            6,
+            1
+          ],
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "target_root_rank": 6
+    },
+    {
+      "corridor": "NS0024",
+      "edge_index": 8,
+      "old_fibre_degree": 2,
+      "q": 6,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              3
+            ],
+            [
+              18,
+              27
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 1,
+            "O_dot_F_prime": 16,
+            "O_dot_O_prime": 8
+          },
+          "positive_projection_gram_G_A": [
+            [
+              72,
+              107
+            ],
+            [
+              107,
+              162
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              17,
+              5,
+              12,
+              12,
+              9,
+              -2,
+              -1,
+              5,
+              0,
+              -3,
+              -5,
+              2,
+              0,
+              2,
+              2,
+              -5,
+              0
+            ],
+            [
+              26,
+              7,
+              18,
+              18,
+              14,
+              -3,
+              -2,
+              7,
+              0,
+              -5,
+              -7,
+              3,
+              0,
+              3,
+              3,
+              -7,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 215,
+          "saturated_bridge_determinant": 215,
+          "saturated_bridge_gram": [
+            [
+              12,
+              7
+            ],
+            [
+              7,
+              22
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              18
+            ],
+            [
+              3,
+              27
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 16,
+            "O_dot_F_prime": 1,
+            "O_dot_O_prime": 8
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              107
+            ],
+            [
+              107,
+              972
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              1,
+              3,
+              0,
+              -1,
+              1,
+              -1,
+              -2,
+              2,
+              -2,
+              1,
+              -1,
+              2,
+              -1,
+              -1,
+              0,
+              -1,
+              -1
+            ],
+            [
+              9,
+              27,
+              0,
+              -9,
+              9,
+              -9,
+              -18,
+              18,
+              -17,
+              9,
+              -9,
+              18,
+              -9,
+              -9,
+              0,
+              -9,
+              -9
+            ]
+          ],
+          "raw_bridge_determinant": 215,
+          "saturated_bridge_determinant": 215,
+          "saturated_bridge_gram": [
+            [
+              18,
+              35
+            ],
+            [
+              35,
+              80
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 6,
+      "stored_bridges": {
+        "new_determinant": 215,
+        "new_gram": [
+          [
+            12,
+            7
+          ],
+          [
+            7,
+            22
+          ]
+        ],
+        "old_determinant": 215,
+        "old_gram": [
+          [
+            18,
+            35
+          ],
+          [
+            35,
+            80
+          ]
+        ]
+      },
+      "target_root_rank": 5
+    },
+    {
+      "corridor": "NS0024",
+      "edge_index": 9,
+      "old_fibre_degree": 2,
+      "q": 6,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              3
+            ],
+            [
+              30,
+              45
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 1,
+            "O_dot_F_prime": 28,
+            "O_dot_O_prime": 14
+          },
+          "positive_projection_gram_G_A": [
+            [
+              120,
+              179
+            ],
+            [
+              179,
+              270
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -8,
+              -11,
+              -15,
+              -4,
+              -6,
+              0,
+              4,
+              0,
+              3,
+              -3,
+              -3,
+              -3,
+              1,
+              3,
+              1,
+              -3,
+              -3
+            ],
+            [
+              -12,
+              -17,
+              -22,
+              -6,
+              -7,
+              -1,
+              5,
+              -1,
+              4,
+              -4,
+              -4,
+              -4,
+              1,
+              4,
+              1,
+              -4,
+              -4
+            ]
+          ],
+          "raw_bridge_determinant": 359,
+          "saturated_bridge_determinant": 359,
+          "saturated_bridge_gram": [
+            [
+              12,
+              -5
+            ],
+            [
+              -5,
+              32
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              30
+            ],
+            [
+              3,
+              45
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 28,
+            "O_dot_F_prime": 1,
+            "O_dot_O_prime": 14
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              179
+            ],
+            [
+              179,
+              2700
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              8,
+              0,
+              1,
+              2,
+              1,
+              -4,
+              1,
+              3,
+              2,
+              1,
+              -2,
+              2,
+              -2,
+              2,
+              1,
+              -1,
+              1
+            ],
+            [
+              120,
+              0,
+              15,
+              30,
+              15,
+              -60,
+              15,
+              45,
+              30,
+              15,
+              -30,
+              30,
+              -29,
+              30,
+              15,
+              -15,
+              15
+            ]
+          ],
+          "raw_bridge_determinant": 359,
+          "saturated_bridge_determinant": 359,
+          "saturated_bridge_gram": [
+            [
+              30,
+              59
+            ],
+            [
+              59,
+              128
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 5,
+      "stored_bridges": {
+        "new_determinant": 359,
+        "new_gram": [
+          [
+            12,
+            -5
+          ],
+          [
+            -5,
+            32
+          ]
+        ],
+        "old_determinant": 359,
+        "old_gram": [
+          [
+            30,
+            59
+          ],
+          [
+            59,
+            128
+          ]
+        ]
+      },
+      "target_root_rank": 4
+    },
+    {
+      "corridor": "NS0024",
+      "edge_index": 10,
+      "old_fibre_degree": 2,
+      "q": 6,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              3
+            ],
+            [
+              10,
+              15
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 1,
+            "O_dot_F_prime": 8,
+            "O_dot_O_prime": 4
+          },
+          "positive_projection_gram_G_A": [
+            [
+              40,
+              59
+            ],
+            [
+              59,
+              90
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              8,
+              5,
+              5,
+              1,
+              2,
+              -1,
+              3,
+              -2,
+              -2,
+              0,
+              -1,
+              -2,
+              0,
+              0,
+              2,
+              0,
+              1
+            ],
+            [
+              12,
+              7,
+              8,
+              2,
+              2,
+              -1,
+              4,
+              -3,
+              -3,
+              0,
+              -2,
+              -3,
+              0,
+              0,
+              3,
+              0,
+              2
+            ]
+          ],
+          "raw_bridge_determinant": 119,
+          "saturated_bridge_determinant": 119,
+          "saturated_bridge_gram": [
+            [
+              12,
+              5
+            ],
+            [
+              5,
+              12
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              10
+            ],
+            [
+              3,
+              15
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 8,
+            "O_dot_F_prime": 1,
+            "O_dot_O_prime": 4
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              59
+            ],
+            [
+              59,
+              300
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -1,
+              4,
+              1,
+              3,
+              -6,
+              3,
+              4,
+              2,
+              2,
+              -2,
+              -1,
+              -1,
+              1,
+              2,
+              1,
+              -1,
+              -1
+            ],
+            [
+              -5,
+              20,
+              5,
+              15,
+              -30,
+              15,
+              20,
+              10,
+              10,
+              -10,
+              -5,
+              -5,
+              5,
+              10,
+              5,
+              -5,
+              -4
+            ]
+          ],
+          "raw_bridge_determinant": 119,
+          "saturated_bridge_determinant": 119,
+          "saturated_bridge_gram": [
+            [
+              10,
+              9
+            ],
+            [
+              9,
+              20
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 4,
+      "stored_bridges": {
+        "new_determinant": 119,
+        "new_gram": [
+          [
+            12,
+            5
+          ],
+          [
+            5,
+            12
+          ]
+        ],
+        "old_determinant": 119,
+        "old_gram": [
+          [
+            10,
+            9
+          ],
+          [
+            9,
+            20
+          ]
+        ]
+      },
+      "target_root_rank": 3
+    },
+    {
+      "corridor": "NS0024",
+      "edge_index": 11,
+      "old_fibre_degree": 2,
+      "q": 6,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 1,
+            "O_dot_F_prime": 2,
+            "O_dot_O_prime": 1
+          },
+          "positive_projection_gram_G_A": [
+            [
+              16,
+              23
+            ],
+            [
+              23,
+              36
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              23,
+              8,
+              4,
+              0,
+              -3,
+              3,
+              6,
+              -2,
+              1,
+              0,
+              -5,
+              3,
+              2,
+              2,
+              3,
+              1,
+              -1
+            ],
+            [
+              35,
+              12,
+              7,
+              0,
+              -4,
+              5,
+              9,
+              -3,
+              2,
+              1,
+              -7,
+              4,
+              3,
+              2,
+              4,
+              1,
+              -2
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              12,
+              7
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 2,
+            "O_dot_F_prime": 1,
+            "O_dot_O_prime": 1
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              23
+            ],
+            [
+              23,
+              48
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -1,
+              2,
+              2,
+              -4,
+              -1,
+              0,
+              -4,
+              2,
+              1,
+              -1,
+              -1,
+              1,
+              0,
+              -1,
+              0,
+              -1,
+              -1
+            ],
+            [
+              -2,
+              4,
+              4,
+              -8,
+              -2,
+              0,
+              -8,
+              4,
+              2,
+              -2,
+              -2,
+              2,
+              0,
+              -1,
+              0,
+              -2,
+              -2
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              4,
+              -3
+            ],
+            [
+              -3,
+              14
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 3,
+      "stored_bridges": {
+        "new_determinant": 47,
+        "new_gram": [
+          [
+            12,
+            7
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "old_determinant": 47,
+        "old_gram": [
+          [
+            4,
+            -3
+          ],
+          [
+            -3,
+            14
+          ]
+        ]
+      },
+      "target_root_rank": 2
+    },
+    {
+      "corridor": "NS0024",
+      "edge_index": 12,
+      "old_fibre_degree": 2,
+      "q": 6,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 1,
+            "O_dot_F_prime": 2,
+            "O_dot_O_prime": 1
+          },
+          "positive_projection_gram_G_A": [
+            [
+              16,
+              23
+            ],
+            [
+              23,
+              36
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -39,
+              -1,
+              5,
+              5,
+              -5,
+              -3,
+              -3,
+              -1,
+              -3,
+              2,
+              0,
+              -2,
+              0,
+              1,
+              -1,
+              -3,
+              3
+            ],
+            [
+              -58,
+              -3,
+              8,
+              7,
+              -7,
+              -4,
+              -5,
+              -1,
+              -5,
+              3,
+              0,
+              -2,
+              1,
+              1,
+              -2,
+              -4,
+              4
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              12,
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 2,
+            "O_dot_F_prime": 1,
+            "O_dot_O_prime": 1
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              23
+            ],
+            [
+              23,
+              48
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -6,
+              -1,
+              -5,
+              -2,
+              0,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              -1,
+              1
+            ],
+            [
+              -12,
+              -2,
+              -10,
+              -4,
+              0,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              0,
+              0,
+              0,
+              1,
+              -2,
+              -2,
+              2
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              4,
+              -1
+            ],
+            [
+              -1,
+              12
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 2,
+      "stored_bridges": {
+        "new_determinant": 47,
+        "new_gram": [
+          [
+            12,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "old_determinant": 47,
+        "old_gram": [
+          [
+            4,
+            -1
+          ],
+          [
+            -1,
+            12
+          ]
+        ]
+      },
+      "target_root_rank": 1
+    },
+    {
+      "corridor": "NS0024",
+      "edge_index": 13,
+      "old_fibre_degree": 2,
+      "q": 6,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              3
+            ],
+            [
+              16,
+              24
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 1,
+            "O_dot_F_prime": 14,
+            "O_dot_O_prime": 7
+          },
+          "positive_projection_gram_G_A": [
+            [
+              64,
+              95
+            ],
+            [
+              95,
+              144
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -4,
+              3,
+              -6,
+              -9,
+              -3,
+              3,
+              -3,
+              6,
+              -3,
+              3,
+              -3,
+              -1,
+              3,
+              -1,
+              -3,
+              0,
+              -3
+            ],
+            [
+              -4,
+              2,
+              -8,
+              -12,
+              -3,
+              3,
+              -4,
+              8,
+              -3,
+              5,
+              -4,
+              -2,
+              4,
+              0,
+              -4,
+              0,
+              -4
+            ]
+          ],
+          "raw_bridge_determinant": 191,
+          "saturated_bridge_determinant": 191,
+          "saturated_bridge_gram": [
+            [
+              18,
+              5
+            ],
+            [
+              5,
+              12
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              16
+            ],
+            [
+              3,
+              24
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 14,
+            "O_dot_F_prime": 1,
+            "O_dot_O_prime": 7
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              95
+            ],
+            [
+              95,
+              768
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              3,
+              -6,
+              0,
+              0,
+              1,
+              -1,
+              -3,
+              3,
+              0,
+              1,
+              1,
+              3,
+              3,
+              1,
+              -1,
+              2,
+              -1
+            ],
+            [
+              24,
+              -48,
+              0,
+              0,
+              8,
+              -8,
+              -24,
+              24,
+              0,
+              8,
+              8,
+              24,
+              24,
+              8,
+              -8,
+              17,
+              -8
+            ]
+          ],
+          "raw_bridge_determinant": 191,
+          "saturated_bridge_determinant": 191,
+          "saturated_bridge_gram": [
+            [
+              16,
+              -33
+            ],
+            [
+              -33,
+              80
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 1,
+      "stored_bridges": {
+        "new_determinant": 191,
+        "new_gram": [
+          [
+            18,
+            5
+          ],
+          [
+            5,
+            12
+          ]
+        ],
+        "old_determinant": 191,
+        "old_gram": [
+          [
+            16,
+            -33
+          ],
+          [
+            -33,
+            80
+          ]
+        ]
+      },
+      "target_root_rank": 0
+    },
+    {
+      "corridor": "Golay720",
+      "edge_index": 1,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 4,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              24,
+              23
+            ],
+            [
+              23,
+              24
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -1,
+              0,
+              0,
+              -4,
+              -4,
+              -3,
+              -2,
+              -2,
+              1,
+              -1,
+              1,
+              0
+            ],
+            [
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -1,
+              0,
+              0,
+              -3,
+              -4,
+              -2,
+              -2,
+              -2,
+              1,
+              -1,
+              1,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -7
+            ],
+            [
+              -7,
+              48
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 4,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              23
+            ],
+            [
+              23,
+              72
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              0,
+              1,
+              0,
+              1,
+              2,
+              1,
+              2,
+              -1,
+              0
+            ],
+            [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              6,
+              0,
+              3,
+              0,
+              3,
+              6,
+              3,
+              6,
+              -2,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              6,
+              5
+            ],
+            [
+              5,
+              12
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 15,
+      "stored_bridges": {
+        "new_determinant": 47,
+        "new_gram": [
+          [
+            2,
+            -7
+          ],
+          [
+            -7,
+            48
+          ]
+        ],
+        "old_determinant": 47,
+        "old_gram": [
+          [
+            6,
+            5
+          ],
+          [
+            5,
+            12
+          ]
+        ]
+      },
+      "target_root_rank": 13
+    },
+    {
+      "corridor": "Golay720",
+      "edge_index": 2,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 2,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              16,
+              15
+            ],
+            [
+              15,
+              16
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -6,
+              0,
+              -2,
+              -2,
+              0,
+              2,
+              -6,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              -2,
+              2,
+              0
+            ],
+            [
+              -6,
+              0,
+              -2,
+              -1,
+              1,
+              3,
+              -6,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              -2,
+              2,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 31,
+          "saturated_bridge_determinant": 31,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -1
+            ],
+            [
+              -1,
+              16
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 2,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              15
+            ],
+            [
+              15,
+              32
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              1,
+              1,
+              1,
+              0,
+              1,
+              2,
+              0,
+              1,
+              3,
+              2,
+              1,
+              1,
+              1,
+              -1,
+              1,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              2,
+              0,
+              2,
+              4,
+              0,
+              2,
+              6,
+              4,
+              2,
+              2,
+              2,
+              -2,
+              2,
+              1,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 31,
+          "saturated_bridge_determinant": 31,
+          "saturated_bridge_gram": [
+            [
+              4,
+              -3
+            ],
+            [
+              -3,
+              10
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 13,
+      "stored_bridges": {
+        "new_determinant": 31,
+        "new_gram": [
+          [
+            2,
+            -1
+          ],
+          [
+            -1,
+            16
+          ]
+        ],
+        "old_determinant": 31,
+        "old_gram": [
+          [
+            4,
+            -3
+          ],
+          [
+            -3,
+            10
+          ]
+        ]
+      },
+      "target_root_rank": 10
+    },
+    {
+      "corridor": "Golay720",
+      "edge_index": 3,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 6,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              32,
+              31
+            ],
+            [
+              31,
+              32
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              0,
+              2,
+              -14,
+              2,
+              -4,
+              0,
+              1,
+              3,
+              -3,
+              -4,
+              -3,
+              1,
+              3,
+              3,
+              0,
+              0,
+              -2
+            ],
+            [
+              0,
+              2,
+              -14,
+              3,
+              -4,
+              0,
+              1,
+              3,
+              -3,
+              -4,
+              -3,
+              1,
+              3,
+              3,
+              0,
+              0,
+              -2
+            ]
+          ],
+          "raw_bridge_determinant": 63,
+          "saturated_bridge_determinant": 63,
+          "saturated_bridge_gram": [
+            [
+              2,
+              5
+            ],
+            [
+              5,
+              44
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              8
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 6,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              31
+            ],
+            [
+              31,
+              128
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              0,
+              1,
+              1,
+              0,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              4,
+              4,
+              0,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              -4,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              -4
+            ]
+          ],
+          "raw_bridge_determinant": 63,
+          "saturated_bridge_determinant": 63,
+          "saturated_bridge_gram": [
+            [
+              8,
+              -1
+            ],
+            [
+              -1,
+              8
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 10,
+      "stored_bridges": {
+        "new_determinant": 63,
+        "new_gram": [
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            44
+          ]
+        ],
+        "old_determinant": 63,
+        "old_gram": [
+          [
+            8,
+            -1
+          ],
+          [
+            -1,
+            8
+          ]
+        ]
+      },
+      "target_root_rank": 6
+    },
+    {
+      "corridor": "Golay720",
+      "edge_index": 4,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 6,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              32,
+              31
+            ],
+            [
+              31,
+              32
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              6,
+              7,
+              4,
+              2,
+              1,
+              -1,
+              -1,
+              3,
+              2,
+              2,
+              1,
+              0,
+              -3,
+              0,
+              0,
+              -3,
+              0
+            ],
+            [
+              6,
+              8,
+              4,
+              2,
+              1,
+              -1,
+              -1,
+              3,
+              2,
+              2,
+              1,
+              0,
+              -3,
+              0,
+              0,
+              -3,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 63,
+          "saturated_bridge_determinant": 63,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -15
+            ],
+            [
+              -15,
+              144
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              8
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 6,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              31
+            ],
+            [
+              31,
+              128
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -1,
+              -1,
+              3,
+              -1,
+              3,
+              2,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              -4,
+              -4,
+              12,
+              -4,
+              12,
+              8,
+              0,
+              0,
+              -4,
+              0,
+              0,
+              0,
+              -4,
+              0,
+              4,
+              3,
+              4
+            ]
+          ],
+          "raw_bridge_determinant": 63,
+          "saturated_bridge_determinant": 63,
+          "saturated_bridge_gram": [
+            [
+              8,
+              -7
+            ],
+            [
+              -7,
+              14
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 6,
+      "stored_bridges": {
+        "new_determinant": 63,
+        "new_gram": [
+          [
+            2,
+            -15
+          ],
+          [
+            -15,
+            144
+          ]
+        ],
+        "old_determinant": 63,
+        "old_gram": [
+          [
+            8,
+            -7
+          ],
+          [
+            -7,
+            14
+          ]
+        ]
+      },
+      "target_root_rank": 3
+    },
+    {
+      "corridor": "Golay720",
+      "edge_index": 5,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 4,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              24,
+              23
+            ],
+            [
+              23,
+              24
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -24,
+              0,
+              -3,
+              1,
+              -1,
+              -1,
+              0,
+              1,
+              -1,
+              0,
+              1,
+              -1,
+              -1,
+              -2,
+              0,
+              0,
+              2
+            ],
+            [
+              -24,
+              1,
+              -3,
+              1,
+              -1,
+              -1,
+              0,
+              1,
+              -1,
+              0,
+              1,
+              -1,
+              -1,
+              -2,
+              0,
+              0,
+              2
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -1
+            ],
+            [
+              -1,
+              24
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 4,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              23
+            ],
+            [
+              23,
+              72
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              0,
+              9,
+              5,
+              0,
+              0,
+              -3,
+              1,
+              1,
+              1,
+              2,
+              0,
+              0,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              0,
+              27,
+              15,
+              0,
+              0,
+              -9,
+              3,
+              3,
+              3,
+              6,
+              0,
+              0,
+              -3,
+              -3,
+              -3,
+              -4,
+              -3
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              6,
+              -7
+            ],
+            [
+              -7,
+              16
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 3,
+      "stored_bridges": {
+        "new_determinant": 47,
+        "new_gram": [
+          [
+            2,
+            -1
+          ],
+          [
+            -1,
+            24
+          ]
+        ],
+        "old_determinant": 47,
+        "old_gram": [
+          [
+            6,
+            -7
+          ],
+          [
+            -7,
+            16
+          ]
+        ]
+      },
+      "target_root_rank": 2
+    },
+    {
+      "corridor": "Golay720",
+      "edge_index": 6,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 1,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              18
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              2,
+              1,
+              2,
+              1,
+              0,
+              2,
+              0,
+              -1,
+              1,
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              2,
+              1,
+              0,
+              2,
+              0,
+              -2,
+              1,
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1
+            ]
+          ],
+          "raw_bridge_determinant": 23,
+          "saturated_bridge_determinant": 23,
+          "saturated_bridge_gram": [
+            [
+              4,
+              -3
+            ],
+            [
+              -3,
+              8
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 1,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              11
+            ],
+            [
+              11,
+              12
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              11,
+              -1,
+              1,
+              -1,
+              2,
+              2,
+              -2,
+              0,
+              0,
+              1,
+              -1,
+              2,
+              1,
+              1,
+              1,
+              1,
+              -1
+            ],
+            [
+              11,
+              -2,
+              1,
+              -1,
+              2,
+              2,
+              -2,
+              0,
+              0,
+              1,
+              -1,
+              2,
+              1,
+              1,
+              1,
+              1,
+              -1
+            ]
+          ],
+          "raw_bridge_determinant": 23,
+          "saturated_bridge_determinant": 23,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -3
+            ],
+            [
+              -3,
+              16
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 2,
+      "stored_bridges": {
+        "new_determinant": 23,
+        "new_gram": [
+          [
+            4,
+            -3
+          ],
+          [
+            -3,
+            8
+          ]
+        ],
+        "old_determinant": 23,
+        "old_gram": [
+          [
+            2,
+            -3
+          ],
+          [
+            -3,
+            16
+          ]
+        ]
+      },
+      "target_root_rank": 0
+    },
+    {
+      "corridor": "H3",
+      "edge_index": 1,
+      "old_fibre_degree": 2,
+      "q": 6,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 1,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              18
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              10,
+              6,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              4,
+              6,
+              -2,
+              0,
+              1,
+              0
+            ],
+            [
+              15,
+              9,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              6,
+              9,
+              -3,
+              1,
+              1,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 23,
+          "saturated_bridge_determinant": 23,
+          "saturated_bridge_gram": [
+            [
+              12,
+              -5
+            ],
+            [
+              -5,
+              4
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 1,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              11
+            ],
+            [
+              11,
+              12
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              0,
+              0,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              -1,
+              -1,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 23,
+          "saturated_bridge_determinant": 23,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -1
+            ],
+            [
+              -1,
+              12
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 15,
+      "stored_bridges": {
+        "new_determinant": 23,
+        "new_gram": [
+          [
+            12,
+            -5
+          ],
+          [
+            -5,
+            4
+          ]
+        ],
+        "old_determinant": 23,
+        "old_gram": [
+          [
+            2,
+            -1
+          ],
+          [
+            -1,
+            12
+          ]
+        ]
+      },
+      "target_root_rank": 14
+    },
+    {
+      "corridor": "H3",
+      "edge_index": 2,
+      "old_fibre_degree": 2,
+      "q": 8,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 2,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              15
+            ],
+            [
+              15,
+              32
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -3,
+              1,
+              1,
+              -6,
+              -12,
+              -7,
+              -11,
+              -10,
+              -9,
+              -8,
+              1,
+              1,
+              -7,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              -6,
+              2,
+              2,
+              -12,
+              -24,
+              -14,
+              -22,
+              -20,
+              -18,
+              -16,
+              2,
+              2,
+              -14,
+              3,
+              1,
+              0,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 31,
+          "saturated_bridge_determinant": 31,
+          "saturated_bridge_gram": [
+            [
+              4,
+              3
+            ],
+            [
+              3,
+              10
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 2,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              16,
+              15
+            ],
+            [
+              15,
+              16
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -20,
+              -10,
+              2,
+              4,
+              6,
+              8,
+              5,
+              10,
+              7,
+              4,
+              -4,
+              -9,
+              -14,
+              1,
+              0,
+              -2,
+              0
+            ],
+            [
+              -20,
+              -10,
+              2,
+              4,
+              6,
+              8,
+              5,
+              10,
+              7,
+              4,
+              -5,
+              -9,
+              -14,
+              1,
+              0,
+              -2,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 31,
+          "saturated_bridge_determinant": 31,
+          "saturated_bridge_gram": [
+            [
+              2,
+              9
+            ],
+            [
+              9,
+              56
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 14,
+      "stored_bridges": {
+        "new_determinant": 31,
+        "new_gram": [
+          [
+            4,
+            3
+          ],
+          [
+            3,
+            10
+          ]
+        ],
+        "old_determinant": 31,
+        "old_gram": [
+          [
+            2,
+            9
+          ],
+          [
+            9,
+            56
+          ]
+        ]
+      },
+      "target_root_rank": 13
+    },
+    {
+      "corridor": "H3",
+      "edge_index": 3,
+      "old_fibre_degree": 2,
+      "q": 24,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              12
+            ],
+            [
+              32,
+              192
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 10,
+            "O_dot_F_prime": 30,
+            "O_dot_O_prime": 150
+          },
+          "positive_projection_gram_G_A": [
+            [
+              128,
+              767
+            ],
+            [
+              767,
+              4608
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -19,
+              -19,
+              -13,
+              -13,
+              -26,
+              -13,
+              -13,
+              -26,
+              -26,
+              -26,
+              -26,
+              -26,
+              -1,
+              1,
+              0,
+              -2,
+              0
+            ],
+            [
+              -114,
+              -113,
+              -78,
+              -78,
+              -156,
+              -79,
+              -77,
+              -156,
+              -156,
+              -156,
+              -156,
+              -156,
+              -6,
+              6,
+              0,
+              -12,
+              -1
+            ]
+          ],
+          "raw_bridge_determinant": 1535,
+          "saturated_bridge_determinant": 1535,
+          "saturated_bridge_gram": [
+            [
+              12,
+              59
+            ],
+            [
+              59,
+              418
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              32
+            ],
+            [
+              12,
+              192
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 30,
+            "O_dot_F_prime": 10,
+            "O_dot_O_prime": 150
+          },
+          "positive_projection_gram_G_A": [
+            [
+              48,
+              767
+            ],
+            [
+              767,
+              12288
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              0,
+              5,
+              0,
+              1,
+              2,
+              1,
+              2,
+              2,
+              2,
+              2,
+              4,
+              8,
+              2,
+              0,
+              -1,
+              1,
+              1
+            ],
+            [
+              0,
+              80,
+              0,
+              16,
+              32,
+              16,
+              32,
+              32,
+              32,
+              32,
+              64,
+              128,
+              32,
+              0,
+              -16,
+              15,
+              16
+            ]
+          ],
+          "raw_bridge_determinant": 1535,
+          "saturated_bridge_determinant": 1535,
+          "saturated_bridge_gram": [
+            [
+              32,
+              31
+            ],
+            [
+              31,
+              78
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 13,
+      "stored_bridges": {
+        "new_determinant": 1535,
+        "new_gram": [
+          [
+            12,
+            59
+          ],
+          [
+            59,
+            418
+          ]
+        ],
+        "old_determinant": 1535,
+        "old_gram": [
+          [
+            32,
+            31
+          ],
+          [
+            31,
+            78
+          ]
+        ]
+      },
+      "target_root_rank": 12
+    },
+    {
+      "corridor": "H3",
+      "edge_index": 4,
+      "old_fibre_degree": 2,
+      "q": 6,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              3
+            ],
+            [
+              18,
+              27
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 1,
+            "O_dot_F_prime": 16,
+            "O_dot_O_prime": 8
+          },
+          "positive_projection_gram_G_A": [
+            [
+              72,
+              107
+            ],
+            [
+              107,
+              162
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -3,
+              -8,
+              -22,
+              3,
+              -11,
+              -19,
+              -19,
+              -19,
+              -19,
+              -19,
+              -19,
+              -2,
+              1,
+              2,
+              0,
+              0,
+              -2
+            ],
+            [
+              -4,
+              -12,
+              -33,
+              4,
+              -16,
+              -28,
+              -28,
+              -28,
+              -28,
+              -28,
+              -28,
+              -2,
+              2,
+              2,
+              0,
+              0,
+              -3
+            ]
+          ],
+          "raw_bridge_determinant": 215,
+          "saturated_bridge_determinant": 215,
+          "saturated_bridge_gram": [
+            [
+              12,
+              41
+            ],
+            [
+              41,
+              158
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              18
+            ],
+            [
+              3,
+              27
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 16,
+            "O_dot_F_prime": 1,
+            "O_dot_O_prime": 8
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              107
+            ],
+            [
+              107,
+              972
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              1,
+              4,
+              -1,
+              0,
+              7,
+              4,
+              3,
+              7,
+              7,
+              7,
+              7,
+              7,
+              -1,
+              0,
+              -1,
+              -1,
+              0
+            ],
+            [
+              9,
+              36,
+              -9,
+              0,
+              63,
+              36,
+              27,
+              63,
+              63,
+              63,
+              63,
+              63,
+              -9,
+              0,
+              -9,
+              -9,
+              -1
+            ]
+          ],
+          "raw_bridge_determinant": 215,
+          "saturated_bridge_determinant": 215,
+          "saturated_bridge_gram": [
+            [
+              18,
+              1
+            ],
+            [
+              1,
+              12
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 12,
+      "stored_bridges": {
+        "new_determinant": 215,
+        "new_gram": [
+          [
+            12,
+            41
+          ],
+          [
+            41,
+            158
+          ]
+        ],
+        "old_determinant": 215,
+        "old_gram": [
+          [
+            18,
+            1
+          ],
+          [
+            1,
+            12
+          ]
+        ]
+      },
+      "target_root_rank": 11
+    },
+    {
+      "corridor": "H3",
+      "edge_index": 5,
+      "old_fibre_degree": 2,
+      "q": 8,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              4
+            ],
+            [
+              62,
+              124
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 2,
+            "O_dot_F_prime": 60,
+            "O_dot_O_prime": 60
+          },
+          "positive_projection_gram_G_A": [
+            [
+              248,
+              495
+            ],
+            [
+              495,
+              992
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              10,
+              10,
+              2,
+              10,
+              10,
+              10,
+              10,
+              10,
+              2,
+              2,
+              2,
+              0,
+              -1,
+              0,
+              -2,
+              0,
+              0
+            ],
+            [
+              20,
+              20,
+              4,
+              20,
+              20,
+              20,
+              20,
+              20,
+              4,
+              4,
+              4,
+              0,
+              -3,
+              0,
+              -4,
+              0,
+              1
+            ]
+          ],
+          "raw_bridge_determinant": 991,
+          "saturated_bridge_determinant": 991,
+          "saturated_bridge_gram": [
+            [
+              4,
+              -1
+            ],
+            [
+              -1,
+              248
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              62
+            ],
+            [
+              4,
+              124
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 60,
+            "O_dot_F_prime": 2,
+            "O_dot_O_prime": 60
+          },
+          "positive_projection_gram_G_A": [
+            [
+              16,
+              495
+            ],
+            [
+              495,
+              15376
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              0,
+              -1,
+              -5,
+              2,
+              -2,
+              -5,
+              -4,
+              -3,
+              -3,
+              -3,
+              -3,
+              -1,
+              0,
+              0,
+              1,
+              0,
+              -1
+            ],
+            [
+              0,
+              -31,
+              -155,
+              62,
+              -62,
+              -155,
+              -124,
+              -93,
+              -93,
+              -93,
+              -93,
+              -31,
+              0,
+              0,
+              30,
+              0,
+              -31
+            ]
+          ],
+          "raw_bridge_determinant": 991,
+          "saturated_bridge_determinant": 991,
+          "saturated_bridge_gram": [
+            [
+              62,
+              -61
+            ],
+            [
+              -61,
+              76
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 11,
+      "stored_bridges": {
+        "new_determinant": 991,
+        "new_gram": [
+          [
+            4,
+            -1
+          ],
+          [
+            -1,
+            248
+          ]
+        ],
+        "old_determinant": 991,
+        "old_gram": [
+          [
+            62,
+            -61
+          ],
+          [
+            -61,
+            76
+          ]
+        ]
+      },
+      "target_root_rank": 10
+    },
+    {
+      "corridor": "H3",
+      "edge_index": 6,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 6,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              32,
+              31
+            ],
+            [
+              31,
+              32
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              5,
+              -4,
+              -4,
+              -8,
+              -9,
+              -4,
+              -5,
+              -8,
+              -4,
+              -2,
+              -1,
+              0,
+              1,
+              -1,
+              0,
+              2,
+              0
+            ],
+            [
+              5,
+              -4,
+              -4,
+              -8,
+              -9,
+              -4,
+              -4,
+              -8,
+              -4,
+              -2,
+              -1,
+              0,
+              1,
+              -1,
+              0,
+              2,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 63,
+          "saturated_bridge_determinant": 63,
+          "saturated_bridge_gram": [
+            [
+              2,
+              9
+            ],
+            [
+              9,
+              72
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              8
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 6,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              31
+            ],
+            [
+              31,
+              128
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              0,
+              0,
+              -4,
+              -1,
+              0,
+              0,
+              4
+            ]
+          ],
+          "raw_bridge_determinant": 63,
+          "saturated_bridge_determinant": 63,
+          "saturated_bridge_gram": [
+            [
+              8,
+              1
+            ],
+            [
+              1,
+              8
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 10,
+      "stored_bridges": {
+        "new_determinant": 63,
+        "new_gram": [
+          [
+            2,
+            9
+          ],
+          [
+            9,
+            72
+          ]
+        ],
+        "old_determinant": 63,
+        "old_gram": [
+          [
+            8,
+            1
+          ],
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "target_root_rank": 9
+    },
+    {
+      "corridor": "H3",
+      "edge_index": 7,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 4,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              24,
+              23
+            ],
+            [
+              23,
+              24
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -15,
+              5,
+              -10,
+              1,
+              -2,
+              -2,
+              0,
+              1,
+              3,
+              1,
+              -2,
+              0,
+              1,
+              -2,
+              0,
+              0,
+              0
+            ],
+            [
+              -15,
+              5,
+              -9,
+              2,
+              -2,
+              -2,
+              0,
+              1,
+              3,
+              1,
+              -2,
+              0,
+              1,
+              -2,
+              0,
+              0,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              2,
+              9
+            ],
+            [
+              9,
+              64
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 4,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              23
+            ],
+            [
+              23,
+              72
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -3,
+              0,
+              2,
+              2,
+              3,
+              1,
+              2,
+              3,
+              1,
+              -1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              -1
+            ],
+            [
+              -9,
+              0,
+              6,
+              6,
+              9,
+              3,
+              6,
+              9,
+              3,
+              -3,
+              0,
+              0,
+              3,
+              0,
+              3,
+              0,
+              -2
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              6,
+              5
+            ],
+            [
+              5,
+              12
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 9,
+      "stored_bridges": {
+        "new_determinant": 47,
+        "new_gram": [
+          [
+            2,
+            9
+          ],
+          [
+            9,
+            64
+          ]
+        ],
+        "old_determinant": 47,
+        "old_gram": [
+          [
+            6,
+            5
+          ],
+          [
+            5,
+            12
+          ]
+        ]
+      },
+      "target_root_rank": 7
+    },
+    {
+      "corridor": "H3",
+      "edge_index": 8,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              16,
+              16
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 14,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              64,
+              63
+            ],
+            [
+              63,
+              64
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -2,
+              -6,
+              -3,
+              -3,
+              0,
+              -2,
+              -1,
+              -1,
+              0,
+              2,
+              0,
+              0,
+              0,
+              2,
+              -2,
+              -2,
+              0
+            ],
+            [
+              -2,
+              -6,
+              -3,
+              -3,
+              1,
+              -2,
+              -1,
+              -1,
+              0,
+              2,
+              0,
+              0,
+              0,
+              2,
+              -2,
+              -2,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 127,
+          "saturated_bridge_determinant": 127,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -1
+            ],
+            [
+              -1,
+              64
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              16
+            ],
+            [
+              2,
+              16
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 14,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              63
+            ],
+            [
+              63,
+              512
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -8,
+              7,
+              -5,
+              6,
+              -1,
+              2,
+              2,
+              -1,
+              1,
+              0,
+              -1,
+              1,
+              1,
+              -1,
+              0,
+              1,
+              -1
+            ],
+            [
+              -64,
+              56,
+              -40,
+              48,
+              -8,
+              16,
+              16,
+              -8,
+              8,
+              0,
+              -8,
+              8,
+              8,
+              -7,
+              0,
+              8,
+              -8
+            ]
+          ],
+          "raw_bridge_determinant": 127,
+          "saturated_bridge_determinant": 127,
+          "saturated_bridge_gram": [
+            [
+              16,
+              15
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 7,
+      "stored_bridges": {
+        "new_determinant": 127,
+        "new_gram": [
+          [
+            2,
+            -1
+          ],
+          [
+            -1,
+            64
+          ]
+        ],
+        "old_determinant": 127,
+        "old_gram": [
+          [
+            16,
+            15
+          ],
+          [
+            15,
+            22
+          ]
+        ]
+      },
+      "target_root_rank": 5
+    },
+    {
+      "corridor": "H3",
+      "edge_index": 9,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              16,
+              16
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 14,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              64,
+              63
+            ],
+            [
+              63,
+              64
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -4,
+              -10,
+              2,
+              0,
+              2,
+              -3,
+              -2,
+              0,
+              0,
+              0,
+              1,
+              -1,
+              3,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              -4,
+              -10,
+              2,
+              1,
+              2,
+              -3,
+              -2,
+              0,
+              0,
+              0,
+              1,
+              -1,
+              3,
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 127,
+          "saturated_bridge_determinant": 127,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -1
+            ],
+            [
+              -1,
+              64
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              16
+            ],
+            [
+              2,
+              16
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 14,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              63
+            ],
+            [
+              63,
+              512
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -8,
+              11,
+              6,
+              -4,
+              -2,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              1,
+              -1,
+              -1,
+              2,
+              0,
+              -1
+            ],
+            [
+              -64,
+              88,
+              48,
+              -32,
+              -16,
+              0,
+              -8,
+              0,
+              0,
+              0,
+              0,
+              8,
+              -8,
+              -8,
+              16,
+              0,
+              -9
+            ]
+          ],
+          "raw_bridge_determinant": 127,
+          "saturated_bridge_determinant": 127,
+          "saturated_bridge_gram": [
+            [
+              16,
+              17
+            ],
+            [
+              17,
+              26
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 5,
+      "stored_bridges": {
+        "new_determinant": 127,
+        "new_gram": [
+          [
+            2,
+            -1
+          ],
+          [
+            -1,
+            64
+          ]
+        ],
+        "old_determinant": 127,
+        "old_gram": [
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            26
+          ]
+        ]
+      },
+      "target_root_rank": 4
+    },
+    {
+      "corridor": "H3",
+      "edge_index": 10,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              18,
+              18
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 16,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              72,
+              71
+            ],
+            [
+              71,
+              72
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              14,
+              -3,
+              -1,
+              -1,
+              2,
+              2,
+              -2,
+              -3,
+              3,
+              -3,
+              -2,
+              3,
+              -3,
+              -3,
+              3,
+              -3,
+              0
+            ],
+            [
+              14,
+              -3,
+              0,
+              -1,
+              2,
+              2,
+              -2,
+              -3,
+              3,
+              -3,
+              -2,
+              3,
+              -3,
+              -3,
+              3,
+              -3,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 143,
+          "saturated_bridge_determinant": 143,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -1
+            ],
+            [
+              -1,
+              72
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              18
+            ],
+            [
+              2,
+              18
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 16,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              71
+            ],
+            [
+              71,
+              648
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -4,
+              -1,
+              5,
+              -1,
+              -3,
+              0,
+              1,
+              -2,
+              1,
+              0,
+              1,
+              -1,
+              1,
+              -1,
+              0,
+              -1,
+              -1
+            ],
+            [
+              -36,
+              -9,
+              45,
+              -9,
+              -27,
+              0,
+              9,
+              -18,
+              9,
+              0,
+              9,
+              -9,
+              9,
+              -9,
+              0,
+              -8,
+              -9
+            ]
+          ],
+          "raw_bridge_determinant": 143,
+          "saturated_bridge_determinant": 143,
+          "saturated_bridge_gram": [
+            [
+              18,
+              -17
+            ],
+            [
+              -17,
+              24
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 4,
+      "stored_bridges": {
+        "new_determinant": 143,
+        "new_gram": [
+          [
+            2,
+            -1
+          ],
+          [
+            -1,
+            72
+          ]
+        ],
+        "old_determinant": 143,
+        "old_gram": [
+          [
+            18,
+            -17
+          ],
+          [
+            -17,
+            24
+          ]
+        ]
+      },
+      "target_root_rank": 3
+    },
+    {
+      "corridor": "H3",
+      "edge_index": 11,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 2,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              16,
+              15
+            ],
+            [
+              15,
+              16
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -14,
+              -136,
+              2,
+              1,
+              1,
+              -3,
+              -1,
+              2,
+              3,
+              -1,
+              0,
+              0,
+              0,
+              -2,
+              -1,
+              0,
+              3
+            ],
+            [
+              -13,
+              -136,
+              2,
+              1,
+              1,
+              -3,
+              -1,
+              2,
+              3,
+              -1,
+              0,
+              0,
+              0,
+              -2,
+              -1,
+              0,
+              3
+            ]
+          ],
+          "raw_bridge_determinant": 31,
+          "saturated_bridge_determinant": 31,
+          "saturated_bridge_gram": [
+            [
+              2,
+              27
+            ],
+            [
+              27,
+              380
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 2,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              15
+            ],
+            [
+              15,
+              32
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -11,
+              17,
+              0,
+              -2,
+              -1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              -1,
+              1,
+              1,
+              0,
+              1,
+              -1,
+              1
+            ],
+            [
+              -22,
+              34,
+              0,
+              -4,
+              -2,
+              0,
+              0,
+              2,
+              2,
+              0,
+              -2,
+              2,
+              1,
+              0,
+              2,
+              -2,
+              2
+            ]
+          ],
+          "raw_bridge_determinant": 31,
+          "saturated_bridge_determinant": 31,
+          "saturated_bridge_gram": [
+            [
+              4,
+              -3
+            ],
+            [
+              -3,
+              10
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 3,
+      "stored_bridges": {
+        "new_determinant": 31,
+        "new_gram": [
+          [
+            2,
+            27
+          ],
+          [
+            27,
+            380
+          ]
+        ],
+        "old_determinant": 31,
+        "old_gram": [
+          [
+            4,
+            -3
+          ],
+          [
+            -3,
+            10
+          ]
+        ]
+      },
+      "target_root_rank": 2
+    },
+    {
+      "corridor": "H3",
+      "edge_index": 12,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 2,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              16,
+              15
+            ],
+            [
+              15,
+              16
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -16,
+              -1,
+              -3,
+              1,
+              1,
+              -2,
+              1,
+              2,
+              -1,
+              2,
+              2,
+              1,
+              1,
+              -2,
+              -2,
+              -2,
+              1
+            ],
+            [
+              -15,
+              -1,
+              -3,
+              1,
+              1,
+              -2,
+              1,
+              2,
+              -1,
+              2,
+              2,
+              1,
+              1,
+              -2,
+              -2,
+              -2,
+              1
+            ]
+          ],
+          "raw_bridge_determinant": 31,
+          "saturated_bridge_determinant": 31,
+          "saturated_bridge_gram": [
+            [
+              2,
+              31
+            ],
+            [
+              31,
+              496
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 2,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              15
+            ],
+            [
+              15,
+              32
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -5,
+              -42,
+              -1,
+              3,
+              -1,
+              -1,
+              2,
+              1,
+              2,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              -10,
+              -84,
+              -2,
+              6,
+              -2,
+              -2,
+              4,
+              2,
+              4,
+              -1,
+              2,
+              0,
+              2,
+              0,
+              2,
+              0,
+              2
+            ]
+          ],
+          "raw_bridge_determinant": 31,
+          "saturated_bridge_determinant": 31,
+          "saturated_bridge_gram": [
+            [
+              4,
+              1
+            ],
+            [
+              1,
+              8
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 2,
+      "stored_bridges": {
+        "new_determinant": 31,
+        "new_gram": [
+          [
+            2,
+            31
+          ],
+          [
+            31,
+            496
+          ]
+        ],
+        "old_determinant": 31,
+        "old_gram": [
+          [
+            4,
+            1
+          ],
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "target_root_rank": 1
+    },
+    {
+      "corridor": "H3",
+      "edge_index": 13,
+      "old_fibre_degree": 2,
+      "q": 6,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 1,
+            "O_dot_F_prime": 2,
+            "O_dot_O_prime": 1
+          },
+          "positive_projection_gram_G_A": [
+            [
+              16,
+              23
+            ],
+            [
+              23,
+              36
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -2,
+              6,
+              -1,
+              1,
+              4,
+              3,
+              2,
+              3,
+              2,
+              -2,
+              -5,
+              3,
+              -2,
+              1,
+              -2,
+              0,
+              -3
+            ],
+            [
+              -3,
+              9,
+              -1,
+              2,
+              6,
+              4,
+              2,
+              4,
+              2,
+              -3,
+              -7,
+              4,
+              -3,
+              1,
+              -3,
+              0,
+              -5
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              12,
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 2,
+            "O_dot_F_prime": 1,
+            "O_dot_O_prime": 1
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              23
+            ],
+            [
+              23,
+              48
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -2,
+              -5,
+              -1,
+              2,
+              3,
+              -2,
+              1,
+              1,
+              -1,
+              0,
+              2,
+              1,
+              0,
+              -1,
+              1,
+              -1,
+              3
+            ],
+            [
+              -4,
+              -10,
+              -2,
+              4,
+              6,
+              -4,
+              2,
+              2,
+              -2,
+              0,
+              4,
+              2,
+              -1,
+              -2,
+              2,
+              -2,
+              6
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              4,
+              1
+            ],
+            [
+              1,
+              12
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 1,
+      "stored_bridges": {
+        "new_determinant": 47,
+        "new_gram": [
+          [
+            12,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "old_determinant": 47,
+        "old_gram": [
+          [
+            4,
+            1
+          ],
+          [
+            1,
+            12
+          ]
+        ]
+      },
+      "target_root_rank": 0
+    },
+    {
+      "corridor": "Q80",
+      "edge_index": 1,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              7
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -8,
+              4,
+              4,
+              4,
+              1,
+              0,
+              0,
+              4,
+              -1,
+              -1,
+              -2
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -7,
+              4,
+              4,
+              4,
+              1,
+              0,
+              0,
+              4,
+              -1,
+              -1,
+              -2
+            ]
+          ],
+          "raw_bridge_determinant": 15,
+          "saturated_bridge_determinant": 15,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -15
+            ],
+            [
+              -15,
+              120
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              7
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              -1,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 15,
+          "saturated_bridge_determinant": 15,
+          "saturated_bridge_gram": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              8
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 14,
+      "stored_bridges": {
+        "new_determinant": 15,
+        "new_gram": [
+          [
+            2,
+            -15
+          ],
+          [
+            -15,
+            120
+          ]
+        ],
+        "old_determinant": 15,
+        "old_gram": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      "target_root_rank": 13
+    },
+    {
+      "corridor": "Q80",
+      "edge_index": 2,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 4,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              24,
+              23
+            ],
+            [
+              23,
+              24
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              0,
+              -12,
+              0,
+              0,
+              0,
+              -11,
+              15,
+              4,
+              23,
+              12,
+              0,
+              1,
+              -1,
+              15,
+              2,
+              -2,
+              4
+            ],
+            [
+              0,
+              -12,
+              0,
+              0,
+              0,
+              -10,
+              15,
+              4,
+              23,
+              12,
+              0,
+              1,
+              -1,
+              15,
+              2,
+              -2,
+              4
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              2,
+              21
+            ],
+            [
+              21,
+              244
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              6
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 4,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              23
+            ],
+            [
+              23,
+              72
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              -3,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              -3,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "raw_bridge_determinant": 47,
+          "saturated_bridge_determinant": 47,
+          "saturated_bridge_gram": [
+            [
+              6,
+              -1
+            ],
+            [
+              -1,
+              8
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 13,
+      "stored_bridges": {
+        "new_determinant": 47,
+        "new_gram": [
+          [
+            2,
+            21
+          ],
+          [
+            21,
+            244
+          ]
+        ],
+        "old_determinant": 47,
+        "old_gram": [
+          [
+            6,
+            -1
+          ],
+          [
+            -1,
+            8
+          ]
+        ]
+      },
+      "target_root_rank": 12
+    },
+    {
+      "corridor": "Q80",
+      "edge_index": 3,
+      "old_fibre_degree": 3,
+      "q": 6,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              3,
+              2
+            ],
+            [
+              12,
+              8
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 3,
+            "F_dot_O_prime": -1,
+            "O_dot_F_prime": 9,
+            "O_dot_O_prime": -3
+          },
+          "positive_projection_gram_G_A": [
+            [
+              72,
+              47
+            ],
+            [
+              47,
+              32
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              120,
+              192,
+              -83,
+              100,
+              36,
+              -212,
+              -143,
+              -1,
+              72,
+              24,
+              -95,
+              167,
+              21,
+              -72,
+              72,
+              -24,
+              -24
+            ],
+            [
+              80,
+              128,
+              -55,
+              67,
+              24,
+              -141,
+              -95,
+              0,
+              48,
+              16,
+              -63,
+              111,
+              14,
+              -48,
+              48,
+              -16,
+              -16
+            ]
+          ],
+          "raw_bridge_determinant": 95,
+          "saturated_bridge_determinant": 95,
+          "saturated_bridge_gram": [
+            [
+              12,
+              235
+            ],
+            [
+              235,
+              4610
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              3,
+              12
+            ],
+            [
+              2,
+              8
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 3,
+            "F_dot_O_prime": 9,
+            "O_dot_F_prime": -1,
+            "O_dot_O_prime": -3
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              47
+            ],
+            [
+              47,
+              192
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -5,
+              -3,
+              6,
+              6,
+              -8,
+              -4,
+              2,
+              4,
+              -1,
+              8,
+              -16,
+              -1,
+              0,
+              3,
+              5,
+              -2,
+              -2
+            ],
+            [
+              -20,
+              -12,
+              24,
+              24,
+              -32,
+              -16,
+              8,
+              16,
+              -4,
+              32,
+              -64,
+              -4,
+              0,
+              12,
+              19,
+              -8,
+              -8
+            ]
+          ],
+          "raw_bridge_determinant": 95,
+          "saturated_bridge_determinant": 95,
+          "saturated_bridge_gram": [
+            [
+              8,
+              39
+            ],
+            [
+              39,
+              202
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 12,
+      "stored_bridges": {
+        "new_determinant": 95,
+        "new_gram": [
+          [
+            12,
+            235
+          ],
+          [
+            235,
+            4610
+          ]
+        ],
+        "old_determinant": 95,
+        "old_gram": [
+          [
+            8,
+            39
+          ],
+          [
+            39,
+            202
+          ]
+        ]
+      },
+      "target_root_rank": 11
+    },
+    {
+      "corridor": "Q80",
+      "edge_index": 4,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              18,
+              18
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 16,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              72,
+              71
+            ],
+            [
+              71,
+              72
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              71,
+              379,
+              -1440,
+              -828,
+              220,
+              -1937,
+              -1283,
+              -107,
+              -111,
+              576,
+              -286,
+              -110,
+              -39,
+              -218,
+              -434,
+              646,
+              -216
+            ],
+            [
+              72,
+              379,
+              -1440,
+              -828,
+              220,
+              -1937,
+              -1283,
+              -107,
+              -111,
+              576,
+              -286,
+              -110,
+              -39,
+              -218,
+              -434,
+              646,
+              -216
+            ]
+          ],
+          "raw_bridge_determinant": 143,
+          "saturated_bridge_determinant": 143,
+          "saturated_bridge_gram": [
+            [
+              2,
+              143
+            ],
+            [
+              143,
+              10296
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              18
+            ],
+            [
+              2,
+              18
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 16,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              71
+            ],
+            [
+              71,
+              648
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              32,
+              48,
+              -21,
+              28,
+              8,
+              -52,
+              -34,
+              0,
+              18,
+              5,
+              -23,
+              43,
+              9,
+              -18,
+              16,
+              -6,
+              -6
+            ],
+            [
+              288,
+              432,
+              -189,
+              252,
+              72,
+              -468,
+              -306,
+              0,
+              162,
+              45,
+              -207,
+              387,
+              81,
+              -161,
+              144,
+              -54,
+              -54
+            ]
+          ],
+          "raw_bridge_determinant": 143,
+          "saturated_bridge_determinant": 143,
+          "saturated_bridge_gram": [
+            [
+              18,
+              -323
+            ],
+            [
+              -323,
+              5804
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 11,
+      "stored_bridges": {
+        "new_determinant": 143,
+        "new_gram": [
+          [
+            2,
+            143
+          ],
+          [
+            143,
+            10296
+          ]
+        ],
+        "old_determinant": 143,
+        "old_gram": [
+          [
+            18,
+            -323
+          ],
+          [
+            -323,
+            5804
+          ]
+        ]
+      },
+      "target_root_rank": 10
+    },
+    {
+      "corridor": "Q80",
+      "edge_index": 5,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              404,
+              404
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 402,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              1616,
+              1615
+            ],
+            [
+              1615,
+              1616
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              1615,
+              52306,
+              24313,
+              149822,
+              72913,
+              -810,
+              59696,
+              -89549,
+              -128408,
+              117102,
+              50169,
+              -32599,
+              2386,
+              -14265,
+              -17768,
+              6,
+              22622
+            ],
+            [
+              1616,
+              52306,
+              24313,
+              149822,
+              72913,
+              -810,
+              59696,
+              -89549,
+              -128408,
+              117102,
+              50169,
+              -32599,
+              2386,
+              -14265,
+              -17768,
+              6,
+              22622
+            ]
+          ],
+          "raw_bridge_determinant": 3231,
+          "saturated_bridge_determinant": 3231,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -3231
+            ],
+            [
+              -3231,
+              5221296
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              404
+            ],
+            [
+              2,
+              404
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 402,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              1615
+            ],
+            [
+              1615,
+              326432
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              10,
+              53,
+              -192,
+              -114,
+              29,
+              -256,
+              -170,
+              -12,
+              -14,
+              74,
+              -32,
+              -14,
+              -6,
+              -26,
+              -58,
+              84,
+              -28
+            ],
+            [
+              2020,
+              10706,
+              -38784,
+              -23028,
+              5858,
+              -51712,
+              -34340,
+              -2424,
+              -2828,
+              14948,
+              -6464,
+              -2828,
+              -1212,
+              -5252,
+              -11716,
+              16968,
+              -5655
+            ]
+          ],
+          "raw_bridge_determinant": 3231,
+          "saturated_bridge_determinant": 3231,
+          "saturated_bridge_gram": [
+            [
+              404,
+              11311
+            ],
+            [
+              11311,
+              316688
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 10,
+      "stored_bridges": {
+        "new_determinant": 3231,
+        "new_gram": [
+          [
+            2,
+            -3231
+          ],
+          [
+            -3231,
+            5221296
+          ]
+        ],
+        "old_determinant": 3231,
+        "old_gram": [
+          [
+            404,
+            11311
+          ],
+          [
+            11311,
+            316688
+          ]
+        ]
+      },
+      "target_root_rank": 9
+    },
+    {
+      "corridor": "Q80",
+      "edge_index": 6,
+      "old_fibre_degree": 3,
+      "q": 6,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              3,
+              2
+            ],
+            [
+              45,
+              30
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 3,
+            "F_dot_O_prime": -1,
+            "O_dot_F_prime": 42,
+            "O_dot_O_prime": -14
+          },
+          "positive_projection_gram_G_A": [
+            [
+              270,
+              179
+            ],
+            [
+              179,
+              120
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -7650,
+              -82170,
+              433272,
+              407124,
+              -116942,
+              -117762,
+              8095,
+              77,
+              -133548,
+              154982,
+              133715,
+              -103327,
+              -341600,
+              183925,
+              -254347,
+              127633,
+              232483
+            ],
+            [
+              -5100,
+              -54780,
+              288848,
+              271416,
+              -77962,
+              -78508,
+              5397,
+              51,
+              -89032,
+              103321,
+              89143,
+              -68885,
+              -227733,
+              122617,
+              -169565,
+              85089,
+              154989
+            ]
+          ],
+          "raw_bridge_determinant": 359,
+          "saturated_bridge_determinant": 359,
+          "saturated_bridge_gram": [
+            [
+              12,
+              146669
+            ],
+            [
+              146669,
+              1792649660
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              3,
+              45
+            ],
+            [
+              2,
+              30
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 3,
+            "F_dot_O_prime": 42,
+            "O_dot_F_prime": -1,
+            "O_dot_O_prime": -14
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              179
+            ],
+            [
+              179,
+              2700
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              85,
+              2699,
+              1257,
+              7718,
+              3756,
+              -41,
+              3077,
+              -4614,
+              -6615,
+              6032,
+              2584,
+              -1678,
+              121,
+              -736,
+              -913,
+              1,
+              1165
+            ],
+            [
+              1275,
+              40485,
+              18855,
+              115770,
+              56340,
+              -615,
+              46155,
+              -69210,
+              -99225,
+              90479,
+              38760,
+              -25170,
+              1815,
+              -11040,
+              -13695,
+              15,
+              17475
+            ]
+          ],
+          "raw_bridge_determinant": 359,
+          "saturated_bridge_determinant": 359,
+          "saturated_bridge_gram": [
+            [
+              30,
+              180959
+            ],
+            [
+              180959,
+              1091538668
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 9,
+      "stored_bridges": {
+        "new_determinant": 359,
+        "new_gram": [
+          [
+            12,
+            146669
+          ],
+          [
+            146669,
+            1792649660
+          ]
+        ],
+        "old_determinant": 359,
+        "old_gram": [
+          [
+            30,
+            180959
+          ],
+          [
+            180959,
+            1091538668
+          ]
+        ]
+      },
+      "target_root_rank": 7
+    },
+    {
+      "corridor": "Q80",
+      "edge_index": 7,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              20,
+              20
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 18,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              80,
+              79
+            ],
+            [
+              79,
+              80
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -159379,
+              1733,
+              13131,
+              -235999,
+              -54062,
+              -85075,
+              59849,
+              -30973,
+              95667,
+              -21782,
+              -109787,
+              -58654,
+              -130014,
+              -93095,
+              31345,
+              -22346,
+              -40094
+            ],
+            [
+              -159378,
+              1733,
+              13131,
+              -235999,
+              -54062,
+              -85075,
+              59849,
+              -30973,
+              95667,
+              -21782,
+              -109787,
+              -58654,
+              -130014,
+              -93095,
+              31345,
+              -22346,
+              -40094
+            ]
+          ],
+          "raw_bridge_determinant": 159,
+          "saturated_bridge_determinant": 159,
+          "saturated_bridge_gram": [
+            [
+              2,
+              318757
+            ],
+            [
+              318757,
+              50803012604
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              20
+            ],
+            [
+              2,
+              20
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 18,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              79
+            ],
+            [
+              79,
+              800
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -94,
+              -1003,
+              5298,
+              4977,
+              -1431,
+              -1440,
+              100,
+              1,
+              -1632,
+              1893,
+              1634,
+              -1264,
+              -4175,
+              2248,
+              -3111,
+              1561,
+              2842
+            ],
+            [
+              -940,
+              -10030,
+              52980,
+              49770,
+              -14310,
+              -14400,
+              999,
+              10,
+              -16320,
+              18930,
+              16340,
+              -12640,
+              -41750,
+              22480,
+              -31110,
+              15610,
+              28420
+            ]
+          ],
+          "raw_bridge_determinant": 159,
+          "saturated_bridge_determinant": 159,
+          "saturated_bridge_gram": [
+            [
+              20,
+              1999
+            ],
+            [
+              1999,
+              199808
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 7,
+      "stored_bridges": {
+        "new_determinant": 159,
+        "new_gram": [
+          [
+            2,
+            318757
+          ],
+          [
+            318757,
+            50803012604
+          ]
+        ],
+        "old_determinant": 159,
+        "old_gram": [
+          [
+            20,
+            1999
+          ],
+          [
+            1999,
+            199808
+          ]
+        ]
+      },
+      "target_root_rank": 5
+    },
+    {
+      "corridor": "Q80",
+      "edge_index": 8,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              306,
+              306
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 304,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              1224,
+              1223
+            ],
+            [
+              1223,
+              1224
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -14228,
+              -492681,
+              14862599,
+              7633545,
+              -20417251,
+              -22502825,
+              -4110839,
+              -15340017,
+              7505676,
+              14499487,
+              -4482119,
+              -7649523,
+              -15409171,
+              -13734007,
+              -11872956,
+              -11393279,
+              8466560
+            ],
+            [
+              -14227,
+              -492681,
+              14862599,
+              7633545,
+              -20417251,
+              -22502825,
+              -4110839,
+              -15340017,
+              7505676,
+              14499487,
+              -4482119,
+              -7649523,
+              -15409171,
+              -13734007,
+              -11872956,
+              -11393279,
+              8466560
+            ]
+          ],
+          "raw_bridge_determinant": 2447,
+          "saturated_bridge_determinant": 2447,
+          "saturated_bridge_gram": [
+            [
+              2,
+              28455
+            ],
+            [
+              28455,
+              404844736
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              306
+            ],
+            [
+              2,
+              306
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 304,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              1223
+            ],
+            [
+              1223,
+              187272
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              30693,
+              -339,
+              -2534,
+              45446,
+              10413,
+              16390,
+              -11527,
+              5970,
+              -18424,
+              4193,
+              21146,
+              11296,
+              25035,
+              17925,
+              -6032,
+              4304,
+              7717
+            ],
+            [
+              4696029,
+              -51867,
+              -387702,
+              6953238,
+              1593189,
+              2507670,
+              -1763631,
+              913410,
+              -2818872,
+              641529,
+              3235338,
+              1728288,
+              3830355,
+              2742525,
+              -922896,
+              658511,
+              1180701
+            ]
+          ],
+          "raw_bridge_determinant": 2447,
+          "saturated_bridge_determinant": 2447,
+          "saturated_bridge_gram": [
+            [
+              306,
+              -1317023
+            ],
+            [
+              -1317023,
+              5668462696
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 5,
+      "stored_bridges": {
+        "new_determinant": 2447,
+        "new_gram": [
+          [
+            2,
+            28455
+          ],
+          [
+            28455,
+            404844736
+          ]
+        ],
+        "old_determinant": 2447,
+        "old_gram": [
+          [
+            306,
+            -1317023
+          ],
+          [
+            -1317023,
+            5668462696
+          ]
+        ]
+      },
+      "target_root_rank": 4
+    },
+    {
+      "corridor": "Q80",
+      "edge_index": 9,
+      "old_fibre_degree": 2,
+      "q": 4,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              2,
+              2
+            ],
+            [
+              100,
+              100
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": 98,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              400,
+              399
+            ],
+            [
+              399,
+              400
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -372746,
+              -2350701,
+              527914,
+              4703818,
+              -818176,
+              2077800,
+              1992354,
+              -8818,
+              -185864,
+              -3245358,
+              -1927284,
+              -5347764,
+              -4752802,
+              -1031420,
+              1893874,
+              -1553480,
+              745720
+            ],
+            [
+              -372745,
+              -2350701,
+              527914,
+              4703818,
+              -818176,
+              2077800,
+              1992354,
+              -8818,
+              -185864,
+              -3245358,
+              -1927284,
+              -5347764,
+              -4752802,
+              -1031420,
+              1893874,
+              -1553480,
+              745720
+            ]
+          ],
+          "raw_bridge_determinant": 799,
+          "saturated_bridge_determinant": 799,
+          "saturated_bridge_gram": [
+            [
+              2,
+              -745491
+            ],
+            [
+              -745491,
+              277878415940
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              2,
+              100
+            ],
+            [
+              2,
+              100
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 2,
+            "F_dot_O_prime": 98,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              8,
+              399
+            ],
+            [
+              399,
+              20000
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              21,
+              671,
+              -20182,
+              -10366,
+              27727,
+              30558,
+              5582,
+              20831,
+              -10195,
+              -19691,
+              6086,
+              10389,
+              20928,
+              18651,
+              16123,
+              15473,
+              -11496
+            ],
+            [
+              1050,
+              33550,
+              -1009100,
+              -518300,
+              1386350,
+              1527900,
+              279100,
+              1041550,
+              -509750,
+              -984550,
+              304300,
+              519450,
+              1046400,
+              932550,
+              806149,
+              773650,
+              -574800
+            ]
+          ],
+          "raw_bridge_determinant": 799,
+          "saturated_bridge_determinant": 799,
+          "saturated_bridge_gram": [
+            [
+              100,
+              -1612299
+            ],
+            [
+              -1612299,
+              25995080662
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 4,
+      "stored_bridges": {
+        "new_determinant": 799,
+        "new_gram": [
+          [
+            2,
+            -745491
+          ],
+          [
+            -745491,
+            277878415940
+          ]
+        ],
+        "old_determinant": 799,
+        "old_gram": [
+          [
+            100,
+            -1612299
+          ],
+          [
+            -1612299,
+            25995080662
+          ]
+        ]
+      },
+      "target_root_rank": 1
+    },
+    {
+      "corridor": "Q80",
+      "edge_index": 10,
+      "old_fibre_degree": 3,
+      "q": 6,
+      "relative_u": {
+        "new_to_old": {
+          "cross_pairing_A": [
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 3,
+            "F_dot_O_prime": -1,
+            "O_dot_F_prime": 0,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              18,
+              11
+            ],
+            [
+              11,
+              8
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -800130,
+              566109,
+              3422172,
+              74984,
+              190259,
+              -2172079,
+              -67698,
+              613262,
+              1363656,
+              -934098,
+              -2553294,
+              1809224,
+              -3386958,
+              380136,
+              -1003937,
+              1434624,
+              268305
+            ],
+            [
+              -533420,
+              377406,
+              2281448,
+              49989,
+              126839,
+              -1448053,
+              -45132,
+              408841,
+              909104,
+              -622732,
+              -1702196,
+              1206149,
+              -2257972,
+              253424,
+              -669291,
+              956416,
+              178870
+            ]
+          ],
+          "raw_bridge_determinant": 23,
+          "saturated_bridge_determinant": 23,
+          "saturated_bridge_gram": [
+            [
+              12,
+              1013059
+            ],
+            [
+              1013059,
+              85524044792
+            ]
+          ],
+          "saturation_index": 1
+        },
+        "old_fibre_degree_matches_edge_record": true,
+        "old_to_new": {
+          "cross_pairing_A": [
+            [
+              3,
+              3
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "determinant_square_index_identity": "det(G_A) = saturation_index^2 * det(C)",
+          "intersection_coordinates": {
+            "F_dot_F_prime": 3,
+            "F_dot_O_prime": 0,
+            "O_dot_F_prime": -1,
+            "O_dot_O_prime": 0
+          },
+          "positive_projection_gram_G_A": [
+            [
+              12,
+              11
+            ],
+            [
+              11,
+              12
+            ]
+          ],
+          "projected_vectors_in_source_frame": [
+            [
+              -44717,
+              -282065,
+              63356,
+              564493,
+              -98198,
+              249323,
+              239104,
+              -1054,
+              -22328,
+              -389456,
+              -231271,
+              -641746,
+              -570362,
+              -123785,
+              227276,
+              -186445,
+              89497
+            ],
+            [
+              -44718,
+              -282065,
+              63356,
+              564493,
+              -98198,
+              249323,
+              239104,
+              -1054,
+              -22328,
+              -389456,
+              -231271,
+              -641746,
+              -570362,
+              -123785,
+              227276,
+              -186445,
+              89497
+            ]
+          ],
+          "raw_bridge_determinant": 23,
+          "saturated_bridge_determinant": 23,
+          "saturated_bridge_gram": [
+            [
+              2,
+              89435
+            ],
+            [
+              89435,
+              3999309624
+            ]
+          ],
+          "saturation_index": 1
+        }
+      },
+      "source_root_rank": 1,
+      "stored_bridges": {
+        "new_determinant": 23,
+        "new_gram": [
+          [
+            12,
+            1013059
+          ],
+          [
+            1013059,
+            85524044792
+          ]
+        ],
+        "old_determinant": 23,
+        "old_gram": [
+          [
+            2,
+            89435
+          ],
+          [
+            89435,
+            3999309624
+          ]
+        ]
+      },
+      "target_root_rank": 0
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-golay-det720-same-ns-compiler-routes-pole4-witness-v1.json": "7df340c96a323bf24fca320a45c9b0838eec047b3efe012e4e9edbd8ea4b78cf",
+    "artifacts/generated-results/elkies-k3-golay-octad-det720-prescribed-root-sources-v1.json": "f203027cae98df3f1cf69286dd149a73ef93f35ee9408130d89e39a856dbb7af",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-r13-nef-route.json": "43d21529c9af648059d9d2a61f23326f3981427568bb6f89bd97552929ba4504",
+    "artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-source-hunt-r13.json": "a3fd96340f50275a6ddc7b75391b0d57f1050cf0ca69fa2a3571e8877b85431c",
+    "artifacts/generated-results/elkies-k3-rank17-to-h3-reverse-transport.json": "db9518ee9ba5ffb520898242cbff06894900ea1fea2908476e40433a212af4d2",
+    "elkies-k3/data/fibrations/kumar_q80_e6_d5_a3_mw3_frame.txt": "7fabc2be711d5daf13b49e37b71503c2a373baa590cb5625361f71821ecd76d5",
+    "elkies-k3/data/fibrations/kumar_q80_lowq_alternate_prefix.tsv": "f9d22372416335043cbfd821edf13382911885b7bdd780cf50040ef23c23bf56",
+    "elkies-k3/data/fibrations/kumar_q80_new_lowq_rootless_path.tsv": "5262de41e050f13d740d22c875908e3ab3edf411d5a0468afb2727876b723d75"
+  },
+  "proof_boundary": {
+    "not_proved": "The transported second isotropic basis vector need not be the equation-effective zero marking, and this regression does not enumerate new relative U embeddings or construct equations.",
+    "proved": "For all 42 stored ordered U-pairs, exact integral projection gives G_A=A^T J A-J; saturating the projected pair recovers the stored rank-two bridge on both orientations, with the determinant corrected by the square of the recorded saturation index. The (1,1) entry of A recovers every stored old-fibre degree."
+  },
+  "reproduce": "sage -python elkies-k3/scripts/certify_integral_rank_transfer_bridge_reglue.sage --relative-u-output artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json",
+  "schema": "elkies-k3.relative-u-bridge-lifting-regression.v1",
+  "status": "PASS_EXACT_RELATIVE_U_BRIDGE_LIFTING_REGRESSION",
+  "theorem": {
+    "lift_formula": "u'_j = (J A)_{bullet j} + w_j",
+    "projection_formula": "G_A = A^T J A - J",
+    "saturation_formula": "det(G_A) = [C:<w_1,w_2>]^2 det(C)"
+  }
+}

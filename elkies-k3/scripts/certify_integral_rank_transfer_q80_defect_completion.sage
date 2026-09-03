@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 import runpy
 
-from sage.all import ZZ, pari, vector
+from sage.all import Genus, QQ, ZZ, matrix, pari, vector
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -17,6 +17,11 @@ GENERATED = ROOT / "artifacts/generated-results"
 DIRECTED_SCRIPT = ROOT / "elkies-k3/scripts/search_integral_rank_transfer_q80_defect_neighbors.sage"
 BEAM_SCRIPT = ROOT / "elkies-k3/scripts/search_integral_rank_transfer_q80_defect_beam.sage"
 OUTPUT = GENERATED / "elkies-k3-integral-rank-transfer-q80-defect-completion-v1.json"
+PUBLISHED_R17 = ROOT / "elkies-k3/data/lattice/rank17_gram.txt"
+ALTERNATE_Q80 = GENERATED / "q80-alternate-fifth-q6-rootless-transport.json"
+ROOTLESS_J2_CLASSIFICATION = (
+    GENERATED / "elkies-k3-rootless-j2-niemeier-first.json"
+)
 
 DIRECTED_PATH = (
     (13, (10, 7, 6, 11, 8, 11, 4, 11, 7, 10, 1, 3, 6, 3, 10)),
@@ -32,6 +37,25 @@ def relative(path):
 
 def digest(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def load_matrix(path):
+    return matrix(
+        ZZ,
+        [
+            [ZZ(value) for value in line.split()]
+            for line in Path(path).read_text().splitlines()
+            if line.strip() and not line.lstrip().startswith("#")
+        ],
+    )
+
+
+def matrix_rows(value):
+    return [list(map(int, row)) for row in value.rows()]
+
+
+def local_symbol_text(genus, prime):
+    return str(genus.local_symbol(prime)).split(":", 1)[1].strip()
 
 
 def main():
@@ -112,6 +136,108 @@ def main():
         final_core, prepared, final_masks[0], base, core
     )
     assert not completion["isometric_to_declared_target_frame"]
+
+    # Identify both the historically declared target and the new completion
+    # against the two mass-complete rootless determinant-948 J2 controls.
+    published = load_matrix(PUBLISHED_R17)
+    alternate_payload = json.loads(ALTERNATE_Q80.read_text())
+    alternate = matrix(ZZ, alternate_payload["rootless_frame"])
+    classification = json.loads(ROOTLESS_J2_CLASSIFICATION.read_text())
+    assert classification["accounting"][
+        "rootless_complement_isometry_classes"
+    ] == 2
+    assert len(classification["rootless_classes"]) == 2
+
+    declared_target = base["lll_reduce"](prepared["target_frame"])
+    published_reduced = base["lll_reduce"](published)
+    alternate_reduced = base["lll_reduce"](alternate)
+    assert pari(declared_target).qfisom(pari(published_reduced)) != 0
+    assert pari(declared_target).qfisom(pari(alternate_reduced)) == 0
+
+    bridge_row = next(
+        row
+        for row in prepared["viable_bridges"]
+        if row["bridge_class_index"]
+        == final_masks[0]["bridge_class_index"]
+    )
+    core_generator = base["primary_generator"](
+        final_core, prepared["order"]
+    )
+    glue_multiplier = final_masks[0]["isotropic_multipliers"][0]
+    final_glue = vector(
+        QQ,
+        list(glue_multiplier * core_generator) + list(bridge_row["generator"]),
+    )
+    child = core["glued_frame"](
+        final_core, bridge_row["gram"], final_glue
+    )
+    child_reduced = base["lll_reduce"](child)
+
+    published_isometry = pari(child_reduced).qfisom(pari(published_reduced))
+    alternate_isometry = pari(child_reduced).qfisom(pari(alternate_reduced))
+    assert published_isometry == 0
+    assert alternate_isometry != 0
+    alternate_isometry = matrix(ZZ, alternate_isometry)
+    assert abs(alternate_isometry.det()) == 1
+    assert (
+        alternate_isometry.transpose()
+        * alternate_reduced
+        * alternate_isometry
+        == child_reduced
+    )
+
+    minimum_data = pari(child_reduced).qfminim()
+    signed_norm_four_vectors = int(minimum_data[0])
+    assert int(minimum_data[1]) == 4
+    assert signed_norm_four_vectors == 2626
+    automorphism_group_order = int(pari(child_reduced).qfauto()[0])
+    assert automorphism_group_order == 4
+
+    discriminant_primes = (2, 3, 79)
+    child_genus = Genus(child_reduced)
+    published_genus = Genus(published_reduced)
+    alternate_genus = Genus(alternate_reduced)
+    assert child_genus == published_genus == alternate_genus
+    local_symbols = {
+        label: {
+            str(prime): local_symbol_text(genus, prime)
+            for prime in discriminant_primes
+        }
+        for label, genus in (
+            ("completion", child_genus),
+            ("published_R17", published_genus),
+            ("alternate_Q80", alternate_genus),
+        )
+    }
+    assert local_symbols["completion"] == local_symbols["published_R17"]
+    assert local_symbols["completion"] == local_symbols["alternate_Q80"]
+
+    completion.update(
+        {
+            "declared_target_frame_class": "published_R17",
+            "isometric_to_published_R17": False,
+            "isometric_to_alternate_Q80": True,
+            "norm_four_pairs": signed_norm_four_vectors // 2,
+            "automorphism_group_order": automorphism_group_order,
+            "exact_alternate_isometry": {
+                "relation": "Q^t * alternate_Q80 * Q = completion",
+                "determinant": int(alternate_isometry.det()),
+                "matrix": matrix_rows(alternate_isometry),
+            },
+            "independent_local_genus_gate": {
+                "signature": list(child_genus.signature_pair()),
+                "discriminant_primes": list(discriminant_primes),
+                "symbols": local_symbols,
+                "completion_equals_both_control_genera": True,
+            },
+            "mass_complete_J2_interpretation": (
+                "The declared Q80 corridor target is the published R17 "
+                "control. The defect-directed completion is the alternate "
+                "Q80 rootless class, the other class in the complete "
+                "determinant-948 rootless J2 classification."
+            ),
+        }
+    )
     historical_core_isometric = bool(
         pari(final_core).qfisom(
             pari(base["lll_reduce"](prepared["historical_core"]))
@@ -132,6 +258,11 @@ def main():
             relative(directed["CONTROL_SCRIPT"]): digest(directed["CONTROL_SCRIPT"]),
             relative(directed["CORE_SCRIPT"]): digest(directed["CORE_SCRIPT"]),
             relative(directed["REVERSE_SCRIPT"]): digest(directed["REVERSE_SCRIPT"]),
+            relative(PUBLISHED_R17): digest(PUBLISHED_R17),
+            relative(ALTERNATE_Q80): digest(ALTERNATE_Q80),
+            relative(ROOTLESS_J2_CLASSIFICATION): digest(
+                ROOTLESS_J2_CLASSIFICATION
+            ),
         },
         "survival_theorem": {
             "statement": (
@@ -169,7 +300,8 @@ def main():
                 "Every directed edge removes every physical witness of the "
                 "parent's two-cell defect. The first three neighbors acquire "
                 "replacement witnesses; the fourth acquires none. The final "
-                "graph completion is rootless and has the target discriminant form."
+                "graph completion is rootless, has the target local genus, "
+                "and is exactly the alternate Q80 rootless J2 frame."
             ),
             "not_proved": (
                 "There is no monotone scalar defect law, guarantee that a "

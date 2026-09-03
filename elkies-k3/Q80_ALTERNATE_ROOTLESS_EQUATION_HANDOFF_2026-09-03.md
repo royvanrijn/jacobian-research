@@ -143,7 +143,7 @@ by a general quadratic-field element, base `PGL2`, Weierstrass changes, or
 integral ideals.  Its exact output is
 [`../artifacts/generated-results/elkies-k3-q80-third-q12-pencil-basis-heights-v1.json`](../artifacts/generated-results/elkies-k3-q80-third-q12-pencil-basis-heights-v1.json).
 
-<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR 163251202819137c -->
+<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR 957479f39bedd57b -->
 
 ## Exact conductor progress
 
@@ -192,6 +192,8 @@ This is three-prime evidence for the normalization only: exact
 characteristic-zero `Q^2` divisibility, `Q`, the remaining factor, the
 Jacobian, and its maps are still open.
 
+<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-SPECIALIZED-QUARTICS 725664f9e36ae8a7 -->
+
 ## Last exact-Q run checkpoint: 2026-09-03
 
 The current `19^12288` quartic reconstruction space has now been exhausted
@@ -236,25 +238,38 @@ the following exact nonzero subresultants after removal of `(W+r)^3` at
 | 7 | 50,691,932 | 554.864 seconds |
 | 6 | 61,957,773 | 725.906 seconds |
 | 5 | 73,223,619 | not retained |
+| 4 | 84,489,468 | 818.837 seconds |
 
 The run was then observed at 100 percent CPU and about 1.90 GB RSS computing
 the degree-six-to-five step.  At the next status check PID `1740880` no longer
 existed, its detached terminal session was unavailable, and no result artifact
 had been written.  There is no kernel OOM record for that PID, but its exit
-status cannot be recovered.  Therefore nothing below degree six from that run
-is retained or claimed.  Exact `Q`, `D`, and `Q^2` division remain unproved.
+status cannot be recovered.  Therefore nothing below degree six from that
+particular run was retained.
 
 The recovery worker now writes an atomic binary Brown-state checkpoint after
 every completed exact subresultant, with a human-readable JSON companion and
 input hashes for the operands, pencil, factor lift, base value, descent field,
 and stripped residual.  A fresh replay has exercised this on the real
-million-bit input and durably recovered through degree five, one full step
-beyond the lost run.  Its current checkpoint is
+million-bit input and durably recovered the complete sequence through degree
+four.  Its final checkpoint is
 `artifacts/local/elkies-k3/q80-third-q12-exact-quartic-subresultant-checkpoint-v1.pickle`.
-The worker has replayed that checkpoint successfully and is continuing with
-the degree-five-to-four step in the detached `q80_exact_quartic` tmux session.
-Any later process loss can resume from degree five rather than restarting the
-sequence.
+The resulting monic degree-four gcd `Q` has maximum coordinate height 320,859
+bits.  Literal exact division gives a monic quartic `D` of maximum coordinate
+height 1,735,258 bits and proves
+
+```text
+monic(Delta(V=0)/(W+r)^3) = Q(W)^2 D(W)
+```
+
+over the exact quadratic descent field.  The 18 MB certificate is
+[`../artifacts/generated-results/elkies-k3-q80-third-q12-exact-discriminant-specialization-v1.json`](../artifacts/generated-results/elkies-k3-q80-third-q12-exact-discriminant-specialization-v1.json),
+with SHA-256
+`96025b0829943030150925d9911c753261a08c71e8ca48b4f6b878f34badded6`.
+An independent `--check` replay loaded the completed checkpoint, repeated the
+exact `Q^2` division, and returned `PASS_CHECK` with the same digest.  This is
+an exact characteristic-zero theorem at `V=0`; it does not yet recover the
+generic quartics over the full `V`-line or the Jacobian.
 
 ## Next gates
 
@@ -267,14 +282,14 @@ joint evaluation lattices have already failed the independent `p=199` replay;
 they should not simply be repeated in the `delta` basis.  Mere rational
 content extraction is closed by the 7--12-bit content calculation.
 
-The remaining justified route is a dedicated modular/subresultant recovery of
-the degree-four gcd after stripping the proved `(W+r)^3`, with the candidate
-`H(V)` retained symbolically.  It should reconstruct projective quartic
-coefficients prime by prime and finish with exact division in the original
-characteristic-zero discriminant.  A general expanded exact gcd and another
-unstructured high-precision `j`-map LLL run have both reached their useful
-limits.  Once `Q` is certified, retain the known field and factors through the
-invariant-first computation
+The specialized degree-four gcd and exact square division are now certified.
+The next justified compiler should use this exact `V=0` quartic together with
+the candidate common denominator `H(V)` and the untouched-prime factorizations
+to recover the generic `Q(V,W)` projectively.  It must finish by literal exact
+division in the original two-variable characteristic-zero discriminant.  A
+general expanded exact gcd and another unstructured high-precision `j`-map LLL
+run have both reached their useful limits.  In parallel, the exact specialized
+factors now provide a normalization anchor for the invariant-first computation
 
 ```text
 exact factored pencil -> j -> (c4^3,Delta) -> minimal Jacobian -> maps.
@@ -310,6 +325,12 @@ python3 \
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage \
   --base-value 0 --certify-generic-linear --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage \
+  --attempt-subresultant-prs \
+  --output artifacts/generated-results/elkies-k3-q80-third-q12-exact-discriminant-specialization-v1.json \
+  --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/audit_q80_third_q12_quartic_denominator_candidate.sage \

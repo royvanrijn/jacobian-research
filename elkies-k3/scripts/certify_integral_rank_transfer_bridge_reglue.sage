@@ -41,6 +41,11 @@ OUTPUT = (
     / "artifacts/generated-results/"
     "elkies-k3-integral-rank-transfer-bridge-reglue-v1.json"
 )
+RELATIVE_U_OUTPUT = (
+    ROOT
+    / "artifacts/generated-results/"
+    "elkies-k3-relative-u-bridge-lifting-regression-v1.json"
+)
 U = matrix(ZZ, [[0, 1], [1, 0]])
 
 
@@ -233,6 +238,76 @@ def bridge_glue(frame, frame_basis, core_basis):
     }
 
 
+def relative_u_projection(
+    ambient_ns,
+    source_u_basis,
+    source_frame,
+    source_frame_basis,
+    target_u_basis,
+    core_basis,
+    stored_bridge_determinant,
+):
+    """Certify the ordered relative-U projection and its saturated bridge."""
+    assert source_u_basis * ambient_ns * source_u_basis.transpose() == U
+    assert target_u_basis * ambient_ns * target_u_basis.transpose() == U
+    assert source_u_basis * ambient_ns * source_frame_basis.transpose() == 0
+
+    cross_pairing = source_u_basis * ambient_ns * target_u_basis.transpose()
+    source_projection = cross_pairing.transpose() * U * source_u_basis
+    residual = target_u_basis - source_projection
+    assert residual * ambient_ns * source_u_basis.transpose() == 0
+
+    positive_gram = cross_pairing.transpose() * U * cross_pairing - U
+    assert -(residual * ambient_ns * residual.transpose()) == positive_gram
+    assert positive_gram.is_positive_definite()
+
+    frame_coordinates = source_frame_basis.solve_left(residual)
+    assert frame_coordinates in matrix(ZZ, 2, source_frame.nrows()).parent()
+    frame_coordinates = frame_coordinates.change_ring(ZZ)
+    assert frame_coordinates * source_frame_basis == residual
+    assert frame_coordinates * source_frame * frame_coordinates.transpose() == positive_gram
+
+    core_coordinates = source_frame_basis.solve_left(core_basis).change_ring(ZZ)
+    saturated_bridge = (core_coordinates * source_frame).right_kernel_matrix()
+    raw_module = frame_coordinates.row_module(ZZ)
+    saturated_module = raw_module.saturation()
+    stored_module = saturated_bridge.row_module(ZZ)
+    assert saturated_module == stored_module
+    saturation_index = abs(int(raw_module.index_in(saturated_module)))
+    assert abs(int(positive_gram.det())) == (
+        saturation_index**2 * stored_bridge_determinant
+    )
+
+    d = int(cross_pairing[0, 0])
+    s = int(cross_pairing[0, 1] - d)
+    t = int(cross_pairing[1, 0] - d)
+    z = int(cross_pairing[1, 1] - d - s - t)
+    assert cross_pairing == matrix(
+        ZZ,
+        [[d, d + s], [d + t, d + s + t + z]],
+    )
+    return {
+        "cross_pairing_A": rows(cross_pairing),
+        "intersection_coordinates": {
+            "F_dot_F_prime": d,
+            "F_dot_O_prime": s,
+            "O_dot_F_prime": t,
+            "O_dot_O_prime": z,
+        },
+        "positive_projection_gram_G_A": rows(positive_gram),
+        "projected_vectors_in_source_frame": rows(frame_coordinates),
+        "raw_bridge_determinant": abs(int(positive_gram.det())),
+        "saturation_index": saturation_index,
+        "saturated_bridge_gram": rows(
+            saturated_bridge * source_frame * saturated_bridge.transpose()
+        ),
+        "saturated_bridge_determinant": stored_bridge_determinant,
+        "determinant_square_index_identity": (
+            "det(G_A) = saturation_index^2 * det(C)"
+        ),
+    }
+
+
 def certify_embedded_edge(
     corridor,
     edge_index,
@@ -242,6 +317,8 @@ def certify_embedded_edge(
     new_frame,
     new_basis,
     edge_metadata,
+    old_u_basis=None,
+    new_u_basis=None,
 ):
     assert -(old_basis * ambient_ns * old_basis.transpose()) == old_frame
     assert -(new_basis * ambient_ns * new_basis.transpose()) == new_frame
@@ -281,7 +358,41 @@ def certify_embedded_edge(
     assert old_data["core_root_count_signed"] == len(core_root_ambient)
     assert new_data["core_root_count_signed"] == len(core_root_ambient)
 
-    return {
+    relative_u = None
+    if old_u_basis is not None or new_u_basis is not None:
+        assert old_u_basis is not None and new_u_basis is not None
+        old_to_new = relative_u_projection(
+            ambient_ns,
+            old_u_basis,
+            old_frame,
+            old_basis,
+            new_u_basis,
+            core_basis,
+            old_data["bridge_determinant_absolute"],
+        )
+        new_to_old = relative_u_projection(
+            ambient_ns,
+            new_u_basis,
+            new_frame,
+            new_basis,
+            old_u_basis,
+            core_basis,
+            new_data["bridge_determinant_absolute"],
+        )
+        assert old_to_new["cross_pairing_A"] == rows(
+            matrix(ZZ, new_to_old["cross_pairing_A"]).transpose()
+        )
+        assert (
+            old_to_new["intersection_coordinates"]["F_dot_F_prime"]
+            == int(edge_metadata["old_fibre_degree"])
+        )
+        relative_u = {
+            "old_to_new": old_to_new,
+            "new_to_old": new_to_old,
+            "old_fibre_degree_matches_edge_record": True,
+        }
+
+    record = {
         "corridor": corridor,
         "edge_index": edge_index,
         "q": int(edge_metadata["q"]),
@@ -309,9 +420,19 @@ def certify_embedded_edge(
             "identity": "Phi(W_old) intersect Phi(W_new) = Phi(K)",
         },
     }
+    if relative_u is not None:
+        record["relative_u"] = relative_u
+    return record
 
 
-def certify_local_edge(corridor, edge_index, current_frame, transport, edge_metadata):
+def certify_local_edge(
+    corridor,
+    edge_index,
+    current_frame,
+    transport,
+    edge_metadata,
+    include_relative_u=False,
+):
     parent_ns = block_diagonal_matrix(U, -current_frame)
     assert abs(int(transport.det())) == 1
     child_ns = transport * parent_ns * transport.transpose()
@@ -329,6 +450,8 @@ def certify_local_edge(corridor, edge_index, current_frame, transport, edge_meta
         child_frame,
         new_basis,
         edge_metadata,
+        old_u_basis=identity_matrix(ZZ, 19)[:2, :] if include_relative_u else None,
+        new_u_basis=transport[:2, :] if include_relative_u else None,
     )
     return child_frame, record
 
@@ -337,6 +460,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument(
+        "--relative-u-output",
+        type=Path,
+        help="write the opt-in relative-U regression without changing the pinned v1 artifact",
+    )
     arguments = parser.parse_args()
 
     ns_route_path = (
@@ -382,6 +510,7 @@ def main():
             current,
             matrix(ZZ, edge["edge_transport_child_to_parent"]),
             edge,
+            include_relative_u=arguments.relative_u_output is not None,
         )
         certificates.append(record)
 
@@ -399,6 +528,7 @@ def main():
             current,
             matrix(ZZ, edge["edge_transport_child_to_parent"]),
             edge,
+            include_relative_u=arguments.relative_u_output is not None,
         )
         certificates.append(record)
 
@@ -432,6 +562,16 @@ def main():
             matrix(ZZ, new_stage["positive_frame"]),
             matrix(ZZ, new_stage["stage_basis_in_h3_ns"])[2:, :],
             metadata,
+            old_u_basis=(
+                matrix(ZZ, old_stage["stage_basis_in_h3_ns"])[:2, :]
+                if arguments.relative_u_output is not None
+                else None
+            ),
+            new_u_basis=(
+                matrix(ZZ, new_stage["stage_basis_in_h3_ns"])[:2, :]
+                if arguments.relative_u_output is not None
+                else None
+            ),
         )
         certificates.append(record)
 
@@ -471,6 +611,16 @@ def main():
             child_frame,
             new_basis[2:, :],
             metadata,
+            old_u_basis=(
+                current_basis[:2, :]
+                if arguments.relative_u_output is not None
+                else None
+            ),
+            new_u_basis=(
+                new_basis[:2, :]
+                if arguments.relative_u_output is not None
+                else None
+            ),
         )
         certificates.append(record)
         current_frame = child_frame
@@ -577,6 +727,98 @@ def main():
     }
 
     serialized = json.dumps(payload, indent=2, sort_keys=True) + "\n"
+    if arguments.relative_u_output is not None:
+        relative_edges = [
+            {
+                "corridor": row["corridor"],
+                "edge_index": row["edge_index"],
+                "q": row["q"],
+                "old_fibre_degree": row["old_fibre_degree"],
+                "source_root_rank": row["source_root_rank"],
+                "target_root_rank": row["target_root_rank"],
+                "stored_bridges": {
+                    "old_gram": row["old_frame"]["bridge_gram"],
+                    "old_determinant": row["old_frame"][
+                        "bridge_determinant_absolute"
+                    ],
+                    "new_gram": row["new_frame"]["bridge_gram"],
+                    "new_determinant": row["new_frame"][
+                        "bridge_determinant_absolute"
+                    ],
+                },
+                "relative_u": row["relative_u"],
+            }
+            for row in certificates
+        ]
+        relative_payload = {
+            "schema": "elkies-k3.relative-u-bridge-lifting-regression.v1",
+            "status": "PASS_EXACT_RELATIVE_U_BRIDGE_LIFTING_REGRESSION",
+            "theorem": {
+                "projection_formula": "G_A = A^T J A - J",
+                "lift_formula": "u'_j = (J A)_{bullet j} + w_j",
+                "saturation_formula": "det(G_A) = [C:<w_1,w_2>]^2 det(C)",
+            },
+            "aggregate": {
+                "edge_count": len(certificates),
+                "all_old_fibre_degrees_recovered": all(
+                    row["relative_u"]["old_fibre_degree_matches_edge_record"]
+                    for row in certificates
+                ),
+                "saturation_index_histogram_old_to_new": {
+                    str(index): count
+                    for index, count in sorted(
+                        Counter(
+                            row["relative_u"]["old_to_new"]["saturation_index"]
+                            for row in certificates
+                        ).items()
+                    )
+                },
+                "saturation_index_histogram_new_to_old": {
+                    str(index): count
+                    for index, count in sorted(
+                        Counter(
+                            row["relative_u"]["new_to_old"]["saturation_index"]
+                            for row in certificates
+                        ).items()
+                    )
+                },
+            },
+            "inputs": payload["inputs"],
+            "edges": relative_edges,
+            "proof_boundary": {
+                "proved": (
+                    "For all 42 stored ordered U-pairs, exact integral projection gives "
+                    "G_A=A^T J A-J; saturating the projected pair recovers the stored "
+                    "rank-two bridge on both orientations, with the determinant corrected "
+                    "by the square of the recorded saturation index. The (1,1) entry of A "
+                    "recovers every stored old-fibre degree."
+                ),
+                "not_proved": (
+                    "The transported second isotropic basis vector need not be the "
+                    "equation-effective zero marking, and this regression does not enumerate "
+                    "new relative U embeddings or construct equations."
+                ),
+            },
+            "reproduce": (
+                "sage -python elkies-k3/scripts/"
+                "certify_integral_rank_transfer_bridge_reglue.sage "
+                "--relative-u-output artifacts/generated-results/"
+                "elkies-k3-relative-u-bridge-lifting-regression-v1.json"
+            ),
+        }
+        relative_serialized = json.dumps(relative_payload, indent=2, sort_keys=True) + "\n"
+        relative_output = (
+            arguments.relative_u_output
+            if arguments.relative_u_output.is_absolute()
+            else ROOT / arguments.relative_u_output
+        )
+        relative_output.parent.mkdir(parents=True, exist_ok=True)
+        relative_output.write_text(relative_serialized)
+        try:
+            print(relative_output.relative_to(ROOT))
+        except ValueError:
+            print(relative_output)
+        return
     output = arguments.output if arguments.output.is_absolute() else ROOT / arguments.output
     if arguments.check:
         if not output.exists() or output.read_text() != serialized:

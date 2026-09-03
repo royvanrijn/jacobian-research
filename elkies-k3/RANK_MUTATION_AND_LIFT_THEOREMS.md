@@ -1313,6 +1313,161 @@ degree-four graph data to geometric curves.
 
 ## 7A. Integral bridge reglue
 
+### Theorem H-1: relative-`U` bridge lifting
+
+Let
+
+```text
+L = U direct_sum W(-1),        J = [0 1; 1 0],
+```
+
+where `W` is positive definite, and fix the ordered basis `(u_1,u_2)` of
+`U` with Gram matrix `J`.  Let `(u'_1,u'_2)` be an ordered basis of another
+copy `U'` of `U` in `L`, and put
+
+```text
+A_ij = <u_i,u'_j>.
+```
+
+There are unique vectors `w_1,w_2 in W` such that, column by column,
+
+```text
+u'_j = (J*A)_(bullet j) + w_j.                       (H-1.1)
+```
+
+Here the first term is written in the fixed `U` basis and the second is
+viewed in `W(-1)`.  Their positive Gram matrix is
+
+```text
+Gram_W(w_1,w_2) = G_A := A^t*J*A-J.                 (H-1.2)
+```
+
+Conversely, for any `A in M_2(ZZ)` and any ordered pair `(w_1,w_2)` in `W`
+with Gram matrix `G_A`, formula (H-1.1) gives a sublattice with Gram `J`.
+It is automatically primitive and splits off integrally.  Thus, for fixed
+`A`, (H-1.1) is a bijection between ordered representations of `G_A` in `W`
+and ordered embedded copies `U'` having cross-pairing matrix `A`.
+
+Put `B=<w_1,w_2>`.  If `G_A` is positive definite, equivalently
+`rank(U+U')=4`, then
+
+```text
+K = W intersect U'^perp(-1) = B^perp in W,
+C = K^perp in W = saturation_W(B).                  (H-1.3)
+```
+
+Consequently, if `m=[C:B]`, then
+
+```text
+det(G_A) = m^2*det(C).                               (H-1.4)
+```
+
+The reverse projection has cross matrix `A^t` and raw positive Gram
+`A*J*A^t-J`; its saturation is the bridge on the `W'=U'^perp(-1)` side.
+When `G_A` has rank below two, the same projection identities hold, but this
+is a degenerate relative position and there is no rank-two bridge.
+
+#### Proof
+
+Write the `U`-coordinate column of `u'_j` as `c_j`.  Pairing with the fixed
+basis gives `J*c_j=A_(bullet j)`, hence `c_j=J*A_(bullet j)`.  The `U` part
+therefore has Gram
+
+```text
+(J*A)^t*J*(J*A)=A^t*J*A.
+```
+
+Since the full Gram is `J` and `W(-1)` has the negative of the form on `W`,
+subtraction gives (H-1.2).  The converse is the same calculation backwards.
+The resulting `U'` is unimodular.  Orthogonal projection to `U'` is integral,
+so `L=U' direct_sum U'^perp`; in particular the embedding is primitive.
+
+For `x in W`, equation (H-1.1) gives
+
+```text
+<x,u'_j>_L = -(x,w_j)_W.
+```
+
+This proves the first equality in (H-1.3).  Positive definiteness of `G_A`
+makes `B` rank two.  Taking the orthogonal complement of `K` over `QQ` gives
+`B tensor QQ`, and intersecting back with `W` is exactly the saturation of
+`B`.  The determinant-index identity is Lemma B1. QED.
+
+For elliptic markings
+
+```text
+u_1=F,       u_2=O+F,
+u'_1=F',     u'_2=O'+F',
+```
+
+the cross matrix is exactly
+
+```text
+    [ d       d+s       ]
+A = [ d+t     d+s+t+z   ],                          (H-1.5)
+```
+
+where
+
+```text
+d=F.F',       s=F.O',       t=O.F',       z=O.O'.
+```
+
+This interpretation requires `O=u_2-u_1` and `O'=u'_2-u'_1` to be the
+actual effective zero curves.  An arbitrary unimodular splitting mate still
+satisfies (H-1.1)--(H-1.4), but its derived `(-2)` class can be a chamber
+pseudo-zero; then `s,t,z` are lattice intersections rather than physical
+compiler degrees.
+
+The opt-in exact replay in
+[`certify_integral_rank_transfer_bridge_reglue.sage`](scripts/certify_integral_rank_transfer_bridge_reglue.sage)
+checks (H-1.1)--(H-1.4) in both orientations on all 42 stored H3, Q80,
+NS0024, and Golay-720 clicks.  It recovers every stored old-fibre degree from
+`A_11` and recovers each stored bridge as the saturation of the two projected
+vectors.  All 84 oriented projected pairs happen to be saturated (`m=1`), so
+these controls verify the square-index law but do not exhibit a nontrivial
+index.  Some Q80 transported mates give negative values among `s,t,z`, which
+is an exact warning that the 42-edge lattice ledger does not always carry an
+equation-effective zero.  The generated record is
+[`elkies-k3-relative-u-bridge-lifting-regression-v1.json`](../artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json).
+
+#### Corollary H-1a: bounded relative-marking completeness
+
+Fix finite sets of allowed values for
+
+```text
+F.F',       F.O',       O.F',       O.O'.
+```
+
+Then there are finitely many matrices (H-1.5).  For each matrix, there are
+finitely many ordered representations of `G_A` in `W`, because each `w_j`
+lies on one fixed norm shell of the positive-definite lattice.  Formula
+(H-1.1) therefore gives a terminating complete enumeration of all ordered
+`U'` in the declared intersection box.  For every output one can exactly:
+
+1. construct the primitive `U'` and its full integral marking;
+2. compute `W'=U'^perp(-1)`, its roots, and its saturated bridge data;
+3. use Shioda--Tate to determine MW rank once `rho` and the fibre roots are
+   certified;
+4. test integral isometry against a declared foundry target;
+5. Weyl-reduce `F'`, run the finite horizontal-wall test of Proposition C2,
+   and audit whether `O'` is an effective zero;
+6. retain the exact marking for the conditional equation compiler of
+   Theorem F.
+
+The same conclusion holds for a declared physical cost function only when a
+cost bound implies a computable finite set of the four intersection tuples.
+This coercivity hypothesis is essential: a bound on resolved-RR dimension,
+coefficient height, or another downstream score does not by itself bound
+`s,t,z`.  The result is completeness in the declared relative-marking box,
+not global finiteness of literal `U` embeddings, an equation construction, or
+a universal compiler-cost bound.
+
+The relative projection is elementary lattice linear algebra.  Its geometric
+use relies on the standard correspondence between Jacobian elliptic
+fibrations and primitive `U` embeddings, while primitivity, overlattices, and
+saturation are governed by Nikulin's discriminant-form formalism cited below.
+
 ### Theorem H: bridge-core root transfer
 
 Let `L` be a nondegenerate even integral lattice and let `U_0,U_1` be copies
@@ -2018,9 +2173,9 @@ masked support determines which support mutations are reachable.  The
 failure of count-only and support-only archives on H3/Q80 shows that the next
 classifier must retain more of `Sigma_2` or actual core isometry information.
 
-### Theorem H0i: masked-witness survival and defect-directed Q80 completion
+### Theorem H0i: masked-witness survival and the Q80 route to the alternate frame
 
-<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 b4f8981a10f12384 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 80de8b6727cd3409 -->
 
 Let `K` be integral, let `p` be a good prime, and let `ell` be an isotropic
 line in `K/pK` represented by `y`.  Write its Kneser neighbour as
@@ -2081,8 +2236,31 @@ so the first three steps are genuine defect replacement and the fourth is
 annihilation.  Combined with the eight-step canonical-seed prefix of H0h,
 this gives a twelve-step exact construction of a new rootless rank-15 Q80
 core.  Its class-2 graph completion has rank 17, determinant 948, minimum
-four, no roots, and the target discriminant form.  It is not integrally
-isometric to the previously declared Q80 target frame.
+four, no roots, and the target local genus.  Direct comparison with both
+mass-complete rootless controls identifies it exactly: it has 1,313
+norm-four pairs, automorphism-group order four, is not integrally isometric
+to published R17, and is integrally isometric to the alternate Q80 frame.
+An explicit determinant-minus-one integral isometry is stored in the
+certificate.
+
+This also resolves an ambiguity in the earlier wording.  The
+`declared_target_frame` constructed by the Q80 corridor preparation is the
+published R17 control, not the alternate Q80 control.  Its failed isometry
+test was therefore already pointing to the other class.  Independently of
+the compressed discriminant-form key, Sage's exact genus machinery gives
+the same signature `(17,0)` and local symbols for the completion and both
+controls:
+
+```text
+2-adic:    1^-16:[4^1]_1
+3-adic:    1^-16 3^-1
+79-adic:   1^16 79^-1
+```
+
+Together with the mass-complete determinant-948 `J2` classification, this
+promotes the construction from an unnamed completion to an explicit core
+flow from the Q80 near-miss region around the published target to the other
+rootless class, the alternate Q80 frame.
 
 The short checker
 [`certify_integral_rank_transfer_q80_defect_completion.sage`](scripts/certify_integral_rank_transfer_q80_defect_completion.sage)
@@ -2100,6 +2278,320 @@ It also shows why defect cardinality and occupied support are insufficient:
 neighbour reachability depends on the pairings of the individual physical
 witnesses with isotropic lines.  No monotone scalar descent, universal path,
 neighbour-graph completeness, or speedup theorem follows.
+
+### Theorem H0i.1: complete defect birth--death law
+
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH a755a3956c4c97cb -->
+
+Retain the notation of Theorem H0i, and now assume that `K` is positive
+definite and even, that `p` is odd and does not divide `det(K)`, and that the
+chosen lift `y` of the nonzero isotropic line satisfies
+
+```text
+y^2 = 0 mod 2*p^2.
+```
+
+Put
+
+```text
+K_y dual = {x in K dual : <x,y> = 0 mod p}.
+```
+
+Then there is a disjoint coset decomposition
+
+```text
+K_ell dual
+  = disjoint_union over 0 <= j < p of (K_y dual + j*y/p).       (H0i.3)
+```
+
+In particular every old survivor is in the `j=0` layer, and every vector in
+a nonzero layer is new relative to `K dual`.  Its norm is
+
+```text
+(x+j*y/p)^2
+  = x^2 + 2*j*<x,y>/p + j^2*y^2/p^2.                           (H0i.4)
+```
+
+#### Proof
+
+Theorem H0i identifies
+
+```text
+K_y dual = K dual intersect K_ell dual.
+```
+
+The pairing map `K dual -> Z/p`, `x |-> <x,y>`, is onto.  Indeed, because
+`p` does not divide `det(K)`, the pairing on `K/pK` is nondegenerate, and
+`y mod p` is nonzero.  Hence `K_y dual` has index `p` in `K dual`.
+
+The vector `y/p` belongs to `K_ell dual`: it pairs integrally with `M` by
+the definition of `M`, and its pairing with the remaining generator `y/p`
+is integral because `y^2` is divisible by `p^2`.  Moreover `p*(y/p)=y`
+belongs to `K_y dual`, while `y/p` does not belong to `K dual`; otherwise
+`y mod p` would lie in the radical of `K/pK`.  Thus `y/p` has exact order
+`p` modulo `K_y dual`.
+
+Finally `K` and its `p`-neighbour have the same determinant.  Their duals
+therefore have the same covolume, so the index of `K_y dual` in
+`K_ell dual` is also `p`.  The `p` displayed cosets generated by `y/p` are
+distinct and exhaust the child dual.  Expanding the square gives (H0i.4).
+QED.
+
+There is a canonical prime-to-`p` identification of discriminant groups
+
+```text
+iota: A_(K_ell) -> A_K,
+iota(v mod K_ell) = p^(-1)*(p*v mod K),                         (H0i.5)
+```
+
+where multiplication by `p` is invertible on `A_K`.  Formula (H0i.3) makes
+this concrete: if `v=x+j*y/p`, then `iota(v)=[x]`.  Thus the layer shift does
+not change the discriminant label under `iota`.
+
+This gives an exact finite transition operator, but its input must retain the
+physical lattice and the line, not only the abstract counted signature
+`Sigma_2(K)`.  For every class `a in A_K` and `0 <= mu <= 2`,
+
+```text
+theta_(K_ell)(iota^(-1)(a),mu)
+  = sum over 0 <= j < p of
+      #{x in K_y dual : [x]=a and (x+j*y/p)^2=mu}.              (H0i.6)
+```
+
+Every set on the right is finite by positive definiteness and is an affine
+CVP query.  An implementation tailored to a reverse mask can work in `M`
+instead.  Choose a representative `r` of `a` and one `k_0 in K` satisfying
+
+```text
+<r+k_0,y> = 0 mod p.
+```
+
+The vectors in the requested child cell are the disjoint union
+
+```text
+disjoint_union over 0 <= j < p of
+  {v in M+r+k_0+j*y/p : v^2=mu}.                               (H0i.7)
+```
+
+Consequently a line gives a zero-defect child exactly when both conditions
+hold:
+
+1. it is nonorthogonal modulo `p` to every current physical forbidden
+   witness, equivalently every forbidden `j=0` query is empty;
+2. every forbidden query in the layers `j=1,...,p-1` is empty.
+
+The checker
+[`certify_integral_rank_transfer_q80_defect_birth_death.sage`](scripts/certify_integral_rank_transfer_q80_defect_birth_death.sage)
+performs these affine queries before constructing each of the four stored Q80
+children.  It also evaluates the full sum (H0i.6): the four child profiles
+contain respectively `10,219`, `10,201`, `10,287`, and `10,121` dual vectors
+through norm two in `5,377`, `5,435`, `5,397`, and `5,485` occupied theta
+cells.  Independent child-dual enumeration then gives exactly the same full
+profiles and the same physical forbidden vectors.  The predicted
+witness-count regression is
+
+```text
+4 -> 6 -> 4 -> 4 -> 0,
+```
+
+and the first three replacements occur entirely in nonzero affine layers.
+The exact record is
+[`elkies-k3-integral-rank-transfer-q80-defect-birth-death-v1.json`](../artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-birth-death-v1.json).
+
+This proves the transition law and the strong zero-defect criterion.  It does
+not make `Sigma_2(K)` without physical representatives a complete state, and
+it does not by itself prove that separate layer queries are faster than
+forming a child Gram matrix and querying its mask directly.  Runtime is an
+implementation question, not a consequence of (H0i.3).
+
+### Corollary H0j: the NS0024 completed-core path realizes ranks `4,12,12,17`
+
+<!-- status-consumer: EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER 16b64051fb648d66 -->
+
+Let `S` be the determinant-950 Picard-rank-19 Neron--Severi lattice
+`NS0024`.  Complete the canonical rank-15 core and its three exact
+good-prime Kneser neighbours with the order-191 binary bridge class 4.  In
+the successive core bases the integral graph multipliers may be chosen as
+
+```text
+59, 50, 76, 83
+```
+
+(with sign-paired alternatives `132,141,115,108`).  The exact core and
+completed-frame profiles are
+
+| stage | incoming core prime | core root rank/count | completed roots | completed root rank | MW rank |
+| --- | ---: | ---: | --- | ---: | ---: |
+| 0 | -- | `13/280` | `D5+E8` | 13 | 4 |
+| 1 | 17 | `5/12` | `3A1+A2` | 5 | 12 |
+| 2 | 13 | `0/0` | `3A1+A2` | 5 | 12 |
+| 3 | 7 | `0/0` | rootless | 0 | 17 |
+
+Every completed frame has determinant 950 and discriminant form
+anti-isometric to `q_S`.  Theorem H2 therefore realizes it as the positive
+frame of a primitive hyperbolic-plane embedding in `S`, at `O(S)/J2` level.
+After Weyl reduction, Theorem C gives the corresponding Jacobian fibration.
+Theorem A then gives
+
+```text
+rank MW = 19 - 2 - rank R = 17 - rank R,
+```
+
+so the Mordell--Weil ranks are exactly
+
+```text
+4 -> 12 -> 12 -> 17,
+```
+
+with successive mutations `+8,0,+5`.
+
+This path separates the two mechanisms in the glue calculus.  At stage 2
+the core is already rootless, but the completed frame still has twelve
+roots.  Since roots of the core embed as the zero glue coset, all twelve
+must lie in nonzero graph-glue cosets.  The rank plateau is therefore exact:
+annihilating the remaining core roots did not increase MW rank because roots
+were present in the completion glue.  The final step keeps the core rootless
+while removing those glue-coset roots, and hence creates the last five MW
+directions.  The physical-witness survival criterion of Theorem H0i is the
+local transition law controlling such removals; Corollaries H0 and H0c turn
+the surviving decorated cosets into the completed root system, and Theorem A
+turns its rank into MW rank.
+
+The checker
+[`certify_ns0024_new_rootless_source_route.sage`](scripts/certify_ns0024_new_rootless_source_route.sage)
+replays all four completions, verifies the core and completed root profiles,
+and checks every determinant and discriminant form.  Its exact record is
+[`elkies-k3-ns0024-new-rootless-source-route-v1.json`](../artifacts/generated-results/elkies-k3-ns0024-new-rootless-source-route-v1.json).
+
+The primes `17,13,7` are core Kneser-neighbour primes, not elliptic-neighbour
+degrees.  This corollary proves the ranks and existence of the four
+fibrations over a complex K3 with Neron--Severi lattice `S`; it does not give
+a marked elliptic-neighbour corridor, equations, rational maps, a field of
+definition, or a universal monotone rank law.
+
+### Theorem H0k: metric physical witnesses transfer the full root system
+
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE d32b35b66a35627c -->
+
+Let `K,C` be positive-definite even integral lattices, let
+
+```text
+H subset A_K direct_sum A_C
+```
+
+be isotropic, and let `W_H` be the corresponding overlattice of `K+C`.  Define
+the finite set of physical completion witnesses
+
+```text
+Omega_2(K,C,H)
+ = {(k,c) in (K dual)+(C dual) :
+      (k mod K,c mod C) in H and k^2+c^2=2}.
+```
+
+For two witnesses `r=(k,c)` and `r'=(k',c')`, put
+
+```text
+g(r,r')=<k,k'>+<c,c'>.                              (H0k.1)
+```
+
+Then `Omega_2(K,C,H)=Phi(W_H)`, and its complete matrix `g` determines the
+signed norm-two root system as an abstract metric set.  In particular it
+determines:
+
+1. the complete labelled root graph;
+2. the orthogonal ADE decomposition and root rank;
+3. the root lattice `R=<Phi(W_H)>`, its component and total discriminants,
+   and its discriminant form;
+4. the finite list of *possible* even root-overlattice, hence torsion-glue,
+   subgroups, namely the isotropic subgroups of `A_R` which pass the relevant
+   no-new-root test.
+
+If the signature is **marked**, meaning that it also retains the coordinates
+of every physical witness in one integral basis of `W_H`, then it additionally
+determines
+
+```text
+Rbar=(R tensor QQ) intersect W_H,
+H_root=Rbar/R,
+```
+
+including the invariant factors and exact index.  For a Jacobian elliptic
+fibration with `NS=U direct_sum W_H(-1)`, this quotient is exactly
+`MW_tors`.  Thus a marked metric physical-witness signature determines the
+primitive closure and actual torsion contribution, while the unmarked metric
+signature determines only the possible torsion glue.  Rootlessness is the
+case `Omega_2=empty`.
+
+#### Proof
+
+Nikulin's overlattice correspondence writes `W_H` as the disjoint union of
+the cosets `(K+k)+(C+c)` selected by `H`.  Orthogonality gives
+
+```text
+(k+c)^2=k^2+c^2,
+```
+
+so the displayed witness set is literally the complete norm-two set of
+`W_H`; polarization gives (H0k.1).  In an integral lattice the reflection
+
+```text
+x |-> x-<x,r>r
+```
+
+in a norm-two vector preserves the lattice and permutes its norm-two vectors.
+Hence `Phi(W_H)` is a reduced simply-laced crystallographic root system.
+The connected components of its nonorthogonality graph are its irreducible
+components, so the finite ADE classification recovers their types.  The rank
+is the rank of `g`; choosing any integral basis of the span of the roots gives
+the root Gram matrix, its determinant and discriminant form.  Nikulin's same
+correspondence classifies its even finite-index extensions by isotropic
+subgroups of `A_R`, with the norm-two witness test deciding which extensions
+add roots.
+
+For the marked assertion, place the root-coordinate rows in a matrix in the
+fixed `W_H` basis.  Smith saturation computes their primitive row span
+`Rbar`, and Smith normal form computes `Rbar/R`.  Finally Shioda's canonical
+identification
+
+```text
+MW = NS/(U+R) = W_H/R
+```
+
+shows that the torsion subgroup is the torsion of `W_H/R`, namely `Rbar/R`.
+QED.
+
+The word **marked** cannot be dropped from the primitive-closure conclusion.
+The abstract root lattices `A1^24` and the Niemeier lattice `N(24A1)` have
+the same complete metric root system `24A1`.  In the first ambient lattice
+the root lattice is already primitive; in `N(24A1)` its primitive closure is
+the whole Niemeier lattice and the quotient is the binary Golay code
+`(Z/2)^12`.  Pairwise root products therefore cannot recover ambient
+saturation or exact torsion without the witness embedding.  This is also why
+the foundry state must retain physical coordinates rather than only a
+canonical ADE label.
+
+The exact checker
+[`certify_integral_rank_transfer_root_system_signature.sage`](scripts/certify_integral_rank_transfer_root_system_signature.sage)
+constructs the marked signature on all four NS0024 completed-core stages.  It
+recovers
+
+```text
+D5+E8 -> 3A1+A2 -> 3A1+A2 -> rootless,
+```
+
+with root ranks `13,5,5,0`, root discriminants `4,24,24,1`, primitive roots,
+and trivial torsion.  At the third stage the core is rootless while the twelve
+completion roots occupy five nonzero order-191 graph-glue labels, so the
+pairwise metric reconstructs root gluing which zero support alone cannot see.
+The same classifier independently recognizes the existing Q80 route controls
+`4A1` and `A1`, of root discriminants `16` and `2`.  The generated record,
+including every physical `k+c` root line and every pairwise inner product, is
+[`elkies-k3-integral-rank-transfer-root-system-signature-v1.json`](../artifacts/generated-results/elkies-k3-integral-rank-transfer-root-system-signature-v1.json).
+
+This theorem supplies an exact acceptance and targeting signature.  It does
+not prove that a prescribed ADE signature is realized in a forced core genus,
+that a neighbour path reaches it, or that its fibration has an equation or a
+specified field of definition.
 
 ### Negative experiment H0: the orthogonal split is not a useful predictor
 
@@ -2752,6 +3244,10 @@ once.
   [*Integral symmetric bilinear forms and some of their applications*](https://www.mathnet.ru/eng/im1677),
   especially Proposition 1.4.1 for even overlattices and the indefinite
   uniqueness results used in Theorem H2.
+- J. H. Conway and N. J. A. Sloane,
+  [*Low-dimensional lattices. I. Quadratic forms of small determinant*](https://doi.org/10.1016/0022-314X(82)90084-1),
+  for the Niemeier root systems and glue-word table used in the `24A1`
+  marked-embedding counterexample of Theorem H0k.
 - G. Chenevier,
   [*Statistics for Kneser p-neighbors*](https://arxiv.org/abs/2104.06846),
   for good-prime neighbour parametrization and the equidistribution theorem

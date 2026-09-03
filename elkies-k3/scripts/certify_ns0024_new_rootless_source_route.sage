@@ -165,6 +165,7 @@ def main():
         completed_frames(value, bridge, prepared["order"], base, core)
         for value in cores
     ]
+    expected_core_roots = ((13, 280, 4), (5, 12, 24), (0, 0, 1), (0, 0, 1))
     expected_roots = ((13, 280, 4), (5, 12, 24), (5, 12, 24), (0, 0, 1))
     completed = []
     selected_multipliers = []
@@ -184,16 +185,25 @@ def main():
         assert core["discriminant_form_key"](child) == core["discriminant_form_key"](
             prepared["target_frame"]
         )
+        core_data = root_data(cores[index])
+        assert core_data == expected_core_roots[index]
         data = root_data(child)
+        mw_rank = 17 - data[0]
+        previous_mw_rank = None if index == 0 else 17 - expected_roots[index - 1][0]
         completed_rows.append(
             {
                 "stage": index,
                 "incoming_core_neighbor_prime": None if index == 0 else PATH[index - 1][0],
                 "root_type": root_name(data),
+                "core_root_rank": core_data[0],
+                "core_signed_root_count": core_data[1],
                 "root_rank": data[0],
                 "signed_root_count": data[1],
                 "root_determinant": data[2],
-                "mw_rank_for_rho_19": 17 - data[0],
+                "mw_rank_for_rho_19": mw_rank,
+                "mw_rank_change_from_previous": (
+                    None if previous_mw_rank is None else mw_rank - previous_mw_rank
+                ),
                 "determinant": int(child.det()),
                 "discriminant_form_matches_ns0024": True,
                 "glue_multiplier": selected_multipliers[index],

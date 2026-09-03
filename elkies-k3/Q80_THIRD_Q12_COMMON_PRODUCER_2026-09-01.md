@@ -779,7 +779,7 @@ field/base normalization, rather than merely increase the same LLL modulus.
 The order remains
 `j -> (c4^3,Delta) -> minimal Jacobian -> birational maps`.
 
-<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR 163251202819137c -->
+<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR 957479f39bedd57b -->
 
 ## 2026-09-03 exact conductor continuation
 

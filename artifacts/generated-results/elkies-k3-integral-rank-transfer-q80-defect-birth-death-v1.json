@@ -1,0 +1,789 @@
+{
+  "dual_layer_theorem": {
+    "affine_cell_query": "For a parent class representative r and k0 solving <r+k0,y>=0 mod p, query M+r+k0+j*y/p at the requested norm for j=0,...,p-1.",
+    "canonical_discriminant_identification": "The child class of x+j*y/p maps to the parent class of x; equivalently [v] maps to p^(-1)[p*v] because p is prime to det(K).",
+    "statement": "For K_y^dual={x in K^dual:<x,y>=0 mod p}, K_l^dual is the disjoint union of K_y^dual+j*y/p for 0<=j<p."
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json": "1d6e18fe4663a832a9a581c6ba1de670c1226852825f7017de68bdd3bdc674b0",
+    "artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json": "794e786a99aeb8590e97dc8d43181e17ffd2ec416e2cb11996cf506488302d0a",
+    "elkies-k3/scripts/certify_integral_rank_transfer_core_generation.sage": "70ed2acf14b1bb1aa84d018a7d1b0152a45aa60c12a769e0ea440e770f5a7466",
+    "elkies-k3/scripts/certify_integral_rank_transfer_masked_core_controls.sage": "a0a4013f61ec8418df451b842dbd3621617f90883a5b9e2141ab56f73d39c644",
+    "elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_completion.sage": "e4f8bbe5b506151f184858fb67898deb48f6e63a7500cf88e99a7ac3af1f4fda",
+    "elkies-k3/scripts/certify_integral_rank_transfer_reverse_theta_masks.sage": "ef7e990fc8a42d4d8dc7ffea7c65f9205d85968964495e8bfb385e0ce099d87f",
+    "elkies-k3/scripts/generate_integral_rank_transfer_masked_core_neighbors.sage": "076a5d19242d494b5364a224d2c123bf0e947bc81e839cf1cfb2dd6cb2a2818c",
+    "elkies-k3/scripts/search_integral_rank_transfer_q80_defect_neighbors.sage": "2def8f562b08196c42c39728959a732a429e08c98db4ffab8269be117ca8951a"
+  },
+  "physical_witness_count_regression": [
+    4,
+    6,
+    4,
+    4,
+    0
+  ],
+  "proof_boundary": "The layer decomposition and finite affine-CVP transition are general for positive even good-prime neighbours. The abstract counted signature Sigma_2(K) alone is not sufficient: the line pairings and physical representatives, or an equivalent affine CVP oracle for K, are required. This checker proves exact outcome prediction on the four stored Q80 transitions, not a uniform running-time speedup.",
+  "reproduce": "sage -python elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_birth_death.sage --check",
+  "schema": "elkies-k3.integral-rank-transfer-q80-defect-birth-death.v1",
+  "status": "PASS_EXACT_Q80_DEFECT_BIRTH_DEATH_LAYERS",
+  "strong_acceptance_criterion": {
+    "equivalence_checked_on_all_transitions": true,
+    "no_birth": "Every requested j=1,...,p-1 affine layer is empty.",
+    "old_death": "The line is nonorthogonal to every current physical forbidden witness; equivalently every requested j=0 layer is empty."
+  },
+  "transitions": [
+    {
+      "adjusted_isotropic_lift": [
+        127,
+        7,
+        6,
+        11,
+        8,
+        11,
+        4,
+        11,
+        7,
+        10,
+        1,
+        3,
+        6,
+        3,
+        10
+      ],
+      "full_sigma2_transition": {
+        "canonical_profile_sha256": "6e9fb840dcb43c7ffb23d2bd4661a8014fbe1e3f10da36f4081034d113607195",
+        "dual_vectors_through_norm_two": 10219,
+        "equals_materialized_child": true,
+        "theta_cells": 5377,
+        "vectors_by_affine_layer": [
+          823,
+          776,
+          766,
+          778,
+          767,
+          792,
+          819,
+          819,
+          792,
+          767,
+          778,
+          766,
+          776
+        ]
+      },
+      "j_zero_layer_empty_on_reverse_mask": true,
+      "lift_norm_divided_by_2p2": 242,
+      "line": [
+        10,
+        7,
+        6,
+        11,
+        8,
+        11,
+        4,
+        11,
+        7,
+        10,
+        1,
+        3,
+        6,
+        3,
+        10
+      ],
+      "nonzero_parent_pairings": [
+        8,
+        7,
+        5,
+        6
+      ],
+      "occupied_affine_layers": [
+        {
+          "core_discriminant_class": [
+            "16/23",
+            "17/23",
+            "3/23",
+            "13/23",
+            "17/23",
+            "12/23",
+            "12/23",
+            "0",
+            "6/23",
+            "16/23",
+            "8/23",
+            "3/23",
+            "9/23",
+            "10/23",
+            "11/23"
+          ],
+          "graph_label": 4,
+          "occupied_layers": [
+            {
+              "layer": 2,
+              "physical_witness_count": 1
+            },
+            {
+              "layer": 7,
+              "physical_witness_count": 2
+            }
+          ],
+          "required_core_norm": "42/23",
+          "requirement_index": 4
+        },
+        {
+          "core_discriminant_class": [
+            "7/23",
+            "6/23",
+            "20/23",
+            "10/23",
+            "6/23",
+            "11/23",
+            "11/23",
+            "0",
+            "17/23",
+            "7/23",
+            "15/23",
+            "20/23",
+            "14/23",
+            "13/23",
+            "12/23"
+          ],
+          "graph_label": 19,
+          "occupied_layers": [
+            {
+              "layer": 6,
+              "physical_witness_count": 2
+            },
+            {
+              "layer": 11,
+              "physical_witness_count": 1
+            }
+          ],
+          "required_core_norm": "42/23",
+          "requirement_index": 17
+        }
+      ],
+      "parent_occupied_cells": 2,
+      "parent_physical_witnesses": 4,
+      "predicted_before_child_construction": true,
+      "predicted_child_occupied_cells": 2,
+      "predicted_child_physical_witnesses": 6,
+      "predicted_witnesses_in_parent_ambient_coordinates": [
+        [
+          "-70/299",
+          "-244/299",
+          "-16/299",
+          "-77/299",
+          "9/299",
+          "-64/299",
+          "-41/299",
+          "4/13",
+          "-101/299",
+          "229/299",
+          "149/299",
+          "122/299",
+          "-94/299",
+          "31/299",
+          "-5/299"
+        ],
+        [
+          "-24/299",
+          "147/299",
+          "191/299",
+          "153/299",
+          "-14/299",
+          "-133/299",
+          "-202/299",
+          "1/13",
+          "-9/299",
+          "-24/299",
+          "34/299",
+          "76/299",
+          "113/299",
+          "-15/299",
+          "41/299"
+        ],
+        [
+          "-24/299",
+          "147/299",
+          "191/299",
+          "153/299",
+          "285/299",
+          "166/299",
+          "97/299",
+          "1/13",
+          "-9/299",
+          "-24/299",
+          "34/299",
+          "76/299",
+          "113/299",
+          "-15/299",
+          "41/299"
+        ],
+        [
+          "24/299",
+          "-147/299",
+          "-191/299",
+          "-153/299",
+          "-285/299",
+          "-166/299",
+          "-97/299",
+          "-1/13",
+          "9/299",
+          "24/299",
+          "-34/299",
+          "-76/299",
+          "-113/299",
+          "15/299",
+          "-41/299"
+        ],
+        [
+          "24/299",
+          "-147/299",
+          "-191/299",
+          "-153/299",
+          "14/299",
+          "133/299",
+          "202/299",
+          "-1/13",
+          "9/299",
+          "24/299",
+          "-34/299",
+          "-76/299",
+          "-113/299",
+          "15/299",
+          "-41/299"
+        ],
+        [
+          "70/299",
+          "244/299",
+          "16/299",
+          "77/299",
+          "-9/299",
+          "64/299",
+          "41/299",
+          "-4/13",
+          "101/299",
+          "-229/299",
+          "-149/299",
+          "-122/299",
+          "94/299",
+          "-31/299",
+          "5/299"
+        ]
+      ],
+      "prediction_equals_materialized_child": true,
+      "prime": 13,
+      "step_after_near_miss": 1
+    },
+    {
+      "adjusted_isotropic_lift": [
+        161,
+        2,
+        3,
+        1,
+        1,
+        0,
+        5,
+        2,
+        1,
+        8,
+        9,
+        3,
+        4,
+        3,
+        11
+      ],
+      "full_sigma2_transition": {
+        "canonical_profile_sha256": "6a362b3a366f5df182a5494e6df52a760b7f0c6ed738818be9909b809b2d3e78",
+        "dual_vectors_through_norm_two": 10201,
+        "equals_materialized_child": true,
+        "theta_cells": 5435,
+        "vectors_by_affine_layer": [
+          771,
+          805,
+          785,
+          765,
+          767,
+          790,
+          803,
+          803,
+          790,
+          767,
+          765,
+          785,
+          805
+        ]
+      },
+      "j_zero_layer_empty_on_reverse_mask": true,
+      "lift_norm_divided_by_2p2": 3343,
+      "line": [
+        5,
+        2,
+        3,
+        1,
+        1,
+        0,
+        5,
+        2,
+        1,
+        8,
+        9,
+        3,
+        4,
+        3,
+        11
+      ],
+      "nonzero_parent_pairings": [
+        8,
+        3,
+        12,
+        5,
+        10,
+        1
+      ],
+      "occupied_affine_layers": [
+        {
+          "core_discriminant_class": [
+            "1/23",
+            "8/23",
+            "11/23",
+            "2/23",
+            "13/23",
+            "1/23",
+            "10/23",
+            "12/23",
+            "20/23",
+            "0",
+            "13/23",
+            "18/23",
+            "17/23",
+            "2/23",
+            "9/23"
+          ],
+          "graph_label": 4,
+          "occupied_layers": [
+            {
+              "layer": 8,
+              "physical_witness_count": 1
+            },
+            {
+              "layer": 12,
+              "physical_witness_count": 1
+            }
+          ],
+          "required_core_norm": "42/23",
+          "requirement_index": 4
+        },
+        {
+          "core_discriminant_class": [
+            "22/23",
+            "15/23",
+            "12/23",
+            "21/23",
+            "10/23",
+            "22/23",
+            "13/23",
+            "11/23",
+            "3/23",
+            "0",
+            "10/23",
+            "5/23",
+            "6/23",
+            "21/23",
+            "14/23"
+          ],
+          "graph_label": 19,
+          "occupied_layers": [
+            {
+              "layer": 1,
+              "physical_witness_count": 1
+            },
+            {
+              "layer": 5,
+              "physical_witness_count": 1
+            }
+          ],
+          "required_core_norm": "42/23",
+          "requirement_index": 17
+        }
+      ],
+      "parent_occupied_cells": 2,
+      "parent_physical_witnesses": 6,
+      "predicted_before_child_construction": true,
+      "predicted_child_occupied_cells": 2,
+      "predicted_child_physical_witnesses": 4,
+      "predicted_witnesses_in_parent_ambient_coordinates": [
+        [
+          "-1991/299",
+          "540/299",
+          "1720/299",
+          "894/299",
+          "1050/299",
+          "68/23",
+          "583/299",
+          "787/299",
+          "361/299",
+          "8/13",
+          "636/299",
+          "1928/299",
+          "1665/299",
+          "1837/299",
+          "-5844/299"
+        ],
+        [
+          "-335/299",
+          "-173/299",
+          "202/299",
+          "89/299",
+          "245/299",
+          "22/23",
+          "146/299",
+          "373/299",
+          "-145/299",
+          "1/13",
+          "268/299",
+          "410/299",
+          "239/299",
+          "319/299",
+          "-1244/299"
+        ],
+        [
+          "335/299",
+          "173/299",
+          "-202/299",
+          "-89/299",
+          "-245/299",
+          "-22/23",
+          "-146/299",
+          "-373/299",
+          "145/299",
+          "-1/13",
+          "-268/299",
+          "-410/299",
+          "-239/299",
+          "-319/299",
+          "1244/299"
+        ],
+        [
+          "1991/299",
+          "-540/299",
+          "-1720/299",
+          "-894/299",
+          "-1050/299",
+          "-68/23",
+          "-583/299",
+          "-787/299",
+          "-361/299",
+          "-8/13",
+          "-636/299",
+          "-1928/299",
+          "-1665/299",
+          "-1837/299",
+          "5844/299"
+        ]
+      ],
+      "prediction_equals_materialized_child": true,
+      "prime": 13,
+      "step_after_near_miss": 2
+    },
+    {
+      "adjusted_isotropic_lift": [
+        151,
+        4,
+        1,
+        8,
+        8,
+        0,
+        4,
+        5,
+        6,
+        8,
+        6,
+        7,
+        0,
+        11,
+        7
+      ],
+      "full_sigma2_transition": {
+        "canonical_profile_sha256": "e6a2211aad8de608c92d6ccf3dd24d591a357bd07f21c5ef710e49f5115d043a",
+        "dual_vectors_through_norm_two": 10287,
+        "equals_materialized_child": true,
+        "theta_cells": 5397,
+        "vectors_by_affine_layer": [
+          769,
+          749,
+          782,
+          809,
+          805,
+          818,
+          796,
+          796,
+          818,
+          805,
+          809,
+          782,
+          749
+        ]
+      },
+      "j_zero_layer_empty_on_reverse_mask": true,
+      "lift_norm_divided_by_2p2": 5295650,
+      "line": [
+        8,
+        4,
+        1,
+        8,
+        8,
+        0,
+        4,
+        5,
+        6,
+        8,
+        6,
+        7,
+        0,
+        11,
+        7
+      ],
+      "nonzero_parent_pairings": [
+        2,
+        11,
+        11,
+        2
+      ],
+      "occupied_affine_layers": [
+        {
+          "core_discriminant_class": [
+            "19/23",
+            "2/23",
+            "0",
+            "16/23",
+            "2/23",
+            "5/23",
+            "22/23",
+            "22/23",
+            "14/23",
+            "9/23",
+            "7/23",
+            "12/23",
+            "9/23",
+            "1/23",
+            "9/23"
+          ],
+          "graph_label": 3,
+          "occupied_layers": [
+            {
+              "layer": 10,
+              "physical_witness_count": 1
+            },
+            {
+              "layer": 11,
+              "physical_witness_count": 1
+            }
+          ],
+          "required_core_norm": "38/23",
+          "requirement_index": 3
+        },
+        {
+          "core_discriminant_class": [
+            "4/23",
+            "21/23",
+            "0",
+            "7/23",
+            "21/23",
+            "18/23",
+            "1/23",
+            "1/23",
+            "9/23",
+            "14/23",
+            "16/23",
+            "11/23",
+            "14/23",
+            "22/23",
+            "14/23"
+          ],
+          "graph_label": 20,
+          "occupied_layers": [
+            {
+              "layer": 2,
+              "physical_witness_count": 1
+            },
+            {
+              "layer": 3,
+              "physical_witness_count": 1
+            }
+          ],
+          "required_core_norm": "38/23",
+          "requirement_index": 18
+        }
+      ],
+      "parent_occupied_cells": 2,
+      "parent_physical_witnesses": 4,
+      "predicted_before_child_construction": true,
+      "predicted_child_occupied_cells": 2,
+      "predicted_child_physical_witnesses": 4,
+      "predicted_witnesses_in_parent_ambient_coordinates": [
+        [
+          "-27686/299",
+          "6437/299",
+          "1094/13",
+          "17801/299",
+          "17983/299",
+          "64/23",
+          "2589/299",
+          "7419/299",
+          "17137/299",
+          "25965/299",
+          "15733/299",
+          "25581/299",
+          "1118/23",
+          "25609/299",
+          "-88598/299"
+        ],
+        [
+          "-23615/299",
+          "5931/299",
+          "939/13",
+          "15294/299",
+          "15476/299",
+          "64/23",
+          "2382/299",
+          "6039/299",
+          "14883/299",
+          "21963/299",
+          "13180/299",
+          "21556/299",
+          "957/23",
+          "21676/299",
+          "-75879/299"
+        ],
+        [
+          "23615/299",
+          "-5931/299",
+          "-939/13",
+          "-15294/299",
+          "-15476/299",
+          "-64/23",
+          "-2382/299",
+          "-6039/299",
+          "-14883/299",
+          "-21963/299",
+          "-13180/299",
+          "-21556/299",
+          "-957/23",
+          "-21676/299",
+          "75879/299"
+        ],
+        [
+          "27686/299",
+          "-6437/299",
+          "-1094/13",
+          "-17801/299",
+          "-17983/299",
+          "-64/23",
+          "-2589/299",
+          "-7419/299",
+          "-17137/299",
+          "-25965/299",
+          "-15733/299",
+          "-25581/299",
+          "-1118/23",
+          "-25609/299",
+          "88598/299"
+        ]
+      ],
+      "prediction_equals_materialized_child": true,
+      "prime": 13,
+      "step_after_near_miss": 3
+    },
+    {
+      "adjusted_isotropic_lift": [
+        49,
+        6,
+        3,
+        16,
+        15,
+        8,
+        1,
+        28,
+        26,
+        10,
+        6,
+        19,
+        13,
+        23,
+        24
+      ],
+      "full_sigma2_transition": {
+        "canonical_profile_sha256": "f98a87e71d378f7ef6d6cbcfa758ed95eb9e9f81f02206e0a28c898c58a20fbc",
+        "dual_vectors_through_norm_two": 10121,
+        "equals_materialized_child": true,
+        "theta_cells": 5485,
+        "vectors_by_affine_layer": [
+          357,
+          356,
+          348,
+          343,
+          337,
+          351,
+          364,
+          344,
+          341,
+          355,
+          349,
+          341,
+          350,
+          355,
+          348,
+          348,
+          355,
+          350,
+          341,
+          349,
+          355,
+          341,
+          344,
+          364,
+          351,
+          337,
+          343,
+          348,
+          356
+        ]
+      },
+      "j_zero_layer_empty_on_reverse_mask": true,
+      "lift_norm_divided_by_2p2": 300969042,
+      "line": [
+        20,
+        6,
+        3,
+        16,
+        15,
+        8,
+        1,
+        28,
+        26,
+        10,
+        6,
+        19,
+        13,
+        23,
+        24
+      ],
+      "nonzero_parent_pairings": [
+        7,
+        11,
+        22,
+        18
+      ],
+      "occupied_affine_layers": [],
+      "parent_occupied_cells": 2,
+      "parent_physical_witnesses": 4,
+      "predicted_before_child_construction": true,
+      "predicted_child_occupied_cells": 0,
+      "predicted_child_physical_witnesses": 0,
+      "predicted_witnesses_in_parent_ambient_coordinates": [],
+      "prediction_equals_materialized_child": true,
+      "prime": 29,
+      "step_after_near_miss": 4
+    }
+  ]
+}

@@ -2835,7 +2835,7 @@ bits.  Rational projective normalization reverses this to a small 10,888-bit
 content.  This is not the large compression required for reconstruction and
 does not test quadratic-field, base-`PGL2`, or integral-ideal normalization.
 
-<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR 163251202819137c -->
+<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR 957479f39bedd57b -->
 
 Certify the first exact generic conductor factor of the third-q12
 discriminant and replay the retained quartic-denominator candidate:
@@ -2859,6 +2859,8 @@ still candidate data: exact characteristic-zero recovery and division of the
 quartic square, the Jacobian, and the maps remain open.  See
 [`elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md`](elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md).
 
+<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-SPECIALIZED-QUARTICS 725664f9e36ae8a7 -->
+
 Continue the exact quartic-square recovery with a resumable Brown
 subresultant sequence:
 
@@ -2872,8 +2874,11 @@ subresultant sequence:
 This long command writes its latest exact state atomically under
 `artifacts/local/elkies-k3/` and resumes it by default.  Use
 `--restart-subresultant-prs` only when intentionally discarding compatibility
-with the retained state.  Until the command finishes its exact `Q^2` division,
-the quartic factors remain open.
+with the retained state.  The completed command proves at `V=0` that the
+linear-stripped monic discriminant is `Q^2*D` for exact monic quartics `Q,D`.
+Replay the completed checkpoint, exact division, and 18 MB artifact by adding
+`--check`.  Generic recovery over the full `V`-line, the Jacobian, and its maps
+remain open.
 
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J2-COMPLETE c6f054948b04b507 -->
 <!-- status-consumer: EC-K3-H3-ROOTLESS-J1-UNIFORM-BOUND b71330a75ad2c9ad -->
@@ -18252,7 +18257,9 @@ sum equals the exact genus mass
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MODULAR-DIMENSION-SIEVE 9622c6eb4d8522bd -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-GENERATION 9a7a1e01cb22f62e -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-CONTROLS 3cbde45fb2cb0f17 -->
-<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 b4f8981a10f12384 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 80de8b6727cd3409 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH a755a3956c4c97cb -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE d32b35b66a35627c -->
 
 Generate and byte-check the equation-free census, then replay the local
 bridge and involution graph-glue theorems with
@@ -18268,6 +18275,8 @@ sage -python elkies-k3/scripts/certify_integral_rank_transfer_weil_compression.s
 sage -python elkies-k3/scripts/generate_integral_rank_transfer_masked_core_neighbors.sage --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_masked_core_controls.sage --check
 sage -python elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_completion.sage --check
+sage -python elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_birth_death.sage --check
+sage -python elkies-k3/scripts/certify_integral_rank_transfer_root_system_signature.sage --check
 sage -python elkies-k3/scripts/certify_integral_character_glue_calculus.sage --check
 sage -python elkies-k3/scripts/certify_r17_norm12_103b2_mw_glue.sage \
   --skip-specialization-saturation --check
@@ -18374,8 +18383,10 @@ its good prime to every physical witness of the current defect.  The replay
 checks that all old witnesses leave the new dual lattice, recomputes the
 replacement witnesses, and verifies the sequence `4 -> 6 -> 4 -> 4 -> 0`.
 The resulting class-2 completion is a new rootless determinant-948 rank-17
-class with the target discriminant form.  Rerun the bounded discovery records
-with
+construction, but not a third rootless class: exact `qfisom` tests identify it
+with alternate Q80 and exclude published R17.  It has 1,313 norm-four pairs,
+automorphism-group order four, and the exact target local symbols at `2`, `3`,
+and `79`.  Rerun the bounded discovery records with
 
 ```bash
 sage -python elkies-k3/scripts/search_integral_rank_transfer_q80_defect_neighbors.sage --check
@@ -18385,6 +18396,28 @@ sage -python elkies-k3/scripts/search_integral_rank_transfer_q80_defect_beam.sag
 The first checks 10,000 one-step lines; the second runs the four-generation
 isometry-diverse directed beam.  Their sampling bounds are experiment fields,
 not completeness claims.
+The birth--death replay strengthens the survival law to a complete dual-layer
+transition.  For every stored line it first adjusts the isotropic lift modulo
+`p^2`, expands each reverse-mask cell into the `p` affine layers
+`M+r+k_0+j*y/p`, and predicts the child witnesses without a child Gram
+matrix.  It separately evaluates the full `Sigma_2` transition, covering
+about ten thousand dual vectors and 5,377--5,485 occupied theta cells per
+edge.  Only afterward does it materialize the neighbour; independent
+child-dual enumeration gives the same complete theta profile and physical
+vector set on all four edges and reproduces `4 -> 6 -> 4 -> 4 -> 0`.  This
+proves the exact transition and zero-defect criterion.  It does not prove that
+the counted abstract
+`Sigma_2` data alone suffice, or that the layered implementation is uniformly
+faster than direct child construction.
+The root-system signature replay then enumerates every physical completion
+root `k+c` on the four NS0024 stages and records all pairwise inner products.
+It recovers `D5+E8`, `3A1+A2`, `3A1+A2`, and rootless, together with root
+ranks, component discriminants, primitive closures, and torsion quotients.
+At the third stage the core is rootless but the twelve completed roots occupy
+five nonzero order-191 graph-glue labels.  The same metric classifier recovers
+the Q80 `4A1` and `A1` controls.  The marked coordinates, rather than the
+pairwise metric alone, certify primitive closure and exact Mordell--Weil
+torsion.
 The character replay exhausts the E6 `2+1` and `2+2` involution graphs after
 the declared factor-12 integral scaling.  The norm-twelve byte check reuses
 the pinned full saturation record; generating that artifact without the skip
@@ -18610,3 +18643,37 @@ All seven quotients have zero affine rational points in PARI's naive-height
 `300000` search, so there are no simultaneous splits in that bounded range.
 This does not determine the complete rational-point sets of the genus-three
 curves.
+
+### `0x103b2` hidden frame and pointed-cover rank control
+
+<!-- status-consumer: EC-K3-R17-NORM12-103B2-ISOTROPIC-FRAME 47f3a0eb7ee50bcb -->
+<!-- status-consumer: EC-K3-R17-POINTED-COVER-JACOBIAN-CONTROL-H10000 4bb087b3a1ebc684 -->
+
+Classify the primitive isotropic bisection class and compare its orthogonal
+frame with both certified determinant-948 rootless `J2` classes:
+
+```bash
+sage -python \
+  elkies-k3/scripts/classify_r17_103b2_isotropic_frame.sage
+sage -python \
+  elkies-k3/scripts/classify_r17_103b2_isotropic_frame.sage --check
+```
+
+The expected identification is `published-R17-J2-class`: the frame is
+rootless of rank 17 and determinant 948, isometric to published R17, and not
+isometric to the alternate Q80 frame.
+
+Run the exact `H=10000` point-map-relation control on the deterministic
+seeded sample of ten other pointed covers:
+
+```bash
+sage -python \
+  elkies-k3/scripts/control_pointed_cover_jacobian_ranks.sage
+sage -python \
+  elkies-k3/scripts/control_pointed_cover_jacobian_ranks.sage --check
+```
+
+Each control has only its two signed pointing points in the bounded PARI
+search, hence no nonbase image; the positive regression has 58 nonbase images
+of relation rank 17.  This is an exact bounded-search contrast, not an upper
+bound for any control Jacobian.

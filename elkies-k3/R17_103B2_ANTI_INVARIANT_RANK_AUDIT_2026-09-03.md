@@ -1,5 +1,8 @@
 # Anti-invariant rank audit for the R17 cover `0x103b2` — 2026-09-03
 
+<!-- status-consumer: EC-K3-R17-NORM12-103B2-ISOTROPIC-FRAME 47f3a0eb7ee50bcb -->
+<!-- status-consumer: EC-K3-R17-POINTED-COVER-JACOBIAN-CONTROL-H10000 4bb087b3a1ebc684 -->
+
 ## Outcome
 
 The actual anti-invariant rank is **not yet determined**. The exact result is
@@ -15,6 +18,82 @@ lower bound `17+1=18`; this audit does not license a `+2` mutation claim.
 
 No Magma calculation is used. All new exact arithmetic uses SageMath,
 Singular/msolve, C++, and rational reconstruction.
+
+## The hidden isotropic frame
+
+The lattice test behind the auxiliary genus-one curve is now exact.  In the
+pinned decomposition
+
+```text
+NS = U + R17(-1),
+```
+
+the norm-twelve trace representative
+
+```text
+w=(0,-1,1,1,-1,1,-1,0,1,1,0,1,1,-1,-1,0,-1)
+```
+
+gives the bisection class
+
+```text
+D_103b2=(3,2,w).
+```
+
+It satisfies
+
+```text
+D^2=0,  D.F=2,  D.O=1,  div(D)=1.
+```
+
+Splitting off an exact integral hyperbolic plane containing `D` leaves a
+positive rank-17 frame of determinant `948`.  Complete norm-two enumeration
+finds no roots.  PARI integral isometry testing identifies this frame with the
+published R17 `J2` class and rejects the certified alternate Q80 rootless
+frame.  Thus the bisection does hide a second rootless rank-17 fibration at
+the lattice level, but it is a new marking in the published frame class, not
+the alternate Q80 class.
+
+This gives a compelling geometric explanation for why the individual
+pointed-cover Jacobian exposes seventeen rational directions: the quartic is
+a member of the isotropic pencil `|D|`.  The certificate deliberately stops
+at the exact lattice/J2 statement.  It does not construct the second
+Weierstrass equation and its sections over `QQ`, identify its `J1` orbit under
+surface automorphisms, or improve the anti-invariant twist-rank upper bound.
+The replay and full determinant-one marking are in
+[`elkies-k3-r17-norm12-103b2-isotropic-frame-v1.json`](../artifacts/generated-results/elkies-k3-r17-norm12-103b2-isotropic-frame-v1.json).
+Its SHA-256 digest is
+`efbbebf23bc6608ce83cc0f0cb74947ceeaea6647af8e27343e18b24e4975b95`.
+
+## Ten-cover point-search control
+
+A deterministic uniform sample of ten covers from the 100 other pointed
+norm-eight members was run through the same bounded pipeline:
+
+```text
+PARI hyperellratpoints(H=10000)
+  -> exact pointed-quartic map
+  -> eclib Mordell--Weil relation reduction.
+```
+
+The seed was `0x103b2`, and the selected production indices were
+`4,17,19,25,27,30,55,67,75,96`.  Every control returned exactly the two signed
+points above its pointing parameter.  Those two points lie in the exceptional
+fibre of the affine point map, so every control had zero nonbase mapped points
+and zero rank visible from this search.  Each control still has its separately
+certified nontorsion pointed-Jacobian generator, hence a known rank lower bound
+of one.  The identical positive regression for `0x103b2` returned 60 signed
+points, 58 nonbase images, and relation rank 17.
+
+Therefore ranks `8,12,17` are not common *at this search visibility* in the
+sample: `0x103b2` is a sharp `17 versus 0` nonbase outlier.  This remains a
+bounded point-height experiment, not an upper bound for any control Jacobian;
+their missing independent points may simply be taller.  The selected labels,
+denominator-cleared integral models, point counts, and exact rank-reduction
+records are in
+[`elkies-k3-pointed-cover-jacobian-rank-controls-h10000-v1.json`](../artifacts/generated-results/elkies-k3-pointed-cover-jacobian-rank-controls-h10000-v1.json).
+Its SHA-256 digest is
+`4b84801a6d599b2402f1808a21bb18d9d45ef7fdc4a0cf219b1be3ba7c4f92ed`.
 
 ## Exact twist and known section
 

@@ -8,7 +8,9 @@
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MODULAR-DIMENSION-SIEVE 9622c6eb4d8522bd -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-GENERATION 9a7a1e01cb22f62e -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-CONTROLS 3cbde45fb2cb0f17 -->
-<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 b4f8981a10f12384 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 80de8b6727cd3409 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH a755a3956c4c97cb -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE d32b35b66a35627c -->
 <!-- status-consumer: EC-K3-INTEGRAL-CHARACTER-GLUE 0b76d65366279037 -->
 <!-- status-consumer: EC-K3-E6-RANK4-DET78-GLOBAL-ROOTFUL 648ec884ce7152bb -->
 <!-- status-consumer: EC-K3-R17-NORM12-103B2-INTEGRAL-GLUE 52de13c8443f2b7d -->
@@ -178,11 +180,49 @@ An isometry-diverse directed beam transports the two-cell defect through
 physical witness populations `4 -> 6 -> 4 -> 4 -> 0`.  It reaches zero in
 four directed steps after constructing 30,228 distinct neighbours.  Appending
 these steps to the canonical eight-step prefix gives a new rootless Q80 core
-and a new determinant-948 rootless rank-17 completion with the target
-discriminant form.  The exact survival law and path are Theorem H0i.  The
-result identifies the missing state variable: masked support must be
-decorated by the incidence of its individual witnesses against isotropic
-neighbour lines.
+whose determinant-948 rank-17 completion is exactly the alternate Q80 frame:
+it has 1,313 norm-four pairs and automorphism-group order four, is explicitly
+integrally isometric to alternate Q80, and is not isometric to published R17.
+The previous `declared_target_frame` label referred to published R17, so its
+failed isometry test did not indicate a third class.  Exact local symbols at
+`2`, `3`, and `79` independently place the completion in the common target
+genus.  Thus the directed core flow connects the Q80 near-miss region around
+the published target to the other mass-complete rootless `J2` class.  The
+exact survival law and path are Theorem H0i.  The result identifies the
+missing state variable: masked support must be decorated by the incidence of
+its individual witnesses against isotropic neighbour lines.
+
+The replacement side is also explicit.  For the standard lift with
+`y^2=0 mod 2*p^2`, put
+
+```text
+K_y dual={x in K dual:<x,y>=0 mod p}.
+```
+
+Then the child dual is the disjoint union of
+`K_y dual+j*y/p`, `0<=j<p`.  The `j=0` layer is exactly the old-survivor
+theorem; nonzero layers contain every possible birth.  Under the canonical
+prime-to-`p` identification of discriminant groups, the class of
+`x+j*y/p` is the old class of `x`, so every masked child coefficient is a
+finite affine-CVP sum.  The exact Q80 replay predicts all four child witness
+sets and their complete norm-at-most-two theta profiles before construction,
+then independently recovers the same profiles and vectors from the children
+afterward.  This is Theorem H0i.1 and its
+[`birth--death certificate`](../artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-birth-death-v1.json).
+The counted abstract `Sigma_2` table alone still omits the required physical
+line incidence, and no runtime speedup theorem is claimed.
+
+Those same physical witnesses now transfer more than zero versus nonzero
+support.  Retaining every completion root `r=k+c` and the pairwise metric
+`<r,r'>=<k,k'>+<c,c'>` recovers the complete signed root graph, ADE
+decomposition, rank, and root discriminants.  Retaining their coordinates in
+the completed frame additionally recovers the primitive closure and exact
+Mordell--Weil torsion quotient.  The metric without the marked embedding does
+not determine those last two invariants.  The exact NS0024 controls recover
+`D5+E8`, `3A1+A2`, and rootless stages, including twelve roots spread over
+five nonzero graph-glue labels; Q80 controls recognize `4A1` and `A1`.  See
+Theorem H0k and the
+[`metric physical-witness certificate`](../artifacts/generated-results/elkies-k3-integral-rank-transfer-root-system-signature-v1.json).
 
 Literal Nikulin discriminant-form glue occurs in the Niemeier complement
 constructions.  A closely related finite-index saturation quotient occurs in
@@ -461,7 +501,7 @@ The data support the following constructive program.
 Use a marked integral state
 
 ```text
-S=(NS,U,W,R,A_W,q_W,H_root,minimum,roots,saturation indices).
+S=(NS,U,W,R,A_W,q_W,H_root,minimum,physical roots,root metric,saturation indices).
 ```
 
 The root glue `H_root` records the primitive closure of the fibre-root lattice

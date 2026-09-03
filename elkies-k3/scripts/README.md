@@ -584,7 +584,7 @@ reduction irreducible, and lifts irreducibility to characteristic zero.
 Primitivity, completeness of the pencil, Bertini, and K3 adjunction then give
 generic genus one.  It does not compute the Jacobian or its maps.
 
-<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR 163251202819137c -->
+<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR 957479f39bedd57b -->
 
 Recover and certify the first generic discriminant conductor factor with:
 
@@ -601,6 +601,8 @@ multiplicity three.  Its optional `--attempt-quartic-gcd` is deliberately
 gated because the expanded exact degree-four gcd has not completed at the
 current multi-million-bit coefficient heights.
 
+<!-- status-consumer: EC-K3-Q80-THIRD-Q12-EXACT-SPECIALIZED-QUARTICS 725664f9e36ae8a7 -->
+
 The dedicated exact Brown-PRS continuation is:
 
 ```bash
@@ -613,7 +615,12 @@ sage -python \
 It atomically checkpoints every completed remainder to
 `artifacts/local/elkies-k3/q80-third-q12-exact-quartic-subresultant-checkpoint-v1.pickle`
 and resumes that trusted local checkpoint automatically.  Pass
-`--restart-subresultant-prs` only to deliberately start a fresh sequence.
+`--restart-subresultant-prs` only to deliberately start a fresh sequence.  The
+completed run returns `PASS_EXACT_SPECIALIZED_L3_Q2_D_FACTORIZATION`: the exact
+degree-four gcd has maximum coordinate height 320,859 bits, and literal exact
+division gives the remaining quartic at 1,735,258 bits.  Replay the completed
+checkpoint and artifact with the same command plus `--check`.  This proves the
+factorization at `V=0`, not the generic quartics over the full base.
 
 Replay the strongest retained normalization for that quartic with:
 
@@ -626,8 +633,9 @@ sage -python \
 This reconstructs the common monic linear denominator `H(V)` from the
 `19^12288` lift, rebuilds the exact-pencil discriminant independently at
 163, 191, and 199, and verifies the predicted denominator on every
-nonleading coefficient of the exponent-two quartic.  It intentionally does
-not claim exact characteristic-zero `Q^2` divisibility or a Jacobian.
+nonleading coefficient of the exponent-two quartic.  It remains candidate
+data for the generic `V`-dependent quartic; exact `Q^2` divisibility is now
+separately proved only at `V=0`, and no Jacobian is claimed.
 
 ### Rootless J2 classification controls
 
@@ -2809,7 +2817,9 @@ independent residual-rank cross-check, not the primary class certificate.  See
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MODULAR-DIMENSION-SIEVE 9622c6eb4d8522bd -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-GENERATION 9a7a1e01cb22f62e -->
 <!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-CONTROLS 3cbde45fb2cb0f17 -->
-<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 b4f8981a10f12384 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80 80de8b6727cd3409 -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH a755a3956c4c97cb -->
+<!-- status-consumer: EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE d32b35b66a35627c -->
 
 ```bash
 sage -python certify_integral_rank_transfer_bridge_reglue.sage --check
@@ -2820,6 +2830,8 @@ sage -python certify_integral_rank_transfer_core_generation.sage --check
 sage -python certify_integral_rank_transfer_reverse_theta_masks.sage --check
 sage -python certify_integral_rank_transfer_weil_compression.sage --check
 sage -python generate_integral_rank_transfer_masked_core_neighbors.sage --check
+sage -python certify_integral_rank_transfer_q80_defect_birth_death.sage --check
+sage -python certify_integral_rank_transfer_root_system_signature.sage --check
 sage -python certify_integral_character_glue_calculus.sage --check
 sage -python certify_r17_norm12_103b2_mw_glue.sage \
   --skip-specialization-saturation --check
@@ -2920,8 +2932,34 @@ isometry class.  It reaches zero support in generation four after 30,228
 constructed neighbours.  `certify_integral_rank_transfer_q80_defect_completion.sage
 --check` is the short exact replay.  It verifies the four witness-removal
 steps, the replacement counts `4,6,4,4,0`, and the new rootless determinant-948
-completion.  Defect cardinality is not monotone; physical witness incidence
-is the operative transition datum.
+completion.  It also compares both rootless controls, counts 1,313 norm-four
+pairs, computes automorphism-group order four, checks the exact local genus
+symbols, and stores an explicit integral isometry to the alternate Q80 frame.
+The historical `declared_target_frame` in this corridor is published R17.
+Defect cardinality is not monotone; physical witness incidence is the
+operative transition datum.
+
+`certify_integral_rank_transfer_q80_defect_birth_death.sage --check`
+implements the missing half of that datum.  It decomposes the child dual into
+the affine layers `K_y^dual+j*y/p` and queries the equivalent masked cosets
+`M+r+k_0+j*y/p` before constructing the child.  It also evaluates every
+theta cell through norm two, giving a complete `Sigma_2` transition.  The
+later materialized-child enumeration agrees profile-for-profile and
+vector-for-vector and reproduces `4,6,4,4,0`.  This is a correctness and
+regression certificate; it does not claim that the abstract
+counted theta signature determines line pairings or that this implementation
+has a uniform timing advantage.
+
+`certify_integral_rank_transfer_root_system_signature.sage --check` expands
+the physical completion witnesses into complete root-line metrics.  For the
+four NS0024 stages it verifies every identity
+`<k+c,k'+c'>=<k,k'>+<c,c'>`, classifies the metric components as
+`D5+E8`, `3A1+A2`, `3A1+A2`, and rootless, and computes the marked primitive
+closures and torsion quotients.  The middle rootful completion with a
+rootless core has twelve roots in five nonzero graph-glue labels.  Existing
+Q80 `4A1` and `A1` frames are independent target-classification controls.
+Pairwise root products determine ADE data, but the retained frame coordinates
+are essential for primitive closure and exact Mordell--Weil torsion.
 
 `derive_r17_genus_one_bisection_twist_section.sage` descends the certified
 `0x103b2` split bisection to an exact height-eight section on the quartic
@@ -3110,6 +3148,29 @@ determination.
 
 ```bash
 sage -python search_r17_norm12_103b2_hard_fibre_products.sage --height 300000
+```
+
+`classify_r17_103b2_isotropic_frame.sage` performs the exact lattice test for
+the genus-one bisection itself.  In `NS=U+R17(-1)` it forms
+`D=(3,2,w_103b2)`, splits off an integral `U`, enumerates every norm-two root
+of the orthogonal positive frame, and compares that frame with both certified
+rootless determinant-948 `J2` classes.  The result is rootless/MW17 in the
+published R17 frame class, not the alternate Q80 class.
+
+`control_pointed_cover_jacobian_ranks.sage` runs the literal
+`hyperellratpoints(H=10000)` to pointed-map to eclib-relation pipeline on a
+seeded uniform sample of ten other pointed covers, with `0x103b2` replayed by
+the same code.  All ten controls have only their signed pointing pair and no
+nonbase mapped point; `0x103b2` has 58 nonbase images of relation rank 17.
+The controls retain their separately certified rank-one generator, and the
+zero visible nonbase ranks are not rank upper bounds.
+
+<!-- status-consumer: EC-K3-R17-NORM12-103B2-ISOTROPIC-FRAME 47f3a0eb7ee50bcb -->
+<!-- status-consumer: EC-K3-R17-POINTED-COVER-JACOBIAN-CONTROL-H10000 4bb087b3a1ebc684 -->
+
+```bash
+sage -python classify_r17_103b2_isotropic_frame.sage
+sage -python control_pointed_cover_jacobian_ranks.sage
 ```
 
 ## Alternate-Q80 rootless equation handoff

@@ -50,6 +50,9 @@ DEFAULT_LINEAR = RESULTS / "elkies-k3-q80-third-q12-exact-generic-linear-conduct
 DEFAULT_EXACT_SPECIALIZATION = (
     RESULTS / "elkies-k3-q80-third-q12-exact-discriminant-specialization-v1.json"
 )
+DEFAULT_EXACT_JET = (
+    LOCAL / "q80-third-q12-exact-generic-quartic-jet-v1.json"
+)
 DEFAULT_OUTPUT = RESULTS / "elkies-k3-q80-third-q12-quartic-crt-qq-v1.json"
 BLIND_PRIMES = (163, 191, 199)
 COEFFICIENT = re.compile(r"^(-?\d+)/(\d+)\*theta\^2 ([+-]) (\d+)/(\d+)$")
@@ -106,6 +109,11 @@ parser.add_argument("--linear-certificate", type=Path, default=DEFAULT_LINEAR)
 parser.add_argument(
     "--exact-specialization", type=Path, default=DEFAULT_EXACT_SPECIALIZATION
 )
+parser.add_argument(
+    "--exact-jet",
+    type=Path,
+    help="exact first-order jet certificate; bypasses CRT reconstruction when supplied",
+)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 parser.add_argument("--check", action="store_true")
 parser.add_argument("--write-artifact", action="store_true")
@@ -132,9 +140,12 @@ for name in (
     "H_candidate",
     "linear_certificate",
     "exact_specialization",
+    "exact_jet",
     "output",
 ):
     path = getattr(args, name)
+    if path is None:
+        continue
     if not path.is_absolute():
         path = ROOT / path
     setattr(args, name, path.resolve())
@@ -409,6 +420,58 @@ for w_degree in range(4):
             coordinate_results.append(result)
 
 unresolved = [item for item in coordinate_results if not item["resolved"]]
+
+exact_jet = None
+if args.exact_jet is not None:
+    exact_jet = json.loads(args.exact_jet.read_text())
+    if exact_jet.get("status") != "PASS_EXACT_GENERIC_QUARTIC_FIRST_JET_P19_REPLAY":
+        raise ArithmeticError("exact jet artifact does not have certified PASS status")
+    exact_jet_inputs = exact_jet.get("inputs", {})
+    for label, current_path in (
+        ("pencil", args.pencil),
+        ("operands", args.operands),
+        ("factor_lift", args.factor_lift),
+        ("specialized_factorization", args.exact_specialization),
+        ("H_candidate", args.H_candidate),
+    ):
+        if exact_jet_inputs.get(label, {}).get("sha256") != sha256(current_path):
+            raise ArithmeticError(f"exact jet has stale {label} input")
+    jet_data = exact_jet.get("generic_quartic_first_jet", {})
+    raw_coordinates = jet_data.get(
+        "Q_numerator_coefficients_low_to_high_W_then_V_1_delta"
+    )
+    if not isinstance(raw_coordinates, list) or len(raw_coordinates) != 5:
+        raise ArithmeticError("exact jet quartic numerator has wrong W shape")
+    candidate_coordinates = []
+    for w_degree, v_rows in enumerate(raw_coordinates[:4]):
+        if not isinstance(v_rows, list) or len(v_rows) != 2:
+            raise ArithmeticError(f"exact jet W^{w_degree} numerator is not linear")
+        candidate_coordinates.append([])
+        for pair in v_rows:
+            if not isinstance(pair, list) or len(pair) != 2:
+                raise ArithmeticError("exact jet coefficient is not a quadratic pair")
+            candidate_coordinates[-1].append([rational(value) for value in pair])
+    leading = raw_coordinates[4]
+    if (
+        len(leading) != 2
+        or [rational(value) for value in leading[0]] != [h0_rational, h0_delta]
+        or [rational(value) for value in leading[1]] != [QQ.one(), QQ.zero()]
+    ):
+        raise ArithmeticError("exact jet leading coefficient does not equal H(V)")
+    coordinate_results = [
+        {
+            "index_W_V_field": [w_degree, v_degree, field_coordinate],
+            "resolved": True,
+            "value": rational_record(
+                candidate_coordinates[w_degree][v_degree][field_coordinate]
+            ),
+            "source": "exact_first_order_jet",
+        }
+        for w_degree in range(4)
+        for v_degree in range(2)
+        for field_coordinate in range(2)
+    ]
+    unresolved = []
 
 
 def verify_sample_reductions(coordinates):
@@ -840,15 +903,26 @@ if coordinates_resolved:
 complete = coordinates_resolved and candidate_rejection is None
 
 status = (
-    "PASS_EXACT_Q80_THIRD_Q12_QUARTIC_CRT_AND_DIRECT_DIVISION"
+    (
+        "PASS_EXACT_Q80_THIRD_Q12_QUARTIC_JET_AND_DIRECT_DIVISION"
+        if exact_jet is not None
+        else "PASS_EXACT_Q80_THIRD_Q12_QUARTIC_CRT_AND_DIRECT_DIVISION"
+    )
     if complete
     else "INCOMPLETE_Q80_THIRD_Q12_QUARTIC_CRT_RECONSTRUCTION"
 )
 payload = {
-    "schema": "elkies-k3-q80-third-q12-quartic-crt-qq-v1",
+    "schema": (
+        "elkies-k3-q80-third-q12-quartic-jet-direct-division-v1"
+        if exact_jet is not None
+        else "elkies-k3-q80-third-q12-quartic-crt-qq-v1"
+    ),
     "status": status,
     "reconstruction": {
         "normalization": "Q=W^4+sum(N_i(V)/H(V)*W^i); H monic linear",
+        "coordinate_source": (
+            "exact_first_order_jet" if exact_jet is not None else "CRT"
+        ),
         "coordinate_order": "low_to_high_W_then_V_then_(1,delta)",
         "coordinate_count": 16,
         "exact_specialization_anchor_coordinate_count": 8,
@@ -898,6 +972,14 @@ payload = {
             "path": str(args.exact_specialization.relative_to(ROOT)),
             "sha256": sha256(args.exact_specialization),
         },
+        "exact_jet": (
+            {
+                "path": relative_or_absolute(args.exact_jet),
+                "sha256": sha256(args.exact_jet),
+            }
+            if args.exact_jet is not None
+            else None
+        ),
         "modular_samples": [
             {"path": relative_or_absolute(item["path"]), "sha256": sha256(item["path"])}
             for item in sample_records
@@ -911,6 +993,11 @@ payload = {
         "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python "
         "elkies-k3/scripts/reconstruct_and_certify_q80_third_q12_quartic_crt_qq.sage "
         + " ".join(relative_or_absolute(path) for path in args.inputs)
+        + (
+            f" --exact-jet {relative_or_absolute(args.exact_jet)}"
+            if args.exact_jet is not None
+            else ""
+        )
         + f" --stability-heldout-count {args.stability_heldout_count}"
         + (" --check" if complete else " --diagnostic-incomplete")
     ).strip(),

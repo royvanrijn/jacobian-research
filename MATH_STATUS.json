@@ -37150,6 +37150,77 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-R17-NORM12-103B2-ISOTROPIC-FRAME",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Rootless published-class frame orthogonal to the 0x103b2 isotropic bisection",
+      "scope": "In the pinned decomposition NS=U+R17(-1), the norm-twelve 0x103b2 trace representative w defines the exact bisection class D=(3,2,w), with D^2=0, D.F=2, D.O=1, and divisibility one. Splitting off an integral hyperbolic plane containing D leaves a positive rank-17 determinant-948 frame. Complete norm-two enumeration finds zero roots. Exact PARI integral-isometry tests identify this frame with the published R17 J2 class and reject the certified alternate Q80 rootless frame. Thus the bisection hides a second rootless rank-17 fibration at lattice/J2 level, but not the alternate Q80 frame. This does not construct the second Weierstrass equation or its sections over QQ, identify the J1 orbit under surface automorphisms, prove an upper bound for the pointed quartic Jacobian, or improve the anti-invariant twist-rank bound.",
+      "canonical_source": "elkies-k3/R17_103B2_ANTI_INVARIANT_RANK_AUDIT_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-103B2-MW-LATTICE-SIEVE",
+        "EC-K3-H3-OTHER-R17-J2-CANDIDATE"
+      ],
+      "checker": "elkies-k3/scripts/classify_r17_103b2_isotropic_frame.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a3bbee80ab97ca9622b1d822628250a308f77297b9c3123acda3fef27c446eed",
+      "software_lock": [
+        "elkies-k3/scripts/classify_r17_103b2_isotropic_frame.sage",
+        "elkies-k3/data/lattice/rank17_gram.txt",
+        "artifacts/generated-results/elkies-k3-r17-genus-one-bisection-splitting-search-v1.json",
+        "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-103b2-isotropic-frame-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/R17_103B2_ANTI_INVARIANT_RANK_AUDIT_2026-09-03.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-POINTED-COVER-JACOBIAN-CONTROL-H10000",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Ten-cover H=10000 control for the 0x103b2 auxiliary-Jacobian rank signal",
+      "scope": "A deterministic uniform sample without replacement from the 100 other pointed norm-eight production covers uses seed 0x103b2 and indices 4,17,19,25,27,30,55,67,75,96. The identical PARI hyperellratpoints naive-height-10000 search, exact pointed-quartic map, and eclib Mordell-Weil relation reduction finds exactly the two signed pointing points on every control; after omitting that exceptional map fibre, all ten have zero mapped points and zero visible nonbase rank. Their separately certified pointed-Jacobian generators retain rank lower bound one. The same code replays 0x103b2 with 60 signed points, 58 nonbase images, and relation rank 17. Hence 0x103b2 is a sharp bounded-search outlier in this sample, but the experiment gives no rank upper bound for a control and cannot distinguish low true rank from independent points above the height bound.",
+      "canonical_source": "elkies-k3/R17_103B2_ANTI_INVARIANT_RANK_AUDIT_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-103B2-MW-LATTICE-SIEVE"
+      ],
+      "checker": "elkies-k3/scripts/control_pointed_cover_jacobian_ranks.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d203868889503d853d57412ba97444a4d193fc546c6b054b52fa4f3acd03b8c5",
+      "software_lock": [
+        "elkies-k3/scripts/control_pointed_cover_jacobian_ranks.sage",
+        "artifacts/generated-results/elkies-k3-r17-genus-one-bisection-splitting-search-v1.json",
+        "artifacts/generated-results/elkies-k3-pointed-cover-jacobian-rank-controls-h10000-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/R17_103B2_ANTI_INVARIANT_RANK_AUDIT_2026-09-03.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-K3-R17-NORM12-103B2-HARD-FIBRE-PRODUCT-H300000",
       "kind": "reproduction",
       "state": "proved",
@@ -37684,19 +37755,20 @@
       "id": "EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80",
       "kind": "theorem",
       "state": "proved",
-      "title": "Masked-witness survival law and defect-directed Q80 completion",
-      "scope": "Let K_ell=M_p(K;ell)+Z*y/p be the good-prime Kneser neighbor defined by the isotropic line ell=<y>. For every x in K^dual, x belongs to K_ell^dual if and only if <x,y>=0 modulo p. Hence a line nonorthogonal to every physical dual vector realizing an occupied reverse-mask cell removes the entire old defect, although new forbidden vectors may appear. The exact Q80 near-miss core has two occupied cells realized by four physical witnesses. Of 10000 sampled isotropic lines at 7,11,13,17,19,29,31,37,41,43, exactly 8919 kill all four; 1397 resulting neighbors are rootless, but all acquire replacement defects, with cell-count distribution 2:28, 4:266, 6:584, 8:413, 10:99, 12:7. An isometry-diverse multistep directed beam constructs 30228 distinct neighbors through four generations, including 4643 rootless and 116 with minimal nonzero defect two, before reaching zero support. The four certified transitions remove every parent witness and change physical witness counts 4->6->4->4->0. Appended to the eight-step canonical-seed prefix, they construct a nonhistorical rootless rank-15 core whose class-2 completion has rank 17, determinant 948, minimum four, no roots, and the target discriminant form, but is a new integral isometry class. No monotone scalar defect law, universal directed path, neighbor-graph completeness, or speedup theorem is proved.",
+      "title": "Masked-witness survival law and defect-directed Q80 route to the alternate frame",
+      "scope": "Let K_ell=M_p(K;ell)+Z*y/p be the good-prime Kneser neighbor defined by the isotropic line ell=<y>. For every x in K^dual, x belongs to K_ell^dual if and only if <x,y>=0 modulo p. Hence a line nonorthogonal to every physical dual vector realizing an occupied reverse-mask cell removes the entire old defect, although new forbidden vectors may appear. The exact Q80 near-miss core has two occupied cells realized by four physical witnesses. Of 10000 sampled isotropic lines at 7,11,13,17,19,29,31,37,41,43, exactly 8919 kill all four; 1397 resulting neighbors are rootless, but all acquire replacement defects, with cell-count distribution 2:28, 4:266, 6:584, 8:413, 10:99, 12:7. An isometry-diverse multistep directed beam constructs 30228 distinct neighbors through four generations, including 4643 rootless and 116 with minimal nonzero defect two, before reaching zero support. The four certified transitions remove every parent witness and change physical witness counts 4->6->4->4->0. Appended to the eight-step canonical-seed prefix, they construct a nonhistorical rootless rank-15 core whose class-2 completion has rank 17, determinant 948, minimum four, no roots, 1313 norm-four pairs, and automorphism-group order four. Exact qfisom excludes published R17 and supplies a determinant-minus-one integral isometry to alternate Q80. Independently of the compressed discriminant-form key, exact local genus symbols at 2, 3, and 79 agree with both controls. The corridor's historical declared_target_frame is published R17, so its failed isometry test never implied a third class. Combined with the mass-complete determinant-948 J2 classification, the path is a core flow from the Q80 near-miss region around the published target to the other rootless class, alternate Q80. No monotone scalar defect law, universal directed path, neighbor-graph completeness, or speedup theorem is proved.",
       "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
       "dependencies": [
         "EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-CONTROLS",
-        "EC-K3-INTEGRAL-RANK-TRANSFER-REVERSE-THETA"
+        "EC-K3-INTEGRAL-RANK-TRANSFER-REVERSE-THETA",
+        "EC-K3-H3-ROOTLESS-J2-COMPLETE"
       ],
       "checker": "elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_completion.sage",
       "proof_type": "exact_symbolic",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:3c98bc04141e902da35d344dce4645060e20c3e7f1ce7b393a003a327e3b8ac7",
+      "artifact_hash": "sha256:e4f8bbe5b506151f184858fb67898deb48f6e63a7500cf88e99a7ac3af1f4fda",
       "software_lock": [
         "elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_completion.sage",
         "elkies-k3/scripts/search_integral_rank_transfer_q80_defect_neighbors.sage",
@@ -37706,7 +37778,10 @@
         "artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-completion-v1.json",
         "artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-controls-v1.json",
         "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json",
-        "artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json"
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json",
+        "elkies-k3/data/lattice/rank17_gram.txt",
+        "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json",
+        "artifacts/generated-results/elkies-k3-rootless-j2-niemeier-first.json"
       ],
       "supersedes_notes": [
         "the Q80 prospective masked-core control ends only in a two-cell near miss",
@@ -37726,11 +37801,129 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-BIRTH-DEATH",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete good-prime dual-layer defect birth-death law",
+      "scope": "Let K be a positive-definite even integral lattice, let p be an odd prime not dividing det(K), and let K_ell=M+Z*y/p be the p-neighbor defined by a nonzero isotropic line, with M={z in K:<z,y>=0 mod p} and y^2 divisible by 2p^2. Put K_y^dual={x in K^dual:<x,y>=0 mod p}. Then K_ell^dual is the disjoint union of the p affine layers K_y^dual+j*y/p for 0<=j<p. Under the canonical prime-to-p discriminant identification A_(K_ell)->A_K, the vector x+j*y/p has class [x]. Hence every child theta coefficient through norm two, and in particular every reverse-mask defect, is a finite sum of affine-coset CVP queries. A child has zero defect exactly when the defining line is nonorthogonal to every current physical forbidden witness and no nonzero affine layer contains a forbidden vector. The exact Q80 replay performs the prediction before constructing each child, independently enumerates the materialized child dual afterward, and gets identical physical witness sets and the regression 4->6->4->4->0; the first three births occur only in nonzero layers. The abstract counted signature Sigma_2(K) alone is not sufficient without physical representatives or an equivalent lattice CVP oracle, and no runtime speedup theorem is claimed.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-REVERSE-THETA"
+      ],
+      "checker": "elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_birth_death.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f18863b7100fb54759eb2ab655a71e2ab1f86169c62228217a51e12c3ff7d273",
+      "software_lock": [
+        "elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_birth_death.sage",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-birth-death-v1.json",
+        "elkies-k3/scripts/certify_integral_rank_transfer_q80_defect_completion.sage",
+        "elkies-k3/scripts/search_integral_rank_transfer_q80_defect_neighbors.sage",
+        "elkies-k3/scripts/certify_integral_rank_transfer_reverse_theta_masks.sage"
+      ],
+      "supersedes_notes": [
+        "the good-prime survival criterion is only a removal theorem with no explicit account of replacement witnesses"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER",
+      "kind": "corollary",
+      "state": "proved",
+      "title": "NS0024 completed-core rank-transfer profile",
+      "scope": "Let S be the determinant-950 Picard-rank-19 Neron--Severi lattice NS0024. Complete the canonical rank-15 core and its exact good-prime Kneser neighbors at p=17,13,7 using the order-191 binary bridge class 4 and the recorded integral graph multipliers. The four rank-17 positive frames have root systems D5+E8, 3A1+A2, 3A1+A2, and zero, of ranks 13,5,5,0. Every frame has determinant 950 and discriminant form anti-isometric to q_S. Rank-19 frame-genus realization therefore gives four Jacobian fibrations at O(S)/J2 level, and Shioda--Tate gives Mordell--Weil ranks 4,12,12,17, with successive changes +8,0,+5. On the core side the root profiles are respectively ranks 13,5,0,0: the middle plateau proves concretely that making the core rootless need not raise Mordell--Weil rank, because norm-two vectors can move into nonzero graph-glue cosets; the final +5 occurs with the core already rootless and is glue-coset annihilation. The primes 17,13,7 are core Kneser-neighbor primes, not asserted elliptic-neighbor degrees. No marked elliptic-neighbor corridor, equation, rational map, field-of-definition result, or universal monotonic rank law is claimed.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-INTEGRAL-RANK-TRANSFER-CALCULUS",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-MASKED-CORE-CONTROLS"
+      ],
+      "checker": "elkies-k3/scripts/certify_ns0024_new_rootless_source_route.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f1b26a10579b45285df0e3dce9dbba254be1d99cea1c1a37fa5fd1eb2f484fa1",
+      "software_lock": [
+        "elkies-k3/scripts/certify_ns0024_new_rootless_source_route.sage",
+        "artifacts/generated-results/elkies-k3-ns0024-new-rootless-source-route-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-controls-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-INTEGRAL-RANK-TRANSFER-ROOT-SYSTEM-SIGNATURE",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Metric physical-witness transfer of the full root system",
+      "scope": "For an even graph-glue completion W_H of a positive core K and bridge C, the physical norm-two witnesses are exactly the pairs r=k+c in the selected dual cosets with k^2+c^2=2, and their pairwise products are <r,r'>=<k,k'>+<c,c'>. The complete pairwise metric determines the signed norm-two root system, nonorthogonality graph, ADE decomposition, root rank, root lattice, component and total discriminants, discriminant form, and the possible no-new-root isotropic extensions of the root lattice. If the signature also retains each witness's coordinates in an integral basis of W_H, Smith saturation determines the primitive closure Rbar and quotient Rbar/R; for a Jacobian elliptic frame this quotient is exactly Mordell-Weil torsion. The marking hypothesis is essential: A1^24 and the Niemeier lattice N(24A1) have the same metric root system, while their root primitive-closure quotients are respectively trivial and the binary Golay code (Z/2)^12. The exact checker reconstructs all four NS0024 completions and records every k+c root line and pairwise inner product, recovering D5+E8, 3A1+A2, 3A1+A2, and rootless with ranks 13,5,5,0 and discriminants 4,24,24,1. At the third stage the core is rootless but twelve completion roots occupy five nonzero order-191 graph-glue labels. Independent Q80 controls recover 4A1 and A1 with discriminants 16 and 2. All six control root lattices are primitive with trivial torsion. This is an exact acceptance and target-classification theorem; it does not prove realization or reachability of a prescribed ADE signature, construct an elliptic-neighbor route, or supply equations or fields of definition.",
+      "canonical_source": "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+      "dependencies": [
+        "EC-K3-INTEGRAL-RANK-TRANSFER-THETA-CONVOLUTION",
+        "EC-K3-INTEGRAL-RANK-TRANSFER-DEFECT-DIRECTED-Q80",
+        "EC-K3-NS0024-COMPLETED-CORE-RANK-TRANSFER"
+      ],
+      "checker": "elkies-k3/scripts/certify_integral_rank_transfer_root_system_signature.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:da0db06d2b8422ac3c6cdb1689a718415126a33a9c5a1c473bcaf2c61b701fde",
+      "software_lock": [
+        "elkies-k3/scripts/certify_integral_rank_transfer_root_system_signature.sage",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-root-system-signature-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-masked-core-controls-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json",
+        "artifacts/generated-results/elkies-k3-integral-rank-transfer-theta-convolution-v1.json",
+        "elkies-k3/data/fibrations/kumar_q80_e6_d5_a3_mw3_frame.txt",
+        "elkies-k3/data/fibrations/kumar_q80_to_rootless_path.tsv"
+      ],
+      "supersedes_notes": [
+        "pairwise root products without an ambient marking determine primitive closure or exact Mordell-Weil torsion"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+        "elkies-k3/RANK_MUTATION_AND_LIFT_THEOREMS.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR",
       "kind": "reproduction",
       "state": "proved",
       "title": "Exact generic cubic linear conductor factor in the Q80 third-q12 discriminant",
-      "scope": "For the exact 63-term characteristic-zero third-q12 genus-one pencil at u=-2, rational reconstruction from the 19^12288 factor lift gives a linear factor L=W+r. A direct integral expansion of the exact discriminant in S=denominator(r)W+numerator(r) proves that the S^0, S^1, and S^2 coefficients vanish identically over QQ(sqrt(q1q2))[V], while the S^3 coefficient is a nonzero degree-eight polynomial. Hence L has exact generic multiplicity three. At V=0 the exact discriminant has degree 15 and maximum coordinate height 5,783,744 bits; stripping L^3 leaves degree 12 at 5,783,726 bits. Separately, all four nonleading coefficients of the expected monic quartic factor share a reconstructed monic linear denominator H(V) modulo 19^12288, and direct reductions of the exact pencil at the untouched inert primes 163, 191, and 199 reproduce both the factor pattern (1,3),(4,1),(4,2) and that common denominator. The H replay is candidate evidence only: exact characteristic-zero recovery of Q, Q^2 divisibility, the remaining discriminant factor, the Jacobian, and birational maps remain open. General expanded PARI and Singular exact-gcd attempts did not complete and are not proof fields.",
+      "scope": "For the exact 63-term characteristic-zero third-q12 genus-one pencil at u=-2, rational reconstruction from the 19^12288 factor lift gives a linear factor L=W+r. A direct integral expansion of the exact discriminant in S=denominator(r)W+numerator(r) proves that the S^0, S^1, and S^2 coefficients vanish identically over QQ(sqrt(q1q2))[V], while the S^3 coefficient is a nonzero degree-eight polynomial. Hence L has exact generic multiplicity three. At V=0 the exact discriminant has degree 15 and maximum coordinate height 5,783,744 bits; stripping L^3 leaves degree 12 at 5,783,726 bits. Separately, all four nonleading coefficients of the expected monic quartic factor share a reconstructed monic linear denominator H(V) modulo 19^12288, and direct reductions of the exact pencil at the untouched inert primes 163, 191, and 199 reproduce both the factor pattern (1,3),(4,1),(4,2) and that common denominator. The H replay is candidate evidence only for the generic V-dependent quartic. Exact recovery of the specialized quartics at V=0 is certified separately; generic quartic recovery, the Jacobian, and birational maps remain open. General expanded PARI and Singular exact-gcd attempts did not complete and are not proof fields.",
       "canonical_source": "elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md",
       "dependencies": [],
       "checker": "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
@@ -37738,7 +37931,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:a4a7447b524adcda5859704f3a63990370ccf52c67ba76ce6ce4d09ec7d10862",
+      "artifact_hash": "sha256:6e9eb4538e7e61e61cd20de96a1c97c351ce3c306d8d1ed542fc9e656166da98",
       "software_lock": [
         "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
         "elkies-k3/scripts/audit_q80_third_q12_quartic_denominator_candidate.sage",
@@ -37753,6 +37946,41 @@
         "REPRODUCE.md",
         "elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md",
         "elkies-k3/Q80_THIRD_Q12_COMMON_PRODUCER_2026-09-01.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-Q80-THIRD-Q12-EXACT-SPECIALIZED-QUARTICS",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact specialized quartic-square factorization in the Q80 third-q12 discriminant",
+      "scope": "For the exact characteristic-zero third-q12 genus-one pencil at u=-2 and base specialization V=0, remove the already reconstructed triple linear factor L^3 from the degree-15 cubic discriminant. A Brown subresultant remainder sequence over the exact quadratic descent field QQ(delta), with delta^2 equal to the certified denominator D, terminates in a monic degree-four gcd Q. Literal exact division proves monic(Delta/L^3)=Q^2*D4, where D4 is also monic of degree four. The exact factor degrees and multiplicities are therefore (1,3),(4,2),(4,1). The seven nonzero subresultants have degrees 10 through 4 and maximum coordinate heights through 84,489,468 bits; the normalized Q and D4 have maximum coordinate heights 320,859 and 1,735,258 bits. A completed checkpoint replay repeats the exact Q^2 division and artifact comparison. This is an exact characteristic-zero theorem only at V=0; it does not recover Q(V,W) or D4(V,W) over the generic V-line and does not construct the Jacobian or birational maps.",
+      "canonical_source": "elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md",
+      "dependencies": [
+        "EC-K3-Q80-THIRD-Q12-EXACT-LINEAR-CONDUCTOR"
+      ],
+      "checker": "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6e9eb4538e7e61e61cd20de96a1c97c351ce3c306d8d1ed542fc9e656166da98",
+      "software_lock": [
+        "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
+        "artifacts/generated-results/elkies-k3-q80-third-q12-exact-discriminant-specialization-v1.json",
+        "artifacts/local/elkies-k3/q80-third-q12-exact-quartic-subresultant-checkpoint-v1.pickle",
+        "artifacts/local/elkies-k3/q80-third-q12-exact-quartic-subresultant-checkpoint-v1.pickle.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md",
         "elkies-k3/scripts/README.md"
       ],
       "invalidates_assumptions": [],

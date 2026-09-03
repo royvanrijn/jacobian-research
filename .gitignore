@@ -107,8 +107,11 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-neighbors-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-beam-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-completion-v1.json
+!/artifacts/generated-results/elkies-k3-integral-rank-transfer-q80-defect-birth-death-v1.json
+!/artifacts/generated-results/elkies-k3-integral-rank-transfer-root-system-signature-v1.json
 !/artifacts/generated-results/elkies-k3-rootless-j1-uniform-bound-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-reglue-v1.json
+!/artifacts/generated-results/elkies-k3-relative-u-bridge-lifting-regression-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-bridge-predictor-benchmark-v1.json
 !/artifacts/generated-results/elkies-k3-e6-rank4-det78-prospective-bridge-predictor-v1.json
 !/artifacts/generated-results/elkies-k3-integral-character-glue-calculus-v1.json
@@ -131,6 +134,7 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-q80-third-q12-descent-field-normalization-v1.json
 !/artifacts/generated-results/elkies-k3-q80-third-q12-pencil-basis-heights-v1.json
 !/artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-linear-conductor-v1.json
+!/artifacts/generated-results/elkies-k3-q80-third-q12-exact-discriminant-specialization-v1.json
 !/artifacts/generated-results/elkies-k3-q80-third-q12-quartic-denominator-candidate-v1.json
 !/artifacts/generated-results/elliptic-curves/
 !/artifacts/generated-results/elliptic-curves/record_height_lattices_28_29_273_302_v1.json
