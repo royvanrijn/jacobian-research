@@ -1,22 +1,33 @@
-# Archived Elkies--K3 experiments
+# Archived Elkies--K3 research
 
-This directory preserves early discovery notes and superseded branch audits
-that are no longer part of the active K3 navigation or status surface.  They
-include bounded neighbour searches, guessed equation charts, CM-orbit probes,
-the rejected all-IV rank-jump system, and the pre-certification q8/orbit376
-Riemann--Roch audit.  None is a current theorem source or an active search
-instruction.
+Historical and superseded K3 work lives here. It is useful for provenance, negative-result routing, and regression, but it is **not** a current theorem or search-instruction surface.
 
-The notes were moved only after confirming that they had no `MATH_STATUS.json`
-role, no active status consumer, and no inbound active-document reference.
-Their replay programs remain under [`../../elkies-k3/scripts/`](../../elkies-k3/scripts/)
-because several are still useful as process regressions or inputs to the
-chronological ledger.  Timestamped q24 source snapshots are separately kept in
-the [script archive](../../elkies-k3/scripts/archive/q24-bak-20260823/).
+For current status use:
 
-Use the active [`elkies-k3/README.md`](../../elkies-k3/README.md), the
-[`ELKIES_K3_PROCESS_ATLAS.md`](../../elkies-k3/ELKIES_K3_PROCESS_ATLAS.md),
-and `MATH_STATUS.json` for current claims and priorities.
+- [`../../elkies-k3/README.md`](../../elkies-k3/README.md) — frozen programme milestone;
+- [`../../MATH_STATUS.json`](../../MATH_STATUS.json) — mathematical authority;
+- [`../../REPRODUCE.md`](../../REPRODUCE.md) — exact replay entry points.
 
-The [early-experiments index](early-experiments/README.md) records why this
-tranche was archived, and its manifest pins every moved path and byte hash.
+## Early experiments
+
+[`early-experiments/`](early-experiments/) contains the earlier archived tranche: bounded neighbour searches, guessed charts, CM probes, rejected systems, and pre-certification route work. Scripts may remain active as regressions even when the narrative that motivated them is archived.
+
+## September 2026 superseded route tranche
+
+The following live-path notes have been reduced to tombstones because their operational instructions were surpassed. Their complete historical text is preserved immutably at the pre-streamlining freeze commit `f47f1a1872881680d9296170f3f9619bcc943c29`:
+
+- `Q80_ALTERNATE_ROOTLESS_EQUATION_HANDOFF_2026-09-03.md` — historical large Q80 transport; superseded by direct `norm12-orbit-11952`.
+- `OTHER_RANK17_FIBRATION_RECOVERY_2026-08-31.md` — pre-direct-hop recovery frontier.
+- `Q80_TO_ROOTLESS_PATH_2026-08-21.md` — historical Q80 neighbour corridor.
+- `Q80_THIRD_Q12_COMMON_PRODUCER_2026-09-01.md` — expensive third-`q12` producer/reconstruction route.
+- `A11_EQUATION_COST_ROUTE_HANDOFF_2026-08-24.md` — earlier A11 equation-cost route handoff.
+- `RECONSTRUCTION_PROGRESS.md` — superseded reconstruction progress narrative.
+- `RESEARCH_UPDATE_2026-08-20.md` and `RESEARCH_UPDATE_2026-08-22.md` — historical point-in-time updates.
+
+Use the immutable URL pattern:
+
+```text
+https://github.com/royvanrijn/jacobian-research/blob/f47f1a1872881680d9296170f3f9619bcc943c29/elkies-k3/<filename>
+```
+
+The proof artifacts, exact certificates, and replay scripts were intentionally **not** deleted. Archiving a route means it is no longer an operational starting point; it does not erase the evidence.
