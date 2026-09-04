@@ -17,6 +17,7 @@ exclusion of the double-shear chart or of the other double-shear orbits.
 
 from __future__ import annotations
 
+import argparse
 from fractions import Fraction
 from hashlib import sha256
 from itertools import combinations
@@ -130,7 +131,21 @@ def double_shear_census() -> dict[str, object]:
         ]
         for support in combinations(positions, 2):
             charts.append((r, s, tuple(support)))
-    representatives = {min(chart, reversal(chart)) for chart in charts}
+    chart_set = set(charts)
+    if len(chart_set) != len(charts):
+        raise AssertionError("double-shear labelled chart domain contains duplicates")
+    if any(reversal(reversal(chart)) != chart for chart in chart_set):
+        raise AssertionError("double-shear reversal is not an involution")
+    if any(reversal(chart) not in chart_set for chart in chart_set):
+        raise AssertionError("double-shear reversal leaves the labelled chart domain")
+    representatives = {min(chart, reversal(chart)) for chart in chart_set}
+    covered = {
+        chart
+        for representative in representatives
+        for chart in (representative, reversal(representative))
+    }
+    if covered != chart_set:
+        raise AssertionError("double-shear representatives do not cover every chart")
     profiles = {
         "same_row_different_columns": 0,
         "different_rows_same_column": 0,
@@ -159,7 +174,36 @@ def double_shear_census() -> dict[str, object]:
     }
 
 
+def validate_existing_census(path: Path) -> None:
+    artifact = json.loads(path.read_text(encoding="utf-8"))
+    if (
+        artifact.get("format")
+        != "two-pair-sic-bidegree44-rank-two-double-shear-real-prefix-v1"
+    ):
+        raise AssertionError("unexpected double-shear artifact format")
+    census = double_shear_census()
+    if artifact.get("double_shear_census") != census:
+        raise AssertionError("stored double-shear census does not match exact coverage")
+    print("PASS exact reversal orbits cover all 150 labelled double-shear charts")
+    print("PASS stored 78-orbit profile census matches the reconstructed domain")
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument(
+        "--audit-census-only",
+        action="store_true",
+        help=(
+            "validate the exact labelled-chart reversal cover and stored "
+            "profile totals without replaying the Krawczyk certificate"
+        ),
+    )
+    arguments = parser.parse_args()
+    if arguments.audit_census_only:
+        validate_existing_census(arguments.output)
+        return
+
     a, b01, b02, b03, b11, b12, b13 = sp.symbols(
         "a b01 b02 b03 b11 b12 b13"
     )
@@ -290,8 +334,8 @@ def main() -> None:
             "other 77 reversal orbits remain open"
         ),
     }
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n", encoding="utf-8")
+    arguments.output.parent.mkdir(parents=True, exist_ok=True)
+    arguments.output.write_text(json.dumps(artifact, indent=2) + "\n", encoding="utf-8")
 
     print("PASS 150 double-shear charts reduce to 78 reversal orbits")
     print("PASS exact rational Krawczyk box isolates a real mu_1,...,mu_8 zero")

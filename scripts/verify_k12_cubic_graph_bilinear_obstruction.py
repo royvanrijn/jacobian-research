@@ -10,6 +10,7 @@ full normalized linear graph-coordinate families.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from pathlib import Path
@@ -583,6 +584,9 @@ def certify_stratified_family(
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--write", action="store_true")
+    args = parser.parse_args()
     variables, k12 = build_k12()
     families = {
         family.pivot: family
@@ -637,10 +641,17 @@ def main() -> None:
             "dimension-eleven lower bound."
         ),
     }
-    OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n")
-    digest = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    serialized = json.dumps(artifact, indent=2) + "\n"
+    if args.write:
+        OUTPUT.write_text(serialized)
+    else:
+        assert OUTPUT.exists(), f"missing {OUTPUT.relative_to(ROOT)}"
+        assert OUTPUT.read_text() == serialized, (
+            f"{OUTPUT.relative_to(ROOT)} is stale; regenerate with --write"
+        )
+    digest = hashlib.sha256(serialized.encode()).hexdigest()
     print("PASS all nine full cubic graph families have exact bilinear obstructions")
-    print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
+    print(f"PASS checked {OUTPUT.relative_to(ROOT)}")
     print(f"SHA256 {digest}")
 
 

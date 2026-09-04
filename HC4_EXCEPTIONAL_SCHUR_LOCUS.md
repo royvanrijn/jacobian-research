@@ -383,6 +383,10 @@ a new reduced Schur pair or an `HC(4)` candidate.
 
 ## 8. Later cube-torsion experiment
 
+<!-- status-consumer: HC4QSE5 f3a101cdb7150e40 -->
+
+The following two sections are the partial registry record `HC4QSE5`.
+
 The follow-up
 [`HC4_FITTING_DENOMINATOR_EXTRACTION.md`](HC4_FITTING_DENOMINATOR_EXTRACTION.md)
 constructs the canonical degree-three module behind the fifteen cube
@@ -399,6 +403,11 @@ vanish and the reduced fiber is still the origin.  Thus cube-certificate
 torsion does not equal the reduced exceptional Schur locus.  The exact
 integral zeroth Fitting ideal and associated-prime equality remain open
 after 900-second Singular timeouts.
+
+The maintenance command
+`python3 scripts/audit_hc4_fitting_denominator_artifacts.py` checks the two
+committed ledgers, their source hash, and these scope boundaries without
+rerunning Singular or either finite-field scan.
 
 ## 9. Full reduced-fiber fourth-power scan
 

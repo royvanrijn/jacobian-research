@@ -707,6 +707,23 @@ higher-torsion locus remains open.
 
 ## 8. Reproduction and next searches
 
+For cleanup and provenance review only, without importing SymPy, invoking
+Macaulay2, or rebuilding a ledger, run:
+
+```bash
+python3 scripts/audit_projective_gradient_segre_artifacts.py
+```
+
+The audit pins the registry, smooth-slice, and singular-slice artifacts at
+whole-file SHA-256
+`1678eac19cc8e59a123ec84836f8f2a89f3b697a29c241e3b26e6987180fd00f`,
+`5853c8fa609879663b31f680591a5e612ab944b1637902de5dcd115c9400837b`,
+and
+`c6971874b5359e4aed11a8918328804f9ffdd6e67811f49c9ff79b2a8c5d7b72`.
+It also checks the imported helper and the four Macaulay2 calibration files.
+The three Python verifiers now compare their generated serialization with the
+committed bytes by default; rewriting requires an explicit `--write`.
+
 Run the dimension-free algebra, constructors, integrability test, family
 registry, and independent Macaulay2 calibrations with:
 
@@ -726,6 +743,9 @@ M2 --script scripts/verify_hc4_codim3_gradient_strata.m2
 .venv/bin/python scripts/verify_hc4_binary_root_partition_segre.py
 M2 --script scripts/verify_hc4_binary_root_partition_segre.m2
 ```
+
+Use `--write` on one of the first three Python commands only after an
+intentional theorem, regression-range, or schema change.
 
 The existing `HC4` atlas now imports the same transform:
 

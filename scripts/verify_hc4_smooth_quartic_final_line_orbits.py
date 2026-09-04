@@ -16,6 +16,7 @@ linear algebra, not a sampled or finite-field calculation.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 from dataclasses import dataclass
 from pathlib import Path
@@ -24,9 +25,6 @@ import sympy as sp
 from sympy.polys.domains import QQ
 from sympy.polys.matrices import DomainMatrix
 from sympy.polys.rings import PolyElement, ring
-
-from research_hc4_smooth_quartic_simple_line import build_equations, unknown_degree
-
 
 ROOT = Path(__file__).resolve().parents[1]
 DRIVER = ROOT / "scripts" / "research_hc4_smooth_quartic_simple_line.py"
@@ -102,6 +100,8 @@ def solve_linear_layer(
     unknowns: tuple[sp.Symbol, ...],
     exact: ExactField,
 ) -> tuple[tuple[int, ...], tuple[int, ...], list[list[object]]]:
+    from research_hc4_smooth_quartic_simple_line import unknown_degree
+
     linear_equations = [
         equation for equation in equations if unknown_degree(equation, unknowns) <= 1
     ]
@@ -269,6 +269,8 @@ def verify_zero_boundary_support() -> None:
 
 
 def verify_component(component: str, exact: ExactField) -> None:
+    from research_hc4_smooth_quartic_simple_line import build_equations
+
     equations, unknowns, _ = build_equations("squarefree-line", False)
     assert len(equations) == 81
     substitution = line_substitution(component, exact)
@@ -319,8 +321,22 @@ def verify_component(component: str, exact: ExactField) -> None:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--audit-existing-only",
+        action="store_true",
+        help="verify committed equation-builder provenance without exact-field replay",
+    )
+    arguments = parser.parse_args()
+
     digest = hashlib.sha256(DRIVER.read_bytes()).hexdigest()
     assert digest == DRIVER_SHA256, (digest, DRIVER_SHA256)
+    if arguments.audit_existing_only:
+        print(
+            "PASS committed HC4 smooth-quartic final-line provenance is intact; "
+            "no symbolic or exact-field replay"
+        )
+        return
     exact = make_exact_field()
     verify_polar_factorization(exact)
     verify_zero_boundary_support()

@@ -15,25 +15,12 @@ subsequently excluded by HC4RSD3 and is recorded separately.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from pathlib import Path
-import sys
-
-import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
-
-from jcsearch.reverse_schur_descent import (
-    ScalarPivotSchurFamily,
-    adjugate_divergence_residuals,
-    corank_one_adjugate_scalar,
-    hessian_integrability_residuals,
-    kernel_line_piola_residuals,
-)
-
-
 OUTPUT = (
     ROOT
     / "artifacts"
@@ -45,6 +32,75 @@ ATLAS = (
     / "artifacts"
     / "generated-results"
     / "hc4_projective_polar_atlas.json"
+)
+HELPER = ROOT / "jcsearch" / "reverse_schur_descent.py"
+EXPECTED_OUTPUT_SHA256 = (
+    "8df7456358f15af946f2c0160a5419c7ea11f4cc9500d63d5aa6f694f936501d"
+)
+EXPECTED_ATLAS_SHA256 = (
+    "350bc81b4ba7ac21289d7548f6d46de6526887c4e98a0813596cf20a454b240b"
+)
+EXPECTED_HELPER_SHA256 = (
+    "b80da9da8105caa51fa38fc178a3a256d9132335a91bb5a87bb84eab96cf3e44"
+)
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def audit_existing() -> None:
+    assert sha256(OUTPUT) == EXPECTED_OUTPUT_SHA256
+    assert sha256(ATLAS) == EXPECTED_ATLAS_SHA256
+    assert sha256(HELPER) == EXPECTED_HELPER_SHA256
+    payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    atlas = json.loads(ATLAS.read_text(encoding="utf-8"))
+    assert payload["format"] == "hc4-affine-moving-kernel-pencils-v1"
+    assert payload["status"]["id"] == "HC4RSD2"
+    live_rows = atlas["quintic_coverage_summary"][
+        "remaining_numerical_signatures_after_vertex_colength"
+    ]
+    assert payload["projective_polar_intersection"]["input_live_rows"] == live_rows
+    assert payload["projective_polar_intersection"]["surviving_rows"] == 0
+    assert payload["subsequent_frontier"]["parameter_moving_affine"].startswith(
+        "excluded in HC4RSD3"
+    )
+    assert payload["subsequent_frontier"]["nonlinear_fixed_shear"].endswith(
+        "closed by HC4RSD4"
+    )
+    print(
+        "PASS: committed HC4RSD2 artifact, consumed atlas, and equation helper "
+        "are intact; the recorded affine handoffs are closed by HC4RSD3--4; "
+        "no symbolic replay or rewrite"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help=(
+        "validate committed inputs and later handoffs without symbolic replay "
+        "or artifact rewriting"
+    ),
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
+import sys
+
+import sympy as sp
+
+sys.path.insert(0, str(ROOT))
+
+from jcsearch.reverse_schur_descent import (
+    ScalarPivotSchurFamily,
+    adjugate_divergence_residuals,
+    corank_one_adjugate_scalar,
+    hessian_integrability_residuals,
+    kernel_line_piola_residuals,
 )
 
 

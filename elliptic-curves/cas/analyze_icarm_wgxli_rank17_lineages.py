@@ -4,7 +4,9 @@
 This is a source-comparative and numerical construction fingerprint.  It does
 not prove that any cluster is a common family, that its generic rank is 17, or
 that it is a rootless elliptic K3.  The public database snapshot and the five
-target curve records are hash-pinned as retrieved on 2026-09-01.
+target curve records are hash-pinned as retrieved on 2026-09-01.  The default
+replay uses later committed exact projections which retain every field used by
+this checker; ``--live-pinned-source`` retains the original raw-URL audit.
 """
 
 from __future__ import annotations
@@ -48,6 +50,21 @@ TARGET_SOURCES = {
     377: "b22e30ccadb8243a8b0c02c18761251e0e94835eee3e4e250731e94e1cd8d62a",
     385: "633538058f79df2ac75871ab8e8e892c776244590577e3fec4505ec639e58bee",
 }
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
+OFFLINE_DATABASE_PROJECTION = (
+    REPOSITORY_ROOT
+    / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-database-sweep-v1.json"
+)
+OFFLINE_DATABASE_PROJECTION_SHA256 = (
+    "6529f6dc81fb37f163c7fca761e7eaff1a2ffb7ab40a81cbfc9002e40165dbd2"
+)
+OFFLINE_PUBLIC_FIBRES = (
+    REPOSITORY_ROOT
+    / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json"
+)
+OFFLINE_PUBLIC_FIBRES_SHA256 = (
+    "9a2675ab48cc37111d1f4050bd1797fc84c98b7839668d292d11406efe7a9eaa"
+)
 EXPECTED_COMPONENTS_AT_RESIDUAL_POINT_TWO = (
     (351, 356, 376, 377, 385),
     (363, 364, 378),
@@ -79,7 +96,11 @@ def fetch_bytes(url: str, expected_hash: str) -> bytes:
     return raw
 
 
-def load_sources() -> tuple[dict[int, dict[str, object]], dict[int, dict[str, object]]]:
+def load_live_pinned_sources() -> tuple[
+    dict[int, dict[str, object]], dict[int, dict[str, object]]
+]:
+    """Reload the original raw 2026-09-01 sources if still mirrored byte-for-byte."""
+
     database_raw = fetch_bytes(*DATABASE_SOURCE)
     database = json.loads(database_raw)
     if database.get("count") != DATABASE_COUNT:
@@ -102,6 +123,84 @@ def load_sources() -> tuple[dict[int, dict[str, object]], dict[int, dict[str, ob
                 raise AssertionError(f"curve {curve_id} disagrees with database at {key}")
         target_records[curve_id] = target
     return submitter_records, target_records
+
+
+def checked_json(path: Path, expected_hash: str) -> dict[str, object]:
+    observed_hash = hashlib.sha256(path.read_bytes()).hexdigest()
+    if observed_hash != expected_hash:
+        raise AssertionError(
+            f"repository-local source projection changed: {path}: "
+            f"{observed_hash} != {expected_hash}"
+        )
+    return json.loads(path.read_text())
+
+
+def load_offline_sources() -> tuple[
+    dict[int, dict[str, object]], dict[int, dict[str, object]]
+]:
+    """Recover every claim-relevant source field from committed projections."""
+
+    database_projection = checked_json(
+        OFFLINE_DATABASE_PROJECTION, OFFLINE_DATABASE_PROJECTION_SHA256
+    )
+    public_fibres = checked_json(
+        OFFLINE_PUBLIC_FIBRES, OFFLINE_PUBLIC_FIBRES_SHA256
+    )
+    snapshot = database_projection.get("snapshot")
+    if not isinstance(snapshot, dict):
+        raise AssertionError("offline database projection has no snapshot")
+    if (
+        snapshot.get("original_curve_count") != DATABASE_COUNT
+        or snapshot.get("original_database_date") != "2026-09-01"
+        or snapshot.get("original_raw_database_sha256") != DATABASE_SOURCE[1]
+    ):
+        raise AssertionError("offline database projection does not recover the pinned snapshot")
+    source = public_fibres.get("source")
+    if not isinstance(source, dict) or source.get("projection_rule") != (
+        "For every curve recognized by the exact six-class sweep, retain the "
+        "listed fields and the first snapshot_rank_lower_bound points."
+    ):
+        raise AssertionError("offline public-fibre projection has an unknown scope")
+
+    snapshot_records = snapshot.get("curves")
+    fibre_records = public_fibres.get("records")
+    if not isinstance(snapshot_records, list) or not isinstance(fibre_records, list):
+        raise AssertionError("offline source projections have invalid record arrays")
+    snapshot_by_id = {int(record["id"]): record for record in snapshot_records}
+    fibres_by_id = {int(record["id"]): record for record in fibre_records}
+    if tuple(sorted(snapshot_by_id)) != tuple(range(1, DATABASE_COUNT + 1)):
+        raise AssertionError("offline database projection does not contain ids 1 through 474")
+
+    submitter_records: dict[int, dict[str, object]] = {}
+    for curve_id in SUBMITTER_CURVE_IDS:
+        metadata = snapshot_by_id.get(curve_id)
+        fibre = fibres_by_id.get(curve_id)
+        if metadata is None or fibre is None:
+            raise AssertionError(f"offline projection omitted wgxli curve {curve_id}")
+        rank_lower_bound = int(metadata["snapshot_rank_lower_bound"])
+        if (
+            metadata.get("submitter") != SUBMITTER
+            or metadata.get("ainvs") != fibre.get("ainvs")
+            or metadata.get("created_at") != fibre.get("created_at")
+            or int(fibre["snapshot_rank_lower_bound"]) != rank_lower_bound
+        ):
+            raise AssertionError(f"offline projections disagree for curve {curve_id}")
+        points = fibre.get("points")
+        if not isinstance(points, list) or len(points) < 17:
+            raise AssertionError(f"offline projection lacks 17 points for curve {curve_id}")
+        submitter_records[curve_id] = {
+            "id": curve_id,
+            "ainvs": fibre["ainvs"],
+            "points": points,
+            "rank_lower_bound": rank_lower_bound,
+            "submitter": SUBMITTER,
+            "created_at": fibre["created_at"],
+        }
+    if tuple(sorted(submitter_records)) != SUBMITTER_CURVE_IDS:
+        raise AssertionError("offline submitter inventory changed")
+    return submitter_records, {
+        curve_id: submitter_records[curve_id] for curve_id in TARGET_CURVE_IDS
+    }
 
 
 def rational_text(value: str | int) -> str:
@@ -319,8 +418,10 @@ def admissible_interpolation_primes(
     return admissible
 
 
-def build_payload() -> dict[str, object]:
-    submitter_records, target_records = load_sources()
+def build_payload(*, live_pinned_source: bool = False) -> dict[str, object]:
+    submitter_records, target_records = (
+        load_live_pinned_sources() if live_pinned_source else load_offline_sources()
+    )
     matrices, pari_version = height_matrices(submitter_records)
     components = residual_components(matrices, 0.2)
     if components != EXPECTED_COMPONENTS_AT_RESIDUAL_POINT_TWO:
@@ -426,8 +527,16 @@ def main() -> None:
         type=Path,
         help="write the complete deterministic JSON payload to this path",
     )
+    parser.add_argument(
+        "--live-pinned-source",
+        action="store_true",
+        help=(
+            "require the original raw URLs to retain their 2026-09-01 byte hashes; "
+            "the default uses sufficient repository-local projections"
+        ),
+    )
     args = parser.parse_args()
-    payload = build_payload()
+    payload = build_payload(live_pinned_source=args.live_pinned_source)
     rendered = json.dumps(payload, indent=2, sort_keys=True) + "\n"
     if args.write_artifact:
         args.write_artifact.parent.mkdir(parents=True, exist_ok=True)

@@ -13,12 +13,10 @@ rank-one nonzero-corner stratum.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from pathlib import Path
-
-import sympy as sp
-
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = (
@@ -27,6 +25,52 @@ OUTPUT = (
     / "generated-results"
     / "hc4_scalar_cancellation_dichotomy.json"
 )
+EXPECTED_OUTPUT_SHA256 = (
+    "e051d9c5b320dc008106e37ea80f98fdeb1c88d1576d8149de79448c3c6381ac"
+)
+
+
+def audit_existing() -> None:
+    actual = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    assert actual == EXPECTED_OUTPUT_SHA256, (actual, EXPECTED_OUTPUT_SHA256)
+    payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    assert payload["format"] == "hc4-scalar-cancellation-dichotomy-v1"
+    assert [row["id"] for row in payload["status"]] == [
+        "HC4RSD11",
+        "HC4RSD12",
+        "HC4RSD13",
+        "HC4RSD14",
+        "HC4RSD15",
+        "HC4RSD16",
+    ]
+    assert payload["quadratic_corollary"]["conclusion"] == (
+        "every quadratic zero-corner parent is collision-free"
+    )
+    assert payload["rank_one_nonlinear_pencil"]["conclusion"].endswith(
+        "HC2 or the JC2 cotangent packet"
+    )
+    assert payload["open_frontier"].startswith(
+        "higher-degree nonlinear four-variable constant-Hessian pencils"
+    )
+    print(
+        "PASS: committed HC4RSD11--16 stage artifact is intact; its "
+        "higher-degree pencil frontier is historical and superseded by HC4MR1; "
+        "no symbolic replay or rewrite"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help="validate the committed stage artifact without symbolic replay or rewriting it",
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
+import sympy as sp
 
 
 # Universal nonzero-corner Schur identity.

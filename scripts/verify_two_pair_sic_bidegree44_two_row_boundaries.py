@@ -28,6 +28,7 @@ notes or status ledger.
 
 from __future__ import annotations
 
+import argparse
 from collections import Counter
 from dataclasses import dataclass
 from hashlib import sha256
@@ -290,7 +291,153 @@ def compact(result: IdealResult) -> dict[str, object]:
     }
 
 
+def require_stored_unit(result: object, *, context: str) -> None:
+    if not isinstance(result, dict) or result.get("unit") is not True:
+        raise AssertionError(f"stored {context} is not a unit certificate")
+
+
+def require_stored_nonunit(result: object, *, context: str) -> None:
+    if not isinstance(result, dict) or result.get("unit") is not False:
+        raise AssertionError(f"stored {context} is not a nonunit certificate")
+
+
+def validate_existing_artifact(path: Path) -> None:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if payload.get("format") != "two-pair-sic-bidegree44-two-row-boundaries-v1":
+        raise AssertionError("unexpected separated-row boundary artifact format")
+
+    representatives = support_orbits(proper=True)
+    records = payload.get("support_orbits")
+    if not isinstance(records, list):
+        raise AssertionError("boundary artifact has no support_orbits list")
+    stored_supports = [tuple(record.get("weights", ())) for record in records]
+    if stored_supports != representatives:
+        raise AssertionError(
+            "stored boundary supports are not the exact ordered canonical census"
+        )
+    if len(stored_supports) != len(set(stored_supports)):
+        raise AssertionError("stored boundary census contains duplicate supports")
+    if (
+        payload.get("proper_support_orbit_count") != len(representatives)
+        or len(representatives) != 135
+    ):
+        raise AssertionError("unexpected stored boundary orbit count")
+
+    stratum_counts: Counter[str] = Counter()
+    mixed_cutoffs: Counter[int] = Counter()
+    stratified_supports: set[tuple[int, ...]] = set()
+    for record, support in zip(records, representatives, strict=True):
+        if record.get("support_size") != len(support):
+            raise AssertionError(f"wrong support size for {support}")
+        if record.get("positions") != [list(position(weight)) for weight in support]:
+            raise AssertionError(f"wrong coefficient positions for {support}")
+        support_stratum = matrix_stratum(support)
+        if record.get("matrix_stratum") != support_stratum:
+            raise AssertionError(f"wrong matrix stratum for {support}")
+        stratum_counts[support_stratum] += 1
+
+        if support_stratum in {"rank_zero", "rank_one_one_sided"}:
+            if "sharp_cutoff" in record:
+                raise AssertionError(f"spurious moment cutoff for {support}")
+        else:
+            cutoff = record.get("sharp_cutoff")
+            if not isinstance(cutoff, int) or not 2 <= cutoff <= MAXIMUM_BOUNDARY_CUTOFF:
+                raise AssertionError(f"invalid sharp cutoff for {support}")
+            require_stored_nonunit(
+                record.get("through_previous"),
+                context=f"preceding moment ideal on {support}",
+            )
+            require_stored_unit(
+                record.get("through_cutoff"),
+                context=f"terminal moment ideal on {support}",
+            )
+            mixed_cutoffs[cutoff] += 1
+
+        rank_data = record.get("rank_stratification")
+        if support_stratum == "rank_one_and_exact_rank_two":
+            stratified_supports.add(support)
+            expected_minors = tuple(str(value) for value in row_minors(support))
+            if not isinstance(rank_data, dict):
+                raise AssertionError(f"missing rank stratification for {support}")
+            if tuple(rank_data.get("minors", ())) != expected_minors:
+                raise AssertionError(f"stored minors do not cover {support}")
+            charts = rank_data.get("exact_rank_two_cover")
+            if not isinstance(charts, list):
+                raise AssertionError(f"missing exact-rank-two cover for {support}")
+            if tuple(chart.get("minor") for chart in charts) != expected_minors:
+                raise AssertionError(f"minor-open cover is incomplete for {support}")
+            for index, chart in enumerate(charts):
+                require_stored_nonunit(
+                    chart.get("through_previous"),
+                    context=f"preceding minor-open ideal {index} on {support}",
+                )
+                require_stored_unit(
+                    chart.get("through_cutoff"),
+                    context=f"terminal minor-open ideal {index} on {support}",
+                )
+            closed = rank_data.get("rank_one_closed_locus")
+            if not isinstance(closed, dict):
+                raise AssertionError(f"missing rank-one closed locus for {support}")
+            require_stored_nonunit(
+                closed.get("through_previous"),
+                context=f"preceding rank-one ideal on {support}",
+            )
+            require_stored_unit(
+                closed.get("through_cutoff"),
+                context=f"terminal rank-one ideal on {support}",
+            )
+        elif rank_data is not None:
+            raise AssertionError(f"spurious rank stratification for {support}")
+
+    expected_strata = Counter(
+        {
+            "rank_zero": 1,
+            "rank_one_one_sided": 15,
+            "rank_one_mixed": 2,
+            "rank_one_and_exact_rank_two": 3,
+            "exact_rank_two": 114,
+        }
+    )
+    expected_cutoffs = Counter({2: 56, 3: 17, 4: 15, 5: 8, 6: 18, 7: 5})
+    if stratum_counts != expected_strata:
+        raise AssertionError(f"unexpected reconstructed strata: {stratum_counts}")
+    if Counter(payload.get("stratum_counts", {})) != expected_strata:
+        raise AssertionError("stored stratum totals do not match the exact records")
+    if mixed_cutoffs != expected_cutoffs:
+        raise AssertionError(f"unexpected reconstructed cutoffs: {mixed_cutoffs}")
+    stored_cutoffs = Counter(
+        {
+            int(order): count
+            for order, count in payload.get(
+                "mixed_sharp_cutoff_distribution", {}
+            ).items()
+        }
+    )
+    if stored_cutoffs != expected_cutoffs:
+        raise AssertionError("stored cutoff totals do not match the exact records")
+    if len(stratified_supports) != 3:
+        raise AssertionError("not every mixed-rank support was stratified")
+
+    print("PASS exact canonical keys cover all 135 proper support orbits once")
+    print("PASS stored strata, cutoffs, and all three rank covers are fail-closed")
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument(
+        "--audit-existing-only",
+        action="store_true",
+        help=(
+            "validate exact stored support keys, strata, sharp cutoffs, and "
+            "rank covers without rerunning msolve"
+        ),
+    )
+    arguments = parser.parse_args()
+    if arguments.audit_existing_only:
+        validate_existing_artifact(arguments.output)
+        return
+
     representatives = support_orbits(proper=True)
     assert len(representatives) == 135
     assert representatives[0] == ()
@@ -427,13 +574,16 @@ def main() -> None:
             "three equal-row-support tori; no other rank-two factor chart"
         ),
     }
-    OUTPUT.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    arguments.output.parent.mkdir(parents=True, exist_ok=True)
+    arguments.output.write_text(
+        json.dumps(payload, indent=2) + "\n", encoding="utf-8"
+    )
 
     print("PASS classified 135 proper support orbits under weight negation")
     print("PASS 15 nonzero one-sided orbits have every pure moment zero")
     print("PASS all 119 mixed boundary orbits have sharp cutoff at most seven")
     print("PASS split three coefficient tori into rank-one and rank-two strata")
-    print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
+    print(f"PASS wrote {arguments.output}")
 
 
 if __name__ == "__main__":

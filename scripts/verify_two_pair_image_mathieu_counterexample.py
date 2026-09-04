@@ -434,7 +434,10 @@ def main() -> None:
         "PASS SIC(2): E_2(F^m)=0 and "
         "E_2(Q*F^m)=(4m+2)!m!/(2m+1)!! through m=8"
     )
-    print("PASS SIC(2): all-order finite-sum identities through m=99")
+    print(
+        "PASS SIC(2): bounded replay of the written all-order finite-sum "
+        "formulas through m=99"
+    )
     print(
         "PASS MN_d: F_d=R^(d-4)F has the claimed pure and mixed "
         "contractions for 4<=d<=10 and m<=4"

@@ -18,14 +18,54 @@ the global hyperplane-pencil argument in ``HC4RSD80``.
 """
 from __future__ import annotations
 
+import argparse
+import hashlib
 import json
 from pathlib import Path
 
-import sympy as sp
-
-
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "artifacts" / "generated-results" / "hc4_affine_plane_prolongation.json"
+EXPECTED_OUT_SHA256 = "d258b2b9be7a0906bae70a317044ba2011ed5dea6d2b8d765f8d0571a0217cf0"
+
+
+def audit_existing() -> None:
+    actual = hashlib.sha256(OUT.read_bytes()).hexdigest()
+    assert actual == EXPECTED_OUT_SHA256, (actual, EXPECTED_OUT_SHA256)
+    payload = json.loads(OUT.read_text(encoding="utf-8"))
+    assert payload["scope"] == (
+        "second-order flatness and lower flag geometry after HC4RSD77"
+    )
+    assert payload["first_order_unknowns"] == 64
+    assert payload["first_order_rank"] == 47
+    assert payload["first_order_parameters"] == 17
+    assert payload["curvature_equations"] == 96
+    assert payload["derivative_unknowns"] == 68
+    assert payload["derivative_rank"] == 48
+    assert payload["compatibility_equations"] == 4
+    assert payload["first_order_witness_survives_flatness"] is True
+    assert payload["maximal_motion"]["saturation_by_a"] == "unit ideal"
+    assert payload["maximal_motion"]["flat_witness_survives"] is False
+    assert payload["canonical_frame_gauge"]["residual_group"] == "+/- I"
+    assert "local rank-one split" in payload["proof_boundary"]
+    assert "proved in the companion note" in payload["proof_boundary"]
+    print(
+        "PASS: committed HC4 affine-plane prolongation artifact is intact and "
+        "retains its local-proof boundary; no symbolic replay or rewrite"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help="validate the committed artifact without symbolic replay or rewriting it",
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
+import sympy as sp
 
 n = 4
 Gamma: dict[tuple[int, int, int], sp.Symbol] = {}

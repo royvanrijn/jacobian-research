@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 from dataclasses import asdict
 import hashlib
 import json
@@ -431,7 +432,20 @@ payload = {
 }
 
 serialized = json.dumps(payload, indent=2, sort_keys=True) + "\n"
-OUTPUT.write_text(serialized)
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument(
+    "--write",
+    action="store_true",
+    help="rewrite the pinned generated artifact",
+)
+args = parser.parse_args()
+if args.write:
+    OUTPUT.write_text(serialized)
+else:
+    assert OUTPUT.exists(), f"missing {OUTPUT.relative_to(ROOT)}"
+    assert OUTPUT.read_text() == serialized, (
+        f"{OUTPUT.relative_to(ROOT)} is stale; regenerate with --write"
+    )
 digest = hashlib.sha256(serialized.encode()).hexdigest()
 
 print("PASS: all-dimensional projective-degree/Segre transforms are inverse")
@@ -440,5 +454,5 @@ print("PASS: homogeneous integrability reconstructs the infinity potential")
 print("PASS: attached the all-dimensional smooth-essential normal slice")
 print("PASS: attached the all-dimensional singular-stratum DVR profile")
 print("PASS: complete and top-degree-only family records stay separated")
-print(f"PASS: wrote {OUTPUT.relative_to(ROOT)}")
+print(f"PASS: checked {OUTPUT.relative_to(ROOT)}")
 print(f"SHA256: {digest}")

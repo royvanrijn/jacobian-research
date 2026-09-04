@@ -93,6 +93,8 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json
 !/artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json
 !/artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json
+!/artifacts/generated-results/elkies-k3-golay-det720-qq-marking-obstruction-v1.json
+!/artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json
 !/artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json
 !/artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json
 !/artifacts/generated-results/elkies-k3-r17-multisection-visibility-filtration-v1.json

@@ -63,6 +63,8 @@ The exact block identities and normal-form calibrations are replayed by
 [scripts/verify_hc4_quadratic_rank_two_pivots.py](scripts/verify_hc4_quadratic_rank_two_pivots.py),
 which writes
 [artifacts/generated-results/hc4_quadratic_rank_two_pivots.json](artifacts/generated-results/hc4_quadratic_rank_two_pivots.json).
+Its rank-one `open_frontier` is the historical `HC4RSD9` handoff and is closed
+by `HC4RSD10`.
 
 ## 1. Hyperbolic pivot and passive splitting
 
@@ -300,6 +302,8 @@ Run:
 
 ~~~bash
 .venv/bin/python scripts/verify_hc4_quadratic_rank_two_pivots.py
+# committed `HC4RSD9` stage artifact only, without symbolic replay:
+.venv/bin/python scripts/verify_hc4_quadratic_rank_two_pivots.py --audit-existing-only
 ~~~
 
 The command checks all block determinant faces, the all-degree normal-form

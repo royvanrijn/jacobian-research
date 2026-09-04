@@ -9,8 +9,6 @@ from pathlib import Path
 import shutil
 import subprocess
 
-from research_hc4_smooth_quartic_simple_line_strata import build_program
-
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE_DRIVER = ROOT / "scripts" / "research_hc4_smooth_quartic_simple_line.py"
@@ -69,6 +67,8 @@ def parse_basis(output: str, begin: str, end: str) -> list[str]:
 
 
 def verify_group(group: str) -> None:
+    from research_hc4_smooth_quartic_simple_line_strata import build_program
+
     program, equation_count, _ = build_program(group, "full")
     assert equation_count == (67 if group == "tau0-delta-m3" else 81)
     result = subprocess.run(
@@ -104,10 +104,21 @@ def verify_group(group: str) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--group", choices=("all", *EXPECTED), default="all")
+    parser.add_argument(
+        "--audit-existing-only",
+        action="store_true",
+        help="verify committed equation-builder provenance without Singular replay",
+    )
     args = parser.parse_args()
-    assert shutil.which("Singular") is not None
     assert digest(BASE_DRIVER) == BASE_SHA256
     assert digest(STRATA_DRIVER) == STRATA_SHA256
+    if args.audit_existing_only:
+        print(
+            "PASS committed HC4 smooth-quartic exceptional-slice provenance "
+            "is intact; no symbolic or Singular replay"
+        )
+        return
+    assert shutil.which("Singular") is not None
     groups = EXPECTED if args.group == "all" else (args.group,)
     for group in groups:
         verify_group(group)

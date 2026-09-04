@@ -21,6 +21,10 @@ checker also recombines each linear and reduced basis and verifies zero
 remainders for all 18 active variables (using $b_{12}^2$ on the one
 set-theoretic slice).
 
+For repository maintenance, `--audit-existing-only` verifies the exact hashes
+of both imported equation builders without constructing a stratum or invoking
+Singular.  It is a provenance check, not a replacement proof.
+
 ## 1. Starting equations
 
 Retain the notation of `HC4NHM16`:

@@ -1,5 +1,7 @@
 # Prime-power discriminant engineering by CRT and rational lattices
 
+<!-- status-consumer: EC-CRT-BEAM-NONMONOTONE 5ae7e135da8cc80f -->
+
 ## Exact local-to-global core
 
 Let \(F\in\mathbb Z[t]\) be a squarefree-base factor of a family
@@ -133,6 +135,14 @@ local symbols.  CRT assembles them, and exact rational reconstruction supplies
 the height penalty.  Scoring must be trained or calibrated on held-out
 specializations; an additive Nagao score is a heuristic ranking, not a rank
 certificate.
+
+Beam survival is not a completeness statement.  Short rational-representative
+height is nonmonotone under incremental CRT: the exact four-prime regression in
+[`../tests/test_crt_lattice.py`](../tests/test_crt_lattice.py) gives height
+`1409` for the width-one survivor while a pruned branch completes to `48/53`,
+of height `53`.  Consequently a finite beam may propose and order work, but it
+may not reject any omitted CRT class.  An exhaustive claim requires the full
+Cartesian product (or a separately proved lossless reduction).
 
 The residue-only local table resolves good and clean multiplicative fibers.
 When both `c4` and the discriminant vanish modulo a prime, it records

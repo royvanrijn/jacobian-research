@@ -272,3 +272,13 @@ has SHA-256
 It records the exact radical certificate (3.8), the factorization (3.9),
 the degree-nine generic off-axis fiber, both dominant-sheet quartic
 collapses, and the unresolved off-axis quartic timeout.
+
+The 240-second off-axis timeout is a retained historical observation
+serialized in this checker; the checker does not rerun that unresolved branch,
+and the stored inference is explicitly `none`. To verify both committed
+ledgers, their source hashes, completed dimensions, and timeout boundaries
+without importing SymPy or launching Singular, run
+
+```bash
+python3 scripts/audit_degree_four_q2_moment_artifacts.py
+```

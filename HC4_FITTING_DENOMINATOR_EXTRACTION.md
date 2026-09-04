@@ -2,6 +2,8 @@
 
 ## Status
 
+Registry entry: `HC4QSE5` (**partial**).
+
 This note records an **exact specialized and finite-field module
 experiment**, not a completed characteristic-zero Fitting computation.
 It corrects the proposed module presentation, identifies a new rational
@@ -15,6 +17,11 @@ therefore not reached.  No partial output from those runs is used as a
 certificate.  The reproducible finite-field scans and exact rational
 specializations are recorded in
 [`hc4_fitting_denominator_extraction.json`](artifacts/generated-results/hc4_fitting_denominator_extraction.json).
+The companion bounded fourth-power ledger is
+[`hc4_fourth_power_support.json`](artifacts/generated-results/hc4_fourth_power_support.json).
+For maintenance without any algebra or scan, run
+`python3 scripts/audit_hc4_fitting_denominator_artifacts.py`; it only verifies
+the committed bytes, generating-source hash, and the fail-closed scope below.
 
 ## 1. The canonical module
 

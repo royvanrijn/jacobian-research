@@ -24,6 +24,42 @@ class ResidualSelmerGateError(ValueError):
     """A purported descent artifact cannot authorize expensive search."""
 
 
+def pari_ellrank_total_two_selmer_dimension(
+    *,
+    rank_lower: int,
+    rank_upper: int,
+    cassels_pairing_rank: int,
+    two_torsion_dimension: int,
+) -> int:
+    """Recover ``dim Sel_2(E/Q)`` from PARI ``ellrank`` output.
+
+    For PARI's four-component result ``[r1, r2, s, L]``, ``s`` is the
+    (even) rank of ``Sha(E)[2] / 2 Sha(E)[4]`` detected by the Cassels
+    pairing; it is not the full dimension of ``Sha(E)[2]``.  PARI defines
+    ``r2 = C - T - s``, where ``C`` is the 2-Selmer dimension and ``T`` is
+    the rational 2-torsion dimension.  Hence ``C = r2 + T + s``.
+    """
+
+    values = (
+        rank_lower,
+        rank_upper,
+        cassels_pairing_rank,
+        two_torsion_dimension,
+    )
+    if any(not isinstance(value, int) or value < 0 for value in values):
+        raise ResidualSelmerGateError(
+            "PARI rank, Cassels-pairing, and torsion dimensions must be "
+            "nonnegative integers"
+        )
+    if rank_lower > rank_upper:
+        raise ResidualSelmerGateError("PARI ellrank returned a reversed rank interval")
+    if cassels_pairing_rank % 2:
+        raise ResidualSelmerGateError(
+            "PARI ellrank returned an odd Cassels-pairing quotient rank"
+        )
+    return rank_upper + two_torsion_dimension + cassels_pairing_rank
+
+
 def gate_record(
     *,
     total_two_selmer_dimension: int,

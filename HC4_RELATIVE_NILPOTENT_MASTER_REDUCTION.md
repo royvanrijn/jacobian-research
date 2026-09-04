@@ -57,7 +57,10 @@ of every implication in the proof map above.  The scalar, rank-at-most-two,
 rank-three reduction, developability, and incidence steps remain written
 proofs in their linked canonical notes.  `HC4MR1` currently has neither an
 independent end-to-end replay nor external review; those assurance tasks are
-separate from the theorem's stated scope.
+separate from the theorem's stated scope.  Its committed local prolongation
+artifact is registered as a proof input.  The checker option
+`--audit-existing-only` verifies that artifact and its explicit local/global
+proof boundary without recomputing the symbolic prolongation or rewriting it.
 
 Then `N` is polynomial, nilpotent, `S`-self-adjoint and Hessian-integrable:
 
@@ -529,6 +532,8 @@ The exact calculations and the full incidence proof are in
 ```bash
 .venv/bin/python scripts/verify_hc4_affine_plane_bridge.py
 .venv/bin/python scripts/verify_hc4_affine_plane_prolongation.py
+# committed-artifact maintenance only:
+.venv/bin/python scripts/verify_hc4_affine_plane_prolongation.py --audit-existing-only
 ```
 
 Thus the former global affine-or-Keller bridge has no surviving regular `[4]`

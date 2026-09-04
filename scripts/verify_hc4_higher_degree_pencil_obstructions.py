@@ -34,12 +34,10 @@ identity used after those reductions is checked here exactly.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from pathlib import Path
-
-import sympy as sp
-
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = (
@@ -48,6 +46,55 @@ OUTPUT = (
     / "generated-results"
     / "hc4_higher_degree_pencil_obstructions.json"
 )
+EXPECTED_OUTPUT_SHA256 = (
+    "129e02cc3daf5bd025e58f0087a9c2c2501af5a956dd958bb329cf9988d0ba9b"
+)
+
+
+def audit_existing() -> None:
+    actual = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    assert actual == EXPECTED_OUTPUT_SHA256, (actual, EXPECTED_OUTPUT_SHA256)
+    payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    assert payload["format"] == "hc4-higher-degree-pencil-obstructions-v8"
+    assert [row["id"] for row in payload["status"]] == [
+        "HC4RSD17",
+        "HC4RSD18",
+        "HC4RSD19",
+        "HC4RSD20",
+        "HC4RSD21",
+        "HC4RSD22",
+        "HC4RSD23",
+        "HC4RSD25",
+        "HC4RSD26",
+        "HC4RSD27",
+        "HC4RSD28",
+    ]
+    assert payload["all_degree_rank_one"]["conclusion"].endswith(
+        "rank one is HC2/JC2"
+    )
+    assert payload["constant_kernel_cubic"]["residual"].startswith(
+        "genuinely moving nonhomogeneous ruling of degree at least seven"
+    )
+    assert payload["open_frontier"][0].endswith("degree at least seven")
+    print(
+        "PASS: committed HC4RSD17--28 stage artifact is intact; its "
+        "degree-seven frontier is historical and superseded by HC4RSD40/HC4MR1; "
+        "no symbolic replay or rewrite"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help="validate the committed stage artifact without symbolic replay or rewriting it",
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
+import sympy as sp
 
 
 # A four-by-four constant determinant pencil is exactly a nilpotent relative

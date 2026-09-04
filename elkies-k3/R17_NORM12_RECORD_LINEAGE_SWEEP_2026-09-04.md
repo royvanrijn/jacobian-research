@@ -4,7 +4,7 @@ Status: **exact 43-chart compilation, exact rational-`PGL2` quotient, complete
 474-curve pinned-ICARM preimage/twist sweep, and exact published-R17 and
 alternate-Q80 specialization certificates**.
 
-<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 291a539d07b842b9 -->
+<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 
 ## Outcome
 
@@ -94,11 +94,14 @@ primitive equation for every hit, all rational projective parameters, and the
 twist comparison on every native member chart.
 
 The live public endpoint grew after the hash-pinned 474-curve response.  The
-replay therefore selects precisely ids 1 through 474, checks that they predate
-2026-09-01, and requires the pinned SHA-256 of their
-`(id,curve_key,ainvs,created_at)` projection.  The complete equation projection
-is also embedded in the output.  Later records are deliberately outside this
-theorem.
+certificate therefore retains precisely ids 1 through 474, checks that they
+predate 2026-09-01, and requires the pinned SHA-256 of their
+`(id,curve_key,ainvs,created_at)` projection.  That complete equation projection
+is embedded in the output and is now the default offline replay source.  The
+separate 69-fibre artifact retains each recognized curve's pinned point prefix
+and is the default offline source for the five-fibre section and quotient
+checker.  `--live-source` and `--live-pinned-source` are explicit source-drift
+audits; later records are deliberately outside this theorem.
 
 ## Remaining wgxli components
 
@@ -266,6 +269,11 @@ The combined status checker for the last two commands is:
 sage -python \
   elkies-k3/scripts/verify_r17_norm12_icarm_database_and_curve12.sage
 ```
+
+All four commands above now replay from committed exact projections by
+default.  The repaired offline checks reproduce the 2,844 curve/class
+decisions, all 69 hits, and the five exact section/quotient certificates
+without consulting the mutable endpoint.
 
 The first artifact contains all 43 equations, normalized `j`-maps, exact
 `PGL2(Q)` quotient data, target equations, and rational-root decisions:

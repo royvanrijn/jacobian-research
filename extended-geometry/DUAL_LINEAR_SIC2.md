@@ -354,13 +354,15 @@ The safe-stratum classification beginning at dual degree two is organized by
 
 For \(d\geq2\), there is no vector field \(H\) and no two-by-two Jacobian
 whose determinant is exposed by the second moment.  The formerly proposed
-replacement target was the all-degree moment--nullcone theorem.  The
-counterexample falsifies it at \(d=4\); the full \(d=3\) classification
-remains open.
+replacement target was the all-degree moment--nullcone theorem.  It is
+already false at \(d=3\) by the full-rank semistable Rodrigues survivor and
+at every \(d\geq4\) by the propagated bidegree-\((4,4)\) counterexample.
+The full \(d=3\) **SIC** classification remains open: the Rodrigues orbit
+itself is safe by its all-order integration-by-parts cutoff.
 
 Thus this result moves the exact safe boundary from “Keller provenance” to
-“all dual-linear polynomials,” while the new counterexample begins only at
-dual degree four.
+“all dual-linear polynomials,” while the known **SIC** counterexample begins
+only at dual degree four.
 
 ## 8. Reproduction
 

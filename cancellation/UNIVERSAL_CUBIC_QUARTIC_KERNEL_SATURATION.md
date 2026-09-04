@@ -25,6 +25,16 @@ This note separates three levels which must not be conflated:
 The earlier subspace calculations remain useful independent checks.  The
 universal theorem is supplied by Section 5 below.
 
+For the six singular squarefree symbols, the smooth formal-rigidity proof
+does not apply, but the later route is also closed at its stated level.
+`KDSQ6` proves cotangent saturation and a six-generated non-Cartier
+different on every fiber of each complete quartic nongauge complement, and
+`SSADPALL` propagates those statements through every compatible formal tail.
+These results do not prove normality, algebraize an infinite formal gauge,
+or construct a distinguished Keller open.  The double-line, triple-line,
+and zero symbols remain outside the squarefree theorem and must first pass
+generic-etaleness and Keller-compatibility gates.
+
 ## 1. Universal family
 
 Let
@@ -481,9 +491,11 @@ For singular symbols, (5.14) is not a cotangent-saturation failure.  It
 only proves that the deformation cannot be removed by the smooth proof's
 coordinate/module gauge.  Indeed, the previously verified singular
 parameter planes remain cotangent-saturated despite having nongauge tensor
-directions.  Their universal problem must therefore retain the
-deformation-dependent cotangent complex and prove boundary depth or
-saturation there; formal reduction to the central tensor is unavailable.
+directions.  At this stage their universal problem therefore had to retain
+the deformation-dependent cotangent complex; formal reduction to the central
+tensor is unavailable.  Sections 5.2 onward close the complete squarefree
+formal-tail saturation and different-generator questions by a different
+normal-form and strict-Rees argument.
 The exact matrices and Hilbert numerators are checked by
 [`verify_cubic_formal_gauge_cokernel_atlas.py`](../scripts/verify_cubic_formal_gauge_cokernel_atlas.py).
 
@@ -1210,6 +1222,10 @@ Run
 .venv/bin/python scripts/verify_universal_cubic_cotangent_saturation.py
 .venv/bin/python scripts/verify_cubic_formal_gauge_cokernel_atlas.py
 .venv/bin/python scripts/verify_nodal_cubic_formal_slice.py
+.venv/bin/python scripts/verify_cubic_double_saturation_stratification.py
+.venv/bin/python scripts/verify_nodal_sextic_different_persistence.py
+.venv/bin/python scripts/verify_nodal_all_orders_different_persistence.py
+.venv/bin/python scripts/verify_singular_squarefree_all_orders_different_persistence.py
 ```
 
 The generated records are
@@ -1220,6 +1236,12 @@ together with the all-orbit boundary calculation
 [`cubic_formal_gauge_cokernel_atlas.json`](../artifacts/generated-results/cubic_formal_gauge_cokernel_atlas.json)
 and the first singular slice certificate
 [`nodal_cubic_formal_slice.json`](../artifacts/generated-results/nodal_cubic_formal_slice.json).
+The completed squarefree continuation is recorded in
+[`cubic_double_saturation_stratification.json`](../artifacts/generated-results/cubic_double_saturation_stratification.json),
+[`nodal_sextic_different_persistence.json`](../artifacts/generated-results/nodal_sextic_different_persistence.json),
+[`nodal_all_orders_different_persistence.json`](../artifacts/generated-results/nodal_all_orders_different_persistence.json),
+and
+[`singular_squarefree_all_orders_different_persistence.json`](../artifacts/generated-results/singular_squarefree_all_orders_different_persistence.json).
 
 The calculations require Singular 4.4.1.  The smooth checker uses Singular
 only for the three-variable exact module identity (5.5) and the independent
@@ -1237,4 +1259,8 @@ The atlas checker computes the exact three-variable graded cokernel for all
 ten symbols and marks the
 limit of that formal-rigidity argument.  The nodal checker resolves the
 first singular row cyclically and splits the complete quartic space into
-22 gauge directions and a certified saturated two-parameter slice.
+22 gauge directions and a certified saturated two-parameter slice.  The
+later four checkers cover every singular-squarefree quartic nongauge
+complement, the complete nodal degree-six normal form, the nodal formal
+tail, and finally every squarefree compatible formal tail.  Their scopes
+remain local/formal and do not certify normality or a Keller open.

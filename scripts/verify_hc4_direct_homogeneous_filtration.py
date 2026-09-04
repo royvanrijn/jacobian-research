@@ -1,13 +1,52 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import argparse
+import hashlib
 import json
 from pathlib import Path
 
-import sympy as sp
-
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "artifacts" / "generated-results" / "hc4_direct_homogeneous_filtration.json"
+EXPECTED_OUT_SHA256 = "9731d3636a0aee74b9573e051be3ef55a0682d227915aff03ad60b039806651a"
+
+
+def audit_existing() -> None:
+    actual = hashlib.sha256(OUT.read_bytes()).hexdigest()
+    assert actual == EXPECTED_OUT_SHA256, (
+        f"committed filtration artifact drifted: expected {EXPECTED_OUT_SHA256}, "
+        f"got {actual}"
+    )
+    payload = json.loads(OUT.read_text(encoding="utf-8"))
+    assert payload == {
+        "scope": "direct HC4 top homogeneous filtration",
+        "status": "verified",
+        "identities": {
+            "first": "[t] det M = c1 det(A0)",
+            "second_when_c1_zero": (
+                "[t^2] det M = c2 det(A0) - b1^T adj(A0) b1"
+            ),
+        },
+    }
+    print(
+        "PASS: committed HC4 direct-filtration artifact is intact; "
+        "no symbolic replay"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help="validate the committed artifact without symbolic replay or rewriting it",
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
+import sympy as sp
+
 OUT.parent.mkdir(parents=True, exist_ok=True)
 
 t = sp.symbols("t")

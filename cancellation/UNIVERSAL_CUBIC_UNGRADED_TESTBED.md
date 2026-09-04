@@ -516,11 +516,20 @@ all Keller maps.  Existing exact computations show:
   affine plane has pure support and the constant length-six defect for all
   ten cubic-symbol strata, including the double-line, triple-line, and zero
   symbols.
+- the six complete singular-squarefree quartic nongauge complements are
+  cotangent-saturated on every geometric parameter fiber, and their
+  intrinsic differents require six local generators;
+- every compatible formal tail with squarefree leading symbol remains
+  cotangent-saturated with a six-generated non-Cartier different, by the
+  all-orders formal normal-form and strict-Rees theorem `SSADPALL`.
 
-The arbitrary 24-parameter combination, normal nonhomogeneous lifts, and
-the existence of a distinguished `A^3` Keller open remain open.  Until that
-module-degeneration bridge is constructed, calling the Koszul tensor family
-a family of Keller maps would be incorrect.
+For squarefree symbols, arbitrary compatible formal tails are therefore no
+longer open at the cotangent-saturation or different-generator level.  What
+remains open is normality and algebraization of nonhomogeneous lifts, the
+double-line/triple-line/zero rows behind their generic-etaleness gate, and
+the existence of a distinguished `A^3` Keller open.  Until those bridges are
+constructed, calling the Koszul tensor family a family of Keller maps would
+be incorrect.
 
 ## 8. An explicit genuinely ungraded cubic
 

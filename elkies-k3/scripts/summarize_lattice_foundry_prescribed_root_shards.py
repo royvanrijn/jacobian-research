@@ -11,6 +11,26 @@ from pathlib import Path
 
 
 SCHEMA = "elkies-k3-lattice-foundry-prescribed-root-shard-summary-v1"
+ROOT = Path(__file__).resolve().parents[2]
+EXPECTED_NS_IDS = tuple(f"NS{index:04d}" for index in range(1, 49))
+EXPECTED_AMBIENT_LABELS = frozenset(
+    {
+        "2A7_2D5",
+        "2A9_D6",
+        "2D12",
+        "3D8",
+        "3E8",
+        "4D6",
+        "4E6",
+        "A11_D7_E6",
+        "A15_D9",
+        "A17_E7",
+        "D10_2E7",
+        "D16_E8",
+        "D24",
+    }
+)
+EXPECTED_D5_ANCHOR_COUNT = 16
 
 
 def sha256(path: Path) -> str:
@@ -54,8 +74,8 @@ def build_summary(paths: list[Path]) -> dict:
             raise ValueError(f"{path}: prefix-truncated search is not census input")
         if search.get("source_support_range") != [1, 17] or search.get("all_a_only"):
             raise ValueError(f"{path}: expected the unrestricted support/type window")
-        if len(search.get("ns_ids", [])) != 48:
-            raise ValueError(f"{path}: expected all 48 foundry NS classes")
+        if tuple(search.get("ns_ids", [])) != EXPECTED_NS_IDS:
+            raise ValueError(f"{path}: expected the ordered NS0001--NS0048 census")
         if data.get("skipped_ns_classes"):
             raise ValueError(f"{path}: one or more NS classes were skipped")
         comparable_search = {key: value for key, value in search.items() if key != "ambient_labels"}
@@ -65,6 +85,8 @@ def build_summary(paths: list[Path]) -> dict:
             raise ValueError(f"{path}: search settings differ across shards")
         if inputs is None:
             inputs = data.get("inputs")
+            if not isinstance(inputs, dict) or not inputs:
+                raise ValueError(f"{path}: missing input hash manifest")
         elif data.get("inputs") != inputs:
             raise ValueError(f"{path}: input hashes differ across shards")
 
@@ -81,6 +103,8 @@ def build_summary(paths: list[Path]) -> dict:
         shard_ns = set()
         for source in data.get("sources", []):
             ns_id = source["ns_id"]
+            if ns_id not in EXPECTED_NS_IDS:
+                raise ValueError(f"{path}: source has undeclared NS id {ns_id}")
             frame = source["source"]
             mw_rank = frame["mw_rank_for_rho_19"]
             root_rank = frame["root_rank"]
@@ -105,6 +129,32 @@ def build_summary(paths: list[Path]) -> dict:
                 "by_root_type": sorted_counter(shard_types),
             }
         )
+
+    observed_ambients = set(ambient_owner)
+    if observed_ambients != EXPECTED_AMBIENT_LABELS:
+        missing = sorted(EXPECTED_AMBIENT_LABELS - observed_ambients)
+        extra = sorted(observed_ambients - EXPECTED_AMBIENT_LABELS)
+        raise ValueError(
+            f"ambient shard cover differs from the 13-label contract; "
+            f"missing={missing}, extra={extra}"
+        )
+    selected_d5_anchors = sum(item["selected_d5_anchors"] for item in shards)
+    if selected_d5_anchors != EXPECTED_D5_ANCHOR_COUNT:
+        raise ValueError(
+            f"expected {EXPECTED_D5_ANCHOR_COUNT} selected D5 anchors, "
+            f"found {selected_d5_anchors}"
+        )
+    assert inputs is not None
+    for relative_path, recorded_hash in sorted(inputs.items()):
+        input_path = ROOT / relative_path
+        if not input_path.is_file():
+            raise ValueError(f"missing pinned shard input: {relative_path}")
+        actual_hash = sha256(input_path)
+        if actual_hash != recorded_hash:
+            raise ValueError(
+                f"stale pinned shard input {relative_path}: "
+                f"recorded {recorded_hash}, actual {actual_hash}"
+            )
 
     identity_counts = Counter((item[0], item[1]) for item in occurrences)
     identity_metadata: dict[tuple[str, str], tuple[int, int, str]] = {}
@@ -139,7 +189,7 @@ def build_summary(paths: list[Path]) -> dict:
         "accounting": {
             "ambient_labels": sorted(ambient_owner),
             "ambient_count": len(ambient_owner),
-            "selected_d5_anchors": sum(item["selected_d5_anchors"] for item in shards),
+            "selected_d5_anchors": selected_d5_anchors,
             "source_occurrences": len(occurrences),
             "distinct_ns_gram_pairs": len(distinct),
             "repeated_ns_gram_occurrences_across_shards": len(occurrences) - len(distinct),

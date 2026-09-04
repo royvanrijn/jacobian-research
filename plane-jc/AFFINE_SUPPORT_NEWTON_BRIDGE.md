@@ -352,6 +352,15 @@ Run:
 .venv/bin/python plane-jc/cas/classify_f2_75_125_layers.py
 ```
 
+For cleanup-only verification, hash-pin and inspect the committed bridge
+artifact, all six Kummer character-pair rows, and the proved/not-proved
+boundary without recomputing resultants or symbolic brackets:
+
+```bash
+.venv/bin/python plane-jc/cas/verify_affine_support_newton_bridge.py \
+  --audit-existing-only
+```
+
 Intentional artifact regeneration uses `--refresh`.  The pinned artifact is
 [`artifacts/generated-results/jc2_affine_support_newton_bridge.json`](../artifacts/generated-results/jc2_affine_support_newton_bridge.json).
 

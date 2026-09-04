@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# <!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 855128c3da8d2b41 -->
+# <!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 7f8dffe58168acc8 -->
 """Gate-protected affine-chart search normalized by baseline sections."""
 
 from __future__ import annotations

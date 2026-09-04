@@ -35,6 +35,19 @@ H = sp.symbols("h")
 RESIDUAL_SYMBOL_POOL = sp.symbols("z0:7")
 
 
+def mixed_supports(
+    support_size: int,
+) -> list[tuple[tuple[int, int], ...]]:
+    """Return the complete ordered mixed-sign support domain."""
+
+    return [
+        support
+        for support in combinations(POSITIONS, support_size)
+        if min(i - j for i, j in support) < 0
+        and max(i - j for i, j in support) > 0
+    ]
+
+
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--support-size", type=int, default=6, choices=(6, 7, 8, 9))
@@ -376,6 +389,13 @@ def main() -> None:
             raise ValueError(
                 "combined shard support size does not match --support-size"
             )
+        expected_supports = mixed_supports(support_size)
+        mixed_support_count = next(iter(mixed_counts))
+        if mixed_support_count != len(expected_supports):
+            raise ValueError(
+                "shard support count does not match the reconstructed "
+                "mixed-support domain"
+            )
         expected_start = 0
         records = []
         source_shards = []
@@ -394,6 +414,17 @@ def main() -> None:
                 )
             if len(shard["records"]) != stop - start:
                 raise ValueError(f"record count mismatch in {path}")
+            if not 0 <= start <= stop <= len(expected_supports):
+                raise ValueError(f"invalid shard interval in {path}")
+            for index, record in enumerate(shard["records"], start=start):
+                actual_support = tuple(
+                    tuple(map(int, position))
+                    for position in record["support"]
+                )
+                if actual_support != expected_supports[index]:
+                    raise ValueError(
+                        f"support mismatch in {path} at mixed index {index}"
+                    )
             if not shard["independent_formula_check"]["passed"]:
                 raise ValueError(f"formula check failed in {path}")
             records.extend(shard["records"])
@@ -403,7 +434,6 @@ def main() -> None:
                 "stop": stop,
             })
             expected_start = stop
-        mixed_support_count = next(iter(mixed_counts))
         complete = expected_start == mixed_support_count
         counts: dict[str, int] = {}
         for record in records:
@@ -471,12 +501,7 @@ def main() -> None:
     if msolve is None:
         raise RuntimeError("msolve is required")
     formula_check = verify_restricted_formula()
-    mixed = [
-        support
-        for support in combinations(POSITIONS, arguments.support_size)
-        if min(i - j for i, j in support) < 0
-        and max(i - j for i, j in support) > 0
-    ]
+    mixed = mixed_supports(arguments.support_size)
     stop = (
         len(mixed)
         if not arguments.limit

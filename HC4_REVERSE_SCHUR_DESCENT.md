@@ -45,10 +45,13 @@ The hypothesis (0.2) is automatic when \(A\) and \(B\) are homogeneous
 four-variable forms of the same degree, by the low-dimensional
 Gordan--Noether theorem used elsewhere in this repository.  It is also
 directly checkable for a given polynomial pencil.  The theorem does **not**
-assert that an arbitrary
-nonhomogeneous singular-Hessian polynomial in four variables is a cone.
-Classifying pencils with an \(x\)-moving kernel line remains the scalar
-frontier.
+assert that an arbitrary nonhomogeneous singular-Hessian polynomial in four
+variables is a cone. At the `HC4RSD1` stage, classifying pencils with an
+\(x\)-moving kernel line was the scalar frontier. `HC4RSD2`--`HC4RSD5`
+subsequently close all affine-in-\(x\) primitive kernel lines and every fixed
+primitive two-component kernel in a constant support plane; fixed
+three/four-component kernels and parameter-moving nonlinear generators remain
+open.
 
 The exact equation builders are in
 [`jcsearch/reverse_schur_descent.py`](jcsearch/reverse_schur_descent.py).
@@ -335,7 +338,13 @@ Run:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_reverse_schur_descent.py
+# cleanup only: verify committed inputs and historical/current scope
+.venv/bin/python scripts/verify_hc4_reverse_schur_descent.py --audit-existing-only
 ```
+
+The cleanup-only mode verifies the committed ledger, the consumed
+projective-polar atlas, and the imported equation helper by whole-file hash.
+It does not import SymPy, replay an identity, or rewrite an artifact.
 
 The command verifies:
 
@@ -365,7 +374,10 @@ The next exact classification problems are now separated:
   `HC4RSD4`;
 - fixed kernels with three or four nonlinear components, and
   parameter-moving nonlinear kernel lines;
-- scalar pencils with \(D(s,x)\ne0\), where the two terms in (1.1) cancel;
+- scalar pencils with \(D(s,x)\ne0\), where the two terms in (1.1) cancel
+  (the discovery-time handoff; `HC4RSD11` and `HC4MR1` later close its
+  nonzero-corner auxiliary constant-Hessian-pencil branch, while nonlinear
+  zero-corner exact remainders remain open);
 - matrix pencils with jointly moving kernel planes; and
 - only after one of those survives, its lower compactified-gradient algebra
   and rational reconstruction.
@@ -458,10 +470,11 @@ B=xz+\frac{\rho}{2}(y+h(x)w)^2
 
 Every descendant again has a triangular polynomial gradient inverse. Thus
 all pivot-Hessian ranks zero through four are closed for quadratic scalar
-pivots with an identically singular reduced pencil. What remains is the
-higher-degree nonlinear scalar branch, nonsingular pencils with exact
-determinant-term cancellation, and genuinely mixed/coisotropic or moving
-matrix pivots.
+pivots with an identically singular reduced pencil. At this historical stage
+the handoff was the higher-degree nonlinear scalar branch, nonsingular
+pencils with exact determinant-term cancellation, and genuinely
+mixed/coisotropic or moving matrix pivots. The following paragraphs record
+the later scalar-pencil closure rather than leaving that handoff current.
 
 HC4RSD11--HC4RSD16 in
 [`HC4_SCALAR_CANCELLATION_DICHOTOMY.md`](HC4_SCALAR_CANCELLATION_DICHOTOMY.md)

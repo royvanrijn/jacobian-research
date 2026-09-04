@@ -128,6 +128,15 @@ local conductor exponents recover the public conductor exactly: exponent 2 at
 
 From the repository root:
 
+For cleanup-only provenance and claim-boundary checking, without curve
+arithmetic or matrix-rank recomputation, run:
+
+```bash
+python3 elliptic-curves/cas/audit_icarm_rank_lower_bound_artifacts.py
+```
+
+The following commands are the mathematical replays:
+
 ```bash
 PYTHONPATH=elliptic-curves/cas \
   .venv/bin/python elliptic-curves/cas/check_icarm_curve302_rank31_pinned.py

@@ -25,20 +25,53 @@ separates active co-locked dependencies from historical/unclassified pins;
 `--fail-current` is the strict release form, while `--include-historical`
 shows frozen or otherwise non-current differences for retrospective review.
 Never bulk-refresh the latter merely because the current source has changed.
+Run `python3 scripts/audit_discovery_registry.py --output
+artifacts/local/discovery-retrospective-registry-audit-v1.json` for the full
+per-entry status/evidence topology.  That dynamic trace stays in the ignored
+local cache so it cannot become a competing mathematical-status authority.
 
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 40745008c2fe2a80 -->
+- `elkies-k3-lattice-foundry-prescribed-root-sources-mw0-mw1-all-ambients-summary-v1.json`
+  is the compact merger for the four committed prescribed-root shards.  Its
+  checker now requires the exact thirteen rooted-Niemeier labels, ordered
+  `NS0001`--`NS0048` universe, sixteen D5 anchors, disjoint ownership, matching
+  search settings, and current input hashes; a missing whole shard fails
+  closed.  The unchanged summary hash is
+  `c5e610ac5baf12e01f86d506a6b42b6593a48f8949311eee095dfc27b55f9ad6`.
+  The exact `--check` command is recorded in `REPRODUCE.md`.
+
+<!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 6b9d34ae8d722280 -->
 
 - `elkies-k3-rank19-arithmetic-marking-classifier-v1.json` records exact
   NS/T/Clifford data for all 66 rootless-MW17 candidate surfaces, separates
   coarse norm-one curves from full discriminant-marking curves, and reports
-  one `ARITHMETICALLY_POSSIBLE`, two `ARITHMETICALLY_EXCLUDED`, and 63
+  one `ARITHMETICALLY_POSSIBLE`, three `ARITHMETICALLY_EXCLUDED`, and 62
   `UNKNOWN` rows. `elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json`
   is the fail-closed new different-NS equation handoff; it is empty. Replay
   both with
   `sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check`.
   Their whole-file SHA-256 values are respectively
-  `5c61d8ceebc3d8e2602b60a459ff205d7f258787c729ec2361f571a90d3b785d`
-  and `805554d14438cd0c36d2437f16ff4bd3823d2a80cab2c37a01c1a2963cb71182`.
+  `dc9b0e2513d7517ff0439b31e238e2db94047ca05cb89772a43f83344d888123`
+  and `8cab33d85deb010c19c4aa8454a2e0feea34b27b17507770b3a60d9942bac8e2`.
+
+- `elkies-k3-golay-det720-qq-marking-obstruction-v1.json` records the exact
+  literal and primitive-similarity Clifford orders, the `S3` action on
+  `Z/2+Z/6+Z/60`, the stable curve `X_0(60)`, its genus and cusps, the
+  nonlifting `X_0(15)` rational points, and the determinant-20 saturation
+  control. Replay it with
+  `sage -python elkies-k3/scripts/certify_golay_det720_qq_marking_obstruction.sage --check`.
+  Its whole-file SHA-256 is
+  `bdec587989f4ea872310bb8373d5b9c414504c88f610bf27b46732c646c5e1a6`.
+
+- `elkies-k3-arithmetic-first-marked-t-foundry-v1.json` is the global
+  transcendental-first queue. It orders all 827 `T` rows without rootless
+  data, records 3 exclusions, 1 realized positive control, 823 arithmetic
+  research rows, 24 coarse genus-at-most-two diagnostics, and no new
+  NS/rootless handoff. Replay it with
+  `python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check`.
+  Its whole-file SHA-256 is
+  `47934d45506ec4422d5e6e5f0e3e1d30964913194df3250aa50d1f633389a6eb`.
 
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 
@@ -51,6 +84,28 @@ Never bulk-refresh the latter merely because the current source has changed.
   `49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae`.
 
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION 9e1c09d47fcf0bde -->
+
+- `elkies-k3-r17-norm12-alternate-chart-character-sweep-v1.json` audits all
+  ten alternate-Q80 norm-twelve charts: 1,198 inherited covers, 391,470
+  complete smooth-atlas covers, and four exact height-4 section saturations.
+  It records zero equal-cover collisions, internal three-character closures,
+  or matches to the twelve committed characters. Replay it with
+  `.venv/bin/python elkies-k3/scripts/audit_r17_norm12_alternate_chart_character_sweep.py --check`;
+  its whole-file SHA-256 is
+  `7bee55bcc148772e1f3f85022ac5330f7a6857cdf16e22d5d7e024e7d29a8044`.
+
+- `elkies-k3-r17-norm12-11952-singleton-twist-po0-two-prime-top200-audit-v1.json`
+  consolidates two distinct exhaustive finite-field `P.O=0`
+  polynomial-section shells for each of the 200 highest-ranked direct
+  singleton twists.  Across 10,690,517,260 tested `X` polynomials, every one
+  of the 2,423 isolated extra modular branches has an exact local obstruction.
+  Replay it with
+  `.venv/bin/python elkies-k3/scripts/audit_r17_norm12_11952_singleton_po0_two_prime_top200.py --check`;
+  its whole-file SHA-256 is
+  `4835d44ee0c294e18b85072673190d091569ee3bf503a5c7e63c6a03c995b374`.
+  The smaller top-twenty audit retains the exact depth-512 `1c3d5` positive
+  control.
+<!-- status-consumer: EC-K3-R17-NORM12-11952-SINGLETON-PO0-TOP200 80ab545a98b4e2d7 -->
 
 - `elkies-k3-r17-norm12-11952-product-tate-parity-v1.json` gives the exact
   `R17/2R17` minimum spectrum, isolates the 49 norm-twelve trace parities left
@@ -125,6 +180,32 @@ Never bulk-refresh the latter merely because the current source has changed.
   `.venv/bin/python elkies-k3/scripts/audit_r17_norm12_icarm_local_fingerprints.py --check`
   and
   `.venv/bin/python elkies-k3/scripts/build_r17_norm12_icarm_calibration_dataset.py --check`.
+
+- `elkies-k3-r17-074d9-cross-fibre-bisection-transfer-v1.json` gives the
+  complete 39,120-character rigid split census and exact displayed-quotient
+  coordinates at curves 351, 356, 376, 377, and 385.  The record split sets
+  are disjoint.  Replay it with
+  `sage -python elkies-k3/scripts/certify_r17_074d9_cross_fibre_bisection_transfer.sage --check`;
+  its whole-file SHA-256 is
+  `7f97d43846e6c2b939273617a5209122b02dbe51d056c742c30f271cfbe86098`.
+
+- `elkies-k3-r17-074d9-norm8-cross-fibre-transfer-v1.json` records the exact
+  canonical and cheapest-16 frozen norm-eight transfer matrices.  Every
+  same-chart off-diagonal specialization is nonsplit.  Replay it with
+  `sage -python elkies-k3/scripts/certify_r17_074d9_norm8_cross_fibre_transfer.sage --check`;
+  its whole-file SHA-256 is
+  `2cbb1ff16b44946173a367448dbc15ad8ea5935e734864f95613253e661595a6`.
+
+- `elkies-k3-r17-074d9-late-point-interpolation-v1.json` records the exact
+  four-train/one-holdout tests for repeated labels `P18,...,P22`.  All declared
+  templates miss.  Replay it with
+  `sage -python elkies-k3/scripts/audit_r17_074d9_late_point_interpolation.sage --check`;
+  its whole-file SHA-256 is
+  `e09d27bafb30f62c496c7e6a32290819e3c4229fdb4efacd3535413d2964f506`.
+
+<!-- status-consumer: EC-K3-R17-074D9-RIGID-CROSS-FIBRE-TRANSFER abbedd192865f172 -->
+<!-- status-consumer: EC-K3-R17-074D9-NORM8-CROSS-FIBRE-TRANSFER-16 262e405b0adbbb73 -->
+<!-- status-consumer: EC-K3-R17-074D9-LATE-POINT-HOLDOUT 284e0f92def23419 -->
 
 - `elliptic_mestre_two_section_local_continuation.json` records a bounded
   recursive-jet continuation at the normalized six-root Mestre seed
@@ -1232,6 +1313,27 @@ Never bulk-refresh the latter merely because the current source has changed.
   full triangular family and records Singular unit ideals for the
   degree-three equations plus pinned rank-drop minor packets.  It is
   generated by `scripts/audit_hvc38_maximal_block_closure.py`.
+- `plane_wild_boundary_survivor_atlas.json` is the status-separated compiler
+  ledger for the target-supported plane wild-boundary architectures.  It
+  keeps 46 hidden-order controls, 23 original prescribed-degree rows, 23
+  balanced prescribed-degree rows, and 25 local/comparison rows separate;
+  its empty odd balanced post-support queue does not erase the 20 original
+  prescribed-cover and 6 comparison rows still needing reconstruction.  Its
+  packet scan is bounded to length at most three and multiplicity at most
+  twelve, and every stored survivor is labelled `packet_gate_only`, not as a
+  cover or Keller map.  Its whole-file SHA-256 is
+  `442a211cab64d4dc0694f5c956e700e38e1315032bb513862b76ef63f989589f`.
+- `plane_wild_boundary_p3_degree7_scan.json` retains the complete six-row
+  `F_3` coefficient scan within the monic balanced degree-four retained
+  family.  Four rows fail the prime-field point count; the other two have
+  open counts 81 over `F_9` and 810 over `F_27`, so both are geometrically
+  obstructed.  This is an architecture-bounded scan, not a theorem about all
+  plane covers.  Its whole-file SHA-256 is
+  `2dfbe8e4e4dbaf23c6e3ad4102d6a4d875dc0087fc7691b5b70dccf18b8355fa`.
+  Run `python3 scripts/audit_plane_wild_boundary_artifacts.py` to check both
+  ledgers, their generating sources, and the directly imported boundary
+  helper without importing SymPy, invoking Singular, or rewriting an
+  artifact.
 - `automatic_missing_invariants_d3_d6.json` records the refined
   apolar-even/odd invariant dimensions through polynomial degree six for
   `V_d=End(Sym^d)`, `d=3,4,5,6`, together with the dimensions left after
@@ -1248,7 +1350,16 @@ Never bulk-refresh the latter merely because the current source has changed.
   that the first missing space is the even quadratic completion of dimension
   `d-1`.  The full phase-support formula remains conjectural, and the scan
   does not classify every semistable component or prove the candidate
-  augmented systems finite.
+  augmented systems finite. Its SHA-256 is
+  `ab13e38ec344194a60fda4ecebfdfe7d6b9c78f8d0be6b7cad1791e9fdb2d824`.
+- `completed_moment_algebra_bounded_tests.json` is the retained legacy
+  prime-1000003, weight-at-most-ten relation ledger generated at Git revision
+  `c91498bbca857b568a9961e776416fcba8de6713` by source SHA-256
+  `4ddc8bcaf025ef7992f6ac9a7c6e32ef6974372ac8475bf633f9b6a35a30575c`.
+  The current producer emits additional automatic-invariant and
+  Casimir-ladder fields, so it is not a byte-identical producer of this older
+  schema. The artifact SHA-256 is
+  `590fe262178bc4e8f11f3b633be9649ae82050afab962768e6e7946a1b15aa7c`.
 - `two_pair_sic_bidegree33_casimir_fiber.json` joins the corrected cubic
   moment degrees to the completed invariant algebra.  It records exact
   Hilbert-coefficient tests and good-prime rank-thirteen certificates for
@@ -1317,23 +1428,31 @@ Never bulk-refresh the latter merely because the current source has changed.
   coefficients with `scripts/audit_lr_mixed_bch_classes.py`.  Its whole-file
   SHA-256 is
   `877560240a592dcf6813948bd71ce95597e43d32d3b8b98bd2c1d9298ffe5740`.
+- `two_pair_counterexample_missing_invariant.json` records the quadratic
+  separator at the quartic moment-zero witness, the apolar-adjoint parity
+  calculation, the rank-22 moment Jacobian, and the degree-two `d=2` full
+  moment-field conclusion. Its SHA-256 is
+  `236a927d099e9ac14dad9f36d57d38fd1f8a1e4a11cf0843ce4759474f1d5c34`.
 - `degree_four_tau_even_parameters.json` records the exact modular
   Jacobian certificate for twenty-two apolar-even trace parameters of
   degrees `1,2^4,3^9,4^8`, together with the equal generic cotangent span
   of the first twenty-two moments.  It is generated by
-  `scripts/verify_degree_four_tau_even_parameters.py`.
+  `scripts/verify_degree_four_tau_even_parameters.py`. Its SHA-256 is
+  `8677dd7457d292d8c0103648397ffdf2803a77914557157823ec4da67e4b4c7c`.
 - `degree_four_moment_field_bounded_relations.json` records the bounded
   full-column-rank search excluding
   `Q(mu)+c_234^2*P(mu)=0` through invariant weight sixteen.  It is
   generated by `scripts/research_degree_four_moment_field.py`; this is not
-  a proof of fixed-field equality.
+  a proof of fixed-field equality. Its SHA-256 is
+  `85f61583487da90a5886eac6ce6845ca8c917232f42d6ab75658eacdbdbe6506`.
 - `degree_four_diagonal_moment_field.json` records the characteristic-zero
   parameter quotient of length 120 and the exact two-point
   reversal-related first-six-moment fiber on the diagonal quartic slice.
   It is generated by
   `scripts/verify_degree_four_diagonal_moment_field.py` and proves generic
   degree two on the raw parameter field; Weyl reversal identifies the two
-  points in the invariant quotient.
+  points in the invariant quotient. Its SHA-256 is
+  `fb3854ebb8c7758c94388bae9bc56c967b4fa38e0dc8d7e0cf77ab2c8d872df9`.
 - `degree_four_single_phase_moment_fields.json` records exact
   characteristic-zero parameter quotients of length 360 and two-point
   reversal-related first-seven-moment fibers on all ten coordinate
@@ -1342,7 +1461,13 @@ Never bulk-refresh the latter merely because the current source has changed.
   generic degree two on the raw parameter field for a nonempty
   Zariski-open family of direction pairs in each nonzero phase.  Only the
   four cross-direction coordinate pairs in phases one and two are
-  certified to move off the apolar-fixed quotient locus.
+  certified to move off the apolar-fixed quotient locus. Its SHA-256 is
+  `b6cf6f2fe296f5fb7974c8d3fb5f535952b9c25b3bda040ddafd2c4c8619aadf`.
+- `completed_moment_diagonal_fields.json` records exact parameter lengths
+  `24,120,720` and two-point reversal fibers on the diagonal slices for
+  `d=3,4,5`. Its SHA-256 is
+  `17fdcbd88f261c7aff209e86207d1a3d9170fd5099db592e66cb004da063ff10`.
+  This is a slice theorem, not a full invariant-quotient degree statement.
 - `completed_moment_single_phase_fields.json` records exact finite-origin
   and two-point-fiber certificates on one single-phase quotient slice in
   every nonzero phase for `d=3,5`.  It is generated by
@@ -1351,7 +1476,11 @@ Never bulk-refresh the latter merely because the current source has changed.
   prove characteristic-zero integrality and exact degree two on each raw
   slice.  The cross-direction tests in quintic phases one and two have
   nonzero `c_234` and therefore detect two distinct invariant-quotient
-  orientations; the other slices are fixed-locus controls.
+  orientations; the other slices are fixed-locus controls. Its SHA-256 is
+  `3626114820cf156c16327827ec9d8659c216964bd74401c2ea1ef8cc647b8f1e`.
+  Run `python3 scripts/audit_completed_moment_artifacts.py` to check these
+  four committed ledgers and their direct sources without importing SymPy or
+  launching Singular.
 - `degree_four_q2_augmented_nullcone_local.json` records the first exact
   normal-jet calculation for the global quartic `q2`-augmented origin
   problem.  It is generated by
@@ -1359,7 +1488,9 @@ Never bulk-refresh the latter merely because the current source has changed.
   normalized nonzero-`Sym^2` synchronized branch point, four linear
   pivots reduce the twelve forbidden directions to eight; the quadratic
   and cubic jet ideals then have dimensions six and four over `F_32003`.
-  This is a bounded local frontier, not a global nullcone certificate.
+  The quartic row is a 300-second timeout with no conclusion. This is a
+  bounded local frontier, not a global nullcone certificate. Its SHA-256 is
+  `9363d71f0d35f87b05c2ac370c98a0902f3bc9ce85402b0259261493efb8328b`.
 - `degree_four_q2_cubic_decomposition.json` decomposes that cubic
   normal-jet support.  It is generated by
   `scripts/research_degree_four_q2_cubic_decomposition.py`.  The artifact
@@ -1367,7 +1498,14 @@ Never bulk-refresh the latter merely because the current source has changed.
   the degree-nine generic fiber of the off-`x6` saturation, and the
   collapse of both dominant cubic sheets to one three-plane under the
   quartic moment jet.  The off-axis quartic calculation remains a
-  timeout, so this is still a bounded finite-field normal-slice result.
+  timeout, so this is still a bounded finite-field normal-slice result. That
+  240-second timeout is a retained historical record serialized by the
+  checker, not a branch it reruns, and its inference is `none`. The artifact
+  SHA-256 is
+  `9c812573ba3dd0f014ffc4515a147605297045042ab0487fec9271f52c14d6ec`.
+  Run `python3 scripts/audit_degree_four_q2_moment_artifacts.py` to check both
+  ledgers and their direct sources without importing SymPy or launching
+  Singular.
 - `degree_four_phase_one_chart_modular.json` records the exact
   \(F_{101}\) reduced four-point first-ten-moment fiber on the
   eight-dimensional two-direction phase-one chart, agreement through
@@ -1380,7 +1518,11 @@ Never bulk-refresh the latter merely because the current source has changed.
   and isolated.
   It is generated by `scripts/research_degree_four_phase_one_chart.py`.
   Exclusion of additional characteristic-zero components remains open,
-  so this is not a characteristic-zero generic-degree theorem.
+  so this is not a characteristic-zero generic-degree theorem. Its SHA-256
+  is `4b9acaa336b8d70b8b1e7581f73b09457566b7df286a2efc363ac06fdb9a74f6`.
+  Run `python3 scripts/audit_degree_four_moment_field_artifacts.py` to check
+  all six related ledgers, their direct sources, and these boundaries without
+  importing SymPy or launching Singular or `msolve`.
 - `arithmetic_keller_quintic.json` is the portable proof object generated
   from `arithmetic/specifications/ramified_quintic.json`.  It records local
   stability radii, coefficient CRT residues, real isolation, irreducibility
@@ -1420,8 +1562,8 @@ Never bulk-refresh the latter merely because the current source has changed.
   bounded computation, and PARI is used only to classify screen survivors.
 - `hc4_finite_field_sparse_search.json` records the collision-normalized
   degree-`5` through degree-`8` search over `F_11` and `F_13`.  It exhausts
-  45,181,194 potentials supported on at most two vectors of the full linear
-  collision-kernel basis and finds no exact constant-Hessian candidate.  It
+  45,181,194 potentials supported on one or two nonzero vectors of the full
+  linear collision-kernel basis and finds no exact constant-Hessian candidate.  It
   is generated by `scripts/search_hc4_finite_field_potentials.py`; the result
   is a bounded experiment, not an unrestricted `HC_4` theorem.
 - `hc4_finite_field_dense_support_search.json` records 192 exact modular
@@ -1446,6 +1588,9 @@ Never bulk-refresh the latter merely because the current source has changed.
   They use `u=x2+lambda*x3` for `lambda=-1,1,2`, put the top correction in
   three variables, and add lower complementary bridges.  Every ideal over
   `F_11` and `F_13` is a unit ideal.
+  `scripts/audit_hc4_finite_field_search_artifacts.py` hash-checks all five
+  ledgers and their generating sources and validates their exact bounded
+  domains without enumeration or Singular.
 - `hc4_meng_yang_quintic_graph_normal_slice.json` records the complete
   91-parameter graph 1-jet census on the Meng--Yang two-slope plane, the
   rational zero-trace exclusion, the two nonzero-trace constant-kernel top
@@ -1467,6 +1612,8 @@ Never bulk-refresh the latter merely because the current source has changed.
   diagnostic and all recorded bad-prime collapses are retained.  Generate it
   with the command in `REPRODUCE.md`.  Its whole-file SHA-256 is
   `dd28f7a44f6c813bdd422335133869ad7b4a513cc4426987930630c7cba859f9`.
+<!-- status-consumer: HC4QSE5 f3a101cdb7150e40 -->
+
 - `hc4_fitting_denominator_extraction.json` records the canonical
   degree-three cube-torsion presentation, its sign-character block sizes,
   complete parameter-plane scans for four coefficient-monomial orbits over
@@ -1475,7 +1622,30 @@ Never bulk-refresh the latter merely because the current source has changed.
   specialized coefficient quotient has dimension 60, exactly the three
   `x_i^2*x_j^2` cubes survive, and all fourth powers vanish.  This is an
   exact nilpotence-jump fiber calculation; the full integral zeroth Fitting
-  ideal and associated primes remain open after 900-second timeouts.
+  ideal and associated primes remain open after 900-second timeouts. This is
+  the partial record `HC4QSE5`; its whole-file SHA-256 is
+  `d2ddab3389244192e91a76958e7ea3bf1f48704afa433a89ba73b5294a4a8531`.
+- `hc4_fourth_power_support.json` records complete `F_p`-rational parameter
+  scans on `D(nu)` at `p=7,11,13`. Every nonradial tested fiber has empty
+  reduced projective Schur fiber, but proper finite-field extensions and the
+  characteristic-zero support ideal are not covered. Its symbolic
+  annihilator attempt timed out with no conclusion. The whole-file SHA-256 is
+  `576e3c0f3f0bd686316caf766e554a471866791a33d00e8f5a97762c44508946`.
+  Audit both ledgers and their generating source without recomputation with
+  `python3 scripts/audit_hc4_fitting_denominator_artifacts.py`.
+- `hc4_mixed_canonical_pivot_search.json` records the bounded `HC4MCP1`
+  census of 312 exact polynomial symplectic charts and its declared repair
+  boxes.  A chart is rejected by the modular screen only when two determinant
+  values differ; modular agreement is retained as a survivor rather than
+  treated as vanishing.  Its whole-file SHA-256 is
+  `10574297d6ba72240e7e1c7acb217be0a545badc1eae022927fea64063bbbacd`.
+- `hc4_mixed_quadratic_words.json` records the finite `HC4MCP2` length-two
+  quadratic-word census.  Its whole-file SHA-256 is
+  `17402479fe5b60068459f1936665d970e2204e9cc6f78f7b7ad3b88e06a5d6f7`.
+- `hc4_mixed_quadratic_cubic_words.json` records the normalized finite
+  `HC4MCP3` quadratic--cubic word census, not a symbolic-coefficient or
+  longer-word theorem.  Its whole-file SHA-256 is
+  `5bdc44741ad499f9c6f63be90d2e8d3a4e02e9675160f62490be61dd5ab6c10c`.
 - `hc4_canonical_signed_quadratic_cubic_words.json` records the complete
   fixed-order signed census of \(T_{H_2}\circ T_{H_1}\), with quadratic
   \(H_1\), cubic \(H_2\), and all flow and mixed-line signs in
@@ -1512,6 +1682,32 @@ Never bulk-refresh the latter merely because the current source has changed.
   types and the reciprocal type.  It is generated by
   `scripts/search_hc4_mixed_commutator_words.py`.  Its whole-file SHA-256 is
   `95cd7757483cc71e97c8ed8925a0bce9e2d351794b2366a8ee83dab41f1ab359`.
+- `hc4_noncoordinate_coisotropic_scalar_gate.json` records the bounded
+  `HC4MCP8` reciprocal mixed-line graph box.  The full descended determinants
+  were deliberately not formed after the earlier exact nonconstancy gates.
+  Its whole-file SHA-256 is
+  `a6a806d649c1af0c1ea2c26e01937817832de502daacda97a1a015faca472eb2`.
+- `hc4_nonlinear_unit_schur_blocks.json` records the finite coefficient and
+  constant-direction box in `HC4MCP9`; directions outside that box remain
+  outside its claim.  Its whole-file SHA-256 is
+  `7f235d427e0cf63e3aeddf198d6ade72c5478ae90774d526fb3a5610dae9286e`.
+- `hc4_symbolic_unit_schur_classification.json` records the coefficient-
+  uniform `HC4MCP10` classification on exactly the 54 `HC4MCP6` resonance
+  families.  Its 156 sampled-determinant certificates are exact unit-ideal
+  exclusions because constancy would imply every sampled equality; they are
+  not interpolation claims.  Other supports, longer words, and moving or
+  nonlinear pivots remain open.  Its whole-file SHA-256 is
+  `e92465e4991e7635f07fcc70895995f5d0465a1c3b816a6c9a88643500865e30`.
+
+For provenance-only maintenance of all ten `HC4MCP1--10` ledgers, run:
+
+```bash
+python3 scripts/audit_hc4_mixed_canonical_artifacts.py
+```
+
+This reads and hash-checks the committed JSON files and their scope fields;
+it does not import SymPy, invoke Singular, launch a search, or rewrite an
+artifact.
 - `fixed_quintic_hasse_curve_search.json` records the exact exclusion of
   every affine-linear base curve through the `Q(sqrt(-31))` Hasse point on
   the fixed-discriminant common-resolvent double cover, the exact exclusion
@@ -2097,10 +2293,12 @@ Never bulk-refresh the latter merely because the current source has changed.
   Schur-descended, and restricted-minima HN families.  Full vectors,
   top-degree-only controls, and open computations are separate fields.
   Regenerate it with
-  `.venv/bin/python scripts/verify_projective_gradient_segre_machinery.py`
+  `.venv/bin/python scripts/verify_projective_gradient_segre_machinery.py --write`
   and independently certify the cotangent and stabilization multidegrees
   with
   `M2 --script scripts/verify_projective_gradient_segre_families.m2`.
+  Its whole-file SHA-256 is
+  `1678eac19cc8e59a123ec84836f8f2a89f3b697a29c241e3b26e6987180fd00f`.
   The canonical source is `PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`.
 - `projective_gradient_normal_slices.json` records theorem `PGS2` for every
   regression tuple \(2\le n\le10\), \(2\le m\le7\), and \(1\le r<n\).
@@ -2109,7 +2307,7 @@ Never bulk-refresh the latter merely because the current source has changed.
   filtered missing-generator bound, and the exact unit-penultimate Segre
   law.  The range is a regression ledger, not a dimension bound.  Generate
   it with
-  `.venv/bin/python scripts/verify_projective_gradient_normal_slices.py`;
+  `.venv/bin/python scripts/verify_projective_gradient_normal_slices.py --write`;
   replay exact complete-intersection calibrations with
   `M2 --script scripts/verify_projective_gradient_normal_slices.m2`.  Its
   whole-file SHA-256 is
@@ -2124,11 +2322,16 @@ Never bulk-refresh the latter merely because the current source has changed.
   \((\rho_C;a_{C,j})\).  It also records the exact truncated length
   \(m\rho_C+\sum_j\min(m,a_{C,j})\) and the binary-quintic profiles of
   lengths \(8,3,2\).  Generate it with
-  `.venv/bin/python scripts/verify_projective_gradient_singular_slices.py`;
+  `.venv/bin/python scripts/verify_projective_gradient_singular_slices.py --write`;
   independently replay the three local lengths with
   `M2 --script scripts/verify_projective_gradient_singular_slices.m2`.
   Its whole-file SHA-256 is
   `c6971874b5359e4aed11a8918328804f9ffdd6e67811f49c9ff79b2a8c5d7b72`.
+  Run `python3 scripts/audit_projective_gradient_segre_artifacts.py` to check
+  all three ledgers, their direct helper, the Python producer sources, and
+  the Macaulay2 calibration sources without importing SymPy, invoking
+  Macaulay2, or rewriting an artifact. Ordinary Python verifier runs now
+  compare committed bytes; replacement requires explicit `--write`.
   The canonical source is `PROJECTIVE_GRADIENT_SEGRE_MACHINERY.md`.
 - `hc4_quintic_infinity_rees_strata.json` records the universal
   56-coefficient top quintic, its Euler/Hessian/curl/Koszul and
@@ -2185,6 +2388,14 @@ Never bulk-refresh the latter merely because the current source has changed.
   `09f6a57c735b2751d0f890b8cd216822001bae875fd9a5156e2a27550f8e71ad`.
   The higher-torsion failure locus remains open.  The canonical source is
   `HC4_PROJECTIVE_POLAR_GEOMETRY.md`.
+  For cleanup without any SymPy, Gröbner, or Macaulay2 replay, run
+  `python3 scripts/audit_hc4_projective_polar_artifacts.py`. It verifies this
+  ledger together with `hc4_projective_polar_atlas.json`,
+  `hc4_quintic_infinity_rees_strata.json`,
+  `hc4_rank3_vertex_colength.json`, and
+  `hc4_codim3_gradient_strata.json`, plus their shared helper, by exact hash.
+  The consuming `HC4PPG1--9` rows now register the precise input chain rather
+  than only the Python environment.
 - `quartic_coefficient_kuranishi_mod32003.json` records the modular
   36-variable affine-normal quadratic slice and coordinate-axis jet screen at
   the integer-root quartic map.  The adjacent `.sing` and `.m2` files are
@@ -2744,6 +2955,75 @@ Run `make verify-normal-forms` for the original normal-form artifacts and
   with `.venv/bin/python scripts/verify_hc4_affine_plane_bridge.py`.  Its
   whole-file SHA-256 is
   `6b2dba37da2b85f4b2ed786243998614bdb2e595a3aba5f0f177e192059c949a`.
+- `hc4_reverse_schur_descent.json`,
+  `hc4_affine_moving_kernel_pencils.json`,
+  `hc4_parameter_moving_affine_kernel_pencils.json`,
+  `hc4_univariate_shear_kernel_pencils.json`, and
+  `hc4_two_component_quasitranslation_kernels.json` preserve the successive
+  `HC4RSD1--5` singular scalar-kernel stages. Their whole-file hashes are
+  respectively
+  `279aaf673b3a8cd254e4f51ae3c0cdc32ecce732a8a8e2b28979cbf453a89226`,
+  `8df7456358f15af946f2c0160a5419c7ea11f4cc9500d63d5aa6f694f936501d`,
+  `10ba8618926b9dbbe8fc979d5b8e3580470fae7f034926a6c507979488c2d015`,
+  `bc36eff9effa7e40d7fba000f9f89377dfdecb8453394b4190acfe80cd8aa3ad`,
+  and
+  `3a2d00fba37d7d4681cf196a6a7a701245db034f210f29e3b4e578b998e5a1e4`.
+  Each checker has a cleanup-only `--audit-existing-only` mode that verifies
+  its committed artifact and the shared equation helper without importing
+  SymPy or rewriting evidence. `HC4RSD1--2` additionally pin and verify the
+  projective-polar atlas they consume. The audit output distinguishes the
+  historical handoffs from the current boundary: `HC4RSD2--5` close the
+  affine and fixed two-component subcases, `HC4MR1` closes the nonzero-corner
+  auxiliary constant-Hessian pencil, and fixed three/four-component,
+  parameter-moving nonlinear, nonlinear zero-corner, and moving-matrix
+  mechanisms remain.
+- `hc4_affine_pivot_coverage_gate.json` and
+  `hc4_affine_pivot_collision_fibers.json` preserve the `HC4RSD6--7`
+  distinction: the constant-span-deficient locus remains a representation
+  classification problem, while inherited collisions at one affine pivot
+  value are already excluded; nonlinear pivots and collisions between
+  different fibers remain open.  Their `--audit-existing-only` modes verify
+  whole-file hashes
+  `596cca4bd6a3202f7edaf7fd081150691a1d6038352c52172178e60cacf5badb` and
+  `d999d448a661fd858d1eb2eb39063c5b9522f6b491f67ba4b65915ef8f8e0688`
+  without symbolic replay or rewriting either artifact.
+- `hc4_quadratic_pivot_rank_obstruction.json`,
+  `hc4_quadratic_rank_two_pivots.json`, and
+  `hc4_quadratic_rank_one_pivots.json` preserve the successive `HC4RSD8`,
+  `HC4RSD9`, and `HC4RSD10` stages.  Their whole-file hashes are respectively
+  `aafce9dd2d0e458488bd7abd11d8548c826d7e46af2f2f300941207068da0998`,
+  `cf1dd291f1a113adf2f2774e81abb7f14cc60cb739ca251e65d02dbc6bcad564`,
+  and `7eb678ce7b283ff3b4b102ea548a3131bd9970c531e366be364a2183bc279630`.
+  Their `--audit-existing-only` modes verify those bytes and report the exact
+  later theorem that supersedes each stage-local frontier, without symbolic
+  replay or artifact rewriting.
+- `hc4_scalar_cancellation_dichotomy.json` records the six exact/hybrid
+  `HC4RSD11--16` packets and their quadratic scalar-pivot endpoint.  Its
+  higher-degree constant-Hessian-pencil `open_frontier` is historical stage
+  data superseded by `HC4MR1`, not a live remainder.  Run
+  `.venv/bin/python scripts/verify_hc4_scalar_cancellation_dichotomy.py --audit-existing-only`
+  to verify the committed whole-file SHA-256
+  `e051d9c5b320dc008106e37ea80f98fdeb1c88d1576d8149de79448c3c6381ac`
+  and that stage boundary without symbolic replay or rewriting the ledger.
+- `hc4_higher_degree_pencil_obstructions.json` records the eleven exact
+  `HC4RSD17--23` and `HC4RSD25--28` packets at that historical stage.  Its
+  `open_frontier` field still names the degree-seven handoff that was current
+  at `HC4RSD28`; `HC4RSD40` and `HC4MR1` subsequently supersede that handoff.
+  Run
+  `.venv/bin/python scripts/verify_hc4_higher_degree_pencil_obstructions.py --audit-existing-only`
+  to verify the committed whole-file SHA-256
+  `129e02cc3daf5bd025e58f0087a9c2c2501af5a956dd958bb329cf9988d0ba9b`
+  and this stage boundary without symbolic replay or rewriting the ledger.
+- The twelve ledgers from `hc4_pure_sextic_collision.json` through
+  `hc4_pure_septic_quartic_packets.json` preserve the consecutive
+  `HC4RSD29--40` pure-sextic/septic stages. They are registered individually
+  on their theorem rows. Run
+  `python3 scripts/audit_hc4_scalar_pencil_stage_artifacts.py` to verify all
+  twelve whole-file hashes and exact status/format mappings without importing
+  SymPy, invoking Singular, replaying symbolic identities, or rewriting any
+  artifact. These stages close degrees six and seven; `HC4MR1` later closes
+  the complete auxiliary relative-nilpotent pencil branch, not unrestricted
+  `HC4`.
 - `hc4_affine_plane_prolongation.json` records the complete second-order
   flatness prolongation of the `HC4RSD77--78` moving frame.  Eliminating 68
   derivative jets from 96 curvature equations first forces `p=q` and
@@ -2760,6 +3040,10 @@ Run `make verify-normal-forms` for the original normal-form artifacts and
   `.venv/bin/python scripts/verify_hc4_affine_plane_prolongation.py`.  Its
   whole-file SHA-256 is
   `d258b2b9be7a0906bae70a317044ba2011ed5dea6d2b8d765f8d0571a0217cf0`.
+  For cleanup without symbolic replay or artifact rewriting, run the same
+  checker with `--audit-existing-only`; it verifies this hash, the structural
+  counts, the saturated maximal-motion outcome, and the local/global proof
+  boundary recorded in the payload.
 - `hc4_direct_double_linear_hessian_gate.json` verifies the all-degree
   identities in `HC4-DIR3--27`.  For a rank-three top cone with
   `Delta=ell^2*R`, where `R` is squarefree and coprime to the linear `ell`,
@@ -2857,3 +3141,7 @@ Run `make verify-normal-forms` for the original normal-form artifacts and
   `.venv/bin/python scripts/verify_hc4_direct_double_linear_hessian_gate.py`.
   Its whole-file SHA-256 is
   `0bdaeb66d2165c0211051c822f89ce389f1dd737acded2b328f9f32c7f48b68c`.
+  A cleanup-only `--audit-existing-only` mode verifies this hash, the
+  multiplicity budget, the complete generic-corank-one sextuple endpoint, the
+  sole lower-rank order-one resonance, and the written-proof boundary without
+  symbolic replay or artifact rewriting.

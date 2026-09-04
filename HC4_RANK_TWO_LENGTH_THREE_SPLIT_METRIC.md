@@ -2,6 +2,10 @@
 
 ## Status
 
+**Current status.**  This is an intermediate proof-map note.  The rational
+null-foliation target in Section 5 is closed by `HC4RSD63`, and the complete
+rank-two relative-nilpotent branch is subsumed by `HC4MR1`.
+
 Continue `HC4RSD61`.  The entire moving rank-two length-three branch has been
 reduced to a bivariate active potential
 
@@ -176,7 +180,7 @@ a rational first integral **and** requires the Hessian discriminant to be a
 polynomial square.  This is a much thinner locus than a general bivariate
 polynomial potential.
 
-## 5. Next target
+## 5. Historical next target (closed by `HC4RSD63`)
 
 With `g^2=-eta^{-1} det Hess A`, the null PDE is first order:
 

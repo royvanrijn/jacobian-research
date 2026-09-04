@@ -113,6 +113,15 @@ search on the same minimal model. The BNF-free Kummer signature, norm-one
 cubic elements, incomplete relation ledgers, `K(S,2)` envelopes and candidate
 local classes do not pass this gate.
 
+The PARI adapter uses the documented four-component
+[`ellrank`](https://pari.math.u-bordeaux.fr/dochtml/ref-stable/Elliptic_curves.html#ellrank)
+convention
+`[r1,r2,s,L]` exactly.  Here `s` is the even Cassels-pairing quotient rank
+`dim(Sha(E)[2]/2Sha(E)[4])`, not the full dimension of `Sha(E)[2]`, and PARI
+defines `r2=C-T-s`, where `C=dim Sel_2(E)` and `T=dim E(Q)[2]`.  The gate now
+reconstructs `C=r2+T+s` through a tested fail-closed helper and records `s`
+under its accurate name.
+
 The first exact-backend attempt used PARI `ellrank` through Sage on the public
 rank-28 fibre, with all 28 certified points supplied. It reached the strict
 300-second limit at 230,338,560 bytes peak observed RSS without returning a
@@ -453,6 +462,6 @@ two commands are bounded supporting heuristic searches.
 <!-- status-consumer: EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS 345b9fb977057133 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL f99c98cdb6b8cd7d -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-S-CLASS-PILOT a791713dc40f7caf -->
-<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 56298144d268ab70 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 7f8dffe58168acc8 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R18-COVER 6b4ee5bbc1afc01e -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R19-PAIRED f1e135d2ba803e80 -->

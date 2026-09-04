@@ -1,8 +1,8 @@
 {
   "accounting": {
-    "ARITHMETICALLY_EXCLUDED": 2,
+    "ARITHMETICALLY_EXCLUDED": 3,
     "ARITHMETICALLY_POSSIBLE": 1,
-    "UNKNOWN": 63,
+    "UNKNOWN": 62,
     "candidate_ns_lattices": 66,
     "catalogue_surfaces": 827,
     "coarse_curve_statuses": {
@@ -698,13 +698,39 @@
       }
     },
     {
-      "arithmetic_tests": [],
-      "certificate_replay": [],
-      "classification": "UNKNOWN",
-      "classification_decision": "No exact positive witness or global exclusion certificate is registered.",
+      "arithmetic_tests": [
+        {
+          "conclusion": "Degree 60 is absent, so X_0(60)(QQ) consists only of its twelve rational cusps.",
+          "method": "Mazur--Kenku rational cyclic-isogeny classification",
+          "status": "PASS_THEOREM_RATIONAL_POINT_EXCLUSION"
+        },
+        {
+          "conclusion": "The known rational 3A5 model saturates with index six to Neron--Severi determinant 20, not 720.",
+          "method": "rational 3-torsion, rational half-section, and maximal even-overlattice audit",
+          "status": "PASS_EXACT_DETERMINANT20_OVERLATTICE_CONTROL"
+        }
+      ],
+      "certificate_replay": [
+        {
+          "assertions_replayed": 5,
+          "path": "artifacts/generated-results/elkies-k3-golay-det720-qq-marking-obstruction-v1.json",
+          "sha256": "bdec587989f4ea872310bb8373d5b9c414504c88f610bf27b46732c646c5e1a6"
+        }
+      ],
+      "classification": "ARITHMETICALLY_EXCLUDED",
+      "classification_decision": "The exact full discriminant-marking curve is X_0(60), which has no noncuspidal rational point; the known rational 3A5 equation is independently the determinant-20 overlattice.",
       "determinant": 720,
       "different_ns_foundry_equation_eligible": false,
-      "easy_quotient_maps": [],
+      "easy_quotient_maps": [
+        {
+          "degree": 6,
+          "source": "X_0(60)-model full marking curve",
+          "status": "PASS_EXACT_FORGET_STABLE_MOD2_MARKING",
+          "target": "X_0(15)",
+          "target_genus": 1,
+          "target_rational_noncuspidal_points": 4
+        }
+      ],
       "equation_agent_eligible": false,
       "even_clifford_algebra_and_order": {
         "finite_ramified_primes": [],
@@ -802,7 +828,8 @@
           "group": "projective norm-one group of the displayed split even-Clifford order",
           "status": "UNKNOWN_GENERAL_CONGRUENCE_FUCHSIAN_SIGNATURE_NOT_COMPUTED"
         },
-        "explicit_model": null,
+        "explicit_model": "X_0(60)",
+        "genus": 7,
         "marking_gap": {
           "coarse_clifford_hessian_equals_literal_T": false,
           "discriminant_group_invariants": [
@@ -814,10 +841,11 @@
           "status": "OPEN_STABLE_ORTHOGONAL_DISCRIMINANT_KERNEL_NOT_COMPUTED",
           "warning": "The projective norm-one curve of a similar primitive ternary form is only a coarse orthogonal target. Full rational NS marking requires the discriminant-kernel subgroup for the literal integral T lattice."
         },
-        "status": "UNKNOWN_FULL_DISCRIMINANT_KERNEL_CURVE_NOT_IDENTIFIED"
+        "rational_points": "twelve rational cusps and no noncuspidal QQ-points",
+        "status": "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE"
       },
       "legacy_ns_ids": [],
-      "next_arithmetic_gate": "Embed the displayed split order in M_2(QQ), derive its exact congruence conditions and signature, and then compute the stable marking subgroup.",
+      "next_arithmetic_gate": null,
       "ns_lattice": {
         "catalogue_boundary": "The catalogue constructs the primitive K3 complement by the opposite discriminant form; this replay checks rank, signature, determinant, and Smith invariants.",
         "discriminant_group_invariants": [
@@ -848,7 +876,11 @@
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
       "surface_id": "K3-f43753fb154e3406",
-      "theorem_inputs": [],
+      "theorem_inputs": [
+        "Mazur--Kenku's complete classification of rational cyclic-isogeny degrees",
+        "the standard marked-K3 ternary-spin period correspondence",
+        "the complete rational-point determination of X_0(15)(QQ)"
+      ],
       "transcendental_lattice": {
         "construction": "T = NS^perp in the K3 lattice",
         "determinant": -720,
@@ -15670,7 +15702,7 @@
     "policy": "ARITHMETICALLY_POSSIBLE only"
   },
   "hospitality_comparison": {
-    "contrast": "Determinant 950 is forced onto the rigid Fricke quotient X_0^+(475), and determinant 1184 combines non-split Cartan level 4 with X_0(37), where both rational 37-isogeny points fail the Frobenius lift. The observed hospitality of 948 is therefore explained by its unusually low-genus Atkin-Lehner quotient plus an actual non-CM rational lift, not by determinant size or Clifford splitting alone.",
+    "contrast": "Determinant 720 has exact stable curve X_0(60), whose rational points are all cusps; determinant 950 is forced onto the rigid Fricke quotient X_0^+(475); and determinant 1184 combines non-split Cartan level 4 with X_0(37), where both rational 37-isogeny points fail the Frobenius lift. The observed hospitality of 948 is therefore explained by its unusually low-genus Atkin-Lehner quotient plus an actual non-CM rational lift, not by determinant size or Clifford splitting alone.",
     "determinant_948_features": [
       "T has a division even-Clifford algebra with the clean coprime squarefree Eichler pair (D,N)=(6,79).",
       "The Atkin-Lehner quotient by w_474 has genus 2 and an explicit non-CM QQ-point.",
@@ -15752,8 +15784,8 @@
         "surface_id": "K3-d1b1381f87d69f1c"
       },
       {
-        "arithmetic_reason": "No exact positive witness or global exclusion certificate is registered.",
-        "classification": "UNKNOWN",
+        "arithmetic_reason": "The exact full discriminant-marking curve is X_0(60), which has no noncuspidal rational point; the known rational 3A5 equation is independently the determinant-20 overlattice.",
+        "classification": "ARITHMETICALLY_EXCLUDED",
         "coarse_local_level_index": 45,
         "coarse_order_reduced_discriminant": 45,
         "determinant": 720,
@@ -15785,7 +15817,7 @@
   "inputs": {
     "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json": "e13c9fa26b733c9e894d4a34900de469ad7dc2df63528f8c4dd816c47c9d18c8",
     "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985",
-    "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": "1471b81a2dc2790ef3fe3d3ad8e0f4c7e8ae9511236bfae6f76f3f252ab8b6ce",
+    "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": "b9666cc14ef8946620170c8d4ccc6e4c290dd12e3de7dbf8e353d153803068c2",
     "schemas/elkies_k3_rank19_arithmetic_marking_classifier.schema.json": "cc600812fd668ae9234a1144ce27aaf7e04dea31a6f20143701d0ad1ab171213"
   },
   "policy": {
@@ -15796,10 +15828,10 @@
     "equation_agent": "Dispatch only ARITHMETICALLY_POSSIBLE rows. UNKNOWN is an arithmetic-research queue, not an equation queue."
   },
   "proof_scope": {
-    "not_proved": "The 63 UNKNOWN rows are not asserted to exist or not exist over QQ. Their stable discriminant-kernel curves and rational points remain open.",
-    "proved": "All 66 exact rootless-MW17 candidate NS lattices are paired with their catalogue primitive ternary complement and replayed even Clifford data. The three non-UNKNOWN decisions are backed by exact registered certificates."
+    "not_proved": "The 62 UNKNOWN rows are not asserted to exist or not exist over QQ. Their stable discriminant-kernel curves and rational points remain open.",
+    "proved": "All 66 exact rootless-MW17 candidate NS lattices are paired with their catalogue primitive ternary complement and replayed even Clifford data. The four non-UNKNOWN decisions are backed by exact registered certificates."
   },
   "reproduce": "sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage",
   "schema": "elkies-k3.rank19-arithmetic-marking-classifier.v1",
-  "status": "PASS_FAIL_CLOSED_1_POSSIBLE_2_EXCLUDED_63_UNKNOWN"
+  "status": "PASS_FAIL_CLOSED_1_POSSIBLE_3_EXCLUDED_62_UNKNOWN"
 }

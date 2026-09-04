@@ -288,6 +288,11 @@ itself does not address the new core issue.
 
 ## 4. Route ranking after the experiment
 
+The `route_assessment` array in the committed bounded-regression artifact is
+a discovery-time record.  Its instruction to control arbitrary lower layers
+was subsequently completed by `HC4FSD3`; it is preserved for provenance and
+is not a live handoff.  The current ranking is the one below.
+
 1. **Meng--Yang normal recursion: best immediate computational frontend.**
    It has an exact all-order unit symbol and replaces a growing nonlinear
    coefficient search by deterministic recursion.  The next experiment
@@ -320,8 +325,17 @@ Run the degree-free theorem checker
 .venv/bin/python scripts/verify_hc4_all_degree_frontends.py
 ```
 
+For cleanup-only validation of the bounded artifact, its exact support grid,
+scope warning, and generating-source hash, without SymPy or Singular replay,
+run
+
+```bash
+.venv/bin/python scripts/verify_hc4_all_degree_frontends.py \
+  --audit-existing-only
+```
+
 Its SHA-256 is
-`b637e48626939c098be599ca13ae741f7ec5518470a3396336d8a55228d8cb0e`.
+`ff7f2ea1f11e8aee42930e9ab90c5b061711a9d2c753e5633dfba9ee6cf24fb6`.
 Replay the bounded discovery regressions with
 
 ```bash

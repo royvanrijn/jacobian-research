@@ -17,6 +17,35 @@ SPEC.loader.exec_module(GATE)
 
 
 class ElkiesResidualSelmerGateTests(unittest.TestCase):
+    def test_pari_ellrank_fields_recover_total_selmer_dimension(self) -> None:
+        self.assertEqual(
+            GATE.pari_ellrank_total_two_selmer_dimension(
+                rank_lower=28,
+                rank_upper=30,
+                cassels_pairing_rank=2,
+                two_torsion_dimension=0,
+            ),
+            32,
+        )
+
+    def test_pari_ellrank_cassels_rank_is_not_arbitrary_sha_dimension(self) -> None:
+        with self.assertRaisesRegex(GATE.ResidualSelmerGateError, "odd Cassels"):
+            GATE.pari_ellrank_total_two_selmer_dimension(
+                rank_lower=28,
+                rank_upper=31,
+                cassels_pairing_rank=1,
+                two_torsion_dimension=0,
+            )
+
+    def test_pari_ellrank_reversed_interval_fails_closed(self) -> None:
+        with self.assertRaisesRegex(GATE.ResidualSelmerGateError, "reversed"):
+            GATE.pari_ellrank_total_two_selmer_dimension(
+                rank_lower=29,
+                rank_upper=28,
+                cassels_pairing_rank=0,
+                two_torsion_dimension=0,
+            )
+
     def test_dimension_below_fifteen_is_exact_rejection(self) -> None:
         record = GATE.gate_record(total_two_selmer_dimension=31)
         self.assertEqual(record["residual_two_selmer_quotient_dimension"], 14)

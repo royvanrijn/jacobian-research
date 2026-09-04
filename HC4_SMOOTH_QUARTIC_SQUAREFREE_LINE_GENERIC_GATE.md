@@ -24,6 +24,10 @@ Replay the exact characteristic-zero calculation with
 The checker uses SymPy to construct the coefficient equations and Singular
 4.4.1 for the rational-function-field standard basis.
 
+For repository maintenance, `--audit-existing-only` verifies the exact hash
+of the imported 81-equation builder without constructing the system or
+invoking Singular.  It is a provenance check, not a replacement proof.
+
 ## 1. The squarefree-line chart
 
 Normalize the reciprocal line to \(z=0\).  In the squarefree binary-cubic

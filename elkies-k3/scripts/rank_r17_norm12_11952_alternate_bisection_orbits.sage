@@ -23,6 +23,12 @@ DIRECT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-dir
 DIRECT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json"
 DIRECT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08ab4-direct-fibration-v1.json"
 DIRECT_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit091e4-direct-fibration-v1.json"
+DIRECT_1183A = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit1183a-direct-fibration-v1.json"
+DIRECT_098FC = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit098fc-direct-fibration-v1.json"
+DIRECT_135B7 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit135b7-direct-fibration-saturated-v1.json"
+DIRECT_10F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit10f72-direct-fibration-saturated-v1.json"
+DIRECT_09952 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit09952-direct-fibration-saturated-v1.json"
+DIRECT_0AE21 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit0ae21-direct-fibration-saturated-v1.json"
 OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-priority-v1.json"
 TABLE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-priority-v1.tsv"
 OUTPUT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.json"
@@ -31,6 +37,18 @@ OUTPUT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-al
 TABLE_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-alternate-bisection-priority-v1.tsv"
 OUTPUT_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-091e4-alternate-bisection-priority-v1.json"
 TABLE_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-091e4-alternate-bisection-priority-v1.tsv"
+OUTPUT_1183A = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-1183a-alternate-bisection-priority-v1.json"
+TABLE_1183A = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-1183a-alternate-bisection-priority-v1.tsv"
+OUTPUT_098FC = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-098fc-alternate-bisection-priority-v1.json"
+TABLE_098FC = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-098fc-alternate-bisection-priority-v1.tsv"
+OUTPUT_135B7 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-135b7-alternate-bisection-priority-v1.json"
+TABLE_135B7 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-135b7-alternate-bisection-priority-v1.tsv"
+OUTPUT_10F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-10f72-alternate-bisection-priority-v1.json"
+TABLE_10F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-10f72-alternate-bisection-priority-v1.tsv"
+OUTPUT_09952 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-09952-alternate-bisection-priority-v1.json"
+TABLE_09952 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-09952-alternate-bisection-priority-v1.tsv"
+OUTPUT_0AE21 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-0ae21-alternate-bisection-priority-v1.json"
+TABLE_0AE21 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-0ae21-alternate-bisection-priority-v1.tsv"
 
 
 def digest(path: Path) -> str:
@@ -79,6 +97,12 @@ def main() -> None:
             "norm12-orbit-08f72",
             "norm12-orbit-08ab4",
             "norm12-orbit-091e4",
+            "norm12-orbit-1183a",
+            "norm12-orbit-098fc",
+            "norm12-orbit-135b7",
+            "norm12-orbit-10f72",
+            "norm12-orbit-09952",
+            "norm12-orbit-0ae21",
         ),
         default="norm12-orbit-11952",
     )
@@ -92,18 +116,36 @@ def main() -> None:
         "norm12-orbit-08f72": DIRECT_08F72,
         "norm12-orbit-08ab4": DIRECT_08AB4,
         "norm12-orbit-091e4": DIRECT_091E4,
+        "norm12-orbit-1183a": DIRECT_1183A,
+        "norm12-orbit-098fc": DIRECT_098FC,
+        "norm12-orbit-135b7": DIRECT_135B7,
+        "norm12-orbit-10f72": DIRECT_10F72,
+        "norm12-orbit-09952": DIRECT_09952,
+        "norm12-orbit-0ae21": DIRECT_0AE21,
     }[arguments.source_label]
     output = arguments.output or {
         "norm12-orbit-11952": OUTPUT,
         "norm12-orbit-08f72": OUTPUT_08F72,
         "norm12-orbit-08ab4": OUTPUT_08AB4,
         "norm12-orbit-091e4": OUTPUT_091E4,
+        "norm12-orbit-1183a": OUTPUT_1183A,
+        "norm12-orbit-098fc": OUTPUT_098FC,
+        "norm12-orbit-135b7": OUTPUT_135B7,
+        "norm12-orbit-10f72": OUTPUT_10F72,
+        "norm12-orbit-09952": OUTPUT_09952,
+        "norm12-orbit-0ae21": OUTPUT_0AE21,
     }[arguments.source_label]
     table_output = arguments.table_output or {
         "norm12-orbit-11952": TABLE,
         "norm12-orbit-08f72": TABLE_08F72,
         "norm12-orbit-08ab4": TABLE_08AB4,
         "norm12-orbit-091e4": TABLE_091E4,
+        "norm12-orbit-1183a": TABLE_1183A,
+        "norm12-orbit-098fc": TABLE_098FC,
+        "norm12-orbit-135b7": TABLE_135B7,
+        "norm12-orbit-10f72": TABLE_10F72,
+        "norm12-orbit-09952": TABLE_09952,
+        "norm12-orbit-0ae21": TABLE_0AE21,
     }[arguments.source_label]
 
     orbit_certificate = json.loads(ORBIT_CERTIFICATE.read_text())

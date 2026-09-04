@@ -79,6 +79,16 @@ e2a7a322fbd4703af4239f497749a69a68f9d5149aa8a1f696b39ab3941a3284
 
 Two consecutive generations produced the same whole-file hash.
 
+For cleanup-only provenance checking, including the exact artifact and every
+directly imported proof helper, run:
+
+```text
+python3 elliptic-curves/cas/audit_icarm_rank_lower_bound_artifacts.py
+```
+
+That command does not enumerate a finite group, recalculate a matrix rank, or
+invoke PARI or Sage. The commands below remain the mathematical replays.
+
 ## Model diagnostics
 
 PARI/GP 2.17.4 independently reports that the displayed integral model is

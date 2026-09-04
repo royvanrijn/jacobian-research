@@ -2,6 +2,10 @@
 
 ## Status and scope
 
+**Current status.**  This is an intermediate proof-map note.  The moving
+`[2,2]` problem described in Section 5 is continued by `HC4RSD59` and closed
+in all degrees by `HC4RSD60`; it is not a live branch after `HC4MR1`.
+
 This note continues `HC4RSD56` after the constant projective apex has been
 normalized to
 
@@ -276,7 +280,7 @@ locally nilpotent, with explicit exponential action
 Because the coefficients `k_i` are invariant, (4.4) is exact despite the fact
 that the direction varies from orbit to orbit.
 
-## 5. What this buys us
+## 5. Historical handoff to the synchronization step
 
 The moving direction is now constrained in three simultaneous ways:
 

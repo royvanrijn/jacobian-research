@@ -18,6 +18,10 @@ Replay the exact calculation with
 The checker constructs the same 81 equations as `HC4NHM16`.  Singular 4.4.1
 performs the staged calculation over a rational function field.
 
+For repository maintenance, `--audit-existing-only` verifies the exact hash
+of the imported 81-equation builder without constructing the system or
+invoking Singular.  It is a provenance check, not a replacement proof.
+
 ## 1. A rational parametrization of the polar
 
 Retain

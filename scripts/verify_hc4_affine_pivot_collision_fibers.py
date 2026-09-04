@@ -18,12 +18,10 @@ the two points to have the same value of A=ell.x+a0.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from pathlib import Path
-
-import sympy as sp
-
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = (
@@ -32,6 +30,41 @@ OUTPUT = (
     / "generated-results"
     / "hc4_affine_pivot_collision_fibers.json"
 )
+EXPECTED_OUTPUT_SHA256 = (
+    "d999d448a661fd858d1eb2eb39063c5b9522f6b491f67ba4b65915ef8f8e0688"
+)
+
+
+def audit_existing() -> None:
+    actual = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    assert actual == EXPECTED_OUTPUT_SHA256, (actual, EXPECTED_OUTPUT_SHA256)
+    payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    assert payload["status"]["id"] == "HC4RSD7"
+    assert payload["collision_consequence"] == (
+        "grad(psi)(p)=grad(psi)(q) and ell.p=ell.q imply p=q"
+    )
+    assert payload["schur_consequence"].startswith(
+        "an affine zero-corner pivot, singular or nonsingular"
+    )
+    assert payload["open_frontier"].startswith("nonlinear scalar pivots")
+    print(
+        "PASS: committed HC4RSD7 affine-fiber artifact is intact and retains "
+        "its different-fiber/nonlinear boundary; no symbolic replay or rewrite"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help="validate the committed artifact without symbolic replay or rewriting it",
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
+import sympy as sp
 
 
 def symmetric_matrix(prefix: str, size: int) -> sp.Matrix:

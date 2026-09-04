@@ -70,6 +70,19 @@ Important distinctions made explicit by the catalogue:
   canonical Fermigier coordinate `u=11671/42` and the generated six-root
   Mestre coordinate `T=11671/21`, verifies `Q`-isomorphism in both models, and
   finds no match for curves 273 or 302 in this bounded construction space.
+  Its SHA-256 is
+  `5d19571dc74f9e8c270bcaaa943f19e3876bb2a13ffc33c37d479a3206fd8770`;
+  the producing script's pinned SHA-256 is
+  `dbb4ae2580c45d4a25800225e11301c51158c97253b3c3631054a15c60769101`.
+  The related fixed-root fingerprint ledgers are
+  `icarm_construction_fingerprints_v1.json` for curves
+  273/281/282/285/286 and `icarm_construction_fingerprints_v2.json` with curve
+  302 added. Their historical repository-model diagnostic covers only
+  uncompressed JSON beneath this generated-results tree, not gzip, archive,
+  or all repository models. Run
+  `python3 elliptic-curves/cas/audit_icarm_construction_recognition_artifacts.py`
+  to check these committed bytes and scope flags without regenerating a
+  family, sieving, or factoring.
 - `icarm_curve282_conductor_parameter_recovery_v1.json` verifies global
   minimality, selected local Tate data, two-chart discriminant-root profiles,
   bounded CRT/Gauss recovery of `u=11671/42`, and the exact Fermigier/target
@@ -80,7 +93,21 @@ Important distinctions made explicit by the catalogue:
   and 302, while its canonical-height/theta layer is numerical at 100 digits.
   Its saturation index one is only inside each displayed subgroup, not in the
   full Mordell--Weil group.
-- `icarm_curve302_rank31_v1.json.gz` proves rank at least 31, not exact rank 31.
+- `icarm_curve273_rank30_v1.json` is the pinned `ECR30` lower-bound
+  certificate. It records 30 exact point checks and a stored `31 x 30`
+  finite-quotient certificate, while explicitly excluding numerical heights
+  from the proof and making no exact-rank claim. Its SHA-256 is
+  `e2a7a322fbd4703af4239f497749a69a68f9d5149aa8a1f696b39ab3941a3284`.
+- `icarm_curve302_rank31_v1.json.gz` is the deterministic compressed `ECR31`
+  certificate. It proves rank at least 31, not exact rank 31; its public
+  BSD/GRH statement and numerical regulator are not used. Its compressed
+  SHA-256 is
+  `fc50b4b9ec5fe1dd1fe31aa299f13d8bc3476d43f3ed98e2ade5a4fc8972aa04`
+  and its decompressed JSON SHA-256 is
+  `3be0d6fe82c58e0f9284df5d9340332944a1d906508ea986d4abe00357036991`.
+  `python3 elliptic-curves/cas/audit_icarm_rank_lower_bound_artifacts.py`
+  checks both pinned files and their source provenance without performing
+  curve arithmetic, finite-group enumeration, or matrix-rank computation.
 - The ICARM 285/286 analysis exactly proves independence of 21 displayed
   points and now independently replays global minimality and every local
   conductor exponent.

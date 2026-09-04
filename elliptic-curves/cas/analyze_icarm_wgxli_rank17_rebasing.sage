@@ -7,7 +7,9 @@ of canonical-height Grams, constructs a finite permutation graph from stable
 denominator anchors, integrality, exact identity-component data, and
 sign-invariant height rows, and enumerates every perfect matching in that
 declared graph.  Only retained signed permutations are inputs to the exact
-point/group-law and modular first-jet stages.
+point/group-law and modular first-jet stages.  The default source is the later
+committed sufficient projection of all thirteen public records;
+``--live-pinned-source`` retains the original raw database/hash audit.
 """
 
 from __future__ import annotations
@@ -39,6 +41,13 @@ OUTPUT = (
 )
 DATABASE_URL = "https://elliptic-rank.icarm.cloud/database.json"
 DATABASE_SHA256 = "18699517c2969c8c3a250ae612d5caae9fb23c379fe054ba3c7fdf2ec2a83e50"
+PUBLIC_FIBRE_PROJECTION = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json"
+)
+PUBLIC_FIBRE_PROJECTION_SHA256 = (
+    "9a2675ab48cc37111d1f4050bd1797fc84c98b7839668d292d11406efe7a9eaa"
+)
 TARGETS = (351, 356, 376, 377, 385)
 REFERENCE = 356
 EXPECTED_COMPONENTS = (
@@ -60,6 +69,11 @@ def parse_args():
     parser.add_argument("--input", type=Path, default=LINEAGE)
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--check", action="store_true")
+    parser.add_argument(
+        "--live-pinned-source",
+        action="store_true",
+        help="require the original 474-row public database byte hash",
+    )
     return parser.parse_args()
 
 
@@ -67,18 +81,43 @@ def sha256_bytes(raw: bytes) -> str:
     return hashlib.sha256(raw).hexdigest()
 
 
-def fetch_database():
-    with urlopen(DATABASE_URL, timeout=60) as response:
-        raw = response.read()
-    if sha256_bytes(raw) != DATABASE_SHA256:
-        raise AssertionError("the pinned ICARM database snapshot changed")
+def load_database(*, live_pinned_source):
+    if live_pinned_source:
+        with urlopen(DATABASE_URL, timeout=60) as response:
+            raw = response.read()
+        source_hash = sha256_bytes(raw)
+        if source_hash != DATABASE_SHA256:
+            raise AssertionError("the pinned ICARM database snapshot changed")
+        payload = json.loads(raw)
+        records = {
+            int(record["id"]): record
+            for record in payload["curves"]
+            if record.get("submitter") == "wgxli"
+        }
+        return source_hash, records
+
+    raw = PUBLIC_FIBRE_PROJECTION.read_bytes()
+    observed = sha256_bytes(raw)
+    if observed != PUBLIC_FIBRE_PROJECTION_SHA256:
+        raise AssertionError(
+            f"committed public-fibre projection changed: {observed} != "
+            f"{PUBLIC_FIBRE_PROJECTION_SHA256}"
+        )
     payload = json.loads(raw)
-    records = {
-        int(record["id"]): record
-        for record in payload["curves"]
-        if record.get("submitter") == "wgxli"
-    }
-    return raw, records
+    by_id = {int(record["id"]): record for record in payload.get("records", [])}
+    records = {}
+    for curve_id in sorted({value for component in EXPECTED_COMPONENTS for value in component}):
+        record = by_id.get(curve_id)
+        if record is None:
+            raise AssertionError(f"committed public-fibre projection omitted {curve_id}")
+        if len(record.get("points", [])) < 17:
+            raise AssertionError(f"committed public-fibre projection lacks 17 points for {curve_id}")
+        records[curve_id] = {
+            **record,
+            "rank_lower_bound": record["snapshot_rank_lower_bound"],
+            "submitter": "wgxli",
+        }
+    return DATABASE_SHA256, records
 
 
 def rational_text(value):
@@ -467,7 +506,9 @@ def main():
     started = time.monotonic()
     lineage_raw = arguments.input.read_bytes()
     lineage = json.loads(lineage_raw)
-    database_raw, submitter_records = fetch_database()
+    database_source_hash, submitter_records = load_database(
+        live_pinned_source=arguments.live_pinned_source
+    )
     matrices, pari_version = height_matrices(submitter_records)
 
     components, all_signed_pair_fits = residual_components(matrices)
@@ -562,7 +603,7 @@ def main():
         "status": "PASS_BOUNDED_SIGN_AND_PERMUTATION_ALIGNMENT",
         "inputs": {
             str(arguments.input.relative_to(ROOT)): sha256_bytes(lineage_raw),
-            DATABASE_URL: sha256_bytes(database_raw),
+            DATABASE_URL: database_source_hash,
         },
         "software": {"pari_gp": pari_version, "numpy": numpy.__version__},
         "sign_alignment": {

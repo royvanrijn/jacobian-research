@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 from dataclasses import asdict
 import hashlib
 import json
@@ -308,7 +309,20 @@ payload = {
 }
 
 serialized = json.dumps(payload, indent=2, sort_keys=True) + "\n"
-OUTPUT.write_text(serialized)
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument(
+    "--write",
+    action="store_true",
+    help="rewrite the pinned generated artifact",
+)
+args = parser.parse_args()
+if args.write:
+    OUTPUT.write_text(serialized)
+else:
+    assert OUTPUT.exists(), f"missing {OUTPUT.relative_to(ROOT)}"
+    assert OUTPUT.read_text() == serialized, (
+        f"{OUTPUT.relative_to(ROOT)} is stale; regenerate with --write"
+    )
 digest = hashlib.sha256(serialized.encode()).hexdigest()
 
 print("PASS: checked the all-dimensional kernel-vertex/singularity join")
@@ -316,5 +330,5 @@ print("PASS: verified exact truncated DVR-module length profiles")
 print("PASS: bounded every component between d*mu and its active length")
 print("PASS: one binary top realizes flat, mixed, and order-one torsion")
 print("PASS: recovered the singular HC4PPG6 support packets")
-print(f"PASS: wrote {OUTPUT.relative_to(ROOT)}")
+print(f"PASS: checked {OUTPUT.relative_to(ROOT)}")
 print(f"SHA256: {digest}")

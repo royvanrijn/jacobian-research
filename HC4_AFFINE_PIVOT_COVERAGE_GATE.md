@@ -83,6 +83,9 @@ The exact verifier is
 [scripts/verify_hc4_affine_pivot_coverage_gate.py](scripts/verify_hc4_affine_pivot_coverage_gate.py),
 and its generated ledger is
 [artifacts/generated-results/hc4_affine_pivot_coverage_gate.json](artifacts/generated-results/hc4_affine_pivot_coverage_gate.json).
+The ledger's `open_frontier` remains relevant to affine-representation
+classification, but `HC4RSD7` makes it unnecessary for inherited collision
+transfer.  The distinction is part of the maintained proof boundary.
 
 ## 1. Exact affine-pivot criterion
 
@@ -329,6 +332,8 @@ Run:
 
 ~~~bash
 .venv/bin/python scripts/verify_hc4_affine_pivot_coverage_gate.py
+# committed artifact only, without symbolic replay:
+.venv/bin/python scripts/verify_hc4_affine_pivot_coverage_gate.py --audit-existing-only
 ~~~
 
 The command verifies the universal rank-one and bordered determinant

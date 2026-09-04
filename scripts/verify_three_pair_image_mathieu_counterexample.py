@@ -234,7 +234,10 @@ def main() -> None:
         "PASS SIC(3): E(f^m)=0 and "
         "[t]E(g*f^m)=(-1)^(m-1)(m+1)!m! through m=10"
     )
-    print("PASS SIC(3): all-order binomial identities through m=99")
+    print(
+        "PASS SIC(3): bounded replay of the written all-order binomial "
+        "formulas through m=99"
+    )
     print("PASS SIC(3): f has four terms and bidegree (2,2)")
     print(
         "PASS GMC(4): four-term cubic has pure moments zero and "

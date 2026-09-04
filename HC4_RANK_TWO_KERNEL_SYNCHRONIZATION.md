@@ -2,6 +2,10 @@
 
 ## Status and scope
 
+**Current status.**  This is an intermediate proof-map note.  The exceptional
+quasi-translation form left in Section 4 is closed by `HC4RSD60`, and the
+complete square-zero branch is subsumed by `HC4MR1`.
+
 This note continues `HC4RSD58`.  Work over a characteristic-zero field and write
 
 \[
@@ -223,7 +227,7 @@ In the original coordinates the ternary kernel direction is constant.
 
 This proves `HC4RSD59`.
 
-## 4. What remains
+## 4. Historical remainder (closed by `HC4RSD60`)
 
 The only rank-two `[2,2]` branch not covered by `HC4RSD59` is the genuinely
 nonconstant ternary quasi-translation normal form.  De Bondt's complete

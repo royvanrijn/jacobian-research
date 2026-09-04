@@ -12,19 +12,13 @@ origin.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 from pathlib import Path
 import shutil
 import subprocess
 
 import sympy as sp
-
-from research_hc4_smooth_quartic_simple_line import (
-    build_equations,
-    singular,
-    unknown_degree,
-)
-
 
 ROOT = Path(__file__).resolve().parents[1]
 DRIVER = ROOT / "scripts" / "research_hc4_smooth_quartic_simple_line.py"
@@ -98,6 +92,12 @@ def verify_parametrization() -> None:
 
 
 def build_singular_program() -> tuple[str, int, tuple[int, ...]]:
+    from research_hc4_smooth_quartic_simple_line import (
+        build_equations,
+        singular,
+        unknown_degree,
+    )
+
     equations, unknowns, _parameters = build_equations(
         "squarefree-line", False
     )
@@ -231,6 +231,22 @@ def verify_determinant_zero_support() -> None:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--audit-existing-only",
+        action="store_true",
+        help="verify committed equation-builder provenance without symbolic or Singular replay",
+    )
+    arguments = parser.parse_args()
+
+    digest = hashlib.sha256(DRIVER.read_bytes()).hexdigest()
+    assert digest == DRIVER_SHA256, (digest, DRIVER_SHA256)
+    if arguments.audit_existing_only:
+        print(
+            "PASS committed HC4 smooth-quartic polar-conic provenance is intact; "
+            "no symbolic or Singular replay"
+        )
+        return
     verify_parametrization()
     verify_generic_polar_basis()
     verify_determinant_zero_support()

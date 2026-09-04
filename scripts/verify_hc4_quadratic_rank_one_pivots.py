@@ -11,12 +11,10 @@ triangular polynomial inverse.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from pathlib import Path
-
-import sympy as sp
-
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = (
@@ -25,6 +23,41 @@ OUTPUT = (
     / "generated-results"
     / "hc4_quadratic_rank_one_pivots.json"
 )
+EXPECTED_OUTPUT_SHA256 = (
+    "7eb678ce7b283ff3b4b102ea548a3131bd9970c531e366be364a2183bc279630"
+)
+
+
+def audit_existing() -> None:
+    actual = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    assert actual == EXPECTED_OUTPUT_SHA256, (actual, EXPECTED_OUTPUT_SHA256)
+    payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    assert payload["status"]["id"] == "HC4RSD10"
+    assert payload["result"].startswith(
+        "all quadratic scalar pivots in the singular-pencil programme"
+    )
+    assert payload["open_frontier"].startswith(
+        "higher-degree nonlinear pivots, nonsingular pencil cancellation"
+    )
+    print(
+        "PASS: committed HC4RSD10 stage artifact is intact; its quadratic "
+        "nonsingular handoff is superseded by HC4RSD11--16 and its auxiliary "
+        "higher-degree pencil handoff by HC4MR1; no symbolic replay or rewrite"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help="validate the committed stage artifact without symbolic replay or rewriting it",
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
+import sympy as sp
 
 
 # Universal one-active/three-passive block identities.

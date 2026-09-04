@@ -17,6 +17,7 @@ certified by a rank increase after reduction modulo a good prime.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from itertools import combinations_with_replacement
@@ -381,6 +382,9 @@ def audit_linear_graph_coordinates(
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--write", action="store_true")
+    args = parser.parse_args()
     z, k12 = build_k12()
     linear_graph_coordinates = audit_linear_graph_coordinates(k12, z)
     triangular = [
@@ -538,8 +542,15 @@ def main() -> None:
             "automorphisms."
         ),
     }
-    OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n")
-    digest = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    serialized = json.dumps(artifact, indent=2) + "\n"
+    if args.write:
+        OUTPUT.write_text(serialized)
+    else:
+        assert OUTPUT.exists(), f"missing {OUTPUT.relative_to(ROOT)}"
+        assert OUTPUT.read_text() == serialized, (
+            f"{OUTPUT.relative_to(ROOT)} is stale; regenerate with --write"
+        )
+    digest = hashlib.sha256(serialized.encode()).hexdigest()
     print("PASS K12: literal triangular components are exactly 4,...,12")
     print(
         "PASS K11: every linear target-coordinate graph family has a "
@@ -556,7 +567,7 @@ def main() -> None:
         "PASS K11: closest deletions 11 and 12 remain obstructed through "
         "target degree four"
     )
-    print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
+    print(f"PASS checked {OUTPUT.relative_to(ROOT)}")
     print(f"SHA256 {digest}")
 
 

@@ -274,9 +274,15 @@ Run:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_affine_moving_kernel_pencils.py
+# cleanup only: verify committed inputs and later handoffs
+.venv/bin/python scripts/verify_hc4_affine_moving_kernel_pencils.py --audit-existing-only
 ```
 
 The command verifies the affine Piola normal-form calibrations, the integrated
 Hessian and adjugate identities, the UFD-normalized pencil, its constant
 determinants, and the complete triangular inverse. It writes
 `artifacts/generated-results/hc4_affine_moving_kernel_pencils.json`.
+The cleanup-only mode instead hash-checks that ledger, the projective-polar
+atlas it consumes, and the imported equation helper. It neither imports
+SymPy nor recomputes or rewrites the ledger, and it reports that `HC4RSD3--4`
+closed the artifact's recorded affine handoffs.

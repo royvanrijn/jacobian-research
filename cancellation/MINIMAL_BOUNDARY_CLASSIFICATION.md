@@ -827,21 +827,25 @@ geometric parameter fiber, the local Kähler different satisfies
  \dim_k J/\mathfrak nJ=6.
 \]
 
-It is therefore not locally principal.  Thus a closed-point Cartier
-extension of the codimension-one different ledger would exclude the entire
-certified quartic length-six stratification.  To turn this into the global
-cubic theorem one must prove one of the following two lifting statements:
+It is therefore not locally principal.  The later all-orders theorem
+`SSADPALL` proves that this six-generator obstruction persists after every
+compatible higher formal correction for every squarefree leading symbol.
+Thus a closed-point Cartier extension of the codimension-one different
+ledger would exclude the entire squarefree formal stratification.  To turn
+this into the global cubic theorem one must now prove one of the following
+boundary-geometric statements:
 
 1. boundary-minimal Keller intersections make the ramification support
-   `S_2` at every collision;
-2. the six-generator initial different remains noncyclic after every
-   compatible higher formal correction.
+   `S_2` at every collision and force the two saturation equalities directly;
+2. the height-one different extends as a Cartier different at every closed
+   collision, so the already-proved all-orders six-generator obstruction
+   excludes every squarefree leading symbol.
 
-The first statement closes by the CM criterion; the second contradicts a
-Cartier-different extension.  Proposition 1.15c of the frontend reduces the
-second to base change for the annihilator and local freeness of its relative
-Nakayama quotient.  Neither is presently a consequence of the height-one
-boundary ledger.
+Under Cartierness, the first statement closes by the CM criterion.  The
+formal algebra needed for the second statement—base change for the
+annihilator and local freeness of its relative Nakayama quotient—is already
+closed by `KDSQ6`, `NADPALL`, and `SSADPALL`.  Cartier extension itself is
+not presently a consequence of the height-one boundary ledger.
 
 The entire formal higher-order queue is now closed for the nodal symbol.
 Its exact cyclic gauge cokernel gives the normal form

@@ -120,10 +120,10 @@ not identify its family.
 
 The deterministic checker
 [`analyze_icarm_construction_fingerprints.py`](../cas/analyze_icarm_construction_fingerprints.py)
-compares curves 281, 282, 285 and 286, together with rank-30 curve 273, against
-the complete 2,329-family normalized nonsingular six-root Mestre census of
-diameter at most 300.  It also includes the larger normalized Fermigier
-control tuple
+compares curves 281, 282, 285 and 286, together with rank-30 curve 273 and
+rank-at-least-31 curve 302, against the complete 2,329-family normalized
+nonsingular six-root Mestre census of diameter at most 300. It also includes
+the larger normalized Fermigier control tuple
 
 ```text
 (0,29,658,722,981,1036).
@@ -139,25 +139,32 @@ parameter is substituted back exactly.  The sole match is
 curve 282: roots (0,29,658,722,981,1036), T=11671/21.
 ```
 
-There is no match for curves 273, 281, 285 or 286.  This is complete only for
-the stated fixed-root census.  It does not exclude a larger root tuple, a
+There is no match for curves 273, 281, 285, 286 or 302. This is complete only
+for the stated fixed-root census. It does not exclude a larger root tuple, a
 generalized Mestre construction, a Kihara/Nagao family, a K3 descendant, an
 isogenous image, or a private family.
 
-The same checker scans every nonsingular numeric five-vector in the generated
-artifact tree by exact `j`.  It finds only already identified records of the
-five targets, not an unrecognized stored model.  Its point-denominator audit
-records respectively 13, 19, 20 and 17 distinct square-root denominators for
-the submitted bases of curves 281, 282, 285 and 286, with gcd one in every
-case.  These sparse patterns support the interpretation that the displayed
-points are reduced Mordell--Weil bases rather than raw transported sections;
-they are not family certificates.
+The same checker scans nonsingular numeric five-vectors in uncompressed
+`*.json` files under `artifacts/generated-results` by exact `j`. It does not
+scan gzip files, archive artifacts, or every model elsewhere in the
+repository. It finds only already identified records of the targets in that
+historical snapshot, but absence there is not a repository-wide provenance
+exclusion. Its point-denominator audit records sparse patterns that support
+the interpretation that the displayed points are reduced Mordell--Weil bases
+rather than raw transported sections; they are not family certificates.
 
-Finally, all five target curves have certified trivial rational torsion.  They
+Finally, all six target curves have certified trivial rational torsion. They
 therefore cannot be direct specializations of the implemented
 Elkies--Klagsbrun model `y^2=x(x^2+2A*x+B)`, which always contains `(0,0)` as
 rational 2-torsion.  This leaves isogenous quotients and other K3 fibrations
 open.
+
+The committed fingerprints and their direct inputs can be checked without
+rerunning construction recognition:
+
+```bash
+python3 elliptic-curves/cas/audit_icarm_construction_recognition_artifacts.py
+```
 
 ## Backward reconstruction of curve 282
 

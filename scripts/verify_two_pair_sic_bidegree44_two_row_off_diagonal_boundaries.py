@@ -498,14 +498,197 @@ def delayed_fibre_audit(timeout: int) -> list[dict[str, object]]:
     return answer
 
 
+def require_stored_solver_status(
+    result: object,
+    status: str,
+    *,
+    context: str,
+    scheme_degree: int | None = None,
+) -> None:
+    if (
+        not isinstance(result, dict)
+        or result.get("returncode") != 0
+        or result.get("status") != status
+    ):
+        raise AssertionError(f"stored {context} has no exact {status} certificate")
+    if scheme_degree is not None and result.get("scheme_degree") != scheme_degree:
+        raise AssertionError(f"stored {context} has the wrong scheme degree")
+
+
+def validate_existing_artifact(path: Path) -> None:
+    artifact = json.loads(path.read_text(encoding="utf-8"))
+    if (
+        artifact.get("format")
+        != "two-pair-sic-bidegree44-two-row-off-diagonal-boundaries-v1"
+    ):
+        raise AssertionError("unexpected off-diagonal boundary artifact format")
+
+    supports = boundary_orbits()
+    records = artifact.get("orbits")
+    if not isinstance(records, list):
+        raise AssertionError("off-diagonal boundary artifact has no orbits list")
+    stored_supports = [
+        frozenset(tuple(position) for position in record.get("representative", ()))
+        for record in records
+    ]
+    if stored_supports != list(supports):
+        raise AssertionError(
+            "stored boundaries are not the exact ordered canonical support census"
+        )
+    if len(stored_supports) != len(set(stored_supports)):
+        raise AssertionError("stored boundary census contains duplicate supports")
+    if artifact.get("proper_boundary_reversal_orbit_count") != len(supports) or len(
+        supports
+    ) != 1174:
+        raise AssertionError("unexpected stored boundary orbit count")
+    if artifact.get("moment_orders") != [1, 10]:
+        raise AssertionError("boundary theorem artifact must record moments 1 through 10")
+
+    stratum_census: dict[str, int] = {}
+    unit_system_count = 0
+    for record, support in zip(records, supports, strict=True):
+        if record.get("support_size") != len(support):
+            raise AssertionError(f"wrong support size for {sorted(support)}")
+        if record.get("reversal") != [
+            list(position) for position in sorted(reversal(support))
+        ]:
+            raise AssertionError(f"wrong reversal for {sorted(support)}")
+        support_stratum = stratum(support)
+        if record.get("stratum") != support_stratum:
+            raise AssertionError(f"wrong stratum for {sorted(support)}")
+        stratum_census[support_stratum] = stratum_census.get(support_stratum, 0) + 1
+
+        if support_stratum == "exact_rank_two":
+            require_stored_solver_status(
+                record.get("unit_certificate"),
+                "unit_ideal",
+                context=f"rank-two boundary {sorted(support)}",
+            )
+            if record.get("minor_open_certificates") is not None:
+                raise AssertionError(
+                    f"spurious minor-open cover on automatic-rank support {sorted(support)}"
+                )
+            unit_system_count += 1
+        elif support_stratum == "rank_one_closed_and_exact_rank_two_open":
+            chart = normalize(support)
+            expected_minors = tuple(
+                (columns, str(minor)) for columns, minor in row_minors(chart)
+            )
+            stored_minors = record.get("minor_open_certificates")
+            if not isinstance(stored_minors, list):
+                raise AssertionError(
+                    f"missing exact-rank-two minor cover for {sorted(support)}"
+                )
+            actual_minors = tuple(
+                (tuple(certificate.get("columns", ())), certificate.get("minor"))
+                for certificate in stored_minors
+            )
+            if actual_minors != expected_minors:
+                raise AssertionError(
+                    f"stored minor opens do not exactly cover {sorted(support)}"
+                )
+            for index, certificate in enumerate(stored_minors):
+                require_stored_solver_status(
+                    certificate.get("certificate"),
+                    "unit_ideal",
+                    context=(
+                        f"minor-open boundary {index} on {sorted(support)}"
+                    ),
+                )
+            unit_system_count += len(stored_minors)
+        else:
+            if "unit_certificate" in record or "minor_open_certificates" in record:
+                raise AssertionError(
+                    f"spurious rank-two certificate on safe stratum {sorted(support)}"
+                )
+
+    expected_census = {
+        "rank_zero": 1,
+        "fixed_flag_one_sided": 222,
+        "rank_one": 19,
+        "rank_one_closed_and_exact_rank_two_open": 16,
+        "exact_rank_two": 916,
+    }
+    if stratum_census != expected_census:
+        raise AssertionError(f"unexpected reconstructed stratum census: {stratum_census}")
+    if artifact.get("stratum_census") != expected_census:
+        raise AssertionError("stored stratum totals do not match the exact records")
+    if unit_system_count != 942 or artifact.get(
+        "exact_QQ_unit_system_count"
+    ) != unit_system_count:
+        raise AssertionError("stored unit-system total does not match the exact records")
+
+    delayed = artifact.get("delayed_fibres")
+    expected_delayed = (
+        (
+            frozenset({(0, 1), (0, 4), (2, 0), (2, 3)}),
+            None,
+            8,
+            9,
+            8,
+        ),
+        (
+            frozenset({(1, 0), (1, 2), (1, 4), (3, 0), (3, 2), (3, 4)}),
+            [0, 2],
+            9,
+            10,
+            252,
+        ),
+    )
+    if not isinstance(delayed, list) or len(delayed) != len(expected_delayed):
+        raise AssertionError("stored delayed-fibre audit is incomplete")
+    for record, (support, columns, survives, killed, degree) in zip(
+        delayed, expected_delayed, strict=True
+    ):
+        if record.get("support") != [list(position) for position in sorted(support)]:
+            raise AssertionError("wrong delayed-fibre support")
+        if record.get("normalization_anchors") != [
+            list(position) for position in normalize(support).anchors
+        ]:
+            raise AssertionError("wrong delayed-fibre normalization")
+        if (
+            record.get("localized_minor_columns") != columns
+            or record.get("survives_through") != survives
+            or record.get("killed_by") != killed
+            or record.get("exact_scheme_degree") != degree
+        ):
+            raise AssertionError("wrong delayed-fibre metadata")
+        require_stored_solver_status(
+            record.get("rational_parametrization_certificate"),
+            "zero_dimensional",
+            context=f"delayed fibre {sorted(support)}",
+            scheme_degree=degree,
+        )
+        require_stored_solver_status(
+            record.get("unit_certificate"),
+            "unit_ideal",
+            context=f"killing moment on {sorted(support)}",
+        )
+
+    print("PASS exact canonical keys cover all 1174 boundary orbits once")
+    print("PASS stored strata and all 942 rank-two opens are fail-closed")
+    print("PASS both delayed fibres retain exact degree and killing-moment metadata")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--workers", type=int, default=6)
     parser.add_argument("--timeout", type=int, default=300)
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument(
+        "--audit-existing-only",
+        action="store_true",
+        help=(
+            "validate exact stored boundary keys, rank covers, and delayed "
+            "fibres without rerunning msolve"
+        ),
+    )
     arguments = parser.parse_args()
     if arguments.workers < 1 or arguments.timeout < 1:
         raise ValueError("--workers and --timeout must be positive")
+    if arguments.audit_existing_only:
+        validate_existing_artifact(arguments.output)
+        return
 
     supports = boundary_orbits()
     expected_strata = {

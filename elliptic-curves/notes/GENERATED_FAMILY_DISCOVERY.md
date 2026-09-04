@@ -22,6 +22,15 @@ and interpolated and factored exactly only for survivors.
 
 ## ICARM 273/282/302 census
 
+This bounded result is registered as
+`EC-ICARM-GENERATED-FAMILY-DISCOVERY`. A maintenance-only provenance check
+of the committed inputs and output is available without generating families,
+running a modular sieve, or factoring a polynomial:
+
+```sh
+python3 elliptic-curves/cas/audit_icarm_construction_recognition_artifacts.py
+```
+
 Replay the pinned computation with:
 
 ```sh

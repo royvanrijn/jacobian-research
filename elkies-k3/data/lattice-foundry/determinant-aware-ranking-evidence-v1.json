@@ -43,29 +43,27 @@
     {
       "surface_id": "K3-f43753fb154e3406",
       "arithmetic_field_of_definition": {
-        "tier": 2,
-        "status": "OPEN_QQ_FIELD_OF_DEFINITION_LOCAL_Z7_EVIDENCE_ONLY",
+        "tier": 3,
+        "status": "REJECT_QQ_FULL_RATIONAL_DETERMINANT720_MARKING_OBSTRUCTED",
+        "candidate_eligible": false,
         "evidence": [
-          "artifacts/generated-results/elkies-k3-golay-det720-3a5-formal-smoothness-v1.json"
+          "artifacts/generated-results/elkies-k3-golay-det720-qq-marking-obstruction-v1.json",
+          "elkies-k3/GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md"
         ]
       },
       "source_equation_precursor": {
-        "tier": 1,
-        "status": "PASS_ONE_PARAMETER_FORMAL_Z7_MARKED_FAMILY_PRECURSOR",
-        "evidence": [
-          "artifacts/generated-results/elkies-k3-golay-det720-3a5-formal-smoothness-v1.json"
-        ]
+        "tier": 3,
+        "status": "NOT_APPLICABLE_ARITHMETIC_MARKING_OBSTRUCTED",
+        "evidence": []
       },
       "compiler_corridor": {
-        "tier": 1,
-        "status": "PASS_EXACT_MARKING_LEVEL_PHYSICAL_CORRIDOR",
-        "evidence": [
-          "artifacts/generated-results/elkies-k3-golay-det720-3a5-to-mw17-physical-corridor-v1.json"
-        ]
+        "tier": 3,
+        "status": "NOT_APPLICABLE_ARITHMETIC_MARKING_OBSTRUCTED",
+        "evidence": []
       },
       "rank_jump_mechanism": {
         "tier": 3,
-        "status": "UNKNOWN_NO_ARITHMETIC_RANK_JUMP_MECHANISM_CERTIFICATE",
+        "status": "NOT_APPLICABLE_ARITHMETIC_MARKING_OBSTRUCTED",
         "evidence": [],
         "raw_multisection_counts_used": false
       }

@@ -23,6 +23,7 @@ REQUIRED_FIELDS = {
 OPTIONAL_FIELDS = {
     "external_formal_certificates",
     "forbidden_attack_classes",
+    "forbidden_attack_review",
     "supersedes_notes",
 }
 KINDS = {"theorem", "corollary", "example", "reproduction", "open_problem"}
@@ -161,6 +162,10 @@ def validate_index(index: dict) -> None:
         assert isinstance(item["dependencies"], list)
         assert isinstance(item["software_lock"], list)
         assert isinstance(item["replaced_by"], list)
+        for field in ("dependencies", "software_lock", "replaced_by"):
+            assert len(item[field]) == len(set(item[field])), (
+                f"{item_id}: duplicate {field} entry"
+            )
         for field in update_fields:
             assert isinstance(item[field], list), f"{item_id}: {field} must be a list"
             assert len(item[field]) == len(set(item[field])), (
@@ -176,6 +181,18 @@ def validate_index(index: dict) -> None:
         ), f"{item_id}: invalid supersedes note"
         forbidden_attacks = item.get("forbidden_attack_classes", [])
         assert isinstance(forbidden_attacks, list)
+        forbidden_attack_review = item.get("forbidden_attack_review")
+        if forbidden_attack_review is not None:
+            assert item["kind"] == "open_problem", (
+                f"{item_id}: forbidden-attack review belongs only to open problems"
+            )
+            assert isinstance(forbidden_attack_review, str) and forbidden_attack_review, (
+                f"{item_id}: invalid forbidden-attack review"
+            )
+            assert not forbidden_attacks, (
+                f"{item_id}: use forbidden_attack_classes instead of a no-go omission "
+                "reason when exclusions exist"
+            )
         if forbidden_attacks:
             assert item["kind"] == "open_problem", (
                 f"{item_id}: forbidden attack classes belong only to open problems"

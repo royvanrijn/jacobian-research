@@ -26,12 +26,15 @@ and a reproducible certificate plan.
 - The maximal noncyclic determinant-948 bridge is equation-explicit in both
   directions: `R17 -> 4A1/MW13 -> R17`, with thirteen saturated rational
   sections and target-free reverse selection.
-- The next foundry milestone is the first planner-found arithmetic MW17
-  fibration on a different NS. Determinant-950 `NS0024` and determinant-1184
-  `NS0031` are both arithmetically excluded by rational-marking obstructions.
-  The next step is an arithmetic-first reranking of the remaining frames;
-  determinant `720` has the strongest lattice/corridor controls, but its known
-  rational `3A5` point saturates to determinant `20`.
+- Lane B is arithmetic-first globally: `T` and its full stable marked curve
+  precede `NS=T^perp`, rootlessness, and equation work. Determinants `720`,
+  `950`/`NS0024`, and `1184`/`NS0031` are arithmetically excluded. The
+  determinant-720 stable curve is `X_0(60)` and has only rational cusps; its
+  known rational `3A5` point instead saturates to determinant `20`.
+- The construction target is stronger than a plain different-NS MW17:
+  require a certified positive-rank low-genus carrier and an independent
+  pullback section. The stretch target is an integral `V4`-stable MW lattice
+  with character ranks `17+1+1+1` and exact 2-primary graph glue.
 - The four published rank-25--28 R17 controls do not transfer to rational alternate-Q80 parameters, but the complete ICARM sweep now supplies native controls: curve 12 has rank at least 29 in class `11952`, while curves 363, 364, 378, and 395 give further rank-at-least-24--28 fibres in classes `08f72` and `11952`.
 - Rank `>=32` is open.
 - One curated inverse-ADE/foundry route is end-to-end planner-ready; the 936 bulk routes are not.
@@ -48,6 +51,9 @@ and a reproducible certificate plan.
 - restarting a full-rational-marking NS0024 search over `QQ`.
 - restarting the NS0031 model-157 rational-point or algebraization search over
   `QQ`.
+- reopening determinant 720 as a full rational rank-19 source over `QQ`.
+- inspecting rootless frames or launching coefficient searches before their
+  full marked `T` curve has a certified rational non-CM point.
 
 These remain useful provenance/regression material and are indexed from `../archive/elkies-k3/`.
 
@@ -62,5 +68,7 @@ These remain useful provenance/regression material and are indexed from `../arch
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK f968ac0d6fa311fb -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 e93bdd3228be30d0 -->
+<!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 252991e141c42e55 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 6b9d34ae8d722280 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 71f43dc9ef3af620 -->

@@ -3,7 +3,10 @@
 
 from __future__ import annotations
 
+import argparse
+from collections import Counter
 import hashlib
+from itertools import combinations
 import json
 from pathlib import Path
 import subprocess
@@ -39,6 +42,20 @@ TARGETS = (
         (2, 1, -1, -1),
     ),
 )
+POSITIONS = tuple((row, column) for row in range(4) for column in range(4))
+
+
+def parse_arguments() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--audit-census-only",
+        action="store_true",
+        help=(
+            "validate exact size-six/seven support coverage and stored "
+            "outcome counts without rerunning the two RURs"
+        ),
+    )
+    return parser.parse_args()
 
 
 def digest(path: Path) -> str:
@@ -47,6 +64,61 @@ def digest(path: Path) -> str:
 
 def normalized_result(text: str) -> str:
     return " ".join(text.split())
+
+
+def expected_mixed_supports(
+    support_size: int,
+) -> tuple[tuple[tuple[int, int], ...], ...]:
+    return tuple(
+        support
+        for support in combinations(POSITIONS, support_size)
+        if min(row - column for row, column in support) < 0
+        and max(row - column for row, column in support) > 0
+    )
+
+
+def validate_complete_census(
+    payload: dict[str, object],
+    support_size: int,
+    expected_counts: dict[str, int],
+) -> None:
+    expected = expected_mixed_supports(support_size)
+    recorded_support_size = payload.get("support_size")
+    if recorded_support_size is None:
+        # The first complete size-six artifact predates the explicit field.
+        # Accept that immutable schema only for its exact calculation name;
+        # current and future merger outputs always carry ``support_size``.
+        if not (
+            support_size == 6
+            and payload.get("calculation")
+            == "two_pair_sic_bidegree33_sparse_six_support_screen"
+        ):
+            raise AssertionError("missing support_size outside legacy size six")
+        recorded_support_size = 6
+    if (
+        recorded_support_size != support_size
+        or not payload["complete_mixed_enumeration"]
+        or payload["start"] != 0
+        or payload["stop"] != len(expected)
+        or payload["mixed_support_count"] != len(expected)
+    ):
+        raise AssertionError(f"unexpected size-{support_size} census scope")
+    records = payload["records"]
+    if not isinstance(records, list) or len(records) != len(expected):
+        raise AssertionError(f"incomplete size-{support_size} record list")
+    actual = tuple(
+        tuple(tuple(map(int, position)) for position in record["support"])
+        for record in records
+    )
+    if actual != expected:
+        raise AssertionError(
+            f"size-{support_size} records do not match the exact ordered domain"
+        )
+    actual_counts = Counter(str(record["status"]) for record in records)
+    if dict(actual_counts) != expected_counts or payload["counts"] != expected_counts:
+        raise AssertionError(
+            f"unexpected size-{support_size} census counts: {actual_counts}"
+        )
 
 
 def run_target(
@@ -122,17 +194,37 @@ def run_target(
 
 
 def main() -> None:
+    options = parse_arguments()
     six = json.loads(SIX_CENSUS.read_text(encoding="utf-8"))
     seven = json.loads(SEVEN_CENSUS.read_text(encoding="utf-8"))
-    if six["counts"] != {
+    six_counts = {
         "excluded_on_coefficient_torus": 7586,
         "msolve_nonempty": 2,
-    }:
-        raise AssertionError("unexpected size-six census counts")
-    if seven["counts"] != {
+    }
+    seven_counts = {
         "excluded_on_coefficient_torus": 11200,
-    }:
-        raise AssertionError("unexpected size-seven census counts")
+    }
+    validate_complete_census(six, 6, six_counts)
+    validate_complete_census(seven, 7, seven_counts)
+    survivor_supports = {
+        tuple(tuple(map(int, position)) for position in record["support"])
+        for record in six["records"]
+        if record["status"] == "msolve_nonempty"
+    }
+    expected_survivors = {support for _, support, _ in TARGETS}
+    if survivor_supports != expected_survivors:
+        raise AssertionError("unexpected size-six survivor supports")
+    mixed_six = expected_mixed_supports(6)
+    for index, support, _ in TARGETS:
+        if mixed_six[index] != support:
+            raise AssertionError(
+                f"stored size-six target index {index} no longer matches its support"
+            )
+    if options.audit_census_only:
+        print("PASS all 7588 mixed size-six supports occur exactly once")
+        print("PASS all 11200 mixed size-seven supports occur exactly once")
+        print("PASS the two size-six survivor indices and supports agree")
+        return
 
     with tempfile.TemporaryDirectory(
         prefix="sic33-sparse-six-rur-"

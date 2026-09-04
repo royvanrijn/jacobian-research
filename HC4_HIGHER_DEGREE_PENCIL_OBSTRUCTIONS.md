@@ -6,9 +6,12 @@ This note continues the nonzero-corner scalar reverse-Schur branch after the
 complete quadratic classification. It gives a global nilpotent formulation,
 closes every pencil direction of generic Hessian rank one without a degree
 bound, closes the genuinely moving leading-rank-three cubic direction, and
-reduces its constant-kernel residue to a moving nonhomogeneous tangent ruling
-whose border coefficient either has a pure fifth-power leading face or has
-degree at least six.
+develops the constant-kernel tangent-ruling analysis through the complete
+degree-six and degree-seven closures `HC4RSD32` and `HC4RSD40`.  The
+degree-at-least-six statement in `HC4RSD24` is the historical frontier at that
+stage, not the current endpoint of this note.  The later master reduction
+`HC4MR1` closes the entire auxiliary relative-nilpotent constant-Hessian-pencil
+branch in all degrees; neither result proves unrestricted `HC4` or `JC2`.
 
 > **Theorem HC4RSD17 (nilpotent Hessian-pencil equivalence).** Let (K) have
 > characteristic zero and let
@@ -421,6 +424,9 @@ The exact determinant identities are replayed by
 [scripts/verify_hc4_higher_degree_pencil_obstructions.py](scripts/verify_hc4_higher_degree_pencil_obstructions.py),
 which writes
 [artifacts/generated-results/hc4_higher_degree_pencil_obstructions.json](artifacts/generated-results/hc4_higher_degree_pencil_obstructions.json).
+That artifact ends at the `HC4RSD28` stage.  Its `open_frontier` field is
+historical discovery provenance, not the live frontier after `HC4RSD40` and
+`HC4MR1`.
 
 ## 1. The global nilpotent deformation
 
@@ -2403,6 +2409,8 @@ Run:
 
 ~~~bash
 .venv/bin/python scripts/verify_hc4_higher_degree_pencil_obstructions.py
+# committed `HC4RSD17--28` stage artifact only, without symbolic replay:
+.venv/bin/python scripts/verify_hc4_higher_degree_pencil_obstructions.py --audit-existing-only
 .venv/bin/python scripts/verify_hc4_pure_sextic_collision.py
 .venv/bin/python scripts/verify_hc4_pure_sextic_lower_flag.py
 .venv/bin/python scripts/verify_hc4_pure_sextic_affine_quartic.py
@@ -2417,6 +2425,10 @@ Run:
 .venv/bin/python scripts/verify_hc4_pure_septic_quartic_packets.py
 .venv/bin/python scripts/verify_hc4_quintic_bordered_lemma.py
 ~~~
+
+The maintenance-only mode preserves the exact stage artifact and explicitly
+reports that its degree-seven `open_frontier` field is superseded; it neither
+recomputes nor rewrites the identities.
 
 The checker verifies the nilpotent characteristic coefficients, the
 all-degree rank-one pencil face, the exceptional cubic Hessian and its

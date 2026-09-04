@@ -100,7 +100,7 @@ def stream_records(path: Path):
             ):
                 values = parse_array(iterator)
                 if len(values) <= 3:
-                    branch = tuple(map(int, values))
+                    branch = tuple(Fraction(str(value)) for value in values)
             elif branch is not None and '"label": ' in line:
                 label = str(json.loads(line.split(":", 1)[1].strip().rstrip(",")))
             elif label is not None and '"lattice_orbit_mask": ' in line:
@@ -122,21 +122,25 @@ def stream_records(path: Path):
 
 
 def primitive(
-    coefficients: tuple[int, ...], allowed_degrees: tuple[int, ...] | None = (1, 2)
-) -> tuple[tuple[int, ...], int]:
-    values = list(coefficients)
+    coefficients: tuple[object, ...], allowed_degrees: tuple[int, ...] | None = (1, 2)
+) -> tuple[tuple[int, ...], Fraction]:
+    values = [Fraction(str(value)) for value in coefficients]
     while values and values[-1] == 0:
         values.pop()
     if allowed_degrees is not None and len(values) - 1 not in allowed_degrees:
         raise ValueError(f"branch polynomial has degree {len(values) - 1}")
+    denominator = lcm(*(value.denominator for value in values))
+    integral = [
+        value.numerator * (denominator // value.denominator) for value in values
+    ]
     content = 0
-    for value in values:
+    for value in integral:
         content = gcd(content, abs(value))
     if not content:
         raise ValueError("zero branch polynomial")
-    values = [value // content for value in values]
+    values = [value // content for value in integral]
     first = next(value for value in values if value)
-    scale = content
+    scale = Fraction(content, denominator)
     if first < 0:
         values = [-value for value in values]
         scale = -scale
@@ -234,7 +238,7 @@ def catalog_character(coefficients: list[object]) -> tuple[Support, Fraction]:
             for value in rational_coefficients
         )
         normalized, factor_scale = primitive(integral, allowed_degrees=None)
-        scalar *= Fraction(factor_scale, denominator)
+        scalar *= factor_scale / denominator
         degree = len(normalized) - 1
         atom_type = "L" if degree == 1 else "Q" if degree == 2 else "P"
         atoms.add((atom_type, *normalized))

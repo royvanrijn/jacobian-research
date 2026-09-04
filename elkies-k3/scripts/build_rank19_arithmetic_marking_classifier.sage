@@ -376,9 +376,10 @@ def hospitality_comparison(by_id):
             "The rootless QQ equation supplies seventeen rational sections, rho=19, saturation, and trivial torsion, so the point really lifts to the full marking.",
         ],
         "contrast": (
-            "Determinant 950 is forced onto the rigid Fricke quotient X_0^+(475), "
-            "and determinant 1184 combines non-split Cartan level 4 with X_0(37), "
-            "where both rational 37-isogeny points fail the Frobenius lift. The "
+            "Determinant 720 has exact stable curve X_0(60), whose rational points "
+            "are all cusps; determinant 950 is forced onto the rigid Fricke quotient "
+            "X_0^+(475); and determinant 1184 combines non-split Cartan level 4 with "
+            "X_0(37), where both rational 37-isogeny points fail the Frobenius lift. The "
             "observed hospitality of 948 is therefore explained by its unusually "
             "low-genus Atkin-Lehner quotient plus an actual non-CM rational lift, "
             "not by determinant size or Clifford splitting alone."
@@ -426,9 +427,9 @@ def build(catalogue, t_arithmetic, decisions, paths):
     counts = Counter(row["classification"] for row in candidates)
     if counts != Counter(
         {
-            "ARITHMETICALLY_EXCLUDED": 2,
+            "ARITHMETICALLY_EXCLUDED": 3,
             "ARITHMETICALLY_POSSIBLE": 1,
-            "UNKNOWN": 63,
+            "UNKNOWN": 62,
         }
     ):
         raise AssertionError(f"classification count changed: {counts}")
@@ -446,7 +447,7 @@ def build(catalogue, t_arithmetic, decisions, paths):
     by_id = {row["surface_id"]: row for row in candidates}
     return {
         "schema": "elkies-k3.rank19-arithmetic-marking-classifier.v1",
-        "status": "PASS_FAIL_CLOSED_1_POSSIBLE_2_EXCLUDED_63_UNKNOWN",
+        "status": "PASS_FAIL_CLOSED_1_POSSIBLE_3_EXCLUDED_62_UNKNOWN",
         "policy": {
             **decisions["policy"],
             "equation_agent": (
@@ -463,11 +464,11 @@ def build(catalogue, t_arithmetic, decisions, paths):
             "proved": (
                 "All 66 exact rootless-MW17 candidate NS lattices are paired with "
                 "their catalogue primitive ternary complement and replayed even "
-                "Clifford data. The three non-UNKNOWN decisions are backed by exact "
+                "Clifford data. The four non-UNKNOWN decisions are backed by exact "
                 "registered certificates."
             ),
             "not_proved": (
-                "The 63 UNKNOWN rows are not asserted to exist or not exist over QQ. "
+                "The 62 UNKNOWN rows are not asserted to exist or not exist over QQ. "
                 "Their stable discriminant-kernel curves and rational points remain open."
             ),
         },

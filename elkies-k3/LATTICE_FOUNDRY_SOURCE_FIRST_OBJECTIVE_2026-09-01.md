@@ -2,16 +2,18 @@
 
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 e93bdd3228be30d0 -->
+<!-- status-consumer: EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS 01298fec30fa94a3 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 71f43dc9ef3af620 -->
 
 > **Programme update (2026-09-04).**  The candidate-ranking and finite-field
 > queue below are retained as exact, dated subcampaign records.  They no
 > longer define the programme-level “next equation” target. The active
-> foundry milestone is the first planner-found arithmetic MW17 fibration on a
-> different NS. Determinant-950 `NS0024` and determinant-1184 `NS0031` are
-> both arithmetically excluded over `QQ`; the latter's marked model-157 germ
-> remains a valid one-parameter formally smooth `ZZ_7` control. The first gate
-> is now arithmetic-first reranking of the remaining NS frames.
+> foundry starts from the global rank-three `T` queue before constructing NS
+> or inspecting rootless frames. Determinant `720`, determinant-950 `NS0024`,
+> and determinant-1184 `NS0031` are arithmetically excluded over `QQ`; the
+> latter's marked model-157 germ remains a valid one-parameter formally smooth
+> `ZZ_7` control. The live target is arithmetic MW17 plus a certified carrier,
+> with integral `V4` character ranks `17+1+1+1` as the stretch objective.
 > See
 > [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 

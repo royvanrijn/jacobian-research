@@ -2419,6 +2419,13 @@ standard monomial basis.  Proposition 6.8 is not a continuous
 diagonal-\(\mathrm{SL}_2\) orbit classification, so the dense
 degree-three SIC problem remains open.
 
+The retrospective coverage check reconstructs the mixed support domain
+directly.  It verifies that all 12,780 size-eight supports occur exactly
+once in the stored census, and that the explicit union of the seven earlier
+size-nine support families is exactly the 4,370-support complement of the
+final 7,050-support batch.  Thus neither stored totals nor a set complement
+is being used as a substitute for predecessor-family coverage.
+
 The next global computation should saturate each normalized chart by the
 nullcone and the explicit Rodrigues orbit before eliminating later
 moments.  Reconstructing a specialized norm or a single finite-field
@@ -2661,8 +2668,39 @@ replayed by
   scripts/verify_two_pair_sic_bidegree33_sparse_full_line43119.py
 
 .venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_full_incidence32229.py
+
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_full_incidence_remaining9.py
+
+.venv/bin/python \
   scripts/verify_two_pair_sic_bidegree33_rank_two_parity_channels.py
 ```
+
+The stored size-six through size-nine census domains can be audited without
+rerunning their exact elimination systems:
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_supports.py \
+  --audit-existing-only
+
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_survivor_rur.py \
+  --audit-census-only
+
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_support8.py \
+  --audit-census-only
+
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree33_sparse_full_incidence_remaining9.py \
+  --audit-census-only
+```
+
+These modes reconstruct exact support keys from size three onward, uniqueness, status totals,
+symmetry coverage, and the predecessor-family union.  They do not replay the
+underlying characteristic-zero Gröbner/RUR calculations.
 
 The characteristic-zero Hurwitz exclusions are replayed by
 

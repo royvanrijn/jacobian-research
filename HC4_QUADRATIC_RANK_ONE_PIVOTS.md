@@ -61,6 +61,9 @@ The exact block identities and normal-form calibration are replayed by
 [scripts/verify_hc4_quadratic_rank_one_pivots.py](scripts/verify_hc4_quadratic_rank_one_pivots.py),
 which writes
 [artifacts/generated-results/hc4_quadratic_rank_one_pivots.json](artifacts/generated-results/hc4_quadratic_rank_one_pivots.json).
+Its nonsingular-quadratic and higher-degree `open_frontier` is stage-local:
+`HC4RSD11--16` settle the quadratic cancellation handoff, while `HC4MR1`
+settles the auxiliary higher-degree constant-Hessian-pencil branch.
 
 ## 1. The passive three-by-three Hessian
 
@@ -304,6 +307,8 @@ Run:
 
 ~~~bash
 .venv/bin/python scripts/verify_hc4_quadratic_rank_one_pivots.py
+# committed `HC4RSD10` stage artifact only, without symbolic replay:
+.venv/bin/python scripts/verify_hc4_quadratic_rank_one_pivots.py --audit-existing-only
 ~~~
 
 The checker verifies the universal passive block faces, the rank-one frame

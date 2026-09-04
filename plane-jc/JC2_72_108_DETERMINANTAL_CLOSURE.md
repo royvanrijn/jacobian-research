@@ -394,6 +394,23 @@ geometric derivation, but it no longer blocks closure of this degree pair.
 
 ## 7. Replay
 
+The top-level verifier composes the exact adjacent-minor decision, both
+serialized special-fibre unit certificates, and the sign-branch transport:
+
+```bash
+python scripts/verify_jc72_108_case1_determinantal_closure.py
+```
+
+For cleanup-only verification, check both archive manifests, the three
+otherwise unmanifested transport inputs, the compact four-row reconstruction,
+and the special-fibre Bezout row without starting Singular or multiplying the
+89 MB certificate:
+
+```bash
+python scripts/verify_jc72_108_case1_determinantal_closure.py \
+  --audit-existing-only
+```
+
 The standard-library front-end audit is:
 
 ```bash
@@ -408,7 +425,7 @@ python plane-jc/cas/research_72_108_gap_attack.py
 python plane-jc/cas/verify_firstblock_quotient_graph.py
 ```
 
-Generate the exact Case-1 rank-drop replay:
+Generate the lower-level exact Case-1 rank-drop input directly:
 
 ```bash
 python scripts/research_jc72_108_case1_rankdrop.py /tmp/case1-rankdrop.sing

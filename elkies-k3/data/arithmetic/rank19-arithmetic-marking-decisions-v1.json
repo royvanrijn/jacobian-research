@@ -85,6 +85,72 @@
       "theorem_inputs": []
     },
     {
+      "surface_id": "K3-f43753fb154e3406",
+      "classification": "ARITHMETICALLY_EXCLUDED",
+      "certificates": [
+        {
+          "path": "artifacts/generated-results/elkies-k3-golay-det720-qq-marking-obstruction-v1.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_GOLAY_DET720_QQ_RATIONAL_MARKING_OBSTRUCTION"
+            },
+            {
+              "path": "stable_discriminant_kernel.proper_discriminant_image_isomorphism_type",
+              "equals": "S3"
+            },
+            {
+              "path": "exact_marked_modular_curve.label",
+              "equals": "X_0(60)"
+            },
+            {
+              "path": "exact_marked_modular_curve.rational_points.noncuspidal_points",
+              "equals": 0
+            },
+            {
+              "path": "known_rational_3A5_control.saturated_NS_determinant",
+              "equals": 20
+            }
+          ]
+        }
+      ],
+      "full_marking_curve": {
+        "status": "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE",
+        "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T))",
+        "explicit_model": "X_0(60)",
+        "genus": 7,
+        "rational_points": "twelve rational cusps and no noncuspidal QQ-points"
+      },
+      "easy_quotient_maps": [
+        {
+          "status": "PASS_EXACT_FORGET_STABLE_MOD2_MARKING",
+          "source": "X_0(60)-model full marking curve",
+          "target": "X_0(15)",
+          "degree": 6,
+          "target_genus": 1,
+          "target_rational_noncuspidal_points": 4
+        }
+      ],
+      "arithmetic_tests": [
+        {
+          "status": "PASS_THEOREM_RATIONAL_POINT_EXCLUSION",
+          "method": "Mazur--Kenku rational cyclic-isogeny classification",
+          "conclusion": "Degree 60 is absent, so X_0(60)(QQ) consists only of its twelve rational cusps."
+        },
+        {
+          "status": "PASS_EXACT_DETERMINANT20_OVERLATTICE_CONTROL",
+          "method": "rational 3-torsion, rational half-section, and maximal even-overlattice audit",
+          "conclusion": "The known rational 3A5 model saturates with index six to Neron--Severi determinant 20, not 720."
+        }
+      ],
+      "decision": "The exact full discriminant-marking curve is X_0(60), which has no noncuspidal rational point; the known rational 3A5 equation is independently the determinant-20 overlattice.",
+      "theorem_inputs": [
+        "Mazur--Kenku's complete classification of rational cyclic-isogeny degrees",
+        "the standard marked-K3 ternary-spin period correspondence",
+        "the complete rational-point determination of X_0(15)(QQ)"
+      ]
+    },
+    {
       "surface_id": "K3-ebaf00b3723751ba",
       "classification": "ARITHMETICALLY_EXCLUDED",
       "certificates": [

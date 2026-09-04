@@ -61,6 +61,7 @@ PARI_WORKER = r'''import json, sys, time
 sys.path.insert(0, WORKER_CAS)
 from sage.all import EllipticCurve, QQ, pari
 from elkies_rank28 import GENERAL_WEIERSTRASS_COEFFICIENTS, POINTS
+from elkies_residual_selmer_gate import pari_ellrank_total_two_selmer_dimension
 
 started = time.monotonic()
 curve = EllipticCurve(QQ, list(GENERAL_WEIERSTRASS_COEFFICIENTS))
@@ -69,12 +70,17 @@ known = pari([[str(x), str(y)] for x, y in POINTS])
 result = curve.pari_curve().ellrank(0, known)
 lower = int(result[0])
 upper = int(result[1])
-sha_two_dimension = int(result[2])
-total_selmer_dimension = upper + two_torsion_dimension + sha_two_dimension
+cassels_pairing_rank = int(result[2])
+total_selmer_dimension = pari_ellrank_total_two_selmer_dimension(
+    rank_lower=lower,
+    rank_upper=upper,
+    cassels_pairing_rank=cassels_pairing_rank,
+    two_torsion_dimension=two_torsion_dimension,
+)
 print("ELKIES_R28_SELMER_JSON=" + json.dumps({
     "pari_ellrank_lower": lower,
     "pari_ellrank_upper": upper,
-    "pari_sha_two_dimension": sha_two_dimension,
+    "pari_cassels_pairing_quotient_rank": cassels_pairing_rank,
     "returned_independent_point_count": len(result[3]),
     "two_torsion_dimension": two_torsion_dimension,
     "total_two_selmer_dimension": total_selmer_dimension,
@@ -88,6 +94,7 @@ sys.path.insert(0, WORKER_CAS)
 from sage.all import EllipticCurve, QQ, pari
 from build_elkies_2026_rank28_bad_place_ledger import DISCRIMINANT_FACTORIZATION
 from elkies_rank28 import GENERAL_WEIERSTRASS_COEFFICIENTS, POINTS
+from elkies_residual_selmer_gate import pari_ellrank_total_two_selmer_dimension
 
 started = time.monotonic()
 pari.allocatemem(PARI_STACK_BYTES)
@@ -99,12 +106,17 @@ known = pari([[str(x), str(y)] for x, y in POINTS])
 result = curve.pari_curve().ellrank(0, known)
 lower = int(result[0])
 upper = int(result[1])
-sha_two_dimension = int(result[2])
-total_selmer_dimension = upper + two_torsion_dimension + sha_two_dimension
+cassels_pairing_rank = int(result[2])
+total_selmer_dimension = pari_ellrank_total_two_selmer_dimension(
+    rank_lower=lower,
+    rank_upper=upper,
+    cassels_pairing_rank=cassels_pairing_rank,
+    two_torsion_dimension=two_torsion_dimension,
+)
 print("ELKIES_R28_SELMER_JSON=" + json.dumps({
     "pari_ellrank_lower": lower,
     "pari_ellrank_upper": upper,
-    "pari_sha_two_dimension": sha_two_dimension,
+    "pari_cassels_pairing_quotient_rank": cassels_pairing_rank,
     "returned_independent_point_count": len(result[3]),
     "two_torsion_dimension": two_torsion_dimension,
     "total_two_selmer_dimension": total_selmer_dimension,

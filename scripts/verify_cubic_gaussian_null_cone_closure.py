@@ -12,6 +12,7 @@ basis ``[1]``.  Finite-field output is not used as a proof.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import itertools
 import json
@@ -38,6 +39,14 @@ OUTPUT = (
     / "artifacts"
     / "generated-results"
     / "cubic_gaussian_null_cone_closure.json"
+)
+FIVE_WEIGHT_FRONTIER_OUTPUT = (
+    ROOT / "artifacts" / "generated-results" / "two_real_gmc_five_weight.json"
+)
+FIVE_WEIGHT_CASES = (
+    ((-3, -1, 0, 1, 2), (0, 0, 0, 0, 0)),
+    ((-3, -1, 0, 1, 2), (0, 0, 0, 1, 0)),
+    ((-2, -1, 0, 1, 2), (0, 0, 0, 0, 0)),
 )
 
 
@@ -208,12 +217,7 @@ def closure_systems() -> list[dict[str, object]]:
 
     # The three chart orbits not promoted over QQ in the earlier five-weight
     # census.  Reflection makes them account for ten ordinary charts.
-    five_weight_cases = (
-        ((-3, -1, 0, 1, 2), (0, 0, 0, 0, 0)),
-        ((-3, -1, 0, 1, 2), (0, 0, 0, 1, 0)),
-        ((-2, -1, 0, 1, 2), (0, 0, 0, 0, 0)),
-    )
-    for support, chart in five_weight_cases:
+    for support, chart in FIVE_WEIGHT_CASES:
         system = build_system(
             support,
             chart,
@@ -264,6 +268,66 @@ def closure_systems() -> list[dict[str, object]]:
     assert sum(system["stratum"] == "five_weight_promotion" for system in systems) == 3
     assert sum(system["stratum"] == "six_weight" for system in systems) == 14
     assert sum(system["stratum"] == "seven_weight" for system in systems) == 3
+
+    def system_keys(stratum: str) -> set[tuple[tuple[int, ...], tuple[int, ...]]]:
+        return {
+            (system["support"], system["chart"])
+            for system in systems
+            if system["stratum"] == stratum
+        }
+
+    def reflection_cover(
+        keys: set[tuple[tuple[int, ...], tuple[int, ...]]],
+    ) -> set[tuple[tuple[int, ...], tuple[int, ...]]]:
+        return {
+            item
+            for support, chart in keys
+            for item in (
+                (support, chart),
+                (reflected_support(support), tuple(reversed(chart))),
+            )
+        }
+
+    two_weight_universe = {
+        (support, chart)
+        for negative in range(-3, 0)
+        for positive in range(1, 4)
+        for support in ((negative, positive),)
+        for chart in chart_choices(support_data(support)[0], support)
+    }
+    if reflection_cover(system_keys("two_weight_finite")) != two_weight_universe:
+        raise AssertionError("two-weight systems do not cover the exact chart domain")
+
+    five_weight_raw_count = sum(
+        (1 if reflected_support(support) == support else 2)
+        * (2 if 0 in support else 1)
+        for support, _ in FIVE_WEIGHT_CASES
+    )
+    if five_weight_raw_count != 10:
+        raise AssertionError("five-weight promotion charts do not account for ten charts")
+
+    six_weight_universe = {
+        (support, chart)
+        for support in itertools.combinations(range(-3, 4), 6)
+        for chart in chart_choices(support_data(support)[0], support)
+    }
+    if reflection_cover(system_keys("six_weight")) != six_weight_universe:
+        raise AssertionError("six-weight systems do not cover the exact chart domain")
+    six_weight_raw_count = sum(
+        (2 if 0 in support else 1)
+        for support, _ in six_weight_universe
+    )
+    if six_weight_raw_count != 44:
+        raise AssertionError("six-weight exact chart domain does not have 44 charts")
+
+    seven_weight_universe = {
+        (seven_support, chart)
+        for chart in chart_choices(support_data(seven_support)[0], seven_support)
+    }
+    if reflection_cover(system_keys("seven_weight")) != seven_weight_universe:
+        raise AssertionError("seven-weight systems do not cover the exact chart domain")
+    if 2 * len(seven_weight_universe) != 8:
+        raise AssertionError("centered seven-weight domain does not represent eight charts")
     return systems
 
 
@@ -314,7 +378,97 @@ def verify_system(system: dict[str, object]) -> dict[str, object]:
     }
 
 
+def expected_record_metadata(system: dict[str, object]) -> dict[str, object]:
+    return {
+        "stratum": system["stratum"],
+        "support": list(system["support"]),
+        "chart": list(system["chart"]),
+        "cutoff": system["cutoff"],
+        "normalization_kind": system["normalization_kind"],
+        "normalization": system["normalization"],
+        "selected_coefficients": list(system["selected_coefficients"]),
+        "variables": [str(variable) for variable in system["variables"]],
+        "equation_count": len(system["equations"]),
+        "localization_factor": str(system["localization_factor"]),
+        "second_moment_elimination": system["second_moment_elimination"],
+        "input_sha256": system["input_sha256"],
+    }
+
+
+def validate_existing_artifact(path: Path) -> None:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if payload.get("format") != "cubic-gaussian-null-cone-closure-v1":
+        raise AssertionError("unexpected cubic Gaussian closure artifact format")
+    frontier = json.loads(FIVE_WEIGHT_FRONTIER_OUTPUT.read_text(encoding="utf-8"))
+    unresolved = tuple(
+        (
+            tuple(record.get("support_representative", ())),
+            tuple(record.get("chart", ())),
+        )
+        for record in frontier.get("unresolved_representative_chart_orbits", ())
+    )
+    if unresolved != FIVE_WEIGHT_CASES:
+        raise AssertionError(
+            "the closure systems do not match the exact five-weight handoff"
+        )
+    systems = closure_systems()
+    records = payload.get("records")
+    if not isinstance(records, list) or len(records) != len(systems):
+        raise AssertionError("stored cubic Gaussian closure records are incomplete")
+    keys = [
+        (record.get("stratum"), tuple(record.get("support", ())), tuple(record.get("chart", ())))
+        for record in records
+    ]
+    if len(keys) != len(set(keys)):
+        raise AssertionError("stored cubic Gaussian closure records contain duplicates")
+    for record, system in zip(records, systems, strict=True):
+        expected = expected_record_metadata(system)
+        for key, value in expected.items():
+            if record.get(key) != value:
+                raise AssertionError(
+                    f"stored {key} does not match exact system {expected['support']} "
+                    f"{expected['chart']}"
+                )
+        if record.get("field") != "QQ" or record.get("reduced_basis") != ["1"]:
+            raise AssertionError(
+                f"stored system is not an exact QQ unit: {expected['support']} "
+                f"{expected['chart']}"
+            )
+
+    expected_counts = {
+        "finite_closure_presentations": 31,
+        "two_weight_finite_presentations": 11,
+        "five_weight_promotions": 3,
+        "five_weight_ordinary_charts_newly_closed": 10,
+        "six_weight_presentations": 14,
+        "six_weight_ordinary_charts_closed": 44,
+        "seven_weight_chart_orbits": 3,
+        "seven_weight_ordinary_charts_closed": 8,
+    }
+    for key, value in expected_counts.items():
+        if payload.get(key) != value:
+            raise AssertionError(f"stored {key} does not match the exact census")
+    print("PASS closure keys match the three exact five-weight frontier leftovers")
+    print("PASS exact chart keys cover every declared closure stratum")
+    print("PASS all 31 stored systems match their QQ unit-certificate inputs")
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument(
+        "--audit-existing-only",
+        action="store_true",
+        help=(
+            "validate exact chart-orbit coverage, stored inputs, and QQ unit "
+            "outcomes without rerunning msolve"
+        ),
+    )
+    arguments = parser.parse_args()
+    if arguments.audit_existing_only:
+        validate_existing_artifact(arguments.output)
+        return
+
     assert msolve.available(), "this certificate requires msolve"
     records = []
     for system in closure_systems():
@@ -356,9 +510,9 @@ def main() -> None:
         ),
         "records": records,
     }
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(json.dumps(payload, indent=2) + "\n")
-    print("PASS cubic null cone: wrote", OUTPUT.relative_to(ROOT))
+    arguments.output.parent.mkdir(parents=True, exist_ok=True)
+    arguments.output.write_text(json.dumps(payload, indent=2) + "\n")
+    print("PASS cubic null cone: wrote", arguments.output)
 
 
 if __name__ == "__main__":

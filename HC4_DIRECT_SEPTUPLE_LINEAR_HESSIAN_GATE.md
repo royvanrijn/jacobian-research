@@ -938,7 +938,7 @@ The proof actually eliminates the Hessian boundary before the curl and scalar
 Schur equations are needed. It does not treat linear multiplicity eight or
 nine, a nonsquarefree residual quadratic, or a lower-Smith boundary.
 
-## 8. The next finite calculation
+## 8. Historical next calculation and current boundary
 
 The next repeated-line targets from this theorem are
 
@@ -951,6 +951,7 @@ on the generic-corank-one stratum, together with the separate generic
 corank-two/three Smith strata. The generic-corank-one targets in (8.1) are
 closed in
 [`HC4_OCTUPLE_NONUPLE_LINEAR_HESSIAN_GATE.md`](HC4_OCTUPLE_NONUPLE_LINEAR_HESSIAN_GATE.md).
-The exact-septuple squarefree-cofactor packet is closed here; a septuple line
-with nonsquarefree quadratic cofactor and the lower-Smith branches remain
-outside this theorem.
+The exact-septuple squarefree-cofactor packet is closed here. The septuple
+line with nonsquarefree quadratic cofactor is the `x^7*y^2` incidence later
+classified by `HC4NHM4` and excluded from four-variable prolongation by
+`HC4NHM5`. Lower-Smith branches remain outside this theorem.

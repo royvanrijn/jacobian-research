@@ -52,6 +52,9 @@ OUTPUT_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit103
 OUTPUT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json"
 OUTPUT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08ab4-direct-fibration-v1.json"
 OUTPUT_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit091e4-direct-fibration-v1.json"
+OUTPUT_1183A = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit1183a-direct-fibration-v1.json"
+OUTPUT_098FC = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit098fc-direct-fibration-v1.json"
+UNSATURATED_LABELS = ("135b7", "10f72", "09952", "0ae21")
 FRAME_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-isotropic-frame-v1.json"
 
 
@@ -171,6 +174,9 @@ def main() -> None:
             "norm12-orbit-08f72",
             "norm12-orbit-08ab4",
             "norm12-orbit-091e4",
+            "norm12-orbit-1183a",
+            "norm12-orbit-098fc",
+            *(f"norm12-orbit-{label}" for label in UNSATURATED_LABELS),
         ),
         default="norm12-orbit-11952",
     )
@@ -183,6 +189,12 @@ def main() -> None:
         "norm12-orbit-08f72": OUTPUT_08F72,
         "norm12-orbit-08ab4": OUTPUT_08AB4,
         "norm12-orbit-091e4": OUTPUT_091E4,
+        "norm12-orbit-1183a": OUTPUT_1183A,
+        "norm12-orbit-098fc": OUTPUT_098FC,
+        **{
+            f"norm12-orbit-{label}": ROOT / f"artifacts/generated-results/elkies-k3-r17-norm12-orbit{label}-direct-fibration-v1.json"
+            for label in UNSATURATED_LABELS
+        },
     }
     output = args.output or default_outputs[args.source_label]
 
@@ -512,8 +524,65 @@ def main() -> None:
             [-1, 0, 0, -1, 0, 1, 0, 1, -1, 1, 0, -1, 0, 0, 0, 2, 1],
             [0, 0, 0, -1, 0, -1, 1, 0, -1, -1, -1, 0, 0, 1, 0, 1, 2],
         ],
+        # Deterministic output of plan_r17_norm12_direct_section_basis.sage.
+        "norm12-orbit-1183a": [
+            [0, -1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1, 0],
+            [0, 0, 0, 0, 1, -1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1],
+            [0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, -1, 0, -1, 0, 0, -2],
+            [-1, 0, 1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1, 1],
+            [0, -1, 0, 0, 0, 0, 1, 2, 0, 0, -1, 0, 0, 0, 0, 0, 0],
+            [-1, -1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+            [-1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, -1],
+            [0, 0, 0, -1, 1, 0, 0, 1, -1, 0, -1, 0, 0, 0, 0, 0, 1],
+            [0, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 1, 1],
+            [0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, -1, 0, -1, 0, 1, 0],
+            [0, 0, 1, 0, 1, 1, 0, 0, -1, 0, 0, -1, 0, 0, 0, 1, 0],
+            [0, 0, 1, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, -1, 1, 0, -1],
+            [-1, 0, 1, -1, 0, 0, 0, 0, 0, 0, -1, 0, 1, 0, 1, 0, 1],
+            [-1, 0, 0, -1, 1, 0, 1, 0, -1, 1, 0, -1, 0, 0, 0, 1, 1],
+            [0, -1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, -1, 0, -1, -1],
+            [0, 0, 1, 1, 1, 0, -1, 0, 1, 0, 1, 0, 0, -1, 0, -1, -1],
+        ],
+        # Deterministic output of plan_r17_norm12_direct_section_basis.sage.
+        "norm12-orbit-098fc": [
+            [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, -1],
+            [0, -1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, -1, -1],
+            [0, -1, 0, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, -1, -1],
+            [0, 0, -1, 0, 1, 0, 0, -1, 0, 1, 1, -1, 0, 0, -1, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, -1, 0, -1, 0, 0, -1],
+            [0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, -1, 0, 0, -2],
+            [0, -1, -1, 1, 0, -1, 1, 0, 1, 1, 0, 0, 0, 0, -1, 0, 0],
+            [0, 0, 0, 0, 0, 1, -1, 1, 0, 1, 1, -1, 0, -1, 0, 0, -1],
+            [0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, -1, 0, -1, -2],
+            [0, -1, 0, 1, 0, 0, 1, 1, 0, 1, 1, -1, -1, 0, 0, 0, -1],
+            [0, -1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, -1, 0, -1, -1],
+            [0, -1, 1, 0, 1, 1, 0, 0, 0, 1, 1, -1, 0, 0, 0, -1, -1],
+            [0, 0, -1, 0, 1, 1, 0, 0, 0, 2, 1, -2, 0, -1, 0, 0, -1],
+            [0, 0, 0, 1, 0, 1, -1, 0, 1, 1, 1, 0, 0, -1, 0, -1, -2],
+            [1, 0, 0, 1, 1, 0, -1, 0, 1, 0, 1, 0, 0, -1, 0, -2, -2],
+            [1, 0, 0, 1, 1, 1, -1, 0, 0, 0, 1, 0, 0, -1, -1, -1, -2],
+        ],
     }
-    selected_old_vectors = selected_old_vectors_by_label[args.source_label]
+    basis_plan_path = None
+    if args.source_label in selected_old_vectors_by_label:
+        selected_old_vectors = selected_old_vectors_by_label[args.source_label]
+    else:
+        suffix = args.source_label.rsplit("-", 1)[1]
+        basis_plan_path = ROOT / (
+            f"artifacts/generated-results/elkies-k3-r17-norm12-{suffix}-"
+            "direct-section-basis-obstruction-v1.json"
+        )
+        basis_plan = json.loads(basis_plan_path.read_text())
+        if (
+            basis_plan["status"] != "NO_UNIMODULAR_MARKING_IN_SEARCHED_CURVES"
+            or basis_plan["source_label"] != args.source_label
+            or basis_plan["height_bound"] != 12
+            or basis_plan["old_degree_one_span_rank"] != 17
+            or basis_plan["old_degree_one_lattice_saturation_index"] != 2
+            or basis_plan["rational_bisection_glue_candidate_count"] != 0
+        ):
+            raise ArithmeticError("unsaturated section-basis obstruction certificate changed")
+        selected_old_vectors = basis_plan["selected_independent_old_vectors"]
     basis_change = matrix(ZZ, target_payload["pinned_identification"]["basis_change_matrix"])
     transport_inverse = transport.inverse()
     section_records = []
@@ -532,7 +601,7 @@ def main() -> None:
             Eold(0),
         )
         old_base_map, t_section, Xnew, Ynew, Wnew = map_old_section(old_point)
-        assert int(new_mw * frame * new_mw) in (4, 6, 8)
+        assert int(new_mw * frame * new_mw) in (4, 6, 8, 10, 12)
         new_mw_rows.append(new_mw)
         section_records.append(
             {
@@ -558,8 +627,10 @@ def main() -> None:
         "norm12-orbit-08f72": ["orbit-04eb3"],
         "norm12-orbit-08ab4": ["orbit-1ebca"],
         "norm12-orbit-091e4": ["orbit-05691"],
+        "norm12-orbit-1183a": ["orbit-11976"],
+        "norm12-orbit-098fc": ["orbit-08257"],
     }
-    glue_labels = glue_labels_by_source[args.source_label]
+    glue_labels = glue_labels_by_source.get(args.source_label, [])
     for glue_offset, glue_label in enumerate(glue_labels):
         glue_record = next(
             record for record in full_bisections["bisections"]
@@ -633,10 +704,19 @@ def main() -> None:
         )
 
     section_coordinate_matrix = matrix(ZZ, new_mw_rows)
-    if abs(section_coordinate_matrix.det()) != 1:
-        raise ArithmeticError("the recovered child sections do not form a saturated basis")
+    section_index = abs(section_coordinate_matrix.det())
+    expected_section_index = (
+        1
+        if basis_plan_path is None
+        else abs(int(basis_plan["selected_child_coordinate_determinant"]))
+    )
+    if section_index != expected_section_index:
+        raise ArithmeticError("the recovered child-section lattice index changed")
     section_height_gram = section_coordinate_matrix * frame * section_coordinate_matrix.transpose()
-    if section_height_gram.det() != 948 or int(pari(section_height_gram).qfminim(2)[0]):
+    if (
+        section_height_gram.det() != 948 * section_index**2
+        or int(pari(section_height_gram).qfminim(2)[0])
+    ):
         raise ArithmeticError("recovered section height Gram failed the rootless frame checks")
 
     frame_certificate = {
@@ -660,17 +740,17 @@ def main() -> None:
             "isometric_to_alternate_Q80": False,
         })
     input_paths = [MODEL, SECTIONS, PINNED, TARGET, SPLITTING, CLASSIFICATION, ALTERNATE, BISECTIONS]
+    if basis_plan_path is not None:
+        input_paths.append(basis_plan_path)
     if not is_alternate_target:
         input_paths.append(FRAME_103B2)
     result = {
-        "schema": {
-            "norm12-orbit-11952": "elkies-k3.r17-norm12-orbit11952-direct-fibration.v1",
-            "norm12-orbit-103b2": "elkies-k3.r17-norm12-orbit103b2-direct-fibration.v1",
-            "norm12-orbit-08f72": "elkies-k3.r17-norm12-orbit08f72-direct-fibration.v1",
-            "norm12-orbit-08ab4": "elkies-k3.r17-norm12-orbit08ab4-direct-fibration.v1",
-            "norm12-orbit-091e4": "elkies-k3.r17-norm12-orbit091e4-direct-fibration.v1",
-        }[args.source_label],
-        "status": "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS",
+        "schema": f"elkies-k3.r17-norm12-orbit{args.source_label.rsplit('-', 1)[1]}-direct-fibration.v1",
+        "status": (
+            "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS"
+            if section_index == 1
+            else "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_RANK17_SUBLATTICE"
+        ),
         "divisor": {
             "label": args.source_label,
             "pinned_trace_vector_w": list(map(int, w)),
@@ -722,8 +802,17 @@ def main() -> None:
         },
         "frame_certificate": frame_certificate,
         "sections": {
-            "status": "PASS_EXACT_SATURATED_RANK17_BASIS",
+            "status": (
+                "PASS_EXACT_SATURATED_RANK17_BASIS"
+                if section_index == 1
+                else "PASS_EXACT_RANK17_FINITE_INDEX_SUBLATTICE"
+            ),
             "rank": 17,
+            **(
+                {"index_in_saturated_mw_lattice": int(section_index)}
+                if basis_plan_path is not None
+                else {}
+            ),
             "basis_source_profile": {
                 "old_sections": len(selected_old_vectors),
                 "old_rational_bisections": len(glue_labels),
@@ -784,6 +873,29 @@ def main() -> None:
             if args.source_label == "norm12-orbit-091e4"
             else (
                 "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
+                "the squarefree degree-24 discriminant, and the primitive rootless alternate-Q80 frame. "
+                "It also transports sixteen old sections and the orbit-11976 rational bisection to "
+                "an explicit saturated rank-17 section basis on the new equation."
+            )
+            if args.source_label == "norm12-orbit-1183a"
+            else (
+                "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
+                "the squarefree degree-24 discriminant, and the primitive rootless alternate-Q80 frame. "
+                "It also transports sixteen old sections and the orbit-08257 rational bisection to "
+                "an explicit saturated rank-17 section basis on the new equation."
+            )
+            if args.source_label == "norm12-orbit-098fc"
+            else (
+                "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
+                "the squarefree degree-24 discriminant, and the primitive rootless alternate-Q80 frame. "
+                "It transports seventeen independent old sections to an explicit rank-17 finite-index "
+                "sublattice on the new equation. The separate basis-plan certificate proves that all "
+                "degree-one old sections through the height-12 Cauchy bound span index two and that no "
+                "committed rational bisection supplies the missing saturation coset."
+            )
+            if basis_plan_path is not None
+            else (
+                "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
                 "the squarefree degree-24 discriminant, and the primitive rootless published-R17 frame. "
                 "It transports fifteen old sections and both degree-one old rational bisections to "
                 "an explicit saturated rank-17 section basis on the hidden equation."
@@ -799,8 +911,8 @@ def main() -> None:
         output.write_text(serialized)
     print(
         "R17NORM12DIRECT|label={}|h0=2|quartic=4|A=8|B=12|Delta=24|fibres=24I1|"
-        "frame={}|roots=0|sections=17-saturated|output={}".format(
-            args.source_label, expected_frame_class, relative(output)
+        "frame={}|roots=0|section_index={}|output={}".format(
+            args.source_label, expected_frame_class, section_index, relative(output)
         ),
         flush=True,
     )

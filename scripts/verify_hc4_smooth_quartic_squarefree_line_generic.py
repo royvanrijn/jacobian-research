@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 from pathlib import Path
 import shutil
@@ -97,7 +98,21 @@ def verify_degenerate_remainder() -> None:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--audit-existing-only",
+        action="store_true",
+        help="verify committed equation-builder provenance without Singular replay",
+    )
+    arguments = parser.parse_args()
+
     verify_driver_hash()
+    if arguments.audit_existing_only:
+        print(
+            "PASS committed HC4 smooth-quartic generic-line provenance is intact; "
+            "no symbolic or Singular replay"
+        )
+        return
     verify_generic_standard_basis()
     verify_degenerate_remainder()
     print("THEOREM: generic squarefree-line simple-residual-line stratum is empty")

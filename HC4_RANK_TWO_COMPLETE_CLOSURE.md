@@ -2,6 +2,11 @@
 
 ## Status and scope
 
+**Current status.**  `HC4RSD60` is the complete all-degree closure of the
+rank-two square-zero `[2,2]` stratum.  The former length-three/length-four
+handoff in Section 7 is historical: `HC4RSD61--63` close `[3,1]`, and
+`HC4MR1` closes the complete auxiliary relative-nilpotent branch.
+
 This note combines `HC4RSD56`, `HC4RSD58`, `HC4RSD59`, and the complete
 three-variable quasi-translation classification.
 
@@ -378,8 +383,9 @@ all degrees:
 }
 \]
 
-Future moving-frame work only needs to consider the nilpotency types with a
-length-three or length-four chain, not `[2,2]`.
+At this historical stage, moving-frame work only needed to consider the
+nilpotency types with a length-three or length-four chain, not `[2,2]`.
+Those continuations are now closed by `HC4RSD61--63` and `HC4MR1`.
 
 ## 8. External input
 

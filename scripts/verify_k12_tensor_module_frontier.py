@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from pathlib import Path
@@ -169,6 +170,9 @@ def evaluate(components: list[sp.Expr], variables: tuple[sp.Symbol, ...], point:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--write", action="store_true")
+    args = parser.parse_args()
     z, k12 = build_k12()
     nonlinear = [
         sp.expand(component - variable)
@@ -283,13 +287,20 @@ def main() -> None:
             "nonlinear row/column modules, Schur elimination, or a different tensor."
         ),
     }
-    OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n")
-    digest = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    serialized = json.dumps(artifact, indent=2) + "\n"
+    if args.write:
+        OUTPUT.write_text(serialized)
+    else:
+        assert OUTPUT.exists(), f"missing {OUTPUT.relative_to(ROOT)}"
+        assert OUTPUT.read_text() == serialized, (
+            f"{OUTPUT.relative_to(ROOT)} is stale; regenerate with --write"
+        )
+    digest = hashlib.sha256(serialized.encode()).hexdigest()
     print("PASS K12: cubic output rank 6 and full input-directional rank 12")
     print("PASS G19: output rank 18 and full input-directional rank 19")
     print("PASS G19: no constant right kernel; sole left kernel is tau output")
     print("PASS replayed both collisions and the exact determinant bridge")
-    print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
+    print(f"PASS checked {OUTPUT.relative_to(ROOT)}")
     print(f"SHA256 {digest}")
 
 

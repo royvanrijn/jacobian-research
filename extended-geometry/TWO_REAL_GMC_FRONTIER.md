@@ -680,6 +680,14 @@ charts and the cubic invariant-null-cone formulation, are in
 .venv/bin/python scripts/verify_two_real_gmc_five_weight_frontier.py
 ```
 
+To validate only the committed final four-weight handoff and certificate
+records, without rerunning Singular, use
+
+```bash
+.venv/bin/python scripts/verify_two_real_gmc_remaining_four_weight.py \
+  --audit-existing-only
+```
+
 The script checks (4.3), checks (5.2) through order seven for a nonlinear
 test, checks the quadratic tilted-Gaussian identity, proves the cubic
 three-weight theorem on all 72 nonvanishing charts, excludes 29 of the 33

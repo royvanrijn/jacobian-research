@@ -48,10 +48,17 @@ DIRECT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-dir
 OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-11952-inherited-bisection-covers-v1.json"
 DIRECT_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json"
 OUTPUT_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-inherited-bisection-covers-v1.json"
+DIRECT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json"
+OUTPUT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-inherited-bisection-covers-v1.json"
 DIRECT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08ab4-direct-fibration-v1.json"
 OUTPUT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-inherited-bisection-covers-v1.json"
 DIRECT_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit091e4-direct-fibration-v1.json"
 OUTPUT_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-091e4-inherited-bisection-covers-v1.json"
+DIRECT_1183A = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit1183a-direct-fibration-v1.json"
+OUTPUT_1183A = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-1183a-inherited-bisection-covers-v1.json"
+DIRECT_098FC = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit098fc-direct-fibration-v1.json"
+OUTPUT_098FC = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-098fc-inherited-bisection-covers-v1.json"
+UNSATURATED_LABELS = ("135b7", "10f72", "09952", "0ae21")
 CONTENT_TRIAL_PRIMES = tuple(prime_range(2, 1001))
 
 
@@ -233,8 +240,12 @@ def main() -> None:
         choices=(
             "norm12-orbit-11952",
             "norm12-orbit-103b2",
+            "norm12-orbit-08f72",
             "norm12-orbit-08ab4",
             "norm12-orbit-091e4",
+            "norm12-orbit-1183a",
+            "norm12-orbit-098fc",
+            *(f"norm12-orbit-{label}" for label in UNSATURATED_LABELS),
         ),
         default="norm12-orbit-11952",
     )
@@ -254,20 +265,41 @@ def main() -> None:
     direct_path = {
         "norm12-orbit-11952": DIRECT,
         "norm12-orbit-103b2": DIRECT_103B2,
+        "norm12-orbit-08f72": DIRECT_08F72,
         "norm12-orbit-08ab4": DIRECT_08AB4,
         "norm12-orbit-091e4": DIRECT_091E4,
+        "norm12-orbit-1183a": DIRECT_1183A,
+        "norm12-orbit-098fc": DIRECT_098FC,
+        **{
+            f"norm12-orbit-{label}": ROOT / f"artifacts/generated-results/elkies-k3-r17-norm12-orbit{label}-direct-fibration-v1.json"
+            for label in UNSATURATED_LABELS
+        },
     }[args.source_label]
     output = args.output or {
         "norm12-orbit-11952": OUTPUT,
         "norm12-orbit-103b2": OUTPUT_103B2,
+        "norm12-orbit-08f72": OUTPUT_08F72,
         "norm12-orbit-08ab4": OUTPUT_08AB4,
         "norm12-orbit-091e4": OUTPUT_091E4,
+        "norm12-orbit-1183a": OUTPUT_1183A,
+        "norm12-orbit-098fc": OUTPUT_098FC,
+        **{
+            f"norm12-orbit-{label}": ROOT / f"artifacts/generated-results/elkies-k3-r17-norm12-{label}-inherited-bisection-covers-v1.json"
+            for label in UNSATURATED_LABELS
+        },
     }[args.source_label]
     expected_inherited_count = {
         "norm12-orbit-11952": 121,
         "norm12-orbit-103b2": 82,
+        "norm12-orbit-08f72": 86,
         "norm12-orbit-08ab4": 131,
         "norm12-orbit-091e4": 155,
+        "norm12-orbit-1183a": 120,
+        "norm12-orbit-098fc": 95,
+        "norm12-orbit-135b7": 127,
+        "norm12-orbit-10f72": 118,
+        "norm12-orbit-09952": 125,
+        "norm12-orbit-0ae21": 120,
     }[args.source_label]
 
     model = json.loads(MODEL.read_text())
@@ -275,13 +307,27 @@ def main() -> None:
     target = json.loads(TARGET.read_text())
     splitting = json.loads(SPLITTING.read_text())
     direct = json.loads(direct_path.read_text())
-    if direct["status"] != "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS":
+    accepted_direct_statuses = {
+        "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS"
+    }
+    if args.cover_only:
+        accepted_direct_statuses.add(
+            "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_RANK17_SUBLATTICE"
+        )
+    if direct["status"] not in accepted_direct_statuses:
         raise ArithmeticError("canonical direct alternate-Q80 artifact is not certified")
     if direct["weierstrass_model"]["fibre_configuration"] != "24 I1":
         raise ArithmeticError("canonical alternate-Q80 model is not 24I1")
-    if direct["sections"]["status"] != "PASS_EXACT_SATURATED_RANK17_BASIS":
-        raise ArithmeticError("canonical alternate-Q80 section basis is not saturated")
-    if direct["sections"]["rank"] != 17 or direct["sections"]["height_gram_determinant"] != 948:
+    section_index = int(direct["sections"].get("index_in_saturated_mw_lattice", 1))
+    accepted_section_statuses = {"PASS_EXACT_SATURATED_RANK17_BASIS"}
+    if args.cover_only:
+        accepted_section_statuses.add("PASS_EXACT_RANK17_FINITE_INDEX_SUBLATTICE")
+    if direct["sections"]["status"] not in accepted_section_statuses:
+        raise ArithmeticError("direct equation does not have an accepted rank-17 section marking")
+    if (
+        direct["sections"]["rank"] != 17
+        or direct["sections"]["height_gram_determinant"] != 948 * section_index**2
+    ):
         raise ArithmeticError("canonical alternate-Q80 rank-17 lattice changed")
 
     Rt = PolynomialRing(QQ, "t")

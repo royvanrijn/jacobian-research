@@ -579,9 +579,11 @@ target is therefore the pair
 
 over the nonreduced Hessian locus, not just the divisor \(D\).
 
-## 8. Next exact calculations
+## 8. Route map and current boundary
 
-The module reduction suggests the following order.
+The module reduction suggested the following discovery order. The paragraphs
+after the list record which steps have since materialized and the current
+boundary.
 
 1. Compute \(P\) and the normalized defect divisors \(B_Q\) from the gcd of
    the restricted \(2\)-by-\(2\) minors.  The bounds (4.2) eliminate every

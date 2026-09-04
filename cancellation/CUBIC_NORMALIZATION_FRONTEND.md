@@ -2644,8 +2644,14 @@ fiber of all six complete quartic nongauge families, where the different
 requires six generators.  Exact computation 1.8f.1 extends it through the
 complete quintic and sextic normal-form quotients for the nodal symbol.
 Theorem 1.8f.2 then closes the nodal row through every compatible formal
-tail.  The higher-order rows for the other five singular-squarefree symbols
-remain open.
+tail, and Theorem 1.8f.3 closes the other five singular-squarefree rows by
+the same strict Rees and successive monic-graph mechanism.  Corollary 1.8f.4
+adds the formally rigid smooth row.  Thus the second alternative is closed
+at the formal cotangent/different level for every squarefree leading symbol.
+The remaining implication is boundary-geometric: derive `S_2`/local CM or a
+Cartier different from the boundary-minimal Keller package.  The double-line,
+triple-line, and zero leading symbols retain their separate generic-etaleness
+and Keller-compatibility gates.
 
 #### Proof
 
@@ -2653,8 +2659,8 @@ Because `T` is `S_1`, is pure of dimension two, and is `S_2` away from the
 closed point, it is `S_2` exactly when its canonical hull quotient `L`
 vanishes.  Proposition 1.15a identifies this with Cohen--Macaulayness of
 `B`, and local duality identifies it with vanishing of the displayed
-`Ext^2`.  The final assertions are Exact computation 1.8f and Theorem
-1.8f.2 within their stated scopes.  QED
+`Ext^2`.  The final assertions are Exact computation 1.8f, Theorems 1.8f.2
+and 1.8f.3, and Corollary 1.8f.4 within their stated scopes.  QED
 
 ### Proposition 1.15c -- relative persistence of a non-Cartier different
 

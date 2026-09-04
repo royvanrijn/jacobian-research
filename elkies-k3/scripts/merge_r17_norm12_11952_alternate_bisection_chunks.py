@@ -20,6 +20,12 @@ HIDDEN_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-b
 OUTPUT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisections-full-v1.json"
 OUTPUT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-alternate-bisections-full-v1.json"
 OUTPUT_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-091e4-alternate-bisections-full-v1.json"
+OUTPUT_1183A = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-1183a-alternate-bisections-full-v1.json"
+OUTPUT_098FC = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-098fc-alternate-bisections-full-v1.json"
+OUTPUT_135B7 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-135b7-alternate-bisections-full-v1.json"
+OUTPUT_10F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-10f72-alternate-bisections-full-v1.json"
+OUTPUT_09952 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-09952-alternate-bisections-full-v1.json"
+OUTPUT_0AE21 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-0ae21-alternate-bisections-full-v1.json"
 
 
 def digest(path: Path) -> str:
@@ -45,6 +51,12 @@ def main() -> None:
             "norm12-orbit-08f72",
             "norm12-orbit-08ab4",
             "norm12-orbit-091e4",
+            "norm12-orbit-1183a",
+            "norm12-orbit-098fc",
+            "norm12-orbit-135b7",
+            "norm12-orbit-10f72",
+            "norm12-orbit-09952",
+            "norm12-orbit-0ae21",
         ),
         default="norm12-orbit-11952",
     )
@@ -60,6 +72,12 @@ def main() -> None:
         "norm12-orbit-08f72": OUTPUT_08F72,
         "norm12-orbit-08ab4": OUTPUT_08AB4,
         "norm12-orbit-091e4": OUTPUT_091E4,
+        "norm12-orbit-1183a": OUTPUT_1183A,
+        "norm12-orbit-098fc": OUTPUT_098FC,
+        "norm12-orbit-135b7": OUTPUT_135B7,
+        "norm12-orbit-10f72": OUTPUT_10F72,
+        "norm12-orbit-09952": OUTPUT_09952,
+        "norm12-orbit-0ae21": OUTPUT_0AE21,
     }[arguments.source_label]
     chunk_artifact_schema = (
         "elkies-k3.r17-norm12-11952-alternate-bisections.v1"

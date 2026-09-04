@@ -352,6 +352,20 @@ Recompute and compare every pinned decision with
 .venv/bin/python scripts/verify_global_low_degree_census.py
 ```
 
+For repository cleanup, validate the committed manifest, exact support/orbit
+labels, bucket arithmetic, and every stage-to-stage support handoff without
+rerunning Z3 or either Gröbner backend with
+
+```bash
+.venv/bin/python scripts/verify_global_low_degree_census.py --audit-existing-only
+```
+
+This audit-only mode does not create new mathematical evidence. It confirms
+that the already committed 913 representatives occur exactly once and in the
+same order in the bucket, valuation, sign, three modular, and rational-result
+ledgers, while retaining the manifest's explicit cardinality-unbounded open
+boundary.
+
 The manifest is
 [`global_low_degree_census_manifest.json`](../artifacts/generated-results/global_low_degree_census_manifest.json).
 It pins eight JSON artifacts:

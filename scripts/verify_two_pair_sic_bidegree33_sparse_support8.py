@@ -20,6 +20,7 @@ basis must have at least nine nonzero coefficients.
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 from itertools import combinations
 import hashlib
 import json
@@ -81,6 +82,7 @@ ODD_PARITY = (
     (3, 0),
     (3, 2),
 )
+POSITIONS = tuple((row, column) for row in range(4) for column in range(4))
 
 
 def arguments() -> argparse.Namespace:
@@ -91,6 +93,14 @@ def arguments() -> argparse.Namespace:
         help=(
             "rerun the approximately eight-minute exact msolve unit "
             "calculation and refresh its pinned raw artifact"
+        ),
+    )
+    parser.add_argument(
+        "--audit-census-only",
+        action="store_true",
+        help=(
+            "validate exact support coverage, uniqueness, status counts, "
+            "and the stored parity resolution without rerunning msolve"
         ),
     )
     return parser.parse_args()
@@ -118,12 +128,38 @@ def validate_census() -> dict[str, object]:
         raise AssertionError("the size-eight census is not complete")
     if payload["through"] != 12 or payload["support_size"] != 8:
         raise AssertionError("unexpected size-eight census scope")
-    if payload["counts"] != {
+    expected_counts = {
         "excluded_on_coefficient_torus": 12765,
         "msolve_nonempty": 14,
         "timeout": 1,
-    }:
+    }
+    if payload["counts"] != expected_counts:
         raise AssertionError("unexpected size-eight census counts")
+
+    expected_supports = {
+        frozenset(support)
+        for support in combinations(POSITIONS, 8)
+        if any(row > column for row, column in support)
+        and any(row < column for row, column in support)
+    }
+    records = payload["records"]
+    actual_supports = [
+        frozenset(support_key(record["support"])) for record in records
+    ]
+    if (
+        payload["mixed_support_count"] != len(expected_supports)
+        or len(records) != len(expected_supports)
+        or len(set(actual_supports)) != len(actual_supports)
+        or set(actual_supports) != expected_supports
+    ):
+        raise AssertionError(
+            "size-eight records do not cover every mixed support exactly once"
+        )
+    actual_counts = Counter(str(record["status"]) for record in records)
+    if dict(actual_counts) != expected_counts:
+        raise AssertionError(
+            f"stored size-eight counts do not match records: {actual_counts}"
+        )
 
     rectangles = {
         *(row_support(rows) for rows in combinations(range(4), 2)),
@@ -502,12 +538,17 @@ def main() -> None:
     options = arguments()
     if options.rerun_parity:
         rerun_parity()
+    census = validate_census()
+    parity = validate_parity()
+    if options.audit_census_only:
+        print("PASS all 12780 mixed size-eight supports occur exactly once")
+        print("PASS stored outcome counts agree with the complete record set")
+        print("PASS the sole timeout is the separately resolved parity support")
+        return
     msolve = shutil.which("msolve")
     if msolve is None:
         raise SystemExit("msolve is required")
 
-    census = validate_census()
-    parity = validate_parity()
     normal_forms = verify_explicit_nullcone_forms()
     rurs = verify_rurs(msolve)
     total_points = sum(

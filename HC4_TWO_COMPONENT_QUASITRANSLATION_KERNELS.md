@@ -261,6 +261,8 @@ Run:
 
 ~~~bash
 .venv/bin/python scripts/verify_hc4_two_component_quasitranslation_kernels.py
+# cleanup only: verify committed inputs and exact boundary
+.venv/bin/python scripts/verify_hc4_two_component_quasitranslation_kernels.py --audit-existing-only
 ~~~
 
 The command checks the Piola active-dependence gate, the complete Hessian
@@ -268,8 +270,15 @@ residual, the invariant-slice projective coefficient, the
 constant-determinant polynomial frame, and the constant coordinate
 reduction to the HC4RSD4 shear form.
 
+The cleanup-only mode hash-checks the committed ledger and imported equation
+helper without importing SymPy, replaying the identities, or rewriting the
+artifact.
+
 The theorem closes all fixed primitive kernel generators supported in a
 constant two-plane. It does not classify fixed kernel generators with three
 or four nonlinear components, or kernel lines that move with the pencil
 parameter. Nonsingular reduced pencils with Schur-term cancellation and
-matrix pivots with moving kernel planes are also outside its scope.
+matrix pivots with moving kernel planes are also outside its scope. The
+nonzero-corner auxiliary constant-Hessian-pencil branch was subsequently
+closed by `HC4MR1` to HC2 or exactly the JC2 cotangent endpoint; nonlinear
+zero-corner exact remainders and moving matrix planes remain open.

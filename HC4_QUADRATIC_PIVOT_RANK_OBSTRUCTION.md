@@ -62,6 +62,8 @@ The exact block identities are replayed by
 [scripts/verify_hc4_quadratic_pivot_rank_obstruction.py](scripts/verify_hc4_quadratic_pivot_rank_obstruction.py),
 which writes
 [artifacts/generated-results/hc4_quadratic_pivot_rank_obstruction.json](artifacts/generated-results/hc4_quadratic_pivot_rank_obstruction.json).
+Its rank-one/two `open_frontier` records the `HC4RSD8` stage and is closed by
+`HC4RSD9--10`; it is not a live frontier.
 
 ## 1. Rank four is immediate
 
@@ -307,6 +309,8 @@ Run:
 
 ~~~bash
 .venv/bin/python scripts/verify_hc4_quadratic_pivot_rank_obstruction.py
+# committed `HC4RSD8` stage artifact only, without symbolic replay:
+.venv/bin/python scripts/verify_hc4_quadratic_pivot_rank_obstruction.py --audit-existing-only
 ~~~
 
 The command checks (2.3), (3.4), the odd-degree input, and the sharp

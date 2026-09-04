@@ -2,8 +2,10 @@
 
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK f968ac0d6fa311fb -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 40745008c2fe2a80 -->
+<!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 252991e141c42e55 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 6b9d34ae8d722280 -->
 
 ## Result
 
@@ -160,25 +162,30 @@ markings over `QQ`, a complete equation-level corridor, and the separate
 Pasten--Salgado non-thin rank-jump theorem recorded in
 [`PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md`](PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md).
 
-The first unresolved readiness row is the determinant-720 Golay surface.  It
-has a one-parameter formal `Z_7` marked source precursor and an exact
-marking-level physical corridor, but its rational field of definition is
-open.  Consequently the re-ranking identifies the arithmetic source as its
-next gate rather than launching another raw multisection census.
+The former first unresolved row, the determinant-720 Golay surface, is now
+arithmetically excluded. Its literal stable marking curve is `X_0(60)`, whose
+rational points are cusps. Its one-parameter formal `Z_7` precursor and exact
+marking-level corridor remain geometric controls only.
 
 The arithmetic pre-screen now has an explicit rejection ledger. Of 827
 catalogue surfaces, 66 pass the exact lattice-theoretic MW17 filters;
 determinant `950`/`NS0024` and determinant `1184`/`NS0031` are then removed by
-their rational-marking obstruction certificates, leaving 64 arithmetic
-candidates. The determinant-948 control remains the only fully ready row and
-is outside the different-NS milestone, so determinant `720` is the first live
-different-NS arithmetic gate.
+their rational-marking obstruction certificates, together with determinant
+`720`, leaving 63 arithmetic candidates. The determinant-948 control remains
+the only fully ready row and is outside the different-NS milestone. There is
+therefore no unresolved rootless-frame row authorized for equation work.
 
 The upstream arithmetic-marking classifier types these as one
-`ARITHMETICALLY_POSSIBLE`, two `ARITHMETICALLY_EXCLUDED`, and 63 `UNKNOWN`.
+`ARITHMETICALLY_POSSIBLE`, three `ARITHMETICALLY_EXCLUDED`, and 62 `UNKNOWN`.
 Only the first type can enter expensive equation scoring; the determinant-948
 positive control is already realized, so the new different-NS equation-agent
 handoff is empty.
+
+The operational priority now comes from the global `T`-first planner. It
+orders all 827 transcendental rows before NS/rootless inspection and has an
+823-row arithmetic research queue. Its first exact-coarse diagnostics are
+determinants `378`, `256`, and `512`; their `X_0(7)`, `X_0(2)`, and `X_0(4)`
+labels do not replace the still-missing literal stable-kernel calculations.
 
 The determinant-1184 NS0031 surface has a one-parameter formally smooth
 `Z_7` marked branch and marking-level corridor evidence, but it is now
@@ -205,8 +212,10 @@ Run:
 ```bash
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py
+python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
+python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
 ```
 
 The typed evidence overlay is

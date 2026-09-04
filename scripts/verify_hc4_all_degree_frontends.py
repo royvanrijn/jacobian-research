@@ -23,6 +23,70 @@ injections, and representative coefficient ideals exactly over QQ.
 
 from __future__ import annotations
 
+import argparse
+import hashlib
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+BOUNDED_ARTIFACT = (
+    ROOT / "artifacts" / "generated-results" / "hc4_all_degree_frontend_experiments.json"
+)
+BOUNDED_SOURCE = ROOT / "scripts" / "research_hc4_all_degree_frontends.py"
+EXPECTED_BOUNDED_ARTIFACT_SHA256 = (
+    "7176670a76f152f23c6f9b56264c39e2345d91641fdfe275130b9b32e99ffedb"
+)
+EXPECTED_BOUNDED_SOURCE_SHA256 = (
+    "0b6e0a1272d1201645dce96d8a039fde3c9d4c883476f40d1fed57dac446333f"
+)
+
+
+def file_sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def audit_existing() -> None:
+    assert file_sha256(BOUNDED_ARTIFACT) == EXPECTED_BOUNDED_ARTIFACT_SHA256
+    assert file_sha256(BOUNDED_SOURCE) == EXPECTED_BOUNDED_SOURCE_SHA256
+    payload = json.loads(BOUNDED_ARTIFACT.read_text(encoding="utf-8"))
+    assert payload["schema_version"] == 1
+    assert payload["status"] == "exact_bounded_regression"
+    assert payload["source_sha256"] == EXPECTED_BOUNDED_SOURCE_SHA256
+
+    schur_rows = payload["fermat_ternary_schur"]["results"]
+    assert [row["potential_degree"] for row in schur_rows] == list(range(4, 9))
+    assert all(row["radical_equals_pure_power_locus"] for row in schur_rows)
+
+    rank_two_rows = payload["diagonal_rank_two_recognition"]["results"]
+    assert [
+        (row["potential_degree"], row["active_channel_count"])
+        for row in rank_two_rows
+    ] == [(degree, channels) for degree in range(5, 9) for channels in range(1, 4)]
+    assert all(row["rank_two_scheme_empty"] for row in rank_two_rows)
+
+    normal_rows = payload["meng_yang_normal_symbol"]["verified_orders"]
+    assert [row["graph_jet_order"] for row in normal_rows] == list(range(1, 13))
+    warning = payload["scope_warning"]
+    assert "finite tables are regressions" in warning
+    assert "minimal tower" in warning
+    assert "formal solvability rather than polynomial termination" in warning
+    print(
+        "PASS: committed bounded HC4 all-degree frontend regression is intact "
+        "and correctly scoped; no symbolic or Singular replay"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help="validate the committed bounded regression without mathematical replay",
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
 import sympy as sp
 
 

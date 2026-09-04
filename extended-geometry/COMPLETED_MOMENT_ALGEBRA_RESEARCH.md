@@ -648,14 +648,20 @@ The most informative next steps are:
    \({\cal A}_d[q_2]\) the sharper finiteness experiment.  Add \(q_6\) or
    the remaining Casimirs only if an explicit semistable residual survives.
 
-The bounded calculations are replayed by
-[`research_completed_moment_algebra.py`](../scripts/research_completed_moment_algebra.py).
-With the repository virtual environment, prime \(1000003\), maximum
-weight ten, and three extra evaluation points, its
+The legacy bounded calculations were produced at Git revision
+`c91498bbca857b568a9961e776416fcba8de6713` by the then-current
+[`research_completed_moment_algebra.py`](../scripts/research_completed_moment_algebra.py),
+whose source SHA-256 was
+`4ddc8bcaf025ef7992f6ac9a7c6e32ef6974372ac8475bf633f9b6a35a30575c`.
+With prime \(1000003\), maximum weight ten, and three extra evaluation
+points, its
 [`completed_moment_algebra_bounded_tests.json`](../artifacts/generated-results/completed_moment_algebra_bounded_tests.json)
 output has SHA-256
 `590fe262178bc4e8f11f3b633be9649ae82050afab962768e6e7946a1b15aa7c`.
 It records every tested support and the Hilbert and Jacobian certificates.
+The current script extends that producer with the automatic-invariant and
+Casimir-ladder fields below, so it is not a byte-identical producer of the
+legacy JSON even when the old options are selected.
 The exact three-degree diagonal theorem is replayed by
 [`verify_completed_moment_diagonal_fields.py`](../scripts/verify_completed_moment_diagonal_fields.py).
 Its
@@ -807,10 +813,11 @@ The scan is replayed by
 .venv/bin/python scripts/research_completed_moment_algebra.py \
   --degrees 3 4 5 6 --invariant-cutoff 6 \
   --skip-relation-tests --power-witness-cutoff 12 \
+  --ladder-beta-check 32 \
   --output artifacts/generated-results/automatic_missing_invariants_d3_d6.json
 ```
 The generated artifact has SHA-256
-`a526b52feaeeba5cfca4d4903232e931443b0e0e6e92709c54e84e486573fb7c`.
+`ab13e38ec344194a60fda4ecebfdfe7d6b9c78f8d0be6b7cad1791e9fdb2d824`.
 It stores the even and odd invariant dimensions in every polynomial
 degree through six, the moment-monomial quotient dimensions, the Hilbert
 tests, the parameter Jacobians, and the exact witness evaluations.
@@ -820,6 +827,13 @@ dimensions and explicit bases for the first missing quadratic spaces and
 the first odd cubic spaces.  A complete basis-producing version should
 next solve the sparse raising-operator kernel in each multidegree, then
 reduce the resulting transvectants against moment monomials.
+
+For a dependency-free check of these committed bytes and their stored scope
+flags, without importing SymPy or launching Singular, run
+
+```bash
+python3 scripts/audit_completed_moment_artifacts.py
+```
 
 This division of labor matches the standard computational invariant-theory
 pipeline: multigraded Poincaré series for direct sums of binary forms

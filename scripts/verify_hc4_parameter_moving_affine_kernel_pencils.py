@@ -14,29 +14,71 @@ most two, contradicting the bordered unit.
 
 from __future__ import annotations
 
-from itertools import combinations
+import argparse
 import hashlib
 import json
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUTPUT = (
+    ROOT
+    / "artifacts"
+    / "generated-results"
+    / "hc4_parameter_moving_affine_kernel_pencils.json"
+)
+HELPER = ROOT / "jcsearch" / "reverse_schur_descent.py"
+EXPECTED_OUTPUT_SHA256 = (
+    "10ba8618926b9dbbe8fc979d5b8e3580470fae7f034926a6c507979488c2d015"
+)
+EXPECTED_HELPER_SHA256 = (
+    "b80da9da8105caa51fa38fc178a3a256d9132335a91bb5a87bb84eab96cf3e44"
+)
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def audit_existing() -> None:
+    assert sha256(OUTPUT) == EXPECTED_OUTPUT_SHA256
+    assert sha256(HELPER) == EXPECTED_HELPER_SHA256
+    payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    assert payload["format"] == "hc4-parameter-moving-affine-kernel-pencils-v1"
+    assert payload["status"]["id"] == "HC4RSD3"
+    assert payload["result"] == (
+        "no parameter-moving affine-in-x kernel line survives the "
+        "bordered-unit gate"
+    )
+    assert payload["open_frontier"] == "primitive kernel generators nonlinear in x"
+    print(
+        "PASS: committed HC4RSD3 artifact and equation helper are intact; "
+        "the affine parameter-moving branch is closed and nonlinear generators "
+        "remain the exact boundary; no symbolic replay or rewrite"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help="validate committed inputs without symbolic replay or artifact rewriting",
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
+from itertools import combinations
 import sys
 
 import sympy as sp
 
-ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from jcsearch.reverse_schur_descent import (
     ScalarPivotSchurFamily,
     corank_one_adjugate_scalar,
     kernel_line_piola_residuals,
-)
-
-
-OUTPUT = (
-    ROOT
-    / "artifacts"
-    / "generated-results"
-    / "hc4_parameter_moving_affine_kernel_pencils.json"
 )
 
 

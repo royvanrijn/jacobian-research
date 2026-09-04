@@ -13,7 +13,8 @@ endpoint has since grown.  For a stable replay we select exactly ids 1..474
 and require the hash-pinned projection (id, curve key, a-invariants, creation
 time) below.  Rank improvements made after the cutoff are rolled back from
 the public history when rank metadata is reported; they do not affect the
-equation scan.
+equation scan.  The default replay uses the exact 474-row projection already
+stored in the certificate; ``--live-source`` is an explicit drift audit.
 """
 
 from __future__ import annotations
@@ -187,14 +188,49 @@ def projection_digest(projection) -> str:
     return hashlib.sha256(raw).hexdigest()
 
 
-def fetch_pinned_records(database_path: Path | None):
-    if database_path is None:
+def load_pinned_records(
+    database_path: Path | None,
+    *,
+    live_source: bool,
+    stored_certificate: Path,
+):
+    if database_path is not None:
+        raw = database_path.read_bytes()
+        payload = json.loads(raw)
+        source_records = payload["curves"]
+    elif live_source:
         with urlopen(DATABASE_URL, timeout=120) as response:
             raw = response.read()
+        payload = json.loads(raw)
+        source_records = payload["curves"]
     else:
-        raw = database_path.read_bytes()
-    payload = json.loads(raw)
-    records_by_id = {int(record["id"]): record for record in payload["curves"]}
+        if not stored_certificate.is_file():
+            raise ArithmeticError(
+                "offline replay requires the stored certificate; use --database "
+                "or --live-source only to reconstruct it"
+            )
+        stored = json.loads(stored_certificate.read_text())
+        if stored.get("schema") != "elkies-k3.r17-norm12-icarm-database-sweep.v1":
+            raise ArithmeticError("stored ICARM sweep has an unknown schema")
+        stored_snapshot = stored.get("snapshot")
+        if not isinstance(stored_snapshot, dict):
+            raise ArithmeticError("stored ICARM sweep has no source projection")
+        stored_rows = stored_snapshot.get("curves")
+        if not isinstance(stored_rows, list):
+            raise ArithmeticError("stored ICARM sweep source projection is malformed")
+        source_records = [
+            {
+                "id": record["id"],
+                "curve_key": record["curve_key"],
+                "ainvs": record["ainvs"],
+                "rank_lower_bound": record["snapshot_rank_lower_bound"],
+                "submitter": record.get("submitter"),
+                "created_at": record["created_at"],
+                "history": [],
+            }
+            for record in stored_rows
+        ]
+    records_by_id = {int(record["id"]): record for record in source_records}
     expected_ids = set(range(1, PINNED_DATABASE_COUNT + 1))
     if not expected_ids.issubset(records_by_id):
         missing = sorted(expected_ids - set(records_by_id))
@@ -392,9 +428,16 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--atlas", type=Path, default=ATLAS)
     parser.add_argument("--database", type=Path)
+    parser.add_argument(
+        "--live-source",
+        action="store_true",
+        help="recover ids 1..474 from the current append-only endpoint",
+    )
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
+    if args.database is not None and args.live_source:
+        parser.error("--database and --live-source are mutually exclusive")
     args.atlas = args.atlas.resolve()
     args.output = args.output.resolve()
 
@@ -417,7 +460,11 @@ def main() -> None:
     ):
         raise ArithmeticError("the original pinned ICARM snapshot provenance changed")
 
-    records = fetch_pinned_records(args.database.resolve() if args.database else None)
+    records = load_pinned_records(
+        args.database.resolve() if args.database else None,
+        live_source=args.live_source,
+        stored_certificate=args.output,
+    )
     records_by_id = {int(record["id"]): record for record in records}
     target_invariants = {
         curve_id: weierstrass_invariants(record["ainvs"])

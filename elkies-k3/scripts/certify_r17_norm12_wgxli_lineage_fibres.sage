@@ -15,7 +15,10 @@ the conditional gates left by that pass:
   reduction certificates, thereby determining the quotient of the displayed
   subgroup by the specialized generic subgroup.
 
-The public source records are hash-pinned.  A source change fails closed.
+The public source records are hash-pinned.  The default replay reads their
+claim-sufficient exact projection from the committed 69-fibre snapshot;
+``--live-pinned-source`` retains the original raw-URL audit.  A source change
+fails closed.
 """
 
 from __future__ import annotations
@@ -47,6 +50,13 @@ PINNED_R17 = ROOT / "elkies-k3/data/lattice/rank17_gram.txt"
 OUTPUT = (
     ROOT
     / "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json"
+)
+PUBLIC_FIBRE_PROJECTION = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json"
+)
+PUBLIC_FIBRE_PROJECTION_SHA256 = (
+    "9a2675ab48cc37111d1f4050bd1797fc84c98b7839668d292d11406efe7a9eaa"
 )
 REPRESENTATIVE = "norm12-orbit-074d9"
 TARGET_IDS = (351, 356, 376, 377, 385)
@@ -298,18 +308,46 @@ def height_gram(sections, coefficient_a, function_field):
     return matrix(ZZ, answer)
 
 
-def fetch_public_records(lineage_fibres):
+def load_public_records(lineage_fibres, *, live_pinned_source):
+    offline_by_id = None
+    if not live_pinned_source:
+        observed = digest(PUBLIC_FIBRE_PROJECTION)
+        if observed != PUBLIC_FIBRE_PROJECTION_SHA256:
+            raise ArithmeticError(
+                "committed public-fibre projection changed: "
+                f"{observed} != {PUBLIC_FIBRE_PROJECTION_SHA256}"
+            )
+        projection = json.loads(PUBLIC_FIBRE_PROJECTION.read_text())
+        if projection.get("status") != (
+            "PASS_PINNED_PUBLIC_POINT_PROJECTION_FOR_69_RECOGNIZED_FIBRES"
+        ):
+            raise ArithmeticError("committed public-fibre projection is not certified")
+        offline_by_id = {
+            int(record["id"]): record for record in projection.get("records", [])
+        }
+
     records = {}
     for curve_id in TARGET_IDS:
         url, expected_hash = PUBLIC_SOURCES[curve_id]
-        with urlopen(url, timeout=60) as response:
-            raw = response.read()
-        observed_hash = hashlib.sha256(raw).hexdigest()
-        if observed_hash != expected_hash:
-            raise ArithmeticError(
-                f"public curve {curve_id} changed: {observed_hash} != {expected_hash}"
-            )
-        record = json.loads(raw)
+        if live_pinned_source:
+            with urlopen(url, timeout=60) as response:
+                raw = response.read()
+            observed_hash = hashlib.sha256(raw).hexdigest()
+            if observed_hash != expected_hash:
+                raise ArithmeticError(
+                    f"public curve {curve_id} changed: {observed_hash} != {expected_hash}"
+                )
+            record = json.loads(raw)
+        else:
+            record = offline_by_id.get(curve_id)
+            if record is None:
+                raise ArithmeticError(
+                    f"committed public-fibre projection omitted curve {curve_id}"
+                )
+            record = {
+                **record,
+                "rank_lower_bound": record["snapshot_rank_lower_bound"],
+            }
         lineage = lineage_fibres[curve_id]
         if int(record["id"]) != curve_id:
             raise ArithmeticError("public curve id changed")
@@ -338,6 +376,11 @@ def main() -> None:
     parser.add_argument("--atlas", type=Path, default=ATLAS)
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--check", action="store_true")
+    parser.add_argument(
+        "--live-pinned-source",
+        action="store_true",
+        help="require the five original public curve URLs to retain their byte hashes",
+    )
     args = parser.parse_args()
 
     atlas = json.loads(args.atlas.read_text())
@@ -390,7 +433,9 @@ def main() -> None:
     }
     if tuple(sorted(lineage_fibres)) != TARGET_IDS:
         raise ArithmeticError("lineage target inventory changed")
-    public_records = fetch_public_records(lineage_fibres)
+    public_records = load_public_records(
+        lineage_fibres, live_pinned_source=args.live_pinned_source
+    )
 
     invariants = {}
     canonical_points = {}

@@ -103,6 +103,14 @@ with \(a,b\ne0\) in the selected finite field.  Thus “support two” refers to
 support in this collision-kernel basis.  A carrier direction can itself
 contain two ordinary monomials.
 
+The enumerated domain is the nonempty support-one/support-two domain.  The
+zero-support base is not included in the count and is not a candidate:
+
+\[
+\det\operatorname{Hess}(\Psi_{\mathrm{base}})
+=\left(1-(d-1)x_0^{d-2}\right)^2\ne1.
+\]
+
 The exact counts are:
 
 | prime | degree bound | directions | potentials |
@@ -280,6 +288,17 @@ embeddings; any modular survivor there still needs rational reconstruction
 and an exact characteristic-zero check.
 
 ## Reproduction
+
+Audit the five committed ledgers, their exact domain keys and internal
+content hashes, and the three generating source hashes without enumeration
+or Singular with:
+
+```bash
+.venv/bin/python scripts/audit_hc4_finite_field_search_artifacts.py
+```
+
+This audit deliberately reports bounded `GF(11)`/`GF(13)` evidence only.  It
+does not rerun or strengthen any search.
 
 Run:
 

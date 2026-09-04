@@ -557,6 +557,15 @@ Replay the pinned artifact and the exceptional Gröbner/inverse certificate:
 .venv/bin/python plane-jc/cas/verify_sparse_support_exclusions.py
 ```
 
+For cleanup and ledger verification, pin-check the committed JSON and Singular
+certificate and validate the arbitrary-degree/bounded-regression distinction
+without enumerating either bounded support census or invoking a solver:
+
+```bash
+.venv/bin/python plane-jc/cas/verify_sparse_support_exclusions.py \
+  --audit-existing-only
+```
+
 The balanced census takes about one minute on a laptop.  Run the Singular
 piece alone with:
 

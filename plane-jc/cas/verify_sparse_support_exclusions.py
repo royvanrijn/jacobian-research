@@ -38,6 +38,9 @@ import z3
 
 ROOT = Path(__file__).resolve().parents[2]
 ARTIFACT = ROOT / "artifacts/generated-results/jc2_sparse_support_exclusions.json"
+ARTIFACT_SHA256 = (
+    "4f1fd545a5c48c39a32f74b6225ce00fd986cd5107427f9ee9077ce985863292"
+)
 SINGULAR_CERTIFICATE = Path(__file__).with_name("sparse_support_exceptional.sing")
 SINGULAR_CERTIFICATE_SHA256 = (
     "b7046fd378a1796e7abfed6ae3e4554d4e92c403c7dad35705f30c8a7d4575ab"
@@ -960,6 +963,116 @@ def affine_normalized_support_consequence() -> dict[str, object]:
     }
 
 
+def audit_existing_only(artifact: Path) -> None:
+    """Validate the committed theorem ledger without enumeration or solvers."""
+
+    artifact_hash = hashlib.sha256(artifact.read_bytes()).hexdigest()
+    if artifact_hash != ARTIFACT_SHA256:
+        raise AssertionError("the pinned sparse-support artifact bytes changed")
+    certificate_hash = hashlib.sha256(SINGULAR_CERTIFICATE.read_bytes()).hexdigest()
+    if certificate_hash != SINGULAR_CERTIFICATE_SHA256:
+        raise AssertionError("the pinned Singular certificate bytes changed")
+
+    payload = json.loads(artifact.read_text())
+    assert payload["schema_version"] == 3
+    boundary = payload["claim_boundary"]
+    assert boundary["field"] == "characteristic zero"
+    assert boundary["exact_support"] == "every displayed coefficient is nonzero"
+    assert boundary["bounded_regression"].endswith("total degree at most 12")
+    assert boundary["not_claimed"] == [
+        "invariance of support size under affine normalization",
+        "a new universal JC(2) degree bound",
+        "supports with at least seven nonlinear monomial occurrences",
+    ]
+
+    balanced = payload["arbitrary_degree_balanced_binomial"]
+    assert balanced["presence_masks_total"] == 256
+    assert balanced["presence_masks_feasible"] == 85
+    assert balanced["presence_mask_sha256"] == (
+        "4d211a46e23b9549ddf4108ee292f041973d102c650d02f4dd9daab8bb0304ad"
+    )
+    assert balanced["linear_residual_masks"] == [
+        f"0x{mask:02x}"
+        for mask in dict.fromkeys(
+            row_mask for row_mask, _partition in EXPECTED_LINEAR_RESIDUAL_PATTERNS
+        )
+    ]
+    assert balanced["canonical_residual_patterns"] == len(
+        EXPECTED_LINEAR_RESIDUAL_PATTERNS
+    ) == 20
+    assert balanced["residual_pattern_table"] == [
+        {
+            "mask": f"0x{mask:02x}",
+            "blocks": ["".join(map(str, block)) for block in partition],
+        }
+        for mask, partition in EXPECTED_LINEAR_RESIDUAL_PATTERNS
+    ]
+    assert balanced["residual_patterns_all_unsat"] is True
+    assert balanced["global_no_singleton_formula"] == "unsat"
+
+    two_by_three = payload["arbitrary_degree_two_by_three"]
+    assert two_by_three["presence_masks_total"] == 2048
+    assert two_by_three["presence_masks_feasible"] == 321
+    assert two_by_three["presence_mask_sha256"] == (
+        "227bcb7b327487ec9dc6b861a75c3e1c2e693cfe3cf15726077f052407a7b0eb"
+    )
+    assert two_by_three["linear_residual_masks"] == 98
+    assert two_by_three["linear_residual_mask_sha256"] == (
+        "17f070086059ca1536395602983fda35dff2c962ad64e057f0472987e584fb9f"
+    )
+    assert two_by_three["global_no_singleton_formula"] == "unsat"
+    assert two_by_three["transpose_included"] is True
+
+    support_six = payload["support_six_exponent_classification"]
+    assert support_six["transpose_included"] is True
+    assert support_six["splits"]["1+5"][
+        "non_quartic_chain_no_singleton_formula"
+    ] == "unsat"
+    assert support_six["splits"]["2+4"]["global_no_singleton_formula"] == "unsat"
+    assert support_six["splits"]["3+3"][
+        "nonquadratic_no_singleton_formula"
+    ] == "unsat"
+
+    assert payload["arbitrary_degree_shear_chain"] == (
+        verify_arbitrary_shear_chain_formulas()
+    )
+    assert payload["arbitrary_degree_cubic_shear_chain"] == (
+        verify_arbitrary_cubic_shear_chain_formulas()
+    )
+    assert payload["arbitrary_degree_quartic_shear_chain"] == (
+        verify_arbitrary_quartic_shear_chain_formulas()
+    )
+    assert payload["directional_quadratic_shear"] == (
+        verify_directional_quadratic_shear_formulas()
+    )
+    assert payload["affine_normalized_support"] == (
+        affine_normalized_support_consequence()
+    )
+
+    bounded = payload["balanced_binomial_census"]
+    assert bounded["degree_cap"] == 12
+    assert bounded["ordered_support_pairs"] == 14_653_584
+    assert bounded["unit_certificates"] == 14_653_584
+    assert bounded["survivors"] == 0
+    assert bounded["certificate_sha256"] == (
+        "df87a3577cddd666f8f4428cf88f59c50996aab1f13b38fd32ddf548d5376ab4"
+    )
+    trinomial = payload["balanced_trinomial_collision_census"]
+    assert trinomial["degree_cap"] == 6
+    assert trinomial["ordered_support_pairs"] == 5_290_000
+    assert trinomial["no_singleton_supports"] == 1
+    assert len(trinomial["survivors"]) == 1
+    assert trinomial["survivors"][0]["classification"] == (
+        "directional quadratic shear exponent chart"
+    )
+    assert trinomial["claim_boundary"].startswith("bounded regression only")
+
+    print(
+        "PASS committed plane sparse-support audit: pinned JSON and Singular bytes; "
+        "arbitrary-degree versus bounded-regression boundaries; no enumeration or solver"
+    )
+
+
 def run_singular_certificate() -> str:
     certificate_hash = hashlib.sha256(SINGULAR_CERTIFICATE.read_bytes()).hexdigest()
     if certificate_hash != SINGULAR_CERTIFICATE_SHA256:
@@ -1057,12 +1170,21 @@ def main() -> None:
     parser.add_argument("--degree-cap", type=int, default=12)
     parser.add_argument("--refresh", action="store_true")
     parser.add_argument("--artifact", type=Path, default=ARTIFACT)
+    parser.add_argument(
+        "--audit-existing-only",
+        action="store_true",
+        help="validate committed records without Z3, Singular, or support enumeration",
+    )
     args = parser.parse_args()
     if args.degree_cap < 2 or args.degree_cap > 181:
         raise SystemExit("degree cap must lie between 2 and 181")
 
-    payload = build_payload(args.degree_cap)
     artifact = args.artifact.resolve()
+    if args.audit_existing_only:
+        audit_existing_only(artifact)
+        return
+
+    payload = build_payload(args.degree_cap)
     if args.refresh:
         artifact.parent.mkdir(parents=True, exist_ok=True)
         artifact.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")

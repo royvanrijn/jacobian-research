@@ -15,7 +15,7 @@ published-R17 class `07ca9`, curve 393 is published-R17 class `0e80b`, and
 curve 395 is native alternate-Q80 class `11952`.  All induced twists are
 trivial.
 
-<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 291a539d07b842b9 -->
+<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 
 The fingerprint and inverse-problem discussion below is retained as the
 historical route to that exact result.
@@ -199,14 +199,29 @@ From the repository root:
   artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_lineage_v1.json
 ```
 
-The command requires network access to the hash-pinned ICARM sources and
-PARI/GP for the numerical height matrices.  The generated artifact has SHA-256
+The default command is now an offline replay.  It recovers the original
+ids-1-through-474 equation projection and all thirteen claim-relevant `wgxli`
+point records from the later committed exact database-sweep and public-fibre
+artifacts, checks both source-file hashes and every cross-projection field, and
+uses PARI/GP only for the numerical height matrices.  The live raw-source audit
+is retained separately as `--live-pinned-source`; it deliberately fails if the
+remote bytes no longer equal the 2026-09-01 snapshot.
+
+The repaired offline path reproduces the existing artifact byte-for-byte.  Its
+SHA-256 remains
 
 ```text
 f875f3917486c78089c6ba618daaef7dea07cb36152dd192d0f00c5d425c1c03
 ```
 
 before any intentional regeneration following this note.
+
+The two sufficient local projections are:
+
+- `artifacts/generated-results/elkies-k3-r17-norm12-icarm-database-sweep-v1.json`,
+  SHA-256 `6529f6dc81fb37f163c7fca761e7eaff1a2ffb7ab40a81cbfc9002e40165dbd2`;
+- `artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json`,
+  SHA-256 `9a2675ab48cc37111d1f4050bd1797fc84c98b7839668d292d11406efe7a9eaa`.
 
 ## Public sources
 

@@ -15,6 +15,7 @@ is exactly (h,N).
 from __future__ import annotations
 
 import argparse
+import hashlib
 import pickle
 import re
 from fractions import Fraction as Q
@@ -28,6 +29,29 @@ MINPOLY = "w^5-w^4+3*w^3+3*w^2+26"
 VARIABLES = ("h", "u1", "u2")
 DEFAULT_PAIRS = ((1, 2), (2, 3), (3, 4))
 ALL_PAIRS = tuple((i, j) for i in range(1, 5) for j in range(i + 1, 5))
+REPLAY_INPUT_SHA256 = {
+    "firstblock_Q_exact.out": (
+        "2e965d03b39d87531228943cd634de4438d3311fb7a0660dd6dc43a768ae05cb"
+    ),
+    "case1_branch1_after_w.pkl": (
+        "368a1dafdb6d26708b85d652a437c848a7676ba1419e4575ae74186f022621b9"
+    ),
+    "hne0_polred.pkl": (
+        "5a6e423d74ef09fc9c7a7282c500bda566018d7e56a93124665796bbe417cedf"
+    ),
+}
+
+
+def verify_replay_inputs():
+    """Fail closed if any exact archive input used here has changed."""
+
+    for filename, expected in REPLAY_INPUT_SHA256.items():
+        actual = hashlib.sha256((ROOT / filename).read_bytes()).hexdigest()
+        if actual != expected:
+            raise RuntimeError(
+                f"pinned Case-1 replay input changed: {filename}: "
+                f"expected {expected}, got {actual}"
+            )
 
 
 def trim(a):
@@ -132,6 +156,7 @@ class L:
 
 
 def parse_degree35_eliminant():
+    verify_replay_inputs()
     line = next(line for line in (ROOT / "firstblock_Q_exact.out").read_text().splitlines() if line.startswith("L[1]="))
     raw = {}
     for term in line.split("=", 1)[1].replace("-", "+-").split("+"):
@@ -221,6 +246,7 @@ def pmul(a, b):
 
 
 def reconstruct_matrix():
+    verify_replay_inputs()
     transformed = transform_system(pickle.loads((ROOT / "case1_branch1_after_w.pkl").read_bytes()))
     q0 = transformed[0]
     u3_coefficient = {m[:-1]: c for m, c in q0.items() if m[-1] == 1}
@@ -256,6 +282,22 @@ def reconstruct_matrix():
         assert all(derived[m] == expected[m] * ratio for m in derived), f"coefficient mismatch in residual {index}"
 
     return n_poly, a_values[:4], b_values[:4], f_values[:4]
+
+
+def audit_existing_only():
+    """Reconstruct the compact matrix and Bezout row without running Singular."""
+
+    n_poly, a_values, b_values, f_values = reconstruct_matrix()
+    _c1, _c2, delta = special_fibre_bezout(a_values)
+    assert n_poly
+    assert len(a_values) == len(b_values) == len(f_values) == 4
+    assert all(a_values) and all(b_values) and all(f_values)
+    assert delta
+    print(
+        "CASE1_DETERMINANTAL_COMMITTED_INPUT_AUDIT_PASS "
+        "(3 pinned archive inputs; 4 reconstructed residual rows; "
+        "special-fibre Bezout; no Singular run)"
+    )
 
 
 def special_fibre_bezout(a_values):
@@ -384,7 +426,7 @@ def write_singular(path, prime=None, lift=False, pairs=DEFAULT_PAIRS, write_cert
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("output", type=Path, help="generated Singular replay")
+    parser.add_argument("output", type=Path, nargs="?", help="generated Singular replay")
     parser.add_argument("--prime", type=int, help="reduce coefficients modulo this good prime")
     parser.add_argument("--lift", action="store_true", help="lift an explicit unit and h identity")
     parser.add_argument(
@@ -394,7 +436,17 @@ def main():
         help="comma-separated minors, default 12,23,34; use all for all six",
     )
     parser.add_argument("--write-certificate", type=Path, help="write the four final h multipliers")
+    parser.add_argument(
+        "--audit-existing-only",
+        action="store_true",
+        help="pin-check and reconstruct committed inputs without running Singular",
+    )
     args = parser.parse_args()
+    if args.audit_existing_only:
+        audit_existing_only()
+        return
+    if args.output is None:
+        parser.error("output is required unless --audit-existing-only is used")
     write_singular(args.output, args.prime, args.lift, args.pairs, args.write_certificate)
     print("CASE1_RECONSTRUCTION_PASS")
     print("CASE1_SPECIAL_FIBRE_PYTHON_PASS")

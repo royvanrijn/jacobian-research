@@ -113,6 +113,18 @@ The replay and the input hashes for all 31 finite systems are produced by
 Its machine-readable record is
 [`cubic_gaussian_null_cone_closure.json`](../artifacts/generated-results/cubic_gaussian_null_cone_closure.json).
 
+For a solver-free integrity replay of that committed record, run
+
+```bash
+.venv/bin/python scripts/verify_cubic_gaussian_null_cone_closure.py \
+  --audit-existing-only
+```
+
+This reconstructs the exact chart-orbit domain, checks the three unresolved
+five-weight keys against the preceding frontier artifact, and requires every
+stored input hash to retain its characteristic-zero unit outcome.  It does
+not rerun `msolve`.
+
 These chart certificates exclude every coefficient point with at least one
 positive and one negative rotational weight.  On the remaining one-sided
 locus, \(M_1=M_2=0\) also kills the weight-zero component: after

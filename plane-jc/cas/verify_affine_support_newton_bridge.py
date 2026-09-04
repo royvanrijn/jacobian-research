@@ -24,6 +24,9 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[2]
 ARTIFACT = ROOT / "artifacts/generated-results/jc2_affine_support_newton_bridge.json"
+ARTIFACT_SHA256 = (
+    "d77c1418a332ae0ecb74e8fc7a3f4ae28e2da0ea137b85e814541c826ca5087b"
+)
 
 
 def polynomial_support(
@@ -245,13 +248,99 @@ def build_payload() -> dict[str, object]:
     }
 
 
+def audit_existing_only(artifact: Path) -> None:
+    """Audit the committed bridge ledger without symbolic recomputation."""
+
+    actual_hash = hashlib.sha256(artifact.read_bytes()).hexdigest()
+    if actual_hash != ARTIFACT_SHA256:
+        raise AssertionError("the pinned affine-support bridge artifact bytes changed")
+    payload = json.loads(artifact.read_text())
+    assert payload["schema_version"] == 1
+    assert payload["claim_boundary"] == {
+        "proved": [
+            "Newton vertex count, geometric degree, and reduced "
+            "nonproperness data do not upper-bound sigma_aff",
+            "the Kummer descent chain-rule gate",
+            "the exact F2 terminal character obstruction",
+        ],
+        "not_proved": [
+            "a support bound for minimal counterexamples",
+            "an exclusion of the (75,125) F2 family",
+            "a new degree or geometric-degree frontier",
+        ],
+    }
+
+    triangular = payload["triangular_affine_support_obstruction"]
+    rows = triangular["explicit_regression_rows"]
+    assert [row["degree"] for row in rows] == list(range(4, 13))
+    for row in rows:
+        degree = row["degree"]
+        assert row["affine_support_lower_bound"] == degree - 2
+        assert row["pairwise_nonzero_derivative_resultants"] == (
+            (degree - 2) * (degree - 3) // 2
+        )
+    assert triangular["resultant_digest_sha256"] == (
+        "0b3f061bc9d344eae722e8aee30751d61c854bebe7176aa8c1b65e323a98e499"
+    )
+    assert "not its proof" in triangular["claim_boundary"]
+
+    gate = payload["kummer_character_gate"]
+    descending = gate["descending_representative"]
+    assert descending["r"] == 4
+    assert descending["in_u_y"]["bracket"] == "1"
+    assert descending["pulled_back_bracket"] == "x^4"
+    assert all(
+        x_degree % 5 == 0
+        for component in descending["pulled_back_support"].values()
+        for x_degree, _y_degree in component
+    )
+
+    terminal = gate["f2_75_125_terminal_block"]
+    assert terminal["kummer_modulus"] == 5
+    assert terminal["P_x_characters"] == sorted(
+        {x_degree % 5 for x_degree, _y_degree in terminal["P_support"]}
+    ) == [1, 4]
+    assert terminal["Q_x_characters"] == sorted(
+        {x_degree % 5 for x_degree, _y_degree in terminal["Q_support"]}
+    ) == [0, 1, 3]
+    assert terminal["descends_to_k[u,y]"] is False
+    assert terminal["bracket"] == "x^4"
+    assert terminal["sector_sums"] == {
+        "0": "0",
+        "1": "0",
+        "3": "0",
+        "4": "x**4",
+    }
+    bracket_rows = terminal["character_bracket_rows"]
+    assert len(bracket_rows) == 6
+    assert {
+        (row["P_character"], row["Q_character"])
+        for row in bracket_rows
+    } == {(p_character, q_character) for p_character in (1, 4) for q_character in (0, 1, 3)}
+    assert "cannot be applied" in terminal["conclusion"]
+
+    print(
+        "PASS committed affine-support bridge audit: pinned artifact, regression "
+        "boundary, and complete F2 character-pair ledger; no symbolic replay"
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--refresh", action="store_true")
     parser.add_argument("--artifact", type=Path, default=ARTIFACT)
+    parser.add_argument(
+        "--audit-existing-only",
+        action="store_true",
+        help="validate the committed artifact without symbolic recomputation",
+    )
     args = parser.parse_args()
-    payload = build_payload()
     artifact = args.artifact.resolve()
+    if args.audit_existing_only:
+        audit_existing_only(artifact)
+        return
+
+    payload = build_payload()
     if args.refresh:
         artifact.parent.mkdir(parents=True, exist_ok=True)
         artifact.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")

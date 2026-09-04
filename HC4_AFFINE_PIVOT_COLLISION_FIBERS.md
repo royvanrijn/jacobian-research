@@ -50,6 +50,8 @@ The exact identities are replayed by
 [scripts/verify_hc4_affine_pivot_collision_fibers.py](scripts/verify_hc4_affine_pivot_collision_fibers.py),
 which writes
 [artifacts/generated-results/hc4_affine_pivot_collision_fibers.json](artifacts/generated-results/hc4_affine_pivot_collision_fibers.json).
+Its maintained boundary keeps nonlinear pivots and collisions joining
+different affine-pivot fibers open.
 
 ## 1. Adapted affine coordinates
 
@@ -184,6 +186,8 @@ Run:
 
 ~~~bash
 .venv/bin/python scripts/verify_hc4_affine_pivot_collision_fibers.py
+# committed artifact only, without symbolic replay:
+.venv/bin/python scripts/verify_hc4_affine_pivot_collision_fibers.py --audit-existing-only
 ~~~
 
 The command checks the cofactor/slice determinant identity, its adapted

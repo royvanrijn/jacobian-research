@@ -404,7 +404,7 @@ charts are unit over \(\mathbf F_{32003}\), and the harmonic fiber is exactly
 empty, but neither fact identifies or eliminates the characteristic-zero
 exceptional locus.  No complete \((3,3,2,2)\) closure is claimed.
 
-## 6. Result and next action
+## 6. Result, historical next action, and current boundary
 
 > **Theorem `HC4NHM15` -- Double-conic normal-layer frontend.**  For
 > \(q=xz-y^2\), write a ternary quintic uniquely as

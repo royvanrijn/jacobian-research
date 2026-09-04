@@ -22,7 +22,25 @@ from research_two_pair_sic_bidegree33_sparse_six_counterexample import (
     screen_support,
     verify_restricted_formula,
 )
-from verify_two_pair_sic_bidegree33_sparse_cross_two9 import symmetry_orbit
+from verify_two_pair_sic_bidegree33_sparse_cross_two9 import (
+    support_class as cross_support_class,
+    symmetry_orbit,
+)
+from verify_two_pair_sic_bidegree33_sparse_full_incidence32229 import (
+    support_class as full_incidence_3222_support_class,
+)
+from verify_two_pair_sic_bidegree33_sparse_full_line43119 import (
+    support_class as full_line_4311_support_class,
+)
+from verify_two_pair_sic_bidegree33_sparse_three_line9 import (
+    support_class as regular_three_line_support_class,
+)
+from verify_two_pair_sic_bidegree33_sparse_three_line4329 import (
+    support_class as three_line_432_support_class,
+)
+from verify_two_pair_sic_bidegree33_sparse_two_row_fringe9 import (
+    support_class as fringe_support_class,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -145,9 +163,38 @@ def full_census(new_supports: set[Support]) -> dict[str, object]:
         for positions in combinations(POSITIONS, 9)
         if is_mixed(support := frozenset(positions))
     }
-    earlier = mixed - new_supports
+    rectangles = {
+        frozenset(
+            (row, column)
+            for row, column in POSITIONS
+            if row != missing_row and column != missing_column
+        )
+        for missing_row in range(4)
+        for missing_column in range(4)
+    }
+    _, _, fringes = fringe_support_class()
+    _, _, crosses = cross_support_class()
+    prior_families = {
+        "rectangles": rectangles,
+        "fringes": fringes,
+        "crosses": crosses,
+        "regular_three_line": regular_three_line_support_class(),
+        "three_line_432": three_line_432_support_class(),
+        "full_line_4311": full_line_4311_support_class(),
+        "full_incidence_3222": full_incidence_3222_support_class(),
+    }
+    earlier = set().union(*prior_families.values()) & mixed
+    expected_earlier = mixed - new_supports
     if len(mixed) != 11420 or len(earlier) != 4370:
         raise AssertionError("unexpected complete mixed size-nine census")
+    if earlier != expected_earlier:
+        missing = expected_earlier - earlier
+        excess = earlier - expected_earlier
+        raise AssertionError(
+            "the explicit union of earlier proved support families does not "
+            "equal the complement of the final batch: "
+            f"missing={len(missing)} excess={len(excess)}"
+        )
 
     def orbit_sizes(supports: set[Support]) -> dict[int, int]:
         unseen = set(supports)
@@ -176,6 +223,11 @@ def full_census(new_supports: set[Support]) -> dict[str, object]:
         "orbits_by_size": all_orbits,
         "new_support_count": len(new_supports),
         "new_symmetry_orbit_count": sum(new_orbits.values()),
+        "prior_family_support_counts_before_mixed_intersection": {
+            label: len(supports)
+            for label, supports in prior_families.items()
+        },
+        "prior_closed_mixed_support_count": len(earlier),
         "scope": (
             "discrete standard-basis support orbits under transpose and "
             "simultaneous reversal, not continuous diagonal-SL2 orbits"
@@ -221,6 +273,14 @@ def main() -> None:
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--timeout", type=int, default=600)
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument(
+        "--audit-census-only",
+        action="store_true",
+        help=(
+            "validate the exact support domains, predecessor-family union, "
+            "and symmetry coverage without rerunning the 1792 QQ systems"
+        ),
+    )
     arguments = parser.parse_args()
     if arguments.workers < 1 or arguments.timeout < 1:
         raise ValueError("--workers and --timeout must be positive")
@@ -230,6 +290,18 @@ def main() -> None:
 
     supports = support_class()
     reps = representatives(supports)
+    census = full_census(supports)
+    if arguments.audit_census_only:
+        print("PASS 1792 symmetry orbits cover all 7050 supports")
+        print(
+            "PASS the explicit union of all earlier proved families is "
+            "exactly the other 4370 mixed supports"
+        )
+        print(
+            "PASS all 11420 mixed size-nine supports occur exactly in the "
+            "proved predecessor union or the final batch"
+        )
+        return
     records: list[dict[str, object]] = []
     with ProcessPoolExecutor(max_workers=arguments.workers) as executor:
         futures = [
@@ -273,7 +345,7 @@ def main() -> None:
             "all 7050 remaining full-incidence coordinate subspaces are "
             "SIC-safe, completing the mixed size-nine census"
         ),
-        "complete_size_nine_census": full_census(supports),
+        "complete_size_nine_census": census,
         "independent_formula_check": verify_restricted_formula(),
         "scope": (
             "complete exact standard-basis size-nine support classification, "

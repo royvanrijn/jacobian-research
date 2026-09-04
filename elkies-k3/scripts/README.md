@@ -1468,8 +1468,11 @@ The current proof boundary and replay commands are in
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK f968ac0d6fa311fb -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 40745008c2fe2a80 -->
+<!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 252991e141c42e55 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 6b9d34ae8d722280 -->
+<!-- status-consumer: EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS 01298fec30fa94a3 -->
 - `certify_ns0024_qq_marking_obstruction.py` pins the stronger
   Fricke-quotient argument. Momose's composite-level theorem at
   `N=475,p=19`, together with the rank-one Inose gate, excludes the full
@@ -1499,18 +1502,31 @@ The current proof boundary and replay commands are in
   the standard marked-K3 spin correspondence, this rules out a full rational
   NS0031 marking over `QQ`.
 - `build_rank7_determinant_aware_ranking.py` now consumes explicit
-  arithmetic classifications. It preserves NS0024 and NS0031 in an exact
-  rejection ledger instead of leaving either in the live equation queue; the
-  regenerated planner retains 64 arithmetic candidates and places determinant
-  `720` first after the determinant-948 control.
+  arithmetic classifications. It preserves determinant 720, NS0024, and
+  NS0031 in an exact rejection ledger instead of leaving them in the live
+  equation queue; the regenerated planner retains 63 arithmetic candidates,
+  including the already-realized determinant-948 control.
 - `build_rank19_arithmetic_marking_classifier.sage` checks all 66 exact
   rootless-MW17 candidate NS lattices against their rank-three complements,
   imports the even-Clifford ledger, and keeps the coarse norm-one curve
   separate from the full stable discriminant-kernel curve. Exact decision
-  records currently give one `ARITHMETICALLY_POSSIBLE`, two
-  `ARITHMETICALLY_EXCLUDED`, and 63 `UNKNOWN` rows. Its equation-survivor
+  records currently give one `ARITHMETICALLY_POSSIBLE`, three
+  `ARITHMETICALLY_EXCLUDED`, and 62 `UNKNOWN` rows. Its equation-survivor
   handoff excludes every `UNKNOWN` row and is empty for the new different-NS
   objective.
+- `certify_golay_det720_qq_marking_obstruction.sage` reconstructs the literal
+  and primitive-similarity split Clifford orders, computes the `S3`
+  discriminant action, and identifies the stable marked curve with `X_0(60)`.
+  It verifies genus seven, twelve rational cusps, the four noncuspidal
+  `X_0(15)` quotient points, and the determinant-20 saturation of the known
+  rational model. With the named Mazur--Kenku and marked-period inputs, this
+  excludes a full rational determinant-720 marking.
+- `build_arithmetic_first_marked_t_foundry.py` reverses the global foundry
+  order. It ranks all 827 `T` rows without consulting rootless-frame data,
+  retains coarse genus only as a diagnostic, propagates exact marking
+  decisions, and emits no NS/rootless handoff until a new full rational
+  marking is certified. The current 823-row research queue has 24 coarse
+  genus-at-most-two diagnostics and no new positive handoff.
 - `extract_lattice_foundry_ns0024_joint_gb_point.sage` decodes a
   zero-dimensional joint basis over an arbitrary irreducible residue-field
   modulus, scans the Frobenius-field points, and emits only after replaying all
@@ -3233,6 +3249,26 @@ branches through precision `29^800`. Only the known branch reconstructs
 exactly. This is a short-shell result, not a full twist-rank upper bound; see
 [`../R17_103B2_ANTI_INVARIANT_RANK_AUDIT_2026-09-03.md`](../R17_103B2_ANTI_INVARIANT_RANK_AUDIT_2026-09-03.md).
 
+`bruteforce_twist_polynomial_sections_modp.cpp` and
+`run_twist_polynomial_sections_bruteforce.py` now also support the `chi=3`
+direct singleton twists.  The wrapper restores the full eight-variable
+tangent rank after recursive `Y` elimination.
+`lift_r17_norm12_direct_singleton_po0_bruteforce.sage` checks the complete
+overdetermined residual system, lifts compatible points one base-`p` digit at
+a time, records exact prime-power obstructions, and verifies any rational
+reconstruction in the original chart.
+`run_r17_norm12_11952_singleton_po0_top150.py --check` verifies each
+checkpointed campaign, while
+`audit_r17_norm12_11952_singleton_po0_two_prime_top200.py --check` requires
+two distinct exhaustive `P.O=0` shells for every discovery-top-200 character.
+Together they check 10,690,517,260 tested `X` polynomials and all 2,423
+isolated extra-branch obstructions.  The smaller
+`audit_r17_norm12_11952_singleton_po0_top20.py --check` also checks the exact
+depth-512 known-section regression.  Their boundary excludes singular modular
+branches, the other 38,947 characters, and sections with positive intersection
+with the zero section.
+<!-- status-consumer: EC-K3-R17-NORM12-11952-SINGLETON-PO0-TOP200 80ab545a98b4e2d7 -->
+
 The predictor benchmark replays five H3 first-hit histories without
 enumerating candidate-child roots.  The exact `K+C_new` lower-bound screen
 rejects only 178 of 2,892 candidates, so it is preserved as a negative
@@ -3531,6 +3567,60 @@ PYTHONPATH=elliptic-curves/cas sage -python elkies-k3/scripts/certify_r17_norm12
 See
 [`../R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md`](../R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md).
 
+`certify_r17_074d9_cross_fibre_bisection_transfer.sage` transports the
+complete 39,120 norm-ten trace inventory to the native `074d9` equation,
+reconstructs its residual quadratics, and gives exact split points and
+displayed-quotient coordinates at curves 351, 356, 376, 377, and 385.  The
+split counts are `7,2,28,7,2`, their quotient-span ranks are `6,2,5,5,2`, and
+the two covers at 356 are disjoint from the two at 385.
+
+`certify_r17_074d9_norm8_cross_fibre_transfer.sage` target-blindly selects a
+canonical norm-eight trace, fits its twelve quotient directions at each
+record, and freezes them against the other four same-chart fibres.  It then
+repeats this for the cheapest sixteen finite-pole traces.  Both matrices have
+diagonal rank twelve and no off-diagonal split.  Curve 12 is explicitly not
+applicable because it belongs to a different fibration.
+`audit_r17_074d9_late_point_interpolation.sage` uses four fibres to
+reconstruct the declared degree-at-most-three templates for `P18,...,P22`,
+keeps curve 385 as holdout, and finds no hit or quartic integral section.
+
+<!-- status-consumer: EC-K3-R17-074D9-RIGID-CROSS-FIBRE-TRANSFER abbedd192865f172 -->
+<!-- status-consumer: EC-K3-R17-074D9-NORM8-CROSS-FIBRE-TRANSFER-16 262e405b0adbbb73 -->
+<!-- status-consumer: EC-K3-R17-074D9-LATE-POINT-HOLDOUT 284e0f92def23419 -->
+
+```bash
+sage -python certify_r17_074d9_cross_fibre_bisection_transfer.sage --check
+sage -python certify_r17_074d9_norm8_cross_fibre_transfer.sage --check
+sage -python audit_r17_074d9_late_point_interpolation.sage --check
+```
+
+See
+[`../R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md`](../R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md).
+
+`build_r17_carrier_receptivity_profiles.py` assembles the middle layer on the
+marked hyperbolic plane rather than the abstract MW frame.  It emits one
+six-coordinate profile for every one of the 43 charts, imports only the
+twelve exact chart-specific quotient labels, recomputes all 175 available
+off-diagonal norm-eight square tests, and selects curves 11, 391, and 423 as
+the rank-28 initial transport tranche.  Parameter matches on equivalent
+charts do not import quotient ranks, and the other 54 missing transports stay
+`UNKNOWN`.  It also imports the exact inherited character layer on all ten
+alternate-Q80 markings and the complete smooth norm-ten layer on the six
+charts having saturated equation markings.  The completed `074d9`
+cross-fibre certificate supplies the remaining five rigid rank vectors, so
+all twelve exact quotient-labelled targets have a complete fixed-inventory
+rigid-transfer row.  Its target-blind norm-eight experiment adds 96 of the
+off-diagonal tests and records curve 12 as not applicable across fibrations,
+not as a zero.
+
+```bash
+.venv/bin/python elkies-k3/scripts/build_r17_carrier_receptivity_profiles.py
+.venv/bin/python elkies-k3/scripts/build_r17_carrier_receptivity_profiles.py --check
+```
+
+See
+[`../R17_CARRIER_RECEPTIVITY_PROFILE_2026-09-04.md`](../R17_CARRIER_RECEPTIVITY_PROFILE_2026-09-04.md).
+
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
 
 `compile_r17_norm12_orbit11952_qq.sage` performs the direct classical
@@ -3540,6 +3630,14 @@ minimalizes its Jacobian to a `24I1` K3, identifies the rootless complement
 with alternate Q80, and exports a saturated rank-17 section basis.  This is
 the primary equation compiler for the alternate frame; the giant historical
 Q80 transport below is a fallback.
+
+`plan_r17_norm12_direct_section_basis.sage` now reduces the complete
+degree-one old-section span to its minimal displayed index.
+`saturate_r17_norm12_direct_section_basis.sage` then enumerates the shortest
+missing coset, factors the exact duplication quartic, and verifies a rational
+height-4 half.  This supplies determinant-one equation bases for `135b7`,
+`10f72`, `09952`, and `0ae21`.  The complete ten-chart character result is
+audited by `audit_r17_norm12_alternate_chart_character_sweep.py`.
 
 ```bash
 sage -python compile_r17_norm12_orbit11952_qq.sage

@@ -15,26 +15,12 @@ nonconstant matrix-pivot kernel planes.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from pathlib import Path
-import sys
-
-import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
-
-from jcsearch.reverse_schur_descent import (
-    MatrixPivotSchurFamily,
-    ScalarPivotSchurFamily,
-    coefficient_equations,
-    corank_one_adjugate_scalar,
-    hessian_integrability_residuals,
-    rank_at_most_equations,
-)
-
-
 OUTPUT = (
     ROOT
     / "artifacts"
@@ -46,6 +32,82 @@ ATLAS = (
     / "artifacts"
     / "generated-results"
     / "hc4_projective_polar_atlas.json"
+)
+HELPER = ROOT / "jcsearch" / "reverse_schur_descent.py"
+EXPECTED_OUTPUT_SHA256 = (
+    "279aaf673b3a8cd254e4f51ae3c0cdc32ecce732a8a8e2b28979cbf453a89226"
+)
+EXPECTED_ATLAS_SHA256 = (
+    "350bc81b4ba7ac21289d7548f6d46de6526887c4e98a0813596cf20a454b240b"
+)
+EXPECTED_HELPER_SHA256 = (
+    "b80da9da8105caa51fa38fc178a3a256d9132335a91bb5a87bb84eab96cf3e44"
+)
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def audit_existing() -> None:
+    assert sha256(OUTPUT) == EXPECTED_OUTPUT_SHA256
+    assert sha256(ATLAS) == EXPECTED_ATLAS_SHA256
+    assert sha256(HELPER) == EXPECTED_HELPER_SHA256
+    payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    atlas = json.loads(ATLAS.read_text(encoding="utf-8"))
+    assert payload["format"] == "hc4-reverse-schur-descent-v1"
+    assert payload["status"]["id"] == "HC4RSD1"
+    live_rows = atlas["quintic_coverage_summary"][
+        "remaining_numerical_signatures_after_vertex_colength"
+    ]
+    assert live_rows == {
+        "affine_degree_2": 318,
+        "affine_degree_3": 306,
+        "total": 624,
+    }
+    assert payload["projective_polar_intersection"][
+        "input_live_quintic_rows"
+    ] == live_rows
+    assert set(payload["open_frontier"]) == {
+        "matrix_pivot",
+        "moving_kernel_scalar_pencil",
+        "nonsingular_scalar_pencil",
+    }
+    print(
+        "PASS: committed HC4RSD1 artifact, consumed atlas, and equation helper "
+        "are intact; its frontier is historical: HC4RSD2--5 narrow the moving "
+        "scalar branch and HC4MR1 closes the nonzero-corner auxiliary pencil, "
+        "while nonlinear zero-corner and moving-matrix mechanisms remain"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help=(
+        "validate committed inputs and the historical frontier without "
+        "symbolic replay or artifact rewriting"
+    ),
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
+import sys
+
+import sympy as sp
+
+sys.path.insert(0, str(ROOT))
+
+from jcsearch.reverse_schur_descent import (
+    MatrixPivotSchurFamily,
+    ScalarPivotSchurFamily,
+    coefficient_equations,
+    corank_one_adjugate_scalar,
+    hessian_integrability_residuals,
+    rank_at_most_equations,
 )
 
 

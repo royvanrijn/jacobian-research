@@ -132,8 +132,8 @@ int main(int argc, char** argv) {
 
     const int x_degree = 2 * chi;
     const int y_degree = 3 * chi;
-    if (x_degree != 8 || y_degree != 12) {
-        throw std::runtime_error("this bounded enumerator currently requires chi=4");
+    if ((chi != 3 && chi != 4) || y_degree * 2 != x_degree * 3) {
+        throw std::runtime_error("this bounded enumerator requires chi=3 or chi=4");
     }
 
     std::vector<bool> square(prime, false);
@@ -380,7 +380,7 @@ int main(int argc, char** argv) {
                 }
             }
             const auto inverse_vandermonde = invert_matrix(vandermonde, prime);
-            std::array<int, 8> leading_interpolant{};
+            std::vector<int> leading_interpolant(x_degree, 0);
             for (int row = 0; row < x_degree; ++row) {
                 int point_power = 1;
                 for (int exponent = 0; exponent < x_degree; ++exponent) {
@@ -419,16 +419,16 @@ int main(int argc, char** argv) {
             }
 
             struct HalfTable {
-                std::vector<std::array<unsigned char, 8>> coefficients;
+                std::vector<std::vector<unsigned char>> coefficients;
                 std::vector<std::vector<unsigned char>> signatures;
             };
-            auto build_half = [&](int offset) {
+            auto build_half = [&](int offset, int count) {
                 HalfTable table;
-                std::array<int, 4> digits{};
+                std::vector<int> digits(count, 0);
                 bool finished = false;
                 while (!finished) {
-                    std::array<unsigned char, 8> coefficients{};
-                    for (int local = 0; local < 4; ++local) {
+                    std::vector<unsigned char> coefficients(x_degree, 0);
+                    for (int local = 0; local < count; ++local) {
                         const int row = offset + local;
                         const int value = allowed_by_parameter[
                             interpolation_points[row]
@@ -456,7 +456,7 @@ int main(int argc, char** argv) {
                     table.signatures.push_back(std::move(signature));
 
                     int position = 0;
-                    while (position < 4) {
+                    while (position < count) {
                         ++digits[position];
                         const int row = offset + position;
                         if (digits[position] < static_cast<int>(
@@ -467,12 +467,14 @@ int main(int argc, char** argv) {
                         digits[position] = 0;
                         ++position;
                     }
-                    finished = position == 4;
+                    finished = position == count;
                 }
                 return table;
             };
-            const HalfTable left_table = build_half(0);
-            const HalfTable right_table = build_half(4);
+            const int left_count = x_degree / 2;
+            const int right_count = x_degree - left_count;
+            const HalfTable left_table = build_half(0, left_count);
+            const HalfTable right_table = build_half(left_count, right_count);
             tested += static_cast<std::uint64_t>(left_table.coefficients.size())
                 * right_table.coefficients.size();
             const std::size_t word_count = (right_table.coefficients.size() + 63) / 64;

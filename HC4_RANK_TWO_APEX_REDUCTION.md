@@ -2,6 +2,12 @@
 
 ## Status and scope
 
+**Current status.**  This is an intermediate proof-map note.  Its
+nonhomogeneous `[2,2]` remainder is closed by `HC4RSD58--60`, the `[3,1]`
+remainder is closed by `HC4RSD61--63`, and both sit inside the all-degree
+relative-nilpotent master reduction `HC4MR1`.  Section 5 records the
+historical handoff at `HC4RSD56--57`, not a live frontier.
+
 This note continues `HC4RSD17`, `HC4RSD42`, `HC4RSD54`, and the small-rank
 Hessian results of de Bondt.  It separates the two generic rank-two Jordan
 types
@@ -286,7 +292,7 @@ The determinant of this Hessian is
 
 This is exactly the plane-Keller cotangent packet and proves HC4RSD57.
 
-## 5. What remains at rank two
+## 5. Historical rank-two handoff (now closed)
 
 The homogeneous square-zero `[2,2]` branch is now closed.  The genuinely new
 rank-two possibilities are:

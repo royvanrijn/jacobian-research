@@ -14,6 +14,7 @@ GL_2 gauge.  No determinantal ideal or moment elimination is used.
 
 from __future__ import annotations
 
+import argparse
 from hashlib import sha256
 from itertools import combinations
 import json
@@ -30,6 +31,16 @@ OUTPUT = (
     / "generated-results"
     / "two_pair_sic_bidegree44_rank_two_single_shear.json"
 )
+
+
+def chart_keys() -> tuple[tuple[int, int, int, int], ...]:
+    return tuple(
+        (r, s, factor_column, shear_row)
+        for r, s in combinations(range(5), 2)
+        for factor_column in range(2)
+        for shear_row in range(5)
+        if shear_row not in {r, s}
+    )
 
 
 def chart_record(r: int, s: int, factor_column: int, shear_row: int) -> dict[str, object]:
@@ -104,14 +115,52 @@ def chart_record(r: int, s: int, factor_column: int, shear_row: int) -> dict[str
     }
 
 
+def exact_records() -> list[dict[str, object]]:
+    records = [chart_record(*key) for key in chart_keys()]
+    actual_keys = [
+        (
+            *record["pivot_rows"],
+            record["factor_column"],
+            record["shear_row"],
+        )
+        for record in records
+    ]
+    if actual_keys != list(chart_keys()):
+        raise AssertionError("single-shear chart labels do not match the exact domain")
+    if len(actual_keys) != len(set(actual_keys)) or len(actual_keys) != 60:
+        raise AssertionError("single-shear chart domain is duplicated or incomplete")
+    return records
+
+
+def validate_existing_artifact(path: Path) -> None:
+    artifact = json.loads(path.read_text(encoding="utf-8"))
+    if artifact.get("format") != "two-pair-sic-bidegree44-rank-two-single-shear-v1":
+        raise AssertionError("unexpected single-shear artifact format")
+    records = exact_records()
+    if artifact.get("chart_count") != len(records):
+        raise AssertionError("stored single-shear chart count is incomplete")
+    if artifact.get("charts") != records:
+        raise AssertionError(
+            "stored single-shear records do not match the exact ordered replay"
+        )
+    print("PASS all 60 exact single-shear chart keys occur once")
+    print("PASS every stored rank and first-moment identity matches the replay")
+
+
 def main() -> None:
-    records = []
-    for r, s in combinations(range(5), 2):
-        for factor_column in range(2):
-            for shear_row in range(5):
-                if shear_row not in {r, s}:
-                    records.append(chart_record(r, s, factor_column, shear_row))
-    assert len(records) == 60
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument(
+        "--audit-existing-only",
+        action="store_true",
+        help="validate the exact stored chart keys and identities without writing output",
+    )
+    arguments = parser.parse_args()
+    if arguments.audit_existing_only:
+        validate_existing_artifact(arguments.output)
+        return
+
+    records = exact_records()
 
     artifact = {
         "format": "two-pair-sic-bidegree44-rank-two-single-shear-v1",
@@ -132,8 +181,8 @@ def main() -> None:
         ),
         "charts": records,
     }
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n", encoding="utf-8")
+    arguments.output.parent.mkdir(parents=True, exist_ok=True)
+    arguments.output.write_text(json.dumps(artifact, indent=2) + "\n", encoding="utf-8")
 
     print("PASS internal GL2 gauge removed on all sixty single-shear charts")
     print("PASS every chart has exact coefficient rank two")

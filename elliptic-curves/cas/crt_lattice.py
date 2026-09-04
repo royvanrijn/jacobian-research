@@ -161,7 +161,17 @@ def beam_combine(
     height_weight: float,
     coefficient_radius: int = 8,
 ) -> tuple[CRTState, ...]:
-    """Combine one choice from each prime group, pruning by score and height."""
+    """Heuristically combine one choice from each prime group.
+
+    This routine is deliberately non-exhaustive whenever ``beam_width`` is
+    smaller than the expanded state population.  In particular, the height of
+    a shortest rational representative is not monotone as CRT congruences are
+    added, so a state discarded for its current height can later lead to the
+    best final representative.  Callers may use the result to rank candidates,
+    but must not use beam survival as a mathematical exclusion or completeness
+    certificate.  ``test_beam_width_one_counterexample`` records an exact
+    width-one false negative.
+    """
 
     if beam_width < 1:
         raise ValueError("beam width must be positive")

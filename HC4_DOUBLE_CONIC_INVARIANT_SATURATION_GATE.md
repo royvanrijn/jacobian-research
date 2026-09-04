@@ -15,6 +15,18 @@ Replay the exact lower-Smith example with
 .venv/bin/python scripts/verify_hc4_double_conic_invariant_saturation_gate.py
 ```
 
+For a cleanup-only provenance check, without constructing harmonic lifts or
+replaying the symbolic witness, use
+
+```bash
+.venv/bin/python scripts/verify_hc4_double_conic_invariant_saturation_gate.py \
+  --audit-existing-only
+```
+
+The checker pins the exact `verify_hc4_double_conic_normal_layers.py` source
+that supplies the harmonic decomposition.  Source drift therefore fails
+closed instead of silently changing this counter-witness.
+
 ## 1. The covariant ideal
 
 Use the harmonic splitting of `HC4NHM15`:

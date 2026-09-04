@@ -4,7 +4,9 @@ Date: 2026-09-04.
 
 Status: **ACTIVE, fail-closed infrastructure**.
 
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 40745008c2fe2a80 -->
+<!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 6b9d34ae8d722280 -->
 
 ## Outcome
 
@@ -14,19 +16,19 @@ frame and enter the classifier.  The current exact decisions are
 
 ```text
 ARITHMETICALLY_POSSIBLE    1
-ARITHMETICALLY_EXCLUDED    2
-UNKNOWN                   63
+ARITHMETICALLY_EXCLUDED    3
+UNKNOWN                   62
 ```
 
 The positive row is the already-realized determinant-948 `NS0001` control.
-The excluded rows are determinant-950 `NS0024` and determinant-1184 `NS0031`.
+The excluded rows are determinant-720 Golay, determinant-950 `NS0024`, and
+determinant-1184 `NS0031`.
 Every other row remains `UNKNOWN`; no bounded search, coarse modular curve, or
 formal local branch is promoted.
 
 The generated equation-agent handoff contains only new different-NS rows with
 an exact `ARITHMETICALLY_POSSIBLE` certificate.  It is currently empty.  In
-particular determinant `720` is sent to arithmetic curve identification, not
-to Riemann--Roch equation work.
+particular no determinant-720 row is sent to Riemann--Roch equation work.
 
 ## Pipeline
 
@@ -64,7 +66,7 @@ The small auditable decision registry is
 New non-`UNKNOWN` decisions must name exact certificate assertions and any
 external theorem inputs.
 
-## The three controls
+## The four controls
 
 ### Determinant 948: possible
 
@@ -109,6 +111,18 @@ classification leaves two noncuspidal points, and both have Frobenius pair
 `(trace,determinant)=(2,3) mod 4` at `19`, which is absent from the unramified
 non-split Cartan.  Neither point lifts, including after quadratic twist.
 
+### Determinant 720: excluded
+
+For the literal transcendental lattice with
+`A_T=Z/2+Z/6+Z/60`, the primitive similarity order has norm-one group
+conjugate to `Gamma_0(15)`. Its spin action on `A_T` has image `S3`; imposing
+the stable discriminant kernel adds the identity condition modulo `2` and
+gives a group rationally conjugate to `Gamma_0(60)`. Thus the exact marked
+curve is `X_0(60)`, of genus seven. The Mazur--Kenku cyclic-isogeny
+classification excludes rational noncuspidal points. The rational `X_0(15)`
+points do not lift, and the known rational `3A5` model instead saturates from
+determinant `720` to determinant `20` with index six.
+
 ## Why 948 looks hospitable
 
 The current evidence points to a structural explanation, but not yet a
@@ -128,32 +142,39 @@ division.  It is the tuple
 
 The last entry is decisive.  The first three only identify where to look.
 
-## Next arithmetic target
+## Next arithmetic targets
 
-The determinant-720 row has
+The construction search now starts from the full rank-three `T` ledger, not
+from the remaining rootless-frame list. The generated arithmetic-first queue
+contains all 827 transcendental rows and does not use rootless-frame data in
+its priority. It propagates three exclusions, one realized positive control,
+and an 823-row arithmetic research queue. Twenty-four rows have coarse genus
+at most two, but each still needs its literal stable discriminant kernel and
+rational-point decision.
+
+The first exact-coarse rows are currently
 
 ```text
-A_NS = Z/2 x Z/6 x Z/60,
-T = [ 8  -2   2 ]
-    [-2  -4  10 ]
-    [ 2  10  -4 ],
+det 378: X_0(7),
+det 256: X_0(2),
+det 512: X_0(4).
 ```
 
-and split even-Clifford order of reduced discriminant `45`.  Its isotropic
-vector has divisibility `3`; the order is not certified as `Gamma_0(45)`.
-The next calculation is therefore the NS0031-style one: embed the order in
-`M_2(QQ)`, derive its exact congruence conditions and signature, compute the
-stable discriminant kernel for `Z/2 x Z/6 x Z/60`, and only then look for a
-cheap quotient and rational points.
+These labels remain coarse diagnostics. Compute each literal stable kernel,
+then seek a rational noncuspidal non-CM point. Only an exact positive marking
+may trigger `NS=T^perp`, rootlessness, or equation work. The full queue is in
+[`../artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json`](../artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json).
 
 ## Replay
 
 ```bash
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
+sage -python elkies-k3/scripts/certify_golay_det720_qq_marking_obstruction.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
+python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
 ```
 
-The checker does not reprove Momose, Vélu, the Inose correspondence, or the
-rank-three period/spin correspondence.  Those inputs remain named in the
-decision registry and canonical obstruction notes.
+The checkers do not reprove Momose, Vélu, Mazur--Kenku, the Inose
+correspondence, or the rank-three period/spin correspondence. Those inputs
+remain named in the decision registry and canonical obstruction notes.

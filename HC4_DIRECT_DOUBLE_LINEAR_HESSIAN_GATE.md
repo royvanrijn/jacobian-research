@@ -7,7 +7,11 @@ arbitrary four-variable constant-Hessian polynomial.  It treats the first
 non-squarefree Hessian-discriminant strata, closes exact linear multiplicities
 three and four, and closes both boundary ranks of exact linear multiplicity
 five.  At exact multiplicity six it closes the complete generic-corank-one
-boundary and reduces the lower-rank boundary to three explicit packets.
+boundary and reduces the lower-rank boundary to one degree-five, order-one
+pure-cube scalar-parent resonance.  The subsequent theorem `HC4DIR28` excludes
+that scalar-parent family as a source of collisions.  Nonlinear repeated
+factors, several distinct repeated factors, multiplicity at least seven, and
+top-Hessian rank at most two remain separate.
 
 The consolidated repeated-linear-factor result is registered as `HC4DIR27`
 in `MATH_STATUS.json`.  The labels `HC4-DIR3--27` below remain local proof-map
@@ -3154,6 +3158,8 @@ Run
 
 ```bash
 .venv/bin/python scripts/verify_hc4_direct_double_linear_hessian_gate.py
+# committed-artifact maintenance only:
+.venv/bin/python scripts/verify_hc4_direct_double_linear_hessian_gate.py --audit-existing-only
 ```
 
 The checker verifies the all-degree determinant identities (4.2)--(4.4), the
@@ -3171,7 +3177,9 @@ and the bordered scalar-pivot determinant (5.82).
 The UFD
 and DVR divisibility arguments, the two rank-two boundary-gradient
 exclusions, and the determinant-channel uniqueness are written proof steps
-and are not replaced by a bounded search.
+and are not replaced by a bounded search.  The maintenance-only mode verifies
+the committed artifact, its exact generic/lower-rank endpoint, and this
+written-proof boundary without reconstructing or rewriting the identities.
 
 The next repeated-factor strata are now explicit:
 

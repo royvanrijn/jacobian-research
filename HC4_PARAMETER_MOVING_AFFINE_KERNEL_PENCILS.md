@@ -255,11 +255,18 @@ Run:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_parameter_moving_affine_kernel_pencils.py
+# cleanup only: verify committed inputs and exact boundary
+.venv/bin/python scripts/verify_hc4_parameter_moving_affine_kernel_pencils.py --audit-existing-only
 ```
 
 The command verifies (3.3), both jointly unimodular common-covector normal
 forms, the complete terminal integral (4.5), all sixteen \(3\)-by-\(3\)
 Hessian minors, and the vanishing bordered determinant.
+
+The cleanup-only mode hash-checks the committed ledger and imported equation
+helper without importing SymPy, replaying those identities, or rewriting the
+artifact. It also requires the ledger to retain the exact boundary at
+primitive kernel generators nonlinear in the reduced variables.
 
 Together, `HC4RSD1`--`HC4RSD3` close every singular scalar pencil whose
 primitive kernel generator is affine in the four reduced variables. The

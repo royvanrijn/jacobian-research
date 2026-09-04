@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 from dataclasses import asdict
 import hashlib
 import json
@@ -223,7 +224,20 @@ payload = {
 }
 
 serialized = json.dumps(payload, indent=2, sort_keys=True) + "\n"
-OUTPUT.write_text(serialized)
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument(
+    "--write",
+    action="store_true",
+    help="rewrite the pinned generated artifact",
+)
+args = parser.parse_args()
+if args.write:
+    OUTPUT.write_text(serialized)
+else:
+    assert OUTPUT.exists(), f"missing {OUTPUT.relative_to(ROOT)}"
+    assert OUTPUT.read_text() == serialized, (
+        f"{OUTPUT.relative_to(ROOT)} is stale; regenerate with --write"
+    )
 digest = hashlib.sha256(serialized.encode()).hexdigest()
 
 print("PASS: checked all smooth-essential normal slices for 2<=n<=10")
@@ -231,5 +245,5 @@ print("PASS: Jacobian Hilbert functions have length m^r and correct socle")
 print("PASS: truncated active lengths are m^(r+1)")
 print("PASS: filtered missing-generator bounds are dimension-free")
 print("PASS: recovered HC4PPG7 and HC4PPG8 as specializations")
-print(f"PASS: wrote {OUTPUT.relative_to(ROOT)}")
+print(f"PASS: checked {OUTPUT.relative_to(ROOT)}")
 print(f"SHA256: {digest}")

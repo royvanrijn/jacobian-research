@@ -1,24 +1,33 @@
 #!/usr/bin/env python3
-"""Verify the lower-Smith obstruction to an unsaturated decic certificate."""
+"""Verify the lower-Smith obstruction to an unsaturated decic certificate.
+
+``--audit-existing-only`` checks the exact helper-source provenance without
+constructing harmonic lifts or replaying the symbolic witness.
+"""
 
 from __future__ import annotations
 
+import argparse
+import hashlib
+from pathlib import Path
+
 import sympy as sp
 
-from verify_hc4_double_conic_normal_layers import (
-    binary_coefficients,
-    harmonic_layers,
-    harmonic_lift,
-    lam,
-    mu,
-    nu,
-    q,
-    s,
-    t,
-    x,
-    y,
-    z,
+
+NORMAL_LAYERS_HELPER = Path(__file__).with_name(
+    "verify_hc4_double_conic_normal_layers.py"
 )
+EXPECTED_NORMAL_LAYERS_HELPER_SHA256 = (
+    "48b78faeb4bd2a2700084d3314be7f3745dbd953368c4777f02b4d92cbcc0a07"
+)
+
+
+def verify_replay_source() -> None:
+    actual = hashlib.sha256(NORMAL_LAYERS_HELPER.read_bytes()).hexdigest()
+    assert actual == EXPECTED_NORMAL_LAYERS_HELPER_SHA256, (
+        "double-conic normal-layer helper drifted: "
+        f"expected {EXPECTED_NORMAL_LAYERS_HELPER_SHA256}, got {actual}"
+    )
 
 
 def exact_quotient(numerator: sp.Expr, divisor: sp.Expr) -> sp.Expr:
@@ -28,6 +37,37 @@ def exact_quotient(numerator: sp.Expr, divisor: sp.Expr) -> sp.Expr:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--audit-existing-only",
+        action="store_true",
+        help="verify committed helper provenance without symbolic replay",
+    )
+    arguments = parser.parse_args()
+
+    verify_replay_source()
+    if arguments.audit_existing_only:
+        print(
+            "PASS: committed HC4 double-conic saturation-gate provenance "
+            "is intact; no symbolic replay"
+        )
+        return
+
+    from verify_hc4_double_conic_normal_layers import (
+        binary_coefficients,
+        harmonic_layers,
+        harmonic_lift,
+        lam,
+        mu,
+        nu,
+        q,
+        s,
+        t,
+        x,
+        y,
+        z,
+    )
+
     binary_decic = s**10 + t**10
     quintic = x**5 + z**5
     f_coefficients = binary_coefficients(binary_decic, 10)

@@ -4,11 +4,14 @@
 This is numerical and source-comparative evidence, not a family-recognition
 theorem.  The two ICARM JSON responses are hash-pinned as retrieved on
 2026-08-25, and PARI/GP computes the canonical-height matrices of the first
-seventeen displayed points in their displayed order.
+seventeen displayed points in their displayed order.  The default replay uses
+the later committed sufficient public-fibre projection; the original raw URL
+check is available as ``--live-pinned-source``.
 """
 
 from __future__ import annotations
 
+import argparse
 from fractions import Fraction
 import hashlib
 import json
@@ -38,6 +41,14 @@ SOURCES = {
         "58afbc62dbb6e01b47266c90edcf0e09bb003bb6a558333422b332e42546e89e",
     ),
 }
+ROOT = Path(__file__).resolve().parents[2]
+PUBLIC_FIBRE_PROJECTION = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json"
+)
+PUBLIC_FIBRE_PROJECTION_SHA256 = (
+    "9a2675ab48cc37111d1f4050bd1797fc84c98b7839668d292d11406efe7a9eaa"
+)
 
 EXPECTED_MATCHES = (
     (2, 1),
@@ -61,16 +72,40 @@ def rational_text(value: str) -> str:
     return f"({value_q.numerator}/{value_q.denominator})"
 
 
-def fetch(curve_id: int) -> dict[str, object]:
+def fetch(curve_id: int, *, live_pinned_source: bool) -> dict[str, object]:
     url, expected_hash = SOURCES[curve_id]
-    with urlopen(url, timeout=30) as response:
-        raw = response.read()
-    observed_hash = hashlib.sha256(raw).hexdigest()
-    if observed_hash != expected_hash:
-        raise AssertionError(
-            f"curve {curve_id} public JSON changed: {observed_hash} != {expected_hash}"
+    if live_pinned_source:
+        with urlopen(url, timeout=30) as response:
+            raw = response.read()
+        observed_hash = hashlib.sha256(raw).hexdigest()
+        if observed_hash != expected_hash:
+            raise AssertionError(
+                f"curve {curve_id} public JSON changed: {observed_hash} != {expected_hash}"
+            )
+        record = json.loads(raw)
+    else:
+        raw = PUBLIC_FIBRE_PROJECTION.read_bytes()
+        observed_hash = hashlib.sha256(raw).hexdigest()
+        if observed_hash != PUBLIC_FIBRE_PROJECTION_SHA256:
+            raise AssertionError(
+                "committed public-fibre projection changed: "
+                f"{observed_hash} != {PUBLIC_FIBRE_PROJECTION_SHA256}"
+            )
+        projection = json.loads(raw)
+        record = next(
+            (
+                item
+                for item in projection.get("records", [])
+                if int(item["id"]) == curve_id
+            ),
+            None,
         )
-    record = json.loads(raw)
+        if record is None:
+            raise AssertionError(f"committed public-fibre projection omitted {curve_id}")
+        record = {
+            **record,
+            "rank_lower_bound": record["snapshot_rank_lower_bound"],
+        }
     if int(record["id"]) != curve_id:
         raise AssertionError(f"wrong curve returned for {url}")
     return record
@@ -142,7 +177,17 @@ def correlation(left: list[float], right: list[float]) -> float:
 
 
 def main() -> None:
-    records = {curve_id: fetch(curve_id) for curve_id in SOURCES}
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--live-pinned-source",
+        action="store_true",
+        help="require the original two public curve JSON byte hashes",
+    )
+    args = parser.parse_args()
+    records = {
+        curve_id: fetch(curve_id, live_pinned_source=args.live_pinned_source)
+        for curve_id in SOURCES
+    }
     curve356 = records[356]
     if tuple(Fraction(value) for value in curve356["ainvs"]) != GENERAL_WEIERSTRASS_COEFFICIENTS:
         raise AssertionError("the hard-coded curve-356 model differs from the public source")

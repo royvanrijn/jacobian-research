@@ -14,11 +14,10 @@ divisibility is a written proof step, not a bounded computation.
 """
 from __future__ import annotations
 
+import argparse
+import hashlib
 import json
 from pathlib import Path
-
-import sympy as sp
-
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = (
@@ -27,6 +26,49 @@ OUT = (
     / "generated-results"
     / "hc4_direct_double_linear_hessian_gate.json"
 )
+EXPECTED_OUT_SHA256 = "0bdaeb66d2165c0211051c822f89ce389f1dd737acded2b328f9f32c7f48b68c"
+
+
+def audit_existing() -> None:
+    actual = hashlib.sha256(OUT.read_bytes()).hexdigest()
+    assert actual == EXPECTED_OUT_SHA256, (actual, EXPECTED_OUT_SHA256)
+    payload = json.loads(OUT.read_text(encoding="utf-8"))
+    assert payload["scope"] == (
+        "direct HC4 rank-three top cone with repeated linear Hessian factors"
+    )
+    assert payload["first_motion_gate"]["conclusion"] == "j=1"
+    assert payload["general_multiplicity_budget"]["conclusion"] == (
+        "the first off-diagonal order satisfies j<=kappa"
+    )
+    assert payload["generic_corank_one_sextuple_high_order_gate"][
+        "conclusion"
+    ].endswith("complete generic-corank-one exact-sextuple stratum is empty")
+    assert payload["lower_rank_sextuple_reduction"]["conclusion"].endswith(
+        "leaving only the degree-five order-one resonance"
+    )
+    assert "UFD/DVR divisibility" in payload["proof_boundary"]
+    assert "proved in HC4_DIRECT_DOUBLE_LINEAR_HESSIAN_GATE.md" in payload[
+        "proof_boundary"
+    ]
+    print(
+        "PASS: committed HC4 repeated-linear artifact is intact and retains "
+        "its written-proof boundary; no symbolic replay or rewrite"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help="validate the committed artifact without symbolic replay or rewriting it",
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
+import sympy as sp
+
 OUT.parent.mkdir(parents=True, exist_ok=True)
 
 m, j = sp.symbols("m j", integer=True, positive=True)

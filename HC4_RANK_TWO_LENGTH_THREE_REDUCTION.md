@@ -2,6 +2,10 @@
 
 ## Status and scope
 
+**Current status.**  This is an intermediate proof-map note.  The binary
+characteristic problem posed in Section 6 is continued by `HC4RSD62` and
+closed in all degrees by `HC4RSD63`; it is not a live target after `HC4MR1`.
+
 This note attacks the remaining rank-two nilpotent type after the complete
 `[2,2]` closure `HC4RSD60`.
 
@@ -327,7 +331,7 @@ Equation (5.3) is the residual `[3,1]` obstruction.  It is now a **purely
 binary characteristic problem**; the four-variable moving flag has been
 eliminated.
 
-## 6. Next target
+## 6. Historical next target (closed by `HC4RSD62--63`)
 
 The next theorem should classify polynomial/rational solutions of
 

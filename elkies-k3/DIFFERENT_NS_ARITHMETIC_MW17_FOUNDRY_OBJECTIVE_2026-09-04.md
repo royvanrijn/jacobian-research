@@ -1,4 +1,4 @@
-# Different-NS foundry objective: first planner-found arithmetic MW17
+# Lane B arithmetic-first foundry objective
 
 Date: 2026-09-04.
 
@@ -9,9 +9,11 @@ Status: **OPEN**.
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK f968ac0d6fa311fb -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 40745008c2fe2a80 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 e93bdd3228be30d0 -->
+<!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 252991e141c42e55 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 6b9d34ae8d722280 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 71f43dc9ef3af620 -->
 
 ## Milestone
 
@@ -19,157 +21,189 @@ The determinant-948 equation programme is closed through the maximal
 noncyclic bridge
 
 ```text
-published R17 -> 4A1/MW13 -> published R17,
+published R17 -> 4A1/MW13 -> published R17.
 ```
 
-including a characteristic-zero equation, thirteen saturated rational
-sections, and target-free reverse selection. Another equation on that same
-Neron--Severi lattice is therefore not the next foundry milestone.
+Another equation on that Néron--Severi lattice is not the next Lane B
+milestone. The construction programme now starts from the rank-three
+transcendental lattice and admits equation work only after the arithmetic
+marking gate.
 
-The live milestone is
+The primary success target is stronger than a plain new MW17 equation:
 
 ```text
-the first arithmetic rootless MW17 fibration on a different rank-19
-Neron--Severi lattice that is selected by the marked-U planner without a
-supplied target frame.
+a different-NS arithmetic MW17 fibration over QQ(t), together with a
+certified positive-rank low-genus carrier base and an exact new section
+after base change.
 ```
 
-## Two arithmetic exclusions
-
-Determinant-950 `NS0024` is not a candidate. A full rational marking would
-make its primitive `2E8/MW1` Inose fibration descend and hence give a
-noncuspidal, non-CM rational point on `X0+(475)`. Momose's theorem excludes
-such a point. The exact argument is in
-[`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
-
-Determinant-1184 `NS0031` is also not a candidate. Its exact split Clifford
-order gives the modular curve
+The stretch target is an integral `V4`-stable Mordell--Weil lattice with
+character ranks
 
 ```text
-X_ns(4) x_{X(1)} X_0(37).
+17 + 1 + 1 + 1,
 ```
 
-Vélu's determination of `X_0(37)(QQ)`, followed by an exact mod-4 Frobenius
-test at `19`, excludes a lift of either noncuspidal rational point. Thus a
-full rational `NS0031` marking is impossible. The proof and replay are in
-[`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+including its complete 2-primary graph glue. This would target generic rank
+20 over the connected `V4` carrier rather than finding two characters and
+leaving the product character undecided.
 
-The one-parameter formally smooth `ZZ_7` model-157 branch and the physical
-corridor
+## Determinant 720 is closed first
+
+The determinant-720 Golay surface is no longer an unresolved source. Its
+literal transcendental lattice has determinant `-720` and
 
 ```text
-A1+2A7 -> A1+2A3+A5 -> 5A1+A3 -> 4A1 -> A1
-       -> rootless NS0031-F017
+A_NS = Z/2 + Z/6 + Z/60.
 ```
 
-remain exact local and geometric controls. They cannot be promoted to the
-required arithmetic source over `QQ`. Longer lifting, a larger rational
-parameter scan, or algebraization of that branch is no longer a live attack
-on this milestone.
+The exact split-Clifford calculation identifies the primitive-similarity
+norm-one curve as `X_0(15)`. Computing the literal discriminant action gives
+image `S3`; imposing the stable kernel adds the full mod-2 identity
+condition. After rational conjugation the exact marked curve is
 
-## First missing gate
+```text
+X_0(60),       genus 7.
+```
 
-Rerank the remaining different-NS frames with the rational-marking arithmetic
-gate before equation search. Determinant `720` is the strongest existing
-lattice/corridor control, but its known rational `3A5/MW2` equation is not a
-source for the determinant-720 lattice: the displayed determinant-720
-sublattice saturates with index `6` to determinant `20`, with rational
-3-torsion and a rational half-section.
+Its twelve rational points are cusps: the Mazur--Kenku rational cyclic
+isogeny classification excludes degree `60`. Hence there is no full rational
+determinant-720 marking and no positive point to hand to an equation agent.
 
-The reranked planner artifact makes this fail-closed: 66 surfaces pass the
-exact lattice filters, the two proved arithmetic obstructions are removed,
-and 64 candidates remain. After the same-NS determinant-948 control, the
-determinant-720 surface is the first unresolved row.
+The four noncuspidal rational points on the useful quotient `X_0(15)` do not
+lift. The known rational `3A5/MW2` equation explains the boundary: its
+displayed determinant-720 subgroup has index six, with rational `3`-torsion
+and a rational half-section, and saturates to determinant `20`.
 
-The separate arithmetic-marking classifier sharpens the type of those rows:
-one surface is `ARITHMETICALLY_POSSIBLE` (the already-realized
-determinant-948 control), two are `ARITHMETICALLY_EXCLUDED`, and the remaining
-63 are `UNKNOWN`. Its new different-NS equation-agent handoff is therefore
-empty. `UNKNOWN` rows stay in the arithmetic-curve queue and may not be sent
-to an equation agent. See
-[`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md).
+The theorem and exact replay are in
+[`GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
 
-The next narrow calculation is therefore an exact arithmetic moduli decision
-for the determinant-720 marking: identify the stable marked curve and decide
-whether any rational noncuspidal point has saturated determinant `720` rather
-than landing on a proper overlattice. Only after that decision should the
-coefficient search resume. If determinant `720` is excluded, repeat the same
-pre-screen down the determinant-aware queue.
+## Global arithmetic-first order
 
-The first positive source package must contain:
+The foundry order is now
 
-1. an explicit smooth elliptic K3 equation over `QQ`, with rational fibre and
-   effective zero;
-2. source sections and all reducible-fibre components giving nineteen
-   individual `QQ`-rational divisor classes;
-3. their exact intersection matrix, a determinant-one identification with
-   the selected new Neron--Severi lattice, and a proof that the geometric
-   Picard rank is exactly 19;
-4. complete component and section incidence data for the marked-`U` planner
-   and equation compiler.
+```text
+rank-three T
+  -> exact integral Clifford order and O+(T)^*
+  -> full marked Shimura/modular curve
+  -> rational noncuspidal non-CM point
+  -> saturated rational marking of NS = T^perp
+  -> rootless-frame test+marked-U planning
+  -> equation compilation.
+```
 
-The old NS0031 rational-coordinate scan remains a bounded negative record:
-all 247 reduced values `m9=n/d` with `|n|,d<=40` in the model-157 residue disk
-lift through `7^40`, but none simultaneously rationally reconstructs all 52
-coordinates. The modular obstruction supersedes that search as an arithmetic
-route.
+The generated `T`-first planner enforces this order on all 827 catalogue
+rows without using rootless-frame data in its arithmetic priority. It
+propagates three exact exclusions and the already-realized determinant-948
+positive control. The remaining arithmetic research queue has 823 rows: 62
+from the old rootless-MW17 subcatalogue and 761 not yet screened at the NS
+stage. Twenty-four currently have coarse genus at most two. That coarse genus
+is a prioritization diagnostic only; it is not the genus of the stable
+marking curve and proves neither a rational point nor a rational marking.
 
-## Target-free planner and compiler protocol
+The first exact-coarse calculations are currently the determinant `378`,
+`256`, and `512` rows. Their coarse curves are respectively `X_0(7)`,
+`X_0(2)`, and `X_0(4)`, but their literal stable kernels are still unknown.
+The priority tuple is
 
-Once a source passes the arithmetic gate, run the marked-`U` planner with
-only:
+```text
+(full marked genus 0/1, occasionally 2;
+ rational non-CM point;
+ small stable-kernel index;
+ small similarity/marking gap).
+```
 
-- the explicit source `(NS,U,W)` marking;
-- a rootless rank-17 endpoint predicate of the selected NS determinant;
-- a declared low-degree search box beginning with old-fibre degree two;
-- no target Gram, target frame identifier, historical route, or endpoint
-  overlap fingerprint.
+Only a certified positive row may enter `NS=T^perp`, saturation, rootless,
+or equation work. See the generated
+[`../artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json`](../artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json).
 
-The selected primitive `U'` must independently pass nefness and
-effective-zero gates. Existing rootless frames and certified corridors may be
-used only after selection to identify or compare the landing class.
+## Arithmetic MW17 plus carrier certificate
 
-Compile the selected moves over `QQ`. The universal degree-two compiler is
-the preferred backend when applicable; another selected degree requires its
-own exact compiler certificate. Modular equations remain discovery data, not
-characteristic-zero endpoints.
+A primary construction closes only when one certificate chain proves:
 
-## Arithmetic acceptance certificate
+1. a characteristic-zero elliptic K3 over `QQ` with geometric Picard rank
+   exactly 19 and nineteen individually rational divisor classes;
+2. an exact saturated identification of its Néron--Severi lattice with the
+   selected `T^perp`, including source `U` and incidence data;
+3. target-free selection of a primitive nef rootless `U'` and an exact
+   characteristic-zero endpoint equation;
+4. seventeen displayed independent sections that generate the saturated
+   Mordell--Weil lattice over `QQ(t)`, with torsion excluded;
+5. a smooth geometrically integral carrier `C/QQ` of genus one, or another
+   explicitly justified low genus, a nonconstant map `C -> P1`, and a
+   certified positive-rank Jacobian;
+6. an exact section on the pullback surface that is independent of the
+   invariant MW17 lattice, with its height and character block certified.
 
-The problem closes only when one certificate chain proves:
+If the last section is not saturated, the result remains a rank-lower-bound
+certificate rather than the complete carrier objective.
 
-1. the compiled equation is the same characteristic-zero K3 with the selected
-   geometric Neron--Severi lattice;
-2. the selected fibration has no reducible fibres;
-3. seventeen displayed sections lie in `E(QQ(t))`, are independent, and
-   generate a saturated Shioda lattice of the selected determinant;
-4. torsion is excluded, so the arithmetic Mordell--Weil group is `ZZ^17`;
-5. the planner transcript proves target-free selection occurred before
-   endpoint construction and comparison.
+## Prescribed integral V4 target
 
-A finite-field marked point, finite-precision or purely formal lift, abstract
-frame Gram, preselected target, unsaturated section subgroup, or endpoint
-equation without the rational rank-19 source marking does not close the
-problem.
+For the stretch target, begin with the group action rather than with a list
+of unrelated quadratic covers. Specify a connected `V4` cover of the base
+and four rational representation blocks
+
+```text
+M_1 of rank 17,
+M_chi1, M_chi2, M_chi3 each of rank 1.
+```
+
+The construction data must also prescribe every allowed half-sum across the
+four blocks. Exact local discriminant forms and isotropic graph subgroups at
+`2` must determine an integral even `V4`-stable overlattice before equation
+search. A completion certificate must then display one section in each
+nontrivial character, prove independence and the full height pairing, prove
+the claimed graph glue and saturation, and exclude torsion. Those assertions
+give generic rank 20 over the `V4` carrier.
+
+The current alternate-Q80 laboratory is a control, not this completion. It
+has two nontrivial rational characters, two exact half-sum glues of total
+index four, 64 rational genus-one `V4` bases, and seventeen base Jacobians of
+rank one. Complete zero-Tate-class product inversion and bounded deeper
+searches do not produce the third section. The nonzero product class, its
+section, and full `V4` lattice saturation remain `UNKNOWN`. The relevant
+boundaries are recorded in
+[`INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md`](INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md),
+[`R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md`](R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md), and
+[`R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.md`](R17_RATIONAL_V4_DEEP_TRACE_EXHAUSTION_2026-09-04.md).
+
+## Fail-closed boundaries
+
+- A coarse Clifford curve is not a full marked curve.
+- A rational point without a non-CM check and saturated rational marking is
+  not an arithmetic source.
+- A finite-field point, finite-precision lift, or formal local branch is not
+  a rational marking.
+- A rootless frame is not inspected merely because its lattice score is
+  attractive; its `T` row must pass first.
+- A supplied target, an unsaturated section subgroup, or a carrier with only
+  a heuristic rank does not close the objective.
+- Two quadratic characters do not imply a third product-character section.
+
+## Replay
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_golay_det720_qq_marking_obstruction.sage --check
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
+python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
+python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
+```
 
 ## Canonical supporting records
 
-- [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
-  — theorem excluding determinant `950` over `QQ`.
-- [`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
-  — split-Clifford/fibre-product theorem excluding determinant `1184` over
-  `QQ`.
+- [`GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
+  — exact stable curve and determinant-720 exclusion.
 - [`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md)
-  — batch classifier, marking-level proof boundary, and empty fail-closed
-  different-NS equation handoff.
-- [`LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md`](LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md)
-  and [`NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md`](NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md)
-  — retained NS0031 finite-field, finite-lift, and formal-local controls.
-- [`SAME_NS_COMPILER_ROUTES_2026-09-02.md`](SAME_NS_COMPILER_ROUTES_2026-09-02.md)
-  — exact determinant-720 and NS0031 physical control corridors.
-- [`GOLAY_OCTAD_LATTICE_DESIGN_2026-09-01.md`](GOLAY_OCTAD_LATTICE_DESIGN_2026-09-01.md)
-  — exact determinant-720 lattice and the saturation rejection of the known
-  rational `3A5` point.
+  — marking decisions and empty equation-agent handoff.
+- [`DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md`](DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md)
+  — retained rootless-subcatalogue accounting after arithmetic rejection.
+- [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
+  and [`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
+  — the other exact rational-marking exclusions.
 - [`MARKED_U_REALIZATION_PLANNER_2026-09-03.md`](MARKED_U_REALIZATION_PLANNER_2026-09-03.md)
   and [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md)
-  — planner and compiler contracts.
+  — downstream planner and compiler contracts, used only after arithmetic
+  admission.

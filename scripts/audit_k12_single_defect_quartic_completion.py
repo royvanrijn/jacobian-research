@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import itertools
 import json
@@ -104,6 +105,9 @@ def audit_family(
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--write", action="store_true")
+    args = parser.parse_args()
     z, k12 = build_k12()
     # (zero-based source pivot, zero-based retained bad component).
     specifications = [(6, 2), (8, 1), (9, 2), (10, 0), (11, 0)]
@@ -145,14 +149,21 @@ def main() -> None:
             "coordinates, or ordered multi-stage automorphisms."
         ),
     }
-    OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n")
-    digest = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    serialized = json.dumps(artifact, indent=2) + "\n"
+    if args.write:
+        OUTPUT.write_text(serialized)
+    else:
+        assert OUTPUT.exists(), f"missing {OUTPUT.relative_to(ROOT)}"
+        assert OUTPUT.read_text() == serialized, (
+            f"{OUTPUT.relative_to(ROOT)} is stale; regenerate with --write"
+        )
+    digest = hashlib.sha256(serialized.encode()).hexdigest()
     for record in records:
         print(
             "PASS quartic completion: "
             f"pivot z{record['source_pivot']}, 990 constant-minor columns"
         )
-    print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
+    print(f"PASS checked {OUTPUT.relative_to(ROOT)}")
     print(f"SHA256 {digest}")
 
 

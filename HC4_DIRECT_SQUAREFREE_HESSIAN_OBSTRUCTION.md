@@ -35,6 +35,23 @@ A_0=\operatorname{Hess}f,
 This is an all-degree obstruction and uses no auxiliary constant-Hessian
 pencil.
 
+The checker replays only the first two block-determinant identities used
+below; the universal step is the written squarefree-divisibility and degree
+argument in Sections 2--4.  Replay those identities and regenerate the
+committed artifact with
+
+```bash
+.venv/bin/python scripts/verify_hc4_direct_homogeneous_filtration.py
+```
+
+For cleanup-only validation of the existing artifact, without symbolic
+replay or rewriting it, use
+
+```bash
+.venv/bin/python scripts/verify_hc4_direct_homogeneous_filtration.py \
+  --audit-existing-only
+```
+
 ---
 
 ## 1. The scaled matrix polynomial

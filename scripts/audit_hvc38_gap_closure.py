@@ -19,6 +19,7 @@ minimality results.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import itertools
 import json
@@ -754,6 +755,9 @@ def coordinated_left_right_audit() -> dict[str, object]:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--write", action="store_true")
+    args = parser.parse_args()
     pivots = nonlinear_pivot_audits()
     left_right = coordinated_left_right_audit()
     artifact = {
@@ -777,8 +781,15 @@ def main() -> None:
             "realizations, or non-doubling symmetric lifts."
         ),
     }
-    OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n")
-    digest = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    serialized = json.dumps(artifact, indent=2) + "\n"
+    if args.write:
+        OUTPUT.write_text(serialized)
+    else:
+        assert OUTPUT.exists(), f"missing {OUTPUT.relative_to(ROOT)}"
+        assert OUTPUT.read_text() == serialized, (
+            f"{OUTPUT.relative_to(ROOT)} is stale; regenerate with --write"
+        )
+    digest = hashlib.sha256(serialized.encode()).hexdigest()
     print(
         "PASS HVC38 pivots: public d and local z8 are obstructed "
         "through target degree 8"
@@ -791,7 +802,7 @@ def main() -> None:
         "PASS HVC38 left-right: combined degree-three/rank-drop "
         "Groebner basis is [1]"
     )
-    print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
+    print(f"PASS checked {OUTPUT.relative_to(ROOT)}")
     print(f"SHA256 {digest}")
 
 

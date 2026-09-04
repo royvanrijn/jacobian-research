@@ -27,12 +27,10 @@ ring.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from pathlib import Path
-
-import sympy as sp
-
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = (
@@ -41,6 +39,41 @@ OUTPUT = (
     / "generated-results"
     / "hc4_affine_pivot_coverage_gate.json"
 )
+EXPECTED_OUTPUT_SHA256 = (
+    "596cca4bd6a3202f7edaf7fd081150691a1d6038352c52172178e60cacf5badb"
+)
+
+
+def audit_existing() -> None:
+    actual = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    assert actual == EXPECTED_OUTPUT_SHA256, (actual, EXPECTED_OUTPUT_SHA256)
+    payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    assert payload["status"]["id"] == "HC4RSD6"
+    assert payload["diagonal_top_classification"]["affine_coverage_gate"] == (
+        "alpha*beta*gamma=0"
+    )
+    assert payload["open_frontier"].startswith(
+        "classify the constant-span-deficient Schur vectors"
+    )
+    print(
+        "PASS: committed HC4RSD6 coverage artifact is intact; its frontier "
+        "remains only for representation classification because HC4RSD7 "
+        "bypasses it for inherited collision transfer; no symbolic replay or rewrite"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help="validate the committed artifact without symbolic replay or rewriting it",
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
+import sympy as sp
 
 
 def symmetric_matrix(prefix: str, size: int) -> sp.Matrix:

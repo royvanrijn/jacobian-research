@@ -263,9 +263,14 @@ cotangent-saturation theorem, not another finite coordinate sweep.
 The same gauge proof has an exact boundary.  For the six singular
 squarefree symbols, \(K/\operatorname{im}G_h\) has positive-dimensional
 support and nonzero quartic part, so formal reduction to the central fiber
-is unavailable.  The verified singular coordinate planes and the
-full-support plane remain saturated, but the six full 24-parameter
-singular families are still open.
+is unavailable.  That failure of the smooth proof is not a remaining
+saturation problem: `KDSQ6` treats each complete quartic nongauge
+complement, and `SSADPALL` puts every compatible higher tail into its
+minimal multi-coefficient formal normal form and proves that the cotangent
+presentation stays saturated while the intrinsic different remains
+six-generated.  What remains open is normality/algebraization and
+compatibility with a distinguished Keller open, together with the separate
+boundary-geometric step that would force the different to be Cartier.
 
 For a smooth homogeneous symbol, the obstruction can also be made global.
 The corresponding graded algebra is a normal integral threefold.  Its
@@ -304,14 +309,18 @@ classical Buchsbaum--Rim multiplicity.
 
 The remaining continuation gates are:
 
-1. prove cotangent saturation for the six singular-squarefree universal
-   24-parameter families, or exhibit a torsion class on one of them; the
-   smooth universal family is closed by the formal-gauge certificate;
-2. test normal nonhomogeneous lifts, where the homogeneous elliptic
-   class-group obstruction need not algebraize;
-3. if a lift ever satisfies \(C=T\), test rationality, finite boundary
-   generation of its class group, and the actual \(\mathbb A^3\) Keller
-   open before treating it as compatible.
+1. derive from boundary-minimal Keller geometry either the support-hull and
+   conormal equalities \(C=T\) and \(Q=T\tau\), or a Cartier-different
+   theorem strong enough to invoke the six-generator obstruction; `KDCD3`
+   shows that Cartierness closes the support hull only with the still-unproved
+   local-CM input;
+2. analyze the double-line, triple-line, and zero leading-symbol rows, which
+   remain behind the independent generic-etaleness and Keller-compatibility
+   gates after `SSADPALL` excludes every squarefree row under a Cartier
+   boundary theorem;
+3. only after a local model survives, prove normality, algebraize the formal
+   gauge, construct the actual \(\mathbb A^3\) Keller open, and then address
+   the remaining coefficient/base-change rigidity.
 
 ### Certificate P -- no phantom boundary (closed for boundary-minimal cubics)
 

@@ -5,7 +5,9 @@ The exact six-class sweep deliberately stores only the arithmetic recognition
 data.  This companion snapshot retains the smallest public-database projection
 needed for quotient and local-arithmetic replays.  Point lists are truncated to
 the rank lower bound pinned by the sweep, so later additions to the live ICARM
-record cannot silently change this input.
+record cannot silently change this input.  The default check revalidates the
+committed projection and its fixed digest offline; ``--live-source`` is the
+explicit refresh/drift-audit path.
 """
 
 from __future__ import annotations
@@ -22,6 +24,9 @@ ROOT = Path(__file__).resolve().parents[2]
 SWEEP = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-database-sweep-v1.json"
 OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json"
 ENDPOINT = "https://elliptic-rank.icarm.cloud/database.json"
+EXPECTED_PROJECTION_SHA256 = (
+    "7b1e89c01812a04fd8bf8d6683e622e65487e54e08616f1e1e6f2e936649f7b2"
+)
 
 
 def digest(path: Path) -> str:
@@ -37,16 +42,41 @@ def canonical_sha256(value: object) -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
-def build() -> dict[str, object]:
+def build(
+    *,
+    live_source: bool = False,
+    database_path: Path | None = None,
+    stored_projection: Path = OUTPUT,
+) -> dict[str, object]:
     sweep = json.loads(SWEEP.read_text())
     hits = sweep["rational_j_hits_and_twists"]
     pinned = {int(record["curve_id"]): record for record in hits}
     if len(pinned) != 69:
         raise ArithmeticError("the exact sweep no longer contains 69 distinct hits")
 
-    with urlopen(ENDPOINT, timeout=60) as response:
-        database = json.load(response)
-    live = {int(record["id"]): record for record in database["curves"]}
+    if database_path is not None:
+        database = json.loads(database_path.read_text())
+        source_records = database["curves"]
+        offline = False
+    elif live_source:
+        with urlopen(ENDPOINT, timeout=60) as response:
+            database = json.load(response)
+        source_records = database["curves"]
+        offline = False
+    else:
+        if not stored_projection.is_file():
+            raise ArithmeticError(
+                "offline replay requires the stored projection; use --database "
+                "or --live-source only to reconstruct it"
+            )
+        stored = json.loads(stored_projection.read_text())
+        if stored.get("schema") != "elkies-k3.r17-norm12-icarm-public-fibres.v1":
+            raise ArithmeticError("stored public-fibre projection has an unknown schema")
+        source_records = stored.get("records")
+        if not isinstance(source_records, list):
+            raise ArithmeticError("stored public-fibre projection is malformed")
+        offline = True
+    live = {int(record["id"]): record for record in source_records}
 
     records: list[dict[str, object]] = []
     for curve_id in sorted(pinned):
@@ -55,7 +85,15 @@ def build() -> dict[str, object]:
         if record is None:
             raise ArithmeticError(f"ICARM curve {curve_id} disappeared")
         rank = int(hit["snapshot_rank_lower_bound"])
-        if int(record["rank_lower_bound"]) < rank or len(record["points"]) < rank:
+        if offline:
+            if (
+                int(record["snapshot_rank_lower_bound"]) != rank
+                or len(record["points"]) != rank
+            ):
+                raise ArithmeticError(
+                    f"stored ICARM curve {curve_id} has the wrong pinned point prefix"
+                )
+        elif int(record["rank_lower_bound"]) < rank or len(record["points"]) < rank:
             raise ArithmeticError(f"ICARM curve {curve_id} lost pinned point data")
         records.append(
             {
@@ -94,8 +132,7 @@ def build() -> dict[str, object]:
     projection_sha256 = canonical_sha256(source_projection)
     # This digest pins the 2026-09-04 projection used by the audit.  A mismatch
     # is a source-data change, not something the replay may accept implicitly.
-    expected = "7b1e89c01812a04fd8bf8d6683e622e65487e54e08616f1e1e6f2e936649f7b2"
-    if projection_sha256 != expected:
+    if projection_sha256 != EXPECTED_PROJECTION_SHA256:
         raise ArithmeticError(
             "the recognized public-fibre projection changed: " + projection_sha256
         )
@@ -139,9 +176,25 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--database", type=Path)
+    parser.add_argument(
+        "--live-source",
+        action="store_true",
+        help="refresh or audit against the current mutable public endpoint",
+    )
     args = parser.parse_args()
+    if args.database is not None and args.live_source:
+        parser.error("--database and --live-source are mutually exclusive")
     output = args.output.resolve()
-    payload = json.dumps(build(), indent=2, sort_keys=True) + "\n"
+    payload = json.dumps(
+        build(
+            live_source=args.live_source,
+            database_path=args.database.resolve() if args.database else None,
+            stored_projection=output,
+        ),
+        indent=2,
+        sort_keys=True,
+    ) + "\n"
     if args.check:
         if not output.exists() or output.read_text() != payload:
             raise ArithmeticError("stored public-fibre projection differs from replay")

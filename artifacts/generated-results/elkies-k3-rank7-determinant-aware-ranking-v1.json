@@ -1,18 +1,30 @@
 {
   "accounting": {
-    "arithmetic_candidates_after_marking_rejections": 64,
-    "arithmetic_marking_rejected_before_scoring": 2,
+    "arithmetic_candidates_after_marking_rejections": 63,
+    "arithmetic_marking_rejected_before_scoring": 3,
     "catalogue_surfaces": 827,
     "determinant_regimes": {
       "ABOVE_BAND_SHORT_VECTOR_QUALITY_EXCEPTION": 2,
       "ABOVE_BAND_SPARSE_PRESSURE": 51,
-      "OBSERVED_DENSE_ROOTLESS_SWEET_SPOT": 11
+      "OBSERVED_DENSE_ROOTLESS_SWEET_SPOT": 10
     },
     "expensive_equation_scoring_eligible": 1,
     "theory_feasible_with_explicit_rootless_mw17_witness": 66,
     "theory_rejected_before_scoring": 761
   },
   "arithmetic_marking_rejections": [
+    {
+      "determinant": 720,
+      "evidence": [
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+        "artifacts/generated-results/elkies-k3-golay-det720-qq-marking-obstruction-v1.json",
+        "elkies-k3/GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md"
+      ],
+      "legacy_ns_ids": [],
+      "reason": "A proved obstruction to a full QQ-rational rank-19 Neron--Severi marking excludes the required saturated arithmetic MW17 endpoint.",
+      "status": "ARITHMETICALLY_EXCLUDED",
+      "surface_id": "K3-f43753fb154e3406"
+    },
     {
       "determinant": 950,
       "evidence": [
@@ -172,120 +184,8 @@
     },
     {
       "arithmetic_marking_classification": "UNKNOWN",
-      "determinant": 720,
-      "determinant_aware_rank": 2,
-      "determinant_coordinates": {
-        "blichfeldt_lower_boundary_integer": 29,
-        "first_imported_rootless_determinant": 500,
-        "published_r17_reference_determinant": 948,
-        "ratio_to_blichfeldt_boundary": 24.82758620689655,
-        "raw_determinant_is_not_a_minimization_objective": true
-      },
-      "determinant_regime": {
-        "label": "OBSERVED_DENSE_ROOTLESS_SWEET_SPOT",
-        "tier": 1
-      },
-      "easiest_known_source": {
-        "mw_rank": 17,
-        "reducible_fibre_support_count": 0,
-        "root_type": "0",
-        "status": "PASS_EXACT_CATALOGUE_FRAME_ONLY_SOURCE"
-      },
-      "expensive_equation_scoring_eligible": false,
-      "hard_theoretical_filters": {
-        "discriminant_form_length": {
-          "length": 3,
-          "maximum": 3,
-          "pass": true,
-          "status": "PASS_K3_RANK_THREE_COMPLEMENT_LENGTH_BOUND"
-        },
-        "even_rank17_required_discriminant_form": {
-          "pass": true,
-          "status": "PASS_EXACT_EVEN_ROOTLESS_RANK17_CATALOGUE_WITNESS",
-          "witnesses": [
-            {
-              "determinant": 720,
-              "even": true,
-              "frame_id": "K3-f43753fb154e3406-F001",
-              "gram_sha256": "64566dfb8991c8802050cec44ac279c2dd34d7ca6e2e49e3752ca05e5ba9b02e",
-              "minimum_squared_norm": 4,
-              "norm_four_unoriented_pairs": 1532,
-              "rank": 17,
-              "rootless": true
-            }
-          ]
-        },
-        "hermite_blichfeldt_feasibility": {
-          "determinant": 720,
-          "minimum_integer_determinant": 29,
-          "pass": true,
-          "status": "PASS_NECESSARY_BLICHFELDT_BOUND"
-        },
-        "rootless_mw17_frame": {
-          "pass": true,
-          "status": "PASS_EXACT_ROOTLESS_MW17_FRAME_WITNESS"
-        }
-      },
-      "legacy_ns_ids": [],
-      "priority_key": [
-        1,
-        1,
-        4,
-        2,
-        1,
-        1,
-        0,
-        -1532,
-        17,
-        0
-      ],
-      "rank_jump_mechanism_coordinate": {
-        "evidence": [],
-        "raw_multisection_counts_used": false,
-        "status": "UNKNOWN_NO_ARITHMETIC_RANK_JUMP_MECHANISM_CERTIFICATE",
-        "tier": 3
-      },
-      "readiness_filters": {
-        "arithmetic_field_of_definition": {
-          "evidence": [
-            "artifacts/generated-results/elkies-k3-golay-det720-3a5-formal-smoothness-v1.json"
-          ],
-          "status": "OPEN_QQ_FIELD_OF_DEFINITION_LOCAL_Z7_EVIDENCE_ONLY",
-          "tier": 2
-        },
-        "compiler_corridor": {
-          "evidence": [
-            "artifacts/generated-results/elkies-k3-golay-det720-3a5-to-mw17-physical-corridor-v1.json"
-          ],
-          "status": "PASS_EXACT_MARKING_LEVEL_PHYSICAL_CORRIDOR",
-          "tier": 1
-        },
-        "source_equation_precursor": {
-          "evidence": [
-            "artifacts/generated-results/elkies-k3-golay-det720-3a5-formal-smoothness-v1.json"
-          ],
-          "status": "PASS_ONE_PARAMETER_FORMAL_Z7_MARKED_FAMILY_PRECURSOR",
-          "tier": 1
-        }
-      },
-      "readiness_missing_gate_count": 1,
-      "readiness_strict_passes": {
-        "arithmetic_field_of_definition": false,
-        "compiler_corridor": true,
-        "source_equation_precursor": true
-      },
-      "rootless_short_vector_quality": {
-        "best_norm_four_unoriented_pairs": 1532,
-        "boundary": "This is an exact lattice-density coordinate, not a rank-jump mechanism score.",
-        "passes_published_r17_short_vector_benchmark": true,
-        "published_r17_benchmark": 1311
-      },
-      "surface_id": "K3-f43753fb154e3406"
-    },
-    {
-      "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 500,
-      "determinant_aware_rank": 3,
+      "determinant_aware_rank": 2,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -392,7 +292,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 750,
-      "determinant_aware_rank": 4,
+      "determinant_aware_rank": 3,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -499,7 +399,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 864,
-      "determinant_aware_rank": 5,
+      "determinant_aware_rank": 4,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -606,7 +506,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 576,
-      "determinant_aware_rank": 6,
+      "determinant_aware_rank": 5,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -713,7 +613,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 704,
-      "determinant_aware_rank": 7,
+      "determinant_aware_rank": 6,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -820,7 +720,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 768,
-      "determinant_aware_rank": 8,
+      "determinant_aware_rank": 7,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -927,7 +827,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 792,
-      "determinant_aware_rank": 9,
+      "determinant_aware_rank": 8,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -1034,7 +934,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 864,
-      "determinant_aware_rank": 10,
+      "determinant_aware_rank": 9,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -1141,7 +1041,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 896,
-      "determinant_aware_rank": 11,
+      "determinant_aware_rank": 10,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -1248,7 +1148,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1500,
-      "determinant_aware_rank": 12,
+      "determinant_aware_rank": 11,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -1355,7 +1255,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 960,
-      "determinant_aware_rank": 13,
+      "determinant_aware_rank": 12,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -1462,7 +1362,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1018,
-      "determinant_aware_rank": 14,
+      "determinant_aware_rank": 13,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -1581,7 +1481,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1174,
-      "determinant_aware_rank": 15,
+      "determinant_aware_rank": 14,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -1720,7 +1620,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1296,
-      "determinant_aware_rank": 16,
+      "determinant_aware_rank": 15,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -1827,7 +1727,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1238,
-      "determinant_aware_rank": 17,
+      "determinant_aware_rank": 16,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -1966,7 +1866,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1382,
-      "determinant_aware_rank": 18,
+      "determinant_aware_rank": 17,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -2145,7 +2045,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1574,
-      "determinant_aware_rank": 19,
+      "determinant_aware_rank": 18,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -2254,7 +2154,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1538,
-      "determinant_aware_rank": 20,
+      "determinant_aware_rank": 19,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -2373,7 +2273,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1728,
-      "determinant_aware_rank": 21,
+      "determinant_aware_rank": 20,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -2480,7 +2380,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 992,
-      "determinant_aware_rank": 22,
+      "determinant_aware_rank": 21,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -2589,7 +2489,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1068,
-      "determinant_aware_rank": 23,
+      "determinant_aware_rank": 22,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -2696,7 +2596,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1028,
-      "determinant_aware_rank": 24,
+      "determinant_aware_rank": 23,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -2815,7 +2715,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1056,
-      "determinant_aware_rank": 25,
+      "determinant_aware_rank": 24,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -2934,7 +2834,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1078,
-      "determinant_aware_rank": 26,
+      "determinant_aware_rank": 25,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -3053,7 +2953,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1088,
-      "determinant_aware_rank": 27,
+      "determinant_aware_rank": 26,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -3162,7 +3062,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1122,
-      "determinant_aware_rank": 28,
+      "determinant_aware_rank": 27,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -3269,7 +3169,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1124,
-      "determinant_aware_rank": 29,
+      "determinant_aware_rank": 28,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -3428,7 +3328,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1170,
-      "determinant_aware_rank": 30,
+      "determinant_aware_rank": 29,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -3535,7 +3435,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1132,
-      "determinant_aware_rank": 31,
+      "determinant_aware_rank": 30,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -3644,7 +3544,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1140,
-      "determinant_aware_rank": 32,
+      "determinant_aware_rank": 31,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -3773,7 +3673,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1210,
-      "determinant_aware_rank": 33,
+      "determinant_aware_rank": 32,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -3932,7 +3832,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1200,
-      "determinant_aware_rank": 34,
+      "determinant_aware_rank": 33,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -4051,7 +3951,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1220,
-      "determinant_aware_rank": 35,
+      "determinant_aware_rank": 34,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -4190,7 +4090,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1376,
-      "determinant_aware_rank": 36,
+      "determinant_aware_rank": 35,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -4297,7 +4197,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1236,
-      "determinant_aware_rank": 37,
+      "determinant_aware_rank": 36,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -4426,7 +4326,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1440,
-      "determinant_aware_rank": 38,
+      "determinant_aware_rank": 37,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -4533,7 +4433,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1260,
-      "determinant_aware_rank": 39,
+      "determinant_aware_rank": 38,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -4702,7 +4602,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1280,
-      "determinant_aware_rank": 40,
+      "determinant_aware_rank": 39,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -4881,7 +4781,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1316,
-      "determinant_aware_rank": 41,
+      "determinant_aware_rank": 40,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -4990,7 +4890,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1314,
-      "determinant_aware_rank": 42,
+      "determinant_aware_rank": 41,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -5119,7 +5019,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1338,
-      "determinant_aware_rank": 43,
+      "determinant_aware_rank": 42,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -5226,7 +5126,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1312,
-      "determinant_aware_rank": 44,
+      "determinant_aware_rank": 43,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -5445,7 +5345,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1472,
-      "determinant_aware_rank": 45,
+      "determinant_aware_rank": 44,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -5552,7 +5452,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1332,
-      "determinant_aware_rank": 46,
+      "determinant_aware_rank": 45,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -5691,7 +5591,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1356,
-      "determinant_aware_rank": 47,
+      "determinant_aware_rank": 46,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -5900,7 +5800,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1376,
-      "determinant_aware_rank": 48,
+      "determinant_aware_rank": 47,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -6009,7 +5909,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1420,
-      "determinant_aware_rank": 49,
+      "determinant_aware_rank": 48,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -6118,7 +6018,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1392,
-      "determinant_aware_rank": 50,
+      "determinant_aware_rank": 49,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -6257,7 +6157,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 2144,
-      "determinant_aware_rank": 51,
+      "determinant_aware_rank": 50,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -6364,7 +6264,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1442,
-      "determinant_aware_rank": 52,
+      "determinant_aware_rank": 51,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -6543,7 +6443,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1494,
-      "determinant_aware_rank": 53,
+      "determinant_aware_rank": 52,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -6702,7 +6602,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1722,
-      "determinant_aware_rank": 54,
+      "determinant_aware_rank": 53,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -6809,7 +6709,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1752,
-      "determinant_aware_rank": 55,
+      "determinant_aware_rank": 54,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -6916,7 +6816,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1848,
-      "determinant_aware_rank": 56,
+      "determinant_aware_rank": 55,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -7023,7 +6923,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 1872,
-      "determinant_aware_rank": 57,
+      "determinant_aware_rank": 56,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -7130,7 +7030,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 2080,
-      "determinant_aware_rank": 58,
+      "determinant_aware_rank": 57,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -7237,7 +7137,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 2208,
-      "determinant_aware_rank": 59,
+      "determinant_aware_rank": 58,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -7344,7 +7244,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 2240,
-      "determinant_aware_rank": 60,
+      "determinant_aware_rank": 59,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -7451,7 +7351,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 2184,
-      "determinant_aware_rank": 61,
+      "determinant_aware_rank": 60,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -7558,7 +7458,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 2244,
-      "determinant_aware_rank": 62,
+      "determinant_aware_rank": 61,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -7665,7 +7565,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 2560,
-      "determinant_aware_rank": 63,
+      "determinant_aware_rank": 62,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -7772,7 +7672,7 @@
     {
       "arithmetic_marking_classification": "UNKNOWN",
       "determinant": 3072,
-      "determinant_aware_rank": 64,
+      "determinant_aware_rank": 63,
       "determinant_coordinates": {
         "blichfeldt_lower_boundary_integer": 29,
         "first_imported_rootless_determinant": 500,
@@ -7894,20 +7794,12 @@
     "K3-8188cdcda8c57b2d"
   ],
   "inputs": {
-    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "5c61d8ceebc3d8e2602b60a459ff205d7f258787c729ec2361f571a90d3b785d",
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "dc9b0e2513d7517ff0439b31e238e2db94047ca05cb89772a43f83344d888123",
     "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json": "e13c9fa26b733c9e894d4a34900de469ad7dc2df63528f8c4dd816c47c9d18c8",
     "artifacts/generated-results/elkies-k3-rank7-surface-pareto-v1.json": "a8c418e80683535a44b67b494ce6c4d516c898d3be57a0b014dceb508ebf1c61",
-    "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json": "5784230a843649a18acf5b7046a440e90ac1d7467197f06416629a334ca815e7"
+    "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json": "e388b890db5f26df2b4e016d144fcfe3d1edc351a9cf85f98fdebb098c03c3fc"
   },
   "next_readiness_gate_queue": [
-    {
-      "determinant": 720,
-      "determinant_regime": "OBSERVED_DENSE_ROOTLESS_SWEET_SPOT",
-      "missing_gates": [
-        "arithmetic_field_of_definition"
-      ],
-      "surface_id": "K3-f43753fb154e3406"
-    },
     {
       "determinant": 500,
       "determinant_regime": "OBSERVED_DENSE_ROOTLESS_SWEET_SPOT",
@@ -8556,7 +8448,6 @@
   },
   "rank_jump_mechanism_priority_order": [
     "K3-8188cdcda8c57b2d",
-    "K3-f43753fb154e3406",
     "K3-04b86146cc6b284b",
     "K3-10a14a46c14b3150",
     "K3-3425921cd7db891f",

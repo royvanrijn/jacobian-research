@@ -16,25 +16,67 @@ coefficient, and affine-line frame identities.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from pathlib import Path
-import sys
-
-import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
-
-from jcsearch.reverse_schur_descent import kernel_line_piola_residuals
-
-
 OUTPUT = (
     ROOT
     / "artifacts"
     / "generated-results"
     / "hc4_two_component_quasitranslation_kernels.json"
 )
+HELPER = ROOT / "jcsearch" / "reverse_schur_descent.py"
+EXPECTED_OUTPUT_SHA256 = (
+    "3a2d00fba37d7d4681cf196a6a7a701245db034f210f29e3b4e578b998e5a1e4"
+)
+EXPECTED_HELPER_SHA256 = (
+    "b80da9da8105caa51fa38fc178a3a256d9132335a91bb5a87bb84eab96cf3e44"
+)
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def audit_existing() -> None:
+    assert sha256(OUTPUT) == EXPECTED_OUTPUT_SHA256
+    assert sha256(HELPER) == EXPECTED_HELPER_SHA256
+    payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    assert payload["format"] == "hc4-two-component-quasitranslation-kernels-v1"
+    assert payload["status"]["id"] == "HC4RSD5"
+    assert payload["result"] == "HC4RSD4 gives a triangular polynomial inverse"
+    assert payload["open_frontier"] == (
+        "fixed kernels with three or four active components, and "
+        "parameter-moving nonlinear kernels"
+    )
+    print(
+        "PASS: committed HC4RSD5 artifact and equation helper are intact; "
+        "fixed three/four-component and parameter-moving nonlinear kernels "
+        "remain the exact singular-pencil boundary; no symbolic replay or rewrite"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help="validate committed inputs without symbolic replay or artifact rewriting",
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
+import sys
+
+import sympy as sp
+
+sys.path.insert(0, str(ROOT))
+
+from jcsearch.reverse_schur_descent import kernel_line_piola_residuals
 
 
 def assert_zero_vector(vector: sp.Matrix) -> None:

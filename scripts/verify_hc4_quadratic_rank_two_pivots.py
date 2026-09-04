@@ -11,12 +11,10 @@ polynomial inverse.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from pathlib import Path
-
-import sympy as sp
-
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = (
@@ -25,6 +23,39 @@ OUTPUT = (
     / "generated-results"
     / "hc4_quadratic_rank_two_pivots.json"
 )
+EXPECTED_OUTPUT_SHA256 = (
+    "cf1dd291f1a113adf2f2774e81abb7f14cc60cb739ca251e65d02dbc6bcad564"
+)
+
+
+def audit_existing() -> None:
+    actual = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    assert actual == EXPECTED_OUTPUT_SHA256, (actual, EXPECTED_OUTPUT_SHA256)
+    payload = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    assert payload["status"]["id"] == "HC4RSD9"
+    assert payload["result"] == (
+        "every rank-two quadratic-pivot descendant is injective"
+    )
+    assert payload["open_frontier"] == "rank-one quadratic pivots"
+    print(
+        "PASS: committed HC4RSD9 stage artifact is intact; its rank-one "
+        "frontier is historical and closed by HC4RSD10; no symbolic replay "
+        "or rewrite"
+    )
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--audit-existing-only",
+    action="store_true",
+    help="validate the committed stage artifact without symbolic replay or rewriting it",
+)
+arguments = parser.parse_args()
+if arguments.audit_existing_only:
+    audit_existing()
+    raise SystemExit(0)
+
+import sympy as sp
 
 
 # Universal active/passive block faces in the hyperbolic normalization

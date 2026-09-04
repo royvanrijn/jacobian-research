@@ -265,7 +265,7 @@ divisibility by \(x^8\) forces the same vanishing (the last step uses
 
 All four constant-kernel rows are empty.
 
-## 5. Conclusion and next packet
+## 5. Conclusion and historical next packet
 
 Sections 2--4 eliminate all ten rows for both multiplicities.
 
@@ -296,9 +296,11 @@ after normalizing a distinct residual line to \(z=0\). The first is exactly
 the nonsquarefree-cofactor septuple line left outside `HC4NHM2`. In all three,
 the denominator has support on both repeated lines, so the residue degree on
 either normalization is global rather than determined by one local pole;
-that two-component compatibility is the next finite gate. The first incidence
+that two-component compatibility was the next finite gate. The first incidence
 type is classified explicitly in
 [`HC4_TWO_LINE_QUARTIC_DENOMINATOR_PACKET.md`](HC4_TWO_LINE_QUARTIC_DENOMINATOR_PACKET.md).
-The partitions
-\(2+2\), \(2+1+1\), \(1+1+1+1\), positive-defect packets, and lower-Smith
-components remain separate.
+`HC4NHM5--6` subsequently close every `3+1` incidence, `HC4NHM7--8` close
+the `2+2` and `2+1+1` partitions, and `HC4NHM9--12` close the squarefree
+partition. Thus the split-linear clean denominator branch is closed. Clean
+nonlinear components, positive-defect packets, and lower-Smith components
+remain separate.

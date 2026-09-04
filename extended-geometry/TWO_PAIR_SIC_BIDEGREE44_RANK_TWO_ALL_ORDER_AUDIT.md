@@ -564,6 +564,30 @@ PYTHONPATH=scripts .venv/bin/python \
   scripts/verify_two_pair_sic_bidegree44_rank_two_double_shear_real_prefix.py
 ```
 
+To check only the exact keys and stored theorem records, without invoking
+`msolve`, run
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_two_row_channel.py \
+  --audit-existing-only
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_two_row_boundaries.py \
+  --audit-existing-only
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_two_row_off_diagonal.py \
+  --audit-existing-only
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_two_row_off_diagonal_boundaries.py \
+  --audit-existing-only
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_rank_two_single_shear.py \
+  --audit-existing-only
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_rank_two_double_shear_real_prefix.py \
+  --audit-census-only
+```
+
 The dependency-free checker verifies the factor identity (2.3), the
 beta/constant-term identity (2.4) through order four at the displayed
 exact rank-two chart point, the four nonzero values in (1.1), and the

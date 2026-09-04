@@ -772,7 +772,7 @@ The evidence must be kept at its proved strength.
 | pure \(\operatorname{Sym}^2,\operatorname{Sym}^4,\operatorname{Sym}^6\) in \(V_3\) | moments cut out the corresponding binary-form nullcones | exact over \(\mathbb Q\) |
 | \(\operatorname{Sym}^4\oplus\operatorname{Sym}^2\) in \(V_3\), with \(F_2=2cXT\) | moments through order six imply \(c^6=0\) | exact over \(\mathbb Q\) |
 | \(\operatorname{Sym}^6\oplus\operatorname{Sym}^2\) in \(V_3\), with \(F_2=2cXT\) | even moments through order fourteen imply \(c^{25}=0\) | only over \(\mathbb F_{32003}\) |
-| full mixed \(V_3\) | no moment--nullcone equality yet | open |
+| full mixed \(V_3\) | moment--nullcone equality is false by the full-rank semistable Rodrigues survivor; the remaining problem is the complete all-order pure-zero locus and whether every such orbit is SIC-safe | equality falsified; SIC classification open |
 | explicit full-rank point in \(V_4\) | all pure moments vanish but the fixed \(Z\)-mixed moment is \((4m+2)!m!/(2m+1)!!\) | exact all-order counterexample; \(\mathrm{MN}_4\) is false |
 
 The normalized \(c\)-certificates say that the tested branches cannot have

@@ -1,5 +1,7 @@
 # q12/orbit5867 rootless rank-32 Nagao sieve
 
+<!-- status-consumer: EC-CRT-BEAM-NONMONOTONE 5ae7e135da8cc80f -->
+
 This bounded search utility reads the exact short-model coefficients `A(u)`
 and `B(u)` from
 `../artifacts/local/elkies-k3/q12o5867-smooth-rr-qq.json`. It does not read or
@@ -137,6 +139,13 @@ six strongest local symbols at each of the 25 discovery primes. Finite symbols
 impose `a=r*b (mod p)`; an infinity symbol imposes `b=0 (mod p)`. Each mixed
 projective congruence lattice is Gauss-reduced exactly before short basis
 combinations are enumerated and reranked on the 48 heldout primes.
+
+This frontier is intentionally heuristic, not a sieve in the mathematical
+sense.  Partial rational-representative height can decrease after another CRT
+constraint is added; the exact width-one counterexample in
+[`../elliptic-curves/tests/test_crt_lattice.py`](../elliptic-curves/tests/test_crt_lattice.py)
+therefore applies to this pruning pattern as well.  A parameter omitted from
+the finite beam is untested, not excluded.
 
 ```bash
 .venv/bin/python \

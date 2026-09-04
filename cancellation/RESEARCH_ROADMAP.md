@@ -4,9 +4,9 @@ This file no longer maintains an independent roadmap.  The sole continuation
 queue is generated in [`STATUS.md`](../STATUS.md) from
 [`MATH_STATUS.json`](../MATH_STATUS.json).
 
-The primary cancellation continuations are `OP-CR`, `OP-SUSP`, and
-`OP-UG3`.
-The latter is now the
+The primary cancellation continuations are `OP-CR` and `OP-SUSP`.
+`OP-UG3` is retained as a falsified universal gradedness conjecture, with
+`UCUT3` as its exact counterexample.  `OP-SUSP` is the
 [minimal-boundary gateway and classification conjecture](MINIMAL_BOUNDARY_CLASSIFICATION.md),
 with geometric degree three as its first target.  `MBP1` now formalizes
 selected critical boundary, saturated link, boundary monotonicity, ledger
@@ -24,10 +24,11 @@ The second unramified nonproperness divisor is no longer an open cubic
 certificate: the foundational competitor has one irreducible target
 boundary component, so lexicographic boundary minimality forces the same
 for every boundary-minimal cubic.  This does not settle an arbitrary
-ungraded cubic: no reduction preserving torus-freeness from a larger
-boundary ledger to the minimal stratum is known.  The global degree-minimum
-target is therefore tracked separately as `OP-UG3`, and still includes the
-phantom-divisor unit test.
+ungraded cubic: `UCUT3` proves that a larger phantom-boundary ledger can be
+intrinsic and genuinely ungraded.  No universal reduction to the minimal
+stratum is expected.  The surviving `OP-SUSP` target is deliberately limited
+to the boundary-minimal stratum and still includes the phantom-divisor unit
+test there.
 For a reduced minimal point defect, fiber-minimality is now the concrete
 problem of excluding a square-zero length-four collision of the ramified
 and affine sheets; the foundational triple-root collision is instead
@@ -54,6 +55,14 @@ two `Ext` modules.  Proposition 1.16 shows that after the first quotient
 vanishes, the second is just `H_Z^0(Omega_{B/A})`.  Proposition 1.17 turns
 this into the presentation saturation `N:I^infinity=N`, with
 `I=Fitt_3(B)`.
+The formal-tail side must not be reopened as another finite tensor sweep:
+`KDSQ6` and `SSADPALL` already prove cotangent saturation and persistence
+of the six-generated non-Cartier different for every squarefree leading
+cubic symbol and every compatible formal tail.  The live geometric gate is
+to derive the required `S_2`/local-CM or Cartier-different conclusion from
+the boundary-minimal Keller package; the double-line, triple-line, and zero
+symbols remain behind separate generic-etaleness and Keller-compatibility
+tests.
 The tame local structure theorem removes the simple-normal-crossing branch
 locus from these tests: the normalization there is the free sum of a
 quadratic Kummer sheet and a trivial sheet.  Thus the remaining saturation

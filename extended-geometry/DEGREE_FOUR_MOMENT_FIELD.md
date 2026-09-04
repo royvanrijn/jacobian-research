@@ -471,3 +471,25 @@ The exact computations are replayed by
 [`verify_degree_four_single_phase_moment_fields.py`](../scripts/verify_degree_four_single_phase_moment_fields.py),
 and
 [`research_degree_four_phase_one_chart.py`](../scripts/research_degree_four_phase_one_chart.py).
+
+The committed outputs have SHA-256 values:
+
+- `two_pair_counterexample_missing_invariant.json`:
+  `236a927d099e9ac14dad9f36d57d38fd1f8a1e4a11cf0843ce4759474f1d5c34`;
+- `degree_four_tau_even_parameters.json`:
+  `8677dd7457d292d8c0103648397ffdf2803a77914557157823ec4da67e4b4c7c`;
+- `degree_four_moment_field_bounded_relations.json`:
+  `85f61583487da90a5886eac6ce6845ca8c917232f42d6ab75658eacdbdbe6506`;
+- `degree_four_diagonal_moment_field.json`:
+  `fb3854ebb8c7758c94388bae9bc56c967b4fa38e0dc8d7e0cf77ab2c8d872df9`;
+- `degree_four_single_phase_moment_fields.json`:
+  `b6cf6f2fe296f5fb7974c8d3fb5f535952b9c25b3bda040ddafd2c4c8619aadf`;
+- `degree_four_phase_one_chart_modular.json`:
+  `4b9acaa336b8d70b8b1e7581f73b09457566b7df286a2efc363ac06fdb9a74f6`.
+
+To verify those bytes and the stored claim boundaries without importing
+SymPy or launching Singular or `msolve`, run
+
+```bash
+python3 scripts/audit_degree_four_moment_field_artifacts.py
+```

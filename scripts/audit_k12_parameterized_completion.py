@@ -16,6 +16,7 @@ Qbar, hence over Q.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import itertools
 import json
@@ -340,6 +341,9 @@ def audit_family(
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--write", action="store_true")
+    args = parser.parse_args()
     z, k12 = build_k12()
     quadratic_audits = []
     for pivot in range(6, 12):
@@ -393,8 +397,15 @@ def main() -> None:
             "automorphisms. It is not a dimension-eleven lower bound."
         ),
     }
-    OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n")
-    digest = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    serialized = json.dumps(artifact, indent=2) + "\n"
+    if args.write:
+        OUTPUT.write_text(serialized)
+    else:
+        assert OUTPUT.exists(), f"missing {OUTPUT.relative_to(ROOT)}"
+        assert OUTPUT.read_text() == serialized, (
+            f"{OUTPUT.relative_to(ROOT)} is stale; regenerate with --write"
+        )
+    digest = hashlib.sha256(serialized.encode()).hexdigest()
     print(
         "PASS K11: all six quadratic graph families have exact "
         "quadratic-completion cover certificates"
@@ -403,7 +414,7 @@ def main() -> None:
         "PASS K11: all five single-defect families have exact "
         "cubic-completion constant-minor certificates"
     )
-    print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
+    print(f"PASS checked {OUTPUT.relative_to(ROOT)}")
     print(f"SHA256 {digest}")
 
 

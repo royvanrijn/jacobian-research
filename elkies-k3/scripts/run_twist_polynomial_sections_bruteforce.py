@@ -56,10 +56,16 @@ def matrix_rank(rows, prime):
 
 
 def full_shell_tangent_rank(solution, coefficient_a, coefficient_b, prime):
-    """Rank with x_8 and y_12 restored as variables (10 columns)."""
+    """Rank with the leading X and Y coefficients restored as variables."""
 
     X = solution["X_coefficients_low_to_high"]
     Y = solution["Y_coefficients_low_to_high"]
+    x_degree = len(X) - 1
+    y_degree = len(Y) - 1
+    if 2 * y_degree != 3 * x_degree:
+        raise ArithmeticError("incompatible polynomial-section degree bounds")
+    variable_count = x_degree + 2
+    residual_degree_count = 2 * y_degree + 1
     x_square = convolution(X, X, prime)
     derivative_rhs = []
     kernel = [0] * max(len(x_square), len(coefficient_a))
@@ -68,50 +74,50 @@ def full_shell_tangent_rank(solution, coefficient_a, coefficient_b, prime):
             3 * (x_square[index] if index < len(x_square) else 0)
             + (coefficient_a[index] if index < len(coefficient_a) else 0)
         ) % prime
-    for variable in range(9):
+    for variable in range(x_degree + 1):
         derivative_rhs.append([0] * variable + kernel)
-    derivative_rhs.append([0] * 25)
+    derivative_rhs.append([0] * residual_degree_count)
 
-    derivative_y = [[0] * 10 for unused in range(13)]
-    derivative_y[12][9] = 1
-    denominator = 2 * Y[12] % prime
+    derivative_y = [[0] * variable_count for unused in range(y_degree + 1)]
+    derivative_y[y_degree][-1] = 1
+    denominator = 2 * Y[y_degree] % prime
     inverse_denominator = pow(denominator, -1, prime)
-    for degree in range(23, 11, -1):
-        index = degree - 12
+    for degree in range(2 * y_degree - 1, y_degree - 1, -1):
+        index = degree - y_degree
         known = sum(
             Y[left] * Y[degree - left]
-            for left in range(index + 1, 13)
-            if index < degree - left <= 12
+            for left in range(index + 1, y_degree + 1)
+            if index < degree - left <= y_degree
         ) % prime
         # The stored Y already gives the quotient value.  Differentiate its
-        # defining recursion, including the variable denominator 2*y_12.
-        for variable in range(10):
+        # defining recursion, including the variable leading-Y denominator.
+        for variable in range(variable_count):
             derivative_known = sum(
                 derivative_y[left][variable] * Y[degree - left]
                 + Y[left] * derivative_y[degree - left][variable]
-                for left in range(index + 1, 13)
-                if index < degree - left <= 12
+                for left in range(index + 1, y_degree + 1)
+                if index < degree - left <= y_degree
             ) % prime
             rhs_derivative = (
                 derivative_rhs[variable][degree]
                 if degree < len(derivative_rhs[variable])
                 else 0
             )
-            denominator_derivative = 2 if variable == 9 else 0
+            denominator_derivative = 2 if variable == variable_count - 1 else 0
             derivative_y[index][variable] = (
                 (rhs_derivative - derivative_known)
                 - Y[index] * denominator_derivative
             ) * inverse_denominator % prime
 
     rows = []
-    for degree in [24, *range(12)]:
+    for degree in [2 * y_degree, *range(y_degree)]:
         row = []
-        for variable in range(10):
+        for variable in range(variable_count):
             y_derivative = sum(
                 derivative_y[left][variable] * Y[degree - left]
                 + Y[left] * derivative_y[degree - left][variable]
-                for left in range(13)
-                if 0 <= degree - left <= 12
+                for left in range(y_degree + 1)
+                if 0 <= degree - left <= y_degree
             ) % prime
             rhs_derivative = (
                 derivative_rhs[variable][degree]
@@ -164,11 +170,17 @@ for line in completed.stdout.splitlines():
     pieces = line.split()
     if pieces[0] == "SOLUTION":
         values = list(map(int, pieces[1:]))
+        x_count = 2 * chi + 1
+        y_count = 3 * chi + 1
+        if len(values) != 2 + x_count + y_count:
+            raise ArithmeticError("enumerator emitted a malformed solution row")
         solutions.append(
             {
                 "representative_leading_x_y": values[:2],
-                "X_coefficients_low_to_high": values[2:11],
-                "Y_coefficients_low_to_high": values[11:24],
+                "X_coefficients_low_to_high": values[2 : 2 + x_count],
+                "Y_coefficients_low_to_high": values[
+                    2 + x_count : 2 + x_count + y_count
+                ],
             }
         )
     elif pieces[0] == "SUMMARY":

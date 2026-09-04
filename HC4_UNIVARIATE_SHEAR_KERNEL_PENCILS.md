@@ -241,12 +241,19 @@ Run:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_univariate_shear_kernel_pencils.py
+# cleanup only: verify committed inputs and historical/current frontier
+.venv/bin/python scripts/verify_hc4_univariate_shear_kernel_pencils.py --audit-existing-only
 ```
 
 The command checks the complete transverse kernel residual, the curvature
 coefficient and tangent-slope identities, the univariate adjugate factor,
 the bordered and descendant determinants, and every step of the triangular
 inverse.
+
+The cleanup-only mode hash-checks the committed ledger and imported equation
+helper without importing SymPy, replaying the identities, or rewriting the
+artifact. It treats the ledger's broad quasi-translation frontier as
+historical: `HC4RSD5` later closes the fixed two-component subcase.
 
 The result contains kernels of arbitrarily high degree and allows arbitrary
 dependence on both transverse variables before the unit gate. `HC4RSD5`, in

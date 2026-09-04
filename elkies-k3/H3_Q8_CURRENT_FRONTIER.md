@@ -34,7 +34,12 @@ sage -python elkies-k3/scripts/derive_h92_q6_child_q8_corrected2cover_qq.sage
 
 The first command rebuilds the pinned 17 KB component-nef target and `cmp`
 checks it byte-for-byte. The q8 checker consumes the tracked fibration-data
-copy rather than an ignored `artifacts/local/` prerequisite.
+copy rather than an ignored `artifacts/local/` target prerequisite.  However,
+the final q8 command still requires the ignored q6 child-Jacobian, transported-
+zero, and E7-infinity JSON intermediates, none of which is retained in the
+current clean checkout.  Rebuild the `EC-K3-H3-Q6` artifact chain first.  This
+historical block therefore records the intended full-chain replay, not a
+standalone clean-checkout command.
 
 with endpoint
 

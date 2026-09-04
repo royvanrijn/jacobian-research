@@ -1750,6 +1750,26 @@ lift first.
 
 ## 11. Reproduction and claim boundary
 
+For cleanup and provenance review only, without importing SymPy, invoking
+Singular, regenerating either ledger, or replaying any mathematical search,
+run
+
+```bash
+python3 scripts/audit_plane_wild_boundary_artifacts.py
+```
+
+This pins the survivor-atlas and degree-seven ledgers at whole-file SHA-256
+`442a211cab64d4dc0694f5c956e700e38e1315032bb513862b76ef63f989589f`
+and
+`2dfbe8e4e4dbaf23c6e3ad4102d6a4d875dc0087fc7691b5b70dccf18b8355fa`,
+respectively, together with their generating sources and the direct boundary
+lattice helper.  It also guards two easy-to-miss scope distinctions: the
+empty `odd_characteristic_reconstruction_queue` is only the post-support
+balanced retained-polynomial queue and does not erase the 20 original
+prescribed-cover or 6 comparison rows still labelled `needs_reconstruction`;
+and a `packet_gate_only` survivor is an abstract necessary-gate template, not
+a finite cover or a Keller map.
+
 Run the dependency-light identity and semigroup audit with
 
 ```bash

@@ -200,6 +200,9 @@ The universal determinant identities are replayed by
 [scripts/verify_hc4_scalar_cancellation_dichotomy.py](scripts/verify_hc4_scalar_cancellation_dichotomy.py),
 which writes
 [artifacts/generated-results/hc4_scalar_cancellation_dichotomy.json](artifacts/generated-results/hc4_scalar_cancellation_dichotomy.json).
+That artifact records the `HC4RSD11--16` stage.  Its higher-degree pencil
+`open_frontier` is historical and is superseded inside the auxiliary
+relative-nilpotent branch by `HC4MR1`.
 
 ## 1. The nonzero corner is a completed-square gauge
 
@@ -924,7 +927,13 @@ Run:
 
 ~~~bash
 .venv/bin/python scripts/verify_hc4_scalar_cancellation_dichotomy.py
+# committed `HC4RSD11--16` stage artifact only, without symbolic replay:
+.venv/bin/python scripts/verify_hc4_scalar_cancellation_dichotomy.py --audit-existing-only
 ~~~
+
+The maintenance-only mode verifies the committed artifact and explicitly
+reports that its higher-degree pencil handoff is stage-local; it neither
+recomputes nor rewrites the identities.
 
 The checker verifies the universal \(5\)-by-\(5\) block determinant, the
 graph-coordinate Hessian factorization, exact gradient coordinates, a

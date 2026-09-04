@@ -299,16 +299,30 @@ def check_scheme_reconstruction(P: sp.Expr, a: sp.Expr) -> None:
     assert quotient_reduce(y_bar + x_bar * q_bar - Q, E) == 0
 
     # Substitution into all three map coordinates returns the target in R.
+    mapping = quadratic_gauge_map(G)
     outputs = [
         quotient_reduce(
             component.subs({x: x_bar, y: y_bar, z: z_bar}),
             E,
         )
-        for component in quadratic_gauge_map(G)
+        for component in mapping
     ]
     assert quotient_reduce(outputs[0] - pi, E) == 0
     assert quotient_reduce(outputs[1] - b_target, E) == 0
     assert quotient_reduce(outputs[2] - c_target, E) == 0
+
+    # The determinant-one target scaling must preserve this distinguished
+    # fiber as a scheme, not merely fix the numeral zero in isolation.
+    normalized_outputs = [
+        quotient_reduce(
+            component.subs({x: x_bar, y: y_bar, z: z_bar}),
+            E,
+        )
+        for component in jacobian_one_normalization(mapping)
+    ]
+    assert quotient_reduce(normalized_outputs[0] - pi, E) == 0
+    assert quotient_reduce(normalized_outputs[1], E) == 0
+    assert quotient_reduce(normalized_outputs[2] - c_target, E) == 0
 
 
 def check_polynomial_to_fiber_transfer() -> None:
@@ -348,8 +362,6 @@ def check_polynomial_to_fiber_transfer() -> None:
         target_c = sp.cancel(-2 * P.subs(S, a) / g1)
         inverse = sp.expand(G - g1 * target_c / 2)
         assert sp.expand(inverse - P.subs(S, S + a)) == 0
-        # The distinguished target has B=0 and is fixed by the normalization.
-        assert -sp.Integer(0) / 2 == 0
         check_scheme_reconstruction(P, a)
         check_collision_decomposition(P)
 

@@ -19,6 +19,7 @@ obstructions, not global lower bounds.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import itertools
 import json
@@ -532,6 +533,9 @@ def nonlinear_z8_pivot_audit(
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--write", action="store_true")
+    args = parser.parse_args()
     g11_variables, g11_mapping, g11_image = traboulsi_g11()
     f12_variables, f12_mapping, f12_image = local_f12()
 
@@ -597,8 +601,15 @@ def main() -> None:
             "lift that avoids full dimension doubling."
         ),
     }
-    OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n")
-    digest = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
+    serialized = json.dumps(artifact, indent=2) + "\n"
+    if args.write:
+        OUTPUT.write_text(serialized)
+    else:
+        assert OUTPUT.exists(), f"missing {OUTPUT.relative_to(ROOT)}"
+        assert OUTPUT.read_text() == serialized, (
+            f"{OUTPUT.relative_to(ROOT)} is stale; regenerate with --write"
+        )
+    digest = hashlib.sha256(serialized.encode()).hexdigest()
     print("PASS HVC38 cross-audit: public profile (11,7), local profile (12,6)")
     print(
             "PASS public G11: all seven affine quadratic "
@@ -613,7 +624,7 @@ def main() -> None:
         "PASS local F12: nonlinear z8 pivot has no quadratic target "
         "completion to degree 3"
     )
-    print(f"PASS wrote {OUTPUT.relative_to(ROOT)}")
+    print(f"PASS checked {OUTPUT.relative_to(ROOT)}")
     print(f"SHA256 {digest}")
 
 

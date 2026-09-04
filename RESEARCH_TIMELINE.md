@@ -154,6 +154,12 @@ that two routes use the same marked fibrations.
 
 - ICARM curve 302 was independently certified to have rank at least 31,
   trivial torsion, a global minimal model, and exact conductor/local data.
+  The retrospective now pins both this compressed certificate and the curve
+  273 rank-at-least-30 certificate on their `ECR31`/`ECR30` rows, together
+  with the shared finite-quotient helper and direct proof inputs. A
+  dependency-free auditor enforces that these remain unconditional lower
+  bounds only: heights, the public BSD/GRH statement, exact rank, and K3-family
+  recognition are not inferred. No curve arithmetic was replayed.
 - The H3 q24 section and `D12/MW5` equation were closed, then orbit42 gave an
   exact `A11/MW6` child.
 - Construction-fingerprint and target-coset audits found the correct A11 q8
@@ -263,6 +269,12 @@ equation-level work on extension collisions.
   determinant-1184 candidate lattices, marked source data, and physical
   corridors.  At this stage these were geometric and finite-field objects, not
   arithmetic K3 sources over `QQ`.
+- The complete declared prescribed-root source cover across thirteen rooted
+  Niemeier ambients and sixteen D5 anchors produced 2,134 reduced-Gram MW1
+  records covering all 48 foundry NS classes and no MW0 record.  The audit now
+  pins this previously prose-only result in the registry and makes its merger
+  reject a missing ambient shard, a changed NS-id universe, a changed input
+  hash, or an anchor-count mismatch.
 
 Correction retained: a complete geometric frame classification, a public-fibre
 fingerprint, a bounded coordinate rejection, and a rational source equation are
@@ -359,22 +371,306 @@ one chart does not exclude a high-rank fibre on another chart.
   rational NS0031 marking is impossible over `QQ`; its local and geometric
   certificates remain valid controls, and the remaining frames must be
   reranked through the arithmetic-marking gate before equation work.
+- The arithmetic-marking classifier then applied that gate to all 66 exact
+  rootless-MW17 candidate lattices in the 827-surface catalogue.  It classified
+  one candidate as possible (the existing determinant-948 control), excluded
+  determinant 720, NS0024, and NS0031, and left 62 literal `UNKNOWN`;
+  consequently it emitted no equation-agent handoff. For determinant 720 the
+  primitive coarse curve is `X_0(15)`, its stable marked curve is `X_0(60)`,
+  and the latter has no rational noncuspidal point. The known rational `3A5`
+  point instead saturates to determinant 20.
+- Lane B was then reversed globally. The arithmetic-first planner orders all
+  827 rank-three transcendental rows without rootless-frame data and admits
+  `NS=T^perp`, rootlessness, or equation work only after an exact rational
+  non-CM point on the full stable curve. Its 823-row research queue currently
+  has 24 coarse genus-at-most-two diagnostics and no new positive handoff. The
+  construction milestone was strengthened to require MW17 plus a certified
+  positive-rank low-genus carrier and independent section, with an integral
+  `V4` lattice of character ranks `17+1+1+1` as the stretch target.
+- The retrospective registry audit promoted the already-tested incremental-CRT
+  beam failure into a first-class status boundary.  On four prime groups, the
+  width-one survivor has height 1409 while a discarded branch completes to
+  `48/53`, of height 53.  Both active beam helpers now state that finite beams
+  rank proposals and cannot exclude omitted CRT classes.
+- The same audit removed the live ICARM endpoint from the theorem replay path.
+  Committed sufficient projections now reproduce the historical `wgxli`
+  artifact byte-for-byte, all 2,844 pinned curve/class decisions, the
+  69-fibre/1,545-point snapshot, and the five exact section/quotient
+  certificates; live retrieval is an explicit drift audit only.
+- The residual rank-32 adapter retained its correct Selmer formula but renamed
+  PARI `ellrank`'s third field from an apparent full `Sha[2]` dimension to the
+  actual Cassels-pairing quotient rank.  A tested helper now enforces
+  `dim Sel_2(E)=r2+dim E(Q)[2]+s`, and all 40 fail-closed policy regressions
+  pass without running a descent or point search.
+- The retrospective also reconciled the cubic cancellation narratives with
+  their later all-orders formal results.  `KDSQ6` and `SSADPALL` already close
+  the squarefree formal-tail saturation queue; the active `OP-SUSP` gates are
+  now the boundary-geometric `S2`/local-CM or Cartier implication, the three
+  non-squarefree leading symbols, global Keller compatibility, and coefficient
+  base-change rigidity.  The falsified universal `OP-UG3` route remains only
+  as a counterexample boundary.
+- The finite-etale reconstruction checker no longer treats the identity
+  `-0/2=0` as evidence that determinant-one target normalization preserves the
+  distinguished fibre.  It now reconstructs in the exact quotient algebra and
+  checks all three normalized target coordinates; the existing symbolic suite
+  passes with the stronger assertion.
+- Two SIC navigation passages were corrected to match the existing
+  falsification graph.  The semistable Rodrigues point already disproves the
+  bidegree-`(3,3)` moment--nullcone equality, but is SIC-safe; the remaining
+  open target is the complete bidegree-`(3,3)` SIC classification, not revival
+  of the stronger nullcone equality.
+- The sparse SIC census chain gained fail-closed coverage checks.  The stored
+  size-three through size-eight records must now match every exact relevant
+  support key once, and the final size-nine checker reconstructs the union of
+  all seven predecessor families instead of inferring “earlier closed” from a
+  count-preserving set complement.  Cheap audit modes verify the complete
+  560/1,401/3,864/7,588/11,200/12,780 and 11,420-support domains without
+  rerunning msolve.
+- The quartic two-row SIC atlas gained the same solver-free integrity layer.
+  Exact-key replays now verify the dense degree-604/mu8 record, all 135
+  separated-row boundaries, all six dense off-diagonal representatives and
+  their ten-pair reversal cover, and all 1,174 off-diagonal boundaries exactly
+  once.  They also rederive the stored strata, minor-open covers, 942 unit
+  outcomes, and both delayed-fibre records without replacing the original
+  characteristic-zero eliminations.
+  The same pass pins all 60 single-shear labels and makes the double-shear
+  150-chart/78-orbit reversal coverage explicit instead of count-only.
+- The retained cubic Gaussian null-cone theorem now has an exact-key audit
+  across its two-, five-, six-, and seven-weight closure systems.  It matches
+  the three five-weight leftovers to their predecessor artifact, checks the
+  complete reflection cover rather than aggregate chart totals, and binds all
+  31 committed inputs to their QQ unit records without rerunning `msolve`.
+  Its finite radical/cutoff content remains distinct from the later all-degree
+  `G2T` proof even though that proof subsumes the GMC consequence.
+- Its four-weight predecessor chain is fail-closed as well: the 33-support
+  universe, the earlier four-support/24-chart complement, the separately
+  removed symmetric four-chart support, and the final three-support/20-chart
+  seven-system certificate now agree by exact keys rather than totals.
+- The global low-degree Keller census received a solver-free integrity path.
+  It validates the eight pinned artifacts and reconstructs the residual
+  support orbits and determinant triples, then requires the same ordered 913
+  support IDs through valuation, sign, all three modular, and exact rational
+  ledgers.  This confirms the committed support-at-most-six routing without a
+  new algebra run and leaves support-seven attainment and the unbounded census
+  explicitly open.
+- The plane sparse-support theorem now has a separate maintenance path as
+  well.  It pins the existing JSON and Singular bytes and checks the exact
+  arbitrary-degree claim records, bounded-regression labels, mask digests,
+  exceptional shear formulas, and unique quadratic survivor without running
+  the 14.6-million/5.29-million enumerations or a solver.
+- Its affine-support/Newton bridge now has the same guardrail.  The committed
+  audit requires all six Kummer character-pair brackets of the five-term F2
+  terminal block and its nontrivial character profile, preventing the
+  constant-Jacobian support-six theorem from being applied without the missing
+  lower bands; it explicitly preserves the non-exclusion of `(75,125)`.
+- The compact Case-1 `(72,108)` determinantal route now names a real verifier
+  rather than its Singular-input generator.  Three directly consumed replay
+  files are hash-pinned, and the top-level checker composes the adjacent-minor
+  decision, both special-fibre unit certificates, and exact sign-branch
+  transport.  Its cleanup mode verifies 34 manifest entries plus the compact
+  reconstruction without invoking Singular or multiplying the 89 MB identity.
+- The alternative no-vertical `(72,108)` Belyi closure also gained a
+  committed-only guard: the certificate and quotient graph are pinned, all
+  five 21-sheet permutation labels are distinct and well formed, the three
+  deformation rank/nullity ledgers balance, and the terminal `B_8`-saturated
+  unit record is required without reconstruction or a Singular run.
+- The HC4 double-conic invariant gate was rechecked at the historical
+  unsaturated-ideal failure.  Its theorem boundary was already correct: the
+  lower-Smith witness invalidates unsaturated discriminant membership, clean
+  saturation by `Phi2` is mandatory, and a discriminant still closes only the
+  squarefree open.  The witness checker now hash-pins its harmonic-layer helper
+  and offers a provenance-only cleanup mode, so no symbolic calculation is
+  needed to detect replay-source drift.
+- Static review of the clean split-linear HC4 quartic-denominator chain found
+  the partition and flag coverage intact: `3+1`, `2+2`, `2+1+1`, followed by
+  squarefree rows split as `16+8+16+8`.  The nonempty `HC4NHM4` leading packet
+  is not confused with its failed prolongation, and all nonlinear,
+  positive-defect, lower-Smith, and rank-at-most-two boundaries remain open.
+  Missing open-problem narrowing edges on `HC4NHM10--11` were restored without
+  rerunning their symbolic or Singular calculations.
+- The `HC4DIR2` all-degree squarefree filtration was reconciled with its
+  current proof.  The status ledger no longer invokes an obsolete triangular
+  coordinate change: squarefree factorwise divisibility makes the putative
+  first off-diagonal quotient polynomial of negative degree, so it vanishes.
+  The checker is now explicitly only a two-face identity replay, while the
+  written proof carries the universal quantifier; its committed artifact is
+  registered and can be hash-audited without symbolic replay or rewriting.
+- The diagonal/Meng--Yang all-degree frontend now treats its committed
+  degree-4--8/order-1--12 tables explicitly as bounded regressions.  Their
+  generating source and artifact are registered and auditable without CAS;
+  the artifact's discovery-time lower-layer recommendation is preserved but
+  marked superseded by `HC4FSD3`.  Formal all-order Meng--Yang recursion still
+  carries no polynomial-termination or marked-collision conclusion.
+- The historical HC4 collision-first finite-field campaign is now a first-
+  class bounded record `HC4FF1`.  A no-search audit pins five artifacts and
+  three sources, verifies all 45,181,194 nonempty one/two-direction choices
+  and the exact `96+32+128+144` selected dense families, and requires all 800
+  stored support-prime ideals to be unit.  The direct degree-five problem now
+  explicitly forbids treating these two-prime, fixed-normalization records as
+  a characteristic-zero or unrestricted exclusion.
+- Static review of the smooth-quartic reciprocal chain confirmed that the
+  polar decomposition is not being used as a tangent/contact classification.
+  The generic polar conic and all generic two-line orbit types are closed, but
+  every lower denominator, secondary-pivot, complementary-chart, and other
+  reciprocal boundary remains explicit.  The four checkers that consume the
+  shared 81-equation builders now register those source locks and provide
+  provenance-only maintenance modes; no Singular or exact-field calculation
+  was rerun.  Corrupted inline mathematics in the Fermat-symmetry note was
+  repaired at the same time.
+- The scalar relative-pencil narrative was brought forward from its obsolete
+  degree-six handoff: its own later theorems close scalar directions through
+  degree seven, and `HC4MR1` closes the complete auxiliary relative-nilpotent
+  pencil branch in all degrees while leaving unrestricted `HC4` and `JC2`
+  untouched.  The final affine-plane checker remains only a local certificate,
+  not an end-to-end replay; its committed prolongation artifact is now
+  registered and can be checked, including that proof boundary, without
+  recomputing or rewriting it.
+  The earlier shared `HC4RSD17--28` ledger is also registered and auditable;
+  its degree-seven `open_frontier` is preserved as historical stage data and
+  explicitly superseded by `HC4RSD40`/`HC4MR1`, rather than silently rewritten.
+  Likewise, the `HC4RSD11--16` scalar-dichotomy ledger now identifies its
+  higher-degree pencil handoff as historical and registers the committed
+  artifact on every consumer without replaying it.
+  The same protection now covers the three preceding quadratic-pivot ledgers:
+  their rank-one/rank-two and cancellation handoffs remain immutable stage
+  evidence, while maintenance output names the later closing theorems instead
+  of presenting those fields as current work.
+  The affine-pivot pair is now guarded too: `HC4RSD6`'s residual locus remains
+  a representation-classification problem, but `HC4RSD7` bypasses it for
+  inherited collisions and still leaves nonlinear or different-fiber
+  collisions open.
+  The five earlier scalar-kernel ledgers are now guarded in the same
+  cleanup-only way. `HC4RSD1--5` pin their committed artifacts and shared
+  equation helper, while `HC4RSD1--2` also pin the projective-polar atlas they
+  consume. Their historical frontier text is interpreted against current
+  knowledge: the affine and fixed two-component subcases are closed by later
+  `HC4RSD` steps, the nonzero-corner auxiliary pencil is closed by `HC4MR1`,
+  and the larger nonlinear singular kernels, nonlinear zero-corner exact
+  remainders, and moving matrix pivots remain. No symbolic calculation was
+  replayed.
+  The twelve `HC4RSD29--40` pure-sextic/septic stage artifacts are now
+  individually registered too. A single stdlib-only auditor verifies their
+  exact hashes and status mappings without importing SymPy, invoking Singular,
+  or regenerating any ledger. This preserves the degree-six/seven closure and
+  the later `HC4MR1` auxiliary-pencil endpoint without suggesting a proof of
+  unrestricted `HC4`.
+  The earlier `HC4NHM1--3` nonreduced-Hessian route map was also reconciled
+  statically. Its checkers have no generated ledgers to register, and the
+  sole external Singular step already fails closed rather than skipping.
+  Historical `3+1` and later split-linear handoffs now point to their
+  `HC4NHM4--12` closures, while nonlinear clean denominators, positive defect,
+  and lower-Smith strata remain current. No CAS checker was run.
+  The `HC4PPG1--9` projective-polar chain now registers its previously implicit
+  shared Segre helper and all produced/consumed atlas, Rees, vertex, and
+  conditional-sieve ledgers. A stdlib-only auditor verifies those committed
+  bytes and requires the intended boundary: 624 necessary numerical rows are
+  not existence results, and the higher-torsion and exceptional
+  codimension-three strata remain. No symbolic or Macaulay2 calculation was
+  replayed.
+  The ten `HC4MCP1--10` mixed-canonical ledgers are now first-class status
+  inputs as well. Their exact files and directly imported sources are pinned,
+  and a dependency-free maintenance auditor preserves the crucial scope
+  split: unequal modular values are valid nonconstancy witnesses, equal values
+  are retained rather than sieved out, and only `HC4MCP10` is coefficient-
+  uniform—and then only on the 54 short-word `HC4MCP6` resonance families.
+  Moving pivots, other supports, and longer words remain open. No search,
+  SymPy calculation, or Singular calculation was run.
+  Static review of the nonlinear clean-denominator predecessors
+  `HC4NHM13/15/18/19` found no omitted artifacts or permissive CAS fallback:
+  the Singular-backed scripts fail closed and the other two are self-contained.
+  Their notes already distinguish the at-most-four-root double-conic closure,
+  the unsaturated many-root frontier, and the three surviving smooth-cubic
+  degree packets; a stale “next action” heading was relabeled historical. No
+  checker was run.
+  The committed HC4 cube-torsion/Fitting-denominator and fourth-power support
+  experiments had no mathematical-status row. They are now the partial record
+  `HC4QSE5`, with a dependency-free auditor for their exact files and source.
+  It preserves the chart restriction `nu != 0`, the finite-field and extension-
+  field limits, and the fact that every timed-out symbolic route has no
+  conclusion. The reconstructed point `(-5/3,-1/6)` is only a nilpotence-order
+  jump, not a reduced exceptional Schur component. No Singular or scan replay
+  was run.
+- The ICARM construction-recognition records were reconciled without replaying
+  their searches. The fixed-root v2 ledger includes curve 302, and its old
+  repository-model diagnostic was narrowed to uncompressed generated-results
+  JSON rather than all repository models. The already-committed 2,334-family
+  generated-space ledger is now registered separately: it exactly recognizes
+  curve 282 in two coordinates and excludes curves 273 and 302 only inside
+  that declared bounded space. A stdlib-only auditor pins the sources and
+  artifacts; no family generation, modular sieve, or factorization was run.
+- The completed-moment artifacts were reconciled without rerunning invariant
+  or Gröbner calculations. Four status rows now pin the automatic, diagonal,
+  and single-phase ledgers and their direct helpers. The automatic-ledger note
+  had omitted its 32-step beta-regression option and retained an obsolete
+  hash; the older bounded relation JSON also came from an earlier committed
+  producer rather than the extended current schema. Both provenance errors
+  are now explicit. Slice fixed-field theorems, necessary-only Hilbert tests,
+  and support-bounded modular nonrelations remain separate claim types.
+- The adjacent degree-four moment-field chain now pins the ledgers behind its
+  composite scopes: the quartic witness, 22 even parameters, bounded
+  weight-16 nonrelations, diagonal and single-phase fields, and phase-one
+  four-point chart. The review preserves the essential separations between
+  full-rank modular support exclusion and field equality, raw slice degree and
+  invariant-quotient degree, and `F_101` fiber completeness versus exact
+  rational branch identities. Solver timeouts remain non-results. No SymPy,
+  Singular, or `msolve` calculation was rerun.
+- The two quartic `q_2` normal-jet rows now pin their stored finite-field
+  ledgers. The review keeps the positive-dimensional quadratic/cubic jets,
+  dominant-sheet quartic radicals, and unresolved off-axis branch distinct;
+  none proves formal isolation, treats `F_2=0`, or lifts the global result to
+  characteristic zero. It also records that one 240-second timeout is
+  historical metadata serialized by the checker, not a current calculation.
+  No SymPy or Singular calculation was rerun.
+- The `PWB1--PWB6` wild-boundary chain now pins its two committed result
+  ledgers and direct lattice helper. A stdlib-only audit preserves the
+  distinction between the empty post-support balanced queue and the 26
+  unresolved reconstruction rows in other stored architectures, and keeps
+  bounded `packet_gate_only` survivors separate from actual covers. The
+  first odd degree-seven scan remains complete only inside its six-row `F_3`
+  retained-polynomial family. No symbolic identity, packet enumeration,
+  normalization, or point-count calculation was rerun.
+- The three all-dimensional projective-gradient Segre ledgers are now
+  first-class inputs to `PGS1--PGS3`, together with their shared helper and
+  independent Macaulay2 calibration sources. Their Python producers no
+  longer overwrite committed evidence on an ordinary verification run;
+  replacement is explicit through `--write`. A dependency-free audit checks
+  exact parameter-key coverage and preserves the separation between complete
+  vectors, aggregate top-degree information, and unresolved singular-profile
+  data. No SymPy or Macaulay2 calculation was rerun.
+- The seven precursor notes for the relative rank-two Jordan packets now mark
+  their “remaining” and “next” sections as historical.  Their exact closure
+  chain is explicit: `HC4RSD60` closes square-zero `[2,2]`, `HC4RSD63` closes
+  length-three `[3,1]`, and `HC4MR1` subsumes both.  This prevents old local
+  handoffs from being mistaken for current open packets.
+- The repeated-linear direct-HC4 note no longer advertises the obsolete
+  three-packet exact-sextuple handoff.  Its later internal reductions leave one
+  degree-five, order-one pure-cube scalar-parent resonance, which `HC4DIR28`
+  excludes as a collision source.  The generated identity artifact is now
+  registered and can be checked for that endpoint and its written UFD/DVR
+  proof boundary without reconstructing or rewriting it.
+- The formal-orbit ledger was narrowed to its actual theorem.  Local-Artin
+  Keller deformations are uniquely source-trivial, and individual
+  determinant-one jets in dimension three have reduced representatives, but
+  neither statement algebraizes the compatible formal family or erases
+  filtered/global stable moduli; the existing rank-four translation remains
+  an exact counter-control.
 
 Durable lesson: exclusion of one quotient class is not a rank theorem, formal
-smoothness is not algebraization, and a geometric Neron--Severi lattice must
-pass a separate Galois/rational-marking gate before arithmetic equation work.
+smoothness is not algebraization, incremental CRT height is not a monotone
+pruning invariant, and a geometric Neron--Severi lattice must pass a separate
+Galois/rational-marking gate before arithmetic equation work.
 
 ## Current handoff
 
 The repository-wide continuation queue is
 [`STATUS.md`](STATUS.md#active-open-problems). The principal K3 foundry gate is
-an arithmetic-first reranking of the remaining different-NS frames, followed
-only for a lattice whose full rational rank-19 marking survives by target-free
-marked-`U` selection and exact endpoint compilation. The determinant-948 route
-is a complete control; NS0024 and NS0031 arithmetic MW17 are both closed over
-`QQ`. Determinant 720 is the strongest remaining lattice/corridor control, but
-its known rational `3A5` point saturates to determinant 20 and is not a valid
-source.
+the 823-row transcendental-first arithmetic queue, beginning with the exact
+coarse genus-zero rows at determinants 378, 256, and 512. Each still needs its
+literal stable kernel and rational-point decision before `NS=T^perp` is
+constructed. The determinant-948 route is the single possible classifier
+control; determinant 720, NS0024, and NS0031 are closed over `QQ`. A positive
+row must ultimately supply arithmetic MW17 plus the certified carrier section,
+or the stronger saturated `V4` character lattice.
 
 The principal rank-32 gate remains a completed residual 2-Selmer quotient on
 the same minimal curve, followed only on a passing fibre by cover or point

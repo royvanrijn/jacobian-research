@@ -180,6 +180,16 @@ Replay the pinned certificate, including the terminal Singular computation:
 .venv/bin/python scripts/verify_jc2_degree108_belyi_deformations.py
 ```
 
+For cleanup-only verification, pin-check the certificate and quotient graph,
+validate the five distinct dessin labels and all permutation domains, recheck
+the three rank/nullity ledgers, and require the stored saturated terminal unit
+record without reconstructing the coefficient field or running Singular:
+
+```bash
+.venv/bin/python scripts/verify_jc2_degree108_belyi_deformations.py \
+  --audit-existing-only
+```
+
 For a quick replay of the dessins, coefficient reconstruction, arithmetic
 audit, Belyi factorization, and all linear algebra while trusting the pinned
 terminal unit-ideal result:

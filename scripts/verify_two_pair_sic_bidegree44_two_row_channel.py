@@ -17,6 +17,7 @@ Coordinate boundaries are not classified here.
 
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 
@@ -45,7 +46,75 @@ def compact_record(record: dict[str, object]) -> dict[str, object]:
     }
 
 
+def validate_existing_artifact(path: Path) -> None:
+    artifact = json.loads(path.read_text(encoding="utf-8"))
+    if artifact.get("format") != "two-pair-sic-bidegree44-two-row-channel-v1":
+        raise AssertionError("unexpected two-row channel artifact format")
+    if artifact.get("coefficient_support") != [list(position) for position in SUPPORT]:
+        raise AssertionError("stored dense support does not match the exact chart")
+
+    factor_chart = artifact.get("factor_chart")
+    if not isinstance(factor_chart, dict):
+        raise AssertionError("stored artifact has no factor-chart metadata")
+    if factor_chart.get("residual_coordinates") != [str(value) for value in RESIDUALS]:
+        raise AssertionError("stored residual coordinates do not match the chart")
+    if factor_chart.get("coefficient_torus_saturation") != (
+        "z0*z1*z2*z3*z4*z5 != 0"
+    ):
+        raise AssertionError("stored chart does not retain full torus saturation")
+    if factor_chart.get("exact_rank_two_minor") != (
+        "det C[rows 0,4; columns 0,4]=-z2*z3"
+    ):
+        raise AssertionError("stored chart has the wrong exact-rank-two minor")
+
+    moments = [moment(order) for order in range(1, 9)]
+    if not moments[0].is_zero or any(value.is_zero for value in moments[1:]):
+        raise AssertionError("unexpected dense-chart moment profile")
+    profiles = [
+        [order, value.total_degree(), len(value.terms())]
+        for order, value in enumerate(moments, start=1)
+    ]
+    seven = artifact.get("through_seven")
+    if (
+        not isinstance(seven, dict)
+        or seven.get("returncode") != 0
+        or seven.get("through") != 7
+        or seven.get("status") != "zero_dimensional"
+        or seven.get("variables") != 7
+        or seven.get("scheme_degree") != 604
+        or seven.get("profiles") != profiles[:7]
+    ):
+        raise AssertionError("stored seven-moment degree-604 fibre is incomplete")
+    eight = artifact.get("through_eight")
+    if (
+        not isinstance(eight, dict)
+        or eight.get("returncode") != 0
+        or eight.get("through") != 8
+        or eight.get("status") != "unit_ideal"
+        or eight.get("profiles") != profiles
+    ):
+        raise AssertionError("stored eighth-moment unit certificate is incomplete")
+
+    print("PASS stored dense support, torus saturation, and rank minor match the chart")
+    print("PASS stored degree-604 prefix and mu_8 unit outcomes match exact profiles")
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument(
+        "--audit-existing-only",
+        action="store_true",
+        help=(
+            "validate the stored chart, moment profiles, and solver outcomes "
+            "without rerunning msolve"
+        ),
+    )
+    arguments = parser.parse_args()
+    if arguments.audit_existing_only:
+        validate_existing_artifact(arguments.output)
+        return
+
     # The first moment vanishes identically because this support has no
     # diagonal coefficient.  The next moments are genuine quotient
     # equations, with primitive integer coefficients.
@@ -103,7 +172,10 @@ def main() -> None:
             "TWO_PAIR_SIC_BIDEGREE44_RANK_TWO_ALL_ORDER_AUDIT.md"
         ),
     }
-    OUTPUT.write_text(json.dumps(artifact, indent=2) + "\n", encoding="utf-8")
+    arguments.output.parent.mkdir(parents=True, exist_ok=True)
+    arguments.output.write_text(
+        json.dumps(artifact, indent=2) + "\n", encoding="utf-8"
+    )
 
     print("PASS direct two-row chart has exact coefficient rank two")
     print("PASS moments through seven give an exact degree-604 scheme over QQ")

@@ -2620,7 +2620,7 @@ The full exact table, CM24 comparison, and claim boundary are in
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-S-CLASS-PILOT 8c88abe96881b79d -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE c078c1aa8e97df47 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS 56509673b9eb1940 -->
-<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 855128c3da8d2b41 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 7f8dffe58168acc8 -->
 
 The rootless `U + (-M)` lattice has a finite degree-two quotient under section
 translation. The following exact lattice calculation enumerates its
@@ -4887,6 +4887,22 @@ representative; unrestricted `d_4` remains between 19 and 52.
 
 ## Plane wild-boundary atlas
 
+The cleanup-only provenance audit reads the two committed JSON ledgers and
+their sources without importing SymPy, invoking Singular, or regenerating any
+result:
+
+```bash
+python3 scripts/audit_plane_wild_boundary_artifacts.py
+```
+
+It pins the survivor atlas at SHA-256
+`442a211cab64d4dc0694f5c956e700e38e1315032bb513862b76ef63f989589f`
+and the degree-seven scan at SHA-256
+`2dfbe8e4e4dbaf23c6e3ad4102d6a4d875dc0087fc7691b5b70dccf18b8355fa`.
+The empty balanced support queue does not supersede the 20 original
+prescribed-cover and 6 comparison reconstruction rows, and bounded packet
+survivors remain abstract necessary-gate templates rather than covers.
+
 ```bash
 .venv/bin/python scripts/verify_wild_boundary_atlas.py
 .venv/bin/python scripts/verify_wild_boundary_atlas.py --singular
@@ -5584,7 +5600,16 @@ and `1694` determinant-balanced labelled supports in sizes four, five, and
 six; their `913` residual-symmetry representatives all have unit exact ideals.
 The dense quadratic collision ideal is also `(1)`.
 
-Replay every pinned JSON decision with:
+Check the committed manifest, exact support/orbit labels, bucket arithmetic,
+and the complete 913-ID handoff through all eight stage ledgers without
+rerunning any solver with:
+
+```bash
+.venv/bin/python scripts/verify_global_low_degree_census.py --audit-existing-only
+```
+
+Replay every pinned JSON decision, including the Singular and SymPy algebra,
+with:
 
 ```bash
 make verify-global-low-degree-census
@@ -7291,8 +7316,12 @@ This is not a global arbitrary-cubic closure.  Proposition 1.4 shows that a
 second boundary sheet cannot lie over the critical divisor, because the
 ramified `(2,1)` and affine `(1,1)` sheets exhaust degree three.  An
 arbitrary cubic can still have a distinct unramified nonproperness divisor;
-excluding that factor, or reducing it to the minimal stratum while
-preserving genuine ungradedness, is the separate `OP-UG3` obligation.
+`UCUT3` proves that such a factor can be intrinsic and genuinely ungraded, so
+the former universal `OP-UG3` obligation is falsified.  The surviving
+`OP-SUSP` obligation is boundary-minimal only: construct the canonical
+finite-normalization witness and prove its saturation, conormal,
+noncontraction, and straightening predicates.  No reduction from every
+arbitrary cubic is asserted.
 
 The universal flat ungraded coefficient cell is checked separately by:
 
@@ -8644,6 +8673,13 @@ The degree-four moment-field continuation is replayed by
   --test-apolar-orbit 2 3 5 7 11 69 3 6 --certify-example
 ```
 
+For a maintenance-only check of the six committed outputs and their direct
+source hashes, without importing SymPy or launching Singular or `msolve`, run
+
+```bash
+python3 scripts/audit_degree_four_moment_field_artifacts.py
+```
+
 The first command constructs twenty-two algebraically independent
 apolar-even trace invariants of degrees \(1,2^4,3^9,4^8\).  Their exact
 modular Jacobian rank is \(22\), and their combined cotangent matrix with
@@ -8694,13 +8730,20 @@ The full \(22\)-dimensional degree-four moment-field equality remains
 open; see
 [`DEGREE_FOUR_MOMENT_FIELD.md`](extended-geometry/DEGREE_FOUR_MOMENT_FIELD.md).
 
-The completed-coordinate comparison in degrees three through five is
-replayed by
+The current completed-coordinate checker can rerun the degree-three-through-
+five comparison with
 
 ```bash
 .venv/bin/python scripts/research_completed_moment_algebra.py \
   --degrees 3 4 5 --max-weight 10
 ```
+
+The pinned `completed_moment_algebra_bounded_tests.json` is a historical
+schema produced at Git revision `c91498bbca857b568a9961e776416fcba8de6713`
+by source SHA-256
+`4ddc8bcaf025ef7992f6ac9a7c6e32ef6974372ac8475bf633f9b6a35a30575c`.
+The current checker adds automatic-invariant and Casimir-ladder fields, so the
+command above is not a byte-identical regeneration of that legacy JSON.
 
 This exploratory checker constructs the quadratic Casimir decompositions,
 verifies the coefficient rows
@@ -8724,6 +8767,13 @@ The automatic missing-invariant and \(d=6\) extension is replayed by
   --skip-relation-tests --power-witness-cutoff 12 \
   --ladder-beta-check 32 \
   --output artifacts/generated-results/automatic_missing_invariants_d3_d6.json
+```
+
+To check the committed legacy, automatic, diagonal, and single-phase ledgers
+without running SymPy or Singular, use
+
+```bash
+python3 scripts/audit_completed_moment_artifacts.py
 ```
 
 The refined weight-zero-minus-weight-two calculation splits the invariant
@@ -8869,6 +8919,13 @@ restrictions are replayed by
 .venv/bin/python \
   scripts/research_degree_four_q2_cubic_decomposition.py \
   --prime 32003 --timeout 180
+```
+
+For a maintenance-only check of the two committed artifacts and their timeout
+boundaries, without importing SymPy or launching Singular, run
+
+```bash
+python3 scripts/audit_degree_four_q2_moment_artifacts.py
 ```
 
 After the forced equation \(x_7=0\), the checker proves the radical of
@@ -9152,6 +9209,35 @@ PYTHONPATH=scripts .venv/bin/python \
 .venv/bin/python scripts/verify_two_variable_quartic_squarefree_pivot.py
 .venv/bin/python scripts/verify_two_variable_quartic_two_root_finite.py
 ```
+
+For a solver-free integrity audit of the committed two-row theorem artifacts,
+run
+
+```bash
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_two_row_channel.py \
+  --audit-existing-only
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_two_row_boundaries.py \
+  --audit-existing-only
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_two_row_off_diagonal.py \
+  --audit-existing-only
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_two_row_off_diagonal_boundaries.py \
+  --audit-existing-only
+.venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_rank_two_single_shear.py \
+  --audit-existing-only
+PYTHONPATH=scripts .venv/bin/python \
+  scripts/verify_two_pair_sic_bidegree44_rank_two_double_shear_real_prefix.py \
+  --audit-census-only
+```
+
+These modes reconstruct the exact canonical support or row-pair keys and
+validate the stored strata, rank covers, unit outcomes, delayed fibres, and
+shear-chart labels; they do not rerun the characteristic-zero elimination or
+the double-shear Krawczyk certificate.
 
 The dependency-free checker verifies the determinantal dimensions
 \(r(10-r)\) for \(1\leq r\leq4\), exact representatives of ranks one
@@ -13805,6 +13891,15 @@ The fixed-coordinate normalized sparse-support exclusions are replayed by:
 .venv/bin/python plane-jc/cas/verify_sparse_support_exclusions.py
 ```
 
+The solver-free cleanup check pins the committed JSON and Singular certificate
+and audits their scope metadata without enumerating the 14.6-million or
+5.29-million support regressions:
+
+```bash
+.venv/bin/python plane-jc/cas/verify_sparse_support_exclusions.py \
+  --audit-existing-only
+```
+
 For `F=(x+P,y+Q)` with `P,Q` having no terms below degree two, the
 arbitrary-degree proof classifies every exact support split `1+q` and
 `q+1`, `q<=5`.  All charts are unit ideals except the quadratic, cubic, and
@@ -13841,6 +13936,7 @@ Intentional artifact regeneration uses `--refresh`.
 The exact affine-support/Newton bridge audit is:
 
 ```bash
+.venv/bin/python plane-jc/cas/verify_affine_support_newton_bridge.py --audit-existing-only
 .venv/bin/python plane-jc/cas/verify_affine_support_newton_bridge.py
 .venv/bin/python plane-jc/cas/classify_f2_75_125_layers.py
 .venv/bin/python plane-jc/cas/reduce_f2_75_125_endpoint_system.py
@@ -14403,6 +14499,22 @@ parallelism and without changing the pinned external snapshot, run:
 make verify-plane-72-108-exact-fast PYTHON=/absolute/path/to/venv/bin/python
 ```
 
+The later compact determinantal proof has a single verifier that joins its
+adjacent-minor characteristic-zero decision to both archived special-fibre
+certificates and the exact sign-branch transport.  Its committed-input audit
+does no Singular work or large certificate multiplication:
+
+```bash
+.venv/bin/python scripts/verify_jc72_108_case1_determinantal_closure.py \
+  --audit-existing-only
+```
+
+The complete exact replay is intentionally separate:
+
+```bash
+.venv/bin/python scripts/verify_jc72_108_case1_determinantal_closure.py
+```
+
 GPU backends are intentionally deferred.  They may later be used for modular
 or bounded discovery workloads only when their output has a separate portable
 CPU verifier.
@@ -14432,11 +14544,14 @@ Replay the exact coefficient reconstruction, Galois audit, linear maps, and
 terminal Singular unit ideal with:
 
 ```bash
+.venv/bin/python scripts/verify_jc2_degree108_belyi_deformations.py \
+  --audit-existing-only
 .venv/bin/python scripts/verify_jc2_degree108_belyi_deformations.py
 make verify-plane-72-108-belyi-deformations
 ```
 
-Add `--quick` to the direct verifier command to skip Singular while replaying
+The first command is a committed-artifact audit and performs no reconstruction
+or solver work. Add `--quick` to the direct verifier command to skip Singular while replaying
 all preceding exact stages against the pinned terminal result.  The canonical
 claim boundary and formulas are in
 [`plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md`](plane-jc/JC2_72_108_BELYI_DEFORMATION_CLOSURE.md).
@@ -14602,7 +14717,18 @@ This checks the degree-free support and parity identities behind `HC4FSD1`,
 the top-face and complementary-minor proof of `HC4FSD2`, the exact
 all-lower-layer coefficient identities and unrestricted binary regressions
 behind `HC4FSD3`, and the exact Taylor/cofactor proof of `HC4MYGJ2`.  The
-original discovery regressions are
+cleanup-only command
+
+```bash
+.venv/bin/python scripts/verify_hc4_all_degree_frontends.py \
+  --audit-existing-only
+```
+
+instead validates the committed degree-4--8/order-1--12 regression grid,
+scope warning, and generating-source hash without SymPy or Singular replay.
+The artifact's lower-layer recommendation is a historical discovery-time
+record superseded by `HC4FSD3`, not a live handoff.  The original discovery
+regressions are
 replayed with
 
 ```bash
@@ -14692,6 +14818,8 @@ builder are:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_reverse_schur_descent.py
+# committed inputs and historical/current scope only; no symbolic replay:
+.venv/bin/python scripts/verify_hc4_reverse_schur_descent.py --audit-existing-only
 ```
 
 The command generates
@@ -14705,9 +14833,15 @@ constant-Hessian gradient fiber, hence a singleton by `HC3`.  This closes
 the homogeneous scalar cone-pencil stratum and intersects it trivially with
 all 318/306 live affine-degree-two/three projective-polar rows.  The same
 checker constructs the exact corank-minor, integrability, collision, and
-Schur equations for matrix pivots.  Nonhomogeneous scalar pencils with an
-`x`-moving kernel line, nonsingular scalar pencils with determinant-term
-cancellation, and moving matrix-pivot kernel planes remain open.  See
+Schur equations for matrix pivots. The artifact's broad frontier is
+discovery-time data: `HC4RSD2--5` later close affine-in-`x` kernel lines and
+fixed two-component constant-support kernels, and `HC4MR1` closes the
+nonzero-corner auxiliary constant-Hessian-pencil branch. Fixed
+three/four-component kernels, parameter-moving nonlinear generators,
+nonlinear zero-corner exact remainders, and moving matrix-pivot planes remain.
+The audit-only form hash-checks the committed ledger, its consumed
+projective-polar atlas, and the imported equation helper without importing
+SymPy or rewriting the artifact. See
 [`HC4_REVERSE_SCHUR_DESCENT.md`](HC4_REVERSE_SCHUR_DESCENT.md).
 
 Continue from constant kernel directions to the first affine moving-kernel
@@ -14715,6 +14849,8 @@ stratum with:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_affine_moving_kernel_pencils.py
+# committed inputs and later handoffs only; no symbolic replay:
+.venv/bin/python scripts/verify_hc4_affine_moving_kernel_pencils.py --audit-existing-only
 ```
 
 Together with the classification argument in the accompanying note, these
@@ -14730,12 +14866,15 @@ whose every scalar Schur descendant has an explicit triangular polynomial
 inverse.  The generated artifact is
 `artifacts/generated-results/hc4_affine_moving_kernel_pencils.json`.
 The affine branch left by `HC4RSD2` is parameter-moving, with primitive
-kernel form `v0(x)+s*v1(x)`.
+kernel form `v0(x)+s*v1(x)`; `HC4RSD3` later closes it. The audit-only mode
+also pins the consumed projective-polar atlas and shared equation helper.
 
 Close that parameter-moving affine branch with:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_parameter_moving_affine_kernel_pencils.py
+# committed inputs and exact boundary only; no symbolic replay:
+.venv/bin/python scripts/verify_hc4_parameter_moving_affine_kernel_pencils.py --audit-existing-only
 ```
 
 Together with the proof in
@@ -14747,11 +14886,15 @@ to a fixed line, the constant-at-infinity corner is inconsistent, and the
 sole moving common-covector integral has Hessian rank at most two. The
 generated ledger is
 `artifacts/generated-results/hc4_parameter_moving_affine_kernel_pencils.json`.
+The audit-only mode pins that ledger and the shared equation helper while
+requiring the nonlinear-in-`x` boundary to remain explicit.
 
 The first degree-unbounded nonlinear continuation is:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_univariate_shear_kernel_pencils.py
+# committed inputs and historical/current frontier only; no symbolic replay:
+.venv/bin/python scripts/verify_hc4_univariate_shear_kernel_pencils.py --audit-existing-only
 ```
 
 This supports `HC4RSD4`. For an arbitrary nonconstant `P(z,w)`, the fixed
@@ -14763,12 +14906,16 @@ polynomial inverse for every Schur descendant. See
 [`HC4_UNIVARIATE_SHEAR_KERNEL_PENCILS.md`](HC4_UNIVARIATE_SHEAR_KERNEL_PENCILS.md).
 The generated ledger is
 `artifacts/generated-results/hc4_univariate_shear_kernel_pencils.json`.
+The audit-only mode pins that ledger and the shared helper and records that
+`HC4RSD5` subsequently closes its broad fixed two-component handoff.
 
 Continue from one transverse-polynomial shear component to a unimodular
 pair with:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_two_component_quasitranslation_kernels.py
+# committed inputs and exact boundary only; no symbolic replay:
+.venv/bin/python scripts/verify_hc4_two_component_quasitranslation_kernels.py --audit-existing-only
 ```
 
 Together with
@@ -14784,6 +14931,10 @@ on an affine line. A constant active-coordinate change reduces the kernel
 to the `HC4RSD4` shear form, whose descendants have triangular polynomial
 inverses. The generated ledger is
 `artifacts/generated-results/hc4_two_component_quasitranslation_kernels.json`.
+The audit-only mode pins that ledger and the shared helper; it retains fixed
+three/four-component and parameter-moving nonlinear singular kernels as the
+current boundary and does not reopen the nonzero-corner auxiliary pencil
+closed by `HC4MR1`.
 
 Test whether a direct HC4 candidate is covered by an affine singular
 scalar pivot with:
@@ -14828,10 +14979,24 @@ at a common parent pivot value, whether its reduced Hessian is singular or
 lies in the nonsingular exact-remainder branch. The generated ledger is
 `artifacts/generated-results/hc4_affine_pivot_collision_fibers.json`.
 
+Audit the two committed affine-pivot ledgers without symbolic replay or
+rewriting them with:
+
+```bash
+.venv/bin/python scripts/verify_hc4_affine_pivot_coverage_gate.py --audit-existing-only
+.venv/bin/python scripts/verify_hc4_affine_pivot_collision_fibers.py --audit-existing-only
+```
+
+The first frontier remains live only for classifying affine Schur
+representations; `HC4RSD7` bypasses it for inherited collisions.  The second
+continues to keep nonlinear pivots and different-fiber collisions open.
+
 Begin the nonlinear scalar-pivot branch with:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_quadratic_pivot_rank_obstruction.py
+# committed `HC4RSD8` stage artifact only, without symbolic replay:
+.venv/bin/python scripts/verify_hc4_quadratic_pivot_rank_obstruction.py --audit-existing-only
 ```
 
 Together with
@@ -14845,8 +15010,9 @@ square equals a nonzero constant times `det(s*Q3+H)`, which has degree three
 in `s`. The bordered unit makes the affine entries of `grad(A)` generate the
 unit ideal, forcing a nonzero linear slice on `ker Hess(A)` and hence the
 normal form `A=w+u^T*Qr*u/2`. The checker also gives an exact rank-two
-fixed-kernel calibration, so the bound is sharp. The remaining quadratic
-frontier is the rank-one and rank-two moving-kernel locus. In rank two, the
+fixed-kernel calibration, so the bound is sharp. At the `HC4RSD8` stage, the
+remaining quadratic frontier was the rank-one and rank-two moving-kernel
+locus; `HC4RSD9--10` subsequently close it. In rank two, the
 passive binary Hessian of `B` is singular. Its rank-zero stratum has
 `det(M)=det(D)^2` and reduces to the fixed-support two-component kernel
 theorem `HC4RSD5`; only passive rank one is genuinely new. The generated
@@ -14857,6 +15023,8 @@ Close the rank-two quadratic branch with:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_quadratic_rank_two_pivots.py
+# committed `HC4RSD9` stage artifact only, without symbolic replay:
+.venv/bin/python scripts/verify_hc4_quadratic_rank_two_pivots.py --audit-existing-only
 ```
 
 Together with
@@ -14877,6 +15045,8 @@ Close the final passive three-by-three branch with:
 
 ```bash
 .venv/bin/python scripts/verify_hc4_quadratic_rank_one_pivots.py
+# committed `HC4RSD10` stage artifact only, without symbolic replay:
+.venv/bin/python scripts/verify_hc4_quadratic_rank_one_pivots.py --audit-existing-only
 ```
 
 Together with
@@ -14896,11 +15066,17 @@ recovery of all four variables. Hence all quadratic scalar pivots in the
 identically singular reduced-pencil programme are collision-free. The
 generated ledger is
 `artifacts/generated-results/hc4_quadratic_rank_one_pivots.json`.
+The three audit-only commands preserve their discovery-stage frontier fields:
+`HC4RSD8` is closed by `HC4RSD9--10`, `HC4RSD9` by `HC4RSD10`, and the
+quadratic/higher-pencil handoffs in `HC4RSD10` by `HC4RSD11--16` and
+`HC4MR1`.  They do not recompute or rewrite the ledgers.
 
 Split and classify the scalar exact-cancellation branch with:
 
 ~~~bash
 .venv/bin/python scripts/verify_hc4_scalar_cancellation_dichotomy.py
+# committed `HC4RSD11--16` stage artifact only, without symbolic replay:
+.venv/bin/python scripts/verify_hc4_scalar_cancellation_dichotomy.py --audit-existing-only
 ~~~
 
 Together with
@@ -14922,12 +15098,18 @@ in the exceptional type it fixes the distinguished passive covector or
 collapses the form to the first type. Thus every quadratic scalar pencil
 reduces to HC2 or exactly JC2. The generated ledger is
 `artifacts/generated-results/hc4_scalar_cancellation_dichotomy.json`.
+Its higher-degree constant-Hessian-pencil `open_frontier` is the historical
+handoff at `HC4RSD16`; `HC4MR1` later closes that entire auxiliary pencil
+branch.  The audit-only command checks this distinction without rewriting the
+stage artifact.
 
 Continue to arbitrary rank-one and leading-rank-three cubic pencil
 directions, including the residual tangent-ruling classification, with:
 
 ~~~bash
 .venv/bin/python scripts/verify_hc4_higher_degree_pencil_obstructions.py
+# committed `HC4RSD17--28` stage artifact only, without symbolic replay:
+.venv/bin/python scripts/verify_hc4_higher_degree_pencil_obstructions.py --audit-existing-only
 ~~~
 
 Together with
@@ -14954,6 +15136,10 @@ coefficients through degree four, degree-five coefficients with non-pure
 leading quintic, and every degree-six coefficient with non-pure leading
 sextic are closed. The generated ledger is
 `artifacts/generated-results/hc4_higher_degree_pencil_obstructions.json`.
+Its `open_frontier` field records the historical endpoint at `HC4RSD28`; it
+is superseded by the degree-seven closure `HC4RSD40` and the all-degree
+auxiliary-pencil master reduction `HC4MR1`.  The audit-only command verifies
+that stage boundary without rewriting the historical artifact.
 
 Close the remaining pure-fifth chart, and hence obtain HC4RSD24 and the
 complete quintic bordered lemma HC4BL5, with:
@@ -15148,6 +15334,20 @@ whose nonzero locus is exactly the square-Hessian resonance
 The checker also verifies the global affine-transverse identity that makes
 the only nonempty zero strata fixed cylinders. The ledger is
 `artifacts/generated-results/hc4_pure_septic_quartic_packets.json`.
+
+For cleanup of all twelve committed `HC4RSD29--40` stage ledgers without
+running any of the symbolic generators above, use:
+
+~~~bash
+python3 scripts/audit_hc4_scalar_pencil_stage_artifacts.py
+~~~
+
+This stdlib-only command verifies each whole-file hash and its exact
+status/format mapping. It performs no determinant expansion, Singular run,
+search, or artifact rewrite. The stage sequence closes scalar degrees six
+and seven at `HC4RSD32` and `HC4RSD40`; `HC4MR1` later closes the full
+auxiliary relative-nilpotent pencil branch without proving unrestricted
+`HC4`.
 
 The same checker now continues into degree five.  On \(x_1=0\) it proves
 
@@ -15433,6 +15633,19 @@ a constant determinant would satisfy all sampled equalities, so a unit
 sampled ideal excludes the complete constant locus without interpolation.
 The generated artifact SHA-256 is
 `e92465e4991e7635f07fcc70895995f5d0465a1c3b816a6c9a88643500865e30`.
+
+For cleanup and provenance review, audit all ten committed `HC4MCP1--10`
+ledgers without rerunning any of the searches or Singular calculations:
+
+```bash
+python3 scripts/audit_hc4_mixed_canonical_artifacts.py
+```
+
+This dependency-free check pins the exact artifact bytes and enforces the
+finite-box versus coefficient-uniform scope split.  In particular,
+`HC4MCP10` removes the coefficient and constant-direction bounds only on the
+54 `HC4MCP6` resonance families; it does not classify moving pivots, other
+supports, or longer canonical words.
 
 The direct one-variable calculation for the `PC(2)` graph is:
 
@@ -16079,6 +16292,19 @@ diagnostics and are not used by `HC4QSE4`.
 
 The degree-three cube-torsion research modes are:
 
+<!-- status-consumer: HC4QSE5 f3a101cdb7150e40 -->
+
+For cleanup-only verification of their already committed outputs and the
+later fourth-power support ledger, without importing SymPy or invoking
+Singular, run:
+
+```bash
+python3 scripts/audit_hc4_fitting_denominator_artifacts.py
+```
+
+The commands below are the original expensive generators and are not part of
+that maintenance audit.
+
 ```bash
 .venv/bin/python \
   scripts/verify_hc4_quintic_two_parameter_symmetric_schur.py \
@@ -16146,6 +16372,19 @@ standard basis and supplies no factorization.  See
 The direct collision-normalized finite-field experiment in degree bounds
 five through eight is:
 
+<!-- status-consumer: HC4FF1 c659c03cbc63d15e -->
+
+```bash
+.venv/bin/python scripts/audit_hc4_finite_field_search_artifacts.py
+```
+
+That cleanup-only command hash-checks all five committed ledgers and their
+three generating sources, verifies the exact `45,181,194`-choice sparse
+domain and `400`-family/`800`-ideal sampled domain, and requires every stored
+solver status to be `unit`.  It performs no enumeration or Singular replay
+and deliberately makes no characteristic-zero inference.  Full regeneration
+begins with:
+
 ```bash
 .venv/bin/python scripts/search_hc4_finite_field_potentials.py \
   --degrees 5 6 7 8 \
@@ -16155,7 +16394,7 @@ five through eight is:
   --output artifacts/generated-results/hc4_finite_field_sparse_search.json
 ```
 
-It exhausts one- and two-direction affine perturbations in the full linear
+It exhausts nonempty one- and two-direction affine perturbations in the full linear
 kernel of the normalized gradient-collision condition, totaling 45,181,194
 coefficient choices.  No exact modular candidate survives.  This is a
 bounded experiment, not evidence for unrestricted `HC_4`; its construction
@@ -16611,18 +16850,38 @@ and three.  The Macaulay2 replay checks multiplicities \(2,3,4\).
 The higher-\(X_0\)-torsion failure locus remains open, so this is not an
 unconditional row deletion.
 
+For cleanup of the complete committed `HC4PPG1--9` Python artifact chain
+without running any of the symbolic or Macaulay2 commands above, use:
+
+```bash
+python3 scripts/audit_hc4_projective_polar_artifacts.py
+```
+
+This stdlib-only audit pins the shared Segre helper and verifies the atlas,
+Rees-strata, vertex-colength, codimension-three, and binary-root ledgers by
+whole-file hash and semantic boundary. It preserves 624 rows as necessary
+numerical configurations rather than existence results and keeps the
+higher-torsion and exceptional codimension-three packets open.
+
 ## All-dimensional projective-gradient Segre machinery
 
 Verify the canonical
 \((g_0,\ldots,g_n)\leftrightarrow(\sigma_1,\ldots,\sigma_n)\) transform,
 the actual affine-gradient and full-polar constructors, the leading
-integrability/Euler reconstruction, and regenerate the typed family registry
+integrability/Euler reconstruction, and check the pinned typed family registry
 with:
 
 ```bash
 .venv/bin/python scripts/verify_projective_gradient_segre_machinery.py
 .venv/bin/python scripts/verify_projective_gradient_normal_slices.py
 .venv/bin/python scripts/verify_projective_gradient_singular_slices.py
+```
+
+For cleanup-only byte, provenance, coverage, and scope validation without
+importing SymPy or invoking Macaulay2, run:
+
+```bash
+python3 scripts/audit_projective_gradient_segre_artifacts.py
 ```
 
 Independently compute the exact plane-cotangent and
@@ -16635,11 +16894,18 @@ M2 --script scripts/verify_projective_gradient_normal_slices.m2
 M2 --script scripts/verify_projective_gradient_singular_slices.m2
 ```
 
-The Python commands write
+The Python commands compare their generated serialization with
 `artifacts/generated-results/projective_gradient_segre_registry.json` and
 the smooth and singular normal-slice ledgers
 `artifacts/generated-results/projective_gradient_normal_slices.json` and
 `artifacts/generated-results/projective_gradient_singular_slices.json`.
+They do not rewrite those files by default; use `--write` only after an
+intentional theorem, regression-range, or schema change.  The three artifact
+SHA-256 values are, respectively,
+`1678eac19cc8e59a123ec84836f8f2a89f3b697a29c241e3b26e6987180fd00f`,
+`5853c8fa609879663b31f680591a5e612ab944b1637902de5dcd115c9400837b`,
+and
+`c6971874b5359e4aed11a8918328804f9ffdd6e67811f49c9ff79b2a8c5d7b72`.
 Complete multidegree/Segre vectors, top-degree-only transport controls, and
 explicit families with uncomputed vectors are distinct record types.  The
 normal-slice artifact records the dimension-free complete-intersection
@@ -17293,6 +17559,8 @@ prolongation are replayed by
 .venv/bin/python scripts/verify_hc4_affine_plane_bridge.py
 .venv/bin/python scripts/verify_hc4_affine_plane_prolongation.py
 # or: make verify-hc4-relative-nilpotent-final-packet
+# committed-artifact maintenance only, without symbolic replay or rewrite:
+.venv/bin/python scripts/verify_hc4_affine_plane_prolongation.py --audit-existing-only
 ```
 
 The first command certifies the affine middle foliation and its two transverse
@@ -17303,7 +17571,9 @@ determinant, and certifies the lower-rank split `p*r=0` together with the exact
 `artifacts/generated-results/hc4_affine_plane_prolongation.json`.  The final
 `p=0` closure is the degree-one hyperplane-incidence proof in
 `HC4_AFFINE_PLANE_SCHUBERT_BRIDGE.md`; it is not represented as a bounded
-symbolic computation.
+symbolic computation.  The maintenance-only mode above hash-checks the stored
+local prolongation and requires that this written-proof boundary remain in its
+payload; it does not replay the theorem.
 
 ## HC4 nonreduced Hessian--Schur module
 
@@ -17569,6 +17839,8 @@ Replay the first generic basepoint-free simple-line gate with
 ~~~bash
 .venv/bin/python scripts/verify_hc4_smooth_quartic_squarefree_line_generic.py
 # or: make verify-hc4-smooth-quartic-squarefree-line-generic
+# provenance only, without constructing equations or running Singular:
+.venv/bin/python scripts/verify_hc4_smooth_quartic_squarefree_line_generic.py --audit-existing-only
 ~~~
 
 `HC4NHM16` constructs the 81 exact reciprocal/Hessian coefficient equations
@@ -17586,6 +17858,8 @@ Replay the first exceptional-divisor slices with
 .venv/bin/python scripts/verify_hc4_smooth_quartic_squarefree_line_exceptional_slices.py
 # or one slice: add --group NAME
 # or: make verify-hc4-smooth-quartic-squarefree-line-exceptional-slices
+# provenance only, without constructing strata or running Singular:
+.venv/bin/python scripts/verify_hc4_smooth_quartic_squarefree_line_exceptional_slices.py --audit-existing-only
 ~~~
 
 `HC4NHM17` verifies nine exact strata inside the first visible generic-basis
@@ -17620,6 +17894,8 @@ Exclude the generic point of that polar conic with
 ~~~bash
 .venv/bin/python scripts/verify_hc4_smooth_quartic_polar_conic_generic_gate.py
 # or: make verify-hc4-smooth-quartic-polar-conic-generic
+# provenance only, without constructing equations or running Singular:
+.venv/bin/python scripts/verify_hc4_smooth_quartic_polar_conic_generic_gate.py --audit-existing-only
 ~~~
 
 `HC4NHM22` uses the universal polar point `[p:q:r]=[1:3:1]` to give a
@@ -17653,6 +17929,8 @@ Close the generic points of those final two normal forms with
 ~~~bash
 .venv/bin/python scripts/verify_hc4_smooth_quartic_final_line_orbits.py
 # or: make verify-hc4-smooth-quartic-final-line-orbits
+# provenance only, without constructing the exact field or coefficient matrices:
+.venv/bin/python scripts/verify_hc4_smooth_quartic_final_line_orbits.py --audit-existing-only
 ~~~
 
 `HC4NHM24` fixes one Fermat root and works over the exact quartic field
@@ -17671,7 +17949,7 @@ characteristic-zero function-field certificate, not a finite-field
 inference.  Those finite lower linear-pivot and witness-determinant strata
 remain open.
 The checker hash is
-`sha256:ce8b2830aa93bf7c96fd1ab3164890d0321e824c1941f6ca278daf2076381684`;
+`sha256:227121c0a6de7f1fd52d48ad3d00dd3a1ade910bd50702a15dce09614b5f6534`;
 the imported 81-equation builder hash is
 `sha256:99f3f94c9ee4bac0a489f25916ff290b076d33e7165e88b0a952754548c419ec`.
 See
@@ -17729,6 +18007,14 @@ Audit the invariant-ring target and its required clean saturation with
 # or: make verify-hc4-double-conic-invariant-saturation
 ~~~
 
+For cleanup-only source-provenance validation, without reconstructing the
+harmonic witness, run:
+
+~~~bash
+.venv/bin/python scripts/verify_hc4_double_conic_invariant_saturation_gate.py \
+  --audit-existing-only
+~~~
+
 `HC4NHM21` defines the clean elimination ideal as the four-layer ideal
 saturated by the three coefficients of `Phi2`.  The checker harmonically
 decomposes `h5=x^5+z^5`, verifies all four normal layers vanish, and checks
@@ -17737,7 +18023,8 @@ the discriminant can belong to the unsaturated ideal.  It also records a
 GIT-stable repeated-root decic with zero discriminant, showing that even a
 correct post-saturation discriminant certificate closes only the squarefree
 open.  The all-stable target is nullcone containment for the contraction to
-the binary-decic invariant ring.  See
+the binary-decic invariant ring.  Both modes fail closed if the hash-pinned
+normal-layer helper source has drifted.  See
 [`HC4_DOUBLE_CONIC_INVARIANT_SATURATION_GATE.md`](HC4_DOUBLE_CONIC_INVARIANT_SATURATION_GATE.md).
 
 ## HC4 direct repeated-linear Hessian-factor gates
@@ -17752,13 +18039,25 @@ top-Hessian obstruction with
 
 This regenerates
 `artifacts/generated-results/hc4_direct_homogeneous_filtration.json` and
-checks the determinant-face identities used by `HC4DIR2`.  Then replay the
+checks the first two determinant-face identities used by `HC4DIR2`; the
+all-degree conclusion is the written squarefree-divisibility and negative-
+degree argument.  To validate the committed artifact without symbolic replay
+or rewriting it, use
+
+```bash
+.venv/bin/python scripts/verify_hc4_direct_homogeneous_filtration.py \
+  --audit-existing-only
+```
+
+Then replay the
 exact all-degree normal-form and boundary-jet identities for `HC4-DIR3--27`
 with
 
 ```bash
 .venv/bin/python scripts/verify_hc4_direct_double_linear_hessian_gate.py
 # or: make verify-hc4-direct-repeated-linear
+# committed-artifact maintenance only, without symbolic replay or rewrite:
+.venv/bin/python scripts/verify_hc4_direct_double_linear_hessian_gate.py --audit-existing-only
 ```
 
 The command regenerates
@@ -17776,6 +18075,9 @@ coefficient that eliminates the apparent rank-two order-two degree-six split.
 It also verifies the rank-one fraction-field integration used by `HC4-DIR5`,
 which collapses the remaining order-one system to
 `D=6`, `f=C*ell^6+h_6(y,z)`, and `L=ell*partial_ell`.
+The maintenance-only mode checks the committed artifact's exact generic and
+lower-rank endpoints plus its written UFD/DVR proof boundary; it does not
+reconstruct these identities or rewrite the artifact.
 The final weighted-binary channel check verifies `HC4-DIR6`: after the forced
 `w^2*ell^2` and `w^3` coefficients are substituted, the next determinant
 channel is `(128/3375)*(alpha^5/C^3)*det Hess_(y,z)(h_6)`, closing exact
@@ -18367,8 +18669,11 @@ The alternate application proof is
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK f968ac0d6fa311fb -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 40745008c2fe2a80 -->
+<!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 252991e141c42e55 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 6b9d34ae8d722280 -->
+<!-- status-consumer: EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS 01298fec30fa94a3 -->
 
 ```bash
 python3 elkies-k3/scripts/certify_ns0024_direct_qq_inose_obstruction.py --check
@@ -18439,17 +18744,25 @@ negatively over `QQ`.
 The arithmetic-gated planner ranking is replayed by
 
 ```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_golay_det720_qq_marking_obstruction.sage --check
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
+python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
 ```
 
-The first command checks the exact NS/T/Clifford records for all 66
-lattice-feasible surfaces, classifies one as arithmetically possible, two as
-excluded, and 63 as unknown, and verifies that no new different-NS row is
-eligible for equation dispatch. The second removes the two proved
-obstructions from the ranking and leaves 64 arithmetic candidates.
-Determinant `720` is the first unresolved different-NS gate after the
-determinant-948 same-surface control.
+The first command reconstructs both determinant-720 Clifford orders, computes
+the `S3` discriminant action and stable curve `X_0(60)`, checks its genus and
+cusps, and imports the exact determinant-20 saturation boundary. With the
+named Mazur--Kenku and marked-period inputs, it excludes a full rational
+determinant-720 marking. The classifier then checks all 66 lattice-feasible
+rootless-MW17 surfaces, recording one arithmetically possible control, three
+exclusions, 62 unknowns, and an empty new equation handoff. The determinant
+ranking retains 63 candidates including the realized determinant-948
+control. The final command reverses the global foundry: it orders all 827
+transcendental rows before NS/rootless inspection, records an 823-row
+arithmetic research queue with 24 coarse genus-at-most-two diagnostics, and
+keeps the new NS handoff empty until a full marked rational point is proved.
 
 ### Integral rank-transfer and character-glue calculus
 
@@ -19057,7 +19370,7 @@ zero-section degree one.  Together with the general lower bound for distinct
 
 ### Complete 43-chart norm-twelve record-lineage sweep
 
-<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 291a539d07b842b9 -->
+<!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 
 Compile every certified shared-zero norm-twelve chart, normalize and quotient
 its `j`-map, decide the original seven record/lineage target equations, then
@@ -19148,6 +19461,38 @@ sage -python \
   elkies-k3/scripts/rank_r17_norm12_11952_alternate_norm8_pencils.sage \
   --source-label norm12-orbit-08f72 --check
 ```
+
+### Native `074d9` record-to-record carrier transfer
+
+Replay the complete rigid atlas, the canonical and cheapest-16 norm-eight
+transfer screens, and the bounded late-label holdout audit:
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_r17_074d9_cross_fibre_bisection_transfer.sage \
+  --check
+
+sage -python \
+  elkies-k3/scripts/certify_r17_074d9_norm8_cross_fibre_transfer.sage \
+  --check
+
+sage -python \
+  elkies-k3/scripts/audit_r17_074d9_late_point_interpolation.sage \
+  --check
+```
+
+The rigid split-count/span pairs at curves 351, 356, 376, 377, and 385 are
+`7/6,2/2,28/5,7/5,2/2`; the two record split sets are disjoint.  For the
+canonical trace and the first sixteen finite-pole traces, the frozen
+norm-eight matrices have diagonal rank twelve and zero off-diagonal splits.
+All five repeated labels `P18,...,P22` miss the declared four-train/one-holdout
+templates.  Curve 12 belongs to the `11952` fibration and is recorded as not
+applicable rather than as a zero.  See
+[`elkies-k3/R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md`](elkies-k3/R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md).
+
+<!-- status-consumer: EC-K3-R17-074D9-RIGID-CROSS-FIBRE-TRANSFER abbedd192865f172 -->
+<!-- status-consumer: EC-K3-R17-074D9-NORM8-CROSS-FIBRE-TRANSFER-16 262e405b0adbbb73 -->
+<!-- status-consumer: EC-K3-R17-074D9-LATE-POINT-HOLDOUT 284e0f92def23419 -->
 
 ### Direct `norm12-orbit-11952` alternate-Q80 equation
 

@@ -240,6 +240,13 @@ def beam_combine_projective(
     height_weight: float,
     beam_coefficient_radius: int,
 ) -> tuple[BeamState, ...]:
+    """Return a deterministic heuristic frontier, never an exhaustive sieve.
+
+    Partial rational-representative height is not monotone under further CRT
+    constraints.  A finite beam can therefore discard a state whose completed
+    representative would be better than every survivor.  The returned states
+    are candidate proposals only; absence from the beam proves nothing.
+    """
     if beam_width < 1:
         raise ValueError("beam_width must be positive")
     initial = BeamState(0, 1, 1, (), 0, ((1, 0), (0, 1)), (0, 1, 1), 0.0)
@@ -626,8 +633,11 @@ def main() -> None:
         "status": "PASS_BOUNDED_HEURISTIC_PROJECTIVE_CRT_GAUSS_CONSTRUCTOR",
         "proof_boundary": (
             "This is a bounded Nagao-score constructor and disjoint-prime rerank. "
-            "Scores, beam survival, and CRT profiles are not rank evidence. Exact "
-            "specialization, when requested, does not evaluate sections or search points."
+            "Scores, beam survival, and CRT profiles are not rank evidence. Partial "
+            "rational-representative height is nonmonotone under added CRT constraints, "
+            "so candidates discarded by the finite beam are not mathematically excluded. "
+            "Exact specialization, when requested, does not evaluate sections or search "
+            "points."
         ),
         "model_sha256": model.source_sha256,
         "prior_h10000": {
