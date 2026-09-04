@@ -2,7 +2,8 @@
 
 <!-- status-consumer: EC-K3-H3-Q12O5867-POINT-FACTORY 9399c93ee42ee2a4 -->
 <!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
-<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 185d31609e7702fc -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE e482668e1208f764 -->
+<!-- status-consumer: EC-K3-DET1236-RATIONAL-CM-LOCUS bd6ab0e86ca70ab2 -->
 
 The Makefile is the public verification interface.  Run commands from the
 repository root after creating the Python environment described in the main
@@ -18697,7 +18698,7 @@ The alternate application proof is
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
 <!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK d569364c553007a2 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6043be45b20f8241 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER eec5710ee1b498ab -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
 <!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
@@ -18780,6 +18781,10 @@ The arithmetic-gated planner ranking is replayed by
   elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage --check
 sage -- elkies-k3/scripts/certify_det1236_genus2_rational_points.sage --check
 sage -python elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage --check
+sage elkies-k3/scripts/audit_det1236_v4_local_consistency.sage write
+sage elkies-k3/scripts/audit_det1236_v4_local_consistency.sage 7 write
+sage elkies-k3/scripts/certify_det1236_rational_cm_locus.sage check
+sage elkies-k3/scripts/certify_det1236_candidate_double_cover.sage check
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
 python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
@@ -18807,7 +18812,23 @@ replay identifies the exact genus-six curve
 quadratic discriminant `-24` CM fixed fiber. It imports the complete
 fourteen-point quotient certificate, separates both fixed fibers, and leaves
 twelve explicit non-fixed fibers for the degree-two rational-lift
-obstruction. Exact level-618 modular symbols identify the six rank-one
+obstruction. The two local-audit commands evaluate even zeros by their leading
+units and prove that the proposed complementary Prym factors are compatible at
+`p=5,7`. The candidate-cover command then verifies an exact characteristic-zero
+squareclass, its divisor and norm, its Prym traces at eight primes through
+extension degree three, and every non-fixed rational fibre. Four base points
+have rational fibres for the displayed twist, conditionally giving eight
+rational lifts; its `-3` twist has none. Exact class-field arithmetic proves
+that the candidate field is the unique cubic `QQ`-isomorphism class in the
+discriminant-`-1236` Hilbert class field, without yet identifying its
+particular point on `618f1`. The complete CM residue-field check
+proves independently that the marked curve has exactly ten rational CM points,
+so all eight conditional lifts are CM and their count forces the displayed
+twist once the branch divisor is identified. These finite Euler-factor checks
+do not identify that cubic-field point with the actual marked Shimura CM
+branch image.
+Exact level-618 modular
+symbols identify the six rank-one
 elliptic factors of `Jac(C_1236)`, the two-factor genus-two part, and the
 four-factor Prym; classical Chabauty is at rank equal to genus, while the
 quadratic-Chabauty dimension screen passes. The replay issues

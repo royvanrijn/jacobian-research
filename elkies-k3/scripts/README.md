@@ -1,7 +1,10 @@
 # Elkies K3 script map
 
 <!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
-<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 185d31609e7702fc -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE e482668e1208f764 -->
+<!-- status-consumer: EC-K3-DET1236-V4-LOCAL-CONSISTENCY deb09ed7326145f9 -->
+<!-- status-consumer: EC-K3-DET1236-CANDIDATE-DOUBLE-COVER fecec75b4ff1e8e1 -->
+<!-- status-consumer: EC-K3-DET1236-RATIONAL-CM-LOCUS bd6ab0e86ca70ab2 -->
 
 <!-- status-consumer: EC-K3-R17-NORM12-HIGHEST-RANK-TRANSPORTS c4c8a81fc735fea2 -->
 <!-- status-consumer: EC-K3-R17-NORM12-PROSPECTIVE-FAMILY-HOLDOUT 8fb7417663ea1d98 -->
@@ -1476,7 +1479,7 @@ The current proof boundary and replay commands are in
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
 <!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK d569364c553007a2 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6043be45b20f8241 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER eec5710ee1b498ab -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
 <!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
@@ -1556,7 +1559,7 @@ The current proof boundary and replay commands are in
   rational points at infinity. This certificate deliberately makes no claim
   about rational lifts to the degree-two marked curve.
 - `certify_det1236_marked_shimura_curve.sage` closes Phase 1 for the
-  positive-directed content-one cyclic row. It reconstructs the literal
+  content-one cyclic row now reduced to a near-exclusion. It reconstructs the literal
   Eichler order `(D,N)=(6,103)`, computes the complete eight-element
   Atkin--Lehner action on `A_T=Z/1236Z`, and identifies the exact projective
   stable curve as the genus-six `X_0^6(103)/<w_618>`. It also verifies the
@@ -1570,8 +1573,10 @@ The current proof boundary and replay commands are in
   `Jac(B) ~ 618e1 x 618f1` and four-factor Prym `618a1 x ... x 618d1`.
   Every factor has rank one: classical Chabauty is at rank equal to genus,
   while the split-Jacobian quadratic-Chabauty dimension screen passes. Its output is
-  `UNRESOLVED_FOR_EXPLICIT_REASON`: the degree-two rational lift from the
-  genus-two quotient, not a K3 equation, is the next gate.
+  `UNRESOLVED_FOR_EXPLICIT_REASON`.  The subsequent exact cover candidate and
+  complete CM-locus certificate reduce the remaining gate to identifying the
+  candidate's particular cubic-field point with the marked Shimura CM branch
+  image.
 - `explore_det1236_double_cover_local_gate.sage` enumerates normalized
   genus-three squareclasses over selected finite fields and records the
   possible local values at the six non-fixed elliptic images.  Its local
@@ -1579,10 +1584,38 @@ The current proof boundary and replay commands are in
 - `audit_det1236_v4_local_consistency.sage` exhaustively enumerates
   `P(L(6*O))(F_p)` and simultaneously tests a genus-three squareclass `b`
   and its product with the known `B -> 618f1` class `(X-4)/54`.  At `p=5`
-  and `p=7` it proves that no branch-degree-four class realizes the Prym
-  traces forced by the currently asserted `618a1*618b1 | 618c1*618d1`
-  partition.  This is an exact inconsistency in the proposed quotient-factor
-  reconstruction input, not an arithmetic exclusion of `C_1236`.
+  and `p=7` it now evaluates even zeros by their leading local units and finds
+  respectively 24 and 56 branch-degree-four classes realizing the Prym traces
+  forced by `618a1*618b1 | 618c1*618d1`.  Literal-square unit tests prevent
+  regression to the former incorrect zero-at-every-zero convention.  This is
+  exact local compatibility, not a global cover certificate.
+- `search_det1236_cm_orbit_cover.sage` searches the rank-two Mordell--Weil
+  group over the discriminant-`-1236` cubic field for a divisor matching the
+  unique local classes.  It finds `P=9G+2A`, but labels it only a candidate
+  because a bounded search does not identify a Shimura CM orbit.
+- `certify_det1236_rational_cm_locus.sage` applies Gonzalez--Rotger
+  Corollary 5.14 to the complete class-number-one/two order lists. Exact local
+  embedding and residue-field calculations leave precisely discriminants
+  `-3,-43,-67`, contributing `2+4+4=10` rational CM points on the marked
+  curve. This is a complete CM-locus theorem, independent of the candidate
+  cover identification.
+- `certify_det1236_candidate_double_cover.sage` verifies the resulting exact
+  divisor, norm factorization, smooth canonical plane quartic, and pullback
+  squareclass
+  `3*(-81*x^6-534*x^4+8*x^2*y-177*x^2+8*y+24)`.  It evaluates all twelve
+  non-fixed rational fibres and verifies the two complementary Prym trace
+  triples at eight primes.  It also proves that its discriminant-`-1236`
+  cubic field is the unique cubic `QQ`-isomorphism class inside the relevant
+  Hilbert class field; identifying the particular `E(K)` point remains the
+  characteristic-zero obstruction.  Four base points, hence eight normalization
+  points, lift conditionally. It also proves from the complete
+  class-number-one/two lists and Gonzalez--Rotger residue fields that the
+  actual marked curve has exactly ten rational CM points: two of discriminant
+  `-3` and four each of `-43` and `-67`. Hence all eight conditional lifts are
+  CM and their count rules out the no-lift twist once the branch divisor is
+  identified. Its status remains `UNRESOLVED_FOR_EXPLICIT_REASON` only until
+  the cubic CM branch orbit is identified with the marked Shimura cover in
+  characteristic zero.
 - `build_arithmetic_first_marked_t_foundry.py` reverses the global foundry
   order. It ranks all 827 `T` rows without consulting rootless-frame data,
   retains coarse genus only as a diagnostic, propagates exact marking
@@ -4143,15 +4176,55 @@ selected fibration and section map are replayed with:
 
 ```bash
 sage -python compile_icarm_curve398_hidden_a1_mw16.sage --check
+
+sage -python compile_icarm_curve398_second_a1_mw16_collision.sage --check
 ```
 
 The compiler verifies the `I2+22I1` fibre configuration, exact rational
 parameter, all 166 degree-one old sections, a saturated determinant-474 MW16
 basis, and its primitive embedding in the public rank-30 group.  It also
 writes the separately redacted input consumed by the blind adaptive search.
+The second compiler verifies the other survivor's 180-element degree-one
+shell and saturated MW16 basis, then proves that its specialized integral
+subgroup equals the first parent's subgroup.  Their intersection and sum have
+rank 16, and the Smith quotient in public `M30` is torsion-free `Z^14`.
 See
 [`../../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](../../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md).
 <!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY a22fcfb1ea6844aa -->
+<!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 3021f19bf0594dcf -->
+
+## Target-generic ICARM A1/MW16 atlas
+
+`screen_icarm_norm8_a1_fibrations.sage` generalizes the frozen curve-398
+projective modular `j` gate to any equation in the pinned 573-curve snapshot.
+`run_icarm_norm8_a1_atlas.py` chains good-prime checkpoints, records one first
+exclusion witness for every rejected class, and sends only survivors to
+`certify_icarm_norm8_a1_survivors.sage` for exact `QQ` factorization and
+twist-sensitive isomorphism.  The exact hits are compiled by
+`compile_icarm_norm8_a1_survivors.sage`; `build_icarm_a1_mw16_atlas.py`
+verifies and compacts the whole campaign.
+
+```bash
+python3 run_icarm_norm8_a1_atlas.py \
+  --curve-ids 302,273,542,548,399,400,403,401,402,10 --resume
+
+python3 build_icarm_a1_mw16_atlas.py --check
+```
+
+The complete 63,917-class layer hits curves 398, 400, 401, 542, and 548 and
+compiles nine fibrations.  It misses 302, 273, 399, 403, 402, and 10 exactly
+within the declared layer.  `screen_icarm_fixed_mw15_fibrations.sage` starts
+the requested next level from the exact fixed-corridor `2A1/MW15` equation;
+its present scope is one fibration, and it excludes 302 and 273 modulo 1019
+and 1009 respectively.
+
+```bash
+sage -python screen_icarm_fixed_mw15_fibrations.sage --check
+```
+
+See
+[`../ICARM_A1_MW16_ATLAS_2026-09-04.md`](../ICARM_A1_MW16_ATLAS_2026-09-04.md).
+<!-- status-consumer: EC-K3-ICARM-A1-MW16-ATLAS 847ddc36ab6f56b5 -->
 
 ## Marked-U realization planner
 

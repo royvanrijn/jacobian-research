@@ -1,0 +1,217 @@
+{
+  "analysis_boundary_correction": {
+    "effect": "curve 478 certifies rank at least 23, two above its displayed rank-21 subgroup; curve 539 has equal blind and displayed ranks but a nonintegral-containment issue. Both exact blind rank scores remain valid.",
+    "frozen_score_definition_changed": false,
+    "frozen_statistics_or_thresholds_changed": false,
+    "removed_extra_unfrozen_requirement": "the v1 verifier required every blind point to be an integral combination of the displayed public basis, although the protocol defined the score only as exact rank gain in E(Q)/MW17"
+  },
+  "claim_boundary": [
+    "The exact permutation test conditions on this fixed atlas-refresh panel and tied margins.",
+    "The displayed jumps are certified subgroup quotients, not full Mordell-Weil ranks.",
+    "Passing does not replace the separately required residual 2-Selmer gate for rank-32 promotion.",
+    "Protocol v2 is transparently post-curve-478 because v1 used a false cross-class deepest-count assertion."
+  ],
+  "confirmatory": {
+    "joint_decision": {
+      "action": "retain half-lattice recovery as a usable extreme-jump detector, subject to the separate residual 2-Selmer gate",
+      "both_endpoints_required": true,
+      "passed": true
+    },
+    "ordinal_association": {
+      "concordance_minus_discordance": 78,
+      "exact_one_sided_permutation_p": 2.5128641200069772e-05,
+      "exact_p_denominator": 2421619200,
+      "exact_p_numerator": 60852,
+      "kendall_tau_b": 0.7503122325921043,
+      "null_assignment_count": 2421619200,
+      "passed": true,
+      "predeclared_acceptance": "tau_b >= 0.35 and exact one-sided p <= 0.05",
+      "score_tied_pair_count": 13,
+      "truth_tied_pair_count": 19
+    },
+    "upper_tail_enrichment": {
+      "detector_positive_rate_in_true_tail": 0.875,
+      "detector_positive_rate_outside_true_tail": 0.0,
+      "detector_positive_threshold": 10,
+      "exact_p_denominator": 1430,
+      "exact_p_numerator": 1,
+      "fisher_exact_one_sided_p": 0.0006993006993006993,
+      "odds_ratio": "Infinity",
+      "passed": true,
+      "predeclared_acceptance": "risk difference >= 0.25 and one-sided Fisher exact p <= 0.05",
+      "risk_difference": 0.875,
+      "table": {
+        "non_tail_detector_negative": 8,
+        "non_tail_detector_positive": 0,
+        "true_tail_detector_negative": 1,
+        "true_tail_detector_positive": 7
+      },
+      "true_tail_threshold": 10
+    }
+  },
+  "descriptive": {
+    "all_blind_basis_points_integral_in_opened_displayed_subgroup_count": 14,
+    "by_displayed_jump": [
+      {
+        "case_count": 1,
+        "exact_blind_recovered_ranks": [
+          3
+        ],
+        "mean_exact_blind_recovered_rank": 3.0,
+        "true_displayed_jump": 3
+      },
+      {
+        "case_count": 1,
+        "exact_blind_recovered_ranks": [
+          6
+        ],
+        "mean_exact_blind_recovered_rank": 6.0,
+        "true_displayed_jump": 4
+      },
+      {
+        "case_count": 1,
+        "exact_blind_recovered_ranks": [
+          5
+        ],
+        "mean_exact_blind_recovered_rank": 5.0,
+        "true_displayed_jump": 5
+      },
+      {
+        "case_count": 2,
+        "exact_blind_recovered_ranks": [
+          6,
+          6
+        ],
+        "mean_exact_blind_recovered_rank": 6.0,
+        "true_displayed_jump": 6
+      },
+      {
+        "case_count": 3,
+        "exact_blind_recovered_ranks": [
+          8,
+          8,
+          8
+        ],
+        "mean_exact_blind_recovered_rank": 8.0,
+        "true_displayed_jump": 8
+      },
+      {
+        "case_count": 1,
+        "exact_blind_recovered_ranks": [
+          10
+        ],
+        "mean_exact_blind_recovered_rank": 10.0,
+        "true_displayed_jump": 10
+      },
+      {
+        "case_count": 6,
+        "exact_blind_recovered_ranks": [
+          0,
+          10,
+          11,
+          11,
+          11,
+          11
+        ],
+        "mean_exact_blind_recovered_rank": 9.0,
+        "true_displayed_jump": 11
+      },
+      {
+        "case_count": 1,
+        "exact_blind_recovered_ranks": [
+          12
+        ],
+        "mean_exact_blind_recovered_rank": 12.0,
+        "true_displayed_jump": 12
+      }
+    ],
+    "full_344_chart_cases": 15,
+    "integral_public_containment_failure_curve_ids": [
+      478,
+      539
+    ],
+    "overall_recovery_fraction": "126/136",
+    "structural_zero_43_chart_cases": [
+      544
+    ],
+    "total_displayed_jump": 136,
+    "total_exact_blind_recovered_rank": 126,
+    "total_pari_failures": 0,
+    "total_timeouts": 0
+  },
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_blind_v2.json": "0699b53c2bc7d77673231bc0d377dc725880efd26a18d1eb2af613d28578c165",
+    "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_protocol_v2.json": "d080c990d32b24e76695db393db276d29b620462478f1840efc0bb122537d737",
+    "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_verification_v2.json": "06d3e0a097a40bad50d6a0698fd7dbb4a06021149b570f43e583152eddf3eaa4",
+    "elliptic-curves/cas/analyze_r17_refresh_jump_ladder.py": "9639e6ddcf2ac325ac4c11145058e8e1574299b4c11367b0174fa112bd3eaf88",
+    "elliptic-curves/cas/analyze_r17_refresh_jump_ladder_v2.py": "57cc7efb82064df3d9cf728eef1a39cd138cba8daef63bb9dbff60aace518da2"
+  },
+  "response": [
+    {
+      "curve_id": 478,
+      "exact_quotient_rank_recovered_before_public_complement": 6
+    },
+    {
+      "curve_id": 498,
+      "exact_quotient_rank_recovered_before_public_complement": 6
+    },
+    {
+      "curve_id": 531,
+      "exact_quotient_rank_recovered_before_public_complement": 11
+    },
+    {
+      "curve_id": 532,
+      "exact_quotient_rank_recovered_before_public_complement": 3
+    },
+    {
+      "curve_id": 534,
+      "exact_quotient_rank_recovered_before_public_complement": 11
+    },
+    {
+      "curve_id": 535,
+      "exact_quotient_rank_recovered_before_public_complement": 10
+    },
+    {
+      "curve_id": 536,
+      "exact_quotient_rank_recovered_before_public_complement": 11
+    },
+    {
+      "curve_id": 537,
+      "exact_quotient_rank_recovered_before_public_complement": 10
+    },
+    {
+      "curve_id": 538,
+      "exact_quotient_rank_recovered_before_public_complement": 5
+    },
+    {
+      "curve_id": 539,
+      "exact_quotient_rank_recovered_before_public_complement": 6
+    },
+    {
+      "curve_id": 540,
+      "exact_quotient_rank_recovered_before_public_complement": 8
+    },
+    {
+      "curve_id": 541,
+      "exact_quotient_rank_recovered_before_public_complement": 8
+    },
+    {
+      "curve_id": 543,
+      "exact_quotient_rank_recovered_before_public_complement": 12
+    },
+    {
+      "curve_id": 544,
+      "exact_quotient_rank_recovered_before_public_complement": 0
+    },
+    {
+      "curve_id": 545,
+      "exact_quotient_rank_recovered_before_public_complement": 11
+    },
+    {
+      "curve_id": 546,
+      "exact_quotient_rank_recovered_before_public_complement": 8
+    }
+  ],
+  "schema": "elliptic-curves.r17-refresh-jump-ladder-analysis.v2",
+  "status": "PASS_USABLE_EXTREME_JUMP_DETECTOR"
+}

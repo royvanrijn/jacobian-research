@@ -1,0 +1,704 @@
+{
+  "actual_marked_curve_rational_cm_locus": {
+    "completeness_argument": "For C_1236=X_0^6(103)/<w_618>, Gonzalez--Rotger Corollary 5.14 makes the residue degree at least h(R), except in its two-involution case where it is at least h(R)/2. Hence a rational CM image forces h(R)<=2. The complete class-number-one/two order lists and exact local optimal-embedding factors leave precisely -3, -43, and -67, contributing 2, 4, and 4 rational marked points.",
+    "conditional_cover_consequence": "If the displayed candidate is C_1236, its total rational point count is 2 fixed plus 8 non-fixed. This equals the complete ten-point rational CM locus, so every conditional lift is CM. The -3 twist has only the two fixed rational points and therefore cannot be the actual marked descent.",
+    "rational_cm_point_count": 10,
+    "rational_order_discriminants": [
+      -3,
+      -43,
+      -67
+    ],
+    "rows": [
+      {
+        "D_R": 2,
+        "N_R": 103,
+        "N_star_R": 103,
+        "class_number": 1,
+        "conductor": 1,
+        "field_discriminant": -3,
+        "local_embedding_factors_p2_p3_p103": {
+          "103": 2,
+          "2": 2,
+          "3": 1
+        },
+        "m_R": 3,
+        "m_over_m_R": 206,
+        "marked_curve_rational_cm_points": 2,
+        "order_discriminant": -3,
+        "rational_image_on_w618_quotient": true,
+        "top_curve_cm_points": 4
+      },
+      {
+        "D_R": 6,
+        "N_R": 103,
+        "N_star_R": 103,
+        "class_number": 1,
+        "conductor": 1,
+        "field_discriminant": -43,
+        "local_embedding_factors_p2_p3_p103": {
+          "103": 2,
+          "2": 2,
+          "3": 2
+        },
+        "m_R": 1,
+        "m_over_m_R": 618,
+        "marked_curve_rational_cm_points": 4,
+        "order_discriminant": -43,
+        "rational_image_on_w618_quotient": true,
+        "top_curve_cm_points": 8
+      },
+      {
+        "D_R": 6,
+        "N_R": 103,
+        "N_star_R": 103,
+        "class_number": 1,
+        "conductor": 1,
+        "field_discriminant": -67,
+        "local_embedding_factors_p2_p3_p103": {
+          "103": 2,
+          "2": 2,
+          "3": 2
+        },
+        "m_R": 1,
+        "m_over_m_R": 618,
+        "marked_curve_rational_cm_points": 4,
+        "order_discriminant": -67,
+        "rational_image_on_w618_quotient": true,
+        "top_curve_cm_points": 8
+      }
+    ]
+  },
+  "arithmetic_decision": {
+    "conditional_consequence": "If the candidate is the marked Shimura cover, the four non-fixed B-points (+/-1,48) and (+/-1/3,8/3) each have two rational normalization lifts. Together with the two fixed points these exhaust the complete ten-point rational CM locus. Thus the candidate would prove ARITHMETICALLY_EXCLUDED, not realizable.",
+    "precise_obstruction": "The candidate cubic field is already certified as the unique QQ-isomorphism class of cubic subfields in the discriminant -1236 Hilbert class field. Prove in characteristic zero that the particular point P=9G+2A is the image of that CM orbit on the specified Atkin-Lehner quotient. The exact rational CM count then forces the displayed constant twist, but until the branch-orbit identification is certified the displayed cover cannot be promoted to C_1236.",
+    "status": "UNRESOLVED_FOR_EXPLICIT_REASON"
+  },
+  "candidate": {
+    "branch_point_relation": "P=9G+2A",
+    "canonical_coordinates": "[U:V:W]=[X-58:Y-403:z]",
+    "cm_residue_field_match": {
+      "boundary": "This identifies the exact CM residue-field class, not the candidate point P with the Shimura CM image on E.",
+      "candidate_field_is_that_class": true,
+      "cm_class_group_invariants": [
+        6,
+        2
+      ],
+      "embedded_cubic_subfield_count": 3,
+      "embedded_cubic_subfield_discriminants": [
+        -1236,
+        -1236,
+        -1236
+      ],
+      "hilbert_class_field_absolute_degree": 24,
+      "hilbert_class_field_relative_degree": 12,
+      "quadratic_cm_field_discriminant": -1236,
+      "unique_cubic_QQ_isomorphism_class": true
+    },
+    "cover_squareclass": "2*(-X^3-328*X^2-2772*X+66512+(32*X+1600)*Y)",
+    "cubic_field": "a^3-a^2+4*a+12=0",
+    "cubic_field_discriminant": -1236,
+    "cubic_x_discriminant": -723372539904,
+    "cubic_x_polynomial": "X^3 - 216*X^2 - 6924*X - 62224",
+    "divisor": "(-3G)+Orbit(P)+2*(4G)-6O, P=(18*a^2-48*a+130,270*a^2-672*a+2059)",
+    "elliptic_base": "618f1: Y^2+X*Y=X^3-185*X+1401",
+    "generator": "G=(10,-29)",
+    "norm_factorization": "(X - 4) * (X - 58)^2 * (X^3 - 216*X^2 - 6924*X - 62224)",
+    "seed_point": "A=(-3*a^2-9*a-20,15*a^2-57*a-155)",
+    "smooth_canonical_plane_quartic": "87616*U^4 - 43784*U^3*V + 7944*U^2*V^2 - 608*U*V^3 + 16*V^4 + 268*U^2*W^2 - 118*U*V*W^2 + 10*V^2*W^2 + W^4",
+    "trace_relations": [
+      "Tr(A)=-16G",
+      "Tr(P)=-5G"
+    ]
+  },
+  "conditional_rational_lifting_points": [
+    [
+      "1",
+      "48"
+    ],
+    [
+      "-1",
+      "48"
+    ],
+    [
+      "1/3",
+      "8/3"
+    ],
+    [
+      "-1/3",
+      "8/3"
+    ]
+  ],
+  "conditional_rational_point_count_above_nonfixed_points": 8,
+  "elliptic_base_local_evaluations": [
+    {
+      "leading_squareclass": {
+        "is_square": false,
+        "squareclass": "-11",
+        "value": "-101376"
+      },
+      "leading_unit": "-101376",
+      "local_order": 0,
+      "multiple_of_G": 1,
+      "point": [
+        "10",
+        "-29"
+      ],
+      "value": "-101376"
+    },
+    {
+      "leading_squareclass": {
+        "is_square": true,
+        "squareclass": "1",
+        "value": "82944"
+      },
+      "leading_unit": "82944",
+      "local_order": 0,
+      "multiple_of_G": -1,
+      "point": [
+        "10",
+        "19"
+      ],
+      "value": "82944"
+    },
+    {
+      "leading_squareclass": {
+        "is_square": true,
+        "squareclass": "1",
+        "value": "36"
+      },
+      "leading_unit": "36",
+      "local_order": 2,
+      "multiple_of_G": 4,
+      "point": [
+        "58",
+        "403"
+      ],
+      "value": "0"
+    },
+    {
+      "leading_squareclass": {
+        "is_square": false,
+        "squareclass": "-2",
+        "value": "-5971968"
+      },
+      "leading_unit": "-5971968",
+      "local_order": 0,
+      "multiple_of_G": -4,
+      "point": [
+        "58",
+        "-461"
+      ],
+      "value": "-5971968"
+    },
+    {
+      "leading_squareclass": {
+        "is_square": false,
+        "squareclass": "-383",
+        "value": "-285907968/15625"
+      },
+      "leading_unit": "-285907968/15625",
+      "local_order": 0,
+      "multiple_of_G": 10,
+      "point": [
+        "154/25",
+        "-3193/125"
+      ],
+      "value": "-285907968/15625"
+    },
+    {
+      "leading_squareclass": {
+        "is_square": false,
+        "squareclass": "37",
+        "value": "2237248512/15625"
+      },
+      "leading_unit": "2237248512/15625",
+      "local_order": 0,
+      "multiple_of_G": -10,
+      "point": [
+        "154/25",
+        "2423/125"
+      ],
+      "value": "2237248512/15625"
+    },
+    {
+      "leading_squareclass": {
+        "is_square": true,
+        "squareclass": "1",
+        "value": "186624"
+      },
+      "leading_unit": "186624",
+      "local_order": 0,
+      "multiple_of_G": 3,
+      "point": [
+        "4",
+        "25"
+      ],
+      "value": "186624"
+    },
+    {
+      "leading_squareclass": {
+        "is_square": false,
+        "squareclass": "-2",
+        "value": "-5832"
+      },
+      "leading_unit": "-5832",
+      "local_order": 1,
+      "multiple_of_G": -3,
+      "point": [
+        "4",
+        "-29"
+      ],
+      "value": "0"
+    }
+  ],
+  "finite_field_prym_trace_matches": {
+    "extension_degrees": [
+      1,
+      2,
+      3
+    ],
+    "interpretation": "At every listed prime the candidate cover has Prym traces 618c1+618d1 and its product with h=(X-4)/54 has Prym traces 618a1+618b1. These exact finite computations are strong identification evidence, not a characteristic-zero isomorphism or modular-function proof.",
+    "primes": [
+      5,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31
+    ],
+    "rows": [
+      {
+        "degrees": [
+          {
+            "candidate_b_character_sum": 3,
+            "candidate_hb_character_sum": -1,
+            "degree": 1,
+            "target_618a1_618b1": -1,
+            "target_618c1_618d1": 3
+          },
+          {
+            "candidate_b_character_sum": 11,
+            "candidate_hb_character_sum": 15,
+            "degree": 2,
+            "target_618a1_618b1": 15,
+            "target_618c1_618d1": 11
+          },
+          {
+            "candidate_b_character_sum": -18,
+            "candidate_hb_character_sum": 8,
+            "degree": 3,
+            "target_618a1_618b1": 8,
+            "target_618c1_618d1": -18
+          }
+        ],
+        "prime": 5
+      },
+      {
+        "degrees": [
+          {
+            "candidate_b_character_sum": 9,
+            "candidate_hb_character_sum": -3,
+            "degree": 1,
+            "target_618a1_618b1": -3,
+            "target_618c1_618d1": 9
+          },
+          {
+            "candidate_b_character_sum": -1,
+            "candidate_hb_character_sum": -1,
+            "degree": 2,
+            "target_618a1_618b1": -1,
+            "target_618c1_618d1": -1
+          },
+          {
+            "candidate_b_character_sum": -54,
+            "candidate_hb_character_sum": -90,
+            "degree": 3,
+            "target_618a1_618b1": -90,
+            "target_618c1_618d1": -54
+          }
+        ],
+        "prime": 11
+      },
+      {
+        "degrees": [
+          {
+            "candidate_b_character_sum": -1,
+            "candidate_hb_character_sum": 5,
+            "degree": 1,
+            "target_618a1_618b1": 5,
+            "target_618c1_618d1": -1
+          },
+          {
+            "candidate_b_character_sum": 47,
+            "candidate_hb_character_sum": 35,
+            "degree": 2,
+            "target_618a1_618b1": 35,
+            "target_618c1_618d1": 47
+          },
+          {
+            "candidate_b_character_sum": 32,
+            "candidate_hb_character_sum": -130,
+            "degree": 3,
+            "target_618a1_618b1": -130,
+            "target_618c1_618d1": 32
+          }
+        ],
+        "prime": 13
+      },
+      {
+        "degrees": [
+          {
+            "candidate_b_character_sum": 6,
+            "candidate_hb_character_sum": 0,
+            "degree": 1,
+            "target_618a1_618b1": 0,
+            "target_618c1_618d1": 6
+          },
+          {
+            "candidate_b_character_sum": 32,
+            "candidate_hb_character_sum": 68,
+            "degree": 2,
+            "target_618a1_618b1": 68,
+            "target_618c1_618d1": 32
+          },
+          {
+            "candidate_b_character_sum": -90,
+            "candidate_hb_character_sum": 0,
+            "degree": 3,
+            "target_618a1_618b1": 0,
+            "target_618c1_618d1": -90
+          }
+        ],
+        "prime": 17
+      },
+      {
+        "degrees": [
+          {
+            "candidate_b_character_sum": 5,
+            "candidate_hb_character_sum": 7,
+            "degree": 1,
+            "target_618a1_618b1": 7,
+            "target_618c1_618d1": 5
+          },
+          {
+            "candidate_b_character_sum": 59,
+            "candidate_hb_character_sum": 11,
+            "degree": 2,
+            "target_618a1_618b1": 11,
+            "target_618c1_618d1": 59
+          },
+          {
+            "candidate_b_character_sum": -220,
+            "candidate_hb_character_sum": 112,
+            "degree": 3,
+            "target_618a1_618b1": 112,
+            "target_618c1_618d1": -220
+          }
+        ],
+        "prime": 19
+      },
+      {
+        "degrees": [
+          {
+            "candidate_b_character_sum": 6,
+            "candidate_hb_character_sum": 0,
+            "degree": 1,
+            "target_618a1_618b1": 0,
+            "target_618c1_618d1": 6
+          },
+          {
+            "candidate_b_character_sum": 2,
+            "candidate_hb_character_sum": 74,
+            "degree": 2,
+            "target_618a1_618b1": 74,
+            "target_618c1_618d1": 2
+          },
+          {
+            "candidate_b_character_sum": 288,
+            "candidate_hb_character_sum": 0,
+            "degree": 3,
+            "target_618a1_618b1": 0,
+            "target_618c1_618d1": 288
+          }
+        ],
+        "prime": 23
+      },
+      {
+        "degrees": [
+          {
+            "candidate_b_character_sum": -3,
+            "candidate_hb_character_sum": -3,
+            "degree": 1,
+            "target_618a1_618b1": -3,
+            "target_618c1_618d1": -3
+          },
+          {
+            "candidate_b_character_sum": -1,
+            "candidate_hb_character_sum": -1,
+            "degree": 2,
+            "target_618a1_618b1": -1,
+            "target_618c1_618d1": -1
+          },
+          {
+            "candidate_b_character_sum": -252,
+            "candidate_hb_character_sum": -252,
+            "degree": 3,
+            "target_618a1_618b1": -252,
+            "target_618c1_618d1": -252
+          }
+        ],
+        "prime": 29
+      },
+      {
+        "degrees": [
+          {
+            "candidate_b_character_sum": 8,
+            "candidate_hb_character_sum": 10,
+            "degree": 1,
+            "target_618a1_618b1": 10,
+            "target_618c1_618d1": 8
+          },
+          {
+            "candidate_b_character_sum": 74,
+            "candidate_hb_character_sum": 74,
+            "degree": 2,
+            "target_618a1_618b1": 74,
+            "target_618c1_618d1": 74
+          },
+          {
+            "candidate_b_character_sum": -400,
+            "candidate_hb_character_sum": -680,
+            "degree": 3,
+            "target_618a1_618b1": -680,
+            "target_618c1_618d1": -400
+          }
+        ],
+        "prime": 31
+      }
+    ]
+  },
+  "fixed_cm_fibre_twist_fork": {
+    "alternative_nonfixed_rational_lifting_points": [],
+    "alternative_squareclass": "-3 times the displayed candidate",
+    "fibres": [
+      {
+        "B_point": [
+          "0",
+          "3"
+        ],
+        "candidate_local_representative": "144",
+        "candidate_residue_field": "QQ x QQ",
+        "minus_three_twist_residue_field": "QQ(sqrt(-3))"
+      },
+      {
+        "B_point": [
+          "0",
+          "-3"
+        ],
+        "candidate_local_representative": "-243",
+        "candidate_residue_field": "QQ(sqrt(-3))",
+        "minus_three_twist_residue_field": "QQ x QQ"
+      }
+    ],
+    "interpretation": "The genus-two model identifies the rational and quadratic fixed CM fibres only up to y-sign. Thus the fixed-fibre data alone leave precisely the displayed twist and its -3 twist as this reconstruction's two arithmetic outcomes."
+  },
+  "nonfixed_rational_point_evaluations": [
+    {
+      "B_point": [
+        "1",
+        "48"
+      ],
+      "E_image_multiple_of_G": 4,
+      "affine_pullback_value_3q": "0",
+      "normalization_fibre_squareclass": {
+        "is_square": true,
+        "squareclass": "1",
+        "value": "36"
+      },
+      "normalization_note": "even_zero_on_the_affine_model; normalization fibre is decided by the leading local unit",
+      "rational_normalization_fibre": true
+    },
+    {
+      "B_point": [
+        "-1",
+        "48"
+      ],
+      "E_image_multiple_of_G": 4,
+      "affine_pullback_value_3q": "0",
+      "normalization_fibre_squareclass": {
+        "is_square": true,
+        "squareclass": "1",
+        "value": "36"
+      },
+      "normalization_note": "even_zero_on_the_affine_model; normalization fibre is decided by the leading local unit",
+      "rational_normalization_fibre": true
+    },
+    {
+      "B_point": [
+        "1",
+        "-48"
+      ],
+      "E_image_multiple_of_G": -4,
+      "affine_pullback_value_3q": "-4608",
+      "normalization_fibre_squareclass": {
+        "is_square": false,
+        "squareclass": "-2",
+        "value": "-4608"
+      },
+      "normalization_note": "ordinary_nonzero_fibre",
+      "rational_normalization_fibre": false
+    },
+    {
+      "B_point": [
+        "-1",
+        "-48"
+      ],
+      "E_image_multiple_of_G": -4,
+      "affine_pullback_value_3q": "-4608",
+      "normalization_fibre_squareclass": {
+        "is_square": false,
+        "squareclass": "-2",
+        "value": "-4608"
+      },
+      "normalization_note": "ordinary_nonzero_fibre",
+      "rational_normalization_fibre": false
+    },
+    {
+      "B_point": [
+        "1/3",
+        "8/3"
+      ],
+      "E_image_multiple_of_G": -1,
+      "affine_pullback_value_3q": "64",
+      "normalization_fibre_squareclass": {
+        "is_square": true,
+        "squareclass": "1",
+        "value": "64"
+      },
+      "normalization_note": "ordinary_nonzero_fibre",
+      "rational_normalization_fibre": true
+    },
+    {
+      "B_point": [
+        "-1/3",
+        "8/3"
+      ],
+      "E_image_multiple_of_G": -1,
+      "affine_pullback_value_3q": "64",
+      "normalization_fibre_squareclass": {
+        "is_square": true,
+        "squareclass": "1",
+        "value": "64"
+      },
+      "normalization_note": "ordinary_nonzero_fibre",
+      "rational_normalization_fibre": true
+    },
+    {
+      "B_point": [
+        "1/3",
+        "-8/3"
+      ],
+      "E_image_multiple_of_G": 1,
+      "affine_pullback_value_3q": "-704/9",
+      "normalization_fibre_squareclass": {
+        "is_square": false,
+        "squareclass": "-11",
+        "value": "-704/9"
+      },
+      "normalization_note": "ordinary_nonzero_fibre",
+      "rational_normalization_fibre": false
+    },
+    {
+      "B_point": [
+        "-1/3",
+        "-8/3"
+      ],
+      "E_image_multiple_of_G": 1,
+      "affine_pullback_value_3q": "-704/9",
+      "normalization_fibre_squareclass": {
+        "is_square": false,
+        "squareclass": "-11",
+        "value": "-704/9"
+      },
+      "normalization_note": "ordinary_nonzero_fibre",
+      "rational_normalization_fibre": false
+    },
+    {
+      "B_point": [
+        "1/5",
+        "312/125"
+      ],
+      "E_image_multiple_of_G": -10,
+      "affine_pullback_value_3q": "1726272/15625",
+      "normalization_fibre_squareclass": {
+        "is_square": false,
+        "squareclass": "37",
+        "value": "1726272/15625"
+      },
+      "normalization_note": "ordinary_nonzero_fibre",
+      "rational_normalization_fibre": false
+    },
+    {
+      "B_point": [
+        "-1/5",
+        "312/125"
+      ],
+      "E_image_multiple_of_G": -10,
+      "affine_pullback_value_3q": "1726272/15625",
+      "normalization_fibre_squareclass": {
+        "is_square": false,
+        "squareclass": "37",
+        "value": "1726272/15625"
+      },
+      "normalization_note": "ordinary_nonzero_fibre",
+      "rational_normalization_fibre": false
+    },
+    {
+      "B_point": [
+        "1/5",
+        "-312/125"
+      ],
+      "E_image_multiple_of_G": 10,
+      "affine_pullback_value_3q": "-220608/15625",
+      "normalization_fibre_squareclass": {
+        "is_square": false,
+        "squareclass": "-383",
+        "value": "-220608/15625"
+      },
+      "normalization_note": "ordinary_nonzero_fibre",
+      "rational_normalization_fibre": false
+    },
+    {
+      "B_point": [
+        "-1/5",
+        "-312/125"
+      ],
+      "E_image_multiple_of_G": 10,
+      "affine_pullback_value_3q": "-220608/15625",
+      "normalization_fibre_squareclass": {
+        "is_square": false,
+        "squareclass": "-383",
+        "value": "-220608/15625"
+      },
+      "normalization_note": "ordinary_nonzero_fibre",
+      "rational_normalization_fibre": false
+    }
+  ],
+  "pullback_to_B": {
+    "B": "y^2=1944*x^6+441*x^4-90*x^2+9",
+    "exact_identity": "2*b0(X(x),Y(x,y))=3888*q=3*(36^2)*q",
+    "geometric_branch_degree": 6,
+    "map_to_E": [
+      "X=54*x^2+4",
+      "Y=9*y-27*x^2-2"
+    ],
+    "norm_factorization": "Norm_B(q)=81*x^2*(x^2-1)^2*(81*x^6-306*x^4-239*x^2-48)",
+    "normalization_genus": 6,
+    "squareclass": "3*(-81*x^6-534*x^4+8*x^2*y-177*x^2+8*y+24)"
+  },
+  "reproduce": "sage elkies-k3/scripts/certify_det1236_candidate_double_cover.sage",
+  "schema": "elkies-k3.det1236-candidate-double-cover.v1",
+  "status": "UNRESOLVED_FOR_EXPLICIT_REASON"
+}

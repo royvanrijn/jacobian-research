@@ -1,7 +1,10 @@
 # Determinant 1236: exact marked Shimura curve and remaining lift obstruction
 
 <!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
-<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 185d31609e7702fc -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE e482668e1208f764 -->
+<!-- status-consumer: EC-K3-DET1236-V4-LOCAL-CONSISTENCY deb09ed7326145f9 -->
+<!-- status-consumer: EC-K3-DET1236-CANDIDATE-DOUBLE-COVER fecec75b4ff1e8e1 -->
+<!-- status-consumer: EC-K3-DET1236-RATIONAL-CM-LOCUS bd6ab0e86ca70ab2 -->
 
 Date: 2026-09-04.
 
@@ -24,18 +27,23 @@ Its exact projective stable discriminant-kernel period curve is
 C_1236 = X_0^6(103)/<w_618>,     genus 6.
 ```
 
-This is no longer an unidentified marked curve. It has no cusps and has two
-certified rational CM points of discriminant `-3`. Those points are
-Picard-rank-20 specializations, so neither realizes the requested saturated
-rank-19 Neron--Severi lattice. No rational non-CM point on `C_1236` is
-currently certified.
+This is no longer an unidentified marked curve. It has no cusps and has
+exactly ten rational CM points: two of discriminant `-3` and four each of
+discriminants `-43` and `-67`. They are Picard-rank-20 specializations, so
+none realizes the requested saturated rank-19 Neron--Severi lattice. No
+rational non-CM point on `C_1236` is currently certified.
 
-The rational points on the displayed genus-two quotient are now complete:
-there are exactly fourteen. The precise remaining problem is to construct
-the degree-two map from `C_1236` to that quotient and decide which of its
-twelve non-fixed rational points have rational non-CM lifts. A positive lift
-would make the row `ARITHMETICALLY_REALIZABLE`; a proof that the two CM
-points exhaust `C_1236(QQ)` would make it `ARITHMETICALLY_EXCLUDED`. Until
+The rational points on the displayed genus-two quotient are complete: there
+are exactly fourteen.  An exact degree-two cover candidate has now been
+constructed and all twelve non-fixed fibres evaluated.  Its displayed twist
+would give eight rational lifts; its `-3` twist gives none.  A separate exact
+CM residue-field calculation proves that the marked curve has exactly ten
+rational CM points: two of discriminant `-3` and four each of discriminants
+`-43` and `-67`.  Thus all eight conditional non-fixed lifts are CM, and the
+no-nonfixed-lift twist cannot be the actual descent.  The precise remaining
+problem is only to identify the candidate's cubic branch orbit with the
+order-discriminant-`-1236` Shimura branch orbit in characteristic zero.  If
+that succeeds, the row is `ARITHMETICALLY_EXCLUDED`, not realizable. Until
 then no equation work is authorized.
 
 ## Literal lattice and discriminant form
@@ -300,16 +308,38 @@ non-fixed fibers whose lift squareclasses must be computed.
 | point class on `C_1236` | result |
 |---|---|
 | rational cusps | exactly 0 |
-| certified rational CM points | exactly 2 of discriminant `-3` |
+| certified rational CM points | exactly 10: 2 of discriminant `-3`, 4 of `-43`, and 4 of `-67` |
 | certified nonrational CM points | one quadratic closed point of discriminant `-24` |
-| other rational CM points | not determined |
-| rational non-CM points | not determined |
+| other rational CM points | none |
+| rational non-CM points | not determined until the candidate cover is identified |
 | certified desired rank-19 markings | 0 |
-| certified higher-Picard specializations | 2 |
+| certified higher-Picard specializations | 10 |
 
-The two known points add an algebraic class and have geometric Picard rank
-20. They are precisely the higher-Picard points that the arithmetic-first
-gate must not promote.
+Every CM point adds an algebraic class and has geometric Picard rank 20. None
+of the ten certified rational CM points can pass the exact-rank-19 gate.
+
+### Complete rational CM locus on the marked curve
+
+Gonzalez--Rotger Corollary 5.14 applies directly to
+`C_1236=X_0^6(103)/<w_618>`.  Apart from the exceptional two-involution case,
+the residue degree is at least the order class number `h(R)`; in that case it
+is at least `h(R)/2`.  Therefore a rational CM image forces `h(R)<=2`.
+Checking the complete class-number-one and class-number-two order lists with
+the exact local optimal-embedding factors leaves precisely
+
+```text
+order discriminant   top CM points   rational points on C_1236
+-3                         4                       2
+-43                        8                       4
+-67                        8                       4
+```
+
+For `-3`, `(D(R),N*(R),m_R,m/m_R)=(2,103,3,206)`; for `-43` and
+`-67` it is `(6,103,1,618)`.  In each case Corollary 5.14 gives residue
+field `QQ`.  The `w_618` action is free on the `-43` and `-67` loci and pairs
+the top-curve points.  No class-number-two order reaches the only residue
+configuration that could be rational.  Hence the displayed ten points are
+the complete rational CM locus, not merely known examples.
 
 The residue-field input is Corollary 5.14 of Gonzalez--Rotger,
 [*Non-elliptic Shimura curves of genus one*](https://doi.org/10.2969/jmsj/1179759530).
@@ -361,11 +391,10 @@ interpretation uses the classical Jacquet--Langlands correspondence and the
 ramified-place Atkin--Lehner sign normalization.
 
 This abstract isogeny accounting does not by itself identify the explicit
-quadratic characters in a published quotient model.  The exhaustive local
-audit below proves that the currently recorded `ab|cd` character assignment
-cannot be combined with the displayed `B -> 618f1` map.  Until that mismatch
-is reconciled, the pair labels in this precheck must not be used to construct
-the marked cover.
+quadratic characters in a published quotient model.  The corrected local
+audit below is compatible with the `ab|cd` character assignment and supplies
+a very rigid characteristic-zero candidate, but the final modular
+identification of its CM branch orbit is still required.
 
 ## Double-cover reconstruction audit
 
@@ -424,28 +453,7 @@ Enumerating all four projective charts over `F_p` and imposing the degree-one,
 degree-two, and degree-three Frobenius power traces of `618c1 x 618d1` gives
 the fail-closed local screen.
 
-The corrected replay at
-
-```text
-p = 5,7,11,13
-```
-
-leaves a locally square value for every one of
-
-```text
-+/-G, +/-4G, +/-10G.
-```
-
-It consequently proves no local exclusion at these primes.  A previous
-exploratory `p=13` nonsquare claim was invalid: the sign selecting the other
-quadratic twist is the value of a quadratic character, not literal
-multiplication by `-1`.  At primes `p=1 mod 4` those operations differ.  The
-current script applies the character sign itself and retains `+1` at the
-`+/-10G` fibers.  An additional exact replay at `p=17` also leaves
-`-1,0,+1` possible at all six images, so it supplies no local obstruction.
-
-There is, however, a more basic exact inconsistency in this proposed `V_4`
-input.  The known cover `B -> E` has squareclass
+The known cover `B -> E` has squareclass
 
 ```text
 h = (X-4)/54
@@ -459,100 +467,167 @@ exhaustive audit enumerates all
 #P(L(6*O))(F_5) = (5^6-1)/(5-1) = 3906
 ```
 
-projective classes.  Exactly `968` have branch degree four.  For each such
-class `b`, it computes over `F_25` the two character sums belonging to `b`
-and `h*b`.  The degree-two Frobenius targets forced by the asserted Pryms
-are
+projective classes.  Exactly `1040` have branch degree four, and `304` have
+branch degree four for both `b` and `h*b`.  For each class it computes over
+`F_25` the two character sums belonging to `b` and `h*b`.  The degree-two
+Frobenius targets forced by the asserted Pryms are
 
 ```text
 618a1 x 618b1 : 15,
 618c1 x 618d1 : 11.
 ```
 
-No class has signature `(15,11)` or `(11,15)`.  A constant quadratic twist
-cannot alter a degree-two character sum.  As a normalization check, the
-same routine gives character sum `6` for the explicit class `h`, exactly the
-degree-two target of `618e1`.  In fact the asserted target pair is absent
-even before imposing branch degree, so this conclusion does not depend on
-the branch-divisor filter.
+There are `24` compatible classes.  At `p=7`, the corresponding corrected
+counts are `3744`, `848`, and `56`.  The earlier zero counts were caused by
+evaluating `chi(b(P))=0` at every zero.  That is wrong at the auxiliary
+double zero `2Q`: its contribution is the quadratic character of the leading
+local unit after the square uniformizer is removed.  Literal-square unit
+tests now guard this convention.  The old upstream-inconsistency conclusion
+is withdrawn.
 
-The other pair partitions are diagnostic only: `ac|bd` also has no class,
-whereas `ad|bc` has four local classes.  Those four do not repair the
-argument, because changing the partition requires changing the asserted
-Atkin--Lehner eigenspace identification.  The conclusion is deliberately
-fail-closed.  A second exhaustive run at `p=7` checks all `19608`
-projective classes, of which `3476` have branch degree four.  It finds no
-class for the asserted targets `(20,8)` in either order; at this prime all
-three pair partitions fail, even without the branch-degree restriction.
-Thus the same inconsistency is visible at two good primes:
+The corrected degree-one-through-three `V_4` screen leaves four classes at
+`p=5,7` and two classes at each of `p=11,13,17,19`, one for each choice of
+rational branch point.  This is local compatibility, not yet a global cover.
 
-```text
-the displayed B/E squareclass and the asserted ab|cd V_4 factor partition
-cannot both be used as the reduction of the desired tower at p=5 or p=7.
-```
+## Exact characteristic-zero candidate
 
-This is not an arithmetic exclusion of `C_1236`, and it is not a proof that
-the twelve fibers fail to lift.  It blocks the proposed reconstruction
-route until the quotient involution and Jacquet--Langlands factor labels are
-reconciled.  Evaluating a squareclass produced from the inconsistent inputs
-would not be a certificate.
-
-The pinned Padurariu--Saia source makes the location of the discrepancy more
-specific.  At commit `6cc368fe37aa67187783118f18d149b2b1fd6230`, its genus-two
-tables attach the displayed model to the subgroup `<w_2,w_309>`, record that
-it has exactly one Atkin--Lehner bielliptic quotient, and identify that full
-`<w_2,w_3,w_103>` quotient with `618f1`.  Thus replacing `x -> -x` by the
-other visible bielliptic involution is not justified by the primary model
-data.  The unresolved audit must instead revisit the stable-quotient Prym
-assignment, including the rational descent implicit in passing from the
-projective marking kernel to the classical Jacquet--Langlands factors.
-
-The direct CM-field shortcut is also not certified.  The cubic field
+Put
 
 ```text
-K = QQ[a]/(a^3-a^2+4*a+12),    disc(K)=-1236,
+K = QQ[a]/(a^3-a^2+4*a+12),    disc(K)=-1236.
 ```
 
-is a tempting abstract cubic subfield of the ring class field.  On `E/K`,
-the known points
+This is not merely a cubic field with a suggestive discriminant.  Exact
+class-field arithmetic gives class group `C6 x C2` for
+`QQ(sqrt(-1236))`; its Hilbert class field has relative degree `12` and
+absolute degree `24`.  Its three embedded cubic subfields all have
+discriminant `-1236` and are `QQ`-isomorphic to `K`.  Thus `K` is the unique
+cubic residue-field isomorphism class available to the CM branch image.
+What this does not yet identify is the particular point of `E(K)`.
+
+On `E/K`, take
 
 ```text
 G=(10,-29),
-A=(-3*a^2-9*a-20, 15*a^2-57*a-155)
+A=(-3*a^2-9*a-20, 15*a^2-57*a-155).
 ```
 
-generate a saturated rank-two subgroup, and the rank bound is two.  This does
-not identify either point with the Shimura branch divisor: the required
-embedding of the CM orbit into this particular model of `E` is still absent.
-Consequently the abstract-field calculation supplies neither a cover
-certificate nor an obstruction.
+Exact addition in the splitting field gives `Tr(A)=-16G`.  The unique small
+global class matching the local survivors at `p=11,13,17,19` is
 
-The remaining explicit obstruction is therefore upstream of the CM-divisor
-calculation: first reconcile the exact quotient involution on the published
-genus-two model with the Atkin--Lehner eigenspaces.  Only then compute the
-order-discriminant `-1236` CM divisor on the correct genus-one quotient, or
-extend the Borcherds--Schofer cover reconstruction from a genus-zero
-Hauptmodul base to that genus-one base.  Once these data agree, the norm
-equation above determines the squareclass and all twelve fiber evaluations
-by exact linear algebra.
+```text
+P = 9G+2A
+  = (18*a^2-48*a+130, 270*a^2-672*a+2059),
+Tr(P) = -5G.
+```
+
+With rational branch point `-3G` and auxiliary double zero `Q=4G`, the sum
+`-3G+Tr(P)+2Q` is zero.  Exact linear algebra in `L(6O)` gives
+
+```text
+b0 = -X^3-328*X^2-2772*X+66512+(32*X+1600)*Y,
+
+div(b0) = (-3G)+Orbit(P)+2*(4G)-6O,
+
+Norm(b0) = (X-4)(X-58)^2
+           (X^3-216X^2-6924X-62224).
+```
+
+The last cubic is the minimal polynomial of `x(P)` and has discriminant
+`-1236*24192^2`.  The twist selected by the observed Jacquet--Langlands trace
+signs is
+
+```text
+D_candidate: z^2 = 2*b0.
+```
+
+This is much stronger than a local survivor.  For each of
+`p=5,11,13,17,19,23,29,31`, exact character sums over `F_(p^n)` for
+`n=1,2,3` agree with `618c1 x 618d1`; multiplying by
+`h=(X-4)/54` agrees with `618a1 x 618b1`.  The smooth canonical plane quartic
+of the candidate is
+
+```text
+87616 U^4 - 43784 U^3 V + 7944 U^2 V^2 - 608 U V^3 + 16 V^4
++ 268 U^2 W^2 - 118 U V W^2 + 10 V^2 W^2 + W^4 = 0,
+
+[U:V:W]=[X-58:Y-403:z].
+```
+
+These finitely many Euler-factor identities are exact evidence, but they are
+not a characteristic-zero isomorphism or modular-function proof.
+
+Pulling `2*b0` back to `B` gives the particularly small squareclass
+
+```text
+C_candidate:
+  Z^2 = 3*(-81*x^6-534*x^4+8*x^2*y-177*x^2+8*y+24).
+```
+
+Indeed `2*b0(X(x),Y(x,y))=3888*q=3*36^2*q`.  Its exact normalization-fibre
+norm is
+
+```text
+Norm_B(q) = 81*x^2*(x^2-1)^2
+            *(81*x^6-306*x^4-239*x^2-48).
+```
+
+The last factor is squarefree of degree six.  Thus the candidate cover of the
+genus-two curve has six geometric branch points and normalization genus six,
+as required.  Its exact normalization-fibre evaluations are:
+
+| points on `B` | image on `E` | squareclass | rational fibre? |
+|---|---:|---:|---|
+| `(+-1,48)` | `4G` | `1` (even zero, leading unit `36`) | yes |
+| `(+-1,-48)` | `-4G` | `-2` | no |
+| `(+-1/3,8/3)` | `-G` | `1` | yes |
+| `(+-1/3,-8/3)` | `G` | `-11` | no |
+| `(+-1/5,312/125)` | `-10G` | `37` | no |
+| `(+-1/5,-312/125)` | `10G` | `-383` | no |
+
+Thus the displayed candidate has four non-fixed rational fibres, hence eight
+rational normalization points.  The `-3` constant twist has no rational
+fibre at any of the twelve non-fixed points.  The two twists exchange the
+fixed CM behaviour: for the displayed candidate `(0,3)` has value `144`,
+whereas at `(0,-3)` the normalized leading unit has squareclass `-3`; the
+`-3` twist swaps the rational and quadratic fixed fibres.  Because the
+published model identifies those two CM image classes only up to `y`-sign,
+the fixed-point controls alone do not choose between these outcomes.
+
+The complete rational CM calculation does choose the outcome conditionally
+on the branch divisor.  The actual marked curve already has four rational
+CM points of discriminant `-43` and four of discriminant `-67`, besides its
+two discriminant-`-3` points.  Therefore the no-nonfixed-lift `-3` twist
+cannot be the marked descent.  For the displayed twist the total rational
+point count is `2+8=10`, exactly the complete rational CM count.  Consequently
+all eight conditional lifts are CM; none realizes the desired rank-19
+marking.
+
+The status remains `UNRESOLVED_FOR_EXPLICIT_REASON`.  One exact modular step
+is missing: the cubic CM residue-field class is now matched, but one must
+prove that the particular point `P=9G+2A` is the image of the
+order-discriminant-`-1236` CM orbit on this specified genus-one quotient. The
+rational CM count then forces its rational descent to have the displayed
+constant twist. This can be
+closed by an explicit characteristic-zero model/map for the genus-three
+quotient or by a Borcherds--Schofer CM-value calculation on the genus-one
+base. After that identification, the complete quotient-point and CM-locus
+certificates give `ARITHMETICALLY_EXCLUDED` immediately.
 
 ## Exact next task
 
 The next computation is narrow, not a broad rank or rational-point search:
 
-1. reconcile the `B -> E` quotient involution with the Atkin--Lehner
-   eigenspace partition flagged by the exact `p=5` audit;
-2. construct `C_1236 -> B` explicitly from the corrected data;
-3. compute its squareclass in `QQ(B)^*/QQ(B)^{*2}`;
-4. evaluate the twelve non-fixed rational fibers in the now-complete set
-   `B(QQ)`;
-5. distinguish rational non-CM lifts from CM points or points realizing a
-   saturated overlattice.
+1. identify the displayed canonical plane quartic with
+   `X_0^6(103)/<w_3,w_618>` over `QQ`, or compute the corresponding CM
+   modular value, thereby certifying the cubic orbit and constant twist;
+2. invoke the certified complete rational CM locus to identify all eight
+   non-fixed lifts as the discriminant-`-43` and `-67` points;
+3. issue `ARITHMETICALLY_EXCLUDED` for determinant `1236`.
 
-One non-CM rational lift is a positive certificate. A complete proof that
-only the two CM points lift is a negative certificate. Points on `B`,
-including the complete `+/-G`, `+/-4G`, and `+/-10G` fibers, remain
-quotient-level evidence until their fibers are evaluated.
+The squareclass and all twelve evaluations are exact for the candidate, and
+the CM/non-CM separation is complete conditionally on its identification.
+Only the marked Shimura branch-orbit identification remains open.
 
 ## Replay and independence
 
@@ -573,6 +648,14 @@ and
 [`../artifacts/generated-results/elkies-k3-det1236-v4-local-consistency-v1.json`](../artifacts/generated-results/elkies-k3-det1236-v4-local-consistency-v1.json),
 with the independent `p=7` output in
 [`../artifacts/generated-results/elkies-k3-det1236-v4-local-consistency-p7-v1.json`](../artifacts/generated-results/elkies-k3-det1236-v4-local-consistency-p7-v1.json).
+The exact candidate checker and fail-closed certificate are
+[`scripts/certify_det1236_candidate_double_cover.sage`](scripts/certify_det1236_candidate_double_cover.sage)
+and
+[`../artifacts/generated-results/elkies-k3-det1236-candidate-double-cover-v1.json`](../artifacts/generated-results/elkies-k3-det1236-candidate-double-cover-v1.json).
+The complete rational CM-locus checker and certificate are
+[`scripts/certify_det1236_rational_cm_locus.sage`](scripts/certify_det1236_rational_cm_locus.sage)
+and
+[`../artifacts/generated-results/elkies-k3-det1236-rational-cm-locus-v1.json`](../artifacts/generated-results/elkies-k3-det1236-rational-cm-locus-v1.json).
 
 ```bash
 sage -- elkies-k3/scripts/certify_det1236_genus2_rational_points.sage --fresh
@@ -582,8 +665,12 @@ sage -- elkies-k3/scripts/certify_det1236_genus2_rational_points.sage --check
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage --check
 sage elkies-k3/scripts/explore_det1236_double_cover_local_gate.sage 5 7
-sage elkies-k3/scripts/audit_det1236_v4_local_consistency.sage
-sage elkies-k3/scripts/audit_det1236_v4_local_consistency.sage 7
+sage elkies-k3/scripts/audit_det1236_v4_local_consistency.sage write
+sage elkies-k3/scripts/audit_det1236_v4_local_consistency.sage 7 write
+sage elkies-k3/scripts/search_det1236_cm_orbit_cover.sage 10
+sage elkies-k3/scripts/certify_det1236_rational_cm_locus.sage check
+sage elkies-k3/scripts/certify_det1236_candidate_double_cover.sage
+sage elkies-k3/scripts/certify_det1236_candidate_double_cover.sage check
 ```
 
 The replay reads only the lattice catalogue and its transcendental-arithmetic

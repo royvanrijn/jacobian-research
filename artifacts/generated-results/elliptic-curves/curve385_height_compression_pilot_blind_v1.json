@@ -1,0 +1,2795 @@
+{
+  "basis_rank_after": 29,
+  "basis_rank_before": 29,
+  "claim_boundary": [
+    "The candidate generator reads no new pilot-search outcome and calls no point search.",
+    "The source M29 ledger is used only for the current curve/lattice and to exclude repeated base points.",
+    "The signed-basis distortion minimum is a calibration statistic, not a certified global height bound.",
+    "The 256-seed local-maxima sample is not a complete enumeration of M29/2M29.",
+    "The selected charts form a bounded mechanism pilot, not a rank, saturation, or point-absence test."
+  ],
+  "classification": {
+    "basis_rank": 29,
+    "basis_sha256": "5a6d5ff70b409de413722e35b71e430025852639a71a166f2b7cfc288f27a230",
+    "discovered_nonbasis_point_count": 0,
+    "events": [],
+    "exact_integral_relation_count": 0,
+    "exact_integral_relations": [],
+    "status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+    "unresolved": []
+  },
+  "cover_records": [
+    {
+      "canonical_depth": "43.3494058063607375249378599824990973771",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -111.27771871470249,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -94.64435001727827,
+          "median": -125.31774191228858,
+          "minimum": -186.46360486245374
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 250,
+          "median": 250.0,
+          "minimum": 248
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 155.52054027835544,
+          "median": 87.41805121366558,
+          "minimum": 57.02189031406995
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 454223788,
+      "priority": 1,
+      "search": {
+        "base_point": {
+          "x": "20836039768658222498188048509207640827551560847832384859793019942156545366866817907/40304537813824520395628251907982431918748083577769",
+          "y": "-1259149009278691328634960527256390027819356951075555123027555264828145630070773943663631652859920070869196237572639038131800/255876804231644516472324280305093139404027296588748886215343594090649914603"
+        },
+        "denominator_clearing_factor_bits": 330,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0x1b12e7ac",
+        "integral_model_maximum_coefficient_bits": 879,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 7,
+              "fraction": "7/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 8,
+              "fraction": "8/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 15,
+              "fraction": "15/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 15,
+              "fraction": "15/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 29,
+              "fraction": "29/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 22,
+              "fraction": "22/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 20,
+              "fraction": "20/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 24,
+              "fraction": "24/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.026571105850451644",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 454223788,
+        "minimalization_milliseconds": 0,
+        "raw_quartic_coefficients_ascending": [
+          "1491956988444883173264138709532266322541182586706421917201664234116364757989754806255927558626161790276855846726113280033910207494458293702622608297219883810956744241/1624455768386010649896057031715541616665813613660247095015331695793142555203789430701211667471017361",
+          "10073192074229530629079684218051120222554855608604440984220442118625165040566191549309053222879360566953569900581112305054400/255876804231644516472324280305093139404027296588748886215343594090649914603",
+          "-125016238611949334989128291055245844965309365086994309158758119652939272201200907442/40304537813824520395628251907982431918748083577769",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 549,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            1560462284991241899108336553643011,
+            124661591453238097409944949713095,
+            -12623627030105654687248078024966,
+            -577154140314977333734139780695,
+            33124781656984809076758543361
+          ],
+          "Q_coefficients_ascending": [
+            0,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 111
+        },
+        "reduction_milliseconds": 0,
+        "representative": [
+          0,
+          4,
+          -1,
+          -3,
+          0,
+          1,
+          -4,
+          3,
+          -1,
+          -1,
+          -1,
+          2,
+          0,
+          3,
+          -1,
+          3,
+          -4,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          2,
+          2,
+          -1,
+          -1,
+          2,
+          -1,
+          1
+        ],
+        "search_milliseconds": 225,
+        "signed_affine_points_reported": 2,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 2,
+        "wall_seconds": 0.2424233370111324
+      }
+    },
+    {
+      "canonical_depth": "43.0820287513450014576353679437672622438",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -132.2556656301206,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -82.88199008902018,
+          "median": -133.2268331168768,
+          "minimum": -206.90679766784038
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 277,
+          "median": 277.0,
+          "minimum": 266
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 154.5981127939901,
+          "median": 81.46227550955237,
+          "minimum": 33.744219107190695
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 301566720,
+      "priority": 2,
+      "search": {
+        "base_point": {
+          "x": "3566654325894827393077468511316843144080840209116702671333248226647028794452159136973667/9888556442263424144415991954819964364554511339056708689",
+          "y": "-13405656908492301699114691292483099970161941655993716862102286999194945273548338914060910042275825794501604816277183910373860297200/31095628930510946502694371317553327079459368227682746009247222118196733508303917863"
+        },
+        "denominator_clearing_factor_bits": 366,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0x11f98b00",
+        "integral_model_maximum_coefficient_bits": 951,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 7,
+              "fraction": "7/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 14,
+              "fraction": "14/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 15,
+              "fraction": "15/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 29,
+              "fraction": "29/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 22,
+              "fraction": "22/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 37,
+              "fraction": "37/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 41,
+              "fraction": "41/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 43,
+              "fraction": "43/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.2607914059548674",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 301566720,
+        "minimalization_milliseconds": 5,
+        "raw_quartic_coefficients_ascending": [
+          "130043579053657192332080820288353291748474215679060255949615766473136879431656089884800678278123089079118482202777944762882395402564762177798428419783859651591822938667748144401/97783548511829468404555583425171560520043620004144013274630404165752371531920104437360781735143865017408098721",
+          "107245255267938413592917530339864799761295533247949734896818295993559562188386711312487280338206606356012838530217471282990882377600/31095628930510946502694371317553327079459368227682746009247222118196733508303917863",
+          "-21399925955368964358464811067901058864485041254700216027999489359882172766712954821842002/9888556442263424144415991954819964364554511339056708689",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 586,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            9928444209693379152290665414741,
+            -28717684085205641889423320795249,
+            27433735554721832758295208901160,
+            2714491747911589522625344437660,
+            75631975003908546088913059600
+          ],
+          "Q_coefficients_ascending": [
+            0,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 105
+        },
+        "reduction_milliseconds": 1,
+        "representative": [
+          -4,
+          4,
+          2,
+          0,
+          0,
+          4,
+          -2,
+          0,
+          1,
+          -1,
+          0,
+          3,
+          0,
+          2,
+          -4,
+          1,
+          -7,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          2,
+          -2,
+          1
+        ],
+        "search_milliseconds": 595,
+        "signed_affine_points_reported": 0,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 0,
+        "wall_seconds": 0.6117192510282621
+      }
+    },
+    {
+      "canonical_depth": "42.7422832475625202964857109666316084843",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -129.4133480587586,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -84.5389226688481,
+          "median": -131.6203609466411,
+          "minimum": -203.38498908891341
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 261,
+          "median": 261.0,
+          "minimum": 258
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 161.66748402490936,
+          "median": 82.73814317086075,
+          "minimum": 32.669632089044846
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 260967468,
+      "priority": 3,
+      "search": {
+        "base_point": {
+          "x": "2264696329840263037028170322149114748998082301880921960494338622588549969015587758827/5687351398681120365138228531648723223071785191702489",
+          "y": "-222694894155482063176705967411283550010391932890606765738063318117510119271397495304677208025720396174570559885913797031737760/428908935073061405065469505999430450641329755513276197152037086499308181893987"
+        },
+        "denominator_clearing_factor_bits": 344,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0xf8e0c2c",
+        "integral_model_maximum_coefficient_bits": 908,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 7,
+              "fraction": "7/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 14,
+              "fraction": "14/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 14,
+              "fraction": "14/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 17,
+              "fraction": "17/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 22,
+              "fraction": "22/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 37,
+              "fraction": "37/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 22,
+              "fraction": "22/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 23,
+              "fraction": "23/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.04095238319783124",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 260967468,
+        "minimalization_milliseconds": 0,
+        "raw_quartic_coefficients_ascending": [
+          "40254779800720438621592735936621581229211313884704750717995394857691264628177052410618028098732316525325841850282754336146161263000954070274008285499141909074804727268481/32345965932080096126214273957237740296183858682696721208129670727522792057882294156151857095574288795121",
+          "1781559153243856505413647739290268400083135463124854125904506544940080954171179962437417664205763169396564479087310376253902080/428908935073061405065469505999430450641329755513276197152037086499308181893987",
+          "-13588177979041578222169021932894688493988493811285531762966031735531299814093526552962/5687351398681120365138228531648723223071785191702489",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 564,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            14898593621624152311346480478046,
+            -30717736174864386739570119960788,
+            5492206365371420387835795639665,
+            8241205954938892205334064072331,
+            1151476629450638376817971838561
+          ],
+          "Q_coefficients_ascending": [
+            1,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 105
+        },
+        "reduction_milliseconds": 0,
+        "representative": [
+          0,
+          -2,
+          3,
+          1,
+          -2,
+          1,
+          0,
+          -2,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          -2,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          0
+        ],
+        "search_milliseconds": 343,
+        "signed_affine_points_reported": 0,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 0,
+        "wall_seconds": 0.35614279098808765
+      }
+    },
+    {
+      "canonical_depth": "42.7499741915911281518485481026274841225",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -126.91626202938352,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -76.65566194145563,
+          "median": -129.9858823144173,
+          "minimum": -200.90328494759555
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 259,
+          "median": 259.0,
+          "minimum": 251
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 156.57579266869593,
+          "median": 82.4734796222007,
+          "minimum": 23.55716058320717
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 86994943,
+      "priority": 4,
+      "search": {
+        "base_point": {
+          "x": "1573896514439267354920449054060304029518563914870334967305994562674781633342564698467/1170864718390189775965074474022598107736814464302689",
+          "y": "-1773365649811483602020669210516827993983913146764948916968303875701424440861781043755693098298018459450170218249874495282896000/40064532497204858411047945444924103681642070052611338605135825567275125914863"
+        },
+        "denominator_clearing_factor_bits": 338,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0x52f6fff",
+        "integral_model_maximum_coefficient_bits": 897,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 7,
+              "fraction": "7/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 12,
+              "fraction": "12/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 16,
+              "fraction": "16/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 29,
+              "fraction": "29/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 22,
+              "fraction": "22/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 37,
+              "fraction": "37/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 41,
+              "fraction": "41/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 24,
+              "fraction": "24/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.1330815945337795",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 86994943,
+        "minimalization_milliseconds": 9,
+        "raw_quartic_coefficients_ascending": [
+          "-1691065167723319321762720640404219121620407682084775384655502887278404838477385843273562006358828985703964749001666381460660252019563546897343157297332700657186683389733/456974729590312802718636088339536775923602771161559741738313759742751133556995749208368187559670876907",
+          "14186925198491868816165353684134623951871305174119591335746431005611395526894248350045544786384147675601361745998995962263168000/40064532497204858411047945444924103681642070052611338605135825567275125914863",
+          "-3147793028878534709840898108120608059037127829740669934611989125349563266685129396934/390288239463396591988358158007532702578938154767563",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 559,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            737410423482535591453919863056,
+            9950131525062528433235169864257,
+            17569277931665251492253522839475,
+            -21504060183806614521937620902685,
+            5073868420505077050673880176225
+          ],
+          "Q_coefficients_ascending": [
+            1,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 105
+        },
+        "reduction_milliseconds": 0,
+        "representative": [
+          1,
+          -1,
+          1,
+          1,
+          -1,
+          -1,
+          1,
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "search_milliseconds": 393,
+        "signed_affine_points_reported": 0,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 0,
+        "wall_seconds": 0.40792323800269514
+      }
+    },
+    {
+      "canonical_depth": "42.7225511651831140005941638930201383454",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -118.57463907311777,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -82.96581783616674,
+          "median": -131.42832707519943,
+          "minimum": -192.50681593851377
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 256,
+          "median": 256.0,
+          "minimum": 253
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 150.4233457642155,
+          "median": 83.87600240446235,
+          "minimum": 39.00621146636441
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 463071762,
+      "priority": 5,
+      "search": {
+        "base_point": {
+          "x": "241197834596475837643890121847479838862977626188265671191326234782926506699834275723/540226309141872254391846324821443746132747226002001",
+          "y": "-29095955030764368309548316397034550437954502576753722435849290404795744042596537746304240425937539508853007778242728500948760/12556355291984267676888969389983883956138154880681358233496846679334340503001"
+        },
+        "denominator_clearing_factor_bits": 338,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0x1b99ea12",
+        "integral_model_maximum_coefficient_bits": 894,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 7,
+              "fraction": "7/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 12,
+              "fraction": "12/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 14,
+              "fraction": "14/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 14,
+              "fraction": "14/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 29,
+              "fraction": "29/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 20,
+              "fraction": "20/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 23,
+              "fraction": "23/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 23,
+              "fraction": "23/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.03478533508836146",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 463071762,
+        "minimalization_milliseconds": 0,
+        "raw_quartic_coefficients_ascending": [
+          "327499836463271938836298459200880221817252239217634709139683936827631499743143541182705179749139844745101185170736395186449902174203366378458322855720162039437073653121/291844465089049729699360096073232036850466401738285319283502841881271890202654435882718330398456004001",
+          "232767640246114946476386531176276403503636020614029779486794323238365952340772301970433923407500316070824062225941828007590080/12556355291984267676888969389983883956138154880681358233496846679334340503001",
+          "-1447187007578855025863340731084879033177865757129594027147957408697559040199005654338/540226309141872254391846324821443746132747226002001",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 557,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            76103491080699861393960404730531,
+            14275285994053204369980522066401,
+            -15283924661323102156855423060225,
+            -1501945148185236879044446361968,
+            763830539014905735276153511536
+          ],
+          "Q_coefficients_ascending": [
+            0,
+            1,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 106
+        },
+        "reduction_milliseconds": 0,
+        "representative": [
+          -2,
+          3,
+          0,
+          -2,
+          1,
+          4,
+          0,
+          0,
+          0,
+          -3,
+          0,
+          3,
+          -2,
+          3,
+          -3,
+          1,
+          -5,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          2,
+          -1,
+          1
+        ],
+        "search_milliseconds": 234,
+        "signed_affine_points_reported": 0,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 0,
+        "wall_seconds": 0.2533618150046095
+      }
+    },
+    {
+      "canonical_depth": "43.0737916495067413230330346702428324141",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -130.63080183465465,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -88.99235774363764,
+          "median": -131.1585290672473,
+          "minimum": -205.2654596686979
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 264,
+          "median": 264.0,
+          "minimum": 263
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 150.4407011409634,
+          "median": 80.97377991625049,
+          "minimum": 44.124104828949655
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 449191129,
+      "priority": 6,
+      "search": {
+        "base_point": {
+          "x": "7594886232465078737415803995507532157338800261921556263326086785445327048886396654483507/24370541584142388760581843253624224080495881808207569",
+          "y": "661882575821979114216182640191366428939025809225576879333518773164459712385526311857332009948870678056127375649791604102037661593600/3804501598090617419224494314617929415754022153627752519197977572487479029241497"
+        },
+        "denominator_clearing_factor_bits": 349,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0x1ac61cd9",
+        "integral_model_maximum_coefficient_bits": 934,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 7,
+              "fraction": "7/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 12,
+              "fraction": "12/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 15,
+              "fraction": "15/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 29,
+              "fraction": "29/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 37,
+              "fraction": "37/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 41,
+              "fraction": "41/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 43,
+              "fraction": "43/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.213374786690346",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 449191129,
+        "minimalization_milliseconds": 5,
+        "raw_quartic_coefficients_ascending": [
+          "-173045868989123435596424103350907708370664562752944859811203906178732487801008025341103420103638916940964707084226210773477879528255174179386480220321080192358038002262072431759/593923297104413411477728336654778056806052481012699266376236030296501837223644025183834248246052588889761",
+          "-5295060606575832913729461121530931431512206473804615034668150185315677699084210494858656079590965424449019005198332832816301292748800/3804501598090617419224494314617929415754022153627752519197977572487479029241497",
+          "-45569317394790472424494823973045192944032801571529337579956520712671962293318379926901042/24370541584142388760581843253624224080495881808207569",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 586,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            65219664127472346715015135025424,
+            -61894374515512814777485764119108,
+            5271595734127198365071866816160,
+            4074604870960660111236710707730,
+            269738955274574004830529688900
+          ],
+          "Q_coefficients_ascending": [
+            0,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 106
+        },
+        "reduction_milliseconds": 1,
+        "representative": [
+          -5,
+          2,
+          4,
+          1,
+          -1,
+          2,
+          -1,
+          -1,
+          2,
+          0,
+          1,
+          3,
+          1,
+          2,
+          -4,
+          0,
+          -6,
+          1,
+          1,
+          -2,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          1
+        ],
+        "search_milliseconds": 771,
+        "signed_affine_points_reported": 0,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 0,
+        "wall_seconds": 0.78421775897732
+      }
+    },
+    {
+      "canonical_depth": "43.7172278195159662885126789328370074750",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -123.86330412340685,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -84.84844396155299,
+          "median": -132.55950150389486,
+          "minimum": -199.78483429746856
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 259,
+          "median": 259.0,
+          "minimum": 255
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 161.57822148531235,
+          "median": 83.82676933618026,
+          "minimum": 42.62336509045263
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 133807058,
+      "priority": 7,
+      "search": {
+        "base_point": {
+          "x": "4894467367606292973866408576490305658880898710819353908760781233419482383659210624563/1115906357590478318720142157796880204687870630064921",
+          "y": "10713564384629218583495294908333036125832939818906030950473985333079878934942574379905358865095310750002096619905343186843361400/37277057862109762222336239977140735263647958742789885394382342108708181033219"
+        },
+        "denominator_clearing_factor_bits": 340,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0x7f9bbd2",
+        "integral_model_maximum_coefficient_bits": 904,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 7,
+              "fraction": "7/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 12,
+              "fraction": "12/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 14,
+              "fraction": "14/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 15,
+              "fraction": "15/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 29,
+              "fraction": "29/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 22,
+              "fraction": "22/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 23,
+              "fraction": "23/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.03743204536682374",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 133807058,
+        "minimalization_milliseconds": 7,
+        "raw_quartic_coefficients_ascending": [
+          "-69725366341971361115773079591968688318468920483147431749478422129540864967671518518530674018451314046344641930263413882780335656993733953722001199165540790198884678761679/1245246998910848468409622120537037254989501619025607171074330960932941110445845563153679398344674736241",
+          "-85708515077033748667962359266664289006663518551248247603791882664639031479540595039242870920762486000016772959242745494746891200/37277057862109762222336239977140735263647958742789885394382342108708181033219",
+          "-29366804205637757843198451458941833953285392264916123452564687400516894301955263747378/1115906357590478318720142157796880204687870630064921",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 565,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            13984313494400870478054843521775,
+            -40761059878898888376103844324095,
+            24819967777443691922910448266365,
+            3022121517049185192942158163665,
+            58977160376800160063874017130
+          ],
+          "Q_coefficients_ascending": [
+            0,
+            1,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 106
+        },
+        "reduction_milliseconds": 1,
+        "representative": [
+          -2,
+          1,
+          4,
+          0,
+          -3,
+          0,
+          -1,
+          1,
+          1,
+          1,
+          -2,
+          3,
+          3,
+          1,
+          -2,
+          -3,
+          -3,
+          2,
+          0,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          0
+        ],
+        "search_milliseconds": 239,
+        "signed_affine_points_reported": 0,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 0,
+        "wall_seconds": 0.25527288496959955
+      }
+    },
+    {
+      "canonical_depth": "43.20416918834624521711074330668903787295",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -134.50233093009905,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -75.57448113829349,
+          "median": -130.56802759752398,
+          "minimum": -209.3977438418213
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 260,
+          "median": 260.0,
+          "minimum": 258
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 165.28970893340863,
+          "median": 84.92754538621337,
+          "minimum": 31.140675263618718
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 119457322,
+      "priority": 8,
+      "search": {
+        "base_point": {
+          "x": "-2865068018057150474442402570727737310639688417342841173635650576167761553906208909573/4098672367104216228911084797303265900950987125462409",
+          "y": "2154603353713188929154432976629004713467181409688697446443702252237647870646107401869340819632560804198906803198614732643152800/262400589082451432649560832142938205540867188037640830005253958379771440699173"
+        },
+        "denominator_clearing_factor_bits": 343,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0x71ec62a",
+        "integral_model_maximum_coefficient_bits": 904,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 7,
+              "fraction": "7/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 14,
+              "fraction": "14/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 29,
+              "fraction": "29/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 20,
+              "fraction": "20/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 43,
+              "fraction": "43/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.059731812402439216",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 119457322,
+        "minimalization_milliseconds": 4,
+        "raw_quartic_coefficients_ascending": [
+          "4271888559984968157849164092848163621720810907335807632240462495880450100165645440559823548587903752428023490451984575528177635592421490656886496165967565662243278382561/16799115172863679044272480539769831760918597301444475825990590674529182803679863275901455636182072083281",
+          "-17236826829705511433235463813032037707737451277509579571549618017901182965168859214954726557060486433591254425588917861145222400/262400589082451432649560832142938205540867188037640830005253958379771440699173",
+          "17190408108342902846654415424366423863838130504057047041813903457006569323437253457438/4098672367104216228911084797303265900950987125462409",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 561,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            70196758995370621486723139901456,
+            -12011874053011568966180720895773,
+            -14485458310609055190903577373530,
+            1265756128257096669229027901998,
+            878532580614199073209334090524
+          ],
+          "Q_coefficients_ascending": [
+            1,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 106
+        },
+        "reduction_milliseconds": 1,
+        "representative": [
+          -2,
+          -1,
+          4,
+          1,
+          -2,
+          1,
+          -2,
+          0,
+          2,
+          1,
+          -1,
+          2,
+          2,
+          0,
+          -1,
+          -1,
+          -2,
+          1,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          0,
+          0
+        ],
+        "search_milliseconds": 396,
+        "signed_affine_points_reported": 0,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 0,
+        "wall_seconds": 0.40906751301372424
+      }
+    },
+    {
+      "canonical_depth": "43.08167191493616145939348720862539963025",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -122.94171973967553,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -95.23897013587502,
+          "median": -130.55968293195323,
+          "minimum": -197.59213810457763
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 247,
+          "median": 247.0,
+          "minimum": 245
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 164.62229474284592,
+          "median": 86.8741248346173,
+          "minimum": 54.632027301065634
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 287232954,
+      "priority": 9,
+      "search": {
+        "base_point": {
+          "x": "4261955651165825445423313225005716474356975071325874706854603563918902792623855547/7396714831396632765962813565228285003445185616489",
+          "y": "144897806475599366658050790837240461814735293449312220290426518739946152239295439056738029221825647954949332188729230066880/20116772903628735468537968614229263214971189014628179587015457975883693237"
+        },
+        "denominator_clearing_factor_bits": 325,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0x111ed3ba",
+        "integral_model_maximum_coefficient_bits": 869,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 7,
+              "fraction": "7/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 6,
+              "fraction": "6/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 14,
+              "fraction": "14/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 29,
+              "fraction": "29/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 20,
+              "fraction": "20/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 22,
+              "fraction": "22/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.01410482868894808",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 287232954,
+        "minimalization_milliseconds": 0,
+        "raw_quartic_coefficients_ascending": [
+          "39621393329098414364647264813196435439058577273273389491218815605193980797110645549598791383516838438198225650142540201241411131654765805359852884484153586463244641/54711390297002917486072707735859395210394796125700726911788830257964962155359686662062690988687121",
+          "-1159182451804794933264406326697923694517882347594497762323412149919569217914363512453904233774605183639594657509833840535040/20116772903628735468537968614229263214971189014628179587015457975883693237",
+          "-25571733906994952672539879350034298846141850427955248241127621383513416755743133282/7396714831396632765962813565228285003445185616489",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 544,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            848034136247928334764761206404,
+            -13588288159269726324825170244142,
+            34260408078943130225303618309570,
+            -4396868888115251436996161544523,
+            92831624522556053308381333506
+          ],
+          "Q_coefficients_ascending": [
+            0,
+            1,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 105
+        },
+        "reduction_milliseconds": 0,
+        "representative": [
+          0,
+          1,
+          -2,
+          -1,
+          1,
+          -3,
+          2,
+          1,
+          1,
+          1,
+          0,
+          -2,
+          3,
+          0,
+          -1,
+          -1,
+          0,
+          1,
+          -3,
+          -1,
+          -1,
+          0,
+          0,
+          -2,
+          1,
+          -2,
+          0,
+          0,
+          1
+        ],
+        "search_milliseconds": 312,
+        "signed_affine_points_reported": 2,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 2,
+        "wall_seconds": 0.33035694900900126
+      }
+    },
+    {
+      "canonical_depth": "43.19287097232814511189590354323133602815",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -122.07658984366071,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -84.39622793236596,
+          "median": -130.90175049265542,
+          "minimum": -196.94940632334678
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 261,
+          "median": 261.0,
+          "minimum": 254
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 151.9911701688612,
+          "median": 83.62735259845806,
+          "minimum": 39.502371629587984
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 190667707,
+      "priority": 10,
+      "search": {
+        "base_point": {
+          "x": "-1099859192813248003770067544066554492273071527981479952797607470427557904656632290061/5049846473026257966205392506442606603348797449842025",
+          "y": "4968638249287067543558123821262826226922599323492014330547113642385253910043824702952090284359356212318046126511358800373038488/358853562601998375900788571936145394941778068908018569169764170575898822115125"
+        },
+        "denominator_clearing_factor_bits": 344,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0xb5d5bbb",
+        "integral_model_maximum_coefficient_bits": 907,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 7,
+              "fraction": "7/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 12,
+              "fraction": "12/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 15,
+              "fraction": "15/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 16,
+              "fraction": "16/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 37,
+              "fraction": "37/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 41,
+              "fraction": "41/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 22,
+              "fraction": "22/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.06023089407778814",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 190667707,
+        "minimalization_milliseconds": 4,
+        "raw_quartic_coefficients_ascending": [
+          "40237502862228788258742430485309233402345864825748082327294148360407623962325329627229690414797884123756297676068909125642477711061503108470667742904142459362253372716337/25500949401135737125061598565268897000638705153739281321077142801589185355670242804798449945697456100625",
+          "-39749105994296540348464990570102609815380794587936114644376909139082031280350597623616722274874849698544369012090870402984307904/358853562601998375900788571936145394941778068908018569169764170575898822115125",
+          "6599155156879488022620405264399326953638429167888879716785644822565347427939793740366/5049846473026257966205392506442606603348797449842025",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 564,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            4971111623032926810668501428662,
+            9818808196358820224238633840506,
+            -7113369342816502054984483707940,
+            -13943753450914374949645191804599,
+            8954223674463814789012090309777
+          ],
+          "Q_coefficients_ascending": [
+            0,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 104
+        },
+        "reduction_milliseconds": 1,
+        "representative": [
+          1,
+          5,
+          -4,
+          -5,
+          3,
+          -3,
+          0,
+          9,
+          -3,
+          -1,
+          -4,
+          3,
+          3,
+          2,
+          -3,
+          -2,
+          -1,
+          2,
+          -3,
+          1,
+          -1,
+          -2,
+          1,
+          -2,
+          -1,
+          -1,
+          2,
+          -1,
+          0
+        ],
+        "search_milliseconds": 262,
+        "signed_affine_points_reported": 0,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 0,
+        "wall_seconds": 0.2758277169778012
+      }
+    },
+    {
+      "canonical_depth": "42.4865057732772843357821693095375849328",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -118.01094942724806,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -76.36139008025941,
+          "median": -129.48318903107452,
+          "minimum": -191.47103550883241
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 235,
+          "median": 235.0,
+          "minimum": 231
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 150.05298570896554,
+          "median": 88.73730730508737,
+          "minimum": 36.11186054589126
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 289161434,
+      "priority": 11,
+      "search": {
+        "base_point": {
+          "x": "-28266750295759596670871861847107612608516075931101919280927493910514723973987221/42699792849479835730999595067571040922232651225",
+          "y": "-89530979966576232881917809656585640179899830386902279916833462018235500292318428786026269426544968048605919769634989792/8823454534312578559894995531168182750823523009149096851261866473332125"
+        },
+        "denominator_clearing_factor_bits": 310,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0x113c40da",
+        "integral_model_maximum_coefficient_bits": 838,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 4,
+              "fraction": "4/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 6,
+              "fraction": "6/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 15,
+              "fraction": "15/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 17,
+              "fraction": "17/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 22,
+              "fraction": "22/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 43,
+              "fraction": "43/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.012862726667942572",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 289161434,
+        "minimalization_milliseconds": 2,
+        "raw_quartic_coefficients_ascending": [
+          "739354101109403763040174827095235479983606170456389931895129584388978244745059265062007965926651092968912136502997004965450012178586188763601773813054850158977/1823272309388489309431692636505075125700176141577803288777930403816547330974110985492494000625",
+          "716247839732609863055342477252685121439198643095218239334667696145884002338547430288210155412359744388847358157079918336/8823454534312578559894995531168182750823523009149096851261866473332125",
+          "169600501774557580025231171082645675651096455586611515685564963463088343843923326/42699792849479835730999595067571040922232651225",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 528,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            711055174030550449295199214895097,
+            -123041219165431115216670941332429,
+            -7028381315087017175326852144945,
+            1146517923897503166789903132863,
+            61279522292549351388685105038
+          ],
+          "Q_coefficients_ascending": [
+            0,
+            1,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 110
+        },
+        "reduction_milliseconds": 1,
+        "representative": [
+          -2,
+          1,
+          2,
+          1,
+          -1,
+          2,
+          -1,
+          -1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          -1,
+          0,
+          -2,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "search_milliseconds": 288,
+        "signed_affine_points_reported": 2,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 2,
+        "wall_seconds": 0.30059388000518084
+      }
+    },
+    {
+      "canonical_depth": "42.84756502036905870588282899419661004815",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -117.67888584165111,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -70.55099106322754,
+          "median": -131.306716175281,
+          "minimum": -191.861090417419
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 267,
+          "median": 267.0,
+          "minimum": 264
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 149.75078449393703,
+          "median": 81.52942373678755,
+          "minimum": 24.758631431178017
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 421696701,
+      "priority": 12,
+      "search": {
+        "base_point": {
+          "x": "-47686695732258192682582139766863850399341062199443652341737880874713102484533197422493/93457997909477288165470703045893228882991992122027169",
+          "y": "398932771415769550089685240442707832259478431718652808487143102189830881801599924546725090930260638383976742779650496707156366400/28570951882104707464750367381052593645107570189539899089475305025876067054403697"
+        },
+        "denominator_clearing_factor_bits": 352,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0x192294bd",
+        "integral_model_maximum_coefficient_bits": 924,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 5,
+              "fraction": "5/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 15,
+              "fraction": "15/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 15,
+              "fraction": "15/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 16,
+              "fraction": "16/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 37,
+              "fraction": "37/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 41,
+              "fraction": "41/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 24,
+              "fraction": "24/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.05866645527057285",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 421696701,
+        "minimalization_milliseconds": 0,
+        "raw_quartic_coefficients_ascending": [
+          "8202792858658515537212886027751692960750691478808181750822646911509754020405762914653595606334475227790522778010342889554436129791467280560347801316220425037195902014378641/8734397373247861165022330626520597021179138152164708924881623265786629291995265529849154081751925974154561",
+          "-3191462171326156400717481923541662658075827453749222467897144817518647054412799396373800727442085107071813942237203973657250931200/28570951882104707464750367381052593645107570189539899089475305025876067054403697",
+          "286120174393549156095492838601183102396046373196661914050427285248278614907199184534958/93457997909477288165470703045893228882991992122027169",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 572,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            49979113118804601662333881317904,
+            31931637245150796997631165777176,
+            -7159873631969835607143917437312,
+            -4342772360704606891838129702413,
+            880706578634490104224600538601
+          ],
+          "Q_coefficients_ascending": [
+            0,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 106
+        },
+        "reduction_milliseconds": 2,
+        "representative": [
+          -5,
+          2,
+          3,
+          -1,
+          1,
+          1,
+          0,
+          -1,
+          2,
+          0,
+          1,
+          2,
+          1,
+          2,
+          -4,
+          1,
+          -4,
+          1,
+          0,
+          -2,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          1
+        ],
+        "search_milliseconds": 594,
+        "signed_affine_points_reported": 0,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 0,
+        "wall_seconds": 0.6075369130121544
+      }
+    },
+    {
+      "canonical_depth": "42.8593569381353540252891261913419101707",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -124.25067577447109,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -87.29983440230242,
+          "median": -134.54782489927305,
+          "minimum": -198.45646418577158
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 262,
+          "median": 262.0,
+          "minimum": 259
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 152.00802737885928,
+          "median": 86.16253819039312,
+          "minimum": 30.840182733019653
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 367598318,
+      "priority": 13,
+      "search": {
+        "base_point": {
+          "x": "2213538326960201338679866972856438572539385459302337019588942706555871222044610088683/4975017695477749512781262206423150476363574078788601",
+          "y": "793488988244324702598378254833356936530646120501584706723466339653776221183539697519901328326340179055671385522353068469821760/350906929686598511739141508788914390009936973013186452390187257135711224238349"
+        },
+        "denominator_clearing_factor_bits": 344,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0x15e91aee",
+        "integral_model_maximum_coefficient_bits": 907,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 7,
+              "fraction": "7/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 7,
+              "fraction": "7/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 15,
+              "fraction": "15/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 29,
+              "fraction": "29/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 22,
+              "fraction": "22/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 37,
+              "fraction": "37/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 43,
+              "fraction": "43/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.06678804298844165",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 367598318,
+        "minimalization_milliseconds": 1,
+        "raw_quartic_coefficients_ascending": [
+          "27876917354694120786263700021512066578202842103748318286821754824315382204555767224658416445079531494773526410783137446203013588394728845434176602506404610599305128173441/24750801070316737584957060879742565975448698037188927765470167169149744114961114143815131847591647537201",
+          "-6347911905954597620787026038666855492245168964012677653787730717230209769468317580159210626610721432445371084178824547758574080/350906929686598511739141508788914390009936973013186452390187257135711224238349",
+          "-13281229961761208032079201837138631435236312755814022117533656239335227332267660532098/4975017695477749512781262206423150476363574078788601",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 563,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            7128179054888332250762944769300,
+            -25373992747356584426440023395490,
+            14786913428842882801366101338885,
+            9126393414732820273356429476155,
+            959929126522570677417960730705
+          ],
+          "Q_coefficients_ascending": [
+            1,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 105
+        },
+        "reduction_milliseconds": 1,
+        "representative": [
+          -2,
+          5,
+          1,
+          -3,
+          0,
+          1,
+          -3,
+          3,
+          0,
+          -1,
+          -2,
+          5,
+          1,
+          4,
+          -4,
+          0,
+          -7,
+          2,
+          0,
+          -1,
+          0,
+          -1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          -2,
+          1
+        ],
+        "search_milliseconds": 376,
+        "signed_affine_points_reported": 0,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 0,
+        "wall_seconds": 0.3925021420000121
+      }
+    },
+    {
+      "canonical_depth": "42.87826967308528457830566533592040814545",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -125.23753887788435,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -87.96630677813582,
+          "median": -128.51064094529707,
+          "minimum": -199.4811527590847
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 257,
+          "median": 257.0,
+          "minimum": 254
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 160.63022371383397,
+          "median": 88.42963032155865,
+          "minimum": 49.50396049120806
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 533859550,
+      "priority": 14,
+      "search": {
+        "base_point": {
+          "x": "325404363775412239326779859662429750731439215493490777375966054458363380531306030587/915807422578824199719270134392061120798814076267489",
+          "y": "18178208749280168511972529493435287446397380625413980428758914969707042469518938978098244217974001501690264668051710353663080/27714448365126327044836648755741943688773918901530750247720833700695295142737"
+        },
+        "denominator_clearing_factor_bits": 339,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0x1fd20cde",
+        "integral_model_maximum_coefficient_bits": 897,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 4,
+              "fraction": "4/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 15,
+              "fraction": "15/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 16,
+              "fraction": "16/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 20,
+              "fraction": "20/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 41,
+              "fraction": "41/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 23,
+              "fraction": "23/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.021070594745827363",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 533859550,
+        "minimalization_milliseconds": 0,
+        "raw_quartic_coefficients_ascending": [
+          "1125068057418286388707481889826297744577158866297172305692153954359200994105761651669685236105345495528671692033674677033512036736992824199115150834764249786602155382561/838703235250469080607273265179027584935948786326886228637642758130650349211550242298441732821878365121",
+          "-145425669994241348095780235947482299571179045003311843430071319757656339756151511824785953743792012013522117344413682829304640/27714448365126327044836648755741943688773918901530750247720833700695295142737",
+          "-1952426182652473435960679157974578504388635292960944664255796326750180283187836183522/915807422578824199719270134392061120798814076267489",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 559,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            22012929077194422355561334162634555,
+            -508730488876346837528438573126645,
+            -10735563121797832893486531602095,
+            167039838662194026402383682954,
+            2367152034209118052612313730
+          ],
+          "Q_coefficients_ascending": [
+            0,
+            1,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 115
+        },
+        "reduction_milliseconds": 0,
+        "representative": [
+          -2,
+          3,
+          -1,
+          -1,
+          3,
+          -2,
+          -1,
+          1,
+          0,
+          2,
+          1,
+          -1,
+          0,
+          0,
+          -2,
+          4,
+          -2,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "search_milliseconds": 318,
+        "signed_affine_points_reported": 0,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 0,
+        "wall_seconds": 0.3509692620136775
+      }
+    },
+    {
+      "canonical_depth": "42.5684410963003196086136769540339022154",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -116.64931145182855,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -87.79624103820282,
+          "median": -131.71968862284655,
+          "minimum": -190.27326817945897
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 240,
+          "median": 240.0,
+          "minimum": 237
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 152.3885630838314,
+          "median": 89.17137782908867,
+          "minimum": 43.32460070024184
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 194598615,
+      "priority": 15,
+      "search": {
+        "base_point": {
+          "x": "120142924845942853210340678280135111685159079804516352175913604264883705915424955/340968950884508006953177635628208698562670386281",
+          "y": "153124719278675189452179351263438509437901633538276803802723010940316744053749331750278809900608236956760258793961689152/199100453840756377255951720732144908269731709192686883505214234029743179"
+        },
+        "denominator_clearing_factor_bits": 316,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0xb9956d7",
+        "integral_model_maximum_coefficient_bits": 852,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 5,
+              "fraction": "5/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 6,
+              "fraction": "6/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 14,
+              "fraction": "14/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 16,
+              "fraction": "16/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 22,
+              "fraction": "22/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 20,
+              "fraction": "20/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 22,
+              "fraction": "22/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 23,
+              "fraction": "23/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.007537448526962635",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 194598615,
+        "minimalization_milliseconds": 5,
+        "raw_quartic_coefficients_ascending": [
+          "156686457131589001350321622510752256368509409991794631739398359080727361012311020523511561602532706240685061275946409869076215581788971048829939182450549178498913/116259825467282033577189769531548357274710933309481437268748416481524116724086107873609753010961",
+          "-1224997754229401515617434810107508075503213068306214430421784087522533952429994654002230479204865895654082070351693513216/199100453840756377255951720732144908269731709192686883505214234029743179",
+          "-720857549075657119262044069680810670110954478827098113055481625589302235492549730/340968950884508006953177635628208698562670386281",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 536,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            46365457332742115031744814655994,
+            35252380392752778713332169078149,
+            -4961709734629186818033156042442,
+            -4738411273641306273082490934010,
+            844276327551089811157154704612
+          ],
+          "Q_coefficients_ascending": [
+            1,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 106
+        },
+        "reduction_milliseconds": 0,
+        "representative": [
+          1,
+          3,
+          -3,
+          -2,
+          3,
+          -2,
+          -1,
+          1,
+          0,
+          -1,
+          -1,
+          0,
+          -1,
+          2,
+          -1,
+          4,
+          -3,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          -1,
+          -1,
+          2,
+          -1,
+          2
+        ],
+        "search_milliseconds": 209,
+        "signed_affine_points_reported": 2,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 2,
+        "wall_seconds": 0.22790855803759769
+      }
+    },
+    {
+      "canonical_depth": "44.33950139453200245140637212497629460995",
+      "coordinate_calibration": {
+        "calibration_point_count": 58,
+        "calibration_set": "signed_M29_basis",
+        "estimated_old_point_exclusion_margin": -135.36145915609802,
+        "height_distortion": {
+          "definition": "log H(s(P))-hhat(2P-Q)/2",
+          "maximum": -77.26513227942696,
+          "median": -130.43708905587835,
+          "minimum": -212.5275364801918
+        },
+        "horizontal_preimage_gcd_bits": {
+          "maximum": 263,
+          "median": 263.0,
+          "minimum": 253
+        },
+        "margin_is_certified_global_bound": false,
+        "reduced_log_height": {
+          "maximum": 168.4968267369173,
+          "median": 86.04877483090499,
+          "minimum": 30.409166317346486
+        },
+        "signed_basis_visible_at_search_bound": 0
+      },
+      "mask": 190881389,
+      "priority": 16,
+      "search": {
+        "base_point": {
+          "x": "242254648070534280767416347229026078229513864001562254402570813608529799100958022128187/17365894225821475784443136569185106447942667696384809",
+          "y": "-3766486946022943653374133371996120793794185698961715281470925397903434903567064129747797621483705849776125622286960731321093469440/2288472653757787361698539714346839427202127111339705704445392111340690321982123"
+        },
+        "denominator_clearing_factor_bits": 348,
+        "finite_curve_points": [],
+        "finite_raw_points": [],
+        "height_bound": 100000,
+        "hex": "0xb609e6d",
+        "integral_model_maximum_coefficient_bits": 923,
+        "local_stage": {
+          "affine_modular_square_sieve_profile": [
+            {
+              "affine_x_survivors": 4,
+              "fraction": "4/7",
+              "prime": 7
+            },
+            {
+              "affine_x_survivors": 11,
+              "fraction": "11/11",
+              "prime": 11
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/13",
+              "prime": 13
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/17",
+              "prime": 17
+            },
+            {
+              "affine_x_survivors": 13,
+              "fraction": "13/19",
+              "prime": 19
+            },
+            {
+              "affine_x_survivors": 14,
+              "fraction": "14/23",
+              "prime": 23
+            },
+            {
+              "affine_x_survivors": 15,
+              "fraction": "15/29",
+              "prime": 29
+            },
+            {
+              "affine_x_survivors": 22,
+              "fraction": "22/31",
+              "prime": 31
+            },
+            {
+              "affine_x_survivors": 21,
+              "fraction": "21/37",
+              "prime": 37
+            },
+            {
+              "affine_x_survivors": 41,
+              "fraction": "41/41",
+              "prime": 41
+            },
+            {
+              "affine_x_survivors": 43,
+              "fraction": "43/43",
+              "prime": 43
+            }
+          ],
+          "joint_independent_density_product": "0.03791561913230131",
+          "reason": "the monic raw quartic has rational points at infinity",
+          "solubility_filter": "not_applicable_pointed_model_birational_to_E"
+        },
+        "mask": 190881389,
+        "minimalization_milliseconds": 2,
+        "raw_quartic_coefficients_ascending": [
+          "-175543177342010066511344698414387665186047285043102534307572861209147037021846888346870904680580107824423425955743722764593603102189471416158372415766098747402000607267385759/301574282262419673787751642839822372618052853299329478881050866018366659473808197863334688443008205966481",
+          "30131895568183549226993066975968966350353485591693722251767403183227479228536513037982380971869646798209004978295685850568747755520/2288472653757787361698539714346839427202127111339705704445392111340690321982123",
+          "-1453527888423205684604498083374156469377083184009373526415424881651178794605748132769122/17365894225821475784443136569185106447942667696384809",
+          "0",
+          "1"
+        ],
+        "raw_rational_coefficient_maximum_bits": 576,
+        "reduced_model": {
+          "P_coefficients_ascending": [
+            67847743605071513294599070806850,
+            75089261396774610333278965882820,
+            13498304498932205789581275857915,
+            -3182854063304589579259001844295,
+            118259623582057740291439986025
+          ],
+          "Q_coefficients_ascending": [
+            1,
+            1
+          ],
+          "discriminant": "7471095450087195680727910445236600611605374236497648624054680031636234554634519268881655134072097590988924720904838797989784438432624613801399248973213649643196099694576440515449856000000",
+          "discriminant_bits": 621,
+          "maximum_coefficient_bits": 106
+        },
+        "reduction_milliseconds": 0,
+        "representative": [
+          -1,
+          2,
+          3,
+          -1,
+          -4,
+          5,
+          -3,
+          0,
+          0,
+          -1,
+          -1,
+          3,
+          1,
+          2,
+          0,
+          -3,
+          -4,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          -1,
+          1,
+          0,
+          -1,
+          -2
+        ],
+        "search_milliseconds": 289,
+        "signed_affine_points_reported": 0,
+        "status": "bounded_search_complete",
+        "timeout_seconds": 15.0,
+        "trivial_points_mapping_to_infinity": 0,
+        "wall_seconds": 0.3100588360102847
+      }
+    }
+  ],
+  "curve": {
+    "generic_points": [
+      {
+        "x": "2838924669991462712587152186803533870395588135948046181494815675/8162715394351313495003877638569",
+        "y": "-21831557345833756391518047489950059175303046481248769019325860495125131310952957324745214566144/23321258435307250045436458340460559007138464747"
+      },
+      {
+        "x": "906680405034713461666275164347627203",
+        "y": "-863338744438676386158834111598994239880230110132460800"
+      },
+      {
+        "x": "116896550946267685561922454223277259/25",
+        "y": "-39593462669359537759186896192184863107637971321065152/125"
+      },
+      {
+        "x": "396848179201608547894931503810563",
+        "y": "458387970269121285914850930492607580257795596480"
+      },
+      {
+        "x": "2911683943121476688641959112069545843/5041",
+        "y": "2597735202983582313009965522207344375684004782695516960/357911"
+      },
+      {
+        "x": "22544883751993299476819568180453832668506467/18902675169",
+        "y": "93416468656018865482961153914829898192099931903027393737466312960/2598872100960303"
+      },
+      {
+        "x": "155486658701837299013969905397037468832558372483803/319129532308729081",
+        "y": "-686610553541649832400875770557958946949435841541484186567919422048394502320/180281222181117633936217229"
+      },
+      {
+        "x": "-749176522999789449108956049810197",
+        "y": "3173377812077768109102143506508915370176570488600"
+      },
+      {
+        "x": "694001453456461179017800096188403441651640653579/813665869479241",
+        "y": "-441639766143735975274318994269575664588618648064778707081932984143210640/23209679790031668574789"
+      },
+      {
+        "x": "61599470905539405806880495079932769941664140099/153775847608321",
+        "y": "-1183250128797334090027832639270839911009844059242212293045182903141760/1906918773109802117119"
+      },
+      {
+        "x": "9693021895070718846006791173531395",
+        "y": "-952178876637873121823943356336499603545664589603392"
+      },
+      {
+        "x": "60659194146982797391671766682818611599208960025827/152502147205044289",
+        "y": "-29763463783729617687904967681667423829316989894284430301581648879270491360/59554411548778169294154337"
+      },
+      {
+        "x": "4294747920968561292815183977964461347/9409",
+        "y": "2445460517207910137842895513979959136355420809891773280/912673"
+      },
+      {
+        "x": "433237806849601016526225383137265897306764887463035/1058264548300979881",
+        "y": "1050425768206078075014857271673773397034786559140494580786065130529899234112/1088657756912882712744156779"
+      },
+      {
+        "x": "2655133318441622782267252136871003",
+        "y": "-132983156543367618266801062697244593980364988397800"
+      },
+      {
+        "x": "406308270333213557533168165710603",
+        "y": "-847809285910976088787436740341308021862707685000"
+      },
+      {
+        "x": "-422936277170646572397676323025844877/1681",
+        "y": "976267437719763360696560405552192715960047153323522560/68921"
+      }
+    ],
+    "generic_rank": 17,
+    "label": "curve385-rank29",
+    "short_model": [
+      "0",
+      "0",
+      "0",
+      "-430048435690030904405349024577605936691379129509801473354207484827",
+      "108375042727496899627770566236523251255300897102313964453969016679288222621165331342687578959094454"
+    ]
+  },
+  "discoveries": [],
+  "distinct_returned_point_count": 0,
+  "finite_point_occurrence_count": 0,
+  "historical_old_point_hit_comparison": {
+    "descriptive_fixed_margin_fisher_lower_tail": {
+      "decimal": 0.021729819748749414,
+      "denominator": "3943313518715042342926690657968334549408125",
+      "numerator": "85687491974484666399501124943920107869022"
+    },
+    "height_compression_pilot": {
+      "chart_count": 16,
+      "chart_with_finite_point_count": 0
+    },
+    "inferential_status": "descriptive only: the pilot and historical charts were selected by different deterministic policies and were not randomized arms",
+    "prior_natural_weight_one_two": {
+      "chart_count": 3116,
+      "chart_with_finite_point_count": 665
+    }
+  },
+  "input_hashes": {
+    "artifacts/generated-results/elliptic-curves/curve385_height_compression_pilot_protocol_v1.json": "93a1e736154e05d21da809b21fff8e669c6039e0b74c8411fe3bc62e9795fef9",
+    "artifacts/generated-results/elliptic-curves/curve385_sparse_quotient_rank32_primary_ledger_v1.json.gz": "08a2e416255910f733ef98283332e3a60a947350646329e4e2045cbc08d802c0",
+    "elliptic-curves/cas/run_curve385_height_compression_pilot.sage": "f97ae1b23ced6ea037326a0679fe5cb32a6fd90695bbd0c2ea08eb683ab1da5a"
+  },
+  "interpretation": "This is an operational test of fresh current-lattice holes and reduced-coordinate calibration. A no-growth result is a bounded miss and does not refute the exact midpoint identity or imply saturation.",
+  "pari_failure_count": 0,
+  "protocol_selected_order_sha256": "9f85feb483dfb54343fabfc8906e7d848c2689ec50271e409ebc443bb32407b9",
+  "schema": "elliptic-curves.curve385-height-compression-pilot-blind.v1",
+  "status": "COMPLETE_BOUNDED_NO_GROUP_GROWTH",
+  "timeout_count": 0
+}

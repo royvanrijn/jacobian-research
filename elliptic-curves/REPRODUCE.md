@@ -61,6 +61,38 @@ obstruction; they do not prove rank upper bounds or construction origins for
 atlas misses.  See
 [`ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md`](notes/ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md).
 
+### Refreshed-hit blind jump ladder
+
+The redacted input and both protocol freezes replay cheaply:
+
+<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER -->
+
+```sh
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elliptic-curves/cas/prepare_r17_refresh_jump_ladder_inputs.sage
+
+python3 elliptic-curves/cas/build_r17_refresh_jump_ladder_protocol.py --check
+python3 elliptic-curves/cas/build_r17_refresh_jump_ladder_protocol_v2.py --check
+python3 elliptic-curves/cas/analyze_r17_refresh_jump_ladder_v2.py --check
+
+.venv/bin/python -m unittest \
+  elliptic-curves/tests/test_r17_refresh_jump_ladder.py
+```
+
+The preserved expensive replay is
+
+```sh
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elliptic-curves/cas/run_r17_refresh_jump_ladder_blind_v2.sage
+```
+
+It uses only the MW17-only input, gives every eligible fibre the same
+43-plus-301 maximum chart budget, and writes exact recovered quotient rank as
+its sole response.  Curve 544 stops structurally after the first 43 because
+its recovered quotient is zero.  The public-complement verifier must run only
+after the blind output hash is sealed; see
+[`R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md`](notes/R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md).
+
 ### ICARM curve 356: rank at least 29 and the new rank-29 size record
 
 Replay point membership, trivial torsion, the exact finite-quotient
@@ -372,7 +404,8 @@ The fast arithmetic regression is:
 ```sh
 .venv/bin/python -m unittest \
   elliptic-curves/tests/test_icarm_curve398_rank30.py \
-  elliptic-curves/tests/test_curve398_mw16_adaptive_half_lattice.py -v
+  elliptic-curves/tests/test_curve398_mw16_adaptive_half_lattice.py \
+  elliptic-curves/tests/test_curve398_two_parent_collision.py -v
 ```
 
 Check the compacted complete 63,917-class modular screen, replay exact
@@ -388,6 +421,10 @@ sage -python elkies-k3/scripts/certify_icarm_curve398_norm8_a1_survivors.sage \
   --output artifacts/generated-results/elkies-k3-curve398-11952-norm8-a1-exact-survivors-v1.json
 
 sage -python elkies-k3/scripts/compile_icarm_curve398_hidden_a1_mw16.sage --check
+
+sage -python elkies-k3/scripts/compile_icarm_curve398_second_a1_mw16_collision.sage --check
+
+sage -python elliptic-curves/cas/verify_icarm_curve398_two_parent_collision.sage
 ```
 
 The original modular screen is deliberately checkpointed by prime and rank
@@ -415,6 +452,7 @@ boundary.  It does not prove an unconditional rank upper bound, search
 stability, or generalization to an unseen family.  See
 [`ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md).
 <!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY a22fcfb1ea6844aa -->
+<!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 3021f19bf0594dcf -->
 
 ### Comparative height lattices: ranks 28--31
 

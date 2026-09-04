@@ -26,10 +26,12 @@ The construction boundary is now closed independently.  A complete modular
 screen of the 63,917 minimum-norm-eight neighbours of the equation-explicit
 `norm12-orbit-11952` rootless chart leaves two candidates; exact factorization
 shows that both have rational curve-398 parameters and specialize to curves
-`Q`-isomorphic to curve 398.  The lower-complexity candidate is compiled as an
-`I2+22I1`/MW16 fibration, all sixteen generic sections are transported into
-the public rank-30 subgroup, and an independently redacted half-lattice search
-recovers the full displayed rank-30 subgroup from those sixteen points alone.
+`Q`-isomorphic to curve 398.  Both candidates are now compiled as
+`I2+22I1`/MW16 fibrations and all sixteen sections from each saturated generic
+basis are transported into the public rank-30 subgroup.  Unexpectedly, the two
+specialized integral MW16 subgroups are equal, not transverse.  An independently
+redacted half-lattice search from the first basis recovers the full displayed
+rank-30 subgroup.
 
 The authors report exact rank 30 conditional on GRH for number fields.  This
 repository has not replayed that upper bound, so the canonical theorem remains
@@ -213,8 +215,68 @@ The complete discovery screen used 34 primes.  It excludes 63,915 of the
 63,917 committed norm-eight classes and leaves priorities `16875` and `63669`.
 Exact factorization gives one rational parameter for each survivor, and both
 specializations are `Q`-isomorphic to curve 398.  The compiled fibration above
-uses the equation-cheaper first survivor; uniqueness of the fibration is not
-claimed.
+uses the equation-cheaper first survivor; the second is compiled below.
+
+## Exact two-parent collision
+
+The second survivor has priority `63669`, orbit `0x06119`, and trace
+
+```text
+w = (-2,1,3,0,1,0,-4,0,-1,-2,3,0,-2,-1,2,-3,2).
+```
+
+Its residual-chord invariants again give degrees `(8,12)`, squarefree finite
+discriminant of degree 22, and fibre configuration `I2+22I1`.  Its unique
+rational curve-398 parameter is
+
+```text
+lambda = -541266381922712529166100960678122326542295329017811351186978386511278040283284966392829974955759690589708833207806994323443840 / 1966455527134683136777607542029510829585376789066249361045523577208160221833556912096256713936098199933472678271.
+```
+
+The second fixed parity coset contains exactly 180 degree-one old sections.
+With
+
+```text
+(0,0,1,-1,0,-1,-1,0,1,-1,1,1,1,0,0,-1,0)
+```
+
+as zero, the first sixteen independent enumerated sections have Shioda Gram
+of rank 16 and determinant `474=948/2`, so they form a saturated generic MW16
+basis.  Exact specialization, height-dual coordinate recovery, and rational
+group-law replay give a second `16 x 30` integral embedding in the ordered
+public basis.
+
+Let `C1` and `C2` be the two embedding matrices and let `G1,G2` be their row
+groups in `M30`.  Exact integer solves produce mutually inverse matrices
+`U,V in GL(16,Z)`, both of determinant one, with
+
+```text
+C2 = U*C1,   C1 = V*C2,   U*V = V*U = I16.
+```
+
+Consequently this is equality of integral subgroups, not merely equality after
+tensoring with `Q`:
+
+```text
+G1 = G2,
+rank(G1 intersection G2) = 16,
+rank(G1 + G2) = 16.
+```
+
+The Smith diagonal of the stacked `32 x 30` generator matrix is sixteen ones
+followed by fourteen zero directions.  Thus
+
+```text
+M30 / (G1 + G2) = Z^14,
+[M30 : G1 + G2] = infinity.
+```
+
+The ambiguity of sign in the `Q`-isomorphism of either fibre does not change
+its subgroup.  This pair therefore does not explain any of the apparent
+fourteen-rank specialization jump by transverse generic directions.  It is a
+strong negative control for the proposed rank-32 mechanism: a useful search
+must test the relative specialized subgroups, since distinct MW16 fibrations
+with `Q`-isomorphic fibres can collide completely.
 
 ## Blind MW16 half-lattice calibration
 
@@ -321,9 +383,14 @@ From the repository root, with PARI/GP available:
 
 .venv/bin/python -m unittest \
   elliptic-curves/tests/test_icarm_curve398_rank30.py \
-  elliptic-curves/tests/test_curve398_mw16_adaptive_half_lattice.py -v
+  elliptic-curves/tests/test_curve398_mw16_adaptive_half_lattice.py \
+  elliptic-curves/tests/test_curve398_two_parent_collision.py -v
 
 sage -python elkies-k3/scripts/compile_icarm_curve398_hidden_a1_mw16.sage --check
+
+sage -python elkies-k3/scripts/compile_icarm_curve398_second_a1_mw16_collision.sage --check
+
+sage -python elliptic-curves/cas/verify_icarm_curve398_two_parent_collision.sage
 
 sage -python elliptic-curves/cas/verify_curve398_mw16_adaptive_half_lattice_search.sage --check
 ```
@@ -340,5 +407,6 @@ The recovered construction, blind search, and post-search verification are
 respectively pinned in
 
 - `artifacts/generated-results/elliptic-curves/icarm_curve398_hidden_a1_mw16_v1.json`;
+- `artifacts/generated-results/elliptic-curves/icarm_curve398_two_parent_collision_v1.json`;
 - `artifacts/generated-results/elliptic-curves/curve398_mw16_adaptive_half_lattice_blind_v1.json`;
 - `artifacts/generated-results/elliptic-curves/curve398_mw16_adaptive_half_lattice_verification_v1.json`.

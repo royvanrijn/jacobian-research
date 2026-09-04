@@ -7,11 +7,11 @@ D=C/<w_3> whose Prym has the 618c1 and 618d1 factors.  Under that assignment,
 C is the normalization of B x_E D, so a rational point of B can lift to C
 only if its image on E lifts to D.
 
-The independent exhaustive V4 audit now shows that this factor assignment
-is incompatible at p=5 and p=7 with the displayed B -> 618f1 squareclass.
-Accordingly this script is retained only as a diagnostic for repairing the
-assignment; none of its local survivors or obstructions should be promoted
-to a statement about C before that upstream mismatch is resolved.
+The independent exhaustive V4 audit confirms that this factor assignment is
+locally compatible at p=5 and p=7 with the displayed B -> 618f1 squareclass.
+This script remains a local reconstruction screen: none of its local
+survivors should be promoted to a characteristic-zero cover without a global
+squareclass reconstruction.
 
 For each requested good prime this script enumerates an exhaustive superset
 of the possible quadratic extensions of F_p(E) having:
@@ -40,6 +40,10 @@ coefficient vector and its chart metadata.
 Append ``cmfield`` to require the residual branch factorization dictated by
 ``a^3-a^2+4*a+12``.  This is valid only after that cubic has independently
 been certified as the residue field of the discriminant ``-1236`` orbit.
+
+At every even zero, including the imposed double zero Q, character sums use
+the leading local unit after removing the square uniformizer factor.  Merely
+evaluating the function to zero there would give an incorrect point count.
 
 The implementation is deliberately exhaustive rather than optimized.  Use
 small primes for routine replays; the degree-three point enumeration becomes
@@ -141,6 +145,66 @@ def derivative_row(point, field):
     )
 
 
+def local_basis_expansion(point, field, precision=7):
+    """Expand 1,x,y,x^2,xy,x^3 in a local uniformizer."""
+    series_ring = PowerSeriesRing(field, "t", default_prec=precision)
+    t_value = series_ring.gen()
+    x_zero, y_zero = point[0], point[1]
+    partial_y = 2*y_zero+x_zero
+    if partial_y:
+        x_series = series_ring(x_zero)+t_value
+        y_series = series_ring(y_zero)
+        derivative = partial_y
+        solve_for_y = True
+    else:
+        y_series = series_ring(y_zero)+t_value
+        x_series = series_ring(x_zero)
+        derivative = y_zero-3*x_zero**2+field(185)
+        assert derivative
+        solve_for_y = False
+
+    def equation_value(x_argument, y_argument):
+        return (
+            y_argument**2+x_argument*y_argument
+            - x_argument**3+field(185)*x_argument-field(1401)
+        )
+
+    for degree in range(1, precision):
+        error = equation_value(x_series, y_series)[degree]
+        correction = -error/derivative
+        if solve_for_y:
+            y_series += correction*t_value**degree
+        else:
+            x_series += correction*t_value**degree
+    final_error = equation_value(x_series, y_series)
+    assert all(final_error[degree] == 0 for degree in range(precision))
+    basis = [
+        series_ring(1), x_series, y_series, x_series**2,
+        x_series*y_series, x_series**3,
+    ]
+    return [
+        [basis[index][degree] for index in range(6)]
+        for degree in range(precision)
+    ]
+
+
+def local_order_and_leading(coefficients, expansion_rows):
+    for order, row in enumerate(expansion_rows):
+        leading = sum(
+            coefficients[index]*row[index] for index in range(6)
+        )
+        if leading:
+            return order, leading
+    raise ArithmeticError(
+        "nonzero element of L(6O) vanished to order greater than six"
+    )
+
+
+def local_character(coefficients, expansion_rows):
+    order, leading = local_order_and_leading(coefficients, expansion_rows)
+    return 0 if order % 2 else quadratic_character(leading)
+
+
 def residual_branch_splitting(
     coefficients, field, rational_branch, q_point, pole_degree
 ):
@@ -177,7 +241,7 @@ def residual_branch_splitting(
 
 
 def character_sum(coefficients, cache, pole_degree):
-    field, rows = cache
+    field, local_data = cache
     lifted = [field(value) for value in coefficients]
     leading_index = {6: 5, 5: 4, 4: 3, 3: 2}[pole_degree]
     leading = lifted[leading_index]
@@ -187,16 +251,14 @@ def character_sum(coefficients, cache, pole_degree):
     # leading squareclass.  At an odd pole O is ramified and contributes zero
     # to #D-#E.
     answer = quadratic_character(leading) if pole_degree % 2 == 0 else 0
-    for monomials in rows:
-        answer += quadratic_character(
-            sum(lifted[index] * monomials[index] for index in range(6))
-        )
+    for _, expansion_rows, _, _ in local_data:
+        answer += local_character(lifted, expansion_rows)
     return ZZ(answer)
 
 
 def product_with_known_cover_character_sum(coefficients, cache, pole_degree):
     """Character sum after multiplying by (X-4)/54, the B -> E cover."""
-    field, rows = cache
+    field, local_data = cache
     lifted = [field(value) for value in coefficients]
     leading_index = {6: 5, 5: 4, 4: 3, 3: 2}[pole_degree]
     leading = lifted[leading_index]
@@ -207,13 +269,12 @@ def product_with_known_cover_character_sum(coefficients, cache, pole_degree):
         if pole_degree % 2 == 0
         else 0
     )
-    for monomials in rows:
-        value = sum(
-            lifted[index] * monomials[index] for index in range(6)
+    for _, expansion_rows, h_order, h_leading in local_data:
+        b_order, b_leading = local_order_and_leading(
+            lifted, expansion_rows
         )
-        answer += quadratic_character(
-            value * (monomials[1] - field(4)) / field(54)
-        )
+        if (b_order+h_order) % 2 == 0:
+            answer += quadratic_character(b_leading*h_leading)
     return ZZ(answer)
 
 
@@ -246,21 +307,42 @@ def enumerate_prime(
     for degree in (1, 2, 3):
         extension = GF(p**degree, "z")
         extended_curve = EllipticCurve(extension, [1, 0, 0, -185, 1401])
-        rows = []
+        local_data = []
         for point in extended_curve:
             if not point.is_zero():
-                x_value, y_value = point[0], point[1]
-                rows.append(
+                expansion_rows = local_basis_expansion(point, extension)
+                h_order, h_leading = local_order_and_leading(
+                    [extension(-4), extension(1), 0, 0, 0, 0],
+                    expansion_rows,
+                )
+                local_data.append(
                     (
-                        extension(1),
-                        x_value,
-                        y_value,
-                        x_value**2,
-                        x_value * y_value,
-                        x_value**3,
+                        point,
+                        expansion_rows,
+                        h_order,
+                        h_leading/extension(54),
                     )
                 )
-        caches[degree] = (extension, rows)
+        caches[degree] = (extension, local_data)
+
+        # Literal squares contribute +1 at every place, including their
+        # double zeros; multiplying by one leaves the h character unchanged.
+        square_coefficients = vector(
+            extension, [100, -20, 0, 1, 0, 0]
+        )
+        assert character_sum(
+            square_coefficients, caches[degree], 4
+        ) == extended_curve.cardinality()
+        known_h_sum = (
+            quadratic_character(extension(1)/extension(54))
+            + sum(
+                0 if h_order % 2 else quadratic_character(h_leading)
+                for _, _, h_order, h_leading in local_data
+            )
+        )
+        assert product_with_known_cover_character_sum(
+            square_coefficients, caches[degree], 4
+        ) == known_h_sum
 
     candidates = []
     tested = 0
@@ -463,17 +545,14 @@ def enumerate_prime(
     possible_values = {}
     for multiple in (1, -1, 4, -4, 10, -10):
         point = multiple * generator
-        x_value, y_value = point[0], point[1]
-        monomials = (field(1), x_value, y_value, x_value**2, x_value*y_value, x_value**3)
+        expansion_rows = local_basis_expansion(point, field)
         values = set()
         for coefficients, _, twist_character, _, _, _ in candidates:
-            value = sum(
-                coefficients[index] * monomials[index] for index in range(6)
+            local_value = local_character(
+                coefficients, expansion_rows
             )
             values.add(
-                0
-                if not value
-                else twist_character * quadratic_character(value)
+                0 if local_value == 0 else twist_character*local_value
             )
         possible_values[str(multiple)] = [int(value) for value in sorted(values)]
 

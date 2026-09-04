@@ -32653,6 +32653,93 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-CURVE398-TWO-PARENT-COLLISION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Curve-398 exact two-parent A1/MW16 subgroup collision",
+      "scope": "The second exact curve-398 norm-eight survivor, priority 63669 and orbit 0x06119, compiles to a distinct polynomial A1/MW16 K3 pencil with coefficient degrees (8,12), one I2 fibre at infinity, and 22 finite I1 fibres. Its unique rational curve-398 parameter is -541266381922712529166100960678122326542295329017811351186978386511278040283284966392829974955759690589708833207806994323443840/1966455527134683136777607542029510829585376789066249361045523577208160221833556912096256713936098199933472678271. The fixed parity coset has exactly 180 degree-one old sections; sixteen selected sections have exact Shioda Gram of rank 16 and determinant 474=948/2, proving a saturated generic MW16 basis. Exact specialization, height-dual recovery, and independent Sage group-law replay embed this basis in the displayed public M30. If G1 is the previously compiled priority-16875 subgroup and G2 is this priority-63669 subgroup, mutually inverse determinant-one integer basis changes prove G1=G2 as integral subgroups. Therefore rank(G1 intersection G2)=16 and rank(G1+G2)=16. The stacked 32-by-30 matrix has Smith diagonal sixteen ones and quotient M30/(G1+G2) is torsion-free Z^14, so its index in M30 is infinite. Thus these two distinct Q-isomorphic MW16 parents are a complete-collision negative control, not an explanation of curve 398's apparent fourteen-rank jump by transverse generic directions. This proves neither an unconditional rank upper bound for curve 398 nor saturation of M30 in E(Q).",
+      "canonical_source": "elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md",
+      "dependencies": [
+        "EC-K3-CURVE398-A1-MW16-RECOVERY",
+        "EC-ICARM-CURVE398-RANK30-CONSTRUCTION"
+      ],
+      "checker": "elliptic-curves/cas/verify_icarm_curve398_two_parent_collision.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:901a38a6ea7faa41e4a9a788d7ff78e8ba4085b2a714bba9aeb3124e64933270",
+      "software_lock": [
+        "elkies-k3/scripts/compile_icarm_curve398_second_a1_mw16_collision.sage",
+        "elliptic-curves/cas/verify_icarm_curve398_two_parent_collision.sage",
+        "elliptic-curves/tests/test_curve398_two_parent_collision.py",
+        "artifacts/generated-results/elkies-k3-curve398-11952-norm8-a1-exact-survivors-v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_curve398_hidden_a1_mw16_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_curve398_rank30_and_construction_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_curve398_two_parent_collision_v1.json"
+      ],
+      "supersedes_notes": [
+        "only the cheaper of the two curve-398 A1/MW16 survivors has been fully compiled"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elkies-k3/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elkies-k3/scripts/README.md",
+        "artifacts/generated-results/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-ICARM-A1-MW16-ATLAS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete 11952 norm-eight A1/MW16 atlas for eleven priority ICARM targets",
+      "scope": "On the source-identified norm12-orbit-11952 alternate-Q80 rootless/MW17 chart, the complete 63,917 minimum-norm-eight old-degree-two A1/MW16 layer is screened against ICARM curves 302, 273, 542, 548, 398, 399, 400, 403, 401, 402, and 10, for 703,087 target--fibration pairs. Projective modular no-root witnesses and exact QQ factorization give complete-layer misses for 302, 273, 399, 403, 402, and 10. Nine QQ-isomorphic hits compile exactly: priorities 16875 and 63669 for curve 398, 53042 and 62992 for curve 400, 57487 for curve 401, 30486 for curve 542, and 31627, 54835, and 63647 for curve 548. Every compiled pencil has coefficient degrees (8,12), fibre configuration I2+22I1, and a saturated generic MW16 height lattice of determinant 474. The displayed target-rank jump lower bounds are respectively +14, +12, +11, +10, and +8. Because 302 and 273 miss the complete A1 layer, one exact source-identified fixed-corridor 2A1/MW15 pencil was screened immediately: curve 273 is excluded modulo 1009 and curve 302 modulo 1019. That MW15 result is bounded to one fibration and is not an exhaustion of all A2 or 2A1 frames. All ICARM ranks and specialization jumps are lower bounds; no exact target-rank theorem is asserted.",
+      "canonical_source": "elkies-k3/ICARM_A1_MW16_ATLAS_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-CURVE398-A1-MW16-RECOVERY",
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-R17-NORM12-ICARM-573-REFRESH"
+      ],
+      "checker": "elkies-k3/scripts/build_icarm_a1_mw16_atlas.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b8261fcc10779609e2ccff782cc8360df53f923ea90ade2c323af6a6cd9810d9",
+      "software_lock": [
+        "elkies-k3/scripts/screen_icarm_norm8_a1_fibrations.sage",
+        "elkies-k3/scripts/run_icarm_norm8_a1_atlas.py",
+        "elkies-k3/scripts/certify_icarm_norm8_a1_survivors.sage",
+        "elkies-k3/scripts/compile_icarm_norm8_a1_survivors.sage",
+        "elkies-k3/scripts/build_icarm_a1_mw16_atlas.py",
+        "elkies-k3/scripts/screen_icarm_fixed_mw15_fibrations.sage",
+        "artifacts/generated-results/elkies-k3-icarm-11952-norm8-a1-mw16-atlas-v1.json",
+        "artifacts/generated-results/elkies-k3-icarm-curve302-273-fixed-2a1-mw15-screen-v1.json"
+      ],
+      "supersedes_notes": [
+        "curves 542 and 548 remain unexplained misses after the six norm-twelve MW17 classes",
+        "only curve 398 is known to occur in the complete norm-eight A1/MW16 layer"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "artifacts/generated-results/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "ECR31",
       "kind": "theorem",
       "state": "proved",
@@ -37048,7 +37135,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Parallel rank-32 construction, exact-rank, and improved-conductor certification",
-      "scope": "Rank at least 32 remains open. ECR31 proves rank at least 31 for curve 302 without an unconditional upper bound. The operational programme has three peer construction lanes and no unique R17/MW17 critical path. Lane A is calibrated R17/MW17 specialization, using the exact determinant-948 equations, the 43-chart/six-class atlas, native public fibres, and fail-closed residual descent gates. Lane B now uses the recovered curve-398 A1/MW16 fibration as a cross-fibration rank-jump positive control while continuing reconstruction of curve 302's unknown parent from its complete 31-point configuration without assuming generic rank 17 or a 17+14 split. Lane C is the arithmetic-first different-NS foundry. EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS and EC-K3-R17-NORM12-ICARM-573-REFRESH exclude curves 273, 302, and 398 only from the six norm-twelve classes, not from other fibrations or families. EC-K3-CURVE398-A1-MW16-RECOVERY certifies curve 398's exact A1/MW16 family, rational parameter, saturated sixteen-section specialization, fourteen-dimensional displayed quotient, and blind adaptive recovery of the full displayed rank-30 subgroup. This complements the exactly calibrated R17/MW17 quotient gains, which currently reach twelve. Generic rank and demonstrated jump size are therefore separate operational prioritization axes; this is not a theorem about search probabilities or unseen-family generalization. For a family with certified generic rank r, a rank-32 success requires at least 32-r independent quotient directions and a finite-reduction independence certificate of rank 32: fifteen directions for MW17 and sixteen for A1/MW16. Before any expensive point or cover search, the actual family-relative residual Selmer quotient must pass on the same parameter and global minimal model; signatures, norm-one elements, incomplete class data, heuristic scores, local candidates, bounded misses, and backend timeouts authorize nothing. The recovered curve-398 family may now be used as a rank-32 neighbourhood and regression control, but its bounded success does not establish stability or authorize skipping residual descent. A completed curve-302 reconstruction must certify its parent equation, parameter, generic subgroup, section transport, and quotient without dimensioning the search in advance. The retained exact narrowing results are EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE, EC-K3-H3-Q4O1584-Q4O164-QQ, EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR, EC-K3-H3-Q12O5867-QQ-ROOTLESS, EC-K3-H3-Q12O5867-QQ-R17-BASIS, EC-K3-H3-Q12O5867-ENDPOINT-QQ, EC-K3-ELKIES-2026-R17, EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS, EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL, EC-K3-ELKIES-2026-R18-COVER, EC-K3-ELKIES-2026-R19-PAIRED, ECR31, EC-R21-ICARM, EC-R20-IC245, EC-MD17, EC-MD19, EC-K3-H3-SOURCE, EC-K3-H3-PTS, EC-ICARM-CONSTRUCTION-FINGERPRINTS, EC-K3-H3-Q8-QQ-D13, EC-K3-H3-Q24-O42-I8STAR-MARKING, EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT, EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE, EC-K3-H3-Q24-O42-SECTION-CANDIDATES, EC-K3-H3-Q24-O42-QQ-A11, EC-K3-H3-A11-Q8-QQ-2A5, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-Q24-O42-FAST-Q6-AUDIT, EC-K3-H3-D13-MW17-LATTICE-CHAIN, EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES; they remain dependencies and regression controls but do not define the exclusive roadmap. The retained exact route consumers are EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE, EC-K3-H3-Q4O208-Q4O1584-QQ, EC-K3-H3-Q4O1584-Q4O164-QQ, EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR, EC-K3-H3-Q12O5867-QQ-ROOTLESS, EC-K3-H3-Q12O5867-QQ-R17-BASIS, EC-K3-H3-Q12O5867-ENDPOINT-QQ, EC-K3-ELKIES-2026-R17, EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS, EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL, EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE, EC-K3-ELKIES-2026-R18-COVER, EC-K3-ELKIES-2026-R19-PAIRED, EC-K3-H3-Q24-QQ-D12, EC-K3-H3-Q24-O42-QQ-A11, EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET, EC-K3-H3-A11-Q8-QQ-2A5, EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE, EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE. Separately, an unconditional exact-rank result for curve 302, residual descent for curve 273, and sharper exact rank or conductor results from the pinned near misses remain open.",
+      "scope": "Rank at least 32 remains open. ECR31 proves rank at least 31 for curve 302 without an unconditional upper bound. The operational programme has three peer construction lanes and no unique R17/MW17 critical path. Lane A is calibrated R17/MW17 specialization, using the exact determinant-948 equations, the 43-chart/six-class atlas, native public fibres, and fail-closed residual descent gates. Lane B now uses the recovered curve-398 A1/MW16 fibration as a cross-fibration rank-jump positive control while continuing reconstruction of curve 302's unknown parent from its complete 31-point configuration without assuming generic rank 17 or a 17+14 split. Lane C is the arithmetic-first different-NS foundry. EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS and EC-K3-R17-NORM12-ICARM-573-REFRESH exclude curves 273, 302, and 398 only from the six norm-twelve classes, not from other fibrations or families. EC-K3-CURVE398-A1-MW16-RECOVERY certifies curve 398's exact A1/MW16 family, rational parameter, saturated sixteen-section specialization, fourteen-dimensional displayed quotient, and blind adaptive recovery of the full displayed rank-30 subgroup. This complements the exactly calibrated R17/MW17 quotient gains, which currently reach twelve. EC-K3-R17-REFRESH-BLIND-JUMP-LADDER validates exact half-lattice recovered rank across displayed jumps +3 through +12 and the +10/+11/+12 tail, so Lane A may use that score for scheduling while retaining the separate residual-Selmer gate. Generic rank and demonstrated jump size are therefore separate operational prioritization axes; this is not a theorem about search probabilities or unseen-family generalization. For a family with certified generic rank r, a rank-32 success requires at least 32-r independent quotient directions and a finite-reduction independence certificate of rank 32: fifteen directions for MW17 and sixteen for A1/MW16. Before any expensive point or cover search, the actual family-relative residual Selmer quotient must pass on the same parameter and global minimal model; signatures, norm-one elements, incomplete class data, heuristic scores, local candidates, bounded misses, and backend timeouts authorize nothing. The recovered curve-398 family may now be used as a rank-32 neighbourhood and regression control, but its bounded success does not establish stability or authorize skipping residual descent. A completed curve-302 reconstruction must certify its parent equation, parameter, generic subgroup, section transport, and quotient without dimensioning the search in advance. The retained exact narrowing results are EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE, EC-K3-H3-Q4O1584-Q4O164-QQ, EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR, EC-K3-H3-Q12O5867-QQ-ROOTLESS, EC-K3-H3-Q12O5867-QQ-R17-BASIS, EC-K3-H3-Q12O5867-ENDPOINT-QQ, EC-K3-ELKIES-2026-R17, EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS, EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL, EC-K3-ELKIES-2026-R18-COVER, EC-K3-ELKIES-2026-R19-PAIRED, ECR31, EC-R21-ICARM, EC-R20-IC245, EC-MD17, EC-MD19, EC-K3-H3-SOURCE, EC-K3-H3-PTS, EC-ICARM-CONSTRUCTION-FINGERPRINTS, EC-K3-H3-Q8-QQ-D13, EC-K3-H3-Q24-O42-I8STAR-MARKING, EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT, EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE, EC-K3-H3-Q24-O42-SECTION-CANDIDATES, EC-K3-H3-Q24-O42-QQ-A11, EC-K3-H3-A11-Q8-QQ-2A5, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-Q24-O42-FAST-Q6-AUDIT, EC-K3-H3-D13-MW17-LATTICE-CHAIN, EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES; they remain dependencies and regression controls but do not define the exclusive roadmap. The retained exact route consumers are EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE, EC-K3-H3-Q4O208-Q4O1584-QQ, EC-K3-H3-Q4O1584-Q4O164-QQ, EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR, EC-K3-H3-Q12O5867-QQ-ROOTLESS, EC-K3-H3-Q12O5867-QQ-R17-BASIS, EC-K3-H3-Q12O5867-ENDPOINT-QQ, EC-K3-ELKIES-2026-R17, EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS, EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL, EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE, EC-K3-ELKIES-2026-R18-COVER, EC-K3-ELKIES-2026-R19-PAIRED, EC-K3-H3-Q24-QQ-D12, EC-K3-H3-Q24-O42-QQ-A11, EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET, EC-K3-H3-A11-Q8-QQ-2A5, EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE, EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE. Separately, an unconditional exact-rank result for curve 302, residual descent for curve 273, and sharper exact rank or conductor results from the pinned near misses remain open.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
         "ECR31",
@@ -37102,6 +37189,7 @@
         "EC-K3-ELKIES-2026-R19-PAIRED",
         "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
         "EC-K3-R17-NORM12-ICARM-573-REFRESH",
+        "EC-K3-R17-REFRESH-BLIND-JUMP-LADDER",
         "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
         "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
         "EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE",
@@ -37720,7 +37808,7 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Exact determinant-1236 marked Shimura curve and rational-lift gate",
-      "scope": "For rootless-MW17 row K3-6d288cfad55e0d15 (legacy NS0035), the primitive transcendental lattice has Gram [[-2,0,1],[0,4,0],[1,0,154]], determinant -1236, and discriminant group Z/1236. Its literal even Clifford order has reduced trace-pairing determinant -618^2 and is an Eichler order of quaternion discriminant 6 and level 103, not merely an order similar to it. Exact normalizer representatives induce all eight elements of O(A_T), while the projectively stable subgroup is {1,w_618}; hence the fully marked period curve is C_1236=X_0^6(103)/<w_618>, not the coarse genus-17 curve X_0^6(103). Riemann--Hurwitz gives C_1236 genus 6, no cusps, twelve order-2 and two order-3 orbifold points. It has a degree-two map to the exact genus-two quotient B: y^2=1944*x^6+441*x^4-90*x^2+9. EC-K3-DET1236-GENUS2-RATIONAL-POINTS proves that B(QQ) consists of exactly fourteen points. The two points over one fixed quotient point are rational order-discriminant -3 CM points on C_1236; they are Picard-rank-20 controls and do not realize the requested saturated rank-19 marking. The other fixed fiber is a quadratic order-discriminant -24 CM pair. Thus only the twelve non-fixed quotient points remain to be tested for rational lifting. No non-CM rational point on C_1236 is certified. The exact Phase-2 certificate remains UNRESOLVED_FOR_EXPLICIT_REASON: construct the degree-two cover C_1236 -> B, evaluate its squareclass at those twelve points, and distinguish desired full markings from saturated overlattice or quotient markings. No NS reconstruction or K3 equation work is authorized before a non-CM rational lift is proved.",
+      "scope": "For rootless-MW17 row K3-6d288cfad55e0d15 (legacy NS0035), the primitive transcendental lattice has Gram [[-2,0,1],[0,4,0],[1,0,154]], determinant -1236, and discriminant group Z/1236. Its literal even Clifford order has reduced trace-pairing determinant -618^2 and is an Eichler order of quaternion discriminant 6 and level 103, not merely an order similar to it. Exact normalizer representatives induce all eight elements of O(A_T), while the projectively stable subgroup is {1,w_618}; hence the fully marked period curve is C_1236=X_0^6(103)/<w_618>, not the coarse genus-17 curve X_0^6(103). Riemann--Hurwitz gives C_1236 genus 6, no cusps, twelve order-2 and two order-3 orbifold points. It has a degree-two map to the exact genus-two quotient B: y^2=1944*x^6+441*x^4-90*x^2+9, and EC-K3-DET1236-GENUS2-RATIONAL-POINTS proves that B(QQ) consists of exactly fourteen points. Gonzalez--Rotger residue fields plus the complete class-number-one/two order lists prove that C_1236 has exactly ten rational CM points: two of discriminant -3 and four each of discriminants -43 and -67; the other fixed fibre is a quadratic discriminant -24 CM pair. EC-K3-DET1236-CANDIDATE-DOUBLE-COVER gives an exact characteristic-zero cover candidate, its pullback squareclass, and all twelve conditional fibre evaluations. Four non-fixed B-points have rational fibres for the displayed twist, giving eight conditional lifts, while its -3 twist has none. The eight conditional lifts plus the two fixed points exhaust the complete rational CM locus, so all are CM; their required existence on the actual curve rules out the no-lift twist once the candidate branch divisor is identified. The Phase-2 status remains UNRESOLVED_FOR_EXPLICIT_REASON only because the candidate's cubic branch orbit has not been identified with the order-discriminant -1236 Shimura orbit in characteristic zero. That identification would prove ARITHMETICALLY_EXCLUDED, not realizable. No NS reconstruction or K3 equation work is authorized.",
       "canonical_source": "elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
       "dependencies": [
         "EC-K3-DET1236-GENUS2-RATIONAL-POINTS",
@@ -37770,8 +37858,8 @@
       "id": "EC-K3-DET1236-V4-LOCAL-CONSISTENCY",
       "kind": "reproduction",
       "state": "proved",
-      "title": "Exact local consistency obstruction for the determinant-1236 V4 reconstruction",
-      "scope": "On the displayed elliptic quotient E=618f1, the explicit genus-two cover B->E has squareclass h=(X-4)/54 and Prym 618e1. Every genus-three quadratic extension of F_p(E) at a good odd prime has a squareclass representative in L(6O). The checker exhaustively enumerates P(L(6O))(F_p), computes geometric branch degree with common conjugate-zero factors retained, and compares the degree-two character sums of b and h*b. At p=5 it checks 3906 classes, including 968 of branch degree four; no class, even before the branch restriction, has the asserted complementary Prym targets 15 and 11 in either order. At p=7 it checks 19608 classes, including 3476 of branch degree four; no class has targets 20 and 8 in either order, and no alternative pairing of 618a1,...,618d1 works there. The same character convention recovers the exact 618e1 target from h at both primes, and degree-two traces are unchanged by constant quadratic twists. Therefore the displayed B/E squareclass and the currently asserted 618a1*618b1 | 618c1*618d1 V4 factor partition cannot simultaneously describe the reduction of the desired tower. This is an exact upstream consistency obstruction, not an arithmetic exclusion of C_1236 and not a decision of any of the twelve rational lifts; the quotient-factor or rational-descent identification must be reconciled first.",
+      "title": "Corrected local-unit consistency for the determinant-1236 V4 reconstruction",
+      "scope": "On the displayed elliptic quotient E=618f1, the explicit genus-two cover B->E has squareclass h=(X-4)/54 and Prym 618e1. Every genus-three quadratic extension of F_p(E) at a good odd prime has a squareclass representative in L(6O). The checker exhaustively enumerates P(L(6O))(F_p), computes geometric branch degree with common conjugate-zero factors retained, and compares the degree-two character sums of b and h*b. It now evaluates an even zero, including the auxiliary double zero 2Q, by the character of its leading local unit rather than incorrectly assigning zero; literal-square tests guard this convention. At p=5 it checks 3906 classes, 1040 of branch degree four and 304 with both characters of branch degree four, finding 24 classes for the asserted targets 15 and 11. At p=7 it checks 19608 classes, with corresponding counts 3744, 848, and 56 for targets 20 and 8. Thus the displayed B/E squareclass and 618a1*618b1 | 618c1*618d1 partition are locally compatible. This exact correction withdraws the earlier upstream-inconsistency claim. Local compatibility neither constructs the characteristic-zero marked cover nor decides a rational lift.",
       "canonical_source": "elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
       "dependencies": [
         "EC-K3-DET1236-GENUS2-RATIONAL-POINTS",
@@ -37783,7 +37871,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:df47d78d3194b3bf924709edbd187d6035ee1fc02ae2888f21c59a0c4ea19fb3",
+      "artifact_hash": "sha256:ae42eecfbd5d9e1f08dd6839a2e1ad921d707830373d221ca2b599e13c744f77",
       "software_lock": [
         "elkies-k3/scripts/audit_det1236_v4_local_consistency.sage",
         "artifacts/generated-results/elkies-k3-det1236-v4-local-consistency-v1.json",
@@ -37792,12 +37880,92 @@
       "supersedes_notes": [],
       "supersedes": [],
       "closes_problems": [],
-      "narrows_problems": [
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
-      ],
+      "narrows_problems": [],
       "consumers": [
+        "artifacts/generated-results/README.md",
+        "elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-DET1236-RATIONAL-CM-LOCUS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete rational CM locus on the determinant-1236 marked curve",
+      "scope": "For C_1236=X_0^6(103)/<w_618>, Gonzalez--Rotger Corollary 5.14 implies that an imaginary quadratic order having a rational CM image must have class number at most two: its ring class field is fixed by at most one involution except in the two-involution case, and the norm-m_R ideal class has order at most two. Exact evaluation of the complete Watkins class-number-one and class-number-two order lists, including all local optimal-embedding factors at 2, 3, and 103, leaves precisely order discriminants -3, -43, and -67. Their top-curve CM loci have respectively 4, 8, and 8 points. The w_618 action is free on these three loci and Corollary 5.14 makes every quotient image rational, giving exactly 2, 4, and 4 rational points on C_1236. Thus C_1236 has exactly ten rational CM points and no others. All are Picard-rank-20 specializations and none realizes the desired exact rank-19 marking. Consequently, if EC-K3-DET1236-CANDIDATE-DOUBLE-COVER is identified with the marked curve, its two fixed plus eight non-fixed rational points exhaust this CM locus and prove arithmetic exclusion; its no-nonfixed-lift twist cannot be the actual descent.",
+      "canonical_source": "elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
+      "dependencies": [
         "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
+        "external: Gonzalez--Rotger Corollary 5.14 and Proposition 5.6",
+        "external: complete Watkins class-number-one/two imaginary quadratic order lists pinned by Padurariu--Saia at commit 6cc368fe37aa67187783118f18d149b2b1fd6230"
+      ],
+      "checker": "elkies-k3/scripts/certify_det1236_rational_cm_locus.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:2e59e6e340afbdbed664582379ac584f39dec26c9fb9587910486ea85654d36e",
+      "software_lock": [
+        "elkies-k3/scripts/certify_det1236_rational_cm_locus.sage",
+        "artifacts/generated-results/elkies-k3-det1236-rational-cm-locus-v1.json"
+      ],
+      "supersedes_notes": [
+        "only the two discriminant -3 rational CM points on C_1236 are known",
+        "the eight conditional non-fixed determinant-1236 lifts might be non-CM"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-DET1236-CANDIDATE-DOUBLE-COVER",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact candidate for the determinant-1236 marked double cover",
+      "scope": "Let E=618f1 with generator G=(10,-29), K=QQ(a) for a^3-a^2+4a+12=0, and A=(-3a^2-9a-20,15a^2-57a-155). Exact splitting-field addition gives Tr(A)=-16G. The point P=9G+2A has Tr(P)=-5G and x-minimal polynomial X^3-216X^2-6924X-62224 of discriminant -1236*24192^2. Exact class-field arithmetic gives class group C6 x C2 for QQ(sqrt(-1236)); its degree-12 Hilbert class field has three embedded cubic subfields, all of discriminant -1236 and QQ-isomorphic to K. Thus the candidate has the exact unique cubic CM residue-field isomorphism class, although this does not identify the particular point P. Exact L(6O) linear algebra gives b0=-X^3-328X^2-2772X+66512+(32X+1600)Y with divisor (-3G)+Orbit(P)+2(4G)-6O and norm (X-4)(X-58)^2(X^3-216X^2-6924X-62224). The candidate z^2=2b0 has, at p=5,11,13,17,19,23,29,31 and extension degrees one through three, exactly the 618c1*618d1 Prym traces; multiplying by h=(X-4)/54 has the complementary 618a1*618b1 traces. Pullback to B is Z^2=3(-81x^6-534x^4+8x^2y-177x^2+8y+24). Exact local-unit evaluation of all twelve non-fixed rational points gives rational normalization fibres precisely at (+/-1,48) and (+/-1/3,8/3), eight conditional rational lifts in total; the -3 twist gives none. Independently, Gonzalez--Rotger residue fields and the complete class-number-one/two order lists prove that the actual marked curve has exactly ten rational CM points, with multiplicities 2,4,4 for discriminants -3,-43,-67. Thus all eight conditional non-fixed lifts are CM, and their existence rules out the no-lift twist after the branch divisor is identified. The status is UNRESOLVED_FOR_EXPLICIT_REASON only because the field match and finitely many exact Euler factors do not prove that the particular point P is the order-discriminant -1236 Shimura CM branch image. If that identification is proved, this certificate gives ARITHMETICALLY_EXCLUDED.",
+      "canonical_source": "elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-DET1236-GENUS2-RATIONAL-POINTS",
+        "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
+        "EC-K3-DET1236-RATIONAL-CM-LOCUS",
+        "EC-K3-DET1236-V4-LOCAL-CONSISTENCY",
+        "external: Padurariu--Saia genus-at-most-two Shimura quotient model at commit 6cc368fe37aa67187783118f18d149b2b1fd6230",
+        "external: Jacquet--Langlands factor decomposition for the determinant-1236 quotient tower"
+      ],
+      "checker": "elkies-k3/scripts/certify_det1236_candidate_double_cover.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e81aaacd9de0eaf30480443715976590ebd0b0249a7068c5998948657f87cd7a",
+      "software_lock": [
+        "elkies-k3/scripts/certify_det1236_candidate_double_cover.sage",
+        "artifacts/generated-results/elkies-k3-det1236-candidate-double-cover-v1.json"
+      ],
+      "supersedes_notes": [
+        "no exact characteristic-zero determinant-1236 double-cover candidate is known",
+        "the determinant-1236 V4 quotient-factor input is locally inconsistent"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
         "artifacts/generated-results/README.md",
         "elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
         "elkies-k3/README.md",
@@ -41359,11 +41527,13 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Fail-closed arithmetic-marking classifier for rank-19 Neron--Severi lattices",
-      "scope": "The exact rootless-MW17 subset of the rank-seven catalogue contains 66 candidate rank-19 Neron--Severi lattices. For every row the classifier checks the NS=U+W(-1) rank, signature, determinant, evenness, minimum, and Smith invariants against the catalogue's primitive ternary K3 complement T; imports the exact rational even-Clifford algebra and integral-order ledger; and separates its coarse norm-one curve from the full stable discriminant-kernel marking curve. Hash-pinned decision records classify the determinant-948 NS0001 control as ARITHMETICALLY_POSSIBLE by its exact QQ equation, seventeen rational sections, rho=19, saturation, and trivial torsion; classify determinants 500 and 750, determinant-720 Golay, determinant-950 NS0024, and determinant-1184 NS0031 as ARITHMETICALLY_EXCLUDED by proved modular obstructions; and retain the other 60 rows as UNKNOWN. Within those 60, EC-K3-DET1236-MARKED-SHIMURA-CURVE gives determinant 1236 the stronger exact Phase-2 status UNRESOLVED_FOR_EXPLICIT_REASON: its marked curve is the genus-six X_0^6(103)/<w_618>, EC-K3-DET1236-GENUS2-RATIONAL-POINTS proves that the displayed genus-two quotient has exactly fourteen rational points, its two certified rational CM lifts have Picard rank 20, and only the twelve non-fixed quotient points remain in the rational-lift gate. The new different-NS equation-agent handoff is empty because UNKNOWN rows are not dispatched. This is not a complete classification of rank-19 NS lattices or a decision for the determinant-1236 non-CM locus or any other unknown marked curve.",
+      "scope": "The exact rootless-MW17 subset of the rank-seven catalogue contains 66 candidate rank-19 Neron--Severi lattices. For every row the classifier checks the NS=U+W(-1) rank, signature, determinant, evenness, minimum, and Smith invariants against the catalogue's primitive ternary K3 complement T; imports the exact rational even-Clifford algebra and integral-order ledger; and separates its coarse norm-one curve from the full stable discriminant-kernel marking curve. Hash-pinned decision records classify the determinant-948 NS0001 control as ARITHMETICALLY_POSSIBLE by its exact QQ equation, seventeen rational sections, rho=19, saturation, and trivial torsion; classify determinants 500 and 750, determinant-720 Golay, determinant-950 NS0024, and determinant-1184 NS0031 as ARITHMETICALLY_EXCLUDED by proved modular obstructions; and retain the other 60 rows as UNKNOWN. Within those 60, determinant 1236 has the stronger exact Phase-2 status UNRESOLVED_FOR_EXPLICIT_REASON: EC-K3-DET1236-MARKED-SHIMURA-CURVE identifies its genus-six X_0^6(103)/<w_618> curve, EC-K3-DET1236-GENUS2-RATIONAL-POINTS proves that its genus-two quotient has exactly fourteen rational points, EC-K3-DET1236-RATIONAL-CM-LOCUS proves that the marked curve has exactly ten rational CM points, and EC-K3-DET1236-CANDIDATE-DOUBLE-COVER gives eight conditional non-fixed rational lifts which the complete CM locus forces all to be CM. Only the candidate cubic branch-orbit identification remains; it would convert the row to ARITHMETICALLY_EXCLUDED. The new different-NS equation-agent handoff is empty because UNKNOWN rows are not dispatched. This is not a complete classification of rank-19 NS lattices or a decision for any other unknown marked curve.",
       "canonical_source": "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
       "dependencies": [
         "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
         "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
+        "EC-K3-DET1236-RATIONAL-CM-LOCUS",
+        "EC-K3-DET1236-CANDIDATE-DOUBLE-COVER",
         "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
         "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS",
         "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION",
@@ -41791,6 +41961,156 @@
         "elkies-k3/R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md",
         "elliptic-curves/README.md",
         "elliptic-curves/notes/HALF_LATTICE_FAKE_DESCENT_REPLAY_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-REFRESH-BLIND-JUMP-LADDER",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Blind multi-stratum adaptive half-lattice jump ladder and extreme-tail detector validation",
+      "scope": "On the sixteen quotient-eligible new hits in the hash-pinned 573-curve norm-twelve atlas refresh, a redacted input exposes only each short curve, the seventeen specialized generic MW17 points, their exact generic height Gram, curve id, and atlas class; it contains no public complement, displayed rank, or jump. Curve 499 is excluded before searching because its displayed quotient by MW17 is exactly undefined. The fixed v2 policy completely ranks MW17/2MW17 by exact generic norm, searches the first 43 classes, then—when the exact initial recovered quotient is nonzero—recomputes the full changed lattice state and searches a deterministic 301-chart adaptive pool. Every order is bound to the exact basis, height Gram, generic coordinates, quotient complement, universe, and chart identities. The per-chart bounds are height 100,000, 15 wall seconds, 1 GB PARI stack, and no retry. Fifteen fibres complete all 344 charts with no timeout or PARI failure; curve 544 has initial score zero and stops at the predeclared structural boundary after 43. Before the public complements are opened, the exact quotient-rank responses by curve id are 478:6, 498:6, 531:11, 532:3, 534:11, 535:10, 536:11, 537:10, 538:5, 539:6, 540:8, 541:8, 543:12, 544:0, 545:11, 546:8. Against the later-opened exact displayed jumps, the predeclared tied-margin Kendall test gives tau_b=0.7503122325921043 and exact one-sided p=60852/2421619200. The predeclared score-at-least-10 rule selects 7/8 of the +10/+11/+12 tail and 0/8 outside it, for risk difference 0.875 and one-sided Fisher p=1/1430. Both frozen endpoints pass, so this fixed panel supports half-lattice recovery as an extreme-jump detector, while the separate completed residual 2-Selmer gate remains mandatory before serious rank-32 point search. The v1 protocol's false cross-class assertion that every determinant-948 MW17 lattice has exactly 43 maximum-norm classes stopped after curve 478 and before curve 498 searching; v2 transparently replaces it by the top 43 exact generic-depth classes, leaves curve 478's selected set and all endpoints unchanged, discloses its already known score 6, and reruns it exactly. Post-freeze opening puts fourteen blind bases integrally inside their displayed subgroups. Curve 478's blind basis has exact rank 23, improving its unconditional lower bound from 21 to rank at least 23; curve 539 has equal blind/displayed rank 23 but unresolved integral containment. No full Mordell-Weil rank, saturation, rank upper bound, miss inference, population generalization, or replacement of the residual-Selmer gate is asserted.",
+      "canonical_source": "elliptic-curves/notes/R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-ICARM-573-REFRESH",
+        "EC-K3-R17-074D9-HALF-LATTICE-PROMOTION-GATE"
+      ],
+      "checker": "elliptic-curves/cas/analyze_r17_refresh_jump_ladder_v2.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:57cc7efb82064df3d9cf728eef1a39cd138cba8daef63bb9dbff60aace518da2",
+      "software_lock": [
+        "elliptic-curves/cas/prepare_r17_refresh_jump_ladder_inputs.sage",
+        "elliptic-curves/cas/build_r17_refresh_jump_ladder_protocol.py",
+        "elliptic-curves/cas/build_r17_refresh_jump_ladder_protocol_v2.py",
+        "elliptic-curves/cas/run_r17_refresh_jump_ladder_blind.sage",
+        "elliptic-curves/cas/run_r17_refresh_jump_ladder_blind_v2.sage",
+        "elliptic-curves/cas/verify_r17_refresh_jump_ladder.sage",
+        "elliptic-curves/cas/analyze_r17_refresh_jump_ladder.py",
+        "elliptic-curves/cas/analyze_r17_refresh_jump_ladder_v2.py",
+        "elliptic-curves/cas/half_lattice_chart_policy.py",
+        "elliptic-curves/cas/run_curve385_iterated_half_lattice_search.sage",
+        "elliptic-curves/cas/half_lattice_fake_descent_replay.sage",
+        "elliptic-curves/tests/test_r17_refresh_jump_ladder.py",
+        "elliptic-curves/data/r17_refresh_jump_ladder_blind_inputs_v1.json",
+        "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_protocol_v1.json",
+        "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_blind_v1.json",
+        "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_protocol_v2.json",
+        "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_blind_v2.json",
+        "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_verification_v2.json",
+        "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_analysis_v2.json"
+      ],
+      "supersedes_notes": [
+        "the available half-lattice controls contain only displayed jump 12 and cannot test score magnitude or upper-tail enrichment",
+        "curve 478 has only the displayed rank-at-least-21 lower bound"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/cas/README.md",
+        "elkies-k3/README.md",
+        "artifacts/generated-results/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md",
+        "elliptic-curves/notes/R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-HALF-LATTICE-HEIGHT-COMPRESSION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Half-lattice midpoint, empty-ball, and coordinate-height mechanism",
+      "scope": "For E:y^2=x^3+Ax+B and the pointed quartic C_Q:w^2=t^4-6x_Q*t^2-8y_Q*t-3x_Q^2-4A, the degree-two fiber involution is R->Q-R and t_Q(R)^2=x(R)+x(Q-R)+x(Q). The Neron--Tate identities hhat(R)+hhat(Q-R)=(hhat(Q)+hhat(2R-Q))/2 and 2*hhat(R-Q/2)=hhat(2R-Q)/2 show that every Mobius-reduced chart is canonically centered at Q/2. If Q_c is shortest in c modulo 2M, then min_{P in M} hhat(P-Q_c/2)=hhat(Q_c)/4, so half-lattice depth is exactly an old-subgroup exclusion radius, not Selmer depth. The binary-quartic invariants are I=-48A and J=-1728B for every Q. An exact 3,865-chart reconstruction records the reduced horizontal maps, coefficient heights, invariants, and known-basis height distortion for the detailed rank-28, curve-385, and curve-398 ledgers. On the sealed rank-28 selected union, reduced-coordinate height gives 40 true source-visible and 2,520 true source-invisible chart/target pairs with no errors, reconstructs every prefix quotient gain and final quotient rank eleven, and the posthoc centered height has a strict 4.7234 gap between productive and nonproductive charts. Seven additional compact positive-control ledgers add 394 chart records covering full +8, +9, and +10 recovery, 9/11, 10/12, 12/12, and the curve-385 pre-iteration 4/12. No common recorded target-free scalar has direction-stable worst-case AUC at least 0.7 across all eleven positive chart orders. On the failed curve-385 M29 campaign, larger depth predicts exclusion of known finite hits but supplies no new direction. Exact identities are theorem-level; canonical-height decimals, AUCs, and the strict selected-ledger separation are bounded retrospective diagnostics. No target-free success probability, Selmer statement, saturation claim, rank upper bound, or point absence is inferred.",
+      "canonical_source": "elliptic-curves/notes/HALF_LATTICE_HEIGHT_COMPRESSION_MECHANISM_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-074D9-HALF-LATTICE-PROMOTION-GATE"
+      ],
+      "checker": "elliptic-curves/cas/analyze_half_lattice_height_compression.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:1a97cfa9b14e4e70c7b9c5e5b1c189edfea1004b72f3460d61c30de9c6964cbf",
+      "software_lock": [
+        "elliptic-curves/cas/analyze_half_lattice_height_compression.sage",
+        "elliptic-curves/cas/alternate_quartic_covers.py",
+        "elliptic-curves/tests/test_half_lattice_height_compression.py",
+        "artifacts/generated-results/elliptic-curves/half_lattice_height_compression_analysis_v1.json.gz",
+        "artifacts/generated-results/elliptic-curves/half_lattice_fake_descent_rank28_blind_v1.json",
+        "artifacts/generated-results/elliptic-curves/half_lattice_fake_descent_rank28_verification_v1.json",
+        "artifacts/generated-results/elliptic-curves/curve385_iterated_half_lattice_blind_v1.json",
+        "artifacts/generated-results/elliptic-curves/curve385_sparse_quotient_rank32_primary_ledger_v1.json.gz",
+        "artifacts/generated-results/elliptic-curves/curve398_mw16_adaptive_half_lattice_blind_v1.json",
+        "artifacts/generated-results/elliptic-curves/half_lattice_fake_descent_r17_matrix_blind_v1.json",
+        "artifacts/generated-results/elliptic-curves/half_lattice_fake_descent_r17_matrix_verification_v1.json",
+        "artifacts/generated-results/elliptic-curves/half_lattice_rank29_controls_blind_v1.json",
+        "artifacts/generated-results/elliptic-curves/half_lattice_rank29_controls_verification_v1.json"
+      ],
+      "supersedes_notes": [
+        "quartic invariants or local solubility distinguish productive half-lattice classes",
+        "half-lattice depth directly predicts first independent-point appearance within a selected deep stratum",
+        "enumerating additional low-Hamming-weight quotient masks is a geometry-of-numbers substitute for recomputing current-lattice holes"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/cas/README.md",
+        "artifacts/generated-results/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md",
+        "elliptic-curves/notes/HALF_LATTICE_HEIGHT_COMPRESSION_MECHANISM_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-CURVE385-HEIGHT-COMPRESSION-BUILDER-PILOT",
+      "kind": "example",
+      "state": "proved",
+      "title": "Curve-385 current-lattice height-compression builder pilot",
+      "scope": "Starting from the frozen curve-385 M29 primary ledger, an outcome-free deterministic builder samples 256 SHA-256-derived seeds in the full 2^29 parity space and applies strict one-bit ascent on the current canonical-height form. The seeds reach 256 distinct local maxima in a mean 2.09 and maximum six steps. It constructs and reduces quartics for the 32 deepest unsearched maxima whose CVP representatives agree at rounding scales 10^5 and 10^6; none repeats any of the 3460 previously searched base points. Each chart records its exact horizontal map and a signed-M29-basis calibration of 2D+min(delta)-log(100000), explicitly not a certified global height bound. The builder freezes 24 compression-shortlisted charts, thins them by current-lattice maximin distance, and commits sixteen charts with canonical depths 42.4865 through 44.3395 before any new point search. At the unchanged reduced-coordinate height 100000, 15-second wall limit, 1 GB GP stack, and zero retries, all sixteen searches complete, return zero finite points, and leave the exactly classified subgroup at M29. The preceding natural-weight-one/two campaign had finite hits on 665 of 3116 charts; the descriptive fixed-table lower-tail Fisher value for 0/16 is 0.02173, but the policies were not randomized arms. Thus this bounded pilot shows that the builder reaches fresh deeper holes and suppresses old-point rediscovery at this budget; it finds no new arithmetic direction and proves neither failure of the midpoint mechanism, saturation, point absence, a rank upper bound, nor prospective enrichment.",
+      "canonical_source": "elliptic-curves/notes/HALF_LATTICE_HEIGHT_COMPRESSION_MECHANISM_2026-09-04.md",
+      "dependencies": [
+        "EC-HALF-LATTICE-HEIGHT-COMPRESSION"
+      ],
+      "checker": "elliptic-curves/cas/run_curve385_height_compression_pilot.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f97ae1b23ced6ea037326a0679fe5cb32a6fd90695bbd0c2ea08eb683ab1da5a",
+      "software_lock": [
+        "elliptic-curves/cas/run_curve385_height_compression_pilot.sage",
+        "elliptic-curves/cas/run_curve385_iterated_half_lattice_search.sage",
+        "elliptic-curves/cas/half_lattice_fake_descent_replay.sage",
+        "elliptic-curves/tests/test_curve385_height_compression_pilot.py",
+        "artifacts/generated-results/elliptic-curves/curve385_sparse_quotient_rank32_primary_ledger_v1.json.gz",
+        "artifacts/generated-results/elliptic-curves/curve385_height_compression_pilot_protocol_v1.json",
+        "artifacts/generated-results/elliptic-curves/curve385_height_compression_pilot_blind_v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/cas/README.md",
+        "artifacts/generated-results/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md",
+        "elliptic-curves/notes/HALF_LATTICE_HEIGHT_COMPRESSION_MECHANISM_2026-09-04.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -42286,7 +42606,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Arithmetic-first different-NS MW17 with a certified carrier, or integral V4 rank 20",
-      "scope": "EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS remains a bounded non-arithmetic lattice census, and EC-K3-NS0031-MARKED-FORMAL-BRANCH remains a local control only. The determinant-948 noncyclic chain is equation-explicit, so another equation on that surface is not the Lane B milestone. Determinants 500, 720, 750, 950, and 1184, together with the split determinant-378 row, are arithmetically excluded by EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS, EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION, EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, EC-K3-NS0031-QQ-MARKING-OBSTRUCTION, and EC-K3-DET378-QQ-MARKING-OBSTRUCTION. Determinant 1236 is the strongest current positive-directed rootless target because EC-K3-DET1236-MARKED-SHIMURA-CURVE identifies its exact genus-six marked curve and a degree-two map to an explicit genus-two quotient; EC-K3-DET1236-GENUS2-RATIONAL-POINTS proves that the quotient has exactly fourteen rational points. Its only certified rational marked lifts are two higher-Picard CM controls, so lifting the remaining twelve non-fixed points and finding a rational non-CM point remain unresolved. EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY orders all 827 rank-three T rows before NS or rootless work: compute the exact stable marked curve and a rational noncuspidal non-CM point, construct and saturate the rational marking of NS=T^perp, then test rootlessness and compile an equation. Its current 820-row arithmetic queue has no new positive handoff; determinants 256 and 512 are the globally earliest unscreened rows, while the rootless subqueue has 60 UNKNOWN rows. Primary completion requires a different-NS characteristic-zero elliptic K3 over QQ with geometric Picard rank 19, nineteen rational divisor classes, a target-free primitive-nef rootless U', seventeen displayed QQ(t)-sections generating the saturated torsion-free MW lattice, and additionally a certified positive-rank low-genus carrier C/QQ with a nonconstant map to P1 and an exact independent pullback section. The stretch completion is a connected V4 carrier with invariant character rank 17 and all three nontrivial character ranks one, together with the exact integral 2-primary graph glue, full height pairing, saturation, and torsion exclusion. EC-K3-INTEGRAL-CHARACTER-GLUE, EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64, EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64, EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION, and EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION provide the current involution, carrier, and product-character boundary. Existing two-character and zero-Tate-class controls do not prove the product-character section. A coarse curve, modular point, finite p-adic or formal lift, rootless-first score, supplied target, unsaturated subgroup, heuristic carrier rank, or equation without the rational rank-19 marking does not close the problem.",
+      "scope": "EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS remains a bounded non-arithmetic lattice census, and EC-K3-NS0031-MARKED-FORMAL-BRANCH remains a local control only. The determinant-948 noncyclic chain is equation-explicit, so another equation on that surface is not the Lane B milestone. Determinants 500, 720, 750, 950, and 1184, together with the split determinant-378 row, are arithmetically excluded by EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS, EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION, EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, EC-K3-NS0031-QQ-MARKING-OBSTRUCTION, and EC-K3-DET378-QQ-MARKING-OBSTRUCTION. Determinant 1236 is now the strongest near-exclusion rootless target. EC-K3-DET1236-MARKED-SHIMURA-CURVE identifies its exact genus-six marked curve and degree-two map to an explicit genus-two quotient; EC-K3-DET1236-GENUS2-RATIONAL-POINTS proves that the quotient has exactly fourteen rational points; and EC-K3-DET1236-RATIONAL-CM-LOCUS proves that the marked curve has exactly ten rational CM points, with multiplicities 2,4,4 for discriminants -3,-43,-67. EC-K3-DET1236-CANDIDATE-DOUBLE-COVER constructs an exact characteristic-zero cover candidate and evaluates all twelve non-fixed fibres: the displayed twist gives eight conditional rational lifts, all forced to be CM by the complete locus, while its -3 twist gives none and cannot be the actual descent after the branch divisor is identified. Only the characteristic-zero identification of the candidate's cubic branch orbit with the order-discriminant -1236 Shimura orbit remains unresolved; it would prove ARITHMETICALLY_EXCLUDED. EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY orders all 827 rank-three T rows before NS or rootless work: compute the exact stable marked curve and a rational noncuspidal non-CM point, construct and saturate the rational marking of NS=T^perp, then test rootlessness and compile an equation. Its current 820-row arithmetic queue has no new positive handoff; determinants 256 and 512 are the globally earliest unscreened rows, while the rootless subqueue has 60 UNKNOWN rows. Primary completion requires a different-NS characteristic-zero elliptic K3 over QQ with geometric Picard rank 19, nineteen rational divisor classes, a target-free primitive-nef rootless U', seventeen displayed QQ(t)-sections generating the saturated torsion-free MW lattice, and additionally a certified positive-rank low-genus carrier C/QQ with a nonconstant map to P1 and an exact independent pullback section. The stretch completion is a connected V4 carrier with invariant character rank 17 and all three nontrivial character ranks one, together with the exact integral 2-primary graph glue, full height pairing, saturation, and torsion exclusion. EC-K3-INTEGRAL-CHARACTER-GLUE, EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64, EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64, EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION, and EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION provide the current involution, carrier, and product-character boundary. Existing two-character and zero-Tate-class controls do not prove the product-character section. A coarse curve, modular point, finite p-adic or formal lift, rootless-first score, supplied target, unsaturated subgroup, heuristic carrier rank, or equation without the rational rank-19 marking does not close the problem.",
       "canonical_source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION",
@@ -42302,7 +42622,8 @@
         "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS",
         "EC-K3-DET1236-GENUS2-RATIONAL-POINTS",
         "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
-        "EC-K3-DET1236-V4-LOCAL-CONSISTENCY",
+        "EC-K3-DET1236-RATIONAL-CM-LOCUS",
+        "EC-K3-DET1236-CANDIDATE-DOUBLE-COVER",
         "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
         "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
         "EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA",
@@ -42377,9 +42698,10 @@
         },
         {
           "attack": "Promoting a rational point on the determinant-1236 genus-two quotient or one of its rational CM points to a rank-19 marking",
-          "reason": "The exact period curve is the unresolved degree-two cover X_0^6(103)/<w_618>; quotient points need not lift, and the two certified rational CM points have geometric Picard rank 20 rather than the requested saturated rank-19 marking.",
+          "reason": "The exact period curve is the unresolved degree-two cover X_0^6(103)/<w_618>; quotient points need not lift, and its complete set of ten rational CM points all have geometric Picard rank 20 rather than the requested saturated rank-19 marking.",
           "witnesses": [
-            "EC-K3-DET1236-MARKED-SHIMURA-CURVE"
+            "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
+            "EC-K3-DET1236-RATIONAL-CM-LOCUS"
           ]
         },
         {

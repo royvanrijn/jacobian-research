@@ -1,0 +1,2061 @@
+{
+  "claim_boundary": [
+    "This artifact freezes a rank-blind finite cohort, not any class-group result.",
+    "Small explicit order discriminant does not by itself prove that BNF certification will finish.",
+    "A later bounded detector miss will not prove rank 17 or absence of Mordell-Weil escape.",
+    "Any conclusion is scoped to this discriminant-selected R17 population."
+  ],
+  "commitment": {
+    "candidate_count": 100,
+    "candidate_list_sha256": "47cb093c0cbf4803e2cb6c176a45579f241ecf574a48c7c742dce2f053c4d95e",
+    "frozen_before_class_group_computation": true,
+    "frozen_before_detector_search": true,
+    "selection_used_exceptional_point_coordinates": false,
+    "selection_used_nagao_or_selmer_scores": false,
+    "selection_used_rank_or_point_search_labels": false
+  },
+  "family_expansion_gate": {
+    "admission_rule": "Freeze a rank-blind rational reparameterization and demonstrate complete certified BNF plus generic-MW16 S-class images under the same per-row resource envelope before extending the cohort.",
+    "included_in_v1": false,
+    "reason": "The current exact lambda gauge did not pass the small-field feasibility probe: maximal-order reduction at lambda=0 exceeded 30 seconds.  This is an operational observation, not a mathematical exclusion.",
+    "recovered_A1_MW16_input": "artifacts/generated-results/elliptic-curves/icarm_curve398_hidden_a1_mw16_v1.json"
+  },
+  "generation": {
+    "command": "sage -python elkies-k3/scripts/build_r17_small_field_class_quotient_cohort.sage",
+    "script": "elkies-k3/scripts/build_r17_small_field_class_quotient_cohort.sage",
+    "script_sha256": "9fd4e21be02d7f3969ab22668851aecdb072c2505817b7f68b8b62098918fdaa"
+  },
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/icarm_curve398_hidden_a1_mw16_v1.json": "1cbfe11a4207145417035085daa67a1108f2f2d9abc9f8ba0a0938735837851e",
+    "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869",
+    "elkies-k3/data/fibrations/elkies_2026_published_r17_sections.json": "b3dcf536b9e18d82291b2a5453a32e0419f5b17688c1d04bac3bd9fb02df09ea"
+  },
+  "laboratory_id": "r17-small-field-class-quotient-v1",
+  "phase_order": [
+    "0_freeze_rank_blind_cohort",
+    "1_compute_and_freeze_complete_unconditional_class_quotient_features",
+    "2_freeze_uniform_blind_half_lattice_protocol_bound_to_phase_1_hash",
+    "3_run_detector_without_loading_feature_values",
+    "4_join_features_and_certified_outcomes_once"
+  ],
+  "question": "Does pre-search dim Q_t predict later certified Mordell-Weil quotient gain?",
+  "rows": [
+    {
+      "absolute_cubic_order_discriminant_bits": 286,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-110219578033181536287238038509349048399774174344319846253898710573311310596302438400000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-18731864240488242124054417071087065607548637909387583205968731672444369068767441/3164635945977212311388573031325037141878886459560093743276621944635238400000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-3",
+      "projective_height": 3,
+      "projective_pair": [
+        -3,
+        1
+      ],
+      "sample_id": "05f15a2de4ef60b253684f14",
+      "selection_rank_one_based": 1,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 289,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-615925597696732202527923682441360149107542606376103205940438195071509737582698168320000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-1452320346288566403576848508399133340517524049315561447135473049022780425/16165664476813953911169604734393839807974842649842385017853824892928",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-2",
+      "projective_height": 2,
+      "projective_pair": [
+        -2,
+        1
+      ],
+      "sample_id": "3dc32cbb5e54612e7648c046",
+      "selection_rank_one_based": 2,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 289,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-795866989131730581857914204326647877291538566849550976948699200687882006066888704000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-133083575508626636419384035336722012811839151069398485649577381252362284009827841/22851015463556739081384955601925415629025556567221673770185215267656704000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-1",
+      "projective_height": 1,
+      "projective_pair": [
+        -1,
+        1
+      ],
+      "sample_id": "adbbd2a5322823d13405c96b",
+      "selection_rank_one_based": 3,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 294,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-20179737284074129477515068485704334371151715033476554736659242201723094504038203392000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-74157104601865697899852919240189368181870282700724213850979870433831826081281988641/579402708022816798686431356798974363873642803022214836201795895870267392000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "0",
+      "projective_height": 1,
+      "projective_pair": [
+        0,
+        1
+      ],
+      "sample_id": "c04e752ab02c03f8ab6b11b2",
+      "selection_rank_one_based": 4,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 295,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "37617834650813691555659003173259179982922596980430760579156133967638958714570932224000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "488319465878786235352445642269972362637912291121744395478791772951884205266882254721/1080087166637066886888174242483699917772882144187393174526963072975540224000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-4",
+      "projective_height": 4,
+      "projective_pair": [
+        -4,
+        1
+      ],
+      "sample_id": "f9e0e8328b13b07b4641fdf9",
+      "selection_rank_one_based": 5,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 304,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-31996525301164750583556757648866701737979212238870491175908945894492023820245670664601600000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-1463091432113833642240053818344611162861657595542737359135712824487117136799021041/1728672703239953077912144838437679466751675437569274987719913677928857600000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-5",
+      "projective_height": 5,
+      "projective_pair": [
+        -5,
+        1
+      ],
+      "sample_id": "7ffb221a2e6ed84df8491547",
+      "selection_rank_one_based": 6,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 305,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-43943807419544758185545264170397589280890578089552526381160403058571450227269331582976000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-1173898038304718135016387055857440650248287901715529678721900965677472805849/2575915800525731300155578033387869235480218035047793794775721984000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "1",
+      "projective_height": 1,
+      "projective_pair": [
+        1,
+        1
+      ],
+      "sample_id": "a327a13d35dc4669be0c5bb8",
+      "selection_rank_one_based": 7,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 311,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "3664921620907010624511234971499485243212585973920942369374217492382089761489418531897344000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "16577676307398782270759479191949274640732674373871968657918336753200464/8141281092192039071987669730429900165608275549559333625423741703125",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-1/2",
+      "projective_height": 2,
+      "projective_pair": [
+        -1,
+        2
+      ],
+      "sample_id": "6ec2444cb6ee9f7a8a91ea6a",
+      "selection_rank_one_based": 8,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 312,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-7517170711753148609217102235080624445680730060174165943939855915706803605551721624633344000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-124900745058216005425095973458500479258557146085304853395679798557516219913441617104/1156516763340352748224034282431341916277844477201719630528351352610671755609375",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-7/2",
+      "projective_height": 7,
+      "projective_pair": [
+        -7,
+        2
+      ],
+      "sample_id": "2b18b569bb2f1636b0087697",
+      "selection_rank_one_based": 9,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 313,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "12242301080933669942323566976387800514482952697827428981167241372131089588517444001202176000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "12443020187667224415108050935606292031077644388323674866602120342956480601098655696/571868194961931574742867143688909515118522109709415564282382422430529079203125",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-5/2",
+      "projective_height": 5,
+      "projective_pair": [
+        -5,
+        2
+      ],
+      "sample_id": "ed5828b0ae76f5fdbd93fa87",
+      "selection_rank_one_based": 10,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 314,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "33165455169562483457771003901814038872750195551869200136196605728871532883980982140796928000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "86991176400168739429457568939202700963531010536628698271742410986671546304247639831376/3719726506227247191302260732543135669843807576223168341394113759257037899357140625",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-3/2",
+      "projective_height": 3,
+      "projective_pair": [
+        -3,
+        2
+      ],
+      "sample_id": "b7428dea0d1efeae368cd24f",
+      "selection_rank_one_based": 11,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 315,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-60822884186598992189324758376951345473754807087365398689997396165319993608550393923502080000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-87566850012151181343594554627463447120230088201594995895290385998519524576445062561/931805193645891571418156061794694543533444789270079035430439334147777280000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "2",
+      "projective_height": 2,
+      "projective_pair": [
+        2,
+        1
+      ],
+      "sample_id": "a21608b2fc37aa3d3059007e",
+      "selection_rank_one_based": 12,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 315,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "66708838326103559134153024494417268472629224699915533447012623983338061499037435552386252800000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "48830463392501703740146239434464449104684985209313251832754233132597003424929289831921/797730561729785587186768315623845792422167798802189669184936050079715325132800000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-6",
+      "projective_height": 6,
+      "projective_pair": [
+        -6,
+        1
+      ],
+      "sample_id": "a800bc4289528c6aced8207f",
+      "selection_rank_one_based": 13,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 321,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-2674381420164730382353795622063469735753070359728335544435293959023891517843881718690474885120000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-19278176933160899547836042574364848664883519937599945680014026398617420524825042043240625/122859386349078237942564580883454473959543852147849087674482762755379668692969480192",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "3",
+      "projective_height": 3,
+      "projective_pair": [
+        3,
+        1
+      ],
+      "sample_id": "dd59ecbc319ef73737d4df73",
+      "selection_rank_one_based": 14,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 321,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "3191078597325436096018677168480743586550782678341079758928258782590864141752314513690984448000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "931722960889545376157755499925688274967576491184598231707407343144206543648076545431638961/91622579361485482028997557535328361907207206130286002528925415679194949540200448000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-2/3",
+      "projective_height": 3,
+      "projective_pair": [
+        -2,
+        3
+      ],
+      "sample_id": "0948a9c584f509bf22827fcd",
+      "selection_rank_one_based": 15,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 322,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "4646264532066049188373965942266821936104924870210991024585331832941847527988127224171677614080000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "8978507961402351817877517157223901578153087414271082006309608090550959551080082018476225/213446445941118165540551590651405485132755362004692003554797857057851811233556758528",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-7",
+      "projective_height": 7,
+      "projective_pair": [
+        -7,
+        1
+      ],
+      "sample_id": "cbb93cf6421b1ae5262bd381",
+      "selection_rank_one_based": 16,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 323,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-8651908956263512765284302767620015380684483931776051461014041913239215548966323462351093760000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-754940773090573530447473315850167721510177138075282738401934920450287806607200047859921/467435720061314331165622335911901318540726714091092302594523295030606895360000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "4",
+      "projective_height": 4,
+      "projective_pair": [
+        4,
+        1
+      ],
+      "sample_id": "bc712974705c65bd872731f9",
+      "selection_rank_one_based": 17,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 323,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "12789016577467779869270653390990376769267396582507769698054518685256465192271321150395514880000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "33958933822888177858965529179160474046228315362779742393380188058336185187217494457894199281/367199569232325965470079888105495242349859038183014549291347896084971297064474880000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-10/3",
+      "projective_height": 10,
+      "projective_pair": [
+        -10,
+        3
+      ],
+      "sample_id": "d94b0f4cb013542338ce3e8a",
+      "selection_rank_one_based": 18,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 325,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "38550018110113013655777247326046551548234652723214053925896916839069284598147605477694898176000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "54647436787772223613877814444507585534369128243004402558568730020010781730817108656472969281/1106852114717850849689216679622077506496573204093143821968498968213710407187090176000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-8/3",
+      "projective_height": 8,
+      "projective_pair": [
+        -8,
+        3
+      ],
+      "sample_id": "45c1e53c97473238ec345f4a",
+      "selection_rank_one_based": 19,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 325,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "46980246955685410816143891398257185077206675641546193221409919993433666654090453854583710023680000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "1374522345046754383741487511064704533987449694833782534735908655487199544832337742360400/8430635743207635804729447959579644862013368374043522984152536782361608632951569273",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "1/2",
+      "projective_height": 2,
+      "projective_pair": [
+        1,
+        2
+      ],
+      "sample_id": "97846be6b22d1f0d2199c960",
+      "selection_rank_one_based": 20,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 325,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-55714373262361011604728986470662481189694373309835409981994464168115271825249099181376405504000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-127682990330497403500207731661768180541347069953900133766870287598629381169057887342672/399919214625780023935241274212591400130221647924185599863606896995144085122490251",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-9/2",
+      "projective_height": 9,
+      "projective_pair": [
+        -9,
+        2
+      ],
+      "sample_id": "f65ffbf35b272826abb28580",
+      "selection_rank_one_based": 21,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 325,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "60028545358679969724728174545405650855377829180823349134318578551148596757280864445562617856000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "182478848093597612951364811972021442962513655340133471374899869412254291598555538193051209/2364260376938430485212446793280018432111712577001420940634245004493846749060864000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-8",
+      "projective_height": 8,
+      "projective_pair": [
+        -8,
+        1
+      ],
+      "sample_id": "d39c8b75ff5f9819eac07033",
+      "selection_rank_one_based": 22,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 327,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "248545276490283343104432986169269422879916730352899746113831949195493530996643200150469083136000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "235465594454704688811666924967329227086331356598342198653152636702128837442990601184839428481/7136257734058858581268394505926080305162305234296165352618194355247811826827595136000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-7/3",
+      "projective_height": 7,
+      "projective_pair": [
+        -7,
+        3
+      ],
+      "sample_id": "42631cd7a7ec5787f546058a",
+      "selection_rank_one_based": 23,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 327,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "254920959161912806561819660860430688262586905941322670364742697353431184365803027942550274048000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "467549829243126440769791275878161122817619796165386498470053004893506719644365563731660352401/7319316995605917306613851906861907766055889945136281599170611142164950489042690048000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-5/3",
+      "projective_height": 5,
+      "projective_pair": [
+        -5,
+        3
+      ],
+      "sample_id": "ff741227c2d85dc36af93dbc",
+      "selection_rank_one_based": 24,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 328,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "318790274708150295110826680056190353718716496235629645316160703848224466869315349553061298176000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "7121652273101008897366908914977826178140104750932276242767671383395538471048661915301417/585800921729181644941144322215209952381231554123801278983110424961156000246623371264",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-1/3",
+      "projective_height": 3,
+      "projective_pair": [
+        -1,
+        3
+      ],
+      "sample_id": "98a5e7aaec32dafb48f803fd",
+      "selection_rank_one_based": 25,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 328,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "440629319071732442810591130194932126122205498733257945019506422608890222558422039460130586624000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "2068748389746287169700387291668435688734231530426534774486696348247584618460710983617169/107535080360561726947528527185577059282728187751834545293407445157676561451776000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-4/3",
+      "projective_height": 4,
+      "projective_pair": [
+        -4,
+        3
+      ],
+      "sample_id": "2770a927446912260ff241ac",
+      "selection_rank_one_based": 26,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 328,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-493802928943524349298561463014468354063464888340096344177916378834252186153157509825723860254720000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-51600838898947550831774359095508602430339494031664951297366545476500523415104025/200828290382882908322747180807933419831124714788069782359979987447924129792",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-11/3",
+      "projective_height": 11,
+      "projective_pair": [
+        -11,
+        3
+      ],
+      "sample_id": "1809623d2bf6071eee051eca",
+      "selection_rank_one_based": 27,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 329,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "753731921640108307083185532684747593671088410741240501008855749744108579380161321734504448000000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "3279395914456157258749066634037121522725113022448847684481227537264115328376364484140462001/9013423173468033667077058400959685103701070974505468711232433965620923125248000000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "5",
+      "projective_height": 5,
+      "projective_pair": [
+        5,
+        1
+      ],
+      "sample_id": "eb8e2f614a7570ff645d75a8",
+      "selection_rank_one_based": 28,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 329,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-856542817010556749178390477902214984337222480070393146997104879868161024969738735150530822144000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-815010323950350500374712336522112330351873529299925088946421006786601485535815051127357281/10242876351994108291179397003967577785384906673819857772264488318992558413164544000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-9",
+      "projective_height": 9,
+      "projective_pair": [
+        -9,
+        1
+      ],
+      "sample_id": "a4ba9e063184204989c4daff",
+      "selection_rank_one_based": 29,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 333,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "9514986983013545358323334992171272215282624395294930133966877045959765288829045109832493490503680000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "4322633604006748278926539937592554906403507594035923438705463166279674876274128486565625/106716911033395639758026222658261432422990521341108094247141441857913478698314308228",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-13/4",
+      "projective_height": 13,
+      "projective_pair": [
+        -13,
+        4
+      ],
+      "sample_id": "7bc6570e45104e5b39107c34",
+      "selection_rank_one_based": 30,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 333,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "12681737396069779569139394086237861878531765912211862823924759915015024952787071993179839397888000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "105506740957654789987221035447474648564468871455290171120106698900282594753573889872469950580401/364119358259236270773933793254497617996214468323047539878280919075061375153125093888000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "6",
+      "projective_height": 6,
+      "projective_pair": [
+        6,
+        1
+      ],
+      "sample_id": "6bc6f1900ab1a28e521112ba",
+      "selection_rank_one_based": 31,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 334,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-21947021158391897350273542360673525579583089654406857263733593012448661984742254849896721940480000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-14606543307555263378672081848339278405157875487009949361859592225474608169271497964201/289484683578751343423418703941051485597860751499155912775115630001508742875312500",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-11/4",
+      "projective_height": 11,
+      "projective_pair": [
+        -11,
+        4
+      ],
+      "sample_id": "d9e2dc3b51f1e09fb6eea8f1",
+      "selection_rank_one_based": 32,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 334,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-33521430037572818082893894247653920147869096304864394718388484068475081733346569129956323885056000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-3090443741710580356441588329826014672564912375991262802914748740935603461625897156117/145803508376312026197775227361864516050351401224384157397135776878379430912000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-10",
+      "projective_height": 10,
+      "projective_pair": [
+        -10,
+        1
+      ],
+      "sample_id": "b624bea518ee36bf3b3e28d2",
+      "selection_rank_one_based": 33,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 335,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-43025420593409247330120884288710284577894718866304977672762131047485500880959921944467213721272320000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-7054138596857093893819340465375542617421452396776859220406409148793992833999325/3967828016547759347381822644976129609944340582909119877802548574765218604324",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-3/4",
+      "projective_height": 4,
+      "projective_pair": [
+        -3,
+        4
+      ],
+      "sample_id": "4bbbbcb5c5ea95193673b49e",
+      "selection_rank_one_based": 34,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 335,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "48542351305025785184630144431577076484486813225123642015401356647579813498819324817349701271552000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "119099920791913045184326447184522403053859886569445840987014383459714474392784515075725928921/340271733609455406870643124770534509834984868493988449470205401998333987450904310437500",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-7/4",
+      "projective_height": 7,
+      "projective_pair": [
+        -7,
+        4
+      ],
+      "sample_id": "e83498f3d71ce09284b71ad1",
+      "selection_rank_one_based": 35,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 335,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "49091163711687492569988471512721210782530834967209171938805226553196223465764235663196400386048000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "314427166004630156095826493108766956333180804766722902676889467303032045541925075212121936/2293169804825804836693439314887230680534318546088312919368650090534109771310270890625",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-11/2",
+      "projective_height": 11,
+      "projective_pair": [
+        -11,
+        2
+      ],
+      "sample_id": "3f7baaaec8ba5f68e5105680",
+      "selection_rank_one_based": 36,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 335,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-63375390477498501544511548524484005011183101871912690565162205063187840697519062185005168721920000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-333758782869296243708363946889158876961419962651244566984542222710146053100829840015875536/2960421404258634553706194086268488819812841483285357026694151491915392263869693046875",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "3/2",
+      "projective_height": 3,
+      "projective_pair": [
+        3,
+        2
+      ],
+      "sample_id": "8b0e798679d83e7ee2af0a16",
+      "selection_rank_one_based": 37,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 336,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-79554867433124586214762722639199442100349144753132899060312170268763325589382686191123876020224000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-4448179760955140688491978461899783139274031118108421988835797333071434591607305406989/1202027520141531573732524607041595822997560898126269820712647691001992406515712",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "8",
+      "projective_height": 8,
+      "projective_pair": [
+        8,
+        1
+      ],
+      "sample_id": "597e72db10540be81c7f98b1",
+      "selection_rank_one_based": 38,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 336,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "80492788260711302615698267314095146310490736233660100208152799375150243555343075110888455274496000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "1451727863565967069541014402865857530797398418563977871683664075754427579529766626050965619369/3170256896564574887061650376711274737477431853248590529239706546429709789191041024000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "7",
+      "projective_height": 7,
+      "projective_pair": [
+        7,
+        1
+      ],
+      "sample_id": "4c1b35b2317d1c2110453838",
+      "selection_rank_one_based": 39,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 336,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-137968060478610941932824183265467883617592124925374519174221563528447287146258688316605988864000000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-20218174959956763274634556940418842641514682061727934039171479217005208792865718164178597/32572136011832330100472557022983878188168708177122358358905114817304698688000000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-13/3",
+      "projective_height": 13,
+      "projective_pair": [
+        -13,
+        3
+      ],
+      "sample_id": "1b6ee61a07842048926a47dc",
+      "selection_rank_one_based": 40,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 337,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "170679111189889969992444507538532881588411128580869715913605247769740037454970985518306043101184000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "6938284729117601972544141182138011525776993981695497691827195714512252076306473932873631409/41654041488524103521866510663415232278960826750239344832603568488491991185833216000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "1/3",
+      "projective_height": 3,
+      "projective_pair": [
+        1,
+        3
+      ],
+      "sample_id": "899a757f97f621abee7dee61",
+      "selection_rank_one_based": 41,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 337,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "173652392165014595088264105009905822783798901287818312805798947915291473632577128138628749328384000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "656302553357099942905713854702077905759153169253247527707035997583976020233794820723/6376587277489258592184657836590826195612407588786815959452165118486533107937500",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-1/4",
+      "projective_height": 4,
+      "projective_pair": [
+        -1,
+        4
+      ],
+      "sample_id": "22a713142a1de49d62fc93b3",
+      "selection_rank_one_based": 42,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 337,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "174923456181762601492383586360157421993110866352179871914809302160724980736422649676426662379520000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "71694314144048889983098965343821743159624261757181739643723575436149774333446959722070303721/1226176855544355719920509702540554912186992791659873843540019938669388372476874565312500",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-9/4",
+      "projective_height": 9,
+      "projective_pair": [
+        -9,
+        4
+      ],
+      "sample_id": "38e7e76136b374a9d0c186ca",
+      "selection_rank_one_based": 43,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 337,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-229130990137835906339591448362271092008137253255828875878000327419577680234072703239543773462528000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-20515683478337628461898317812993760329419649369669935574875571253947468360101365586919369/13652137587945023540453988235792408709391250000349099685628458318637425402896062500",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-15/4",
+      "projective_height": 15,
+      "projective_pair": [
+        -15,
+        4
+      ],
+      "sample_id": "e574983baca9fb5341b84688",
+      "selection_rank_one_based": 44,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 337,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "241022241329446546881158320542452151320281582263924491557259328186645733389729465448879557181440000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "1167119178377818325840898620176047239701856249090999376173836085732233786750450310853/45754043949058428883636695368768495473857186383263749606331990691165308227812500",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-5/4",
+      "projective_height": 5,
+      "projective_pair": [
+        -5,
+        4
+      ],
+      "sample_id": "63265ee2b0fca94526c47253",
+      "selection_rank_one_based": 45,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 338,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-488538586396525981673684551614392612881169912836560702260631930516099380875222219478541105364992000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-2832726255816081286089989940838271218831170599045380671505784213647878864776047192870467/242008705764506762614253899013080209278273156307488670158606706873197784356864000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-11",
+      "projective_height": 11,
+      "projective_pair": [
+        -11,
+        1
+      ],
+      "sample_id": "5e3b660c5c5bbe045a3d1ca4",
+      "selection_rank_one_based": 46,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 339,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "684365834036398676192000698567872980733529210490826541198815838242394747481081224383104122905786580992",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "4471019837714202687282169209209699225872086326687910592157649074209095931969039110027/63372354410989511747903576135767002079153904336895523633396491774667892738883584",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-16/5",
+      "projective_height": 16,
+      "projective_pair": [
+        -16,
+        5
+      ],
+      "sample_id": "54feb178cbb87ff550c8faaf",
+      "selection_rank_one_based": 47,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 340,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-1503911687780998834343505666865391244992334423368592695735735061912208620104339391004918944059199848448",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-7977609027894886823046314643823540190416950416659512378910952221258798618473737829560280970081/17984368272473275834494620899942102743490643822170467132825569692841911292040068450869248",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-17/5",
+      "projective_height": 17,
+      "projective_pair": [
+        -17,
+        5
+      ],
+      "sample_id": "43d88422fc43c47c50ca59a7",
+      "selection_rank_one_based": 48,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 340,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "2017449024338884696965003626834466804551448429609053576480817690404873547625068791627348969521152000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "14534521234981554205166296362111375083937533348881334169837698378394440624259807347856865688850961/57925205444693710322497180846819484336565990422740112004497222110086342011995635505152000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "2/3",
+      "projective_height": 3,
+      "projective_pair": [
+        2,
+        3
+      ],
+      "sample_id": "cdea3c5276d392bf4008d7f5",
+      "selection_rank_one_based": 49,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 341,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-3393677021616881657486802984261001840409652476002847279871996890271143754948989063213110058287104000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-27324968296264198480709150919473727824329640768036708517468624116222826980281216594277238085679761/97439606313975116523972558787022707182425096521078143750611455550669483512526911855104000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-14/3",
+      "projective_height": 14,
+      "projective_pair": [
+        -14,
+        3
+      ],
+      "sample_id": "9e05091d9f9306f820bf6440",
+      "selection_rank_one_based": 50,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 341,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "3441263768717946316486284986954330420473938561269466611509261364025719590729842419718726862213220401152",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "79156219318011454841968535618308289927062198106159226384905068774946385647576908735326368881/41151987475181574663855876882484280066410622610118040310405930511518454212928561949540352",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-3/5",
+      "projective_height": 5,
+      "projective_pair": [
+        -3,
+        5
+      ],
+      "sample_id": "1a8413f9c22328f0a0396d7b",
+      "selection_rank_one_based": 51,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 342,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-4615552784157560720597169863017552153083433297386856569718375024248961025689702026133578088521400320000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-1730191827328564027540746916657461526405099246802672791083522790324572790841928702048260163025/212035567719599536505847953693499291289886381060143652769808906803301119110592692081344512",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-12",
+      "projective_height": 12,
+      "projective_pair": [
+        -12,
+        1
+      ],
+      "sample_id": "4c51f5b0e3d6debbfd2602ec",
+      "selection_rank_one_based": 52,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 342,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-6405382512884125248786234060092457871619042650033466052824669693314644310682754628623076882907136000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-430870500938542394388896056411679987257638569442230265492242499994649605512831101925001241761/1411223106535435656150354562707712400484323229959835281490809444588600645060054016000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "9",
+      "projective_height": 9,
+      "projective_pair": [
+        9,
+        1
+      ],
+      "sample_id": "7aaa21d4abe365baca256f14",
+      "selection_rank_one_based": 53,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 342,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-8553684265107510297807081222262994923066482689616641781214586869086405559861661664895590291210240000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-142957848956063458278857044582299804562168137326998216126616786287073532455609737756098918864/1315984380326827168403845463482029534889809704450373968472148149800258964034491781484375",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "5/2",
+      "projective_height": 5,
+      "projective_pair": [
+        5,
+        2
+      ],
+      "sample_id": "6467c14875bdf79e297db171",
+      "selection_rank_one_based": 54,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 342,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-8863983105851160437238599024151514209577283701380257059695013870339049245132271777424573628727099916288",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-4713996183917916482367035778849997409025662690773830875769313031894281190153569263405460109166961/254503601464219860027113174355283650233819350202714097286270135782740281213292143367078412288",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-14/5",
+      "projective_height": 14,
+      "projective_pair": [
+        -14,
+        5
+      ],
+      "sample_id": "e24efd1c2d157cc1b4dabc61",
+      "selection_rank_one_based": 55,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 343,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "11778071670893437257426575648066973477221144049874907247967596572218764828614783937917381636259840000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "81224102298097596466314796328929082214097273191376371364948513669860879504781987810660731984/1812056403869478477309195748489129664052535452574988203826421322908774846985108490078125",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-13/2",
+      "projective_height": 13,
+      "projective_pair": [
+        -13,
+        2
+      ],
+      "sample_id": "0a0fc064b831ce1fad0f51ce",
+      "selection_rank_one_based": 56,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 343,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-12133692843045529791769426601119021100494498370914442920269057247511577178401385708711899095700338638848",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-43409758410198620389679424071057652935345846486280120970709206670568998677602091581184576958881/145099477826640203772726768240039200616905354408329783681312279574423358745154519993499648",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-9/5",
+      "projective_height": 9,
+      "projective_pair": [
+        -9,
+        5
+      ],
+      "sample_id": "a96691ef234015b82d88463a",
+      "selection_rank_one_based": 57,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 343,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-16413510774216321660143433261819430072072206789233647097519040628545681531482403439247378438160384000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-1760186217215783503929758870892847615008326192612194875481844273635460327015820590977614210823897/30161051020613062637684750602128057827224498001868473628626579646309076869470523743256576",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-19/7",
+      "projective_height": 19,
+      "projective_pair": [
+        -19,
+        7
+      ],
+      "sample_id": "ad48e116656a0056f908dae7",
+      "selection_rank_one_based": 58,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 344,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-19127210919980685987315356933453781050490688279601753854641488235704637358801168623289599096321692663808",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-1223419601031675883920348864144790689861851733779300719251646213626643806359123969313063144969/753336710547417263867256597558184628285101035476944492662133714744478427703920842197041152",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-4/5",
+      "projective_height": 5,
+      "projective_pair": [
+        -4,
+        5
+      ],
+      "sample_id": "f242bd6185363f9c841ef36b",
+      "selection_rank_one_based": 59,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 344,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "22203505234787712928753124381778634061476969184248546236401443868266535083478450630058275440046282637312",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "455273127579534904094689372055480939741618455144928431654617297282993959965953044174559453/17264493970375936356388765085175581836299624658235761625072045290135703385579455512576",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-13/5",
+      "projective_height": 13,
+      "projective_pair": [
+        -13,
+        5
+      ],
+      "sample_id": "bda5f5e262584dd2aee93762",
+      "selection_rank_one_based": 60,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 344,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "22456106104564371002875117665982002888281448249228390889301268134690825565792284268118029464277406973952",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "69620489697601150506404805336893552423768566446048058966870208306921702634300452159596216960321681/644762045485136272108969766154825679602349784768179242787336390080931177614084501077730557952",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-11/5",
+      "projective_height": 11,
+      "projective_pair": [
+        -11,
+        5
+      ],
+      "sample_id": "b300e45648f78a650a65f073",
+      "selection_rank_one_based": 61,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 344,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-22731140596580552770106622182959106583660074144437446773668146632569335784579100240554909835722752000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-138946213617053377829338182089916505498172730542175716646113249857591609931200854512800570576/1061827858705220506007842685101938445261211871778999746452629148646075956317806286921875",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-19/6",
+      "projective_height": 19,
+      "projective_pair": [
+        -19,
+        6
+      ],
+      "sample_id": "f5137d56d44897005d43b19d",
+      "selection_rank_one_based": 62,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 344,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "22982206881643367223307955316595362220965718939644536154277426486611786407894474237517651941255137984512",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "29674727808464945060347484165310343694610990256443020326110876568485626008694401217333211306429361/659867505513748551227102206367412446152060944382720087288662726181381807433687591190033088512",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-6/5",
+      "projective_height": 6,
+      "projective_pair": [
+        -6,
+        5
+      ],
+      "sample_id": "e3ffd7f3397c3b794207a423",
+      "selection_rank_one_based": 63,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 344,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-24544967455242710083997421550076615230993783370695517431419480377336435652285787042465140493516800000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-175275603987813205683604953875269717311088399929628382558431115561250512712248754410503089/98298714183778764921996152372353067918545489290420810164256877961176965996879687500",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-17/4",
+      "projective_height": 17,
+      "projective_pair": [
+        -17,
+        4
+      ],
+      "sample_id": "4a08d65b924c228f06b8c1d1",
+      "selection_rank_one_based": 64,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 344,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-32715581572955487642719230374862109564923271504876063142618753989312473915241087210201031565639680000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-2530141118907804951283968321330970614699712095810854886602225425721167413621148851564509551681/391225809358728068934584958190402812442867912214295433170811914778794401759423767680000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-13",
+      "projective_height": 13,
+      "projective_pair": [
+        -13,
+        1
+      ],
+      "sample_id": "a8a98974ce698b1fb54ac6e1",
+      "selection_rank_one_based": 65,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 345,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "45150186042142100838602675293917550447088670210756553730575790915236182810593598791465473845220073275392",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "2542848041923454746274876203736121228956566105331841536189320339999102383315856278666482607601/539923706923680791551727236328418457634748979149248314363580775753756750226772467204718592",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-2/5",
+      "projective_height": 5,
+      "projective_pair": [
+        -2,
+        5
+      ],
+      "sample_id": "d5ad1b786145604838f7500a",
+      "selection_rank_one_based": 66,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 345,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "54870067263322066175748294247157378728655033856134863670020887274608933661801336959441689425972593426432",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "3868889082408224450068411627350152010374297842279574043597395475949059051708177111276043/152048008000802180355092356989247614488006470269196198161216990933917584630171385856",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-12/5",
+      "projective_height": 12,
+      "projective_pair": [
+        -12,
+        5
+      ],
+      "sample_id": "5fd5fd6130b07361c75b12a3",
+      "selection_rank_one_based": 67,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 345,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "55798357168963762260651861248435409696932160424401933725037106399222867099177853109667396770909388800000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "119596504970530577887635756116802568662153487495203390861023668667951408574203299439443282689/536536101041505567104704615159216539399617606324289973643745397004045156022763786637500",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "1/4",
+      "projective_height": 4,
+      "projective_pair": [
+        1,
+        4
+      ],
+      "sample_id": "05300c4d8f3578ebb6fb148f",
+      "selection_rank_one_based": 68,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 345,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-55928816626900824581947998283423408956014073344911704386602338018427617764750633320104906172657280483328",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-344678480609172765902321555251216863416915079603212037771951631487052429129675962113535672668329/2202790094111729969457705297436837130300798536113074558951684733670632627271057060032684032",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-1/5",
+      "projective_height": 5,
+      "projective_pair": [
+        -1,
+        5
+      ],
+      "sample_id": "c0bae502217d5b18c40e223d",
+      "selection_rank_one_based": 69,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 345,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-71107282927778209217376077288280505016104710251739993065045333213633161951828312047779809717125120000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-439378106648788987050059971068440391119739718228879671330158749899154356301536134183395517089209/2800603121954335038361728909684921773385389896464618389800079937194167517242096609280000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "10",
+      "projective_height": 10,
+      "projective_pair": [
+        10,
+        1
+      ],
+      "sample_id": "30815de896cb68e29f1e8fd9",
+      "selection_rank_one_based": 70,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 346,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-78070391816885852953403145364719634418321989538797817760976556598976682589911716517370169658837468971008",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-1168874580758910202000991282742240951952318364912437545349198385068704543721378790917777840561/8010138542529375200717431526307027901649127382563855245721163833096705383786801319641088",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-18/5",
+      "projective_height": 18,
+      "projective_pair": [
+        -18,
+        5
+      ],
+      "sample_id": "e11c2e337eec0541cd4d18b4",
+      "selection_rank_one_based": 71,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 346,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "86732231514561847836417332183437907053781742849981759499483871915537511019398211877183709798056205484032",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "92333247916999675720936047239355196652766913510178514465996250009317382966932725215384198506529921/2490264818861574724656385332531873867089924294628169919474090217314724864945058173388256428032",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-8/5",
+      "projective_height": 8,
+      "projective_pair": [
+        -8,
+        5
+      ],
+      "sample_id": "c05e0ff1ec3a713576cff74c",
+      "selection_rank_one_based": 72,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 346,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "92591889935867193508962031325770477090260657821964354927336123729149027128482028655400957184264605007872",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "5069193030739901471700840823519942695931911417152410284665264319516519550412459612347875351036729/3646787295830433373819629966244374159081390635609477977893173396462998856987652403367968768",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-19/5",
+      "projective_height": 19,
+      "projective_pair": [
+        -19,
+        5
+      ],
+      "sample_id": "e23988125243ea5bb1678e92",
+      "selection_rank_one_based": 73,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 346,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "114641711400026222474709320013170725846634295945122937059245140791957525946633969168678196529732058611712",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "118307022568817317843049844452429227942501120901079100388137779026457620981363805258595382721/6193734953548962998874292852378042236701373653609193497494056699961978524078114469445632",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-7/5",
+      "projective_height": 7,
+      "projective_pair": [
+        -7,
+        5
+      ],
+      "sample_id": "0d489ae8522ad6b7f0ea3882",
+      "selection_rank_one_based": 74,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 347,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-145299487163813730653747178145839546725338841977901533154003136099565456283903295459862032390291456000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-4929266547581598488051354113522103410335343817807539258631391824435165565921414790087220995665616/16296304422213467274932671386998800089142641874718481955136807440221700111022183521214671875",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "7/2",
+      "projective_height": 7,
+      "projective_pair": [
+        7,
+        2
+      ],
+      "sample_id": "5d74776b98d11e0ba21d43a5",
+      "selection_rank_one_based": 75,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 347,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-186847060071839859617523300571494936235174996585328985474304251482099414007106171224494241554104320000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-232335942092930248822415223828113611955245017956230661600064807228710567513548111580714907/41542243916661159054106992199088536228198204435275757592921438119658804257680640000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-14",
+      "projective_height": 14,
+      "projective_pair": [
+        -14,
+        1
+      ],
+      "sample_id": "d115d75793868b806f0194cb",
+      "selection_rank_one_based": 76,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 347,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "200626882406602054935738216720509448645507556918802407344193840009634364946409663516137582794092052480000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "2223764909456678839282224726586983247616199321191904848363896185050250835896342236238931857540625/9216671740146004884511255824546963277338334526011258819044084709516604830920938873152339968",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-16/3",
+      "projective_height": 16,
+      "projective_pair": [
+        -16,
+        3
+      ],
+      "sample_id": "2ac06dcfe855438ece6f1e31",
+      "selection_rank_one_based": 77,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 348,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-333003408719809388513979575305220856274605461826645217297061054202839890002405387092058265735837777920000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-2118378226680580174452638740989828231554572329205625800553748763405886828322212879915825329690225/15297965405752419175914314994938513515878027679228889943411459867838613791581474276170268672",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "4/3",
+      "projective_height": 4,
+      "projective_pair": [
+        4,
+        3
+      ],
+      "sample_id": "f85d34e356801383b43bca51",
+      "selection_rank_one_based": 78,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 348,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "351737715055492755417628005940160702952380528983411512143567754526982846025273030200638193172480000000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "1921819696019586294377552557184530453952935273087184012250122713369769665110665840342479039571536/39449725482208208708393266467472173855068221016582478004326162135883930377910289781416015625",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-15/2",
+      "projective_height": 15,
+      "projective_pair": [
+        -15,
+        2
+      ],
+      "sample_id": "1828900723d7ac59e4269e23",
+      "selection_rank_one_based": 79,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 348,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "401082282332337921386538386775716724352075135837475241288689799623546629738487043227040472196532142080000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "12402488833347250446895745191552456406161431501967556765464512481813624675046239581428481250000/71974475327637673618836530899828261676058248727223118245844885879277872935475943360725013",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-7/6",
+      "projective_height": 7,
+      "projective_pair": [
+        -7,
+        6
+      ],
+      "sample_id": "42d1e12b40dc755074b06874",
+      "selection_rank_one_based": 80,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 348,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-518425811287423289503435089937985178630900034897699455087984992098970919761442165549716436223524864000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-1607286214814573498465050827746731831767477938271714328724905515283476789532704137035164219557171041/14885095615487370251227862371409868728570596128315061788060679120737629177954766051012864000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "11",
+      "projective_height": 11,
+      "projective_pair": [
+        11,
+        1
+      ],
+      "sample_id": "f0cd8a71b3e9367aaa051394",
+      "selection_rank_one_based": 81,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 348,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "528977078140444343619893617322532924253577657228686686174376705625139534867459744719874679029104640000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "35147439322126179974077066054682763202022930752905183305469212009271767637035491498095608649612496/59328299541972174396161394690146003973429021670381349277813685776234901308364399663270078125",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-17/2",
+      "projective_height": 17,
+      "projective_pair": [
+        -17,
+        2
+      ],
+      "sample_id": "c699b060c4a5fe8fbf1a916c",
+      "selection_rank_one_based": 82,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 349,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "647159358933509170232913860843310876133070131196975566358402712848338151312038816721682022411416090181632",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "175546266980492682110028973021323213718610950349704411688098448853066872740638565784124669223341522721/18581306575497828341233432492676626423303024818284345402461116605193333605313869124076320325632",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-21/5",
+      "projective_height": 21,
+      "projective_pair": [
+        -21,
+        5
+      ],
+      "sample_id": "a63e492f71cd3d6294ba7c93",
+      "selection_rank_one_based": 83,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 349,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-815708479642097169549456637896909972495466020314679286031056400513369667379475745445517851314377195520000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-6526834580505167200801114527449774532457124092143573103479798513165321536246524849963600/523080659981071614663424357309802331739670016378967969871207234545174256008775931567",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-17/6",
+      "projective_height": 17,
+      "projective_pair": [
+        -17,
+        6
+      ],
+      "sample_id": "0da522665c5f5aac8c2ec2ff",
+      "selection_rank_one_based": 84,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 349,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-897500098120188212267865035717651743430646528026521504707091412442914223186352418504589110597910528000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-133267358512546430892305990100721104000801628074086501789752368596511200298733261445372622144760561/25769115820550173403622090367951806994273316264937567944410778826570806457126187446486528000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-15",
+      "projective_height": 15,
+      "projective_pair": [
+        -15,
+        1
+      ],
+      "sample_id": "f56a3625636b0f92d7421881",
+      "selection_rank_one_based": 85,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 349,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "906715456845005926816527314838803391992922825892870733380442415022493108320111954008416438888693760000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "23114850555013688409875755249074463986392519279989655243502515463804237176511833890336340720915536/101694172481239885944063099460173694818732751004026726855849299752908715501201509438188515625",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-13/6",
+      "projective_height": 13,
+      "projective_pair": [
+        -13,
+        6
+      ],
+      "sample_id": "2b5305c3db580d344388f8e9",
+      "selection_rank_one_based": 86,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 350,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "1560192601783565195657345796025886363104047029864910187120640180162917791860570902573563271524384768000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "51265225588617673839985978308389588482104793675361814720848028674363561803016896468613533385296/72880459406809560292793251122769882678796344304577661846482928660751552709072747812765625",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "9/2",
+      "projective_height": 9,
+      "projective_pair": [
+        9,
+        2
+      ],
+      "sample_id": "6ca2bf9237ea61cf1353dca4",
+      "selection_rank_one_based": 87,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 350,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-1916346658772593932253719735024883521346320779773487363249329730117070497307748186615865426189431603200000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-32317069830872023720911691450520226429453729760044906054020261658341292894142508845804725288803536/214931030655608377507355331040231968077533865390750103593864054188035690850890136781693371875",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-11/6",
+      "projective_height": 11,
+      "projective_pair": [
+        -11,
+        6
+      ],
+      "sample_id": "9acd432d252122194a262d7e",
+      "selection_rank_one_based": 88,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 350,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-2123766276399426924800956919042134956570561428643888006122336485348742917630978321104313719826258329600000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-176746297391108349442987573969983415930400716797922727329253775994770666917489545538388156496/99206381135084526169084288878821301791617634159554276684769397121419049987390064234334375",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-5/6",
+      "projective_height": 6,
+      "projective_pair": [
+        -5,
+        6
+      ],
+      "sample_id": "58359da56e32927cee437e15",
+      "selection_rank_one_based": 89,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 351,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "2401855705974949898376052742007017940916310272454712969979771132235408406893881209976563341230866432000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "6703319045862976580872783336617598539949291567120670142576268355944317261178568878268964179798761/16836506328593150348095253971989149610177223715393273612499684763523775201349715567043562500",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "3/4",
+      "projective_height": 4,
+      "projective_pair": [
+        3,
+        4
+      ],
+      "sample_id": "1790de6e7bec834fcfcd5b2b",
+      "selection_rank_one_based": 90,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 351,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "2667762111628962394031932642595152802974439279666399145404313138982384904124088384355159319659937792000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "7308546271431733610803621886998472112607211923498619174286643449226684166987712266754955335884551921/76597062195569998243037833141529613269474111985420827389408571159224555793048995056801792000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-17/3",
+      "projective_height": 17,
+      "projective_pair": [
+        -17,
+        3
+      ],
+      "sample_id": "9f9df38b27a122fd6f9a49b6",
+      "selection_rank_one_based": 91,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 351,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-2957436294815160170387543841664854457747659530877801104614096177369596143865074552494599703030136832000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-3010704032914578150766583924158533047859675439350500507477406891207953092023274642163641193746081/35366187988612749047031864540867385315283521630116232656695570850215141846141529004032000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "12",
+      "projective_height": 12,
+      "projective_pair": [
+        12,
+        1
+      ],
+      "sample_id": "0da733913a9b787388c6752c",
+      "selection_rank_one_based": 92,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 351,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-2967555415116190581598422646524190934093328403713760632911383662832589404428259600251514306078703616000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-8566779492109053396787997752543297055715147767315381595663160154599874101562906274886321249641467041/85204758591334834935880982547518216070654950974441405774509867635675649738810736571375616000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "5/3",
+      "projective_height": 5,
+      "projective_pair": [
+        5,
+        3
+      ],
+      "sample_id": "d32213ae9d61df3a8a5ce7c4",
+      "selection_rank_one_based": 93,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 351,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-3256910968404517386667053588737721278329868629888994367004470674175702702363639330310185074609356800000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-3040172571718839636635194732976979298392088787366700857607941023776869347998216326904386040923934961/93512765221778396802780215732193253104207838154775502523087093415288270190064358434956800000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-22/7",
+      "projective_height": 22,
+      "projective_pair": [
+        -22,
+        7
+      ],
+      "sample_id": "3bf087a6ba35c9fd2c3a08b2",
+      "selection_rank_one_based": 94,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 351,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-3729167395555717421165949447279765093511596173835591846436247847242000292823228175198929155702915072000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-4603087987017044976502807077263723017237935715781642097920708925977854723366380674159650065169/910099029279046061369164327958230097910605566382427109820053462498697388967833520128000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-16",
+      "projective_height": 16,
+      "projective_pair": [
+        -16,
+        1
+      ],
+      "sample_id": "001434956e76a6397c7d5e44",
+      "selection_rank_one_based": 95,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 352,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "4640770203697792194717486353151643144430737341622685333378931228052642405413201053278058792530005649784832",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "44974589307904859975748430950538955031725852887249180098370736695582474452410870496616781874259822321/133246274987740442675956599214142877226527201960636377258889701755320634106029913056901374328832",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "1/5",
+      "projective_height": 5,
+      "projective_pair": [
+        1,
+        5
+      ],
+      "sample_id": "20370a6adfe2cce33eb6f9a5",
+      "selection_rank_one_based": 96,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 352,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-5492651829271780925499894544940280106135974467777262737824109620672479235676225577052580501432303616000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-41068830993831685425900988208493806717070041663958400148957720226644139834794374153930089721/137586489977281671359755494720661920573033499372151669539118161735474204628410463812500",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-19/4",
+      "projective_height": 19,
+      "projective_pair": [
+        -19,
+        4
+      ],
+      "sample_id": "2cc6567e800c40af03bafb84",
+      "selection_rank_one_based": 97,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 352,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "8707302691127796282417600853144579703218470598198284097004966138013285823930989889618375711867797504000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "8669099881437804899670616131057987129437490996464657227226231472389337132628815032017160889/182984469051293403273132452068322606388820113874330966467425874607598507152316416000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-23/7",
+      "projective_height": 23,
+      "projective_pair": [
+        -23,
+        7
+      ],
+      "sample_id": "88cc10369e8940bfd9a2f5d0",
+      "selection_rank_one_based": 98,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 353,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "10407648039420144435152936605384221024994950602782553341798977908895502818701048422489790044050554880000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "249962210341771503786858124901118922587295056038084439634777222679991137490615447489886056429690864001/298825468998917412750017160115596332210490894333456031803464670941710970484839291899514880000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-15/7",
+      "projective_height": 15,
+      "projective_pair": [
+        -15,
+        7
+      ],
+      "sample_id": "f5fdd68ec3bd90311bb721a4",
+      "selection_rank_one_based": 99,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    },
+    {
+      "absolute_cubic_order_discriminant_bits": 353,
+      "class_quotient_features": null,
+      "cubic_order_discriminant": "-12097698569507173464062738240706562664623238260473400355963636043536623584651083155385094371102687232000000",
+      "detector_outcome": null,
+      "family": "published-R17-MW17",
+      "feature_status": "NOT_OPENED",
+      "generic_rank": 17,
+      "j_invariant": "-1331387109259350808815606028660322847616093283342201776893779204473285465544437771833175867686009/476475137105662871817630551493867405290802582339012657184895392326159099374977791972608000000",
+      "outcome_status": "SEALED_UNTIL_ALL_FEATURES_FREEZE",
+      "parameter": "-5/7",
+      "projective_height": 7,
+      "projective_pair": [
+        -5,
+        7
+      ],
+      "sample_id": "689dcf3c34ca2b2770a55d93",
+      "selection_rank_one_based": 100,
+      "selection_status": "FROZEN_BEFORE_CLASS_GROUP_AND_POINT_SEARCH"
+    }
+  ],
+  "schema": "elkies-k3.r17-small-field-class-quotient-cohort.v1",
+  "selection_protocol": {
+    "cohort_size": 100,
+    "family": "published R17 in the exact published t-coordinate",
+    "field_discriminant_boundary": "The selection metric is the explicit cubic-order discriminant.  The maximal-order field discriminant is computed and frozen in Phase 1.",
+    "ordering": "absolute discriminant of z^3+16*A_h(a,b)*z+64*B_h(a,b), then projective height, denominator, numerator",
+    "ordinary_means": "nonsingular specialization with irreducible 2-division cubic; it does not assert absence from every historical computation",
+    "parameter_universe": "all reduced finite a/b with b>0 and max(|a|,b)<=24",
+    "projective_height_bound": 24,
+    "raw_parameter_count": 719,
+    "structural_rejections": {
+      "duplicate_exact_j_before_cohort_filled": 0,
+      "reducible_two_division_cubic": 0,
+      "singular_specialization": 0
+    }
+  },
+  "status": "FROZEN_RANK_BLIND_PRE_CLASS_GROUP_COHORT"
+}

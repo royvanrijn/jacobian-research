@@ -5,10 +5,11 @@ Date: 2026-09-04.
 Status: **ACTIVE, fail-closed infrastructure**.
 
 <!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
-<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 185d31609e7702fc -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE e482668e1208f764 -->
+<!-- status-consumer: EC-K3-DET1236-RATIONAL-CM-LOCUS bd6ab0e86ca70ab2 -->
 
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6043be45b20f8241 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER eec5710ee1b498ab -->
 <!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 
@@ -164,26 +165,30 @@ inversion. Thus the exact marked curve is
 X_0^6(103)/<w_618>,       genus 6, cusps 0, e2=12, e3=2.
 ```
 
-It has two rational discriminant-`-3` CM points, both rank-20
-specializations. It maps with degree two to the explicit genus-two curve
+It has exactly ten rational CM points—two of discriminant `-3` and four each
+of discriminants `-43` and `-67`—all rank-20 specializations. It maps with
+degree two to the explicit genus-two curve
 
 ```text
 y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9,
 ```
 
 which has exactly fourteen rational points and a rank-one `618f1` quotient.
-Those points have not been lifted through the degree-two marking cover. More
-precisely, bielliptic quadratic Chabauty and an exact Mordell--Weil sieve prove
+Bielliptic quadratic Chabauty and an exact Mordell--Weil sieve prove
 the complete rational-point set, with elliptic images
 `+/-G`, `+/-3G`, `+/-4G`, and `+/-10G`; it separates the two fixed fibers into
 the rational discriminant-`-3` CM pair and a quadratic discriminant-`-24` CM
-pair. The remaining twelve displayed points lie in non-fixed fibers whose
-squareclasses are still unknown. Its Jacobian splits as the six rank-one
+pair.  An exact characteristic-zero cover candidate now evaluates all twelve
+non-fixed fibres: four fibres are rational for the displayed twist, while its
+`-3` twist has none. The complete CM residue-field calculation proves that
+all eight conditional lifts are CM and rules out the no-lift twist once the
+candidate branch divisor is identified. Its Jacobian splits as the six rank-one
 factors `618a1` through `618f1`; the genus-two part is `618e1 x 618f1` and
 the cover Prym is `618a1 x ... x 618d1`. Classical Chabauty therefore misses
 its strict rank bound, while the quadratic-Chabauty dimension screen passes
-but awaits an explicit cover model. The row therefore stays out of the equation
-handoff. See
+but still awaits a characteristic-zero identification of the candidate's
+cubic CM branch orbit. That identification would give arithmetic exclusion,
+not a positive handoff. The row therefore stays out of the equation handoff. See
 [`DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md`](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md).
 
 ## Why 948 looks hospitable
@@ -231,9 +236,11 @@ may trigger `NS=T^perp`, rootlessness, or equation work. The full queue is in
 [`../artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json`](../artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json).
 
 Inside the already-rootless subqueue, determinant 1236 is now the strongest
-positive-directed target because its full marking curve and low-genus
-quotient tower and complete fourteen-point rational locus are exact. Its next
-task is the degree-two covering descent, not K3 equation compilation.
+near-exclusion target because its full marking curve, low-genus quotient
+tower, complete fourteen-point rational locus, and complete ten-point
+rational CM locus are exact. Its only next task is the modular-CM
+identification of the exact cover candidate's branch orbit, not K3 equation
+compilation.
 
 ## Replay
 

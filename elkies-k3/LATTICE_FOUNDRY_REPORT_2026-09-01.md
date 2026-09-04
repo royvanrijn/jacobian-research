@@ -1,7 +1,7 @@
 # Lattice foundry report — 2026-09-01
 
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 b8ef1932e51636fa -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6a9cd04e00dcdaad -->
 
 > **Current programme directive (2026-09-04).** This report records the first
 > target-first foundry run and its then-preferred determinant-950 `NS0024`

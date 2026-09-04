@@ -28,10 +28,12 @@ and a reproducible certificate plan.
   directions: `R17 -> 4A1/MW13 -> R17`, with thirteen saturated rational
   sections and target-free reverse selection.
 - The rank-32 programme has three peer lanes: calibrated R17/MW17
-  specialization, record-construction recovery around curve 398's A1/MW16
-  source and curve 302's unknown parent, and the different-NS foundry. Generic
-  rank and demonstrated jump size are separate prioritization axes; no lane is
-  the unique critical path.
+  specialization, record-construction recovery around curve 398 and curve
+  302's unknown parent, and the different-NS foundry.  Curve 398's two
+  recovered A1/MW16 parents specialize to the same integral MW16 subgroup, so
+  Q-isomorphic fibres require an exact relative-subgroup transversality gate.
+  Generic rank and demonstrated jump size are separate prioritization axes; no
+  lane is the unique critical path.
 - Lane C is arithmetic-first globally: `T` and its full stable marked curve
   precede `NS=T^perp`, rootlessness, and equation work. Determinants `500`,
   `720`, `750`, `950`/`NS0024`, and `1184`/`NS0031`, together with the split
@@ -86,4 +88,4 @@ These remain useful provenance/regression material and are indexed from `../arch
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
 <!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 b8ef1932e51636fa -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6a9cd04e00dcdaad -->

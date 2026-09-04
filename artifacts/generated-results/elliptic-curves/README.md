@@ -22,6 +22,43 @@ strict:
 
 Important distinctions made explicit by the catalogue:
 
+- `r17_refresh_jump_ladder_protocol_v1.json` and
+  `r17_refresh_jump_ladder_blind_v1.json` preserve the stopped cross-class
+  assertion and the already sealed curve-478 response.  The v2 protocol
+  transparently corrects the initial class set to the top 43 exact generic
+  depths before the other fifteen outcomes.  Its blind artifact contains only
+  exact pre-complement rank responses; the verifier opens public complements
+  afterward, and `r17_refresh_jump_ladder_analysis_v2.json` records passing
+  exact ordinal and `+10/+11/+12` tail endpoints.  These are fixed-panel
+  detector results, not a full-rank, saturation, Selmer, or population theorem.
+<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER -->
+
+- `half_lattice_height_compression_analysis_v1.json.gz` reconstructs 3,865
+  detailed half-lattice chart maps and their presearch lattice, coefficient,
+  invariant, reduction, and known-basis distortion data.  Its explicitly
+  posthoc rank-28 audit exactly replays all 2,560 chart/target source decisions
+  and every prefix quotient gain from reduced-coordinate height, while the
+  target-free scalar comparison remains negative across eleven positive chart
+  orders after adding 394 compact `+8` through `+12` control records.  This
+  certifies the midpoint/old-point-exclusion mechanism, not a prospective
+  success probability or any conclusion from a bounded miss.
+<!-- status-consumer: EC-HALF-LATTICE-HEIGHT-COMPRESSION 3baeaf370aec751c -->
+
+- `curve385_height_compression_pilot_protocol_v1.json` freezes 16 charts from
+  32 fresh scale-stable local maxima found by deterministic ascent in the full
+  current `M29/2M29` parity space.  The bound-100,000 result
+  `curve385_height_compression_pilot_blind_v1.json` completes all sixteen with
+  zero finite points and exact rank `29 -> 29`.  This supports old-point
+  exclusion only; it is not a point-absence or saturation result.
+<!-- status-consumer: EC-CURVE385-HEIGHT-COMPRESSION-BUILDER-PILOT c0d6f2d67018def4 -->
+
+- `icarm_curve398_two_parent_collision_v1.json` compiles the second exact
+  A1/MW16 survivor for curve 398 and proves that its specialized generic group
+  equals the first parent's group integrally.  The intersection and sum both
+  have rank 16; the quotient in public `M30` is torsion-free `Z^14`, so the
+  index is infinite.  This is an exact-computation negative control for
+  two-parent transversality, not a rank upper bound for the curve.
+
 <!-- status-consumer: EC-K3-R17-TRAINING-EXACT-ARITHMETIC-GROUP-GATE 427bf822e774c81e -->
 
 - `r17_training_arithmetic_group_inputs_v1.json.gz` is an outcome-free compact

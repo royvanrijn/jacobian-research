@@ -20,6 +20,9 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   torsion, singleton rational-isogeny-class and complete semistable local-data
   replay, bad-node fingerprint, and exact exclusion from the one
   equation-explicit A1/MW16 control family.
+- `verify_icarm_curve398_two_parent_collision.sage`: independent Sage
+  group-law, integral-basis-transition, rank, and Smith replay for the two
+  specialized curve-398 A1/MW16 parents.
 - `analyze_record_first17_subgroups.py`: exact first-seventeen coordinate,
   quotient, finite-Kummer, and bad-component comparison for curves 273 and
   302, plus a 100-digit canonical-height/theta profile.
@@ -137,6 +140,24 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   ordering meaning only, rejects cached orders after a basis, lattice,
   height-form, quotient-coordinate, or chart-universe change, and forbids all
   absence, rank-upper-bound, and Selmer inference from misses.
+- `analyze_half_lattice_height_compression.sage`: reconstructs the exact
+  reduced horizontal maps and presearch height data for 3,865 completed
+  detailed charts.  It proves the chart midpoint/empty-ball identities,
+  verifies constant quartic invariants, audits target-free predictors across
+  eleven positive chart orders (including 394 compact earlier-control
+  records), and on the sealed rank-28 ledger exactly replays all source
+  visibility and prefix quotient gains from reduced-coordinate height.
+  Target-relative results are explicitly posthoc and bounded misses retain no
+  arithmetic conclusion.
+<!-- status-consumer: EC-HALF-LATTICE-HEIGHT-COMPRESSION 3baeaf370aec751c -->
+- `run_curve385_height_compression_pilot.sage`: two-phase current-lattice
+  builder and bounded pilot.  Its build phase samples all 29 parity bits by
+  deterministic local ascent, reduces and calibrates 32 fresh charts, then
+  freezes a diverse 16-chart order without calling `hyperellratpoints`.  The
+  separate search phase completes all sixteen charts at height 100,000 with no
+  finite points and no M29 group growth.  The default invocation verifies the
+  protocol/result binding; the miss has no saturation or rank meaning.
+<!-- status-consumer: EC-CURVE385-HEIGHT-COMPRESSION-BUILDER-PILOT c0d6f2d67018def4 -->
 - `run_curve385_iterated_half_lattice_search.sage`: starts from the three
   directions blindly recovered by curve 385's generic-deepest 43 charts,
   saturates inside the discovered group, and searches the 301 height-prioritized
@@ -302,6 +323,13 @@ the same arithmetic.
 
 ## Current research code
 
+- `prepare_r17_refresh_jump_ladder_inputs.sage`,
+  `run_r17_refresh_jump_ladder_blind_v2.sage`, and
+  `analyze_r17_refresh_jump_ladder_v2.py` implement the redacted sixteen-fibre
+  `+3` through `+12` detector validation.  The runner cannot read the public
+  complements or jump labels; the analyzer replays the frozen exact Kendall
+  and upper-tail tests after the blind hash is sealed.  The v1 cross-class
+  deepest-count failure is preserved rather than rewritten.
 - Files containing `bnf_free`, `residual_selmer`, or `curve273` implement the
   unfinished residual 2-Selmer chain. Intermediate success is not a rank
   theorem.

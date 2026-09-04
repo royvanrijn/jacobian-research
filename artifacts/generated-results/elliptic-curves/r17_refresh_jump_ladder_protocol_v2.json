@@ -1,0 +1,136 @@
+{
+  "blind_input_sha256": "ee4333d0c97737a2beed4487fa215b18ac9e18b5711efba42dcc7761446ae037",
+  "claim_boundary": [
+    "This freeze occurred before the new blind runner was executed.",
+    "The score is an exact rank lower bound for the discovered quotient, not a Mordell-Weil rank upper bound.",
+    "The public displayed jump is a certified displayed-subgroup quotient, not an assertion of full E(Q).",
+    "The sixteen cases are a fixed atlas-refresh panel rather than a random population sample.",
+    "The initial-set correction is outcome-independent for the remaining fifteen cases but is transparently post-curve-478.",
+    "Curve 478 is rerun from the redacted input under v2; its known response is not imported into the runner."
+  ],
+  "confirmatory_analysis": {
+    "case_count": 16,
+    "descriptive_only": [
+      "per-stratum score summaries",
+      "recovery fractions relative to displayed jumps",
+      "initial versus adaptive incremental gains",
+      "timeouts and PARI failures under the equal maximum budget"
+    ],
+    "joint_decision": {
+      "stop_rule": "if either endpoint fails, do not spend serious rank-32 point-search budget on the half-lattice extreme-jump hypothesis",
+      "usable_extreme_jump_detector": "both confirmatory endpoints pass"
+    },
+    "ordinal_endpoint": {
+      "acceptance": "tau_b >= 0.35 and exact one-sided p <= 0.05",
+      "direction": "positive",
+      "null": "truth labels are exchangeable across the sixteen fixed cases",
+      "p_value": "exact one-sided permutation probability of concordance-minus-discordance at least as large as observed, preserving all ties",
+      "statistic": "Kendall tau-b between blind score and displayed jump"
+    },
+    "score": "exact_quotient_rank_recovered_before_public_complement",
+    "truth": "exact displayed-subgroup free quotient rank by specialized MW17",
+    "upper_tail_endpoint": {
+      "acceptance": "risk difference >= 0.25 and one-sided Fisher exact p <= 0.05",
+      "detector_positive": "blind recovered rank >= 10",
+      "statistic": "detector-positive risk difference, tail minus non-tail, with one-sided Fisher exact p",
+      "true_tail": "displayed jump >= 10, namely +10/+11/+12"
+    }
+  },
+  "cross_class_amendment": {
+    "change": "replace 'all 43 maximum-norm classes' by 'first 43 classes in decreasing exact generic norm then mask'",
+    "confirmatory_endpoints_and_acceptance_rules_unchanged": true,
+    "curve478_selected_set_and_order_unchanged": true,
+    "height_time_and_chart_budgets_unchanged": true,
+    "known_blind_outcomes_at_amendment": [
+      {
+        "curve_id": 478,
+        "exact_quotient_rank_recovered_before_public_complement": 6
+      }
+    ],
+    "remaining_fifteen_recovery_outcomes_known_at_amendment": false,
+    "trigger": "the complete generic census for curve 498 contradicted the v1 cross-class assertion before any curve-498 chart was searched",
+    "v2_reruns_curve478_instead_of_importing_its_outcome": true
+  },
+  "eligible_curve_ids": [
+    478,
+    498,
+    531,
+    532,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    543,
+    544,
+    545,
+    546
+  ],
+  "freeze_boundary": "AFTER_CURVE478_BEFORE_OTHER_RECOVERY_OUTCOMES",
+  "generation": {
+    "script": "elliptic-curves/cas/build_r17_refresh_jump_ladder_protocol_v2.py",
+    "script_sha256": "595884428bc9aee411d72cfab050e4066aee59c7765efcdc695cc196769756eb"
+  },
+  "implementation_hashes": {
+    "elliptic-curves/cas/analyze_r17_refresh_jump_ladder.py": "9639e6ddcf2ac325ac4c11145058e8e1574299b4c11367b0174fa112bd3eaf88",
+    "elliptic-curves/cas/half_lattice_chart_policy.py": "6d6166f7e24cdd2f7f638c99506b3debf66e25b846f7ec45fe1cc85b15692fea",
+    "elliptic-curves/cas/half_lattice_fake_descent_replay.sage": "8e33f6df508ab6f94f75f446ddb85e3459b73b1abe33ef8a41bfe7d8513f1569",
+    "elliptic-curves/cas/run_curve385_iterated_half_lattice_search.sage": "b565ab1b9f372f52d5317c3dd88301ed8d1359588fdcf559b66ac94f15157b35",
+    "elliptic-curves/cas/run_r17_refresh_jump_ladder_blind.sage": "ed2e53143655db63d7db3b206fc245e14a16d52375450815c42a223bfcbe476e",
+    "elliptic-curves/cas/run_r17_refresh_jump_ladder_blind_v2.sage": "3f320f89b92374a82c1a1b906f5f4f9da6b8b517b0eee7a284dc228695ba2528",
+    "elliptic-curves/cas/verify_r17_refresh_jump_ladder.sage": "0d41e555e597ef905a9e671dd2eed5231675f73deaeaaa05785e37eb9f153009"
+  },
+  "information_boundary": {
+    "available_to_runner": [
+      "curve id and atlas class",
+      "short Weierstrass equation",
+      "seventeen specialized generic MW17 points",
+      "exact generic MW17 height Gram"
+    ],
+    "blind_response": "exact_quotient_rank_recovered_before_public_complement = rank(<MW17, all returned points>)-17",
+    "forbidden_until_blind_artifact_is_frozen": [
+      "every public point P18 or beyond",
+      "displayed subgroup rank",
+      "displayed quotient rank or jump label",
+      "coordinates of blind discoveries in the displayed public basis"
+    ]
+  },
+  "objective": "Test whether exact quotient rank recovered by one fixed adaptive half-lattice policy is ordinally associated with exact displayed jump and enriches the predeclared +10/+11/+12 tail.",
+  "pre_search_exclusion": {
+    "curve_id": 499,
+    "decision_used_no_blind_search_outcome": true,
+    "reason": "displayed quotient by specialized MW17 is not defined because MW17 is not contained in the displayed subgroup"
+  },
+  "protocol_definition_sha256": "6577f4720e8c09124132b6276d6c1c2a2dd9add580bb84ae08a53f577f4b9c81",
+  "schema": "elliptic-curves.r17-refresh-jump-ladder-protocol.v2",
+  "search_policy": {
+    "adaptive_chart_count": 301,
+    "adaptive_pool": "the first 301 generic parity masks by decreasing exact generic depth then mask, paired cyclically with nonzero quotient words ordered by Hamming weight then integer value",
+    "adaptive_representative_and_order": "recompute the current canonical-height form, generic coordinates, deterministic mod-2 quotient complement, every selected shortest representative, and the complete 301-chart order for that exact state; order by decreasing exact-decimal depth then mask and word",
+    "adaptive_trigger": "at least one exactly certified initial quotient direction",
+    "audit_rounding_scale": 100000,
+    "generic_rank": 17,
+    "gp_stack_bytes_each_quartic": 1000000000,
+    "height_bound_each_quartic": 100000,
+    "initial_chart_count": 43,
+    "initial_representative_and_order": "shortest representatives at rounded specialized canonical-height scale 10^6; decreasing exact-decimal depth, then mask",
+    "initial_universe": "the first 43 parity classes in the complete exact generic MW17 half-lattice order: decreasing exact generic norm, then mask",
+    "operative_rounding_scale": 1000000,
+    "policy_id": "r17-refresh-adaptive-half-lattice-top43-plus-301-v2",
+    "relation_chunk_size": 64,
+    "relation_timeout_seconds_each_chunk": 180.0,
+    "retries": 0,
+    "state_binding": "bind both orders to the full basis, height Gram, generic-coordinate rows, quotient-complement rows, universe id, and ordered chart ids",
+    "structural_zero_rule": "if the initial exact recovered quotient rank is zero, the adaptive quotient space is empty and the fixed policy stops after 43 charts",
+    "total_chart_cap_per_fibre": 344,
+    "wall_timeout_seconds_each_quartic": 15.0
+  },
+  "status": "FROZEN_BEFORE_BLIND_RECOVERY",
+  "v1_freeze_and_stop_hashes": {
+    "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_blind_v1.json": "15eae6f0c65132841befd161ec3bb8657c0a086dd224d47eafd1e5568f305e53",
+    "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_protocol_v1.json": "c348d9134290c354fe962dd822b5b0f2355e8a1c747168f95e880447129a287a"
+  }
+}

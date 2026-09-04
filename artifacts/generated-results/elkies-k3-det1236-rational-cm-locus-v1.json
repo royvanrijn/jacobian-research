@@ -1,0 +1,82 @@
+{
+  "class_numbers_checked": [
+    1,
+    2
+  ],
+  "cover_candidate_consequence": "Any identified model of C_1236 with exactly two fixed and eight non-fixed rational points has no rational non-CM points: all ten are exhausted by the certified CM locus. A candidate twist with only the two fixed rational points cannot be C_1236.",
+  "external_inputs": [
+    "Gonzalez--Rotger Corollary 5.14 and Proposition 5.6",
+    "complete Watkins class-number-one/two quadratic-order lists"
+  ],
+  "higher_class_number_exclusion": "Corollary 5.14 fixes the ring class field by at most one involution, except in one case by at most two involutions. The norm-m_R ideal class has order at most two. Hence a rational image forces h(R)<=2; the checked lists are complete.",
+  "marked_curve": "X_0^6(103)/<w_618>",
+  "orders_checked": 42,
+  "rational_cm_order_discriminants": [
+    -3,
+    -43,
+    -67
+  ],
+  "rational_cm_point_count": 10,
+  "rational_cm_rows": [
+    {
+      "D_R": 2,
+      "N_R": 103,
+      "N_star_R": 103,
+      "class_number": 1,
+      "conductor": 1,
+      "field_discriminant": -3,
+      "local_embedding_factors_p2_p3_p103": {
+        "103": 2,
+        "2": 2,
+        "3": 1
+      },
+      "m_R": 3,
+      "m_over_m_R": 206,
+      "marked_curve_rational_cm_points": 2,
+      "order_discriminant": -3,
+      "rational_image_on_w618_quotient": true,
+      "top_curve_cm_points": 4
+    },
+    {
+      "D_R": 6,
+      "N_R": 103,
+      "N_star_R": 103,
+      "class_number": 1,
+      "conductor": 1,
+      "field_discriminant": -43,
+      "local_embedding_factors_p2_p3_p103": {
+        "103": 2,
+        "2": 2,
+        "3": 2
+      },
+      "m_R": 1,
+      "m_over_m_R": 618,
+      "marked_curve_rational_cm_points": 4,
+      "order_discriminant": -43,
+      "rational_image_on_w618_quotient": true,
+      "top_curve_cm_points": 8
+    },
+    {
+      "D_R": 6,
+      "N_R": 103,
+      "N_star_R": 103,
+      "class_number": 1,
+      "conductor": 1,
+      "field_discriminant": -67,
+      "local_embedding_factors_p2_p3_p103": {
+        "103": 2,
+        "2": 2,
+        "3": 2
+      },
+      "m_R": 1,
+      "m_over_m_R": 618,
+      "marked_curve_rational_cm_points": 4,
+      "order_discriminant": -67,
+      "rational_image_on_w618_quotient": true,
+      "top_curve_cm_points": 8
+    }
+  ],
+  "reproduce": "sage elkies-k3/scripts/certify_det1236_rational_cm_locus.sage",
+  "schema": "elkies-k3.det1236-rational-cm-locus.v1",
+  "status": "PASS_DET1236_COMPLETE_RATIONAL_CM_LOCUS"
+}

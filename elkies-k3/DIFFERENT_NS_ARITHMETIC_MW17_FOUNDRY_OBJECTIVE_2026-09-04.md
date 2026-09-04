@@ -9,7 +9,8 @@ Lane C, with the first-class curve-398/curve-302 construction-recovery work
 occupying Lane B.
 
 <!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
-<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 185d31609e7702fc -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE e482668e1208f764 -->
+<!-- status-consumer: EC-K3-DET1236-RATIONAL-CM-LOCUS bd6ab0e86ca70ab2 -->
 
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
@@ -18,11 +19,11 @@ occupying Lane B.
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
 <!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK d569364c553007a2 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6043be45b20f8241 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER eec5710ee1b498ab -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
 <!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 b8ef1932e51636fa -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6a9cd04e00dcdaad -->
 
 ## Milestone
 
@@ -112,7 +113,7 @@ two-row arithmetic-classification gate without authorizing equation work.
 See
 [`DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md`](DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md).
 
-## Determinant 1236 is the positive-directed marked-curve target
+## Determinant 1236 is the strongest near-exclusion marked-curve target
 
 The content-one cyclic row `K3-6d288cfad55e0d15` now has an exact Phase-1
 certificate. Its literal Clifford order has Eichler pair `(D,N)=(6,103)`,
@@ -130,9 +131,10 @@ y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9,
 ```
 
 and with degree four to the rank-one elliptic curve `618f1`. The exact marked
-curve itself has two rational discriminant-`-3` CM points, but both are
-Picard-rank-20 specializations. No non-CM rational lift from the genus-two
-quotient has been certified.
+curve has exactly ten rational CM points: two of discriminant `-3` and four
+each of discriminants `-43` and `-67`. All are Picard-rank-20
+specializations. No non-CM rational lift from the genus-two quotient has been
+certified.
 
 An exact bielliptic quadratic-Chabauty/Mordell--Weil-sieve certificate proves
 that these are all fourteen rational points on the genus-two quotient,
@@ -147,11 +149,24 @@ Exact Jacquet--Langlands accounting gives
 genus-two quotient contributes `618e1 x 618f1`, while the missing marking
 cover has Prym `618a1 x ... x 618d1`. Thus classical Chabauty is exactly at
 rank equal to genus; the split-Jacobian quadratic-Chabauty dimension screen
-passes, but it still requires the explicit degree-two cover.
+passes.  Exact divisor reconstruction now supplies a small degree-two cover
+candidate.  Its pullback squareclass has rational fibres at four of the
+twelve non-fixed quotient points, conditionally giving eight rational lifts;
+the competing `-3` twist has none.  Eight-prime degree-one-through-three Prym
+trace agreement is exact evidence, not the missing characteristic-zero
+Shimura identification. Exact class-field arithmetic matches the candidate's
+cubic field with the unique cubic `QQ`-isomorphism class in the relevant
+Hilbert class field, but not the particular point on `618f1`. The complete
+CM locus proves that all eight
+conditional lifts are CM and that the no-lift twist cannot be the actual
+descent once the branch divisor is identified.
 
 The row therefore has Phase-2 status `UNRESOLVED_FOR_EXPLICIT_REASON` and
 remains `UNKNOWN` in the three-way equation-dispatch classifier. Its next
-task is the degree-two covering descent, not a K3 equation. See
+task is to identify the particular cubic-field point with the marked CM
+branch image;
+the resulting Phase-2 outcome will be arithmetic exclusion, not equation
+compilation. See
 [`DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md`](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md).
 
 ## Global arithmetic-first order
@@ -185,11 +200,13 @@ next global exact-coarse calculations are determinant `256`
 and `512`, with coarse curves `X_0(2)` and `X_0(4)`; their literal stable
 kernels are still unknown.
 Within the already-rootless queue, determinant `1236` is now the strongest
-positive-directed row because its literal stable kernel, genus-six marked
+near-exclusion row because its literal stable kernel, genus-six marked
 curve, genus-two quotient model, fourteen rational quotient points, and the
-two fixed CM fibers are exact. Its six-factor Jacobian and four-factor Prym
-are also exact. The remaining unknown is specifically the rational lift
-through one degree-two cover at the complete list of twelve non-fixed points.
+complete ten-point rational CM locus are exact. Its six-factor Jacobian and
+four-factor Prym are also exact. The candidate's twelve fibre values,
+Hilbert-class-field match, and conditional CM/non-CM separation are exact.
+The remaining unknown is only the characteristic-zero identification of its
+particular cubic-field point with the marked Shimura CM branch image.
 The priority tuple is
 
 ```text
