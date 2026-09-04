@@ -19,6 +19,34 @@ This directory contains reproducible outputs from retained research
 computations.  Only outputs with a named generator and verification path below
 are treated as reference artifacts.
 
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION 9e1c09d47fcf0bde -->
+
+- `elkies-k3-r17-norm12-11952-product-tate-parity-v1.json` gives the exact
+  `R17/2R17` minimum spectrum, isolates the 49 norm-twelve trace parities left
+  after the complete norm-eight inversion, and records the character-glue and
+  Kummer parity criteria.  Replay it with
+  `sage -python elkies-k3/scripts/certify_r17_norm12_11952_product_tate_parity.sage --check`;
+  its whole-file SHA-256 is
+  `01a0e1b6d787b43ede7a1c5f2de9a88ef8c9be0281d1439d4d96c11fd577f9fa`.
+
+- `elkies-k3-r17-norm12-11952-product-deep-trace-inversion-v1.json` and its
+  TSV ledger test all `49 * 17 = 833` residual trace/target cases.  Prime 131
+  rejects every case, while the exact synthetic deep-trace control is
+  recovered.  Replay them with
+  `sage -python elkies-k3/scripts/search_r17_norm12_11952_product_deep_trace_inversion.sage --check`.
+  Their whole-file SHA-256 values are respectively
+  `c47028ec09b29142ef350a3dc4d00943354d8e314e942e870afa3879bd2fd595`
+  and `966b2572824771ffaf10eeb8a760b9e59a6e69a573cb9a284e6c09c8155b76da`.
+
+- `elkies-k3-r17-norm12-11952-product-twist-finite-field-bound-audit-v1.json`
+  records exact `n=1,2` Frobenius power sums at `p=131,137` for all seventeen
+  degree-28 product-twist `L`-polynomials.  It deliberately retains
+  `UNKNOWN_NO_FINITE_FIELD_MORDELL_WEIL_UPPER_BOUND`, because reconstruction
+  needs moments through `n=14`.  Replay it with
+  `sage -python elkies-k3/scripts/audit_r17_norm12_11952_product_twist_finite_field_bounds.sage --check`;
+  its whole-file SHA-256 is
+  `6ea5ad82a06b3fa4361afe6b7db479534b1a06342e7de53db9d1cb9221fa1eba`.
+
 - `elkies-k3-r17-norm12-icarm-database-sweep-v1.json` records all 2,844 exact
   projective preimage decisions for the 474 equations in the pinned ICARM
   snapshot against the six norm-twelve rational-`PGL2` `j`-classes.  It finds
@@ -35,6 +63,30 @@ are treated as reference artifacts.
   `sage -python elkies-k3/scripts/certify_r17_norm12_curve12_alternate_q80_quotient.sage`
   and the same command with `--check`; its whole-file SHA-256 is
   `17986087896ff002ca773796bd91797c4b01d3e09b8913b2c5939870259bdd0d`.
+
+<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT dfc55f2d3daddb75 -->
+
+- `elkies-k3-r17-norm12-native-icarm-quotient-audit-v1.json` gives exact
+  displayed-subgroup quotients and exhaustive native fixed-cover split spans
+  for ICARM curves 12, 395, 363, 364, 378, 393, and 404.  Replay it with
+  `PYTHONPATH=elliptic-curves/cas sage -python elkies-k3/scripts/certify_r17_norm12_native_icarm_quotient_audit.sage --check`;
+  its whole-file SHA-256 is
+  `582898590dcfdd8f36b7564d8df65dff951b0b304eddb6ae8825140eb1a92d9a`.
+
+- `elkies-k3-r17-norm12-curve12-norm8-incidence-v1.json` records the twelve
+  exact fitted norm-eight genus-one incidence signatures for curve 12.  Replay
+  it with
+  `sage -python elkies-k3/scripts/certify_r17_norm12_curve12_norm8_incidence.sage --check`;
+  its whole-file SHA-256 is
+  `c34f777af5e4cb91b7a6a844078879557fafbc40073a5a741a76590704e65762`.
+
+- `elkies-k3-r17-norm12-icarm-local-fingerprints-v1.json` and
+  `elkies-k3-r17-norm12-icarm-calibration-dataset-v1.json/.tsv` give the exact
+  69-fibre local feature table and its fail-closed exact/unknown quotient
+  labels.  Replay them with
+  `.venv/bin/python elkies-k3/scripts/audit_r17_norm12_icarm_local_fingerprints.py --check`
+  and
+  `.venv/bin/python elkies-k3/scripts/build_r17_norm12_icarm_calibration_dataset.py --check`.
 
 - `elliptic_mestre_two_section_local_continuation.json` records a bounded
   recursive-jet continuation at the normalized six-root Mestre seed

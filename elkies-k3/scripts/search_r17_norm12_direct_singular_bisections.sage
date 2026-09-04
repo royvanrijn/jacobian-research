@@ -252,7 +252,8 @@ sieve_exclusion_histogram = Counter()
 exact_factorization_count = 0
 odd_discriminant_irreducibility_exclusion_count = 0
 finite_pole_count = 0
-for trace_index, trace_vector in enumerate(selected):
+for local_trace_index, trace_vector in enumerate(selected):
+    trace_index = args.start + local_trace_index
     trace = sum(
         (
             coefficient * point

@@ -13,10 +13,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 GENERATED = ROOT / "artifacts/generated-results"
-DEFAULT_PRIORITY_TABLE = (
-    GENERATED
-    / "elkies-k3-r17-norm12-11952-alternate-norm8-pencil-priority-v1.tsv"
-)
+DEFAULT_PRIORITY_TABLES = {
+    "norm12-orbit-11952": (
+        GENERATED
+        / "elkies-k3-r17-norm12-11952-alternate-norm8-pencil-priority-v1.tsv"
+    ),
+    "norm12-orbit-103b2": (
+        GENERATED
+        / "elkies-k3-r17-norm12-103b2-norm8-pencil-priority-v1.tsv"
+    ),
+}
 
 
 def prefix(source_label: str) -> str:
@@ -55,8 +61,9 @@ def default_inputs(source_label: str) -> list[Path]:
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--input", type=Path, action="append")
 parser.add_argument("--source-label", default="norm12-orbit-11952")
-parser.add_argument("--priority-table", type=Path, default=DEFAULT_PRIORITY_TABLE)
+parser.add_argument("--priority-table", type=Path)
 parser.add_argument("--output", type=Path)
+parser.add_argument("--check", action="store_true")
 args = parser.parse_args()
 
 paths = (
@@ -66,7 +73,13 @@ paths = (
 )
 if not paths:
     raise ValueError("no singular-search shards found")
-priority_path = args.priority_table.resolve()
+priority_table = args.priority_table or DEFAULT_PRIORITY_TABLES.get(args.source_label)
+if priority_table is None:
+    raise ValueError(
+        f"no default priority table for source label {args.source_label}; "
+        "pass --priority-table explicitly"
+    )
+priority_path = priority_table.resolve()
 minimum_count_by_parity_mask = {}
 with priority_path.open(newline="") as stream:
     for row in csv.DictReader(stream, delimiter="\t"):
@@ -85,18 +98,26 @@ expected_model = (
     "artifacts/generated-results/"
     f"elkies-k3-r17-norm12-orbit{source_token}-direct-fibration-v1.json"
 )
+expected_model_path = ROOT / expected_model
+if not expected_model_path.is_file():
+    raise ValueError(f"missing direct model: {expected_model_path}")
+expected_model_sha256 = digest(expected_model_path)
 records = []
 status_histogram = Counter()
 minimum_count_histogram = Counter()
 even_discriminant_degree_histogram = Counter()
+seen_trace_parity_masks = set()
 for path in paths:
     payload = json.loads(path.read_text())
     if payload.get("schema") != (
         "elkies-k3.r17-norm12-direct-singular-bisection-search.v1"
     ):
         raise ValueError(f"unexpected schema: {path}")
-    if expected_model not in payload.get("inputs", {}):
+    inputs = payload.get("inputs", {})
+    if expected_model not in inputs:
         raise ValueError(f"shard does not belong to {args.source_label}: {path}")
+    if inputs[expected_model] != expected_model_sha256:
+        raise ValueError(f"shard direct-model hash is stale: {path}")
     search = payload["search"]
     count = int(search["processed_trace_count"])
     interval = search.get("processed_half_open_range")
@@ -109,6 +130,11 @@ for path in paths:
         raise ValueError(f"interval/count mismatch: {path}")
     if len(payload["trace_records"]) != count:
         raise ValueError(f"trace-record/count mismatch: {path}")
+    trace_indices = [int(record["trace_index"]) for record in payload["trace_records"]]
+    legacy_local_indices = list(range(count))
+    global_indices = list(range(interval[0], interval[1]))
+    if trace_indices not in (legacy_local_indices, global_indices):
+        raise ValueError(f"trace indices are neither local nor global sequential: {path}")
     if any(
         int(payload[key]) != 0
         for key in (
@@ -124,12 +150,29 @@ for path in paths:
         if len(word) != 17:
             raise ValueError(f"trace word does not have rank 17: {path}")
         parity_mask = sum((entry & 1) << index for index, entry in enumerate(word))
+        if parity_mask in seen_trace_parity_masks:
+            raise ValueError(
+                f"duplicate trace parity class across singular-search shards: "
+                f"{parity_mask} in {path}"
+            )
+        seen_trace_parity_masks.add(parity_mask)
         try:
             minimum_count = minimum_count_by_parity_mask[parity_mask]
         except KeyError as error:
             raise ValueError(
                 f"trace parity mask is absent from the priority table: {path}"
             ) from error
+        declared_minimum_count = trace_record.get(
+            "minimum_unoriented_split_member_count"
+        )
+        if (
+            declared_minimum_count is not None
+            and int(declared_minimum_count) != minimum_count
+        ):
+            raise ValueError(
+                f"trace/priority minimum-count mismatch: {path}, "
+                f"parity={parity_mask}"
+            )
         discriminant_degree = int(trace_record["pencil_discriminant_degree"])
         odd_degree = trace_record.get(
             "odd_multiplicity_pencil_discriminant_degree"
@@ -179,6 +222,13 @@ if len(minimum_count_by_parity_mask) != expected:
     raise ValueError(
         "priority-table class count does not match the singular-search shards: "
         f"{len(minimum_count_by_parity_mask)} != {expected}"
+    )
+if seen_trace_parity_masks != set(minimum_count_by_parity_mask):
+    missing = set(minimum_count_by_parity_mask) - seen_trace_parity_masks
+    extra = seen_trace_parity_masks - set(minimum_count_by_parity_mask)
+    raise ValueError(
+        "trace parity-class coverage differs from the priority table: "
+        f"missing={len(missing)}, extra={len(extra)}"
     )
 if cursor != expected:
     raise ValueError(f"incomplete coverage: reached {cursor} of {expected}")
@@ -248,7 +298,12 @@ result = {
     ),
 }
 result["inputs"][relative(priority_path)] = digest(priority_path)
-output_path.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
+serialized = json.dumps(result, indent=2, sort_keys=True) + "\n"
+if args.check:
+    if not output_path.is_file() or output_path.read_text() != serialized:
+        raise ValueError(f"stored merged certificate differs from replay: {output_path}")
+else:
+    output_path.write_text(serialized)
 print(
     "R17NORM8SINGULARMERGE"
     f"|classes={expected}|shards={len(records)}|candidates=0"

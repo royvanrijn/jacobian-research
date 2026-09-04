@@ -18357,6 +18357,72 @@ are constructed.  See
 The alternate application proof is
 [`elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md`](elkies-k3/R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md).
 
+### NS0024 direct-QQ Inose source obstruction
+
+<!-- status-consumer: EC-K3-NS0024-DIRECT-QQ-INOSE-OBSTRUCTION e87afc1b3529a07f -->
+<!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
+<!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
+<!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
+<!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
+
+```bash
+python3 elkies-k3/scripts/certify_ns0024_direct_qq_inose_obstruction.py --check
+```
+
+This exact application reads the certified `2E8/MW1` height `950`, derives
+the required cyclic-isogeny degree `475`, and verifies that it is absent from
+the complete Mazur--Kenku list of rational cyclic-isogeny degrees.  The
+classification is an external theorem and is not reproved by the checker.
+The result excludes a direct noncuspidal point of `X0(475)(QQ)` as the source;
+the stronger Fricke-quotient obstruction is replayed separately below.
+
+### NS0024 rational-marking obstruction
+
+```bash
+python3 elkies-k3/scripts/certify_ns0024_qq_marking_obstruction.py --check
+```
+
+This checker pins `475=5^2*19` and the numerical hypotheses of Momose's
+composite-level theorem. Combined with the Inose correspondence, the theorem
+excludes a noncuspidal, non-CM point on `X0+(475)(QQ)`, hence excludes a full
+rational NS0024 marking and a saturated rational NS0024/MW17 basis. The
+checker does not reprove Momose's theorem; see
+[`elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+
+### NS0031 replacement-source precursor and physical corridor
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_lattice_foundry_ns0031_marked_gf7_hensel.sage \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_lattice_foundry_ns0031_marked_formal_smoothness.sage \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_lattice_foundry_ns0031_rational_parameters.sage \
+  --numerator-bound 40 --denominator-bound 40 \
+  --lift-precision 40 --workers 8 --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_ns0031_f017_physical_corridor.sage --check
+```
+
+The first replay certifies the model-157 marked `GF(7)` pair, a one-dimensional
+tangent space with a unit maximal minor, and a simultaneous solution through
+`7^8`. The second verifies the exact discriminant/node identity and the local
+order arguments that force the eight equations omitted from that minor; it
+therefore certifies a one-parameter formally smooth `ZZ_7` marked branch. It
+does not algebraize that branch or supply a rational characteristic-zero
+point. The third tests all 247 reduced rational `m9` values with numerator and
+denominator at most 40 in the residue disk through `7^40`; none reconstructs
+all 52 coordinates over `QQ`. This is bounded negative evidence only. The
+fourth certifies the five physical degree-two edges to rootless
+`NS0031-F017` at the lattice/marking level. That named endpoint remains a
+post-selection control, not permissible target input for the live planner
+milestone.
+
 ### Integral rank-transfer and character-glue calculus
 
 <!-- status-consumer: EC-K3-RELATIVE-U-BRIDGE-LIFTING 800e22abf69b91aa -->
@@ -19009,6 +19075,40 @@ fibre, and exact specialization of the saturated MW17 basis gives displayed
 quotient `Z^12`.  The original `074d9` quotients remain
 `Z^8,Z^12,Z^5,Z^6,Z^12`.  See
 [`elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
+
+### Native ICARM quotient, cover-visibility, and local calibration audit
+
+<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT dfc55f2d3daddb75 -->
+
+The compact replay below checks the pinned 69-fibre public projection, all
+local fingerprints, the twelve curve-12 fitted norm-eight signatures, the
+seven exact native quotient/complete-cover audits, and the final fail-closed
+calibration table:
+
+```bash
+.venv/bin/python \
+  elkies-k3/scripts/snapshot_r17_norm12_icarm_public_fibres.py --check
+
+.venv/bin/python \
+  elkies-k3/scripts/audit_r17_norm12_icarm_local_fingerprints.py --check
+
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_curve12_norm8_incidence.sage --check
+
+PYTHONPATH=elliptic-curves/cas sage -python \
+  elkies-k3/scripts/certify_r17_norm12_native_icarm_quotient_audit.sage --check
+
+.venv/bin/python \
+  elkies-k3/scripts/build_r17_norm12_icarm_calibration_dataset.py --check
+```
+
+The complete 08f72 cover table is generated in deterministic intervals by
+`construct_r17_norm12_11952_alternate_bisections.sage --source-label
+norm12-orbit-08f72` and combined with
+`merge_r17_norm12_11952_alternate_bisection_chunks.py --source-label
+norm12-orbit-08f72`.  The exact result is 39,147 verified covers.  The merged
+476 MB file is a local generated replay input.  See
+[`elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md`](elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md).
 
 ### Direct `norm12-orbit-11952` alternate-Q80 equation
 

@@ -1,11 +1,12 @@
 #!/usr/bin/env sage-python
-"""Invert all rational intersection-one V4 products in the native 1024 prefix.
+"""Invert rational intersection-one V4 products in a native priority prefix.
 
-The exact 1024-prefix contains 10,362 pairs of rational bisections with
-intersection number one.  Their fibre products are genus-one V4 bases with a
-QQ-point, and their product characters are explicit quartics.  This script
-tests all of those product characters against every one of the 63,917
-minimum-norm-eight genus-one bisection pencils.
+The exact 1,024-prefix contains 10,362 pairs of rational bisections with
+intersection number one; the complete 39,147-class atlas contains 4,358,409.
+Their fibre products are genus-one V4 bases with a QQ-point, and their product
+characters are explicit quartics.  This script tests all selected product
+characters against every one of the 63,917 minimum-norm-eight genus-one
+bisection pencils.
 
 The first prime scans every projective pencil parameter and uses a hash table
 of all target quartics.  Later primes revisit only surviving (trace,target)
@@ -159,6 +160,7 @@ def main() -> None:
         raise ValueError("unexpected bisection schema")
     if direct.get("status") != "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS":
         raise ValueError("unexpected direct-model status")
+    source_pool_size = len(batch["bisections"])
     records = sorted(batch["bisections"], key=lambda row: int(row["priority_rank"]))
     records = records[: args.pool_size]
     if len(records) != args.pool_size or [int(row["priority_rank"]) for row in records] != list(range(1, args.pool_size + 1)):
@@ -225,6 +227,11 @@ def main() -> None:
                 target_manifest_hasher.update(b"\n")
     if args.pool_size == 1024 and len(target_pairs) != 10362:
         raise ArithmeticError(f"expected 10,362 intersection-one targets, found {len(target_pairs)}")
+    complete_native_atlas = args.pool_size == source_pool_size == 39147
+    if complete_native_atlas and len(target_pairs) != 4358409:
+        raise ArithmeticError(
+            f"expected 4,358,409 complete-atlas targets, found {len(target_pairs)}"
+        )
     if not target_pairs:
         raise ArithmeticError("the selected prefix has no intersection-one targets")
     target_manifest_sha256 = target_manifest_hasher.hexdigest()
@@ -437,7 +444,11 @@ def main() -> None:
     status = (
         "PASS_EXACT_RANK20_V4_PRODUCT_CHARACTER_HITS"
         if hits
-        else "PASS_EXACT_NO_NORM8_PRODUCT_CHARACTER_HIT_IN_RATIONAL_V4_PREFIX"
+        else (
+            "PASS_EXACT_NO_NORM8_PRODUCT_CHARACTER_HIT_IN_COMPLETE_RATIONAL_V4_SET"
+            if complete_native_atlas
+            else "PASS_EXACT_NO_NORM8_PRODUCT_CHARACTER_HIT_IN_RATIONAL_V4_PREFIX"
+        )
     )
     output = args.output if args.output.is_absolute() else ROOT / args.output
     payload = {
@@ -445,6 +456,8 @@ def main() -> None:
         "status": status,
         "scope": {
             "native_bisection_priority_prefix": args.pool_size,
+            "source_bisection_record_count": source_pool_size,
+            "complete_native_rational_bisection_atlas": complete_native_atlas,
             "intersection_one_rational_v4_target_count": len(target_pairs),
             "norm8_pencil_class_count": len(norm8_rows),
             "total_target_trace_pairs": len(target_pairs) * len(norm8_rows),
@@ -476,14 +489,28 @@ def main() -> None:
         "reproducing_command": (
             "sage -python "
             "elkies-k3/scripts/search_r17_norm12_11952_all_rational_v4_product_inversion.sage "
-            f"--pool-size {args.pool_size} --primes {args.primes}"
+            f"--bisections {relative(bisection_path)} "
+            f"--direct {relative(direct_path)} "
+            f"--norm8-table {relative(norm8_path)} "
+            f"--pool-size {args.pool_size} --primes {args.primes} "
+            f"--output {relative(output)}"
         ),
         "proof_boundary": (
-            "All 10,362 intersection-one targets in the exact native 1,024 prefix "
-            "and all 63,917 minimum-norm-eight bisection pencils are covered. A "
+            f"All {len(target_pairs):,} intersection-one targets in the "
+            + (
+                "complete native 39,147-class rational-bisection atlas"
+                if complete_native_atlas
+                else f"exact native {args.pool_size:,}-class priority prefix"
+            )
+            + " and all 63,917 minimum-norm-eight bisection pencils are covered. A "
             "no-hit result excludes product-character sections in this integral "
             "coboundary layer only; non-coboundary twist sections and rational V4 "
-            "pairs outside the prefix remain open. A hit gives a rational genus-one "
+            + (
+                "pairs outside the rational-bisection atlas remain open. "
+                if complete_native_atlas
+                else "pairs outside the prefix remain open. "
+            )
+            + "A hit gives a rational genus-one "
             "V4 base and three orthogonal nontrivial-character sections."
         ),
     }

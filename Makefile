@@ -163,6 +163,7 @@ check:
 	$(PYTHON) scripts/check_markdown_links.py
 	$(PYTHON) scripts/audit_status.py
 	$(PYTHON) scripts/audit_repository_hygiene.py
+	$(SYSTEM_PYTHON) elkies-k3/scripts/analyze_process_ledger.py --check-document
 
 verify-elliptic-curves:
 	$(PYTHON) elliptic-curves/scripts/audit_artifact_catalog.py

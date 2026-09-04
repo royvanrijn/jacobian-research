@@ -48,6 +48,15 @@ CONFIG = {
         "older_degrees": (12, 0),
         "description": "hidden-103b2",
     },
+    "norm12-orbit-08f72": {
+        "input": ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisections-full-v1.json",
+        "direct": ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json",
+        "output": ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-complete-character-closure-v1.json",
+        "status": "PASS_EXACT_COMPLETE_ALTERNATE_BISECTION_EQUATIONS",
+        "count": 39147,
+        "older_degrees": (8, 12),
+        "description": "alternate-Q80 orbit-08f72",
+    },
 }
 
 Atom = tuple[str, ...]

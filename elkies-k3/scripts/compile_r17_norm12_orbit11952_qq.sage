@@ -49,6 +49,8 @@ ALTERNATE = ROOT / "artifacts/generated-results/q80-alternate-fifth-q6-rootless-
 BISECTIONS = ROOT / "artifacts/generated-results/elkies-2026-equation-bisections-full.json"
 OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json"
 OUTPUT_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json"
+OUTPUT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json"
+OUTPUT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08ab4-direct-fibration-v1.json"
 FRAME_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-isotropic-frame-v1.json"
 
 
@@ -162,15 +164,24 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--source-label",
-        choices=("norm12-orbit-11952", "norm12-orbit-103b2"),
+        choices=(
+            "norm12-orbit-11952",
+            "norm12-orbit-103b2",
+            "norm12-orbit-08f72",
+            "norm12-orbit-08ab4",
+        ),
         default="norm12-orbit-11952",
     )
     parser.add_argument("--output", type=Path)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
-    output = args.output or (
-        OUTPUT if args.source_label == "norm12-orbit-11952" else OUTPUT_103B2
-    )
+    default_outputs = {
+        "norm12-orbit-11952": OUTPUT,
+        "norm12-orbit-103b2": OUTPUT_103B2,
+        "norm12-orbit-08f72": OUTPUT_08F72,
+        "norm12-orbit-08ab4": OUTPUT_08AB4,
+    }
+    output = args.output or default_outputs[args.source_label]
 
     model = json.loads(MODEL.read_text())
     section_data = json.loads(SECTIONS.read_text())
@@ -323,12 +334,9 @@ def main() -> None:
     transport = matrix(ZZ, [list(fibre), list(mate)] + rows(complement))
     frame = -(complement * ns * complement.transpose())
     alternate = matrix(ZZ, alternate_payload["rootless_frame"])
-    expected_frame = (
-        alternate if args.source_label == "norm12-orbit-11952" else pinned
-    )
-    rejected_frame = (
-        pinned if args.source_label == "norm12-orbit-11952" else alternate
-    )
+    is_alternate_target = args.source_label != "norm12-orbit-103b2"
+    expected_frame = alternate if is_alternate_target else pinned
+    rejected_frame = pinned if is_alternate_target else alternate
     if abs(transport.det()) != 1 or frame.det() != 948 or int(pari(frame).qfminim(2)[0]):
         raise ArithmeticError("new frame failed its primitive rootless certificate")
     isometry = pari(frame).qfisom(pari(expected_frame))
@@ -352,9 +360,7 @@ def main() -> None:
         item for item in classification["classification"]["records"]
         if item["label"] == args.source_label
     )
-    expected_frame_class = (
-        "alternate-Q80" if args.source_label == "norm12-orbit-11952" else "published-R17"
-    )
+    expected_frame_class = "alternate-Q80" if is_alternate_target else "published-R17"
     assert classification_record["frame_class"] == expected_frame_class
     assert classification_record["frame_gram_sha256"] == matrix_digest(frame)
 
@@ -439,6 +445,49 @@ def main() -> None:
             [1, -1, 0, 1, -1, -1, 0, 1, 1, 0, -1, 1, 1, -1, -1, 0, 0],
             [0, -1, 1, 1, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0],
         ],
+        # These sixteen norm-at-most-eight old sections are exactly the first
+        # deterministic unimodular basis found in the degree-one shell for
+        # orbit-08f72.  Together with orbit-04eb3 below their transported
+        # child-frame rows have determinant one.
+        "norm12-orbit-08f72": [
+            [0, -1, 2, 0, -2, 1, 0, 3, 0, 0, 0, 1, -1, 0, 2, -1, -2],
+            [0, -1, 0, -1, -1, 0, 1, 2, 0, 1, -1, 0, 0, 0, 1, 0, 0],
+            [0, -1, 1, 0, -2, 1, 0, 2, 0, 0, 0, 0, 0, 0, 1, 0, -1],
+            [0, 0, 2, 0, -1, 2, -1, 2, -1, -1, 0, 1, -1, 0, 2, -1, -2],
+            [0, -1, 1, -1, -2, 0, 1, 3, 0, 0, -2, 1, 0, 0, 2, 0, 0],
+            [0, 0, 2, -1, -2, 1, -1, 2, 0, -1, -1, 2, 0, 0, 2, -1, -1],
+            [-1, -1, 2, -1, -2, 1, 0, 3, 0, 0, -1, 2, 0, 0, 2, -1, -1],
+            [0, -1, 1, -1, -3, 0, 0, 3, 0, 0, -2, 2, 0, 0, 2, -1, 0],
+            [0, -1, 0, -1, -2, -1, 1, 3, 0, 0, -2, 1, 0, 0, 1, 0, 1],
+            [0, -1, 2, 0, -3, 1, 0, 3, 0, -1, -1, 2, 0, 0, 2, -1, -2],
+            [0, -1, 0, 0, -1, 1, 1, 2, 0, 0, -1, 0, 0, 0, 1, 0, -1],
+            [1, -1, 0, 0, -2, -1, 1, 3, 0, -1, -2, 1, 0, 0, 1, 0, 0],
+            [1, 0, 0, 0, -1, 0, 0, 1, 0, -1, -1, 1, 0, 0, 1, -1, -1],
+            [0, 0, 0, 0, -2, 0, 0, 1, 0, -1, -1, 1, 0, 0, 1, 0, 0],
+            [-1, 0, 1, -1, -2, 0, 0, 2, 0, 0, -1, 1, 0, 0, 2, 0, 0],
+            [0, -1, 1, 0, -2, 0, 0, 2, 0, -1, -1, 2, -1, 1, 1, -1, 0],
+        ],
+        # A deterministic degree-one-shell basis for orbit-08ab4.  These
+        # sixteen old sections together with orbit-1ebca below have child
+        # frame coordinate determinant one.
+        "norm12-orbit-08ab4": [
+            [0, 0, 0, 0, 0, 0, 1, 0, -1, 0, 0, -1, 0, 0, 0, 1, 0],
+            [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, -1, 0, 0, -1],
+            [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, -1, 0, -1, 0, 1, 0],
+            [0, 0, 0, 0, 1, 0, 1, 0, -1, 0, 0, -1, 0, 0, 0, 1, 0],
+            [0, 0, 1, 0, 1, 0, 0, -1, 0, 0, 1, -1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 1, 0, -1, -1, 0, 1, 0, 0, 0, 0, 0, -1],
+            [0, -1, 0, 0, -1, 0, 1, 1, 0, 1, 0, -1, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, -1, 0, -1, 0, 0, -1],
+            [0, 0, 1, 0, 1, 1, 0, 0, -1, 0, 1, 0, -1, 0, 0, 0, -1],
+            [0, -1, 0, 0, 0, 0, 1, 0, -1, 1, 0, -1, 0, 0, -1, 1, 1],
+            [0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, -1, -1, 0, 0, 1, -1],
+            [1, -1, 0, 1, 0, -1, 1, 0, 1, 0, 0, 0, 0, 0, 0, -1, -1],
+            [1, 0, -1, 0, 1, 0, 1, 0, 0, 1, 0, -1, 0, -1, 0, 0, -1],
+            [1, 0, 1, 1, 0, 0, 0, 0, -1, -1, 1, 0, -1, 0, 0, 0, -1],
+            [0, -1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, -1, 0, -1, -1],
+            [0, -1, 1, 0, 1, 1, 0, 0, 0, 1, 1, -1, 0, 0, 0, -1, -1],
+        ],
     }
     selected_old_vectors = selected_old_vectors_by_label[args.source_label]
     basis_change = matrix(ZZ, target_payload["pinned_identification"]["basis_change_matrix"])
@@ -482,6 +531,8 @@ def main() -> None:
     glue_labels_by_source = {
         "norm12-orbit-11952": ["orbit-0adf9"],
         "norm12-orbit-103b2": ["orbit-1d5f2", "orbit-0abc2"],
+        "norm12-orbit-08f72": ["orbit-04eb3"],
+        "norm12-orbit-08ab4": ["orbit-1ebca"],
     }
     glue_labels = glue_labels_by_source[args.source_label]
     for glue_offset, glue_label in enumerate(glue_labels):
@@ -563,7 +614,6 @@ def main() -> None:
     if section_height_gram.det() != 948 or int(pari(section_height_gram).qfminim(2)[0]):
         raise ArithmeticError("recovered section height Gram failed the rootless frame checks")
 
-    is_alternate_target = args.source_label == "norm12-orbit-11952"
     frame_certificate = {
         "transport_rows_D_D_plus_O_complement": rows(transport),
         "transport_determinant": int(transport.det()),
@@ -588,11 +638,12 @@ def main() -> None:
     if not is_alternate_target:
         input_paths.append(FRAME_103B2)
     result = {
-        "schema": (
-            "elkies-k3.r17-norm12-orbit11952-direct-fibration.v1"
-            if is_alternate_target
-            else "elkies-k3.r17-norm12-orbit103b2-direct-fibration.v1"
-        ),
+        "schema": {
+            "norm12-orbit-11952": "elkies-k3.r17-norm12-orbit11952-direct-fibration.v1",
+            "norm12-orbit-103b2": "elkies-k3.r17-norm12-orbit103b2-direct-fibration.v1",
+            "norm12-orbit-08f72": "elkies-k3.r17-norm12-orbit08f72-direct-fibration.v1",
+            "norm12-orbit-08ab4": "elkies-k3.r17-norm12-orbit08ab4-direct-fibration.v1",
+        }[args.source_label],
         "status": "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS",
         "divisor": {
             "label": args.source_label,
@@ -670,7 +721,11 @@ def main() -> None:
         },
         "reproducing_command": (
             "sage -python elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage"
-            + ("" if is_alternate_target else " --source-label norm12-orbit-103b2")
+            + (
+                ""
+                if args.source_label == "norm12-orbit-11952"
+                else f" --source-label {args.source_label}"
+            )
         ),
         "proof_boundary": (
             (
@@ -679,7 +734,21 @@ def main() -> None:
                 "It also transports sixteen old sections and the orbit-0adf9 rational bisection to "
                 "an explicit saturated rank-17 section basis on the new equation."
             )
-            if is_alternate_target
+            if args.source_label == "norm12-orbit-11952"
+            else (
+                "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
+                "the squarefree degree-24 discriminant, and the primitive rootless alternate-Q80 frame. "
+                "It also transports sixteen old sections and the orbit-04eb3 rational bisection to "
+                "an explicit saturated rank-17 section basis on the new equation."
+            )
+            if args.source_label == "norm12-orbit-08f72"
+            else (
+                "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
+                "the squarefree degree-24 discriminant, and the primitive rootless alternate-Q80 frame. "
+                "It also transports sixteen old sections and the orbit-1ebca rational bisection to "
+                "an explicit saturated rank-17 section basis on the new equation."
+            )
+            if args.source_label == "norm12-orbit-08ab4"
             else (
                 "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
                 "the squarefree degree-24 discriminant, and the primitive rootless published-R17 frame. "

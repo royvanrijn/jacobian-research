@@ -13,7 +13,7 @@ and a reproducible certificate plan.
 ## Start here
 
 1. [`README.md`](README.md) — current milestone and active fronts.
-2. [`NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — open different-NS objective and fail-closed source/endpoint gates.
+2. [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — open different-NS objective and fail-closed source/endpoint gates.
 3. [`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) — determinant-948 noncyclic closure that motivates the pivot.
 4. [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md) — reusable theorem/algorithm layer.
 5. [`LITERATURE_AND_NOVELTY_MAP_2026-09-03.md`](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md) — terminology and prior-art boundaries.
@@ -27,9 +27,11 @@ and a reproducible certificate plan.
   directions: `R17 -> 4A1/MW13 -> R17`, with thirteen saturated rational
   sections and target-free reverse selection.
 - The next foundry milestone is the first planner-found arithmetic MW17
-  fibration on a different NS.  Determinant-950 `NS0024` is preferred, but it
-  remains open until an equation-facing characteristic-zero source has a
-  rational rank-19 marking.
+  fibration on a different NS. Determinant-950 `NS0024` is arithmetically
+  excluded by the rational-marking obstruction. Determinant-1184 `NS0031` is
+  the preferred replacement; its one-parameter formally smooth `ZZ_7`
+  model-157 marked branch and exact five-edge physical corridor still require
+  algebraization and a rational characteristic-zero rank-19 source marking.
 - The four published rank-25--28 R17 controls do not transfer to rational alternate-Q80 parameters, but the complete ICARM sweep now supplies native controls: curve 12 has rank at least 29 in class `11952`, while curves 363, 364, 378, and 395 give further rank-at-least-24--28 fibres in classes `08f72` and `11952`.
 - Rank `>=32` is open.
 - One curated inverse-ADE/foundry route is end-to-end planner-ready; the 936 bulk routes are not.
@@ -43,6 +45,7 @@ and a reproducible certificate plan.
 - bulk foundry route enumeration without complete marked planner inputs.
 - treating another determinant-948 equation as the different-NS foundry
   milestone.
+- restarting a full-rational-marking NS0024 search over `QQ`.
 
 These remain useful provenance/regression material and are indexed from `../archive/elkies-k3/`.
 
@@ -54,4 +57,6 @@ These remain useful provenance/regression material and are indexed from `../arch
 - Do not modify `STATUS.md` manually. If mathematical status genuinely changes, update the canonical proof and `MATH_STATUS.json`, then regenerate status.
 - Preserve scripts and generated certificates even when an operational route is archived.
 
-<!-- status-consumer: OP-K3-NS0024-ARITHMETIC-MW17 427e74f6a4eb03e4 -->
+<!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
+<!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 c8566fbe8f4dc838 -->

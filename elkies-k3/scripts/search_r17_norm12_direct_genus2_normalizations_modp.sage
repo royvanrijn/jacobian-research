@@ -9,13 +9,15 @@ regular residual-chord slopes are
 The branch has degree at most six.  Its normalization is rational in this
 finite two-node chart precisely when its odd squareclass has degree two.
 This script exhausts all p^2 affine slopes for a deterministic chunk of the
-26,645 minimum norm-six translation classes.  It also compares the full
-finite-field squareclass, including its constant atom, with the complete
-smooth rational-bisection atlas.
+26,645 minimum norm-six translation classes, using the reciprocal base chart
+when the unique pole is at infinity.  The missing projective slope parameter
+has branch ``(l0+l1*u)^4*h^2`` and hence is split.  The script also compares
+the full finite-field binary-quadratic squareclass, including its scalar atom,
+with the complete smooth rational-bisection atlas.
 
 The result is an exact finite-field sieve for the displayed chunk.  It is not
-a characteristic-zero existence or nonexistence theorem; bad-reduction and
-parameter-at-infinity charts remain outside an individual run.
+a characteristic-zero existence or nonexistence theorem: a rational slope can
+still have bad reduction at a displayed prime.
 """
 
 from __future__ import annotations
@@ -116,16 +118,14 @@ def smooth_branch_records(path):
 
 
 def cover_key(polynomial, field):
-    """Projective quadratic atom plus the squareclass of its scalar."""
+    """Binary quadratic atom plus the squareclass of its first nonzero scalar."""
 
-    if polynomial.degree() != 2 or not polynomial[2]:
+    values = [field(polynomial[index]) for index in range(3)]
+    pivot = next((value for value in values if value), None)
+    if pivot is None:
         return None
-    if polynomial.gcd(polynomial.derivative()).degree() != 0:
-        return None
-    leading = field(polynomial[2])
-    normalized = polynomial / leading
-    scalar_sign = int(leading ** ((field.cardinality() - 1) // 2))
-    return tuple(int(normalized[index]) for index in range(3)), scalar_sign
+    scalar_sign = int(pivot ** ((field.cardinality() - 1) // 2))
+    return tuple(int(value / pivot) for value in values), scalar_sign
 
 
 parser = argparse.ArgumentParser(description=__doc__)
@@ -212,6 +212,7 @@ else:
         indexed_selected = indexed_selected[: args.trace_limit]
 
 ring = PolynomialRing(QQ, "u")
+qq_function_field = ring.fraction_field()
 weierstrass = model["weierstrass_model"]
 A = ring([QQ(value) for value in weierstrass["A_coefficients_low_to_high"]])
 B = ring([QQ(value) for value in weierstrass["B_coefficients_low_to_high"]])
@@ -227,16 +228,17 @@ model_scale = QQ(prime) ** model_scale_valuation
 Ap = modp_ring([mod_p(value / model_scale**4, field) for value in A])
 Bp = modp_ring([mod_p(value / model_scale**6, field) for value in B])
 curve = EllipticCurve(modp_function_field, [Ap, Bp])
+Ap_inverted = chord.reciprocal_with_bound(Ap, 8, modp_ring)
+Bp_inverted = chord.reciprocal_with_bound(Bp, 12, modp_ring)
+curve_inverted = EllipticCurve(modp_function_field, [Ap_inverted, Bp_inverted])
 
 
-def modular_rational_function(record, weight):
+def modularize_function(function, scale_weight):
+    function = qq_function_field(function)
     numerator_values = [
-        QQ(value) / model_scale**weight
-        for value in record["numerator_coefficients_low_to_high"]
+        QQ(value) / model_scale**scale_weight for value in function.numerator()
     ]
-    denominator_values = [
-        QQ(value) for value in record["denominator_coefficients_low_to_high"]
-    ]
+    denominator_values = [QQ(value) for value in function.denominator()]
     common_valuation = min(
         value.valuation(prime)
         for value in numerator_values + denominator_values
@@ -254,10 +256,31 @@ def modular_rational_function(record, weight):
     return modp_function_field(numerator) / modp_function_field(denominator)
 
 
+def section_coordinate(record):
+    return rational_function(record, ring, qq_function_field)
+
+
 basis = [
     curve(
-        modular_rational_function(record["X"], 2),
-        modular_rational_function(record["Y"], 3),
+        modularize_function(section_coordinate(record["X"]), 2),
+        modularize_function(section_coordinate(record["Y"]), 3),
+    )
+    for record in model["sections"]["records"]
+]
+basis_inverted = [
+    curve_inverted(
+        modularize_function(
+            chord.invert_rational(
+                section_coordinate(record["X"]), 4, ring, qq_function_field
+            ),
+            2,
+        ),
+        modularize_function(
+            chord.invert_rational(
+                section_coordinate(record["Y"]), 6, ring, qq_function_field
+            ),
+            3,
+        ),
     )
     for record in model["sections"]["records"]
 ]
@@ -287,15 +310,31 @@ for trace_index, (mask, trace_vector) in indexed_selected:
     )
     frame = chord.trace_chord_frame(trace[0], trace[1], modp_ring)
     h, Nx, Ny, M0 = (frame[key] for key in ("h", "Nx", "Ny", "M0"))
+    construction_chart = "finite_u"
+    active_A = Ap
+    if h.degree() != 1:
+        trace = sum(
+            (
+                coefficient * point
+                for coefficient, point in zip(trace_vector, basis_inverted)
+                if coefficient
+            ),
+            curve_inverted(0),
+        )
+        frame = chord.trace_chord_frame(trace[0], trace[1], modp_ring)
+        h, Nx, Ny, M0 = (frame[key] for key in ("h", "Nx", "Ny", "M0"))
+        construction_chart = "reciprocal_u"
+        active_A = Ap_inverted
     record = {
         "trace_index": trace_index,
         "translation_orbit_mask": int(mask),
         "basis_coordinates": list(map(int, trace_vector)),
         "coefficient_l1": int(sum(abs(entry) for entry in trace_vector)),
         "finite_pole_degree_mod_p": int(h.degree()),
+        "construction_chart": construction_chart,
     }
     if h.degree() != 1:
-        record["status"] = "SKIPPED_POLE_AT_INFINITY_CHART"
+        record["status"] = "SKIPPED_DEGENERATE_TRACE_MODP"
         trace_records.append(record)
         continue
     hp, Nxp, Nyp, M0p = h, Nx, Ny, M0
@@ -306,7 +345,13 @@ for trace_index, (mask, trace_vector) in indexed_selected:
         for l1 in field:
             total_specializations += 1
             M = M0p + (l0 + l1 * up) * hp**2
-            numerator = M**4 - 6 * M**2 * Nxp - 8 * M * Nyp - 3 * Nxp**2 - 4 * Ap * hp**4
+            numerator = (
+                M**4
+                - 6 * M**2 * Nxp
+                - 8 * M * Nyp
+                - 3 * Nxp**2
+                - 4 * active_A * hp**4
+            )
             q, remainder = numerator.quo_rem(hp**6)
             if remainder:
                 raise ArithmeticError("modular genus-two branch division failed")
@@ -315,7 +360,7 @@ for trace_index, (mask, trace_vector) in indexed_selected:
                 continue
             odd_part = modp_ring(q.squarefree_part())
             profile_histogram[f"q{q.degree()}_odd{odd_part.degree()}"] += 1
-            if odd_part.degree() != 2:
+            if odd_part.degree() not in (1, 2):
                 continue
             factorization = q.factor()
             square_part = modp_ring.one()
@@ -324,9 +369,14 @@ for trace_index, (mask, trace_vector) in indexed_selected:
                 square_part *= factor ** (int(exponent) // 2)
                 if int(exponent) % 2:
                     reduced *= factor
-            if square_part**2 * reduced != q or reduced.degree() != 2:
+            if square_part**2 * reduced != q or reduced.degree() not in (1, 2):
                 raise ArithmeticError("modular squareclass decomposition failed")
-            key = cover_key(reduced, field)
+            reduced_original = (
+                reduced
+                if construction_chart == "finite_u"
+                else chord.reciprocal_with_bound(reduced, 2, modp_ring)
+            )
+            key = cover_key(reduced_original, field)
             matches = [] if key is None else smooth_by_key.get(key, [])
             trace_survivors += 1
             trace_smooth_matches.update(matches)
@@ -336,12 +386,13 @@ for trace_index, (mask, trace_vector) in indexed_selected:
                     "translation_orbit_mask": int(mask),
                     "basis_coordinates": list(map(int, trace_vector)),
                     "l0_l1": [int(l0), int(l1)],
+                    "construction_chart": construction_chart,
                     "branch_coefficients_low_to_high": [int(value) for value in q],
                     "removed_square_factor_coefficients_low_to_high": [
                         int(value) for value in square_part
                     ],
                     "reduced_quadratic_coefficients_low_to_high": [
-                        int(value) for value in reduced
+                        int(reduced_original[index]) for index in range(3)
                     ],
                     "smooth_cover_match_masks": matches,
                 }
@@ -396,10 +447,12 @@ payload = {
     "trace_records": trace_records,
     "proof_boundary": (
         "For every processed norm-six trace all p^2 affine linear chord slopes "
-        "were tested exactly. Survivors have branch squareclass degree two modulo "
-        "p, and smooth-cover matches retain the scalar squareclass. This is a "
-        "finite-field sieve only; bad-reduction and parameter-at-infinity charts "
-        "remain outside this artifact."
+        "were tested exactly, in the finite or reciprocal base chart as needed. "
+        "The remaining projective slope parameter has split branch "
+        "(l0+l1*u)^4*h^2. Survivors have binary-quadratic branch squareclass "
+        "modulo p, and smooth-cover matches retain its scalar squareclass. This "
+        "is a finite-field sieve only; rational slopes with bad reduction at p "
+        "are not excluded."
     ),
     "inputs": {
         relative(path): digest(path) for path in (model_path, smooth_path, CHORD_SCRIPT)

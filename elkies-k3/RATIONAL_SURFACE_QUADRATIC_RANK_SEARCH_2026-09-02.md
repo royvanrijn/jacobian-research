@@ -1,6 +1,7 @@
 # Rational elliptic surfaces and quadratic rank decompositions — 2026-09-02
 
 <!-- status-consumer: EC-K3-RES-QBC-E6A1-RHO19 7103fa2a1a4e7ba2 -->
+<!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 
 ## Outcome
 
@@ -306,8 +307,10 @@ The prior exact audit is retained unchanged in
   determinant `20`, so it remains rejected from the determinant-720 target.
 - NS0031 model 157 over `GF(7)` is the pullback of an `I8+4I1` rational
   surface under `u=t^2/(t-1)`.  One marked pair gives a nonzero invariant
-  trace and a nonzero anti-invariant direction.  This remains a finite-field
-  precursor; no `QQ` source equation or full MW decomposition is claimed.
+  trace and a nonzero anti-invariant direction.  This trace calculation is
+  finite-field; a later certificate proves a one-parameter formally smooth
+  `ZZ_7` marked branch, but no `QQ` source equation or full MW decomposition
+  is claimed here.
 
 These controls validate the character split and repeated-fibre diagnostics.
 The new `E6+A1` family differs structurally: it is constructed over `QQ` from

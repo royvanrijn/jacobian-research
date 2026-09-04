@@ -2,6 +2,9 @@
 
 Date: 2026-09-04.
 
+<!-- status-consumer: EC-K3-NS0024-DIRECT-QQ-INOSE-OBSTRUCTION e87afc1b3529a07f -->
+<!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
+
 ## Result
 
 The symbolic `2E8/MW1` Inose source is not a direct arithmetic source over
@@ -40,31 +43,27 @@ checker.
 
 ## Descent boundary
 
-This removes only the direct level-structure route.  It does not prove that
-`X0(475)/<w475>` or a larger Atkin--Lehner quotient has no relevant rational
-point, and it does not rule out a quadratic `Q`-curve construction in which
-the two elliptic curves or the isogeny are conjugate.
+This direct argument removes only the rational level-structure route. The
+subsequent Fricke-quotient argument in
+[`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
+also excludes the rational marking needed by the foundry milestone: Momose's
+theorem leaves only cusps and CM points on `X0+(475)(QQ)`, while the rank-one
+Inose frame requires a noncuspidal, non-CM point.
 
-Such a descent would not pass the foundry source gate merely because the
-Inose equation descends.  It must also show that the two `E8` configurations,
-the fibre and zero, and the height-`950` Mordell--Weil generator descend as
-nineteen individual `QQ`-rational divisor classes.  A Galois action that
-exchanges the two `E8` fibres or sends the generator to its negative gives a
-smaller invariant Neron--Severi rank and is insufficient.
+A quadratic `Q`-curve or larger-quotient model may still exist with a proper
+Galois-invariant sublattice, but it cannot make all nineteen NS classes
+rational. A Galois action that exchanges the two `E8` fibres or sends the
+generator to its negative is therefore geometric or number-field data, not
+an arithmetic source for the stated `QQ(t)` objective.
 
 ## Source decision
 
-The active source programme is therefore the semistable
-`A3+A4+A6/MW4` reconstruction.  It already has the exact resolved component
-profiles, a determinant-`95/14` four-section height lattice, a thirteen-edge
-marked degree-two corridor, and a prepared first compiler adapter.  Its next
-gate is a common characteristic-zero producer for the surface and all four
-sections, followed by the rational rank-19 and Picard-rank checks.
-
-The `D5+E8/MW4` completed-core route remains a geometric control.  It becomes
-an arithmetic source contender only if an independent explicit equation and
-rational marking are found; the abstract `17,13,7` Kneser sequence is not an
-equation route.
+All `NS0024` source routes are now parked for the arithmetic MW17 milestone.
+The semistable `A3+A4+A6/MW4` reconstruction and the `D5+E8/MW4`
+completed-core route remain valid geometric investigations, but neither can
+produce a full rational NS0024 marking over `QQ`. The live different-NS
+objective and its replacement `NS0031` source gate are in
+[`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 
 ## References
 

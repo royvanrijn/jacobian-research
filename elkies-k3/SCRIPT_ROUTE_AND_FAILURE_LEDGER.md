@@ -1,6 +1,7 @@
 # Elkies K3 script route and failure ledger
 
-Status: **research-history and claim-boundary index**.
+Status: **research-history and claim-boundary index**, updated through
+2026-09-04.  Mathematical status remains exclusively in `../MATH_STATUS.json`.
 
 This note records why the script tree contains several apparently competing routes. It
 separates four questions that were repeatedly conflated during the reconstruction:
@@ -26,6 +27,15 @@ The answers are not the same:
 - **Q80 is an independent comparison/compiler route, not the source family.**
 - **q32 is retained as an alternate/regression route; it is no longer preferred over
   the viable q24-native H3 path.**
+
+The later direct norm12/orbit11952 hop changes the operational conclusion
+without changing that history: the alternate-Q80 rootless class now has an
+exact `QQ` equation, `24 I1`, seventeen saturated rational sections, and
+arithmetic generic rank 17.  The degree-11511 Q80 transport and third-q12
+reconstruction remain provenance.  The determinant-948 noncyclic
+`4A1/MW13` bridge is also equation-explicit in both directions.  The active
+foundry milestone has therefore moved to an arithmetic MW17 fibration on a
+different Neron--Severi lattice.
 
 The executable index is [`scripts/README.md`](scripts/README.md); archived experiments
 are classified in [`scripts/archive/README.md`](scripts/archive/README.md). The current
@@ -276,8 +286,12 @@ certify_h92_q6_child_jacobian.sage
 
 ### H3 q24: `D13/MW4` to native `D12/MW5`
 
-The lattice/chamber arrow is exact and the preferred child is orbit 85. The equation
-arrow remains the nearest characteristic-zero frontier.
+The lattice/chamber arrow is exact and the preferred child is orbit 85.  The
+equation arrow was the nearest characteristic-zero frontier at the time of the
+calculations summarized below; it was subsequently closed as part of the
+exact H3 route to q12/orbit5867.  The retained scripts remain valuable because
+they record how the high-pole horizontal was recovered and how the physical
+marking was attached.
 
 `scripts/close_h92_q8_q24_by_q6_translation.sage` closes the exact marking/NS bridge.
 `scripts/recover_h92_q24_exact_by_qq_trace_interpolation.sage` transports the selected
@@ -297,9 +311,10 @@ once the q24 D12 equation is fully certified, continue from its `D24eq` marking 
 native q6/q8/q4 suffix rather than switching to q32 or identifying with a historical D12
 frame.
 
-Still required for the q24 equation arrow are a pinned exact RR pencil,
-quartic/Jacobian compilation, minimal model, fibre classification, and marked transport
-certificate unless separately supplied by a later exact certificate.
+Those formerly missing gates are supplied by the later exact endpoint chain
+and its canonical certificates.  Do not restart this interpolation route
+merely because the historical working description records its earlier proof
+boundary.
 
 ## 5. Q80: why it exists and what it proves
 
@@ -362,6 +377,14 @@ section directly.
 | First rank-growing neighbour is automatically best | Lattice search optimized immediate rank growth and degree, not equation complexity. | D13 q24 and later first-hit scripts. | Keep alternative searches available, but use the now-native q24 suffix as the default H3 route while it remains viable. |
 | q32 D12 should become the preferred H3 continuation because its modular compiler is convenient | q32 gave useful modular quartic/spinor-marking diagnostics, but it introduces a different D12 route and does not improve the source provenance. The q24-native `D24eq` frame now replays exactly to A1. | q32 signature, spinor-quartic and pointed-section experiments. | Demote q32 to alternate/regression work; compile the native q24 `D24eq` suffix. |
 | A historical D12 frame with the same ADE/MW label can stand in for the q24 equation-side D12 | Equal root data does not identify the marked elliptic fibration. | historical suffix searches and frame comparisons. | `export_h92_q24_native_d12_frame.sage` + `run_h92_q24_native_suffix_to_a1.py`. |
+| The alternate rootless frame is only lattice-accessible | Minimum-incidence `U` search found norm12/orbit11952 directly on the compact published R17 equation. | Historical Q80 transport and third-q12 reconstruction remain as regression/provenance. | Use the direct degree-two compiler, exact alternate equation, and saturated rank-17 basis. |
+| Published R17 controls automatically calibrate alternate Q80 | Exact alternate-j preimage polynomials for all four rank-25--28 controls have no rational roots. | The four misses are retained as negative controls. | Use the complete norm-twelve public-curve atlas; curve 12 and the `08f72`/`11952` fibres are native alternate controls. |
+| Target-fitted visibility predicts unseen exceptional directions | Low-genus pencils can be forced through known quotient directions after the targets are supplied. | Exact fitted quartics and declared bounded splitting searches. | Separate rigid, predeclared, and post-hoc visibility; calibrate prospective predictors on held-out controls. |
+| A geometric NS0024 MW17 route can close the arithmetic `QQ` milestone | A full rational NS0024 marking would force a forbidden rational non-CM degree-475 Fricke-quotient point. | Exact geometric frames, modular source work, and physical corridors remain valid over algebraic closures or larger fields. | Park arithmetic NS0024 over `QQ`; require the Galois/rational-marking gate before equation compilation. |
+| A smooth modular point or long Hensel lift supplies a rational source | NS0031 model 157 has a unit Jacobian minor and hence a formal `ZZ_7` branch, but no algebraization or rational `QQ` point follows. | The GF(7), finite-lift, formal-smoothness, and five-edge corridor certificates are retained separately. | Algebraize first, then prove a rational rank-19 marking and Picard rank before target-free endpoint work. |
+| The cheapest native bisection prefix can be used as an exhaustive sieve | The 1,024 native alternate-Q80 covers were selected by cost and do not represent all native classes. | Exact priority keys and the full inherited/smooth-character domains. | Keep ranked prefixes and complete enumerations separately typed; never discard outside-prefix candidates mathematically. |
+| Norm-eight inversion exhausts every zero-Tate-class carrier | Exact quotient analysis exposed 49 norm-twelve residual traces in addition to the 63,917 norm-eight minima. | The original inversion remains a valid first layer. | Enumerate the full minimum-norm quotient spectrum and close all 833 residual trace/target cases before claiming zero-class exclusion. |
+| Successful no-hit chunks imply a complete singular-pencil exclusion | Independent chunks can omit intervals, exceptional traces, or malformed outputs. | All raw chunks and exact exceptional traces are retained. | Require half-open ranges, source hashes, gap/overlap checks, fail-closed parsing, and one merged coverage certificate. |
 
 ## 7. What was deliberately kept
 
@@ -384,27 +407,33 @@ preferred H3 continuation.
 
 ### Primary arithmetic work
 
-The selected physical equation route and direct endpoint package are complete.
-Use the compact published `t` chart for specialization. Retain the exact
-rank-25--28 positive controls, rank candidates by weakest performance across
-three or more disjoint prime ensembles, and compute the actual quotient
-`Sel_2(E_t)/<P1,...,P17>` before any cover or expensive point search. Residual
-dimension below 15 rejects a rank-32 candidate; a timeout, incomplete class
-ledger, or norm-one signature is not a pass.
+The determinant-948 equation routes are complete controls.  Use the compact
+published chart and the native alternate-Q80 fibres for specialization, but
+compute the actual quotient `Sel_2(E_t)/<P1,...,P17>` before any cover or
+expensive point search. Residual dimension below 15 rejects a rank-32
+candidate; a timeout, incomplete class ledger, or norm-one signature is not a
+pass.
 
-The rootless-bisection collision search is a separate exact route. All 39,120
-surviving translation classes have explicit equation records and distinct
-quadratic squareclasses, proving injectivity on that complete finite set. This
-produces 39,120 generic-rank-at-least-18 covers but closes the mechanism for a
-rank-two collision or generic rank 19. The alternate rootless frame remains a
-lattice-only comparison until it has a characteristic-zero equation.
+The first new construction milestone is a planner-found arithmetic MW17
+fibration on a different NS.  Arithmetic NS0024 over `QQ` is closed
+negatively.  For NS0031, algebraize the model-157 formal branch, obtain a
+characteristic-zero rational source with all nineteen divisor classes defined
+over `QQ`, certify Picard rank 19 and the determinant-one marking, and only
+then run target-free marked-`U` selection and endpoint compilation.
+
+The alternate-Q80 product laboratory has closed only the zero Tate class and
+the complete rational intersection-one deep-trace screen.  Nonzero quotient
+classes, section existence, and product-twist ranks remain open.  Smooth and
+singular arithmetic-genus-one character collisions are closed on the two
+direct norm-twelve charts; the recorded genus-two miss is bounded.
 
 ### Parallel route optimization
 
 Alternative routes remain scientifically useful, but they are secondary to
-arithmetic specialization and certified bisection-extension work. Reopen them
-only when they supply a needed source identity, specialization certificate, or
-reusable compiler technique.
+the different-NS arithmetic source gate, exact residual descent, and the
+surviving quotient-class problems. Reopen them only when they supply a needed
+source identity, specialization certificate, regression control, or reusable
+compiler technique.
 
 A route-cost model should still include:
 

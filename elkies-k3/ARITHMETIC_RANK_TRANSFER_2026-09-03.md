@@ -1,5 +1,8 @@
 # Galois-equivariant Shioda--Tate balance and arithmetic marking gate (2026-09-03)
 
+<!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 c8566fbe8f4dc838 -->
+
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
 
 ## Outcome
@@ -202,9 +205,10 @@ The existing modular NS0024 searches remain feasibility and Frobenius-ranking
 evidence.  They are not a substitute for steps 1--3.
 
 This completed-core path is distinct from the certified thirteen-edge
-degree-two lattice corridor beginning at `A3+A4+A6/MW4`.  Neither route has
-the equation-facing characteristic-zero rational rank-19 source marking
-required by the current
-[`NS0024 arithmetic MW17 objective`](NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
+degree-two lattice corridor beginning at `A3+A4+A6/MW4`. Neither route can
+carry the full rational rank-19 marking required over `QQ`, by the later
+[`NS0024 rational-marking obstruction`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+The live milestone has moved to the
+[`different-NS arithmetic MW17 objective`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 
 <!-- status-consumer: EC-K3-ARITHMETIC-RANK-TRANSFER 3031dd2365a29cd5 -->

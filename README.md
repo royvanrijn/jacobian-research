@@ -1,64 +1,25 @@
 # Jacobian Research
 
-Exact and computational mathematics with machine-replayable proof and status records.
+This repository studies polynomial maps and the Jacobian Conjecture.
 
-## Current focus
+A polynomial map is a collection of formulas built from addition and
+multiplication. Its Jacobian measures how the map changes space nearby. The
+Jacobian Conjecture asks whether every polynomial map with a constant,
+non-zero Jacobian can be reversed by another polynomial map.
 
-The repository is open for theorem-directed breakthroughs across its research
-programmes. The elliptic-K3 and high-rank elliptic-curve programmes are active;
-large computations should be launched only with an explicit mathematical gate,
-reproducible inputs, and checkpointed outputs.
+The project investigates this question through concrete examples, written
+proofs, and reproducible computer calculations. It focuses on the difference
+between a map that works in reverse nearby and one that works in reverse
+everywhere, including whether different inputs can produce the same output.
 
-## Canonical repository state
+Computer searches help find patterns and examples. The equations and exact
+checks needed to verify the resulting mathematical claims are kept alongside
+the research.
 
-- [`MATH_STATUS.json`](MATH_STATUS.json) — sole machine-readable authority for proved, conditional, falsified, and open claims.
-- [`REPRODUCE.md`](REPRODUCE.md) — replay commands and pinned certificate entry points.
-- `STATUS.md` — generated view of `MATH_STATUS.json`; do not edit by hand.
-- [`verified/`](verified/) — durable verified theorem notes.
-- [`artifacts/generated-results/`](artifacts/generated-results/) — generated certificates.
-- [`archive/`](archive/) — superseded or historical research; not a current claim source.
-- [`elkies-k3/README.md`](elkies-k3/README.md) — current K3/high-rank milestone and active fronts.
-- [`elliptic-curves/README.md`](elliptic-curves/README.md) — current elliptic-curve programme milestone and active fronts.
-- [`KNOWLEDGE_BASE.md`](KNOWLEDGE_BASE.md) and [`RESEARCH_TIMELINE.md`](RESEARCH_TIMELINE.md) — broader synthesis and chronology.
+## Further reading
 
-## K3 / high-rank current milestone
-
-The determinant-948 equation chain is closed through a maximal noncyclic
-bridge.  The next foundry milestone is now the first planner-found arithmetic
-MW17 fibration on a different Neron--Severi lattice; determinant-950 `NS0024`
-is the preferred candidate, and its missing prerequisite is an
-equation-facing characteristic-zero source with a rational rank-19 marking.
-See the
-[`NS0024 arithmetic MW17 objective`](elkies-k3/NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
-
-<!-- status-consumer: OP-K3-NS0024-ARITHMETIC-MW17 427e74f6a4eb03e4 -->
-<!-- status-consumer: OP-EC-NEXT e135b23ef9910845 -->
-<!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
-<!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
-<!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
-<!-- status-consumer: EC-K3-R17-NORM12-11952-CONTROL-J-PREIMAGES 1ef38474a0d7f629 -->
-
-The two determinant-948 rootless rank-17 charts on the pinned K3 remain
-explicit over `QQ`.
-
-- **Published Elkies R17:** certified `24 I1`, geometric and arithmetic generic Mordell–Weil rank 17.
-- **Alternate Q80:** canonical direct degree-two hop from `norm12-orbit-11952`; polynomial K3 model with `(deg A, deg B, deg Delta)=(8,12,24)`, `24 I1`, determinant-948 rootless frame, and 17 saturated rational sections.
-- **Noncyclic `4A1/MW13`:** an explicit `4 I2 + 16 I1` model over `QQ`, with maximal `Z/4+Z/8` bridge, saturated arithmetic rank 13, and an exact target-free reverse hop to published R17.
-- The alternate chart has generic arithmetic rank 17 over `QQ`.
-- The four published rank-25--28 R17 controls have no rational preimage under the alternate-Q80 `j`-map, so future alternate work needs native calibration fibres.
-- Rank `>=32` remains open.
-- Target-directed fibration hopping has one curated planner-ready end-to-end control; the 936 bulk foundry routes are not yet planner-ready.
-
-<!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
-
-Historical Q80 transports, large-coordinate reconstruction routes, and expensive third-`q12` work are provenance only. See [`archive/elkies-k3/`](archive/elkies-k3/).
-
-## Working rules
-
-1. Treat `MATH_STATUS.json` as truth; prose only summarizes it.
-2. Keep `UNKNOWN` as `UNKNOWN`.
-3. Prefer exact certificates and small independent checks over large speculative searches.
-4. Archive superseded research instead of leaving stale instructions on active navigation surfaces.
-5. Never edit generated `STATUS.md` manually.
-
-Other research branches remain in the repository with their canonical notes and certificates; this README intentionally stays lean and does not duplicate them.
+- [Discovery ledger](RESEARCH_TIMELINE.md) — the story of how the project’s
+  ideas and discoveries developed.
+- [Research papers](papers/README.md) — longer mathematical write-ups.
+- [Reproduce the calculations](REPRODUCE.md) — instructions for checking the
+  computer-assisted work.

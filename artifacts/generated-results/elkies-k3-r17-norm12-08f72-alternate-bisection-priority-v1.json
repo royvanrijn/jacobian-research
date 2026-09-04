@@ -1,0 +1,52 @@
+{
+  "class_count": 39147,
+  "coordinate_chain": "short -> historical alternate -> direct compiled frame -> saturated equation section basis",
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-q80-alternate-rootless-bisection-orbits.json": "6edadb7ee68cff0c92f319025e3f00be1900010edc867669d75ec703d1d97659",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json": "5091c7fd2199692b538ecfd64b2bb3a2a208ac01ae28db082ca0dff6e21d1b90",
+    "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json": "48381d91e288b2cefb85b1484d351d659748f801ea57d190453bd2db0a56eaab",
+    "elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage": "c6861cc2623a9bae62b8839eb6fad6f2829c05438255e8ee4cfe7483b31423be"
+  },
+  "minimum_norm": 10,
+  "priority_table": "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.tsv",
+  "priority_table_sha256": "873648145ef136824cdb2116d47c9938f78348b063853e82806fa04f894d117c",
+  "proof_boundary": "This is a complete exact equation-cost ranking of all 39147 alternate translation classes. It does not construct their equations or hash their quadratic extensions.",
+  "representative_selection": {
+    "complete_norm_ten_shell": true,
+    "cost_histogram": {
+      "1": 4,
+      "10": 4152,
+      "11": 2615,
+      "12": 1154,
+      "13": 542,
+      "14": 142,
+      "15": 34,
+      "16": 1,
+      "2": 126,
+      "3": 339,
+      "4": 1790,
+      "5": 3249,
+      "6": 5609,
+      "7": 6539,
+      "8": 6996,
+      "9": 5855
+    },
+    "score": [
+      "group_addition_upper_bound",
+      "support_count",
+      "maximum_absolute_coefficient",
+      "coefficient_l1",
+      "lexicographic_section_basis_word"
+    ]
+  },
+  "reproducing_command": "sage -python elkies-k3/scripts/rank_r17_norm12_11952_alternate_bisection_orbits.sage --source-label norm12-orbit-08f72",
+  "schema": "elkies-k3.r17-norm12-08f72-alternate-bisection-priority.v1",
+  "software_assumptions": {
+    "required_features": [
+      "exact lattice arithmetic",
+      "complete Fincke-Pohst traversal"
+    ],
+    "sage_version": "10.9"
+  },
+  "status": "PASS_EXACT_COMPLETE_ALTERNATE_BISECTION_EQUATION_PRIORITY"
+}

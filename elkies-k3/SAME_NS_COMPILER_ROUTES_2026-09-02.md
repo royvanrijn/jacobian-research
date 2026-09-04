@@ -2,6 +2,7 @@
 
 <!-- status-consumer: EC-K3-GOLAY-DET720-PHYSICAL-CORRIDOR 0868df67fe8c37ad -->
 <!-- status-consumer: EC-K3-NS0031-F017-PHYSICAL-CORRIDOR 67f5a71fa0733cdb -->
+<!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 
 ## Outcome
 
@@ -18,7 +19,7 @@ not by graph distance alone.
 | NS/source | selected MW17 target | compiler cost | route length |
 |---|---|---:|---:|
 | Golay-720 `G720-S0128` (`3A5/MW2`) | `G720-F001` | `(4,4,2,6,2)` | 6 |
-| NS0031 `NS0031-S001` (`A1+2A7/MW2`) | trisection-first `NS0031-F017` | `(6,8,2,5,1)` | 5 |
+| NS0031 `(prescribed-root-sources-all-ns-3e8-all-a-v1.json, NS0031-S001)` (`A1+2A7/MW2`) | trisection-first `NS0031-F017` | `(6,8,2,5,1)` | 5 |
 
 Every displayed edge has a primitive isotropic fibre, passes the complete
 finite/affine component and all-section nef gates, has no negative
@@ -104,9 +105,9 @@ yet a compiled algebraic neighbour sequence from a rational source equation.
 
 - The simple rational Golay `3I6` specialization saturates to determinant 20,
   not 720, so it cannot be the start of the certified Golay route.
-- NS0031 has exact marked finite-field evidence and a finite 7-adic lift, but
-  no rational equation or formal characteristic-zero source family has yet
-  been proved.
+- NS0031 has exact marked finite-field evidence, a one-parameter formally
+  smooth `ZZ_7` marked branch, and the finite lift as a regression, but no
+  algebraized rational characteristic-zero source has yet been proved.
 
 Thus the same-NS fibration-graph middle is now explicit and auditable.  The
 remaining work is equation-level realization of the marked source and then

@@ -1,5 +1,7 @@
 # The 2-primary product-character quotient: exact reduction and input gate
 
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION 9e1c09d47fcf0bde -->
+
 ## Status
 
 This note closes the formal reduction of the remaining product-character

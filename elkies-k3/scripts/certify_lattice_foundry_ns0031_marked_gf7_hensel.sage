@@ -143,6 +143,14 @@ parser.add_argument("--fibres", type=Path, default=DEFAULT_FIBRES)
 parser.add_argument("--marking", type=Path, default=DEFAULT_MARKING)
 parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
 parser.add_argument("--lift-precision", type=int, default=8)
+parser.add_argument(
+    "--free-parameter-integer",
+    type=int,
+    help=(
+        "fix the unique nonpivot coordinate m9 to this congruent integer "
+        "throughout the lift"
+    ),
+)
 parser.add_argument("--check", action="store_true")
 arguments = parser.parse_args()
 if arguments.lift_precision < 1:
@@ -225,6 +233,14 @@ jacobian = matrix(
 rank = int(jacobian.rank())
 pivot_columns = [int(index) for index in jacobian.pivots()]
 pivot_rows = [int(index) for index in jacobian.transpose().pivots()]
+free_columns = [index for index in range(len(variables)) if index not in pivot_columns]
+if free_columns != [51] or names[free_columns[0]] != "m9":
+    raise ArithmeticError("unexpected marked-system free coordinate")
+if (
+    arguments.free_parameter_integer is not None
+    and arguments.free_parameter_integer % 7 != int(point[free_columns[0]])
+):
+    parser.error("--free-parameter-integer must be congruent to 1 modulo seven")
 minor_determinant = (
     int(
         jacobian.matrix_from_rows_and_columns(
@@ -251,7 +267,33 @@ for exponent in range(1, arguments.lift_precision):
         raise ArithmeticError("current coordinates lost their certified precision")
     right = vector(field, [-(value // modulus) for value in values])
     try:
-        correction = jacobian.solve_right(right)
+        if arguments.free_parameter_integer is None:
+            correction = jacobian.solve_right(right)
+        else:
+            free_index = free_columns[0]
+            free_digit = field(
+                (
+                    arguments.free_parameter_integer
+                    - lift_coordinates[free_index]
+                )
+                // modulus
+            )
+            pivot_matrix = jacobian.matrix_from_rows_and_columns(
+                pivot_rows, pivot_columns
+            )
+            pivot_right = vector(field, [right[index] for index in pivot_rows])
+            pivot_right -= vector(
+                field,
+                [jacobian[index, free_index] * free_digit for index in pivot_rows],
+            )
+            pivot_correction = pivot_matrix.solve_right(pivot_right)
+            correction_entries = [field.zero()] * len(variables)
+            correction_entries[free_index] = free_digit
+            for index, value in zip(pivot_columns, pivot_correction):
+                correction_entries[index] = value
+            correction = vector(field, correction_entries)
+            if jacobian * correction != right:
+                raise ValueError("fixed-parameter correction violates dependent rows")
     except ValueError:
         lift_failure = {
             "failed_lift_from_exponent": exponent,
@@ -364,6 +406,15 @@ output = {
         "elkies-k3/scripts/certify_lattice_foundry_ns0031_marked_gf7_hensel.sage"
     ),
 }
+if arguments.free_parameter_integer is not None:
+    output["finite_precision_lift"]["fixed_free_parameter_integer"] = int(
+        arguments.free_parameter_integer
+    )
+    output["reproduce"] += (
+        f" --free-parameter-integer {arguments.free_parameter_integer}"
+        f" --lift-precision {arguments.lift_precision}"
+        f" --output {output_path}"
+    )
 serialized = json.dumps(output, indent=2, sort_keys=True) + "\n"
 if arguments.check:
     if output_path.read_text() != serialized:

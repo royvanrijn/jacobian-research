@@ -1,5 +1,7 @@
 # Rational-surface base changes behind the repeated-fibre sources
 
+<!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
+
 ## Outcome
 
 The two promoted repeated-fibre patterns both have an exact hidden quadratic
@@ -257,7 +259,10 @@ change `MATH_STATUS.json`:
 
 - the rational `3I6` model was already rejected from the determinant-720 NS
   class;
-- the NS0031 result remains a finite-field equation precursor;
+- the involution and character-splitting computation recorded here remains a
+  finite-field calculation; the later exact dependence certificate promotes
+  the full localized marked germ to a one-parameter formally smooth `ZZ_7`
+  branch, but still supplies no rational characteristic-zero source;
 - absence of cubic symmetry is proved only inside the complete normalized
   weighted-support automorphism tests for the promoted models, not for every
   possible chart or unrelated source.

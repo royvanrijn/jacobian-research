@@ -1,12 +1,19 @@
 # Equation-first shortlist after the complete degree-three census
 
+<!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
+<!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
+<!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
+<!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
+
 > **Programme update (2026-09-04).**  This note remains the exact record of
 > its bounded equation-first and finite-field comparisons.  References below
 > to the “current” or “next” equation gate are local to that comparison and no
-> longer set the foundry roadmap.  The live objective is the determinant-950
-> `NS0024` arithmetic MW17 milestone and its rational rank-19
-> characteristic-zero source gate; see
-> [`NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
+> longer set the foundry roadmap. The live objective is the different-NS
+> arithmetic MW17 milestone. The former `NS0024` candidate is arithmetically
+> obstructed; `NS0031` is now preferred because this note records the
+> strongest positive source precursor, now promoted to a one-parameter
+> formally smooth `ZZ_7` marked branch, and an exact physical corridor. See
+> [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 
 The strict source-rank ordering is useful, but it is not a sufficient proxy
 for equation time.  On the five rootless MW17 targets whose degree-three
@@ -67,8 +74,10 @@ finite-field gate but not the characteristic-zero marking problem.
 
 ## NS0005 equation gate
 
-The first new marking test targets `NS0005-S001`, the `A1+2A7/MW2` source
-with basis pole profile `[0,1]`.  The generalized exact Hermite scanner
+The first new marking test targets the source key
+`(prescribed-root-sources-all-ns-3e8-all-a-v1.json, NS0005-S001)`, the
+`A1+2A7/MW2` source with basis pole profile `[0,1]`. The artifact-qualified
+key is required because source identifiers are shard-local. The generalized exact Hermite scanner
 exhausts all `5^8` normalized degree-eight `A` polynomials for the
 `I2+I8+I8` profile.  It finds 530 compatible signed branches, 98 branches
 with the exact three discriminant orders, and 71 squarefree
@@ -123,7 +132,8 @@ and
 ## NS0031: the first equation-level positive
 
 The same-surface search should not stop at the five targets selected before
-the complete degree-three census.  `NS0031-S001` is another semistable
+the complete degree-three census. The artifact-qualified `NS0031-S001` in
+the same all-NS/all-A inventory is another semistable
 `A1+2A7/MW2` source, with exact complete-basis pole profile `[0,1]`, attached
 to thirteen rootless MW17 frames, fifteen MW16 frames, and one MW15 frame.  Its source height
 Gram is `[[2,1],[1,41/8]]`.  Although its normalized fibre orders coincide
@@ -167,10 +177,28 @@ integer coordinates on which all 59 residuals vanish modulo
 `7^8 = 5,764,801`.  The byte-checked tangent and finite-lift certificate has
 SHA-256
 `0187b44d46d41572961261be344a1bafd3ee204f98754d173f15438699863f55`.
-This finite-precision lift is not a proof of an infinite compatible `Z_7`
-point.  Extending the lift and certifying localized equation dependence—or
-otherwise proving formal smoothness of the overdetermined ideal—remains the
-next arithmetic gate.
+The formal gate is now also closed. The exact identity
+
+```text
+8 A^3 F = D C^4 (H-B C^2) - 9 B H^2 C^2 + H^3
+```
+
+together with the fibre/component orders forces all eight residual rows
+omitted from the unit minor. The retained 51 equations therefore define the
+full localized marked germ, and the unit minor proves that this germ is a
+one-parameter formally smooth `ZZ_7` branch. The formal-smoothness artifact
+has SHA-256
+`8f6ab911eee02c65427dc8202d99c2300da1ec9eca9cdf35902fde52fd9c943b`.
+This remains a formal local theorem, not an algebraization or a rational
+characteristic-zero point; those are now the next arithmetic gate. See
+[`NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md`](NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md).
+
+A subsequent exact bounded scan fixed the formal coordinate `m9` at all 247
+reduced rational values with numerator and denominator at most 40 in the
+certified residue disk, lifted each specialization through `7^40`, and found
+no simultaneous rational reconstruction of all 52 coordinates. This is a
+bounded negative result only; it does not exclude rational points on the
+marked curve.
 
 The thirteen rootless NS0031 frames were then prescreened together.  Their
 exact rational-bisection counts occupy the narrow interval 41,885--41,959,
@@ -880,6 +908,15 @@ The NS0031 marking gate is reproduced and byte-checked by
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_lattice_foundry_ns0031_marked_gf7_hensel.sage \
   --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_lattice_foundry_ns0031_marked_formal_smoothness.sage \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/scan_lattice_foundry_ns0031_rational_parameters.sage \
+  --numerator-bound 40 --denominator-bound 40 \
+  --lift-precision 40 --workers 8 --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/complete_lattice_foundry_degree3_spectrum.py \

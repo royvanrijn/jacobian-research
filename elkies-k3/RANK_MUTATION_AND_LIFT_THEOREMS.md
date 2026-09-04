@@ -3278,8 +3278,11 @@ This proves core generation for one bounded control and, importantly, a new
 core isometry class leading to the known target.  It does not prove that the
 beam closes the genus, that it will find every compatible class, or that its
 expected running time improves on complete genus enumeration.  Extending the
-test prospectively to the H3, NS0024, and Q80 forced genera is the next
-computational question.
+test prospectively to the H3, geometric NS0024, and Q80 forced genera remains
+a lattice-algorithm question. It is not an arithmetic NS0024 source route:
+the full rational NS0024 marking over `QQ` is now excluded.
+
+<!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 
 ### Corollary H0h: prospective masked-core controls
 

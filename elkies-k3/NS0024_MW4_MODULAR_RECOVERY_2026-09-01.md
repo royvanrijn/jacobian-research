@@ -1,10 +1,13 @@
 # NS0024 MW4 modular recovery frontier — 2026-09-01
 
-> **Source decision (2026-09-04).**  This semistable reconstruction is now the
-> active NS0024 arithmetic-source route.  The direct degree-475 Inose
-> specialization over `QQ` is impossible by the Mazur--Kenku cyclic-isogeny
-> classification; see
-> [`NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md`](NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md).
+<!-- status-consumer: EC-K3-NS0024-DIRECT-QQ-INOSE-OBSTRUCTION e87afc1b3529a07f -->
+<!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
+
+> **Source decision (2026-09-04).** This semistable reconstruction is parked
+> as geometric NS0024 work. A full rational NS0024 marking over `QQ` is
+> impossible by the Fricke-quotient obstruction; see
+> [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+> It cannot close the arithmetic MW17 milestone over `QQ(t)`.
 > The resolved exporter now also supports `--split-section-opens`.  Giving
 > each chart condition its own inverse lowers the representative explicit-
 > center, one-hyperplane input from about 86 KB to about 59 KB and removes the
@@ -39,10 +42,10 @@ search is cheaper:
 The exact compact ledger is
 `artifacts/generated-results/elkies-k3-lattice-foundry-ns0024-modp-census.json`.
 
-## Arithmetic realizability is an independent open gate
+## Arithmetic realizability obstruction
 
-The foundry currently proves a geometric K3/Neron--Severi realization and a
-geometric MW4-to-MW17 route.  It does **not** prove
+The foundry proves a geometric K3/Neron--Severi realization and a geometric
+MW4-to-MW17 route. It does **not** prove
 
 ```text
 NS(X)=NS_Q(X),
@@ -50,7 +53,11 @@ rank MW(Q(t))=4 at the source,
 or rank MW(Q(t))=17 at the rootless target.
 ```
 
-This distinction is essential for the rational-record application.  A
+The later rational-marking obstruction proves that the first equality cannot
+hold for geometric `NS0024` over `QQ`; hence full source rank four and full
+rootless arithmetic rank seventeen cannot both descend as the required
+rank-19 marking. This distinction remains essential for number-field and
+geometric applications. A
 geometric Mordell--Weil basis may carry a nontrivial Galois action and need
 not contribute its full rank over `QQ(t)`.
 
@@ -73,9 +80,9 @@ realization.  Repeated full fixed rank across good primes is positive evidence
 only; neither pattern proves `NS=NS_Q` without a common characteristic-zero
 producer and a descent argument.
 
-The same gate is ultimately required at the rootless endpoint with fixed rank
-seventeen.  Until both source and target arithmetic gates close, NS0024 is not
-classified as a high-rank family over `QQ(t)`.
+The same gate would have been required at the rootless endpoint with fixed
+rank seventeen. It is now closed negatively for `NS0024`, rather than merely
+unverified.
 
 ## Improved exact basis
 
@@ -162,10 +169,10 @@ row drops from about 295 KB to under 2 KB.  These are implementation-size
 measurements, not mathematical evidence for a point.
 
 The optional `--split-section-opens` encoding separates the three Q1, three
-Q2, three Q3, and six Q4 nonvanishing conditions.  On the same explicit-center
-one-hyperplane system it uses 65 variables and 75 equations but only about
-59 KB of input, versus 55 variables, 65 equations and about 86 KB for the
-grouped formulation with a fixed RUR anchor.  The extra variables are linear
+Q2, three Q3, and six Q4 nonvanishing conditions.  With the same explicit
+centers, one hyperplane, and fixed RUR anchor it uses 66 variables and 76
+equations but only about 59 KB of input, versus 55 variables, 65 equations and
+about 86 KB for the grouped formulation.  The extra variables are linear
 inverse witnesses; the benefit is that no section-chart saturation row is a
 large product.  Bounded `msolve` probes in characteristics 11, 101, and 65521
 did not close within 55 seconds, with peak memory between 1.3 and 3.2 GB.

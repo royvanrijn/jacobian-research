@@ -1,5 +1,7 @@
 # Determinant-aware re-ranking of the rank-seven foundry
 
+<!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
+
 ## Result
 
 The rank-seven surface catalogue now has a fail-closed pre-solver ranking:
@@ -161,10 +163,11 @@ marking-level physical corridor, but its rational field of definition is
 open.  Consequently the re-ranking identifies the arithmetic source as its
 next gate rather than launching another raw multisection census.
 
-The determinant-1184 NS0031 surface has analogous finite `Z_7` precursor and
-marking-level corridor evidence, but it lies above the observed determinant
-band.  It remains a strong equation candidate, now typed separately from the
-determinant-sweet-spot queue.
+The determinant-1184 NS0031 surface now has a one-parameter formally smooth
+`Z_7` marked branch and marking-level corridor evidence, but it lies above
+the observed determinant band.  It remains a strong equation candidate, now
+typed separately from the determinant-sweet-spot queue; rational
+characteristic-zero algebraization is still open.
 
 ## Rank-jump coordinate
 

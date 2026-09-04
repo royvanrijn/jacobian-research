@@ -248,13 +248,128 @@ Durable lesson: calibrate heuristics on exact controls, make descent gates
 fail closed, and quotient bisections by section translation before spending
 equation-level work on extension collisions.
 
+## 2026-09-01: rootless completeness, public lineages, and source foundry
+
+- Niemeier-first enumeration proved that the determinant-948 Neron--Severi
+  lattice has exactly two rootless J2 frame classes.  This turned the alternate
+  class from an observed candidate into a complete finite geometric target.
+- Exact coefficient and first-jet fingerprints isolated the five-member wgxli
+  public-curve lineage.  Signed-permutation and one-shear rebasing failures were
+  retained as bounded model rejections rather than a nonexistence theorem.
+- The q12/orbit5867 point factory received a complete two-primary boundary
+  closeout, while small-prime cyclic-isogeny exclusions removed several simple
+  explanations for exceptional published-R17 fibres.
+- Equation-first lattice foundry work produced primitive determinant-720 and
+  determinant-1184 candidate lattices, marked source data, and physical
+  corridors.  At this stage these were geometric and finite-field objects, not
+  arithmetic K3 sources over `QQ`.
+
+Correction retained: a complete geometric frame classification, a public-fibre
+fingerprint, a bounded coordinate rejection, and a rational source equation are
+four different evidence types.
+
+## 2026-09-02: rational-source controls and predictor auditing
+
+- Rational quadratic base changes supplied exact Picard-rank-19 E6 and E6+A1
+  controls, complete first neighbor shells, explicit orbit-103 and orbit-96
+  equations, and examples where geometric Mordell--Weil directions split under
+  Galois.
+- Target-fitted genus-one pencils explained all eleven exceptional directions
+  at the published rank-28 fibre, while declared height-bounded simultaneous
+  and mixed-trace splitting searches found no further split.  Degree-three and
+  sampled degree-four visibility experiments remained partial.
+- The determinant-720 Golay source and determinant-1184 NS0031 source acquired
+  exact physical same-NS corridors to MW17 frames.  Their source-equation and
+  arithmetic-marking gates remained separate.
+- Early experiments and stale command surfaces were archived with manifests;
+  exact negative results and regression inputs were preserved.
+
+Durable lesson: target-fitted visibility is explanatory, not predictive.  A
+geometric route to MW17 cannot be promoted to arithmetic MW17 until the source
+and all required divisor classes are defined over the base field.
+
+## 2026-09-03: integral rank transfer and the direct alternate-Q80 equation
+
+- Integral involution eigensublattices, discriminant glue, theta convolution,
+  bridge mutation, reverse masks, and root-system witnesses were consolidated
+  into an exact rank-transfer and inverse-ADE layer.  Several cheap linear masks
+  were shown to be nonselective and demoted from elimination gates to ranking
+  data.
+- The arithmetic Shioda--Tate theorem made the rational-source condition
+  explicit: geometric rank transfer alone does not preserve arithmetic rank.
+- A universal marked degree-two chord compiler and bounded relative-`U`
+  completeness theorem connected target-free lattice planning to exact
+  equation compilation without identifying planner reachability with arithmetic
+  realization.
+- Minimum-incidence search on the compact published R17 equation found the
+  norm12/orbit11952 divisor.  Its direct degree-two hop produced a polynomial
+  `24 I1` alternate-Q80 equation over `QQ`, seventeen saturated rational
+  sections, and arithmetic generic rank 17.  The historical degree-11511 Q80
+  transport and million-bit third-q12 reconstruction became provenance rather
+  than operational routes.
+- Exact preimage polynomials proved that the four published rank-25--28 controls
+  are not rational fibres of alternate Q80, forcing native calibration.
+- The alternate arithmetic laboratory certified 121 inherited covers, 7,260
+  products, a cost-ranked 1,024-cover native prefix, 64 rational genus-one V4
+  bases, and seventeen rank-one base Jacobians.  Complete smooth-bisection
+  character maps on alternate Q80 and hidden `103b2` were injective; the native
+  prefix remained explicitly bounded.
+
+Correction retained: a completeness theorem for one component of a mixed
+pipeline does not transfer to a ranked prefix, and an exact preimage miss on
+one chart does not exclude a high-rank fibre on another chart.
+
+## 2026-09-04: noncyclic closure, complete public atlas, and different-NS pivot
+
+- The direct noncyclic chain `published R17 -> 4A1/MW13 -> published R17`
+  became equation-explicit with thirteen saturated rational sections, maximal
+  `Z/4+Z/8` bridge data, and target-free reverse selection.  This closed the
+  determinant-948 construction control without creating a new surface.
+- All 43 norm-twelve shared-zero equations and all 474 curves in the pinned
+  ICARM snapshot were compared exactly.  The six rational `PGL2` j-classes give
+  69 hits and 2,775 misses; all 376 native chart/fibre comparisons are
+  untwisted.  Curve 12 supplies the first native alternate-Q80
+  rank-at-least-29 control and has displayed quotient `Z^12` over the generic
+  rank-17 subgroup.
+- Complete singular arithmetic-genus-one searches on alternate Q80 and hidden
+  `103b2` found no nonsplit rational quadratic normalization.  Multi-prime and
+  CRT genus-two searches also missed, but remain bounded; global genus-two
+  injectivity is still unknown.
+- Exact involution cohomology and minimum-norm enumeration reduced a possible
+  height-eight zero Tate class to norm-eight and norm-twelve trace carriers.
+  Complete inversion and 833 residual trace/target tests reject those carriers.
+  This excludes the zero class only; existence, nonzero quotient classes, and
+  product-twist ranks remain open.
+- The determinant-950 NS0024 arithmetic route was closed negatively.  A full
+  rational NS0024 marking would force a rational non-CM point on the relevant
+  degree-475 Fricke quotient, contradicting the modular-curve obstruction and
+  the geometric MW-rank-one frame.  Geometric NS0024 work and larger fields are
+  not excluded.
+- Determinant-1184 NS0031 became the preferred different-NS replacement.  Its
+  model-157 marked point has an exact one-parameter formally smooth `ZZ_7`
+  branch and a five-edge physical corridor; algebraization, a rational
+  characteristic-zero point, the full rational rank-19 marking, and an endpoint
+  equation remain open.
+
+Durable lesson: exclusion of one quotient class is not a rank theorem, formal
+smoothness is not algebraization, and a geometric Neron--Severi lattice must
+pass a separate Galois/rational-marking gate before arithmetic equation work.
+
 ## Current handoff
 
 The repository-wide continuation queue is
-[`STATUS.md`](STATUS.md#active-open-problems). The principal arithmetic gate is
-a completed residual 2-Selmer quotient in the compact Elkies chart, followed
-only on a passing fibre by cover or point search toward rank 32. Parallel exact
-questions are an unconditional upper bound for curve 302, residual descent for
-curve 273 and the four low-conductor rank-19/20 near misses. The complete
-rootless-bisection survivor mechanism is now closed for rank-two collisions;
-the alternate rootless frame remains equation-open.
+[`STATUS.md`](STATUS.md#active-open-problems). The principal K3 foundry gate is
+algebraization of the NS0031 model-157 formal branch to an explicit
+characteristic-zero source over `QQ` with a full rational rank-19 marking,
+followed by target-free marked-`U` selection and exact endpoint compilation.
+The determinant-948 route is a complete control, and NS0024 arithmetic MW17 is
+closed over `QQ`.
+
+The principal rank-32 gate remains a completed residual 2-Selmer quotient on
+the same minimal curve, followed only on a passing fibre by cover or point
+search.  Parallel exact questions are an unconditional upper bound for curve
+302, residual descent for curve 273 and the low-conductor near misses, nonzero
+alternate-Q80 product quotient classes, and the unresolved rational visibility
+directions.  Smooth and singular-genus-one character collisions are closed on
+the two direct norm-twelve charts; genus two remains open beyond the recorded
+bounded screen.

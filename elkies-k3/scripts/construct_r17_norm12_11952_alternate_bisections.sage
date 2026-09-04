@@ -34,6 +34,10 @@ HIDDEN_DIRECT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit10
 HIDDEN_PRIORITY = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisection-priority-v1.tsv"
 HIDDEN_PRIORITY_CERTIFICATE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisection-priority-v1.json"
 HIDDEN_DEFAULT_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisections-v1.json"
+DIRECT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json"
+PRIORITY_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.tsv"
+PRIORITY_CERTIFICATE_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.json"
+DEFAULT_OUTPUT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisections-v1.json"
 CONTENT_TRIAL_PRIMES = tuple(prime_range(2, 1001))
 
 
@@ -199,7 +203,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--source-label",
-        choices=("norm12-orbit-11952", "norm12-orbit-103b2"),
+        choices=(
+            "norm12-orbit-11952",
+            "norm12-orbit-103b2",
+            "norm12-orbit-08f72",
+        ),
         default="norm12-orbit-11952",
     )
     parser.add_argument("--priority-table", type=Path)
@@ -212,16 +220,29 @@ def main() -> None:
     )
     parser.add_argument("--check", action="store_true")
     arguments = parser.parse_args()
-    is_alternate_target = arguments.source_label == "norm12-orbit-11952"
-    direct_path = DIRECT if is_alternate_target else HIDDEN_DIRECT
-    priority_certificate_path = (
-        PRIORITY_CERTIFICATE if is_alternate_target else HIDDEN_PRIORITY_CERTIFICATE
-    )
-    default_priority = PRIORITY if is_alternate_target else HIDDEN_PRIORITY
+    is_alternate_target = arguments.source_label != "norm12-orbit-103b2"
+    is_primary_alternate = arguments.source_label == "norm12-orbit-11952"
+    direct_path = {
+        "norm12-orbit-11952": DIRECT,
+        "norm12-orbit-103b2": HIDDEN_DIRECT,
+        "norm12-orbit-08f72": DIRECT_08F72,
+    }[arguments.source_label]
+    priority_certificate_path = {
+        "norm12-orbit-11952": PRIORITY_CERTIFICATE,
+        "norm12-orbit-103b2": HIDDEN_PRIORITY_CERTIFICATE,
+        "norm12-orbit-08f72": PRIORITY_CERTIFICATE_08F72,
+    }[arguments.source_label]
+    default_priority = {
+        "norm12-orbit-11952": PRIORITY,
+        "norm12-orbit-103b2": HIDDEN_PRIORITY,
+        "norm12-orbit-08f72": PRIORITY_08F72,
+    }[arguments.source_label]
     priority_table = arguments.priority_table or default_priority
-    output = arguments.output or (
-        DEFAULT_OUTPUT if is_alternate_target else HIDDEN_DEFAULT_OUTPUT
-    )
+    output = arguments.output or {
+        "norm12-orbit-11952": DEFAULT_OUTPUT,
+        "norm12-orbit-103b2": HIDDEN_DEFAULT_OUTPUT,
+        "norm12-orbit-08f72": DEFAULT_OUTPUT_08F72,
+    }[arguments.source_label]
     expected_count = 39147 if is_alternate_target else 39120
     if arguments.start < 0 or arguments.limit is not None and arguments.limit <= 0:
         parser.error("--start must be nonnegative and --limit must be positive")
@@ -327,7 +348,10 @@ def main() -> None:
         orbit = int(row["orbit_mask"], 0)
         label = (
             f"alternate-orbit-{orbit:05x}"
-            if is_alternate_target else f"hidden-103b2-orbit-{orbit:05x}"
+            if is_primary_alternate
+            else f"alternate-08f72-orbit-{orbit:05x}"
+            if is_alternate_target
+            else f"hidden-103b2-orbit-{orbit:05x}"
         )
         record = {
                 "label": label,
@@ -403,6 +427,8 @@ def main() -> None:
         "schema": "elkies-k3.bisection-extension-input.v1",
         "artifact_schema": (
             "elkies-k3.r17-norm12-11952-alternate-bisections.v1"
+            if is_primary_alternate
+            else "elkies-k3.r17-norm12-08f72-alternate-bisections.v1"
             if is_alternate_target
             else "elkies-k3.r17-norm12-103b2-hidden-bisections.v1"
         ),
@@ -433,7 +459,11 @@ def main() -> None:
         },
         "reproducing_command": (
             "sage -python elkies-k3/scripts/construct_r17_norm12_11952_alternate_bisections.sage "
-            + ("" if is_alternate_target else "--source-label norm12-orbit-103b2 ")
+            + (
+                ""
+                if is_primary_alternate
+                else f"--source-label {arguments.source_label} "
+            )
             + f"--start {arguments.start} --limit {len(records)} --output {relative(output)}"
             + (" --verbose-records" if arguments.verbose_records else "")
         ),

@@ -20,8 +20,11 @@ ENUMERATOR = ROOT / "elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage"
 ORBIT_CERTIFICATE = ROOT / "artifacts/generated-results/elkies-k3-q80-alternate-rootless-bisection-orbits.json"
 HISTORICAL_FRAME = ROOT / "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json"
 DIRECT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json"
+DIRECT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json"
 OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-priority-v1.json"
 TABLE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-priority-v1.tsv"
+OUTPUT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.json"
+TABLE_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.tsv"
 
 
 def digest(path: Path) -> str:
@@ -63,14 +66,23 @@ def score(coefficients) -> tuple:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=OUTPUT)
-    parser.add_argument("--table-output", type=Path, default=TABLE)
+    parser.add_argument(
+        "--source-label",
+        choices=("norm12-orbit-11952", "norm12-orbit-08f72"),
+        default="norm12-orbit-11952",
+    )
+    parser.add_argument("--output", type=Path)
+    parser.add_argument("--table-output", type=Path)
     parser.add_argument("--check", action="store_true")
     arguments = parser.parse_args()
+    is_primary = arguments.source_label == "norm12-orbit-11952"
+    direct_path = DIRECT if is_primary else DIRECT_08F72
+    output = arguments.output or (OUTPUT if is_primary else OUTPUT_08F72)
+    table_output = arguments.table_output or (TABLE if is_primary else TABLE_08F72)
 
     orbit_certificate = json.loads(ORBIT_CERTIFICATE.read_text())
     historical = json.loads(HISTORICAL_FRAME.read_text())
-    direct = json.loads(DIRECT.read_text())
+    direct = json.loads(direct_path.read_text())
     if orbit_certificate["status"] != "PASS_ALTERNATE_ROOTLESS_LATTICE_BISECTION_ORBITS":
         raise ArithmeticError("alternate bisection lattice certificate is not complete")
     if direct["sections"]["status"] != "PASS_EXACT_SATURATED_RANK17_BASIS":
@@ -183,7 +195,11 @@ def main() -> None:
     table_text = "\n".join(lines) + "\n"
 
     payload = {
-        "schema": "elkies-k3.r17-norm12-11952-alternate-bisection-priority.v1",
+        "schema": (
+            "elkies-k3.r17-norm12-11952-alternate-bisection-priority.v1"
+            if is_primary
+            else "elkies-k3.r17-norm12-08f72-alternate-bisection-priority.v1"
+        ),
         "status": "PASS_EXACT_COMPLETE_ALTERNATE_BISECTION_EQUATION_PRIORITY",
         "class_count": len(rows),
         "minimum_norm": 10,
@@ -203,11 +219,11 @@ def main() -> None:
         "coordinate_chain": (
             "short -> historical alternate -> direct compiled frame -> saturated equation section basis"
         ),
-        "priority_table": relative(arguments.table_output),
+        "priority_table": relative(table_output),
         "priority_table_sha256": hashlib.sha256(table_text.encode()).hexdigest(),
         "inputs": {
             relative(path): digest(path)
-            for path in (ENUMERATOR, ORBIT_CERTIFICATE, HISTORICAL_FRAME, DIRECT)
+            for path in (ENUMERATOR, ORBIT_CERTIFICATE, HISTORICAL_FRAME, direct_path)
         },
         "software_assumptions": {
             "sage_version": SAGE_VERSION,
@@ -216,6 +232,7 @@ def main() -> None:
         "reproducing_command": (
             "sage -python elkies-k3/scripts/"
             "rank_r17_norm12_11952_alternate_bisection_orbits.sage"
+            + ("" if is_primary else " --source-label norm12-orbit-08f72")
         ),
         "proof_boundary": (
             "This is a complete exact equation-cost ranking of all 39147 alternate "
@@ -225,19 +242,19 @@ def main() -> None:
     }
     serialized = json.dumps(payload, indent=2, sort_keys=True) + "\n"
     if arguments.check:
-        if not arguments.table_output.exists() or arguments.table_output.read_text() != table_text:
+        if not table_output.exists() or table_output.read_text() != table_text:
             raise ArithmeticError("stored alternate priority table differs from replay")
-        if not arguments.output.exists() or arguments.output.read_text() != serialized:
+        if not output.exists() or output.read_text() != serialized:
             raise ArithmeticError("stored alternate priority artifact differs from replay")
     else:
-        arguments.table_output.parent.mkdir(parents=True, exist_ok=True)
-        arguments.table_output.write_text(table_text)
-        arguments.output.write_text(serialized)
+        table_output.parent.mkdir(parents=True, exist_ok=True)
+        table_output.write_text(table_text)
+        output.write_text(serialized)
     print(
         "ALTBISECTPRIORITY|classes=39147|min_cost={}|max_cost={}|output={}".format(
             rows[0]["group_addition_upper_bound"],
             rows[-1]["group_addition_upper_bound"],
-            relative(arguments.output),
+            relative(output),
         ),
         flush=True,
     )

@@ -1433,8 +1433,10 @@ The current proof boundary and replay commands are in
   class; the MW4 route lands on catalogue frame `NS0024-F005`.
 - `probe_lattice_foundry_ns0024_source_ansatz_modp.sage` imposes the
   `I7+I5+I4+8I1` branch jets of the MW4 source over a finite field. Exact
-  examples at 11, 13, and 17 prove fibre-stratum feasibility only; the four
-  MW sections and `NS0024` marking remain open gates.
+  examples at 11, 13, and 17 prove fibre-stratum feasibility only. The four
+  MW sections remain unconstructed in this ansatz; a full rational `NS0024`
+  marking over `QQ` is now excluded, so this is a geometric or larger-field
+  route only.
 - `prepare_lattice_foundry_ns0024_edge1_compiler.sage` certifies the abstract
   q4/orbit1 handoff: horizontal `P3`, divisor
   `O+P3+2F-C2-2C3-C4`, four-dimensional chord ambient, and expected resolved
@@ -1449,8 +1451,40 @@ The current proof boundary and replay commands are in
   identity-component open charts, generic surface hyperplanes, and MW3-only
   diagnostic mode are explicit.  `--explicit-formal-centers` retains the nine
   `I5/I4` center jets with sparse exact recurrences and avoids recursive
-  inverse-power expansion; bounded msolve F4 batches are the reproducible
-  low-memory route for the resulting joint system.
+  inverse-power expansion.  `--split-section-opens` gives all fifteen section
+  chart conditions separate inverse witnesses; this raises the representative
+  system to 65 variables and 75 equations but cuts its export to about 59 KB
+  and keeps the saturation equations low-degree.  Bounded msolve F4 batches
+  remain the reproducible route for the resulting joint system.
+- `certify_ns0024_direct_qq_inose_obstruction.py` applies the complete
+  Mazur--Kenku rational cyclic-isogeny degree list to the certified height-950
+  `2E8/MW1` source. It rules out the direct `E1,E2,phi` construction over
+  `QQ`.
+<!-- status-consumer: EC-K3-NS0024-DIRECT-QQ-INOSE-OBSTRUCTION e87afc1b3529a07f -->
+<!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
+<!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
+<!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
+<!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
+- `certify_ns0024_qq_marking_obstruction.py` pins the stronger
+  Fricke-quotient argument. Momose's composite-level theorem at
+  `N=475,p=19`, together with the rank-one Inose gate, excludes the full
+  rational NS0024 marking required by an arithmetic MW17 endpoint. It does
+  not exclude geometric NS0024 or models over larger number fields.
+- `certify_lattice_foundry_ns0031_marked_gf7_hensel.sage`,
+  `certify_lattice_foundry_ns0031_marked_formal_smoothness.sage`, and
+  `certify_ns0031_f017_physical_corridor.sage` are exact controls for the
+  replacement NS0031 objective. They certify respectively the marked
+  model-157 point and lift through `7^8`, exact dependence of the eight
+  omitted residual equations and a one-parameter formally smooth `ZZ_7`
+  marked branch, and five physical degree-two marking-level edges to rootless
+  `F017`. They do not supply a rational characteristic-zero source, and
+  `F017` cannot be passed to the target-free planner as an input.
+- `scan_lattice_foundry_ns0031_rational_parameters.sage` fixes the formal
+  coordinate `m9` at all 247 reduced rational values with numerator and
+  denominator at most 40 in the model-157 residue disk, lifts through `7^40`,
+  and attempts exact simultaneous rational reconstruction. The current
+  certificate has 247 `NO_FULL_RR` rows and no rational point. This is a
+  bounded miss, not a rational-point obstruction.
 - `extract_lattice_foundry_ns0024_joint_gb_point.sage` decodes a
   zero-dimensional joint basis over an arbitrary irreducible residue-field
   modulus, scans the Frobenius-field points, and emits only after replaying all
@@ -3446,6 +3480,28 @@ of the six classes.  Curve 12 supplies the first native alternate-Q80
 rank-at-least-29 fibre and an exact displayed `Z^12` exceptional quotient.
 See
 [`../R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](../R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
+
+`snapshot_r17_norm12_icarm_public_fibres.py`,
+`audit_r17_norm12_icarm_local_fingerprints.py`,
+`certify_r17_norm12_curve12_norm8_incidence.sage`,
+`certify_r17_norm12_native_icarm_quotient_audit.sage`, and
+`build_r17_norm12_icarm_calibration_dataset.py` form the native calibration
+pipeline.  It gives exact quotient and complete fixed-cover visibility data
+for curves 12, 395, 363, 364, 378, 393, and 404; exact fitted norm-eight
+signatures for curve 12's twelve quotient directions; and local feature rows
+for all 69 recognized fibres.  The final dataset keeps 57 unavailable quotient
+labels as `UNKNOWN`.
+
+```bash
+.venv/bin/python elkies-k3/scripts/snapshot_r17_norm12_icarm_public_fibres.py --check
+.venv/bin/python elkies-k3/scripts/audit_r17_norm12_icarm_local_fingerprints.py --check
+sage -python elkies-k3/scripts/certify_r17_norm12_curve12_norm8_incidence.sage --check
+PYTHONPATH=elliptic-curves/cas sage -python elkies-k3/scripts/certify_r17_norm12_native_icarm_quotient_audit.sage --check
+.venv/bin/python elkies-k3/scripts/build_r17_norm12_icarm_calibration_dataset.py --check
+```
+
+See
+[`../R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md`](../R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md).
 
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
 

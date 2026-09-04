@@ -1,0 +1,1359 @@
+{
+  "displayed_model_prime_scan": {
+    "common_good_primes": [
+      131,
+      137
+    ],
+    "first_common_good_prime": 131,
+    "qualification": "This scans the displayed rational Weierstrass model. A separate integral re-minimization could be needed before interpreting a coefficient-denominator failure as intrinsic bad reduction.",
+    "range": "odd primes 5 through 137",
+    "rows": [
+      {
+        "all_17_good": false,
+        "first_failure": "degree_drop",
+        "prime": 5
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "degree_drop",
+        "prime": 7
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "degree_drop",
+        "prime": 11
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "degree_drop",
+        "prime": 13
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "degree_drop",
+        "prime": 17
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "degree_drop",
+        "prime": 19
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 23
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 29
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 31
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 37
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 41
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 43
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "coefficient_denominator_bad",
+        "prime": 47
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 53
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 59
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 61
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "degree_drop",
+        "prime": 67
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 71
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 73
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 79
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 83
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 89
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 97
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 101
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 103
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 107
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 109
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 113
+      },
+      {
+        "all_17_good": false,
+        "first_failure": "discriminant_not_squarefree",
+        "prime": 127
+      },
+      {
+        "all_17_good": true,
+        "first_failure": null,
+        "prime": 131
+      },
+      {
+        "all_17_good": true,
+        "first_failure": null,
+        "prime": 137
+      }
+    ]
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-base-rank-screen-v1.json": "ed41526fca5724f529aaf73d3f695fe2a781eaf4ea6b6fb792a2af5676759f69",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json": "4739e0b24b00e276269b228d7c85a01743caa1dcbc62ef58ea59ca3152d116a0",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "elkies-k3/scripts/audit_r17_norm12_11952_product_twist_finite_field_bounds.sage": "7c41d6aca5cdb25e10f8317df76db6f93a10324846accddad7cf0371558584bd"
+  },
+  "method": {
+    "fp2_counts": "exact vectorized norm-character sums",
+    "fp_counts": "exact vectorized quadratic-character sums",
+    "frobenius_power_sum": "Tr(Frob^n on H1(P1bar,j_*R1))=-sum_(u in P1(F_(p^n))) a_(p^n)(E^d_u)",
+    "local_trace_identity": "a_(p^n)(E^d_u)=chi_(p^n)(d(u))*a_(p^n)(E_u); the I0* branch fibres have local trace zero",
+    "numpy_version": "2.5.2"
+  },
+  "proof_boundary": "The good-reduction geometry, conductor/L-degree calculation, and the first two Frobenius power sums at p=131 and p=137 are exact for all seventeen selected product twists. No complete L-polynomial, finite-field Mordell--Weil upper bound, or characteristic-zero nonexistence theorem is obtained. Every target remains UNKNOWN.",
+  "rank_bound_gate": {
+    "characteristic_zero_specialization": "A rank-zero good reduction over F_p(u) would exclude every non-torsion characteristic-zero product-twist section.",
+    "completed_power_sums_per_reduction": 2,
+    "existing_k3_shortcut_inapplicable": "The p,p^2 endpoint argument had only a three-dimensional transcendental remainder after 19 known K3 classes. Here the chi=4 twist has a degree-28 nonconstant L-polynomial.",
+    "function_field_descent_boundary": "The 2-torsion cubic defines a genus-ten cover; SageMath and PARI in this repository do not provide the required general function-field 2-Selmer computation.",
+    "functional_equation_workload": "With the functional-equation sign and exact reconstruction bounds, power sums through n=14 determine a degree-28 polynomial.",
+    "missing_power_sums_per_reduction": 12,
+    "sufficient_frobenius_test": "Compute the complete degree-28 elliptic L-polynomial and verify that 1-p*T is not a factor."
+  },
+  "reduction_summaries": [
+    {
+      "fp2_local_character_sums_sha256": "ffc4915bae1cfc49ffae654adc510c2e62de8358316270c8570b010dd1d2c269",
+      "fp2_nonsquare": 2,
+      "fp_local_character_sums_sha256": "2e32c22a8d993f0a7ca91872010ee1f671732424a9a6b44f6fd4573bbb8b36f5",
+      "original_discriminant_factor_degrees": [
+        2,
+        3,
+        19
+      ],
+      "original_nodal_fibre_count_geometric": 24,
+      "prime": 131
+    },
+    {
+      "fp2_local_character_sums_sha256": "9ba8a1808c34a4d95ef6344f02d3dee776ab85a3b268a7a52a01d27ea2332cb9",
+      "fp2_nonsquare": 3,
+      "fp_local_character_sums_sha256": "49cb41cf56dbb1c179408e6df7fa5e8e64721a183f2caaeb726bb3d3ee517cf5",
+      "original_discriminant_factor_degrees": [
+        3,
+        4,
+        6,
+        11
+      ],
+      "original_nodal_fibre_count_geometric": 24,
+      "prime": 137
+    }
+  ],
+  "reproducing_command": "elkies-k3/scripts/audit_r17_norm12_11952_product_twist_finite_field_bounds.sage",
+  "schema": "elkies-k3.r17-norm12-11952-product-twist-finite-field-bound-audit.v1",
+  "source_label": "norm12-orbit-11952",
+  "status": "UNKNOWN_NO_FINITE_FIELD_MORDELL_WEIL_UPPER_BOUND",
+  "surface_geometry": {
+    "arithmetic_genus_chi": 4,
+    "degree_d": 4,
+    "geometric_fibre_configuration": "4I0*+24I1",
+    "geometric_mordell_weil_hodge_upper_bound": 22,
+    "h11": 40,
+    "nonconstant_elliptic_L_polynomial_degree": 28,
+    "tame_conductor_degree": 32,
+    "trivial_lattice_rank": 18,
+    "twist_equation": "Y^2=X^3+d^2*A*X+d^3*B"
+  },
+  "target_selection": {
+    "criterion": "exact V4 base-Jacobian rank interval [1,1]",
+    "shortlist_ranks": [
+      2,
+      4,
+      5,
+      7,
+      9,
+      21,
+      26,
+      29,
+      32,
+      35,
+      46,
+      50,
+      51,
+      55,
+      60,
+      61,
+      64
+    ],
+    "target_count": 17
+  },
+  "targets": [
+    {
+      "labels": [
+        "alternate-orbit-1463f",
+        "alternate-orbit-19bad"
+      ],
+      "pair_key": "alternate-orbit-1463f:alternate-orbit-19bad",
+      "product_quartic_coefficients_low_to_high": [
+        "476717981879288043700544788433341087694459127612771380223811693746589405332158092282744389106251903280041330439482509417820907040471304313284",
+        "835697381882446711223624101477812204012296347652904692385258668103954213361638791856514567334630718181159890610819861258815934891577948920716",
+        "552909993196304068194766546834814724772892685329740056433724198198566901909399858532085848279040360413743974075916498404358633061123887362401",
+        "163506344701313581580974852986828827456051058066294272812410431752992177957761840330511713407722294783631063115933820753360083006333112209460",
+        "18209638569889432270292440886065202252389961727614322711655473571742409903083492170002994136942401341123042741292612381459237423212373476100"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            143,
+            1182
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -143,
+            18085
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -20,
+            1613
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            20,
+            -2826
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            2,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 2
+    },
+    {
+      "labels": [
+        "alternate-orbit-19bad",
+        "alternate-orbit-083ad"
+      ],
+      "pair_key": "alternate-orbit-19bad:alternate-orbit-083ad",
+      "product_quartic_coefficients_low_to_high": [
+        "332048010663965625466445200472438818702343593062257426365541882057322392155408783855606336333408965640429149739939832410905722825210932735209",
+        "350523920535816055687705173693776564565812869789652633515798478427761124369152072620520101703536409103592248483427433344655339655973265525772",
+        "113117295557831907146473178491208429464742292632624823142041320027718276060897703502347807099984916128124352724044683400566695566339648510804",
+        "7274064950438987900038205784045016738602564030260158678822471971904145609744247412857083611604381952499839584268095964862202359587112815840",
+        "-926585240707934155638462841330741413645724112127881346003577091866791355974582599779105523386159811171184730201512338779715975649762353600"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            4,
+            591
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -4,
+            -1166
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            32,
+            7355
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -32,
+            -13686
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 4
+    },
+    {
+      "labels": [
+        "alternate-orbit-11ae6",
+        "alternate-orbit-0f82c"
+      ],
+      "pair_key": "alternate-orbit-11ae6:alternate-orbit-0f82c",
+      "product_quartic_coefficients_low_to_high": [
+        "16758350131349738496224983505533346216979380913696990949586456259218457636687720906630261647326204039635987437424774804403116809409",
+        "26007638411611098186021989781876983636169423646901459123059627008082918836842457448002878043123050547880566590813092626362099818032",
+        "15083726722674369844314610287187864663996838087458621365988043105813843975788398708644606852482049978775344822497469558131902419608",
+        "3874524423809724392993501396541601319258651286624023853617485898936053861745110849859538930260196941115698370848483928594890473536",
+        "371897214441348895172669534475306598715931713795592889544835245845088884601332743915068113845691880626722328746883077905769192336"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -39,
+            1640
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            39,
+            -1759
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            2,
+            4724
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -2,
+            -9444
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            2,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 5
+    },
+    {
+      "labels": [
+        "alternate-orbit-0f82c",
+        "alternate-orbit-025be"
+      ],
+      "pair_key": "alternate-orbit-0f82c:alternate-orbit-025be",
+      "product_quartic_coefficients_low_to_high": [
+        "2975310617875851229837327743732995902756598758085718365880780331689158900156433435935180899331047259050083492110265647121320221041",
+        "1152242089213735100365334389851177338712544434980534257325366361503240666841745246257399178385825436516890450124723885692019444612",
+        "315665769110764109818407082650153698705001676036446624215992852633296634340976918774301465428880648870935819965794391410081738116",
+        "369366789209209997039440355894445655261965678169626721776581651999731872726020071180593818503074511593570396327764111957976284160",
+        "94116223117284212240627770686321528052038857859326419835724161266946985385894175455481048949288281435557768611413952463528134400"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -78,
+            -2159
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            78,
+            10402
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -171,
+            -6482
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            171,
+            42205
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 7
+    },
+    {
+      "labels": [
+        "alternate-orbit-025be",
+        "alternate-orbit-13dbe"
+      ],
+      "pair_key": "alternate-orbit-025be:alternate-orbit-13dbe",
+      "product_quartic_coefficients_low_to_high": [
+        "3840000412740165796550798803228576111243141555947161993977281969869753977688071699777210605923462413104060006418298460617252185407489",
+        "1514791804830910337634620164833084897169341804390059899409744590313835219909534218643578487102839140029571106911418766540040458321852",
+        "435776587548244871645770940404032554735175919933152859778403545714884151220790605330219017081153063915051124508038809165453673775044",
+        "469633896117552930681196486211922394006299106411841319967989806593383032969156827030129180430606100891866642012716069458260294192640",
+        "130341822896975436817642718948030127534929406248649589286001781107678433636432612764550624730309954631638738970895778357688834553600"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -104,
+            -7581
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            104,
+            25978
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -242,
+            5511
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            242,
+            47542
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "shortlist_rank": 9
+    },
+    {
+      "labels": [
+        "alternate-orbit-1ad20",
+        "alternate-orbit-1b24d"
+      ],
+      "pair_key": "alternate-orbit-1ad20:alternate-orbit-1b24d",
+      "product_quartic_coefficients_low_to_high": [
+        "8743494676292833542506889425567311328257582925008733150286368440925155325243363884645102563560779046781600164551885298104579507809",
+        "15653678658067960952442939555878010980937404930075218499912709466081293789208133901788885101008617232364908554350824323234416417680",
+        "13984174232807989907689069311932234814029477588299650411044003436858301367193959921388649096665670631768766261872590648411487716672",
+        "7344666811367882062246123616468397179483987887227001946219130559185931443063242013042943019852645245900195105095770163138989352960",
+        "1934343709641633019842806633301624805005764346516152680904584755642714277958320019331966234289842701656738618365020326380915605504"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            246,
+            35578
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -246,
+            -10640
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            130,
+            -2836
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -130,
+            22572
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            2,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 21
+    },
+    {
+      "labels": [
+        "alternate-orbit-1a465",
+        "alternate-orbit-19b4e"
+      ],
+      "pair_key": "alternate-orbit-1a465:alternate-orbit-19b4e",
+      "product_quartic_coefficients_low_to_high": [
+        "37759418359954592769156469174658163638887438417031026318529692906147609647176299838892100470690207129675383736124258881586839245248985856",
+        "120186682804309197921003821497976969411309703919064388323458947546399885348353029572893962976274795798556627642217531079252430759102237824",
+        "153947481651174372676168117536543278510935682587587816790625204971784974083966609159423714255602928629242866776514138708173316742805133376",
+        "80971282803885542084408675895169200476930484019411079267768571002834915362789110782458989092281286543444731867652185530534205927525836504",
+        "15011728778776208551084344952071835408234082380724330608323533498738213098241027410728744957028522771878302209082656954628704936630058521"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            72,
+            -14418
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -72,
+            34020
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            2,
+            2
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -151,
+            25022
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            151,
+            -27243
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 26
+    },
+    {
+      "labels": [
+        "alternate-orbit-19ead",
+        "alternate-orbit-146dc"
+      ],
+      "pair_key": "alternate-orbit-19ead:alternate-orbit-146dc",
+      "product_quartic_coefficients_low_to_high": [
+        "52994843503595475745468411848184641572518936861089055177063271149068675469515702008890168526693448844071480580887131067217023411429986241",
+        "111442981638753968938930754076737647623689621246611965400249504072449545372476574594466038686938997978756366023290098327120440483289162554",
+        "89584263564846571056872611147459201843119417363216762592759818709646836186774069145444559237727522774257790385566004932748765878367419689",
+        "32036357333605556889373984556875404799892551825983994586312776687100715743989544447341485044544579432165786346108648930099209703534537440",
+        "4250945687271920143824969059499185708933282933750219620353386686966377085232094981365150191130564284552791127298811759467248452268561600"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            206,
+            14539
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -206,
+            13358
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -284,
+            30323
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            284,
+            20010
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            2,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 29
+    },
+    {
+      "labels": [
+        "alternate-orbit-19b4e",
+        "alternate-orbit-17b71"
+      ],
+      "pair_key": "alternate-orbit-19b4e:alternate-orbit-17b71",
+      "product_quartic_coefficients_low_to_high": [
+        "345581159087464091187353795014568906458005357523954350533801048867650043869087435764570121532045444286316508617023543254395804672152576",
+        "465239893673312412256932632421483515016371886629847874446501217162793439932740088411328296292924551840193879379898420180348463756938496",
+        "223061671041546030029132127913210912029198956694609759386363148929514286900267784699339572839445875343413874455877395317570680112194288",
+        "43014563849101135432849405758971020972128729458228675701477082939415404408340399261487709740248515868765781348274013086121034081133712",
+        "2576471020976875057957160270792545194082477346504636192837605777421735714173401413989121220242872227100631918807987515355044621160449"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -156,
+            16151
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            156,
+            -7966
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            2,
+            2
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            52,
+            9032
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -52,
+            -15360
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            2,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 32
+    },
+    {
+      "labels": [
+        "alternate-orbit-11ee2",
+        "alternate-orbit-0c36e"
+      ],
+      "pair_key": "alternate-orbit-11ee2:alternate-orbit-0c36e",
+      "product_quartic_coefficients_low_to_high": [
+        "40663188635872988690161965359223201255885409167497781956118890457590510919160702432057520175110322474596847286080724500850401",
+        "34571111636611964953033983373297739966589517184893731758289845039020223265191883483202193511603306763312715320201571422457844",
+        "7615555946219716819723117360696927596260795972464608900838159916915116128936206283791944841141460276166457194492085932300756",
+        "-899802337418739326784016128815175167735298815079143020852895657944315447809898567197780570165402881419348190397819215082016",
+        "-358280927216213366101457503418739667802617181031808625514673305382057312607434876011804054575142895198648905295525351853504"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            104,
+            14772
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -104,
+            -18728
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            286,
+            39160
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -286,
+            3476
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            2,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 35
+    },
+    {
+      "labels": [
+        "alternate-orbit-0c36e",
+        "alternate-orbit-02bf1"
+      ],
+      "pair_key": "alternate-orbit-0c36e:alternate-orbit-02bf1",
+      "product_quartic_coefficients_low_to_high": [
+        "1775719202414272757936950560947183954018313496347359448333744332761099263325641167046540953026031551997942456624101651313805436857225",
+        "2691266771402110020832437105057966599508844210605377478042020244623113207273561012108759673610590292594341617554466419372973408617240",
+        "1622148999742605268992620318445955095491143788308583780410868000740300239221956477199793687649412046392390992140237673230604960187984",
+        "455962946484603897436984174089389452651822563943424236848021557022127706564219668427178044094853912012691703461128312821258852081408",
+        "50914680195830907868508376043817867435966890030782880207616299255095200369647605878801513373092328604206695036866747573823446303744"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -266,
+            28379
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            266,
+            13998
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -102,
+            304
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            102,
+            9796
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            2,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 46
+    },
+    {
+      "labels": [
+        "alternate-orbit-0fda0",
+        "alternate-orbit-1a6c8"
+      ],
+      "pair_key": "alternate-orbit-0fda0:alternate-orbit-1a6c8",
+      "product_quartic_coefficients_low_to_high": [
+        "131151352658575866641251567918669166189028117333105982527408297948757116242442708649939485305958885393106552971812907630947153840319225",
+        "-1178859614811329938903485203619895863101483019545598701321122605353393682557604634589926937019638690545412908138561228607608291256155170",
+        "-351340795761200341781693460826200767612922705852675733670474092887418726201861195038690075473633583801153200689631782769979261096418151",
+        "-129090430064625286066612793519139218850437128666276349007234017455282741254134158013071885780693443769816290881413166743311522939310672",
+        "-9358762934565527949176536093570359679087234230791075538646640811248269304485146669265815518193629348324642217332512949033874330762176"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            46,
+            -11236
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -46,
+            24588
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -140,
+            6925
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            140,
+            5750
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            2,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 50
+    },
+    {
+      "labels": [
+        "alternate-orbit-1059f",
+        "alternate-orbit-1db8d"
+      ],
+      "pair_key": "alternate-orbit-1059f:alternate-orbit-1db8d",
+      "product_quartic_coefficients_low_to_high": [
+        "940722783836816915897847052946139985105101054510294314832569101154756163373578213689326783153420138045084544951995674260696365761",
+        "1194749604138645874054689600042672235119996894124668722692186043202254078917392599438479504710899132407290270811238596562022136812",
+        "591722779232861145561798729284669908362999183876829042972365254314041438946006018226795011584827950703403513071028793020957339172",
+        "138253655324500596089358442213032225613190787852924418969682280360039208894378569676221011250673433614443441888253065529856806016",
+        "13077802690977694147562505072719873568863766808166529132545141428788748323508911828247982846089972005272267701279585313539800064"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -279,
+            40845
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            279,
+            -3849
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            184,
+            35927
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -184,
+            -37998
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            2,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 51
+    },
+    {
+      "labels": [
+        "alternate-orbit-0fda0",
+        "alternate-orbit-1037d"
+      ],
+      "pair_key": "alternate-orbit-0fda0:alternate-orbit-1037d",
+      "product_quartic_coefficients_low_to_high": [
+        "11383121529550419747173169614112787834470355253040407831584303208476754812786140385162695973992173595171394804128986222760033350645625",
+        "12662346165345109093194880609877423817458488435780646774523162170271791055316289173194656152928849996861119865227631857758705263544000",
+        "10134803226593698351717122051056251192752318116184572987806208340539661501623904899476300666086253334371921958395046462831058840452800",
+        "2383347067472175168209197667247815056917212697147324291166600616253280634889782461076468308856987559252912565282459464474488139361280",
+        "613498578119000582849907518769581015634739285217432590388683999656057881654906854273567780736336390688231342854943376282092254715904"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            119,
+            -2072
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -119,
+            18305
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            249,
+            48516
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -249,
+            -35031
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 55
+    },
+    {
+      "labels": [
+        "alternate-orbit-0c10b",
+        "alternate-orbit-17a1a"
+      ],
+      "pair_key": "alternate-orbit-0c10b:alternate-orbit-17a1a",
+      "product_quartic_coefficients_low_to_high": [
+        "173373489275159285285184983358289951797285268174452021663620138608719603955470706635930468943280417133066661131031895241922304877825",
+        "321143664065373095940574712388119917477158240163168212721089780461640309427671908186476027095642617727897594337695263445379237438968",
+        "223866442044497268176556823312731471925553353567662006023429179177975440317627837338808849037570617017035352204685048440773505987984",
+        "69621676346803683836572348244504291004686203794470404019288759304548900645544087791329763018578098622721340695837123340867070681088",
+        "8150887200815191854958044891120624741670882446340346151071466016879011764088321774176606194921229515197866081484907212276616413184"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            386,
+            65865
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -386,
+            17266
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -330,
+            61941
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            330,
+            -14982
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 60
+    },
+    {
+      "labels": [
+        "alternate-orbit-1ede3",
+        "alternate-orbit-1c364"
+      ],
+      "pair_key": "alternate-orbit-1ede3:alternate-orbit-1c364",
+      "product_quartic_coefficients_low_to_high": [
+        "1761046669868342280469025127497311706996335981257516855611901717308543046360266376341896088692726911010059266915561001576384630486552752174409",
+        "3547128144193081254137524220362082490924962533655128519001556745580167697819246947967953131986209729975678206817146214667414329863592263796236",
+        "2653666671897967173992017132570139517457099400708409798851619614379255488666940071270549987650203787101538392100344498276681774552348813646596",
+        "872367976003327951857272890670751662756292406690274295427424620079488112699825320148043577424678936233633093863014443807254418003649603473920",
+        "106115318942097605723794582542387634289208106900868839077984288070611416596865575457018847572850862030725154950879457072521880914418202982400"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            144,
+            3642
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -144,
+            13452
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            2,
+            2
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            38,
+            11338
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -38,
+            -21232
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 61
+    },
+    {
+      "labels": [
+        "alternate-orbit-13dbe",
+        "alternate-orbit-1019b"
+      ],
+      "pair_key": "alternate-orbit-13dbe:alternate-orbit-1019b",
+      "product_quartic_coefficients_low_to_high": [
+        "1229598021066449870557834215860500080531765322336498162880209634570256382946717099667101275618194723758151232168336181691625805114916",
+        "1966385394980116943480702444487695683119417343757938074552689455227112758428788047074621713652094773625340089619200534252377026689996",
+        "1241524631795962647669082919560588995982093291877300841742613005805830606190699960347110772843366969793816272345646395809407200012641",
+        "361591113188649631056646465006781660068205970840142053479576243816447812749188330621755904371745998797067834329349945599312414446316",
+        "40742937258418248440468003580669126433236436294776212546286587790132801489362240588864507967134883871724637531103871549162471626756"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -263,
+            20330
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            263,
+            28509
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 131,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            229,
+            26806
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -229,
+            -1171
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 137,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "shortlist_rank": 64
+    }
+  ]
+}

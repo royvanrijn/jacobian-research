@@ -17,6 +17,7 @@ EXPECTED_COUNT = 39147
 HIDDEN_TABLE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisection-priority-v1.tsv"
 HIDDEN_FRAME = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisection-priority-v1.json"
 HIDDEN_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisections-full-v1.json"
+OUTPUT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisections-full-v1.json"
 
 
 def digest(path: Path) -> str:
@@ -36,17 +37,28 @@ def main() -> None:
     parser.add_argument("chunks", nargs="+", type=Path)
     parser.add_argument(
         "--source-label",
-        choices=("norm12-orbit-11952", "norm12-orbit-103b2"),
+        choices=(
+            "norm12-orbit-11952",
+            "norm12-orbit-103b2",
+            "norm12-orbit-08f72",
+        ),
         default="norm12-orbit-11952",
     )
     parser.add_argument("--output", type=Path)
     parser.add_argument("--check", action="store_true")
     arguments = parser.parse_args()
-    is_alternate_target = arguments.source_label == "norm12-orbit-11952"
+    is_alternate_target = arguments.source_label != "norm12-orbit-103b2"
+    is_primary_alternate = arguments.source_label == "norm12-orbit-11952"
     expected_count = EXPECTED_COUNT if is_alternate_target else 39120
-    output = arguments.output or (DEFAULT_OUTPUT if is_alternate_target else HIDDEN_OUTPUT)
+    output = arguments.output or {
+        "norm12-orbit-11952": DEFAULT_OUTPUT,
+        "norm12-orbit-103b2": HIDDEN_OUTPUT,
+        "norm12-orbit-08f72": OUTPUT_08F72,
+    }[arguments.source_label]
     chunk_artifact_schema = (
         "elkies-k3.r17-norm12-11952-alternate-bisections.v1"
+        if is_primary_alternate
+        else "elkies-k3.r17-norm12-08f72-alternate-bisections.v1"
         if is_alternate_target
         else "elkies-k3.r17-norm12-103b2-hidden-bisections.v1"
     )
@@ -117,6 +129,8 @@ def main() -> None:
         "schema": "elkies-k3.bisection-extension-input.v1",
         "artifact_schema": (
             "elkies-k3.r17-norm12-11952-alternate-bisections-full.v1"
+            if is_primary_alternate
+            else "elkies-k3.r17-norm12-08f72-alternate-bisections-full.v1"
             if is_alternate_target
             else "elkies-k3.r17-norm12-103b2-hidden-bisections-full.v1"
         ),
@@ -142,7 +156,11 @@ def main() -> None:
         "chunk_manifest": chunk_manifest,
         "reproducing_command": (
             ".venv/bin/python elkies-k3/scripts/merge_r17_norm12_11952_alternate_bisection_chunks.py "
-            + ("" if is_alternate_target else "--source-label norm12-orbit-103b2 ")
+            + (
+                ""
+                if is_primary_alternate
+                else f"--source-label {arguments.source_label} "
+            )
             + " ".join(relative(path) for _, _, path, _ in loaded)
             + f" --output {relative(output)}"
         ),

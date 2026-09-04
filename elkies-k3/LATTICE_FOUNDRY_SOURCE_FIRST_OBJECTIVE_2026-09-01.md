@@ -1,12 +1,19 @@
 # Source-first optimization for the Picard-19 lattice foundry
 
+<!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
+<!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 c8566fbe8f4dc838 -->
+
 > **Programme update (2026-09-04).**  The candidate-ranking and finite-field
 > queue below are retained as exact, dated subcampaign records.  They no
-> longer define the programme-level “next equation” target.  The active
+> longer define the programme-level “next equation” target. The active
 > foundry milestone is the first planner-found arithmetic MW17 fibration on a
-> different NS, with determinant-950 `NS0024` preferred and a
-> characteristic-zero rational rank-19 source marking as the first gate.  See
-> [`NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
+> different NS. Determinant-950 `NS0024` is arithmetically excluded;
+> determinant-1184 `NS0031` is the preferred replacement. Its marked
+> model-157 germ is now a one-parameter formally smooth `ZZ_7` branch, and
+> rational characteristic-zero algebraization is the first gate.
+> See
+> [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 
 ## Outcome
 

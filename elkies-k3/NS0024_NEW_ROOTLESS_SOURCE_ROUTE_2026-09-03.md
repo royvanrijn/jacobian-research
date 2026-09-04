@@ -2,18 +2,21 @@
 
 Date: 2026-09-03.
 
-> **Programme update (2026-09-04).**  The Inose, `D5+E8/MW4`, and
-> thirteen-edge `A3+A4+A6/MW4` approaches are now treated as alternative
-> source strategies for one open objective.  None is the active input to the
-> marked-`U` planner until it supplies an equation-facing characteristic-zero
-> surface with a rational rank-19 marking.  See
-> [`NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](NS0024_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
+<!-- status-consumer: EC-K3-NS0024-DIRECT-QQ-INOSE-OBSTRUCTION e87afc1b3529a07f -->
+<!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
+
+> **Programme update (2026-09-04).** The Inose, `D5+E8/MW4`, and
+> thirteen-edge `A3+A4+A6/MW4` approaches remain geometric NS0024 records,
+> but none can supply the full rational marking required over `QQ`. The live
+> arithmetic objective has moved to a different NS; see
+> [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 >
-> **Arithmetic correction (2026-09-04).**  The direct Inose specialization
+> **Arithmetic correction (2026-09-04).** The direct Inose specialization
 > over `QQ` is obstructed: the required cyclic isogeny has degree `475`, which
-> is absent from the complete Mazur--Kenku list.  Only a separately proved
-> quotient or quadratic descent remains open.  See
-> [`NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md`](NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md).
+> is absent from the complete Mazur--Kenku list. More strongly, Momose's
+> theorem on `X0+(475)(QQ)` excludes every noncuspidal, non-CM descent and
+> therefore excludes a full rational NS0024 marking. See
+> [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
 
 ## Outcome
 
@@ -162,23 +165,11 @@ the usual low-pole neighbour compiler.
 
 ## Route-specific continuation
 
-The active route is now:
-
-1. Recover a common characteristic-zero producer for the semistable
-   `A3+A4+A6/MW4` equation and all four resolved sections.
-2. Prove that its nineteen displayed divisor classes are `QQ`-rational,
-   identify their intersection matrix with `NS0024`, and prove geometric
-   Picard rank 19.
-3. Run the marked-`U` planner from that explicit marking with a target-free
-   rootless determinant-950 predicate.  Use the stored thirteen-edge corridor
-   and completed frames only as post-selection controls.
-4. Compile the selected low-degree moves and certify the endpoint equation
-   and saturated rational MW17 basis.
-
-The `D5+E8/MW4` route becomes active only if it independently acquires an
-equation and rational marking.  A quotient descent of (1) remains possible in
-principle, but it is a separate arithmetic problem and the pole-473 source
-certificate still makes it a poor compiler start.
+There is no `QQ`-arithmetic continuation for a full NS0024 marking. The
+semistable MW4 reconstruction, completed-core route, and quotient descents
+may still be studied over larger fields or for geometric comparison, with
+their existing bounded and equation-level caveats. They must not be presented
+as routes to a saturated rational MW17 fibration over `QQ(t)`.
 
 ## Replay
 

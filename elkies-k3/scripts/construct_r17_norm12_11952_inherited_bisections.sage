@@ -45,6 +45,8 @@ DIRECT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-dir
 OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-11952-inherited-bisection-covers-v1.json"
 DIRECT_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json"
 OUTPUT_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-inherited-bisection-covers-v1.json"
+DIRECT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08ab4-direct-fibration-v1.json"
+OUTPUT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-inherited-bisection-covers-v1.json"
 
 
 def digest(path: Path) -> str:
@@ -204,16 +206,33 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--source-label",
-        choices=("norm12-orbit-11952", "norm12-orbit-103b2"),
+        choices=(
+            "norm12-orbit-11952",
+            "norm12-orbit-103b2",
+            "norm12-orbit-08ab4",
+        ),
         default="norm12-orbit-11952",
     )
     parser.add_argument("--output", type=Path)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
-    is_alternate_target = args.source_label == "norm12-orbit-11952"
-    direct_path = DIRECT if is_alternate_target else DIRECT_103B2
-    output = args.output or (OUTPUT if is_alternate_target else OUTPUT_103B2)
-    expected_inherited_count = 121 if is_alternate_target else 82
+    is_alternate_target = args.source_label != "norm12-orbit-103b2"
+    is_primary_alternate = args.source_label == "norm12-orbit-11952"
+    direct_path = {
+        "norm12-orbit-11952": DIRECT,
+        "norm12-orbit-103b2": DIRECT_103B2,
+        "norm12-orbit-08ab4": DIRECT_08AB4,
+    }[args.source_label]
+    output = args.output or {
+        "norm12-orbit-11952": OUTPUT,
+        "norm12-orbit-103b2": OUTPUT_103B2,
+        "norm12-orbit-08ab4": OUTPUT_08AB4,
+    }[args.source_label]
+    expected_inherited_count = {
+        "norm12-orbit-11952": 121,
+        "norm12-orbit-103b2": 82,
+        "norm12-orbit-08ab4": 131,
+    }[args.source_label]
 
     model = json.loads(MODEL.read_text())
     section_data = json.loads(SECTIONS.read_text())
@@ -384,7 +403,7 @@ def main() -> None:
     if len({mask for _, mask, _, _ in candidates}) != expected_inherited_count:
         raise ArithmeticError("the inherited curves do not represent distinct child classes")
 
-    if is_alternate_target:
+    if is_primary_alternate:
         seed_vectors = {
             tuple([0, 0, -1, 0, 0, 0, 0, 1] + [0] * 9): "B1",
             tuple([-1, -1, 0, 0, 0, 0, -1] + [0] * 10): "B2",
@@ -393,7 +412,7 @@ def main() -> None:
             "B1": "-P3+P8",
             "B2": "-P1-P2-P7",
         }
-    else:
+    elif not is_alternate_target:
         seed_vectors = {
             tuple([0, 0, 0, 1] + [0] * 13): "B1",
             tuple([0, 0, -1, 1] + [0] * 13): "B2",
@@ -402,6 +421,9 @@ def main() -> None:
             "B1": "P4",
             "B2": "-P3+P4",
         }
+    else:
+        seed_vectors = {}
+        seed_expected = {}
     records = []
     seen_seed_labels = set()
     for position, (published_tuple, mask, old_mw, alternate_w) in enumerate(candidates):
@@ -499,18 +521,22 @@ def main() -> None:
             f"mask={mask:#07x}|qdeg={canonical_q.degree()}",
             flush=True,
         )
-    if seen_seed_labels != {"B1", "B2"}:
-        raise ArithmeticError("one or both requested seed bisections were not recovered")
+    if seen_seed_labels != set(seed_expected):
+        raise ArithmeticError("one or more requested seed bisections were not recovered")
 
     result = {
         "schema": "elkies-k3.bisection-extension-input.v1",
         "artifact_schema": (
             "elkies-k3.r17-norm12-11952-inherited-bisection-covers.v1"
+            if is_primary_alternate
+            else "elkies-k3.r17-norm12-08ab4-inherited-bisection-covers.v1"
             if is_alternate_target
             else "elkies-k3.r17-norm12-103b2-inherited-82-bisection-covers.v1"
         ),
         "status": (
             "PASS_EXACT_121_INHERITED_ALTERNATE_Q80_BISECTION_COVERS"
+            if is_primary_alternate
+            else "PASS_EXACT_131_INHERITED_08AB4_ALTERNATE_Q80_BISECTION_COVERS"
             if is_alternate_target
             else "PASS_EXACT_82_INHERITED_103B2_MARKING_BISECTION_COVERS"
         ),
@@ -542,11 +568,15 @@ def main() -> None:
         "reproducing_command": (
             "sage -python elkies-k3/scripts/"
             "construct_r17_norm12_11952_inherited_bisections.sage"
-            + ("" if is_alternate_target else " --source-label norm12-orbit-103b2")
+            + (
+                ""
+                if is_primary_alternate
+                else f" --source-label {args.source_label}"
+            )
         ),
         "proof_boundary": (
             (
-                "This exact replay enumerates all 121 old height-four curves of degree two "
+                f"This exact replay enumerates all {expected_inherited_count} old height-four curves of degree two "
                 "over the alternate-Q80 base, proves that they occupy distinct norm-ten "
                 "translation classes, constructs each quadratic cover with its rational "
                 "constant squareclass retained, and verifies one lifted section on the "

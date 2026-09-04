@@ -1,9 +1,16 @@
 # NS0024 edge-1 compiler preparation — 2026-09-01
 
+<!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
+
+> **Programme update (2026-09-04).** This remains an exact geometric and
+> compiler regression for `NS0024`. A later rational-marking obstruction
+> excludes `NS0024` from the arithmetic MW17 milestone over `QQ`, so this
+> edge is no longer a preferred rational-source route.
+
 ## Outcome
 
-The equation-independent preparation for the first preferred NS0024 edge is
-complete.  The exact lattice/source marking identifies
+The equation-independent preparation for the then-preferred first NS0024
+edge is complete.  The exact lattice/source marking identifies
 
 ```text
 A3+A4+A6/MW4 --q4/orbit1, old-fibre degree 2--> A1+A2+A4+D5/MW5
