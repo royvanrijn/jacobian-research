@@ -465,6 +465,27 @@
               "equals": 6
             }
           ]
+        },
+        {
+          "path": "artifacts/generated-results/elkies-k3-det1236-genus2-rational-points-v1.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_DET1236_GENUS2_RATIONAL_POINTS"
+            },
+            {
+              "path": "curve.rational_points_complete",
+              "equals": true
+            },
+            {
+              "path": "curve.rational_point_count",
+              "equals": 14
+            },
+            {
+              "path": "mordell_weil_sieve.remaining_candidate_cosets",
+              "equals": 0
+            }
+          ]
         }
       ],
       "full_marking_curve": {
@@ -502,7 +523,7 @@
       },
       "easy_quotient_maps": [
         {
-          "status": "PASS_EXACT_ATKIN_LEHNER_QUOTIENT_MODEL",
+          "status": "PASS_EXACT_ATKIN_LEHNER_QUOTIENT_MODEL_AND_RATIONAL_POINTS",
           "source": "X_0^6(103)/<w_618>",
           "target": "X_0^6(103)/<w_2,w_309>",
           "degree": 2,
@@ -514,6 +535,7 @@
             "(+/-1/3,+/-8/3)",
             "(+/-1/5,+/-312/125)"
           ],
+          "rational_points_complete": true,
           "boundary": "No equation or descent class for the degree-two source cover is presently certified."
         },
         {
@@ -543,18 +565,24 @@
           "conclusion": "Jac(C_1236) is isogenous to 618a1 through 618f1, Jac(B) to 618e1 x 618f1, and Prym(C_1236/B) to 618a1 x 618b1 x 618c1 x 618d1. All six factors have rank one, so classical Chabauty fails at rank=genus while the Neron--Severi-enhanced quadratic-Chabauty dimension screen passes."
         },
         {
+          "status": "PASS_EXACT_COMPLETE_GENUS_TWO_RATIONAL_POINTS",
+          "method": "bielliptic quadratic Chabauty at 7 and 11 plus an exact Mordell--Weil sieve on 618f1 x 618e1",
+          "conclusion": "The genus-two quotient has exactly fourteen rational points: the two fixed points (0,+/-3) and the twelve non-fixed points with x=+/-1, +/-1/3, +/-1/5. All 231760 mock coefficient cosets are eliminated by exact reductions, ending at prime 6599."
+        },
+        {
           "status": "UNRESOLVED_EXACT_DEGREE_TWO_MARKING_LIFT",
           "method": "degree-two map to the exact genus-two Atkin--Lehner quotient",
           "conclusion": "The rational fibers above the displayed genus-two rational points have not been determined; no non-CM rational marked point is certified."
         }
       ],
       "decision": "UNRESOLVED_FOR_EXPLICIT_REASON: the exact marked curve is the genus-six X_0^6(103)/<w_618>; decide the degree-two lift from its explicit genus-two quotient to find a non-CM rational point or prove that only its two rational discriminant -3 CM points occur.",
-      "next_arithmetic_gate": "Construct the degree-two cover from X_0^6(103)/<w_618> to y^2=1944*x^6+441*x^4-90*x^2+9 and decide rational lifts; do not begin K3 equation work before a non-CM lift is certified.",
+      "next_arithmetic_gate": "Construct the degree-two cover from X_0^6(103)/<w_618> to y^2=1944*x^6+441*x^4-90*x^2+9 and decide the twelve non-fixed rational fibers in the complete set of fourteen quotient points; do not begin K3 equation work before a non-CM lift is certified.",
       "theorem_inputs": [
         "the local classification of squarefree-discriminant quaternion orders and the Eichler normalizer quotient",
         "Ogg's Atkin--Lehner fixed-point and Riemann--Hurwitz formulas",
         "Gonzalez--Rotger's CM residue-field formula for Atkin--Lehner quotients",
         "Padurariu--Saia's exact genus-two quotient model and elliptic quotient identification",
+        "Bianchi--Padurariu bielliptic quadratic Chabauty and the exact two-factor Mordell--Weil sieve certificate for B(QQ)",
         "Jacquet--Langlands and the ramified-place Atkin--Lehner sign normalization",
         "the rank-three ternary-spin/fully-marked-K3 period correspondence"
       ]

@@ -29,12 +29,42 @@ class Pari219SelmerFromBnfTests(unittest.TestCase):
         self.assertIn(28960331, factors)
         source = (CAS / "run_elkies_2026_record_pari219_bnf.py").read_text()
         self.assertIn("factor_certificate_sha256", source)
-        self.assertIn("bnfcertify(b)", source)
+        self.assertIn("bnfcertify(b,{certify_flag})", source)
+        self.assertIn("class-quotient-upper", source)
         self.assertIn("--relation-threads", source)
         self.assertIn("serial collector's early-abort strategies", source)
         self.assertIn("iferr(b=bnfinit", source)
         self.assertIn("reload_certified=1", source)
         self.assertIn('and "  ***" not in log_text', source)
+
+    def test_record_bnf_one_sided_class_quotient_mode(self) -> None:
+        self.assertEqual(
+            record_bnf.mode_parameters("full-bnf"),
+            (1, 0, "completed_certified_bnf"),
+        )
+        self.assertEqual(
+            record_bnf.mode_parameters("class-quotient-upper"),
+            (0, 1, "completed_certified_class_quotient_upper"),
+        )
+        with self.assertRaises(ValueError):
+            record_bnf.mode_parameters("unsupported")
+        parsed = record_bnf.parse_computed_class_group(
+            "ELKIESR17RECORDPARI219BNF|stage=bnfinit|status=done|no=24|cyc=[12, 2]\n"
+        )
+        self.assertEqual(parsed["computed_class_group_order"], 24)
+        self.assertEqual(parsed["computed_class_group_invariants"], [12, 2])
+        self.assertEqual(parsed["computed_class_group_mod2_dimension"], 2)
+        relation_search = record_bnf.parse_relation_search(
+            "#### Look for 345 relations in 468 ideals (rnd_rel)\n"
+            "#### Look for 345 relations in 340 ideals (rnd_rel)\n"
+            "#### Look for 2456 relations in 2450 ideals (small_norm)\n"
+        )["relation_search_by_strategy"]
+        self.assertEqual(relation_search["rnd_rel"]["round_count"], 2)
+        self.assertEqual(relation_search["rnd_rel"]["minimum_ideals_searched"], 340)
+        self.assertEqual(
+            relation_search["small_norm"]["latest"],
+            {"relations_requested": 2456, "ideals_searched": 2450},
+        )
 
     def test_complete_log_parser_retains_delete_one_ranks_and_basis(self) -> None:
         log = """\

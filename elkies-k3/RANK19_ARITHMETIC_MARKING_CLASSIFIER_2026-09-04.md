@@ -4,11 +4,12 @@ Date: 2026-09-04.
 
 Status: **ACTIVE, fail-closed infrastructure**.
 
-<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
+<!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 185d31609e7702fc -->
 
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 5b6c901b8b1fdd15 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 4fac03efa2d465c7 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6043be45b20f8241 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 
 ## Outcome
@@ -170,9 +171,10 @@ specializations. It maps with degree two to the explicit genus-two curve
 y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9,
 ```
 
-which has visible rational points and a rank-one `618f1` quotient. Those
-points have not been lifted through the degree-two marking cover. More
-precisely, the checker verifies fourteen rational points with elliptic images
+which has exactly fourteen rational points and a rank-one `618f1` quotient.
+Those points have not been lifted through the degree-two marking cover. More
+precisely, bielliptic quadratic Chabauty and an exact Mordell--Weil sieve prove
+the complete rational-point set, with elliptic images
 `+/-G`, `+/-3G`, `+/-4G`, and `+/-10G`; it separates the two fixed fibers into
 the rational discriminant-`-3` CM pair and a quadratic discriminant-`-24` CM
 pair. The remaining twelve displayed points lie in non-fixed fibers whose
@@ -230,8 +232,8 @@ may trigger `NS=T^perp`, rootlessness, or equation work. The full queue is in
 
 Inside the already-rootless subqueue, determinant 1236 is now the strongest
 positive-directed target because its full marking curve and low-genus
-quotient tower are exact. Its next task is the degree-two covering descent,
-not K3 equation compilation.
+quotient tower and complete fourteen-point rational locus are exact. Its next
+task is the degree-two covering descent, not K3 equation compilation.
 
 ## Replay
 
@@ -240,6 +242,7 @@ sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 sage -python elkies-k3/scripts/certify_golay_det720_qq_marking_obstruction.sage --check
 sage -python elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage --check
+sage -- elkies-k3/scripts/certify_det1236_genus2_rational_points.sage --check
 sage -python elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
 python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check

@@ -4,7 +4,8 @@ Date: 2026-09-04.
 
 Status: **OPEN**.
 
-<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
+<!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 185d31609e7702fc -->
 
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
@@ -12,12 +13,12 @@ Status: **OPEN**.
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 0f8194f335b32990 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 5b6c901b8b1fdd15 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK d569364c553007a2 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6043be45b20f8241 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 4fac03efa2d465c7 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 b72dee9f991ffe24 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 b8ef1932e51636fa -->
 
 ## Milestone
 
@@ -129,7 +130,8 @@ curve itself has two rational discriminant-`-3` CM points, but both are
 Picard-rank-20 specializations. No non-CM rational lift from the genus-two
 quotient has been certified.
 
-The checker now verifies fourteen rational points on the genus-two quotient,
+An exact bielliptic quadratic-Chabauty/Mordell--Weil-sieve certificate proves
+that these are all fourteen rational points on the genus-two quotient,
 mapping to `+/-G`, `+/-3G`, `+/-4G`, and `+/-10G` on `618f1`. It also resolves
 both rational fixed fibers: one comes from the rational discriminant-`-3` CM
 pair, while the other comes from a quadratic discriminant-`-24` CM pair and
@@ -182,9 +184,8 @@ Within the already-rootless queue, determinant `1236` is now the strongest
 positive-directed row because its literal stable kernel, genus-six marked
 curve, genus-two quotient model, fourteen rational quotient points, and the
 two fixed CM fibers are exact. Its six-factor Jacobian and four-factor Prym
-are also exact. The remaining unknown is specifically the
-rational lift through one degree-two cover at the twelve non-fixed points
-and beyond.
+are also exact. The remaining unknown is specifically the rational lift
+through one degree-two cover at the complete list of twelve non-fixed points.
 The priority tuple is
 
 ```text
@@ -271,6 +272,7 @@ boundaries are recorded in
   elkies-k3/scripts/certify_det378_qq_marking_obstruction.sage --check
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage --check
+sage -- elkies-k3/scripts/certify_det1236_genus2_rational_points.sage --check
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage --check
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -290,7 +292,8 @@ python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
   rootless-MW17 arithmetic exclusions.
 - [`DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md`](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md)
   — exact genus-six stable marked curve, low-genus quotient tower, two rational
-  CM controls, and the degree-two rational-lift obstruction.
+  CM controls, complete fourteen-point genus-two quotient, and the degree-two
+  rational-lift obstruction.
 - [`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md)
   — marking decisions and empty equation-agent handoff.
 - [`DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md`](DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md)

@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-"""Build a certified PARI 2.19 BNF with proved discriminant-factor hints.
+"""Build certified PARI 2.19 class data with proved factor hints.
 
 This is the record-fibre counterpart of the pinned generic BNF benchmark.
 The prime list must come from an exact factorization certificate; it is passed
-to PARI only to avoid rediscovering known factors.  No checkpoint survives
-unless both ``bnfinit`` and ``bnfcertify`` complete.
+to PARI only to avoid rediscovering known factors.  The default full-BNF mode
+certifies the class group and units.  The class-quotient-upper mode instead
+uses ``bnfinit(..., 0)`` and ``bnfcertify(..., 1)``: this proves only that the
+true class group is a quotient of the computed group, which is enough for an
+unconditional upper bound on its mod-2 dimension.  No checkpoint survives
+unless both the requested ``bnfinit`` and certification complete.
 """
 
 from __future__ import annotations
@@ -12,6 +16,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+import re
 import signal
 import subprocess
 import time
@@ -27,9 +32,10 @@ from run_elkies_2026_pari219_bnf_benchmark import (
 )
 
 
-SCHEMA = "elliptic-curves.elkies-2026-record-pari219-bnf.v1"
+SCHEMA = "elliptic-curves.elkies-2026-record-pari219-bnf.v2"
 PROTOCOL = "ELKIESR17RECORDPARI219BNF"
 FACTOR_CERTIFICATE_STATUS = "PASS_PINNED_PUBLIC_POINT_PROJECTION_FOR_69_RECOGNIZED_FIBRES"
+MODES = ("full-bnf", "class-quotient-upper")
 
 
 def parse_factor_primes(value: str) -> tuple[int, ...]:
@@ -52,12 +58,80 @@ def certified_factor_primes(path: Path, curve_id: int) -> tuple[int, ...]:
     return tuple(int(prime) for prime in row["bad_primes"])
 
 
+def mode_parameters(mode: str) -> tuple[int, int, str]:
+    """Return bnfinit flag, bnfcertify flag, and certified completion status."""
+    if mode == "full-bnf":
+        return 1, 0, "completed_certified_bnf"
+    if mode == "class-quotient-upper":
+        return 0, 1, "completed_certified_class_quotient_upper"
+    raise ValueError(f"unsupported mode: {mode}")
+
+
+def parse_computed_class_group(log_text: str) -> dict[str, object]:
+    """Parse the last exact class-group summary emitted after bnfinit."""
+    matches = re.findall(
+        rf"{PROTOCOL}\|stage=bnfinit\|status=done\|no=([^|\r\n]+)"
+        rf"\|cyc=(\[[^\r\n]*\])",
+        log_text,
+    )
+    if not matches:
+        return {}
+    order_text, invariants_text = matches[-1]
+    invariants = [int(value) for value in re.findall(r"-?\d+", invariants_text)]
+    return {
+        "computed_class_group_order": int(order_text.strip()),
+        "computed_class_group_invariants": invariants,
+        "computed_class_group_mod2_dimension": sum(value % 2 == 0 for value in invariants),
+    }
+
+
+def parse_relation_search(log_text: str) -> dict[str, object]:
+    """Retain compact telemetry for every PARI relation-search strategy."""
+    by_strategy: dict[str, dict[str, object]] = {}
+    for relations, ideals, strategy in re.findall(
+        r"#### Look for (\d+) relations in (\d+) ideals \(([^)]+)\)",
+        log_text,
+    ):
+        pair = {
+            "relations_requested": int(relations),
+            "ideals_searched": int(ideals),
+        }
+        record = by_strategy.setdefault(
+            strategy,
+            {
+                "round_count": 0,
+                "latest": pair,
+                "minimum_ideals_searched": int(ideals),
+                "distinct_request_pairs": [],
+            },
+        )
+        record["round_count"] = int(record["round_count"]) + 1
+        record["latest"] = pair
+        record["minimum_ideals_searched"] = min(
+            int(record["minimum_ideals_searched"]), int(ideals)
+        )
+        pairs = record["distinct_request_pairs"]
+        assert isinstance(pairs, list)
+        if pair not in pairs:
+            pairs.append(pair)
+    return {"relation_search_by_strategy": by_strategy} if by_strategy else {}
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--gp", type=Path, required=True)
     parser.add_argument("--polynomial", required=True)
     parser.add_argument("--case-id", required=True)
     parser.add_argument("--curve-id", type=int, required=True)
+    parser.add_argument(
+        "--mode",
+        choices=MODES,
+        default="full-bnf",
+        help=(
+            "full-bnf certifies class and unit data; class-quotient-upper "
+            "certifies only a one-sided class-group quotient and mod-2 upper bound"
+        ),
+    )
     parser.add_argument("--factor-primes", type=parse_factor_primes, required=True)
     parser.add_argument("--factor-certificate", type=Path, required=True)
     parser.add_argument("--timeout-seconds", type=float, default=1800.0)
@@ -103,6 +177,7 @@ def main() -> None:
     relation_threads = (
         args.threads if args.relation_threads is None else args.relation_threads
     )
+    bnf_flag, certify_flag, completion_status = mode_parameters(args.mode)
     tech = [
         args.c1,
         args.c2,
@@ -117,20 +192,20 @@ def main() -> None:
 setdebug("bnf",{args.pari_debug});
 addprimes([{factor_text}]);
 f={args.polynomial};
-print("{PROTOCOL}|stage=bnfinit|status=start|tech={tech_text}");
-iferr(b=bnfinit(f,1,[{tech_text}]),E,print("{PROTOCOL}|stage=bnfinit|status=error|message=",E);quit(2));
+print("{PROTOCOL}|stage=bnfinit|status=start|mode={args.mode}|flag={bnf_flag}|tech={tech_text}");
+iferr(b=bnfinit(f,{bnf_flag},[{tech_text}]),E,print("{PROTOCOL}|stage=bnfinit|status=error|message=",E);quit(2));
 if(type(b)!="t_VEC",print("{PROTOCOL}|stage=bnfinit|status=error|message=non_bnf_type_",type(b));quit(3));
 print("{PROTOCOL}|stage=bnfinit|status=done|no=",b.no,"|cyc=",b.cyc);
-print("{PROTOCOL}|stage=bnfcertify|status=start");
-iferr(c=bnfcertify(b),E,print("{PROTOCOL}|stage=bnfcertify|status=error|message=",E);quit(4));
+print("{PROTOCOL}|stage=bnfcertify|status=start|flag={certify_flag}");
+iferr(c=bnfcertify(b,{certify_flag}),E,print("{PROTOCOL}|stage=bnfcertify|status=error|message=",E);quit(4));
 if(!c,print("{PROTOCOL}|stage=bnfcertify|status=error|message=returned_zero");quit(5));
 iferr(writebin("{gp_quote(args.checkpoint.resolve())}",b),E,print("{PROTOCOL}|stage=checkpoint|status=error|message=",E);quit(6));
 iferr(bb=read("{gp_quote(args.checkpoint.resolve())}"),E,print("{PROTOCOL}|stage=checkpoint|status=error|message=",E);quit(7));
 if(type(bb)!="t_VEC",print("{PROTOCOL}|stage=checkpoint|status=error|message=non_bnf_type_",type(bb));quit(8));
-iferr(cc=bnfcertify(bb),E,print("{PROTOCOL}|stage=checkpoint|status=error|message=",E);quit(9));
+iferr(cc=bnfcertify(bb,{certify_flag}),E,print("{PROTOCOL}|stage=checkpoint|status=error|message=",E);quit(9));
 if(!cc,print("{PROTOCOL}|stage=checkpoint|status=error|message=reload_certification_returned_zero");quit(10));
-print("{PROTOCOL}|stage=checkpoint|status=done|reload_certified=1");
-print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1");
+print("{PROTOCOL}|stage=checkpoint|status=done|reload_certified=1|flag={certify_flag}");
+print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1|flag={certify_flag}");
 '''
 
     started = time.monotonic()
@@ -169,34 +244,51 @@ print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1");
     elapsed = time.monotonic() - started
     log_text = args.log.read_text(errors="replace")
     certified = (
-        f"{PROTOCOL}|stage=bnfcertify|status=done|certified=1" in log_text
-        and f"{PROTOCOL}|stage=checkpoint|status=done|reload_certified=1" in log_text
+        f"{PROTOCOL}|stage=bnfcertify|status=done|certified=1|flag={certify_flag}" in log_text
+        and f"{PROTOCOL}|stage=checkpoint|status=done|reload_certified=1|flag={certify_flag}" in log_text
         and "  ***" not in log_text
         and process.returncode == 0
         and args.checkpoint.is_file()
     )
     if outcome == "running":
-        outcome = "completed_certified_bnf" if certified else "backend_failure"
+        outcome = completion_status if certified else "backend_failure"
     if not certified:
         args.checkpoint.unlink(missing_ok=True)
+
+    if args.mode == "full-bnf":
+        claim_boundary = [
+            "Only completed_certified_bnf supplies reusable class and unit data.",
+            "A timeout or relation deficit is not a Selmer or rank bound.",
+            "Factor hints accelerate exact arithmetic and do not replace bnfcertify.",
+        ]
+        checkpoint_scope = "certified_class_and_unit_data"
+    else:
+        claim_boundary = [
+            "Completion proves that the true class group is a quotient of the computed group.",
+            "The computed class-group mod-2 dimension is therefore an unconditional upper bound.",
+            "This mode does not certify units and its checkpoint is not a full-BNF Selmer input.",
+            "A timeout or relation deficit is not a Selmer or rank bound.",
+        ]
+        checkpoint_scope = "certified_class_group_quotient_upper_only"
 
     result = {
         "schema": SCHEMA,
         "status": outcome,
         "case_id": args.case_id,
         "curve_id": args.curve_id,
-        "claim_boundary": [
-            "Only completed_certified_bnf supplies reusable class and unit data.",
-            "A timeout or relation deficit is not a Selmer or rank bound.",
-            "Factor hints accelerate exact arithmetic and do not replace bnfcertify.",
-        ],
+        "claim_boundary": claim_boundary,
         "backend": {
             "version_vector": gp_version(gp),
             "source_commit": args.source_commit,
             "binary": str(gp),
             "binary_sha256": file_sha256(gp),
+            "runner": str(Path(__file__).resolve()),
+            "runner_sha256": file_sha256(Path(__file__).resolve()),
         },
         "input": {
+            "mode": args.mode,
+            "bnfinit_flag": bnf_flag,
+            "bnfcertify_flag": certify_flag,
             "reduced_cubic": args.polynomial,
             "bnf_tech": tech,
             "factor_hint_primes": [str(prime) for prime in args.factor_primes],
@@ -212,11 +304,14 @@ print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1");
             "peak_observed_rss_bytes": peak_rss,
             "returncode": process.returncode,
             **parse_progress(args.log),
+            **parse_relation_search(log_text),
+            **parse_computed_class_group(log_text),
         },
         "log": str(args.log),
         "log_sha256": file_sha256(args.log),
         "checkpoint": str(args.checkpoint) if certified else None,
         "checkpoint_sha256": file_sha256(args.checkpoint) if certified else None,
+        "checkpoint_scope": checkpoint_scope if certified else None,
     }
     args.output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
     print(

@@ -1,7 +1,8 @@
 # Reproducing the results
 
 <!-- status-consumer: EC-K3-H3-Q12O5867-POINT-FACTORY 9399c93ee42ee2a4 -->
-<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
+<!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 185d31609e7702fc -->
 
 The Makefile is the public verification interface.  Run commands from the
 repository root after creating the Python environment described in the main
@@ -18671,10 +18672,10 @@ The alternate application proof is
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 0f8194f335b32990 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 5b6c901b8b1fdd15 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK d569364c553007a2 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6043be45b20f8241 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 4fac03efa2d465c7 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 <!-- status-consumer: EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS 01298fec30fa94a3 -->
 
@@ -18753,6 +18754,7 @@ The arithmetic-gated planner ranking is replayed by
   elkies-k3/scripts/certify_det378_qq_marking_obstruction.sage --check
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage --check
+sage -- elkies-k3/scripts/certify_det1236_genus2_rational_points.sage --check
 sage -python elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage --check
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
@@ -18769,12 +18771,17 @@ row because all rational points are cusps. The third reconstructs the two
 literal `5`-scaled Clifford orders at determinants 500 and 750, computes the
 `A5`, `S5`, and `S5 x C2` discriminant images, and identifies the exact
 stable curves `X_H(50)` and `X_H(75)`. Their rational points are precisely
-four cusps apiece, so both new rootless-MW17 rows are excluded. The classifier
-then checks all 66 lattice-feasible rootless-MW17 surfaces. The determinant-1236
-replay identifies the exact genus-six marked curve
+four cusps apiece, so both new rootless-MW17 rows are excluded. The fourth
+command replays the pinned bielliptic quadratic-Chabauty calculation at
+`p=7,11` and its exact two-factor Mordell--Weil sieve, proving that the
+displayed fourteen affine points are all of the genus-two quotient's rational
+points. Use the same command with `--fresh` to reconstruct the p-adic caches
+from the pinned upstream source. The classifier then checks all 66
+lattice-feasible rootless-MW17 surfaces. The determinant-1236 marked-curve
+replay identifies the exact genus-six curve
 `X_0^6(103)/<w_618>`, its two rational discriminant `-3` CM points, and the
-quadratic discriminant `-24` CM fixed fiber. It verifies fourteen rational
-points on the genus-two quotient, separates both fixed fibers, and leaves
+quadratic discriminant `-24` CM fixed fiber. It imports the complete
+fourteen-point quotient certificate, separates both fixed fibers, and leaves
 twelve explicit non-fixed fibers for the degree-two rational-lift
 obstruction. Exact level-618 modular symbols identify the six rank-one
 elliptic factors of `Jac(C_1236)`, the two-factor genus-two part, and the

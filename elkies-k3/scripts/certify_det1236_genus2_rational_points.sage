@@ -12,13 +12,15 @@ points on the marked double cover X_0^6(103)/<w_618> -> B.
 import argparse
 import hashlib
 import json
-import os
+import sys
 import tempfile
 import urllib.request
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path.cwd().resolve()
+if not (ROOT / "elkies-k3/AGENTS.md").is_file():
+    raise RuntimeError("run this certificate from the repository root")
 GENERATED = ROOT / "artifacts/generated-results"
 OUTPUT = GENERATED / "elkies-k3-det1236-genus2-rational-points-v1.json"
 
@@ -97,7 +99,12 @@ parser.add_argument(
     type=Path,
     default=Path(tempfile.gettempdir()) / "det1236-qc-bielliptic-v1",
 )
-args = parser.parse_args()
+cli_args = sys.argv[1:]
+if cli_args and cli_args[0].endswith(
+    "certify_det1236_genus2_rational_points.sage"
+):
+    cli_args = cli_args[1:]
+args = parser.parse_args(cli_args)
 args.cache_dir.mkdir(parents=True, exist_ok=True)
 patched_source = prepare_upstream(args.upstream_source, args.cache_dir)
 load(str(patched_source))
@@ -135,6 +142,34 @@ for xx, yy in [
             known_affine_points.append(H(xxx, yyy))
 assert len(set(known_affine_points)) == 14
 assert not QQ(a6).is_square()
+
+
+def quotient_images(P):
+    xx, yy = QQ(P[0]), QQ(P[1])
+    image1 = E1(a6*xx^2, a6*yy) - E1(0, a6*3)
+    image2 = (
+        E2(0)
+        if xx == 0
+        else E2(a0/xx^2, a0*yy/xx^3)
+    )
+    return image1, image2
+
+
+# Check the coefficient normalization and both automorphism formulas exactly,
+# rather than relying on the later p-adic recovery to infer them.
+for xx, yy, n1, n2 in [
+    (0, 3, 0, 0),
+    (1, 48, 1, 1),
+    (QQ(1)/3, QQ(8)/3, -4, -2),
+    (QQ(1)/5, QQ(312)/125, -13, 3),
+]:
+    P = H(xx, yy)
+    image1, image2 = quotient_images(P)
+    assert image1 == n1*G1 and image2 == n2*G2
+    x_image1, x_image2 = quotient_images(H(-xx, yy))
+    y_image1, y_image2 = quotient_images(H(xx, -yy))
+    assert x_image1 == image1 and x_image2 == -image2
+    assert y_image1 == (-6-n1)*G1 and y_image2 == -image2
 
 
 def compute_qc_coefficients(p):
@@ -199,6 +234,25 @@ def compute_qc_coefficients(p):
 
 
 qc_records = {p: compute_qc_coefficients(p) for p in QC_PRIMES}
+expected_recognized_orbits = {
+    7: [
+        "(-1/3 : -8/3 : 1)",
+        "(1 : -48 : 1)",
+        "(1/5 : 312/125 : 1)",
+    ],
+    11: [
+        "(-1/5 : 312/125 : 1)",
+        "(1 : 48 : 1)",
+        "(1/3 : -8/3 : 1)",
+    ],
+}
+for p in QC_PRIMES:
+    # Up to (x,y) -> (+/-x,+/-y), these are exactly the three known
+    # nonzero-x orbits.  The x=0 orbit is an exceptional coordinate of the
+    # second elliptic quotient and is accounted for separately above.
+    assert qc_records[p]["recognized_rational_orbit_representatives"] == (
+        expected_recognized_orbits[p]
+    )
 fake_coeffs = {}
 for p in QC_PRIMES:
     compact = qc_records[p]["coefficients"]
@@ -369,6 +423,12 @@ payload = {
         ),
         "working_precision": WORKING_PRECISION,
         "coefficient_modulus_exponent": COEFFICIENT_EXPONENT,
+        "rational_orbit_accounting": (
+            "At each prime the recognized rational roots are exactly the "
+            "three known nonzero-x orbits. The exceptional x=0 orbit "
+            "(0,+/-3) is checked directly; the nonsquare leading coefficient "
+            "excludes rational points at infinity."
+        ),
         "primes": [
             {
                 "prime": p,
@@ -404,11 +464,12 @@ payload = {
         "the Mordell--Weil sieve on reductions of the two saturated rank-one elliptic quotients",
     ],
     "reproduce": (
-        "sage elkies-k3/scripts/certify_det1236_genus2_rational_points.sage --fresh"
+        "sage -- elkies-k3/scripts/"
+        "certify_det1236_genus2_rational_points.sage --fresh"
     ),
 }
 
-rendered = json.dumps(payload, indent=2, sort_keys=True) + "\n"
+rendered = json.dumps(payload, indent=2, sort_keys=True, default=int) + "\n"
 if args.check:
     if not args.output.is_file():
         raise FileNotFoundError(args.output)
@@ -420,7 +481,7 @@ if args.check:
         "sha256": sha256_file(args.output),
         "rational_point_count": 14,
         "remaining_candidate_cosets": 0,
-    }, sort_keys=True))
+    }, sort_keys=True, default=int))
 else:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(rendered)
@@ -430,4 +491,4 @@ else:
         "sha256": sha256_file(args.output),
         "rational_point_count": 14,
         "remaining_candidate_cosets": 0,
-    }, sort_keys=True))
+    }, sort_keys=True, default=int))

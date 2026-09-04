@@ -1752,7 +1752,7 @@
       "legacy_ns_ids": [
         "NS0035"
       ],
-      "next_arithmetic_gate": "Construct the degree-two cover from X_0^6(103)/<w_618> to y^2=1944*x^6+441*x^4-90*x^2+9 and decide rational lifts; do not begin K3 equation work before a non-CM lift is certified.",
+      "next_arithmetic_gate": "Construct the degree-two cover from X_0^6(103)/<w_618> to y^2=1944*x^6+441*x^4-90*x^2+9 and decide the twelve non-fixed rational fibers in the complete set of fourteen quotient points; do not begin K3 equation work before a non-CM lift is certified.",
       "phase_2_certificate_status": "UNRESOLVED_FOR_EXPLICIT_REASON",
       "priority_key": [
         3,
@@ -1774,10 +1774,11 @@
       },
       "readiness_filters": {
         "arithmetic_field_of_definition": {
-          "boundary": "Construct the degree-two cover from X_0^6(103)/<w_618> to y^2=1944*x^6+441*x^4-90*x^2+9 and decide rational lifts; do not begin K3 equation work before a non-CM lift is certified.",
+          "boundary": "Construct the degree-two cover from X_0^6(103)/<w_618> to y^2=1944*x^6+441*x^4-90*x^2+9 and decide the twelve non-fixed rational fibers in the complete set of fourteen quotient points; do not begin K3 equation work before a non-CM lift is certified.",
           "candidate_eligible": true,
           "evidence": [
-            "artifacts/generated-results/elkies-k3-det1236-marked-shimura-curve-v1.json"
+            "artifacts/generated-results/elkies-k3-det1236-marked-shimura-curve-v1.json",
+            "artifacts/generated-results/elkies-k3-det1236-genus2-rational-points-v1.json"
           ],
           "phase_2_certificate_status": "UNRESOLVED_FOR_EXPLICIT_REASON",
           "status": "PASS_EXACT_MARKED_CURVE_NONCM_RATIONAL_LOCUS_UNRESOLVED",
@@ -7610,7 +7611,7 @@
     "K3-8188cdcda8c57b2d"
   ],
   "inputs": {
-    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "4a44cafb558dfe64a023180614b5e224bf29a256d2f721fea46e8357117a0783",
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "6c4e44e77d5394baa22d5ee38e0ac5b00d458890817031579aec53e92586e230",
     "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json": "e13c9fa26b733c9e894d4a34900de469ad7dc2df63528f8c4dd816c47c9d18c8",
     "artifacts/generated-results/elkies-k3-rank7-surface-pareto-v1.json": "a8c418e80683535a44b67b494ce6c4d516c898d3be57a0b014dceb508ebf1c61",
     "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json": "965030c3254c8731f6f5941346cc52b626653e65d08d81bc9fa156aaffcaa5fc"
@@ -7754,7 +7755,7 @@
         "source_equation_precursor",
         "compiler_corridor"
       ],
-      "next_arithmetic_gate": "Construct the degree-two cover from X_0^6(103)/<w_618> to y^2=1944*x^6+441*x^4-90*x^2+9 and decide rational lifts; do not begin K3 equation work before a non-CM lift is certified.",
+      "next_arithmetic_gate": "Construct the degree-two cover from X_0^6(103)/<w_618> to y^2=1944*x^6+441*x^4-90*x^2+9 and decide the twelve non-fixed rational fibers in the complete set of fourteen quotient points; do not begin K3 equation work before a non-CM lift is certified.",
       "surface_id": "K3-6d288cfad55e0d15"
     },
     {

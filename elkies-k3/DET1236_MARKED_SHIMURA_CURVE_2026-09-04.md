@@ -1,6 +1,7 @@
 # Determinant 1236: exact marked Shimura curve and remaining lift obstruction
 
-<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
+<!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 185d31609e7702fc -->
 
 Date: 2026-09-04.
 
@@ -29,9 +30,10 @@ Picard-rank-20 specializations, so neither realizes the requested saturated
 rank-19 Neron--Severi lattice. No rational non-CM point on `C_1236` is
 currently certified.
 
-The precise remaining problem is to construct the degree-two map from
-`C_1236` to the displayed genus-two quotient below and decide whether a
-rational point on that quotient has a rational non-CM lift. A positive lift
+The rational points on the displayed genus-two quotient are now complete:
+there are exactly fourteen. The precise remaining problem is to construct
+the degree-two map from `C_1236` to that quotient and decide which of its
+twelve non-fixed rational points have rational non-CM lifts. A positive lift
 would make the row `ARITHMETICALLY_REALIZABLE`; a proof that the two CM
 points exhaust `C_1236(QQ)` would make it `ARITHMETICALLY_EXCLUDED`. Until
 then no equation work is authorized.
@@ -183,7 +185,7 @@ Padurariu and Saia determine the exact model
 B: y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9.
 ```
 
-The checker verifies fourteen rational points:
+There are exactly fourteen rational points:
 
 ```text
 (0,+/-3),              (+/-1,+/-48),
@@ -206,6 +208,54 @@ The curve `E` has rank one, trivial torsion, and generator `G=(10,-29)`.
 The displayed points map to `+/-G`, `+/-3G`, `+/-4G`, and `+/-10G`.
 This is useful structure, but it does not lift through the nontrivial
 degree-two marking cover automatically.
+
+### Complete rational-point certificate for `B`
+
+The completeness statement is an exact quadratic-Chabauty plus
+Mordell--Weil-sieve certificate, not a bounded point search. The two elliptic
+quotients are `618f1` and `618e1`; both have certified rank one, trivial
+torsion, and saturated generators. At the good ordinary primes `7` and `11`,
+the pinned bielliptic quadratic-Chabauty implementation gives `621` compatible
+height classes. Restoring all four images under `x -> -x` and `y -> -y`, then
+combining coefficients modulo `7^4` and `11^4`, leaves `231760` mock
+Mordell--Weil cosets across `405` height classes.
+
+Exact finite-field reductions eliminate every mock coset. The primes that
+strictly reduce the candidate set are
+
+```text
+31, 37, 193, 199, 227, 449, 503, 743,
+1093, 1427, 1733, 2647, 3347, 3539, 5273, 6599.
+```
+
+The final eight cosets are eliminated at `6599`. The checker asserts at least
+four digits of coefficient precision, restores the automorphism orbits using
+the exact actions
+
+```text
+x -> -x: (n1,n2) -> (n1,-n2),
+y -> -y: (n1,n2) -> (-6-n1,-n2),
+```
+
+At each Chabauty prime it also asserts that the recognized rational roots are
+exactly the three known nonzero-`x` orbits. The exceptional `x=0` orbit
+`(0,+/-3)` is checked directly in both elliptic quotients, and the nonsquare
+leading coefficient excludes rational points at infinity. The sieve enumerates
+all reductions of `B(F_q)`, including points at infinity.
+Consequently
+
+```text
+B(QQ) = {(0,+/-3), (+/-1,+/-48),
+         (+/-1/3,+/-8/3), (+/-1/5,+/-312/125)}.
+```
+
+The quadratic-Chabauty code is pinned to Balakrishnan's
+[`QC_bielliptic`](https://github.com/jbalakrishnan/QC_bielliptic) commit
+`84af22e9cd1244c3d44e3c083073b44b8d728159`. Two representation-only changes
+adapt its formal point-at-infinity tests to Sage 10.9; both source hashes and
+the patch boundary are recorded in the generated certificate. The underlying
+method is Bianchi--Padurariu,
+[*Rational points on rank 2 genus 2 bielliptic curves in the LMFDB*](https://doi.org/10.1090/conm/796/16003).
 
 The model is from [Padurariu--Saia, *Shimura curve Atkin--Lehner quotients
 of genus at most two*](https://arxiv.org/abs/2509.25368), with machine data
@@ -301,7 +351,8 @@ necessary quadratic-Chabauty dimension inequality passes:
 ```
 
 This does not decide `C_1236(QQ)`: quadratic Chabauty still needs an explicit
-model of the degree-two cover and its rational-point input. It does identify
+model of the degree-two cover. The complete rational-point input on `B` is now
+available. The factor accounting does identify
 the four-dimensional Prym carrying the missing marking character and rules
 out a classical rank-less-than-genus shortcut.
 
@@ -311,17 +362,18 @@ ramified-place Atkin--Lehner sign normalization.
 
 ## Exact next task
 
-The next computation is narrow, not a broad rank search:
+The next computation is narrow, not a broad rank or rational-point search:
 
 1. construct `C_1236 -> B` explicitly;
 2. compute its squareclass in `QQ(B)^*/QQ(B)^{*2}`;
-3. evaluate the twelve verified non-fixed rational fibers;
-4. use the split-Jacobian quadratic-Chabauty/Mordell--Weil-sieve route to
-   prove completeness if no positive lift is found.
+3. evaluate the twelve non-fixed rational fibers in the now-complete set
+   `B(QQ)`;
+4. distinguish rational non-CM lifts from CM points or points realizing a
+   saturated overlattice.
 
 One non-CM rational lift is a positive certificate. A complete proof that
 only the two CM points lift is a negative certificate. Points on `B`,
-including the verified `+/-G`, `+/-4G`, and `+/-10G` fibers, remain
+including the complete `+/-G`, `+/-4G`, and `+/-10G` fibers, remain
 quotient-level evidence until their fibers are evaluated.
 
 ## Replay and independence
@@ -330,8 +382,14 @@ The checker is
 [`scripts/certify_det1236_marked_shimura_curve.sage`](scripts/certify_det1236_marked_shimura_curve.sage),
 and the generated certificate is
 [`../artifacts/generated-results/elkies-k3-det1236-marked-shimura-curve-v1.json`](../artifacts/generated-results/elkies-k3-det1236-marked-shimura-curve-v1.json).
+The quotient rational-point checker and certificate are
+[`scripts/certify_det1236_genus2_rational_points.sage`](scripts/certify_det1236_genus2_rational_points.sage)
+and
+[`../artifacts/generated-results/elkies-k3-det1236-genus2-rational-points-v1.json`](../artifacts/generated-results/elkies-k3-det1236-genus2-rational-points-v1.json).
 
 ```bash
+sage -- elkies-k3/scripts/certify_det1236_genus2_rational_points.sage --fresh
+sage -- elkies-k3/scripts/certify_det1236_genus2_rational_points.sage --check
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \

@@ -1,6 +1,6 @@
 {
   "blind_artifact": "artifacts/generated-results/elliptic-curves/half_lattice_heldout_273_302_blind_v1.json",
-  "blind_artifact_sha256_before_fixture_import": "d6fbb27db81a8beece6e17a7f54cc5b7238990af32de558aa92ee696a797dbfa",
+  "blind_artifact_sha256_before_fixture_import": "08ce434a885e1c64c887b14c2fb71b21d2bce191a78c6270bb955d9e4ef2c66f",
   "claim_boundary": [
     "Every exact relation was replayed in exact Fraction elliptic-curve arithmetic.",
     "Recovered ranks are ranks in the displayed public free lattice modulo the selected coordinate subgroup and modulo 2.",
@@ -8,7 +8,7 @@
     "The blind finite-reduction gain fields for curve245 are invalid diagnostics, explicitly superseded here."
   ],
   "input_hashes": {
-    "artifacts/generated-results/elliptic-curves/half_lattice_heldout_273_302_blind_v1.json": "d6fbb27db81a8beece6e17a7f54cc5b7238990af32de558aa92ee696a797dbfa",
+    "artifacts/generated-results/elliptic-curves/half_lattice_heldout_273_302_blind_v1.json": "08ce434a885e1c64c887b14c2fb71b21d2bce191a78c6270bb955d9e4ef2c66f",
     "elliptic-curves/cas/icarm_curve245.py": "83bc1b77cce4089d66811d45f4c64e0d1962e8b891afed88bab7a6c12238e50d",
     "elliptic-curves/cas/icarm_curve273.py": "1752a091340a561ac73ca1f07d81fbbe207d45aaf7620e07d0332060c27b01ba",
     "elliptic-curves/cas/icarm_curve302.py": "7b3c5f92f92278b7f0823114ef8e9967a9e8c867f1435238a2521938380ec73f",

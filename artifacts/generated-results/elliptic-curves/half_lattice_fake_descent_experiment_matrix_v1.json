@@ -1,0 +1,622 @@
+{
+  "claim_boundary": [
+    "Exact fields are copied only from exact group-law or finite-reduction verification artifacts.",
+    "CVP depths are numerical for specialized canonical-height forms.",
+    "All point-search misses and recovery fractions are bounded at the declared source-artifact budgets.",
+    "The curve245 blind finite-reduction field is intentionally null; its exact held-out quotient ranks come from the fixture verifier."
+  ],
+  "fail_closed_conclusions": {
+    "curves273_or302_hidden_family_provenance_detected": false,
+    "deepest_holes_privileged_for_recovery": true,
+    "deepest_holes_prospective_rank_predictor_established": false,
+    "fake_cover_local_solubility_is_predictive": false,
+    "reason": "Each fake-descent quartic is pointed at infinity and birational to E, so local solubility is automatic.",
+    "simultaneous_nontrivial_2cover_solubility_established": false
+  },
+  "heldout_273_302_and_adverse_matrix": [
+    {
+      "blind_finite_reduction_field_valid": true,
+      "configuration": "prefix-d12",
+      "curve": "curve273",
+      "displayed_heldout_dimension": 18,
+      "distinct_nonbasis_candidates": 34,
+      "exact_displayed_heldout_rank_recovered": 11,
+      "modular_density_product_median": 0.03729806851014924,
+      "reduced_coefficient_bits_median": 105.0,
+      "searched_specialized_top_classes": 43,
+      "specialized_depth_median": 54.74967351536507,
+      "starting_dimension": 12
+    },
+    {
+      "blind_finite_reduction_field_valid": true,
+      "configuration": "prefix-d15",
+      "curve": "curve273",
+      "displayed_heldout_dimension": 15,
+      "distinct_nonbasis_candidates": 28,
+      "exact_displayed_heldout_rank_recovered": 10,
+      "modular_density_product_median": 0.041000775133725346,
+      "reduced_coefficient_bits_median": 105.0,
+      "searched_specialized_top_classes": 43,
+      "specialized_depth_median": 57.935015493596076,
+      "starting_dimension": 15
+    },
+    {
+      "blind_finite_reduction_field_valid": true,
+      "configuration": "prefix-d17",
+      "curve": "curve273",
+      "displayed_heldout_dimension": 13,
+      "distinct_nonbasis_candidates": 26,
+      "exact_displayed_heldout_rank_recovered": 10,
+      "modular_density_product_median": 0.0348339701149181,
+      "reduced_coefficient_bits_median": 105.0,
+      "searched_specialized_top_classes": 43,
+      "specialized_depth_median": 55.73846218712139,
+      "starting_dimension": 17
+    },
+    {
+      "blind_finite_reduction_field_valid": true,
+      "configuration": "prefix-d18",
+      "curve": "curve273",
+      "displayed_heldout_dimension": 12,
+      "distinct_nonbasis_candidates": 20,
+      "exact_displayed_heldout_rank_recovered": 9,
+      "modular_density_product_median": 0.03998175002075264,
+      "reduced_coefficient_bits_median": 105.0,
+      "searched_specialized_top_classes": 43,
+      "specialized_depth_median": 54.214390052954116,
+      "starting_dimension": 18
+    },
+    {
+      "blind_finite_reduction_field_valid": true,
+      "configuration": "interleaved-d17",
+      "curve": "curve273",
+      "displayed_heldout_dimension": 13,
+      "distinct_nonbasis_candidates": 32,
+      "exact_displayed_heldout_rank_recovered": 9,
+      "modular_density_product_median": 0.026424771675313437,
+      "reduced_coefficient_bits_median": 105.0,
+      "searched_specialized_top_classes": 43,
+      "specialized_depth_median": 62.46003247630245,
+      "starting_dimension": 17
+    },
+    {
+      "blind_finite_reduction_field_valid": true,
+      "configuration": "prefix-d12",
+      "curve": "curve302",
+      "displayed_heldout_dimension": 19,
+      "distinct_nonbasis_candidates": 8,
+      "exact_displayed_heldout_rank_recovered": 4,
+      "modular_density_product_median": 0.057216716904751955,
+      "reduced_coefficient_bits_median": 111.0,
+      "searched_specialized_top_classes": 43,
+      "specialized_depth_median": 57.38417846348288,
+      "starting_dimension": 12
+    },
+    {
+      "blind_finite_reduction_field_valid": true,
+      "configuration": "prefix-d15",
+      "curve": "curve302",
+      "displayed_heldout_dimension": 16,
+      "distinct_nonbasis_candidates": 12,
+      "exact_displayed_heldout_rank_recovered": 4,
+      "modular_density_product_median": 0.05041867335123199,
+      "reduced_coefficient_bits_median": 111.0,
+      "searched_specialized_top_classes": 43,
+      "specialized_depth_median": 62.170673824966045,
+      "starting_dimension": 15
+    },
+    {
+      "blind_finite_reduction_field_valid": true,
+      "configuration": "prefix-d17",
+      "curve": "curve302",
+      "displayed_heldout_dimension": 14,
+      "distinct_nonbasis_candidates": 6,
+      "exact_displayed_heldout_rank_recovered": 3,
+      "modular_density_product_median": 0.06812912880175753,
+      "reduced_coefficient_bits_median": 111.0,
+      "searched_specialized_top_classes": 43,
+      "specialized_depth_median": 66.91278401429102,
+      "starting_dimension": 17
+    },
+    {
+      "blind_finite_reduction_field_valid": true,
+      "configuration": "prefix-d18",
+      "curve": "curve302",
+      "displayed_heldout_dimension": 13,
+      "distinct_nonbasis_candidates": 8,
+      "exact_displayed_heldout_rank_recovered": 4,
+      "modular_density_product_median": 0.0421889028320555,
+      "reduced_coefficient_bits_median": 111.0,
+      "searched_specialized_top_classes": 43,
+      "specialized_depth_median": 64.2142786713437,
+      "starting_dimension": 18
+    },
+    {
+      "blind_finite_reduction_field_valid": true,
+      "configuration": "interleaved-d17",
+      "curve": "curve302",
+      "displayed_heldout_dimension": 14,
+      "distinct_nonbasis_candidates": 16,
+      "exact_displayed_heldout_rank_recovered": 4,
+      "modular_density_product_median": 0.04998025010469954,
+      "reduced_coefficient_bits_median": 111.0,
+      "searched_specialized_top_classes": 43,
+      "specialized_depth_median": 57.20385432873086,
+      "starting_dimension": 17
+    },
+    {
+      "blind_finite_reduction_field_valid": false,
+      "configuration": "prefix-d12",
+      "curve": "curve245-adverse-control",
+      "displayed_heldout_dimension": 8,
+      "distinct_nonbasis_candidates": 8494,
+      "exact_displayed_heldout_rank_recovered": 8,
+      "modular_density_product_median": 0.028577758187405093,
+      "reduced_coefficient_bits_median": 48.0,
+      "searched_specialized_top_classes": 43,
+      "specialized_depth_median": 17.875887698368626,
+      "starting_dimension": 12
+    },
+    {
+      "blind_finite_reduction_field_valid": false,
+      "configuration": "prefix-d17",
+      "curve": "curve245-adverse-control",
+      "displayed_heldout_dimension": 3,
+      "distinct_nonbasis_candidates": 9772,
+      "exact_displayed_heldout_rank_recovered": 3,
+      "modular_density_product_median": 0.03149315539760026,
+      "reduced_coefficient_bits_median": 48.0,
+      "searched_specialized_top_classes": 43,
+      "specialized_depth_median": 20.554080499757667,
+      "starting_dimension": 17
+    },
+    {
+      "blind_finite_reduction_field_valid": false,
+      "configuration": "prefix-d18",
+      "curve": "curve245-adverse-control",
+      "displayed_heldout_dimension": 2,
+      "distinct_nonbasis_candidates": 9566,
+      "exact_displayed_heldout_rank_recovered": 2,
+      "modular_density_product_median": 0.031165398576720266,
+      "reduced_coefficient_bits_median": 48.0,
+      "searched_specialized_top_classes": 43,
+      "specialized_depth_median": 19.238845104456196,
+      "starting_dimension": 18
+    }
+  ],
+  "input_hashes": {
+    "artifacts/generated-results/elliptic-curves/half_lattice_fake_descent_r17_matrix_blind_v1.json": "37527d604ea042d4da5d9d930c5e52d2a3cfedfb95c23e4a6540d1d4358616b8",
+    "artifacts/generated-results/elliptic-curves/half_lattice_fake_descent_r17_matrix_verification_v1.json": "0c3e8f494fb37f805c60c41156a3bd9e37780d6b5b538263d6d703536f503f6e",
+    "artifacts/generated-results/elliptic-curves/half_lattice_fake_descent_rank28_blind_v1.json": "2da150b8759ba11021052bb7a860c3adb7d9b5287591762b8799728985c909ab",
+    "artifacts/generated-results/elliptic-curves/half_lattice_fake_descent_rank28_verification_v1.json": "a1fa939443fd9376b27782180cb90ea533a21565b59ea9b07fb6c6d88da4fb34",
+    "artifacts/generated-results/elliptic-curves/half_lattice_heldout_273_302_blind_v1.json": "08ce434a885e1c64c887b14c2fb71b21d2bce191a78c6270bb955d9e4ef2c66f",
+    "artifacts/generated-results/elliptic-curves/half_lattice_heldout_273_302_verification_v1.json": "63dfebbe2239abf0b0a84d7e1602f6e85dade309ecba65eb462f067c6e130ada",
+    "artifacts/generated-results/elliptic-curves/half_lattice_r17_rank21_blind_v1.json": "2cb953918852070adaeb8e3f60137a8887d19c53d61c486003590b85be3408f5",
+    "artifacts/generated-results/elliptic-curves/half_lattice_r17_rank21_verification_v1.json": "f96df9852d528c972733e794b38c344994a67a16d0f670b168bf13ec17a4c088",
+    "artifacts/generated-results/elliptic-curves/half_lattice_rank29_controls_blind_v1.json": "ca2a7c6b22e8c7ac2a4510bb1283a53c7ee374e1d4aadd4d4a4dfea1712ad914",
+    "artifacts/generated-results/elliptic-curves/half_lattice_rank29_controls_verification_v1.json": "94720520d27ed7acf43e01269a434537d9b6c95f5c50448fa25c5fa55fa552c5",
+    "elliptic-curves/cas/summarize_half_lattice_fake_descent_replay.py": "a4db917fdf4786d62771b247bd756349e99d09c2ee964b99c417fb5353dee304"
+  },
+  "r17_fixed_generic_deepest43_matrix": [
+    {
+      "distinct_nonbasis_candidates": 5927,
+      "exact_blind_quotient_gain": 4,
+      "full_target_recovery": true,
+      "id": "r17-rank21-control",
+      "modular_density_product_median": 0.028261994404571292,
+      "parameter": "3/8",
+      "reduced_coefficient_bits_median": 56.0,
+      "role": "known_positive_label_withheld_from_search",
+      "searched_generic_deepest_classes": 43,
+      "specialized_depth_median": 15.172116719665874,
+      "verification_target_quotient_dimension": 4
+    },
+    {
+      "distinct_nonbasis_candidates": 1222,
+      "exact_blind_quotient_gain": 8,
+      "full_target_recovery": true,
+      "id": "r17-control-a",
+      "modular_density_product_median": 0.030091373295712823,
+      "parameter": "-2/377",
+      "reduced_coefficient_bits_median": 71.0,
+      "role": "known_positive_label_withheld_from_search",
+      "searched_generic_deepest_classes": 43,
+      "specialized_depth_median": 22.503473330078094,
+      "verification_target_quotient_dimension": 8
+    },
+    {
+      "distinct_nonbasis_candidates": 649,
+      "exact_blind_quotient_gain": 9,
+      "full_target_recovery": true,
+      "id": "r17-control-b",
+      "modular_density_product_median": 0.030297588915348807,
+      "parameter": "-308/251",
+      "reduced_coefficient_bits_median": 75.0,
+      "role": "known_positive_label_withheld_from_search",
+      "searched_generic_deepest_classes": 43,
+      "specialized_depth_median": 25.10974047541428,
+      "verification_target_quotient_dimension": 9
+    },
+    {
+      "distinct_nonbasis_candidates": 262,
+      "exact_blind_quotient_gain": 10,
+      "full_target_recovery": true,
+      "id": "r17-control-c",
+      "modular_density_product_median": 0.045394266088334294,
+      "parameter": "2456/135",
+      "reduced_coefficient_bits_median": 84.0,
+      "role": "known_positive_label_withheld_from_search",
+      "searched_generic_deepest_classes": 43,
+      "specialized_depth_median": 29.512581992719916,
+      "verification_target_quotient_dimension": 10
+    },
+    {
+      "distinct_nonbasis_candidates": 74,
+      "exact_blind_quotient_gain": 9,
+      "full_target_recovery": false,
+      "id": "r17-control-d",
+      "modular_density_product_median": 0.031886561020581454,
+      "parameter": "-9529/5471",
+      "reduced_coefficient_bits_median": 93.0,
+      "role": "known_positive_label_withheld_from_search",
+      "searched_generic_deepest_classes": 43,
+      "specialized_depth_median": 34.955661466933634,
+      "verification_target_quotient_dimension": 11
+    },
+    {
+      "distinct_nonbasis_candidates": 6821,
+      "exact_blind_quotient_gain": 1,
+      "full_target_recovery": null,
+      "id": "r17-censored-t4",
+      "modular_density_product_median": 0.02813638554055098,
+      "parameter": "4/1",
+      "reduced_coefficient_bits_median": 48.0,
+      "role": "censored_ordinary_control",
+      "searched_generic_deepest_classes": 43,
+      "specialized_depth_median": 12.024815359750631,
+      "verification_target_quotient_dimension": null
+    },
+    {
+      "distinct_nonbasis_candidates": 3974,
+      "exact_blind_quotient_gain": 1,
+      "full_target_recovery": null,
+      "id": "r17-censored-t6",
+      "modular_density_product_median": 0.017906045715969383,
+      "parameter": "6/1",
+      "reduced_coefficient_bits_median": 52.0,
+      "role": "censored_ordinary_control",
+      "searched_generic_deepest_classes": 43,
+      "specialized_depth_median": 13.238546057425427,
+      "verification_target_quotient_dimension": null
+    },
+    {
+      "distinct_nonbasis_candidates": 3267,
+      "exact_blind_quotient_gain": 1,
+      "full_target_recovery": null,
+      "id": "r17-censored-t7",
+      "modular_density_product_median": 0.02283372518797352,
+      "parameter": "7/1",
+      "reduced_coefficient_bits_median": 52.0,
+      "role": "censored_ordinary_control",
+      "searched_generic_deepest_classes": 43,
+      "specialized_depth_median": 14.21233484830981,
+      "verification_target_quotient_dimension": null
+    },
+    {
+      "distinct_nonbasis_candidates": 5819,
+      "exact_blind_quotient_gain": 1,
+      "full_target_recovery": null,
+      "id": "r17-censored-t8",
+      "modular_density_product_median": 0.03491311524155841,
+      "parameter": "8/1",
+      "reduced_coefficient_bits_median": 55.0,
+      "role": "censored_ordinary_control",
+      "searched_generic_deepest_classes": 43,
+      "specialized_depth_median": 11.438882497189018,
+      "verification_target_quotient_dimension": null
+    }
+  ],
+  "rank28_mandatory_gate": {
+    "exact_blind_quotient_gain": 11,
+    "full_blind_recovery": true,
+    "generic_cvp_histogram": {
+      "0": 1,
+      "10": 39120,
+      "12": 43,
+      "4": 1311,
+      "6": 26672,
+      "8": 63925
+    },
+    "generic_deepest_count": 43,
+    "intersection_count": 22,
+    "pairwise_xor_generic_depth_histogram": {
+      "1": 12,
+      "2": 59,
+      "3/2": 47,
+      "5/2": 35
+    },
+    "parameter": "-9529/5471",
+    "productive_center_f2_span_dimension": 17,
+    "productive_half_classes": [
+      {
+        "generic_depth": "3",
+        "half_class": "0x127e4",
+        "incremental_gain": 1,
+        "integral_coefficient_bits": 762,
+        "recovered_quotient_classes": [
+          "0x460"
+        ],
+        "reduced_coefficient_bits": 95,
+        "specialized_depth": "37.37790412320623086308736823297343027385",
+        "specialized_rank": 1
+      },
+      {
+        "generic_depth": "3",
+        "half_class": "0x05cf7",
+        "incremental_gain": 1,
+        "integral_coefficient_bits": 710,
+        "recovered_quotient_classes": [
+          "0x25c"
+        ],
+        "reduced_coefficient_bits": 92,
+        "specialized_depth": "36.64077858576280671577736823297343027385",
+        "specialized_rank": 3
+      },
+      {
+        "generic_depth": "3",
+        "half_class": "0x08692",
+        "incremental_gain": 1,
+        "integral_coefficient_bits": 704,
+        "recovered_quotient_classes": [
+          "0x008"
+        ],
+        "reduced_coefficient_bits": 95,
+        "specialized_depth": "36.24530962065175941895736823297343027385",
+        "specialized_rank": 7
+      },
+      {
+        "generic_depth": "3",
+        "half_class": "0x0de57",
+        "incremental_gain": 1,
+        "integral_coefficient_bits": 744,
+        "recovered_quotient_classes": [
+          "0x001",
+          "0x461"
+        ],
+        "reduced_coefficient_bits": 94,
+        "specialized_depth": "36.15244188479283940448104341569808341865",
+        "specialized_rank": 8
+      },
+      {
+        "generic_depth": "3",
+        "half_class": "0x050a0",
+        "incremental_gain": 0,
+        "integral_coefficient_bits": 746,
+        "recovered_quotient_classes": [
+          "0x461"
+        ],
+        "reduced_coefficient_bits": 101,
+        "specialized_depth": "36.0747820070397397170000000000000000000",
+        "specialized_rank": 9
+      },
+      {
+        "generic_depth": "2.5",
+        "half_class": "0x19312",
+        "incremental_gain": 0,
+        "integral_coefficient_bits": 725,
+        "recovered_quotient_classes": [
+          "0x461"
+        ],
+        "reduced_coefficient_bits": 93,
+        "specialized_depth": "35.5414518603812068719794729318937210954",
+        "specialized_rank": 17
+      },
+      {
+        "generic_depth": "3",
+        "half_class": "0x06226",
+        "incremental_gain": 1,
+        "integral_coefficient_bits": 729,
+        "recovered_quotient_classes": [
+          "0x040"
+        ],
+        "reduced_coefficient_bits": 94,
+        "specialized_depth": "35.4400653201445566494252563870434898586",
+        "specialized_rank": 19
+      },
+      {
+        "generic_depth": "2.5",
+        "half_class": "0x09765",
+        "incremental_gain": 1,
+        "integral_coefficient_bits": 700,
+        "recovered_quotient_classes": [
+          "0x29a"
+        ],
+        "reduced_coefficient_bits": 93,
+        "specialized_depth": "35.20812403300158444501104341569808341865",
+        "specialized_rank": 23
+      },
+      {
+        "generic_depth": "2.5",
+        "half_class": "0x048ea",
+        "incremental_gain": 1,
+        "integral_coefficient_bits": 689,
+        "recovered_quotient_classes": [
+          "0x471"
+        ],
+        "reduced_coefficient_bits": 93,
+        "specialized_depth": "35.1920318798033706019300000000000000000",
+        "specialized_rank": 24
+      },
+      {
+        "generic_depth": "2.5",
+        "half_class": "0x1655b",
+        "incremental_gain": 1,
+        "integral_coefficient_bits": 711,
+        "recovered_quotient_classes": [
+          "0x2ce"
+        ],
+        "reduced_coefficient_bits": 92,
+        "specialized_depth": "34.90986143296517018004631409676087246465",
+        "specialized_rank": 34
+      },
+      {
+        "generic_depth": "2.5",
+        "half_class": "0x18717",
+        "incremental_gain": 0,
+        "integral_coefficient_bits": 717,
+        "recovered_quotient_classes": [
+          "0x001"
+        ],
+        "reduced_coefficient_bits": 93,
+        "specialized_depth": "34.84330055501525368197631409676087246465",
+        "specialized_rank": 38
+      },
+      {
+        "generic_depth": "2.5",
+        "half_class": "0x18ad2",
+        "incremental_gain": 0,
+        "integral_coefficient_bits": 693,
+        "recovered_quotient_classes": [
+          "0x001",
+          "0x461"
+        ],
+        "reduced_coefficient_bits": 93,
+        "specialized_depth": "34.8324145622271137499094729318937210954",
+        "specialized_rank": 39
+      },
+      {
+        "generic_depth": "2.5",
+        "half_class": "0x04223",
+        "incremental_gain": 0,
+        "integral_coefficient_bits": 691,
+        "recovered_quotient_classes": [
+          "0x001"
+        ],
+        "reduced_coefficient_bits": 93,
+        "specialized_depth": "34.8096568844202979085294729318937210954",
+        "specialized_rank": 40
+      },
+      {
+        "generic_depth": "2",
+        "half_class": "0x0f687",
+        "incremental_gain": 1,
+        "integral_coefficient_bits": 707,
+        "recovered_quotient_classes": [
+          "0x020"
+        ],
+        "reduced_coefficient_bits": 92,
+        "specialized_depth": "34.74389120817668183000631409676087246465",
+        "specialized_rank": 43
+      },
+      {
+        "generic_depth": "3",
+        "half_class": "0x0b936",
+        "incremental_gain": 0,
+        "integral_coefficient_bits": 683,
+        "recovered_quotient_classes": [
+          "0x471"
+        ],
+        "reduced_coefficient_bits": 93,
+        "specialized_depth": "34.3305464317305454297378917275748843816",
+        "specialized_rank": 115
+      },
+      {
+        "generic_depth": "3",
+        "half_class": "0x18f2e",
+        "incremental_gain": 0,
+        "integral_coefficient_bits": 674,
+        "recovered_quotient_classes": [
+          "0x200"
+        ],
+        "reduced_coefficient_bits": 93,
+        "specialized_depth": "33.87739079128435610318631409676087246465",
+        "specialized_rank": 363
+      },
+      {
+        "generic_depth": "3",
+        "half_class": "0x01b43",
+        "incremental_gain": 1,
+        "integral_coefficient_bits": 650,
+        "recovered_quotient_classes": [
+          "0x768"
+        ],
+        "reduced_coefficient_bits": 93,
+        "specialized_depth": "33.1191999109651986495678917275748843816",
+        "specialized_rank": 1768
+      },
+      {
+        "generic_depth": "3",
+        "half_class": "0x1222e",
+        "incremental_gain": 1,
+        "integral_coefficient_bits": 657,
+        "recovered_quotient_classes": [
+          "0x123"
+        ],
+        "reduced_coefficient_bits": 94,
+        "specialized_depth": "32.8283999089745202169500000000000000000",
+        "specialized_rank": 2872
+      }
+    ],
+    "productive_vs_nonproductive_contrast": {
+      "productive_exceptional": {
+        "class_count": 18,
+        "generic_exact_deepest_count": 10,
+        "median_independent_modular_density_product": 0.03331991349935868,
+        "median_reduced_model_maximum_coefficient_bits": 93.0
+      },
+      "searched_not_exceptional": {
+        "class_count": 46,
+        "generic_exact_deepest_count": 33,
+        "median_independent_modular_density_product": 0.03069416441098829,
+        "median_reduced_model_maximum_coefficient_bits": 93.0
+      }
+    },
+    "searched_union_count": 64,
+    "specialized_top_count": 43,
+    "target_quotient_dimension": 11
+  },
+  "rank29_generic_specialized_union_matrix": [
+    {
+      "distinct_nonbasis_candidates": 94,
+      "exact_blind_quotient_gain": 10,
+      "full_target_recovery": false,
+      "generic_specialized_top43_intersection": 14,
+      "id": "curve12-2024-rank29",
+      "modular_density_product_median": 0.05142167084101154,
+      "reduced_coefficient_bits_median": 103.0,
+      "role": "exact_family_transport_positive_control",
+      "searched_union_classes": 72,
+      "specialized_depth_median": 36.64808337617948,
+      "target_quotient_dimension": 12
+    },
+    {
+      "distinct_nonbasis_candidates": 239,
+      "exact_blind_quotient_gain": 12,
+      "full_target_recovery": true,
+      "generic_specialized_top43_intersection": 11,
+      "id": "curve356-rank29",
+      "modular_density_product_median": 0.047092783403645096,
+      "reduced_coefficient_bits_median": 93.0,
+      "role": "exact_family_transport_positive_control",
+      "searched_union_classes": 75,
+      "specialized_depth_median": 33.791538077269344,
+      "target_quotient_dimension": 12
+    },
+    {
+      "distinct_nonbasis_candidates": 77,
+      "exact_blind_quotient_gain": 4,
+      "full_target_recovery": false,
+      "generic_specialized_top43_intersection": 11,
+      "id": "curve385-rank29",
+      "modular_density_product_median": 0.03810195343489985,
+      "reduced_coefficient_bits_median": 105.0,
+      "role": "exact_family_transport_positive_control",
+      "searched_union_classes": 75,
+      "specialized_depth_median": 36.099851841911814,
+      "target_quotient_dimension": 12
+    }
+  ],
+  "reproducing_command": "python3 elliptic-curves/cas/summarize_half_lattice_fake_descent_replay.py",
+  "schema": "elliptic-curves.half-lattice-fake-descent-experiment-matrix.v1",
+  "status": "PASS_COMPACT_REPLAY_SUMMARY"
+}

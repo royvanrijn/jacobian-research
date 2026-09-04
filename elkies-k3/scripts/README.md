@@ -1,6 +1,7 @@
 # Elkies K3 script map
 
-<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
+<!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 185d31609e7702fc -->
 
 <!-- status-consumer: EC-K3-R17-NORM12-HIGHEST-RANK-TRANSPORTS c4c8a81fc735fea2 -->
 <!-- status-consumer: EC-K3-R17-NORM12-PROSPECTIVE-FAMILY-HOLDOUT 8fb7417663ea1d98 -->
@@ -1474,10 +1475,10 @@ The current proof boundary and replay commands are in
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 0f8194f335b32990 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 5b6c901b8b1fdd15 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK d569364c553007a2 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6043be45b20f8241 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 4fac03efa2d465c7 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 <!-- status-consumer: EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS 01298fec30fa94a3 -->
 - `certify_ns0024_qq_marking_obstruction.py` pins the stronger
@@ -1543,12 +1544,24 @@ The current proof boundary and replay commands are in
   `S5 x C2`. The stable marked curves are the explicit congruence curves
   `X_H(50)` and `X_H(75)`, of genera four and nine. Each has exactly four
   rational points, all cusps, so both rows are arithmetically excluded.
+- `certify_det1236_genus2_rational_points.sage` proves the complete
+  rational-point set on the determinant-1236 genus-two quotient
+  `B: y^2=1944*x^6+441*x^4-90*x^2+9`. It pins the published bielliptic
+  quadratic-Chabauty implementation, applies two recorded Sage-10.9
+  representation-only compatibility patches, certifies the two rank-one
+  elliptic quotients `618e1` and `618f1`, and combines the `p=7,11`
+  Chabauty congruence classes with an exact Mordell--Weil sieve. The final
+  reduction at `6599` eliminates every residual class, proving that the
+  fourteen displayed affine points are all of `B(QQ)` and that there are no
+  rational points at infinity. This certificate deliberately makes no claim
+  about rational lifts to the degree-two marked curve.
 - `certify_det1236_marked_shimura_curve.sage` closes Phase 1 for the
   positive-directed content-one cyclic row. It reconstructs the literal
   Eichler order `(D,N)=(6,103)`, computes the complete eight-element
   Atkin--Lehner action on `A_T=Z/1236Z`, and identifies the exact projective
   stable curve as the genus-six `X_0^6(103)/<w_618>`. It also verifies the
-  exact genus-two quotient model, fourteen rational points mapping to
+  exact genus-two quotient model, imports the complete fourteen-point
+  certificate, and verifies that the points map to
   `+/-G`, `+/-3G`, `+/-4G`, and `+/-10G` on its rank-one `618f1` quotient,
   and two rational discriminant-`-3` CM points on the marked curve. It
   separates the second fixed fiber as a quadratic discriminant-`-24` CM

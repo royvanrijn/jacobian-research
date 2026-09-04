@@ -1,0 +1,1178 @@
+{
+  "arm_definition": {
+    "arm_size": 43,
+    "median_tie_seed": "half-lattice-search-ablation-v1/median",
+    "random_arm_count": 5,
+    "random_domain_seed": "half-lattice-search-ablation-v1/random-domain",
+    "random_sets_are_disjoint_sha256_permutation_chunks": true,
+    "representative_policy_for_every_arm": "shortest representative at specialized height scale 10^6",
+    "shallow_tie_seed": "half-lattice-search-ablation-v1/shallow"
+  },
+  "blind_boundary": {
+    "development_blind_sha256": "c6b9c15a4dbc75cf9550baf0d1aba0ba3118887a5751dfeafc4c2d013dc85015",
+    "holdout_blind_sha256_before_fixture_import": "1ee832ce6ecebc0550c008f8a10ccc2d75e727dfe9d5625802624c160e7969e6",
+    "holdout_search_source_sha256": "88a0b22b35079510d626411e91766a1de33763fdba9ca790a3cc07a0aa3ed26f",
+    "public_holdout_points_loaded_only_after_blind_artifact_frozen": true,
+    "source_history": {
+      "development_completed_source_sha256": "22b6530c9edd1891ab63604f06409e21d8de2f262f4c0feb5c80bd14922f9b6e",
+      "holdout_presearch_fix": "Removed only the assertion that the maximum generic-depth stratum has exactly 43 elements. The already-active norm-then-mask top-43 rule, all hash seeds, representatives, and search budgets are unchanged. The alternate-Q80 holdout had 49 maximum-depth classes and failed before any holdout quartic search."
+    }
+  },
+  "development": {
+    "aggregate": {
+      "arms": [
+        {
+          "case_count": 4,
+          "id": "generic-deepest43",
+          "mean_exact_quotient_rank_over_Q": 9.0,
+          "mean_rank_normalized_per_43_covers": 9.0,
+          "pooled_quotient_rank_per_cpu_second": 0.5053119444332022,
+          "total_exact_quotient_rank_over_Q": 36
+        },
+        {
+          "case_count": 4,
+          "id": "specialized-deepest43",
+          "mean_exact_quotient_rank_over_Q": 9.0,
+          "mean_rank_normalized_per_43_covers": 9.0,
+          "pooled_quotient_rank_per_cpu_second": 0.4913392919596076,
+          "total_exact_quotient_rank_over_Q": 36
+        },
+        {
+          "case_count": 4,
+          "id": "deep-union",
+          "mean_exact_quotient_rank_over_Q": 9.5,
+          "mean_rank_normalized_per_43_covers": 5.490364583333333,
+          "pooled_quotient_rank_per_cpu_second": 0.2988474491986067,
+          "total_exact_quotient_rank_over_Q": 38
+        },
+        {
+          "case_count": 4,
+          "id": "random43-1",
+          "mean_exact_quotient_rank_over_Q": 7.75,
+          "mean_rank_normalized_per_43_covers": 7.75,
+          "pooled_quotient_rank_per_cpu_second": 0.4665265612157106,
+          "total_exact_quotient_rank_over_Q": 31
+        },
+        {
+          "case_count": 4,
+          "id": "random43-2",
+          "mean_exact_quotient_rank_over_Q": 7.0,
+          "mean_rank_normalized_per_43_covers": 7.0,
+          "pooled_quotient_rank_per_cpu_second": 0.39951535363186735,
+          "total_exact_quotient_rank_over_Q": 28
+        },
+        {
+          "case_count": 4,
+          "id": "random43-3",
+          "mean_exact_quotient_rank_over_Q": 7.75,
+          "mean_rank_normalized_per_43_covers": 7.75,
+          "pooled_quotient_rank_per_cpu_second": 0.44338986945114967,
+          "total_exact_quotient_rank_over_Q": 31
+        },
+        {
+          "case_count": 4,
+          "id": "random43-4",
+          "mean_exact_quotient_rank_over_Q": 8.0,
+          "mean_rank_normalized_per_43_covers": 8.0,
+          "pooled_quotient_rank_per_cpu_second": 0.44840049517988034,
+          "total_exact_quotient_rank_over_Q": 32
+        },
+        {
+          "case_count": 4,
+          "id": "random43-5",
+          "mean_exact_quotient_rank_over_Q": 7.5,
+          "mean_rank_normalized_per_43_covers": 7.5,
+          "pooled_quotient_rank_per_cpu_second": 0.4323548235730719,
+          "total_exact_quotient_rank_over_Q": 30
+        },
+        {
+          "case_count": 4,
+          "id": "generic-shallowest43",
+          "mean_exact_quotient_rank_over_Q": 0.0,
+          "mean_rank_normalized_per_43_covers": 0.0,
+          "pooled_quotient_rank_per_cpu_second": 0.0,
+          "total_exact_quotient_rank_over_Q": 0
+        },
+        {
+          "case_count": 4,
+          "id": "generic-median43",
+          "mean_exact_quotient_rank_over_Q": 7.5,
+          "mean_rank_normalized_per_43_covers": 7.5,
+          "pooled_quotient_rank_per_cpu_second": 0.420276379631121,
+          "total_exact_quotient_rank_over_Q": 30
+        }
+      ],
+      "random43_across_all_five_arms": {
+        "best_arm_mean_rank": 8.0,
+        "mean_of_arm_mean_ranks": 7.6,
+        "pooled_quotient_rank_per_cpu_second": 0.43778605142211874
+      }
+    },
+    "cases": [
+      {
+        "arms": [
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 19.25884700000001,
+            "exact_quotient_rank_mod2": 8,
+            "exact_quotient_rank_over_Q": 8,
+            "generic_deepest_overlap": 43,
+            "id": "generic-deepest43",
+            "quotient_rank_per_cpu_second": 0.4153935072021703,
+            "rank_normalized_per_43_covers": 8.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 20.013549000000104,
+            "exact_quotient_rank_mod2": 8,
+            "exact_quotient_rank_over_Q": 8,
+            "generic_deepest_overlap": 0,
+            "id": "specialized-deepest43",
+            "quotient_rank_per_cpu_second": 0.39972920345111995,
+            "rank_normalized_per_43_covers": 8.0,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 86,
+            "cover_cpu_seconds": 39.272396000000114,
+            "exact_quotient_rank_mod2": 8,
+            "exact_quotient_rank_over_Q": 8,
+            "generic_deepest_overlap": 43,
+            "id": "deep-union",
+            "quotient_rank_per_cpu_second": 0.2037054219966609,
+            "rank_normalized_per_43_covers": 4.0,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 16.083193999999956,
+            "exact_quotient_rank_mod2": 8,
+            "exact_quotient_rank_over_Q": 8,
+            "generic_deepest_overlap": 0,
+            "id": "random43-1",
+            "quotient_rank_per_cpu_second": 0.4974136356248654,
+            "rank_normalized_per_43_covers": 8.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 18.676787000000083,
+            "exact_quotient_rank_mod2": 8,
+            "exact_quotient_rank_over_Q": 8,
+            "generic_deepest_overlap": 0,
+            "id": "random43-2",
+            "quotient_rank_per_cpu_second": 0.4283391998848605,
+            "rank_normalized_per_43_covers": 8.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 17.729872999999927,
+            "exact_quotient_rank_mod2": 8,
+            "exact_quotient_rank_over_Q": 8,
+            "generic_deepest_overlap": 0,
+            "id": "random43-3",
+            "quotient_rank_per_cpu_second": 0.4512158660132553,
+            "rank_normalized_per_43_covers": 8.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 18.976835,
+            "exact_quotient_rank_mod2": 8,
+            "exact_quotient_rank_over_Q": 8,
+            "generic_deepest_overlap": 0,
+            "id": "random43-4",
+            "quotient_rank_per_cpu_second": 0.42156661002743606,
+            "rank_normalized_per_43_covers": 8.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 18.235020000000127,
+            "exact_quotient_rank_mod2": 8,
+            "exact_quotient_rank_over_Q": 8,
+            "generic_deepest_overlap": 0,
+            "id": "random43-5",
+            "quotient_rank_per_cpu_second": 0.43871627231557436,
+            "rank_normalized_per_43_covers": 8.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 16.966368999999972,
+            "exact_quotient_rank_mod2": 0,
+            "exact_quotient_rank_over_Q": 0,
+            "generic_deepest_overlap": 0,
+            "id": "generic-shallowest43",
+            "quotient_rank_per_cpu_second": 0.0,
+            "rank_normalized_per_43_covers": 0.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 18.87917000000003,
+            "exact_quotient_rank_mod2": 8,
+            "exact_quotient_rank_over_Q": 8,
+            "generic_deepest_overlap": 0,
+            "id": "generic-median43",
+            "quotient_rank_per_cpu_second": 0.4237474422869219,
+            "rank_normalized_per_43_covers": 8.0,
+            "specialized_deepest_overlap": 0
+          }
+        ],
+        "generic_specialized_intersection_count": 0,
+        "label": "r17-development-a",
+        "maximum_generic_norm": 12,
+        "maximum_generic_norm_stratum_count": 43,
+        "parameter": "-2/377",
+        "random43_summary": {
+          "best_rank": 8,
+          "generic_deepest_minus_random_mean": 0,
+          "mean_rank": 8,
+          "ranks": [
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "specialized_deepest_minus_random_mean": 0
+        },
+        "specialized_top43_stable_at_scales_1e5_and_1e6": true,
+        "target_quotient_dimension": 8
+      },
+      {
+        "arms": [
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.010672999999997,
+            "exact_quotient_rank_mod2": 9,
+            "exact_quotient_rank_over_Q": 9,
+            "generic_deepest_overlap": 43,
+            "id": "generic-deepest43",
+            "quotient_rank_per_cpu_second": 0.5995733835518235,
+            "rank_normalized_per_43_covers": 9.0,
+            "specialized_deepest_overlap": 6
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.512742000000145,
+            "exact_quotient_rank_mod2": 9,
+            "exact_quotient_rank_over_Q": 9,
+            "generic_deepest_overlap": 6,
+            "id": "specialized-deepest43",
+            "quotient_rank_per_cpu_second": 0.5801682255786834,
+            "rank_normalized_per_43_covers": 9.0,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 80,
+            "cover_cpu_seconds": 28.223883000000285,
+            "exact_quotient_rank_mod2": 9,
+            "exact_quotient_rank_over_Q": 9,
+            "generic_deepest_overlap": 43,
+            "id": "deep-union",
+            "quotient_rank_per_cpu_second": 0.31887887290348776,
+            "rank_normalized_per_43_covers": 4.8375,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.376234000000323,
+            "exact_quotient_rank_mod2": 9,
+            "exact_quotient_rank_over_Q": 9,
+            "generic_deepest_overlap": 0,
+            "id": "random43-1",
+            "quotient_rank_per_cpu_second": 0.5853188758703731,
+            "rank_normalized_per_43_covers": 9.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 16.03966400000016,
+            "exact_quotient_rank_mod2": 9,
+            "exact_quotient_rank_over_Q": 9,
+            "generic_deepest_overlap": 0,
+            "id": "random43-2",
+            "quotient_rank_per_cpu_second": 0.5611090107623147,
+            "rank_normalized_per_43_covers": 9.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.526009999999786,
+            "exact_quotient_rank_mod2": 9,
+            "exact_quotient_rank_over_Q": 9,
+            "generic_deepest_overlap": 0,
+            "id": "random43-3",
+            "quotient_rank_per_cpu_second": 0.5796724335486145,
+            "rank_normalized_per_43_covers": 9.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.983276999999475,
+            "exact_quotient_rank_mod2": 9,
+            "exact_quotient_rank_over_Q": 9,
+            "generic_deepest_overlap": 0,
+            "id": "random43-4",
+            "quotient_rank_per_cpu_second": 0.563088533096204,
+            "rank_normalized_per_43_covers": 9.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.355941999999999,
+            "exact_quotient_rank_mod2": 9,
+            "exact_quotient_rank_over_Q": 9,
+            "generic_deepest_overlap": 0,
+            "id": "random43-5",
+            "quotient_rank_per_cpu_second": 0.5860923413229876,
+            "rank_normalized_per_43_covers": 9.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 14.561589000000026,
+            "exact_quotient_rank_mod2": 0,
+            "exact_quotient_rank_over_Q": 0,
+            "generic_deepest_overlap": 0,
+            "id": "generic-shallowest43",
+            "quotient_rank_per_cpu_second": 0.0,
+            "rank_normalized_per_43_covers": 0.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 16.624385000000274,
+            "exact_quotient_rank_mod2": 9,
+            "exact_quotient_rank_over_Q": 9,
+            "generic_deepest_overlap": 0,
+            "id": "generic-median43",
+            "quotient_rank_per_cpu_second": 0.5413734102043385,
+            "rank_normalized_per_43_covers": 9.0,
+            "specialized_deepest_overlap": 0
+          }
+        ],
+        "generic_specialized_intersection_count": 6,
+        "label": "r17-development-b",
+        "maximum_generic_norm": 12,
+        "maximum_generic_norm_stratum_count": 43,
+        "parameter": "-308/251",
+        "random43_summary": {
+          "best_rank": 9,
+          "generic_deepest_minus_random_mean": 0,
+          "mean_rank": 9,
+          "ranks": [
+            9,
+            9,
+            9,
+            9,
+            9
+          ],
+          "specialized_deepest_minus_random_mean": 0
+        },
+        "specialized_top43_stable_at_scales_1e5_and_1e6": true,
+        "target_quotient_dimension": 9
+      },
+      {
+        "arms": [
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 17.06450800000033,
+            "exact_quotient_rank_mod2": 10,
+            "exact_quotient_rank_over_Q": 10,
+            "generic_deepest_overlap": 43,
+            "id": "generic-deepest43",
+            "quotient_rank_per_cpu_second": 0.5860116213136533,
+            "rank_normalized_per_43_covers": 10.0,
+            "specialized_deepest_overlap": 11
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.735113999999612,
+            "exact_quotient_rank_mod2": 10,
+            "exact_quotient_rank_over_Q": 10,
+            "generic_deepest_overlap": 11,
+            "id": "specialized-deepest43",
+            "quotient_rank_per_cpu_second": 0.6355212933316051,
+            "rank_normalized_per_43_covers": 10.0,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 75,
+            "cover_cpu_seconds": 28.594128000000012,
+            "exact_quotient_rank_mod2": 10,
+            "exact_quotient_rank_over_Q": 10,
+            "generic_deepest_overlap": 43,
+            "id": "deep-union",
+            "quotient_rank_per_cpu_second": 0.34972215274408774,
+            "rank_normalized_per_43_covers": 5.733333333333333,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 14.595002000000079,
+            "exact_quotient_rank_mod2": 9,
+            "exact_quotient_rank_over_Q": 9,
+            "generic_deepest_overlap": 0,
+            "id": "random43-1",
+            "quotient_rank_per_cpu_second": 0.6166494530113769,
+            "rank_normalized_per_43_covers": 9.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.042033000000288,
+            "exact_quotient_rank_mod2": 8,
+            "exact_quotient_rank_over_Q": 8,
+            "generic_deepest_overlap": 0,
+            "id": "random43-2",
+            "quotient_rank_per_cpu_second": 0.5318430028706789,
+            "rank_normalized_per_43_covers": 8.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.807227000000125,
+            "exact_quotient_rank_mod2": 8,
+            "exact_quotient_rank_over_Q": 8,
+            "generic_deepest_overlap": 0,
+            "id": "random43-3",
+            "quotient_rank_per_cpu_second": 0.5060976223090828,
+            "rank_normalized_per_43_covers": 8.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.287226999999746,
+            "exact_quotient_rank_mod2": 10,
+            "exact_quotient_rank_over_Q": 10,
+            "generic_deepest_overlap": 0,
+            "id": "random43-4",
+            "quotient_rank_per_cpu_second": 0.6541408719841844,
+            "rank_normalized_per_43_covers": 10.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.662417000000005,
+            "exact_quotient_rank_mod2": 9,
+            "exact_quotient_rank_over_Q": 9,
+            "generic_deepest_overlap": 0,
+            "id": "random43-5",
+            "quotient_rank_per_cpu_second": 0.5746239549106628,
+            "rank_normalized_per_43_covers": 9.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 14.317535999999848,
+            "exact_quotient_rank_mod2": 0,
+            "exact_quotient_rank_over_Q": 0,
+            "generic_deepest_overlap": 0,
+            "id": "generic-shallowest43",
+            "quotient_rank_per_cpu_second": 0.0,
+            "rank_normalized_per_43_covers": 0.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.014993999999717,
+            "exact_quotient_rank_mod2": 8,
+            "exact_quotient_rank_over_Q": 8,
+            "generic_deepest_overlap": 0,
+            "id": "generic-median43",
+            "quotient_rank_per_cpu_second": 0.5328007457079337,
+            "rank_normalized_per_43_covers": 8.0,
+            "specialized_deepest_overlap": 0
+          }
+        ],
+        "generic_specialized_intersection_count": 11,
+        "label": "r17-development-c",
+        "maximum_generic_norm": 12,
+        "maximum_generic_norm_stratum_count": 43,
+        "parameter": "2456/135",
+        "random43_summary": {
+          "best_rank": 10,
+          "generic_deepest_minus_random_mean": 1.1999999999999993,
+          "mean_rank": 8.8,
+          "ranks": [
+            9,
+            8,
+            8,
+            10,
+            9
+          ],
+          "specialized_deepest_minus_random_mean": 1.1999999999999993
+        },
+        "specialized_top43_stable_at_scales_1e5_and_1e6": true,
+        "target_quotient_dimension": 10
+      },
+      {
+        "arms": [
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 19.90909299999987,
+            "exact_quotient_rank_mod2": 9,
+            "exact_quotient_rank_over_Q": 9,
+            "generic_deepest_overlap": 43,
+            "id": "generic-deepest43",
+            "quotient_rank_per_cpu_second": 0.45205474704448156,
+            "rank_normalized_per_43_covers": 9.0,
+            "specialized_deepest_overlap": 22
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 22.007720000000177,
+            "exact_quotient_rank_mod2": 9,
+            "exact_quotient_rank_over_Q": 9,
+            "generic_deepest_overlap": 22,
+            "id": "specialized-deepest43",
+            "quotient_rank_per_cpu_second": 0.408947405728532,
+            "rank_normalized_per_43_covers": 9.0,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 64,
+            "cover_cpu_seconds": 31.064768999999956,
+            "exact_quotient_rank_mod2": 11,
+            "exact_quotient_rank_over_Q": 11,
+            "generic_deepest_overlap": 43,
+            "id": "deep-union",
+            "quotient_rank_per_cpu_second": 0.3540988828856257,
+            "rank_normalized_per_43_covers": 7.390625,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 20.394090999999776,
+            "exact_quotient_rank_mod2": 5,
+            "exact_quotient_rank_over_Q": 5,
+            "generic_deepest_overlap": 0,
+            "id": "random43-1",
+            "quotient_rank_per_cpu_second": 0.24516905411474604,
+            "rank_normalized_per_43_covers": 5.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 20.32643200000018,
+            "exact_quotient_rank_mod2": 3,
+            "exact_quotient_rank_over_Q": 3,
+            "generic_deepest_overlap": 0,
+            "id": "random43-2",
+            "quotient_rank_per_cpu_second": 0.1475910774699649,
+            "rank_normalized_per_43_covers": 3.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 20.85278599999981,
+            "exact_quotient_rank_mod2": 6,
+            "exact_quotient_rank_over_Q": 6,
+            "generic_deepest_overlap": 0,
+            "id": "random43-3",
+            "quotient_rank_per_cpu_second": 0.28773133719398714,
+            "rank_normalized_per_43_covers": 6.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 21.117435000000228,
+            "exact_quotient_rank_mod2": 5,
+            "exact_quotient_rank_over_Q": 5,
+            "generic_deepest_overlap": 0,
+            "id": "random43-4",
+            "quotient_rank_per_cpu_second": 0.23677117983315427,
+            "rank_normalized_per_43_covers": 5.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 20.134074000000282,
+            "exact_quotient_rank_mod2": 4,
+            "exact_quotient_rank_over_Q": 4,
+            "generic_deepest_overlap": 0,
+            "id": "random43-5",
+            "quotient_rank_per_cpu_second": 0.1986681880676481,
+            "rank_normalized_per_43_covers": 4.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 19.20460400000013,
+            "exact_quotient_rank_mod2": 0,
+            "exact_quotient_rank_over_Q": 0,
+            "generic_deepest_overlap": 0,
+            "id": "generic-shallowest43",
+            "quotient_rank_per_cpu_second": 0.0,
+            "rank_normalized_per_43_covers": 0.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 20.863049999998907,
+            "exact_quotient_rank_mod2": 5,
+            "exact_quotient_rank_over_Q": 5,
+            "generic_deepest_overlap": 0,
+            "id": "generic-median43",
+            "quotient_rank_per_cpu_second": 0.23965815161255244,
+            "rank_normalized_per_43_covers": 5.0,
+            "specialized_deepest_overlap": 0
+          }
+        ],
+        "generic_specialized_intersection_count": 22,
+        "label": "r17-development-d",
+        "maximum_generic_norm": 12,
+        "maximum_generic_norm_stratum_count": 43,
+        "parameter": "-9529/5471",
+        "random43_summary": {
+          "best_rank": 6,
+          "generic_deepest_minus_random_mean": 4.4,
+          "mean_rank": 4.6,
+          "ranks": [
+            5,
+            3,
+            6,
+            5,
+            4
+          ],
+          "specialized_deepest_minus_random_mean": 4.4
+        },
+        "specialized_top43_stable_at_scales_1e5_and_1e6": true,
+        "target_quotient_dimension": 11
+      }
+    ]
+  },
+  "evidence_labels": {
+    "bounded": "Each cover received one height-100000, 15-second search; every miss is only a bounded-search miss.",
+    "exact": "All reported quotient ranks and displayed relations are exact in the published point subgroups; Q-rank equals the retained mod-2 rank.",
+    "heuristic": "The comparisons measure enrichment and search efficiency, not a theorem that depth determines solubility or rank.",
+    "numerical": "Specialized CVP order is numerical, with its top-43 set reproduced at height-matrix rounding scales 10^5 and 10^6."
+  },
+  "holdout": {
+    "aggregate": {
+      "arms": [
+        {
+          "case_count": 3,
+          "id": "generic-deepest43",
+          "mean_exact_quotient_rank_over_Q": 8.333333333333334,
+          "mean_rank_normalized_per_43_covers": 8.333333333333334,
+          "pooled_quotient_rank_per_cpu_second": 0.4942915162512861,
+          "total_exact_quotient_rank_over_Q": 25
+        },
+        {
+          "case_count": 3,
+          "id": "specialized-deepest43",
+          "mean_exact_quotient_rank_over_Q": 6.0,
+          "mean_rank_normalized_per_43_covers": 6.0,
+          "pooled_quotient_rank_per_cpu_second": 0.3596277852422724,
+          "total_exact_quotient_rank_over_Q": 18
+        },
+        {
+          "case_count": 3,
+          "id": "deep-union",
+          "mean_exact_quotient_rank_over_Q": 8.666666666666666,
+          "mean_rank_normalized_per_43_covers": 5.048518518518518,
+          "pooled_quotient_rank_per_cpu_second": 0.303924471495799,
+          "total_exact_quotient_rank_over_Q": 26
+        },
+        {
+          "case_count": 3,
+          "id": "random43-1",
+          "mean_exact_quotient_rank_over_Q": 3.0,
+          "mean_rank_normalized_per_43_covers": 3.0,
+          "pooled_quotient_rank_per_cpu_second": 0.19958261509463857,
+          "total_exact_quotient_rank_over_Q": 9
+        },
+        {
+          "case_count": 3,
+          "id": "random43-2",
+          "mean_exact_quotient_rank_over_Q": 3.0,
+          "mean_rank_normalized_per_43_covers": 3.0,
+          "pooled_quotient_rank_per_cpu_second": 0.19153763326097759,
+          "total_exact_quotient_rank_over_Q": 9
+        },
+        {
+          "case_count": 3,
+          "id": "random43-3",
+          "mean_exact_quotient_rank_over_Q": 3.3333333333333335,
+          "mean_rank_normalized_per_43_covers": 3.3333333333333335,
+          "pooled_quotient_rank_per_cpu_second": 0.222617358138813,
+          "total_exact_quotient_rank_over_Q": 10
+        },
+        {
+          "case_count": 3,
+          "id": "random43-4",
+          "mean_exact_quotient_rank_over_Q": 2.3333333333333335,
+          "mean_rank_normalized_per_43_covers": 2.3333333333333335,
+          "pooled_quotient_rank_per_cpu_second": 0.15471232525022124,
+          "total_exact_quotient_rank_over_Q": 7
+        },
+        {
+          "case_count": 3,
+          "id": "random43-5",
+          "mean_exact_quotient_rank_over_Q": 4.333333333333333,
+          "mean_rank_normalized_per_43_covers": 4.333333333333333,
+          "pooled_quotient_rank_per_cpu_second": 0.2881955352614672,
+          "total_exact_quotient_rank_over_Q": 13
+        },
+        {
+          "case_count": 3,
+          "id": "generic-shallowest43",
+          "mean_exact_quotient_rank_over_Q": 0.0,
+          "mean_rank_normalized_per_43_covers": 0.0,
+          "pooled_quotient_rank_per_cpu_second": 0.0,
+          "total_exact_quotient_rank_over_Q": 0
+        },
+        {
+          "case_count": 3,
+          "id": "generic-median43",
+          "mean_exact_quotient_rank_over_Q": 3.3333333333333335,
+          "mean_rank_normalized_per_43_covers": 3.3333333333333335,
+          "pooled_quotient_rank_per_cpu_second": 0.21190128748043552,
+          "total_exact_quotient_rank_over_Q": 10
+        }
+      ],
+      "random43_across_all_five_arms": {
+        "best_arm_mean_rank": 4.333333333333333,
+        "mean_of_arm_mean_ranks": 3.2,
+        "pooled_quotient_rank_per_cpu_second": 0.2111227217367745
+      }
+    },
+    "cases": [
+      {
+        "arms": [
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 16.57711200000002,
+            "exact_quotient_rank_mod2": 10,
+            "exact_quotient_rank_over_Q": 10,
+            "generic_deepest_overlap": 43,
+            "id": "generic-deepest43",
+            "quotient_rank_per_cpu_second": 0.6032413848684853,
+            "rank_normalized_per_43_covers": 10.0,
+            "specialized_deepest_overlap": 14
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 16.207199999999943,
+            "exact_quotient_rank_mod2": 5,
+            "exact_quotient_rank_over_Q": 5,
+            "generic_deepest_overlap": 14,
+            "id": "specialized-deepest43",
+            "quotient_rank_per_cpu_second": 0.30850486203662675,
+            "rank_normalized_per_43_covers": 5.0,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 72,
+            "cover_cpu_seconds": 26.99514799999995,
+            "exact_quotient_rank_mod2": 10,
+            "exact_quotient_rank_over_Q": 10,
+            "generic_deepest_overlap": 43,
+            "id": "deep-union",
+            "quotient_rank_per_cpu_second": 0.3704369392603448,
+            "rank_normalized_per_43_covers": 5.972222222222222,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.014976000000019,
+            "exact_quotient_rank_mod2": 0,
+            "exact_quotient_rank_over_Q": 0,
+            "generic_deepest_overlap": 0,
+            "id": "random43-1",
+            "quotient_rank_per_cpu_second": 0.0,
+            "rank_normalized_per_43_covers": 0.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.69857900000006,
+            "exact_quotient_rank_mod2": 5,
+            "exact_quotient_rank_over_Q": 5,
+            "generic_deepest_overlap": 0,
+            "id": "random43-2",
+            "quotient_rank_per_cpu_second": 0.3185001648875342,
+            "rank_normalized_per_43_covers": 5.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 13.565703000000084,
+            "exact_quotient_rank_mod2": 3,
+            "exact_quotient_rank_over_Q": 3,
+            "generic_deepest_overlap": 0,
+            "id": "random43-3",
+            "quotient_rank_per_cpu_second": 0.22114592955484735,
+            "rank_normalized_per_43_covers": 3.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.33804499999978,
+            "exact_quotient_rank_mod2": 1,
+            "exact_quotient_rank_over_Q": 1,
+            "generic_deepest_overlap": 0,
+            "id": "random43-4",
+            "quotient_rank_per_cpu_second": 0.06519735729032053,
+            "rank_normalized_per_43_covers": 1.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 13.811405999999948,
+            "exact_quotient_rank_mod2": 2,
+            "exact_quotient_rank_over_Q": 2,
+            "generic_deepest_overlap": 0,
+            "id": "random43-5",
+            "quotient_rank_per_cpu_second": 0.1448078493963618,
+            "rank_normalized_per_43_covers": 2.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 11.403648000000018,
+            "exact_quotient_rank_mod2": 0,
+            "exact_quotient_rank_over_Q": 0,
+            "generic_deepest_overlap": 0,
+            "id": "generic-shallowest43",
+            "quotient_rank_per_cpu_second": 0.0,
+            "rank_normalized_per_43_covers": 0.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 14.699753000000086,
+            "exact_quotient_rank_mod2": 1,
+            "exact_quotient_rank_over_Q": 1,
+            "generic_deepest_overlap": 0,
+            "id": "generic-median43",
+            "quotient_rank_per_cpu_second": 0.0680283539458108,
+            "rank_normalized_per_43_covers": 1.0,
+            "specialized_deepest_overlap": 0
+          }
+        ],
+        "generic_specialized_intersection_count": 14,
+        "label": "curve12-2024-rank29",
+        "maximum_generic_norm": 12,
+        "maximum_generic_norm_stratum_count": 49,
+        "parameter": null,
+        "random43_summary": {
+          "best_rank": 5,
+          "generic_deepest_minus_random_mean": 7.8,
+          "mean_rank": 2.2,
+          "ranks": [
+            0,
+            5,
+            3,
+            1,
+            2
+          ],
+          "specialized_deepest_minus_random_mean": 2.8
+        },
+        "specialized_top43_stable_at_scales_1e5_and_1e6": true,
+        "target_quotient_dimension": 12
+      },
+      {
+        "arms": [
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 16.585804999999908,
+            "exact_quotient_rank_mod2": 12,
+            "exact_quotient_rank_over_Q": 12,
+            "generic_deepest_overlap": 43,
+            "id": "generic-deepest43",
+            "quotient_rank_per_cpu_second": 0.7235102547027453,
+            "rank_normalized_per_43_covers": 12.0,
+            "specialized_deepest_overlap": 11
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 16.5836020000001,
+            "exact_quotient_rank_mod2": 10,
+            "exact_quotient_rank_over_Q": 10,
+            "generic_deepest_overlap": 11,
+            "id": "specialized-deepest43",
+            "quotient_rank_per_cpu_second": 0.6030053060848868,
+            "rank_normalized_per_43_covers": 10.0,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 75,
+            "cover_cpu_seconds": 28.841688000000147,
+            "exact_quotient_rank_mod2": 12,
+            "exact_quotient_rank_over_Q": 12,
+            "generic_deepest_overlap": 43,
+            "id": "deep-union",
+            "quotient_rank_per_cpu_second": 0.4160644134282272,
+            "rank_normalized_per_43_covers": 6.88,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 14.223034999999754,
+            "exact_quotient_rank_mod2": 7,
+            "exact_quotient_rank_over_Q": 7,
+            "generic_deepest_overlap": 0,
+            "id": "random43-1",
+            "quotient_rank_per_cpu_second": 0.4921593738607914,
+            "rank_normalized_per_43_covers": 7.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 14.631750000000267,
+            "exact_quotient_rank_mod2": 4,
+            "exact_quotient_rank_over_Q": 4,
+            "generic_deepest_overlap": 0,
+            "id": "random43-2",
+            "quotient_rank_per_cpu_second": 0.27337809899703913,
+            "rank_normalized_per_43_covers": 4.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 14.637036999999935,
+            "exact_quotient_rank_mod2": 4,
+            "exact_quotient_rank_over_Q": 4,
+            "generic_deepest_overlap": 0,
+            "id": "random43-3",
+            "quotient_rank_per_cpu_second": 0.2732793529182182,
+            "rank_normalized_per_43_covers": 4.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 14.911520000000024,
+            "exact_quotient_rank_mod2": 5,
+            "exact_quotient_rank_over_Q": 5,
+            "generic_deepest_overlap": 0,
+            "id": "random43-4",
+            "quotient_rank_per_cpu_second": 0.3353112224642419,
+            "rank_normalized_per_43_covers": 5.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 14.482951999999898,
+            "exact_quotient_rank_mod2": 7,
+            "exact_quotient_rank_over_Q": 7,
+            "generic_deepest_overlap": 0,
+            "id": "random43-5",
+            "quotient_rank_per_cpu_second": 0.4833268797687135,
+            "rank_normalized_per_43_covers": 7.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 13.580775999999787,
+            "exact_quotient_rank_mod2": 0,
+            "exact_quotient_rank_over_Q": 0,
+            "generic_deepest_overlap": 0,
+            "id": "generic-shallowest43",
+            "quotient_rank_per_cpu_second": 0.0,
+            "rank_normalized_per_43_covers": 0.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.068119999999993,
+            "exact_quotient_rank_mod2": 7,
+            "exact_quotient_rank_over_Q": 7,
+            "generic_deepest_overlap": 0,
+            "id": "generic-median43",
+            "quotient_rank_per_cpu_second": 0.4645569586650493,
+            "rank_normalized_per_43_covers": 7.0,
+            "specialized_deepest_overlap": 0
+          }
+        ],
+        "generic_specialized_intersection_count": 11,
+        "label": "curve356-rank29",
+        "maximum_generic_norm": 12,
+        "maximum_generic_norm_stratum_count": 43,
+        "parameter": null,
+        "random43_summary": {
+          "best_rank": 7,
+          "generic_deepest_minus_random_mean": 6.6,
+          "mean_rank": 5.4,
+          "ranks": [
+            7,
+            4,
+            4,
+            5,
+            7
+          ],
+          "specialized_deepest_minus_random_mean": 4.6
+        },
+        "specialized_top43_stable_at_scales_1e5_and_1e6": true,
+        "target_quotient_dimension": 12
+      },
+      {
+        "arms": [
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 17.414524000000142,
+            "exact_quotient_rank_mod2": 3,
+            "exact_quotient_rank_over_Q": 3,
+            "generic_deepest_overlap": 43,
+            "id": "generic-deepest43",
+            "quotient_rank_per_cpu_second": 0.1722699971586921,
+            "rank_normalized_per_43_covers": 3.0,
+            "specialized_deepest_overlap": 11
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 17.260948000000212,
+            "exact_quotient_rank_mod2": 3,
+            "exact_quotient_rank_over_Q": 3,
+            "generic_deepest_overlap": 11,
+            "id": "specialized-deepest43",
+            "quotient_rank_per_cpu_second": 0.17380273667471585,
+            "rank_normalized_per_43_covers": 3.0,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 75,
+            "cover_cpu_seconds": 29.710734000000343,
+            "exact_quotient_rank_mod2": 4,
+            "exact_quotient_rank_over_Q": 4,
+            "generic_deepest_overlap": 43,
+            "id": "deep-union",
+            "quotient_rank_per_cpu_second": 0.13463147696048014,
+            "rank_normalized_per_43_covers": 2.2933333333333334,
+            "specialized_deepest_overlap": 43
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.85609699999992,
+            "exact_quotient_rank_mod2": 2,
+            "exact_quotient_rank_over_Q": 2,
+            "generic_deepest_overlap": 0,
+            "id": "random43-1",
+            "quotient_rank_per_cpu_second": 0.12613444531778598,
+            "rank_normalized_per_43_covers": 2.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 16.65782599999983,
+            "exact_quotient_rank_mod2": 0,
+            "exact_quotient_rank_over_Q": 0,
+            "generic_deepest_overlap": 0,
+            "id": "random43-2",
+            "quotient_rank_per_cpu_second": 0.0,
+            "rank_normalized_per_43_covers": 0.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 16.717387000000144,
+            "exact_quotient_rank_mod2": 3,
+            "exact_quotient_rank_over_Q": 3,
+            "generic_deepest_overlap": 0,
+            "id": "random43-3",
+            "quotient_rank_per_cpu_second": 0.1794538823561346,
+            "rank_normalized_per_43_covers": 3.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 14.995698999999377,
+            "exact_quotient_rank_mod2": 1,
+            "exact_quotient_rank_over_Q": 1,
+            "generic_deepest_overlap": 0,
+            "id": "random43-4",
+            "quotient_rank_per_cpu_second": 0.06668578770486401,
+            "rank_normalized_per_43_covers": 1.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 16.813905000000034,
+            "exact_quotient_rank_mod2": 4,
+            "exact_quotient_rank_over_Q": 4,
+            "generic_deepest_overlap": 0,
+            "id": "random43-5",
+            "quotient_rank_per_cpu_second": 0.23789833474139363,
+            "rank_normalized_per_43_covers": 4.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 15.31557300000037,
+            "exact_quotient_rank_mod2": 0,
+            "exact_quotient_rank_over_Q": 0,
+            "generic_deepest_overlap": 0,
+            "id": "generic-shallowest43",
+            "quotient_rank_per_cpu_second": 0.0,
+            "rank_normalized_per_43_covers": 0.0,
+            "specialized_deepest_overlap": 0
+          },
+          {
+            "class_count": 43,
+            "cover_cpu_seconds": 17.42391200000037,
+            "exact_quotient_rank_mod2": 2,
+            "exact_quotient_rank_over_Q": 2,
+            "generic_deepest_overlap": 0,
+            "id": "generic-median43",
+            "quotient_rank_per_cpu_second": 0.11478478541443261,
+            "rank_normalized_per_43_covers": 2.0,
+            "specialized_deepest_overlap": 0
+          }
+        ],
+        "generic_specialized_intersection_count": 11,
+        "label": "curve385-rank29",
+        "maximum_generic_norm": 12,
+        "maximum_generic_norm_stratum_count": 43,
+        "parameter": null,
+        "random43_summary": {
+          "best_rank": 4,
+          "generic_deepest_minus_random_mean": 1,
+          "mean_rank": 2,
+          "ranks": [
+            2,
+            0,
+            3,
+            1,
+            4
+          ],
+          "specialized_deepest_minus_random_mean": 1
+        },
+        "specialized_top43_stable_at_scales_1e5_and_1e6": true,
+        "target_quotient_dimension": 12
+      }
+    ]
+  },
+  "identical_budget": {
+    "generic_relation_filter_chunk_size": 128,
+    "generic_relation_filter_timeout_each_chunk": 60.0,
+    "height_bound_each_cover": 100000,
+    "shared_cover_outcome_charged_to_each_containing_arm": true,
+    "single_search_per_distinct_cover": true,
+    "stack_bytes_each_cover": 1000000000,
+    "timeout_seconds_each_cover": 15.0
+  },
+  "input_hashes": {
+    "artifacts/generated-results/elliptic-curves/half_lattice_search_ablation_r17_development_blind_v1.json": "c6b9c15a4dbc75cf9550baf0d1aba0ba3118887a5751dfeafc4c2d013dc85015",
+    "artifacts/generated-results/elliptic-curves/half_lattice_search_ablation_r17_development_verification_v1.json": "59ec611232ada8b0fec052d63a0ee6f72a7372de556e94792e8232cf4320835f",
+    "artifacts/generated-results/elliptic-curves/half_lattice_search_ablation_rank29_holdout_blind_v1.json": "1ee832ce6ecebc0550c008f8a10ccc2d75e727dfe9d5625802624c160e7969e6",
+    "artifacts/generated-results/elliptic-curves/half_lattice_search_ablation_rank29_holdout_verification_v1.json": "aae62d0a582aa55f0c16d7bd0fbd728e6a3f274fa64ce6b826e0873578b3f599",
+    "elliptic-curves/cas/summarize_half_lattice_search_ablation.py": "0b4b81105a4006b1441f9ecfa34e08aa27495e204bd1f51fdf55017f1af2e742"
+  },
+  "interpretation": [
+    "The generic deepest 43 are genuinely enriched: on the three sealed +12 holdouts their mean exact quotient gain is 8.33, versus 3.20 averaged over the five deterministic random arms.",
+    "The generic deepest arm also has the best aggregate holdout CPU efficiency. The specialized deepest arm is useful but is weaker than the generic arm on these holdouts.",
+    "The deep union maximizes raw recovery only when complementary directions occur, but its 64--86 covers make it less efficient per 43 covers and per CPU second than the generic deepest arm.",
+    "Every shallowest arm recovers quotient dimension zero across all seven fibres. This rejects the explanation that merely trying 43 reduced quartic charts accounts for the result.",
+    "Median and random arms can recover many directions, especially on the easier development fibres, so minimization/reduction and multi-chart search remain substantial parts of the mechanism.",
+    "The data favor generic half-lattice geometry as the primary selector, not specialization-specific CVP. This is a calibrated bounded-search finding from five fixed random arms, not a distributional theorem."
+  ],
+  "reproducing_command": "python3 elliptic-curves/cas/summarize_half_lattice_search_ablation.py",
+  "schema": "elliptic-curves.half-lattice-search-ablation-summary.v1",
+  "status": "PASS_EQUAL_BUDGET_BLIND_ABLATION"
+}

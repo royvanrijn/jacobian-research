@@ -1,6 +1,7 @@
 # Elliptic K3 / high-rank programme — ACTIVE
 
-<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
+<!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 185d31609e7702fc -->
 
 The programme is open for theorem-directed breakthrough work. Expensive K3,
 neighbour, descent, and specialization calculations require explicit gates and
@@ -77,7 +78,8 @@ arithmetically excluded. The two newly decided rootless rows have literal
 marked curves `X_H(50)` and `X_H(75)`, each with only rational cusps. The
 determinant-1236 rootless row is now the positive-directed target: its exact
 marked curve is the genus-six `X_0^6(103)/<w_618>`, with an explicit
-genus-two quotient and two rational CM points. Its exact Jacobian splits into
+genus-two quotient having exactly fourteen rational points, and two rational
+CM points upstairs. Its exact Jacobian splits into
 the six rank-one factors `618a1` through `618f1`, isolating a four-factor
 Prym, but its non-CM rational lift is `UNRESOLVED_FOR_EXPLICIT_REASON`. The global `T`-first queue has 820 research
 rows and no new NS/equation handoff. The construction target
@@ -187,7 +189,7 @@ and the batch
 - [`GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md) — exact `X_0(60)` stable curve, rational-point obstruction, and determinant-20 saturation boundary.
 - [`DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md) — exact literal Clifford order, `A4` spin image, stable `X_0(63)`, and rational-point obstruction for the split determinant-378 row.
 - [`DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md`](DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md) — exact `A5` spin actions, stable `X_H(50)`/`X_H(75)` curves, and two rootless-MW17 arithmetic exclusions.
-- [`DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md`](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md) — exact genus-six stable curve, explicit genus-two quotient tower, rational CM controls, six-factor Jacobian/four-factor Prym accounting, and the remaining degree-two non-CM lift obstruction.
+- [`DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md`](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md) — exact genus-six stable curve, explicit genus-two quotient tower with a complete fourteen-point rational locus, rational CM controls, six-factor Jacobian/four-factor Prym accounting, and the remaining degree-two non-CM lift obstruction.
 - [`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md) — exact `T`/Clifford pre-screen, full-marking versus coarse-curve boundary, current `1/5/60` possible/excluded/unknown classification, and equation-agent dispatch rule.
 - [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — global `T`-first milestone, carrier certificate, and prescribed integral `V4` stretch target.
 - [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md) — Fricke-quotient theorem excluding a full rational NS0024 marking and hence arithmetic NS0024/MW17 over `QQ(t)`.
@@ -200,10 +202,10 @@ and the batch
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 0f8194f335b32990 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 5b6c901b8b1fdd15 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK d569364c553007a2 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6043be45b20f8241 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 4fac03efa2d465c7 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 - [`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) — direct noncyclic `4A1/MW13` equation, saturated arithmetic MW13 basis, and target-free reverse hop.
 - [`R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md) — all 43 equations, six exact `j`-classes, record-curve misses, and the exact five-fibre R17 lineage.
@@ -284,7 +286,7 @@ genus-six marked curve.
 
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION bf05d9b06ccc1502 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 b72dee9f991ffe24 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 b8ef1932e51636fa -->
 <!-- status-consumer: OP-EC-NEXT e135b23ef9910845 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->

@@ -57,6 +57,9 @@ GENERATED = ROOT / "artifacts/generated-results"
 CATALOGUE = GENERATED / "elkies-k3-rank7-auxiliary-catalogue-v1.json"
 T_ARITHMETIC = GENERATED / "elkies-k3-rank7-t-arithmetic-v1.json"
 OUTPUT = GENERATED / "elkies-k3-det1236-marked-shimura-curve-v1.json"
+GENUS_TWO_RATIONAL_POINTS = (
+    GENERATED / "elkies-k3-det1236-genus2-rational-points-v1.json"
+)
 
 SURFACE_ID = "K3-6d288cfad55e0d15"
 DETERMINANT = 1236
@@ -213,7 +216,7 @@ def fixed_point_record(D, N, atkin_lehner_label):
     }
 
 
-def build_payload(catalogue, t_arithmetic):
+def build_payload(catalogue, t_arithmetic, genus_two_rational_points):
     surface = next(
         row for row in catalogue["surfaces"] if row["surface_id"] == SURFACE_ID
     )
@@ -228,6 +231,14 @@ def build_payload(catalogue, t_arithmetic):
     assert int(frame["root_rank"]) == 0
     assert int(frame["signed_root_count"]) == 0
     assert int(frame["rootless_intrinsics"]["minimum_squared_norm"]) == 4
+    assert genus_two_rational_points["status"] == (
+        "PASS_DET1236_GENUS2_RATIONAL_POINTS"
+    )
+    assert genus_two_rational_points["curve"]["rational_points_complete"]
+    assert genus_two_rational_points["curve"]["rational_point_count"] == 14
+    assert genus_two_rational_points["mordell_weil_sieve"][
+        "remaining_candidate_cosets"
+    ] == 0
 
     transcendental = matrix(ZZ, surface["surface_key"]["transcendental_gram"])
     expected_transcendental = matrix(
@@ -738,6 +749,9 @@ def build_payload(catalogue, t_arithmetic):
         "inputs": {
             relative(CATALOGUE): digest(CATALOGUE),
             relative(T_ARITHMETIC): digest(T_ARITHMETIC),
+            relative(GENUS_TWO_RATIONAL_POINTS): digest(
+                GENUS_TWO_RATIONAL_POINTS
+            ),
         },
         "rootless_frame_control": {
             "frame_id": FRAME_ID,
@@ -842,6 +856,14 @@ def build_payload(catalogue, t_arithmetic):
             },
             "model": "y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9",
             "verified_rational_points": rational_points_on_genus_two_target,
+            "rational_points_complete": True,
+            "rational_point_certificate": {
+                "artifact": relative(GENUS_TWO_RATIONAL_POINTS),
+                "status": genus_two_rational_points["status"],
+                "method": "bielliptic quadratic Chabauty plus Mordell--Weil sieve",
+                "rational_point_count": 14,
+                "remaining_mock_cosets": 0,
+            },
             "verified_point_images_on_618f1": {
                 "(0,+/-3)": "+/-3*G",
                 "(+/-1,+/-48)": "+/-4*G",
@@ -936,7 +958,7 @@ def build_payload(catalogue, t_arithmetic):
                 "descent class for that cover is presently certified."
             ),
             "why_lower_quotient_points_do_not_decide_it": (
-                "The fourteen verified rational points on the genus-two quotient, and "
+                "The complete set of fourteen rational points on the genus-two quotient, and "
                 "the positive-rank elliptic quotient 618f1, live below a nontrivial "
                 "degree-two marking cover. Their existence supplies no rational point "
                 "upstairs outside the two separately certified discriminant -3 CM points."
@@ -956,6 +978,7 @@ def build_payload(catalogue, t_arithmetic):
             "Ogg's Atkin--Lehner fixed-point and Riemann--Hurwitz formulas",
             "Gonzalez--Rotger's CM residue-field formula for Atkin--Lehner quotients",
             "Padurariu--Saia's exact genus-two quotient model and elliptic quotient identification",
+            "Bianchi--Padurariu bielliptic quadratic Chabauty and the exact Mordell--Weil sieve certificate for B(QQ)",
             "Jacquet--Langlands and the ramified-place Atkin--Lehner sign normalization",
             "the rank-three ternary-spin/fully-marked-K3 period correspondence",
         ],
@@ -974,7 +997,10 @@ def main():
 
     catalogue = json.loads(CATALOGUE.read_text())
     t_arithmetic = json.loads(T_ARITHMETIC.read_text())
-    payload = build_payload(catalogue, t_arithmetic)
+    genus_two_rational_points = json.loads(GENUS_TWO_RATIONAL_POINTS.read_text())
+    payload = build_payload(
+        catalogue, t_arithmetic, genus_two_rational_points
+    )
     rendered = json.dumps(payload, indent=2, sort_keys=True) + "\n"
     if args.check:
         if not args.output.is_file():

@@ -1,0 +1,325 @@
+{
+  "curve": {
+    "label": "B = X_0^6(103)/<w_2,w_309>",
+    "model": "y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9",
+    "rational_point_count": 14,
+    "rational_points": [
+      "(0,+/-3)",
+      "(+/-1,+/-48)",
+      "(+/-1/3,+/-8/3)",
+      "(+/-1/5,+/-312/125)"
+    ],
+    "rational_points_at_infinity": 0,
+    "rational_points_complete": true
+  },
+  "elliptic_quotients": [
+    {
+      "cremona_label": "618f1",
+      "generator_on_working_model": [
+        216,
+        -5184
+      ],
+      "rank_bounds": [
+        1,
+        1
+      ],
+      "torsion_order": 1
+    },
+    {
+      "cremona_label": "618e1",
+      "generator_on_working_model": [
+        9,
+        432
+      ],
+      "rank_bounds": [
+        1,
+        1
+      ],
+      "torsion_order": 1
+    }
+  ],
+  "mordell_weil_sieve": {
+    "automorphism_actions": [
+      "x -> -x: (n1,n2) -> (n1,-n2)",
+      "y -> -y: (n1,n2) -> (-6-n1,-n2)"
+    ],
+    "coordinate_lattice": "Z*G_618f1 x Z*G_618e1",
+    "crt_modulus": 35153041,
+    "initial_candidate_cosets": 231760,
+    "initial_nonempty_omega_count": 405,
+    "remaining_candidate_cosets": 0,
+    "sieve_prime_search_bound": 7000,
+    "trace": [
+      {
+        "after": 76608,
+        "allowed_reduction_pairs": 14,
+        "before": 231760,
+        "gcds_with_crt_modulus": [
+          7,
+          7
+        ],
+        "generator_orders": [
+          35,
+          7
+        ],
+        "prime": 31
+      },
+      {
+        "after": 26576,
+        "allowed_reduction_pairs": 19,
+        "before": 76608,
+        "gcds_with_crt_modulus": [
+          1,
+          49
+        ],
+        "generator_orders": [
+          27,
+          49
+        ],
+        "prime": 37
+      },
+      {
+        "after": 24912,
+        "allowed_reduction_pairs": 47,
+        "before": 26576,
+        "gcds_with_crt_modulus": [
+          49,
+          1
+        ],
+        "generator_orders": [
+          196,
+          186
+        ],
+        "prime": 193
+      },
+      {
+        "after": 13056,
+        "allowed_reduction_pairs": 42,
+        "before": 24912,
+        "gcds_with_crt_modulus": [
+          11,
+          7
+        ],
+        "generator_orders": [
+          88,
+          56
+        ],
+        "prime": 199
+      },
+      {
+        "after": 464,
+        "allowed_reduction_pairs": 94,
+        "before": 13056,
+        "gcds_with_crt_modulus": [
+          77,
+          77
+        ],
+        "generator_orders": [
+          77,
+          231
+        ],
+        "prime": 227
+      },
+      {
+        "after": 424,
+        "allowed_reduction_pairs": 93,
+        "before": 464,
+        "gcds_with_crt_modulus": [
+          1,
+          121
+        ],
+        "generator_orders": [
+          222,
+          242
+        ],
+        "prime": 449
+      },
+      {
+        "after": 296,
+        "allowed_reduction_pairs": 38,
+        "before": 424,
+        "gcds_with_crt_modulus": [
+          11,
+          7
+        ],
+        "generator_orders": [
+          165,
+          175
+        ],
+        "prime": 503
+      },
+      {
+        "after": 236,
+        "allowed_reduction_pairs": 89,
+        "before": 296,
+        "gcds_with_crt_modulus": [
+          121,
+          1
+        ],
+        "generator_orders": [
+          242,
+          768
+        ],
+        "prime": 743
+      },
+      {
+        "after": 156,
+        "allowed_reduction_pairs": 183,
+        "before": 236,
+        "gcds_with_crt_modulus": [
+          1,
+          539
+        ],
+        "generator_orders": [
+          380,
+          1078
+        ],
+        "prime": 1093
+      },
+      {
+        "after": 92,
+        "allowed_reduction_pairs": 88,
+        "before": 156,
+        "gcds_with_crt_modulus": [
+          49,
+          7
+        ],
+        "generator_orders": [
+          1421,
+          105
+        ],
+        "prime": 1427
+      },
+      {
+        "after": 80,
+        "allowed_reduction_pairs": 95,
+        "before": 92,
+        "gcds_with_crt_modulus": [
+          121,
+          1
+        ],
+        "generator_orders": [
+          242,
+          1692
+        ],
+        "prime": 1733
+      },
+      {
+        "after": 60,
+        "allowed_reduction_pairs": 649,
+        "before": 80,
+        "gcds_with_crt_modulus": [
+          1,
+          1331
+        ],
+        "generator_orders": [
+          1319,
+          1331
+        ],
+        "prime": 2647
+      },
+      {
+        "after": 24,
+        "allowed_reduction_pairs": 874,
+        "before": 60,
+        "gcds_with_crt_modulus": [
+          49,
+          847
+        ],
+        "generator_orders": [
+          833,
+          847
+        ],
+        "prime": 3347
+      },
+      {
+        "after": 16,
+        "allowed_reduction_pairs": 47,
+        "before": 24,
+        "gcds_with_crt_modulus": [
+          1,
+          49
+        ],
+        "generator_orders": [
+          580,
+          882
+        ],
+        "prime": 3539
+      },
+      {
+        "after": 8,
+        "allowed_reduction_pairs": 328,
+        "before": 16,
+        "gcds_with_crt_modulus": [
+          343,
+          11
+        ],
+        "generator_orders": [
+          343,
+          5291
+        ],
+        "prime": 5273
+      },
+      {
+        "after": 0,
+        "allowed_reduction_pairs": 60,
+        "before": 8,
+        "gcds_with_crt_modulus": [
+          1331,
+          1
+        ],
+        "generator_orders": [
+          1331,
+          603
+        ],
+        "prime": 6599
+      }
+    ]
+  },
+  "quadratic_chabauty": {
+    "coefficient_modulus_exponent": 4,
+    "compatibility_patch_boundary": "Only two Sage-10.9 point-at-infinity representation tests are changed; the p-adic height and root computations are unchanged.",
+    "compatibility_patched_sha256": "ac350585ecdd795c1ff24ea6e257d4f49cdc43f84482099527e852bd518a423c",
+    "method_source": "Balakrishnan QC_bielliptic",
+    "primes": [
+      {
+        "full_mock_points_after_symmetry": 10250,
+        "nonempty_omega_count": 431,
+        "omega_count": 621,
+        "orbit_mock_points": 2563,
+        "prime": 7,
+        "recognized_rational_orbit_representatives": [
+          "(-1/3 : -8/3 : 1)",
+          "(1 : -48 : 1)",
+          "(1/5 : 312/125 : 1)"
+        ]
+      },
+      {
+        "full_mock_points_after_symmetry": 14052,
+        "nonempty_omega_count": 585,
+        "omega_count": 621,
+        "orbit_mock_points": 3513,
+        "prime": 11,
+        "recognized_rational_orbit_representatives": [
+          "(-1/5 : 312/125 : 1)",
+          "(1 : 48 : 1)",
+          "(1/3 : -8/3 : 1)"
+        ]
+      }
+    ],
+    "rational_orbit_accounting": "At each prime the recognized rational roots are exactly the three known nonzero-x orbits. The exceptional x=0 orbit (0,+/-3) is checked directly; the nonsquare leading coefficient excludes rational points at infinity.",
+    "source_commit": "84af22e9cd1244c3d44e3c083073b44b8d728159",
+    "source_sha256": "8ed7c1d61282d5da3c46cf83ca5b315d4a0a6ad2db8674f3623a54d3b41d3210",
+    "source_url": "https://raw.githubusercontent.com/jbalakrishnan/QC_bielliptic/84af22e9cd1244c3d44e3c083073b44b8d728159/qc_g2_bielliptic.sage",
+    "working_precision": 20
+  },
+  "reproduce": "sage -- elkies-k3/scripts/certify_det1236_genus2_rational_points.sage --fresh",
+  "schema_version": 1,
+  "scope_boundary": "This certifies B(QQ), not rational lifts to the marked genus-six curve C_1236. The determinant-1236 arithmetic gate remains unresolved.",
+  "status": "PASS_DET1236_GENUS2_RATIONAL_POINTS",
+  "theorem_inputs": [
+    "Bianchi's bielliptic quadratic-Chabauty finite-height-value theorem and implementation",
+    "the formal logarithm recovery of Mordell--Weil coefficients modulo p^4",
+    "the Mordell--Weil sieve on reductions of the two saturated rank-one elliptic quotients"
+  ]
+}

@@ -6,7 +6,7 @@
     "verification_fixture": "separate verifier not yet run"
   },
   "claim_boundary": [
-    "Starting subgroup and discovered-point independence are exact finite-reduction results.",
+    "Starting subgroup and discovered-point independence are exact finite-reduction results only when finite_reduction_certificate_valid is true.",
     "The rounded canonical-height CVPs are reproducibly checked at the displayed scales but are numerical evidence.",
     "All point-search misses are bounded, not nonexistence claims.",
     "No family or K3 provenance is inferred from recovery performance."
@@ -21,7 +21,7 @@
   },
   "input_hashes": {
     "elliptic-curves/cas/half_lattice_fake_descent_replay.sage": "8e33f6df508ab6f94f75f446ddb85e3459b73b1abe33ef8a41bfe7d8513f1569",
-    "elliptic-curves/cas/replay_half_lattice_heldout_subgroups.sage": "7c7a7d0832bff7c3d990972bc49d7929b788630217aee2184c644d1e04f18f46",
+    "elliptic-curves/cas/replay_half_lattice_heldout_subgroups.sage": "873346829ba182af7773eb0e540bb9e5398d2c297388c756dd166e68f8e05ee4",
     "elliptic-curves/data/half_lattice_heldout_subgroup_inputs_v1.json": "6ac509ae45aa88e41a827b2d84f672a3d71e57fdfbe451033caff2a41e9416ae"
   },
   "reproducing_command": "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python elliptic-curves/cas/replay_half_lattice_heldout_subgroups.sage",
@@ -376,7 +376,8 @@
         "finite_mod2_quotient_gain": 11,
         "finite_mod2_rank_lower_bound": 23,
         "selected_independent_candidate_count": 11,
-        "unexplained_candidate_count": 34
+        "unexplained_candidate_count": 34,
+        "finite_reduction_certificate_valid": true
       },
       "configuration": "prefix-d12",
       "cover_records": [
@@ -1892,7 +1893,8 @@
         "finite_mod2_quotient_gain": 10,
         "finite_mod2_rank_lower_bound": 25,
         "selected_independent_candidate_count": 10,
-        "unexplained_candidate_count": 28
+        "unexplained_candidate_count": 28,
+        "finite_reduction_certificate_valid": true
       },
       "configuration": "prefix-d15",
       "cover_records": [
@@ -3520,7 +3522,8 @@
         "finite_mod2_quotient_gain": 10,
         "finite_mod2_rank_lower_bound": 27,
         "selected_independent_candidate_count": 10,
-        "unexplained_candidate_count": 26
+        "unexplained_candidate_count": 26,
+        "finite_reduction_certificate_valid": true
       },
       "configuration": "prefix-d17",
       "cover_records": [
@@ -5176,7 +5179,8 @@
         "finite_mod2_quotient_gain": 9,
         "finite_mod2_rank_lower_bound": 27,
         "selected_independent_candidate_count": 9,
-        "unexplained_candidate_count": 20
+        "unexplained_candidate_count": 20,
+        "finite_reduction_certificate_valid": true
       },
       "configuration": "prefix-d18",
       "cover_records": [
@@ -6996,7 +7000,8 @@
         "finite_mod2_quotient_gain": 9,
         "finite_mod2_rank_lower_bound": 26,
         "selected_independent_candidate_count": 9,
-        "unexplained_candidate_count": 32
+        "unexplained_candidate_count": 32,
+        "finite_reduction_certificate_valid": true
       },
       "configuration": "interleaved-d17",
       "cover_records": [
@@ -8532,7 +8537,8 @@
         "finite_mod2_quotient_gain": 4,
         "finite_mod2_rank_lower_bound": 16,
         "selected_independent_candidate_count": 4,
-        "unexplained_candidate_count": 8
+        "unexplained_candidate_count": 8,
+        "finite_reduction_certificate_valid": true
       },
       "configuration": "prefix-d12",
       "cover_records": [
@@ -9888,7 +9894,8 @@
         "finite_mod2_quotient_gain": 4,
         "finite_mod2_rank_lower_bound": 19,
         "selected_independent_candidate_count": 4,
-        "unexplained_candidate_count": 12
+        "unexplained_candidate_count": 12,
+        "finite_reduction_certificate_valid": true
       },
       "configuration": "prefix-d15",
       "cover_records": [
@@ -11316,7 +11323,8 @@
         "finite_mod2_quotient_gain": 3,
         "finite_mod2_rank_lower_bound": 20,
         "selected_independent_candidate_count": 3,
-        "unexplained_candidate_count": 6
+        "unexplained_candidate_count": 6,
+        "finite_reduction_certificate_valid": true
       },
       "configuration": "prefix-d17",
       "cover_records": [
@@ -12852,7 +12860,8 @@
         "finite_mod2_quotient_gain": 4,
         "finite_mod2_rank_lower_bound": 22,
         "selected_independent_candidate_count": 4,
-        "unexplained_candidate_count": 8
+        "unexplained_candidate_count": 8,
+        "finite_reduction_certificate_valid": true
       },
       "configuration": "prefix-d18",
       "cover_records": [
@@ -14512,7 +14521,8 @@
         "finite_mod2_quotient_gain": 4,
         "finite_mod2_rank_lower_bound": 21,
         "selected_independent_candidate_count": 4,
-        "unexplained_candidate_count": 16
+        "unexplained_candidate_count": 16,
+        "finite_reduction_certificate_valid": true
       },
       "configuration": "interleaved-d17",
       "cover_records": [
@@ -96125,10 +96135,11 @@
           }
         ],
         "distinct_nonbasis_candidates": 8494,
-        "finite_mod2_quotient_gain": -12,
-        "finite_mod2_rank_lower_bound": 0,
-        "selected_independent_candidate_count": 0,
-        "unexplained_candidate_count": 7938
+        "finite_mod2_quotient_gain": null,
+        "finite_mod2_rank_lower_bound": null,
+        "selected_independent_candidate_count": null,
+        "unexplained_candidate_count": 7938,
+        "finite_reduction_certificate_valid": false
       },
       "configuration": "prefix-d12",
       "cover_records": [
@@ -191420,10 +191431,11 @@
           }
         ],
         "distinct_nonbasis_candidates": 9772,
-        "finite_mod2_quotient_gain": -17,
-        "finite_mod2_rank_lower_bound": 0,
-        "selected_independent_candidate_count": 0,
-        "unexplained_candidate_count": 9359
+        "finite_mod2_quotient_gain": null,
+        "finite_mod2_rank_lower_bound": null,
+        "selected_independent_candidate_count": null,
+        "unexplained_candidate_count": 9359,
+        "finite_reduction_certificate_valid": false
       },
       "configuration": "prefix-d17",
       "cover_records": [
@@ -276722,10 +276734,11 @@
           }
         ],
         "distinct_nonbasis_candidates": 9566,
-        "finite_mod2_quotient_gain": -18,
-        "finite_mod2_rank_lower_bound": 0,
-        "selected_independent_candidate_count": 0,
-        "unexplained_candidate_count": 8342
+        "finite_mod2_quotient_gain": null,
+        "finite_mod2_rank_lower_bound": null,
+        "selected_independent_candidate_count": null,
+        "unexplained_candidate_count": 8342,
+        "finite_reduction_certificate_valid": false
       },
       "configuration": "prefix-d18",
       "cover_records": [

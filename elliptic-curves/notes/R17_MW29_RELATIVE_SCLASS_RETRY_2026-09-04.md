@@ -140,6 +140,69 @@ or an equivalent ray-class/complete relative-descent provider.  The complete
 MW29-relative 2-Selmer quotients remain `UNKNOWN`; none of the bounded
 dimensions `38` and `35` is an upper bound.
 
+## One-sided PARI class-quotient attempt
+
+The record-pair PARI 2.19 runner now has a separate
+`class-quotient-upper` mode.  It calls `bnfinit(f,0,tech)` and then
+`bnfcertify(b,1)`.  A completed run would prove that the true class group is
+a quotient of PARI's computed group, so the computed mod-two dimension would
+be an unconditional class-group upper bound without certifying fundamental
+units.  The mode has a distinct completion status and checkpoint scope; its
+checkpoint must not be passed to a consumer requiring certified units.  A
+small cubic smoke test verified binary checkpoint reload and repeat
+certification before the record fields were attempted.
+
+Matched 300-second runs used the best previous wide relation settings
+`[0.3,4,20,10000,4,8]`.  Both remained inside `bnfinit`, before any class
+group or certification result:
+
+| curve | factor-base ideals | state at timeout | furthest auxiliary rational prime |
+| ---: | ---: | --- | ---: |
+| 356 | 3,026 | requesting 2,456 small-norm relations | 13 |
+| 385 | 3,092 | requesting 2,528 small-norm relations | 17 |
+
+Repeating with serial relation collection (`usethr=0`) was strictly dominated
+in the same budget: both runs reached only the first auxiliary-prime pass, at
+2.  Thus the flag-zero shortcut avoids the later unit-certification work but
+does not avoid the actual front-end bottleneck, relation generation.
+
+The final parameter probe used the smaller `c1=0.03` factor base on curve 356
+and swept the previously untried ideal powers 2, 6, 8, and 12.  The factor
+base shrank to 468 ideals and each 120-second lane completed 54--55 random
+relation rounds, but every round after the initial reduction retained the
+same request pair: 345 relations in 340 ideals.  No lane changed that request
+pair, so the predeclared promotion criterion for a curve-385 run was not met.
+Increasing the budget of this generic collector is not supported by the
+canaries.
+
+All runs ended `strict_wall_timeout`; no binary checkpoint survived and no
+class-group, S-class, Selmer, or rank upper bound was produced.  The exact
+JSON certificates are under
+`artifacts/local/elliptic-curves/r17-class-quotient-upper-v1/`:
+
+- `curve356-canary300.json`:
+  `57b9ff7b92b176212d5320bc01b7f23d133ae8ff379295a94298ea9a0bb9e9c1`;
+- `curve385-canary300.json`:
+  `ab9b8d504c1b47209a7d87e28a59821035b3847f20046ed980e7c885ff8465c2`;
+- `curve356-serial-canary300.json`:
+  `98b808435cbb78e5df336a48650aab2a811409198c8b5a2ea9b03b1fa618256c`;
+- `curve385-serial-canary300.json`:
+  `159a75ff8de6dbe1cdd9e94eea8c733aa16d068899b8628e39abcd244653285c`;
+- ideal-power 2, 6, 8, and 12 JSONs, respectively:
+  `5048d3aec40f32c5e7c5b5ae54cbf2e391e988e729ece75a9fc74cf95c3b7a6a`,
+  `8a86c61c6081a0afc90699fa454ff16ba48e34943fd52db33cdc80e2165ea911`,
+  `3be908d91285d021bcf91cd1c545249970fed81a2a221eb73a9dcc98a448f0f6`,
+  and `b51cb738e5b100819eacebc5d07233f5793d00a62f354741ab9f5574a0b2c0b2`.
+
+The remaining credible closure route is consequently a specialized
+two-class/ray-class provider or an independent proof that a deliberately
+small set of prime ideals generates the relevant quotient.  It should feed
+the already implemented MW29-relative witness/local-condition layer; another
+generic full-BNF parameter campaign should not be the next expenditure.
+The installed Hecke 0.40.2 `ray_class_group(...; n_quo=2)` is not such a
+provider: its source first calls the ordinary `class_group(O; GRH=...)` and
+only then applies `n_part_class_group` to the completed class-group map.
+
 ## Replay
 
 For each curve, refine the retained cofactor tranche without a new search:

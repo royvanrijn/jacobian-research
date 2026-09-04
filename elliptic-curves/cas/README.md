@@ -117,6 +117,16 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   rational two-cover witnesses. Together with the finite-reduction quotient
   certificate this proves a residual 2-Selmer lower bound of 11 and validates
   the cover layer on genuine classes; it supplies no upper bound.
+- `replay_half_lattice_search_ablation.sage`: fixture-blind equal-budget
+  comparison of generic/specialized deep, union, five SHA-random, median, and
+  shallow half-lattice chart sets. It checkpoints development and sealed
+  holdout phases separately, uses identical per-cover reduction/search limits,
+  and records parent-plus-child CPU cost.
+- `verify_half_lattice_search_ablation.sage` and
+  `summarize_half_lattice_search_ablation.py`: load public points only after
+  hashing the blind artifact, compute exact quotient ranks over `Q` and
+  mod 2 for every arm, and emit the compact cross-phase comparison. Bounded
+  misses remain bounded-search misses.
 - `build_elkies_2026_rank28_relative_descent_magma.py`: replays the certified
   generic Kummer image and emits an unconditional basis-level Selmer job whose
   rejection gate precedes all residual-cover construction.
@@ -176,6 +186,15 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   branch. It retains a binary checkpoint only after `bnfcertify`; timeouts
   retain factor-base and relation-deficit telemetry but no class-group or
   Selmer claim.
+- `run_elkies_2026_record_pari219_bnf.py`: record-pair specialization with
+  exact discriminant-factor hints. Its `class-quotient-upper` mode starts with
+  `bnfinit(...,0)` and certifies only that the true class group is a quotient
+  of the computed group via `bnfcertify(...,1)`. Thus a completed mod-two
+  dimension is an unconditional upper bound without fundamental-unit
+  certification; its checkpoint metadata explicitly says that it is not a
+  full-BNF Selmer input.
+  Resource stops preserve compact per-strategy relation-search telemetry and
+  make no class-group, Selmer, or rank claim.
 - `run_elkies_2026_pari219_selmer_from_bnf.py`: reloads such a certified BNF
   in the same GP build, applies the shared Simon norm/sign/local-condition
   implementation, and records algebraic Selmer representatives plus the

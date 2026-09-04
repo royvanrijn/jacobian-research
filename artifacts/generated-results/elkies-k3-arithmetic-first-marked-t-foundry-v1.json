@@ -4342,7 +4342,12 @@
         {
           "assertions_replayed": 11,
           "path": "artifacts/generated-results/elkies-k3-det1236-marked-shimura-curve-v1.json",
-          "sha256": "a1c9976a6607a5ff771bd453b13b00d351ab8252a194d7acb930a476f89c3f2b"
+          "sha256": "d3fcb9cbba3643c5d4258705dab4026b63b0e0648c0f24cc14f690f4d09cac93"
+        },
+        {
+          "assertions_replayed": 4,
+          "path": "artifacts/generated-results/elkies-k3-det1236-genus2-rational-points-v1.json",
+          "sha256": "6c14dbce0ba93fd751b023b3a252df664160a04691e2191bfea6183ddc7662ff"
         }
       ],
       "coarse_curve_diagnostic": {
@@ -4365,7 +4370,7 @@
         "reduced_discriminant": 618,
         "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
       },
-      "next_gate": "Construct the degree-two cover from X_0^6(103)/<w_618> to y^2=1944*x^6+441*x^4-90*x^2+9 and decide rational lifts; do not begin K3 equation work before a non-CM lift is certified.",
+      "next_gate": "Construct the degree-two cover from X_0^6(103)/<w_618> to y^2=1944*x^6+441*x^4-90*x^2+9 and decide the twelve non-fixed rational fibers in the complete set of fourteen quotient points; do not begin K3 equation work before a non-CM lift is certified.",
       "phase_2_certificate_status": "UNRESOLVED_FOR_EXPLICIT_REASON",
       "phase_one_priority_key": [
         5,
@@ -4392,6 +4397,7 @@
         "Ogg's Atkin--Lehner fixed-point and Riemann--Hurwitz formulas",
         "Gonzalez--Rotger's CM residue-field formula for Atkin--Lehner quotients",
         "Padurariu--Saia's exact genus-two quotient model and elliptic quotient identification",
+        "Bianchi--Padurariu bielliptic quadratic Chabauty and the exact two-factor Mordell--Weil sieve certificate for B(QQ)",
         "Jacquet--Langlands and the ramified-place Atkin--Lehner sign normalization",
         "the rank-three ternary-spin/fully-marked-K3 period correspondence"
       ],
@@ -50639,7 +50645,7 @@
     }
   ],
   "inputs": {
-    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "4a44cafb558dfe64a023180614b5e224bf29a256d2f721fea46e8357117a0783",
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "6c4e44e77d5394baa22d5ee38e0ac5b00d458890817031579aec53e92586e230",
     "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985",
     "elkies-k3/data/arithmetic/arithmetic-first-marking-decisions-v1.json": "7d8c88e1b89e10d98280cabaee9ccab70db176b398d825a9ce1752479a4a425f"
   },

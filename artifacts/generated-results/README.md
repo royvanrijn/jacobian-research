@@ -15,6 +15,24 @@ Do not move a local cache file into this directory merely to preserve it.
 Promote only a compact manifest or independently checkable reference artifact,
 and document the exact command and whole-file SHA-256.
 
+- `elliptic-curves/half_lattice_search_ablation_summary_v1.json` is the
+  compact equal-budget comparison of generic-deepest, specialized-deepest,
+  union, five deterministic-random, median-depth, and shallowest half-lattice
+  chart sets. Development uses the R17 +8 through +11 fibres; curve 12 and
+  ICARM curves 356/385 are fixture-sealed +12 holdouts. Its supporting blind
+  and exact-verification artifacts retain the per-cover CPU ledger and exact
+  public-quotient relations. Replay with
+  `replay_half_lattice_search_ablation.sage --phase development|holdout`, then
+  `verify_half_lattice_search_ablation.sage` with the matching phase and
+  `summarize_half_lattice_search_ablation.py`. The five artifact hashes
+  (development blind, development verification, holdout blind, holdout
+  verification, summary) are respectively
+  `c6b9c15a4dbc75cf9550baf0d1aba0ba3118887a5751dfeafc4c2d013dc85015`,
+  `59ec611232ada8b0fec052d63a0ee6f72a7372de556e94792e8232cf4320835f`,
+  `1ee832ce6ecebc0550c008f8a10ccc2d75e727dfe9d5625802624c160e7969e6`,
+  `aae62d0a582aa55f0c16d7bd0fbd728e6a3f274fa64ce6b826e0873578b3f599`,
+  and `66f5f477b71154d6f3d4b172fb3616c6b61017aa605a6df33db2cc484a586901`.
+
 - `elliptic-curves/icarm_curve302_point_cloud_v1.json` records canonical
   mod-2 and mod-3 finite-reduction row spaces through prime 1000, exact
   denominator and squareclass diagnostics, frozen-training held-out rational
@@ -52,11 +70,12 @@ local cache so it cannot become a competing mathematical-status authority.
   The exact `--check` command is recorded in `REPRODUCE.md`.
 
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 5b6c901b8b1fdd15 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6043be45b20f8241 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 4fac03efa2d465c7 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 9e9e0a1a8ac7c088 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
-<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
+<!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 185d31609e7702fc -->
 
 - `elkies-k3-rank19-arithmetic-marking-classifier-v1.json` records exact
   NS/T/Clifford data for all 66 rootless-MW17 candidate surfaces, separates
@@ -69,8 +88,8 @@ local cache so it cannot become a competing mathematical-status authority.
   both with
   `sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check`.
   Their whole-file SHA-256 values are respectively
-  `4a44cafb558dfe64a023180614b5e224bf29a256d2f721fea46e8357117a0783`
-  and `965bb1102954896ef51e4d88a6e09bd0b0013ce3fb89183be7eb1b374df947f8`.
+  `6c4e44e77d5394baa22d5ee38e0ac5b00d458890817031579aec53e92586e230`
+  and `4301534a61c0828b308c9f0b6a9d1482f13095fb7800026357379ce0056d373d`.
 
 - `elkies-k3-det500-det750-qq-marking-obstructions-v1.json` reconstructs the
   literal and primitive Clifford orders for the two selected rootless rows,
@@ -81,12 +100,27 @@ local cache so it cannot become a competing mathematical-status authority.
   Its whole-file SHA-256 is
   `e1f74fd18fd17976a05d4340437fe09e841e28efdf681e2945098b3dc51b81de`.
 
+- `elkies-k3-det1236-genus2-rational-points-v1.json` proves that the exact
+  genus-two quotient
+  `y^2=1944*x^6+441*x^4-90*x^2+9` has precisely fourteen rational points.
+  It records the pinned upstream bielliptic quadratic-Chabauty source and
+  compatibility patch hashes, the certified rank-one generators on `618e1`
+  and `618f1`, the complete `p=7,11` residue-class computation, and the
+  exact Mordell--Weil-sieve trace ending with zero classes at `6599`. It
+  does not decide which of the twelve non-fixed points lift to the marked
+  genus-six curve. Replay the cached certificate with
+  `sage -- elkies-k3/scripts/certify_det1236_genus2_rational_points.sage --check`;
+  add `--fresh` to rebuild the quadratic-Chabauty caches from the pinned
+  upstream source. Its whole-file SHA-256 is
+  `6c14dbce0ba93fd751b023b3a252df664160a04691e2191bfea6183ddc7662ff`.
+
 - `elkies-k3-det1236-marked-shimura-curve-v1.json` reconstructs the literal
   even Clifford order of the determinant-1236 rootless row, computes its
   full discriminant action, and identifies the exact marked curve as the
   genus-six Shimura quotient `X_0^6(103)/<w_618>`. It certifies two rational
   discriminant `-3` CM points, one quadratic discriminant-`-24` CM closed
-  point, and fourteen rational points on the genus-two quotient. Their
+  point, and imports the proof that the fourteen displayed points are the
+  complete rational-point set on the genus-two quotient. Their
   elliptic images are `+/-G`, `+/-3G`, `+/-4G`, and `+/-10G`; the two fixed
   fibers are separated and twelve non-fixed fibers remain. No non-CM
   rational point on the marked curve is certified. Its exact
@@ -95,11 +129,11 @@ local cache so it cannot become a competing mathematical-status authority.
   have rank one, so classical Chabauty does not apply but the necessary
   split-Jacobian quadratic-Chabauty dimension inequality passes. The row is
   therefore `UNRESOLVED_FOR_EXPLICIT_REASON`: the remaining exact gate is
-  the rational-point problem on the degree-two cover of the displayed
-  genus-two quotient. Replay it with
+  the rational lifting of the twelve non-fixed quotient points through the
+  degree-two cover. Replay it with
   `sage -python elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage --check`.
   Its whole-file SHA-256 is
-  `a1c9976a6607a5ff771bd453b13b00d351ab8252a194d7acb930a476f89c3f2b`.
+  `d3fcb9cbba3643c5d4258705dab4026b63b0e0648c0f24cc14f690f4d09cac93`.
 
 - `elkies-k3-golay-det720-qq-marking-obstruction-v1.json` records the exact
   literal and primitive-similarity Clifford orders, the `S3` action on
@@ -117,7 +151,7 @@ local cache so it cannot become a competing mathematical-status authority.
   NS/rootless handoff. Replay it with
   `python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check`.
   Its whole-file SHA-256 is
-  `0e3bb568e0d762ae7dfd25319b924318bdcebcd175da6034aec4aed6f722a671`.
+  `794344a2255a49c0682fb58168037c52be13133c2892764d04f0892f825f0e54`.
 
 - `elkies-k3-det378-qq-marking-obstruction-v1.json` records the exact
   `U(3)+<42>` discriminant form, primitive and literal Clifford orders, `A4`

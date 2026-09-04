@@ -96,6 +96,8 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-golay-det720-qq-marking-obstruction-v1.json
 !/artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json
 !/artifacts/generated-results/elkies-k3-det378-qq-marking-obstruction-v1.json
+!/artifacts/generated-results/elkies-k3-det1236-genus2-rational-points-v1.json
+!/artifacts/generated-results/elkies-k3-det1236-marked-shimura-curve-v1.json
 !/artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json
 !/artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json
 !/artifacts/generated-results/elkies-k3-r17-multisection-visibility-filtration-v1.json

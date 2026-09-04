@@ -1,0 +1,9167 @@
+{
+  "blind_artifact_sha256_before_fixture_load": "2cb953918852070adaeb8e3f60137a8887d19c53d61c486003590b85be3408f5",
+  "claim_boundary": [
+    "The quotient dimension, relations, and recovered span are exact inside the displayed public rank-21 subgroup.",
+    "The underlying point search remains bounded."
+  ],
+  "exact_blind_recovered_quotient_dimension": 4,
+  "full_public_quotient_recovered": true,
+  "input_hashes": {
+    "artifacts/generated-results/elliptic-curves/half_lattice_r17_rank21_blind_v1.json": "2cb953918852070adaeb8e3f60137a8887d19c53d61c486003590b85be3408f5",
+    "artifacts/generated-results/elliptic-curves/icarm_curve394_rank21_v1.json": "52baf1357f91e01f9fab1722bdcfb55c86bd8ef9051bd2318a186d6a007ff476",
+    "elliptic-curves/cas/verify_r17_rank21_half_lattice_control.sage": "ec274acdd62b014894b96f985c402346c83933a72d106636f9aa1140547b5250"
+  },
+  "productive_centers": [
+    {
+      "half_class": "0x0101b",
+      "quotient_span": 2
+    },
+    {
+      "half_class": "0x016a3",
+      "quotient_span": 3
+    },
+    {
+      "half_class": "0x01b43",
+      "quotient_span": 2
+    },
+    {
+      "half_class": "0x020cb",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x050a0",
+      "quotient_span": 3
+    },
+    {
+      "half_class": "0x05cf7",
+      "quotient_span": 3
+    },
+    {
+      "half_class": "0x06226",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x06c27",
+      "quotient_span": 1
+    },
+    {
+      "half_class": "0x071dc",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x07416",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x084c8",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x08692",
+      "quotient_span": 3
+    },
+    {
+      "half_class": "0x0989e",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x09b90",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x0b936",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x0ba11",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x0bb5b",
+      "quotient_span": 3
+    },
+    {
+      "half_class": "0x0ddbf",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x0de57",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x0e2f4",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x0e916",
+      "quotient_span": 1
+    },
+    {
+      "half_class": "0x0f127",
+      "quotient_span": 2
+    },
+    {
+      "half_class": "0x1188f",
+      "quotient_span": 2
+    },
+    {
+      "half_class": "0x1222e",
+      "quotient_span": 3
+    },
+    {
+      "half_class": "0x1240c",
+      "quotient_span": 3
+    },
+    {
+      "half_class": "0x127e4",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x12fee",
+      "quotient_span": 2
+    },
+    {
+      "half_class": "0x141f8",
+      "quotient_span": 1
+    },
+    {
+      "half_class": "0x149fe",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x14c60",
+      "quotient_span": 3
+    },
+    {
+      "half_class": "0x14ce0",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x14e42",
+      "quotient_span": 2
+    },
+    {
+      "half_class": "0x14fd0",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x15886",
+      "quotient_span": 3
+    },
+    {
+      "half_class": "0x16c2b",
+      "quotient_span": 2
+    },
+    {
+      "half_class": "0x182ce",
+      "quotient_span": 4
+    },
+    {
+      "half_class": "0x18f2e",
+      "quotient_span": 2
+    },
+    {
+      "half_class": "0x1c89a",
+      "quotient_span": 2
+    },
+    {
+      "half_class": "0x1cb7b",
+      "quotient_span": 3
+    },
+    {
+      "half_class": "0x1ed9b",
+      "quotient_span": 3
+    },
+    {
+      "half_class": "0x1f2a5",
+      "quotient_span": 4
+    }
+  ],
+  "public_complement_indices_one_based": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "public_exceptional_quotient_dimension": 4,
+  "relations": [
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xd",
+      "relation": [
+        5,
+        -1,
+        1,
+        0,
+        1,
+        -1,
+        4,
+        1,
+        0,
+        0,
+        3,
+        3,
+        3,
+        -1,
+        -2,
+        -1,
+        2,
+        -1,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x149fe"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        2,
+        1,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x071dc"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        1
+      ],
+      "quotient_hex": "0xa",
+      "relation": [
+        0,
+        0,
+        -2,
+        0,
+        1,
+        -1,
+        1,
+        1,
+        0,
+        -1,
+        2,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        2,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -4,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -2,
+        -1,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0b936"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -1,
+        1,
+        -1,
+        2,
+        -1,
+        1,
+        -2,
+        -1,
+        0,
+        -1,
+        -2,
+        -2,
+        -1,
+        1,
+        1,
+        2,
+        -1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1f2a5"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xf",
+      "relation": [
+        1,
+        1,
+        -1,
+        1,
+        0,
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        -1,
+        -2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x08692"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        6,
+        1,
+        0,
+        0,
+        3,
+        -2,
+        4,
+        1,
+        0,
+        0,
+        3,
+        2,
+        3,
+        -2,
+        -1,
+        -1,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x16c2b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -6,
+        -1,
+        0,
+        0,
+        -3,
+        2,
+        -4,
+        -1,
+        0,
+        0,
+        -3,
+        -2,
+        -3,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xe",
+      "relation": [
+        4,
+        1,
+        0,
+        -1,
+        3,
+        -3,
+        4,
+        1,
+        -1,
+        1,
+        4,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        2,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x1ed9b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        2,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14c60"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        3,
+        0,
+        -1,
+        0,
+        2,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        3,
+        0,
+        3,
+        -1,
+        0,
+        -1,
+        3,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -2,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0989e"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        5,
+        2,
+        -1,
+        0,
+        4,
+        -4,
+        5,
+        0,
+        -1,
+        1,
+        4,
+        2,
+        3,
+        -2,
+        -1,
+        -2,
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1c89a"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        -1
+      ],
+      "quotient_hex": "0xa",
+      "relation": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        -2,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "source_half_classes": [
+        "0x09b90"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0f127"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xe",
+      "relation": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x09b90"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -4,
+        -2,
+        1,
+        -1,
+        -2,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -2,
+        1,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x020cb"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        -7,
+        -2,
+        0,
+        -1,
+        -2,
+        0,
+        -3,
+        -2,
+        -1,
+        0,
+        0,
+        -2,
+        -2,
+        2,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x020cb"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        1,
+        0,
+        -1
+      ],
+      "quotient_hex": "0xb",
+      "relation": [
+        4,
+        2,
+        0,
+        0,
+        2,
+        -1,
+        3,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        -1
+      ],
+      "source_half_classes": [
+        "0x182ce"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        8,
+        2,
+        -1,
+        0,
+        4,
+        -3,
+        6,
+        2,
+        0,
+        0,
+        4,
+        3,
+        4,
+        -3,
+        0,
+        -2,
+        3,
+        1,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x084c8"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        -5,
+        -1,
+        1,
+        -1,
+        -2,
+        1,
+        -3,
+        -1,
+        0,
+        0,
+        -2,
+        -2,
+        -3,
+        2,
+        -1,
+        1,
+        -2,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x071dc"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        3,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        2,
+        0,
+        -1,
+        0,
+        2,
+        2,
+        2,
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x18f2e"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xd",
+      "relation": [
+        3,
+        1,
+        -1,
+        1,
+        2,
+        -2,
+        2,
+        0,
+        -1,
+        0,
+        2,
+        1,
+        2,
+        -1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x0ddbf"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -5,
+        1,
+        -2,
+        0,
+        0,
+        -1,
+        -2,
+        -1,
+        -1,
+        0,
+        -1,
+        -3,
+        -2,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x127e4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        9,
+        0,
+        1,
+        0,
+        4,
+        -2,
+        6,
+        2,
+        0,
+        1,
+        4,
+        4,
+        4,
+        -3,
+        -1,
+        -1,
+        3,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x06226"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -3,
+        1,
+        0,
+        0,
+        -2,
+        2,
+        -3,
+        -1,
+        1,
+        0,
+        -4,
+        -3,
+        -3,
+        1,
+        1,
+        2,
+        -3,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x08692"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -1,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14ce0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -4,
+        0,
+        -2,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        -1,
+        0,
+        0,
+        -2,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x127e4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -2,
+        1,
+        -2,
+        1,
+        0,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x07416"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        1,
+        1,
+        -1,
+        0,
+        1,
+        -2,
+        2,
+        -1,
+        -1,
+        1,
+        2,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x182ce"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xe",
+      "relation": [
+        -3,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        -2,
+        -1,
+        -1,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -2,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x0b936"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        -3,
+        0,
+        -1,
+        1,
+        -1,
+        0,
+        -2,
+        0,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x07416"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x06226"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x1cb7b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        4,
+        1,
+        -1,
+        0,
+        2,
+        -1,
+        2,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14c60"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -3,
+        0,
+        0,
+        1,
+        -3,
+        3,
+        -4,
+        -1,
+        1,
+        -1,
+        -4,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        -2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0b936"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        5,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        5,
+        2,
+        1,
+        0,
+        3,
+        2,
+        2,
+        -2,
+        -1,
+        -2,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1ed9b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -5,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -5,
+        -2,
+        -1,
+        0,
+        -3,
+        -2,
+        -2,
+        2,
+        1,
+        2,
+        -2,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14e42"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -2,
+        -2,
+        1,
+        0,
+        -3,
+        3,
+        -3,
+        0,
+        1,
+        -1,
+        -2,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        2,
+        2,
+        -1,
+        0,
+        3,
+        -3,
+        3,
+        0,
+        -1,
+        1,
+        2,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0ba11"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        0,
+        1,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        -1,
+        -1,
+        -2,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x071dc"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        1,
+        1,
+        -1,
+        1,
+        2,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x050a0",
+        "0x14ce0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x6",
+      "relation": [
+        5,
+        1,
+        0,
+        0,
+        4,
+        -3,
+        5,
+        0,
+        -1,
+        1,
+        4,
+        2,
+        3,
+        -2,
+        -2,
+        -1,
+        2,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x14ce0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0ddbf",
+        "0x1f2a5"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xd",
+      "relation": [
+        -2,
+        -1,
+        1,
+        0,
+        -3,
+        3,
+        -4,
+        1,
+        1,
+        -1,
+        -3,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        -5,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        -2,
+        -1,
+        0,
+        0,
+        -1,
+        -2,
+        -2,
+        2,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x071dc"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        -1
+      ],
+      "quotient_hex": "0xa",
+      "relation": [
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -2,
+        0,
+        -2,
+        -1,
+        2,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "source_half_classes": [
+        "0x09b90"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -3,
+        -1,
+        0,
+        1,
+        -2,
+        1,
+        -2,
+        -2,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0101b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        2,
+        1,
+        -1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x07416"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -5,
+        -1,
+        0,
+        0,
+        -3,
+        2,
+        -4,
+        -1,
+        0,
+        0,
+        -3,
+        -2,
+        -2,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        4,
+        1,
+        0,
+        0,
+        3,
+        -2,
+        3,
+        0,
+        0,
+        1,
+        2,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x09b90"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xe",
+      "relation": [
+        3,
+        0,
+        2,
+        -1,
+        2,
+        -1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x15886"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        4,
+        1,
+        -1,
+        0,
+        3,
+        -2,
+        4,
+        2,
+        0,
+        0,
+        3,
+        2,
+        2,
+        -2,
+        0,
+        -2,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1ed9b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -4,
+        -1,
+        1,
+        0,
+        -3,
+        2,
+        -4,
+        -2,
+        0,
+        0,
+        -3,
+        -2,
+        -2,
+        2,
+        0,
+        2,
+        -2,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14e42"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -1,
+        -1,
+        1,
+        0,
+        -1,
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x15886"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        1,
+        0,
+        0,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        -1,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x084c8"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -1,
+        0,
+        0,
+        -1,
+        1,
+        -2,
+        1,
+        -1,
+        -1,
+        1,
+        2,
+        0,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x1188f"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x141f8"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        1,
+        -1,
+        1,
+        -2,
+        2,
+        -3,
+        3,
+        0,
+        -1,
+        1,
+        4,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x084c8",
+        "0x16c2b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -1,
+        1,
+        -1,
+        2,
+        -2,
+        3,
+        -3,
+        0,
+        1,
+        -1,
+        -4,
+        -2,
+        -2,
+        1,
+        2,
+        2,
+        -2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1f2a5"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xe",
+      "relation": [
+        -5,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        -3,
+        -2,
+        0,
+        0,
+        -2,
+        -3,
+        -2,
+        2,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        1,
+        0
+      ],
+      "quotient_hex": "0x7",
+      "relation": [
+        -3,
+        0,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        0,
+        -1,
+        -1,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x182ce"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -4,
+        -2,
+        0,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x07416"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x084c8"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        3,
+        2,
+        -1,
+        1,
+        2,
+        -2,
+        2,
+        0,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0ddbf"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -6,
+        -2,
+        2,
+        -1,
+        -3,
+        1,
+        -4,
+        -2,
+        -1,
+        1,
+        -2,
+        -1,
+        -2,
+        2,
+        -1,
+        1,
+        -2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0b936"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        2,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x14fd0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        1,
+        0
+      ],
+      "quotient_hex": "0x6",
+      "relation": [
+        -5,
+        -1,
+        0,
+        0,
+        -2,
+        2,
+        -4,
+        -1,
+        1,
+        -1,
+        -3,
+        -3,
+        -3,
+        2,
+        1,
+        1,
+        -1,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x14ce0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        -1,
+        0,
+        -2,
+        2,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x1f2a5"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xd",
+      "relation": [
+        4,
+        1,
+        -2,
+        1,
+        2,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        3,
+        1,
+        3,
+        -2,
+        1,
+        -1,
+        3,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x084c8"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -2,
+        -1,
+        1,
+        -1,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        1,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x5",
+      "relation": [
+        -2,
+        -2,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        -1,
+        1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x07416"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        0,
+        -1,
+        1,
+        0,
+        -2,
+        2,
+        -2,
+        1,
+        1,
+        0,
+        -2,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        -2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14c60"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        0,
+        0,
+        -1,
+        0,
+        1,
+        -2,
+        1,
+        0,
+        -1,
+        0,
+        2,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0ba11"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -1,
+        -1,
+        1,
+        0,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        1,
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14fd0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        -4,
+        -2,
+        1,
+        -1,
+        -2,
+        1,
+        -3,
+        -1,
+        0,
+        0,
+        -1,
+        -2,
+        -2,
+        2,
+        0,
+        1,
+        -1,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1240c"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        3,
+        0,
+        0,
+        0,
+        2,
+        -2,
+        2,
+        0,
+        -1,
+        0,
+        3,
+        2,
+        3,
+        -1,
+        -1,
+        -1,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0bb5b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x020cb"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        5,
+        1,
+        1,
+        -1,
+        3,
+        -2,
+        4,
+        1,
+        0,
+        1,
+        2,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x071dc"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -2,
+        1,
+        -2,
+        1,
+        0,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x016a3"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        0,
+        -1,
+        1,
+        0,
+        -2,
+        3,
+        -2,
+        0,
+        1,
+        0,
+        -2,
+        -1,
+        -1,
+        1,
+        0,
+        2,
+        -1,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x01b43"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        0,
+        0,
+        -1,
+        1,
+        -1,
+        1,
+        -2,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14c60"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        4,
+        0,
+        1,
+        -1,
+        3,
+        -2,
+        4,
+        0,
+        0,
+        1,
+        3,
+        2,
+        2,
+        -1,
+        -2,
+        -1,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x050a0",
+        "0x14ce0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "quotient_hex": "0x8",
+      "relation": [
+        -2,
+        0,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        -2,
+        -2,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "source_half_classes": [
+        "0x1f2a5"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        2,
+        2,
+        -2,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        -2,
+        0,
+        0,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14fd0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x5",
+      "relation": [
+        2,
+        1,
+        -1,
+        1,
+        1,
+        -2,
+        2,
+        0,
+        -1,
+        0,
+        2,
+        1,
+        2,
+        -1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0ba11"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        7,
+        2,
+        -1,
+        1,
+        3,
+        -1,
+        3,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        -2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14c60"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -1,
+        -2,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1240c"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        -1
+      ],
+      "quotient_hex": "0xa",
+      "relation": [
+        6,
+        1,
+        1,
+        0,
+        2,
+        -1,
+        4,
+        1,
+        0,
+        1,
+        2,
+        3,
+        2,
+        -2,
+        -1,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "source_half_classes": [
+        "0x149fe"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -3,
+        0,
+        -1,
+        0,
+        -1,
+        1,
+        -2,
+        1,
+        1,
+        -1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x07416"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xd",
+      "relation": [
+        1,
+        2,
+        -1,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x084c8"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xd",
+      "relation": [
+        4,
+        1,
+        -1,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        2,
+        -1,
+        1,
+        0,
+        2,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x14fd0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xd",
+      "relation": [
+        0,
+        1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        -1,
+        -2,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        5,
+        2,
+        -2,
+        0,
+        4,
+        -4,
+        5,
+        1,
+        -1,
+        0,
+        5,
+        2,
+        3,
+        -2,
+        -1,
+        -2,
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1ed9b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -1,
+        1,
+        -2,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        1,
+        -2,
+        0,
+        0,
+        1,
+        -1,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x020cb"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xe",
+      "relation": [
+        -3,
+        -1,
+        -1,
+        0,
+        -1,
+        1,
+        -2,
+        -1,
+        0,
+        -1,
+        0,
+        -2,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x020cb"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0989e"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xe",
+      "relation": [
+        2,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x149fe"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        0,
+        -1,
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x084c8"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        0,
+        1,
+        -2,
+        0,
+        2,
+        -2,
+        2,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x127e4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        3,
+        0,
+        0,
+        0,
+        3,
+        -4,
+        4,
+        -1,
+        -2,
+        1,
+        5,
+        2,
+        4,
+        -1,
+        -2,
+        -2,
+        3,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x1c89a"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        2,
+        0,
+        0,
+        -1,
+        1,
+        -1,
+        2,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        -1,
+        0,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x084c8"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xf",
+      "relation": [
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x0ba11"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -5,
+        0,
+        -1,
+        0,
+        -1,
+        1,
+        -3,
+        -1,
+        0,
+        0,
+        -2,
+        -3,
+        -3,
+        2,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x09b90"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xe",
+      "relation": [
+        -3,
+        0,
+        -1,
+        0,
+        -1,
+        1,
+        -2,
+        0,
+        1,
+        -1,
+        -2,
+        -3,
+        -2,
+        2,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x071dc"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        1
+      ],
+      "quotient_hex": "0xa",
+      "relation": [
+        -3,
+        -1,
+        0,
+        0,
+        -2,
+        2,
+        -3,
+        0,
+        1,
+        -1,
+        -2,
+        -2,
+        -2,
+        2,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "source_half_classes": [
+        "0x071dc"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        3,
+        2,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x016a3"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        2,
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x084c8"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        1,
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        0,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0989e"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        -6,
+        -2,
+        1,
+        0,
+        -5,
+        4,
+        -6,
+        0,
+        1,
+        -1,
+        -5,
+        -2,
+        -3,
+        2,
+        2,
+        2,
+        -3,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x05cf7"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        -1
+      ],
+      "quotient_hex": "0xa",
+      "relation": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "source_half_classes": [
+        "0x14fd0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        2,
+        1,
+        -2,
+        0,
+        3,
+        -3,
+        3,
+        0,
+        -1,
+        0,
+        4,
+        0,
+        2,
+        -1,
+        0,
+        -2,
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x020cb"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xf",
+      "relation": [
+        -7,
+        -2,
+        1,
+        -1,
+        -3,
+        1,
+        -4,
+        -2,
+        0,
+        0,
+        -2,
+        -2,
+        -2,
+        2,
+        -1,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x0b936"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14c60"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        -6,
+        -1,
+        0,
+        0,
+        -3,
+        3,
+        -5,
+        -1,
+        1,
+        -1,
+        -4,
+        -3,
+        -4,
+        2,
+        1,
+        2,
+        -3,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14ce0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -7,
+        0,
+        -1,
+        1,
+        -3,
+        2,
+        -6,
+        -2,
+        0,
+        0,
+        -4,
+        -4,
+        -4,
+        3,
+        1,
+        2,
+        -3,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x09b90"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        5,
+        1,
+        1,
+        0,
+        3,
+        -1,
+        3,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14ce0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -2,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0ddbf"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        1,
+        -1,
+        1,
+        0,
+        -1,
+        1,
+        0,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14fd0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        1
+      ],
+      "quotient_hex": "0xa",
+      "relation": [
+        -3,
+        -1,
+        -1,
+        0,
+        -1,
+        1,
+        -2,
+        0,
+        1,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "source_half_classes": [
+        "0x020cb"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        1,
+        0,
+        -1,
+        0,
+        1,
+        -1,
+        1,
+        1,
+        0,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x084c8"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x050a0",
+        "0x14ce0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x05cf7"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        -2,
+        -1,
+        0,
+        -1,
+        1,
+        -3,
+        1,
+        -1,
+        -2,
+        1,
+        3,
+        1,
+        1,
+        1,
+        -2,
+        -1,
+        1,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0ba11"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -2,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        -2,
+        0,
+        1,
+        -1,
+        -1,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14fd0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -2,
+        2,
+        -2,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -2,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x182ce"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        2,
+        -2,
+        2,
+        0,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x05cf7"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x08692"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -4,
+        -1,
+        1,
+        0,
+        -2,
+        1,
+        -3,
+        -1,
+        -1,
+        1,
+        -2,
+        -1,
+        -2,
+        1,
+        0,
+        1,
+        -2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x127e4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1188f"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1f2a5"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "quotient_hex": "0x8",
+      "relation": [
+        -4,
+        -1,
+        0,
+        0,
+        -2,
+        1,
+        -2,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "source_half_classes": [
+        "0x0b936"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        0,
+        1,
+        -1,
+        0,
+        2,
+        -3,
+        2,
+        -1,
+        -2,
+        1,
+        2,
+        0,
+        1,
+        0,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x127e4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        -2,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        -2,
+        -1,
+        0,
+        0,
+        -2,
+        -1,
+        -2,
+        1,
+        0,
+        1,
+        -2,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x1f2a5"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        0,
+        -1,
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x0101b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        1
+      ],
+      "quotient_hex": "0xa",
+      "relation": [
+        1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "source_half_classes": [
+        "0x14fd0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x06226"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1cb7b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        3,
+        -1,
+        1,
+        -1,
+        2,
+        -2,
+        3,
+        1,
+        -1,
+        1,
+        3,
+        3,
+        2,
+        -1,
+        -2,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0ba11"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        1,
+        0,
+        0,
+        -1,
+        1,
+        -1,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        2,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0989e"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        -3,
+        -2,
+        1,
+        0,
+        -2,
+        1,
+        -3,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        1,
+        0,
+        1,
+        -1,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x06226"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        5,
+        -1,
+        1,
+        -1,
+        3,
+        -2,
+        4,
+        0,
+        0,
+        1,
+        4,
+        2,
+        3,
+        -1,
+        -2,
+        -1,
+        3,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x0bb5b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -4,
+        0,
+        -1,
+        0,
+        1,
+        -2,
+        -1,
+        -2,
+        -1,
+        0,
+        1,
+        -2,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14ce0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        -1
+      ],
+      "quotient_hex": "0xa",
+      "relation": [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        -1,
+        0,
+        2,
+        0,
+        1,
+        -1,
+        0,
+        -2,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "source_half_classes": [
+        "0x182ce"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -4,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        -2,
+        -1,
+        0,
+        0,
+        -1,
+        -2,
+        -2,
+        2,
+        -1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x071dc"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -6,
+        1,
+        -2,
+        0,
+        -1,
+        -1,
+        -3,
+        -2,
+        -1,
+        0,
+        -1,
+        -3,
+        -2,
+        2,
+        1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x127e4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xd",
+      "relation": [
+        -1,
+        -2,
+        1,
+        -1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x0989e"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0989e"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -3,
+        -1,
+        0,
+        0,
+        -2,
+        1,
+        -3,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1240c"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        0,
+        -1,
+        2,
+        -1,
+        -1,
+        2,
+        -1,
+        1,
+        1,
+        0,
+        -2,
+        0,
+        -2,
+        1,
+        -1,
+        1,
+        -2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x071dc"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -2,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x182ce"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -1,
+        1,
+        -2,
+        2,
+        0,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1f2a5"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        -4,
+        0,
+        -1,
+        1,
+        -1,
+        0,
+        -3,
+        -1,
+        -1,
+        0,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x127e4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        0,
+        -1
+      ],
+      "quotient_hex": "0x8",
+      "relation": [
+        -5,
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        -3,
+        -3,
+        -1,
+        2,
+        -2,
+        -2,
+        -3,
+        2,
+        -1,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "source_half_classes": [
+        "0x09b90"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        6,
+        1,
+        0,
+        0,
+        5,
+        -4,
+        6,
+        0,
+        -1,
+        1,
+        5,
+        2,
+        4,
+        -2,
+        -2,
+        -2,
+        4,
+        1,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14ce0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        -1,
+        1,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x016a3"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xe",
+      "relation": [
+        -3,
+        0,
+        -1,
+        1,
+        -2,
+        2,
+        -3,
+        0,
+        0,
+        -1,
+        -2,
+        -2,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x12fee"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "quotient_hex": "0x8",
+      "relation": [
+        2,
+        -1,
+        -1,
+        0,
+        1,
+        -1,
+        2,
+        1,
+        0,
+        -1,
+        3,
+        1,
+        3,
+        -1,
+        0,
+        -2,
+        3,
+        0,
+        0,
+        0,
+        1
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        -1
+      ],
+      "quotient_hex": "0xa",
+      "relation": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "source_half_classes": [
+        "0x1f2a5"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        3,
+        2,
+        -1,
+        0,
+        3,
+        -3,
+        3,
+        0,
+        -1,
+        1,
+        2,
+        1,
+        2,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1c89a"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x5",
+      "relation": [
+        -2,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x127e4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        3,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0,
+        2,
+        3,
+        2,
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14c60"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xe",
+      "relation": [
+        -2,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x14ce0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -2,
+        2,
+        -1,
+        1,
+        0,
+        0,
+        -2,
+        -1,
+        0,
+        0,
+        -2,
+        -2,
+        -2,
+        0,
+        1,
+        1,
+        -2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x09b90",
+        "0x0ddbf"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -3,
+        -1,
+        0,
+        1,
+        -3,
+        3,
+        -4,
+        1,
+        1,
+        -1,
+        -4,
+        -1,
+        -2,
+        1,
+        2,
+        1,
+        -2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x07416"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -2,
+        1,
+        -1,
+        1,
+        -2,
+        1,
+        -2,
+        0,
+        0,
+        -1,
+        -2,
+        -1,
+        -1,
+        0,
+        1,
+        1,
+        -2,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x1cb7b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        2,
+        -1,
+        1,
+        -1,
+        2,
+        -1,
+        2,
+        0,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0,
+        -1,
+        -1,
+        2,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x06226"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x0f127"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        -1
+      ],
+      "quotient_hex": "0x9",
+      "relation": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        -1
+      ],
+      "source_half_classes": [
+        "0x149fe"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        -1,
+        0,
+        0,
+        -1,
+        2,
+        -2,
+        1,
+        -1,
+        -1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x14ce0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -4,
+        -2,
+        2,
+        -1,
+        -3,
+        3,
+        -3,
+        -1,
+        1,
+        0,
+        -3,
+        -1,
+        -2,
+        2,
+        -1,
+        1,
+        -2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x141f8"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -2,
+        1,
+        0,
+        -2,
+        0,
+        2,
+        1,
+        2,
+        -1,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x06c27"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -3,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        -2,
+        -2,
+        0,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        0,
+        1,
+        -2,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -2,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x020cb"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x06226",
+        "0x15886"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x01b43",
+        "0x127e4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -1,
+        0,
+        1,
+        0,
+        -1,
+        1,
+        -2,
+        -1,
+        0,
+        1,
+        -2,
+        0,
+        -1,
+        0,
+        0,
+        2,
+        -2,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x016a3"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        -10,
+        -1,
+        0,
+        0,
+        -4,
+        2,
+        -7,
+        -3,
+        0,
+        0,
+        -5,
+        -4,
+        -5,
+        3,
+        1,
+        2,
+        -4,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x09b90"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x14c60"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -5,
+        -1,
+        1,
+        0,
+        -2,
+        1,
+        -4,
+        -2,
+        -1,
+        1,
+        -2,
+        -2,
+        -2,
+        2,
+        0,
+        1,
+        -2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x09b90"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -2,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x1240c"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        0,
+        -1
+      ],
+      "quotient_hex": "0x8",
+      "relation": [
+        -5,
+        1,
+        -1,
+        0,
+        -1,
+        -1,
+        -3,
+        -2,
+        -1,
+        1,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -6,
+        -2,
+        1,
+        -1,
+        -3,
+        2,
+        -4,
+        -1,
+        1,
+        0,
+        -3,
+        -2,
+        -3,
+        2,
+        0,
+        1,
+        -2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x07416"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        9,
+        0,
+        2,
+        -1,
+        3,
+        -1,
+        6,
+        2,
+        1,
+        1,
+        3,
+        4,
+        3,
+        -2,
+        -2,
+        -1,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0e916"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        -2,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x09b90"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -2,
+        -1,
+        0,
+        0,
+        -1,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x07416",
+        "0x1222e",
+        "0x1240c"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -1,
+        0,
+        -1,
+        1,
+        -1,
+        1,
+        -2,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        0,
+        2,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x01b43"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        -7,
+        0,
+        -1,
+        0,
+        -2,
+        0,
+        -4,
+        -2,
+        -1,
+        0,
+        -2,
+        -3,
+        -3,
+        2,
+        1,
+        1,
+        -2,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x6",
+      "relation": [
+        4,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        3,
+        1,
+        0,
+        0,
+        2,
+        2,
+        3,
+        -2,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0ddbf"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -3,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        1,
+        -1,
+        -1,
+        -2,
+        1,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        9,
+        1,
+        1,
+        -1,
+        5,
+        -3,
+        7,
+        2,
+        0,
+        1,
+        5,
+        4,
+        4,
+        -3,
+        -2,
+        -2,
+        3,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x16c2b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xd",
+      "relation": [
+        -4,
+        -1,
+        1,
+        0,
+        -2,
+        0,
+        -2,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x1f2a5"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        6,
+        0,
+        0,
+        0,
+        2,
+        -1,
+        4,
+        2,
+        0,
+        0,
+        3,
+        3,
+        3,
+        -2,
+        -1,
+        -1,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14c60"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        2,
+        -1,
+        0,
+        -1,
+        1,
+        -2,
+        3,
+        1,
+        0,
+        0,
+        3,
+        2,
+        2,
+        -1,
+        -1,
+        -2,
+        2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x084c8"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        1,
+        0,
+        0,
+        -1,
+        1,
+        -1,
+        2,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        -1,
+        0,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x016a3",
+        "0x16c2b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        -3,
+        -1,
+        0,
+        0,
+        -2,
+        1,
+        -3,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        -1,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        1,
+        0
+      ],
+      "quotient_hex": "0x7",
+      "relation": [
+        -2,
+        -2,
+        0,
+        0,
+        -2,
+        2,
+        -2,
+        1,
+        1,
+        -1,
+        -1,
+        0,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        -1,
+        -1,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x06226"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        6,
+        1,
+        0,
+        1,
+        3,
+        -1,
+        3,
+        1,
+        0,
+        1,
+        1,
+        2,
+        2,
+        -2,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x06226"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x5",
+      "relation": [
+        1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        -1,
+        0,
+        2,
+        1,
+        2,
+        -1,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xe",
+      "relation": [
+        2,
+        -1,
+        3,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x0bb5b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x5",
+      "relation": [
+        -2,
+        1,
+        -1,
+        1,
+        0,
+        -1,
+        -1,
+        -2,
+        -1,
+        1,
+        -1,
+        -2,
+        -1,
+        1,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x127e4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        3,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        -1,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1222e"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        3,
+        0,
+        1,
+        -1,
+        2,
+        -2,
+        3,
+        0,
+        0,
+        1,
+        2,
+        1,
+        1,
+        0,
+        -2,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x071dc"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xf",
+      "relation": [
+        -6,
+        -1,
+        -1,
+        0,
+        -2,
+        1,
+        -3,
+        -1,
+        0,
+        0,
+        -2,
+        -3,
+        -3,
+        2,
+        0,
+        1,
+        -2,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x127e4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        -3,
+        3,
+        -1,
+        -1,
+        1,
+        4,
+        2,
+        2,
+        -1,
+        -2,
+        -2,
+        2,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1c89a"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x3",
+      "relation": [
+        -3,
+        -2,
+        1,
+        -1,
+        -1,
+        0,
+        -2,
+        -1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0bb5b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        3,
+        0,
+        1,
+        -1,
+        2,
+        -1,
+        3,
+        1,
+        0,
+        1,
+        2,
+        2,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0989e"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        1,
+        0
+      ],
+      "quotient_hex": "0x6",
+      "relation": [
+        -3,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        -3,
+        -1,
+        0,
+        0,
+        -2,
+        -2,
+        -2,
+        2,
+        0,
+        1,
+        -2,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x14e42"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        1,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x7",
+      "relation": [
+        3,
+        1,
+        0,
+        0,
+        3,
+        -2,
+        3,
+        -1,
+        -1,
+        1,
+        2,
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        1,
+        1,
+        1,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x020cb"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -2,
+        -2,
+        2,
+        -2,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x1240c"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xe",
+      "relation": [
+        -4,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        -2,
+        -1,
+        0,
+        0,
+        -1,
+        -2,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x07416"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -5,
+        0,
+        0,
+        0,
+        -2,
+        1,
+        -4,
+        -1,
+        0,
+        0,
+        -3,
+        -2,
+        -3,
+        1,
+        1,
+        1,
+        -3,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0ddbf"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -4,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        -3,
+        -1,
+        0,
+        0,
+        -2,
+        -2,
+        -2,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x09b90"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        4,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        3,
+        2,
+        0,
+        0,
+        3,
+        3,
+        2,
+        -1,
+        -2,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14c60"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        2,
+        0,
+        -1,
+        0,
+        1,
+        -1,
+        2,
+        1,
+        0,
+        -1,
+        3,
+        1,
+        2,
+        -1,
+        0,
+        -1,
+        2,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x1ed9b"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        3,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x149fe"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -3,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x01b43",
+        "0x07416"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        0,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        2,
+        -1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x5",
+      "relation": [
+        2,
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x084c8"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xe",
+      "relation": [
+        -4,
+        0,
+        -1,
+        1,
+        -1,
+        0,
+        -3,
+        -2,
+        -1,
+        0,
+        -1,
+        -2,
+        -1,
+        1,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x09b90"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        1
+      ],
+      "quotient_hex": "0xa",
+      "relation": [
+        -1,
+        -1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        2,
+        -1,
+        1,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "source_half_classes": [
+        "0x1222e"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        4,
+        1,
+        -2,
+        1,
+        2,
+        -1,
+        2,
+        1,
+        0,
+        -1,
+        2,
+        0,
+        2,
+        -1,
+        1,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xf",
+      "relation": [
+        2,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        -1,
+        1,
+        0,
+        -1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x12fee"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        0,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x084c8",
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        0,
+        -1,
+        1,
+        -1,
+        1,
+        -2,
+        2,
+        0,
+        -1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        -2,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0ba11"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -1,
+        1,
+        -1,
+        2,
+        -1,
+        0,
+        -2,
+        -1,
+        -1,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0ddbf"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        2,
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        -1,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x18f2e"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xd",
+      "relation": [
+        6,
+        1,
+        -1,
+        1,
+        3,
+        -3,
+        5,
+        1,
+        -1,
+        0,
+        4,
+        3,
+        4,
+        -2,
+        -1,
+        -1,
+        3,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x0ba11"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        0,
+        0,
+        -1,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x06226"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "quotient_hex": "0x8",
+      "relation": [
+        3,
+        0,
+        -1,
+        0,
+        2,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        3,
+        1,
+        3,
+        -1,
+        0,
+        -2,
+        3,
+        0,
+        0,
+        0,
+        1
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x5",
+      "relation": [
+        -5,
+        0,
+        0,
+        0,
+        -2,
+        0,
+        -3,
+        -2,
+        -1,
+        1,
+        -2,
+        -2,
+        -2,
+        2,
+        0,
+        1,
+        -2,
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x5",
+      "relation": [
+        -6,
+        -1,
+        1,
+        -1,
+        -2,
+        0,
+        -3,
+        -3,
+        -1,
+        2,
+        -2,
+        -2,
+        -2,
+        2,
+        -1,
+        1,
+        -2,
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        5,
+        0,
+        0,
+        0,
+        3,
+        -2,
+        5,
+        1,
+        0,
+        0,
+        4,
+        2,
+        3,
+        -2,
+        -1,
+        -2,
+        3,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x14ce0"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "quotient_hex": "0x8",
+      "relation": [
+        4,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        2,
+        2,
+        1,
+        -1,
+        2,
+        1,
+        2,
+        -1,
+        0,
+        -1,
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        4,
+        2,
+        -1,
+        0,
+        3,
+        -2,
+        3,
+        1,
+        0,
+        0,
+        2,
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x08692"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        0,
+        1,
+        -2,
+        1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x07416"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        1,
+        -1,
+        0,
+        -1,
+        2,
+        -3,
+        3,
+        0,
+        -1,
+        0,
+        4,
+        1,
+        3,
+        -1,
+        -1,
+        -2,
+        3,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0e2f4"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -2,
+        -2,
+        2,
+        -1,
+        -2,
+        2,
+        -2,
+        0,
+        1,
+        0,
+        -2,
+        -1,
+        -2,
+        1,
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x020cb"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        4,
+        0,
+        0,
+        -1,
+        2,
+        -1,
+        3,
+        2,
+        1,
+        0,
+        2,
+        2,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x14c60"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        -2,
+        -1,
+        0,
+        0,
+        -1,
+        1,
+        -2,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x020cb"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        2,
+        1,
+        0,
+        0,
+        1,
+        -1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "source_half_classes": [
+        "0x016a3"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        -1,
+        0,
+        1
+      ],
+      "quotient_hex": "0xa",
+      "relation": [
+        -1,
+        0,
+        -2,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        2,
+        -1,
+        1,
+        0,
+        0,
+        -1,
+        2,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "source_half_classes": [
+        "0x182ce"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        1,
+        -1,
+        0,
+        -1,
+        1,
+        -1,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        0,
+        -1,
+        -1,
+        2,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "source_half_classes": [
+        "0x020cb"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xc",
+      "relation": [
+        -3,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        1,
+        -1,
+        -1,
+        -3,
+        1,
+        -1,
+        0,
+        -2,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x182ce"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "quotient_hex": "0x4",
+      "relation": [
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_half_classes": [
+        "0x1240c"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        -2,
+        -1,
+        0,
+        -1,
+        0,
+        -2,
+        1,
+        0,
+        -1,
+        0,
+        2,
+        1,
+        1,
+        0,
+        -1,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0ba11"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        2,
+        -1,
+        2,
+        -1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x020cb",
+        "0x1240c"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "quotient_hex": "0x1",
+      "relation": [
+        0,
+        1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x020cb"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        1,
+        0,
+        1,
+        -1
+      ],
+      "quotient_hex": "0xd",
+      "relation": [
+        -3,
+        2,
+        -1,
+        0,
+        0,
+        0,
+        -2,
+        -1,
+        0,
+        1,
+        -3,
+        -2,
+        -3,
+        1,
+        1,
+        1,
+        -2,
+        1,
+        0,
+        1,
+        -1
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    },
+    {
+      "quotient_coordinates": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "quotient_hex": "0x2",
+      "relation": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_half_classes": [
+        "0x0de57"
+      ]
+    }
+  ],
+  "reproducing_command": "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python elliptic-curves/cas/verify_r17_rank21_half_lattice_control.sage",
+  "schema": "elliptic-curves.half-lattice-r17-rank21-verification.v1",
+  "status": "PASS_EXACT_R17_RANK21_HELDOUT_RELATIONS",
+  "verified_candidate_sample_count": 256
+}

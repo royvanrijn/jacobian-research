@@ -274,15 +274,17 @@ def main() -> None:
             )
             columns = list(range(dimension))
             current_rank = restricted_signature_rank(combined_signatures, columns)
+            certificate_valid = current_rank == dimension and combined_rank >= dimension
             selected_offsets = []
-            for offset in range(len(unexplained)):
-                trial = columns + [dimension + offset]
-                trial_rank = restricted_signature_rank(combined_signatures, trial)
-                if trial_rank > current_rank:
-                    selected_offsets.append(offset)
-                    columns = trial
-                    current_rank = trial_rank
-            if current_rank != combined_rank:
+            if certificate_valid:
+                for offset in range(len(unexplained)):
+                    trial = columns + [dimension + offset]
+                    trial_rank = restricted_signature_rank(combined_signatures, trial)
+                    if trial_rank > current_rank:
+                        selected_offsets.append(offset)
+                        columns = trial
+                        current_rank = trial_rank
+            if certificate_valid and current_rank != combined_rank:
                 raise ArithmeticError(f"{key}: greedy quotient basis lost rank")
             unexplained_index = {point: index for index, point in enumerate(unexplained)}
             candidate_rows = []
@@ -294,7 +296,9 @@ def main() -> None:
                     {
                         "point": point_record(point),
                         "source_masks": sorted(discoveries[point]),
-                        "selected_for_independent_quotient_basis": offset in selected_offsets,
+                        "selected_for_independent_quotient_basis": (
+                            certificate_valid and offset in selected_offsets
+                        ),
                     }
                 )
             results.append(
@@ -311,9 +315,14 @@ def main() -> None:
                     "blind_result": {
                         "distinct_nonbasis_candidates": len(candidates),
                         "unexplained_candidate_count": len(unexplained),
-                        "finite_mod2_rank_lower_bound": combined_rank,
-                        "finite_mod2_quotient_gain": combined_rank - dimension,
-                        "selected_independent_candidate_count": len(selected_offsets),
+                        "finite_reduction_certificate_valid": certificate_valid,
+                        "finite_mod2_rank_lower_bound": combined_rank if certificate_valid else None,
+                        "finite_mod2_quotient_gain": (
+                            combined_rank - dimension if certificate_valid else None
+                        ),
+                        "selected_independent_candidate_count": (
+                            len(selected_offsets) if certificate_valid else None
+                        ),
                         "candidate_points": candidate_rows,
                     },
                 }
@@ -343,7 +352,7 @@ def main() -> None:
         "configuration_count": len(results),
         "results": results,
         "claim_boundary": [
-            "Starting subgroup and discovered-point independence are exact finite-reduction results.",
+            "Starting subgroup and discovered-point independence are exact finite-reduction results only when finite_reduction_certificate_valid is true.",
             "The rounded canonical-height CVPs are reproducibly checked at the displayed scales but are numerical evidence.",
             "All point-search misses are bounded, not nonexistence claims.",
             "No family or K3 provenance is inferred from recovery performance.",
