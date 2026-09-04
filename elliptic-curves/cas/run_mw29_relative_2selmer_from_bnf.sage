@@ -1,5 +1,5 @@
 #!/usr/bin/env sage
-"""Run Simon local conditions only after quotienting all 29 known Kummer classes.
+"""Run post-discovery closure after quotienting all 29 known Kummer classes.
 
 This is the certified-BNF backend for the quotient-native descent.  It does
 not construct a full Selmer basis or enumerate coverings.  Its order is:
@@ -15,6 +15,10 @@ The BNF is only one provider for the global envelope.  The emitted ambient
 manifest is also the interchange format for a future F2-only class-relation
 provider, so the local quotient machinery does not depend on how the global
 upper bound was certified.
+
+This backend assumes that all twelve directions beyond MW17 are already
+known.  It is not a prospective MW17-relative replay and cannot calibrate or
+authorize the Selmer candidate gate.
 """
 
 from __future__ import annotations
@@ -613,6 +617,8 @@ def main() -> None:
             "protocol": PROTOCOL,
             "status": status,
             "curve_id": args.curve_id,
+            "operational_role": "post-discovery MW29-relative closure only",
+            "prospective_mw17_candidate_gate_evidence": False,
             "inputs": {
                 "public_certificate": str(public_path),
                 "public_certificate_sha256": digest(public_path),
@@ -658,7 +664,9 @@ def main() -> None:
                 "The zero-excess status is an unconditional relative Selmer upper "
                 "bound from the certified global envelope, exact local subset, and "
                 "certified parity sharpening when used. "
-                "A nonzero kernel is exact only after every relevant place is complete."
+                "A nonzero kernel is exact only after every relevant place is complete. "
+                "Because P18..P29 are quotient inputs, this result cannot calibrate a "
+                "prospective MW17-only candidate gate."
             ),
         }
 

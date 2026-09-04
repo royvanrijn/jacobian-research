@@ -117,6 +117,10 @@
             "source": {
               "path": "artifacts/generated-results/elliptic-curves/r17_bisection_gain_ranker_quarantined_replay_v1.json",
               "sha256": "f6f07cf5a19c71adb73ed193fcb98af6640b08749689646debff61201e9e4d36"
+            },
+            "arithmetic_group_gate": {
+              "path": "artifacts/generated-results/elliptic-curves/r17_training_arithmetic_group_audit_v1.json",
+              "sha256": "589e8856bd75b286c8a9e59bf14f06a327dc5d74fedacf7256bcf96ec2e9c22e"
             }
           }
         }

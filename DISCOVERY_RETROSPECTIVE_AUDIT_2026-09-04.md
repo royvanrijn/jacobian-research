@@ -547,12 +547,19 @@ by ID rather than silently normalizing them:
   in the rank-32 gate.  Forty exact policy tests cover incomplete backends,
   provisional S-class data, norm-one local inconclusives, model/parameter
   binding, residual thresholds, and all five expensive-search entry points.
-- [x] Require residual dimension at least 15 on the same minimal curve before
-  any expensive rank-32 cover or point campaign.  Every retained entry point
-  rejects before starting its search unless the completed unconditional gate
-  is bound to that exact parameter and global minimal model.
-- [ ] Revisit curve 273, curve 302, and low-conductor near misses only through
-  completed residual descent or a sharper unconditional upper-bound route.
+- [x] Require the family-relative residual dimension `32-r` on the same
+  minimal curve before any expensive rank-32 cover or point campaign, where
+  `r` is the certified generic rank.  The retained MW17 entry points enforce
+  threshold 15; a reconstructed A1/MW16 campaign must enforce threshold 16.
+  Every search gate must be bound to the exact parameter and global minimal
+  model.
+- [ ] Treat curve-398 A1/MW16 reconstruction and curve-302 parent-family
+  reconstruction as a first-class rank-32 path parallel to R17/MW17.  For 398,
+  recover the exact fibration, parameter, sixteen-section map, and rank-14
+  displayed quotient before neighbourhood search.  For 302, work from the
+  complete 31-point configuration without assuming a generic rank or
+  `17+14` split.  Keep curve 273 and low-conductor near misses behind completed
+  residual descent or a sharper unconditional upper-bound route.
 - [x] Preserve exact native K3 fibres as calibration controls without assuming
   rational parameter transport between different fibrations.  The compact
   published-R17 rank-25--28 fibres remain bound to their literal parameters,

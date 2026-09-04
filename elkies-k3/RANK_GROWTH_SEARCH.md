@@ -1,12 +1,13 @@
 # Ignition-first rank-growth search
 
 > **Historical pre-endpoint workflow.** The rank-17 model and its seventeen
-> generic sections have since been recovered exactly.  Current rank-32 work
-> must first pass the fail-closed residual quotient
+> generic sections have since been recovered exactly.  Current use in the
+> R17/MW17 rank-32 lane must first pass the fail-closed residual quotient
 > `Sel_2(E_t)/<P1,...,P17>` on the same parameter and minimal curve.  This
 > height-Gram ignition/cascade interface remains useful only after that gate or
 > for replaying historical controls; it is not authorization for a raw point
-> search.  See [`README.md`](README.md) and
+> search and is not the gate for the peer curve-398/curve-302 reconstruction
+> lane.  See [`README.md`](README.md) and
 > [`../elliptic-curves/README.md`](../elliptic-curves/README.md).
 
 This workflow implements the search strategy learned from the controlled

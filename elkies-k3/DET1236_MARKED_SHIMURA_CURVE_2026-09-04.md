@@ -360,15 +360,193 @@ The factor accounting is replayed from modular symbols in the checker. Its
 interpretation uses the classical Jacquet--Langlands correspondence and the
 ramified-place Atkin--Lehner sign normalization.
 
+This abstract isogeny accounting does not by itself identify the explicit
+quadratic characters in a published quotient model.  The exhaustive local
+audit below proves that the currently recorded `ab|cd` character assignment
+cannot be combined with the displayed `B -> 618f1` map.  Until that mismatch
+is reconciled, the pair labels in this precheck must not be used to construct
+the marked cover.
+
+## Double-cover reconstruction audit
+
+The current Atkin--Lehner factor assignment suggests a `V_4` formulation of
+the lift gate.  Put
+
+```text
+D_3 = C_1236/<w_3>.
+```
+
+Under that assignment, `D_3 -> E` is a degree-two genus-three cover, its
+Prym factors are `618c1 x 618d1`, and `C_1236` is the normalization of
+`B x_E D_3`.  Thus a rational point of `B` would lift to `C_1236` exactly
+when its image on `E` lifts to `D_3`.  The expected rational branch point of
+`D_3 -> E` is one of `+3G,-3G`; the other three geometric branch points are
+the images of the order-discriminant `-1236` branch divisor.
+
+This gives a finite local reconstruction.  On
+
+```text
+E: Y^2+X*Y=X^3-185*X+1401
+```
+
+a squareclass with four branch points has a representative
+
+```text
+b = A(X) + B(X)*Y in L(6*O),
+
+Norm(b) = A(X)^2-X*A(X)*B(X)
+          -(X^3-185*X+1401)*B(X)^2.
+```
+
+For the already certified quotient map
+
+```text
+B -> E,   X=54*x^2+4,   Y=9*y-27*x^2-2,
+```
+
+the desired squareclass on `B` is therefore literally
+
+```text
+b_B(x,y) = b(54*x^2+4, 9*y-27*x^2-2)
+            in QQ(B)^*/QQ(B)^{*2}.
+```
+
+In particular `(x,y)` and `(-x,y)` have the same value.  The twelve
+non-fixed rational evaluations consequently reduce, without loss, to six
+evaluations at the images `+/-G`, `+/-4G`, and `+/-10G` on `E`.
+
+After prescribing the rational branch point, the remaining even divisor is
+represented by a double zero `Q`.  Since `E(QQ)=ZZ*G`, its reduction lies in
+`<G>` at every good prime.  The exceptional case `Q=O` is represented in
+`L(4*O)`.  If one of the other branch points specializes to `O`, the
+corresponding odd-pole charts are `L(5*O)` and, when also `Q=O`, `L(3*O)`.
+Enumerating all four projective charts over `F_p` and imposing the degree-one,
+degree-two, and degree-three Frobenius power traces of `618c1 x 618d1` gives
+the fail-closed local screen.
+
+The corrected replay at
+
+```text
+p = 5,7,11,13
+```
+
+leaves a locally square value for every one of
+
+```text
++/-G, +/-4G, +/-10G.
+```
+
+It consequently proves no local exclusion at these primes.  A previous
+exploratory `p=13` nonsquare claim was invalid: the sign selecting the other
+quadratic twist is the value of a quadratic character, not literal
+multiplication by `-1`.  At primes `p=1 mod 4` those operations differ.  The
+current script applies the character sign itself and retains `+1` at the
+`+/-10G` fibers.  An additional exact replay at `p=17` also leaves
+`-1,0,+1` possible at all six images, so it supplies no local obstruction.
+
+There is, however, a more basic exact inconsistency in this proposed `V_4`
+input.  The known cover `B -> E` has squareclass
+
+```text
+h = (X-4)/54
+```
+
+and Prym `618e1`.  At the good prime `p=5`, every genus-three quadratic
+extension of `F_5(E)` has a squareclass representative in `L(6*O)`.  The
+exhaustive audit enumerates all
+
+```text
+#P(L(6*O))(F_5) = (5^6-1)/(5-1) = 3906
+```
+
+projective classes.  Exactly `968` have branch degree four.  For each such
+class `b`, it computes over `F_25` the two character sums belonging to `b`
+and `h*b`.  The degree-two Frobenius targets forced by the asserted Pryms
+are
+
+```text
+618a1 x 618b1 : 15,
+618c1 x 618d1 : 11.
+```
+
+No class has signature `(15,11)` or `(11,15)`.  A constant quadratic twist
+cannot alter a degree-two character sum.  As a normalization check, the
+same routine gives character sum `6` for the explicit class `h`, exactly the
+degree-two target of `618e1`.  In fact the asserted target pair is absent
+even before imposing branch degree, so this conclusion does not depend on
+the branch-divisor filter.
+
+The other pair partitions are diagnostic only: `ac|bd` also has no class,
+whereas `ad|bc` has four local classes.  Those four do not repair the
+argument, because changing the partition requires changing the asserted
+Atkin--Lehner eigenspace identification.  The conclusion is deliberately
+fail-closed.  A second exhaustive run at `p=7` checks all `19608`
+projective classes, of which `3476` have branch degree four.  It finds no
+class for the asserted targets `(20,8)` in either order; at this prime all
+three pair partitions fail, even without the branch-degree restriction.
+Thus the same inconsistency is visible at two good primes:
+
+```text
+the displayed B/E squareclass and the asserted ab|cd V_4 factor partition
+cannot both be used as the reduction of the desired tower at p=5 or p=7.
+```
+
+This is not an arithmetic exclusion of `C_1236`, and it is not a proof that
+the twelve fibers fail to lift.  It blocks the proposed reconstruction
+route until the quotient involution and Jacquet--Langlands factor labels are
+reconciled.  Evaluating a squareclass produced from the inconsistent inputs
+would not be a certificate.
+
+The pinned Padurariu--Saia source makes the location of the discrepancy more
+specific.  At commit `6cc368fe37aa67187783118f18d149b2b1fd6230`, its genus-two
+tables attach the displayed model to the subgroup `<w_2,w_309>`, record that
+it has exactly one Atkin--Lehner bielliptic quotient, and identify that full
+`<w_2,w_3,w_103>` quotient with `618f1`.  Thus replacing `x -> -x` by the
+other visible bielliptic involution is not justified by the primary model
+data.  The unresolved audit must instead revisit the stable-quotient Prym
+assignment, including the rational descent implicit in passing from the
+projective marking kernel to the classical Jacquet--Langlands factors.
+
+The direct CM-field shortcut is also not certified.  The cubic field
+
+```text
+K = QQ[a]/(a^3-a^2+4*a+12),    disc(K)=-1236,
+```
+
+is a tempting abstract cubic subfield of the ring class field.  On `E/K`,
+the known points
+
+```text
+G=(10,-29),
+A=(-3*a^2-9*a-20, 15*a^2-57*a-155)
+```
+
+generate a saturated rank-two subgroup, and the rank bound is two.  This does
+not identify either point with the Shimura branch divisor: the required
+embedding of the CM orbit into this particular model of `E` is still absent.
+Consequently the abstract-field calculation supplies neither a cover
+certificate nor an obstruction.
+
+The remaining explicit obstruction is therefore upstream of the CM-divisor
+calculation: first reconcile the exact quotient involution on the published
+genus-two model with the Atkin--Lehner eigenspaces.  Only then compute the
+order-discriminant `-1236` CM divisor on the correct genus-one quotient, or
+extend the Borcherds--Schofer cover reconstruction from a genus-zero
+Hauptmodul base to that genus-one base.  Once these data agree, the norm
+equation above determines the squareclass and all twelve fiber evaluations
+by exact linear algebra.
+
 ## Exact next task
 
 The next computation is narrow, not a broad rank or rational-point search:
 
-1. construct `C_1236 -> B` explicitly;
-2. compute its squareclass in `QQ(B)^*/QQ(B)^{*2}`;
-3. evaluate the twelve non-fixed rational fibers in the now-complete set
+1. reconcile the `B -> E` quotient involution with the Atkin--Lehner
+   eigenspace partition flagged by the exact `p=5` audit;
+2. construct `C_1236 -> B` explicitly from the corrected data;
+3. compute its squareclass in `QQ(B)^*/QQ(B)^{*2}`;
+4. evaluate the twelve non-fixed rational fibers in the now-complete set
    `B(QQ)`;
-4. distinguish rational non-CM lifts from CM points or points realizing a
+5. distinguish rational non-CM lifts from CM points or points realizing a
    saturated overlattice.
 
 One non-CM rational lift is a positive certificate. A complete proof that
@@ -386,6 +564,15 @@ The quotient rational-point checker and certificate are
 [`scripts/certify_det1236_genus2_rational_points.sage`](scripts/certify_det1236_genus2_rational_points.sage)
 and
 [`../artifacts/generated-results/elkies-k3-det1236-genus2-rational-points-v1.json`](../artifacts/generated-results/elkies-k3-det1236-genus2-rational-points-v1.json).
+The fail-closed local squareclass screen is
+[`scripts/explore_det1236_double_cover_local_gate.sage`](scripts/explore_det1236_double_cover_local_gate.sage).
+The exhaustive `p=5` `V_4` consistency audit and its generated certificate
+are
+[`scripts/audit_det1236_v4_local_consistency.sage`](scripts/audit_det1236_v4_local_consistency.sage)
+and
+[`../artifacts/generated-results/elkies-k3-det1236-v4-local-consistency-v1.json`](../artifacts/generated-results/elkies-k3-det1236-v4-local-consistency-v1.json),
+with the independent `p=7` output in
+[`../artifacts/generated-results/elkies-k3-det1236-v4-local-consistency-p7-v1.json`](../artifacts/generated-results/elkies-k3-det1236-v4-local-consistency-p7-v1.json).
 
 ```bash
 sage -- elkies-k3/scripts/certify_det1236_genus2_rational_points.sage --fresh
@@ -394,6 +581,9 @@ sage -- elkies-k3/scripts/certify_det1236_genus2_rational_points.sage --check
   elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage --check
+sage elkies-k3/scripts/explore_det1236_double_cover_local_gate.sage 5 7
+sage elkies-k3/scripts/audit_det1236_v4_local_consistency.sage
+sage elkies-k3/scripts/audit_det1236_v4_local_consistency.sage 7
 ```
 
 The replay reads only the lattice catalogue and its transcendental-arithmetic

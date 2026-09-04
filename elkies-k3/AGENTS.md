@@ -12,12 +12,13 @@ and a reproducible certificate plan.
 
 ## Start here
 
-1. [`README.md`](README.md) — two primary lanes and current certified position.
-2. [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — open different-NS objective and fail-closed source/endpoint gates.
-3. [`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) — determinant-948 noncyclic closure that motivates the pivot.
-4. [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md) — reusable theorem/algorithm layer.
-5. [`LITERATURE_AND_NOVELTY_MAP_2026-09-03.md`](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md) — terminology and prior-art boundaries.
-6. `../MATH_STATUS.json` and `../REPRODUCE.md` — exact status and replay.
+1. [`README.md`](README.md) — three peer primary lanes and current certified position.
+2. [`../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md) and [`../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md`](../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md) — first-class record-construction recovery lane.
+3. [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — open different-NS objective and fail-closed source/endpoint gates.
+4. [`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) — determinant-948 noncyclic closure that motivates the pivot.
+5. [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md) — reusable theorem/algorithm layer.
+6. [`LITERATURE_AND_NOVELTY_MAP_2026-09-03.md`](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md) — terminology and prior-art boundaries.
+7. `../MATH_STATUS.json` and `../REPRODUCE.md` — exact status and replay.
 
 ## Current conclusions
 
@@ -26,7 +27,12 @@ and a reproducible certificate plan.
 - The maximal noncyclic determinant-948 bridge is equation-explicit in both
   directions: `R17 -> 4A1/MW13 -> R17`, with thirteen saturated rational
   sections and target-free reverse selection.
-- Lane B is arithmetic-first globally: `T` and its full stable marked curve
+- The rank-32 programme has three peer lanes: calibrated R17/MW17
+  specialization, record-construction recovery around curve 398's A1/MW16
+  source and curve 302's unknown parent, and the different-NS foundry. Generic
+  rank and demonstrated jump size are separate prioritization axes; no lane is
+  the unique critical path.
+- Lane C is arithmetic-first globally: `T` and its full stable marked curve
   precede `NS=T^perp`, rootlessness, and equation work. Determinants `500`,
   `720`, `750`, `950`/`NS0024`, and `1184`/`NS0031`, together with the split
   determinant-378 row, are arithmetically excluded. The determinant-500 and

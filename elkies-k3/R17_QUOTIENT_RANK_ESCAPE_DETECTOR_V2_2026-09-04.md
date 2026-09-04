@@ -1,17 +1,17 @@
 # Quotient-aware rank-escape detector v2
 
 Date: 2026-09-04  
-Status: **Outcome D — exact control inputs and partial local data certified; complete descents blocked; prospective sample frozen but unopened**
+Status: **Outcome D — fixture-separated MW17-only controls frozen but unrun; complete descents blocked; prospective sample unopened**
 
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
 
 ## Result
 
 Detector v2 now has a fail-closed exact measurement layer, a separately
-blinded five-cohort sample, and complete record-control input programs.  It is
-**not calibrated**: neither curve 356 nor curve 385 has a completed global
-2-descent, so the frozen prospective rows have not been submitted to the
-pipeline.
+blinded five-cohort sample, and fixture-separated MW17-only record-control
+programs.  It is **not calibrated**: neither curve 356 nor curve 385 has a
+completed MW17-relative global 2-descent, so the frozen prospective rows have
+not been submitted to the pipeline.
 
 The exact current control table is:
 
@@ -37,6 +37,34 @@ inside the as-yet-unknown full `E(Q)`.
 
 The compact certificate is
 [`../artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-controls-v1.json`](../artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-controls-v1.json).
+
+## Prospective blinding boundary
+
+The earlier hard record-fibre route embeds and quotients all 29 public point
+classes before its local calculation.  It is useful for post-discovery exact-rank
+closure, but it removes precisely the twelve directions that a new candidate
+would not possess.  It therefore cannot calibrate an operational candidate
+gate.
+
+The replacement replay is pinned in
+[`../artifacts/generated-results/elliptic-curves/r17_mw17_only_selmer_control_inputs_v1.json`](../artifacts/generated-results/elliptic-curves/r17_mw17_only_selmer_control_inputs_v1.json).
+Each generated Magma executable contains only the global minimal curve and the
+seventeen specialized generic points.  A mechanical source audit requires
+exactly 17 point declarations and forbids every `P18,...,P29` coordinate row,
+held-out label, MW29 token, half-ideal shortcut, external file read, cover
+search, or point search.  It computes the complete unconditional 2-Selmer group
+first, verifies the MW17 Kummer rank, emits a basis of
+`Sel_2(E)/im(MW17/2)`, and terminates at `blind_freeze`.
+
+The separately pinned run ledger is
+[`../artifacts/generated-results/elliptic-curves/r17_mw17_only_selmer_control_run_v1.json`](../artifacts/generated-results/elliptic-curves/r17_mw17_only_selmer_control_run_v1.json).
+It currently records zero completed replays.  The Selmer machinery is not an
+operational candidate gate until both source-hash-matched transcripts complete,
+each certifies MW17 image dimension 17, and each reports residual dimension at
+least 12 before the committed public control truth is consulted.  The control
+truth is bound by coordinate hashes outside the executables.  Even a passing
+two-record replay would calibrate the Selmer gate only; it would not by itself
+authorize the prospective sample.
 
 ## Exact record models and places
 
@@ -145,15 +173,17 @@ for 5,219 ideals.  No run produced a certified BNF checkpoint.  Independent
 five-minute eclib Selmer-only canaries on both curves also returned no Selmer
 dimension.  These failures are operational measurements only.
 
-The narrowed technical task is therefore:
+The prospective technical task is therefore:
 
-1. invert every bad prime ideal from the start;
-2. quotient by the 29 certified point half-ideal classes before relation
-   collection;
-3. certify only the remaining 2-primary `S`-class/unit relation lattice;
-4. replay the finite and real local conditions in the exported norm basis;
-5. freeze the blind Selmer/MW17 quotient; only then load `P18,...,P29` and
-   require image dimension twelve on both records.
+1. run the sealed curve-356 and curve-385 executables with no access to the
+   held-out coordinates or half-ideals;
+2. compute and certify the complete unconditional 2-Selmer group, including
+   every finite and real local condition;
+3. quotient only by the certified specialized MW17 image and freeze the
+   residual dimension and basis;
+4. require residual dimension at least twelve on both records before consulting
+   the committed public control truth;
+5. retain quotient-by-MW29 collectors only for post-discovery closure work.
 
 This is Outcome D.  There is no cohort comparison, cylinder conclusion,
 rank-enrichment claim, or candidate promotion.
@@ -162,11 +192,24 @@ rank-enrichment claim, or candidate promotion.
 
 ```bash
 python3 elkies-k3/scripts/build_r17_quotient_rank_escape_detector_v2_sample.py --check
+python3 elliptic-curves/cas/build_r17_mw17_only_selmer_replay.py --check
+python3 elliptic-curves/cas/run_r17_mw17_only_selmer_replay.py --check
 sage -python elkies-k3/scripts/certify_r17_quotient_rank_escape_detector_v2_controls.sage --check
 python3 -m unittest \
   elliptic-curves/tests/test_quotient_rank_escape_detector_v2.py \
-  elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py
+  elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py \
+  elliptic-curves/tests/test_r17_mw17_only_selmer_replay.py
 ```
 
-The optional unconditional Magma inputs for the record pair are pinned in
+To materialize the two ignored local executables and, on a licensed host, run
+them under the declared one-day/16-GB per-case envelope:
+
+```bash
+python3 elliptic-curves/cas/build_r17_mw17_only_selmer_replay.py --overwrite
+python3 elliptic-curves/cas/run_r17_mw17_only_selmer_replay.py \
+  --execute --overwrite
+```
+
+The older fixture-sequenced Magma inputs for the record pair are retained in
 [`../artifacts/generated-results/elliptic-curves/elkies_2026_record_pair_relative_2selmer_inputs_v1.json`](../artifacts/generated-results/elliptic-curves/elkies_2026_record_pair_relative_2selmer_inputs_v1.json).
+They remain reproducibility evidence, not the prospective calibration input.

@@ -1,8 +1,12 @@
-# Lane B arithmetic-first foundry objective
+# Lane C arithmetic-first foundry objective
 
 Date: 2026-09-04.
 
 Status: **OPEN**.
+
+This was historically called Lane B.  In the current three-lane roadmap it is
+Lane C, with the first-class curve-398/curve-302 construction-recovery work
+occupying Lane B.
 
 <!-- status-consumer: EC-K3-DET1236-GENUS2-RATIONAL-POINTS 5a3c84eb9f7f0604 -->
 <!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 185d31609e7702fc -->
@@ -29,7 +33,7 @@ noncyclic bridge
 published R17 -> 4A1/MW13 -> published R17.
 ```
 
-Another equation on that Néron--Severi lattice is not the next Lane B
+Another equation on that Néron--Severi lattice is not the next Lane C
 milestone. The construction programme now starts from the rank-three
 transcendental lattice and admits equation work only after the arithmetic
 marking gate.

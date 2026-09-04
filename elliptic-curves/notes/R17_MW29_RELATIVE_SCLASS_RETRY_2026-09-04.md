@@ -1,7 +1,7 @@
 # MW29-relative S-class retry for record fibres 356 and 385
 
 Date: 2026-09-04  
-Status: bounded exact relation experiment; no S-class, Selmer, or rank bound
+Status: bounded post-discovery closure experiment; no prospective calibration, S-class, Selmer, or rank bound
 
 ## Target
 
@@ -11,6 +11,13 @@ inverted.  No full BNF was requested.  The bounded factor-base presentations
 have dimensions 38 for curve 356 and 35 for curve 385 after inserting the
 canonical rational principal rows and S-columns.  These dimensions are not
 global upper bounds because factor-base generation has not been certified.
+
+Because this input already contains and kills `P18,...,P29`, it addresses only
+closure after those twelve exceptional directions have been discovered.  It
+does not reproduce the information state of a new MW17-only candidate and
+cannot calibrate the operational Selmer candidate gate.  That role belongs to
+the separately frozen fixture-separated replay in
+`elliptic-curves/cas/build_r17_mw17_only_selmer_replay.py`.
 
 ## Exact additions
 
@@ -129,7 +136,8 @@ outside prime-ideal vertices each, and even the free outside `(p)` rows leave
 the incidence matrices full row rank.  Scaling this particular family keeps
 the graph underdense; it is not a rational next expenditure.
 
-The remaining decisive gate is therefore genuinely global: a certified
+The remaining decisive post-discovery closure gate is therefore genuinely
+global: a certified
 F2-only generation/upper bound for
 
 ```text

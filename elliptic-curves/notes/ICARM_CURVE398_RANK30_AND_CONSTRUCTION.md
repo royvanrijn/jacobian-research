@@ -1,13 +1,8 @@
-# ICARM curve 398: rank 30 lower bound and construction boundary
+# ICARM curve 398: hidden A1/MW16 recovery and blind rank-30 rediscovery
 
 ## Status
 
-Curve 398 was previously present only as a construction-recognition target:
-the repository excluded it from the published rootless-MW17 chart and later
-from the complete six-class norm-twelve atlas.  It did not have its own point,
-independence, torsion, conductor, or construction certificate.
-
-It now has an independent exact certificate for
+Curve 398 has an independent exact certificate for
 
 ```text
 rank E(Q) >= 30.
@@ -27,10 +22,14 @@ Their announcement says that hundreds of these MW16 fibrations were searched
 with an improved codebase using Drew Sutherland's `smalljac` library.  The
 rank-30 specialization is a jump by at least fourteen over the generic rank.
 
-The exact fibration, rational base parameter, sixteen specialized section
-vectors, and search transcript for curve 398 are not public in the curve page
-or announcement.  Thus the method is known, but the precise construction is
-still `UNKNOWN` and is not yet independently reproducible.
+The construction boundary is now closed independently.  A complete modular
+screen of the 63,917 minimum-norm-eight neighbours of the equation-explicit
+`norm12-orbit-11952` rootless chart leaves two candidates; exact factorization
+shows that both have rational curve-398 parameters and specialize to curves
+`Q`-isomorphic to curve 398.  The lower-complexity candidate is compiled as an
+`I2+22I1`/MW16 fibration, all sixteen generic sections are transported into
+the public rank-30 subgroup, and an independently redacted half-lattice search
+recovers the full displayed rank-30 subgroup from those sixteen points alone.
 
 The authors report exact rank 30 conditional on GRH for number fields.  This
 repository has not replayed that upper bound, so the canonical theorem remains
@@ -157,6 +156,125 @@ three large `I1` primes.  This exact clustering is a useful target fingerprint
 for recovering the hidden specialization; it is not by itself a family or
 rank theorem.
 
+## Recovered hidden A1/MW16 fibration
+
+On the rootless alternate-Q80 chart `norm12-orbit-11952`, priority trace
+`16875` has equation-section coordinates
+
+```text
+w = (0,0,0,0,0,-1,0,-1,-1,1,1,1,0,-1,0,0,1),
+w.M.w = 8.
+```
+
+Its isotropic class is
+
+```text
+D = (2,2,w) = O + P_w,
+D.F = 2,  D.O = 0.
+```
+
+The residual-chord quartic and its binary-quartic invariants produce a short
+Weierstrass equation with coefficient degrees `(8,12)`.  Its finite
+discriminant is squarefree of degree 22, while the orders at infinity are
+`(ord(c4),ord(c6),ord(Delta))=(0,0,2)`.  Thus the generic fibre configuration
+is exactly
+
+```text
+I2 at infinity + 22 I1,
+```
+
+and Shioda--Tate gives generic Mordell--Weil rank 16.
+
+The exact curve-398 parameter in this pencil is
+
+```text
+lambda = -273478312517509127154149830485048828022673347107308547939067553994727903425458545978043182638015899676311550557441827100822466901248 / 243076210150914055804756105904064536659703543720469425499709810733677965174759784940636972086422417178984090368085211
+```
+
+The cross-multiplied `j` equation factors over `Q` into degrees `1+23`, and
+the specialization at the displayed linear root is `Q`-isomorphic—not merely
+quadratically twist-equivalent—to curve 398.
+
+The fixed parity coset contains exactly 166 old sections meeting `D` once.
+Taking
+
+```text
+(0,0,-1,0,0,0,0,0,0,1,0,0,0,0,0,0,0)
+```
+
+as the new zero, the compiler selects sixteen of the other degree-one curves.
+Their exact Shioda height Gram is half-integral of rank 16 and determinant
+`474=948/2`; this proves saturation of the MW16 basis.  After specialization,
+height-dual recovery followed by exact rational group-law replay expresses
+all sixteen in the ordered public 30-point group.  The 30-by-16 coordinate
+columns have Smith factors all one and maximum absolute entry 65.
+
+The complete discovery screen used 34 primes.  It excludes 63,915 of the
+63,917 committed norm-eight classes and leaves priorities `16875` and `63669`.
+Exact factorization gives one rational parameter for each survivor, and both
+specializations are `Q`-isomorphic to curve 398.  The compiled fibration above
+uses the equation-cheaper first survivor; uniqueness of the fibration is not
+claimed.
+
+## Blind MW16 half-lattice calibration
+
+The search input is a separately pinned redacted fixture containing only the
+short equation, the sixteen specialized generic points, and their exact
+generic MW16 height Gram.  It contains neither the public 30-point fixture,
+the generic-to-public embedding, nor any held-out point coordinate.
+
+The generic half-lattice census is complete over all `2^16=65,536` parity
+classes.  Exactly twelve have maximum twice-norm 23.  The frozen ledger's
+legacy label `half-lattice depth 23/8` is only a fixed-basis chart-priority
+score, not an arithmetic depth or covering invariant.  Searching those twelve
+first-priority birational charts through reduced-coordinate height `10^5`
+raises the exact discovered subgroup
+
+```text
+M16 -> M21.
+```
+
+The adaptive quotient rule then searches all
+
+```text
+12 * (2^5 - 1) = 372
+```
+
+nonzero five-bit lifts and raises it to
+
+```text
+M21 -> M30.
+```
+
+All 384 charts completed the declared bounded search with zero timeouts.  The
+five initial and nine adaptive gains are certified independent by exact finite
+reduction and every relation is replayed by rational group law.
+
+The chart order has no Selmer interpretation: these pointed quartics are
+birational models of the same elliptic curve, not nontrivial 2-coverings.
+Likewise, the five-bit quotient Hamming weight only orders charts in the
+recorded quotient basis.  Any lattice enlargement or basis/complement change
+invalidates the ordering and its calibration; chart identities,
+representatives, scores, and order must be recomputed and state-fingerprinted
+before reuse.  A miss would imply neither point absence nor Selmer structure.
+
+Only after the blind run stopped did the verifier load the public fixture.  A
+Smith completion extends the primitive generic MW16 coordinate rows to a
+unimodular basis of the public rank-30 lattice; its last fourteen rows define
+the held-out complement.  All fourteen replay exactly in the blind basis, and
+mutual integral embeddings prove
+
+```text
+blind discovered subgroup = displayed public rank-30 subgroup.
+```
+
+The run stops at its predeclared next-wave limit: fourteen quotient bits would
+require 196,596 lifts.  Thus it proves full recovery of the displayed subgroup,
+not algorithmic stability, rank exactly 30, or saturation in the unknown full
+group `E(Q)`.  This is nevertheless the requested cross-fibration calibration:
+the generic MW16 half-lattice plus the adaptive quotient rule rediscovers a
+rank jump of fourteen outside the R17/MW17 family.
+
 ## Exact construction exclusions
 
 The forensics now give four sharp negative boundaries.
@@ -178,50 +296,21 @@ The forensics now give four sharp negative boundaries.
 The fourth test is deliberately narrow.  It does not enumerate or exclude the
 hundreds of other A1 fibrations in the authors' search.
 
-## Equation-source inventory
+## Construction boundary closed
 
-A repository and public-source audit finds no second rational A1 equation that
-can presently be tested against curve 398.
+The earlier equation-source audit remains useful history: the published R17
+chart, all six shared-zero norm-twelve classes, and the fixed-corridor A1 model
+really do miss curve 398.  The missing step was to recognize that every
+minimum-norm-eight class on a rootless chart gives a zero-neutral divisor
+`D=(2,2,w)=O+P_w`, hence precisely the first complete A1/MW16 layer.  The new
+screen and compiler close that boundary without importing the authors'
+unpublished fibration census.
 
-- The new public `X948` paper gives the published rootless MW17 fibration and
-  its sections.  Curve 398 already misses that `j`-map.
-- The fixed-corridor reverse lift supplies the only characteristic-zero
-  `QQ` A1/MW16 equation currently available here.  It is the family excluded
-  modulo 179 above.
-- The alternate Q80 route has an exact generic A1 lattice frame and final
-  neighbour transport, but its handoff explicitly records
-  `generic_characteristic_zero_equation = null` and
-  `equation_status = NOT_YET_COMPILED`.  Its characteristic-zero equation
-  corridor is a CM24 specialization over `QQ(sqrt(-3))`, not the generic
-  determinant-948 family required for rational `j`-recognition.
-- Three retained, bounded Q80 shell windows contain 48 generic A1/MW16
-  candidates.  They collapse at CM24 to two nef specialization classes of
-  old-fibre degrees 47 and 43.  Those computations are bounded windows and do
-  not provide generic `QQ` Weierstrass equations.
-- The announcement's hundreds of searched A1 fibrations are not supplied as
-  equations, lattice markings, or a parameter ledger in any public source
-  found in this audit.
-
-This is a complete inventory of the currently available equation sources, not
-an exhaustive theorem about all A1 fibrations on `X948`.  It explains exactly
-why further rational `j`-recognition cannot proceed without first compiling a
-new generic A1 equation or obtaining the authors' census.
-
-## Remaining exact reconstruction target
-
-The next construction proof should be certificate-driven:
-
-1. obtain or reconstruct the authors' A1-fibration census on `X948`;
-2. solve exact projective `j`-preimage equations for curve 398 until a rational
-   parameter is found;
-3. transport and specialize all sixteen generic sections;
-4. express them integrally in the public rank-30 subgroup and certify the
-   fourteen-dimensional exceptional quotient;
-5. record the specialization and the sieve inputs that selected it.
-
-Until those data exist, the exact fibration/parameter/section map stays
-`UNKNOWN`; bounded lattice searches and the current finite exclusions do not
-close it.
+The result promotes curve 398 from a provenance target to the major
+cross-fibration calibration control.  A rank-32 campaign in this recovered
+family would still need sixteen independent quotient directions and all the
+same exact finite-reduction and residual-descent gates; the present bounded
+success is not evidence for a rank-32 theorem by itself.
 
 ## Reproduction
 
@@ -231,7 +320,12 @@ From the repository root, with PARI/GP available:
 .venv/bin/python elliptic-curves/cas/verify_icarm_curve398_rank30.py --check
 
 .venv/bin/python -m unittest \
-  elliptic-curves/tests/test_icarm_curve398_rank30.py -v
+  elliptic-curves/tests/test_icarm_curve398_rank30.py \
+  elliptic-curves/tests/test_curve398_mw16_adaptive_half_lattice.py -v
+
+sage -python elkies-k3/scripts/compile_icarm_curve398_hidden_a1_mw16.sage --check
+
+sage -python elliptic-curves/cas/verify_curve398_mw16_adaptive_half_lattice_search.sage --check
 ```
 
 The checker recomputes point membership, the finite-reduction independence
@@ -241,3 +335,10 @@ node-incidence fingerprint, and the modulo-179 A1 exclusion.  The pinned output 
 `artifacts/generated-results/elliptic-curves/icarm_curve398_rank30_and_construction_v1.json`,
 with whole-file SHA-256
 `1fd4f23ff2167321be0e3a7bf12b693f0a9ebe26d1e2125ce131da30ad05bf60`.
+
+The recovered construction, blind search, and post-search verification are
+respectively pinned in
+
+- `artifacts/generated-results/elliptic-curves/icarm_curve398_hidden_a1_mw16_v1.json`;
+- `artifacts/generated-results/elliptic-curves/curve398_mw16_adaptive_half_lattice_blind_v1.json`;
+- `artifacts/generated-results/elliptic-curves/curve398_mw16_adaptive_half_lattice_verification_v1.json`.

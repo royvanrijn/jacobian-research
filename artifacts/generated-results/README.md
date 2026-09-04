@@ -45,6 +45,41 @@ and document the exact command and whole-file SHA-256.
   and its whole-file SHA-256 is
   `a402b1a286dd72ad579c753315a55309a92d03886f60ac8fee84e434119da626`.
 
+- `elkies-k3-r17-prospective-crt-half-lattice-promotion-gate-v1.json` is the
+  post-freeze restrictive interpretation guard for that immutable protocol.
+  It records and enforces that the binary Stage-A endpoint cannot promote a rank-32
+  candidate and records the missing independent magnitude and upper-tail
+  validation.  It also pins the state-bound chart policy: legacy depth,
+  old-deep-43, and quotient-weight fields are ordering heuristics only; basis
+  or lattice changes invalidate them, and misses have no covering, Selmer,
+  absence, saturation, or rank-upper-bound meaning.  Replay it with
+  `python3 elkies-k3/scripts/build_r17_prospective_crt_half_lattice_promotion_gate.py --check`.
+  Its gate-definition hash is
+  `a07fa668f5a04627b03a41abbda1ed8ce9cebdc8e310e9b25c92917d7a474acf`
+  and its whole-file SHA-256 is
+  `68350e6d099027e2817ee2969825fb57d6f215f713b61758fd6bdd78a4213812`.
+  Its restrictive analyzer also forbids scheduled-row censoring from being
+  counted as non-events: complete-case effects are emitted only after exact
+  censor-status balance, otherwise every inferential effect field is null.
+
+<!-- status-consumer: EC-K3-R17-074D9-HALF-LATTICE-PROMOTION-GATE 9a1f080523c9ecae -->
+
+<!-- status-consumer: EC-K3-R17-TRAINING-EXACT-ARITHMETIC-GROUP-GATE 427bf822e774c81e -->
+
+- `elliptic-curves/r17_training_arithmetic_group_inputs_v1.json.gz` freezes
+  only the 100,000 exact development parameters, deterministic split labels,
+  selection/holdout flags, and four quarantined controls; it contains no
+  outcomes.  `elliptic-curves/r17_training_arithmetic_group_audit_v1.json`
+  groups the exact family fibres by reduced rational `j`.  All 100,000 classes
+  are distinct, the 4,922 labelled and 5,000 prospective rows have no
+  twist-class overlap, and no quarantined control matches the development
+  population.  The active laboratory registry requires this exact gate before
+  loading the pinned learned contrast.  Replay with
+  `python3 elliptic-curves/scripts/audit_r17_training_arithmetic_groups.py --check`.
+  The compressed input and audit SHA-256 values are respectively
+  `9c5b268b738b25d975ec1d6f4849036c21df36d85ea38a4782466bca719f305d`
+  and `589e8856bd75b286c8a9e59bf14f06a327dc5d74fedacf7256bcf96ec2e9c22e`.
+
 - `elliptic-curves/curve385_iterated_half_lattice_blind_v1.json` records the
   public-fixture-blind `M17 -> M20 -> M29` recovery. The only iterated round
   searches all 301 old-deep-43 lifts with a nonzero word in the three new
@@ -73,6 +108,20 @@ and document the exact command and whole-file SHA-256.
   and its whole-file SHA-256 is
   `2c9150f50f305b8aa3763590cd5e81c4d7e121f9373177827780789ce472834f`.
 
+- `elliptic-curves/curve385_sparse_restart_budget_v2.json` amends only future
+  curve-385 sparse runs.  It replaces the v1 combined four-state cap with
+  disjoint limits of three rank-changing and four saturation-only group
+  changes, pins the v1 protocol and completed primary manifest, and records a
+  regression in which two saturations followed by `29 -> 30 -> 31 -> 32`
+  reaches the target.  The v1 runner and no-growth ledger remain unchanged.
+  Replay it with
+  `python3 elliptic-curves/cas/build_curve385_sparse_restart_budget.py --check`.
+  Its definition hash is
+  `114006d27c3dfcc0628294c8ee91de111993f2d6cef84c3fd5196621f223fa97`
+  and its whole-file SHA-256 is
+  `74549dcea2772d28ad92ef3c61c5007f01b806230ce8ba2b7420c4041f41a4ec`.
+<!-- status-consumer: EC-K3-R17-CURVE385-INDEPENDENT-RESTART-BUDGETS 39cfce110e3e494f -->
+
 - `elliptic-curves/icarm_curve302_point_cloud_v1.json` records canonical
   mod-2 and mod-3 finite-reduction row spaces through prime 1000, exact
   denominator and squareclass diagnostics, frozen-training held-out rational
@@ -88,11 +137,37 @@ and document the exact command and whole-file SHA-256.
   trivial torsion, the singleton rational isogeny class, the full semistable
   local fingerprint, bad-node incidence, and a modulo-179 exclusion from the
   repository's one equation-explicit A1/MW16 family.  The public X948/MW16
-  method is recorded separately from the still-unknown exact fibration and
-  parameter.  Replay with
+  method and the construction boundary as it stood before the independent
+  recovery are recorded separately.  Replay with
   `.venv/bin/python elliptic-curves/cas/verify_icarm_curve398_rank30.py
   --check`; its whole-file SHA-256 is
   `1fd4f23ff2167321be0e3a7bf12b693f0a9ebe26d1e2125ce131da30ad05bf60`.
+
+- `elkies-k3-curve398-11952-norm8-a1-modular-screen-v1.json` compacts the
+  complete 63,917-class, 34-prime screen to two survivors; its SHA-256 is
+  `cfcd7f399c340cbfcf746c19fcc2af9dc8b5969bd1cdd7156c2fe113bc0b7014`.
+  `elkies-k3-curve398-11952-norm8-a1-exact-survivors-v1.json` factors both
+  survivors over `QQ`, finds one rational parameter apiece, and verifies two
+  `Q`-isomorphic curve-398 specializations; its SHA-256 is
+  `1f95ef7198a64f614e76883bda6f01cf6516ae2e8ff7ce2a73e3e0a787879796`.
+  `elliptic-curves/icarm_curve398_hidden_a1_mw16_v1.json` compiles the selected
+  `I2+22I1` pencil, its exact parameter, complete degree-one shell, saturated
+  MW16 basis, and primitive public embedding; its SHA-256 is
+  `1cbfe11a4207145417035085daa67a1108f2f2d9abc9f8ba0a0938735837851e`.
+
+- `elliptic-curves/curve398_mw16_adaptive_half_lattice_blind_v1.json` is the
+  redacted-input discovery ledger: complete `2^16` generic-class census,
+  twelve deepest charts, 372 adaptive five-bit lifts, no timeouts, and exact
+  growth `M16 -> M21 -> M30`.  Its SHA-256 is
+  `48e40bb4a0f39e7834c96f416592de7d5c645eede49ed6aec34cdd40cdc3c960`.
+  `elliptic-curves/curve398_mw16_adaptive_half_lattice_verification_v1.json`
+  is the post-search audit proving recovery of all fourteen held-out
+  complement points and mutual integral equality with the displayed rank-30
+  subgroup; its SHA-256 is
+  `9cf6b5e8b874a38e2ed2bc8aa9278a17386eef4343dedf8b3c3467f932bba7f0`.
+  Neither artifact proves stability, exact rank, or unseen-family
+  generalization.
+<!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY a22fcfb1ea6844aa -->
 
 <!-- status-consumer: EC-ICARM-CURVE302-POINT-CLOUD 1e1eb37dd6d4350f -->
 
@@ -185,6 +260,20 @@ local cache so it cannot become a competing mathematical-status authority.
   `sage -python elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage --check`.
   Its whole-file SHA-256 is
   `d3fcb9cbba3643c5d4258705dab4026b63b0e0648c0f24cc14f690f4d09cac93`.
+
+- `elkies-k3-det1236-v4-local-consistency-v1.json` and
+  `elkies-k3-det1236-v4-local-consistency-p7-v1.json` are exhaustive local
+  audits at `p=5` and `p=7`.  They test every projective class in
+  `L(6*O)` on `618f1`, retain the exact branch-degree-four locus, and compare
+  both `b` and `b*(X-4)/54` with the claimed complementary Prym traces.
+  Neither prime admits a class for the asserted
+  `618a1*618b1 | 618c1*618d1` partition.  The known `B -> 618f1` class passes
+  the same branch and character-sum conventions.  This certifies an upstream
+  quotient/factor inconsistency in the proposed reconstruction, not an
+  arithmetic exclusion or a decision of the twelve rational lifts.  Replay
+  with
+  `sage elkies-k3/scripts/audit_det1236_v4_local_consistency.sage` and
+  `sage elkies-k3/scripts/audit_det1236_v4_local_consistency.sage 7`.
 
 - `elkies-k3-golay-det720-qq-marking-obstruction-v1.json` records the exact
   literal and primitive-similarity Clifford orders, the `S3` action on
@@ -318,6 +407,36 @@ local cache so it cannot become a competing mathematical-status authority.
   `sage -python elkies-k3/scripts/certify_r17_norm12_icarm_database_sweep.sage`
   and the same command with `--check`; its whole-file SHA-256 is
   `6529f6dc81fb37f163c7fca761e7eaff1a2ffb7ab40a81cbfc9002e40165dbd2`.
+
+- `elkies-k3-r17-norm12-icarm-database-sweep-v2.json` preserves that theorem
+  and separately refreshes the sweep against the hash-pinned 573-row ICARM
+  response.  It records all 3,438 decisions, 86 hits, 3,352 misses, and 479
+  untwisted native comparisons.  Check it with
+  `sage -python elkies-k3/scripts/certify_r17_norm12_icarm_database_sweep.sage --refresh-573 --check`;
+  its whole-file SHA-256 is
+  `77a3c051111e7ead5ee2a6f88df4a975c2f5bdb87be1bfe4d88b195f293da50c`.
+
+- `elliptic-curves/icarm_curve_refresh_475_573_overview_v1.json` embeds the
+  complete appended 99-row public projection, checks every displayed point
+  and discriminant, and independently certifies the rank lower bounds and
+  trivial torsion of all thirteen rank-at-least-24 rows.  Check it with
+  `.venv/bin/python elliptic-curves/cas/audit_icarm_curve_refresh_overview.py --check`;
+  its whole-file SHA-256 is
+  `1db137c4c006f774ad653b41b8c04ecc7b332d1104905dcb3f5eb23732904e3c`.
+
+- `elkies-k3-r17-norm12-refresh-priority-quotients-v1.json` audits all
+  seventeen refreshed atlas hits.  It proves sixteen primitive generic MW17
+  specializations and their displayed-subgroup quotients: one `Z^12`, six
+  `Z^11`, one `Z^10`, three `Z^8`, two `Z^6`, one `Z^5`, one `Z^4`, and one
+  `Z^3`.  On curve 499 it proves that adjoining the generic subgroup enlarges
+  the displayed subgroup by `Z/3Z`, so the displayed quotient is not defined.
+  Check it
+  with `PYTHONPATH=elliptic-curves/cas sage -python
+  elkies-k3/scripts/certify_r17_norm12_refresh_priority_quotients.sage --check`;
+  its whole-file SHA-256 is
+  `e0c0e62c4c357a0dffd4c55dcae0ec2b4993a47fcea0a0de9b055b78a6580081`.
+
+<!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 
 - `elkies-k3-r17-norm12-curve12-alternate-q80-quotient-v1.json` proves that
   ICARM curve 12 is an untwisted native `11952` alternate-Q80 fibre and that
@@ -544,16 +663,23 @@ local cache so it cannot become a competing mathematical-status authority.
 - `elkies-k3-r17-quotient-rank-escape-detector-v2-controls-v1.json` is the
   fail-closed Outcome-D record-control certificate.  It verifies both exact
   models, the `17+12=29` known mod-two images, every finite bad place,
-  infinity, cached cubic fields, and preserved BNF failures.  Complete Selmer
-  dimensions and all global condition matrices remain null.  The paired
+  infinity, cached cubic fields, and preserved BNF failures.  It now binds
+  `elliptic-curves/r17_mw17_only_selmer_control_inputs_v1.json`, whose two
+  executables contain only the curve and MW17, and the paired
+  `-run-v1.json`, which records zero completed replays.  Quotient-by-MW29 work
+  is post-discovery closure evidence only.  Complete Selmer dimensions and all
+  global condition matrices remain null.  The paired
   `-sample-v1.json` and `-unblinding-key-v1.json` files freeze respectively a
   label-free hash-order sample and its separate five-cohort key: Stage 1 has
   ten rows, Stage 2 has thirty, and neither is authorized.  Their whole-file
   SHA-256 values are respectively
-  `f5ea27200504a9d79313b2bbad1c915c4849e07b956ac80e25e56a32cb59d519`,
+  `2ba66e333002e210a66ec39f11b4aff88aee45c026b46a7fd12014d2107ba0ea`,
   `519b385d5a6b5e41b1cf69e958df4ba5d8c79a77a698ebf41d740fa81f6f79bc`,
   and `03270ff0220457094dda5f89a701de1e0df5668188cb27e897442a90a2bd55ff`.
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+  The MW17-only input and pending-run hashes are
+  `cff8fd8457a91e254efd867907892cae12235206fa27d867c6a2b15ee24ba749`
+  and `de94674c0213bb8aeb6c10ccf5f0bb6db796f0a4ea58f3d3122bc4779379e6df`.
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
 
 - `elkies-k3-r17-kummer-classgroup-pressure-v1.json` computes the exact
   bad-prime valuation-parity matrices of all displayed Kummer classes on

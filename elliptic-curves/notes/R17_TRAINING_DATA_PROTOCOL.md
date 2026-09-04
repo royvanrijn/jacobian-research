@@ -2,6 +2,8 @@
 
 Date: 2026-09-02
 
+<!-- status-consumer: EC-K3-R17-TRAINING-EXACT-ARITHMETIC-GROUP-GATE 427bf822e774c81e -->
+
 ## Answer to the rank-27/28 rediscovery question
 
 The existing weakest-block Nagao score places the published rank-at-least-27
@@ -101,8 +103,22 @@ after the model and compute budget are frozen.
 
 Before labels are fitted, exact minimal models and `j`-invariants must be used
 to group any repeated isomorphism or quadratic-twist class into one split.
-The current parameter-hash split is provisional until that duplicate audit is
-complete; row-wise separation alone is not a leakage certificate.
+That audit is now closed for the immutable v1 score.  An outcome-free compact
+input records the 100,000 development parameters, deterministic splits,
+selection/holdout membership, and four quarantined controls.  Exact reduced
+rational `j`-grouping finds 100,000 distinct classes, so no class crosses a
+train/validation/internal-test split.  The 4,922 labelled selection and 5,000
+prospective holdout have zero twist-class overlap, and all four controls are
+twist-disjoint from the development population.  Since every rational
+isomorphism or twist preserves `j` (including the exceptional `j=0,1728`
+forms), distinct exact `j` closes both duplicate types without needing
+same-`j` minimal-model subkeys.  The audit reads no outcomes and authorizes
+only reuse of the pinned v1 score; any changed universe, split, model, or score
+requires a new audit.
+
+```bash
+python3 elliptic-curves/scripts/audit_r17_training_arithmetic_groups.py --check
+```
 
 This feature builder is the population-data extension of the existing
 [`RANK_JUMP_LABORATORY.md`](RANK_JUMP_LABORATORY.md). New certified labels and

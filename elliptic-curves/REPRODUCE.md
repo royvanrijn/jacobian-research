@@ -37,6 +37,30 @@ the compact current artifact directory:
 
 ## Primary record certificates
 
+### ICARM ids 475--573: atlas refresh and priority intake
+
+Replay the immutable 573-row norm-twelve sweep, the complete appended-row
+overview, and the exact specialization audit of all seventeen new hits:
+
+<!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
+
+```sh
+sage -python elkies-k3/scripts/certify_r17_norm12_icarm_database_sweep.sage \
+  --refresh-573 --check
+
+.venv/bin/python \
+  elliptic-curves/cas/audit_icarm_curve_refresh_overview.py --check
+
+PYTHONPATH=elliptic-curves/cas sage -python \
+  elkies-k3/scripts/certify_r17_norm12_refresh_priority_quotients.sage --check
+```
+
+These checks prove the snapshot-bounded atlas decisions, sixteen
+displayed-subgroup quotients, and the curve-499 `Z/3Z` commensurability
+obstruction; they do not prove rank upper bounds or construction origins for
+atlas misses.  See
+[`ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md`](notes/ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md).
+
 ### ICARM curve 356: rank at least 29 and the new rank-29 size record
 
 Replay point membership, trivial torsion, the exact finite-quotient
@@ -332,7 +356,7 @@ sage -python elliptic-curves/scripts/verify_icarm_curve273_rank30_sage.py
 
 See [`ICARM_CURVE273_RANK30.md`](notes/ICARM_CURVE273_RANK30.md).
 
-### ICARM curve 398: rank at least 30 and X948/MW16 construction boundary
+### ICARM curve 398: rank 30, recovered A1/MW16 fibration, and blind quotient recovery
 
 Replay all thirty point identities, exact finite-quotient independence,
 trivial torsion, the singleton rational isogeny class, the complete semistable
@@ -347,14 +371,50 @@ The fast arithmetic regression is:
 
 ```sh
 .venv/bin/python -m unittest \
-  elliptic-curves/tests/test_icarm_curve398_rank30.py -v
+  elliptic-curves/tests/test_icarm_curve398_rank30.py \
+  elliptic-curves/tests/test_curve398_mw16_adaptive_half_lattice.py -v
 ```
 
-This proves `rank E(Q) >= 30`.  The public announcement identifies the broad
-construction as a search through hundreds of MW16 `I2`/`III` fibrations on
-`X948`; the exact fibration, base parameter, section map, and unconditional
-rank upper bound remain unknown.  See
+Check the compacted complete 63,917-class modular screen, replay exact
+characteristic-zero factorization of its two survivors, and rebuild the
+selected `I2+22I1` pencil, rational curve-398 parameter, degree-one shell,
+saturated MW16 basis, and public specialization embedding:
+
+```sh
+python3 elkies-k3/scripts/merge_icarm_curve398_norm8_a1_screen.py --check
+
+sage -python elkies-k3/scripts/certify_icarm_curve398_norm8_a1_survivors.sage \
+  --candidate-ranks artifacts/generated-results/elkies-k3-curve398-11952-norm8-a1-modular-screen-v1.json \
+  --output artifacts/generated-results/elkies-k3-curve398-11952-norm8-a1-exact-survivors-v1.json
+
+sage -python elkies-k3/scripts/compile_icarm_curve398_hidden_a1_mw16.sage --check
+```
+
+The original modular screen is deliberately checkpointed by prime and rank
+interval.  Use `screen_icarm_curve398_norm8_a1_fibrations.sage --help` for the
+chunk interface; chain each output's survivor priorities into the next prime,
+then compact the completed chain with the merge command above.
+
+The blind search reads only the redacted short curve, sixteen specialized
+generic points, and the generic MW16 Gram.  It performs the complete
+`2^16`-class census and 384 bounded point-search charts:
+
+```sh
+sage -python elliptic-curves/cas/run_curve398_mw16_adaptive_half_lattice_search.sage
+```
+
+After that run has stopped, verify all fourteen held-out directions and mutual
+integral equality with the displayed public rank-30 subgroup:
+
+```sh
+sage -python elliptic-curves/cas/verify_curve398_mw16_adaptive_half_lattice_search.sage --check
+```
+
+This proves `rank E(Q) >= 30` and closes the exact construction/recovery
+boundary.  It does not prove an unconditional rank upper bound, search
+stability, or generalization to an unseen family.  See
 [`ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md).
+<!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY a22fcfb1ea6844aa -->
 
 ### Comparative height lattices: ranks 28--31
 
@@ -1037,11 +1097,14 @@ ranks remain `25,26,27,28,21`; they do not bound the full curve ranks. See
 Attach complete known-bisection labels to the frozen 4,922-row training
 cohort, then replay the first train-only ranker on the quarantined controls:
 
+<!-- status-consumer: EC-K3-R17-TRAINING-EXACT-ARITHMETIC-GROUP-GATE 427bf822e774c81e -->
+
 ```sh
 python3 elliptic-curves/scripts/label_r17_training_bisections.py \
   --workers 4 --prime-bound 199
 python3 elliptic-curves/scripts/train_r17_bisection_ranker.py
 python3 elliptic-curves/scripts/train_r17_bisection_ranker.py --check
+python3 elliptic-curves/scripts/audit_r17_training_arithmetic_groups.py --check
 ```
 
 The label run performs 192,548,640 exact square tests. The frozen learned
@@ -1049,6 +1112,15 @@ score retrieves the rank-27 control but not rank 28 inside the sampled top one
 percent; the unmodified weakest-block Nagao baseline retrieves both. See
 [`R17_TRAINING_DATA_PROTOCOL.md`](notes/R17_TRAINING_DATA_PROTOCOL.md) for the
 mechanism boundary and the no-post-holdout-tuning rule.
+
+The final check closes the formerly provisional duplicate audit on the full
+100,000-row development universe, the 4,922 labelled selection, the 5,000-row
+prospective holdout, and the four quarantined controls.  Exact reduced
+rational `j`-invariants give 100,000 singleton development groups and no
+cross-split, selected--holdout, or control--population twist-class overlap.
+The active laboratory registry therefore permits reuse only of the pinned v1
+score named by that audit; any changed inputs or fitted score require a fresh
+outcome-free exact grouping audit.
 
 Validate that the frozen model generalizes to its narrower bisection target on
 a cohort committed before label generation:
@@ -1375,14 +1447,17 @@ censored split row are in
 
 ### R17 quotient-aware record controls
 
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
 
 ```sh
 python3 elkies-k3/scripts/build_r17_quotient_rank_escape_detector_v2_sample.py --check
+python3 elliptic-curves/cas/build_r17_mw17_only_selmer_replay.py --check
+python3 elliptic-curves/cas/run_r17_mw17_only_selmer_replay.py --check
 sage -python elkies-k3/scripts/certify_r17_quotient_rank_escape_detector_v2_controls.sage --check
 python3 -m unittest \
   elliptic-curves/tests/test_quotient_rank_escape_detector_v2.py \
-  elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py
+  elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py \
+  elliptic-curves/tests/test_r17_mw17_only_selmer_replay.py
 ```
 
 This Outcome-D replay certifies the exact models, displayed MW29 mod-two
@@ -1391,7 +1466,27 @@ sample.  It returns no complete 2-Selmer dimension: the global cubic
 `S`-class/unit calculation remains blocked, and no prospective fibre is
 opened before both record controls pass.
 
-The quotient-native replacement for the final descent stage is:
+The prospective control is now a genuinely fixture-separated MW17-only replay:
+
+```sh
+python3 elliptic-curves/cas/build_r17_mw17_only_selmer_replay.py --overwrite
+python3 elliptic-curves/cas/run_r17_mw17_only_selmer_replay.py \
+  --execute --overwrite
+```
+
+The builder emits one source-hash-pinned Magma executable for curve 356 and one
+for curve 385.  Each executable contains the minimal curve and exactly the 17
+specialized generic points; it contains no `P18,...,P29` coordinate, label, or
+half-ideal and reads no external fixture.  It computes the complete
+unconditional Selmer group, quotients only by MW17, writes `blind_freeze`, and
+exits without a cover or point search.  The committed run ledger currently has
+zero completed replays and keeps the operational Selmer candidate gate false.
+Both transcripts must complete with MW17 image dimension 17 and residual
+dimension at least 12 before the separately committed public control truth is
+consulted.
+
+The following quotient-native backend is retained only for post-discovery
+closure:
 
 ```sh
 sage -python elliptic-curves/cas/run_mw29_relative_2selmer_from_bnf.sage \
@@ -1411,6 +1506,8 @@ These commands require preexisting `bnfcertify`-accepted metadata/checkpoints;
 they do not restart BNF construction. They embed and quotient all 29 known
 Kummer classes before the first local computation, stop on a certified zero
 kernel, and otherwise checkpoint a monotone upper bound after every place.
+Because they remove the twelve exceptional directions from the outset, they
+cannot satisfy or calibrate the prospective MW17-only gate.
 Curve 356 prioritizes 2; curve 385 puts the odd bad places before 2 unless
 `--place-order` is supplied. Their default prefixes reuse the known-quotient
 minimum distinguishing cuts `2,3,13,23,751` and `13,29,47,89` as scheduling

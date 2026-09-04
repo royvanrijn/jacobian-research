@@ -32565,7 +32565,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Unconditional curve-398 rank-at-least-30 replay and exact X948 construction boundary",
-      "scope": "For public ICARM curve 398, all thirty displayed rational points satisfy the integral model y^2+x*y=x^3+A*x+B exactly, and X=36*x+3, Y=108*(2*y+x) transports them to an integral short model. Exact exhaustive E(F_p)/2E(F_p) quotients at 25 explicit good primes give a 31-by-30 binary matrix of column rank thirty; the 2-division cubic has no root modulo 23, and the coprime exact orders #E(F_11)=18 and #E(F_23)=31 prove trivial rational torsion. Infinite descent therefore proves rank E(Q)>=30 unconditionally. PARI verifies global minimality, the public discriminant and conductor factorizations, eighteen multiplicative fibres, Tamagawa product 46448640, and global root number +1. Its exact ellisomat enumeration consists of one Q-isomorphism class with degree matrix Mat(1), so curve 398 has no nontrivial rational isogeny to another curve over Q. Exact singular-node incidence at every bad prime gives a retained construction fingerprint. The public Elkies--Klagsbrun announcement identifies the broad source as a search through hundreds of I2/III fibrations on the Picard-rank-19 K3 X948, each with generic MW rank 16 by Shioda--Tate. It does not publish curve 398's exact fibration, rational parameter, sixteen specialized sections, or search transcript. Existing exact recognition already excludes the published R17 chart and all six known norm-twelve chart classes. The singleton Q-isogeny class strengthens the earlier degree-3,5,7,11 checks: no nontrivial rational isogeny from any rational fibre can lead to curve 398. A new degree-24 j-preimage polynomial has no projective root modulo 179, additionally excluding the repository's one equation-explicit fixed-corridor A1/MW16 fibration, twist-stably; it does not test the authors' other A1 fibrations. The authors' GRH-conditional exact-rank statement is external and is not used: no unconditional rank upper bound or exact construction is claimed. The pinned artifact artifacts/generated-results/elliptic-curves/icarm_curve398_rank30_and_construction_v1.json has SHA-256 1fd4f23ff2167321be0e3a7bf12b693f0a9ebe26d1e2125ce131da30ad05bf60.",
+      "scope": "For public ICARM curve 398, all thirty displayed rational points satisfy the integral model y^2+x*y=x^3+A*x+B exactly, and X=36*x+3, Y=108*(2*y+x) transports them to an integral short model. Exact exhaustive E(F_p)/2E(F_p) quotients at 25 explicit good primes give a 31-by-30 binary matrix of column rank thirty; the 2-division cubic has no root modulo 23, and the coprime exact orders #E(F_11)=18 and #E(F_23)=31 prove trivial rational torsion. Infinite descent therefore proves rank E(Q)>=30 unconditionally. PARI verifies global minimality, the public discriminant and conductor factorizations, eighteen multiplicative fibres, Tamagawa product 46448640, and global root number +1. Its exact ellisomat enumeration consists of one Q-isomorphism class with degree matrix Mat(1), so curve 398 has no nontrivial rational isogeny to another curve over Q. Exact singular-node incidence at every bad prime gives a retained construction fingerprint. The public Elkies--Klagsbrun announcement identifies the broad source as a search through hundreds of I2/III fibrations on the Picard-rank-19 K3 X948, each with generic MW rank 16 by Shioda--Tate. It does not publish curve 398's exact fibration, rational parameter, sixteen specialized sections, or search transcript. Existing exact recognition already excludes the published R17 chart and all six known norm-twelve chart classes. The singleton Q-isogeny class strengthens the earlier degree-3,5,7,11 checks: no nontrivial rational isogeny from any rational fibre can lead to curve 398. A new degree-24 j-preimage polynomial has no projective root modulo 179, additionally excluding the repository's one equation-explicit fixed-corridor A1/MW16 fibration, twist-stably; it does not test the authors' other A1 fibrations. The authors' GRH-conditional exact-rank statement is external and is not used, so no unconditional rank upper bound is claimed. The separate theorem EC-K3-CURVE398-A1-MW16-RECOVERY closes the exact construction and blind-recovery boundary. The pinned artifact artifacts/generated-results/elliptic-curves/icarm_curve398_rank30_and_construction_v1.json has SHA-256 1fd4f23ff2167321be0e3a7bf12b693f0a9ebe26d1e2125ce131da30ad05bf60.",
       "canonical_source": "elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md",
       "dependencies": [
         "ECR30",
@@ -32596,6 +32596,58 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-CURVE398-A1-MW16-RECOVERY",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Curve-398 hidden A1/MW16 recovery and blind rank-30 rediscovery",
+      "scope": "On the equation-explicit norm12-orbit-11952 alternate-Q80 chart, complete enumeration of the 63,917 minimum-norm-eight classes gives the first complete A1/MW16 discovery layer. Exact screening at 34 primes excludes 63,915 classes; the two survivors each have one rational curve-398 j-preimage and specialize to curves Q-isomorphic to ICARM curve 398. For the lower-complexity survivor w=(0,0,0,0,0,-1,0,-1,-1,1,1,1,0,-1,0,0,1), the class D=(2,2,w)=O+P_w compiles to a polynomial K3 pencil with coefficient degrees (8,12), one I2 fibre at infinity, and 22 finite I1 fibres. Its curve-398 parameter is exactly -273478312517509127154149830485048828022673347107308547939067553994727903425458545978043182638015899676311550557441827100822466901248/243076210150914055804756105904064536659703543720469425499709810733677965174759784940636972086422417178984090368085211. The fixed parity coset contains exactly 166 degree-one old sections. Sixteen selected sections have exact half-integral Shioda Gram of rank 16 and determinant 474=948/2, proving a saturated generic MW16 basis; specialization and exact group-law replay embed them primitively in the displayed public rank-30 group. A redacted fixture contains only the short curve, those sixteen points, and their generic Gram. The blind algorithm exhausts all 65,536 generic parity classes, searches the twelve deepest charts and then all 372 nonzero five-bit adaptive lifts through height 100,000 with no timeouts, and raises M16 to M21 and then M30. Only after the search, an independent verifier constructs a unimodular fourteen-point complement of the public lattice, replays all fourteen held-out points in the blind basis, and proves mutual integral containment, hence equality of the blind subgroup with the displayed public rank-30 subgroup. The run deliberately stops before the 196,596 fourteen-bit next-wave lifts. It proves neither search stability, an unconditional rank upper bound, saturation in the unknown full E(Q), nor generalization to unseen fibrations or rank 32.",
+      "canonical_source": "elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md",
+      "dependencies": [
+        "EC-ICARM-CURVE398-RANK30-CONSTRUCTION",
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS"
+      ],
+      "checker": "elliptic-curves/cas/verify_curve398_mw16_adaptive_half_lattice_search.sage",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6dfcda90dbb72906fe975d14a1f2cd4bcc4b9d9fa8b71d9bfe5d3bb16d058a47",
+      "software_lock": [
+        "elkies-k3/scripts/screen_icarm_curve398_norm8_a1_fibrations.sage",
+        "elkies-k3/scripts/merge_icarm_curve398_norm8_a1_screen.py",
+        "elkies-k3/scripts/certify_icarm_curve398_norm8_a1_survivors.sage",
+        "elkies-k3/scripts/compile_icarm_curve398_hidden_a1_mw16.sage",
+        "elliptic-curves/cas/run_curve398_mw16_adaptive_half_lattice_search.sage",
+        "elliptic-curves/cas/verify_curve398_mw16_adaptive_half_lattice_search.sage",
+        "elliptic-curves/tests/test_curve398_mw16_adaptive_half_lattice.py",
+        "elliptic-curves/data/icarm_curve398_mw16_blind_input_v1.json",
+        "artifacts/generated-results/elkies-k3-curve398-11952-norm8-a1-modular-screen-v1.json",
+        "artifacts/generated-results/elkies-k3-curve398-11952-norm8-a1-exact-survivors-v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_curve398_hidden_a1_mw16_v1.json",
+        "artifacts/generated-results/elliptic-curves/curve398_mw16_adaptive_half_lattice_blind_v1.json",
+        "artifacts/generated-results/elliptic-curves/curve398_mw16_adaptive_half_lattice_verification_v1.json"
+      ],
+      "supersedes_notes": [
+        "curve 398's exact A1/MW16 fibration, parameter, and specialized generic sections remain UNKNOWN"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-EC-NEXT"
+      ],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elkies-k3/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elkies-k3/scripts/README.md",
+        "artifacts/generated-results/README.md"
+      ],
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
@@ -36995,11 +37047,14 @@
       "id": "OP-EC-NEXT",
       "kind": "open_problem",
       "state": "open",
-      "title": "Elliptic rank-32, exact-rank, and improved-conductor certification",
-      "scope": "ECR31 gives an unconditional rank-at-least-31 curve and supersedes rank 31 as a search target. EC-R21-ICARM closes the original low-conductor rank-at-least-21 replay for curves 285 and 286, so the remaining exact directions are: prove the public curve 302 has rank exactly 31 or exhibit a rank-at-least-32 curve; sharpen exact rank/conductor records using the four pinned rank-19/20 near-miss descent inputs or another independently certified curve; and use the complete reconstructed H3 K3 mechanism to search beyond rank 31. EC-K3-H3-SOURCE through EC-K3-H3-Q12O5867-ENDPOINT-QQ provide the exact H3 source, complete equation route, rootless 24I1 model, source identity, Picard-rank proof, and saturated determinant-948 rank-17 Mordell--Weil lattice. EC-K3-ELKIES-2026-R17 identifies the compact published endpoint and all seventeen sections. EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS and EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL certify the rank-25--28 quotient gains and the three-ensemble height-10000 calibration. EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE makes the actual quotient Sel_2(E_t)/<P1,...,P17> mandatory before expensive search: residual dimension below 15 rejects rank 32, while signatures, norm-one elements, incomplete class data, local candidates, and backend timeouts authorize nothing. Resource-bounded PARI and eclib attempts on the rank-28 control timed out without a Selmer result; a source-pinned unconditional Magma path is implemented but not completed on the current host. EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES proves that translated bisection trace shells cannot enlarge the one-dimensional rank-28 visibility span, records its ten-dimensional target complement, and excludes curves 273 and 302 as direct rational fibres of the published chart. EC-K3-ELKIES-2026-R18-COVER and EC-K3-ELKIES-2026-R19-PAIRED are exact supporting routes. The retained equation and route consumers are EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE, EC-K3-H3-Q4O208-Q4O1584-QQ, EC-K3-H3-Q4O1584-Q4O164-QQ, EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR, EC-K3-H3-Q12O5867-QQ-ROOTLESS, EC-K3-H3-Q12O5867-QQ-R17-BASIS, EC-K3-H3-Q12O5867-ENDPOINT-QQ, EC-K3-H3-Q24-QQ-D12, EC-K3-H3-Q24-O42-QQ-A11, EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET, EC-K3-H3-A11-Q8-QQ-2A5, EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE, EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE, and EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE. The open rank-32 success target is fifteen certified quotient directions and a finite-reduction independence matrix of rank 32. Residual descent for curve 273 and the four low-conductor near misses also remains open. Alternate lattice corridors, changed-zero compilers, and bounded point-search misses remain reference or experimental data, not upper bounds. The retained exact and supporting route records explicitly include EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE, EC-K3-H3-Q4O208-Q4O1584-QQ, EC-K3-H3-Q4O1584-Q4O164-QQ, EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR, EC-K3-H3-Q12O5867-QQ-ROOTLESS, EC-K3-H3-Q12O5867-QQ-R17-BASIS, EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS, EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL, EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE, EC-K3-ELKIES-2026-R18-COVER, EC-K3-ELKIES-2026-R19-PAIRED, EC-R20-IC245, EC-MD17, EC-MD19, EC-K3-H3-PTS, EC-ICARM-CONSTRUCTION-FINGERPRINTS, EC-K3-H3-Q8-QQ-D13, EC-K3-H3-Q24-QQ-D12, EC-K3-H3-Q24-O42-I8STAR-MARKING, EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT, EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE, EC-K3-H3-Q24-O42-SECTION-CANDIDATES, EC-K3-H3-Q24-O42-QQ-A11, EC-K3-H3-Q24-O42-FAST-Q6-AUDIT, EC-K3-H3-D13-MW17-LATTICE-CHAIN, EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET, EC-K3-H3-A11-Q8-QQ-2A5, EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE, EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE.",
+      "title": "Parallel rank-32 construction, exact-rank, and improved-conductor certification",
+      "scope": "Rank at least 32 remains open. ECR31 proves rank at least 31 for curve 302 without an unconditional upper bound. The operational programme has three peer construction lanes and no unique R17/MW17 critical path. Lane A is calibrated R17/MW17 specialization, using the exact determinant-948 equations, the 43-chart/six-class atlas, native public fibres, and fail-closed residual descent gates. Lane B now uses the recovered curve-398 A1/MW16 fibration as a cross-fibration rank-jump positive control while continuing reconstruction of curve 302's unknown parent from its complete 31-point configuration without assuming generic rank 17 or a 17+14 split. Lane C is the arithmetic-first different-NS foundry. EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS and EC-K3-R17-NORM12-ICARM-573-REFRESH exclude curves 273, 302, and 398 only from the six norm-twelve classes, not from other fibrations or families. EC-K3-CURVE398-A1-MW16-RECOVERY certifies curve 398's exact A1/MW16 family, rational parameter, saturated sixteen-section specialization, fourteen-dimensional displayed quotient, and blind adaptive recovery of the full displayed rank-30 subgroup. This complements the exactly calibrated R17/MW17 quotient gains, which currently reach twelve. Generic rank and demonstrated jump size are therefore separate operational prioritization axes; this is not a theorem about search probabilities or unseen-family generalization. For a family with certified generic rank r, a rank-32 success requires at least 32-r independent quotient directions and a finite-reduction independence certificate of rank 32: fifteen directions for MW17 and sixteen for A1/MW16. Before any expensive point or cover search, the actual family-relative residual Selmer quotient must pass on the same parameter and global minimal model; signatures, norm-one elements, incomplete class data, heuristic scores, local candidates, bounded misses, and backend timeouts authorize nothing. The recovered curve-398 family may now be used as a rank-32 neighbourhood and regression control, but its bounded success does not establish stability or authorize skipping residual descent. A completed curve-302 reconstruction must certify its parent equation, parameter, generic subgroup, section transport, and quotient without dimensioning the search in advance. The retained exact narrowing results are EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE, EC-K3-H3-Q4O1584-Q4O164-QQ, EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR, EC-K3-H3-Q12O5867-QQ-ROOTLESS, EC-K3-H3-Q12O5867-QQ-R17-BASIS, EC-K3-H3-Q12O5867-ENDPOINT-QQ, EC-K3-ELKIES-2026-R17, EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS, EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL, EC-K3-ELKIES-2026-R18-COVER, EC-K3-ELKIES-2026-R19-PAIRED, ECR31, EC-R21-ICARM, EC-R20-IC245, EC-MD17, EC-MD19, EC-K3-H3-SOURCE, EC-K3-H3-PTS, EC-ICARM-CONSTRUCTION-FINGERPRINTS, EC-K3-H3-Q8-QQ-D13, EC-K3-H3-Q24-O42-I8STAR-MARKING, EC-K3-H3-Q24-O42-ZERO-POLE-AUDIT, EC-K3-H3-Q24-O42-SPINOR-ZERO-POLE, EC-K3-H3-Q24-O42-SECTION-CANDIDATES, EC-K3-H3-Q24-O42-QQ-A11, EC-K3-H3-A11-Q8-QQ-2A5, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-Q24-O42-FAST-Q6-AUDIT, EC-K3-H3-D13-MW17-LATTICE-CHAIN, EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES; they remain dependencies and regression controls but do not define the exclusive roadmap. The retained exact route consumers are EC-K3-H3-A11-R17-PHYSICAL-Q4O208-PROMOTED-ROUTE, EC-K3-H3-Q4O208-Q4O1584-QQ, EC-K3-H3-Q4O1584-Q4O164-QQ, EC-K3-H3-Q4O164-Q8O376-QQ-SMOOTH-RR, EC-K3-H3-Q12O5867-QQ-ROOTLESS, EC-K3-H3-Q12O5867-QQ-R17-BASIS, EC-K3-H3-Q12O5867-ENDPOINT-QQ, EC-K3-ELKIES-2026-R17, EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS, EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL, EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE, EC-K3-ELKIES-2026-R18-COVER, EC-K3-ELKIES-2026-R19-PAIRED, EC-K3-H3-Q24-QQ-D12, EC-K3-H3-Q24-O42-QQ-A11, EC-K3-H3-A11-Q8-CONSTRUCTION-TARGET, EC-K3-H3-A11-Q8-QQ-2A5, EC-K3-H3-A11-R17-Q6O1307-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-R17-PHYSICAL-Q10-PROMOTED-ROUTE, EC-K3-H3-A11-R17-Q4O230-Q6O1315-PROMOTED-LATTICE-ROUTE, EC-K3-H3-FIRST-Q8-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-D13-R17-Q4O11-PROMOTED-LATTICE-ROUTE, EC-K3-H3-A11-Q8-TARGET-COSET-BRIDGE. Separately, an unconditional exact-rank result for curve 302, residual descent for curve 273, and sharper exact rank or conductor results from the pinned near misses remain open.",
       "canonical_source": "elliptic-curves/README.md",
       "dependencies": [
         "ECR31",
+        "EC-ICARM-CURVE302-POINT-CLOUD",
+        "EC-ICARM-CURVE398-RANK30-CONSTRUCTION",
+        "EC-K3-CURVE398-A1-MW16-RECOVERY",
         "EC-R21-ICARM",
         "EC-R21-ICARM394",
         "EC-CF-NEARMISS-DESCENT-INPUTS",
@@ -37045,6 +37100,10 @@
         "EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES",
         "EC-K3-ELKIES-2026-R18-COVER",
         "EC-K3-ELKIES-2026-R19-PAIRED",
+        "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
+        "EC-K3-R17-NORM12-ICARM-573-REFRESH",
+        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
         "EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE",
         "EC-CRT-BEAM-NONMONOTONE"
       ],
@@ -37070,6 +37129,18 @@
       "replaced_by": [],
       "priority": "primary",
       "forbidden_attack_classes": [
+        {
+          "attack": "Treating R17/MW17 as the unique rank-32 critical path or treating the six norm-twelve atlas misses as exclusions from other K3 fibrations",
+          "reason": "The complete atlas excludes curves 273, 302, and 398 only from its six classes. Curve 398's different A1/MW16 fibration is now recovered exactly and its rank-14 displayed quotient blindly rediscovered; it is a cross-fibration positive control, while curve 302's parent remains a peer construction path with its missing equation and section map kept UNKNOWN.",
+          "witnesses": [
+            "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
+            "EC-K3-R17-NORM12-ICARM-573-REFRESH",
+            "EC-ICARM-CURVE398-RANK30-CONSTRUCTION",
+            "EC-K3-CURVE398-A1-MW16-RECOVERY",
+            "ECR31",
+            "EC-ICARM-CURVE302-POINT-CLOUD"
+          ]
+        },
         {
           "attack": "Treating translated bisection trace shells as new independent rank directions",
           "reason": "The exact published-R17 visibility audit shows that the translated shells span only the already-visible one-dimensional direction on the rank-28 control and leave a ten-dimensional target complement.",
@@ -37501,9 +37572,7 @@
       ],
       "supersedes": [],
       "closes_problems": [],
-      "narrows_problems": [
-        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
-      ],
+      "narrows_problems": [],
       "consumers": [
         "REPRODUCE.md",
         "artifacts/generated-results/README.md",
@@ -37690,6 +37759,47 @@
         "elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
         "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
         "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-DET1236-V4-LOCAL-CONSISTENCY",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact local consistency obstruction for the determinant-1236 V4 reconstruction",
+      "scope": "On the displayed elliptic quotient E=618f1, the explicit genus-two cover B->E has squareclass h=(X-4)/54 and Prym 618e1. Every genus-three quadratic extension of F_p(E) at a good odd prime has a squareclass representative in L(6O). The checker exhaustively enumerates P(L(6O))(F_p), computes geometric branch degree with common conjugate-zero factors retained, and compares the degree-two character sums of b and h*b. At p=5 it checks 3906 classes, including 968 of branch degree four; no class, even before the branch restriction, has the asserted complementary Prym targets 15 and 11 in either order. At p=7 it checks 19608 classes, including 3476 of branch degree four; no class has targets 20 and 8 in either order, and no alternative pairing of 618a1,...,618d1 works there. The same character convention recovers the exact 618e1 target from h at both primes, and degree-two traces are unchanged by constant quadratic twists. Therefore the displayed B/E squareclass and the currently asserted 618a1*618b1 | 618c1*618d1 V4 factor partition cannot simultaneously describe the reduction of the desired tower. This is an exact upstream consistency obstruction, not an arithmetic exclusion of C_1236 and not a decision of any of the twelve rational lifts; the quotient-factor or rational-descent identification must be reconciled first.",
+      "canonical_source": "elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-DET1236-GENUS2-RATIONAL-POINTS",
+        "external: Padurariu--Saia genus-at-most-two Shimura quotient model at commit 6cc368fe37aa67187783118f18d149b2b1fd6230",
+        "external: Jacquet--Langlands and ramified-place Atkin--Lehner sign normalization"
+      ],
+      "checker": "elkies-k3/scripts/audit_det1236_v4_local_consistency.sage",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:df47d78d3194b3bf924709edbd187d6035ee1fc02ae2888f21c59a0c4ea19fb3",
+      "software_lock": [
+        "elkies-k3/scripts/audit_det1236_v4_local_consistency.sage",
+        "artifacts/generated-results/elkies-k3-det1236-v4-local-consistency-v1.json",
+        "artifacts/generated-results/elkies-k3-det1236-v4-local-consistency-p7-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+      ],
+      "consumers": [
+        "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
         "elkies-k3/README.md",
         "elkies-k3/scripts/README.md"
       ],
@@ -38635,6 +38745,61 @@
         "elliptic-curves/notes/ICARM_WGXLI_RANK17_LINEAGE.md",
         "elliptic-curves/notes/ICARM_WGXLI_RANK17_BOUNDED_REBASING.md",
         "elliptic-curves/notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-ICARM-573-REFRESH",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Exact 573-curve norm-twelve atlas refresh, sixteen new specialization quotients, and curve-499 commensurability",
+      "scope": "The hash-pinned 2026-09-04 ICARM response contains curves 1 through 573 and 561 distinct j-invariants. Exact primitive projective preimage tests against the six certified norm-twelve rational-PGL2 j-classes decide all 3,438 curve/class pairs: 86 hits and 3,352 misses. Transport through every native class chart gives 479 curve/chart comparisons, all QQ-isomorphic with trivial quadratic twist. Relative to the preserved 474-curve theorem, ids 475 through 573 contribute 17 hits and 82 misses, with exact point-membership and discriminant checks for every appended row. All thirteen appended curves whose displayed rank lower bound is at least 24 have independently replayed point independence and trivial torsion: twelve close by exact mod-2 finite-quotient products, while curve 542 requires and passes an exact mod-3 rank-26 fallback after its mod-2 image has rank 25. Eleven are untwisted atlas fibres; curves 542 and 548 miss all six classes. All six lower-rank hits also have exact displayed-point independence replays, with curve 539 requiring a mod-3 fallback after mod-2 rank 22. Exact specialization of the saturated generic MW17 bases, exact group-law relations, and Smith normal forms prove displayed-subgroup quotients Z^12 for curve 543; Z^11 for curves 531, 534, 535, 536, 544, and 545; Z^10 for curve 537; Z^8 for curves 540, 541, and 546; Z^6 for curves 498 and 539; Z^5 for curve 538; Z^4 for curve 478; and Z^3 for curve 532. Curve 499 is an exact exception: its specialized MW17 subgroup is not contained in the displayed rank-20 subgroup, and exact triple relations show that adjoining it enlarges the displayed subgroup by Z/3Z, so a displayed-subgroup quotient by MW17 is not defined. Public construction comments are retained only as provenance labels, not proofs. This is a snapshot- and six-class-bounded theorem: it proves no rank upper bound, full Mordell--Weil group, origin for a miss, or completeness over other K3 fibrations. Conductors absent from the public response for curves 537, 543, 545, and 568 remain UNKNOWN.",
+      "canonical_source": "elliptic-curves/notes/ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-R17-NORM12-103B2-DIRECT-BISECTION-CHARACTER-EXHAUSTION"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_norm12_refresh_priority_quotients.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:5b3f1ff9c34849155d31e27934691b8d2856eaa5da296ab9f12cc1fe3b09ba85",
+      "software_lock": [
+        "elkies-k3/scripts/certify_r17_norm12_icarm_database_sweep.sage",
+        "elliptic-curves/cas/audit_icarm_curve_refresh_overview.py",
+        "elliptic-curves/cas/mod2_reduction_independence.py",
+        "elliptic-curves/cas/search_mestre_root_tuple_scale_max200.py",
+        "elkies-k3/scripts/certify_r17_norm12_refresh_priority_quotients.sage",
+        "elkies-k3/scripts/certify_r17_norm12_native_icarm_quotient_audit.sage",
+        "artifacts/generated-results/elkies-k3-r17-norm12-icarm-database-sweep-v2.json",
+        "artifacts/generated-results/elliptic-curves/icarm_curve_refresh_475_573_overview_v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-refresh-priority-quotients-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit07ca9-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit08234-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json"
+      ],
+      "supersedes_notes": [
+        "the 474-curve snapshot is the current complete ICARM norm-twelve atlas inventory",
+        "ICARM curves 531 through 546 have no exact norm-twelve specialization quotient audit"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/README.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "artifacts/generated-results/README.md",
+        "elliptic-curves/notes/ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -41579,11 +41744,109 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-R17-074D9-HALF-LATTICE-PROMOTION-GATE",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Fail-closed rank-32 promotion and half-lattice chart-semantics guard",
+      "scope": "A restrictive post-freeze audit pins the immutable prospective half-lattice protocol v3 and its equal-budget calibration.  It verifies that the primary event is only at least one exactly certified Stage-A direction beyond specialized MW17.  The detector scores are 8,9,10,9 on the development jump strata 8,9,10,11, including a strict order reversal, while the sealed controls all have displayed jump 12 and scores 10,12,3.  Thus the sealed panel has only one jump stratum, the maximum calibrated displayed jump is 12 rather than the 15 needed beyond MW17 for rank 32, and neither magnitude tracking nor upper-tail incidence is validated.  Protocol v3 remains byte-for-byte historical evidence, including its scheduled-row denominator, but that denominator treats censored rows as observed non-events and is not an inferential event rate.  A source-pinned v4 successor estimates only complete-Stage-A detector yield and authorizes a prospective contrast only when every distinct censored-status proportion is exactly equal between its arms; unbalanced or empty comparisons make the risk difference, risk ratio, odds ratio, and Fisher p-value null and authorize no conclusion.  Exact events on censored rows remain descriptive scheduled-denominator lower bounds only.  No binary success, effect size, or p-value from this experiment may promote a rank-32 candidate.  The executable chart policy additionally records that every pointed quartic is a birational point-search chart of the same elliptic curve, not a nontrivial 2-covering or Selmer-class representative.  Legacy half-lattice depth, old-deep-43, and quotient Hamming weight are only search-order fields for one exact presentation.  An ordering certificate hashes the exact basis, height Gram, embedded generic coordinates, quotient basis/complement, chart universe, and ordered chart identities; any independent-point or finite-index enlargement, generator/basis change, or coordinate change makes it stale and requires complete recomputation before another search.  Efficiency calibration does not transfer to the new state without blinded revalidation.  A miss implies no rational-point absence, covering insolubility, Selmer structure, Mordell--Weil saturation, or rank upper bound.  A successor rank-32 rule must also validate magnitude and upper-tail behavior, pass the balanced-censoring gate, and retain the separate completed residual 2-Selmer gate.  Fifteen exactly certified independent directions would instead prove rank at least 32 directly.",
+      "canonical_source": "elkies-k3/R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-074D9-PROSPECTIVE-CRT-ESCAPE-EXPERIMENT",
+        "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE"
+      ],
+      "checker": "elkies-k3/scripts/build_r17_prospective_crt_half_lattice_promotion_gate.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c39ec44e333862487d6c0a638855d0abbe8fead8834ec951f346cc23e9052584",
+      "software_lock": [
+        "elkies-k3/scripts/build_r17_prospective_crt_half_lattice_promotion_gate.py",
+        "elliptic-curves/cas/half_lattice_chart_policy.py",
+        "elliptic-curves/tests/test_half_lattice_chart_policy.py",
+        "elliptic-curves/tests/test_r17_prospective_crt_half_lattice_promotion_gate.py",
+        "elliptic-curves/tests/test_r17_experimental_hygiene.py",
+        "elkies-k3/scripts/analyze_r17_prospective_crt_half_lattice_censoring_gated.py",
+        "artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-protocol-v3.json",
+        "artifacts/generated-results/elliptic-curves/half_lattice_search_ablation_summary_v1.json",
+        "artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-promotion-gate-v1.json"
+      ],
+      "supersedes_notes": [
+        "nonzero half-lattice sensitivity on rank-29 controls is sufficient to promote a rank-32 candidate",
+        "enrichment of the binary event jump at least one is evidence of extreme-rank tail enrichment",
+        "half-lattice depth is an arithmetic depth or filtration",
+        "old-deep-43 and quotient Hamming weight define basis-invariant arithmetic or Selmer structure",
+        "a miss on a pointed birational quartic implies absence, local insolubility, or Selmer information",
+        "censored or timed-out Stage-A rows may enter the primary scheduled denominator as observed non-events",
+        "a prospective cohort contrast remains interpretable under differential censoring"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md",
+        "elliptic-curves/README.md",
+        "elliptic-curves/notes/HALF_LATTICE_FAKE_DESCENT_REPLAY_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-TRAINING-EXACT-ARITHMETIC-GROUP-GATE",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact isomorphism and twist grouping gate for R17 learned-score reuse",
+      "scope": "An outcome-free exact audit closes the formerly provisional arithmetic-duplicate check for the frozen R17 bisection ranker.  It computes the reduced rational j-invariant from the exact family equation for every one of the 100,000 development parameters, the 4,922 labelled selected rows, the independently committed 5,000-row prospective holdout, and the four quarantined high-rank controls.  Equal j conservatively groups every Q-isomorphism class and rational twist class, including the exceptional j=0 and j=1728 cases.  The development universe has 100,000 singleton exact-j groups, hence no repeated or cross-split group; the selected and holdout cohorts have no parameter or twist-class overlap; and the controls have no twist-class overlap with the development universe or holdout.  The compact committed audit input contains only parameters, deterministic split labels, and membership flags, not bisection, rank, or point-search outcomes.  This post-fit audit validates only reuse of the immutable v1 learned score and does not authorize retuning.  The active rank-jump registry fails closed unless the audit and score hashes agree.  Any changed population, split, holdout, controls, family equation, or fitted score requires a new exact outcome-free grouping audit.  This is a leakage closure, not a rank, Selmer, or predictive-mechanism theorem.",
+      "canonical_source": "elliptic-curves/notes/R17_TRAINING_DATA_PROTOCOL.md",
+      "dependencies": [],
+      "checker": "elliptic-curves/scripts/audit_r17_training_arithmetic_groups.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:579466d0adb34411f737e08525893c860b1d45c01c85d11ec17d59e142178413",
+      "software_lock": [
+        "elliptic-curves/scripts/audit_r17_training_arithmetic_groups.py",
+        "elliptic-curves/ecsearch/rank_jump_benchmark.py",
+        "elliptic-curves/data/rank_jump_laboratory_v1.json",
+        "elliptic-curves/tests/test_r17_experimental_hygiene.py",
+        "elliptic-curves/tests/test_rank_jump_benchmark.py",
+        "artifacts/generated-results/elliptic-curves/r17_training_arithmetic_group_inputs_v1.json.gz",
+        "artifacts/generated-results/elliptic-curves/r17_training_arithmetic_group_audit_v1.json",
+        "artifacts/generated-results/elliptic-curves/r17_bisection_gain_ranker_quarantined_replay_v1.json",
+        "artifacts/generated-results/elliptic-curves/r17_bisection_gain_ranker_prospective_holdout_v1.json"
+      ],
+      "supersedes_notes": [
+        "the R17 isomorphism and twist duplicate audit remains provisional",
+        "row-wise parameter-hash separation alone authorizes reuse of the learned score"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/scripts/README.md",
+        "elliptic-curves/notes/R17_TRAINING_DATA_PROTOCOL.md",
+        "elliptic-curves/notes/RANK_JUMP_LABORATORY.md",
+        "artifacts/generated-results/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2",
       "kind": "reproduction",
       "state": "partial",
-      "title": "Fail-closed quotient-aware 2-Selmer detector v2 control gate",
-      "scope": "The detector-v2 control replay verifies the exact global minimal models of record fibres 356 and 385, the specialized MW17 subgroup, its 17-dimensional mod-2 image, its primitivity inside the displayed MW29 subgroup, and the twelve-dimensional exceptional image modulo MW17. The rank-29 combined good-reduction E(F_p)/2E(F_p) signature certificate proves 2-saturation of both displayed MW29 and its MW17 subspace; all-prime saturation inside the unknown full rational Mordell--Weil group remains UNKNOWN. For both records it records 2, every finite bad prime, infinity, exact local Kummer and component data for the known points, certified cubic fields and discriminant factorizations, class-group pressure, and preserved failed BNF attempts. Neither global 2-descent completes: dim Sel_2, s_res, dim Sel_2/im(MW29/2), auxiliary descent places, global local-condition rows, local codimensions, and leave-one-place-out residual dimensions all remain UNKNOWN. The exact post-descent implementation computes those quantities only from a completed explicitly declared all-place input and makes no intrinsic pairing claim on an arbitrary quotient complement. A separately blinded hash-order commitment freezes Stage 1 at two fibres per each of five aggregate cohorts, ten total, and Stage 2 at six per cohort, thirty total; both stages remain unauthorized until blind recovery of all twelve exceptional directions on both records. This is Outcome D, not a Selmer upper bound, exact-rank result, cohort comparison, or cylinder-enrichment claim.",
+      "title": "Fail-closed fixture-separated MW17-only 2-Selmer control gate",
+      "scope": "The detector-v2 control replay verifies the exact global minimal models of record fibres 356 and 385, the specialized MW17 subgroup and its 17-dimensional mod-2 image, and the public twelve-dimensional exceptional image modulo MW17. The rank-29 combined good-reduction certificate proves 2-saturation of the displayed MW29 and its MW17 subspace; all-prime saturation inside the unknown full rational Mordell--Weil group remains UNKNOWN. The earlier hard quotient-by-MW29 calculations remove the twelve exceptional directions before local work and are therefore classified only as post-discovery closure diagnostics, not prospective calibration. A new fixture-separated replay freezes two source-hash-pinned Magma executables, one per record: each contains only the minimal curve and exactly seventeen specialized generic points, requests the complete unconditional 2-Selmer group, quotients only by MW17, and terminates at blind_freeze. Mechanical audits exclude P18 through P29 coordinates and labels, MW29 tokens, half-ideal shortcuts, external reads, covers, and point searches. Neither replay has run, so dim Sel_2, dim Sel_2/im(MW17/2), auxiliary descent places, global local-condition rows, local codimensions, and leave-one-place-out residual dimensions remain UNKNOWN. The Selmer candidate gate is not operationally calibrated until both sealed transcripts complete, certify MW17 Kummer rank 17, and report residual dimension at least twelve before the separately committed public control truth is consulted. The hash-order prospective sample remains frozen and unauthorized. This is Outcome D, not a Selmer upper bound, exact-rank result, cohort comparison, or candidate promotion.",
       "canonical_source": "elkies-k3/R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-074D9-PROSPECTIVE-CRT-ESCAPE-EXPERIMENT",
@@ -41595,20 +41858,26 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:c1ac72179912f1ffa67810d71a24225bbb89e7a581b6620107dc8e8367700b41",
+      "artifact_hash": "sha256:9d1a03994d7eca66ef18669510d1bb3622645db10f6b2e284c155e8c75c98bb5",
       "software_lock": [
         "elkies-k3/scripts/certify_r17_quotient_rank_escape_detector_v2_controls.sage",
         "elkies-k3/scripts/build_r17_quotient_rank_escape_detector_v2_sample.py",
         "elliptic-curves/cas/quotient_rank_escape_detector_v2.py",
         "elliptic-curves/cas/run_elkies_2026_relative_2selmer_checkpointed.py",
+        "elliptic-curves/cas/build_r17_mw17_only_selmer_replay.py",
+        "elliptic-curves/cas/run_r17_mw17_only_selmer_replay.py",
         "elliptic-curves/tests/test_quotient_rank_escape_detector_v2.py",
+        "elliptic-curves/tests/test_r17_mw17_only_selmer_replay.py",
         "artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-controls-v1.json",
         "artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-sample-v1.json",
         "artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-unblinding-key-v1.json",
-        "artifacts/generated-results/elliptic-curves/elkies_2026_record_pair_relative_2selmer_inputs_v1.json"
+        "artifacts/generated-results/elliptic-curves/elkies_2026_record_pair_relative_2selmer_inputs_v1.json",
+        "artifacts/generated-results/elliptic-curves/r17_mw17_only_selmer_control_inputs_v1.json",
+        "artifacts/generated-results/elliptic-curves/r17_mw17_only_selmer_control_run_v1.json"
       ],
       "supersedes_notes": [
-        "the zero-event bounded point detector is sufficiently sensitive to compare the frozen prospective cohorts"
+        "the zero-event bounded point detector is sufficiently sensitive to compare the frozen prospective cohorts",
+        "a quotient-by-MW29 record calculation calibrates prospective MW17-relative candidate feasibility"
       ],
       "supersedes": [],
       "closes_problems": [],
@@ -41622,6 +41891,51 @@
         "elliptic-curves/cas/README.md",
         "artifacts/generated-results/elliptic-curves/README.md",
         "elkies-k3/R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-CURVE385-INDEPENDENT-RESTART-BUDGETS",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Independent rank-changing and saturation-only budgets for the curve-385 rank-32 search",
+      "scope": "The completed curve-385 sparse primary campaign and its v1 protocol remain byte-for-byte historical evidence. Their single maximum_lattice_states=4 cap has insufficient saturation slack: two same-rank finite-index enlargements followed by the three unit rank gains 29->30->31->32 require five searched group-changing states and would stop before the target under that combined cap. A source-pinned v2 amendment removes the combined cap and classifies each exact basis transition into disjoint counters with defaults of three rank-changing changes and four saturation-only changes. A rank gain carrying simultaneous finite-index events consumes only the rank-changing counter; a same-rank basis change requires an exact finite-index saturation event. Certified rank at least 32 is accepted immediately after classification and before a further restart or budget-stop decision. The frozen adverse-path regression reaches rank 32 after two saturation-only changes and all three unit rank gains with counts 3 and 2. Malformed and legacy combined-counter checkpoints fail closed. Exhausting either v2 budget stops only the campaign and supplies no rank upper bound or saturation theorem; no new point-search outcome is opened by this amendment.",
+      "canonical_source": "elliptic-curves/notes/CURVE385_SPARSE_QUOTIENT_RANK32_PRIMARY_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-074D9-HALF-LATTICE-PROMOTION-GATE"
+      ],
+      "checker": "elliptic-curves/cas/build_curve385_sparse_restart_budget.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:fda7badbbaa08bf24c6c9e1953183434f49bbcb599950bda24951ef40420bff7",
+      "software_lock": [
+        "elliptic-curves/cas/build_curve385_sparse_restart_budget.py",
+        "elliptic-curves/cas/curve385_sparse_restart_policy.py",
+        "elliptic-curves/cas/run_curve385_sparse_quotient_rank32_search_v2.sage",
+        "elliptic-curves/tests/test_curve385_sparse_restart_budget.py",
+        "artifacts/generated-results/elliptic-curves/curve385_sparse_quotient_rank32_protocol_v1.json",
+        "artifacts/generated-results/elliptic-curves/curve385_sparse_quotient_rank32_primary_v1.json",
+        "artifacts/generated-results/elliptic-curves/curve385_sparse_restart_budget_v2.json"
+      ],
+      "supersedes_notes": [
+        "the combined four-lattice-state cap has adequate slack for future curve-385 rank-32 searches",
+        "finite-index saturation restarts may consume the states reserved for rank growth"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "artifacts/generated-results/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md",
+        "elliptic-curves/README.md",
+        "elliptic-curves/cas/README.md",
+        "elliptic-curves/notes/CURVE385_ITERATED_HALF_LATTICE_RECOVERY_2026-09-04.md",
+        "elliptic-curves/notes/CURVE385_SPARSE_QUOTIENT_RANK32_PRIMARY_2026-09-04.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -41988,6 +42302,7 @@
         "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS",
         "EC-K3-DET1236-GENUS2-RATIONAL-POINTS",
         "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
+        "EC-K3-DET1236-V4-LOCAL-CONSISTENCY",
         "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
         "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
         "EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA",

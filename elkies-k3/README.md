@@ -10,7 +10,12 @@ for exact claim status.
 
 ## Primary lanes
 
-Only these two lanes set the operational roadmap.
+Three peer lanes set the operational roadmap.  Rank 17 is not a prerequisite
+for a rank-32 construction: lane selection uses both generic Mordell--Weil rank
+and the largest exactly calibrated specialization jump.  In particular, the
+six-class norm-twelve misses for curves 273, 302, and 398 are exclusions from
+that atlas only, not evidence against other fibrations on `X948` or other
+construction families.
 
 ### Lane A — record lane
 
@@ -59,23 +64,61 @@ no enrichment signal at that bound and no rank or Selmer upper bound.  The
 same call also redetects no escape on either known +12 control, so the result
 is detector-limited; see
 [`R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md`](R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md).
-The fixture-blind half-lattice replay passes the replacement sensitivity gate
+The fixture-blind half-lattice replay passes a replacement sensitivity gate
 on those controls.  Its separately hashed two-stage protocol now reuses the
 same frozen 2,560 fibres: fixed generic-deepest 43 first, and the full
 specialized ranking/union only after an exactly certified Stage-A escape.
 The prospective run is bounded and checkpointed; it does not alter the old
 zero-event ledger or authorize a cohort claim before the new ledger is
-complete.
+complete.  Its binary `jump>=1` endpoint is now explicitly forbidden from
+promoting a rank-32 candidate.  The sealed controls contain only the `+12`
+stratum and score `10,12,3`, so a successor must validate score--jump magnitude
+and a predeclared upper-tail endpoint on an independent multi-stratum panel;
+the residual 2-Selmer gate remains separate.  The same guard treats legacy
+half-lattice depth, old-deep-43, and quotient Hamming weight only as
+basis-bound chart-order heuristics: they must be recomputed and revalidated
+after every lattice/basis change, and a chart miss has no absence or Selmer
+meaning.
+<!-- status-consumer: EC-K3-R17-074D9-HALF-LATTICE-PROMOTION-GATE 9a1f080523c9ecae -->
 Detector v2 now freezes a hash-only balanced Stage-1/Stage-2 sample and an
 exact quotient-aware all-place matrix interface, but its two record-control
 descents remain blocked at the cubic `S`-class/unit step.  Stage 1 has not
-been opened and all Selmer dimensions remain `UNKNOWN`; see
+been opened and all Selmer dimensions remain `UNKNOWN`.  Its operational
+control is now a fixture-separated MW17-only replay on curves 356 and 385;
+the quotient-by-MW29 route is post-discovery closure evidence only.  Both
+MW17-only runs are still unexecuted, so the Selmer candidate gate remains
+uncalibrated; see
 [`R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md`](R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md).
 <!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-LOCAL-STABILITY 0edaaa6f05041634 -->
 <!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-ESCAPE-EXPERIMENT 021a952efb9ea0f4 -->
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
 
-### Lane B — foundry lane
+### Lane B — record-construction recovery
+
+Run two reconstruction targets in parallel with Lane A.
+
+- **Curve 398 / A1-MW16:** the hidden fibration has been recovered from the
+  complete norm-eight layer on `norm12-orbit-11952`, including the exact
+  rational parameter, saturated sixteen-section specialization, and displayed
+  rank-14 quotient.  A redacted half-lattice plus adaptive quotient search
+  blindly reconstructs the full displayed rank-30 subgroup, making this the
+  native cross-fibration positive control.  A rank-32 fibre in the same family
+  requires sixteen independent quotient directions, only two beyond the
+  demonstrated curve-398 jump.
+- **Curve 302 / unknown parent:** recover a family from the complete
+  31-point configuration without assuming a `17+14` split, then require exact
+  `j`, twist, isomorphism, generic-section transport, and saturation checks.
+  Use a recovered parent as a neighbourhood for rank 32; do not substitute a
+  blind 32nd-point search on curve 302 for construction recovery.
+
+The exact starting boundaries are
+[`../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md)
+and
+[`../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md`](../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md).
+Curve 398's construction boundary is closed by an exact certificate.  Curve
+302's parent equation and section map remain `UNKNOWN`.
+
+### Lane C — foundry lane
 
 Start with rank-three `T`, compute the exact stable marked curve, and require
 a rational noncuspidal non-CM point before constructing `NS=T^perp`, testing
@@ -88,7 +131,11 @@ marked curve is the genus-six `X_0^6(103)/<w_618>`, with an explicit
 genus-two quotient having exactly fourteen rational points, and two rational
 CM points upstairs. Its exact Jacobian splits into
 the six rank-one factors `618a1` through `618f1`, isolating a four-factor
-Prym, but its non-CM rational lift is `UNRESOLVED_FOR_EXPLICIT_REASON`. The global `T`-first queue has 820 research
+Prym. Exhaustive `p=5,7` `V_4` audits show that the displayed `B -> 618f1`
+squareclass is incompatible with the currently asserted pairing of those
+four factors, so that quotient-factor identification must be corrected
+before the twelve fibers can be evaluated. Its non-CM rational lift remains
+`UNRESOLVED_FOR_EXPLICIT_REASON`. The global `T`-first queue has 820 research
 rows and no new NS/equation handoff. The construction target
 is stronger than plain MW17: require a certified positive-rank low-genus
 carrier and independent pullback section, with an integral `V4` lattice of
@@ -105,15 +152,38 @@ and the batch
   supporting work, not the next foundry milestone.
 - **Published R17 over `QQ`:** rootless `24 I1`, Picard rank 19, saturated determinant-948 Mordell–Weil lattice of rank 17.
 - **Alternate Q80 over `QQ`:** the canonical equation route is now the direct degree-two hop `norm12-orbit-11952` from published R17. It gives a polynomial K3 model with `(deg A,deg B,deg Delta)=(8,12,24)`, `24 I1`, the alternate determinant-948 rootless frame, and 17 saturated rational sections.
-- **Complete norm-twelve public-curve atlas:** all 43 shared-zero degree-two charts form six rational-`PGL2` `j`-classes, and all 474 equations in the pinned ICARM snapshot have exact preimage decisions. There are 69 rational hits and 2,775 misses; all 376 native chart/fibre comparisons are untwisted. Every wgxli component is recognized. Curve 12 is the first native alternate-Q80 rank-at-least-29 control, with exact displayed quotient `Z^12`; curves 273, 302, and 398 miss all six classes.
-- **Curve 398 MW16 boundary:** the Elkies--Klagsbrun announcement places this
-  rank-at-least-30 curve on an `I2`/`III` fibration of `X948`, hence generic
-  MW rank 16 by Shioda--Tate.  The exact fibration, parameter, and sixteen
-  specialized sections remain unpublished.  A projective no-root witness
-  modulo 179 excludes the one equation-explicit fixed-corridor A1/MW16 family,
-  but not the hundreds of other A1 fibrations in the announced search.  See
+- **Refreshed norm-twelve public-curve atlas:** all 43 shared-zero degree-two
+  charts form six rational-`PGL2` `j`-classes, and all 573 equations in the
+  hash-pinned 2026-09-04 ICARM response have exact preimage decisions.  There
+  are 86 rational hits and 3,352 misses; all 479 native chart/fibre comparisons
+  are untwisted.  The appended ids 475--573 contribute 17 hits, including
+  curve 543 with exact displayed quotient `Z^12` and six rank-at-least-28
+  fibres with quotient `Z^11`.  All seventeen new hits now have an exact
+  specialization audit: sixteen have displayed quotients, while curve 499
+  has a `Z/3Z` commensurability obstruction to forming that quotient.  The
+  original 474-curve theorem remains a preserved historical snapshot.  See
+  [`../elliptic-curves/notes/ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md`](../elliptic-curves/notes/ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md).
+<!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
+- **Curve 398 A1/MW16 recovery:** complete modular screening of the 63,917
+  norm-eight classes on `norm12-orbit-11952` leaves two exact curve-398 hits.
+  The compiled lower-complexity pencil has `I2+22I1`, generic rank 16, and a
+  saturated determinant-474 MW basis.  Its sixteen specialized points embed
+  primitively in the public rank-30 group; a redacted 384-chart adaptive
+  search rediscovers all fourteen held-out directions and proves equality with
+  the displayed subgroup.  Stability, exact rank, and unseen-family
+  generalization remain open.  See
   [`../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md).
-- **Native ICARM calibration:** seven priority fibres now have exact native displayed quotients and exhaustive fixed-cover visibility spans: curve 12 has `0/12`, curve 395 has `2/11`, curves 363/364/378 have `2/10`, `1/11`, and `6/7`, and curves 393/404 have `2/9` and `1/10`. Curves 12, 395, 363, 364, and 378 also have exact fitted norm-eight genus-one signatures for every quotient-basis direction (51 directions total). The highest unresolved rank tranche is now transported as well: curves 11, 391, and 423 each have displayed quotient `Z^11`. All 69 recognized fibres have pinned local/Nagao feature rows; fifteen now have exact quotient labels, while the other 54 remain `UNKNOWN`. See [`R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md`](R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md).
+<!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY a22fcfb1ea6844aa -->
+- **Native ICARM calibration:** the original 474-row calibration retains exact
+  quotient and visibility data for fifteen of its 69 fibres.  The refreshed
+  audit adds exact quotients for sixteen appended fibres: `Z^12` for
+  curve 543; `Z^11` for 531, 534, 535, 536, 544, and 545; `Z^10` for 537; and
+  `Z^8` for 540, 541, and 546, plus five lower-rank quotient controls.  Curve
+  499 instead has exact `Z/3Z` commensurability between the displayed and
+  generic lattices.  Curve 542 independently has rank at least 26 by a mod-3
+  certificate but misses all six atlas classes, as does curve 548.
+  See [`R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md`](R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md)
+  for the original calibration and the refresh note above for the new intake.
 <!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 6b2a0546b65246d5 -->
 <!-- status-consumer: EC-K3-R17-NORM12-HIGHEST-RANK-TRANSPORTS c4c8a81fc735fea2 -->
 <!-- status-consumer: EC-K3-R17-NORM12-PROSPECTIVE-FAMILY-HOLDOUT 8fb7417663ea1d98 -->
@@ -203,7 +273,7 @@ and the batch
 - [`GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md) — exact `X_0(60)` stable curve, rational-point obstruction, and determinant-20 saturation boundary.
 - [`DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md) — exact literal Clifford order, `A4` spin image, stable `X_0(63)`, and rational-point obstruction for the split determinant-378 row.
 - [`DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md`](DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md) — exact `A5` spin actions, stable `X_H(50)`/`X_H(75)` curves, and two rootless-MW17 arithmetic exclusions.
-- [`DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md`](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md) — exact genus-six stable curve, explicit genus-two quotient tower with a complete fourteen-point rational locus, rational CM controls, six-factor Jacobian/four-factor Prym accounting, and the remaining degree-two non-CM lift obstruction.
+- [`DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md`](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md) — exact genus-six stable curve, explicit genus-two quotient with a complete fourteen-point rational locus, rational CM controls, and the exact `p=5,7` inconsistency that must be resolved between the displayed quotient and four-factor Prym assignment before the non-CM lift test.
 - [`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md) — exact `T`/Clifford pre-screen, full-marking versus coarse-curve boundary, current `1/5/60` possible/excluded/unknown classification, and equation-agent dispatch rule.
 - [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — global `T`-first milestone, carrier certificate, and prescribed integral `V4` stretch target.
 - [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md) — Fricke-quotient theorem excluding a full rational NS0024 marking and hence arithmetic NS0024/MW17 over `QQ(t)`.
@@ -261,7 +331,7 @@ and the batch
 ## Secondary fronts
 
 These are worthwhile supporting problems, but they do not set the roadmap and
-should not be presented or resourced as peers of the two primary lanes:
+should not be presented or resourced as peers of the three primary lanes:
 
 - solve the 34 missing published-R17 rational-visibility directions by a
   target-directed inverse problem, without enumerating the ambient trisection
@@ -293,7 +363,8 @@ Do not reopen the determinant-500 or determinant-750 rootless rows; their
 literal stable curves map to `X_0(50)` and `X_0(75)` and have only rational
 cusps.
 Do not send determinant 1236 to equation compilation yet; first decide the
-degree-two rational lift from its exact genus-two Shimura quotient to the
+quotient-factor mismatch exposed by the exact `p=5,7` audits, then decide
+the degree-two rational lift from its exact genus-two Shimura quotient to the
 genus-six marked curve.
 
 ## Reproduction
@@ -301,7 +372,7 @@ genus-six marked curve.
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION bf05d9b06ccc1502 -->
 <!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 b8ef1932e51636fa -->
-<!-- status-consumer: OP-EC-NEXT e135b23ef9910845 -->
+<!-- status-consumer: OP-EC-NEXT b9db89a604d40ac7 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->

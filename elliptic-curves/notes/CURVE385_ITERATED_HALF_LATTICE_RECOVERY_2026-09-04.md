@@ -18,6 +18,13 @@ nine further independent directions:
 M17  -- old deep 43 -->  M20  -- 301 quotient-bit lifts -->  M29.
 ```
 
+The arrows record points found by a particular bounded chart order, not an
+arithmetic filtration.  `old-deep-43`, the legacy `depth` fields, and quotient
+Hamming weight describe only which birational coordinate charts were tried
+first in the recorded bases.  The quartics are pointed models birational to
+the same elliptic curve; they are not nontrivial 2-coverings and carry no
+Selmer-class meaning.
+
 Only after the blind ledger was frozen did the verifier load the 29 displayed
 public points. The blind and public bases have mutually inverse integral
 coordinate matrices, both of determinant `1`. Hence the blindly recovered
@@ -56,11 +63,13 @@ All nine basis-extension events have quotient weight one or two.  Consequently
 the weight-at-most-two subcylinder already generates the full discovered
 `M29/M20`; the 43 weight-three charts have zero marginal rank gain.
 
-Hamming weight is basis-dependent.  The complete census of the 28 unordered
+Hamming weight is basis-dependent and is only a chart-enumeration coordinate.
+The complete census of the 28 unordered
 bases of `F2^3` finds weight-at-most-two quotient rank nine for 20 bases and
 rank eight for eight bases.  Weight one alone has rank nine for one basis and
-rank seven for the natural runner basis.  This is exact posthoc structure in a
-completed blind ledger, not a prospective success probability.
+rank seven for the natural runner basis.  This is exact posthoc bookkeeping in
+a completed blind ledger, not a prospective success probability, quotient
+filtration, or Selmer statement.
 
 The compact replay is
 `curve385_quotient_weight_profile_v1.json`, generated without loading the
@@ -73,13 +82,34 @@ separately frozen protocol starts each discovered lattice state with all 516
 natural weight-one charts and then the remaining 2,838 natural weight-two
 charts.  Any exact rank or finite-index enlargement causes the height lattice
 and quotient complement to be recomputed and the search to restart at weight
-one.  A certified rank of at least 32 stops the campaign successfully.
+one.  This restart is mandatory because any rank, finite-index, basis,
+height-form, or quotient-complement change invalidates the cached chart order.
+The new chart identities, representatives, scores, and order must be recomputed
+and fingerprinted before search resumes; earlier efficiency calibration does
+not transfer automatically.  A certified rank of at least 32 stops the
+campaign successfully.
 
 If both natural stages miss, two SHA-256-derived, precommitted quotient bases
 are available before the natural weight-three stage.  Their physical quotient
 words are deduplicated exactly against earlier stages.  Timeouts, PARI
 failures, unclassified points, stage limits, and completed sparse misses remain
 fail-closed and provide no rank upper bound.
+
+The frozen v1 protocol's single cap of four lattice states is retained only
+for reproduction.  It left insufficient slack for a successful path with two
+same-rank finite-index enlargements followed by the three unit rank gains
+`29 -> 30 -> 31 -> 32`.  The v2 restart-budget amendment therefore removes
+the combined cap and classifies every exact group change into one of two
+disjoint counters: at most three rank-changing changes and at most four
+saturation-only changes.  A rank gain carrying simultaneous saturation data
+uses only the rank-changing counter.  A same-rank basis change is accepted as
+saturation-only only when the exact classifier records a finite-index event.
+After classification, certified rank at least 32 takes precedence over any
+further restart or budget stop.  A deterministic regression replays two
+saturation-only changes and all three unit rank gains, reaching rank 32 with
+counts `(3,2)`.  Exhausting either counter stops only that bounded campaign and
+has no rank-upper-bound or saturation meaning.
+<!-- status-consumer: EC-K3-R17-CURVE385-INDEPENDENT-RESTART-BUDGETS 39cfce110e3e494f -->
 
 The primary natural-basis campaign has now completed: all 3,354 planned charts
 are accounted for by 3,116 fresh completed searches and 238 exact prior-chart
@@ -100,7 +130,8 @@ For `M20`, the canonical-height Gram matrix is recomputed at 110 decimal
 digits. Every old deep class is lifted through all eight new-bit words, but the
 already searched zero word is omitted. The 301 operative representatives are
 the shortest vectors for the height form rounded at scale `10^6`, ordered by
-their actual decimal canonical depths. The complete priority order agrees at
+their actual decimal canonical-height-derived chart-priority scores. The
+complete priority order agrees at
 the audit scale `10^5`; 145 representatives differ, so representative identity
 remains numerical rather than exact lattice evidence.
 
@@ -131,8 +162,9 @@ reached, the same rule would request
 
 new-bit lifts. This exceeds the predeclared four-bit / 688-total-lift first
 campaign limit, so the runner stops with
-`STOPPED_AT_DECLARED_LIFT_LIMIT`. A bounded miss would not prove exact rank in
-any event.
+`STOPPED_AT_DECLARED_LIFT_LIMIT`. A bounded miss would not prove rational-point
+absence, covering or Selmer structure, Mordell--Weil saturation, or exact rank
+in any event.
 
 ## Replay
 

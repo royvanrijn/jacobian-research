@@ -1,0 +1,225 @@
+{
+  "amendment_boundary": {
+    "applies_regardless_of_any_partial_or_final_v3_outcome": true,
+    "cannot_convert_v3_into_a_confirmatory_magnitude_or_tail_study": true,
+    "does_not_change_candidates_searches_or_v3_estimand": true,
+    "kind": "POST_FREEZE_RESTRICTIVE_INTERPRETATION_GUARD",
+    "may_only_narrow_the_inference_from_v3": true
+  },
+  "assessed_protocol": {
+    "candidate_list_sha256": "5df03637d4db0baa95cb9e5f697fe35e5e897838676b6370c0e08bdae5aa9aeb",
+    "permitted_inference": "a complete-case comparison of bounded Stage-A detector-visible escape yield only when every censor-status proportion is exactly balanced between the compared frozen cohorts",
+    "primary_estimand": "certified Stage-A detector yield per scheduled fibre (intention to search)",
+    "primary_event": "at least one exactly certified Stage-A quotient direction",
+    "protocol_definition_sha256": "9584174de7625031e5f95ce73d0117a9caf8341d91063061ea672f2e4e36e521",
+    "protocol_id": "r17-prospective-crt-half-lattice-two-stage-v3"
+  },
+  "available_calibration": {
+    "development_rows_used_to_choose_the_detector": [
+      {
+        "displayed_quotient_dimension": 8,
+        "label": "r17-development-a",
+        "stage_a_exact_certified_quotient_gain": 8
+      },
+      {
+        "displayed_quotient_dimension": 9,
+        "label": "r17-development-b",
+        "stage_a_exact_certified_quotient_gain": 9
+      },
+      {
+        "displayed_quotient_dimension": 10,
+        "label": "r17-development-c",
+        "stage_a_exact_certified_quotient_gain": 10
+      },
+      {
+        "displayed_quotient_dimension": 11,
+        "label": "r17-development-d",
+        "stage_a_exact_certified_quotient_gain": 9
+      }
+    ],
+    "development_strict_order_reversals": [
+      {
+        "higher_jump": 11,
+        "higher_jump_label": "r17-development-d",
+        "higher_jump_score": 9,
+        "lower_jump": 10,
+        "lower_jump_label": "r17-development-c",
+        "lower_jump_score": 10
+      }
+    ],
+    "gap_from_rank32_jump": 3,
+    "interpretation": "The sealed controls establish bounded-search sensitivity and class-set enrichment, but they all have displayed jump 12 and therefore cannot identify score-versus-jump magnitude or upper-tail calibration.",
+    "maximum_calibrated_displayed_jump": 12,
+    "sealed_holdout_distinct_displayed_jump_strata": [
+      12
+    ],
+    "sealed_holdout_rows": [
+      {
+        "displayed_quotient_dimension": 12,
+        "label": "curve12-2024-rank29",
+        "stage_a_exact_certified_quotient_gain": 10
+      },
+      {
+        "displayed_quotient_dimension": 12,
+        "label": "curve356-rank29",
+        "stage_a_exact_certified_quotient_gain": 12
+      },
+      {
+        "displayed_quotient_dimension": 12,
+        "label": "curve385-rank29",
+        "stage_a_exact_certified_quotient_gain": 3
+      }
+    ],
+    "sealed_holdout_score_range_at_jump_12": [
+      3,
+      12
+    ]
+  },
+  "censoring_policy": {
+    "balance_rule": "each distinct censored Stage-A status must have exactly the same scheduled-row proportion in both compared arms",
+    "failure_action": "set risk difference, risk ratio, odds ratio, and Fisher exact p to null and authorize no prospective cohort conclusion",
+    "observed_events_on_censored_rows": "retain as exact descriptive lower-bound events only; do not place the row in an inferential event-rate denominator",
+    "primary_effect_denominator": "rows with complete Stage-A outcomes",
+    "scheduled_rows_may_not_be_counted_as_completed_non_events": true
+  },
+  "chart_order_policy": {
+    "heuristic_meanings": {
+      "legacy_half_lattice_depth": {
+        "forbidden": [
+          "arithmetic depth or filtration",
+          "2-covering or torsor class",
+          "Selmer-class dimension or structure",
+          "rank or rank-jump evidence without exact returned points"
+        ],
+        "permitted": "a fixed-presentation CVP-derived score for ordering birational point-search charts"
+      },
+      "old_deep_43": {
+        "forbidden": [
+          "a basis-invariant distinguished arithmetic subset",
+          "a complete set of locally soluble coverings",
+          "a reason to exclude unsearched chart labels"
+        ],
+        "permitted": "a historically calibrated list of 43 chart labels for one exact generic basis and height form"
+      },
+      "quotient_hamming_weight": {
+        "forbidden": [
+          "an invariant of the quotient group",
+          "Selmer filtration or residual Selmer dimension",
+          "evidence that higher-weight charts contain no points"
+        ],
+        "permitted": "an enumeration order in one explicitly recorded quotient-coordinate basis"
+      }
+    },
+    "miss_inferences": {
+      "absence_in_unsearched_or_differently_presented_charts": false,
+      "local_insolubility_of_a_nontrivial_2_covering": false,
+      "mordell_weil_saturation": false,
+      "rank_upper_bound": false,
+      "rational_point_absence_on_the_elliptic_curve": false,
+      "selmer_group_or_selmer_class_structure": false
+    },
+    "ordering_invalidation": {
+      "empirical_effectiveness_transfer": "none: any efficiency or enrichment claim must be revalidated on blinded controls for the changed presentation",
+      "invalidating_changes": [
+        "adjoining an independent point",
+        "finite-index enlargement or saturation of the discovered subgroup",
+        "adding, deleting, reordering, negating, or otherwise changing a basis generator",
+        "changing the height Gram used for representative selection",
+        "changing the embedded generic-coordinate rows",
+        "changing the quotient-coordinate basis or complement",
+        "changing the chart universe or its coordinate labels"
+      ],
+      "required_action": "discard the cached ordering; recompute chart identities, shortest representatives, scores, and the complete intended order; bind the result to the new lattice-state fingerprint before another search"
+    },
+    "policy_id": "half-lattice-birational-chart-order-v1",
+    "positive_evidence_rule": "only an exactly mapped rational point followed by the separately required group-law and independence checks can change a rank lower bound",
+    "quartic_is_nontrivial_2_covering": false,
+    "quartic_represents_a_selmer_class": false,
+    "quartic_role": "pointed_birational_search_chart_of_the_same_elliptic_curve"
+  },
+  "claim_boundary": [
+    "Protocol v3 remains an immutable bounded-search record, but its scheduled-denominator contrast is not authorized for inference.",
+    "No v3 binary success, effect size, or p-value can authorize a rank-32 candidate.",
+    "No prospective cohort effect is estimable unless censoring is exactly balanced by failure status between its arms.",
+    "The available controls do not validate magnitude tracking or extreme-tail incidence.",
+    "Legacy depth, old-deep-43, and quotient-Hamming fields order birational search charts only; they encode no covering, Selmer, or rank structure.",
+    "A chart miss cannot prove rational-point absence, local insolubility, Selmer structure, Mordell--Weil saturation, or a rank upper bound.",
+    "A score g exactly certifies rank at least 17+g on that fibre, but g<15 cannot promote it on the hope of enough unseen directions; a bounded miss is not a rank upper bound."
+  ],
+  "current_gate_checks": {
+    "analyzer_requires_balanced_censoring_for_any_prospective_contrast": true,
+    "assessed_v3_explicitly_forbids_binary_endpoint_for_promotion": false,
+    "prospective_rank_or_exact_quotient_tail_outcomes_are_available": false,
+    "score_has_predeclared_magnitude_tracking_acceptance_rule": false,
+    "score_has_predeclared_upper_tail_acceptance_rule": false,
+    "score_was_validated_on_an_independent_panel_with_multiple_jump_strata": false
+  },
+  "detector_score": {
+    "binary_any_escape_forbidden": true,
+    "conditional_stage_b_gain_cannot_be_an_unconditional_cohort_score": true,
+    "definition_for_any_successor": "exact finite-reduction-certified Stage-A quotient gain beyond specialized MW17 per scheduled fibre",
+    "raw_point_count_forbidden": true
+  },
+  "executable_chart_order_policy_audit": {
+    "all_declared_test_changes_rejected": true,
+    "certificate": {
+      "calibration_transfers_to_a_changed_state": false,
+      "heuristics": [
+        "legacy_half_lattice_depth",
+        "old_deep_43",
+        "quotient_hamming_weight"
+      ],
+      "lattice_state_sha256": "d6d695cb473d0c38f3e8c994e6d3c98500310237b00069355d90eadcd41575cc",
+      "ordered_chart_count": 3,
+      "ordered_chart_ids_sha256": "b3425ce3d8001b9a4f599be96afa54d73f64a62b330f848644048bdc46f406a3",
+      "policy_id": "half-lattice-birational-chart-order-v1",
+      "semantics": "birational_point_search_chart_order_only",
+      "state_bound_recomputation_complete": true,
+      "valid_only_while_lattice_state_sha256_matches": true
+    },
+    "rejected_changes": [
+      "lattice_enlargement",
+      "basis_change",
+      "height_gram_change",
+      "quotient_basis_change",
+      "chart_order_change"
+    ],
+    "unchanged_exact_state_accepted": true
+  },
+  "gate_definition_sha256": "a07fa668f5a04627b03a41abbda1ed8ce9cebdc8e310e9b25c92917d7a474acf",
+  "generation": {
+    "command": "python3 elkies-k3/scripts/build_r17_prospective_crt_half_lattice_promotion_gate.py",
+    "script": "elkies-k3/scripts/build_r17_prospective_crt_half_lattice_promotion_gate.py",
+    "script_sha256": "c39ec44e333862487d6c0a638855d0abbe8fead8834ec951f346cc23e9052584"
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-protocol-v3.json": "a402b1a286dd72ad579c753315a55309a92d03886f60ac8fee84e434119da626",
+    "artifacts/generated-results/elliptic-curves/half_lattice_search_ablation_summary_v1.json": "fbdfa24b14bc86ee33a576f5e3c3e894dd91dd5e0d1fbfb47bf208e167a7282a",
+    "elkies-k3/scripts/analyze_r17_prospective_crt_half_lattice_censoring_gated.py": "69581ae48364499bfc1ae3939dd3b91d489fbd65da7b6004be0e331a253c5903",
+    "elliptic-curves/cas/half_lattice_chart_policy.py": "6d6166f7e24cdd2f7f638c99506b3debf66e25b846f7ec45fe1cc85b15692fea"
+  },
+  "legacy_field_interpretation": {
+    "depth_fields": "retained only as fixed-presentation CVP chart-priority scores; they are not arithmetic depths or filtrations",
+    "historical_exact_point_certificates_remain_valid": true,
+    "historical_misses_gain_no_new_meaning": true,
+    "old_deep_43": "a calibrated search-order list for its recorded generic basis, not a basis-invariant arithmetic subset",
+    "quotient_hamming_weight": "an enumeration order in one recorded quotient basis, not a Selmer or Mordell--Weil filtration"
+  },
+  "promotion_requirements": {
+    "balanced_censoring": "Before reporting any prospective cohort contrast, pass the exact censor-status balance rule and use only completed Stage-A rows in the event-rate denominator.",
+    "candidate_rule": "Freeze a score threshold justified by those magnitude and tail checks. Neither one detected direction nor a significant binary cohort contrast may promote a fibre.",
+    "existing_arithmetic_gate": "Any expensive rank-32 follow-up still requires the separately declared completed residual 2-Selmer quotient gate on the same minimal curve.",
+    "independent_magnitude_validation": "Freeze the score and an outcome-independent validation panel spanning multiple exact displayed-quotient or certified rank-jump strata; predeclare and pass a directional association rule with uncertainty.",
+    "state_bound_chart_ordering": "After every independent-point addition, finite-index enlargement, generator or basis change, height-form change, or quotient-basis change, discard the old order. Recompute chart identities, shortest representatives, scores, and the intended order, then bind them to the new lattice-state fingerprint before searching. Efficiency or enrichment calibration does not transfer to the changed state.",
+    "tail_validation": "Before opening outcomes, define the upper-tail rank/jump threshold and minimum effect, then show that the score enriches that tail rather than only the event jump>=1."
+  },
+  "rank_32_candidate_promotion_authorized": false,
+  "rank_32_target": {
+    "direct_certificate_rule": "Fifteen exactly certified independent directions beyond specialized MW17 directly prove rank at least 32; that is a lower-bound certificate, not score-based candidate promotion.",
+    "generic_rank": 17,
+    "required_quotient_jump": 15,
+    "target_rank": 32
+  },
+  "schema": "elkies-k3.r17-prospective-crt-half-lattice-promotion-gate.v1",
+  "status": "FAIL_CLOSED_NO_RANK32_CANDIDATE_PROMOTION"
+}

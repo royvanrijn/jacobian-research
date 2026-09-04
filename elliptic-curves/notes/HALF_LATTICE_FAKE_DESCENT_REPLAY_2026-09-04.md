@@ -12,10 +12,22 @@ specialized generic subgroup.
 The replay also changes the interpretation of the method.  The quartics used
 here are pointed models birational to the elliptic curve, not nontrivial
 2-covering torsors.  They are automatically locally soluble at every place.
-Thus the computation establishes that deep half-lattice classes are unusually
-effective *search charts*.  It does not establish that record fibres are
-explained by simultaneous local solubility of several Selmer classes, and the
-present features do not yet predict a rank jump before point search.
+Thus the computation establishes only that one fixed-basis chart order was
+unusually effective at the recorded budget.  It does not establish that record
+fibres are explained by simultaneous local solubility of several Selmer
+classes, and the present features do not predict a rank jump before point
+search.
+
+The terms `depth`, `deepest`, `old-deep-43`, and quotient `weight` survive in
+frozen schemas as legacy labels.  Here they mean only chart-priority scores in
+the exact recorded coordinates.  They are not arithmetic depths, filtrations,
+covering invariants, or Selmer data.  Every lattice enlargement, finite-index
+enlargement, basis change, or quotient-complement change invalidates the old
+order: chart identities, representatives, scores, and order must be recomputed
+and bound to the new lattice-state fingerprint.  Empirical enrichment does not
+transfer to that new presentation without a fresh blinded calibration.  The
+executable contract is
+[`half_lattice_chart_policy.py`](../cas/half_lattice_chart_policy.py).
 
 An equal-budget selection ablation now separates the two main effects.  On the
 three sealed +12 holdouts, the generic top 43 recover mean exact quotient rank
@@ -30,10 +42,14 @@ The compact machine-readable overview is
 The equal-budget ablation certificate is
 [`half_lattice_search_ablation_summary_v1.json`](../../artifacts/generated-results/elliptic-curves/half_lattice_search_ablation_summary_v1.json).
 
-The positive-control result now gates a separately frozen prospective replay
-on the existing 2,560-fibre CRT cohort.  Its protocol is
+The positive-control result now gates a separately frozen detector-yield
+replay on the existing 2,560-fibre CRT cohort.  Its protocol is
 [`elkies-k3-r17-prospective-crt-half-lattice-protocol-v3.json`](../../artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-protocol-v3.json).
-It was hashed before any half-lattice outcome on those fibres was opened.
+It was hashed before any half-lattice outcome on those fibres was opened.  A
+separate restrictive audit forbids its binary endpoint from promoting a
+rank-32 candidate.
+
+<!-- status-consumer: EC-K3-R17-074D9-HALF-LATTICE-PROMOTION-GATE 9a1f080523c9ecae -->
 
 ## Claim ledger
 
@@ -58,8 +74,9 @@ It was hashed before any half-lattice outcome on those fibres was opened.
   |---:|---:|---:|---:|---:|---:|---:|
   | number of classes | 1 | 1,311 | 26,672 | 63,925 | 39,120 | 43 |
 
-  Hence the 43 generic deepest classes have half-lattice depth 3.  The terminal
-  stratum independently reproduces Proposition 8 of
+  The frozen schema calls the resulting fixed-basis priority score `half-lattice
+  depth 3`; no arithmetic meaning is attached to that label here.  The terminal
+  CVP stratum independently reproduces Proposition 8 of
   [Elkies 2026](https://arxiv.org/pdf/2608.25406).
 
 ### Numerical lattice evidence
@@ -73,7 +90,7 @@ It was hashed before any half-lattice outcome on those fibres was opened.
   specialized top 43.  Their union has 64 classes.
 - Arbitrary subgroups on curves 273 and 302 are less numerically stable: 14--24
   of 43 representatives change between the checked rounding scales.  Their
-  depths should not be promoted to exact lattice claims.
+  chart-priority scores should not be promoted to exact lattice claims.
 - All seven ablation fibres reproduce the specialized top-43 *set* after
   rounding the canonical-height matrix at both (10^5) and (10^6).  This is
   a numerical stability check, not an exact ordering proof.
@@ -102,16 +119,17 @@ per-model timeout, and no retry.  A miss is not a proof of absence.
 
 ### Heuristic interpretation
 
-- Deep holes are privileged for bounded recovery: the rank-28 quotient is
+- The fixed generic top-43 order is empirically useful for bounded recovery:
+  the rank-28 quotient is
   found by searching 64 of 131,072 parity classes, and the held-out ablation
   shows a 2.60-fold generic-depth enrichment over the mean random rank.  This
-  is search concentration, not a theorem that every exceptional point belongs
-  to one canonical half-class.
-- Generic and specialized depths are complementary at rank 28: either top-43
+  is chart-search concentration in the recorded basis, not a theorem that
+  every exceptional point belongs to one canonical half-class.
+- Generic and specialized chart orders are complementary at rank 28: either top-43
   list gives quotient rank 9 and their union gives 11.  Across the sealed
   holdouts, however, generic depth is the stronger selector (25 total
   directions versus 18); specialization-specific CVP is not the main effect.
-- Depth is not a calibrated prospective rank predictor.  Raw point counts,
+- The legacy `depth` score is not a calibrated prospective rank predictor.  Raw point counts,
   reduced coefficient size, and modular square density all fail to separate
   records from controls reliably at the tested budget.
 
@@ -159,7 +177,8 @@ The sealed holdouts give the cleanest comparison:
 This supports four bounded-search conclusions, kept deliberately separate
 from theorem claims:
 
-1. Generic deep-hole geometry is a real selector.  It wins decisively on
+1. The fixed-basis generic top-43 rule is an empirically useful chart selector.
+   It wins decisively on
    curve 12 and curve 356, and its aggregate holdout efficiency is 2.34 times
    the pooled random efficiency.  Curve 385 is an important adverse case: the
    best random arm finds rank 4 while generic depth finds rank 3.
@@ -189,7 +208,8 @@ The old prospective experiment's direct completed-square `x`-search found no
 event on 2,560 frozen fibres, but also found no event on either predeclared
 rank-29 control 356 or 385.  It was therefore a detector-sensitivity failure,
 not a calibrated negative result for the CRT conditions.  The half-lattice
-ablation supplies the required replacement gate: in its fixture-blind search,
+ablation supplies the required replacement sensitivity gate: in its
+fixture-blind search,
 the fixed generic-deepest 43 recover exact quotient gains 12 and 3 on 356 and
 385, and the generic/specialized unions recover 12 and 4.
 
@@ -213,21 +233,45 @@ no fibre is added, removed, or rebalanced.  Its rules are fixed as follows.
    increase the combined finite-reduction mod-2 rank to the full number of
    displayed columns.  This simultaneously certifies nonmembership and
    independence of all counted directions.
-5. The primary response is Stage-A certified detector yield per scheduled
-   fibre for pooled full-fingerprint A+B versus matched-ordinary C.  Exact
-   events still count on partially failed rows; all scheduled rows remain in
-   the primary denominator, with complete-case rates only a sensitivity
-   analysis.  Stage B is conditional recovery depth, never an unconditional
-   cohort response.
+5. Protocol v3 historically declared Stage-A certified detector yield per
+   scheduled fibre for pooled full-fingerprint A+B versus matched-ordinary C.
+   That denominator is no longer authorized for inference because it treats
+   censored rows as non-events.  The restrictive v4 analyzer uses completed
+   Stage-A rows and reports effect estimates only when every censor-status
+   proportion is exactly equal between the compared arms; otherwise risk
+   difference, risk ratio, odds ratio, and Fisher p are all null.  Events on
+   censored rows remain exact descriptive lower bounds.  Stage B is a
+   conditional chart-recovery stage, never an unconditional cohort response.
 
 The protocol-definition hash is
 `9584174de7625031e5f95ce73d0117a9caf8341d91063061ea672f2e4e36e521`.
 It pins the search executable hash
 `aeabc010fb68078fe3ca422dcb6d5ce68f32e4a4b3778130d90c615109448ad6`
-and the predeclared analysis executable hash
+and the historical v3 analysis executable hash
 `15c42bab15c354583f84413c0312ceaf19b547f0e8643bd7544b58f13cd66e73`.
+That file is retained byte-for-byte for protocol replay.  Future conclusions
+must use
+`analyze_r17_prospective_crt_half_lattice_censoring_gated.py`, which is pinned
+by the post-freeze promotion guard and can only narrow the v3 interpretation.
 The prospective computation is a bounded experiment; until its complete
 ledger is merged, it supports no comparison among CRT cohorts.
+
+### Rank-32 promotion guard
+
+The v3 endpoint is only whether Stage A finds at least one certified quotient
+direction.  It can detect escape into ranks 18--20 without saying anything
+about the rank-32 tail, so it is forbidden as a candidate-promotion rule even
+if the frozen cohort contrast is positive.  The available magnitude evidence
+is inadequate: scores `8,9,10,9` on development jumps `8,9,10,11` are not
+monotone, and the three independent controls all lie in the same `+12` stratum
+while scoring `10,12,3`.
+
+Any successor must freeze an exact quotient-gain score, validate directional
+association on an independent panel with multiple jump strata, and pass a
+predeclared upper-tail enrichment endpoint.  It must also retain the completed
+residual 2-Selmer requirement before expensive rank-32 follow-up.  This
+post-freeze guard only narrows inference from v3; it does not change its frozen
+candidates, searches, or binary estimand.
 
 ## Blind boundary
 
@@ -278,9 +322,10 @@ The exact map back is
 \]
 
 The third-intersection law shows that a point of (C_P) gives a decomposition
-(P=R+S).  Replacing (P) by (P+2T) changes coordinates within the same
-class in (M/2M); this is why choosing a short representative *before*
-building the quartic matters.
+(P=R+S).  Replacing (P) by (P+2T) changes the pointed birational coordinate
+chart within the same class in (M/2M); this is why choosing a short
+representative *before* building the quartic can lower search cost.  It does
+not turn the chart into a nontrivial 2-covering.
 
 The deterministic pipeline is:
 
@@ -349,7 +394,8 @@ relation in (M+\langle Q_1,\ldots,Q_{11}\rangle), quotient coordinates, and a
 28-dimensional group in the selected finite-prime sample; they are explicitly
 not a complete global Selmer computation.
 
-The productive centers span all 17 dimensions of (M/2M).  Their 153 pairwise
+The productive chart labels span all 17 coordinate dimensions of (M/2M).
+Their 153 pairwise
 XORs have generic-depth histogram
 (1:12, 3/2:47, 2:59, 5/2:35); none is itself deepest.  Thus there is no small
 affine cluster of exceptional centers under XOR.
@@ -393,7 +439,7 @@ before any fibre score is interpreted.
 ## Why many directions occur on one fibre
 
 The replay recovers eleven independent directions through multiple distinct
-half-lattice charts.  This agrees qualitatively with the earlier target-fitted
+birational charts.  This agrees qualitatively with the earlier target-fitted
 norm-8 trace-pencil computation, which found eleven distinct quartic
 squareclasses through the eleven exceptional points
 ([R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md](../../elkies-k3/R17_RANK28_GENUS_ONE_BISECTIONS_2026-09-02.md)).
@@ -440,11 +486,13 @@ held-out *between-fibre rank-jump prediction*:
 - the deepest-class point count is anticorrelated with quotient gain in the R17
   control matrix.
 
-The operational conclusion is narrower: search generic deep holes first,
-minimize and reduce every chart, and use the specialized list or union as a
-recall stage when the first 43 do not saturate the intended control quotient.
-Prioritize exact quotient gain rather than raw points.  Calling depth a
-prospective rank-jump predictor would overstate the evidence.  This agrees
+The operational conclusion is narrower: for the unchanged recorded basis,
+search the calibrated generic top-43 charts first, minimize and reduce every
+chart, and use the specialized list or union as a recall stage.  After any
+lattice or basis change, discard this order and recompute and revalidate it
+under the state-bound policy.  Prioritize exact quotient gain rather than raw
+points.  Calling the legacy `depth` field an arithmetic depth or a prospective
+rank-jump predictor would overstate the evidence.  This agrees
 with the presentation-dependence warning in
 [`R17_CARRIER_RECEPTIVITY_PROFILE_2026-09-04.md`](../../elkies-k3/R17_CARRIER_RECEPTIVITY_PROFILE_2026-09-04.md).
 

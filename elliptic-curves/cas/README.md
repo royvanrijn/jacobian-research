@@ -131,6 +131,12 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   hashing the blind artifact, compute exact quotient ranks over `Q` and
   mod 2 for every arm, and emit the compact cross-phase comparison. Bounded
   misses remain bounded-search misses.
+- `half_lattice_chart_policy.py`: executable state-binding and interpretation
+  contract for all half-lattice chart orders. It records that the quartics are
+  birational point-search charts, gives legacy depth/old-deep/Hamming fields
+  ordering meaning only, rejects cached orders after a basis, lattice,
+  height-form, quotient-coordinate, or chart-universe change, and forbids all
+  absence, rank-upper-bound, and Selmer inference from misses.
 - `run_curve385_iterated_half_lattice_search.sage`: starts from the three
   directions blindly recovered by curve 385's generic-deepest 43 charts,
   saturates inside the discovered group, and searches the 301 height-prioritized
@@ -148,9 +154,19 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   deterministic alternate quotient bases, restart-on-growth rule, exact
   acceptance gates, and fail-closed limits before any new search outcome.
 - `run_curve385_sparse_quotient_rank32_search.sage`: checkpointed rank-32
-  runner starting from the blind `M29`. It searches complete sparse stages,
-  deduplicates exact base-point charts, and restarts at weight one after every
-  certified group enlargement.
+  v1 runner starting from the blind `M29`. It is retained byte-for-byte for
+  the completed primary campaign and its frozen combined four-state budget.
+- `curve385_sparse_restart_policy.py` and
+  `build_curve385_sparse_restart_budget.py`: classify exact group changes as
+  rank-changing or saturation-only and freeze independent limits of three and
+  four.  Their regression proves that two saturation-only changes do not
+  prevent the three unit rank gains from 29 to 32.
+- `run_curve385_sparse_quotient_rank32_search_v2.sage`: source-pinned future
+  runner with the independent counters, strict v2 checkpoint validation, and
+  target-rank precedence. It searches complete sparse stages, deduplicates
+  exact base-point charts, and recomputes from weight one after every exact
+  group enlargement.
+<!-- status-consumer: EC-K3-R17-CURVE385-INDEPENDENT-RESTART-BUDGETS 39cfce110e3e494f -->
 - `build_elkies_2026_rank28_relative_descent_magma.py`: replays the certified
   generic Kummer image and emits an unconditional basis-level Selmer job whose
   rejection gate precedes all residual-cover construction.
@@ -171,6 +187,8 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   exceptional points. Its v3 Selmer record also retains every local allowed
   subspace and the exact local-condition matrix rank after deleting each
   place. Enumeration limits and resource stops are recorded fail-closed.
+  Its supervisor loads the authoritative control object, so this staged worker
+  isolation is not the strict prospective record replay.
 - `quotient_rank_escape_detector_v2.py`: exact backend-independent `F_2`
   measurement layer for a completed all-place descent.  It canonicalizes the
   global condition row space, quotients by the actual MW17 image, computes
@@ -179,9 +197,21 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   incomplete place sets and makes no pairing claim on a coordinate complement.
   The present record certificate is Outcome D because its global squareclass
   domains have not completed.
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
+- `build_r17_mw17_only_selmer_replay.py`: builds the strict prospective
+  controls for curves 356 and 385.  Each generated Magma source contains only
+  the minimal curve and exactly seventeen specialized generic points, requests
+  the full unconditional 2-Selmer group, quotients only by MW17, and exits at
+  `blind_freeze`.  A source audit forbids held-out coordinate rows, labels,
+  MW29 tokens, half-ideal shortcuts, external reads, and point/cover searches.
+- `run_r17_mw17_only_selmer_replay.py`: resource-bounded supervisor and strict
+  transcript parser for those two sources.  It rejects a transcript whose
+  final protocol record is not `blind_freeze`; both controls must certify
+  MW17 rank 17 and residual dimension at least 12 before the Selmer candidate
+  gate is called operational.  The committed ledger has zero completed runs.
 - `build_mw29_relative_2selmer_matrix.py`: backend-independent proof gate for
-  the record fibres. It row-reduces the certified 29-dimensional Kummer image
+  post-discovery closure on the record fibres. It row-reduces the certified
+  29-dimensional Kummer image
   first, forms every local equation only on its complement, emits the actual
   residual kernel basis, greedy rank-gain order, pairwise local intersections,
   every leave-one-place-out rank, and an exact minimum annihilating place cut
@@ -198,13 +228,14 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   supports certified residual parity and rejects auxiliary fingerprints as
   condition blocks.
 - `run_mw29_relative_2selmer_from_bnf.sage`: quotient-native certified-BNF
-  backend for curves 356 and 385. It constructs only the global norm envelope,
+  post-discovery backend for curves 356 and 385. It constructs only the global norm envelope,
   embeds and exactly verifies all 29 point squareclasses, quotients them before
   requesting a local image, checkpoints after every place, and stops as soon
   as a certified local subset annihilates the residual envelope. It constructs
   neither the full Selmer basis nor any cover before this gate. The same JSON
   ambient manifest can instead be supplied by an F2-only class-relation or
-  ray-class upper-bound backend.
+  ray-class upper-bound backend.  Because all 29 point classes are quotient
+  inputs, this backend cannot calibrate the prospective MW17-only gate.
 - `run_elkies_2026_pari219_bnf_benchmark.py`: owns and benchmarks the six-
   parameter threaded BNF collector introduced on PARI's 2.19 development
   branch. It retains a binary checkpoint only after `bnfcertify`; timeouts

@@ -176,10 +176,14 @@ class QuotientRankEscapeDetectorV2Tests(unittest.TestCase):
         document = json.loads(path.read_text())
         self.assertEqual(
             document["status"],
-            "OUTCOME_D_COMPLETE_DESCENTS_BLOCKED_RECORD_INPUTS_AND_LOCAL_DATA_CERTIFIED",
+            "OUTCOME_D_MW17_ONLY_REPLAY_FROZEN_BUT_NOT_EXECUTED",
         )
         self.assertFalse(document["detector_v2"]["control_gate_passed"])
         self.assertFalse(document["detector_v2"]["stage_1_application_authorized"])
+        self.assertIn(
+            "r17_mw17_only_selmer_control_inputs_v1.json",
+            document["detector_v2"]["fixture_separated_mw17_only_control_inputs"],
+        )
         for control, bad_count in zip(document["controls"], (13, 16)):
             self.assertEqual(
                 control["specialized_mw17"]["actual_global_mod2_image_dimension"],
@@ -218,6 +222,15 @@ class QuotientRankEscapeDetectorV2Tests(unittest.TestCase):
             )
             self.assertIsNone(control["complete_two_selmer"]["dimension"])
             self.assertIsNone(control["complete_two_selmer"]["s_res"])
+            self.assertIsNone(
+                control["complete_two_selmer"]["selmer_modulo_mw17_dimension"]
+            )
+            self.assertFalse(
+                control["prospective_mw17_only_replay"][
+                    "backend_can_read_P18_through_P29"
+                ]
+            )
+            self.assertFalse(control["prospective_mw17_only_replay"]["completed"])
 
 
 if __name__ == "__main__":

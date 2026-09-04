@@ -79,6 +79,37 @@ The original checkpointed search command was:
   --checkpoint-every 10
 ```
 
+## Post-freeze restart-budget repair
+
+That completed v1 command and its no-growth ledger remain immutable.  Its
+single `--max-lattice-states 4` allowance is not sufficient for future
+rank-32 work: two same-rank finite-index enlargements would consume the slack
+needed to search all three unit rank gains from 29 to 32.
+
+Future runs use the source-pinned v2 amendment and runner.  They have no
+combined lattice-state cap.  Exact rank-changing and saturation-only group
+changes instead use independent limits of three and four respectively; an
+event with a rank gain is charged only as rank-changing.  Certified rank at
+least 32 is checked before a budget stop.  The frozen regression path
+`saturation, saturation, 29 -> 30 -> 31 -> 32` therefore succeeds with restart
+accounting `(3,2)`.  The independent counters are operational limits only and
+do not turn a stop into a rank or saturation theorem.
+
+Replay the amendment and inspect the v2 plan without opening a search outcome:
+
+```bash
+python3 elliptic-curves/cas/build_curve385_sparse_restart_budget.py --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elliptic-curves/cas/run_curve385_sparse_quotient_rank32_search_v2.sage \
+  --plan-only \
+  --max-stage 2
+
+python3 -m unittest -v \
+  elliptic-curves/tests/test_curve385_sparse_restart_budget.py
+```
+<!-- status-consumer: EC-K3-R17-CURVE385-INDEPENDENT-RESTART-BUDGETS 39cfce110e3e494f -->
+
 ## Next gate
 
 The next precommitted stage is

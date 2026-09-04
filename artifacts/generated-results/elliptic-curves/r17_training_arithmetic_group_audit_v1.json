@@ -1,0 +1,55 @@
+{
+  "claim_boundary": [
+    "Exact equal-j grouping is a leakage audit, not a rank or Selmer calculation.",
+    "The historical fitted coefficients and opened evaluations remain immutable.",
+    "Authorization applies only to the pinned v1 score and exact input universe."
+  ],
+  "definition": {
+    "development_population": {
+      "cross_split_exact_j_group_count": 0,
+      "exact_j_group_count": 100000,
+      "exact_parameter_split_j_sequence_sha256": "7d2ba8dce91fc7076f76df14ff6fc8ca904e9c570ed3b140515481f9581f60ac",
+      "repeated_exact_j_group_count": 0,
+      "row_count": 100000
+    },
+    "gate": {
+      "authorization_scope": "reuse of the immutable v1 learned score; any changed population, split, holdout, control set, family model, or fitted score requires a new outcome-free exact grouping audit",
+      "authorized_score_artifact": "artifacts/generated-results/elliptic-curves/r17_bisection_gain_ranker_quarantined_replay_v1.json",
+      "authorized_score_artifact_sha256": "f6f07cf5a19c71adb73ed193fcb98af6640b08749689646debff61201e9e4d36",
+      "historical_parameter_hash_split_closed": true,
+      "learned_score_reuse_authorized": true,
+      "status": "PASS_EXACT_ISOMORPHISM_TWIST_GROUPING"
+    },
+    "grouping_rule": "group by the exact reduced rational j-invariant; this conservatively places every Q-isomorphism and every rational twist class together, including the exceptional j=0 and j=1728 cases",
+    "labelled_selection": {
+      "exact_j_group_count": 4922,
+      "row_count": 4922
+    },
+    "prospective_holdout": {
+      "exact_j_group_count": 5000,
+      "parameter_overlap_with_labelled_selection": 0,
+      "row_count": 5000,
+      "twist_class_overlap_with_labelled_selection": 0
+    },
+    "quarantined_controls": {
+      "exact_j_group_count": 4,
+      "row_count": 4,
+      "twist_class_overlap_with_development_population": 0,
+      "twist_class_overlap_with_prospective_holdout": 0
+    },
+    "temporal_boundary": "The exact grouping audit is post-fit but reads only pre-outcome family parameters, split labels, and the exact family equation. It validates the immutable split before score reuse and does not authorize retuning."
+  },
+  "definition_sha256": "0b3f4dcee3bc177b256e8d2d263097072f248d588f2f91be2d0c06b55ba76714",
+  "generation": {
+    "command": "python3 elliptic-curves/scripts/audit_r17_training_arithmetic_groups.py",
+    "script": "elliptic-curves/scripts/audit_r17_training_arithmetic_groups.py"
+  },
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/r17_bisection_gain_ranker_prospective_holdout_v1.json": "70491a965cfbdf88c00f610a29809cadde6e78635404b7525b9103ae48b56c2c",
+    "artifacts/generated-results/elliptic-curves/r17_bisection_gain_ranker_quarantined_replay_v1.json": "f6f07cf5a19c71adb73ed193fcb98af6640b08749689646debff61201e9e4d36",
+    "artifacts/generated-results/elliptic-curves/r17_training_arithmetic_group_inputs_v1.json.gz": "9c5b268b738b25d975ec1d6f4849036c21df36d85ea38a4782466bca719f305d",
+    "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869"
+  },
+  "schema": "elliptic-curves.r17-training-arithmetic-group-audit.v1",
+  "status": "PASS_EXACT_GROUPING_BEFORE_FURTHER_LEARNED_SCORE_REUSE"
+}

@@ -101,9 +101,9 @@ isomorphism or section transport could be attached.
 ## Best next calculations
 
 The public BSD+GRH calculation predicts exact rank 31, so a blind 32nd-point
-search on curve 302 remains low leverage.  The active construction problem is
-instead to recover a coordinate- and basis-flexible fossil from the submitted
-points:
+search on curve 302 remains low leverage.  The first-class rank-32 construction
+problem is instead to recover a coordinate- and basis-flexible parent from the
+submitted points and search its neighbourhood:
 
 - calibrate moving-section jets on the actual transported generic rank-12
   subgroup of the known curve-245 Fermigier--Mestre control;

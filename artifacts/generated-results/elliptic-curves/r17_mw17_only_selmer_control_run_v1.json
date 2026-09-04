@@ -1,0 +1,51 @@
+{
+  "claim_boundary": [
+    "Only both complete, source-hash-matched blind_freeze transcripts can calibrate the Selmer candidate gate.",
+    "The generated executables never receive the twelve post-MW17 control points or their half-ideals.",
+    "MW29-relative closure calculations cannot substitute for either MW17-only replay.",
+    "This calibration alone does not authorize a prospective sample stage or prove a rank bound for any candidate."
+  ],
+  "completed_record_replays": 0,
+  "execution": {
+    "magma_command_requested": "magma",
+    "magma_command_resolved": null,
+    "requested": false,
+    "rss_limit_bytes": 16000000000,
+    "timeout_seconds_per_case": 86400.0
+  },
+  "generation": {
+    "script": "elliptic-curves/cas/run_r17_mw17_only_selmer_replay.py",
+    "script_sha256": "a65e365c3806c4a13edfb68448cdc2344163ad8666c94738cb2c12d35cffb04e"
+  },
+  "input_manifest": {
+    "path": "artifacts/generated-results/elliptic-curves/r17_mw17_only_selmer_control_inputs_v1.json",
+    "sha256": "cff8fd8457a91e254efd867907892cae12235206fa27d867c6a2b15ee24ba749"
+  },
+  "prospective_sample_stage_authorized": false,
+  "required_record_replays": 2,
+  "runs": [
+    {
+      "calibration": null,
+      "case_id": "mw17-only-control-356",
+      "curve_id": 356,
+      "execution": {
+        "outcome": "not_executed"
+      },
+      "program": "artifacts/local/elliptic-curves/r17-mw17-only-selmer-control-v1/programs/mw17-only-control-356.m",
+      "program_sha256": "2803571aad4eb138c7a08d9eb25c7c76784e2a8c85c0ac344d3702cc292399a2"
+    },
+    {
+      "calibration": null,
+      "case_id": "mw17-only-control-385",
+      "curve_id": 385,
+      "execution": {
+        "outcome": "not_executed"
+      },
+      "program": "artifacts/local/elliptic-curves/r17-mw17-only-selmer-control-v1/programs/mw17-only-control-385.m",
+      "program_sha256": "b6b1a41c0fcfd9dd35c413716df60273c8f1e5d36bbfbc20b77e7caefd978487"
+    }
+  ],
+  "schema": "elliptic-curves.r17-mw17-only-selmer-control-run.v1",
+  "selmer_candidate_gate_operationally_calibrated": false,
+  "status": "INCOMPLETE_BLINDED_REPLAY_NOT_EXECUTED"
+}

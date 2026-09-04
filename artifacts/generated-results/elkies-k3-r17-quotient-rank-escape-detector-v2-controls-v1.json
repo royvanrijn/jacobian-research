@@ -1,6 +1,8 @@
 {
   "claim_boundary": [
     "No complete 2-Selmer dimension has been computed for curve 356 or 385.",
+    "The hard quotient-by-MW29 calculations demonstrate post-discovery closure feasibility only and cannot calibrate a prospective MW17-relative gate.",
+    "The MW17-only executables contain exactly seventeen points and no P18..P29 coordinates or half-ideals; neither sealed replay has run.",
     "Neither s_res nor the Selmer excess over MW29 is inferred from local data, parity, a bounded relation collector, or a timed-out descent.",
     "Good-reduction mod-2 signatures prove 2-saturation of MW17 and MW29; all-prime saturation inside the unknown full Mordell-Weil group remains unproved.",
     "No intrinsic pairing is placed on the deterministic quotient presentation.",
@@ -101,6 +103,7 @@
         "parity_from_exact_root_number": 1,
         "s_res": null,
         "selmer_modulo_known_mw29_dimension": null,
+        "selmer_modulo_mw17_dimension": null,
         "status": "UNKNOWN_GLOBAL_S_CLASS_UNIT_CHECKPOINT_INCOMPLETE"
       },
       "curve_id": 356,
@@ -2763,6 +2766,15 @@
           "wall_seconds": 2353.255502152024
         }
       ],
+      "prospective_mw17_only_replay": {
+        "backend_can_read_P18_through_P29": false,
+        "backend_can_read_exceptional_half_ideals": false,
+        "backend_visible_known_point_count": 17,
+        "completed": false,
+        "input_case_id": "mw17-only-control-356",
+        "selmer_modulo_mw17_dimension": null,
+        "status": "FROZEN_NOT_EXECUTED"
+      },
       "specialized_mw17": {
         "actual_global_mod2_image_dimension": 17,
         "all_prime_saturation_inside_full_E_Q": null,
@@ -4098,6 +4110,7 @@
         "parity_from_exact_root_number": 1,
         "s_res": null,
         "selmer_modulo_known_mw29_dimension": null,
+        "selmer_modulo_mw17_dimension": null,
         "status": "UNKNOWN_GLOBAL_S_CLASS_UNIT_CHECKPOINT_INCOMPLETE"
       },
       "curve_id": 385,
@@ -7510,6 +7523,15 @@
           "wall_seconds": 2693.5796436759993
         }
       ],
+      "prospective_mw17_only_replay": {
+        "backend_can_read_P18_through_P29": false,
+        "backend_can_read_exceptional_half_ideals": false,
+        "backend_visible_known_point_count": 17,
+        "completed": false,
+        "input_case_id": "mw17-only-control-385",
+        "selmer_modulo_mw17_dimension": null,
+        "status": "FROZEN_NOT_EXECUTED"
+      },
       "specialized_mw17": {
         "actual_global_mod2_image_dimension": 17,
         "all_prime_saturation_inside_full_E_Q": null,
@@ -9031,10 +9053,12 @@
     "checkpointed_descent_implementation": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_checkpointed.py",
     "checkpointed_descent_implementation_sha256": "f33a2b38f31d07a3d3fccff675cd70e9490bc92e7f824e9e79fde6b430c74baa",
     "control_gate_passed": false,
+    "fixture_separated_mw17_only_control_inputs": "artifacts/generated-results/elliptic-curves/r17_mw17_only_selmer_control_inputs_v1.json",
+    "fixture_separated_mw17_only_control_run": "artifacts/generated-results/elliptic-curves/r17_mw17_only_selmer_control_run_v1.json",
+    "fixture_sequenced_magma_control_inputs": "artifacts/generated-results/elliptic-curves/elkies_2026_record_pair_relative_2selmer_inputs_v1.json",
     "measurement_implementation": "elliptic-curves/cas/quotient_rank_escape_detector_v2.py",
     "measurement_implementation_sha256": "e930cc054f176fee22fa48aed6845780f5df72239fa7cf1827bc84cfee9dd923",
-    "optional_magma_control_inputs": "artifacts/generated-results/elliptic-curves/elkies_2026_record_pair_relative_2selmer_inputs_v1.json",
-    "reason": "neither record has a certified global S-class/unit checkpoint or complete 2-Selmer group; blind exceptional recovery cannot yet be measured",
+    "reason": "neither fixture-separated record replay has computed the complete 2-Selmer group relative to MW17; MW29-relative closure work is not admissible prospective calibration",
     "stage_1_application_authorized": false,
     "stage_2_application_authorized": false
   },
@@ -9043,15 +9067,18 @@
     "artifacts/generated-results/elkies-k3-r17-kummer-classgroup-pressure-v1.json": "5c0f1981f916cb031ceb29addc884aeaf3198b643b05f4aa8a44d4a3fbae3ec7",
     "artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-sample-v1.json": "519b385d5a6b5e41b1cf69e958df4ba5d8c79a77a698ebf41d740fa81f6f79bc",
     "artifacts/generated-results/elliptic-curves/elkies_2026_record_pair_relative_2selmer_inputs_v1.json": "a0492c02910c035c9702a10224132ddbccd47236089d1ef7c647108b132b9e92",
-    "elkies-k3/scripts/certify_r17_quotient_rank_escape_detector_v2_controls.sage": "c1ac72179912f1ffa67810d71a24225bbb89e7a581b6620107dc8e8367700b41"
+    "artifacts/generated-results/elliptic-curves/r17_mw17_only_selmer_control_inputs_v1.json": "cff8fd8457a91e254efd867907892cae12235206fa27d867c6a2b15ee24ba749",
+    "artifacts/generated-results/elliptic-curves/r17_mw17_only_selmer_control_run_v1.json": "de94674c0213bb8aeb6c10ccf5f0bb6db796f0a4ea58f3d3122bc4779379e6df",
+    "elkies-k3/scripts/certify_r17_quotient_rank_escape_detector_v2_controls.sage": "9d1a03994d7eca66ef18669510d1bb3622645db10f6b2e284c155e8c75c98bb5"
   },
   "narrowed_technical_task": {
-    "completion_criterion": "an exact relation-lattice completeness certificate, certified units, then replay of every finite and real local Kummer condition",
+    "completion_criterion": "two source-hash-matched blind_freeze transcripts, each with a complete unconditional Selmer group, MW17 Kummer rank 17, and residual dimension at least twelve",
     "curve_356_forced_full_class_2rank_lower_bound": 21,
     "curve_385_forced_full_class_2rank_lower_bound": 15,
-    "next_pipeline_step_after_completion": "freeze the blind Selmer/MW17 quotient basis, then load P18..P29 and require quotient image dimension twelve on both records",
-    "target": "Compute and certify the 2-primary S-class/unit quotient after inverting all bad prime ideals and quotienting by the 29 certified point half-ideals.",
-    "why_narrower_than_full_bnf": "The known Kummer images force large full cubic 2-class groups but are already in the subgroup to be quotiented for calibration."
+    "next_pipeline_step_after_completion": "only after both transcripts are frozen, consult the committed public control truth and confirm that the prospective score did not kill the known twelve-dimensional jump",
+    "post_discovery_lane": "The quotient-by-MW29 relation collectors remain useful for exact-rank closure after points are discovered, but cannot pass this gate.",
+    "prospective_lane": "The MW17-only replay is the sole operational calibration lane because it matches the information available for a new candidate.",
+    "target": "Run both sealed Magma inputs to compute the complete unconditional 2-Selmer group and quotient only by the specialized MW17 image. The backend must not read P18..P29 or their half-ideals."
   },
   "reproducing_command": "sage -python elkies-k3/scripts/certify_r17_quotient_rank_escape_detector_v2_controls.sage --check",
   "sample_commitment": {
@@ -9065,5 +9092,5 @@
   "software_assumptions": {
     "sage": "10.9"
   },
-  "status": "OUTCOME_D_COMPLETE_DESCENTS_BLOCKED_RECORD_INPUTS_AND_LOCAL_DATA_CERTIFIED"
+  "status": "OUTCOME_D_MW17_ONLY_REPLAY_FROZEN_BUT_NOT_EXECUTED"
 }

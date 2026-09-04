@@ -140,6 +140,16 @@ that response does not recover the extreme-rank control. Additional labels
 from the same bisection atlas therefore have diminishing value for this
 laboratory's total-rank objective.
 
+<!-- status-consumer: EC-K3-R17-TRAINING-EXACT-ARITHMETIC-GROUP-GATE 427bf822e774c81e -->
+
+Further reuse of that learned contrast is now mechanically gated by the exact
+R17 arithmetic-group audit.  Across all 100,000 development rows there are no
+repeated rational `j`-classes; the labelled selection and prospective holdout
+have no twist-class overlap, and the quarantined controls have no twist-class
+match in the development population.  The laboratory registry refuses the
+learned extractor if the gate is absent, stale, or authorizes another fitted
+score.  The historical score and opened evaluations are unchanged.
+
 ## Fermigier replay: a negative retrieval result
 
 The normalized Fermigier global box contains 60,815,684 primitive parameters.

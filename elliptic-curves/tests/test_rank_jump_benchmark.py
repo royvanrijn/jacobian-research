@@ -180,6 +180,13 @@ class RankJumpLaboratoryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "stale source hash"):
             validate_lab_manifest(stale, ROOT)
 
+        ungated = copy.deepcopy(manifest)
+        del ungated["families"][0]["ranking_runs"][1]["extractor"][
+            "arithmetic_group_gate"
+        ]
+        with self.assertRaisesRegex(ValueError, "arithmetic_group_gate"):
+            validate_lab_manifest(ungated, ROOT)
+
 
 if __name__ == "__main__":
     unittest.main()

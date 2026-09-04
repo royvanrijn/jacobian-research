@@ -63,6 +63,14 @@ checks the frozen ranker on its subsequently computed exact labels. This
 separates genuine bisection-target generalization from the score's failure to
 retrieve the rank-28 control.
 
+<!-- status-consumer: EC-K3-R17-TRAINING-EXACT-ARITHMETIC-GROUP-GATE 427bf822e774c81e -->
+
+`audit_r17_training_arithmetic_groups.py` freezes a compact outcome-free view
+of the development split and closes exact rational-`j` twist grouping across
+the 100,000-row population, labelled selection, prospective holdout, and four
+quarantined controls.  `run_rank_jump_laboratory.py` will not reuse the learned
+contrast unless that source-hash-pinned gate authorizes the exact score file.
+
 `run_r17_frozen_nagao_shell.py` exhaustively scores the disjoint compact-`t`
 shell `10000 < H <= 30000` with the already frozen weakest-block rule and
 creates parameter-disjoint frozen, pooled-Nagao, and random lanes.

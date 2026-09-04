@@ -18,14 +18,20 @@ dependency-light gate is:
 make verify-elliptic-curves PYTHON=python3
 ```
 
-The active Elkies rank-32 programme is the compact-`t` positive-control and
-residual 2-Selmer section of that catalogue. It requires an actual completed
-global/local descent before any expensive point search; a score or timeout is
-never an authorization. The direct q12 point-search entry points enforce this
-same-parameter, same-minimal-model gate; the obsolete pre-descent x-ansatz
-search is parked. The rank-28 bad-place ledger and factor-supplied PARI backend
-are reproducible exact descent inputs, but remain fail-closed until a complete
-Selmer dimension is returned. The same catalogue now includes a stage-aware
+The compact-`t` positive-control and residual 2-Selmer section of that
+catalogue is the replay surface for the R17/MW17 rank-32 lane, not the whole
+rank-32 programme.  The parallel first-class construction lane now has the
+recovered curve-398 A1/MW16 family and its blind rank-14 quotient recovery as
+a cross-fibration positive control; curve 302's rank-31 point cloud remains a
+parent-reconstruction target whose family equation and specialization map are
+`UNKNOWN`.  Every lane requires an
+actual completed global/local descent before any expensive point search; a
+score or timeout is never an authorization. The direct q12 point-search entry
+points enforce this same-parameter, same-minimal-model gate; the obsolete
+pre-descent x-ansatz search is parked. The rank-28 bad-place ledger and
+factor-supplied PARI backend are reproducible exact descent inputs, but remain
+fail-closed until a complete Selmer dimension is returned. The same catalogue
+now includes a stage-aware
 factor-supplied `S`-class worker and an exact BNF-free rank-28 pilot. The first
 stops in class-group relation generation before certification; the second is
 far below a valid factor-base generation bound. An exact depressed-cubic
@@ -38,7 +44,15 @@ a bounded resumable norm-one-cover pilot records 60 selected local witnesses
 and 24 inconclusive place tests, but no everywhere-local or Selmer class. The
 eleven public complement directions now provide genuine cover controls with
 exact rational witnesses and certify residual Selmer dimension at least 11;
-the complete upper bound and threshold 15 remain open.
+the complete upper bound and the MW17 threshold 15 remain open.
+
+The current ICARM norm-twelve atlas has also been refreshed from the preserved
+474-row theorem to a separate hash-pinned 573-row certificate.  Replay its
+3,438 exact class decisions, the appended 99-row overview, and the exact
+specialization audit of all seventeen new hits with the commands in
+[`elliptic-curves/REPRODUCE.md`](elliptic-curves/REPRODUCE.md#icarm-ids-475-573-atlas-refresh-and-priority-intake).
+
+<!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 
 The exact q12/orbit5867 arbitrary-point map and its backward calibration on
 all 42 public-complement points are replayed by:
@@ -18222,6 +18236,8 @@ PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
 Replay all 60,815,684 primitive parameters in the frozen Fermigier global box
 and then validate the laboratory registry with
 
+<!-- status-consumer: EC-K3-R17-TRAINING-EXACT-ARITHMETIC-GROUP-GATE 427bf822e774c81e -->
+
 ```bash
 PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
   elliptic-curves/cas/build_fermigier_rank_jump_replay.py --check
@@ -18232,6 +18248,10 @@ PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
 PYTHONPATH=elliptic-curves:elliptic-curves/cas python3 \
   elliptic-curves/cas/build_nagao_section7_rank_jump_replay.py --check
 
+python3 \
+  elliptic-curves/scripts/audit_r17_training_arithmetic_groups.py \
+  --check
+
 .venv/bin/python elliptic-curves/scripts/run_rank_jump_laboratory.py
 ```
 
@@ -18241,6 +18261,10 @@ unlabelled fibres. See
 The Nagao replay likewise assigns no negative labels; its quotient and exact
 18,244,819-row ranks are documented in
 [`elliptic-curves/notes/NAGAO_SECTION7_RANK_JUMP_REPLAY.md`](elliptic-curves/notes/NAGAO_SECTION7_RANK_JUMP_REPLAY.md).
+The R17 audit computes exact rational `j`-groups on the full frozen population,
+labelled selection, prospective holdout, and quarantined controls.  The active
+laboratory registry refuses the learned contrast unless that audit authorizes
+the exact pinned score artifact.
 
 Run the prospective compact-R17 shell experiment, using the unchanged
 weakest-block rule on every primitive parameter with `10000 < H <= 30000`,
@@ -19450,6 +19474,33 @@ quotient `Z^12`.  The original `074d9` quotients remain
 `Z^8,Z^12,Z^5,Z^6,Z^12`.  See
 [`elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md).
 
+### Refreshed 573-curve norm-twelve atlas and priority intake
+
+<!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
+
+Keep the 474-row theorem above immutable and replay the separately pinned
+2026-09-04 refresh, its complete ids-475--573 overview, and the specialization
+audit of all seventeen new hits with:
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_icarm_database_sweep.sage \
+  --refresh-573 --check
+
+.venv/bin/python \
+  elliptic-curves/cas/audit_icarm_curve_refresh_overview.py --check
+
+PYTHONPATH=elliptic-curves/cas sage -python \
+  elkies-k3/scripts/certify_r17_norm12_refresh_priority_quotients.sage --check
+```
+
+The refresh decides 3,438 exact curve/class pairs and proves sixteen displayed
+quotients plus the curve-499 `Z/3Z` commensurability obstruction.  Its overview
+preserves all 99 appended rows and keeps undocumented construction origins,
+rank upper bounds, and missing conductors `UNKNOWN`.
+See
+[`elliptic-curves/notes/ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md`](elliptic-curves/notes/ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md).
+
 ### Native ICARM quotient, cover-visibility, and local calibration audit
 
 <!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 6b2a0546b65246d5 -->
@@ -19619,9 +19670,19 @@ python3 \
   --plan-only \
   --max-stage 6
 
+python3 \
+  elliptic-curves/cas/build_curve385_sparse_restart_budget.py \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elliptic-curves/cas/run_curve385_sparse_quotient_rank32_search_v2.sage \
+  --plan-only \
+  --max-stage 2
+
 python3 -m unittest -v \
   elliptic-curves/tests/test_curve385_iterated_half_lattice_search.py \
-  elliptic-curves/tests/test_curve385_sparse_quotient_rank32.py
+  elliptic-curves/tests/test_curve385_sparse_quotient_rank32.py \
+  elliptic-curves/tests/test_curve385_sparse_restart_budget.py
 ```
 
 All 301 minimized/reduced quartics complete at the declared bound. The blind
@@ -19631,10 +19692,16 @@ that this group equals the displayed public rank-29 subgroup. Exact final-basis
 coordinates show that quotient weight one spans seven of the nine new
 directions and weight at most two spans all nine. The separately frozen rank-32
 protocol therefore searches 516 weight-one charts, then 2,838 new weight-two
-charts, restarting at weight one after exact group growth. The complete next
-round would contain 176,085 nonzero-word lifts and is not an automatic stage,
-so neither bounded-search stability nor exact rank 29 is claimed. See
+charts, restarting at weight one after exact group growth.  Its v1 combined
+four-state cap is retained only for reproducing the completed primary run.
+The v2 amendment counts at most three rank-changing and four saturation-only
+group changes independently; its regression reaches rank 32 after two
+saturations and all three unit rank gains.  The complete next round would
+contain 176,085 nonzero-word lifts and is not an automatic stage, so neither
+bounded-search stability nor exact rank 29 is claimed. See
 [`elliptic-curves/notes/CURVE385_ITERATED_HALF_LATTICE_RECOVERY_2026-09-04.md`](elliptic-curves/notes/CURVE385_ITERATED_HALF_LATTICE_RECOVERY_2026-09-04.md).
+
+<!-- status-consumer: EC-K3-R17-CURVE385-INDEPENDENT-RESTART-BUDGETS 39cfce110e3e494f -->
 
 ### Native `074d9` record-twist MW contribution
 
@@ -19766,6 +19833,7 @@ explicitly bounded point search but no Selmer or rank claim. See
 
 <!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-LOCAL-STABILITY 0edaaa6f05041634 -->
 <!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-ESCAPE-EXPERIMENT 021a952efb9ea0f4 -->
+<!-- status-consumer: EC-K3-R17-074D9-HALF-LATTICE-PROMOTION-GATE 9a1f080523c9ecae -->
 
 The original `p^3` cylinders fail their target-blind local audit.  Replay the
 pre-outcome higher-power refinement, frozen six-cohort commitment, exact
@@ -19780,7 +19848,19 @@ python3 elkies-k3/scripts/build_r17_prospective_crt_search_protocol.py --check
 sage -python elkies-k3/scripts/audit_r17_prospective_crt_search_sensitivity.sage --check
 python3 elkies-k3/scripts/analyze_r17_prospective_crt_experiment.py --check
 python3 -m unittest elliptic-curves/tests/test_r17_prospective_crt_experiment.py
+python3 elkies-k3/scripts/build_r17_prospective_crt_half_lattice_promotion_gate.py --check
+python3 -m unittest \
+  elliptic-curves/tests/test_half_lattice_chart_policy.py \
+  elliptic-curves/tests/test_r17_prospective_crt_half_lattice_promotion_gate.py
 ```
+
+Protocol v3 retains its original analyzer hash.  Once a complete half-lattice
+ledger exists, prospective inference must instead use
+`analyze_r17_prospective_crt_half_lattice_censoring_gated.py`.  It uses
+complete Stage-A rows and emits effect estimates only after every censor-status
+proportion is exactly balanced between the compared arms; otherwise those
+fields are null.  This is a restrictive post-freeze interpretation and does
+not alter the candidates or search.
 
 The complete ledger has 2,560 clean bounded misses, including `0/512` in the
 pooled full-fingerprint arm and `0/512` in matched ordinary controls.  The
@@ -19788,20 +19868,31 @@ experiment therefore gives no prospective enrichment evidence at rational
 `x`-height 10,000.  The unchanged call also redetects no escape on either
 known +12 fibre, so the result is detector-limited.  It computes no complete Selmer group, proves no finite
 residual upper bound, and does not identify any miss with rank 17.
+The separately replayed promotion guard preserves v3 as a binary
+detector-yield study but forbids that endpoint from promoting a rank-32
+candidate.  Promotion requires independently validated ordinal score--jump
+association and a predeclared upper-tail endpoint, in addition to the existing
+residual 2-Selmer gate.  It also enforces search-order-only semantics for
+legacy depth, old-deep-43, and quotient-weight fields.  An exact state
+fingerprint makes the order stale after every lattice or basis change; no
+chart miss carries absence, covering, rank, or Selmer information.
 
 ### Quotient-aware rank-escape detector v2
 
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
 
 Freeze and check the hash-order balanced sample, then replay the exact partial
 record-control certificate and post-descent matrix regressions:
 
 ```bash
 python3 elkies-k3/scripts/build_r17_quotient_rank_escape_detector_v2_sample.py --check
+python3 elliptic-curves/cas/build_r17_mw17_only_selmer_replay.py --check
+python3 elliptic-curves/cas/run_r17_mw17_only_selmer_replay.py --check
 sage -python elkies-k3/scripts/certify_r17_quotient_rank_escape_detector_v2_controls.sage --check
 python3 -m unittest \
   elliptic-curves/tests/test_quotient_rank_escape_detector_v2.py \
-  elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py
+  elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py \
+  elliptic-curves/tests/test_r17_mw17_only_selmer_replay.py
 ```
 
 The checker verifies both exact record models, the 17-dimensional MW17
@@ -19810,7 +19901,11 @@ place, infinity, and the cached cubic descent inputs.  Both complete descents
 remain blocked at the global `S`-class/unit step, so their Selmer dimensions,
 all global local-condition rows, and every leave-one-place-out residual
 dimension remain `UNKNOWN`.  Stage 1 is frozen at ten blinded fibres and has
-not run.  See
+not run.  The older quotient-by-MW29 calculations are now explicitly
+post-discovery closure diagnostics: they kill the twelve held-out directions
+and cannot calibrate a prospective gate.  The replacement executables contain
+only the minimal curve and MW17, terminate at a source-hash-pinned
+`blind_freeze`, and currently have zero completed record replays.  See
 [`elkies-k3/R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md`](elkies-k3/R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md).
 
 ### Direct `norm12-orbit-11952` alternate-Q80 equation

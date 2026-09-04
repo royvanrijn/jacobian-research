@@ -4,9 +4,10 @@
 The certificate is intentionally fail-closed.  It verifies both record models,
 the specialized MW17 identification, the 29-point mod-2 image, every finite bad
 place in the existing exact local Kummer certificate, and the real local
-condition.  It also preserves the strongest local PARI BNF attempts.  Unless a
-certified full descent result is supplied separately, all Selmer dimensions and
-residual upper bounds remain null.
+condition.  It also binds a fixture-separated MW17-only replay: the generated
+executables cannot read P18,...,P29 or their half-ideals.  MW29-relative work is
+retained only as post-discovery closure evidence.  Unless both blinded replays
+complete, all Selmer dimensions and the operational candidate gate remain null.
 
 status: ACTIVE_PROOF
 claim: exact Outcome-D record inputs and partial all-bad-place control data
@@ -63,6 +64,16 @@ MAGMA_INPUTS = (
     / "artifacts/generated-results/elliptic-curves"
     / "elkies_2026_record_pair_relative_2selmer_inputs_v1.json"
 )
+MW17_ONLY_INPUTS = (
+    ROOT
+    / "artifacts/generated-results/elliptic-curves"
+    / "r17_mw17_only_selmer_control_inputs_v1.json"
+)
+MW17_ONLY_RUN = (
+    ROOT
+    / "artifacts/generated-results/elliptic-curves"
+    / "r17_mw17_only_selmer_control_run_v1.json"
+)
 BNF_RUN_DIR = (
     ROOT
     / "artifacts/local/elliptic-curves"
@@ -75,7 +86,7 @@ OUTPUT = (
 )
 SOURCE = Path(__file__).resolve()
 SCHEMA = "elkies-k3.r17-quotient-rank-escape-detector-v2-controls.v1"
-STATUS = "OUTCOME_D_COMPLETE_DESCENTS_BLOCKED_RECORD_INPUTS_AND_LOCAL_DATA_CERTIFIED"
+STATUS = "OUTCOME_D_MW17_ONLY_REPLAY_FROZEN_BUT_NOT_EXECUTED"
 EXPECTED = {
     "local": "PASS_EXACT_NEGATIVE_LOCAL_KUMMER_MEET",
     "pressure": "PROVED_KUMMER_FORCED_CUBIC_CLASS_GROUP_2RANK_LOWER_BOUNDS",
@@ -255,6 +266,8 @@ def build() -> dict[str, Any]:
     pressure = json.loads(PRESSURE.read_text())
     sample = json.loads(SAMPLE.read_text())
     magma_inputs = json.loads(MAGMA_INPUTS.read_text())
+    mw17_only_inputs = json.loads(MW17_ONLY_INPUTS.read_text())
+    mw17_only_run = json.loads(MW17_ONLY_RUN.read_text())
     if local.get("status") != EXPECTED["local"]:
         raise ArithmeticError("the all-bad-place local certificate is not passing")
     if pressure.get("status") != EXPECTED["pressure"]:
@@ -267,6 +280,29 @@ def build() -> dict[str, Any]:
         != ["record-r29-356", "record-r29-385"]
     ):
         raise ArithmeticError("the exact record-pair Magma inputs changed")
+    if (
+        mw17_only_inputs.get("status")
+        != "FROZEN_FIXTURE_SEPARATED_MW17_REPLAY_EXECUTION_REQUIRED"
+        or [row.get("curve_id") for row in mw17_only_inputs.get("cases", [])]
+        != [356, 385]
+        or not all(
+            all(row.get("program_audit", {}).values())
+            for row in mw17_only_inputs.get("cases", [])
+        )
+        or mw17_only_inputs.get("operational_gate", {}).get(
+            "selmer_candidate_gate_operationally_calibrated"
+        )
+        is not False
+    ):
+        raise ArithmeticError("the sealed MW17-only replay inputs changed")
+    if (
+        mw17_only_run.get("status")
+        != "INCOMPLETE_BLINDED_REPLAY_NOT_EXECUTED"
+        or mw17_only_run.get("completed_record_replays") != 0
+        or mw17_only_run.get("selmer_candidate_gate_operationally_calibrated")
+        is not False
+    ):
+        raise ArithmeticError("Outcome D requires the MW17-only replay to remain incomplete")
 
     cases = {int(case.case_id.rsplit("-", 1)[1]): case for case in load_record_pair_cases()}
     local_by_id = {int(row["curve_id"]): row for row in local["curves"]}
@@ -343,11 +379,21 @@ def build() -> dict[str, Any]:
                 "complete_two_selmer": {
                     "dimension": None,
                     "s_res": None,
+                    "selmer_modulo_mw17_dimension": None,
                     "selmer_modulo_known_mw29_dimension": None,
                     "status": "UNKNOWN_GLOBAL_S_CLASS_UNIT_CHECKPOINT_INCOMPLETE",
                     "parity_from_exact_root_number": int(
                         pressure_curve["proved_total_two_selmer_dimension_mod_2"]
                     ),
+                },
+                "prospective_mw17_only_replay": {
+                    "input_case_id": f"mw17-only-control-{curve_id}",
+                    "backend_visible_known_point_count": 17,
+                    "backend_can_read_P18_through_P29": False,
+                    "backend_can_read_exceptional_half_ideals": False,
+                    "completed": False,
+                    "selmer_modulo_mw17_dimension": None,
+                    "status": "FROZEN_NOT_EXECUTED",
                 },
                 "cached_cubic_field": {
                     **local_curve["two_division_etale_algebra"],
@@ -391,13 +437,18 @@ def build() -> dict[str, Any]:
             "checkpointed_descent_implementation_sha256": digest(
                 CHECKPOINTED_DESCENT_IMPLEMENTATION
             ),
-            "optional_magma_control_inputs": relative(MAGMA_INPUTS),
+            "fixture_sequenced_magma_control_inputs": relative(MAGMA_INPUTS),
+            "fixture_separated_mw17_only_control_inputs": relative(
+                MW17_ONLY_INPUTS
+            ),
+            "fixture_separated_mw17_only_control_run": relative(MW17_ONLY_RUN),
             "control_gate_passed": False,
             "stage_1_application_authorized": False,
             "stage_2_application_authorized": False,
             "reason": (
-                "neither record has a certified global S-class/unit checkpoint or "
-                "complete 2-Selmer group; blind exceptional recovery cannot yet be measured"
+                "neither fixture-separated record replay has computed the complete "
+                "2-Selmer group relative to MW17; MW29-relative closure work is not "
+                "admissible prospective calibration"
             ),
         },
         "controls": controls,
@@ -410,26 +461,35 @@ def build() -> dict[str, Any]:
         },
         "narrowed_technical_task": {
             "target": (
-                "Compute and certify the 2-primary S-class/unit quotient after inverting "
-                "all bad prime ideals and quotienting by the 29 certified point half-ideals."
+                "Run both sealed Magma inputs to compute the complete unconditional "
+                "2-Selmer group and quotient only by the specialized MW17 image. The "
+                "backend must not read P18..P29 or their half-ideals."
             ),
-            "why_narrower_than_full_bnf": (
-                "The known Kummer images force large full cubic 2-class groups but are "
-                "already in the subgroup to be quotiented for calibration."
+            "prospective_lane": (
+                "The MW17-only replay is the sole operational calibration lane because "
+                "it matches the information available for a new candidate."
+            ),
+            "post_discovery_lane": (
+                "The quotient-by-MW29 relation collectors remain useful for exact-rank "
+                "closure after points are discovered, but cannot pass this gate."
             ),
             "curve_356_forced_full_class_2rank_lower_bound": 21,
             "curve_385_forced_full_class_2rank_lower_bound": 15,
             "completion_criterion": (
-                "an exact relation-lattice completeness certificate, certified units, "
-                "then replay of every finite and real local Kummer condition"
+                "two source-hash-matched blind_freeze transcripts, each with a complete "
+                "unconditional Selmer group, MW17 Kummer rank 17, and residual dimension "
+                "at least twelve"
             ),
             "next_pipeline_step_after_completion": (
-                "freeze the blind Selmer/MW17 quotient basis, then load P18..P29 and "
-                "require quotient image dimension twelve on both records"
+                "only after both transcripts are frozen, consult the committed public "
+                "control truth and confirm that the prospective score did not kill the "
+                "known twelve-dimensional jump"
             ),
         },
         "claim_boundary": [
             "No complete 2-Selmer dimension has been computed for curve 356 or 385.",
+            "The hard quotient-by-MW29 calculations demonstrate post-discovery closure feasibility only and cannot calibrate a prospective MW17-relative gate.",
+            "The MW17-only executables contain exactly seventeen points and no P18..P29 coordinates or half-ideals; neither sealed replay has run.",
             "Neither s_res nor the Selmer excess over MW29 is inferred from local data, parity, a bounded relation collector, or a timed-out descent.",
             "Good-reduction mod-2 signatures prove 2-saturation of MW17 and MW29; all-prime saturation inside the unknown full Mordell-Weil group remains unproved.",
             "No intrinsic pairing is placed on the deterministic quotient presentation.",
@@ -440,6 +500,8 @@ def build() -> dict[str, Any]:
             relative(PRESSURE): digest(PRESSURE),
             relative(SAMPLE): digest(SAMPLE),
             relative(MAGMA_INPUTS): digest(MAGMA_INPUTS),
+            relative(MW17_ONLY_INPUTS): digest(MW17_ONLY_INPUTS),
+            relative(MW17_ONLY_RUN): digest(MW17_ONLY_RUN),
             relative(SOURCE): digest(SOURCE),
         },
         "software_assumptions": {"sage": str(sage_version)},
@@ -465,7 +527,7 @@ def main() -> None:
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(payload)
     print(
-        "R17ESCAPEV2CONTROLS|controls=2|complete_selmer=0|"
+        "R17ESCAPEV2CONTROLS|controls=2|mw17_only_complete=0|"
         "stage1_authorized=false|status=OUTCOME_D",
         flush=True,
     )

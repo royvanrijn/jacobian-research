@@ -532,6 +532,39 @@ def validate_lab_manifest(
                     in {"learned_contrast", "weakest_block_nagao"},
                     f"{family_id}/{run_id}: unsupported R17 training replay metric",
                 )
+                if extractor.get("metric") == "learned_contrast":
+                    group_gate_source = extractor.get("arithmetic_group_gate")
+                    _validate_source(
+                        group_gate_source,
+                        repository_root,
+                        f"{family_id}/{run_id}.arithmetic_group_gate",
+                    )
+                    group_gate = json.loads(
+                        (repository_root / group_gate_source["path"]).read_text(
+                            encoding="utf-8"
+                        )
+                    )
+                    _require(
+                        group_gate.get("schema")
+                        == "elliptic-curves.r17-training-arithmetic-group-audit.v1"
+                        and group_gate.get("status")
+                        == "PASS_EXACT_GROUPING_BEFORE_FURTHER_LEARNED_SCORE_REUSE",
+                        f"{family_id}/{run_id}: exact arithmetic grouping is not closed",
+                    )
+                    reuse_gate = group_gate.get("definition", {}).get("gate", {})
+                    _require(
+                        reuse_gate.get("status")
+                        == "PASS_EXACT_ISOMORPHISM_TWIST_GROUPING"
+                        and reuse_gate.get("learned_score_reuse_authorized") is True,
+                        f"{family_id}/{run_id}: learned-score reuse is not authorized",
+                    )
+                    _require(
+                        reuse_gate.get("authorized_score_artifact")
+                        == extractor.get("source", {}).get("path")
+                        and reuse_gate.get("authorized_score_artifact_sha256")
+                        == extractor.get("source", {}).get("sha256"),
+                        f"{family_id}/{run_id}: grouping gate authorizes another score",
+                    )
             _validate_source(
                 extractor.get("source"), repository_root, f"{family_id}/{run_id}.extractor"
             )

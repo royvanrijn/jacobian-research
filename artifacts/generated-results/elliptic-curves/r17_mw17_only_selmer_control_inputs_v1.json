@@ -1,0 +1,103 @@
+{
+  "case_count": 2,
+  "cases": [
+    {
+      "case_id": "mw17-only-control-356",
+      "curve_id": 356,
+      "global_minimal_model": [
+        "0",
+        "1",
+        "0",
+        "-24391876744717707263532695900840552395172973498186560300",
+        "46943906433780620456844832699051340439698711588743845207309557656274241785479710000"
+      ],
+      "known_subgroup": "specialized MW17",
+      "known_subgroup_point_count": 17,
+      "parameter": "-970521251165766412987689802944/5201452365084059419448702694373",
+      "program": "artifacts/local/elliptic-curves/r17-mw17-only-selmer-control-v1/programs/mw17-only-control-356.m",
+      "program_audit": {
+        "contains_no_held_out_coordinate_row": true,
+        "contains_no_held_out_label_or_mw29_token": true,
+        "declares_exactly_seventeen_affine_points": true,
+        "freezes_after_quotienting_only_mw17": true,
+        "performs_no_cover_or_point_search": true,
+        "reads_no_external_file": true,
+        "requests_unconditional_selmer_group": true,
+        "supplies_only_generic_hints": true
+      },
+      "program_sha256": "2803571aad4eb138c7a08d9eb25c7c76784e2a8c85c0ac344d3702cc292399a2",
+      "role": "prospective-mw17-only-selmer-control"
+    },
+    {
+      "case_id": "mw17-only-control-385",
+      "curve_id": 385,
+      "global_minimal_model": [
+        "1",
+        "-1",
+        "1",
+        "-331827496674406562041164370816053963496434513510649284995530467",
+        "2322853282053688692296179831887155386042997843373920023045057766047634710076537198987220653859"
+      ],
+      "known_subgroup": "specialized MW17",
+      "known_subgroup_point_count": 17,
+      "parameter": "-4569968803191492789881348058432/20219201289082406615406548938643",
+      "program": "artifacts/local/elliptic-curves/r17-mw17-only-selmer-control-v1/programs/mw17-only-control-385.m",
+      "program_audit": {
+        "contains_no_held_out_coordinate_row": true,
+        "contains_no_held_out_label_or_mw29_token": true,
+        "declares_exactly_seventeen_affine_points": true,
+        "freezes_after_quotienting_only_mw17": true,
+        "performs_no_cover_or_point_search": true,
+        "reads_no_external_file": true,
+        "requests_unconditional_selmer_group": true,
+        "supplies_only_generic_hints": true
+      },
+      "program_sha256": "b6b1a41c0fcfd9dd35c413716df60273c8f1e5d36bbfbc20b77e7caefd978487",
+      "role": "prospective-mw17-only-selmer-control"
+    }
+  ],
+  "claim_boundary": [
+    "This artifact freezes exact executable inputs; it is not a completed Selmer calculation.",
+    "No MW29-relative calculation can satisfy the prospective MW17-only control gate.",
+    "No candidate or prospective sample stage is authorized by frozen inputs or an incomplete transcript."
+  ],
+  "execution_contract": {
+    "backend": "Magma SelmerGroup on multiplication by 2",
+    "cover_search_in_calibration_replay": false,
+    "half_ideal_shortcut_forbidden": true,
+    "input_visible_to_backend": "minimal curve plus the specialized MW17 points",
+    "mw29_quotient_forbidden": true,
+    "post_mw17_point_coordinates_forbidden": true,
+    "quotient_formed_after_full_selmer_computation": "Sel_2(E)/im(MW17/2)",
+    "unconditional_class_group_request": "Bound=-1"
+  },
+  "generation": {
+    "command": "python3 elliptic-curves/cas/build_r17_mw17_only_selmer_replay.py",
+    "script": "elliptic-curves/cas/build_r17_mw17_only_selmer_replay.py",
+    "script_sha256": "fb387557a5e8a2a2118ccae1d6836fce76684fa159994a79c7ad3536058ebead"
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-074d9-cross-fibre-bisection-transfer-v1.json": "7f97d43846e6c2b939273617a5209122b02dbe51d056c742c30f271cfbe86098",
+    "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json": "9a2675ab48cc37111d1f4050bd1797fc84c98b7839668d292d11406efe7a9eaa",
+    "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json": "15aeb70029a078dd51024a2e4c8d75a336a7197abe9471d79151a91178a59ec5"
+  },
+  "operational_gate": {
+    "acceptance_rule": "Each sealed replay must complete unconditionally, certify MW17 Kummer rank 17, and report residual Selmer dimension at least 12 before the public twelve-dimensional control image is consulted.",
+    "mw29_relative_calculations_role": "post-discovery closure diagnostic only",
+    "record_replays_completed": 0,
+    "required_record_replays": 2,
+    "selmer_candidate_gate_operationally_calibrated": false
+  },
+  "schema": "elliptic-curves.r17-mw17-only-selmer-control-input.v1",
+  "status": "FROZEN_FIXTURE_SEPARATED_MW17_REPLAY_EXECUTION_REQUIRED",
+  "unblinding_commitment": {
+    "access_boundary": "not available to either generated Magma executable",
+    "expected_control_jump_over_mw17": 12,
+    "point_coordinate_commitments_sha256": {
+      "356": "68a1fbe5237e4c86fc7dff4dd04905de9f52a93cccd78029ac14ac3b0346aa2d",
+      "385": "3c899d11fda4ce3f29306c4885a548e4bab5d58555843a24d73386a674333995"
+    },
+    "release_condition": "both complete blind_freeze transcripts are hash-pinned",
+    "truth_source": "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json"
+  }
+}

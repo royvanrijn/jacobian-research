@@ -16,6 +16,8 @@ from build_elkies_2026_relative_2selmer_suite import load_record_pair_cases  # n
 class CheckpointedRelativeSelmerTests(unittest.TestCase):
     def test_mw29_backend_reverses_the_old_blind_order(self) -> None:
         source = (CAS / "run_mw29_relative_2selmer_from_bnf.sage").read_text()
+        self.assertIn("post-discovery MW29-relative closure only", source)
+        self.assertIn("prospective_mw17_candidate_gate_evidence", source)
         self.assertIn("ell2global_norm_envelope", source)
         self.assertIn("point_coordinates(", source)
         self.assertIn("known_norm_rows", source)

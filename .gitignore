@@ -181,6 +181,8 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-icarm-database-sweep-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-curve12-alternate-q80-quotient-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-icarm-database-sweep-v2.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-refresh-priority-quotients-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.tsv
@@ -212,6 +214,7 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-protocol-v3.json
 !/artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-ledger-v3.json
 !/artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-analysis-v3.json
+!/artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-promotion-gate-v1.json
 !/artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-controls-v1.json
 !/artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-sample-v1.json
 !/artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-unblinding-key-v1.json

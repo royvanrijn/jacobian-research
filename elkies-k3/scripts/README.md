@@ -1572,6 +1572,17 @@ The current proof boundary and replay commands are in
   while the split-Jacobian quadratic-Chabauty dimension screen passes. Its output is
   `UNRESOLVED_FOR_EXPLICIT_REASON`: the degree-two rational lift from the
   genus-two quotient, not a K3 equation, is the next gate.
+- `explore_det1236_double_cover_local_gate.sage` enumerates normalized
+  genus-three squareclasses over selected finite fields and records the
+  possible local values at the six non-fixed elliptic images.  Its local
+  survivors are diagnostics only and do not certify a global cover.
+- `audit_det1236_v4_local_consistency.sage` exhaustively enumerates
+  `P(L(6*O))(F_p)` and simultaneously tests a genus-three squareclass `b`
+  and its product with the known `B -> 618f1` class `(X-4)/54`.  At `p=5`
+  and `p=7` it proves that no branch-degree-four class realizes the Prym
+  traces forced by the currently asserted `618a1*618b1 | 618c1*618d1`
+  partition.  This is an exact inconsistency in the proposed quotient-factor
+  reconstruction input, not an arithmetic exclusion of `C_1236`.
 - `build_arithmetic_first_marked_t_foundry.py` reverses the global foundry
   order. It ranks all 827 `T` rows without consulting rootless-frame data,
   retains coarse genus only as a diagnostic, propagates exact marking
@@ -3581,11 +3592,27 @@ its native class members, and performs the exact twist tests.  The result is
 stored `11952` MW17 basis into the independently certified 29 points of curve
 12 and proves the displayed quotient `Z^12` by exact group law and Smith form.
 
+The `--refresh-573` profile preserves the original 474-row certificate and
+replays the hash-pinned 2026-09-04 response separately.  It decides all 3,438
+curve/class pairs, finding 86 hits and 3,352 misses.  The companion overview
+checks every appended equation, point, and discriminant and independently
+replays all rank-at-least-24 point sets.  The specialization checker then
+audits all seventeen new hits.  It proves sixteen primitive displayed
+quotients, including curve 543 with quotient `Z^12` and six rank-at-least-28
+curves with quotient `Z^11`.  For curve 499 it instead proves exact triple
+relations and a `Z/3Z` commensurability obstruction: the generic subgroup is
+not contained in the displayed subgroup, so that quotient is not defined.
+
+<!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
+
 ```bash
 sage -python compile_r17_norm12_record_lineage_atlas.sage --check
 sage -python certify_r17_norm12_wgxli_lineage_fibres.sage --check
 sage -python certify_r17_norm12_icarm_database_sweep.sage --check
 sage -python certify_r17_norm12_curve12_alternate_q80_quotient.sage --check
+sage -python certify_r17_norm12_icarm_database_sweep.sage --refresh-573 --check
+python3 ../../elliptic-curves/cas/audit_icarm_curve_refresh_overview.py --check
+PYTHONPATH=../../elliptic-curves/cas sage -python certify_r17_norm12_refresh_priority_quotients.sage --check
 sage -python verify_r17_norm12_icarm_database_and_curve12.sage
 ```
 
@@ -3750,7 +3777,16 @@ minimize/reduce/search budget, and the exact Stage-A certificate gate for the
 full specialized ranking in Stage B.  The deterministic runner stores 32
 restartable local checkpoints and refuses a source hash different from the
 one pinned in the protocol.  The analyzer predeclares pooled A+B versus C
-Stage-A yield as primary and treats Stage B only as conditional recovery.
+Stage-A yield as primary and treats Stage B only as conditional recovery.  Its
+protocol-pinned source remains unchanged.  The restrictive
+`analyze_r17_prospective_crt_half_lattice_censoring_gated.py` instead uses
+complete Stage-A rows and suppresses all effect estimates unless censor-status
+proportions are exactly balanced between arms.  The separate promotion-gate
+builder pins that restriction without changing v3 and fails closed:
+the binary response is permitted only for detector-yield comparison.  A
+rank-32 candidate additionally needs independently validated score--jump
+magnitude and upper-tail behaviour, followed by the existing residual
+2-Selmer gate before expensive search.
 
 ```bash
 sage -python audit_r17_prospective_crt_local_stability.sage --check
@@ -3763,13 +3799,23 @@ sage -python build_r17_prospective_crt_half_lattice_protocol.sage --check
 sage -python run_r17_prospective_crt_half_lattice_search.sage \
   --chunk-index 0 --chunk-count 32
 python3 -m unittest ../../elliptic-curves/tests/test_r17_prospective_crt_half_lattice_protocol.py
+python3 build_r17_prospective_crt_half_lattice_promotion_gate.py --check
+python3 -m unittest \
+  ../../elliptic-curves/tests/test_half_lattice_chart_policy.py \
+  ../../elliptic-curves/tests/test_r17_prospective_crt_half_lattice_promotion_gate.py
 ```
 
 See
 [`../R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md`](../R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md)
 for checkpointed full-run commands and claim boundaries.
+The promotion gate imports the executable chart policy from
+`../../elliptic-curves/cas/half_lattice_chart_policy.py`.  That policy gives
+the legacy depth/old-deep/Hamming fields ordering meaning only, binds an order
+to the complete basis/height/quotient/chart fingerprint, and rejects reuse
+after a state change.  Misses imply no absence or Selmer structure.
 <!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-LOCAL-STABILITY 0edaaa6f05041634 -->
 <!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-ESCAPE-EXPERIMENT 021a952efb9ea0f4 -->
+<!-- status-consumer: EC-K3-R17-074D9-HALF-LATTICE-PROMOTION-GATE 9a1f080523c9ecae -->
 
 `build_r17_quotient_rank_escape_detector_v2_sample.py` freezes a separately
 blinded hash-order sample with two Stage-1 and six Stage-2 fibres per each of
@@ -3777,19 +3823,26 @@ five aggregate cohorts.  `certify_r17_quotient_rank_escape_detector_v2_controls.
 then packages the exact `17+12` record-control images, every bad place,
 infinity, cubic inputs, and preserved descent obstruction.  It deliberately
 leaves all complete-Selmer and global-condition fields null and keeps both
-sample stages unauthorized.
+sample stages unauthorized.  The prospective calibration input is produced by
+`../../elliptic-curves/cas/build_r17_mw17_only_selmer_replay.py`: its two
+Magma executables contain only the curve and MW17, with the twelve public
+directions committed outside the executable.  The older MW29-relative route is
+post-discovery closure evidence and cannot pass this gate.
 
 ```bash
 python3 build_r17_quotient_rank_escape_detector_v2_sample.py --check
+python3 ../../elliptic-curves/cas/build_r17_mw17_only_selmer_replay.py --check
+python3 ../../elliptic-curves/cas/run_r17_mw17_only_selmer_replay.py --check
 sage -python certify_r17_quotient_rank_escape_detector_v2_controls.sage --check
 python3 -m unittest \
   ../../elliptic-curves/tests/test_quotient_rank_escape_detector_v2.py \
-  ../../elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py
+  ../../elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py \
+  ../../elliptic-curves/tests/test_r17_mw17_only_selmer_replay.py
 ```
 
 See
 [`../R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md`](../R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md).
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
 
 `certify_r17_kummer_classgroup_pressure.sage` uses all certified displayed
 points on controls 351, 356, 376, 377, and 385 to compute their exact
@@ -4070,6 +4123,35 @@ rational projective normalization it gives only a 10,888-bit (about 0.7
 percent) improvement at a still 1,484,751-bit primitive maximum.  Integer
 content is only 7--12 bits.  The script does not optimize multiplication by a
 general quadratic-field element, base `PGL2`, or model transformations.
+
+## Curve-398 hidden A1/MW16 recovery
+
+`screen_icarm_curve398_norm8_a1_fibrations.sage` is the checkpointed complete
+modular screen of the 63,917 norm-eight classes on the equation-explicit
+`norm12-orbit-11952` chart.  Each run handles one declared prime and rank
+interval; survivors are chained into the next prime.  The screen is a
+necessary-condition exclusion only.  Compact a completed 34-prime chain with:
+
+```bash
+python3 merge_icarm_curve398_norm8_a1_screen.py --check
+```
+
+`certify_icarm_curve398_norm8_a1_survivors.sage` rebuilds the two modular
+survivors over `QQ`, factors their curve-398 `j`-preimage equations, and checks
+the resulting specializations are `Q`-isomorphic to curve 398.  The full
+selected fibration and section map are replayed with:
+
+```bash
+sage -python compile_icarm_curve398_hidden_a1_mw16.sage --check
+```
+
+The compiler verifies the `I2+22I1` fibre configuration, exact rational
+parameter, all 166 degree-one old sections, a saturated determinant-474 MW16
+basis, and its primitive embedding in the public rank-30 group.  It also
+writes the separately redacted input consumed by the blind adaptive search.
+See
+[`../../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](../../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md).
+<!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY a22fcfb1ea6844aa -->
 
 ## Marked-U realization planner
 

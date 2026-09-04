@@ -22,12 +22,37 @@ strict:
 
 Important distinctions made explicit by the catalogue:
 
-- `elkies_2026_record_pair_relative_2selmer_inputs_v1.json` is the exact
-  unconditional Magma input for record fibres 356 and 385, including the
-  specialized MW17 controls and twelve held-out points.  It is a pinned input,
-  not a completed descent or Selmer certificate.  Its whole-file SHA-256 is
+<!-- status-consumer: EC-K3-R17-TRAINING-EXACT-ARITHMETIC-GROUP-GATE 427bf822e774c81e -->
+
+- `r17_training_arithmetic_group_inputs_v1.json.gz` is an outcome-free compact
+  freeze of the R17 development parameters, split labels, selection/holdout
+  membership, and controls.  Its exact audit
+  `r17_training_arithmetic_group_audit_v1.json` finds 100,000 distinct rational
+  `j`-classes, no labelled/holdout twist overlap, and no control/development
+  twist overlap.  The learned-score laboratory entry now fails closed unless
+  this audit explicitly authorizes the unchanged v1 score artifact.
+- `curve385_sparse_restart_budget_v2.json` is an operational amendment for
+  future curve-385 sparse rank-32 searches.  It preserves the frozen v1
+  protocol and primary no-growth evidence while replacing their combined
+  four-state allowance with independent limits of three rank-changing and
+  four saturation-only group changes.  Its adverse-path regression admits two
+  saturation-only changes before the three unit gains from rank 29 to 32.  A
+  budget stop still proves no rank upper bound or saturation statement.
+<!-- status-consumer: EC-K3-R17-CURVE385-INDEPENDENT-RESTART-BUDGETS 39cfce110e3e494f -->
+- `r17_mw17_only_selmer_control_inputs_v1.json` freezes the strict prospective
+  replay for record fibres 356 and 385.  Its source-hash-pinned Magma programs
+  contain only each minimal curve and exactly seventeen MW17 points; mechanical
+  audits exclude the twelve held-out coordinate rows, labels, half-ideals,
+  external reads, and cover/point searches.  The associated
+  `r17_mw17_only_selmer_control_run_v1.json` ledger records zero completed
+  replays and leaves the operational Selmer candidate gate false.
+- `elkies_2026_record_pair_relative_2selmer_inputs_v1.json` is the older exact
+  fixture-sequenced Magma input for record fibres 356 and 385, including the
+  specialized MW17 controls and twelve held-out points.  It is a pinned input
+  for post-discovery diagnostics, not the prospective control and not a
+  completed descent or Selmer certificate.  Its whole-file SHA-256 is
   `a0492c02910c035c9702a10224132ddbccd47236089d1ef7c647108b132b9e92`.
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
 
 - `latent_lattice_calibration_truth_v1.json` contains exact withheld control
   embeddings; it is not selector input. `latent_lattice_calibration_v2.json`

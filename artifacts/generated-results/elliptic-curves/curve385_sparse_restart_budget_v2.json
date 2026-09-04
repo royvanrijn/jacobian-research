@@ -1,0 +1,66 @@
+{
+  "definition": {
+    "amends_protocol": "artifacts/generated-results/elliptic-curves/curve385_sparse_quotient_rank32_protocol_v1.json",
+    "amends_protocol_sha256": "2c9150f50f305b8aa3763590cd5e81c4d7e121f9373177827780789ce472834f",
+    "historical_boundary": {
+      "completed_v1_primary_manifest": "artifacts/generated-results/elliptic-curves/curve385_sparse_quotient_rank32_primary_v1.json",
+      "completed_v1_primary_manifest_sha256": "ff1b0a2e8dd29b9a34a3b81cf8db3bed5350d12ee0dcfd9dd3936f226d255d61",
+      "no_new_curve385_search_outcomes_opened": true,
+      "v1_no_growth_result_is_unchanged": true
+    },
+    "regression": {
+      "event_sequence": [
+        "SATURATION_ONLY",
+        "SATURATION_ONLY",
+        "RANK_CHANGING",
+        "RANK_CHANGING",
+        "RANK_CHANGING"
+      ],
+      "meaning": "two saturation-only changes followed by unit rank gains 29->30->31->32",
+      "old_combined_cap_stops_before_final_rank_gain": true,
+      "repaired_result": {
+        "rank": 32,
+        "restart_accounting": {
+          "rank_changing_group_change_count": 3,
+          "saturation_only_group_change_count": 2
+        },
+        "searched_state_count": 5,
+        "status": "TARGET_REACHED"
+      }
+    },
+    "replacement": {
+      "budgets": {
+        "combined_lattice_state_cap": null,
+        "maximum_rank_changing_restarts": 3,
+        "maximum_saturation_only_restarts": 4
+      },
+      "classification": {
+        "NO_CHANGE": "rank and basis hash are unchanged; no restart is charged",
+        "RANK_CHANGING": "rank_after exceeds rank_before; any simultaneous saturation events are recorded but do not also consume saturation-only budget",
+        "SATURATION_ONLY": "rank is unchanged, the basis hash changes, and at least one exact finite-index saturation event is recorded"
+      },
+      "policy_id": "curve385-sparse-independent-restart-budgets-v2",
+      "safety_boundary": "exhausting either category stops only the search campaign; it supplies no rank upper bound or saturation theorem",
+      "target_precedence": "a certified rank at least 32 succeeds immediately after classification, before another restart or any budget-stop decision"
+    },
+    "scope": "future curve-385 sparse rank-32 searches and resumes of v2 checkpoints; completed v1 evidence remains immutable",
+    "superseded_rule": {
+      "field": "point_search_budget.maximum_lattice_states",
+      "reason": "one combined counter charges rank changes and finite-index-only saturations against the same nearly minimal state allowance",
+      "value": 4
+    }
+  },
+  "definition_sha256": "114006d27c3dfcc0628294c8ee91de111993f2d6cef84c3fd5196621f223fa97",
+  "generation": {
+    "command": "python3 elliptic-curves/cas/build_curve385_sparse_restart_budget.py",
+    "script": "elliptic-curves/cas/build_curve385_sparse_restart_budget.py"
+  },
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/curve385_sparse_quotient_rank32_primary_v1.json": "ff1b0a2e8dd29b9a34a3b81cf8db3bed5350d12ee0dcfd9dd3936f226d255d61",
+    "artifacts/generated-results/elliptic-curves/curve385_sparse_quotient_rank32_protocol_v1.json": "2c9150f50f305b8aa3763590cd5e81c4d7e121f9373177827780789ce472834f",
+    "elliptic-curves/cas/curve385_sparse_restart_policy.py": "1191b1a85582a0a4be6007431c44568da8f8f18a96a954a96a9cf6669366a521",
+    "elliptic-curves/cas/run_curve385_sparse_quotient_rank32_search_v2.sage": "69a9a2024e22bd78893ad669345eac4d94502fd589d7d5ae308c140b0f9a3fe5"
+  },
+  "schema": "elliptic-curves.curve385-sparse-restart-budget.v2",
+  "status": "FROZEN_INDEPENDENT_RESTART_BUDGETS_BEFORE_FUTURE_SEARCH"
+}
