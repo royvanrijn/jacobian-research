@@ -6,28 +6,34 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[2]
-SOURCE = ROOT / "elliptic-curves/cas/certify_curve356_f1_from_class_quotient.py"
+SOURCE = ROOT / "elliptic-curves/cas/certify_record_f1_from_class_quotient.py"
 
 
 def load_module():
-    spec = importlib.util.spec_from_file_location("curve356_f1_class_quotient", SOURCE)
+    spec = importlib.util.spec_from_file_location("record_f1_class_quotient", SOURCE)
     assert spec is not None and spec.loader is not None
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
 
 
-class Curve356F1ClassQuotientTests(unittest.TestCase):
+class RecordF1ClassQuotientTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.module = load_module()
 
     def test_exact_change_of_generator(self):
         self.assertEqual(
-            self.module.PRESSURE_CUBIC,
+            self.module.TARGETS[356]["pressure_cubic"],
             "z^3 + 4*z^2 - "
-            f"{16 * self.module.A_COEFFICIENT}*z + "
-            f"{64 * self.module.B_COEFFICIENT}",
+            f"{16 * self.module.A356}*z + "
+            f"{64 * self.module.B356}",
+        )
+        self.assertEqual(
+            self.module.TARGETS[385]["pressure_cubic"],
+            "z^3 - 3*z^2 + "
+            f"{3 - self.module.A385}*z + "
+            f"{self.module.A385 + self.module.B385 - 1}",
         )
 
     def test_binary_rank(self):

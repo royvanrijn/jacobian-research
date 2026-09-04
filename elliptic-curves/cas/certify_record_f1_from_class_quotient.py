@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Certify F_1(356) from a one-sided class-group presentation.
+"""Certify F_1 for record curve 356 or 385 from a class-group quotient.
 
 Only the 2-primary class quotient and the classes of the bad prime ideals are
 used.  Fundamental units, a full BNF certification, Simon local images, and
@@ -32,18 +32,27 @@ PUBLIC_STATUS = "PASS_PINNED_PUBLIC_POINT_PROJECTION_FOR_69_RECOGNIZED_FIBRES"
 PRESSURE_STATUS = "PROVED_KUMMER_FORCED_CUBIC_CLASS_GROUP_2RANK_LOWER_BOUNDS"
 BNF_SCHEMA = "elliptic-curves.elkies-2026-record-pari219-bnf.v2"
 BNF_STATUS = "completed_certified_class_quotient_upper"
-SCHEMA = "elliptic-curves.curve356-complete-f1-from-class-quotient.v1"
-PROTOCOL = "CURVE356F1CLQ-v1"
-CURVE_ID = 356
+SCHEMA = "elliptic-curves.record-complete-f1-from-class-quotient.v1"
+PROTOCOL = "RECORDF1CLQ-v1"
 GENERIC_RANK = 17
 KNOWN_RANK = 29
 KNOWN_RESIDUAL_DIMENSION = KNOWN_RANK - GENERIC_RANK
-A_COEFFICIENT = 24391876744717707263532695900840552395172973498186560300
-B_COEFFICIENT = 46943906433780620456844832699051340439698711588743845207309557656274241785479710000
-REDUCED_CUBIC = f"x^3 - x^2 - {A_COEFFICIENT}*x - {B_COEFFICIENT}"
-PRESSURE_CUBIC = (
-    f"z^3 + 4*z^2 - {16 * A_COEFFICIENT}*z + {64 * B_COEFFICIENT}"
-)
+A356 = 24391876744717707263532695900840552395172973498186560300
+B356 = 46943906433780620456844832699051340439698711588743845207309557656274241785479710000
+A385 = 5309239946790504992658629933056863415942952216170388559928487467
+B385 = 148662610051436076306955509240772635466805071470938222844950640163632678492682210346622193359526
+TARGETS = {
+    356: {
+        "reduced_cubic": f"x^3 - x^2 - {A356}*x - {B356}",
+        "pressure_cubic": f"z^3 + 4*z^2 - {16 * A356}*z + {64 * B356}",
+        "field_isomorphism": "z = -4*x",
+    },
+    385: {
+        "reduced_cubic": f"x^3 - {A385}*x - {B385}",
+        "pressure_cubic": f"z^3 - 3*z^2 + {3 - A385}*z + {A385 + B385 - 1}",
+        "field_isomorphism": "z = 1 - x",
+    },
+}
 
 
 def digest(path: Path) -> str:
@@ -90,6 +99,8 @@ principal_famat(nf,t) =
   );
   return(I)
 }};
+main() =
+{{
 addprimes([{primes}]);
 f={polynomial};
 iferr(b=read("{gp_quote(checkpoint)}"),E,
@@ -125,6 +136,9 @@ for(ip=1,#S,
   )
 );
 print("{PROTOCOL}|stage=complete|status=PASS");
+return(1)
+}};
+if(!main(),quit(11));
 quit(0)
 '''
 
@@ -209,6 +223,7 @@ def parse_gp_log(text: str, bad_primes: list[int]) -> dict[str, Any]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--curve-id", type=int, choices=tuple(TARGETS), required=True)
     parser.add_argument("--gp", type=Path, required=True)
     parser.add_argument("--class-quotient-metadata", type=Path, required=True)
     parser.add_argument("--public-certificate", type=Path, default=PUBLIC)
@@ -236,7 +251,9 @@ def main() -> None:
     pressure = json.loads(pressure_path.read_text())
     if metadata.get("schema") != BNF_SCHEMA or metadata.get("status") != BNF_STATUS:
         raise ArithmeticError("class-quotient metadata is not certified complete")
-    if int(metadata.get("curve_id", -1)) != CURVE_ID:
+    curve_id = args.curve_id
+    target = TARGETS[curve_id]
+    if int(metadata.get("curve_id", -1)) != curve_id:
         raise ArithmeticError("class-quotient metadata belongs to another curve")
     bnf_input = metadata.get("input", {})
     if bnf_input.get("mode") != "class-quotient-upper" or int(bnf_input.get("bnfcertify_flag", -1)) != 1:
@@ -248,8 +265,10 @@ def main() -> None:
         raise ArithmeticError("GP binary differs from the class-quotient backend")
     if public.get("status") != PUBLIC_STATUS or pressure.get("status") != PRESSURE_STATUS:
         raise ArithmeticError("a canonical input certificate is not passing")
-    public_record = next(row for row in public["records"] if int(row["id"]) == CURVE_ID)
-    pressure_record = next(row for row in pressure["curves"] if int(row["curve_id"]) == CURVE_ID)
+    public_record = next(row for row in public["records"] if int(row["id"]) == curve_id)
+    pressure_record = next(
+        row for row in pressure["curves"] if int(row["curve_id"]) == curve_id
+    )
     bad_primes = [int(value) for value in public_record["bad_primes"]]
     if [int(value) for value in bnf_input.get("factor_hint_primes", [])] != bad_primes:
         raise ArithmeticError("class-quotient factor hints differ from the exact bad set")
@@ -272,10 +291,10 @@ def main() -> None:
     if not checkpoint.is_file() or digest(checkpoint) != checkpoint_hash:
         raise ArithmeticError("class-quotient checkpoint hash mismatch")
     polynomial = str(bnf_input["reduced_cubic"])
-    if polynomial != REDUCED_CUBIC:
-        raise ArithmeticError("unexpected curve-356 reduced cubic")
-    if str(pressure_record["two_division_cubic"]) != PRESSURE_CUBIC:
-        raise ArithmeticError("the pressure cubic is not the z=-4*x transform")
+    if polynomial != target["reduced_cubic"]:
+        raise ArithmeticError("unexpected reduced cubic for the requested record")
+    if str(pressure_record["two_division_cubic"]) != target["pressure_cubic"]:
+        raise ArithmeticError("the pressure cubic does not match the exact field transform")
 
     program = class_coordinate_program(
         checkpoint=checkpoint,
@@ -341,7 +360,7 @@ def main() -> None:
         for record in replay["prime_ideals"]
     ]
     if replayed_decomposition != pressure_decomposition:
-        raise ArithmeticError("bad-prime decomposition differs under z=-4*x")
+        raise ArithmeticError("bad-prime decomposition differs under the field transform")
     signature = replay["signature"]
     if signature != [int(value) for value in pressure_record["field_signature"]]:
         raise ArithmeticError("replayed field signature differs from the pressure certificate")
@@ -386,7 +405,7 @@ def main() -> None:
         "schema": SCHEMA,
         "protocol": PROTOCOL,
         "status": status,
-        "curve_id": CURVE_ID,
+        "curve_id": curve_id,
         "inputs": {
             "class_quotient_metadata": str(metadata_path),
             "class_quotient_metadata_sha256": digest(metadata_path),
@@ -402,7 +421,9 @@ def main() -> None:
             "class_coordinate_log_sha256": digest(args.log.resolve()),
         },
         "class_group_mod_2": {
-            "field_isomorphism_to_pressure_certificate": "z = -4*x",
+            "field_isomorphism_to_pressure_certificate": target[
+                "field_isomorphism"
+            ],
             "computed_quotient_invariants": invariants,
             "certified_dimension_upper_bound": computed_class_two_rank,
             "certified_dimension_lower_bound": proved_class_lower,
@@ -439,7 +460,9 @@ def main() -> None:
             ),
         },
         "f1": {
-            "definition": "Sel_2(E_356/Q) modulo the specialized generic MW17 image",
+            "definition": (
+                f"Sel_2(E_{curve_id}/Q) modulo the specialized generic MW17 image"
+            ),
             "known_subspace_dimension": KNOWN_RESIDUAL_DIMENSION,
             "known_subspace_labels": [f"P{index}" for index in range(18, 30)],
             "dimension": KNOWN_RESIDUAL_DIMENSION if complete_f1 else None,

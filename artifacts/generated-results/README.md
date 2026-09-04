@@ -31,7 +31,7 @@ and document the exact command and whole-file SHA-256.
   `59ec611232ada8b0fec052d63a0ee6f72a7372de556e94792e8232cf4320835f`,
   `1ee832ce6ecebc0550c008f8a10ccc2d75e727dfe9d5625802624c160e7969e6`,
   `aae62d0a582aa55f0c16d7bd0fbd728e6a3f274fa64ce6b826e0873578b3f599`,
-  and `66f5f477b71154d6f3d4b172fb3616c6b61017aa605a6df33db2cc484a586901`.
+  and `fbdfa24b14bc86ee33a576f5e3c3e894dd91dd5e0d1fbfb47bf208e167a7282a`.
 
 - `elliptic-curves/icarm_curve302_point_cloud_v1.json` records canonical
   mod-2 and mod-3 finite-reduction row spaces through prime 1000, exact

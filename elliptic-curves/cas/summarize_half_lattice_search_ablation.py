@@ -146,6 +146,14 @@ def main() -> None:
         raise ArithmeticError("development and holdout budgets differ")
     if development_blind["arm_definition"] != holdout_blind["arm_definition"]:
         raise ArithmeticError("development and holdout arm definitions differ")
+    if development["phase_boundary"]["blind_artifact_sha256_before_fixture_import"] != digest(
+        DEVELOPMENT_BLIND
+    ):
+        raise ArithmeticError("development verifier did not hash these blind bytes")
+    if holdout["phase_boundary"]["blind_artifact_sha256_before_fixture_import"] != digest(
+        HOLDOUT_BLIND
+    ):
+        raise ArithmeticError("holdout verifier did not hash these blind bytes")
     expected_ids = [arm["id"] for arm in development["results"][0]["arms"]]
     for phase in (development, holdout):
         for case in phase["results"]:
@@ -156,6 +164,22 @@ def main() -> None:
                     raise ArithmeticError("Q and F2 quotient ranks differ")
                 if arm["id"] != "deep-union" and arm["class_count"] != 43:
                     raise ArithmeticError("a fixed-size arm stopped having 43 covers")
+    blind_cases = development_blind["results"] + holdout_blind["results"]
+    random_reference = {
+        arm["id"]: arm["masks"]
+        for arm in blind_cases[0]["arms"]
+        if arm["id"].startswith("random43-")
+    }
+    if len({mask for masks in random_reference.values() for mask in masks}) != 5 * 43:
+        raise ArithmeticError("the five random arms stopped being disjoint")
+    for case in blind_cases:
+        observed = {
+            arm["id"]: arm["masks"]
+            for arm in case["arms"]
+            if arm["id"].startswith("random43-")
+        }
+        if observed != random_reference:
+            raise ArithmeticError("a deterministic random arm changed between fibres")
 
     development_cases = [compact_case(case) for case in development["results"]]
     holdout_cases = [compact_case(case) for case in holdout["results"]]

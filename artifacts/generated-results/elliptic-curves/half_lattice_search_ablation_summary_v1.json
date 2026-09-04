@@ -1162,7 +1162,7 @@
     "artifacts/generated-results/elliptic-curves/half_lattice_search_ablation_r17_development_verification_v1.json": "59ec611232ada8b0fec052d63a0ee6f72a7372de556e94792e8232cf4320835f",
     "artifacts/generated-results/elliptic-curves/half_lattice_search_ablation_rank29_holdout_blind_v1.json": "1ee832ce6ecebc0550c008f8a10ccc2d75e727dfe9d5625802624c160e7969e6",
     "artifacts/generated-results/elliptic-curves/half_lattice_search_ablation_rank29_holdout_verification_v1.json": "aae62d0a582aa55f0c16d7bd0fbd728e6a3f274fa64ce6b826e0873578b3f599",
-    "elliptic-curves/cas/summarize_half_lattice_search_ablation.py": "0b4b81105a4006b1441f9ecfa34e08aa27495e204bd1f51fdf55017f1af2e742"
+    "elliptic-curves/cas/summarize_half_lattice_search_ablation.py": "2e647548b46d794a53381eb5a94e8aa3819d42ee35a2fa156f952130296301bd"
   },
   "interpretation": [
     "The generic deepest 43 are genuinely enriched: on the three sealed +12 holdouts their mean exact quotient gain is 8.33, versus 3.20 averaged over the five deterministic random arms.",
