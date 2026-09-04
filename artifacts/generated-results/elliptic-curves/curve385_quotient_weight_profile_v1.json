@@ -1,0 +1,354 @@
+{
+  "basis_dependence_audit": {
+    "best_weight_one_rank": 9,
+    "best_weight_one_unordered_bases": [
+      [
+        "010",
+        "011",
+        "101"
+      ]
+    ],
+    "natural_basis_weight_one_rank": 7,
+    "unordered_F2_basis_count": 28,
+    "weight_at_most_two_deficient_basis_count": 8,
+    "weight_at_most_two_full_rank_basis_count": 20,
+    "weight_at_most_two_omitted_word_profile": [
+      {
+        "basis_count": 4,
+        "omitted_physical_word": 1,
+        "omitted_physical_word_binary": "001",
+        "weight_at_most_two_quotient_rank_over_M20": 9
+      },
+      {
+        "basis_count": 4,
+        "omitted_physical_word": 2,
+        "omitted_physical_word_binary": "010",
+        "weight_at_most_two_quotient_rank_over_M20": 8
+      },
+      {
+        "basis_count": 4,
+        "omitted_physical_word": 3,
+        "omitted_physical_word_binary": "011",
+        "weight_at_most_two_quotient_rank_over_M20": 9
+      },
+      {
+        "basis_count": 4,
+        "omitted_physical_word": 4,
+        "omitted_physical_word_binary": "100",
+        "weight_at_most_two_quotient_rank_over_M20": 9
+      },
+      {
+        "basis_count": 4,
+        "omitted_physical_word": 5,
+        "omitted_physical_word_binary": "101",
+        "weight_at_most_two_quotient_rank_over_M20": 8
+      },
+      {
+        "basis_count": 4,
+        "omitted_physical_word": 6,
+        "omitted_physical_word_binary": "110",
+        "weight_at_most_two_quotient_rank_over_M20": 9
+      },
+      {
+        "basis_count": 4,
+        "omitted_physical_word": 7,
+        "omitted_physical_word_binary": "111",
+        "weight_at_most_two_quotient_rank_over_M20": 9
+      }
+    ],
+    "weight_one_rank_histogram": {
+      "3": 2,
+      "4": 1,
+      "5": 7,
+      "6": 5,
+      "7": 6,
+      "8": 6,
+      "9": 1
+    }
+  },
+  "claim_boundary": [
+    "This is an exact coordinate-rank analysis of a completed blind ledger, not a new point search.",
+    "The weight profile was inspected after the 301-chart outcome and is therefore structural posthoc evidence, not a prospective success probability.",
+    "Hamming weight depends on the chosen quotient basis; the complete GL(3,2) audit records that dependence.",
+    "No bounded miss is a rank upper bound, and no saturation in the unknown full E(Q) is claimed."
+  ],
+  "cylinder": {
+    "all_nine_basis_extensions_have_quotient_weight_at_most_two": true,
+    "all_word_chart_count_including_previously_searched_zero_slice": 344,
+    "basis_extension_events_in_search_priority_order": [
+      {
+        "basis_rank_after": 28,
+        "minimum_quotient_weight": 1,
+        "quotient_words": [
+          4
+        ],
+        "source_priorities": [
+          43
+        ]
+      },
+      {
+        "basis_rank_after": 27,
+        "minimum_quotient_weight": 1,
+        "quotient_words": [
+          2
+        ],
+        "source_priorities": [
+          111
+        ]
+      },
+      {
+        "basis_rank_after": 29,
+        "minimum_quotient_weight": 2,
+        "quotient_words": [
+          3
+        ],
+        "source_priorities": [
+          184
+        ]
+      },
+      {
+        "basis_rank_after": 22,
+        "minimum_quotient_weight": 1,
+        "quotient_words": [
+          4
+        ],
+        "source_priorities": [
+          189
+        ]
+      },
+      {
+        "basis_rank_after": 23,
+        "minimum_quotient_weight": 2,
+        "quotient_words": [
+          3
+        ],
+        "source_priorities": [
+          213
+        ]
+      },
+      {
+        "basis_rank_after": 25,
+        "minimum_quotient_weight": 2,
+        "quotient_words": [
+          5
+        ],
+        "source_priorities": [
+          218
+        ]
+      },
+      {
+        "basis_rank_after": 24,
+        "minimum_quotient_weight": 2,
+        "quotient_words": [
+          3
+        ],
+        "source_priorities": [
+          220
+        ]
+      },
+      {
+        "basis_rank_after": 26,
+        "minimum_quotient_weight": 1,
+        "quotient_words": [
+          2
+        ],
+        "source_priorities": [
+          221
+        ]
+      },
+      {
+        "basis_rank_after": 21,
+        "minimum_quotient_weight": 1,
+        "quotient_words": [
+          2
+        ],
+        "source_priorities": [
+          235
+        ]
+      }
+    ],
+    "cumulative_weight_profile": [
+      {
+        "chart_count": 129,
+        "charts_with_finite_points": 52,
+        "distinct_iteration_discoveries": 125,
+        "finite_point_occurrences": 130,
+        "maximum_weight": 1,
+        "quotient_rank_over_M20": 7,
+        "quotient_word_count": 3
+      },
+      {
+        "chart_count": 258,
+        "charts_with_finite_points": 106,
+        "distinct_iteration_discoveries": 261,
+        "finite_point_occurrences": 282,
+        "maximum_weight": 2,
+        "quotient_rank_over_M20": 9,
+        "quotient_word_count": 6
+      },
+      {
+        "chart_count": 301,
+        "charts_with_finite_points": 118,
+        "distinct_iteration_discoveries": 287,
+        "finite_point_occurrences": 310,
+        "maximum_weight": 3,
+        "quotient_rank_over_M20": 9,
+        "quotient_word_count": 7
+      }
+    ],
+    "distinguished_generic_class_count": 43,
+    "exact_weight_profile": [
+      {
+        "chart_count": 129,
+        "charts_with_finite_points": 52,
+        "distinct_iteration_discoveries": 125,
+        "finite_point_occurrences": 130,
+        "quotient_rank_over_M20": 7,
+        "quotient_word_count": 3,
+        "weight": 1
+      },
+      {
+        "chart_count": 129,
+        "charts_with_finite_points": 54,
+        "distinct_iteration_discoveries": 141,
+        "finite_point_occurrences": 152,
+        "quotient_rank_over_M20": 5,
+        "quotient_word_count": 3,
+        "weight": 2
+      },
+      {
+        "chart_count": 43,
+        "charts_with_finite_points": 12,
+        "distinct_iteration_discoveries": 28,
+        "finite_point_occurrences": 28,
+        "quotient_rank_over_M20": 4,
+        "quotient_word_count": 1,
+        "weight": 3
+      }
+    ],
+    "fresh_nonzero_word_chart_count": 301,
+    "word_profile": [
+      {
+        "binary": "001",
+        "chart_count": 43,
+        "charts_with_finite_points": 15,
+        "distinct_iteration_discoveries": 33,
+        "finite_point_occurrences": 34,
+        "quotient_rank_over_M20": 1,
+        "weight": 1,
+        "word": 1
+      },
+      {
+        "binary": "010",
+        "chart_count": 43,
+        "charts_with_finite_points": 24,
+        "distinct_iteration_discoveries": 61,
+        "finite_point_occurrences": 64,
+        "quotient_rank_over_M20": 5,
+        "weight": 1,
+        "word": 2
+      },
+      {
+        "binary": "011",
+        "chart_count": 43,
+        "charts_with_finite_points": 16,
+        "distinct_iteration_discoveries": 39,
+        "finite_point_occurrences": 40,
+        "quotient_rank_over_M20": 3,
+        "weight": 2,
+        "word": 3
+      },
+      {
+        "binary": "100",
+        "chart_count": 43,
+        "charts_with_finite_points": 13,
+        "distinct_iteration_discoveries": 32,
+        "finite_point_occurrences": 32,
+        "quotient_rank_over_M20": 4,
+        "weight": 1,
+        "word": 4
+      },
+      {
+        "binary": "101",
+        "chart_count": 43,
+        "charts_with_finite_points": 12,
+        "distinct_iteration_discoveries": 27,
+        "finite_point_occurrences": 30,
+        "quotient_rank_over_M20": 3,
+        "weight": 2,
+        "word": 5
+      },
+      {
+        "binary": "110",
+        "chart_count": 43,
+        "charts_with_finite_points": 26,
+        "distinct_iteration_discoveries": 75,
+        "finite_point_occurrences": 82,
+        "quotient_rank_over_M20": 1,
+        "weight": 2,
+        "word": 6
+      },
+      {
+        "binary": "111",
+        "chart_count": 43,
+        "charts_with_finite_points": 12,
+        "distinct_iteration_discoveries": 28,
+        "finite_point_occurrences": 28,
+        "quotient_rank_over_M20": 4,
+        "weight": 3,
+        "word": 7
+      }
+    ]
+  },
+  "generator": "elliptic-curves/cas/analyze_curve385_quotient_weight_profile.py",
+  "input": {
+    "path": "artifacts/generated-results/elliptic-curves/curve385_iterated_half_lattice_blind_v1.json",
+    "public_rank29_fixture_loaded": false,
+    "sha256": "356001898f738f607d984e081663a015825e11de0c606d35055af156eb2d7502"
+  },
+  "input_hashes": {
+    "artifacts/generated-results/elliptic-curves/curve385_iterated_half_lattice_blind_v1.json": "356001898f738f607d984e081663a015825e11de0c606d35055af156eb2d7502",
+    "elliptic-curves/cas/analyze_curve385_quotient_weight_profile.py": "4e6d897496d3566a3112ab83f5823446a6f7db7e28ecf4292d83bd790cc7a234"
+  },
+  "primitive_split": {
+    "generic_rank": 17,
+    "initial_basis_is_generic_basis_followed_by_complement": true,
+    "initial_discovered_rank": 20,
+    "initial_finite_index_saturation_event_count": 0,
+    "interpretation": "M20/2M20 = M17/2M17 direct-sum F2^3 for the discovered subgroup",
+    "new_complement_rank": 3
+  },
+  "rank32_scale_projection": {
+    "old_class_count": 43,
+    "quotient_bit_count": 12,
+    "staged_chart_counts": [
+      {
+        "chart_count": 516,
+        "maximum_weight": 1,
+        "quotient_word_count": 12
+      },
+      {
+        "chart_count": 3354,
+        "maximum_weight": 2,
+        "quotient_word_count": 78
+      },
+      {
+        "chart_count": 12814,
+        "maximum_weight": 3,
+        "quotient_word_count": 298
+      },
+      {
+        "chart_count": 34099,
+        "maximum_weight": 4,
+        "quotient_word_count": 793
+      },
+      {
+        "chart_count": 176085,
+        "maximum_weight": "all_nonzero",
+        "quotient_word_count": 4095
+      }
+    ]
+  },
+  "schema": "elliptic-curves.curve385-quotient-weight-profile.v1",
+  "status": "PASS_EXACT_POSTHOC_WEIGHT_PROFILE"
+}

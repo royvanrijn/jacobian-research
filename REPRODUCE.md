@@ -19589,6 +19589,53 @@ applicable rather than as a zero.  See
 <!-- status-consumer: EC-K3-R17-074D9-NORM8-CROSS-FIBRE-TRANSFER-16 262e405b0adbbb73 -->
 <!-- status-consumer: EC-K3-R17-074D9-LATE-POINT-HOLDOUT 284e0f92def23419 -->
 
+### Curve-385 quotient-bit half-lattice iteration
+
+Replay the fixture-blind `M17 -> M20` transition and the 301 nonzero-bit lifts,
+then open the public rank-29 fixture only in the separate verifier:
+
+```bash
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elliptic-curves/cas/run_curve385_iterated_half_lattice_search.sage \
+  --height-bound 100000 \
+  --timeout-seconds 15 \
+  --stack-bytes 1000000000 \
+  --max-quotient-bits 4 \
+  --max-planned-lifts 688
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elliptic-curves/cas/verify_curve385_iterated_half_lattice_search.sage
+
+python3 \
+  elliptic-curves/cas/analyze_curve385_quotient_weight_profile.py \
+  --check
+
+python3 \
+  elliptic-curves/cas/build_curve385_sparse_quotient_rank32_protocol.py \
+  --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elliptic-curves/cas/run_curve385_sparse_quotient_rank32_search.sage \
+  --plan-only \
+  --max-stage 6
+
+python3 -m unittest -v \
+  elliptic-curves/tests/test_curve385_iterated_half_lattice_search.py \
+  elliptic-curves/tests/test_curve385_sparse_quotient_rank32.py
+```
+
+All 301 minimized/reduced quartics complete at the declared bound. The blind
+classifier adds nine directions to `M20`, reaching rank 29. After the blind
+ledger is hashed, mutual determinant-one integral coordinate matrices prove
+that this group equals the displayed public rank-29 subgroup. Exact final-basis
+coordinates show that quotient weight one spans seven of the nine new
+directions and weight at most two spans all nine. The separately frozen rank-32
+protocol therefore searches 516 weight-one charts, then 2,838 new weight-two
+charts, restarting at weight one after exact group growth. The complete next
+round would contain 176,085 nonzero-word lifts and is not an automatic stage,
+so neither bounded-search stability nor exact rank 29 is claimed. See
+[`elliptic-curves/notes/CURVE385_ITERATED_HALF_LATTICE_RECOVERY_2026-09-04.md`](elliptic-curves/notes/CURVE385_ITERATED_HALF_LATTICE_RECOVERY_2026-09-04.md).
+
 ### Native `074d9` record-twist MW contribution
 
 Replay the eight-prime geometric bounds, four exact sections and
