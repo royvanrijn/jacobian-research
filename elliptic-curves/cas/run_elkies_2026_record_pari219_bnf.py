@@ -151,13 +151,24 @@ def main() -> None:
     parser.add_argument("--max-factorizations", type=int, default=10_000)
     parser.add_argument("--ideal-power", type=int, default=4)
     parser.add_argument("--pari-debug", type=int, default=1)
+    parser.add_argument(
+        "--random-seed",
+        type=int,
+        default=20260904,
+        help="deterministic PARI relation-search seed",
+    )
     parser.add_argument("--source-commit", default="unknown")
     parser.add_argument("--log", type=Path, required=True)
     parser.add_argument("--checkpoint", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
-    if args.timeout_seconds <= 0 or args.threads <= 0 or args.stack_bytes <= 0:
+    if (
+        args.timeout_seconds <= 0
+        or args.threads <= 0
+        or args.stack_bytes <= 0
+        or args.random_seed <= 0
+    ):
         parser.error("timeouts, thread counts, and stack sizes must be positive")
     if args.relation_threads is not None and args.relation_threads < 0:
         parser.error("--relation-threads must be nonnegative")
@@ -189,6 +200,7 @@ def main() -> None:
     tech_text = ",".join(str(value) for value in tech)
     factor_text = ",".join(str(prime) for prime in args.factor_primes)
     program = f'''default(nbthreads,{args.threads});
+setrand({args.random_seed});
 setdebug("bnf",{args.pari_debug});
 addprimes([{factor_text}]);
 f={args.polynomial};
@@ -296,6 +308,7 @@ print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1|flag={certify_flag}")
             "factor_certificate_sha256": file_sha256(certificate),
             "threads": args.threads,
             "relation_threads": relation_threads,
+            "random_seed": args.random_seed,
             "stack_bytes": args.stack_bytes,
             "timeout_seconds": args.timeout_seconds,
         },

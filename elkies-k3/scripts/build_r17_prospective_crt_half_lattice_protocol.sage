@@ -28,6 +28,8 @@ ABLATION_BLIND = ROOT / "artifacts/generated-results/elliptic-curves/half_lattic
 ABLATION_VERIFIED = ROOT / "artifacts/generated-results/elliptic-curves/half_lattice_search_ablation_rank29_holdout_verification_v1.json"
 ABLATION_SUMMARY = ROOT / "artifacts/generated-results/elliptic-curves/half_lattice_search_ablation_summary_v1.json"
 ENGINE = ROOT / "elliptic-curves/cas/half_lattice_fake_descent_replay.sage"
+RUNNER = ROOT / "elkies-k3/scripts/run_r17_prospective_crt_half_lattice_search.sage"
+ANALYZER = ROOT / "elkies-k3/scripts/analyze_r17_prospective_crt_half_lattice_experiment.py"
 OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-protocol-v3.json"
 
 EXPECTED_CANDIDATE_HASH = "5df03637d4db0baa95cb9e5f697fe35e5e897838676b6370c0e08bdae5aa9aeb"
@@ -45,7 +47,7 @@ HEIGHT_BOUND = 100_000
 PER_COVER_TIMEOUT_SECONDS = 15
 GP_STACK_BYTES = 1_000_000_000
 FIBRE_WORKER_TIMEOUT_SECONDS = 1_800
-FIBRE_WORKER_ADDRESS_SPACE_BYTES = 2_000_000_000
+FIBRE_WORKER_ADDRESS_SPACE_BYTES = None
 CERTIFICATE_PRIME_BOUND = 1_000
 RETRIES = 0
 
@@ -243,6 +245,10 @@ def build() -> dict[str, Any]:
             "no_other_escalation_rule": True,
         },
         "cover_pipeline": {
+            "specialization_normalization": (
+                "exact Sage local_data(2).minimal_model(), first exact isomorphism, "
+                "then the canonical integral short model [-27*c4,-54*c6]"
+            ),
             "model": "w^2=m^4-6*x_P*m^2-8*y_P*m-3*x_P^2-4*A",
             "base_point": "exact specialized linear combination given by the selected representative",
             "denominator_clearing": "exact square clearing",
@@ -259,6 +265,7 @@ def build() -> dict[str, Any]:
         "fibre_worker_envelope": {
             "wall_timeout_seconds": FIBRE_WORKER_TIMEOUT_SECONDS,
             "address_space_bytes": FIBRE_WORKER_ADDRESS_SPACE_BYTES,
+            "memory_control": "per-cover GP stack bound; no RLIMIT_AS because loaded numerical libraries reserve large virtual arenas",
             "retries": RETRIES,
             "worker_timeout_or_failure_is_censored_not_a_bounded_miss": True,
         },
@@ -273,6 +280,11 @@ def build() -> dict[str, Any]:
             "unit": "frozen fibre",
             "event": "at least one exactly certified Stage-A quotient direction",
             "primary_comparison": "pooled A_356_full plus B_385_full versus C_matched_ordinary",
+            "primary_estimand": "certified Stage-A detector yield per scheduled fibre (intention to search)",
+            "censoring_rule": (
+                "an exact event still counts on a partially failed row; otherwise every scheduled "
+                "row remains in the primary denominator, with complete-case rates reported as sensitivity"
+            ),
             "secondary_fixed_cohort_order": [
                 "F_random_equal_codimension",
                 "D_two_only",
@@ -303,6 +315,8 @@ def build() -> dict[str, Any]:
                 ABLATION_VERIFIED,
                 ABLATION_SUMMARY,
                 ENGINE,
+                RUNNER,
+                ANALYZER,
             )
         },
         "generation": {

@@ -16,6 +16,10 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   denominator and numerical height-Gram comparison; this does not identify a
   family.
 - `verify_icarm_curve273_rank30.py`: independent rank-at-least-30 replay.
+- `verify_icarm_curve398_rank30.py`: independent rank-at-least-30, trivial
+  torsion, singleton rational-isogeny-class and complete semistable local-data
+  replay, bad-node fingerprint, and exact exclusion from the one
+  equation-explicit A1/MW16 control family.
 - `analyze_record_first17_subgroups.py`: exact first-seventeen coordinate,
   quotient, finite-Kummer, and bad-component comparison for curves 273 and
   302, plus a 100-digit canonical-height/theta profile.
@@ -127,6 +131,26 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   hashing the blind artifact, compute exact quotient ranks over `Q` and
   mod 2 for every arm, and emit the compact cross-phase comparison. Bounded
   misses remain bounded-search misses.
+- `run_curve385_iterated_half_lattice_search.sage`: starts from the three
+  directions blindly recovered by curve 385's generic-deepest 43 charts,
+  saturates inside the discovered group, and searches the 301 height-prioritized
+  lifts with a nonzero new quotient word. It reaches blind rank 29 and stops at
+  the predeclared next-round limit rather than claiming stability.
+- `verify_curve385_iterated_half_lattice_search.sage`: hashes the frozen blind
+  ledger before loading the public fixture, then proves by mutually inverse
+  determinant-one integral coordinate matrices that the blind and displayed
+  public rank-29 subgroups are equal.
+- `analyze_curve385_quotient_weight_profile.py`: uses only the frozen blind
+  ledger's exact integral coordinates to certify quotient-rank gains `7,9,9`
+  at weights `1,<=2,<=3`, and audits all 28 bases of the three-bit quotient.
+- `build_curve385_sparse_quotient_rank32_protocol.py` and
+  `curve385_sparse_quotient_policy.py`: freeze the staged 12-bit search,
+  deterministic alternate quotient bases, restart-on-growth rule, exact
+  acceptance gates, and fail-closed limits before any new search outcome.
+- `run_curve385_sparse_quotient_rank32_search.sage`: checkpointed rank-32
+  runner starting from the blind `M29`. It searches complete sparse stages,
+  deduplicates exact base-point charts, and restarts at weight one after every
+  certified group enlargement.
 - `build_elkies_2026_rank28_relative_descent_magma.py`: replays the certified
   generic Kummer image and emits an unconditional basis-level Selmer job whose
   rejection gate precedes all residual-cover construction.

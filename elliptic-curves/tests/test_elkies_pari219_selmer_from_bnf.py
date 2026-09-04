@@ -32,6 +32,8 @@ class Pari219SelmerFromBnfTests(unittest.TestCase):
         self.assertIn("bnfcertify(b,{certify_flag})", source)
         self.assertIn("class-quotient-upper", source)
         self.assertIn("--relation-threads", source)
+        self.assertIn("--random-seed", source)
+        self.assertIn("setrand({args.random_seed})", source)
         self.assertIn("serial collector's early-abort strategies", source)
         self.assertIn("iferr(b=bnfinit", source)
         self.assertIn("reload_certified=1", source)

@@ -1,0 +1,33 @@
+{
+  "schema": "elliptic-curves.icarm-curve398-known-a1-mod179.v1",
+  "prime": 179,
+  "family": {
+    "description": "The equation-explicit fixed-corridor A1/MW16 fibration on the determinant-948 X948 K3",
+    "canonical_status_id": "EC-K3-H3-FIXED-REVERSE-A1-2A1-QQ",
+    "source_artifact": "artifacts/local/elkies-k3/fixed-final-a1-reverse-rr-qq.json",
+    "source_artifact_sha256": "c75c5073e22c783b7bd59ec120da9f5806a25b8dfb2ef8b91c531c4a40eb540c",
+    "source_replay": "sage elkies-k3/scripts/compile_h92_fixed_final_a1_reverse_rr_qq.sage",
+    "equation": "y^2=x^3+A(t)*x+B(t)",
+    "A_coefficients_low_to_high_mod_prime": [73, 41, 148, 169, 132, 121, 25, 125, 75],
+    "B_coefficients_low_to_high_mod_prime": [125, 42, 170, 122, 146, 104, 51, 148, 139, 35, 160, 154, 145]
+  },
+  "target": {
+    "description": "ICARM curve 398",
+    "ainvs": [
+      "1",
+      "0",
+      "0",
+      "-12892599774455576272301592959047823530919513428112484011550",
+      "560755046348395412977088824999503890617558856687636981223935662848386484980312656296132"
+    ]
+  },
+  "recognition": {
+    "equation": "c4_family(t)^3*Delta_target-c4_target^3*Delta_family(t)=0",
+    "coefficients_low_to_high_mod_prime": [32, 150, 110, 82, 147, 58, 37, 22, 33, 163, 45, 151, 164, 5, 109, 176, 166, 4, 152, 90, 167, 92, 141, 133, 130],
+    "coefficients_sha256": "51d47d04674e5aca809578221661a53c746426790124424bad9d30d6cee1a310",
+    "degree": 24,
+    "finite_roots": [],
+    "root_at_infinity": false,
+    "conclusion": "Curve 398 is not a rational fibre of this one equation-explicit A1/MW16 fibration, including after quadratic twisting. This does not test the hundreds of other A1 fibrations described in the public announcement."
+  }
+}

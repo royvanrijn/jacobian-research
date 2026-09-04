@@ -13,6 +13,11 @@ active navigation map.
   squareclass, degree-six held-out interpolation, and fixed-`X` deformation
   probes are negative in their declared bounded models.
 - ICARM curve 273: independently replayed `rank E(Q) >= 30`.
+- ICARM curve 398: independently replayed `rank E(Q) >= 30`, trivial torsion,
+  a singleton rational isogeny class, and exact semistable conductor/local
+  data.  The public Elkies--Klagsbrun mechanism is an MW16 `I2`/`III`
+  fibration on `X948`, but its exact fibration, parameter, and sixteen-section
+  specialization map remain unpublished.
 - ICARM curve 356: certified `rank E(Q) >= 29` with exact conductor/local data.
 - ICARM curves 285/286 and curve 394: certified rank-at-least-21 results; curve 394 is the compact Elkies `t=3/8` specialization with exact conductor replay.
 - The pinned K3 now has two explicit rootless arithmetic MW17 charts over `QQ`: published R17 and the direct degree-two alternate-Q80 chart from `norm12-orbit-11952`.
@@ -38,6 +43,9 @@ Existing scripts, tests, local checkpoints, and generated certificates are retai
 - [`notes/ICARM_CURVE302_RANK31.md`](notes/ICARM_CURVE302_RANK31.md) — rank-at-least-31 certificate.
 - [`notes/ICARM_CURVE302_POINT_CLOUD_RECONSTRUCTION.md`](notes/ICARM_CURVE302_POINT_CLOUD_RECONSTRUCTION.md) — direct 31-point reconstruction probes and calibrated claim boundary.
 - [`notes/ICARM_CURVE273_RANK30.md`](notes/ICARM_CURVE273_RANK30.md) — rank-at-least-30 certificate.
+- [`notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md)
+  — rank-at-least-30 certificate, complete local dissection, and the exact
+  boundary between the known X948/MW16 method and the missing specialization.
 - [`notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md`](notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md) — rank-at-least-29 record/fingerprint.
 - [`../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md) — exact 43-chart record sweep and common five-fibre R17 construction.
 - [`notes/ICARM_7FFF_ZIP_SEQUENCE.md`](notes/ICARM_7FFF_ZIP_SEQUENCE.md) — rank-at-least-21 curves 285/286.
@@ -48,7 +56,15 @@ Existing scripts, tests, local checkpoints, and generated certificates are retai
   — blind rank-28 half-lattice replay, exact productive-class ledger,
   equal-budget deep/random/shallow ablation with sealed +12 holdouts, and the
   failure of the pointed quartics to supply a prospective local-solubility
-  predictor.
+  predictor; it also records the frozen two-stage replacement detector now
+  running on the pre-existing 2,560-fibre CRT cohort.
+- [`notes/CURVE385_ITERATED_HALF_LATTICE_RECOVERY_2026-09-04.md`](notes/CURVE385_ITERATED_HALF_LATTICE_RECOVERY_2026-09-04.md)
+  — the quotient-bit iteration from blind `M20` to blind `M29`; post-freeze
+  mutual integral coordinates prove equality with the displayed public
+  rank-29 subgroup. Its exact weight profile shows that weight one spans seven
+  of the nine new directions and weight at most two spans all nine; a frozen,
+  checkpointed sparse-mask rank-32 protocol replaces monolithic enumeration.
+  Stability and exact rank remain open.
 - [`notes/R17_RECORD_PAIR_HIGHER_2POWER_SELMER_PROGRAM.md`](notes/R17_RECORD_PAIR_HIGHER_2POWER_SELMER_PROGRAM.md) — corrected residual (2/4/8)-Selmer image filtration for curves 356 and 385.
 - [`../archive/elliptic-curves/`](../archive/elliptic-curves/) — bounded-search history and superseded command surfaces.
 
@@ -66,6 +82,9 @@ The useful gates are still:
    search while the full descent is open, and still require a complete
    unconditional descent for every Selmer or exact-rank claim;
 4. pursue low-conductor survivors only after exact quotient/descent gates justify them.
+5. recover curve 398's exact A1/MW16 fibration and rational parameter from the
+   authors' X948 census, then identify the generic rank-16 subgroup inside the
+   certified public rank-30 subgroup.
 
 A heuristic score, point list without independence, incomplete Selmer calculation, or bounded miss is not a rank theorem.
 

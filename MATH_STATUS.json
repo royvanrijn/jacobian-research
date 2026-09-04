@@ -32561,6 +32561,46 @@
       "priority": "primary"
     },
     {
+      "id": "EC-ICARM-CURVE398-RANK30-CONSTRUCTION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Unconditional curve-398 rank-at-least-30 replay and exact X948 construction boundary",
+      "scope": "For public ICARM curve 398, all thirty displayed rational points satisfy the integral model y^2+x*y=x^3+A*x+B exactly, and X=36*x+3, Y=108*(2*y+x) transports them to an integral short model. Exact exhaustive E(F_p)/2E(F_p) quotients at 25 explicit good primes give a 31-by-30 binary matrix of column rank thirty; the 2-division cubic has no root modulo 23, and the coprime exact orders #E(F_11)=18 and #E(F_23)=31 prove trivial rational torsion. Infinite descent therefore proves rank E(Q)>=30 unconditionally. PARI verifies global minimality, the public discriminant and conductor factorizations, eighteen multiplicative fibres, Tamagawa product 46448640, and global root number +1. Its exact ellisomat enumeration consists of one Q-isomorphism class with degree matrix Mat(1), so curve 398 has no nontrivial rational isogeny to another curve over Q. Exact singular-node incidence at every bad prime gives a retained construction fingerprint. The public Elkies--Klagsbrun announcement identifies the broad source as a search through hundreds of I2/III fibrations on the Picard-rank-19 K3 X948, each with generic MW rank 16 by Shioda--Tate. It does not publish curve 398's exact fibration, rational parameter, sixteen specialized sections, or search transcript. Existing exact recognition already excludes the published R17 chart and all six known norm-twelve chart classes. The singleton Q-isogeny class strengthens the earlier degree-3,5,7,11 checks: no nontrivial rational isogeny from any rational fibre can lead to curve 398. A new degree-24 j-preimage polynomial has no projective root modulo 179, additionally excluding the repository's one equation-explicit fixed-corridor A1/MW16 fibration, twist-stably; it does not test the authors' other A1 fibrations. The authors' GRH-conditional exact-rank statement is external and is not used: no unconditional rank upper bound or exact construction is claimed. The pinned artifact artifacts/generated-results/elliptic-curves/icarm_curve398_rank30_and_construction_v1.json has SHA-256 1fd4f23ff2167321be0e3a7bf12b693f0a9ebe26d1e2125ce131da30ad05bf60.",
+      "canonical_source": "elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md",
+      "dependencies": [
+        "ECR30",
+        "EC-K3-ELKIES-2026-BISECTION-VISIBILITY-RECORD-CURVES",
+        "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
+        "EC-K3-H3-FIXED-REVERSE-A1-2A1-QQ",
+        "external: ICARM curve 398 equation, thirty points, and arithmetic metadata",
+        "external: Elkies--Klagsbrun rank 27--30 construction announcement"
+      ],
+      "checker": "elliptic-curves/cas/verify_icarm_curve398_rank30.py",
+      "proof_type": "hybrid",
+      "independent_replay": true,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:91004711de569b0ab7f57c7850bfaa7e29c21e3942e02a9ef85dd7967e260a31",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt",
+        "elliptic-curves/cas/audit_icarm_rank_lower_bound_artifacts.py",
+        "elliptic-curves/cas/icarm_curve398.py",
+        "elliptic-curves/cas/mod2_reduction_independence.py",
+        "elliptic-curves/cas/verify_icarm_curve398_rank30.py",
+        "elliptic-curves/data/icarm_curve398_known_a1_mod179.json",
+        "artifacts/generated-results/elliptic-curves/icarm_curve398_rank30_and_construction_v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "ECR31",
       "kind": "theorem",
       "state": "proved",

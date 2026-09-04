@@ -1,0 +1,20 @@
+diff --git a/src/basemath/buch2.c b/src/basemath/buch2.c
+index 696d742f2..751f1bc79 100644
+--- a/src/basemath/buch2.c
++++ b/src/basemath/buch2.c
+@@ -25,7 +25,14 @@
+ /* get_random_ideal */
+ static const long RANDOM_BITS = 4;
+ /* Buchall */
+-static const long RELSUP = 5;
++/*
++ * Record-F1 class-quotient build: the only accepted terminal is followed by
++ * bnfcertify(bnf, 1), which certifies that the true class group is a quotient
++ * of the computed group.  The five surplus dependent relations normally
++ * collected for regulator robustness are therefore outside the proof gate.
++ * The unit-rank relations RU - 1 are unchanged.
++ */
++static const long RELSUP = 0;
+ static const long FAIL_DIVISOR = 32;
+ static const long MINFAIL = 10;
+ /* small_norm */

@@ -30,6 +30,11 @@ The compact machine-readable overview is
 The equal-budget ablation certificate is
 [`half_lattice_search_ablation_summary_v1.json`](../../artifacts/generated-results/elliptic-curves/half_lattice_search_ablation_summary_v1.json).
 
+The positive-control result now gates a separately frozen prospective replay
+on the existing 2,560-fibre CRT cohort.  Its protocol is
+[`elkies-k3-r17-prospective-crt-half-lattice-protocol-v3.json`](../../artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-protocol-v3.json).
+It was hashed before any half-lattice outcome on those fibres was opened.
+
 ## Claim ledger
 
 ### Exact results
@@ -177,6 +182,52 @@ budgets were unchanged.  The repaired search source hash and the pre-search
 development hash are both recorded in the compact certificate.  Public
 holdout points were first imported only after the final blind artifact was
 hashed.
+
+## Frozen prospective detector replacement
+
+The old prospective experiment's direct completed-square `x`-search found no
+event on 2,560 frozen fibres, but also found no event on either predeclared
+rank-29 control 356 or 385.  It was therefore a detector-sensitivity failure,
+not a calibrated negative result for the CRT conditions.  The half-lattice
+ablation supplies the required replacement gate: in its fixture-blind search,
+the fixed generic-deepest 43 recover exact quotient gains 12 and 3 on 356 and
+385, and the generic/specialized unions recover 12 and 4.
+
+Protocol v3 reuses the original candidate commitment
+`5df03637d4db0baa95cb9e5f697fe35e5e897838676b6370c0e08bdae5aa9aeb`;
+no fibre is added, removed, or rebalanced.  Its rules are fixed as follows.
+
+1. Stage A searches the exact 43 norm-12 classes of the native R17 generic
+   height lattice.  On each fibre it first chooses the shortest representative
+   using the specialized canonical-height Gram matrix rounded at scale
+   `10^6`.
+2. Every cover uses the same exact pointed quartic, denominator clearing,
+   PARI minimization and reduction, reduced-coordinate height bound 100,000,
+   15-second whole-cover timeout, 1 GB GP stack, and zero retries.
+3. Stage B is triggered only by at least one Stage-A point having a full exact
+   finite-reduction certificate beyond specialized `MW17`.  It then ranks all
+   131,072 specialized classes, audits the top-43 set at scales `10^5` and
+   `10^6`, and searches only specialized top-43 masks not already searched in
+   Stage A.
+4. A counted point must satisfy the original specialized equation exactly and
+   increase the combined finite-reduction mod-2 rank to the full number of
+   displayed columns.  This simultaneously certifies nonmembership and
+   independence of all counted directions.
+5. The primary response is Stage-A certified detector yield per scheduled
+   fibre for pooled full-fingerprint A+B versus matched-ordinary C.  Exact
+   events still count on partially failed rows; all scheduled rows remain in
+   the primary denominator, with complete-case rates only a sensitivity
+   analysis.  Stage B is conditional recovery depth, never an unconditional
+   cohort response.
+
+The protocol-definition hash is
+`9584174de7625031e5f95ce73d0117a9caf8341d91063061ea672f2e4e36e521`.
+It pins the search executable hash
+`aeabc010fb68078fe3ca422dcb6d5ce68f32e4a4b3778130d90c615109448ad6`
+and the predeclared analysis executable hash
+`15c42bab15c354583f84413c0312ceaf19b547f0e8643bd7544b58f13cd66e73`.
+The prospective computation is a bounded experiment; until its complete
+ledger is merged, it supports no comparison among CRT cohorts.
 
 ## Blind boundary
 

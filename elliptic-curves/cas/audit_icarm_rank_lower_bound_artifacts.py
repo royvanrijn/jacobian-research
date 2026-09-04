@@ -29,10 +29,18 @@ EXPECTED_HASHES = {
         "f06304f1991992323f19c2c695873afc99d8fb697a5085d2cfa9aa3c523bc0cd",
     "elliptic-curves/cas/icarm_curve302.py":
         "7b3c5f92f92278b7f0823114ef8e9967a9e8c867f1435238a2521938380ec73f",
+    "elliptic-curves/cas/verify_icarm_curve398_rank30.py":
+        "91004711de569b0ab7f57c7850bfaa7e29c21e3942e02a9ef85dd7967e260a31",
+    "elliptic-curves/cas/icarm_curve398.py":
+        "6a2769de8822bf652668f9749e68229256596a97625b509388394f2f6439156f",
+    "elliptic-curves/data/icarm_curve398_known_a1_mod179.json":
+        "663071aadfdb0325f623dd04e5f05a9515f61f765c0e0495d8888826e66acee9",
     "artifacts/generated-results/elliptic-curves/icarm_curve273_rank30_v1.json":
         "e2a7a322fbd4703af4239f497749a69a68f9d5149aa8a1f696b39ab3941a3284",
     "artifacts/generated-results/elliptic-curves/icarm_curve302_rank31_v1.json.gz":
         "fc50b4b9ec5fe1dd1fe31aa299f13d8bc3476d43f3ed98e2ade5a4fc8972aa04",
+    "artifacts/generated-results/elliptic-curves/icarm_curve398_rank30_and_construction_v1.json":
+        "1fd4f23ff2167321be0e3a7bf12b693f0a9ebe26d1e2125ce131da30ad05bf60",
 }
 EXPECTED_302_JSON_HASH = (
     "3be0d6fe82c58e0f9284df5d9340332944a1d906508ea986d4abe00357036991"
@@ -136,8 +144,64 @@ def main() -> None:
         "elliptic-curves/cas/icarm_curve302.py"
     ]
 
+    curve398 = json.loads(
+        (
+            ROOT
+            / "artifacts/generated-results/elliptic-curves/"
+            "icarm_curve398_rank30_and_construction_v1.json"
+        ).read_text(encoding="utf-8")
+    )
+    assert curve398["artifact_kind"] == (
+        "exact_elliptic_curve_rank_lower_bound_and_construction_dissection"
+    )
+    assert curve398["claim"] == "rank E(Q) >= 30"
+    assert curve398["claim_status"] == (
+        "exact unconditional lower bound; no unconditional exact-rank claim"
+    )
+    assert curve398["point_membership_checks"] == 30
+    assert len(curve398["points"]) == 30
+    certificate398 = curve398["independence_certificate"]
+    assert certificate398["combined_binary_rank"] == 30
+    rows398 = flattened_rows(certificate398["rows"])
+    assert_matrix_shape(rows398, 31, 30)
+    assert certificate398["full_torsion_witness_group_orders"] == {
+        "11": 18,
+        "23": 31,
+    }
+    assert curve398["curve"]["torsion_order"] == 1
+    assert curve398["curve"]["global_minimal_model"] is True
+    assert curve398["curve"]["root_number"] == 1
+    assert curve398["rational_isogeny_certificate"] == {
+        "conclusion": (
+            "The Q-isogeny class contains only curve 398's Q-isomorphism "
+            "class; there is no nontrivial rational isogeny to another curve."
+        ),
+        "isomorphism_class_count": 1,
+        "method": "PARI ellisomat over Q",
+        "minimal_isogeny_degree_matrix": "Mat(1)",
+    }
+    assert len(curve398["local_reduction"]) == 18
+    assert all(row["conductor_exponent"] == 1 for row in curve398["local_reduction"])
+    assert curve398["height_diagnostic"]["used_for_rank_claim"] is False
+    assert curve398["construction_provenance"][
+        "exact_fibration_parameter_and_section_map"
+    ] == "NOT_PUBLIC_UNKNOWN"
+    a1_test = curve398["construction_provenance"]["known_equation_explicit_a1_test"]
+    assert a1_test["prime"] == 179
+    assert a1_test["finite_roots"] == []
+    assert a1_test["root_at_infinity"] is False
+    assert curve398["generation"]["checker_sha256"] == EXPECTED_HASHES[
+        "elliptic-curves/cas/verify_icarm_curve398_rank30.py"
+    ]
+    assert curve398["generation"]["model_data_sha256"] == EXPECTED_HASHES[
+        "elliptic-curves/cas/icarm_curve398.py"
+    ]
+    assert curve398["generation"]["known_a1_reduction_sha256"] == EXPECTED_HASHES[
+        "elliptic-curves/data/icarm_curve398_known_a1_mod179.json"
+    ]
+
     print(
-        "PASS: pinned ECR30/ECR31 artifacts and their exact source provenance "
+        "PASS: pinned ECR30/ECR31 and curve-398 artifacts and their exact source provenance "
         "match; stored point, matrix-shape, torsion, and claim-boundary fields "
         "are internally consistent"
     )

@@ -24,6 +24,8 @@ import sys
 import time
 from typing import Any, Iterable, Sequence
 
+from sage.all import EllipticCurve, QQ
+
 
 ROOT = Path(__file__).resolve().parents[2]
 MANIFEST = ROOT / "artifacts/generated-results/elkies-k3-r17-prospective-crt-frozen-cohorts-v1.json"
@@ -114,15 +116,56 @@ def as_fraction(value) -> Fraction:
 
 
 def curve_python_data(curve, known):
-    model = tuple(as_fraction(value) for value in curve.a_invariants())
-    if model[:3] != (Fraction(0), Fraction(0), Fraction(0)):
-        raise ArithmeticError("the prospective family stopped using its exact short model")
+    local_minimal = curve.local_data(2).minimal_model()
+    isomorphisms = curve.isomorphisms(local_minimal)
+    if not isomorphisms:
+        raise ArithmeticError("no exact isomorphism to the deterministic p=2-minimal model")
+    to_local = isomorphisms[0]
+    from_local = ~to_local
+    local_points = tuple(to_local(point) for point in known)
+    a1, a2, a3, a4, a6 = map(QQ, local_minimal.a_invariants())
+    if any(value.denominator() != 1 for value in (a1, a2, a3, a4, a6)):
+        raise ArithmeticError("the deterministic p=2-minimal model is not integral")
+    b2 = a1 * a1 + 4 * a2
+    b4 = a1 * a3 + 2 * a4
+    b6 = a3 * a3 + 4 * a6
+    c4 = b2 * b2 - 24 * b4
+    c6 = -b2**3 + 36 * b2 * b4 - 216 * b6
+    model = tuple(
+        as_fraction(value) for value in (0, 0, 0, -27 * c4, -54 * c6)
+    )
     points = tuple(
-        (as_fraction(point[0]), as_fraction(point[1])) for point in known
+        (
+            as_fraction(36 * point[0] + 3 * b2),
+            as_fraction(108 * (2 * point[1] + a1 * point[0] + a3)),
+        )
+        for point in local_points
     )
     if len(points) != DIMENSION:
         raise ArithmeticError("the specialized generic basis stopped having dimension 17")
-    return model, points
+    short_curve = EllipticCurve(QQ, list(model))
+    if any(short_curve(point) == short_curve(0) for point in points):
+        raise ArithmeticError("a normalized generic point became the identity")
+
+    def short_to_original(point: tuple[Fraction, Fraction]):
+        short_x, short_y = map(QQ, point)
+        local_x = (short_x - 3 * b2) / 36
+        local_y = (short_y / 108 - a1 * local_x - a3) / 2
+        local_point = local_minimal(local_x, local_y)
+        original = from_local(local_point)
+        if original not in curve or to_local(original) != local_point:
+            raise ArithmeticError("short-to-original exact point transport failed")
+        return as_fraction(original[0]), as_fraction(original[1])
+
+    normalization = {
+        "source_model": [str(value) for value in curve.a_invariants()],
+        "deterministic_intermediate": "Sage local_data(2).minimal_model(), first exact isomorphism",
+        "p2_minimal_model": [str(value) for value in local_minimal.a_invariants()],
+        "certificate_short_model": [str(value) for value in model],
+        "certificate_short_model_sha256": canonical_hash([str(value) for value in model]),
+        "all_seventeen_points_transported_exactly": True,
+    }
+    return model, points, short_to_original, normalization
 
 
 def rounded_height_gram(height_gram, scale: int):
@@ -249,6 +292,7 @@ def certify_discoveries(
     already_selected,
     already_seen,
     prime_bound: int,
+    short_to_original,
 ):
     selected = list(already_selected)
     accepted = []
@@ -272,14 +316,17 @@ def certify_discoveries(
             model, trial, prime_bound=prime_bound
         )
         rank = combined_mod2_rank(signatures, len(trial))
+        original_point = short_to_original(point)
         if rank == len(trial):
             selected.append(point)
             accepted.append(
                 {
                     "stage": stage,
-                    "point": point_record(point),
+                    "short_certificate_point": point_record(point),
+                    "original_specialization_point": point_record(original_point),
                     "source_masks": sorted(discoveries[point]),
                     "exact_short_curve_equation_verified": True,
+                    "exact_original_specialization_equation_verified": True,
                     "nonmembership_in_preceding_certified_subgroup": True,
                     "Q_linear_independence_certified_by_primitive_relation_mod2": True,
                     "finite_reduction_certificate": certificate_record(
@@ -291,9 +338,11 @@ def certify_discoveries(
             uncertified.append(
                 {
                     "stage": stage,
-                    "point": point_record(point),
+                    "short_certificate_point": point_record(point),
+                    "original_specialization_point": point_record(original_point),
                     "source_masks": sorted(discoveries[point]),
                     "exact_short_curve_equation_verified": True,
+                    "exact_original_specialization_equation_verified": True,
                     "reason_not_counted": "FINITE_REDUCTION_RANK_DID_NOT_REACH_FULL_COLUMN_COUNT",
                     "achieved_rank": rank,
                     "column_count": len(trial),
@@ -307,7 +356,9 @@ def run_fibre(row: dict[str, Any], protocol: dict[str, Any], family) -> dict[str
     started_cpu = cpu_clock()
     parameter = row["parameter"]
     curve, known = family.specialize(parameter)
-    model, generic_points = curve_python_data(curve, known)
+    model, generic_points, short_to_original, normalization = curve_python_data(
+        curve, known
+    )
     generic_signatures = find_mod2_reduction_certificate(
         model,
         generic_points,
@@ -347,6 +398,7 @@ def run_fibre(row: dict[str, Any], protocol: dict[str, Any], family) -> dict[str
         already_selected=(),
         already_seen=set(),
         prime_bound=protocol["point_acceptance"]["finite_reduction_prime_bound"],
+        short_to_original=short_to_original,
     )
     stage_a_gain = len(stage_a_points)
 
@@ -394,6 +446,7 @@ def run_fibre(row: dict[str, Any], protocol: dict[str, Any], family) -> dict[str
             already_selected=selected,
             already_seen=stage_a_seen,
             prime_bound=protocol["point_acceptance"]["finite_reduction_prime_bound"],
+            short_to_original=short_to_original,
         )
         stage_b = {
             "gate_satisfied": True,
@@ -437,6 +490,7 @@ def run_fibre(row: dict[str, Any], protocol: dict[str, Any], family) -> dict[str
             )
         ),
         "failure": None,
+        "normalization": normalization,
         "generic_subgroup": {
             "rank": DIMENSION,
             "exact_short_curve_equation_and_section_identities_verified": True,
@@ -536,13 +590,9 @@ def run_single(index: int) -> None:
     manifest, protocol = load_inputs()
     if not 0 <= index < len(manifest["rows"]):
         raise ValueError("single index is outside the frozen manifest")
-    resource.setrlimit(
-        resource.RLIMIT_AS,
-        (
-            protocol["fibre_worker_envelope"]["address_space_bytes"],
-            protocol["fibre_worker_envelope"]["address_space_bytes"],
-        ),
-    )
+    address_space = protocol["fibre_worker_envelope"]["address_space_bytes"]
+    if address_space is not None:
+        resource.setrlimit(resource.RLIMIT_AS, (address_space, address_space))
     family = runpy.run_path(str(FAMILY_SOURCE))["Family"]()
     result = run_fibre(manifest_row(manifest["rows"][index], index), protocol, family)
     print("RESULT_JSON=" + canonical_text(result), flush=True)
@@ -717,6 +767,9 @@ def merge_chunks(chunk_dir: Path, chunk_count: int, output: Path):
 
 def run_positive_control(curve_id: int) -> None:
     unused_manifest, protocol = load_inputs()
+    address_space = protocol["fibre_worker_envelope"]["address_space_bytes"]
+    if address_space is not None:
+        resource.setrlimit(resource.RLIMIT_AS, (address_space, address_space))
     family = runpy.run_path(str(FAMILY_SOURCE))["Family"]()
     if curve_id not in family.target_parameters:
         raise ValueError("positive-control curve id is not a 074d9 target")

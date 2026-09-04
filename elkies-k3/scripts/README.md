@@ -3743,6 +3743,15 @@ and makes no enrichment, rank, or Selmer claim.  The post-experiment
 `audit_r17_prospective_crt_search_sensitivity.sage` replay finds no point on
 either known +12 control under the same bound, marking the outcome detector-limited.
 
+`build_r17_prospective_crt_half_lattice_protocol.sage` replaces only that
+failed detector, not the cohort.  It freezes the exact 43 generic norm-12
+classes, specialized shortest representatives, the common pointed-quartic
+minimize/reduce/search budget, and the exact Stage-A certificate gate for the
+full specialized ranking in Stage B.  The deterministic runner stores 32
+restartable local checkpoints and refuses a source hash different from the
+one pinned in the protocol.  The analyzer predeclares pooled A+B versus C
+Stage-A yield as primary and treats Stage B only as conditional recovery.
+
 ```bash
 sage -python audit_r17_prospective_crt_local_stability.sage --check
 python3 build_r17_prospective_crt_cohorts.py --check
@@ -3750,6 +3759,10 @@ python3 build_r17_prospective_crt_search_protocol.py --check
 sage -python audit_r17_prospective_crt_search_sensitivity.sage --check
 python3 analyze_r17_prospective_crt_experiment.py --check
 python3 -m unittest ../../elliptic-curves/tests/test_r17_prospective_crt_experiment.py
+sage -python build_r17_prospective_crt_half_lattice_protocol.sage --check
+sage -python run_r17_prospective_crt_half_lattice_search.sage \
+  --chunk-index 0 --chunk-count 32
+python3 -m unittest ../../elliptic-curves/tests/test_r17_prospective_crt_half_lattice_protocol.py
 ```
 
 See

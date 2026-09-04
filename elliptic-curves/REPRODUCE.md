@@ -332,6 +332,30 @@ sage -python elliptic-curves/scripts/verify_icarm_curve273_rank30_sage.py
 
 See [`ICARM_CURVE273_RANK30.md`](notes/ICARM_CURVE273_RANK30.md).
 
+### ICARM curve 398: rank at least 30 and X948/MW16 construction boundary
+
+Replay all thirty point identities, exact finite-quotient independence,
+trivial torsion, the singleton rational isogeny class, the complete semistable
+local data, bad-node point fingerprint, and the exact modulo-179 exclusion
+from the repository's one equation-explicit A1/MW16 family:
+
+```sh
+.venv/bin/python elliptic-curves/cas/verify_icarm_curve398_rank30.py --check
+```
+
+The fast arithmetic regression is:
+
+```sh
+.venv/bin/python -m unittest \
+  elliptic-curves/tests/test_icarm_curve398_rank30.py -v
+```
+
+This proves `rank E(Q) >= 30`.  The public announcement identifies the broad
+construction as a search through hundreds of MW16 `I2`/`III` fibrations on
+`X948`; the exact fibration, base parameter, section map, and unconditional
+rank upper bound remain unknown.  See
+[`ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md).
+
 ### Comparative height lattices: ranks 28--31
 
 PARI/GP is required.  Compute the 100-digit canonical height matrices, LLL

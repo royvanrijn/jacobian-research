@@ -1,5 +1,5 @@
 #!/usr/bin/env sage-python
-"""Scan the pinned 474-curve ICARM snapshot against the six norm-12 j-classes.
+"""Scan a pinned ICARM snapshot against the six norm-12 j-classes.
 
 The 43 compiled norm-twelve fibrations form six exact rational-PGL2 classes.
 It is therefore enough to solve one projective degree-24 j-preimage equation
@@ -7,7 +7,8 @@ per target curve and class.  A rational hit is transported to every native
 chart in its class, where the specialized short Weierstrass model is compared
 with the target over QQ and its exact quadratic-twist class is recorded.
 
-The original 2026-09-01 database response had SHA-256
+The default profile replays the original 2026-09-01 database response, whose
+SHA-256 was
 ``18699517...`` and contained curves 1 through 474.  The live append-only
 endpoint has since grown.  For a stable replay we select exactly ids 1..474
 and require the hash-pinned projection (id, curve key, a-invariants, creation
@@ -15,6 +16,11 @@ time) below.  Rank improvements made after the cutoff are rolled back from
 the public history when rank metadata is reported; they do not affect the
 equation scan.  The default replay uses the exact 474-row projection already
 stored in the certificate; ``--live-source`` is an explicit drift audit.
+
+``--refresh-573`` selects the separately hash-pinned 2026-09-04 response with
+ids 1 through 573 and writes the v2 refresh certificate.  Its default replay is
+likewise offline from the stored certificate; rebuilding it from the captured
+response requires ``--database``.
 """
 
 from __future__ import annotations
@@ -47,6 +53,10 @@ OUTPUT = (
     ROOT
     / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-database-sweep-v1.json"
 )
+REFRESH_OUTPUT = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-database-sweep-v2.json"
+)
 DATABASE_URL = "https://elliptic-rank.icarm.cloud/database.json"
 PINNED_DATABASE_DATE = "2026-09-01"
 PINNED_DATABASE_CUTOFF = "2026-09-01 00:00:00"
@@ -57,6 +67,23 @@ PINNED_DATABASE_SHA256 = (
 PINNED_EQUATION_PROJECTION_SHA256 = (
     "6c88a323d4e893072fc88613b002ad01f4bb7f6f2f5a059c77383fb92462adfb"
 )
+REFRESH_DATABASE_DATE = "2026-09-04"
+REFRESH_DATABASE_CUTOFF = "2026-09-05 00:00:00"
+REFRESH_DATABASE_COUNT = 573
+REFRESH_DATABASE_SHA256 = (
+    "e57d991894722f0e5ab2f548b77f09064a46ec926c93ef3730f47685e016aab0"
+)
+REFRESH_EQUATION_PROJECTION_SHA256 = (
+    "683c5f2a89203c2136fded912b1142594def4605e27ad3843d121675685529b9"
+)
+REFRESH_EXPECTED_CLASS_HIT_COUNTS = {
+    "norm12-orbit-074d9": 6,
+    "norm12-orbit-08234": 61,
+    "norm12-orbit-0e80b": 4,
+    "norm12-orbit-11952": 4,
+    "norm12-orbit-07ca9": 7,
+    "norm12-orbit-08f72": 4,
+}
 EXPECTED_REPRESENTATIVES = (
     "norm12-orbit-074d9",
     "norm12-orbit-08234",
@@ -155,14 +182,14 @@ def weierstrass_invariants(ainvs):
     }
 
 
-def pinned_rank_lower_bound(record) -> int:
+def pinned_rank_lower_bound(record, cutoff: str) -> int:
     rank = int(record["rank_lower_bound"])
     later_improvements = sorted(
         (
             item
             for item in record.get("history", [])
             if item.get("kind") == "rank_improved"
-            and item.get("at", "") >= PINNED_DATABASE_CUTOFF
+            and item.get("at", "") >= cutoff
         ),
         key=lambda item: item["at"],
     )
@@ -193,9 +220,20 @@ def load_pinned_records(
     *,
     live_source: bool,
     stored_certificate: Path,
+    schema: str,
+    database_count: int,
+    database_cutoff: str,
+    equation_projection_sha256: str,
+    raw_database_sha256: str,
 ):
     if database_path is not None:
         raw = database_path.read_bytes()
+        observed_raw_digest = hashlib.sha256(raw).hexdigest()
+        if observed_raw_digest != raw_database_sha256:
+            raise ArithmeticError(
+                "the supplied raw ICARM snapshot changed: "
+                f"{observed_raw_digest} != {raw_database_sha256}"
+            )
         payload = json.loads(raw)
         source_records = payload["curves"]
     elif live_source:
@@ -210,7 +248,7 @@ def load_pinned_records(
                 "or --live-source only to reconstruct it"
             )
         stored = json.loads(stored_certificate.read_text())
-        if stored.get("schema") != "elkies-k3.r17-norm12-icarm-database-sweep.v1":
+        if stored.get("schema") != schema:
             raise ArithmeticError("stored ICARM sweep has an unknown schema")
         stored_snapshot = stored.get("snapshot")
         if not isinstance(stored_snapshot, dict):
@@ -231,19 +269,19 @@ def load_pinned_records(
             for record in stored_rows
         ]
     records_by_id = {int(record["id"]): record for record in source_records}
-    expected_ids = set(range(1, PINNED_DATABASE_COUNT + 1))
+    expected_ids = set(range(1, database_count + 1))
     if not expected_ids.issubset(records_by_id):
         missing = sorted(expected_ids - set(records_by_id))
         raise ArithmeticError(f"the public source no longer contains pinned ids: {missing}")
     records = [records_by_id[curve_id] for curve_id in sorted(expected_ids)]
-    if any(record["created_at"] >= PINNED_DATABASE_CUTOFF for record in records):
+    if any(record["created_at"] >= database_cutoff for record in records):
         raise ArithmeticError("a pinned curve id has a creation time after the cutoff")
     projection = equation_projection(records)
     observed_projection_digest = projection_digest(projection)
-    if observed_projection_digest != PINNED_EQUATION_PROJECTION_SHA256:
+    if observed_projection_digest != equation_projection_sha256:
         raise ArithmeticError(
             "the pinned ICARM curve-equation projection changed: "
-            f"{observed_projection_digest} != {PINNED_EQUATION_PROJECTION_SHA256}"
+            f"{observed_projection_digest} != {equation_projection_sha256}"
         )
     return records
 
@@ -431,15 +469,42 @@ def main() -> None:
     parser.add_argument(
         "--live-source",
         action="store_true",
-        help="recover ids 1..474 from the current append-only endpoint",
+        help="recover the selected id prefix from the current append-only endpoint",
     )
-    parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument(
+        "--refresh-573",
+        action="store_true",
+        help="use the hash-pinned 2026-09-04 ids-1-through-573 refresh profile",
+    )
+    parser.add_argument("--output", type=Path)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     if args.database is not None and args.live_source:
         parser.error("--database and --live-source are mutually exclusive")
     args.atlas = args.atlas.resolve()
-    args.output = args.output.resolve()
+    if args.refresh_573:
+        database_date = REFRESH_DATABASE_DATE
+        database_cutoff = REFRESH_DATABASE_CUTOFF
+        database_count = REFRESH_DATABASE_COUNT
+        raw_database_sha256 = REFRESH_DATABASE_SHA256
+        equation_projection_sha256 = REFRESH_EQUATION_PROJECTION_SHA256
+        schema = "elkies-k3.r17-norm12-icarm-database-sweep.v2"
+        expected_class_hit_counts = REFRESH_EXPECTED_CLASS_HIT_COUNTS
+        expected_native_twist_counts = Counter({"QQ_ISOMORPHIC_UNTWISTED": 479})
+        default_output = REFRESH_OUTPUT
+        recovery_cutoff_label = database_cutoff
+    else:
+        database_date = PINNED_DATABASE_DATE
+        database_cutoff = PINNED_DATABASE_CUTOFF
+        database_count = PINNED_DATABASE_COUNT
+        raw_database_sha256 = PINNED_DATABASE_SHA256
+        equation_projection_sha256 = PINNED_EQUATION_PROJECTION_SHA256
+        schema = "elkies-k3.r17-norm12-icarm-database-sweep.v1"
+        expected_class_hit_counts = EXPECTED_CLASS_HIT_COUNTS
+        expected_native_twist_counts = Counter({"QQ_ISOMORPHIC_UNTWISTED": 376})
+        default_output = OUTPUT
+        recovery_cutoff_label = database_date
+    args.output = (args.output or default_output).resolve()
 
     atlas = json.loads(args.atlas.read_text())
     if atlas["atlas"]["chart_count"] != 43:
@@ -451,19 +516,25 @@ def main() -> None:
     if [len(record["members"]) for record in classes] != [8, 5, 18, 6, 2, 4]:
         raise ArithmeticError("the six rational-PGL2 class sizes changed")
 
-    lineage = json.loads(LINEAGE.read_text())
-    lineage_snapshot = lineage["snapshot"]
-    if (
-        lineage_snapshot["database_curve_count"] != PINNED_DATABASE_COUNT
-        or lineage_snapshot["database_sha256"] != PINNED_DATABASE_SHA256
-        or lineage_snapshot["date"] != PINNED_DATABASE_DATE
-    ):
-        raise ArithmeticError("the original pinned ICARM snapshot provenance changed")
+    if not args.refresh_573:
+        lineage = json.loads(LINEAGE.read_text())
+        lineage_snapshot = lineage["snapshot"]
+        if (
+            lineage_snapshot["database_curve_count"] != PINNED_DATABASE_COUNT
+            or lineage_snapshot["database_sha256"] != PINNED_DATABASE_SHA256
+            or lineage_snapshot["date"] != PINNED_DATABASE_DATE
+        ):
+            raise ArithmeticError("the original pinned ICARM snapshot provenance changed")
 
     records = load_pinned_records(
         args.database.resolve() if args.database else None,
         live_source=args.live_source,
         stored_certificate=args.output,
+        schema=schema,
+        database_count=database_count,
+        database_cutoff=database_cutoff,
+        equation_projection_sha256=equation_projection_sha256,
+        raw_database_sha256=raw_database_sha256,
     )
     records_by_id = {int(record["id"]): record for record in records}
     target_invariants = {
@@ -586,7 +657,9 @@ def main() -> None:
                 rational_hits.append(
                     {
                         "curve_id": curve_id,
-                        "snapshot_rank_lower_bound": pinned_rank_lower_bound(record),
+                        "snapshot_rank_lower_bound": pinned_rank_lower_bound(
+                            record, database_cutoff
+                        ),
                         "submitter": record.get("submitter"),
                         "representative": representative,
                         "representative_frame_class": charts_by_label[representative][
@@ -603,7 +676,9 @@ def main() -> None:
         decision_ledger.append(
             {
                 "curve_id": curve_id,
-                "snapshot_rank_lower_bound": pinned_rank_lower_bound(record),
+                "snapshot_rank_lower_bound": pinned_rank_lower_bound(
+                    record, database_cutoff
+                ),
                 "classes": curve_decisions,
             }
         )
@@ -613,14 +688,17 @@ def main() -> None:
                 flush=True,
             )
 
-    if miss_count + class_hit_count != PINNED_DATABASE_COUNT * len(classes):
+    if miss_count + class_hit_count != database_count * len(classes):
         raise ArithmeticError("the class decision count is inconsistent")
 
     hit_ids = sorted({record["curve_id"] for record in rational_hits})
     class_hit_counts = Counter(
         record["representative"] for record in rational_hits
     )
-    if dict(class_hit_counts) != EXPECTED_CLASS_HIT_COUNTS:
+    if (
+        expected_class_hit_counts is not None
+        and dict(class_hit_counts) != expected_class_hit_counts
+    ):
         raise ArithmeticError("the pinned class-hit distribution changed")
     if len(rational_hits) != class_hit_count or len(hit_ids) != class_hit_count:
         raise ArithmeticError(
@@ -628,7 +706,10 @@ def main() -> None:
         )
     if {273, 302, 398}.intersection(hit_ids):
         raise ArithmeticError("a pinned rank-30 or rank-31 curve acquired a hit")
-    if chart_twist_counts != Counter({"QQ_ISOMORPHIC_UNTWISTED": 376}):
+    if (
+        expected_native_twist_counts is not None
+        and chart_twist_counts != expected_native_twist_counts
+    ):
         raise ArithmeticError("the pinned native-chart twist distribution changed")
     wgxli_component_results = []
     for component in WGXLI_COMPONENTS:
@@ -651,20 +732,22 @@ def main() -> None:
             "id": int(record["id"]),
             "curve_key": record["curve_key"],
             "ainvs": record["ainvs"],
-            "snapshot_rank_lower_bound": pinned_rank_lower_bound(record),
+            "snapshot_rank_lower_bound": pinned_rank_lower_bound(
+                record, database_cutoff
+            ),
             "submitter": record.get("submitter"),
             "created_at": record["created_at"],
         }
         for record in records
     ]
     payload = {
-        "schema": "elkies-k3.r17-norm12-icarm-database-sweep.v1",
+        "schema": schema,
         "status": "PASS_EXACT_COMPLETE_PINNED_ICARM_J_PREIMAGE_AND_TWIST_SWEEP",
         "outcome": {
-            "pinned_curve_count": PINNED_DATABASE_COUNT,
+            "pinned_curve_count": database_count,
             "distinct_target_j_invariant_count": distinct_j_count,
             "rational_pgl2_j_map_class_count": len(classes),
-            "class_preimage_decision_count": PINNED_DATABASE_COUNT * len(classes),
+            "class_preimage_decision_count": database_count * len(classes),
             "class_rational_hit_count": class_hit_count,
             "class_hit_counts_by_representative": dict(class_hit_counts),
             "class_miss_count": miss_count,
@@ -674,20 +757,21 @@ def main() -> None:
             "wgxli_components": wgxli_component_results,
         },
         "snapshot": {
-            "original_database_date": PINNED_DATABASE_DATE,
-            "original_raw_database_sha256": PINNED_DATABASE_SHA256,
-            "original_curve_count": PINNED_DATABASE_COUNT,
-            "original_curve_ids": "1..474",
+            "original_database_date": database_date,
+            "original_raw_database_sha256": raw_database_sha256,
+            "original_curve_count": database_count,
+            "original_curve_ids": f"1..{database_count}",
             "equation_projection_fields": [
                 "id",
                 "curve_key",
                 "ainvs",
                 "created_at",
             ],
-            "equation_projection_sha256": PINNED_EQUATION_PROJECTION_SHA256,
+            "equation_projection_sha256": equation_projection_sha256,
             "recovery_source": DATABASE_URL,
             "recovery_rule": (
-                "select ids 1 through 474, require creation before 2026-09-01, "
+                f"select ids 1 through {database_count}, require creation before "
+                f"{recovery_cutoff_label}, "
                 "then require the pinned equation-projection SHA-256"
             ),
             "curves": snapshot_curves,
@@ -738,22 +822,30 @@ def main() -> None:
         },
         "claim_boundary": {
             "proved": [
-                "all 474 curve equations in the pinned 2026-09-01 ICARM snapshot are decided against all six rational-PGL2 j-map classes",
+                f"all {database_count} curve equations in the pinned {database_date} ICARM snapshot are decided against all six rational-PGL2 j-map classes",
                 "every rational j-preimage found by the sweep has an exact native-chart twist classification",
                 "every declared miss has either a projective finite-field no-root witness or an exact QQ rational-root factorization",
             ],
             "not_proved": [
                 "absence from rootless fibrations outside the certified 43-chart norm-twelve atlas",
                 "any Mordell-Weil rank upper bound",
-                "that later ICARM curves with ids above 474 miss these six classes",
+                f"that later ICARM curves with ids above {database_count} miss these six classes",
             ],
         },
-        "inputs": {
-            relative(args.atlas): digest(args.atlas),
-            relative(LINEAGE): digest(LINEAGE),
-            "ICARM_database_original_raw_sha256": PINNED_DATABASE_SHA256,
-            "ICARM_ids_1_through_474_equation_projection_sha256": PINNED_EQUATION_PROJECTION_SHA256,
-        },
+        "inputs": (
+            {
+                relative(args.atlas): digest(args.atlas),
+                "ICARM_database_original_raw_sha256": raw_database_sha256,
+                f"ICARM_ids_1_through_{database_count}_equation_projection_sha256": equation_projection_sha256,
+            }
+            if args.refresh_573
+            else {
+                relative(args.atlas): digest(args.atlas),
+                relative(LINEAGE): digest(LINEAGE),
+                "ICARM_database_original_raw_sha256": PINNED_DATABASE_SHA256,
+                "ICARM_ids_1_through_474_equation_projection_sha256": PINNED_EQUATION_PROJECTION_SHA256,
+            }
+        ),
         "software_assumptions": {
             "sage_version": SAGE_VERSION,
             "required_features": [
@@ -764,6 +856,7 @@ def main() -> None:
         },
         "reproducing_command": (
             "sage -python elkies-k3/scripts/certify_r17_norm12_icarm_database_sweep.sage"
+            + (" --refresh-573" if args.refresh_573 else "")
         ),
     }
     serialized = json.dumps(payload, indent=2, sort_keys=True) + "\n"
@@ -776,9 +869,9 @@ def main() -> None:
     print(
         "R17ICARMSWEEP|curves={}|j_classes={}|decisions={}|hit_curves={}|"
         "class_hits={}|native_twists={}|status=PROVED|output={}".format(
-            PINNED_DATABASE_COUNT,
+            database_count,
             len(classes),
-            PINNED_DATABASE_COUNT * len(classes),
+            database_count * len(classes),
             ",".join(map(str, hit_ids)) if hit_ids else "none",
             class_hit_count,
             ",".join(f"{key}:{value}" for key, value in sorted(chart_twist_counts.items())),

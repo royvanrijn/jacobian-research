@@ -33,6 +33,46 @@ and document the exact command and whole-file SHA-256.
   `aae62d0a582aa55f0c16d7bd0fbd728e6a3f274fa64ce6b826e0873578b3f599`,
   and `fbdfa24b14bc86ee33a576f5e3c3e894dd91dd5e0d1fbfb47bf208e167a7282a`.
 
+- `elkies-k3-r17-prospective-crt-half-lattice-protocol-v3.json` freezes the
+  positive-control-gated replacement detector before opening any new outcome
+  on the original 2,560-fibre CRT cohort.  Stage A uses the 43 exact generic
+  norm-12 classes; Stage B is triggered only by an exactly certified Stage-A
+  quotient direction.  The artifact pins every cover bound, exact acceptance
+  rule, executable, censoring rule, and primary contrast.  Replay it with
+  `sage -python elkies-k3/scripts/build_r17_prospective_crt_half_lattice_protocol.sage --check`.
+  Its protocol-definition hash is
+  `9584174de7625031e5f95ce73d0117a9caf8341d91063061ea672f2e4e36e521`
+  and its whole-file SHA-256 is
+  `a402b1a286dd72ad579c753315a55309a92d03886f60ac8fee84e434119da626`.
+
+- `elliptic-curves/curve385_iterated_half_lattice_blind_v1.json` records the
+  public-fixture-blind `M17 -> M20 -> M29` recovery. The only iterated round
+  searches all 301 old-deep-43 lifts with a nonzero word in the three new
+  quotient bits; every quartic completes at the declared bound. Its SHA-256 is
+  `356001898f738f607d984e081663a015825e11de0c606d35055af156eb2d7502`.
+  `elliptic-curves/curve385_iterated_half_lattice_verification_v1.json` is the
+  post-freeze exact public comparison: mutual determinant-one coordinate
+  matrices prove equality of the blind and displayed public `M29` subgroups.
+  Its SHA-256 is
+  `b281556f5d08250f67b69b2c62a640ac17ba4d03325e4402e85c7d60882c3ae5`.
+  Neither artifact proves stability at `M29` or an exact rank upper bound.
+  `elliptic-curves/curve385_quotient_weight_profile_v1.json` is the exact
+  posthoc coordinate-rank analysis of that blind ledger: weight one has gain
+  seven, weight at most two has gain nine, and weight three has no marginal
+  gain. Its whole-file SHA-256 is
+  `c321d1b40d9e5fc77ebff64e5d6584feeab5f503b13eadda4f6d524d0e38162a`.
+
+- `elliptic-curves/curve385_sparse_quotient_rank32_protocol_v1.json` freezes
+  the prospective staged search before opening any new rank-32 outcome.
+  Natural weights one and two cost 516 and 2,838 new charts; exact group growth
+  restarts at weight one, and two precommitted alternate quotient bases precede
+  weight three. Replay with
+  `python3 elliptic-curves/cas/build_curve385_sparse_quotient_rank32_protocol.py --check`.
+  Its protocol-definition hash is
+  `5723679da2907e036095f90376cdabde457a4f7ba5bc284ad4a4ca3edea1aa37`
+  and its whole-file SHA-256 is
+  `2c9150f50f305b8aa3763590cd5e81c4d7e121f9373177827780789ce472834f`.
+
 - `elliptic-curves/icarm_curve302_point_cloud_v1.json` records canonical
   mod-2 and mod-3 finite-reduction row spaces through prime 1000, exact
   denominator and squareclass diagnostics, frozen-training held-out rational
@@ -42,6 +82,17 @@ and document the exact command and whole-file SHA-256.
   elliptic-curves/cas/analyze_icarm_curve302_point_cloud.py --check`; its
   whole-file SHA-256 is
   `26b7b646cb3d282bf0b5811a9e923a7143303ff56dafe59c69f735ca5b55fa3d`.
+
+- `elliptic-curves/icarm_curve398_rank30_and_construction_v1.json` records all
+  thirty exact point identities, a rank-30 finite-reduction certificate,
+  trivial torsion, the singleton rational isogeny class, the full semistable
+  local fingerprint, bad-node incidence, and a modulo-179 exclusion from the
+  repository's one equation-explicit A1/MW16 family.  The public X948/MW16
+  method is recorded separately from the still-unknown exact fibration and
+  parameter.  Replay with
+  `.venv/bin/python elliptic-curves/cas/verify_icarm_curve398_rank30.py
+  --check`; its whole-file SHA-256 is
+  `1fd4f23ff2167321be0e3a7bf12b693f0a9ebe26d1e2125ce131da30ad05bf60`.
 
 <!-- status-consumer: EC-ICARM-CURVE302-POINT-CLOUD 1e1eb37dd6d4350f -->
 

@@ -59,6 +59,13 @@ no enrichment signal at that bound and no rank or Selmer upper bound.  The
 same call also redetects no escape on either known +12 control, so the result
 is detector-limited; see
 [`R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md`](R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md).
+The fixture-blind half-lattice replay passes the replacement sensitivity gate
+on those controls.  Its separately hashed two-stage protocol now reuses the
+same frozen 2,560 fibres: fixed generic-deepest 43 first, and the full
+specialized ranking/union only after an exactly certified Stage-A escape.
+The prospective run is bounded and checkpointed; it does not alter the old
+zero-event ledger or authorize a cohort claim before the new ledger is
+complete.
 Detector v2 now freezes a hash-only balanced Stage-1/Stage-2 sample and an
 exact quotient-aware all-place matrix interface, but its two record-control
 descents remain blocked at the cubic `S`-class/unit step.  Stage 1 has not
@@ -99,6 +106,13 @@ and the batch
 - **Published R17 over `QQ`:** rootless `24 I1`, Picard rank 19, saturated determinant-948 Mordell–Weil lattice of rank 17.
 - **Alternate Q80 over `QQ`:** the canonical equation route is now the direct degree-two hop `norm12-orbit-11952` from published R17. It gives a polynomial K3 model with `(deg A,deg B,deg Delta)=(8,12,24)`, `24 I1`, the alternate determinant-948 rootless frame, and 17 saturated rational sections.
 - **Complete norm-twelve public-curve atlas:** all 43 shared-zero degree-two charts form six rational-`PGL2` `j`-classes, and all 474 equations in the pinned ICARM snapshot have exact preimage decisions. There are 69 rational hits and 2,775 misses; all 376 native chart/fibre comparisons are untwisted. Every wgxli component is recognized. Curve 12 is the first native alternate-Q80 rank-at-least-29 control, with exact displayed quotient `Z^12`; curves 273, 302, and 398 miss all six classes.
+- **Curve 398 MW16 boundary:** the Elkies--Klagsbrun announcement places this
+  rank-at-least-30 curve on an `I2`/`III` fibration of `X948`, hence generic
+  MW rank 16 by Shioda--Tate.  The exact fibration, parameter, and sixteen
+  specialized sections remain unpublished.  A projective no-root witness
+  modulo 179 excludes the one equation-explicit fixed-corridor A1/MW16 family,
+  but not the hundreds of other A1 fibrations in the announced search.  See
+  [`../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md).
 - **Native ICARM calibration:** seven priority fibres now have exact native displayed quotients and exhaustive fixed-cover visibility spans: curve 12 has `0/12`, curve 395 has `2/11`, curves 363/364/378 have `2/10`, `1/11`, and `6/7`, and curves 393/404 have `2/9` and `1/10`. Curves 12, 395, 363, 364, and 378 also have exact fitted norm-eight genus-one signatures for every quotient-basis direction (51 directions total). The highest unresolved rank tranche is now transported as well: curves 11, 391, and 423 each have displayed quotient `Z^11`. All 69 recognized fibres have pinned local/Nagao feature rows; fifteen now have exact quotient labels, while the other 54 remain `UNKNOWN`. See [`R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md`](R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md).
 <!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 6b2a0546b65246d5 -->
 <!-- status-consumer: EC-K3-R17-NORM12-HIGHEST-RANK-TRANSPORTS c4c8a81fc735fea2 -->

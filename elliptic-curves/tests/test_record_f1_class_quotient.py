@@ -42,6 +42,14 @@ class RecordF1ClassQuotientTests(unittest.TestCase):
             2,
         )
 
+    def test_one_sided_bad_span_is_subtracted_in_quotient(self):
+        self.assertEqual(self.module.quotient_dimension_upper(22, 10), 12)
+        with self.assertRaises(ArithmeticError):
+            self.module.quotient_dimension_upper(21, 22)
+        source = SOURCE.read_text()
+        self.assertIn("C'/B' -> C/B is still surjective", source)
+        self.assertNotIn("no subtraction is allowed", source)
+
     def test_strict_marker_parser(self):
         protocol = self.module.PROTOCOL
         log = "\n".join(
