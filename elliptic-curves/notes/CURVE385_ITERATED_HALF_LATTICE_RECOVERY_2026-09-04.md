@@ -81,6 +81,14 @@ words are deduplicated exactly against earlier stages.  Timeouts, PARI
 failures, unclassified points, stage limits, and completed sparse misses remain
 fail-closed and provide no rank upper bound.
 
+The primary natural-basis campaign has now completed: all 3,354 planned charts
+are accounted for by 3,116 fresh completed searches and 238 exact prior-chart
+skips, with zero timeouts or PARI failures.  Both exact classifiers leave the
+rank-29 basis unchanged.  This bounded no-growth result and its complete
+compressed ledger are recorded in
+[`CURVE385_SPARSE_QUOTIENT_RANK32_PRIMARY_2026-09-04.md`](CURVE385_SPARSE_QUOTIENT_RANK32_PRIMARY_2026-09-04.md).
+Rank at least 32 remains open.
+
 ## Frozen search
 
 The blind runner reads only

@@ -1,0 +1,128 @@
+{
+  "campaign": {
+    "basis_sha256": "5a6d5ff70b409de413722e35b71e430025852639a71a166f2b7cfc288f27a230",
+    "curve_id": "curve385-rank29",
+    "distinct_discoveries_with_primary_campaign_source": 1445,
+    "distinguished_generic_deep_class_count": 43,
+    "exact_group_growth": false,
+    "final_certified_rank_lower_bound": 29,
+    "final_discovery_count": 1656,
+    "new_distinct_discoveries_beyond_source_ledger": 1360,
+    "quotient_bit_count": 12,
+    "stage_summaries": [
+      {
+        "basis_id": "natural",
+        "basis_weight_shell": [
+          1
+        ],
+        "bounded_complete_count": 394,
+        "charts_returning_finite_points": 111,
+        "cover_records_sha256": "4a26edacfde1fa600dfdb430cf29e4e38a4ac5c44017689679d9942a41630a72",
+        "cpu_seconds_completed_searches": 144.22653400000007,
+        "distinct_discoveries_with_stage_source": 276,
+        "exact_integral_relation_count": 545,
+        "exact_integral_relations_sha256": "e7e1beecd9d174f10c2424bb315aa72bb5660c94905c2a60d2662cee0c3267ef",
+        "finite_index_saturation_event_count": 0,
+        "finite_point_occurrence_count": 296,
+        "fresh_search_count": 394,
+        "id": "natural-weight-1",
+        "index": 1,
+        "new_independent_direction_count": 0,
+        "pari_failure_count": 0,
+        "planned_chart_count": 516,
+        "previously_searched_exact_chart_count": 122,
+        "rank_after": 29,
+        "rank_before": 29,
+        "ranked_lifts_sha256": "f0823e4d68db94d26a43657cef628dc2478a5913b521944f5fe5cf5a2113e6f8",
+        "skipped_chart_keys_sha256": "89443185c7c911770f1d4c9be45a368f6155f63eed9a9164e31cf8a37d989917",
+        "timeout_count": 0,
+        "wall_seconds": 145.73698735237122
+      },
+      {
+        "basis_id": "natural",
+        "basis_weight_shell": [
+          2
+        ],
+        "bounded_complete_count": 2722,
+        "charts_returning_finite_points": 554,
+        "cover_records_sha256": "3ad8787ebb7a19ab1751c7585b5bd328c90936341cc5d01c03a13d2e6bf25d90",
+        "cpu_seconds_completed_searches": 1009.1918190000007,
+        "distinct_discoveries_with_stage_source": 1233,
+        "exact_integral_relation_count": 1642,
+        "exact_integral_relations_sha256": "68337964e1dbe9c23403be8d2bfa6835f72917faffd39e8f3740f55e6258cdda",
+        "finite_index_saturation_event_count": 0,
+        "finite_point_occurrence_count": 1376,
+        "fresh_search_count": 2722,
+        "id": "natural-weight-2",
+        "index": 2,
+        "new_independent_direction_count": 0,
+        "pari_failure_count": 0,
+        "planned_chart_count": 2838,
+        "previously_searched_exact_chart_count": 116,
+        "rank_after": 29,
+        "rank_before": 29,
+        "ranked_lifts_sha256": "076a5f419f782ff17b4c0a70985415f16e6e6c44cfbdc5f7ba5a39cc1891cd13",
+        "skipped_chart_keys_sha256": "32b0365b4c883b4a7eac743b16e75781fd5718bc7ed972a620dc330602a6e446",
+        "timeout_count": 0,
+        "wall_seconds": 1021.4516305923462
+      }
+    ],
+    "starting_certified_rank_lower_bound": 29,
+    "starting_discovery_count": 296,
+    "target_rank_lower_bound": 32,
+    "target_reached": false,
+    "total_charts_returning_finite_points": 665,
+    "total_finite_point_occurrence_count": 1672,
+    "total_fresh_search_count": 3116,
+    "total_planned_chart_count": 3354,
+    "total_previously_searched_exact_chart_count": 238
+  },
+  "claim_boundary": [
+    "This is complete accounting only for the two predeclared primary sparse stages at the recorded per-chart bounds.",
+    "The bounded miss is not a rank upper bound and does not prove that the displayed M29 subgroup is saturated in E(Q).",
+    "The campaign found many rational points, and exact integral relations place every discovered point in the same M29 subgroup.",
+    "Rank at least 32 remains open; alternate quotient bases and higher natural weights were not searched in this campaign."
+  ],
+  "configuration": {
+    "checkpoint_every_completed_searches": 10,
+    "gp_stack_bytes_each_quartic": 1000000000,
+    "height_bound_each_quartic": 100000,
+    "maximum_lattice_states": 4,
+    "maximum_stage_each_lattice_state": 2,
+    "relation_chunk_size": 64,
+    "relation_timeout_seconds_each_chunk": 180.0,
+    "retries": 0,
+    "wall_timeout_seconds_each_quartic": 15.0
+  },
+  "frozen_inputs": {
+    "blind_M29": {
+      "path": "artifacts/generated-results/elliptic-curves/curve385_iterated_half_lattice_blind_v1.json",
+      "sha256": "356001898f738f607d984e081663a015825e11de0c606d35055af156eb2d7502"
+    },
+    "sparse_protocol": {
+      "definition_sha256": "5723679da2907e036095f90376cdabde457a4f7ba5bc284ad4a4ca3edea1aa37",
+      "path": "artifacts/generated-results/elliptic-curves/curve385_sparse_quotient_rank32_protocol_v1.json",
+      "sha256": "2c9150f50f305b8aa3763590cd5e81c4d7e121f9373177827780789ce472834f"
+    }
+  },
+  "full_ledger": {
+    "gzip_bytes": 3221508,
+    "gzip_sha256": "08a2e416255910f733ef98283332e3a60a947350646329e4e2045cbc08d802c0",
+    "path": "artifacts/generated-results/elliptic-curves/curve385_sparse_quotient_rank32_primary_ledger_v1.json.gz",
+    "uncompressed_bytes": 27761376,
+    "uncompressed_sha256": "17600ab552c8c4c5184d8ec02c6743c475424998e2672a8eeacc3ee75df5b77d"
+  },
+  "interpretation": "Under the frozen per-chart bounds, natural quotient weights one and two produce no exact rank or finite-index enlargement of the discovered M29 subgroup.",
+  "next_precommitted_stage": {
+    "id": "alternate-a-weight-at-most-2",
+    "index": 3,
+    "new_chart_count": 3268,
+    "requires_explicit_stage_limit_escalation": true
+  },
+  "program": {
+    "path": "elliptic-curves/cas/promote_curve385_sparse_quotient_rank32_primary.py",
+    "sha256": "2e09a3cd6331505c199b218ef664a4a5dead728293250cfc0e6d1c86b245a4a0"
+  },
+  "schema": "elliptic-curves.curve385-sparse-quotient-rank32-primary-result.v1",
+  "status": "PASS_COMPLETE_PRIMARY_SPARSE_CAMPAIGN_BOUNDED_NO_GROWTH"
+}
