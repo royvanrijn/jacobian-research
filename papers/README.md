@@ -52,11 +52,11 @@ winding--profile--radial family of failures, and the exact dimensional
 classification of GVC.  It is an active internal draft and has not been
 externally reviewed.
 
-The companion `formal/gvc` package is currently a partial Lean audit, not a
-complete certificate of the headline theorems.  It verifies the concrete
-cusp identity and all-order endpoint-coefficient mechanism and makes the
-remaining counterexample and binary-envelope bridges explicit; see its
-README for the exact boundary.
+The companion `formal/gvc` package verifies the ternary counterexample,
+the manuscript's full profile-family theorem, and failure in every
+characteristic-zero dimension `n >= 3`. The binary theorem and hence the
+complete dimensional classification remain only partially formalized;
+see its README for the exact remaining bridges.
 
 ## Companion draft
 

@@ -26,10 +26,12 @@ Thus the four observed jump strata are strictly separated by this lower bound.
 The cross-frame curve-12 value is `11`, matching curve 356 and exceeding the
 curve-385 value `10` only by the unavoidable signature/unit correction.
 
-This is a compelling explanation of the class-group wall: the known
-exceptional points themselves force a large residual 2-class image before a
-complete descent begins.  It is not yet a prospective rank predictor.  The
-exceptional points, and hence the known jump, are inputs to the invariant.
+This localizes the class-group wall: the known exceptional points themselves
+force a large residual 2-class image before a complete descent begins, and
+they do so without creating new bad-prime valuation directions modulo the
+generic subgroup.  It does **not** explain why those exceptional rational
+points occur.  It is not yet a prospective rank predictor: the exceptional
+points, and hence the known jump, are inputs to the invariant.
 
 The complete machine-readable data set is
 [`../artifacts/generated-results/elkies-k3-r17-kummer-classgroup-pressure-comparison-v1.json`](../artifacts/generated-results/elkies-k3-r17-kummer-classgroup-pressure-comparison-v1.json).
@@ -108,6 +110,51 @@ is zero in every row, so the displayed residual bound simplifies to
 That identity is why the finite-panel tracking is exact and also why it cannot
 yet be advertised as independent prediction.
 
+## What the theorem localizes
+
+The zero residual valuation-rank increment is the main structural observation,
+not the subsequent ordering of the six lower bounds.  On this panel, once that
+increment vanishes, the lower bound is forced to be
+
+\[
+ \operatorname{jump}-(r_1+r_2-1).
+\]
+
+Thus the calculation says where much of the already-known exceptional Kummer
+information lives: after adjustment by generic point classes it is
+everywhere-even, and—up to the unit ambiguity—maps to genuinely global cubic
+2-class directions.  The large jumps are not being accounted for by an
+expanding collection of bad-prime valuation-parity directions.
+
+The converse is a different problem.  Since the 2-division cubic is
+irreducible, `E(Q)[2]=0`.  For a known rank-`r` subgroup `G` whose Kummer image
+has dimension `r`, the standard exact sequence gives
+
+\[
+ \dim_{\mathbf F_2}\bigl(\operatorname{Sel}_2(E)/\delta G\bigr)
+ = (\operatorname{rank}E(\mathbf Q)-r)+\dim_{\mathbf F_2}\Sha(E)[2].
+\]
+
+Consequently even a complete large residual Selmer space would not determine
+how many directions lift to rational points.  The theorem therefore explains
+why a full-BNF front door encounters substantial global 2-class information;
+it does not explain the production of Mordell--Weil directions rather than
+Tate--Shafarevich classes.
+
+Equivalently, the constructive target inside the residual Selmer quotient is
+the globally soluble subspace
+
+\[
+ W_G=
+ \frac{\delta(E(\mathbf Q)/2E(\mathbf Q))}{\delta(G/2G)},
+ \qquad
+ \dim_{\mathbf F_2}W_G=\operatorname{rank}E(\mathbf Q)-r.
+\]
+
+A Selmer class lies in this subspace exactly when its associated 2-covering
+has a rational point.  The missing reverse implication is therefore to make
+`W_G` large, not merely to make the ambient residual Selmer quotient large.
+
 ## Alternate-Q80 basis audit
 
 Curve 12 requires a genuine basis change; its first seventeen published
@@ -139,20 +186,51 @@ d^2 = denominator(4*x(P)),
 and verifies that each square correction is supported only above the declared
 bad primes.
 
-## Interpretation and next test
+## Interpretation and next experiment
 
-The theorem supplies the missing explanatory layer for the failed full-BNF
-front door.  A `+12` record does not merely coexist with a large auxiliary
-class group: its certified exceptional Kummer classes already force ten or
-eleven independent residual 2-class directions after the generic contribution
-is removed.  Native alternate Q80 reproduces the phenomenon, so it is not an
-artifact of the `074d9` chart.
+The theorem supplies a localization layer for the failed full-BNF front door.
+A `+12` record does not merely coexist with a large auxiliary class group: its
+certified exceptional Kummer classes already force ten or eleven independent
+residual 2-class directions after the generic contribution is removed.  Native
+alternate Q80 reproduces the phenomenon, so it is not an artifact of the
+`074d9` chart.  The strict separation of the observed jump strata is largely a
+formal consequence of the zero valuation-rank increment and the unit
+correction; it is not a separate mechanism for the jumps.
 
-What remains unproved is the predictive direction.  A valid next test must
-construct a comparable class/S-class feature before revealing exceptional
-points or the fibre's jump, then evaluate it on a frozen holdout panel.  The
-present six rows cannot support a population-level correlation, a Selmer upper
-bound, or a rank-search gate.
+A frozen prospective class/S-class feature could still be useful for candidate
+scheduling, but another scalar class-group statistic cannot by itself supply
+the missing implication.  The prospective small-field laboratory makes the
+explicitly different localized choice
+
+\[
+ A_S=\operatorname{Cl}(K)/\langle S\rangle,
+ \qquad
+ A_S[2]/\langle c_S(G)\rangle.
+\]
+
+This is not `Pi(B,G)` above.  Reducing original class coordinates modulo two
+does not compute it in the presence of higher 2-power torsion, and localizing
+at `S` must not be identified with first taking the valuation kernel in the
+full class group.  Any association found for this localized feature therefore
+has its own interpretation.
+
+The constructive experiment should instead:
+
+1. compute a certified residual 2-Selmer basis modulo the specialized generic
+   subgroup;
+2. materialize basis classes and selected compatible combinations as explicit
+   2-coverings, with complete local-solubility certificates;
+3. use certified Cassels--Tate information as an obstruction and prioritization
+   layer, without promoting its radical to rational points; and
+4. search the compatible coverings for rational points, map every witness back
+   to `E(Q)`, certify independence modulo the growing known subgroup, and
+   iterate.
+
+For an `MW17` rank-32 target, success means producing fifteen independent
+rational directions, not merely exhibiting a residual Selmer space of
+dimension at least fifteen.  The present six rows support neither that
+construction nor a population-level correlation, Selmer upper bound, or
+rank-search gate.
 
 ## Replay
 

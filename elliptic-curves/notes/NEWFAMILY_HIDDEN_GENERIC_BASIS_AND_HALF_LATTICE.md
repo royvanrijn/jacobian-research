@@ -83,7 +83,15 @@ VERIFIED GENERIC SECTIONS = 11 / 11
 
 Section 0 required a targeted reconstruction: its x-coordinate has numerator degree 20 and denominator degree 16; a low-degree brute-force interpolation had missed it.  The degree pair was located modulo several primes and then reconstructed once over `Q` with 48 held-out exact samples.
 
-Thus the family has an explicit hidden generic rank-11 subgroup above the original automatic subgroup.  The exact generic section relations imply an index-12288 inclusion between the displayed automatic subgroup and this hidden subgroup.  This is a subgroup statement; it does **not** by itself prove that the hidden subgroup is the full generic Mordell--Weil group, nor that the generic rank is exactly 11.
+Thus the family has eleven explicit hidden generic sections; their independent
+specializations prove a generic rank-11 subgroup. The claimed generic
+index-12288 inclusion needs a further certificate. The committed
+`verify_hidden_sections.py` checks the curve identities, but does not check
+the relations to the automatic sections. The specialized determinant and
+interpolation samples alone do not prove those relations over `Q(T)`.
+Until the exact generic relation matrix is exported and replayed, the generic
+index claim is **UNKNOWN**. Neither the full generic Mordell--Weil group nor
+generic rank exactly 11 is proved by these calculations.
 
 ## 5. Half-lattice holes
 
@@ -189,7 +197,8 @@ The corrected short-model search was also rerun with specialization-specific top
 The durable positive result is:
 
 1. eleven explicit hidden generic rational sections;
-2. an exact index-12288 enlargement of the original automatic rank-11 subgroup;
+2. a recorded index-12288 enlargement at `T=11`; the corresponding generic
+   inclusion still needs a replayable exact relation certificate;
 3. a 2- and 3-saturated specialization basis at `T=11`;
 4. stable specialization-specific half-lattice ranking machinery.
 

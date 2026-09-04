@@ -37,7 +37,7 @@
   "inputs": {
     "elliptic-curves/cas/half_lattice_fake_descent_replay.sage": "8e33f6df508ab6f94f75f446ddb85e3459b73b1abe33ef8a41bfe7d8513f1569",
     "elliptic-curves/cas/run_curve385_iterated_half_lattice_search.sage": "b565ab1b9f372f52d5317c3dd88301ed8d1359588fdcf559b66ac94f15157b35",
-    "elliptic-curves/cas/run_icarm_mw16_parent_ladder_blind.sage": "32ffe45b32c18ae5b22ca31ed8d90c6f2b14648d1f8cc7366064b22e49c1d580",
+    "elliptic-curves/cas/run_icarm_mw16_parent_ladder_blind.sage": "72142476bb8b152df0dea70cd67864ed079243bdab11d29907fc1bded7e01883",
     "elliptic-curves/data/icarm_mw16_parent_ladder_blind_inputs_v1.json": "a56208ecb81944b9a78c7eaa258ceaed29d21f72f25f88c130fac01b5ad511fe"
   },
   "observation_unit": {
@@ -178,7 +178,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 5537,
-            "minimalization_milliseconds": 3,
+            "minimalization_milliseconds": 2,
             "raw_quartic_coefficients_ascending": [
               "393699148559197035545111762477783759258340384502091816285810019784282684313373693735752631593408670708168537438258959320218694536708891878961/9173696640125834561293616509881906952819328948889965888672988995485364590658881",
               "1630919676453640492340393325228871542306493002789440349212383806121721615320781434146698248171251797990400/166689514223429199811759126118870012505077031527996245219727",
@@ -203,7 +203,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 99
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               -3,
               2,
@@ -222,12 +222,12 @@
               -2,
               0
             ],
-            "search_milliseconds": 345,
+            "search_milliseconds": 356,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.36008399800630286
+            "wall_seconds": 0.3717120249639265
           },
           "specialized_depth": "34.0914423738503475717921131209361759460",
           "specialized_representative": [
@@ -389,12 +389,12 @@
               -1,
               -1
             ],
-            "search_milliseconds": 336,
+            "search_milliseconds": 352,
             "signed_affine_points_reported": 2,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.35216811596183106
+            "wall_seconds": 0.3641729020164348
           },
           "specialized_depth": "32.80877153851855641367583977209480189125",
           "specialized_representative": [
@@ -530,7 +530,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 2681,
-            "minimalization_milliseconds": 1,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "226038639463655900702550591871643486379392353598188165140878839551643098322767648641729688693572604672393250290022293885954118407590721/4328694675036048015873803226372377803742278224550665735942098500719533041",
               "-4528046650885951670313825255143978554499972405265483654940373675095255924246737419871072453860496000/3001011885238628388484060887982993907855204451366994717",
@@ -555,7 +555,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 101
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               1,
               2,
@@ -574,12 +574,12 @@
               0,
               -2
             ],
-            "search_milliseconds": 280,
+            "search_milliseconds": 287,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.2973603209829889
+            "wall_seconds": 0.3032656040159054
           },
           "specialized_depth": "32.5576564199476689550816407017994524944",
           "specialized_representative": [
@@ -697,7 +697,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 17084,
-            "minimalization_milliseconds": 3,
+            "minimalization_milliseconds": 1,
             "raw_quartic_coefficients_ascending": [
               "197895728668666680350817914921908315000664380083182383366315768257658647075348514686450785167371518066361348766725172887912912106065191638739601/3622474585816754819686829559362311797505814989198924299460011351608861169359120161",
               "-96438115740068857509600665267696751062130898545814943881179570408506246222283842741658587080020246102658560/14765698979907078829371559605335360718984938105607203078902279",
@@ -741,12 +741,12 @@
               1,
               0
             ],
-            "search_milliseconds": 916,
+            "search_milliseconds": 934,
             "signed_affine_points_reported": 2,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.9275249470374547
+            "wall_seconds": 0.9514336879947223
           },
           "specialized_depth": "32.3736583800644446929042782802340439865",
           "specialized_representative": [
@@ -898,7 +898,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 41207,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 3,
             "raw_quartic_coefficients_ascending": [
               "9597533870767920779806887292090166624031950923551301730291879955172890363320403048723011884736946964467480405680310950909791450375795761/179155849450548731365593803579651678705594136474392257987660023554077145281",
               "223557576351131960909473251635201210151229697083102974745439333588069140050126186369061063162858636800/48969226527371206201016670809636588871322494450948322577",
@@ -923,7 +923,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 96
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               -1,
               1,
@@ -942,12 +942,12 @@
               0,
               1
             ],
-            "search_milliseconds": 377,
+            "search_milliseconds": 387,
             "signed_affine_points_reported": 6,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.3902078859973699
+            "wall_seconds": 0.39959891396574676
           },
           "specialized_depth": "32.0853379458354273419421197189219463492",
           "specialized_representative": [
@@ -1065,7 +1065,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 59125,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 3,
             "raw_quartic_coefficients_ascending": [
               "18818399364994509969800845018924516265599645558380810685069988910542292952978658434814180386428831981097030235302825555991196656961/412553525287079244213645378067581200396773995598985557846967218347601",
               "166654635243606240915373373277308509491949184140438507599071732580902087697363203304139612102594560/2894744429696150856452622893957000511936034198775707",
@@ -1090,7 +1090,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 100
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               1,
               2,
@@ -1109,12 +1109,12 @@
               -1,
               -1
             ],
-            "search_milliseconds": 333,
+            "search_milliseconds": 352,
             "signed_affine_points_reported": 2,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.3565871950122528
+            "wall_seconds": 0.36361907701939344
           },
           "specialized_depth": "31.9234450676057169585921197189219463492",
           "specialized_representative": [
@@ -1250,7 +1250,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 25286,
-            "minimalization_milliseconds": 8,
+            "minimalization_milliseconds": 6,
             "raw_quartic_coefficients_ascending": [
               "111255314139818221434305024189979528558484771946753944948389443745878116945557526132766061789801214105767782408799656340870873505281/3345314510587284241703898510625792958124233678930336686052441128150801",
               "-308955055919786012400852411030069415317834381509456345673299258563297954728940050155448687628288000/13910018761114489447376596916434679149104220796071243",
@@ -1275,7 +1275,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 98
             },
-            "reduction_milliseconds": 2,
+            "reduction_milliseconds": 1,
             "representative": [
               2,
               -1,
@@ -1294,12 +1294,12 @@
               1,
               -2
             ],
-            "search_milliseconds": 369,
+            "search_milliseconds": 379,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.3804230790119618
+            "wall_seconds": 0.3904432500130497
           },
           "specialized_depth": "31.2167950516308553007184788756877853968",
           "specialized_representative": [
@@ -1479,12 +1479,12 @@
               3,
               0
             ],
-            "search_milliseconds": 238,
+            "search_milliseconds": 243,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.24852909502806142
+            "wall_seconds": 0.25693243998102844
           },
           "specialized_depth": "30.0815678873657043035171131209361759460",
           "specialized_representative": [
@@ -1602,7 +1602,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 30943,
-            "minimalization_milliseconds": 9,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "16711146553114837956348378392153852321966422762075626088420378671528918539343017402981865402788778506426530756940846329125944721/680995273422166501394073907872053685894214272507700703454879227041",
               "-767122956009129035116757786119155479259485395809468637640710730852469618455028891807764757888000/23705988709048979364119156328294874225488343782631",
@@ -1647,12 +1647,12 @@
               1,
               -2
             ],
-            "search_milliseconds": 274,
+            "search_milliseconds": 277,
             "signed_affine_points_reported": 2,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.28449052100768313
+            "wall_seconds": 0.2941499279695563
           },
           "specialized_depth": "29.9124594341620180327388736100442062722",
           "specialized_representative": [
@@ -1830,7 +1830,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 97
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 2,
             "representative": [
               2,
               -1,
@@ -1849,12 +1849,12 @@
               2,
               -2
             ],
-            "search_milliseconds": 284,
+            "search_milliseconds": 294,
             "signed_affine_points_reported": 6,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.3014960180153139
+            "wall_seconds": 0.3116936170263216
           },
           "specialized_depth": "29.7008314810747216524638736100442062722",
           "specialized_representative": [
@@ -1990,7 +1990,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 64816,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 6,
             "raw_quartic_coefficients_ascending": [
               "-445793729417831740838849352185217424765258546908276853915858089335244239070801035794087524513455500491603711095569466880297778959/222554196097614569801217188904511842923110556777004431640961",
               "-10767119122173076097901509784118557189379247279831588109722741904381464263507659078459637741094400/324023747279874987947094289543097861325582047",
@@ -2016,7 +2016,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 98
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               -2,
               2,
@@ -2035,12 +2035,12 @@
               -3,
               1
             ],
-            "search_milliseconds": 368,
+            "search_milliseconds": 379,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.378603208984714
+            "wall_seconds": 0.3893926639575511
           },
           "specialized_depth": "29.4481260427701550117503492939804991841",
           "specialized_representative": [
@@ -2176,7 +2176,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 52060,
-            "minimalization_milliseconds": 6,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "9444354342661386045607731571161552434422898724355428702076997539319903523844066024655141252717055086562600240849186677733522830001/179334815794342304977070543307182027709276736074905244785155017167281",
               "-4183879597560292778014679767044296520070431232461418746461216206364438722557665282117433982731840/1549702944705252921753190581072759478422393544173139",
@@ -2201,7 +2201,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 98
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               -2,
               0,
@@ -2220,12 +2220,12 @@
               1,
               1
             ],
-            "search_milliseconds": 313,
+            "search_milliseconds": 322,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.32372673199279234
+            "wall_seconds": 0.33294435002608225
           },
           "specialized_depth": "29.4386891678944428760921197189219463492",
           "specialized_representative": [
@@ -2248,7 +2248,7 @@
           ]
         }
       ],
-      "cpu_seconds": 5.111821,
+      "cpu_seconds": 5.255411000000002,
       "curve_id": 398,
       "discovered_group_saturation": {
         "basis_rank": 21,
@@ -5780,12 +5780,14 @@
           "100000": 3.725290298461914e-09,
           "1000000": 4.470348358154297e-08
         },
+        "mode": "specialized_canonical_height",
         "operative_rounding_scale": 1000000,
         "priority_order_identical_between_scales": true,
-        "representative_disagreement_count": 5
+        "representative_disagreement_count": 5,
+        "specialized_canonical_height_computed": true
       },
       "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE",
-      "wall_seconds": 5.0612465210142545
+      "wall_seconds": 5.20445085701067
     },
     {
       "basis_rank_after": 21,
@@ -5904,7 +5906,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 27091,
-            "minimalization_milliseconds": 9,
+            "minimalization_milliseconds": 3,
             "raw_quartic_coefficients_ascending": [
               "393699148559197035545111762477783759258340384502091816285810019784282684313373693735752631593408670708168537438258959320218694536708891878961/9173696640125834561293616509881906952819328948889965888672988995485364590658881",
               "-1630919676453640492340393325228871542306493002789440349212383806121721615320781434146698248171251797990400/166689514223429199811759126118870012505077031527996245219727",
@@ -5929,7 +5931,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 99
             },
-            "reduction_milliseconds": 2,
+            "reduction_milliseconds": 0,
             "representative": [
               -3,
               1,
@@ -5948,12 +5950,12 @@
               1,
               2
             ],
-            "search_milliseconds": 345,
+            "search_milliseconds": 346,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.3585361579898745
+            "wall_seconds": 0.3623579000122845
           },
           "specialized_depth": "34.09144237385034766331742908524498002815",
           "specialized_representative": [
@@ -6096,7 +6098,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 101
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 3,
             "representative": [
               -1,
               0,
@@ -6115,12 +6117,12 @@
               0,
               0
             ],
-            "search_milliseconds": 335,
+            "search_milliseconds": 348,
             "signed_affine_points_reported": 2,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.3522268009837717
+            "wall_seconds": 0.3597461379831657
           },
           "specialized_depth": "32.8087715385185562696310167102447739047",
           "specialized_representative": [
@@ -6305,7 +6307,7 @@
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.2971381039824337
+            "wall_seconds": 0.30046075501013547
           },
           "specialized_depth": "32.5576564199476689168706877298672145689",
           "specialized_representative": [
@@ -6423,7 +6425,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 13395,
-            "minimalization_milliseconds": 3,
+            "minimalization_milliseconds": 1,
             "raw_quartic_coefficients_ascending": [
               "197895728668666680350817914921908315000664380083182383366315768257658647075348514686450785167371518066361348766725172887912912106065191638739601/3622474585816754819686829559362311797505814989198924299460011351608861169359120161",
               "96438115740068857509600665267696751062130898545814943881179570408506246222283842741658587080020246102658560/14765698979907078829371559605335360718984938105607203078902279",
@@ -6448,7 +6450,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 97
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               1,
               -1,
@@ -6467,12 +6469,12 @@
               -2,
               0
             ],
-            "search_milliseconds": 920,
+            "search_milliseconds": 919,
             "signed_affine_points_reported": 2,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.931802241015248
+            "wall_seconds": 0.9365261530037969
           },
           "specialized_depth": "32.3736583800644449354058577566126685456",
           "specialized_representative": [
@@ -6624,7 +6626,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 20651,
-            "minimalization_milliseconds": 4,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "9597533870767920779806887292090166624031950923551301730291879955172890363320403048723011884736946964467480405680310950909791450375795761/179155849450548731365593803579651678705594136474392257987660023554077145281",
               "223557576351131960909473251635201210151229697083102974745439333588069140050126186369061063162858636800/48969226527371206201016670809636588871322494450948322577",
@@ -6649,7 +6651,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 96
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               -1,
               1,
@@ -6668,12 +6670,12 @@
               1,
               0
             ],
-            "search_milliseconds": 377,
+            "search_milliseconds": 380,
             "signed_affine_points_reported": 6,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.394309829978738
+            "wall_seconds": 0.3936025439761579
           },
           "specialized_depth": "32.0853379458354272975544193577748285925",
           "specialized_representative": [
@@ -6791,7 +6793,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 31307,
-            "minimalization_milliseconds": 9,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "18818399364994509969800845018924516265599645558380810685069988910542292952978658434814180386428831981097030235302825555991196656961/412553525287079244213645378067581200396773995598985557846967218347601",
               "-166654635243606240915373373277308509491949184140438507599071732580902087697363203304139612102594560/2894744429696150856452622893957000511936034198775707",
@@ -6816,7 +6818,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 100
             },
-            "reduction_milliseconds": 2,
+            "reduction_milliseconds": 0,
             "representative": [
               1,
               -1,
@@ -6835,12 +6837,12 @@
               1,
               -2
             ],
-            "search_milliseconds": 345,
+            "search_milliseconds": 348,
             "signed_affine_points_reported": 2,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.3560454539838247
+            "wall_seconds": 0.35916063701733947
           },
           "specialized_depth": "31.92344506760571701468896276970396759495",
           "specialized_representative": [
@@ -6976,7 +6978,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 65428,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 3,
             "raw_quartic_coefficients_ascending": [
               "111255314139818221434305024189979528558484771946753944948389443745878116945557526132766061789801214105767782408799656340870873505281/3345314510587284241703898510625792958124233678930336686052441128150801",
               "308955055919786012400852411030069415317834381509456345673299258563297954728940050155448687628288000/13910018761114489447376596916434679149104220796071243",
@@ -7020,12 +7022,12 @@
               1,
               -1
             ],
-            "search_milliseconds": 359,
+            "search_milliseconds": 362,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.38265784800751135
+            "wall_seconds": 0.38852793897967786
           },
           "specialized_depth": "31.2167950516308552459906627819396311285",
           "specialized_representative": [
@@ -7161,7 +7163,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 14109,
-            "minimalization_milliseconds": 3,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "-60842959062844228517073983330310959293395722751267030897633505734246822456807024040810342659762532959592020798620962499306139999/58724281469726866351255562443540061978540331391357064798879839921",
               "-2480336951693815208666069037500018836452426584186732908938663398641281207324338987767917273216000/3772361324752285713461192962224992785732043383187",
@@ -7186,7 +7188,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 97
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               -1,
               2,
@@ -7210,7 +7212,7 @@
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.2514342439826578
+            "wall_seconds": 0.2560019289958291
           },
           "specialized_depth": "30.0815678873657043817613852854633480105",
           "specialized_representative": [
@@ -7328,7 +7330,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 53924,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 3,
             "raw_quartic_coefficients_ascending": [
               "16711146553114837956348378392153852321966422762075626088420378671528918539343017402981865402788778506426530756940846329125944721/680995273422166501394073907872053685894214272507700703454879227041",
               "-767122956009129035116757786119155479259485395809468637640710730852469618455028891807764757888000/23705988709048979364119156328294874225488343782631",
@@ -7354,7 +7356,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 101
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               -2,
               2,
@@ -7373,12 +7375,12 @@
               -1,
               3
             ],
-            "search_milliseconds": 276,
+            "search_milliseconds": 274,
             "signed_affine_points_reported": 2,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.286664211016614
+            "wall_seconds": 0.2910136559512466
           },
           "specialized_depth": "29.9124594341620181446172056819382013020",
           "specialized_representative": [
@@ -7530,7 +7532,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 10331,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 6,
             "raw_quartic_coefficients_ascending": [
               "-1120405192750249668462238270345786303618348185625421073763500014070471743206136441443681600807973665219521025438987484443023/110187943725171117030386458216142688380661059524050750625",
               "-679643944988128075349267687833163747632259532362875660462563017713855841428104497444732353152/1075475593037515038949442592294767571206375",
@@ -7556,7 +7558,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 97
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               1,
               1,
@@ -7575,12 +7577,12 @@
               0,
               -2
             ],
-            "search_milliseconds": 293,
+            "search_milliseconds": 297,
             "signed_affine_points_reported": 6,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.30396743601886556
+            "wall_seconds": 0.30893087602453306
           },
           "specialized_depth": "29.70083148107472165283026670939964777725",
           "specialized_representative": [
@@ -7716,7 +7718,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 31180,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 4,
             "raw_quartic_coefficients_ascending": [
               "-445793729417831740838849352185217424765258546908276853915858089335244239070801035794087524513455500491603711095569466880297778959/222554196097614569801217188904511842923110556777004431640961",
               "-10767119122173076097901509784118557189379247279831588109722741904381464263507659078459637741094400/324023747279874987947094289543097861325582047",
@@ -7742,7 +7744,7 @@
               "discriminant_bits": 579,
               "maximum_coefficient_bits": 98
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               2,
               0,
@@ -7761,12 +7763,12 @@
               -1,
               -2
             ],
-            "search_milliseconds": 359,
+            "search_milliseconds": 371,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.37902195303468034
+            "wall_seconds": 0.38135759002761915
           },
           "specialized_depth": "29.44812604277015511022160423151386688445",
           "specialized_representative": [
@@ -7902,7 +7904,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 52965,
-            "minimalization_milliseconds": 6,
+            "minimalization_milliseconds": 3,
             "raw_quartic_coefficients_ascending": [
               "9444354342661386045607731571161552434422898724355428702076997539319903523844066024655141252717055086562600240849186677733522830001/179334815794342304977070543307182027709276736074905244785155017167281",
               "-4183879597560292778014679767044296520070431232461418746461216206364438722557665282117433982731840/1549702944705252921753190581072759478422393544173139",
@@ -7946,12 +7948,12 @@
               1,
               -3
             ],
-            "search_milliseconds": 308,
+            "search_milliseconds": 315,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.3227960300282575
+            "wall_seconds": 0.3273871639976278
           },
           "specialized_depth": "29.4386891678944430719038945197787341067",
           "specialized_representative": [
@@ -7974,7 +7976,7 @@
           ]
         }
       ],
-      "cpu_seconds": 5.100814999999999,
+      "cpu_seconds": 5.166436999999998,
       "curve_id": 398,
       "discovered_group_saturation": {
         "basis_rank": 21,
@@ -11487,12 +11489,14 @@
           "100000": 7.450580596923828e-09,
           "1000000": 7.450580596923828e-08
         },
+        "mode": "specialized_canonical_height",
         "operative_rounding_scale": 1000000,
         "priority_order_identical_between_scales": true,
-        "representative_disagreement_count": 6
+        "representative_disagreement_count": 6,
+        "specialized_canonical_height_computed": true
       },
       "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE",
-      "wall_seconds": 5.05536097404547
+      "wall_seconds": 5.114168642030563
     },
     {
       "basis_rank_after": 21,
@@ -11643,7 +11647,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 21292,
-            "minimalization_milliseconds": 8,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "17338511692975771770221850610273431005896001745770898651204143281487300456343801524544882332491188309391796600924721/1401801888147037598322248314001000606153595028491844205496961",
               "-126792387202276591939748929876117049920546949324333714333880630874096062369394427857920/1288293989071026809393634508785349117059735071",
@@ -11668,7 +11672,7 @@
               "discriminant_bits": 512,
               "maximum_coefficient_bits": 86
             },
-            "reduction_milliseconds": 2,
+            "reduction_milliseconds": 0,
             "representative": [
               -2,
               -2,
@@ -11687,12 +11691,12 @@
               1,
               0
             ],
-            "search_milliseconds": 222,
+            "search_milliseconds": 227,
             "signed_affine_points_reported": 8,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.237457606010139
+            "wall_seconds": 0.23791371996048838
           },
           "specialized_depth": "28.4311429175492151757470359616517083530",
           "specialized_representative": [
@@ -11828,7 +11832,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 29806,
-            "minimalization_milliseconds": 7,
+            "minimalization_milliseconds": 8,
             "raw_quartic_coefficients_ascending": [
               "-145009851051901427760095162155063051098654296707220964758685778428544911337141879302430692128092362429029615919/2326893362383030956183482630436373137409736530078561",
               "-146668196713049569446432421029100685315044341693616319583205280028406466917142777600/335028968768825124693343828565406016553",
@@ -11854,7 +11858,7 @@
               "discriminant_bits": 512,
               "maximum_coefficient_bits": 90
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 2,
             "representative": [
               0,
               1,
@@ -11873,12 +11877,12 @@
               1,
               0
             ],
-            "search_milliseconds": 304,
+            "search_milliseconds": 312,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.31818848103284836
+            "wall_seconds": 0.3227694089873694
           },
           "specialized_depth": "26.2525308117213374109324525847488571551",
           "specialized_representative": [
@@ -12094,7 +12098,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 15341,
-            "minimalization_milliseconds": 3,
+            "minimalization_milliseconds": 8,
             "raw_quartic_coefficients_ascending": [
               "-367644694562508900414578109272750124405165635947585474363413778964790570007735860218515820086262722207367507424159/1043539153019735353449584905649309550698404445895540721",
               "-52399496340748880776576028242967371916628659615362337634987874245380810867617948089600/32649877874167647640714559337574357913059",
@@ -12119,7 +12123,7 @@
               "discriminant_bits": 512,
               "maximum_coefficient_bits": 87
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 2,
             "representative": [
               3,
               2,
@@ -12138,12 +12142,12 @@
               0,
               0
             ],
-            "search_milliseconds": 519,
+            "search_milliseconds": 527,
             "signed_affine_points_reported": 14,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.5312591760302894
+            "wall_seconds": 0.5384996670181863
           },
           "specialized_depth": "25.89184302003023418448083091371634379425",
           "specialized_representative": [
@@ -12295,7 +12299,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 15789,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 7,
             "raw_quartic_coefficients_ascending": [
               "-1308626473554363237159079067896115724926255731079686560764697142157197481380313913054276893868840067779/90135154709242727226735191699436305709483049216",
               "24232019928614772637469967104737030447322019878578243491617998344941349430095/20562725092590861993739188076527224",
@@ -12320,7 +12324,7 @@
               "discriminant_bits": 512,
               "maximum_coefficient_bits": 87
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               -1,
               0,
@@ -12339,12 +12343,12 @@
               0,
               0
             ],
-            "search_milliseconds": 211,
+            "search_milliseconds": 215,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 0,
-            "wall_seconds": 0.22168248100206256
+            "wall_seconds": 0.22563414700562134
           },
           "specialized_depth": "25.3636322711377467781584961617806780070",
           "specialized_representative": [
@@ -12367,7 +12371,7 @@
           ]
         }
       ],
-      "cpu_seconds": 1.7313359999999989,
+      "cpu_seconds": 1.7592670000000012,
       "curve_id": 400,
       "discovered_group_saturation": {
         "basis_rank": 21,
@@ -15978,12 +15982,14 @@
           "100000": 5.587935447692871e-09,
           "1000000": 4.470348358154297e-08
         },
+        "mode": "specialized_canonical_height",
         "operative_rounding_scale": 1000000,
         "priority_order_identical_between_scales": true,
-        "representative_disagreement_count": 0
+        "representative_disagreement_count": 0,
+        "specialized_canonical_height_computed": true
       },
       "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE",
-      "wall_seconds": 1.7177334279986098
+      "wall_seconds": 1.7450810929876752
     },
     {
       "basis_rank_after": 21,
@@ -16134,7 +16140,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 7202,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 1,
             "raw_quartic_coefficients_ascending": [
               "17338511692975771770221850610273431005896001745770898651204143281487300456343801524544882332491188309391796600924721/1401801888147037598322248314001000606153595028491844205496961",
               "126792387202276591939748929876117049920546949324333714333880630874096062369394427857920/1288293989071026809393634508785349117059735071",
@@ -16183,7 +16189,7 @@
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.2376407670089975
+            "wall_seconds": 0.24006432999158278
           },
           "specialized_depth": "28.43114291754921516118650282601623705825",
           "specialized_representative": [
@@ -16319,7 +16325,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 27458,
-            "minimalization_milliseconds": 7,
+            "minimalization_milliseconds": 8,
             "raw_quartic_coefficients_ascending": [
               "-145009851051901427760095162155063051098654296707220964758685778428544911337141879302430692128092362429029615919/2326893362383030956183482630436373137409736530078561",
               "-146668196713049569446432421029100685315044341693616319583205280028406466917142777600/335028968768825124693343828565406016553",
@@ -16364,12 +16370,12 @@
               -1,
               0
             ],
-            "search_milliseconds": 311,
+            "search_milliseconds": 315,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.32128707302035764
+            "wall_seconds": 0.32621814403682947
           },
           "specialized_depth": "26.25253081172133741508650282601623705825",
           "specialized_representative": [
@@ -16585,7 +16591,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 12613,
-            "minimalization_milliseconds": 4,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "-367644694562508900414578109272750124405165635947585474363413778964790570007735860218515820086262722207367507424159/1043539153019735353449584905649309550698404445895540721",
               "-52399496340748880776576028242967371916628659615362337634987874245380810867617948089600/32649877874167647640714559337574357913059",
@@ -16610,7 +16616,7 @@
               "discriminant_bits": 512,
               "maximum_coefficient_bits": 87
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 2,
             "representative": [
               -5,
               6,
@@ -16629,12 +16635,12 @@
               -6,
               2
             ],
-            "search_milliseconds": 524,
+            "search_milliseconds": 514,
             "signed_affine_points_reported": 14,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.5357509949826635
+            "wall_seconds": 0.5375408140243962
           },
           "specialized_depth": "25.8918430200302352872925083593674180084",
           "specialized_representative": [
@@ -16786,7 +16792,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 8535,
-            "minimalization_milliseconds": 1,
+            "minimalization_milliseconds": 2,
             "raw_quartic_coefficients_ascending": [
               "-1308626473554363237159079067896115724926255731079686560764697142157197481380313913054276893868840067779/90135154709242727226735191699436305709483049216",
               "24232019928614772637469967104737030447322019878578243491617998344941349430095/20562725092590861993739188076527224",
@@ -16811,7 +16817,7 @@
               "discriminant_bits": 512,
               "maximum_coefficient_bits": 87
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               -3,
               5,
@@ -16830,12 +16836,12 @@
               -6,
               2
             ],
-            "search_milliseconds": 209,
+            "search_milliseconds": 212,
             "signed_affine_points_reported": 4,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 0,
-            "wall_seconds": 0.22339845402166247
+            "wall_seconds": 0.22271888598334044
           },
           "specialized_depth": "25.36363227113774748128775322809888705125",
           "specialized_representative": [
@@ -16858,7 +16864,7 @@
           ]
         }
       ],
-      "cpu_seconds": 2.349454999999999,
+      "cpu_seconds": 2.375259,
       "curve_id": 400,
       "discovered_group_saturation": {
         "basis_rank": 21,
@@ -20454,12 +20460,14 @@
           "100000": 5.587935447692871e-09,
           "1000000": 5.960464477539063e-08
         },
+        "mode": "specialized_canonical_height",
         "operative_rounding_scale": 1000000,
         "priority_order_identical_between_scales": true,
-        "representative_disagreement_count": 2
+        "representative_disagreement_count": 2,
+        "specialized_canonical_height_computed": true
       },
       "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE",
-      "wall_seconds": 2.3370853600208648
+      "wall_seconds": 2.3608382280217484
     },
     {
       "basis_rank_after": 26,
@@ -20642,7 +20650,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 3228,
-            "minimalization_milliseconds": 1,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "40302965639633113630076794798055119009119501203401842440752640296356607687661868863839480686301893539657130000/100663622374291148989152169048020478644106297871442175602116401",
               "6198276994271319463398942186832706817898096545237325747706294764987891534139907200/31780038266076340202612028053177896385611216051",
@@ -20668,7 +20676,7 @@
               "discriminant_bits": 439,
               "maximum_coefficient_bits": 74
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               0,
               0,
@@ -20692,7 +20700,7 @@
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.4337410239968449
+            "wall_seconds": 0.43868057703366503
           },
           "specialized_depth": "28.72362011550731530150",
           "specialized_representative": [
@@ -20972,7 +20980,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 20661,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 2,
             "raw_quartic_coefficients_ascending": [
               "-63204178244339733844703722087558823449649373805942704761841502712617748055843321122448847219747743238237568607600/3116514898722174453681188383066678029095867775732223916215924561",
               "-14122586000903793244366307313038925039146243888784042829308997195476879176035179129600/417111252016944387639971174096280555953724003803",
@@ -21013,12 +21021,12 @@
               1,
               -4
             ],
-            "search_milliseconds": 265,
+            "search_milliseconds": 263,
             "signed_affine_points_reported": 22,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.2761392420507036
+            "wall_seconds": 0.27980581094743684
           },
           "specialized_depth": "28.48845732505144797004",
           "specialized_representative": [
@@ -21202,7 +21210,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 38129,
-            "minimalization_milliseconds": 7,
+            "minimalization_milliseconds": 2,
             "raw_quartic_coefficients_ascending": [
               "-16530936867476059889121068920847244480363610811694070396170168875140533972721370956665754354664932390757148528/119829684501657166968553174821887209987235191703294340613172401",
               "68810958907524527179693548656673514596666270488714843117620704459837899984202099456/36217903887949660194836125185642865142500485907",
@@ -21224,7 +21232,7 @@
               "discriminant_bits": 439,
               "maximum_coefficient_bits": 74
             },
-            "reduction_milliseconds": 2,
+            "reduction_milliseconds": 1,
             "representative": [
               -1,
               0,
@@ -21243,12 +21251,12 @@
               0,
               1
             ],
-            "search_milliseconds": 336,
+            "search_milliseconds": 337,
             "signed_affine_points_reported": 10,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.34737942402716726
+            "wall_seconds": 0.35179447202244774
           },
           "specialized_depth": "28.25818552652219003680",
           "specialized_representative": [
@@ -21493,12 +21501,12 @@
               -1,
               2
             ],
-            "search_milliseconds": 490,
+            "search_milliseconds": 515,
             "signed_affine_points_reported": 12,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.5145226249587722
+            "wall_seconds": 0.5322091190028004
           },
           "specialized_depth": "27.99666692037944002427",
           "specialized_representative": [
@@ -21730,7 +21738,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 64631,
-            "minimalization_milliseconds": 4,
+            "minimalization_milliseconds": 8,
             "raw_quartic_coefficients_ascending": [
               "40614908602530910200401088405671009999116237333671776578253221138047216816593776696439377800012164260643072400/181556547467366119736364046758813833542712846021423758490728561",
               "-64644949206719121091074977631709446979795115025319191900803087505818657674651209600/49460549454846904107197771220672409874502770947",
@@ -21756,7 +21764,7 @@
               "discriminant_bits": 439,
               "maximum_coefficient_bits": 73
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 2,
             "representative": [
               -1,
               -1,
@@ -21775,12 +21783,12 @@
               1,
               1
             ],
-            "search_milliseconds": 469,
+            "search_milliseconds": 485,
             "signed_affine_points_reported": 16,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.4875734130037017
+            "wall_seconds": 0.49575795501004905
           },
           "specialized_depth": "27.48539713710977953910",
           "specialized_representative": [
@@ -22028,7 +22036,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 57840,
-            "minimalization_milliseconds": 5,
+            "minimalization_milliseconds": 3,
             "raw_quartic_coefficients_ascending": [
               "45307378319595964669973254952218146451145117440740961658940829025532153426680174516000367730709174326806512400/98237284634362859673399393281323814920302898493247403095424081",
               "18488158557673889736064746133983643365289864545373091137876602193223566437909801600/31203783950326276999948032738572645893354143973",
@@ -22073,12 +22081,12 @@
               1,
               -3
             ],
-            "search_milliseconds": 453,
+            "search_milliseconds": 456,
             "signed_affine_points_reported": 18,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.464184092998039
+            "wall_seconds": 0.46908501599682495
           },
           "specialized_depth": "27.12875456091383252502",
           "specialized_representative": [
@@ -22342,7 +22350,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 57115,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 7,
             "raw_quartic_coefficients_ascending": [
               "123625321532397893719054497134111242264039699837781958900807775535361869801123286611876326964648322525/312106695882119490220799765669804503360592279956216336",
               "286618097113595237088876275421375838851434388034828358132484573094324274775/1650582846882807779186157942835710909913",
@@ -22364,7 +22372,7 @@
               "discriminant_bits": 439,
               "maximum_coefficient_bits": 74
             },
-            "reduction_milliseconds": 2,
+            "reduction_milliseconds": 1,
             "representative": [
               3,
               1,
@@ -22383,12 +22391,12 @@
               1,
               -3
             ],
-            "search_milliseconds": 245,
+            "search_milliseconds": 251,
             "signed_affine_points_reported": 20,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.2565067679970525
+            "wall_seconds": 0.2622705539688468
           },
           "specialized_depth": "25.96377260955465251158",
           "specialized_representative": [
@@ -22588,7 +22596,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 1141,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 4,
             "raw_quartic_coefficients_ascending": [
               "1102202309626694548774737356406899274813258334885632197686237972735319860721060328487617705032000048400/2815937712773650749724869494555447244261851994880931281",
               "10415346068857136317576058790288150633931850229123018325502691448617176457600/68741227523492263557963134002787403180923",
@@ -22614,7 +22622,7 @@
               "discriminant_bits": 439,
               "maximum_coefficient_bits": 74
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               -3,
               0,
@@ -22633,12 +22641,12 @@
               0,
               2
             ],
-            "search_milliseconds": 442,
+            "search_milliseconds": 456,
             "signed_affine_points_reported": 12,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.45296063798014075
+            "wall_seconds": 0.4698527569998987
           },
           "specialized_depth": "25.66724008171836809600",
           "specialized_representative": [
@@ -22661,7 +22669,7 @@
           ]
         }
       ],
-      "cpu_seconds": 6.200044999999999,
+      "cpu_seconds": 6.3654369999999965,
       "curve_id": 401,
       "discovered_group_saturation": {
         "basis_rank": 26,
@@ -34252,12 +34260,14 @@
           "100000": 7.450580596923828e-09,
           "1000000": 5.960464477539063e-08
         },
+        "mode": "specialized_canonical_height",
         "operative_rounding_scale": 1000000,
         "priority_order_identical_between_scales": true,
-        "representative_disagreement_count": 3
+        "representative_disagreement_count": 3,
+        "specialized_canonical_height_computed": true
       },
       "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE",
-      "wall_seconds": 6.163176517991815
+      "wall_seconds": 6.363933760032523
     },
     {
       "basis_rank_after": 26,
@@ -34720,7 +34730,7 @@
               "discriminant_bits": 439,
               "maximum_coefficient_bits": 73
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 2,
             "representative": [
               0,
               -2,
@@ -34739,12 +34749,12 @@
               4,
               1
             ],
-            "search_milliseconds": 334,
+            "search_milliseconds": 350,
             "signed_affine_points_reported": 44,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.35131965001346543
+            "wall_seconds": 0.3607358579756692
           },
           "specialized_depth": "21.1669237840166095704",
           "specialized_representative": [
@@ -35088,7 +35098,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 45133,
-            "minimalization_milliseconds": 6,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "108092510360586850829223516292183302171637705932690999062549964555518873430703702772736/1127192973085251371944042586167684129681",
               "-147804201792001561739517222723914589744228257324045155322707555200/194535427880449621309834552427",
@@ -35110,7 +35120,7 @@
               "discriminant_bits": 439,
               "maximum_coefficient_bits": 74
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               1,
               -2,
@@ -35129,12 +35139,12 @@
               2,
               -1
             ],
-            "search_milliseconds": 238,
+            "search_milliseconds": 236,
             "signed_affine_points_reported": 28,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 0,
-            "wall_seconds": 0.24727151897968724
+            "wall_seconds": 0.25420378404669464
           },
           "specialized_depth": "20.8602567643691901916",
           "specialized_representative": [
@@ -35958,7 +35968,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 12985,
-            "minimalization_milliseconds": 7,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "260634714558377625661168064929054122441729369056037346808497094807428130940220900959462054515182656/2829605903627203237412916576935680247733779679139201",
               "-220633686818141852613472788151455665198709109479070905907369714333726704000/387966712417128083885338058161722013151",
@@ -35982,7 +35992,7 @@
               "discriminant_bits": 439,
               "maximum_coefficient_bits": 75
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               -1,
               0,
@@ -36001,12 +36011,12 @@
               -2,
               0
             ],
-            "search_milliseconds": 668,
+            "search_milliseconds": 681,
             "signed_affine_points_reported": 90,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.6804527009953745
+            "wall_seconds": 0.6999666420160793
           },
           "specialized_depth": "20.7748485874455551006",
           "specialized_representative": [
@@ -36894,7 +36904,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 18191,
-            "minimalization_milliseconds": 7,
+            "minimalization_milliseconds": 2,
             "raw_quartic_coefficients_ascending": [
               "-11925672067896899597279842808123710198335761047954135801855704207522504340919132603813012351047104/42473859878082929604496687395909949998080292001",
               "22530742198862591420801440202710299766063833270663645274114775647544599680/93560233599700296638940471933280999",
@@ -36920,7 +36930,7 @@
               "discriminant_bits": 439,
               "maximum_coefficient_bits": 74
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               -1,
               -1,
@@ -36939,12 +36949,12 @@
               -3,
               -4
             ],
-            "search_milliseconds": 710,
+            "search_milliseconds": 711,
             "signed_affine_points_reported": 98,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.7211066599702463
+            "wall_seconds": 0.7346160350134596
           },
           "specialized_depth": "20.6277546863641683253",
           "specialized_representative": [
@@ -37368,7 +37378,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 12608,
-            "minimalization_milliseconds": 6,
+            "minimalization_milliseconds": 2,
             "raw_quartic_coefficients_ascending": [
               "-2097386415588503846037002628013735490246051021625700567801807523442759874276342325184/1787806034255960811296224368976348561",
               "-6722312924772227090241236277993084451633041284848253147509104000/1546109679472560214705345771",
@@ -37413,12 +37423,12 @@
               6,
               2
             ],
-            "search_milliseconds": 342,
+            "search_milliseconds": 343,
             "signed_affine_points_reported": 38,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 0,
-            "wall_seconds": 0.3587807370349765
+            "wall_seconds": 0.35997910698642954
           },
           "specialized_depth": "19.33962211691149522935",
           "specialized_representative": [
@@ -37890,7 +37900,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 21143,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 1,
             "raw_quartic_coefficients_ascending": [
               "568123944631449430164265452042827921975881294387166884594717160490758189916480266527296/2446121562890051676872727990868794762241",
               "-16293426116325094107118693155541435357375890583970247552299702400/347823184537816002666316991233",
@@ -37916,7 +37926,7 @@
               "discriminant_bits": 439,
               "maximum_coefficient_bits": 80
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               1,
               1,
@@ -37935,12 +37945,12 @@
               1,
               2
             ],
-            "search_milliseconds": 465,
+            "search_milliseconds": 467,
             "signed_affine_points_reported": 44,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 0,
-            "wall_seconds": 0.47533420904073864
+            "wall_seconds": 0.4784660160075873
           },
           "specialized_depth": "18.8749570442163226526",
           "specialized_representative": [
@@ -38316,7 +38326,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 14668,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 2,
             "raw_quartic_coefficients_ascending": [
               "9164000681999666097882690112978581245336387901475560160552211016887547614675835456/88862941528600005796365124343143681",
               "127333664143474765097526163962442415096353003315379970856920960/162757313920375390773108161",
@@ -38342,7 +38352,7 @@
               "discriminant_bits": 439,
               "maximum_coefficient_bits": 81
             },
-            "reduction_milliseconds": 2,
+            "reduction_milliseconds": 0,
             "representative": [
               0,
               0,
@@ -38361,12 +38371,12 @@
               0,
               0
             ],
-            "search_milliseconds": 321,
+            "search_milliseconds": 317,
             "signed_affine_points_reported": 32,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 0,
-            "wall_seconds": 0.33146551001118496
+            "wall_seconds": 0.3306135050370358
           },
           "specialized_depth": "18.71541436169230903845",
           "specialized_representative": [
@@ -38995,12 +39005,12 @@
               4,
               0
             ],
-            "search_milliseconds": 374,
+            "search_milliseconds": 373,
             "signed_affine_points_reported": 58,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 0,
-            "wall_seconds": 0.384924380981829
+            "wall_seconds": 0.38681728701340035
           },
           "specialized_depth": "17.8985385300111384634",
           "specialized_representative": [
@@ -39293,12 +39303,12 @@
               0,
               3
             ],
-            "search_milliseconds": 384,
+            "search_milliseconds": 379,
             "signed_affine_points_reported": 16,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 0,
-            "wall_seconds": 0.40335632796632126
+            "wall_seconds": 0.4004903709865175
           },
           "specialized_depth": "17.6518678575023002253",
           "specialized_representative": [
@@ -39514,7 +39524,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 64336,
-            "minimalization_milliseconds": 2,
+            "minimalization_milliseconds": 6,
             "raw_quartic_coefficients_ascending": [
               "144378838756118046157956484792175432273643406425495822095046327809881540631616/1167526163200213653258155755921",
               "-15059918942571717059492218642420368395018150723878487429760/35518119666951048222187",
@@ -39540,7 +39550,7 @@
               "discriminant_bits": 439,
               "maximum_coefficient_bits": 93
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               -2,
               2,
@@ -39559,12 +39569,12 @@
               -5,
               -3
             ],
-            "search_milliseconds": 479,
+            "search_milliseconds": 482,
             "signed_affine_points_reported": 12,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 0,
-            "wall_seconds": 0.4959425880224444
+            "wall_seconds": 0.4961858569877222
           },
           "specialized_depth": "16.46534636359834139815",
           "specialized_representative": [
@@ -39587,7 +39597,7 @@
           ]
         }
       ],
-      "cpu_seconds": 21.558185,
+      "cpu_seconds": 22.529810000000005,
       "curve_id": 542,
       "discovered_group_saturation": {
         "basis_rank": 26,
@@ -66843,12 +66853,14 @@
           "100000": 6.51925802230835e-09,
           "1000000": 4.470348358154297e-08
         },
+        "mode": "specialized_canonical_height",
         "operative_rounding_scale": 1000000,
         "priority_order_identical_between_scales": true,
-        "representative_disagreement_count": 5
+        "representative_disagreement_count": 5,
+        "specialized_canonical_height_computed": true
       },
       "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE",
-      "wall_seconds": 21.47247681103181
+      "wall_seconds": 22.653051918023266
     },
     {
       "basis_rank_after": 24,
@@ -67645,7 +67657,7 @@
               "discriminant_bits": 374,
               "maximum_coefficient_bits": 63
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               0,
               3,
@@ -67664,12 +67676,12 @@
               -2,
               2
             ],
-            "search_milliseconds": 281,
+            "search_milliseconds": 304,
             "signed_affine_points_reported": 86,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.2937560500577092
+            "wall_seconds": 0.321307655016426
           },
           "specialized_depth": "21.831892223684725023181417736793428080735",
           "specialized_representative": [
@@ -68485,7 +68497,7 @@
               "discriminant_bits": 374,
               "maximum_coefficient_bits": 63
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 2,
             "representative": [
               2,
               1,
@@ -68504,12 +68516,12 @@
               1,
               -2
             ],
-            "search_milliseconds": 271,
+            "search_milliseconds": 293,
             "signed_affine_points_reported": 86,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.28572361799888313
+            "wall_seconds": 0.30996960296761245
           },
           "specialized_depth": "21.761299304580088002281615102559401656585",
           "specialized_representative": [
@@ -69285,7 +69297,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 50000,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 5,
             "raw_quartic_coefficients_ascending": [
               "279817806327019819617773803297052700095124643811158487285697787070358538254201605421057600/4123627053794200345383523960930476206573508447841",
               "21989463920232070051111905422770050613285619048201285863087681180800/2893740183991834692672921037530994583",
@@ -69311,7 +69323,7 @@
               "discriminant_bits": 374,
               "maximum_coefficient_bits": 66
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               -2,
               0,
@@ -69330,12 +69342,12 @@
               -1,
               1
             ],
-            "search_milliseconds": 396,
+            "search_milliseconds": 434,
             "signed_affine_points_reported": 84,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.418648099002894
+            "wall_seconds": 0.44645006099017337
           },
           "specialized_depth": "20.71608476125241601832649416652992753470",
           "specialized_representative": [
@@ -70239,7 +70251,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 22651,
-            "minimalization_milliseconds": 6,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "-3949855455929538675870430743850498672225951940400922445602401407829276538675505529600/248782014605231160638642041371550789498236001",
               "25673893225565213684470904491550884178863045270347335965982140800/1980907677762122930168949854833943",
@@ -70261,7 +70273,7 @@
               "discriminant_bits": 374,
               "maximum_coefficient_bits": 62
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               -1,
               1,
@@ -70280,12 +70292,12 @@
               -1,
               2
             ],
-            "search_milliseconds": 184,
+            "search_milliseconds": 191,
             "signed_affine_points_reported": 100,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.19961757003329694
+            "wall_seconds": 0.21340958698419854
           },
           "specialized_depth": "20.297659578807518848572415728518182193755",
           "specialized_representative": [
@@ -70942,12 +70954,12 @@
               0,
               1
             ],
-            "search_milliseconds": 329,
+            "search_milliseconds": 339,
             "signed_affine_points_reported": 64,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.3398888590163551
+            "wall_seconds": 0.3599939770065248
           },
           "specialized_depth": "19.29327977103710013952687573736447151952",
           "specialized_representative": [
@@ -71844,12 +71856,12 @@
               1,
               0
             ],
-            "search_milliseconds": 272,
+            "search_milliseconds": 278,
             "signed_affine_points_reported": 94,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.28508360096020624
+            "wall_seconds": 0.30001357599394396
           },
           "specialized_depth": "19.247069344785194599711833760834834687555",
           "specialized_representative": [
@@ -72497,7 +72509,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 32040,
-            "minimalization_milliseconds": 5,
+            "minimalization_milliseconds": 6,
             "raw_quartic_coefficients_ascending": [
               "1110019844067689078490719025647557890514404356479155689496860042201819396214525/25838469717454758024066281094975529216",
               "543191854928366682017945648197155414845109729104726973375/1432551041583968057269170232",
@@ -72519,7 +72531,7 @@
               "discriminant_bits": 374,
               "maximum_coefficient_bits": 65
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               -2,
               -6,
@@ -72538,12 +72550,12 @@
               -1,
               -2
             ],
-            "search_milliseconds": 298,
+            "search_milliseconds": 322,
             "signed_affine_points_reported": 68,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.3141192499897443
+            "wall_seconds": 0.3344490979798138
           },
           "specialized_depth": "18.81895500053822384280176646040796050131",
           "specialized_representative": [
@@ -73252,12 +73264,12 @@
               1,
               -2
             ],
-            "search_milliseconds": 397,
+            "search_milliseconds": 421,
             "signed_affine_points_reported": 68,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 0,
-            "wall_seconds": 0.4088215669617057
+            "wall_seconds": 0.43245239701354876
           },
           "specialized_depth": "17.035883685238946617960038136683506838745",
           "specialized_representative": [
@@ -73280,7 +73292,7 @@
           ]
         }
       ],
-      "cpu_seconds": 16.863347000000005,
+      "cpu_seconds": 17.984082,
       "curve_id": 548,
       "discovered_group_saturation": {
         "basis_rank": 24,
@@ -105172,12 +105184,14 @@
           "100000": 2.7939677238464355e-09,
           "1000000": 1.4901161193847656e-08
         },
+        "mode": "specialized_canonical_height",
         "operative_rounding_scale": 1000000,
         "priority_order_identical_between_scales": true,
-        "representative_disagreement_count": 5
+        "representative_disagreement_count": 5,
+        "specialized_canonical_height_computed": true
       },
       "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE",
-      "wall_seconds": 16.790750632993877
+      "wall_seconds": 17.898370639013592
     },
     {
       "basis_rank_after": 24,
@@ -105974,7 +105988,7 @@
               "discriminant_bits": 374,
               "maximum_coefficient_bits": 63
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 2,
             "representative": [
               -1,
               -1,
@@ -105993,12 +106007,12 @@
               2,
               1
             ],
-            "search_milliseconds": 283,
+            "search_milliseconds": 299,
             "signed_affine_points_reported": 86,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.29539525299333036
+            "wall_seconds": 0.3151247139903717
           },
           "specialized_depth": "21.8318922236847249762000000000000000000",
           "specialized_representative": [
@@ -106814,7 +106828,7 @@
               "discriminant_bits": 374,
               "maximum_coefficient_bits": 63
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               -8,
               1,
@@ -106833,12 +106847,12 @@
               1,
               3
             ],
-            "search_milliseconds": 272,
+            "search_milliseconds": 293,
             "signed_affine_points_reported": 86,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.28546647302573547
+            "wall_seconds": 0.30853663198649883
           },
           "specialized_depth": "21.761299304580088123923809149020191291475",
           "specialized_representative": [
@@ -107614,7 +107628,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 60641,
-            "minimalization_milliseconds": 2,
+            "minimalization_milliseconds": 7,
             "raw_quartic_coefficients_ascending": [
               "279817806327019819617773803297052700095124643811158487285697787070358538254201605421057600/4123627053794200345383523960930476206573508447841",
               "-21989463920232070051111905422770050613285619048201285863087681180800/2893740183991834692672921037530994583",
@@ -107640,7 +107654,7 @@
               "discriminant_bits": 374,
               "maximum_coefficient_bits": 66
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 2,
             "representative": [
               -1,
               0,
@@ -107659,12 +107673,12 @@
               -1,
               1
             ],
-            "search_milliseconds": 402,
+            "search_milliseconds": 441,
             "signed_affine_points_reported": 84,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.4209110499941744
+            "wall_seconds": 0.4540066550252959
           },
           "specialized_depth": "20.716084761252415962958016640800885025975",
           "specialized_representative": [
@@ -108568,7 +108582,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 32046,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 6,
             "raw_quartic_coefficients_ascending": [
               "-3949855455929538675870430743850498672225951940400922445602401407829276538675505529600/248782014605231160638642041371550789498236001",
               "25673893225565213684470904491550884178863045270347335965982140800/1980907677762122930168949854833943",
@@ -108590,7 +108604,7 @@
               "discriminant_bits": 374,
               "maximum_coefficient_bits": 62
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 2,
             "representative": [
               4,
               -1,
@@ -108609,12 +108623,12 @@
               -1,
               -2
             ],
-            "search_milliseconds": 184,
+            "search_milliseconds": 201,
             "signed_affine_points_reported": 100,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.19929721200605854
+            "wall_seconds": 0.2132893310044892
           },
           "specialized_depth": "20.2976595788075188816985814631232506404",
           "specialized_representative": [
@@ -109230,7 +109244,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 58114,
-            "minimalization_milliseconds": 6,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "37619120742205177083799753476185255949983806977607608338270053987377297604150022400/609235169785087406952649741936535707001521",
               "58548169638163023466017734232629893781991790353648934613385600/21806638528496964143585458985837",
@@ -109252,7 +109266,7 @@
               "discriminant_bits": 374,
               "maximum_coefficient_bits": 66
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 1,
             "representative": [
               -4,
               -1,
@@ -109271,12 +109285,12 @@
               1,
               1
             ],
-            "search_milliseconds": 326,
+            "search_milliseconds": 351,
             "signed_affine_points_reported": 64,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.33875240001361817
+            "wall_seconds": 0.36334101000102237
           },
           "specialized_depth": "19.2932797710371001268820665632035401039",
           "specialized_representative": [
@@ -110132,7 +110146,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 27219,
-            "minimalization_milliseconds": 3,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "-7463659122998101513680560331547221074262339682432105050162789468843654505771844400/198646696555452165945103831077089997845521",
               "-154351987677701572511047331425305365268352117403356480157006400/9409380053348561528234657201291",
@@ -110154,7 +110168,7 @@
               "discriminant_bits": 374,
               "maximum_coefficient_bits": 63
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               -3,
               -1,
@@ -110173,12 +110187,12 @@
               1,
               0
             ],
-            "search_milliseconds": 271,
+            "search_milliseconds": 289,
             "signed_affine_points_reported": 94,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.2830943989683874
+            "wall_seconds": 0.3014075739774853
           },
           "specialized_depth": "19.247069344785194573558016640800885025975",
           "specialized_representative": [
@@ -110867,12 +110881,12 @@
               1,
               0
             ],
-            "search_milliseconds": 304,
+            "search_milliseconds": 320,
             "signed_affine_points_reported": 68,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.3160034989705309
+            "wall_seconds": 0.33592674002284184
           },
           "specialized_depth": "18.8189550005382235979985814631232506404",
           "specialized_representative": [
@@ -111581,12 +111595,12 @@
               1,
               1
             ],
-            "search_milliseconds": 398,
+            "search_milliseconds": 420,
             "signed_affine_points_reported": 68,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 0,
-            "wall_seconds": 0.4075835620169528
+            "wall_seconds": 0.4393724200199358
           },
           "specialized_depth": "17.0358836852389466496443258524930025616",
           "specialized_representative": [
@@ -111609,7 +111623,7 @@
           ]
         }
       ],
-      "cpu_seconds": 17.178843,
+      "cpu_seconds": 18.511826000000013,
       "curve_id": 548,
       "discovered_group_saturation": {
         "basis_rank": 24,
@@ -143239,12 +143253,14 @@
           "100000": 3.725290298461914e-09,
           "1000000": 2.9802322387695312e-08
         },
+        "mode": "specialized_canonical_height",
         "operative_rounding_scale": 1000000,
         "priority_order_identical_between_scales": true,
-        "representative_disagreement_count": 4
+        "representative_disagreement_count": 4,
+        "specialized_canonical_height_computed": true
       },
       "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE",
-      "wall_seconds": 17.106954034999944
+      "wall_seconds": 18.426117922004778
     },
     {
       "basis_rank_after": 24,
@@ -144060,12 +144076,12 @@
               -1,
               2
             ],
-            "search_milliseconds": 269,
+            "search_milliseconds": 305,
             "signed_affine_points_reported": 86,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.2931816839845851
+            "wall_seconds": 0.3184404880157672
           },
           "specialized_depth": "21.831892223684725357905",
           "specialized_representative": [
@@ -144900,12 +144916,12 @@
               1,
               1
             ],
-            "search_milliseconds": 267,
+            "search_milliseconds": 292,
             "signed_affine_points_reported": 86,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.2820904509862885
+            "wall_seconds": 0.3056361610069871
           },
           "specialized_depth": "21.761299304580087991385",
           "specialized_representative": [
@@ -145726,12 +145742,12 @@
               1,
               -1
             ],
-            "search_milliseconds": 399,
+            "search_milliseconds": 437,
             "signed_affine_points_reported": 84,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.4182126529631205
+            "wall_seconds": 0.4497290469589643
           },
           "specialized_depth": "20.71608476125241600463",
           "specialized_representative": [
@@ -146635,7 +146651,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 40157,
-            "minimalization_milliseconds": 0,
+            "minimalization_milliseconds": 7,
             "raw_quartic_coefficients_ascending": [
               "-3949855455929538675870430743850498672225951940400922445602401407829276538675505529600/248782014605231160638642041371550789498236001",
               "25673893225565213684470904491550884178863045270347335965982140800/1980907677762122930168949854833943",
@@ -146657,7 +146673,7 @@
               "discriminant_bits": 374,
               "maximum_coefficient_bits": 62
             },
-            "reduction_milliseconds": 0,
+            "reduction_milliseconds": 2,
             "representative": [
               1,
               2,
@@ -146676,12 +146692,12 @@
               0,
               1
             ],
-            "search_milliseconds": 188,
+            "search_milliseconds": 201,
             "signed_affine_points_reported": 100,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.20041676802793518
+            "wall_seconds": 0.21375448297476396
           },
           "specialized_depth": "20.29765957880751891967",
           "specialized_representative": [
@@ -147338,12 +147354,12 @@
               0,
               -1
             ],
-            "search_milliseconds": 332,
+            "search_milliseconds": 353,
             "signed_affine_points_reported": 64,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.3433955360087566
+            "wall_seconds": 0.3634706869488582
           },
           "specialized_depth": "19.29327977103710011350",
           "specialized_representative": [
@@ -148199,7 +148215,7 @@
               "solubility_filter": "not_applicable_pointed_model_birational_to_E"
             },
             "mask": 64362,
-            "minimalization_milliseconds": 6,
+            "minimalization_milliseconds": 0,
             "raw_quartic_coefficients_ascending": [
               "-7463659122998101513680560331547221074262339682432105050162789468843654505771844400/198646696555452165945103831077089997845521",
               "-154351987677701572511047331425305365268352117403356480157006400/9409380053348561528234657201291",
@@ -148240,12 +148256,12 @@
               1,
               -1
             ],
-            "search_milliseconds": 269,
+            "search_milliseconds": 288,
             "signed_affine_points_reported": 94,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.28290436300449073
+            "wall_seconds": 0.30393346794880927
           },
           "specialized_depth": "19.24706934478519465049",
           "specialized_representative": [
@@ -148915,7 +148931,7 @@
               "discriminant_bits": 374,
               "maximum_coefficient_bits": 65
             },
-            "reduction_milliseconds": 1,
+            "reduction_milliseconds": 0,
             "representative": [
               0,
               0,
@@ -148934,12 +148950,12 @@
               2,
               -1
             ],
-            "search_milliseconds": 304,
+            "search_milliseconds": 323,
             "signed_affine_points_reported": 68,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 2,
-            "wall_seconds": 0.3139157280093059
+            "wall_seconds": 0.33464287902461365
           },
           "specialized_depth": "18.81895500053822365492",
           "specialized_representative": [
@@ -149648,12 +149664,12 @@
               -1,
               1
             ],
-            "search_milliseconds": 397,
+            "search_milliseconds": 427,
             "signed_affine_points_reported": 68,
             "status": "bounded_search_complete",
             "timeout_seconds": 15.0,
             "trivial_points_mapping_to_infinity": 0,
-            "wall_seconds": 0.4079625660087913
+            "wall_seconds": 0.4368100509746
           },
           "specialized_depth": "17.03588368523894661009",
           "specialized_representative": [
@@ -149676,7 +149692,7 @@
           ]
         }
       ],
-      "cpu_seconds": 16.470629999999986,
+      "cpu_seconds": 17.70004399999999,
       "curve_id": 548,
       "discovered_group_saturation": {
         "basis_rank": 24,
@@ -181337,12 +181353,14 @@
           "100000": 2.7939677238464355e-09,
           "1000000": 2.9802322387695312e-08
         },
+        "mode": "specialized_canonical_height",
         "operative_rounding_scale": 1000000,
         "priority_order_identical_between_scales": true,
-        "representative_disagreement_count": 3
+        "representative_disagreement_count": 3,
+        "specialized_canonical_height_computed": true
       },
       "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE",
-      "wall_seconds": 16.40166303300066
+      "wall_seconds": 17.622404683963396
     }
   ],
   "reproducing_command": "sage -python elliptic-curves/cas/run_icarm_mw16_parent_ladder_blind.sage",

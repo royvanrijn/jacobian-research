@@ -94,6 +94,7 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json
 !/artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json
 !/artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json
+!/artifacts/generated-results/elkies-k3-custom-ns-rootless-half-lattice-sweep-v1.json
 !/artifacts/generated-results/elkies-k3-golay-det720-qq-marking-obstruction-v1.json
 !/artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json
 !/artifacts/generated-results/elkies-k3-det378-qq-marking-obstruction-v1.json
@@ -225,8 +226,18 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-controls-v1.json
 !/artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-sample-v1.json
 !/artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-unblinding-key-v1.json
+!/artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-*.json
+!/artifacts/generated-results/elkies-k3-r17-rational-quadratic-twist-nagao-h100-v1.json
+!/artifacts/generated-results/elkies-k3-r17-rational-quadratic-twist-pgl8-nagao-h100-v1.json
+!/artifacts/generated-results/elkies-k3-r17-rational-quadratic-twist-control-anchored-pgl8-nagao-h50-v1.json
+!/artifacts/generated-results/elkies-k3-r17-mw20-control-transport-anchored-heuristic-top-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-11952-low-genus-rank3-cover-collision-v1.json
+!/artifacts/generated-results/elkies-k3-r17-074d9-tracezero-genus5-polynomial-x-p19-v1.json
 !/artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0fda0--alternate-orbit-1037d-p131-toric-frobenius-v1.json
 !/artifacts/generated-results/elkies-k3-r17-product-*-toric-frobenius-v1.json
+!/artifacts/generated-results/elkies-k3-r17-product-survivor-galois-height-gate-v1.json
+!/artifacts/generated-results/elkies-k3-r17-product-extra-prime-audits/
+!/artifacts/generated-results/elkies-k3-r17-product-extra-prime-audits/*.json
 !/artifacts/generated-results/elkies-k3-r17-singleton-*-toric-frobenius-v1.json
 !/artifacts/generated-results/elkies-k3-r17-singleton-twist-finite-field-bound-audit-v1.json
 !/artifacts/generated-results/elkies-k3-r17-rank55-singleton-toric-frobenius-bounds-v1.json

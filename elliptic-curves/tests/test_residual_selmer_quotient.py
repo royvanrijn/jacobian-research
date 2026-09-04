@@ -52,6 +52,36 @@ pairing_spec.loader.exec_module(pairing_module)
 
 
 class ResidualSelmerQuotientTests(unittest.TestCase):
+    def test_early_quotient_eliminates_pivots_below_free_coordinates(self):
+        quotient = module.EarlyQuotient(
+            local_dimension=2, fingerprint_dimension=0,
+            known_mw_images=[module.SquareclassImage('P', 'delta(P)', 1, 0)],
+        )
+        self.assertEqual(quotient.reduce(2), quotient.reduce(3))
+        self.assertEqual(module.independent_masks(
+            [('a', quotient.reduce(2)), ('b', quotient.reduce(3))]
+        )[0], 1)
+
+    def test_early_quotient_rank_matches_ambient_rank_difference(self):
+        # Exhaust all two-generator spaces and candidate pairs in F_2^3.
+        for a in range(8):
+            for b in range(8):
+                known = [('a', a), ('b', b)]
+                quotient = module.EarlyQuotient(
+                    local_dimension=3, fingerprint_dimension=0,
+                    known_mw_images=[module.SquareclassImage(k, k, v, 0)
+                                     for k, v in known],
+                )
+                for x in range(8):
+                    for y in range(8):
+                        observed = module.independent_masks([
+                            ('x', quotient.reduce(x)), ('y', quotient.reduce(y))
+                        ])[0]
+                        expected = module.independent_masks(
+                            known + [('x', x), ('y', y)]
+                        )[0] - quotient.known_mw_rank
+                        self.assertEqual(observed, expected)
+
     def test_dimension_only_obstruction_witnesses_can_close_relative_bound(self):
         result = witness_module.audit(
             {
@@ -384,7 +414,11 @@ class ResidualSelmerQuotientTests(unittest.TestCase):
             {
                 "known_mw_rank": 30,
                 "residual_selmer_basis_certified": True,
+                "pairing_entries_certified": True,
+                "known_mw_rank_certified": True,
+                "unconditional": True,
                 "pairing_algorithm": "explicit Cassels--Tate algorithm",
+                "pairing_evidence": "toy arithmetic certificate",
                 "pairing_computed_before_cover_search": True,
                 "residual_basis": [{"label": "c1"}, {"label": "c2"}],
                 "cassels_tate_matrix": [[0, 1], [1, 0]],
@@ -394,6 +428,17 @@ class ResidualSelmerQuotientTests(unittest.TestCase):
         self.assertEqual(result["classification"], "CERTIFIED_EXACT_KNOWN_RANK_AFTER_PAIRING")
         self.assertEqual(result["radical_dimension"], 0)
         self.assertEqual(result["rank_upper_after_pairing"], 30)
+
+    def test_pairing_matrix_alone_cannot_certify_exact_rank(self):
+        for basis_flag in (True, False, 'false'):
+            result = pairing_module.audit({
+                'known_mw_rank': 30,
+                'residual_selmer_basis_certified': basis_flag,
+                'residual_basis': ['a', 'b'],
+                'cassels_tate_matrix': [[0, 1], [1, 0]],
+            })
+            self.assertIsNone(result['rank_upper_after_pairing'])
+            self.assertEqual(result['classification'], 'UNCERTIFIED_BASIS_OR_PAIRING_AUDIT')
 
     def test_pairing_audit_rejects_pre_pairing_cover_search(self):
         with self.assertRaises(pairing_module.PairingError):

@@ -465,7 +465,7 @@ class EarlyQuotient:
 
     The two target spaces are deliberately concatenated, rather than treated
     as interchangeable.  A zero residual signature only says that this
-    *chosen* faithful target fails to distinguish a candidate from known MW;
+    *chosen* target fails to distinguish a candidate from known MW;
     it is not a global-square or Selmer conclusion.
     """
 
@@ -509,11 +509,12 @@ class EarlyQuotient:
 
     def reduce(self, signature: int) -> int:
         signature = _check_mask(signature, self.dimension, "quotient signature")
-        while signature:
-            pivot = signature.bit_length() - 1
-            if pivot not in self._pivots:
-                break
-            signature ^= self._pivots[pivot]
+        # Membership testing may stop at the first free coordinate, but a
+        # quotient projection must eliminate every pivot. Otherwise two
+        # representatives of the same coset can acquire independent residues.
+        for pivot in sorted(self._pivots, reverse=True):
+            if signature >> pivot & 1:
+                signature ^= self._pivots[pivot]
         return signature
 
     def image(self, candidate: SquareclassImage) -> QuotientImage:

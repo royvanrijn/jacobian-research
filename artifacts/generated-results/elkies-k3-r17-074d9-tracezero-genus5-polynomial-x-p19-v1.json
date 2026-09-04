@@ -1,0 +1,106 @@
+{
+  "collision_cover_count": 0,
+  "coordinate": "norm12-orbit-074d9 native u",
+  "cover_collisions": [],
+  "distinct_cover_count": 3,
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json": "15aeb70029a078dd51024a2e4c8d75a336a7197abe9471d79151a91178a59ec5"
+  },
+  "maximum_cover_multiplicity": 1,
+  "prime": 19,
+  "proof_boundary": "The p^5 polynomial-x trace-zero subchart is exhaustive at this prime and retains the full scalar squareclass. It omits the general x=X/Q trace-zero form, degree drops, repeated covers, denominator sections, parameter-at-infinity charts, and solutions with bad reduction. Modular cover collisions are necessary conditions only; characteristic-zero reconstruction and height-pairing independence are separate gates.",
+  "reproducing_command": "sage -python elkies-k3/scripts/search_r17_tracezero_genus5_normalizations_modp.sage --model artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json --prime 19 --output artifacts/generated-results/elkies-k3-r17-074d9-tracezero-genus5-polynomial-x-p19-v1.json",
+  "schema": "elkies-k3.r17-tracezero-genus5-normalization-modp-search.v1",
+  "search": {
+    "degree_drop_count": 260642,
+    "repeated_quadratic_count": 0,
+    "total_x_polynomial_count": 2476099,
+    "x_degree_bound": 4
+  },
+  "status": "PASS_COMPLETE_MODP_TRACEZERO_GENUS5_POLYNOMIAL_X_CENSUS",
+  "survivor_count": 3,
+  "survivors": [
+    {
+      "cover_key_monic_q0_q1_and_scalar_character": [
+        6,
+        7,
+        18
+      ],
+      "reduced_quadratic_coefficients_low_to_high": [
+        15,
+        8,
+        12
+      ],
+      "removed_square_factor_coefficients_low_to_high": [
+        1,
+        18,
+        15,
+        2,
+        4,
+        1
+      ],
+      "x_coefficients_low_to_high": [
+        8,
+        8,
+        7,
+        9,
+        3
+      ]
+    },
+    {
+      "cover_key_monic_q0_q1_and_scalar_character": [
+        10,
+        5,
+        18
+      ],
+      "reduced_quadratic_coefficients_low_to_high": [
+        17,
+        18,
+        15
+      ],
+      "removed_square_factor_coefficients_low_to_high": [
+        1,
+        9,
+        17,
+        18,
+        11,
+        1
+      ],
+      "x_coefficients_low_to_high": [
+        11,
+        15,
+        5,
+        7,
+        11
+      ]
+    },
+    {
+      "cover_key_monic_q0_q1_and_scalar_character": [
+        13,
+        7,
+        18
+      ],
+      "reduced_quadratic_coefficients_low_to_high": [
+        16,
+        13,
+        10
+      ],
+      "removed_square_factor_coefficients_low_to_high": [
+        15,
+        8,
+        3,
+        2,
+        0,
+        1
+      ],
+      "x_coefficients_low_to_high": [
+        13,
+        15,
+        17,
+        11,
+        7
+      ]
+    }
+  ],
+  "triple_collision_cover_count": 0
+}

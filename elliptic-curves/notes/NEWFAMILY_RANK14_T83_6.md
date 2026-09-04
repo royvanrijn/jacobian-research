@@ -105,6 +105,6 @@ The global minimal model has root number `+1` and a 169-bit absolute discriminan
 
 ## Current follow-up
 
-A deeper H16/H18/H20 search is being used as a control and neighborhood probe. Since the exact rank is now proved to be 14, no further rational point on this same curve can raise its rank: any new points found at larger search height must lie in the established rank-14 Mordell-Weil group.
+A deeper H16/H18/H20 search is being used as a control and neighborhood probe. Since the exact rank is now proved to be 14, no further rational point on this same curve can raise its rank. Further points lie in the rational span of the displayed subgroup modulo torsion, but may enlarge its finite index: full saturation is a separate claim.
 
 The more promising next rank-search targets are the six specializations in `newfamily_exact_subgroup_rank_gain_batch_v1.json` with certified subgroup rank at least 13, especially those with small point sizes and many unused Schur hits.

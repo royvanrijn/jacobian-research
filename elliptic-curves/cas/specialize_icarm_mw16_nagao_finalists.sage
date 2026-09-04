@@ -4,8 +4,10 @@
 This is the bridge between the cheap local sieve and bounded half-lattice
 recovery.  It reconstructs each parent quartic once, evaluates the selected
 saturated generic MW16 basis at every finalist and groups exact Q-isomorphic
-raw fibres.  Global minimization is intentionally deferred until a candidate
-returns an independent direction, immediately before its residual-Selmer gate.
+raw fibres.  The output authorizes only a frozen arithmetic-size diagnostic;
+exact minimal-model transport and renewed section-independence checks are
+required before a candidate may receive a substantive half-lattice budget or
+reach its residual-Selmer gate.
 
 No point search, public complement, target jump label, or Selmer calculation
 is performed here.
@@ -379,15 +381,16 @@ def main() -> None:
         "structural_failures": failures,
         "candidates": records,
         "next_gate": {
-            "stage": "bounded_half_lattice_jump_recovery",
+            "stage": "bounded_half_lattice_arithmetic_size_diagnostic",
             "authorized_search": (
-                "complete exact maximum-depth MW16 stratum at reduced-coordinate "
-                "height at most 100000 and at most 15 seconds per chart"
+                "one frozen raw-model maximum-depth MW16 diagnostic with no "
+                "mathematical inference from timeout or bounded miss"
             ),
-            "after_positive_recovery": (
-                "compute the global minimal model, transport MW16 plus the recovered "
-                "points, then run the complete residual 2-Selmer gate before any "
-                "adaptive or unrestricted expensive continuation"
+            "required_before_substantive_recovery_or_promotion": (
+                "compute an exact global minimal or comparably reduced Q-isomorphic "
+                "model, transport MW16, and re-prove all section identities and "
+                "independence; only an exact quotient positive then reaches the "
+                "complete residual 2-Selmer gate"
             ),
         },
         "inputs": {
@@ -407,7 +410,8 @@ def main() -> None:
             "Every successful row has sixteen exact specialized generic points on its raw short model.",
             "The generic height form is the saturated function-field MW16 form; specialization independence is checked at the next gate.",
             "Structural failures are excluded from this chart implementation, not asserted to have low rank.",
-            "Exact Q-isomorphism deduplication uses the raw fibres; global minimization is deferred until after positive half-lattice recovery.",
+            "Exact Q-isomorphism deduplication uses the raw fibres; these rows are not minimized and authorize only the frozen arithmetic-size diagnostic.",
+            "Exact minimal-model transport and renewed section-independence checks precede any substantive recovery budget or promotion.",
             "No point search, public-complement comparison, rank jump, minimization, or Selmer computation occurs here.",
         ],
         "reproducing_command": (

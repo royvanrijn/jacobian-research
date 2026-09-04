@@ -1,0 +1,619 @@
+{
+  "cover": {
+    "anchor_base_t": "-9529/5471",
+    "anchor_id": "historical-rank28",
+    "anchor_parameter_r": "0",
+    "certificate_sha256": "7b94bf9b3dec377ce118c64e4455c6e2f089e88108cdabc9b3c5ca16c3a94b27",
+    "certificate_source": "/home/royvanrijn/src/jacobian-research/artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-covers-v1.json",
+    "curve_id": null,
+    "displayed_anchor_jump_over_MW17": 11,
+    "generic_rank_lower_bound": 18,
+    "label": "orbit-15a68",
+    "map_degree": 2,
+    "t_of_r": {
+      "denominator_coefficients_low_to_high": [
+        "4821680433946688277570642397441/1161735039010253075997447471653000",
+        "42281013860219467336372810981/318516278288316507767532664500",
+        "1"
+      ],
+      "numerator_coefficients_low_to_high": [
+        "-3534291758082922507459280877324253/488911722955776506060156547493351000",
+        "-5785607902366825396921082833/25481302263065320621402613160",
+        "-9529/5471"
+      ]
+    }
+  },
+  "final_survivor_count": 20,
+  "finalists": [
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-115280828228576571249607398885461006658011/66060035428237378320852059221058324108320",
+      "base_t_projective_pair": [
+        -115280828228576571249607398885461006658011,
+        66060035428237378320852059221058324108320
+      ],
+      "block_score_units_1e12": [
+        4561627176377,
+        5278877864033,
+        4982861907188
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "-401/294",
+      "projective_height": 401,
+      "projective_pair": [
+        -401,
+        294
+      ],
+      "total_score": 14.823366947598,
+      "total_score_units_1e12": 14823366947598
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-7885960375950767075388742000634193582124271/4523260848909082803717212782249273136538976",
+      "base_t_projective_pair": [
+        -7885960375950767075388742000634193582124271,
+        4523260848909082803717212782249273136538976
+      ],
+      "block_score_units_1e12": [
+        4563825164232,
+        5220824170100,
+        4634533181934
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "-707/274",
+      "projective_height": 707,
+      "projective_pair": [
+        -707,
+        274
+      ],
+      "total_score": 14.419182516266,
+      "total_score_units_1e12": 14419182516266
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-854616259757877971406267878838543915122042/490319352155651161314457843249384612069777",
+      "base_t_projective_pair": [
+        -854616259757877971406267878838543915122042,
+        490319352155651161314457843249384612069777
+      ],
+      "block_score_units_1e12": [
+        4459244540577,
+        5151763237056,
+        4742335847821
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "-801/232",
+      "projective_height": 801,
+      "projective_pair": [
+        -801,
+        232
+      ],
+      "total_score": 14.353343625454,
+      "total_score_units_1e12": 14353343625454
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-834777435781633173868362752526724460826538/480401345385997607754814610186688059668971",
+      "base_t_projective_pair": [
+        -834777435781633173868362752526724460826538,
+        480401345385997607754814610186688059668971
+      ],
+      "block_score_units_1e12": [
+        4525574839307,
+        4908407059708,
+        4724422606150
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "443/501",
+      "projective_height": 501,
+      "projective_pair": [
+        443,
+        501
+      ],
+      "total_score": 14.158404505165,
+      "total_score_units_1e12": 14158404505165
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-4390583210099321177331970275752629012316/2516138662490708348084684605234509593383",
+      "base_t_projective_pair": [
+        -4390583210099321177331970275752629012316,
+        2516138662490708348084684605234509593383
+      ],
+      "block_score_units_1e12": [
+        4488975082811,
+        4822805376523,
+        4563544138731
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "-103/73",
+      "projective_height": 103,
+      "projective_pair": [
+        -103,
+        73
+      ],
+      "total_score": 13.875324598065,
+      "total_score_units_1e12": 13875324598065
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-5161227495835232283099441826989434842629824/2960315806679470752001268143793099549372845",
+      "base_t_projective_pair": [
+        -5161227495835232283099441826989434842629824,
+        2960315806679470752001268143793099549372845
+      ],
+      "block_score_units_1e12": [
+        4560023108270,
+        4410655689143,
+        4860709015554
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "-701/279",
+      "projective_height": 701,
+      "projective_pair": [
+        -701,
+        279
+      ],
+      "total_score": 13.831387812967,
+      "total_score_units_1e12": 13831387812967
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-323546407248207239613221002884960319202797/185428258143664951077673870851201116981313",
+      "base_t_projective_pair": [
+        -323546407248207239613221002884960319202797,
+        185428258143664951077673870851201116981313
+      ],
+      "block_score_units_1e12": [
+        4598997454063,
+        4427983933384,
+        4766843318414
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "-310/213",
+      "projective_height": 310,
+      "projective_pair": [
+        -310,
+        213
+      ],
+      "total_score": 13.793824705861,
+      "total_score_units_1e12": 13793824705861
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-95289406825986011896717967485354245081430/54654817463342344792165502480125866237101",
+      "base_t_projective_pair": [
+        -95289406825986011896717967485354245081430,
+        54654817463342344792165502480125866237101
+      ],
+      "block_score_units_1e12": [
+        4563825164232,
+        4599040011990,
+        4600317220877
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "-213/85",
+      "projective_height": 213,
+      "projective_pair": [
+        -213,
+        85
+      ],
+      "total_score": 13.763182397099,
+      "total_score_units_1e12": 13763182397099
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-1118403640308326502370308630707633462517092/647239902914861715693853671384549732223783",
+      "base_t_projective_pair": [
+        -1118403640308326502370308630707633462517092,
+        647239902914861715693853671384549732223783
+      ],
+      "block_score_units_1e12": [
+        4596622864766,
+        4290250888441,
+        4518869634481
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "125/901",
+      "projective_height": 901,
+      "projective_pair": [
+        125,
+        901
+      ],
+      "total_score": 13.405743387688,
+      "total_score_units_1e12": 13405743387688
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-1237445698536911157561988133387701771451/707788903666013166457077762887626117396",
+      "base_t_projective_pair": [
+        -1237445698536911157561988133387701771451,
+        707788903666013166457077762887626117396
+      ],
+      "block_score_units_1e12": [
+        4560023108270,
+        4614767797193,
+        4230225302720
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "-59/78",
+      "projective_height": 78,
+      "projective_pair": [
+        -59,
+        78
+      ],
+      "total_score": 13.405016208183,
+      "total_score_units_1e12": 13405016208183
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-54809504458209088808179019667373841705/31650189962858890143935052640812156763",
+      "base_t_projective_pair": [
+        -54809504458209088808179019667373841705,
+        31650189962858890143935052640812156763
+      ],
+      "block_score_units_1e12": [
+        4388195773651,
+        4726874508269,
+        4206275198105
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "4/15",
+      "projective_height": 15,
+      "projective_pair": [
+        4,
+        15
+      ],
+      "total_score": 13.321345480025,
+      "total_score_units_1e12": 13321345480025
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-426882974098178875351317567921751934618324/244875342143086705802838795084283793662357",
+      "base_t_projective_pair": [
+        -426882974098178875351317567921751934618324,
+        244875342143086705802838795084283793662357
+      ],
+      "block_score_units_1e12": [
+        4549507978856,
+        4318606422066,
+        4400752212063
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "-201/71",
+      "projective_height": 201,
+      "projective_pair": [
+        -201,
+        71
+      ],
+      "total_score": 13.268866612985,
+      "total_score_units_1e12": 13268866612985
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-5285818252429288494958538678788123151360897/3045042255734794269829720556070249298576897",
+      "base_t_projective_pair": [
+        -5285818252429288494958538678788123151360897,
+        3045042255734794269829720556070249298576897
+      ],
+      "block_score_units_1e12": [
+        4598997454063,
+        4877913319724,
+        3731334233929
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "358/629",
+      "projective_height": 629,
+      "projective_pair": [
+        358,
+        629
+      ],
+      "total_score": 13.208245007716,
+      "total_score_units_1e12": 13208245007716
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-126254484349592513439035456311960187514673/73100771763281703448987688643116947362689",
+      "base_t_projective_pair": [
+        -126254484349592513439035456311960187514673,
+        73100771763281703448987688643116947362689
+      ],
+      "block_score_units_1e12": [
+        4564549185100,
+        4841992794446,
+        3753861037012
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "22/613",
+      "projective_height": 613,
+      "projective_pair": [
+        22,
+        613
+      ],
+      "total_score": 13.160403016558,
+      "total_score_units_1e12": 13160403016558
+    },
+    {
+      "bad_reduction_prime_count": 1,
+      "base_t": "-36286315812866354199050044391308681212959/20772283052718725908427697090646259313903",
+      "base_t_projective_pair": [
+        -36286315812866354199050044391308681212959,
+        20772283052718725908427697090646259313903
+      ],
+      "block_score_units_1e12": [
+        4550935445521,
+        4088678755782,
+        4270680036416
+      ],
+      "good_prime_count": 21,
+      "is_certified_anchor": false,
+      "parameter": "-282/301",
+      "projective_height": 301,
+      "projective_pair": [
+        -282,
+        301
+      ],
+      "total_score": 12.910294237719,
+      "total_score_units_1e12": 12910294237719
+    },
+    {
+      "bad_reduction_prime_count": 1,
+      "base_t": "-9529/5471",
+      "base_t_projective_pair": [
+        -9529,
+        5471
+      ],
+      "block_score_units_1e12": [
+        3383400810440,
+        4572543227074,
+        4401614479916
+      ],
+      "good_prime_count": 21,
+      "is_certified_anchor": false,
+      "parameter": "infinity",
+      "projective_height": 1,
+      "projective_pair": [
+        1,
+        0
+      ],
+      "total_score": 12.35755851743,
+      "total_score_units_1e12": 12357558517430
+    },
+    {
+      "bad_reduction_prime_count": 1,
+      "base_t": "-9529/5471",
+      "base_t_projective_pair": [
+        -9529,
+        5471
+      ],
+      "block_score_units_1e12": [
+        3383400810440,
+        4572543227074,
+        4401614479916
+      ],
+      "good_prime_count": 21,
+      "is_certified_anchor": true,
+      "parameter": "0/1",
+      "projective_height": 1,
+      "projective_pair": [
+        0,
+        1
+      ],
+      "total_score": 12.35755851743,
+      "total_score_units_1e12": 12357558517430
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-1665018027175958032942680165512439803288009/957649992685048525620781776261924281043145",
+      "base_t_projective_pair": [
+        -1665018027175958032942680165512439803288009,
+        957649992685048525620781776261924281043145
+      ],
+      "block_score_units_1e12": [
+        4499646353035,
+        3619760057210,
+        4193741959545
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "601/496",
+      "projective_height": 601,
+      "projective_pair": [
+        601,
+        496
+      ],
+      "total_score": 12.31314836979,
+      "total_score_units_1e12": 12313148369790
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-8917369946220486330014667923249493017792/5014288230244045606156009541915341223167",
+      "base_t_projective_pair": [
+        -8917369946220486330014667923249493017792,
+        5014288230244045606156009541915341223167
+      ],
+      "block_score_units_1e12": [
+        4475361343232,
+        3840002980810,
+        3900678105767
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "-23/101",
+      "projective_height": 101,
+      "projective_pair": [
+        -23,
+        101
+      ],
+      "total_score": 12.216042429809,
+      "total_score_units_1e12": 12216042429809
+    },
+    {
+      "bad_reduction_prime_count": 0,
+      "base_t": "-11660638200413074362047459468136730360/6740299812232662363602064828806825507",
+      "base_t_projective_pair": [
+        -11660638200413074362047459468136730360,
+        6740299812232662363602064828806825507
+      ],
+      "block_score_units_1e12": [
+        4366484281747,
+        3498074046980,
+        3983255104856
+      ],
+      "good_prime_count": 22,
+      "is_certified_anchor": false,
+      "parameter": "1/5",
+      "projective_height": 5,
+      "projective_pair": [
+        1,
+        5
+      ],
+      "total_score": 11.847813433583,
+      "total_score_units_1e12": 11847813433583
+    }
+  ],
+  "model": {
+    "coordinate": "elkies_2026_published_t",
+    "source": "/home/royvanrijn/src/jacobian-research/elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
+    "source_sha256": "6f4d8d9d85a5b6880a1f6c1381c7ed8988972e8c6ba551109d745dc0013c9869"
+  },
+  "proof_boundary": "The conic map, r=0 anchor, generic eighteenth section, and nonzero anchor class are exact in the source certificate. Nagao scores and staged survival are heuristics; finalists require exact specialization and independence certificates before promotion.",
+  "reproducing_command": "elkies-k3/scripts/search_r17_extreme_anchored_mw18_nagao.py --historical-rank28 --numerator-bound 1000 --denominator-bound 1000 --height-bucket-width 100 --finalists 100 --output artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-historical-rank28-orbit15a68-h1000-v1.json",
+  "runtime_seconds": 3.759524438995868,
+  "schema": "elkies-k3.r17-extreme-anchored-mw18-nagao-sieve.v1",
+  "search": {
+    "denominator_bound": 1000,
+    "height_bucket_width": 100,
+    "keep_per_bucket": [
+      32,
+      16,
+      8
+    ],
+    "numerator_bound": 1000,
+    "prime_blocks": [
+      [
+        19,
+        41,
+        43,
+        61,
+        71,
+        73,
+        79,
+        83
+      ],
+      [
+        89,
+        107,
+        113,
+        127,
+        131,
+        137,
+        139,
+        151
+      ],
+      [
+        157,
+        163,
+        167,
+        173,
+        179,
+        181,
+        191,
+        193,
+        197
+      ]
+    ],
+    "rejected_primes": [
+      {
+        "block": 1,
+        "prime": 41,
+        "reason": "anchored_cover_map_bad_or_indeterminate_mod_prime"
+      },
+      {
+        "block": 1,
+        "prime": 61,
+        "reason": "anchored_cover_map_bad_or_indeterminate_mod_prime"
+      },
+      {
+        "block": 1,
+        "prime": 73,
+        "reason": "anchored_cover_map_bad_or_indeterminate_mod_prime"
+      }
+    ]
+  },
+  "stages": [
+    {
+      "cap_per_height_bucket": 32,
+      "height_bucket_count": 10,
+      "parameters_per_second": 328255.83700054896,
+      "pareto_insertions": 1286,
+      "population_scored": 1216768,
+      "primes": [
+        19,
+        43,
+        71,
+        79,
+        83
+      ],
+      "retained_count": 51,
+      "runtime_seconds": 3.7067672919947654,
+      "stage": 1
+    },
+    {
+      "cap_per_height_bucket": 16,
+      "height_bucket_count": 10,
+      "parameters_per_second": 150945.17232667995,
+      "pareto_insertions": 50,
+      "population_scored": 51,
+      "primes": [
+        89,
+        107,
+        113,
+        127,
+        131,
+        137,
+        139,
+        151
+      ],
+      "retained_count": 24,
+      "runtime_seconds": 0.00033787102438509464,
+      "stage": 2
+    },
+    {
+      "cap_per_height_bucket": 8,
+      "height_bucket_count": 10,
+      "parameters_per_second": 137041.03199542928,
+      "pareto_insertions": 24,
+      "population_scored": 24,
+      "primes": [
+        157,
+        163,
+        167,
+        173,
+        179,
+        181,
+        191,
+        193,
+        197
+      ],
+      "retained_count": 20,
+      "runtime_seconds": 0.00017513002967461944,
+      "stage": 3
+    }
+  ],
+  "status": "PASS_BOUNDED_HEURISTIC_EXTREME_ANCHORED_MW18_NAGAO_SIEVE"
+}

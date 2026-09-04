@@ -299,6 +299,11 @@ def build() -> dict[str, Any]:
             "relation_chunk_size": 64,
             "relation_timeout_seconds": 180.0,
             "finite_reduction_prime_bound": 1_000,
+            "quartic_preprocessing": (
+                "none: exact PARI hyperellratpoints runs on the denominator-cleared pointed "
+                "quartic itself; exact canaries showed that preprocessing, not the bounded "
+                "point search, exhausted 15 and 60 second envelopes on 07ca9"
+            ),
             "normalization_policy": (
                 "certify and classify on the p=2-minimal-to-short model; 074d9 also searches there, "
                 "while other exact direct-family charts search on the direct short integral model "
@@ -328,7 +333,7 @@ def build() -> dict[str, Any]:
             "forbidden_rescan": "the 121,589,944-parameter H=10000 scan is not run by this campaign",
             "checkpoint_unit": "one completed fibre per chunk file rewrite",
             "worker_wall_timeout_seconds": 7_200,
-            "worker_address_space_bytes": 16_000_000_000,
+            "worker_address_space_bytes": 24_000_000_000,
         },
         "claim_boundary": [
             "A score changes only after exact equation checks and an exact finite-reduction independence certificate.",

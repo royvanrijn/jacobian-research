@@ -19,7 +19,9 @@ and its exact replay
 the CAS-independent GF(2) layer.  Every relation has both its ordered
 prime-ideal valuation-parity row and a reproducible principal generator.  Its
 sparse elimination returns a dependency as the actual list of principal
-generators whose product is a unit modulo squares.  The curve-273 pool audit
+generators whose product has even valuations on the declared complete support.
+Such a product need not be a unit modulo global squares: its square-root
+ideal can represent a nontrivial class in `Cl(K)[2]`. The curve-273 pool audit
 now prints this product for each independent LP-free relation; it no longer
 reports an anonymous incidence-vector dependency.
 
@@ -113,8 +115,9 @@ the same zero gain beyond the canonical quotient baseline; its 854
 non-S-kernel products have an 839-dimensional norm-square kernel, all explicit
 global squares. This is a bounded negative result for that exact family, not
 a completeness claim. The collector now removes the associate pair `alpha`
-and `-alpha` before merging—otherwise their product gives the tautological
-global square `-alpha^2`—and rejects an element divisible by every prime above
+and `-alpha` before merging: their product `-alpha^2` is the negative of a
+square and has negative norm in a cubic field, so it fails the square-norm
+condition. It also rejects an element divisible by every prime above
 its selected rational special prime, since that is merely a canonical `(p)`
 multiple. It can sample degree-two special ideals or products `Q_i Q_(i+1)`
 around a special-ideal graph cycle. The latter modes are the next
@@ -395,11 +398,14 @@ python3 elliptic-curves/cas/audit_residual_cassels_tate.py \
 ```
 
 The input names `known_mw_rank`, the `residual_basis`, an alternating
-`cassels_tate_matrix`, the pairing algorithm, and whether the basis has been
-certified by the preceding global/local computation. The audit derives the
-radical and hence the post-pairing rank upper bound. It calls a nondegenerate
-residual pairing an exact-known-rank result only with that basis certification;
-otherwise it remains an unchecked pairing audit. A nonempty `cover_searches`
+`cassels_tate_matrix`, `pairing_algorithm`, and `pairing_evidence`. A rank
+conclusion requires all four attestations `residual_selmer_basis_certified`,
+`pairing_entries_certified`, `known_mw_rank_certified`, and `unconditional`
+to be the JSON boolean `true`, for the same curve and specified basis.
+The audit derives the radical by linear algebra; it does not verify the
+underlying arithmetic pairing. Without those certified inputs it emits no
+rank upper bound. A nondegenerate residual pairing gives exact known rank
+only after all these premises hold. A nonempty `cover_searches`
 list is rejected unless it is explicitly recorded as post-pairing.
 
 ## Completeness gate

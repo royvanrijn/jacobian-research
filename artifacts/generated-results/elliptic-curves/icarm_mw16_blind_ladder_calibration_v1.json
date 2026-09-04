@@ -1,0 +1,133 @@
+{
+  "claim_boundary": [
+    "Atlas rank lower bounds and jump labels are loaded only here, after the blind searches completed.",
+    "The five target curves, not nine coordinate presentations, are the statistical observations.",
+    "This purposive five-curve calibration supports detector engineering, not a population success-rate estimate.",
+    "Matching a demonstrated jump lower bound does not prove the target curve has no further rational directions.",
+    "The unrun 8184-chart curve-401 adaptive wave is recorded as unrun, not inferred from the other curves.",
+    "The prospective zero is wholly timeout-censored and supplies no negative rank or Nagao-ordering evidence.",
+    "No prospective candidate reaches residual Selmer or expensive continuation."
+  ],
+  "curve_level_summary": {
+    "best_blind_ladder_exact_directions_recovered_total": 54,
+    "best_blind_ladder_full_recovery_curve_count": 4,
+    "demonstrated_jump_directions_total": 55,
+    "initial_exact_directions_recovered_total": 38,
+    "initial_full_recovery_curve_count": 2,
+    "initial_within_one_direction_curve_count": 3,
+    "only_remaining_demonstrated_direction": {
+      "complete_next_wave_chart_count": 8184,
+      "complete_next_wave_run": false,
+      "count": 1,
+      "curve_id": 401
+    }
+  },
+  "curve_results": [
+    {
+      "adaptive_status": "complete_five_bit_wave_then_declared_stop",
+      "atlas_demonstrated_jump_over_mw16": 14,
+      "atlas_rank_lower_bound": 30,
+      "best_blind_ladder_exact_quotient_rank_recovered": 14,
+      "curve_id": 398,
+      "initial_exact_quotient_rank_recovered": 5,
+      "initial_shortfall_from_demonstrated_jump": 9,
+      "parent_ids": [
+        "curve398-p16875",
+        "curve398-p63669"
+      ],
+      "presentation_count": 2,
+      "remaining_shortfall_from_demonstrated_jump": 0
+    },
+    {
+      "adaptive_status": "complete_five_bit_wave",
+      "atlas_demonstrated_jump_over_mw16": 12,
+      "atlas_rank_lower_bound": 28,
+      "best_blind_ladder_exact_quotient_rank_recovered": 12,
+      "curve_id": 400,
+      "initial_exact_quotient_rank_recovered": 5,
+      "initial_shortfall_from_demonstrated_jump": 7,
+      "parent_ids": [
+        "curve400-p53042",
+        "curve400-p62992"
+      ],
+      "presentation_count": 2,
+      "remaining_shortfall_from_demonstrated_jump": 0
+    },
+    {
+      "adaptive_status": "not_run_initial_ten_bit_quotient",
+      "atlas_demonstrated_jump_over_mw16": 11,
+      "atlas_rank_lower_bound": 27,
+      "best_blind_ladder_exact_quotient_rank_recovered": 10,
+      "curve_id": 401,
+      "initial_exact_quotient_rank_recovered": 10,
+      "initial_shortfall_from_demonstrated_jump": 1,
+      "parent_ids": [
+        "curve401-p57487"
+      ],
+      "presentation_count": 1,
+      "remaining_shortfall_from_demonstrated_jump": 1
+    },
+    {
+      "adaptive_status": "not_needed_initial_full_recovery",
+      "atlas_demonstrated_jump_over_mw16": 10,
+      "atlas_rank_lower_bound": 26,
+      "best_blind_ladder_exact_quotient_rank_recovered": 10,
+      "curve_id": 542,
+      "initial_exact_quotient_rank_recovered": 10,
+      "initial_shortfall_from_demonstrated_jump": 0,
+      "parent_ids": [
+        "curve542-p30486"
+      ],
+      "presentation_count": 1,
+      "remaining_shortfall_from_demonstrated_jump": 0
+    },
+    {
+      "adaptive_status": "not_needed_initial_full_recovery",
+      "atlas_demonstrated_jump_over_mw16": 8,
+      "atlas_rank_lower_bound": 24,
+      "best_blind_ladder_exact_quotient_rank_recovered": 8,
+      "curve_id": 548,
+      "initial_exact_quotient_rank_recovered": 8,
+      "initial_shortfall_from_demonstrated_jump": 0,
+      "parent_ids": [
+        "curve548-p31627",
+        "curve548-p54835",
+        "curve548-p63647"
+      ],
+      "presentation_count": 3,
+      "remaining_shortfall_from_demonstrated_jump": 0
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-icarm-11952-norm8-a1-mw16-atlas-v1.json": "f73088926de9e5ed5236523bec504c3dbf76bdbf65ae14f86a0830bc2eac82e6",
+    "artifacts/generated-results/elliptic-curves/curve398_mw16_adaptive_half_lattice_blind_v1.json": "48e40bb4a0f39e7834c96f416592de7d5c645eede49ed6aec34cdd40cdc3c960",
+    "artifacts/generated-results/elliptic-curves/curve398_mw16_adaptive_half_lattice_verification_v1.json": "9cf6b5e8b874a38e2ed2bc8aa9278a17386eef4343dedf8b3c3467f932bba7f0",
+    "artifacts/generated-results/elliptic-curves/icarm_mw16_curve400_adaptive_calibration_v1.json": "39467a30483b6eed824b5532d95023aafde5f6d709eaf5e544e0edf560aec190",
+    "artifacts/generated-results/elliptic-curves/icarm_mw16_nagao_finalist_half_lattice_h300_v1.json": "8734a23c535a31232cf0322e87e13e53f0bcc2e00d299ef48be6dced2d97c953",
+    "artifacts/generated-results/elliptic-curves/icarm_mw16_parent_ladder_blind_v1.json": "ffccc9eb7787f3858bc597eb97953ada1d1c87faa7d1cd30a9a44871559a93c3",
+    "artifacts/generated-results/elliptic-curves/icarm_mw16_parent_presentation_audit_v1.json": "687f57e70bf4bcb8668fe37018b89ca125906f45354bc1bd61ff59fc4f079bb9",
+    "elliptic-curves/cas/verify_icarm_mw16_blind_ladder_calibration.py": "f79edf980e432bc2534f10989e112112cbfce4192d53899c3a76328160804f6f"
+  },
+  "observation_unit": {
+    "curve_count": 5,
+    "exact_fibration_class_count": 5,
+    "presentation_count": 9,
+    "primary": "target_curve",
+    "pseudoreplicate_rule": "repeated coordinate presentations are never counted as independent outcomes"
+  },
+  "prospective_gate": {
+    "chart_status_counts": {
+      "bounded_search_timeout": 856
+    },
+    "exact_positive_candidate_count": 0,
+    "exact_specialized_fibre_count": 104,
+    "fail_closed_candidate_count": 0,
+    "nagao_finalist_count": 104,
+    "next_engineering_gate": "exact Q-isomorphic model and section transport that materially reduces arithmetic size before any larger half-lattice budget",
+    "residual_selmer_calls_authorized": 0,
+    "wholly_timeout_censored": true
+  },
+  "reproducing_command": "python3 elliptic-curves/cas/verify_icarm_mw16_blind_ladder_calibration.py --check",
+  "schema": "elliptic-curves.icarm-mw16-blind-ladder-calibration.v1",
+  "status": "PASS_EXACT_FIVE_CURVE_BLIND_LADDER_CALIBRATION"
+}

@@ -421,10 +421,13 @@ preferred H3 continuation.
 
 The determinant-948 equation routes are complete controls.  Use the compact
 published chart and the native alternate-Q80 fibres for specialization, but
-compute the actual quotient `Sel_2(E_t)/<P1,...,P17>` before any cover or
-expensive point search. Residual dimension below 15 rejects a rank-32
-candidate; a timeout, incomplete class ledger, or norm-one signature is not a
-pass.
+keep the proof and search-budget gates separate.  A certified actual quotient
+`Sel_2(E_t)/<P1,...,P17>` of dimension below 15 rejects a rank-32 candidate.
+A timeout, incomplete class ledger, or norm-one signature is scheduling
+information only: it neither passes nor rejects the proof gate and does not
+block a separately finite, checkpointed point search.  Fifteen exactly
+certified quotient directions prove rank at least 32 without a Selmer upper
+bound.
 
 The first new construction milestone is a planner-found arithmetic MW17
 fibration on a different NS.  Arithmetic NS0024 over `QQ` is closed

@@ -18,7 +18,8 @@ search framework. The repository has:
 4. exact positive controls at all four disclosed high-rank parameters, with
    quotient gains `8,9,10,11` beyond the generic rank 17;
 5. a complete compact-`t`, height-10000, three-ensemble Nagao calibration;
-6. a fail-closed residual 2-Selmer gate before expensive point search;
+6. a fail-closed residual 2-Selmer exclusion gate, separate from finite
+   point-search budgets;
 7. an explicit eighteenth section and rational parameter on the first conic;
 8. both new sections on the paired cover, explicit `E0 -> t` maps, four
    independent `E0` generators, and a modular Mordell--Weil sieve.
@@ -108,10 +109,14 @@ Sel_2(E_t) / <P1,...,P17>.
 
 Rank 32 requires residual dimension at least 15. A completed unconditional
 2-descent with residual dimension below 15 is therefore an exact rejection.
-Only a result at least 15 authorizes two-cover solving or expensive point
-search on the same minimal model. The BNF-free Kummer signature, norm-one
-cubic elements, incomplete relation ledgers, `K(S,2)` envelopes and candidate
-local classes do not pass this gate.
+A result at least 15 can guide residual-cover solving, but is not a prerequisite
+for a point-based lower-bound search on the same minimal model.  The BNF-free
+Kummer signature, norm-one cubic elements, incomplete relation ledgers,
+`K(S,2)` envelopes, and candidate local classes are scheduling information,
+not passes or exclusions.  Production point search is governed separately by
+explicit chart, height, wall-time, memory, and checkpoint limits.  Fifteen
+independent directions beyond MW17 prove rank at least 32 without waiting for
+an upper bound; complete descent remains necessary for exact-rank closure.
 
 The PARI adapter uses the documented four-component
 [`ellrank`](https://pari.math.u-bordeaux.fr/dochtml/ref-stable/Elliptic_curves.html#ellrank)
@@ -127,11 +132,12 @@ rank-28 fibre, with all 28 certified points supplied. It reached the strict
 300-second limit at 230,338,560 bytes peak observed RSS without returning a
 Selmer dimension. An independent eclib invariant-quartic descent, with
 `selmer_only=True` and both point-search bounds zero, also reached 300 seconds
-without a result at 232,099,840 bytes peak observed RSS. Both pinned results are
-therefore
-`INCOMPLETE_NO_SELMER_BOUND_SEARCH_FORBIDDEN`: it is not an upper bound and it
-does not authorize a point search. The rank-28 control already supplies eleven
-quotient directions and would need four more for rank 32.
+without a result at 232,099,840 bytes peak observed RSS. Both pinned results
+retain the historical status `INCOMPLETE_NO_SELMER_BOUND_SEARCH_FORBIDDEN`: it
+is not an upper bound and supplies no proof-gate decision.  That artifact-local
+label does not veto a separately budgeted production point search.  The
+rank-28 control already supplies eleven quotient directions and would need four
+more for rank 32.
 
 The hidden first cost in PARI was factorization of the monic 2-division cubic
 discriminant. That discriminant is now completely factored as
@@ -160,7 +166,7 @@ Selmer dimension. Its status therefore remains
 8 GB PARI stack reached its strict 1,800-second limit at 6,040,723,456 bytes
 peak observed RSS and likewise returned no dimension. This demonstrates that
 factorization is no longer the active delay, but does not complete the
-class-group/local-solubility layer or authorize search.
+class-group/local-solubility layer or decide the proof gate.
 
 The class-group layer is now independently isolated. A stage-aware PARI
 worker supplies the same proved factor support to `nfinit`, completes
@@ -212,7 +218,7 @@ seven odd primes in 84 owned cover/place workers: 60 return smooth-reduction
 local points, 19 singular lift trees hit the state cap, and five workers time
 out. No local obstruction is found. This pilot validates the one-sided local
 witness path while leaving 24 cases inconclusive; it proves neither
-everywhere-local solubility nor Selmer membership and authorizes no search.
+everywhere-local solubility nor Selmer membership and supplies no exclusion.
 
 The public complement now supplies the matching genuine positive control for
 this layer. For each of its eleven points `Q`, an exact builder forms
@@ -321,13 +327,16 @@ the exact rational `E0` point and exact `t` value.
    by weakest-block performance.
 3. Compute the actual residual 2-Selmer quotient for a survivor. Reject it
    exactly when the residual dimension is below 15.
-4. Solve two-covers or run expensive point search only after the same minimal
-   curve passes that gate.
+4. Use incomplete or conditional descent information only to schedule finite,
+   checkpointed cover/point searches.  A complete residual computation may
+   prioritize explicit covers, but is not a prerequisite for a point-based
+   lower-bound search.
 5. Promote rank 32 only after fifteen certified quotient directions and one
    finite-reduction independence matrix of rank 32.
 
 The first-conic and `E0(Q)` lattice sieves remain supporting base-change
-routes. They do not bypass the residual gate.
+routes. They do not bypass a proved residual upper-bound exclusion or the
+independent point-certification requirements.
 
 Nagao scores, bounded coefficient boxes, and absence of points are experiments,
 not rank bounds.
@@ -341,9 +350,10 @@ The following are provenance or regression paths, not current priorities:
 - fixed-corridor reverse lifts, q323, changed-zero reranking, and compiler
   optimization without a direct specialization use;
 - ICARM fingerprint fitting as a way to infer the now-published family;
-- ungated raw `ratpoints`, slope-box, and two-cover point searches; the direct
-  q12 ratpoints, affine-chart, eclib-search, and slope-slice commands now refuse
-  to start without a same-parameter, same-minimal-model passing gate;
+- unbudgeted raw `ratpoints`, slope-box, and two-cover point searches; active
+  entry points must bind to the exact fibre and enforce finite resource limits,
+  while only a certified upper bound below the target may reject it
+  mathematically;
 - the old low-complexity x-ansatz parameter/point search, now hard parked in
   favor of compact-`t` calibrated scoring followed by descent;
 - further searching of the rank-28 calibration fibre merely to rediscover its
@@ -462,6 +472,6 @@ two commands are bounded supporting heuristic searches.
 <!-- status-consumer: EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS 345b9fb977057133 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-NAGAO-POSITIVE-CONTROL f99c98cdb6b8cd7d -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-S-CLASS-PILOT a791713dc40f7caf -->
-<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 7f8dffe58168acc8 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE f7a8c94736f1b44f -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R18-COVER 6b4ee5bbc1afc01e -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R19-PAIRED f1e135d2ba803e80 -->

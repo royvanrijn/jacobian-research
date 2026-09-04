@@ -7,9 +7,11 @@ commands for every bounded historical scan, is preserved as
 
 ## Environment
 
-The dependency-free checks use the repository virtual environment:
+The Python checks use the repository virtual environment and pinned
+dependencies (including NumPy for lattice and fingerprint tests):
 
 ```sh
+.venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python --version
 ```
 
@@ -19,6 +21,10 @@ restart state belong under the ignored `artifacts/local/elliptic-curves/`
 tree; do not overwrite pinned generated results during an exploratory run.
 
 ## Standard checks
+
+For the bounded external audit, including exact commands and unresolved
+environment/catalogue failures, see
+[`EXTERNAL_AUDIT_2026-09-04.md`](notes/EXTERNAL_AUDIT_2026-09-04.md).
 
 Compile the active Python surface, validate links/status/layout, and run the
 current elliptic-curve regression suite:
@@ -65,7 +71,7 @@ atlas misses.  See
 
 The redacted input and both protocol freezes replay cheaply:
 
-<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER b7518cc41268489a -->
+<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER a2d7034fb8977c18 -->
 
 ```sh
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -93,6 +99,26 @@ its recovered quotient is zero.  The public-complement verifier must run only
 after the blind output hash is sealed; see
 [`R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md`](notes/R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md).
 
+The completed control artifact remains unchanged.  Freeze and preflight the
+production zero-gain rescue addendum over the same 2,239 MW17-jump-v2
+addresses with:
+
+```sh
+python3 elkies-k3/scripts/build_mw17_jump_v2_zero_gain_rescue.py --check
+sage -python elliptic-curves/cas/run_mw17_jump_v2_zero_gain_rescue.sage --check
+python3 -m unittest \
+  elliptic-curves/tests/test_production_search_gates.py \
+  elliptic-curves/tests/test_mw17_jump_v2_zero_gain_rescue.py
+```
+
+One deterministic SHA-256 bucket of eight is assigned before rescue outcomes.
+Assigned clean zeros receive generic class ranks 44--344 in seven batches; on
+first exact escape, the unused portion of the 301-chart allowance switches to
+the established quotient-adaptive policy.  This gives treated zeros the same
+344-chart cap without repeating the parameter census.  The rescue is frozen
+but unrun.
+<!-- status-consumer: EC-K3-MW17-JUMP-V2-ZERO-GAIN-RESCUE 39ac93b60152bf88 -->
+
 ### ICARM curve 356: rank at least 29 and the new rank-29 size record
 
 Replay point membership, trivial torsion, the exact finite-quotient
@@ -100,10 +126,15 @@ independence certificate, global minimality, every local reduction, conductor,
 root number, and the complete reported prime factorizations:
 
 ```sh
+.venv/bin/python elliptic-curves/cas/verify_record_prime_factors.py --check
 PYTHONPATH=elliptic-curves/cas \
-  .venv/bin/python elliptic-curves/cas/verify_icarm_curve356_rank29.py \
-  --verify-primality
+  .venv/bin/python elliptic-curves/cas/verify_icarm_curve356_rank29.py
 ```
+
+The supplemental checker proves the listed factors prime using PARI
+`isprime`. The original producers' optional `--verify-primality` uses SymPy,
+whose test above `2^64` is a probable-prime test; it is preserved for historical
+replay and does not replace the supplement.
 
 Replay the hash-pinned public-source comparison with curve 351 and the
 80-digit PARI height-Gram fingerprint of the first seventeen displayed
@@ -362,13 +393,13 @@ PYTHONPATH=elliptic-curves/cas \
   .venv/bin/python elliptic-curves/cas/check_icarm_curve302_rank31_pinned.py
 ```
 
-To generate an unpinned plain-JSON replay with optional primality checks:
+To generate an unpinned plain-JSON replay with the rigorous factor supplement:
 
 ```sh
+.venv/bin/python elliptic-curves/cas/verify_record_prime_factors.py --check
 PYTHONPATH=elliptic-curves/cas \
   .venv/bin/python elliptic-curves/cas/verify_icarm_curve302_rank31.py \
-  --output artifacts/local/elliptic-curves/icarm_curve302_rank31_v1.json \
-  --verify-primality
+  --output artifacts/local/elliptic-curves/icarm_curve302_rank31_v1.json
 ```
 
 This proves `rank E(Q) >= 31`, not an unconditional exact rank. See
@@ -454,6 +485,97 @@ stability, or generalization to an unseen family.  See
 [`ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md).
 <!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY 75978a18cc26690f -->
 <!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 626a440519ff77f3 -->
+
+### Complete A1/MW16 five-curve blind ladder and prospective parent pencils
+
+Rebuild the outcome-free nine-presentation fixture, replay the initial blind
+ladder, and verify that the nine labels are exactly five fibrations:
+
+```sh
+sage -python elliptic-curves/cas/prepare_icarm_mw16_parent_ladder_inputs.sage --check
+sage -python elliptic-curves/cas/run_icarm_mw16_parent_ladder_blind.sage
+sage -python elliptic-curves/cas/audit_icarm_mw16_parent_presentations.sage --check
+```
+
+Replay the complete 124-chart curve-400 adaptive calibration and open the five
+held-out atlas jump labels only in the final comparison:
+
+```sh
+sage -python elliptic-curves/cas/run_icarm_mw16_curve400_adaptive_calibration.sage
+python3 elliptic-curves/cas/verify_icarm_mw16_blind_ladder_calibration.py --check
+```
+
+The curve-level result is `38/55` demonstrated directions in the initial wave
+and `54/55` after the completed curve-398 and curve-400 adaptive waves.  The
+nine coordinate presentations are nested within five observations.
+
+Replay the height-300 local ordering and the 104 exact specializations:
+
+```sh
+python3 elliptic-curves/cas/sieve_icarm_mw16_parent_presentations_nagao.py --check
+sage -python elliptic-curves/cas/specialize_icarm_mw16_nagao_finalists.sage --check
+```
+
+The raw half-lattice campaign is resumable in contiguous candidate shards.  A
+single eight-shard replay is:
+
+```sh
+for shard in $(seq 0 7); do
+  sage -python elliptic-curves/cas/run_icarm_mw16_nagao_finalist_half_lattice.sage \
+    --candidate-start $((13 * shard)) --maximum-candidates 13 \
+    --height-bound 10000 --timeout-seconds 2 \
+    --output "artifacts/local/elliptic-curves/mw16-finalist-half-lattice/shard-${shard}.json"
+done
+
+python3 elliptic-curves/cas/merge_icarm_mw16_nagao_finalist_half_lattice_shards.py --check
+```
+
+The first prospective wave reaches all 104 fibres but all 856 quartic charts
+time out.  It is wholly censored and proves no negative rank statement.  No
+candidate advances to Selmer or unrestricted point search.  See
+[`ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md`](notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md).
+
+The separate target-free experiment consumes the anonymous family template,
+not the target-bearing parent fixture.  Rebuild its frozen 104-fibre input and
+run the eight checkpoint shards with direct exact quartic coordinates:
+
+```sh
+python3 elliptic-curves/cas/extract_a1_mw16_family_template.py --check
+sage -python elliptic-curves/cas/build_a1_mw16_target_free_parameter_candidates.sage --check
+
+for shard in $(seq 0 7); do
+  sage -python elliptic-curves/cas/run_a1_mw16_target_free_parameter_search.sage \
+    --candidate-start $((13 * shard)) --maximum-candidates 13 \
+    --height-bound 100000 --timeout-seconds 15 \
+    --output "artifacts/local/elliptic-curves/a1-mw16-target-free-parameter-search-direct/shard-${shard}.json"
+done
+
+python3 elliptic-curves/cas/merge_a1_mw16_target_free_parameter_search_shards.py --check
+```
+
+All 856 charts finish, with zero affine points, zero recovered quotient
+directions beyond MW16, and zero failed-closed rows.  The result is a bounded
+null search and supplies no rank upper bound.
+<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER c5b0b57ee01c5c23 -->
+
+### Fixed cubic field, varying curve
+
+Replay the bounded class-group-free local-intersection experiment on the
+pinned Fermigier rank-20 anchor:
+
+```sh
+sage -python elliptic-curves/cas/run_fixed_cubic_field_curve_family.sage --check
+python3 -m unittest elliptic-curves/tests/test_fixed_cubic_field_curve_family.py
+```
+
+For `u=-2,-1,0,1,2`, the exact whole-span kernels have dimensions
+`13,18,20,13,13`.  The runner checks every prime in the complete support,
+including primes newly introduced by the discriminant multiplier, and fails
+closed unless each local point image reaches its known theoretical dimension.
+It does not compute a class group, full Selmer group, rational point on a new
+curve, or new rank bound.  See
+[`FIXED_CUBIC_FIELD_VARYING_CURVE_EXPERIMENT_2026-09-04.md`](notes/FIXED_CUBIC_FIELD_VARYING_CURVE_EXPERIMENT_2026-09-04.md).
+<!-- status-consumer: EC-FIXED-CUBIC-VARYING-CURVE-LOCAL-KUMMER 46ca45db3e702eb6 -->
 
 ### Comparative height lattices: ranks 28--31
 
@@ -1479,14 +1601,15 @@ lanes with:
 
 The compact result certifies one quotient direction beyond the generic 17 on
 seven different fibres: three frozen-rule rows, three ordinary-Nagao controls,
-and one random control. No unrestricted point search is authorized without a
-completed residual 2-Selmer gate. Exact tier commands, hashes, and the single
-censored split row are in
+and one random control.  A production follow-up needs a finite checkpointed
+budget and exact independence checks; incomplete residual descent may schedule
+but cannot veto it.  Exact tier commands, hashes, and the single censored split
+row are in
 [`notes/R17_FROZEN_NAGAO_SHELL_2026-09-02.md`](notes/R17_FROZEN_NAGAO_SHELL_2026-09-02.md).
 
 ### R17 quotient-aware record controls
 
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 eda7a0053b31b7c9 -->
 
 ```sh
 python3 elkies-k3/scripts/build_r17_quotient_rank_escape_detector_v2_sample.py --check

@@ -51,8 +51,10 @@ I=101232^4u^4c_4(C_u),\qquad
 J=2\,101232^6u^6c_6(C_u).
 \]
 
-Thus the raw quartic Jacobian differs by the weighted scale
-\((202464u)^{12}\).  The factor \(u^{12}\) and the twelfth-power constant are
+For the convention \(Y^2=X^3-27IX-27J\), the raw Jacobian discriminant
+is \((607392u)^{12}\Delta(C_u)\), since its \(c_4\) is \(1296I\) and
+\(607392=6\cdot101232\). The previously printed \(202464\) missed a factor
+of three in the coordinate scale. The factor \(u^{12}\) and the twelfth-power constant are
 nonminimal coordinate artifacts, not usable bad-fiber geometry.  The
 canonical discriminant is instead the primitive irreducible even degree-20
 polynomial \(\Phi(u)\) whose exact coefficients are stored and checked in the

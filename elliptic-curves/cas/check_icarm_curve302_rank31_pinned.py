@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from verify_icarm_curve302_rank31 import build_certificate  # noqa: E402
+from verify_record_prime_factors import build_certificate as prove_record_factors  # noqa: E402
 
 PINNED = (
     ROOT
@@ -39,6 +40,7 @@ def main() -> None:
     expected = (json.dumps(computed, indent=2, sort_keys=True) + "\n").encode()
     if expected != rendered:
         raise SystemExit("recomputed curve-302 certificate differs from pinned JSON")
+    prove_record_factors(timeout=15.0)
     print(
         "R31ICARM|stage=pinned|compressed=PASS|json=PASS|recompute=PASS|"
         "rank_lower_bound=31|status=PASS",

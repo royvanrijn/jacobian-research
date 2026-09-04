@@ -2156,8 +2156,8 @@
       "id": "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE",
       "kind": "reproduction",
       "state": "partial",
-      "title": "Fail-closed residual 2-Selmer gate for Elkies rank-32 searches",
-      "scope": "The search policy now distinguishes the actual residual object Sel_2(E_t)/<P1,...,P17> from BNF-free Kummer signatures, norm-one elements, S-class envelopes and incomplete local tests. A completed unconditional backend must attest class-group completeness and every local-solubility condition. Its total 2-Selmer dimension is quotiented by the independently certified 17-dimensional generic Kummer image; residual dimension below 15 is an exact rank-32 rejection, and only dimension at least 15 authorizes residual-cover solving or expensive point search on the same parameter and minimal curve. Direct q12 ratpoints, affine-chart, eclib-search, PARI-cover and normalized slope-slice entry points enforce this gate, while the obsolete pre-descent x-ansatz search is parked. EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER proves the complete 2-division-discriminant factorization and every bad-place image of the known generic points, but explicitly supplies no ambient Selmer upper bound. EC-K3-ELKIES-2026-R28-S-CLASS-PILOT isolates the next obstruction: factor-supplied maximal-order setup is immediate, but PARI class-group relation generation does not complete, and a factor-base-1000 exact principal-relation pilot remains far below a valid generation bound with no noncanonical quotient gain. EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE adds an exact calibration: the eleven globally independent public directions add zero rank to the 53-coordinate bad-place signature, only four odd places and infinity have certified full known-point coverage, and a bounded 12-cover norm-one pilot yields 60 selected local witnesses but 24 inconclusive place tests and no everywhere-local or Selmer class. EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS materializes those eleven genuine point classes as exact X(Q)-theta elements and two-covers with rational witnesses, proving the expected residual Selmer lower bound 11 while supplying no upper bound. The original PARI ellrank and independent Selmer-only eclib runs both reached strict 300-second limits at peak observed RSS 230338560 and 232099840. A factor-supplied PARI backend then removed the hidden discriminant-factorization cost and entered the complete descent immediately with all 28 certified public points, effort zero, and no point search; strict 600-second and 1800-second runs with an 8 GB PARI stack still returned no Selmer dimension, at peak observed RSS 5698514944 and 6040723456. The audited PARI adapter now records ellrank's third output accurately as the even Cassels-pairing quotient rank dim(Sha[2]/2Sha[4]), not the full Sha[2] dimension, and reconstructs the total 2-Selmer dimension using PARI's identity C=r2+T+s behind a fail-closed helper. A source-pinned Magma job replays the generic-17 and generic-plus-public-11 finite-reduction certificates and computes unconditional TwoSelmerGroup(E : Bound := -1) before any covers. It records both the residual dimension modulo the generic 17 and the equivalent unexplained dimension beyond the known rank 28, rejecting below 15 or equivalently below four. Only a passing job calls TwoDescent, with all 28 certified points removed, so it materializes only genuinely unexplained covers; it contains no point search. Magma is absent on the current host, so this is an implemented external path, not a completed Selmer result. These timeouts and backend unavailability are implementation boundaries, not rank upper bounds, and none authorizes search. Rank 32 and the requested rank-32 finite-reduction independence matrix remain open.",
+      "title": "Residual 2-Selmer exclusion gate and separate production search budgets",
+      "scope": "The proof policy distinguishes the actual residual object Sel_2(E_t)/<P1,...,P17> from BNF-free Kummer signatures, norm-one elements, S-class envelopes and incomplete local tests. A completed unconditional backend must attest class-group completeness and every local-solubility condition. Its total 2-Selmer dimension is quotiented by the independently certified 17-dimensional generic Kummer image; residual dimension below 15 is an exact rank-32 rejection. A dimension at least 15 does not prove rank 32, and an incomplete or conditional computation is scheduling information rather than an exclusion. Production point searches have a separate gate requiring an exact fibre/model binding, finite resource limits, checkpoints and exact point certification; they do not require descent completion when no certified upper bound excludes the target. Fifteen independently certified quotient directions prove rank at least 32 regardless of descent state, while exact rank still requires a matching unconditional upper bound. EC-K3-ELKIES-2026-R28-BAD-PLACE-KUMMER proves the complete 2-division-discriminant factorization and every bad-place image of the known generic points, but explicitly supplies no ambient Selmer upper bound. EC-K3-ELKIES-2026-R28-S-CLASS-PILOT isolates the next obstruction: factor-supplied maximal-order setup is immediate, but PARI class-group relation generation does not complete, and a factor-base-1000 exact principal-relation pilot remains far below a valid generation bound with no noncanonical quotient gain. EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE adds an exact calibration: the eleven globally independent public directions add zero rank to the 53-coordinate bad-place signature, only four odd places and infinity have certified full known-point coverage, and a bounded 12-cover norm-one pilot yields 60 selected local witnesses but 24 inconclusive place tests and no everywhere-local or Selmer class. EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS materializes those eleven genuine point classes as exact X(Q)-theta elements and two-covers with rational witnesses, proving the expected residual Selmer lower bound 11 while supplying no upper bound. The original PARI ellrank and independent Selmer-only eclib runs both reached strict 300-second limits at peak observed RSS 230338560 and 232099840. A factor-supplied PARI backend then removed the hidden discriminant-factorization cost and entered the complete descent immediately with all 28 certified public points, effort zero, and no point search; strict 600-second and 1800-second runs with an 8 GB PARI stack still returned no Selmer dimension, at peak observed RSS 5698514944 and 6040723456. The audited PARI adapter now records ellrank's third output accurately as the even Cassels-pairing quotient rank dim(Sha[2]/2Sha[4]), not the full Sha[2] dimension, and reconstructs the total 2-Selmer dimension using PARI's identity C=r2+T+s behind a fail-closed helper. A source-pinned Magma job replays the generic-17 and generic-plus-public-11 finite-reduction certificates and computes unconditional TwoSelmerGroup(E : Bound := -1) before any covers. It records both the residual dimension modulo the generic 17 and the equivalent unexplained dimension beyond the known rank 28, rejecting below 15 or equivalently below four. Only a passing job calls TwoDescent, with all 28 certified points removed, so it materializes only genuinely unexplained covers; it contains no point search. Magma is absent on the current host, so this is an implemented external path, not a completed Selmer result. These timeouts and backend unavailability are implementation boundaries, not rank upper bounds, and do not decide the independent production search-budget gate. Rank 32 and the requested rank-32 finite-reduction independence matrix remain open.",
       "canonical_source": "elkies-k3/ELKIES_2026_R17_PAPER_IMPACT_2026-08-27.md",
       "dependencies": [
         "EC-K3-ELKIES-2026-HIGH-RANK-CALIBRATIONS",
@@ -2174,6 +2174,7 @@
       "artifact_hash": "sha256:910a50bd6c1e37a69d582d0aa7d719227a038e1daf6db92c24e3c8fdd265e341",
       "software_lock": [
         "elliptic-curves/cas/elkies_residual_selmer_gate.py",
+        "elliptic-curves/cas/production_search_gates.py",
         "elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py",
         "elliptic-curves/cas/build_elkies_2026_rank28_bad_place_ledger.py",
         "elliptic-curves/cas/build_elkies_2026_rank28_relative_descent_magma.py",
@@ -2195,6 +2196,7 @@
         "elliptic-curves/scripts/search_q12o5867_section_slope_slices.py",
         "elliptic-curves/scripts/search_q12o5867_low_complexity_x_ansatz.py",
         "elliptic-curves/tests/test_elkies_residual_selmer_gate.py",
+        "elliptic-curves/tests/test_production_search_gates.py",
         "elliptic-curves/tests/test_elkies_rank28_relative_descent.py",
         "elliptic-curves/tests/test_elkies_rank28_s_class_pari.py",
         "elliptic-curves/tests/test_elkies_rank28_local_coverage.py",
@@ -32702,7 +32704,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Complete 11952 norm-eight low-root atlas for eleven priority ICARM targets",
-      "scope": "On the source-identified norm12-orbit-11952 alternate-Q80 rootless/MW17 chart, all 63,917 minimum-norm-eight old-degree-two translation classes are screened against ICARM curves 302, 273, 542, 548, 398, 399, 400, 403, 401, 402, and 10, for 703,087 target--class pairs. An exact shell-through-norm-12 replay, the complete singular-pencil certificate, and primitive-U frame controls correct the prior uniform A1/MW16 label: the atlas contains 1,266 A1/MW16, 8,410 2A1/MW15, 20,348 3A1/MW14, 21,405 4A1/MW13, 9,861 5A1/MW12, 2,280 6A1/MW11, 331 7A1/MW10, and 16 8A1/MW9 classes. Every class has a degree-one section, and each mA1 stratum has semistable fibre configuration m I2+(24-2m) I1. Curve 302 has an exact complete miss in every one of these eight strata; curve 398 is the positive control, hitting priorities 16875 and 63669 in the genuine A1/MW16 stratum. Nine QQ-isomorphic hit presentations compile exactly, all in A1/MW16: priorities 16875 and 63669 for curve 398, 53042 and 62992 for curve 400, 57487 for curve 401, 30486 for curve 542, and 31627, 54835, and 63647 for curve 548. Projective modular no-root witnesses and exact QQ factorization give complete norm-eight misses for 302, 273, 399, 403, 402, and 10. The independent fixed-corridor 2A1/MW15 pencil additionally excludes curve 273 modulo 1009 and curve 302 modulo 1019, but is only an equation-level regression. Completeness is restricted to the norm-eight old-degree-two atlas on source chart 11952; A2/MW15, other old degrees, other trace norms, and other source charts remain outside the theorem. All ICARM ranks and specialization jumps are lower bounds; no exact target-rank or global parent-nonexistence theorem is asserted.",
+      "scope": "On the source-identified norm12-orbit-11952 alternate-Q80 rootless/MW17 chart, all 63,917 minimum-norm-eight old-degree-two translation classes are screened against ICARM curves 302, 273, 542, 548, 398, 399, 400, 403, 401, 402, and 10, for 703,087 target--class pairs. An exact shell-through-norm-12 replay, the complete singular-pencil certificate, and primitive-U frame controls correct the prior uniform A1/MW16 label: the atlas contains 1,266 A1/MW16, 8,410 2A1/MW15, 20,348 3A1/MW14, 21,405 4A1/MW13, 9,861 5A1/MW12, 2,280 6A1/MW11, 331 7A1/MW10, and 16 8A1/MW9 classes. Every class has a degree-one section, and each mA1 stratum has semistable fibre configuration m I2+(24-2m) I1. Curve 302 has an exact complete miss in every one of these eight strata; curve 398 is the positive control, hitting priorities 16875 and 63669 in the genuine A1/MW16 stratum. Nine QQ-isomorphic hit presentations compile exactly, all in A1/MW16: priorities 16875 and 63669 for curve 398, 53042 and 62992 for curve 400, 57487 for curve 401, 30486 for curve 542, and 31627, 54835, and 63647 for curve 548. A later exact PGL2/Weierstrass audit proves that the repeated labels on curves 398, 400, and 548 are one fibration per target, so the nine coordinate presentations represent exactly five fibration classes. Projective modular no-root witnesses and exact QQ factorization give complete norm-eight misses for 302, 273, 399, 403, 402, and 10. The independent fixed-corridor 2A1/MW15 pencil additionally excludes curve 273 modulo 1009 and curve 302 modulo 1019, but is only an equation-level regression. Completeness is restricted to the norm-eight old-degree-two atlas on source chart 11952; A2/MW15, other old degrees, other trace norms, and other source charts remain outside the theorem. All ICARM ranks and specialization jumps are lower bounds; no exact target-rank or global parent-nonexistence theorem is asserted.",
       "canonical_source": "elkies-k3/ICARM_A1_MW16_ATLAS_2026-09-04.md",
       "dependencies": [
         "EC-K3-CURVE398-A1-MW16-RECOVERY",
@@ -32749,6 +32751,64 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-ICARM-MW16-BLIND-LADDER",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Five-fibration MW16 blind ladder and prospective parent-pencil gate",
+      "scope": "The nine genuine A1/MW16 hit labels in the complete 63,917-class ICARM atlas are reconstructed with exact degree-one shells and saturated determinant-474 generic MW16 bases. Exact rational PGL2 base changes, constant square Weierstrass scalings, target-parameter transport, and mutually integral specialized bases prove that the repeated labels on curves 398, 400, and 548 give one fibration per target; all nine labels therefore represent exactly five fibration classes. The nine coordinate presentations remain distinct bounded-height search charts, but their responses are nested within five target-curve observations. A complement-blind initial detector, given only each target curve, sixteen specialized generic sections, and the exact generic MW16 Gram, exhausts M/2M and every exact maximum-depth chart. Its curve-level exact recovered quotient ranks are 5,5,10,10,8 against later-opened demonstrated atlas jumps 14,12,11,10,8 for curves 398,400,401,542,548. Thus the initial wave recovers 38 of 55 demonstrated directions, fully recovers two curves, and comes within one on three. The completed curve-398 adaptive wave adds nine directions, and a new complete curve-400 wave searches all 4*(2^5-1)=124 nonzero quotient lifts with no timeout and gives M16->M21->M28, adding seven directions. Best blind recovery is therefore 54 of 55 demonstrated directions and fully matches four of five atlas lower bounds; the remaining curve-401 complete next wave has 8,184 charts and is explicitly unrun. This purposive five-curve calibration is not a population success-rate estimate, and matching a displayed lower bound is not an exact-rank upper bound. Separately, a cheap three-block Nagao/local ordering evaluates 109,592 primitive height-at-most-300 parameters in each of the nine coordinate charts, retains 104 finalists, and transports the sixteen generic sections exactly to 104 distinct QQ-isomorphism classes. The first prospective half-lattice attempt reaches all 104 fibres and all 856 maximum-depth charts at height 10,000 and two seconds per chart, but every chart times out on 10,140--11,302-bit quartics. It recovers no exact new direction, rejects no fibre structurally, and is wholly censored: it supplies no negative rank or Nagao-ordering evidence. No prospective candidate reaches residual 2-Selmer or expensive continuation. Exact model/section size reduction, or a large-coefficient backend, is the next engineering gate; Nagao-to-unrestricted-point-search is forbidden.",
+      "canonical_source": "elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-ICARM-A1-MW16-ATLAS",
+        "EC-K3-CURVE398-A1-MW16-RECOVERY",
+        "EC-K3-CURVE398-TWO-PARENT-COLLISION"
+      ],
+      "checker": "elliptic-curves/cas/verify_icarm_mw16_blind_ladder_calibration.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:f79edf980e432bc2534f10989e112112cbfce4192d53899c3a76328160804f6f",
+      "software_lock": [
+        "elliptic-curves/cas/prepare_icarm_mw16_parent_ladder_inputs.sage",
+        "elliptic-curves/cas/run_icarm_mw16_parent_ladder_blind.sage",
+        "elliptic-curves/cas/audit_icarm_mw16_parent_presentations.sage",
+        "elliptic-curves/cas/run_icarm_mw16_curve400_adaptive_calibration.sage",
+        "elliptic-curves/cas/verify_icarm_mw16_blind_ladder_calibration.py",
+        "elliptic-curves/cas/sieve_icarm_mw16_parent_presentations_nagao.py",
+        "elliptic-curves/cas/specialize_icarm_mw16_nagao_finalists.sage",
+        "elliptic-curves/cas/run_icarm_mw16_nagao_finalist_half_lattice.sage",
+        "elliptic-curves/cas/merge_icarm_mw16_nagao_finalist_half_lattice_shards.py",
+        "elliptic-curves/tests/test_icarm_mw16_parent_ladder.py",
+        "elliptic-curves/data/icarm_mw16_parent_ladder_blind_inputs_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_mw16_parent_ladder_blind_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_mw16_parent_presentation_audit_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_mw16_curve400_adaptive_calibration_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_mw16_parent_nagao_prefilter_h300_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_mw16_nagao_finalist_specializations_h300_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_mw16_nagao_finalist_half_lattice_h300_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_mw16_blind_ladder_calibration_v1.json"
+      ],
+      "supersedes_notes": [
+        "the nine A1/MW16 atlas hit labels are nine independent fibration observations",
+        "only the curve-398 repeated labels are known to be base-equivalent",
+        "Nagao should feed directly into a giant point search"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/cas/README.md",
+        "elkies-k3/README.md",
+        "elkies-k3/ICARM_A1_MW16_ATLAS_2026-09-04.md",
+        "artifacts/generated-results/elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "ECR31",
       "kind": "theorem",
       "state": "proved",
@@ -32764,7 +32824,7 @@
       "independent_replay": true,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:056dbc90c1490d6457c6573f0367e0fd573da6a2fbafc95e9017f85a7f587e5a",
+      "artifact_hash": "sha256:9e40c4b01376f9714d32771e85203fe128aaa6cb75690dea612b466dda2d0eaa",
       "software_lock": [
         ".python-version",
         "requirements.txt",
@@ -32772,7 +32832,9 @@
         "elliptic-curves/cas/icarm_curve302.py",
         "elliptic-curves/cas/mod2_reduction_independence.py",
         "elliptic-curves/cas/verify_icarm_curve302_rank31.py",
-        "artifacts/generated-results/elliptic-curves/icarm_curve302_rank31_v1.json.gz"
+        "artifacts/generated-results/elliptic-curves/icarm_curve302_rank31_v1.json.gz",
+        "elliptic-curves/cas/verify_record_prime_factors.py",
+        "artifacts/generated-results/elliptic-curves/record_prime_factor_proofs_20260904.json"
       ],
       "supersedes": [],
       "closes_problems": [],
@@ -32806,7 +32868,9 @@
         "requirements.txt",
         "elliptic-curves/cas/icarm_curve356.py",
         "elliptic-curves/cas/analyze_icarm_curve356_lineage.py",
-        "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json"
+        "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json",
+        "elliptic-curves/cas/verify_record_prime_factors.py",
+        "artifacts/generated-results/elliptic-curves/record_prime_factor_proofs_20260904.json"
       ],
       "supersedes": [],
       "closes_problems": [],
@@ -33030,6 +33094,44 @@
       "priority": "primary"
     },
     {
+      "id": "EC-FIXED-CUBIC-VARYING-CURVE-LOCAL-KUMMER",
+      "kind": "example",
+      "state": "proved",
+      "title": "Class-group-free fixed-cubic-field local Kummer intersections",
+      "scope": "For the pinned Fermigier--Mestre rank-at-least-20 anchor, exact transport to y^2=x^3+A*x+B gives an irreducible cubic K=Q(theta) and twenty independent Kummer classes beta_i=x(P_i)-theta. For alpha_u=theta+u*theta^2, direct norm expansion gives F_u(x)=x^3+2*A*u*x^2+(A+3*B*u+A^2*u^2)*x+B+A*B*u^2-B^2*u^3 and disc(F_u)=disc(f)*(1+A*u^2+B*u^3)^2; an explicit inverse generator formula fixes the labelled E_0[2] to E_u[2] identification whenever the multiplier is nonzero. For every integer u with |u|<=2, exact local squareclass calculations check the real place and every prime dividing 2*disc(f)*(1+A*u^2+B*u^3), including all newly bad primes. At each finite place, explicit local points on the raw and p-minimal models span the independently known full dimension of E_u(Q_p)/2E_u(Q_p), so bounded witness search is not used as a completeness assumption. One joint GF(2) kernel on the entire 20-dimensional beta span gives dim W_u=13,18,20,13,13 for u=-2,-1,0,1,2; the u=0 positive control recovers all twenty dimensions and the five curves have distinct j-invariants. The artifact records exact basis masks, cubic representatives, norm square roots, and two-quadric covering inputs for every W_u. No class group, full 2-Selmer group, rational point on a new curve, Mordell--Weil rank lower bound, or exact rank is computed; local survival is not point realization.",
+      "canonical_source": "elliptic-curves/notes/FIXED_CUBIC_FIELD_VARYING_CURVE_EXPERIMENT_2026-09-04.md",
+      "dependencies": [
+        "EC-R20",
+        "EC-CF-NEARMISS-DESCENT-INPUTS",
+        "external: Kummer description of 2-descent and local dimensions of E(Q_v)/2E(Q_v)"
+      ],
+      "checker": "elliptic-curves/cas/run_fixed_cubic_field_curve_family.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:d5c9853b7ed8626af06eed07db59636c659990aacd7c8eb97794308c4c47d4ec",
+      "software_lock": [
+        "elliptic-curves/cas/fixed_cubic_field_curve_family.py",
+        "elliptic-curves/cas/run_fixed_cubic_field_curve_family.sage",
+        "elliptic-curves/tests/test_fixed_cubic_field_curve_family.py",
+        "artifacts/generated-results/elliptic-curves/fixed_cubic_field_fermigier_rank20_local_kummer_u2_v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/cas/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-NF-R14",
       "kind": "example",
       "state": "proved",
@@ -33094,7 +33196,7 @@
       "kind": "example",
       "state": "proved",
       "title": "Exact false negative for incremental CRT height-beam pruning",
-      "scope": "For the four prime groups at 19, 23, 29, and 37 pinned in the regression, incremental width-one beam pruning selects a final shortest rational representative of height 1409. Complete enumeration of all 160 CRT choices instead finds residue 238875 modulo 468901, with exact rational representative 48/53 of height 53 and residues 7,20,2,3. Thus shortest-representative height is not monotone as CRT constraints are added, and a finite height-scored beam can discard the best completed branch. Beam output remains valid as a deterministic candidate-ranking heuristic, but absence from a finite beam is not a mathematical exclusion or completeness certificate. The active elliptic-curve helper has no production callers outside its regression; the analogous q12/orbit5867 projective constructor is explicitly bounded and heuristic.",
+      "scope": "For the four prime groups at 19, 23, 29, and 37 pinned in the regression, incremental width-one beam pruning selects a final rational representative of height 1409. Complete enumeration of all 160 CRT choices instead finds residue 238875 modulo 468901, with exact rational representative 48/53 of height 53 and residues 7,20,2,3. True minimum height is nondecreasing along each fixed branch because feasible sets shrink; the counterexample instead shows that relative branch ordering can change, so a finite height-scored beam can discard the best completed branch. The bounded representative enumeration itself does not prove a minimum. Beam output remains valid as a deterministic candidate-ranking heuristic, but absence from a finite beam is not a mathematical exclusion or completeness certificate. The active elliptic-curve helper has no production callers outside its regression; the analogous q12/orbit5867 projective constructor is explicitly bounded and heuristic.",
       "canonical_source": "elliptic-curves/THEORY.md",
       "dependencies": [
         "EC-CRT1",
@@ -37153,6 +37255,7 @@
         "EC-K3-CURVE398-A1-MW16-RECOVERY",
         "EC-K3-CURVE398-TWO-PARENT-COLLISION",
         "EC-K3-ICARM-A1-MW16-ATLAS",
+        "EC-K3-ICARM-MW16-BLIND-LADDER",
         "EC-R21-ICARM",
         "EC-R21-ICARM394",
         "EC-CF-NEARMISS-DESCENT-INPUTS",
@@ -37201,6 +37304,7 @@
         "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
         "EC-K3-R17-NORM12-ICARM-573-REFRESH",
         "EC-K3-R17-REFRESH-BLIND-JUMP-LADDER",
+        "EC-K3-MW17-JUMP-V2-ZERO-GAIN-RESCUE",
         "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
         "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17",
         "EC-K3-H3-Q4O208-R17-CURRENT-MARKED-ROUTE",
@@ -37257,8 +37361,8 @@
           ]
         },
         {
-          "attack": "Promoting signatures, norm-one elements, incomplete class data, local candidates, or descent timeouts to residual Selmer rank",
-          "reason": "The fail-closed residual gate authorizes a rank-32 search only from the actual quotient Selmer dimension; all listed proxies and backend timeouts are explicitly non-results.",
+          "attack": "Promoting signatures, norm-one elements, incomplete class data, local candidates, or descent timeouts to residual Selmer rank or to a production exclusion",
+          "reason": "Only the actual completed quotient Selmer dimension supplies a Selmer upper-bound decision. The listed proxies and backend timeouts are non-results for that proof gate; they may schedule a finite search but cannot veto it mathematically.",
           "witnesses": [
             "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE"
           ]
@@ -37272,7 +37376,7 @@
         },
         {
           "attack": "Using finite CRT beam survival as a completeness sieve",
-          "reason": "Exact four-prime regression shows that incremental shortest-representative height is nonmonotone: a width-one beam ends at height 1409 after discarding a branch that completes at height 53. Omitted CRT states remain untested.",
+          "reason": "Exact four-prime regression shows that branch ordering can change: a width-one beam ends at height 1409 after discarding a branch that completes at height 53. True minimum height is nondecreasing along a fixed branch, but omitted CRT states remain untested.",
           "witnesses": [
             "EC-CRT-BEAM-NONMONOTONE"
           ]
@@ -40947,6 +41051,54 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-R17-PRODUCT-SURVIVOR-GALOIS-HEIGHT-GATE",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Galois height gate and constructor priority for the five product survivors",
+      "scope": "For the five alternate-Q80 product twists that retain Tate degree two at both p=131 and p=137, exact factorization proves that the original two-division cubic is irreducible over each of the ten quadratic branch residue fields. The three nonidentity I0* component classes are indexed by the three nonzero two-torsion points, so no QQ(u)-rational section can meet a nonidentity component at any of the four branch fibres. The rational-section height formula is therefore height(P)=8+2(P.O); in particular height eight is equivalent to P.O=0 and lies in the direct degree-(8,12) polynomial box. Combined with the complete zero-Tate carrier exclusions, any height-eight section would have nonzero Tate class. Higher-pole rational sections begin at height ten with P.O=1 and numerator bounds (10,15), not in another height-eight layer. At p=137 all five complete elliptic quotients have normalized Tate factor exactly (Z-1)(Z+1). Since a QQ(u)-rational section specializes to a Frobenius-fixed divisor class, each arithmetic product-twist rank is at most one although its geometric rank is only bounded by two; one constructed nonzero section would therefore prove arithmetic rank exactly one. Exact degree-four base maps and u(nP) heights rank 19bad:083ad first for its 124-bit u(P), while 11ee2:0c36e has the smallest generator canonical height. A complete independently moment-checked p=151 Frobenius quotient for the primary target again has normalized Tate factor (Z-1)(Z+1) and does not prove a section.",
+      "canonical_source": "elkies-k3/R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION",
+        "EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION",
+        "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_product_survivor_galois_height_gate.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:3370742653a9026f578dab54ed9a2c7bb28e0bbc56d313a083b60cbda043ada4",
+      "software_lock": [
+        "elkies-k3/scripts/certify_r17_product_survivor_galois_height_gate.sage",
+        "elkies-k3/scripts/audit_r17_product_twist_extra_prime.sage",
+        "elkies-k3/scripts/run_r17_product_toric_frobenius_extra_prime.sh",
+        "artifacts/generated-results/elkies-k3-r17-product-survivor-galois-height-gate-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-19bad--alternate-orbit-083ad-p137-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ae6--alternate-orbit-0f82c-p137-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0f82c--alternate-orbit-025be-p137-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ee2--alternate-orbit-0c36e-p137-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0c10b--alternate-orbit-17a1a-p137-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-extra-prime-audits/alternate-orbit-19bad--alternate-orbit-083ad-p151-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-19bad--alternate-orbit-083ad-p151-toric-frobenius-v1.json"
+      ],
+      "supersedes_notes": [
+        "a rational height-eight section on the five surviving product twists may have P.O equal to one or two",
+        "base-Jacobian rank alone is the right complexity order for an effective genus-one constructor"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/README.md",
+        "elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-R17-NORM12-11952-COMPLETE-BISECTION-CHARACTER-EXHAUSTION",
       "kind": "theorem",
       "state": "proved",
@@ -41801,6 +41953,94 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-R17-EXTREME-ANCHORED-MW18-COVERS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete extreme-fibre split census and anchored MW>=18 cover campaign",
+      "scope": "On the exact saturated published-R17-frame equations norm12-orbit-07ca9 and norm12-orbit-08234, the complete 39,120-class smooth rootless rational-bisection frame is tested at eight refreshed +10/+11/+12 controls, for 312,960 bisection--fibre pairs. Finite-field nonresidues exclude all nonsplits and every survivor is reconstructed over QQ with exact cover, lifted-section, branch-sum, rational-parameterization, and public-quotient relations. There are exactly eight refreshed split covers and all eight specialize nontrivially modulo generic MW17: two on curve 545, three on 531, two on 534, and one on 536, with exceptional quotient spans 2,3,2,1 respectively. Curves 543 (+12), 544 (+11), 535 (+11), and 537 (+10) have no split in this complete layer. The historical rank-at-least-28 control t=-9529/5471 contributes the ninth exact anchored cover, orbit-15a68. Every conic parameter is normalized by t(0)=t0 and dt/dr(0)=1. Each cover has generic rank at least 18, not proved exactly 18; a +11 anchor leaves ten displayed exceptional directions after one becomes generic, so rank 32 would still need four further directions. A uniform bounded Nagao triage scores 1,216,768 primitive parameters per cover at numerator/denominator height at most 1,000, 10,950,912 total, and retains 178 heuristic survivors. Its best-score ordering starts with curve 536 / 08234-orbit-19188 and then curve 531 / 08234-orbit-12f61 and 08234-orbit-0a9bf. The Nagao ordering proves no finalist rank or independence and does not replace exact specialization, independence, or residual-Selmer gates. Completeness is restricted to the two declared smooth rootless rational-bisection frames; higher-arithmetic-genus degree-two curves, singular rational bisections, and unrelated quadratic characters remain outside the theorem.",
+      "canonical_source": "elkies-k3/R17_EXTREME_ANCHORED_MW18_COVERS_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-ICARM-573-REFRESH",
+        "EC-K3-R17-NORM12-HIGHEST-RANK-TRANSPORTS",
+        "EC-K3-ELKIES-2026-R17"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_extreme_anchored_mw18_covers.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:7f995381230e643c5bd8e383cff315564acf55c90d65c3639746508322b70069",
+      "software_lock": [
+        "elkies-k3/scripts/certify_r17_extreme_anchored_mw18_covers.sage",
+        "elkies-k3/scripts/search_r17_extreme_anchored_mw18_nagao.py",
+        "elkies-k3/scripts/summarize_r17_extreme_anchored_mw18_nagao.py",
+        "elkies-k3/scripts/search_h92_q12o5867_rootless_nagao.py",
+        "elliptic-curves/tests/test_r17_extreme_anchored_mw18.py",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-covers-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-curve545-orbit08c1e-h1000-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-curve545-orbit1d516-h1000-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-curve531-orbit0a9bf-h1000-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-curve531-orbit12f61-h1000-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-curve531-orbit1293d-h1000-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-curve534-orbit13d7a-h1000-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-curve534-orbit1a371-h1000-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-curve536-orbit19188-h1000-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-historical-rank28-orbit15a68-h1000-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-h1000-summary-v1.json"
+      ],
+      "supersedes_notes": [
+        "the historical first rank-18 conic should remain the default MW18 Nagao lane",
+        "curve 543 supplies a split smooth rootless rational bisection in the tested complete frames"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/R17_EXTREME_ANCHORED_MW18_COVERS_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-EXTREME-ANCHORED-MW18-SPECIALIZATIONS",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact rank-at-least-18 certification of all 178 anchored MW18 finalists",
+      "scope": "All 178 bounded-Nagao finalists from the nine exact extreme-anchored covers, including five projective r=infinity rows, are specialized over QQ.  On every nonsingular specialized short Weierstrass model the seventeen published R17 sections and the cover section satisfy the curve equation exactly.  Their images have full column rank 18 in an exact product of finite quotients E(F_p)/2E(F_p), while an independent good-reduction group-order check proves E(Q)[2]=0; infinite descent therefore proves that the eighteen displayed rational points are integrally independent and that every listed fibre has Mordell--Weil rank at least 18.  The audit has 178 successes, no structural failures, and no unresolved independence checks.  This proves neither exact specialized rank 18 nor exact generic rank 18, and supplies no residual 2-Selmer or other rank upper bound.  A thirteen-model residual-Selmer pilot produced only three strict timeouts before being stopped, authorized no point-search survivors, and the separate fresh no-cache cover-census replay was also stopped before its final byte comparison.",
+      "canonical_source": "elkies-k3/R17_EXTREME_ANCHORED_MW18_CONTINUATION_HANDOFF_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-EXTREME-ANCHORED-MW18-COVERS"
+      ],
+      "checker": "elkies-k3/scripts/specialize_r17_extreme_anchored_mw18_finalists.sage",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:8b2db6b99602e42765f188f37852c6b658b1e872733aca07973819913f5e591d",
+      "software_lock": [
+        "elkies-k3/scripts/specialize_r17_extreme_anchored_mw18_finalists.sage",
+        "elliptic-curves/cas/mod_l_reduction_independence.py",
+        "elliptic-curves/tests/test_r17_extreme_anchored_mw18.py",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-covers-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-h1000-summary-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-specializations-h1000-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/R17_EXTREME_ANCHORED_MW18_CONTINUATION_HANDOFF_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-R17-NORM12-PROSPECTIVE-FAMILY-HOLDOUT",
       "kind": "reproduction",
       "state": "partial",
@@ -41991,7 +42231,7 @@
       "kind": "reproduction",
       "state": "proved",
       "title": "Blind multi-stratum adaptive half-lattice jump ladder and extreme-tail detector validation",
-      "scope": "On the sixteen quotient-eligible new hits in the hash-pinned 573-curve norm-twelve atlas refresh, a redacted input exposes only each short curve, the seventeen specialized generic MW17 points, their exact generic height Gram, curve id, and atlas class; it contains no public complement, displayed rank, or jump. Curve 499 is excluded before searching because its displayed quotient by MW17 is exactly undefined. The fixed v2 policy completely ranks MW17/2MW17 by exact generic norm, searches the first 43 classes, then—when the exact initial recovered quotient is nonzero—recomputes the full changed lattice state and searches a deterministic 301-chart adaptive pool. Every order is bound to the exact basis, height Gram, generic coordinates, quotient complement, universe, and chart identities. The per-chart bounds are height 100,000, 15 wall seconds, 1 GB PARI stack, and no retry. Fifteen fibres complete all 344 charts with no timeout or PARI failure; curve 544 has initial score zero and stops at the predeclared structural boundary after 43. Before the public complements are opened, the exact quotient-rank responses by curve id are 478:6, 498:6, 531:11, 532:3, 534:11, 535:10, 536:11, 537:10, 538:5, 539:6, 540:8, 541:8, 543:12, 544:0, 545:11, 546:8. Against the later-opened exact displayed jumps, the predeclared tied-margin Kendall test gives tau_b=0.7503122325921043 and exact one-sided p=60852/2421619200. The predeclared score-at-least-10 rule selects 7/8 of the +10/+11/+12 tail and 0/8 outside it, for risk difference 0.875 and one-sided Fisher p=1/1430. Both frozen endpoints pass. Post-freeze sensitivity analysis gives 6/7 score-at-least-10 among q>=11 and 1/9 below, with Fisher p=4/715. After conditioning on fibration, the block-restricted ordinal tau_b is 0.7163 with exact p=7082/25945920; after conditioning on rational-PGL2 j-map class it is 0.8804 with exact p=2/2520. Only class 08234 contains both tail and non-tail rows: its q>=10 table is 5/5 versus 0/2 with p=1/21, while its q>=11 table is 4/4 versus 1/3 with p=1/7. The three alternate-Q80 rows have q=3,6,8, so extreme-tail transfer to that fibration is unvalidated. Thus high score may participate one-sidedly in candidate scheduling inside the calibrated norm-twelve R17 setting, but low score may not veto: curve 544 is an explicit q=11, score-zero false negative. A changed fibration, j-class, lattice, or basis requires a new blinded high-q calibration, and the separate completed residual 2-Selmer gate remains mandatory before serious rank-32 point search. The v1 protocol's false cross-class assertion that every determinant-948 MW17 lattice has exactly 43 maximum-norm classes stopped after curve 478 and before curve 498 searching; v2 transparently replaces it by the top 43 exact generic-depth classes, leaves curve 478's selected set and all endpoints unchanged, discloses its already known score 6, and reruns it exactly. Post-freeze opening puts fourteen blind bases integrally inside their displayed subgroups. Curve 478's blind basis has exact rank 23, improving its unconditional lower bound from 21 to rank at least 23; curve 539 has equal blind/displayed rank 23 but unresolved integral containment. No full Mordell-Weil rank, saturation, rank upper bound, miss inference, population generalization, or replacement of the residual-Selmer gate is asserted. The fibration/j-class splits and q>=11 endpoint are post-freeze sensitivity analyses rather than confirmatory endpoints.",
+      "scope": "On the sixteen quotient-eligible new hits in the hash-pinned 573-curve norm-twelve atlas refresh, a redacted input exposes only each short curve, the seventeen specialized generic MW17 points, their exact generic height Gram, curve id, and atlas class; it contains no public complement, displayed rank, or jump. Curve 499 is excluded before searching because its displayed quotient by MW17 is exactly undefined. The fixed v2 policy completely ranks MW17/2MW17 by exact generic norm, searches the first 43 classes, then—when the exact initial recovered quotient is nonzero—recomputes the full changed lattice state and searches a deterministic 301-chart adaptive pool. Every order is bound to the exact basis, height Gram, generic coordinates, quotient complement, universe, and chart identities. The per-chart bounds are height 100,000, 15 wall seconds, 1 GB PARI stack, and no retry. Fifteen fibres complete all 344 charts with no timeout or PARI failure; curve 544 has initial score zero and stops at the predeclared structural boundary after 43. Before the public complements are opened, the exact quotient-rank responses by curve id are 478:6, 498:6, 531:11, 532:3, 534:11, 535:10, 536:11, 537:10, 538:5, 539:6, 540:8, 541:8, 543:12, 544:0, 545:11, 546:8. Against the later-opened exact displayed jumps, the predeclared tied-margin Kendall test gives tau_b=0.7503122325921043 and exact one-sided p=60852/2421619200. The predeclared score-at-least-10 rule selects 7/8 of the +10/+11/+12 tail and 0/8 outside it, for risk difference 0.875 and one-sided Fisher p=1/1430. Both frozen endpoints pass. Post-freeze sensitivity analysis gives 6/7 score-at-least-10 among q>=11 and 1/9 below, with Fisher p=4/715. After conditioning on fibration, the block-restricted ordinal tau_b is 0.7163 with exact p=7082/25945920; after conditioning on rational-PGL2 j-map class it is 0.8804 with exact p=2/2520. Only class 08234 contains both tail and non-tail rows: its q>=10 table is 5/5 versus 0/2 with p=1/21, while its q>=11 table is 4/4 versus 1/3 with p=1/7. The three alternate-Q80 rows have q=3,6,8, so extreme-tail transfer to that fibration is unvalidated. Thus high score may participate one-sidedly in candidate scheduling inside the calibrated norm-twelve R17 setting, but low score may not veto: curve 544 is an explicit q=11, score-zero false negative. A changed fibration, j-class, lattice, or basis requires a new blinded high-q calibration. The completed v2 artifact is retained unchanged; its structural 43-versus-344 asymmetry is repaired prospectively in EC-K3-MW17-JUMP-V2-ZERO-GAIN-RESCUE rather than retroactively. The v1 protocol's false cross-class assertion that every determinant-948 MW17 lattice has exactly 43 maximum-norm classes stopped after curve 478 and before curve 498 searching; v2 transparently replaces it by the top 43 exact generic-depth classes, leaves curve 478's selected set and all endpoints unchanged, discloses its already known score 6, and reruns it exactly. Post-freeze opening puts fourteen blind bases integrally inside their displayed subgroups. Curve 478's blind basis has exact rank 23, improving its unconditional lower bound from 21 to rank at least 23; curve 539 has equal blind/displayed rank 23 but unresolved integral containment. No full Mordell-Weil rank, saturation, rank upper bound, miss inference, or population generalization is asserted. In production, a completed residual Selmer upper bound below 32 is an exclusion and incomplete descent is scheduling information; a finite point search may proceed independently and 32 certified independent points prove the lower-bound target. The fibration/j-class splits and q>=11 endpoint are post-freeze sensitivity analyses rather than confirmatory endpoints.",
       "canonical_source": "elliptic-curves/notes/R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-NORM12-ICARM-573-REFRESH",
@@ -42041,6 +42281,51 @@
         "artifacts/generated-results/README.md",
         "artifacts/generated-results/elliptic-curves/README.md",
         "elliptic-curves/notes/R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-MW17-JUMP-V2-ZERO-GAIN-RESCUE",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Prospective one-in-eight zero-gain bootstrap rescue for MW17-jump-v2",
+      "scope": "The original MW17-jump-v2 population of 2,239 candidate addresses, its execution order, and its exact quotient-gain leaderboard are retained without rerunning the 121,589,944-parameter census. A deterministic SHA-256 assignment, computed from a fixed namespace and sample id without detector outcomes, places 264 candidates in a one-in-eight rescue arm. Eligibility requires a clean exact base result with gain zero after all 43 initial charts and no timeout or backend failure; unmeasured or censored rows do not become zeros. An eligible fibre receives the next 301 classes in the already-computed exact generic MW17/2MW17 half-class order, disjoint from the initial 43 and reranked within that fixed set by specialized canonical depth. The rescue runs in seven batches of 43 and classifies every returned point exactly after each batch. On the first certified quotient escape, all unused slots from the 301-chart allowance switch to the existing quotient-adaptive policy, so every treated fibre retains the 344-chart total cap. The sole ranking field remains actual_certified_quotient_rank_gain and every nonzero gain is an unconditional point-based rank lower bound after equation and finite-reduction independence checks. The rescue is governed by a separate finite resource gate and does not require a completed descent when no certified upper bound excludes rank 32. Incomplete or conditional Selmer information affects scheduling only; a certified rank/Selmer upper bound below 32 is a mathematical exclusion. The sealed 100-row small-field class-quotient laboratory retains its stronger experiment-specific phase boundary and is unchanged. The rescue protocol is frozen but no rescue chart has been run, so there is no new quotient gain, rank lower bound, or detector-performance conclusion.",
+      "canonical_source": "elliptic-curves/notes/MW17_JUMP_V2_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-REFRESH-BLIND-JUMP-LADDER",
+        "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE"
+      ],
+      "checker": "elkies-k3/scripts/build_mw17_jump_v2_zero_gain_rescue.py",
+      "proof_type": "reproduction",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:50e3c89efed619ae55d63ff1c9eef072ca71667a5a3b03a4ec13d4160afe2121",
+      "software_lock": [
+        "elliptic-curves/cas/production_search_gates.py",
+        "elliptic-curves/cas/run_mw17_jump_v2_zero_gain_rescue.sage",
+        "elliptic-curves/tests/test_production_search_gates.py",
+        "elliptic-curves/tests/test_mw17_jump_v2_zero_gain_rescue.py",
+        "elkies-k3/scripts/build_mw17_jump_v2_zero_gain_rescue.py",
+        "artifacts/generated-results/elkies-k3-mw17-jump-v2-campaign-v1.json",
+        "artifacts/generated-results/elkies-k3-mw17-jump-v2-ledger-v1.json",
+        "artifacts/generated-results/elkies-k3-mw17-jump-v2-zero-gain-rescue-arm-v1.json"
+      ],
+      "supersedes_notes": [
+        "a zero-gain fibre must remain at 43 charts because quotient-adaptive charts require a previously discovered direction",
+        "a completed residual Selmer computation is a universal prerequisite for bounded production point search"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/cas/README.md",
+        "elliptic-curves/notes/MW17_JUMP_V2_2026-09-04.md",
+        "artifacts/generated-results/README.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -42186,7 +42471,7 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Fail-closed fixture-separated MW17-only 2-Selmer control gate",
-      "scope": "The detector-v2 control replay verifies the exact global minimal models of record fibres 356 and 385, the specialized MW17 subgroup and its 17-dimensional mod-2 image, and the public twelve-dimensional exceptional image modulo MW17. The rank-29 combined good-reduction certificate proves 2-saturation of the displayed MW29 and its MW17 subspace; all-prime saturation inside the unknown full rational Mordell--Weil group remains UNKNOWN. The earlier hard quotient-by-MW29 calculations remove the twelve exceptional directions before local work and are therefore classified only as post-discovery closure diagnostics, not prospective calibration. A new fixture-separated replay freezes two source-hash-pinned Magma executables, one per record: each contains only the minimal curve and exactly seventeen specialized generic points, requests the complete unconditional 2-Selmer group, quotients only by MW17, and terminates at blind_freeze. Mechanical audits exclude P18 through P29 coordinates and labels, MW29 tokens, half-ideal shortcuts, external reads, covers, and point searches. Neither replay has run, so dim Sel_2, dim Sel_2/im(MW17/2), auxiliary descent places, global local-condition rows, local codimensions, and leave-one-place-out residual dimensions remain UNKNOWN. The Selmer candidate gate is not operationally calibrated until both sealed transcripts complete, certify MW17 Kummer rank 17, and report residual dimension at least twelve before the separately committed public control truth is consulted. The hash-order prospective sample remains frozen and unauthorized. This is Outcome D, not a Selmer upper bound, exact-rank result, cohort comparison, or candidate promotion.",
+      "scope": "The detector-v2 control replay verifies the exact global minimal models of record fibres 356 and 385, the specialized MW17 subgroup and its 17-dimensional mod-2 image, and the public twelve-dimensional exceptional image modulo MW17. The rank-29 combined good-reduction certificate proves 2-saturation of the displayed MW29 and its MW17 subspace; all-prime saturation inside the unknown full rational Mordell--Weil group remains UNKNOWN. The earlier hard quotient-by-MW29 calculations remove the twelve exceptional directions before local work and are therefore classified only as post-discovery closure diagnostics, not prospective calibration. A new fixture-separated replay freezes two source-hash-pinned Magma executables, one per record: each contains only the minimal curve and exactly seventeen specialized generic points, requests the complete unconditional 2-Selmer group, quotients only by MW17, and terminates at blind_freeze. Mechanical audits exclude P18 through P29 coordinates and labels, MW29 tokens, half-ideal shortcuts, external reads, covers, and point searches. Neither replay has run, so dim Sel_2, dim Sel_2/im(MW17/2), auxiliary descent places, global local-condition rows, local codimensions, and leave-one-place-out residual dimensions remain UNKNOWN. The Selmer candidate gate is not operationally calibrated until both sealed transcripts complete, certify MW17 Kummer rank 17, and report residual dimension at least twelve before the separately committed public control truth is consulted. The hash-order prospective sample remains frozen and unauthorized inside this five-cohort statistical experiment. Its seal protects the experiment's blinding and missing-data protocol but is not inherited by the production constructor: incomplete descent is scheduling information, only a certified upper bound below the target is a mathematical exclusion, and enough certified independent rational points prove the lower-bound target without descent. This is Outcome D, not a Selmer upper bound, exact-rank result, cohort comparison, or candidate promotion.",
       "canonical_source": "elkies-k3/R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-074D9-PROSPECTIVE-CRT-ESCAPE-EXPERIMENT",
@@ -42576,6 +42861,72 @@
         "elkies-k3/scripts/README.md",
         "elkies-k3/R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md",
         "elkies-k3/R17_RESIDUAL_SELMER_FINGERPRINT_AND_SIEVE_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Specialization quotient, rank-jump sandwich, and midpoint/class-group structure",
+      "scope": "Let E_eta/K(T) have certified full generic free Mordell--Weil group M_eta of rank r, let E_t/K be a smooth specialization whose image M has rank r, and let M be contained in a certified subgroup L of E_t(K). For every prime ell, the free quotient gain and residual Selmer dimension give rank(L/M) <= rank E_t(K)-r <= dim_Fell(Sel_ell(E_t/K)/bar(M)_ell); without preservation of rank r the left term is only a quotient gain. The canonical-height quotient by M is the orthogonal-complement norm hhat_/M(P)=inf_{u in M tensor R} hhat(P+u), computed by the Schur complement and distinct from an integral coset minimum. For Q in M, orthogonal projection gives hhat(2R-Q)/4=hhat_/M(R mod M)+hhat(pr_M(R)-Q/2), and the paired heights add hhat(R)+hhat(Q-R)=hhat(Q)/2+2hhat_/M(R mod M)+2hhat(pr_M(R)-Q/2). If mu_2(c) is the minimum height in c in M/2M, then the midpoint depth is mu_2(c)/4, the two-torsion-restricted covering radius is max_c sqrt(mu_2(c))/2, and this is a lower bound for the full covering radius. Finally, everywhere-even squareclasses have the ideal square-root map c:ker(v)->Cl(F)[2]. For positive-square-norm subspaces G contained in B supported on S, dim c(ker(v_S|B))/c(ker(v_S|G)) is at least dim(B/G)-(rank v_S(B)-rank v_S(G))-u_F^+; in odd degree u_F^+=r1+r2-1. This last result is a known-point-forced full-class-group image lower bound, not an S-class-group computation, Selmer upper bound, or prospective rank predictor. The theorem package makes no exact specialized-rank or bounded-search claim beyond its stated certified inputs.",
+      "canonical_source": "elkies-k3/SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md",
+      "dependencies": [
+        "external: Kummer injection into the ell-Selmer group",
+        "external: Neron--Tate height pairing and Dirichlet unit theorem"
+      ],
+      "checker": null,
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": null,
+      "software_lock": [],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/README.md",
+        "elkies-k3/SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP",
+      "kind": "example",
+      "state": "proved",
+      "title": "Complete custom-NS rootless MW17 midpoint-hole sweep",
+      "scope": "For the repository's 47 custom Picard-rank-19 labels NS0002 through NS0048, exactly 32 have attached rootless MW17 frame Grams and 15 do not; the rooted frame Gram on those 15 is not substituted for a Mordell--Weil height lattice. Complete CVP enumeration visits all 2^17 parity classes on each of the 136 eligible frame classes, for 17,825,792 classes total. Every norm is recomputed integrally, and every deepest class plus a deterministic stride is repeated with 256-bit MPFR GSO arithmetic. Exactly 135 frames have max_c mu_2(c)=12. The determinant-1494 NS0021 frame K3-2cacfeb9277cda96-F006 uniquely has max_c mu_2(c)=14, attained by the single mask 116966, so Corollary S4 gives rho_2(M)^2=7/2 and rho(M)>=sqrt(7/2), strictly above the published R17 control's rho_2=sqrt(3). This is a discrete old-lattice midpoint-hole certificate and a conditional future chart schedule. It constructs no rational marking, equation, specialization, point, quotient gain, Selmer bound, or rank jump; 30 eligible custom NS rows remain arithmetically UNKNOWN and NS0024/NS0031 remain excluded over QQ.",
+      "canonical_source": "elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md",
+      "dependencies": [
+        "EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS"
+      ],
+      "checker": "elkies-k3/scripts/sweep_custom_ns_half_lattice_depths.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:82048d8d1fc3aac0654f920c25cb7f44b236ee105a5faa73792a68b17a6ab134",
+      "software_lock": [
+        "elkies-k3/scripts/sweep_custom_ns_half_lattice_depths.sage",
+        "artifacts/generated-results/elkies-k3-custom-ns-rootless-half-lattice-sweep-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],

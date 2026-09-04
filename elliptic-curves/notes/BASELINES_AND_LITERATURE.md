@@ -23,7 +23,9 @@ E20--E24 and E28 curves [subject to GRH for associated number-field zeta
 functions](https://arxiv.org/abs/1606.07178).  Independence alone supplies the
 unconditional lower bounds.
 
-The current public general-rank record found in 2026 is rank at least 30. The
+The historical 2026 rank-at-least-30 benchmark is retained below. The current
+repository milestone is [curve 302 at rank at least 31](ICARM_CURVE302_RANK31.md);
+neither lower bound is an unconditional exact-rank claim. The
 [maintained equation and 30 points](https://web.math.pmf.unizg.hr/~duje/tors/rk30.html)
 give the public data. The repository checks those data exactly and proves the
 points independent without an analytic-rank assumption. The previous 2024
@@ -33,7 +35,7 @@ conditional on GRH.
 
 ## Local exact baseline replays
 
-For the 2026 record, all 30 public points satisfy the curve equation exactly.
+For the rank-30 benchmark, all 30 public points satisfy the curve equation exactly.
 After transport to an integral short model, their images in products of
 `E(F_p)/2E(F_p)` form a binary matrix of rank 30, and the modulo-23
 2-division polynomial has no root. Infinite descent proves the points
@@ -79,10 +81,10 @@ independent section is claimed.
   treatment of bad primes.  Those components are therefore precedent, not new
   contributions here.
 - Elkies's [K3/high-rank lectures](https://arxiv.org/abs/0709.2908) describe
-  the rank-17 fibration behind the rank-28 search.  The current programme has
-  an exact Fermigier rank-at-least-12 adapter and a public Kihara
-  rank-at-least-14 fallback, but not the unpublished rank-17 Weierstrass
-  fibration and sections behind the current rank-29 record.
+  the rank-17 fibration behind the rank-28 search. For the subsequently
+  reconstructed explicit MW17 models and record specializations, use the
+  [current K3 navigation](../../elkies-k3/README.md); this historical source
+  survey does not describe the present construction inventory.
 - Bai--Brent--Thome's
   [number-field-sieve root optimization](https://arxiv.org/abs/1212.1958)
   is the closest cross-field analogue: it uses roots modulo small prime powers,

@@ -2637,7 +2637,7 @@ The full exact table, CM24 comparison, and claim boundary are in
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-S-CLASS-PILOT 8c88abe96881b79d -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-LOCAL-COVERAGE c078c1aa8e97df47 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R28-PUBLIC-SELMER-CONTROLS 56509673b9eb1940 -->
-<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 7f8dffe58168acc8 -->
+<!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE f7a8c94736f1b44f -->
 
 The rootless `U + (-M)` lattice has a finite degree-two quotient under section
 translation. The following exact lattice calculation enumerates its
@@ -19900,7 +19900,7 @@ chart miss carries absence, covering, rank, or Selmer information.
 
 ### Quotient-aware rank-escape detector v2
 
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 eda7a0053b31b7c9 -->
 
 Freeze and check the hash-order balanced sample, then replay the exact partial
 record-control certificate and post-descent matrix regressions:
@@ -20153,6 +20153,39 @@ survivors to `p=137`, and obtains twelve unconditional product-rank-zero
 theorems plus five persistent degree-two candidates.  See
 [`elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md`](elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md).
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION cfb2417a30fab18d -->
+
+Replay the component-Galois height gate and constructor ranking for those five
+survivors, then cheaply verify the independent `p=151` moment audit:
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_r17_product_survivor_galois_height_gate.sage \
+  --check
+sage -python \
+  elkies-k3/scripts/audit_r17_product_twist_extra_prime.sage \
+  --pair-key 'alternate-orbit-19bad:alternate-orbit-083ad' \
+  --prime 151 --check
+```
+
+To reproduce the complete extra-prime toric calculation and its final
+moment-checked certificate, run:
+
+```bash
+elkies-k3/scripts/run_r17_product_toric_frobenius_extra_prime.sh \
+  'alternate-orbit-19bad:alternate-orbit-083ad' 151
+```
+
+The exact residue-field factorizations force every rational section to meet
+the identity component at all four `I0*` fibres.  Hence height eight is exactly
+`P.O=0` in the direct degree-`(8,12)` polynomial box.  The prior carrier
+exhaustion removes only its zero Tate class; nonzero Kummer slices and all
+height-at-least-ten sections remain open.  The primary target is selected by
+its 124-bit `u(P)`, not by base-Jacobian rank alone.  At `p=137`, the
+normalized factor `(Z-1)(Z+1)` on every survivor also bounds its arithmetic
+product rank by one, so one constructed nonzero section would prove that
+rank exactly one.  See
+[`elkies-k3/R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md`](elkies-k3/R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md).
+<!-- status-consumer: EC-K3-R17-PRODUCT-SURVIVOR-GALOIS-HEIGHT-GATE 32b87c35a2573768 -->
 
 Run the exact `H=10000` point-map-relation control on the deterministic
 seeded sample of ten other pointed covers:

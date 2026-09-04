@@ -164,10 +164,12 @@ def beam_combine(
     """Heuristically combine one choice from each prime group.
 
     This routine is deliberately non-exhaustive whenever ``beam_width`` is
-    smaller than the expanded state population.  In particular, the height of
-    a shortest rational representative is not monotone as CRT congruences are
-    added, so a state discarded for its current height can later lead to the
-    best final representative.  Callers may use the result to rank candidates,
+    smaller than the expanded state population. The true minimum height is
+    nondecreasing along a fixed branch, because its feasible sets shrink.
+    Different branches can change their relative ordering, so a state
+    discarded for its current height can still lead to the best final
+    representative. The bounded representative enumeration supplies no
+    certified minimum. Callers may use the result to rank candidates,
     but must not use beam survival as a mathematical exclusion or completeness
     certificate.  ``test_beam_width_one_counterexample`` records an exact
     width-one false negative.

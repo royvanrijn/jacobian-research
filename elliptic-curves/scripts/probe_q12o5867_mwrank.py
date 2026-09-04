@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# <!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 7f8dffe58168acc8 -->
+# <!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE f7a8c94736f1b44f -->
 """Run one subprocess-capped eclib search on a q12o5867 specialization.
 
 The parent mode is ordinary Python and enforces a wall-clock timeout around a

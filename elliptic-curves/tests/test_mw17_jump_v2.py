@@ -70,6 +70,8 @@ class MW17JumpV2Tests(unittest.TestCase):
         detector = self.campaign["detector"]
         self.assertEqual(detector["ranking_field"], "actual_certified_quotient_rank_gain")
         self.assertEqual(detector["rank_lower_bound_formula"], "17 + actual_certified_quotient_rank_gain")
+        self.assertIn("hyperellratpoints runs", detector["quartic_preprocessing"])
+        self.assertIn("preprocessing, not the bounded point search", detector["quartic_preprocessing"])
         self.assertIn("never a candidate-selection or leaderboard filter", detector["initial_gain_policy"])
         self.assertEqual(detector["global_termination"], "write stop sentinel immediately after any certified gain at least 15")
 

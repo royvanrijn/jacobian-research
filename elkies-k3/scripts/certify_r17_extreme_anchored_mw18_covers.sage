@@ -476,13 +476,40 @@ def conic_parameterization(q, t0, u0):
     r = parameter_field(parameter_ring.gen())
     a0, a1, a2 = map(QQ, (q[0], q[1], q[2]))
     derivative_at_anchor = a1 + 2 * a2 * t0
-    delta = parameter_field((derivative_at_anchor - 2 * u0 * r) / (r**2 - a2))
+    tangent_slope = derivative_at_anchor / (2 * u0)
+    t_derivative_in_raw_slope = -2 * u0 / (tangent_slope**2 - a2)
+    slope_scale = 1 / t_derivative_in_raw_slope
+    line_slope = slope_scale * r + tangent_slope
+    delta = parameter_field(
+        (derivative_at_anchor - 2 * u0 * line_slope) / (line_slope**2 - a2)
+    )
     t_of_r = parameter_field(t0 + delta)
-    u_of_r = parameter_field(u0 + r * delta)
+    u_of_r = parameter_field(u0 + line_slope * delta)
     q_of_t = a0 + a1 * t_of_r + a2 * t_of_r**2
     if u_of_r**2 != q_of_t:
         raise ArithmeticError("the anchor-line conic parameterization failed")
-    return parameter_ring, parameter_field, t_of_r, u_of_r
+    if t_of_r(0) != t0 or u_of_r(0) != u0:
+        raise ArithmeticError("the centered conic parameter does not put the anchor at r=0")
+    if t_of_r.derivative()(0) != 1:
+        raise ArithmeticError("the centered conic parameter does not have dt/dr=1")
+    return parameter_ring, parameter_field, t_of_r, u_of_r, tangent_slope, slope_scale
+
+
+def conic_parameterization_record(q, t0, u0):
+    _ring, _field, t_of_r, u_of_r, tangent_slope, slope_scale = (
+        conic_parameterization(q, t0, u0)
+    )
+    return {
+        "parameter": "normalized centered secant-slope coordinate",
+        "tangent_slope_at_anchor": rational_text(tangent_slope),
+        "line_slope": "q'(t0)/(2*u0)+line_slope_scale*r",
+        "line_slope_scale": rational_text(slope_scale),
+        "anchor_parameter": "0",
+        "normalization": "t(0)=t0 and dt/dr(0)=1",
+        "t_of_r": rational_function_text(t_of_r),
+        "u_of_r": rational_function_text(u_of_r),
+        "passes_through_anchor_at_r_zero": True,
+    }
 
 
 def exact_survivors(*, direct, words, priority_rows, targets, obstruction, validation, helper, chart_key):
@@ -531,16 +558,7 @@ def exact_survivors(*, direct, words, priority_rows, targets, obstruction, valid
             trace_at_anchor = fibre_curve(QQ(trace[0](t0)), QQ(trace[1](t0)))
             if positive_point + negative_point != trace_at_anchor:
                 raise ArithmeticError("the split branches do not add to the trace")
-            parameter_ring, parameter_field, t_of_r, u_of_r = conic_parameterization(
-                q, t0, square_root
-            )
-            evaluate = lambda poly: sum(
-                parameter_field(poly[i]) * t_of_r**i for i in range(poly.degree() + 1)
-            )
-            section_x = evaluate(data["x0"]) + evaluate(data["x1"]) * u_of_r
-            section_y = evaluate(data["y0"]) + evaluate(data["y1"]) * u_of_r
-            if section_y**2 != section_x**3 + evaluate(A) * section_x + evaluate(B):
-                raise ArithmeticError("the parameterized eighteenth section is off the surface")
+            parameterization = conic_parameterization_record(q, t0, square_root)
             if not data["x1"] and not data["y1"]:
                 raise ArithmeticError("the purported eighteenth section is Galois invariant")
             row = priority_rows[index]
@@ -565,12 +583,7 @@ def exact_survivors(*, direct, words, priority_rows, targets, obstruction, valid
                     "canonical_positive_square_root": rational_text(square_root),
                     "positive_chart_point": point_text(positive),
                     "negative_chart_point": point_text(negative),
-                    "anchor_line_parameterization": {
-                        "parameter": "r=(u-u0)/(t-t0)",
-                        "t_of_r": rational_function_text(t_of_r),
-                        "u_of_r": rational_function_text(u_of_r),
-                        "passes_through_anchor_as_r_infinity": True,
-                    },
+                    "anchor_line_parameterization": parameterization,
                     "eighteenth_section": {
                         "x0_coefficients_low_to_high": polynomial_text(data["x0"]),
                         "x1_coefficients_low_to_high": polynomial_text(data["x1"]),
@@ -583,7 +596,7 @@ def exact_survivors(*, direct, words, priority_rows, targets, obstruction, valid
                         "specialized_branches_on_fibre": True,
                         "specialized_branch_sum_is_trace": True,
                         "rational_parameterization_through_anchor": True,
-                        "parameterized_section_on_base_changed_surface": True,
+                        "base_changed_section_follows_by_exact_substitution_into_lift_identities": True,
                     },
                 }
             )
@@ -799,15 +812,28 @@ def historical_anchor(priority_rows):
         raise ArithmeticError("the historical rank-28 cover no longer splits nontrivially")
     return {
         "source": relative(HISTORICAL),
+        "direct_model": "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
         "curve_label": "published rank-at-least-28 control",
         "parameter": "-9529/5471",
+        "native_parameter": "-9529/5471",
         "displayed_exceptional_quotient_rank": 11,
+        "displayed_jump_over_MW17": 11,
         "split_count": 1,
         "anchored_nonzero_count": 1,
         "cover_label": label,
+        "label": label,
+        "extreme_anchored": True,
+        "published_priority_rank": int(cover["priority_rank"]),
         "branch_quadratic_coefficients_low_to_high": [rational_text(value) for value in q],
         "q_at_anchor": rational_text(q0),
         "canonical_positive_square_root": rational_text(u0),
+        "anchor_line_parameterization": conic_parameterization_record(q, t0, u0),
+        "eighteenth_section": {
+            "x0_coefficients_low_to_high": cover["lifted_section"]["x0_coefficients"],
+            "x1_coefficients_low_to_high": cover["lifted_section"]["x1_coefficients"],
+            "y0_coefficients_low_to_high": cover["lifted_section"]["y0_coefficients"],
+            "y1_coefficients_low_to_high": cover["lifted_section"]["y1_coefficients"],
+        },
         "exact_nonzero_class_modulo_generic_MW17": hit[
             "finite_quotient_class_modulo_generic_17"
         ]["coordinates_over_f2"],
@@ -1017,15 +1043,77 @@ def build(selected_charts, resume):
     }
 
 
+def merge_completed_chart_payloads(paths):
+    documents = [json.loads(path.read_text()) for path in paths]
+    if len(documents) != len(CHARTS):
+        raise ArithmeticError("the merge requires one completed payload per chart")
+    common_keys = (
+        "schema", "status", "claim", "design_change", "rank_accounting",
+        "claim_boundary", "software_assumptions",
+    )
+    baseline = documents[0]
+    for document in documents:
+        if any(document[key] != baseline[key] for key in common_keys):
+            raise ArithmeticError("completed chart payloads disagree on their common certificate")
+        if len(document["charts"]) != 1 or len(document["summary"]["selected_charts"]) != 1:
+            raise ArithmeticError("a merge input is not a single-chart payload")
+    by_chart = {
+        document["summary"]["selected_charts"][0]: document["charts"][0]
+        for document in documents
+    }
+    if set(by_chart) != set(CHARTS):
+        raise ArithmeticError("the completed payloads do not cover the declared charts")
+    chart_records = [by_chart[key] for key in CHARTS]
+    for chart in chart_records:
+        for source, expected_hash in chart["inputs"].items():
+            source_path = ROOT / source
+            if not source_path.is_file() or digest(source_path) != expected_hash:
+                raise ArithmeticError(f"completed chart payload has stale input {source}")
+        for fibre in chart["fibres"]:
+            t0 = QQ(fibre["native_parameter"])
+            for cover in fibre["covers"]:
+                q = [QQ(value) for value in cover["branch_quadratic_coefficients_low_to_high"]]
+                u0 = QQ(cover["canonical_positive_square_root"])
+                cover["anchor_line_parameterization"] = conic_parameterization_record(q, t0, u0)
+    all_fibres = [fibre for chart in chart_records for fibre in chart["fibres"]]
+    result = {key: baseline[key] for key in common_keys}
+    result["historical_rank28_anchor"] = historical_anchor(parse_priority_rows(PRIORITY))
+    result["charts"] = chart_records
+    result["summary"] = {
+        "selected_charts": list(CHARTS),
+        "refreshed_fibre_count": len(all_fibres),
+        "refreshed_curve_ids": [fibre["curve_id"] for fibre in all_fibres],
+        "refreshed_split_cover_count": sum(fibre["split_count"] for fibre in all_fibres),
+        "refreshed_extreme_anchored_cover_count": sum(
+            fibre["anchored_nonzero_count"] for fibre in all_fibres
+        ),
+        "generic_rank_lower_bound_on_every_listed_cover": 18,
+        "generic_rank_is_not_proved_exact": True,
+    }
+    result["reproducing_command"] = (
+        "run this script once with --chart 07ca9 and once with --chart 08234, "
+        "then pass both outputs to --merge-completed-chart-payloads"
+    )
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--chart", choices=("all", *CHARTS), default="all")
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--no-resume", action="store_true")
     parser.add_argument("--check", action="store_true")
+    parser.add_argument(
+        "--merge-completed-chart-payloads", type=Path, nargs=2, metavar=("07CA9", "08234")
+    )
     args = parser.parse_args()
-    selected = tuple(CHARTS) if args.chart == "all" else (args.chart,)
-    payload = build(selected, not args.no_resume and not args.check)
+    if args.merge_completed_chart_payloads:
+        if args.chart != "all":
+            parser.error("--chart cannot be combined with --merge-completed-chart-payloads")
+        payload = merge_completed_chart_payloads(args.merge_completed_chart_payloads)
+    else:
+        selected = tuple(CHARTS) if args.chart == "all" else (args.chart,)
+        payload = build(selected, not args.no_resume and not args.check)
     serialized = json.dumps(payload, indent=2, sort_keys=True) + "\n"
     if args.check:
         if not args.output.exists() or args.output.read_text() != serialized:

@@ -102,7 +102,7 @@ class Candidate:
 
 
 def load_family_model(path: Path = DEFAULT_MODEL) -> FamilyModel:
-    """Load A and B from the published chart or exact q12 replay artifact."""
+    """Load A and B from a certified polynomial rootless-R17 model."""
 
     _allow_large_exact_coefficients()
     payload = path.read_bytes()
@@ -121,6 +121,15 @@ def load_family_model(path: Path = DEFAULT_MODEL) -> FamilyModel:
         coefficient_keys = (
             "minimal_A_coefficients_low_to_high",
             "minimal_B_coefficients_low_to_high",
+        )
+    elif status == "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS":
+        if document.get("sections", {}).get("status") != "PASS_EXACT_SATURATED_RANK17_BASIS":
+            raise ValueError("the direct R17 model does not have a saturated rank-17 basis")
+        child = document["weierstrass_model"]
+        coordinate = child["coordinate"]
+        coefficient_keys = (
+            "A_coefficients_low_to_high",
+            "B_coefficients_low_to_high",
         )
     else:
         raise ValueError("the input is not a certified rootless R17 model")

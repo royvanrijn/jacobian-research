@@ -5,6 +5,7 @@ from importlib.machinery import SourceFileLoader
 import json
 from math import gcd
 from pathlib import Path
+import subprocess
 import unittest
 
 
@@ -108,11 +109,44 @@ class R17SmallFieldClassQuotientLabTests(unittest.TestCase):
         freezer_source = FREEZER.read_text()
         detector_source = DETECTOR.read_text()
         self.assertIn("pari.bnfcertify(bnf)", feature_source)
+        self.assertIn("localized_2_torsion_quotient", feature_source)
+        self.assertIn(
+            "localized_s_class_group_2_torsion_residual_v1", feature_source
+        )
         self.assertIn("dim_Q", feature_source)
+        self.assertNotIn(
+            '"proves_generic_subgroup_primitive_and_independent"', feature_source
+        )
+        self.assertIn(
+            '"proves_generic_subgroup_2_primitive_and_independent"',
+            feature_source,
+        )
         self.assertNotIn("run_quartic_search", feature_source)
         self.assertIn("all unconditional Q_t features must freeze", freezer_source)
+        self.assertIn("obsolete class quotient", freezer_source)
         self.assertIn("digest(FEATURES)", detector_source)
         self.assertIn("Deliberately do not json.load(FEATURES)", detector_source)
+
+    def test_localized_2_torsion_fixtures(self):
+        completed = subprocess.run(
+            [
+                "sage",
+                "-python",
+                str(FEATURES),
+                "--self-test-localized-class-group",
+            ],
+            cwd=ROOT,
+            check=True,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            timeout=30,
+        )
+        self.assertIn(
+            "R17LOCALIZED2TORSIONFIXTURES|Z4=PASS|Z8=PASS|S_QUOTIENT=PASS"
+            "|NON_TORSION_REJECTION=PASS",
+            completed.stdout,
+        )
 
     def test_kendall_implementation_has_expected_direction(self):
         module = SourceFileLoader("small_field_analysis_test", str(ANALYZER)).load_module()

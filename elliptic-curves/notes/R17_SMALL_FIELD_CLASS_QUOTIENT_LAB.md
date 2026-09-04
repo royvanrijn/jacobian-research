@@ -19,27 +19,56 @@ This is an experiment protocol, not a mathematical-status result.  In
 particular, `dim Q_t` remains `UNKNOWN` until every row has an unconditional
 BNF certificate and the Phase-1 ledger freezes.
 
-## Frozen question
+The all-100 seal is retained solely to protect this experiment's missing-data
+and blinding design.  It is not inherited by production point search: an
+incomplete class/unit computation supplies scheduling information there, not
+an exclusion theorem.
+
+## Corrected pre-search question
+
+The Phase-0 fibre cohort remains frozen and unopened.  Before any Phase-1
+feature row was completed or frozen, the feature definition and implementation
+were corrected to distinguish 2-torsion from quotienting by doubles.  Thus the
+candidate population is unchanged, while the expensive campaign is gated on
+the corrected invariant below.
 
 For the completed-square irreducible cubic field `K_t`, let `S_t` contain all
 prime ideals above rational primes dividing `2 Delta_min(E_t)`.  For each of
 the seventeen specialized generic sections, the exact localized Kummer
-half-ideal gives a class `c(G_i)` modulo the `S_t`-classes.  The pre-search
-feature is
+half-ideal gives a class `c_S(G_i)` modulo the `S_t`-classes.  First form the
+full finite abelian group
 
 \[
- Q_t=
- \frac{\operatorname{Cl}(K_t)}
- {2\operatorname{Cl}(K_t)+
-  \langle S_t,c(G_1),\ldots,c(G_{17})\rangle}.
+ A_{S,t}=\operatorname{Cl}(K_t)/\langle S_t\rangle.
+\]
+
+The square-correction certificate shows that every `c_S(G_i)` lies in
+`A_{S,t}[2]`.  The corrected pre-search feature is
+
+\[
+ Q_t=\frac{A_{S,t}[2]}
+ {\langle c_S(G_1),\ldots,c_S(G_{17})\rangle}.
 \]
 
 The frozen primary question is whether larger `dim Q_t` predicts a larger
 integer gain from the later fixed Stage-A half-lattice detector.  Total
-`dim Cl(K_t)/2Cl(K_t)` is retained as the predeclared negative-control
-predictor.  The primary statistic is Kendall tau-b; its one-sided randomization
-test uses 100,000 deterministic permutations within cubic-signature by
-field-discriminant-quartile blocks.  There is no trained threshold.
+`dim Cl(K_t)[2]` (equal as a dimension, but not canonically as a subgroup, to
+`dim Cl(K_t)/2Cl(K_t)`) is retained as the predeclared negative-control
+predictor.  The primary statistic is Kendall tau-b; its one-sided
+randomization test uses 100,000 deterministic permutations within
+cubic-signature by field-discriminant-quartile blocks.  There is no trained
+threshold.
+
+The discarded formula
+
+\[
+ \operatorname{Cl}(K_t)/
+ \bigl(2\operatorname{Cl}(K_t)+\langle S_t,c(G_i)\rangle\bigr)
+\]
+
+is a different quotient.  It cannot represent the residual 2-torsion when
+4-torsion is present: in `Z/4`, the known class `2` spans all of `A[2]`, even
+though it maps to zero in `A/2A`.
 
 The endpoint is deliberately “future exactly certified detector-visible
 quotient gain,” not true rank jump.  Every counted direction must satisfy the
@@ -88,10 +117,24 @@ The execution order is:
 
 The feature worker first transports the completed-square root through an exact
 `polredabs` field isomorphism.  It then requires both `nfcertify` and
-`bnfcertify == 1`.  Class coordinates of every `S_t` prime and every generic
-half-ideal are reduced only on even class-group cyclic factors; exact binary
-rank gives `dim Q_t`.  A timeout or backend failure leaves `dim Q_t=null` and
-keeps all point search sealed.  A GRH-only BNF can never unlock the detector.
+`bnfcertify == 1`.  It presents the full quotient by adjoining the `S_t` class
+rows to the integral relation matrix for `Cl(K_t)`, computes Smith form with
+transformations, extracts the actual order-two elements of the resulting
+cyclic factors, and only then takes the binary rank of the localized generic
+classes.  Each generic class is checked to have order dividing two in
+`A_{S,t}`.  A timeout or backend failure leaves `dim Q_t=null` and keeps all
+point search sealed.  A GRH-only BNF can never unlock the detector.
+
+The focused pre-campaign fixtures cover `Z/4` with known class `2`, `Z/8` with
+known class `4`, and the nontrivial localization
+`(Z/8)/<2> = Z/2`, where original class `1` becomes order two.  Replay them
+without starting a BNF computation:
+
+```bash
+sage -python \
+  elkies-k3/scripts/run_r17_small_field_class_quotient_features.sage \
+  --self-test-localized-class-group
+```
 
 The first-row implementation probe reached BNF certification only after a
 four-gigabyte PARI stack allocation; its large Zimmert bound made certification
@@ -156,3 +199,12 @@ The confirmatory statistic is set to null if even one scheduled Stage-A row is
 censored.  Complete-case summaries may still be emitted, but only as
 exploratory diagnostics and never by treating a timeout as zero gain.
 
+## Relation to the pressure theorem
+
+This laboratory intentionally measures the localized object `A_{S,t}[2]`.
+It does not instantiate the earlier pressure theorem's full-class-group
+invariant.  That theorem first takes the kernel of bad-prime valuation parity
+on the known Kummer span and maps everywhere-even classes to
+`Cl(K_t)[2]`; it does not quotient the class group by `S_t`.  Localization can
+discard class information while moving freedom into the `S`-unit term, so the
+two invariants receive separate interpretations.

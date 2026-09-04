@@ -40877,7 +40877,8 @@
     "Every successful row has sixteen exact specialized generic points on its raw short model.",
     "The generic height form is the saturated function-field MW16 form; specialization independence is checked at the next gate.",
     "Structural failures are excluded from this chart implementation, not asserted to have low rank.",
-    "Exact Q-isomorphism deduplication uses the raw fibres; global minimization is deferred until after positive half-lattice recovery.",
+    "Exact Q-isomorphism deduplication uses the raw fibres; these rows are not minimized and authorize only the frozen arithmetic-size diagnostic.",
+    "Exact minimal-model transport and renewed section-independence checks precede any substantive recovery budget or promotion.",
     "No point search, public-complement comparison, rank jump, minimization, or Selmer computation occurs here."
   ],
   "duplicate_q_isomorphism_groups": [],
@@ -40885,17 +40886,17 @@
   "inputs": {
     "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-norm8-pencil-priority-v1.tsv": "85f19177d9da3eac695b432cb5440653f70ee72d20d19c71bc77fc14ba8cdb69",
     "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
-    "artifacts/generated-results/elliptic-curves/icarm_mw16_parent_nagao_prefilter_h300_v1.json": "370f8f1e9ef682bd09c5e09977711779c9e7fcc72634232e1e6d13d77f5c624b",
+    "artifacts/generated-results/elliptic-curves/icarm_mw16_parent_nagao_prefilter_h300_v1.json": "93877e783a49d4b5baad9ad582e09d44e2ddfd5341ef3a130ad08215cd27ca7b",
     "elkies-k3/scripts/construct_elkies_2026_bisections.sage": "146c0fdeddb2b5de44989bb650b36e28e600a1d5a8ea61f54f05df09db65a3df",
     "elkies-k3/scripts/screen_icarm_curve398_norm8_a1_fibrations.sage": "ae6ed7c4b692559a87c2096d4085fe16e1151cb9e4b7115fef80a28f0ac31db2",
     "elliptic-curves/cas/prepare_icarm_mw16_parent_ladder_inputs.sage": "4f591c123a6b1722e9fd67888f67d1131baadccfc6e2b6c693fb531485b59112",
-    "elliptic-curves/cas/specialize_icarm_mw16_nagao_finalists.sage": "e025e87464e11732a70c26c6f2aea1c7257cbd25a012bec09bc6acbd438b5093",
+    "elliptic-curves/cas/specialize_icarm_mw16_nagao_finalists.sage": "19d74472d9a0dd591ea1f3278586a17c62ebec462e64eb8b8929dd799600ecce",
     "elliptic-curves/data/icarm_mw16_parent_ladder_blind_inputs_v1.json": "a56208ecb81944b9a78c7eaa258ceaed29d21f72f25f88c130fac01b5ad511fe"
   },
   "next_gate": {
-    "after_positive_recovery": "compute the global minimal model, transport MW16 plus the recovered points, then run the complete residual 2-Selmer gate before any adaptive or unrestricted expensive continuation",
-    "authorized_search": "complete exact maximum-depth MW16 stratum at reduced-coordinate height at most 100000 and at most 15 seconds per chart",
-    "stage": "bounded_half_lattice_jump_recovery"
+    "authorized_search": "one frozen raw-model maximum-depth MW16 diagnostic with no mathematical inference from timeout or bounded miss",
+    "required_before_substantive_recovery_or_promotion": "compute an exact global minimal or comparably reduced Q-isomorphic model, transport MW16, and re-prove all section identities and independence; only an exact quotient positive then reaches the complete residual 2-Selmer gate",
+    "stage": "bounded_half_lattice_arithmetic_size_diagnostic"
   },
   "q_isomorphism_classes": [
     {

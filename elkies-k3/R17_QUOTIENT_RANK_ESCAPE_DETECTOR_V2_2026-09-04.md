@@ -3,7 +3,7 @@
 Date: 2026-09-04  
 Status: **Outcome D — fixture-separated MW17-only controls frozen but unrun; complete descents blocked; prospective sample unopened**
 
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 eda7a0053b31b7c9 -->
 
 ## Result
 
@@ -156,6 +156,14 @@ The separately frozen key is
 Neither stage is authorized until both record controls complete and blindly
 recover all twelve exceptional quotient directions.
 
+That seal is retained because it is the blinding boundary of this particular
+five-cohort statistical experiment.  It is not a production theorem saying
+that every promising curve must finish the same class/unit computation before
+a bounded point search.  Outside this experiment, incomplete descent is
+scheduling information; only a certified rank/Selmer upper bound below the
+target is a mathematical exclusion, and enough exactly verified independent
+rational points prove the lower-bound target regardless of descent status.
+
 ## Exact obstruction and narrowed task
 
 The completed-square cubic maximal orders and every bad-prime factorization
@@ -186,7 +194,8 @@ The prospective technical task is therefore:
 5. retain quotient-by-MW29 collectors only for post-discovery closure work.
 
 This is Outcome D.  There is no cohort comparison, cylinder conclusion,
-rank-enrichment claim, or candidate promotion.
+rank-enrichment claim, or candidate promotion inside the sealed experiment.
+The outcome does not impose its phase boundary on the production constructor.
 
 ## Replay
 

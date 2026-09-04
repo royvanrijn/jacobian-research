@@ -2,12 +2,12 @@
 
 > **Historical pre-endpoint workflow.** The rank-17 model and its seventeen
 > generic sections have since been recovered exactly.  Current use in the
-> R17/MW17 rank-32 lane must first pass the fail-closed residual quotient
-> `Sel_2(E_t)/<P1,...,P17>` on the same parameter and minimal curve.  This
-> height-Gram ignition/cascade interface remains useful only after that gate or
-> for replaying historical controls; it is not authorization for a raw point
-> search and is not the gate for the peer curve-398/curve-302 reconstruction
-> lane.  See [`README.md`](README.md) and
+> R17/MW17 rank-32 lane must bind the exact parameter/model and declare finite
+> resource limits.  A certified residual quotient upper bound below the target
+> excludes the fibre; incomplete descent only affects scheduling.  This
+> height-Gram ignition/cascade interface gives a point-based lower bound once
+> equation and independence checks pass, regardless of descent completion; it
+> is not authorization for an unbudgeted search.  See [`README.md`](README.md) and
 > [`../elliptic-curves/README.md`](../elliptic-curves/README.md).
 
 This workflow implements the search strategy learned from the controlled
@@ -45,8 +45,8 @@ as artifacts to recover.  They are now pinned in
 [`data/fibrations/elkies_2026_published_r17_model.json`](data/fibrations/elkies_2026_published_r17_model.json)
 and the endpoint certificates described in [`README.md`](README.md).
 The code still consumes height-Gram records rather than inventing a
-specialization or point-finding formula, but present use is subordinate to the
-residual 2-Selmer gate above.
+specialization or point-finding formula.  Present use is subordinate to the
+independent mathematical-exclusion and finite-budget gates above.
 
 ### Historical reconstruction checkpoint
 

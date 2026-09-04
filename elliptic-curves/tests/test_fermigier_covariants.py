@@ -15,6 +15,20 @@ from fermigier_mestre import FermigierMestreFamily  # noqa: E402
 class FermigierCovariantTests(unittest.TestCase):
     FAMILY = FermigierMestreFamily
 
+    def test_raw_discriminant_scale_to_canonical_adapter(self) -> None:
+        sys.path.insert(0, str(CAS_DIRECTORY.parent))
+        from ecsearch.fermigier import (
+            fermigier_quartic, fermigier_canonical_coefficients,
+            weierstrass_discriminant,
+        )
+        for u in (Q(1), Q(7, 3)):
+            e, d, c, b, a = fermigier_quartic(2*u).quartic
+            invariant_i = 12*a*e - 3*b*d + c*c
+            invariant_j = 72*a*c*e + 9*b*c*d - 27*a*d*d - 27*b*b*e - 2*c**3
+            raw = weierstrass_discriminant((0, 0, 0, -27*invariant_i, -27*invariant_j))
+            canonical = weierstrass_discriminant(fermigier_canonical_coefficients(u))
+            self.assertEqual(raw, (607392*u)**12 * canonical)
+
     def test_covariants_have_pinned_exact_values(self) -> None:
         self.assertEqual(
             self.FAMILY.quartic_covariants_at(Q(1), Q(2)),

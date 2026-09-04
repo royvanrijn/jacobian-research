@@ -1,6 +1,6 @@
 # Blind multi-stratum half-lattice jump ladder
 
-<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER b7518cc41268489a -->
+<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER a2d7034fb8977c18 -->
 
 Status: **passing fixed-panel detector experiment; exact blind rank gains;
 exact post-freeze displayed-jump analysis; no rank-32 promotion without the
@@ -100,8 +100,10 @@ table is `7/8` in the true upper tail and `0/8` outside it, for risk difference
 The joint predeclared decision is therefore
 `PASS_USABLE_EXTREME_JUMP_DETECTOR`.  Half-lattice recovery has evidence here
 as an extreme-jump detector rather than only a point finder.  This does not
-authorize a serious rank-32 point search by itself: the existing completed
-residual 2-Selmer quotient gate remains mandatory on the same minimal curve.
+prove that any selected candidate has rank 32.  In production, however, a
+completed residual 2-Selmer computation is an exclusion/closure tool rather
+than a universal search prerequisite: only a certified upper bound below 32
+vetoes a fibre, while incomplete descent affects scheduling only.
 
 ## Fibration and `j`-class sensitivity
 
@@ -156,8 +158,18 @@ post-selection point finder there.  Low `S` must not veto a candidate, because
 the searches are bounded and curve 544 has `q=11,S=0`.  Nor does this panel
 authorize transporting the rule to alternate Q80, an unrepresented `j`-class,
 or a changed lattice/basis.  Those settings need their own high-`q` blinded
-controls, and every serious rank-32 follow-up still needs the separate
-residual-Selmer gate.
+controls.  Every follow-up still needs a declared finite search budget and
+exact point-independence certification; a completed residual-Selmer upper bound
+is required for exact-rank closure, not for proving rank at least 32 from
+points.
+
+The completed v2 artifact is not retroactively changed to repair its bootstrap
+asymmetry.  Production MW17-jump-v2 instead has a separately frozen,
+outcome-blind one-in-eight rescue arm.  Assigned clean-zero fibres receive the
+next 301 generic half-classes in seven batches, and after the first certified
+escape any unused slots switch to the original quotient-adaptive policy.  This
+keeps the 344-chart total cap while ensuring that a treated zero-gain fibre
+does not need a pre-existing quotient direction to receive full exposure.
 
 ## Public-complement opening and new rank information
 

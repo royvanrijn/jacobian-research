@@ -93,9 +93,10 @@ ranks, censoring boundary, and prospective stopping rule are in
 
 ## Active searches
 
-The compact published Elkies `t` chart is the active high-rank search surface.
-Its exact positive controls and residual 2-Selmer gate must be applied before
-any expensive point search. The retained conductor-first work starts from the
+The published R17 and A1/MW16 charts are peer high-rank search surfaces.
+Use exact positive controls and declared finite search limits. A certified
+Selmer upper bound may exclude a fibre; incomplete descent does not veto a
+bounded, checkpointed point search. The retained conductor-first work starts from the
 four exact rank-19/20 near-miss descent inputs. The older
 `search_fermigier_denominator_offsets.py` and
 `evaluate_fermigier_specialization.py` remain stable calibration tools. Raw

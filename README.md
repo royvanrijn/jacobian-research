@@ -29,12 +29,14 @@ the research.
 - [Retrospective discovery audit](DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md)
   — the live actionable review of claims, scripts, certificates, and historical
   failure modes.
+- [Research value review](RESEARCH_VALUE_REVIEW_2026-09-04.md) — results worth
+  publishing, proof-review priorities, and the remaining GVC, HC4, and JC2 gates.
 - [Research papers](papers/README.md) — longer mathematical write-ups.
 - [Reproduce the calculations](REPRODUCE.md) — instructions for checking the
   computer-assisted work.
 
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
-<!-- status-consumer: OP-EC-NEXT 086b745cb3ca078e -->
+<!-- status-consumer: OP-EC-NEXT dfbe946c1dd0030b -->
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->

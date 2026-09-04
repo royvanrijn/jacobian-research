@@ -1,0 +1,113 @@
+{
+  "distinct_mask_pair_gate": {
+    "genus2_status": "PASS_SIMULTANEOUS_GOOD_REDUCTION_NO_COVER_COLLISION",
+    "genus3_initial_status": "SURVIVING_MODULAR_COVER_COLLISIONS",
+    "genus3_targeted_status": "PASS_TARGETED_GOOD_REDUCTION_NO_COVER_COLLISION",
+    "genus3_targeted_surviving_pairs": []
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-full-v1.json": "fbf979bfe7d92528405c62330a80dbfd7742dc27c41a0426dcd4014f6865c8ce",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus2-cover-collision-intersection-v1.json": "21cb2d2ee98ab1fc160e176e2374b73a3eda09c4afa5e2aaa0bcaa344253a994",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus2-normalization-full-p17-direct-v1.json": "94d5612ed277319ef02610b9806a1f9d112dd46d1d19512fd89efd3bfeddce4f",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus2-normalization-full-p23-direct-v1.json": "ac045d5721093a1a13518200009aa7bbcc7b7fc07b2019a9db01203c9e9b4bb9",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus2-normalization-full-p29-direct-v1.json": "d27c46fb0b301c9398ec8f140915e81e1364f0cf0928443896ac6d3e622256d9",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus2-normalization-full-p31-direct-v1.json": "23fb698df1a4ebb2ccfeccc2038e0ed5eea0c29a915dc8b66b5e80a4844f4a2a",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus2-normalization-full-p37-direct-v1.json": "def689116e87a93c7c2803867223236264313e85f44c3f8756632cb4f012d909",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus3-cover-collision-intersection-v1.json": "88df127a537f708df22c5e479c7bbed258835726a62f7d057b0572f0e18e6463",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus3-cover-collision-targeted-v1.json": "55fa8ac109b5f5dbbadcccf46ea8c4d1d649bf21596aedfbb8c11f9f1efc2b6f",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus3-normalization-full-p17-v1.json": "d68f059488193cdc847e9a9f44b0f845c486112ec2f5fb2a4f9687ad0c307db8",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus3-normalization-full-p23-v1.json": "54d607e6b0793814271bc1d7f9031f91985d9f94ba03ee77a0c7f09d26af55a5",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus3-normalization-full-p29-v1.json": "8f89c2d1a58163ab42f0ca9c80308c51be1d052eb354ad294709e188a1b13f69",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus3-normalization-full-p31-v1.json": "b85cc306b2ae3b044aa959bbd4ed175ca35fb74e37266e6c0251c9f7ba08c425",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-genus3-normalization-full-p37-v1.json": "0888537e6de155515d7b21cf96107644b56d66eeeba98beebae732749498264f"
+  },
+  "layers": [
+    "complete smooth rational bisection atlas",
+    "finite affine arithmetic-genus-two normalization chart",
+    "finite affine arithmetic-genus-three normalization chart"
+  ],
+  "mathematical_consequence": "No scalar-sensitive quadratic cover occurs three times among the processed smooth, genus-two, and genus-three affine layers with simultaneous good integral reduction in the displayed charts. Thus these layers cannot supply three independent directions on one twist.",
+  "prime_records": [
+    {
+      "genus2_survivor_count": 46920,
+      "genus3_survivor_count": 13854,
+      "pair_trace_mask_intersection_count_through_prime": 1670,
+      "prime": 17,
+      "same_mask_cover_groups_of_size_at_least_2": 2066,
+      "same_mask_cover_groups_of_size_at_least_3": 65,
+      "same_mask_pair_trace_mask_count": 1670,
+      "same_mask_triple_trace_mask_count": 65,
+      "triple_trace_mask_intersection_count_through_prime": 65
+    },
+    {
+      "genus2_survivor_count": 49048,
+      "genus3_survivor_count": 8009,
+      "pair_trace_mask_intersection_count_through_prime": 165,
+      "prime": 23,
+      "same_mask_cover_groups_of_size_at_least_2": 704,
+      "same_mask_cover_groups_of_size_at_least_3": 82,
+      "same_mask_pair_trace_mask_count": 630,
+      "same_mask_triple_trace_mask_count": 82,
+      "triple_trace_mask_intersection_count_through_prime": 4
+    },
+    {
+      "genus2_survivor_count": 57420,
+      "genus3_survivor_count": 16381,
+      "pair_trace_mask_intersection_count_through_prime": 87,
+      "prime": 29,
+      "same_mask_cover_groups_of_size_at_least_2": 1793,
+      "same_mask_cover_groups_of_size_at_least_3": 40,
+      "same_mask_pair_trace_mask_count": 1448,
+      "same_mask_triple_trace_mask_count": 40,
+      "triple_trace_mask_intersection_count_through_prime": 0
+    },
+    {
+      "genus2_survivor_count": 59593,
+      "genus3_survivor_count": 9021,
+      "pair_trace_mask_intersection_count_through_prime": 28,
+      "prime": 31,
+      "same_mask_cover_groups_of_size_at_least_2": 1289,
+      "same_mask_cover_groups_of_size_at_least_3": 206,
+      "same_mask_pair_trace_mask_count": 1117,
+      "same_mask_triple_trace_mask_count": 165,
+      "triple_trace_mask_intersection_count_through_prime": 0
+    },
+    {
+      "genus2_survivor_count": 51810,
+      "genus3_survivor_count": 7798,
+      "pair_trace_mask_intersection_count_through_prime": 11,
+      "prime": 37,
+      "same_mask_cover_groups_of_size_at_least_2": 915,
+      "same_mask_cover_groups_of_size_at_least_3": 63,
+      "same_mask_pair_trace_mask_count": 790,
+      "same_mask_triple_trace_mask_count": 63,
+      "triple_trace_mask_intersection_count_through_prime": 0
+    }
+  ],
+  "primes_in_intersection_order": [
+    17,
+    23,
+    29,
+    31,
+    37
+  ],
+  "proof_boundary": "An empty same-mask trace intersection is a necessary-condition obstruction, combined with the separately certified distinct-mask pair obstructions. It is not a global twist-rank upper bound. Rational solutions nonintegral at a selected prime, parameter-at-infinity or other boundary charts, and bisections of arithmetic genus at least four remain open.",
+  "reproducing_command": "python3 elkies-k3/scripts/analyze_r17_norm12_low_genus_rank3_collisions.py",
+  "schema": "elkies-k3.r17-norm12-low-genus-rank3-cover-collision.v1",
+  "source_label": "norm12-orbit-11952",
+  "status": "PASS_PROCESSED_AFFINE_LOW_GENUS_NO_THREE_COVER_COLLISION",
+  "surviving_same_mask_pair_trace_masks": [
+    36,
+    80,
+    90,
+    1124,
+    5984,
+    17102,
+    29097,
+    61833,
+    63270,
+    101293,
+    128126
+  ],
+  "surviving_same_mask_triple_trace_masks": []
+}

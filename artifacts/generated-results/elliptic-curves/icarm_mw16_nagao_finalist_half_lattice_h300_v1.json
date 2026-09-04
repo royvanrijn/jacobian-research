@@ -1,0 +1,5389 @@
+{
+  "arithmetic_size_diagnostic": {
+    "all_chart_attempts_timed_out": true,
+    "next_engineering_gate": "exact Q-isomorphic model and section transport that materially reduces arithmetic size before any larger half-lattice budget",
+    "raw_quartic_coefficient_maximum_bits_range": [
+      10140,
+      11302
+    ],
+    "raw_short_model_maximum_bits_range": [
+      5871,
+      6302
+    ]
+  },
+  "candidate_ledger_sha256": "1b408f67e44bd390d6643d9e21be706677e085a90238360fbef136529d2bc610",
+  "chart_status_counts": {
+    "bounded_search_timeout": 856
+  },
+  "claim_boundary": [
+    "Nagao fixed candidate order only and contributes no rank evidence.",
+    "An exact positive means a rational point survived exact group-law and finite-reduction independence checks.",
+    "A zero is only the rank of the group recovered inside the declared bounded attempts.",
+    "A bounded_search_timeout chart did not exhaust its height box and is censored, not a negative search result.",
+    "No adaptive quotient wave, unrestricted point search, or Selmer computation occurs in this artifact.",
+    "Only exact positives are passed to the complete same-minimal-curve residual 2-Selmer gate."
+  ],
+  "completed_candidate_count": 104,
+  "declared_budget": {
+    "adaptive_quotient_lifts": 0,
+    "chart_rule": "complete exact maximum-depth stratum of the specialized generic MW16 half-lattice, recomputed separately for each fibre",
+    "height_bound_each_quartic": 10000,
+    "relation_chunk_size": 64,
+    "relation_timeout_seconds_each_chunk": 180.0,
+    "stack_bytes_each_quartic": 1000000000,
+    "timeout_seconds_each_quartic": 2.0,
+    "unrestricted_point_search": false
+  },
+  "failed_closed_candidate_count": 0,
+  "failed_closed_candidate_ids": [],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/icarm_mw16_nagao_finalist_specializations_h300_v1.json": "c1187b3124c3d8768dbf414a4ed3b24d3e80914f2bda492df7a17510969ac499",
+    "elliptic-curves/cas/merge_icarm_mw16_nagao_finalist_half_lattice_shards.py": "1030377e5a633334f1ac134cede507c370c3326d651b6f2c8ba9d4bb21d4b0a9"
+  },
+  "local_shard_witnesses": [
+    {
+      "candidate_count": 13,
+      "first_candidate_id": "curve398-p16875-p61d153",
+      "last_candidate_id": "curve398-p63669-m22d39",
+      "normalized_result_sha256": "80ffb6178e80600f0a89abbe6b8bf28ee9028ced87005fadda5f2becd752935a",
+      "path": "artifacts/local/elliptic-curves/mw16-finalist-half-lattice/shard-0.json"
+    },
+    {
+      "candidate_count": 13,
+      "first_candidate_id": "curve398-p63669-p13d202",
+      "last_candidate_id": "curve400-p53042-m44d39",
+      "normalized_result_sha256": "1d87004de32ffbf64652ba5e22f606cc55dadea2f24ba8cfa9d84e84605c18c8",
+      "path": "artifacts/local/elliptic-curves/mw16-finalist-half-lattice/shard-1.json"
+    },
+    {
+      "candidate_count": 13,
+      "first_candidate_id": "curve400-p53042-p7d3",
+      "last_candidate_id": "curve400-p62992-m158d97",
+      "normalized_result_sha256": "c588f7be1a3e00c28f6691fe7924f7eed3ac64271fa7a3d0024ab6df1eecfe53",
+      "path": "artifacts/local/elliptic-curves/mw16-finalist-half-lattice/shard-2.json"
+    },
+    {
+      "candidate_count": 13,
+      "first_candidate_id": "curve400-p62992-p11d51",
+      "last_candidate_id": "curve401-p57487-p11d2",
+      "normalized_result_sha256": "d5250b789b4ec9ea8d7f917ecc76fe40bd0eebf8fdb11e676b5c0706326dd018",
+      "path": "artifacts/local/elliptic-curves/mw16-finalist-half-lattice/shard-3.json"
+    },
+    {
+      "candidate_count": 13,
+      "first_candidate_id": "curve401-p57487-m51d7",
+      "last_candidate_id": "curve542-p30486-m44d63",
+      "normalized_result_sha256": "3a4ea083b356ae6faca13adfc4fdec04b7f556c769a5feb59eadd57fa24bf8cd",
+      "path": "artifacts/local/elliptic-curves/mw16-finalist-half-lattice/shard-4.json"
+    },
+    {
+      "candidate_count": 13,
+      "first_candidate_id": "curve542-p30486-p64d151",
+      "last_candidate_id": "curve548-p31627-p106d77",
+      "normalized_result_sha256": "3175c3eb7f98513c508c00dc36fc7a65393c6e7c1f1a4fcbf1d9bf7e70e16d64",
+      "path": "artifacts/local/elliptic-curves/mw16-finalist-half-lattice/shard-5.json"
+    },
+    {
+      "candidate_count": 13,
+      "first_candidate_id": "curve548-p31627-p51d5",
+      "last_candidate_id": "curve548-p54835-m19d153",
+      "normalized_result_sha256": "f4bf10b764b2369f895774b217f6a742df13b378cdd8e278fe4f0d983de5ddc2",
+      "path": "artifacts/local/elliptic-curves/mw16-finalist-half-lattice/shard-6.json"
+    },
+    {
+      "candidate_count": 13,
+      "first_candidate_id": "curve548-p54835-m111d151",
+      "last_candidate_id": "curve548-p63647-m49d53",
+      "normalized_result_sha256": "e7e6704ed1c1fc15ead0ca478f2c56a1c25c4230bac50b56fca5b20547d4372b",
+      "path": "artifacts/local/elliptic-curves/mw16-finalist-half-lattice/shard-7.json"
+    }
+  ],
+  "per_parent": {
+    "curve398-p16875": {
+      "candidates": 12,
+      "failed_closed": 0,
+      "positives": 0
+    },
+    "curve398-p63669": {
+      "candidates": 12,
+      "failed_closed": 0,
+      "positives": 0
+    },
+    "curve400-p53042": {
+      "candidates": 12,
+      "failed_closed": 0,
+      "positives": 0
+    },
+    "curve400-p62992": {
+      "candidates": 11,
+      "failed_closed": 0,
+      "positives": 0
+    },
+    "curve401-p57487": {
+      "candidates": 12,
+      "failed_closed": 0,
+      "positives": 0
+    },
+    "curve542-p30486": {
+      "candidates": 10,
+      "failed_closed": 0,
+      "positives": 0
+    },
+    "curve548-p31627": {
+      "candidates": 12,
+      "failed_closed": 0,
+      "positives": 0
+    },
+    "curve548-p54835": {
+      "candidates": 11,
+      "failed_closed": 0,
+      "positives": 0
+    },
+    "curve548-p63647": {
+      "candidates": 12,
+      "failed_closed": 0,
+      "positives": 0
+    }
+  },
+  "positive_candidate_count": 0,
+  "positive_candidate_ids": [],
+  "reproducing_command": "python3 elliptic-curves/cas/merge_icarm_mw16_nagao_finalist_half_lattice_shards.py",
+  "results": [
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p16875-p61d153",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        2681,
+        5537,
+        10514,
+        16748,
+        17084,
+        25286,
+        30943,
+        41207,
+        52060,
+        59125,
+        62759,
+        64816
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6104050871113,
+          4986219790859,
+          4450485537108
+        ],
+        "good_prime_count": 24,
+        "parameter": "61/153",
+        "projective_height": 153,
+        "projective_pair": [
+          61,
+          153
+        ],
+        "total_score": 15.54075619908,
+        "total_score_units_1e12": 15540756199080
+      },
+      "parameter": "61/153",
+      "parent_id": "curve398-p16875",
+      "q_isomorphism_class_id": "QISO-0001",
+      "raw_quartic_coefficient_maximum_bits": 11159,
+      "raw_short_model_maximum_bits": 6223,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p16875-m205d63",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        2681,
+        5537,
+        10514,
+        16748,
+        17084,
+        25286,
+        30943,
+        41207,
+        52060,
+        59125,
+        62759,
+        64816
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6004176792986,
+          4775543191265,
+          4406736135632
+        ],
+        "good_prime_count": 24,
+        "parameter": "-205/63",
+        "projective_height": 205,
+        "projective_pair": [
+          -205,
+          63
+        ],
+        "total_score": 15.186456119883,
+        "total_score_units_1e12": 15186456119883
+      },
+      "parameter": "-205/63",
+      "parent_id": "curve398-p16875",
+      "q_isomorphism_class_id": "QISO-0002",
+      "raw_quartic_coefficient_maximum_bits": 11217,
+      "raw_short_model_maximum_bits": 6205,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p16875-m4d3",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        2681,
+        5537,
+        10514,
+        16748,
+        17084,
+        25286,
+        30943,
+        41207,
+        52060,
+        59125,
+        62759,
+        64816
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5683198497668,
+          5143149442705,
+          4107071656962
+        ],
+        "good_prime_count": 24,
+        "parameter": "-4/3",
+        "projective_height": 4,
+        "projective_pair": [
+          -4,
+          3
+        ],
+        "total_score": 14.933419597335,
+        "total_score_units_1e12": 14933419597335
+      },
+      "parameter": "-4/3",
+      "parent_id": "curve398-p16875",
+      "q_isomorphism_class_id": "QISO-0003",
+      "raw_quartic_coefficient_maximum_bits": 10994,
+      "raw_short_model_maximum_bits": 6150,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p16875-p59d4",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        2681,
+        5537,
+        10514,
+        16748,
+        17084,
+        25286,
+        30943,
+        41207,
+        52060,
+        59125,
+        62759,
+        64816
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5934295942585,
+          4775005765100,
+          4160045728037
+        ],
+        "good_prime_count": 24,
+        "parameter": "59/4",
+        "projective_height": 59,
+        "projective_pair": [
+          59,
+          4
+        ],
+        "total_score": 14.869347435722,
+        "total_score_units_1e12": 14869347435722
+      },
+      "parameter": "59/4",
+      "parent_id": "curve398-p16875",
+      "q_isomorphism_class_id": "QISO-0004",
+      "raw_quartic_coefficient_maximum_bits": 11085,
+      "raw_short_model_maximum_bits": 6188,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p16875-p4d201",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        2681,
+        5537,
+        10514,
+        16748,
+        17084,
+        25286,
+        30943,
+        41207,
+        52060,
+        59125,
+        62759,
+        64816
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5952940359694,
+          4008201543319,
+          4610788865036
+        ],
+        "good_prime_count": 24,
+        "parameter": "4/201",
+        "projective_height": 201,
+        "projective_pair": [
+          4,
+          201
+        ],
+        "total_score": 14.571930768049,
+        "total_score_units_1e12": 14571930768049
+      },
+      "parameter": "4/201",
+      "parent_id": "curve398-p16875",
+      "q_isomorphism_class_id": "QISO-0005",
+      "raw_quartic_coefficient_maximum_bits": 11176,
+      "raw_short_model_maximum_bits": 6237,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p16875-m101d81",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        2681,
+        5537,
+        10514,
+        16748,
+        17084,
+        25286,
+        30943,
+        41207,
+        52060,
+        59125,
+        62759,
+        64816
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6014632562500,
+          4002410376721,
+          4446919938811
+        ],
+        "good_prime_count": 24,
+        "parameter": "-101/81",
+        "projective_height": 101,
+        "projective_pair": [
+          -101,
+          81
+        ],
+        "total_score": 14.463962878032,
+        "total_score_units_1e12": 14463962878032
+      },
+      "parameter": "-101/81",
+      "parent_id": "curve398-p16875",
+      "q_isomorphism_class_id": "QISO-0006",
+      "raw_quartic_coefficient_maximum_bits": 11236,
+      "raw_short_model_maximum_bits": 6226,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p16875-m3d2",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        2681,
+        5537,
+        10514,
+        16748,
+        17084,
+        25286,
+        30943,
+        41207,
+        52060,
+        59125,
+        62759,
+        64816
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5623126260331,
+          4577613183286,
+          4252032247463
+        ],
+        "good_prime_count": 24,
+        "parameter": "-3/2",
+        "projective_height": 3,
+        "projective_pair": [
+          -3,
+          2
+        ],
+        "total_score": 14.45277169108,
+        "total_score_units_1e12": 14452771691080
+      },
+      "parameter": "-3/2",
+      "parent_id": "curve398-p16875",
+      "q_isomorphism_class_id": "QISO-0007",
+      "raw_quartic_coefficient_maximum_bits": 11076,
+      "raw_short_model_maximum_bits": 6176,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p16875-p45d53",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        2681,
+        5537,
+        10514,
+        16748,
+        17084,
+        25286,
+        30943,
+        41207,
+        52060,
+        59125,
+        62759,
+        64816
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5931047166985,
+          4204471060886,
+          4057882239775
+        ],
+        "good_prime_count": 24,
+        "parameter": "45/53",
+        "projective_height": 53,
+        "projective_pair": [
+          45,
+          53
+        ],
+        "total_score": 14.193400467646,
+        "total_score_units_1e12": 14193400467646
+      },
+      "parameter": "45/53",
+      "parent_id": "curve398-p16875",
+      "q_isomorphism_class_id": "QISO-0008",
+      "raw_quartic_coefficient_maximum_bits": 11173,
+      "raw_short_model_maximum_bits": 6233,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p16875-p28d151",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        2681,
+        5537,
+        10514,
+        16748,
+        17084,
+        25286,
+        30943,
+        41207,
+        52060,
+        59125,
+        62759,
+        64816
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          6030117153270,
+          3216553300259,
+          4553196886230
+        ],
+        "good_prime_count": 23,
+        "parameter": "28/151",
+        "projective_height": 151,
+        "projective_pair": [
+          28,
+          151
+        ],
+        "total_score": 13.799867339759,
+        "total_score_units_1e12": 13799867339759
+      },
+      "parameter": "28/151",
+      "parent_id": "curve398-p16875",
+      "q_isomorphism_class_id": "QISO-0009",
+      "raw_quartic_coefficient_maximum_bits": 11230,
+      "raw_short_model_maximum_bits": 6246,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p16875-p0d1",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        2681,
+        5537,
+        10514,
+        16748,
+        17084,
+        25286,
+        30943,
+        41207,
+        52060,
+        59125,
+        62759,
+        64816
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          4745040349838,
+          3471365834876,
+          4821794986737
+        ],
+        "good_prime_count": 24,
+        "parameter": "0/1",
+        "projective_height": 1,
+        "projective_pair": [
+          0,
+          1
+        ],
+        "total_score": 13.038201171451,
+        "total_score_units_1e12": 13038201171451
+      },
+      "parameter": "0/1",
+      "parent_id": "curve398-p16875",
+      "q_isomorphism_class_id": "QISO-0010",
+      "raw_quartic_coefficient_maximum_bits": 10374,
+      "raw_short_model_maximum_bits": 6159,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p16875-m74d251",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        2681,
+        5537,
+        10514,
+        16748,
+        17084,
+        25286,
+        30943,
+        41207,
+        52060,
+        59125,
+        62759,
+        64816
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5906388427392,
+          3920514284221,
+          3137096445670
+        ],
+        "good_prime_count": 24,
+        "parameter": "-74/251",
+        "projective_height": 251,
+        "projective_pair": [
+          -74,
+          251
+        ],
+        "total_score": 12.963999157283,
+        "total_score_units_1e12": 12963999157283
+      },
+      "parameter": "-74/251",
+      "parent_id": "curve398-p16875",
+      "q_isomorphism_class_id": "QISO-0011",
+      "raw_quartic_coefficient_maximum_bits": 11235,
+      "raw_short_model_maximum_bits": 6255,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p16875-m7d51",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        2681,
+        5537,
+        10514,
+        16748,
+        17084,
+        25286,
+        30943,
+        41207,
+        52060,
+        59125,
+        62759,
+        64816
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          5791613423073,
+          3807554548923,
+          3331065797854
+        ],
+        "good_prime_count": 23,
+        "parameter": "-7/51",
+        "projective_height": 51,
+        "projective_pair": [
+          -7,
+          51
+        ],
+        "total_score": 12.93023376985,
+        "total_score_units_1e12": 12930233769850
+      },
+      "parameter": "-7/51",
+      "parent_id": "curve398-p16875",
+      "q_isomorphism_class_id": "QISO-0012",
+      "raw_quartic_coefficient_maximum_bits": 11174,
+      "raw_short_model_maximum_bits": 6218,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p63669-m22d39",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        10331,
+        12257,
+        13395,
+        14109,
+        20651,
+        27091,
+        31180,
+        31307,
+        52965,
+        53924,
+        61409,
+        65428
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6155339222132,
+          4975641643415,
+          4846912538043
+        ],
+        "good_prime_count": 24,
+        "parameter": "-22/39",
+        "projective_height": 39,
+        "projective_pair": [
+          -22,
+          39
+        ],
+        "total_score": 15.97789340359,
+        "total_score_units_1e12": 15977893403590
+      },
+      "parameter": "-22/39",
+      "parent_id": "curve398-p63669",
+      "q_isomorphism_class_id": "QISO-0013",
+      "raw_quartic_coefficient_maximum_bits": 10614,
+      "raw_short_model_maximum_bits": 5935,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p63669-p13d202",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        10331,
+        12257,
+        13395,
+        14109,
+        20651,
+        27091,
+        31180,
+        31307,
+        52965,
+        53924,
+        61409,
+        65428
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5958838587490,
+          4857827728037,
+          4770350984439
+        ],
+        "good_prime_count": 24,
+        "parameter": "13/202",
+        "projective_height": 202,
+        "projective_pair": [
+          13,
+          202
+        ],
+        "total_score": 15.587017299966,
+        "total_score_units_1e12": 15587017299966
+      },
+      "parameter": "13/202",
+      "parent_id": "curve398-p63669",
+      "q_isomorphism_class_id": "QISO-0014",
+      "raw_quartic_coefficient_maximum_bits": 10645,
+      "raw_short_model_maximum_bits": 5980,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p63669-p110d67",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        10331,
+        12257,
+        13395,
+        14109,
+        20651,
+        27091,
+        31180,
+        31307,
+        52965,
+        53924,
+        61409,
+        65428
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6019769854111,
+          5077664528983,
+          4448380136130
+        ],
+        "good_prime_count": 24,
+        "parameter": "110/67",
+        "projective_height": 110,
+        "projective_pair": [
+          110,
+          67
+        ],
+        "total_score": 15.545814519224,
+        "total_score_units_1e12": 15545814519224
+      },
+      "parameter": "110/67",
+      "parent_id": "curve398-p63669",
+      "q_isomorphism_class_id": "QISO-0015",
+      "raw_quartic_coefficient_maximum_bits": 10631,
+      "raw_short_model_maximum_bits": 5949,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p63669-m19d54",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        10331,
+        12257,
+        13395,
+        14109,
+        20651,
+        27091,
+        31180,
+        31307,
+        52965,
+        53924,
+        61409,
+        65428
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5992702454474,
+          4306428161208,
+          5081125702498
+        ],
+        "good_prime_count": 24,
+        "parameter": "-19/54",
+        "projective_height": 54,
+        "projective_pair": [
+          -19,
+          54
+        ],
+        "total_score": 15.38025631818,
+        "total_score_units_1e12": 15380256318180
+      },
+      "parameter": "-19/54",
+      "parent_id": "curve398-p63669",
+      "q_isomorphism_class_id": "QISO-0016",
+      "raw_quartic_coefficient_maximum_bits": 10674,
+      "raw_short_model_maximum_bits": 5952,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p63669-p8d1",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        10331,
+        12257,
+        13395,
+        14109,
+        20651,
+        27091,
+        31180,
+        31307,
+        52965,
+        53924,
+        61409,
+        65428
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5796663164542,
+          4756536074619,
+          4777313997968
+        ],
+        "good_prime_count": 24,
+        "parameter": "8/1",
+        "projective_height": 8,
+        "projective_pair": [
+          8,
+          1
+        ],
+        "total_score": 15.330513237129,
+        "total_score_units_1e12": 15330513237129
+      },
+      "parameter": "8/1",
+      "parent_id": "curve398-p63669",
+      "q_isomorphism_class_id": "QISO-0017",
+      "raw_quartic_coefficient_maximum_bits": 10464,
+      "raw_short_model_maximum_bits": 5871,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p63669-p227d257",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        10331,
+        12257,
+        13395,
+        14109,
+        20651,
+        27091,
+        31180,
+        31307,
+        52965,
+        53924,
+        61409,
+        65428
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6145265244111,
+          4719626945898,
+          4404610327053
+        ],
+        "good_prime_count": 24,
+        "parameter": "227/257",
+        "projective_height": 257,
+        "projective_pair": [
+          227,
+          257
+        ],
+        "total_score": 15.269502517062,
+        "total_score_units_1e12": 15269502517062
+      },
+      "parameter": "227/257",
+      "parent_id": "curve398-p63669",
+      "q_isomorphism_class_id": "QISO-0018",
+      "raw_quartic_coefficient_maximum_bits": 10707,
+      "raw_short_model_maximum_bits": 5984,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p63669-m16d51",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        10331,
+        12257,
+        13395,
+        14109,
+        20651,
+        27091,
+        31180,
+        31307,
+        52965,
+        53924,
+        61409,
+        65428
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5863836827139,
+          4208160174198,
+          4829245175303
+        ],
+        "good_prime_count": 24,
+        "parameter": "-16/51",
+        "projective_height": 51,
+        "projective_pair": [
+          -16,
+          51
+        ],
+        "total_score": 14.90124217664,
+        "total_score_units_1e12": 14901242176640
+      },
+      "parameter": "-16/51",
+      "parent_id": "curve398-p63669",
+      "q_isomorphism_class_id": "QISO-0019",
+      "raw_quartic_coefficient_maximum_bits": 10576,
+      "raw_short_model_maximum_bits": 5934,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p63669-m161d24",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        10331,
+        12257,
+        13395,
+        14109,
+        20651,
+        27091,
+        31180,
+        31307,
+        52965,
+        53924,
+        61409,
+        65428
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6075821286759,
+          4949484430488,
+          3530905010973
+        ],
+        "good_prime_count": 24,
+        "parameter": "-161/24",
+        "projective_height": 161,
+        "projective_pair": [
+          -161,
+          24
+        ],
+        "total_score": 14.55621072822,
+        "total_score_units_1e12": 14556210728220
+      },
+      "parameter": "-161/24",
+      "parent_id": "curve398-p63669",
+      "q_isomorphism_class_id": "QISO-0020",
+      "raw_quartic_coefficient_maximum_bits": 10634,
+      "raw_short_model_maximum_bits": 5938,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p63669-m232d251",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        10331,
+        12257,
+        13395,
+        14109,
+        20651,
+        27091,
+        31180,
+        31307,
+        52965,
+        53924,
+        61409,
+        65428
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6034684539795,
+          4408280735818,
+          4104775598656
+        ],
+        "good_prime_count": 24,
+        "parameter": "-232/251",
+        "projective_height": 251,
+        "projective_pair": [
+          -232,
+          251
+        ],
+        "total_score": 14.547740874269,
+        "total_score_units_1e12": 14547740874269
+      },
+      "parameter": "-232/251",
+      "parent_id": "curve398-p63669",
+      "q_isomorphism_class_id": "QISO-0021",
+      "raw_quartic_coefficient_maximum_bits": 10652,
+      "raw_short_model_maximum_bits": 5967,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p63669-p201d16",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        10331,
+        12257,
+        13395,
+        14109,
+        20651,
+        27091,
+        31180,
+        31307,
+        52965,
+        53924,
+        61409,
+        65428
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5905277937746,
+          4726133592528,
+          3751787596803
+        ],
+        "good_prime_count": 24,
+        "parameter": "201/16",
+        "projective_height": 201,
+        "projective_pair": [
+          201,
+          16
+        ],
+        "total_score": 14.383199127077,
+        "total_score_units_1e12": 14383199127077
+      },
+      "parameter": "201/16",
+      "parent_id": "curve398-p63669",
+      "q_isomorphism_class_id": "QISO-0022",
+      "raw_quartic_coefficient_maximum_bits": 10596,
+      "raw_short_model_maximum_bits": 5936,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p63669-m151d63",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        10331,
+        12257,
+        13395,
+        14109,
+        20651,
+        27091,
+        31180,
+        31307,
+        52965,
+        53924,
+        61409,
+        65428
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6074957020826,
+          4392982484935,
+          3255753623778
+        ],
+        "good_prime_count": 24,
+        "parameter": "-151/63",
+        "projective_height": 151,
+        "projective_pair": [
+          -151,
+          63
+        ],
+        "total_score": 13.723693129539,
+        "total_score_units_1e12": 13723693129539
+      },
+      "parameter": "-151/63",
+      "parent_id": "curve398-p63669",
+      "q_isomorphism_class_id": "QISO-0023",
+      "raw_quartic_coefficient_maximum_bits": 10611,
+      "raw_short_model_maximum_bits": 5921,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve398-p63669-m101d89",
+      "chart_status_counts": {
+        "bounded_search_timeout": 12
+      },
+      "deepest_class_count": 12,
+      "deepest_masks": [
+        10331,
+        12257,
+        13395,
+        14109,
+        20651,
+        27091,
+        31180,
+        31307,
+        52965,
+        53924,
+        61409,
+        65428
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          6003552706242,
+          2969497380456,
+          4343234843180
+        ],
+        "good_prime_count": 23,
+        "parameter": "-101/89",
+        "projective_height": 101,
+        "projective_pair": [
+          -101,
+          89
+        ],
+        "total_score": 13.316284929878,
+        "total_score_units_1e12": 13316284929878
+      },
+      "parameter": "-101/89",
+      "parent_id": "curve398-p63669",
+      "q_isomorphism_class_id": "QISO-0024",
+      "raw_quartic_coefficient_maximum_bits": 10676,
+      "raw_short_model_maximum_bits": 5966,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p53042-p89d241",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        15341,
+        15789,
+        21292,
+        29806
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6104050871113,
+          5579879036087,
+          4620270769958
+        ],
+        "good_prime_count": 24,
+        "parameter": "89/241",
+        "projective_height": 241,
+        "projective_pair": [
+          89,
+          241
+        ],
+        "total_score": 16.304200677158,
+        "total_score_units_1e12": 16304200677158
+      },
+      "parameter": "89/241",
+      "parent_id": "curve400-p53042",
+      "q_isomorphism_class_id": "QISO-0025",
+      "raw_quartic_coefficient_maximum_bits": 11288,
+      "raw_short_model_maximum_bits": 6302,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p53042-m44d39",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        15341,
+        15789,
+        21292,
+        29806
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6134243678583,
+          4901699034863,
+          4751880787473
+        ],
+        "good_prime_count": 24,
+        "parameter": "-44/39",
+        "projective_height": 44,
+        "projective_pair": [
+          -44,
+          39
+        ],
+        "total_score": 15.787823500919,
+        "total_score_units_1e12": 15787823500919
+      },
+      "parameter": "-44/39",
+      "parent_id": "curve400-p53042",
+      "q_isomorphism_class_id": "QISO-0026",
+      "raw_quartic_coefficient_maximum_bits": 11167,
+      "raw_short_model_maximum_bits": 6231,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p53042-p7d3",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        15341,
+        15789,
+        21292,
+        29806
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5730134572726,
+          4576327089269,
+          4635889413479
+        ],
+        "good_prime_count": 24,
+        "parameter": "7/3",
+        "projective_height": 7,
+        "projective_pair": [
+          7,
+          3
+        ],
+        "total_score": 14.942351075474,
+        "total_score_units_1e12": 14942351075474
+      },
+      "parameter": "7/3",
+      "parent_id": "curve400-p53042",
+      "q_isomorphism_class_id": "QISO-0027",
+      "raw_quartic_coefficient_maximum_bits": 11168,
+      "raw_short_model_maximum_bits": 6226,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p53042-m47d124",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        15341,
+        15789,
+        21292,
+        29806
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6040731112160,
+          4891774059404,
+          3481707961745
+        ],
+        "good_prime_count": 24,
+        "parameter": "-47/124",
+        "projective_height": 124,
+        "projective_pair": [
+          -47,
+          124
+        ],
+        "total_score": 14.414213133309,
+        "total_score_units_1e12": 14414213133309
+      },
+      "parameter": "-47/124",
+      "parent_id": "curve400-p53042",
+      "q_isomorphism_class_id": "QISO-0028",
+      "raw_quartic_coefficient_maximum_bits": 11268,
+      "raw_short_model_maximum_bits": 6291,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p53042-m1d2",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        15341,
+        15789,
+        21292,
+        29806
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5382474043544,
+          4788489014706,
+          4227963137255
+        ],
+        "good_prime_count": 24,
+        "parameter": "-1/2",
+        "projective_height": 2,
+        "projective_pair": [
+          -1,
+          2
+        ],
+        "total_score": 14.398926195505,
+        "total_score_units_1e12": 14398926195505
+      },
+      "parameter": "-1/2",
+      "parent_id": "curve400-p53042",
+      "q_isomorphism_class_id": "QISO-0029",
+      "raw_quartic_coefficient_maximum_bits": 11146,
+      "raw_short_model_maximum_bits": 6219,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p53042-p115d203",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        15341,
+        15789,
+        21292,
+        29806
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6079017429437,
+          4521201573519,
+          3652325545825
+        ],
+        "good_prime_count": 24,
+        "parameter": "115/203",
+        "projective_height": 203,
+        "projective_pair": [
+          115,
+          203
+        ],
+        "total_score": 14.252544548781,
+        "total_score_units_1e12": 14252544548781
+      },
+      "parameter": "115/203",
+      "parent_id": "curve400-p53042",
+      "q_isomorphism_class_id": "QISO-0030",
+      "raw_quartic_coefficient_maximum_bits": 11236,
+      "raw_short_model_maximum_bits": 6265,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p53042-m242d251",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        15341,
+        15789,
+        21292,
+        29806
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6150078952263,
+          3557954134043,
+          4343754751150
+        ],
+        "good_prime_count": 24,
+        "parameter": "-242/251",
+        "projective_height": 251,
+        "projective_pair": [
+          -242,
+          251
+        ],
+        "total_score": 14.051787837456,
+        "total_score_units_1e12": 14051787837456
+      },
+      "parameter": "-242/251",
+      "parent_id": "curve400-p53042",
+      "q_isomorphism_class_id": "QISO-0031",
+      "raw_quartic_coefficient_maximum_bits": 11283,
+      "raw_short_model_maximum_bits": 6291,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p53042-p51d1",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        15341,
+        15789,
+        21292,
+        29806
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5836533575874,
+          5014688574891,
+          2606467151992
+        ],
+        "good_prime_count": 24,
+        "parameter": "51/1",
+        "projective_height": 51,
+        "projective_pair": [
+          51,
+          1
+        ],
+        "total_score": 13.457689302757,
+        "total_score_units_1e12": 13457689302757
+      },
+      "parameter": "51/1",
+      "parent_id": "curve400-p53042",
+      "q_isomorphism_class_id": "QISO-0032",
+      "raw_quartic_coefficient_maximum_bits": 11064,
+      "raw_short_model_maximum_bits": 6202,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p53042-p39d101",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        15341,
+        15789,
+        21292,
+        29806
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6027663892755,
+          3878926502906,
+          3530879792974
+        ],
+        "good_prime_count": 24,
+        "parameter": "39/101",
+        "projective_height": 101,
+        "projective_pair": [
+          39,
+          101
+        ],
+        "total_score": 13.437470188635,
+        "total_score_units_1e12": 13437470188635
+      },
+      "parameter": "39/101",
+      "parent_id": "curve400-p53042",
+      "q_isomorphism_class_id": "QISO-0033",
+      "raw_quartic_coefficient_maximum_bits": 11189,
+      "raw_short_model_maximum_bits": 6269,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p53042-p41d153",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        15341,
+        15789,
+        21292,
+        29806
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6038357264330,
+          3367979877611,
+          4006391041475
+        ],
+        "good_prime_count": 24,
+        "parameter": "41/153",
+        "projective_height": 153,
+        "projective_pair": [
+          41,
+          153
+        ],
+        "total_score": 13.412728183416,
+        "total_score_units_1e12": 13412728183416
+      },
+      "parameter": "41/153",
+      "parent_id": "curve400-p53042",
+      "q_isomorphism_class_id": "QISO-0034",
+      "raw_quartic_coefficient_maximum_bits": 11297,
+      "raw_short_model_maximum_bits": 6294,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p53042-p92d151",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        15341,
+        15789,
+        21292,
+        29806
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          5910098697205,
+          3407547467524,
+          4030462770436
+        ],
+        "good_prime_count": 23,
+        "parameter": "92/151",
+        "projective_height": 151,
+        "projective_pair": [
+          92,
+          151
+        ],
+        "total_score": 13.348108935165,
+        "total_score_units_1e12": 13348108935165
+      },
+      "parameter": "92/151",
+      "parent_id": "curve400-p53042",
+      "q_isomorphism_class_id": "QISO-0035",
+      "raw_quartic_coefficient_maximum_bits": 11230,
+      "raw_short_model_maximum_bits": 6277,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p53042-p0d1",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        15341,
+        15789,
+        21292,
+        29806
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          4449876824069,
+          3570801046679,
+          4017865437607
+        ],
+        "good_prime_count": 23,
+        "parameter": "0/1",
+        "projective_height": 1,
+        "projective_pair": [
+          0,
+          1
+        ],
+        "total_score": 12.038543308355,
+        "total_score_units_1e12": 12038543308355
+      },
+      "parameter": "0/1",
+      "parent_id": "curve400-p53042",
+      "q_isomorphism_class_id": "QISO-0036",
+      "raw_quartic_coefficient_maximum_bits": 10427,
+      "raw_short_model_maximum_bits": 6185,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p62992-p223d252",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        7202,
+        8535,
+        12613,
+        27458
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6060055319032,
+          4903360643234,
+          4985467466202
+        ],
+        "good_prime_count": 24,
+        "parameter": "223/252",
+        "projective_height": 252,
+        "projective_pair": [
+          223,
+          252
+        ],
+        "total_score": 15.948883428468,
+        "total_score_units_1e12": 15948883428468
+      },
+      "parameter": "223/252",
+      "parent_id": "curve400-p62992",
+      "q_isomorphism_class_id": "QISO-0037",
+      "raw_quartic_coefficient_maximum_bits": 11138,
+      "raw_short_model_maximum_bits": 6173,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p62992-p251d102",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        7202,
+        8535,
+        12613,
+        27458
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5965355938473,
+          4643017097785,
+          4830446498366
+        ],
+        "good_prime_count": 24,
+        "parameter": "251/102",
+        "projective_height": 251,
+        "projective_pair": [
+          251,
+          102
+        ],
+        "total_score": 15.438819534624,
+        "total_score_units_1e12": 15438819534624
+      },
+      "parameter": "251/102",
+      "parent_id": "curve400-p62992",
+      "q_isomorphism_class_id": "QISO-0038",
+      "raw_quartic_coefficient_maximum_bits": 11078,
+      "raw_short_model_maximum_bits": 6191,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p62992-m158d97",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        7202,
+        8535,
+        12613,
+        27458
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6114361735330,
+          4706099478843,
+          3848892843308
+        ],
+        "good_prime_count": 24,
+        "parameter": "-158/97",
+        "projective_height": 158,
+        "projective_pair": [
+          -158,
+          97
+        ],
+        "total_score": 14.669354057481,
+        "total_score_units_1e12": 14669354057481
+      },
+      "parameter": "-158/97",
+      "parent_id": "curve400-p62992",
+      "q_isomorphism_class_id": "QISO-0039",
+      "raw_quartic_coefficient_maximum_bits": 11100,
+      "raw_short_model_maximum_bits": 6183,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p62992-p11d51",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        7202,
+        8535,
+        12613,
+        27458
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5831469468484,
+          4401164628641,
+          4368504988529
+        ],
+        "good_prime_count": 24,
+        "parameter": "11/51",
+        "projective_height": 51,
+        "projective_pair": [
+          11,
+          51
+        ],
+        "total_score": 14.601139085654,
+        "total_score_units_1e12": 14601139085654
+      },
+      "parameter": "11/51",
+      "parent_id": "curve400-p62992",
+      "q_isomorphism_class_id": "QISO-0040",
+      "raw_quartic_coefficient_maximum_bits": 11096,
+      "raw_short_model_maximum_bits": 6179,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p62992-m151d11",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        7202,
+        8535,
+        12613,
+        27458
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6069919207980,
+          4049863792505,
+          4402517663159
+        ],
+        "good_prime_count": 24,
+        "parameter": "-151/11",
+        "projective_height": 151,
+        "projective_pair": [
+          -151,
+          11
+        ],
+        "total_score": 14.522300663644,
+        "total_score_units_1e12": 14522300663644
+      },
+      "parameter": "-151/11",
+      "parent_id": "curve400-p62992",
+      "q_isomorphism_class_id": "QISO-0041",
+      "raw_quartic_coefficient_maximum_bits": 11043,
+      "raw_short_model_maximum_bits": 6157,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p62992-m1d13",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        7202,
+        8535,
+        12613,
+        27458
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5818701136150,
+          4976547034407,
+          3713396491868
+        ],
+        "good_prime_count": 24,
+        "parameter": "-1/13",
+        "projective_height": 13,
+        "projective_pair": [
+          -1,
+          13
+        ],
+        "total_score": 14.508644662425,
+        "total_score_units_1e12": 14508644662425
+      },
+      "parameter": "-1/13",
+      "parent_id": "curve400-p62992",
+      "q_isomorphism_class_id": "QISO-0042",
+      "raw_quartic_coefficient_maximum_bits": 11040,
+      "raw_short_model_maximum_bits": 6160,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p62992-m105d101",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        7202,
+        8535,
+        12613,
+        27458
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6003949869882,
+          4530282140597,
+          3678527534476
+        ],
+        "good_prime_count": 24,
+        "parameter": "-105/101",
+        "projective_height": 105,
+        "projective_pair": [
+          -105,
+          101
+        ],
+        "total_score": 14.212759544955,
+        "total_score_units_1e12": 14212759544955
+      },
+      "parameter": "-105/101",
+      "parent_id": "curve400-p62992",
+      "q_isomorphism_class_id": "QISO-0043",
+      "raw_quartic_coefficient_maximum_bits": 11038,
+      "raw_short_model_maximum_bits": 6182,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p62992-p0d1",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        7202,
+        8535,
+        12613,
+        27458
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5174450312780,
+          4258990786100,
+          4742337780511
+        ],
+        "good_prime_count": 24,
+        "parameter": "0/1",
+        "projective_height": 1,
+        "projective_pair": [
+          0,
+          1
+        ],
+        "total_score": 14.175778879391,
+        "total_score_units_1e12": 14175778879391
+      },
+      "parameter": "0/1",
+      "parent_id": "curve400-p62992",
+      "q_isomorphism_class_id": "QISO-0044",
+      "raw_quartic_coefficient_maximum_bits": 10209,
+      "raw_short_model_maximum_bits": 6099,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p62992-p202d135",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        7202,
+        8535,
+        12613,
+        27458
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          6057503513874,
+          5273411106603,
+          2252238888015
+        ],
+        "good_prime_count": 23,
+        "parameter": "202/135",
+        "projective_height": 202,
+        "projective_pair": [
+          202,
+          135
+        ],
+        "total_score": 13.583153508492,
+        "total_score_units_1e12": 13583153508492
+      },
+      "parameter": "202/135",
+      "parent_id": "curve400-p62992",
+      "q_isomorphism_class_id": "QISO-0045",
+      "raw_quartic_coefficient_maximum_bits": 11089,
+      "raw_short_model_maximum_bits": 6184,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p62992-m101d47",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        7202,
+        8535,
+        12613,
+        27458
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          5815481414130,
+          4659227721550,
+          3071686036199
+        ],
+        "good_prime_count": 23,
+        "parameter": "-101/47",
+        "projective_height": 101,
+        "projective_pair": [
+          -101,
+          47
+        ],
+        "total_score": 13.546395171879,
+        "total_score_units_1e12": 13546395171879
+      },
+      "parameter": "-101/47",
+      "parent_id": "curve400-p62992",
+      "q_isomorphism_class_id": "QISO-0046",
+      "raw_quartic_coefficient_maximum_bits": 10932,
+      "raw_short_model_maximum_bits": 6116,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve400-p62992-p201d32",
+      "chart_status_counts": {
+        "bounded_search_timeout": 4
+      },
+      "deepest_class_count": 4,
+      "deepest_masks": [
+        7202,
+        8535,
+        12613,
+        27458
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5895828695108,
+          2706015728137,
+          3395319077435
+        ],
+        "good_prime_count": 24,
+        "parameter": "201/32",
+        "projective_height": 201,
+        "projective_pair": [
+          201,
+          32
+        ],
+        "total_score": 11.99716350068,
+        "total_score_units_1e12": 11997163500680
+      },
+      "parameter": "201/32",
+      "parent_id": "curve400-p62992",
+      "q_isomorphism_class_id": "QISO-0047",
+      "raw_quartic_coefficient_maximum_bits": 11070,
+      "raw_short_model_maximum_bits": 6176,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve401-p57487-m101d254",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        1141,
+        3228,
+        19169,
+        20661,
+        38129,
+        57115,
+        57840,
+        64631
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          6038357264330,
+          4512902865539,
+          4497190614834
+        ],
+        "good_prime_count": 22,
+        "parameter": "-101/254",
+        "projective_height": 254,
+        "projective_pair": [
+          -101,
+          254
+        ],
+        "total_score": 15.048450744703,
+        "total_score_units_1e12": 15048450744703
+      },
+      "parameter": "-101/254",
+      "parent_id": "curve401-p57487",
+      "q_isomorphism_class_id": "QISO-0048",
+      "raw_quartic_coefficient_maximum_bits": 10778,
+      "raw_short_model_maximum_bits": 6044,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve401-p57487-p54d47",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        1141,
+        3228,
+        19169,
+        20661,
+        38129,
+        57115,
+        57840,
+        64631
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6087845998070,
+          5143105934954,
+          3654531914573
+        ],
+        "good_prime_count": 23,
+        "parameter": "54/47",
+        "projective_height": 54,
+        "projective_pair": [
+          54,
+          47
+        ],
+        "total_score": 14.885483847597,
+        "total_score_units_1e12": 14885483847597
+      },
+      "parameter": "54/47",
+      "parent_id": "curve401-p57487",
+      "q_isomorphism_class_id": "QISO-0049",
+      "raw_quartic_coefficient_maximum_bits": 10485,
+      "raw_short_model_maximum_bits": 5936,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve401-p57487-p83d153",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        1141,
+        3228,
+        19169,
+        20661,
+        38129,
+        57115,
+        57840,
+        64631
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6022378718202,
+          4988923552415,
+          3833452663709
+        ],
+        "good_prime_count": 23,
+        "parameter": "83/153",
+        "projective_height": 153,
+        "projective_pair": [
+          83,
+          153
+        ],
+        "total_score": 14.844754934326,
+        "total_score_units_1e12": 14844754934326
+      },
+      "parameter": "83/153",
+      "parent_id": "curve401-p57487",
+      "q_isomorphism_class_id": "QISO-0050",
+      "raw_quartic_coefficient_maximum_bits": 10767,
+      "raw_short_model_maximum_bits": 6021,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve401-p57487-m105d52",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        1141,
+        3228,
+        19169,
+        20661,
+        38129,
+        57115,
+        57840,
+        64631
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6018428678704,
+          5093320723258,
+          3714373621788
+        ],
+        "good_prime_count": 23,
+        "parameter": "-105/52",
+        "projective_height": 105,
+        "projective_pair": [
+          -105,
+          52
+        ],
+        "total_score": 14.82612302375,
+        "total_score_units_1e12": 14826123023750
+      },
+      "parameter": "-105/52",
+      "parent_id": "curve401-p57487",
+      "q_isomorphism_class_id": "QISO-0051",
+      "raw_quartic_coefficient_maximum_bits": 10688,
+      "raw_short_model_maximum_bits": 5994,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve401-p57487-p11d2",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        1141,
+        3228,
+        19169,
+        20661,
+        38129,
+        57115,
+        57840,
+        64631
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5944712178957,
+          4781520664024,
+          3628451813860
+        ],
+        "good_prime_count": 23,
+        "parameter": "11/2",
+        "projective_height": 11,
+        "projective_pair": [
+          11,
+          2
+        ],
+        "total_score": 14.354684656841,
+        "total_score_units_1e12": 14354684656841
+      },
+      "parameter": "11/2",
+      "parent_id": "curve401-p57487",
+      "q_isomorphism_class_id": "QISO-0052",
+      "raw_quartic_coefficient_maximum_bits": 10557,
+      "raw_short_model_maximum_bits": 5960,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve401-p57487-m51d7",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        1141,
+        3228,
+        19169,
+        20661,
+        38129,
+        57115,
+        57840,
+        64631
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5749081951717,
+          4849144335478,
+          3748035252222
+        ],
+        "good_prime_count": 23,
+        "parameter": "-51/7",
+        "projective_height": 51,
+        "projective_pair": [
+          -51,
+          7
+        ],
+        "total_score": 14.346261539417,
+        "total_score_units_1e12": 14346261539417
+      },
+      "parameter": "-51/7",
+      "parent_id": "curve401-p57487",
+      "q_isomorphism_class_id": "QISO-0053",
+      "raw_quartic_coefficient_maximum_bits": 10643,
+      "raw_short_model_maximum_bits": 5956,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve401-p57487-m249d256",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        1141,
+        3228,
+        19169,
+        20661,
+        38129,
+        57115,
+        57840,
+        64631
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6096522186551,
+          4655391812709,
+          3438276491869
+        ],
+        "good_prime_count": 23,
+        "parameter": "-249/256",
+        "projective_height": 256,
+        "projective_pair": [
+          -249,
+          256
+        ],
+        "total_score": 14.190190491129,
+        "total_score_units_1e12": 14190190491129
+      },
+      "parameter": "-249/256",
+      "parent_id": "curve401-p57487",
+      "q_isomorphism_class_id": "QISO-0054",
+      "raw_quartic_coefficient_maximum_bits": 10781,
+      "raw_short_model_maximum_bits": 6044,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve401-p57487-m111d202",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        1141,
+        3228,
+        19169,
+        20661,
+        38129,
+        57115,
+        57840,
+        64631
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6150654653936,
+          4518452700759,
+          3084906154486
+        ],
+        "good_prime_count": 23,
+        "parameter": "-111/202",
+        "projective_height": 202,
+        "projective_pair": [
+          -111,
+          202
+        ],
+        "total_score": 13.754013509181,
+        "total_score_units_1e12": 13754013509181
+      },
+      "parameter": "-111/202",
+      "parent_id": "curve401-p57487",
+      "q_isomorphism_class_id": "QISO-0055",
+      "raw_quartic_coefficient_maximum_bits": 10790,
+      "raw_short_model_maximum_bits": 6040,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve401-p57487-p57d151",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        1141,
+        3228,
+        19169,
+        20661,
+        38129,
+        57115,
+        57840,
+        64631
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          5919071464735,
+          3891039104977,
+          3898877341890
+        ],
+        "good_prime_count": 22,
+        "parameter": "57/151",
+        "projective_height": 151,
+        "projective_pair": [
+          57,
+          151
+        ],
+        "total_score": 13.708987911602,
+        "total_score_units_1e12": 13708987911602
+      },
+      "parameter": "57/151",
+      "parent_id": "curve401-p57487",
+      "q_isomorphism_class_id": "QISO-0056",
+      "raw_quartic_coefficient_maximum_bits": 10713,
+      "raw_short_model_maximum_bits": 6035,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve401-p57487-m3d5",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        1141,
+        3228,
+        19169,
+        20661,
+        38129,
+        57115,
+        57840,
+        64631
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5696962697973,
+          5019876868943,
+          2989026672889
+        ],
+        "good_prime_count": 23,
+        "parameter": "-3/5",
+        "projective_height": 5,
+        "projective_pair": [
+          -3,
+          5
+        ],
+        "total_score": 13.705866239805,
+        "total_score_units_1e12": 13705866239805
+      },
+      "parameter": "-3/5",
+      "parent_id": "curve401-p57487",
+      "q_isomorphism_class_id": "QISO-0057",
+      "raw_quartic_coefficient_maximum_bits": 10606,
+      "raw_short_model_maximum_bits": 5945,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve401-p57487-m77d101",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        1141,
+        3228,
+        19169,
+        20661,
+        38129,
+        57115,
+        57840,
+        64631
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5920789334932,
+          4362253560204,
+          2795345997697
+        ],
+        "good_prime_count": 23,
+        "parameter": "-77/101",
+        "projective_height": 101,
+        "projective_pair": [
+          -77,
+          101
+        ],
+        "total_score": 13.078388892833,
+        "total_score_units_1e12": 13078388892833
+      },
+      "parameter": "-77/101",
+      "parent_id": "curve401-p57487",
+      "q_isomorphism_class_id": "QISO-0058",
+      "raw_quartic_coefficient_maximum_bits": 10773,
+      "raw_short_model_maximum_bits": 6028,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve401-p57487-m1d1",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        1141,
+        3228,
+        19169,
+        20661,
+        38129,
+        57115,
+        57840,
+        64631
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          4558987937334,
+          4153450452871,
+          4218495767648
+        ],
+        "good_prime_count": 22,
+        "parameter": "-1/1",
+        "projective_height": 1,
+        "projective_pair": [
+          -1,
+          1
+        ],
+        "total_score": 12.930934157853,
+        "total_score_units_1e12": 12930934157853
+      },
+      "parameter": "-1/1",
+      "parent_id": "curve401-p57487",
+      "q_isomorphism_class_id": "QISO-0059",
+      "raw_quartic_coefficient_maximum_bits": 10618,
+      "raw_short_model_maximum_bits": 5948,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve542-p30486-m269d187",
+      "chart_status_counts": {
+        "bounded_search_timeout": 10
+      },
+      "deepest_class_count": 10,
+      "deepest_masks": [
+        12077,
+        12608,
+        12985,
+        14668,
+        18191,
+        21143,
+        35840,
+        37218,
+        45133,
+        64336
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6105384518183,
+          4111281720254,
+          4862064704906
+        ],
+        "good_prime_count": 23,
+        "parameter": "-269/187",
+        "projective_height": 269,
+        "projective_pair": [
+          -269,
+          187
+        ],
+        "total_score": 15.078730943343,
+        "total_score_units_1e12": 15078730943343
+      },
+      "parameter": "-269/187",
+      "parent_id": "curve542-p30486",
+      "q_isomorphism_class_id": "QISO-0060",
+      "raw_quartic_coefficient_maximum_bits": 10818,
+      "raw_short_model_maximum_bits": 6035,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve542-p30486-m7d8",
+      "chart_status_counts": {
+        "bounded_search_timeout": 10
+      },
+      "deepest_class_count": 10,
+      "deepest_masks": [
+        12077,
+        12608,
+        12985,
+        14668,
+        18191,
+        21143,
+        35840,
+        37218,
+        45133,
+        64336
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5830282783709,
+          4517841475059,
+          4110575733612
+        ],
+        "good_prime_count": 23,
+        "parameter": "-7/8",
+        "projective_height": 8,
+        "projective_pair": [
+          -7,
+          8
+        ],
+        "total_score": 14.45869999238,
+        "total_score_units_1e12": 14458699992380
+      },
+      "parameter": "-7/8",
+      "parent_id": "curve542-p30486",
+      "q_isomorphism_class_id": "QISO-0061",
+      "raw_quartic_coefficient_maximum_bits": 10764,
+      "raw_short_model_maximum_bits": 6008,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve542-p30486-m10d251",
+      "chart_status_counts": {
+        "bounded_search_timeout": 10
+      },
+      "deepest_class_count": 10,
+      "deepest_masks": [
+        12077,
+        12608,
+        12985,
+        14668,
+        18191,
+        21143,
+        35840,
+        37218,
+        45133,
+        64336
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6015548597235,
+          3766632861825,
+          4427392096638
+        ],
+        "good_prime_count": 23,
+        "parameter": "-10/251",
+        "projective_height": 251,
+        "projective_pair": [
+          -10,
+          251
+        ],
+        "total_score": 14.209573555698,
+        "total_score_units_1e12": 14209573555698
+      },
+      "parameter": "-10/251",
+      "parent_id": "curve542-p30486",
+      "q_isomorphism_class_id": "QISO-0062",
+      "raw_quartic_coefficient_maximum_bits": 10836,
+      "raw_short_model_maximum_bits": 6063,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve542-p30486-m1d1",
+      "chart_status_counts": {
+        "bounded_search_timeout": 10
+      },
+      "deepest_class_count": 10,
+      "deepest_masks": [
+        12077,
+        12608,
+        12985,
+        14668,
+        18191,
+        21143,
+        35840,
+        37218,
+        45133,
+        64336
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5422835845642,
+          4717354627724,
+          4018628367453
+        ],
+        "good_prime_count": 23,
+        "parameter": "-1/1",
+        "projective_height": 1,
+        "projective_pair": [
+          -1,
+          1
+        ],
+        "total_score": 14.158818840819,
+        "total_score_units_1e12": 14158818840819
+      },
+      "parameter": "-1/1",
+      "parent_id": "curve542-p30486",
+      "q_isomorphism_class_id": "QISO-0063",
+      "raw_quartic_coefficient_maximum_bits": 10649,
+      "raw_short_model_maximum_bits": 5972,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve542-p30486-p97d202",
+      "chart_status_counts": {
+        "bounded_search_timeout": 10
+      },
+      "deepest_class_count": 10,
+      "deepest_masks": [
+        12077,
+        12608,
+        12985,
+        14668,
+        18191,
+        21143,
+        35840,
+        37218,
+        45133,
+        64336
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          6091105607618,
+          4858619264323,
+          3015293182152
+        ],
+        "good_prime_count": 22,
+        "parameter": "97/202",
+        "projective_height": 202,
+        "projective_pair": [
+          97,
+          202
+        ],
+        "total_score": 13.965018054093,
+        "total_score_units_1e12": 13965018054093
+      },
+      "parameter": "97/202",
+      "parent_id": "curve542-p30486",
+      "q_isomorphism_class_id": "QISO-0064",
+      "raw_quartic_coefficient_maximum_bits": 10801,
+      "raw_short_model_maximum_bits": 6064,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve542-p30486-m44d63",
+      "chart_status_counts": {
+        "bounded_search_timeout": 10
+      },
+      "deepest_class_count": 10,
+      "deepest_masks": [
+        12077,
+        12608,
+        12985,
+        14668,
+        18191,
+        21143,
+        35840,
+        37218,
+        45133,
+        64336
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          6151671641855,
+          4766085136457,
+          3009769957710
+        ],
+        "good_prime_count": 23,
+        "parameter": "-44/63",
+        "projective_height": 63,
+        "projective_pair": [
+          -44,
+          63
+        ],
+        "total_score": 13.927526736022,
+        "total_score_units_1e12": 13927526736022
+      },
+      "parameter": "-44/63",
+      "parent_id": "curve542-p30486",
+      "q_isomorphism_class_id": "QISO-0065",
+      "raw_quartic_coefficient_maximum_bits": 10747,
+      "raw_short_model_maximum_bits": 5991,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve542-p30486-p64d151",
+      "chart_status_counts": {
+        "bounded_search_timeout": 10
+      },
+      "deepest_class_count": 10,
+      "deepest_masks": [
+        12077,
+        12608,
+        12985,
+        14668,
+        18191,
+        21143,
+        35840,
+        37218,
+        45133,
+        64336
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          5969070074912,
+          3977519720661,
+          3907027443432
+        ],
+        "good_prime_count": 22,
+        "parameter": "64/151",
+        "projective_height": 151,
+        "projective_pair": [
+          64,
+          151
+        ],
+        "total_score": 13.853617239005,
+        "total_score_units_1e12": 13853617239005
+      },
+      "parameter": "64/151",
+      "parent_id": "curve542-p30486",
+      "q_isomorphism_class_id": "QISO-0066",
+      "raw_quartic_coefficient_maximum_bits": 10734,
+      "raw_short_model_maximum_bits": 6054,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve542-p30486-p51d20",
+      "chart_status_counts": {
+        "bounded_search_timeout": 10
+      },
+      "deepest_class_count": 10,
+      "deepest_masks": [
+        12077,
+        12608,
+        12985,
+        14668,
+        18191,
+        21143,
+        35840,
+        37218,
+        45133,
+        64336
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5863939663680,
+          4481941232683,
+          3462611067141
+        ],
+        "good_prime_count": 23,
+        "parameter": "51/20",
+        "projective_height": 51,
+        "projective_pair": [
+          51,
+          20
+        ],
+        "total_score": 13.808491963504,
+        "total_score_units_1e12": 13808491963504
+      },
+      "parameter": "51/20",
+      "parent_id": "curve542-p30486",
+      "q_isomorphism_class_id": "QISO-0067",
+      "raw_quartic_coefficient_maximum_bits": 10757,
+      "raw_short_model_maximum_bits": 6024,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve542-p30486-m68d101",
+      "chart_status_counts": {
+        "bounded_search_timeout": 10
+      },
+      "deepest_class_count": 10,
+      "deepest_masks": [
+        12077,
+        12608,
+        12985,
+        14668,
+        18191,
+        21143,
+        35840,
+        37218,
+        45133,
+        64336
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5786267350633,
+          3917773800405,
+          3983776918101
+        ],
+        "good_prime_count": 23,
+        "parameter": "-68/101",
+        "projective_height": 101,
+        "projective_pair": [
+          -68,
+          101
+        ],
+        "total_score": 13.687818069139,
+        "total_score_units_1e12": 13687818069139
+      },
+      "parameter": "-68/101",
+      "parent_id": "curve542-p30486",
+      "q_isomorphism_class_id": "QISO-0068",
+      "raw_quartic_coefficient_maximum_bits": 10801,
+      "raw_short_model_maximum_bits": 6047,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve542-p30486-p201d127",
+      "chart_status_counts": {
+        "bounded_search_timeout": 10
+      },
+      "deepest_class_count": 10,
+      "deepest_masks": [
+        12077,
+        12608,
+        12985,
+        14668,
+        18191,
+        21143,
+        35840,
+        37218,
+        45133,
+        64336
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          5816726141793,
+          2447822902530,
+          3905106786644
+        ],
+        "good_prime_count": 22,
+        "parameter": "201/127",
+        "projective_height": 201,
+        "projective_pair": [
+          201,
+          127
+        ],
+        "total_score": 12.169655830967,
+        "total_score_units_1e12": 12169655830967
+      },
+      "parameter": "201/127",
+      "parent_id": "curve542-p30486",
+      "q_isomorphism_class_id": "QISO-0069",
+      "raw_quartic_coefficient_maximum_bits": 10779,
+      "raw_short_model_maximum_bits": 6028,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p31627-m57d145",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        4782,
+        22651,
+        23138,
+        23419,
+        29466,
+        32040,
+        38190,
+        50000
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5275033222092,
+          5262119467158,
+          5034123462623
+        ],
+        "good_prime_count": 23,
+        "parameter": "-57/145",
+        "projective_height": 145,
+        "projective_pair": [
+          -57,
+          145
+        ],
+        "total_score": 15.571276151873,
+        "total_score_units_1e12": 15571276151873
+      },
+      "parameter": "-57/145",
+      "parent_id": "curve548-p31627",
+      "q_isomorphism_class_id": "QISO-0070",
+      "raw_quartic_coefficient_maximum_bits": 11223,
+      "raw_short_model_maximum_bits": 6274,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p31627-p11d10",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        4782,
+        22651,
+        23138,
+        23419,
+        29466,
+        32040,
+        38190,
+        50000
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5247703055378,
+          4862172742323,
+          4646880761956
+        ],
+        "good_prime_count": 23,
+        "parameter": "11/10",
+        "projective_height": 11,
+        "projective_pair": [
+          11,
+          10
+        ],
+        "total_score": 14.756756559657,
+        "total_score_units_1e12": 14756756559657
+      },
+      "parameter": "11/10",
+      "parent_id": "curve548-p31627",
+      "q_isomorphism_class_id": "QISO-0071",
+      "raw_quartic_coefficient_maximum_bits": 11172,
+      "raw_short_model_maximum_bits": 6227,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p31627-p201d109",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        4782,
+        22651,
+        23138,
+        23419,
+        29466,
+        32040,
+        38190,
+        50000
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5186960659184,
+          4980033835248,
+          4406466962449
+        ],
+        "good_prime_count": 23,
+        "parameter": "201/109",
+        "projective_height": 201,
+        "projective_pair": [
+          201,
+          109
+        ],
+        "total_score": 14.573461456881,
+        "total_score_units_1e12": 14573461456881
+      },
+      "parameter": "201/109",
+      "parent_id": "curve548-p31627",
+      "q_isomorphism_class_id": "QISO-0072",
+      "raw_quartic_coefficient_maximum_bits": 11243,
+      "raw_short_model_maximum_bits": 6269,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p31627-p8d5",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        4782,
+        22651,
+        23138,
+        23419,
+        29466,
+        32040,
+        38190,
+        50000
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          4968550015594,
+          4414658188014,
+          4868988699631
+        ],
+        "good_prime_count": 22,
+        "parameter": "8/5",
+        "projective_height": 8,
+        "projective_pair": [
+          8,
+          5
+        ],
+        "total_score": 14.252196903239,
+        "total_score_units_1e12": 14252196903239
+      },
+      "parameter": "8/5",
+      "parent_id": "curve548-p31627",
+      "q_isomorphism_class_id": "QISO-0073",
+      "raw_quartic_coefficient_maximum_bits": 11130,
+      "raw_short_model_maximum_bits": 6210,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p31627-m46d53",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        4782,
+        22651,
+        23138,
+        23419,
+        29466,
+        32040,
+        38190,
+        50000
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5138952929476,
+          4739211632036,
+          4288383159132
+        ],
+        "good_prime_count": 23,
+        "parameter": "-46/53",
+        "projective_height": 53,
+        "projective_pair": [
+          -46,
+          53
+        ],
+        "total_score": 14.166547720644,
+        "total_score_units_1e12": 14166547720644
+      },
+      "parameter": "-46/53",
+      "parent_id": "curve548-p31627",
+      "q_isomorphism_class_id": "QISO-0074",
+      "raw_quartic_coefficient_maximum_bits": 11184,
+      "raw_short_model_maximum_bits": 6223,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p31627-p125d121",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        4782,
+        22651,
+        23138,
+        23419,
+        29466,
+        32040,
+        38190,
+        50000
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5267218873736,
+          4520541993497,
+          4231506429729
+        ],
+        "good_prime_count": 23,
+        "parameter": "125/121",
+        "projective_height": 125,
+        "projective_pair": [
+          125,
+          121
+        ],
+        "total_score": 14.019267296962,
+        "total_score_units_1e12": 14019267296962
+      },
+      "parameter": "125/121",
+      "parent_id": "curve548-p31627",
+      "q_isomorphism_class_id": "QISO-0075",
+      "raw_quartic_coefficient_maximum_bits": 11244,
+      "raw_short_model_maximum_bits": 6260,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p31627-m1d1",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        4782,
+        22651,
+        23138,
+        23419,
+        29466,
+        32040,
+        38190,
+        50000
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          4846853044417,
+          4451728323355,
+          3720409197896
+        ],
+        "good_prime_count": 23,
+        "parameter": "-1/1",
+        "projective_height": 1,
+        "projective_pair": [
+          -1,
+          1
+        ],
+        "total_score": 13.018990565668,
+        "total_score_units_1e12": 13018990565668
+      },
+      "parameter": "-1/1",
+      "parent_id": "curve548-p31627",
+      "q_isomorphism_class_id": "QISO-0076",
+      "raw_quartic_coefficient_maximum_bits": 11122,
+      "raw_short_model_maximum_bits": 6187,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p31627-p129d176",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        4782,
+        22651,
+        23138,
+        23419,
+        29466,
+        32040,
+        38190,
+        50000
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5255861428868,
+          5195879076912,
+          2523831318382
+        ],
+        "good_prime_count": 23,
+        "parameter": "129/176",
+        "projective_height": 176,
+        "projective_pair": [
+          129,
+          176
+        ],
+        "total_score": 12.975571824162,
+        "total_score_units_1e12": 12975571824162
+      },
+      "parameter": "129/176",
+      "parent_id": "curve548-p31627",
+      "q_isomorphism_class_id": "QISO-0077",
+      "raw_quartic_coefficient_maximum_bits": 11252,
+      "raw_short_model_maximum_bits": 6270,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p31627-p106d77",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        4782,
+        22651,
+        23138,
+        23419,
+        29466,
+        32040,
+        38190,
+        50000
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5223300130504,
+          2841697997355,
+          4157377385618
+        ],
+        "good_prime_count": 23,
+        "parameter": "106/77",
+        "projective_height": 106,
+        "projective_pair": [
+          106,
+          77
+        ],
+        "total_score": 12.222375513477,
+        "total_score_units_1e12": 12222375513477
+      },
+      "parameter": "106/77",
+      "parent_id": "curve548-p31627",
+      "q_isomorphism_class_id": "QISO-0078",
+      "raw_quartic_coefficient_maximum_bits": 11068,
+      "raw_short_model_maximum_bits": 6189,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p31627-p51d5",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        4782,
+        22651,
+        23138,
+        23419,
+        29466,
+        32040,
+        38190,
+        50000
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5093288257186,
+          3432764581836,
+          3559451350333
+        ],
+        "good_prime_count": 23,
+        "parameter": "51/5",
+        "projective_height": 51,
+        "projective_pair": [
+          51,
+          5
+        ],
+        "total_score": 12.085504189355,
+        "total_score_units_1e12": 12085504189355
+      },
+      "parameter": "51/5",
+      "parent_id": "curve548-p31627",
+      "q_isomorphism_class_id": "QISO-0079",
+      "raw_quartic_coefficient_maximum_bits": 11152,
+      "raw_short_model_maximum_bits": 6215,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p31627-m29d151",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        4782,
+        22651,
+        23138,
+        23419,
+        29466,
+        32040,
+        38190,
+        50000
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          5245958982883,
+          3284951545176,
+          3492682109023
+        ],
+        "good_prime_count": 22,
+        "parameter": "-29/151",
+        "projective_height": 151,
+        "projective_pair": [
+          -29,
+          151
+        ],
+        "total_score": 12.023592637082,
+        "total_score_units_1e12": 12023592637082
+      },
+      "parameter": "-29/151",
+      "parent_id": "curve548-p31627",
+      "q_isomorphism_class_id": "QISO-0080",
+      "raw_quartic_coefficient_maximum_bits": 11279,
+      "raw_short_model_maximum_bits": 6274,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p31627-m10d251",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        4782,
+        22651,
+        23138,
+        23419,
+        29466,
+        32040,
+        38190,
+        50000
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5050015159254,
+          3967548035928,
+          2967855600798
+        ],
+        "good_prime_count": 23,
+        "parameter": "-10/251",
+        "projective_height": 251,
+        "projective_pair": [
+          -10,
+          251
+        ],
+        "total_score": 11.98541879598,
+        "total_score_units_1e12": 11985418795980
+      },
+      "parameter": "-10/251",
+      "parent_id": "curve548-p31627",
+      "q_isomorphism_class_id": "QISO-0081",
+      "raw_quartic_coefficient_maximum_bits": 11293,
+      "raw_short_model_maximum_bits": 6278,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p54835-m251d152",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        27219,
+        31014,
+        32046,
+        36495,
+        49882,
+        58114,
+        59913,
+        60641
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5174457042064,
+          5296107324136,
+          4272565133428
+        ],
+        "good_prime_count": 23,
+        "parameter": "-251/152",
+        "projective_height": 251,
+        "projective_pair": [
+          -251,
+          152
+        ],
+        "total_score": 14.743129499628,
+        "total_score_units_1e12": 14743129499628
+      },
+      "parameter": "-251/152",
+      "parent_id": "curve548-p54835",
+      "q_isomorphism_class_id": "QISO-0082",
+      "raw_quartic_coefficient_maximum_bits": 11210,
+      "raw_short_model_maximum_bits": 6225,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p54835-p53d19",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        27219,
+        31014,
+        32046,
+        36495,
+        49882,
+        58114,
+        59913,
+        60641
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5252725086918,
+          4541202772625,
+          4679896992188
+        ],
+        "good_prime_count": 23,
+        "parameter": "53/19",
+        "projective_height": 53,
+        "projective_pair": [
+          53,
+          19
+        ],
+        "total_score": 14.473824851731,
+        "total_score_units_1e12": 14473824851731
+      },
+      "parameter": "53/19",
+      "parent_id": "curve548-p54835",
+      "q_isomorphism_class_id": "QISO-0083",
+      "raw_quartic_coefficient_maximum_bits": 11136,
+      "raw_short_model_maximum_bits": 6189,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p54835-p152d5",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        27219,
+        31014,
+        32046,
+        36495,
+        49882,
+        58114,
+        59913,
+        60641
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          5255099676215,
+          4447925531847,
+          4447506213468
+        ],
+        "good_prime_count": 22,
+        "parameter": "152/5",
+        "projective_height": 152,
+        "projective_pair": [
+          152,
+          5
+        ],
+        "total_score": 14.15053142153,
+        "total_score_units_1e12": 14150531421530
+      },
+      "parameter": "152/5",
+      "parent_id": "curve548-p54835",
+      "q_isomorphism_class_id": "QISO-0084",
+      "raw_quartic_coefficient_maximum_bits": 11039,
+      "raw_short_model_maximum_bits": 6172,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p54835-p43d109",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        27219,
+        31014,
+        32046,
+        36495,
+        49882,
+        58114,
+        59913,
+        60641
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5252001066050,
+          4645267316999,
+          4163367230315
+        ],
+        "good_prime_count": 23,
+        "parameter": "43/109",
+        "projective_height": 109,
+        "projective_pair": [
+          43,
+          109
+        ],
+        "total_score": 14.060635613364,
+        "total_score_units_1e12": 14060635613364
+      },
+      "parameter": "43/109",
+      "parent_id": "curve548-p54835",
+      "q_isomorphism_class_id": "QISO-0085",
+      "raw_quartic_coefficient_maximum_bits": 11247,
+      "raw_short_model_maximum_bits": 6270,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p54835-m201d143",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        27219,
+        31014,
+        32046,
+        36495,
+        49882,
+        58114,
+        59913,
+        60641
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5250612034011,
+          5230319975160,
+          2823452831111
+        ],
+        "good_prime_count": 23,
+        "parameter": "-201/143",
+        "projective_height": 201,
+        "projective_pair": [
+          -201,
+          143
+        ],
+        "total_score": 13.304384840282,
+        "total_score_units_1e12": 13304384840282
+      },
+      "parameter": "-201/143",
+      "parent_id": "curve548-p54835",
+      "q_isomorphism_class_id": "QISO-0086",
+      "raw_quartic_coefficient_maximum_bits": 11206,
+      "raw_short_model_maximum_bits": 6268,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p54835-m1d5",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        27219,
+        31014,
+        32046,
+        36495,
+        49882,
+        58114,
+        59913,
+        60641
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5220903451890,
+          4572260450542,
+          3386700378270
+        ],
+        "good_prime_count": 23,
+        "parameter": "-1/5",
+        "projective_height": 5,
+        "projective_pair": [
+          -1,
+          5
+        ],
+        "total_score": 13.179864280702,
+        "total_score_units_1e12": 13179864280702
+      },
+      "parameter": "-1/5",
+      "parent_id": "curve548-p54835",
+      "q_isomorphism_class_id": "QISO-0087",
+      "raw_quartic_coefficient_maximum_bits": 11108,
+      "raw_short_model_maximum_bits": 6184,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p54835-p1d1",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        27219,
+        31014,
+        32046,
+        36495,
+        49882,
+        58114,
+        59913,
+        60641
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          4242709286444,
+          4648685297380,
+          4155508131234
+        ],
+        "good_prime_count": 22,
+        "parameter": "1/1",
+        "projective_height": 1,
+        "projective_pair": [
+          1,
+          1
+        ],
+        "total_score": 13.046902715058,
+        "total_score_units_1e12": 13046902715058
+      },
+      "parameter": "1/1",
+      "parent_id": "curve548-p54835",
+      "q_isomorphism_class_id": "QISO-0088",
+      "raw_quartic_coefficient_maximum_bits": 11056,
+      "raw_short_model_maximum_bits": 6189,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p54835-p101d25",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        27219,
+        31014,
+        32046,
+        36495,
+        49882,
+        58114,
+        59913,
+        60641
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5044398638057,
+          4705923632174,
+          2990187736371
+        ],
+        "good_prime_count": 23,
+        "parameter": "101/25",
+        "projective_height": 101,
+        "projective_pair": [
+          101,
+          25
+        ],
+        "total_score": 12.740510006602,
+        "total_score_units_1e12": 12740510006602
+      },
+      "parameter": "101/25",
+      "parent_id": "curve548-p54835",
+      "q_isomorphism_class_id": "QISO-0089",
+      "raw_quartic_coefficient_maximum_bits": 11105,
+      "raw_short_model_maximum_bits": 6217,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p54835-m2d51",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        27219,
+        31014,
+        32046,
+        36495,
+        49882,
+        58114,
+        59913,
+        60641
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          4842342739400,
+          3668906978302,
+          3432423509841
+        ],
+        "good_prime_count": 23,
+        "parameter": "-2/51",
+        "projective_height": 51,
+        "projective_pair": [
+          -2,
+          51
+        ],
+        "total_score": 11.943673227543,
+        "total_score_units_1e12": 11943673227543
+      },
+      "parameter": "-2/51",
+      "parent_id": "curve548-p54835",
+      "q_isomorphism_class_id": "QISO-0090",
+      "raw_quartic_coefficient_maximum_bits": 11196,
+      "raw_short_model_maximum_bits": 6231,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p54835-m19d153",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        27219,
+        31014,
+        32046,
+        36495,
+        49882,
+        58114,
+        59913,
+        60641
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5289441029107,
+          3192729359314,
+          3451488711969
+        ],
+        "good_prime_count": 23,
+        "parameter": "-19/153",
+        "projective_height": 153,
+        "projective_pair": [
+          -19,
+          153
+        ],
+        "total_score": 11.93365910039,
+        "total_score_units_1e12": 11933659100390
+      },
+      "parameter": "-19/153",
+      "parent_id": "curve548-p54835",
+      "q_isomorphism_class_id": "QISO-0091",
+      "raw_quartic_coefficient_maximum_bits": 11260,
+      "raw_short_model_maximum_bits": 6262,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p54835-m111d151",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        27219,
+        31014,
+        32046,
+        36495,
+        49882,
+        58114,
+        59913,
+        60641
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          5148984810553,
+          3584998934766,
+          2970576457804
+        ],
+        "good_prime_count": 22,
+        "parameter": "-111/151",
+        "projective_height": 151,
+        "projective_pair": [
+          -111,
+          151
+        ],
+        "total_score": 11.704560203123,
+        "total_score_units_1e12": 11704560203123
+      },
+      "parameter": "-111/151",
+      "parent_id": "curve548-p54835",
+      "q_isomorphism_class_id": "QISO-0092",
+      "raw_quartic_coefficient_maximum_bits": 11216,
+      "raw_short_model_maximum_bits": 6276,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p63647-m202d275",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        28230,
+        37488,
+        38113,
+        40157,
+        50706,
+        56728,
+        61070,
+        64362
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5362747458170,
+          4788214863184,
+          5353954989673
+        ],
+        "good_prime_count": 23,
+        "parameter": "-202/275",
+        "projective_height": 275,
+        "projective_pair": [
+          -202,
+          275
+        ],
+        "total_score": 15.504917311027,
+        "total_score_units_1e12": 15504917311027
+      },
+      "parameter": "-202/275",
+      "parent_id": "curve548-p63647",
+      "q_isomorphism_class_id": "QISO-0093",
+      "raw_quartic_coefficient_maximum_bits": 11295,
+      "raw_short_model_maximum_bits": 6252,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p63647-m229d228",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        28230,
+        37488,
+        38113,
+        40157,
+        50706,
+        56728,
+        61070,
+        64362
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5383337307072,
+          4590881188682,
+          4885184130974
+        ],
+        "good_prime_count": 23,
+        "parameter": "-229/228",
+        "projective_height": 229,
+        "projective_pair": [
+          -229,
+          228
+        ],
+        "total_score": 14.859402626728,
+        "total_score_units_1e12": 14859402626728
+      },
+      "parameter": "-229/228",
+      "parent_id": "curve548-p63647",
+      "q_isomorphism_class_id": "QISO-0094",
+      "raw_quartic_coefficient_maximum_bits": 11302,
+      "raw_short_model_maximum_bits": 6230,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p63647-m151d59",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        28230,
+        37488,
+        38113,
+        40157,
+        50706,
+        56728,
+        61070,
+        64362
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5221712407706,
+          4433283080938,
+          4960482141487
+        ],
+        "good_prime_count": 23,
+        "parameter": "-151/59",
+        "projective_height": 151,
+        "projective_pair": [
+          -151,
+          59
+        ],
+        "total_score": 14.615477630131,
+        "total_score_units_1e12": 14615477630131
+      },
+      "parameter": "-151/59",
+      "parent_id": "curve548-p63647",
+      "q_isomorphism_class_id": "QISO-0095",
+      "raw_quartic_coefficient_maximum_bits": 11257,
+      "raw_short_model_maximum_bits": 6260,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p63647-p59d47",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        28230,
+        37488,
+        38113,
+        40157,
+        50706,
+        56728,
+        61070,
+        64362
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5093633787891,
+          5155802572831,
+          4355867134705
+        ],
+        "good_prime_count": 23,
+        "parameter": "59/47",
+        "projective_height": 59,
+        "projective_pair": [
+          59,
+          47
+        ],
+        "total_score": 14.605303495427,
+        "total_score_units_1e12": 14605303495427
+      },
+      "parameter": "59/47",
+      "parent_id": "curve548-p63647",
+      "q_isomorphism_class_id": "QISO-0096",
+      "raw_quartic_coefficient_maximum_bits": 11162,
+      "raw_short_model_maximum_bits": 6190,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p63647-m208d135",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        28230,
+        37488,
+        38113,
+        40157,
+        50706,
+        56728,
+        61070,
+        64362
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5256320429178,
+          4651474849860,
+          4415330018443
+        ],
+        "good_prime_count": 23,
+        "parameter": "-208/135",
+        "projective_height": 208,
+        "projective_pair": [
+          -208,
+          135
+        ],
+        "total_score": 14.323125297481,
+        "total_score_units_1e12": 14323125297481
+      },
+      "parameter": "-208/135",
+      "parent_id": "curve548-p63647",
+      "q_isomorphism_class_id": "QISO-0097",
+      "raw_quartic_coefficient_maximum_bits": 11129,
+      "raw_short_model_maximum_bits": 6230,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p63647-m125d52",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        28230,
+        37488,
+        38113,
+        40157,
+        50706,
+        56728,
+        61070,
+        64362
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5253786087372,
+          4853550030839,
+          4183170326216
+        ],
+        "good_prime_count": 23,
+        "parameter": "-125/52",
+        "projective_height": 125,
+        "projective_pair": [
+          -125,
+          52
+        ],
+        "total_score": 14.290506444427,
+        "total_score_units_1e12": 14290506444427
+      },
+      "parameter": "-125/52",
+      "parent_id": "curve548-p63647",
+      "q_isomorphism_class_id": "QISO-0098",
+      "raw_quartic_coefficient_maximum_bits": 11199,
+      "raw_short_model_maximum_bits": 6257,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p63647-m19d15",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        28230,
+        37488,
+        38113,
+        40157,
+        50706,
+        56728,
+        61070,
+        64362
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5240662384863,
+          4703215696486,
+          4061935484119
+        ],
+        "good_prime_count": 23,
+        "parameter": "-19/15",
+        "projective_height": 19,
+        "projective_pair": [
+          -19,
+          15
+        ],
+        "total_score": 14.005813565468,
+        "total_score_units_1e12": 14005813565468
+      },
+      "parameter": "-19/15",
+      "parent_id": "curve548-p63647",
+      "q_isomorphism_class_id": "QISO-0099",
+      "raw_quartic_coefficient_maximum_bits": 11178,
+      "raw_short_model_maximum_bits": 6194,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p63647-p252d103",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        28230,
+        37488,
+        38113,
+        40157,
+        50706,
+        56728,
+        61070,
+        64362
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5178092612468,
+          4823289045542,
+          3811311337692
+        ],
+        "good_prime_count": 23,
+        "parameter": "252/103",
+        "projective_height": 252,
+        "projective_pair": [
+          252,
+          103
+        ],
+        "total_score": 13.812692995702,
+        "total_score_units_1e12": 13812692995702
+      },
+      "parameter": "252/103",
+      "parent_id": "curve548-p63647",
+      "q_isomorphism_class_id": "QISO-0100",
+      "raw_quartic_coefficient_maximum_bits": 11242,
+      "raw_short_model_maximum_bits": 6270,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p63647-p41d102",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        28230,
+        37488,
+        38113,
+        40157,
+        50706,
+        56728,
+        61070,
+        64362
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5129888013682,
+          4681212881850,
+          3984471350907
+        ],
+        "good_prime_count": 23,
+        "parameter": "41/102",
+        "projective_height": 102,
+        "projective_pair": [
+          41,
+          102
+        ],
+        "total_score": 13.795572246439,
+        "total_score_units_1e12": 13795572246439
+      },
+      "parameter": "41/102",
+      "parent_id": "curve548-p63647",
+      "q_isomorphism_class_id": "QISO-0101",
+      "raw_quartic_coefficient_maximum_bits": 11279,
+      "raw_short_model_maximum_bits": 6254,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p63647-m1d4",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        28230,
+        37488,
+        38113,
+        40157,
+        50706,
+        56728,
+        61070,
+        64362
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5185272403719,
+          4560219796470,
+          3806524652132
+        ],
+        "good_prime_count": 23,
+        "parameter": "-1/4",
+        "projective_height": 4,
+        "projective_pair": [
+          -1,
+          4
+        ],
+        "total_score": 13.552016852321,
+        "total_score_units_1e12": 13552016852321
+      },
+      "parameter": "-1/4",
+      "parent_id": "curve548-p63647",
+      "q_isomorphism_class_id": "QISO-0102",
+      "raw_quartic_coefficient_maximum_bits": 11203,
+      "raw_short_model_maximum_bits": 6213,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p63647-p202d107",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        28230,
+        37488,
+        38113,
+        40157,
+        50706,
+        56728,
+        61070,
+        64362
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          5240858657250,
+          3581742577470,
+          4653531634669
+        ],
+        "good_prime_count": 22,
+        "parameter": "202/107",
+        "projective_height": 202,
+        "projective_pair": [
+          202,
+          107
+        ],
+        "total_score": 13.476132869389,
+        "total_score_units_1e12": 13476132869389
+      },
+      "parameter": "202/107",
+      "parent_id": "curve548-p63647",
+      "q_isomorphism_class_id": "QISO-0103",
+      "raw_quartic_coefficient_maximum_bits": 11299,
+      "raw_short_model_maximum_bits": 6270,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    },
+    {
+      "basis_rank_after": 16,
+      "candidate_id": "curve548-p63647-m49d53",
+      "chart_status_counts": {
+        "bounded_search_timeout": 8
+      },
+      "deepest_class_count": 8,
+      "deepest_masks": [
+        28230,
+        37488,
+        38113,
+        40157,
+        50706,
+        56728,
+        61070,
+        64362
+      ],
+      "discovered_group_status": "PASS_BASIS_EQUALS_DISCOVERED_GROUP",
+      "exact_quotient_rank_recovered": 0,
+      "generic_mod2_independence_rank": 16,
+      "nagao": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5078883166259,
+          4867407097550,
+          3445241331352
+        ],
+        "good_prime_count": 23,
+        "parameter": "-49/53",
+        "projective_height": 53,
+        "projective_pair": [
+          -49,
+          53
+        ],
+        "total_score": 13.391531595161,
+        "total_score_units_1e12": 13391531595161
+      },
+      "parameter": "-49/53",
+      "parent_id": "curve548-p63647",
+      "q_isomorphism_class_id": "QISO-0104",
+      "raw_quartic_coefficient_maximum_bits": 11299,
+      "raw_short_model_maximum_bits": 6258,
+      "retention": "compact_zero_discovery",
+      "specialized_ranking": {
+        "coverage_depends_on_within_stratum_order": false,
+        "mode": "exact_generic_maximum_depth_then_mask",
+        "specialized_canonical_height_computed": false
+      },
+      "status": "PASS_COMPLETE_INITIAL_HALF_LATTICE_WAVE"
+    }
+  ],
+  "schema": "elliptic-curves.icarm-mw16-nagao-finalist-half-lattice-merged.v1",
+  "selmer_gate": {
+    "authorized_candidate_ids": [],
+    "complete_residual_2_selmer_calls_required": 0,
+    "expensive_continuation_authorized_before_complete_selmer": false,
+    "positive_definition": "exact_quotient_rank_recovered >= 1"
+  },
+  "shards_share_one_source_ledger": true,
+  "source_candidate_content_matches_shards": true,
+  "source_finalist_count": 104,
+  "source_ledger_sha256_at_merge": "c1187b3124c3d8768dbf414a4ed3b24d3e80914f2bda492df7a17510969ac499",
+  "status": "PASS_COMPLETE_FROZEN_NAGAO_FINALIST_HALF_LATTICE_GATE"
+}

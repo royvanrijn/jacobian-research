@@ -22,6 +22,49 @@ strict:
 
 Important distinctions made explicit by the catalogue:
 
+- `fixed_cubic_field_fermigier_rank20_local_kummer_u2_v1.json` fixes the
+  Fermigier rank-20 cubic field and certified 20-dimensional global Kummer
+  span, then computes the complete local intersection on the whole span for
+  `u=-2,-1,0,1,2`.  The resulting dimensions are `13,18,20,13,13`; all newly
+  bad primes are checked and `u=0` is the full-dimension positive control.
+  The artifact uses no class group and records explicit cover inputs, but
+  certifies no rational point, new rank lower bound, or full Selmer group.
+<!-- status-consumer: EC-FIXED-CUBIC-VARYING-CURVE-LOCAL-KUMMER 46ca45db3e702eb6 -->
+
+- `quotient_geometry_table_v1.json` is the complete 30-presentation join of
+  five usable R17 controls, sixteen refreshed R17 ladder fibres, and nine
+  A1/MW16 parent presentations.  It stores full displayed-quotient Grams,
+  regulators, successive minima, and 230 recovered-direction
+  projection/phase/distortion decompositions.  All 230 pointwise projection
+  CVPs agree at rounding scales `10^5` and `10^6`.  All thirteen nonempty,
+  strictly partial initial recoveries fail the necessary scalar
+  successive-minimum-prefix test; seven remain failures at the final stage and
+  three containment comparisons remain null.  This is an exact
+  rational-subspace comparison built on numerical height data, not a rank upper
+  bound or an interval height certificate.
+
+- `icarm_mw16_parent_presentation_audit_v1.json` proves that the nine
+  complete-A1 hit labels are exactly five fibration classes; repeated labels
+  remain nine bounded-height coordinate charts but only five statistical
+  observations.  `icarm_mw16_blind_ladder_calibration_v1.json` records exact
+  complement-blind recovery of 38/55 demonstrated directions initially and
+  54/55 after the completed curve-398 and curve-400 adaptive waves.  The
+  prospective height-300 chain retains 104 exact fibres, while
+  `icarm_mw16_nagao_finalist_half_lattice_h300_v1.json` records 856/856 chart
+  timeouts at its first declared budget.  This is a censored bounded
+  experiment, not a negative rank result; no Selmer or expensive-search gate
+  opens.
+
+  The distinct target-free replay is
+  `a1_mw16_target_free_parameter_candidates_h300_v1.json` followed by
+  `a1_mw16_target_free_parameter_search_h300_v1.json`.  Its sampler reads the
+  anonymous family template rather than target-bearing parent rows.  It
+  produces 104 pairwise nonisomorphic fibres, and direct exact searches finish
+  all 856 maximum-depth charts through height 100,000 with zero affine points,
+  timeouts, failures, or quotient gains.  This is a completed bounded null
+  experiment, not a rank upper bound.
+<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER c5b0b57ee01c5c23 -->
+
 - `r17_refresh_jump_ladder_protocol_v1.json` and
   `r17_refresh_jump_ladder_blind_v1.json` preserve the stopped cross-class
   assertion and the already sealed curve-478 response.  The v2 protocol
@@ -34,7 +77,7 @@ Important distinctions made explicit by the catalogue:
   scheduling use to the calibrated norm-twelve R17 setting and do not validate
   alternate-Q80 extreme-tail transfer.  These are fixed-panel detector results,
   not a full-rank, saturation, Selmer, or population theorem.
-<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER b7518cc41268489a -->
+<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER a2d7034fb8977c18 -->
 
 - `half_lattice_height_compression_analysis_v1.json.gz` reconstructs 3,865
   detailed half-lattice chart maps and their presearch lattice, coefficient,
@@ -94,7 +137,7 @@ Important distinctions made explicit by the catalogue:
   for post-discovery diagnostics, not the prospective control and not a
   completed descent or Selmer certificate.  Its whole-file SHA-256 is
   `a0492c02910c035c9702a10224132ddbccd47236089d1ef7c647108b132b9e92`.
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 eda7a0053b31b7c9 -->
 
 - `latent_lattice_calibration_truth_v1.json` contains exact withheld control
   embeddings; it is not selector input. `latent_lattice_calibration_v2.json`

@@ -58,7 +58,8 @@ and a reproducible certificate plan.
 - historical degree-11511 alternate-Q80 transport;
 - million-bit third-`q12` reconstruction and associated long PRS/Hensel work;
 - broad Q80 suffix, q323, or changed-zero route searches;
-- ungated Nagao/point/Selmer sweeps;
+- unbudgeted Nagao/point/Selmer sweeps, or treating incomplete arithmetic as a
+  mathematical exclusion;
 - bulk foundry route enumeration without complete marked planner inputs.
 - treating another determinant-948 equation as the different-NS foundry
   milestone.
@@ -80,6 +81,11 @@ These remain useful provenance/regression material and are indexed from `../arch
 ## Claim discipline
 
 - Keep classical infrastructure under established terminology: Shioda–Tate, Nikulin gluing, Kneser–Nishiyama, Kneser neighbours, and fibration hopping.
+- Separate theorem gates from resource gates.  Only a certified upper bound
+  below the target excludes a production candidate; conditional or incomplete
+  descent data may affect priority but cannot veto a bounded search.  Exactly
+  verified independent points give an unconditional lower bound regardless of
+  descent completion.
 - Reserve novelty language for narrow inverse/target-directed pieces supported by the provenance map.
 - Preserve `UNKNOWN` and bounded-negative qualifiers.
 - Do not modify `STATUS.md` manually. If mathematical status genuinely changes, update the canonical proof and `MATH_STATUS.json`, then regenerate status.

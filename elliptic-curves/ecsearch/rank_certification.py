@@ -136,8 +136,8 @@ def add_rational_points(
         model, right
     ):
         raise ValueError("both operands must lie on the curve")
-    x1, y1 = left
-    x2, y2 = right
+    x1, y1 = map(Fraction, left)
+    x2, y2 = map(Fraction, right)
     if x1 == x2 and y2 == -y1 - a1 * x1 - a3:
         return None
     if left == right:

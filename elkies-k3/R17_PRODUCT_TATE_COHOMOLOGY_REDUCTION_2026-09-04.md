@@ -1,6 +1,7 @@
 # The 2-primary product-character quotient: exact reduction and input gate
 
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION 9e1c09d47fcf0bde -->
+<!-- status-consumer: EC-K3-R17-PRODUCT-SURVIVOR-GALOIS-HEIGHT-GATE 32b87c35a2573768 -->
 
 ## Status
 
@@ -372,19 +373,21 @@ proves good reduction and computes the exact Frobenius power sums only for
 sums through `n=14`.  The audit therefore gives no finite-field
 Mordell--Weil upper bound.
 
-There is also a sharp limitation on point-specialization shortcuts.  On the
-`chi=4` surface with four `I0*` fibres, the height formula for a height-eight
-section gives
+Before using target-specific component Galois, the general geometric height
+inequality on a `chi=4` surface with four `I0*` fibres gives
 
 ```text
 8 = 8 + 2(P.O) - sum_v contr_v(P),
 sum_v contr_v(P) <= 4,
 ```
 
-hence `P.O<=2`, not necessarily `P.O=0`.  Trivial specialization at one
-smooth fibre therefore excludes only the direct `P.O=0` class.  Trivial
-specialization at three distinct smooth fibres would force `P.O>=3` and so
-would exclude every height-eight section.
+hence only `P.O<=2`.  For the five surviving product twists, the subsequent
+exact residue-field calculation is sharper: every two-division cubic is
+irreducible at the quadratic branch place, so no rational section can meet a
+nonidentity `I0*` component.  All corrections vanish and
+`height(P)=8+2(P.O)`.  Thus a rational height-eight section has `P.O=0`; one
+trivial smooth-fibre specialization would exclude the whole height-eight box,
+while it would say nothing about height at least ten.
 
 ## Current hard input boundary
 
@@ -402,11 +405,11 @@ a complete two-Selmer group for E^(d)/K;
 a full H^2 Frobenius polynomial giving rho<=18.
 ```
 
-The finite-field audit at `p=131,137` supplies only moments `n=1,2` of the
-degree-28 polynomial, rather than the moments through `n=14` needed for an
-upper bound.  Likewise, a single trivial smooth-fibre specialization tests
-only `P.O=0`; three distinct such specializations would be needed to exclude
-all possibilities allowed by `P.O<=2`.
+The subsequent full toric calculations supply complete degree-28 polynomials
+at `p=131,137` for these five targets, but their Tate degree two gives only
+the geometric bound `rank<=2`.  The component-Galois gate makes the
+height-eight problem exactly `P.O=0`; it does not compute the nonzero Kummer
+classes in that box or address height at least ten.
 
 Therefore the quotient `H_d`, its nonzero classes, and the existence of a
 height-eight section remain `UNKNOWN`.  Equations (3), (8), and (12) are exact
@@ -461,3 +464,29 @@ both primes is not a positive-rank theorem.  The full table and replay are in
 [`R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md`](R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md).
 
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION cfb2417a30fab18d -->
+
+## Five-survivor component-Galois gate
+
+At all ten quadratic branch places of the five survivors, the smooth fibre's
+two-division cubic is irreducible over the residue field.  Since the three
+nonidentity components of the twisted `I0*` fibre are indexed by the three
+nonzero two-torsion points, none is residue-Galois fixed.  A `QQ(u)`-rational
+section therefore has zero local correction at every branch fibre and
+
+```text
+height(P)=8+2(P.O).
+```
+
+Consequently every height-eight section is in the direct `P.O=0` box and,
+by the zero-class exclusion above, would represent a nonzero Tate class.  The
+constructor-aware order starts with `19bad:083ad`, whose primitive base
+generator maps to a 124-bit `u`-value.  Its complete independently audited
+`p=151` quotient again has Tate factor `(Z-1)(Z+1)`, so it persists as a
+candidate but no section is proved.  At `p=137` all five have the same
+normalized factor.  A rational section specializes into its unique
+Frobenius-fixed direction, proving arithmetic product rank at most one for
+each survivor.  Hence one nonzero rational section would prove that rank is
+exactly one.  See
+[`R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md`](R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md).
+
+<!-- status-consumer: EC-K3-R17-PRODUCT-SURVIVOR-GALOIS-HEIGHT-GATE 32b87c35a2573768 -->

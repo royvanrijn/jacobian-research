@@ -59,14 +59,20 @@ def audit(record: dict) -> dict:
     if pairing_rank % 2:
         raise PairingError("an alternating pairing has even rank")
     radical_dimension = dimension - pairing_rank
-    known_rank = int(record["known_mw_rank"])
-    if known_rank < 0:
+    known_rank = record["known_mw_rank"]
+    if type(known_rank) is not int or known_rank < 0:
         raise PairingError("known_mw_rank must be nonnegative")
-    basis_certified = bool(record.get("residual_selmer_basis_certified"))
+    # Alternating linear algebra does not establish that this is the actual
+    # arithmetic pairing. Require separate, unconditional input certificates.
+    certified = all(record.get(flag) is True for flag in (
+        "residual_selmer_basis_certified", "pairing_entries_certified",
+        "known_mw_rank_certified", "unconditional",
+    )) and all(isinstance(record.get(field), str) and record[field].strip()
+               for field in ("pairing_algorithm", "pairing_evidence"))
     classification = (
         "CERTIFIED_RESIDUAL_PAIRING"
-        if basis_certified
-        else "UNCERTIFIED_BASIS_PAIRING_AUDIT"
+        if certified
+        else "UNCERTIFIED_BASIS_OR_PAIRING_AUDIT"
     )
     output = {
         "protocol": "BNFFREECT-v1",
@@ -74,17 +80,21 @@ def audit(record: dict) -> dict:
         "residual_basis_dimension": dimension,
         "pairing_rank": pairing_rank,
         "radical_dimension": radical_dimension,
-        "rank_upper_after_pairing": known_rank + radical_dimension,
+        "rank_upper_after_pairing": known_rank + radical_dimension if certified else None,
+        "conditional_rank_upper_after_pairing": known_rank + radical_dimension,
         "basis_labels": [str(item.get("label", index)) if isinstance(item, dict) else str(index) for index, item in enumerate(basis)],
         "pairing_algorithm": record.get("pairing_algorithm"),
+        "pairing_evidence": record.get("pairing_evidence"),
         "interpretation": (
-            "If and only if the supplied residual Selmer basis is certified, "
-            "the Mordell--Weil residual rank is at most the radical dimension. "
+            "The rank bound requires the supplied residual Selmer basis, actual "
+            "pairing entries, and known point rank to be certified unconditionally "
+            "on the same curve. This audit checks linear algebra and input "
+            "attestations; it does not compute or verify the arithmetic pairing. "
             "Non-radical directions are accounted for by the Cassels--Tate "
             "obstruction, not by a cover-point search."
         ),
     }
-    if basis_certified and radical_dimension == 0:
+    if certified and radical_dimension == 0:
         output["classification"] = "CERTIFIED_EXACT_KNOWN_RANK_AFTER_PAIRING"
     return output
 

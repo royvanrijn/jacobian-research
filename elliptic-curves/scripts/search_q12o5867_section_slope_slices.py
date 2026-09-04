@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# <!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE 7f8dffe58168acc8 -->
+# <!-- status-consumer: EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE f7a8c94736f1b44f -->
 """Search q12o5867 specializations through section-normalized slope quartics.
 
 For a short Weierstrass curve ``y^2 = x^3 + A*x + B`` and a rational point

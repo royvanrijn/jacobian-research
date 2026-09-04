@@ -1,0 +1,89 @@
+{
+  "alternate_q80_controls": {
+    "reason": "The alternate-Q80 controls lie in different rational-PGL2 j-map classes, not at base parameters of the published-R17/074d9 fibration. They require a separate explicit common-K3 birational transport before a pullback test is defined.",
+    "status": "NOT_APPLICABLE_ON_THE_DISPLAYED_BASE_CHANGE"
+  },
+  "assumed_generic_rank": 20,
+  "character": {
+    "chart": "norm12-orbit-08aaa",
+    "coefficients_c_b_a": [
+      "111895992579575168012630486185681524551417381006915185600534663436416/813755247227406849585496871115069369369024067604075986669996025401",
+      "-139624725877291643404022754863363554/902083836030447255228598196367701",
+      "40/1"
+    ],
+    "formula": "q(z)=a*z^2+b*z+c"
+  },
+  "controls": [
+    {
+      "certified_fibre_rank_lower_bound": 25,
+      "cover_coordinate_values": [],
+      "curve_id": 351,
+      "exact_new_tail_status": "NOT_AVAILABLE_OVER_Q_ON_THIS_BASE_CHANGE",
+      "old_tail_beyond_rank_17": 8,
+      "parameter": "2290008083256522493246569919830/663540125559319474063668093293",
+      "q_value": "28576500462357241563403870032114650773498289613938638175798715783811726544348982413051556729428148732695245393164314216255623924/358284634460580163797104232952637711115674999142752863485158539667612854606369882804855141838687138402665846084734310985348449",
+      "rank_budget_on_this_rational_lift": null,
+      "reference_rank_budget_beyond_assumed_generic_rank": 5,
+      "splitting": "NO_RATIONAL_PREIMAGE"
+    },
+    {
+      "certified_fibre_rank_lower_bound": 29,
+      "cover_coordinate_values": [
+        "1/1",
+        "-1/1"
+      ],
+      "curve_id": 356,
+      "exact_new_tail_status": "PENDING_SPECIALIZATION_OF_NEW_GENERIC_SECTIONS",
+      "old_tail_beyond_rank_17": 12,
+      "parameter": "4528014558367305428613456797406945/1804167672060894510457196392735402",
+      "q_value": "1/1",
+      "rank_budget_on_this_rational_lift": 9,
+      "reference_rank_budget_beyond_assumed_generic_rank": 9,
+      "splitting": "TWO_RATIONAL_PREIMAGES"
+    },
+    {
+      "certified_fibre_rank_lower_bound": 22,
+      "cover_coordinate_values": [],
+      "curve_id": 376,
+      "exact_new_tail_status": "NOT_AVAILABLE_OVER_Q_ON_THIS_BASE_CHANGE",
+      "old_tail_beyond_rank_17": 5,
+      "parameter": "643429182838181104167225178380/650335261370454309671104499653",
+      "q_value": "8096210618132435764425007583996966090239549282943423941886951542335677024401769939106109459947957268840028884610105509334972584/344166350329040762846369535591417935386241425851980236211414480711637267950336133654147544029470629466712428830036370699509009",
+      "rank_budget_on_this_rational_lift": null,
+      "reference_rank_budget_beyond_assumed_generic_rank": 2,
+      "splitting": "NO_RATIONAL_PREIMAGE"
+    },
+    {
+      "certified_fibre_rank_lower_bound": 23,
+      "cover_coordinate_values": [],
+      "curve_id": 377,
+      "exact_new_tail_status": "NOT_AVAILABLE_OVER_Q_ON_THIS_BASE_CHANGE",
+      "old_tail_beyond_rank_17": 6,
+      "parameter": "36025748823481053137486636375715/1814738712412084343056227401294",
+      "q_value": "8594865011622962790408687965140527725582948196842793049859939989038365055570681225102572561966156160464424760598006132152256599009/669980277301214277445420920051720650736066322322778896747260600151540214078024873341389124212870838759475311064270081444887209",
+      "rank_budget_on_this_rational_lift": null,
+      "reference_rank_budget_beyond_assumed_generic_rank": 3,
+      "splitting": "NO_RATIONAL_PREIMAGE"
+    },
+    {
+      "certified_fibre_rank_lower_bound": 29,
+      "cover_coordinate_values": [],
+      "curve_id": 385,
+      "exact_new_tail_status": "NOT_AVAILABLE_OVER_Q_ON_THIS_BASE_CHANGE",
+      "old_tail_beyond_rank_17": 12,
+      "parameter": "-1809954972122448275974806351891555/12698849035859553216925586407167287",
+      "q_value": "21046017994195419951372997357666808019970514058240290156696441722009637145221378446786493510272561802925234616019003824050991513781058394/131226795184345100212092299340598306187504762126571052377232044001537561170069241421599710636111765172911478070622059632580546812312969",
+      "rank_budget_on_this_rational_lift": null,
+      "reference_rank_budget_beyond_assumed_generic_rank": 9,
+      "splitting": "NO_RATIONAL_PREIMAGE"
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json": "15aeb70029a078dd51024a2e4c8d75a336a7197abe9471d79151a91178a59ec5",
+    "artifacts/generated-results/elkies-k3-r17-rational-quadratic-twist-control-anchored-pgl8-nagao-h50-v1.json": "3d2fee8c139926f498cc265cffd670ee579fd786b149da8af6fef96cfb8e4b69"
+  },
+  "proof_boundary": "The square tests exactly determine rational points of the quadratic cover above the five controls. The rank budgets use only certified fibre lower bounds. They do not certify that any of the old quotient basis remains independent modulo the new generic sections; that final tail test requires explicit specialization coordinates for all three new twist sections.",
+  "reproducing_command": "elkies-k3/scripts/check_r17_mw20_control_transport.py --candidate-artifact artifacts/generated-results/elkies-k3-r17-rational-quadratic-twist-control-anchored-pgl8-nagao-h50-v1.json --finalist-rank 1 --generic-rank 20 --output artifacts/generated-results/elkies-k3-r17-mw20-control-transport-anchored-heuristic-top-v1.json",
+  "schema": "elkies-k3.r17-mw20-control-transport-preflight.v1",
+  "status": "PASS_EXACT_CONTROL_SPLITTING_PREFLIGHT"
+}

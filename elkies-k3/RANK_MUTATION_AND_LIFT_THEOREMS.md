@@ -641,6 +641,12 @@ the integral transport that identifies the actual fibration.
 
 ## 6. Specialization and Shioda--Tate balance
 
+This section records the surface-theoretic Shioda--Tate balance.  The
+arithmetic rank-jump sandwich, quotient height, midpoint geometry, discrete
+covering radius, and everywhere-even Kummer/class-group lemma are kept in the
+companion
+[`SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md`](SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md).
+
 ### Theorem E: Shioda--Tate specialization balance
 
 Consider a smooth characteristic-zero family of K3 surfaces with compatible

@@ -1,0 +1,4031 @@
+{
+  "claim_boundary": [
+    "No rank upper bound follows from search misses.",
+    "No full Selmer, class group, saturation, generic index-12288 or rank-32 result is claimed.",
+    "Passing tests can be fixture checks; arithmetic replays are identified separately in the report.",
+    "This audit is not formal verification or a guarantee that all defects were found."
+  ],
+  "completed_local_date": "2026-09-05",
+  "environment": {
+    "numpy": "1.26.4",
+    "pari_historical_producer": "2.17.4",
+    "pari_system": "2.15.4",
+    "python": "3.12.3",
+    "sage": "10.9"
+  },
+  "evidence_bundle": {
+    "path": "artifacts/generated-results/elliptic-curves/external_audit_evidence_20260904.json.gz",
+    "sha256": "e144d8d681ace07e58a753e8fc1d35e9eaa1a7973eb7dd4ed7c4def6f1674e63"
+  },
+  "executions": [
+    {
+      "batch": "initial",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/scripts/audit_artifact_catalog.py"
+      ],
+      "elapsed_seconds": 0.032,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/artifact-catalog.log",
+      "log_sha256": "07ac2155f1801ea4b21bbe0f769a3dd8c47dd667599e02dd6fd8fed0450ae742",
+      "name": "artifact-catalog",
+      "returncode": 1,
+      "status": "FAIL",
+      "timeout_seconds": 15
+    },
+    {
+      "batch": "initial",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/cas/audit_icarm_rank_lower_bound_artifacts.py"
+      ],
+      "elapsed_seconds": 0.032,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/rank-artifact-audit.log",
+      "log_sha256": "ce7c8c666398eed3df3d506bb900d595e17eabc7a5dffef7afa6eb1bbd76e6b2",
+      "name": "rank-artifact-audit",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 10
+    },
+    {
+      "batch": "initial",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/cas/verify_icarm_curve273_rank30.py",
+        "--check"
+      ],
+      "elapsed_seconds": 0.315,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/curve273-replay.log",
+      "log_sha256": "9fdca3e88283a5274339772c89002c7e24934c2c5eadf712709c988343c4f60f",
+      "name": "curve273-replay",
+      "returncode": 1,
+      "status": "FAIL",
+      "timeout_seconds": 20
+    },
+    {
+      "batch": "initial",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/cas/verify_icarm_curve398_rank30.py",
+        "--check"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/curve398-replay.log",
+      "log_sha256": "998d26555fa2ba132f75510f3c0c96a9d053d2c3b0a7d207934aa25cf53acfdd",
+      "name": "curve398-replay",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 20
+    },
+    {
+      "batch": "initial",
+      "command": [
+        ".venv/bin/python",
+        "scripts/audit_status.py"
+      ],
+      "elapsed_seconds": 0.265,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/status-baseline.log",
+      "log_sha256": "a5d944266d903833d8b244570b8109536333d253c1073226af866e89ca96a460",
+      "name": "status-baseline",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 15
+    },
+    {
+      "batch": "primality",
+      "command": [
+        ".venv/bin/python",
+        "-c",
+        "import sys,subprocess;sys.path.insert(0,'elliptic-curves/cas');import verify_icarm_curve302_rank31 as a,verify_icarm_curve356_rank29 as b; ps=sorted({p for p,e in a.DISCRIMINANT_FACTORIZATION+a.C4_FACTORIZATION+b.DISCRIMINANT_FACTORIZATION});r=subprocess.run(['gp','-q','-f'],input='print(version());\\n'+''.join(f'print({p},\"|\",isprime({p}));\\n' for p in ps)+'quit\\n',text=True,capture_output=True,timeout=12);print(r.stdout);print(r.stderr);assert r.returncode==0 and '***' not in r.stderr;assert r.stdout.splitlines()[1:]==[f'{p}|1' for p in ps]"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/record-primality-rigorous.log",
+      "log_sha256": "26efc1929326bb2e75a552d87ea6e7e021981ed8314ca46dc42618475d578c15",
+      "name": "record-primality-rigorous",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 15
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_alternate_quartic_covers.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_alternate_quartic_covers.log",
+      "log_sha256": "2d014bb427120fb1a5014d7499096989061fd0fdf40acb471c2e2667de60e71e",
+      "name": "test_alternate_quartic_covers",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_analyze_fermigier_bidegree21_all80.py"
+      ],
+      "elapsed_seconds": 1.868,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_analyze_fermigier_bidegree21_all80.log",
+      "log_sha256": "c18eec91d18d20c5d6273ea993f5a7c79aee453bc672073eb6e5627e182f9384",
+      "name": "test_analyze_fermigier_bidegree21_all80",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_analyze_fermigier_bidegree21_pilot.py"
+      ],
+      "elapsed_seconds": 0.315,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_analyze_fermigier_bidegree21_pilot.log",
+      "log_sha256": "fe9545370a9b2071cfa9a14d724789faf26e3015146b01c0ec056023c648c95b",
+      "name": "test_analyze_fermigier_bidegree21_pilot",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_analyze_fermigier_exceptional_transport.py"
+      ],
+      "elapsed_seconds": 0.214,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_analyze_fermigier_exceptional_transport.log",
+      "log_sha256": "6273232de4d3ef7acd4ecafa5c86beeeb974f56586b21089a2990b3f72facbe6",
+      "name": "test_analyze_fermigier_exceptional_transport",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_build_q12o5867_bnf_free_signature.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_build_q12o5867_bnf_free_signature.log",
+      "log_sha256": "a6707d4eff38012da33ddc34bc6dc076a3b17151cfc9aef223c8790cbe64c3da",
+      "name": "test_build_q12o5867_bnf_free_signature",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_certify_nagao_rank17_frontier.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_certify_nagao_rank17_frontier.log",
+      "log_sha256": "473fbc0ef3b0966f5f5e134e01ed79ab298feb969d9a259ec8090cf003b637b3",
+      "name": "test_certify_nagao_rank17_frontier",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_certify_nagao_rank20_t5081.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_certify_nagao_rank20_t5081.log",
+      "log_sha256": "ce155d9697089f241dcde88726f33980547fde850204098b7080f77732dcf5f8",
+      "name": "test_certify_nagao_rank20_t5081",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_conductor_first_near_miss_descent.py"
+      ],
+      "elapsed_seconds": 0.866,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_conductor_first_near_miss_descent.log",
+      "log_sha256": "3aac186fe80b9c97e4d734e8cc8ff6eab6fe5efda219a9a4017db1b6cc9bd485",
+      "name": "test_conductor_first_near_miss_descent",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_conductor_parameter_recovery.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_conductor_parameter_recovery.log",
+      "log_sha256": "7b86291b37cb634af5195202c0758a163d4a9c13965b0604b083e8d0d77f781a",
+      "name": "test_conductor_parameter_recovery",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_crt_lattice.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_crt_lattice.log",
+      "log_sha256": "7f4011ba07a8ab9e579dc80d5864b3d38b63943d488aaf4c8a11b728524201d0",
+      "name": "test_crt_lattice",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_curve385_height_compression_pilot.py"
+      ],
+      "elapsed_seconds": 0.164,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_curve385_height_compression_pilot.log",
+      "log_sha256": "2ac3d3a59044238aedfa9953328bdc4aa82ab4003d939fa8621c26bda967731f",
+      "name": "test_curve385_height_compression_pilot",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_curve385_iterated_half_lattice_search.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_curve385_iterated_half_lattice_search.log",
+      "log_sha256": "41cee9cc70f8e2902ff4277cf9577cbdf05c130cf7652490990fd48efa2e4859",
+      "name": "test_curve385_iterated_half_lattice_search",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_curve385_sparse_quotient_rank32.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_curve385_sparse_quotient_rank32.log",
+      "log_sha256": "65378dcad145da2497120819bebfc3c46534dce9714ce064b3d809a56654aca2",
+      "name": "test_curve385_sparse_quotient_rank32",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_curve385_sparse_quotient_rank32_primary.py"
+      ],
+      "elapsed_seconds": 0.365,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_curve385_sparse_quotient_rank32_primary.log",
+      "log_sha256": "82843543658fb075cb5785a6ea089fc8c098633b6ffab74f1cf2038841f48506",
+      "name": "test_curve385_sparse_quotient_rank32_primary",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_curve385_sparse_restart_budget.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_curve385_sparse_restart_budget.log",
+      "log_sha256": "65378dcad145da2497120819bebfc3c46534dce9714ce064b3d809a56654aca2",
+      "name": "test_curve385_sparse_restart_budget",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_curve398_mw16_adaptive_half_lattice.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_curve398_mw16_adaptive_half_lattice.log",
+      "log_sha256": "8750d4b5acdce1e4d680a3a27eb5d68370ed8b7d37b619aa32e9e0049f881dae",
+      "name": "test_curve398_mw16_adaptive_half_lattice",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_curve398_two_parent_collision.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_curve398_two_parent_collision.log",
+      "log_sha256": "f96363f8d8dff4c4abed7197c63606ead0bd955ea4259bdcb5fb6f47dbe53992",
+      "name": "test_curve398_two_parent_collision",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_ek_k3.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_ek_k3.log",
+      "log_sha256": "55df81c03b1fc09a739803668e8b10b1a1cd87ac7e716666dddb1c968f87bb76",
+      "name": "test_ek_k3",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_bisection_specialization_controls.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_bisection_specialization_controls.log",
+      "log_sha256": "199ba496f288116d36c62f29346d4fbf0bd75745a1c893abfcbdaa4c6d5b1033",
+      "name": "test_elkies_bisection_specialization_controls",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-0",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_bisection_visibility_record_curves.py"
+      ],
+      "elapsed_seconds": 1.667,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_bisection_visibility_record_curves.log",
+      "log_sha256": "936db899c2f60dd8cec5fbe7a1a264ad7af7f19a924e73c79858bc55fc463483",
+      "name": "test_elkies_bisection_visibility_record_curves",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_klagsbrun_rank29.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_klagsbrun_rank29.log",
+      "log_sha256": "0292b91377e3f5de5fc72b83a91ddacbecbc2c226b761793f9b4babe85f7ad63",
+      "name": "test_elkies_klagsbrun_rank29",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_known_kummer_quotients.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_known_kummer_quotients.log",
+      "log_sha256": "ba8dd02bb7437942124041e01665b154f224dfbcb0a07cdebc0a6802f7ac9c74",
+      "name": "test_elkies_known_kummer_quotients",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_pari219_bnf_benchmark.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_pari219_bnf_benchmark.log",
+      "log_sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0",
+      "name": "test_elkies_pari219_bnf_benchmark",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_pari219_selmer_from_bnf.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_pari219_selmer_from_bnf.log",
+      "log_sha256": "feabb4add9e2ca3374e538560634d1ec97dc4f4ce89aab12f3d726e36ea9b2f6",
+      "name": "test_elkies_pari219_selmer_from_bnf",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_rank28_local_coverage.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_rank28_local_coverage.log",
+      "log_sha256": "46f2d84bfe093b26b7bcf5ac58897d67f9784fc95a0494869930d59b5496eced",
+      "name": "test_elkies_rank28_local_coverage",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_rank28_relative_descent.py"
+      ],
+      "elapsed_seconds": 0.164,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_rank28_relative_descent.log",
+      "log_sha256": "8a3e7cf00bf5ccc05e62643ed69dd3d821ab38df0f9d9de0e6a7fc7fb2cd8f82",
+      "name": "test_elkies_rank28_relative_descent",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_rank28_s_class_pari.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_rank28_s_class_pari.log",
+      "log_sha256": "16c36ae176c8925dc74efb6008909bd46a5d866707ff3ce79ef4d1d60d412ede",
+      "name": "test_elkies_rank28_s_class_pari",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_rank_jump_fingerprints.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_rank_jump_fingerprints.log",
+      "log_sha256": "4df0a7c65c89e8720a427d7a70c783fc27a4aa63d37988b012522fd193c018a1",
+      "name": "test_elkies_rank_jump_fingerprints",
+      "returncode": 1,
+      "status": "FAIL",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_relative_2selmer_checkpointed.log",
+      "log_sha256": "484819fc6115ded4f95980c301dc1cb3bd42b75d97061c070633332d47142c79",
+      "name": "test_elkies_relative_2selmer_checkpointed",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_relative_2selmer_open.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_relative_2selmer_open.log",
+      "log_sha256": "e6ec182765cd965f2837d8eeaef5a64af48a104f245cd1a0b7281559194c57c1",
+      "name": "test_elkies_relative_2selmer_open",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_relative_2selmer_suite.py"
+      ],
+      "elapsed_seconds": 0.164,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_relative_2selmer_suite.log",
+      "log_sha256": "0172b913bb04c60e06b0b7a80e223a2bbe71499bd86405c2a58af2957ac700e9",
+      "name": "test_elkies_relative_2selmer_suite",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_residual_selmer_gate.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_residual_selmer_gate.log",
+      "log_sha256": "b53b61335ca4d77d039dcd8ebc9b87ab52ae98f80f44b38be5fcc31929537321",
+      "name": "test_elkies_residual_selmer_gate",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_exceptional_branch_code.py"
+      ],
+      "elapsed_seconds": 0.465,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_exceptional_branch_code.log",
+      "log_sha256": "a11a1237c8ea6a213866d783c6f5164de18766b1752bdabf6715b9c4b389a6b9",
+      "name": "test_exceptional_branch_code",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_family_discovery.py"
+      ],
+      "elapsed_seconds": 0.565,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_family_discovery.log",
+      "log_sha256": "adeed83cfaace7313c6dcadf9d93e9ad0e646280b6b9625708c358853447b60c",
+      "name": "test_family_discovery",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fermigier_baseline_evaluation.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fermigier_baseline_evaluation.log",
+      "log_sha256": "33060fd73862c5e1af97335504d5b45211fce6d229657f556d8deceeadc52ce4",
+      "name": "test_fermigier_baseline_evaluation",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fermigier_covariants.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fermigier_covariants.log",
+      "log_sha256": "2d014bb427120fb1a5014d7499096989061fd0fdf40acb471c2e2667de60e71e",
+      "name": "test_fermigier_covariants",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fermigier_exceptional_quotient_ball.py"
+      ],
+      "elapsed_seconds": 0.415,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fermigier_exceptional_quotient_ball.log",
+      "log_sha256": "e35d7ead78c1c04f7ee18b249fefc09a3b0b8c7d94688d48049c0cb472f0c10e",
+      "name": "test_fermigier_exceptional_quotient_ball",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fermigier_generic_rank_exact.py"
+      ],
+      "elapsed_seconds": 1.718,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fermigier_generic_rank_exact.log",
+      "log_sha256": "d8b521e93c6236487cffff6d14794a1c1a28a6cf028b633b04a7242c183edaaf",
+      "name": "test_fermigier_generic_rank_exact",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fermigier_labelled_corpus.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fermigier_labelled_corpus.log",
+      "log_sha256": "feabb4add9e2ca3374e538560634d1ec97dc4f4ce89aab12f3d726e36ea9b2f6",
+      "name": "test_fermigier_labelled_corpus",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-1",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fermigier_mestre.py"
+      ],
+      "elapsed_seconds": 0.264,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fermigier_mestre.log",
+      "log_sha256": "78f7619e49ad7f592104f7ef7b10cc5ca59a379bec305ea9d0ba36dbbd84bc4d",
+      "name": "test_fermigier_mestre",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fermigier_offset_search.py"
+      ],
+      "elapsed_seconds": 0.164,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fermigier_offset_search.log",
+      "log_sha256": "ad1dabaf6fd44b97c2ba48c91cc833bc69a88c2e8baf813908fc24f5d1465527",
+      "name": "test_fermigier_offset_search",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fermigier_rank20_candidate_record.py"
+      ],
+      "elapsed_seconds": 2.47,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fermigier_rank20_candidate_record.log",
+      "log_sha256": "b41e732442fece0d6c1f304f289fb1008a9cbde161c152586e178b19c4c173fd",
+      "name": "test_fermigier_rank20_candidate_record",
+      "returncode": 1,
+      "status": "FAIL",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fermigier_rank_jump_fingerprints.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fermigier_rank_jump_fingerprints.log",
+      "log_sha256": "702291397657f3bd76cfd6f1d4653da002d20098213a10140c37b820d675ce7c",
+      "name": "test_fermigier_rank_jump_fingerprints",
+      "returncode": 1,
+      "status": "FAIL",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fermigier_score_sweep.py"
+      ],
+      "elapsed_seconds": 4.274,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fermigier_score_sweep.log",
+      "log_sha256": "0832688cb6215c1118d25e5d0de09974b58eadb84df633763e9bb1dab76b469e",
+      "name": "test_fermigier_score_sweep",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_finite_quotient_escape.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_finite_quotient_escape.log",
+      "log_sha256": "af55efa5c3ceb122f8184c380aa405d3f3b4e7e0c1e892773d0eff31d0645c8a",
+      "name": "test_finite_quotient_escape",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fixed_cubic_field_curve_family.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fixed_cubic_field_curve_family.log",
+      "log_sha256": "603db52fd0016ca5cdcf83b2588160ae92bde08c66ba4c61dfc8a2a74cdb95c9",
+      "name": "test_fixed_cubic_field_curve_family",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_generate_q12o5867_norm_one_cover_candidates.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_generate_q12o5867_norm_one_cover_candidates.log",
+      "log_sha256": "fb184ea57734512b1f088f9181209901b9cd46df3eb7eaa2500ea9e48dde20b5",
+      "name": "test_generate_q12o5867_norm_one_cover_candidates",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_half_lattice_chart_policy.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_half_lattice_chart_policy.log",
+      "log_sha256": "888a0c0ed615e57d32cf72be501b0c355f33b8613c81dfdaa99db33d7959487e",
+      "name": "test_half_lattice_chart_policy",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_half_lattice_height_compression.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_half_lattice_height_compression.log",
+      "log_sha256": "8e83c9e30711d3808140522c0a784c32a4a16bd2d9a482bfdc79f43bb50d7c5e",
+      "name": "test_half_lattice_height_compression",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_icarm_curve245_mestre.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_icarm_curve245_mestre.log",
+      "log_sha256": "5d8a174d448d59185fd227bcbab9c964e39b10a9c2e28965972cfb0c833dd854",
+      "name": "test_icarm_curve245_mestre",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_icarm_curve245_rank20.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_icarm_curve245_rank20.log",
+      "log_sha256": "120fcf1e1b1ef6883b716f1b33b4fbea79c7089f1d1ff950e98c9608d82abb42",
+      "name": "test_icarm_curve245_rank20",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_icarm_curve273_rank30.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_icarm_curve273_rank30.log",
+      "log_sha256": "58976e1ebef02b28fad1bcf93e82831c9ac8cc4bf93fac3ea64e4eed88432c50",
+      "name": "test_icarm_curve273_rank30",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_icarm_curve302_point_cloud.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_icarm_curve302_point_cloud.log",
+      "log_sha256": "0f7e4b97443e54aca647179972594d13bb587afcbf151fab8228148587ea844a",
+      "name": "test_icarm_curve302_point_cloud",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_icarm_curve394_rank21.py"
+      ],
+      "elapsed_seconds": 0.515,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_icarm_curve394_rank21.log",
+      "log_sha256": "ea4b9722bf3807f5c924bfd2fa1e53e9c86681f396fd7ef98a695ccd4d973f94",
+      "name": "test_icarm_curve394_rank21",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_icarm_curve398_rank30.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_icarm_curve398_rank30.log",
+      "log_sha256": "3a315533b81287472852b81ae89b89d0f42abf74b1503c45c2c62712388d3eb1",
+      "name": "test_icarm_curve398_rank30",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_icarm_curve_refresh_overview.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_icarm_curve_refresh_overview.log",
+      "log_sha256": "dcf0a7fc200cab9ab36e5d3037278eb791f53b95cc73af6040c74a0a911416bc",
+      "name": "test_icarm_curve_refresh_overview",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_icarm_mw16_parent_ladder.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_icarm_mw16_parent_ladder.log",
+      "log_sha256": "13b96ed43ad62b23c6812e318f100b156de88f41891dfeb3b15c976596356e17",
+      "name": "test_icarm_mw16_parent_ladder",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_icarm_norm8_low_root_atlas.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_icarm_norm8_low_root_atlas.log",
+      "log_sha256": "98255317dbdec068621cfd1c730ebd962e38b6f8c534b73c2b3cbfc806ea738c",
+      "name": "test_icarm_norm8_low_root_atlas",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_kihara.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_kihara.log",
+      "log_sha256": "27c4a39d34ece4cbc66cc59cb0870c7abe4cc0a5f009205bdd0ea06a93f8b3ac",
+      "name": "test_kihara",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-2",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_latent_lattice.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_latent_lattice.log",
+      "log_sha256": "820e39e204dd73091e165dcfc1af81f5fcb89894483f06ca6fe9c4547187cf47",
+      "name": "test_latent_lattice",
+      "returncode": 1,
+      "status": "FAIL",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_local_condition_discovery.py"
+      ],
+      "elapsed_seconds": 0.265,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_local_condition_discovery.log",
+      "log_sha256": "583e2621f8c4ced08d26f83058529458e06740a6f0a6d83ecd40f57d485851e3",
+      "name": "test_local_condition_discovery",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_mestre_diameter235_eight_companion.py"
+      ],
+      "elapsed_seconds": 4.875,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_mestre_diameter235_eight_companion.log",
+      "log_sha256": "aea831eeabfd1b7156825da489be6a57e1da0e55409b6f4d8a95c7bcba54d8e5",
+      "name": "test_mestre_diameter235_eight_companion",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_mestre_diameter235_eight_companion_component.py"
+      ],
+      "elapsed_seconds": 5.927,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_mestre_diameter235_eight_companion_component.log",
+      "log_sha256": "49f937988c22ee6c6d45291de10ecd79edd191d246d4b0e0619b89d53ecc70ad",
+      "name": "test_mestre_diameter235_eight_companion_component",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_mestre_dsquare_all_companion_relations.py"
+      ],
+      "elapsed_seconds": 1.517,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_mestre_dsquare_all_companion_relations.log",
+      "log_sha256": "16fe185ab8a057a7f7289db387eece267cc43fba3f7fb68f97d66056b39fa91d",
+      "name": "test_mestre_dsquare_all_companion_relations",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_mestre_dsquare_four.py"
+      ],
+      "elapsed_seconds": 0.966,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_mestre_dsquare_four.log",
+      "log_sha256": "881846b804438ea531f4eb01ce28138e27b2aa26857d276f0097423aba84b4de",
+      "name": "test_mestre_dsquare_four",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_mestre_fermigier_two_section_generic_rank13.py"
+      ],
+      "elapsed_seconds": 0.465,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_mestre_fermigier_two_section_generic_rank13.log",
+      "log_sha256": "241c48bd41702d54a8a6af9616425cb9a740039fcb4b758e5ecd14bfd119fcdc",
+      "name": "test_mestre_fermigier_two_section_generic_rank13",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_mestre_rank13_02393128133175.py"
+      ],
+      "elapsed_seconds": 1.117,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_mestre_rank13_02393128133175.log",
+      "log_sha256": "c224bb9e06b938adb1520c84713b51d81032c75e856bb8162d64b182c0a875e5",
+      "name": "test_mestre_rank13_02393128133175",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_mod_l_reduction_independence.py"
+      ],
+      "elapsed_seconds": 0.264,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_mod_l_reduction_independence.log",
+      "log_sha256": "7cd2cd1fd14ce1c9a1c08446e62988a98d1010d78eaad801e7913423300ff26e",
+      "name": "test_mod_l_reduction_independence",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_multiple_root_lifting.py"
+      ],
+      "elapsed_seconds": 0.315,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_multiple_root_lifting.log",
+      "log_sha256": "687b6fdb56aead5b237e29db3503951899c673368c6a4968b7d9cbccd410bb8c",
+      "name": "test_multiple_root_lifting",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_mw17_jump_v2.py"
+      ],
+      "elapsed_seconds": 1.418,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_mw17_jump_v2.log",
+      "log_sha256": "f2410bcdbc895bc880485878fd962948c341dbb19c6f54a61e8b491d8c85b032",
+      "name": "test_mw17_jump_v2",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_mw17_jump_v2_zero_gain_rescue.py"
+      ],
+      "elapsed_seconds": 0.214,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_mw17_jump_v2_zero_gain_rescue.log",
+      "log_sha256": "745ea47041d1fd4ceed45b02209011733974a63b3c485be586d62a2eb9b20c5d",
+      "name": "test_mw17_jump_v2_zero_gain_rescue",
+      "returncode": 1,
+      "status": "FAIL",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_nagao_1994.py"
+      ],
+      "elapsed_seconds": 0.214,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_nagao_1994.log",
+      "log_sha256": "81f560108a3049945e6edf426af469af6fef7ff61f032bcf3318f39c251696a8",
+      "name": "test_nagao_1994",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_nagao_linear_sections.py"
+      ],
+      "elapsed_seconds": 0.165,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_nagao_linear_sections.log",
+      "log_sha256": "7ec214accb43560883c6218248c2dd001c31f179456976750910fa1e53c5640e",
+      "name": "test_nagao_linear_sections",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_nagao_section7_linear_sections.py"
+      ],
+      "elapsed_seconds": 8.007,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_nagao_section7_linear_sections.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "test_nagao_section7_linear_sections",
+      "returncode": null,
+      "status": "TIMEOUT_NOT_REPLAYED",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_nagao_section7_picard_bound.py"
+      ],
+      "elapsed_seconds": 0.365,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_nagao_section7_picard_bound.log",
+      "log_sha256": "43199d6b39cea40787c8796a832910aa8ab6d07dc9830f8c2bc4dd59d8c36db3",
+      "name": "test_nagao_section7_picard_bound",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_nagao_section7_rank_jump.py"
+      ],
+      "elapsed_seconds": 0.032,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_nagao_section7_rank_jump.log",
+      "log_sha256": "a6707d4eff38012da33ddc34bc6dc076a3b17151cfc9aef223c8790cbe64c3da",
+      "name": "test_nagao_section7_rank_jump",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_overcomplete_quotient_bank.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_overcomplete_quotient_bank.log",
+      "log_sha256": "6f283ee6225d2cef4c0127d95456a6f954c45141c92b97dd89016cb1c630e8f4",
+      "name": "test_overcomplete_quotient_bank",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_probe_q12o5867_pari_two_cover.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_probe_q12o5867_pari_two_cover.log",
+      "log_sha256": "ad61be9b74efb8a4b8ae7d0427622d79c722d44dc55c2f4aeb51140568dfc278",
+      "name": "test_probe_q12o5867_pari_two_cover",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_production_search_gates.py"
+      ],
+      "elapsed_seconds": 0.032,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_production_search_gates.log",
+      "log_sha256": "888a0c0ed615e57d32cf72be501b0c355f33b8613c81dfdaa99db33d7959487e",
+      "name": "test_production_search_gates",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-3",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_q12o5867_descent_first_entrypoints.py"
+      ],
+      "elapsed_seconds": 0.264,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_q12o5867_descent_first_entrypoints.log",
+      "log_sha256": "78059762c12bf318098ce706c2ad45a2b9eee935895794188b4961b42af9d0b7",
+      "name": "test_q12o5867_descent_first_entrypoints",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_q12o5867_point_search.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_q12o5867_point_search.log",
+      "log_sha256": "56e03afda220e7ba78bbcecf9a2e53a0149cfc3e311fa10bbd01b25e8e5ba671",
+      "name": "test_q12o5867_point_search",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_q12o5867_rank_jump_registry.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_q12o5867_rank_jump_registry.log",
+      "log_sha256": "feabb4add9e2ca3374e538560634d1ec97dc4f4ce89aab12f3d726e36ea9b2f6",
+      "name": "test_q12o5867_rank_jump_registry",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_q12o5867_slope_slices.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_q12o5867_slope_slices.log",
+      "log_sha256": "33060fd73862c5e1af97335504d5b45211fce6d229657f556d8deceeadc52ce4",
+      "name": "test_q12o5867_slope_slices",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_q12o5867_specialization.py"
+      ],
+      "elapsed_seconds": 0.164,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_q12o5867_specialization.log",
+      "log_sha256": "debd07481818cb7243f7fa8ffbe3c757ea29c856d11f4e547c63fc96d8485ef7",
+      "name": "test_q12o5867_specialization",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_quotient_geometry_table.py"
+      ],
+      "elapsed_seconds": 0.164,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_quotient_geometry_table.log",
+      "log_sha256": "ddfa74e3436e1c180e0924521a78de04885c5592e5082596cc9c7f5bc6ff16e6",
+      "name": "test_quotient_geometry_table",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_quotient_rank_escape_detector_v2.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_quotient_rank_escape_detector_v2.log",
+      "log_sha256": "2b8a5c7e7bfdde85bf100dde94d4f0d07df6f886aca0c69849d08d8bb7a0973a",
+      "name": "test_quotient_rank_escape_detector_v2",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_r17_bisection_ranker.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_r17_bisection_ranker.log",
+      "log_sha256": "888a0c0ed615e57d32cf72be501b0c355f33b8613c81dfdaa99db33d7959487e",
+      "name": "test_r17_bisection_ranker",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_r17_experimental_hygiene.py"
+      ],
+      "elapsed_seconds": 1.418,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_r17_experimental_hygiene.log",
+      "log_sha256": "e5f7d14833153bdab7c1f45f1af02634f87ea3837bfee2bd213de5d38270ff12",
+      "name": "test_r17_experimental_hygiene",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_r17_extreme_anchored_mw18.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_r17_extreme_anchored_mw18.log",
+      "log_sha256": "844ab8106fb700745ba67fd9b602d4b764b294a5ed653eef4aae68c5db751a46",
+      "name": "test_r17_extreme_anchored_mw18",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_r17_kummer_quotient_search.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_r17_kummer_quotient_search.log",
+      "log_sha256": "75ff54e727b57e4bd7b88956ed0c92c4b9a416e6f0976707e8fb54aa385ac0bd",
+      "name": "test_r17_kummer_quotient_search",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_r17_mw17_only_selmer_replay.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_r17_mw17_only_selmer_replay.log",
+      "log_sha256": "800346069b7c77896a63bf9caf4716560e8342f5599a74f58ff8b74006e44266",
+      "name": "test_r17_mw17_only_selmer_replay",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_r17_prospective_crt_experiment.py"
+      ],
+      "elapsed_seconds": 2.019,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_r17_prospective_crt_experiment.log",
+      "log_sha256": "463d0f51b22f61f04f483e442ed81960e53347d4b57a4ff923aa140feddbfc89",
+      "name": "test_r17_prospective_crt_experiment",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_r17_prospective_crt_half_lattice_promotion_gate.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_r17_prospective_crt_half_lattice_promotion_gate.log",
+      "log_sha256": "670a39115e7523a8984e4842e16547cb2094b03fad392b037b4b9dc8b2656e62",
+      "name": "test_r17_prospective_crt_half_lattice_promotion_gate",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_r17_prospective_crt_half_lattice_protocol.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_r17_prospective_crt_half_lattice_protocol.log",
+      "log_sha256": "e11bbb630c1a6ea91f4322ac92d7ce2a6c043ad84d3e41ecf0d0f5a73e9c9fd0",
+      "name": "test_r17_prospective_crt_half_lattice_protocol",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_r17_prospective_family_holdout.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_r17_prospective_family_holdout.log",
+      "log_sha256": "1f11b6e880045ee35de832b81b45d06257342e13b5c79bbf0034379d4ca220b9",
+      "name": "test_r17_prospective_family_holdout",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_r17_refresh_jump_ladder.py"
+      ],
+      "elapsed_seconds": 2.771,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_r17_refresh_jump_ladder.log",
+      "log_sha256": "69aafb5833f5ca8560c7b61a1321d5f2d5ee47207ae417078ae972adf4fe80ad",
+      "name": "test_r17_refresh_jump_ladder",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_r17_residual_selmer_fingerprints.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_r17_residual_selmer_fingerprints.log",
+      "log_sha256": "37d8a0769d6c800296764c21f8e08feca52d770d400afabe65713604062cf749",
+      "name": "test_r17_residual_selmer_fingerprints",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_r17_small_field_class_quotient_lab.py"
+      ],
+      "elapsed_seconds": 0.668,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_r17_small_field_class_quotient_lab.log",
+      "log_sha256": "fe9b8512717b56ce07fce18bb2684bfa6c9b0a5790efccf669487131d1acc867",
+      "name": "test_r17_small_field_class_quotient_lab",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_r17_training_data.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_r17_training_data.log",
+      "log_sha256": "c6b9b1f09add0403cc07e90bfdf272129b1ddfa2f8f7675ea8218862f2516371",
+      "name": "test_r17_training_data",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-4",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_rank_certification.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_rank_certification.log",
+      "log_sha256": "b29b03a2697317e5be70cdf9183e300a501a69cf666f2c048f47e1af086d26ee",
+      "name": "test_rank_certification",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_rank_jump_benchmark.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_rank_jump_benchmark.log",
+      "log_sha256": "b29b03a2697317e5be70cdf9183e300a501a69cf666f2c048f47e1af086d26ee",
+      "name": "test_rank_jump_benchmark",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_record_f1_class_quotient.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_record_f1_class_quotient.log",
+      "log_sha256": "1f11b6e880045ee35de832b81b45d06257342e13b5c79bbf0034379d4ca220b9",
+      "name": "test_record_f1_class_quotient",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_record_first17_subgroups.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_record_first17_subgroups.log",
+      "log_sha256": "199ba496f288116d36c62f29346d4fbf0bd75745a1c893abfcbdaa4c6d5b1033",
+      "name": "test_record_first17_subgroups",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_record_height_lattice_comparison.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_record_height_lattice_comparison.log",
+      "log_sha256": "1e43b905e11ca028139fe5078016515111aaf7cebf8d6a3e224b7d03b9cb6ac9",
+      "name": "test_record_height_lattice_comparison",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_record_rank29.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_record_rank29.log",
+      "log_sha256": "0d5f19ead2bf9676d74342ac6c647b4bf2294bed713605930a76f4b7d5b1c878",
+      "name": "test_record_rank29",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_residual_selmer_quotient.py"
+      ],
+      "elapsed_seconds": 0.164,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_residual_selmer_quotient.log",
+      "log_sha256": "341bc60f1be57a47ea74e78acaa8598a0ec6b428bcc7139169c96d9b0a791e82",
+      "name": "test_residual_selmer_quotient",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_search_extra_points.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_search_extra_points.log",
+      "log_sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0",
+      "name": "test_search_extra_points",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_search_fermigier_bidegree21_nonlinear_points.py"
+      ],
+      "elapsed_seconds": 0.365,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_search_fermigier_bidegree21_nonlinear_points.log",
+      "log_sha256": "6273232de4d3ef7acd4ecafa5c86beeeb974f56586b21089a2990b3f72facbe6",
+      "name": "test_search_fermigier_bidegree21_nonlinear_points",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_search_fermigier_exceptional_pair_simultaneous_h200000.py"
+      ],
+      "elapsed_seconds": 0.816,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_search_fermigier_exceptional_pair_simultaneous_h200000.log",
+      "log_sha256": "77f6d77caac6c94463aabaf5e81622722061e9f7df081f213c2ce2c74ccb6591",
+      "name": "test_search_fermigier_exceptional_pair_simultaneous_h200000",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_search_fermigier_high_power_crt_gauss.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_search_fermigier_high_power_crt_gauss.log",
+      "log_sha256": "6273232de4d3ef7acd4ecafa5c86beeeb974f56586b21089a2990b3f72facbe6",
+      "name": "test_search_fermigier_high_power_crt_gauss",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_search_fermigier_rank20_direction.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_search_fermigier_rank20_direction.log",
+      "log_sha256": "f2f3173f355f5e29c896e329f06c69e876245f3e28b0f8bac9921860dea523be",
+      "name": "test_search_fermigier_rank20_direction",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_search_fermigier_rank22_accidental_slices.py"
+      ],
+      "elapsed_seconds": 2.069,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_search_fermigier_rank22_accidental_slices.log",
+      "log_sha256": "253252fd73b97dec1922c17d1a5cafed3ee21fa840b7d598b05a4330a25f961c",
+      "name": "test_search_fermigier_rank22_accidental_slices",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_structural_search_groundwork.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_structural_search_groundwork.log",
+      "log_sha256": "b95b5805bef96b568b1b2424b637003cd6f306e6312d682e4f2e4e23f635b26a",
+      "name": "test_structural_search_groundwork",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "tests-5",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_verify_fermigier_rank22_points.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_verify_fermigier_rank22_points.log",
+      "log_sha256": "239573c1665ba0d20880d981ec7058ee3d44a42932e841724fdcee3ca672055d",
+      "name": "test_verify_fermigier_rank22_points",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 8
+    },
+    {
+      "batch": "certificates",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/scripts/verify_family_data.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/verify_family_data.log",
+      "log_sha256": "1a63b055b422aec1cc7a2ce68b50ad67d5404e9a11ed1deadc69adcbf8512c6a",
+      "name": "verify_family_data",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "certificates",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/scripts/verify_benchmarks.py"
+      ],
+      "elapsed_seconds": 0.766,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/verify_benchmarks.log",
+      "log_sha256": "6f614b58a4e14fa08930e2187e2b619df8e47d04ef25ffe1ebe1e9c7a33ceb1b",
+      "name": "verify_benchmarks",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "certificates",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/scripts/verify_fermigier_rank_certificates.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/verify_fermigier_rank_certificates.log",
+      "log_sha256": "ad9d8121f1a72face5e6680e1bba53846e5b789e3826a64df0d38ce20ebc6eb3",
+      "name": "verify_fermigier_rank_certificates",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "certificates",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/scripts/verify_fermigier_rank20_near_miss.py"
+      ],
+      "elapsed_seconds": 0.415,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/verify_fermigier_rank20_near_miss.log",
+      "log_sha256": "3a341e1713901b1fa3ee11d97fb6366b1ff308be8444ead9eb4ed29f6989c0c8",
+      "name": "verify_fermigier_rank20_near_miss",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "certificates",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/scripts/verify_crt_lattice_calibration.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/verify_crt_lattice_calibration.log",
+      "log_sha256": "7b0a6b281b3f5055935226d11084a355e34627a1fe3ff9d7596578056c6de2fc",
+      "name": "verify_crt_lattice_calibration",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "certificates",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/scripts/verify_fermigier_crt_seed.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/verify_fermigier_crt_seed.log",
+      "log_sha256": "1870e98ebbf8ab371162bba735a9a864799a7c59c4749b5a9d68dfcb418dd855",
+      "name": "verify_fermigier_crt_seed",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "certificates",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/scripts/verify_kihara_rank14.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/verify_kihara_rank14.log",
+      "log_sha256": "1f7695db5c7d8ee6ef9dffb0d54b492c9e1dbe3a925800fda00271ef69a1fe6d",
+      "name": "verify_kihara_rank14",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "certificates",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/scripts/verify_e29_independence.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/verify_e29_independence.log",
+      "log_sha256": "a0ec154d153241380a61b1f3f9fb9af66d7677bcd49d12501bee38890d3e249e",
+      "name": "verify_e29_independence",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "certificates",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/cas/verify_icarm_curve356_rank29.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/curve356-replay.log",
+      "log_sha256": "cc76ac16043844d0adf9f54cebaf14b26d9535a30811b77eabc4c12936083fd1",
+      "name": "curve356-replay",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 15
+    },
+    {
+      "batch": "certificates",
+      "command": [
+        ".venv/bin/python",
+        "-c",
+        "from verify_nagao_section7_picard_bound import verify_picard_bound; r=verify_picard_bound(); print(r[\"proved_arithmetic_generic_rank_over_Q_of_T\"])"
+      ],
+      "elapsed_seconds": 0.365,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/nagao-picard-full.log",
+      "log_sha256": "a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164",
+      "name": "nagao-picard-full",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 15
+    },
+    {
+      "batch": "certificates",
+      "command": [
+        ".venv/bin/python",
+        "-c",
+        "from verify_fermigier_generic_rank_exact import verify_generic_rank; r=verify_generic_rank(); print(r[\"theorem\"])"
+      ],
+      "elapsed_seconds": 1.718,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/fermigier-picard-full.log",
+      "log_sha256": "33f1886ca97c1d493d956dbf86e0e6c307092ac28001c24a7269f179e0c784f4",
+      "name": "fermigier-picard-full",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 15
+    },
+    {
+      "batch": "final",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_external_audit_regressions.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_external_audit_regressions-final.log",
+      "log_sha256": "905902617c60602bae1910dc6f7002c29b94acb657a728b3859a00f439378ec5",
+      "name": "test_external_audit_regressions-final",
+      "returncode": 1,
+      "status": "FAIL",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "final",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fermigier_covariants.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fermigier_covariants-final.log",
+      "log_sha256": "3b276704f3e563f93455088f7ce46c6323f4b89f61012ff8ddd99bba729ec60f",
+      "name": "test_fermigier_covariants-final",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "final",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_mw17_jump_v2_zero_gain_rescue.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_mw17_jump_v2_zero_gain_rescue-final.log",
+      "log_sha256": "3f25b663ad8c90e709edf5bed274f3ed61631a86e51b12c3313b2709e0f9cc0c",
+      "name": "test_mw17_jump_v2_zero_gain_rescue-final",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "final",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_residual_selmer_quotient.py"
+      ],
+      "elapsed_seconds": 0.164,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_residual_selmer_quotient-final.log",
+      "log_sha256": "341bc60f1be57a47ea74e78acaa8598a0ec6b428bcc7139169c96d9b0a791e82",
+      "name": "test_residual_selmer_quotient-final",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "final",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_production_search_gates.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_production_search_gates-final.log",
+      "log_sha256": "888a0c0ed615e57d32cf72be501b0c355f33b8613c81dfdaa99db33d7959487e",
+      "name": "test_production_search_gates-final",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "final",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_residual_selmer_gate.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_residual_selmer_gate-final.log",
+      "log_sha256": "b53b61335ca4d77d039dcd8ebc9b87ab52ae98f80f44b38be5fcc31929537321",
+      "name": "test_elkies_residual_selmer_gate-final",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "final",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_rank_jump_fingerprints.py"
+      ],
+      "elapsed_seconds": 0.115,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_rank_jump_fingerprints-system-python.log",
+      "log_sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0",
+      "name": "test_elkies_rank_jump_fingerprints-system-python",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "final",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fermigier_rank_jump_fingerprints.py"
+      ],
+      "elapsed_seconds": 0.115,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fermigier_rank_jump_fingerprints-system-python.log",
+      "log_sha256": "33060fd73862c5e1af97335504d5b45211fce6d229657f556d8deceeadc52ce4",
+      "name": "test_fermigier_rank_jump_fingerprints-system-python",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "final",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_latent_lattice.py"
+      ],
+      "elapsed_seconds": 0.316,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_latent_lattice-system-python.log",
+      "log_sha256": "6aa2784f8220a70b336ca2f4ea2228c3706cf0ebb8a83c3a6c7ecc24cd008592",
+      "name": "test_latent_lattice-system-python",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "final",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/cas/verify_record_prime_factors.py",
+        "--check"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/record-primes-final.log",
+      "log_sha256": "f14314dee6129b31b4b5f5f4173085513027a1c09a7106ae0206a510fc97a5bf",
+      "name": "record-primes-final",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 20
+    },
+    {
+      "batch": "final",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/cas/check_icarm_curve302_rank31_pinned.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/curve302-final.log",
+      "log_sha256": "e15799cab5c9ae4ef067a06c79aefec723ba255fcd55e8926e29d256d1ff532f",
+      "name": "curve302-final",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 20
+    },
+    {
+      "batch": "final",
+      "command": [
+        "sage",
+        "-python",
+        "elliptic-curves/scripts/verify_icarm_curve273_rank30_sage.py"
+      ],
+      "elapsed_seconds": 3.125,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/curve273-independent-sage.log",
+      "log_sha256": "f6e709b49be1db706a39d8d293999d9023ffec32822c915c1e397c6f492fdd4c",
+      "name": "curve273-independent-sage",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 25
+    },
+    {
+      "batch": "final",
+      "command": [
+        "sage",
+        "-python",
+        "elliptic-curves/cas/newfamily/verify_hidden_sections.py"
+      ],
+      "elapsed_seconds": 0.565,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/newfamily-sections.log",
+      "log_sha256": "9b7d99a1045a84649d772df125ccb7e3735ab3949d3c20e7e0a41f9fd648688b",
+      "name": "newfamily-sections",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 20
+    },
+    {
+      "batch": "final",
+      "command": [
+        "sage",
+        "-python",
+        "elliptic-curves/cas/newfamily/certify_rank_t83_6.py",
+        "--efforts",
+        "0",
+        "--output",
+        "artifacts/local/elliptic-curves/external-audit-2026-09-04/newfamily-rank14.json"
+      ],
+      "elapsed_seconds": 5.428,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/newfamily-exact-rank14.log",
+      "log_sha256": "c474fb2e414e12433e8d2d1245248933e8410c441970f2756e2c03ee0a404529",
+      "name": "newfamily-exact-rank14",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 25
+    },
+    {
+      "batch": "repairs",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_external_audit_regressions.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_external_audit_regressions-fixed.log",
+      "log_sha256": "feabb4add9e2ca3374e538560634d1ec97dc4f4ce89aab12f3d726e36ea9b2f6",
+      "name": "test_external_audit_regressions-fixed",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "repairs",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_residual_selmer_gate.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_residual_selmer_gate-fixed.log",
+      "log_sha256": "b53b61335ca4d77d039dcd8ebc9b87ab52ae98f80f44b38be5fcc31929537321",
+      "name": "test_elkies_residual_selmer_gate-fixed",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "repairs",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_elkies_rank_jump_fingerprints.py"
+      ],
+      "elapsed_seconds": 0.114,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_elkies_rank_jump_fingerprints-fixed.log",
+      "log_sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0",
+      "name": "test_elkies_rank_jump_fingerprints-fixed",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "repairs",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_fermigier_rank_jump_fingerprints.py"
+      ],
+      "elapsed_seconds": 0.164,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_fermigier_rank_jump_fingerprints-fixed.log",
+      "log_sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0",
+      "name": "test_fermigier_rank_jump_fingerprints-fixed",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "repairs",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "elliptic-curves/tests/test_latent_lattice.py"
+      ],
+      "elapsed_seconds": 0.365,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/test_latent_lattice-fixed.log",
+      "log_sha256": "1fd127fe699da1211e3c7c6fab0a2fcd8b8a20a3b006ee2a4af77e6af7da8707",
+      "name": "test_latent_lattice-fixed",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 12
+    },
+    {
+      "batch": "repairs",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/scripts/verify_pinned_nagao_lower_bounds.py"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/nagao-pinned-lower-bounds.log",
+      "log_sha256": "06551483c194332d5ce5478426c53160abc602ee4b939070ea4af2cf9e58de46",
+      "name": "nagao-pinned-lower-bounds",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 10
+    },
+    {
+      "batch": "repairs",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/cas/analyze_icarm_7fff_zip_sequence.py",
+        "--check"
+      ],
+      "elapsed_seconds": 1.066,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/icarm285-286-replay.log",
+      "log_sha256": "47fa8af7d25afec9647bd14d48c9f79ad2b50419b6274d717c86aa12e8660d6e",
+      "name": "icarm285-286-replay",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 20
+    },
+    {
+      "batch": "repairs",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/cas/verify_icarm_curve394_rank21.py",
+        "--check"
+      ],
+      "elapsed_seconds": 0.515,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/icarm394-replay.log",
+      "log_sha256": "95f02acf8fb71f02a7170a48e35d37302f4fa65580c610874a424ec1f63dabf3",
+      "name": "icarm394-replay",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 20
+    },
+    {
+      "batch": "repairs",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/cas/verify_mestre_rank13_02393128133175.py"
+      ],
+      "elapsed_seconds": 0.866,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/mestre-rank13-replay.log",
+      "log_sha256": "1a8fa8137c603a80279e89421e428a35a432ec2b1d5f6643b5c236de657a7619",
+      "name": "mestre-rank13-replay",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 15
+    },
+    {
+      "batch": "repairs",
+      "command": [
+        ".venv/bin/python",
+        "elliptic-curves/cas/verify_mestre_dsquare_four_u197.py",
+        "--pari-timeout",
+        "10"
+      ],
+      "elapsed_seconds": 0.465,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/mestre-rank17-replay.log",
+      "log_sha256": "13b0fc5d803dac968dfb001e7ca6b9717bfa3e7913b042566ca9954f2672cff0",
+      "name": "mestre-rank17-replay",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 15
+    },
+    {
+      "batch": "repairs",
+      "command": [
+        ".venv/bin/python",
+        "-c",
+        "import verify_fermigier_rank22_points as m; assert all(m.curve_residual(p)==0 for p in m.PUBLISHED_POINTS); c=m.exact_independence_certificate(); assert c[\"certified_algebraic_rank_lower_bound\"]==22; print(\"PASS 22 exact points and finite-reduction independence\")"
+      ],
+      "elapsed_seconds": 0.064,
+      "log": "artifacts/local/elliptic-curves/external-audit-2026-09-04/fermigier-rank22-exact.log",
+      "log_sha256": "41206bd4b63c040e3c92b57327ca87839ced859377a72a5f6946fa644a4eab44",
+      "name": "fermigier-rank22-exact",
+      "returncode": 0,
+      "status": "PASS",
+      "timeout_seconds": 10
+    }
+  ],
+  "post_audit_checks": {
+    "active_python_files_parsed": 475,
+    "all_517_historical_archive_hashes_match": true,
+    "all_52_snapshot_hashes_match": true,
+    "fermigier_mathematical_payload_comparison": "PASS every key returned by verify_generic_rank equals historical artifact",
+    "historical_archive_policy_failure": "different active test_rank_jump_benchmark.py restored at original path",
+    "missing_links": [],
+    "new_and_record_document_links_checked": 22,
+    "preserved_source_input_count": 2,
+    "python_parse_errors": [],
+    "status_validation": "PASS scripts/audit_status.py"
+  },
+  "report": "elliptic-curves/notes/EXTERNAL_AUDIT_2026-09-04.md",
+  "report_sha256": "a66605b10d3c66d375c2051cf1b5aa9d12856690bcad19b9a41d54d179ec50a7",
+  "schema": "elliptic-curves.external-audit.v1",
+  "scope": {
+    "depth": "central arguments and algorithms reviewed; archived and expensive routes inventoried and triaged; selected arithmetic replays",
+    "directly_associated_status_entries": 70,
+    "initial_inventory_files": 1411,
+    "initial_worktree": "pre-existing modified and untracked files; not a clean release"
+  },
+  "started_local_date": "2026-09-04",
+  "tests": {
+    "final_module_outcomes": {
+      "FAIL": 1,
+      "PASS": 113,
+      "TIMEOUT_NOT_REPLAYED": 1
+    },
+    "individual_tests_in_passing_modules": 615,
+    "modules": [
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_alternate_quartic_covers.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "2d014bb427120fb1a5014d7499096989061fd0fdf40acb471c2e2667de60e71e",
+        "name": "test_alternate_quartic_covers",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_analyze_fermigier_bidegree21_all80.py"
+        ],
+        "elapsed_seconds": 1.868,
+        "log_sha256": "c18eec91d18d20c5d6273ea993f5a7c79aee453bc672073eb6e5627e182f9384",
+        "name": "test_analyze_fermigier_bidegree21_all80",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_analyze_fermigier_bidegree21_pilot.py"
+        ],
+        "elapsed_seconds": 0.315,
+        "log_sha256": "fe9545370a9b2071cfa9a14d724789faf26e3015146b01c0ec056023c648c95b",
+        "name": "test_analyze_fermigier_bidegree21_pilot",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_analyze_fermigier_exceptional_transport.py"
+        ],
+        "elapsed_seconds": 0.214,
+        "log_sha256": "6273232de4d3ef7acd4ecafa5c86beeeb974f56586b21089a2990b3f72facbe6",
+        "name": "test_analyze_fermigier_exceptional_transport",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_build_q12o5867_bnf_free_signature.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "a6707d4eff38012da33ddc34bc6dc076a3b17151cfc9aef223c8790cbe64c3da",
+        "name": "test_build_q12o5867_bnf_free_signature",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_certify_nagao_rank17_frontier.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "473fbc0ef3b0966f5f5e134e01ed79ab298feb969d9a259ec8090cf003b637b3",
+        "name": "test_certify_nagao_rank17_frontier",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_certify_nagao_rank20_t5081.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "ce155d9697089f241dcde88726f33980547fde850204098b7080f77732dcf5f8",
+        "name": "test_certify_nagao_rank20_t5081",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_conductor_first_near_miss_descent.py"
+        ],
+        "elapsed_seconds": 0.866,
+        "log_sha256": "3aac186fe80b9c97e4d734e8cc8ff6eab6fe5efda219a9a4017db1b6cc9bd485",
+        "name": "test_conductor_first_near_miss_descent",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_conductor_parameter_recovery.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "7b86291b37cb634af5195202c0758a163d4a9c13965b0604b083e8d0d77f781a",
+        "name": "test_conductor_parameter_recovery",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_crt_lattice.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "7f4011ba07a8ab9e579dc80d5864b3d38b63943d488aaf4c8a11b728524201d0",
+        "name": "test_crt_lattice",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_curve385_height_compression_pilot.py"
+        ],
+        "elapsed_seconds": 0.164,
+        "log_sha256": "2ac3d3a59044238aedfa9953328bdc4aa82ab4003d939fa8621c26bda967731f",
+        "name": "test_curve385_height_compression_pilot",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_curve385_iterated_half_lattice_search.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "41cee9cc70f8e2902ff4277cf9577cbdf05c130cf7652490990fd48efa2e4859",
+        "name": "test_curve385_iterated_half_lattice_search",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_curve385_sparse_quotient_rank32.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "65378dcad145da2497120819bebfc3c46534dce9714ce064b3d809a56654aca2",
+        "name": "test_curve385_sparse_quotient_rank32",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_curve385_sparse_quotient_rank32_primary.py"
+        ],
+        "elapsed_seconds": 0.365,
+        "log_sha256": "82843543658fb075cb5785a6ea089fc8c098633b6ffab74f1cf2038841f48506",
+        "name": "test_curve385_sparse_quotient_rank32_primary",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_curve385_sparse_restart_budget.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "65378dcad145da2497120819bebfc3c46534dce9714ce064b3d809a56654aca2",
+        "name": "test_curve385_sparse_restart_budget",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_curve398_mw16_adaptive_half_lattice.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "8750d4b5acdce1e4d680a3a27eb5d68370ed8b7d37b619aa32e9e0049f881dae",
+        "name": "test_curve398_mw16_adaptive_half_lattice",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_curve398_two_parent_collision.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "f96363f8d8dff4c4abed7197c63606ead0bd955ea4259bdcb5fb6f47dbe53992",
+        "name": "test_curve398_two_parent_collision",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_ek_k3.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "55df81c03b1fc09a739803668e8b10b1a1cd87ac7e716666dddb1c968f87bb76",
+        "name": "test_ek_k3",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_bisection_specialization_controls.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "199ba496f288116d36c62f29346d4fbf0bd75745a1c893abfcbdaa4c6d5b1033",
+        "name": "test_elkies_bisection_specialization_controls",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_bisection_visibility_record_curves.py"
+        ],
+        "elapsed_seconds": 1.667,
+        "log_sha256": "936db899c2f60dd8cec5fbe7a1a264ad7af7f19a924e73c79858bc55fc463483",
+        "name": "test_elkies_bisection_visibility_record_curves",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_klagsbrun_rank29.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "0292b91377e3f5de5fc72b83a91ddacbecbc2c226b761793f9b4babe85f7ad63",
+        "name": "test_elkies_klagsbrun_rank29",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_known_kummer_quotients.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "ba8dd02bb7437942124041e01665b154f224dfbcb0a07cdebc0a6802f7ac9c74",
+        "name": "test_elkies_known_kummer_quotients",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_pari219_bnf_benchmark.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0",
+        "name": "test_elkies_pari219_bnf_benchmark",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_pari219_selmer_from_bnf.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "feabb4add9e2ca3374e538560634d1ec97dc4f4ce89aab12f3d726e36ea9b2f6",
+        "name": "test_elkies_pari219_selmer_from_bnf",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_rank28_local_coverage.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "46f2d84bfe093b26b7bcf5ac58897d67f9784fc95a0494869930d59b5496eced",
+        "name": "test_elkies_rank28_local_coverage",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_rank28_relative_descent.py"
+        ],
+        "elapsed_seconds": 0.164,
+        "log_sha256": "8a3e7cf00bf5ccc05e62643ed69dd3d821ab38df0f9d9de0e6a7fc7fb2cd8f82",
+        "name": "test_elkies_rank28_relative_descent",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_rank28_s_class_pari.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "16c36ae176c8925dc74efb6008909bd46a5d866707ff3ce79ef4d1d60d412ede",
+        "name": "test_elkies_rank28_s_class_pari",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_rank_jump_fingerprints.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0",
+        "name": "test_elkies_rank_jump_fingerprints",
+        "status": "PASS",
+        "timeout_seconds": 12
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "484819fc6115ded4f95980c301dc1cb3bd42b75d97061c070633332d47142c79",
+        "name": "test_elkies_relative_2selmer_checkpointed",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_relative_2selmer_open.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "e6ec182765cd965f2837d8eeaef5a64af48a104f245cd1a0b7281559194c57c1",
+        "name": "test_elkies_relative_2selmer_open",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_relative_2selmer_suite.py"
+        ],
+        "elapsed_seconds": 0.164,
+        "log_sha256": "0172b913bb04c60e06b0b7a80e223a2bbe71499bd86405c2a58af2957ac700e9",
+        "name": "test_elkies_relative_2selmer_suite",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_elkies_residual_selmer_gate.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "b53b61335ca4d77d039dcd8ebc9b87ab52ae98f80f44b38be5fcc31929537321",
+        "name": "test_elkies_residual_selmer_gate",
+        "status": "PASS",
+        "timeout_seconds": 12
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_exceptional_branch_code.py"
+        ],
+        "elapsed_seconds": 0.465,
+        "log_sha256": "a11a1237c8ea6a213866d783c6f5164de18766b1752bdabf6715b9c4b389a6b9",
+        "name": "test_exceptional_branch_code",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_external_audit_regressions.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "feabb4add9e2ca3374e538560634d1ec97dc4f4ce89aab12f3d726e36ea9b2f6",
+        "name": "test_external_audit_regressions",
+        "status": "PASS",
+        "timeout_seconds": 12
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_family_discovery.py"
+        ],
+        "elapsed_seconds": 0.565,
+        "log_sha256": "adeed83cfaace7313c6dcadf9d93e9ad0e646280b6b9625708c358853447b60c",
+        "name": "test_family_discovery",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_fermigier_baseline_evaluation.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "33060fd73862c5e1af97335504d5b45211fce6d229657f556d8deceeadc52ce4",
+        "name": "test_fermigier_baseline_evaluation",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_fermigier_covariants.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "3b276704f3e563f93455088f7ce46c6323f4b89f61012ff8ddd99bba729ec60f",
+        "name": "test_fermigier_covariants",
+        "status": "PASS",
+        "timeout_seconds": 12
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_fermigier_exceptional_quotient_ball.py"
+        ],
+        "elapsed_seconds": 0.415,
+        "log_sha256": "e35d7ead78c1c04f7ee18b249fefc09a3b0b8c7d94688d48049c0cb472f0c10e",
+        "name": "test_fermigier_exceptional_quotient_ball",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_fermigier_generic_rank_exact.py"
+        ],
+        "elapsed_seconds": 1.718,
+        "log_sha256": "d8b521e93c6236487cffff6d14794a1c1a28a6cf028b633b04a7242c183edaaf",
+        "name": "test_fermigier_generic_rank_exact",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_fermigier_labelled_corpus.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "feabb4add9e2ca3374e538560634d1ec97dc4f4ce89aab12f3d726e36ea9b2f6",
+        "name": "test_fermigier_labelled_corpus",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_fermigier_mestre.py"
+        ],
+        "elapsed_seconds": 0.264,
+        "log_sha256": "78f7619e49ad7f592104f7ef7b10cc5ca59a379bec305ea9d0ba36dbbd84bc4d",
+        "name": "test_fermigier_mestre",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_fermigier_offset_search.py"
+        ],
+        "elapsed_seconds": 0.164,
+        "log_sha256": "ad1dabaf6fd44b97c2ba48c91cc833bc69a88c2e8baf813908fc24f5d1465527",
+        "name": "test_fermigier_offset_search",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_fermigier_rank20_candidate_record.py"
+        ],
+        "elapsed_seconds": 2.47,
+        "log_sha256": "b41e732442fece0d6c1f304f289fb1008a9cbde161c152586e178b19c4c173fd",
+        "name": "test_fermigier_rank20_candidate_record",
+        "status": "FAIL",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_fermigier_rank_jump_fingerprints.py"
+        ],
+        "elapsed_seconds": 0.164,
+        "log_sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0",
+        "name": "test_fermigier_rank_jump_fingerprints",
+        "status": "PASS",
+        "timeout_seconds": 12
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_fermigier_score_sweep.py"
+        ],
+        "elapsed_seconds": 4.274,
+        "log_sha256": "0832688cb6215c1118d25e5d0de09974b58eadb84df633763e9bb1dab76b469e",
+        "name": "test_fermigier_score_sweep",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_finite_quotient_escape.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "af55efa5c3ceb122f8184c380aa405d3f3b4e7e0c1e892773d0eff31d0645c8a",
+        "name": "test_finite_quotient_escape",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_fixed_cubic_field_curve_family.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "603db52fd0016ca5cdcf83b2588160ae92bde08c66ba4c61dfc8a2a74cdb95c9",
+        "name": "test_fixed_cubic_field_curve_family",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_generate_q12o5867_norm_one_cover_candidates.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "fb184ea57734512b1f088f9181209901b9cd46df3eb7eaa2500ea9e48dde20b5",
+        "name": "test_generate_q12o5867_norm_one_cover_candidates",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_half_lattice_chart_policy.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "888a0c0ed615e57d32cf72be501b0c355f33b8613c81dfdaa99db33d7959487e",
+        "name": "test_half_lattice_chart_policy",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_half_lattice_height_compression.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "8e83c9e30711d3808140522c0a784c32a4a16bd2d9a482bfdc79f43bb50d7c5e",
+        "name": "test_half_lattice_height_compression",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_icarm_curve245_mestre.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "5d8a174d448d59185fd227bcbab9c964e39b10a9c2e28965972cfb0c833dd854",
+        "name": "test_icarm_curve245_mestre",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_icarm_curve245_rank20.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "120fcf1e1b1ef6883b716f1b33b4fbea79c7089f1d1ff950e98c9608d82abb42",
+        "name": "test_icarm_curve245_rank20",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_icarm_curve273_rank30.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "58976e1ebef02b28fad1bcf93e82831c9ac8cc4bf93fac3ea64e4eed88432c50",
+        "name": "test_icarm_curve273_rank30",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_icarm_curve302_point_cloud.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "0f7e4b97443e54aca647179972594d13bb587afcbf151fab8228148587ea844a",
+        "name": "test_icarm_curve302_point_cloud",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_icarm_curve394_rank21.py"
+        ],
+        "elapsed_seconds": 0.515,
+        "log_sha256": "ea4b9722bf3807f5c924bfd2fa1e53e9c86681f396fd7ef98a695ccd4d973f94",
+        "name": "test_icarm_curve394_rank21",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_icarm_curve398_rank30.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "3a315533b81287472852b81ae89b89d0f42abf74b1503c45c2c62712388d3eb1",
+        "name": "test_icarm_curve398_rank30",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_icarm_curve_refresh_overview.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "dcf0a7fc200cab9ab36e5d3037278eb791f53b95cc73af6040c74a0a911416bc",
+        "name": "test_icarm_curve_refresh_overview",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_icarm_mw16_parent_ladder.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "13b96ed43ad62b23c6812e318f100b156de88f41891dfeb3b15c976596356e17",
+        "name": "test_icarm_mw16_parent_ladder",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_icarm_norm8_low_root_atlas.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "98255317dbdec068621cfd1c730ebd962e38b6f8c534b73c2b3cbfc806ea738c",
+        "name": "test_icarm_norm8_low_root_atlas",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_kihara.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "27c4a39d34ece4cbc66cc59cb0870c7abe4cc0a5f009205bdd0ea06a93f8b3ac",
+        "name": "test_kihara",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_latent_lattice.py"
+        ],
+        "elapsed_seconds": 0.365,
+        "log_sha256": "1fd127fe699da1211e3c7c6fab0a2fcd8b8a20a3b006ee2a4af77e6af7da8707",
+        "name": "test_latent_lattice",
+        "status": "PASS",
+        "timeout_seconds": 12
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_local_condition_discovery.py"
+        ],
+        "elapsed_seconds": 0.265,
+        "log_sha256": "583e2621f8c4ced08d26f83058529458e06740a6f0a6d83ecd40f57d485851e3",
+        "name": "test_local_condition_discovery",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_mestre_diameter235_eight_companion.py"
+        ],
+        "elapsed_seconds": 4.875,
+        "log_sha256": "aea831eeabfd1b7156825da489be6a57e1da0e55409b6f4d8a95c7bcba54d8e5",
+        "name": "test_mestre_diameter235_eight_companion",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_mestre_diameter235_eight_companion_component.py"
+        ],
+        "elapsed_seconds": 5.927,
+        "log_sha256": "49f937988c22ee6c6d45291de10ecd79edd191d246d4b0e0619b89d53ecc70ad",
+        "name": "test_mestre_diameter235_eight_companion_component",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_mestre_dsquare_all_companion_relations.py"
+        ],
+        "elapsed_seconds": 1.517,
+        "log_sha256": "16fe185ab8a057a7f7289db387eece267cc43fba3f7fb68f97d66056b39fa91d",
+        "name": "test_mestre_dsquare_all_companion_relations",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_mestre_dsquare_four.py"
+        ],
+        "elapsed_seconds": 0.966,
+        "log_sha256": "881846b804438ea531f4eb01ce28138e27b2aa26857d276f0097423aba84b4de",
+        "name": "test_mestre_dsquare_four",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_mestre_fermigier_two_section_generic_rank13.py"
+        ],
+        "elapsed_seconds": 0.465,
+        "log_sha256": "241c48bd41702d54a8a6af9616425cb9a740039fcb4b758e5ecd14bfd119fcdc",
+        "name": "test_mestre_fermigier_two_section_generic_rank13",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_mestre_rank13_02393128133175.py"
+        ],
+        "elapsed_seconds": 1.117,
+        "log_sha256": "c224bb9e06b938adb1520c84713b51d81032c75e856bb8162d64b182c0a875e5",
+        "name": "test_mestre_rank13_02393128133175",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_mod_l_reduction_independence.py"
+        ],
+        "elapsed_seconds": 0.264,
+        "log_sha256": "7cd2cd1fd14ce1c9a1c08446e62988a98d1010d78eaad801e7913423300ff26e",
+        "name": "test_mod_l_reduction_independence",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_multiple_root_lifting.py"
+        ],
+        "elapsed_seconds": 0.315,
+        "log_sha256": "687b6fdb56aead5b237e29db3503951899c673368c6a4968b7d9cbccd410bb8c",
+        "name": "test_multiple_root_lifting",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_mw17_jump_v2.py"
+        ],
+        "elapsed_seconds": 1.418,
+        "log_sha256": "f2410bcdbc895bc880485878fd962948c341dbb19c6f54a61e8b491d8c85b032",
+        "name": "test_mw17_jump_v2",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_mw17_jump_v2_zero_gain_rescue.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "3f25b663ad8c90e709edf5bed274f3ed61631a86e51b12c3313b2709e0f9cc0c",
+        "name": "test_mw17_jump_v2_zero_gain_rescue",
+        "status": "PASS",
+        "timeout_seconds": 12
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_nagao_1994.py"
+        ],
+        "elapsed_seconds": 0.214,
+        "log_sha256": "81f560108a3049945e6edf426af469af6fef7ff61f032bcf3318f39c251696a8",
+        "name": "test_nagao_1994",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_nagao_linear_sections.py"
+        ],
+        "elapsed_seconds": 0.165,
+        "log_sha256": "7ec214accb43560883c6218248c2dd001c31f179456976750910fa1e53c5640e",
+        "name": "test_nagao_linear_sections",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_nagao_section7_linear_sections.py"
+        ],
+        "elapsed_seconds": 8.007,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "name": "test_nagao_section7_linear_sections",
+        "status": "TIMEOUT_NOT_REPLAYED",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_nagao_section7_picard_bound.py"
+        ],
+        "elapsed_seconds": 0.365,
+        "log_sha256": "43199d6b39cea40787c8796a832910aa8ab6d07dc9830f8c2bc4dd59d8c36db3",
+        "name": "test_nagao_section7_picard_bound",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_nagao_section7_rank_jump.py"
+        ],
+        "elapsed_seconds": 0.032,
+        "log_sha256": "a6707d4eff38012da33ddc34bc6dc076a3b17151cfc9aef223c8790cbe64c3da",
+        "name": "test_nagao_section7_rank_jump",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_overcomplete_quotient_bank.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "6f283ee6225d2cef4c0127d95456a6f954c45141c92b97dd89016cb1c630e8f4",
+        "name": "test_overcomplete_quotient_bank",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_probe_q12o5867_pari_two_cover.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "ad61be9b74efb8a4b8ae7d0427622d79c722d44dc55c2f4aeb51140568dfc278",
+        "name": "test_probe_q12o5867_pari_two_cover",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_production_search_gates.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "888a0c0ed615e57d32cf72be501b0c355f33b8613c81dfdaa99db33d7959487e",
+        "name": "test_production_search_gates",
+        "status": "PASS",
+        "timeout_seconds": 12
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_q12o5867_descent_first_entrypoints.py"
+        ],
+        "elapsed_seconds": 0.264,
+        "log_sha256": "78059762c12bf318098ce706c2ad45a2b9eee935895794188b4961b42af9d0b7",
+        "name": "test_q12o5867_descent_first_entrypoints",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_q12o5867_point_search.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "56e03afda220e7ba78bbcecf9a2e53a0149cfc3e311fa10bbd01b25e8e5ba671",
+        "name": "test_q12o5867_point_search",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_q12o5867_rank_jump_registry.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "feabb4add9e2ca3374e538560634d1ec97dc4f4ce89aab12f3d726e36ea9b2f6",
+        "name": "test_q12o5867_rank_jump_registry",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_q12o5867_slope_slices.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "33060fd73862c5e1af97335504d5b45211fce6d229657f556d8deceeadc52ce4",
+        "name": "test_q12o5867_slope_slices",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_q12o5867_specialization.py"
+        ],
+        "elapsed_seconds": 0.164,
+        "log_sha256": "debd07481818cb7243f7fa8ffbe3c757ea29c856d11f4e547c63fc96d8485ef7",
+        "name": "test_q12o5867_specialization",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_quotient_geometry_table.py"
+        ],
+        "elapsed_seconds": 0.164,
+        "log_sha256": "ddfa74e3436e1c180e0924521a78de04885c5592e5082596cc9c7f5bc6ff16e6",
+        "name": "test_quotient_geometry_table",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_quotient_rank_escape_detector_v2.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "2b8a5c7e7bfdde85bf100dde94d4f0d07df6f886aca0c69849d08d8bb7a0973a",
+        "name": "test_quotient_rank_escape_detector_v2",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_r17_bisection_ranker.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "888a0c0ed615e57d32cf72be501b0c355f33b8613c81dfdaa99db33d7959487e",
+        "name": "test_r17_bisection_ranker",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_r17_experimental_hygiene.py"
+        ],
+        "elapsed_seconds": 1.418,
+        "log_sha256": "e5f7d14833153bdab7c1f45f1af02634f87ea3837bfee2bd213de5d38270ff12",
+        "name": "test_r17_experimental_hygiene",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_r17_extreme_anchored_mw18.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "844ab8106fb700745ba67fd9b602d4b764b294a5ed653eef4aae68c5db751a46",
+        "name": "test_r17_extreme_anchored_mw18",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_r17_kummer_quotient_search.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "75ff54e727b57e4bd7b88956ed0c92c4b9a416e6f0976707e8fb54aa385ac0bd",
+        "name": "test_r17_kummer_quotient_search",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_r17_mw17_only_selmer_replay.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "800346069b7c77896a63bf9caf4716560e8342f5599a74f58ff8b74006e44266",
+        "name": "test_r17_mw17_only_selmer_replay",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_r17_prospective_crt_experiment.py"
+        ],
+        "elapsed_seconds": 2.019,
+        "log_sha256": "463d0f51b22f61f04f483e442ed81960e53347d4b57a4ff923aa140feddbfc89",
+        "name": "test_r17_prospective_crt_experiment",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_r17_prospective_crt_half_lattice_promotion_gate.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "670a39115e7523a8984e4842e16547cb2094b03fad392b037b4b9dc8b2656e62",
+        "name": "test_r17_prospective_crt_half_lattice_promotion_gate",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_r17_prospective_crt_half_lattice_protocol.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "e11bbb630c1a6ea91f4322ac92d7ce2a6c043ad84d3e41ecf0d0f5a73e9c9fd0",
+        "name": "test_r17_prospective_crt_half_lattice_protocol",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_r17_prospective_family_holdout.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "1f11b6e880045ee35de832b81b45d06257342e13b5c79bbf0034379d4ca220b9",
+        "name": "test_r17_prospective_family_holdout",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_r17_refresh_jump_ladder.py"
+        ],
+        "elapsed_seconds": 2.771,
+        "log_sha256": "69aafb5833f5ca8560c7b61a1321d5f2d5ee47207ae417078ae972adf4fe80ad",
+        "name": "test_r17_refresh_jump_ladder",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_r17_residual_selmer_fingerprints.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "37d8a0769d6c800296764c21f8e08feca52d770d400afabe65713604062cf749",
+        "name": "test_r17_residual_selmer_fingerprints",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_r17_small_field_class_quotient_lab.py"
+        ],
+        "elapsed_seconds": 0.668,
+        "log_sha256": "fe9b8512717b56ce07fce18bb2684bfa6c9b0a5790efccf669487131d1acc867",
+        "name": "test_r17_small_field_class_quotient_lab",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_r17_training_data.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "c6b9b1f09add0403cc07e90bfdf272129b1ddfa2f8f7675ea8218862f2516371",
+        "name": "test_r17_training_data",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_rank_certification.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "b29b03a2697317e5be70cdf9183e300a501a69cf666f2c048f47e1af086d26ee",
+        "name": "test_rank_certification",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_rank_jump_benchmark.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "b29b03a2697317e5be70cdf9183e300a501a69cf666f2c048f47e1af086d26ee",
+        "name": "test_rank_jump_benchmark",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_record_f1_class_quotient.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "1f11b6e880045ee35de832b81b45d06257342e13b5c79bbf0034379d4ca220b9",
+        "name": "test_record_f1_class_quotient",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_record_first17_subgroups.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "199ba496f288116d36c62f29346d4fbf0bd75745a1c893abfcbdaa4c6d5b1033",
+        "name": "test_record_first17_subgroups",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_record_height_lattice_comparison.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "1e43b905e11ca028139fe5078016515111aaf7cebf8d6a3e224b7d03b9cb6ac9",
+        "name": "test_record_height_lattice_comparison",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_record_rank29.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "0d5f19ead2bf9676d74342ac6c647b4bf2294bed713605930a76f4b7d5b1c878",
+        "name": "test_record_rank29",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_residual_selmer_quotient.py"
+        ],
+        "elapsed_seconds": 0.164,
+        "log_sha256": "341bc60f1be57a47ea74e78acaa8598a0ec6b428bcc7139169c96d9b0a791e82",
+        "name": "test_residual_selmer_quotient",
+        "status": "PASS",
+        "timeout_seconds": 12
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_search_extra_points.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "921b60a7fd52e978fbb551cacd29df2d6708879400278e1fcc70fceeb0c6f8e0",
+        "name": "test_search_extra_points",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_search_fermigier_bidegree21_nonlinear_points.py"
+        ],
+        "elapsed_seconds": 0.365,
+        "log_sha256": "6273232de4d3ef7acd4ecafa5c86beeeb974f56586b21089a2990b3f72facbe6",
+        "name": "test_search_fermigier_bidegree21_nonlinear_points",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_search_fermigier_exceptional_pair_simultaneous_h200000.py"
+        ],
+        "elapsed_seconds": 0.816,
+        "log_sha256": "77f6d77caac6c94463aabaf5e81622722061e9f7df081f213c2ce2c74ccb6591",
+        "name": "test_search_fermigier_exceptional_pair_simultaneous_h200000",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_search_fermigier_high_power_crt_gauss.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "6273232de4d3ef7acd4ecafa5c86beeeb974f56586b21089a2990b3f72facbe6",
+        "name": "test_search_fermigier_high_power_crt_gauss",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_search_fermigier_rank20_direction.py"
+        ],
+        "elapsed_seconds": 0.114,
+        "log_sha256": "f2f3173f355f5e29c896e329f06c69e876245f3e28b0f8bac9921860dea523be",
+        "name": "test_search_fermigier_rank20_direction",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_search_fermigier_rank22_accidental_slices.py"
+        ],
+        "elapsed_seconds": 2.069,
+        "log_sha256": "253252fd73b97dec1922c17d1a5cafed3ee21fa840b7d598b05a4330a25f961c",
+        "name": "test_search_fermigier_rank22_accidental_slices",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_structural_search_groundwork.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "b95b5805bef96b568b1b2424b637003cd6f306e6312d682e4f2e4e23f635b26a",
+        "name": "test_structural_search_groundwork",
+        "status": "PASS",
+        "timeout_seconds": 8
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "unittest",
+          "elliptic-curves/tests/test_verify_fermigier_rank22_points.py"
+        ],
+        "elapsed_seconds": 0.064,
+        "log_sha256": "239573c1665ba0d20880d981ec7058ee3d44a42932e841724fdcee3ca672055d",
+        "name": "test_verify_fermigier_rank22_points",
+        "status": "PASS",
+        "timeout_seconds": 8
+      }
+    ],
+    "modules_attempted": 115
+  },
+  "timezone": "Europe/Amsterdam",
+  "unresolved_reproducibility": [
+    {
+      "effect": "advertised catalogue audit and make target fail",
+      "finding": "missing active CATALOG.tsv"
+    },
+    {
+      "effect": "byte replay fails; independent Sage arithmetic replay passes",
+      "finding": "curve273 strict producer replay differs at generation.pari_gp"
+    },
+    {
+      "effect": "one module fails under PARI 2.15.4; mathematical near-miss replay passes",
+      "finding": "Fermigier candidate-record version metadata, embedded version output and derived digest differ"
+    },
+    {
+      "effect": "not replayed, not counted as passed",
+      "finding": "test_nagao_section7_linear_sections exceeded eight seconds"
+    },
+    {
+      "effect": "historical hashes match but relocation-only policy fails",
+      "finding": "archive manifest disallows restored active test_rank_jump_benchmark.py"
+    }
+  ]
+}

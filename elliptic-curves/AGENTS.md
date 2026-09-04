@@ -32,7 +32,11 @@ declared limits, checkpoints, and a reproducible certificate plan.
 ## Breakthrough workflow
 
 1. start from [`README.md`](README.md), `../MATH_STATUS.json`, and the canonical curve notes;
-2. require a genuine residual descent/Selmer gate before expensive point search;
+2. keep proof gates separate from search-budget gates: an unconditional
+   certified rank/Selmer upper bound below the target excludes a fibre, while
+   incomplete or conditional descent data only schedule finite, checkpointed
+   search; a certified independent point subgroup proves its lower bound
+   without waiting for descent;
 3. use curve 398's duplicate survivor pair only as a mandatory
    `PGL2`/Weierstrass deduplication regression; run the A1/MW16 parameter
    experiment on one representative and do not put its known target or any
@@ -44,6 +48,8 @@ declared limits, checkpoints, and a reproducible certificate plan.
 ## Evidence discipline
 
 - Exact rank requires matching unconditional lower and upper bounds.
+- Rank lower bounds from exactly verified independent rational points do not
+  require a Selmer upper bound or a completed descent.
 - Conductor means the exact conductor of a global minimal model, not a discriminant radical.
 - Preserve raw search/checkpoint data under ignored local-artifact paths and compact certificates under `../artifacts/generated-results/elliptic-curves/`.
 - Bounded misses remain bounded experiments.

@@ -61,8 +61,8 @@
       0,
       1322860664586240000
     ],
-    "derivation": "For the quartic at literal shift s=2u, the exact binary-quartic invariants satisfy I=101232^4*u^4*c4 and J=2*101232^6*u^6*c6; hence the raw Jacobian discriminant differs by (202464*u)^12 and the canonical discriminant is the primitive polynomial above.",
-    "warning": "the u^12 and 202464^12 factors in the raw quartic-to-Weierstrass conversion are nonminimal coordinate artifacts, not shaping factors"
+    "derivation": "For the quartic at literal shift s=2u, the exact binary-quartic invariants satisfy I=101232^4*u^4*c4 and J=2*101232^6*u^6*c6. For Y^2=X^3-27*I*X-27*J, c4_raw=1296*I, so the raw Jacobian discriminant differs by (607392*u)^12 and the canonical discriminant is the primitive polynomial above.",
+    "warning": "the u^12 and 607392^12 factors in the raw quartic-to-Weierstrass conversion are nonminimal coordinate artifacts, not shaping factors"
   },
   "benchmark_specialization": {
     "adapter_parameter_u": "19754/39",

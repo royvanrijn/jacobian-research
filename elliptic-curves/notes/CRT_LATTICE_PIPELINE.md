@@ -1,6 +1,6 @@
 # Prime-power discriminant engineering by CRT and rational lattices
 
-<!-- status-consumer: EC-CRT-BEAM-NONMONOTONE 5ae7e135da8cc80f -->
+<!-- status-consumer: EC-CRT-BEAM-NONMONOTONE b5bfb5f8d033075c -->
 
 ## Exact local-to-global core
 
@@ -136,8 +136,9 @@ the height penalty.  Scoring must be trained or calibrated on held-out
 specializations; an additive Nagao score is a heuristic ranking, not a rank
 certificate.
 
-Beam survival is not a completeness statement.  Short rational-representative
-height is nonmonotone under incremental CRT: the exact four-prime regression in
+Beam survival is not a completeness statement. The true minimum height is
+nondecreasing along each fixed CRT branch, but different branches can change
+their relative order. The exact four-prime regression in
 [`../tests/test_crt_lattice.py`](../tests/test_crt_lattice.py) gives height
 `1409` for the width-one survivor while a pruned branch completes to `48/53`,
 of height `53`.  Consequently a finite beam may propose and order work, but it

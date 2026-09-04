@@ -108,8 +108,13 @@ The exact `j`-invariant has SHA-256
 ```
 
 The listed discriminant and conductor factorizations multiply back exactly.
-All 26 distinct factors occurring in `c4` or the discriminant also pass
-SymPy's primality checker. The only discriminant valuation at least 12 is
+The historical producer checked all 26 factors with SymPy, whose test above
+`2^64` proves only probable primality. The audit supplement
+[`verify_record_prime_factors.py`](../cas/verify_record_prime_factors.py)
+now proves every factor prime with bounded PARI `isprime` calls; the default
+pinned replay invokes it. Its separate
+[`certificate`](../../artifacts/generated-results/elliptic-curves/record_prime_factor_proofs_20260904.json)
+preserves the original producer and artifact hashes. The only discriminant valuation at least 12 is
 `v_2(Delta)=15`, while `c4` is odd, so the displayed integral equation is
 already globally minimal.
 

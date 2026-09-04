@@ -85,6 +85,25 @@ it records a bounded negative result, a normalization bug, or a useful local mod
 
 ## Current proof and compiler entry points
 
+### Paused R17 rational-quadratic MW20 search
+
+`search_r17_rational_quadratic_twist_nagao.py` and
+`search_r17_rational_quadratic_twist_pgl_nagao.py` are bounded
+**ACTIVE_SEARCH** screens only.  The latter searches all eight exact
+`074d9` lineage coordinates and can anchor a rational cover point above any of
+the five controls.  `analyze_r17_norm12_low_genus_rank3_collisions.py` and
+`search_r17_tracezero_genus5_normalizations_modp.sage` replay the two compact
+exact negative subchart certificates.  `check_r17_mw20_control_transport.py`
+performs the exact rational-square splitting preflight for a future character
+or a stored diagnostic finalist.
+
+The next unrun exact compiler is
+`export_r17_rational_quadratic_tracezero_po0_msolve.sage`, which exports the
+full finite monic-quadratic `P.O=0` coefficient schemes modulo a selected good
+prime.  An exported or solved modular scheme is still not a rank certificate;
+characteristic-zero sections and a height pairing remain mandatory.  See
+[`../R17_RATIONAL_QUADRATIC_MW20_HANDOFF_2026-09-04.md`](../R17_RATIONAL_QUADRATIC_MW20_HANDOFF_2026-09-04.md).
+
 ### Fixed-u marked Q80 third-q12 search
 
 - `certify_q80_fixed_u_marked_third_q12.sage` is the fail-closed
@@ -710,6 +729,16 @@ The current proof boundary and replay commands are in
 
 ### Picard-19 lattice foundry
 
+- `sweep_custom_ns_half_lattice_depths.sage` applies the specialization
+  companion's Corollary S4 to all 136 rootless MW17 frame classes attached to
+  custom labels `NS0002` through `NS0048`.  It visits all 17,825,792 parity
+  classes, recomputes every norm integrally, independently repeats every
+  deepest class and a deterministic stride at 256-bit MPFR precision, and
+  checkpoints per frame.  Exactly one frame, `NS0021/F006`, has
+  `max mu_2=14`; the other 135 have maximum 12.  This is a midpoint-hole and
+  old-lattice exclusion certificate, not a rational marking, point, Selmer,
+  or rank-jump result.
+<!-- status-consumer: EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP 9dc0e4d23f677392 -->
 - `build_rank7_auxiliary_catalogue.sage` is the surface-first merge layer for
   the determinant-banded factory. It imports exact backend records, groups
   first by `(T,NS)`, then by partner auxiliary and frame isometry, retains all
@@ -3818,8 +3847,9 @@ proportions are exactly balanced between arms.  The separate promotion-gate
 builder pins that restriction without changing v3 and fails closed:
 the binary response is permitted only for detector-yield comparison.  A
 rank-32 candidate additionally needs independently validated score--jump
-magnitude and upper-tail behaviour, followed by the existing residual
-2-Selmer gate before expensive search.
+magnitude and upper-tail behaviour.  Residual 2-Selmer is a separate
+exclusion/scheduling input: a certified upper bound below the target vetoes a
+fibre, while incomplete descent does not block a finite production search.
 
 ```bash
 sage -python audit_r17_prospective_crt_local_stability.sage --check
@@ -3875,7 +3905,7 @@ python3 -m unittest \
 
 See
 [`../R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md`](../R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md).
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 eda7a0053b31b7c9 -->
 
 `certify_r17_kummer_classgroup_pressure.sage` uses all certified displayed
 points on controls 351, 356, 376, 377, and 385 to compute their exact
@@ -3898,8 +3928,9 @@ then recomputes every Kummer representative, bad-prime valuation row, and
 integral half-ideal.  All six residual blocks add zero valuation rank modulo
 generic `MW17`; the known half-ideal class-image quotient lower bounds are
 `6,11,3,5,10,11` for curves `351,356,376,377,385,12`.  The strict finite-panel
-ordering is explanatory known-point data, not an exact class-group dimension
-or prospective rank predictor.
+ordering is known-point localization data: it is largely forced by the zero
+valuation-rank increment and does not explain why the rational points occur.
+It is not an exact class-group dimension or prospective rank predictor.
 
 ```bash
 sage -python \
@@ -4111,6 +4142,30 @@ It certifies twelve geometric product-rank-zero targets and five persistent
 degree-two survivors.  See
 [`../R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md`](../R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md).
 
+`certify_r17_product_survivor_galois_height_gate.sage` then factors the
+two-division cubic over each quadratic branch residue field of the five
+survivors and records constructor-height metrics.  The exact result forces
+height-eight rational sections into the direct `P.O=0` box.  For a new good
+prime not present in the frozen campaign audit,
+`audit_r17_product_twist_extra_prime.sage` supplies the independent first two
+moments and `run_r17_product_toric_frobenius_extra_prime.sh` passes them to the
+same complete toric verifier.  The primary replay is:
+
+```bash
+sage -python certify_r17_product_survivor_galois_height_gate.sage --check
+sage -python audit_r17_product_twist_extra_prime.sage \
+  --pair-key 'alternate-orbit-19bad:alternate-orbit-083ad' \
+  --prime 151 --check
+./run_r17_product_toric_frobenius_extra_prime.sh \
+  'alternate-orbit-19bad:alternate-orbit-083ad' 151
+```
+
+The `p=151` quotient again has Tate factor `(Z-1)(Z+1)` and only the geometric
+upper bound `rank<=2`; it is not a section certificate.  The same factor at
+`p=137` on all five survivors has a unique Frobenius-fixed direction and
+therefore sharpens the arithmetic `QQ(u)` upper bound to one.  See
+[`../R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md`](../R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md).
+
 ## Alternate-Q80 rootless equation handoff
 
 `build_q80_alternate_final_divisor_handoff.sage` is the fail-closed
@@ -4235,7 +4290,37 @@ sage -python screen_icarm_fixed_mw15_fibrations.sage --check
 
 See
 [`../ICARM_A1_MW16_ATLAS_2026-09-04.md`](../ICARM_A1_MW16_ATLAS_2026-09-04.md).
-<!-- status-consumer: EC-K3-ICARM-A1-MW16-ATLAS 6cac9b1f5349b6ac -->
+<!-- status-consumer: EC-K3-ICARM-A1-MW16-ATLAS df43ab6cf2f46d4e -->
+
+## Extreme-anchored MW>=18 covers
+
+`certify_r17_extreme_anchored_mw18_covers.sage` transports the complete
+39,120-class rational-bisection frame to the native `07ca9` and `08234`
+equations, certifies every split at the eight refreshed `+10/+11/+12` fibres,
+and proves nonzero anchor classes in the displayed exceptional quotients.  It
+finds eight refreshed anchored covers, all at `+11`; curve 543 has no `+12`
+split in this layer.  The historical rank-28 cover is normalized alongside
+them.  Every cover parameter satisfies `t(0)=t0` and `dt/dr(0)=1`.
+
+`search_r17_extreme_anchored_mw18_nagao.py` performs the bounded conic pullback
+sieve for one exact cover.  The nine uniform `H<=1000` ledgers are compiled by
+`summarize_r17_extreme_anchored_mw18_nagao.py`:
+
+```bash
+sage -python elkies-k3/scripts/certify_r17_extreme_anchored_mw18_covers.sage
+python3 elkies-k3/scripts/search_r17_extreme_anchored_mw18_nagao.py \
+  --curve-id 536 --cover-label 08234-orbit-19188 \
+  --numerator-bound 1000 --denominator-bound 1000 \
+  --height-bucket-width 100 --finalists 100 \
+  --output artifacts/generated-results/elkies-k3-r17-extreme-anchored-mw18-nagao-curve536-orbit19188-h1000-v1.json
+python3 elkies-k3/scripts/summarize_r17_extreme_anchored_mw18_nagao.py --check
+```
+
+The exact compiler proves generic rank at least 18, not exact rank 18.  The
+Nagao output is a heuristic ordering and supplies no finalist rank or
+independence claim.  See
+[`../R17_EXTREME_ANCHORED_MW18_COVERS_2026-09-04.md`](../R17_EXTREME_ANCHORED_MW18_COVERS_2026-09-04.md).
+<!-- status-consumer: EC-K3-R17-EXTREME-ANCHORED-MW18-COVERS 4763babcbf5d923c -->
 
 ## Marked-U realization planner
 

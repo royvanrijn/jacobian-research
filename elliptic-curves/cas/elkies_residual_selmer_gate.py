@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Residual-Selmer policy gates for theorem claims and bounded point searches.
+"""Residual-Selmer proof gates and compatibility bounded-search records.
 
-An exact rank/Selmer claim still requires a complete unconditional descent.
+An exact upper-bound or exact-rank claim still requires a complete
+unconditional descent; a point-based rank lower bound does not.
 Bounded point search uses a weaker monotone policy: every proved residual
 upper bound is accumulated, a candidate is rejected once that bound is below
 the target, and missing class-group/BNF data remain ``no finite bound yet``.
@@ -14,6 +15,7 @@ Selmer parity.
 from __future__ import annotations
 
 import json
+from math import isfinite
 from pathlib import Path
 from typing import Any, Mapping, Sequence
 
@@ -27,7 +29,7 @@ OPEN_STATUS = "OPEN_MONOTONE_RESIDUAL_SELMER_SIEVE"
 
 
 class ResidualSelmerGateError(ValueError):
-    """A purported descent artifact cannot authorize expensive search."""
+    """A purported proof or bounded-search record is malformed."""
 
 
 def pari_ellrank_total_two_selmer_dimension(
@@ -76,9 +78,14 @@ def gate_record(
     """Return the exact residual-dimension rejection decision.
 
     ``total_two_selmer_dimension`` includes rational 2-torsion, as usual for
-    ``Sel_2(E/Q)``.  Quotienting by the known Mordell--Weil image removes only
-    the ``known_generic_rank`` directions; rational 2-torsion is reported and
-    retained unless it is zero.
+    ``Sel_2(E/Q)``. The historical residual field is ``dim Sel_2 - rank(M)``.
+    It is the dimension of the quotient by the known point image only if
+    those points have full-rank Kummer image (for example, by a separate
+    mod-2 independence certificate). Rational independence alone does not
+    establish that premise: the subgroup ``2 E(Q)`` is a counterexample.
+    Without that premise this difference is only a rank-bound allowance.
+    Rational 2-torsion is retained, so the rejection test is conservative
+    when it is nonzero; the sharper total rank bound is ``dim Sel_2 - dim E[2]``.
     """
 
     values = (
@@ -176,6 +183,10 @@ def monotone_sieve_gate_record(
         raise ResidualSelmerGateError("target rank cannot be below the known generic rank")
     if not isinstance(search_limits, Mapping) or not search_limits:
         raise ResidualSelmerGateError("bounded search authorization needs explicit limits")
+    for name, value in search_limits.items():
+        if (isinstance(value, bool) or not isinstance(value, (int, float))
+                or value <= 0 or (isinstance(value, float) and not isfinite(value))):
+            raise ResidualSelmerGateError(f"search limit {name!r} must be finite and positive")
     final_bound = _validate_monotone_stages(stages)
     raw_required = target_rank - known_generic_rank
     required = raw_required
@@ -348,6 +359,8 @@ def require_expensive_search_gate(
                 or not isinstance(declared, (int, float))
                 or requested <= 0
                 or declared <= 0
+                or (isinstance(requested, float) and not isfinite(requested))
+                or (isinstance(declared, float) and not isfinite(declared))
             ):
                 raise ResidualSelmerGateError(
                     f"bounded search limit {name!r} is missing or nonnumeric"

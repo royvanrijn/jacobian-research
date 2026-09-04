@@ -321,11 +321,16 @@ search that accepts only the shortest vector can therefore select precisely
 the value it must reject.  Every candidate is checked for nonzero
 discriminant, and several short vectors should be enumerated.
 
-### Height is not monotone under incremental CRT
+### Greedy branch ordering is not preserved under incremental CRT
 
-The height of the shortest rational representative can fall after another
-congruence is added.  Therefore pruning a partial CRT state solely because its
-current representative is large is unsafe.
+Along a fixed CRT branch, adding a congruence shrinks the set of admissible
+primitive rational representatives. Its true minimum height is therefore
+nondecreasing. Different branches can nevertheless change their relative
+ordering: the currently best branch need not have the best completion.
+Keeping only a fixed number of branches by current height is unsafe as a
+completeness argument. A certified minimum exceeding a fixed final height
+bound would permit pruning; a bounded representative search does not supply
+that lower bound.
 
 **Verified counterexample.**  For residues at primes `19,23,29,37`, a greedy
 width-one path encountered height `1409`, while the complete choice

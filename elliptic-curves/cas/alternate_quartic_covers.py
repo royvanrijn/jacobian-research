@@ -54,8 +54,8 @@ def short_add(
     ):
         raise ValueError("a summand is not on the short curve")
     coefficient_a = Q(coefficients[3])
-    x_left, y_left = left
-    x_right, y_right = right
+    x_left, y_left = map(Q, left)
+    x_right, y_right = map(Q, right)
     if x_left == x_right:
         if y_left == -y_right:
             return None

@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from sage.all import Matrix, QQ, ZZ
+from sage.all import GF, Matrix, QQ, ZZ
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -29,6 +29,8 @@ FEATURE_STATUS = "FROZEN_COMPLETE_UNCONDITIONAL_PRE_SEARCH_FEATURES"
 STATUS = "FROZEN_AFTER_ALL_Q_BEFORE_ANY_POINT_SEARCH"
 DIMENSION = 17
 TOP_COUNT = 43
+FEATURE_INVARIANT_ID = "localized_s_class_group_2_torsion_residual_v1"
+FEATURE_ROW_STATUS = "PASS_COMPLETE_UNCONDITIONAL_LOCALIZED_2_TORSION_QUOTIENT"
 
 
 def digest(path: Path) -> str:
@@ -75,6 +77,8 @@ def build(features_path: Path):
         raise ArithmeticError("a point-search outcome was opened before protocol freeze")
     if features.get("status") != FEATURE_STATUS or not features.get("point_search_unlocked"):
         raise ArithmeticError("all unconditional Q_t features must freeze before detector protocol creation")
+    if features.get("feature_invariant_id") != FEATURE_INVARIANT_ID:
+        raise ArithmeticError("the feature ledger uses the obsolete class quotient")
     if features.get("candidate_list_sha256") != cohort["commitment"]["candidate_list_sha256"]:
         raise ArithmeticError("the feature ledger names another cohort")
     if canonical_hash(features["records"]) != features.get("feature_commitment_sha256"):
@@ -83,11 +87,41 @@ def build(features_path: Path):
         raise ArithmeticError("the feature ledger does not cover the cohort")
     for feature in features["records"]:
         if (
-            feature.get("status") != "PASS_COMPLETE_UNCONDITIONAL_CLASS_QUOTIENT"
+            feature.get("status") != FEATURE_ROW_STATUS
+            or feature.get("invariant_id") != FEATURE_INVARIANT_ID
             or feature.get("dim_Q") is None
             or not feature.get("class_group", {}).get("bnfcertify_passed")
         ):
-            raise ArithmeticError("an incomplete class quotient entered the detector freeze")
+            raise ArithmeticError(
+                "an incomplete or obsolete class quotient entered the detector freeze"
+            )
+        localized = feature.get("localized_class_group", {})
+        dimension = localized.get("dim_2_torsion")
+        generic = feature.get("generic_mw17", {})
+        rows = [
+            record.get("localized_2_torsion_coordinates")
+            for record in generic.get("localized_half_ideal_classes", [])
+        ]
+        if (
+            not isinstance(dimension, int)
+            or len(rows) != DIMENSION
+            or generic.get("point_count") != DIMENSION
+            or any(
+                not isinstance(row, list)
+                or len(row) != dimension
+                or any(bit not in (0, 1) for bit in row)
+                for row in rows
+            )
+        ):
+            raise ArithmeticError("a localized 2-torsion certificate is malformed")
+        rank = int(Matrix(GF(2), rows).rank()) if rows and dimension else 0
+        if (
+            rank != localized.get("generic_image_rank_in_2_torsion")
+            or rank != generic.get("image_rank_in_localized_class_group_2_torsion")
+            or feature["dim_Q"] != dimension - rank
+            or feature["dim_Q"] != localized.get("residual_2_torsion_dimension")
+        ):
+            raise ArithmeticError("the localized residual 2-torsion dimension does not replay")
 
     gram = public_height_gram(target)
     engine = SourceFileLoader("small_field_detector_protocol_engine", str(ENGINE)).load_module()
@@ -190,6 +224,10 @@ def build(features_path: Path):
         },
         "predeclared_analysis": {
             "predictor": "dim_Q",
+            "predictor_definition": (
+                "dim(A_S[2]/<localized generic half-ideal classes>), where "
+                "A_S=Cl(K)/<S>"
+            ),
             "negative_control_predictor": "dim Cl(K)[2] = dim Cl(K)/2Cl(K)",
             "primary_outcome": "integer Stage-A exact certified quotient gain",
             "primary_direction": "larger dim_Q predicts larger gain",
@@ -215,6 +253,7 @@ def build(features_path: Path):
             "The primary experiment tests detector-visible certified gain, not the full unknown Mordell-Weil quotient.",
             "Stage B is conditional and is not an unconditional primary endpoint.",
             "Association does not by itself prove that Q_t is causal.",
+            "The localized A_S[2] feature is not the full-class-group valuation-kernel invariant in the pressure theorem.",
         ],
     }
     return {

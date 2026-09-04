@@ -244,15 +244,19 @@ near the curve-356 parameter.
 From the repository root:
 
 ```bash
+.venv/bin/python elliptic-curves/cas/verify_record_prime_factors.py --check
+
 PYTHONPATH=elliptic-curves/cas \
-  .venv/bin/python elliptic-curves/cas/verify_icarm_curve356_rank29.py \
-  --verify-primality
+  .venv/bin/python elliptic-curves/cas/verify_icarm_curve356_rank29.py
 
 PYTHONPATH=elliptic-curves/cas \
   .venv/bin/python elliptic-curves/cas/analyze_icarm_curve356_lineage.py
 ```
 
-The first command is exact.  The second requires network access to the two
+The first two commands are exact. The supplement proves all listed factors
+with PARI `isprime`; the preserved producer's optional `--verify-primality`
+uses SymPy probable-prime tests for large inputs and is not the proof gate.
+The lineage command requires network access to the two
 hash-pinned ICARM JSON records and PARI/GP; its height comparison is numerical.
 
 ## Public sources

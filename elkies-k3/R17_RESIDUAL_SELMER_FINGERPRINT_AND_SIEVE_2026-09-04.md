@@ -69,7 +69,7 @@ matrix, and the exact-rank question stay `UNKNOWN`.
 
 ## Why the full BNF is the wrong front door
 
-The known points themselves now give an exact explanation for the class-group
+The known points themselves now give an exact localization of the class-group
 wall.  The comparison covers curves 351, 356, 376, 377, and 385 and native
 alternate-Q80 curve 12.  Form the matrix of prime-ideal valuation parities of
 all displayed Kummer classes `4*x(P)-zeta` at every prime above the bad
@@ -103,7 +103,12 @@ ordered as `+5 -> 3`, `+6 -> 5`, `+8 -> 6`, and `+12 -> 10..11`.  The exact
 quotient statement and complete data set are canonical in
 [`R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md`](R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md).
 Because the exceptional points are inputs, this is currently an explanation
-of the class-group wall rather than an out-of-sample rank predictor.
+of the computational class-group wall, not an explanation of why the rational
+points occur or an out-of-sample rank predictor.  The zero incremental
+valuation rank makes the observed lower-bound separation largely formal.  In
+the prospective direction, a large residual Selmer space still combines
+Mordell--Weil and `Sha[2]` contributions; the missing constructive step is to
+put rational points on enough compatible explicit coverings.
 
 The replay additionally constructs for every point the exact integral
 half-ideal

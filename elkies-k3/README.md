@@ -56,8 +56,10 @@ The complementary global class-group comparison is positive: on curves 351,
 block adds zero bad-valuation rank modulo generic `MW17`.  The resulting
 known-point residual 2-class-image lower bounds strictly separate the observed
 jump strata as `+5 -> 3`, `+6 -> 5`, `+8 -> 6`, and `+12 -> 10..11`.
-This explains the full-BNF pressure but is not prospective prediction because
-the exceptional points are inputs.  See
+This localizes the extra Kummer information in genuinely global directions and
+explains the full-BNF pressure; it does not explain why the rational points
+appear, or separate Mordell--Weil directions from `Sha[2]` prospectively,
+because the exceptional points are inputs.  See
 [`R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md`](R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md).
 The follow-on prospective CRT experiment first rejects the original `p^3`
 premise, then freezes locally validated higher-power cylinders and balanced
@@ -77,7 +79,8 @@ complete.  Its binary `jump>=1` endpoint is now explicitly forbidden from
 promoting a rank-32 candidate.  The sealed controls contain only the `+12`
 stratum and score `10,12,3`, so a successor must validate score--jump magnitude
 and a predeclared upper-tail endpoint on an independent multi-stratum panel;
-the residual 2-Selmer gate remains separate.  The same guard treats legacy
+  residual 2-Selmer remains a separate proof/scheduling input rather than a
+  universal point-search prerequisite.  The same guard treats legacy
 half-lattice depth, old-deep-43, and quotient Hamming weight only as
 basis-bound chart-order heuristics: they must be recomputed and revalidated
 after every lattice/basis change, and a chart miss has no absence or Selmer
@@ -98,7 +101,7 @@ not veto and the rule does not transfer without new controls.  It still cannot
 bypass residual Selmer.  The same blind run improves curve 478 to rank at
 least 23.  See
 [`../elliptic-curves/notes/R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md`](../elliptic-curves/notes/R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md).
-<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER b7518cc41268489a -->
+<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER a2d7034fb8977c18 -->
 Detector v2 now freezes a hash-only balanced Stage-1/Stage-2 sample and an
 exact quotient-aware all-place matrix interface, but its two record-control
 descents remain blocked at the cubic `S`-class/unit step.  Stage 1 has not
@@ -110,7 +113,7 @@ uncalibrated; see
 [`R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md`](R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md).
 <!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-LOCAL-STABILITY 0edaaa6f05041634 -->
 <!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-ESCAPE-EXPERIMENT 021a952efb9ea0f4 -->
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 eda7a0053b31b7c9 -->
 
 ### Lane B — record-construction recovery
 
@@ -126,6 +129,18 @@ record-construction work.
   `M30` is `Z^14`.  Use the pair as a fibration-deduplication regression.  A
   redacted search from the first presentation still reconstructs the full
   displayed rank-30 subgroup.
+- **Five-fibration A1/MW16 ladder:** the nine complete-atlas hit labels reduce
+  exactly to five fibrations; the repeated curve-400 and curve-548 labels are
+  base-equivalent just as the curve-398 pair is.  Retain all nine coordinate
+  charts for bounded-height sampling but count only five target-curve
+  observations.  The blind initial/adaptive ladder recovers 54 of the 55
+  demonstrated quotient directions, including a complete curve-400 `+12`.
+  Its first prospective 104-fibre half-lattice attempt is wholly
+  timeout-censored on very large quartics, so exact model/section size
+  reduction precedes any new budget and no candidate reaches residual Selmer.
+  See
+  [`../elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md`](../elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md).
+<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER c5b0b57ee01c5c23 -->
 - **Curve 302 / unknown parent:** recover a family from the complete
   31-point configuration without assuming a `17+14` split, then require exact
   `j`, twist, isomorphism, generic-section transport, and saturation checks.
@@ -225,7 +240,7 @@ and the batch
   norm-eight layer on chart 11952, not for `A2/MW15` or all fibrations.  See
   [`ICARM_A1_MW16_ATLAS_2026-09-04.md`](ICARM_A1_MW16_ATLAS_2026-09-04.md).
   This known-target atlas is calibration and is not an experiment input.
-<!-- status-consumer: EC-K3-ICARM-A1-MW16-ATLAS 6cac9b1f5349b6ac -->
+<!-- status-consumer: EC-K3-ICARM-A1-MW16-ATLAS df43ab6cf2f46d4e -->
 - **Native ICARM calibration:** the original 474-row calibration retains exact
   quotient and visibility data for fifteen of its 69 fibres.  The refreshed
   audit adds exact quotients for sixteen appended fibres: `Z^12` for
@@ -239,6 +254,16 @@ and the batch
 <!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 6b2a0546b65246d5 -->
 <!-- status-consumer: EC-K3-R17-NORM12-HIGHEST-RANK-TRANSPORTS c4c8a81fc735fea2 -->
 <!-- status-consumer: EC-K3-R17-NORM12-PROSPECTIVE-FAMILY-HOLDOUT 8fb7417663ea1d98 -->
+- **Extreme-anchored MW>=18 restart:** complete split tests on the `07ca9`
+  and `08234` smooth rootless rational-bisection frames give eight refreshed
+  covers whose new section is nonzero at a known `+11` fibre: two on curve
+  545, three on 531, two on 534, and one on 536.  Curve 543 supplies no `+12`
+  split in this layer.  Together with the historical rank-28 anchor, a uniform
+  `H<=1000` Nagao triage scores 10,950,912 parameters and retains 178 heuristic
+  survivors; curve 536 / `08234-orbit-19188` leads this bounded ordering.
+  See
+  [`R17_EXTREME_ANCHORED_MW18_COVERS_2026-09-04.md`](R17_EXTREME_ANCHORED_MW18_COVERS_2026-09-04.md).
+<!-- status-consumer: EC-K3-R17-EXTREME-ANCHORED-MW18-COVERS 4763babcbf5d923c -->
 - **Same-curve marked-`U` panel:** 19 new non-native transports complete a
   balanced 24-cell experiment on five fixed curves and all ten alternate-Q80
   charts.  For each curve, the saturated generic subgroup, complete split
@@ -290,14 +315,18 @@ and the batch
   modulo generic `MW17` in every row.  After the norm-positive unit ambiguity,
   the residual 2-class-image lower bounds are `6,11,3,5,10,11`, strictly
   separating the observed `+5,+6,+8,+12` jump strata.  This is a known-point
-  explanatory theorem, not an out-of-sample predictor or Selmer upper bound.
+  localization theorem: the separation is largely the zero valuation-rank
+  identity plus the unit correction.  It is not an explanation for the
+  appearance of rational points, an out-of-sample predictor, or a Selmer upper
+  bound; the constructive gap is rational solubility of compatible explicit
+  coverings.
 <!-- status-consumer: EC-K3-R17-KUMMER-CLASSGROUP-PRESSURE-COMPARISON 74b1dae24470b531 -->
 - **Noncyclic `4A1/MW13` over `QQ`:** the relative-`U` witness with maximal bridge `Z/4+Z/8` now compiles directly from published R17 to an explicit `4 I2 + 16 I1` equation.  Thirteen rational sections form a saturated basis, and the target-free reverse degree-two hop recovers the literal published R17 equation.
 - The alternate pencil has arithmetic generic rank 17 over `QQ`.
 - The historical degree-11511 Q80 transport and million-bit third-`q12` reconstruction are superseded operationally and retained only for provenance.
 - The four published R17 rank-25--28 controls are **not** rational fibres of the alternate chart: their exact alternate `j`-preimage polynomials have no rational roots.  Native calibration is now supplied independently by curve 12 (rank at least 29) and curves 363, 364, 378, and 395 (ranks at least 24--28).
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO 61d8e223f0ef7d0f -->
-- **Alternate arithmetic laboratory:** all 121 inherited quadratic covers and their 7,260 pair products are certified.  The cheapest 1,024 native bisections are compiled exactly; together with the inherited covers they give 1,143 distinct rational conics, pairwise-disjoint branch divisors, and no catalogued three-character `V4` closure.  Exact curve intersections give 10,362 intersection-one pairs in the native prefix and 64 promoted rational genus-one `V4` bases; seventeen of their Jacobians have certified rank one.  Product-character inversion exhausts all 63,917 norm-eight traces and the 49 exact norm-twelve residual parities, with no hit in any of the final 833 trace/target cases.  Complete two-prime degree-46 `H^2` reconstruction now proves geometric product-twist rank zero for twelve of the seventeen selected bases and hence `A^-=Gamma_d=Hhat^(-1)=0` there.  Exactly five products retain Tate degree two at both primes and form the complete descent worklist; this does not prove a section.  At shortlist rank 55 the product is zero while the singleton twists have unconditional geometric rank intervals `[1,2]` and `[1,2]`, not yet exact rank one.
+- **Alternate arithmetic laboratory:** all 121 inherited quadratic covers and their 7,260 pair products are certified.  The cheapest 1,024 native bisections are compiled exactly; together with the inherited covers they give 1,143 distinct rational conics, pairwise-disjoint branch divisors, and no catalogued three-character `V4` closure.  Exact curve intersections give 10,362 intersection-one pairs in the native prefix and 64 promoted rational genus-one `V4` bases; seventeen of their Jacobians have certified rank one.  Product-character inversion exhausts all 63,917 norm-eight traces and the 49 exact norm-twelve residual parities, with no hit in any of the final 833 trace/target cases.  Complete two-prime degree-46 `H^2` reconstruction now proves geometric product-twist rank zero for twelve of the seventeen selected bases and hence `A^-=Gamma_d=Hhat^(-1)=0` there.  Exactly five products retain Tate degree two at both primes and form the complete descent worklist; their unique Frobenius-fixed direction at `p=137` bounds each arithmetic product rank by one, but does not prove a section.  At shortlist rank 55 the product is zero while the singleton twists have unconditional geometric rank intervals `[1,2]` and `[1,2]`, not yet exact rank one.
 <!-- status-consumer: EC-K3-R17-NORM12-11952-RANK55-SINGLETON-FROBENIUS-BOUNDS 163b9ffe20045a08 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION cfb2417a30fab18d -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION 9e1c09d47fcf0bde -->
@@ -327,6 +356,8 @@ and the batch
 - [`DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md`](DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md) — exact `A5` spin actions, stable `X_H(50)`/`X_H(75)` curves, and two rootless-MW17 arithmetic exclusions.
 - [`DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md`](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md) — exact genus-six stable curve, complete fourteen-point genus-two quotient, corrected local-unit audit, a small exact double-cover candidate, and the complete ten-point rational CM locus showing that all eight conditional non-fixed lifts are CM.
 - [`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md) — exact `T`/Clifford pre-screen, full-marking versus coarse-curve boundary, current `1/5/60` possible/excluded/unknown classification, and equation-agent dispatch rule.
+- [`CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md`](CUSTOM_NS_HALF_LATTICE_RANK_JUMP_SWEEP_2026-09-04.md) — complete S4 parity-coset sweep on all 136 rootless MW17 frames attached to the custom NS catalogue; `NS0021/F006` is the unique norm-14 midpoint hole, with arithmetic realization still `UNKNOWN`.
+<!-- status-consumer: EC-K3-CUSTOM-NS-HALF-LATTICE-SWEEP 9dc0e4d23f677392 -->
 - [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — global `T`-first milestone, carrier certificate, and prescribed integral `V4` stretch target.
 - [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md) — Fricke-quotient theorem excluding a full rational NS0024 marking and hence arithmetic NS0024/MW17 over `QQ(t)`.
 - [`NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md`](NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md) — narrower direct degree-475 Inose-source obstruction retained as a supporting corollary.
@@ -365,14 +396,21 @@ and the batch
 - [`R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md`](R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md) — exact character-glue/Kummer quotient, complete zero-class exclusion, class-sliced equations, and the remaining full-lattice/2-Selmer gate.
 - [`R17_ALTERNATE_Q80_PRODUCT_TWIST_RANK_ZERO_2026-09-04.md`](R17_ALTERNATE_Q80_PRODUCT_TWIST_RANK_ZERO_2026-09-04.md) — complete open-source toric Frobenius polynomial at `p=131`, Picard bound `rho<=18`, and geometric rank zero for the shortlist-rank-55 product twist.
 - [`R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md`](R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md) — complete two-prime cohomological triage: twelve geometric rank-zero products and five degree-two Tate survivors.
+- [`R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md`](R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md) — exact component-Galois gate on the five survivors, arithmetic product-rank bound `<=1`, constructor-aware target order, and the independently audited `p=151` persistence of the primary target.
+<!-- status-consumer: EC-K3-R17-PRODUCT-SURVIVOR-GALOIS-HEIGHT-GATE 32b87c35a2573768 -->
 - [`R17_ALTERNATE_Q80_SINGLETON_TWIST_FROBENIUS_BOUNDS_2026-09-04.md`](R17_ALTERNATE_Q80_SINGLETON_TWIST_FROBENIUS_BOUNDS_2026-09-04.md) — unconditional geometric rank intervals `[1,2]` for the two rank-55 singleton blocks.
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO 61d8e223f0ef7d0f -->
 - [`R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md`](R17_NORM12_RATIONAL_NORMALIZATION_BOUNDARY_2026-09-04.md) — complete singular genus-one exclusion on both direct charts and the bounded two-node genus-two miss.
 - [`R17_NORM12_SINGLETON_PO0_TOP200_2026-09-04.md`](R17_NORM12_SINGLETON_PO0_TOP200_2026-09-04.md) — exact bounded two-prime `P.O=0` screens for the 200 highest-ranked direct singleton twists, including all isolated-branch Hensel obstructions and a depth-512 positive control.
 - [`R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md`](R17_ALTERNATE_Q80_ARITHMETIC_RANK_2026-09-03.md) — arithmetic generic rank 17.
 - [`R17_VISIBILITY_COMPLEXITY_2026-09-03.md`](R17_VISIBILITY_COMPLEXITY_2026-09-03.md) — rigid, predeclared-pencil, and post-hoc visibility at the rank-25--28 controls.
+- [`R17_EXTREME_ANCHORED_MW18_COVERS_2026-09-04.md`](R17_EXTREME_ANCHORED_MW18_COVERS_2026-09-04.md) — complete extreme-fibre bisection split census, nine exact anchored covers, and uniform bounded Nagao restart.
+- [`R17_EXTREME_ANCHORED_MW18_CONTINUATION_HANDOFF_2026-09-04.md`](R17_EXTREME_ANCHORED_MW18_CONTINUATION_HANDOFF_2026-09-04.md) — exact rank-at-least-18 certificates for all 178 finalists, partial fail-closed Selmer pilot, and stopped no-cache replay state.
+- [`R17_RATIONAL_QUADRATIC_MW20_SEARCH_2026-09-04.md`](R17_RATIONAL_QUADRATIC_MW20_SEARCH_2026-09-04.md) and [`R17_RATIONAL_QUADRATIC_MW20_HANDOFF_2026-09-04.md`](R17_RATIONAL_QUADRATIC_MW20_HANDOFF_2026-09-04.md) — paused rank-three twist search: bounded eight-chart screens, exact low-genus and native polynomial-x collision gates, five-control transport preflight, and the unrun full `P.O=0` resume point.  The MW20 construction remains `UNKNOWN`.
 - [`J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md`](J2_GEOMETRIC_ACCESSIBILITY_2026-09-03.md) — degree-two accessibility between the two determinant-948 rootless classes.
 - [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md) — canonical proof source for target-directed fibration hopping / integral-rank-transfer machinery.
+- [`SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md`](SPECIALIZATION_QUOTIENT_AND_RANK_JUMP_THEOREMS.md) — canonical arithmetic companion: rank-jump sandwich, quotient height, midpoint decomposition, covering radius, and everywhere-even Kummer/class-group lemma.
+<!-- status-consumer: EC-SPECIALIZATION-QUOTIENT-RANK-JUMP-THEOREMS e68a8f4b00720de3 -->
 - [`LITERATURE_AND_NOVELTY_MAP_2026-09-03.md`](LITERATURE_AND_NOVELTY_MAP_2026-09-03.md) — literature provenance and conservative novelty map.
 - [`INVERSE_ADE_TARGET_PLANNER_2026-09-03.md`](INVERSE_ADE_TARGET_PLANNER_2026-09-03.md) and [`SINGLE_PLANNER_READY_FOUNDRY_ROUTE_2026-09-03.md`](SINGLE_PLANNER_READY_FOUNDRY_ROUTE_2026-09-03.md) — inverse planner and one end-to-end control.
 - [`INVERSE_ADE_ADAPTIVE_BACKEND_2026-09-03.md`](INVERSE_ADE_ADAPTIVE_BACKEND_2026-09-03.md) — target-free expanded/orbit/lazy birth backend, terminal controls, and one new NS0024 rootless completion.
@@ -389,12 +427,11 @@ should not be presented or resourced as peers of the three primary lanes:
 - solve the 34 missing published-R17 rational-visibility directions by a
   target-directed inverse problem, without enumerating the ambient trisection
   or quadrisection cosets;
-- compute the nonzero 2-primary quotient classes for the remaining sixteen
-  alternate-Q80 product twists from a full involution lattice or complete
-  two-Selmer calculation, or extend the complete degree-28 toric Frobenius
-  route; shortlist rank 55 is now geometrically rank zero, the zero class is
-  closed uniformly, and the unsliced eight-variable `msolve` campaign remains
-  superseded;
+- compute the nonzero 2-primary quotient classes for the five surviving
+  alternate-Q80 product twists, beginning with `19bad:083ad`, and solve only
+  their class-sliced `P.O=0` systems; the zero class is closed uniformly, and
+  the unsliced eight-variable `msolve` and expanded carrier-atlas campaigns
+  remain superseded;
 - study multi-prime defect reachability and possible finite-prime sufficient
   sets;
 - complete `J1` surface-automorphism classification only when it directly
@@ -425,7 +462,7 @@ twist and yields arithmetic exclusion.
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION bf05d9b06ccc1502 -->
 <!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6a9cd04e00dcdaad -->
-<!-- status-consumer: OP-EC-NEXT 086b745cb3ca078e -->
+<!-- status-consumer: OP-EC-NEXT dfbe946c1dd0030b -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->

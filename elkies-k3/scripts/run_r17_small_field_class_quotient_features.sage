@@ -1,11 +1,16 @@
 #!/usr/bin/env sage-python
-"""Compute the sealed pre-search class quotient for the frozen R17 cohort.
+"""Compute the sealed pre-search localized 2-torsion quotient for the R17 cohort.
 
 For each fibre this program certifies the maximal cubic order and the PARI BNF,
 computes every S-prime and specialized generic-MW17 half-ideal class, and then
-forms
+first forms the full S-class group and then extracts its actual 2-torsion:
 
-    Q_t = Cl(K_t) / (2 Cl(K_t) + <S_t, c(MW17_t)>).
+    A_{S,t} = Cl(K_t) / <S_t>,
+    Q_t = A_{S,t}[2] / <c_S(MW17_t)>.
+
+The second line is not computed by reducing the original class-group
+coordinates modulo two: that loses order-two elements inside cyclic factors
+of order divisible by four.
 
 Only ``bnfcertify == 1`` rows receive a value of ``dim_Q``.  Chunk supervisors
 turn timeouts and backend failures into explicit censored feature rows.  The
@@ -27,7 +32,7 @@ import sys
 import time
 from typing import Any
 
-from sage.all import EllipticCurve, GF, Matrix, PolynomialRing, QQ, ZZ, pari
+from sage.all import EllipticCurve, GF, Matrix, PolynomialRing, QQ, ZZ, pari, vector
 from sage.env import SAGE_VERSION
 
 
@@ -52,6 +57,7 @@ SCHEMA = "elkies-k3.r17-small-field-class-quotient-features.v1"
 GENERIC_RANK = 17
 DEFAULT_ROW_TIMEOUT_SECONDS = 3600
 PARI_STACK_BYTES = 4_000_000_000
+FEATURE_INVARIANT_ID = "localized_s_class_group_2_torsion_residual_v1"
 
 sys.path.insert(0, str(ROOT / "elliptic-curves/cas"))
 from mod2_reduction_independence import (  # noqa: E402
@@ -199,7 +205,7 @@ def finite_reduction_record(curve, points):
     return {
         "combined_mod2_rank": rank,
         "column_count": len(points),
-        "proves_generic_subgroup_primitive_and_independent": rank == len(points),
+        "proves_generic_subgroup_2_primitive_and_independent": rank == len(points),
         "prime_bound": 1000,
         "signatures": [
             {
@@ -238,12 +244,182 @@ def class_coordinates(bnf, ideal, cyclic_invariants):
     coordinates = [int(value) for value in pari.bnfisprincipal(bnf, ideal, 0)]
     if len(coordinates) != len(cyclic_invariants):
         raise ArithmeticError("PARI returned the wrong class-coordinate width")
-    mod2 = [
-        coordinates[index] & 1
-        for index, invariant in enumerate(cyclic_invariants)
-        if invariant % 2 == 0
+    return coordinates
+
+
+def localized_2_torsion_quotient(cyclic_invariants, s_rows, generic_rows):
+    """Present Cl/<S>, extract its 2-torsion, and quotient the generic image.
+
+    Coordinates are rows in the PARI cyclic-factor basis for
+    ``Cl = direct_sum Z/cyclic_invariants[i]``.  If ``R`` consists of the
+    diagonal class-group relations followed by the S-class rows and
+    ``U*R*V = D`` is Smith form, then an original class row ``x`` maps to
+    ``x*V`` in the Smith coordinates of ``Cl/<S>``.
+    """
+
+    invariants = [abs(int(value)) for value in cyclic_invariants]
+    width = len(invariants)
+    if any(value <= 0 for value in invariants):
+        raise ArithmeticError("class-group cyclic invariants must be positive")
+    for family, rows in (("S", s_rows), ("generic", generic_rows)):
+        if any(len(row) != width for row in rows):
+            raise ArithmeticError(f"a {family} class row has the wrong width")
+
+    if width == 0:
+        return {
+            "presentation_smith_diagonal": [],
+            "cyclic_invariants": [],
+            "nontrivial_smith_coordinate_indices": [],
+            "class_coordinate_to_smith_transform": [],
+            "two_torsion_coordinate_indices": [],
+            "dim_2_torsion": 0,
+            "generic_images": [
+                {
+                    "localized_class_group_coordinates": [],
+                    "localized_2_torsion_coordinates": [],
+                }
+                for _row in generic_rows
+            ],
+            "generic_image_rank_in_2_torsion": 0,
+            "residual_2_torsion_dimension": 0,
+        }
+
+    diagonal_relations = [
+        [invariants[index] if index == column else 0 for column in range(width)]
+        for index in range(width)
     ]
-    return coordinates, mod2
+    relation_matrix = Matrix(ZZ, diagonal_relations + [list(row) for row in s_rows])
+    smith, left, right = relation_matrix.smith_form(transformation=True)
+    if left * relation_matrix * right != smith:
+        raise ArithmeticError("localized class-group Smith transformation failed")
+    smith_diagonal = [abs(int(smith[index, index])) for index in range(width)]
+    if any(value == 0 for value in smith_diagonal):
+        raise ArithmeticError("the localized class group presentation is not finite")
+
+    nontrivial_indices = [
+        index for index, value in enumerate(smith_diagonal) if value > 1
+    ]
+    localized_invariants = [smith_diagonal[index] for index in nontrivial_indices]
+    two_torsion_indices = [
+        index for index, value in enumerate(localized_invariants) if value % 2 == 0
+    ]
+
+    def localized_coordinates(row):
+        smith_coordinates = vector(ZZ, row) * right
+        all_residues = [
+            int(smith_coordinates[index] % smith_diagonal[index])
+            for index in range(width)
+        ]
+        return [all_residues[index] for index in nontrivial_indices]
+
+    if any(any(localized_coordinates(row)) for row in s_rows):
+        raise ArithmeticError("an S-class survived its own class-group quotient")
+
+    generic_images = []
+    generic_bits = []
+    for index, row in enumerate(generic_rows, start=1):
+        coordinates = localized_coordinates(row)
+        if any(
+            (2 * coordinate) % invariant
+            for coordinate, invariant in zip(coordinates, localized_invariants)
+        ):
+            raise ArithmeticError(
+                f"generic half-ideal G{index} is not 2-torsion after localization"
+            )
+        bits = []
+        for coordinate_index in two_torsion_indices:
+            invariant = localized_invariants[coordinate_index]
+            coordinate = coordinates[coordinate_index]
+            if coordinate not in (0, invariant // 2):
+                raise ArithmeticError("invalid coordinate in localized 2-torsion")
+            bits.append(int(coordinate == invariant // 2))
+        generic_bits.append(bits)
+        generic_images.append(
+            {
+                "localized_class_group_coordinates": coordinates,
+                "localized_2_torsion_coordinates": bits,
+            }
+        )
+
+    dimension = len(two_torsion_indices)
+    generic_rank = f2_rank(generic_bits, dimension)
+    residual_dimension = dimension - generic_rank
+    if residual_dimension < 0:
+        raise ArithmeticError("the localized residual 2-torsion dimension is negative")
+    return {
+        "presentation_smith_diagonal": smith_diagonal,
+        "cyclic_invariants": localized_invariants,
+        "nontrivial_smith_coordinate_indices": nontrivial_indices,
+        "class_coordinate_to_smith_transform": [
+            [int(value) for value in row] for row in right.rows()
+        ],
+        "two_torsion_coordinate_indices": two_torsion_indices,
+        "dim_2_torsion": dimension,
+        "generic_images": generic_images,
+        "generic_image_rank_in_2_torsion": generic_rank,
+        "residual_2_torsion_dimension": residual_dimension,
+    }
+
+
+def self_test_localized_2_torsion_quotient():
+    fixtures = [
+        {
+            "name": "Z4_known_order_two_class",
+            "invariants": [4],
+            "S": [],
+            "generic": [[2]],
+            "localized_invariants": [4],
+            "generic_bits": [[1]],
+            "residual_dimension": 0,
+        },
+        {
+            "name": "Z8_known_order_two_class",
+            "invariants": [8],
+            "S": [],
+            "generic": [[4]],
+            "localized_invariants": [8],
+            "generic_bits": [[1]],
+            "residual_dimension": 0,
+        },
+        {
+            "name": "Z8_nontrivial_S_quotient",
+            "invariants": [8],
+            "S": [[2]],
+            "generic": [[1]],
+            "localized_invariants": [2],
+            "generic_bits": [[1]],
+            "residual_dimension": 0,
+        },
+    ]
+    for fixture in fixtures:
+        result = localized_2_torsion_quotient(
+            fixture["invariants"], fixture["S"], fixture["generic"]
+        )
+        if result["cyclic_invariants"] != fixture["localized_invariants"]:
+            raise ArithmeticError(f"{fixture['name']}: wrong localized class group")
+        observed_bits = [
+            row["localized_2_torsion_coordinates"]
+            for row in result["generic_images"]
+        ]
+        if observed_bits != fixture["generic_bits"]:
+            raise ArithmeticError(f"{fixture['name']}: wrong 2-torsion image")
+        if (
+            result["residual_2_torsion_dimension"]
+            != fixture["residual_dimension"]
+        ):
+            raise ArithmeticError(f"{fixture['name']}: wrong residual dimension")
+    try:
+        localized_2_torsion_quotient([8], [], [[1]])
+    except ArithmeticError as error:
+        if "not 2-torsion after localization" not in str(error):
+            raise
+    else:
+        raise ArithmeticError("a non-2-torsion generic class was accepted")
+    print(
+        "R17LOCALIZED2TORSIONFIXTURES|Z4=PASS|Z8=PASS|S_QUOTIENT=PASS"
+        "|NON_TORSION_REJECTION=PASS",
+        flush=True,
+    )
 
 
 def half_ideal_record(nf, bnf, theta, curve, point, bad_primes, cyclic_invariants):
@@ -271,9 +447,7 @@ def half_ideal_record(nf, bnf, theta, curve, point, bad_primes, cyclic_invariant
         nf, pari.idealpow(nf, half_ideal, 2), integral_alpha
     )
     correction_norm = pari.idealnorm(nf, correction)
-    coordinates, mod2 = class_coordinates(
-        bnf, half_ideal, cyclic_invariants
-    )
+    coordinates = class_coordinates(bnf, half_ideal, cyclic_invariants)
     return {
         "denominator_root_for_4x": str(denominator_root),
         "half_ideal_hnf": str(half_ideal),
@@ -284,7 +458,6 @@ def half_ideal_record(nf, bnf, theta, curve, point, bad_primes, cyclic_invariant
             correction_norm, bad_primes
         ),
         "class_group_coordinates": coordinates,
-        "class_group_mod_2_coordinates": mod2,
     }
 
 
@@ -346,7 +519,7 @@ def compute_feature(index: int):
     even_indices = [
         index for index, invariant in enumerate(cyclic_invariants) if invariant % 2 == 0
     ]
-    class_group_2_quotient_dimension = len(even_indices)
+    class_group_2_torsion_dimension = len(even_indices)
     signature = [int(value) for value in nf.nf_get_sign()]
 
     s_rows = []
@@ -355,8 +528,8 @@ def compute_feature(index: int):
         for prime_index, ideal in enumerate(
             pari.idealprimedec(nf, rational_prime), start=1
         ):
-            coordinates, mod2 = class_coordinates(bnf, ideal, cyclic_invariants)
-            s_rows.append(mod2)
+            coordinates = class_coordinates(bnf, ideal, cyclic_invariants)
+            s_rows.append(coordinates)
             s_prime_records.append(
                 {
                     "rational_prime": int(rational_prime),
@@ -365,7 +538,6 @@ def compute_feature(index: int):
                     "residue_degree": int(ideal[3]),
                     "ideal_hnf": str(pari.idealhnf(nf, ideal)),
                     "class_group_coordinates": coordinates,
-                    "class_group_mod_2_coordinates": mod2,
                 }
             )
 
@@ -381,14 +553,15 @@ def compute_feature(index: int):
             bad_primes,
             cyclic_invariants,
         )
-        generic_rows.append(record["class_group_mod_2_coordinates"])
+        generic_rows.append(record["class_group_coordinates"])
         generic_records.append({"label": f"G{point_index}", **record})
 
-    killed_rows = s_rows + generic_rows
-    killed_rank = f2_rank(killed_rows, class_group_2_quotient_dimension)
-    dimension_q = class_group_2_quotient_dimension - killed_rank
-    if dimension_q < 0:
-        raise ArithmeticError("the computed quotient dimension is negative")
+    localized = localized_2_torsion_quotient(
+        cyclic_invariants, s_rows, generic_rows
+    )
+    for record, image in zip(generic_records, localized.pop("generic_images")):
+        record.update(image)
+    dimension_q = localized["residual_2_torsion_dimension"]
 
     fundamental_units = list(bnf.bnf_get_fu())
     unit_records = [
@@ -415,11 +588,12 @@ def compute_feature(index: int):
         "manifest_index": index,
         "family": row["family"],
         "parameter": row["parameter"],
-        "status": "PASS_COMPLETE_UNCONDITIONAL_CLASS_QUOTIENT",
+        "status": "PASS_COMPLETE_UNCONDITIONAL_LOCALIZED_2_TORSION_QUOTIENT",
+        "invariant_id": FEATURE_INVARIANT_ID,
         "dim_Q": dimension_q,
         "definition": (
-            "Cl(K)/(2Cl(K)+<prime ideals above 2*Delta_min, "
-            "localized half-ideal classes of specialized generic MW17>)"
+            "A_S[2]/<localized half-ideal classes of specialized generic MW17>, "
+            "where A_S=Cl(K)/<prime ideals above 2*Delta_min>"
         ),
         "curve": {
             "homogeneous_source_model": [str(value) for value in source_curve.a_invariants()],
@@ -437,9 +611,9 @@ def compute_feature(index: int):
             "point_count": len(points),
             "finite_reduction_certificate": finite_reduction,
             "localized_half_ideal_classes": generic_records,
-            "image_rank_in_class_group_mod_2": f2_rank(
-                generic_rows, class_group_2_quotient_dimension
-            ),
+            "image_rank_in_localized_class_group_2_torsion": localized[
+                "generic_image_rank_in_2_torsion"
+            ],
         },
         "cubic_field": {
             "completed_square_polynomial": str(polynomial),
@@ -454,19 +628,20 @@ def compute_feature(index: int):
         "class_group": {
             "cyclic_invariants": cyclic_invariants,
             "class_number": str(class_number),
-            "class_group_mod_2_coordinate_indices": even_indices,
-            "dim_Cl_mod_2Cl": class_group_2_quotient_dimension,
+            "two_torsion_coordinate_indices": even_indices,
+            "dim_Cl_2_torsion": class_group_2_torsion_dimension,
+            "dim_Cl_mod_2Cl": class_group_2_torsion_dimension,
             "bnfcertify_passed": True,
         },
         "S": {
             "definition": "all prime ideals above rational primes dividing 2*Delta_min",
             "bad_rational_primes": [int(prime) for prime in bad_primes],
             "prime_ideal_classes": s_prime_records,
-            "image_rank_in_class_group_mod_2": f2_rank(
-                s_rows, class_group_2_quotient_dimension
-            ),
         },
-        "killed_class_span_rank_mod_2": killed_rank,
+        "localized_class_group": {
+            "definition": "A_S=Cl(K)/<classes of all prime ideals in S>",
+            **localized,
+        },
         "units": {
             "signature": signature,
             "free_unit_rank": sum(signature) - 1,
@@ -480,8 +655,10 @@ def compute_feature(index: int):
             "total_seconds": time.monotonic() - started,
         },
         "proof_boundary": (
-            "The class group, S-image, and generic Kummer image are exact.  This "
-            "does not compute a Selmer group or any exceptional Mordell-Weil point."
+            "The class group, full S-class quotient, its actual 2-torsion, and the "
+            "localized generic Kummer image are exact.  This localized invariant is "
+            "not the full-class-group valuation-kernel object in the pressure theorem "
+            "and does not compute a Selmer group or any exceptional Mordell-Weil point."
         ),
     }
     feature["feature_sha256"] = canonical_hash(feature)
@@ -499,6 +676,7 @@ def failure_record(row, index: int, status: str, detail: Any, elapsed: float):
         "family": row["family"],
         "parameter": row["parameter"],
         "status": status,
+        "invariant_id": FEATURE_INVARIANT_ID,
         "dim_Q": None,
         "failure": detail,
         "elapsed_seconds": elapsed,
@@ -524,6 +702,7 @@ def parse_worker(completed, row, index: int, elapsed: float):
 def write_chunk(path, chunk_index, chunk_count, indices, records, candidate_hash):
     document = {
         "schema": CHUNK_SCHEMA,
+        "feature_invariant_id": FEATURE_INVARIANT_ID,
         "status": (
             "COMPLETE_SCHEDULED_FEATURE_CHUNK"
             if len(records) == len(indices)
@@ -554,6 +733,7 @@ def run_chunk(chunk_index, chunk_count, output, row_timeout_seconds, limit):
         if (
             old.get("candidate_list_sha256")
             != cohort["commitment"]["candidate_list_sha256"]
+            or old.get("feature_invariant_id") != FEATURE_INVARIANT_ID
             or old.get("chunk_index") != chunk_index
             or old.get("chunk_count") != chunk_count
             or old.get("scheduled_indices") != indices
@@ -617,6 +797,8 @@ def merge_chunks(chunk_dir, chunk_count, output):
             raise ArithmeticError(f"feature chunk {chunk_index} is incomplete")
         if chunk.get("candidate_list_sha256") != candidate_hash:
             raise ArithmeticError(f"feature chunk {chunk_index} names another cohort")
+        if chunk.get("feature_invariant_id") != FEATURE_INVARIANT_ID:
+            raise ArithmeticError(f"feature chunk {chunk_index} uses an obsolete invariant")
         for record in chunk["records"]:
             if record["sample_id"] in records_by_id:
                 raise ArithmeticError("duplicate feature row across chunks")
@@ -633,7 +815,9 @@ def merge_chunks(chunk_dir, chunk_count, output):
         raise ArithmeticError("feature chunks do not cover the frozen cohort")
     records = [records_by_id[sample_id] for sample_id in expected_ids]
     exact = all(
-        record.get("status") == "PASS_COMPLETE_UNCONDITIONAL_CLASS_QUOTIENT"
+        record.get("status")
+        == "PASS_COMPLETE_UNCONDITIONAL_LOCALIZED_2_TORSION_QUOTIENT"
+        and record.get("invariant_id") == FEATURE_INVARIANT_ID
         and record.get("dim_Q") is not None
         and record.get("class_group", {}).get("bnfcertify_passed") is True
         for record in records
@@ -641,6 +825,7 @@ def merge_chunks(chunk_dir, chunk_count, output):
     feature_commitment = canonical_hash(records) if exact else None
     document = {
         "schema": SCHEMA,
+        "feature_invariant_id": FEATURE_INVARIANT_ID,
         "status": (
             "FROZEN_COMPLETE_UNCONDITIONAL_PRE_SEARCH_FEATURES"
             if exact
@@ -700,6 +885,8 @@ def audit_feature_artifact(path):
     records = document.get("records", [])
     if document.get("candidate_list_sha256") != cohort["commitment"]["candidate_list_sha256"]:
         raise ArithmeticError("the feature artifact names another cohort")
+    if document.get("feature_invariant_id") != FEATURE_INVARIANT_ID:
+        raise ArithmeticError("the feature artifact uses an obsolete invariant")
     complete = document.get("status") == "FROZEN_COMPLETE_UNCONDITIONAL_PRE_SEARCH_FEATURES"
     if complete:
         if len(records) != len(cohort["rows"]):
@@ -708,6 +895,9 @@ def audit_feature_artifact(path):
             raise ArithmeticError("the frozen feature commitment does not replay")
         if not all(
             row.get("class_group", {}).get("bnfcertify_passed") is True
+            and row.get("status")
+            == "PASS_COMPLETE_UNCONDITIONAL_LOCALIZED_2_TORSION_QUOTIENT"
+            and row.get("invariant_id") == FEATURE_INVARIANT_ID
             and row.get("dim_Q") is not None
             for row in records
         ):
@@ -730,14 +920,20 @@ def main():
     parser.add_argument("--limit", type=int)
     parser.add_argument("--merge", action="store_true")
     parser.add_argument("--audit", type=Path)
+    parser.add_argument("--self-test-localized-class-group", action="store_true")
     args = parser.parse_args()
     modes = sum(
         value is not None for value in (args.single_index, args.chunk_index, args.audit)
-    ) + int(args.merge)
+    ) + int(args.merge) + int(args.self_test_localized_class_group)
     if modes != 1:
-        raise SystemExit("choose exactly one of --single-index, --chunk-index, --merge, or --audit")
+        raise SystemExit(
+            "choose exactly one of --single-index, --chunk-index, --merge, --audit, "
+            "or --self-test-localized-class-group"
+        )
     if args.single_index is not None:
         result_line(compute_feature(args.single_index))
+    elif args.self_test_localized_class_group:
+        self_test_localized_2_torsion_quotient()
     elif args.chunk_index is not None:
         if not 0 <= args.chunk_index < args.chunk_count:
             raise SystemExit("chunk index is outside chunk count")

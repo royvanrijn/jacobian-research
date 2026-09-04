@@ -1,15 +1,18 @@
 #!/usr/bin/env sage-python
-"""Run bounded MW16 half-lattice recovery on all exact Nagao finalists.
+"""Run direct-reduction MW16 half-lattice recovery on exact Nagao finalists.
 
-The input is the exact 104-fibre specialization ledger produced after the
+The input is the exact 104-fibre raw-specialization ledger produced after the
 height-300 local sieve.  Every fibre first rechecks specialization independence
 and its complete generic M/2M depth spectrum, then searches only the exact
-maximum-depth stratum.  Results are checkpointed after every candidate.
+maximum-depth stratum.  Pointed quartics use exact square-content normalization
+and direct Cremona--Stoll reduction, with no quartic-minimalization call.
+Results are checkpointed after every candidate.
 
-No adaptive quotient wave, unrestricted point search, global minimization, or
-Selmer calculation is performed.  Positive exact quotient ranks advance to
-the same-fibre minimal-model residual-Selmer gate; zero is a bounded detector
-result and cannot reject the fibre mathematically.
+No adaptive quotient wave, unrestricted point search, global curve
+minimalization, or Selmer calculation is performed.  Even a positive must
+first be transported to an exact global minimal model with renewed section
+checks before reaching the same-fibre residual-Selmer gate; zero cannot reject
+the fibre mathematically.
 """
 
 from __future__ import annotations
@@ -28,7 +31,8 @@ INPUT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_mw16_nagao_fin
 LADDER = ROOT / "elliptic-curves/cas/run_icarm_mw16_parent_ladder_blind.sage"
 LEGACY = ROOT / "elliptic-curves/cas/run_curve385_iterated_half_lattice_search.sage"
 ENGINE = ROOT / "elliptic-curves/cas/half_lattice_fake_descent_replay.sage"
-OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_mw16_nagao_finalist_half_lattice_h300_v1.json"
+DIRECT = ROOT / "elliptic-curves/cas/half_lattice_direct_reduction.py"
+OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_mw16_nagao_finalist_direct_reduction_h300_v1.json"
 
 
 def digest(path: Path) -> str:
@@ -62,11 +66,13 @@ def initial_payload(args, inputs, candidate_ids):
             ),
             "adaptive_quotient_lifts": 0,
             "unrestricted_point_search": False,
+            "quartic_backend": "exact_square_content_then_direct_hyperellred_v1",
+            "quartic_minimalization_called": False,
         },
         "results": [],
         "inputs": {
             relative(path): digest(path)
-            for path in (args.input, LADDER, LEGACY, ENGINE, Path(__file__))
+            for path in (args.input, LADDER, LEGACY, ENGINE, DIRECT, Path(__file__))
         },
         "software": {"python": platform.python_version()},
         "next_gate": {
@@ -82,6 +88,7 @@ def initial_payload(args, inputs, candidate_ids):
             "Nagao supplied only the frozen candidate order; it contributes no rank evidence.",
             "Every positive quotient rank is supported by exact rational points, exact group law, and finite-reduction independence certificates.",
             "Every miss is bounded and gives no rank upper bound, point absence, saturation, covering, or Selmer information.",
+            "Direct hyperelliptic reduction is exact but makes no global-minimal-model claim.",
             "The stage stops before adaptive quotient lifts or any unrestricted point search.",
             "No positive candidate is authorized for expensive continuation until its complete same-minimal-curve residual 2-Selmer gate finishes.",
         ],
@@ -106,13 +113,19 @@ def main() -> None:
         default=0,
         help="0 means the entire frozen finalist ledger; positive values are a prefix",
     )
+    parser.add_argument(
+        "--candidate-start",
+        type=int,
+        default=0,
+        help="zero-based start in the frozen finalist ledger (for checkpoint shards)",
+    )
     args = parser.parse_args()
     if args.height_bound <= 0 or not 0 < args.timeout_seconds <= 60:
         raise SystemExit("invalid quartic-search budget")
     if args.relation_chunk_size <= 0 or not 0 < args.relation_timeout_seconds <= 300:
         raise SystemExit("invalid relation budget")
-    if args.maximum_candidates < 0:
-        raise SystemExit("--maximum-candidates must be nonnegative")
+    if args.maximum_candidates < 0 or args.candidate_start < 0:
+        raise SystemExit("candidate slice bounds must be nonnegative")
     if shutil.which("gp") is None:
         raise SystemExit("PARI/GP executable 'gp' was not found")
     args.exact_generic_order_only = True
@@ -120,11 +133,17 @@ def main() -> None:
     inputs = json.loads(args.input.read_text())
     if inputs.get("status") != "PASS_EXACT_MW16_NAGAO_FINALIST_SPECIALIZATIONS":
         raise ArithmeticError("exact finalist specialization ledger is not passing")
-    if inputs["next_gate"]["stage"] != "bounded_half_lattice_jump_recovery":
-        raise ArithmeticError("finalist ledger does not authorize half-lattice recovery")
-    candidates = inputs["candidates"]
+    if (
+        inputs["next_gate"]["stage"]
+        != "bounded_half_lattice_arithmetic_size_diagnostic"
+    ):
+        raise ArithmeticError("finalist ledger does not authorize the raw-model diagnostic")
+    source_candidates = inputs["candidates"]
+    candidates = source_candidates[args.candidate_start :]
     if args.maximum_candidates:
         candidates = candidates[: args.maximum_candidates]
+    if not candidates:
+        raise SystemExit("the requested candidate slice is empty")
     candidate_ids = [row["candidate_id"] for row in candidates]
     if len(candidate_ids) != len(set(candidate_ids)):
         raise ArithmeticError("candidate identifiers are not unique")
@@ -152,7 +171,9 @@ def main() -> None:
 
     ladder = SourceFileLoader("mw16_finalist_ladder", str(LADDER)).load_module()
     legacy = SourceFileLoader("mw16_finalist_legacy", str(LEGACY)).load_module()
+    direct = SourceFileLoader("mw16_finalist_direct", str(DIRECT)).load_module()
     legacy.GENERIC_DIMENSION = 16
+    legacy.engine = direct
     for index, candidate in enumerate(candidates, 1):
         if candidate["candidate_id"] in completed:
             print(
@@ -217,7 +238,8 @@ def main() -> None:
     )
     payload["status"] = (
         "PASS_COMPLETE_FROZEN_NAGAO_FINALIST_HALF_LATTICE_GATE"
-        if len(payload["results"]) == len(candidate_ids)
+        if args.candidate_start == 0
+        and len(payload["results"]) == len(source_candidates)
         else "PASS_BOUNDED_PREFIX_NAGAO_FINALIST_HALF_LATTICE_GATE"
     )
     write_payload(args.output, payload)

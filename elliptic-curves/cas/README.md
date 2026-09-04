@@ -24,6 +24,36 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   of the exact base/Weierstrass equivalence, curve-398 parameter transport,
   group laws, integral basis transition, ranks, and Smith quotient for the two
   A1/MW16 survivor presentations.
+- `prepare_icarm_mw16_parent_ladder_inputs.sage` and
+  `run_icarm_mw16_parent_ladder_blind.sage`: reconstruct all nine complete-A1
+  hit presentations and run the complement-blind exact maximum-depth MW16
+  calibration.  Responses are nested within five target curves.
+- `audit_icarm_mw16_parent_presentations.sage`: exact base-change,
+  Weierstrass-scaling, target-transport, and integral-subgroup audit proving
+  that the nine labels are five fibrations.
+- `run_icarm_mw16_curve400_adaptive_calibration.sage` and
+  `verify_icarm_mw16_blind_ladder_calibration.py`: complete the curve-400
+  124-chart adaptive wave and compare the five blind responses with atlas
+  jumps only after the search.  Best recovery is 54 of 55 demonstrated
+  directions; this is purposive detector calibration, not population
+  inference.
+- `sieve_icarm_mw16_parent_presentations_nagao.py`,
+  `specialize_icarm_mw16_nagao_finalists.sage`,
+  `run_icarm_mw16_nagao_finalist_half_lattice.sage`, and
+  `merge_icarm_mw16_nagao_finalist_half_lattice_shards.py`: enforce the
+  prospective local-ordering to exact-half-lattice gate on 104 fibres.  The
+  first 856 chart attempts are wholly timeout-censored on very large
+  coefficients, so none advances to Selmer or unrestricted point search.
+- `extract_a1_mw16_family_template.py`,
+  `build_a1_mw16_target_free_parameter_candidates.sage`,
+  `run_a1_mw16_target_free_parameter_search.sage`, and
+  `merge_a1_mw16_target_free_parameter_search_shards.py`: run the actual
+  target-free experiment on anonymous family data.  The frozen height-300
+  sampler produces 104 pairwise nonisomorphic fibres; direct exact searches
+  complete all 856 deepest MW16 charts through height 100,000 with no affine
+  point, timeout, failure, or recovered quotient direction.  This is bounded
+  search evidence only.
+<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER c5b0b57ee01c5c23 -->
 - `analyze_record_first17_subgroups.py`: exact first-seventeen coordinate,
   quotient, finite-Kummer, and bad-component comparison for curves 273 and
   302, plus a 100-digit canonical-height/theta profile.
@@ -41,6 +71,14 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   for the four conductor-first near misses; provisional upper endpoints stay
   GRH-conditional, while returned points receive independent exact mod-2
   certification.
+- `fixed_cubic_field_curve_family.py` and
+  `run_fixed_cubic_field_curve_family.sage`: keep the Fermigier rank-20 cubic
+  field and its certified 20-dimensional Kummer span fixed while varying the
+  curve through `alpha_u=theta+u*theta^2`.  The bounded `|u|<=2` integer run
+  computes exact whole-span local kernels `13,18,20,13,13`, checks every new
+  bad prime, and emits explicit covering inputs without a class-group
+  computation.  It proves no point realization or rank on a new curve.
+<!-- status-consumer: EC-FIXED-CUBIC-VARYING-CURVE-LOCAL-KUMMER 46ca45db3e702eb6 -->
 - `build_conductor_first_s_class_envelopes.py`: exact four-target comparison
   of cubic-field discriminants and materialized Bach/ERH factor-base sizes;
   this orders the BNF-free relation collectors but is not a class-group or
@@ -141,6 +179,17 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   ordering meaning only, rejects cached orders after a basis, lattice,
   height-form, quotient-coordinate, or chart-universe change, and forbids all
   absence, rank-upper-bound, and Selmer inference from misses.
+- `production_search_gates.py`: keeps theorem exclusions and resource
+  authorization independent.  A certified upper bound below the target blocks
+  production search; incomplete descent is scheduling information, while a
+  separately bounded search may proceed and certified independent points give
+  an unconditional lower bound.
+- `run_mw17_jump_v2_zero_gain_rescue.sage`: executes the outcome-blind
+  one-in-eight rescue assignment over the unchanged MW17-jump-v2 population.
+  Assigned clean zeros search generic class ranks 44--344 in seven batches and
+  switch unused slots to the existing adaptive policy after first escape,
+  retaining a 344-chart total cap.
+<!-- status-consumer: EC-K3-MW17-JUMP-V2-ZERO-GAIN-RESCUE 39ac93b60152bf88 -->
 - `analyze_half_lattice_height_compression.sage`: reconstructs the exact
   reduced horizontal maps and presearch height data for 3,865 completed
   detailed charts.  It proves the chart midpoint/empty-ball identities,
@@ -151,6 +200,15 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   Target-relative results are explicitly posthoc and bounded misses retain no
   arithmetic conclusion.
 <!-- status-consumer: EC-HALF-LATTICE-HEIGHT-COMPRESSION 3baeaf370aec751c -->
+- `build_quotient_geometry_table.sage`: joins the five usable R17 controls,
+  sixteen refreshed R17 ladder fibres, and nine A1/MW16 presentations to their
+  displayed quotient lattices and exact blind-recovery traces.  It records
+  every quotient Gram, regulator, successive minimum, intrinsic quotient
+  energy, projection coefficient, optimal and actual half-lattice phase,
+  reduced-coordinate distortion, and first recovery stage, then tests exact
+  rational recovered subspaces against the deterministic successive-minimum
+  flags.  Projection CVPs are checked at two Gram-rounding scales; numerical
+  heights are not interval certificates.
 - `run_curve385_height_compression_pilot.sage`: two-phase current-lattice
   builder and bounded pilot.  Its build phase samples all 29 parity bits by
   deterministic local ascent, reduces and calibrates 32 fresh charts, then
@@ -219,7 +277,7 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   incomplete place sets and makes no pairing claim on a coordinate complement.
   The present record certificate is Outcome D because its global squareclass
   domains have not completed.
-<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 f07ee569c95bf3a1 -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 eda7a0053b31b7c9 -->
 - `build_r17_mw17_only_selmer_replay.py`: builds the strict prospective
   controls for curves 356 and 385.  Each generated Magma source contains only
   the minimal curve and exactly seventeen specialized generic points, requests
@@ -331,7 +389,7 @@ the same arithmetic.
   complements or jump labels; the analyzer replays the frozen exact Kendall
   and upper-tail tests after the blind hash is sealed.  The v1 cross-class
   deepest-count failure is preserved rather than rewritten.
-<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER b7518cc41268489a -->
+<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER a2d7034fb8977c18 -->
 - Files containing `bnf_free`, `residual_selmer`, or `curve273` implement the
   unfinished residual 2-Selmer chain. Intermediate success is not a rank
   theorem.

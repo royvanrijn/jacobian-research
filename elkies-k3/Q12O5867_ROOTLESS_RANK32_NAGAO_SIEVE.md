@@ -1,6 +1,6 @@
 # q12/orbit5867 rootless rank-32 Nagao sieve
 
-<!-- status-consumer: EC-CRT-BEAM-NONMONOTONE 5ae7e135da8cc80f -->
+<!-- status-consumer: EC-CRT-BEAM-NONMONOTONE b5bfb5f8d033075c -->
 
 This bounded search utility reads the exact short-model coefficients `A(u)`
 and `B(u)` from
@@ -141,8 +141,8 @@ projective congruence lattice is Gauss-reduced exactly before short basis
 combinations are enumerated and reranked on the 48 heldout primes.
 
 This frontier is intentionally heuristic, not a sieve in the mathematical
-sense.  Partial rational-representative height can decrease after another CRT
-constraint is added; the exact width-one counterexample in
+sense. True minimum height is nondecreasing along a fixed branch, but
+different branches can change their relative ordering. The width-one counterexample in
 [`../elliptic-curves/tests/test_crt_lattice.py`](../elliptic-curves/tests/test_crt_lattice.py)
 therefore applies to this pruning pattern as well.  A parameter omitted from
 the finite beam is untested, not excluded.

@@ -53,9 +53,14 @@ All nine hit presentations lie in the genuine `m=1` stratum and compile with
 `I2+22I1`, generic Mordell--Weil rank 16, and saturated height determinant
 474.  The target parameter is rational and the specialized curve is
 isomorphic over `QQ`, not merely a quadratic twist.  A later exact base-change
-audit identifies curve 398's two labels as presentations of one fibration;
-the atlas does not claim that the other repeated hits are already quotiented
-by `PGL2`.
+audit identifies the repeated labels on curves 398, 400, and 548 as
+presentations of one fibration for each target.  Thus the nine labels give
+exactly five fibration classes.  All nine coordinate presentations remain
+useful for bounded parameter searches because their affine base changes do not
+preserve projective-height boxes; their search responses are nested within the
+five fibrations, not independent observations.  See
+[`../elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md`](../elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md).
+<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER c5b0b57ee01c5c23 -->
 
 For curve 10, one class survives the modular chain, but its exact comparison
 polynomial is irreducible of degree 24.  The other negative targets are

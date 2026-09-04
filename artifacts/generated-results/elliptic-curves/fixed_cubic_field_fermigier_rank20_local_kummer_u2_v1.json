@@ -1,0 +1,6039 @@
+{
+  "anchor": {
+    "base_discriminant_factorization": [
+      {
+        "exponent": 25,
+        "prime": 2
+      },
+      {
+        "exponent": 14,
+        "prime": 3
+      },
+      {
+        "exponent": 9,
+        "prime": 5
+      },
+      {
+        "exponent": 6,
+        "prime": 7
+      },
+      {
+        "exponent": 2,
+        "prime": 13
+      },
+      {
+        "exponent": 4,
+        "prime": 17
+      },
+      {
+        "exponent": 2,
+        "prime": 31
+      },
+      {
+        "exponent": 2,
+        "prime": 79
+      },
+      {
+        "exponent": 1,
+        "prime": 1049
+      },
+      {
+        "exponent": 1,
+        "prime": 71889448247
+      },
+      {
+        "exponent": 1,
+        "prime": 40200713707633
+      },
+      {
+        "exponent": 1,
+        "prime": 491007790268548705232623905732119
+      }
+    ],
+    "base_polynomial_ascending": [
+      "167347710468055045100164888198438918505621536951206",
+      "-5750886029903523759416717668139307",
+      "0",
+      "1"
+    ],
+    "base_polynomial_discriminant": "4647169165086201522253423951494063406713720029198475812735152009907780357949497411403055104000000000",
+    "base_polynomial_irreducible": true,
+    "id": "fermigier-mestre-rank20-u28917/20",
+    "known_kummer_basis_beta_power_coordinates": [
+      [
+        "38938605995265387",
+        "-1",
+        "0"
+      ],
+      [
+        "40728398414316387",
+        "-1",
+        "0"
+      ],
+      [
+        "40646445315585387",
+        "-1",
+        "0"
+      ],
+      [
+        "-1781634332835346413/121",
+        "-1",
+        "0"
+      ],
+      [
+        "41053801328565387",
+        "-1",
+        "0"
+      ],
+      [
+        "46378087661805387",
+        "-1",
+        "0"
+      ],
+      [
+        "30677763793609707",
+        "-1",
+        "0"
+      ],
+      [
+        "83612421019761387",
+        "-1",
+        "0"
+      ],
+      [
+        "-86012797757294613",
+        "-1",
+        "0"
+      ],
+      [
+        "-87487096017779733",
+        "-1",
+        "0"
+      ],
+      [
+        "48371350182747387",
+        "-1",
+        "0"
+      ],
+      [
+        "28841055288088587",
+        "-1",
+        "0"
+      ],
+      [
+        "28429622094935787",
+        "-1",
+        "0"
+      ],
+      [
+        "148496505499185387",
+        "-1",
+        "0"
+      ],
+      [
+        "45756133800259587",
+        "-1",
+        "0"
+      ],
+      [
+        "53631910104252387",
+        "-1",
+        "0"
+      ],
+      [
+        "-2400693015646517/9",
+        "-1",
+        "0"
+      ],
+      [
+        "38307976124266707",
+        "-1",
+        "0"
+      ],
+      [
+        "46064231291690547",
+        "-1",
+        "0"
+      ],
+      [
+        "9146566453767249723/529",
+        "-1",
+        "0"
+      ]
+    ],
+    "known_kummer_dimension": 20,
+    "known_kummer_independence_source": "pinned exact 20-dimensional E(Q)/2E(Q) finite-quotient certificate",
+    "known_kummer_norms_are_displayed_y_squares": true,
+    "known_points_on_short_model": [
+      [
+        "38938605995265387",
+        "1567011534782236870320000"
+      ],
+      [
+        "40728398414316387",
+        "826861274756882115849000"
+      ],
+      [
+        "40646445315585387",
+        "864864487526694676560000"
+      ],
+      [
+        "-1781634332835346413/121",
+        "20995778407111766599909800960/1331"
+      ],
+      [
+        "41053801328565387",
+        "-666823981695924796380000"
+      ],
+      [
+        "46378087661805387",
+        "623294235218399861340000"
+      ],
+      [
+        "30677763793609707",
+        "-4449157623637218111674880"
+      ],
+      [
+        "83612421019761387",
+        "16463284338967327473696000"
+      ],
+      [
+        "-86012797757294613",
+        "5065324134400499941440000"
+      ],
+      [
+        "-87487096017779733",
+        "922224694802954684843520"
+      ],
+      [
+        "48371350182747387",
+        "-1532406560023296217638000"
+      ],
+      [
+        "28841055288088587",
+        "-5047401798761139174520800"
+      ],
+      [
+        "28429622094935787",
+        "5179792341767753905977600"
+      ],
+      [
+        "148496505499185387",
+        "-50871300132065894076960000"
+      ],
+      [
+        "45756133800259587",
+        "74361513702809325169800"
+      ],
+      [
+        "53631910104252387",
+        "-3630779120197775017017000"
+      ],
+      [
+        "-2400693015646517/9",
+        "350877132570962237445485000/27"
+      ],
+      [
+        "38307976124266707",
+        "-1805519410637408543117880"
+      ],
+      [
+        "46064231291690547",
+        "-426469342384612620417240"
+      ],
+      [
+        "9146566453767249723/529",
+        "104013404348602679589842820000/12167"
+      ]
+    ],
+    "short_model_ainvariants": [
+      "0",
+      "0",
+      "0",
+      "-5750886029903523759416717668139307",
+      "167347710468055045100164888198438918505621536951206"
+    ],
+    "source_model_ainvariants": [
+      "1",
+      "1",
+      "1",
+      "-4437412060110743641525245114305",
+      "3586842216822165612930264910099076801587288127"
+    ]
+  },
+  "claim_boundary": [
+    "Each W_u is the kernel on the whole certified 20-dimensional span; individual-basis survival is not substituted.",
+    "Every prime in 2*disc(f) and every numerator or denominator prime of 1+A*u^2+B*u^3 is checked, together with the real place.",
+    "Local Kummer-image completeness is certified by exact local squareclasses plus the theoretical local dimension; a search-box miss cannot remove a class.",
+    "No class group, full global 2-Selmer group, Mordell--Weil rank, or rational point on a new curve is computed.",
+    "Membership in W_u proves local admissibility of a fixed global cohomology class, not realization by a rational point; the displayed covering equations are the next gate."
+  ],
+  "class_group_computation_performed": false,
+  "covering_template": {
+    "affine_recovery_when_d_nonzero": {
+      "x": "coeff_1(beta*gamma^2)/d^2",
+      "y": "norm_square_root(beta)*Norm(gamma)/d^3"
+    },
+    "equations": [
+      "coeff_theta(beta*gamma^2)+d^2=0",
+      "coeff_theta2(beta*gamma^2)+u*d^2=0"
+    ],
+    "gamma": "a+b*theta+c*theta^2",
+    "scope": "apply to every surviving span class beta, not just the original basis beta_i",
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+  "family": {
+    "coefficient_formula_ascending": [
+      "B+A*B*u^2-B^2*u^3",
+      "A+3*B*u+A^2*u^2",
+      "2*A*u",
+      "1"
+    ],
+    "definition": "alpha_u=theta+u*theta^2; F_u(x)=Norm_K/Q(x-alpha_u)",
+    "discriminant_identity": "disc(F_u)=disc(f)*(1+A*u^2+B*u^3)^2",
+    "excluded_parameter_equation": "1+A*u^2+B*u^3=0",
+    "pairwise_distinct_j_invariants": true,
+    "parameter_count": 5,
+    "parameter_policy": "all integers u with |u|<=2",
+    "u_zero_is_anchor_short_model": true
+  },
+  "point_realization_computation_performed": false,
+  "protocol": "FIXEDCUBICLOCAL_v1",
+  "result_sha256": "af94690bb683c1ab8d39f99e57463b6aeb92b3c36c0d96804d6084798ad2688d",
+  "runs": [
+    {
+      "W_u_basis": [
+        {
+          "beta_power_basis_coefficients": [
+            "32166198755964373252639550619321947197155568138230706564943633105451209828844982211430324564553412656329/121",
+            "-1472846005832417714746475181888779953862313864530818659255614507165290561870731483348534/121",
+            "16825480450263415623501128501571123842621095614297626857189881699428241/121"
+          ],
+          "mask": 111,
+          "norm_square_root": "-5931480518782278021615369019637196863147615684571501044841418526221096543788950316283162303619045461258272841538629050001448868249600000000000000000/121",
+          "one_based_anchor_basis_indices": [
+            1,
+            2,
+            3,
+            4,
+            6,
+            7
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "-127586710450562058609024189055371651110082549093001499390684132327031/121",
+            "789207790451871946292079425184342138582190838302026/121",
+            "54561100495631091095683658375262801/121"
+          ],
+          "mask": 282,
+          "norm_square_root": "-58638531421614585098908989558208165905765225708170033500843080349161446532786862998847488000000000000/1331",
+          "one_based_anchor_basis_indices": [
+            2,
+            4,
+            5,
+            9
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "55356832565609084006054125705575392948844603591804103038181082169",
+            "-933397125081064710892780261027722222364552041174",
+            "1104766434677729983493787689601"
+          ],
+          "mask": 688,
+          "norm_square_root": "-6310409560772052195878878704605517081199958783085836145697395239655739330189977944064000000000000",
+          "one_based_anchor_basis_indices": [
+            5,
+            6,
+            8,
+            10
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "244060176160430082924264429886583429448573056143809",
+            "-11190393656883141337295084877460614",
+            "128038354592329161"
+          ],
+          "mask": 1027,
+          "norm_square_root": "-1985540950071695581234563677183394528145345432294939694694231840000000000",
+          "one_based_anchor_basis_indices": [
+            1,
+            2,
+            11
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "5204155807394473393927805676379916362819549706810759758477440150363778665533496828619551427035331985603206613754284314089/121",
+            "-238292418696031632303060383392094867838340834096622026990045987212430614423652454472694403002914132661494/121",
+            "2722218197820409713110891378268911631433814854596496725225896206413330438651042245071281/121"
+          ],
+          "mask": 2207,
+          "norm_square_root": "118518944105722861697580741400451908179004007409666831604602573592261280603834164419093697896505949681712102150541994876444461507491882252511425532526592000000000000000000000/121",
+          "one_based_anchor_basis_indices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            12
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "26810964612208170700633599768517594246428410092400173118717694072849",
+            "-1228271944677639376963596320977471903526784235220454",
+            "14039473346181373353167812649943321"
+          ],
+          "mask": 4115,
+          "norm_square_root": "-4475364427965819774589136443000933186699808364504499357544631438992233300890846627840000000000000",
+          "one_based_anchor_basis_indices": [
+            1,
+            2,
+            5,
+            13
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "85971496570699060122676551605672333361850554162556032438971111045416180535043097651144565768614840222449/121",
+            "-3936471825694328347106639215859340218162018478930464460976930202917882894241660711862054/121",
+            "44968692865961469890534543892165178238800299133929749549261393963561721/121"
+          ],
+          "mask": 8377,
+          "norm_square_root": "11452434341427213174078078677246052112162196746121456127777631283194452774476545801434052309066774842802802347020758774250218088038400000000000000000000/1331",
+          "one_based_anchor_basis_indices": [
+            1,
+            4,
+            5,
+            6,
+            8,
+            14
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "32549376449078916571091380031548809036079394134171463597917822067049",
+            "-1490387603233047249765394004338622098788999847473654",
+            "17025840506947844363776981900835121"
+          ],
+          "mask": 16422,
+          "norm_square_root": "33145307256284981467427388316210874969894429430763946084078502881757430793058502080000000000000",
+          "one_based_anchor_basis_indices": [
+            2,
+            3,
+            6,
+            15
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "400136669656836440503373862570064314668225116591266123967904228858506893742331653920009/121",
+            "-18311647815985209224119523082367602146033760067550352901796719550885814/121",
+            "209087960273803882453410019034323372770537766715498961/121"
+          ],
+          "mask": 32937,
+          "norm_square_root": "-1225782995135188859860696403971442401254444487910141196666797232206885522995573898410777972587096578133096923136000000000000000/1331",
+          "one_based_anchor_basis_indices": [
+            1,
+            4,
+            6,
+            8,
+            16
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "3659026153998092815495562771414891073148593197487110995226719485768874559283119572089",
+            "-167537813621711790539929410564058026985299597343851312552740429329494",
+            "1913863372254077800713800421677762174410282436953281"
+          ],
+          "mask": 65714,
+          "norm_square_root": "-73526645610309280646913760043802357265851843410404685183202393831421141273538607018884725102340981125824000000000000000000",
+          "one_based_anchor_basis_indices": [
+            2,
+            5,
+            6,
+            8,
+            17
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "29107239608678270594954089877214144492526495461772561889618202987129",
+            "-1333055858590102687662192283758935061572540309045334",
+            "15231996203968874609061941977461441"
+          ],
+          "mask": 131091,
+          "norm_square_root": "1559977082326588860706222960000208091338700732449838351418984775065099121651296300992000000000000",
+          "one_based_anchor_basis_indices": [
+            1,
+            2,
+            5,
+            18
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "5286832616212171573718644620304968523488180669585646308625196804385198502710975232929",
+            "-242076866218772105698122957526573181949479666592043209982872651832134",
+            "2765435544869165121667253469960790780379773065529641"
+          ],
+          "mask": 262293,
+          "norm_square_root": "6345060449802275186865320490602806794147919555640475470646871848623430296507047696088839257314587222179840000000000000000",
+          "one_based_anchor_basis_indices": [
+            1,
+            3,
+            5,
+            8,
+            19
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "18078288964736044103085673552815507771849803099809422376830472028027721/529",
+            "-827418417688814277071205954691934018762236237750547766/529",
+            "9449360748728574043317237099722824209/529"
+          ],
+          "mask": 524452,
+          "norm_square_root": "923096203813707812751140569353636195271372819560900056033660692428088111974053460261888000000000000000/12167",
+          "one_based_anchor_basis_indices": [
+            3,
+            6,
+            8,
+            20
+          ]
+        }
+      ],
+      "W_u_dimension": 13,
+      "all_local_kummer_images_complete": true,
+      "combined_condition_column_count": 8,
+      "combined_condition_rank": 7,
+      "complete_finite_place_support": [
+        2,
+        3,
+        5,
+        7,
+        13,
+        17,
+        31,
+        61,
+        79,
+        463,
+        1033,
+        1049,
+        71889448247,
+        40200713707633,
+        88377350996665273,
+        830763901348107124747241,
+        491007790268548705232623905732119
+      ],
+      "discriminant_multiplier": "-1338781683744440383804863225201606385711842968166875",
+      "family_discriminant": "8329290436343500462714303238900455068015330694543509623874935991001065951890610808137617533462339974436749070365636082698347181066200719524557349831344795828809755999704460933270044697600000000000000000",
+      "family_polynomial_ascending": [
+        "224042049591199837126362795480065788873664360567223298554193606380119187895072198861848646995857169726",
+        "132290760515758051682372428540910190900826008935960679951039343914453",
+        "23003544119614095037666870672557228",
+        "1"
+      ],
+      "finite_local_conditions": [
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-5",
+              "raw_x": "-5"
+            },
+            {
+              "model": "raw",
+              "model_x": "-1415",
+              "raw_x": "-1415"
+            }
+          ],
+          "conductor_exponent": 4,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 29,
+          "point_kummer_basis_complete": true,
+          "prime": 2
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-3",
+              "raw_x": "-3"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 3
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "49",
+              "raw_x": "49"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 5,
+          "point_kummer_basis_complete": true,
+          "prime": 5
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-3",
+              "raw_x": "-3"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 6,
+          "point_kummer_basis_complete": true,
+          "prime": 7
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "1",
+              "raw_x": "1"
+            },
+            {
+              "model": "raw",
+              "model_x": "-10",
+              "raw_x": "-10"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 13
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [],
+          "conductor_exponent": 2,
+          "cubic_completion_factor_count": 1,
+          "expected_point_kummer_dimension": 0,
+          "found_point_kummer_dimension": 0,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 4,
+          "point_kummer_basis_complete": true,
+          "prime": 17
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-1",
+              "raw_x": "-1"
+            },
+            {
+              "model": "raw",
+              "model_x": "-2",
+              "raw_x": "-2"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 31
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            },
+            {
+              "model": "raw",
+              "model_x": "31",
+              "raw_x": "31"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 61
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "2",
+              "raw_x": "2"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 79
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "38",
+              "raw_x": "38"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 463
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-65853",
+              "raw_x": "-65853"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 1033
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-2",
+              "raw_x": "-2"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 1049
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-6",
+              "raw_x": "-6"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 71889448247
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "1",
+              "raw_x": "1"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 40200713707633
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            },
+            {
+              "model": "raw",
+              "model_x": "-5595782788427653748",
+              "raw_x": "-5595782788427653748"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 88377350996665273
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-51622490661678325711779413",
+              "raw_x": "-51622490661678325711779413"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 830763901348107124747241
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "1",
+              "raw_x": "1"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 491007790268548705232623905732119
+        }
+      ],
+      "j_invariant": "213647465549484987007848014342856446275806789175796328956107789377748842988614228779157149723852897127307097828304988758860814901668893876181982341716353242049351434944368056724801794481/3002460111485378613193023812734074010721123567143653156427800864836725114929740219982501725327362084913676051029830466393847198286502979214734143610540926291441274772963230105600000",
+      "multiplier_denominator_factorization": [],
+      "multiplier_numerator_factorization": [
+        {
+          "exponent": 4,
+          "prime": 5
+        },
+        {
+          "exponent": 1,
+          "prime": 61
+        },
+        {
+          "exponent": 1,
+          "prime": 463
+        },
+        {
+          "exponent": 1,
+          "prime": 1033
+        },
+        {
+          "exponent": 1,
+          "prime": 88377350996665273
+        },
+        {
+          "exponent": 1,
+          "prime": 830763901348107124747241
+        }
+      ],
+      "newly_bad_primes_relative_to_anchor": [
+        61,
+        463,
+        1033,
+        88377350996665273,
+        830763901348107124747241
+      ],
+      "parameter_u": "-2",
+      "raw_curve_ainvariants": [
+        "0",
+        "23003544119614095037666870672557228",
+        "0",
+        "132290760515758051682372428540910190900826008935960679951039343914453",
+        "224042049591199837126362795480065788873664360567223298554193606380119187895072198861848646995857169726"
+      ],
+      "real_local_condition": {
+        "alpha_root_order_by_theta_embedding": [
+          0,
+          2,
+          1
+        ],
+        "known_span_quotient_coordinate_dimension": 0,
+        "known_span_quotient_rows": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "point_kummer_dimension": 1,
+        "point_kummer_sign_generator": [
+          0,
+          1,
+          1
+        ],
+        "real_root_count": 3
+      },
+      "theta_from_alpha_power_basis": [
+        "1338781683744440360801319105587511348044972295609648/1338781683744440383804863225201606385711842968166875",
+        "-23003544119614095037666870672557229/1338781683744440383804863225201606385711842968166875",
+        "-2/1338781683744440383804863225201606385711842968166875"
+      ]
+    },
+    {
+      "W_u_basis": [
+        {
+          "beta_power_basis_coefficients": [
+            "38938605995265387",
+            "-1",
+            "0"
+          ],
+          "mask": 1,
+          "norm_square_root": "1567011534782236870320000",
+          "one_based_anchor_basis_indices": [
+            1
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "1655464618938885612266438331836769",
+            "-81374843729901774",
+            "1"
+          ],
+          "mask": 6,
+          "norm_square_root": "715122952648280332511285273104137504799440000000",
+          "one_based_anchor_basis_indices": [
+            2,
+            3
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "-72563112936342756912032565727569831/121",
+            "-3146501875296936414/121",
+            "1"
+          ],
+          "mask": 10,
+          "norm_square_root": "17360596098217455175863567120036001843157251415040000/1331",
+          "one_based_anchor_basis_indices": [
+            2,
+            4
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "1672055576932002489827037035096769",
+            "-81782199742881774",
+            "1"
+          ],
+          "mask": 18,
+          "norm_square_root": "-551370927543552203907823795344878895826620000000",
+          "one_based_anchor_basis_indices": [
+            2,
+            5
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "30677763793609707",
+            "-1",
+            "0"
+          ],
+          "mask": 64,
+          "norm_square_root": "-4449157623637218111674880",
+          "one_based_anchor_basis_indices": [
+            7
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "83612421019761387",
+            "-1",
+            "0"
+          ],
+          "mask": 128,
+          "norm_square_root": "16463284338967327473696000",
+          "one_based_anchor_basis_indices": [
+            8
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "-3503163495789114004083980952723231",
+            "45284399342978226",
+            "1"
+          ],
+          "mask": 258,
+          "norm_square_root": "4188320370827197856122058637400507795882560000000",
+          "one_based_anchor_basis_indices": [
+            2,
+            9
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "-3563209302723685573166320738384671",
+            "46758697603463346",
+            "1"
+          ],
+          "mask": 514,
+          "norm_square_root": "762551886757047667964640053845710389076948480000",
+          "one_based_anchor_basis_indices": [
+            2,
+            10
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "2243370719095344340714324176773769",
+            "-94749437844552774",
+            "1"
+          ],
+          "mask": 1056,
+          "norm_square_root": "-955140174873379378376664998031885662314920000000",
+          "one_based_anchor_basis_indices": [
+            6,
+            11
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "1174649990462598454821733501775169",
+            "-69569453702404974",
+            "1"
+          ],
+          "mask": 2050,
+          "norm_square_root": "-4173501085533815312521956552868064374660159200000",
+          "one_based_anchor_basis_indices": [
+            2,
+            12
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "221048572386510048926929114698344318449016376683409",
+            "-10116195743049552744935820029642214",
+            "115536108171057561"
+          ],
+          "mask": 4130,
+          "norm_square_root": "2669550322808576876657820438743915452046071150662888734013100416000000000",
+          "one_based_anchor_basis_indices": [
+            2,
+            6,
+            13
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "447843536636822135970614661682147277191666654225809",
+            "-20574800050505157031224058720432614",
+            "235602991575307161"
+          ],
+          "mask": 8226,
+          "norm_square_root": "-26217942096671318966927851399805547862968952636323174692464713600000000000",
+          "one_based_anchor_basis_indices": [
+            2,
+            6,
+            14
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "1863574047315741001863757747952169",
+            "-86484532214575974",
+            "1"
+          ],
+          "mask": 16386,
+          "norm_square_root": "61486656013156275818097822935126075196160200000",
+          "one_based_anchor_basis_indices": [
+            2,
+            15
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "268653306065278346124599155752340025495499342748809",
+            "-12311478492619499904531528149290614",
+            "140738396180374161"
+          ],
+          "mask": 32802,
+          "norm_square_root": "-1871223194453920701047531475360252794259775241750859290998640220000000000",
+          "one_based_anchor_basis_indices": [
+            2,
+            6,
+            16
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "-37113183709579365653706412795693/3",
+            "-415002095940601966/9",
+            "1"
+          ],
+          "mask": 65568,
+          "norm_square_root": "8099988666720111411235069542497965918853700000000",
+          "one_based_anchor_basis_indices": [
+            6,
+            17
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "239707846995904448396658506024532878075322870080889",
+            "-10976664450760467950195657693094294",
+            "125414462200388481"
+          ],
+          "mask": 131106,
+          "norm_square_root": "-930524740661573838771085088316359376477008053762482735791978560800000000",
+          "one_based_anchor_basis_indices": [
+            2,
+            6,
+            18
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "46064231291690547",
+            "-1",
+            "0"
+          ],
+          "mask": 262144,
+          "norm_square_root": "-426469342384612620417240",
+          "one_based_anchor_basis_indices": [
+            19
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "424200260797345937060672211855657801/529",
+            "-33680574826862299446/529",
+            "1"
+          ],
+          "mask": 524320,
+          "norm_square_root": "64830955315924493581137372507316819960394578800000000/12167",
+          "one_based_anchor_basis_indices": [
+            6,
+            20
+          ]
+        }
+      ],
+      "W_u_dimension": 18,
+      "all_local_kummer_images_complete": true,
+      "combined_condition_column_count": 3,
+      "combined_condition_rank": 2,
+      "complete_finite_place_support": [
+        2,
+        3,
+        5,
+        7,
+        13,
+        17,
+        19,
+        31,
+        79,
+        1049,
+        71889448247,
+        40200713707633,
+        491007790268548705232623905732119,
+        550485889697549509378456967440666703691905279903
+      ],
+      "discriminant_multiplier": "-167347710468055050851050918101962677922339205090512",
+      "family_discriminant": "130145163067867199202335487093629568606047502148553782283430858957626478057735037728494312072631683885143463532722272894302792574910516825166523018320391034468429396807424793261305918941822976000000000",
+      "family_polynomial_ascending": [
+        "28005256198899979159596544301469502528517718781270727878188056751882095511736385045535266515492151400",
+        "33072690128939512669571541433144975761794647508688972666789279447324",
+        "11501772059807047518833435336278614",
+        "1"
+      ],
+      "finite_local_conditions": [
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-1",
+              "raw_x": "-1"
+            },
+            {
+              "model": "raw",
+              "model_x": "10",
+              "raw_x": "10"
+            }
+          ],
+          "conductor_exponent": 4,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 25,
+          "point_kummer_basis_complete": true,
+          "prime": 2
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "6",
+              "raw_x": "6"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 3
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 9,
+          "point_kummer_basis_complete": true,
+          "prime": 5
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "8",
+              "raw_x": "8"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "minimal_discriminant_valuation": 6,
+          "point_kummer_basis_complete": true,
+          "prime": 7
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            },
+            {
+              "model": "raw",
+              "model_x": "-6",
+              "raw_x": "-6"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 13
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [],
+          "conductor_exponent": 2,
+          "cubic_completion_factor_count": 1,
+          "expected_point_kummer_dimension": 0,
+          "found_point_kummer_dimension": 0,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 4,
+          "point_kummer_basis_complete": true,
+          "prime": 17
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "16",
+              "raw_x": "16"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 19
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-1",
+              "raw_x": "-1"
+            },
+            {
+              "model": "raw",
+              "model_x": "93",
+              "raw_x": "93"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 31
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "10",
+              "raw_x": "10"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 79
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "1",
+              "raw_x": "1"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 1049
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 71889448247
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "1",
+              "raw_x": "1"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 40200713707633
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "1",
+              "raw_x": "1"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 491007790268548705232623905732119
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-34680611050945624841728818852285761749307700773195",
+              "raw_x": "-34680611050945624841728818852285761749307700773195"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 550485889697549509378456967440666703691905279903
+        }
+      ],
+      "j_invariant": "198974707675618121029899946360008199771099340751712230477914627749353755237293218566006290275935098731226044971515722688627470528055226718807408055693521820434423405507251758078906606240729/2796258881208839562136905150748437958239970287815323584631667453752795836310292840587933361729540262345608618726814431986021434221672033247422544934012854094749717391280537616000000000",
+      "multiplier_denominator_factorization": [],
+      "multiplier_numerator_factorization": [
+        {
+          "exponent": 4,
+          "prime": 2
+        },
+        {
+          "exponent": 1,
+          "prime": 19
+        },
+        {
+          "exponent": 1,
+          "prime": 550485889697549509378456967440666703691905279903
+        }
+      ],
+      "newly_bad_primes_relative_to_anchor": [
+        19,
+        550485889697549509378456967440666703691905279903
+      ],
+      "parameter_u": "-1",
+      "raw_curve_ainvariants": [
+        "0",
+        "11501772059807047518833435336278614",
+        "0",
+        "33072690128939512669571541433144975761794647508688972666789279447324",
+        "28005256198899979159596544301469502528517718781270727878188056751882095511736385045535266515492151400"
+      ],
+      "real_local_condition": {
+        "alpha_root_order_by_theta_embedding": [
+          0,
+          2,
+          1
+        ],
+        "known_span_quotient_coordinate_dimension": 0,
+        "known_span_quotient_rows": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "point_kummer_dimension": 1,
+        "point_kummer_sign_generator": [
+          0,
+          1,
+          1
+        ],
+        "real_root_count": 3
+      },
+      "theta_from_alpha_power_basis": [
+        "83673855234027522550082444099219459252810768475603/41836927617013762712762729525490669480584801272628",
+        "-1437721507475880939854179417034827/41836927617013762712762729525490669480584801272628",
+        "-1/167347710468055050851050918101962677922339205090512"
+      ]
+    },
+    {
+      "W_u_basis": [
+        {
+          "beta_power_basis_coefficients": [
+            "38938605995265387",
+            "-1",
+            "0"
+          ],
+          "mask": 1,
+          "norm_square_root": "1567011534782236870320000",
+          "one_based_anchor_basis_indices": [
+            1
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "40728398414316387",
+            "-1",
+            "0"
+          ],
+          "mask": 2,
+          "norm_square_root": "826861274756882115849000",
+          "one_based_anchor_basis_indices": [
+            2
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "40646445315585387",
+            "-1",
+            "0"
+          ],
+          "mask": 4,
+          "norm_square_root": "864864487526694676560000",
+          "one_based_anchor_basis_indices": [
+            3
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "-1781634332835346413/121",
+            "-1",
+            "0"
+          ],
+          "mask": 8,
+          "norm_square_root": "20995778407111766599909800960/1331",
+          "one_based_anchor_basis_indices": [
+            4
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "41053801328565387",
+            "-1",
+            "0"
+          ],
+          "mask": 16,
+          "norm_square_root": "-666823981695924796380000",
+          "one_based_anchor_basis_indices": [
+            5
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "46378087661805387",
+            "-1",
+            "0"
+          ],
+          "mask": 32,
+          "norm_square_root": "623294235218399861340000",
+          "one_based_anchor_basis_indices": [
+            6
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "30677763793609707",
+            "-1",
+            "0"
+          ],
+          "mask": 64,
+          "norm_square_root": "-4449157623637218111674880",
+          "one_based_anchor_basis_indices": [
+            7
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "83612421019761387",
+            "-1",
+            "0"
+          ],
+          "mask": 128,
+          "norm_square_root": "16463284338967327473696000",
+          "one_based_anchor_basis_indices": [
+            8
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "-86012797757294613",
+            "-1",
+            "0"
+          ],
+          "mask": 256,
+          "norm_square_root": "5065324134400499941440000",
+          "one_based_anchor_basis_indices": [
+            9
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "-87487096017779733",
+            "-1",
+            "0"
+          ],
+          "mask": 512,
+          "norm_square_root": "922224694802954684843520",
+          "one_based_anchor_basis_indices": [
+            10
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "48371350182747387",
+            "-1",
+            "0"
+          ],
+          "mask": 1024,
+          "norm_square_root": "-1532406560023296217638000",
+          "one_based_anchor_basis_indices": [
+            11
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "28841055288088587",
+            "-1",
+            "0"
+          ],
+          "mask": 2048,
+          "norm_square_root": "-5047401798761139174520800",
+          "one_based_anchor_basis_indices": [
+            12
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "28429622094935787",
+            "-1",
+            "0"
+          ],
+          "mask": 4096,
+          "norm_square_root": "5179792341767753905977600",
+          "one_based_anchor_basis_indices": [
+            13
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "148496505499185387",
+            "-1",
+            "0"
+          ],
+          "mask": 8192,
+          "norm_square_root": "-50871300132065894076960000",
+          "one_based_anchor_basis_indices": [
+            14
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "45756133800259587",
+            "-1",
+            "0"
+          ],
+          "mask": 16384,
+          "norm_square_root": "74361513702809325169800",
+          "one_based_anchor_basis_indices": [
+            15
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "53631910104252387",
+            "-1",
+            "0"
+          ],
+          "mask": 32768,
+          "norm_square_root": "-3630779120197775017017000",
+          "one_based_anchor_basis_indices": [
+            16
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "-2400693015646517/9",
+            "-1",
+            "0"
+          ],
+          "mask": 65536,
+          "norm_square_root": "350877132570962237445485000/27",
+          "one_based_anchor_basis_indices": [
+            17
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "38307976124266707",
+            "-1",
+            "0"
+          ],
+          "mask": 131072,
+          "norm_square_root": "-1805519410637408543117880",
+          "one_based_anchor_basis_indices": [
+            18
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "46064231291690547",
+            "-1",
+            "0"
+          ],
+          "mask": 262144,
+          "norm_square_root": "-426469342384612620417240",
+          "one_based_anchor_basis_indices": [
+            19
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "9146566453767249723/529",
+            "-1",
+            "0"
+          ],
+          "mask": 524288,
+          "norm_square_root": "104013404348602679589842820000/12167",
+          "one_based_anchor_basis_indices": [
+            20
+          ]
+        }
+      ],
+      "W_u_dimension": 20,
+      "all_local_kummer_images_complete": true,
+      "combined_condition_column_count": 0,
+      "combined_condition_rank": 0,
+      "complete_finite_place_support": [
+        2,
+        3,
+        5,
+        7,
+        13,
+        17,
+        31,
+        79,
+        1049,
+        71889448247,
+        40200713707633,
+        491007790268548705232623905732119
+      ],
+      "discriminant_multiplier": "1",
+      "family_discriminant": "4647169165086201522253423951494063406713720029198475812735152009907780357949497411403055104000000000",
+      "family_polynomial_ascending": [
+        "167347710468055045100164888198438918505621536951206",
+        "-5750886029903523759416717668139307",
+        "0",
+        "1"
+      ],
+      "finite_local_conditions": [
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "3",
+              "raw_x": "3"
+            },
+            {
+              "model": "raw",
+              "model_x": "11",
+              "raw_x": "11"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 17,
+          "point_kummer_basis_complete": true,
+          "prime": 2
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-12",
+              "raw_x": "-12"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 3
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 9,
+          "point_kummer_basis_complete": true,
+          "prime": 5
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-2",
+              "raw_x": "-2"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 6,
+          "point_kummer_basis_complete": true,
+          "prime": 7
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            },
+            {
+              "model": "raw",
+              "model_x": "-2",
+              "raw_x": "-2"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 13
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [],
+          "conductor_exponent": 2,
+          "cubic_completion_factor_count": 1,
+          "expected_point_kummer_dimension": 0,
+          "found_point_kummer_dimension": 0,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 4,
+          "point_kummer_basis_complete": true,
+          "prime": 17
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            },
+            {
+              "model": "raw",
+              "model_x": "-92",
+              "raw_x": "-92"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 31
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "18",
+              "raw_x": "18"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 79
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "2",
+              "raw_x": "2"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 1049
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 71889448247
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "1",
+              "raw_x": "1"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 40200713707633
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 491007790268548705232623905732119
+        }
+      ],
+      "j_invariant": "115695723089153244393411983067091539639953769814333231626939680215335524416053678709438885201/408975954231094937763805023080293669997958297250320146698783408924921869375744000000000",
+      "multiplier_denominator_factorization": [],
+      "multiplier_numerator_factorization": [],
+      "newly_bad_primes_relative_to_anchor": [],
+      "parameter_u": "0",
+      "raw_curve_ainvariants": [
+        "0",
+        "0",
+        "0",
+        "-5750886029903523759416717668139307",
+        "167347710468055045100164888198438918505621536951206"
+      ],
+      "real_local_condition": {
+        "alpha_root_order_by_theta_embedding": [
+          0,
+          1,
+          2
+        ],
+        "known_span_quotient_coordinate_dimension": 0,
+        "known_span_quotient_rows": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "point_kummer_dimension": 1,
+        "point_kummer_sign_generator": [
+          0,
+          1,
+          1
+        ],
+        "real_root_count": 3
+      },
+      "theta_from_alpha_power_basis": [
+        "0",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "W_u_basis": [
+        {
+          "beta_power_basis_coefficients": [
+            "41235510119811444946859110307351511444535799852491381027120165143249",
+            "-1888148489144082596632348196315613666434417282698854",
+            "21570531708585212143552042681704921"
+          ],
+          "mask": 163,
+          "norm_square_root": "13295798819800761315218441083811770536466381537985223112750607327219034956428893235200000000000000",
+          "one_based_anchor_basis_indices": [
+            1,
+            2,
+            6,
+            8
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "-3496114480482380903289337516620231",
+            "45366352441709226",
+            "1"
+          ],
+          "mask": 260,
+          "norm_square_root": "4380818961654886691036668927439039740646400000000",
+          "one_based_anchor_basis_indices": [
+            3,
+            9
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "-410801937785547967989925985937533878917018656716010911489660336551",
+            "4835503109286322070528588310814151961112473251946",
+            "121240114751500993880573991650721"
+          ],
+          "mask": 593,
+          "norm_square_root": "4287438891934600144136599168913512277058419367935975032453035250097777620117393149788160000000000",
+          "one_based_anchor_basis_indices": [
+            1,
+            5,
+            7,
+            10
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "497455114222533341833943077320270939811833443498693310763027484888474524145447848790525231225218804809",
+            "-22777824497223506442340079672825865044792921451325960204985456333789200682684898466614",
+            "260209534837757233725855553954951209088722839660261037465763117798161"
+          ],
+          "mask": 1141,
+          "norm_square_root": "-3840399223941704440186789853103457576393471090086903674819251069639139979738313144278790196886376748231480681241313524488601600000000000000000000",
+          "one_based_anchor_basis_indices": [
+            1,
+            3,
+            5,
+            6,
+            7,
+            11
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "219431716903656815585221182407966027762543906367609",
+            "-10017407590940937730732468120035414",
+            "114157748945159361"
+          ],
+          "mask": 2081,
+          "norm_square_root": "-4929844056360714805867533895058032456568080818755193682603319040000000000",
+          "one_based_anchor_basis_indices": [
+            1,
+            6,
+            12
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "3742032818006425156636402933919513313403566075818763343405365093101322374201066761276279981970376239978359466475107974569/121",
+            "-1416056742578186460806080256493653813428888346077049718301685633518677908569700007560542184111495376294",
+            "177944433526400702883635691646660862739477949839408897782983631003969555091921046626291/11"
+          ],
+          "mask": 4219,
+          "norm_square_root": "260574125164400209974848261630502501390359870145886660734102043267269034968040049730456737371734688731192697388557587489653716427076365451975903641736314880000000000000000000/1331",
+          "one_based_anchor_basis_indices": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            13
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "148496505499185387",
+            "-1",
+            "0"
+          ],
+          "mask": 8192,
+          "norm_square_root": "-50871300132065894076960000",
+          "one_based_anchor_basis_indices": [
+            14
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "32549376449078916571091380031548809036079394134171463597917822067049",
+            "-1490387603233047249765394004338622098788999847473654",
+            "17025840506947844363776981900835121"
+          ],
+          "mask": 16422,
+          "norm_square_root": "33145307256284981467427388316210874969894429430763946084078502881757430793058502080000000000000",
+          "one_based_anchor_basis_indices": [
+            2,
+            3,
+            6,
+            15
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "31773962848960821859039856826333191324141385801836470538943692418129",
+            "-1454785824164380891947337843173299371317242321471334",
+            "16618307500306448207752105144260441"
+          ],
+          "mask": 32868,
+          "norm_square_root": "8708007537455916593058170519216653600922505457783846972692713186591220786553198915584000000000000",
+          "one_based_anchor_basis_indices": [
+            3,
+            6,
+            7,
+            16
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "185696289222096272891501155236571722003512885236653984519012338539561525665132691158009/121",
+            "-8503595125014005495646178559444171100461165187763861979552071526633814/121",
+            "8832280101990380227459327654807615957458385534436451/11"
+          ],
+          "mask": 65593,
+          "norm_square_root": "-177705060547682959459335792373122167023630822795351485226196432892340337128103957936060768255278762803258163200000000000000000/1331",
+          "one_based_anchor_basis_indices": [
+            1,
+            4,
+            5,
+            6,
+            17
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "1982492128398032143742619119111880669974823984671461681852058595567249/121",
+            "-91185093703106049370123255794652140878223797845402854/121",
+            "1046841374023611591983881608729600921/121"
+          ],
+          "mask": 131083,
+          "norm_square_root": "-49117809256652255360989936132555583538212000242364668212296193584253392143102850707791396864000000000/1331",
+          "one_based_anchor_basis_indices": [
+            1,
+            2,
+            4,
+            18
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "222373708346313092439635983040429667128979644611329",
+            "-10152259946721310662830970515987334",
+            "115680601080565641"
+          ],
+          "mask": 262209,
+          "norm_square_root": "2973293640147669022174106795155279492329362279528284472241857961984000000",
+          "one_based_anchor_basis_indices": [
+            1,
+            7,
+            19
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "1604822874489409337819345953965206134083163656072675427279551821834251744290830552997801/529",
+            "-73483394196501269700286897943419547449443312683630506605244368068419446/529",
+            "839468592062115094940159328340129681490193072791900529/529"
+          ],
+          "mask": 524404,
+          "norm_square_root": "166348729586265980482439372131197183649480529486417886803628052158037285647093652131900954692511006601007923200000000000000000/12167",
+          "one_based_anchor_basis_indices": [
+            3,
+            5,
+            6,
+            7,
+            20
+          ]
+        }
+      ],
+      "W_u_dimension": 13,
+      "all_local_kummer_images_complete": true,
+      "combined_condition_column_count": 8,
+      "combined_condition_rank": 7,
+      "complete_finite_place_support": [
+        2,
+        3,
+        5,
+        7,
+        13,
+        17,
+        23,
+        31,
+        79,
+        103,
+        1049,
+        71889448247,
+        40200713707633,
+        491007790268548705232623905732119,
+        735074448304715650993556022553346486326391
+      ],
+      "discriminant_multiplier": "167347710468055039349278858294915159088903868811900",
+      "family_discriminant": "130145163067867181312637491150390197015972982938793657670836032180510892650372093072172139715802567390414381759883504271523618769473220867209593113049032956880836707745525941747219647037440000000000000",
+      "family_polynomial_ascending": [
+        "-28005256198899981084391764835624386851279023939799716664098335016980957659659241952696282383757557472",
+        "33072690128939513673657804241475246362783976699322483700518501154560",
+        "-11501772059807047518833435336278614",
+        "1"
+      ],
+      "finite_local_conditions": [
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-1",
+              "raw_x": "-1"
+            },
+            {
+              "model": "raw",
+              "model_x": "-3164",
+              "raw_x": "-3164"
+            }
+          ],
+          "conductor_exponent": 6,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 33,
+          "point_kummer_basis_complete": true,
+          "prime": 2
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "24",
+              "raw_x": "24"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 3
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "1",
+              "raw_x": "1"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 13,
+          "point_kummer_basis_complete": true,
+          "prime": 5
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-124",
+              "raw_x": "-124"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "minimal_discriminant_valuation": 6,
+          "point_kummer_basis_complete": true,
+          "prime": 7
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "2",
+              "raw_x": "2"
+            },
+            {
+              "model": "raw",
+              "model_x": "-3",
+              "raw_x": "-3"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 13
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [],
+          "conductor_exponent": 2,
+          "cubic_completion_factor_count": 1,
+          "expected_point_kummer_dimension": 0,
+          "found_point_kummer_dimension": 0,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 4,
+          "point_kummer_basis_complete": true,
+          "prime": 17
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-3",
+              "raw_x": "-3"
+            },
+            {
+              "model": "raw",
+              "model_x": "-43",
+              "raw_x": "-43"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 23
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "901",
+              "raw_x": "901"
+            },
+            {
+              "model": "raw",
+              "model_x": "1056",
+              "raw_x": "1056"
+            }
+          ],
+          "conductor_exponent": 2,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 2,
+          "known_span_quotient_rows": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 6,
+          "point_kummer_basis_complete": true,
+          "prime": 31
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-53",
+              "raw_x": "-53"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 79
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-1",
+              "raw_x": "-1"
+            },
+            {
+              "model": "raw",
+              "model_x": "29",
+              "raw_x": "29"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 103
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 1049
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "1",
+              "raw_x": "1"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 71889448247
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 40200713707633
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-2",
+              "raw_x": "-2"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 491007790268548705232623905732119
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-47044764685750915633684061683997457456749718",
+              "raw_x": "-47044764685750915633684061683997457456749718"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 735074448304715650993556022553346486326391
+        }
+      ],
+      "j_invariant": "14348539125934685860050381829862787686820219839853803952787520019438053443134114998757486863883145982947839182156362160849947261889308598319608130892292437256824730128464561288518329/201644874526853604539494148423635729736082612660853179231026163723201947337162766192111657371938616846793810297084079920044379979391619139445165117570794163802886760000000000000",
+      "multiplier_denominator_factorization": [],
+      "multiplier_numerator_factorization": [
+        {
+          "exponent": 2,
+          "prime": 2
+        },
+        {
+          "exponent": 2,
+          "prime": 5
+        },
+        {
+          "exponent": 1,
+          "prime": 23
+        },
+        {
+          "exponent": 2,
+          "prime": 31
+        },
+        {
+          "exponent": 1,
+          "prime": 103
+        },
+        {
+          "exponent": 1,
+          "prime": 735074448304715650993556022553346486326391
+        }
+      ],
+      "newly_bad_primes_relative_to_anchor": [
+        23,
+        103,
+        735074448304715650993556022553346486326391
+      ],
+      "parameter_u": "1",
+      "raw_curve_ainvariants": [
+        "0",
+        "-11501772059807047518833435336278614",
+        "0",
+        "33072690128939513673657804241475246362783976699322483700518501154560",
+        "-28005256198899981084391764835624386851279023939799716664098335016980957659659241952696282383757557472"
+      ],
+      "real_local_condition": {
+        "alpha_root_order_by_theta_embedding": [
+          1,
+          2,
+          0
+        ],
+        "known_span_quotient_coordinate_dimension": 1,
+        "known_span_quotient_rows": [
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "point_kummer_dimension": 1,
+        "point_kummer_sign_generator": [
+          1,
+          0,
+          1
+        ],
+        "real_root_count": 3
+      },
+      "theta_from_alpha_power_basis": [
+        "-83673855234027522550082444099219459252810768475603/41836927617013759837319714573728789772225967202975",
+        "1437721507475880939854179417034827/41836927617013759837319714573728789772225967202975",
+        "-1/167347710468055039349278858294915159088903868811900"
+      ]
+    },
+    {
+      "W_u_basis": [
+        {
+          "beta_power_basis_coefficients": [
+            "43638001747733628812810472628705101710498655159813075967109679776134130951661272740909083520774515961329/121",
+            "-1998138627723175996315645657942300238751909001426397603731899415410239800829435418378534/121",
+            "2075136523817794751891178813749430240158698089609250866066524182433931/11"
+          ],
+          "mask": 252,
+          "norm_square_root": "50255772352775869523280109914444066422163157092341959688349470417989713585849438297853720941208988296504281730355584160154429004185600000000000000000/121",
+          "one_based_anchor_basis_indices": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "-118096423412262762595991901945809620752524955875605880800892924871",
+            "-9227650810660276557317981251567541516199069893334",
+            "291080139041863200696779134413441"
+          ],
+          "mask": 325,
+          "norm_square_root": "-30542549868871323431447285705173454278335186257057440825257371307553905854638577418240000000000000",
+          "one_based_anchor_basis_indices": [
+            1,
+            3,
+            7,
+            9
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "161756557822385987453657767463963994136927419483010127025865495660486090847471592632547092574848529",
+            "-7784520518975829291182626388004625001140155318580465717701311663865442535507509734",
+            "93656554896330987713411763109508695203212451712642757209153462041"
+          ],
+          "mask": 599,
+          "norm_square_root": "3066045959699342556499769357422382615859300146495997353139230401678416437601601922566540139275978560751142127999965890819286630400000000000000000",
+          "one_based_anchor_basis_indices": [
+            1,
+            2,
+            3,
+            5,
+            7,
+            10
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "227663980950806469699631681192634048899758010346889",
+            "-10447876373673302980263141280410294",
+            "119695559291942481"
+          ],
+          "mask": 1092,
+          "norm_square_root": "5896575441643460914593103725355252657650275168952068765839384166400000000",
+          "one_based_anchor_basis_indices": [
+            3,
+            7,
+            11
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "-51384214296461049338608366776688431/121",
+            "-1708133357023372614/121",
+            "1"
+          ],
+          "mask": 2056,
+          "norm_square_root": "-105974129698446216168551763153286068502431831379968000/1331",
+          "one_based_anchor_basis_indices": [
+            4,
+            12
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "1658611080658020716347159132873727336158530113578755142198381621428849/121",
+            "-77872729750196708681962299771103839269403392569916454/121",
+            "914366504629140339845908622832627321/121"
+          ],
+          "mask": 4172,
+          "norm_square_root": "-38043240380272444258141689446485177978964295701693473507875549185773944075191425832877608140800000000/121",
+          "one_based_anchor_basis_indices": [
+            3,
+            4,
+            7,
+            13
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "60028821162459061914174319163028223182634983508316316886547308017372608272735638232720033987907021536329/121",
+            "-249879236379066342426111276359214283766680962356829551328653209160727111192922001802594/11",
+            "31400699244866023873352703685000046545731162162802689346288824140948241/121"
+          ],
+          "mask": 8302,
+          "norm_square_root": "192558969095532166323364993263451084224502077944003928008346565821419414278881084529981280988728079802507472810844873579294903553228800000000000000000/121",
+          "one_based_anchor_basis_indices": [
+            2,
+            3,
+            4,
+            6,
+            7,
+            14
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "33533224991148094322922536213692443950128608968761140789820962323775862478144458245248060715651213621129/121",
+            "-1535442033565002890759323260864166410731168158720289137904011656427766005219660538609334/121",
+            "17540588796187280236145682983414642005490998584840992707381409692047441/121"
+          ],
+          "mask": 16505,
+          "norm_square_root": "4524124087297794284838900909595942017047771727314616585244011769363787890811036100011063177568890208388349494528171867563972372725760000000000000000/1331",
+          "one_based_anchor_basis_indices": [
+            1,
+            4,
+            5,
+            6,
+            7,
+            15
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "264176524112501979389781774231694711943436237590254598143521795570123905144727493282089/121",
+            "-12102458346964368219618513392465663155742334428331929444389308245989494/121",
+            "138334868188725803625444378097362730372379622427543281/121"
+          ],
+          "mask": 32845,
+          "norm_square_root": "41786613366928232437958770821901109917808721698531618416130763484464215891127645539517174228027758889462682091520000000000000/121",
+          "one_based_anchor_basis_indices": [
+            1,
+            3,
+            4,
+            7,
+            16
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "166968193973564605280561155240768836173098212753889",
+            "-21459323663707238897292804471916882/3",
+            "691101970083089329/9"
+          ],
+          "mask": 65632,
+          "norm_square_root": "-36038126327912849575501115810512771509900650573750461238676685056000000000",
+          "one_based_anchor_basis_indices": [
+            6,
+            7,
+            17
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "3584358573556594174256388708571710485072643520707899539134717469215716138432357069049",
+            "-164123535343227388602126345258970467777101564977452042596457138765654",
+            "1874921422266468144533507881712016099665564764493121"
+          ],
+          "mask": 131171,
+          "norm_square_root": "6487508053776909227931502323879768532980288043478250614717679538781203466712649475696810194569326494968545280000000000000",
+          "one_based_anchor_basis_indices": [
+            1,
+            2,
+            6,
+            7,
+            18
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "250983798868216754153813808846318643847849180843532328681587886297008911585705648203929/121",
+            "-11492292424740091131002364222798283243012963614523132648511415551098134/121",
+            "131287026283360451110178284497972516308931893136988641/121"
+          ],
+          "mask": 262233,
+          "norm_square_root": "-41627563583215499737657315157803677394067229772714830960010154531292966614072366984654841114928618795975325201203200000000000/1331",
+          "one_based_anchor_basis_indices": [
+            1,
+            4,
+            5,
+            7,
+            19
+          ]
+        },
+        {
+          "beta_power_basis_coefficients": [
+            "1604822874489409337819345953965206134083163656072675427279551821834251744290830552997801/529",
+            "-73483394196501269700286897943419547449443312683630506605244368068419446/529",
+            "839468592062115094940159328340129681490193072791900529/529"
+          ],
+          "mask": 524404,
+          "norm_square_root": "166348729586265980482439372131197183649480529486417886803628052158037285647093652131900954692511006601007923200000000000000000/12167",
+          "one_based_anchor_basis_indices": [
+            3,
+            5,
+            6,
+            7,
+            20
+          ]
+        }
+      ],
+      "W_u_dimension": 13,
+      "all_local_kummer_images_complete": true,
+      "combined_condition_column_count": 8,
+      "combined_condition_rank": 7,
+      "complete_finite_place_support": [
+        2,
+        3,
+        5,
+        7,
+        13,
+        17,
+        31,
+        79,
+        233,
+        647,
+        1049,
+        71889448247,
+        40200713707633,
+        26558335042564254253,
+        47769497729370851316266401,
+        491007790268548705232623905732119
+      ],
+      "discriminant_multiplier": "1338781683744440337797774985973416310378101623052421",
+      "family_discriminant": "8329290436343499890243967368716795177132946079831110977732387781933319205203779378858720821908341681270705241966195388626995414434483701848883255248636271134040133346509859245444419275643224064000000000",
+      "family_polynomial_ascending": [
+        "-224042049591199844825543677616685326164709581201340257784097527770785237476092817124003744198140501250",
+        "132290760515758053690544954157570732102804667317227702018497787328925",
+        "-23003544119614095037666870672557228",
+        "1"
+      ],
+      "finite_local_conditions": [
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "2",
+              "raw_x": "2"
+            },
+            {
+              "model": "raw",
+              "model_x": "3",
+              "raw_x": "3"
+            }
+          ],
+          "conductor_exponent": 4,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 29,
+          "point_kummer_basis_complete": true,
+          "prime": 2
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "6",
+              "raw_x": "6"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 3
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "2",
+              "raw_x": "2"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 9,
+          "point_kummer_basis_complete": true,
+          "prime": 5
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-533",
+              "raw_x": "-533"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "minimal_discriminant_valuation": 8,
+          "point_kummer_basis_complete": true,
+          "prime": 7
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            },
+            {
+              "model": "raw",
+              "model_x": "-7",
+              "raw_x": "-7"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 13
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [],
+          "conductor_exponent": 2,
+          "cubic_completion_factor_count": 1,
+          "expected_point_kummer_dimension": 0,
+          "found_point_kummer_dimension": 0,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 4,
+          "point_kummer_basis_complete": true,
+          "prime": 17
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "3",
+              "raw_x": "3"
+            },
+            {
+              "model": "raw",
+              "model_x": "-5",
+              "raw_x": "-5"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 31
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "113",
+              "raw_x": "113"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 79
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-3",
+              "raw_x": "-3"
+            },
+            {
+              "model": "raw",
+              "model_x": "-14881",
+              "raw_x": "-14881"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 233
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "4",
+              "raw_x": "4"
+            },
+            {
+              "model": "raw",
+              "model_x": "47",
+              "raw_x": "47"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 3,
+          "expected_point_kummer_dimension": 2,
+          "found_point_kummer_dimension": 2,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 647
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "2",
+              "raw_x": "2"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 1049
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 71889448247
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "0",
+              "raw_x": "0"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 40200713707633
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-1644607185268363294861",
+              "raw_x": "-1644607185268363294861"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 26558335042564254253
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "-3013666439513828978500616741",
+              "raw_x": "-3013666439513828978500616741"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 1,
+          "known_span_quotient_rows": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ],
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              1
+            ]
+          ],
+          "minimal_discriminant_valuation": 2,
+          "point_kummer_basis_complete": true,
+          "prime": 47769497729370851316266401
+        },
+        {
+          "bad_reduction": true,
+          "basis_witnesses": [
+            {
+              "model": "raw",
+              "model_x": "1",
+              "raw_x": "1"
+            }
+          ],
+          "conductor_exponent": 1,
+          "cubic_completion_factor_count": 2,
+          "expected_point_kummer_dimension": 1,
+          "found_point_kummer_dimension": 1,
+          "known_span_quotient_coordinate_dimension": 0,
+          "known_span_quotient_rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "minimal_discriminant_valuation": 1,
+          "point_kummer_basis_complete": true,
+          "prime": 491007790268548705232623905732119
+        }
+      ],
+      "j_invariant": "52160025768917226030114499302826441422860471857890734054982183303929620639399323039394327941090395084730738194232522858963934102411574808858919469397316344042753941514586344635832315033652229689/733022488155609962606100510166743621561178312241670096746709942054448473466392344956510830080290839924450945323225571754570884393031521268540526863902339157794145839476832481538304000000000",
+      "multiplier_denominator_factorization": [],
+      "multiplier_numerator_factorization": [
+        {
+          "exponent": 1,
+          "prime": 7
+        },
+        {
+          "exponent": 1,
+          "prime": 233
+        },
+        {
+          "exponent": 1,
+          "prime": 647
+        },
+        {
+          "exponent": 1,
+          "prime": 26558335042564254253
+        },
+        {
+          "exponent": 1,
+          "prime": 47769497729370851316266401
+        }
+      ],
+      "newly_bad_primes_relative_to_anchor": [
+        233,
+        647,
+        26558335042564254253,
+        47769497729370851316266401
+      ],
+      "parameter_u": "2",
+      "raw_curve_ainvariants": [
+        "0",
+        "-23003544119614095037666870672557228",
+        "0",
+        "132290760515758053690544954157570732102804667317227702018497787328925",
+        "-224042049591199844825543677616685326164709581201340257784097527770785237476092817124003744198140501250"
+      ],
+      "real_local_condition": {
+        "alpha_root_order_by_theta_embedding": [
+          1,
+          2,
+          0
+        ],
+        "known_span_quotient_coordinate_dimension": 1,
+        "known_span_quotient_rows": [
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "point_kummer_dimension": 1,
+        "point_kummer_sign_generator": [
+          1,
+          0,
+          1
+        ],
+        "real_root_count": 3
+      },
+      "theta_from_alpha_power_basis": [
+        "-1338781683744440360801319105587511348044972295609648/1338781683744440337797774985973416310378101623052421",
+        "3286220588516299291095267238936747/191254526249205762542539283710488044339728803293203",
+        "-2/1338781683744440337797774985973416310378101623052421"
+      ]
+    }
+  ],
+  "schema": "elliptic-curves.fixed-cubic-field-varying-curve-local-kummer.v1",
+  "software": {
+    "pari": "(2, 17, 3)",
+    "sage": "10.9"
+  },
+  "source_hashes": {
+    "artifacts/generated-results/elliptic-curves/elliptic_curve_candidate_fermigier_mestre_v1_u28917_20.json": "0a45bd473d1eba34e1b548eb71c29b0e12bfcc90d74059e5be4aefd7e236d149",
+    "artifacts/generated-results/elliptic-curves/fermigier_rank20_near_miss_v1.json": "8416e835887236e9e4eafcb01384a710ce4f1be0628701a97f4a7d7a07fe63b1",
+    "elliptic-curves/cas/fixed_cubic_field_curve_family.py": "3fa2163ed729b39a152585ff6e7ac4402bf83109844281ba8f2f87b5c63a6843",
+    "elliptic-curves/cas/run_fixed_cubic_field_curve_family.sage": "d5c9853b7ed8626af06eed07db59636c659990aacd7c8eb97794308c4c47d4ec"
+  },
+  "status": "PASS_EXACT_FULL_SPAN_LOCAL_INTERSECTIONS_NO_CLASS_GROUP"
+}

@@ -20,6 +20,7 @@
     "initial_gain_policy": "Initial 43-chart gain is a detector phase and diagnostic, never a candidate-selection or leaderboard filter. Gains 1 through 17 enter the adaptive phase; initial zero remains a bounded detector result and does not reject the immutable candidate.",
     "name": "exact generic-depth to adaptive half-lattice detector",
     "normalization_policy": "certify and classify on the p=2-minimal-to-short model; 074d9 also searches there, while other exact direct-family charts search on the direct short integral model with exact point transport between the two isomorphic models",
+    "quartic_preprocessing": "none: exact PARI hyperellratpoints runs on the denominator-cleared pointed quartic itself; exact canaries showed that preprocessing, not the bounded point search, exhausted 15 and 60 second envelopes on 07ca9",
     "rank_lower_bound_field": "certified_rank_lower_bound",
     "rank_lower_bound_formula": "17 + actual_certified_quotient_rank_gain",
     "ranking_field": "actual_certified_quotient_rank_gain",
@@ -52,20 +53,20 @@
     "source_files_are_read_only": true
   },
   "implementation_hashes": {
-    "elkies-k3/scripts/build_mw17_jump_v2_campaign.py": "8cd2182ee06456dcd50c6a46b3959c9cbe7aeb8875c8960cad34cbdf1de0faf4",
+    "elkies-k3/scripts/build_mw17_jump_v2_campaign.py": "301296c50130d45afa5076960858bd52366476510712301dd5cd19d9d15c7b73",
     "elliptic-curves/cas/half_lattice_chart_policy.py": "6d6166f7e24cdd2f7f638c99506b3debf66e25b846f7ec45fe1cc85b15692fea",
     "elliptic-curves/cas/half_lattice_fake_descent_replay.sage": "8e33f6df508ab6f94f75f446ddb85e3459b73b1abe33ef8a41bfe7d8513f1569",
     "elliptic-curves/cas/run_curve385_iterated_half_lattice_search.sage": "b565ab1b9f372f52d5317c3dd88301ed8d1359588fdcf559b66ac94f15157b35",
-    "elliptic-curves/cas/run_mw17_jump_v2.sage": "6bbc6a9176a4dd5940df176c5335c934c523797621e90cd19658ae9ffd9757f8",
+    "elliptic-curves/cas/run_mw17_jump_v2.sage": "485ea3f6a772c8c17d9a1ed8bfafdd4fe4e11a29659dae7ea07c4e0a7c0a146d",
     "elliptic-curves/cas/run_r17_refresh_jump_ladder_blind.sage": "ed2e53143655db63d7db3b206fc245e14a16d52375450815c42a223bfcbe476e",
     "elliptic-curves/cas/run_r17_refresh_jump_ladder_blind_v2.sage": "3f320f89b92374a82c1a1b906f5f4f9da6b8b517b0eee7a284dc228695ba2528"
   },
-  "protocol_definition_sha256": "0dbedaafaf0b030f30cd295110915953850a9d51d16a2ac28f2acea01c47c3ec",
+  "protocol_definition_sha256": "c96307ed732ca5199ecd07af7a2197b732af9e9d208c2c8823e616d95df7e242",
   "resource_gate": {
     "checkpoint_unit": "one completed fibre per chunk file rewrite",
     "explicit_large_campaign_scope": "the 2,239 selected fibres in this manifest only",
     "forbidden_rescan": "the 121,589,944-parameter H=10000 scan is not run by this campaign",
-    "worker_address_space_bytes": 16000000000,
+    "worker_address_space_bytes": 24000000000,
     "worker_wall_timeout_seconds": 7200
   },
   "rows": [

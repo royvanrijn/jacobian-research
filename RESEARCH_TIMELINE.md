@@ -348,8 +348,11 @@ one chart does not exclude a high-rank fibre on another chart.
   plus native alternate-Q80 curve 12.  Every exceptional block adds zero
   bad-valuation rank; the certified residual 2-class-image lower-bound strata
   are `+5 -> 3`, `+6 -> 5`, `+8 -> 6`, and `+12 -> 10..11`.  This explains
-  the full-BNF pressure across both frames, but is not prospective prediction
-  because the exceptional points are inputs.
+  the full-BNF pressure across both frames by localizing the already-known
+  exceptional Kummer information in global 2-class directions.  It does not
+  explain why the rational points appear: the separation is largely forced by
+  the zero valuation-rank identity, and prospectively a residual Selmer space
+  still mixes Mordell--Weil directions with `Sha[2]`.
 <!-- status-consumer: EC-K3-R17-KUMMER-CLASSGROUP-PRESSURE-COMPARISON 74b1dae24470b531 -->
 - A later projection from the live 556-curve database preserved the 69
   recognized fibres and 1,545 displayed points.  Seven priority fibres now

@@ -203,7 +203,7 @@ def analysis_for_rows(rows, *, confirmatory):
         "kendall_pair_counts": pair_counts,
         "stratified_randomization": stratified_randomization(dimensions, gains, blocks),
         "predeclared_total_class_group_negative_control": {
-            "predictor": "dim Cl(K)/2Cl(K)",
+            "predictor": "dim Cl(K)[2] (= dim Cl(K)/2Cl(K))",
             "kendall_tau_b": total_tau,
             "kendall_pair_counts": total_pair_counts,
             "stratified_randomization": stratified_randomization(
