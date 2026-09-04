@@ -5,7 +5,7 @@
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
 <!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 252991e141c42e55 -->
 <!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 6b9d34ae8d722280 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY d94b3dbddf5cb529 -->
 
 ## Result
 
@@ -183,9 +183,10 @@ handoff is empty.
 
 The operational priority now comes from the global `T`-first planner. It
 orders all 827 transcendental rows before NS/rootless inspection and has an
-823-row arithmetic research queue. Its first exact-coarse diagnostics are
-determinants `378`, `256`, and `512`; their `X_0(7)`, `X_0(2)`, and `X_0(4)`
-labels do not replace the still-missing literal stable-kernel calculations.
+822-row arithmetic research queue. The split determinant-378 diagnostic is
+excluded by its exact stable `X_0(63)` curve. The next exact-coarse diagnostics
+are determinants `256` and `512`; their `X_0(2)` and `X_0(4)` labels do not
+replace the still-missing literal stable-kernel calculations.
 
 The determinant-1184 NS0031 surface has a one-parameter formally smooth
 `Z_7` marked branch and marking-level corridor evidence, but it is now

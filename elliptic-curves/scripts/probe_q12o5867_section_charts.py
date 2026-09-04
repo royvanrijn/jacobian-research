@@ -218,15 +218,22 @@ def main() -> None:
         not is_on_weierstrass_curve(model, point) for point in baseline
     ):
         raise AssertionError("the serialized exact baseline is invalid")
-    gate = require_gate_for_specialization(
-        args.residual_selmer_gate, specialization
-    )
     baseline_x = tuple(point[0] for point in baseline)
     charts = chart_inventory(
         baseline_x, args.pair_mode, args.include_multiplicative
     )
     if args.chart_limit is not None:
         charts = charts[: args.chart_limit]
+    gate = require_gate_for_specialization(
+        args.residual_selmer_gate,
+        specialization,
+        requested_search_limits={
+            "height": args.height,
+            "denominator_bound": args.denominator_bound,
+            "chart_count": len(charts),
+            "wall_seconds_per_chart": args.per_chart_timeout,
+        },
+    )
     completed_square = completed_square_coefficients(model)
     raw_directory = args.raw_directory or args.output.with_suffix("")
     raw_directory.mkdir(parents=True, exist_ok=True)

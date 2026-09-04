@@ -1,0 +1,50 @@
+{
+  "schema": "elkies-k3.arithmetic-first-marking-decisions.v1",
+  "policy": "This registry contains exact full-marking decisions for transcendental rows outside the rootless-MW17 subcatalogue. Every non-UNKNOWN decision must replay a named certificate and retain its external theorem inputs.",
+  "records": [
+    {
+      "surface_id": "K3-7b71a1cc00b0c6e2",
+      "classification": "ARITHMETICALLY_EXCLUDED",
+      "certificates": [
+        {
+          "path": "artifacts/generated-results/elkies-k3-det378-qq-marking-obstruction-v1.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_DET378_QQ_RATIONAL_MARKING_OBSTRUCTION"
+            },
+            {
+              "path": "stable_discriminant_kernel.norm_one_spin_discriminant_image_isomorphism_type",
+              "equals": "A4"
+            },
+            {
+              "path": "stable_discriminant_kernel.index_over_coarse_curve",
+              "equals": 12
+            },
+            {
+              "path": "exact_marked_modular_curve.label",
+              "equals": "X_0(63)"
+            },
+            {
+              "path": "exact_marked_modular_curve.rational_points.noncuspidal_points",
+              "equals": 0
+            }
+          ]
+        }
+      ],
+      "full_marking_curve": {
+        "status": "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE",
+        "label": "X_0(63)",
+        "genus": 5,
+        "rational_non_CM_point": false,
+        "stable_kernel_index_over_coarse": 12
+      },
+      "decision": "The literal determinant-378 stable kernel is conjugate to Gamma_0(63), and X_0(63)(QQ) has no noncuspidal point.",
+      "theorem_inputs": [
+        "Mazur--Kenku's complete classification of rational cyclic-isogeny degrees",
+        "the standard normalizer description for split Eichler orders",
+        "the standard marked-K3 ternary-spin period correspondence"
+      ]
+    }
+  ]
+}

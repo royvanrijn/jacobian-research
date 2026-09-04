@@ -14,6 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 LOCAL = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-local-fingerprints-v1.json"
 NATIVE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-native-icarm-quotient-audit-v1.json"
+HIGHEST = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-highest-rank-transports-v1.json"
 WGXLI = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json"
 NORM8 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-curve12-norm8-incidence-v1.json"
 NORM8_MORE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-norm8-incidence-v1.json"
@@ -32,21 +33,27 @@ def relative(path: Path) -> str:
 def build():
     local = json.loads(LOCAL.read_text())
     native = json.loads(NATIVE.read_text())
+    highest = json.loads(HIGHEST.read_text())
     wgxli = json.loads(WGXLI.read_text())
     norm8 = json.loads(NORM8.read_text())
     norm8_more = json.loads(NORM8_MORE.read_text())
     if len(local["fibres"]) != 69:
         raise ArithmeticError("the local feature table no longer has 69 rows")
     native_by_id = {int(row["curve_id"]): row for row in native["fibres"]}
+    highest_by_id = {int(row["curve_id"]): row for row in highest["fibres"]}
     wgxli_by_id = {
         int(row["curve_id"]): row for row in wgxli["exceptional_quotients"]
     }
-    overlap = set(native_by_id) & set(wgxli_by_id)
+    overlap = (
+        (set(native_by_id) & set(highest_by_id))
+        | (set(native_by_id) & set(wgxli_by_id))
+        | (set(highest_by_id) & set(wgxli_by_id))
+    )
     if overlap:
         raise ArithmeticError(f"duplicate exact quotient audits: {sorted(overlap)}")
-    exact_ids = set(native_by_id) | set(wgxli_by_id)
-    if len(exact_ids) != 12:
-        raise ArithmeticError("expected twelve exact displayed-quotient audits")
+    exact_ids = set(native_by_id) | set(highest_by_id) | set(wgxli_by_id)
+    if len(exact_ids) != 15:
+        raise ArithmeticError("expected fifteen exact displayed-quotient audits")
     hit_count = {
         row["representative"]: int(row["recognized_public_hit_count"])
         for row in local["class_summaries"]
@@ -69,6 +76,7 @@ def build():
     for source in local["fibres"]:
         curve_id = int(source["curve_id"])
         native_row = native_by_id.get(curve_id)
+        highest_row = highest_by_id.get(curve_id)
         old_row = wgxli_by_id.get(curve_id)
         if native_row is not None:
             quotient_dimension = int(
@@ -82,6 +90,15 @@ def build():
                 cover["exact_split_span_rank_in_exceptional_quotient"]
             )
             fixed_visibility_primitive = bool(cover["split_span_is_primitive"])
+        elif highest_row is not None:
+            quotient_dimension = int(
+                highest_row["displayed_exceptional_quotient"]["free_rank"]
+            )
+            quotient_source = "exact highest-rank chart transport"
+            fixed_cover_count = None
+            fixed_split_count = None
+            fixed_visibility_rank = None
+            fixed_visibility_primitive = None
         elif old_row is not None:
             quotient_dimension = int(old_row["free_rank"])
             quotient_source = "prior exact 074d9/wgxli audit"
@@ -183,7 +200,7 @@ def build():
         "claim_boundary": {
             "exact": [
                 "all local-symbol features",
-                "the twelve non-null displayed exceptional quotient dimensions",
+                "the fifteen non-null displayed exceptional quotient dimensions",
                 "the seven non-null fixed-cover visibility records",
                 "the five non-null norm-eight fitted incidence counts",
             ],
@@ -191,12 +208,12 @@ def build():
                 "Nagao scores as predictors",
                 "historical search exposure",
                 "family-quality attribution",
-                "the 57 null displayed quotient dimensions",
+                "the 54 null displayed quotient dimensions",
             ],
         },
         "inputs": {
             relative(path): digest(path)
-            for path in (LOCAL, NATIVE, WGXLI, NORM8, NORM8_MORE)
+            for path in (LOCAL, NATIVE, HIGHEST, WGXLI, NORM8, NORM8_MORE)
         },
         "reproducing_command": (
             ".venv/bin/python elkies-k3/scripts/"
@@ -228,7 +245,7 @@ def main():
         output.write_text(serialized)
         table_output.write_text(table_text)
     print(
-        "R17ICARMCALIBRATION|rows=69|exact_quotients=12|native_visibility=7|"
+        "R17ICARMCALIBRATION|rows=69|exact_quotients=15|native_visibility=7|"
         f"norm8=5|local=69|status=PASS|output={relative(output)}",
         flush=True,
     )

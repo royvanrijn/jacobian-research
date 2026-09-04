@@ -208,7 +208,15 @@ def run_worker(args: argparse.Namespace) -> int:
         raise ValueError("the input does not have 17 transported generic points")
     if any(not is_on_weierstrass_curve(model, point) for point in baseline_points):
         raise AssertionError("a serialized baseline point missed the minimal model")
-    require_gate_for_specialization(args.residual_selmer_gate, artifact)
+    require_gate_for_specialization(
+        args.residual_selmer_gate,
+        artifact,
+        requested_search_limits={
+            "height": args.height,
+            "max_rank": args.max_rank,
+            "wall_seconds": args.timeout,
+        },
+    )
 
     print("Q12MW|stage=curve_init|status=start", flush=True)
     stage_started = time.monotonic()
@@ -298,7 +306,15 @@ def infer_last_stage(stdout: str) -> str | None:
 
 def run_parent(args: argparse.Namespace) -> int:
     artifact = json.loads(args.input.read_text())
-    require_gate_for_specialization(args.residual_selmer_gate, artifact)
+    require_gate_for_specialization(
+        args.residual_selmer_gate,
+        artifact,
+        requested_search_limits={
+            "height": args.height,
+            "max_rank": args.max_rank,
+            "wall_seconds": args.timeout,
+        },
+    )
     sage = args.sage or shutil.which("sage")
     if sage is None:
         raise FileNotFoundError("Sage executable not found; pass --sage")

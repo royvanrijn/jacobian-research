@@ -55,6 +55,7 @@ OUTPUT_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit091
 OUTPUT_1183A = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit1183a-direct-fibration-v1.json"
 OUTPUT_098FC = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit098fc-direct-fibration-v1.json"
 UNSATURATED_LABELS = ("135b7", "10f72", "09952", "0ae21")
+PLANNED_LABELS = ("08234", "07ca9")
 FRAME_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-isotropic-frame-v1.json"
 
 
@@ -177,6 +178,7 @@ def main() -> None:
             "norm12-orbit-1183a",
             "norm12-orbit-098fc",
             *(f"norm12-orbit-{label}" for label in UNSATURATED_LABELS),
+            *(f"norm12-orbit-{label}" for label in PLANNED_LABELS),
         ),
         default="norm12-orbit-11952",
     )
@@ -193,7 +195,7 @@ def main() -> None:
         "norm12-orbit-098fc": OUTPUT_098FC,
         **{
             f"norm12-orbit-{label}": ROOT / f"artifacts/generated-results/elkies-k3-r17-norm12-orbit{label}-direct-fibration-v1.json"
-            for label in UNSATURATED_LABELS
+            for label in (*UNSATURATED_LABELS, *PLANNED_LABELS)
         },
     }
     output = args.output or default_outputs[args.source_label]
@@ -349,7 +351,14 @@ def main() -> None:
     transport = matrix(ZZ, [list(fibre), list(mate)] + rows(complement))
     frame = -(complement * ns * complement.transpose())
     alternate = matrix(ZZ, alternate_payload["rootless_frame"])
-    is_alternate_target = args.source_label != "norm12-orbit-103b2"
+    classification_record = next(
+        item for item in classification["classification"]["records"]
+        if item["label"] == args.source_label
+    )
+    expected_frame_class = classification_record["frame_class"]
+    if expected_frame_class not in {"published-R17", "alternate-Q80"}:
+        raise ArithmeticError("unrecognized rootless frame class")
+    is_alternate_target = expected_frame_class == "alternate-Q80"
     expected_frame = alternate if is_alternate_target else pinned
     rejected_frame = pinned if is_alternate_target else alternate
     if abs(transport.det()) != 1 or frame.det() != 948 or int(pari(frame).qfminim(2)[0]):
@@ -371,11 +380,6 @@ def main() -> None:
     if pari(frame).qfisom(pari(rejected_frame)) != 0:
         raise ArithmeticError("new frame unexpectedly matches the other rootless J2 class")
 
-    classification_record = next(
-        item for item in classification["classification"]["records"]
-        if item["label"] == args.source_label
-    )
-    expected_frame_class = "alternate-Q80" if is_alternate_target else "published-R17"
     assert classification_record["frame_class"] == expected_frame_class
     assert classification_record["frame_gram_sha256"] == matrix_digest(frame)
 
@@ -564,25 +568,60 @@ def main() -> None:
         ],
     }
     basis_plan_path = None
+    planned_glue_labels = None
+    planned_section_determinant = None
     if args.source_label in selected_old_vectors_by_label:
         selected_old_vectors = selected_old_vectors_by_label[args.source_label]
     else:
         suffix = args.source_label.rsplit("-", 1)[1]
+        plan_kind = "plan" if suffix in PLANNED_LABELS else "obstruction"
         basis_plan_path = ROOT / (
             f"artifacts/generated-results/elkies-k3-r17-norm12-{suffix}-"
-            "direct-section-basis-obstruction-v1.json"
+            f"direct-section-basis-{plan_kind}-v1.json"
         )
         basis_plan = json.loads(basis_plan_path.read_text())
-        if (
-            basis_plan["status"] != "NO_UNIMODULAR_MARKING_IN_SEARCHED_CURVES"
-            or basis_plan["source_label"] != args.source_label
-            or basis_plan["height_bound"] != 12
-            or basis_plan["old_degree_one_span_rank"] != 17
-            or basis_plan["old_degree_one_lattice_saturation_index"] != 2
-            or basis_plan["rational_bisection_glue_candidate_count"] != 0
-        ):
-            raise ArithmeticError("unsaturated section-basis obstruction certificate changed")
-        selected_old_vectors = basis_plan["selected_independent_old_vectors"]
+        common_plan_ok = (
+            basis_plan["source_label"] == args.source_label
+            and basis_plan["height_bound"] == 12
+        )
+        if basis_plan["status"] == "PASS_EXACT_UNIMODULAR_OLD_SECTION_PLUS_BISECTION_MARKING":
+            if (
+                not common_plan_ok
+                or abs(int(basis_plan["child_coordinate_determinant"])) != 1
+                or not basis_plan["glue_label"]
+            ):
+                raise ArithmeticError("unimodular section-basis plan certificate changed")
+            selected_old_vectors = basis_plan["selected_old_vectors"]
+            planned_glue_labels = [basis_plan["glue_label"]]
+            planned_section_determinant = abs(
+                int(basis_plan["child_coordinate_determinant"])
+            )
+        elif basis_plan["status"] == "PASS_EXACT_UNIMODULAR_OLD_SECTION_MARKING":
+            if (
+                not common_plan_ok
+                or abs(int(basis_plan["child_coordinate_determinant"])) != 1
+                or basis_plan["glue_label"] is not None
+            ):
+                raise ArithmeticError("old-section basis plan certificate changed")
+            selected_old_vectors = basis_plan["selected_old_vectors"]
+            planned_glue_labels = []
+            planned_section_determinant = abs(
+                int(basis_plan["child_coordinate_determinant"])
+            )
+        elif basis_plan["status"] == "NO_UNIMODULAR_MARKING_IN_SEARCHED_CURVES":
+            if (
+                not common_plan_ok
+                or basis_plan["old_degree_one_span_rank"] != 17
+                or basis_plan["old_degree_one_lattice_saturation_index"] != 2
+                or basis_plan["rational_bisection_glue_candidate_count"] != 0
+            ):
+                raise ArithmeticError("unsaturated section-basis obstruction certificate changed")
+            selected_old_vectors = basis_plan["selected_independent_old_vectors"]
+            planned_section_determinant = abs(
+                int(basis_plan["selected_child_coordinate_determinant"])
+            )
+        else:
+            raise ArithmeticError("unrecognized section-basis plan status")
     basis_change = matrix(ZZ, target_payload["pinned_identification"]["basis_change_matrix"])
     transport_inverse = transport.inverse()
     section_records = []
@@ -630,7 +669,11 @@ def main() -> None:
         "norm12-orbit-1183a": ["orbit-11976"],
         "norm12-orbit-098fc": ["orbit-08257"],
     }
-    glue_labels = glue_labels_by_source.get(args.source_label, [])
+    glue_labels = (
+        planned_glue_labels
+        if planned_glue_labels is not None
+        else glue_labels_by_source.get(args.source_label, [])
+    )
     for glue_offset, glue_label in enumerate(glue_labels):
         glue_record = next(
             record for record in full_bisections["bisections"]
@@ -706,9 +749,7 @@ def main() -> None:
     section_coordinate_matrix = matrix(ZZ, new_mw_rows)
     section_index = abs(section_coordinate_matrix.det())
     expected_section_index = (
-        1
-        if basis_plan_path is None
-        else abs(int(basis_plan["selected_child_coordinate_determinant"]))
+        1 if basis_plan_path is None else planned_section_determinant
     )
     if section_index != expected_section_index:
         raise ArithmeticError("the recovered child-section lattice index changed")
@@ -893,7 +934,14 @@ def main() -> None:
                 "degree-one old sections through the height-12 Cauchy bound span index two and that no "
                 "committed rational bisection supplies the missing saturation coset."
             )
-            if basis_plan_path is not None
+            if basis_plan_path is not None and section_index != 1
+            else (
+                "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
+                "the squarefree degree-24 discriminant, and the primitive rootless frame selected by "
+                "the exact frame classifier. The separate complete height-12 basis plan transports "
+                f"sixteen old sections and {glue_labels[0]} to an explicit saturated rank-17 basis."
+            )
+            if basis_plan_path is not None and len(glue_labels) == 1
             else (
                 "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
                 "the squarefree degree-24 discriminant, and the primitive rootless published-R17 frame. "

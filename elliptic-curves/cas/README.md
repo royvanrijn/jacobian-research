@@ -52,7 +52,9 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
 - `certify_nagao_rank20_t5081.py`: exact Nagao rank-at-least-20 certificate.
 - `newfamily/certify_rank_t83_6.py`: exact-rank-14 Sage/PARI replay.
 - `elkies_residual_selmer_gate.py`: fail-closed rank-32 residual-dimension
-  policy; signatures and incomplete descent cannot authorize point search.
+  policy. Complete descent controls theorem claims; an incomplete monotone
+  sieve may reject on a proved upper bound below 15 or authorize only a search
+  with explicit finite limits. Missing BNF data mean no finite bound yet.
 - `run_elkies_2026_rank28_residual_selmer.py`: resource-bounded genuine PARI
   or Selmer-only eclib 2-descent on the public rank-28 positive control. Its
   `pari-factored` backend consumes the separately proved complete
@@ -106,13 +108,19 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   `polredbest` field isomorphism, applies Simon's norm/sign/local conditions,
   embeds MW17 by exact squareclass tests, and builds/searches explicit
   intersections of quadrics for quotient classes before loading held-out
-  exceptional points. Enumeration limits and resource stops are recorded
-  fail-closed.
+  exceptional points. Its v3 Selmer record also retains every local allowed
+  subspace and the exact local-condition matrix rank after deleting each
+  place. Enumeration limits and resource stops are recorded fail-closed.
 - `run_elkies_2026_pari219_bnf_benchmark.py`: owns and benchmarks the six-
   parameter threaded BNF collector introduced on PARI's 2.19 development
   branch. It retains a binary checkpoint only after `bnfcertify`; timeouts
   retain factor-base and relation-deficit telemetry but no class-group or
   Selmer claim.
+- `run_elkies_2026_pari219_selmer_from_bnf.py`: reloads such a certified BNF
+  in the same GP build, applies the shared Simon norm/sign/local-condition
+  implementation, and records algebraic Selmer representatives plus the
+  exact local-condition matrix rank after deleting each place. This avoids
+  importing a PARI 2.19 binary checkpoint into Sage's older libpari.
 - `audit_elkies_2026_known_kummer_quotients.py`: fast class-group-free exact
   audit of the *supplied* Kummer subgroup. It evaluates `4*x(P)-zeta` in
   squarefree residue factors of an integral two-division polynomial, certifies

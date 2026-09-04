@@ -1,0 +1,698 @@
+{
+  "arithmetic_conclusion": "No characteristic-zero K3 over QQ with transcendental lattice U(3)+<42> can have the full saturated rational rank-19 marking.",
+  "coarse_norm_one_curve": {
+    "congruence_group": "Gamma_0(7)",
+    "cusp_widths": [
+      1,
+      7
+    ],
+    "elliptic_orbits_order_2": 0,
+    "elliptic_orbits_order_3": 2,
+    "genus": 0,
+    "index_in_PSL2Z": 8,
+    "label": "X_0(7)"
+  },
+  "exact_marked_modular_curve": {
+    "cusps": [
+      {
+        "cusp_rationality_order": 1,
+        "rational_over_QQ": true,
+        "representative": "0",
+        "width": 63
+      },
+      {
+        "cusp_rationality_order": 3,
+        "rational_over_QQ": false,
+        "representative": "1/21",
+        "width": 1
+      },
+      {
+        "cusp_rationality_order": 3,
+        "rational_over_QQ": false,
+        "representative": "2/21",
+        "width": 1
+      },
+      {
+        "cusp_rationality_order": 1,
+        "rational_over_QQ": true,
+        "representative": "1/9",
+        "width": 7
+      },
+      {
+        "cusp_rationality_order": 1,
+        "rational_over_QQ": true,
+        "representative": "1/7",
+        "width": 9
+      },
+      {
+        "cusp_rationality_order": 3,
+        "rational_over_QQ": false,
+        "representative": "1/3",
+        "width": 7
+      },
+      {
+        "cusp_rationality_order": 3,
+        "rational_over_QQ": false,
+        "representative": "2/3",
+        "width": 7
+      },
+      {
+        "cusp_rationality_order": 1,
+        "rational_over_QQ": true,
+        "representative": "Infinity",
+        "width": 1
+      }
+    ],
+    "defined_over": "QQ",
+    "diagonal_conjugator": [
+      [
+        "3",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "elliptic_orbits_order_2": 0,
+    "elliptic_orbits_order_3": 0,
+    "genus": 5,
+    "identification": "diag(3,1)^(-1) (Gamma_0(7) intersection +/-Gamma(3)) diag(3,1) = Gamma_0(63)",
+    "index_in_PSL2Z": 96,
+    "label": "X_0(63)",
+    "rational_points": {
+      "conclusion": "X_0(63)(QQ) consists of its four rational cusps",
+      "geometric_cusps": 8,
+      "noncuspidal_points": 0,
+      "rational_cuspidal_points": 4,
+      "theorem_input": "complete Mazur--Kenku rational cyclic-isogeny classification"
+    }
+  },
+  "external_theorem_inputs": [
+    {
+      "allowed_degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        25,
+        27,
+        37,
+        43,
+        67,
+        163
+      ],
+      "name": "Mazur--Kenku classification of rational cyclic isogenies",
+      "used_for": "X_0(63)(QQ) has no noncuspidal point"
+    },
+    {
+      "name": "standard normalizer description for split Eichler orders",
+      "used_for": "the norm-one group together with the displayed Fricke, negative-reflection, and central-inversion cosets exhausts O^+(T)"
+    },
+    {
+      "name": "standard ternary spin and marked-K3 period correspondence",
+      "used_for": "identification of the stable orthogonal period curve and the rational point forced by a full rational Neron--Severi marking"
+    }
+  ],
+  "input_hashes": {
+    "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json": "e13c9fa26b733c9e894d4a34900de469ad7dc2df63528f8c4dd816c47c9d18c8",
+    "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985"
+  },
+  "noncuspidal_point_audit": {
+    "CM_rejections_required": 0,
+    "NS_complements_constructed": 0,
+    "conclusion": "There is no noncuspidal rational point, so every downstream CM, saturation, NS-complement, and rootless-frame gate is vacuous.",
+    "points": [],
+    "rootless_MW17_frame_tests_required": 0,
+    "saturated_rational_marking_checks_required": 0
+  },
+  "proof_boundary": {
+    "not_proved": "The checker does not reprove the global Mazur--Kenku classification, the split-Eichler normalizer theorem, or the general marked-K3 period/spin correspondence. It makes no exclusion over larger number fields and does not address the other, anisotropic determinant-378 lattice.",
+    "proved": "The literal T and discriminant form, both split Clifford embeddings and multiplication tables, literal-order congruence conditions, A4 norm-one spin image, A4 x C2 proper image, full A4 x C2 x C2 discriminant action, stable kernel, X_0(63) identification, signature, and cusp data are replayed exactly. With the named cyclic-isogeny and period theorems this excludes the full rational determinant-378 marking."
+  },
+  "reproduce": "sage -python elkies-k3/scripts/certify_det378_qq_marking_obstruction.sage",
+  "schema": "elkies-k3.det378-qq-marking-obstruction.v1",
+  "split_even_clifford_orders": {
+    "literal_T_order": {
+      "basis_in_M2_QQ": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "0",
+            "21"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "3",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "3",
+            "0"
+          ]
+        ]
+      ],
+      "matrix_conditions": [
+        "21 divides B",
+        "3 divides C",
+        "A-D is divisible by 3"
+      ],
+      "norm_one_group": "Gamma^0(7) intersection {g : g=+/-I modulo 3}",
+      "reduced_discriminant": 189,
+      "reduced_trace_pairing": [
+        [
+          2,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          63
+        ],
+        [
+          3,
+          0,
+          9,
+          0
+        ],
+        [
+          0,
+          63,
+          0,
+          0
+        ]
+      ]
+    },
+    "primitive_similarity_order": {
+      "basis_in_M2_QQ": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "0",
+            "7"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ]
+      ],
+      "matrix_conditions": [
+        "7 divides B"
+      ],
+      "norm_one_group": "Gamma^0(7), conjugate to Gamma_0(7)",
+      "reduced_discriminant": 7,
+      "reduced_trace_pairing": [
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          7
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          7,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "stable_discriminant_kernel": {
+    "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T))",
+    "central_inversion_witness": {
+      "action_lies_in_reflection_extended_image": false,
+      "discriminant_action_smith_coordinates": [
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        41
+      ],
+      "matrix": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ]
+    },
+    "congruence_group_inside_coarse_Gamma0_7": "Gamma_0(7) intersection {g : g=+/-I modulo 3}",
+    "fricke_isometry_witness": {
+      "action_centralizes_norm_one_A4_image": false,
+      "action_lies_in_norm_one_A4_image": false,
+      "central_involution_in_same_A4_coset_smith_coordinates": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        13
+      ],
+      "determinant": 1,
+      "discriminant_action_smith_coordinates": [
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        0,
+        0,
+        41
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ]
+      ]
+    },
+    "full_discriminant_image_element_order_histogram": {
+      "1": 1,
+      "2": 15,
+      "3": 8,
+      "6": 24
+    },
+    "full_discriminant_image_isomorphism_type": "A4 x C2 x C2",
+    "full_discriminant_image_order": 48,
+    "generator_actions": [
+      {
+        "discriminant_action_smith_coordinates": [
+          1,
+          2,
+          1,
+          0,
+          2,
+          1,
+          0,
+          14,
+          15
+        ],
+        "gamma0_7_generator": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "mod_3_reduction": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "primitive_order_generator": [
+          [
+            1,
+            0
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "spin_action_on_T": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            0
+          ],
+          [
+            -7,
+            14,
+            1
+          ]
+        ]
+      },
+      {
+        "discriminant_action_smith_coordinates": [
+          1,
+          2,
+          1,
+          0,
+          0,
+          1,
+          14,
+          0,
+          29
+        ],
+        "gamma0_7_generator": [
+          [
+            -2,
+            1
+          ],
+          [
+            -7,
+            3
+          ]
+        ],
+        "mod_3_reduction": [
+          1,
+          1,
+          2,
+          0
+        ],
+        "primitive_order_generator": [
+          [
+            3,
+            7
+          ],
+          [
+            -1,
+            -2
+          ]
+        ],
+        "spin_action_on_T": [
+          [
+            9,
+            42,
+            -7
+          ],
+          [
+            -3,
+            -13,
+            2
+          ],
+          [
+            -7,
+            -28,
+            4
+          ]
+        ]
+      },
+      {
+        "discriminant_action_smith_coordinates": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          28,
+          0,
+          1
+        ],
+        "gamma0_7_generator": [
+          [
+            -4,
+            3
+          ],
+          [
+            -7,
+            5
+          ]
+        ],
+        "mod_3_reduction": [
+          2,
+          0,
+          2,
+          2
+        ],
+        "primitive_order_generator": [
+          [
+            5,
+            7
+          ],
+          [
+            -3,
+            -4
+          ]
+        ],
+        "spin_action_on_T": [
+          [
+            25,
+            70,
+            -7
+          ],
+          [
+            -15,
+            -41,
+            4
+          ],
+          [
+            -63,
+            -168,
+            16
+          ]
+        ]
+      }
+    ],
+    "index_in_PSL2Z": 96,
+    "index_over_coarse_curve": 12,
+    "kernel_condition": "projective identity (+/-I) modulo 3",
+    "negative_reflection_witness": {
+      "action_lies_in_norm_one_A4_image": false,
+      "discriminant_action_smith_coordinates": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "norm": -6,
+      "vector": [
+        1,
+        0,
+        -1
+      ]
+    },
+    "non_spin_stable_cosets": 0,
+    "norm_one_spin_discriminant_image_element_order_histogram": {
+      "1": 1,
+      "2": 3,
+      "3": 8
+    },
+    "norm_one_spin_discriminant_image_isomorphism_type": "A4",
+    "norm_one_spin_discriminant_image_order": 12,
+    "orientation_preserving_discriminant_image_element_order_histogram": {
+      "1": 1,
+      "2": 7,
+      "3": 8,
+      "6": 8
+    },
+    "orientation_preserving_discriminant_image_isomorphism_type": "A4 x C2",
+    "orientation_preserving_discriminant_image_order": 24
+  },
+  "status": "PASS_DET378_QQ_RATIONAL_MARKING_OBSTRUCTION",
+  "surface_id": "K3-7b71a1cc00b0c6e2",
+  "transcendental_lattice": {
+    "decomposition": "U(3) orthogonal_sum <42>",
+    "determinant": -378,
+    "discriminant_form": {
+      "bilinear_gram_mod_Z": [
+        [
+          "0",
+          "1/3",
+          "0"
+        ],
+        [
+          "1/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/42"
+        ]
+      ],
+      "dual_generators": [
+        "e0/3",
+        "e2/3",
+        "e1/42"
+      ],
+      "group": "Z/3 + Z/3 + Z/42",
+      "group_invariants": [
+        3,
+        3,
+        42
+      ],
+      "quadratic_values_mod_2Z": [
+        "0",
+        "0",
+        "1/42"
+      ]
+    },
+    "gram": [
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        42,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ]
+    ],
+    "literal_similarity_factor": 3,
+    "primitive_similarity_gram": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        14,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "signature": [
+      2,
+      1
+    ]
+  }
+}

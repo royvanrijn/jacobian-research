@@ -18672,7 +18672,8 @@ The alternate application proof is
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
 <!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 252991e141c42e55 -->
 <!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 6b9d34ae8d722280 -->
+<!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY d94b3dbddf5cb529 -->
 <!-- status-consumer: EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS 01298fec30fa94a3 -->
 
 ```bash
@@ -18746,6 +18747,8 @@ The arithmetic-gated planner ranking is replayed by
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_golay_det720_qq_marking_obstruction.sage --check
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_det378_qq_marking_obstruction.sage --check
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
 python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
@@ -18755,13 +18758,15 @@ The first command reconstructs both determinant-720 Clifford orders, computes
 the `S3` discriminant action and stable curve `X_0(60)`, checks its genus and
 cusps, and imports the exact determinant-20 saturation boundary. With the
 named Mazur--Kenku and marked-period inputs, it excludes a full rational
-determinant-720 marking. The classifier then checks all 66 lattice-feasible
+determinant-720 marking. The second reconstructs the literal determinant-378
+order, its `A4` spin image and stable `X_0(63)` curve, excluding the split
+row because all rational points are cusps. The classifier then checks all 66 lattice-feasible
 rootless-MW17 surfaces, recording one arithmetically possible control, three
 exclusions, 62 unknowns, and an empty new equation handoff. The determinant
 ranking retains 63 candidates including the realized determinant-948
 control. The final command reverses the global foundry: it orders all 827
-transcendental rows before NS/rootless inspection, records an 823-row
-arithmetic research queue with 24 coarse genus-at-most-two diagnostics, and
+transcendental rows before NS/rootless inspection, records an 822-row
+arithmetic research queue with 23 coarse genus-at-most-two diagnostics, and
 keeps the new NS handoff empty until a full marked rational point is proved.
 
 ### Integral rank-transfer and character-glue calculus
@@ -19419,7 +19424,9 @@ quotient `Z^12`.  The original `074d9` quotients remain
 
 ### Native ICARM quotient, cover-visibility, and local calibration audit
 
-<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 1b09c81c025e5fc3 -->
+<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 6b2a0546b65246d5 -->
+<!-- status-consumer: EC-K3-R17-NORM12-HIGHEST-RANK-TRANSPORTS c4c8a81fc735fea2 -->
+<!-- status-consumer: EC-K3-R17-NORM12-PROSPECTIVE-FAMILY-HOLDOUT 8fb7417663ea1d98 -->
 
 The compact replay below checks the pinned 69-fibre public projection, all
 local fingerprints, the twelve curve-12 fitted norm-eight signatures, the
@@ -19453,6 +19460,66 @@ norm12-orbit-08f72` and combined with
 norm12-orbit-08f72`.  The exact result is 39,147 verified covers.  The merged
 476 MB file is a local generated replay input.  See
 [`elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md`](elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md).
+
+### Same-curve / different-marked-`U` carrier panel
+
+Replay the balanced 24-cell exact panel and then rebuild the 43-chart
+receptivity profile:
+
+```bash
+PYTHONPATH=elliptic-curves/cas sage -python \
+  elkies-k3/scripts/certify_r17_same_curve_marked_u_panel.sage --check
+
+.venv/bin/python \
+  elkies-k3/scripts/build_r17_carrier_receptivity_profiles.py --check
+```
+
+The first command holds each ordered public-point subgroup fixed across every
+alternate-Q80 chart in its rational-`PGL2` class.  It verifies nineteen new
+non-native generic-subgroup transports, exhausts 39,147 carriers in every
+cell, and compares the resulting lattices by unimodular basis changes and
+Hermite normal form.  Complete split counts, quotient spans, and visible
+extension lattices are constant within each curve, while first-hit priority
+varies by up to `19,453/850`.  The second command imports those cells into 34
+exact curve/chart quotient transports and 31 complete fixed-cover span rows.
+See
+[`elkies-k3/R17_SAME_CURVE_MARKED_U_PANEL_2026-09-04.md`](elkies-k3/R17_SAME_CURVE_MARKED_U_PANEL_2026-09-04.md).
+
+### Highest-rank quotient transports and whole-family prospective commitment
+
+The three rank-at-least-28 rows whose quotient transports were missing are
+replayed with:
+
+```bash
+sage -python elkies-k3/scripts/plan_r17_norm12_direct_section_basis.sage \
+  --source-label norm12-orbit-08234 --height-bound 12 \
+  --output artifacts/generated-results/elkies-k3-r17-norm12-08234-direct-section-basis-plan-v1.json
+
+sage -python elkies-k3/scripts/plan_r17_norm12_direct_section_basis.sage \
+  --source-label norm12-orbit-07ca9 --height-bound 12 \
+  --output artifacts/generated-results/elkies-k3-r17-norm12-07ca9-direct-section-basis-plan-v1.json
+
+sage -python elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage \
+  --source-label norm12-orbit-08234
+
+sage -python elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage \
+  --source-label norm12-orbit-07ca9
+
+PYTHONPATH=elliptic-curves/cas sage -python \
+  elkies-k3/scripts/certify_r17_norm12_highest_rank_transports.sage --check
+
+.venv/bin/python \
+  elkies-k3/scripts/build_r17_norm12_prospective_family_holdout.py --check
+```
+
+Curves 11, 391, and 423 each have exact displayed quotient `Z^11`; this leaves
+54 of the 69 public-success rows unknown.  The separate prospective artifact
+contains 1,536 still-unopened ordinary parameters in a new height shell, with
+256 parameters in each exact rational-`PGL2` family.  Families `11952` and
+`074d9` are locked in full until a predictor trained on the four development
+families is frozen.  Public hit counts and the missing historical denominator
+do not enter selection.  See
+[`elkies-k3/R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md`](elkies-k3/R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md).
 
 The independent 08f72 norm-eight priority table is replayed with
 
@@ -19493,6 +19560,98 @@ applicable rather than as a zero.  See
 <!-- status-consumer: EC-K3-R17-074D9-RIGID-CROSS-FIBRE-TRANSFER abbedd192865f172 -->
 <!-- status-consumer: EC-K3-R17-074D9-NORM8-CROSS-FIBRE-TRANSFER-16 262e405b0adbbb73 -->
 <!-- status-consumer: EC-K3-R17-074D9-LATE-POINT-HOLDOUT 284e0f92def23419 -->
+
+### Native `074d9` record-twist MW contribution
+
+Replay the eight-prime geometric bounds, four exact sections and
+specializations, finite-function-field 2-descent audit, and combined quotient
+test:
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_r17_074d9_twist_good_reduction_bounds.sage \
+  --check
+
+sage -python \
+  elkies-k3/scripts/derive_r17_074d9_record_twist_sections.sage \
+  --check
+
+sage -python \
+  elkies-k3/scripts/certify_r17_074d9_twist_2descent_audit.sage \
+  --check
+
+sage -python \
+  elkies-k3/scripts/certify_r17_074d9_record_twist_mw_contribution.sage \
+  --check
+```
+
+The geometric rank intervals are `[1,4],[1,4],[1,4],[1,2]` in the order
+`04b07,11a44,11279,080fa`.  The exact known sections specialize to twice the
+rigid branch quotient vectors and span rank two at each record.  Even the full
+twist groups have combined rank at most eight at curve 356 and six at curve
+385, below the two rank-twelve displayed exceptional quotients.  The
+good-prime 2-descents timed out before producing Selmer groups, so the four
+individual `QQ(u)` ranks remain `UNKNOWN`.  See
+[`elkies-k3/R17_074D9_RECORD_TWIST_MW_AUDIT_2026-09-04.md`](elkies-k3/R17_074D9_RECORD_TWIST_MW_AUDIT_2026-09-04.md).
+<!-- status-consumer: EC-K3-R17-074D9-RECORD-TWIST-MW-OBSTRUCTION c794f827e9a8ac36 -->
+
+### Native `074d9` local Kummer meet
+
+<!-- status-consumer: EC-K3-R17-074D9-LOCAL-KUMMER-SEPARATION 375cb897b59e077f -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-ARITHMETIC-BLOCK-OBSTRUCTION af45468d1b7d831a -->
+
+Replay the exact Kummer images and the invariant local comparison for curves
+356 and 385, with controls 351, 376, 377, and native alternate-Q80 curve 12:
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_r17_074d9_local_kummer_meet.sage \
+  --check
+```
+
+The default replay covers 2, every bad prime, and the fixed common-good block
+`53,67,71,79,83,97,101,113`.  It proves the cubic discriminant
+factorizations, computes valuation supports, exact local image dimensions,
+component-image orders, and all componentwise Hilbert pairings.  The
+ten-direction rigid complements at curves 356 and 385 have unequal two-adic,
+bad-place, and common-good signatures, so the CRT/inward-search gate remains
+closed.  It also constructs the quotient-compatible local Kummer and
+component modules.  The component Hilbert forms fail the exact quotient
+descent test at split bad primes, so the proposed pairing graph and `10=...`
+partition are not defined.
+
+Replay the preserved coordinate-complement bytes with:
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_r17_074d9_local_kummer_meet.sage \
+  --legacy-coordinate-complement --check
+```
+
+See
+[`elkies-k3/R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md`](elkies-k3/R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md).
+
+### Residual-Selmer fingerprints and monotone sieve
+
+Replay the exact known-residual subspace fingerprints, the `+12` versus `+5`
+place comparison, sampled `t mod p^k` strata, and exact CRT prototype classes:
+
+```bash
+sage -python \
+  elkies-k3/scripts/build_r17_residual_selmer_fingerprints.sage --check
+
+python3 -m unittest -v \
+  elliptic-curves/tests/test_elkies_residual_selmer_gate.py \
+  elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py
+```
+
+The fingerprint matrices are the exact localization maps of the certified
+known point classes, not the full Selmer local-condition matrices. The latter
+are emitted, including the matrix rank after deleting every place, only when
+the checkpointed BNF/descent worker completes. The monotone gate rejects only
+on a proved residual upper bound below 15; otherwise it can authorize an
+explicitly bounded point search but no Selmer or rank claim. See
+[`elkies-k3/R17_RESIDUAL_SELMER_FINGERPRINT_AND_SIEVE_2026-09-04.md`](elkies-k3/R17_RESIDUAL_SELMER_FINGERPRINT_AND_SIEVE_2026-09-04.md).
 
 ### Direct `norm12-orbit-11952` alternate-Q80 equation
 
@@ -19651,6 +19810,58 @@ norm-eight bisection/coboundary image.  It does not exclude a non-coboundary
 height-eight twist section until the 2-primary integral descent quotient is
 proved to vanish.  See
 [`elkies-k3/R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md`](elkies-k3/R17_ALTERNATE_Q80_PRODUCT_BISECTION_INVERSION_2026-09-03.md).
+
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO 61d8e223f0ef7d0f -->
+
+Close the shortlist-rank-55 product twist by the complete open-source toric
+Frobenius route:
+
+```bash
+elkies-k3/scripts/run_r17_product_toric_frobenius.sh \
+  'alternate-orbit-0fda0:alternate-orbit-1037d' 131
+```
+
+The runner checks out `ToricControlledReduction` at commit
+`74cda9e8148cd8e9a3928fc15a558c9a70b67cc1`, builds it against Sage's bundled
+NTL/GMP stack, exports the 28-term regular twist model, and computes the
+degree-36 primitive toric polynomial.  The Sage verifier removes the exact
+degree-eight boundary permutation factor, reconstructs the exact degree-18
+`U+4D4` factor and full degree-46 `H^2` polynomial, and checks the complete
+degree-28 elliptic polynomial.  Its first two power sums are `(-119,18305)`,
+agreeing with the independent audit; certified real-root isolation proves its
+Weil size, and it has no cyclotomic Tate factor.  The output also pins the raw
+input/output, executable, exporter, parser, verifier, and runner hashes.
+Expected
+terminal status:
+
+```text
+R17TORICFROB|pair=alternate-orbit-0fda0:alternate-orbit-1037d|p=131|degree=28|tate_degree=0|rho_upper=18|mw_upper=0|status=PASS_GEOMETRIC_PRODUCT_TWIST_RANK_ZERO
+```
+
+This proves geometric product-twist rank zero and
+`A^-=Gamma_d=Hhat^(-1)=0` without Magma; see
+[`elkies-k3/R17_ALTERNATE_Q80_PRODUCT_TWIST_RANK_ZERO_2026-09-04.md`](elkies-k3/R17_ALTERNATE_Q80_PRODUCT_TWIST_RANK_ZERO_2026-09-04.md).
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO 61d8e223f0ef7d0f -->
+
+Compute and aggregate the two rank-55 singleton bounds with:
+
+```bash
+sage -python \
+  elkies-k3/scripts/audit_r17_singleton_twist_finite_field_bounds.sage
+elkies-k3/scripts/run_r17_singleton_toric_frobenius.sh \
+  alternate-orbit-0fda0 131
+elkies-k3/scripts/run_r17_singleton_toric_frobenius.sh \
+  alternate-orbit-1037d 157
+sage -python \
+  elkies-k3/scripts/certify_r17_rank55_singleton_toric_frobenius_bounds.sage \
+  --check
+```
+
+Both degree-24 quotients have normalized Tate factor `(Z-1)^2`, counted with
+multiplicity.  The unconditional result is therefore
+`17+[1,2]+[1,2]+0`, not yet `17+1+1+0`; see
+[`elkies-k3/R17_ALTERNATE_Q80_SINGLETON_TWIST_FROBENIUS_BOUNDS_2026-09-04.md`](elkies-k3/R17_ALTERNATE_Q80_SINGLETON_TWIST_FROBENIUS_BOUNDS_2026-09-04.md).
+<!-- status-consumer: EC-K3-R17-NORM12-11952-RANK55-SINGLETON-FROBENIUS-BOUNDS 163b9ffe20045a08 -->
 
 Run the exact `H=10000` point-map-relation control on the deterministic
 seeded sample of ten other pointed covers:

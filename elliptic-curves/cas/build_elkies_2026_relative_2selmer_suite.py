@@ -47,6 +47,21 @@ NAGAO_CANDIDATES = (
     / "artifacts/generated-results/elliptic-curves"
     / "elkies_2026_compact_t_nagao_positive_control_h10000_v1.json"
 )
+RECORD_PUBLIC_FIBRES = (
+    ROOT
+    / "artifacts/generated-results"
+    / "elkies-k3-r17-norm12-icarm-public-fibres-v1.json"
+)
+RECORD_LINEAGE_FIBRES = (
+    ROOT
+    / "artifacts/generated-results"
+    / "elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json"
+)
+RECORD_RIGID_DIRECTIONS = (
+    ROOT
+    / "artifacts/generated-results"
+    / "elkies-k3-r17-074d9-cross-fibre-bisection-transfer-v1.json"
+)
 SCHEMA = "elliptic-curves.elkies-2026-relative-2selmer-suite-input.v1"
 STATUS = "EXACT_INPUTS_MAGMA_COMPLETION_REQUIRED"
 PROTOCOL = "ELKIESR17REL2"
@@ -89,6 +104,9 @@ class RelativeCase:
     certified_rank_lower_bound: int | None
     nagao_record: dict[str, Any] | None
     provenance: dict[str, str]
+    rigid_quotient_rows: tuple[tuple[int, ...], ...] = ()
+    rigid_direction_labels: tuple[str, ...] = ()
+    rigid_complement_point_labels: tuple[str, ...] = ()
 
 
 def file_sha256(path: Path) -> str:
@@ -110,6 +128,151 @@ def rational_pair(row: Sequence[object]) -> tuple[Q, Q]:
     if len(row) != 2:
         raise ValueError("an elliptic point needs two affine coordinates")
     return Q(str(row[0])), Q(str(row[1]))
+
+
+def _f2_rank(rows: Iterable[Sequence[int]]) -> int:
+    pivots: dict[int, int] = {}
+    for row in rows:
+        value = sum((int(bit) & 1) << index for index, bit in enumerate(row))
+        while value:
+            pivot = value.bit_length() - 1
+            if pivot in pivots:
+                value ^= pivots[pivot]
+            else:
+                pivots[pivot] = value
+                break
+    return len(pivots)
+
+
+def _leftmost_rref_pivots(rows: Iterable[Sequence[int]], width: int) -> tuple[int, ...]:
+    matrix = [[int(bit) & 1 for bit in row] for row in rows]
+    if any(len(row) != width for row in matrix):
+        raise ValueError("a rigid quotient row has the wrong width")
+    pivot_row = 0
+    pivots = []
+    for column in range(width):
+        source = next(
+            (index for index in range(pivot_row, len(matrix)) if matrix[index][column]),
+            None,
+        )
+        if source is None:
+            continue
+        matrix[pivot_row], matrix[source] = matrix[source], matrix[pivot_row]
+        for index in range(len(matrix)):
+            if index != pivot_row and matrix[index][column]:
+                matrix[index] = [
+                    left ^ right
+                    for left, right in zip(matrix[index], matrix[pivot_row])
+                ]
+        pivots.append(column)
+        pivot_row += 1
+        if pivot_row == len(matrix):
+            break
+    return tuple(pivots)
+
+
+def load_record_pair_cases() -> list[RelativeCase]:
+    """Load the two rank-29 ``074d9`` fibres with their rigid quotient plane."""
+
+    public = json.loads(RECORD_PUBLIC_FIBRES.read_text())
+    lineage = json.loads(RECORD_LINEAGE_FIBRES.read_text())
+    rigid = json.loads(RECORD_RIGID_DIRECTIONS.read_text())
+    if public.get("status") != "PASS_PINNED_PUBLIC_POINT_PROJECTION_FOR_69_RECOGNIZED_FIBRES":
+        raise ValueError("the pinned ICARM public-fibre corpus is not passing")
+    if lineage.get("status") != "PROVED_EXACT_LINEAGE_REALIZATION_AND_DISPLAYED_QUOTIENTS":
+        raise ValueError("the exact R17 lineage certificate is not passing")
+    if rigid.get("status") != "PASS_EXACT_COMPLETE_074D9_CROSS_FIBRE_BISECTION_TRANSFER":
+        raise ValueError("the rigid-bisection transfer certificate is not passing")
+
+    public_by_id = {int(row["id"]): row for row in public["records"]}
+    independence_by_id = {
+        int(row["curve_id"]): row for row in lineage["displayed_point_independence"]
+    }
+    quotient_by_id = {
+        int(row["curve_id"]): row for row in lineage["exceptional_quotients"]
+    }
+    rigid_by_id = {int(row["curve_id"]): row for row in rigid["fibres"]}
+    provenance = {
+        str(path.relative_to(ROOT)): file_sha256(path)
+        for path in (
+            RECORD_PUBLIC_FIBRES,
+            RECORD_LINEAGE_FIBRES,
+            RECORD_RIGID_DIRECTIONS,
+        )
+    }
+
+    cases = []
+    for curve_id in (356, 385):
+        source = public_by_id[curve_id]
+        independence = independence_by_id[curve_id]
+        quotient = quotient_by_id[curve_id]
+        rigid_fibre = rigid_by_id[curve_id]
+        if (
+            source.get("representative") != "norm12-orbit-074d9"
+            or int(source.get("snapshot_rank_lower_bound", -1)) != 29
+            or int(independence.get("proved_displayed_subgroup_rank", -1)) != 29
+            or quotient.get("specialized_generic_group_equals_first_seventeen_displayed_points")
+            is not True
+            or quotient.get("free_basis_modulo_generic_group")
+            != [f"P{index}" for index in range(18, 30)]
+            or int(quotient.get("free_rank", -1)) != 12
+            or int(rigid_fibre.get("displayed_quotient_rank", -1)) != 12
+            or int(rigid_fibre.get("class_span_rank", -1)) != 2
+        ):
+            raise ArithmeticError(f"record-fibre certificate mismatch for curve {curve_id}")
+        model = tuple(Q(value) for value in source["ainvs"])
+        points = tuple(rational_pair(point) for point in source["points"])
+        if len(points) != 29 or any(
+            not is_on_weierstrass_curve(model, point) for point in points
+        ):
+            raise ArithmeticError(f"invalid public point list for curve {curve_id}")
+        signature_rows = [
+            [int(bit) for bit in row]
+            for signature in independence["mod2_reduction_signatures"]
+            for row in signature["rows"]
+        ]
+        columns = [
+            [row[index] for row in signature_rows] for index in range(len(points))
+        ]
+        if _f2_rank(columns) != 29:
+            raise ArithmeticError(f"public rank-29 certificate failed for curve {curve_id}")
+        rigid_rows = tuple(
+            tuple(
+                int(bit)
+                for bit in record["finite_quotient_class_modulo_generic_17"][
+                    "displayed_quotient_coordinates_over_f2"
+                ]
+            )
+            for record in rigid_fibre["records"]
+        )
+        if len(rigid_rows) != 2 or _f2_rank(rigid_rows) != 2:
+            raise ArithmeticError(f"rigid quotient plane changed for curve {curve_id}")
+        pivots = set(_leftmost_rref_pivots(rigid_rows, 12))
+        complement = tuple(
+            f"P{18 + index}" for index in range(12) if index not in pivots
+        )
+        parameter = str(source["representative_parameter"]["affine_parameter"])
+        pair = parse_parameter(parameter)
+        cases.append(
+            RelativeCase(
+                case_id=f"record-r29-{curve_id}",
+                role="record-rank29-residual-selmer-target",
+                parameter=parameter,
+                parameter_pair=pair,
+                model=model,
+                generic_points=points[:GENERIC_RANK],
+                exceptional_points=points[GENERIC_RANK:],
+                certified_rank_lower_bound=29,
+                nagao_record=None,
+                provenance=dict(provenance),
+                rigid_quotient_rows=rigid_rows,
+                rigid_direction_labels=tuple(
+                    str(record["label"]) for record in rigid_fibre["records"]
+                ),
+                rigid_complement_point_labels=complement,
+            )
+        )
+    return cases
 
 
 def specialize(parameter: tuple[int, int]) -> tuple[tuple[Q, ...], tuple[tuple[Q, Q], ...]]:
@@ -473,6 +636,9 @@ def case_record(case: RelativeCase, program_path: Path, program: str) -> dict[st
         "held_out_exceptional_point_count": len(case.exceptional_points),
         "certified_rank_lower_bound": case.certified_rank_lower_bound,
         "nagao_record": case.nagao_record,
+        "rigid_quotient_rows": [list(row) for row in case.rigid_quotient_rows],
+        "rigid_direction_labels": list(case.rigid_direction_labels),
+        "rigid_complement_point_labels": list(case.rigid_complement_point_labels),
         "provenance": case.provenance,
         "program": str(program_path),
         "program_sha256": sha256(program.encode()).hexdigest(),
@@ -536,16 +702,21 @@ def main() -> None:
     parser.add_argument("--candidate-count", type=int, default=10)
     parser.add_argument("--controls-only", action="store_true")
     parser.add_argument("--candidates-only", action="store_true")
+    parser.add_argument("--record-pair-only", action="store_true")
     parser.add_argument("--search-bound", type=int, default=1000)
     parser.add_argument("--enumerate-class-limit", type=int, default=255)
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
-    if args.controls_only and args.candidates_only:
-        parser.error("--controls-only and --candidates-only are mutually exclusive")
+    if sum((args.controls_only, args.candidates_only, args.record_pair_only)) > 1:
+        parser.error(
+            "--controls-only, --candidates-only, and --record-pair-only are mutually exclusive"
+        )
     cases: list[RelativeCase] = []
-    if not args.candidates_only:
+    if args.record_pair_only:
+        cases = load_record_pair_cases()
+    elif not args.candidates_only:
         cases = [load_rank21_case(), *load_high_rank_cases()]
-    if not args.controls_only:
+    if not (args.controls_only or args.record_pair_only):
         cases.extend(load_nagao_cases(args.candidate_count))
     document = write_suite(
         cases,

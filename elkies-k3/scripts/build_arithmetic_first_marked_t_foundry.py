@@ -25,6 +25,10 @@ ROOT = Path(__file__).resolve().parents[2]
 GENERATED = ROOT / "artifacts/generated-results"
 T_ARITHMETIC = GENERATED / "elkies-k3-rank7-t-arithmetic-v1.json"
 CLASSIFIER = GENERATED / "elkies-k3-rank19-arithmetic-marking-classifier-v1.json"
+GLOBAL_DECISIONS = (
+    ROOT
+    / "elkies-k3/data/arithmetic/arithmetic-first-marking-decisions-v1.json"
+)
 OUTPUT = GENERATED / "elkies-k3-arithmetic-first-marked-t-foundry-v1.json"
 H3_SURFACE_ID = "K3-8188cdcda8c57b2d"
 
@@ -35,6 +39,34 @@ def relative(path: Path) -> str:
 
 def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def resolve_path(payload: dict, dotted_path: str):
+    value = payload
+    for component in dotted_path.split("."):
+        if not isinstance(value, dict) or component not in value:
+            raise KeyError(f"missing assertion path {dotted_path}")
+        value = value[component]
+    return value
+
+
+def validate_certificate(certificate: dict) -> dict:
+    path = ROOT / certificate["path"]
+    if not path.is_file():
+        raise FileNotFoundError(certificate["path"])
+    payload = json.loads(path.read_text())
+    for assertion in certificate["assertions"]:
+        actual = resolve_path(payload, assertion["path"])
+        if actual != assertion["equals"]:
+            raise AssertionError(
+                f"{certificate['path']}:{assertion['path']} changed: "
+                f"{actual!r} != {assertion['equals']!r}"
+            )
+    return {
+        "path": certificate["path"],
+        "sha256": digest(path),
+        "assertions_replayed": len(certificate["assertions"]),
+    }
 
 
 def coarse_label(row: dict) -> str | None:
@@ -128,77 +160,131 @@ def curve_priority(row: dict, classifier_row: dict | None) -> tuple:
 def build(
     t_arithmetic: dict,
     classifier: dict,
+    global_decisions: dict,
     t_arithmetic_path: Path = T_ARITHMETIC,
     classifier_path: Path = CLASSIFIER,
+    global_decisions_path: Path = GLOBAL_DECISIONS,
 ) -> dict:
     if t_arithmetic["schema"] != "elkies-k3.rank7-t-arithmetic.v1":
         raise ValueError("unexpected T-arithmetic schema")
     if classifier["schema"] != "elkies-k3.rank19-arithmetic-marking-classifier.v1":
         raise ValueError("unexpected arithmetic-classifier schema")
+    if global_decisions["schema"] != "elkies-k3.arithmetic-first-marking-decisions.v1":
+        raise ValueError("unexpected arithmetic-first decision schema")
 
     classified = {row["surface_id"]: row for row in classifier["candidates"]}
-    decisions = {
+    classifier_decisions = {
         surface_id: row["classification"] for surface_id, row in classified.items()
+    }
+    global_by_id = {
+        row["surface_id"]: row for row in global_decisions["records"]
+    }
+    if len(global_by_id) != len(global_decisions["records"]):
+        raise ValueError("duplicate arithmetic-first decision surface")
+    if set(global_by_id) & set(classified):
+        raise ValueError("arithmetic-first and rootless-classifier decisions overlap")
+    t_surface_ids = {row["surface_id"] for row in t_arithmetic["surfaces"]}
+    if not set(global_by_id) <= t_surface_ids:
+        raise ValueError("arithmetic-first decision contains an unknown T row")
+    global_replay = {
+        surface_id: [
+            validate_certificate(certificate)
+            for certificate in decision["certificates"]
+        ]
+        for surface_id, decision in global_by_id.items()
     }
     rows_out = []
     for row in t_arithmetic["surfaces"]:
         surface_id = row["surface_id"]
         classifier_row = classified.get(surface_id)
-        classification = decisions.get(surface_id, "UNSCREENED_NO_FULL_MARKING_DECISION")
-        full = full_curve_summary(classifier_row)
+        global_decision = global_by_id.get(surface_id)
+        classification = (
+            global_decision["classification"]
+            if global_decision is not None
+            else classifier_decisions.get(
+                surface_id, "UNSCREENED_NO_FULL_MARKING_DECISION"
+            )
+        )
+        full = (
+            global_decision["full_marking_curve"]
+            if global_decision is not None
+            else full_curve_summary(classifier_row)
+        )
         coarse = row["arithmetic_source"]["base_curve"]
         normalization = row["similarity_normalization"]
         order = row["clifford"]["integral_even_clifford_order"]
         priority = curve_priority(row, classifier_row)
-        rows_out.append(
-            {
-                "surface_id": surface_id,
-                "determinant": int(row["determinant"]),
-                "transcendental_gram": row["literal_transcendental_gram"],
-                "rational_isotropy": row["rational_isotropy"]["isotropic"],
-                "quaternion_discriminant": int(row["clifford"]["quaternion_discriminant"]),
-                "integral_order": {
-                    "reduced_discriminant": int(order["reduced_discriminant"]),
-                    "local_level_index": int(order["local_level_index"]),
-                    "source_status": row["arithmetic_source"]["status"],
-                },
-                "similarity_marking_gap": {
-                    "literal_content": int(normalization["literal_content"]),
-                    "quadratic_integrality_scale": int(
-                        normalization["quadratic_integrality_scale"]
-                    ),
-                    "full_stable_kernel_still_required": (
-                        full["status"]
-                        not in {
-                            "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE",
-                            "PARTIAL_ABSTRACT_STABLE_ORTHOGONAL_CURVE_WITH_EXPLICIT_QQ_POINT",
-                        }
-                    ),
-                },
-                "coarse_curve_diagnostic": {
-                    "status": coarse["status"],
-                    "label": coarse_label(row),
-                    "genus": coarse.get("genus"),
-                    "warning": (
-                        "Coarse genus is a prioritization diagnostic only until the "
-                        "stable discriminant-kernel curve is computed."
-                    ),
-                },
-                "full_marking_curve": full,
-                "arithmetic_classification": classification,
-                "phase_one_priority_key": list(priority[:-1]),
-                "next_gate": (
-                    None
-                    if classification in {"ARITHMETICALLY_EXCLUDED", "ARITHMETICALLY_POSSIBLE"}
-                    else (
-                        "Compute the literal-lattice stable discriminant kernel, identify "
-                        "a genus-0/1 (occasionally genus-2) quotient, and determine its "
-                        "rational noncuspidal non-CM lifts."
-                    )
+        row_out = {
+            "surface_id": surface_id,
+            "determinant": int(row["determinant"]),
+            "transcendental_gram": row["literal_transcendental_gram"],
+            "rational_isotropy": row["rational_isotropy"]["isotropic"],
+            "quaternion_discriminant": int(
+                row["clifford"]["quaternion_discriminant"]
+            ),
+            "integral_order": {
+                "reduced_discriminant": int(order["reduced_discriminant"]),
+                "local_level_index": int(order["local_level_index"]),
+                "source_status": row["arithmetic_source"]["status"],
+            },
+            "similarity_marking_gap": {
+                "literal_content": int(normalization["literal_content"]),
+                "quadratic_integrality_scale": int(
+                    normalization["quadratic_integrality_scale"]
                 ),
-                "rootless_frame_data_used_in_priority": False,
-            }
-        )
+                "full_stable_kernel_still_required": (
+                    full["status"]
+                    not in {
+                        "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE",
+                        "PARTIAL_ABSTRACT_STABLE_ORTHOGONAL_CURVE_WITH_EXPLICIT_QQ_POINT",
+                    }
+                ),
+            },
+            "coarse_curve_diagnostic": {
+                "status": coarse["status"],
+                "label": coarse_label(row),
+                "genus": coarse.get("genus"),
+                "warning": (
+                    "Coarse genus is a prioritization diagnostic only until the "
+                    "stable discriminant-kernel curve is computed."
+                ),
+            },
+            "full_marking_curve": full,
+            "arithmetic_classification": classification,
+            "phase_one_priority_key": list(priority[:-1]),
+            "next_gate": (
+                None
+                if classification
+                in {"ARITHMETICALLY_EXCLUDED", "ARITHMETICALLY_POSSIBLE"}
+                else (
+                    "Compute the literal-lattice stable discriminant kernel, identify "
+                    "a genus-0/1 (occasionally genus-2) quotient, and determine its "
+                    "rational noncuspidal non-CM lifts."
+                )
+            ),
+            "rootless_frame_data_used_in_priority": False,
+        }
+        if classification in {"ARITHMETICALLY_EXCLUDED", "ARITHMETICALLY_POSSIBLE"}:
+            row_out.update(
+                {
+                    "decision": (
+                        global_decision["decision"]
+                        if global_decision is not None
+                        else classifier_row["classification_decision"]
+                    ),
+                    "certificate_replay": (
+                        global_replay[surface_id]
+                        if global_decision is not None
+                        else classifier_row["certificate_replay"]
+                    ),
+                    "theorem_inputs": (
+                        global_decision["theorem_inputs"]
+                        if global_decision is not None
+                        else classifier_row["theorem_inputs"]
+                    ),
+                }
+            )
+        rows_out.append(row_out)
 
     by_id = {row["surface_id"]: row for row in rows_out}
     if len(by_id) != len(rows_out):
@@ -276,6 +362,7 @@ def build(
         "inputs": {
             relative(t_arithmetic_path): digest(t_arithmetic_path),
             relative(classifier_path): digest(classifier_path),
+            relative(global_decisions_path): digest(global_decisions_path),
         },
         "accounting": {
             "transcendental_rows": len(rows_out),
@@ -291,6 +378,9 @@ def build(
                 "surface_id": row["surface_id"],
                 "determinant": row["determinant"],
                 "full_marking_curve": row["full_marking_curve"],
+                "decision": row["decision"],
+                "certificate_replay": row["certificate_replay"],
+                "theorem_inputs": row["theorem_inputs"],
             }
             for row in excluded
         ],
@@ -326,17 +416,21 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--t-arithmetic", type=Path, default=T_ARITHMETIC)
     parser.add_argument("--classifier", type=Path, default=CLASSIFIER)
+    parser.add_argument("--decisions", type=Path, default=GLOBAL_DECISIONS)
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     t_path = args.t_arithmetic.resolve()
     classifier_path = args.classifier.resolve()
+    decisions_path = args.decisions.resolve()
     output_path = args.output.resolve()
     payload = build(
         json.loads(t_path.read_text()),
         json.loads(classifier_path.read_text()),
+        json.loads(decisions_path.read_text()),
         t_path,
         classifier_path,
+        decisions_path,
     )
     encoded = json.dumps(payload, indent=2, sort_keys=True) + "\n"
     if args.check:

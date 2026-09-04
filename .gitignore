@@ -95,6 +95,7 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json
 !/artifacts/generated-results/elkies-k3-golay-det720-qq-marking-obstruction-v1.json
 !/artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json
+!/artifacts/generated-results/elkies-k3-det378-qq-marking-obstruction-v1.json
 !/artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json
 !/artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json
 !/artifacts/generated-results/elkies-k3-r17-multisection-visibility-filtration-v1.json
@@ -110,6 +111,12 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-base-rank-screen-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-quartic-po0-campaign-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-po0-direct-product-alternate-orbit-1463f--alternate-orbit-19bad-p131-msolve.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-08234-direct-section-basis-plan-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-07ca9-direct-section-basis-plan-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-orbit08234-direct-fibration-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-orbit07ca9-direct-fibration-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-highest-rank-transports-v1.json
+!/artifacts/generated-results/elkies-k3-r17-norm12-prospective-ordinary-family-holdout-v1.json
 !/artifacts/generated-results/elkies-k3-r17-rank28-simultaneous-splitting-h10000-v1.json
 !/artifacts/generated-results/elkies-k3-r17-rank28-mixed-trace-splitting-h10000-v1.json
 !/artifacts/generated-results/elkies-k3-integral-rank-transfer-glue-census-v1.json
@@ -179,10 +186,16 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-r17-norm12-native-icarm-quotient-audit-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-icarm-calibration-dataset-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-icarm-calibration-dataset-v1.tsv
+!/artifacts/generated-results/elkies-k3-r17-carrier-receptivity-profiles-v1.json
+!/artifacts/generated-results/elkies-k3-r17-carrier-receptivity-profiles-v1.tsv
+!/artifacts/generated-results/elkies-k3-r17-same-curve-marked-u-panel-v1.json
+!/artifacts/generated-results/elkies-k3-r17-same-curve-marked-u-panel-v1.tsv
 !/artifacts/generated-results/elkies-k3-r17-norm12-11952-product-tate-parity-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-11952-product-deep-trace-inversion-v1.json
 !/artifacts/generated-results/elkies-k3-r17-norm12-11952-product-deep-trace-inversion-v1.tsv
 !/artifacts/generated-results/elkies-k3-r17-norm12-11952-product-twist-finite-field-bound-audit-v1.json
+!/artifacts/generated-results/elkies-k3-r17-residual-selmer-fingerprints-v1.json
+!/artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0fda0--alternate-orbit-1037d-p131-toric-frobenius-v1.json
 !/artifacts/generated-results/elkies-k3-norm12-orbit-103b2-twist-section-v1.json
 !/artifacts/generated-results/elkies-k3-norm12-orbit-103b2-p19-polynomial-section-bruteforce-v1.json
 !/artifacts/generated-results/elkies-k3-norm12-orbit-103b2-p29-polynomial-section-bruteforce-v1.json

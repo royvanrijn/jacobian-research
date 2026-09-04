@@ -20,6 +20,9 @@ ATLAS = GENERATED / "elkies-k3-r17-norm12-record-lineage-atlas-v1.json"
 SWEEP = GENERATED / "elkies-k3-r17-norm12-icarm-database-sweep-v1.json"
 CALIBRATION = GENERATED / "elkies-k3-r17-norm12-icarm-calibration-dataset-v1.json"
 NATIVE = GENERATED / "elkies-k3-r17-norm12-native-icarm-quotient-audit-v1.json"
+HIGH_RANK_TRANSPORTS = (
+    GENERATED / "elkies-k3-r17-norm12-highest-rank-transports-v1.json"
+)
 WGXLI = GENERATED / "elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json"
 NORM8_CURVE12 = GENERATED / "elkies-k3-r17-norm12-curve12-norm8-incidence-v1.json"
 NORM8_MORE = GENERATED / "elkies-k3-r17-norm12-icarm-norm8-incidence-v1.json"
@@ -50,6 +53,7 @@ SINGULAR_103B2 = (
 SINGULAR_11952 = (
     GENERATED / "elkies-k3-r17-norm12-11952-singular-bisection-search-complete-v1.json"
 )
+SAME_CURVE_PANEL = GENERATED / "elkies-k3-r17-same-curve-marked-u-panel-v1.json"
 
 OUTPUT = GENERATED / "elkies-k3-r17-carrier-receptivity-profiles-v1.json"
 TABLE = GENERATED / "elkies-k3-r17-carrier-receptivity-profiles-v1.tsv"
@@ -120,6 +124,7 @@ def build():
     sweep = load(SWEEP)
     calibration = load(CALIBRATION)
     native = load(NATIVE)
+    high_rank_transports = load(HIGH_RANK_TRANSPORTS)
     wgxli = load(WGXLI)
     norm8_curve12 = load(NORM8_CURVE12)
     norm8_more = load(NORM8_MORE)
@@ -135,12 +140,20 @@ def build():
     norm8_074d9 = load(NORM8_074D9)
     singular_103b2 = load(SINGULAR_103B2)
     singular_11952 = load(SINGULAR_11952)
+    same_curve_panel = load(SAME_CURVE_PANEL)
 
     if (
         alternate_chart_sweep["status"]
         != "PASS_EXACT_ALTERNATE_CHART_SWEEP_NO_RANK19_OR_RANK20_CHARACTER_INPUT"
     ):
         raise ArithmeticError("the alternate marked-chart character sweep is not exact")
+    if same_curve_panel["status"] != "PASS_EXACT_SAME_CURVE_DIFFERENT_MARKED_U_PANEL":
+        raise ArithmeticError("the same-curve marked-U panel is not exact")
+    if (
+        high_rank_transports["status"]
+        != "PASS_EXACT_THREE_HIGHEST_RANK_DISPLAYED_QUOTIENT_TRANSPORTS"
+    ):
+        raise ArithmeticError("the highest-rank quotient transports are not exact")
     if (
         complete_character_103b2["status"]
         != "PASS_EXACT_NO_COMPLETE_THREE_CHARACTER_CLOSURE"
@@ -195,20 +208,24 @@ def build():
         for row in calibration["rows"]
         if row["displayed_exceptional_quotient_dimension"] is None
     ]
-    if len(exact_rows) != 12 or len(unknown_rows) != 57:
-        raise ArithmeticError("expected twelve exact and 57 unknown quotient-labelled rows")
+    if len(exact_rows) != 15 or len(unknown_rows) != 54:
+        raise ArithmeticError("expected fifteen exact and 54 unknown quotient-labelled rows")
 
     native_by_curve = {int(row["curve_id"]): row for row in native["fibres"]}
     old_by_curve = {int(row["curve_id"]): row for row in wgxli["exceptional_quotients"]}
+    high_rank_by_curve = {
+        int(row["curve_id"]): row for row in high_rank_transports["fibres"]
+    }
     if set(native_by_curve) & set(old_by_curve):
         raise ArithmeticError("native and prior exact quotient audits overlap")
-    if set(native_by_curve) | set(old_by_curve) != set(exact_rows):
-        raise ArithmeticError("exact quotient sources do not match the twelve calibration rows")
+    if set(native_by_curve) | set(old_by_curve) | set(high_rank_by_curve) != set(exact_rows):
+        raise ArithmeticError("exact quotient sources do not match the fifteen calibration rows")
 
     old_chart = wgxli["representative"]["chart"]
     exact_chart_by_curve = {
         **{curve_id: row["native_chart"] for curve_id, row in native_by_curve.items()},
         **{curve_id: old_chart for curve_id in old_by_curve},
+        **{curve_id: row["native_chart"] for curve_id, row in high_rank_by_curve.items()},
     }
     exact_targets_by_chart = {label: [] for label in chart_by_label}
     for curve_id, label in exact_chart_by_curve.items():
@@ -253,6 +270,30 @@ def build():
             specialization_lookup[(chart, curve_id)] = record
     for rows in specialization_by_chart.values():
         rows.sort(key=lambda row: row["curve_id"])
+
+    same_curve_cells = {
+        (row["marked_U"], int(row["curve_id"])): row
+        for row in same_curve_panel["cells"]
+    }
+    if len(same_curve_cells) != 24:
+        raise ArithmeticError("the same-curve panel no longer has 24 unique cells")
+    for (chart, curve_id), panel_cell in same_curve_cells.items():
+        key = (chart, curve_id)
+        if key not in specialization_lookup:
+            raise ArithmeticError(f"same-curve panel cell is absent from the atlas: {key}")
+        record = specialization_lookup[key]
+        quotient_rank = int(panel_cell["displayed_exceptional_quotient"]["free_rank"])
+        if quotient_rank != int(record["known_curve_displayed_quotient_dimension"]):
+            raise ArithmeticError(f"same-curve quotient rank changed at {key}")
+        record["marked_quotient_transport_status"] = (
+            "EXACT_CHART_SPECIFIC_SATURATED_TRANSPORT"
+        )
+        record["marked_displayed_quotient_dimension"] = quotient_rank
+        record["marked_transport_evidence"] = relative(SAME_CURVE_PANEL)
+        if curve_id not in exact_targets_by_chart[chart]:
+            exact_targets_by_chart[chart].append(curve_id)
+    for curve_ids in exact_targets_by_chart.values():
+        curve_ids.sort()
 
     fitted_sources = []
     fitted_sources.append(
@@ -466,6 +507,43 @@ def build():
                     },
                 }
             )
+    existing_rigid_cells = {
+        (chart, int(row["curve_id"]))
+        for chart, rows in rigid_targets_by_chart.items()
+        for row in rows
+    }
+    for (chart, curve_id), panel_cell in same_curve_cells.items():
+        if (chart, curve_id) in existing_rigid_cells:
+            continue
+        audit = panel_cell["complete_carrier_audit"]
+        rigid_targets_by_chart[chart].append(
+            {
+                "curve_id": curve_id,
+                "inventory_size": int(audit["covers_evaluated"]),
+                "rational_split_count": int(audit["rational_split_count"]),
+                "transfer_rank_in_displayed_exceptional_quotient": int(
+                    audit["exact_split_span_rank_in_exceptional_quotient"]
+                ),
+                "transfer_span_primitive": bool(audit["split_span_is_primitive"]),
+                "same_curve_transport": True,
+                "evidence": relative(SAME_CURVE_PANEL),
+            }
+        )
+        for split in audit["splits"]:
+            rigid_edges_by_chart[chart].append(
+                {
+                    "carrier": f"rigid:{split['label']}",
+                    "target_curve_id": curve_id,
+                    "priority_rank": int(split["priority_rank"]),
+                    "target_quotient_class": {
+                        "basis": "deterministic Smith quotient basis",
+                        "coordinates": split[
+                            "plus_quotient_vector_in_deterministic_smith_basis"
+                        ],
+                    },
+                    "same_curve_transport": True,
+                }
+            )
     for rows in rigid_targets_by_chart.values():
         rows.sort(key=lambda row: row["curve_id"])
     for chart, edges in rigid_edges_by_chart.items():
@@ -500,19 +578,20 @@ def build():
         row["label"]: row
         for row in alternate_chart_sweep["complete_smooth_layer"]["records"]
     }
-    obstruction_by_chart = {
+    resolved_saturation_by_chart = {
         row["label"]: row
-        for row in alternate_chart_sweep["remaining_full_atlas_marking_obstructions"]
+        for row in alternate_chart_sweep["exact_halving_saturations"]
     }
+    obstruction_by_chart = {}
     alternate_charts = {
         row["label"] for row in charts if row["frame_class"] == "alternate-Q80"
     }
     if set(inherited_character_by_chart) != alternate_charts:
         raise ArithmeticError("the inherited character layer does not cover ten alternate charts")
-    if set(alternate_complete_character_by_chart) | set(obstruction_by_chart) != alternate_charts:
-        raise ArithmeticError("complete and obstructed alternate character layers do not partition")
-    if set(alternate_complete_character_by_chart) & set(obstruction_by_chart):
-        raise ArithmeticError("an alternate chart is both complete and marking-obstructed")
+    if set(alternate_complete_character_by_chart) != alternate_charts:
+        raise ArithmeticError("the complete character layer does not cover ten alternate charts")
+    if len(resolved_saturation_by_chart) != 4:
+        raise ArithmeticError("the four exact height-four saturations changed")
     complete_character_by_chart = dict(alternate_complete_character_by_chart)
     complete_character_by_chart["norm12-orbit-103b2"] = {
         "label": "norm12-orbit-103b2",
@@ -749,6 +828,7 @@ def build():
         inherited_character = inherited_character_by_chart.get(label)
         complete_character = complete_character_by_chart.get(label)
         marking_obstruction = obstruction_by_chart.get(label)
+        resolved_saturation = resolved_saturation_by_chart.get(label)
 
         if rigid_targets:
             rigid_component = {
@@ -886,6 +966,7 @@ def build():
                 "inherited_height_four": inherited_character,
                 "complete_smooth_norm_ten": complete_character,
                 "full_smooth_layer_marking_obstruction": marking_obstruction,
+                "resolved_height_four_saturation": resolved_saturation,
                 "evidence": (
                     relative(ALTERNATE_CHART_SWEEP)
                     if inherited_character is not None
@@ -1000,10 +1081,9 @@ def build():
         ],
         key=lambda row: int(row["curve_id"]),
     )
-    if highest_unknown_rank != 28 or [int(row["curve_id"]) for row in selected_unknown_rows] != [
-        11,
-        391,
-        423,
+    if highest_unknown_rank != 27 or [int(row["curve_id"]) for row in selected_unknown_rows] != [
+        67,
+        416,
     ]:
         raise ArithmeticError("the declared highest-rank transport tranche changed")
 
@@ -1102,7 +1182,9 @@ def build():
                     native_characters["complete_smooth_norm_ten"] or {}
                 ).get("distinct_character_count"),
                 "full_smooth_marking_saturation_index": (
-                    native_characters["full_smooth_layer_marking_obstruction"] or {}
+                    native_characters["resolved_height_four_saturation"]
+                    or native_characters["full_smooth_layer_marking_obstruction"]
+                    or {}
                 ).get("complete_old_degree_one_lattice_saturation_index"),
                 "low_genus_base_rank_status": low_genus["status"],
                 "maximum_certified_base_Jacobian_rank_lower_bound": low_genus.get(
@@ -1222,7 +1304,7 @@ def build():
     )
     if total_off_diagonal_tests != 175 or total_off_diagonal_hits != 0:
         raise ArithmeticError("the first norm-eight off-diagonal audit changed")
-    if total_fitted_edges != 75 or total_rigid_edges != 70:
+    if total_fitted_edges != 75 or total_rigid_edges != 134:
         raise ArithmeticError("the first branch-incidence graph counts changed")
 
     input_paths = (
@@ -1230,6 +1312,7 @@ def build():
         SWEEP,
         CALIBRATION,
         NATIVE,
+        HIGH_RANK_TRANSPORTS,
         WGXLI,
         NORM8_CURVE12,
         NORM8_MORE,
@@ -1245,6 +1328,7 @@ def build():
         NORM8_074D9,
         SINGULAR_103B2,
         SINGULAR_11952,
+        SAME_CURVE_PANEL,
     )
     payload = {
         "schema": "elkies-k3.r17-carrier-receptivity-profiles.v1",
@@ -1270,6 +1354,9 @@ def build():
             "PGL2_families": len(set(family_by_chart.values())),
             "frame_class_counts": atlas["atlas"]["frame_class_counts"],
             "exact_quotient_labelled_fibres": len(exact_rows),
+            "exact_quotient_labelled_curve_chart_cells": sum(
+                len(rows) for rows in exact_targets_by_chart.values()
+            ),
             "marked_U_profiles_with_exact_quotient_targets": len(exact_profile_labels),
             "marked_U_labels_with_exact_quotient_targets": sorted(exact_profile_labels),
             "marked_U_profiles_with_exact_rigid_transfer_data": exact_rigid_profile_count,
@@ -1304,6 +1391,9 @@ def build():
             ),
             "alternate_marked_U_with_full_smooth_layer_marking_obstruction": len(
                 obstruction_by_chart
+            ),
+            "alternate_marked_U_with_resolved_height_four_saturation": len(
+                resolved_saturation_by_chart
             ),
             "unknown_quotient_rows_before_initial_tranche": len(unknown_rows),
             "selected_initial_transport_rows": len(transport_tranche),
@@ -1345,23 +1435,23 @@ def build():
         "claim_boundary": {
             "exact": [
                 "the 43 marked-U identities, PGL2 family partition, and equation complexities",
-                "the twelve chart-specific displayed quotient labels on four marked U embeddings",
-                "the twelve complete fixed-inventory rigid transfer ranks",
+                "34 chart-specific displayed quotient labels on fourteen marked U embeddings",
+                "31 complete fixed-inventory rigid transfer ranks, including nineteen non-native same-curve transports",
                 "the 175 off-diagonal fitted norm-eight square tests and their zero hits",
-                "the 70 rigid and 75 fitted norm-eight specialization-incidence edges",
+                "the 134 rigid and 75 fitted norm-eight specialization-incidence edges",
                 "the inherited branch-character layer on ten alternate marked U embeddings",
-                "the complete smooth norm-ten branch-character layer on six alternate marked U embeddings",
+                "the complete smooth norm-ten branch-character layer on all ten alternate marked U embeddings",
                 "the complete smooth norm-ten branch-character layer on marked U=103b2",
                 "the stored low-genus base lower bounds on marked U=103b2 and marked U=11952",
                 "the displayed marked minimum-class data and fail-closed Tate status",
-                "the rank-28 three-row initial transport tranche",
+                "the completed rank-28 three-row tranche and selected rank-27 two-row next tranche",
             ],
             "unknown_or_not_inferred": [
                 "the full Mordell-Weil groups of the specialized public fibres",
                 "positive target quotient ranks for off-diagonal fitted carriers",
-                "carrier data on a PGL2-equivalent chart without a saturated marked transport",
+                "carrier data on the 78 remaining PGL2-equivalent parameter matches without a saturated marked transport",
                 "every Tate quotient dimension and nonzero minimum Tate class",
-                "the 54 lower-rank deferred quotient transports",
+                "the 52 quotient transports below the selected rank-27 pair",
                 "historical search exposure and causal family quality",
             ],
         },
@@ -1398,8 +1488,9 @@ def main():
         output.write_text(serialized)
         table_output.write_text(table_text)
     print(
-        "R17CARRIERRECEPTIVITY|marked_U=43|exact_quotients=12|"
-        "offdiag_tests=175|offdiag_hits=0|initial_transports=3|"
+        "R17CARRIERRECEPTIVITY|marked_U=43|exact_quotient_curves=15|"
+        "exact_curve_chart_cells=34|"
+        "offdiag_tests=175|offdiag_hits=0|next_transports=2|"
         f"status=PASS|output={relative(output)}",
         flush=True,
     )

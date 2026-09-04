@@ -86,7 +86,13 @@ def main() -> None:
     ):
         raise AssertionError("the serialized exact baseline is invalid")
     gate = require_gate_for_specialization(
-        args.residual_selmer_gate, specialization
+        args.residual_selmer_gate,
+        specialization,
+        requested_search_limits={
+            "height": args.height,
+            "denominator_bound": args.denominator_bound,
+            "wall_seconds": args.timeout,
+        },
     )
     coefficients = completed_square_coefficients(model)
     command = [

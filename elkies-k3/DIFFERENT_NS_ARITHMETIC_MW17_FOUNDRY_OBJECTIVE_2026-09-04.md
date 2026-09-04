@@ -12,8 +12,9 @@ Status: **OPEN**.
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
 <!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 252991e141c42e55 -->
 <!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 6b9d34ae8d722280 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 71f43dc9ef3af620 -->
+<!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY d94b3dbddf5cb529 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 9f40eebe50b66ea4 -->
 
 ## Milestone
 
@@ -94,16 +95,18 @@ rank-three T
 
 The generated `T`-first planner enforces this order on all 827 catalogue
 rows without using rootless-frame data in its arithmetic priority. It
-propagates three exact exclusions and the already-realized determinant-948
-positive control. The remaining arithmetic research queue has 823 rows: 62
-from the old rootless-MW17 subcatalogue and 761 not yet screened at the NS
-stage. Twenty-four currently have coarse genus at most two. That coarse genus
+propagates four exact exclusions and the already-realized determinant-948
+positive control. The remaining arithmetic research queue has 822 rows: 62
+from the old rootless-MW17 subcatalogue and 760 not yet screened at the NS
+stage. Twenty-three currently have coarse genus at most two. That coarse genus
 is a prioritization diagnostic only; it is not the genus of the stable
 marking curve and proves neither a rational point nor a rational marking.
 
-The first exact-coarse calculations are currently the determinant `378`,
-`256`, and `512` rows. Their coarse curves are respectively `X_0(7)`,
-`X_0(2)`, and `X_0(4)`, but their literal stable kernels are still unknown.
+The split determinant-`378` row is now closed: its coarse `X_0(7)` becomes
+`X_0(63)` after imposing the literal stable kernel, and all its rational
+points are cusps. The next exact-coarse calculations are determinant `256`
+and `512`, with coarse curves `X_0(2)` and `X_0(4)`; their literal stable
+kernels are still unknown.
 The priority tuple is
 
 ```text
@@ -187,6 +190,8 @@ boundaries are recorded in
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_golay_det720_qq_marking_obstruction.sage --check
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_det378_qq_marking_obstruction.sage --check
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
 python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
@@ -196,6 +201,8 @@ python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
 
 - [`GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
   — exact stable curve and determinant-720 exclusion.
+- [`DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
+  — literal `A4` spin image, stable `X_0(63)`, and split determinant-378 exclusion.
 - [`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md)
   — marking decisions and empty equation-agent handoff.
 - [`DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md`](DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md)

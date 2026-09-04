@@ -15,6 +15,18 @@ Do not move a local cache file into this directory merely to preserve it.
 Promote only a compact manifest or independently checkable reference artifact,
 and document the exact command and whole-file SHA-256.
 
+- `elliptic-curves/icarm_curve302_point_cloud_v1.json` records canonical
+  mod-2 and mod-3 finite-reduction row spaces through prime 1000, exact
+  denominator and squareclass diagnostics, frozen-training held-out rational
+  interpolation, and fixed-`X` quadratic-deformation tests for curve 302,
+  curve 273, and the curve-245 Fermigier--Mestre negative control. Replay it
+  with `PYTHONPATH=elliptic-curves/cas .venv/bin/python
+  elliptic-curves/cas/analyze_icarm_curve302_point_cloud.py --check`; its
+  whole-file SHA-256 is
+  `26b7b646cb3d282bf0b5811a9e923a7143303ff56dafe59c69f735ca5b55fa3d`.
+
+<!-- status-consumer: EC-ICARM-CURVE302-POINT-CLOUD 1e1eb37dd6d4350f -->
+
 This directory contains reproducible outputs from retained research
 computations.  Only outputs with a named generator and verification path below
 are treated as reference artifacts.
@@ -41,7 +53,8 @@ local cache so it cannot become a competing mathematical-status authority.
 
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
 <!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 6b9d34ae8d722280 -->
+<!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY d94b3dbddf5cb529 -->
 
 - `elkies-k3-rank19-arithmetic-marking-classifier-v1.json` records exact
   NS/T/Clifford data for all 66 rootless-MW17 candidate surfaces, separates
@@ -66,12 +79,21 @@ local cache so it cannot become a competing mathematical-status authority.
 
 - `elkies-k3-arithmetic-first-marked-t-foundry-v1.json` is the global
   transcendental-first queue. It orders all 827 `T` rows without rootless
-  data, records 3 exclusions, 1 realized positive control, 823 arithmetic
-  research rows, 24 coarse genus-at-most-two diagnostics, and no new
+  data, records 4 exclusions, 1 realized positive control, 822 arithmetic
+  research rows, 23 coarse genus-at-most-two diagnostics, and no new
   NS/rootless handoff. Replay it with
   `python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check`.
   Its whole-file SHA-256 is
-  `47934d45506ec4422d5e6e5f0e3e1d30964913194df3250aa50d1f633389a6eb`.
+  `8f6e07d6acd2a5f73b68d4bdddda6c129ada835df439d5e69fa99e0764a7e21a`.
+
+- `elkies-k3-det378-qq-marking-obstruction-v1.json` records the exact
+  `U(3)+<42>` discriminant form, primitive and literal Clifford orders, `A4`
+  norm-one spin image, `A4 x C2` proper image, full `A4 x C2 x C2` image,
+  stable `X_0(63)` curve, and its
+  four rational cusps with no rational noncuspidal point. Replay it with
+  `sage -python elkies-k3/scripts/certify_det378_qq_marking_obstruction.sage --check`.
+  Its whole-file SHA-256 is
+  `cde5b29f0a361cd0c8e81c0c38d8aedba08c155cd4359651d7c9c368d4a1b249`.
 
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 
@@ -133,6 +155,33 @@ local cache so it cannot become a competing mathematical-status authority.
   its whole-file SHA-256 is
   `6ea5ad82a06b3fa4361afe6b7db479534b1a06342e7de53db9d1cb9221fa1eba`.
 
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO 61d8e223f0ef7d0f -->
+
+- `elkies-k3-r17-product-alternate-orbit-0fda0--alternate-orbit-1037d-p131-toric-frobenius-v1.json`
+  is the first complete product-twist closure.  It records the degree-36
+  primitive toric Frobenius polynomial, independently reconstructed
+  degree-eight boundary and degree-18 `U+4D4` factors, the full degree-46
+  `H^2` polynomial, and the degree-28 elliptic quotient.  The quotient
+  reproduces the old power sums `(-119,18305)`, passes an exact Weil-circle
+  test, and has no cyclotomic Tate factor, giving `rho=18`, geometric
+  product-twist rank zero, and `A^-=Gamma_d=Hhat^(-1)=0`.  Replay it with
+  `elkies-k3/scripts/run_r17_product_toric_frobenius.sh`; its whole-file
+  SHA-256 is
+  `18d573595663fba18793791c1693c712ef6adaf637ec79eeedba5dd80bb7aa21`.
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO 61d8e223f0ef7d0f -->
+
+- `elkies-k3-r17-rank55-singleton-toric-frobenius-bounds-v1.json` aggregates
+  the two singleton calculations.  At `p=131` for `q_0fda0` and `p=157` for
+  `q_1037d`, the degree-24 quotient has Tate factor exactly `(Z-1)^2`.
+  Together with the known sections this gives geometric rank intervals
+  `[1,2]` and `[1,2]`, hence character interval
+  `17+[1,2]+[1,2]+0`.  Exact singleton rank one remains `UNKNOWN`.  Replay
+  with
+  `sage -python elkies-k3/scripts/certify_r17_rank55_singleton_toric_frobenius_bounds.sage --check`;
+  the aggregate whole-file SHA-256 is
+  `2c09ce7aef7d21c7db7694fdffa47ea913c3402a6485144ad93004800503c603`.
+<!-- status-consumer: EC-K3-R17-NORM12-11952-RANK55-SINGLETON-FROBENIUS-BOUNDS 163b9ffe20045a08 -->
+
 - `elkies-k3-r17-norm12-icarm-database-sweep-v1.json` records all 2,844 exact
   projective preimage decisions for the 474 equations in the pinned ICARM
   snapshot against the six norm-twelve rational-`PGL2` `j`-classes.  It finds
@@ -150,7 +199,9 @@ local cache so it cannot become a competing mathematical-status authority.
   and the same command with `--check`; its whole-file SHA-256 is
   `17986087896ff002ca773796bd91797c4b01d3e09b8913b2c5939870259bdd0d`.
 
-<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 1b09c81c025e5fc3 -->
+<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 6b2a0546b65246d5 -->
+<!-- status-consumer: EC-K3-R17-NORM12-HIGHEST-RANK-TRANSPORTS c4c8a81fc735fea2 -->
+<!-- status-consumer: EC-K3-R17-NORM12-PROSPECTIVE-FAMILY-HOLDOUT 8fb7417663ea1d98 -->
 
 - `elkies-k3-r17-norm12-native-icarm-quotient-audit-v1.json` gives exact
   displayed-subgroup quotients and exhaustive native fixed-cover split spans
@@ -176,10 +227,59 @@ local cache so it cannot become a competing mathematical-status authority.
 - `elkies-k3-r17-norm12-icarm-local-fingerprints-v1.json` and
   `elkies-k3-r17-norm12-icarm-calibration-dataset-v1.json/.tsv` give the exact
   69-fibre local feature table and its fail-closed exact/unknown quotient
-  labels, including five exact norm-eight incidence controls.  Replay them with
+  labels, including the three highest-rank `Z^11` transports and five exact
+  norm-eight incidence controls.  Replay them with
   `.venv/bin/python elkies-k3/scripts/audit_r17_norm12_icarm_local_fingerprints.py --check`
   and
   `.venv/bin/python elkies-k3/scripts/build_r17_norm12_icarm_calibration_dataset.py --check`.
+  The calibration JSON and TSV whole-file SHA-256 values are respectively
+  `38f24f0c5e85ab78033576eb85914de31f1e494a64f1945b75ad6c08edb13e19`
+  and `77b1d8e83d1444ffea85a3c6e2e8fac2dc16dd283850098ade5bd8e59784d616`.
+
+- `elkies-k3-r17-norm12-{08234,07ca9}-direct-section-basis-plan-v1.json`
+  and `elkies-k3-r17-norm12-orbit{08234,07ca9}-direct-fibration-v1.json`
+  certify the two determinant-one section plans and their exact saturated
+  direct models.  Their whole-file SHA-256 values, in that order, are
+  `c65db07c806afc167ce5a49d3722dc7545fbc26d2d6f7e7811c995ef17b71597`,
+  `700524ab14a516febb891c7a6d446ccb2f46e44ec94d49585bec64ebc33b1e6e`,
+  `650c200300f884b266c316eae5bd6c7567c1707dfc21196827b8c18d84a16ddd`,
+  and `a9c21568aa5f909013a951924f78f6a222f59b38c12f3048b8a3fb5febc1871b`.
+
+- `elkies-k3-r17-norm12-highest-rank-transports-v1.json` specializes exact
+  saturated MW17 bases on representatives `08234` and `07ca9` and proves the
+  displayed quotients `Z^11` for curves 11, 423, and 391.  It evaluates no
+  cover inventory. Replay it with
+  `PYTHONPATH=elliptic-curves/cas sage -python elkies-k3/scripts/certify_r17_norm12_highest_rank_transports.sage --check`;
+  its whole-file SHA-256 is
+  `55aea9f4950580f0405e5631bc33abbd2e6c9f81c16c0e5a31c223efb3b09627`.
+
+- `elkies-k3-r17-same-curve-marked-u-panel-v1.json/.tsv` holds five public
+  curves fixed across all ten alternate-Q80 charts in their rational-`PGL2`
+  classes.  Its 24 exact cells include nineteen new non-native transports and
+  exhaustive 39,147-cover audits.  Unimodular basis changes and lattice HNFs
+  prove that the generic and carrier-visible extension lattices stay fixed,
+  while first-hit carrier priority varies by up to `19,453/850`.  Replay it
+  with
+  `PYTHONPATH=elliptic-curves/cas sage -python elkies-k3/scripts/certify_r17_same_curve_marked_u_panel.sage --check`;
+  the JSON whole-file SHA-256 is
+  `bab7869c2c44331a3093996e3166a37d02099096bf888836a061479cb68e2441`.
+
+- `elkies-k3-r17-carrier-receptivity-profiles-v1.json/.tsv` records all 43
+  marked-`U` profiles.  It now contains 34 exact quotient-labelled
+  curve/chart cells, 31 complete fixed-cover span audits, and all ten resolved
+  alternate-Q80 norm-ten layers.  Replay it with
+  `.venv/bin/python elkies-k3/scripts/build_r17_carrier_receptivity_profiles.py --check`;
+  the JSON whole-file SHA-256 is
+  `82abb94fe8ac0240e6faa987349a5d6b3c18cd9558539feba5540dc932ea69a7`.
+
+- `elkies-k3-r17-norm12-prospective-ordinary-family-holdout-v1.json` freezes
+  1,536 unopened ordinary parameters, 256 per exact `PGL2` family, in the new
+  height shell `30001..60000`.  Two whole families are locked until a
+  predictor trained under the uniform protocol is hash-frozen.  Replay the
+  commitment with
+  `.venv/bin/python elkies-k3/scripts/build_r17_norm12_prospective_family_holdout.py --check`;
+  its whole-file SHA-256 is
+  `2e150908cfe7fe72a7157a96aa271bfe7335478708ca0b54e85cc8777f3d5909`.
 
 - `elkies-k3-r17-074d9-cross-fibre-bisection-transfer-v1.json` gives the
   complete 39,120-character rigid split census and exact displayed-quotient
@@ -188,6 +288,29 @@ local cache so it cannot become a competing mathematical-status authority.
   `sage -python elkies-k3/scripts/certify_r17_074d9_cross_fibre_bisection_transfer.sage --check`;
   its whole-file SHA-256 is
   `7f97d43846e6c2b939273617a5209122b02dbe51d056c742c30f271cfbe86098`.
+
+- `elkies-k3-r17-074d9-twist-good-reduction-bounds-v1.json` records eight
+  exact nondegenerate toric Frobenius calculations for each of the four
+  record-specific twists.  Their best geometric MW-rank upper bounds are
+  `4,4,4,2`.  Replay the certificate with
+  `sage -python elkies-k3/scripts/certify_r17_074d9_twist_good_reduction_bounds.sage --check`.
+
+- `elkies-k3-r17-074d9-record-twist-sections-v1.json` gives one exact
+  height-six section on each twist, its record-fibre specialization, and its
+  displayed exceptional-quotient image.  Replay it with
+  `sage -python elkies-k3/scripts/derive_r17_074d9_record_twist_sections.sage --check`.
+
+- `elkies-k3-r17-074d9-twist-2descent-audit-v1.json` preserves all four
+  completed discovery-prime 2-Selmer groups and all four globally good
+  `p=131` timeouts.  The former do not bound the characteristic-zero ranks;
+  the latter return no Selmer group.
+
+- `elkies-k3-r17-074d9-record-twist-mw-contribution-v1.json` combines the
+  exact images and geometric bounds.  It proves rank obstructions `8<12` at
+  curve 356 and `6<12` at curve 385 while retaining all four individual
+  `QQ(u)` ranks as `UNKNOWN`.  Replay it with
+  `sage -python elkies-k3/scripts/certify_r17_074d9_record_twist_mw_contribution.sage --check`.
+<!-- status-consumer: EC-K3-R17-074D9-RECORD-TWIST-MW-OBSTRUCTION c794f827e9a8ac36 -->
 
 - `elkies-k3-r17-074d9-norm8-cross-fibre-transfer-v1.json` records the exact
   canonical and cheapest-16 frozen norm-eight transfer matrices.  Every
@@ -203,9 +326,49 @@ local cache so it cannot become a competing mathematical-status authority.
   its whole-file SHA-256 is
   `e09d27bafb30f62c496c7e6a32290819e3c4229fdb4efacd3535413d2964f506`.
 
+- `elkies-k3-r17-074d9-local-kummer-meet-v1.json` records the exact cubic
+  Kummer images for the displayed exceptional quotient bases at curves 351,
+  356, 376, 377, 385, and native alternate-Q80 curve 12.  It covers 2, every
+  bad prime, and eight fixed common good primes, including valuation parity,
+  local image dimensions, component-image orders, and every componentwise
+  Hilbert pairing.  The ten-direction rigid complements at curves 356 and 385
+  have unequal invariant local signatures, so its CRT/inward-search gate is
+  negative.  Replay it with
+  `sage -python elkies-k3/scripts/certify_r17_074d9_local_kummer_meet.sage --legacy-coordinate-complement --check`;
+  its whole-file SHA-256 is
+  `74b3c71bdf321b23fc3a909041a3b3384e14d4d6dbc871855d2a00e3b046ef0d`.
+
+- `elkies-k3-r17-residual-selmer-fingerprints-v1.json` retains the exact
+  known-residual local Kummer subspaces for controls 351, 356, 376, 377, 385,
+  and alternate-Q80 curve 12, rather than compressing them to a score. It
+  records cumulative intersections, delete-one-place localization ranks,
+  component and available pairing data, the exact `+12` versus `+5` feature
+  comparison, sampled `t mod p^k` strata, and two CRT prototype cylinders.
+  The matrices are explicitly on the certified known subgroup; complete
+  Selmer groups and their leave-one-place-out matrices remain `UNKNOWN`.
+  Replay it with
+  `sage -python elkies-k3/scripts/build_r17_residual_selmer_fingerprints.sage --check`;
+  its whole-file SHA-256 is
+  `54548e6b7110d0b53ae3bd86a97bbd06fd1159836d19c3fc3ad4e23b77320fbc`.
+
+- `elkies-k3-r17-074d9-quotient-arithmetic-blocks-v1.json` presents each
+  record quotient as twelve named exceptional generators modulo the two exact
+  visible relations.  At every bad prime it records the quotient local Kummer
+  module, exact and mod-two component quotients and filtrations, and every
+  component Hilbert matrix with its radical test.  The component forms fail to
+  descend at primes `13,23,37,139` for curve 356 and
+  `5,29,37,41,73,109,127` for curve 385.  Hence the requested quotient
+  pairing graph and indecomposable `10=...` partition are deliberately
+  `NOT_DEFINED`, rather than computed on an arbitrary complement.  Replay it
+  with `sage -python elkies-k3/scripts/certify_r17_074d9_local_kummer_meet.sage --check`;
+  its whole-file SHA-256 is
+  `cc79ce63a857d4b5486bfd14f739fbdf5b30f1a3b5d1a0ee7993f570a5500a8e`.
+
 <!-- status-consumer: EC-K3-R17-074D9-RIGID-CROSS-FIBRE-TRANSFER abbedd192865f172 -->
 <!-- status-consumer: EC-K3-R17-074D9-NORM8-CROSS-FIBRE-TRANSFER-16 262e405b0adbbb73 -->
 <!-- status-consumer: EC-K3-R17-074D9-LATE-POINT-HOLDOUT 284e0f92def23419 -->
+<!-- status-consumer: EC-K3-R17-074D9-LOCAL-KUMMER-SEPARATION 375cb897b59e077f -->
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-ARITHMETIC-BLOCK-OBSTRUCTION af45468d1b7d831a -->
 
 - `elliptic_mestre_two_section_local_continuation.json` records a bounded
   recursive-jet continuation at the normalized six-root Mestre seed

@@ -172,13 +172,19 @@ expected certified quotient gain per CPU-hour at a fixed review budget.
 
 ## Residual-Selmer gate
 
-This programme does not relax the existing fail-closed rank-32 gate. Exact
-specialization of the generic 17, evaluation of already certified
-multisections, and finite-reduction independence tests can generate training
-labels. A new two-cover search, `ratpoints`, slope-box search, or comparable
-expensive point search remains forbidden unless the same minimal fibre has a
-completed residual two-Selmer quotient of dimension at least 15. Rows that do
-not pass that gate have a missing deep-search outcome, not a negative outcome.
+The rank-32 gate is now incremental and monotone. Exact specialization of the
+generic 17, evaluation of already certified multisections, and
+finite-reduction independence tests can generate training labels. Each proved
+residual upper bound is accumulated and may only decrease. A fibre is rejected
+as soon as that bound is below 15. A missing cubic BNF means “no finite upper
+bound yet”, not rejection; an open gate may then authorize `ratpoints`, a
+slope-box search, or comparable point search only with explicit finite
+height/time/resource limits, which the entrypoint checks against the gate.
+
+Complete unconditional descent remains mandatory for a Selmer upper bound,
+an exact-rank claim, or unbounded/expensive follow-up. Rows rejected by a
+proved upper bound have a missing deep-search outcome, not a negative search
+outcome; bounded misses remain right-censored experiments.
 
 ## Model and evaluation contract
 

@@ -10,6 +10,7 @@ CAS = ROOT / "elliptic-curves/cas"
 sys.path.insert(0, str(CAS))
 
 import run_elkies_2026_relative_2selmer_checkpointed as checkpointed  # noqa: E402
+from build_elkies_2026_relative_2selmer_suite import load_record_pair_cases  # noqa: E402
 
 
 class CheckpointedRelativeSelmerTests(unittest.TestCase):
@@ -22,6 +23,12 @@ class CheckpointedRelativeSelmerTests(unittest.TestCase):
         self.assertIn("ell2selmer_basis_gen", checkpointed.SIMON_GP_FUNCTION)
         self.assertIn("elllocalimage_mapped", checkpointed.SIMON_GP_FUNCTION)
         self.assertIn("nfeltsign", checkpointed.SIMON_GP_FUNCTION)
+        self.assertIn("Vec(localspaces)", checkpointed.SIMON_GP_FUNCTION)
+        self.assertIn("local_allowed_subspaces", checkpointed.SELMER_WORKER)
+        self.assertIn(
+            "global_norm_square_subspace_basis_columns_in_s_squareclasses",
+            checkpointed.SELMER_WORKER,
+        )
         self.assertNotIn('payload["exceptional_points"]', checkpointed.SELMER_WORKER)
         self.assertNotIn('payload["generic_points"]', checkpointed.SELMER_WORKER)
         self.assertIn("cover_for", checkpointed.QUOTIENT_COVER_WORKER)
@@ -77,6 +84,40 @@ class CheckpointedRelativeSelmerTests(unittest.TestCase):
         }
         self.assertTrue(labeled[3]["known_exceptional_subgroup_realizes_class"])
         self.assertFalse(labeled[4]["known_exceptional_subgroup_realizes_class"])
+
+    def test_record_pair_inputs_and_rigid_quotient(self) -> None:
+        cases = load_record_pair_cases()
+        self.assertEqual([case.case_id for case in cases], ["record-r29-356", "record-r29-385"])
+        self.assertEqual([len(case.exceptional_points) for case in cases], [12, 12])
+        self.assertEqual(
+            [case.rigid_complement_point_labels for case in cases],
+            [
+                ("P18", "P20", "P21", "P22", "P23", "P24", "P26", "P27", "P28", "P29"),
+                ("P18", "P19", "P20", "P22", "P23", "P25", "P26", "P27", "P28", "P29"),
+            ],
+        )
+
+        case = cases[0]
+        generic_rows = [
+            [1 if column == row else 0 for column in range(29)]
+            for row in range(17)
+        ]
+        exceptional_rows = [
+            [1 if column == row else 0 for column in range(29)]
+            for row in range(17, 29)
+        ]
+        result = checkpointed.combine_results(
+            case,
+            {"two_selmer_dimension": 29},
+            {"point_selmer_rows": generic_rows},
+            {"point_selmer_rows": exceptional_rows},
+        )
+        rigid = result["rigid_character_quotient"]
+        self.assertEqual(result["quotient_dimension"], 12)
+        self.assertEqual(rigid["rigid_image_dimension"], 2)
+        self.assertEqual(rigid["dimension_after_quotienting_rigid_plane"], 10)
+        self.assertEqual(rigid["displayed_nonrigid_image_dimension"], 10)
+        self.assertEqual(rigid["additional_dimension_beyond_all_twenty_nine_known_points"], 0)
 
 
 if __name__ == "__main__":

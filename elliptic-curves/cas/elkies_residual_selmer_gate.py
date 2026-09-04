@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Exact policy gate between Elkies scoring and expensive point searches.
+"""Residual-Selmer policy gates for theorem claims and bounded point searches.
 
-A Kummer signature, norm-one element, class-group envelope, or incomplete
-descent is deliberately insufficient.  Authorization requires an
-unconditional, completed 2-descent whose class-group completeness and every
-local-solubility condition are part of the backend result.
+An exact rank/Selmer claim still requires a complete unconditional descent.
+Bounded point search uses a weaker monotone policy: every proved residual
+upper bound is accumulated, a candidate is rejected once that bound is below
+the target, and missing class-group/BNF data remain ``no finite bound yet``.
+The latter authorizes only an explicitly bounded search, never a Selmer or
+rank assertion.
 """
 
 from __future__ import annotations
@@ -14,10 +16,12 @@ from pathlib import Path
 from typing import Any, Mapping, Sequence
 
 
-SCHEMA = "elliptic-curves.elkies-2026-residual-2-selmer-gate.v1"
+SCHEMA = "elliptic-curves.elkies-2026-residual-2-selmer-gate.v2"
+LEGACY_SCHEMA = "elliptic-curves.elkies-2026-residual-2-selmer-gate.v1"
 PASS_STATUS = "PASS_RANK32_RESIDUAL_2_SELMER_GATE"
 REJECT_STATUS = "REJECT_RANK32_BY_RESIDUAL_2_SELMER"
 INCOMPLETE_STATUS = "INCOMPLETE_NO_SELMER_BOUND_SEARCH_FORBIDDEN"
+OPEN_STATUS = "OPEN_MONOTONE_RESIDUAL_SELMER_SIEVE"
 
 
 class ResidualSelmerGateError(ValueError):
@@ -107,40 +111,164 @@ def gate_record(
     }
 
 
+def _validate_monotone_stages(stages: object) -> int | None:
+    if not isinstance(stages, list) or not stages:
+        raise ResidualSelmerGateError("the monotone sieve has no evidence stages")
+    previous: int | None = None
+    final: int | None = None
+    for index, stage in enumerate(stages):
+        if not isinstance(stage, dict):
+            raise ResidualSelmerGateError("a monotone sieve stage is malformed")
+        bound = stage.get("residual_upper_bound")
+        if bound is None:
+            if stage.get("proof_status") != "NO_FINITE_UPPER_BOUND_YET":
+                raise ResidualSelmerGateError("an infinite sieve stage has the wrong status")
+            if previous is not None:
+                raise ResidualSelmerGateError("a finite upper bound cannot revert to infinity")
+            continue
+        if not isinstance(bound, int) or bound < 0:
+            raise ResidualSelmerGateError("a residual upper bound must be nonnegative")
+        if stage.get("proof_status") != "PROVED_UPPER_BOUND":
+            raise ResidualSelmerGateError("a finite sieve bound lacks proof status")
+        if not stage.get("evidence"):
+            raise ResidualSelmerGateError("a finite sieve bound lacks evidence provenance")
+        if previous is not None and bound > previous:
+            raise ResidualSelmerGateError("residual upper bounds are not monotone")
+        previous = bound
+        final = bound
+    return final
+
+
+def monotone_sieve_gate_record(
+    *,
+    stages: list[Mapping[str, object]],
+    search_limits: Mapping[str, object],
+    known_generic_rank: int = 17,
+    target_rank: int = 32,
+) -> dict[str, object]:
+    """Authorize a bounded search unless proved upper bounds reject the fibre."""
+
+    if target_rank < known_generic_rank:
+        raise ResidualSelmerGateError("target rank cannot be below the known generic rank")
+    if not isinstance(search_limits, Mapping) or not search_limits:
+        raise ResidualSelmerGateError("bounded search authorization needs explicit limits")
+    final_bound = _validate_monotone_stages(stages)
+    required = target_rank - known_generic_rank
+    rejected = final_bound is not None and final_bound < required
+    return {
+        "known_generic_rank": known_generic_rank,
+        "target_rank": target_rank,
+        "required_residual_dimension": required,
+        "proved_residual_upper_bound": final_bound,
+        "status": REJECT_STATUS if rejected else OPEN_STATUS,
+        "expensive_search_authorized": False,
+        "bounded_point_search_authorized": not rejected,
+        "theorem_claim_authorized": False,
+        "decision": (
+            "rank target excluded by a proved monotone residual upper bound"
+            if rejected
+            else "not rejected; bounded point search may run within the recorded limits"
+        ),
+        "sieve": {
+            "order": "nonincreasing proved residual upper bounds; null means infinity",
+            "stages": [dict(stage) for stage in stages],
+        },
+        "search_authorization": {
+            "kind": "bounded_point_search",
+            "bounded": True,
+            "limits": dict(search_limits),
+            "rank_or_selmer_claims_from_search": False,
+        },
+    }
+
+
 def require_expensive_search_gate(
     path: Path,
     *,
     expected_parameter: str | None = None,
     expected_model: Sequence[object] | None = None,
+    requested_search_limits: Mapping[str, object] | None = None,
 ) -> Mapping[str, object]:
-    """Validate a completed unconditional gate artifact or raise."""
+    """Validate an exact gate or an explicitly bounded monotone-sieve gate."""
 
     document = json.loads(path.read_text())
-    if document.get("schema") != SCHEMA:
+    if document.get("schema") not in (SCHEMA, LEGACY_SCHEMA):
         raise ResidualSelmerGateError("unknown residual 2-Selmer gate schema")
-    if document.get("status") != PASS_STATUS:
+    status = document.get("status")
+    if status not in (PASS_STATUS, OPEN_STATUS):
         raise ResidualSelmerGateError(
-            "expensive search is forbidden without a passing residual 2-Selmer gate"
-        )
-    backend = document.get("descent_backend")
-    if not isinstance(backend, dict):
-        raise ResidualSelmerGateError("missing descent-backend attestation")
-    required_flags = (
-        "unconditional",
-        "class_group_completeness_completed",
-        "all_local_solubility_conditions_completed",
-    )
-    if any(backend.get(flag) is not True for flag in required_flags):
-        raise ResidualSelmerGateError(
-            "the descent backend does not attest unconditional global/local completeness"
+            "expensive search is forbidden by the residual 2-Selmer gate"
         )
     gate = document.get("gate")
-    if not isinstance(gate, dict) or gate.get("expensive_search_authorized") is not True:
-        raise ResidualSelmerGateError("the residual-dimension gate did not authorize search")
-    if int(gate.get("residual_two_selmer_quotient_dimension", -1)) < int(
-        gate.get("required_residual_dimension", 10**9)
-    ):
-        raise ResidualSelmerGateError("the stored residual dimension is below its threshold")
+    if not isinstance(gate, dict):
+        raise ResidualSelmerGateError("missing residual-dimension gate")
+    if status == PASS_STATUS:
+        backend = document.get("descent_backend")
+        if not isinstance(backend, dict):
+            raise ResidualSelmerGateError("missing descent-backend attestation")
+        required_flags = (
+            "unconditional",
+            "class_group_completeness_completed",
+            "all_local_solubility_conditions_completed",
+        )
+        if any(backend.get(flag) is not True for flag in required_flags):
+            raise ResidualSelmerGateError(
+                "the descent backend does not attest unconditional global/local completeness"
+            )
+        if gate.get("expensive_search_authorized") is not True:
+            raise ResidualSelmerGateError("the exact residual gate did not authorize search")
+        if int(gate.get("residual_two_selmer_quotient_dimension", -1)) < int(
+            gate.get("required_residual_dimension", 10**9)
+        ):
+            raise ResidualSelmerGateError("the stored residual dimension is below its threshold")
+    else:
+        if gate.get("bounded_point_search_authorized") is not True:
+            raise ResidualSelmerGateError("the monotone sieve did not authorize bounded search")
+        if gate.get("theorem_claim_authorized") is not False:
+            raise ResidualSelmerGateError("an incomplete sieve cannot authorize theorem claims")
+        sieve = gate.get("sieve")
+        if not isinstance(sieve, dict):
+            raise ResidualSelmerGateError("missing monotone sieve record")
+        final_bound = _validate_monotone_stages(sieve.get("stages"))
+        if final_bound != gate.get("proved_residual_upper_bound"):
+            raise ResidualSelmerGateError("the final monotone bound is inconsistent")
+        required = gate.get("required_residual_dimension")
+        if not isinstance(required, int) or required < 0:
+            raise ResidualSelmerGateError("the residual target is malformed")
+        if final_bound is not None and final_bound < required:
+            raise ResidualSelmerGateError("a rejected residual upper bound authorized search")
+        authorization = gate.get("search_authorization")
+        if (
+            not isinstance(authorization, dict)
+            or authorization.get("kind") != "bounded_point_search"
+            or authorization.get("bounded") is not True
+            or not isinstance(authorization.get("limits"), dict)
+            or not authorization["limits"]
+            or authorization.get("rank_or_selmer_claims_from_search") is not False
+        ):
+            raise ResidualSelmerGateError("bounded search limits are missing or malformed")
+        declared_limits = authorization["limits"]
+        if not isinstance(requested_search_limits, Mapping) or not requested_search_limits:
+            raise ResidualSelmerGateError(
+                "an open sieve requires the entrypoint's requested search limits"
+            )
+        for name, requested in requested_search_limits.items():
+            declared = declared_limits.get(name)
+            if (
+                isinstance(requested, bool)
+                or isinstance(declared, bool)
+                or not isinstance(requested, (int, float))
+                or not isinstance(declared, (int, float))
+                or requested <= 0
+                or declared <= 0
+            ):
+                raise ResidualSelmerGateError(
+                    f"bounded search limit {name!r} is missing or nonnumeric"
+                )
+            if requested > declared:
+                raise ResidualSelmerGateError(
+                    f"requested search limit {name!r} exceeds its authorization"
+                )
     if expected_parameter is not None and document.get("parameter") != expected_parameter:
         raise ResidualSelmerGateError("the descent gate belongs to a different fibre")
     if expected_model is not None and document.get("global_minimal_model") != [
@@ -151,7 +279,10 @@ def require_expensive_search_gate(
 
 
 def require_gate_for_specialization(
-    path: Path, specialization: Mapping[str, Any]
+    path: Path,
+    specialization: Mapping[str, Any],
+    *,
+    requested_search_limits: Mapping[str, object] | None = None,
 ) -> Mapping[str, object]:
     """Bind a passing gate to an exact q12o5867 specialization artifact."""
 
@@ -167,16 +298,20 @@ def require_gate_for_specialization(
         path,
         expected_parameter=affine_value,
         expected_model=model,
+        requested_search_limits=requested_search_limits,
     )
 
 
 __all__ = [
     "INCOMPLETE_STATUS",
+    "LEGACY_SCHEMA",
+    "OPEN_STATUS",
     "PASS_STATUS",
     "REJECT_STATUS",
     "ResidualSelmerGateError",
     "SCHEMA",
     "gate_record",
+    "monotone_sieve_gate_record",
     "require_gate_for_specialization",
     "require_expensive_search_gate",
 ]

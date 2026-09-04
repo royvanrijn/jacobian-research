@@ -1,7 +1,7 @@
 # Marked-`U` carrier-receptivity profile
 
 Date: 2026-09-04  
-Status: exact first profile on the stored controls; untransported coordinates remain `UNKNOWN`
+Status: exact profile on 34 transported curve/chart cells; untransported coordinates remain `UNKNOWN`
 
 ## Purpose
 
@@ -24,9 +24,9 @@ base-rank result from one marked `U` to another.  The machine table contains
 one record for each of the 43 marked charts and retains literal `UNKNOWN`
 values where the marked transport has not been performed.
 
-## First exact quotient-labelled profile
+## Anchor quotient-labelled profile
 
-The twelve currently exact displayed quotients live on four marked charts.
+The original twelve exact displayed quotients live on four anchor charts.
 Ranks in the third column are ranks in the displayed exceptional quotient,
 not ranks of the full specialized Mordell--Weil group.  Table labels abbreviate
 the canonical `norm12-orbit-*` marked-`U` labels.
@@ -43,20 +43,41 @@ respectively, `93--104`, `98--99`, `122--125`, and `64--70` bits.  The JSON
 stores each rational parameter itself, its numerator and denominator sizes,
 and the full chart equation-complexity vector.
 
-At this checkpoint the six coordinates have marked data on `4/43` charts for
-rigid transfer ranks, `3/43` for fitted off-diagonal norm-eight ranks, `12/43`
-for at least one exact branch-character/incidence layer, `3/43` for low-genus
-base ranks, `8/43` for at least one marked minimum-class row, and `43/43` for
-equation complexity.  No chart has a complete Tate quotient.  Exact rational
-parameters for the twelve control curves occur in 100 curve/chart matches
-across 36 charts, but only the twelve transports on the four charts above
-carry the quotient labels.
+After the same-curve panel and the completed rank-28 tranche, the six
+coordinates have marked data on `12/43` charts for complete rigid transfer
+ranks, `3/43` for fitted off-diagonal norm-eight ranks, `12/43` for at least
+one exact branch-character/incidence layer, `3/43` for low-genus base ranks,
+`12/43` for at least one marked minimum-class row, and `43/43` for equation
+complexity.  No chart has a complete Tate quotient.  The fifteen exact
+quotient-labelled curves occur in 112 curve/chart parameter matches across
+all 43 charts; 34 of those cells on fourteen charts now have saturated
+quotient transports, and 31 cells on twelve charts have complete fixed-cover
+span audits.
 
 This already separates arithmetic families carried by the same abstract
 frame.  Within alternate Q80, for example, the exact rigid rank vectors on
 `11952` and `08f72` are `(0,2)` and `(2,1,6)`, while only `11952` currently
 has the bounded low-genus base audit.  These are marked-chart statements;
 unknown coordinates on either side are not negative results.
+
+## Same-curve controlled panel
+
+The balanced alternate-Q80 subpanel now transports five fixed public curves
+through every chart in their rational-`PGL2` class: curves 12 and 395 on six
+charts, and curves 363, 364, and 378 on four.  This adds nineteen non-native
+transports, for 24 exact cells in total.  Every cell uses a saturated generic
+MW17 basis and the complete 39,147-carrier inventory.
+
+For each fixed curve, the generic subgroup is the same primitive sublattice
+of the ordered displayed public group: every chart basis differs from the
+native anchor by an integral determinant-`+/-1` matrix.  The complete split
+count, quotient-span rank, and carrier-visible extension lattice are also
+identical across presentations.  What varies is the deterministic carrier
+cost order.  The first splitting carrier moves by factors 19.13 for curve 395
+and 22.89 for curve 363; curve 12 remains the exact zero-split control on all
+six charts.  This makes prefix visibility and first-hit position measured
+search affordances, not intrinsic rank mechanisms.  See
+[`R17_SAME_CURVE_MARKED_U_PANEL_2026-09-04.md`](R17_SAME_CURVE_MARKED_U_PANEL_2026-09-04.md).
 
 ## Branch-incidence graph
 
@@ -84,14 +105,12 @@ quotient-labelled specialization nodes on the other.
   a held-out prediction score, because each pencil was fitted at its diagonal
   target.
 - The inherited branch-character layer is exact on all ten alternate-Q80
-  marked charts (1,198 covers summed over distinct base coordinates).  Six
-  charts have complete 39,147-class smooth norm-ten layers, each with no
+  marked charts (1,198 covers summed over distinct base coordinates).  All
+  ten now have complete 39,147-class smooth norm-ten layers, each with no
   equal-cover collision, internal three-character relation, or match to the
   twelve committed characters.  On `135b7`, `10f72`, `09952`, and `0ae21`,
-  the full layer remains unavailable because the constructed degree-one
-  equation sections have saturation index two and no committed glue curve
-  enters the missing coset.  That is a marking-method obstruction, not a
-  nonexistence statement.
+  the old degree-one section span first had index two; an exact rational
+  height-four half now saturates each marking.
 - Marked `103b2` separately has its complete 39,120-class smooth norm-ten
   layer, with distinct characters, no internal three-character relation, and
   no formal committed-catalogue product match.
@@ -114,28 +133,29 @@ does not classify the remaining native carrier classes.
 The exact frame minimum-norm histograms are retained only as reference data.
 They become marked minimum-class data on `103b2` and `11952`, and only the
 norm-eight/norm-ten counts have marked evidence on `074d9` and `08f72`.  The
-complete marked norm-ten count is also exact on `08ab4`, `091e4`, `1183a`, and
-`098fc`; their other minimum rows remain `UNKNOWN`.  Every full Tate quotient
-remains `UNKNOWN`.  On `11952`, the separate product-character
+complete marked norm-ten count is exact on all ten alternate-Q80 charts;
+their other minimum rows remain `UNKNOWN`.  Every full Tate quotient remains
+`UNKNOWN`.  On `11952`, the separate product-character
 reduction excludes the zero Tate class for height-eight sections under its
 stated gates; it does not determine a quotient dimension, a nonzero class,
 or existence.
 
-## Initial transport tranche
+## Next quotient-only transport tranche
 
-Among the 57 rows without a displayed quotient transport, the maximum current
-rank lower bound is 28.  The initial completion tranche is exactly:
+The former rank-28 tranche is complete: curves 11, 391, and 423 each have an
+exact displayed quotient `Z^11`.  Among the remaining 54 rows without a
+displayed quotient transport, the maximum current rank lower bound is 27.
+The next quotient-only tranche is:
 
 | curve | marked `U` | parameter height | rank jump over generic 17 |
 |---:|---|---:|---:|
-| 11 | `08234` | 105 bits | at least 11 |
-| 391 | `07ca9` | 108 bits | at least 11 |
-| 423 | `08234` | 106 bits | at least 11 |
+| 67 | `08234` | 99 bits | at least 10 |
+| 416 | `08234` | 104 bits | at least 10 |
 
-The other 54 transports are deferred.  Selection uses only the maximum rank
+The other 52 transports are deferred.  Selection uses only the maximum rank
 lower bound; public family hit counts are deliberately absent because the
-historical search exposure and its denominator are unknown.  The three
-selected quotient fields also remain `UNKNOWN` until their saturated
+historical search exposure and its denominator are unknown.  The two selected
+quotient fields remain `UNKNOWN` until their saturated
 chart-specific generic bases and exact specialization relations have been
 compiled.
 
@@ -143,6 +163,7 @@ compiled.
 
 - Full 43-chart profile: [`../artifacts/generated-results/elkies-k3-r17-carrier-receptivity-profiles-v1.json`](../artifacts/generated-results/elkies-k3-r17-carrier-receptivity-profiles-v1.json)
 - Compact comparison table: [`../artifacts/generated-results/elkies-k3-r17-carrier-receptivity-profiles-v1.tsv`](../artifacts/generated-results/elkies-k3-r17-carrier-receptivity-profiles-v1.tsv)
+- Same-curve exact panel: [`../artifacts/generated-results/elkies-k3-r17-same-curve-marked-u-panel-v1.json`](../artifacts/generated-results/elkies-k3-r17-same-curve-marked-u-panel-v1.json)
 - Builder/checker: [`scripts/build_r17_carrier_receptivity_profiles.py`](scripts/build_r17_carrier_receptivity_profiles.py)
 
 ```bash

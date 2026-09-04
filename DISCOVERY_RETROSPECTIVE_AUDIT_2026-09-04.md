@@ -320,12 +320,18 @@ by ID rather than silently normalizing them:
   `PGL2` classes, 69 hits, and curve 12 quotient `Z^12`.
 - [ ] Replay every checker behind the seven-fibre native quotient/visibility
   audit after the current `08f72` extensions settle. **Blocked-current.**
-- [ ] Compile saturated chart transports for the 57 recognized fibres whose
+- [ ] Compile saturated chart transports for the 54 recognized fibres whose
   quotient dimensions remain unknown; preserve nulls until each exact replay.
-- [ ] Group any predictor training/test split by the six family classes so
-  fibre-level leakage cannot inflate performance.
+  The highest-rank tranche is complete: curves 11, 391, and 423 each have an
+  exact displayed `Z^11` quotient transport.
+- [x] Group predictor training/test splits by the six family classes.  The new
+  1,536-row ordinary cohort locks two complete rational-`PGL2` families until
+  a predictor trained on the other four complete families is hash-frozen;
+  no fibre-level random split is permitted.
 - [ ] Record actual search exposure denominators before comparing public hit
-  counts across families; do not infer effort from successes.
+  counts across families; do not infer effort from successes.  The historical
+  denominator remains unknown; the prospective protocol instead commits a
+  new, fully enumerated 1,536-row scheduled denominator.
 - [x] Replay the rootless J2 frame classifier modes that complete within the
   cheap window and retain the full Niemeier-first enumeration as a long replay.
 - [x] Replay the direct noncyclic `4A1/MW13` equation and reverse target-free

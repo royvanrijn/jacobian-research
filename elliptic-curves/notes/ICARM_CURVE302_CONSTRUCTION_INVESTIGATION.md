@@ -1,7 +1,7 @@
 # ICARM curve 302: construction and H3/R17 provenance investigation
 
-Status: **exactly excluded from the published R17 chart; broader public
-provenance incomplete**.
+Status: **exactly excluded from the published R17 chart; direct point-cloud
+reconstruction is active; broader public provenance incomplete**.
 
 ## Bottom line
 
@@ -19,6 +19,14 @@ direct rational specialization of that published chart.  This does not rule
 out another K3 fibration, an isogenous construction, or a different family.
 See
 [`ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md`](ELKIES_BISECTION_VISIBILITY_AND_RECORD_CURVES.md).
+
+The apparent numerical `17+14` structure is not provenance evidence.  The
+submitted first seventeen points intersect the independently selected
+rank-17 candidate in rank only nine, and the same selection procedure produces
+an R17-like rank-17 candidate on the known Fermigier--Mestre rank-12 negative
+control.  The active reconstruction baseline is now the complete 31-point
+configuration; see
+[`ICARM_CURVE302_POINT_CLOUD_RECONSTRUCTION.md`](ICARM_CURVE302_POINT_CLOUD_RECONSTRUCTION.md).
 
 ## Exact recognition fingerprint
 
@@ -92,16 +100,22 @@ isomorphism or section transport could be attached.
 
 ## Best next calculations
 
-The current high-leverage route is not a blind 32nd-point search on curve 302:
-the public BSD+GRH calculation already predicts exact rank 31. Instead:
+The public BSD+GRH calculation predicts exact rank 31, so a blind 32nd-point
+search on curve 302 remains low leverage.  The active construction problem is
+instead to recover a coordinate- and basis-flexible fossil from the submitted
+points:
 
-- obtain the discoverers' construction record and test any different proposed
-  family by the same exact invariant gate;
-- keep curve 302 as an external regression for finite-quotient independence,
-  height-lattice diagnostics and residual descent;
-- pursue rank 32 in the published `R17` family through its certified rational
-  parameters and quotient-targeted specialization pipeline, not through a
-  nonexistent curve-302 parameter.
+- calibrate moving-section jets on the actual transported generic rank-12
+  subgroup of the known curve-245 Fermigier--Mestre control;
+- search bounded low-height combinations of the 31 directions for a latent
+  six-pair quartic configuration, using that transported subgroup as the
+  positive control;
+- test any resulting family candidate first by the exact `j`-invariant and
+  twist/isomorphism gates above, then by section transport;
+- obtain and replay the discoverers' construction record if it becomes
+  available.
 
-The existing bounded six-root Mestre census has not been rerun for curve 302 in
-this update. No negative Mestre-family conclusion is claimed.
+The exact 2,334-family generated sweep and the point-cloud probes rule out only
+their declared bounded spaces.  They do not exclude a generalized Mestre
+template, moving sections, another fibration, an isogenous construction, or a
+private family.

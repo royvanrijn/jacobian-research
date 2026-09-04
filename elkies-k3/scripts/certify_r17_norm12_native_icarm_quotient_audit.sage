@@ -302,7 +302,10 @@ def special_fibre(config, hit, public_record, direct, covers, ring):
     if len(generic_points) != 17:
         raise ArithmeticError("the saturated generic basis no longer has rank 17")
 
-    split_records, split_digest = evaluate_cover_splits(covers, parameter, ring)
+    if covers is None:
+        split_records, split_digest = [], None
+    else:
+        split_records, split_digest = evaluate_cover_splits(covers, parameter, ring)
     split_plus = []
     split_minus = []
     for split in split_records:
@@ -427,6 +430,38 @@ def special_fibre(config, hit, public_record, direct, covers, ring):
         ]
         preferred_annihilator_rows = None
 
+    cover_audit = (
+        {
+            "status": "NOT_RUN_NO_FROZEN_NATIVE_COVER_INVENTORY",
+            "covers_evaluated": 0,
+            "split_indicator_sha256_in_inventory_order": None,
+            "rational_split_count": None,
+            "splits": [],
+            "exact_split_span_rank_in_exceptional_quotient": None,
+            "split_span_nonzero_smith_invariant_factors": None,
+            "split_span_is_primitive": None,
+            "split_span_annihilator_rows_in_deterministic_smith_dual": None,
+            "split_span_annihilator_rows_in_preferred_public_quotient_dual": None,
+            "claim_boundary": (
+                "The exact quotient transport is complete, but no cover inventory was "
+                "evaluated and no visibility zero is inferred."
+            ),
+        }
+        if covers is None
+        else {
+            "covers_evaluated": len(covers["bisections"]),
+            "complete_inventory_status": covers["status"],
+            "split_indicator_sha256_in_inventory_order": split_digest,
+            "rational_split_count": len(split_records),
+            "splits": split_output,
+            "exact_split_span_rank_in_exceptional_quotient": int(split_rank),
+            "split_span_nonzero_smith_invariant_factors": nonzero_split_invariants,
+            "split_span_is_primitive": all(value == 1 for value in nonzero_split_invariants),
+            "split_span_annihilator_rows_in_deterministic_smith_dual": annihilator_rows,
+            "split_span_annihilator_rows_in_preferred_public_quotient_dual": preferred_annihilator_rows,
+        }
+    )
+
     return {
         "curve_id": curve_id,
         "native_chart": source_chart,
@@ -468,18 +503,7 @@ def special_fibre(config, hit, public_record, direct, covers, ring):
                 "not a proved quotient of the full Mordell--Weil group"
             ),
         },
-        "alternate_q80_cover_audit": {
-            "covers_evaluated": len(covers["bisections"]),
-            "complete_inventory_status": covers["status"],
-            "split_indicator_sha256_in_inventory_order": split_digest,
-            "rational_split_count": len(split_records),
-            "splits": split_output,
-            "exact_split_span_rank_in_exceptional_quotient": int(split_rank),
-            "split_span_nonzero_smith_invariant_factors": nonzero_split_invariants,
-            "split_span_is_primitive": all(value == 1 for value in nonzero_split_invariants),
-            "split_span_annihilator_rows_in_deterministic_smith_dual": annihilator_rows,
-            "split_span_annihilator_rows_in_preferred_public_quotient_dual": preferred_annihilator_rows,
-        },
+        "alternate_q80_cover_audit": cover_audit,
     }
 
 

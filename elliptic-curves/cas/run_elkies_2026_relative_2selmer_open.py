@@ -277,9 +277,15 @@ def load_authoritative_cases() -> dict[str, Any]:
         load_high_rank_cases,
         load_nagao_cases,
         load_rank21_case,
+        load_record_pair_cases,
     )
 
-    cases = [load_rank21_case(), *load_high_rank_cases(), *load_nagao_cases(1000)]
+    cases = [
+        load_rank21_case(),
+        *load_high_rank_cases(),
+        *load_record_pair_cases(),
+        *load_nagao_cases(1000),
+    ]
     return {case.case_id: case for case in cases}
 
 
@@ -297,6 +303,16 @@ def factor_hints(case_id: str) -> tuple[int, ...]:
         )
 
         return tuple(prime for prime, _exponent in DISCRIMINANT_FACTORIZATION)
+    if case_id in ("record-r29-356", "record-r29-385"):
+        source = (
+            ROOT
+            / "artifacts/generated-results"
+            / "elkies-k3-r17-norm12-icarm-public-fibres-v1.json"
+        )
+        curve_id = int(case_id.rsplit("-", 1)[1])
+        document = json.loads(source.read_text())
+        row = next(record for record in document["records"] if int(record["id"]) == curve_id)
+        return tuple(int(prime) for prime in row["bad_primes"])
     return ()
 
 

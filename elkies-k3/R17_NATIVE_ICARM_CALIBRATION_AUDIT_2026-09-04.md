@@ -1,6 +1,6 @@
 # Native R17/alternate-Q80 ICARM calibration audit
 
-<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 1b09c81c025e5fc3 -->
+<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 6b2a0546b65246d5 -->
 
 This note is the navigation surface for the exact seven-fibre native cover
 audit and the fail-closed 69-fibre calibration table.  The canonical machine
@@ -130,10 +130,13 @@ different fibre.
 The current public projection contains enough displayed points for all 69
 recognized fibres (1,545 points total).  Exact local point counts, Frobenius
 traces, within-family incidences, and three predeclared Nagao blocks are stored
-for every row.  Twelve rows presently have exact displayed quotient dimensions:
-the seven above and the five earlier 074d9/wgxli fibres.  Seven rows have a
+for every row.  Fifteen rows now have exact displayed quotient dimensions:
+the seven above, the five earlier 074d9/wgxli fibres, and the three rank-28
+fibres 11, 391, and 423 certified in the
+[prospective-family holdout follow-up](R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md).
+Seven rows have a
 complete native fixed-cover visibility audit, and five rows have exact fitted
-norm-eight incidence for every quotient-basis direction.  The remaining 57
+norm-eight incidence for every quotient-basis direction.  The remaining 54
 quotient fields are literal `null`, because their chart-specific saturated
 section transports have not yet been compiled.
 
@@ -150,9 +153,11 @@ Here a good entry is `p:a_p`.  Dividing the certificate's integer score units
 by `10^12`, the three block scores are `2.607449715912`, `5.415319001063`, and
 `4.844003035565`, totaling `12.866771752540`.
 
-The TSV is ready for family-held-out experiments.  Splits must be grouped by
-the six PGL2 family labels; random fibre-level train/test splitting would leak
-family identity.
+The retrospective TSV is diagnostic only: its 69 rows are selected public
+successes, not a sample with a known search denominator.  The follow-up freezes
+a label-blind sample of 1,536 ordinary parameters before any search outcome is
+opened and assigns two entire PGL2 families to holdout.  Random fibre-level
+train/test splitting remains forbidden because it leaks family identity.
 
 The local data already reject an overly simple reading.  The 08234 successes
 have the largest mean 25-prime-block Nagao score among the six recognized
@@ -174,7 +179,9 @@ The dataset marks search exposure as unknown rather than converting the
 sage -python elkies-k3/scripts/certify_r17_norm12_curve12_norm8_incidence.sage --check
 sage -python elkies-k3/scripts/certify_r17_norm12_icarm_norm8_incidence.sage --check
 PYTHONPATH=elliptic-curves/cas sage -python elkies-k3/scripts/certify_r17_norm12_native_icarm_quotient_audit.sage --check
+PYTHONPATH=elliptic-curves/cas sage -python elkies-k3/scripts/certify_r17_norm12_highest_rank_transports.sage --check
 .venv/bin/python elkies-k3/scripts/build_r17_norm12_icarm_calibration_dataset.py --check
+.venv/bin/python elkies-k3/scripts/build_r17_norm12_prospective_family_holdout.py --check
 ```
 
 The 08f72 equation, section basis, priority table, and complete 39,147-cover

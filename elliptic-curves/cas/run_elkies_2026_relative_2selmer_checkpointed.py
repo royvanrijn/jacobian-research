@@ -43,7 +43,7 @@ from run_elkies_2026_relative_2selmer_open import (  # noqa: E402
 
 
 INPUT_SCHEMA = "elliptic-curves.elkies-2026-relative-2selmer-suite-input.v1"
-OUTPUT_SCHEMA = "elliptic-curves.elkies-2026-relative-2selmer-checkpointed-run.v2"
+OUTPUT_SCHEMA = "elliptic-curves.elkies-2026-relative-2selmer-checkpointed-run.v3"
 PROTOCOL = "ELKIESR17CHECKREL2"
 DEFAULT_SAGE_PYTHON = Path(
     "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python"
@@ -210,7 +210,7 @@ elllocalimage_mapped(nf,pp,K,polrel,curve_theta) =
 
 ell2selmer_basis_gen(ell,bnf,K,curve_theta) =
 {
-  my(A,B,C,polrel,polprime,badideal,badprimes,S,LS2,selmer,theta_embeddings,real_place,signs,p,pp,locimage,LS2image);
+  my(A,B,C,polrel,polprime,badideal,badprimes,S,LS2,normspace,selmer,theta_embeddings,real_place,signs,p,pp,locimage,LS2image,allowed,localspaces,localplaces,audit,omitted,standalone,j);
   if(#ell < 13,ell=ellinit(ell));
   if(ell.a1 != 0 || ell.a3 != 0,error("ell2selmer_basis_gen: nonzero a1/a3"));
   A=ell.a2; B=ell.a4; C=ell.a6;
@@ -218,12 +218,16 @@ ell2selmer_basis_gen(ell,bnf,K,curve_theta) =
   polprime=subst(polprime,variable(polprime),curve_theta);
   badideal=abs(K*idealadd(bnf,polprime,bnf.index));
   S=bnfpSelmer(bnf,badideal,2); LS2=S[1]; S=S[2];
-  selmer=kernorm(LS2,vector(#S,i,S[i].p),2);
+  normspace=kernorm(LS2,vector(#S,i,S[i].p),2);
+  selmer=normspace;
+  localspaces=List();localplaces=List();
   if(bnf.r1==3,
     theta_embeddings=nfeltembed(bnf.nf,curve_theta);real_place=1;
     for(i=2,#theta_embeddings,if(theta_embeddings[i]<theta_embeddings[real_place],real_place=i));
     signs=vector(#LS2,i,nfeltsign(bnf.nf,LS2[i],real_place)<0);
-    selmer=matintersect(selmer,matker(Mat(signs*Mod(1,2))))*Mod(1,2));
+    allowed=matker(Mat(signs*Mod(1,2)))*Mod(1,2);
+    listput(localspaces,allowed);listput(localplaces,-1);
+    selmer=matintersect(selmer,allowed)*Mod(1,2));
   badprimes=factorint(badideal[1,1]*2)[,1];
   for(i=1,#badprimes,
     p=badprimes[i];
@@ -232,11 +236,21 @@ ell2selmer_basis_gen(ell,bnf,K,curve_theta) =
     locimage=elllocalimage_mapped(bnf.nf,pp,K,polrel,curve_theta);
     LS2image=LS2localimage(bnf.nf,LS2,pp);
     locimage=matintersect(LS2image,locimage);
-    selmer=matintersect(selmer,concat(matker(LS2image),matinverseimage(LS2image,locimage)*Mod(1,2)));
+    allowed=concat(matker(LS2image),matinverseimage(LS2image,locimage)*Mod(1,2));
+    allowed=matimage(allowed*Mod(1,2));
+    listput(localspaces,allowed);listput(localplaces,p);
+    selmer=matintersect(selmer,allowed);
     selmer=matimage(selmer*Mod(1,2));
     print("ELKIESR17CHECKREL2|stage=local_condition|status=complete|prime=",p,"|dimension=",#selmer);
-    if(!#selmer,break));
-  return([LS2,lift(selmer),badprimes]);
+  );
+  audit=List();
+  for(i=1,#localspaces,
+    omitted=normspace;
+    for(j=1,#localspaces,if(i!=j,omitted=matintersect(omitted,localspaces[j])*Mod(1,2)));
+    standalone=matintersect(normspace,localspaces[i])*Mod(1,2);
+    listput(audit,[localplaces[i],#localspaces[i],#standalone,#omitted,#normspace-#omitted]);
+  );
+  return([LS2,lift(selmer),badprimes,Vec(audit),#LS2,#normspace,#normspace-#selmer,Vec(localspaces),Vec(localplaces),lift(normspace)]);
 };
 '''
 
@@ -285,8 +299,21 @@ started = time.monotonic()
 raw = pari("ell2selmer_basis_gen")(curve, bnf, 1, curve_theta)
 elapsed = time.monotonic() - started
 LS2, matrix, bad_primes = raw[0], raw[1], raw[2]
+local_audit = raw[3]
+global_squareclass_dimension = int(raw[4])
+norm_kernel_dimension = int(raw[5])
+full_local_condition_matrix_rank = int(raw[6])
+local_allowed_subspaces = raw[7]
+local_places = raw[8]
+normspace = raw[9]
 dimension = len(matrix)
 stage("selmer_basis", "complete", seconds=f"{elapsed:.6f}", dimension=dimension)
+
+def binary_basis_columns(value):
+    return [[int(entry) for entry in column] for column in value]
+
+if len(local_audit) != len(local_allowed_subspaces) or len(local_audit) != len(local_places):
+    raise ArithmeticError("local-condition audit vectors have inconsistent lengths")
 
 curve_f = pari(meta["cubic"])
 field_f = pari(meta["field_cubic"])
@@ -362,7 +389,7 @@ for column in range(dimension):
     })
 
 result = {
-    "schema": "elliptic-curves.elkies-2026-relative-2selmer-simon-basis.v2",
+    "schema": "elliptic-curves.elkies-2026-relative-2selmer-simon-basis.v3",
     "case_id": payload["case_id"],
     "global_minimal_model": meta["global_minimal_model"],
     "transformed_model": meta["transformed_model"],
@@ -373,6 +400,35 @@ result = {
     "cubic_coefficients_ascending": meta["cubic_coefficients_ascending"],
     "two_selmer_dimension": dimension,
     "bad_rational_primes": [str(value) for value in bad_primes],
+    "local_condition_matrix": {
+        "ambient": "the global norm-square subspace of the S-squareclass group",
+        "global_s_squareclass_dimension": global_squareclass_dimension,
+        "global_norm_square_subspace_dimension": norm_kernel_dimension,
+        "global_norm_square_subspace_basis_columns_in_s_squareclasses": binary_basis_columns(normspace),
+        "global_norm_condition_rank": global_squareclass_dimension - norm_kernel_dimension,
+        "full_finite_and_archimedean_matrix_rank_on_norm_subspace": full_local_condition_matrix_rank,
+        "rank_nullity_verified": (
+            full_local_condition_matrix_rank + dimension == norm_kernel_dimension
+        ),
+        "places": [
+            {
+                "place": (
+                    "infinity" if int(row[0]) == -1 else str(int(row[0]))
+                ),
+                "allowed_subspace_basis_columns_in_global_s_squareclasses": binary_basis_columns(
+                    local_allowed_subspaces[index]
+                ),
+                "allowed_subspace_dimension_in_global_s_squareclasses": int(row[1]),
+                "norm_subspace_intersection_dimension_for_this_place_alone": int(row[2]),
+                "selmer_candidate_dimension_after_deleting_this_place": int(row[3]),
+                "matrix_rank_after_deleting_this_place": int(row[4]),
+                "rank_drop_from_full_matrix": (
+                    full_local_condition_matrix_rank - int(row[4])
+                ),
+            }
+            for index, row in enumerate(local_audit)
+        ],
+    },
     "basis": basis,
     "bnf_checkpoint_sha256": meta["bnf_checkpoint_sha256"],
     "local_conditions_completed": True,
@@ -697,6 +753,61 @@ def combine_results(
     residual = dimension - GENERIC_RANK
     if residual < expected_exceptional:
         raise ArithmeticError("Selmer dimension contradicts the known subgroup")
+    rigid_character_quotient = None
+    declared_rigid_rows = tuple(getattr(case, "rigid_quotient_rows", ()))
+    if declared_rigid_rows:
+        if any(len(row) != expected_exceptional for row in declared_rigid_rows):
+            raise ArithmeticError("a rigid row has the wrong displayed-quotient width")
+        rigid_residual_rows = [
+            xor_rows(
+                [
+                    point_row
+                    for bit, point_row in zip(coefficients, exceptional_quotient_rows)
+                    if int(bit) & 1
+                ]
+            )
+            for coefficients in declared_rigid_rows
+        ]
+        rigid_rank = f2_rank(rigid_residual_rows)
+        if rigid_rank != len(declared_rigid_rows):
+            raise ArithmeticError("the rigid-character image lost rank in the Selmer quotient")
+        after_rigid_basis = extend_standard(rigid_residual_rows, residual)
+        rigid_aligned_basis = [*rigid_residual_rows, *after_rigid_basis]
+        displayed_rows_after_rigid = []
+        for row in exceptional_quotient_rows:
+            coordinates = f2_linear_combination_coefficients(rigid_aligned_basis, row)
+            if coordinates is None:
+                raise ArithmeticError("a displayed point missed the rigid-aligned basis")
+            displayed_rows_after_rigid.append(coordinates[rigid_rank:])
+        displayed_after_rigid_rank = f2_rank(displayed_rows_after_rigid)
+        expected_nonrigid_rank = expected_exceptional - rigid_rank
+        if displayed_after_rigid_rank != expected_nonrigid_rank:
+            raise ArithmeticError("the displayed nonrigid quotient rank changed")
+        rigid_character_quotient = {
+            "rigid_direction_labels": list(
+                getattr(case, "rigid_direction_labels", ())
+            ),
+            "rigid_rows_in_displayed_P18_through_P29_coordinates": [
+                list(map(int, row)) for row in declared_rigid_rows
+            ],
+            "rigid_rows_in_residual_selmer_coordinates": rigid_residual_rows,
+            "rigid_image_dimension": rigid_rank,
+            "dimension_after_quotienting_rigid_plane": residual - rigid_rank,
+            "basis_after_quotienting_rigid_plane_in_residual_selmer_coordinates": after_rigid_basis,
+            "displayed_point_rows_after_quotienting_rigid_plane": displayed_rows_after_rigid,
+            "displayed_nonrigid_image_dimension": displayed_after_rigid_rank,
+            "canonical_coordinate_complement_point_labels": list(
+                getattr(case, "rigid_complement_point_labels", ())
+            ),
+            "additional_dimension_beyond_all_twenty_nine_known_points": (
+                residual - expected_exceptional
+            ),
+            "interpretation": (
+                "When the residual Selmer dimension is twelve, this quotient is the "
+                "ten-dimensional displayed nonrigid block. Any larger dimension is "
+                "additional Selmer space beyond the twenty-nine known points."
+            ),
+        }
     quotient_basis_records = [
         {
             "quotient_basis_index": index + 1,
@@ -738,6 +849,7 @@ def combine_results(
         "exceptional_selmer_rows": exceptional_rows,
         "exceptional_quotient_rows": exceptional_quotient_rows,
         "exceptional_quotient_rank": exceptional_rank,
+        "rigid_character_quotient": rigid_character_quotient,
         "known_realized_quotient_classes_including_zero": 2**exceptional_rank,
         "classes_not_realized_by_known_exceptional_subgroup": 2**residual - 2**exceptional_rank,
         "unexplained_quotient_dimension": residual - exceptional_rank,

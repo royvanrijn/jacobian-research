@@ -147,5 +147,10 @@ The 64 rational pair-base points, their genus-one geometry, and the seventeen
 exact rank-one base Jacobians are established.  The complete norm-eight
 bisection inversion has no product-character hit, so no generic
 rank-at-least-20 `V4` base change is obtained.  A non-coboundary minimal
-product-twist section remains `UNKNOWN` until the 2-primary integral descent
-quotient is computed.
+product-twist section remains `UNKNOWN` on sixteen targets until the
+2-primary integral descent quotient or another complete Frobenius bound is
+computed.  Shortlist rank `55`, pair
+`alternate-orbit-0fda0:alternate-orbit-1037d`, is now closed independently:
+its complete degree-28 Frobenius polynomial at `p=131` gives `rho<=18` and
+geometric product-twist rank zero.  See
+[`R17_ALTERNATE_Q80_PRODUCT_TWIST_RANK_ZERO_2026-09-04.md`](R17_ALTERNATE_Q80_PRODUCT_TWIST_RANK_ZERO_2026-09-04.md).

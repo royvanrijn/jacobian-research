@@ -1,79 +1,19 @@
 {
   "accounting": {
-    "arithmetic_research_queue": 823,
-    "arithmetically_excluded": 3,
+    "arithmetic_research_queue": 822,
+    "arithmetically_excluded": 4,
     "classifications": {
-      "ARITHMETICALLY_EXCLUDED": 3,
+      "ARITHMETICALLY_EXCLUDED": 4,
       "ARITHMETICALLY_POSSIBLE": 1,
       "UNKNOWN": 62,
-      "UNSCREENED_NO_FULL_MARKING_DECISION": 761
+      "UNSCREENED_NO_FULL_MARKING_DECISION": 760
     },
-    "coarse_genus_at_most_two_diagnostics": 24,
+    "coarse_genus_at_most_two_diagnostics": 23,
     "exact_positive_controls": 1,
     "new_positive_NS_rootless_handoff": 0,
     "transcendental_rows": 827
   },
   "coarse_low_genus_diagnostic_shortlist": [
-    {
-      "arithmetic_classification": "UNSCREENED_NO_FULL_MARKING_DECISION",
-      "coarse_curve_diagnostic": {
-        "genus": 0,
-        "label": "Gamma_0(7)",
-        "status": "PASS_EXACT_GAMMA0_CURVE",
-        "warning": "Coarse genus is a prioritization diagnostic only until the stable discriminant-kernel curve is computed."
-      },
-      "determinant": 378,
-      "full_marking_curve": {
-        "genus": null,
-        "label": null,
-        "rational_non_CM_point": false,
-        "stable_kernel_index_over_coarse": null,
-        "status": "UNKNOWN_NO_ROOTLESS_SUBCATALOGUE_DECISION_RECORD"
-      },
-      "integral_order": {
-        "local_level_index": 7,
-        "reduced_discriminant": 7,
-        "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
-      },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
-      "phase_one_priority_key": [
-        2,
-        1,
-        0,
-        1,
-        1000000000,
-        3,
-        7,
-        0,
-        378
-      ],
-      "quaternion_discriminant": 1,
-      "rational_isotropy": true,
-      "rootless_frame_data_used_in_priority": false,
-      "similarity_marking_gap": {
-        "full_stable_kernel_still_required": true,
-        "literal_content": 3,
-        "quadratic_integrality_scale": 1
-      },
-      "surface_id": "K3-7b71a1cc00b0c6e2",
-      "transcendental_gram": [
-        [
-          0,
-          0,
-          3
-        ],
-        [
-          0,
-          42,
-          0
-        ],
-        [
-          3,
-          0,
-          0
-        ]
-      ]
-    },
     {
       "arithmetic_classification": "UNSCREENED_NO_FULL_MARKING_DECISION",
       "coarse_curve_diagnostic": {
@@ -1456,66 +1396,6 @@
     }
   ],
   "curve_identification_queue": [
-    {
-      "arithmetic_classification": "UNSCREENED_NO_FULL_MARKING_DECISION",
-      "coarse_curve_diagnostic": {
-        "genus": 0,
-        "label": "Gamma_0(7)",
-        "status": "PASS_EXACT_GAMMA0_CURVE",
-        "warning": "Coarse genus is a prioritization diagnostic only until the stable discriminant-kernel curve is computed."
-      },
-      "determinant": 378,
-      "full_marking_curve": {
-        "genus": null,
-        "label": null,
-        "rational_non_CM_point": false,
-        "stable_kernel_index_over_coarse": null,
-        "status": "UNKNOWN_NO_ROOTLESS_SUBCATALOGUE_DECISION_RECORD"
-      },
-      "integral_order": {
-        "local_level_index": 7,
-        "reduced_discriminant": 7,
-        "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
-      },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
-      "phase_one_priority_key": [
-        2,
-        1,
-        0,
-        1,
-        1000000000,
-        3,
-        7,
-        0,
-        378
-      ],
-      "quaternion_discriminant": 1,
-      "rational_isotropy": true,
-      "rootless_frame_data_used_in_priority": false,
-      "similarity_marking_gap": {
-        "full_stable_kernel_still_required": true,
-        "literal_content": 3,
-        "quadratic_integrality_scale": 1
-      },
-      "surface_id": "K3-7b71a1cc00b0c6e2",
-      "transcendental_gram": [
-        [
-          0,
-          0,
-          3
-        ],
-        [
-          0,
-          42,
-          0
-        ],
-        [
-          3,
-          0,
-          0
-        ]
-      ]
-    },
     {
       "arithmetic_classification": "UNSCREENED_NO_FULL_MARKING_DECISION",
       "coarse_curve_diagnostic": {
@@ -50839,6 +50719,38 @@
   ],
   "excluded_before_NS_or_equation_work": [
     {
+      "certificate_replay": [
+        {
+          "assertions_replayed": 5,
+          "path": "artifacts/generated-results/elkies-k3-det378-qq-marking-obstruction-v1.json",
+          "sha256": "cde5b29f0a361cd0c8e81c0c38d8aedba08c155cd4359651d7c9c368d4a1b249"
+        }
+      ],
+      "decision": "The literal determinant-378 stable kernel is conjugate to Gamma_0(63), and X_0(63)(QQ) has no noncuspidal point.",
+      "determinant": 378,
+      "full_marking_curve": {
+        "genus": 5,
+        "label": "X_0(63)",
+        "rational_non_CM_point": false,
+        "stable_kernel_index_over_coarse": 12,
+        "status": "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE"
+      },
+      "surface_id": "K3-7b71a1cc00b0c6e2",
+      "theorem_inputs": [
+        "Mazur--Kenku's complete classification of rational cyclic-isogeny degrees",
+        "the standard normalizer description for split Eichler orders",
+        "the standard marked-K3 ternary-spin period correspondence"
+      ]
+    },
+    {
+      "certificate_replay": [
+        {
+          "assertions_replayed": 4,
+          "path": "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
+          "sha256": "49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae"
+        }
+      ],
+      "decision": "The exact norm-one fibre product has no noncuspidal rational point, so the full rational NS0031 marking cannot exist.",
       "determinant": 1184,
       "full_marking_curve": {
         "genus": null,
@@ -50847,9 +50759,21 @@
         "stable_kernel_index_over_coarse": null,
         "status": "PARTIAL_ABSTRACT_FULL_MARKING_COVER_OF_EXACT_NORM_ONE_CURVE"
       },
-      "surface_id": "K3-d1b1381f87d69f1c"
+      "surface_id": "K3-d1b1381f87d69f1c",
+      "theorem_inputs": [
+        "V\u00e9lu's determination of X_0(37)(QQ)",
+        "the standard marked-K3 ternary-spin period correspondence"
+      ]
     },
     {
+      "certificate_replay": [
+        {
+          "assertions_replayed": 4,
+          "path": "artifacts/generated-results/elkies-k3-ns0024-qq-marking-obstruction-v1.json",
+          "sha256": "48f4a2130aad683b759022b0bd8b92e3c6f7a29c75d069ada04405c1e360ab36"
+        }
+      ],
+      "decision": "A full rational NS0024 marking would force a forbidden noncuspidal non-CM rational point on X_0^+(475).",
       "determinant": 950,
       "full_marking_curve": {
         "genus": null,
@@ -50858,9 +50782,21 @@
         "stable_kernel_index_over_coarse": null,
         "status": "PARTIAL_ABSTRACT_FULL_MARKING_CURVE_WITH_CERTIFIED_FORGETFUL_QUOTIENT"
       },
-      "surface_id": "K3-ebaf00b3723751ba"
+      "surface_id": "K3-ebaf00b3723751ba",
+      "theorem_inputs": [
+        "Momose's composite-level theorem for X_0^+(N)(QQ)",
+        "the standard Inose correspondence and descent from a full rational divisor marking"
+      ]
     },
     {
+      "certificate_replay": [
+        {
+          "assertions_replayed": 5,
+          "path": "artifacts/generated-results/elkies-k3-golay-det720-qq-marking-obstruction-v1.json",
+          "sha256": "bdec587989f4ea872310bb8373d5b9c414504c88f610bf27b46732c646c5e1a6"
+        }
+      ],
+      "decision": "The exact full discriminant-marking curve is X_0(60), which has no noncuspidal rational point; the known rational 3A5 equation is independently the determinant-20 overlattice.",
       "determinant": 720,
       "full_marking_curve": {
         "genus": 7,
@@ -50869,12 +50805,18 @@
         "stable_kernel_index_over_coarse": 6,
         "status": "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE"
       },
-      "surface_id": "K3-f43753fb154e3406"
+      "surface_id": "K3-f43753fb154e3406",
+      "theorem_inputs": [
+        "Mazur--Kenku's complete classification of rational cyclic-isogeny degrees",
+        "the standard marked-K3 ternary-spin period correspondence",
+        "the complete rational-point determination of X_0(15)(QQ)"
+      ]
     }
   ],
   "inputs": {
     "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "dc9b0e2513d7517ff0439b31e238e2db94047ca05cb89772a43f83344d888123",
-    "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985"
+    "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985",
+    "elkies-k3/data/arithmetic/arithmetic-first-marking-decisions-v1.json": "7d8c88e1b89e10d98280cabaee9ccab70db176b398d825a9ce1752479a4a425f"
   },
   "new_positive_NS_rootless_handoff": [],
   "policy": {

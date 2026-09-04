@@ -6,7 +6,7 @@ Status: **ACTIVE, fail-closed infrastructure**.
 
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
 <!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 6b9d34ae8d722280 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY d94b3dbddf5cb529 -->
 
 ## Outcome
 
@@ -147,15 +147,17 @@ The last entry is decisive.  The first three only identify where to look.
 The construction search now starts from the full rank-three `T` ledger, not
 from the remaining rootless-frame list. The generated arithmetic-first queue
 contains all 827 transcendental rows and does not use rootless-frame data in
-its priority. It propagates three exclusions, one realized positive control,
-and an 823-row arithmetic research queue. Twenty-four rows have coarse genus
-at most two, but each still needs its literal stable discriminant kernel and
+its priority. It propagates the classifier's three exclusions, the separate
+split determinant-378 exclusion, one realized positive control, and an
+822-row arithmetic research queue. Twenty-three rows have coarse genus at
+most two, but each still needs its literal stable discriminant kernel and
 rational-point decision.
 
-The first exact-coarse rows are currently
+The split determinant-378 row is now excluded because its literal stable curve
+is `X_0(63)`, whose rational points are cusps. The next exact-coarse rows are
+currently
 
 ```text
-det 378: X_0(7),
 det 256: X_0(2),
 det 512: X_0(4).
 ```

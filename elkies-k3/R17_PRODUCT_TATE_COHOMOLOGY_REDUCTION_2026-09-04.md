@@ -4,15 +4,18 @@
 
 ## Status
 
-This note closes the formal reduction of the remaining product-character
-question to finite integral linear algebra and a two-descent/Kummer
-calculation.  It does **not** compute the quotient for any of the seventeen
-product twists.  The full Mordell--Weil lattice after each quadratic base
+This note closes the formal reduction of the product-character question to
+finite integral linear algebra and a two-descent/Kummer calculation.  The
+rank-55 target
+`alternate-orbit-0fda0:alternate-orbit-1037d` is now closed more strongly by
+a complete Frobenius calculation: its product twist has geometric
+Mordell--Weil rank zero, so `A-=0`, `Gamma_d=0`, and `H_d=0`.  For the other
+sixteen product twists, the full Mordell--Weil lattice after quadratic base
 change, or an equivalent complete two-Selmer calculation, is not present in
 the current certificates.  The exact 49-class norm-twelve trace-parity
 certificate and the no-hit inversion of all `49 * 17 = 833` residual cases do
 exclude the zero Tate class for a height-eight section under the stated direct
-polynomial and local-component height hypotheses.  The seventeen quotients
+polynomial and local-component height hypotheses.  Their sixteen quotients
 `H_d`, the existence of any height-eight section, and all possible nonzero
 classes remain `UNKNOWN`.
 
@@ -410,3 +413,31 @@ Therefore the quotient `H_d`, its nonzero classes, and the existence of a
 height-eight section remain `UNKNOWN`.  Equations (3), (8), and (12) are exact
 closing criteria for those stronger questions, but none may yet be marked as
 passed.
+
+## Subsequent one-target closure
+
+The finite-field boundary above has now been crossed for one of the seventeen
+targets.  For shortlist rank `55`, character pair
+
+```text
+alternate-orbit-0fda0 : alternate-orbit-1037d,
+```
+
+the complete degree-28 Frobenius polynomial at `p=131` has no Tate root.
+The independent verifier reconstructs the full degree-46 `H^2` polynomial,
+the exact degree-18 `U+4D4` Frobenius factor, and a Weil degree-28 quotient.
+Therefore `rho<=18`, and (12) proves geometric product-twist rank zero.  See
+[`R17_ALTERNATE_Q80_PRODUCT_TWIST_RANK_ZERO_2026-09-04.md`](R17_ALTERNATE_Q80_PRODUCT_TWIST_RANK_ZERO_2026-09-04.md).
+
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO 61d8e223f0ef7d0f -->
+
+For this target the twist identification gives `A-=0`.  Since the pulled-back
+`48I1` Mordell--Weil group `A` is torsion-free, (1) has zero middle term and
+forces both `Gamma_d=0` and
+`Hhat^(-1)(<sigma>,A)=0`.  Thus neither the zero nor a nonzero Tate class can
+carry a product-character section.
+
+Accordingly, the preceding `UNKNOWN` conclusion remains the input boundary
+only for the other sixteen targets.  It no longer applies to the rank-55
+product twist or its Tate-cohomology quotient.
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO 61d8e223f0ef7d0f -->

@@ -57,6 +57,100 @@ class ElkiesResidualSelmerGateTests(unittest.TestCase):
         self.assertEqual(record["residual_two_selmer_quotient_dimension"], 15)
         self.assertEqual(record["status"], GATE.PASS_STATUS)
 
+    def test_incomplete_monotone_sieve_authorizes_only_bounded_search(self) -> None:
+        record = GATE.monotone_sieve_gate_record(
+            stages=[
+                {
+                    "stage": "bnf_pending",
+                    "residual_upper_bound": None,
+                    "proof_status": "NO_FINITE_UPPER_BOUND_YET",
+                },
+                {
+                    "stage": "certified_partial_global_local_constraints",
+                    "residual_upper_bound": 18,
+                    "proof_status": "PROVED_UPPER_BOUND",
+                    "evidence": "sha256:example",
+                },
+            ],
+            search_limits={"height": 1000, "wall_seconds": 60},
+        )
+        self.assertEqual(record["status"], GATE.OPEN_STATUS)
+        self.assertTrue(record["bounded_point_search_authorized"])
+        self.assertFalse(record["expensive_search_authorized"])
+        self.assertFalse(record["theorem_claim_authorized"])
+
+    def test_monotone_sieve_rejects_below_target(self) -> None:
+        record = GATE.monotone_sieve_gate_record(
+            stages=[
+                {
+                    "stage": "proved_upper",
+                    "residual_upper_bound": 14,
+                    "proof_status": "PROVED_UPPER_BOUND",
+                    "evidence": "certificate.json",
+                }
+            ],
+            search_limits={"height": 1000},
+        )
+        self.assertEqual(record["status"], GATE.REJECT_STATUS)
+        self.assertFalse(record["bounded_point_search_authorized"])
+
+    def test_monotone_sieve_bounds_cannot_increase(self) -> None:
+        with self.assertRaisesRegex(GATE.ResidualSelmerGateError, "not monotone"):
+            GATE.monotone_sieve_gate_record(
+                stages=[
+                    {
+                        "residual_upper_bound": 16,
+                        "proof_status": "PROVED_UPPER_BOUND",
+                        "evidence": "a",
+                    },
+                    {
+                        "residual_upper_bound": 17,
+                        "proof_status": "PROVED_UPPER_BOUND",
+                        "evidence": "b",
+                    },
+                ],
+                search_limits={"height": 1000},
+            )
+
+    def test_open_monotone_artifact_is_accepted_for_bounded_search(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "gate.json"
+            gate = GATE.monotone_sieve_gate_record(
+                stages=[
+                    {
+                        "stage": "bnf_pending",
+                        "residual_upper_bound": None,
+                        "proof_status": "NO_FINITE_UPPER_BOUND_YET",
+                    }
+                ],
+                search_limits={"height": 1000, "wall_seconds": 60},
+            )
+            path.write_text(
+                json.dumps(
+                    {
+                        "schema": GATE.SCHEMA,
+                        "status": GATE.OPEN_STATUS,
+                        "parameter": "-9529/5471",
+                        "global_minimal_model": ["1", "-1", "1", "-2", "3"],
+                        "gate": gate,
+                    }
+                )
+            )
+            accepted = GATE.require_expensive_search_gate(
+                path,
+                expected_parameter="-9529/5471",
+                expected_model=(1, -1, 1, -2, 3),
+                requested_search_limits={"height": 500, "wall_seconds": 30},
+            )
+            self.assertEqual(accepted["status"], GATE.OPEN_STATUS)
+            with self.assertRaisesRegex(
+                GATE.ResidualSelmerGateError, "exceeds its authorization"
+            ):
+                GATE.require_expensive_search_gate(
+                    path,
+                    requested_search_limits={"height": 1001, "wall_seconds": 30},
+                )
+
     def test_signature_or_incomplete_backend_cannot_authorize_search(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "gate.json"

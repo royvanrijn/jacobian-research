@@ -8,6 +8,10 @@ active navigation map.
 ## Current milestone
 
 - ICARM curve 302: certified `rank E(Q) >= 31`, trivial torsion, global minimality, exact conductor/local data, and two independent point-independence implementations. No unconditional rank upper bound.
+- Curve 302 point-cloud reconstruction: exact mod-2 and mod-3 finite Kummer
+  codes have rank 31 with no visible first-17 boundary; elementary
+  squareclass, degree-six held-out interpolation, and fixed-`X` deformation
+  probes are negative in their declared bounded models.
 - ICARM curve 273: independently replayed `rank E(Q) >= 30`.
 - ICARM curve 356: certified `rank E(Q) >= 29` with exact conductor/local data.
 - ICARM curves 285/286 and curve 394: certified rank-at-least-21 results; curve 394 is the compact Elkies `t=3/8` specialization with exact conductor replay.
@@ -32,6 +36,7 @@ Existing scripts, tests, local checkpoints, and generated certificates are retai
 ## Canonical entry points
 
 - [`notes/ICARM_CURVE302_RANK31.md`](notes/ICARM_CURVE302_RANK31.md) — rank-at-least-31 certificate.
+- [`notes/ICARM_CURVE302_POINT_CLOUD_RECONSTRUCTION.md`](notes/ICARM_CURVE302_POINT_CLOUD_RECONSTRUCTION.md) — direct 31-point reconstruction probes and calibrated claim boundary.
 - [`notes/ICARM_CURVE273_RANK30.md`](notes/ICARM_CURVE273_RANK30.md) — rank-at-least-30 certificate.
 - [`notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md`](notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md) — rank-at-least-29 record/fingerprint.
 - [`../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md) — exact 43-chart record sweep and common five-fibre R17 construction.
@@ -45,12 +50,20 @@ Existing scripts, tests, local checkpoints, and generated certificates are retai
 
 The useful gates are still:
 
-1. use the exact pinned-ICARM fibre inventory—especially the `074d9` controls and native alternate-Q80 curve 12—to target a rank-32 neighbourhood, while separately pursuing an unconditional upper bound for curve 302;
-2. complete genuinely residual Selmer/descent calculations before authorizing expensive point search;
-3. use curve 12 and the other exact native alternate-Q80 fibres from the complete pinned-ICARM sweep to compare its specialization tail to published R17;
+1. reverse-engineer curve 302 from its complete 31-point configuration,
+   calibrated on the actual transported generic subgroup of the known
+   Fermigier--Mestre curve-245 control and without dimensioning the search at
+   17;
+2. use the exact pinned-ICARM fibre inventory—especially the `074d9` controls and native alternate-Q80 curve 12—to target a rank-32 neighbourhood, while separately pursuing an unconditional upper bound for curve 302;
+3. accumulate proved residual-Selmer constraints monotonically, rejecting below
+   the required residual dimension 15; permit only explicitly bounded point
+   search while the full descent is open, and still require a complete
+   unconditional descent for every Selmer or exact-rank claim;
 4. pursue low-conductor survivors only after exact quotient/descent gates justify them.
 
 A heuristic score, point list without independence, incomplete Selmer calculation, or bounded miss is not a rank theorem.
+
+<!-- status-consumer: EC-ICARM-CURVE302-POINT-CLOUD 1e1eb37dd6d4350f -->
 
 ## Reproduction
 

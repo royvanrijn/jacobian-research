@@ -247,7 +247,14 @@ def exact_candidate_records(
 def run(args: argparse.Namespace) -> int:
     artifact, model = load_specialization(args.input)
     descent_gate = require_gate_for_specialization(
-        args.residual_selmer_gate, artifact
+        args.residual_selmer_gate,
+        artifact,
+        requested_search_limits={
+            "search_height": args.search_height,
+            "wall_seconds": args.timeout,
+            "stack_bytes": args.stack_bytes,
+            "rss_limit_bytes": args.rss_limit_bytes,
+        },
     )
     executable = shutil.which("gp")
     if executable is None:

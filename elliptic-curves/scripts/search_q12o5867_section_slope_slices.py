@@ -903,8 +903,18 @@ def main() -> None:
         raise SystemExit("no q12o5867 specialization artifacts were found")
     if len(args.residual_selmer_gate) != len(inputs):
         raise SystemExit("repeat --residual-selmer-gate exactly once per input")
+    requested_search_limits = {
+        "charts_per_candidate": args.charts_per_candidate,
+        "numerator_bound": args.numerator_bound,
+        "denominator_bound": args.denominator_bound,
+        "wall_seconds_per_chart": args.chart_timeout,
+    }
     for path, gate_path in zip(inputs, args.residual_selmer_gate, strict=True):
-        require_gate_for_specialization(gate_path, json.loads(path.read_text()))
+        require_gate_for_specialization(
+            gate_path,
+            json.loads(path.read_text()),
+            requested_search_limits=requested_search_limits,
+        )
     started = time.monotonic()
     results = [search_specialization(path, args) for path in inputs]
     command = " ".join(

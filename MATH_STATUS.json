@@ -36158,6 +36158,46 @@
       "priority": "derived"
     },
     {
+      "id": "EC-ICARM-CURVE302-POINT-CLOUD",
+      "kind": "example",
+      "state": "proved",
+      "title": "Exact bounded point-cloud reconstruction probes for ICARM curve 302",
+      "scope": "Without assuming an R17 or 17+14 parent, exact finite good-reduction codes through p<=1000 give full submitted-point image ranks 31 over both F_2 and F_3 for ICARM curve 302. In each code the first seventeen columns have rank 17 and the remaining columns contribute dimension 14 modulo them; pairwise local-class separation rates do not expose the submitted index-17 boundary. The reconstructed curve-245 Fermigier--Mestre control verifies the basis-invariant soluble-quartic fossil: all twelve visible points and its extra quartic point map into one affine coset of 2E(Q), while the full-rank curve-302 mod-2 code separates every pair of raw submitted points. Hence no two raw curve-302 points can be visible images from one such 2-cover; a hidden quartic route would require nontrivial Mordell--Weil combinations or a different map. Among the public x-coordinates there are no repeated pair sums, oriented differences or products, no three-term arithmetic or geometric progressions, no equal rational squareclasses and no square absolute differences. Exact rational interpolation in submission index with deg(P)+deg(Q)<=6, trained on seven frozen alternating points, has zero held-out X or Y hits on the full cloud, first seventeen, and remaining fourteen. All 4495 point triples fail the rational projective closure condition for a fixed-X quadratic short-Weierstrass pencil with linear Y-sections, so that architecture preserves at most two supplied points. The analogous elementary probes also miss curve 273 and the public basis of curve 245; negative conclusions therefore apply only to the declared coordinate, degree, prime, ordering and deformation bounds and do not exclude moving sections, a Mordell--Weil basis change, another fibration or a private construction. The largest curve-302 numerator divisibility clusters occur at bad primes 5, 11 and 23 and are local-conditioning data, not a global-family certificate.",
+      "canonical_source": "elliptic-curves/notes/ICARM_CURVE302_POINT_CLOUD_RECONSTRUCTION.md",
+      "dependencies": [
+        "ECR30",
+        "ECR31",
+        "EC-ICARM-GENERATED-FAMILY-DISCOVERY"
+      ],
+      "checker": "elliptic-curves/cas/analyze_icarm_curve302_point_cloud.py",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:74a2562944b1113293b27f763dad8e3e60d062bc826d39b0cae283a13825218e",
+      "software_lock": [
+        ".python-version",
+        "requirements.txt",
+        "elliptic-curves/cas/analyze_icarm_curve302_point_cloud.py",
+        "elliptic-curves/cas/icarm_curve245.py",
+        "elliptic-curves/cas/icarm_curve273.py",
+        "elliptic-curves/cas/icarm_curve302.py",
+        "elliptic-curves/cas/mod2_reduction_independence.py",
+        "artifacts/generated-results/elliptic-curves/record_rank17_fingerprint_calibration_v1.json",
+        "artifacts/generated-results/elliptic-curves/icarm_curve302_point_cloud_v1.json"
+      ],
+      "supersedes_notes": [
+        "the apparent 17+14 decomposition of the submitted curve-302 points is evidence for an R17 parent"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "EC-K3-H3-Q8-QQ-D13",
       "kind": "example",
       "state": "proved",
@@ -37431,6 +37471,48 @@
         "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
         "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
         "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-DET378-QQ-MARKING-OBSTRUCTION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Stable X_0(63) obstruction for the split determinant-378 transcendental row",
+      "scope": "For the arithmetic-first row K3-7b71a1cc00b0c6e2, the literal transcendental lattice is T=U(3)+<42> with discriminant form A_T=Z/3+Z/3+Z/42 and bilinear Gram u(3)+<1/42>. Its primitive-similarity even Clifford order has norm-one group conjugate to Gamma_0(7), but the literal order has reduced discriminant 189 and imposes projective identity modulo 3. The norm-one spin image on A_T is A4 of order 12. Adding the proper Fricke coset gives A4 x C2 of order 24, and adding the negative reflection and central inversion gives the full O^+(T) image A4 x C2 x C2 of order 48; none of the non-spin cosets contributes a stable element. Hence O^+(T)^* is Gamma_0(7) intersected with +/-Gamma(3), an index-12 subgroup rationally conjugate to Gamma_0(63). The exact marked curve is X_0(63), of genus 5 with eight geometric cusps, four rational cusps, and no rational noncuspidal point by the complete Mazur--Kenku cyclic-isogeny classification. Thus this split determinant-378 row cannot carry the full saturated rational rank-19 marking, and no CM, saturation, NS-complement, rootless-frame, or equation gate opens. This excludes only the coarse-X_0(7) row, not the other anisotropic determinant-378 lattice or larger number fields, and narrows OP-K3-DIFFERENT-NS-ARITHMETIC-MW17.",
+      "canonical_source": "elkies-k3/DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+      "dependencies": [],
+      "checker": "elkies-k3/scripts/certify_det378_qq_marking_obstruction.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a0a11fafec664d5adb22b8d5e8efb1df900da7b4f4cd669fc2c0e6498572e8af",
+      "software_lock": [
+        "elkies-k3/scripts/certify_det378_qq_marking_obstruction.sage",
+        "artifacts/generated-results/elkies-k3-det378-qq-marking-obstruction-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json"
+      ],
+      "supersedes_notes": [
+        "the determinant-378 X_0(7) row has an unknown literal stable kernel",
+        "the coarse genus-zero curve can be used directly as the full marked curve"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+      ],
+      "consumers": [
+        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
+        "REPRODUCE.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/AGENTS.md",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
         "elkies-k3/README.md",
         "elkies-k3/scripts/README.md"
       ],
@@ -39800,7 +39882,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:fbe0fe1c8cd4c2f517cf497fae4a60b12412917410462714cf80562660586657",
+      "artifact_hash": "sha256:8e96967f02aa32a2d71c3a166d08a16430533a9f9442717c3b422e235630cdd3",
       "software_lock": [
         "elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage",
         "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
@@ -40195,6 +40277,94 @@
         "artifacts/generated-results/README.md",
         "elkies-k3/README.md",
         "elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "First complete alternate-Q80 product-twist rank-zero obstruction",
+      "scope": "For the exact rank-one rational V4 base at shortlist rank 55, with character pair alternate-orbit-0fda0:alternate-orbit-1037d, the regular product-twist model d(u)y^2=x^3+A(u)x+B(u) has good reduction at p=131 and a nondegenerate five-facet Newton polytope. Open-source toric controlled reduction at pinned commit 74cda9e8148cd8e9a3928fc15a558c9a70b67cc1 computes the complete degree-36 primitive toric Frobenius polynomial with Hodge vector [3,30,3]. The independent verifier reconstructs P_D and P_Z from the branch divisor D={d=0} and its cubic cover Z={d=0,x^3+A*x+B=0}, the degree-eight boundary factor P_Z/P_D, the exact degree-18 U+4D4 factor (T-p)^2*P_D*P_Z, and the full degree-46 H^2 polynomial. The resulting integral degree-28 elliptic quotient reproduces the independent fibrewise power sums (-119,18305), satisfies its reciprocal functional equation, and passes an exact Weil-circle test by real-algebraic root isolation. Exhaustive gcd tests against every cyclotomic polynomial Phi_m with phi(m)<=28 find no Tate root. Hence the special-fibre Picard number is at most 18. The four I0* fibres give the reverse bound, so specialization and Shioda--Tate prove rank E^(d)(QQbar(u))=0 without the Tate conjecture. On the torsion-free 48I1 quadratic base change this also forces A^-=0, Gamma_d=0, and Hhat^(-1)(<sigma>,A)=0. The artifact pins the exact model, prime, tool commit, build/replay invocations, and raw input/output, executable, exporter, parser, verifier, and runner hashes. This closes this one product construction by Success B; it makes no claim about the other sixteen product twists.",
+      "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_PRODUCT_TWIST_RANK_ZERO_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64"
+      ],
+      "checker": "elkies-k3/scripts/run_r17_product_toric_frobenius.sh",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:95c6c4d2cecff8e3b0254be6e0d3d96d43172a5252ff938cddd4fab98e58f574",
+      "software_lock": [
+        "elkies-k3/scripts/export_r17_product_toric_frobenius_input.sage",
+        "elkies-k3/scripts/parse_toric_controlled_reduction_output.py",
+        "elkies-k3/scripts/certify_r17_product_toric_frobenius.sage",
+        "elkies-k3/scripts/run_r17_product_toric_frobenius.sh",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0fda0--alternate-orbit-1037d-p131-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-product-twist-finite-field-bound-audit-v1.json"
+      ],
+      "supersedes_notes": [
+        "all seventeen exact-rank-one alternate-Q80 product twists lack a complete finite-field Mordell--Weil upper bound",
+        "the rank-55 product construction remains unexplained after the bounded no-hit searches"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/README.md",
+        "elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-11952-RANK55-SINGLETON-FROBENIUS-BOUNDS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Sharp one-prime geometric rank bounds for the two rank-55 singleton twists",
+      "scope": "For the two singleton characters alternate-orbit-0fda0 and alternate-orbit-1037d in the shortlist-rank-55 V4 base, the regular quadratic-twist surfaces have fibre configuration 2I0*+24I1, arithmetic genus three, and trivial lattice U+2D4 of rank ten. At p=131 and p=157 respectively, open-source toric controlled reduction gives primitive Hodge vector [2,24,2]. The independent verifier reconstructs the full degree-34 H^2 polynomial, the exact degree-10 trivial-lattice factor, and an integral degree-24 elliptic quotient; it checks the functional equation, exact Weil size, independently computed n=1,2 fibrewise moments, and every possible cyclotomic factor with multiplicity. Both useful quotients have normalized Tate factor exactly (Z-1)^2. Hence each singleton geometric Mordell--Weil rank is at most two; the existing exact lifted section gives rank at least one. The certified character interval is therefore 17+[1,2]+[1,2]+0 and the total geometric generic-rank interval is [19,21]. This does not prove singleton rank one or the exact decomposition 17+1+1+0; counting the distinct factor Z-1 only once would be invalid.",
+      "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_SINGLETON_TWIST_FROBENIUS_BOUNDS_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64",
+        "EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_rank55_singleton_toric_frobenius_bounds.sage",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:e47c6bc8fc579801f0fcc1491e6b7eb84ccfa7c821dd55d9fb8614027392dc90",
+      "software_lock": [
+        "elkies-k3/scripts/audit_r17_singleton_twist_finite_field_bounds.sage",
+        "elkies-k3/scripts/export_r17_singleton_toric_frobenius_input.sage",
+        "elkies-k3/scripts/parse_toric_controlled_reduction_output.py",
+        "elkies-k3/scripts/certify_r17_product_toric_frobenius.sage",
+        "elkies-k3/scripts/certify_r17_rank55_singleton_toric_frobenius_bounds.sage",
+        "elkies-k3/scripts/run_r17_singleton_toric_frobenius.sh",
+        "artifacts/generated-results/elkies-k3-r17-singleton-twist-finite-field-bound-audit-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-singleton-alternate-orbit-0fda0-p131-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-singleton-alternate-orbit-1037d-p157-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-rank55-singleton-toric-frobenius-bounds-v1.json"
+      ],
+      "supersedes_notes": [
+        "the two rank-55 singleton twists have no cohomological geometric-rank upper bounds",
+        "one copy of a distinct cyclotomic factor should be counted without its multiplicity"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/README.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -40898,20 +41068,22 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Global transcendental-first arithmetic queue for Lane B",
-      "scope": "The Lane B foundry now begins with all 827 rank-three transcendental-lattice rows and orders them without using rootless-frame data. The enforced gate order is full marked Shimura/modular curve, rational noncuspidal non-CM point, saturated rational marking of NS=T^perp, rootless-frame test, and equation compilation. Three exact exclusions and the already-realized determinant-948 positive control are propagated. The remaining arithmetic research queue has 823 rows, consisting of 62 UNKNOWN rows from the old rootless-MW17 subcatalogue and 761 unscreened T rows; 24 have coarse genus at most two as a diagnostic only. No new NS/rootless handoff is emitted because no new exact positive full marking exists. The first exact-coarse diagnostics are determinant 378/X_0(7), determinant 256/X_0(2), and determinant 512/X_0(4), but their literal stable kernels remain unknown. This narrows OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 by replacing rootless-first work ordering, not by constructing or excluding any unscreened surface.",
+      "scope": "The Lane B foundry begins with all 827 rank-three transcendental-lattice rows and orders them without using rootless-frame data. The enforced gate order is full marked Shimura/modular curve, rational noncuspidal non-CM point, saturated rational marking of NS=T^perp, rootless-frame test, and equation compilation. EC-K3-DET378-QQ-MARKING-OBSTRUCTION adds the split determinant-378 X_0(7) row to the three earlier exact exclusions; the already-realized determinant-948 positive control is unchanged. The remaining arithmetic research queue has 822 rows, consisting of 62 UNKNOWN rows from the old rootless-MW17 subcatalogue and 760 unscreened T rows; 23 have coarse genus at most two as a diagnostic only. No new NS/rootless handoff is emitted because no new exact positive full marking exists. The next exact-coarse diagnostics are determinant 256/X_0(2) and determinant 512/X_0(4), whose literal stable kernels remain unknown. This narrows OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 by replacing rootless-first work ordering and propagating exact source exclusions, not by promoting any unresolved row.",
       "canonical_source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
       "dependencies": [
         "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
-        "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER"
+        "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
+        "EC-K3-DET378-QQ-MARKING-OBSTRUCTION"
       ],
       "checker": "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
       "proof_type": "exact_symbolic",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:cd8ecb8d140aedb42aeeacd4082e33f2dd0bcc9b4b01df2abb812b597f1175c7",
+      "artifact_hash": "sha256:311bf8e03e17745fb3d69d0e0adaf17e47ee77b02e675f7f2c51335d9cef99cd",
       "software_lock": [
         "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
+        "elkies-k3/data/arithmetic/arithmetic-first-marking-decisions-v1.json",
         "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json",
         "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
         "artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json"
@@ -40942,7 +41114,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Exact native alternate-Q80 quotient visibility audit and 69-fibre local calibration table",
-      "scope": "For ICARM curves 12,395,363,364,378,393,404, exact finite-reduction certificates prove independence of all displayed points; the saturated native MW17 bases specialize by exact group-law-verified integer relations; and Smith reduction gives displayed exceptional quotients Z^12,Z^11,Z^10,Z^11,Z^7,Z^9,Z^10. Exhaustive specialization of the complete native cover inventories gives rational-split counts 0,2,3,2,13,3,1 and primitive visible-span ranks 0,2,2,1,6,2,1 respectively. Curve 395 exposes P21 and P23. Curve 378's thirteen splits span exactly the primitive codimension-one lattice c18+c19-c24=0 in Z<P18,...,P24>. All twelve curve-12 quotient-basis directions have exact fitted members in the equation-cheapest of the complete 63,917 native norm-eight pencils; their pairwise-distinct irreducible quartic covers are genus one, carry exact curve-12 witnesses, and have anti-invariant lifts of height 16. The same exact norm-eight fit succeeds for every preferred quotient-basis direction on curves 395,363,364,378, giving 39 further pairwise-distinct-within-fibre genus-one covers of anti-invariant height 16. The live public projection pins enough points for all 69 exact-sweep hits, and all 69 receive exact local a_p/point-count and three-block Nagao feature rows. Combining this with the prior five 074d9 audits yields twelve exact displayed-quotient labels; the other 57 remain literal UNKNOWN pending chart-specific saturated section transports. Public hit count is not a measured search-exposure denominator, so family quality and historical effort are not identifiable from this table alone. No displayed subgroup is asserted to be the full Mordell--Weil group, no rank upper bound is proved, and Nagao features remain heuristic.",
+      "scope": "For ICARM curves 12,395,363,364,378,393,404, exact finite-reduction certificates prove independence of all displayed points; the saturated native MW17 bases specialize by exact group-law-verified integer relations; and Smith reduction gives displayed exceptional quotients Z^12,Z^11,Z^10,Z^11,Z^7,Z^9,Z^10. Exhaustive specialization of the complete native cover inventories gives rational-split counts 0,2,3,2,13,3,1 and primitive visible-span ranks 0,2,2,1,6,2,1 respectively. Curve 395 exposes P21 and P23. Curve 378's thirteen splits span exactly the primitive codimension-one lattice c18+c19-c24=0 in Z<P18,...,P24>. All twelve curve-12 quotient-basis directions have exact fitted members in the equation-cheapest of the complete 63,917 native norm-eight pencils; their pairwise-distinct irreducible quartic covers are genus one, carry exact curve-12 witnesses, and have anti-invariant lifts of height 16. The same exact norm-eight fit succeeds for every preferred quotient-basis direction on curves 395,363,364,378, giving 39 further pairwise-distinct-within-fibre genus-one covers of anti-invariant height 16. The live public projection pins enough points for all 69 exact-sweep hits, and all 69 receive exact local a_p/point-count and three-block Nagao feature rows. At this audit's frozen boundary, combining the native rows with the prior five 074d9 audits yielded twelve exact displayed-quotient labels and left 57 literal UNKNOWNs; the later highest-rank follow-up raises the current table to fifteen exact labels and 54 UNKNOWNs. Public hit count is not a measured search-exposure denominator, so family quality and historical effort are not identifiable from this table alone. No displayed subgroup is asserted to be the full Mordell--Weil group, no rank upper bound is proved, and Nagao features remain heuristic.",
       "canonical_source": "elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
@@ -40955,7 +41127,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:aa723091470e754e3463a9510b6e5e0d5ad409ce0c08bd9ba0249397c6e5fd5f",
+      "artifact_hash": "sha256:878981317bcc71f72aabfd5e88ce3051a629a55bfd793156305d764adf44516c",
       "software_lock": [
         "elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage",
         "elkies-k3/scripts/rank_r17_norm12_11952_alternate_bisection_orbits.sage",
@@ -40997,6 +41169,95 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-R17-NORM12-HIGHEST-RANK-TRANSPORTS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Exact quotient transports for all unresolved rank-28 public fibres",
+      "scope": "Exact direct published-R17 equations with saturated generic MW17 bases are compiled for norm12-orbit-08234 and norm12-orbit-07ca9.  Exact specialization at public curves 11,423,391, exact finite-reduction independence certificates for their displayed rank-28 subgroups, exact group-law verification of recovered specialization relations, and Smith reduction prove that each displayed quotient by the specialized generic MW17 lattice is Z^11.  These are the three highest-rank rows that were UNKNOWN in the 69-success public table, so the current exact-label count rises from twelve to fifteen and the literal UNKNOWN count falls from 57 to 54.  No full Mordell--Weil group, rank upper bound, cover visibility, or historical failed-search denominator is inferred.",
+      "canonical_source": "elkies-k3/R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
+        "EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_norm12_highest_rank_transports.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:cf7b2d8dfda1ab076f00888cb7c446859cf134a2eda39fc9a70d314d6519a52f",
+      "software_lock": [
+        "elkies-k3/scripts/plan_r17_norm12_direct_section_basis.sage",
+        "elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage",
+        "elkies-k3/scripts/certify_r17_norm12_highest_rank_transports.sage",
+        "elkies-k3/scripts/build_r17_norm12_icarm_calibration_dataset.py",
+        "artifacts/generated-results/elkies-k3-r17-norm12-08234-direct-section-basis-plan-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-07ca9-direct-section-basis-plan-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit08234-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit07ca9-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-highest-rank-transports-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-icarm-calibration-dataset-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-icarm-calibration-dataset-v1.tsv"
+      ],
+      "supersedes_notes": [
+        "the rank-28 public fibres 11,391,423 lack exact quotient transports",
+        "the 69-success calibration table has only twelve exact quotient labels"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-PROSPECTIVE-FAMILY-HOLDOUT",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Frozen unopened ordinary-parameter cohort with whole-PGL2-family holdouts",
+      "scope": "A label-blind deterministic commitment samples 1,536 distinct ordinary parameters of primitive projective height 30,001 through 60,000: exactly 256 in each of the six exact rational-PGL2 families from the 43-chart record-lineage atlas.  The family-level SHA-256 split freezes four whole development families (1,024 rows) and two whole locked holdout families, norm12-orbit-11952 and norm12-orbit-074d9 (512 rows); no family crosses the split.  Selection reads no public hit, rank, search-exposure, visibility, conductor, Nagao, or outcome field, and every feature and outcome remains null.  The committed uniform protocol fixes exact specialization and MW17 subtraction, finite-reduction certification, local-prime blocks, and a 300-second Sage/eclib mwrank search at height 12 per parameter, with no adaptive family allocation or presieve.  This creates a prospective scheduled denominator but has not run or opened the searches, does not reconstruct the unknown historical denominator behind the 69 recognized public successes, and does not validate any predictor.",
+      "canonical_source": "elkies-k3/R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
+        "EC-K3-R17-NORM12-HIGHEST-RANK-TRANSPORTS"
+      ],
+      "checker": "elkies-k3/scripts/build_r17_norm12_prospective_family_holdout.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:64f6ec8ca2c43273cab16ef43e30fcce9f24bb270deaaecb5236821e80782cd9",
+      "software_lock": [
+        "elkies-k3/scripts/build_r17_norm12_prospective_family_holdout.py",
+        "artifacts/generated-results/elkies-k3-r17-norm12-record-lineage-atlas-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-prospective-ordinary-family-holdout-v1.json"
+      ],
+      "supersedes_notes": [
+        "a fibre-level split of the 69 recognized successes is an adequate prospective validation",
+        "the count of 69 public successes supplies a historical failed-search denominator",
+        "parameters from PGL2-equivalent charts may cross a predictor train-test boundary"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-R17-074D9-RIGID-CROSS-FIBRE-TRANSFER",
       "kind": "theorem",
       "state": "proved",
@@ -41030,6 +41291,56 @@
         "elkies-k3/scripts/README.md",
         "artifacts/generated-results/README.md",
         "elkies-k3/R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-074D9-RECORD-TWIST-MW-OBSTRUCTION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Geometric-rank obstruction to full record-quotient lift by the four 074d9 twists",
+      "scope": "For the four record-specific singleton twists q_tt04b07, q_tt11a44, q_tt11279, q_tt080fa, exact nondegenerate toric Frobenius calculations at the eight good primes 131,137,151,157,167,173,181,193 give geometric Mordell--Weil rank upper bounds 4,4,4,2. One exact anti-invariant section on each twist has P.O=0 and height six, proving rank at least one; its specialization at the associated record fibre is 2 times the rigid branch point minus the generic trace, so its displayed exceptional-quotient image is respectively (0,0,0,0,0,0,0,2,0,0,0,0), (0,-2,-2,0,-2,0,0,2,0,2,0,0), (0,0,0,2,0,0,0,0,0,0,0,0), and (0,0,0,2,0,0,2,-2,0,0,0,0) in the basis P18,...,P29. The two known images at each record have rank two. Even the full paired twist groups can specialize with rank at most 8 at curve 356 and at most 6 at curve 385, strictly below both rank-12 displayed exceptional quotients. Hence neither proposed quotient equality holds and no partition such as 5+7=12 is possible for these twist pairs. Exact finite-function-field 2-descents complete only at smaller discovery primes, with Selmer dimensions 6,4,5,4; all four good-prime p=131 jobs time out after certifying irreducible 2-division cubics. Exact section systems are exported for P.O=0,1,2, but bounded modular searches do not close the higher levels. The individual QQ(u) ranks remain UNKNOWN in [1,4],[1,4],[1,4],[1,2], so the all-rank-one scenario is neither proved nor disproved.",
+      "canonical_source": "elkies-k3/R17_074D9_RECORD_TWIST_MW_AUDIT_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
+        "EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT",
+        "EC-K3-R17-074D9-RIGID-CROSS-FIBRE-TRANSFER"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_074d9_record_twist_mw_contribution.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:651b43cdaed9cbed94197d5b7650fe5cfd12c78a3b5f199c79c865eaf6686423",
+      "software_lock": [
+        "elkies-k3/scripts/export_r17_074d9_singleton_toric_frobenius_input.sage",
+        "elkies-k3/scripts/certify_r17_074d9_twist_good_reduction_bounds.sage",
+        "elkies-k3/scripts/derive_r17_074d9_record_twist_sections.sage",
+        "elkies-k3/scripts/export_r17_074d9_twist_2descent_magma.sage",
+        "elkies-k3/scripts/certify_r17_074d9_twist_2descent_audit.sage",
+        "elkies-k3/scripts/export_r17_074d9_twist_section_ladder_modp.sage",
+        "elkies-k3/scripts/run_r17_074d9_twist_section_ladder_msolve.py",
+        "elkies-k3/scripts/certify_r17_074d9_record_twist_mw_contribution.sage",
+        "artifacts/generated-results/elkies-k3-r17-074d9-twist-good-reduction-bounds-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-074d9-record-twist-sections-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-074d9-twist-2descent-audit-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-074d9-record-twist-mw-contribution-v1.json"
+      ],
+      "supersedes_notes": [
+        "the four record-specific twists may have combined specialization rank twelve at either record",
+        "a partition such as 5+7=12 remains possible for either displayed exceptional quotient"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/R17_074D9_RECORD_TWIST_MW_AUDIT_2026-09-04.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -41113,6 +41424,90 @@
       "priority": "derived"
     },
     {
+      "id": "EC-K3-R17-074D9-LOCAL-KUMMER-SEPARATION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Exact coordinate-complement local-Kummer separation of the 074d9 record fibres 356 and 385",
+      "scope": "For the exact norm12-orbit-074d9 MW17 specializations at ICARM curves 356 and 385, the certified displayed exceptional quotient bases are P18,...,P29. Row reduction of the complete rigid-bisection images gives deterministic ten-dimensional coordinate complements with pivot labels P19,P25 and P21,P24 respectively. For every quotient generator, the standard cubic Kummer class 4*x(P)-zeta is constructed in the irreducible completed-square 2-division algebra; its square norm, the complete proved factorization of the cubic discriminant, and its local images are checked exactly. The same audit is performed for curves 351,376,377 and native alternate-Q80 curve 12 as controls. At 2, every bad prime, and the fixed common-good primes 53,67,71,79,83,97,101,113, the certificate records anonymous local-factor valuation/unit squareclasses, exact ambient and displayed-block Kummer dimensions, automorphism-invariant component-image orders, and all componentwise Hilbert symbols. The two selected complements differ already at 2: curve 356 has type I1*, c_2=4 and component-order multiset 1^3,4^7, while curve 385 has type I16, c_2=16 and multiset 1^2,2^2,4,8^3,16^2; their componentwise Hilbert multisets also differ. Their ambient common-good dimension vectors agree at only three of eight primes, fewer than some control pairs, and none of the eight full block signatures agrees. Their anonymous all-bad-place signature multisets are unequal. Thus no common signature exists for this fixed coordinate-complement fingerprint and no CRT/inward parameter search is justified by it. EC-K3-R17-074D9-QUOTIENT-ARITHMETIC-BLOCK-OBSTRUCTION proves separately that these selected complements are not Hilbert modules on the quotient by the two visible directions. This result does not rule out every more abstract common rank-jump mechanism, assert full Mordell-Weil groups, or prove rank upper bounds.",
+      "canonical_source": "elkies-k3/R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
+        "EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT",
+        "EC-K3-R17-074D9-RIGID-CROSS-FIBRE-TRANSFER"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_074d9_local_kummer_meet.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4faa6ba1a74d5c6ef5181093e2411774419cc89a211fe6ff7689f910a1eda194",
+      "software_lock": [
+        "elkies-k3/scripts/certify_r17_074d9_local_kummer_meet.sage",
+        "artifacts/generated-results/elkies-k3-r17-074d9-local-kummer-meet-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-curve12-alternate-q80-quotient-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-074d9-cross-fibre-bisection-transfer-v1.json"
+      ],
+      "supersedes_notes": [
+        "the ten rigid-invisible directions at curves 356 and 385 may share a local Kummer fingerprint suitable for CRT parameter reconstruction"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "elkies-k3/R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-074D9-QUOTIENT-ARITHMETIC-BLOCK-OBSTRUCTION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Exact Hilbert-descent obstruction to a ten-dimensional 074d9 quotient block decomposition",
+      "scope": "For each of ICARM curves 356 and 385, let V be the F_2-space on the twelve displayed exceptional directions P18,...,P29 and let R be the exact two-dimensional rigid-visible span. The certificate presents Q=V/R without choosing a complement. At every bad prime it constructs the genuine quotient local Kummer module im(kappa_p(V))/im(kappa_p(R)), the exact displayed component image modulo the visible component image with its exponent and annihilator filtration, and the induced mod-two component module. It stores every componentwise Hilbert matrix B_w on the twelve named generators and checks the necessary and sufficient descent condition R*B_w=0. This condition fails at split bad primes 13,23,37,139 for curve 356 and 5,29,37,41,73,109,127 for curve 385; the obstruction-row spans in V^* have dimensions 4 and 10 respectively. At each obstructed rational prime two of the three linear local factors carry the same nonzero obstruction and the third carries zero, so the genuine corestricted local Tate form remains zero. If only that corestricted form is retained, both graphs are vacuously edgeless and admit a formal coordinate partition 1+...+1, but they contain no coupling information and select no canonical one-dimensional summands. The nontrivial componentwise Hilbert tensor, nontrivial-pairing graph, placewise pairing-vector span, and intrinsic indecomposable partition of dimension ten are not defined on Q; no basis-dependent answer such as 10, 6+4, or 4+3+3 is promoted. Using only quotient-compatible Kummer and component data, the ten fixed canonical presentation directions require five bad places to distinguish at curve 356 (22 minimum sets, first 2,3,13,23,751) and four at curve 385 (the unique minimum 13,29,47,89). This is not an indecomposable decomposition and makes no assertion about the full Mordell-Weil group or a rank upper bound.",
+      "canonical_source": "elkies-k3/R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-074D9-LOCAL-KUMMER-SEPARATION",
+        "EC-K3-R17-074D9-RIGID-CROSS-FIBRE-TRANSFER"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_074d9_local_kummer_meet.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4faa6ba1a74d5c6ef5181093e2411774419cc89a211fe6ff7689f910a1eda194",
+      "software_lock": [
+        "elkies-k3/scripts/certify_r17_074d9_local_kummer_meet.sage",
+        "artifacts/generated-results/elkies-k3-r17-074d9-quotient-arithmetic-blocks-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-074d9-local-kummer-meet-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-074d9-cross-fibre-bisection-transfer-v1.json"
+      ],
+      "supersedes_notes": [
+        "the existing RREF nonpivot signatures already define a basis-independent arithmetic structure on the quotient by the two visible directions",
+        "curves 356 and 385 have a well-defined intrinsic ten-direction Hilbert-pairing graph whose connected components can be compared"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "elkies-k3/R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "OP-K3-NS0024-ARITHMETIC-MW17",
       "kind": "open_problem",
       "state": "parked",
@@ -41157,7 +41552,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Arithmetic-first different-NS MW17 with a certified carrier, or integral V4 rank 20",
-      "scope": "EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS remains a bounded non-arithmetic lattice census, and EC-K3-NS0031-MARKED-FORMAL-BRANCH remains a local control only. The determinant-948 noncyclic chain is equation-explicit, so another equation on that surface is not the Lane B milestone. Determinant 720, determinant-950 NS0024, and determinant-1184 NS0031 are arithmetically excluded by EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION, EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, and EC-K3-NS0031-QQ-MARKING-OBSTRUCTION. EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY now orders all 827 rank-three T rows before NS or rootless work: compute the exact stable marked curve and a rational noncuspidal non-CM point, construct and saturate the rational marking of NS=T^perp, then test rootlessness and compile an equation. Its current 823-row arithmetic queue has no new positive handoff. Primary completion requires a different-NS characteristic-zero elliptic K3 over QQ with geometric Picard rank 19, nineteen rational divisor classes, a target-free primitive-nef rootless U', seventeen displayed QQ(t)-sections generating the saturated torsion-free MW lattice, and additionally a certified positive-rank low-genus carrier C/QQ with a nonconstant map to P1 and an exact independent pullback section. The stretch completion is a connected V4 carrier with invariant character rank 17 and all three nontrivial character ranks one, together with the exact integral 2-primary graph glue, full height pairing, saturation, and torsion exclusion. EC-K3-INTEGRAL-CHARACTER-GLUE, EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64, EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64, EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION, and EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION provide the current involution, carrier, and product-character boundary. Existing two-character and zero-Tate-class controls do not prove the product-character section. A coarse curve, modular point, finite p-adic or formal lift, rootless-first score, supplied target, unsaturated subgroup, heuristic carrier rank, or equation without the rational rank-19 marking does not close the problem.",
+      "scope": "EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS remains a bounded non-arithmetic lattice census, and EC-K3-NS0031-MARKED-FORMAL-BRANCH remains a local control only. The determinant-948 noncyclic chain is equation-explicit, so another equation on that surface is not the Lane B milestone. Determinant 720, determinant-950 NS0024, determinant-1184 NS0031, and the split determinant-378 X_0(7) row are arithmetically excluded by EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION, EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, EC-K3-NS0031-QQ-MARKING-OBSTRUCTION, and EC-K3-DET378-QQ-MARKING-OBSTRUCTION. EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY orders all 827 rank-three T rows before NS or rootless work: compute the exact stable marked curve and a rational noncuspidal non-CM point, construct and saturate the rational marking of NS=T^perp, then test rootlessness and compile an equation. Its current 822-row arithmetic queue has no new positive handoff; determinants 256 and 512 are next. Primary completion requires a different-NS characteristic-zero elliptic K3 over QQ with geometric Picard rank 19, nineteen rational divisor classes, a target-free primitive-nef rootless U', seventeen displayed QQ(t)-sections generating the saturated torsion-free MW lattice, and additionally a certified positive-rank low-genus carrier C/QQ with a nonconstant map to P1 and an exact independent pullback section. The stretch completion is a connected V4 carrier with invariant character rank 17 and all three nontrivial character ranks one, together with the exact integral 2-primary graph glue, full height pairing, saturation, and torsion exclusion. EC-K3-INTEGRAL-CHARACTER-GLUE, EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64, EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64, EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION, and EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION provide the current involution, carrier, and product-character boundary. Existing two-character and zero-Tate-class controls do not prove the product-character section. A coarse curve, modular point, finite p-adic or formal lift, rootless-first score, supplied target, unsaturated subgroup, heuristic carrier rank, or equation without the rational rank-19 marking does not close the problem.",
       "canonical_source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION",
@@ -41169,6 +41564,7 @@
         "EC-K3-GOLAY-DET720-NS-SATURATION",
         "EC-K3-GOLAY-DET720-PHYSICAL-CORRIDOR",
         "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-DET378-QQ-MARKING-OBSTRUCTION",
         "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
         "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
         "EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA",
@@ -41239,6 +41635,13 @@
           "reason": "The arithmetic-first planner covers all 827 transcendental rows and deliberately withholds NS, rootless, and equation handoffs until an exact rational non-CM marked point is certified; coarse genus and lattice attractiveness do not supply that marking.",
           "witnesses": [
             "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY"
+          ]
+        },
+        {
+          "attack": "Reopening the split determinant-378 X_0(7) row as a rational rank-19 source over QQ",
+          "reason": "The literal factor-three marking changes the coarse curve to the stable X_0(63) cover, whose rational points are all cusps; no downstream NS or equation gate opens.",
+          "witnesses": [
+            "EC-K3-DET378-QQ-MARKING-OBSTRUCTION"
           ]
         },
         {
