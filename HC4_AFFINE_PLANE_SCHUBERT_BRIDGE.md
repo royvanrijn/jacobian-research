@@ -9,11 +9,19 @@ The combined relative-nilpotent result is registered as `HC4MR1` in
 `MATH_STATUS.json`.  The labels `HC4RSD77--80` are retained as local proof-map
 identifiers for the final packet.
 
+**Correction, 5 September 2026.** The
+[motion-frame audit](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) shows that frozen
+normalization controls `pq/a^2`, not `pq`. The extra equation `d(pq)=0`
+used below is not established by the geometric hypotheses. `HC4RSD79`
+therefore remains conditional, and the full `HC4MR1` reduction is partial.
+The positive maximal-motion sign is now excluded by differentiated branch
+identities; the negative sign remains open.
+
 The middle Jordan distribution is an affine-plane foliation.  Its first-order
 Grassmann motion is not automatically Schubert: one extra scalar survives.
-However, the complete second-order flatness prolongation, together with the
-constant maximal-motion determinant from `HC4RSD72`, excludes that surviving
-Gauss-rank-two motion altogether.  The lower-motion split is then closed by a
+The old augmented flatness prolongation excludes motion only if
+`d(pq)=0` is supplied as an additional hypothesis.
+The lower-motion split is closed by a
 degree-one incidence argument for affine-hyperplane foliations.
 
 > **Theorem HC4RSD77 — affine-plane middle foliation.**  Let
@@ -43,13 +51,13 @@ degree-one incidence argument for affine-hyperplane foliations.
 > Thus first order alone does not force the rank-one Schubert condition
 > `q=0`.
 
-> **Theorem HC4RSD79 — second-order maximal-motion obstruction.**  On the
+> **Conditional theorem HC4RSD79 — augmented maximal-motion obstruction.** On the
 > smooth Gauss-rank-two locus of the linearly-independent regular `[4]`
-> packet, `HC4RSD72` makes the determinant of the selected
-> Gauss-kernel-line differential a nonzero constant.  The zero-curvature
+> packet, assume additionally that `d(pq)=0` in the adapted frame.
+> The zero-curvature
 > prolongation of the full Hessian/Codazzi, Frobenius, quasi-translation, and
 > unit-volume system is then inconsistent.  Consequently the final regular
-> `[4]` packet has no Gauss-rank-two maximal-motion locus.
+> `[4]` packet has no such locus satisfying that extra hypothesis.
 
 > **Theorem HC4RSD80 — lower-motion hyperplane-pencil closure.**  In the
 > linearly-independent regular `[4]` packet, the projective source-kernel line
@@ -60,11 +68,9 @@ degree-one incidence argument for affine-hyperplane foliations.
 > invariant or forces the middle plane to be constant.  Both alternatives
 > return to the already closed linearly-dependent packet.
 
-Together `HC4RSD79--80` close the final linearly-independent regular `[4]`
-packet in the relative-nilpotent reduction.  Thus the complete `HC4-MR`
-branch ends in `HC2` or the exact `JC2` cotangent packet.  This is not by
-itself a proof of unrestricted `HC4` or `JC2`, because `HC4-MR` is one
-structural branch of the full problem.
+`HC4RSD80` addresses the lower-motion alternatives. It does not close
+the remaining negative maximal-motion sign. The complete `HC4-MR`
+reduction to `HC2/JC2` is not established.
 
 ## 1. Why `E_2` is affine
 
@@ -178,7 +184,7 @@ p=q,\qquad q^2=a^2.
 Thus flatness does not send the branch to the Schubert value `q=0`.  It forces
 the two non-Schubert signs `q=+a` and `q=-a`.
 
-## 4. The constant HC4 motion determinant eliminates both signs
+## 4. The conditional constant-motion calculation
 
 Let `theta^1,...,theta^4` be the dual moving coframe.  The HC4-selected
 Gauss-kernel line is represented by
@@ -208,19 +214,13 @@ D[\ell]=
 \]
 
 where `s=Gamma^4_{4,3}` is irrelevant to the determinant.  The maximal-motion
-identity of `HC4RSD72` identifies `pq`, up to the fixed nonzero factor of the
-chosen canonical frame, with the constant nonzero HC4 determinant.  The frame
-factor is constant: `S` has fixed anti-diagonal components and `det S` is a
-unit.  Moreover the residual gauge of an
-`S`-adapted regular-nilpotent frame is only a sign.  Indeed every centralizer
-element is
+identity of `HC4RSD72` applies in a differently normalized frozen frame.
+The exact transition sends this determinant to `pq/a^2`. It does not
+preserve the normalized matrix of `N`, so the sign-only centralizer
+argument cannot make its factor constant. The
+[transport audit](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) gives the full matrices.
 
-\[
-G=c_0I+c_1N+c_2N^2+c_3N^3,
-\]
-
-and `S`-orthogonality gives `G^2=I`, hence `G=+I` or `G=-I` in characteristic
-zero.  Therefore
+The following equation must therefore be treated as an **extra hypothesis**:
 
 \[
 pq\in K^*,\qquad e_i(pq)=0\quad(1\le i\le4).
@@ -249,9 +249,10 @@ Together with `q^2=a^2`, this gives
 8q^2=0,
 \]
 
-contradicting characteristic zero and `q!=0`.  Equivalently, the three
+contradicting characteristic zero and `q!=0` under that extra hypothesis.
+Equivalently, the three
 polynomials (3.2), (3.3), and (4.4), saturated by `a`, have Gröbner basis
-`[1]`.  This proves `HC4RSD79`.
+`[1]`. This proves the conditional version of `HC4RSD79`.
 
 ## 5. Lower-motion closure
 
@@ -259,12 +260,11 @@ The previously proposed Schubert split is not the correct route:
 
 1. first-order geometry allows both `q=0` and `q!=0`;
 2. flatness plus maximal motion forces `q=+/-a`, so `q=0` is impossible;
-3. constancy of the HC4 motion determinant `pq` eliminates both signs.
+3. independently established constancy of `pq` would eliminate both signs.
 
-Hence no rational plane-Keller quotient arises from a surviving
-Gauss-rank-two maximal-motion chart: that chart is empty.  The already closed
-fixed and linearly-dependent packets still end in `HC2` or the exact `JC2`
-cotangent packet.
+The negative maximal-motion sign is still open after the transport
+correction. The already closed fixed and linearly-dependent packets retain
+their reductions to `HC2` or the exact `JC2` cotangent packet.
 
 It remains to close projective source-kernel motion of rank at most one.  The
 exact projective derivative of the line `[e1]`, with columns indexed by
@@ -432,7 +432,10 @@ Run
 
 The first checker proves `HC4RSD77--78`.  The second constructs all curvature
 equations, performs both derivative eliminations, verifies the residual frame
-gauge, checks the saturated unit ideal proving `HC4RSD79`, and certifies the
+gauge, checks the saturated unit ideal under the extra `d(pq)=0` assumption,
+and certifies the
 complete local flag tensors and the split `pr=0` used in `HC4RSD80`.  The
 degree-one incidence argument in Section 5.2 is the global proof step and is
-not replaced by a bounded computation.
+not replaced by a bounded computation. The corrected transport, valid
+positive-sign closure, and surviving negative-sign jet are replayed by
+`scripts/verify_hc4_motion_frame_transport.py`.

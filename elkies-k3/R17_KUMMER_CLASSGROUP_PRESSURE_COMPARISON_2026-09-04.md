@@ -155,6 +155,12 @@ A Selmer class lies in this subspace exactly when its associated 2-covering
 has a rational point.  The missing reverse implication is therefore to make
 `W_G` large, not merely to make the ambient residual Selmer quotient large.
 
+The continuation is now the canonical
+[rational-solubility and residual-Selmer theorem package](RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md).
+It supplies the saturation correction, the precise Cassels--Tate radical
+quotient `2 Sha[4]`, the distinction between midpoint charts and covering
+maps, and exact soluble-cover certificates on the eleven requested fibres.
+
 ## Alternate-Q80 basis audit
 
 Curve 12 requires a genuine basis change; its first seventeen published

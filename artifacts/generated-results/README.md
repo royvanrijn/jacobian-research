@@ -617,6 +617,18 @@ local cache so it cannot become a competing mathematical-status authority.
   `p=137` for each survivor, proving arithmetic product rank at most one.
 <!-- status-consumer: EC-K3-R17-PRODUCT-SURVIVOR-GALOIS-HEIGHT-GATE 32b87c35a2573768 -->
 
+- `elkies-k3-r17-product-19bad-083ad-rank-zero-v1.json` closes this one product
+  twist over `QQ(u)`: the existing 131 and 137 L-polynomials give regulator
+  squareclasses 282 and 154, whose ratio is nonsquare. Its point-Kummer and
+  Tate quotients are zero, and both requested height boxes and all higher
+  rational heights are empty. The certificate also retains the exact
+  17-dimensional branch-local Kummer separation and verifies the independent
+  jobs and raw XML in `r17-product-19bad-083ad-controls/`.
+  Replay with
+  `sage -python elkies-k3/scripts/certify_r17_product_19bad_083ad_rank_zero.sage --check`.
+  The full Selmer group and the other four arithmetic targets are uncomputed.
+  See the [canonical proof](../../elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md).
+
 - `elkies-k3-r17-norm12-icarm-database-sweep-v1.json` records all 2,844 exact
   projective preimage decisions for the 474 equations in the pinned ICARM
   snapshot against the six norm-twelve rational-`PGL2` `j`-classes.  It finds
@@ -3162,7 +3174,16 @@ artifact.
   visible seed subspaces.  It is a good-prime filtered computation, not an
   optimal two-sided or characteristic-zero contact theorem.  Generate it with
   `scripts/research_filtered_source_tangent_profile.py`.
-The binary-GVC artifacts below are retained as bounded regressions and route
+- `binary-gvc-finite-certificate-v1.json` records the exact rational binary
+  support-certificate procedure: 12 input fixtures, 2025 small support
+  pairs, six sharp-cutoff instances, and rejected certificate mutations.
+  Replay with `scripts/verify_binary_gvc_finite_certificate.py`; the default
+  requires byte-identical output. The universal classification and the
+  degree-only cutoff are written proofs in
+  [`BINARY_GVC_FINITE_CERTIFICATE.md`](../../extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md),
+  not conclusions inferred from this finite artifact.
+
+The older binary-GVC artifacts below are retained as bounded regressions and route
 history.  Some embedded artifact metadata describes the Hall/carry frontier
 as it stood when the artifact was generated.  The current theorem is the
 noncomputational Hall-envelope closure in
@@ -3885,3 +3906,14 @@ Run `make verify-normal-forms` for the original normal-form artifacts and
   multiplicity budget, the complete generic-corank-one sextuple endpoint, the
   sole lower-rank order-one resonance, and the written-proof boundary without
   symbolic replay or artifact rewriting.
+
+<!-- status-consumer: EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO fe572bd5979b5d2c -->
+
+## HC4 motion-frame correction
+
+- [hc4-motion-frame-transport-v1.json](hc4-motion-frame-transport-v1.json)
+  records the determinant-one normalization, the exact positive-sign
+  left-kernel certificate, and a compatible negative-sign finite jet.
+  Replay with `scripts/verify_hc4_motion_frame_transport.py`. The
+  [canonical audit](../../HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) explains why
+  the earlier augmented-system certificate does not close the full branch.

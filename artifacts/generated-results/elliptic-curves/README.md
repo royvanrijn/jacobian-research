@@ -22,6 +22,13 @@ strict:
 
 Important distinctions made explicit by the catalogue:
 
+- `exceptional_soluble_selmer_panel_v1.json` certifies 110 independent
+  residual point classes across eleven fixed exceptional fibres, with
+  exact cubic square characters, explicit quadrics, and rational witnesses.
+  Their Cassels--Tate rows vanish against every Selmer class. No complete
+  Selmer complement or insoluble Selmer control is certified; see the
+  [canonical theory](../../../elkies-k3/RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md).
+
 - `fixed_cubic_field_fermigier_rank20_local_kummer_u2_v1.json` fixes the
   Fermigier rank-20 cubic field and certified 20-dimensional global Kummer
   span, then computes the complete local intersection on the whole span for
@@ -30,6 +37,21 @@ Important distinctions made explicit by the catalogue:
   The artifact uses no class group and records explicit cover inputs, but
   certifies no rational point, new rank lower bound, or full Selmer group.
 <!-- status-consumer: EC-FIXED-CUBIC-VARYING-CURVE-LOCAL-KUMMER 46ca45db3e702eb6 -->
+
+- `fixed_field_u_minus1_*v1.json` retain bounded point searches and exact
+  conic/quartic model maps. The point `(A+1,A-B+1)` certifies rank at least
+  one, with a valuation-parity witness separating its Kummer class from
+  the entire inherited space. These search artifacts alone do not classify
+  the inherited directions. `fixed_field_point_realization_positive_controls_v1.json`
+  replays ten mapped points at `u=0`, including parameter-infinity cases.
+<!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-RANK1 7e488a894d136732 -->
+
+- `fixed_cubic_u_minus1_cassels_tate_v1.json` and its compressed arithmetic
+  evidence certify pairing rank 16 on the eighteen inherited classes.
+  Exactly three nonzero radical combinations remain point-solving
+  candidates; all other classes have a proved Sha obstruction. The summary
+  includes the full matrix, symplectic pairs, radical masks and quartics.
+<!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE df45391a84f0e3c9 -->
 
 - `quotient_geometry_table_v1.json` is the complete 30-presentation join of
   five usable R17 controls, sixteen refreshed R17 ladder fibres, and nine
@@ -42,6 +64,14 @@ Important distinctions made explicit by the catalogue:
   three containment comparisons remain null.  This is an exact
   rational-subspace comparison built on numerical height data, not a rank upper
   bound or an interval height certificate.
+
+- `icarm_mw16_pointed_sieve_h10000_summary_v1.json` pins the full compressed
+  856-chart specialized-sieve replay and the separate initial control ledger.
+  Every prospective height-10,000 box completes; 28,134 exact square tests
+  yield no finite point. The new coordinates recover twenty initial control
+  directions, without a claim to reproduce the historical adaptive 54/55.
+  `verify_icarm_mw16_pointed_sieve.py --check --replay-charts` checks source
+  hashes, every exact chart map, and the control-group certificates.
 
 - `icarm_mw16_parent_presentation_audit_v1.json` proves that the nine
   complete-A1 hit labels are exactly five fibration classes; repeated labels
@@ -63,7 +93,13 @@ Important distinctions made explicit by the catalogue:
   all 856 maximum-depth charts through height 100,000 with zero affine points,
   timeouts, failures, or quotient gains.  This is a completed bounded null
   experiment, not a rank upper bound.
-<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER c5b0b57ee01c5c23 -->
+  `mw16_short_models_h300_v1.json.gz` stores all global minimal models,
+  explicit section transports, renewed independence certificates and 856
+  quartic maps; `mw16_short_models_h300_summary_v1.json` summarizes sizes.
+  `mw16_short_models_chart_benchmark_v1.json` records the tiny fixed-budget
+  benchmark. The canonical note explains why the intrinsic `j` sizes rule
+  out an orders-of-magnitude bit-length reduction on these same fibres.
+<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER acfa3bdcebb18137 -->
 
 - `r17_refresh_jump_ladder_protocol_v1.json` and
   `r17_refresh_jump_ladder_blind_v1.json` preserve the stopped cross-class
@@ -399,3 +435,7 @@ python3 elliptic-curves/scripts/audit_artifact_catalog.py
 
 The pre-cleanup bytes and every provenance-only refresh are recorded under
 [`archive/elliptic-curves/`](../../../archive/elliptic-curves/README.md).
+
+<!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
+
+<!-- status-consumer: EC-K3-ICARM-MW16-POINTED-SIEVE cb83c1afae1d0141 -->

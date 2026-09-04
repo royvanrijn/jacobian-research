@@ -6,17 +6,12 @@ This is a search protocol, not a theorem about `HC4` or `DC2`. It makes the
 canonical-word layer common to both programmes while keeping their admission
 gates logically separate.
 
-The exact fixed-dimensional Hessian result is `HC4MR2`:
-
-\[
-JC2\quad\Longleftrightarrow\quad PHC4,
-\]
-
-where `PHC4` is `HC4` restricted to potentials lying on a nontrivial
-constant-Hessian pencil. See the
-[relative-nilpotent master reduction](HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md#exact-restricted-equivalence-with-jc2).
-The missing unrestricted step is pencil recognition, not another reduction
-inside the pencil class.
+The proved fixed-dimensional implication is `PHC4 => JC2`, where `PHC4`
+is HC4 restricted to potentials on a nontrivial constant-Hessian pencil.
+The reverse implication in `HC4MR2` is partial after the
+[motion-frame correction](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md). A route
+from JC2 to unrestricted HC4 requires both the remaining negative
+maximal-motion closure and a suitable pencil-recognition argument.
 
 At the software level,
 [`scripts/canonical_transform_search.py`](scripts/canonical_transform_search.py)

@@ -1373,8 +1373,9 @@ face, `HC4MR4` shows that every nonaligned diagonal Schur prolongation has
 empty projective constant-null-covector scheme, including the one-channel
 and two-channel boundaries.  This does not exclude a direct quintic
 candidate; it shows that the diagonal packet can enter the restricted
-`JC2 <=> PHC4` theorem only through a higher-rank or nonlinear pencil
-direction, or after a collision-preserving rechart.
+pencil-admissible class only through a higher-rank or nonlinear direction,
+or after a collision-preserving rechart. The proposed `JC2 <=> PHC4`
+equivalence is partial after [HC4MRA1](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md).
 
 For a marked collision, `HC4RSD7` makes the affine coverage intersection
 empty before lower faces: every affine pivot fiber has a ternary

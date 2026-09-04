@@ -691,3 +691,17 @@ alternate-Q80 product quotient classes, and the unresolved rational visibility
 directions.  Smooth and singular-genus-one character collisions are closed on
 the two direct norm-twelve charts; genus two remains open beyond the recorded
 bounded screen.
+
+## 2026-09-05: GVC finite certificates and the HC4 transport correction
+
+- [GVC2SC](extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md) extracts a
+  unique Hall direction over the original field, a finite rational-input
+  decision procedure, and the mixed cutoff `m > (deg P + deg Lambda) deg Q`.
+  The active GVC manuscript includes the written theorem and exact replay.
+- [HC4MRA1](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) corrects the earlier claim
+  that the adapted motion determinant is constant: the frozen normalization
+  controls `pq/a^2`. The full HC4MR1 reduction and HC4MR2 equivalence are
+  partial. A new prolongation excludes the positive sign, while a compatible
+  negative-sign finite jet keeps the remaining branch open. The earlier
+  closure descriptions in this chronology are superseded by this audit;
+  the original proof notes and conditional certificate are preserved.

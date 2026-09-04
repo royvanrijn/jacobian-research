@@ -516,23 +516,23 @@ python3 elliptic-curves/cas/sieve_icarm_mw16_parent_presentations_nagao.py --che
 sage -python elliptic-curves/cas/specialize_icarm_mw16_nagao_finalists.sage --check
 ```
 
-The raw half-lattice campaign is resumable in contiguous candidate shards.  A
-single eight-shard replay is:
+The first wholly censored attempt is retained in its original shard ledger.
+The current runner defaults to the specialized pointed-quartic sieve and
+checkpoints both charts and candidates:
 
 ```sh
-for shard in $(seq 0 7); do
-  sage -python elliptic-curves/cas/run_icarm_mw16_nagao_finalist_half_lattice.sage \
-    --candidate-start $((13 * shard)) --maximum-candidates 13 \
-    --height-bound 10000 --timeout-seconds 2 \
-    --output "artifacts/local/elliptic-curves/mw16-finalist-half-lattice/shard-${shard}.json"
-done
-
-python3 elliptic-curves/cas/merge_icarm_mw16_nagao_finalist_half_lattice_shards.py --check
+sage -python elliptic-curves/cas/run_icarm_mw16_nagao_finalist_half_lattice.sage \
+  --backend pointed-sieve --height-bound 10000 --timeout-seconds 2 \
+  --output artifacts/local/elliptic-curves/mw16-pointed-sieve-h10000-all.json
+sage -python elliptic-curves/cas/calibrate_icarm_mw16_pointed_sieve.sage
+python3 elliptic-curves/cas/verify_icarm_mw16_pointed_sieve.py --check --replay-charts
 ```
 
-The first prospective wave reaches all 104 fibres but all 856 quartic charts
-time out.  It is wholly censored and proves no negative rank statement.  No
-candidate advances to Selmer or unrestricted point search.  See
+The historical first wave reaches all 104 fibres but all 856 quartic charts
+time out; its zero remains wholly censored. The new slope coordinates define
+different finite boxes. Algorithm, budgets, certificate packaging, and initial
+control limitations are in [POINTED_QUARTIC_SIEVE.md](notes/POINTED_QUARTIC_SIEVE.md).
+For current results and promotion boundaries see
 [`ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md`](notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md).
 
 The separate target-free experiment consumes the anonymous family template,
@@ -556,7 +556,20 @@ python3 elliptic-curves/cas/merge_a1_mw16_target_free_parameter_search_shards.py
 All 856 charts finish, with zero affine points, zero recovered quotient
 directions beyond MW16, and zero failed-closed rows.  The result is a bounded
 null search and supplies no rank upper bound.
-<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER c5b0b57ee01c5c23 -->
+
+Compute global minimal models, transport all sixteen sections on every
+finalist, select quartic coordinates by arithmetic size, and run the tiny
+nine-chart benchmark without increasing the two-second timeout:
+
+```sh
+sage -python elliptic-curves/cas/prepare_mw16_short_models.sage
+sage -python elliptic-curves/cas/verify_mw16_short_models.sage
+```
+
+The compressed certificate retains all 104 models and 856 exact quartic maps;
+the [canonical note](notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md#exact-arithmetic-model-audit)
+explains the invariant lower bound on coefficient size.
+<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER acfa3bdcebb18137 -->
 
 ### Fixed cubic field, varying curve
 
@@ -576,6 +589,37 @@ It does not compute a class group, full Selmer group, rational point on a new
 curve, or new rank bound.  See
 [`FIXED_CUBIC_FIELD_VARYING_CURVE_EXPERIMENT_2026-09-04.md`](notes/FIXED_CUBIC_FIELD_VARYING_CURVE_EXPERIMENT_2026-09-04.md).
 <!-- status-consumer: EC-FIXED-CUBIC-VARYING-CURVE-LOCAL-KUMMER 46ca45db3e702eb6 -->
+
+The subsequent `u=-1` experiment certifies the infinite-order point
+`(A+1,A-B+1)` outside the entire inherited Kummer span. Replay its separating
+valuation, stored cover transformations, and point certificates cheaply:
+
+```sh
+sage -python elliptic-curves/cas/run_fixed_field_point_realization.py --check
+sage -python elliptic-curves/cas/run_fixed_field_point_realization.py --check --output artifacts/generated-results/elliptic-curves/fixed_field_u_minus1_translated_point_realization_v1.json
+sage -python elliptic-curves/cas/run_fixed_field_point_realization.py --check --output artifacts/generated-results/elliptic-curves/fixed_field_u_minus1_basis_h1000000_v1.json
+sage -python elliptic-curves/cas/run_fixed_field_point_realization.py --check --output artifacts/generated-results/elliptic-curves/fixed_field_u_minus1_translated_basis_h1000000_v1.json
+sage -python -m unittest elliptic-curves/tests/test_fixed_field_point_realization.py
+```
+
+These commands verify the exact evidence without repeating the searches.
+The canonical note gives the bounded search commands and their limits.
+No inherited direction or nontrivial Sha class is inferred from a miss.
+<!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-RANK1 7e488a894d136732 -->
+
+The Cassels--Tate experiment now excludes every inherited class outside a
+two-dimensional radical. Replay its exact pairing witnesses and three
+bounded radical searches with:
+
+```sh
+sage -python elliptic-curves/cas/verify_fixed_cubic_cassels_tate.sage --check
+sage -python -m unittest elliptic-curves/tests/test_fixed_cubic_cassels_tate.py
+```
+
+The [pairing note](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md)
+gives the restricted matrix, preferred generators, and bounded regeneration
+command. Rank 16 of this pairing does not bound the full curve rank.
+<!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE df45391a84f0e3c9 -->
 
 ### Comparative height lattices: ranks 28--31
 
@@ -1800,3 +1844,5 @@ The archived command snapshot and manifest are:
 The manifest maps every old path to its archive path and records its SHA-256.
 Use the historical Git revision named in the archive README when an old script
 must be run exactly in its former directory layout.
+
+<!-- status-consumer: EC-K3-ICARM-MW16-POINTED-SIEVE cb83c1afae1d0141 -->

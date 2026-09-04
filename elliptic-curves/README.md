@@ -9,6 +9,11 @@ The [2026-09-04 external audit](notes/EXTERNAL_AUDIT_2026-09-04.md) records
 mathematical corrections, bounded certificate replays, and remaining proof
 and reproduction gaps.
 
+The [rational-solubility theorem package](../elkies-k3/RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md)
+connects residual Selmer classes to the point-search charts. An exact
+eleven-fibre replay supplies 110 independent soluble 2-cover classes and
+their forced-zero Cassels--Tate rows; unknown complements remain unclassified.
+
 ## Current milestone
 
 The target-free A1/MW16 parameter experiment has completed alongside the other
@@ -44,6 +49,16 @@ targets, parameters, public points, ranks, or target `j`-invariants.
   affine point and no quotient direction beyond MW16.  This is a bounded null
   result, not a rank upper bound; zero candidates advance to Selmer or
   unrestricted point search.
+- The [specialized pointed-quartic sieve](notes/POINTED_QUARTIC_SIEVE.md)
+  completes all 856 frozen prospective charts at height 10,000 without generic
+  minimization or reduction. Its exact denominator/lattice transforms yield
+  1,537--1,789-bit quartics; all modular searches together take 53.1 seconds.
+  It finds no prospective point. Separate initial controls recover twenty
+  directions; the historical adaptive 54/55 sensitivity is not yet replayed
+  with these coordinates.
+  The [model-size audit](notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md#exact-arithmetic-model-audit)
+  now supplies global minimal models, all sixteen transported sections and
+  arithmetic-selected quartic coordinates for every finalist.
 - ICARM curve 356: certified `rank E(Q) >= 29` with exact conductor/local data.
 - ICARM curves 285/286 and curve 394: certified rank-at-least-21 results; curve 394 is the compact Elkies `t=3/8` specialization with exact conductor replay.
 - The complementary fixed-cubic-field experiment is now live on the pinned
@@ -51,8 +66,14 @@ targets, parameters, public points, ranks, or target `j`-invariants.
   `u=-2,-1,0,1,2`, exact class-group-free local intersections on the whole
   20-dimensional known Kummer span have dimensions `13,18,20,13,13`.
   Every newly bad prime is included and the `u=0` control recovers all twenty
-  classes.  These are local-admissibility dimensions, not point or rank
-  claims; the explicit surviving covers are the next gate.
+  classes. At `u=-1`, the explicit point `(A+1,A-B+1)` now certifies rank
+  at least one. Its Kummer class is independent of the whole inherited
+  span, as certified by valuation parity above 19. The inherited space now
+  has a [certified Cassels--Tate matrix of rank 16](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md),
+  leaving a two-dimensional radical and just three nonzero point-solving
+  candidates. Their point-or-Sha status remains unknown.
+<!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE df45391a84f0e3c9 -->
+<!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-RANK1 7e488a894d136732 -->
 - The pinned K3 now has two explicit rootless arithmetic MW17 charts over `QQ`: published R17 and the direct degree-two alternate-Q80 chart from `norm12-orbit-11952`.
 - The refreshed complete 43-chart norm-twelve atlas decides every equation in
   the hash-pinned 573-curve ICARM response: 86 hits and 3,352 class misses,
@@ -133,7 +154,7 @@ Existing scripts, tests, local checkpoints, and generated certificates are retai
   Nagao-to-half-lattice attempt.  All 856 prospective quartic charts time out,
   so exact model/section size reduction is the next engineering gate and no
   Selmer or expensive-search promotion occurs.
-<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER c5b0b57ee01c5c23 -->
+<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER acfa3bdcebb18137 -->
 - [`notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md`](notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md) — rank-at-least-29 record/fingerprint.
 - [`notes/ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md`](notes/ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md)
   — exact 573-curve atlas refresh, complete appended-row intake, sixteen new
@@ -238,9 +259,10 @@ The useful gates are now:
    complete unconditional descent for every Selmer or exact-rank claim;
 4. continue curve-302 parent reconstruction independently of the parameter
    experiments;
-5. run the fixed-cubic-field point-realization gate first on the eighteen
-   surviving basis classes at `u=-1`, keeping local survival separate from
-   Mordell--Weil realization and certifying any recovered point independently;
+5. restrict inherited fixed-field point solving at `u=-1` to the three
+   Cassels--Tate radical classes, using anchor masks `1047173` and `596921`
+   as generators and `450876` as their sum; certify any recovered point
+   independently;
 6. pursue an unconditional upper bound for curve 302 and low-conductor
    survivors only after exact quotient/descent gates justify them.
 
@@ -256,3 +278,7 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
 <!-- status-consumer: OP-EC-NEXT dfbe946c1dd0030b -->
+
+<!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
+
+<!-- status-consumer: EC-K3-ICARM-MW16-POINTED-SIEVE cb83c1afae1d0141 -->

@@ -35,6 +35,11 @@ as diagnostics, but they are not needed for Theorem 1.1.
 
 The proof is internal and has not been externally reviewed.
 
+The [finite-certificate corollary](BINARY_GVC_FINITE_CERTIFICATE.md) extracts
+a strict separator over the original field, an exact rational decision
+procedure, and the degree-only cutoff
+\(m>(\deg P+\deg\lambda)\deg Q\) from this proof.
+
 ## 2. The three inputs
 
 If \(\lambda=0\), the conclusion is immediate.  If the constant term of

@@ -22,7 +22,7 @@
 \title{The Generalized Vanishing Conjecture:\\
 The Two-Variable Theorem and the First Failing Dimension}
 \author{Roy van Rijn\\{\small Independent researcher}}
-\date{4 August 2026}
+\date{4 August 2026\\Revised 5 September 2026}
 \hypersetup{
   pdftitle={The Generalized Vanishing Conjecture: The Two-Variable Theorem and the First Failing Dimension},
   pdfauthor={Roy van Rijn},
@@ -119,6 +119,12 @@ Let $k$ be a field of characteristic zero.  Every constant-coefficient
 differential operator $\Lambda$ on $k[x,y]$ satisfies
 \eqref{eq:gvc}.
 \end{theorem}
+
+In fact, the binary premise is equivalent to strict support separation
+after a linear change over the original field.  Section 6.1 extracts this
+certificate and the uniform cutoff
+$m>(\deg P+\deg\lambda)\deg Q$, together with a finite decision procedure
+for rational inputs.
 
 The global proof is organized as follows.  Give both
 the operator variables and the polynomial variables weight $(s,1)$.  Let
@@ -718,6 +724,116 @@ weight.  With $W=L(s_*)=U(s_*)$, the definitions give
 Proposition~\ref{prop:threshold} proves eventual mixed vanishing.  Together
 with Proposition~\ref{prop:cutoff} and the trivial constant-term cases,
 this completes the proof of Theorem~\ref{thm:main}.  \qed
+
+\subsection{Finite support certificates and a degree-only cutoff}
+
+The same argument characterizes the pure-vanishing premise and makes the
+mixed cutoff effective.  In the following statement the coordinate change
+acts contragrediently on the differential symbol.
+
+\begin{theorem}[Binary support certificate]\label{thm:support-certificate}
+Let $0\ne\lambda\in k[X,Y]$ have zero constant term, let $0\ne P\in k[x,y]$,
+and put $R=\deg\lambda$ and $d=\deg P$.  Then
+$\Lambda^m(P^m)=0$ for every $m\geq1$ if and only if there are a linear
+coordinate change over $k$ and positive integers $u,v\leq d+R$ such that
+\begin{equation}\label{eq:strict-certificate}
+ g:=\min_{\alpha\in\Supp\lambda}(u\alpha_x+v\alpha_y)
+       -\max_{\beta\in\Supp P}(u\beta_x+v\beta_y)>0.
+\end{equation}
+If $d\geq r$, the Hall direction is unique and defined over $k$; any
+coordinate frame over $k$ whose first vector has that direction admits
+such a certificate with $u>v$.
+\end{theorem}
+
+\begin{proof}
+If $d<r$, use the ordinary weight $(1,1)$.  Suppose $d\geq r$.
+Lemma~\ref{lem:hall} also applies when $d=r$: a deficient subset with two
+nonparallel directions would see all $d\geq r\geq |I|$ polynomial factors,
+which is still impossible.
+
+There cannot be two Hall directions.  If their full multiplicities in
+$\lambda_r$ are $e_1,e_2$, the distinct annihilating factors in $P_d$
+would have multiplicities $h_i\geq d-e_i+1$.  But
+\[
+ e_1+e_2\leq r,\qquad h_1+h_2\leq d,\qquad
+ h_1+h_2\geq2d-r+2\geq d+2,
+\]
+a contradiction.  The unique direction is invariant under all
+automorphisms of $\overline k/k$.  Its projective coordinate is algebraic
+and separable over $k$, so it belongs to $k$.  Choose it as the first
+coordinate direction, with any complement over $k$.  The initial Hall
+gap $e>t$ holds in this frame.
+
+For $d=r$, $\Delta(1)=0$ and its right derivative is $t-e<0$, so
+$\Delta(s)<0$ for some rational $s>1$.  For $d>r$, the envelope argument
+above gives a first rational $s_*>1$ with $\Delta(s_*)=0$.
+The zero-output case of Proposition~\ref{prop:shifted} separates the
+complete equality faces at $s_*$.  They contain the limiting active
+exponents from the left, where the operator lies to the right of the
+polynomial.  Hence the complete equality faces have that same order.
+The right derivative of $\Delta$ at $s_*$ is therefore negative, and
+again $\Delta(s)<0$ for some rational $s>1$.
+
+We bound an integral weight directly from the support inequalities.
+Every pair $\alpha\in\Supp\lambda$, $\beta\in\Supp P$ imposes
+\[
+ (\alpha_x-\beta_x)s+(\alpha_y-\beta_y)>0.
+\]
+Together with $s>1$ these define a nonempty open interval $(\ell,h)$.
+Write $\ell=p/q$ in lowest terms.  Either $\ell=1$, or it is a lower
+endpoint $(\beta_y-\alpha_y)/(\alpha_x-\beta_x)$ with positive denominator.
+In both cases $1\leq p\leq d$ and $1\leq q\leq R$.
+If $h$ is finite, write $h=p'/q'$ in lowest terms.  It comes from an
+upper endpoint $(\alpha_y-\beta_y)/(\beta_x-\alpha_x)$, so
+$1\leq p'\leq R$ and $1\leq q'\leq d$.
+The mediant weight $(u,v)=(p+p',q+q')$ lies strictly inside the interval
+and has both entries at most $d+R$.  If $h=+\infty$, use
+$(u,v)=(p+q,q)$ instead.  In either case $u>v>0$ and the integral gap
+in \eqref{eq:strict-certificate} is at least one.
+
+Conversely, a strict support gap makes the differential weight in every
+monomial selection of $\Lambda^m(P^m)$ exceed the input weight by at
+least $mg>0$.  Each selection therefore vanishes.
+\end{proof}
+
+\begin{corollary}[Effective mixed cutoff]\label{cor:effective-cutoff}
+Under the pure-vanishing premise, every nonzero $Q\in k[x,y]$ satisfies
+\[
+ \Lambda^m(QP^m)=0\qquad\bigl(m>(d+R)\deg Q\bigr).
+\]
+More precisely, a certificate \eqref{eq:strict-certificate} gives vanishing
+for $m\geq\lfloor K_Q/g\rfloor+1$, where
+$K_Q=\max_{\gamma\in\Supp Q}(u\gamma_x+v\gamma_y)$ in the chosen frame.
+\end{corollary}
+
+\begin{proof}
+A mixed monomial selection vanishes once $mg>K_Q$.
+Linear changes preserve total degree, and
+$K_Q\leq\max(u,v)\deg Q\leq(d+R)\deg Q$, while $g\geq1$.
+\end{proof}
+
+For rational inputs, Theorem~\ref{thm:support-certificate} gives a finite
+decision procedure for the pure premise: factor $\lambda_r(T,1)$ over
+$\Q$, include the possible direction at infinity, test the rational
+linear factors for the Hall multiplicity condition, and solve the support
+inequalities in the unique surviving frame.  A nonrational Hall direction
+would have two distinct conjugates and is ruled out by uniqueness.
+An empty feasible interval means the pure premise fails.  The procedure
+uses no finite prefix of moments to infer all-power vanishing.
+
+The sharper certificate cutoff can be attained.  For $d,q\geq1$, take
+\[
+ \Lambda=\partial_x+\partial_y^{d+1},\qquad P=y^d,\qquad Q=x^q.
+\]
+All pure contractions vanish.  In a mixed contraction, a term with $j$
+copies of $\partial_x$ requires $j\leq q$ and $m\leq(d+1)j$.
+Thus the last nonzero mixed power is $m_0=(d+1)q$, with
+\[
+ \Lambda^{m_0}(QP^{m_0})=\binom{m_0}{q}\,q!\,(dm_0)!.
+\]
+The separator $(d+1,1)$ has gap one and gives precisely the cutoff $m_0+1$.
+This excludes a degree-independent constant multiplying $\deg Q$; it
+does not assert optimality of the general coefficient $d+R$.
 
 \section{From Long's Gaussian example to GVC}
 

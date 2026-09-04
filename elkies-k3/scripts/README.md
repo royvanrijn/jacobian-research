@@ -4166,6 +4166,20 @@ upper bound `rank<=2`; it is not a section certificate.  The same factor at
 therefore sharpens the arithmetic `QQ(u)` upper bound to one.  See
 [`../R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md`](../R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md).
 
+`certify_r17_product_19bad_083ad_rank_zero.sage` closes the former primary
+product target arithmetically. It computes regulator squareclasses 282 and
+154 from the existing 131 and 137 Frobenius polynomials, proves the ratio
+`141/77` nonsquare, and verifies retained independent Magma controls and the
+17-dimensional branch-local Kummer separation. Both height boxes and all
+higher rational sections are excluded. Replay is local:
+
+```bash
+sage -python certify_r17_product_19bad_083ad_rank_zero.sage --check
+```
+
+See the [canonical rank-zero proof](../R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md).
+No full Selmer group or other target is computed.
+
 ## Alternate-Q80 rootless equation handoff
 
 `build_q80_alternate_final_divisor_handoff.sage` is the fail-closed
@@ -4359,3 +4373,5 @@ supersedes/superseded-by: optional script or note
 A successful search result becomes a proof entry point only after an independent replay
 checks its exact divisor, chamber/nefness, equation identity, and claimed fibre or
 Mordell--Weil data.
+
+<!-- status-consumer: EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO fe572bd5979b5d2c -->

@@ -1,5 +1,13 @@
 # Product-survivor Galois height gate and constructor priority
 
+**Update (2026-09-05):** the former first target `19bad:083ad` has
+[arithmetic rank zero](R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md).
+The regulator squareclasses from its existing reductions at 131 and 137
+are incompatible. Its point-Kummer and Tate quotients are zero, and both
+requested height boxes, as well as all higher heights, are empty.
+The original five-target bounds and constructor metrics below are retained
+as source evidence; the active arithmetic worklist now has four targets.
+
 ## Result
 
 The complete two-prime product-twist classification leaves exactly five
@@ -81,7 +89,7 @@ are:
 | `11ae6:0f82c` | 114.531 | 792 | 2,110 |
 
 The bit counts are exact; the canonical heights are the stored Sage
-approximations.  Thus `19bad:083ad` is the primary explicit-construction
+approximations. Thus `19bad:083ad` was the primary explicit-construction
 target because its first integer parameter is dramatically smaller.
 Explicitly, the first image is
 
@@ -132,16 +140,17 @@ with SHA-256 values
 and
 `86fd05853673d2518e0c3d869e131b95ff11053e6d10ae2dc95c7deb9b9152a0`.
 
-## Next exact gate
+## Historical next gate (superseded for `19bad:083ad`)
 
-For `19bad:083ad`, compute the target-specific two-Selmer/Kummer quotient and
+The original handoff was to compute the target-specific two-Selmer/Kummer quotient for `19bad:083ad` and
 retain only the nonzero classes modulo the restricted invariant `R17` span.
 Then solve the class-sliced form of (2).  If that finite collection of
 projectively complete systems is empty, move to the height-ten linear-pole
 box; do not enlarge the exhausted integral coboundary atlas.
 
-Any nonzero rational solution closes the arithmetic product rank at exactly
-one by (3).
+The later rank-zero theorem closes this target without those solver runs.
+For any of the other four targets, a nonzero rational solution would close
+the arithmetic product rank at exactly one by (3).
 
 The multisection geometry in Garbagnati--Salgado motivates this use of
 suitably ramified covers.  Its hypotheses and Picard-rank-three theorem are
@@ -181,4 +190,7 @@ The ten residue-field factorizations, rational component conclusion, formula
 and the full `p=151` Frobenius quotient are exact.  No product-character
 section, full two-Selmer group, nonzero Kummer representative, or
 characteristic-zero Picard-rank-twenty class has been constructed.
-Higher-height sections remain `UNKNOWN`.
+Higher-height sections remain `UNKNOWN` for the other four targets;
+`19bad:083ad` is excluded at every rational height by the linked follow-up.
+
+<!-- status-consumer: EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO fe572bd5979b5d2c -->

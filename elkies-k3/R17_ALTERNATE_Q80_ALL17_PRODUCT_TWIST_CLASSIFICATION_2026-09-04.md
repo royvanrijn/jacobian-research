@@ -1,5 +1,11 @@
 # Complete two-prime cohomological triage of the seventeen product twists
 
+**Arithmetic update (2026-09-05):**
+[`19bad:083ad` has rank zero over `QQ(u)`](R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md),
+proved from incompatible regulator squareclasses in its existing two
+reductions. Four of the five Frobenius survivors remain arithmetic
+candidates. The geometric classification table below is unchanged.
+
 ## Result
 
 The full degree-28 cohomological quotient has now been computed for all
@@ -12,8 +18,9 @@ those five the unconditional conclusion is only
 0 <= rank E^(q_i*q_j)(QQbar(u)) <= 2.              (1)
 ```
 
-They are the only five cases from this set justified for full descent or
-class-sliced section construction.  A Tate factor at two primes does not prove
+They were the five cases from this cohomological gate justified for full
+descent or class-sliced section construction; the arithmetic update above
+removes `19bad:083ad`. A Tate factor at two primes does not prove
 a characteristic-zero section.
 
 The aggregate certificate is
@@ -113,3 +120,4 @@ survivors.  Shortlist rank is not a useful product-rank predictor: the
 rank-55 target is zero, while survivors and zero targets are interleaved
 throughout the stored order.
 
+<!-- status-consumer: EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO fe572bd5979b5d2c -->

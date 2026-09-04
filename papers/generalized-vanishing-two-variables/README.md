@@ -6,6 +6,14 @@ homogeneous three-variable counterexample, and the exact classification
 winding--profile--radial failure family and the specialization for every
 power `Delta^k`, `k >= 6`.
 
+<!-- status-consumer: GVC2SC f31ee48fbbecd427 -->
+
+Section 6.1 also gives the binary support-certificate equivalence over the
+original field, a finite decision procedure for rational inputs, and the
+explicit mixed cutoff `m > (deg P + deg Lambda) deg Q`. The canonical
+[proof and exact checker](../../extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md)
+record the algorithm and its assurance boundary.
+
 Build from the repository root with:
 
 ```bash
@@ -67,3 +75,5 @@ Lemma 3.1, the number-field shifted-ray
 transfer and its equal-face ordering, or the no-reversal/global-envelope
 parts of the binary theorem.  Thus it is not a complete formal verification
 of the whole manuscript.
+The Hall-direction descent and effective bound in Section 6.1 are written
+proofs and are not currently formalized.

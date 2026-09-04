@@ -2,8 +2,8 @@
 
 This is a dated assessment and preservation plan, not a second mathematical
 status ledger. `MATH_STATUS.json` and its canonical sources remain authoritative.
-Recommendations and the proposed GVC corollary below do not promote any open
-problem. The [maintenance retrospective](DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md)
+The 5 September follow-up extracted a GVC corollary and corrected the HC4
+master status; both changes are recorded in that registry. The [maintenance retrospective](DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md)
 has a separate purpose: repository integrity and computational failure modes.
 
 ## Judgment
@@ -14,9 +14,10 @@ counterexample. Both have mathematical value independent of whether HC4 or
 JC2 is ever settled. The fixed-map Hasse sequel is also a coherent result,
 with a separate analytic review requirement.
 
-HC4 contains a substantial claimed structural theorem: the equivalence of
-pencil-admissible HC4 with JC2. Its long proof chain deserves independent
-review before being presented with the assurance of the GVC counterexample.
+The follow-up audit found a concrete normalization gap in the claimed HC4
+master reduction. Its full equivalence with JC2 is now partial. A new exact
+prolongation closes one motion sign, while the other remains open; see the
+[correction and surviving branch](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md).
 The remaining full HC4 and JC2 problems are not close merely because many
 special cases have been eliminated. Their surviving global compatibility
 questions are substantive.
@@ -41,7 +42,8 @@ Snapshot identifiers:
 - Working `MATH_STATUS.json` SHA-256:
   `f4bfb93cd063a6c29acb92801ca043f2b9688f72e62fe2b6afd1307d932b9d62`.
 - The worktree already contained substantial unrelated changes. No research
-  certificate, status row, or active proof was rewritten by this review.
+  certificate, status row, or active proof was rewritten in the initial
+  review phase. The dated follow-up below makes the stated GVC and HC4 changes.
 
 The original determinant and collision were replayed independently. The
 [AFP entry](https://isa-afp.org/entries/Jacobian_Counterexample.html) also
@@ -57,7 +59,7 @@ subsequent mathematics.
 | 2 | Every characteristic-zero finite étale algebra of rank at least three is a full Keller fiber in dimension three | A universal construction, not another isolated collision; actual algebra and geometric degree are controlled | External mathematical review; preserve the small paper-facing Lean certificate |
 | 3 | SIC fails in exactly the pair dimensions at least two | A finished dimensional result with a short all-order coefficient identity | A focused two-pair manuscript or deliberately versioned sequel to the frozen three-pair paper |
 | 4 | Quantitative Hasse failures for one fixed degree-five Keller map | Changes the quantifier from a map for each algebra to many failures on one map, with optimal geometric degree | Independent review of the Euler product, asymptotic constant, and minimality inputs |
-| 5 | Pencil-admissible HC4 is equivalent to JC2 | A fixed-dimensional structural reduction surviving the failure to settle either full conjecture | End-to-end audit of the global proof, especially the last moving-frame transition |
+| 5 | HC4 reductions and the reopened negative motion sign | The audit corrects an unsupported closure and supplies a valid positive-sign obstruction | Close the remaining negative sign; the full pencil equivalence is partial |
 
 The priority order concerns preservation and review effort, not a prediction
 of journal acceptance or a claim that a literature search proves novelty.
@@ -148,103 +150,39 @@ The [holonomic probe](extended-geometry/TWO_PAIR_SIC_BIDEGREE33_RANK_TWO_HOLONOM
 explicitly warns that its generic benchmark fibers are not moment-zero
 fibers. More fitted moments there would not close the classification.
 
-## A concrete GVC consequence to extract
+## GVC consequence extracted on 5 September
 
-**Proposed corollary for review, derived from the current binary proof.**
-For nonzero binary inputs with positive lowest operator order, all pure
-powers vanish if and only if, after a linear coordinate change over a finite
-algebraic extension, their actual supports admit a strict positive weight
-separator:
+The proposed support-separation corollary has become `GVC2SC`, recorded in
+[MATH_STATUS.json](MATH_STATUS.json) and proved in the
+[finite-certificate note](extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md).
+The additional deductions give a unique Hall direction over the original
+field, a finite rational decision procedure, and the explicit uniform mixed
+cutoff `m > (deg P + deg Lambda) deg Q`. Section 6.1 of the active GVC
+manuscript now includes the result.
 
-\[
-g:=\min_{\alpha\in\operatorname{supp}\lambda} w\cdot\alpha
- -\max_{\beta\in\operatorname{supp}P}w\cdot\beta>0,
-\qquad w\in\mathbb Z_{>0}^2.
-\]
-
-This is an extraction of the claimed binary proof, not an independent
-verification of that proof or a newly promoted registry theorem.
-
-Here is the deduction, including the degree-equality case:
-
-1. If `deg P < ord_min Lambda`, ordinary degree already separates.
-2. If the degrees are equal, the proof of Hall localization still applies:
-   two independent derivative directions see all `d = r` polynomial
-   factors, so cannot form a deficient set of size at most `r`. The same
-   multiplicity gap `e > t` follows. At weight `(1+epsilon,1)` the gap is
-   immediately strict. This extension of the stated Hall lemma should be
-   written explicitly when adding the corollary.
-3. If `deg P > ord_min Lambda`, the envelope proof reaches a common
-   threshold. Shifted-ray separation with zero shift makes its two equality
-   faces disjoint. A sufficiently small rational perturbation of the
-   positive weight separates those faces strictly while preserving all
-   off-face inequalities. Clear denominators.
-4. Conversely, a strict separator kills every monomial selection in
-   `Lambda^m(P^m)` by weighted degree, without cancellation.
-
-For any fixed nonzero multiplier `Q`, put
-
-\[
-K_Q=\max_{q\in\operatorname{supp}Q}w\cdot q.
-\]
-
-The same certificate proves the explicit cutoff
-
-\[
-\Lambda^m(QP^m)=0\qquad
-\left(m\ge\left\lfloor K_Q/g\right\rfloor+1\right).
-\]
-
-Both supports and `Q` are measured in the chosen coordinates. This is not
-a coefficient-independent uniform cutoff for all inputs.
-
-For exact algebraic coefficients, the proof also suggests a terminating
-decision procedure: factor the lowest binary symbol, choose one coordinate
-frame for each distinct derivative direction, and test the finitely many
-strict linear inequalities in a rational slope `s>1`. The Hall direction
-must occur among these finitely many frames. The lower-degree and zero or
-constant-symbol cases are handled separately. This could replace unbounded
-moment testing with a finite certificate. No implementation or complexity
-claim for arbitrary characteristic-zero coefficient fields is asserted.
-
-For example,
-
-\[
-\Lambda=\partial_x^2+\partial_y^7,
-\qquad P=xy^2+y^3,
-\qquad w=(3,1)
-\]
-
-has operator minimum `6`, polynomial maximum `5`, and gap `1`. For
-`Q=y^6`, the certificate gives `m>=7`. An independent symbolic spot check
-verified pure powers through eight and the predicted mixed vanishing at
-seven and eight. The support argument, not that spot check, supplies the
-all-order implication.
+The universal proof depends on the existing Hall/shifted-ray/envelope
+argument; the exact checker verifies positive certificates and finite
+regressions. Neither the full binary proof nor this corollary has received
+external review or a complete formal verification. The
+[original proposal](archive/RESEARCH_VALUE_REVIEW_GVC_PROPOSAL_2026-09-04.md)
+is retained as history; its weaker field-extension and cutoff statements
+are superseded by the canonical note.
 
 ## HC4: preserve the reduction, attack the correct boundary
 
 The [relative-nilpotent master reduction](HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md)
-is the main HC4 result worth extracting. It claims that potentials admitting
-a **nonzero Hessian direction** `T` with
-`det(S+sT)=det S` reduce to HC2 or a plane cotangent packet, yielding
-`PHC4 <=> JC2`. It does not supply such a direction for an arbitrary
-constant-Hessian potential.
+is now partial. The [5 September audit](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md)
+computes the frozen-to-adapted transition explicitly: its normalized motion
+determinant is `pq/a^2`, so `d(pq)=0` does not follow. The old unit ideal
+remains correct for the augmented system assuming that extra equation.
 
-The nonzero-direction hypothesis is explicit in the restricted equivalence
-but should also appear in the opening master statement. Taking `T=0`
-makes the pencil identity vacuous. This is a statement-hygiene issue to fix
-when extracting the theorem, not a resolution of the unrestricted problem.
-
-The highest-priority proof audit is the passage from
-[RSD72's frozen-coordinate motion determinant](HC4_FINAL_RANK_THREE_SMOOTH_CHART_OBSTRUCTION.md)
-to `d(pq)=0` in the
-[adapted-frame prolongation](HC4_AFFINE_PLANE_SCHUBERT_BRIDGE.md).
-The latter note supplies a residual-gauge argument. An independent reviewer
-should verify the actual normalization transport and its constant factor,
-since the added derivative equations are essential to the final unit ideal.
-The checker verifies consequences of that system; it is not an independent
-proof that every geometric input supplies the system. The global
-hyperplane-incidence step also needs review outside the local algebra.
+Differentiating the actual branch relations closes `p=q=a` independently.
+The sign `p=q=-a` has a compatible exact finite jet with nonzero `d(pq)`;
+its all-order integrability and polynomial realization remain unknown.
+This is a concrete reopened opportunity, not a counterexample. The
+nonzero-Hessian-direction hypothesis has also been added explicitly to
+the master statement. The lower-rank reductions and `PHC4 => JC2` survive;
+`JC2 => PHC4` is not currently proved by this route.
 
 For full HC4 the two useful continuations remain distinct:
 
@@ -267,7 +205,7 @@ overlapping `HC4CQ1`. The oldest local commit touching that proof note is
 `6de7fd1`, dated 28 July; a local commit date alone does not establish public
 priority. The checked HC4 notes do not cite Ni. Compare the proofs and
 document their relationship before presenting the quartic theorem as a new
-standalone contribution. The all-degree pencil theorem and direct quintic
+standalone contribution. The partial pencil reduction and direct quintic
 work have different scopes.
 
 ## JC2: two degree notions and a real global obstruction

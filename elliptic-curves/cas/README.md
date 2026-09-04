@@ -8,6 +8,9 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
 
 ## Start here
 
+- `certify_exceptional_soluble_selmer_panel.sage`: exact known soluble
+  residual subspaces and 110 witnessed 2-covers on eleven exceptional
+  fibres, without a point search or full descent. Use `--check` to replay.
 - `check_icarm_curve302_rank31_pinned.py`: deterministic rank-at-least-31
   replay and compressed-artifact hash check.
 - `verify_icarm_curve356_rank29.py`: independent rank-at-least-29, minimal
@@ -44,6 +47,12 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   prospective local-ordering to exact-half-lattice gate on 104 fibres.  The
   first 856 chart attempts are wholly timeout-censored on very large
   coefficients, so none advances to Selmer or unrestricted point search.
+- The finalist runner now defaults to `half_lattice_pointed_sieve.py` and
+  `pointed_quartic_sieve.cpp`: exact denominator and slope-lattice transforms,
+  GMP group arithmetic, modular filtering, and exact square tests, with no
+  generic quartic minimization or reduction. See the
+  [algorithm and replay](../notes/POINTED_QUARTIC_SIEVE.md), including the
+  separate initial controls and retained full-box certificate.
 - `extract_a1_mw16_family_template.py`,
   `build_a1_mw16_target_free_parameter_candidates.sage`,
   `run_a1_mw16_target_free_parameter_search.sage`, and
@@ -53,7 +62,13 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   complete all 856 deepest MW16 charts through height 100,000 with no affine
   point, timeout, failure, or recovered quotient direction.  This is bounded
   search evidence only.
-<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER c5b0b57ee01c5c23 -->
+- `prepare_mw16_short_models.sage`, `mw16_model_size.py`, and
+  `verify_mw16_short_models.sage`: global minimal models, all sixteen section
+  maps and fresh independence certificates for the 104 finalists; arithmetic
+  coordinate selection on all 856 quartics; a nine-chart benchmark at two
+  seconds per call. See the
+  [model-size audit](../notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md#exact-arithmetic-model-audit).
+<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER acfa3bdcebb18137 -->
 - `analyze_record_first17_subgroups.py`: exact first-seventeen coordinate,
   quotient, finite-Kummer, and bad-component comparison for curves 273 and
   302, plus a 100-digit canonical-height/theta profile.
@@ -79,6 +94,14 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   bad prime, and emits explicit covering inputs without a class-group
   computation.  It proves no point realization or rank on a new curve.
 <!-- status-consumer: EC-FIXED-CUBIC-VARYING-CURVE-LOCAL-KUMMER 46ca45db3e702eb6 -->
+- `run_fixed_field_point_realization.py`: minimizes equivalent conic/quartic
+  presentations of the surviving `u=-1` covers, searches basis combinations
+  and translations by the exact point `(A+1,A-B+1)`, and replays every map
+  and actual Kummer identity. Valuation parity above 19 proves this point
+  independent of the inherited span; bounded misses alone do not classify
+  inherited classes. The following pairing certificate now selects the
+  remaining candidates.
+<!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-RANK1 7e488a894d136732 -->
 - `build_conductor_first_s_class_envelopes.py`: exact four-target comparison
   of cubic-field discriminants and materialized Bach/ERH factor-base sizes;
   this orders the BNF-free relation collectors but is not a class-group or
@@ -412,3 +435,12 @@ tests/artifacts are indexed under
 archived bounded result back into the active tree merely because it is
 interesting; promote only a compact reproducible result with the correct
 evidence label and a canonical note.
+
+<!-- status-consumer: EC-K3-ICARM-MW16-POINTED-SIEVE cb83c1afae1d0141 -->
+
+- `run_fixed_cubic_cassels_tate.sage` computes the restricted `u=-1`
+  Cassels--Tate matrix and searches its three nonzero radical classes.
+  `verify_fixed_cubic_cassels_tate.sage` independently checks exact cover
+  maps, cubic identities, local Hilbert symbols and support: pairing rank
+  16, radical dimension 2, with point realization still unknown there.
+<!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE df45391a84f0e3c9 -->

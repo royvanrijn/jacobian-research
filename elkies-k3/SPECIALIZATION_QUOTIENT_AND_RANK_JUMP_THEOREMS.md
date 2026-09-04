@@ -293,6 +293,12 @@ rank-jump search.
 
 ## 6. Everywhere-even Kummer classes
 
+The companion
+[`RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md`](RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md)
+develops the global subspace inside the residual Selmer quotient, its
+Cassels--Tate obstruction, and the distinction between chart labels and
+cover classes. It also gives the exact eleven-fibre soluble-cover replay.
+
 ### Lemma S5: the ideal square-root map and its unit loss
 
 Let `F` be a number field and let `W` be a finite-dimensional

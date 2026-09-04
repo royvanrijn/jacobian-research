@@ -375,8 +375,9 @@ The next exact classification problems are now separated:
 - fixed kernels with three or four nonlinear components, and
   parameter-moving nonlinear kernel lines;
 - scalar pencils with \(D(s,x)\ne0\), where the two terms in (1.1) cancel
-  (the discovery-time handoff; `HC4RSD11` and `HC4MR1` later close its
-  nonzero-corner auxiliary constant-Hessian-pencil branch, while nonlinear
+  (the discovery-time handoff; `HC4RSD11` identifies the nonzero-corner
+  auxiliary constant-Hessian-pencil branch, whose full `HC4MR1` closure
+  is partial after HC4MRA1, while nonlinear
   zero-corner exact remainders remain open);
 - matrix pencils with jointly moving kernel planes; and
 - only after one of those survives, its lower compactified-gradient algebra
@@ -587,8 +588,8 @@ zero strata satisfy a global affine-transverse cylinder identity. Thus all
 eight packets close and every scalar degree-seven leading direction is
 fixed. At the endpoint `HC4RSD40`, this left the repeated-root locus in degree
 at least eight as the next degree-based scalar frontier.  The continuation
-consolidated as [HC4MR1](HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md) now closes
-that continuation through `HC4RSD80` inside the auxiliary relative-nilpotent
-constant-Hessian-pencil branch, reducing it to HC2 or the exact JC2 cotangent
-endpoint.  The unrestricted direct and mixed/coisotropic HC4 frontiers are
+consolidated as [HC4MR1](HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md) retains
+the scalar and lower-rank reductions. Its full closure is partial after
+[HC4MRA1](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md): the final regular negative
+maximal-motion sign remains open.  The unrestricted direct and mixed/coisotropic HC4 frontiers are
 separate.

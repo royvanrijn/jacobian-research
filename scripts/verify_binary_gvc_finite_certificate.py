@@ -62,6 +62,8 @@ def independently_check_positive(record):
     p = expression(record["input_polynomial"])
     if record["method"] == "zero input":
         assert a == 0 or p == 0
+        if record["input_multiplier"] is not None:
+            assert record["mixed_cutoff"] == 1
         return
     chart = record["chart"]
     if chart["kind"] == "identity":
@@ -95,6 +97,8 @@ def independently_check_positive(record):
         k = max((u*i+v*j for i, j in terms(q1)), default=0)
         assert k == record["multiplier_weight"]
         assert record["mixed_cutoff"] == k//(amin-pmax)+1
+        q_degree = int(sp.Poly(q, x, y).total_degree()) if q else 0
+        assert record["degree_only_cutoff"] == (R+d)*q_degree+1
         assert record["mixed_cutoff"] <= record["degree_only_cutoff"]
 
 

@@ -61,6 +61,11 @@ explains the full-BNF pressure; it does not explain why the rational points
 appear, or separate Mordell--Weil directions from `Sha[2]` prospectively,
 because the exceptional points are inputs.  See
 [`R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md`](R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md).
+The [soluble residual Selmer theory](RATIONAL_SOLUBILITY_AND_RESIDUAL_SELMER_THEOREMS.md)
+now separates global classes from the Cassels--Tate radical and explains why
+generic midpoint charts have residual cover class zero while discovering new
+point classes. Its eleven-fibre replay certifies 110 independent soluble
+classes with explicit covers; the full Selmer complements remain unknown.
 The follow-on prospective CRT experiment first rejects the original `p^3`
 premise, then freezes locally validated higher-power cylinders and balanced
 full/ordinary/2-only/odd-only/random cohorts.  All 2,560 uniformly searched
@@ -136,11 +141,14 @@ record-construction work.
   observations.  The blind initial/adaptive ladder recovers 54 of the 55
   demonstrated quotient directions, including a complete curve-400 `+12`.
   Its first prospective 104-fibre half-lattice attempt is wholly
-  timeout-censored on very large quartics, so exact model/section size
-  reduction precedes any new budget and no candidate reaches residual Selmer.
+  timeout-censored. A subsequent direct target-free run completes all 856
+  charts at height 100,000 with no affine point. The model-size audit now
+  records all global minimal models and section transports, with arithmetic
+  coordinate selection and a tiny two-second benchmark. No candidate reaches
+  residual Selmer.
   See
   [`../elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md`](../elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md).
-<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER c5b0b57ee01c5c23 -->
+<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER acfa3bdcebb18137 -->
 - **Curve 302 / unknown parent:** recover a family from the complete
   31-point configuration without assuming a `17+14` split, then require exact
   `j`, twist, isomorphism, generic-section transport, and saturation checks.
@@ -427,9 +435,12 @@ should not be presented or resourced as peers of the three primary lanes:
 - solve the 34 missing published-R17 rational-visibility directions by a
   target-directed inverse problem, without enumerating the ambient trisection
   or quadrisection cosets;
-- compute the nonzero 2-primary quotient classes for the five surviving
-  alternate-Q80 product twists, beginning with `19bad:083ad`, and solve only
-  their class-sliced `P.O=0` systems; the zero class is closed uniformly, and
+- compute the nonzero 2-primary quotient classes for the four remaining
+  arithmetic alternate-Q80 product candidates and solve their class-sliced
+  `P.O=0` systems.  The former first target `19bad:083ad` has
+  [arithmetic rank zero at every height](R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md)
+  by incompatible regulator squareclasses at 131 and 137;
+  the zero class is closed uniformly, and
   the unsliced eight-variable `msolve` and expanded carrier-atlas campaigns
   remain superseded;
 - study multi-prime defect reachability and possible finite-prime sufficient
@@ -476,3 +487,7 @@ twist and yields arithmetic exclusion.
 <!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 
 Use [`../REPRODUCE.md`](../REPRODUCE.md) and the exact checker paths recorded in `../MATH_STATUS.json`. `STATUS.md` is generated and is not an editing surface.
+
+<!-- status-consumer: EC-RATIONAL-SOLUBILITY-RESIDUAL-SELMER 431d915185bf3de9 -->
+
+<!-- status-consumer: EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO fe572bd5979b5d2c -->

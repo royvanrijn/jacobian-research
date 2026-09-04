@@ -63,7 +63,9 @@ which writes
 [artifacts/generated-results/hc4_quadratic_rank_one_pivots.json](artifacts/generated-results/hc4_quadratic_rank_one_pivots.json).
 Its nonsingular-quadratic and higher-degree `open_frontier` is stage-local:
 `HC4RSD11--16` settle the quadratic cancellation handoff, while `HC4MR1`
-settles the auxiliary higher-degree constant-Hessian-pencil branch.
+consolidates the auxiliary higher-degree reductions but leaves the
+negative maximal-motion sign open after
+[HC4MRA1](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md).
 
 ## 1. The passive three-by-three Hessian
 

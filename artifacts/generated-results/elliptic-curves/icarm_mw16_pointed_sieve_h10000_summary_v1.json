@@ -1,0 +1,714 @@
+{
+  "backend": "pointed_denominator_lattice_modular_sieve_v1",
+  "candidate_count": 104,
+  "chart_count": 856,
+  "chart_wall_seconds_including_group_and_transform": {
+    "maximum": 0.11027489503612742,
+    "median": 0.08451615602825768,
+    "sum": 72.83468795765657
+  },
+  "claim_boundary": [
+    "All 856 boxes complete in the recorded exact slope coordinates; these are different boxes from PARI-reduced or raw-coordinate searches.",
+    "The initial control run is not a replay of the historical adaptive 54/55 recovery.",
+    "The first prospective timeout campaign is retained as historical, wholly censored evidence.",
+    "A bounded miss gives no rank upper bound, point absence, saturation, or Selmer information.",
+    "The complete search still stops before adaptive lifts, unrestricted searches, and residual Selmer calculations."
+  ],
+  "coefficient_bits": {
+    "maximum": 1789,
+    "median": 1737.0,
+    "minimum": 1537
+  },
+  "completed_chart_count": 856,
+  "exact_square_tests": 28134,
+  "finite_curve_points_reported": 0,
+  "height_bound": 10000,
+  "initial_control_directions": 20,
+  "initial_controls": [
+    {
+      "chart_count": 12,
+      "curve_id": 398,
+      "exact_quotient_rank_recovered": 0,
+      "no_rational_two_torsion_prime": 23
+    },
+    {
+      "chart_count": 4,
+      "curve_id": 400,
+      "exact_quotient_rank_recovered": 0,
+      "no_rational_two_torsion_prime": 59
+    },
+    {
+      "chart_count": 8,
+      "curve_id": 401,
+      "exact_quotient_rank_recovered": 2,
+      "no_rational_two_torsion_prime": 19
+    },
+    {
+      "chart_count": 10,
+      "curve_id": 542,
+      "exact_quotient_rank_recovered": 10,
+      "no_rational_two_torsion_prime": 13
+    },
+    {
+      "chart_count": 8,
+      "curve_id": 548,
+      "exact_quotient_rank_recovered": 8,
+      "no_rational_two_torsion_prime": 31
+    }
+  ],
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/icarm_mw16_nagao_finalist_specializations_h300_v1.json": "c1187b3124c3d8768dbf414a4ed3b24d3e80914f2bda492df7a17510969ac499",
+    "artifacts/generated-results/elliptic-curves/icarm_mw16_pointed_sieve_controls_v1.json": "6e838137037d1ece5eff3203e35ef74250ec3c77a92a9d712c826636f95b97a9",
+    "artifacts/generated-results/elliptic-curves/icarm_mw16_pointed_sieve_h10000_v1.json.gz": "b768f28a8b6f4e1be7cafe65ef6a2de78280d0bb0d7841947eaa000c93f95c62",
+    "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+    "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+    "elliptic-curves/cas/mod2_reduction_independence.py": "085f9f0893a0c48244fd4b32203b27ea57d8f8733a6da3835ee0808748e017c8",
+    "elliptic-curves/cas/pointed_quartic_sieve.cpp": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4",
+    "elliptic-curves/cas/verify_icarm_mw16_pointed_sieve.py": "b92404486898949bb00f14bba2fe55fbbe3d8a83aa6d86da65d31e033fa843b2"
+  },
+  "integer_pairs_covered": 171208560000,
+  "positive_candidate_count": 0,
+  "prospective_candidates": [
+    {
+      "candidate_id": "curve398-p16875-p61d153",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p16875-m205d63",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p16875-m4d3",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p16875-p59d4",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p16875-p4d201",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p16875-m101d81",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p16875-m3d2",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p16875-p45d53",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p16875-p28d151",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p16875-p0d1",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p16875-m74d251",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p16875-m7d51",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p63669-m22d39",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p63669-p13d202",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p63669-p110d67",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p63669-m19d54",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p63669-p8d1",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p63669-p227d257",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p63669-m16d51",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p63669-m161d24",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p63669-m232d251",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p63669-p201d16",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p63669-m151d63",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve398-p63669-m101d89",
+      "chart_count": 12,
+      "completed_chart_count": 12,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p53042-p89d241",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p53042-m44d39",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p53042-p7d3",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p53042-m47d124",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p53042-m1d2",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p53042-p115d203",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p53042-m242d251",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p53042-p51d1",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p53042-p39d101",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p53042-p41d153",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p53042-p92d151",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p53042-p0d1",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p62992-p223d252",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p62992-p251d102",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p62992-m158d97",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p62992-p11d51",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p62992-m151d11",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p62992-m1d13",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p62992-m105d101",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p62992-p0d1",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p62992-p202d135",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p62992-m101d47",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve400-p62992-p201d32",
+      "chart_count": 4,
+      "completed_chart_count": 4,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve401-p57487-m101d254",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve401-p57487-p54d47",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve401-p57487-p83d153",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve401-p57487-m105d52",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve401-p57487-p11d2",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve401-p57487-m51d7",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve401-p57487-m249d256",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve401-p57487-m111d202",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve401-p57487-p57d151",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve401-p57487-m3d5",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve401-p57487-m77d101",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve401-p57487-m1d1",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve542-p30486-m269d187",
+      "chart_count": 10,
+      "completed_chart_count": 10,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve542-p30486-m7d8",
+      "chart_count": 10,
+      "completed_chart_count": 10,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve542-p30486-m10d251",
+      "chart_count": 10,
+      "completed_chart_count": 10,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve542-p30486-m1d1",
+      "chart_count": 10,
+      "completed_chart_count": 10,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve542-p30486-p97d202",
+      "chart_count": 10,
+      "completed_chart_count": 10,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve542-p30486-m44d63",
+      "chart_count": 10,
+      "completed_chart_count": 10,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve542-p30486-p64d151",
+      "chart_count": 10,
+      "completed_chart_count": 10,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve542-p30486-p51d20",
+      "chart_count": 10,
+      "completed_chart_count": 10,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve542-p30486-m68d101",
+      "chart_count": 10,
+      "completed_chart_count": 10,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve542-p30486-p201d127",
+      "chart_count": 10,
+      "completed_chart_count": 10,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p31627-m57d145",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p31627-p11d10",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p31627-p201d109",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p31627-p8d5",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p31627-m46d53",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p31627-p125d121",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p31627-m1d1",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p31627-p129d176",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p31627-p106d77",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p31627-p51d5",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p31627-m29d151",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p31627-m10d251",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p54835-m251d152",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p54835-p53d19",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p54835-p152d5",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p54835-p43d109",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p54835-m201d143",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p54835-m1d5",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p54835-p1d1",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p54835-p101d25",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p54835-m2d51",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p54835-m19d153",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p54835-m111d151",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p63647-m202d275",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p63647-m229d228",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p63647-m151d59",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p63647-p59d47",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p63647-m208d135",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p63647-m125d52",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p63647-m19d15",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p63647-p252d103",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p63647-p41d102",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p63647-m1d4",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p63647-p202d107",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    },
+    {
+      "candidate_id": "curve548-p63647-m49d53",
+      "chart_count": 8,
+      "completed_chart_count": 8,
+      "exact_quotient_rank_recovered": 0
+    }
+  ],
+  "reproducing_command": "python3 elliptic-curves/cas/verify_icarm_mw16_pointed_sieve.py --check --replay-charts",
+  "schema": "elliptic-curves.icarm-mw16-pointed-sieve-summary.v1",
+  "search_budget_seconds_each_chart": 2.0,
+  "software": {
+    "compile_command": "g++ -O3 -std=c++17 pointed_quartic_sieve.cpp -lgmpxx -lgmp",
+    "pari_version_at_packaging": "GP/PARI CALCULATOR Version 2.15.4 (released)\n          amd64 running linux (x86-64/GMP-6.3.0 kernel) 64-bit version\n      compiled: Apr  1 2024, gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu3)\n                           threading engine: pthread\n                (readline v8.2 disabled, extended help enabled)",
+    "python": "3.14.7",
+    "sage_version_at_packaging": "10.9",
+    "sieve": "GMP 6.3.0; compiler 13.3.0"
+  },
+  "status": "PASS_COMPLETE_BOUNDED_POINTED_SIEVE",
+  "timeout_count": 0,
+  "worker_seconds": {
+    "maximum": 0.0778044,
+    "median": 0.06188805,
+    "sum": 53.0760477
+  }
+}

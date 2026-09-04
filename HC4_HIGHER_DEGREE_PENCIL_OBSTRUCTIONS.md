@@ -10,8 +10,9 @@ develops the constant-kernel tangent-ruling analysis through the complete
 degree-six and degree-seven closures `HC4RSD32` and `HC4RSD40`.  The
 degree-at-least-six statement in `HC4RSD24` is the historical frontier at that
 stage, not the current endpoint of this note.  The later master reduction
-`HC4MR1` closes the entire auxiliary relative-nilpotent constant-Hessian-pencil
-branch in all degrees; neither result proves unrestricted `HC4` or `JC2`.
+`HC4MR1` consolidates the all-degree reductions but is partial after the
+[transport correction](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md): its final
+negative maximal-motion sign remains open.
 
 > **Theorem HC4RSD17 (nilpotent Hessian-pencil equivalence).** Let (K) have
 > characteristic zero and let
@@ -2395,10 +2396,11 @@ At the endpoint `HC4RSD40`, the next scalar targets were:
 3. higher-degree directions of generic Hessian rank two or three.
 
 The continuation consolidated as
-[HC4MR1](HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md) now discharges all three
-targets inside the auxiliary relative-nilpotent constant-Hessian-pencil
-branch, reducing that branch to HC2 or the exact JC2 cotangent endpoint.  The
-list above is therefore historical, not an active HC4 frontier.  It does not
+[HC4MR1](HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md) consolidates the scalar
+and lower-rank continuations. The final regular rank-three negative
+maximal-motion sign remains open after HC4MRA1; the complete auxiliary
+branch is not closed. The old degree-based list is superseded by that more
+precise frontier. This does not
 imply unrestricted HC4 or JC2: direct degree-five resonance and nonlinear or
 multiple repeated factors remain on the unrestricted direct route, while
 matrix pivots and mixed/coisotropic transformations remain separate routes.

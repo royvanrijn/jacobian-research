@@ -2,6 +2,12 @@
 
 ## Status
 
+**Transport correction, 5 September 2026.** The determinant formula below
+is in its specified frozen normal coordinates. The
+[moving-frame audit](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) shows that its
+adapted-frame expression is `pq/a^2`; it does not imply `d(pq)=0`.
+The rank statement is distinct from the withdrawn constancy inference.
+
 This note continues `HC4RSD71`.  It studies the smooth Gauss-rank-two locus of
 
 \[

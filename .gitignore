@@ -82,6 +82,8 @@ elkies-k3/results/**/*.sqlite
 /artifacts/generated-results
 !/artifacts/generated-results/
 /artifacts/generated-results/*
+!/artifacts/generated-results/elkies-k3-r17-product-19bad-083ad-rank-zero-v1.json
+!/artifacts/generated-results/r17-product-19bad-083ad-controls/
 !/artifacts/generated-results/elkies-k3-r17-small-field-class-quotient-cohort-v1.json
 !/artifacts/generated-results/elkies-k3-rational-surface-quadratic-rank-search-v1.json
 !/artifacts/generated-results/elkies-k3-e6a1-rho19-k3-dissection-v1.json

@@ -5,18 +5,26 @@
 
 ## Status
 
+**Target update (2026-09-05):**
+[`19bad:083ad` has arithmetic rank zero](R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md)
+by incompatible regulator squareclasses at 131 and 137. Its
+`A-=Gamma_d=H_d=0`, and every rational section box is empty. The full
+two-Selmer group was not computed. The formal reductions and original
+five-survivor input gate below remain provenance; four arithmetic targets
+remain unresolved.
+
 This note closes the formal reduction of the product-character question to
 finite integral linear algebra and a two-descent/Kummer calculation.  The
 complete two-prime Frobenius classification now closes twelve targets more
 strongly: each product twist has geometric Mordell--Weil rank zero, so
-`A-=0`, `Gamma_d=0`, and `H_d=0`.  For the five persistent Tate-factor
-survivors, the full Mordell--Weil lattice after quadratic base change, or an
+`A-=0`, `Gamma_d=0`, and `H_d=0`. For the four remaining arithmetic targets
+among the five persistent Tate-factor survivors, the full Mordell--Weil lattice after quadratic base change, or an
 equivalent complete two-Selmer calculation, is not present in the current
 certificates.  The exact 49-class norm-twelve trace-parity
 certificate and the no-hit inversion of all `49 * 17 = 833` residual cases do
 exclude the zero Tate class for a height-eight section under the stated direct
-polynomial and local-component height hypotheses.  Their five quotients
-`H_d`, the existence of any height-eight section, and all possible nonzero
+polynomial and local-component height hypotheses. The four remaining quotients
+`H_d`, the existence of their height-eight sections, and their possible nonzero
 classes remain `UNKNOWN`.
 
 The targets are exactly the seventeen rank-one rows selected by
@@ -459,7 +467,8 @@ alternate-orbit-11ee2 : alternate-orbit-0c36e
 alternate-orbit-0c10b : alternate-orbit-17a1a.
 ```
 
-These five are the complete descent/class-sliced worklist.  A Tate factor at
+These five were the complete descent/class-sliced worklist before the
+arithmetic closure of `19bad:083ad` linked above. A Tate factor at
 both primes is not a positive-rank theorem.  The full table and replay are in
 [`R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md`](R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md).
 
@@ -479,10 +488,10 @@ height(P)=8+2(P.O).
 
 Consequently every height-eight section is in the direct `P.O=0` box and,
 by the zero-class exclusion above, would represent a nonzero Tate class.  The
-constructor-aware order starts with `19bad:083ad`, whose primitive base
+original constructor-aware order started with `19bad:083ad`, whose primitive base
 generator maps to a 124-bit `u`-value.  Its complete independently audited
-`p=151` quotient again has Tate factor `(Z-1)(Z+1)`, so it persists as a
-candidate but no section is proved.  At `p=137` all five have the same
+`p=151` quotient again has Tate factor `(Z-1)(Z+1)`. The later regulator
+comparison excludes this arithmetic candidate at all heights. At `p=137` all five have the same
 normalized factor.  A rational section specializes into its unique
 Frobenius-fixed direction, proving arithmetic product rank at most one for
 each survivor.  Hence one nonzero rational section would prove that rank is
@@ -490,3 +499,5 @@ exactly one.  See
 [`R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md`](R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md).
 
 <!-- status-consumer: EC-K3-R17-PRODUCT-SURVIVOR-GALOIS-HEIGHT-GATE 32b87c35a2573768 -->
+
+<!-- status-consumer: EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO fe572bd5979b5d2c -->

@@ -1,0 +1,41 @@
+{
+  "candidate_count": 104,
+  "certificate": "artifacts/generated-results/elliptic-curves/mw16_short_models_h300_v1.json.gz",
+  "certificate_sha256": "87d90469c29541467ef807ccbca62417891caf7128b45dc372ae87f03f096661",
+  "chart_count": 856,
+  "claim_boundary": "Exact model and section transport plus rank-16 independence only. No new direction, upper rank bound, saturation or negative rank evidence.",
+  "minimal_weierstrass_bits": {
+    "maximum": 5310,
+    "median": 5193,
+    "minimum": 4586
+  },
+  "raw_quartic_bits": {
+    "maximum": 11302,
+    "median": 11005,
+    "minimum": 10140
+  },
+  "raw_weierstrass_bits": {
+    "maximum": 6302,
+    "median": 6189,
+    "minimum": 5871
+  },
+  "schema": "mw16.short-model-transport.v1",
+  "section_count": 1664,
+  "selected_quartic_bits": {
+    "maximum": 10693,
+    "median": 10287,
+    "minimum": 6262
+  },
+  "selected_transform_counts": {
+    "affine-scale0-shift0": 756,
+    "affine-scale1-shift0": 10,
+    "affine-scale2-shift0": 13,
+    "three-generic-section-slopes": 77
+  },
+  "status": "PASS_EXACT_MODEL_SIZE_AUDIT",
+  "universal_integral_quartic_lower_bound_bits": {
+    "maximum": 1768,
+    "median": 1729,
+    "minimum": 1522
+  }
+}

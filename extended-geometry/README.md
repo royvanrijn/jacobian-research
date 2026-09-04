@@ -1,3 +1,5 @@
+<!-- status-consumer: GVC2SC f31ee48fbbecd427 -->
+
 # Extended geometry
 
 These documents continue beyond the stable core. Mathematical completion,
@@ -161,6 +163,7 @@ recorded separately only in
 | Complete cubic-leading binary septic GVC | [Exact two-wing Newton scan for all six Hall charts, four squarefree monomial branch radicals, and termination of every child interval at a common threshold](BINARY_CUBIC_SEPTIC_GVC.md) |
 | Binary GVC through polynomial degree seven | [Exact closure of lowest orders four through six, the complete 46-chart and 385-face initial/child census, squarefree axis radicals, and strict marked-gap descent](BINARY_DEGREE_SEVEN_GVC.md) |
 | Unrestricted binary GVC | [Hall localization, shifted-ray horizontal separation of every unequal extremal face pair, finite Newton-envelope descent, and forced arrival at a terminal common threshold](BINARY_GVC_ENVELOPE_CLOSURE.md) |
+| Binary GVC finite certificates | [Unique Hall direction over the original field, exact rational decision procedure, and the effective cutoff \(m>(\deg P+\deg\Lambda)\deg Q\)](BINARY_GVC_FINITE_CERTIFICATE.md) |
 | Uniform binary GVC face termination | [All-degree Hall localization by one root multiplicity, the two-wing normalized-jet rule, prime-dilated unequal-weight terminal-face rigidity, homogeneous one-channel factorial support loss, the exact two-by-two Bernstein Hall circuit, the all-degree primitive cusp parallelogram and four-channel closure, the exact failure of three-moment minor inheritance, the all-even five-channel half-bridge pivot, exact scalar closure for the first four endpoint cusps, the 14-type fourth-pivot return theorem, elimination of primitive order-four returns, the uniform factorial-obstruction certificates, finite-trace separation, and the historical affine Hall/carry promotion problem later bypassed by envelope closure](BINARY_GVC_UNIFORM_FACE_TERMINATION.md) |
 | Binary first-ghost source collapse | [Counterexample to first-ghost curvature-atom exposure and all-scale rigidity of pure repeated rays](BINARY_GVC_FIRST_GHOST_SOURCE_COLLAPSE_AND_RAY_RIGIDITY.md) |
 | Factorial trace independence | [Complete characteristic-zero shift-orbit classifier for positive-integer-slope gamma-affine rays, exact integer-affine projective classifier by boundary transfers, finite-alphabet multiplier rigidity, `m`-fold extension, exact Gauss symmetries, and the Frobenius-dilation obstruction for characteristic-`p` valuations](FACTORIAL_TRACE_INDEPENDENCE.md) |

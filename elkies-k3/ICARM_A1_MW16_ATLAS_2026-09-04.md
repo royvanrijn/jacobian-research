@@ -60,7 +60,7 @@ useful for bounded parameter searches because their affine base changes do not
 preserve projective-height boxes; their search responses are nested within the
 five fibrations, not independent observations.  See
 [`../elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md`](../elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md).
-<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER c5b0b57ee01c5c23 -->
+<!-- status-consumer: EC-K3-ICARM-MW16-BLIND-LADDER acfa3bdcebb18137 -->
 
 For curve 10, one class survives the modular chain, but its exact comparison
 polynomial is irreducible of degree 24.  The other negative targets are
