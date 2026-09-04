@@ -82,14 +82,18 @@ def stream_records(path: Path):
         for line in iterator:
             if '"alternate_rank17_w": [' in line:
                 fixed_vector = tuple(map(int, parse_array(iterator)))
-            elif '"numerator_coefficients": [' in line:
+            elif (
+                '"numerator_coefficients": [' in line
+                or '"q_coefficients_low_to_high": [' in line
+            ):
                 values = parse_array(iterator)
                 if len(values) <= 3:
                     branch = tuple(map(int, values))
             elif branch is not None and '"label": ' in line:
                 label = str(json.loads(line.split(":", 1)[1].strip().rstrip(",")))
             elif label is not None and '"lattice_orbit_mask": ' in line:
-                mask = int(json.loads(line.split(":", 1)[1].strip().rstrip(",")))
+                raw_mask = json.loads(line.split(":", 1)[1].strip().rstrip(","))
+                mask = int(raw_mask, 0) if isinstance(raw_mask, str) else int(raw_mask)
                 if fixed_vector is None:
                     raise ValueError(f"{path}: {label} has no fixed-frame vector")
                 yield {
@@ -307,7 +311,7 @@ def relation_search(by_support: dict[Support, list[dict]]):
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, action="append", required=True)
-    parser.add_argument("--priority-table", type=Path, default=DEFAULT_PRIORITY)
+    parser.add_argument("--priority-table", type=Path)
     parser.add_argument("--source-label", default="norm12-orbit-08f72")
     parser.add_argument("--expected-count", type=int, default=39147)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
@@ -317,9 +321,11 @@ def main() -> None:
         parser.error("--expected-count must be positive")
 
     input_paths = [path.resolve() for path in arguments.input]
-    priority_path = arguments.priority_table.resolve()
-    expected = priority_rows(priority_path)
-    if len(expected) != arguments.expected_count:
+    priority_path = (
+        None if arguments.priority_table is None else arguments.priority_table.resolve()
+    )
+    expected = {} if priority_path is None else priority_rows(priority_path)
+    if priority_path is not None and len(expected) != arguments.expected_count:
         raise ValueError(
             f"priority table has {len(expected)} rows, expected {arguments.expected_count}"
         )
@@ -335,19 +341,30 @@ def main() -> None:
             mask = raw["orbit_mask"]
             if label in seen_labels or mask in seen_masks:
                 raise ValueError(f"duplicate label or orbit mask at {label}")
-            if mask not in expected or raw["fixed_vector"] != expected[mask]:
+            if priority_path is not None and (
+                mask not in expected or raw["fixed_vector"] != expected[mask]
+            ):
                 raise ValueError(f"{label}: priority-table orbit attachment mismatch")
             support, scalar, degree, irreducible = branch_character(raw["branch"])
             if len(support) not in (1, 2):
                 raise ArithmeticError(f"{label}: unexpected branch support size")
-            record = {"label": label, "orbit_mask": mask, "scalar": scalar}
+            record = {
+                "label": label,
+                "orbit_mask": mask,
+                "fixed_vector": raw["fixed_vector"],
+                "scalar": scalar,
+            }
             by_support[support].append(record)
             seen_labels.add(label)
             seen_masks.add(mask)
             degree_histogram[degree] += 1
             irreducible_count += int(irreducible)
 
-    if seen_masks != set(expected):
+    if len(seen_masks) != arguments.expected_count:
+        raise ValueError(
+            f"atlas has {len(seen_masks)} distinct masks, expected {arguments.expected_count}"
+        )
+    if priority_path is not None and seen_masks != set(expected):
         missing = sorted(set(expected) - seen_masks)
         extra = sorted(seen_masks - set(expected))
         raise ValueError(
@@ -364,7 +381,7 @@ def main() -> None:
                         {
                             "label": record["label"],
                             "orbit_mask": record["orbit_mask"],
-                            "fixed_frame_vector": list(expected[record["orbit_mask"]]),
+                            "fixed_frame_vector": list(record["fixed_vector"]),
                             "scalar_representative": scalar_text(record["scalar"]),
                         }
                         for record in group
@@ -386,7 +403,7 @@ def main() -> None:
     )
 
     output_path = arguments.output.resolve()
-    inputs = input_paths + [priority_path]
+    inputs = input_paths + ([] if priority_path is None else [priority_path])
     payload = {
         "schema": "elkies-k3.r17-norm12-streaming-quadratic-character-closure.v1",
         "status": status,
@@ -405,8 +422,14 @@ def main() -> None:
         "three_character_relations": relations,
         "inputs": {relative(path): digest(path) for path in inputs},
         "proof_boundary": (
-            "Every exact degree-two branch record attached to the complete priority-table "
-            "orbit set is streamed. Equal covers are grouped by identical geometric support "
+            "Every supplied exact degree-two branch record is streamed, with complete "
+            "orbit coverage checked against the declared count"
+            + (
+                " and priority table. "
+                if priority_path is not None
+                else ". "
+            )
+            + "Equal covers are grouped by identical geometric support "
             "and exact rational-square scalar ratio. Because every support has size one or "
             "two, the endpoint and triangle search exhausts q_i*q_j=q_k while retaining the "
             "rational constant squareclass. A collision or relation still requires the "
@@ -416,7 +439,11 @@ def main() -> None:
             ".venv/bin/python "
             "elkies-k3/scripts/search_r17_norm12_quadratic_character_closure_streaming.py "
             + f"--source-label {arguments.source_label} "
-            + f"--priority-table {relative(priority_path)} "
+            + (
+                ""
+                if priority_path is None
+                else f"--priority-table {relative(priority_path)} "
+            )
             + " ".join(f"--input {relative(path)}" for path in input_paths)
             + f" --output {relative(output_path)}"
         ),

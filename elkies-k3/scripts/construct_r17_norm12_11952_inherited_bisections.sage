@@ -28,8 +28,11 @@ from sage.all import (
     PolynomialRing,
     QQ,
     ZZ,
+    gcd,
+    lcm,
     matrix,
     pari,
+    prime_range,
     vector,
 )
 from sage.env import SAGE_VERSION
@@ -47,6 +50,7 @@ DIRECT_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit103
 OUTPUT_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-inherited-bisection-covers-v1.json"
 DIRECT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08ab4-direct-fibration-v1.json"
 OUTPUT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-inherited-bisection-covers-v1.json"
+CONTENT_TRIAL_PRIMES = tuple(prime_range(2, 1001))
 
 
 def digest(path: Path) -> str:
@@ -133,47 +137,65 @@ def exact_square_root(poly):
     return poly.sqrt()
 
 
-def squarefree_rational_representative(value) -> ZZ:
-    """Canonical representative of a nonzero element of QQ*/QQ*2.
-
-    Denominator primes are moved to the numerator, since p^-1 and p differ
-    by the rational square p^-2.  The result is a signed squarefree integer.
-    """
-
-    value = QQ(value)
-    if not value:
-        raise ArithmeticError("zero has no squareclass")
-    result = ZZ(-1 if value < 0 else 1)
-    for integer in (abs(ZZ(value.numerator())), ZZ(value.denominator())):
-        for prime, exponent in integer.factor():
-            if exponent % 2:
-                result *= prime
-    return result
-
-
 def canonical_squareclass(poly, ring):
-    """Return q_can and g with poly=g^2*q_can, preserving constants."""
+    """Return an exact factorless q and g with poly=g^2*q.
+
+    General factorization of the thousand-bit rational content can dominate
+    the entire inherited-cover construction.  Removing small-prime squares
+    and then an exact residual perfect square is sufficient: any opaque
+    composite left in q is an exact representative of the same rational
+    constant squareclass.  Downstream equality uses an exact square-ratio
+    predicate and therefore needs no prime factorization.
+    """
 
     poly = ring(poly)
     if not poly:
         raise ArithmeticError("zero branch polynomial")
-    factorization = poly.factor()
-    constant = QQ(factorization.unit())
-    constant_class = squarefree_rational_representative(constant)
-    support = ring.one()
-    for factor, exponent in factorization:
-        if exponent % 2:
-            support *= factor.monic()
-    canonical = ring(constant_class * support)
-    ratio = ring.fraction_field()(poly / canonical)
-    numerator = ring(ratio.numerator())
-    denominator = ring(ratio.denominator())
-    multiplier = ring.fraction_field()(
-        exact_square_root(numerator) / exact_square_root(denominator)
+    common_denominator = lcm([coefficient.denominator() for coefficient in poly])
+    integral_coefficients = [
+        ZZ(coefficient * common_denominator) for coefficient in poly
+    ]
+    common_numerator = gcd(integral_coefficients)
+    sign = ZZ(-1 if common_numerator < 0 else 1)
+    common_numerator = abs(common_numerator)
+    primitive = ring(
+        poly / (QQ(sign * common_numerator) / common_denominator)
     )
-    if multiplier**2 * canonical != poly:
-        raise ArithmeticError("canonical squareclass multiplier identity failed")
-    return canonical, multiplier, constant_class
+    if any(coefficient.denominator() != 1 for coefficient in primitive):
+        raise ArithmeticError("squareclass primitive polynomial is not integral")
+    if gcd([ZZ(coefficient) for coefficient in primitive]) not in (1, -1):
+        raise ArithmeticError("squareclass primitive polynomial has nontrivial content")
+
+    def square_decomposition(integer):
+        residual = ZZ(integer)
+        square = ZZ.one()
+        retained = ZZ.one()
+        for prime in CONTENT_TRIAL_PRIMES:
+            exponent = 0
+            while residual % prime == 0:
+                residual //= prime
+                exponent += 1
+            square *= prime ** (exponent // 2)
+            if exponent % 2:
+                retained *= prime
+        if residual.is_square():
+            square *= residual.sqrt()
+        else:
+            retained *= residual
+        if square**2 * retained != integer:
+            raise ArithmeticError("factorless integer square decomposition failed")
+        return square, retained
+
+    numerator_square, numerator_residual = square_decomposition(common_numerator)
+    denominator_square, denominator_residual = square_decomposition(common_denominator)
+    constant_representative = sign * numerator_residual * denominator_residual
+    multiplier = QQ(numerator_square) / (
+        denominator_square * denominator_residual
+    )
+    representative = ring(constant_representative * primitive)
+    if multiplier**2 * representative != poly:
+        raise ArithmeticError("factorless squareclass multiplier identity failed")
+    return representative, ring.fraction_field()(multiplier), constant_representative
 
 
 def quadratic_element_record(value, base_field):
@@ -214,6 +236,14 @@ def main() -> None:
         default="norm12-orbit-11952",
     )
     parser.add_argument("--output", type=Path)
+    parser.add_argument(
+        "--cover-only",
+        action="store_true",
+        help=(
+            "construct every exact quadratic map and squareclass but defer the "
+            "quadratic-field child-section identity unless a candidate is promoted"
+        ),
+    )
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     is_alternate_target = args.source_label != "norm12-orbit-103b2"
@@ -375,6 +405,57 @@ def main() -> None:
     transport_inverse = transport.inverse()
     alternate_frame = matrix(ZZ, direct["frame_certificate"]["frame_gram"])
     basis_change = matrix(ZZ, target["pinned_identification"]["basis_change_matrix"])
+    published_to_pinned = basis_change.transpose().inverse()
+    published_height_gram = published_to_pinned * pinned * published_to_pinned.transpose()
+    if any(value not in ZZ for value in published_height_gram.list()):
+        raise ArithmeticError("published-basis height Gram is not integral")
+    published_height_gram = matrix(ZZ, published_height_gram)
+    point_cache = {tuple([0] * 17): Eold(0)}
+
+    def low_height_addition_chain(target_coordinates):
+        """Evaluate a section through minimum-height exact partial sums."""
+
+        target_coordinates = vector(ZZ, target_coordinates)
+        remaining = []
+        for index, coefficient in enumerate(target_coordinates):
+            sign = -1 if coefficient < 0 else 1
+            atom = vector(ZZ, 17)
+            atom[index] = sign
+            remaining.extend([atom] * abs(int(coefficient)))
+        current = vector(ZZ, 17)
+        point = Eold(0)
+        maximum_intermediate_height = 0
+        while remaining:
+            choice = min(
+                range(len(remaining)),
+                key=lambda index: (
+                    int(
+                        (current + remaining[index])
+                        * published_height_gram
+                        * (current + remaining[index])
+                    ),
+                    tuple(remaining[index]),
+                ),
+            )
+            atom = remaining.pop(choice)
+            next_coordinates = current + atom
+            next_key = tuple(map(int, next_coordinates))
+            if next_key in point_cache:
+                point = point_cache[next_key]
+            else:
+                basis_index = next(
+                    index for index, value in enumerate(atom) if value
+                )
+                point = point + int(atom[basis_index]) * published_basis[basis_index]
+                point_cache[next_key] = point
+            current = next_coordinates
+            maximum_intermediate_height = max(
+                maximum_intermediate_height,
+                int(current * published_height_gram * current),
+            )
+        if current != target_coordinates:
+            raise ArithmeticError("low-height addition chain missed its target")
+        return point, maximum_intermediate_height
 
     minim = matrix(ZZ, pari(pinned).qfminim(4)[2])
     candidates = []
@@ -435,12 +516,8 @@ def main() -> None:
             if expression != seed_expected[seed_label]:
                 raise ArithmeticError(f"{seed_label} expression changed")
         label = seed_label or f"inherited-{mask:05x}"
-        old_point = sum(
-            (
-                coefficient * point
-                for coefficient, point in zip(published_mw, published_basis)
-            ),
-            Eold(0),
+        old_point, maximum_intermediate_height = low_height_addition_chain(
+            published_mw
         )
         Xold, Yold = Kt(old_point[0]), Kt(old_point[1])
         if Xold.denominator() != 1 or Yold.denominator() != 1:
@@ -465,23 +542,11 @@ def main() -> None:
         if canonical_q.gcd(Delta_child).degree() != 0:
             raise ArithmeticError("inherited cover branches over an alternate singular fibre")
 
-        Rs = PolynomialRing(Ku, "S")
-        S = Rs.gen()
-        quadratic_field = Ku.extension(S**2 - Ku(canonical_q), names="s")
-        s = quadratic_field.gen()
-        t_section = (
-            -quadratic_field(linear) + quadratic_field(square_multiplier) * s
-        ) / (2 * quadratic_field(leading))
-        if evaluate_rational(old_base_map, t_section) != quadratic_field(u):
-            raise ArithmeticError("quadratic root does not invert the inherited base map")
-        x_section = evaluate_rational(Xold, t_section)
-        y_section = evaluate_rational(Yold, t_section)
-        Xnew, Ynew = point_on_child(t_section, x_section, y_section)
-
         record = {
             "label": label,
             "seed_label": seed_label,
             "published_basis_expression": expression,
+            "group_law_addition_chain_maximum_height": maximum_intermediate_height,
             "published_basis_w": list(map(int, published_mw)),
             "pinned_rank17_w": list(map(int, old_mw)),
             "alternate_rank17_w": list(map(int, alternate_w)),
@@ -501,11 +566,29 @@ def main() -> None:
             "canonical_squareclass": {
                 "equation": "s^2=q(u)",
                 "q_coefficients_low_to_high": polynomial_text(canonical_q),
-                "rational_constant_squareclass_signed_squarefree_integer": int(constant_class),
+                "rational_constant_squareclass_integer_representative": int(constant_class),
+                "constant_normalization": (
+                    "bounded trial-square removal plus exact residual perfect-square test; "
+                    "opaque composite factors are retained"
+                ),
                 "raw_discriminant_equals_multiplier_squared_times_q": True,
                 "multiplier": rational_function_record(square_multiplier),
             },
-            "lifted_section": {
+        }
+        if not args.cover_only:
+            Rs = PolynomialRing(Ku, "S")
+            S = Rs.gen()
+            quadratic_field = Ku.extension(S**2 - Ku(canonical_q), names="s")
+            s = quadratic_field.gen()
+            t_section = (
+                -quadratic_field(linear) + quadratic_field(square_multiplier) * s
+            ) / (2 * quadratic_field(leading))
+            if evaluate_rational(old_base_map, t_section) != quadratic_field(u):
+                raise ArithmeticError("quadratic root does not invert the inherited base map")
+            x_section = evaluate_rational(Xold, t_section)
+            y_section = evaluate_rational(Yold, t_section)
+            Xnew, Ynew = point_on_child(t_section, x_section, y_section)
+            record["lifted_section"] = {
                 "coefficient_field": "QQ(u,s), s^2=q(u)",
                 "old_parameter_t": quadratic_element_record(t_section, Ku),
                 "X": quadratic_element_record(Xnew, Ku),
@@ -513,8 +596,7 @@ def main() -> None:
                 "equation_verified": True,
                 "deck_conjugation": "s -> -s",
                 "anti_invariant_height": 12,
-            },
-        }
+            }
         records.append(record)
         print(
             f"NORM12INHERITED|{position + 1}/{expected_inherited_count}|{label}|"
@@ -534,6 +616,9 @@ def main() -> None:
             else "elkies-k3.r17-norm12-103b2-inherited-82-bisection-covers.v1"
         ),
         "status": (
+            f"PASS_EXACT_{expected_inherited_count}_INHERITED_COVERS_ONLY"
+            if args.cover_only
+            else
             "PASS_EXACT_121_INHERITED_ALTERNATE_Q80_BISECTION_COVERS"
             if is_primary_alternate
             else "PASS_EXACT_131_INHERITED_08AB4_ALTERNATE_Q80_BISECTION_COVERS"
@@ -573,8 +658,19 @@ def main() -> None:
                 if is_primary_alternate
                 else f" --source-label {args.source_label}"
             )
+            + (" --cover-only" if args.cover_only else "")
         ),
         "proof_boundary": (
+            (
+                f"This exact discovery replay enumerates all {expected_inherited_count} old "
+                "height-four curves of degree two over the selected child base, constructs "
+                "and canonicalizes every quadratic map including its rational constant "
+                "squareclass, and checks smoothness and coprimality with the 24I1 "
+                "discriminant. It deliberately defers the quadratic-field child-section "
+                "identity; any collision must be promoted by a full exact replay."
+            )
+            if args.cover_only
+            else
             (
                 f"This exact replay enumerates all {expected_inherited_count} old height-four curves of degree two "
                 "over the alternate-Q80 base, proves that they occupy distinct norm-ten "

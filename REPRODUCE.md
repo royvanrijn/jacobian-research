@@ -19078,7 +19078,7 @@ quotient `Z^12`.  The original `074d9` quotients remain
 
 ### Native ICARM quotient, cover-visibility, and local calibration audit
 
-<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT dfc55f2d3daddb75 -->
+<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 1b09c81c025e5fc3 -->
 
 The compact replay below checks the pinned 69-fibre public projection, all
 local fingerprints, the twelve curve-12 fitted norm-eight signatures, the
@@ -19095,6 +19095,9 @@ calibration table:
 sage -python \
   elkies-k3/scripts/certify_r17_norm12_curve12_norm8_incidence.sage --check
 
+sage -python \
+  elkies-k3/scripts/certify_r17_norm12_icarm_norm8_incidence.sage --check
+
 PYTHONPATH=elliptic-curves/cas sage -python \
   elkies-k3/scripts/certify_r17_norm12_native_icarm_quotient_audit.sage --check
 
@@ -19109,6 +19112,14 @@ norm12-orbit-08f72` and combined with
 norm12-orbit-08f72`.  The exact result is 39,147 verified covers.  The merged
 476 MB file is a local generated replay input.  See
 [`elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md`](elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md).
+
+The independent 08f72 norm-eight priority table is replayed with
+
+```bash
+sage -python \
+  elkies-k3/scripts/rank_r17_norm12_11952_alternate_norm8_pencils.sage \
+  --source-label norm12-orbit-08f72 --check
+```
 
 ### Direct `norm12-orbit-11952` alternate-Q80 equation
 

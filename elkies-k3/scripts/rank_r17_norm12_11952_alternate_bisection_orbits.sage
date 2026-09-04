@@ -21,10 +21,13 @@ ORBIT_CERTIFICATE = ROOT / "artifacts/generated-results/elkies-k3-q80-alternate-
 HISTORICAL_FRAME = ROOT / "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json"
 DIRECT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json"
 DIRECT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json"
+DIRECT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08ab4-direct-fibration-v1.json"
 OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-priority-v1.json"
 TABLE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-priority-v1.tsv"
 OUTPUT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.json"
 TABLE_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.tsv"
+OUTPUT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-alternate-bisection-priority-v1.json"
+TABLE_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-alternate-bisection-priority-v1.tsv"
 
 
 def digest(path: Path) -> str:
@@ -68,7 +71,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--source-label",
-        choices=("norm12-orbit-11952", "norm12-orbit-08f72"),
+        choices=(
+            "norm12-orbit-11952",
+            "norm12-orbit-08f72",
+            "norm12-orbit-08ab4",
+        ),
         default="norm12-orbit-11952",
     )
     parser.add_argument("--output", type=Path)
@@ -76,9 +83,21 @@ def main() -> None:
     parser.add_argument("--check", action="store_true")
     arguments = parser.parse_args()
     is_primary = arguments.source_label == "norm12-orbit-11952"
-    direct_path = DIRECT if is_primary else DIRECT_08F72
-    output = arguments.output or (OUTPUT if is_primary else OUTPUT_08F72)
-    table_output = arguments.table_output or (TABLE if is_primary else TABLE_08F72)
+    direct_path = {
+        "norm12-orbit-11952": DIRECT,
+        "norm12-orbit-08f72": DIRECT_08F72,
+        "norm12-orbit-08ab4": DIRECT_08AB4,
+    }[arguments.source_label]
+    output = arguments.output or {
+        "norm12-orbit-11952": OUTPUT,
+        "norm12-orbit-08f72": OUTPUT_08F72,
+        "norm12-orbit-08ab4": OUTPUT_08AB4,
+    }[arguments.source_label]
+    table_output = arguments.table_output or {
+        "norm12-orbit-11952": TABLE,
+        "norm12-orbit-08f72": TABLE_08F72,
+        "norm12-orbit-08ab4": TABLE_08AB4,
+    }[arguments.source_label]
 
     orbit_certificate = json.loads(ORBIT_CERTIFICATE.read_text())
     historical = json.loads(HISTORICAL_FRAME.read_text())
@@ -198,7 +217,7 @@ def main() -> None:
         "schema": (
             "elkies-k3.r17-norm12-11952-alternate-bisection-priority.v1"
             if is_primary
-            else "elkies-k3.r17-norm12-08f72-alternate-bisection-priority.v1"
+            else f"elkies-k3.r17-norm12-{arguments.source_label.rsplit('-', 1)[1]}-alternate-bisection-priority.v1"
         ),
         "status": "PASS_EXACT_COMPLETE_ALTERNATE_BISECTION_EQUATION_PRIORITY",
         "class_count": len(rows),
@@ -232,7 +251,7 @@ def main() -> None:
         "reproducing_command": (
             "sage -python elkies-k3/scripts/"
             "rank_r17_norm12_11952_alternate_bisection_orbits.sage"
-            + ("" if is_primary else " --source-label norm12-orbit-08f72")
+            + ("" if is_primary else f" --source-label {arguments.source_label}")
         ),
         "proof_boundary": (
             "This is a complete exact equation-cost ranking of all 39147 alternate "

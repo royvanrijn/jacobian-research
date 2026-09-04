@@ -3484,18 +3484,20 @@ See
 `snapshot_r17_norm12_icarm_public_fibres.py`,
 `audit_r17_norm12_icarm_local_fingerprints.py`,
 `certify_r17_norm12_curve12_norm8_incidence.sage`,
+`certify_r17_norm12_icarm_norm8_incidence.sage`,
 `certify_r17_norm12_native_icarm_quotient_audit.sage`, and
 `build_r17_norm12_icarm_calibration_dataset.py` form the native calibration
 pipeline.  It gives exact quotient and complete fixed-cover visibility data
 for curves 12, 395, 363, 364, 378, 393, and 404; exact fitted norm-eight
-signatures for curve 12's twelve quotient directions; and local feature rows
-for all 69 recognized fibres.  The final dataset keeps 57 unavailable quotient
-labels as `UNKNOWN`.
+signatures for all 51 quotient-basis directions on curves 12, 395, 363, 364,
+and 378; and local feature rows for all 69 recognized fibres.  The final
+dataset keeps 57 unavailable quotient labels as `UNKNOWN`.
 
 ```bash
 .venv/bin/python elkies-k3/scripts/snapshot_r17_norm12_icarm_public_fibres.py --check
 .venv/bin/python elkies-k3/scripts/audit_r17_norm12_icarm_local_fingerprints.py --check
 sage -python elkies-k3/scripts/certify_r17_norm12_curve12_norm8_incidence.sage --check
+sage -python elkies-k3/scripts/certify_r17_norm12_icarm_norm8_incidence.sage --check
 PYTHONPATH=elliptic-curves/cas sage -python elkies-k3/scripts/certify_r17_norm12_native_icarm_quotient_audit.sage --check
 .venv/bin/python elkies-k3/scripts/build_r17_norm12_icarm_calibration_dataset.py --check
 ```
@@ -3576,12 +3578,16 @@ explicit.
 `rank_r17_norm12_11952_alternate_norm8_pencils.sage` enumerates the complete
 section-nonnegative minimum-norm-eight parity layer of the alternate lattice
 and chooses an equation-cheap trace in every class.  The exact count is
-63,917.
+63,917 in both the 11952 and 08f72 equation bases.
 
 ```bash
 sage -python \
   elkies-k3/scripts/rank_r17_norm12_11952_alternate_norm8_pencils.sage \
   --check
+
+sage -python \
+  elkies-k3/scripts/rank_r17_norm12_11952_alternate_norm8_pencils.sage \
+  --source-label norm12-orbit-08f72 --check
 ```
 
 `search_r17_norm12_11952_product_bisection_inversion.sage` constructs a

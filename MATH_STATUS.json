@@ -38629,7 +38629,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:fd49f764e890e5bac16758a71b3f221965cd7450f7d2572bdd36ebb221c83319",
+      "artifact_hash": "sha256:ae72cc17cafdd54a8da9f994c00ebf9d94f60c6e1087307ea8b798c9e06bc305",
       "software_lock": [
         "elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage",
         "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
@@ -39467,11 +39467,59 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "NS0031 rational rank-19 marking obstruction",
+      "scope": "No characteristic-zero K3 surface X/QQ with geometric Neron--Severi lattice NS0031 can have all nineteen divisor classes defined over QQ. The exact transcendental Gram [[0,0,4],[0,74,1],[4,1,-2]] has split even Clifford order whose norm-one group is Gamma_ns(4) intersect Gamma_0(37); direct coset enumeration gives index 304, elliptic counts (0,4), cusp widths (4,4,148,148), and genus 23. A full rational NS0031 marking would give a noncuspidal rational point on this curve and hence on X_0(37). By Velu's determination, the only two noncuspidal rational X_0(37) j-invariants are -7*11^3 and -7*137^3*2083^3. Both have good reduction at 19 with a_19=-6, so their mod-4 Frobenius trace-determinant pair is (2,3), which is absent from the full unramified non-split Cartan. Neither point, nor any quadratic twist, lifts. Consequently no rootless NS0031 fibration over QQ(t) can have a saturated rational MW17 basis. The formal ZZ_7 branch and geometric corridor remain valid, but cannot close the arithmetic milestone over QQ.",
+      "canonical_source": "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-NS0031-MARKED-FORMAL-BRANCH",
+        "external: J. Velu, Les points rationnels de X_0(37)",
+        "external: marked-K3 rank-three period and even-Clifford spin correspondence"
+      ],
+      "checker": "elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c1615dd4a9c0878257f8db82b40324fd6ce306e06396ec606e56e52d1a2666fd",
+      "software_lock": [
+        "elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage",
+        "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json",
+        "artifacts/generated-results/elkies-k3-lattice-foundry-prescribed-root-sources-all-ns-3e8-all-a-v1.json",
+        "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json"
+      ],
+      "supersedes_notes": [
+        "algebraization of the model-157 formal branch might produce a full rational NS0031 marking",
+        "determinant-1184 NS0031 remains the preferred arithmetic different-NS source candidate"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+      ],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/AGENTS.md",
+        "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md",
+        "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT",
       "kind": "theorem",
       "state": "proved",
       "title": "Exact native alternate-Q80 quotient visibility audit and 69-fibre local calibration table",
-      "scope": "For ICARM curves 12,395,363,364,378,393,404, exact finite-reduction certificates prove independence of all displayed points; the saturated native MW17 bases specialize by exact group-law-verified integer relations; and Smith reduction gives displayed exceptional quotients Z^12,Z^11,Z^10,Z^11,Z^7,Z^9,Z^10. Exhaustive specialization of the complete native cover inventories gives rational-split counts 0,2,3,2,13,3,1 and primitive visible-span ranks 0,2,2,1,6,2,1 respectively. Curve 395 exposes P21 and P23. Curve 378's thirteen splits span exactly the primitive codimension-one lattice c18+c19-c24=0 in Z<P18,...,P24>. Separately, all twelve curve-12 quotient-basis directions have exact fitted members in the equation-cheapest of the complete 63,917 native norm-eight pencils; their pairwise-distinct irreducible quartic covers are genus one, carry exact curve-12 witnesses, and have anti-invariant lifts of height 16. The live public projection pins enough points for all 69 exact-sweep hits, and all 69 receive exact local a_p/point-count and three-block Nagao feature rows. Combining this with the prior five 074d9 audits yields twelve exact displayed-quotient labels; the other 57 remain literal UNKNOWN pending chart-specific saturated section transports. Public hit count is not a measured search-exposure denominator, so family quality and historical effort are not identifiable from this table alone. No displayed subgroup is asserted to be the full Mordell--Weil group, no rank upper bound is proved, and Nagao features remain heuristic.",
+      "scope": "For ICARM curves 12,395,363,364,378,393,404, exact finite-reduction certificates prove independence of all displayed points; the saturated native MW17 bases specialize by exact group-law-verified integer relations; and Smith reduction gives displayed exceptional quotients Z^12,Z^11,Z^10,Z^11,Z^7,Z^9,Z^10. Exhaustive specialization of the complete native cover inventories gives rational-split counts 0,2,3,2,13,3,1 and primitive visible-span ranks 0,2,2,1,6,2,1 respectively. Curve 395 exposes P21 and P23. Curve 378's thirteen splits span exactly the primitive codimension-one lattice c18+c19-c24=0 in Z<P18,...,P24>. All twelve curve-12 quotient-basis directions have exact fitted members in the equation-cheapest of the complete 63,917 native norm-eight pencils; their pairwise-distinct irreducible quartic covers are genus one, carry exact curve-12 witnesses, and have anti-invariant lifts of height 16. The same exact norm-eight fit succeeds for every preferred quotient-basis direction on curves 395,363,364,378, giving 39 further pairwise-distinct-within-fibre genus-one covers of anti-invariant height 16. The live public projection pins enough points for all 69 exact-sweep hits, and all 69 receive exact local a_p/point-count and three-block Nagao feature rows. Combining this with the prior five 074d9 audits yields twelve exact displayed-quotient labels; the other 57 remain literal UNKNOWN pending chart-specific saturated section transports. Public hit count is not a measured search-exposure denominator, so family quality and historical effort are not identifiable from this table alone. No displayed subgroup is asserted to be the full Mordell--Weil group, no rank upper bound is proved, and Nagao features remain heuristic.",
       "canonical_source": "elkies-k3/R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
@@ -39488,17 +39536,22 @@
       "software_lock": [
         "elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage",
         "elkies-k3/scripts/rank_r17_norm12_11952_alternate_bisection_orbits.sage",
+        "elkies-k3/scripts/rank_r17_norm12_11952_alternate_norm8_pencils.sage",
         "elkies-k3/scripts/construct_r17_norm12_11952_alternate_bisections.sage",
         "elkies-k3/scripts/merge_r17_norm12_11952_alternate_bisection_chunks.py",
         "elkies-k3/scripts/snapshot_r17_norm12_icarm_public_fibres.py",
         "elkies-k3/scripts/audit_r17_norm12_icarm_local_fingerprints.py",
         "elkies-k3/scripts/certify_r17_norm12_curve12_norm8_incidence.sage",
+        "elkies-k3/scripts/certify_r17_norm12_icarm_norm8_incidence.sage",
         "elkies-k3/scripts/certify_r17_norm12_native_icarm_quotient_audit.sage",
         "elkies-k3/scripts/build_r17_norm12_icarm_calibration_dataset.py",
         "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json",
         "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json",
         "artifacts/generated-results/elkies-k3-r17-norm12-icarm-local-fingerprints-v1.json",
         "artifacts/generated-results/elkies-k3-r17-norm12-curve12-norm8-incidence-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-norm8-pencil-priority-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-norm8-pencil-priority-v1.tsv",
+        "artifacts/generated-results/elkies-k3-r17-norm12-icarm-norm8-incidence-v1.json",
         "artifacts/generated-results/elkies-k3-r17-norm12-native-icarm-quotient-audit-v1.json",
         "artifacts/generated-results/elkies-k3-r17-norm12-icarm-calibration-dataset-v1.json",
         "artifacts/generated-results/elkies-k3-r17-norm12-icarm-calibration-dataset-v1.tsv"
@@ -39556,7 +39609,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "First planner-found arithmetic MW17 fibration on a different Neron--Severi lattice",
-      "scope": "The determinant-948 published-R17 to noncyclic-4A1/MW13 to published-R17 chain is equation-explicit with thirteen saturated rational sections and target-free reverse selection, so another equation on that surface is not the next foundry milestone. Determinant-950 NS0024 is arithmetically excluded by EC-K3-NS0024-QQ-MARKING-OBSTRUCTION. The preferred replacement is determinant-1184 NS0031: EC-K3-NS0031-MARKED-FORMAL-BRANCH proves that its artifact-qualified A1+2A7/MW2 model-157 source lies on a one-parameter formally smooth ZZ_7 marked branch, while EC-K3-NS0031-F017-PHYSICAL-CORRIDOR proves a five-edge degree-two physical same-NS route to a rootless frame. The first missing gate is algebraization to an explicit characteristic-zero elliptic K3 source over QQ with nineteen individual QQ-rational divisor classes, an exact determinant-one NS0031 marking, source U and incidence data, and geometric Picard rank exactly 19. Completion then requires the marked-U planner to select a primitive nef U' with effective zero from a target-free rootless determinant-1184 predicate; a characteristic-zero endpoint equation; and seventeen displayed QQ(t)-sections whose saturated Shioda lattice has determinant 1184, with torsion excluded. Existing NS0031 rootless frame IDs, Grams, and corridors are post-selection controls only. A modular point, finite p-adic or purely formal lift, supplied target, unsaturated subgroup, or equation without the rational rank-19 marking does not close the problem.",
+      "scope": "The determinant-948 published-R17 to noncyclic-4A1/MW13 to published-R17 chain is equation-explicit with thirteen saturated rational sections and target-free reverse selection, so another equation on that surface is not the next foundry milestone. Determinant-950 NS0024 and determinant-1184 NS0031 are both arithmetically excluded: their rational-marking obstruction theorems prove that neither lattice can occur with all nineteen Neron--Severi divisor classes rational over QQ, hence neither supports the required saturated arithmetic MW17 endpoint. The NS0031 formal ZZ_7 branch and five-edge geometric corridor remain exact but are no longer an arithmetic source route. The planner must now rerank the remaining different-NS frames with the rational-marking arithmetic gate ahead of equation search; determinant-720 is the strongest existing lattice/corridor control, but its known rational 3A5 model saturates to determinant 20 and is not a valid source. Completion requires an explicit characteristic-zero elliptic K3 source over QQ with nineteen individual QQ-rational divisor classes, an exact saturated rank-19 marking, source U and incidence data, and geometric Picard rank exactly 19; target-free selection of a primitive nef rootless U'; a characteristic-zero endpoint equation; and seventeen displayed QQ(t)-sections whose saturated Shioda lattice has the new NS determinant, with torsion excluded. A modular point, finite p-adic or purely formal lift, supplied target, unsaturated subgroup, or equation without the rational rank-19 marking does not close the problem.",
       "canonical_source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION",
@@ -39564,6 +39617,9 @@
         "EC-K3-NS0031-MARKED-SOURCE-PRECURSOR",
         "EC-K3-NS0031-MARKED-FORMAL-BRANCH",
         "EC-K3-NS0031-F017-PHYSICAL-CORRIDOR",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-GOLAY-DET720-NS-SATURATION",
+        "EC-K3-GOLAY-DET720-PHYSICAL-CORRIDOR",
         "EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA",
         "EC-K3-ARITHMETIC-RANK-TRANSFER",
         "EC-K3-RELATIVE-U-BRIDGE-LIFTING",

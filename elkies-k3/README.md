@@ -13,17 +13,18 @@ for exact claim status.
   supporting work, not the next foundry milestone.
 - **Next foundry milestone (OPEN):** construct the first arithmetic MW17
   fibration on a different Neron--Severi lattice that is selected target-free
-  by the planner. Determinant-950 `NS0024` is excluded because it cannot carry
-  the required full rational rank-19 marking over `QQ`. The preferred
-  replacement is determinant-1184 `NS0031`; its first missing gate is
-  algebraization of the exact one-parameter formally smooth `ZZ_7`
-  model-157 marked branch to a characteristic-zero rational source. See
+  by the planner. Determinant-950 `NS0024` and determinant-1184 `NS0031` are
+  both excluded because neither can carry the required full rational rank-19
+  marking over `QQ`. The planner must rerank the remaining frames through the
+  arithmetic marking gate before more equation work; determinant `720` is the
+  strongest lattice/corridor control, but its known rational model saturates
+  to determinant `20`. See
   [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 - **Published R17 over `QQ`:** rootless `24 I1`, Picard rank 19, saturated determinant-948 Mordell–Weil lattice of rank 17.
 - **Alternate Q80 over `QQ`:** the canonical equation route is now the direct degree-two hop `norm12-orbit-11952` from published R17. It gives a polynomial K3 model with `(deg A,deg B,deg Delta)=(8,12,24)`, `24 I1`, the alternate determinant-948 rootless frame, and 17 saturated rational sections.
 - **Complete norm-twelve public-curve atlas:** all 43 shared-zero degree-two charts form six rational-`PGL2` `j`-classes, and all 474 equations in the pinned ICARM snapshot have exact preimage decisions. There are 69 rational hits and 2,775 misses; all 376 native chart/fibre comparisons are untwisted. Every wgxli component is recognized. Curve 12 is the first native alternate-Q80 rank-at-least-29 control, with exact displayed quotient `Z^12`; curves 273, 302, and 398 miss all six classes.
-- **Native ICARM calibration:** seven priority fibres now have exact native displayed quotients and exhaustive fixed-cover visibility spans: curve 12 has `0/12`, curve 395 has `2/11`, curves 363/364/378 have `2/10`, `1/11`, and `6/7`, and curves 393/404 have `2/9` and `1/10`. Curve 12 separately has exact fitted norm-eight genus-one signatures for all twelve quotient directions. All 69 recognized fibres have pinned local/Nagao feature rows; twelve currently have exact quotient labels, while the other 57 remain `UNKNOWN` pending saturated chart transports. See [`R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md`](R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md).
-<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT dfc55f2d3daddb75 -->
+- **Native ICARM calibration:** seven priority fibres now have exact native displayed quotients and exhaustive fixed-cover visibility spans: curve 12 has `0/12`, curve 395 has `2/11`, curves 363/364/378 have `2/10`, `1/11`, and `6/7`, and curves 393/404 have `2/9` and `1/10`. Curves 12, 395, 363, 364, and 378 also have exact fitted norm-eight genus-one signatures for every quotient-basis direction (51 directions total). All 69 recognized fibres have pinned local/Nagao feature rows; twelve currently have exact quotient labels, while the other 57 remain `UNKNOWN` pending saturated chart transports. See [`R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md`](R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md).
+<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 1b09c81c025e5fc3 -->
 - **Noncyclic `4A1/MW13` over `QQ`:** the relative-`U` witness with maximal bridge `Z/4+Z/8` now compiles directly from published R17 to an explicit `4 I2 + 16 I1` equation.  Thirteen rational sections form a saturated basis, and the target-free reverse degree-two hop recovers the literal published R17 equation.
 - The alternate pencil has arithmetic generic rank 17 over `QQ`.
 - The historical degree-11511 Q80 transport and million-bit third-`q12` reconstruction are superseded operationally and retained only for provenance.
@@ -37,17 +38,19 @@ for exact claim status.
 
 ## Canonical current notes
 
-- [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — open milestone, preferred NS0031 source gate, and target-free acceptance contract.
+- [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — open milestone, arithmetic-first reranking gate, and target-free acceptance contract.
 - [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md) — Fricke-quotient theorem excluding a full rational NS0024 marking and hence arithmetic NS0024/MW17 over `QQ(t)`.
 - [`NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md`](NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md) — narrower direct degree-475 Inose-source obstruction retained as a supporting corollary.
-- [`NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md`](NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md) — exact one-parameter formally smooth `ZZ_7` marked source branch; algebraization and a rational point remain open.
+- [`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md) — split-Clifford and `X_0(37)` theorem excluding a full rational NS0031 marking.
+- [`NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md`](NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md) — retained exact one-parameter formally smooth `ZZ_7` marked source branch.
 <!-- status-consumer: EC-K3-NS0024-DIRECT-QQ-INOSE-OBSTRUCTION e87afc1b3529a07f -->
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 - [`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) — direct noncyclic `4A1/MW13` equation, saturated arithmetic MW13 basis, and target-free reverse hop.
 - [`R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md) — all 43 equations, six exact `j`-classes, record-curve misses, and the exact five-fibre R17 lineage.
-- [`R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md`](R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md) — seven native quotient/cover audits, twelve curve-12 norm-eight signatures, and the fail-closed 69-fibre calibration table.
+- [`R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md`](R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md) — seven native quotient/cover audits, 51 norm-eight signatures on five fibres, and the fail-closed 69-fibre calibration table.
 - [`R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md`](R17_NORM12_ORBIT11952_DIRECT_FIBRATION_2026-09-03.md) — direct alternate-Q80 equation and saturated MW17 basis.
 - [`R17_ALTERNATE_Q80_ARITHMETIC_LABORATORY_2026-09-03.md`](R17_ALTERNATE_Q80_ARITHMETIC_LABORATORY_2026-09-03.md) — 121 inherited covers, 7,260 products, and the exact cheapest-1,024 native branch-incidence laboratory.
 - [`R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md`](R17_ALTERNATE_Q80_V4_PRODUCT_TWIST_LABORATORY_2026-09-03.md) — 64 exact rational genus-one `V4` bases and seventeen exact rank-one base Jacobians.
@@ -70,10 +73,10 @@ for exact claim status.
 
 The useful fronts are:
 
-1. algebraize the determinant-1184 `NS0031` model-157 marked formal branch to an
-   equation-facing characteristic-zero source over `QQ` with a rational
-   rank-19 marking, then let the marked-`U` planner search target-free for a
-   rootless endpoint and compile it;
+1. identify the stable arithmetic moduli curve for the determinant-720
+   marking and decide whether a rational noncuspidal point has exact saturated
+   determinant `720`; if not, continue the same arithmetic-first screen down
+   the determinant-aware planner queue;
 2. solve the 34 missing published-R17 rational visibility directions by a target-directed inverse problem, without enumerating the ambient trisection or quadrisection cosets;
 3. compute the nonzero 2-primary quotient classes for the seventeen alternate-Q80 product twists from a full involution lattice or complete two-Selmer calculation, or obtain a complete degree-28 finite-field Frobenius rank bound; the zero class is closed, and the unsliced eight-variable `msolve` campaign remains superseded;
 4. study multi-prime defect reachability and possible finite-prime sufficient sets;
@@ -84,12 +87,14 @@ Do not count another determinant-948 equation as the different-NS foundry
 milestone.
 Do not restart an arithmetic NS0024 source search over `QQ`; only geometric
 or larger-field NS0024 work remains open.
+Do not restart the NS0031 model-157 rational-point or algebraization search
+over `QQ`; the full rational marking is now obstructed.
 
 ## Reproduction
 
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION bf05d9b06ccc1502 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 c8566fbe8f4dc838 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 c384abf4d95dae7d -->
 <!-- status-consumer: OP-EC-NEXT e135b23ef9910845 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->

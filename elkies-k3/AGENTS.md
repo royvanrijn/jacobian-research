@@ -27,11 +27,11 @@ and a reproducible certificate plan.
   directions: `R17 -> 4A1/MW13 -> R17`, with thirteen saturated rational
   sections and target-free reverse selection.
 - The next foundry milestone is the first planner-found arithmetic MW17
-  fibration on a different NS. Determinant-950 `NS0024` is arithmetically
-  excluded by the rational-marking obstruction. Determinant-1184 `NS0031` is
-  the preferred replacement; its one-parameter formally smooth `ZZ_7`
-  model-157 marked branch and exact five-edge physical corridor still require
-  algebraization and a rational characteristic-zero rank-19 source marking.
+  fibration on a different NS. Determinant-950 `NS0024` and determinant-1184
+  `NS0031` are both arithmetically excluded by rational-marking obstructions.
+  The next step is an arithmetic-first reranking of the remaining frames;
+  determinant `720` has the strongest lattice/corridor controls, but its known
+  rational `3A5` point saturates to determinant `20`.
 - The four published rank-25--28 R17 controls do not transfer to rational alternate-Q80 parameters, but the complete ICARM sweep now supplies native controls: curve 12 has rank at least 29 in class `11952`, while curves 363, 364, 378, and 395 give further rank-at-least-24--28 fibres in classes `08f72` and `11952`.
 - Rank `>=32` is open.
 - One curated inverse-ADE/foundry route is end-to-end planner-ready; the 936 bulk routes are not.
@@ -46,6 +46,8 @@ and a reproducible certificate plan.
 - treating another determinant-948 equation as the different-NS foundry
   milestone.
 - restarting a full-rational-marking NS0024 search over `QQ`.
+- restarting the NS0031 model-157 rational-point or algebraization search over
+  `QQ`.
 
 These remain useful provenance/regression material and are indexed from `../archive/elkies-k3/`.
 
@@ -59,4 +61,5 @@ These remain useful provenance/regression material and are indexed from `../arch
 
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 c8566fbe8f4dc838 -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 c384abf4d95dae7d -->

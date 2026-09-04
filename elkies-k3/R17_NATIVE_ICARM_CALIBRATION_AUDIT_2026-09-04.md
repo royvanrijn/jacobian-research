@@ -6,6 +6,7 @@ certificates are:
 
 - `artifacts/generated-results/elkies-k3-r17-norm12-native-icarm-quotient-audit-v1.json`;
 - `artifacts/generated-results/elkies-k3-r17-norm12-curve12-norm8-incidence-v1.json`;
+- `artifacts/generated-results/elkies-k3-r17-norm12-icarm-norm8-incidence-v1.json`;
 - `artifacts/generated-results/elkies-k3-r17-norm12-icarm-local-fingerprints-v1.json`;
 - `artifacts/generated-results/elkies-k3-r17-norm12-icarm-calibration-dataset-v1.json`
   and its TSV projection.
@@ -18,15 +19,15 @@ recovered by a 180-bit height solve only as a proposal; every recovered
 integer relation is then checked by exact group law.  Smith reduction is over
 `ZZ`.
 
-| ICARM | native chart | rank lower bound | displayed quotient | covers | rational splits | exact visible span |
-|---:|---|---:|---:|---:|---:|---:|
-| 12 | 11952 | 29 | `Z^12` | 39,147 | 0 | 0 |
-| 395 | 11952 | 28 | `Z^11` | 39,147 | 2 | 2 |
-| 363 | 08f72 | 27 | `Z^10` | 39,147 | 3 | 2 |
-| 364 | 08f72 | 28 | `Z^11` | 39,147 | 2 | 1 |
-| 378 | 08f72 | 24 | `Z^7` | 39,147 | 13 | 6 |
-| 393 | 103b2 in class 0e80b | 26 | `Z^9` | 39,120 | 3 | 2 |
-| 404 | 103b2 in class 0e80b | 27 | `Z^10` | 39,120 | 1 | 1 |
+| ICARM | native chart | rank lower bound | displayed quotient | covers | rational splits | exact visible span | norm-eight fitted directions |
+|---:|---|---:|---:|---:|---:|---:|---:|
+| 12 | 11952 | 29 | `Z^12` | 39,147 | 0 | 0 | 12 |
+| 395 | 11952 | 28 | `Z^11` | 39,147 | 2 | 2 | 11 |
+| 363 | 08f72 | 27 | `Z^10` | 39,147 | 3 | 2 | 10 |
+| 364 | 08f72 | 28 | `Z^11` | 39,147 | 2 | 1 | 11 |
+| 378 | 08f72 | 24 | `Z^7` | 39,147 | 13 | 6 | 7 |
+| 393 | 103b2 in class 0e80b | 26 | `Z^9` | 39,120 | 3 | 2 | — |
+| 404 | 103b2 in class 0e80b | 27 | `Z^10` | 39,120 | 1 | 1 | — |
 
 All nonzero visible spans are primitive.  In the preferred public quotient
 bases the most useful identifications are:
@@ -48,6 +49,32 @@ Curve 12's zero is therefore a real negative result for this fixed norm-ten
 cover inventory, not a failure to inspect it.  It does not imply invisibility
 to all alternate-Q80 constructions.
 
+For comparison with the public numbering, put
+
+`(b1,...,b12)=(P2,P11,P4,P3,P6,P8,P17,P10,P28,P24,P19,P15)`
+
+in the displayed quotient.  The late public points have the exact images
+
+| point | image in `Z<b1,...,b12>` |
+|---|---|
+| `P18` | `b2-b4+b5+b7+b8` |
+| `P19` | `b11` |
+| `P20` | `0` |
+| `P21` | `-b1` |
+| `P22` | `b1+b2-b3+b5+b6+b7` |
+| `P23` | `-b1-b2+b4-2b5-b7-2b8-b10` |
+| `P24` | `b10` |
+| `P25` | `0` |
+| `P26` | `-b5` |
+| `P27` | `-b7` |
+| `P28` | `b9` |
+| `P29` | `b2-b3` |
+
+Thus the twelve late labels are not themselves a quotient basis: `P20` and
+`P25` already lie in the specialized generic subgroup.  The fixed 39,147
+cover inventory exposes none of the nonzero late-point images or their
+combinations.
+
 ## Curve 12 norm-eight incidence
 
 The equation-cheapest class in the complete 63,917-class native norm-eight
@@ -64,6 +91,34 @@ curve-12 rational witness.  The twelve monic quartics are distinct, hence give
 distinct squareclasses.  Each cover has genus one and an anti-invariant lift
 of height 16, independent of invariant MW17.
 
+The following short identifiers are the first sixteen hexadecimal digits of
+the SHA-256 hash of each normalized low-to-high branch-quartic coefficient
+list in compact JSON encoding.  The full exact rational coefficients and
+rational witnesses are retained in the certificate.
+
+| quotient direction | quartic fingerprint |
+|---|---|
+| `P2` | `6cde53cefaa421ee` |
+| `P11` | `c1201de6f3c4b611` |
+| `P4` | `3ee3808bc170a87f` |
+| `P3` | `c3f09664b310a74a` |
+| `P6` | `bef54d4e4ce6045b` |
+| `P8` | `cf5b05ce87c01e3e` |
+| `P17` | `36cf473906b99230` |
+| `P10` | `2907c890e3eb8b8f` |
+| `P28` | `32c313152bdaed60` |
+| `P24` | `c3b4b0a457037838` |
+| `P19` | `d3e7fabd0cf33688` |
+| `P15` | `b699b4c3bc06ed88` |
+
+The same exact fit succeeds for every preferred displayed quotient-basis
+direction on curve 395 (`P18,...,P28`), curve 363 (`P18,...,P27`), curve 364
+(`P18,...,P28`), and curve 378 (`P18,...,P24`): 39 further directions in
+total.  Within each fibre the normalized quartics are pairwise distinct; all
+are irreducible squarefree genus-one covers with exact rational witnesses and
+anti-invariant height 16.  The 11952 and 08f72 fits use their own independently
+ranked complete 63,917-class norm-eight frontiers.
+
 This is a fitted positive-control signature: it does not say that one fixed
 pencil member carries all twelve points, or that a fitted member splits at a
 different fibre.
@@ -75,9 +130,23 @@ recognized fibres (1,545 points total).  Exact local point counts, Frobenius
 traces, within-family incidences, and three predeclared Nagao blocks are stored
 for every row.  Twelve rows presently have exact displayed quotient dimensions:
 the seven above and the five earlier 074d9/wgxli fibres.  Seven rows have a
-complete native fixed-cover visibility audit.  The remaining 57 quotient
-fields are literal `null`, because their chart-specific saturated section
-transports have not yet been compiled.
+complete native fixed-cover visibility audit, and five rows have exact fitted
+norm-eight incidence for every quotient-basis direction.  The remaining 57
+quotient fields are literal `null`, because their chart-specific saturated
+section transports have not yet been compiled.
+
+For curve 12, the exact trace fingerprint on the predeclared primes is
+
+```text
+41:bad 43:bad 61:bad 71:-3 73:-16 79:-14 83:-14
+89:-17 107:-20 113:-19 127:-8 131:-20 137:-21 139:-21
+151:-18 157:-10 163:-20 167:-23 173:-26 179:-20
+181:-20 191:-20 193:-11 197:-17
+```
+
+Here a good entry is `p:a_p`.  Dividing the certificate's integer score units
+by `10^12`, the three block scores are `2.607449715912`, `5.415319001063`, and
+`4.844003035565`, totaling `12.866771752540`.
 
 The TSV is ready for family-held-out experiments.  Splits must be grouped by
 the six PGL2 family labels; random fibre-level train/test splitting would leak
@@ -101,6 +170,7 @@ The dataset marks search exposure as unknown rather than converting the
 .venv/bin/python elkies-k3/scripts/snapshot_r17_norm12_icarm_public_fibres.py --check
 .venv/bin/python elkies-k3/scripts/audit_r17_norm12_icarm_local_fingerprints.py --check
 sage -python elkies-k3/scripts/certify_r17_norm12_curve12_norm8_incidence.sage --check
+sage -python elkies-k3/scripts/certify_r17_norm12_icarm_norm8_incidence.sage --check
 PYTHONPATH=elliptic-curves/cas sage -python elkies-k3/scripts/certify_r17_norm12_native_icarm_quotient_audit.sage --check
 .venv/bin/python elkies-k3/scripts/build_r17_norm12_icarm_calibration_dataset.py --check
 ```

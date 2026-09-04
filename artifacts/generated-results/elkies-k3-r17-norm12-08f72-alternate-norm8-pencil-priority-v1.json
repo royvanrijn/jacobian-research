@@ -1,0 +1,112 @@
+{
+  "class_count": 63917,
+  "complete_enumeration": {
+    "bound": 8,
+    "excluded_lower_norm_cosets": 27958,
+    "method": "LLL-reduced Fincke-Pohst traversal with exact leaf norms",
+    "pari_exact_signed_count_through_bound": 516276,
+    "parity_cosets_hit_by_shell": {
+      "2": 0,
+      "4": 1313,
+      "6": 26645,
+      "8": 63917
+    },
+    "signed_shell_counts": {
+      "2": 0,
+      "4": 2626,
+      "6": 53290,
+      "8": 460360
+    },
+    "surviving_minimum_norm_eight_cosets": 63917
+  },
+  "coordinate_chain": "short -> historical alternate -> direct compiled frame -> saturated equation section basis",
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json": "5091c7fd2199692b538ecfd64b2bb3a2a208ac01ae28db082ca0dff6e21d1b90",
+    "artifacts/generated-results/q80-alternate-fifth-q6-rootless-transport.json": "48381d91e288b2cefb85b1484d351d659748f801ea57d190453bd2db0a56eaab",
+    "elkies-k3/scripts/enumerate_rootless_bisection_orbits.sage": "c6861cc2623a9bae62b8839eb6fad6f2829c05438255e8ee4cfe7483b31423be"
+  },
+  "lattice_dictionary": {
+    "class": "D_w=(2,2,w)",
+    "conditions": [
+      "D_w^2=0",
+      "D_w.F=2",
+      "D_w.O=0",
+      "w.M.w=8"
+    ],
+    "enumerated_layer": "minimum norm exactly 8",
+    "section_intersection": "D_w.S_x=(w-2x).M.(w-2x)/4-2",
+    "section_nonnegative_iff": "the coset w+2M has minimum norm at least 8",
+    "section_translation": "w -> w+2x"
+  },
+  "priority_table": "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-norm8-pencil-priority-v1.tsv",
+  "priority_table_sha256": "644fe4a3f26ed52852b3f966cb908b35cb716011065cf17014f1b08152fae557",
+  "proof_boundary": "This is the complete section-nonnegative norm-eight/pole-order-zero translation layer. It constructs neither chord pencils nor branch matches.",
+  "representative_selection": {
+    "cost_histogram": {
+      "0": 4,
+      "1": 9,
+      "10": 6296,
+      "11": 4777,
+      "12": 4509,
+      "13": 3240,
+      "14": 2841,
+      "15": 2258,
+      "16": 1613,
+      "17": 1482,
+      "18": 934,
+      "19": 911,
+      "2": 320,
+      "20": 613,
+      "21": 689,
+      "22": 373,
+      "23": 451,
+      "24": 234,
+      "25": 239,
+      "26": 163,
+      "27": 144,
+      "28": 101,
+      "29": 72,
+      "3": 971,
+      "30": 54,
+      "31": 32,
+      "32": 31,
+      "33": 15,
+      "34": 7,
+      "35": 7,
+      "36": 3,
+      "37": 1,
+      "38": 1,
+      "39": 3,
+      "4": 2057,
+      "40": 4,
+      "41": 3,
+      "42": 1,
+      "43": 3,
+      "44": 1,
+      "45": 1,
+      "49": 1,
+      "5": 4077,
+      "6": 5125,
+      "7": 6114,
+      "8": 7002,
+      "9": 6130
+    },
+    "score": [
+      "group_addition_upper_bound",
+      "support_count",
+      "maximum_absolute_coefficient",
+      "coefficient_l1",
+      "lexicographic_section_basis_word"
+    ]
+  },
+  "reproducing_command": "sage -python elkies-k3/scripts/rank_r17_norm12_11952_alternate_norm8_pencils.sage --source-label norm12-orbit-08f72",
+  "schema": "elkies-k3.r17-norm12-08f72-alternate-norm8-pencil-priority.v1",
+  "software_assumptions": {
+    "required_features": [
+      "exact lattice arithmetic",
+      "complete Fincke-Pohst traversal"
+    ],
+    "sage_version": "10.9"
+  },
+  "status": "PASS_EXACT_COMPLETE_ALTERNATE_NORM8_PENCIL_PRIORITY"
+}

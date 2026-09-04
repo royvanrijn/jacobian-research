@@ -1,6 +1,7 @@
 # Determinant-aware re-ranking of the rank-seven foundry
 
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 
 ## Result
 
@@ -163,11 +164,13 @@ marking-level physical corridor, but its rational field of definition is
 open.  Consequently the re-ranking identifies the arithmetic source as its
 next gate rather than launching another raw multisection census.
 
-The determinant-1184 NS0031 surface now has a one-parameter formally smooth
-`Z_7` marked branch and marking-level corridor evidence, but it lies above
-the observed determinant band.  It remains a strong equation candidate, now
-typed separately from the determinant-sweet-spot queue; rational
-characteristic-zero algebraization is still open.
+The determinant-1184 NS0031 surface has a one-parameter formally smooth
+`Z_7` marked branch and marking-level corridor evidence, but it is now
+arithmetically excluded over `QQ`: the split-Clifford modular curve is
+`X_ns(4) x X_0(37)` over the `j`-line, and neither noncuspidal rational point
+of `X_0(37)` passes the mod-4 Cartan Frobenius test. It is retained as a
+geometric/local control, not an equation candidate. Future rankings must put
+this rational-marking screen ahead of equation cost.
 
 ## Rank-jump coordinate
 

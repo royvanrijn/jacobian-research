@@ -8,7 +8,8 @@ Status: **OPEN**.
 <!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 c8566fbe8f4dc838 -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 c384abf4d95dae7d -->
 
 ## Milestone
 
@@ -31,124 +32,102 @@ Neron--Severi lattice that is selected by the marked-U planner without a
 supplied target frame.
 ```
 
-Determinant-950 `NS0024` is no longer a candidate. A full rational marking
-would make its primitive `2E8/MW1` Inose fibration descend and hence give a
+## Two arithmetic exclusions
+
+Determinant-950 `NS0024` is not a candidate. A full rational marking would
+make its primitive `2E8/MW1` Inose fibration descend and hence give a
 noncuspidal, non-CM rational point on `X0+(475)`. Momose's theorem excludes
 such a point. The exact argument is in
 [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
 
-## Preferred working class: NS0031
-
-The preferred replacement is determinant-1184 `NS0031`. This priority is
-not inferred from determinant alone. It is the strongest current candidate
-that simultaneously has a positive equation-level source precursor, a
-low-pole complete source basis, rootless MW17 frames, and an exact physical
-same-NS corridor.
-
-The stable source key is the pair
+Determinant-1184 `NS0031` is also not a candidate. Its exact split Clifford
+order gives the modular curve
 
 ```text
-(artifacts/generated-results/
- elkies-k3-lattice-foundry-prescribed-root-sources-all-ns-3e8-all-a-v1.json,
- NS0031-S001).
+X_ns(4) x_{X(1)} X_0(37).
 ```
 
-The artifact qualification is essential: `source_id` values are shard-local
-and are not globally unique. This source has
+Vélu's determination of `X_0(37)(QQ)`, followed by an exact mod-4 Frobenius
+test at `19`, excludes a lift of either noncuspidal rational point. Thus a
+full rational `NS0031` marking is impossible. The proof and replay are in
+[`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
 
-```text
-root type       A1+2A7
-source MW rank  2
-height Gram     [[2,1],[1,41/8]]
-basis poles     [0,1]
-```
-
-Its normalized square-twist chart over `GF(7)` contains two complete marked
-MW2 pairs on model 157. At one pair, the 59-equation system in 52 variables
-has Jacobian rank 51 with a unit maximal minor, and explicit coordinates
-solve every equation through `7^8`. The eight rows outside that minor are
-now forced on the localized marked scheme by an exact discriminant/node
-identity and the fibre/component orders. Consequently the full model-157
-germ is a one-parameter formally smooth `ZZ_7` branch. This remains a formal
-local result: it does not algebraize the branch or produce a rational
-characteristic-zero point.
-
-The exact marking-level corridor is
+The one-parameter formally smooth `ZZ_7` model-157 branch and the physical
+corridor
 
 ```text
 A1+2A7 -> A1+2A3+A5 -> 5A1+A3 -> 4A1 -> A1
-       -> rootless NS0031-F017.
+       -> rootless NS0031-F017
 ```
 
-All five edges have old-fibre degree two and exact unimodular transport. The
-corridor proves physical same-lattice reachability, but `F017` is only a
-post-selection control for this objective. Feeding `F017`, its Gram matrix,
-or this route to the planner as a target would not meet the milestone.
-
-`NS0005` is not the replacement lead. Its similarly normalized `A1+2A7`
-charts at 5 and 7 contain individual generator types but no pair with the
-required mutual height. That bounded negative result is not a global
-obstruction, but it is strictly weaker source evidence than the positive
-`NS0031` chart.
+remain exact local and geometric controls. They cannot be promoted to the
+required arithmetic source over `QQ`. Longer lifting, a larger rational
+parameter scan, or algebraization of that branch is no longer a live attack
+on this milestone.
 
 ## First missing gate
 
-Algebraize the `NS0031` marked formal branch and produce one equation-facing
-characteristic-zero source over `QQ` with a rational rank-19 marking. The
-package must contain:
+Rerank the remaining different-NS frames with the rational-marking arithmetic
+gate before equation search. Determinant `720` is the strongest existing
+lattice/corridor control, but its known rational `3A5/MW2` equation is not a
+source for the determinant-720 lattice: the displayed determinant-720
+sublattice saturates with index `6` to determinant `20`, with rational
+3-torsion and a rational half-section.
+
+The next narrow calculation is therefore an exact arithmetic moduli decision
+for the determinant-720 marking: identify the stable marked curve and decide
+whether any rational noncuspidal point has saturated determinant `720` rather
+than landing on a proper overlattice. Only after that decision should the
+coefficient search resume. If determinant `720` is excluded, repeat the same
+pre-screen down the determinant-aware queue.
+
+The first positive source package must contain:
 
 1. an explicit smooth elliptic K3 equation over `QQ`, with rational fibre and
    effective zero;
-2. the two source sections and all reducible-fibre components as nineteen
+2. source sections and all reducible-fibre components giving nineteen
    individual `QQ`-rational divisor classes;
 3. their exact intersection matrix, a determinant-one identification with
-   determinant-1184 `NS0031`, and a proof that the geometric Picard rank is
-   exactly 19;
+   the selected new Neron--Severi lattice, and a proof that the geometric
+   Picard rank is exactly 19;
 4. complete component and section incidence data for the marked-`U` planner
    and equation compiler.
 
-The next narrow calculation is to algebraize the certified model-157 formal
-branch, for example as a characteristic-zero section-first or
-rational-surface-base-change curve containing that residue disk, and then
-find and certify a rational point on it. A longer finite `7`-adic lift, or a
-purely formal family without algebraization, does not pass this gate.
-
-The first exact rational-coordinate scan on the formal branch is negative in
-its declared box: all 247 reduced values `m9=n/d` with `|n|,d<=40` in the
-model-157 residue disk lift through `7^40`, but none simultaneously rationally
-reconstructs all 52 coordinates. This is a bounded miss, not a rational-point
-obstruction. It redirects the next calculation toward an explicit algebraic
-model of the marked curve rather than a blind enlargement of the same box.
+The old NS0031 rational-coordinate scan remains a bounded negative record:
+all 247 reduced values `m9=n/d` with `|n|,d<=40` in the model-157 residue disk
+lift through `7^40`, but none simultaneously rationally reconstructs all 52
+coordinates. The modular obstruction supersedes that search as an arithmetic
+route.
 
 ## Target-free planner and compiler protocol
 
-Once the source gate closes, run the marked-`U` planner with only:
+Once a source passes the arithmetic gate, run the marked-`U` planner with
+only:
 
 - the explicit source `(NS,U,W)` marking;
-- a rootless rank-17 endpoint predicate of determinant 1184;
+- a rootless rank-17 endpoint predicate of the selected NS determinant;
 - a declared low-degree search box beginning with old-fibre degree two;
 - no target Gram, target frame identifier, historical route, or endpoint
   overlap fingerprint.
 
 The selected primitive `U'` must independently pass nefness and
-effective-zero gates. Existing `NS0031` rootless frames and the certified
-`F017` corridor may be used only after selection to identify or compare the
-landing class.
+effective-zero gates. Existing rootless frames and certified corridors may be
+used only after selection to identify or compare the landing class.
 
 Compile the selected moves over `QQ`. The universal degree-two compiler is
 the preferred backend when applicable; another selected degree requires its
-own exact compiler certificate. Modular equations remain discovery data,
-not characteristic-zero endpoints.
+own exact compiler certificate. Modular equations remain discovery data, not
+characteristic-zero endpoints.
 
 ## Arithmetic acceptance certificate
 
 The problem closes only when one certificate chain proves:
 
-1. the compiled equation is the same characteristic-zero K3 with geometric
-   Neron--Severi lattice `NS0031`;
+1. the compiled equation is the same characteristic-zero K3 with the selected
+   geometric Neron--Severi lattice;
 2. the selected fibration has no reducible fibres;
 3. seventeen displayed sections lie in `E(QQ(t))`, are independent, and
-   generate a saturated Shioda lattice of determinant 1184;
+   generate a saturated Shioda lattice of the selected determinant;
 4. torsion is excluded, so the arithmetic Mordell--Weil group is `ZZ^17`;
 5. the planner transcript proves target-free selection occurred before
    endpoint construction and comparison.
@@ -161,18 +140,18 @@ problem.
 ## Canonical supporting records
 
 - [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
-  — theorem excluding the former determinant-950 candidate over `QQ`.
+  — theorem excluding determinant `950` over `QQ`.
+- [`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
+  — split-Clifford/fibre-product theorem excluding determinant `1184` over
+  `QQ`.
 - [`LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md`](LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md)
-  — exact NS0031 source, marked finite-field pair, tangent/lift certificate,
-  and complete degree-three comparisons.
-- [`NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md`](NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md)
-  — exact dependence of the eight omitted residual rows and the resulting
-  one-parameter formally smooth `ZZ_7` marked branch.
-- [`SECTION_FIRST_NORMAL_FORM_COMPILER_2026-09-02.md`](SECTION_FIRST_NORMAL_FORM_COMPILER_2026-09-02.md)
-  and [`RATIONAL_SURFACE_BASE_CHANGE_AUDIT_2026-09-02.md`](RATIONAL_SURFACE_BASE_CHANGE_AUDIT_2026-09-02.md)
-  — equation chart and model-157 quadratic-base-change structure.
+  and [`NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md`](NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md)
+  — retained NS0031 finite-field, finite-lift, and formal-local controls.
 - [`SAME_NS_COMPILER_ROUTES_2026-09-02.md`](SAME_NS_COMPILER_ROUTES_2026-09-02.md)
-  — exact five-edge physical control corridor to `NS0031-F017`.
+  — exact determinant-720 and NS0031 physical control corridors.
+- [`GOLAY_OCTAD_LATTICE_DESIGN_2026-09-01.md`](GOLAY_OCTAD_LATTICE_DESIGN_2026-09-01.md)
+  — exact determinant-720 lattice and the saturation rejection of the known
+  rational `3A5` point.
 - [`MARKED_U_REALIZATION_PLANNER_2026-09-03.md`](MARKED_U_REALIZATION_PLANNER_2026-09-03.md)
   and [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md)
   — planner and compiler contracts.

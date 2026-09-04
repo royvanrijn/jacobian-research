@@ -16,6 +16,7 @@ LOCAL = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-local-fin
 NATIVE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-native-icarm-quotient-audit-v1.json"
 WGXLI = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json"
 NORM8 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-curve12-norm8-incidence-v1.json"
+NORM8_MORE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-norm8-incidence-v1.json"
 OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-calibration-dataset-v1.json"
 TABLE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-icarm-calibration-dataset-v1.tsv"
 
@@ -33,6 +34,7 @@ def build():
     native = json.loads(NATIVE.read_text())
     wgxli = json.loads(WGXLI.read_text())
     norm8 = json.loads(NORM8.read_text())
+    norm8_more = json.loads(NORM8_MORE.read_text())
     if len(local["fibres"]) != 69:
         raise ArithmeticError("the local feature table no longer has 69 rows")
     native_by_id = {int(row["curve_id"]): row for row in native["fibres"]}
@@ -49,6 +51,19 @@ def build():
         row["representative"]: int(row["recognized_public_hit_count"])
         for row in local["class_summaries"]
     }
+    norm8_by_id = {
+        int(norm8["curve"]["icarm_id"]): int(
+            norm8["incidence_signature"]["successful_directions"]
+        ),
+        **{
+            int(row["curve_id"]): int(
+                row["incidence_signature"]["successful_directions"]
+            )
+            for row in norm8_more["fibres"]
+        },
+    }
+    if set(norm8_by_id) != {12, 363, 364, 378, 395}:
+        raise ArithmeticError("expected five exact norm-eight incidence audits")
 
     rows = []
     for source in local["fibres"]:
@@ -103,10 +118,10 @@ def build():
             "fixed_native_rational_split_count": fixed_split_count,
             "fixed_native_geometric_visibility_rank": fixed_visibility_rank,
             "fixed_native_visibility_span_primitive": fixed_visibility_primitive,
-            "norm8_fitted_genus_one_incidence_directions": 12 if curve_id == 12 else None,
+            "norm8_fitted_genus_one_incidence_directions": norm8_by_id.get(curve_id),
             "norm8_incidence_status": (
                 "exact fitted positive control"
-                if curve_id == 12
+                if curve_id in norm8_by_id
                 else "not run in this audit"
             ),
             "local_prime_block_scores_units_1e12": source["block_score_units_1e12"],
@@ -118,6 +133,11 @@ def build():
         }
         if quotient_dimension is not None and quotient_dimension != row["rank_jump_lower_bound_over_generic_17"]:
             raise ArithmeticError(f"curve {curve_id} quotient/rank lower-bound mismatch")
+        if (
+            row["norm8_fitted_genus_one_incidence_directions"] is not None
+            and row["norm8_fitted_genus_one_incidence_directions"] != quotient_dimension
+        ):
+            raise ArithmeticError(f"curve {curve_id} norm-eight/quotient mismatch")
         rows.append(row)
 
     fields = list(rows[0])
@@ -144,7 +164,7 @@ def build():
             "rows_with_complete_fixed_native_cover_visibility": sum(
                 row["fixed_native_cover_inventory_size"] is not None for row in rows
             ),
-            "rows_with_exact_norm8_fitted_incidence": 1,
+            "rows_with_exact_norm8_fitted_incidence": len(norm8_by_id),
             "rows_with_local_fingerprints": len(rows),
             "unknown_quotient_rows_are_literal_nulls": True,
         },
@@ -165,7 +185,7 @@ def build():
                 "all local-symbol features",
                 "the twelve non-null displayed exceptional quotient dimensions",
                 "the seven non-null fixed-cover visibility records",
-                "the curve-12 norm-eight fitted incidence count",
+                "the five non-null norm-eight fitted incidence counts",
             ],
             "heuristic_or_unknown": [
                 "Nagao scores as predictors",
@@ -175,7 +195,8 @@ def build():
             ],
         },
         "inputs": {
-            relative(path): digest(path) for path in (LOCAL, NATIVE, WGXLI, NORM8)
+            relative(path): digest(path)
+            for path in (LOCAL, NATIVE, WGXLI, NORM8, NORM8_MORE)
         },
         "reproducing_command": (
             ".venv/bin/python elkies-k3/scripts/"
@@ -208,7 +229,7 @@ def main():
         table_output.write_text(table_text)
     print(
         "R17ICARMCALIBRATION|rows=69|exact_quotients=12|native_visibility=7|"
-        f"local=69|status=PASS|output={relative(output)}",
+        f"norm8=5|local=69|status=PASS|output={relative(output)}",
         flush=True,
     )
 

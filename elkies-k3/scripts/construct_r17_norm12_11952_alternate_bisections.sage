@@ -38,6 +38,10 @@ DIRECT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f
 PRIORITY_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.tsv"
 PRIORITY_CERTIFICATE_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.json"
 DEFAULT_OUTPUT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisections-v1.json"
+DIRECT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08ab4-direct-fibration-v1.json"
+PRIORITY_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-alternate-bisection-priority-v1.tsv"
+PRIORITY_CERTIFICATE_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-alternate-bisection-priority-v1.json"
+DEFAULT_OUTPUT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-alternate-bisections-v1.json"
 CONTENT_TRIAL_PRIMES = tuple(prime_range(2, 1001))
 
 
@@ -207,6 +211,7 @@ def main() -> None:
             "norm12-orbit-11952",
             "norm12-orbit-103b2",
             "norm12-orbit-08f72",
+            "norm12-orbit-08ab4",
         ),
         default="norm12-orbit-11952",
     )
@@ -226,22 +231,26 @@ def main() -> None:
         "norm12-orbit-11952": DIRECT,
         "norm12-orbit-103b2": HIDDEN_DIRECT,
         "norm12-orbit-08f72": DIRECT_08F72,
+        "norm12-orbit-08ab4": DIRECT_08AB4,
     }[arguments.source_label]
     priority_certificate_path = {
         "norm12-orbit-11952": PRIORITY_CERTIFICATE,
         "norm12-orbit-103b2": HIDDEN_PRIORITY_CERTIFICATE,
         "norm12-orbit-08f72": PRIORITY_CERTIFICATE_08F72,
+        "norm12-orbit-08ab4": PRIORITY_CERTIFICATE_08AB4,
     }[arguments.source_label]
     default_priority = {
         "norm12-orbit-11952": PRIORITY,
         "norm12-orbit-103b2": HIDDEN_PRIORITY,
         "norm12-orbit-08f72": PRIORITY_08F72,
+        "norm12-orbit-08ab4": PRIORITY_08AB4,
     }[arguments.source_label]
     priority_table = arguments.priority_table or default_priority
     output = arguments.output or {
         "norm12-orbit-11952": DEFAULT_OUTPUT,
         "norm12-orbit-103b2": HIDDEN_DEFAULT_OUTPUT,
         "norm12-orbit-08f72": DEFAULT_OUTPUT_08F72,
+        "norm12-orbit-08ab4": DEFAULT_OUTPUT_08AB4,
     }[arguments.source_label]
     expected_count = 39147 if is_alternate_target else 39120
     if arguments.start < 0 or arguments.limit is not None and arguments.limit <= 0:
@@ -349,7 +358,7 @@ def main() -> None:
         label = (
             f"alternate-orbit-{orbit:05x}"
             if is_primary_alternate
-            else f"alternate-08f72-orbit-{orbit:05x}"
+            else f"alternate-{arguments.source_label.rsplit('-', 1)[1]}-orbit-{orbit:05x}"
             if is_alternate_target
             else f"hidden-103b2-orbit-{orbit:05x}"
         )
@@ -428,7 +437,7 @@ def main() -> None:
         "artifact_schema": (
             "elkies-k3.r17-norm12-11952-alternate-bisections.v1"
             if is_primary_alternate
-            else "elkies-k3.r17-norm12-08f72-alternate-bisections.v1"
+            else f"elkies-k3.r17-norm12-{arguments.source_label.rsplit('-', 1)[1]}-alternate-bisections.v1"
             if is_alternate_target
             else "elkies-k3.r17-norm12-103b2-hidden-bisections.v1"
         ),

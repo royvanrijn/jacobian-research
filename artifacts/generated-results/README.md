@@ -64,7 +64,7 @@ are treated as reference artifacts.
   and the same command with `--check`; its whole-file SHA-256 is
   `17986087896ff002ca773796bd91797c4b01d3e09b8913b2c5939870259bdd0d`.
 
-<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT dfc55f2d3daddb75 -->
+<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 1b09c81c025e5fc3 -->
 
 - `elkies-k3-r17-norm12-native-icarm-quotient-audit-v1.json` gives exact
   displayed-subgroup quotients and exhaustive native fixed-cover split spans
@@ -80,10 +80,17 @@ are treated as reference artifacts.
   its whole-file SHA-256 is
   `c34f777af5e4cb91b7a6a844078879557fafbc40073a5a741a76590704e65762`.
 
+- `elkies-k3-r17-norm12-icarm-norm8-incidence-v1.json` records the same exact
+  fitted signatures for all 39 preferred quotient-basis directions on curve
+  395 and 08f72 curves 363, 364, and 378.  Replay it with
+  `sage -python elkies-k3/scripts/certify_r17_norm12_icarm_norm8_incidence.sage --check`;
+  its whole-file SHA-256 is
+  `a247fc46e6098e7b2c7536f6e9684e44381044f8ebd177f2c02814b92801af37`.
+
 - `elkies-k3-r17-norm12-icarm-local-fingerprints-v1.json` and
   `elkies-k3-r17-norm12-icarm-calibration-dataset-v1.json/.tsv` give the exact
   69-fibre local feature table and its fail-closed exact/unknown quotient
-  labels.  Replay them with
+  labels, including five exact norm-eight incidence controls.  Replay them with
   `.venv/bin/python elkies-k3/scripts/audit_r17_norm12_icarm_local_fingerprints.py --check`
   and
   `.venv/bin/python elkies-k3/scripts/build_r17_norm12_icarm_calibration_dataset.py --check`.
