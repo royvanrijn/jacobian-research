@@ -408,7 +408,9 @@ python3 \
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage \
-  --base-value 0 --certify-generic-linear --check
+  --base-value 0 --certify-generic-linear \
+  --output artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-linear-conductor-v1.json \
+  --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage \

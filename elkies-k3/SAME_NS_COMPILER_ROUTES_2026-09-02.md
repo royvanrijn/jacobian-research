@@ -106,9 +106,10 @@ yet a compiled algebraic neighbour sequence from a rational source equation.
 - The simple rational Golay `3I6` specialization saturates to determinant 20,
   not 720, so it cannot be the start of the certified Golay route.
 - NS0031 has exact marked finite-field evidence, a one-parameter formally
-  smooth `ZZ_7` marked branch, and the finite lift as a regression, but no
-  algebraized rational characteristic-zero source has yet been proved.
+  smooth `ZZ_7` marked branch, and the finite lift as a regression. The later
+  split-Clifford/`X_0(37)` obstruction proves that a full rational `NS0031`
+  source cannot exist over `QQ`.
 
 Thus the same-NS fibration-graph middle is now explicit and auditable.  The
-remaining work is equation-level realization of the marked source and then
-edge-by-edge pencil compilation.
+routes remain geometric controls; arithmetic use requires a different NS
+that first passes the rational-marking gate.

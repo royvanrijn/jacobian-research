@@ -46,6 +46,9 @@ DEFAULT_SUBRESULTANT_CHECKPOINT = (
 DEFAULT_SPECIALIZED_FACTORIZATION = (
     RESULTS / "elkies-k3-q80-third-q12-exact-discriminant-specialization-v1.json"
 )
+DEFAULT_GENERIC_LINEAR = (
+    RESULTS / "elkies-k3-q80-third-q12-exact-generic-linear-conductor-v1.json"
+)
 DEFAULT_H_CANDIDATE = (
     RESULTS / "elkies-k3-q80-third-q12-quartic-denominator-candidate-v1.json"
 )
@@ -53,6 +56,9 @@ DEFAULT_GENERIC_QUARTIC_JET = (
     ROOT
     / "artifacts/local/elkies-k3/"
     / "q80-third-q12-exact-generic-quartic-jet-v1.json"
+)
+DEFAULT_GENERIC_QUARTIC_FACTORIZATION = (
+    RESULTS / "elkies-k3-q80-third-q12-exact-generic-quartic-factorization-v1.json"
 )
 SUBRESULTANT_CHECKPOINT_SCHEMA = (
     "elkies-k3-q80-third-q12-exact-quartic-subresultant-checkpoint-v1"
@@ -820,6 +826,27 @@ parser.add_argument(
 )
 parser.add_argument("--certify-generic-linear", action="store_true")
 args = parser.parse_args()
+selected_modes = [
+    args.attempt_quartic_gcd,
+    args.attempt_custom_prs,
+    args.attempt_subresultant_prs,
+    args.attempt_generic_quartic_jet,
+    args.attempt_generic_quartic_division,
+    args.certify_generic_linear,
+]
+if sum(selected_modes) > 1:
+    parser.error("select exactly one factorization/certification mode")
+if args.check and args.output is None:
+    if args.certify_generic_linear:
+        args.output = DEFAULT_GENERIC_LINEAR
+    elif args.attempt_custom_prs or args.attempt_subresultant_prs:
+        args.output = DEFAULT_SPECIALIZED_FACTORIZATION
+    elif args.attempt_generic_quartic_jet:
+        args.output = DEFAULT_GENERIC_QUARTIC_JET
+    elif args.attempt_generic_quartic_division:
+        args.output = DEFAULT_GENERIC_QUARTIC_FACTORIZATION
+    else:
+        parser.error("--check requires --output for the selected mode")
 args.operands = args.operands.resolve()
 args.pencil = args.pencil.resolve()
 args.factor_lift = args.factor_lift.resolve()

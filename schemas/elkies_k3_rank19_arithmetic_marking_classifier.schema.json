@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openai.local/jacobian-research/elkies_k3_rank19_arithmetic_marking_classifier.schema.json",
+  "title": "Rank-19 K3 arithmetic-marking classifier",
+  "type": "object",
+  "required": [
+    "schema",
+    "status",
+    "policy",
+    "accounting",
+    "candidates",
+    "equation_agent_dispatch"
+  ],
+  "properties": {
+    "schema": {
+      "const": "elkies-k3.rank19-arithmetic-marking-classifier.v1"
+    },
+    "status": {
+      "type": "string"
+    },
+    "policy": {
+      "type": "object"
+    },
+    "accounting": {
+      "type": "object",
+      "required": [
+        "candidate_ns_lattices",
+        "ARITHMETICALLY_EXCLUDED",
+        "ARITHMETICALLY_POSSIBLE",
+        "UNKNOWN"
+      ]
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "surface_id",
+          "determinant",
+          "ns_lattice",
+          "transcendental_lattice",
+          "even_clifford_algebra_and_order",
+          "full_discriminant_marking_curve",
+          "easy_quotient_maps",
+          "arithmetic_tests",
+          "classification",
+          "equation_agent_eligible"
+        ],
+        "properties": {
+          "classification": {
+            "enum": [
+              "ARITHMETICALLY_EXCLUDED",
+              "ARITHMETICALLY_POSSIBLE",
+              "UNKNOWN"
+            ]
+          },
+          "equation_agent_eligible": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "equation_agent_dispatch": {
+      "type": "object",
+      "required": [
+        "policy",
+        "all_arithmetically_possible_surface_ids",
+        "different_ns_objective_surface_ids"
+      ]
+    }
+  }
+}

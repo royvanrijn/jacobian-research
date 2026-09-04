@@ -1,0 +1,203 @@
+{
+  "schema": "elkies-k3.rank19-arithmetic-marking-decisions.v1",
+  "policy": {
+    "ARITHMETICALLY_EXCLUDED": "A cited exact certificate, together with its explicitly named theorem inputs, proves that no characteristic-zero K3 over QQ has the requested full rational Neron-Severi marking.",
+    "ARITHMETICALLY_POSSIBLE": "An exact characteristic-zero witness proves that at least one K3 over QQ has geometric Picard rank 19 and all nineteen generators of the requested Neron-Severi lattice defined over QQ.",
+    "UNKNOWN": "Neither of the preceding proof standards has been met. Failure to find a point, a positive-density local screen, a coarse Clifford curve, or a formal p-adic branch does not change this status."
+  },
+  "records": [
+    {
+      "surface_id": "K3-8188cdcda8c57b2d",
+      "classification": "ARITHMETICALLY_POSSIBLE",
+      "certificates": [
+        {
+          "path": "artifacts/generated-results/elkies-k3-h3-q12o5867-endpoint-certificate.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_EXACT_Q12O5867_SOURCE_IDENTITY_RHO19_FULL_MW_R17"
+            },
+            {
+              "path": "picard_rank.geometric_picard_rank_characteristic_zero",
+              "equals": 19
+            },
+            {
+              "path": "mordell_weil.full_geometric_mordell_weil_rank",
+              "equals": 17
+            },
+            {
+              "path": "mordell_weil.full_geometric_mordell_weil_determinant",
+              "equals": 948
+            },
+            {
+              "path": "mordell_weil.saturated",
+              "equals": true
+            },
+            {
+              "path": "mordell_weil.torsion",
+              "equals": "trivial"
+            }
+          ]
+        },
+        {
+          "path": "artifacts/generated-results/elkies-k3-h3-q12o5867-elkies-2026-coordinate-match.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_EXACT_Q12O5867_IS_ELKIES_2026_PUBLISHED_MODEL"
+            }
+          ]
+        }
+      ],
+      "full_marking_curve": {
+        "status": "PARTIAL_ABSTRACT_STABLE_ORTHOGONAL_CURVE_WITH_EXPLICIT_QQ_POINT",
+        "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T))",
+        "explicit_model": null,
+        "boundary": "The explicit rationally marked K3 proves a QQ-point on the full marked period curve; this record does not identify that cover by an independent equation."
+      },
+      "easy_quotient_maps": [
+        {
+          "status": "PASS_EXACT_H3_ATKIN_LEHNER_QUOTIENT",
+          "source": "X_0^6(79)",
+          "target": "X_0^6(79)/<w_474>",
+          "target_genus": 2,
+          "target_model": "u^2 = 16*t^6 - 19*t^4 + 88*t^2 - 48"
+        },
+        {
+          "status": "PASS_EXACT_H3_KUMAR_QUOTIENT",
+          "source": "X_0^6(79)/<w_474>",
+          "target": "P^1_t",
+          "target_genus": 0
+        }
+      ],
+      "arithmetic_tests": [
+        {
+          "status": "PASS_EXACT_NONCM_QQ_POINT",
+          "method": "explicit source comparison",
+          "point": "(t,u)=(14/13, 64*251/13^3) on X_0^6(79)/<w_474>"
+        },
+        {
+          "status": "PASS_EXACT_FULL_RATIONAL_MARKING_WITNESS",
+          "method": "rootless QQ fibration with seventeen exact rational sections, rho=19, saturation, and trivial torsion"
+        }
+      ],
+      "decision": "The determinant-948 R17 surface is an existence witness for a fully rational rank-19 marking over QQ.",
+      "theorem_inputs": []
+    },
+    {
+      "surface_id": "K3-ebaf00b3723751ba",
+      "classification": "ARITHMETICALLY_EXCLUDED",
+      "certificates": [
+        {
+          "path": "artifacts/generated-results/elkies-k3-ns0024-qq-marking-obstruction-v1.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_NS0024_QQ_RATIONAL_MARKING_OBSTRUCTION"
+            },
+            {
+              "path": "ns_id",
+              "equals": "NS0024"
+            },
+            {
+              "path": "ns_determinant",
+              "equals": 950
+            },
+            {
+              "path": "inose_frame.isogeny_degree",
+              "equals": 475
+            }
+          ]
+        }
+      ],
+      "full_marking_curve": {
+        "status": "PARTIAL_ABSTRACT_FULL_MARKING_CURVE_WITH_CERTIFIED_FORGETFUL_QUOTIENT",
+        "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T))",
+        "explicit_model": null,
+        "boundary": "The no-go needs only the forced Inose/Fricke quotient; it does not identify every component of the full marked period cover."
+      },
+      "easy_quotient_maps": [
+        {
+          "status": "PASS_THEOREM_INOSE_FRICKE_FORGETFUL_MAP",
+          "source": "full NS0024 marking curve",
+          "target": "X_0^+(475)",
+          "target_genus": null,
+          "target_model": null
+        }
+      ],
+      "arithmetic_tests": [
+        {
+          "status": "PASS_THEOREM_RATIONAL_POINT_EXCLUSION",
+          "method": "Momose composite-level theorem with witness prime 19",
+          "conclusion": "Every QQ-point of X_0^+(475) is cuspidal or CM, while the primitive rank-one Inose marking forces a noncuspidal non-CM point."
+        }
+      ],
+      "decision": "A full rational NS0024 marking would force a forbidden noncuspidal non-CM rational point on X_0^+(475).",
+      "theorem_inputs": [
+        "Momose's composite-level theorem for X_0^+(N)(QQ)",
+        "the standard Inose correspondence and descent from a full rational divisor marking"
+      ]
+    },
+    {
+      "surface_id": "K3-d1b1381f87d69f1c",
+      "classification": "ARITHMETICALLY_EXCLUDED",
+      "certificates": [
+        {
+          "path": "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
+          "assertions": [
+            {
+              "path": "status",
+              "equals": "PASS_NS0031_QQ_RATIONAL_MARKING_OBSTRUCTION"
+            },
+            {
+              "path": "ns_id",
+              "equals": "NS0031"
+            },
+            {
+              "path": "ns_determinant",
+              "equals": 1184
+            },
+            {
+              "path": "norm_one_modular_curve.genus",
+              "equals": 23
+            }
+          ]
+        }
+      ],
+      "full_marking_curve": {
+        "status": "PARTIAL_ABSTRACT_FULL_MARKING_COVER_OF_EXACT_NORM_ONE_CURVE",
+        "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T))",
+        "explicit_model": null,
+        "boundary": "The stable marked curve maps to the exact norm-one fibre product; an equation for the full cover is not needed for the obstruction."
+      },
+      "easy_quotient_maps": [
+        {
+          "status": "PASS_EXACT_SPLIT_CLIFFORD_NORM_ONE_CURVE",
+          "source": "full NS0031 marking curve",
+          "target": "X_ns(4) x_{X(1)} X_0(37)",
+          "target_genus": 23,
+          "target_model": null
+        },
+        {
+          "status": "PASS_EXACT_FORGET_LEVEL_4_MAP",
+          "source": "X_ns(4) x_{X(1)} X_0(37)",
+          "target": "X_0(37)",
+          "target_genus": 2,
+          "target_model": null
+        }
+      ],
+      "arithmetic_tests": [
+        {
+          "status": "PASS_EXACT_FROBENIUS_LIFT_EXCLUSION",
+          "method": "Vélu classification followed by the mod-4 Frobenius test at 19",
+          "conclusion": "Both noncuspidal QQ-points of X_0(37) have (trace,determinant)=(2,3) modulo 4 and do not lift to the unramified non-split Cartan curve, even after quadratic twist."
+        }
+      ],
+      "decision": "The exact norm-one fibre product has no noncuspidal rational point, so the full rational NS0031 marking cannot exist.",
+      "theorem_inputs": [
+        "Vélu's determination of X_0(37)(QQ)",
+        "the standard marked-K3 ternary-spin period correspondence"
+      ]
+    }
+  ]
+}

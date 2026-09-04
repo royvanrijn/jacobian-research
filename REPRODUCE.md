@@ -2852,7 +2852,9 @@ discriminant and replay the retained quartic-denominator candidate:
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage \
-  --base-value 0 --certify-generic-linear --check
+  --base-value 0 --certify-generic-linear \
+  --output artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-linear-conductor-v1.json \
+  --check
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/audit_q80_third_q12_quartic_denominator_candidate.sage \
@@ -18364,6 +18366,9 @@ The alternate application proof is
 <!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK f968ac0d6fa311fb -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 40745008c2fe2a80 -->
 
 ```bash
 python3 elkies-k3/scripts/certify_ns0024_direct_qq_inose_obstruction.py --check
@@ -18389,7 +18394,7 @@ rational NS0024 marking and a saturated rational NS0024/MW17 basis. The
 checker does not reprove Momose's theorem; see
 [`elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
 
-### NS0031 replacement-source precursor and physical corridor
+### NS0031 local controls and rational-marking obstruction
 
 ```bash
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -18407,6 +18412,9 @@ checker does not reprove Momose's theorem; see
 
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_ns0031_f017_physical_corridor.sage --check
+
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage --check
 ```
 
 The first replay certifies the model-157 marked `GF(7)` pair, a one-dimensional
@@ -18420,8 +18428,28 @@ denominator at most 40 in the residue disk through `7^40`; none reconstructs
 all 52 coordinates over `QQ`. This is bounded negative evidence only. The
 fourth certifies the five physical degree-two edges to rootless
 `NS0031-F017` at the lattice/marking level. That named endpoint remains a
-post-selection control, not permissible target input for the live planner
-milestone.
+post-selection control. The final replay reconstructs the split even-Clifford
+order, identifies `Gamma_ns(4) intersection Gamma_0(37)`, computes its genus
+23 signature, and excludes both noncuspidal rational `X_0(37)` points by the
+mod-4 Frobenius pair `(trace,determinant)=(2,3)` at `19`. Combined with Vélu's
+determination of `X_0(37)(QQ)` and the standard marked-K3 spin correspondence,
+this excludes a full rational NS0031 marking and closes the model-157 route
+negatively over `QQ`.
+
+The arithmetic-gated planner ranking is replayed by
+
+```bash
+sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
+python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
+```
+
+The first command checks the exact NS/T/Clifford records for all 66
+lattice-feasible surfaces, classifies one as arithmetically possible, two as
+excluded, and 63 as unknown, and verifies that no new different-NS row is
+eligible for equation dispatch. The second removes the two proved
+obstructions from the ranking and leaves 64 arithmetic candidates.
+Determinant `720` is the first unresolved different-NS gate after the
+determinant-948 same-surface control.
 
 ### Integral rank-transfer and character-glue calculus
 

@@ -155,9 +155,11 @@ again with the required `c4` unit gates.  Both section identities, the
 `(h*r,h^2*s)` factorization, and recovery of the Tate coefficients are exact
 over `GF(7)(t)`.
 
-This preserves the existing arithmetic boundary: model 157 is a finite-field
-marked point with a finite 7-adic lift, not a rational equation or an
-algebraized characteristic-zero NS0031 family.
+This preserves the local arithmetic boundary: model 157 is a finite-field
+marked point with a formal `ZZ_7` branch, not a rational equation. The later
+split-Clifford/`X_0(37)` theorem proves that no rational point can carry the
+full `NS0031` marking, so this chart is now a local/geometric control rather
+than an open rational-source route.
 
 ## Literature placement
 

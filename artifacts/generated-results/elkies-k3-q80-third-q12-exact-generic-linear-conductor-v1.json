@@ -4,6 +4,7 @@
     "numerator": "0"
   },
   "claim_boundary": "The linear factor and multiplicity three are exact over the full characteristic-zero base. The quartic Q and D factors remain unrecovered. No generic factorization, Jacobian, or birational map is claimed.",
+  "custom_primitive_remainder_sequence": null,
   "discriminant_degree": 15,
   "discriminant_maximum_coordinate_bits": 5783744,
   "factor_degree_exponents_recovered": [
@@ -32,11 +33,15 @@
       2
     ]
   },
+  "generic_quartic_factorization": null,
+  "generic_quartic_first_jet": null,
   "inputs": {
+    "H_candidate": null,
     "factor_lift": {
       "path": "artifacts/local/elkies-k3/q80-third-q12-discriminant-factors-p19-adic-precision12288.json",
       "sha256": "ab776b418520968f14bc21bdc28ca3c53578e0b5e59c4a54f7a2eb271d3f878a"
     },
+    "generic_quartic_jet_artifact": null,
     "operands": {
       "path": "artifacts/generated-results/q80-third-q12-um2-biquadratic-closure-operands-p19-hensel-qq.json",
       "sha256": "b17b4c3def3052fc62d5f37010c64f9642f8e59431807f156c958a0bd50c95db"
@@ -45,9 +50,10 @@
       "path": "artifacts/generated-results/q80-third-q12-um2-biquadratic-resolved-pencil-qq.json",
       "sha256": "ac67210166cd414945e1fa373e8f0d5829ff8231daf83c764c376a32ff4b641e"
     },
+    "specialized_factorization": null,
     "worker": {
       "path": "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
-      "sha256": "a4a7447b524adcda5859704f3a63990370ccf52c67ba76ce6ce4d09ec7d10862"
+      "sha256": "8402c182b687472f4a79182beb5d2d74ce32c7bf264b1eed8bc376bc0dd65559"
     }
   },
   "linear_factor_reconstruction": {
@@ -106,5 +112,6 @@
   },
   "reproduce": "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage --base-value 0 --certify-generic-linear --output artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-linear-conductor-v1.json",
   "schema": "elkies-k3-q80-third-q12-exact-generic-linear-conductor-v1",
-  "status": "PASS_EXACT_GENERIC_LINEAR_CONDUCTOR_MULTIPLICITY_THREE"
+  "status": "PASS_EXACT_GENERIC_LINEAR_CONDUCTOR_MULTIPLICITY_THREE",
+  "subresultant_remainder_sequence": null
 }

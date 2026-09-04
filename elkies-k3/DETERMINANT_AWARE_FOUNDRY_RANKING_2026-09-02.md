@@ -2,6 +2,8 @@
 
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK f968ac0d6fa311fb -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 40745008c2fe2a80 -->
 
 ## Result
 
@@ -164,6 +166,20 @@ marking-level physical corridor, but its rational field of definition is
 open.  Consequently the re-ranking identifies the arithmetic source as its
 next gate rather than launching another raw multisection census.
 
+The arithmetic pre-screen now has an explicit rejection ledger. Of 827
+catalogue surfaces, 66 pass the exact lattice-theoretic MW17 filters;
+determinant `950`/`NS0024` and determinant `1184`/`NS0031` are then removed by
+their rational-marking obstruction certificates, leaving 64 arithmetic
+candidates. The determinant-948 control remains the only fully ready row and
+is outside the different-NS milestone, so determinant `720` is the first live
+different-NS arithmetic gate.
+
+The upstream arithmetic-marking classifier types these as one
+`ARITHMETICALLY_POSSIBLE`, two `ARITHMETICALLY_EXCLUDED`, and 63 `UNKNOWN`.
+Only the first type can enter expensive equation scoring; the determinant-948
+positive control is already realized, so the new different-NS equation-agent
+handoff is empty.
+
 The determinant-1184 NS0031 surface has a one-parameter formally smooth
 `Z_7` marked branch and marking-level corridor evidence, but it is now
 arithmetically excluded over `QQ`: the split-Clifford modular curve is
@@ -187,7 +203,9 @@ shown to be different data.
 Run:
 
 ```bash
+sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py
+sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
 ```
 

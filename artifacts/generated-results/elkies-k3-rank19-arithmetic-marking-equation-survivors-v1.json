@@ -1,0 +1,10 @@
+{
+  "input": {
+    "path": "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+    "sha256": "5c61d8ceebc3d8e2602b60a459ff205d7f258787c729ec2361f571a90d3b785d"
+  },
+  "policy": "This handoff contains only new different-NS rows with an exact ARITHMETICALLY_POSSIBLE classification. UNKNOWN rows are intentionally absent.",
+  "schema": "elkies-k3.rank19-arithmetic-marking-equation-survivors.v1",
+  "status": "PASS_EMPTY_NEW_DIFFERENT_NS_EQUATION_QUEUE",
+  "survivors": []
+}

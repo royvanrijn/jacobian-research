@@ -4,7 +4,7 @@
     "published_r17_reference_determinant": 948,
     "published_r17_reference_norm_four_unoriented_pairs": 1311,
     "rank_jump_coordinate": "Evidence for a rank-jump mechanism is a separate coordinate. Raw multisection counts are not a ranking input.",
-    "readiness_gate": "Expensive equation scoring is authorized only after exact arithmetic field-of-definition evidence, a positive source-equation precursor, and at least a marking-level exact compiler corridor are all attached."
+    "readiness_gate": "A proved obstruction to the full rational rank-19 marking removes a surface from the arithmetic queue. Expensive equation scoring is authorized only after exact arithmetic field-of-definition evidence, a positive source-equation precursor, and at least a marking-level exact compiler corridor are all attached."
   },
   "surfaces": [
     {
@@ -73,10 +73,12 @@
     {
       "surface_id": "K3-d1b1381f87d69f1c",
       "arithmetic_field_of_definition": {
-        "tier": 2,
-        "status": "OPEN_QQ_FIELD_OF_DEFINITION_FINITE_Z7_LIFT_ONLY",
+        "tier": 3,
+        "status": "REJECT_QQ_FULL_RATIONAL_NS0031_MARKING_OBSTRUCTED",
+        "candidate_eligible": false,
         "evidence": [
-          "artifacts/generated-results/elkies-k3-lattice-foundry-ns0031-marked-gf7-hensel-v1.json"
+          "artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json",
+          "elkies-k3/NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md"
         ]
       },
       "source_equation_precursor": {
@@ -96,6 +98,34 @@
       "rank_jump_mechanism": {
         "tier": 3,
         "status": "UNKNOWN_NO_ARITHMETIC_RANK_JUMP_MECHANISM_CERTIFICATE",
+        "evidence": [],
+        "raw_multisection_counts_used": false
+      }
+    },
+    {
+      "surface_id": "K3-ebaf00b3723751ba",
+      "arithmetic_field_of_definition": {
+        "tier": 3,
+        "status": "REJECT_QQ_FULL_RATIONAL_NS0024_MARKING_OBSTRUCTED",
+        "candidate_eligible": false,
+        "evidence": [
+          "artifacts/generated-results/elkies-k3-ns0024-qq-marking-obstruction-v1.json",
+          "elkies-k3/NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md"
+        ]
+      },
+      "source_equation_precursor": {
+        "tier": 3,
+        "status": "NOT_APPLICABLE_ARITHMETIC_MARKING_OBSTRUCTED",
+        "evidence": []
+      },
+      "compiler_corridor": {
+        "tier": 3,
+        "status": "NOT_APPLICABLE_ARITHMETIC_MARKING_OBSTRUCTED",
+        "evidence": []
+      },
+      "rank_jump_mechanism": {
+        "tier": 3,
+        "status": "NOT_APPLICABLE_ARITHMETIC_MARKING_OBSTRUCTED",
         "evidence": [],
         "raw_multisection_counts_used": false
       }

@@ -23,6 +23,7 @@ arithmetic source programme for this milestone.
 
 The live objective has moved to
 [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md),
-with determinant-1184 `NS0031` as the preferred working class because it has
-the strongest current exact source precursor—a one-parameter formally smooth
-`ZZ_7` marked branch—and a certified physical same-NS corridor.
+where determinant-1184 `NS0031` was the next working class because it had the
+strongest exact source precursor. A later split-Clifford/`X_0(37)` theorem
+also excludes its full rational marking; the remaining frames now require
+arithmetic-first reranking.

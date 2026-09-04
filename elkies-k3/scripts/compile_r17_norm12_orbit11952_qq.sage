@@ -51,6 +51,7 @@ OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-dir
 OUTPUT_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json"
 OUTPUT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json"
 OUTPUT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08ab4-direct-fibration-v1.json"
+OUTPUT_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit091e4-direct-fibration-v1.json"
 FRAME_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-isotropic-frame-v1.json"
 
 
@@ -169,6 +170,7 @@ def main() -> None:
             "norm12-orbit-103b2",
             "norm12-orbit-08f72",
             "norm12-orbit-08ab4",
+            "norm12-orbit-091e4",
         ),
         default="norm12-orbit-11952",
     )
@@ -180,6 +182,7 @@ def main() -> None:
         "norm12-orbit-103b2": OUTPUT_103B2,
         "norm12-orbit-08f72": OUTPUT_08F72,
         "norm12-orbit-08ab4": OUTPUT_08AB4,
+        "norm12-orbit-091e4": OUTPUT_091E4,
     }
     output = args.output or default_outputs[args.source_label]
 
@@ -488,6 +491,27 @@ def main() -> None:
             [0, -1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, -1, 0, -1, -1],
             [0, -1, 1, 0, 1, 1, 0, 0, 0, 1, 1, -1, 0, 0, 0, -1, -1],
         ],
+        # Deterministic output of plan_r17_norm12_direct_section_basis.sage.
+        # These sixteen degree-one old sections and orbit-05691 give a
+        # unimodular basis in the orbit-091e4 child frame.
+        "norm12-orbit-091e4": [
+            [0, -1, 0, 0, -1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, -1, 0, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 0, 1],
+            [0, -1, 1, 0, -1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 1, -1, 0, 1, -1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0, -1, 0, -1, 0, 1, 0, 1, 0, 0, 0],
+            [0, 0, 0, -1, -1, 0, 0, 0, 0, 0, -1, 0, 1, 0, 0, 1, 1],
+            [0, 0, 1, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, -1],
+            [0, 0, 0, -1, 0, -1, 1, 0, 0, 0, -1, 0, 1, 0, 0, 1, 1],
+            [1, 0, 0, -1, 0, 0, 0, 0, -1, -1, -1, 0, 0, 1, 0, 0, 1],
+            [0, 0, 1, -1, -1, 1, 0, 0, -2, -1, -1, 1, 0, 1, 0, 1, 1],
+            [0, 0, 0, -1, 0, 0, 1, -1, -1, 0, 0, -1, 0, 1, 0, 1, 1],
+            [0, 0, 1, 0, -1, 0, 0, -1, -1, -1, 0, 0, 0, 1, 0, 1, 1],
+            [0, -1, 1, -1, -1, 0, 0, 1, 0, 0, -1, 1, 0, 1, 0, 0, 1],
+            [0, 0, 1, -1, -1, 0, 0, 0, -1, -1, -1, 1, 0, 1, 1, 0, 1],
+            [-1, 0, 0, -1, 0, 1, 0, 1, -1, 1, 0, -1, 0, 0, 0, 2, 1],
+            [0, 0, 0, -1, 0, -1, 1, 0, -1, -1, -1, 0, 0, 1, 0, 1, 2],
+        ],
     }
     selected_old_vectors = selected_old_vectors_by_label[args.source_label]
     basis_change = matrix(ZZ, target_payload["pinned_identification"]["basis_change_matrix"])
@@ -533,6 +557,7 @@ def main() -> None:
         "norm12-orbit-103b2": ["orbit-1d5f2", "orbit-0abc2"],
         "norm12-orbit-08f72": ["orbit-04eb3"],
         "norm12-orbit-08ab4": ["orbit-1ebca"],
+        "norm12-orbit-091e4": ["orbit-05691"],
     }
     glue_labels = glue_labels_by_source[args.source_label]
     for glue_offset, glue_label in enumerate(glue_labels):
@@ -643,6 +668,7 @@ def main() -> None:
             "norm12-orbit-103b2": "elkies-k3.r17-norm12-orbit103b2-direct-fibration.v1",
             "norm12-orbit-08f72": "elkies-k3.r17-norm12-orbit08f72-direct-fibration.v1",
             "norm12-orbit-08ab4": "elkies-k3.r17-norm12-orbit08ab4-direct-fibration.v1",
+            "norm12-orbit-091e4": "elkies-k3.r17-norm12-orbit091e4-direct-fibration.v1",
         }[args.source_label],
         "status": "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS",
         "divisor": {
@@ -749,6 +775,13 @@ def main() -> None:
                 "an explicit saturated rank-17 section basis on the new equation."
             )
             if args.source_label == "norm12-orbit-08ab4"
+            else (
+                "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
+                "the squarefree degree-24 discriminant, and the primitive rootless alternate-Q80 frame. "
+                "It also transports sixteen old sections and the orbit-05691 rational bisection to "
+                "an explicit saturated rank-17 section basis on the new equation."
+            )
+            if args.source_label == "norm12-orbit-091e4"
             else (
                 "This exact replay constructs H^0(X,O(D)), the quartic pencil, its pointed Jacobian, "
                 "the squarefree degree-24 discriminant, and the primitive rootless published-R17 frame. "

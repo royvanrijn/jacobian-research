@@ -9,10 +9,10 @@
 > its bounded equation-first and finite-field comparisons.  References below
 > to the “current” or “next” equation gate are local to that comparison and no
 > longer set the foundry roadmap. The live objective is the different-NS
-> arithmetic MW17 milestone. The former `NS0024` candidate is arithmetically
-> obstructed; `NS0031` is now preferred because this note records the
-> strongest positive source precursor, now promoted to a one-parameter
-> formally smooth `ZZ_7` marked branch, and an exact physical corridor. See
+> arithmetic MW17 milestone. The former `NS0024` and `NS0031` candidates are
+> both arithmetically obstructed over `QQ`; this note retains the strongest
+> `NS0031` finite-field and formal-local source precursor as geometric
+> evidence only. See
 > [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 
 The strict source-rank ordering is useful, but it is not a sufficient proxy
@@ -190,8 +190,12 @@ one-parameter formally smooth `ZZ_7` branch. The formal-smoothness artifact
 has SHA-256
 `8f6ab911eee02c65427dc8202d99c2300da1ec9eca9cdf35902fde52fd9c943b`.
 This remains a formal local theorem, not an algebraization or a rational
-characteristic-zero point; those are now the next arithmetic gate. See
+characteristic-zero point. The later rational-marking obstruction proves that
+such a point cannot carry exact `NS0031` over `QQ`, so this is no longer the
+next arithmetic gate. See
 [`NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md`](NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md).
+The global arithmetic disposition is
+[`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
 
 A subsequent exact bounded scan fixed the formal coordinate `m9` at all 247
 reduced rational values with numerator and denominator at most 40 in the

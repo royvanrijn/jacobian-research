@@ -18,6 +18,8 @@ HIDDEN_TABLE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bi
 HIDDEN_FRAME = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisection-priority-v1.json"
 HIDDEN_OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-bisections-full-v1.json"
 OUTPUT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisections-full-v1.json"
+OUTPUT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-alternate-bisections-full-v1.json"
+OUTPUT_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-091e4-alternate-bisections-full-v1.json"
 
 
 def digest(path: Path) -> str:
@@ -41,6 +43,8 @@ def main() -> None:
             "norm12-orbit-11952",
             "norm12-orbit-103b2",
             "norm12-orbit-08f72",
+            "norm12-orbit-08ab4",
+            "norm12-orbit-091e4",
         ),
         default="norm12-orbit-11952",
     )
@@ -54,11 +58,13 @@ def main() -> None:
         "norm12-orbit-11952": DEFAULT_OUTPUT,
         "norm12-orbit-103b2": HIDDEN_OUTPUT,
         "norm12-orbit-08f72": OUTPUT_08F72,
+        "norm12-orbit-08ab4": OUTPUT_08AB4,
+        "norm12-orbit-091e4": OUTPUT_091E4,
     }[arguments.source_label]
     chunk_artifact_schema = (
         "elkies-k3.r17-norm12-11952-alternate-bisections.v1"
         if is_primary_alternate
-        else "elkies-k3.r17-norm12-08f72-alternate-bisections.v1"
+        else f"elkies-k3.r17-norm12-{arguments.source_label.rsplit('-', 1)[1]}-alternate-bisections.v1"
         if is_alternate_target
         else "elkies-k3.r17-norm12-103b2-hidden-bisections.v1"
     )
@@ -130,7 +136,7 @@ def main() -> None:
         "artifact_schema": (
             "elkies-k3.r17-norm12-11952-alternate-bisections-full.v1"
             if is_primary_alternate
-            else "elkies-k3.r17-norm12-08f72-alternate-bisections-full.v1"
+            else f"elkies-k3.r17-norm12-{arguments.source_label.rsplit('-', 1)[1]}-alternate-bisections-full.v1"
             if is_alternate_target
             else "elkies-k3.r17-norm12-103b2-hidden-bisections-full.v1"
         ),

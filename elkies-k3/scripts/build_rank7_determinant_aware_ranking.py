@@ -10,7 +10,9 @@ The surviving surfaces are placed in determinant regimes rather than ordered
 by raw determinant.  Arithmetic field evidence, source-equation precursors,
 and compiler corridors are typed readiness gates.  Rank-jump mechanism
 evidence is reported separately and raw multisection counts are never used in
-the priority key.
+the priority key.  A proved obstruction to the full rational rank-19 marking
+removes a surface from the arithmetic candidate queue while preserving it in a
+separate exact-rejection ledger.
 """
 
 from __future__ import annotations
@@ -33,6 +35,10 @@ SURFACE_LEDGER = (
 EVIDENCE = (
     ROOT
     / "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json"
+)
+ARITHMETIC_CLASSIFIER = (
+    ROOT
+    / "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json"
 )
 DEFAULT_OUTPUT = (
     ROOT
@@ -216,10 +222,18 @@ def determinant_regime(
     return {"tier": 3, "label": "ABOVE_BAND_SPARSE_PRESSURE"}
 
 
-def build(catalogue: dict, surface_ledger: dict, evidence: dict) -> dict:
+def build(
+    catalogue: dict,
+    surface_ledger: dict,
+    evidence: dict,
+    arithmetic_classifier: dict,
+) -> dict:
     assert catalogue["schema"] == "elkies-k3.rank7-auxiliary-catalogue.v1"
     assert surface_ledger["schema"] == "elkies-k3.rank7-surface-pareto.v1"
     assert evidence["schema"] == "elkies-k3.determinant-aware-ranking-evidence.v1"
+    assert arithmetic_classifier["schema"] == (
+        "elkies-k3.rank19-arithmetic-marking-classifier.v1"
+    )
     surface_rows = {row["surface_id"]: row for row in surface_ledger["surfaces"]}
     assert set(surface_rows) == {row["surface_id"] for row in catalogue["surfaces"]}
     overlays = {row["surface_id"]: row for row in evidence["surfaces"]}
@@ -238,6 +252,13 @@ def build(catalogue: dict, surface_ledger: dict, evidence: dict) -> dict:
             for evidence_path in row[coordinate].get("evidence", []):
                 if not (ROOT / evidence_path).is_file():
                     raise FileNotFoundError(evidence_path)
+        candidate_eligible = row["arithmetic_field_of_definition"].get(
+            "candidate_eligible", True
+        )
+        if not isinstance(candidate_eligible, bool):
+            raise ValueError(
+                f"bad arithmetic candidate flag for {row['surface_id']}"
+            )
 
     blichfeldt = blichfeldt_data()
     theoretical_minimum = blichfeldt["gram_determinant_lower_bound_integer"]
@@ -245,6 +266,14 @@ def build(catalogue: dict, surface_ledger: dict, evidence: dict) -> dict:
         surface["surface_id"]: even_rootless_witnesses(surface)
         for surface in catalogue["surfaces"]
     }
+    arithmetic_rows = {
+        row["surface_id"]: row for row in arithmetic_classifier["candidates"]
+    }
+    expected_arithmetic_ids = {
+        surface_id for surface_id, witnesses in candidate_witnesses.items() if witnesses
+    }
+    if set(arithmetic_rows) != expected_arithmetic_ids:
+        raise ValueError("arithmetic classifier does not cover the exact candidate set")
     realized_determinants = [
         int(surface["determinant"])
         for surface in catalogue["surfaces"]
@@ -259,6 +288,7 @@ def build(catalogue: dict, surface_ledger: dict, evidence: dict) -> dict:
     )
 
     rejected = []
+    arithmetic_rejected = []
     candidates = []
     for surface in catalogue["surfaces"]:
         surface_id = surface["surface_id"]
@@ -328,6 +358,33 @@ def build(catalogue: dict, surface_ledger: dict, evidence: dict) -> dict:
         arithmetic = arithmetic_coordinate(
             surface_rows[surface_id], overlay.get("arithmetic_field_of_definition")
         )
+        marking_classification = arithmetic_rows[surface_id]["classification"]
+        overlay_eligible = arithmetic.get("candidate_eligible", True)
+        if (marking_classification == "ARITHMETICALLY_EXCLUDED") != (
+            overlay_eligible is False
+        ):
+            raise ValueError(
+                f"arithmetic evidence/classifier disagreement for {surface_id}"
+            )
+        if marking_classification == "ARITHMETICALLY_EXCLUDED":
+            arithmetic_rejected.append(
+                {
+                    "surface_id": surface_id,
+                    "legacy_ns_ids": surface["legacy_ns_ids"],
+                    "determinant": determinant,
+                    "status": marking_classification,
+                    "evidence": [
+                        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+                        *arithmetic.get("evidence", []),
+                    ],
+                    "reason": (
+                        "A proved obstruction to a full QQ-rational rank-19 "
+                        "Neron--Severi marking excludes the required saturated "
+                        "arithmetic MW17 endpoint."
+                    ),
+                }
+            )
+            continue
         precursor = dict(
             overlay.get(
                 "source_equation_precursor",
@@ -365,7 +422,10 @@ def build(catalogue: dict, surface_ledger: dict, evidence: dict) -> dict:
             "compiler_corridor": corridor,
         }
         strict_passes = {
-            "arithmetic_field_of_definition": int(arithmetic["tier"]) == 0,
+            "arithmetic_field_of_definition": (
+                marking_classification == "ARITHMETICALLY_POSSIBLE"
+                and int(arithmetic["tier"]) == 0
+            ),
             "source_equation_precursor": int(precursor["tier"]) <= 1,
             "compiler_corridor": int(corridor["tier"]) <= 1,
         }
@@ -408,6 +468,7 @@ def build(catalogue: dict, surface_ledger: dict, evidence: dict) -> dict:
                     ),
                 },
                 "readiness_filters": readiness,
+                "arithmetic_marking_classification": marking_classification,
                 "readiness_strict_passes": strict_passes,
                 "readiness_missing_gate_count": missing_count,
                 "expensive_equation_scoring_eligible": missing_count == 0,
@@ -472,7 +533,10 @@ def build(catalogue: dict, surface_ledger: dict, evidence: dict) -> dict:
                 "The Blichfeldt bound is not sufficient for lattice existence. The "
                 "imported catalogue is not complete in any determinant band. A formal "
                 "or finite p-adic precursor is not a QQ model. Short-vector density and "
-                "priority rank do not predict arithmetic rank jumps."
+                "priority rank do not predict arithmetic rank jumps. Only surfaces with "
+                "a separately proved rational-marking obstruction are removed by the "
+                "arithmetic rejection gate, and UNKNOWN rows are never equation-scoring "
+                "eligible."
             ),
         },
         "theoretical_boundary": blichfeldt,
@@ -517,7 +581,11 @@ def build(catalogue: dict, surface_ledger: dict, evidence: dict) -> dict:
         "accounting": {
             "catalogue_surfaces": len(catalogue["surfaces"]),
             "theory_rejected_before_scoring": len(rejected),
-            "theory_feasible_with_explicit_rootless_mw17_witness": len(candidates),
+            "arithmetic_marking_rejected_before_scoring": len(arithmetic_rejected),
+            "theory_feasible_with_explicit_rootless_mw17_witness": (
+                len(candidates) + len(arithmetic_rejected)
+            ),
+            "arithmetic_candidates_after_marking_rejections": len(candidates),
             "expensive_equation_scoring_eligible": len(expensive_queue),
             "determinant_regimes": dict(sorted(regime_counts.items())),
         },
@@ -527,6 +595,7 @@ def build(catalogue: dict, surface_ledger: dict, evidence: dict) -> dict:
             row["surface_id"] for row in mechanism_order
         ],
         "theory_rejections": rejected,
+        "arithmetic_marking_rejections": arithmetic_rejected,
         "candidates": candidates,
     }
 
@@ -536,6 +605,9 @@ def main() -> None:
     parser.add_argument("--catalogue", type=Path, default=CATALOGUE)
     parser.add_argument("--surface-ledger", type=Path, default=SURFACE_LEDGER)
     parser.add_argument("--evidence", type=Path, default=EVIDENCE)
+    parser.add_argument(
+        "--arithmetic-classifier", type=Path, default=ARITHMETIC_CLASSIFIER
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--check", action="store_true")
     arguments = parser.parse_args()
@@ -543,13 +615,17 @@ def main() -> None:
         "catalogue": arguments.catalogue.resolve(),
         "surface_ledger": arguments.surface_ledger.resolve(),
         "evidence": arguments.evidence.resolve(),
+        "arithmetic_classifier": arguments.arithmetic_classifier.resolve(),
     }
     payloads = {name: json.loads(path.read_text()) for name, path in paths.items()}
     catalogue_hash = digest(paths["catalogue"])
     if payloads["surface_ledger"]["inputs"].get(relative(paths["catalogue"])) != catalogue_hash:
         raise SystemExit("surface ledger does not match the catalogue hash")
     result = build(
-        payloads["catalogue"], payloads["surface_ledger"], payloads["evidence"]
+        payloads["catalogue"],
+        payloads["surface_ledger"],
+        payloads["evidence"],
+        payloads["arithmetic_classifier"],
     )
     result["inputs"] = {relative(path): digest(path) for path in paths.values()}
     result["reproduce"] = (

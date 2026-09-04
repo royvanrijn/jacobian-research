@@ -1,14 +1,16 @@
 # Lattice foundry report — 2026-09-01
 
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 c8566fbe8f4dc838 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 e93bdd3228be30d0 -->
 
 > **Current programme directive (2026-09-04).** This report records the first
 > target-first foundry run and its then-preferred determinant-950 `NS0024`
 > lattice candidate. A later Fricke-quotient theorem excludes the full
 > rational NS0024 marking required over `QQ`. The live milestone remains an
-> arithmetic MW17 equation selected target-free by the planner, now with
-> determinant-1184 `NS0031` as the preferred working class. See
+> arithmetic MW17 equation selected target-free by the planner. A later
+> split-Clifford argument also excludes determinant-1184 `NS0031`; the
+> remaining frames must now pass the arithmetic marking gate before equation
+> search. See
 > [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 > The source rankings below remain exact records of their declared searches,
 > not the current cross-NS work queue.

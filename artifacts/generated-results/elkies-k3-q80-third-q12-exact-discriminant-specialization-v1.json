@@ -22,11 +22,15 @@
     ]
   ],
   "generic_linear_factor": null,
+  "generic_quartic_factorization": null,
+  "generic_quartic_first_jet": null,
   "inputs": {
+    "H_candidate": null,
     "factor_lift": {
       "path": "artifacts/local/elkies-k3/q80-third-q12-discriminant-factors-p19-adic-precision12288.json",
       "sha256": "ab776b418520968f14bc21bdc28ca3c53578e0b5e59c4a54f7a2eb271d3f878a"
     },
+    "generic_quartic_jet_artifact": null,
     "operands": {
       "path": "artifacts/generated-results/q80-third-q12-um2-biquadratic-closure-operands-p19-hensel-qq.json",
       "sha256": "b17b4c3def3052fc62d5f37010c64f9642f8e59431807f156c958a0bd50c95db"
@@ -35,9 +39,10 @@
       "path": "artifacts/generated-results/q80-third-q12-um2-biquadratic-resolved-pencil-qq.json",
       "sha256": "ac67210166cd414945e1fa373e8f0d5829ff8231daf83c764c376a32ff4b641e"
     },
+    "specialized_factorization": null,
     "worker": {
       "path": "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
-      "sha256": "6e9eb4538e7e61e61cd20de96a1c97c351ce3c306d8d1ed542fc9e656166da98"
+      "sha256": "8402c182b687472f4a79182beb5d2d74ce32c7bf264b1eed8bc376bc0dd65559"
     }
   },
   "linear_factor_reconstruction": {

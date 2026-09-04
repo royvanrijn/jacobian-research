@@ -98,16 +98,18 @@ The direct source problem on `NS0024` should stop.  Modular reconstruction of
 its semistable `A3+A4+A6/MW4` frame remains useful as geometric research, but
 it cannot close the arithmetic MW17 milestone over `QQ(t)`.
 
-After excluding the determinant-948 surface, the next working candidate is
-`NS0031`, determinant `1184`. Its source key is the artifact-qualified pair
+The next working candidate was `NS0031`, determinant `1184`. Its source key is
+the artifact-qualified pair
 `(prescribed-root-sources-all-ns-3e8-all-a-v1.json, NS0031-S001)`, not the
 shard-local identifier alone. The `A1+2A7/MW2` source has complete-basis pole
 profile `[0,1]`, two complete marked pairs in the normalized square-twist
 `GF(7)` chart, and a one-parameter formally smooth `ZZ_7` marked branch
 through model 157. The same lattice has an exact five-edge physical
-degree-two corridor to rootless `NS0031-F017`. These are still formal-local
-and lattice certificates, not a rational characteristic-zero source. The
-live gate is recorded in
+degree-two corridor to rootless `NS0031-F017`. The later exact
+split-Clifford/`X_0(37)` argument now excludes a full rational `NS0031`
+marking as well; see
+[`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
+The reranked live gate is recorded in
 [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 
 ## References

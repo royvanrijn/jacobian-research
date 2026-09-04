@@ -62,8 +62,10 @@ All `NS0024` source routes are now parked for the arithmetic MW17 milestone.
 The semistable `A3+A4+A6/MW4` reconstruction and the `D5+E8/MW4`
 completed-core route remain valid geometric investigations, but neither can
 produce a full rational NS0024 marking over `QQ`. The live different-NS
-objective and its replacement `NS0031` source gate are in
+objective is in
 [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
+Its former replacement `NS0031` is now independently excluded over `QQ` by
+[`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
 
 ## References
 

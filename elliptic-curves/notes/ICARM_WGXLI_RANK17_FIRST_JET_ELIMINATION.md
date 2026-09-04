@@ -102,9 +102,12 @@ has all 53 nonzero equations and an exact witness. Thus the clean-prime empty
 target charts are not explained by the mod-17 degeneration or by omitting a
 projective boundary.
 
-The mod-17 compact control also gives exact witnesses, but some reduced
-control equations vanish identically. The 53 and 67 controls are the
-nondegenerate positive controls.
+The mod-17 compact control also gives exact algebraic witnesses, but the fixed
+control fibre at `q=1` is singular and some reduced control equations vanish
+identically. It is deliberately retained only as a degenerate regression
+witness. The 53 and 67 controls are the nonsingular, nondegenerate positive
+controls used to rule out an implementation-level explanation of the empty
+target charts.
 
 ## Interpretation
 

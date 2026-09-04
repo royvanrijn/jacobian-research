@@ -31747,7 +31747,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:f198a81bd105d643e62cbe25240f0a48e7bee9bde0eebf96854cd4ec91804d0f",
+      "artifact_hash": "sha256:d3d7cf012982499a919ef39d9b4d3cc01c13badd76fb290fcf56a4a02cfd6c5e",
       "software_lock": [
         "elliptic-curves/cas/eliminate_icarm_wgxli_rank17_first_jet.sage",
         "artifacts/generated-results/elliptic-curves/icarm_wgxli_rank17_lineage_v1.json",
@@ -38218,7 +38218,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:2d6d43e28c836f577b96e7defa860324f4eed3c496c94cde30714ef8bf629802",
+      "artifact_hash": "sha256:8402c182b687472f4a79182beb5d2d74ce32c7bf264b1eed8bc376bc0dd65559",
       "software_lock": [
         "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
         "elkies-k3/scripts/audit_q80_third_q12_quartic_denominator_candidate.sage",
@@ -38254,7 +38254,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:2d6d43e28c836f577b96e7defa860324f4eed3c496c94cde30714ef8bf629802",
+      "artifact_hash": "sha256:8402c182b687472f4a79182beb5d2d74ce32c7bf264b1eed8bc376bc0dd65559",
       "software_lock": [
         "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
         "artifacts/generated-results/elkies-k3-q80-third-q12-exact-discriminant-specialization-v1.json",
@@ -38290,7 +38290,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:2d6d43e28c836f577b96e7defa860324f4eed3c496c94cde30714ef8bf629802",
+      "artifact_hash": "sha256:8402c182b687472f4a79182beb5d2d74ce32c7bf264b1eed8bc376bc0dd65559",
       "software_lock": [
         "elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage",
         "artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-quartic-factorization-v1.json",
@@ -38629,7 +38629,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:ae72cc17cafdd54a8da9f994c00ebf9d94f60c6e1087307ea8b798c9e06bc305",
+      "artifact_hash": "sha256:7733284cd125606dd1b986bc34f3c3a6b4adbe499e3d2c9f3f54c93fd8ef06a6",
       "software_lock": [
         "elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage",
         "elkies-k3/data/fibrations/elkies_2026_published_r17_model.json",
@@ -38719,7 +38719,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:2d9255550fe4a8064c9935488e04f26ec9b3b0b7365ca932d886023c97c5740b",
+      "artifact_hash": "sha256:3277cb49c8f3c143729eb180a376a6feb1c67312de75f4cba97b9c5177db3b38",
       "software_lock": [
         "elkies-k3/scripts/construct_r17_norm12_11952_inherited_bisections.sage",
         "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
@@ -39048,7 +39048,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:04b6b2883307794d5c39f5a6323febe5800aec98362b3e4b21dc5f1bfcc92ef7",
+      "artifact_hash": "sha256:c77ecde2d52d39589b1878a28658ce454a191e823fad7aac4ba8e98585c7ddc7",
       "software_lock": [
         "elkies-k3/scripts/rank_r17_norm12_11952_alternate_bisection_orbits.sage",
         "elkies-k3/scripts/construct_r17_norm12_11952_alternate_bisections.sage",
@@ -39090,7 +39090,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:04b6b2883307794d5c39f5a6323febe5800aec98362b3e4b21dc5f1bfcc92ef7",
+      "artifact_hash": "sha256:c77ecde2d52d39589b1878a28658ce454a191e823fad7aac4ba8e98585c7ddc7",
       "software_lock": [
         "elkies-k3/scripts/compile_r17_norm12_orbit11952_qq.sage",
         "elkies-k3/scripts/construct_r17_norm12_11952_inherited_bisections.sage",
@@ -39515,6 +39515,100 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Fail-closed arithmetic-marking classifier for rank-19 Neron--Severi lattices",
+      "scope": "The exact rootless-MW17 subset of the rank-seven catalogue contains 66 candidate rank-19 Neron--Severi lattices. For every row the classifier checks the NS=U+W(-1) rank, signature, determinant, evenness, minimum, and Smith invariants against the catalogue's primitive ternary K3 complement T; imports the exact rational even-Clifford algebra and integral-order ledger; and separates its coarse norm-one curve from the full stable discriminant-kernel marking curve. Hash-pinned decision records classify the determinant-948 NS0001 control as ARITHMETICALLY_POSSIBLE by its exact QQ equation, seventeen rational sections, rho=19, saturation, and trivial torsion; classify determinant-950 NS0024 and determinant-1184 NS0031 as ARITHMETICALLY_EXCLUDED by their proved modular obstructions; and retain the other 63 rows as UNKNOWN. The new different-NS equation-agent handoff is empty because UNKNOWN rows are not dispatched. This is not a complete classification of rank-19 NS lattices or a decision for any of the 63 unknown marked curves.",
+      "canonical_source": "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
+        "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-GOLAY-DET720-NS-SATURATION"
+      ],
+      "checker": "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:6f11d7da2b35f6e0d03d88f3a7abe1f5954f14e9dd9840d4b057d2c308191619",
+      "software_lock": [
+        "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage",
+        "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json",
+        "schemas/elkies_k3_rank19_arithmetic_marking_classifier.schema.json",
+        "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json"
+      ],
+      "supersedes_notes": [
+        "a coarse Clifford norm-one curve or genus-zero Gamma_0(N) row is enough to pass the rational-marking gate",
+        "UNKNOWN arithmetic-marking rows may be sent directly to an equation agent"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Arithmetic-gated reranking of different-NS MW17 frames",
+      "scope": "The determinant-aware planner now treats a proved obstruction to a full QQ-rational rank-19 marking as an exact pre-scoring rejection. Of 827 catalogue surfaces, 66 pass the exact lattice-theoretic MW17 filters; NS0024/determinant 950 and NS0031/determinant 1184 are then removed by their rational-marking obstruction certificates, leaving 64 arithmetic candidates. The determinant-948 R17 surface remains the only fully ready row but is excluded by the different-NS milestone. The first unresolved different-NS row is the determinant-720 Golay surface: it has an exact rootless MW17 lattice and physical corridor, while its arithmetic marking remains open because the known rational 3A5 model saturates to determinant 20. This is a fail-closed work ordering, not an existence theorem, a complete catalogue, or an arithmetic source construction.",
+      "canonical_source": "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+      "dependencies": [
+        "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
+        "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-GOLAY-DET720-NS-SATURATION",
+        "EC-K3-GOLAY-DET720-PHYSICAL-CORRIDOR"
+      ],
+      "checker": "elkies-k3/scripts/build_rank7_determinant_aware_ranking.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:2946118b5f1f6fef15e0a696818ce46e1d939a04bd0a2ac59565fe1ebe3d28e9",
+      "software_lock": [
+        "elkies-k3/scripts/build_rank7_determinant_aware_ranking.py",
+        "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json",
+        "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-surface-pareto-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json"
+      ],
+      "supersedes_notes": [
+        "NS0031 remains in the live determinant-aware arithmetic candidate ranking",
+        "the arithmetic foundry ranking does not have an explicit rejection state"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/AGENTS.md",
+        "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT",
       "kind": "theorem",
       "state": "proved",
@@ -39609,7 +39703,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "First planner-found arithmetic MW17 fibration on a different Neron--Severi lattice",
-      "scope": "The determinant-948 published-R17 to noncyclic-4A1/MW13 to published-R17 chain is equation-explicit with thirteen saturated rational sections and target-free reverse selection, so another equation on that surface is not the next foundry milestone. Determinant-950 NS0024 and determinant-1184 NS0031 are both arithmetically excluded: their rational-marking obstruction theorems prove that neither lattice can occur with all nineteen Neron--Severi divisor classes rational over QQ, hence neither supports the required saturated arithmetic MW17 endpoint. The NS0031 formal ZZ_7 branch and five-edge geometric corridor remain exact but are no longer an arithmetic source route. The planner must now rerank the remaining different-NS frames with the rational-marking arithmetic gate ahead of equation search; determinant-720 is the strongest existing lattice/corridor control, but its known rational 3A5 model saturates to determinant 20 and is not a valid source. Completion requires an explicit characteristic-zero elliptic K3 source over QQ with nineteen individual QQ-rational divisor classes, an exact saturated rank-19 marking, source U and incidence data, and geometric Picard rank exactly 19; target-free selection of a primitive nef rootless U'; a characteristic-zero endpoint equation; and seventeen displayed QQ(t)-sections whose saturated Shioda lattice has the new NS determinant, with torsion excluded. A modular point, finite p-adic or purely formal lift, supplied target, unsaturated subgroup, or equation without the rational rank-19 marking does not close the problem.",
+      "scope": "The determinant-948 published-R17 to noncyclic-4A1/MW13 to published-R17 chain is equation-explicit with thirteen saturated rational sections and target-free reverse selection, so another equation on that surface is not the next foundry milestone. Determinant-950 NS0024 and determinant-1184 NS0031 are both arithmetically excluded: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION and EC-K3-NS0031-QQ-MARKING-OBSTRUCTION prove that neither lattice can occur with all nineteen Neron--Severi divisor classes rational over QQ, hence neither supports the required saturated arithmetic MW17 endpoint. EC-K3-NS0031-MARKED-FORMAL-BRANCH and its five-edge geometric corridor remain exact but are no longer an arithmetic source route. EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK now applies the rational-marking arithmetic gate before equation search; determinant-720 is the strongest existing lattice/corridor control, but its known rational 3A5 model saturates to determinant 20 and is not a valid source. Completion requires an explicit characteristic-zero elliptic K3 source over QQ with nineteen individual QQ-rational divisor classes, an exact saturated rank-19 marking, source U and incidence data, and geometric Picard rank exactly 19; target-free selection of a primitive nef rootless U'; a characteristic-zero endpoint equation; and seventeen displayed QQ(t)-sections whose saturated Shioda lattice has the new NS determinant, with torsion excluded. A modular point, finite p-adic or purely formal lift, supplied target, unsaturated subgroup, or equation without the rational rank-19 marking does not close the problem.",
       "canonical_source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION",
@@ -39620,6 +39714,7 @@
         "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
         "EC-K3-GOLAY-DET720-NS-SATURATION",
         "EC-K3-GOLAY-DET720-PHYSICAL-CORRIDOR",
+        "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
         "EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA",
         "EC-K3-ARITHMETIC-RANK-TRANSFER",
         "EC-K3-RELATIVE-U-BRIDGE-LIFTING",
@@ -39639,7 +39734,6 @@
       "closes_problems": [],
       "narrows_problems": [],
       "consumers": [
-        "README.md",
         "elkies-k3/AGENTS.md",
         "elkies-k3/ARITHMETIC_RANK_TRANSFER_2026-09-03.md",
         "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",

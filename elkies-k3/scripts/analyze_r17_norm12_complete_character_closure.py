@@ -57,6 +57,24 @@ CONFIG = {
         "older_degrees": (8, 12),
         "description": "alternate-Q80 orbit-08f72",
     },
+    "norm12-orbit-08ab4": {
+        "input": ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-alternate-bisections-full-v1.json",
+        "direct": ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08ab4-direct-fibration-v1.json",
+        "output": ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-complete-character-closure-v1.json",
+        "status": "PASS_EXACT_COMPLETE_ALTERNATE_BISECTION_EQUATIONS",
+        "count": 39147,
+        "older_degrees": (10, 10),
+        "description": "alternate-Q80 orbit-08ab4",
+    },
+    "norm12-orbit-091e4": {
+        "input": ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-091e4-alternate-bisections-full-v1.json",
+        "direct": ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit091e4-direct-fibration-v1.json",
+        "output": ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-091e4-complete-character-closure-v1.json",
+        "status": "PASS_EXACT_COMPLETE_ALTERNATE_BISECTION_EQUATIONS",
+        "count": 39147,
+        "older_degrees": (9, 12),
+        "description": "alternate-Q80 orbit-091e4",
+    },
 }
 
 Atom = tuple[str, ...]

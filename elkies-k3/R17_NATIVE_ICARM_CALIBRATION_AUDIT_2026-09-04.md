@@ -1,5 +1,7 @@
 # Native R17/alternate-Q80 ICARM calibration audit
 
+<!-- status-consumer: EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT 1b09c81c025e5fc3 -->
+
 This note is the navigation surface for the exact seven-fibre native cover
 audit and the fail-closed 69-fibre calibration table.  The canonical machine
 certificates are:

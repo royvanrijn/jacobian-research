@@ -22,12 +22,15 @@ HISTORICAL_FRAME = ROOT / "artifacts/generated-results/q80-alternate-fifth-q6-ro
 DIRECT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json"
 DIRECT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08f72-direct-fibration-v1.json"
 DIRECT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08ab4-direct-fibration-v1.json"
+DIRECT_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit091e4-direct-fibration-v1.json"
 OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-priority-v1.json"
 TABLE = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisection-priority-v1.tsv"
 OUTPUT_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.json"
 TABLE_08F72 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08f72-alternate-bisection-priority-v1.tsv"
 OUTPUT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-alternate-bisection-priority-v1.json"
 TABLE_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-alternate-bisection-priority-v1.tsv"
+OUTPUT_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-091e4-alternate-bisection-priority-v1.json"
+TABLE_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-091e4-alternate-bisection-priority-v1.tsv"
 
 
 def digest(path: Path) -> str:
@@ -75,6 +78,7 @@ def main() -> None:
             "norm12-orbit-11952",
             "norm12-orbit-08f72",
             "norm12-orbit-08ab4",
+            "norm12-orbit-091e4",
         ),
         default="norm12-orbit-11952",
     )
@@ -87,16 +91,19 @@ def main() -> None:
         "norm12-orbit-11952": DIRECT,
         "norm12-orbit-08f72": DIRECT_08F72,
         "norm12-orbit-08ab4": DIRECT_08AB4,
+        "norm12-orbit-091e4": DIRECT_091E4,
     }[arguments.source_label]
     output = arguments.output or {
         "norm12-orbit-11952": OUTPUT,
         "norm12-orbit-08f72": OUTPUT_08F72,
         "norm12-orbit-08ab4": OUTPUT_08AB4,
+        "norm12-orbit-091e4": OUTPUT_091E4,
     }[arguments.source_label]
     table_output = arguments.table_output or {
         "norm12-orbit-11952": TABLE,
         "norm12-orbit-08f72": TABLE_08F72,
         "norm12-orbit-08ab4": TABLE_08AB4,
+        "norm12-orbit-091e4": TABLE_091E4,
     }[arguments.source_label]
 
     orbit_certificate = json.loads(ORBIT_CERTIFICATE.read_text())

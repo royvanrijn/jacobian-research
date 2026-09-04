@@ -19,6 +19,37 @@ This directory contains reproducible outputs from retained research
 computations.  Only outputs with a named generator and verification path below
 are treated as reference artifacts.
 
+Run `python3 scripts/audit_generated_provenance.py` for a read-only scan of
+repository-local SHA-256 edges embedded in tracked JSON artifacts.  The report
+separates active co-locked dependencies from historical/unclassified pins;
+`--fail-current` is the strict release form, while `--include-historical`
+shows frozen or otherwise non-current differences for retrospective review.
+Never bulk-refresh the latter merely because the current source has changed.
+
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 40745008c2fe2a80 -->
+
+- `elkies-k3-rank19-arithmetic-marking-classifier-v1.json` records exact
+  NS/T/Clifford data for all 66 rootless-MW17 candidate surfaces, separates
+  coarse norm-one curves from full discriminant-marking curves, and reports
+  one `ARITHMETICALLY_POSSIBLE`, two `ARITHMETICALLY_EXCLUDED`, and 63
+  `UNKNOWN` rows. `elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json`
+  is the fail-closed new different-NS equation handoff; it is empty. Replay
+  both with
+  `sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check`.
+  Their whole-file SHA-256 values are respectively
+  `5c61d8ceebc3d8e2602b60a459ff205d7f258787c729ec2361f571a90d3b785d`
+  and `805554d14438cd0c36d2437f16ff4bd3823d2a80cab2c37a01c1a2963cb71182`.
+
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
+
+- `elkies-k3-ns0031-qq-marking-obstruction-v1.json` records the exact even
+  Clifford order, the `Gamma_ns(4) intersect Gamma_0(37)` coset signature, the
+  complete two-point noncuspidal `X_0(37)(QQ)` input, and the mod-4 Frobenius
+  exclusion at 19.  Replay it with
+  `sage elkies-k3/scripts/certify_ns0031_qq_marking_obstruction.sage --check`;
+  its whole-file SHA-256 is
+  `49fc6570bf5a6e9411ae617e5c0aac45d04795af02a64f878d158cfa437818ae`.
+
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION 9e1c09d47fcf0bde -->
 
 - `elkies-k3-r17-norm12-11952-product-tate-parity-v1.json` gives the exact

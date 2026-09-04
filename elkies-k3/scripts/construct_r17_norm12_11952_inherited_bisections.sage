@@ -50,6 +50,8 @@ DIRECT_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit103
 OUTPUT_103B2 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-103b2-inherited-bisection-covers-v1.json"
 DIRECT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit08ab4-direct-fibration-v1.json"
 OUTPUT_08AB4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-08ab4-inherited-bisection-covers-v1.json"
+DIRECT_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-orbit091e4-direct-fibration-v1.json"
+OUTPUT_091E4 = ROOT / "artifacts/generated-results/elkies-k3-r17-norm12-091e4-inherited-bisection-covers-v1.json"
 CONTENT_TRIAL_PRIMES = tuple(prime_range(2, 1001))
 
 
@@ -232,6 +234,7 @@ def main() -> None:
             "norm12-orbit-11952",
             "norm12-orbit-103b2",
             "norm12-orbit-08ab4",
+            "norm12-orbit-091e4",
         ),
         default="norm12-orbit-11952",
     )
@@ -252,16 +255,19 @@ def main() -> None:
         "norm12-orbit-11952": DIRECT,
         "norm12-orbit-103b2": DIRECT_103B2,
         "norm12-orbit-08ab4": DIRECT_08AB4,
+        "norm12-orbit-091e4": DIRECT_091E4,
     }[args.source_label]
     output = args.output or {
         "norm12-orbit-11952": OUTPUT,
         "norm12-orbit-103b2": OUTPUT_103B2,
         "norm12-orbit-08ab4": OUTPUT_08AB4,
+        "norm12-orbit-091e4": OUTPUT_091E4,
     }[args.source_label]
     expected_inherited_count = {
         "norm12-orbit-11952": 121,
         "norm12-orbit-103b2": 82,
         "norm12-orbit-08ab4": 131,
+        "norm12-orbit-091e4": 155,
     }[args.source_label]
 
     model = json.loads(MODEL.read_text())
@@ -611,7 +617,7 @@ def main() -> None:
         "artifact_schema": (
             "elkies-k3.r17-norm12-11952-inherited-bisection-covers.v1"
             if is_primary_alternate
-            else "elkies-k3.r17-norm12-08ab4-inherited-bisection-covers.v1"
+            else f"elkies-k3.r17-norm12-{args.source_label.rsplit('-', 1)[1]}-inherited-bisection-covers.v1"
             if is_alternate_target
             else "elkies-k3.r17-norm12-103b2-inherited-82-bisection-covers.v1"
         ),
@@ -621,7 +627,7 @@ def main() -> None:
             else
             "PASS_EXACT_121_INHERITED_ALTERNATE_Q80_BISECTION_COVERS"
             if is_primary_alternate
-            else "PASS_EXACT_131_INHERITED_08AB4_ALTERNATE_Q80_BISECTION_COVERS"
+            else f"PASS_EXACT_{expected_inherited_count}_INHERITED_{args.source_label.rsplit('-', 1)[1].upper()}_ALTERNATE_Q80_BISECTION_COVERS"
             if is_alternate_target
             else "PASS_EXACT_82_INHERITED_103B2_MARKING_BISECTION_COVERS"
         ),

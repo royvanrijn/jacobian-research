@@ -5,21 +5,40 @@ neighbour, descent, and specialization calculations require explicit gates and
 reproducible, checkpointed outputs. `../MATH_STATUS.json` remains the authority
 for exact claim status.
 
-## Current milestone
+## Primary lanes
+
+Only these two lanes set the operational roadmap.
+
+### Lane A — record lane
+
+Use the 69 recognized public fibres and the exact native quotient
+calibrations to construct a controlled rank-jump search. Candidate selection,
+search exposure, and exact rank certification must be separated and recorded;
+the search must have declared arithmetic gates, limits, checkpoints, and a
+reproducible certificate path. The current calibration boundary is twelve
+exact quotient labels, with the other 57 still `UNKNOWN` pending saturated
+chart transports. See
+[`R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md`](R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md).
+
+### Lane B — foundry lane
+
+Obtain one arithmetic rank-19 source marking over `QQ` on a different,
+arithmetically admissible Neron--Severi lattice, then run the target-free
+marked-`U` planner and exact equation compiler. Determinant-950 `NS0024` and
+determinant-1184 `NS0031` cannot supply that rational source: both full
+rational markings are obstructed. The immediate gate is therefore the exact
+arithmetic moduli decision for determinant `720`, followed if necessary by
+the same arithmetic-first screen down the remaining planner queue. See
+[`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md)
+and the batch
+[`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md).
+
+## Current certified position
 
 - **Determinant-948 closure:** the explicit noncyclic chain `published R17 ->
   4A1/MW13 -> published R17` now has thirteen saturated rational sections and
-  target-free reverse selection.  Further equations on this same surface are
+  target-free reverse selection. Further equations on this same surface are
   supporting work, not the next foundry milestone.
-- **Next foundry milestone (OPEN):** construct the first arithmetic MW17
-  fibration on a different Neron--Severi lattice that is selected target-free
-  by the planner. Determinant-950 `NS0024` and determinant-1184 `NS0031` are
-  both excluded because neither can carry the required full rational rank-19
-  marking over `QQ`. The planner must rerank the remaining frames through the
-  arithmetic marking gate before more equation work; determinant `720` is the
-  strongest lattice/corridor control, but its known rational model saturates
-  to determinant `20`. See
-  [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md).
 - **Published R17 over `QQ`:** rootless `24 I1`, Picard rank 19, saturated determinant-948 Mordell–Weil lattice of rank 17.
 - **Alternate Q80 over `QQ`:** the canonical equation route is now the direct degree-two hop `norm12-orbit-11952` from published R17. It gives a polynomial K3 model with `(deg A,deg B,deg Delta)=(8,12,24)`, `24 I1`, the alternate determinant-948 rootless frame, and 17 saturated rational sections.
 - **Complete norm-twelve public-curve atlas:** all 43 shared-zero degree-two charts form six rational-`PGL2` `j`-classes, and all 474 equations in the pinned ICARM snapshot have exact preimage decisions. There are 69 rational hits and 2,775 misses; all 376 native chart/fibre comparisons are untwisted. Every wgxli component is recognized. Curve 12 is the first native alternate-Q80 rank-at-least-29 control, with exact displayed quotient `Z^12`; curves 273, 302, and 398 miss all six classes.
@@ -38,6 +57,7 @@ for exact claim status.
 
 ## Canonical current notes
 
+- [`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md) — exact `T`/Clifford pre-screen, full-marking versus coarse-curve boundary, current `1/2/63` possible/excluded/unknown classification, and equation-agent dispatch rule.
 - [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — open milestone, arithmetic-first reranking gate, and target-free acceptance contract.
 - [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md) — Fricke-quotient theorem excluding a full rational NS0024 marking and hence arithmetic NS0024/MW17 over `QQ(t)`.
 - [`NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md`](NS0024_DIRECT_QQ_INOSE_OBSTRUCTION_2026-09-04.md) — narrower direct degree-475 Inose-source obstruction retained as a supporting corollary.
@@ -48,6 +68,8 @@ for exact claim status.
 <!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK f968ac0d6fa311fb -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 40745008c2fe2a80 -->
 - [`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) — direct noncyclic `4A1/MW13` equation, saturated arithmetic MW13 basis, and target-free reverse hop.
 - [`R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md) — all 43 equations, six exact `j`-classes, record-curve misses, and the exact five-fibre R17 lineage.
 - [`R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md`](R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md) — seven native quotient/cover audits, 51 norm-eight signatures on five fibres, and the fail-closed 69-fibre calibration table.
@@ -69,18 +91,26 @@ for exact claim status.
 - [`ELKIES_K3_PROCESS_ATLAS.md`](ELKIES_K3_PROCESS_ATLAS.md) — chronology and historical route context.
 - [`../archive/elkies-k3/`](../archive/elkies-k3/) — superseded handoffs and experiments.
 
-## Active fronts
+## Secondary fronts
 
-The useful fronts are:
+These are worthwhile supporting problems, but they do not set the roadmap and
+should not be presented or resourced as peers of the two primary lanes:
 
-1. identify the stable arithmetic moduli curve for the determinant-720
-   marking and decide whether a rational noncuspidal point has exact saturated
-   determinant `720`; if not, continue the same arithmetic-first screen down
-   the determinant-aware planner queue;
-2. solve the 34 missing published-R17 rational visibility directions by a target-directed inverse problem, without enumerating the ambient trisection or quadrisection cosets;
-3. compute the nonzero 2-primary quotient classes for the seventeen alternate-Q80 product twists from a full involution lattice or complete two-Selmer calculation, or obtain a complete degree-28 finite-field Frobenius rank bound; the zero class is closed, and the unsliced eight-variable `msolve` campaign remains superseded;
-4. study multi-prime defect reachability and possible finite-prime sufficient sets;
-5. add independent publication-grade replays or `J1` classification only when needed.
+- solve the 34 missing published-R17 rational-visibility directions by a
+  target-directed inverse problem, without enumerating the ambient trisection
+  or quadrisection cosets;
+- compute the nonzero 2-primary quotient classes for the seventeen
+  alternate-Q80 product twists from a full involution lattice or complete
+  two-Selmer calculation, or obtain a complete degree-28 finite-field
+  Frobenius rank bound; the zero class is closed, and the unsliced
+  eight-variable `msolve` campaign remains superseded;
+- study multi-prime defect reachability and possible finite-prime sufficient
+  sets;
+- complete `J1` surface-automorphism classification only when it directly
+  supports a primary lane or a publication requirement.
+
+Independent publication-grade replays remain useful validation work, not a
+separate research front.
 
 Do **not** restart the old giant Q80 reconstruction, broad foundry enumeration, or ungated rank searches just because those scripts remain in the repository.
 Do not count another determinant-948 equation as the different-NS foundry
@@ -94,7 +124,7 @@ over `QQ`; the full rational marking is now obstructed.
 
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION bf05d9b06ccc1502 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 c384abf4d95dae7d -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 e93bdd3228be30d0 -->
 <!-- status-consumer: OP-EC-NEXT e135b23ef9910845 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->

@@ -331,6 +331,12 @@ one chart does not exclude a high-rank fibre on another chart.
   untwisted.  Curve 12 supplies the first native alternate-Q80
   rank-at-least-29 control and has displayed quotient `Z^12` over the generic
   rank-17 subgroup.
+- A later projection from the live 556-curve database preserved the 69
+  recognized fibres and 1,545 displayed points.  Seven priority fibres now
+  have exact displayed quotients and complete fixed-cover visibility spans;
+  five alternate-Q80 fibres have exact fitted norm-eight incidence for all 51
+  preferred quotient directions.  The other 57 quotient rows remain literal
+  `UNKNOWN` pending chart-specific saturated section transports.
 - Complete singular arithmetic-genus-one searches on alternate Q80 and hidden
   `103b2` found no nonsplit rational quadratic normalization.  Multi-prime and
   CRT genus-two searches also missed, but remain bounded; global genus-two
@@ -345,11 +351,14 @@ one chart does not exclude a high-rank fibre on another chart.
   degree-475 Fricke quotient, contradicting the modular-curve obstruction and
   the geometric MW-rank-one frame.  Geometric NS0024 work and larger fields are
   not excluded.
-- Determinant-1184 NS0031 became the preferred different-NS replacement.  Its
-  model-157 marked point has an exact one-parameter formally smooth `ZZ_7`
-  branch and a five-edge physical corridor; algebraization, a rational
-  characteristic-zero point, the full rational rank-19 marking, and an endpoint
-  equation remain open.
+- Determinant-1184 NS0031 briefly became the preferred different-NS
+  replacement.  Its model-157 point has an exact one-parameter formally smooth
+  `ZZ_7` branch and a five-edge physical corridor, but the split-Clifford
+  modular curve maps to `X_0(37)` and neither noncuspidal rational point lifts
+  through the required level-four non-split Cartan condition.  Thus a full
+  rational NS0031 marking is impossible over `QQ`; its local and geometric
+  certificates remain valid controls, and the remaining frames must be
+  reranked through the arithmetic-marking gate before equation work.
 
 Durable lesson: exclusion of one quotient class is not a rank theorem, formal
 smoothness is not algebraization, and a geometric Neron--Severi lattice must
@@ -359,11 +368,13 @@ pass a separate Galois/rational-marking gate before arithmetic equation work.
 
 The repository-wide continuation queue is
 [`STATUS.md`](STATUS.md#active-open-problems). The principal K3 foundry gate is
-algebraization of the NS0031 model-157 formal branch to an explicit
-characteristic-zero source over `QQ` with a full rational rank-19 marking,
-followed by target-free marked-`U` selection and exact endpoint compilation.
-The determinant-948 route is a complete control, and NS0024 arithmetic MW17 is
-closed over `QQ`.
+an arithmetic-first reranking of the remaining different-NS frames, followed
+only for a lattice whose full rational rank-19 marking survives by target-free
+marked-`U` selection and exact endpoint compilation. The determinant-948 route
+is a complete control; NS0024 and NS0031 arithmetic MW17 are both closed over
+`QQ`. Determinant 720 is the strongest remaining lattice/corridor control, but
+its known rational `3A5` point saturates to determinant 20 and is not a valid
+source.
 
 The principal rank-32 gate remains a completed residual 2-Selmer quotient on
 the same minimal curve, followed only on a passing fibre by cover or point

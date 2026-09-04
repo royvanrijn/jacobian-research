@@ -24,9 +24,11 @@ from collections import Counter, defaultdict
 from fractions import Fraction
 from hashlib import sha256
 import json
-from math import gcd, isqrt
+from math import gcd, isqrt, lcm
 from pathlib import Path
 from typing import Iterable
+
+import sympy as sp
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -39,6 +41,16 @@ DEFAULT_OUTPUT = (
     ROOT
     / "artifacts/generated-results"
     / "elkies-k3-r17-norm12-08f72-streaming-character-closure-v1.json"
+)
+RANK28 = (
+    ROOT
+    / "artifacts/generated-results"
+    / "elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json"
+)
+Q103B2 = (
+    ROOT
+    / "artifacts/generated-results"
+    / "elkies-k3-norm12-orbit-103b2-twist-section-v1.json"
 )
 
 Atom = tuple[object, ...]
@@ -109,11 +121,13 @@ def stream_records(path: Path):
         raise ValueError(f"{path}: incomplete final bisection record")
 
 
-def primitive(coefficients: tuple[int, ...]) -> tuple[tuple[int, ...], int]:
+def primitive(
+    coefficients: tuple[int, ...], allowed_degrees: tuple[int, ...] | None = (1, 2)
+) -> tuple[tuple[int, ...], int]:
     values = list(coefficients)
     while values and values[-1] == 0:
         values.pop()
-    if len(values) not in (2, 3):
+    if allowed_degrees is not None and len(values) - 1 not in allowed_degrees:
         raise ValueError(f"branch polynomial has degree {len(values) - 1}")
     content = 0
     for value in values:
@@ -187,6 +201,49 @@ def branch_character(coefficients: tuple[int, ...]) -> tuple[Support, Fraction, 
         raise ArithmeticError("factor support is not proportional to the branch")
     scalar = Fraction(scale) * ratio
     return frozenset(atoms), scalar, degree, irreducible
+
+
+def catalog_character(coefficients: list[object]) -> tuple[Support, Fraction]:
+    """Factor one committed squarefree character without factoring its content."""
+
+    values = [Fraction(str(value)) for value in coefficients]
+    while values and not values[-1]:
+        values.pop()
+    if not values:
+        raise ValueError("zero catalog character")
+    variable = sp.Symbol("u")
+    expression = sum(
+        sp.Rational(value.numerator, value.denominator) * variable**index
+        for index, value in enumerate(values)
+    )
+    coefficient, factors = sp.factor_list(expression, variable)
+    scalar = Fraction(int(coefficient.p), int(coefficient.q))
+    atoms = set()
+    factored_degree = 0
+    for factor, exponent in factors:
+        if exponent != 1:
+            raise ValueError("committed catalog character is not squarefree")
+        polynomial = sp.Poly(factor, variable, domain=sp.QQ)
+        rational_coefficients = [
+            Fraction(int(value.p), int(value.q))
+            for value in reversed(polynomial.all_coeffs())
+        ]
+        denominator = lcm(*(value.denominator for value in rational_coefficients))
+        integral = tuple(
+            value.numerator * (denominator // value.denominator)
+            for value in rational_coefficients
+        )
+        normalized, factor_scale = primitive(integral, allowed_degrees=None)
+        scalar *= Fraction(factor_scale, denominator)
+        degree = len(normalized) - 1
+        atom_type = "L" if degree == 1 else "Q" if degree == 2 else "P"
+        atoms.add((atom_type, *normalized))
+        factored_degree += degree
+    if factored_degree != len(values) - 1:
+        raise ArithmeticError("catalog factor degrees do not reconstruct the character")
+    if factored_degree % 2:
+        atoms.add(("I",))
+    return frozenset(atoms), scalar
 
 
 def rational_square(value: Fraction) -> bool:
@@ -308,6 +365,47 @@ def relation_search(by_support: dict[Support, list[dict]]):
     }
 
 
+def committed_catalog():
+    rank28 = json.loads(RANK28.read_text())
+    q103b2 = json.loads(Q103B2.read_text())
+    result = []
+    for target in rank28["traces"][0]["targets"]:
+        support, scalar = catalog_character(
+            target["branch_polynomial_q_coefficients_low_to_high"]
+        )
+        result.append((f"rank28-{target['target_label']}", support, scalar))
+    support, scalar = catalog_character(q103b2["q_coefficients_low_to_high"])
+    result.append(("q_103b2", support, scalar))
+    return result
+
+
+def catalog_product_matches(by_support: dict[Support, list[dict]], catalog):
+    matches = []
+    for catalog_label, target_support, target_scalar in catalog:
+        pairs = set()
+        for left_support, left_records in by_support.items():
+            right_support = left_support ^ target_support
+            right_records = by_support.get(right_support)
+            if right_records is None:
+                continue
+            for left in left_records:
+                for right in right_records:
+                    if left["label"] >= right["label"]:
+                        continue
+                    if rational_square(
+                        left["scalar"] * right["scalar"] / target_scalar
+                    ):
+                        pairs.add((left["label"], right["label"]))
+        if pairs:
+            matches.append(
+                {
+                    "catalog_label": catalog_label,
+                    "pairs": [list(pair) for pair in sorted(pairs)],
+                }
+            )
+    return matches
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, action="append", required=True)
@@ -391,11 +489,16 @@ def main() -> None:
     collisions.sort(key=lambda item: [record["label"] for record in item["records"]])
 
     relations, relation_counts = relation_search(by_support)
+    catalog = committed_catalog()
+    catalog_matches = catalog_product_matches(by_support, catalog)
+    catalog_match_count = sum(len(item["pairs"]) for item in catalog_matches)
     status_parts = []
     if collisions:
         status_parts.append("EQUAL_COVER_COLLISIONS_FOUND")
     if relations:
         status_parts.append("THREE_CHARACTER_CLOSURE_FOUND")
+    if catalog_match_count:
+        status_parts.append("COMMITTED_CATALOG_PRODUCT_MATCH_FOUND")
     status = (
         "PASS_EXACT_" + "_AND_".join(status_parts)
         if status_parts
@@ -403,7 +506,10 @@ def main() -> None:
     )
 
     output_path = arguments.output.resolve()
-    inputs = input_paths + ([] if priority_path is None else [priority_path])
+    inputs = input_paths + ([] if priority_path is None else [priority_path]) + [
+        RANK28,
+        Q103B2,
+    ]
     payload = {
         "schema": "elkies-k3.r17-norm12-streaming-quadratic-character-closure.v1",
         "status": status,
@@ -420,6 +526,11 @@ def main() -> None:
         "support_graph_search": relation_counts,
         "three_character_relation_count": len(relations),
         "three_character_relations": relations,
+        "committed_character_catalog": {
+            "comparison_count": len(catalog),
+            "formal_variable_rename_product_match_count": catalog_match_count,
+            "formal_variable_rename_product_matches": catalog_matches,
+        },
         "inputs": {relative(path): digest(path) for path in inputs},
         "proof_boundary": (
             "Every supplied exact degree-two branch record is streamed, with complete "
@@ -432,8 +543,12 @@ def main() -> None:
             + "Equal covers are grouped by identical geometric support "
             "and exact rational-square scalar ratio. Because every support has size one or "
             "two, the endpoint and triangle search exhausts q_i*q_j=q_k while retaining the "
-            "rational constant squareclass. A collision or relation still requires the "
-            "separate anti-invariant height and base certification."
+            "rational constant squareclass. Every pair product is also compared exactly "
+            "against the eleven committed rank-28 characters and q_103b2 by support xor "
+            "and a factorless rational-square test. Those catalog comparisons are formal "
+            "variable renames until a target-base degree-two compatibility gate is proved. "
+            "A collision or relation still requires the separate anti-invariant height and "
+            "base certification."
         ),
         "reproducing_command": (
             ".venv/bin/python "
@@ -459,7 +574,7 @@ def main() -> None:
         "R17STREAMCHAR"
         f"|source={arguments.source_label}|characters={len(seen_labels)}"
         f"|supports={len(by_support)}|collisions={len(collisions)}"
-        f"|relations={len(relations)}|status={status}"
+        f"|relations={len(relations)}|catalog_matches={catalog_match_count}|status={status}"
         f"|output={relative(output_path)}",
         flush=True,
     )

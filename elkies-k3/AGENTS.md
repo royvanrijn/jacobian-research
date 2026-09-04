@@ -12,7 +12,7 @@ and a reproducible certificate plan.
 
 ## Start here
 
-1. [`README.md`](README.md) — current milestone and active fronts.
+1. [`README.md`](README.md) — two primary lanes and current certified position.
 2. [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — open different-NS objective and fail-closed source/endpoint gates.
 3. [`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) — determinant-948 noncyclic closure that motivates the pivot.
 4. [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md) — reusable theorem/algorithm layer.
@@ -62,4 +62,5 @@ These remain useful provenance/regression material and are indexed from `../arch
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 c384abf4d95dae7d -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK f968ac0d6fa311fb -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 e93bdd3228be30d0 -->

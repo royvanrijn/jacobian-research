@@ -9,7 +9,9 @@ Status: **OPEN**.
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 c384abf4d95dae7d -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK f968ac0d6fa311fb -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 40745008c2fe2a80 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 e93bdd3228be30d0 -->
 
 ## Milestone
 
@@ -73,6 +75,19 @@ lattice/corridor control, but its known rational `3A5/MW2` equation is not a
 source for the determinant-720 lattice: the displayed determinant-720
 sublattice saturates with index `6` to determinant `20`, with rational
 3-torsion and a rational half-section.
+
+The reranked planner artifact makes this fail-closed: 66 surfaces pass the
+exact lattice filters, the two proved arithmetic obstructions are removed,
+and 64 candidates remain. After the same-NS determinant-948 control, the
+determinant-720 surface is the first unresolved row.
+
+The separate arithmetic-marking classifier sharpens the type of those rows:
+one surface is `ARITHMETICALLY_POSSIBLE` (the already-realized
+determinant-948 control), two are `ARITHMETICALLY_EXCLUDED`, and the remaining
+63 are `UNKNOWN`. Its new different-NS equation-agent handoff is therefore
+empty. `UNKNOWN` rows stay in the arithmetic-curve queue and may not be sent
+to an equation agent. See
+[`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md).
 
 The next narrow calculation is therefore an exact arithmetic moduli decision
 for the determinant-720 marking: identify the stable marked curve and decide
@@ -144,6 +159,9 @@ problem.
 - [`NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0031_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
   — split-Clifford/fibre-product theorem excluding determinant `1184` over
   `QQ`.
+- [`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md)
+  — batch classifier, marking-level proof boundary, and empty fail-closed
+  different-NS equation handoff.
 - [`LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md`](LATTICE_FOUNDRY_EQUATION_FIRST_SHORTLIST_2026-09-02.md)
   and [`NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md`](NS0031_MARKED_FORMAL_BRANCH_2026-09-04.md)
   — retained NS0031 finite-field, finite-lift, and formal-local controls.

@@ -91,6 +91,9 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-e6a1-orbit103-specialization-search-v1.json
 !/artifacts/generated-results/elkies-k3-e6a1-orbit103-specialization-rank-probes-v1.json
 !/artifacts/generated-results/elkies-k3-rank7-determinant-aware-ranking-v1.json
+!/artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json
+!/artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json
+!/artifacts/generated-results/elkies-k3-ns0031-qq-marking-obstruction-v1.json
 !/artifacts/generated-results/elkies-k3-r17-rank28-genus-one-bisection-pilot-v1.json
 !/artifacts/generated-results/elkies-k3-r17-multisection-visibility-filtration-v1.json
 !/artifacts/generated-results/elkies-k3-r17-visibility-complexity-v1.json

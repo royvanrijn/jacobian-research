@@ -381,7 +381,7 @@ section directly.
 | Published R17 controls automatically calibrate alternate Q80 | Exact alternate-j preimage polynomials for all four rank-25--28 controls have no rational roots. | The four misses are retained as negative controls. | Use the complete norm-twelve public-curve atlas; curve 12 and the `08f72`/`11952` fibres are native alternate controls. |
 | Target-fitted visibility predicts unseen exceptional directions | Low-genus pencils can be forced through known quotient directions after the targets are supplied. | Exact fitted quartics and declared bounded splitting searches. | Separate rigid, predeclared, and post-hoc visibility; calibrate prospective predictors on held-out controls. |
 | A geometric NS0024 MW17 route can close the arithmetic `QQ` milestone | A full rational NS0024 marking would force a forbidden rational non-CM degree-475 Fricke-quotient point. | Exact geometric frames, modular source work, and physical corridors remain valid over algebraic closures or larger fields. | Park arithmetic NS0024 over `QQ`; require the Galois/rational-marking gate before equation compilation. |
-| A smooth modular point or long Hensel lift supplies a rational source | NS0031 model 157 has a unit Jacobian minor and hence a formal `ZZ_7` branch, but no algebraization or rational `QQ` point follows. | The GF(7), finite-lift, formal-smoothness, and five-edge corridor certificates are retained separately. | Algebraize first, then prove a rational rank-19 marking and Picard rank before target-free endpoint work. |
+| A smooth modular point or long Hensel lift supplies a rational source | NS0031 model 157 has a unit Jacobian minor and hence a formal `ZZ_7` branch, but its split-Clifford curve has no noncuspidal rational point with the required marking. | The GF(7), finite-lift, formal-smoothness, and five-edge corridor certificates are retained as local/geometric controls. | Stop the NS0031 `QQ` lift campaign; run the rational-marking arithmetic screen before equation work on the next NS. |
 | The cheapest native bisection prefix can be used as an exhaustive sieve | The 1,024 native alternate-Q80 covers were selected by cost and do not represent all native classes. | Exact priority keys and the full inherited/smooth-character domains. | Keep ranked prefixes and complete enumerations separately typed; never discard outside-prefix candidates mathematically. |
 | Norm-eight inversion exhausts every zero-Tate-class carrier | Exact quotient analysis exposed 49 norm-twelve residual traces in addition to the 63,917 norm-eight minima. | The original inversion remains a valid first layer. | Enumerate the full minimum-norm quotient spectrum and close all 833 residual trace/target cases before claiming zero-class exclusion. |
 | Successful no-hit chunks imply a complete singular-pencil exclusion | Independent chunks can omit intervals, exceptional traces, or malformed outputs. | All raw chunks and exact exceptional traces are retained. | Require half-open ranges, source hashes, gap/overlap checks, fail-closed parsing, and one merged coverage certificate. |
@@ -416,10 +416,11 @@ pass.
 
 The first new construction milestone is a planner-found arithmetic MW17
 fibration on a different NS.  Arithmetic NS0024 over `QQ` is closed
-negatively.  For NS0031, algebraize the model-157 formal branch, obtain a
-characteristic-zero rational source with all nineteen divisor classes defined
-over `QQ`, certify Picard rank 19 and the determinant-one marking, and only
-then run target-free marked-`U` selection and endpoint compilation.
+negatively, and the split-Clifford/`X_0(37)` obstruction now closes NS0031
+negatively as well. Rerank the remaining frames through the rational-marking
+arithmetic gate. Determinant `720` is the strongest lattice/corridor control,
+but its known rational `3A5` point saturates to determinant `20` and is not a
+valid source.
 
 The alternate-Q80 product laboratory has closed only the zero Tate class and
 the complete rational intersection-one deep-trace screen.  Nonzero quotient

@@ -591,7 +591,9 @@ Recover and certify the first generic discriminant conductor factor with:
 ```bash
 sage -python \
   elkies-k3/scripts/probe_q80_third_q12_exact_discriminant_specialization.sage \
-  --base-value 0 --certify-generic-linear --check
+  --base-value 0 --certify-generic-linear \
+  --output artifacts/generated-results/elkies-k3-q80-third-q12-exact-generic-linear-conductor-v1.json \
+  --check
 ```
 
 The worker uses pair arithmetic in the exact quadratic descent field, strips
@@ -1465,6 +1467,9 @@ The current proof boundary and replay commands are in
 <!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
+<!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK f968ac0d6fa311fb -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 40745008c2fe2a80 -->
 - `certify_ns0024_qq_marking_obstruction.py` pins the stronger
   Fricke-quotient argument. Momose's composite-level theorem at
   `N=475,p=19`, together with the rank-one Inose gate, excludes the full
@@ -1473,7 +1478,7 @@ The current proof boundary and replay commands are in
 - `certify_lattice_foundry_ns0031_marked_gf7_hensel.sage`,
   `certify_lattice_foundry_ns0031_marked_formal_smoothness.sage`, and
   `certify_ns0031_f017_physical_corridor.sage` are exact controls for the
-  replacement NS0031 objective. They certify respectively the marked
+  former replacement NS0031 candidate. They certify respectively the marked
   model-157 point and lift through `7^8`, exact dependence of the eight
   omitted residual equations and a one-parameter formally smooth `ZZ_7`
   marked branch, and five physical degree-two marking-level edges to rootless
@@ -1485,6 +1490,27 @@ The current proof boundary and replay commands are in
   and attempts exact simultaneous rational reconstruction. The current
   certificate has 247 `NO_FULL_RR` rows and no rational point. This is a
   bounded miss, not a rational-point obstruction.
+- `certify_ns0031_qq_marking_obstruction.sage` supplies the global arithmetic
+  decision that the bounded scan could not. It reconstructs the split even
+  Clifford order, identifies its norm-one group with
+  `Gamma_ns(4) intersection Gamma_0(37)`, computes index `304` and genus `23`,
+  and excludes both noncuspidal rational `X_0(37)` points by their Frobenius
+  trace-determinant pair `(2,3)` modulo `4` at `19`. With Vélu's theorem and
+  the standard marked-K3 spin correspondence, this rules out a full rational
+  NS0031 marking over `QQ`.
+- `build_rank7_determinant_aware_ranking.py` now consumes explicit
+  arithmetic classifications. It preserves NS0024 and NS0031 in an exact
+  rejection ledger instead of leaving either in the live equation queue; the
+  regenerated planner retains 64 arithmetic candidates and places determinant
+  `720` first after the determinant-948 control.
+- `build_rank19_arithmetic_marking_classifier.sage` checks all 66 exact
+  rootless-MW17 candidate NS lattices against their rank-three complements,
+  imports the even-Clifford ledger, and keeps the coarse norm-one curve
+  separate from the full stable discriminant-kernel curve. Exact decision
+  records currently give one `ARITHMETICALLY_POSSIBLE`, two
+  `ARITHMETICALLY_EXCLUDED`, and 63 `UNKNOWN` rows. Its equation-survivor
+  handoff excludes every `UNKNOWN` row and is empty for the new different-NS
+  objective.
 - `extract_lattice_foundry_ns0024_joint_gb_point.sage` decodes a
   zero-dimensional joint basis over an arbitrary irreducible residue-field
   modulus, scans the Frobenius-field points, and emits only after replaying all
