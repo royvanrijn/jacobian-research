@@ -94,6 +94,50 @@ class ElkiesResidualSelmerGateTests(unittest.TestCase):
         self.assertEqual(record["status"], GATE.REJECT_STATUS)
         self.assertFalse(record["bounded_point_search_authorized"])
 
+    def test_proved_selmer_parity_tightens_rank32_threshold(self) -> None:
+        record = GATE.monotone_sieve_gate_record(
+            stages=[
+                {
+                    "stage": "proved_upper",
+                    "residual_upper_bound": 15,
+                    "proof_status": "PROVED_UPPER_BOUND",
+                    "evidence": "upper.json",
+                }
+            ],
+            search_limits={"height": 1000},
+            total_two_selmer_parity=1,
+            parity_evidence="root-number-and-2-parity.json",
+        )
+        self.assertEqual(record["raw_required_residual_dimension"], 15)
+        self.assertEqual(record["required_residual_dimension"], 16)
+        self.assertEqual(record["parity_adjusted_proved_residual_upper_bound"], 14)
+        self.assertEqual(record["status"], GATE.REJECT_STATUS)
+
+    def test_parity_turns_one_above_known_rank_into_exact_bound(self) -> None:
+        required, effective_upper, residual_parity = (
+            GATE.parity_adjusted_residual_thresholds(
+                known_generic_rank=29,
+                target_rank=30,
+                residual_upper_bound=1,
+                total_two_selmer_parity=1,
+            )
+        )
+        self.assertEqual((required, effective_upper, residual_parity), (2, 0, 0))
+
+    def test_parity_refinement_requires_evidence(self) -> None:
+        with self.assertRaisesRegex(GATE.ResidualSelmerGateError, "evidence"):
+            GATE.monotone_sieve_gate_record(
+                stages=[
+                    {
+                        "stage": "pending",
+                        "residual_upper_bound": None,
+                        "proof_status": "NO_FINITE_UPPER_BOUND_YET",
+                    }
+                ],
+                search_limits={"height": 1000},
+                total_two_selmer_parity=1,
+            )
+
     def test_monotone_sieve_bounds_cannot_increase(self) -> None:
         with self.assertRaisesRegex(GATE.ResidualSelmerGateError, "not monotone"):
             GATE.monotone_sieve_gate_record(

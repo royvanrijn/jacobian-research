@@ -1,0 +1,347 @@
+{
+  "H2": {
+    "ambient_toric_divisor_factor_coefficients_low_to_high": [
+      "2329194047563391944849",
+      "-102008498433433223862",
+      "1613273089579844173",
+      "-7246594450667464",
+      "-92565987508526",
+      "1351328284796",
+      "-4931855054",
+      "-20570824",
+      "243997",
+      "-822",
+      "1"
+    ],
+    "degree": 46,
+    "factorization_identity": "P_H2=P_trivial*P_elliptic",
+    "full_frobenius_coefficients_low_to_high": [
+      "-194601457737218374015252897482606517248752511250435061741970186919977171663746558432543145079561009",
+      "8190907965922665857107453194696528777586151840153641577929375441780700389704287983467903703599190",
+      "-113951182922996618470550236523111787462068399578557224446565447384967610589223060442500170836151",
+      "86339821716915419061345613586687771891471267045684070785754880219033653470151540899498223116",
+      "14534956584204203365693221407268529699262761566390830562686777833740344602531218774906237098",
+      "-159470243695686476038291683521057359934214963794282021451976398301411212814044356691949850",
+      "381970859393997919601946191663311430110896310650317168457863652422197319665349537655434",
+      "6673843636881419619165525130965188022786804738635789234256259550203105924704335551550",
+      "-79581440967021184385929507111569721500884304843445093098414291795980788012735231846",
+      "383147656045791746670581302187659093408303553419250737329912439526808660716250110",
+      "88123508765236443835067385971674327431348202068405866312461265164818869819362",
+      "-18745828566362538268193750862362229337349981992148513355897252397787636825520",
+      "178840987222913824511179872916203930210314168466612430708331167758211694655",
+      "-703054577198798226995567170511266867560737873999625747538948159258137234",
+      "-2162047848728018674491364804647775530380559554741803483015022759573239",
+      "45877447383321356162467268005495765553246964954841748255183572931172",
+      "-293163025997939851907159779278391963037843594226781256631006429678",
+      "1179293365206353462215361590532035539587909943522695720546182344",
+      "-5228699451983882466556518841213495246155063720093783027817762",
+      "-12375129430767176327069783479040612132241866336804305218284",
+      "979218855312342776874373504940031889987393339020577813264",
+      "-12682866967451907933460312115795901071903738517174457272",
+      "76868992956123914512184618904099024332561334356944344",
+      "0",
+      "-4095529487778992728018787303750813806412772889176",
+      "36002708027746249143607611307780055250312378552",
+      "-148100445351053965466291200745790646723937296",
+      "99720675711433031604365968799725952257004",
+      "2244853518088675622095740347407079361538",
+      "-26975844487484725825713699941932705224",
+      "357290324519918984313357565787668302",
+      "-2978997723238535340607993517115492",
+      "7479887954507170608765438417991",
+      "129591852145139140211377022034",
+      "-1756364219518381314058680495",
+      "9808690456811055157414320",
+      "-2456727769124994977218",
+      "-569102236940105950910",
+      "6297885837739478854",
+      "-28139597312767550",
+      "-85808626105706",
+      "1908706885850",
+      "-9268985162",
+      "-2933516",
+      "206279",
+      "-790",
+      "1"
+    ],
+    "trivial_lattice_factor_description": "(T-p)^2*det(T-pF|H^0(D))*det(T-pF|H^0(Z))",
+    "trivial_lattice_frobenius_coefficients_low_to_high": [
+      "289048159795659680188475502761294616529",
+      "-12659043494700423949860240996845019702",
+      "184803554667159473720587459807956492",
+      "-224821842660777948565191556943986",
+      "-22153977196500016829416686268203",
+      "215610483664233740432279185092",
+      "-43716643078717303412870881",
+      "-9572987535485540893329390",
+      "34937910713450879172735",
+      "68005665622288815908",
+      "1861468949515204815",
+      "-27174729190002990",
+      "-6611856250609",
+      "1737422080452",
+      "-9511434747",
+      "-5142706",
+      "225228",
+      "-822",
+      "1"
+    ]
+  },
+  "boundary": {
+    "H0_D_frobenius_coefficients_low_to_high": [
+      "-352275361",
+      "5142706",
+      "0",
+      "-274",
+      "1"
+    ],
+    "H0_Z_frobenius_coefficients_low_to_high": [
+      "-43716643078717303412870881",
+      "638199169032369392888626",
+      "2329194047563391944849",
+      "-68005665622288815908",
+      "124097929967680321",
+      "1811648612666866",
+      "0",
+      "-96523448914",
+      "-352275361",
+      "10285412",
+      "-18769",
+      "-274",
+      "1"
+    ],
+    "branch_factor_records": [
+      {
+        "branch_degree": 1,
+        "closed_point_degrees_in_cover": [
+          1,
+          2
+        ],
+        "cubic_factor_degrees_over_residue_field": [
+          1,
+          2
+        ]
+      },
+      {
+        "branch_degree": 1,
+        "closed_point_degrees_in_cover": [
+          1,
+          2
+        ],
+        "cubic_factor_degrees_over_residue_field": [
+          1,
+          2
+        ]
+      },
+      {
+        "branch_degree": 2,
+        "closed_point_degrees_in_cover": [
+          6
+        ],
+        "cubic_factor_degrees_over_residue_field": [
+          3
+        ]
+      }
+    ],
+    "description": "p*(H^0(Z)-H^0(D)), D={d=0}, Z={d=0,x^3+A*x+B=0}",
+    "frobenius_coefficients_low_to_high": [
+      "124097929967680321",
+      "0",
+      "-6611856250609",
+      "0",
+      "0",
+      "0",
+      "-18769",
+      "0",
+      "1"
+    ]
+  },
+  "bounds": {
+    "characteristic_zero_specialization": "NS(Qbar) injects into NS(Fpbar), while U+4D4 exists in characteristic zero",
+    "derivation": "rho(Fpbar)<=18+tate_degree; Shioda-Tate gives rank(MW)<=rho-2-4*rank(D4)=tate_degree; the explicit U+4D4 lattice gives rho>=18",
+    "geometric_twist_mw_rank_lower_bound": 0,
+    "geometric_twist_mw_rank_upper_bound": 2,
+    "picard_number_upper_bound": 20,
+    "trivial_lattice_rank": 18
+  },
+  "character_kind": "product",
+  "claim": "The full Frobenius polynomial is certified and gives the displayed rank interval.",
+  "elliptic_L": {
+    "cyclotomic_hits_after_T_equals_pZ": [
+      {
+        "degree": 1,
+        "factor_coefficients_low_to_high": [
+          "-1",
+          "1"
+        ],
+        "multiplicity": 1,
+        "order": 1,
+        "total_degree": 1
+      },
+      {
+        "degree": 1,
+        "factor_coefficients_low_to_high": [
+          "1",
+          "1"
+        ],
+        "multiplicity": 1,
+        "order": 2,
+        "total_degree": 1
+      }
+    ],
+    "cyclotomic_search_bound": 1568,
+    "degree": 28,
+    "frobenius_characteristic_coefficients_low_to_high": [
+      "-673249253255202668435222216687258051209573446670346971809121",
+      "-1147848905331476657782892585326456265049088938859348025888",
+      "-14056470607639276896067276768001901122589191528102364155",
+      "-106681982925372814771752488284376984741507251411089176",
+      "2106708954239625246790347804744786485253341505183075",
+      "12052881694876227023173196718653275473503064997670",
+      "96476658742684266023020796115271377361645427792",
+      "1084490774567407789166988400879206200950583202",
+      "2146735364715375043911907838526141426921479",
+      "-30969502893492362712411860239590554233688",
+      "-86436691793182645939987784919361937455",
+      "-4119825805016450240764289521708792912",
+      "-23516042524427897426162501950225437",
+      "-77610855923936088225724280973396",
+      "0",
+      "4135055459744050733961547284",
+      "66754718404583218711576317",
+      "623096699151162633183568",
+      "696520012990498303855",
+      "13296231340574679512",
+      "-49105677232579559",
+      "-1321715313399618",
+      "-6264597599312",
+      "-41698524230",
+      "-388323075",
+      "1047704",
+      "7355",
+      "32",
+      "1"
+    ],
+    "functional_equation_sign": -1,
+    "independent_power_sum_check": "PASS_AGAINST_STORED_FIBREWISE_N1_N2_AUDIT",
+    "power_sums_n1_n2": [
+      "-32",
+      "-13686"
+    ],
+    "weil_circle_check": {
+      "roots_in_closed_interval_minus2_2_counted_with_multiplicity": 13,
+      "status": "PASS_EXACT_REAL_ROOT_ISOLATION",
+      "stripped_endpoint_multiplicities": {
+        "-1": 1,
+        "1": 1
+      },
+      "trace_polynomial_coefficients_low_to_high": [
+        "-151552/2571353",
+        "6862592/2571353",
+        "1795968/2571353",
+        "-71563200/2571353",
+        "-7181472/2571353",
+        "221639280/2571353",
+        "-9315608/2571353",
+        "-252048004/2571353",
+        "15376354/2571353",
+        "128513590/2571353",
+        "-5558984/2571353",
+        "-217873/18769",
+        "32/137",
+        "1"
+      ],
+      "trace_polynomial_degree": 13
+    }
+  },
+  "good_reduction": {
+    "checks": [
+      "p is an odd prime at least five",
+      "every quadratic character retains degree two and is squarefree",
+      "their product retains degree 4 and is squarefree",
+      "A, B, and Delta retain degrees 8, 12, and 24",
+      "Delta is squarefree and coprime to the twist divisor",
+      "the exact toric Jacobian nondegeneracy calculation passes"
+    ],
+    "geometric_fibre_configuration": "4I0*+24I1",
+    "status": "PASS"
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-cheapest-1024-v1.json": "6d58c129e0309c63e0b8421837192f2b0e18f6ac331b5608d74c1288566be7fa",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-product-twist-finite-field-bound-audit-v1.json": "6ea5ad82a06b3fa4361afe6b7db479534b1a06342e7de53db9d1cb9221fa1eba",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66"
+  },
+  "labels": [
+    "alternate-orbit-19bad",
+    "alternate-orbit-083ad"
+  ],
+  "pair_key": "alternate-orbit-19bad:alternate-orbit-083ad",
+  "prime": 137,
+  "schema": "elkies-k3.r17-product-toric-frobenius.v1",
+  "software": {
+    "ToricControlledReduction_commit": "74cda9e8148cd8e9a3928fc15a558c9a70b67cc1",
+    "ToricControlledReduction_executable_sha256": "0207af5145b4e9e85e5790ae0f91d91787b8d170d6d88e5d46a55c46c6627289",
+    "ToricControlledReduction_input_sha256": "b3384cb421cc23127cb58107ca3ed57f67fa06df034a3c741b1e46d4dbe6c93e",
+    "ToricControlledReduction_output_sha256": "47ae59f2a681aac98b9f23f4056b0910f562c1ad0003176b0f887ee8854157a8",
+    "ToricControlledReduction_repository": "https://github.com/edgarcosta/ToricControlledReduction",
+    "build_invocations": [
+      "./configure --disable-gdb --with-ntl=/home/royvanrijn/.local/share/jacobian-sage-10.9 --with-gmp=/home/royvanrijn/.local/share/jacobian-sage-10.9",
+      "make"
+    ],
+    "certificate_invocation": "/home/royvanrijn/src/jacobian-research/elkies-k3/scripts/certify_r17_product_toric_frobenius.sage --pair-key alternate-orbit-19bad:alternate-orbit-083ad --prime 137 --toric-output /home/royvanrijn/src/jacobian-research/artifacts/local/elkies-k3/r17-product-toric-frobenius/alternate-orbit-19bad--alternate-orbit-083ad/p137/toric-controlled-reduction.output --toric-commit 74cda9e8148cd8e9a3928fc15a558c9a70b67cc1 --toric-executable /home/royvanrijn/src/jacobian-research/artifacts/local/tools/ToricControlledReduction-74cda9e8148cd8e9a3928fc15a558c9a70b67cc1/build/examples/readfile.exe --sage-prefix /home/royvanrijn/.local/share/jacobian-sage-10.9",
+    "exporter_sha256": "532ce5a94fa351ed5013c4f9fe74f3d9df1f6475fc5385fcfe03871cad1d6c3a",
+    "frobenius_invocation": "/home/royvanrijn/src/jacobian-research/artifacts/local/tools/ToricControlledReduction-74cda9e8148cd8e9a3928fc15a558c9a70b67cc1/build/examples/readfile.exe /home/royvanrijn/src/jacobian-research/artifacts/local/elkies-k3/r17-product-toric-frobenius/alternate-orbit-19bad--alternate-orbit-083ad/p137/toric-controlled-reduction.input /home/royvanrijn/src/jacobian-research/artifacts/local/elkies-k3/r17-product-toric-frobenius/alternate-orbit-19bad--alternate-orbit-083ad/p137/toric-controlled-reduction.output",
+    "independent_verifier_sha256": "68a2d85910ae2f0b7346f7a3b8e1a0964c22746081fe8a148b62e748092ae037",
+    "raw_output_parser_sha256": "d5fd2852107fc61f16649ebe3a2f50527fdd4d53ab7930af0f6c96f680a73073",
+    "runner_sha256": "95c6c4d2cecff8e3b0254be6e0d3d96d43172a5252ff938cddd4fab98e58f574",
+    "sage_prefix": "/home/royvanrijn/.local/share/jacobian-sage-10.9"
+  },
+  "status": "PASS_COMPLETE_FROBENIUS_PICARD_BOUND",
+  "toric_hodge_numbers": [
+    3,
+    30,
+    3
+  ],
+  "toric_model": "d(t)*y^2=x^3+A(t)*x+B(t)",
+  "toric_nondegeneracy_jacobian_reduction": "PASS",
+  "toric_output_label": "r17-product-alternate-orbit-19bad--alternate-orbit-083ad-p137",
+  "toric_primitive_frobenius_coefficients_low_to_high": [
+    "-83548838681257213131089560857130367193941437309496476059971038272037160007841",
+    "-142445673067304108913360645075825656678892109004416177415902457494016150048",
+    "2707048378293677571955582348046436353383362413048787643563040535318710934",
+    "-5649601286415561103378577171731766726380022995654390165568903243539704",
+    "354377583314135501245766273441010501265195550220565132128483238287470",
+    "2201103604111974968912736199459687603915247977634418960611473160254",
+    "10679512107209108360550314505874808950684111255342758926205030606",
+    "76435115124909864207180594395315556882585701302526627625378684",
+    "-780907740616518187390624894383358174379147919311328823994495",
+    "-10159283075566953707258108839716136778582032660367345805410",
+    "-78517811134147895285867741237209184406386426999908752596",
+    "-639398472401887373053027743969434896939982109080726166",
+    "-2050846671100542971043070957707991963434789163910155",
+    "9306423784158473970031488838530959335031090022624",
+    "211669275437067032992746239461742437144874729574",
+    "2692061020086948666503213757036422340238269602",
+    "12053188002565809009831904792856515481572131",
+    "96340125887091572404753169259945606801012",
+    "0",
+    "-5132938669459831232604463171183632948",
+    "-34215245620217557622010086572181571",
+    "-407156616546070596593302639286978",
+    "-1705663224940122054452606731494",
+    "-3995555369847384063600650976",
+    "46912263309141466016795755",
+    "779262278810071355211894",
+    "5098461094575530310356",
+    "35147371575549828290",
+    "143942282353358495",
+    "-750655112146236",
+    "-5588018055246",
+    "-61362880606",
+    "-526369070",
+    "447096",
+    "-11414",
+    "32",
+    "1"
+  ]
+}

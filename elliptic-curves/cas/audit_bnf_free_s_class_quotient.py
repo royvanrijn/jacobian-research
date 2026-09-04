@@ -83,6 +83,18 @@ def coefficient_field(ledger: dict):
         if coefficients != [QQ(value) for value in certified_coefficients]:
             raise ValueError("Elkies rank-28 ledger has the wrong defining cubic")
         pari.addprimes(factor_hint_primes)
+    else:
+        # A parameterized collector already declares the rational support
+        # used for its descent/S-class model.  Prove those integers prime
+        # before giving them back to PARI as factor hints; otherwise this
+        # independent audit can repeat the very discriminant-factorization
+        # wall that the BNF-free route is meant to avoid.
+        declared_primes = [
+            ZZ(value) for value in ledger.get("selmer_rational_primes", ())
+        ]
+        if any(value < 2 or not value.is_prime() for value in declared_primes):
+            raise ValueError("ledger selmer_rational_primes are not proved prime")
+        pari.addprimes(declared_primes)
     ring = PolynomialRing(QQ, "x")
     x = ring.gen()
     return NumberField(sum(value * x**index for index, value in enumerate(coefficients)), "theta")

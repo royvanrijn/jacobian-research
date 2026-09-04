@@ -1,8 +1,8 @@
 {
   "accounting": {
-    "ARITHMETICALLY_EXCLUDED": 3,
+    "ARITHMETICALLY_EXCLUDED": 5,
     "ARITHMETICALLY_POSSIBLE": 1,
-    "UNKNOWN": 62,
+    "UNKNOWN": 60,
     "candidate_ns_lattices": 66,
     "catalogue_surfaces": 827,
     "coarse_curve_statuses": {
@@ -18,22 +18,41 @@
     {
       "arithmetic_tests": [
         {
-          "boundary": "A rational coarse curve does not prove that its full discriminant-marking cover has a rational noncuspidal point.",
-          "method": "coarse norm-one curve genus",
-          "status": "DIAGNOSTIC_ONLY_COARSE_GENUS_ZERO"
+          "conclusion": "Every QQ-point of X_H(50) is one of its four rational cusps.",
+          "method": "degree-two map to X_0(50) and the Mazur--Kenku rational cyclic-isogeny classification",
+          "status": "PASS_THEOREM_RATIONAL_POINT_EXCLUSION"
+        },
+        {
+          "conclusion": "There is no rational CM, non-CM, or full-curve point to test for saturation; the infinitely many rational points on coarse X_0(2) are quotient-level data and have no noncuspidal rational lift.",
+          "method": "complete noncuspidal rational-point exclusion on the full stable curve",
+          "status": "PASS_EXACT_NO_FULL_CURVE_OVERLATTICE_POINT"
         }
       ],
-      "certificate_replay": [],
-      "classification": "UNKNOWN",
-      "classification_decision": "No exact positive witness or global exclusion certificate is registered.",
+      "certificate_replay": [
+        {
+          "assertions_replayed": 5,
+          "path": "artifacts/generated-results/elkies-k3-det500-det750-qq-marking-obstructions-v1.json",
+          "sha256": "e1f74fd18fd17976a05d4340437fe09e841e28efdf681e2945098b3dc51b81de"
+        }
+      ],
+      "classification": "ARITHMETICALLY_EXCLUDED",
+      "classification_decision": "The exact full marked curve is the genus-four X_H(50), and its degree-two X_0(50) quotient has no rational noncuspidal point; hence the determinant-500 rootless row has no full rational marking.",
       "determinant": 500,
       "different_ns_foundry_equation_eligible": false,
       "easy_quotient_maps": [
         {
-          "boundary": "The target curve is exact, but the map from the stable marked subgroup has not been certified for this row.",
-          "source": "full discriminant-marking curve",
-          "status": "CANDIDATE_FORGETFUL_MAP_MARKING_SUBGROUP_NOT_COMPUTED",
-          "target": "Gamma_0(2)",
+          "degree": 2,
+          "source": "full X_H(50) marking curve",
+          "status": "PASS_EXACT_FORGET_DIAMOND_MARKING",
+          "target": "X_0(50)",
+          "target_genus": 2,
+          "target_rational_noncuspidal_points": 0
+        },
+        {
+          "degree": 60,
+          "source": "full X_H(50) marking curve",
+          "status": "PASS_EXACT_FORGET_STABLE_MOD5_MARKING",
+          "target": "X_0(2)",
           "target_genus": 0
         }
       ],
@@ -167,7 +186,8 @@
           "level": 2,
           "status": "PASS_EXACT_GAMMA0_CURVE"
         },
-        "explicit_model": null,
+        "explicit_model": "X_H(50), H={a in (Z/50Z)^*: a=+/-1 mod 5}",
+        "genus": 4,
         "marking_gap": {
           "coarse_clifford_hessian_equals_literal_T": false,
           "discriminant_group_invariants": [
@@ -179,10 +199,11 @@
           "status": "OPEN_STABLE_ORTHOGONAL_DISCRIMINANT_KERNEL_NOT_COMPUTED",
           "warning": "The projective norm-one curve of a similar primitive ternary form is only a coarse orthogonal target. Full rational NS marking requires the discriminant-kernel subgroup for the literal integral T lattice."
         },
-        "status": "UNKNOWN_FULL_DISCRIMINANT_KERNEL_CURVE_NOT_IDENTIFIED"
+        "rational_points": "four rational cusps and no noncuspidal QQ-points",
+        "status": "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE"
       },
       "legacy_ns_ids": [],
-      "next_arithmetic_gate": "Compute the stable discriminant-kernel subgroup inside the exact Gamma_0(N) norm-one group, then identify its easiest rational-point quotient.",
+      "next_arithmetic_gate": null,
       "ns_lattice": {
         "catalogue_boundary": "The catalogue constructs the primitive K3 complement by the opposite discriminant form; this replay checks rank, signature, determinant, and Smith invariants.",
         "discriminant_group_invariants": [
@@ -212,8 +233,13 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-04b86146cc6b284b",
-      "theorem_inputs": [],
+      "theorem_inputs": [
+        "Mazur--Kenku's complete classification of rational cyclic-isogeny degrees",
+        "the standard split prime-level Eichler normalizer description",
+        "the rank-three ternary-spin/fully-marked-K3 period correspondence"
+      ],
       "transcendental_lattice": {
         "construction": "T = NS^perp in the K3 lattice",
         "determinant": -500,
@@ -456,6 +482,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-8ac51f68b787ce02",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -647,6 +674,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-52e07cc810844210",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -875,6 +903,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-f43753fb154e3406",
       "theorem_inputs": [
         "Mazur--Kenku's complete classification of rational cyclic-isogeny degrees",
@@ -932,22 +961,41 @@
     {
       "arithmetic_tests": [
         {
-          "boundary": "A rational coarse curve does not prove that its full discriminant-marking cover has a rational noncuspidal point.",
-          "method": "coarse norm-one curve genus",
-          "status": "DIAGNOSTIC_ONLY_COARSE_GENUS_ZERO"
+          "conclusion": "Every QQ-point of X_H(75) is one of its four rational cusps.",
+          "method": "degree-two map to X_0(75) and the Mazur--Kenku rational cyclic-isogeny classification",
+          "status": "PASS_THEOREM_RATIONAL_POINT_EXCLUSION"
+        },
+        {
+          "conclusion": "There is no rational CM, non-CM, or full-curve point to test for saturation; the infinitely many rational points on coarse X_0(3) are quotient-level data and have no noncuspidal rational lift.",
+          "method": "complete noncuspidal rational-point exclusion on the full stable curve",
+          "status": "PASS_EXACT_NO_FULL_CURVE_OVERLATTICE_POINT"
         }
       ],
-      "certificate_replay": [],
-      "classification": "UNKNOWN",
-      "classification_decision": "No exact positive witness or global exclusion certificate is registered.",
+      "certificate_replay": [
+        {
+          "assertions_replayed": 5,
+          "path": "artifacts/generated-results/elkies-k3-det500-det750-qq-marking-obstructions-v1.json",
+          "sha256": "e1f74fd18fd17976a05d4340437fe09e841e28efdf681e2945098b3dc51b81de"
+        }
+      ],
+      "classification": "ARITHMETICALLY_EXCLUDED",
+      "classification_decision": "The exact full marked curve is the genus-nine X_H(75), and its degree-two X_0(75) quotient has no rational noncuspidal point; hence the determinant-750 rootless row has no full rational marking.",
       "determinant": 750,
       "different_ns_foundry_equation_eligible": false,
       "easy_quotient_maps": [
         {
-          "boundary": "The target curve is exact, but the map from the stable marked subgroup has not been certified for this row.",
-          "source": "full discriminant-marking curve",
-          "status": "CANDIDATE_FORGETFUL_MAP_MARKING_SUBGROUP_NOT_COMPUTED",
-          "target": "Gamma_0(3)",
+          "degree": 2,
+          "source": "full X_H(75) marking curve",
+          "status": "PASS_EXACT_FORGET_DIAMOND_MARKING",
+          "target": "X_0(75)",
+          "target_genus": 5,
+          "target_rational_noncuspidal_points": 0
+        },
+        {
+          "degree": 60,
+          "source": "full X_H(75) marking curve",
+          "status": "PASS_EXACT_FORGET_STABLE_MOD5_MARKING",
+          "target": "X_0(3)",
           "target_genus": 0
         }
       ],
@@ -1081,7 +1129,8 @@
           "level": 3,
           "status": "PASS_EXACT_GAMMA0_CURVE"
         },
-        "explicit_model": null,
+        "explicit_model": "X_H(75), H={a in (Z/75Z)^*: a=+/-1 mod 5}",
+        "genus": 9,
         "marking_gap": {
           "coarse_clifford_hessian_equals_literal_T": false,
           "discriminant_group_invariants": [
@@ -1093,10 +1142,11 @@
           "status": "OPEN_STABLE_ORTHOGONAL_DISCRIMINANT_KERNEL_NOT_COMPUTED",
           "warning": "The projective norm-one curve of a similar primitive ternary form is only a coarse orthogonal target. Full rational NS marking requires the discriminant-kernel subgroup for the literal integral T lattice."
         },
-        "status": "UNKNOWN_FULL_DISCRIMINANT_KERNEL_CURVE_NOT_IDENTIFIED"
+        "rational_points": "four rational cusps and no noncuspidal QQ-points",
+        "status": "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE"
       },
       "legacy_ns_ids": [],
-      "next_arithmetic_gate": "Compute the stable discriminant-kernel subgroup inside the exact Gamma_0(N) norm-one group, then identify its easiest rational-point quotient.",
+      "next_arithmetic_gate": null,
       "ns_lattice": {
         "catalogue_boundary": "The catalogue constructs the primitive K3 complement by the opposite discriminant form; this replay checks rank, signature, determinant, and Smith invariants.",
         "discriminant_group_invariants": [
@@ -1126,8 +1176,13 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-10a14a46c14b3150",
-      "theorem_inputs": [],
+      "theorem_inputs": [
+        "Mazur--Kenku's complete classification of rational cyclic-isogeny degrees",
+        "the standard split prime-level Eichler normalizer description",
+        "the rank-three ternary-spin/fully-marked-K3 period correspondence"
+      ],
       "transcendental_lattice": {
         "construction": "T = NS^perp in the K3 lattice",
         "determinant": -750,
@@ -1360,6 +1415,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-f677d97a9ec944bc",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -1568,6 +1624,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-c668725948d340de",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -1805,6 +1862,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-3425921cd7db891f",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -2039,6 +2097,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-7217f91ce3d18cfa",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -2239,6 +2298,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-7b1b6c6a02cca44c",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -2492,6 +2552,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-8188cdcda8c57b2d",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -2819,6 +2880,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-ebaf00b3723751ba",
       "theorem_inputs": [
         "Momose's composite-level theorem for X_0^+(N)(QQ)",
@@ -3054,6 +3116,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-57fce51090fc378f",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -3252,6 +3315,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-29b863dcdefc0eff",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -3502,6 +3566,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-7a0bdbb6d96eb93d",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -3758,6 +3823,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-333d8fc7f9c5b179",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -3971,6 +4037,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-32f4cd1fe26b1dd3",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -4169,6 +4236,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-45392d0c29a7c5df",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -4381,6 +4449,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-08da6ddb755289c0",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -4579,6 +4648,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-f64731dd77a5e0d6",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -4777,6 +4847,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-faa81a8c6a1cc4a9",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -5042,6 +5113,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-df74562b57503641",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -5242,6 +5314,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-a53e3b1adc706e69",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -5468,6 +5541,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-09b8136a1de4be29",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -5665,6 +5739,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-106fb4c5b942fcbf",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -5933,6 +6008,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-9f1cf5ce8721a5e2",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -6347,6 +6423,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-d1b1381f87d69f1c",
       "theorem_inputs": [
         "V\u00e9lu's determination of X_0(37)(QQ)",
@@ -6569,6 +6646,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-d835343ddf5232dd",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -6821,6 +6899,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-a423ee18c18d2c14",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -7069,6 +7148,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-f16e38054f965e15",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -7111,18 +7191,51 @@
     {
       "arithmetic_tests": [
         {
-          "boundary": "Anisotropy of T identifies a division quaternion algebra; it does not exclude rational points on the marked Shimura curve.",
-          "method": "ternary rational-isotropy local test",
-          "obstruction_prime": 3,
-          "status": "DIAGNOSTIC_ONLY_NOT_A_MARKING_OBSTRUCTION"
+          "conclusion": "The exact marked curve has two rational order-3 CM orbifold points, but each has geometric Picard rank 20 and does not realize the requested saturated rank-19 NS.",
+          "method": "Gonzalez--Rotger CM residue-field formula at order discriminant -3",
+          "status": "PASS_EXACT_TWO_RATIONAL_CM_POINTS_ONLY_AS_HIGHER_PICARD_CONTROLS"
+        },
+        {
+          "conclusion": "The rational fibers above the displayed genus-two rational points have not been determined; no non-CM rational marked point is certified.",
+          "method": "degree-two map to the exact genus-two Atkin--Lehner quotient",
+          "status": "UNRESOLVED_EXACT_DEGREE_TWO_MARKING_LIFT"
         }
       ],
-      "certificate_replay": [],
+      "certificate_replay": [
+        {
+          "assertions_replayed": 7,
+          "path": "artifacts/generated-results/elkies-k3-det1236-marked-shimura-curve-v1.json",
+          "sha256": "9b0f7c1532f77cc72fa1e8231648a0d86207654c3dda0ed703c143f270ef5ea3"
+        }
+      ],
       "classification": "UNKNOWN",
-      "classification_decision": "No exact positive witness or global exclusion certificate is registered.",
+      "classification_decision": "UNRESOLVED_FOR_EXPLICIT_REASON: the exact marked curve is the genus-six X_0^6(103)/<w_618>; decide the degree-two lift from its explicit genus-two quotient to find a non-CM rational point or prove that only its two rational discriminant -3 CM points occur.",
       "determinant": 1236,
       "different_ns_foundry_equation_eligible": false,
-      "easy_quotient_maps": [],
+      "easy_quotient_maps": [
+        {
+          "boundary": "No equation or descent class for the degree-two source cover is presently certified.",
+          "degree": 2,
+          "source": "X_0^6(103)/<w_618>",
+          "status": "PASS_EXACT_ATKIN_LEHNER_QUOTIENT_MODEL",
+          "target": "X_0^6(103)/<w_2,w_309>",
+          "target_genus": 2,
+          "target_model": "y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9",
+          "verified_rational_points": [
+            "(0,+/-3)",
+            "(+/-1,+/-48)"
+          ]
+        },
+        {
+          "boundary": "Positive rank on the quotient does not imply a rational lift to the exact marked curve.",
+          "degree": 4,
+          "source": "X_0^6(103)/<w_618>",
+          "status": "PASS_EXACT_FULL_ATKIN_LEHNER_QUOTIENT",
+          "target": "X_0^6(103)^* = 618f1",
+          "target_genus": 1,
+          "target_rank": 1
+        }
+      ],
       "equation_agent_eligible": false,
       "even_clifford_algebra_and_order": {
         "finite_ramified_primes": [
@@ -7216,7 +7329,7 @@
         "status": "PASS_EXACT_IMPORTED_T_ARITHMETIC_REPLAY"
       },
       "full_discriminant_marking_curve": {
-        "abstract_group": "O^+(T)^* = kernel(O^+(T) -> O(A_T))",
+        "abstract_group": "projective image of kernel(O^+(T) -> O(A_T))",
         "coarse_norm_one_curve": {
           "cusp_count": 0,
           "elliptic_orbits_order_2": 0,
@@ -7227,21 +7340,30 @@
           "status": "CONDITIONAL_X0DN_IF_CLIFFORD_ORDER_IS_EICHLER"
         },
         "explicit_model": null,
+        "genus": 6,
+        "label": "X_0^6(103)/<w_618>",
         "marking_gap": {
-          "coarse_clifford_hessian_equals_literal_T": true,
-          "discriminant_group_invariants": [
-            1236
+          "discriminant_group": "Z/1236Z",
+          "literal_content": 1,
+          "projectively_stable_atkin_lehner_subgroup": [
+            1,
+            618
           ],
-          "literal_T_as_rational_multiple_of_coarse_hessian": "1",
-          "status": "OPEN_STABLE_ORTHOGONAL_DISCRIMINANT_KERNEL_NOT_COMPUTED",
-          "warning": "The projective norm-one curve of a similar primitive ternary form is only a coarse orthogonal target. Full rational NS marking requires the discriminant-kernel subgroup for the literal integral T lattice."
+          "status": "CLOSED_EXACT_PROJECTIVE_STABLE_KERNEL"
         },
-        "status": "UNKNOWN_FULL_DISCRIMINANT_KERNEL_CURVE_NOT_IDENTIFIED"
+        "rational_points": "two certified discriminant -3 CM points; the non-CM rational locus is unresolved",
+        "signature": {
+          "cusps": 0,
+          "elliptic_points_order_2": 12,
+          "elliptic_points_order_3": 2,
+          "orbifold_mu": 104
+        },
+        "status": "PASS_EXACT_PROJECTIVE_STABLE_DISCRIMINANT_KERNEL_CURVE"
       },
       "legacy_ns_ids": [
         "NS0035"
       ],
-      "next_arithmetic_gate": "Certify the local order type and normalizer/Atkin-Lehner quotient before attempting rational-point or CM tests.",
+      "next_arithmetic_gate": "Construct the degree-two cover from X_0^6(103)/<w_618> to y^2=1944*x^6+441*x^4-90*x^2+9 and decide rational lifts; do not begin K3 equation work before a non-CM lift is certified.",
       "ns_lattice": {
         "catalogue_boundary": "The catalogue constructs the primitive K3 complement by the opposite discriminant form; this replay checks rank, signature, determinant, and Smith invariants.",
         "discriminant_group_invariants": [
@@ -7295,8 +7417,15 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": "UNRESOLVED_FOR_EXPLICIT_REASON",
       "surface_id": "K3-6d288cfad55e0d15",
-      "theorem_inputs": [],
+      "theorem_inputs": [
+        "the local classification of squarefree-discriminant quaternion orders and the Eichler normalizer quotient",
+        "Ogg's Atkin--Lehner fixed-point and Riemann--Hurwitz formulas",
+        "Gonzalez--Rotger's CM residue-field formula for Atkin--Lehner quotients",
+        "Padurariu--Saia's exact genus-two quotient model and elliptic quotient identification",
+        "the rank-three ternary-spin/fully-marked-K3 period correspondence"
+      ],
       "transcendental_lattice": {
         "construction": "T = NS^perp in the K3 lattice",
         "determinant": -1236,
@@ -7562,6 +7691,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-2d3888a8fc8c5e65",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -7883,6 +8013,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-4288750ab25888f8",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -8171,6 +8302,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-44456e1078d6a561",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -8407,6 +8539,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-49b947f9626a0481",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -8782,6 +8915,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-5535db50672286d9",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -9004,6 +9138,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-9479164be947a18f",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -9213,6 +9348,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-3bba9dca80aa31ed",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -9451,6 +9587,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-9bfeddebd206b755",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -9650,6 +9787,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-f3fa70cc54eee262",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -9980,6 +10118,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-3ae95f7fd17a4b92",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -10169,6 +10308,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-4e2dd58c0bce2c57",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -10367,6 +10507,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-76c4c63b491a66d7",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -10695,6 +10836,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-6bdfb24c1d1862d3",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -10974,6 +11116,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-fc1d490e61c0331d",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -11174,6 +11317,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-d75c63c2ea2c6cd6",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -11373,6 +11517,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-3ead90d07a025f49",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -11666,6 +11811,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-233a7a350ec98985",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -11855,6 +12001,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-cd7a38a11222d516",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -12118,6 +12265,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-2cacfeb9277cda96",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -12375,6 +12523,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-99a0b9b18de6e19b",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -12661,6 +12810,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-7470b5a42a7c8025",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -12932,6 +13082,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-0ebd3d835e7a7bfb",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -13173,6 +13324,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-11f8396c63b10d7b",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -13415,6 +13567,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-dc0e324e4ac40dbc",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -13658,6 +13811,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-c0f6f9259e0d6db2",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -13856,6 +14010,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-23ba198e5bc5d583",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -14041,6 +14196,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-3433063fbee3a05f",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -14249,6 +14405,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-9232ecffec8ab108",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -14440,6 +14597,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-adf1ed63998b370b",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -14649,6 +14807,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-d33374e378c50bb8",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -14848,6 +15007,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-c392a81935e4c77f",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -15049,6 +15209,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-9e61ef1fce6dd8cb",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -15249,6 +15410,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-eb67786baf90e292",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -15448,6 +15610,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-85c8d73d172cc4ba",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -15639,6 +15802,7 @@
         ],
         "status": "PASS_EXACT_CATALOGUE_NS_FROM_ROOTLESS_FRAME"
       },
+      "phase_2_certificate_status": null,
       "surface_id": "K3-7a6eb19b1784f6a8",
       "theorem_inputs": [],
       "transcendental_lattice": {
@@ -15702,7 +15866,7 @@
     "policy": "ARITHMETICALLY_POSSIBLE only"
   },
   "hospitality_comparison": {
-    "contrast": "Determinant 720 has exact stable curve X_0(60), whose rational points are all cusps; determinant 950 is forced onto the rigid Fricke quotient X_0^+(475); and determinant 1184 combines non-split Cartan level 4 with X_0(37), where both rational 37-isogeny points fail the Frobenius lift. The observed hospitality of 948 is therefore explained by its unusually low-genus Atkin-Lehner quotient plus an actual non-CM rational lift, not by determinant size or Clifford splitting alone.",
+    "contrast": "Determinants 500 and 750 have exact stable curves X_H(50) and X_H(75), whose X_0(50) and X_0(75) quotients have only rational cusps. Determinant 720 has exact stable curve X_0(60), whose rational points are all cusps; determinant 950 is forced onto the rigid Fricke quotient X_0^+(475); and determinant 1184 combines non-split Cartan level 4 with X_0(37), where both rational 37-isogeny points fail the Frobenius lift. The observed hospitality of 948 is therefore explained by its unusually low-genus Atkin-Lehner quotient plus an actual non-CM rational lift, not by determinant size or Clifford splitting alone.",
     "determinant_948_features": [
       "T has a division even-Clifford algebra with the clean coprime squarefree Eichler pair (D,N)=(6,79).",
       "The Atkin-Lehner quotient by w_474 has genus 2 and an explicit non-CM QQ-point.",
@@ -15734,6 +15898,58 @@
         ],
         "quaternion_discriminant": 6,
         "surface_id": "K3-8188cdcda8c57b2d"
+      },
+      {
+        "arithmetic_reason": "The exact full marked curve is the genus-four X_H(50), and its degree-two X_0(50) quotient has no rational noncuspidal point; hence the determinant-500 rootless row has no full rational marking.",
+        "classification": "ARITHMETICALLY_EXCLUDED",
+        "coarse_local_level_index": 2,
+        "coarse_order_reduced_discriminant": 2,
+        "determinant": 500,
+        "determinant_factorization": [
+          [
+            2,
+            2
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "discriminant_group_invariants": [
+          5,
+          5,
+          20
+        ],
+        "quaternion_discriminant": 1,
+        "surface_id": "K3-04b86146cc6b284b"
+      },
+      {
+        "arithmetic_reason": "The exact full marked curve is the genus-nine X_H(75), and its degree-two X_0(75) quotient has no rational noncuspidal point; hence the determinant-750 rootless row has no full rational marking.",
+        "classification": "ARITHMETICALLY_EXCLUDED",
+        "coarse_local_level_index": 3,
+        "coarse_order_reduced_discriminant": 3,
+        "determinant": 750,
+        "determinant_factorization": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "discriminant_group_invariants": [
+          5,
+          5,
+          30
+        ],
+        "quaternion_discriminant": 1,
+        "surface_id": "K3-10a14a46c14b3150"
       },
       {
         "arithmetic_reason": "A full rational NS0024 marking would force a forbidden noncuspidal non-CM rational point on X_0^+(475).",
@@ -15810,6 +16026,32 @@
         ],
         "quaternion_discriminant": 1,
         "surface_id": "K3-f43753fb154e3406"
+      },
+      {
+        "arithmetic_reason": "UNRESOLVED_FOR_EXPLICIT_REASON: the exact marked curve is the genus-six X_0^6(103)/<w_618>; decide the degree-two lift from its explicit genus-two quotient to find a non-CM rational point or prove that only its two rational discriminant -3 CM points occur.",
+        "classification": "UNKNOWN",
+        "coarse_local_level_index": 103,
+        "coarse_order_reduced_discriminant": 618,
+        "determinant": 1236,
+        "determinant_factorization": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            103,
+            1
+          ]
+        ],
+        "discriminant_group_invariants": [
+          1236
+        ],
+        "quaternion_discriminant": 6,
+        "surface_id": "K3-6d288cfad55e0d15"
       }
     ],
     "status": "EVIDENCE_BACKED_STRUCTURAL_COMPARISON_NOT_A_CLASSIFICATION_THEOREM"
@@ -15817,21 +16059,22 @@
   "inputs": {
     "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json": "e13c9fa26b733c9e894d4a34900de469ad7dc2df63528f8c4dd816c47c9d18c8",
     "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985",
-    "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": "b9666cc14ef8946620170c8d4ccc6e4c290dd12e3de7dbf8e353d153803068c2",
+    "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": "55d672ce0b40abba9168ced13375e9af40e554f246941bae9b90c82f2cb9e2bd",
     "schemas/elkies_k3_rank19_arithmetic_marking_classifier.schema.json": "cc600812fd668ae9234a1144ce27aaf7e04dea31a6f20143701d0ad1ab171213"
   },
   "policy": {
     "ARITHMETICALLY_EXCLUDED": "A cited exact certificate, together with its explicitly named theorem inputs, proves that no characteristic-zero K3 over QQ has the requested full rational Neron-Severi marking.",
     "ARITHMETICALLY_POSSIBLE": "An exact characteristic-zero witness proves that at least one K3 over QQ has geometric Picard rank 19 and all nineteen generators of the requested Neron-Severi lattice defined over QQ.",
     "UNKNOWN": "Neither of the preceding proof standards has been met. Failure to find a point, a positive-density local screen, a coarse Clifford curve, or a formal p-adic branch does not change this status.",
+    "UNRESOLVED_FOR_EXPLICIT_REASON": "A Phase-1 certificate has identified the exact stable marked curve, but its rational non-CM locus is not yet decided. Such a row remains UNKNOWN in the three-way equation-dispatch classifier and must record the exact remaining rational-point or lift obstruction.",
     "coarse_curve_boundary": "A Clifford norm-one curve, Gamma_0(N) label, genus-zero model, formal local branch, or bounded point search does not identify the full discriminant marking and cannot promote UNKNOWN.",
     "equation_agent": "Dispatch only ARITHMETICALLY_POSSIBLE rows. UNKNOWN is an arithmetic-research queue, not an equation queue."
   },
   "proof_scope": {
-    "not_proved": "The 62 UNKNOWN rows are not asserted to exist or not exist over QQ. Their stable discriminant-kernel curves and rational points remain open.",
-    "proved": "All 66 exact rootless-MW17 candidate NS lattices are paired with their catalogue primitive ternary complement and replayed even Clifford data. The four non-UNKNOWN decisions are backed by exact registered certificates."
+    "not_proved": "The 60 UNKNOWN rows are not asserted to exist or not exist over QQ. For determinant 1236 the stable curve is exact and its non-CM rational locus remains open; the other UNKNOWN stable curves remain unclassified.",
+    "proved": "All 66 exact rootless-MW17 candidate NS lattices are paired with their catalogue primitive ternary complement and replayed even Clifford data. The six terminal decisions and the determinant-1236 exact-curve unresolved record are backed by registered certificates."
   },
   "reproduce": "sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage",
   "schema": "elkies-k3.rank19-arithmetic-marking-classifier.v1",
-  "status": "PASS_FAIL_CLOSED_1_POSSIBLE_3_EXCLUDED_62_UNKNOWN"
+  "status": "PASS_FAIL_CLOSED_1_POSSIBLE_5_EXCLUDED_60_UNKNOWN"
 }

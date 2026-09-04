@@ -907,6 +907,70 @@ Both runs materialize all 25 S-ideal columns and stop with exact bounded
 factor-base quotient dimension 34 and no post-initialization relation gain.
 This is not a class-group, S-class-group, Selmer, or rank bound.
 
+Run the quotient-targeted Kummer half-ideal smoke comparison on the five
+published-R17 controls:
+
+```sh
+python3 elliptic-curves/cas/run_r17_kummer_quotient_sclass_suite.py \
+  --factor-base-bound 240 --attempts 1500 \
+  --timeout-seconds-per-run 3 \
+  --output-dir artifacts/local/elliptic-curves/r17-kummer-quotient-sclass/five-curve-v2-b240-a1500 \
+  --summary artifacts/local/elliptic-curves/r17-kummer-quotient-sclass/five-curve-v2-b240-a1500-summary.json \
+  --overwrite
+```
+
+This runs both the quotient modulo generic MW17 and the quotient modulo all
+known point half-ideals for curves 351, 356, 376, 377, and 385.  Each lane
+cycles through single, pair, and short-product companion ideals, weights the
+exceptional block by four, rotates through unresolved objective columns, and
+records actual row-rank gain in both projections.  These smoke settings
+produce seventeen smooth rows in the generic-objective lanes and none in the
+full-known lanes; all are dependent, so the quotient-rank gain is zero.
+Run the larger common exponent-two comparison with:
+
+```sh
+python3 elliptic-curves/cas/run_r17_kummer_quotient_sclass_suite.py \
+  --factor-base-bound 5000 --attempts 3000 \
+  --timeout-seconds-per-run 10 --max-target-columns 3 \
+  --companion-exponent-radius 2 \
+  --max-s-companions 4 --direction-radius 64 \
+  --large-prime-bound 5000 --max-large-primes 1 \
+  --output-dir artifacts/local/elliptic-curves/r17-kummer-quotient-sclass/five-curve-v2-b5000-a3000-t3-exp2 \
+  --summary artifacts/local/elliptic-curves/r17-kummer-quotient-sclass/five-curve-v2-b5000-a3000-t3-exp2-summary.json \
+  --overwrite
+```
+
+It produces normalized generic-objective smooth-row rates
+`1.00,2.54,0,0,0.40` per 1,000 trials and full-known rates
+`0.67,2.19,0,0,0.33`, in curve order `351,356,376,377,385`, but zero
+quotient-rank gain in all ten lanes.  The generic lanes for 356 and 385 and
+the full-known lane for 356 hit their ten-second caps, which is why the rates,
+not raw counts, are compared.  Recheck the longer curve-356 exponent-two
+diagnostic with:
+
+```sh
+sage -python \
+  elliptic-curves/cas/run_r17_kummer_quotient_sclass_collector.sage \
+  --curve-id 356 --objective full-known \
+  --factor-base-bound 5000 --attempts 10000 --timeout-seconds 30 \
+  --companion-strategies single,pair,sparse \
+  --sparse-min 3 --sparse-max 6 --companion-exponent-radius 2 \
+  --exceptional-companion-weight 4 --max-s-companions 4 \
+  --direction-radius 64 --large-prime-bound 5000 --max-large-primes 1 \
+  --checkpoint-every-attempts 2000 \
+  --checkpoint artifacts/local/elliptic-curves/r17-kummer-quotient-sclass/curve356-rotating-exp2.json \
+  --overwrite
+```
+
+This diagnostic finds smooth but quotient-dependent rows.  All dimensions
+remain bounded materialized-presentation fingerprints without a factor-base
+generation proof; the suite's correlations are descriptive only.
+
+For the direct reduction-modulo-squares control, use the same collector with
+`--attempts 3000 --max-target-columns 3 --companion-exponent-radius 1
+--reduction-engine idealredmodpower2`.  At factor-base bound 5000 this reaches
+the attempt limit on curve 356 without a closed row or quotient-rank gain.
+
 Construct every explicit two-cover in the five known exceptional quotient
 subgroups:
 
@@ -1284,6 +1348,69 @@ and one random control. No unrestricted point search is authorized without a
 completed residual 2-Selmer gate. Exact tier commands, hashes, and the single
 censored split row are in
 [`notes/R17_FROZEN_NAGAO_SHELL_2026-09-02.md`](notes/R17_FROZEN_NAGAO_SHELL_2026-09-02.md).
+
+### R17 quotient-aware record controls
+
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+
+```sh
+python3 elkies-k3/scripts/build_r17_quotient_rank_escape_detector_v2_sample.py --check
+sage -python elkies-k3/scripts/certify_r17_quotient_rank_escape_detector_v2_controls.sage --check
+python3 -m unittest \
+  elliptic-curves/tests/test_quotient_rank_escape_detector_v2.py \
+  elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py
+```
+
+This Outcome-D replay certifies the exact models, displayed MW29 mod-two
+images, all bad-place and real known-point data, and the frozen blinded
+sample.  It returns no complete 2-Selmer dimension: the global cubic
+`S`-class/unit calculation remains blocked, and no prospective fibre is
+opened before both record controls pass.
+
+The quotient-native replacement for the final descent stage is:
+
+```sh
+sage -python elliptic-curves/cas/run_mw29_relative_2selmer_from_bnf.sage \
+  --curve-id 356 \
+  --bnf-metadata artifacts/local/elliptic-curves/record-r29-356/bnf.json \
+  --output artifacts/local/elliptic-curves/record-r29-356/mw29-relative.json \
+  --resume
+
+sage -python elliptic-curves/cas/run_mw29_relative_2selmer_from_bnf.sage \
+  --curve-id 385 \
+  --bnf-metadata artifacts/local/elliptic-curves/record-r29-385/bnf.json \
+  --output artifacts/local/elliptic-curves/record-r29-385/mw29-relative.json \
+  --resume
+```
+
+These commands require preexisting `bnfcertify`-accepted metadata/checkpoints;
+they do not restart BNF construction. They embed and quotient all 29 known
+Kummer classes before the first local computation, stop on a certified zero
+kernel, and otherwise checkpoint a monotone upper bound after every place.
+Curve 356 prioritizes 2; curve 385 puts the odd bad places before 2 unless
+`--place-order` is supplied. Their default prefixes reuse the known-quotient
+minimum distinguishing cuts `2,3,13,23,751` and `13,29,47,89` as scheduling
+priors only; the resulting unknown-quotient matrix determines the posterior
+greedy order.
+
+Any alternative certified global provider can emit the common ambient
+manifest and run the dependency-free matrix gate:
+
+```sh
+python3 elliptic-curves/cas/build_mw29_relative_2selmer_matrix.py \
+  --input artifacts/local/elliptic-curves/record-r29-356/ambient.json \
+  --output artifacts/local/elliptic-curves/record-r29-356/relative-matrix.json
+
+python3 elliptic-curves/cas/audit_mw29_relative_selmer_witness_bound.py \
+  --input artifacts/local/elliptic-curves/record-r29-356/witness-bound-input.json \
+  --output artifacts/local/elliptic-curves/record-r29-356/witness-bound.json
+```
+
+The second gate needs only a certified global dimension upper bound plus
+exact global witnesses and their norm/local obstruction syndromes. It may
+therefore use an F2-only class or ray-class bound without enumerating the
+global squareclass space. Uncertified relation stabilization remains
+`INCOMPLETE`.
 
 ### Mestre frontiers
 

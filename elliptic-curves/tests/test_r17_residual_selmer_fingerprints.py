@@ -61,6 +61,58 @@ class R17ResidualSelmerFingerprintTests(unittest.TestCase):
             },
         )
 
+    def test_place_block_support_spectrum_explains_zero_delete_one_ranks(self) -> None:
+        expected_minimum_weights = {
+            351: (4, 4),
+            356: (5, 6),
+            376: (7, 7),
+            377: (5, 5),
+            385: (6, 7),
+            12: (4, 4),
+        }
+        rows = {int(row["curve_id"]): row for row in self.document["fingerprints"]}
+        for curve_id, (minimum_weight, selected_minimum_weight) in (
+            expected_minimum_weights.items()
+        ):
+            code = rows[curve_id]["known_residual_place_block_support_code"]
+            self.assertEqual(code["minimum_nonzero_place_block_weight"], minimum_weight)
+            self.assertEqual(
+                code["every_deletion_of_at_most_this_many_places_preserves_injectivity"],
+                minimum_weight - 1,
+            )
+            self.assertEqual(
+                sum(code["block_weight_enumerator"].values()),
+                (1 << rows[curve_id]["certified_known_residual_dimension"]) - 1,
+            )
+            self.assertTrue(code["minimum_support_words"])
+            self.assertTrue(
+                all(
+                    len(word["place_block_support"]) == minimum_weight
+                    for word in code["minimum_support_words"]
+                )
+            )
+            selected = rows[curve_id][
+                "selected_comparison_block_place_support_code"
+            ]
+            self.assertEqual(
+                selected["minimum_nonzero_place_block_weight"],
+                selected_minimum_weight,
+            )
+            self.assertEqual(
+                selected["source_dimension"],
+                len(rows[curve_id]["selected_comparison_block"]),
+            )
+
+    def test_record_ten_blocks_are_place_matroid_indecomposable(self) -> None:
+        rows = {int(row["curve_id"]): row for row in self.document["fingerprints"]}
+        for curve_id in (356, 385):
+            block = rows[curve_id]["selected_comparison_block_dual_components"]
+            self.assertEqual(block["source_dimension"], 10)
+            self.assertEqual(block["global_localization_dual_rank"], 10)
+            self.assertEqual(block["component_count"], 1)
+            self.assertTrue(block["place_block_matroid_indecomposable"])
+            self.assertIn("not a Cassels-pairing", block["claim_boundary"])
+
     def test_crt_classes_are_hypotheses_not_inherited_certificates(self) -> None:
         block = self.document["crt_search_prototypes"]
         self.assertIn("does not yet prove", block["claim_boundary"])

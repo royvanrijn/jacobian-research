@@ -1,7 +1,7 @@
 # Galois-equivariant Shioda--Tate balance and arithmetic marking gate (2026-09-03)
 
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 9f40eebe50b66ea4 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 9e0df73560e0a607 -->
 
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->
 

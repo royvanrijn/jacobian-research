@@ -14,6 +14,21 @@ from build_elkies_2026_relative_2selmer_suite import load_record_pair_cases  # n
 
 
 class CheckpointedRelativeSelmerTests(unittest.TestCase):
+    def test_mw29_backend_reverses_the_old_blind_order(self) -> None:
+        source = (CAS / "run_mw29_relative_2selmer_from_bnf.sage").read_text()
+        self.assertIn("ell2global_norm_envelope", source)
+        self.assertIn("point_coordinates(", source)
+        self.assertIn("known_norm_rows", source)
+        self.assertIn("ell2allowed_at_place", source)
+        runtime = source[source.index("def main()") :]
+        self.assertLess(
+            runtime.index("= point_coordinates("),
+            runtime.index('pari("ell2allowed_at_place")'),
+        )
+        self.assertNotIn('pari("ell2selmer_basis_gen")', runtime)
+        self.assertNotIn("QUOTIENT_COVER_WORKER", source)
+        self.assertIn("if residual_upper == 0:\n            break", source)
+
     def test_workers_preserve_blind_order(self) -> None:
         self.assertIn("bnfinit", checkpointed.BNF_WORKER)
         self.assertIn("bnfcertify", checkpointed.BNF_WORKER)
@@ -24,7 +39,15 @@ class CheckpointedRelativeSelmerTests(unittest.TestCase):
         self.assertIn("elllocalimage_mapped", checkpointed.SIMON_GP_FUNCTION)
         self.assertIn("nfeltsign", checkpointed.SIMON_GP_FUNCTION)
         self.assertIn("Vec(localspaces)", checkpointed.SIMON_GP_FUNCTION)
+        self.assertIn("Vec(localmeta)", checkpointed.SIMON_GP_FUNCTION)
+        self.assertIn("descentprimes", checkpointed.SIMON_GP_FUNCTION)
+        self.assertIn("matinverseimage(normspace,selmer)", checkpointed.SIMON_GP_FUNCTION)
         self.assertIn("local_allowed_subspaces", checkpointed.SELMER_WORKER)
+        self.assertIn("selmer_in_normspace", checkpointed.SELMER_WORKER)
+        self.assertIn("finite_local_condition_primes", checkpointed.SELMER_WORKER)
+        self.assertIn("auxiliary_descent_primes", checkpointed.SELMER_WORKER)
+        self.assertIn("elliptic_bad_local_data", checkpointed.SELMER_WORKER)
+        self.assertIn("component_group_data", checkpointed.SELMER_WORKER)
         self.assertIn(
             "global_norm_square_subspace_basis_columns_in_s_squareclasses",
             checkpointed.SELMER_WORKER,

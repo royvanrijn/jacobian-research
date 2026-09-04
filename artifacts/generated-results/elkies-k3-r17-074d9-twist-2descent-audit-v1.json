@@ -1,0 +1,314 @@
+{
+  "claim": "All four finite-function-field 2-descents complete at smaller discovery primes, while all four globally good p=131 attempts exceed the public Magma server's 60-second limit.",
+  "generation": {
+    "command": "sage -python elkies-k3/scripts/certify_r17_074d9_twist_2descent_audit.sage",
+    "magma_calculator_endpoint": "https://magma.maths.usyd.edu.au/xml/calculator.xml"
+  },
+  "inputs": {
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/04b07/p131/input-certificate.json": "4bea2ba2b593dfc96a5201b0b396c7185b7b83613604b48bfd08775eb0c167bd",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/04b07/p131/two-descent.m": "b72587baabc37c9afcbe1bef9185d093466cf42999c9d2831c8f86297855410f",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/04b07/p131/two-descent.output.xml": "98c12798634b8f0f26bc4d502b234a0cc9cf947a388f424ee83a230ede38ef05",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/04b07/p19/input-certificate.json": "b7966abaf3e741925bec3a909f055720c0a87e95e3b5ba10938bf15d5ed9b883",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/04b07/p19/two-descent.m": "81b27de691725eb2a5a43fe7ce1340469608ee65470a448d4e38c577124e4729",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/04b07/p19/two-descent.output.xml": "2549e7a25029b03c2a5e21c3c9f6ccae7820bde0bef21bbe3fb6f8ef184d9f21",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/080fa/p131/input-certificate.json": "a909c463134ac38aff1c750a0cc67e4105833c91015b6a83daab328863ec1316",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/080fa/p131/two-descent.m": "fbeb5ac4a94b9b7f027ed918050981b6c64c323ff514640d31e35e982796b847",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/080fa/p131/two-descent.output.xml": "a6474f8c9efd21b09959a414f2ae1b8543cfbd229ab53ae2a0e5d35bcefe3b4d",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/080fa/p31/input-certificate.json": "58be796437e7656bf21850ca71a616a7061f05fb089da2cd485b6f8456103bde",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/080fa/p31/two-descent.m": "38bffabdb9fbaa291fbaaf0bc5ed09393abb457f0e2d0ac81b5130a00860e8da",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/080fa/p31/two-descent.output.xml": "73a3adc8e0c486bff1b24bfb03ef3b522bf38601bee187dd34da51e6ae853e1c",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11279/p131/input-certificate.json": "7e862cd052229b2583a84a8d26807a37b942bc2bddc84269ff3fcb270972fac3",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11279/p131/two-descent.m": "591cfc447bff2dae2700391fec84c8bf840b442471980370a2cf6a6862d0d34e",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11279/p131/two-descent.output.xml": "b2cae87d40404fb9ad53fef6a828de90782190cd9627ebf3ccaf3165441b0ae8",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11279/p19/input-certificate.json": "c5b50e40100f9d3d6cb58ac94ccd215963bf5a9be60bda5a06ad051440bd24ca",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11279/p19/two-descent.m": "c1cbc903aa89e3e07d9c94555faa3f02030cf2bc40fddff3765f6e56ee637652",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11279/p19/two-descent.output.xml": "f819975105f56448178e49f7b8180c7f199037672f3ce7421d19f07322157db8",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11a44/p131/input-certificate.json": "61658e1ba75e4c8fc9c24495872c1778c23a78cdce47bc61f96653e9cb0c2501",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11a44/p131/two-descent.m": "579776567fc6eb5f750214ff0923b92be0b82b5bbb54b086e2449574aa9c5f4c",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11a44/p131/two-descent.output.xml": "90e01377a10bf8eadd054f2e9654a4c6983dd3d3beed63ea42753c3f993fcdce",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11a44/p19/input-certificate.json": "6ffbdd98984c8272396333e8d7643af1e09febe9cd1af42bbb0535acdb9b0a7c",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11a44/p19/two-descent.m": "3496c99ede51b1f3fcd6de32d30a0857d814dfa1f175f20a76b8a16f9e27af1b",
+    "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11a44/p19/two-descent.output.xml": "8513a7ee1d1dfd568c747a32e35c447dc252dc2d73a567b2e3fc56182711adc3"
+  },
+  "proof_boundary": "The nongood-prime Selmer dimensions are discovery diagnostics and do not bound the characteristic-zero ranks. The p=131 jobs establish no Selmer bound because they timed out. Every characteristic-zero rank therefore remains UNKNOWN.",
+  "schema": "elkies-k3.r17-074d9-twist-2descent-audit.v1",
+  "status": "INCOMPLETE_GOOD_REDUCTION_2DESCENTS_TIMED_OUT",
+  "twists": [
+    {
+      "attempts": [
+        {
+          "MW_rank_upper_bound_over_displayed_finite_function_field": 6,
+          "good_reduction": false,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/04b07/p19/input-certificate.json",
+            "sha256": "b7966abaf3e741925bec3a909f055720c0a87e95e3b5ba10938bf15d5ed9b883"
+          },
+          "lines": [
+            "R17074D9_2DESCENT|label=074d9-orbit-04b07|prime=19",
+            "TWO_DIVISION_FACTOR_DEGREES [ 3 ]",
+            "TWO_SELMER_INVARIANTS [ 2, 2, 2, 2, 2, 2 ]",
+            "TWO_SELMER_ORDER 64",
+            "TWO_SELMER_NGENS 6",
+            "TWO_TORSION_DIMENSION 0",
+            "MW_RANK_UPPER_FROM_TWO_SELMER 6",
+            ""
+          ],
+          "magma_job": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/04b07/p19/two-descent.m",
+            "sha256": "81b27de691725eb2a5a43fe7ce1340469608ee65470a448d4e38c577124e4729"
+          },
+          "magma_version": "2.29-9",
+          "outcome": "PASS_COMPLETED_TWO_SELMER_GROUP",
+          "prime": 19,
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/04b07/p19/two-descent.output.xml",
+            "sha256": "2549e7a25029b03c2a5e21c3c9f6ccae7820bde0bef21bbe3fb6f8ef184d9f21"
+          },
+          "role": "discovery_only",
+          "server_max_time_seconds": 60,
+          "server_seed": 3108610053,
+          "server_time_seconds": 3.71,
+          "two_selmer_dimension": 6,
+          "warning": null
+        },
+        {
+          "MW_rank_upper_bound_over_displayed_finite_function_field": null,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/04b07/p131/input-certificate.json",
+            "sha256": "4bea2ba2b593dfc96a5201b0b396c7185b7b83613604b48bfd08775eb0c167bd"
+          },
+          "lines": [
+            "R17074D9_2DESCENT|label=074d9-orbit-04b07|prime=131",
+            "TWO_DIVISION_FACTOR_DEGREES [ 3 ]"
+          ],
+          "magma_job": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/04b07/p131/two-descent.m",
+            "sha256": "b72587baabc37c9afcbe1bef9185d093466cf42999c9d2831c8f86297855410f"
+          },
+          "magma_version": "2.29-9",
+          "outcome": "TIMEOUT_AFTER_IRREDUCIBLE_TWO_DIVISION_CUBIC",
+          "prime": 131,
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/04b07/p131/two-descent.output.xml",
+            "sha256": "98c12798634b8f0f26bc4d502b234a0cc9cf947a388f424ee83a230ede38ef05"
+          },
+          "role": "good_reduction",
+          "server_max_time_seconds": 60,
+          "server_seed": 200999630,
+          "server_time_seconds": null,
+          "warning": "The computation exceeded the time limit and so was terminated prematurely."
+        }
+      ],
+      "characteristic_zero_function_field_rank_status": "UNKNOWN",
+      "label": "074d9-orbit-04b07"
+    },
+    {
+      "attempts": [
+        {
+          "MW_rank_upper_bound_over_displayed_finite_function_field": 4,
+          "good_reduction": false,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11a44/p19/input-certificate.json",
+            "sha256": "6ffbdd98984c8272396333e8d7643af1e09febe9cd1af42bbb0535acdb9b0a7c"
+          },
+          "lines": [
+            "R17074D9_2DESCENT|label=074d9-orbit-11a44|prime=19",
+            "TWO_DIVISION_FACTOR_DEGREES [ 3 ]",
+            "TWO_SELMER_INVARIANTS [ 2, 2, 2, 2 ]",
+            "TWO_SELMER_ORDER 16",
+            "TWO_SELMER_NGENS 4",
+            "TWO_TORSION_DIMENSION 0",
+            "MW_RANK_UPPER_FROM_TWO_SELMER 4",
+            ""
+          ],
+          "magma_job": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11a44/p19/two-descent.m",
+            "sha256": "3496c99ede51b1f3fcd6de32d30a0857d814dfa1f175f20a76b8a16f9e27af1b"
+          },
+          "magma_version": "2.29-9",
+          "outcome": "PASS_COMPLETED_TWO_SELMER_GROUP",
+          "prime": 19,
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11a44/p19/two-descent.output.xml",
+            "sha256": "8513a7ee1d1dfd568c747a32e35c447dc252dc2d73a567b2e3fc56182711adc3"
+          },
+          "role": "discovery_only",
+          "server_max_time_seconds": 60,
+          "server_seed": 834746611,
+          "server_time_seconds": 4.07,
+          "two_selmer_dimension": 4,
+          "warning": null
+        },
+        {
+          "MW_rank_upper_bound_over_displayed_finite_function_field": null,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11a44/p131/input-certificate.json",
+            "sha256": "61658e1ba75e4c8fc9c24495872c1778c23a78cdce47bc61f96653e9cb0c2501"
+          },
+          "lines": [
+            "R17074D9_2DESCENT|label=074d9-orbit-11a44|prime=131",
+            "TWO_DIVISION_FACTOR_DEGREES [ 3 ]"
+          ],
+          "magma_job": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11a44/p131/two-descent.m",
+            "sha256": "579776567fc6eb5f750214ff0923b92be0b82b5bbb54b086e2449574aa9c5f4c"
+          },
+          "magma_version": "2.29-9",
+          "outcome": "TIMEOUT_AFTER_IRREDUCIBLE_TWO_DIVISION_CUBIC",
+          "prime": 131,
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11a44/p131/two-descent.output.xml",
+            "sha256": "90e01377a10bf8eadd054f2e9654a4c6983dd3d3beed63ea42753c3f993fcdce"
+          },
+          "role": "good_reduction",
+          "server_max_time_seconds": 60,
+          "server_seed": 4127647981,
+          "server_time_seconds": null,
+          "warning": "The computation exceeded the time limit and so was terminated prematurely."
+        }
+      ],
+      "characteristic_zero_function_field_rank_status": "UNKNOWN",
+      "label": "074d9-orbit-11a44"
+    },
+    {
+      "attempts": [
+        {
+          "MW_rank_upper_bound_over_displayed_finite_function_field": 5,
+          "good_reduction": false,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11279/p19/input-certificate.json",
+            "sha256": "c5b50e40100f9d3d6cb58ac94ccd215963bf5a9be60bda5a06ad051440bd24ca"
+          },
+          "lines": [
+            "R17074D9_2DESCENT|label=074d9-orbit-11279|prime=19",
+            "TWO_DIVISION_FACTOR_DEGREES [ 3 ]",
+            "TWO_SELMER_INVARIANTS [ 2, 2, 2, 2, 2 ]",
+            "TWO_SELMER_ORDER 32",
+            "TWO_SELMER_NGENS 5",
+            "TWO_TORSION_DIMENSION 0",
+            "MW_RANK_UPPER_FROM_TWO_SELMER 5",
+            ""
+          ],
+          "magma_job": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11279/p19/two-descent.m",
+            "sha256": "c1cbc903aa89e3e07d9c94555faa3f02030cf2bc40fddff3765f6e56ee637652"
+          },
+          "magma_version": "2.29-9",
+          "outcome": "PASS_COMPLETED_TWO_SELMER_GROUP",
+          "prime": 19,
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11279/p19/two-descent.output.xml",
+            "sha256": "f819975105f56448178e49f7b8180c7f199037672f3ce7421d19f07322157db8"
+          },
+          "role": "discovery_only",
+          "server_max_time_seconds": 60,
+          "server_seed": 3209668111,
+          "server_time_seconds": 3.609,
+          "two_selmer_dimension": 5,
+          "warning": null
+        },
+        {
+          "MW_rank_upper_bound_over_displayed_finite_function_field": null,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11279/p131/input-certificate.json",
+            "sha256": "7e862cd052229b2583a84a8d26807a37b942bc2bddc84269ff3fcb270972fac3"
+          },
+          "lines": [
+            "R17074D9_2DESCENT|label=074d9-orbit-11279|prime=131",
+            "TWO_DIVISION_FACTOR_DEGREES [ 3 ]"
+          ],
+          "magma_job": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11279/p131/two-descent.m",
+            "sha256": "591cfc447bff2dae2700391fec84c8bf840b442471980370a2cf6a6862d0d34e"
+          },
+          "magma_version": "2.29-9",
+          "outcome": "TIMEOUT_AFTER_IRREDUCIBLE_TWO_DIVISION_CUBIC",
+          "prime": 131,
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/11279/p131/two-descent.output.xml",
+            "sha256": "b2cae87d40404fb9ad53fef6a828de90782190cd9627ebf3ccaf3165441b0ae8"
+          },
+          "role": "good_reduction",
+          "server_max_time_seconds": 60,
+          "server_seed": 234685484,
+          "server_time_seconds": null,
+          "warning": "The computation exceeded the time limit and so was terminated prematurely."
+        }
+      ],
+      "characteristic_zero_function_field_rank_status": "UNKNOWN",
+      "label": "074d9-orbit-11279"
+    },
+    {
+      "attempts": [
+        {
+          "MW_rank_upper_bound_over_displayed_finite_function_field": 4,
+          "good_reduction": false,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/080fa/p31/input-certificate.json",
+            "sha256": "58be796437e7656bf21850ca71a616a7061f05fb089da2cd485b6f8456103bde"
+          },
+          "lines": [
+            "R17074D9_2DESCENT|label=074d9-orbit-080fa|prime=31",
+            "TWO_DIVISION_FACTOR_DEGREES [ 3 ]",
+            "TWO_SELMER_INVARIANTS [ 2, 2, 2, 2 ]",
+            "TWO_SELMER_ORDER 16",
+            "TWO_SELMER_NGENS 4",
+            "TWO_TORSION_DIMENSION 0",
+            "MW_RANK_UPPER_FROM_TWO_SELMER 4",
+            ""
+          ],
+          "magma_job": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/080fa/p31/two-descent.m",
+            "sha256": "38bffabdb9fbaa291fbaaf0bc5ed09393abb457f0e2d0ac81b5130a00860e8da"
+          },
+          "magma_version": "2.29-9",
+          "outcome": "PASS_COMPLETED_TWO_SELMER_GROUP",
+          "prime": 31,
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/080fa/p31/two-descent.output.xml",
+            "sha256": "73a3adc8e0c486bff1b24bfb03ef3b522bf38601bee187dd34da51e6ae853e1c"
+          },
+          "role": "discovery_only",
+          "server_max_time_seconds": 60,
+          "server_seed": 935804662,
+          "server_time_seconds": 2.629,
+          "two_selmer_dimension": 4,
+          "warning": null
+        },
+        {
+          "MW_rank_upper_bound_over_displayed_finite_function_field": null,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/080fa/p131/input-certificate.json",
+            "sha256": "a909c463134ac38aff1c750a0cc67e4105833c91015b6a83daab328863ec1316"
+          },
+          "lines": [
+            "R17074D9_2DESCENT|label=074d9-orbit-080fa|prime=131",
+            "TWO_DIVISION_FACTOR_DEGREES [ 3 ]"
+          ],
+          "magma_job": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/080fa/p131/two-descent.m",
+            "sha256": "fbeb5ac4a94b9b7f027ed918050981b6c64c323ff514640d31e35e982796b847"
+          },
+          "magma_version": "2.29-9",
+          "outcome": "TIMEOUT_AFTER_IRREDUCIBLE_TWO_DIVISION_CUBIC",
+          "prime": 131,
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-2descent/080fa/p131/two-descent.output.xml",
+            "sha256": "a6474f8c9efd21b09959a414f2ae1b8543cfbd229ab53ae2a0e5d35bcefe3b4d"
+          },
+          "role": "good_reduction",
+          "server_max_time_seconds": 60,
+          "server_seed": 3091773056,
+          "server_time_seconds": null,
+          "warning": "The computation exceeded the time limit and so was terminated prematurely."
+        }
+      ],
+      "characteristic_zero_function_field_rank_status": "UNKNOWN",
+      "label": "074d9-orbit-080fa"
+    }
+  ]
+}

@@ -5,8 +5,9 @@ Date: 2026-09-04.
 Status: **ACTIVE, fail-closed infrastructure**.
 
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY d94b3dbddf5cb529 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6014cc6c7b64d76e -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY ec9b82089d2e9196 -->
+<!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 
 ## Outcome
 
@@ -16,13 +17,13 @@ frame and enter the classifier.  The current exact decisions are
 
 ```text
 ARITHMETICALLY_POSSIBLE    1
-ARITHMETICALLY_EXCLUDED    3
-UNKNOWN                   62
+ARITHMETICALLY_EXCLUDED    5
+UNKNOWN                   60
 ```
 
 The positive row is the already-realized determinant-948 `NS0001` control.
-The excluded rows are determinant-720 Golay, determinant-950 `NS0024`, and
-determinant-1184 `NS0031`.
+The excluded rows are determinants 500 and 750, determinant-720 Golay,
+determinant-950 `NS0024`, and determinant-1184 `NS0031`.
 Every other row remains `UNKNOWN`; no bounded search, coarse modular curve, or
 formal local branch is promoted.
 
@@ -66,7 +67,7 @@ The small auditable decision registry is
 New non-`UNKNOWN` decisions must name exact certificate assertions and any
 external theorem inputs.
 
-## The four controls
+## The six controls
 
 ### Determinant 948: possible
 
@@ -123,13 +124,31 @@ classification excludes rational noncuspidal points. The rational `X_0(15)`
 points do not lift, and the known rational `3A5` model instead saturates from
 determinant `720` to determinant `20` with index six.
 
+### Determinants 500 and 750: excluded
+
+The two rootless rows have
+
+```text
+T_N = U(5) + <10N> = 5(U+<2N>),      N=2,3.
+```
+
+Their coarse curves `X_0(2)` and `X_0(3)` omit the literal projective mod-five
+marking. The exact spin image is `PSL_2(F_5)=A5`; the Fricke and full
+orthogonal images are `S5` and `S5 x C2`, and no non-spin coset is stable.
+The full marked curves are the genus-four `X_H(50)` and genus-nine `X_H(75)`,
+both degree two over `X_0(50)` or `X_0(75)`. Mazur--Kenku excludes rational
+noncuspidal points on those quotients, while exact cusp Galois calculations
+leave four rational cusps on each marked curve. Thus neither row has a K3
+period point. See
+[`DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md`](DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md).
+
 ## Why 948 looks hospitable
 
 The current evidence points to a structural explanation, but not yet a
 classification theorem.  Determinant `948` combines a clean Eichler order
 with a very low-genus Atkin--Lehner quotient and an actual non-CM rational
-lift.  The two nearby failures are split-Clifford cases, so splitness itself
-is not favorable: their markings force rigid modular quotients where global
+lift.  The split-Clifford failures show that splitness itself is not
+favorable: their markings force rigid modular quotients where global
 rational-point theorems or a single Frobenius class rule out every lift.
 
 The useful predictor is therefore not determinant size or split versus
@@ -147,9 +166,9 @@ The last entry is decisive.  The first three only identify where to look.
 The construction search now starts from the full rank-three `T` ledger, not
 from the remaining rootless-frame list. The generated arithmetic-first queue
 contains all 827 transcendental rows and does not use rootless-frame data in
-its priority. It propagates the classifier's three exclusions, the separate
+its priority. It propagates the classifier's five exclusions, the separate
 split determinant-378 exclusion, one realized positive control, and an
-822-row arithmetic research queue. Twenty-three rows have coarse genus at
+820-row arithmetic research queue. Twenty-one rows have coarse genus at
 most two, but each still needs its literal stable discriminant kernel and
 rational-point decision.
 
@@ -173,10 +192,11 @@ may trigger `NS=T^perp`, rootlessness, or equation work. The full queue is in
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 sage -python elkies-k3/scripts/certify_golay_det720_qq_marking_obstruction.sage --check
+sage -python elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
 python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
 ```
 
-The checkers do not reprove Momose, Vélu, Mazur--Kenku, the Inose
-correspondence, or the rank-three period/spin correspondence. Those inputs
+The checkers do not reprove Momose, Vélu, Mazur--Kenku, the split-Eichler
+normalizer theorem, the Inose correspondence, or the rank-three period/spin correspondence. Those inputs
 remain named in the decision registry and canonical obstruction notes.

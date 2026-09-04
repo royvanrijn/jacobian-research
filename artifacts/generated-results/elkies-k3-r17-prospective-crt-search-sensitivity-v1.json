@@ -1,0 +1,82 @@
+{
+  "changes_frozen_candidates_protocol_or_contrasts": false,
+  "claim_boundary": [
+    "This post-experiment positive-control audit cannot redefine the frozen protocol or cohorts.",
+    "A bounded failure to rediscover a known point says nothing about exact rank.",
+    "The historical residual dimension 12 is an exact known-MW lower bound, not a full Selmer upper bound."
+  ],
+  "controls": [
+    {
+      "certified_escape_count": 0,
+      "certified_points": [],
+      "completed_square_coefficients_low_to_high": [
+        "187775625735122481827379330796205361758794846354975380829238230625096967141918840000",
+        "-97567506978870829054130783603362209580691893992746241200",
+        "4",
+        "4"
+      ],
+      "curve_id": 356,
+      "distinct_exact_candidate_count": 0,
+      "historically_certified_residual_MW_dimension": 12,
+      "parameter": "-970521251165766412987689802944/5201452365084059419448702694373",
+      "rational_two_torsion_exclusion_prime": null,
+      "raw_hyperellratpoints_count": 0,
+      "search_model_ainvs": [
+        "0",
+        "1",
+        "0",
+        "-24391876744717707263532695900840552395172973498186560300",
+        "46943906433780620456844832699051340439698711588743845207309557656274241785479710000"
+      ],
+      "search_model_sha256": "edf3b841f24a05a765fc9bf17d3986770be0c1ed026e6ea28b1b606602f0b077",
+      "sensitivity_status": "NO_ESCAPE_REDETECTED_AT_FROZEN_BOUND",
+      "uncertified_candidates": []
+    },
+    {
+      "certified_escape_count": 0,
+      "certified_points": [],
+      "completed_square_coefficients_low_to_high": [
+        "9291413128214754769184719327548621544171991373495680092180231064190538840306148795948882615437",
+        "-1327309986697626248164657483264215853985738054042597139982121866",
+        "-3",
+        "4"
+      ],
+      "curve_id": 385,
+      "distinct_exact_candidate_count": 0,
+      "historically_certified_residual_MW_dimension": 12,
+      "parameter": "-4569968803191492789881348058432/20219201289082406615406548938643",
+      "rational_two_torsion_exclusion_prime": null,
+      "raw_hyperellratpoints_count": 0,
+      "search_model_ainvs": [
+        "1",
+        "-1",
+        "1",
+        "-331827496674406562041164370816053963496434513510649284995530467",
+        "2322853282053688692296179831887155386042997843373920023045057766047634710076537198987220653859"
+      ],
+      "search_model_sha256": "a8866ec2a4be39105dadad65b1a589442eda263ad183406c28e8226e756c8bcd",
+      "sensitivity_status": "NO_ESCAPE_REDETECTED_AT_FROZEN_BOUND",
+      "uncertified_candidates": []
+    }
+  ],
+  "generation": {
+    "command": "sage -python elkies-k3/scripts/audit_r17_prospective_crt_search_sensitivity.sage",
+    "script": "elkies-k3/scripts/audit_r17_prospective_crt_search_sensitivity.sage",
+    "script_sha256": "8a6f2691df85c6424bd69eed927ad9189c5942c6663bf4dfc23dec505c04cf48"
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-prospective-crt-search-protocol-v2.json": "1863d2b7b0ec31127cbe8b93beb203ff802c874b5d01dabc12bc58cac6b870d0",
+    "artifacts/generated-results/elkies-k3-r17-residual-selmer-fingerprints-v1.json": "dbc9fa5beac444eee329292920e7cc58193a4b9cdc18691987620332116b5f8a"
+  },
+  "interpretation": "Failure to rediscover a point on either known +12 fibre shows that the all-zero prospective ledger is detector-limited at this bound. It does not rescue an enrichment claim and does not alter the frozen experiment.",
+  "limits": {
+    "engine": "PARI hyperellratpoints",
+    "same_completed_square_model_as_frozen_protocol": true,
+    "x_numerator_denominator_height": 10000
+  },
+  "post_experiment_diagnostic_only": true,
+  "schema": "elkies-k3.r17-prospective-crt-search-sensitivity.v1",
+  "search_protocol_sha256": "63d6b9e83f52bc7208b9057298e05941dfcedc85d53f5681186c953498947d4b",
+  "sensitivity_definition_sha256": "000f74fe3beb02eb48c6b3ee7699ff2e4fe2a91e43160ffec3fa49dd76f73a5e",
+  "status": "FAILED_TO_REDETECT_BOTH_KNOWN_PLUS12_POSITIVE_CONTROLS"
+}

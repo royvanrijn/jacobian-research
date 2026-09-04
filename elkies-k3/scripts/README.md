@@ -1472,10 +1472,11 @@ The current proof boundary and replay commands are in
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 252991e141c42e55 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK b932f409dfffdb55 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6014cc6c7b64d76e -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY d94b3dbddf5cb529 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY ec9b82089d2e9196 -->
+<!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 <!-- status-consumer: EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS 01298fec30fa94a3 -->
 - `certify_ns0024_qq_marking_obstruction.py` pins the stronger
   Fricke-quotient argument. Momose's composite-level theorem at
@@ -1506,16 +1507,17 @@ The current proof boundary and replay commands are in
   the standard marked-K3 spin correspondence, this rules out a full rational
   NS0031 marking over `QQ`.
 - `build_rank7_determinant_aware_ranking.py` now consumes explicit
-  arithmetic classifications. It preserves determinant 720, NS0024, and
-  NS0031 in an exact rejection ledger instead of leaving them in the live
-  equation queue; the regenerated planner retains 63 arithmetic candidates,
-  including the already-realized determinant-948 control.
+  arithmetic classifications. It preserves determinant 720, NS0024, NS0031,
+  and the determinant-500 and determinant-750 rows in an exact rejection
+  ledger instead of leaving them in the live equation queue; the regenerated
+  planner retains 61 arithmetic candidates, including the already-realized
+  determinant-948 control.
 - `build_rank19_arithmetic_marking_classifier.sage` checks all 66 exact
   rootless-MW17 candidate NS lattices against their rank-three complements,
   imports the even-Clifford ledger, and keeps the coarse norm-one curve
   separate from the full stable discriminant-kernel curve. Exact decision
-  records currently give one `ARITHMETICALLY_POSSIBLE`, three
-  `ARITHMETICALLY_EXCLUDED`, and 62 `UNKNOWN` rows. Its equation-survivor
+  records currently give one `ARITHMETICALLY_POSSIBLE`, five
+  `ARITHMETICALLY_EXCLUDED`, and 60 `UNKNOWN` rows. Its equation-survivor
   handoff excludes every `UNKNOWN` row and is empty for the new different-NS
   objective.
 - `certify_golay_det720_qq_marking_obstruction.sage` reconstructs the literal
@@ -1532,13 +1534,21 @@ The current proof boundary and replay commands are in
   as `X_0(63)`. Its four
   rational points are cusps, so no downstream marking or rootless-frame gate
   opens.
+- `certify_det500_det750_qq_marking_obstructions.sage` treats the first two
+  new rootless-MW17 rows selected independently of the legacy equations. It
+  reconstructs `T=U(5)+<20>` and `T=U(5)+<30>`, their literal Clifford
+  orders, and the spin/Fricke/full discriminant images `A5`, `S5`, and
+  `S5 x C2`. The stable marked curves are the explicit congruence curves
+  `X_H(50)` and `X_H(75)`, of genera four and nine. Each has exactly four
+  rational points, all cusps, so both rows are arithmetically excluded.
 - `build_arithmetic_first_marked_t_foundry.py` reverses the global foundry
   order. It ranks all 827 `T` rows without consulting rootless-frame data,
   retains coarse genus only as a diagnostic, propagates exact marking
   decisions, and emits no NS/rootless handoff until a new full rational
-  marking is certified. The current 822-row research queue has 23 coarse
-  genus-at-most-two diagnostics and no new positive handoff; determinants 256
-  and 512 are next.
+  marking is certified. The current 820-row research queue has 21 coarse
+  genus-at-most-two diagnostics and no new positive handoff. Determinants 256
+  and 512 remain early transcendental-lattice diagnostics, but their known
+  frames are not rootless-MW17 equation candidates.
 - `extract_lattice_foundry_ns0024_joint_gb_point.sage` decodes a
   zero-dimensional joint basis over an arbitrary irreducible residue-field
   modulus, scans the Frobenius-field points, and emits only after replaying all
@@ -3628,12 +3638,14 @@ record quotients.  `export_r17_074d9_twist_2descent_magma.sage` plus
 `certify_r17_074d9_twist_2descent_audit.sage` preserve completed diagnostic
 2-descents and the good-prime timeout boundary.  The exact increasing-`P.O`
 systems are exported by `export_r17_074d9_twist_section_ladder_modp.sage` and
-checkpointed by `run_r17_074d9_twist_section_ladder_msolve.py`.
+checkpointed by `run_r17_074d9_twist_section_ladder_msolve.py`; the bounded
+campaign is indexed by `certify_r17_074d9_twist_section_ladder_audit.sage`.
 
 ```bash
 sage -python certify_r17_074d9_twist_good_reduction_bounds.sage --check
 sage -python derive_r17_074d9_record_twist_sections.sage --check
 sage -python certify_r17_074d9_twist_2descent_audit.sage --check
+sage -python certify_r17_074d9_twist_section_ladder_audit.sage --check
 sage -python certify_r17_074d9_record_twist_mw_contribution.sage --check
 ```
 
@@ -3685,6 +3697,68 @@ sage -python build_r17_residual_selmer_fingerprints.sage --check
 
 See
 [`../R17_RESIDUAL_SELMER_FINGERPRINT_AND_SIEVE_2026-09-04.md`](../R17_RESIDUAL_SELMER_FINGERPRINT_AND_SIEVE_2026-09-04.md).
+
+`audit_r17_prospective_crt_local_stability.sage` independently falsifies the
+original `p^3` preservation premise and uses only local outcomes to freeze
+higher-power 356-like and 385-like cylinders.  The cohort builder then locks
+2,560 height-matched full, ordinary, 2-only, odd-only, and equal-codimension
+random rows.  `run_r17_prospective_crt_arithmetic_features.sage` stores the
+actual known-MW17 local subspaces and intersection matrices for every row.
+After an eclib canary timed out before reaching its search call, the
+pre-outcome protocol amendment freezes a uniform PARI completed-square search
+at rational `x`-height 10,000.  The complete direct ledger contains 2,560
+bounded misses and no censored row; the analysis therefore fits no predictor
+and makes no enrichment, rank, or Selmer claim.  The post-experiment
+`audit_r17_prospective_crt_search_sensitivity.sage` replay finds no point on
+either known +12 control under the same bound, marking the outcome detector-limited.
+
+```bash
+sage -python audit_r17_prospective_crt_local_stability.sage --check
+python3 build_r17_prospective_crt_cohorts.py --check
+python3 build_r17_prospective_crt_search_protocol.py --check
+sage -python audit_r17_prospective_crt_search_sensitivity.sage --check
+python3 analyze_r17_prospective_crt_experiment.py --check
+python3 -m unittest ../../elliptic-curves/tests/test_r17_prospective_crt_experiment.py
+```
+
+See
+[`../R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md`](../R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md)
+for checkpointed full-run commands and claim boundaries.
+<!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-LOCAL-STABILITY 0edaaa6f05041634 -->
+<!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-ESCAPE-EXPERIMENT 021a952efb9ea0f4 -->
+
+`build_r17_quotient_rank_escape_detector_v2_sample.py` freezes a separately
+blinded hash-order sample with two Stage-1 and six Stage-2 fibres per each of
+five aggregate cohorts.  `certify_r17_quotient_rank_escape_detector_v2_controls.sage`
+then packages the exact `17+12` record-control images, every bad place,
+infinity, cubic inputs, and preserved descent obstruction.  It deliberately
+leaves all complete-Selmer and global-condition fields null and keeps both
+sample stages unauthorized.
+
+```bash
+python3 build_r17_quotient_rank_escape_detector_v2_sample.py --check
+sage -python certify_r17_quotient_rank_escape_detector_v2_controls.sage --check
+python3 -m unittest \
+  ../../elliptic-curves/tests/test_quotient_rank_escape_detector_v2.py \
+  ../../elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py
+```
+
+See
+[`../R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md`](../R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md).
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+
+`certify_r17_kummer_classgroup_pressure.sage` uses all certified displayed
+points on controls 351, 356, 376, 377, and 385 to compute their exact
+bad-prime valuation-parity maps.  The everywhere-even kernels, together with
+the norm-positive unit bound, prove cubic class-group 2-rank lower bounds
+`18,21,17,15,15`.  After adjustment by MW17, the exceptional blocks force
+class-group images of dimension at least `6,11,3,5,10`.  It also emits exact
+Kummer half-ideals whose square identities hold after inverting the bad
+primes; these seed the quotient-first S-class collector without a full BNF.
+
+```bash
+sage -python certify_r17_kummer_classgroup_pressure.sage --check
+```
 
 `build_r17_carrier_receptivity_profiles.py` assembles the middle layer on the
 marked hyperbolic plane rather than the abstract MW frame.  It emits one
@@ -3874,6 +3948,18 @@ sage -python certify_r17_rank55_singleton_toric_frobenius_bounds.sage --check
 Both useful reductions have Tate factor `(Z-1)^2`, so the exact result is the
 rank interval `[1,2]` for each singleton; rank one remains open.  See
 [`../R17_ALTERNATE_Q80_SINGLETON_TWIST_FROBENIUS_BOUNDS_2026-09-04.md`](../R17_ALTERNATE_Q80_SINGLETON_TWIST_FROBENIUS_BOUNDS_2026-09-04.md).
+
+`run_r17_all17_product_toric_frobenius_campaign.sh` applies the product
+pipeline at `p=131` to all seventeen exact-rank-one `V4` rows and sends only
+Tate survivors to `p=137`.  The cheap aggregate verifier is
+
+```bash
+sage -python certify_r17_all17_product_toric_frobenius_campaign.sage --check
+```
+
+It certifies twelve geometric product-rank-zero targets and five persistent
+degree-two survivors.  See
+[`../R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md`](../R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md).
 
 ## Alternate-Q80 rootless equation handoff
 

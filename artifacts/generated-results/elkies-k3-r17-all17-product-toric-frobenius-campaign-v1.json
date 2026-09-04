@@ -1,0 +1,343 @@
+{
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-product-twist-finite-field-bound-audit-v1.json": "6ea5ad82a06b3fa4361afe6b7db479534b1a06342e7de53db9d1cb9221fa1eba",
+    "elkies-k3/scripts/certify_r17_all17_product_toric_frobenius_campaign.sage": "ec50f0e55de7e542186c48b18b5845a733c10bd737931241281ccc7f67f8539a"
+  },
+  "persistent_tate_survivor_count": 5,
+  "persistent_tate_survivor_pair_keys": [
+    "alternate-orbit-19bad:alternate-orbit-083ad",
+    "alternate-orbit-11ae6:alternate-orbit-0f82c",
+    "alternate-orbit-0f82c:alternate-orbit-025be",
+    "alternate-orbit-11ee2:alternate-orbit-0c36e",
+    "alternate-orbit-0c10b:alternate-orbit-17a1a"
+  ],
+  "proof_boundary": "Every zero-Tate target has geometric product-twist rank zero. A persistent Tate factor at both reductions is only a cohomological survivor and does not prove a characteristic-zero section.",
+  "rank_zero_count": 12,
+  "rank_zero_pair_keys": [
+    "alternate-orbit-1463f:alternate-orbit-19bad",
+    "alternate-orbit-025be:alternate-orbit-13dbe",
+    "alternate-orbit-1ad20:alternate-orbit-1b24d",
+    "alternate-orbit-1a465:alternate-orbit-19b4e",
+    "alternate-orbit-19ead:alternate-orbit-146dc",
+    "alternate-orbit-19b4e:alternate-orbit-17b71",
+    "alternate-orbit-0c36e:alternate-orbit-02bf1",
+    "alternate-orbit-0fda0:alternate-orbit-1a6c8",
+    "alternate-orbit-1059f:alternate-orbit-1db8d",
+    "alternate-orbit-0fda0:alternate-orbit-1037d",
+    "alternate-orbit-1ede3:alternate-orbit-1c364",
+    "alternate-orbit-13dbe:alternate-orbit-1019b"
+  ],
+  "schema": "elkies-k3.r17-all17-product-toric-frobenius-campaign.v1",
+  "status": "PASS_COMPLETE_TWO_PRIME_TRIAGE_OF_ALL_17_PRODUCTS",
+  "target_count": 17,
+  "targets": [
+    {
+      "best_geometric_mw_rank_upper_bound": 0,
+      "geometric_rank_zero": true,
+      "pair_key": "alternate-orbit-1463f:alternate-orbit-19bad",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-1463f--alternate-orbit-19bad-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "aacf7ab054e17967c24032bb9aed9790ce200a073286fc4fd914b0bf1f5b06fb",
+          "geometric_mw_rank_upper_bound": 4,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 4
+        },
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-1463f--alternate-orbit-19bad-p137-toric-frobenius-v1.json",
+          "certificate_sha256": "13ed694e87c3ed23224afa6f2f9d89db90486a2629eda2beaca333aeb56050f7",
+          "geometric_mw_rank_upper_bound": 0,
+          "prime": 137,
+          "tate_degree_with_multiplicity": 0
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 2,
+      "geometric_rank_zero": false,
+      "pair_key": "alternate-orbit-19bad:alternate-orbit-083ad",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-19bad--alternate-orbit-083ad-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "e490c60d1bab43facafe73cef5b2b57cbb8fc74c1602e94bb3765412cd53eb66",
+          "geometric_mw_rank_upper_bound": 2,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 2
+        },
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-19bad--alternate-orbit-083ad-p137-toric-frobenius-v1.json",
+          "certificate_sha256": "9b71d07790033a3eb1ee9c715e434dab3cd05b50a5505a609605247756df1cfa",
+          "geometric_mw_rank_upper_bound": 2,
+          "prime": 137,
+          "tate_degree_with_multiplicity": 2
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 2,
+      "geometric_rank_zero": false,
+      "pair_key": "alternate-orbit-11ae6:alternate-orbit-0f82c",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ae6--alternate-orbit-0f82c-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "ba450035b7f0f686667396f54396c11818b35ba348ef7b4ee4c3e86ff3ba5cee",
+          "geometric_mw_rank_upper_bound": 2,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 2
+        },
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ae6--alternate-orbit-0f82c-p137-toric-frobenius-v1.json",
+          "certificate_sha256": "b625741a1fcbcd116c956abcd517811c467ea6b732f52cf929bc7d35fda89bbe",
+          "geometric_mw_rank_upper_bound": 2,
+          "prime": 137,
+          "tate_degree_with_multiplicity": 2
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 2,
+      "geometric_rank_zero": false,
+      "pair_key": "alternate-orbit-0f82c:alternate-orbit-025be",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0f82c--alternate-orbit-025be-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "642a1cde557c1549aee79921f07a72f395abaced01dd90189299193f3e56d025",
+          "geometric_mw_rank_upper_bound": 2,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 2
+        },
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0f82c--alternate-orbit-025be-p137-toric-frobenius-v1.json",
+          "certificate_sha256": "94ea6ce544a7abf853b00c68ea7bb870214c43403951705936d2c01c0184eb97",
+          "geometric_mw_rank_upper_bound": 2,
+          "prime": 137,
+          "tate_degree_with_multiplicity": 2
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 0,
+      "geometric_rank_zero": true,
+      "pair_key": "alternate-orbit-025be:alternate-orbit-13dbe",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-025be--alternate-orbit-13dbe-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "aecf2ebce7c765edba559bcd65b55a8209f7b4f69d4572ff883817f845eb2674",
+          "geometric_mw_rank_upper_bound": 2,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 2
+        },
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-025be--alternate-orbit-13dbe-p137-toric-frobenius-v1.json",
+          "certificate_sha256": "fd8fc46590fb5cf24258729f77d2d58ac95ab4824d238fbf418e02888ef72dd0",
+          "geometric_mw_rank_upper_bound": 0,
+          "prime": 137,
+          "tate_degree_with_multiplicity": 0
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 0,
+      "geometric_rank_zero": true,
+      "pair_key": "alternate-orbit-1ad20:alternate-orbit-1b24d",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-1ad20--alternate-orbit-1b24d-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "260342f2bca14bb3e8650d6e5d499c41952404c56e16b00ba7c6fdf207f22984",
+          "geometric_mw_rank_upper_bound": 0,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 0
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 0,
+      "geometric_rank_zero": true,
+      "pair_key": "alternate-orbit-1a465:alternate-orbit-19b4e",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-1a465--alternate-orbit-19b4e-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "80ebe37f334a5195e51adbd08a563492b51ae905589219064289f02985f62f52",
+          "geometric_mw_rank_upper_bound": 2,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 2
+        },
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-1a465--alternate-orbit-19b4e-p137-toric-frobenius-v1.json",
+          "certificate_sha256": "e1fd3ec63fa28d7cadbbc590f544fe6c80d843266e05ae213ab6fe69ba9786b4",
+          "geometric_mw_rank_upper_bound": 0,
+          "prime": 137,
+          "tate_degree_with_multiplicity": 0
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 0,
+      "geometric_rank_zero": true,
+      "pair_key": "alternate-orbit-19ead:alternate-orbit-146dc",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-19ead--alternate-orbit-146dc-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "24e2dbe3557bf6f1089bd6613b5c680a3d2bd8383090206b3c8a24f5f144e29c",
+          "geometric_mw_rank_upper_bound": 0,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 0
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 0,
+      "geometric_rank_zero": true,
+      "pair_key": "alternate-orbit-19b4e:alternate-orbit-17b71",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-19b4e--alternate-orbit-17b71-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "6d2412a1875ea00c47807c44b863d8c473bdb74ea454989524fbe0a9cb37e828",
+          "geometric_mw_rank_upper_bound": 0,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 0
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 2,
+      "geometric_rank_zero": false,
+      "pair_key": "alternate-orbit-11ee2:alternate-orbit-0c36e",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ee2--alternate-orbit-0c36e-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "116359e23e26266999505e65d53f3fa7ab71453b24795d327f04a400cc409ffa",
+          "geometric_mw_rank_upper_bound": 2,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 2
+        },
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ee2--alternate-orbit-0c36e-p137-toric-frobenius-v1.json",
+          "certificate_sha256": "55244e2a9e12a7c5246143695041346f51c81f822906c694a73acd804c927493",
+          "geometric_mw_rank_upper_bound": 2,
+          "prime": 137,
+          "tate_degree_with_multiplicity": 2
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 0,
+      "geometric_rank_zero": true,
+      "pair_key": "alternate-orbit-0c36e:alternate-orbit-02bf1",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0c36e--alternate-orbit-02bf1-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "55ab40be698ae0581a029f7954bd2a91d0da5c434a6a819b24b4d4b582f8d855",
+          "geometric_mw_rank_upper_bound": 0,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 0
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 0,
+      "geometric_rank_zero": true,
+      "pair_key": "alternate-orbit-0fda0:alternate-orbit-1a6c8",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0fda0--alternate-orbit-1a6c8-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "1a6c92919694a757d006cb9753ffabdb0bf99cc0fbc081195ca4479d0494487f",
+          "geometric_mw_rank_upper_bound": 4,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 4
+        },
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0fda0--alternate-orbit-1a6c8-p137-toric-frobenius-v1.json",
+          "certificate_sha256": "8459dcc11ae5837794df6d55e5eee65eb2ea86630f622ac382942f811faf25f2",
+          "geometric_mw_rank_upper_bound": 0,
+          "prime": 137,
+          "tate_degree_with_multiplicity": 0
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 0,
+      "geometric_rank_zero": true,
+      "pair_key": "alternate-orbit-1059f:alternate-orbit-1db8d",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-1059f--alternate-orbit-1db8d-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "ea5b2d514e1da6e79ef7215450fa26493abf682099ca325540b333678a87709f",
+          "geometric_mw_rank_upper_bound": 0,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 0
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 0,
+      "geometric_rank_zero": true,
+      "pair_key": "alternate-orbit-0fda0:alternate-orbit-1037d",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0fda0--alternate-orbit-1037d-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "18d573595663fba18793791c1693c712ef6adaf637ec79eeedba5dd80bb7aa21",
+          "geometric_mw_rank_upper_bound": 0,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 0
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 2,
+      "geometric_rank_zero": false,
+      "pair_key": "alternate-orbit-0c10b:alternate-orbit-17a1a",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0c10b--alternate-orbit-17a1a-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "eb95a449c26407796aaa2e5f47ae19beec7f273eda88e67bd523f33da521f365",
+          "geometric_mw_rank_upper_bound": 2,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 2
+        },
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0c10b--alternate-orbit-17a1a-p137-toric-frobenius-v1.json",
+          "certificate_sha256": "a89cf1ff28d9a1244cf83fc491ad9f4d0a5290f8465e9fe1311eec9a519f99e8",
+          "geometric_mw_rank_upper_bound": 2,
+          "prime": 137,
+          "tate_degree_with_multiplicity": 2
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 0,
+      "geometric_rank_zero": true,
+      "pair_key": "alternate-orbit-1ede3:alternate-orbit-1c364",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-1ede3--alternate-orbit-1c364-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "ab1e01314cd4b000d66e8c1661a3f8e4af2b3b5f94fb29f1e21720fe2c3ea2fc",
+          "geometric_mw_rank_upper_bound": 2,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 2
+        },
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-1ede3--alternate-orbit-1c364-p137-toric-frobenius-v1.json",
+          "certificate_sha256": "bb9757de4b7697525da1053df96aadd0585ebaaf9208df1a2a39f9211fa099e2",
+          "geometric_mw_rank_upper_bound": 0,
+          "prime": 137,
+          "tate_degree_with_multiplicity": 0
+        }
+      ]
+    },
+    {
+      "best_geometric_mw_rank_upper_bound": 0,
+      "geometric_rank_zero": true,
+      "pair_key": "alternate-orbit-13dbe:alternate-orbit-1019b",
+      "reductions": [
+        {
+          "certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-13dbe--alternate-orbit-1019b-p131-toric-frobenius-v1.json",
+          "certificate_sha256": "5b10e9f79bb476d4ea3f75bc7839ac0f127def2ce305ab3665da3252055403e1",
+          "geometric_mw_rank_upper_bound": 0,
+          "prime": 131,
+          "tate_degree_with_multiplicity": 0
+        }
+      ]
+    }
+  ]
+}

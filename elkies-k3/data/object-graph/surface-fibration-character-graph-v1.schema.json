@@ -1,0 +1,238 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jacobian-research.local/schemas/elkies-k3.surface-fibration-character-graph.v1.json",
+  "title": "K3 surface, fibration, and character identity graph",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "graph_id",
+    "status",
+    "sources",
+    "nodes",
+    "edges",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "elkies-k3.surface-fibration-character-graph.v1"
+    },
+    "graph_id": {
+      "$ref": "#/$defs/id"
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/node"
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/edge"
+      }
+    },
+    "claim_boundary": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:._+@/()-]*$"
+    },
+    "status": {
+      "enum": [
+        "DEFINITIONAL",
+        "CERTIFIED_EXACT",
+        "CERTIFIED_PARTIAL",
+        "UNKNOWN",
+        "DIAGNOSTIC_ONLY"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "assertion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pointer",
+        "equals"
+      ],
+      "properties": {
+        "pointer": {
+          "type": "string",
+          "pattern": "^/"
+        },
+        "equals": {}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id"
+      ],
+      "properties": {
+        "source_id": {
+          "$ref": "#/$defs/id"
+        },
+        "assertions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assertion"
+          }
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "label",
+        "status",
+        "data",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "surface",
+            "transcendental_lattice",
+            "neron_severi_lattice",
+            "clifford_order",
+            "marking_group",
+            "period_point",
+            "fibration",
+            "frame_lattice",
+            "carrier",
+            "character",
+            "field",
+            "surface_cover",
+            "mw_block",
+            "divisor",
+            "utility_profile"
+          ]
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "data": {
+          "type": "object"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "relation",
+        "source",
+        "target",
+        "status",
+        "data",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "relation": {
+          "enum": [
+            "HAS_TRANSCENDENTAL",
+            "HAS_NERON_SEVERI",
+            "HAS_CLIFFORD_ORDER",
+            "HAS_STABLE_MARKING_GROUP",
+            "HAS_PERIOD_POINT",
+            "HAS_FIBRATION",
+            "HAS_FRAME",
+            "HAS_UTILITY_PROFILE",
+            "HOP_TO",
+            "HAS_BASE_FIELD",
+            "HAS_BASE_FUNCTION_FIELD",
+            "SUBFIELD_OF",
+            "HAS_AMBIENT_FIELD",
+            "PULLS_BACK_TO",
+            "DESCENDS_TO_BASE",
+            "SAME_SURFACE_CHARACTER",
+            "SUPPORTS_CARRIER",
+            "DEFINES_CHARACTER",
+            "BASE_CHANGES_TO",
+            "COVERS_SURFACE",
+            "HAS_MW_BLOCK",
+            "EIGENSPACE_FOR",
+            "REPRESENTED_BY",
+            "PRESENTED_BY",
+            "DEFINED_OVER",
+            "SAME_DIVISOR"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/id"
+        },
+        "target": {
+          "$ref": "#/$defs/id"
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "data": {
+          "type": "object"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        }
+      }
+    }
+  }
+}

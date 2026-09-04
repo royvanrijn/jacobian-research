@@ -16,6 +16,32 @@ sys.modules[spec.name] = module
 assert spec.loader is not None
 spec.loader.exec_module(module)
 
+RELATIVE_MATRIX_SCRIPT = (
+    Path(__file__).resolve().parents[1]
+    / "cas"
+    / "build_mw29_relative_2selmer_matrix.py"
+)
+relative_spec = importlib.util.spec_from_file_location(
+    "build_mw29_relative_2selmer_matrix", RELATIVE_MATRIX_SCRIPT
+)
+relative_module = importlib.util.module_from_spec(relative_spec)
+sys.modules[relative_spec.name] = relative_module
+assert relative_spec.loader is not None
+relative_spec.loader.exec_module(relative_module)
+
+WITNESS_BOUND_SCRIPT = (
+    Path(__file__).resolve().parents[1]
+    / "cas"
+    / "audit_mw29_relative_selmer_witness_bound.py"
+)
+witness_spec = importlib.util.spec_from_file_location(
+    "audit_mw29_relative_selmer_witness_bound", WITNESS_BOUND_SCRIPT
+)
+witness_module = importlib.util.module_from_spec(witness_spec)
+sys.modules[witness_spec.name] = witness_module
+assert witness_spec.loader is not None
+witness_spec.loader.exec_module(witness_module)
+
 PAIRING_SCRIPT = Path(__file__).resolve().parents[1] / "cas" / "audit_residual_cassels_tate.py"
 LOCAL_FILTER_SCRIPT = Path(__file__).resolve().parents[1] / "cas" / "filter_bnf_free_local_selmer.py"
 pairing_spec = importlib.util.spec_from_file_location("audit_residual_cassels_tate", PAIRING_SCRIPT)
@@ -26,6 +52,275 @@ pairing_spec.loader.exec_module(pairing_module)
 
 
 class ResidualSelmerQuotientTests(unittest.TestCase):
+    def test_dimension_only_obstruction_witnesses_can_close_relative_bound(self):
+        result = witness_module.audit(
+            {
+                "schema": witness_module.INPUT_SCHEMA,
+                "case_id": "toy",
+                "global_ambient_dimension_upper_bound": 33,
+                "known_mw_dimension": 29,
+                "condition_blocks": [
+                    {"place": "norm", "width": 1},
+                    {"place": "2", "width": 2},
+                    {"place": "5", "width": 1},
+                ],
+                "witnesses": [
+                    {"label": f"a{index}", "generator": f"alpha{index}",
+                     "condition_syndrome": [int(column == index) for column in range(4)]}
+                    for index in range(4)
+                ],
+                "certification": {
+                    "method": "certified class-quotient upper bound plus exact local maps",
+                    "hypothesis": None,
+                    "global_dimension_upper_bound_certified": True,
+                    "witnesses_are_exact_global_squareclasses": True,
+                    "witnesses_lie_in_global_ambient_certified": True,
+                    "condition_syndromes_certified": True,
+                    "condition_blocks_are_necessary_selmer_conditions": True,
+                    "known_mw_in_condition_kernel_certified": True,
+                },
+            },
+            maximum_cut_size=3,
+        )
+        self.assertEqual(result["certified_condition_image_rank"], 4)
+        self.assertEqual(result["relative_selmer_dimension_upper_bound"], 0)
+        self.assertEqual(result["status"], "CERTIFIED_RELATIVE_2SELMER_QUOTIENT_ZERO")
+        self.assertEqual(result["greedy_place_order"][0]["place"], "2")
+        self.assertEqual(result["minimum_closing_place_cut"]["size"], 3)
+
+    def test_dimension_witness_bound_uses_certified_even_parity(self):
+        result = witness_module.audit(
+            {
+                "schema": witness_module.INPUT_SCHEMA,
+                "global_ambient_dimension_upper_bound": 31,
+                "known_mw_dimension": 29,
+                "residual_selmer_dimension_parity": 0,
+                "condition_blocks": [{"place": "2", "width": 1}],
+                "witnesses": [
+                    {"label": "a", "generator": "alpha", "condition_syndrome": [1]}
+                ],
+                "certification": {
+                    "method": "exact dimension bound, local map, and parity",
+                    "global_dimension_upper_bound_certified": True,
+                    "witnesses_are_exact_global_squareclasses": True,
+                    "witnesses_lie_in_global_ambient_certified": True,
+                    "condition_syndromes_certified": True,
+                    "condition_blocks_are_necessary_selmer_conditions": True,
+                    "known_mw_in_condition_kernel_certified": True,
+                    "residual_dimension_parity_certified": True,
+                },
+            }
+        )
+        self.assertEqual(result["relative_selmer_dimension_upper_bound_raw"], 1)
+        self.assertEqual(result["relative_selmer_dimension_upper_bound"], 0)
+        self.assertEqual(result["minimum_closing_place_cut"]["places"], ["2"])
+
+    def test_dimension_only_witness_bound_is_fail_closed(self):
+        manifest = {
+            "schema": witness_module.INPUT_SCHEMA,
+            "global_ambient_dimension_upper_bound": 30,
+            "known_mw_dimension": 29,
+            "condition_blocks": [{"place": "2", "width": 1}],
+            "witnesses": [
+                {"label": "a", "generator": "alpha", "condition_syndrome": [1]}
+            ],
+            "certification": {
+                "method": "uncertified relation plateau",
+                "global_dimension_upper_bound_certified": False,
+                "witnesses_are_exact_global_squareclasses": True,
+                "witnesses_lie_in_global_ambient_certified": True,
+                "condition_syndromes_certified": True,
+                "condition_blocks_are_necessary_selmer_conditions": True,
+                "known_mw_in_condition_kernel_certified": True,
+            },
+        }
+        result = witness_module.audit(manifest)
+        self.assertEqual(result["status"], "INCOMPLETE_WITNESS_BOUND")
+        self.assertIsNone(result["relative_selmer_dimension_upper_bound"])
+        self.assertIsNone(
+            result["greedy_place_order"][0]["raw_relative_selmer_dimension_upper_bound"]
+        )
+
+    def test_binary_linear_algebra_rejects_nonbinary_entries(self):
+        with self.assertRaisesRegex(module.F2Error, "non-binary"):
+            module.f2_row_basis([[2]], 1)
+
+    def test_nullspace_basis_is_exact(self):
+        rows = [[1, 1, 0, 1], [0, 1, 1, 0]]
+        nullspace = module.f2_nullspace_basis(rows, 4)
+        self.assertEqual(len(nullspace), 2)
+        self.assertEqual(module.f2_rank_rows(nullspace, 4), 2)
+        for vector in nullspace:
+            self.assertTrue(all(module.f2_dot(row, vector) == 0 for row in rows))
+
+    def test_relative_matrix_quotients_mw_before_local_conditions(self):
+        result = module.build_relative_local_condition_matrix(
+            ambient_dimension=5,
+            known_mw_rows=[[1, 0, 0, 0, 0], [0, 1, 0, 0, 0]],
+            places=[
+                {
+                    "place": "2",
+                    "allowed_subspace_basis": [
+                        [1, 0, 0, 0, 0],
+                        [0, 1, 0, 0, 0],
+                        [0, 0, 0, 1, 0],
+                        [0, 0, 0, 0, 1],
+                    ],
+                },
+                {
+                    "place": "3",
+                    "allowed_subspace_basis": [
+                        [1, 0, 0, 0, 0],
+                        [0, 1, 0, 0, 0],
+                        [0, 0, 1, 0, 0],
+                        [0, 0, 0, 0, 1],
+                    ],
+                },
+                {
+                    "place": "5",
+                    "allowed_subspace_basis": [
+                        [1, 0, 0, 0, 0],
+                        [0, 1, 0, 0, 0],
+                        [0, 0, 1, 0, 0],
+                        [0, 0, 0, 1, 0],
+                    ],
+                },
+                {
+                    "place": "7",
+                    "allowed_subspace_basis": [
+                        [1, 0, 0, 0, 0],
+                        [0, 1, 0, 0, 0],
+                        [0, 0, 0, 1, 0],
+                        [0, 0, 0, 0, 1],
+                    ],
+                },
+            ],
+            maximum_cut_size=4,
+        )
+        self.assertEqual(result["known_mw_kummer_dimension"], 2)
+        self.assertEqual(result["mw_quotient_ambient_dimension"], 3)
+        self.assertEqual(result["full_relative_local_condition_matrix_rank"], 3)
+        self.assertEqual(result["unexplained_selmer_excess_kernel_dimension"], 0)
+        self.assertEqual(
+            [row["place"] for row in result["greedy_place_order"]],
+            ["2", "3", "5", "7"],
+        )
+        self.assertEqual(
+            result["minimum_annihilating_place_cut"],
+            {"size": 3, "places": ["2", "3", "5"], "minimality_proved": True},
+        )
+        delete = {
+            row["deleted_place"]: row for row in result["delete_one_place_ranks"]
+        }
+        self.assertEqual(delete["2"]["rank_drop"], 0)
+        self.assertEqual(delete["3"]["rank_drop"], 1)
+
+    def test_relative_matrix_rejects_known_point_outside_local_image(self):
+        with self.assertRaisesRegex(module.F2Error, "violates place 2"):
+            module.build_relative_local_condition_matrix(
+                ambient_dimension=2,
+                known_mw_rows=[[1, 0]],
+                places=[{"place": "2", "allowed_subspace_basis": [[0, 1]]}],
+            )
+
+    def test_relative_proof_gate_is_fail_closed(self):
+        manifest = {
+            "schema": relative_module.INPUT_SCHEMA,
+            "case_id": "toy",
+            "ambient_norm_square_dimension": 2,
+            "known_mw_target_rank": 1,
+            "known_mw_rows": [{"label": "P", "row": [1, 0]}],
+            "places": [
+                {"place": "2", "allowed_subspace_basis": [[1, 0]]}
+            ],
+            "certification": {
+                "method": "incomplete relation collection",
+                "global_ambient_upper_envelope_certified": False,
+                "global_ambient_exact": True,
+                "norm_condition_incorporated": True,
+                "known_mw_kummer_coordinates_certified": True,
+                "supplied_local_conditions_certified": True,
+                "supplied_subspaces_are_necessary_selmer_conditions": True,
+                "all_required_local_conditions_complete": True,
+                "residual_dimension_parity_certified": False,
+            },
+        }
+        incomplete = relative_module.build_certificate(manifest, maximum_cut_size=2)
+        self.assertEqual(incomplete["status"], "INCOMPLETE_RELATIVE_2SELMER_MATRIX")
+        self.assertTrue(
+            incomplete["relative_local_matrix"]["all_residual_candidates_annihilated"]
+        )
+        manifest["certification"]["global_ambient_upper_envelope_certified"] = True
+        complete = relative_module.build_certificate(manifest, maximum_cut_size=2)
+        self.assertEqual(
+            complete["status"], "CERTIFIED_RELATIVE_2SELMER_QUOTIENT_ZERO"
+        )
+
+    def test_certified_even_parity_closes_a_one_dimensional_upper_bound(self):
+        result = relative_module.build_certificate(
+            {
+                "schema": relative_module.INPUT_SCHEMA,
+                "case_id": "parity-toy",
+                "ambient_norm_square_dimension": 3,
+                "known_mw_target_rank": 2,
+                "residual_selmer_dimension_parity": 0,
+                "known_mw_rows": [
+                    {"label": "P1", "row": [1, 0, 0]},
+                    {"label": "P2", "row": [0, 1, 0]},
+                ],
+                "places": [],
+                "certification": {
+                    "method": "exact global upper bound and parity theorem",
+                    "global_ambient_upper_envelope_certified": True,
+                    "global_ambient_exact": False,
+                    "norm_condition_incorporated": True,
+                    "known_mw_kummer_coordinates_certified": True,
+                    "supplied_local_conditions_certified": True,
+                    "supplied_subspaces_are_necessary_selmer_conditions": True,
+                    "all_required_local_conditions_complete": False,
+                    "residual_dimension_parity_certified": True,
+                },
+            },
+            maximum_cut_size=0,
+        )
+        self.assertEqual(
+            result["relative_selmer_bound"],
+            {
+                "raw_upper_bound_from_supplied_local_matrix": 1,
+                "certified_residual_dimension_parity": 0,
+                "parity_sharpened_upper_bound": 0,
+                "global_presentation_exact": False,
+                "all_required_local_conditions_complete": False,
+                "residual_kernel_exact": False,
+            },
+        )
+        self.assertEqual(
+            result["status"], "CERTIFIED_RELATIVE_2SELMER_QUOTIENT_ZERO"
+        )
+
+    def test_nonzero_kernel_needs_an_exact_global_presentation(self):
+        manifest = {
+            "schema": relative_module.INPUT_SCHEMA,
+            "ambient_norm_square_dimension": 2,
+            "known_mw_target_rank": 1,
+            "known_mw_rows": [{"label": "P", "row": [1, 0]}],
+            "places": [],
+            "certification": {
+                "method": "certified dimension envelope only",
+                "global_ambient_upper_envelope_certified": True,
+                "global_ambient_exact": False,
+                "norm_condition_incorporated": True,
+                "known_mw_kummer_coordinates_certified": True,
+                "supplied_local_conditions_certified": True,
+                "supplied_subspaces_are_necessary_selmer_conditions": True,
+                "all_required_local_conditions_complete": True,
+                "residual_dimension_parity_certified": False,
+            },
+        }
+        result = relative_module.build_certificate(manifest, maximum_cut_size=0)
+        self.assertEqual(result["status"], "CERTIFIED_RELATIVE_2SELMER_UPPER_BOUND")
+        self.assertFalse(result["relative_selmer_bound"]["residual_kernel_exact"])
+
     def test_sparse_dependency_retains_actual_generators(self):
         relations = module.SparseF2Relations(ideal_dimension=4)
         self.assertIsNone(relations.add(module.PrincipalRelation("r1", "1 + theta", 0b0011)))

@@ -6,7 +6,9 @@ Bounded point search uses a weaker monotone policy: every proved residual
 upper bound is accumulated, a candidate is rejected once that bound is below
 the target, and missing class-group/BNF data remain ``no finite bound yet``.
 The latter authorizes only an explicitly bounded search, never a Selmer or
-rank assertion.
+rank assertion.  When an exact root-number/2-parity certificate is supplied,
+upper bounds are rounded down and target thresholds up to the permitted
+Selmer parity.
 """
 
 from __future__ import annotations
@@ -139,12 +141,34 @@ def _validate_monotone_stages(stages: object) -> int | None:
     return final
 
 
+def parity_adjusted_residual_thresholds(
+    *,
+    known_generic_rank: int,
+    target_rank: int,
+    residual_upper_bound: int | None,
+    total_two_selmer_parity: int,
+) -> tuple[int, int | None, int]:
+    """Round residual thresholds using ``dim Sel_2(E/Q) mod 2``."""
+
+    if total_two_selmer_parity not in (0, 1):
+        raise ResidualSelmerGateError("the total 2-Selmer parity must be zero or one")
+    residual_parity = (total_two_selmer_parity - known_generic_rank) & 1
+    raw_required = target_rank - known_generic_rank
+    required = raw_required + ((residual_parity - raw_required) & 1)
+    effective_upper = residual_upper_bound
+    if effective_upper is not None:
+        effective_upper -= (effective_upper - residual_parity) & 1
+    return required, effective_upper, residual_parity
+
+
 def monotone_sieve_gate_record(
     *,
     stages: list[Mapping[str, object]],
     search_limits: Mapping[str, object],
     known_generic_rank: int = 17,
     target_rank: int = 32,
+    total_two_selmer_parity: int | None = None,
+    parity_evidence: str | None = None,
 ) -> dict[str, object]:
     """Authorize a bounded search unless proved upper bounds reject the fibre."""
 
@@ -153,13 +177,43 @@ def monotone_sieve_gate_record(
     if not isinstance(search_limits, Mapping) or not search_limits:
         raise ResidualSelmerGateError("bounded search authorization needs explicit limits")
     final_bound = _validate_monotone_stages(stages)
-    required = target_rank - known_generic_rank
-    rejected = final_bound is not None and final_bound < required
+    raw_required = target_rank - known_generic_rank
+    required = raw_required
+    effective_bound = final_bound
+    parity_record = None
+    if total_two_selmer_parity is not None:
+        if not isinstance(parity_evidence, str) or not parity_evidence:
+            raise ResidualSelmerGateError(
+                "a Selmer-parity refinement requires evidence provenance"
+            )
+        required, effective_bound, residual_parity = (
+            parity_adjusted_residual_thresholds(
+                known_generic_rank=known_generic_rank,
+                target_rank=target_rank,
+                residual_upper_bound=final_bound,
+                total_two_selmer_parity=total_two_selmer_parity,
+            )
+        )
+        parity_record = {
+            "total_two_selmer_dimension_mod_2": total_two_selmer_parity,
+            "residual_two_selmer_dimension_mod_2": residual_parity,
+            "evidence": parity_evidence,
+            "method": (
+                "proved 2-Selmer parity over Q plus exact root number and "
+                "rational 2-torsion audit"
+            ),
+        }
+    elif parity_evidence is not None:
+        raise ResidualSelmerGateError("parity evidence was supplied without a parity")
+    rejected = effective_bound is not None and effective_bound < required
     return {
         "known_generic_rank": known_generic_rank,
         "target_rank": target_rank,
+        "raw_required_residual_dimension": raw_required,
         "required_residual_dimension": required,
         "proved_residual_upper_bound": final_bound,
+        "parity_adjusted_proved_residual_upper_bound": effective_bound,
+        "selmer_parity": parity_record,
         "status": REJECT_STATUS if rejected else OPEN_STATUS,
         "expensive_search_authorized": False,
         "bounded_point_search_authorized": not rejected,
@@ -232,10 +286,43 @@ def require_expensive_search_gate(
         final_bound = _validate_monotone_stages(sieve.get("stages"))
         if final_bound != gate.get("proved_residual_upper_bound"):
             raise ResidualSelmerGateError("the final monotone bound is inconsistent")
+        parity_record = gate.get("selmer_parity")
+        effective_bound = final_bound
+        if parity_record is not None:
+            if (
+                not isinstance(parity_record, dict)
+                or parity_record.get("total_two_selmer_dimension_mod_2") not in (0, 1)
+                or not parity_record.get("evidence")
+            ):
+                raise ResidualSelmerGateError("the Selmer-parity record is malformed")
+            known_rank = gate.get("known_generic_rank")
+            target_rank = gate.get("target_rank")
+            if not isinstance(known_rank, int) or not isinstance(target_rank, int):
+                raise ResidualSelmerGateError("the parity-bound ranks are malformed")
+            recomputed_required, effective_bound, residual_parity = (
+                parity_adjusted_residual_thresholds(
+                    known_generic_rank=known_rank,
+                    target_rank=target_rank,
+                    residual_upper_bound=final_bound,
+                    total_two_selmer_parity=int(
+                        parity_record["total_two_selmer_dimension_mod_2"]
+                    ),
+                )
+            )
+            if (
+                recomputed_required != gate.get("required_residual_dimension")
+                or residual_parity
+                != parity_record.get("residual_two_selmer_dimension_mod_2")
+                or effective_bound
+                != gate.get("parity_adjusted_proved_residual_upper_bound")
+            ):
+                raise ResidualSelmerGateError(
+                    "the Selmer-parity refinement is inconsistent"
+                )
         required = gate.get("required_residual_dimension")
         if not isinstance(required, int) or required < 0:
             raise ResidualSelmerGateError("the residual target is malformed")
-        if final_bound is not None and final_bound < required:
+        if effective_bound is not None and effective_bound < required:
             raise ResidualSelmerGateError("a rejected residual upper bound authorized search")
         authorization = gate.get("search_authorization")
         if (
@@ -312,6 +399,7 @@ __all__ = [
     "SCHEMA",
     "gate_record",
     "monotone_sieve_gate_record",
+    "parity_adjusted_residual_thresholds",
     "require_gate_for_specialization",
     "require_expensive_search_gate",
 ]

@@ -1,0 +1,4559 @@
+{
+  "claim": "Six exact good-reduction Frobenius polynomials are converted into geometric function-field Mordell--Weil rank upper bounds for each of the four record-specific singleton twists.",
+  "generation": {
+    "command": "sage -python elkies-k3/scripts/certify_r17_074d9_twist_good_reduction_bounds.sage",
+    "sage_version": "10.9",
+    "toric_controlled_reduction_commit": "74cda9e8148cd8e9a3928fc15a558c9a70b67cc1",
+    "toric_controlled_reduction_repository": "https://github.com/edgarcosta/ToricControlledReduction"
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json": "15aeb70029a078dd51024a2e4c8d75a336a7197abe9471d79151a91178a59ec5",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p131/input-certificate.json": "c1b523f63362ffadf4fc2b34d78c97043310cc8c1b3a2d300fe975bd485e5d17",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p131/toric-controlled-reduction.input": "b0bf4edea5141594f7a08d324fbf41013275346b1e87c644d51dcc3800d6dd0a",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p131/toric-controlled-reduction.output": "3db9c8ccb88182f3a29f89a8b153de85ca6cc219eec3edd9de6f9e4a94f41d71",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p137/input-certificate.json": "7dae17136898691d9d084d1d1f1c6d3dab334a3381a87825d2ea1741ee538197",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p137/toric-controlled-reduction.input": "f3d818d0450b156850c8a2ad3c7c210d6d81b71c8c450c3838e0d66e7d6af713",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p137/toric-controlled-reduction.output": "840c14fd7cef4078cb336bbbf7a93c5e59131c6e3d938a7345fedf63c2be057e",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p151/input-certificate.json": "a903b8a3b1e102cce5eb7516f8cbe730c31af52a81f8b24003c7b71c03a4e72a",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p151/toric-controlled-reduction.input": "090954e8bced374965b478b8d97ba29b6ba23171a2dd7bbee7f954010d198b4e",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p151/toric-controlled-reduction.output": "554cb748023f76e98d65d2f7917e86df7b3bcbedf13623b21f22f0de5de4c829",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p157/input-certificate.json": "0f68058647900d627a94c757013957d0893c85f768313fffaafc7f014dc91efc",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p157/toric-controlled-reduction.input": "f42dbc7dcecdf5e3b73b99f580a2dd993481fda394f115b1b7c094b241e1a0a6",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p157/toric-controlled-reduction.output": "a9fef523d08c085264f157ec650239bba37055fccb224a4956fa96996fc7950c",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p167/input-certificate.json": "fc672d478b89def657323f821d56d6fa8615ea4b1adafbf1f4446547f5c79678",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p167/toric-controlled-reduction.input": "2f24181a6f4c7cad02388c4fb10eb8037ef94b1c3da9045d2d8e36005993ac26",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p167/toric-controlled-reduction.output": "4976c7bd68bc8644b79d6a9464bff642aa6ebd54ab8934a664c6a9133f73b487",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p173/input-certificate.json": "c29afc494f4246cef76568d5955d954766871a45bbd295fd695b6b1982478c25",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p173/toric-controlled-reduction.input": "d743de7eb74bebadf0bec12618d94344c481f5d65fef310eacc574ebaa872e4c",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p173/toric-controlled-reduction.output": "efefddf5f628c84d30d85bcfc92f103986a7875063c4835661b6cf48d5f7b66d",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p181/input-certificate.json": "1fead6d559ec7cc6e6442c64f9d82702743d11bf32d0fabe4cf6ef5a4cc6062d",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p181/toric-controlled-reduction.input": "cf4fbf7ff230e91669ae0761d38d5badc8e84e45beef2ab74af07a91584d8010",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p181/toric-controlled-reduction.output": "b5e2685f9c6363c77a377ede17a0bbade79af0a65bc08b617b77b81c3d0b7891",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p193/input-certificate.json": "b6598444ff171af81096fcab476c76b5b0ff3d0af52e43bf326a285a7c418e44",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p193/toric-controlled-reduction.input": "2f3c9157cd726e4e6fa96a20c4b63b7e70d886b73f62b09e3e90159884393de6",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p193/toric-controlled-reduction.output": "bf1673224eb8006170c9e1bb889baa0120219d3da9c7398780c8785525f9987a",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p131/input-certificate.json": "397a2764c1af8d6d259199c503d067e25d23831b7d7762e9f443c6e052a891a2",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p131/toric-controlled-reduction.input": "5caf03a087be94c86bc8d95ec8eebebbf8b39d63e658252590318a00b04fa214",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p131/toric-controlled-reduction.output": "6793e82bfeac6ebf0bd3b07270c010c233dd8bf040d1c8811c751f9f67b802e5",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p137/input-certificate.json": "64ee48f0e428c1b8802a2086a7156ba57d014274d428d38fa5fbc002cdcf5f85",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p137/toric-controlled-reduction.input": "ab96a4db2d39caf9faad90e6e255ab434dd8063b7f5e6ab5817fb792b5b54942",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p137/toric-controlled-reduction.output": "db4bc42ae868981d171ca5a5fd834a9a04bb98a8e3896f829696784d35c1211d",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p151/input-certificate.json": "74b5ca4c26560a175d7310eb79210930812ff38acfec02ace55ece8e03b3e657",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p151/toric-controlled-reduction.input": "d6417b647e66be1c42f8a548dedf80f3d6c5f38ef72dbdc7fa33cf5fd554bf97",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p151/toric-controlled-reduction.output": "21154fe9c2111b3e7e5c1499832f66b921be197b597019b8ae02ba3b25ce8fe2",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p157/input-certificate.json": "aa08ede883fce5fdce7fa275c291a818e042910f2f826f118b533e6dec28af14",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p157/toric-controlled-reduction.input": "cad284eb1fdc6350a2eb9c26f134ccff06ba51224f8b7949b082023f4f75aec7",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p157/toric-controlled-reduction.output": "c5bd6a904ac99311a97fc9e90e9b651925b85b5ae6a2e9a66b1da77402821b1b",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p167/input-certificate.json": "14d52d247e540b122e2687a74cb86ecfe0b087df6f33d7d7991a210d816cf79a",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p167/toric-controlled-reduction.input": "e80fbc45763408a0c49685e7ce81d4f262afc86ff07ba66dc26ce5758ed99eda",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p167/toric-controlled-reduction.output": "59ac8e0af67da79ea5369597ddd40003016d58842163e4e0899458825e764c54",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p173/input-certificate.json": "0b8bd6b09c102fb2619ccad69be0e84f5c0f4e091a375acfc5c9759d33589e7d",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p173/toric-controlled-reduction.input": "fa198e3d6bc3a97b86e23bce0ba9566f436b805c7420b4408d5f8f01d0019e53",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p173/toric-controlled-reduction.output": "9339fcf03891315bcb44ebedb78fe7f2963773387bd06d919b465dc0083e7a5c",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p181/input-certificate.json": "a4666dde1306e6a6b7d022c5e3a6a95ab794472cae89333c2ba773ce5edd690f",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p181/toric-controlled-reduction.input": "c2360cf8021506315c2100c1d3e643d5734f87bf7ad0a05c58eed9c6b207de8a",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p181/toric-controlled-reduction.output": "8e1bf6038e6134a7f02f1b159aa1d891dc4d6b0843c8279279c27cdae1e804ef",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p193/input-certificate.json": "8f84dae85701ff195964aa07a500ca5081225042a7be25b9e030d44f8fa17036",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p193/toric-controlled-reduction.input": "41910c1f9540699a1f2088a2c89bbc12b29fa1b1d1c9955f4f2c1f0adbd69050",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p193/toric-controlled-reduction.output": "12c05b2164cf6691a3871abd9a402352a7a5b83d7400a38d40292c12649b81d3",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p131/input-certificate.json": "069d0b7f265317a44f5853aa89c49ae1f7565a983b60c37154e988b81fac07be",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p131/toric-controlled-reduction.input": "d1ccddea5687e01cc77cce56b378eb09bbbc020cc072b0151dfac2e156309fbf",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p131/toric-controlled-reduction.output": "1d23fb821f1a00e9e3c48c6d7a3bde4b8e61914c7c9736f7427d42e7f227e64c",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p137/input-certificate.json": "ea9e820111bd42d66c48c05e8a5ceca8a0bdd6fc2fc06e8226d978c634f018f2",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p137/toric-controlled-reduction.input": "3b1cb717156ca392b83cd1c37f733be7e84e9b387591a599967e96c2581c8ed3",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p137/toric-controlled-reduction.output": "63d22c95b2d2b6da45c0b5057f62299ec6f0c8797c672a4fbf36364194f417ed",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p151/input-certificate.json": "d66d06e356bc51c728e75fbe895a17912f594d94ca2b901b1cedae955bdaaafd",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p151/toric-controlled-reduction.input": "711e62e49cbb5f4d9327006095890df8729b9cc0eddc40b3ccbacb23ad563cf4",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p151/toric-controlled-reduction.output": "44a4ea95f7867d5b6374ec4a6a8bdb8bf97e49cfabdec8423955fbcfcac97ad3",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p157/input-certificate.json": "2a7b29e3399a30ab6448b7afb14123e953ea574230f23b090ac80fb56dd0da49",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p157/toric-controlled-reduction.input": "a4b099f4dbc2bacec4c46a133dfb93256673414b858150be5f8f4d99e9631cf7",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p157/toric-controlled-reduction.output": "1720d4a8570b3a58f0099aa32739f517b22002d1b6417a2f064b6cdda2446f93",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p167/input-certificate.json": "7a58301e89c9653f9ba87dc9214827abf59516340a6bfde43331d3ee29fc3919",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p167/toric-controlled-reduction.input": "b6268dcbbee35ef99e8e333785c698faf0966e43def657eca176ca96d6aba314",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p167/toric-controlled-reduction.output": "24869ae24345c351a733c7a29087233a65ec2653ceecc14a0378246e64291b44",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p173/input-certificate.json": "5dfb92a0f413dc576f1280ab98bbfe9ae42fc9a7260dc4d8101441db2c578b25",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p173/toric-controlled-reduction.input": "2c78185132fc7c9693513b5d499105e1c8494b68db2af3710839cb0455e08ffa",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p173/toric-controlled-reduction.output": "c6e88a67a601ba01cd4558d6db5b7e7dc369762885348998f839ea142c16239d",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p181/input-certificate.json": "a628611526ee00a413515b27db00f373ac7518d641b660aa01ecc933a2ef62e1",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p181/toric-controlled-reduction.input": "1686911f083b82fe85c206555bf5e443b0929f51c3f516198a827410c68d4b63",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p181/toric-controlled-reduction.output": "f6e9857f301ce968a218818c3ef76c31f8361f83218c68f205c6c806f1806a2d",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p193/input-certificate.json": "67f9cbcbac59513537f8a638d6f24e3ce5318eaea12b8af229a473943fadf3c8",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p193/toric-controlled-reduction.input": "512beb89b462bbc190a7def022c9cb8f7480a4eca66f507708bedef1a871c436",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p193/toric-controlled-reduction.output": "29687b169fe12e8f28dc4107082bcf964d7dcd74dcc8e862833df747012b6073",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p131/input-certificate.json": "1ed1c726c2512149f36a9ef2d84a76b839bdce8df12bc30def845301b947e582",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p131/toric-controlled-reduction.input": "16142347170f6eb9ead27d1b64e7e0a9054051eae764b2663c395b16ed2bd296",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p131/toric-controlled-reduction.output": "92cc60e8196089c99f133110f7017094f7fbd611d71ff934bbda848184f755d0",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p137/input-certificate.json": "07075939e78c87bd85c5abda15836151dff9b9bf5a30c99efa46169d6e59012c",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p137/toric-controlled-reduction.input": "52034e1e40add8d0aa77859aef67395105fd14778fb4ab24170669b54c8d49f3",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p137/toric-controlled-reduction.output": "7dcdcc6742928b76386c0630ed6fd10966aa6498212122f7d6eb7b5ca1905e1f",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p151/input-certificate.json": "929af630555ab6581e3513022bad12080d4f1af4b0b7e8bcda2c44b8a696047e",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p151/toric-controlled-reduction.input": "35c1bcb25a5014e04c08f9e37cea6616b90143deab5526481a0f1466ea1e01b3",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p151/toric-controlled-reduction.output": "491ed829d9b317b1b86520006f4315119059e5927cde816b1be9087165fc4f99",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p157/input-certificate.json": "1e0a4aa8cec52eda0d1b504f26f68c405b79048bc2ca81fc6e511b6bd4394c58",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p157/toric-controlled-reduction.input": "caa06c2dabf3f052a6b7af25935b4ee17058670dcf4f671a3b75c4578a516d17",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p157/toric-controlled-reduction.output": "516b154412e0cdff74b8b79adc9f2825524117e8819e28c6466af790f6607292",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p167/input-certificate.json": "ae3878b95ee3cea5e48a63e97d9d7aa75810822a7e5b98905b5304575f1d62da",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p167/toric-controlled-reduction.input": "84173670f904420fe72e65a84fdf430a0f9f1367365811139d354f6b4f1deec8",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p167/toric-controlled-reduction.output": "c07aa1a987932cd54ca00bc0bda75137b16a5b08ca4a00bf2559778299a1e3f0",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p173/input-certificate.json": "94abb858ba23a89ec7e0d96765012d642029ba1d6b84fafb192906e0e8be0370",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p173/toric-controlled-reduction.input": "b39f8a01a717263d958c536d6dbe842e49a63f15339919b0886dc38c5a90bf4b",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p173/toric-controlled-reduction.output": "312179fad848edc042089c4e412f846afc9d61e18e73b2ef1d45f4142b70a0c6",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p181/input-certificate.json": "08e54fb3a7fe7338a806b6d93abd16e973e469630fe30de91914d4fb2c8311de",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p181/toric-controlled-reduction.input": "d6d1c8b76b3fb1c1439ebfa790ddf729697d4c56288314c47f0ac5f700edfcd0",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p181/toric-controlled-reduction.output": "64f85c472b4c79384ce8303c953299334cca841227f555eaff0bb3b95d19d8b7",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p193/input-certificate.json": "7aca187887da0f674a0391b789f045f153cde249d79c1e527ebad1efbc39a12f",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p193/toric-controlled-reduction.input": "f1cfabf14348d85c560aea2fd14d99cf57a5fa803a127ce4626e4d89ea80e9b4",
+    "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p193/toric-controlled-reduction.output": "2c9ec07cf16e173967e6a99b23143e2ff1693b6e0537982b81d1b89838907ac9"
+  },
+  "method": {
+    "arithmetic_diagnostic_boundary": "the recorded +p multiplicities and component cycles are not used as rank bounds because the arithmetic action on the six toric complement classes has not been identified",
+    "full_H2": "primitive degree 28 plus a six-dimensional algebraic toric complement; its exact arithmetic Frobenius action is not assumed",
+    "geometric_bound": "primitive p-times-root-of-unity multiplicity plus six, minus the degree-10 geometric trivial lattice",
+    "surface_model": "q(u)*y^2=x^3+A(u)*x+B(u)",
+    "trivial_lattice": "geometrically U plus two D4 root lattices"
+  },
+  "proof_boundary": "Cycle classes give unconditional geometric upper bounds; equality with analytic orders is not assumed. Exact characteristic-zero rank still requires matching known-section lower bounds and saturation.",
+  "schema": "elkies-k3.r17-074d9-twist-good-reduction-bounds.v1",
+  "status": "PASS_EXACT_FOUR_TWIST_GOOD_REDUCTION_RANK_BOUNDS",
+  "twists": [
+    {
+      "best_geometric_MW_rank_upper_bound": 4,
+      "label": "074d9-orbit-04b07",
+      "reductions": [
+        {
+          "D4_component_cycle_counts": {
+            "1": 6,
+            "2": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            6,
+            8,
+            6,
+            8,
+            6,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p131/input-certificate.json",
+            "sha256": "c1b523f63362ffadf4fc2b34d78c97043310cc8c1b3a2d300fe975bd485e5d17"
+          },
+          "prime": 131,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "131"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "131"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "126",
+                "42544",
+                "4173398",
+                "1150833821",
+                "83161382272",
+                "22193514046560",
+                "1008004905601328",
+                "362274602008350642",
+                "11612578388140224940",
+                "6147436821883162362080",
+                "199283457718874400195340",
+                "106689841671765705409299282",
+                "5094369241918280181529205168",
+                "1924847988950396849237804580960",
+                "123775490469083778030223428671872",
+                "29394641268152215836978550737227981",
+                "1829312671735046021825123539607905958",
+                "320021421875973053292145624924644246064",
+                "16264992483605450110729136769833802845166",
+                "2215266158818675629763672350056491195443601"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-136",
+            "-24790",
+            "2190844",
+            "296765173",
+            "-19216681868",
+            "-1858883501352",
+            "611870705864860",
+            "2269207001782169",
+            "2656195239066053732",
+            "-1513788971348034930414",
+            "-58171682070731865963520",
+            "1424376809797156609423557",
+            "1726719764483630177879004936",
+            "0",
+            "-29632237878303577482581603706696",
+            "-419478857959494647499865392038997",
+            "293994628642207157754555606842629120",
+            "131291225494152728285095659492166713774",
+            "-3953419959058831082287973871354247971332",
+            "-57960171628086088092995098489328392678409",
+            "-268199399075299202198869034136610308089584060",
+            "13982759994463480575068299873556572425640009512",
+            "2480628461451247146101803133525058162763399076588",
+            "-657413844862869748897700174079831169388797062507973",
+            "-83287525445830625811255018804241811048888550952016284",
+            "16172889620310960237729763275328105654338380789952365590",
+            "1522623735106303705324588285164790821873244436149522639816",
+            "-192130484692347631522612202659654230104167263005602632513841"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p131/toric-controlled-reduction.input",
+            "sha256": "b0bf4edea5141594f7a08d324fbf41013275346b1e87c644d51dcc3800d6dd0a"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p131/toric-controlled-reduction.output",
+            "sha256": "3db9c8ccb88182f3a29f89a8b153de85ca6cc219eec3edd9de6f9e4a94f41d71"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-1048",
+            "463347",
+            "-107908368",
+            "12368996682",
+            "0",
+            "-212264352059802",
+            "31779005851238928",
+            "-2341715493663168507",
+            "90893253235518540568",
+            "-1488377021731616101801"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 9
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 2,
+            "4": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            4,
+            0,
+            8,
+            0,
+            4
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p137/input-certificate.json",
+            "sha256": "7dae17136898691d9d084d1d1f1c6d3dab334a3381a87825d2ea1741ee538197"
+          },
+          "prime": 137,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "137"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "137"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "0",
+                "18769"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-36",
+                "39570",
+                "-2225702",
+                "995338839",
+                "-59814813486",
+                "18221090772364",
+                "-1309340584518410",
+                "361218930683270888",
+                "-24216307005517997822",
+                "6957922737427900237828",
+                "-454515866186567301121118",
+                "127248529206483228730990568",
+                "-8657171727924090814534211690",
+                "2261199646603573801727333448844",
+                "-139320307527705701942657733433614",
+                "43512872766947866388177640351447159",
+                "-1826227827933499276195051017055998278",
+                "609389721514958364593637148716736532370",
+                "-10405733752643748486785118099406606195044",
+                "5425144911204736537457496711326738657632801"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-36",
+            "2032",
+            "-874334",
+            "-490039821",
+            "23733588190",
+            "-5918226064800",
+            "459934234075210",
+            "76399998975786995",
+            "-30798026415336722",
+            "1650006076850277548016",
+            "-60253019741347890894488",
+            "-16506998215081758713144863",
+            "-1487004063845420685430498580",
+            "0",
+            "27909579274314700844845027848020",
+            "5815008755244282195188002058620543",
+            "398384305194898524857519438904743192",
+            "-204762338571212696882410905467215793136",
+            "71734579803302402382541365648788444978",
+            "-3339951486438847604577834434406759293992595",
+            "-377384167910811235050875501160173864286427690",
+            "91142434508239573829285944750289209448231056800",
+            "-6860149991667501398980379166439774299963253192510",
+            "2658537041185829987167831483526643684300158085768621",
+            "89028661586739112030349640825684035354433123434923646",
+            "-3883446400370225785562026701914325367926748767519239152",
+            "1291330018497911240005754158492263298180225056216766529124",
+            "-673249253255202668435222216687258051209573446670346971809121"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 3,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p137/toric-controlled-reduction.input",
+            "sha256": "f3d818d0450b156850c8a2ad3c7c210d6d81b71c8c450c3838e0d66e7d6af713"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p137/toric-controlled-reduction.output",
+            "sha256": "840c14fd7cef4078cb336bbbf7a93c5e59131c6e3d938a7345fedf63c2be057e"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-274",
+            "-18769",
+            "10285412",
+            "-704550722",
+            "0",
+            "13223712501218",
+            "-3623297225333732",
+            "124097929967680321",
+            "34002832811144407954",
+            "-2329194047563391944849"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 5
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 1,
+            "6": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            2,
+            0,
+            2,
+            0,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p151/input-certificate.json",
+            "sha256": "a903b8a3b1e102cce5eb7516f8cbe730c31af52a81f8b24003c7b71c03a4e72a"
+          },
+          "prime": 151,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "151"
+              ],
+              "degree": 1,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "151"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-151",
+                "22801"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "151",
+                "22801"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-270",
+                "72953",
+                "-15838088",
+                "3009025169",
+                "-546664873878",
+                "100726795422548",
+                "-16367347302728994",
+                "2885692529257162638",
+                "-467557556909539400914",
+                "72333151985659106274022",
+                "-10660779855094407880240114",
+                "1500229994874070081611375438",
+                "-194017087863203072268576798594",
+                "27224542834025440519773829720148",
+                "-3368919564471553774088744242165878",
+                "422813833443964015681771661206544369",
+                "-50743452641929886179339690124919002888",
+                "5329350852228980998328184639483693260153",
+                "-449726848396251132243743961872908260204270",
+                "37978599519566378023294837313571041633028001"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "32",
+            "14214",
+            "37448",
+            "-110676054",
+            "936482672",
+            "-7611125198640",
+            "1208313954759392",
+            "70933806944991584",
+            "30285795795437482920",
+            "-1760610682360132643314",
+            "511951206682276801586944",
+            "-120350937692125775859925529",
+            "-2843804716250580778596845456",
+            "0",
+            "64841591335229492332786673242256",
+            "62568719572984361950528675459407929",
+            "-6068624341586916446434645268543436544",
+            "475859682966013491194464857395813440114",
+            "-186641605956943074750163057024518218362920",
+            "-9967279484456173242024310621657344552082784",
+            "-3871302011954739672414265800864142204076602592",
+            "556006696966451774261036418270680049507529934640",
+            "-1559857039467630278172765558142989821951726057072",
+            "4203321531271902510690592672438003536613255222188054",
+            "-32428097384233664033856883889051989377645896489595848",
+            "-280648707294935856399852838255833594875373688218429124614",
+            "-14406238750599313266971818353896185274807137672871034124832",
+            "-10264895304762966931257013446474591264089923314972889033759201"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 1,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p151/toric-controlled-reduction.input",
+            "sha256": "090954e8bced374965b478b8d97ba29b6ba23171a2dd7bbee7f954010d198b4e"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p151/toric-controlled-reduction.output",
+            "sha256": "554cb748023f76e98d65d2f7917e86df7b3bcbedf13623b21f22f0de5de4c829"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-302",
+            "0",
+            "6885902",
+            "-519885601",
+            "0",
+            "-11853911588401",
+            "3579881299697102",
+            "0",
+            "-81624873514393622702",
+            "6162677950336718514001"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 4
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 4
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            8,
+            0,
+            8,
+            0,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p157/input-certificate.json",
+            "sha256": "0f68058647900d627a94c757013957d0893c85f768313fffaafc7f014dc91efc"
+          },
+          "prime": 157,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "157"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "157"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "122",
+                "71032",
+                "8217066",
+                "2889281833",
+                "336123426408",
+                "91063071365880",
+                "10800323293273768",
+                "2517268009860936614",
+                "295645329717564369820",
+                "64697863381709994184864",
+                "7287361732208244151693180",
+                "1529424582526108823426081414",
+                "161746417442939773874709129832",
+                "33615495197807944335208087397880",
+                "3058407191029000998592720051559592",
+                "648016010023520382911609215328068633",
+                "45426775326274589340539043727095486234",
+                "9679400983629906586339477790164284320632",
+                "409782656987698716472789420853568141045578",
+                "82792891082703161166703167496881976300266001"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-192",
+            "-16574",
+            "3118020",
+            "-359850751",
+            "100787493292",
+            "-5993102054664",
+            "426198018744676",
+            "70522322254293341",
+            "-31309155483689256788",
+            "5130379914180924201098",
+            "-650495849230995167477368",
+            "-23393683005572300994898179",
+            "11416990816469782668044543256",
+            "0",
+            "-281417406635163672984629946717144",
+            "14213374866874863752405771284100979",
+            "9741872564142802376059655065018146232",
+            "-1893855091655710690068505213533382468298",
+            "284883881197044800488235560618466814564212",
+            "-15816938784877649638281683465569281771996941",
+            "-2356169664697565121610380588382602994328589124",
+            "816669077639783981748360044189243814225823833864",
+            "-338532514691193617319821915203340687949968053616908",
+            "29793084033571935655912171017831769330014921959616751",
+            "-6363136644863207535711162920543860086743826766800754980",
+            "833717643507460214824252761152051768438956345356195717374",
+            "238063158525676014984854423280456704219159666446451954966208",
+            "-30562597888017646319592066038749881782802430303326011656052401"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p157/toric-controlled-reduction.input",
+            "sha256": "f42dbc7dcecdf5e3b73b99f580a2dd993481fda394f115b1b7c094b241e1a0a6"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p157/toric-controlled-reduction.output",
+            "sha256": "a9fef523d08c085264f157ec650239bba37055fccb224a4956fa96996fc7950c"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-314",
+            "-73947",
+            "30959144",
+            "1215146402",
+            "-1144667910684",
+            "29952143662898",
+            "18809946220299944",
+            "-1107435583720159203",
+            "-115911591096043329914",
+            "9099059901039401398249"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 6
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 4
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            8,
+            0,
+            8,
+            0,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p167/input-certificate.json",
+            "sha256": "fc672d478b89def657323f821d56d6fa8615ea4b1adafbf1f4446547f5c79678"
+          },
+          "prime": 167,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "167"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "167"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "88",
+                "63004",
+                "8684000",
+                "2446785637",
+                "379639124056",
+                "78551206050432",
+                "12934124358802632",
+                "2078827447626426746",
+                "408131827935983941672",
+                "51228615464268915271880",
+                "11382388549306656149290408",
+                "1616904340757654905414801466",
+                "280566528873807509776118843208",
+                "47520896658149914241993408387712",
+                "6405243938556047411862248887549144",
+                "1151313444634451334364021050100295557",
+                "113959467397736033050473126407064236000",
+                "23058532334919278680655874595714668189724",
+                "898212620300196989952755831705764737803992",
+                "284661951904002202872640993073205372416085601"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-246",
+            "-22166",
+            "10676978",
+            "-1508767011",
+            "59317448768",
+            "32748336299384",
+            "-4141995637036016",
+            "-15596520387789311",
+            "60532937271979440330",
+            "-4519104363699678756270",
+            "-2675463444957917952012254",
+            "960839423396787040178512101",
+            "-182355846275335643455354819760",
+            "0",
+            "5085722196772835760326390568286640",
+            "-747337368589782283071325895411780421",
+            "58036050300516262062358256413689905726",
+            "2733909538153879305194898470414395457070",
+            "-1021307354737091161003711890841271690848170",
+            "7338805386316382224727630034050509619103071",
+            "54355091750388157156902850222265706081461902064",
+            "-11985406822966108749749676372354239000206868144504",
+            "-605450921448045133316254599859317385056241457794112",
+            "429488562319627162565570164795131773929359320540908611",
+            "-84763857578481823747481768738313027178778591462138474642",
+            "4907752313372116457067846653385140544847540356373919332886",
+            "1519019527647667560421665303970022260452596365502680236561174",
+            "-172211120351893498343901722204959149681961219664651419176644641"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p167/toric-controlled-reduction.input",
+            "sha256": "2f24181a6f4c7cad02388c4fb10eb8037ef94b1c3da9045d2d8e36005993ac26"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p167/toric-controlled-reduction.output",
+            "sha256": "4976c7bd68bc8644b79d6a9464bff642aa6ebd54ab8934a664c6a9133f73b487"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-334",
+            "-83667",
+            "37259704",
+            "1555592642",
+            "-1558703827284",
+            "43383923192738",
+            "28980460692748984",
+            "-1814901350883405123",
+            "-202059017065019103694",
+            "16871927924929095158449"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 6
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 4,
+            "2": 2
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            4,
+            8,
+            4,
+            8,
+            4,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p173/input-certificate.json",
+            "sha256": "c29afc494f4246cef76568d5955d954766871a45bbd295fd695b6b1982478c25"
+          },
+          "prime": 173,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "173"
+              ],
+              "degree": 1,
+              "multiplicity": 4
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "173"
+              ],
+              "degree": 1,
+              "multiplicity": 4
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "95",
+                "51662",
+                "1709067",
+                "1981090297",
+                "55256595824",
+                "83067812122176",
+                "3189776754842312",
+                "2705914708821071126",
+                "55942522605656750614",
+                "76490505202482772133092",
+                "1674303759064700889126406",
+                "2423809681795433417422786166",
+                "85513938204998869095764549768",
+                "66650221492155465241566949217856",
+                "1326921274706920512368815016769776",
+                "1423827931882009724439150321033754537",
+                "36762457239553891102050750407417638803",
+                "33258975341876822565618709898350616424782",
+                "1830431418366845750141462293601387516992055",
+                "576662967582119225852461315633641336800581201"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "95",
+            "-68054",
+            "-9663953",
+            "1170792551",
+            "361228604222",
+            "16320474647020",
+            "-4427318397097010",
+            "-1328936711424983819",
+            "-135997561794534314231",
+            "28003940047172551850262",
+            "7566292787502717689055817",
+            "491298494856567383508557891",
+            "-111985703374171663201779498812",
+            "-35941212435081419360337732881368",
+            "-3351620116285583707966058619944348",
+            "440078190418534240060135911924668531",
+            "202842876978524450863618215807058211713",
+            "22469218330343092818420196912086895870422",
+            "-3265819317357530753355527766064708619455919",
+            "-955119114103820112423815024801204006366454299",
+            "-95232722449833215506386241547127936372211589090",
+            "10506799269346212295031845170844945156506589482220",
+            "6960044067165804474572347193343915520058677215931118",
+            "675152706882699670421948333359527122131802642601433751",
+            "-166789642555719372378465678110759533999003055890387113737",
+            "-35152816882373001325379600502316211194409169833025581397014",
+            "1468663449097649629461782937464558718952006409227953528594455",
+            "462690824926774271159596858267123977889627366545088643761088881"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 4,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p173/toric-controlled-reduction.input",
+            "sha256": "d743de7eb74bebadf0bec12618d94344c481f5d65fef310eacc574ebaa872e4c"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p173/toric-controlled-reduction.output",
+            "sha256": "efefddf5f628c84d30d85bcfc92f103986a7875063c4835661b6cf48d5f7b66d"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-1038",
+            "389077",
+            "-41421736",
+            "-12540430574",
+            "4338988978604",
+            "-375322546649246",
+            "-37103314611611176",
+            "10430669320189191853",
+            "-832848827258183164878",
+            "24013807852610947920649"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 8
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 4,
+            "2": 2
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            4,
+            8,
+            4,
+            8,
+            4,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p181/input-certificate.json",
+            "sha256": "1fead6d559ec7cc6e6442c64f9d82702743d11bf32d0fabe4cf6ef5a4cc6062d"
+          },
+          "prime": 181,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "181"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "181"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "350",
+                "96422",
+                "16918794",
+                "2730989721",
+                "458606168940",
+                "98432941593152",
+                "20850769933714132",
+                "4326522328334008726",
+                "798387568235593969128",
+                "147950136584219128327476",
+                "26155975122966294022602408",
+                "4643583387630511615882513846",
+                "733151192896718391242448008692",
+                "113388513758551359470340233210432",
+                "17307153321153519142532455602380940",
+                "3376470533344282520979535734368813481",
+                "685282199118557203611442320814585661274",
+                "127947950412062430261662825532476411967782",
+                "15215365592990728746871227930807397755354350",
+                "1424201691977055041360709423546231879609039601"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-12",
+            "-95800",
+            "-5340224",
+            "2741080109",
+            "626394120276",
+            "17790741013696",
+            "-22712598456845316",
+            "-2990970602986491103",
+            "198820448565779889640",
+            "79078147686267672003368",
+            "7008119984640194141697852",
+            "-803190556693758258869264683",
+            "-249784526719405192588918857208",
+            "0",
+            "8183190879854433514405570680991288",
+            "862050867446004305298730329945315643",
+            "-246418311795504040993086840054131130012",
+            "-91093017152592372203466321453127302158888",
+            "-7503204753354859764045101192713861181961640",
+            "3697898981247343883986020747080770500753448783",
+            "919955607840825233236070182117852190256190464036",
+            "-23607567246211664365595119404702339636399440426176",
+            "-27230901557997561729201562020497084901022871819713716",
+            "-3903850929082450458272012895011432447098021146894396509",
+            "249165621961639315828744239685541022701019288878234252864",
+            "146437162814887249478282923240894259267595385889737198271800",
+            "600930424757226035092863488304167452342257925319458916816172",
+            "-1640590137122623511306441728361069158848725990949232797817884241"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p181/toric-controlled-reduction.input",
+            "sha256": "cf4fbf7ff230e91669ae0761d38d5badc8e84e45beef2ab74af07a91584d8010"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p181/toric-controlled-reduction.output",
+            "sha256": "b5e2685f9c6363c77a377ede17a0bbade79af0a65bc08b617b77b81c3d0b7891"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-1086",
+            "425893",
+            "-47437928",
+            "-15025963694",
+            "5439398857228",
+            "-492265596579134",
+            "-50914327417613288",
+            "14975176551705508333",
+            "-1251003210396321696126",
+            "37738596846955704499801"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 8
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 2,
+            "4": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            4,
+            0,
+            8,
+            0,
+            4
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p193/input-certificate.json",
+            "sha256": "b6598444ff171af81096fcab476c76b5b0ff3d0af52e43bf326a285a7c418e44"
+          },
+          "prime": 193,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "193"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "193"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "0",
+                "37249"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-90",
+                "63010",
+                "772000",
+                "4095639297",
+                "-87375798778",
+                "197445092494304",
+                "2275638495272114",
+                "7769643050930799166",
+                "88116767699928673538",
+                "303330072953725534621564",
+                "3282261480054643160616962",
+                "10780286505219515724165807166",
+                "117610778807333010579273342386",
+                "380106079501994861182898605198304",
+                "-6265622842798363993729419285353722",
+                "10939800681899147904154060545147447297",
+                "76810329199077261939255270350548228000",
+                "233521259166733661758736898716023115583010",
+                "-12424361283020942628417825212261276827672410",
+                "5142167038124967688510395237016892228377440001"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-90",
+            "-11488",
+            "7476820",
+            "-598479683",
+            "-144888254778",
+            "-4306762755104",
+            "-517896546229262",
+            "-2351710642612477247",
+            "171645159449895020856",
+            "26551295766658517005792",
+            "-13800062926442105079424406",
+            "707121510955403598360976389",
+            "276519576438045840359364718860",
+            "0",
+            "-10300077702740769507545976412816140",
+            "-981122611699612538838078006381808389",
+            "713222311778031915736954812840015571094",
+            "-51114508910134751039144569228557225997792",
+            "-12308486410951317256753824769867130204409144",
+            "6281619016236688360232181118150276438773085247",
+            "51528243791366256526316603048656319013896212238",
+            "15961286486339899705136266815700433476883573763104",
+            "20001600255869525567288031582119820072348752675569722",
+            "3077482498910079576604944083654579526484493896149999683",
+            "-1432114439378904660481196117728899812983742680812363268180",
+            "81963376901390742146214257436516081645600065359170852875488",
+            "23918423081301474397492177817962297812458749574402677479832410",
+            "-9899303792837762442579845906014195902403066254410281482736416001"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 3,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p193/toric-controlled-reduction.input",
+            "sha256": "2f3c9157cd726e4e6fa96a20c4b63b7e70d886b73f62b09e3e90159884393de6"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/04b07/p193/toric-controlled-reduction.output",
+            "sha256": "bf1673224eb8006170c9e1bb889baa0120219d3da9c7398780c8785525f9987a"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-386",
+            "-37249",
+            "28756228",
+            "-2774976002",
+            "0",
+            "103365081098498",
+            "-39898921304020228",
+            "1925122952918976001",
+            "743097459826724736386",
+            "-71708904873278937061249"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 5
+        }
+      ]
+    },
+    {
+      "best_geometric_MW_rank_upper_bound": 4,
+      "label": "074d9-orbit-11a44",
+      "reductions": [
+        {
+          "D4_component_cycle_counts": {
+            "1": 3,
+            "2": 1,
+            "3": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            3,
+            5,
+            6,
+            5,
+            3,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p131/input-certificate.json",
+            "sha256": "1ed1c726c2512149f36a9ef2d84a76b839bdce8df12bc30def845301b947e582"
+          },
+          "prime": 131,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "131"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "131"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "131",
+                "17161"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-91",
+                "33740",
+                "-932851",
+                "407144725",
+                "-12112714308",
+                "13306684430464",
+                "-1049825072383012",
+                "268190954914415546",
+                "-3775081070078424322",
+                "2695574723816713970280",
+                "-64784166243615839789842",
+                "78982215035209940058171866",
+                "-5305724732512256594449354372",
+                "1154091448152000149097146525824",
+                "-18028285646826973292248157268708",
+                "10399306065923730942460090309430725",
+                "-408893701281476009837927827407492571",
+                "253796605257975997040170021271095732940",
+                "-11746939015937269524415487667102190943731",
+                "2215266158818675629763672350056491195443601"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "40",
+            "-12503",
+            "-133882",
+            "-259354193",
+            "-38572745378",
+            "3612925030828",
+            "686329120891290",
+            "-37767892927211913",
+            "893784539566094850",
+            "481265899049515631309",
+            "-161835437385840761481324",
+            "-10857710373532139462638295",
+            "1754016599062188017186035276",
+            "0",
+            "-30100678856506208562929551371436",
+            "3197594847246095562707960329074695",
+            "817902244214765381846853528098908044",
+            "-41740289347258707989801524837975999469",
+            "-1330288371069148046133789812145621824850",
+            "964668958968123243472054278420381021126393",
+            "-300836526453314804988517031354999834862150090",
+            "-27176885236387512625940732390493033985702097068",
+            "4979249314644419575668546813877275147016191080498",
+            "574538566900627451286124023065314778405880414368993",
+            "5089682552358221692125246903727285989713232424836202",
+            "8156903546702216048904204527286297095449486688857379063",
+            "-447830510325383442742525966224938477021542481220447835240",
+            "-192130484692347631522612202659654230104167263005602632513841"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 3,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p131/toric-controlled-reduction.input",
+            "sha256": "16142347170f6eb9ead27d1b64e7e0a9054051eae764b2663c395b16ed2bd296"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p131/toric-controlled-reduction.output",
+            "sha256": "92cc60e8196089c99f133110f7017094f7fbd611d71ff934bbda848184f755d0"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-655",
+            "154449",
+            "-13488546",
+            "0",
+            "0",
+            "0",
+            "3972375731404866",
+            "-780571831221056169",
+            "56808283272199087855",
+            "-1488377021731616101801"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 7
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 3,
+            "2": 1,
+            "3": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            3,
+            5,
+            6,
+            5,
+            3,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p137/input-certificate.json",
+            "sha256": "07075939e78c87bd85c5abda15836151dff9b9bf5a30c99efa46169d6e59012c"
+          },
+          "prime": 137,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "137"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "137"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "137",
+                "18769"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-139",
+                "50430",
+                "-6736701",
+                "1786639879",
+                "-248459554978",
+                "50320421666684",
+                "-6243040152308606",
+                "1138667436054879544",
+                "-134214175820812100744",
+                "23327928875324546741580",
+                "-2519065865980822318864136",
+                "401124482095177107174115384",
+                "-41278084053844619962643441054",
+                "6244660163936294488708128125564",
+                "-578710516515006927861372459408322",
+                "78105897900445670444777917872463399",
+                "-5527582234579217032398082214803311789",
+                "776636938488737688310768799842937157630",
+                "-40177694211596695546198094883819951697531",
+                "5425144911204736537457496711326738657632801"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-2",
+            "-6151",
+            "-2324068",
+            "42924703",
+            "4957568584",
+            "-5719542761196",
+            "752882901529200",
+            "4383660694153767",
+            "9123462413390337176",
+            "-2146770090510901872979",
+            "148966410545623651246474",
+            "-19469733043582393266992791",
+            "-4158505785414918964062287016",
+            "0",
+            "78050995086452614036485065003304",
+            "6858707236501616321373854833922551",
+            "-984944492696868192664104210971602666",
+            "266409724348932644657703538934819946259",
+            "-21250314346437111670498724553370506406424",
+            "-191638929944522367964959258330738330758727",
+            "-617753727115283868498809844501438854445778800",
+            "88082652778320102422159916605100928845326157036",
+            "-1432976076265974290057873351342999442072497524936",
+            "-232872734045424688063611421457176992837506665983103",
+            "236647166273494562281863257124240673104450565018809892",
+            "11755452169624635239661430237930617784506610073332106311",
+            "71740556583217291111430786582903516565568058678709251618",
+            "-673249253255202668435222216687258051209573446670346971809121"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 3,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p137/toric-controlled-reduction.input",
+            "sha256": "52034e1e40add8d0aa77859aef67395105fd14778fb4ab24170669b54c8d49f3"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p137/toric-controlled-reduction.output",
+            "sha256": "7dcdcc6742928b76386c0630ed6fd10966aa6498212122f7d6eb7b5ca1905e1f"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-685",
+            "168921",
+            "-15428118",
+            "0",
+            "0",
+            "0",
+            "5434945838000598",
+            "-1116881369709122889",
+            "85007082027861019885",
+            "-2329194047563391944849"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 7
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 5,
+            "3": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            5,
+            5,
+            8,
+            5,
+            5,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p151/input-certificate.json",
+            "sha256": "929af630555ab6581e3513022bad12080d4f1af4b0b7e8bcda2c44b8a696047e"
+          },
+          "prime": 151,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "151"
+              ],
+              "degree": 1,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "151"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "151",
+                "22801"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "217",
+                "74582",
+                "13412575",
+                "2603897001",
+                "443238625838",
+                "77891340284224",
+                "13415644814491394",
+                "2282281013761198134",
+                "367768365680482682664",
+                "57036866913892243084628",
+                "8385486505880685647421864",
+                "1186525036490129762374668534",
+                "159027867532371319233484720994",
+                "21052552313133697382345078473024",
+                "2731536906189389523540016603357838",
+                "365887159811274879364653861751233801",
+                "42972381787424892646249790017408382575",
+                "5448352298890269911001777401641780471382",
+                "361447133711061095173675702690448490608617",
+                "37978599519566378023294837313571041633028001"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-236",
+            "21883",
+            "-7034486",
+            "676209257",
+            "53592975266",
+            "1283077663268",
+            "1678859292910886",
+            "-643086557582342651",
+            "33296475968482745702",
+            "-3959346927524344963449",
+            "910933588420632829354320",
+            "31633025919078376132367133",
+            "1544736855031401862719490660",
+            "0",
+            "-35221545031570993871867106538660",
+            "-16445554691388638941679742492351933",
+            "-10798126220043046483133074170431242320",
+            "1070136397876747257062897712003572472249",
+            "-205195458274885051802750188343385809573702",
+            "90363449082759333982797606205804244534599451",
+            "-5378876353148652717921744309854505273933356486",
+            "-93731183614289820961491658489893330750313106468",
+            "-89267406898357106286901723081080071943016793398466",
+            "-25681480563026537445313330631745750079385931216405257",
+            "6091513486862538196295390293771677327205692475259323286",
+            "-432069485136842644266074268999043658129858056794982730683",
+            "106246010785669935343917160359984366401702640337423876670636",
+            "-10264895304762966931257013446474591264089923314972889033759201"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p151/toric-controlled-reduction.input",
+            "sha256": "35c1bcb25a5014e04c08f9e37cea6616b90143deab5526481a0f1466ea1e01b3"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p151/toric-controlled-reduction.output",
+            "sha256": "491ed829d9b317b1b86520006f4315119059e5927cde816b1be9087165fc4f99"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-1057",
+            "478821",
+            "-123946236",
+            "21835195242",
+            "-3297114481542",
+            "497864286712842",
+            "-64437863394547836",
+            "5675901800669755221",
+            "-285687057300377679457",
+            "6162677950336718514001"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 8
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 4
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            8,
+            0,
+            8,
+            0,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 6,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p157/input-certificate.json",
+            "sha256": "1e0a4aa8cec52eda0d1b504f26f68c405b79048bc2ca81fc6e511b6bd4394c58"
+          },
+          "prime": 157,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "157"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "157"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-48",
+                "69389",
+                "-3600324",
+                "3226061120",
+                "-180956196680",
+                "116707521033688",
+                "-6438756997597500",
+                "3370245157092945858",
+                "-181365501456132060048",
+                "83073172877184022453842",
+                "-3912016199491462384597500",
+                "1747820218270856535786853912",
+                "-66799110432698578272993348680",
+                "29354123375294260438964734978880",
+                "-807490486606302971582023766030724",
+                "383606327747016694249585400090425061",
+                "-6540872384477918630255306536883174448",
+                "3358874237604087839940896892242361811849"
+              ],
+              "degree": 18,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-48",
+            "-53856",
+            "2315436",
+            "749945825",
+            "-28869401780",
+            "-9060131573312",
+            "1177100168153380",
+            "41289030039304893",
+            "-36669990156474740828",
+            "12627718815966402005408",
+            "211886388523567207082792",
+            "-168978641422202723366882179",
+            "-23553972044789011089929733384",
+            "0",
+            "580581856932004334355677998182216",
+            "102666894069518901106934102884884979",
+            "-3173225774635253518075026632012325608",
+            "-4661461719337930010495281791952075656608",
+            "333662437004288878673364509117273088010172",
+            "-9260416273074470174717052731912191515267693",
+            "-6507415770449407699344694821092506927040015620",
+            "1234607591825269539317877633713504030589566606912",
+            "96968689893883596421666083835698108282397545691220",
+            "-62090183007152965431271169478562338644133433839395825",
+            "-4725253738088750490265268416524715436017016976675605964",
+            "2709104465351621656182874182732285509897938514269535209056",
+            "59515789631419003746213605820114176054789916611612988741552",
+            "-30562597888017646319592066038749881782802430303326011656052401"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 10,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p157/toric-controlled-reduction.input",
+            "sha256": "caa06c2dabf3f052a6b7af25935b4ee17058670dcf4f671a3b75c4578a516d17"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p157/toric-controlled-reduction.output",
+            "sha256": "516b154412e0cdff74b8b79adc9f2825524117e8819e28c6466af790f6607292"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-314",
+            "-73947",
+            "30959144",
+            "1215146402",
+            "-1144667910684",
+            "29952143662898",
+            "18809946220299944",
+            "-1107435583720159203",
+            "-115911591096043329914",
+            "9099059901039401398249"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 6
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 3,
+            "2": 1,
+            "3": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            3,
+            5,
+            6,
+            5,
+            3,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p167/input-certificate.json",
+            "sha256": "ae3878b95ee3cea5e48a63e97d9d7aa75810822a7e5b98905b5304575f1d62da"
+          },
+          "prime": 167,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "167"
+              ],
+              "degree": 1,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "167"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "167",
+                "27889"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "531",
+                "173532",
+                "48263835",
+                "12303204461",
+                "2819274133012",
+                "606233119699104",
+                "122513601256579972",
+                "23034824170953819314",
+                "4121043245854425086538",
+                "706606432347541416968328",
+                "114931775083634061238458282",
+                "17916401495049755723327943794",
+                "2657560333490597613790433321668",
+                "366751102630721629021620230703264",
+                "47566589972795426974409951241618388",
+                "5789164565067233215589955002458542221",
+                "633362612986205812149076651870646144715",
+                "63510145913643772903491448643634654947292",
+                "5419896606584143200737651666315466770158179",
+                "284661951904002202872640993073205372416085601"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "30",
+            "-36721",
+            "-4400116",
+            "275403875",
+            "25755770390",
+            "-7544624313700",
+            "-1363606064902286",
+            "-31171348813982253",
+            "110357594317988131072",
+            "16974772334812488115419",
+            "1522514693584918946334290",
+            "-76109266869355148259763439",
+            "-41283650488662204077686322916",
+            "0",
+            "1151359728478300209522593859804324",
+            "59197507764991621958853555184507919",
+            "-33026330263151577270589038749124193010",
+            "-10269179080463145839954974053729253297179",
+            "-1861945377301660390713170499257241220227328",
+            "14667403811038444029114887842740726457094733",
+            "17894498030468354046449012846003053889964470894",
+            "2761220933468821367864617632810092112436030329700",
+            "-262888159202865074374912683513035893479979213379510",
+            "-78397004619425834679661460976208918234208086847103875",
+            "34932244493975648201248938635422023338230962052185449524",
+            "8130360583747067058557628663672098978045047795109929253041",
+            "-185246283859471653709959183410978324445438581158863443483070",
+            "-172211120351893498343901722204959149681961219664651419176644641"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p167/toric-controlled-reduction.input",
+            "sha256": "84173670f904420fe72e65a84fdf430a0f9f1367365811139d354f6b4f1deec8"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p167/toric-controlled-reduction.output",
+            "sha256": "c07aa1a987932cd54ca00bc0bda75137b16a5b08ca4a00bf2559778299a1e3f0"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-835",
+            "251001",
+            "-27944778",
+            "0",
+            "0",
+            "0",
+            "21735345519561738",
+            "-5444704052650215369",
+            "505147542662547759235",
+            "-16871927924929095158449"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 7
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 4,
+            "2": 2
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            4,
+            8,
+            4,
+            8,
+            4,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 6,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p173/input-certificate.json",
+            "sha256": "94abb858ba23a89ec7e0d96765012d642029ba1d6b84fafb192906e0e8be0370"
+          },
+          "prime": 173,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "173"
+              ],
+              "degree": 1,
+              "multiplicity": 2
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "173"
+              ],
+              "degree": 1,
+              "multiplicity": 8
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "915",
+                "485677",
+                "190416948",
+                "60886959020",
+                "16712779908676",
+                "4054890898420276",
+                "884384510874866348",
+                "175200832863401353690",
+                "31687612776785226820306",
+                "5243585726768739114588010",
+                "792183039953372102758780268",
+                "108706569884281933041319036564",
+                "13409652357577005909232583324356",
+                "1462127734636076986047909874803980",
+                "136854422878496480685162840835653108",
+                "10447033349034774627776852695431704293",
+                "589058929925618300637627648116426271315",
+                "19267699140703639475173287301067237020969"
+              ],
+              "degree": 18,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-123",
+            "-75016",
+            "867941",
+            "1758598111",
+            "345881851034",
+            "13593826742216",
+            "-5164326667891318",
+            "-533896322608552435",
+            "-212198494178130766941",
+            "-37248722501574080198744",
+            "-3433696906647612824931181",
+            "438660228043644185666495283",
+            "221329215497936249025745829452",
+            "27632933444729051583072011554608",
+            "6624162090637733997091546929668908",
+            "392927723954023410879246429597141603",
+            "-92053133387472882294911368845863967109",
+            "-29886854385646889605247241460280845048664",
+            "-5095693865807015126633545745004215580464709",
+            "-383716228387112980148076016600754025272597635",
+            "-111085954090414481622885120258998446186220630662",
+            "8751437196026241371536952926056140927285620306376",
+            "6664347443952786034893528899603821984504769592331946",
+            "1014118405473569107960920834373896422949016883780711311",
+            "14979746812660784648014935412571930006140211084693652989",
+            "-38748989203398669695016841203775720735883243956185485262856",
+            "-1901532676200114783408413697980428657169439877210929305443347",
+            "462690824926774271159596858267123977889627366545088643761088881"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 10,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 8,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p173/toric-controlled-reduction.input",
+            "sha256": "b39f8a01a717263d958c536d6dbe842e49a63f15339919b0886dc38c5a90bf4b"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p173/toric-controlled-reduction.output",
+            "sha256": "312179fad848edc042089c4e412f846afc9d61e18e73b2ef1d45f4142b70a0c6"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-1038",
+            "389077",
+            "-41421736",
+            "-12540430574",
+            "4338988978604",
+            "-375322546649246",
+            "-37103314611611176",
+            "10430669320189191853",
+            "-832848827258183164878",
+            "24013807852610947920649"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 8
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 4,
+            "2": 2
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            4,
+            8,
+            4,
+            8,
+            4,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 6,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p181/input-certificate.json",
+            "sha256": "08e54fb3a7fe7338a806b6d93abd16e973e469630fe30de91914d4fb2c8311de"
+          },
+          "prime": 181,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "181"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "181"
+              ],
+              "degree": 1,
+              "multiplicity": 7
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "592",
+                "222507",
+                "62269430",
+                "14152424390",
+                "2751518418820",
+                "493781072345986",
+                "85408275270724650",
+                "14998770138512979684",
+                "2657676976871996020312",
+                "491374708507823727427524",
+                "91667260241790472283632650",
+                "17362245296991523146405446866",
+                "3169574931315313866361576463620",
+                "534092638461233009612616422546390",
+                "76987069525167380276770632284550230",
+                "9012467808241699006676905958988034947",
+                "785559173673445465919648967198627241552",
+                "43472473122830653562489222659449707872441"
+              ],
+              "degree": 18,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-132",
+            "-107818",
+            "6795826",
+            "3995302233",
+            "285090087798",
+            "-4559306698008",
+            "-25451335781459614",
+            "-4498569154338416059",
+            "384950501022719667246",
+            "156790098496356672246510",
+            "7240806581773909977177288",
+            "-2399986066482148027664844595",
+            "-168226135529575341366218924068",
+            "0",
+            "5511256426084417758498698171391748",
+            "2575864535790473325916118748901580995",
+            "-254599997977932415078183975407588536328",
+            "-180612262041710578321492265076697895012910",
+            "-14527491764130027134700127744637983593218046",
+            "5561824738861830986131308657827336175492229099",
+            "1030885969462330879496309306168431068923197316494",
+            "6050008787518529815700293631224393024579200225048",
+            "-12393571179383986262415773967411288271719656474574918",
+            "-5690116200198306191512349718358403007337783084860729033",
+            "-317081495464062830535047153715879990453242618635513261186",
+            "164807536747134796077761046116771787533544878036113624668778",
+            "6610234672329486386021498371345841975764837178514048084977892",
+            "-1640590137122623511306441728361069158848725990949232797817884241"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 10,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 7,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p181/toric-controlled-reduction.input",
+            "sha256": "d6d1c8b76b3fb1c1439ebfa790ddf729697d4c56288314c47f0ac5f700edfcd0"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p181/toric-controlled-reduction.output",
+            "sha256": "64f85c472b4c79384ce8303c953299334cca841227f555eaff0bb3b95d19d8b7"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-1086",
+            "425893",
+            "-47437928",
+            "-15025963694",
+            "5439398857228",
+            "-492265596579134",
+            "-50914327417613288",
+            "14975176551705508333",
+            "-1251003210396321696126",
+            "37738596846955704499801"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 8
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 1,
+            "6": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            2,
+            0,
+            2,
+            0,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 6,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p193/input-certificate.json",
+            "sha256": "7aca187887da0f674a0391b789f045f153cde249d79c1e527ebad1efbc39a12f"
+          },
+          "prime": 193,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "193"
+              ],
+              "degree": 1,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "193"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-193",
+                "37249"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "193",
+                "37249"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "686",
+                "356394",
+                "138155190",
+                "46638690671",
+                "13652565611332",
+                "3613835985036589",
+                "864601773196517802",
+                "189744850293106963897",
+                "38160884393095802848092",
+                "7067805928567941298199353",
+                "1199624585953491865257893802",
+                "186772224834988713401421471661",
+                "26282867424607524640956001643332",
+                "3344409432741020799099269891908079",
+                "369024255352999251080412227006315190",
+                "35459508373803033279247335260768504106",
+                "2542383491324857831558379820967971072686",
+                "138048458700232695871309169025125298085249"
+              ],
+              "degree": 18,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-86",
+            "50296",
+            "-12420322",
+            "1295520220",
+            "-772377905966",
+            "-32489419031416",
+            "-19032564181333282",
+            "-542149850361622010",
+            "575561889271143799014",
+            "98951319780035366451400",
+            "55203967193067553941379554",
+            "5187924140867111259570181403",
+            "1121302106256780479775562038140",
+            "0",
+            "-41767382155958816091159910358676860",
+            "-7198182495551350608185623114055845403",
+            "-2853081272935125356102667389535938654946",
+            "-190493456930171563472450033232877132851400",
+            "-41272912766429155529358972389055854663808486",
+            "1448128331765440979690033183073564376914262010",
+            "1893649637656445354886983580703308799169420573218",
+            "120408983364734243394159414869987548419686135063416",
+            "106625579452719563754008709790601827375856171973695534",
+            "-6661781372508406527311878709747076363423831313132320220",
+            "2378995679705473167800900747556159487990598257124388894178",
+            "-358846622965907796569114927927142482803542904535589938738296",
+            "22855382055465853313159192137163973465238360704429225147395414",
+            "-9899303792837762442579845906014195902403066254410281482736416001"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 10,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p193/toric-controlled-reduction.input",
+            "sha256": "f1cfabf14348d85c560aea2fd14d99cf57a5fa803a127ce4626e4d89ea80e9b4"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11a44/p193/toric-controlled-reduction.output",
+            "sha256": "2c9ec07cf16e173967e6a99b23143e2ff1693b6e0537982b81d1b89838907ac9"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-386",
+            "0",
+            "14378114",
+            "-1387488001",
+            "0",
+            "-51682540549249",
+            "19949460652010114",
+            "0",
+            "-743097459826724736386",
+            "71708904873278937061249"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 4
+        }
+      ]
+    },
+    {
+      "best_geometric_MW_rank_upper_bound": 4,
+      "label": "074d9-orbit-11279",
+      "reductions": [
+        {
+          "D4_component_cycle_counts": {
+            "1": 2,
+            "3": 2
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            2,
+            2,
+            8,
+            2,
+            2,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p131/input-certificate.json",
+            "sha256": "069d0b7f265317a44f5853aa89c49ae1f7565a983b60c37154e988b81fac07be"
+          },
+          "prime": 131,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "131"
+              ],
+              "degree": 1,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "131"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "131",
+                "17161"
+              ],
+              "degree": 2,
+              "multiplicity": 2
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "250",
+                "52953",
+                "7250064",
+                "962474685",
+                "100026560954",
+                "14375130143852",
+                "1878126715189982",
+                "377961948408198866",
+                "56255460982911910670",
+                "8536160085826532251702",
+                "965399965927751299007870",
+                "111309763947220641789289586",
+                "9491889292523948093891792942",
+                "1246757962269728914609815780332",
+                "148877234886770480635725595678154",
+                "24583565045619913589372989041282285",
+                "3177898188979357995853149512714544144",
+                "398319254244979341175700152233797639193",
+                "32271810483344147045097493590940085010250",
+                "2215266158818675629763672350056491195443601"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "250",
+            "35792",
+            "-1536368",
+            "-1070297248",
+            "-185319133494",
+            "-10395847211300",
+            "1183387265554774",
+            "421829914500557946",
+            "48613934200932750108",
+            "1595141902201962784472",
+            "-713489314585511663823658",
+            "-154024696093896292294876485",
+            "-15475745386923520153411515332",
+            "0",
+            "265579266584994529352695014612452",
+            "45360260831701466663034033537257685",
+            "3605913025287758807162223241895199898",
+            "-138346981739913886709033996183105889752",
+            "-72355862600641039060379198760169421744508",
+            "-10774395735211210309064429600245620541862106",
+            "-518710489737435544025731951646051991824710054",
+            "78198895406299249730657633956994139199159115300",
+            "23922335820223690599175952212096940171880912433254",
+            "2370993273371159457540725406639155171019516289510048",
+            "58406846354263428576560563294436017698000772875224048",
+            "-23350547208155300073772637642216359724892268061072007632",
+            "-2798940689533646517140787288905865481384640507627798970250",
+            "-192130484692347631522612202659654230104167263005602632513841"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 3,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p131/toric-controlled-reduction.input",
+            "sha256": "d1ccddea5687e01cc77cce56b378eb09bbbc020cc072b0151dfac2e156309fbf"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p131/toric-controlled-reduction.output",
+            "sha256": "1d23fb821f1a00e9e3c48c6d7a3bde4b8e61914c7c9736f7427d42e7f227e64c"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-524",
+            "102966",
+            "-13488546",
+            "2650499289",
+            "-462953875812",
+            "45485218298529",
+            "-3972375731404866",
+            "520381220814037446",
+            "-45446626617759270284",
+            "1488377021731616101801"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 6
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 1,
+            "6": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            2,
+            0,
+            2,
+            0,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 6,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p137/input-certificate.json",
+            "sha256": "ea9e820111bd42d66c48c05e8a5ceca8a0bdd6fc2fc06e8226d978c634f018f2"
+          },
+          "prime": 137,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "137"
+              ],
+              "degree": 1,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "137"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-137",
+                "18769"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "137",
+                "18769"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "454",
+                "141456",
+                "34248904",
+                "7101757913",
+                "1295982482824",
+                "214283113415163",
+                "32817586536964344",
+                "4786739286759643467",
+                "667617876848317457124",
+                "89842309673191748232123",
+                "11560827144457854126728184",
+                "1416809142834002742388584267",
+                "160828743392833216485505306504",
+                "16541372258195817113451845340137",
+                "1497247112005253367726287167764424",
+                "116067148085485421504517287879811984",
+                "6991734484907533422428892229401020614",
+                "289048159795659680188475502761294616529"
+              ],
+              "degree": 18,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-94",
+            "5278",
+            "-2427640",
+            "-54017182",
+            "-33875004422",
+            "-5202402531248",
+            "978265154743390",
+            "71143573256552840",
+            "8808235554786302492",
+            "1342987798110236433862",
+            "61579130220982522804694",
+            "9184012129542454438539607",
+            "-4910304406535050108885088444",
+            "0",
+            "92161503406256355493664225005436",
+            "-3235301188362946902162592368723127",
+            "-407152357058668864851561909625558646",
+            "-166662005717333318717016457503475429702",
+            "-20516089823744487081406830575553495263708",
+            "-3110158199401298158827996409711530073852040",
+            "-802683849270948975286594586413087537154867710",
+            "80118540048671549185172311432873276495921205168",
+            "9791507691248934282791713449477528345364669291238",
+            "293051040044920092805891417120137903535786700786782",
+            "247193338031497503161672772709357741535655742285623160",
+            "-10087022687575812842616327230661323470431781493585897758",
+            "3371806159411212682237246969396465278581698757899334826046",
+            "-673249253255202668435222216687258051209573446670346971809121"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 10,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p137/toric-controlled-reduction.input",
+            "sha256": "3b1cb717156ca392b83cd1c37f733be7e84e9b387591a599967e96c2581c8ed3"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p137/toric-controlled-reduction.output",
+            "sha256": "63d22c95b2d2b6da45c0b5057f62299ec6f0c8797c672a4fbf36364194f417ed"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-274",
+            "0",
+            "5142706",
+            "-352275361",
+            "0",
+            "-6611856250609",
+            "1811648612666866",
+            "0",
+            "-34002832811144407954",
+            "2329194047563391944849"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 4
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 1,
+            "6": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            2,
+            0,
+            2,
+            0,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 6,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p151/input-certificate.json",
+            "sha256": "d66d06e356bc51c728e75fbe895a17912f594d94ca2b901b1cedae955bdaaafd"
+          },
+          "prime": 151,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "151"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "151"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-151",
+                "22801"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "151",
+                "22801"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "38",
+                "26774",
+                "-1414266",
+                "681271079",
+                "-32597860068",
+                "24245904773837",
+                "-450448640359238",
+                "653826201481433957",
+                "-9558283070191262340",
+                "14907891219978175653557",
+                "-234181762112795303532038",
+                "287408811569853541337464637",
+                "-8810583459901995684474781668",
+                "4198454256755404635352737877079",
+                "-198725898051622848556570674603066",
+                "85780884727691295348633046072517174",
+                "2775969903701030498217633494172691238",
+                "1665654994060189378680533192121882445201"
+              ],
+              "degree": 18,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "38",
+            "-18828",
+            "-3147142",
+            "-19791268",
+            "51651150902",
+            "-4755913477948",
+            "-149626195281406",
+            "125532923721166590",
+            "31341860778848128010",
+            "-2068190503748807950052",
+            "-644754875890195225723098",
+            "-136645058192816059610944173",
+            "-6666563150268049966579777764",
+            "0",
+            "152004306389261807287985512796964",
+            "71039798202252151033287537557552973",
+            "7642867294992833707013275346974586298",
+            "558992676397902246641087670984458772452",
+            "-193149794344330569673484345655987825268010",
+            "-17639286387097405520226846504570735094678590",
+            "479385501220486864320529535891830499023519006",
+            "347428228404993226157101171744547888858940153148",
+            "-86032997448872755268925841556107107753381596721302",
+            "751644641356409431248338368289284521998414819295268",
+            "2725267764847572684651795056514603075035870059016760742",
+            "371749955040738166898580922940821367969152652439607679628",
+            "-17107408516336684504529034295251720013833475986534353023238",
+            "-10264895304762966931257013446474591264089923314972889033759201"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 10,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 3,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p151/toric-controlled-reduction.input",
+            "sha256": "711e62e49cbb5f4d9327006095890df8729b9cc0eddc40b3ccbacb23ad563cf4"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p151/toric-controlled-reduction.output",
+            "sha256": "44a4ea95f7867d5b6374ec4a6a8bdb8bf97e49cfabdec8423955fbcfcac97ad3"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-302",
+            "0",
+            "6885902",
+            "-519885601",
+            "0",
+            "-11853911588401",
+            "3579881299697102",
+            "0",
+            "-81624873514393622702",
+            "6162677950336718514001"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 4
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 2,
+            "4": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            4,
+            0,
+            8,
+            0,
+            4
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p157/input-certificate.json",
+            "sha256": "2a7b29e3399a30ab6448b7afb14123e953ea574230f23b090ac80fb56dd0da49"
+          },
+          "prime": 157,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "157"
+              ],
+              "degree": 1,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "157"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "0",
+                "24649"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "496",
+                "150398",
+                "36700006",
+                "7975110003",
+                "1548769877530",
+                "281809462673428",
+                "48557385105170622",
+                "7863216467245960348",
+                "1232074989862421706930",
+                "193076225988885729633436",
+                "30369416425118832654117570",
+                "4777479599160539782953433948",
+                "727198887282366990495170491278",
+                "104028608931204051275092719252628",
+                "14092349888570927623270614486444970",
+                "1788679423591116897121598631527428803",
+                "202890292841134461673463368557422650294",
+                "20494460935014791794857033177794909804798",
+                "1666001621851627568610684858552211458677104",
+                "82792891082703161166703167496881976300266001"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-132",
+            "-13196",
+            "125914",
+            "-507399665",
+            "21570783582",
+            "19947843335232",
+            "-595036535570566",
+            "-142587179907225929",
+            "89643501199394458118",
+            "-5420528037115605912284",
+            "-567966796370612316578600",
+            "15441104652063864172828553",
+            "-54587844479347264178092853716",
+            "0",
+            "1345535778571430714725810751245684",
+            "-9381601380430433211914661170408153",
+            "8505911540324257242104830687560391400",
+            "2000961876951536607638935858074844449884",
+            "-815671587152187598634309776519950869035382",
+            "31979841616228520324077279311039526810614329",
+            "3289567226585365091451556425767832918223307734",
+            "-2718256200027310187425198395257629045890333344832",
+            "-72453549258513024993882942533536361335936182263118",
+            "42009085199745071270426196342356803319292908318289665",
+            "-256960502979873738350470929621156887692273366917130186",
+            "663794981520721913528468651874168887192015683197801296396",
+            "163668421486402260302087416005313984150672270681935719039268",
+            "-30562597888017646319592066038749881782802430303326011656052401"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p157/toric-controlled-reduction.input",
+            "sha256": "a4b099f4dbc2bacec4c46a133dfb93256673414b858150be5f8f4d99e9631cf7"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p157/toric-controlled-reduction.output",
+            "sha256": "1720d4a8570b3a58f0099aa32739f517b22002d1b6417a2f064b6cdda2446f93"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-314",
+            "-24649",
+            "15479572",
+            "-1215146402",
+            "0",
+            "29952143662898",
+            "-9404973110149972",
+            "369145194573386401",
+            "115911591096043329914",
+            "-9099059901039401398249"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 5
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 3,
+            "2": 1,
+            "3": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            3,
+            5,
+            6,
+            5,
+            3,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 6,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p167/input-certificate.json",
+            "sha256": "7a58301e89c9653f9ba87dc9214827abf59516340a6bfde43331d3ee29fc3919"
+          },
+          "prime": 167,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "167"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "167"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "167",
+                "27889"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "313",
+                "92725",
+                "20532984",
+                "4504185056",
+                "864406502948",
+                "178451365519672",
+                "32889689891577256",
+                "6273705748978649442",
+                "1026524143313034949510",
+                "174967379633265554287938",
+                "25581479796499678604075176",
+                "3870960167672332160393270968",
+                "522937509970908437619592600868",
+                "75994285625374720272287937938144",
+                "9661614887787603560006958794066424",
+                "1216823078587640910249322967076811525",
+                "114553371545135772761178476738916436153",
+                "10206961594320420340372225360292781111409"
+              ],
+              "degree": 18,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "146",
+            "-43213",
+            "-11824936",
+            "-656088725",
+            "231801933510",
+            "50223864039612",
+            "2200630020153794",
+            "-582494244747296757",
+            "-205688819766785913940",
+            "-16349236335874674483025",
+            "4957113865656113670924902",
+            "978588691573812448285200449",
+            "90445344027167400415897554300",
+            "0",
+            "-2522430199573671630198966891872700",
+            "-761142684078315022220231667979748129",
+            "-107529523602640696108740661928634880838",
+            "9890750370630333095434020236003887179025",
+            "3470366942068942915726556622499545577879060",
+            "274087539692286247400015367599942051184665877",
+            "-28878699336273085754899902423031409697445043426",
+            "-18381191558345230243892174204723017307651479427772",
+            "-2365993432825785669374214151617323041319812920415590",
+            "186763497080708127679902366528133144451619771450948725",
+            "93877424021915428033779977489637263873290494951842542504",
+            "9567747934573187244395599451084186518293637165929178748173",
+            "-901531914782762048055134692600094512301134428306468758284274",
+            "-172211120351893498343901722204959149681961219664651419176644641"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 10,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p167/toric-controlled-reduction.input",
+            "sha256": "b6268dcbbee35ef99e8e333785c698faf0966e43def657eca176ca96d6aba314"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p167/toric-controlled-reduction.output",
+            "sha256": "24869ae24345c351a733c7a29087233a65ec2653ceecc14a0378246e64291b44"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-835",
+            "251001",
+            "-27944778",
+            "0",
+            "0",
+            "0",
+            "21735345519561738",
+            "-5444704052650215369",
+            "505147542662547759235",
+            "-16871927924929095158449"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 7
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 1,
+            "6": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            2,
+            0,
+            2,
+            0,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 6,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p173/input-certificate.json",
+            "sha256": "5dfb92a0f413dc576f1280ab98bbfe9ae42fc9a7260dc4d8101441db2c578b25"
+          },
+          "prime": 173,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "173"
+              ],
+              "degree": 1,
+              "multiplicity": 6
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-173",
+                "29929"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "173",
+                "29929"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "963",
+                "517348",
+                "200249749",
+                "62270786193",
+                "16452413231614",
+                "3833175190126915",
+                "807067911301229579",
+                "156111633244534049151",
+                "27999673165992216565022",
+                "4672265071375659557040279",
+                "722927079298304252591767739",
+                "102762648150795818601052075435",
+                "13200744764466989725237751603134",
+                "1495358694469720794777791808799257",
+                "143921347961940749909441920587165829",
+                "11128284454599337798847998131013412932",
+                "619960381987290080343208114902861747843",
+                "19267699140703639475173287301067237020969"
+              ],
+              "degree": 18,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-75",
+            "-3382",
+            "-10232085",
+            "279297428",
+            "-156154767003",
+            "38531368683656",
+            "-1390800931534675",
+            "1910874320004639742",
+            "35030166907687401541",
+            "39622100951506359391142",
+            "-4910615493652124303981501",
+            "-14096105209482626429420963",
+            "-239001985276602455260364095810",
+            "-3392307684642143244696730507120",
+            "-7153090417343434883487437023497490",
+            "-12626516338808328799809364108694483",
+            "-131647479478054257062177284863165685589",
+            "31791156368947413029603637725994931289702",
+            "841207697166095889918981728236767868320109",
+            "1373363059351074014511401572245470520380628382",
+            "-29916474763292023422114683860184572241533042075",
+            "24805734213512440619269475953296715743813800942216",
+            "-3008743070000480135719797881547733110246390020285907",
+            "161060483668533278569943552925972215642884078344451028",
+            "-176595002040028325295364431926762367991461587523262129965",
+            "-1746948404152371506192638329838560940716075651325308083062",
+            "-1159471144024460233785618108524651620225268217811542259416675",
+            "462690824926774271159596858267123977889627366545088643761088881"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 10,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 6,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p173/toric-controlled-reduction.input",
+            "sha256": "2c78185132fc7c9693513b5d499105e1c8494b68db2af3710839cb0455e08ffa"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p173/toric-controlled-reduction.output",
+            "sha256": "c6e88a67a601ba01cd4558d6db5b7e7dc369762885348998f839ea142c16239d"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-346",
+            "0",
+            "10355434",
+            "-895745041",
+            "0",
+            "-26808753332089",
+            "9275828652902794",
+            "0",
+            "-277616275752727721626",
+            "24013807852610947920649"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 4
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 3,
+            "2": 1,
+            "3": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            3,
+            5,
+            6,
+            5,
+            3,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p181/input-certificate.json",
+            "sha256": "a628611526ee00a413515b27db00f373ac7518d641b660aa01ecc933a2ef62e1"
+          },
+          "prime": 181,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "181"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "181"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "181",
+                "32761"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-107",
+                "33328",
+                "112763",
+                "735451689",
+                "93013917326",
+                "13231434315688",
+                "2317572441668930",
+                "1861818809918938950",
+                "-95566192562860141576",
+                "74995684170941185731664",
+                "-3130844034551861098171336",
+                "1998258703046304553264462950",
+                "81490084329536861397555293330",
+                "15241774223824812015334464356008",
+                "3510214727121982173128576397452126",
+                "909278763487071871900164317856617529",
+                "4567374992520499153239709072763408723",
+                "44224858344913159608395372937155149841968",
+                "-4651554624142879931186346824561118742351187",
+                "1424201691977055041360709423546231879609039601"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "74",
+            "-51561",
+            "-4633238",
+            "475591437",
+            "208655726308",
+            "-12162444327172",
+            "-8930715866588772",
+            "1698210822713031057",
+            "201888036792691090242",
+            "-38701615892896151035677",
+            "-6973508895819229241438366",
+            "-940257140441901377612541915",
+            "370878928646817554605336312376",
+            "0",
+            "-12150364581398389906425422929750136",
+            "1009162118236019229738188515274516715",
+            "245201322632167920833475617411950189646",
+            "44581810064031667767740618836101823368957",
+            "-7618971228742729239277807299464439962041842",
+            "-2099590034413352075107541986783442541115282977",
+            "361731492726901515809030572482140176626446235012",
+            "16139053573483987728699559187625899659729636758532",
+            "-9070780453849238915967516418429810135722602271877828",
+            "-677338129265198978148834230083794055558474142029496637",
+            "216178877134423915624464311533028711330690474400252182918",
+            "78814682170129451673796929073316794385140769226103754489481",
+            "-3705737619336227216405991511209032622777257206136663320366394",
+            "-1640590137122623511306441728361069158848725990949232797817884241"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 3,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p181/toric-controlled-reduction.input",
+            "sha256": "1686911f083b82fe85c206555bf5e443b0929f51c3f516198a827410c68d4b63"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p181/toric-controlled-reduction.output",
+            "sha256": "f6e9857f301ce968a218818c3ef76c31f8361f83218c68f205c6c806f1806a2d"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-905",
+            "294849",
+            "-35578446",
+            "0",
+            "0",
+            "0",
+            "38185745563209966",
+            "-10367429920411505769",
+            "1042502675330268080105",
+            "-37738596846955704499801"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 7
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 6,
+            "2": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            6,
+            8,
+            6,
+            8,
+            6,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p193/input-certificate.json",
+            "sha256": "67f9cbcbac59513537f8a638d6f24e3ce5318eaea12b8af229a473943fadf3c8"
+          },
+          "prime": 193,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "193"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "193"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "68",
+                "71764",
+                "3775852",
+                "4434605197",
+                "199510709864",
+                "230323008166000",
+                "4085330770048408",
+                "9763555465320825586",
+                "143795712379688901712",
+                "373304442046424474305912",
+                "5356246490431031899870288",
+                "13546816055230617115988793586",
+                "211140273180121488514638045592",
+                "443400109605711343014681024166000",
+                "14306694514837929698369166036460136",
+                "11845207412095524955510566970264013197",
+                "375679320112686888144897527284531383148",
+                "265964444419004515195270509434322851399764",
+                "9387295191615823319249023493708520269796932",
+                "5142167038124967688510395237016892228377440001"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-318",
+            "-28982",
+            "14143426",
+            "563987109",
+            "-304758504344",
+            "-20079726350472",
+            "3275548373048776",
+            "416406229205299193",
+            "571452300376829715530",
+            "-158349063369397451986254",
+            "3451687700895136400512970",
+            "2557784927924986406037690581",
+            "-368914205682309805836798095392",
+            "0",
+            "13741685247460357957614892255256608",
+            "-3548895896634568466465409634888218581",
+            "-178391989564856940853920365389148259530",
+            "304841416465648478246360020107725207890254",
+            "-40978218647338503349571514473831234856496970",
+            "-1112256431747774830635137974835434526672851193",
+            "-325901488136500542828285774814459200712501793224",
+            "74417441375744532388122439870108464329078311694472",
+            "42071441800477370638507206253310678401657652248821656",
+            "-2900115921827193307361390326172526832047160146984947109",
+            "-2709040019271163947583454153314642129454688465030759035074",
+            "206777732360385314143591713877533868232310332019454183324982",
+            "84511761553931876204472361623466785604020915162889460428741182",
+            "-9899303792837762442579845906014195902403066254410281482736416001"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p193/toric-controlled-reduction.input",
+            "sha256": "512beb89b462bbc190a7def022c9cb8f7480a4eca66f507708bedef1a871c436"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/11279/p193/toric-controlled-reduction.output",
+            "sha256": "29687b169fe12e8f28dc4107082bcf964d7dcd74dcc8e862833df747012b6073"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-1544",
+            "1005723",
+            "-345074736",
+            "58274496042",
+            "0",
+            "-2170666703068458",
+            "478787055648242736",
+            "-51978319728812352027",
+            "2972389839306898945544",
+            "-71708904873278937061249"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 9
+        }
+      ]
+    },
+    {
+      "best_geometric_MW_rank_upper_bound": 2,
+      "label": "074d9-orbit-080fa",
+      "reductions": [
+        {
+          "D4_component_cycle_counts": {
+            "2": 1,
+            "6": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            2,
+            0,
+            2,
+            0,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 6,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p131/input-certificate.json",
+            "sha256": "397a2764c1af8d6d259199c503d067e25d23831b7d7762e9f443c6e052a891a2"
+          },
+          "prime": 131,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "131"
+              ],
+              "degree": 1,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "131"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-131",
+                "17161"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "131",
+                "17161"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "444",
+                "138504",
+                "33931882",
+                "7275114213",
+                "1349834767676",
+                "229530587928111",
+                "35729622750480630",
+                "5190020079169631611",
+                "698915675686297743504",
+                "89065934578630048076371",
+                "10522371077376348247030230",
+                "1160027655344426005198783191",
+                "117071444050078248586829065916",
+                "10828112825102290173672109997613",
+                "866689421828585054956329285830602",
+                "60710031079228679892707791284189384",
+                "3339824918036198656960150843045835964",
+                "129087241933376588180389974363760340041"
+              ],
+              "degree": 18,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-80",
+            "8814",
+            "-1919674",
+            "57901214",
+            "-83215336456",
+            "1914249486500",
+            "-580544160268248",
+            "61314074266417092",
+            "1486992648789221506",
+            "3240066941195135151278",
+            "88757261784483854864652",
+            "25408084137980418473844871",
+            "2558103354790563226487414720",
+            "0",
+            "-43899611671560855529750524009920",
+            "-7482678771396586340094255075755191",
+            "-448571491982992639917693047002855212",
+            "-281011665063054750961075034221861125998",
+            "-2213205689941708527123327346725234532306",
+            "-1566086419135724767804491168981140445377412",
+            "254468130976362067760944591783588393198742808",
+            "-14399230032321391593463870275367192770383406500",
+            "10742038269663004721584504537969531229860783834696",
+            "-128266599928718124835531162166503808796495766431614",
+            "72978677223343816708809557854422357038412630091535914",
+            "-5750215777064171179320295825282046116875291983970962094",
+            "895661020650766885485051932449876954043084962440895670480",
+            "-192130484692347631522612202659654230104167263005602632513841"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 10,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p131/toric-controlled-reduction.input",
+            "sha256": "5caf03a087be94c86bc8d95ec8eebebbf8b39d63e658252590318a00b04fa214"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p131/toric-controlled-reduction.output",
+            "sha256": "6793e82bfeac6ebf0bd3b07270c010c233dd8bf040d1c8811c751f9f67b802e5"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-262",
+            "0",
+            "4496182",
+            "-294499921",
+            "0",
+            "-5053913144281",
+            "1324125243801622",
+            "0",
+            "-22723313308879635142",
+            "1488377021731616101801"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 4
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 6,
+            "2": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            6,
+            8,
+            6,
+            8,
+            6,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 6,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p137/input-certificate.json",
+            "sha256": "64ee48f0e428c1b8802a2086a7156ba57d014274d428d38fa5fbc002cdcf5f85"
+          },
+          "prime": 137,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "137"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "137"
+              ],
+              "degree": 1,
+              "multiplicity": 7
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "272",
+                "65487",
+                "9792212",
+                "1422352358",
+                "147060820776",
+                "20294583547210",
+                "2573508194945068",
+                "480391027744247504",
+                "63784524354775018128",
+                "9016459199731781402576",
+                "906583528410732204869548",
+                "134184869080127009942750890",
+                "18249943437649635159043149096",
+                "3312934645791354687234181103942",
+                "428082636955132523087155195378772",
+                "53733240913599874152148538283178143",
+                "4188880572455614737666649088980347152",
+                "289048159795659680188475502761294616529"
+              ],
+              "degree": 18,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-276",
+            "-27262",
+            "9791664",
+            "407005765",
+            "-75361213724",
+            "-9178886806216",
+            "-1370826021476628",
+            "-58336407699123207",
+            "36240218847787987464",
+            "6450362203860087724938",
+            "226934906181577778684996",
+            "-115292776160340337878080651",
+            "-23013462035307240307563853560",
+            "0",
+            "431939668940681593332665967467640",
+            "40614804342576086408862835318140011",
+            "-1500460977918032028724088451044162564",
+            "-800476597040801260420724582158163545098",
+            "-84410502022662426897668086966962591372936",
+            "2550271913877105358302919360862902401635367",
+            "1124786978524520705182063770719158283440891092",
+            "141357575806350615219992534310329502463280262856",
+            "21783020146889613326253190965332275751172592043996",
+            "-2208065254820740866051339603978523432304911260097765",
+            "-997031730010563744129293251189797771051714853986346416",
+            "52101631775045814648618096430899772726584165797297981182",
+            "9900196808483986173377448548440685286048392097661876723284",
+            "-673249253255202668435222216687258051209573446670346971809121"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 10,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 7,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p137/toric-controlled-reduction.input",
+            "sha256": "ab96a4db2d39caf9faad90e6e255ab434dd8063b7f5e6ab5817fb792b5b54942"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p137/toric-controlled-reduction.output",
+            "sha256": "db4bc42ae868981d171ca5a5fd834a9a04bb98a8e3896f829696784d35c1211d"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-1096",
+            "506763",
+            "-123424944",
+            "14795565162",
+            "0",
+            "-277697962525578",
+            "43479566704004784",
+            "-3350644109127368667",
+            "136011331244577631816",
+            "-2329194047563391944849"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 9
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 3,
+            "2": 1,
+            "3": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            3,
+            5,
+            6,
+            5,
+            3,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 2,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p151/input-certificate.json",
+            "sha256": "74b5ca4c26560a175d7310eb79210930812ff38acfec02ace55ece8e03b3e657"
+          },
+          "prime": 151,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "151"
+              ],
+              "degree": 1,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "151"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "151",
+                "22801"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "53",
+                "32885",
+                "3120566",
+                "1022966865",
+                "137852315089",
+                "31416166982829",
+                "5485770475479880",
+                "909645467470715938",
+                "137163151997894463130",
+                "22100880487655518305770",
+                "3161657850706522581739268",
+                "503922175999033472889861770",
+                "71309147711479713698912391130",
+                "10782856948187564540570246635138",
+                "1482699739039868103473538195735880",
+                "193607719549176711982615460563088829",
+                "19370348374744782174648976555102890289",
+                "3277470782356492981645634913580468220865",
+                "227963086802966050992131781115171010678966",
+                "54775064479669327717909334022928104210434885",
+                "2012865774537018035234626377619265206550484053",
+                "865950047645632985309145585586733320274671450801"
+              ],
+              "degree": 22,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-98",
+            "2081",
+            "-3053522",
+            "321836115",
+            "18288955712",
+            "-3321029219188",
+            "1174400777234960",
+            "-248043099987290925",
+            "-10292158736629168250",
+            "-4323145204843463559995",
+            "381106534438703824395638",
+            "53744714404886522160602721",
+            "818896646040743156140452880",
+            "0",
+            "-18671662426374984703158466116880",
+            "-27941103148957786910264764129320321",
+            "-4517603164998296060013290618435794838",
+            "1168464173939420600499764414191899903995",
+            "63427259707589992896775270560932609668250",
+            "34853830750709462748890157045150390165830925",
+            "-3762648005382205398864177259675647568411250960",
+            "242607293730990022812807420759091813951782870388",
+            "-30463090417838426609021068547263095346351355938112",
+            "-12222884922518109587638589940556740815676987528056115",
+            "2644197521386988524567152846791973101591755317792771122",
+            "-41088360762681969689608397102180224492447772983154003681",
+            "44119106173710396880101193708807067404096859123167542007298",
+            "-10264895304762966931257013446474591264089923314972889033759201"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 6,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 3,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p151/toric-controlled-reduction.input",
+            "sha256": "d6417b647e66be1c42f8a548dedf80f3d6c5f38ef72dbdc7fa33cf5fd554bf97"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p151/toric-controlled-reduction.output",
+            "sha256": "21154fe9c2111b3e7e5c1499832f66b921be197b597019b8ae02ba3b25ce8fe2"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-755",
+            "205209",
+            "-20657706",
+            "0",
+            "0",
+            "0",
+            "10739643899091306",
+            "-2432529343144180809",
+            "204062183785984056755",
+            "-6162677950336718514001"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 7
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 4,
+            "2": 2
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            4,
+            8,
+            4,
+            8,
+            4,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p157/input-certificate.json",
+            "sha256": "aa08ede883fce5fdce7fa275c291a818e042910f2f826f118b533e6dec28af14"
+          },
+          "prime": 157,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "157"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "157"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "212",
+                "93830",
+                "19470198",
+                "5104339569",
+                "1020715237894",
+                "203940450940464",
+                "37297286867772114",
+                "6492875942524713950",
+                "1085799443080259192414",
+                "174551043544414906485652",
+                "26763870472485308833812686",
+                "3944897420095632476210853950",
+                "558566847249914660006350413186",
+                "75283637443801746913085718230064",
+                "9287549091501188696081084270047606",
+                "1144815200625170618713317589763871969",
+                "107637970792017595675753925804807589702",
+                "12786042829907564689101154424078088717830",
+                "712081338372066622067470141155380704111988",
+                "82792891082703161166703167496881976300266001"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-102",
+            "-22036",
+            "2775760",
+            "-712430047",
+            "64449198022",
+            "-7495023007536",
+            "-1189500737185790",
+            "722760202657560189",
+            "-31516064892112556172",
+            "5160649820135941885980",
+            "-146164516372110639021554",
+            "-174802039758867940261761539",
+            "36702368375468175213638689356",
+            "0",
+            "-904676678086915050840980053936044",
+            "106205034837624662601115236148916339",
+            "2188970296397732322917181938166051746",
+            "-1905029081979193801061858028867224557980",
+            "286766562298377028067310713016666354942828",
+            "-162102629581010883243387624916508623401644589",
+            "6575970393638907132157888526663173531619853710",
+            "1021333104396226196152450274241536059640081388336",
+            "-216476750870340136033033104584412372028826906962678",
+            "58984143285316093997042912454852498729051393204932047",
+            "-5664665452224647997551528722820515928178794422811548240",
+            "1108471219520356781336263656615579387554051045388507833236",
+            "126471052966765382960703912367742624116428572799677601075798",
+            "-30562597888017646319592066038749881782802430303326011656052401"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 5,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p157/toric-controlled-reduction.input",
+            "sha256": "cad284eb1fdc6350a2eb9c26f134ccff06ba51224f8b7949b082023f4f75aec7"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p157/toric-controlled-reduction.output",
+            "sha256": "c5bd6a904ac99311a97fc9e90e9b651925b85b5ae6a2e9a66b1da77402821b1b"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-942",
+            "320437",
+            "-30959144",
+            "-8506024814",
+            "2670891791596",
+            "-209665005640286",
+            "-18809946220299944",
+            "4798887529454023213",
+            "-347734773288129989742",
+            "9099059901039401398249"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 8
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 4
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            8,
+            0,
+            8,
+            0,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 2,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p167/input-certificate.json",
+            "sha256": "14d52d247e540b122e2687a74cb86ecfe0b087df6f33d7d7991a210d816cf79a"
+          },
+          "prime": 167,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "167"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "167"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "-106",
+                "14989",
+                "-163660",
+                "613474333",
+                "-4797186890",
+                "6353818146249",
+                "818839077266528",
+                "494706876166791414",
+                "-15142290711961344140",
+                "11396370549313861902358",
+                "243279056546283000847576",
+                "317833378249814294594862262",
+                "-11777618007276004166306908940",
+                "10731162559269713880336082775766",
+                "495370715829047537594214557207648",
+                "107201161811619720634421346110007801",
+                "-2257274065762848346961294619216849290",
+                "8050576721656075378363076526600462766957",
+                "-59897139894814442715956771575370811312460",
+                "152992147337268780481839285925428496078909501",
+                "-30174166901824233504499945265759769476105073706",
+                "7938937176650717435915084655818624631312211326289"
+              ],
+              "degree": 22,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-106",
+            "-68678",
+            "8705042",
+            "1692778633",
+            "-238443475748",
+            "-31690533302824",
+            "3137670804322692",
+            "1069435398662588069",
+            "-91295696297332486846",
+            "-28475802195360626379870",
+            "3524919552699258263941830",
+            "380850029049424465011669277",
+            "-85227126670833630148911813784",
+            "0",
+            "2376899335722879111223001574621976",
+            "-296223751447385476053469585719329917",
+            "-76462419567442503714057834237355215270",
+            "17226923957282878031529300000322034024670",
+            "1540334407784809780946471997186219578261854",
+            "-503213413561591043200691082487794401573575109",
+            "-41175413833491480314919256459139814228041699268",
+            "11598266568376665753842884621774679693720991727144",
+            "2433783399376108561970710622989762315117724377608932",
+            "-481869669811168596207737893354223059246757290871763433",
+            "-69108781558105914609773120362456671797807314708221449138",
+            "15205928601361103222886653995361575491249633519581703146438",
+            "654536869636799843108522448052123413040549653427984166973514",
+            "-172211120351893498343901722204959149681961219664651419176644641"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 6,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 3,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p167/toric-controlled-reduction.input",
+            "sha256": "e80fbc45763408a0c49685e7ce81d4f262afc86ff07ba66dc26ce5758ed99eda"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p167/toric-controlled-reduction.output",
+            "sha256": "59ac8e0af67da79ea5369597ddd40003016d58842163e4e0899458825e764c54"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-334",
+            "-83667",
+            "37259704",
+            "1555592642",
+            "-1558703827284",
+            "43383923192738",
+            "28980460692748984",
+            "-1814901350883405123",
+            "-202059017065019103694",
+            "16871927924929095158449"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 6
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 4
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            8,
+            0,
+            8,
+            0,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 4,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p173/input-certificate.json",
+            "sha256": "0b8bd6b09c102fb2619ccad69be0e84f5c0f4e091a375acfc5c9759d33589e7d"
+          },
+          "prime": 173,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "173"
+              ],
+              "degree": 1,
+              "multiplicity": 2
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "173"
+              ],
+              "degree": 1,
+              "multiplicity": 6
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "589",
+                "212618",
+                "61382649",
+                "15639488737",
+                "3522214477288",
+                "724249278430304",
+                "138684005445277792",
+                "25394055418754663470",
+                "4481867061023613296538",
+                "779235186952410718753580",
+                "134137799269375722352085802",
+                "22746599212228668198876352270",
+                "3717945293088540026430232667488",
+                "581108056053240904161032472701024",
+                "84581781673278539676354908036719912",
+                "11240245302203251515037108420938037777",
+                "1320356082653895613279879836451773932241",
+                "136879269467677717863356410149965378092298",
+                "11348674793874443650877066220328602605350741",
+                "576662967582119225852461315633641336800581201"
+              ],
+              "degree": 20,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-103",
+            "-75254",
+            "5474585",
+            "1857722959",
+            "-204405911726",
+            "-1723413458884",
+            "9646502282789250",
+            "-288971552166587331",
+            "-233588555051724609905",
+            "-5091771346609277807626",
+            "883236181307303246353119",
+            "-597967829337865214172080749",
+            "30759094367946542303975938908",
+            "39103533158052908825732990133768",
+            "920588935338272064615695875577532",
+            "-535626717806927079121044251568315709",
+            "23678460918643730041739945828767935591",
+            "-4085429474653523208575284213056656959306",
+            "-5609350677581149145474581589122840419428345",
+            "-207686529037644529902892863818203747849024851",
+            "207498668971022669418009924267018342288070403250",
+            "-1109499549627997390540135571279125932004318230724",
+            "-3938431609717794184089199932615186436098908624982494",
+            "1071280034482375603741423732711961144145891301641493759",
+            "94485566650717665972978399667298928651446477930063912465",
+            "-38871926435861196134541929294403035195933636033363315932214",
+            "-1592340371126925387732248869040521558442701685794518036265567",
+            "462690824926774271159596858267123977889627366545088643761088881"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 8,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 6,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p173/toric-controlled-reduction.input",
+            "sha256": "fa198e3d6bc3a97b86e23bce0ba9566f436b805c7420b4408d5f8f01d0019e53"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p173/toric-controlled-reduction.output",
+            "sha256": "9339fcf03891315bcb44ebedb78fe7f2963773387bd06d919b465dc0083e7a5c"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-346",
+            "-89787",
+            "41421736",
+            "1791490082",
+            "-1859566705116",
+            "53617506664178",
+            "37103314611611176",
+            "-2407077535428275043",
+            "-277616275752727721626",
+            "24013807852610947920649"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 6
+        },
+        {
+          "D4_component_cycle_counts": {
+            "2": 2,
+            "4": 1
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            0,
+            4,
+            0,
+            8,
+            0,
+            4
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 2,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p181/input-certificate.json",
+            "sha256": "a4666dde1306e6a6b7d022c5e3a6a95ab794472cae89333c2ba773ce5edd690f"
+          },
+          "prime": 181,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "181"
+              ],
+              "degree": 1,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "181"
+              ],
+              "degree": 1,
+              "multiplicity": 3
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "0",
+                "32761"
+              ],
+              "degree": 2,
+              "multiplicity": 1
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "260",
+                "76451",
+                "16562586",
+                "3360721663",
+                "615056455484",
+                "74688699107269",
+                "10724940432494408",
+                "812449205325533586",
+                "-26068135637818003456",
+                "-11033249308633489139498",
+                "-6202473917144962969392708",
+                "-361460280600141737699093978",
+                "-27978489976008632379244466176",
+                "28567199482129794486236058842466",
+                "12354452037163737843560018216915528",
+                "2818646704632805224894673914888153469",
+                "760427614324552574912737694804673846524",
+                "136123339042133540929789442571176990405623",
+                "21977857047390838590547728224727099273898266",
+                "3323514042713526295505863561537589616555986891",
+                "370292439914034310753784450122020288698350296260",
+                "46658271630860300210018201424798102607871746368361"
+              ],
+              "degree": 22,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "-102",
+            "15092",
+            "-2594816",
+            "-1203606379",
+            "50556971766",
+            "-54059124238528",
+            "6622468108675090",
+            "-483229006699074183",
+            "94420620195963842596",
+            "65655781749308242534436",
+            "-7181175428745018642995282",
+            "2191140671531095158962945861",
+            "-133799477941908469493320459828",
+            "0",
+            "4383404696854863369070671584425108",
+            "-2351714298490929660759741657048112181",
+            "252503257612184641791142953265035831842",
+            "-75631301795087327323574852254143510573476",
+            "-3563301719615003183718729875003292077323396",
+            "597442198127061671909289387008817335290956663",
+            "-268237766185070753370091625683375937988243977890",
+            "71734190821500308323256212245176607312148106623168",
+            "-2197836596269143202158094946673086314003947566500806",
+            "1714178241446176569415858702145657491710600089827214779",
+            "121069629760102400749758589348288913416547333424565016576",
+            "-23069203144073886942862691832479918171884650979623317289332",
+            "5107908610436421298289339650585423344909192365215400792937462",
+            "-1640590137122623511306441728361069158848725990949232797817884241"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 6,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 3,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p181/toric-controlled-reduction.input",
+            "sha256": "c2360cf8021506315c2100c1d3e643d5734f87bf7ad0a05c58eed9c6b207de8a"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p181/toric-controlled-reduction.output",
+            "sha256": "8e1bf6038e6134a7f02f1b159aa1d891dc4d6b0843c8279279c27cdae1e804ef"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-362",
+            "-32761",
+            "23718964",
+            "-2146566242",
+            "0",
+            "70323656654162",
+            "-25457163708806644",
+            "1151936657823500641",
+            "417001070132107232042",
+            "-37738596846955704499801"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 5
+        },
+        {
+          "D4_component_cycle_counts": {
+            "1": 4,
+            "2": 2
+          },
+          "D4_component_fixed_counts_frobenius_powers_1_through_6": [
+            4,
+            8,
+            4,
+            8,
+            4,
+            8
+          ],
+          "arithmetic_component_cycle_diagnostic_only": true,
+          "geometric_MW_rank_upper_bound": 8,
+          "good_reduction": true,
+          "input_certificate": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p193/input-certificate.json",
+            "sha256": "8f84dae85701ff195964aa07a500ca5081225042a7be25b9e030d44f8fa17036"
+          },
+          "prime": 193,
+          "primitive_factorization": [
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "193"
+              ],
+              "degree": 1,
+              "multiplicity": 5
+            },
+            {
+              "coefficients_low_to_high": [
+                "-1",
+                "193"
+              ],
+              "degree": 1,
+              "multiplicity": 7
+            },
+            {
+              "coefficients_low_to_high": [
+                "1",
+                "396",
+                "188118",
+                "49606404",
+                "15289671528",
+                "3301991392556",
+                "833217069336522",
+                "156524724723755588",
+                "34676814041843010542",
+                "5830389471235171897412",
+                "1156078685932809306072522",
+                "170655304039046642609990444",
+                "29434497601144551853404999528",
+                "3557220905541443756550890638596",
+                "502479167583175942320697378940118",
+                "39400117050303880476612807071006604",
+                "3706098383855477888569066794413952001"
+              ],
+              "degree": 16,
+              "multiplicity": 1
+            }
+          ],
+          "primitive_frobenius_coefficients_low_to_high": [
+            "1",
+            "10",
+            "-113734",
+            "-10118990",
+            "3518875781",
+            "924455217744",
+            "30979832086328",
+            "-21765579771207040",
+            "-2737469125272071783",
+            "45744113275059191402",
+            "-11639293373348128902046",
+            "-12911318364489342294706750",
+            "2222760924357027212087535253",
+            "617145192819086091756996573744",
+            "0",
+            "-22988041287318137831856365375390256",
+            "-3084054111637043896801937325201999253",
+            "667289734916983713097280161170387730750",
+            "22407070828790219314288577839026753798046",
+            "-3280260267353715768216703881602200088181098",
+            "7312012711975225202215632755753811663681383783",
+            "2165571693568898309441061786863901556075224472960",
+            "-114814305627254278549060104852113169675211480342328",
+            "-127619617946947208085179247653465907648281770569458256",
+            "-18094647052314452450506781766276496750324494546299515781",
+            "1938197213645740096774112350349153773741291397908936658510",
+            "811457408469949048333698847082583568060643961834952801265734",
+            "-2657602564589052710832464201995810868050972174933630831092490",
+            "-9899303792837762442579845906014195902403066254410281482736416001"
+          ],
+          "primitive_geometric_algebraic_multiplicity": 12,
+          "primitive_hodge_numbers": [
+            2,
+            24,
+            2
+          ],
+          "primitive_plus_p_multiplicity": 7,
+          "raw_input": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p193/toric-controlled-reduction.input",
+            "sha256": "41910c1f9540699a1f2088a2c89bbc12b29fa1b1d1c9955f4f2c1f0adbd69050"
+          },
+          "raw_output": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-singleton-toric-frobenius/080fa/p193/toric-controlled-reduction.output",
+            "sha256": "12c05b2164cf6691a3871abd9a402352a7a5b83d7400a38d40292c12649b81d3"
+          },
+          "toric_complement_dimension": 6,
+          "toric_complement_geometric_algebraicity": 6,
+          "toric_complement_plus_p_multiplicity_upper_bound": 6,
+          "toric_nondegeneracy_certified_by_controlled_reduction": true,
+          "trivial_lattice_frobenius_coefficients_low_to_high": [
+            "1",
+            "-1158",
+            "484237",
+            "-57512456",
+            "-19424832014",
+            "7497985157404",
+            "-723555567689486",
+            "-79797842608040456",
+            "25026598387946688013",
+            "-2229292379480174209158",
+            "71708904873278937061249"
+          ],
+          "trivial_lattice_geometric_rank": 10,
+          "trivial_lattice_plus_p_multiplicity": 8
+        }
+      ]
+    }
+  ]
+}

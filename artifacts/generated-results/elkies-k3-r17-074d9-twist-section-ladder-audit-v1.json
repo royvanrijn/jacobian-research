@@ -1,0 +1,325 @@
+{
+  "claim": "Exact complete mod-p discovery systems are exported at P.O=0,1,2 for all four twists. Only the 04b07 P.O=0 leading ideals have been completely classified; no new characteristic-zero section is certified.",
+  "generation": {
+    "command": "sage -python elkies-k3/scripts/certify_r17_074d9_twist_section_ladder_audit.sage"
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-074d9-record-twist-sections-v1.json": "7abe20f32668f8406427c360fa244b7f477551e3e1025c25f78de83dcc93688e",
+    "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/04b07/p19/intersection-0/export.json": "fc38f5084db6806ea249eb9a985d8e2e060be91cb66d8afdabb69319d878ffb5",
+    "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/04b07/p19/intersection-1/export.json": "6870f14f47eeecc7595db736ba9b654271c77c8d19b0bae75664b13f5f04010c",
+    "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/04b07/p19/intersection-2/export.json": "27afa69172acf65ec956193e7ee75bccf428631faa597681f2cd22cb56240d69",
+    "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/080fa/p31/intersection-0/export.json": "fdea5a223e66d800d163fa39e744c6707fc8a97cbd0a405eef4cf9012e770712",
+    "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/080fa/p31/intersection-1/export.json": "ec9e8822f40becc91861dcc03e26b6a197897fd26a764fd2db7c0a4f324b6832",
+    "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/080fa/p31/intersection-2/export.json": "b4a7c59bed5f22d3220b89f44448999b9ad4373819a431baa55a0b6caf9fe4c6",
+    "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/11279/p19/intersection-0/export.json": "75574633234f525dbe4a19631c5bf36f48e9f33a77dbc32f30e70ac27b1a5b05",
+    "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/11279/p19/intersection-1/export.json": "8a1a3b4cc5f90be1c23d44321fafb4d578fcb584035151824977085bf243833f",
+    "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/11279/p19/intersection-2/export.json": "b170db249c279a9660e36c745e3925cca61e23a2de2d59c885fdb59c346aa780",
+    "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/11a44/p19/intersection-0/export.json": "919b74f969e488b01e3da6d1d698eb43e969f4217a4fdfd2f48fe0f73442067d",
+    "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/11a44/p19/intersection-1/export.json": "13693124b39e70c42827ddfa9cbe3c21d339390959e96c8ab5cf1973fb568023",
+    "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/11a44/p19/intersection-2/export.json": "52d7eb5612148d71802738f89928dfb8ef816624385b8940ea44a37fe7ffeaae",
+    "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/msolve-04b07-po-0.json": "48cbb12d62968fb6e1bf74f3fd4d25a90120ba15b539dd5af637b4d72cde5ff0"
+  },
+  "proof_boundary": "The small primes are not globally good surface reductions. The exports are exact coefficient-wise discovery schemes, not rank bounds. Unsolved levels and nonunit ideals cannot be interpreted as absence or existence of characteristic-zero sections.",
+  "schema": "elkies-k3.r17-074d9-twist-section-ladder-audit.v1",
+  "status": "INCOMPLETE_BOUNDED_SECTION_LADDER_EXPORTED_THROUGH_P_DOT_O_2",
+  "twists": [
+    {
+      "known_section_reduction": {
+        "X_coefficients_low_to_high_mod_p": [
+          3,
+          10,
+          13,
+          11,
+          12,
+          2,
+          2
+        ],
+        "Y_coefficients_low_to_high_mod_p": [
+          0,
+          8,
+          15,
+          7,
+          6,
+          16,
+          12,
+          10,
+          14,
+          7
+        ],
+        "block_index": 2,
+        "chart": "t=0",
+        "leading_x_y": [
+          2,
+          7
+        ]
+      },
+      "label": "074d9-orbit-04b07",
+      "levels": [
+        {
+          "P_dot_O": 0,
+          "block_count": 12,
+          "chart_count": 1,
+          "equation_count_per_block": 9,
+          "export": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/04b07/p19/intersection-0/export.json",
+            "sha256": "fc38f5084db6806ea249eb9a985d8e2e060be91cb66d8afdabb69319d878ffb5"
+          },
+          "solver_counts": {
+            "ERROR": 0,
+            "NONUNIT_LEADING_IDEAL": 8,
+            "TIMEOUT": 0,
+            "UNIT_IDEAL": 4
+          },
+          "solver_status": "PASS_ALL_LEADING_IDEALS_CLASSIFIED",
+          "solver_summary": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/msolve-04b07-po-0.json",
+            "sha256": "48cbb12d62968fb6e1bf74f3fd4d25a90120ba15b539dd5af637b4d72cde5ff0"
+          },
+          "variable_count_per_block": 6
+        },
+        {
+          "P_dot_O": 1,
+          "block_count": 38,
+          "chart_count": 2,
+          "equation_count_per_block": 12,
+          "export": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/04b07/p19/intersection-1/export.json",
+            "sha256": "6870f14f47eeecc7595db736ba9b654271c77c8d19b0bae75664b13f5f04010c"
+          },
+          "solver_status": "NOT_RUN_TO_COMPLETION",
+          "variable_count_per_block": 9
+        },
+        {
+          "P_dot_O": 2,
+          "block_count": 50,
+          "chart_count": 3,
+          "equation_count_per_block": 15,
+          "export": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/04b07/p19/intersection-2/export.json",
+            "sha256": "27afa69172acf65ec956193e7ee75bccf428631faa597681f2cd22cb56240d69"
+          },
+          "solver_status": "NOT_RUN_TO_COMPLETION",
+          "variable_count_per_block": 12
+        }
+      ],
+      "prime": 19,
+      "role": "discovery_only"
+    },
+    {
+      "known_section_reduction": {
+        "X_coefficients_low_to_high_mod_p": [
+          3,
+          14,
+          9,
+          10,
+          11,
+          9,
+          3
+        ],
+        "Y_coefficients_low_to_high_mod_p": [
+          0,
+          5,
+          18,
+          3,
+          17,
+          5,
+          7,
+          12,
+          13,
+          5
+        ],
+        "block_index": 4,
+        "chart": "t=0",
+        "leading_x_y": [
+          3,
+          5
+        ]
+      },
+      "label": "074d9-orbit-11a44",
+      "levels": [
+        {
+          "P_dot_O": 0,
+          "block_count": 26,
+          "chart_count": 1,
+          "equation_count_per_block": 9,
+          "export": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/11a44/p19/intersection-0/export.json",
+            "sha256": "919b74f969e488b01e3da6d1d698eb43e969f4217a4fdfd2f48fe0f73442067d"
+          },
+          "solver_status": "NOT_RUN_TO_COMPLETION",
+          "variable_count_per_block": 6
+        },
+        {
+          "P_dot_O": 1,
+          "block_count": 52,
+          "chart_count": 2,
+          "equation_count_per_block": 12,
+          "export": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/11a44/p19/intersection-1/export.json",
+            "sha256": "13693124b39e70c42827ddfa9cbe3c21d339390959e96c8ab5cf1973fb568023"
+          },
+          "solver_status": "NOT_RUN_TO_COMPLETION",
+          "variable_count_per_block": 9
+        },
+        {
+          "P_dot_O": 2,
+          "block_count": 64,
+          "chart_count": 3,
+          "equation_count_per_block": 15,
+          "export": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/11a44/p19/intersection-2/export.json",
+            "sha256": "52d7eb5612148d71802738f89928dfb8ef816624385b8940ea44a37fe7ffeaae"
+          },
+          "solver_status": "NOT_RUN_TO_COMPLETION",
+          "variable_count_per_block": 12
+        }
+      ],
+      "prime": 19,
+      "role": "discovery_only"
+    },
+    {
+      "known_section_reduction": {
+        "X_coefficients_low_to_high_mod_p": [
+          10,
+          17,
+          9,
+          16,
+          16,
+          10,
+          3
+        ],
+        "Y_coefficients_low_to_high_mod_p": [
+          8,
+          4,
+          4,
+          10,
+          7,
+          1,
+          11,
+          1,
+          10,
+          7
+        ],
+        "block_index": 4,
+        "chart": "t=0",
+        "leading_x_y": [
+          3,
+          7
+        ]
+      },
+      "label": "074d9-orbit-11279",
+      "levels": [
+        {
+          "P_dot_O": 0,
+          "block_count": 12,
+          "chart_count": 1,
+          "equation_count_per_block": 9,
+          "export": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/11279/p19/intersection-0/export.json",
+            "sha256": "75574633234f525dbe4a19631c5bf36f48e9f33a77dbc32f30e70ac27b1a5b05"
+          },
+          "solver_status": "NOT_RUN_TO_COMPLETION",
+          "variable_count_per_block": 6
+        },
+        {
+          "P_dot_O": 1,
+          "block_count": 24,
+          "chart_count": 2,
+          "equation_count_per_block": 12,
+          "export": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/11279/p19/intersection-1/export.json",
+            "sha256": "8a1a3b4cc5f90be1c23d44321fafb4d578fcb584035151824977085bf243833f"
+          },
+          "solver_status": "NOT_RUN_TO_COMPLETION",
+          "variable_count_per_block": 9
+        },
+        {
+          "P_dot_O": 2,
+          "block_count": 50,
+          "chart_count": 3,
+          "equation_count_per_block": 15,
+          "export": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/11279/p19/intersection-2/export.json",
+            "sha256": "b170db249c279a9660e36c745e3925cca61e23a2de2d59c885fdb59c346aa780"
+          },
+          "solver_status": "NOT_RUN_TO_COMPLETION",
+          "variable_count_per_block": 12
+        }
+      ],
+      "prime": 19,
+      "role": "discovery_only"
+    },
+    {
+      "known_section_reduction": {
+        "X_coefficients_low_to_high_mod_p": [
+          27,
+          19,
+          19,
+          19,
+          6,
+          1,
+          4
+        ],
+        "Y_coefficients_low_to_high_mod_p": [
+          12,
+          20,
+          2,
+          28,
+          15,
+          15,
+          16,
+          17,
+          2,
+          15
+        ],
+        "block_index": 6,
+        "chart": "t=0",
+        "leading_x_y": [
+          4,
+          15
+        ]
+      },
+      "label": "074d9-orbit-080fa",
+      "levels": [
+        {
+          "P_dot_O": 0,
+          "block_count": 42,
+          "chart_count": 1,
+          "equation_count_per_block": 9,
+          "export": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/080fa/p31/intersection-0/export.json",
+            "sha256": "fdea5a223e66d800d163fa39e744c6707fc8a97cbd0a405eef4cf9012e770712"
+          },
+          "solver_status": "NOT_RUN_TO_COMPLETION",
+          "variable_count_per_block": 6
+        },
+        {
+          "P_dot_O": 1,
+          "block_count": 62,
+          "chart_count": 2,
+          "equation_count_per_block": 12,
+          "export": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/080fa/p31/intersection-1/export.json",
+            "sha256": "ec9e8822f40becc91861dcc03e26b6a197897fd26a764fd2db7c0a4f324b6832"
+          },
+          "solver_status": "NOT_RUN_TO_COMPLETION",
+          "variable_count_per_block": 9
+        },
+        {
+          "P_dot_O": 2,
+          "block_count": 104,
+          "chart_count": 3,
+          "equation_count_per_block": 15,
+          "export": {
+            "path": "artifacts/local/elkies-k3/r17-074d9-twist-section-ladder/080fa/p31/intersection-2/export.json",
+            "sha256": "b4a7c59bed5f22d3220b89f44448999b9ad4373819a431baa55a0b6caf9fe4c6"
+          },
+          "solver_status": "NOT_RUN_TO_COMPLETION",
+          "variable_count_per_block": 12
+        }
+      ],
+      "prime": 31,
+      "role": "discovery_only"
+    }
+  ]
+}

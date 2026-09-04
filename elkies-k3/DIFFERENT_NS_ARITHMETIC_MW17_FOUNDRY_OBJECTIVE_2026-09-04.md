@@ -10,11 +10,12 @@ Status: **OPEN**.
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 252991e141c42e55 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK b932f409dfffdb55 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6014cc6c7b64d76e -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY d94b3dbddf5cb529 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 9f40eebe50b66ea4 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY ec9b82089d2e9196 -->
+<!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 9e0df73560e0a607 -->
 
 ## Milestone
 
@@ -79,6 +80,31 @@ and a rational half-section, and saturates to determinant `20`.
 The theorem and exact replay are in
 [`GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md).
 
+## Two rootless arithmetic rows are closed
+
+The determinant-500 and determinant-750 rootless-MW17 rows are now decided
+at the exact marked-curve gate. Their literal lattices are
+
+```text
+T_N = U(5) + <10N> = 5(U+<2N>),       N=2,3.
+```
+
+The coarse curves `X_0(2)` and `X_0(3)` forget projective level five. Exact
+Clifford and discriminant-action calculations give stable groups
+
+```text
+Gamma_0(N) intersection +/-Gamma(5).
+```
+
+After conjugation these are `Gamma_H(50)` and `Gamma_H(75)`, where `H` is the
+inverse image of `{+/-1}` modulo five. The exact marked curves have genera
+four and nine and degree-two maps to `X_0(50)` and `X_0(75)`. Each has exactly
+four rational cusps and no rational noncuspidal point by Mazur--Kenku.
+Therefore both rows are `ARITHMETICALLY_EXCLUDED`, satisfying the first
+two-row arithmetic-classification gate without authorizing equation work.
+See
+[`DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md`](DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md).
+
 ## Global arithmetic-first order
 
 The foundry order is now
@@ -95,16 +121,18 @@ rank-three T
 
 The generated `T`-first planner enforces this order on all 827 catalogue
 rows without using rootless-frame data in its arithmetic priority. It
-propagates four exact exclusions and the already-realized determinant-948
-positive control. The remaining arithmetic research queue has 822 rows: 62
+propagates six exact exclusions and the already-realized determinant-948
+positive control. The remaining arithmetic research queue has 820 rows: 60
 from the old rootless-MW17 subcatalogue and 760 not yet screened at the NS
-stage. Twenty-three currently have coarse genus at most two. That coarse genus
+stage. Twenty-one currently have coarse genus at most two. That coarse genus
 is a prioritization diagnostic only; it is not the genus of the stable
 marking curve and proves neither a rational point nor a rational marking.
 
 The split determinant-`378` row is now closed: its coarse `X_0(7)` becomes
 `X_0(63)` after imposing the literal stable kernel, and all its rational
-points are cusps. The next exact-coarse calculations are determinant `256`
+points are cusps. Among actual rootless-MW17 candidates, determinants `500`
+and `750` are also closed by their exact `X_H(50)` and `X_H(75)` curves. The
+next global exact-coarse calculations are determinant `256`
 and `512`, with coarse curves `X_0(2)` and `X_0(4)`; their literal stable
 kernels are still unknown.
 The priority tuple is
@@ -192,6 +220,8 @@ boundaries are recorded in
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_det378_qq_marking_obstruction.sage --check
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage --check
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
 python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
@@ -203,6 +233,9 @@ python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
   — exact stable curve and determinant-720 exclusion.
 - [`DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md)
   — literal `A4` spin image, stable `X_0(63)`, and split determinant-378 exclusion.
+- [`DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md`](DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md)
+  — literal mod-five stable kernels, exact `X_H(50)`/`X_H(75)` curves, and two
+  rootless-MW17 arithmetic exclusions.
 - [`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md)
   — marking decisions and empty equation-agent handoff.
 - [`DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md`](DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md)

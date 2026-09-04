@@ -37521,6 +37521,49 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Stable X_H(50) and X_H(75) obstructions for two rootless MW17 candidates",
+      "scope": "For rootless-MW17 rows K3-04b86146cc6b284b and K3-10a14a46c14b3150, the literal transcendental lattices are T_N=U(5)+<10N>=5(U+<2N>) for N=2,3, with discriminant groups Z/5+Z/5+Z/(10N). Their primitive-similarity even Clifford orders have norm-one curves X_0(2) and X_0(3), while the literal orders have reduced discriminants 250 and 375 and impose projective identity modulo 5. In both cases the norm-one spin image on A_T is PSL_2(F_5)=A5 of order 60; the Fricke coset enlarges it to S5, and the full O^+(T) image is S5 x C2 of order 240. No non-spin coset contains a stable action. Thus O^+(T_N)^*=Gamma_0(N) intersection +/-Gamma(5). After conjugation by diag(5,1), the exact marked curves are X_H(50) and X_H(75), with H the inverse image of {+/-1} modulo 5. Their indices are 180 and 240, genera 4 and 9, they have no elliptic points, and each has 24 geometric cusps of which exactly four are rational. Degree-two forgetful maps to X_0(50) and X_0(75), together with the complete Mazur--Kenku rational cyclic-isogeny classification, prove that every rational point on either exact curve is cuspidal. The infinitely many rational points on the coarse genus-zero X_0(2) and X_0(3) curves are quotient-level data and have no noncuspidal rational lift. Hence both rows are ARITHMETICALLY_EXCLUDED: there is no rational CM, non-CM, saturated, or overlattice point on either full marked curve, and no equation work is authorized. This decides two previously UNKNOWN rootless rows and narrows OP-K3-DIFFERENT-NS-ARITHMETIC-MW17; it makes no claim over larger number fields or for other ternary genera of the same determinants.",
+      "canonical_source": "elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md",
+      "dependencies": [],
+      "checker": "elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c5f49090c97775518064d1b0abea3e5d7e7c184377122aafaf5e1f2eb214cc32",
+      "software_lock": [
+        "elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage",
+        "artifacts/generated-results/elkies-k3-det500-det750-qq-marking-obstructions-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json"
+      ],
+      "supersedes_notes": [
+        "the determinant-500 and determinant-750 rootless rows have unknown literal stable kernels",
+        "their coarse genus-zero X_0(2) and X_0(3) curves can be used as full marking curves"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-K3-DIFFERENT-NS-ARITHMETIC-MW17"
+      ],
+      "consumers": [
+        "REPRODUCE.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/AGENTS.md",
+        "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-RES-QBC-E6A1-RHO19",
       "kind": "theorem",
       "state": "proved",
@@ -40333,6 +40376,7 @@
       "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_SINGLETON_TWIST_FROBENIUS_BOUNDS_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-R17-NORM12-11952-ALTERNATE-LAB-1024",
         "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64",
         "EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO"
       ],
@@ -40365,6 +40409,51 @@
         "REPRODUCE.md",
         "artifacts/generated-results/README.md",
         "elkies-k3/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Complete two-prime cohomological triage of the seventeen alternate-Q80 product twists",
+      "scope": "For all seventeen selected exact-rank-one alternate-Q80 V4 bases, complete degree-28 product-twist Frobenius quotients are certified at p=131, with every Tate-factor survivor also certified at p=137. Each raw computation independently reconstructs the exact degree-18 U+4D4 Frobenius factor and full degree-46 H^2 polynomial, checks the reciprocal functional equation, exact Weil size, independent n=1,2 fibrewise moments, and all cyclotomic factors with multiplicity. Twelve targets have Tate degree zero at one prime and therefore geometric product-twist Mordell--Weil rank zero unconditionally; on their torsion-free 48I1 base changes this also gives A^-=Gamma_d=Hhat^(-1)=0. Exactly five targets retain Tate degree two at both primes: alternate-orbit-19bad:alternate-orbit-083ad, alternate-orbit-11ae6:alternate-orbit-0f82c, alternate-orbit-0f82c:alternate-orbit-025be, alternate-orbit-11ee2:alternate-orbit-0c36e, and alternate-orbit-0c10b:alternate-orbit-17a1a. Their geometric product ranks are at most two, but a persistent Tate factor does not prove a characteristic-zero section. These five and only these five are promoted to descent or class-sliced section work; the other twelve are closed.",
+      "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
+        "EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64",
+        "EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_all17_product_toric_frobenius_campaign.sage",
+      "proof_type": "exact_modular",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ec50f0e55de7e542186c48b18b5845a733c10bd737931241281ccc7f67f8539a",
+      "software_lock": [
+        "elkies-k3/scripts/export_r17_product_toric_frobenius_input.sage",
+        "elkies-k3/scripts/parse_toric_controlled_reduction_output.py",
+        "elkies-k3/scripts/certify_r17_product_toric_frobenius.sage",
+        "elkies-k3/scripts/run_r17_product_toric_frobenius.sh",
+        "elkies-k3/scripts/run_r17_all17_product_toric_frobenius_campaign.sh",
+        "elkies-k3/scripts/certify_r17_all17_product_toric_frobenius_campaign.sage",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-product-twist-finite-field-bound-audit-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-all17-product-toric-frobenius-campaign-v1.json"
+      ],
+      "supersedes_notes": [
+        "the full Frobenius quotient is known only for shortlist rank 55",
+        "all other sixteen product twists require nonlinear section search before cohomological triage"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/README.md",
+        "elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -40971,11 +41060,12 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Fail-closed arithmetic-marking classifier for rank-19 Neron--Severi lattices",
-      "scope": "The exact rootless-MW17 subset of the rank-seven catalogue contains 66 candidate rank-19 Neron--Severi lattices. For every row the classifier checks the NS=U+W(-1) rank, signature, determinant, evenness, minimum, and Smith invariants against the catalogue's primitive ternary K3 complement T; imports the exact rational even-Clifford algebra and integral-order ledger; and separates its coarse norm-one curve from the full stable discriminant-kernel marking curve. Hash-pinned decision records classify the determinant-948 NS0001 control as ARITHMETICALLY_POSSIBLE by its exact QQ equation, seventeen rational sections, rho=19, saturation, and trivial torsion; classify determinant-720 Golay, determinant-950 NS0024, and determinant-1184 NS0031 as ARITHMETICALLY_EXCLUDED by their proved modular obstructions; and retain the other 62 rows as UNKNOWN. The new different-NS equation-agent handoff is empty because UNKNOWN rows are not dispatched. This is not a complete classification of rank-19 NS lattices or a decision for any of the 62 unknown marked curves.",
+      "scope": "The exact rootless-MW17 subset of the rank-seven catalogue contains 66 candidate rank-19 Neron--Severi lattices. For every row the classifier checks the NS=U+W(-1) rank, signature, determinant, evenness, minimum, and Smith invariants against the catalogue's primitive ternary K3 complement T; imports the exact rational even-Clifford algebra and integral-order ledger; and separates its coarse norm-one curve from the full stable discriminant-kernel marking curve. Hash-pinned decision records classify the determinant-948 NS0001 control as ARITHMETICALLY_POSSIBLE by its exact QQ equation, seventeen rational sections, rho=19, saturation, and trivial torsion; classify determinants 500 and 750, determinant-720 Golay, determinant-950 NS0024, and determinant-1184 NS0031 as ARITHMETICALLY_EXCLUDED by proved modular obstructions; and retain the other 60 rows as UNKNOWN. The new different-NS equation-agent handoff is empty because UNKNOWN rows are not dispatched. This is not a complete classification of rank-19 NS lattices or a decision for any of the 60 unknown marked curves.",
       "canonical_source": "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
       "dependencies": [
         "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
         "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS",
         "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION",
         "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
         "EC-K3-GOLAY-DET720-NS-SATURATION"
@@ -40985,7 +41075,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:ff7fc7331222383755a28f9a83c23fcf1edca8706ded9d4d6e985ca065a74975",
+      "artifact_hash": "sha256:ec66b0ca948a6150f9deeb7ecabdba0b264ee1e49831392c48d08acbdfda3a44",
       "software_lock": [
         "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage",
         "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json",
@@ -41019,10 +41109,11 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Arithmetic-gated reranking of different-NS MW17 frames",
-      "scope": "The determinant-aware planner now treats a proved obstruction to a full QQ-rational rank-19 marking as an exact pre-scoring rejection. Of 827 catalogue surfaces, 66 pass the exact lattice-theoretic MW17 filters; determinant 720, NS0024/determinant 950, and NS0031/determinant 1184 are then removed by their rational-marking obstruction certificates, leaving 63 arithmetic candidates including the already-realized determinant-948 control. That control remains the only fully ready row and is excluded by the different-NS milestone, so the new equation-agent handoff is empty. The former determinant-720 lead remains an exact lattice/corridor control but its stable marked curve X_0(60) has no rational noncuspidal point. This is a fail-closed rootless-subcatalogue accounting, not an existence theorem, a complete catalogue, or an arithmetic source construction.",
+      "scope": "The determinant-aware planner treats a proved obstruction to a full QQ-rational rank-19 marking as an exact pre-scoring rejection. Of 827 catalogue surfaces, 66 pass the exact lattice-theoretic MW17 filters; determinants 500, 720, 750, 950, and 1184 are then removed by their rational-marking obstruction certificates, leaving 61 arithmetic candidates including the already-realized determinant-948 control. That control remains the only fully ready row and is excluded by the different-NS milestone, so the new equation-agent handoff is empty. The determinant-500 and determinant-750 rootless frames remain exact geometric controls, but their stable marked curves X_H(50) and X_H(75) have no rational noncuspidal points. This is a fail-closed rootless-subcatalogue accounting, not an existence theorem, a complete catalogue, or an arithmetic source construction.",
       "canonical_source": "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
       "dependencies": [
         "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
+        "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS",
         "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
         "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION",
         "EC-K3-NS0031-QQ-MARKING-OBSTRUCTION",
@@ -41068,12 +41159,13 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Global transcendental-first arithmetic queue for Lane B",
-      "scope": "The Lane B foundry begins with all 827 rank-three transcendental-lattice rows and orders them without using rootless-frame data. The enforced gate order is full marked Shimura/modular curve, rational noncuspidal non-CM point, saturated rational marking of NS=T^perp, rootless-frame test, and equation compilation. EC-K3-DET378-QQ-MARKING-OBSTRUCTION adds the split determinant-378 X_0(7) row to the three earlier exact exclusions; the already-realized determinant-948 positive control is unchanged. The remaining arithmetic research queue has 822 rows, consisting of 62 UNKNOWN rows from the old rootless-MW17 subcatalogue and 760 unscreened T rows; 23 have coarse genus at most two as a diagnostic only. No new NS/rootless handoff is emitted because no new exact positive full marking exists. The next exact-coarse diagnostics are determinant 256/X_0(2) and determinant 512/X_0(4), whose literal stable kernels remain unknown. This narrows OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 by replacing rootless-first work ordering and propagating exact source exclusions, not by promoting any unresolved row.",
+      "scope": "The Lane B foundry begins with all 827 rank-three transcendental-lattice rows and orders them without using rootless-frame data. The enforced gate order is full marked Shimura/modular curve, rational noncuspidal non-CM point, saturated rational marking of NS=T^perp, rootless-frame test, and equation compilation. The exact exclusions are the split determinant-378 row of EC-K3-DET378-QQ-MARKING-OBSTRUCTION, the determinant-500 and determinant-750 rootless rows, determinant-720 Golay, determinant-950 NS0024, and determinant-1184 NS0031; the already-realized determinant-948 positive control is unchanged. The remaining arithmetic research queue has 820 rows, consisting of 60 UNKNOWN rows from the old rootless-MW17 subcatalogue and 760 unscreened T rows; 21 have coarse genus at most two as a diagnostic only. No new NS/rootless handoff is emitted because no new exact positive full marking exists. The globally earliest exact-coarse diagnostics remain determinant 256/X_0(2) and determinant 512/X_0(4), whose literal stable kernels are unknown; among already-rootless rows, determinants 500 and 750 are now closed. This narrows OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 by propagating exact source exclusions, not by promoting any unresolved row.",
       "canonical_source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
       "dependencies": [
         "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
         "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
-        "EC-K3-DET378-QQ-MARKING-OBSTRUCTION"
+        "EC-K3-DET378-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS"
       ],
       "checker": "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
       "proof_type": "exact_symbolic",
@@ -41258,6 +41350,147 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-R17-074D9-PROSPECTIVE-CRT-LOCAL-STABILITY",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Target-blind local audit and empirical refinement of the 356/385 CRT cylinders",
+      "scope": "On 64 salted exact norm12-orbit-074d9 specializations from each proposed p^3 cylinder, all 128 fibres are valid and all seventeen generic sections specialize exactly, but the intended local fingerprints are not preserved: the 356 cylinder matches at 2 on 0/64 rows and at 13 on 1/64, while the 385 cylinder matches at 2 on 0/64 and at 13 on 32/64; the other three intended places match on all rows. Before any Mordell--Weil search outcome is read, a local-outcome-only scan over exponents 3 through 20 selects 2^15,13^5,37^3,53^3,71^3 for the 356-like class and 2^18,13^4,37^3,53^3,67^3 for the 385-like class. Each selected place passes sixteen discovery and sixty-four disjoint confirmation draws. The resulting exact classes are t=14503094594046060605284928+32837835553385972844560384*n and t=-4622816536543600156190144+16981283803546391486922752*n, with frozen definition hash 500dc6931c5aeaf3d6d9982bb994286d7aee36e7c87b9e414e8b7e0ef8aef15c. All 256 subsequently frozen rows in each full cohort reproduce all five intended fingerprints. The frozen artifact preserves the original upstream fingerprint whole-file hash; replay against its current additive extension gives an identical mathematical payload. This is finite-sample empirical stability, not a theorem that the fingerprint is constant on either complete p-adic cylinder; the local image matrices are those of the known MW17 subgroup, not complete Selmer local-condition matrices.",
+      "canonical_source": "elkies-k3/R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT",
+        "EC-K3-R17-074D9-LOCAL-KUMMER-SEPARATION",
+        "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE"
+      ],
+      "checker": "elkies-k3/scripts/audit_r17_prospective_crt_local_stability.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:63c101e8175698879eae811355b74fe7b1b348c0930d5e544c16fece700b9b39",
+      "software_lock": [
+        "elkies-k3/scripts/audit_r17_prospective_crt_local_stability.sage",
+        "elkies-k3/scripts/build_r17_prospective_crt_cohorts.py",
+        "artifacts/generated-results/elkies-k3-r17-residual-selmer-fingerprints-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-prospective-crt-local-stability-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-prospective-crt-frozen-cohorts-v1.json"
+      ],
+      "supersedes_notes": [
+        "matching t modulo p^3 is sufficient to preserve the tested local Kummer fingerprint at every intended place"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-074D9-PROSPECTIVE-CRT-ESCAPE-EXPERIMENT",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Frozen six-cohort prospective CRT escape experiment with zero bounded events",
+      "scope": "A label-blind candidate commitment freezes 2,560 distinct nonsingular integer parameters of common 111-bit height on the exact norm12-orbit-074d9 family: 256 each in the full 356-like and full 385-like cohorts, and 512 each in anchor-matched ordinary, 2-only, odd-only, and salted random equal-codimension cohorts. The candidate-list hash is 5df03637d4db0baa95cb9e5f697fe35e5e897838676b6370c0e08bdae5aa9aeb. All rows pass exact specialization and the uniform pre-search local panel; the full cohorts match five of five intended places, odd-only matches four of five on every row, 2-only matches one place on 495 rows and two on 17 accidental matches, ordinary matches zero on 493 and one on 19, and random matches zero on all 512. The panel stores actual known-MW17 local subspaces, cumulative and leave-one-place-out matrices, component data, and fixed Nagao comparison features. It computes no complete 2-Selmer group and no finite proved residual upper bound. The frozen v1 eclib canary exhausted 300 seconds in backend initialization before reaching a search call and is an operational failure only. Before any search completed or returned points, protocol v2 froze an identical PARI hyperellratpoints search of the exact completed-square 2-minimal model at rational x numerator/denominator height 10000, with 30 wall seconds including setup, 8 GB memory, and zero retries. All 2,560 rows complete without timeout or backend failure and all are bounded misses: pooled full A+B is 0/512 versus ordinary C at 0/512; the 2-only, odd-only, and random arms are each 0/512. A post-experiment diagnostic applies the unchanged call to the known +12 positive-control fibres 356 and 385 and redetects no escape on either, without changing the frozen candidates, protocol, or contrasts. Risk difference is zero, effect ratios are undefined, Fisher exact p is one, and no predictor is fit because the outcome has zero variance. This detector-limited result provides no prospective enrichment evidence at the declared bound, does not prove equal true probabilities, rank 17, a Mordell--Weil upper bound, or a Selmer upper bound, and does not authorize a large rank-32 campaign.",
+      "canonical_source": "elkies-k3/R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-074D9-PROSPECTIVE-CRT-LOCAL-STABILITY",
+        "EC-K3-R17-NORM12-PROSPECTIVE-FAMILY-HOLDOUT",
+        "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE"
+      ],
+      "checker": "elkies-k3/scripts/analyze_r17_prospective_crt_experiment.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:366a38ac112dc5362270ff139481159aba0af8b6d058a954356f9ee9e7ca018b",
+      "software_lock": [
+        "elkies-k3/scripts/build_r17_prospective_crt_cohorts.py",
+        "elkies-k3/scripts/run_r17_prospective_crt_arithmetic_features.sage",
+        "elkies-k3/scripts/run_r17_prospective_crt_point_search.sage",
+        "elkies-k3/scripts/build_r17_prospective_crt_search_protocol.py",
+        "elkies-k3/scripts/run_r17_prospective_crt_direct_point_search.sage",
+        "elkies-k3/scripts/audit_r17_prospective_crt_search_sensitivity.sage",
+        "elkies-k3/scripts/analyze_r17_prospective_crt_experiment.py",
+        "elliptic-curves/tests/test_r17_prospective_crt_experiment.py",
+        "artifacts/generated-results/elkies-k3-r17-prospective-crt-frozen-cohorts-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-prospective-crt-arithmetic-features-v1.json.gz",
+        "artifacts/generated-results/elkies-k3-r17-prospective-crt-search-protocol-v2.json",
+        "artifacts/generated-results/elkies-k3-r17-prospective-crt-point-search-ledger-v2.json",
+        "artifacts/generated-results/elkies-k3-r17-prospective-crt-search-sensitivity-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-prospective-crt-statistical-analysis-v1.json"
+      ],
+      "supersedes_notes": [],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Fail-closed quotient-aware 2-Selmer detector v2 control gate",
+      "scope": "The detector-v2 control replay verifies the exact global minimal models of record fibres 356 and 385, the specialized MW17 subgroup, its 17-dimensional mod-2 image, its primitivity inside the displayed MW29 subgroup, and the twelve-dimensional exceptional image modulo MW17. The rank-29 combined good-reduction E(F_p)/2E(F_p) signature certificate proves 2-saturation of both displayed MW29 and its MW17 subspace; all-prime saturation inside the unknown full rational Mordell--Weil group remains UNKNOWN. For both records it records 2, every finite bad prime, infinity, exact local Kummer and component data for the known points, certified cubic fields and discriminant factorizations, class-group pressure, and preserved failed BNF attempts. Neither global 2-descent completes: dim Sel_2, s_res, dim Sel_2/im(MW29/2), auxiliary descent places, global local-condition rows, local codimensions, and leave-one-place-out residual dimensions all remain UNKNOWN. The exact post-descent implementation computes those quantities only from a completed explicitly declared all-place input and makes no intrinsic pairing claim on an arbitrary quotient complement. A separately blinded hash-order commitment freezes Stage 1 at two fibres per each of five aggregate cohorts, ten total, and Stage 2 at six per cohort, thirty total; both stages remain unauthorized until blind recovery of all twelve exceptional directions on both records. This is Outcome D, not a Selmer upper bound, exact-rank result, cohort comparison, or cylinder-enrichment claim.",
+      "canonical_source": "elkies-k3/R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-074D9-PROSPECTIVE-CRT-ESCAPE-EXPERIMENT",
+        "EC-K3-R17-074D9-LOCAL-KUMMER-SEPARATION",
+        "EC-K3-ELKIES-2026-RESIDUAL-SELMER-GATE"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_quotient_rank_escape_detector_v2_controls.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:c1ac72179912f1ffa67810d71a24225bbb89e7a581b6620107dc8e8367700b41",
+      "software_lock": [
+        "elkies-k3/scripts/certify_r17_quotient_rank_escape_detector_v2_controls.sage",
+        "elkies-k3/scripts/build_r17_quotient_rank_escape_detector_v2_sample.py",
+        "elliptic-curves/cas/quotient_rank_escape_detector_v2.py",
+        "elliptic-curves/cas/run_elkies_2026_relative_2selmer_checkpointed.py",
+        "elliptic-curves/tests/test_quotient_rank_escape_detector_v2.py",
+        "artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-controls-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-sample-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-unblinding-key-v1.json",
+        "artifacts/generated-results/elliptic-curves/elkies_2026_record_pair_relative_2selmer_inputs_v1.json"
+      ],
+      "supersedes_notes": [
+        "the zero-event bounded point detector is sufficiently sensitive to compare the frozen prospective cohorts"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "artifacts/generated-results/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/cas/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md",
+        "elkies-k3/R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-R17-074D9-RIGID-CROSS-FIBRE-TRANSFER",
       "kind": "theorem",
       "state": "proved",
@@ -41313,7 +41546,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:651b43cdaed9cbed94197d5b7650fe5cfd12c78a3b5f199c79c865eaf6686423",
+      "artifact_hash": "sha256:c720d5983e07b7544dcd025b36669dbb95808af8eb90553f5592488305ec13f7",
       "software_lock": [
         "elkies-k3/scripts/export_r17_074d9_singleton_toric_frobenius_input.sage",
         "elkies-k3/scripts/certify_r17_074d9_twist_good_reduction_bounds.sage",
@@ -41322,10 +41555,12 @@
         "elkies-k3/scripts/certify_r17_074d9_twist_2descent_audit.sage",
         "elkies-k3/scripts/export_r17_074d9_twist_section_ladder_modp.sage",
         "elkies-k3/scripts/run_r17_074d9_twist_section_ladder_msolve.py",
+        "elkies-k3/scripts/certify_r17_074d9_twist_section_ladder_audit.sage",
         "elkies-k3/scripts/certify_r17_074d9_record_twist_mw_contribution.sage",
         "artifacts/generated-results/elkies-k3-r17-074d9-twist-good-reduction-bounds-v1.json",
         "artifacts/generated-results/elkies-k3-r17-074d9-record-twist-sections-v1.json",
         "artifacts/generated-results/elkies-k3-r17-074d9-twist-2descent-audit-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-074d9-twist-section-ladder-audit-v1.json",
         "artifacts/generated-results/elkies-k3-r17-074d9-record-twist-mw-contribution-v1.json"
       ],
       "supersedes_notes": [
@@ -41440,7 +41675,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:4faa6ba1a74d5c6ef5181093e2411774419cc89a211fe6ff7689f910a1eda194",
+      "artifact_hash": "sha256:0e0db72a2c0609a38e910c0b07d2344892cc8392c292e48a190d8c30f7454d03",
       "software_lock": [
         "elkies-k3/scripts/certify_r17_074d9_local_kummer_meet.sage",
         "artifacts/generated-results/elkies-k3-r17-074d9-local-kummer-meet-v1.json",
@@ -41482,7 +41717,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:4faa6ba1a74d5c6ef5181093e2411774419cc89a211fe6ff7689f910a1eda194",
+      "artifact_hash": "sha256:0e0db72a2c0609a38e910c0b07d2344892cc8392c292e48a190d8c30f7454d03",
       "software_lock": [
         "elkies-k3/scripts/certify_r17_074d9_local_kummer_meet.sage",
         "artifacts/generated-results/elkies-k3-r17-074d9-quotient-arithmetic-blocks-v1.json",
@@ -41552,7 +41787,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Arithmetic-first different-NS MW17 with a certified carrier, or integral V4 rank 20",
-      "scope": "EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS remains a bounded non-arithmetic lattice census, and EC-K3-NS0031-MARKED-FORMAL-BRANCH remains a local control only. The determinant-948 noncyclic chain is equation-explicit, so another equation on that surface is not the Lane B milestone. Determinant 720, determinant-950 NS0024, determinant-1184 NS0031, and the split determinant-378 X_0(7) row are arithmetically excluded by EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION, EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, EC-K3-NS0031-QQ-MARKING-OBSTRUCTION, and EC-K3-DET378-QQ-MARKING-OBSTRUCTION. EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY orders all 827 rank-three T rows before NS or rootless work: compute the exact stable marked curve and a rational noncuspidal non-CM point, construct and saturate the rational marking of NS=T^perp, then test rootlessness and compile an equation. Its current 822-row arithmetic queue has no new positive handoff; determinants 256 and 512 are next. Primary completion requires a different-NS characteristic-zero elliptic K3 over QQ with geometric Picard rank 19, nineteen rational divisor classes, a target-free primitive-nef rootless U', seventeen displayed QQ(t)-sections generating the saturated torsion-free MW lattice, and additionally a certified positive-rank low-genus carrier C/QQ with a nonconstant map to P1 and an exact independent pullback section. The stretch completion is a connected V4 carrier with invariant character rank 17 and all three nontrivial character ranks one, together with the exact integral 2-primary graph glue, full height pairing, saturation, and torsion exclusion. EC-K3-INTEGRAL-CHARACTER-GLUE, EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64, EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64, EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION, and EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION provide the current involution, carrier, and product-character boundary. Existing two-character and zero-Tate-class controls do not prove the product-character section. A coarse curve, modular point, finite p-adic or formal lift, rootless-first score, supplied target, unsaturated subgroup, heuristic carrier rank, or equation without the rational rank-19 marking does not close the problem.",
+      "scope": "EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS remains a bounded non-arithmetic lattice census, and EC-K3-NS0031-MARKED-FORMAL-BRANCH remains a local control only. The determinant-948 noncyclic chain is equation-explicit, so another equation on that surface is not the Lane B milestone. Determinants 500, 720, 750, 950, and 1184, together with the split determinant-378 row, are arithmetically excluded by EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS, EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION, EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, EC-K3-NS0031-QQ-MARKING-OBSTRUCTION, and EC-K3-DET378-QQ-MARKING-OBSTRUCTION. EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY orders all 827 rank-three T rows before NS or rootless work: compute the exact stable marked curve and a rational noncuspidal non-CM point, construct and saturate the rational marking of NS=T^perp, then test rootlessness and compile an equation. Its current 820-row arithmetic queue has no new positive handoff; determinants 256 and 512 are the globally earliest unscreened rows, while the rootless subqueue has 60 UNKNOWN rows. Primary completion requires a different-NS characteristic-zero elliptic K3 over QQ with geometric Picard rank 19, nineteen rational divisor classes, a target-free primitive-nef rootless U', seventeen displayed QQ(t)-sections generating the saturated torsion-free MW lattice, and additionally a certified positive-rank low-genus carrier C/QQ with a nonconstant map to P1 and an exact independent pullback section. The stretch completion is a connected V4 carrier with invariant character rank 17 and all three nontrivial character ranks one, together with the exact integral 2-primary graph glue, full height pairing, saturation, and torsion exclusion. EC-K3-INTEGRAL-CHARACTER-GLUE, EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64, EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64, EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION, and EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION provide the current involution, carrier, and product-character boundary. Existing two-character and zero-Tate-class controls do not prove the product-character section. A coarse curve, modular point, finite p-adic or formal lift, rootless-first score, supplied target, unsaturated subgroup, heuristic carrier rank, or equation without the rational rank-19 marking does not close the problem.",
       "canonical_source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION",
@@ -41565,6 +41800,7 @@
         "EC-K3-GOLAY-DET720-PHYSICAL-CORRIDOR",
         "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
         "EC-K3-DET378-QQ-MARKING-OBSTRUCTION",
+        "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS",
         "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
         "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
         "EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA",

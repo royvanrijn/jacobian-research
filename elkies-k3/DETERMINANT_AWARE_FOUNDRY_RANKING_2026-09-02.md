@@ -3,9 +3,10 @@
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 252991e141c42e55 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY d94b3dbddf5cb529 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK b932f409dfffdb55 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6014cc6c7b64d76e -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY ec9b82089d2e9196 -->
+<!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 
 ## Result
 
@@ -32,9 +33,10 @@ The current exact accounting is:
 827 imported surface classes
 761 deferred before scoring
  66 explicit even rootless MW17 witnesses
- 11 in the observed dense determinant band 500--948
-  3 above-band short-vector-quality exceptions
- 52 above-band sparse-pressure rows
+  5 rejected by exact rational-marking obstructions
+  8 retained in the observed dense determinant band 500--948
+  2 retained above-band short-vector-quality exceptions
+ 51 retained above-band sparse-pressure rows
   1 fully ready for expensive equation scoring
 ```
 
@@ -162,28 +164,29 @@ markings over `QQ`, a complete equation-level corridor, and the separate
 Pasten--Salgado non-thin rank-jump theorem recorded in
 [`PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md`](PASTEN_SALGADO_NONTHIN_RANK_JUMPS_2026-08-31.md).
 
-The former first unresolved row, the determinant-720 Golay surface, is now
-arithmetically excluded. Its literal stable marking curve is `X_0(60)`, whose
-rational points are cusps. Its one-parameter formal `Z_7` precursor and exact
-marking-level corridor remain geometric controls only.
+The imported determinant-500 and determinant-750 rootless frames, as well as
+the former determinant-720 lead, are now arithmetically excluded. Their exact
+stable marking curves are `X_H(50)`, `X_H(75)`, and `X_0(60)`, whose rational
+points are cusps. The exact lattices and marking-level corridors remain
+geometric controls only.
 
 The arithmetic pre-screen now has an explicit rejection ledger. Of 827
 catalogue surfaces, 66 pass the exact lattice-theoretic MW17 filters;
-determinant `950`/`NS0024` and determinant `1184`/`NS0031` are then removed by
-their rational-marking obstruction certificates, together with determinant
-`720`, leaving 63 arithmetic candidates. The determinant-948 control remains
+determinants `500`, `720`, and `750`, determinant `950`/`NS0024`, and
+determinant `1184`/`NS0031` are then removed by their rational-marking
+obstruction certificates, leaving 61 arithmetic candidates. The determinant-948 control remains
 the only fully ready row and is outside the different-NS milestone. There is
 therefore no unresolved rootless-frame row authorized for equation work.
 
 The upstream arithmetic-marking classifier types these as one
-`ARITHMETICALLY_POSSIBLE`, three `ARITHMETICALLY_EXCLUDED`, and 62 `UNKNOWN`.
+`ARITHMETICALLY_POSSIBLE`, five `ARITHMETICALLY_EXCLUDED`, and 60 `UNKNOWN`.
 Only the first type can enter expensive equation scoring; the determinant-948
 positive control is already realized, so the new different-NS equation-agent
 handoff is empty.
 
 The operational priority now comes from the global `T`-first planner. It
 orders all 827 transcendental rows before NS/rootless inspection and has an
-822-row arithmetic research queue. The split determinant-378 diagnostic is
+820-row arithmetic research queue. The split determinant-378 diagnostic is
 excluded by its exact stable `X_0(63)` curve. The next exact-coarse diagnostics
 are determinants `256` and `512`; their `X_0(2)` and `X_0(4)` labels do not
 replace the still-missing literal stable-kernel calculations.
@@ -212,6 +215,7 @@ Run:
 
 ```bash
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage
+sage -python elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py
 python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check

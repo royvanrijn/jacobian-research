@@ -8,6 +8,62 @@
   },
   "surfaces": [
     {
+      "surface_id": "K3-04b86146cc6b284b",
+      "arithmetic_field_of_definition": {
+        "tier": 3,
+        "status": "REJECT_QQ_FULL_RATIONAL_DETERMINANT500_MARKING_OBSTRUCTED",
+        "candidate_eligible": false,
+        "evidence": [
+          "artifacts/generated-results/elkies-k3-det500-det750-qq-marking-obstructions-v1.json",
+          "elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md"
+        ]
+      },
+      "source_equation_precursor": {
+        "tier": 3,
+        "status": "NOT_APPLICABLE_ARITHMETIC_MARKING_OBSTRUCTED",
+        "evidence": []
+      },
+      "compiler_corridor": {
+        "tier": 3,
+        "status": "NOT_APPLICABLE_ARITHMETIC_MARKING_OBSTRUCTED",
+        "evidence": []
+      },
+      "rank_jump_mechanism": {
+        "tier": 3,
+        "status": "NOT_APPLICABLE_ARITHMETIC_MARKING_OBSTRUCTED",
+        "evidence": [],
+        "raw_multisection_counts_used": false
+      }
+    },
+    {
+      "surface_id": "K3-10a14a46c14b3150",
+      "arithmetic_field_of_definition": {
+        "tier": 3,
+        "status": "REJECT_QQ_FULL_RATIONAL_DETERMINANT750_MARKING_OBSTRUCTED",
+        "candidate_eligible": false,
+        "evidence": [
+          "artifacts/generated-results/elkies-k3-det500-det750-qq-marking-obstructions-v1.json",
+          "elkies-k3/DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md"
+        ]
+      },
+      "source_equation_precursor": {
+        "tier": 3,
+        "status": "NOT_APPLICABLE_ARITHMETIC_MARKING_OBSTRUCTED",
+        "evidence": []
+      },
+      "compiler_corridor": {
+        "tier": 3,
+        "status": "NOT_APPLICABLE_ARITHMETIC_MARKING_OBSTRUCTED",
+        "evidence": []
+      },
+      "rank_jump_mechanism": {
+        "tier": 3,
+        "status": "NOT_APPLICABLE_ARITHMETIC_MARKING_OBSTRUCTED",
+        "evidence": [],
+        "raw_multisection_counts_used": false
+      }
+    },
+    {
       "surface_id": "K3-8188cdcda8c57b2d",
       "arithmetic_field_of_definition": {
         "tier": 0,

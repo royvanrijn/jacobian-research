@@ -210,7 +210,7 @@ elllocalimage_mapped(nf,pp,K,polrel,curve_theta) =
 
 ell2selmer_basis_gen(ell,bnf,K,curve_theta) =
 {
-  my(A,B,C,polrel,polprime,badideal,badprimes,S,LS2,normspace,selmer,theta_embeddings,real_place,signs,p,pp,locimage,LS2image,allowed,localspaces,localplaces,audit,omitted,standalone,j);
+  my(A,B,C,polrel,polprime,badideal,badprimes,descentprimes,S,LS2,normspace,selmer,theta_embeddings,real_place,signs,p,pp,prank,locimage,LS2image,allowed,localspaces,localplaces,localmeta,audit,omitted,standalone,j,selmerinnorm);
   if(#ell < 13,ell=ellinit(ell));
   if(ell.a1 != 0 || ell.a3 != 0,error("ell2selmer_basis_gen: nonzero a1/a3"));
   A=ell.a2; B=ell.a4; C=ell.a6;
@@ -220,25 +220,33 @@ ell2selmer_basis_gen(ell,bnf,K,curve_theta) =
   S=bnfpSelmer(bnf,badideal,2); LS2=S[1]; S=S[2];
   normspace=kernorm(LS2,vector(#S,i,S[i].p),2);
   selmer=normspace;
-  localspaces=List();localplaces=List();
+  localspaces=List();localplaces=List();localmeta=List();
   if(bnf.r1==3,
     theta_embeddings=nfeltembed(bnf.nf,curve_theta);real_place=1;
     for(i=2,#theta_embeddings,if(theta_embeddings[i]<theta_embeddings[real_place],real_place=i));
     signs=vector(#LS2,i,nfeltsign(bnf.nf,LS2[i],real_place)<0);
     allowed=matker(Mat(signs*Mod(1,2)))*Mod(1,2);
-    listput(localspaces,allowed);listput(localplaces,-1);
-    selmer=matintersect(selmer,allowed)*Mod(1,2));
-  badprimes=factorint(badideal[1,1]*2)[,1];
+    listput(localspaces,allowed);listput(localplaces,-1);listput(localmeta,[1,1,matrank(Mat(signs*Mod(1,2)))]);
+    selmer=matintersect(selmer,allowed)*Mod(1,2)
+  ,
+    allowed=matid(#LS2)*Mod(1,2);
+    listput(localspaces,allowed);listput(localplaces,-1);listput(localmeta,[0,0,0])
+  );
+  /* Detector v2 records every bad rational prime, even when Simon's
+     smaller S-support makes that local condition redundant. */
+  descentprimes=factorint(badideal[1,1]*2)[,1];
+  badprimes=factorint(badideal[1,1]*2*numerator(ell.disc))[,1];
   for(i=1,#badprimes,
     p=badprimes[i];
     print("ELKIESR17CHECKREL2|stage=local_condition|status=start|prime=",p);
     pp=ppinit(bnf.nf,p);
+    prank=#pp-(p!=2);
     locimage=elllocalimage_mapped(bnf.nf,pp,K,polrel,curve_theta);
     LS2image=LS2localimage(bnf.nf,LS2,pp);
     locimage=matintersect(LS2image,locimage);
     allowed=concat(matker(LS2image),matinverseimage(LS2image,locimage)*Mod(1,2));
     allowed=matimage(allowed*Mod(1,2));
-    listput(localspaces,allowed);listput(localplaces,p);
+    listput(localspaces,allowed);listput(localplaces,p);listput(localmeta,[prank,#locimage,#LS2image]);
     selmer=matintersect(selmer,allowed);
     selmer=matimage(selmer*Mod(1,2));
     print("ELKIESR17CHECKREL2|stage=local_condition|status=complete|prime=",p,"|dimension=",#selmer);
@@ -250,7 +258,8 @@ ell2selmer_basis_gen(ell,bnf,K,curve_theta) =
     standalone=matintersect(normspace,localspaces[i])*Mod(1,2);
     listput(audit,[localplaces[i],#localspaces[i],#standalone,#omitted,#normspace-#omitted]);
   );
-  return([LS2,lift(selmer),badprimes,Vec(audit),#LS2,#normspace,#normspace-#selmer,Vec(localspaces),Vec(localplaces),lift(normspace)]);
+  selmerinnorm=matinverseimage(normspace,selmer)*Mod(1,2);
+  return([LS2,lift(selmer),badprimes,Vec(audit),#LS2,#normspace,#normspace-#selmer,Vec(localspaces),Vec(localplaces),lift(normspace),Vec(localmeta),lift(selmerinnorm),descentprimes]);
 };
 '''
 
@@ -261,7 +270,7 @@ from pathlib import Path
 import sys
 import time
 
-from sage.all import PolynomialRing, QQ, ZZ, pari
+from sage.all import EllipticCurve, PolynomialRing, QQ, ZZ, pari
 from sage.env import SAGE_EXTCODE
 from sage.misc.randstate import set_random_seed
 
@@ -293,6 +302,17 @@ pari(f"DEBUGLEVEL_ell={int(payload['simon_verbose'])}; LIMBIGPRIME=0; LIM1=0; LI
 for definition in SIMON_FUNCTION.split("/* ELKIES_R17_GP_DEFINITION_SPLIT */"):
     pari(definition)
 curve = pari.ellinit([QQ(value) for value in meta["transformed_model"]])
+global_curve = EllipticCurve(QQ, [QQ(value) for value in meta["global_minimal_model"]])
+elliptic_bad_local_data = {}
+for data in global_curve.local_data():
+    prime = int(data.prime().gens()[0])
+    elliptic_bad_local_data[str(prime)] = {
+        "kodaira_symbol": str(data.kodaira_symbol()),
+        "tamagawa_number": int(data.tamagawa_number()),
+        "conductor_exponent": int(data.conductor_valuation()),
+        "minimal_discriminant_valuation": int(data.discriminant_valuation()),
+    }
+elliptic_bad_primes = sorted(int(value) for value in elliptic_bad_local_data)
 curve_theta = pari(meta["curve_theta_in_field"])
 stage("selmer_basis", "start")
 started = time.monotonic()
@@ -306,13 +326,24 @@ full_local_condition_matrix_rank = int(raw[6])
 local_allowed_subspaces = raw[7]
 local_places = raw[8]
 normspace = raw[9]
+local_metadata = raw[10]
+selmer_in_normspace = raw[11]
+descent_support_primes = [int(value) for value in raw[12]]
+finite_local_condition_primes = [int(value) for value in bad_primes]
+auxiliary_descent_primes = sorted(
+    set(descent_support_primes) - set(elliptic_bad_primes) - {2}
+)
 dimension = len(matrix)
 stage("selmer_basis", "complete", seconds=f"{elapsed:.6f}", dimension=dimension)
 
 def binary_basis_columns(value):
     return [[int(entry) for entry in column] for column in value]
 
-if len(local_audit) != len(local_allowed_subspaces) or len(local_audit) != len(local_places):
+if (
+    len(local_audit) != len(local_allowed_subspaces)
+    or len(local_audit) != len(local_places)
+    or len(local_audit) != len(local_metadata)
+):
     raise ArithmeticError("local-condition audit vectors have inconsistent lengths")
 
 curve_f = pari(meta["cubic"])
@@ -399,12 +430,18 @@ result = {
     "curve_theta_in_field": meta["curve_theta_in_field"],
     "cubic_coefficients_ascending": meta["cubic_coefficients_ascending"],
     "two_selmer_dimension": dimension,
-    "bad_rational_primes": [str(value) for value in bad_primes],
+    "bad_rational_primes": [str(value) for value in elliptic_bad_primes],
+    "descent_support_rational_primes": [str(value) for value in descent_support_primes],
+    "auxiliary_descent_primes": [str(value) for value in auxiliary_descent_primes],
+    "finite_local_condition_primes": [
+        str(value) for value in finite_local_condition_primes
+    ],
     "local_condition_matrix": {
         "ambient": "the global norm-square subspace of the S-squareclass group",
         "global_s_squareclass_dimension": global_squareclass_dimension,
         "global_norm_square_subspace_dimension": norm_kernel_dimension,
         "global_norm_square_subspace_basis_columns_in_s_squareclasses": binary_basis_columns(normspace),
+        "selmer_basis_columns_in_global_norm_square_subspace": binary_basis_columns(selmer_in_normspace),
         "global_norm_condition_rank": global_squareclass_dimension - norm_kernel_dimension,
         "full_finite_and_archimedean_matrix_rank_on_norm_subspace": full_local_condition_matrix_rank,
         "rank_nullity_verified": (
@@ -424,6 +461,22 @@ result = {
                 "matrix_rank_after_deleting_this_place": int(row[4]),
                 "rank_drop_from_full_matrix": (
                     full_local_condition_matrix_rank - int(row[4])
+                ),
+                "ambient_local_kummer_dimension": int(local_metadata[index][0]),
+                "computed_local_kummer_image_dimension": int(local_metadata[index][1]),
+                "localized_global_s_squareclass_image_dimension": int(local_metadata[index][2]),
+                "elliptic_bad_place": (
+                    int(row[0]) != -1
+                    and str(int(row[0])) in elliptic_bad_local_data
+                ),
+                "auxiliary_descent_place": (
+                    int(row[0]) != -1
+                    and int(row[0]) in auxiliary_descent_primes
+                ),
+                "component_group_data": (
+                    None
+                    if int(row[0]) == -1
+                    else elliptic_bad_local_data.get(str(int(row[0])))
                 ),
             }
             for index, row in enumerate(local_audit)

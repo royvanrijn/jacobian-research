@@ -1,0 +1,1504 @@
+{
+  "schema": "elkies-k3.surface-fibration-character-graph.v1",
+  "graph_id": "surface-graph:K3-8188cdcda8c57b2d:v1",
+  "status": "PASS_EXACT_SURFACE_FIBRATION_GRAPH_WITH_PARTIAL_PERIOD_AND_CHARACTER_DESCENT",
+  "sources": [
+    {
+      "id": "src:arithmetic-classifier",
+      "path": "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json",
+      "sha256": "e1656aaf4d9e2a423b88575ec9427e152bbeaad4874b7cc2d185ef20a99a6f4e"
+    },
+    {
+      "id": "src:published-r17-endpoint",
+      "path": "artifacts/generated-results/elkies-k3-h3-q12o5867-endpoint-certificate.json",
+      "sha256": "368227ab6af3c59bc305ea7b6a8e5c6c288a3f78fb2be18bbde43e1428670a05"
+    },
+    {
+      "id": "src:arithmetic-rank-transfer",
+      "path": "artifacts/generated-results/elkies-k3-arithmetic-rank-transfer-controls-v1.json",
+      "sha256": "900aa811cfb8347210dcb9f0b723284b7490849f2044fb6b531a008c63b65e09"
+    },
+    {
+      "id": "src:alternate-11952",
+      "path": "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+      "sha256": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66"
+    },
+    {
+      "id": "src:hidden-103b2",
+      "path": "artifacts/generated-results/elkies-k3-r17-norm12-orbit103b2-direct-fibration-v1.json",
+      "sha256": "3f676dd0ce76da7f3092b073519b11af964c6982bfbc7262057d0f5c66234b9f"
+    },
+    {
+      "id": "src:noncyclic-4a1",
+      "path": "artifacts/generated-results/elkies-k3-r17-noncyclic-4a1-direct-fibration-v1.json",
+      "sha256": "c8f259c90aae27f33a0f39dc544da541d3c7db5af5002c008d2d46871dbbd32c"
+    },
+    {
+      "id": "src:character-103b2",
+      "path": "artifacts/generated-results/elkies-k3-r17-norm12-103b2-mw-glue-v1.json",
+      "sha256": "2c7bb540adae80354e79495c5de9912f280a0f1140516c1e45028a326c7f3cfb"
+    },
+    {
+      "id": "src:same-curve-panel",
+      "path": "artifacts/generated-results/elkies-k3-r17-same-curve-marked-u-panel-v1.json",
+      "sha256": "bab7869c2c44331a3093996e3166a37d02099096bf888836a061479cb68e2441"
+    },
+    {
+      "id": "src:integral-glue-note",
+      "path": "elkies-k3/INTEGRAL_RANK_TRANSFER_GLUE_CALCULUS_2026-09-02.md",
+      "sha256": "9dc0be76e7cd90389b45f090a6d9ef521a06eecb991c917b3bc3419d2f72e1c6"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "field:QQ",
+      "kind": "field",
+      "label": "QQ",
+      "status": "DEFINITIONAL",
+      "data": {
+        "role": "constant base field"
+      },
+      "evidence": []
+    },
+    {
+      "id": "field:QQ(t_r17)",
+      "kind": "field",
+      "label": "QQ(t_r17)",
+      "status": "DEFINITIONAL",
+      "data": {
+        "role": "base function field of published R17",
+        "transcendence_degree_over_QQ": 1
+      },
+      "evidence": []
+    },
+    {
+      "id": "field:QQ(t_q80_11952)",
+      "kind": "field",
+      "label": "QQ(t_q80_11952)",
+      "status": "DEFINITIONAL",
+      "data": {
+        "role": "base function field of alternate Q80 orbit 11952",
+        "transcendence_degree_over_QQ": 1
+      },
+      "evidence": []
+    },
+    {
+      "id": "field:QQ(t_hidden_103b2)",
+      "kind": "field",
+      "label": "QQ(t_hidden_103b2)",
+      "status": "DEFINITIONAL",
+      "data": {
+        "role": "base function field of the hidden 103b2 fibration",
+        "transcendence_degree_over_QQ": 1
+      },
+      "evidence": []
+    },
+    {
+      "id": "field:QQ(t_4a1)",
+      "kind": "field",
+      "label": "QQ(t_4a1)",
+      "status": "DEFINITIONAL",
+      "data": {
+        "role": "base function field of the noncyclic 4A1/MW13 fibration",
+        "transcendence_degree_over_QQ": 1
+      },
+      "evidence": []
+    },
+    {
+      "id": "field:QQ(X_det948)",
+      "kind": "field",
+      "label": "QQ(X_det948)",
+      "status": "DEFINITIONAL",
+      "data": {
+        "role": "function field of the determinant-948 K3",
+        "transcendence_degree_over_QQ": 2
+      },
+      "evidence": []
+    },
+    {
+      "id": "field:QQ(t_r17)(sqrt(q_103b2))",
+      "kind": "field",
+      "label": "QQ(t_r17)(sqrt(q_103b2))",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "degree_over_base_function_field": 2,
+        "role": "carrier function field"
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2",
+          "assertions": [
+            {
+              "pointer": "/tuple/G/order",
+              "equals": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "surface:K3-8188cdcda8c57b2d",
+      "kind": "surface",
+      "label": "determinant-948 marked arithmetic K3",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "arithmetic_classification": "ARITHMETICALLY_POSSIBLE",
+        "base_field_id": "field:QQ",
+        "geometric_picard_rank": 19,
+        "surface_id": "K3-8188cdcda8c57b2d"
+      },
+      "evidence": [
+        {
+          "source_id": "src:arithmetic-classifier",
+          "assertions": [
+            {
+              "pointer": "/candidates/10/surface_id",
+              "equals": "K3-8188cdcda8c57b2d"
+            },
+            {
+              "pointer": "/candidates/10/classification",
+              "equals": "ARITHMETICALLY_POSSIBLE"
+            }
+          ]
+        },
+        {
+          "source_id": "src:published-r17-endpoint",
+          "assertions": [
+            {
+              "pointer": "/picard_rank/geometric_picard_rank_characteristic_zero",
+              "equals": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lattice:T:K3-8188cdcda8c57b2d",
+      "kind": "transcendental_lattice",
+      "label": "T of determinant-948 K3",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "determinant": -948,
+        "discriminant_group_invariants": [
+          948
+        ],
+        "gram": [
+          [-2, 0, 1],
+          [0, 4, 0],
+          [1, 0, 118]
+        ],
+        "rank": 3,
+        "signature": [
+          2,
+          1
+        ]
+      },
+      "evidence": [
+        {
+          "source_id": "src:arithmetic-classifier",
+          "assertions": [
+            {
+              "pointer": "/candidates/10/transcendental_lattice/gram",
+              "equals": [
+                [-2, 0, 1],
+                [0, 4, 0],
+                [1, 0, 118]
+              ]
+            },
+            {
+              "pointer": "/candidates/10/transcendental_lattice/determinant",
+              "equals": -948
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lattice:NS:K3-8188cdcda8c57b2d",
+      "kind": "neron_severi_lattice",
+      "label": "NS of determinant-948 K3",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "determinant": 948,
+        "discriminant_form_relation": "A_NS is isomorphic to A_T(-1)",
+        "discriminant_group_invariants": [
+          948
+        ],
+        "normalized_primary_form": "diag(7/4,4/3,2/79) in Q/2Z",
+        "rank": 19,
+        "signature": [
+          1,
+          18
+        ],
+        "two_primary": {
+          "group": "Z/4",
+          "generator_value_mod_2Z": "7/4"
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "src:arithmetic-classifier",
+          "assertions": [
+            {
+              "pointer": "/candidates/10/ns_lattice/discriminant_group_invariants",
+              "equals": [
+                948
+              ]
+            },
+            {
+              "pointer": "/candidates/10/ns_lattice/rank",
+              "equals": 19
+            }
+          ]
+        },
+        {
+          "source_id": "src:integral-glue-note"
+        }
+      ]
+    },
+    {
+      "id": "order:Cliff:K3-8188cdcda8c57b2d",
+      "kind": "clifford_order",
+      "label": "integral even Clifford order of T",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "basis": [
+          "1",
+          "e0*e1",
+          "e0*e2",
+          "e1*e2"
+        ],
+        "finite_ramified_primes": [
+          2,
+          3
+        ],
+        "hilbert_symbol": [
+          "2",
+          "237/4"
+        ],
+        "local_level_index": 79,
+        "quaternion_discriminant": 6,
+        "reduced_discriminant": 474,
+        "reduced_trace_pairing": [
+          [2, 0, 1, 0],
+          [0, 4, 0, 2],
+          [1, 0, 119, 0],
+          [0, 2, 0, -236]
+        ]
+      },
+      "evidence": [
+        {
+          "source_id": "src:arithmetic-classifier",
+          "assertions": [
+            {
+              "pointer": "/candidates/10/even_clifford_algebra_and_order/quaternion_discriminant",
+              "equals": 6
+            },
+            {
+              "pointer": "/candidates/10/even_clifford_algebra_and_order/integral_even_clifford_order/reduced_discriminant",
+              "equals": 474
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "group:GammaStar:K3-8188cdcda8c57b2d",
+      "kind": "marking_group",
+      "label": "stable orthogonal discriminant kernel",
+      "status": "CERTIFIED_PARTIAL",
+      "data": {
+        "abstract_group": "O+(T)^* = kernel(O+(T) -> O(A_T))",
+        "explicit_generators": null,
+        "explicit_stable_curve_model": null,
+        "known_boundary": "abstract group and rational lift are known; an independent explicit stable-cover model is not"
+      },
+      "evidence": [
+        {
+          "source_id": "src:arithmetic-classifier",
+          "assertions": [
+            {
+              "pointer": "/candidates/10/full_discriminant_marking_curve/abstract_group",
+              "equals": "O^+(T)^* = kernel(O^+(T) -> O(A_T))"
+            },
+            {
+              "pointer": "/candidates/10/full_discriminant_marking_curve/explicit_model",
+              "equals": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "period:K3-8188cdcda8c57b2d",
+      "kind": "period_point",
+      "label": "marked rational period point of determinant-948 K3",
+      "status": "CERTIFIED_PARTIAL",
+      "data": {
+        "coarse_quotient": "X_0^6(79)/<w_474>",
+        "coarse_quotient_coordinates": "(t,u)=(14/13,64*251/13^3)",
+        "full_stable_curve_point": "certified existentially by the full rational marking",
+        "full_stable_curve_coordinates": null,
+        "non_CM": true
+      },
+      "evidence": [
+        {
+          "source_id": "src:arithmetic-classifier",
+          "assertions": [
+            {
+              "pointer": "/candidates/10/full_discriminant_marking_curve/status",
+              "equals": "PARTIAL_ABSTRACT_STABLE_ORTHOGONAL_CURVE_WITH_EXPLICIT_QQ_POINT"
+            },
+            {
+              "pointer": "/candidates/10/arithmetic_tests/0/status",
+              "equals": "PASS_EXACT_NONCM_QQ_POINT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fibration:det948:published-r17",
+      "kind": "fibration",
+      "label": "published R17",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "arithmetic_mw_rank": 17,
+        "base_field_id": "field:QQ",
+        "base_function_field_id": "field:QQ(t_r17)",
+        "frame_class": "published-R17",
+        "geometric_mw_rank": 17,
+        "marked_u": "source U in the pinned NS basis",
+        "root_lattice": "rootless",
+        "root_rank": 0,
+        "saturated_mw": true,
+        "torsion": "trivial"
+      },
+      "evidence": [
+        {
+          "source_id": "src:published-r17-endpoint",
+          "assertions": [
+            {
+              "pointer": "/mordell_weil/full_geometric_mordell_weil_rank",
+              "equals": 17
+            },
+            {
+              "pointer": "/mordell_weil/saturated",
+              "equals": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frame:det948:published-r17",
+      "kind": "frame_lattice",
+      "label": "published R17 rootless frame",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "determinant": 948,
+        "frame_class": "published-R17",
+        "minimum": 4,
+        "rank": 17,
+        "root_rank": 0
+      },
+      "evidence": [
+        {
+          "source_id": "src:published-r17-endpoint",
+          "assertions": [
+            {
+              "pointer": "/mordell_weil/full_geometric_mordell_weil_determinant",
+              "equals": 948
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fibration:det948:alternate-q80-11952",
+      "kind": "fibration",
+      "label": "alternate Q80 norm12-orbit-11952",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "arithmetic_mw_rank": 17,
+        "base_field_id": "field:QQ",
+        "base_function_field_id": "field:QQ(t_q80_11952)",
+        "frame_class": "alternate-Q80",
+        "geometric_mw_rank": 17,
+        "marked_u": "transport rows in direct-fibration certificate",
+        "root_lattice": "rootless",
+        "root_rank": 0,
+        "saturated_mw": true
+      },
+      "evidence": [
+        {
+          "source_id": "src:alternate-11952",
+          "assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS"
+            },
+            {
+              "pointer": "/frame_certificate/isometric_to_alternate_Q80",
+              "equals": true
+            }
+          ]
+        },
+        {
+          "source_id": "src:arithmetic-rank-transfer",
+          "assertions": [
+            {
+              "pointer": "/alternate_q80_application/conclusion/arithmetic_mordell_weil_rank",
+              "equals": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frame:det948:alternate-q80",
+      "kind": "frame_lattice",
+      "label": "alternate Q80 rootless frame",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "determinant": 948,
+        "frame_class": "alternate-Q80",
+        "frame_gram_sha256": "5be6ae59aa87881c87d819de0e1600898698e47e67a828d9471e864a1cbdb3d9",
+        "rank": 17,
+        "root_rank": 0
+      },
+      "evidence": [
+        {
+          "source_id": "src:alternate-11952",
+          "assertions": [
+            {
+              "pointer": "/frame_certificate/determinant",
+              "equals": 948
+            },
+            {
+              "pointer": "/frame_certificate/roots_of_norm_two",
+              "equals": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fibration:det948:hidden-103b2",
+      "kind": "fibration",
+      "label": "hidden norm12-orbit-103b2 fibration",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "base_field_id": "field:QQ",
+        "base_function_field_id": "field:QQ(t_hidden_103b2)",
+        "frame_class": "published-R17",
+        "geometric_mw_rank": 17,
+        "marked_u": "transport rows in direct-fibration certificate",
+        "root_lattice": "rootless",
+        "root_rank": 0,
+        "saturated_mw": true
+      },
+      "evidence": [
+        {
+          "source_id": "src:hidden-103b2",
+          "assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_SECTIONS"
+            },
+            {
+              "pointer": "/frame_certificate/isometric_to_published_R17",
+              "equals": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frame:det948:hidden-103b2",
+      "kind": "frame_lattice",
+      "label": "hidden 103b2 rootless frame",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "determinant": 948,
+        "frame_class": "published-R17",
+        "frame_gram_sha256": "a25c103c1778f9383269fced26c430bcb8757cd42ef633300f6cd001e047697f",
+        "rank": 17,
+        "root_rank": 0
+      },
+      "evidence": [
+        {
+          "source_id": "src:hidden-103b2",
+          "assertions": [
+            {
+              "pointer": "/frame_certificate/determinant",
+              "equals": 948
+            },
+            {
+              "pointer": "/frame_certificate/roots_of_norm_two",
+              "equals": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fibration:det948:noncyclic-4a1-mw13",
+      "kind": "fibration",
+      "label": "noncyclic 4A1/MW13",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "arithmetic_mw_rank": 13,
+        "base_field_id": "field:QQ",
+        "base_function_field_id": "field:QQ(t_4a1)",
+        "frame_class": "noncyclic-4A1-MW13",
+        "geometric_mw_rank": 13,
+        "marked_u": "literal target_U_in_U_plus_pinned_R17",
+        "root_lattice": "4A1",
+        "root_rank": 4,
+        "saturated_mw": true,
+        "torsion": "trivial"
+      },
+      "evidence": [
+        {
+          "source_id": "src:noncyclic-4a1",
+          "assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS_EXACT_NEW_NONCYCLIC_4A1_EQUATION_REVERSE_HOP_AND_MW13"
+            },
+            {
+              "pointer": "/mordell_weil/arithmetic_rank",
+              "equals": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frame:det948:noncyclic-4a1-mw13",
+      "kind": "frame_lattice",
+      "label": "noncyclic 4A1 frame",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "determinant": 948,
+        "frame_class": "noncyclic-4A1-MW13",
+        "rank": 17,
+        "root_lattice": "4A1",
+        "root_rank": 4,
+        "root_span_saturation_index": 1
+      },
+      "evidence": [
+        {
+          "source_id": "src:noncyclic-4a1",
+          "assertions": [
+            {
+              "pointer": "/frame_certificate/determinant",
+              "equals": 948
+            },
+            {
+              "pointer": "/frame_certificate/root_span_saturation_index",
+              "equals": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "character:base:published-r17:103b2",
+      "kind": "character",
+      "label": "103b2 quadratic base character on published R17",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "ambient_field_id": "field:QQ(t_r17)",
+        "branch_polynomial_degree": 4,
+        "character_group": "C2",
+        "normalized_square_class": {
+          "primitive_coefficients_low_to_high": [
+            17005267967107473,
+            -5393571474961890,
+            -88223393949768143,
+            63427547377764064,
+            52558159476080896
+          ]
+        },
+        "order": 2
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2",
+          "assertions": [
+            {
+              "pointer": "/local_component_data/branch_polynomial_degree",
+              "equals": 4
+            },
+            {
+              "pointer": "/tuple/G/structure",
+              "equals": "C2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "character:surface:det948:from-published-r17-103b2",
+      "kind": "character",
+      "label": "surface-field pullback of published-R17 103b2 character",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "ambient_field_id": "field:QQ(X_det948)",
+        "origin_base_character_id": "character:base:published-r17:103b2",
+        "role": "identity key for cross-fibration descent comparisons"
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2",
+          "assertions": [
+            {
+              "pointer": "/parameter_specialization/new_direction_cover",
+              "equals": "norm12-orbit-103b2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carrier:published-r17:103b2",
+      "kind": "carrier",
+      "label": "genus-one 103b2 quadratic carrier",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "base_fibration_id": "fibration:det948:published-r17",
+        "branch_points": "four simple conjugate points on smooth source fibres",
+        "character_id": "character:base:published-r17:103b2",
+        "deck_group": "C2",
+        "genus": 1,
+        "model": "z^2=q_103b2(t_r17)"
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2",
+          "assertions": [
+            {
+              "pointer": "/local_component_data/branch_points",
+              "equals": "four simple conjugate points on smooth source fibres"
+            },
+            {
+              "pointer": "/local_component_data/branch_avoids_24I1_discriminant",
+              "equals": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "surface-cover:det948:published-r17-103b2",
+      "kind": "surface_cover",
+      "label": "normalization of determinant-948 K3 after 103b2 base change",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "cover_degree": 2,
+        "deck_group": "C2",
+        "not_identified_with_original_surface": true,
+        "source_surface_id": "surface:K3-8188cdcda8c57b2d"
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2",
+          "assertions": [
+            {
+              "pointer": "/tuple/G/order",
+              "equals": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fibration:det948:published-r17@cover-103b2",
+      "kind": "fibration",
+      "label": "published R17 pulled back to the 103b2 cover",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "ambient_surface_cover_id": "surface-cover:det948:published-r17-103b2",
+        "base_function_field_id": "field:QQ(t_r17)(sqrt(q_103b2))",
+        "invariant_mw_block": "R17(2)",
+        "visible_anti_invariant_rank": 1,
+        "visible_integral_graph_order": 2,
+        "visible_mw_rank": 18,
+        "visible_saturation_scope": "complete only in the exhibited invariant plus anti-invariant rational span"
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2",
+          "assertions": [
+            {
+              "pointer": "/saturated_visible_MW_lattice/rank",
+              "equals": 18
+            },
+            {
+              "pointer": "/bridge_position/cover_level_integral_bridge/glue_graph_order",
+              "equals": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mw-block:cover-103b2:anti",
+      "kind": "mw_block",
+      "label": "visible anti-invariant 103b2 MW line",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "character": "nontrivial C2 character",
+        "gram": [
+          [16]
+        ],
+        "rank": 1,
+        "scope": "visible anti-invariant line; total anti-invariant rank is not bounded above"
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2",
+          "assertions": [
+            {
+              "pointer": "/bridge_position/cover_level_integral_bridge/character_sum",
+              "equals": "R17(2) direct_sum <16>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "divisor:cover-103b2:anti-trace-T",
+      "kind": "divisor",
+      "label": "anti-invariant trace section T=R-R'",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "character": "nontrivial C2 character",
+        "field_of_definition_id": "field:QQ(t_r17)(sqrt(q_103b2))",
+        "height": 16,
+        "identity": "T=R-R'"
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2",
+          "assertions": [
+            {
+              "pointer": "/tuple/L_chi/1/character",
+              "equals": "-"
+            },
+            {
+              "pointer": "/tuple/L_chi/1/gram",
+              "equals": [
+                [
+                  16
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "utility:K3-8188cdcda8c57b2d:v1",
+      "kind": "utility_profile",
+      "label": "determinant-948 future-utility profile v1",
+      "status": "CERTIFIED_PARTIAL",
+      "data": {
+        "admission": "ARITHMETICALLY_POSSIBLE",
+        "certified_cross_fibration_character_descents": 0,
+        "certified_rootless_fibrations_lower_bound": 3,
+        "certified_rootless_frame_isometry_classes_lower_bound": 2,
+        "certified_same_surface_fibrations_lower_bound": 4,
+        "certified_surface_carriers_lower_bound": 1,
+        "certified_undirected_hop_edges_lower_bound": 3,
+        "discriminant_two_primary": {
+          "group": "Z/4",
+          "generator_value_mod_2Z": "7/4"
+        },
+        "missing": [
+          "complete primitive-nef U-class count",
+          "complete surface-character descent intersections across fibration bases",
+          "complete low-index character list",
+          "complete V4 glue possibilities",
+          "calibrated numerical ranking functional"
+        ],
+        "ranking_role": "diagnostic after arithmetic admission only"
+      },
+      "evidence": [
+        {
+          "source_id": "src:arithmetic-classifier",
+          "assertions": [
+            {
+              "pointer": "/candidates/10/classification",
+              "equals": "ARITHMETICALLY_POSSIBLE"
+            }
+          ]
+        },
+        {
+          "source_id": "src:same-curve-panel",
+          "assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS_EXACT_SAME_CURVE_DIFFERENT_MARKED_U_PANEL"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:surface-base-field",
+      "relation": "HAS_BASE_FIELD",
+      "source": "surface:K3-8188cdcda8c57b2d",
+      "target": "field:QQ",
+      "status": "DEFINITIONAL",
+      "data": {},
+      "evidence": []
+    },
+    {
+      "id": "edge:QQ-to-r17-base",
+      "relation": "SUBFIELD_OF",
+      "source": "field:QQ",
+      "target": "field:QQ(t_r17)",
+      "status": "DEFINITIONAL",
+      "data": {},
+      "evidence": []
+    },
+    {
+      "id": "edge:QQ-to-q80-11952-base",
+      "relation": "SUBFIELD_OF",
+      "source": "field:QQ",
+      "target": "field:QQ(t_q80_11952)",
+      "status": "DEFINITIONAL",
+      "data": {},
+      "evidence": []
+    },
+    {
+      "id": "edge:QQ-to-hidden-103b2-base",
+      "relation": "SUBFIELD_OF",
+      "source": "field:QQ",
+      "target": "field:QQ(t_hidden_103b2)",
+      "status": "DEFINITIONAL",
+      "data": {},
+      "evidence": []
+    },
+    {
+      "id": "edge:QQ-to-4a1-base",
+      "relation": "SUBFIELD_OF",
+      "source": "field:QQ",
+      "target": "field:QQ(t_4a1)",
+      "status": "DEFINITIONAL",
+      "data": {},
+      "evidence": []
+    },
+    {
+      "id": "edge:r17-base-to-surface-field",
+      "relation": "SUBFIELD_OF",
+      "source": "field:QQ(t_r17)",
+      "target": "field:QQ(X_det948)",
+      "status": "DEFINITIONAL",
+      "data": {
+        "map": "pullback along the published-R17 fibration"
+      },
+      "evidence": []
+    },
+    {
+      "id": "edge:q80-11952-base-to-surface-field",
+      "relation": "SUBFIELD_OF",
+      "source": "field:QQ(t_q80_11952)",
+      "target": "field:QQ(X_det948)",
+      "status": "DEFINITIONAL",
+      "data": {
+        "map": "pullback along the alternate-Q80 fibration"
+      },
+      "evidence": []
+    },
+    {
+      "id": "edge:hidden-103b2-base-to-surface-field",
+      "relation": "SUBFIELD_OF",
+      "source": "field:QQ(t_hidden_103b2)",
+      "target": "field:QQ(X_det948)",
+      "status": "DEFINITIONAL",
+      "data": {
+        "map": "pullback along the hidden-103b2 fibration"
+      },
+      "evidence": []
+    },
+    {
+      "id": "edge:4a1-base-to-surface-field",
+      "relation": "SUBFIELD_OF",
+      "source": "field:QQ(t_4a1)",
+      "target": "field:QQ(X_det948)",
+      "status": "DEFINITIONAL",
+      "data": {
+        "map": "pullback along the noncyclic 4A1/MW13 fibration"
+      },
+      "evidence": []
+    },
+    {
+      "id": "edge:r17-base-to-carrier-field",
+      "relation": "SUBFIELD_OF",
+      "source": "field:QQ(t_r17)",
+      "target": "field:QQ(t_r17)(sqrt(q_103b2))",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "degree": 2
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2",
+          "assertions": [
+            {
+              "pointer": "/tuple/G/order",
+              "equals": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "edge:surface-has-T",
+      "relation": "HAS_TRANSCENDENTAL",
+      "source": "surface:K3-8188cdcda8c57b2d",
+      "target": "lattice:T:K3-8188cdcda8c57b2d",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:arithmetic-classifier"
+        }
+      ]
+    },
+    {
+      "id": "edge:surface-has-NS",
+      "relation": "HAS_NERON_SEVERI",
+      "source": "surface:K3-8188cdcda8c57b2d",
+      "target": "lattice:NS:K3-8188cdcda8c57b2d",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:arithmetic-classifier"
+        }
+      ]
+    },
+    {
+      "id": "edge:surface-has-order",
+      "relation": "HAS_CLIFFORD_ORDER",
+      "source": "surface:K3-8188cdcda8c57b2d",
+      "target": "order:Cliff:K3-8188cdcda8c57b2d",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:arithmetic-classifier"
+        }
+      ]
+    },
+    {
+      "id": "edge:surface-has-marking-group",
+      "relation": "HAS_STABLE_MARKING_GROUP",
+      "source": "surface:K3-8188cdcda8c57b2d",
+      "target": "group:GammaStar:K3-8188cdcda8c57b2d",
+      "status": "CERTIFIED_PARTIAL",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:arithmetic-classifier"
+        }
+      ]
+    },
+    {
+      "id": "edge:surface-has-period",
+      "relation": "HAS_PERIOD_POINT",
+      "source": "surface:K3-8188cdcda8c57b2d",
+      "target": "period:K3-8188cdcda8c57b2d",
+      "status": "CERTIFIED_PARTIAL",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:arithmetic-classifier"
+        }
+      ]
+    },
+    {
+      "id": "edge:surface-has-utility",
+      "relation": "HAS_UTILITY_PROFILE",
+      "source": "surface:K3-8188cdcda8c57b2d",
+      "target": "utility:K3-8188cdcda8c57b2d:v1",
+      "status": "CERTIFIED_PARTIAL",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:arithmetic-classifier"
+        }
+      ]
+    },
+    {
+      "id": "edge:surface-has-published-r17",
+      "relation": "HAS_FIBRATION",
+      "source": "surface:K3-8188cdcda8c57b2d",
+      "target": "fibration:det948:published-r17",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:published-r17-endpoint"
+        }
+      ]
+    },
+    {
+      "id": "edge:surface-has-alternate-q80",
+      "relation": "HAS_FIBRATION",
+      "source": "surface:K3-8188cdcda8c57b2d",
+      "target": "fibration:det948:alternate-q80-11952",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:alternate-11952"
+        }
+      ]
+    },
+    {
+      "id": "edge:surface-has-hidden-103b2",
+      "relation": "HAS_FIBRATION",
+      "source": "surface:K3-8188cdcda8c57b2d",
+      "target": "fibration:det948:hidden-103b2",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:hidden-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:surface-has-noncyclic-4a1",
+      "relation": "HAS_FIBRATION",
+      "source": "surface:K3-8188cdcda8c57b2d",
+      "target": "fibration:det948:noncyclic-4a1-mw13",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:noncyclic-4a1"
+        }
+      ]
+    },
+    {
+      "id": "edge:published-r17-frame",
+      "relation": "HAS_FRAME",
+      "source": "fibration:det948:published-r17",
+      "target": "frame:det948:published-r17",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:published-r17-endpoint"
+        }
+      ]
+    },
+    {
+      "id": "edge:alternate-q80-frame",
+      "relation": "HAS_FRAME",
+      "source": "fibration:det948:alternate-q80-11952",
+      "target": "frame:det948:alternate-q80",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:alternate-11952"
+        }
+      ]
+    },
+    {
+      "id": "edge:hidden-103b2-frame",
+      "relation": "HAS_FRAME",
+      "source": "fibration:det948:hidden-103b2",
+      "target": "frame:det948:hidden-103b2",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:hidden-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:noncyclic-4a1-frame",
+      "relation": "HAS_FRAME",
+      "source": "fibration:det948:noncyclic-4a1-mw13",
+      "target": "frame:det948:noncyclic-4a1-mw13",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:noncyclic-4a1"
+        }
+      ]
+    },
+    {
+      "id": "edge:published-r17-base",
+      "relation": "HAS_BASE_FUNCTION_FIELD",
+      "source": "fibration:det948:published-r17",
+      "target": "field:QQ(t_r17)",
+      "status": "DEFINITIONAL",
+      "data": {},
+      "evidence": []
+    },
+    {
+      "id": "edge:alternate-q80-base",
+      "relation": "HAS_BASE_FUNCTION_FIELD",
+      "source": "fibration:det948:alternate-q80-11952",
+      "target": "field:QQ(t_q80_11952)",
+      "status": "DEFINITIONAL",
+      "data": {},
+      "evidence": []
+    },
+    {
+      "id": "edge:hidden-103b2-base",
+      "relation": "HAS_BASE_FUNCTION_FIELD",
+      "source": "fibration:det948:hidden-103b2",
+      "target": "field:QQ(t_hidden_103b2)",
+      "status": "DEFINITIONAL",
+      "data": {},
+      "evidence": []
+    },
+    {
+      "id": "edge:noncyclic-4a1-base",
+      "relation": "HAS_BASE_FUNCTION_FIELD",
+      "source": "fibration:det948:noncyclic-4a1-mw13",
+      "target": "field:QQ(t_4a1)",
+      "status": "DEFINITIONAL",
+      "data": {},
+      "evidence": []
+    },
+    {
+      "id": "edge:hop-published-to-alternate",
+      "relation": "HOP_TO",
+      "source": "fibration:det948:published-r17",
+      "target": "fibration:det948:alternate-q80-11952",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "degree": 2,
+        "transport_determinant": -1
+      },
+      "evidence": [
+        {
+          "source_id": "src:alternate-11952",
+          "assertions": [
+            {
+              "pointer": "/frame_certificate/transport_determinant",
+              "equals": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "edge:hop-published-to-hidden-103b2",
+      "relation": "HOP_TO",
+      "source": "fibration:det948:published-r17",
+      "target": "fibration:det948:hidden-103b2",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "degree": 2,
+        "transport_determinant": -1
+      },
+      "evidence": [
+        {
+          "source_id": "src:hidden-103b2",
+          "assertions": [
+            {
+              "pointer": "/frame_certificate/transport_determinant",
+              "equals": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "edge:hop-published-to-noncyclic-4a1",
+      "relation": "HOP_TO",
+      "source": "fibration:det948:published-r17",
+      "target": "fibration:det948:noncyclic-4a1-mw13",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "degree": 2,
+        "direction": "forward"
+      },
+      "evidence": [
+        {
+          "source_id": "src:noncyclic-4a1",
+          "assertions": [
+            {
+              "pointer": "/route/forward",
+              "equals": "published R17 equation -> new 4A1/MW13 equation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "edge:hop-noncyclic-4a1-to-published",
+      "relation": "HOP_TO",
+      "source": "fibration:det948:noncyclic-4a1-mw13",
+      "target": "fibration:det948:published-r17",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "degree": 2,
+        "direction": "target-free reverse"
+      },
+      "evidence": [
+        {
+          "source_id": "src:noncyclic-4a1",
+          "assertions": [
+            {
+              "pointer": "/route/reverse_target_frame_supplied",
+              "equals": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "edge:base-character-field",
+      "relation": "HAS_AMBIENT_FIELD",
+      "source": "character:base:published-r17:103b2",
+      "target": "field:QQ(t_r17)",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:surface-character-field",
+      "relation": "HAS_AMBIENT_FIELD",
+      "source": "character:surface:det948:from-published-r17-103b2",
+      "target": "field:QQ(X_det948)",
+      "status": "DEFINITIONAL",
+      "data": {},
+      "evidence": []
+    },
+    {
+      "id": "edge:character-pullback-103b2",
+      "relation": "PULLS_BACK_TO",
+      "source": "character:base:published-r17:103b2",
+      "target": "character:surface:det948:from-published-r17-103b2",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "along_field_embedding": "field:QQ(t_r17) -> field:QQ(X_det948)"
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:published-supports-carrier-103b2",
+      "relation": "SUPPORTS_CARRIER",
+      "source": "fibration:det948:published-r17",
+      "target": "carrier:published-r17:103b2",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:carrier-defines-character-103b2",
+      "relation": "DEFINES_CHARACTER",
+      "source": "carrier:published-r17:103b2",
+      "target": "character:base:published-r17:103b2",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:carrier-base-changes-surface",
+      "relation": "BASE_CHANGES_TO",
+      "source": "carrier:published-r17:103b2",
+      "target": "surface-cover:det948:published-r17-103b2",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "operation": "normalize X times_{P1_r17} C"
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:cover-covers-surface",
+      "relation": "COVERS_SURFACE",
+      "source": "surface-cover:det948:published-r17-103b2",
+      "target": "surface:K3-8188cdcda8c57b2d",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "degree": 2
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:cover-has-pullback-fibration",
+      "relation": "HAS_FIBRATION",
+      "source": "surface-cover:det948:published-r17-103b2",
+      "target": "fibration:det948:published-r17@cover-103b2",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:published-base-changes-to-103b2",
+      "relation": "BASE_CHANGES_TO",
+      "source": "fibration:det948:published-r17",
+      "target": "fibration:det948:published-r17@cover-103b2",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "carrier_id": "carrier:published-r17:103b2"
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:pullback-fibration-has-anti-block",
+      "relation": "HAS_MW_BLOCK",
+      "source": "fibration:det948:published-r17@cover-103b2",
+      "target": "mw-block:cover-103b2:anti",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:pullback-fibration-base",
+      "relation": "HAS_BASE_FUNCTION_FIELD",
+      "source": "fibration:det948:published-r17@cover-103b2",
+      "target": "field:QQ(t_r17)(sqrt(q_103b2))",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:anti-block-eigenspace",
+      "relation": "EIGENSPACE_FOR",
+      "source": "mw-block:cover-103b2:anti",
+      "target": "character:base:published-r17:103b2",
+      "status": "CERTIFIED_EXACT",
+      "data": {
+        "integral_scope": "visible line before possible extra anti-invariant directions"
+      },
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:anti-block-represented-by-T",
+      "relation": "REPRESENTED_BY",
+      "source": "mw-block:cover-103b2:anti",
+      "target": "divisor:cover-103b2:anti-trace-T",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:T-presented-by-pullback-r17",
+      "relation": "PRESENTED_BY",
+      "source": "divisor:cover-103b2:anti-trace-T",
+      "target": "fibration:det948:published-r17@cover-103b2",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:T-defined-over-carrier-field",
+      "relation": "DEFINED_OVER",
+      "source": "divisor:cover-103b2:anti-trace-T",
+      "target": "field:QQ(t_r17)(sqrt(q_103b2))",
+      "status": "CERTIFIED_EXACT",
+      "data": {},
+      "evidence": [
+        {
+          "source_id": "src:character-103b2"
+        }
+      ]
+    },
+    {
+      "id": "edge:descent-103b2-to-alternate-q80",
+      "relation": "DESCENDS_TO_BASE",
+      "source": "character:surface:det948:from-published-r17-103b2",
+      "target": "fibration:det948:alternate-q80-11952",
+      "status": "UNKNOWN",
+      "data": {
+        "next_gate": "find a class in the alternate-Q80 base field with the same pullback in QQ(X)^*/QQ(X)^{*2}"
+      },
+      "evidence": []
+    },
+    {
+      "id": "edge:descent-103b2-to-hidden-103b2",
+      "relation": "DESCENDS_TO_BASE",
+      "source": "character:surface:det948:from-published-r17-103b2",
+      "target": "fibration:det948:hidden-103b2",
+      "status": "UNKNOWN",
+      "data": {
+        "warning": "the shared 103b2 label is not a transport certificate"
+      },
+      "evidence": []
+    },
+    {
+      "id": "edge:descent-103b2-to-noncyclic-4a1",
+      "relation": "DESCENDS_TO_BASE",
+      "source": "character:surface:det948:from-published-r17-103b2",
+      "target": "fibration:det948:noncyclic-4a1-mw13",
+      "status": "UNKNOWN",
+      "data": {
+        "next_gate": "test descent to the 4A1 base and then express the anti-invariant divisor in the pulled-back 4A1 marking"
+      },
+      "evidence": []
+    }
+  ],
+  "claim_boundary": "The graph registers exact existing same-surface fibrations and one exact published-R17 quadratic carrier. It does not prove that the 103b2 surface character descends to any other fibration base, does not identify the full stable period curve, and does not bound the complete anti-invariant Mordell-Weil rank of the cover."
+}

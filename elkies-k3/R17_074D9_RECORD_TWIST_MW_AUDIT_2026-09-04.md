@@ -161,8 +161,10 @@ not closed.  No new characteristic-zero section is promoted.
 - `artifacts/generated-results/elkies-k3-r17-074d9-twist-good-reduction-bounds-v1.json`
 - `artifacts/generated-results/elkies-k3-r17-074d9-record-twist-sections-v1.json`
 - `artifacts/generated-results/elkies-k3-r17-074d9-twist-2descent-audit-v1.json`
+- `artifacts/generated-results/elkies-k3-r17-074d9-twist-section-ladder-audit-v1.json`
 - `artifacts/generated-results/elkies-k3-r17-074d9-record-twist-mw-contribution-v1.json`
 
-The first, second, and fourth certificates prove the negative quotient tests.
+The good-reduction, exact-section, and combined certificates prove the
+negative quotient tests.
 The descent and section-ladder records preserve the unresolved exact-rank
 boundary rather than inferring ranks from bounded searches.

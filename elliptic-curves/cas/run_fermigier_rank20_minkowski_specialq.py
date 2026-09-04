@@ -20,6 +20,7 @@ from collections import defaultdict, deque
 from hashlib import sha256
 import json
 from itertools import product
+from math import gcd
 from pathlib import Path
 import time
 
@@ -46,6 +47,120 @@ def insert_row(pivots, row):
             return True
         row ^= previous
     return False
+
+
+def _refine_parts(parts, divisor):
+    """Split a list of exact integer factors by one known common divisor."""
+
+    refined = []
+    changed = False
+    for part in parts:
+        common = gcd(part, divisor)
+        if 1 < common < part:
+            refined.extend((common, part // common))
+            changed = True
+        else:
+            refined.append(part)
+    return refined, changed
+
+
+def product_tree_shared_divisors(values):
+    """Return gcd(n_i, product_{j != i} n_j) using a remainder tree.
+
+    At the leaves, ``P mod n_i^2`` is divisible by ``n_i`` and its quotient
+    modulo ``n_i`` equals the product of all other inputs.  The calculation
+    therefore avoids the quadratic all-pairs GCD pass.
+    """
+
+    values = [int(value) for value in values]
+    if any(value < 1 for value in values):
+        raise ValueError("batch-GCD inputs must be positive")
+    if len(values) < 2:
+        return [1 for _ in values]
+    tree = [values]
+    while len(tree[-1]) > 1:
+        level = tree[-1]
+        tree.append(
+            [
+                level[index]
+                * (level[index + 1] if index + 1 < len(level) else 1)
+                for index in range(0, len(level), 2)
+            ]
+        )
+    remainders = [tree[-1][0]]
+    for level in reversed(tree[:-1]):
+        remainders = [
+            remainders[index // 2] % (value * value)
+            for index, value in enumerate(level)
+        ]
+    return [
+        gcd(value, remainder // value)
+        for value, remainder in zip(values, remainders)
+    ]
+
+
+def split_shared_cofactors(values, engine="product-tree", needs_refinement=None):
+    """Split cofactors only by factors proved to divide another cofactor."""
+
+    values = [int(value) for value in values]
+    parts = [[value] for value in values]
+    proper_hits = 0
+    pairwise_comparisons = 0
+    ambiguous = []
+    composite_aggregate = []
+    proper_shared = {}
+    if engine == "pairwise":
+        for left, left_value in enumerate(values):
+            for right in range(left):
+                pairwise_comparisons += 1
+                common = gcd(left_value, values[right])
+                if common == 1:
+                    continue
+                changed = False
+                for index in (left, right):
+                    parts[index], local_changed = _refine_parts(parts[index], common)
+                    changed = changed or local_changed
+                if changed:
+                    proper_hits += 1
+    elif engine == "product-tree":
+        shared = product_tree_shared_divisors(values)
+        for index, (value, common) in enumerate(zip(values, shared)):
+            if 1 < common < value:
+                parts[index], changed = _refine_parts(parts[index], common)
+                proper_hits += int(changed)
+                if changed:
+                    proper_shared[index] = common
+            elif common == value:
+                # Different factors of n_i may occur in different other
+                # cofactors.  Only these ambiguous records need a pairwise
+                # fallback to separate those factors.
+                ambiguous.append(index)
+        if needs_refinement is not None:
+            composite_aggregate = [
+                index
+                for index, common in proper_shared.items()
+                if index not in ambiguous
+                and needs_refinement(common)
+            ]
+        for index in sorted(set(ambiguous + composite_aggregate)):
+            for other, other_value in enumerate(values):
+                if other == index:
+                    continue
+                pairwise_comparisons += 1
+                common = gcd(values[index], other_value)
+                if common == 1:
+                    continue
+                parts[index], changed = _refine_parts(parts[index], common)
+                proper_hits += int(changed)
+    else:
+        raise ValueError("unknown batch-GCD engine")
+    return parts, {
+        "engine": engine,
+        "proper_gcd_hit_count": proper_hits,
+        "ambiguous_full_shared_cofactor_count": len(ambiguous),
+        "composite_aggregate_fallback_count": len(composite_aggregate),
+        "pairwise_fallback_comparison_count": pairwise_comparisons,
+    }
 
 
 def main() -> None:
@@ -81,6 +196,12 @@ def main() -> None:
     parser.add_argument("--special-q-min", type=int, default=262524)
     parser.add_argument("--special-q-max", type=int, default=320000)
     parser.add_argument("--max-special-q", type=int, default=10)
+    parser.add_argument(
+        "--max-special-ideals-per-rational-prime",
+        type=int,
+        default=0,
+        help="zero keeps all eligible ideals; a positive value caps each rational q",
+    )
     parser.add_argument("--seed-specials", default="")
     parser.add_argument(
         "--special-residue-degree",
@@ -152,6 +273,32 @@ def main() -> None:
     parser.add_argument("--trial-prime-bound", type=int, default=10000)
     parser.add_argument("--residual-factor-limit", type=int, default=1 << 40)
     parser.add_argument("--large-prime-bound", type=int, default=1 << 70)
+    parser.add_argument(
+        "--retain-unresolved-cofactors",
+        action="store_true",
+        help=(
+            "store post-trial-division cofactors that exceed the large-prime "
+            "bound, for a later batch-GCD pass"
+        ),
+    )
+    parser.add_argument(
+        "--batch-gcd-unresolved-cofactors",
+        action="store_true",
+        help=(
+            "after lattice collection, split shared composite cofactors by "
+            "pairwise GCD and add only completely prime-proved resolutions"
+        ),
+    )
+    parser.add_argument(
+        "--batch-gcd-engine",
+        choices=("product-tree", "pairwise"),
+        default="product-tree",
+        help=(
+            "product-tree computes all shared divisors quasi-linearly and "
+            "uses pairwise GCD only for fully shared or composite aggregate "
+            "common factors"
+        ),
+    )
     parser.add_argument("--lll-scale", type=int, default=10**30)
     parser.add_argument("--lattice-combination-bound", type=int, default=2)
     parser.add_argument(
@@ -169,10 +316,19 @@ def main() -> None:
         raise ValueError("factor-base and trial-prime bounds must be at least 2")
     if args.lattice_combination_bound < 1:
         raise ValueError("--lattice-combination-bound must be positive")
+    if args.max_special_ideals_per_rational_prime < 0:
+        raise ValueError("--max-special-ideals-per-rational-prime must be nonnegative")
     if args.max_residual_primes < 1:
         raise ValueError("--max-residual-primes must be positive")
     if args.special_ideal_mode == "cycle-pairs" and args.pair_cycle_length < 3:
         raise ValueError("--pair-cycle-length must be at least three in cycle-pairs mode")
+    if (
+        args.batch_gcd_unresolved_cofactors
+        and args.large_prime_merge_mode != "sparse-hypergraph"
+    ):
+        raise ValueError(
+            "--batch-gcd-unresolved-cofactors requires sparse-hypergraph merging"
+        )
     if args.special_residue_degree == 2 and args.seed_specials:
         raise ValueError("--seed-specials is only defined for degree-one special ideals")
     if args.curve273 and args.elkies_rank28:
@@ -340,7 +496,12 @@ def main() -> None:
             for prime in field.primes_above(rational_prime)
             if hnf_key(prime) in factor_base_by_hnf
         ]
-    trial_primes = [p for p in rational_factor_base if p <= args.trial_prime_bound]
+    # Trial division beyond the factor-base bound is intentional: those
+    # factors become large-prime vertices rather than factor-base columns.
+    # The former code accidentally truncated this list at the factor-base
+    # bound, starving the collision graph even when a larger trial bound was
+    # explicitly requested.
+    trial_primes = [ZZ(p) for p in prime_range(2, args.trial_prime_bound + 1)]
 
     real_field = RealField(256)
     complex_field = ComplexField(256)
@@ -410,6 +571,8 @@ def main() -> None:
                 for prime in field.primes_above(rational_prime)
                 if int(prime.residue_class_degree()) == 2
             ]
+        if args.max_special_ideals_per_rational_prime:
+            identifiers = identifiers[: args.max_special_ideals_per_rational_prime]
         for identifier in identifiers:
             pair = (rational_prime, identifier)
             if pair in seen_specials:
@@ -475,6 +638,11 @@ def main() -> None:
         return int(rational_prime), hnf_key(matches[0])
 
     generators = []
+    # Preserve every exact sparse edge, including forest edges that do not
+    # close inside this run.  Those are the indispensable inputs for merging
+    # independent special-q ledgers: a cycle can use edges collected in
+    # different runs even when neither run contains a dependency by itself.
+    partial_relations = []
     closed_relations = []
     pivots = {}
     # Quotient the collector's progress metric by the free principal rows
@@ -499,6 +667,7 @@ def main() -> None:
     total_candidates = 0
     total_cycles = 0
     total_partial = 0
+    unresolved_cofactors = []
     started = time.monotonic()
 
     def after_s_dimension():
@@ -551,17 +720,30 @@ def main() -> None:
         return path ^ row, provenance
 
     def coordinate_key(alpha):
-        """Identify the unavoidable associate pair alpha and -alpha.
+        """Primitive projective coordinates modulo nonzero rational scaling.
 
-        Their principal ideals and valuation rows are identical. Keeping both
-        makes the large-prime graph close immediately on ``-alpha^2``, an
-        explicit global square that cannot improve a mod-two class quotient.
+        Rational multiples differ only by a canonical principal row ``(q)``.
+        Treating them as distinct made the large-prime graph report many
+        two-edge cycles that vanished immediately modulo those rows.
         """
 
-        coordinates = tuple(str(QQ(value)) for value in alpha.list())
-        negative = tuple(str(-QQ(value)) for value in alpha.list())
-        return min(coordinates, negative)
+        coordinates = [QQ(value) for value in alpha.list()]
+        common_denominator = ZZ(1)
+        for value in coordinates:
+            common_denominator = common_denominator.lcm(value.denominator())
+        integral = [ZZ(value * common_denominator) for value in coordinates]
+        content = ZZ(0)
+        for value in integral:
+            content = content.gcd(abs(value))
+        if not content:
+            raise ArithmeticError("the zero element has no projective key")
+        primitive = [value // content for value in integral]
+        first_nonzero = next(value for value in primitive if value)
+        if first_nonzero < 0:
+            primitive = [-value for value in primitive]
+        return tuple(str(value) for value in primitive)
 
+    seen_projective_alphas = set()
     for special_index, members in enumerate(special_targets, 1):
         special_ideal = field.ideal(1)
         for _, _, prime_q in members:
@@ -612,7 +794,14 @@ def main() -> None:
                     (original[index] * ideal_basis[index] for index in range(3)), field(0)
                 )
                 if alpha:
-                    samples.setdefault(coordinate_key(alpha), (alpha, (u, v), tuple(int(item) for item in combination)))
+                    key = coordinate_key(alpha)
+                    if key not in seen_projective_alphas:
+                        samples[key] = (
+                            alpha,
+                            (u, v),
+                            tuple(int(item) for item in combination),
+                        )
+                        seen_projective_alphas.add(key)
 
         before_rank = len(pivots)
         before_after_s = after_s_dimension()
@@ -643,12 +832,13 @@ def main() -> None:
                         cofactor //= q
             used = []
             residual_primes = None
+            hybrid_residual_primes = []
             if args.norm_factor_mode == "exact":
                 residual_primes = []
                 for rational_prime, exponent in factor(cofactor):
                     rational_prime = ZZ(rational_prime)
                     exponent = ZZ(exponent)
-                    if rational_prime <= args.factor_base_bound:
+                    if rational_prime in by_rational_prime:
                         used.append(rational_prime)
                     elif int(exponent) & 1:
                         residual_primes.append(rational_prime)
@@ -657,25 +847,32 @@ def main() -> None:
                 for rational_prime in trial_primes:
                     if cofactor % rational_prime:
                         continue
-                    used.append(rational_prime)
+                    exponent = 0
                     while cofactor % rational_prime == 0:
                         cofactor //= rational_prime
+                        exponent += 1
+                    if rational_prime in by_rational_prime:
+                        used.append(rational_prime)
+                    elif exponent & 1:
+                        hybrid_residual_primes.append(rational_prime)
                     if cofactor == 1:
                         break
                 if cofactor != 1 and cofactor <= args.residual_factor_limit:
-                    residual = ZZ(1)
                     for rational_prime, exponent in factor(cofactor):
                         rational_prime = ZZ(rational_prime)
-                        if rational_prime <= args.factor_base_bound:
+                        if rational_prime in by_rational_prime:
                             used.append(rational_prime)
-                        else:
-                            residual *= rational_prime**ZZ(exponent)
-                    cofactor = residual
+                        elif int(exponent) & 1:
+                            hybrid_residual_primes.append(rational_prime)
+                    cofactor = ZZ(1)
+                if cofactor == 1:
+                    residual_primes = hybrid_residual_primes
             row = exact_row(alpha, used)
             generator_index = len(generators)
             generators.append(
                 {
-                    "power_basis": list(coordinate_key(alpha)),
+                    "power_basis": [str(QQ(value)) for value in alpha.list()],
+                    "primitive_projective_power_basis": list(coordinate_key(alpha)),
                     "source_special_ideals": [
                         [int(q), str(identifier)] for q, identifier, _ in members
                     ],
@@ -706,16 +903,72 @@ def main() -> None:
                     continue
                 vertices.extend(residual_signatures)
             elif cofactor != 1:
-                if cofactor > args.large_prime_bound:
+                residual_primes = list(hybrid_residual_primes)
+                if cofactor.is_pseudoprime():
+                    if cofactor > args.large_prime_bound:
+                        if (
+                            args.retain_unresolved_cofactors
+                            or args.batch_gcd_unresolved_cofactors
+                        ):
+                            unresolved_cofactors.append(
+                                {
+                                    "generator_index": generator_index,
+                                    "cofactor": str(cofactor),
+                                    "cofactor_bit_length": int(cofactor.nbits()),
+                                    "known_odd_residual_primes": [
+                                        str(prime)
+                                        for prime in hybrid_residual_primes
+                                    ],
+                                    "reason": "prime_above_large_prime_bound",
+                                }
+                            )
+                        continue
+                    if not cofactor.is_prime():
+                        raise ArithmeticError(
+                            "a probable-prime cofactor failed proved primality"
+                        )
+                    residual_primes.append(cofactor)
+                elif cofactor <= args.residual_factor_limit:
+                    for rational_prime, exponent in factor(cofactor):
+                        rational_prime = ZZ(rational_prime)
+                        if rational_prime in by_rational_prime:
+                            used.append(rational_prime)
+                        elif int(exponent) & 1:
+                            residual_primes.append(rational_prime)
+                else:
+                    if (
+                        args.retain_unresolved_cofactors
+                        or args.batch_gcd_unresolved_cofactors
+                    ):
+                        unresolved_cofactors.append(
+                            {
+                                "generator_index": generator_index,
+                                "cofactor": str(cofactor),
+                                "cofactor_bit_length": int(cofactor.nbits()),
+                                "known_odd_residual_primes": [
+                                    str(prime) for prime in hybrid_residual_primes
+                                ],
+                                "reason": "composite_above_bounded_factor_limit",
+                            }
+                        )
                     continue
-                residual_factorization = list(factor(cofactor))
-                if len(residual_factorization) != 1:
+                if len(residual_primes) > args.max_residual_primes:
                     continue
-                residual_rational_prime = ZZ(residual_factorization[0][0])
-                signature = residual_prime_signature(alpha, residual_rational_prime)
-                if signature is None:
+                residual_signatures = []
+                for residual_rational_prime in residual_primes:
+                    signature = residual_prime_signature(alpha, residual_rational_prime)
+                    if signature is None:
+                        residual_signatures = []
+                        break
+                    residual_signatures.append(signature)
+                if len(residual_signatures) != len(residual_primes):
                     continue
-                vertices.append(signature)
+                vertices.extend(residual_signatures)
+            # The bounded remainder factorization above may have discovered a
+            # declared S/factor-base rational prime after the provisional row
+            # was formed. Recompute from exact ideal valuations before any
+            # collision or rank update.
+            row = exact_row(alpha, used)
             if len(vertices) == 0:
                 if args.large_prime_merge_mode == "sparse-hypergraph":
                     cycle, provenance = sparse_large_primes.add(
@@ -725,6 +978,14 @@ def main() -> None:
                     cycle, provenance = row, {generator_index}
             elif args.large_prime_merge_mode == "sparse-hypergraph":
                 total_partial += 1
+                partial_relations.append(
+                    {
+                        "fb_parity_mask_hex": hex(row),
+                        "generator_index": generator_index,
+                        "large_prime_vertices": [list(vertex) for vertex in vertices],
+                        "source": "minkowski_ideal_lattice",
+                    }
+                )
                 cycle, provenance = sparse_large_primes.add(
                     vertices, row, generator_index
                 )
@@ -763,16 +1024,165 @@ def main() -> None:
             flush=True,
         )
 
+    batch_gcd_resolution = {
+        "enabled": args.batch_gcd_unresolved_cofactors,
+        "engine": args.batch_gcd_engine,
+        "input_cofactor_count": len(unresolved_cofactors),
+        "proper_gcd_hit_count": 0,
+        "completely_resolved_count": 0,
+        "exact_partial_edge_count": 0,
+        "closed_cycle_count": 0,
+        "quotient_rank_gain": 0,
+        "ambiguous_full_shared_cofactor_count": 0,
+        "composite_aggregate_fallback_count": 0,
+        "pairwise_fallback_comparison_count": 0,
+        "resolved_records": [],
+    }
+    if args.batch_gcd_unresolved_cofactors and unresolved_cofactors:
+        batch_started = time.monotonic()
+        cofactors = [int(record["cofactor"]) for record in unresolved_cofactors]
+        parts, gcd_statistics = split_shared_cofactors(
+            cofactors,
+            engine=args.batch_gcd_engine,
+            needs_refinement=lambda part: not ZZ(part).is_pseudoprime(),
+        )
+        batch_gcd_resolution.update(gcd_statistics)
+
+        rank_before_batch = len(quotient_pivots)
+        for unresolved_index, (record, factor_parts) in enumerate(
+            zip(unresolved_cofactors, parts)
+        ):
+            if len(factor_parts) < 2:
+                continue
+            multiplicities = {}
+            for part in factor_parts:
+                multiplicities[part] = multiplicities.get(part, 0) + 1
+            distinct_parts = [ZZ(part) for part in sorted(multiplicities)]
+            if not all(part.is_pseudoprime() for part in distinct_parts):
+                continue
+            if not all(part.is_prime() for part in distinct_parts):
+                raise ArithmeticError(
+                    "a batch-GCD probable-prime factor failed proved primality"
+                )
+            product_check = ZZ(1)
+            for part, exponent in multiplicities.items():
+                product_check *= ZZ(part) ** exponent
+            if product_check != ZZ(record["cofactor"]):
+                raise ArithmeticError("batch-GCD factors do not reconstruct the cofactor")
+
+            residual_primes = [
+                ZZ(value) for value in record["known_odd_residual_primes"]
+            ]
+            residual_primes.extend(
+                ZZ(part)
+                for part, exponent in multiplicities.items()
+                if exponent & 1
+            )
+            if (
+                len(residual_primes) > args.max_residual_primes
+                or any(prime > args.large_prime_bound for prime in residual_primes)
+            ):
+                continue
+            generator_index = int(record["generator_index"])
+            generator = generators[generator_index]
+            coordinates = [QQ(value) for value in generator["power_basis"]]
+            alpha = sum(
+                coordinates[index] * theta**index
+                for index in range(len(coordinates))
+            )
+            residual_signatures = []
+            for rational_prime in residual_primes:
+                signature = residual_prime_signature(alpha, rational_prime)
+                if signature is None:
+                    residual_signatures = []
+                    break
+                residual_signatures.append(signature)
+            if len(residual_signatures) != len(residual_primes):
+                continue
+
+            vertices = []
+            if not args.special_primes_in_factor_base:
+                for rational_prime, identifier in generator["source_special_ideals"]:
+                    identifier = (
+                        ZZ(identifier)
+                        if args.special_residue_degree == 1
+                        else identifier
+                    )
+                    prime_q = special_prime(ZZ(rational_prime), identifier)
+                    if prime_q is None:
+                        raise ArithmeticError("a stored special ideal no longer resolves")
+                    if int(alpha.valuation(prime_q)) & 1:
+                        vertices.append((int(rational_prime), hnf_key(prime_q)))
+            vertices.extend(residual_signatures)
+            row = exact_row(alpha, by_rational_prime)
+            total_partial += 1
+            partial_relations.append(
+                {
+                    "fb_parity_mask_hex": hex(row),
+                    "generator_index": generator_index,
+                    "large_prime_vertices": [list(vertex) for vertex in vertices],
+                    "source": "minkowski_batch_gcd",
+                    "unresolved_cofactor_index": unresolved_index,
+                }
+            )
+            cycle, provenance = sparse_large_primes.add(
+                vertices, row, generator_index
+            )
+            batch_gcd_resolution["completely_resolved_count"] += 1
+            batch_gcd_resolution["exact_partial_edge_count"] += 1
+            resolved_record = {
+                "unresolved_cofactor_index": unresolved_index,
+                "generator_index": generator_index,
+                "proved_rational_prime_factors": [
+                    {"prime": str(part), "exponent": multiplicities[int(part)]}
+                    for part in distinct_parts
+                ],
+                "large_prime_vertices": [list(vertex) for vertex in vertices],
+            }
+            if cycle is not None:
+                total_cycles += 1
+                batch_gcd_resolution["closed_cycle_count"] += 1
+                resolved_record["closed_cycle_fb_parity_mask_hex"] = hex(cycle)
+                closed_relations.append(
+                    {
+                        "fb_parity_mask_hex": hex(cycle),
+                        "generator_indices": sorted(provenance),
+                        "kind": "unit_dependency" if cycle == 0 else "minkowski_lp_cycle",
+                        "source": "minkowski_batch_gcd",
+                    }
+                )
+                insert_row(pivots, cycle)
+                insert_row(quotient_pivots, cycle)
+            batch_gcd_resolution["resolved_records"].append(resolved_record)
+        batch_gcd_resolution["quotient_rank_gain"] = (
+            len(quotient_pivots) - rank_before_batch
+        )
+        batch_gcd_resolution["elapsed_seconds"] = time.monotonic() - batch_started
+        print(
+            f"{PROTOCOL}|stage=batch_gcd|inputs={len(unresolved_cofactors)}"
+            f"|proper_hits={batch_gcd_resolution['proper_gcd_hit_count']}"
+            f"|resolved={batch_gcd_resolution['completely_resolved_count']}"
+            f"|cycles={batch_gcd_resolution['closed_cycle_count']}"
+            f"|quotient_rank_gain={batch_gcd_resolution['quotient_rank_gain']}"
+            f"|seconds={batch_gcd_resolution['elapsed_seconds']:.3f}",
+            flush=True,
+        )
+
     ledger = {
         "schema": "elliptic-curves.bnf-free-principal-relation-ledger.v1",
         "status": "exact_minkowski_ideal_relations_not_class_group_completion",
         "special_ideal_mode": args.special_ideal_mode,
         "special_residue_degree": args.special_residue_degree,
+        "max_special_ideals_per_rational_prime": (
+            args.max_special_ideals_per_rational_prime
+        ),
         "special_primes_in_factor_base": args.special_primes_in_factor_base,
         "allow_rational_special_multiples": args.allow_rational_special_multiples,
         "large_prime_merge_mode": args.large_prime_merge_mode,
         "norm_factor_mode": args.norm_factor_mode,
         "max_residual_primes": args.max_residual_primes,
+        "retain_unresolved_cofactors": args.retain_unresolved_cofactors,
+        "batch_gcd_resolution": batch_gcd_resolution,
         "large_prime_elimination": {
             "vertex_count": len(sparse_large_primes.vertex_columns),
             "edge_count": sparse_large_primes.edge_count,
@@ -821,7 +1231,9 @@ def main() -> None:
             ),
         },
         "generators": generators,
+        "partial_relations": partial_relations,
         "closed_relations": closed_relations,
+        "unresolved_cofactors": unresolved_cofactors,
     }
     args.relation_ledger.parent.mkdir(parents=True, exist_ok=True)
     args.relation_ledger.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")

@@ -1,0 +1,113 @@
+{
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-cheapest-1024-v1.json": "6d58c129e0309c63e0b8421837192f2b0e18f6ac331b5608d74c1288566be7fa",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "elkies-k3/scripts/audit_r17_norm12_11952_product_twist_finite_field_bounds.sage": "7c41d6aca5cdb25e10f8317df76db6f93a10324846accddad7cf0371558584bd",
+    "elkies-k3/scripts/audit_r17_singleton_twist_finite_field_bounds.sage": "ed11f58d907d0beea32a5422e8b8db101f5d134d67965a818c7a038217855ee7"
+  },
+  "labels": [
+    "alternate-orbit-0fda0",
+    "alternate-orbit-1037d"
+  ],
+  "method": "Exact vectorized quadratic-character sums over P1(F_p) and P1(F_p^2); independent of ToricControlledReduction",
+  "primes": [
+    131,
+    137,
+    151,
+    157
+  ],
+  "schema": "elkies-k3.r17-singleton-twist-finite-field-bound-audit.v1",
+  "status": "PASS_INDEPENDENT_FIBREWISE_N1_N2_MOMENTS",
+  "targets": [
+    {
+      "label": "alternate-orbit-0fda0",
+      "reductions": [
+        {
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -30,
+            -1872
+          ],
+          "fp2_finite_local_character_sums_sha256": "ffc4915bae1cfc49ffae654adc510c2e62de8358316270c8570b010dd1d2c269",
+          "fp2_nonsquare": 2,
+          "good_reduction": true,
+          "prime": 131
+        },
+        {
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            158,
+            29628
+          ],
+          "fp2_finite_local_character_sums_sha256": "9ba8a1808c34a4d95ef6344f02d3dee776ab85a3b268a7a52a01d27ea2332cb9",
+          "fp2_nonsquare": 3,
+          "good_reduction": true,
+          "prime": 137
+        },
+        {
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -64,
+            -42236
+          ],
+          "fp2_finite_local_character_sums_sha256": "111896c3d8daaf0b57cc69c7d938ad2a22c370e348ce7f1382b16d21f4368a3d",
+          "fp2_nonsquare": 3,
+          "good_reduction": true,
+          "prime": 151
+        },
+        {
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            8,
+            87090
+          ],
+          "fp2_finite_local_character_sums_sha256": "2c9d4ee169bf4f6c46d58cf9d830ddcfbaf79b8e3e56df35f386ea4c08e83db2",
+          "fp2_nonsquare": 2,
+          "good_reduction": true,
+          "prime": 157
+        }
+      ]
+    },
+    {
+      "label": "alternate-orbit-1037d",
+      "reductions": [
+        {
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            133,
+            93041
+          ],
+          "fp2_finite_local_character_sums_sha256": "ffc4915bae1cfc49ffae654adc510c2e62de8358316270c8570b010dd1d2c269",
+          "fp2_nonsquare": 2,
+          "good_reduction": true,
+          "prime": 131
+        },
+        {
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            75,
+            26389
+          ],
+          "fp2_finite_local_character_sums_sha256": "9ba8a1808c34a4d95ef6344f02d3dee776ab85a3b268a7a52a01d27ea2332cb9",
+          "fp2_nonsquare": 3,
+          "good_reduction": true,
+          "prime": 137
+        },
+        {
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            76,
+            25468
+          ],
+          "fp2_finite_local_character_sums_sha256": "111896c3d8daaf0b57cc69c7d938ad2a22c370e348ce7f1382b16d21f4368a3d",
+          "fp2_nonsquare": 3,
+          "good_reduction": true,
+          "prime": 151
+        },
+        {
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            -97,
+            11109
+          ],
+          "fp2_finite_local_character_sums_sha256": "2c9d4ee169bf4f6c46d58cf9d830ddcfbaf79b8e3e56df35f386ea4c08e83db2",
+          "fp2_nonsquare": 2,
+          "good_reduction": true,
+          "prime": 157
+        }
+      ]
+    }
+  ]
+}

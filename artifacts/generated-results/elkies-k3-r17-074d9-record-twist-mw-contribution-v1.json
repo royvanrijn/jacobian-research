@@ -1,0 +1,150 @@
+{
+  "claim": "Good-reduction geometric bounds disprove both proposed full exceptional-quotient specialization equalities. One exact height-six section per twist supplies the current rank-one lower bound and exact quotient image; the four full QQ(u)-ranks remain unknown.",
+  "fibres": [
+    {
+      "all_four_twists_rank_one_scenario_status": "UNRESOLVED",
+      "certified_known_specialization_image_rank": 2,
+      "combined_specialization_image_rank_upper_bound": 8,
+      "curve_id": 356,
+      "exceptional_quotient_rank": 12,
+      "minimum_fibre_specific_quotient_directions": 4,
+      "quotient_equality": false,
+      "rank_obstruction": "8 < 12",
+      "twist_labels": [
+        "074d9-orbit-04b07",
+        "074d9-orbit-11a44"
+      ]
+    },
+    {
+      "all_four_twists_rank_one_scenario_status": "UNRESOLVED",
+      "certified_known_specialization_image_rank": 2,
+      "combined_specialization_image_rank_upper_bound": 6,
+      "curve_id": 385,
+      "exceptional_quotient_rank": 12,
+      "minimum_fibre_specific_quotient_directions": 6,
+      "quotient_equality": false,
+      "rank_obstruction": "6 < 12",
+      "twist_labels": [
+        "074d9-orbit-11279",
+        "074d9-orbit-080fa"
+      ]
+    }
+  ],
+  "generation": {
+    "command": "sage -python elkies-k3/scripts/certify_r17_074d9_record_twist_mw_contribution.sage"
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-074d9-record-twist-sections-v1.json": "7abe20f32668f8406427c360fa244b7f477551e3e1025c25f78de83dcc93688e",
+    "artifacts/generated-results/elkies-k3-r17-074d9-twist-2descent-audit-v1.json": "51456199757e0309df291d9ad9e667b672d7c105293e6f4e9d2531040c31defe",
+    "artifacts/generated-results/elkies-k3-r17-074d9-twist-good-reduction-bounds-v1.json": "8829b68c6d92d4cdd731b9c5d1db01a873848cf9e8971130c801b0a930d23cd3"
+  },
+  "proof_boundary": "The geometric upper bounds are sufficient for the two negative equality tests. They do not determine the individual QQ(u)-ranks. The scenario in which all four ranks equal one is neither proved nor disproved.",
+  "schema": "elkies-k3.r17-074d9-record-twist-mw-contribution.v1",
+  "status": "PROVED_NO_FULL_RECORD_QUOTIENT_LIFT_RANKS_REMAIN_UNKNOWN",
+  "twists": [
+    {
+      "QQ_u_MW_rank_lower_bound": 1,
+      "QQ_u_MW_rank_status": "UNKNOWN",
+      "curve_id": 356,
+      "geometric_MW_rank_upper_bound": 4,
+      "known_section": {
+        "P_dot_O": 0,
+        "height": 6,
+        "record_fibre_quotient_image": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "specialization_identity": "sp(R)=2*positive_branch-sp(trace)"
+      },
+      "label": "074d9-orbit-04b07"
+    },
+    {
+      "QQ_u_MW_rank_lower_bound": 1,
+      "QQ_u_MW_rank_status": "UNKNOWN",
+      "curve_id": 356,
+      "geometric_MW_rank_upper_bound": 4,
+      "known_section": {
+        "P_dot_O": 0,
+        "height": 6,
+        "record_fibre_quotient_image": [
+          0,
+          -2,
+          -2,
+          0,
+          -2,
+          0,
+          0,
+          2,
+          0,
+          2,
+          0,
+          0
+        ],
+        "specialization_identity": "sp(R)=2*positive_branch-sp(trace)"
+      },
+      "label": "074d9-orbit-11a44"
+    },
+    {
+      "QQ_u_MW_rank_lower_bound": 1,
+      "QQ_u_MW_rank_status": "UNKNOWN",
+      "curve_id": 385,
+      "geometric_MW_rank_upper_bound": 4,
+      "known_section": {
+        "P_dot_O": 0,
+        "height": 6,
+        "record_fibre_quotient_image": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "specialization_identity": "sp(R)=2*positive_branch-sp(trace)"
+      },
+      "label": "074d9-orbit-11279"
+    },
+    {
+      "QQ_u_MW_rank_lower_bound": 1,
+      "QQ_u_MW_rank_status": "UNKNOWN",
+      "curve_id": 385,
+      "geometric_MW_rank_upper_bound": 2,
+      "known_section": {
+        "P_dot_O": 0,
+        "height": 6,
+        "record_fibre_quotient_image": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          2,
+          -2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "specialization_identity": "sp(R)=2*positive_branch-sp(trace)"
+      },
+      "label": "074d9-orbit-080fa"
+    }
+  ]
+}

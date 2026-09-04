@@ -1862,6 +1862,175 @@
         "P24",
         "P25"
       ],
+      "known_residual_place_block_dual_components": {
+        "claim_boundary": "Indecomposable here excludes a direct-sum partition separated by audited place blocks on the certified point subspace. It is not a Cassels-pairing or complete residual-Selmer indecomposability theorem.",
+        "component_count": 1,
+        "components": [
+          {
+            "dual_dimension": 8,
+            "local_dual_basis_vector_count": 21,
+            "places": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "7"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "19"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "31"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "43"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "59"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "101"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "2704697"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3369124490537472383281372744326098394132219698540451682089624352866416157407"
+              }
+            ]
+          }
+        ],
+        "construction": "Take a basis of image(localization_v^*) for each place, force all basis vectors from one place into one block, and compute the connected components of their binary vector matroid via fundamental circuits.",
+        "global_localization_dual_rank": 8,
+        "local_dual_basis_vector_count": 21,
+        "place_block_matroid_indecomposable": true,
+        "source_description": "known residual",
+        "source_dimension": 8,
+        "zero_localization_places": [
+          "3",
+          "11",
+          "23",
+          "53",
+          "67",
+          "71",
+          "113"
+        ]
+      },
+      "known_residual_place_block_support_code": {
+        "audited_place_count": 21,
+        "block_weight_enumerator": {
+          "10": 52,
+          "11": 25,
+          "12": 12,
+          "13": 2,
+          "4": 2,
+          "5": 10,
+          "6": 12,
+          "7": 29,
+          "8": 57,
+          "9": 54
+        },
+        "claim_boundary": "This is the exact localization support code of the certified known residual point subgroup, not of the complete residual Selmer group.",
+        "code_convention": "The image of each nonzero known residual class is treated as a block word with one block per audited rational place. Block weight counts places with nonzero localization, not local coordinates.",
+        "every_deletion_of_at_most_this_many_places_preserves_injectivity": 3,
+        "minimum_nonzero_place_block_weight": 4,
+        "minimum_support_word_count": 2,
+        "minimum_support_words": [
+          {
+            "coefficient_mask_hex": "63",
+            "coefficient_vector": [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "59"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              }
+            ]
+          },
+          {
+            "coefficient_mask_hex": "81",
+            "coefficient_vector": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "43"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              }
+            ]
+          }
+        ],
+        "nonzero_class_count": 255,
+        "source_dimension": 8
+      },
       "kummer_images": [
         {
           "canonical_norm_square_root": "62797165859431577149542306984847480088249311806702968800122521/12246214914170936117937752080384",
@@ -15195,6 +15364,175 @@
         "P24",
         "P25"
       ],
+      "selected_comparison_block_dual_components": {
+        "claim_boundary": "Indecomposable here excludes a direct-sum partition separated by audited place blocks on the certified point subspace. It is not a Cassels-pairing or complete residual-Selmer indecomposability theorem.",
+        "component_count": 1,
+        "components": [
+          {
+            "dual_dimension": 8,
+            "local_dual_basis_vector_count": 21,
+            "places": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "7"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "19"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "31"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "43"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "59"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "101"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "2704697"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3369124490537472383281372744326098394132219698540451682089624352866416157407"
+              }
+            ]
+          }
+        ],
+        "construction": "Take a basis of image(localization_v^*) for each place, force all basis vectors from one place into one block, and compute the connected components of their binary vector matroid via fundamental circuits.",
+        "global_localization_dual_rank": 8,
+        "local_dual_basis_vector_count": 21,
+        "place_block_matroid_indecomposable": true,
+        "source_description": "selected comparison block",
+        "source_dimension": 8,
+        "zero_localization_places": [
+          "3",
+          "11",
+          "23",
+          "53",
+          "67",
+          "71",
+          "113"
+        ]
+      },
+      "selected_comparison_block_place_support_code": {
+        "audited_place_count": 21,
+        "block_weight_enumerator": {
+          "10": 52,
+          "11": 25,
+          "12": 12,
+          "13": 2,
+          "4": 2,
+          "5": 10,
+          "6": 12,
+          "7": 29,
+          "8": 57,
+          "9": 54
+        },
+        "claim_boundary": "This is the exact localization support code of the certified selected comparison block point subgroup, not of the complete residual Selmer group.",
+        "code_convention": "The image of each nonzero selected comparison block class is treated as a block word with one block per audited rational place. Block weight counts places with nonzero localization, not local coordinates.",
+        "every_deletion_of_at_most_this_many_places_preserves_injectivity": 3,
+        "minimum_nonzero_place_block_weight": 4,
+        "minimum_support_word_count": 2,
+        "minimum_support_words": [
+          {
+            "coefficient_mask_hex": "63",
+            "coefficient_vector": [
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "59"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              }
+            ]
+          },
+          {
+            "coefficient_mask_hex": "81",
+            "coefficient_vector": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "43"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              }
+            ]
+          }
+        ],
+        "nonzero_class_count": 255,
+        "source_dimension": 8
+      },
       "two_division_etale_algebra": {
         "defining_polynomial": "z^3 - 3*z^2 - 4014702654946054741444926337934140935104472*z + 2938464487518491829431318270088136931222306339052529276244198224",
         "defining_polynomial_coefficients_ascending": [
@@ -15401,6 +15739,216 @@
         "P28",
         "P29"
       ],
+      "known_residual_place_block_dual_components": {
+        "claim_boundary": "Indecomposable here excludes a direct-sum partition separated by audited place blocks on the certified point subspace. It is not a Cassels-pairing or complete residual-Selmer indecomposability theorem.",
+        "component_count": 1,
+        "components": [
+          {
+            "dual_dimension": 12,
+            "local_dual_basis_vector_count": 31,
+            "places": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "23"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "29"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "37"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "41"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "53"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "67"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "71"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "101"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "139"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "751"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "28960331"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "1204882855601765528877267647500895974865482613"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "197980272243427555346397293722916980361535459279712115031762027678304939"
+              }
+            ]
+          }
+        ],
+        "construction": "Take a basis of image(localization_v^*) for each place, force all basis vectors from one place into one block, and compute the connected components of their binary vector matroid via fundamental circuits.",
+        "global_localization_dual_rank": 12,
+        "local_dual_basis_vector_count": 31,
+        "place_block_matroid_indecomposable": true,
+        "source_description": "known residual",
+        "source_dimension": 12,
+        "zero_localization_places": []
+      },
+      "known_residual_place_block_support_code": {
+        "audited_place_count": 21,
+        "block_weight_enumerator": {
+          "10": 259,
+          "11": 499,
+          "12": 662,
+          "13": 727,
+          "14": 689,
+          "15": 541,
+          "16": 309,
+          "17": 141,
+          "18": 33,
+          "19": 8,
+          "5": 2,
+          "6": 7,
+          "7": 16,
+          "8": 56,
+          "9": 146
+        },
+        "claim_boundary": "This is the exact localization support code of the certified known residual point subgroup, not of the complete residual Selmer group.",
+        "code_convention": "The image of each nonzero known residual class is treated as a block word with one block per audited rational place. Block weight counts places with nonzero localization, not local coordinates.",
+        "every_deletion_of_at_most_this_many_places_preserves_injectivity": 4,
+        "minimum_nonzero_place_block_weight": 5,
+        "minimum_support_word_count": 2,
+        "minimum_support_words": [
+          {
+            "coefficient_mask_hex": "5d1",
+            "coefficient_vector": [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "29"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "71"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "28960331"
+              }
+            ]
+          },
+          {
+            "coefficient_mask_hex": "8db",
+            "coefficient_vector": [
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "37"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "101"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              }
+            ]
+          }
+        ],
+        "nonzero_class_count": 4095,
+        "source_dimension": 12
+      },
       "kummer_images": [
         {
           "canonical_norm_square_root": "-2192240875332846272106287672478232198042765529416539946112953135271728113466384560/22031292899812985270122856486212555489",
@@ -37259,6 +37807,219 @@
         "P28",
         "P29"
       ],
+      "selected_comparison_block_dual_components": {
+        "claim_boundary": "Indecomposable here excludes a direct-sum partition separated by audited place blocks on the certified point subspace. It is not a Cassels-pairing or complete residual-Selmer indecomposability theorem.",
+        "component_count": 1,
+        "components": [
+          {
+            "dual_dimension": 10,
+            "local_dual_basis_vector_count": 31,
+            "places": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "23"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "29"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "37"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "41"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "53"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "67"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "71"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "101"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "139"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "751"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "28960331"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "1204882855601765528877267647500895974865482613"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "197980272243427555346397293722916980361535459279712115031762027678304939"
+              }
+            ]
+          }
+        ],
+        "construction": "Take a basis of image(localization_v^*) for each place, force all basis vectors from one place into one block, and compute the connected components of their binary vector matroid via fundamental circuits.",
+        "global_localization_dual_rank": 10,
+        "local_dual_basis_vector_count": 31,
+        "place_block_matroid_indecomposable": true,
+        "source_description": "selected comparison block",
+        "source_dimension": 10,
+        "zero_localization_places": []
+      },
+      "selected_comparison_block_place_support_code": {
+        "audited_place_count": 21,
+        "block_weight_enumerator": {
+          "10": 76,
+          "11": 120,
+          "12": 160,
+          "13": 189,
+          "14": 172,
+          "15": 123,
+          "16": 81,
+          "17": 39,
+          "18": 10,
+          "19": 1,
+          "6": 2,
+          "7": 4,
+          "8": 10,
+          "9": 36
+        },
+        "claim_boundary": "This is the exact localization support code of the certified selected comparison block point subgroup, not of the complete residual Selmer group.",
+        "code_convention": "The image of each nonzero selected comparison block class is treated as a block word with one block per audited rational place. Block weight counts places with nonzero localization, not local coordinates.",
+        "every_deletion_of_at_most_this_many_places_preserves_injectivity": 5,
+        "minimum_nonzero_place_block_weight": 6,
+        "minimum_support_word_count": 2,
+        "minimum_support_words": [
+          {
+            "coefficient_mask_hex": "7a",
+            "coefficient_vector": [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "67"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "71"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "1204882855601765528877267647500895974865482613"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "197980272243427555346397293722916980361535459279712115031762027678304939"
+              }
+            ]
+          },
+          {
+            "coefficient_mask_hex": "245",
+            "coefficient_vector": [
+              1,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "23"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "139"
+              }
+            ]
+          }
+        ],
+        "nonzero_class_count": 1023,
+        "source_dimension": 10
+      },
       "two_division_etale_algebra": {
         "defining_polynomial": "z^3 + 4*z^2 - 390270027915483316216523134413448838322767575970984964800*z + 3004410011761959709238069292739285788140717541679606093267811690001551474270701440000",
         "defining_polynomial_coefficients_ascending": [
@@ -37356,6 +38117,197 @@
         "P21",
         "P22"
       ],
+      "known_residual_place_block_dual_components": {
+        "claim_boundary": "Indecomposable here excludes a direct-sum partition separated by audited place blocks on the certified point subspace. It is not a Cassels-pairing or complete residual-Selmer indecomposability theorem.",
+        "component_count": 1,
+        "components": [
+          {
+            "dual_dimension": 5,
+            "local_dual_basis_vector_count": 22,
+            "places": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "7"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "37"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "53"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "67"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "71"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "107"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "179"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "449"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "535727176489"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "737847126898976814871"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "2572094103432626869737285466901"
+              }
+            ]
+          }
+        ],
+        "construction": "Take a basis of image(localization_v^*) for each place, force all basis vectors from one place into one block, and compute the connected components of their binary vector matroid via fundamental circuits.",
+        "global_localization_dual_rank": 5,
+        "local_dual_basis_vector_count": 22,
+        "place_block_matroid_indecomposable": true,
+        "source_description": "known residual",
+        "source_dimension": 5,
+        "zero_localization_places": [
+          "79",
+          "101"
+        ]
+      },
+      "known_residual_place_block_support_code": {
+        "audited_place_count": 19,
+        "block_weight_enumerator": {
+          "10": 11,
+          "11": 7,
+          "12": 2,
+          "14": 2,
+          "7": 2,
+          "8": 4,
+          "9": 3
+        },
+        "claim_boundary": "This is the exact localization support code of the certified known residual point subgroup, not of the complete residual Selmer group.",
+        "code_convention": "The image of each nonzero known residual class is treated as a block word with one block per audited rational place. Block weight counts places with nonzero localization, not local coordinates.",
+        "every_deletion_of_at_most_this_many_places_preserves_injectivity": 6,
+        "minimum_nonzero_place_block_weight": 7,
+        "minimum_support_word_count": 2,
+        "minimum_support_words": [
+          {
+            "coefficient_mask_hex": "2",
+            "coefficient_vector": [
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "7"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "37"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "107"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "449"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "2572094103432626869737285466901"
+              }
+            ]
+          },
+          {
+            "coefficient_mask_hex": "16",
+            "coefficient_vector": [
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "53"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "107"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "737847126898976814871"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "2572094103432626869737285466901"
+              }
+            ]
+          }
+        ],
+        "nonzero_class_count": 31,
+        "source_dimension": 5
+      },
       "kummer_images": [
         {
           "canonical_norm_square_root": "-11382705469653080518618531698552547644288/3586495139443",
@@ -45461,6 +46413,197 @@
         "P21",
         "P22"
       ],
+      "selected_comparison_block_dual_components": {
+        "claim_boundary": "Indecomposable here excludes a direct-sum partition separated by audited place blocks on the certified point subspace. It is not a Cassels-pairing or complete residual-Selmer indecomposability theorem.",
+        "component_count": 1,
+        "components": [
+          {
+            "dual_dimension": 5,
+            "local_dual_basis_vector_count": 22,
+            "places": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "7"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "37"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "53"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "67"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "71"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "107"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "179"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "449"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "535727176489"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "737847126898976814871"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "2572094103432626869737285466901"
+              }
+            ]
+          }
+        ],
+        "construction": "Take a basis of image(localization_v^*) for each place, force all basis vectors from one place into one block, and compute the connected components of their binary vector matroid via fundamental circuits.",
+        "global_localization_dual_rank": 5,
+        "local_dual_basis_vector_count": 22,
+        "place_block_matroid_indecomposable": true,
+        "source_description": "selected comparison block",
+        "source_dimension": 5,
+        "zero_localization_places": [
+          "79",
+          "101"
+        ]
+      },
+      "selected_comparison_block_place_support_code": {
+        "audited_place_count": 19,
+        "block_weight_enumerator": {
+          "10": 11,
+          "11": 7,
+          "12": 2,
+          "14": 2,
+          "7": 2,
+          "8": 4,
+          "9": 3
+        },
+        "claim_boundary": "This is the exact localization support code of the certified selected comparison block point subgroup, not of the complete residual Selmer group.",
+        "code_convention": "The image of each nonzero selected comparison block class is treated as a block word with one block per audited rational place. Block weight counts places with nonzero localization, not local coordinates.",
+        "every_deletion_of_at_most_this_many_places_preserves_injectivity": 6,
+        "minimum_nonzero_place_block_weight": 7,
+        "minimum_support_word_count": 2,
+        "minimum_support_words": [
+          {
+            "coefficient_mask_hex": "2",
+            "coefficient_vector": [
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "7"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "37"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "107"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "449"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "2572094103432626869737285466901"
+              }
+            ]
+          },
+          {
+            "coefficient_mask_hex": "16",
+            "coefficient_vector": [
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "53"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "107"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "737847126898976814871"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "2572094103432626869737285466901"
+              }
+            ]
+          }
+        ],
+        "nonzero_class_count": 31,
+        "source_dimension": 5
+      },
       "two_division_etale_algebra": {
         "defining_polynomial": "z^3 + z^2 - 23135840210679413539660945176729920*z + 1352238207691619340538392925121118339640167379559424",
         "defining_polynomial_coefficients_ascending": [
@@ -45549,6 +46692,156 @@
         "P22",
         "P23"
       ],
+      "known_residual_place_block_dual_components": {
+        "claim_boundary": "Indecomposable here excludes a direct-sum partition separated by audited place blocks on the certified point subspace. It is not a Cassels-pairing or complete residual-Selmer indecomposability theorem.",
+        "component_count": 1,
+        "components": [
+          {
+            "dual_dimension": 6,
+            "local_dual_basis_vector_count": 20,
+            "places": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "19"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "29"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "37"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "53"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "71"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "103"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "21929"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "1014557"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "152895091"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "485771053464014284495634549332962917335104529369969"
+              }
+            ]
+          }
+        ],
+        "construction": "Take a basis of image(localization_v^*) for each place, force all basis vectors from one place into one block, and compute the connected components of their binary vector matroid via fundamental circuits.",
+        "global_localization_dual_rank": 6,
+        "local_dual_basis_vector_count": 20,
+        "place_block_matroid_indecomposable": true,
+        "source_description": "known residual",
+        "source_dimension": 6,
+        "zero_localization_places": [
+          "11",
+          "23",
+          "67",
+          "83",
+          "101"
+        ]
+      },
+      "known_residual_place_block_support_code": {
+        "audited_place_count": 22,
+        "block_weight_enumerator": {
+          "10": 11,
+          "11": 7,
+          "12": 4,
+          "13": 4,
+          "14": 1,
+          "5": 1,
+          "6": 1,
+          "7": 8,
+          "8": 10,
+          "9": 16
+        },
+        "claim_boundary": "This is the exact localization support code of the certified known residual point subgroup, not of the complete residual Selmer group.",
+        "code_convention": "The image of each nonzero known residual class is treated as a block word with one block per audited rational place. Block weight counts places with nonzero localization, not local coordinates.",
+        "every_deletion_of_at_most_this_many_places_preserves_injectivity": 4,
+        "minimum_nonzero_place_block_weight": 5,
+        "minimum_support_word_count": 1,
+        "minimum_support_words": [
+          {
+            "coefficient_mask_hex": "e",
+            "coefficient_vector": [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "19"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "103"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "485771053464014284495634549332962917335104529369969"
+              }
+            ]
+          }
+        ],
+        "nonzero_class_count": 63,
+        "source_dimension": 6
+      },
       "kummer_images": [
         {
           "canonical_norm_square_root": "17834754294113790994772568966070941511601836672005/1162887579758050969103",
@@ -56527,6 +57820,156 @@
         "P22",
         "P23"
       ],
+      "selected_comparison_block_dual_components": {
+        "claim_boundary": "Indecomposable here excludes a direct-sum partition separated by audited place blocks on the certified point subspace. It is not a Cassels-pairing or complete residual-Selmer indecomposability theorem.",
+        "component_count": 1,
+        "components": [
+          {
+            "dual_dimension": 6,
+            "local_dual_basis_vector_count": 20,
+            "places": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "19"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "29"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "37"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "53"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "71"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "103"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "21929"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "1014557"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "152895091"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "485771053464014284495634549332962917335104529369969"
+              }
+            ]
+          }
+        ],
+        "construction": "Take a basis of image(localization_v^*) for each place, force all basis vectors from one place into one block, and compute the connected components of their binary vector matroid via fundamental circuits.",
+        "global_localization_dual_rank": 6,
+        "local_dual_basis_vector_count": 20,
+        "place_block_matroid_indecomposable": true,
+        "source_description": "selected comparison block",
+        "source_dimension": 6,
+        "zero_localization_places": [
+          "11",
+          "23",
+          "67",
+          "83",
+          "101"
+        ]
+      },
+      "selected_comparison_block_place_support_code": {
+        "audited_place_count": 22,
+        "block_weight_enumerator": {
+          "10": 11,
+          "11": 7,
+          "12": 4,
+          "13": 4,
+          "14": 1,
+          "5": 1,
+          "6": 1,
+          "7": 8,
+          "8": 10,
+          "9": 16
+        },
+        "claim_boundary": "This is the exact localization support code of the certified selected comparison block point subgroup, not of the complete residual Selmer group.",
+        "code_convention": "The image of each nonzero selected comparison block class is treated as a block word with one block per audited rational place. Block weight counts places with nonzero localization, not local coordinates.",
+        "every_deletion_of_at_most_this_many_places_preserves_injectivity": 4,
+        "minimum_nonzero_place_block_weight": 5,
+        "minimum_support_word_count": 1,
+        "minimum_support_words": [
+          {
+            "coefficient_mask_hex": "e",
+            "coefficient_vector": [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "19"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "103"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "485771053464014284495634549332962917335104529369969"
+              }
+            ]
+          }
+        ],
+        "nonzero_class_count": 63,
+        "source_dimension": 6
+      },
       "two_division_etale_algebra": {
         "defining_polynomial": "z^3 + 4*z^2 - 873320492590703060909924747207460319680*z + 9952519711214436133699519422874198399705927919452519910400",
         "defining_polynomial_coefficients_ascending": [
@@ -56825,6 +58268,236 @@
         "P28",
         "P29"
       ],
+      "known_residual_place_block_dual_components": {
+        "claim_boundary": "Indecomposable here excludes a direct-sum partition separated by audited place blocks on the certified point subspace. It is not a Cassels-pairing or complete residual-Selmer indecomposability theorem.",
+        "component_count": 1,
+        "components": [
+          {
+            "dual_dimension": 12,
+            "local_dual_basis_vector_count": 33,
+            "places": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "7"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "11"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "29"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "37"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "41"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "43"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "47"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "53"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "67"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "71"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "73"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "89"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "101"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "109"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "127"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "4678955899327531799218956351083"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3466418496046307687463380088830029870757187849126892374834076735615029496431422958053227129921575121"
+              }
+            ]
+          }
+        ],
+        "construction": "Take a basis of image(localization_v^*) for each place, force all basis vectors from one place into one block, and compute the connected components of their binary vector matroid via fundamental circuits.",
+        "global_localization_dual_rank": 12,
+        "local_dual_basis_vector_count": 33,
+        "place_block_matroid_indecomposable": true,
+        "source_description": "known residual",
+        "source_dimension": 12,
+        "zero_localization_places": [
+          "97"
+        ]
+      },
+      "known_residual_place_block_support_code": {
+        "audited_place_count": 24,
+        "block_weight_enumerator": {
+          "10": 168,
+          "11": 313,
+          "12": 462,
+          "13": 639,
+          "14": 694,
+          "15": 669,
+          "16": 529,
+          "17": 314,
+          "18": 147,
+          "19": 46,
+          "20": 25,
+          "21": 2,
+          "22": 1,
+          "6": 2,
+          "7": 8,
+          "8": 19,
+          "9": 57
+        },
+        "claim_boundary": "This is the exact localization support code of the certified known residual point subgroup, not of the complete residual Selmer group.",
+        "code_convention": "The image of each nonzero known residual class is treated as a block word with one block per audited rational place. Block weight counts places with nonzero localization, not local coordinates.",
+        "every_deletion_of_at_most_this_many_places_preserves_injectivity": 5,
+        "minimum_nonzero_place_block_weight": 6,
+        "minimum_support_word_count": 2,
+        "minimum_support_words": [
+          {
+            "coefficient_mask_hex": "ff",
+            "coefficient_vector": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "29"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "47"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "101"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "109"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              }
+            ]
+          },
+          {
+            "coefficient_mask_hex": "148",
+            "coefficient_vector": [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "41"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "71"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "73"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "127"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3466418496046307687463380088830029870757187849126892374834076735615029496431422958053227129921575121"
+              }
+            ]
+          }
+        ],
+        "nonzero_class_count": 4095,
+        "source_dimension": 12
+      },
       "kummer_images": [
         {
           "canonical_norm_square_root": "360080063458940632777069895145893835746449551470076936094415970173031159859466758166130688/16080500897051823035609323909958580315893625",
@@ -81947,6 +83620,239 @@
         "P28",
         "P29"
       ],
+      "selected_comparison_block_dual_components": {
+        "claim_boundary": "Indecomposable here excludes a direct-sum partition separated by audited place blocks on the certified point subspace. It is not a Cassels-pairing or complete residual-Selmer indecomposability theorem.",
+        "component_count": 1,
+        "components": [
+          {
+            "dual_dimension": 10,
+            "local_dual_basis_vector_count": 33,
+            "places": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "7"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "11"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "29"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "37"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "41"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "43"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "47"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "53"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "67"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "71"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "73"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "89"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "101"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "109"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "127"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "4678955899327531799218956351083"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3466418496046307687463380088830029870757187849126892374834076735615029496431422958053227129921575121"
+              }
+            ]
+          }
+        ],
+        "construction": "Take a basis of image(localization_v^*) for each place, force all basis vectors from one place into one block, and compute the connected components of their binary vector matroid via fundamental circuits.",
+        "global_localization_dual_rank": 10,
+        "local_dual_basis_vector_count": 33,
+        "place_block_matroid_indecomposable": true,
+        "source_description": "selected comparison block",
+        "source_dimension": 10,
+        "zero_localization_places": [
+          "97"
+        ]
+      },
+      "selected_comparison_block_place_support_code": {
+        "audited_place_count": 24,
+        "block_weight_enumerator": {
+          "10": 41,
+          "11": 84,
+          "12": 118,
+          "13": 153,
+          "14": 157,
+          "15": 178,
+          "16": 144,
+          "17": 77,
+          "18": 37,
+          "19": 4,
+          "20": 8,
+          "21": 1,
+          "22": 1,
+          "7": 2,
+          "8": 5,
+          "9": 13
+        },
+        "claim_boundary": "This is the exact localization support code of the certified selected comparison block point subgroup, not of the complete residual Selmer group.",
+        "code_convention": "The image of each nonzero selected comparison block class is treated as a block word with one block per audited rational place. Block weight counts places with nonzero localization, not local coordinates.",
+        "every_deletion_of_at_most_this_many_places_preserves_injectivity": 6,
+        "minimum_nonzero_place_block_weight": 7,
+        "minimum_support_word_count": 2,
+        "minimum_support_words": [
+          {
+            "coefficient_mask_hex": "2fa",
+            "coefficient_vector": [
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "7"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "43"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "53"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "113"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "127"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3466418496046307687463380088830029870757187849126892374834076735615029496431422958053227129921575121"
+              }
+            ]
+          },
+          {
+            "coefficient_mask_hex": "310",
+            "coefficient_vector": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "37"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "47"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "67"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "73"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "109"
+              }
+            ]
+          }
+        ],
+        "nonzero_class_count": 1023,
+        "source_dimension": 10
+      },
       "two_division_etale_algebra": {
         "defining_polynomial": "z^3 - 3*z^2 - 5309239946790504992658629933056863415942952216170388559928487464*z + 148662610051436076306955509240777944706751861975930881474883697027048621444898380735182121846992",
         "defining_polynomial_coefficients_ascending": [
@@ -82066,6 +83972,217 @@
         "P19",
         "P15"
       ],
+      "known_residual_place_block_dual_components": {
+        "claim_boundary": "Indecomposable here excludes a direct-sum partition separated by audited place blocks on the certified point subspace. It is not a Cassels-pairing or complete residual-Selmer indecomposability theorem.",
+        "component_count": 1,
+        "components": [
+          {
+            "dual_dimension": 12,
+            "local_dual_basis_vector_count": 28,
+            "places": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "7"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "11"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "17"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "31"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "41"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "43"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "53"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "61"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "101"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "233"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "241"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "4139"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "678146849364709860535420504397393"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "159788990966780131363155786084695062643236502969"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "4402149008473369392540402625019227412319473055901"
+              }
+            ]
+          }
+        ],
+        "construction": "Take a basis of image(localization_v^*) for each place, force all basis vectors from one place into one block, and compute the connected components of their binary vector matroid via fundamental circuits.",
+        "global_localization_dual_rank": 12,
+        "local_dual_basis_vector_count": 28,
+        "place_block_matroid_indecomposable": true,
+        "source_description": "known residual",
+        "source_dimension": 12,
+        "zero_localization_places": [
+          "67",
+          "71",
+          "113"
+        ]
+      },
+      "known_residual_place_block_support_code": {
+        "audited_place_count": 25,
+        "block_weight_enumerator": {
+          "10": 355,
+          "11": 614,
+          "12": 713,
+          "13": 736,
+          "14": 509,
+          "15": 397,
+          "16": 250,
+          "17": 100,
+          "18": 35,
+          "19": 8,
+          "20": 3,
+          "4": 2,
+          "6": 13,
+          "7": 37,
+          "8": 103,
+          "9": 220
+        },
+        "claim_boundary": "This is the exact localization support code of the certified known residual point subgroup, not of the complete residual Selmer group.",
+        "code_convention": "The image of each nonzero known residual class is treated as a block word with one block per audited rational place. Block weight counts places with nonzero localization, not local coordinates.",
+        "every_deletion_of_at_most_this_many_places_preserves_injectivity": 3,
+        "minimum_nonzero_place_block_weight": 4,
+        "minimum_support_word_count": 2,
+        "minimum_support_words": [
+          {
+            "coefficient_mask_hex": "31c",
+            "coefficient_vector": [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "7"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "61"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "241"
+              }
+            ]
+          },
+          {
+            "coefficient_mask_hex": "ba9",
+            "coefficient_vector": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "43"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "241"
+              }
+            ]
+          }
+        ],
+        "nonzero_class_count": 4095,
+        "source_dimension": 12
+      },
       "kummer_images": [
         {
           "canonical_norm_square_root": "13292065785317542057069922278354970291980896000",
@@ -109590,6 +111707,217 @@
         "P19",
         "P15"
       ],
+      "selected_comparison_block_dual_components": {
+        "claim_boundary": "Indecomposable here excludes a direct-sum partition separated by audited place blocks on the certified point subspace. It is not a Cassels-pairing or complete residual-Selmer indecomposability theorem.",
+        "component_count": 1,
+        "components": [
+          {
+            "dual_dimension": 12,
+            "local_dual_basis_vector_count": 28,
+            "places": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "3"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "7"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "11"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "13"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "17"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "31"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "41"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "43"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "53"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "61"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "79"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "83"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "97"
+              },
+              {
+                "place_kind": "fixed_common_good",
+                "rational_prime": "101"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "233"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "241"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "4139"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "678146849364709860535420504397393"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "159788990966780131363155786084695062643236502969"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "4402149008473369392540402625019227412319473055901"
+              }
+            ]
+          }
+        ],
+        "construction": "Take a basis of image(localization_v^*) for each place, force all basis vectors from one place into one block, and compute the connected components of their binary vector matroid via fundamental circuits.",
+        "global_localization_dual_rank": 12,
+        "local_dual_basis_vector_count": 28,
+        "place_block_matroid_indecomposable": true,
+        "source_description": "selected comparison block",
+        "source_dimension": 12,
+        "zero_localization_places": [
+          "67",
+          "71",
+          "113"
+        ]
+      },
+      "selected_comparison_block_place_support_code": {
+        "audited_place_count": 25,
+        "block_weight_enumerator": {
+          "10": 355,
+          "11": 614,
+          "12": 713,
+          "13": 736,
+          "14": 509,
+          "15": 397,
+          "16": 250,
+          "17": 100,
+          "18": 35,
+          "19": 8,
+          "20": 3,
+          "4": 2,
+          "6": 13,
+          "7": 37,
+          "8": 103,
+          "9": 220
+        },
+        "claim_boundary": "This is the exact localization support code of the certified selected comparison block point subgroup, not of the complete residual Selmer group.",
+        "code_convention": "The image of each nonzero selected comparison block class is treated as a block word with one block per audited rational place. Block weight counts places with nonzero localization, not local coordinates.",
+        "every_deletion_of_at_most_this_many_places_preserves_injectivity": 3,
+        "minimum_nonzero_place_block_weight": 4,
+        "minimum_support_word_count": 2,
+        "minimum_support_words": [
+          {
+            "coefficient_mask_hex": "31c",
+            "coefficient_vector": [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "7"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "61"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "241"
+              }
+            ]
+          },
+          {
+            "coefficient_mask_hex": "ba9",
+            "coefficient_vector": [
+              1,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1
+            ],
+            "place_block_support": [
+              {
+                "place_kind": "bad",
+                "rational_prime": "2"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "5"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "43"
+              },
+              {
+                "place_kind": "bad",
+                "rational_prime": "241"
+              }
+            ]
+          }
+        ],
+        "nonzero_class_count": 4095,
+        "source_dimension": 12
+      },
       "two_division_etale_algebra": {
         "defining_polynomial": "z^3 + z^2 - 432098931866094755494954434324759260556288873949381727275798160*z + 3536515747285912094447148773831564276577348290082245094935833905865562449773835099240750175808",
         "defining_polynomial_coefficients_ascending": [

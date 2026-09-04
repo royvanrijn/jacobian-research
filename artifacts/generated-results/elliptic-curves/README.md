@@ -22,6 +22,13 @@ strict:
 
 Important distinctions made explicit by the catalogue:
 
+- `elkies_2026_record_pair_relative_2selmer_inputs_v1.json` is the exact
+  unconditional Magma input for record fibres 356 and 385, including the
+  specialized MW17 controls and twelve held-out points.  It is a pinned input,
+  not a completed descent or Selmer certificate.  Its whole-file SHA-256 is
+  `a0492c02910c035c9702a10224132ddbccd47236089d1ef7c647108b132b9e92`.
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+
 - `latent_lattice_calibration_truth_v1.json` contains exact withheld control
   embeddings; it is not selector input. `latent_lattice_calibration_v2.json`
   is the active corrected-semantics gate artifact.  It still rejects the

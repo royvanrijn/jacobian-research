@@ -1,0 +1,54 @@
+{
+  "amended_uniform_bounded_search": {
+    "adaptive_stopping": false,
+    "engine": "PARI hyperellratpoints",
+    "finite_quotient_certificate_prime_bound": 1000,
+    "memory_limit_bytes": 8000000000,
+    "monotone_residual_selmer_gate_required": true,
+    "positive_counting_rule": "Count a direction only after exact point transport/equation verification and a full mod-2 finite-quotient independence certificate for generic MW17 plus all counted directions.",
+    "protocol_id": "r17-prospective-crt-direct-rational-points-v2",
+    "retries": 0,
+    "same_algorithm_and_limits_for_every_row": true,
+    "search_model": "For the deterministic exact integral p=2-minimal model y^2+a1*x*y+a3*y=x^3+a2*x^2+a4*x+a6, search the exact completed-square cubic Y^2=(2y+a1*x+a3)^2.",
+    "wall_clock_limit_seconds_including_setup": 30,
+    "x_numerator_denominator_height": 10000
+  },
+  "candidate_list_sha256": "5df03637d4db0baa95cb9e5f697fe35e5e897838676b6370c0e08bdae5aa9aeb",
+  "claim_boundary": [
+    "The v1 canary is an operational failure, not a bounded point-search miss.",
+    "The amendment was frozen without seeing a returned point or completed search outcome.",
+    "The direct height-10000 search is bounded and cannot prove rank 17 or a Selmer upper bound.",
+    "Candidate lists, cohorts, matching, local fingerprints, and analysis contrasts are unchanged."
+  ],
+  "frozen_before_any_point_search_call_completed_or_returned_points": true,
+  "generation": {
+    "command": "python3 elkies-k3/scripts/build_r17_prospective_crt_search_protocol.py",
+    "script": "elkies-k3/scripts/build_r17_prospective_crt_search_protocol.py",
+    "script_sha256": "2f96df91346ddda99162111d58b6d4a3521605554e00802c4c3226a29a08e66d"
+  },
+  "infeasible_v1_canary": {
+    "cohort": "A_356_full",
+    "declared_wall_seconds": 300,
+    "last_completed_phase": "exact specialization and construction of the integral p=2-minimal model",
+    "last_entered_phase": "eclib initialization",
+    "mathematical_outcome": "NOT_OBSERVED_BACKEND_FEASIBILITY_ONLY",
+    "point_search_call_reached": false,
+    "points_returned_or_inspected": false,
+    "sample_id": "2224ccec7f2aec4451bfaa91"
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-prospective-crt-arithmetic-features-v1.json.gz": "709ac16370fd5ced34857068102d57d634f375ad2a4ab98c73c221f0baf48d6b",
+    "artifacts/generated-results/elkies-k3-r17-prospective-crt-frozen-cohorts-v1.json": "7e8c43a6f67eac96dd9dede333f94e0cce139fa685b421f83ad7e4d69c1a75d4"
+  },
+  "outcome_labels": {
+    "backend_failure": "CENSORED_BACKEND_FAILURE",
+    "completed_miss": "BOUNDED_PROTOCOL_NO_ESCAPE_FOUND",
+    "positive": "CERTIFIED_MW17_ESCAPE",
+    "timeout": "CENSORED_TIMEOUT",
+    "uncertified_point": "COMPLETED_UNCERTIFIED_CANDIDATES_NO_COUNTED_ESCAPE"
+  },
+  "protocol_definition_sha256": "63d6b9e83f52bc7208b9057298e05941dfcedc85d53f5681186c953498947d4b",
+  "reason_for_amendment": "The frozen v1 Sage/eclib canary spent the complete 300-second envelope inside mwrank_EllipticCurve initialization and never reached the search call.",
+  "schema": "elkies-k3.r17-prospective-crt-search-protocol.v2",
+  "selection_or_rebalancing_changed": false
+}

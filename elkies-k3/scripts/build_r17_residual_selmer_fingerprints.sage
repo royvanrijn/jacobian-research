@@ -121,6 +121,222 @@ def localization_intersections(source, places, dimension):
     }
 
 
+def block_support_spectrum(
+    places, dimension, localization_key, source_description
+):
+    """Enumerate the exact place-block support code on the known quotient.
+
+    Delete-one and delete-two ranks can both be identically uninformative when
+    every nonzero class is visible at several places.  Since the displayed
+    residual dimensions are at most twelve, enumerating all ``2^dimension-1``
+    nonzero combinations is cheap and gives the precise deletion threshold.
+    """
+
+    local_rows = [
+        [
+            tuple(int(bit) for bit in row)
+            for row in place[localization_key][
+                "canonical_quotient_basis_image_rows"
+            ]
+        ]
+        for place in places
+    ]
+    if any(len(rows) != dimension for rows in local_rows):
+        raise ArithmeticError("a localization map has the wrong source dimension")
+
+    weight_counts = {}
+    minimum_weight = None
+    minimum_words = []
+    for coefficient_mask in range(1, 1 << dimension):
+        support = []
+        for place, rows in zip(places, local_rows):
+            width = len(rows[0]) if rows else 0
+            image = [0] * width
+            for source_index, row in enumerate(rows):
+                if coefficient_mask & (1 << source_index):
+                    image = [left ^ right for left, right in zip(image, row)]
+            if any(image):
+                support.append(
+                    {
+                        "rational_prime": place["rational_prime"],
+                        "place_kind": place["place_kind"],
+                    }
+                )
+        weight = len(support)
+        weight_counts[weight] = weight_counts.get(weight, 0) + 1
+        record = {
+            "coefficient_mask_hex": format(coefficient_mask, "x"),
+            "coefficient_vector": [
+                (coefficient_mask >> index) & 1 for index in range(dimension)
+            ],
+            "place_block_support": support,
+        }
+        if minimum_weight is None or weight < minimum_weight:
+            minimum_weight = weight
+            minimum_words = [record]
+        elif weight == minimum_weight:
+            minimum_words.append(record)
+
+    if minimum_weight is None:
+        minimum_weight = 0
+    return {
+        "code_convention": (
+            f"The image of each nonzero {source_description} class is treated as a "
+            "block word with one block per audited rational place. Block weight "
+            "counts places with nonzero localization, not local coordinates."
+        ),
+        "source_dimension": dimension,
+        "nonzero_class_count": (1 << dimension) - 1,
+        "audited_place_count": len(places),
+        "block_weight_enumerator": {
+            str(weight): count for weight, count in sorted(weight_counts.items())
+        },
+        "minimum_nonzero_place_block_weight": minimum_weight,
+        "every_deletion_of_at_most_this_many_places_preserves_injectivity": max(
+            0, minimum_weight - 1
+        ),
+        "minimum_support_word_count": len(minimum_words),
+        "minimum_support_words": minimum_words,
+        "claim_boundary": (
+            f"This is the exact localization support code of the certified "
+            f"{source_description} point subgroup, not of the complete residual "
+            "Selmer group."
+        ),
+    }
+
+
+def place_block_dual_components(
+    places, dimension, localization_key, source_description
+):
+    """Compute connected components of the block-localization dual matroid."""
+
+    def independent_basis(vectors):
+        pivots = {}
+        basis = []
+        for vector in vectors:
+            reduced = vector
+            while reduced and reduced.bit_length() - 1 in pivots:
+                reduced ^= pivots[reduced.bit_length() - 1]
+            if reduced:
+                pivots[reduced.bit_length() - 1] = reduced
+                basis.append(vector)
+        return basis
+
+    elements = []
+    zero_places = []
+    for place_index, place in enumerate(places):
+        rows = place[localization_key]["canonical_quotient_basis_image_rows"]
+        if len(rows) != dimension:
+            raise ArithmeticError("a localization map has the wrong source dimension")
+        width = len(rows[0]) if rows else 0
+        dual_vectors = [
+            sum((int(rows[index][column]) & 1) << index for index in range(dimension))
+            for column in range(width)
+        ]
+        local_basis = independent_basis(vector for vector in dual_vectors if vector)
+        if not local_basis:
+            zero_places.append(place["rational_prime"])
+        for vector in local_basis:
+            elements.append((vector, place_index))
+
+    parents = list(range(len(elements)))
+
+    def find(index):
+        while parents[index] != index:
+            parents[index] = parents[parents[index]]
+            index = parents[index]
+        return index
+
+    def union(left, right):
+        left = find(left)
+        right = find(right)
+        if left != right:
+            parents[right] = left
+
+    elements_by_place = {}
+    for element_index, (_vector, place_index) in enumerate(elements):
+        elements_by_place.setdefault(place_index, []).append(element_index)
+    for local_elements in elements_by_place.values():
+        for element_index in local_elements[1:]:
+            union(local_elements[0], element_index)
+
+    pivots = {}
+    global_basis_elements = []
+    for element_index, (vector, _place_index) in enumerate(elements):
+        reduced = vector
+        combination = 0
+        while reduced and reduced.bit_length() - 1 in pivots:
+            pivot_vector, pivot_combination = pivots[reduced.bit_length() - 1]
+            reduced ^= pivot_vector
+            combination ^= pivot_combination
+        if reduced:
+            basis_index = len(global_basis_elements)
+            global_basis_elements.append(element_index)
+            pivots[reduced.bit_length() - 1] = (
+                reduced,
+                combination ^ (1 << basis_index),
+            )
+        else:
+            for basis_index, basis_element in enumerate(global_basis_elements):
+                if combination & (1 << basis_index):
+                    union(element_index, basis_element)
+
+    grouped = {}
+    for element_index in range(len(elements)):
+        grouped.setdefault(find(element_index), []).append(element_index)
+    components = []
+    component_dimension_sum = 0
+    for component_elements in grouped.values():
+        vectors = [elements[index][0] for index in component_elements]
+        component_dimension = len(independent_basis(vectors))
+        component_dimension_sum += component_dimension
+        place_indices = sorted({elements[index][1] for index in component_elements})
+        components.append(
+            {
+                "dual_dimension": component_dimension,
+                "local_dual_basis_vector_count": len(component_elements),
+                "places": [
+                    {
+                        "rational_prime": places[index]["rational_prime"],
+                        "place_kind": places[index]["place_kind"],
+                    }
+                    for index in place_indices
+                ],
+            }
+        )
+    components.sort(
+        key=lambda component: (
+            -component["dual_dimension"],
+            canonical_text(component["places"]),
+        )
+    )
+    global_dual_rank = len(global_basis_elements)
+    if component_dimension_sum != global_dual_rank:
+        raise ArithmeticError("dual-matroid component dimensions do not add up")
+    return {
+        "construction": (
+            "Take a basis of image(localization_v^*) for each place, force all "
+            "basis vectors from one place into one block, and compute the connected "
+            "components of their binary vector matroid via fundamental circuits."
+        ),
+        "source_description": source_description,
+        "source_dimension": dimension,
+        "global_localization_dual_rank": global_dual_rank,
+        "local_dual_basis_vector_count": len(elements),
+        "zero_localization_places": zero_places,
+        "component_count": len(components),
+        "components": components,
+        "place_block_matroid_indecomposable": (
+            global_dual_rank == dimension and len(components) == 1
+        ),
+        "claim_boundary": (
+            "Indecomposable here excludes a direct-sum partition separated by "
+            "audited place blocks on the certified point subspace. It is not a "
+            "Cassels-pairing or complete residual-Selmer indecomposability theorem."
+        ),
+    }
+
+
 def two_part(value: int) -> int:
     value = abs(int(value))
     result = 1
@@ -402,6 +618,30 @@ def build():
                 "local_places": [compact_place(place) for place in curve["local_places"]],
                 "localization_intersections": localization_intersections(
                     source, curve["local_places"], dimension
+                ),
+                "known_residual_place_block_support_code": block_support_spectrum(
+                    curve["local_places"],
+                    dimension,
+                    "known_residual_localization",
+                    "known residual",
+                ),
+                "selected_comparison_block_place_support_code": block_support_spectrum(
+                    curve["local_places"],
+                    len(curve["selected_comparison_block"]),
+                    "selected_block_localization",
+                    "selected comparison block",
+                ),
+                "known_residual_place_block_dual_components": place_block_dual_components(
+                    curve["local_places"],
+                    dimension,
+                    "known_residual_localization",
+                    "known residual",
+                ),
+                "selected_comparison_block_dual_components": place_block_dual_components(
+                    curve["local_places"],
+                    len(curve["selected_comparison_block"]),
+                    "selected_block_localization",
+                    "selected comparison block",
                 ),
                 "complete_two_selmer_status": "UNKNOWN_BNF_OR_COMPLETE_DESCENT_REQUIRED",
                 "cassels_pairing_status": (

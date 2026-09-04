@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from math import isqrt
 from pathlib import Path
 import sys
 import unittest
@@ -11,6 +12,8 @@ CAS = ROOT / "elliptic-curves/cas"
 sys.path.insert(0, str(CAS))
 
 import run_elkies_2026_rank28_s_class_pari as s_class  # noqa: E402
+import merge_bnf_free_minkowski_relation_ledgers as merge_ledgers  # noqa: E402
+import run_fermigier_rank20_minkowski_specialq as minkowski  # noqa: E402
 
 
 class ElkiesRank28SClassPariTests(unittest.TestCase):
@@ -109,6 +112,131 @@ class ElkiesRank28SClassPariTests(unittest.TestCase):
                 consumer = (CAS / name).read_text()
                 self.assertIn("pari.addprimes(factor_hint_primes)", consumer)
                 self.assertIn("validate_inputs()", consumer)
+
+    def test_minkowski_collector_retains_mergeable_exact_partial_edges(self) -> None:
+        source = (CAS / "run_fermigier_rank20_minkowski_specialq.py").read_text()
+        self.assertIn("prime_range(2, args.trial_prime_bound + 1)", source)
+        self.assertIn('"partial_relations": partial_relations', source)
+        self.assertIn("primitive_projective_power_basis", source)
+        self.assertIn("composite_above_bounded_factor_limit", source)
+        self.assertIn("--batch-gcd-unresolved-cofactors", source)
+        self.assertIn("--batch-gcd-engine", source)
+        self.assertTrue((CAS / "merge_bnf_free_minkowski_relation_ledgers.py").is_file())
+        self.assertTrue((CAS / "select_bnf_free_minkowski_feedback_specials.sage").is_file())
+
+    def test_product_tree_batch_gcd_matches_pairwise_factor_splitting(self) -> None:
+        values = [15, 21, 77]
+        self.assertEqual(
+            minkowski.product_tree_shared_divisors(values), [3, 21, 7]
+        )
+        product_parts, product_stats = minkowski.split_shared_cofactors(
+            values, "product-tree"
+        )
+        pairwise_parts, _ = minkowski.split_shared_cofactors(values, "pairwise")
+        self.assertEqual(product_parts, pairwise_parts)
+        self.assertEqual(product_parts, [[3, 5], [3, 7], [7, 11]])
+        self.assertEqual(product_stats["ambiguous_full_shared_cofactor_count"], 1)
+        composite_aggregate_values = [3 * 5 * 11, 3 * 7, 5 * 13]
+
+        def is_composite(value: int) -> bool:
+            return any(value % divisor == 0 for divisor in range(2, isqrt(value) + 1))
+
+        refined, refined_stats = minkowski.split_shared_cofactors(
+            composite_aggregate_values,
+            "product-tree",
+            needs_refinement=is_composite,
+        )
+        pairwise_refined, _ = minkowski.split_shared_cofactors(
+            composite_aggregate_values, "pairwise"
+        )
+        self.assertEqual(refined, pairwise_refined)
+        self.assertEqual(refined[0], [3, 5, 11])
+        self.assertEqual(refined_stats["composite_aggregate_fallback_count"], 1)
+        with self.assertRaisesRegex(ValueError, "unknown batch-GCD engine"):
+            minkowski.split_shared_cofactors(values, "unknown")
+
+    def test_generic_bnf_free_consumers_prove_declared_factor_hints(self) -> None:
+        for name in (
+            "augment_bnf_free_canonical_principal_relations.py",
+            "audit_bnf_free_s_class_quotient.py",
+        ):
+            with self.subTest(name=name):
+                source = (CAS / name).read_text()
+                self.assertIn('ledger.get("selmer_rational_primes"', source)
+                self.assertIn("value.is_prime()", source)
+                self.assertIn("pari.addprimes(declared_primes)", source)
+
+    @staticmethod
+    def _synthetic_sparse_ledger(projective_key: list[str], row: str) -> dict:
+        return {
+            "schema": "elliptic-curves.bnf-free-principal-relation-ledger.v1",
+            "curve_preset": None,
+            "factor_hint_certificate": None,
+            "defining_polynomial_ascending": ["1", "1", "0", "1"],
+            "field_discriminant": "-31",
+            "generator_coordinate_order": ["1", "theta", "theta^2"],
+            "factor_base_bound": 3,
+            "factor_base_completion": {
+                "all_prime_ideals_above_rational_primes_through": 3,
+                "materialized_complete_factor_base": True,
+                "extra_declared_S_rational_primes": [],
+            },
+            "selmer_rational_primes": [],
+            "factor_base": [
+                {
+                    "hnf": "P0",
+                    "norm": 2,
+                    "residue_degree": 1,
+                    "rational_prime": 2,
+                },
+                {
+                    "hnf": "P1",
+                    "norm": 3,
+                    "residue_degree": 1,
+                    "rational_prime": 3,
+                },
+            ],
+            "S_columns": [],
+            "large_prime_merge_mode": "sparse-hypergraph",
+            "generators": [
+                {
+                    "power_basis": projective_key,
+                    "primitive_projective_power_basis": projective_key,
+                }
+            ],
+            "partial_relations": [
+                {
+                    "generator_index": 0,
+                    "fb_parity_mask_hex": row,
+                    "large_prime_vertices": [[101, "Q101"], [103, "Q103"]],
+                    "source": "synthetic",
+                }
+            ],
+            "closed_relations": [],
+            "unresolved_cofactors": [],
+        }
+
+    def test_cross_run_sparse_merge_finds_cycle_with_exact_provenance(self) -> None:
+        left = self._synthetic_sparse_ledger(["1", "1", "0"], "0x1")
+        right = self._synthetic_sparse_ledger(["1", "0", "1"], "0x2")
+        merged = merge_ledgers.merge_loaded_ledgers([left, right])
+        summary = merged["merged_relation_collection"]
+        self.assertEqual(summary["new_cross_run_closed_relation_count"], 1)
+        self.assertEqual(summary["cross_run_quotient_rank_gain"], 1)
+        self.assertEqual(merged["large_prime_elimination"]["nullity"], 1)
+        relation = merged["closed_relations"][0]
+        self.assertEqual(relation["fb_parity_mask_hex"], "0x3")
+        self.assertEqual(relation["generator_indices"], [0, 1])
+        self.assertEqual(relation["source_ledger_indices"], [0, 1])
+
+    def test_cross_run_sparse_merge_deduplicates_projective_generators(self) -> None:
+        left = self._synthetic_sparse_ledger(["1", "1", "0"], "0x1")
+        right = self._synthetic_sparse_ledger(["1", "1", "0"], "0x2")
+        merged = merge_ledgers.merge_loaded_ledgers([left, right])
+        summary = merged["merged_relation_collection"]
+        self.assertEqual(summary["skipped_cross_run_projective_duplicate_count"], 1)
+        self.assertEqual(summary["new_cross_run_closed_relation_count"], 0)
+        self.assertEqual(merged["large_prime_elimination"]["edge_count"], 1)
 
     def test_pinned_bnf_free_pilot_is_explicitly_uncertified(self) -> None:
         path = (

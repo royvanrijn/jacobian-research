@@ -43,12 +43,23 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   while retaining exact principal-generator witnesses, and its bounded
   adaptive mode can reuse residual degree-one ideals as new special ideals.
 - `run_fermigier_rank20_minkowski_specialq.py`: full-ideal Minkowski
-  special-q collector.  In addition to its historical one-large-prime graph,
-  the opt-in `--norm-factor-mode exact --large-prime-merge-mode
-  sparse-hypergraph` path retains fully factored multi-residual supports and
-  exact dependency witnesses.  It supplies declared discriminant factors to
-  PARI before maximal-order construction.  This is relation collection, not
-  class-group completion or a Selmer calculation.
+  special-q collector.  Its hybrid path trial-divides beyond the factor base,
+  proves retained probable-prime cofactors, can batch-GCD unresolved composite
+  cofactors using a product/remainder tree with a narrow exact pairwise
+  fallback, and its sparse-hypergraph path retains every exact partial edge as
+  well as closed dependencies. Primitive projective normalization rejects
+  rational-multiple fake cycles. It supplies proved declared discriminant
+  factors to PARI before maximal-order construction. This is relation
+  collection, not class-group completion or a Selmer calculation.
+- `merge_bnf_free_minkowski_relation_ledgers.py`: replays the retained sparse
+  edges from compatible independent runs in one hypergraph, deduplicates
+  projective generators across runs, and stores exact generator witnesses for
+  any genuinely cross-run cycles. A forest remains a negative checkpoint, not
+  evidence of class-group completion.
+- `select_bnf_free_minkowski_feedback_specials.sage`: ranks repeated residual
+  prime-ideal vertices in a mergeable ledger, reconstructs their degree-one
+  residues exactly, and emits a reproducible adaptive special-q seed list.
+  This is graph scheduling only; it proves no relation or arithmetic bound.
 - `certify_nagao_rank20_t5081.py`: exact Nagao rank-at-least-20 certificate.
 - `newfamily/certify_rank_t83_6.py`: exact-rank-14 Sage/PARI replay.
 - `elkies_residual_selmer_gate.py`: fail-closed rank-32 residual-dimension
@@ -111,6 +122,40 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   exceptional points. Its v3 Selmer record also retains every local allowed
   subspace and the exact local-condition matrix rank after deleting each
   place. Enumeration limits and resource stops are recorded fail-closed.
+- `quotient_rank_escape_detector_v2.py`: exact backend-independent `F_2`
+  measurement layer for a completed all-place descent.  It canonicalizes the
+  global condition row space, quotients by the actual MW17 image, computes
+  summed/independent local codimensions and every leave-one-place-out residual
+  dimension, then loads the twelve held-out record directions.  It refuses
+  incomplete place sets and makes no pairing claim on a coordinate complement.
+  The present record certificate is Outcome D because its global squareclass
+  domains have not completed.
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+- `build_mw29_relative_2selmer_matrix.py`: backend-independent proof gate for
+  the record fibres. It row-reduces the certified 29-dimensional Kummer image
+  first, forms every local equation only on its complement, emits the actual
+  residual kernel basis, greedy rank-gain order, pairwise local intersections,
+  every leave-one-place-out rank, and an exact minimum annihilating place cut
+  within a declared search budget. A zero matrix kernel is promoted only when
+  the supplied global envelope and local maps are certified. Certified Selmer
+  parity is applied to upper bounds, so an even residual bound of at most one
+  closes at zero.
+- `audit_mw29_relative_selmer_witness_bound.py`: non-enumerative upper-bound
+  gate. From `dim V <= D` and exact global witnesses whose combined norm/local
+  obstruction syndromes have rank `r`, it certifies
+  `dim(Sel_2/im(MW29)) <= D-r-29`. This lets an F2-only class/ray-class bound
+  and partial relation collection prune monotonically without pretending that
+  the explicit witnesses span the anonymous class-group remainder. It likewise
+  supports certified residual parity and rejects auxiliary fingerprints as
+  condition blocks.
+- `run_mw29_relative_2selmer_from_bnf.sage`: quotient-native certified-BNF
+  backend for curves 356 and 385. It constructs only the global norm envelope,
+  embeds and exactly verifies all 29 point squareclasses, quotients them before
+  requesting a local image, checkpoints after every place, and stops as soon
+  as a certified local subset annihilates the residual envelope. It constructs
+  neither the full Selmer basis nor any cover before this gate. The same JSON
+  ambient manifest can instead be supplied by an F2-only class-relation or
+  ray-class upper-bound backend.
 - `run_elkies_2026_pari219_bnf_benchmark.py`: owns and benchmarks the six-
   parameter threaded BNF collector introduced on PARI's 2.19 development
   branch. It retains a binary checkpoint only after `bnfcertify`; timeouts
@@ -138,6 +183,22 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   4 directly multiplies target ideals by S-ideals before short-element
   enumeration. Closing its bounded factor-base quotient would still require a
   factor-base generation proof, units, and local Selmer conditions.
+- `r17_kummer_quotient_search.py` and
+  `run_r17_kummer_quotient_sclass_collector.sage`: dependency-free policy
+  helpers plus the exact Sage arithmetic driver.  Candidate lattices cycle
+  through single, paired, and sparse products of all certified Kummer
+  half-ideals, preferentially sampling the exceptional block.  The driver
+  rotates through nonzero products of unresolved columns of configurable
+  width and records every exact row's rank gain both modulo generic MW17 and
+  modulo the full known subgroup. Its optional `idealredmodpower2` engine
+  reduces modulo ideal squares and serves as a diagnostic control; current
+  pilots show that neither it nor ordinary multi-target reduction replaces a
+  batch special-q sieve.
+- `run_r17_kummer_quotient_sclass_suite.py`: gives curves 351, 356, 376, 377,
+  and 385 identical bounded budgets in both quotient objectives, then records
+  relation structure and descriptive displayed-MW-gain correlations in a
+  local JSON summary.  Neither script's materialized quotient dimension is a
+  global upper bound without a separate factor-base generation proof.
 
 ## Shared arithmetic
 

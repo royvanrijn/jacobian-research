@@ -1,0 +1,164 @@
+{
+  "case_count": 2,
+  "cases": [
+    {
+      "case_id": "record-r29-356",
+      "certified_rank_lower_bound": 29,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "0",
+        "1",
+        "0",
+        "-24391876744717707263532695900840552395172973498186560300",
+        "46943906433780620456844832699051340439698711588743845207309557656274241785479710000"
+      ],
+      "held_out_exceptional_point_count": 12,
+      "nagao_record": null,
+      "parameter": "-970521251165766412987689802944/5201452365084059419448702694373",
+      "program": "artifacts/local/elliptic-curves/r17-quotient-rank-escape-detector-v2/magma-controls/record-r29-356.m",
+      "program_sha256": "9e8481510ee6c262658bf43bfa664e7e81177e7eab2d2b6f661b8bf33282d3f5",
+      "projective_parameter": [
+        -970521251165766412987689802944,
+        5201452365084059419448702694373
+      ],
+      "provenance": {
+        "artifacts/generated-results/elkies-k3-r17-074d9-cross-fibre-bisection-transfer-v1.json": "7f97d43846e6c2b939273617a5209122b02dbe51d056c742c30f271cfbe86098",
+        "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json": "9a2675ab48cc37111d1f4050bd1797fc84c98b7839668d292d11406efe7a9eaa",
+        "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json": "15aeb70029a078dd51024a2e4c8d75a336a7197abe9471d79151a91178a59ec5"
+      },
+      "rigid_complement_point_labels": [
+        "P18",
+        "P20",
+        "P21",
+        "P22",
+        "P23",
+        "P24",
+        "P26",
+        "P27",
+        "P28",
+        "P29"
+      ],
+      "rigid_direction_labels": [
+        "074d9-orbit-04b07",
+        "074d9-orbit-11a44"
+      ],
+      "rigid_quotient_rows": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "role": "record-rank29-residual-selmer-target"
+    },
+    {
+      "case_id": "record-r29-385",
+      "certified_rank_lower_bound": 29,
+      "generic_section_count": 17,
+      "global_minimal_model": [
+        "1",
+        "-1",
+        "1",
+        "-331827496674406562041164370816053963496434513510649284995530467",
+        "2322853282053688692296179831887155386042997843373920023045057766047634710076537198987220653859"
+      ],
+      "held_out_exceptional_point_count": 12,
+      "nagao_record": null,
+      "parameter": "-4569968803191492789881348058432/20219201289082406615406548938643",
+      "program": "artifacts/local/elliptic-curves/r17-quotient-rank-escape-detector-v2/magma-controls/record-r29-385.m",
+      "program_sha256": "a91ff2d0ef8e4297ecafb316c6d1c447b1a83d0255a0513f36afbd6743788af8",
+      "projective_parameter": [
+        -4569968803191492789881348058432,
+        20219201289082406615406548938643
+      ],
+      "provenance": {
+        "artifacts/generated-results/elkies-k3-r17-074d9-cross-fibre-bisection-transfer-v1.json": "7f97d43846e6c2b939273617a5209122b02dbe51d056c742c30f271cfbe86098",
+        "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json": "9a2675ab48cc37111d1f4050bd1797fc84c98b7839668d292d11406efe7a9eaa",
+        "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json": "15aeb70029a078dd51024a2e4c8d75a336a7197abe9471d79151a91178a59ec5"
+      },
+      "rigid_complement_point_labels": [
+        "P18",
+        "P19",
+        "P20",
+        "P22",
+        "P23",
+        "P25",
+        "P26",
+        "P27",
+        "P28",
+        "P29"
+      ],
+      "rigid_direction_labels": [
+        "074d9-orbit-11279",
+        "074d9-orbit-080fa"
+      ],
+      "rigid_quotient_rows": [
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "role": "record-rank29-residual-selmer-target"
+    }
+  ],
+  "claim_boundary": "This manifest certifies exact generated inputs only. It contains no completed 2-Selmer group, rank upper bound, or successful cover-search claim.",
+  "method": {
+    "backend": "Magma SelmerGroup([2])/DescentMaps/TwoCover",
+    "blind_phase_uses_public_exceptional_points": false,
+    "cover_search_bound": 1000,
+    "enumerate_nonzero_quotient_class_limit": 255,
+    "generic_embedding": "AtoS(mu(P)) for each specialized generic section",
+    "large_quotient_policy": "construct and search a canonical quotient basis only",
+    "selmer_raw_basis": true,
+    "unconditional_class_group_request": "Bound=-1"
+  },
+  "schema": "elliptic-curves.elkies-2026-relative-2selmer-suite-input.v1",
+  "status": "EXACT_INPUTS_MAGMA_COMPLETION_REQUIRED"
+}

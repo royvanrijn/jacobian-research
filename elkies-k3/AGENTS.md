@@ -27,11 +27,12 @@ and a reproducible certificate plan.
   directions: `R17 -> 4A1/MW13 -> R17`, with thirteen saturated rational
   sections and target-free reverse selection.
 - Lane B is arithmetic-first globally: `T` and its full stable marked curve
-  precede `NS=T^perp`, rootlessness, and equation work. Determinants `720`,
-  `950`/`NS0024`, and `1184`/`NS0031`, together with the split determinant-378
-  row, are arithmetically excluded. Its exact marked curve is `X_0(63)`. The
-  determinant-720 stable curve is `X_0(60)` and has only rational cusps; its
-  known rational `3A5` point instead saturates to determinant `20`.
+  precede `NS=T^perp`, rootlessness, and equation work. Determinants `500`,
+  `720`, `750`, `950`/`NS0024`, and `1184`/`NS0031`, together with the split
+  determinant-378 row, are arithmetically excluded. The determinant-500 and
+  determinant-750 rootless rows have exact stable curves `X_H(50)` and
+  `X_H(75)` and no rational noncuspidal points. The rootless subqueue is now
+  `1` possible, `5` excluded, and `60` unknown; the equation handoff is empty.
 - The construction target is stronger than a plain different-NS MW17:
   require a certified positive-rank low-genus carrier and an independent
   pullback section. The stretch target is an integral `V4`-stable MW lattice
@@ -55,6 +56,9 @@ and a reproducible certificate plan.
 - reopening determinant 720 as a full rational rank-19 source over `QQ`.
 - reopening the split determinant-378 `X_0(7)` row; its literal marked curve
   is `X_0(63)` and has no rational noncuspidal point.
+- reopening the determinant-500 or determinant-750 rootless rows; their
+  literal marked curves map to `X_0(50)` and `X_0(75)` and have only rational
+  cusps.
 - inspecting rootless frames or launching coefficient searches before their
   full marked `T` curve has a certified rational non-CM point.
 
@@ -72,7 +76,8 @@ These remain useful provenance/regression material and are indexed from `../arch
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 252991e141c42e55 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK b932f409dfffdb55 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY d94b3dbddf5cb529 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 9f40eebe50b66ea4 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY ec9b82089d2e9196 -->
+<!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 9e0df73560e0a607 -->

@@ -52,21 +52,31 @@ local cache so it cannot become a competing mathematical-status authority.
   The exact `--check` command is recorded in `REPRODUCE.md`.
 
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6014cc6c7b64d76e -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY d94b3dbddf5cb529 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY ec9b82089d2e9196 -->
+<!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 
 - `elkies-k3-rank19-arithmetic-marking-classifier-v1.json` records exact
   NS/T/Clifford data for all 66 rootless-MW17 candidate surfaces, separates
   coarse norm-one curves from full discriminant-marking curves, and reports
-  one `ARITHMETICALLY_POSSIBLE`, three `ARITHMETICALLY_EXCLUDED`, and 62
+  one `ARITHMETICALLY_POSSIBLE`, five `ARITHMETICALLY_EXCLUDED`, and 60
   `UNKNOWN` rows. `elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json`
   is the fail-closed new different-NS equation handoff; it is empty. Replay
   both with
   `sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check`.
   Their whole-file SHA-256 values are respectively
-  `dc9b0e2513d7517ff0439b31e238e2db94047ca05cb89772a43f83344d888123`
-  and `8cab33d85deb010c19c4aa8454a2e0feea34b27b17507770b3a60d9942bac8e2`.
+  `e1656aaf4d9e2a423b88575ec9427e152bbeaad4874b7cc2d185ef20a99a6f4e`
+  and `22450a3a04809896fbffd9fc34816e3e97fa4b879e551dcaea4ad65659aaa947`.
+
+- `elkies-k3-det500-det750-qq-marking-obstructions-v1.json` reconstructs the
+  literal and primitive Clifford orders for the two selected rootless rows,
+  computes their `A5`, `S5`, and `S5 x C2` discriminant images, identifies
+  the exact genus-4 and genus-9 curves `X_H(50)` and `X_H(75)`, and proves
+  that their rational points are exactly four cusps apiece. Replay it with
+  `sage -python elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage --check`.
+  Its whole-file SHA-256 is
+  `e1f74fd18fd17976a05d4340437fe09e841e28efdf681e2945098b3dc51b81de`.
 
 - `elkies-k3-golay-det720-qq-marking-obstruction-v1.json` records the exact
   literal and primitive-similarity Clifford orders, the `S3` action on
@@ -79,12 +89,12 @@ local cache so it cannot become a competing mathematical-status authority.
 
 - `elkies-k3-arithmetic-first-marked-t-foundry-v1.json` is the global
   transcendental-first queue. It orders all 827 `T` rows without rootless
-  data, records 4 exclusions, 1 realized positive control, 822 arithmetic
-  research rows, 23 coarse genus-at-most-two diagnostics, and no new
+  data, records 6 exclusions, 1 realized positive control, 820 arithmetic
+  research rows, 21 coarse genus-at-most-two diagnostics, and no new
   NS/rootless handoff. Replay it with
   `python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check`.
   Its whole-file SHA-256 is
-  `8f6e07d6acd2a5f73b68d4bdddda6c129ada835df439d5e69fa99e0764a7e21a`.
+  `d22bbb425f1d427a9d9c17823b2259f7d0b3e1e5c7f9e2c155cf3b291866dd9d`.
 
 - `elkies-k3-det378-qq-marking-obstruction-v1.json` records the exact
   `U(3)+<42>` discriminant form, primitive and literal Clifford orders, `A4`
@@ -181,6 +191,16 @@ local cache so it cannot become a competing mathematical-status authority.
   the aggregate whole-file SHA-256 is
   `2c09ce7aef7d21c7db7694fdffa47ea913c3402a6485144ad93004800503c603`.
 <!-- status-consumer: EC-K3-R17-NORM12-11952-RANK55-SINGLETON-FROBENIUS-BOUNDS 163b9ffe20045a08 -->
+
+- `elkies-k3-r17-all17-product-toric-frobenius-campaign-v1.json` aggregates
+  the complete product classification.  Every target has a hardened
+  `p=131` certificate, and every Tate survivor also has one at `p=137`.
+  Twelve products have geometric rank zero; five retain Tate degree two at
+  both primes and only the upper bound `rank<=2`.  Replay with
+  `sage -python elkies-k3/scripts/certify_r17_all17_product_toric_frobenius_campaign.sage --check`;
+  the aggregate whole-file SHA-256 is
+  `9b9467f6c1a754f41f9feeed6be0ae8c13d275e4203f9cd358df08705ef7318c`.
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION cfb2417a30fab18d -->
 
 - `elkies-k3-r17-norm12-icarm-database-sweep-v1.json` records all 2,844 exact
   projective preimage decisions for the 474 equations in the pinned ICARM
@@ -293,23 +313,37 @@ local cache so it cannot become a competing mathematical-status authority.
   exact nondegenerate toric Frobenius calculations for each of the four
   record-specific twists.  Their best geometric MW-rank upper bounds are
   `4,4,4,2`.  Replay the certificate with
-  `sage -python elkies-k3/scripts/certify_r17_074d9_twist_good_reduction_bounds.sage --check`.
+  `sage -python elkies-k3/scripts/certify_r17_074d9_twist_good_reduction_bounds.sage --check`;
+  its whole-file SHA-256 is
+  `8829b68c6d92d4cdd731b9c5d1db01a873848cf9e8971130c801b0a930d23cd3`.
 
 - `elkies-k3-r17-074d9-record-twist-sections-v1.json` gives one exact
   height-six section on each twist, its record-fibre specialization, and its
   displayed exceptional-quotient image.  Replay it with
-  `sage -python elkies-k3/scripts/derive_r17_074d9_record_twist_sections.sage --check`.
+  `sage -python elkies-k3/scripts/derive_r17_074d9_record_twist_sections.sage --check`;
+  its whole-file SHA-256 is
+  `7abe20f32668f8406427c360fa244b7f477551e3e1025c25f78de83dcc93688e`.
 
 - `elkies-k3-r17-074d9-twist-2descent-audit-v1.json` preserves all four
   completed discovery-prime 2-Selmer groups and all four globally good
   `p=131` timeouts.  The former do not bound the characteristic-zero ranks;
-  the latter return no Selmer group.
+  the latter return no Selmer group.  Its whole-file SHA-256 is
+  `51456199757e0309df291d9ad9e667b672d7c105293e6f4e9d2531040c31defe`.
+
+- `elkies-k3-r17-074d9-twist-section-ladder-audit-v1.json` indexes the exact
+  complete discovery systems for all four twists at `P.O=0,1,2`, verifies the
+  known section reduction in each `P.O=0` chart, and records the completed
+  `04b07` leading-ideal census.  Higher solver levels remain incomplete.  Its
+  whole-file SHA-256 is
+  `a4e95a15d7c65edaf153ef5f79c073c96838efcc47aa1a74900e29b476de3fac`.
 
 - `elkies-k3-r17-074d9-record-twist-mw-contribution-v1.json` combines the
   exact images and geometric bounds.  It proves rank obstructions `8<12` at
   curve 356 and `6<12` at curve 385 while retaining all four individual
   `QQ(u)` ranks as `UNKNOWN`.  Replay it with
-  `sage -python elkies-k3/scripts/certify_r17_074d9_record_twist_mw_contribution.sage --check`.
+  `sage -python elkies-k3/scripts/certify_r17_074d9_record_twist_mw_contribution.sage --check`;
+  its whole-file SHA-256 is
+  `651b43cdaed9cbed94197d5b7650fe5cfd12c78a3b5f199c79c865eaf6686423`.
 <!-- status-consumer: EC-K3-R17-074D9-RECORD-TWIST-MW-OBSTRUCTION c794f827e9a8ac36 -->
 
 - `elkies-k3-r17-074d9-norm8-cross-fibre-transfer-v1.json` records the exact
@@ -346,10 +380,86 @@ local cache so it cannot become a competing mathematical-status authority.
   comparison, sampled `t mod p^k` strata, and two CRT prototype cylinders.
   The matrices are explicitly on the certified known subgroup; complete
   Selmer groups and their leave-one-place-out matrices remain `UNKNOWN`.
+  It also enumerates the exact place-block support code of every nonzero known
+  residual class. The minimum support weights for controls
+  `351,356,376,377,385,12` are respectively `4,5,7,5,6,4`, explaining why
+  delete-one and delete-two diagnostics on this subgroup are redundant. After
+  removing the two rigid directions, the selected ten-dimensional blocks on
+  356 and 385 have the still larger minimum support weights `6` and `7`. Their
+  block-localization dual matroids each have one component of dimension ten,
+  excluding any direct-sum decomposition separated by audited places on the
+  known point block (not a complete-Selmer or Cassels-pairing conclusion).
   Replay it with
   `sage -python elkies-k3/scripts/build_r17_residual_selmer_fingerprints.sage --check`;
   its whole-file SHA-256 is
-  `54548e6b7110d0b53ae3bd86a97bbd06fd1159836d19c3fc3ad4e23b77320fbc`.
+  `dbc9fa5beac444eee329292920e7cc58193a4b9cdc18691987620332116b5f8a`.
+
+- `elkies-k3-r17-prospective-crt-local-stability-v1.json` records every
+  original `p^3` failure and the disjoint local-only discovery/confirmation
+  samples used to freeze the refined classes.  Its cylinder-definition hash
+  is `500dc6931c5aeaf3d6d9982bb994286d7aee36e7c87b9e414e8b7e0ef8aef15c`;
+  its whole-file SHA-256 is
+  `bb573fbe66bede1625afc57e777ec37a41e58a560162a4207359968f745f173f`.
+
+- `elkies-k3-r17-prospective-crt-frozen-cohorts-v1.json` freezes all 2,560
+  exact candidates and six cohort assignments before search.  The committed
+  candidate-list hash is
+  `5df03637d4db0baa95cb9e5f697fe35e5e897838676b6370c0e08bdae5aa9aeb`;
+  its whole-file SHA-256 is
+  `7e8c43a6f67eac96dd9dede333f94e0cce139fa685b421f83ad7e4d69c1a75d4`.
+
+- `elkies-k3-r17-prospective-crt-arithmetic-features-v1.json.gz` stores every
+  exact pre-search local image matrix, source kernel, cumulative/leave-one-out
+  rank, component datum, Nagao comparison row, and monotone-gate record.  It
+  computes no complete Selmer group or finite proved residual upper bound.
+  Its whole-file SHA-256 is
+  `709ac16370fd5ced34857068102d57d634f375ad2a4ab98c73c221f0baf48d6b`.
+
+- `elkies-k3-r17-prospective-crt-search-protocol-v2.json` freezes the uniform
+  direct-search amendment before any search returned a point or completed.
+  Its protocol-definition hash is
+  `63d6b9e83f52bc7208b9057298e05941dfcedc85d53f5681186c953498947d4b`.
+  `elkies-k3-r17-prospective-crt-point-search-ledger-v2.json` then retains all
+  2,560 clean bounded misses, and
+  `elkies-k3-r17-prospective-crt-search-sensitivity-v1.json` records that the
+  same call redetects no escape on known +12 fibres 356 and 385.  This makes
+  the zero-event ledger detector-limited without changing its frozen design.
+  `elkies-k3-r17-prospective-crt-statistical-analysis-v1.json` records the
+  zero-event comparisons and refuses an outcome predictor.  Their whole-file
+  SHA-256 values are respectively
+  `f99bdf697e9d9781237011eaaabbaf35cbb55ab9fe58b8ed2809c9210da7277b`
+  `9787d6010c8384b7ce7f13915345b03cff30c87bdc7fea64b3c32861036a7a01`,
+  and `e947ecc5ea0210f329afdd4d856f1e1c20d1e964a54c2aeb2e10f2818903fd8e`.
+<!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-LOCAL-STABILITY 0edaaa6f05041634 -->
+<!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-ESCAPE-EXPERIMENT 021a952efb9ea0f4 -->
+
+- `elkies-k3-r17-quotient-rank-escape-detector-v2-controls-v1.json` is the
+  fail-closed Outcome-D record-control certificate.  It verifies both exact
+  models, the `17+12=29` known mod-two images, every finite bad place,
+  infinity, cached cubic fields, and preserved BNF failures.  Complete Selmer
+  dimensions and all global condition matrices remain null.  The paired
+  `-sample-v1.json` and `-unblinding-key-v1.json` files freeze respectively a
+  label-free hash-order sample and its separate five-cohort key: Stage 1 has
+  ten rows, Stage 2 has thirty, and neither is authorized.  Their whole-file
+  SHA-256 values are respectively
+  `f5ea27200504a9d79313b2bbad1c915c4849e07b956ac80e25e56a32cb59d519`,
+  `519b385d5a6b5e41b1cf69e958df4ba5d8c79a77a698ebf41d740fa81f6f79bc`,
+  and `03270ff0220457094dda5f89a701de1e0df5668188cb27e897442a90a2bd55ff`.
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+
+- `elkies-k3-r17-kummer-classgroup-pressure-v1.json` computes the exact
+  bad-prime valuation-parity matrices of all displayed Kummer classes on
+  controls 351, 356, 376, 377, and 385.  Their everywhere-even kernels prove
+  full cubic class-group 2-rank lower bounds `18,21,17,15,15`; after adjustment
+  by MW17, the residual blocks force class-group images of dimension at least
+  `6,11,3,5,10`.  Every point also carries an exact Kummer half-ideal with its
+  localized square correction.  Exact root numbers and the corresponding
+  total 2-Selmer parities are retained for the monotone parity squeeze.  These
+  are lower bounds and relation seeds, not S-class groups, Selmer upper
+  bounds, or exact elliptic ranks.  Replay it
+  with `sage -python elkies-k3/scripts/certify_r17_kummer_classgroup_pressure.sage --check`;
+  its whole-file SHA-256 is
+  `5c0f1981f916cb031ceb29addc884aeaf3198b643b05f4aa8a44d4a3fbae3ec7`.
 
 - `elkies-k3-r17-074d9-quotient-arithmetic-blocks-v1.json` presents each
   record quotient as twelve named exceptional generators modulo the two exact

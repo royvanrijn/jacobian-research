@@ -47,6 +47,92 @@ The host/backend audit is
 These are lower-bound controls.  The displayed ranks are not asserted to be
 exact until a matching upper bound exists.
 
+## MW29 quotient-native record-fibre route
+
+For record fibres 356 and 385 the active question is now narrower than the
+older MW17 control calculation:
+
+```text
+Sel_2(E/QQ) / image(MW29/2 MW29) = 0 ?
+```
+
+[`build_mw29_relative_2selmer_matrix.py`](../cas/build_mw29_relative_2selmer_matrix.py)
+implements the CAS-independent linear-algebra gate. Its input is a certified
+global norm-squareclass upper envelope, 29 exact Kummer coordinate rows, and
+exact allowed subspaces at any computed local places. It extends the MW29 rows
+to an ambient basis *before* forming local equations. The output contains the
+full matrix on the MW29 quotient, an explicit kernel basis in quotient and
+global coordinates, greedy place ordering, pairwise rowspace intersections,
+leave-one-place-out ranks, and a bounded exhaustive minimum-place-cut search.
+
+There are three distinct fail-closed outcomes.
+
+- If the global envelope and supplied local maps are certified and the kernel
+  is zero, that subset of places already proves the residual Selmer quotient
+  is zero; uncomputed places cannot restore a class.
+- On both record fibres, the certified total 2-Selmer parity and the odd
+  MW29 dimension make the residual dimension even. Hence a certified raw
+  upper bound of one also sharpens to zero.
+- If the kernel is nonzero but some relevant places remain, its dimension is
+  only a monotone upper bound.
+- If all relevant places are complete, the kernel is the exact residual
+  2-Selmer quotient for the supplied certified global presentation.
+
+[`run_mw29_relative_2selmer_from_bnf.sage`](../cas/run_mw29_relative_2selmer_from_bnf.sage)
+is the first arithmetic backend for this interface. Given an already
+`bnfcertify`-accepted checkpoint, it computes `bnfpSelmer` and the norm kernel,
+maps all 29 points into that space using auxiliary-prime fingerprints followed
+by exact `nfissquare` verification, and proves their rank before computing a
+single local condition. It then adds places monotonically and checkpoints
+after each one. The default scheduling prefixes reuse the exact minimum cuts
+that distinguish the already-known rigid-invisible ten-direction
+presentations—`2,3,13,23,751` for 356 and `13,29,47,89` for 385—while treating
+them only as priors for the unknown quotient. Curve 385 defers 2, and
+`--place-order` can replay the posterior greedy order.
+No full Selmer basis or 2-cover enumeration is performed on this path.
+
+The certified-BNF provider does not solve the present BNF bottleneck by
+itself. The manifest boundary is deliberate: a factor-base generation proof
+plus exact mod-two relations, a certified ray-class computation, or another
+class-field upper bound can provide the same global envelope without
+constructing a generic full class-group presentation. A bounded relation
+plateau remains ineligible. Thus the complete residual groups for 356 and 385
+remain `UNKNOWN` until one of those global providers closes or a certified BNF
+checkpoint becomes available.
+
+After that gate closes, the next arithmetic object is the image filtration
+
+```text
+image(Sel_2 -> Sel_2)/MW17
+  >= image(Sel_4 -> Sel_2)/MW17
+  >= image(Sel_8 -> Sel_2)/MW17.
+```
+
+The exact protocol and claim boundary are fixed in
+[`R17_RECORD_PAIR_HIGHER_2POWER_SELMER_PROGRAM.md`](R17_RECORD_PAIR_HIGHER_2POWER_SELMER_PROGRAM.md).
+In particular, the twelve known exceptional rational classes are a forced
+stable floor at every level, the first dimension drop must be even, and
+higher descent is applied only to any surviving complement of that floor.
+No $4$- or $8$-descent is authorized before the complete unconditional
+$2$-Selmer group is available.
+
+There is also a strictly weaker but often cheaper interface that does not need
+coordinates for a basis of the global envelope. If `dim V <= D` is certified
+and explicit global squareclasses have rank-`r` images in the direct sum of
+the norm and local-condition cokernels, then
+
+```text
+dim(Sel_2(E/QQ) / image(MW29)) <= D - r - 29.
+```
+
+This follows because those images prove a rank-`r` lower bound for the full
+condition map; independence of the witnesses need not be assumed separately.
+[`audit_mw29_relative_selmer_witness_bound.py`](../cas/audit_mw29_relative_selmer_witness_bound.py)
+implements this certificate, including greedy block order, deletion ranks, and
+minimum closing place cuts. It is the bridge from an F2-only `S`-class upper
+bound plus partial exact relation generators to a monotone residual-Selmer
+upper bound. It never promotes an uncertified relation plateau.
+
 ## Construction-derived quotient and stop decision
 
 The certified R17 construction supplies a genuine first quotient before any

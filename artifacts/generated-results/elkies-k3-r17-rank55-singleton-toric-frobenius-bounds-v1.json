@@ -1,0 +1,40 @@
+{
+  "character_rank_interval": "17+[1,2]+[1,2]+0",
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-singleton-alternate-orbit-0fda0-p131-toric-frobenius-v1.json": "2fc609194c62078bb7c23b19d4fdc2115050956d6e3ce55598d830d92c01e05d",
+    "artifacts/generated-results/elkies-k3-r17-singleton-alternate-orbit-1037d-p157-toric-frobenius-v1.json": "f0f21cf32531650706ce317546ab118020c14f9b590c0aafdd9a31bdb4864e42",
+    "artifacts/generated-results/elkies-k3-r17-singleton-twist-finite-field-bound-audit-v1.json": "bd7ece6afc123f217227fd56e0498447347043dbfcdda492b630783fbb92b437",
+    "elkies-k3/scripts/certify_r17_rank55_singleton_toric_frobenius_bounds.sage": "e47c6bc8fc579801f0fcc1491e6b7eb84ccfa7c821dd55d9fb8614027392dc90"
+  },
+  "proof_boundary": "The two singleton upper bounds are exact and unconditional, but the second possible direction is not excluded. Exact singleton rank one and the decomposition 17+1+1+0 remain UNKNOWN.",
+  "schema": "elkies-k3.r17-rank55-singleton-toric-frobenius-bounds.v1",
+  "status": "PASS_GEOMETRIC_SINGLETON_RANK_INTERVALS_1_2",
+  "targets": [
+    {
+      "certificate": "artifacts/generated-results/elkies-k3-r17-singleton-alternate-orbit-0fda0-p131-toric-frobenius-v1.json",
+      "certificate_sha256": "2fc609194c62078bb7c23b19d4fdc2115050956d6e3ce55598d830d92c01e05d",
+      "geometric_mw_rank_interval": [
+        1,
+        2
+      ],
+      "label": "alternate-orbit-0fda0",
+      "normalized_tate_factor": "(Z-1)^2",
+      "prime": 131
+    },
+    {
+      "certificate": "artifacts/generated-results/elkies-k3-r17-singleton-alternate-orbit-1037d-p157-toric-frobenius-v1.json",
+      "certificate_sha256": "f0f21cf32531650706ce317546ab118020c14f9b590c0aafdd9a31bdb4864e42",
+      "geometric_mw_rank_interval": [
+        1,
+        2
+      ],
+      "label": "alternate-orbit-1037d",
+      "normalized_tate_factor": "(Z-1)^2",
+      "prime": 157
+    }
+  ],
+  "total_geometric_generic_rank_interval": [
+    19,
+    21
+  ]
+}

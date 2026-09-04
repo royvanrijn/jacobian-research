@@ -1,0 +1,407 @@
+{
+  "claim_boundary": [
+    "This file contains no cohort labels, anchor labels, Selmer results, point-search results, conductors, or bad-prime factorizations.",
+    "Stage 1 has ten prospective fibres plus the two separately identified record controls.",
+    "Stage 2 is a frozen thirty-fibre extension and is not authorized merely because its rows are committed."
+  ],
+  "commitment": {
+    "blinded_rows_sha256": "e0403d50cd31c79fbc653316d75ee70490354427f935f548f8f5ef06c59ad463",
+    "record_controls_in_addition_to_sample": [
+      356,
+      385
+    ],
+    "salt": "r17-quotient-rank-escape-detector-v2-sample-v1",
+    "stage_1_blind_ids": [
+      "258eff2e968d4de65f19ed91",
+      "262d50243dc45c02da4aa59e",
+      "2cf6c54a443213ce187e5c7d",
+      "2d77bfc2c7572505bbb96cc1",
+      "4045ecdc12f92d6afbbc6346",
+      "81a1b461d207c7aa263dd7f1",
+      "9db2fea89d74e5add696bd5c",
+      "c822a034ed2d9cee6cf8d3a5",
+      "ed04d89ea89170f1e6493568",
+      "fdc5b6c27d633f6d70609f83"
+    ],
+    "stage_1_candidate_count": 10,
+    "stage_2_blind_ids": [
+      "03091c5b0bca79f4adb5fee1",
+      "0695a3c82968a3321d2dd453",
+      "1177c534fa26804815cf7b9d",
+      "258eff2e968d4de65f19ed91",
+      "262d50243dc45c02da4aa59e",
+      "2acd127e2524f242d1d886a8",
+      "2cf6c54a443213ce187e5c7d",
+      "2d77bfc2c7572505bbb96cc1",
+      "317e65afcc9a229cf4988ff6",
+      "3415f1fb2ab8b68fbf412216",
+      "4045ecdc12f92d6afbbc6346",
+      "4922b67a95a8d9b231f45e34",
+      "522cb761c7cc87691870cd15",
+      "58927f8f6c7b67f9787146ad",
+      "595ea6aadc8696cf363ba769",
+      "5e02d5b7ce1b3f0513d2a072",
+      "62b5488930fe9608921b9adf",
+      "7950c441432de41de0067fd1",
+      "7f294d388cf4ab894c2d944e",
+      "81a1b461d207c7aa263dd7f1",
+      "8e8a2981e3a76693f74ac43f",
+      "95cb9dec61a8bf9cb4c245e9",
+      "9db2fea89d74e5add696bd5c",
+      "9e3e0e274db86effa370b6e6",
+      "adcfdbf2b8a4dc30c8c98496",
+      "c44b836cb2d44f451c3f5280",
+      "c822a034ed2d9cee6cf8d3a5",
+      "ed04d89ea89170f1e6493568",
+      "f88b9ba3c0a31881d35d9525",
+      "fdc5b6c27d633f6d70609f83"
+    ],
+    "stage_2_candidate_count": 30
+  },
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-prospective-crt-frozen-cohorts-v1.json": "7e8c43a6f67eac96dd9dede333f94e0cce139fa685b421f83ad7e4d69c1a75d4",
+    "source_candidate_list_sha256": "5df03637d4db0baa95cb9e5f697fe35e5e897838676b6370c0e08bdae5aa9aeb"
+  },
+  "rows": [
+    {
+      "blind_id": "03091c5b0bca79f4adb5fee1",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-1526775123744320666555694612587968",
+      "projective_pair": [
+        -1526775123744320666555694612587968,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "0695a3c82968a3321d2dd453",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-2484874559321173507470701166483725",
+      "projective_pair": [
+        -2484874559321173507470701166483725,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "1177c534fa26804815cf7b9d",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "2356621163143387701711689329586441",
+      "projective_pair": [
+        2356621163143387701711689329586441,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "258eff2e968d4de65f19ed91",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-2335070858130745681989859942817216",
+      "projective_pair": [
+        -2335070858130745681989859942817216,
+        1
+      ],
+      "stage_1_included": true,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "262d50243dc45c02da4aa59e",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "2358712365777749409808258974863568",
+      "projective_pair": [
+        2358712365777749409808258974863568,
+        1
+      ],
+      "stage_1_included": true,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "2acd127e2524f242d1d886a8",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "1735560178416220101166713752691264",
+      "projective_pair": [
+        1735560178416220101166713752691264,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "2cf6c54a443213ce187e5c7d",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "1771746736026721344061158291298880",
+      "projective_pair": [
+        1771746736026721344061158291298880,
+        1
+      ],
+      "stage_1_included": true,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "2d77bfc2c7572505bbb96cc1",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-1675421266994610503735434556057024",
+      "projective_pair": [
+        -1675421266994610503735434556057024,
+        1
+      ],
+      "stage_1_included": true,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "317e65afcc9a229cf4988ff6",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-2293193761532963220447829260154247",
+      "projective_pair": [
+        -2293193761532963220447829260154247,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "3415f1fb2ab8b68fbf412216",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "1904400388580409577817142018617609",
+      "projective_pair": [
+        1904400388580409577817142018617609,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "4045ecdc12f92d6afbbc6346",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-1407210966535507986352196845835919",
+      "projective_pair": [
+        -1407210966535507986352196845835919,
+        1
+      ],
+      "stage_1_included": true,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "4922b67a95a8d9b231f45e34",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "2147959676118433771221216642146880",
+      "projective_pair": [
+        2147959676118433771221216642146880,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "522cb761c7cc87691870cd15",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-1429952334459992801363327057581410",
+      "projective_pair": [
+        -1429952334459992801363327057581410,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "58927f8f6c7b67f9787146ad",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "1665548234580723597883246795039296",
+      "projective_pair": [
+        1665548234580723597883246795039296,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "595ea6aadc8696cf363ba769",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-1618213959100205821014019697375181",
+      "projective_pair": [
+        -1618213959100205821014019697375181,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "5e02d5b7ce1b3f0513d2a072",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-1527750492651171017050249888437474",
+      "projective_pair": [
+        -1527750492651171017050249888437474,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "62b5488930fe9608921b9adf",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-2160472181954634979870856997625280",
+      "projective_pair": [
+        -2160472181954634979870856997625280,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "7950c441432de41de0067fd1",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-2003870760702949133708900432352911",
+      "projective_pair": [
+        -2003870760702949133708900432352911,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "7f294d388cf4ab894c2d944e",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-1354251301661164766669225514143632",
+      "projective_pair": [
+        -1354251301661164766669225514143632,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "81a1b461d207c7aa263dd7f1",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "2249704132224519359599461201615094",
+      "projective_pair": [
+        2249704132224519359599461201615094,
+        1
+      ],
+      "stage_1_included": true,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "8e8a2981e3a76693f74ac43f",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "2237273900091484477282772033886784",
+      "projective_pair": [
+        2237273900091484477282772033886784,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "95cb9dec61a8bf9cb4c245e9",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-1635455781600396464278178885379520",
+      "projective_pair": [
+        -1635455781600396464278178885379520,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "9db2fea89d74e5add696bd5c",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "1997768668836837087512792860127972",
+      "projective_pair": [
+        1997768668836837087512792860127972,
+        1
+      ],
+      "stage_1_included": true,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "9e3e0e274db86effa370b6e6",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "1665548251051129369795648319121777",
+      "projective_pair": [
+        1665548251051129369795648319121777,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "adcfdbf2b8a4dc30c8c98496",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "1995682942310326452124610736883022",
+      "projective_pair": [
+        1995682942310326452124610736883022,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "c44b836cb2d44f451c3f5280",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "1307070015333201942782779147689009",
+      "projective_pair": [
+        1307070015333201942782779147689009,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "c822a034ed2d9cee6cf8d3a5",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "1577004718011214876959526179221769",
+      "projective_pair": [
+        1577004718011214876959526179221769,
+        1
+      ],
+      "stage_1_included": true,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "ed04d89ea89170f1e6493568",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-2024309111697453441891702028557760",
+      "projective_pair": [
+        -2024309111697453441891702028557760,
+        1
+      ],
+      "stage_1_included": true,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "f88b9ba3c0a31881d35d9525",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "2101602184579809483272138307820096",
+      "projective_pair": [
+        2101602184579809483272138307820096,
+        1
+      ],
+      "stage_1_included": false,
+      "stage_2_included": true
+    },
+    {
+      "blind_id": "fdc5b6c27d633f6d70609f83",
+      "chart": "norm12-orbit-074d9",
+      "parameter": "-2263844934275579805678014732119031",
+      "projective_pair": [
+        -2263844934275579805678014732119031,
+        1
+      ],
+      "stage_1_included": true,
+      "stage_2_included": true
+    }
+  ],
+  "schema": "elkies-k3.r17-quotient-rank-escape-detector-v2-sample.v1",
+  "selection_rule": {
+    "arithmetic_results_read": false,
+    "coefficient_or_conductor_cost_used": false,
+    "ordering_key": "lexicographic order of the pre-existing 24-hex sample_id in each aggregate-cohort/anchor stratum",
+    "stage_1": "hash rank 1 in both anchor strata of each of five cohorts",
+    "stage_2": "hash ranks 1,2,3 in both anchor strata of each of five cohorts",
+    "stage_2_authorization": "forbidden until complete descents and blind quotient recovery succeed on both record controls 356 and 385"
+  },
+  "status": "FROZEN_BLINDED_STAGE1_AND_STAGE2_SAMPLE_STAGE2_NOT_AUTHORIZED"
+}

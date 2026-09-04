@@ -18670,10 +18670,11 @@ The alternate application proof is
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 252991e141c42e55 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 93e6c5626d369572 -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK b932f409dfffdb55 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6014cc6c7b64d76e -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY d94b3dbddf5cb529 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY ec9b82089d2e9196 -->
+<!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 <!-- status-consumer: EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS 01298fec30fa94a3 -->
 
 ```bash
@@ -18749,6 +18750,8 @@ The arithmetic-gated planner ranking is replayed by
   elkies-k3/scripts/certify_golay_det720_qq_marking_obstruction.sage --check
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_det378_qq_marking_obstruction.sage --check
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage --check
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
 python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
@@ -18760,14 +18763,19 @@ cusps, and imports the exact determinant-20 saturation boundary. With the
 named Mazur--Kenku and marked-period inputs, it excludes a full rational
 determinant-720 marking. The second reconstructs the literal determinant-378
 order, its `A4` spin image and stable `X_0(63)` curve, excluding the split
-row because all rational points are cusps. The classifier then checks all 66 lattice-feasible
-rootless-MW17 surfaces, recording one arithmetically possible control, three
-exclusions, 62 unknowns, and an empty new equation handoff. The determinant
-ranking retains 63 candidates including the realized determinant-948
-control. The final command reverses the global foundry: it orders all 827
-transcendental rows before NS/rootless inspection, records an 822-row
-arithmetic research queue with 23 coarse genus-at-most-two diagnostics, and
-keeps the new NS handoff empty until a full marked rational point is proved.
+row because all rational points are cusps. The third reconstructs the two
+literal `5`-scaled Clifford orders at determinants 500 and 750, computes the
+`A5`, `S5`, and `S5 x C2` discriminant images, and identifies the exact
+stable curves `X_H(50)` and `X_H(75)`. Their rational points are precisely
+four cusps apiece, so both new rootless-MW17 rows are excluded. The classifier
+then checks all 66 lattice-feasible rootless-MW17 surfaces, recording one
+arithmetically possible control, five exclusions, 60 unknowns, and an empty
+new equation handoff. The determinant ranking retains 61 candidates including
+the realized determinant-948 control. The final command reverses the global
+foundry: it orders all 827 transcendental rows before NS/rootless inspection,
+records an 820-row arithmetic research queue with 21 coarse genus-at-most-two
+diagnostics, and keeps the new NS handoff empty until a full marked rational
+point is proved.
 
 ### Integral rank-transfer and character-glue calculus
 
@@ -19581,6 +19589,10 @@ sage -python \
   --check
 
 sage -python \
+  elkies-k3/scripts/certify_r17_074d9_twist_section_ladder_audit.sage \
+  --check
+
+sage -python \
   elkies-k3/scripts/certify_r17_074d9_record_twist_mw_contribution.sage \
   --check
 ```
@@ -19652,6 +19664,57 @@ the checkpointed BNF/descent worker completes. The monotone gate rejects only
 on a proved residual upper bound below 15; otherwise it can authorize an
 explicitly bounded point search but no Selmer or rank claim. See
 [`elkies-k3/R17_RESIDUAL_SELMER_FINGERPRINT_AND_SIEVE_2026-09-04.md`](elkies-k3/R17_RESIDUAL_SELMER_FINGERPRINT_AND_SIEVE_2026-09-04.md).
+
+### Prospective CRT rank-jump experiment
+
+<!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-LOCAL-STABILITY 0edaaa6f05041634 -->
+<!-- status-consumer: EC-K3-R17-074D9-PROSPECTIVE-CRT-ESCAPE-EXPERIMENT 021a952efb9ea0f4 -->
+
+The original `p^3` cylinders fail their target-blind local audit.  Replay the
+pre-outcome higher-power refinement, frozen six-cohort commitment, exact
+pre-search arithmetic panel, uniform direct point search, and zero-event
+analysis with the commands in
+[`elkies-k3/R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md`](elkies-k3/R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md).
+The compact deterministic checks are:
+
+```bash
+python3 elkies-k3/scripts/build_r17_prospective_crt_cohorts.py --check
+python3 elkies-k3/scripts/build_r17_prospective_crt_search_protocol.py --check
+sage -python elkies-k3/scripts/audit_r17_prospective_crt_search_sensitivity.sage --check
+python3 elkies-k3/scripts/analyze_r17_prospective_crt_experiment.py --check
+python3 -m unittest elliptic-curves/tests/test_r17_prospective_crt_experiment.py
+```
+
+The complete ledger has 2,560 clean bounded misses, including `0/512` in the
+pooled full-fingerprint arm and `0/512` in matched ordinary controls.  The
+experiment therefore gives no prospective enrichment evidence at rational
+`x`-height 10,000.  The unchanged call also redetects no escape on either
+known +12 fibre, so the result is detector-limited.  It computes no complete Selmer group, proves no finite
+residual upper bound, and does not identify any miss with rank 17.
+
+### Quotient-aware rank-escape detector v2
+
+<!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-RANK-ESCAPE-DETECTOR-V2 1d97fbd76cb614d0 -->
+
+Freeze and check the hash-order balanced sample, then replay the exact partial
+record-control certificate and post-descent matrix regressions:
+
+```bash
+python3 elkies-k3/scripts/build_r17_quotient_rank_escape_detector_v2_sample.py --check
+sage -python elkies-k3/scripts/certify_r17_quotient_rank_escape_detector_v2_controls.sage --check
+python3 -m unittest \
+  elliptic-curves/tests/test_quotient_rank_escape_detector_v2.py \
+  elliptic-curves/tests/test_elkies_relative_2selmer_checkpointed.py
+```
+
+The checker verifies both exact record models, the 17-dimensional MW17
+images, the twelve-dimensional held-out quotient images, every finite bad
+place, infinity, and the cached cubic descent inputs.  Both complete descents
+remain blocked at the global `S`-class/unit step, so their Selmer dimensions,
+all global local-condition rows, and every leave-one-place-out residual
+dimension remain `UNKNOWN`.  Stage 1 is frozen at ten blinded fibres and has
+not run.  See
+[`elkies-k3/R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md`](elkies-k3/R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md).
 
 ### Direct `norm12-orbit-11952` alternate-Q80 equation
 
@@ -19862,6 +19925,21 @@ multiplicity.  The unconditional result is therefore
 `17+[1,2]+[1,2]+0`, not yet `17+1+1+0`; see
 [`elkies-k3/R17_ALTERNATE_Q80_SINGLETON_TWIST_FROBENIUS_BOUNDS_2026-09-04.md`](elkies-k3/R17_ALTERNATE_Q80_SINGLETON_TWIST_FROBENIUS_BOUNDS_2026-09-04.md).
 <!-- status-consumer: EC-K3-R17-NORM12-11952-RANK55-SINGLETON-FROBENIUS-BOUNDS 163b9ffe20045a08 -->
+
+Run or cheaply verify the complete product triage with:
+
+```bash
+JOBS=3 elkies-k3/scripts/run_r17_all17_product_toric_frobenius_campaign.sh
+sage -python \
+  elkies-k3/scripts/certify_r17_all17_product_toric_frobenius_campaign.sage \
+  --check
+```
+
+The campaign computes all seventeen targets at `p=131`, sends only Tate
+survivors to `p=137`, and obtains twelve unconditional product-rank-zero
+theorems plus five persistent degree-two candidates.  See
+[`elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md`](elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md).
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION cfb2417a30fab18d -->
 
 Run the exact `H=10000` point-map-relation control on the deterministic
 seeded sample of ten other pointed covers:

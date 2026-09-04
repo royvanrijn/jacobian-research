@@ -1,14 +1,14 @@
 {
   "accounting": {
-    "arithmetic_research_queue": 822,
-    "arithmetically_excluded": 4,
+    "arithmetic_research_queue": 820,
+    "arithmetically_excluded": 6,
     "classifications": {
-      "ARITHMETICALLY_EXCLUDED": 4,
+      "ARITHMETICALLY_EXCLUDED": 6,
       "ARITHMETICALLY_POSSIBLE": 1,
-      "UNKNOWN": 62,
+      "UNKNOWN": 60,
       "UNSCREENED_NO_FULL_MARKING_DECISION": 760
     },
-    "coarse_genus_at_most_two_diagnostics": 23,
+    "coarse_genus_at_most_two_diagnostics": 21,
     "exact_positive_controls": 1,
     "new_positive_NS_rootless_handoff": 0,
     "transcendental_rows": 827
@@ -365,126 +365,6 @@
         [
           0,
           10,
-          0
-        ],
-        [
-          5,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "arithmetic_classification": "UNKNOWN",
-      "coarse_curve_diagnostic": {
-        "genus": 0,
-        "label": "Gamma_0(2)",
-        "status": "PASS_EXACT_GAMMA0_CURVE",
-        "warning": "Coarse genus is a prioritization diagnostic only until the stable discriminant-kernel curve is computed."
-      },
-      "determinant": 500,
-      "full_marking_curve": {
-        "genus": null,
-        "label": null,
-        "rational_non_CM_point": false,
-        "stable_kernel_index_over_coarse": null,
-        "status": "UNKNOWN_FULL_DISCRIMINANT_KERNEL_CURVE_NOT_IDENTIFIED"
-      },
-      "integral_order": {
-        "local_level_index": 2,
-        "reduced_discriminant": 2,
-        "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
-      },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
-      "phase_one_priority_key": [
-        2,
-        1,
-        0,
-        1,
-        1000000000,
-        5,
-        2,
-        0,
-        500
-      ],
-      "quaternion_discriminant": 1,
-      "rational_isotropy": true,
-      "rootless_frame_data_used_in_priority": false,
-      "similarity_marking_gap": {
-        "full_stable_kernel_still_required": true,
-        "literal_content": 5,
-        "quadratic_integrality_scale": 1
-      },
-      "surface_id": "K3-04b86146cc6b284b",
-      "transcendental_gram": [
-        [
-          0,
-          0,
-          5
-        ],
-        [
-          0,
-          20,
-          0
-        ],
-        [
-          5,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "arithmetic_classification": "UNKNOWN",
-      "coarse_curve_diagnostic": {
-        "genus": 0,
-        "label": "Gamma_0(3)",
-        "status": "PASS_EXACT_GAMMA0_CURVE",
-        "warning": "Coarse genus is a prioritization diagnostic only until the stable discriminant-kernel curve is computed."
-      },
-      "determinant": 750,
-      "full_marking_curve": {
-        "genus": null,
-        "label": null,
-        "rational_non_CM_point": false,
-        "stable_kernel_index_over_coarse": null,
-        "status": "UNKNOWN_FULL_DISCRIMINANT_KERNEL_CURVE_NOT_IDENTIFIED"
-      },
-      "integral_order": {
-        "local_level_index": 3,
-        "reduced_discriminant": 3,
-        "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
-      },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
-      "phase_one_priority_key": [
-        2,
-        1,
-        0,
-        1,
-        1000000000,
-        5,
-        3,
-        0,
-        750
-      ],
-      "quaternion_discriminant": 1,
-      "rational_isotropy": true,
-      "rootless_frame_data_used_in_priority": false,
-      "similarity_marking_gap": {
-        "full_stable_kernel_still_required": true,
-        "literal_content": 5,
-        "quadratic_integrality_scale": 1
-      },
-      "surface_id": "K3-10a14a46c14b3150",
-      "transcendental_gram": [
-        [
-          0,
-          0,
-          5
-        ],
-        [
-          0,
-          30,
           0
         ],
         [
@@ -1747,126 +1627,6 @@
         [
           0,
           10,
-          0
-        ],
-        [
-          5,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "arithmetic_classification": "UNKNOWN",
-      "coarse_curve_diagnostic": {
-        "genus": 0,
-        "label": "Gamma_0(2)",
-        "status": "PASS_EXACT_GAMMA0_CURVE",
-        "warning": "Coarse genus is a prioritization diagnostic only until the stable discriminant-kernel curve is computed."
-      },
-      "determinant": 500,
-      "full_marking_curve": {
-        "genus": null,
-        "label": null,
-        "rational_non_CM_point": false,
-        "stable_kernel_index_over_coarse": null,
-        "status": "UNKNOWN_FULL_DISCRIMINANT_KERNEL_CURVE_NOT_IDENTIFIED"
-      },
-      "integral_order": {
-        "local_level_index": 2,
-        "reduced_discriminant": 2,
-        "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
-      },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
-      "phase_one_priority_key": [
-        2,
-        1,
-        0,
-        1,
-        1000000000,
-        5,
-        2,
-        0,
-        500
-      ],
-      "quaternion_discriminant": 1,
-      "rational_isotropy": true,
-      "rootless_frame_data_used_in_priority": false,
-      "similarity_marking_gap": {
-        "full_stable_kernel_still_required": true,
-        "literal_content": 5,
-        "quadratic_integrality_scale": 1
-      },
-      "surface_id": "K3-04b86146cc6b284b",
-      "transcendental_gram": [
-        [
-          0,
-          0,
-          5
-        ],
-        [
-          0,
-          20,
-          0
-        ],
-        [
-          5,
-          0,
-          0
-        ]
-      ]
-    },
-    {
-      "arithmetic_classification": "UNKNOWN",
-      "coarse_curve_diagnostic": {
-        "genus": 0,
-        "label": "Gamma_0(3)",
-        "status": "PASS_EXACT_GAMMA0_CURVE",
-        "warning": "Coarse genus is a prioritization diagnostic only until the stable discriminant-kernel curve is computed."
-      },
-      "determinant": 750,
-      "full_marking_curve": {
-        "genus": null,
-        "label": null,
-        "rational_non_CM_point": false,
-        "stable_kernel_index_over_coarse": null,
-        "status": "UNKNOWN_FULL_DISCRIMINANT_KERNEL_CURVE_NOT_IDENTIFIED"
-      },
-      "integral_order": {
-        "local_level_index": 3,
-        "reduced_discriminant": 3,
-        "source_status": "PASS_EXACT_SPLIT_EICHLER_MODULAR_CURVE"
-      },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
-      "phase_one_priority_key": [
-        2,
-        1,
-        0,
-        1,
-        1000000000,
-        5,
-        3,
-        0,
-        750
-      ],
-      "quaternion_discriminant": 1,
-      "rational_isotropy": true,
-      "rootless_frame_data_used_in_priority": false,
-      "similarity_marking_gap": {
-        "full_stable_kernel_still_required": true,
-        "literal_content": 5,
-        "quadratic_integrality_scale": 1
-      },
-      "surface_id": "K3-10a14a46c14b3150",
-      "transcendental_gram": [
-        [
-          0,
-          0,
-          5
-        ],
-        [
-          0,
-          30,
           0
         ],
         [
@@ -50722,6 +50482,54 @@
       "certificate_replay": [
         {
           "assertions_replayed": 5,
+          "path": "artifacts/generated-results/elkies-k3-det500-det750-qq-marking-obstructions-v1.json",
+          "sha256": "e1f74fd18fd17976a05d4340437fe09e841e28efdf681e2945098b3dc51b81de"
+        }
+      ],
+      "decision": "The exact full marked curve is the genus-four X_H(50), and its degree-two X_0(50) quotient has no rational noncuspidal point; hence the determinant-500 rootless row has no full rational marking.",
+      "determinant": 500,
+      "full_marking_curve": {
+        "genus": 4,
+        "label": "X_H(50), H={a in (Z/50Z)^*: a=+/-1 mod 5}",
+        "rational_non_CM_point": false,
+        "stable_kernel_index_over_coarse": 2,
+        "status": "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE"
+      },
+      "surface_id": "K3-04b86146cc6b284b",
+      "theorem_inputs": [
+        "Mazur--Kenku's complete classification of rational cyclic-isogeny degrees",
+        "the standard split prime-level Eichler normalizer description",
+        "the rank-three ternary-spin/fully-marked-K3 period correspondence"
+      ]
+    },
+    {
+      "certificate_replay": [
+        {
+          "assertions_replayed": 5,
+          "path": "artifacts/generated-results/elkies-k3-det500-det750-qq-marking-obstructions-v1.json",
+          "sha256": "e1f74fd18fd17976a05d4340437fe09e841e28efdf681e2945098b3dc51b81de"
+        }
+      ],
+      "decision": "The exact full marked curve is the genus-nine X_H(75), and its degree-two X_0(75) quotient has no rational noncuspidal point; hence the determinant-750 rootless row has no full rational marking.",
+      "determinant": 750,
+      "full_marking_curve": {
+        "genus": 9,
+        "label": "X_H(75), H={a in (Z/75Z)^*: a=+/-1 mod 5}",
+        "rational_non_CM_point": false,
+        "stable_kernel_index_over_coarse": 2,
+        "status": "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE"
+      },
+      "surface_id": "K3-10a14a46c14b3150",
+      "theorem_inputs": [
+        "Mazur--Kenku's complete classification of rational cyclic-isogeny degrees",
+        "the standard split prime-level Eichler normalizer description",
+        "the rank-three ternary-spin/fully-marked-K3 period correspondence"
+      ]
+    },
+    {
+      "certificate_replay": [
+        {
+          "assertions_replayed": 5,
           "path": "artifacts/generated-results/elkies-k3-det378-qq-marking-obstruction-v1.json",
           "sha256": "cde5b29f0a361cd0c8e81c0c38d8aedba08c155cd4359651d7c9c368d4a1b249"
         }
@@ -50814,7 +50622,7 @@
     }
   ],
   "inputs": {
-    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "dc9b0e2513d7517ff0439b31e238e2db94047ca05cb89772a43f83344d888123",
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "e1656aaf4d9e2a423b88575ec9427e152bbeaad4874b7cc2d185ef20a99a6f4e",
     "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985",
     "elkies-k3/data/arithmetic/arithmetic-first-marking-decisions-v1.json": "7d8c88e1b89e10d98280cabaee9ccab70db176b398d825a9ce1752479a4a425f"
   },

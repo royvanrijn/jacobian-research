@@ -16,6 +16,11 @@ OUTPUT = (
     ROOT
     / "artifacts/generated-results/elkies-k3-r17-all17-product-toric-frobenius-campaign-v1.json"
 )
+EXPORTER = ROOT / "elkies-k3/scripts/export_r17_product_toric_frobenius_input.sage"
+PARSER = ROOT / "elkies-k3/scripts/parse_toric_controlled_reduction_output.py"
+VERIFIER = ROOT / "elkies-k3/scripts/certify_r17_product_toric_frobenius.sage"
+RUNNER = ROOT / "elkies-k3/scripts/run_r17_product_toric_frobenius.sh"
+TORIC_COMMIT = "74cda9e8148cd8e9a3928fc15a558c9a70b67cc1"
 
 
 def digest(path: Path) -> str:
@@ -39,6 +44,7 @@ def validate_reduction(path: Path, pair_key: str, prime: int) -> dict:
     record = json.loads(path.read_text())
     hits = record["elliptic_L"]["cyclotomic_hits_after_T_equals_pZ"]
     tate_degree = sum(int(hit["total_degree"]) for hit in hits)
+    software = record["software"]
     if (
         record.get("schema") != "elkies-k3.r17-product-toric-frobenius.v1"
         or record.get("character_kind") != "product"
@@ -53,6 +59,11 @@ def validate_reduction(path: Path, pair_key: str, prime: int) -> dict:
         or record["bounds"].get("trivial_lattice_rank") != 18
         or record["bounds"].get("geometric_twist_mw_rank_upper_bound")
         != tate_degree
+        or software.get("ToricControlledReduction_commit") != TORIC_COMMIT
+        or software.get("exporter_sha256") != digest(EXPORTER)
+        or software.get("raw_output_parser_sha256") != digest(PARSER)
+        or software.get("independent_verifier_sha256") != digest(VERIFIER)
+        or software.get("runner_sha256") != digest(RUNNER)
     ):
         raise ArithmeticError(f"invalid product Frobenius artifact {path}")
     return {
@@ -127,4 +138,3 @@ print(
     f"status={payload['status']}",
     flush=True,
 )
-

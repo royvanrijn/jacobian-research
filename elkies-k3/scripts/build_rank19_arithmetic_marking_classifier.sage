@@ -9,8 +9,9 @@ coarse norm-one curve separate from the full discriminant-kernel marking
 curve.  Exact positive or negative arithmetic decisions are accepted only
 from the small hash-pinned decision registry.
 
-Unknown curve identifications and rational-point problems stay UNKNOWN.  The
-equation-agent handoff contains only exact ARITHMETICALLY_POSSIBLE rows.
+Unknown rational-point problems stay UNKNOWN even when a separate Phase-1
+certificate has identified their exact marked curve.  The equation-agent
+handoff contains only exact ARITHMETICALLY_POSSIBLE rows.
 """
 
 from __future__ import annotations
@@ -280,8 +281,6 @@ def build_candidate(surface, t_row, decision):
             for certificate in decision["certificates"]
         ]
         full_curve.update(decision["full_marking_curve"])
-        # Retain the automatically exposed coarse curve and marking-gap warning.
-        full_curve["coarse_norm_one_curve"] = t_row["arithmetic_source"]["base_curve"]
         quotient_maps = decision["easy_quotient_maps"]
         arithmetic_tests = decision["arithmetic_tests"]
         theorem_inputs = decision["theorem_inputs"]
@@ -325,6 +324,11 @@ def build_candidate(surface, t_row, decision):
         "easy_quotient_maps": quotient_maps,
         "arithmetic_tests": arithmetic_tests,
         "classification": classification,
+        "phase_2_certificate_status": (
+            None
+            if decision is None
+            else decision.get("phase_2_certificate_status")
+        ),
         "classification_decision": decision_text,
         "theorem_inputs": theorem_inputs,
         "certificate_replay": certificate_replay,
@@ -334,7 +338,13 @@ def build_candidate(surface, t_row, decision):
             and surface["surface_id"] != H3_SURFACE_ID
         ),
         "next_arithmetic_gate": (
-            None if classification != "UNKNOWN" else unknown_next_gate(t_row)
+            None
+            if classification != "UNKNOWN"
+            else (
+                decision.get("next_arithmetic_gate", unknown_next_gate(t_row))
+                if decision is not None
+                else unknown_next_gate(t_row)
+            )
         ),
     }
     return row
@@ -343,9 +353,12 @@ def build_candidate(surface, t_row, decision):
 def hospitality_comparison(by_id):
     selected = [
         H3_SURFACE_ID,
+        "K3-04b86146cc6b284b",
+        "K3-10a14a46c14b3150",
         "K3-ebaf00b3723751ba",
         "K3-d1b1381f87d69f1c",
         "K3-f43753fb154e3406",
+        "K3-6d288cfad55e0d15",
     ]
     rows_out = []
     for surface_id in selected:
@@ -376,6 +389,8 @@ def hospitality_comparison(by_id):
             "The rootless QQ equation supplies seventeen rational sections, rho=19, saturation, and trivial torsion, so the point really lifts to the full marking.",
         ],
         "contrast": (
+            "Determinants 500 and 750 have exact stable curves X_H(50) and X_H(75), "
+            "whose X_0(50) and X_0(75) quotients have only rational cusps. "
             "Determinant 720 has exact stable curve X_0(60), whose rational points "
             "are all cusps; determinant 950 is forced onto the rigid Fricke quotient "
             "X_0^+(475); and determinant 1184 combines non-split Cartan level 4 with "
@@ -427,9 +442,9 @@ def build(catalogue, t_arithmetic, decisions, paths):
     counts = Counter(row["classification"] for row in candidates)
     if counts != Counter(
         {
-            "ARITHMETICALLY_EXCLUDED": 3,
+            "ARITHMETICALLY_EXCLUDED": 5,
             "ARITHMETICALLY_POSSIBLE": 1,
-            "UNKNOWN": 62,
+            "UNKNOWN": 60,
         }
     ):
         raise AssertionError(f"classification count changed: {counts}")
@@ -447,7 +462,7 @@ def build(catalogue, t_arithmetic, decisions, paths):
     by_id = {row["surface_id"]: row for row in candidates}
     return {
         "schema": "elkies-k3.rank19-arithmetic-marking-classifier.v1",
-        "status": "PASS_FAIL_CLOSED_1_POSSIBLE_3_EXCLUDED_62_UNKNOWN",
+        "status": "PASS_FAIL_CLOSED_1_POSSIBLE_5_EXCLUDED_60_UNKNOWN",
         "policy": {
             **decisions["policy"],
             "equation_agent": (
@@ -464,12 +479,13 @@ def build(catalogue, t_arithmetic, decisions, paths):
             "proved": (
                 "All 66 exact rootless-MW17 candidate NS lattices are paired with "
                 "their catalogue primitive ternary complement and replayed even "
-                "Clifford data. The four non-UNKNOWN decisions are backed by exact "
-                "registered certificates."
+                "Clifford data. The six terminal decisions and the determinant-1236 "
+                "exact-curve unresolved record are backed by registered certificates."
             ),
             "not_proved": (
-                "The 62 UNKNOWN rows are not asserted to exist or not exist over QQ. "
-                "Their stable discriminant-kernel curves and rational points remain open."
+                "The 60 UNKNOWN rows are not asserted to exist or not exist over QQ. "
+                "For determinant 1236 the stable curve is exact and its non-CM rational "
+                "locus remains open; the other UNKNOWN stable curves remain unclassified."
             ),
         },
         "inputs": {relative(path): digest(path) for path in paths.values()},
