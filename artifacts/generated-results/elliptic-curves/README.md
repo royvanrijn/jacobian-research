@@ -29,9 +29,12 @@ Important distinctions made explicit by the catalogue:
   depths before the other fifteen outcomes.  Its blind artifact contains only
   exact pre-complement rank responses; the verifier opens public complements
   afterward, and `r17_refresh_jump_ladder_analysis_v2.json` records passing
-  exact ordinal and `+10/+11/+12` tail endpoints.  These are fixed-panel
-  detector results, not a full-rank, saturation, Selmer, or population theorem.
-<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER -->
+  exact ordinal and `+10/+11/+12` tail endpoints plus post-freeze
+  fibration/`j`-class and `q>=11` sensitivity analyses.  The latter limit
+  scheduling use to the calibrated norm-twelve R17 setting and do not validate
+  alternate-Q80 extreme-tail transfer.  These are fixed-panel detector results,
+  not a full-rank, saturation, Selmer, or population theorem.
+<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER b7518cc41268489a -->
 
 - `half_lattice_height_compression_analysis_v1.json.gz` reconstructs 3,865
   detailed half-lattice chart maps and their presearch lattice, coefficient,
@@ -53,11 +56,13 @@ Important distinctions made explicit by the catalogue:
 <!-- status-consumer: EC-CURVE385-HEIGHT-COMPRESSION-BUILDER-PILOT c0d6f2d67018def4 -->
 
 - `icarm_curve398_two_parent_collision_v1.json` compiles the second exact
-  A1/MW16 survivor for curve 398 and proves that its specialized generic group
-  equals the first parent's group integrally.  The intersection and sum both
-  have rank 16; the quotient in public `M30` is torsion-free `Z^14`, so the
-  index is infinite.  This is an exact-computation negative control for
-  two-parent transversality, not a rank upper bound for the curve.
+  A1/MW16 survivor for curve 398 and proves that it is the first fibration after
+  an affine `PGL2(Q)` base change and constant `Q`-Weierstrass scaling.  Its
+  specialized generic group equals the first presentation's group integrally.
+  The intersection and sum both have rank 16; the quotient in public `M30` is
+  torsion-free `Z^14`, so the index is infinite.  This is a deduplication and
+  basis-consistency certificate, not a transversality or rank-upper-bound
+  result.
 
 <!-- status-consumer: EC-K3-R17-TRAINING-EXACT-ARITHMETIC-GROUP-GATE 427bf822e774c81e -->
 

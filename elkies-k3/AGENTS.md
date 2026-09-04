@@ -13,7 +13,7 @@ and a reproducible certificate plan.
 ## Start here
 
 1. [`README.md`](README.md) — three peer primary lanes and current certified position.
-2. [`../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md) and [`../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md`](../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md) — first-class record-construction recovery lane.
+2. [`../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md) and [`../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md`](../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md) — record-construction recovery lane and A1/MW16 family source.
 3. [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — open different-NS objective and fail-closed source/endpoint gates.
 4. [`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) — determinant-948 noncyclic closure that motivates the pivot.
 5. [`RANK_MUTATION_AND_LIFT_THEOREMS.md`](RANK_MUTATION_AND_LIFT_THEOREMS.md) — reusable theorem/algorithm layer.
@@ -22,6 +22,9 @@ and a reproducible certificate plan.
 
 ## Current conclusions
 
+- A target-free A1/MW16 parameter experiment is active alongside the other
+  rank-jump experiments.  It searches new specializations for exact quotient
+  gains without known-record targets in selection or execution.
 - Published R17 and alternate Q80 are both explicit rootless rank-17 fibrations over `QQ` on the pinned determinant-948 K3.
 - The alternate chart's canonical route is the direct degree-two `norm12-orbit-11952` hop, not the historical degree-11511 Q80 transport.
 - The maximal noncyclic determinant-948 bridge is equation-explicit in both
@@ -30,10 +33,11 @@ and a reproducible certificate plan.
 - The rank-32 programme has three peer lanes: calibrated R17/MW17
   specialization, record-construction recovery around curve 398 and curve
   302's unknown parent, and the different-NS foundry.  Curve 398's two
-  recovered A1/MW16 parents specialize to the same integral MW16 subgroup, so
-  Q-isomorphic fibres require an exact relative-subgroup transversality gate.
-  Generic rank and demonstrated jump size are separate prioritization axes; no
-  lane is the unique critical path.
+  norm-eight A1/MW16 survivor labels are exact `PGL2(Q)`/Weierstrass-equivalent
+  presentations of one fibration, and their specialized integral MW16 groups
+  agree.  Deduplicate fibrations before applying a relative-subgroup
+  transversality gate.  Generic rank and demonstrated jump size are separate
+  prioritization axes; no lane is the unique critical path.
 - Lane C is arithmetic-first globally: `T` and its full stable marked curve
   precede `NS=T^perp`, rootlessness, and equation work. Determinants `500`,
   `720`, `750`, `950`/`NS0024`, and `1184`/`NS0031`, together with the split
@@ -69,6 +73,7 @@ and a reproducible certificate plan.
   cusps.
 - inspecting rootless frames or launching coefficient searches before their
   full marked `T` curve has a certified rational non-CM point.
+- putting known-record targets into the A1/MW16 parameter experiment.
 
 These remain useful provenance/regression material and are indexed from `../archive/elkies-k3/`.
 

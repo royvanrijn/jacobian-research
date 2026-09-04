@@ -1,5 +1,5 @@
 #!/usr/bin/env sage-python
-"""Independently replay the exact curve-398 two-parent subgroup collision."""
+"""Replay the curve-398 survivor equivalence and subgroup collision."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ from importlib.machinery import SourceFileLoader
 import json
 from pathlib import Path
 
-from sage.all import EllipticCurve, QQ, ZZ, matrix
+from sage.all import EllipticCurve, PolynomialRing, QQ, ZZ, matrix
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -32,8 +32,10 @@ def main() -> None:
 
     document = json.loads(args.artifact.read_text())
     public = load("curve398_two_parent_public", PUBLIC)
-    if document["status"] != "PASS_EXACT_TWO_PARENT_COLLISION":
-        raise ArithmeticError("two-parent artifact is not passing")
+    if document["status"] != (
+        "PASS_EXACT_BASE_EQUIVALENT_SURVIVORS_AND_SUBGROUP_COLLISION"
+    ):
+        raise ArithmeticError("survivor-equivalence artifact is not passing")
     for path, expected in document["inputs"].items():
         if digest(ROOT / path) != expected:
             raise ArithmeticError(f"two-parent input hash changed: {path}")
@@ -45,6 +47,42 @@ def main() -> None:
     public_points = tuple(curve(QQ(str(x)), QQ(str(y))) for x, y in public.POINTS)
     if len(public_points) != 30:
         raise ArithmeticError("public M30 basis length changed")
+
+    equivalence = document["presentation_equivalence"]
+    first_document = json.loads(
+        (ROOT / document["first_parent"]["compiled_artifact"]).read_text()
+    )
+    first_fibration = first_document["fibration"]
+    second_fibration = document["second_parent"]
+    ring = PolynomialRing(QQ, "lambda")
+    parameter = ring.gen()
+    field = ring.fraction_field()
+    first_a = field(ring(first_fibration["A_coefficients_low_to_high"]))
+    first_b = field(ring(first_fibration["B_coefficients_low_to_high"]))
+    second_a = ring(second_fibration["A_coefficients_low_to_high"])
+    second_b = ring(second_fibration["B_coefficients_low_to_high"])
+    aa, bb, cc, dd = map(QQ, equivalence["pgl2_matrix_a_b_c_d"])
+    if aa * dd == bb * cc:
+        raise ArithmeticError("stored survivor PGL2 matrix is singular")
+    phi = field((aa * parameter + bb) / (cc * parameter + dd))
+    q_value = QQ(equivalence["quadratic_twist_parameter_q"])
+    scale = QQ(equivalence["weierstrass_scale_s_with_s_squared_q"])
+    if q_value != scale**2:
+        raise ArithmeticError("stored survivor Weierstrass scale is not a square root")
+    if (
+        field(second_a(phi)) != q_value**2 * first_a
+        or field(second_b(phi)) != q_value**3 * first_b
+    ):
+        raise ArithmeticError("survivor base-change Weierstrass identities failed")
+    first_parameter = QQ(first_document["parameter_recovery"]["lambda"])
+    second_parameter = QQ(second_fibration["parameter_recovery"]["lambda"])
+    if (aa * first_parameter + bb) / (cc * first_parameter + dd) != second_parameter:
+        raise ArithmeticError("base change does not transport the curve-398 parameter")
+    if (
+        not equivalence["same_jacobian_fibration_over_Q_up_to_base_change"]
+        or equivalence["distinct_fibration_modulo_base_change_or_surface_automorphism"]
+    ):
+        raise ArithmeticError("stored fibration-equivalence conclusion changed")
 
     first = matrix(ZZ, document["first_parent"]["matrix_16_by_30_rows"])
     second_record = document["second_parent"]
@@ -94,7 +132,7 @@ def main() -> None:
     if generic_gram.rank() != 16 or generic_gram.det() != 474:
         raise ArithmeticError("second generic MW16 certificate changed")
     print(
-        "CURVE398COLLISIONVERIFY|G1=G2|intersection=16|sum=16|"
+        "CURVE398SURVIVOREQUIVVERIFY|same_fibration=1|G1=G2|intersection=16|sum=16|"
         "M30_quotient=Z^14|smith_index=infinite|sage_group_law=PASS",
         flush=True,
     )

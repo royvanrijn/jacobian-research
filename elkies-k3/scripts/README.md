@@ -4185,15 +4185,17 @@ parameter, all 166 degree-one old sections, a saturated determinant-474 MW16
 basis, and its primitive embedding in the public rank-30 group.  It also
 writes the separately redacted input consumed by the blind adaptive search.
 The second compiler verifies the other survivor's 180-element degree-one
-shell and saturated MW16 basis, then proves that its specialized integral
-subgroup equals the first parent's subgroup.  Their intersection and sum have
+shell and saturated MW16 basis.  It first proves that the two survivor labels
+are one Jacobian fibration under an exact affine `PGL2(Q)` base change and
+constant Weierstrass isomorphism, then proves that the two specialized basis
+images generate the same integral subgroup.  Their intersection and sum have
 rank 16, and the Smith quotient in public `M30` is torsion-free `Z^14`.
 See
 [`../../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](../../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md).
-<!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY a22fcfb1ea6844aa -->
-<!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 3021f19bf0594dcf -->
+<!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY 75978a18cc26690f -->
+<!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 626a440519ff77f3 -->
 
-## Target-generic ICARM A1/MW16 atlas
+## Target-generic ICARM norm-eight low-root atlas
 
 `screen_icarm_norm8_a1_fibrations.sage` generalizes the frozen curve-398
 projective modular `j` gate to any equation in the pinned 573-curve snapshot.
@@ -4201,22 +4203,31 @@ projective modular `j` gate to any equation in the pinned 573-curve snapshot.
 exclusion witness for every rejected class, and sends only survivors to
 `certify_icarm_norm8_a1_survivors.sage` for exact `QQ` factorization and
 twist-sensitive isomorphism.  The exact hits are compiled by
-`compile_icarm_norm8_a1_survivors.sage`; `build_icarm_a1_mw16_atlas.py`
-verifies and compacts the whole campaign.
+`compile_icarm_norm8_a1_survivors.sage`.  The original
+`build_icarm_a1_mw16_atlas.py` preserves the target-screen ledger.
+`certify_icarm_norm8_low_root_strata.sage` then replays the exact shell through
+norm 12, joins the complete singular-pencil certificate, proves degree-one
+sections, and certifies the actual `mA1/MW(17-m)` strata.
+`build_icarm_norm8_low_root_atlas.py` joins that correction back to every
+target witness and compiled hit.
 
 ```bash
 python3 run_icarm_norm8_a1_atlas.py \
   --curve-ids 302,273,542,548,399,400,403,401,402,10 --resume
 
-python3 build_icarm_a1_mw16_atlas.py --check
+sage -python certify_icarm_norm8_low_root_strata.sage --check
+python3 build_icarm_norm8_low_root_atlas.py --check
 ```
 
-The complete 63,917-class layer hits curves 398, 400, 401, 542, and 548 and
-compiles nine fibrations.  It misses 302, 273, 399, 403, 402, and 10 exactly
-within the declared layer.  `screen_icarm_fixed_mw15_fibrations.sage` starts
-the requested next level from the exact fixed-corridor `2A1/MW15` equation;
-its present scope is one fibration, and it excludes 302 and 273 modulo 1019
-and 1009 respectively.
+The 63,917 classes split exactly as `1266 A1/MW16`, `8410 2A1/MW15`,
+`20348 3A1/MW14`, `21405 4A1/MW13`, `9861 5A1/MW12`,
+`2280 6A1/MW11`, `331 7A1/MW10`, and `16 8A1/MW9`.  Curve 302 misses every
+complete stratum; the curve-398 positive control hits priorities 16,875 and
+63,669 in the true A1 stratum.  All nine target hits are in that same stratum.
+`screen_icarm_fixed_mw15_fibrations.sage` remains a separate equation-level
+regression for one fixed-corridor `2A1/MW15` fibration, excluding 302 and 273
+modulo 1019 and 1009 respectively.  Neither atlas includes `A2/MW15` or other
+old-degree/source-chart layers.
 
 ```bash
 sage -python screen_icarm_fixed_mw15_fibrations.sage --check
@@ -4224,7 +4235,7 @@ sage -python screen_icarm_fixed_mw15_fibrations.sage --check
 
 See
 [`../ICARM_A1_MW16_ATLAS_2026-09-04.md`](../ICARM_A1_MW16_ATLAS_2026-09-04.md).
-<!-- status-consumer: EC-K3-ICARM-A1-MW16-ATLAS 847ddc36ab6f56b5 -->
+<!-- status-consumer: EC-K3-ICARM-A1-MW16-ATLAS 6cac9b1f5349b6ac -->
 
 ## Marked-U realization planner
 

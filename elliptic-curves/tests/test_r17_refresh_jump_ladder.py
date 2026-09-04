@@ -24,7 +24,7 @@ EXPECTED_HASHES = {
     PROTOCOL2: "d080c990d32b24e76695db393db276d29b620462478f1840efc0bb122537d737",
     BLIND2: "0699b53c2bc7d77673231bc0d377dc725880efd26a18d1eb2af613d28578c165",
     VERIFIED2: "06d3e0a097a40bad50d6a0698fd7dbb4a06021149b570f43e583152eddf3eaa4",
-    ANALYSIS2: "02fed216bce5a4464879de25e04fc4f7396762af748826ff6b71ed2d4d82784f",
+    ANALYSIS2: "67889bc834aa6b9e02d31e982b521e56bc7ad5960911c7dc2a4188e3a8a8b034",
 }
 
 EXPECTED_RESPONSE = {
@@ -164,6 +164,82 @@ class R17RefreshJumpLadderTests(unittest.TestCase):
         source = ROOT / "elliptic-curves/cas/analyze_r17_refresh_jump_ladder_v2.py"
         module = SourceFileLoader("r17_jump_ladder_analysis_v2_test", str(source)).load_module()
         self.assertEqual(module.build(), self.analysis2)
+
+    def test_post_freeze_fibration_and_j_class_sensitivity(self):
+        split = self.analysis2["descriptive"][
+            "post_freeze_fibration_and_j_class_sensitivity"
+        ]
+        self.assertEqual(split["role"], "descriptive_post_freeze_not_confirmatory")
+        q11 = split["pooled_q_at_least_11"]
+        self.assertEqual(
+            q11["table"],
+            {
+                "true_tail_detector_positive": 6,
+                "true_tail_detector_negative": 1,
+                "non_tail_detector_positive": 1,
+                "non_tail_detector_negative": 8,
+            },
+        )
+        self.assertEqual((q11["exact_p_numerator"], q11["exact_p_denominator"]), (4, 715))
+
+        frames = {row["stratum"]: row for row in split["by_fibration"]}
+        self.assertEqual(frames["published-R17"]["case_count"], 13)
+        self.assertEqual(frames["alternate-Q80"]["case_count"], 3)
+        self.assertFalse(
+            frames["alternate-Q80"]["high_S_enrichment"]["q_at_least_10"][
+                "estimable"
+            ]
+        )
+
+        j_classes = {row["stratum"]: row for row in split["by_j_map_class"]}
+        class_08234 = j_classes["norm12-orbit-08234"]
+        self.assertEqual(class_08234["case_count"], 7)
+        self.assertEqual(
+            (
+                class_08234["ordinal_association"]["exact_p_numerator"],
+                class_08234["ordinal_association"]["exact_p_denominator"],
+            ),
+            (2, 210),
+        )
+        self.assertEqual(
+            class_08234["high_S_enrichment"]["q_at_least_10"]["table"],
+            {
+                "true_tail_detector_positive": 5,
+                "true_tail_detector_negative": 0,
+                "non_tail_detector_positive": 0,
+                "non_tail_detector_negative": 2,
+            },
+        )
+        conditional = split["conditional_on_j_map_class"]
+        self.assertEqual(
+            (
+                conditional["ordinal_association"]["exact_p_numerator"],
+                conditional["ordinal_association"]["exact_p_denominator"],
+            ),
+            (2, 2520),
+        )
+        self.assertEqual(
+            (
+                conditional["high_S_enrichment"]["q_at_least_10"][
+                    "exact_p_numerator"
+                ],
+                conditional["high_S_enrichment"]["q_at_least_10"][
+                    "exact_p_denominator"
+                ],
+            ),
+            (3, 63),
+        )
+        self.assertEqual(
+            (
+                conditional["high_S_enrichment"]["q_at_least_11"][
+                    "exact_p_numerator"
+                ],
+                conditional["high_S_enrichment"]["q_at_least_11"][
+                    "exact_p_denominator"
+                ],
+            ),
+            (9, 63),
+        )
 
 
 if __name__ == "__main__":

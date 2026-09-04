@@ -84,16 +84,21 @@ after every lattice/basis change, and a chart miss has no absence or Selmer
 meaning.
 <!-- status-consumer: EC-K3-R17-074D9-HALF-LATTICE-PROMOTION-GATE 9a1f080523c9ecae -->
 The 573-curve refresh now supplies the missing multi-stratum successor.  A
-redacted fixed-policy ladder on sixteen quotient-eligible new hits spans
-displayed jumps `+3` through `+12`; its exact blind recovered rank has
+redacted fixed-policy ladder on sixteen quotient-eligible new hits covers
+observed displayed jumps from `+3` to `+12`; its exact blind recovered rank has
 tied-margin Kendall `tau_b=.7503` with exact one-sided
 `p=60852/2421619200`.  Score at least ten selects 7/8 of the
 `+10/+11/+12` tail and 0/8 below it (`p=1/1430`).  Both frozen endpoints
-pass, so the score may be retained for extreme-jump scheduling, but it still
-cannot bypass residual Selmer.  The same blind run improves curve 478 to rank
-at least 23.  See
+pass.  Post-freeze splits preserve the ordinal signal within fibration and
+`j`-class, but only class `08234` mixes tail and non-tail rows; its `q>=10`
+enrichment is `5/5` versus `0/2` (`p=1/21`), its `q>=11` split is not resolved,
+and alternate Q80 has no extreme-tail row.  High score may therefore schedule
+one-sidedly inside the calibrated norm-twelve R17 setting, but low score may
+not veto and the rule does not transfer without new controls.  It still cannot
+bypass residual Selmer.  The same blind run improves curve 478 to rank at
+least 23.  See
 [`../elliptic-curves/notes/R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md`](../elliptic-curves/notes/R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md).
-<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER -->
+<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER b7518cc41268489a -->
 Detector v2 now freezes a hash-only balanced Stage-1/Stage-2 sample and an
 exact quotient-aware all-place matrix interface, but its two record-control
 descents remain blocked at the cubic `S`-class/unit step.  Stage 1 has not
@@ -109,20 +114,27 @@ uncalibrated; see
 
 ### Lane B — record-construction recovery
 
-Run two reconstruction targets in parallel with Lane A.
+Run the target-free A1/MW16 parameter experiment alongside the independent
+record-construction work.
 
-- **Curve 398 / A1-MW16:** both hidden survivors from the complete norm-eight
-  layer on `norm12-orbit-11952` have exact pencils, rational parameters, and
-  saturated sixteen-section specializations.  Their specialized integral
-  MW16 groups are equal: their intersection and sum both have rank 16, and the
-  quotient in the displayed `M30` is `Z^14`.  The pair is therefore a complete-
-  collision negative control for two-parent transversality.  A redacted search
-  from the first parent still reconstructs the full displayed rank-30 subgroup.
+- **Curve 398 / A1-MW16:** both survivor labels from the complete norm-eight
+  layer on `norm12-orbit-11952` have exact equations, rational parameters, and
+  saturated sixteen-section specializations.  Exact `PGL2(Q)` and Weierstrass
+  identities prove that they are two presentations of one fibration, not two
+  fibration orbits.  Their specialized integral MW16 groups accordingly agree:
+  their intersection and sum both have rank 16, and the quotient in displayed
+  `M30` is `Z^14`.  Use the pair as a fibration-deduplication regression.  A
+  redacted search from the first presentation still reconstructs the full
+  displayed rank-30 subgroup.
 - **Curve 302 / unknown parent:** recover a family from the complete
   31-point configuration without assuming a `17+14` split, then require exact
   `j`, twist, isomorphism, generic-section transport, and saturation checks.
   Use a recovered parent as a neighbourhood for rank 32; do not substitute a
   blind 32nd-point search on curve 302 for construction recovery.
+
+Neither known curve may enter the A1/MW16 parameter experiment as a target,
+control, parameter match, or scheduling label.  The curve-398 equivalence is
+used only to deduplicate the family.
 
 The exact starting boundaries are
 [`../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md)
@@ -130,7 +142,7 @@ and
 [`../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md`](../elliptic-curves/notes/ICARM_CURVE302_CONSTRUCTION_INVESTIGATION.md).
 Curve 398's construction boundary is closed by an exact certificate.  Curve
 302's parent equation and section map remain `UNKNOWN`.
-<!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 3021f19bf0594dcf -->
+<!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 626a440519ff77f3 -->
 
 ### Lane C — foundry lane
 
@@ -194,24 +206,26 @@ and the batch
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 - **Curve 398 A1/MW16 recovery:** complete modular screening of the 63,917
   norm-eight classes on `norm12-orbit-11952` leaves two exact curve-398 hits.
-  Both pencils now have `I2+22I1`, generic rank 16, and saturated
-  determinant-474 MW bases.  Their specialized integral subgroups coincide,
-  with rank-16 sum and quotient `Z^14` in public `M30`; a redacted 384-chart
-  adaptive search from the first parent rediscovers all fourteen held-out
-  directions.  Stability, exact rank, and unseen-family generalization remain
-  open.  See
+  Both presentations have `I2+22I1`, generic rank 16, and saturated
+  determinant-474 MW bases, but an exact affine base change and constant
+  Weierstrass scaling identify them as one fibration.  Their specialized
+  integral subgroups coincide, with rank-16 sum and quotient `Z^14` in public
+  `M30`; a redacted 384-chart adaptive search from the first presentation
+  rediscovers all fourteen held-out directions.  Stability, exact rank, and
+  unseen-family generalization remain open.  See
   [`../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](../elliptic-curves/notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md).
-<!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY a22fcfb1ea6844aa -->
-<!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 3021f19bf0594dcf -->
-- **Target-generic A1/MW16 atlas:** the complete 63,917-class curve-398
-  pipeline has now been run against eleven priority ICARM targets (703,087
-  target--fibration pairs).  Nine pencils compile exactly: two each for curves
-  398 and 400, one for 401 and 542, and three for 548.  Curves 302, 273, 399,
-  403, 402, and 10 miss this complete layer.  The first exact fixed-corridor
-  `2A1/MW15` follow-up also excludes 302 and 273, but that MW15 test is not an
-  exhaustive atlas.  See
+<!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY 75978a18cc26690f -->
+<!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 626a440519ff77f3 -->
+- **Target-generic norm-eight low-root atlas:** exact shell and singular-pencil
+  audits correct the old uniform label.  The 63,917 classes split into 1,266
+  `A1/MW16`, 8,410 `2A1/MW15`, and six further complete `mA1` strata through
+  16 `8A1/MW9` classes.  Curve 302 misses every one; the curve-398 positive
+  control hits priorities 16,875 and 63,669 in the genuine A1 stratum.  All
+  nine target hits lie in that stratum.  This is complete for the old-degree-two
+  norm-eight layer on chart 11952, not for `A2/MW15` or all fibrations.  See
   [`ICARM_A1_MW16_ATLAS_2026-09-04.md`](ICARM_A1_MW16_ATLAS_2026-09-04.md).
-<!-- status-consumer: EC-K3-ICARM-A1-MW16-ATLAS 847ddc36ab6f56b5 -->
+  This known-target atlas is calibration and is not an experiment input.
+<!-- status-consumer: EC-K3-ICARM-A1-MW16-ATLAS 6cac9b1f5349b6ac -->
 - **Native ICARM calibration:** the original 474-row calibration retains exact
   quotient and visibility data for fifteen of its 69 fibres.  The refreshed
   audit adds exact quotients for sixteen appended fibres: `Z^12` for
@@ -332,7 +346,7 @@ and the batch
 - [`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) — direct noncyclic `4A1/MW13` equation, saturated arithmetic MW13 basis, and target-free reverse hop.
 - [`R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md) — all 43 equations, six exact `j`-classes, record-curve misses, and the exact five-fibre R17 lineage.
 - [`R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md`](R17_NATIVE_ICARM_CALIBRATION_AUDIT_2026-09-04.md) — seven native quotient/cover audits, 51 norm-eight signatures on five fibres, and the fail-closed 69-fibre calibration table.
-- [`ICARM_A1_MW16_ATLAS_2026-09-04.md`](ICARM_A1_MW16_ATLAS_2026-09-04.md) — complete 63,917-class A1/MW16 screens for eleven priority ICARM targets, nine exact compiled pencils, and the first bounded `2A1/MW15` follow-up for 302/273.
+- [`ICARM_A1_MW16_ATLAS_2026-09-04.md`](ICARM_A1_MW16_ATLAS_2026-09-04.md) — corrected complete norm-eight low-root stratification and target screens: curve 302 misses all strata from `A1/MW16` through `8A1/MW9` on chart 11952.
 - [`R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md`](R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md) — exact `Z^11` transports for the three highest-rank unresolved fibres and a frozen 1,536-row ordinary cohort with two complete `PGL2` families locked out.
 - [`R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md`](R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md) — complete rigid record-to-record census, canonical and cheapest-16 norm-eight transfer matrices, and bounded late-label holdout audit.
 - [`R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md`](R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md) — exact Kummer images and invariant local fingerprints for the record pair and four controls; negative CRT gate.
@@ -411,7 +425,7 @@ twist and yields arithmetic exclusion.
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION bf05d9b06ccc1502 -->
 <!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 6a9cd04e00dcdaad -->
-<!-- status-consumer: OP-EC-NEXT b9db89a604d40ac7 -->
+<!-- status-consumer: OP-EC-NEXT 086b745cb3ca078e -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->
 <!-- status-consumer: EC-K3-R17-ALTERNATE-Q80-ARITHMETIC-RANK17 a304934727bb3f87 -->

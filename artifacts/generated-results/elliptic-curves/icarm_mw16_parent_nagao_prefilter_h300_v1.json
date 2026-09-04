@@ -1,0 +1,3022 @@
+{
+  "claim_boundary": [
+    "Nagao scores and staged survival are scheduling heuristics, not rank evidence.",
+    "No section is evaluated and no point search or Selmer calculation occurs in this stage.",
+    "A low score cannot veto an unsearched fibre.",
+    "The known target scores are local positive-control measurements, not independent observations across repeated presentations.",
+    "Finalists are authorized only for bounded half-lattice recovery, never direct expensive point search."
+  ],
+  "geometry": {
+    "coordinate_presentation_count": 9,
+    "exact_fibration_count": 5,
+    "presentation_role": "nested coordinate-height search charts; never independent outcomes",
+    "statistical_unit": "target-curve/fibration cluster"
+  },
+  "inputs": {
+    "artifacts/generated-results/elliptic-curves/icarm_mw16_parent_presentation_audit_v1.json": "7ddc6fbb9f723d3f803e17048f91fc86f305ca6c9168a6673cee1844d163c9e5",
+    "elkies-k3/scripts/search_h92_q12o5867_rootless_nagao.py": "dec9c5b1dc2af275508397c7ffb85d6f16c3cc656b627274d5aeba345b7c1c69",
+    "elliptic-curves/cas/sieve_icarm_mw16_parent_presentations_nagao.py": "17482df545b8b56d4c6a799623cafef6d0d98c00e913c247c1052f854b14e741",
+    "elliptic-curves/data/icarm_mw16_parent_ladder_blind_inputs_v1.json": "a56208ecb81944b9a78c7eaa258ceaed29d21f72f25f88c130fac01b5ad511fe"
+  },
+  "nagao_contribution": {
+    "bad_reduction_contribution": 0,
+    "formula": "((2-a_p)/(p+1-a_p))*log(p)",
+    "integer_scale": 1000000000000
+  },
+  "next_gate": {
+    "after_positive_recovery": "run a complete same-minimal-curve residual 2-Selmer calculation before any expensive continuation toward rank 32",
+    "forbidden_direct_transition": "Nagao finalist -> unrestricted or giant point search",
+    "required_inputs": [
+      "exact specialization of the saturated generic MW16 basis",
+      "exact target-fibre minimal model",
+      "state-bound recomputation of the complete intended chart order"
+    ],
+    "stage": "bounded_half_lattice_jump_recovery"
+  },
+  "presentations": [
+    {
+      "curve_id": 398,
+      "finalists": [
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6104050871113,
+            4986219790859,
+            4450485537108
+          ],
+          "good_prime_count": 24,
+          "parameter": "61/153",
+          "projective_height": 153,
+          "projective_pair": [
+            61,
+            153
+          ],
+          "total_score": 15.54075619908,
+          "total_score_units_1e12": 15540756199080
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6004176792986,
+            4775543191265,
+            4406736135632
+          ],
+          "good_prime_count": 24,
+          "parameter": "-205/63",
+          "projective_height": 205,
+          "projective_pair": [
+            -205,
+            63
+          ],
+          "total_score": 15.186456119883,
+          "total_score_units_1e12": 15186456119883
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5683198497668,
+            5143149442705,
+            4107071656962
+          ],
+          "good_prime_count": 24,
+          "parameter": "-4/3",
+          "projective_height": 4,
+          "projective_pair": [
+            -4,
+            3
+          ],
+          "total_score": 14.933419597335,
+          "total_score_units_1e12": 14933419597335
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5934295942585,
+            4775005765100,
+            4160045728037
+          ],
+          "good_prime_count": 24,
+          "parameter": "59/4",
+          "projective_height": 59,
+          "projective_pair": [
+            59,
+            4
+          ],
+          "total_score": 14.869347435722,
+          "total_score_units_1e12": 14869347435722
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5952940359694,
+            4008201543319,
+            4610788865036
+          ],
+          "good_prime_count": 24,
+          "parameter": "4/201",
+          "projective_height": 201,
+          "projective_pair": [
+            4,
+            201
+          ],
+          "total_score": 14.571930768049,
+          "total_score_units_1e12": 14571930768049
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6014632562500,
+            4002410376721,
+            4446919938811
+          ],
+          "good_prime_count": 24,
+          "parameter": "-101/81",
+          "projective_height": 101,
+          "projective_pair": [
+            -101,
+            81
+          ],
+          "total_score": 14.463962878032,
+          "total_score_units_1e12": 14463962878032
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5623126260331,
+            4577613183286,
+            4252032247463
+          ],
+          "good_prime_count": 24,
+          "parameter": "-3/2",
+          "projective_height": 3,
+          "projective_pair": [
+            -3,
+            2
+          ],
+          "total_score": 14.45277169108,
+          "total_score_units_1e12": 14452771691080
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5931047166985,
+            4204471060886,
+            4057882239775
+          ],
+          "good_prime_count": 24,
+          "parameter": "45/53",
+          "projective_height": 53,
+          "projective_pair": [
+            45,
+            53
+          ],
+          "total_score": 14.193400467646,
+          "total_score_units_1e12": 14193400467646
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            6030117153270,
+            3216553300259,
+            4553196886230
+          ],
+          "good_prime_count": 23,
+          "parameter": "28/151",
+          "projective_height": 151,
+          "projective_pair": [
+            28,
+            151
+          ],
+          "total_score": 13.799867339759,
+          "total_score_units_1e12": 13799867339759
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            4745040349838,
+            3471365834876,
+            4821794986737
+          ],
+          "good_prime_count": 24,
+          "parameter": "0/1",
+          "projective_height": 1,
+          "projective_pair": [
+            0,
+            1
+          ],
+          "total_score": 13.038201171451,
+          "total_score_units_1e12": 13038201171451
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5906388427392,
+            3920514284221,
+            3137096445670
+          ],
+          "good_prime_count": 24,
+          "parameter": "-74/251",
+          "projective_height": 251,
+          "projective_pair": [
+            -74,
+            251
+          ],
+          "total_score": 12.963999157283,
+          "total_score_units_1e12": 12963999157283
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            5791613423073,
+            3807554548923,
+            3331065797854
+          ],
+          "good_prime_count": 23,
+          "parameter": "-7/51",
+          "projective_height": 51,
+          "projective_pair": [
+            -7,
+            51
+          ],
+          "total_score": 12.93023376985,
+          "total_score_units_1e12": 12930233769850
+        }
+      ],
+      "known_target_fibre_local_control": {
+        "bad_reduction_prime_count": 5,
+        "block_score_units_1e12": [
+          2638684605461,
+          4349025806486,
+          5073038086973
+        ],
+        "good_prime_count": 19,
+        "parameter": "-273478312517509127154149830485048828022673347107308547939067553994727903425458545978043182638015899676311550557441827100822466901248/243076210150914055804756105904064536659703543720469425499709810733677965174759784940636972086422417178984090368085211",
+        "projective_height": 273478312517509127154149830485048828022673347107308547939067553994727903425458545978043182638015899676311550557441827100822466901248,
+        "projective_pair": [
+          -273478312517509127154149830485048828022673347107308547939067553994727903425458545978043182638015899676311550557441827100822466901248,
+          243076210150914055804756105904064536659703543720469425499709810733677965174759784940636972086422417178984090368085211
+        ],
+        "total_score": 12.06074849892,
+        "total_score_units_1e12": 12060748498920
+      },
+      "parent_id": "curve398-p16875",
+      "pencil_sha256": "1c33a656fc496f17801a44b81533604443f14d22c660d026f65f82d820e62cc1",
+      "priority_rank": 16875,
+      "rejected_primes": [
+        {
+          "block": 1,
+          "prime": 19,
+          "reason": "short_model_degenerate_at_every_projective_parameter"
+        }
+      ],
+      "runtime_seconds": 0.3941262000007555,
+      "stages": [
+        {
+          "cap_per_height_bucket": 16,
+          "height_bucket_count": 6,
+          "parameters_per_second": 307645.1962082454,
+          "pareto_insertions": 431,
+          "population_scored": 109592,
+          "primes": [
+            41,
+            43,
+            61,
+            71,
+            73,
+            79,
+            83
+          ],
+          "retained_count": 30,
+          "runtime_seconds": 0.35622854297980666,
+          "stage": 1
+        },
+        {
+          "cap_per_height_bucket": 8,
+          "height_bucket_count": 6,
+          "parameters_per_second": 153814.63360711193,
+          "pareto_insertions": 30,
+          "population_scored": 30,
+          "primes": [
+            89,
+            107,
+            113,
+            127,
+            131,
+            137,
+            139,
+            151
+          ],
+          "retained_count": 19,
+          "runtime_seconds": 0.00019503996009007096,
+          "stage": 2
+        },
+        {
+          "cap_per_height_bucket": 4,
+          "height_bucket_count": 6,
+          "parameters_per_second": 150853.54981135076,
+          "pareto_insertions": 19,
+          "population_scored": 19,
+          "primes": [
+            157,
+            163,
+            167,
+            173,
+            179,
+            181,
+            191,
+            193,
+            197
+          ],
+          "retained_count": 12,
+          "runtime_seconds": 0.00012594996951520443,
+          "stage": 3
+        }
+      ],
+      "usable_prime_blocks": [
+        [
+          41,
+          43,
+          61,
+          71,
+          73,
+          79,
+          83
+        ],
+        [
+          89,
+          107,
+          113,
+          127,
+          131,
+          137,
+          139,
+          151
+        ],
+        [
+          157,
+          163,
+          167,
+          173,
+          179,
+          181,
+          191,
+          193,
+          197
+        ]
+      ]
+    },
+    {
+      "curve_id": 398,
+      "finalists": [
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6155339222132,
+            4975641643415,
+            4846912538043
+          ],
+          "good_prime_count": 24,
+          "parameter": "-22/39",
+          "projective_height": 39,
+          "projective_pair": [
+            -22,
+            39
+          ],
+          "total_score": 15.97789340359,
+          "total_score_units_1e12": 15977893403590
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5958838587490,
+            4857827728037,
+            4770350984439
+          ],
+          "good_prime_count": 24,
+          "parameter": "13/202",
+          "projective_height": 202,
+          "projective_pair": [
+            13,
+            202
+          ],
+          "total_score": 15.587017299966,
+          "total_score_units_1e12": 15587017299966
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6019769854111,
+            5077664528983,
+            4448380136130
+          ],
+          "good_prime_count": 24,
+          "parameter": "110/67",
+          "projective_height": 110,
+          "projective_pair": [
+            110,
+            67
+          ],
+          "total_score": 15.545814519224,
+          "total_score_units_1e12": 15545814519224
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5992702454474,
+            4306428161208,
+            5081125702498
+          ],
+          "good_prime_count": 24,
+          "parameter": "-19/54",
+          "projective_height": 54,
+          "projective_pair": [
+            -19,
+            54
+          ],
+          "total_score": 15.38025631818,
+          "total_score_units_1e12": 15380256318180
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5796663164542,
+            4756536074619,
+            4777313997968
+          ],
+          "good_prime_count": 24,
+          "parameter": "8/1",
+          "projective_height": 8,
+          "projective_pair": [
+            8,
+            1
+          ],
+          "total_score": 15.330513237129,
+          "total_score_units_1e12": 15330513237129
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6145265244111,
+            4719626945898,
+            4404610327053
+          ],
+          "good_prime_count": 24,
+          "parameter": "227/257",
+          "projective_height": 257,
+          "projective_pair": [
+            227,
+            257
+          ],
+          "total_score": 15.269502517062,
+          "total_score_units_1e12": 15269502517062
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5863836827139,
+            4208160174198,
+            4829245175303
+          ],
+          "good_prime_count": 24,
+          "parameter": "-16/51",
+          "projective_height": 51,
+          "projective_pair": [
+            -16,
+            51
+          ],
+          "total_score": 14.90124217664,
+          "total_score_units_1e12": 14901242176640
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6075821286759,
+            4949484430488,
+            3530905010973
+          ],
+          "good_prime_count": 24,
+          "parameter": "-161/24",
+          "projective_height": 161,
+          "projective_pair": [
+            -161,
+            24
+          ],
+          "total_score": 14.55621072822,
+          "total_score_units_1e12": 14556210728220
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6034684539795,
+            4408280735818,
+            4104775598656
+          ],
+          "good_prime_count": 24,
+          "parameter": "-232/251",
+          "projective_height": 251,
+          "projective_pair": [
+            -232,
+            251
+          ],
+          "total_score": 14.547740874269,
+          "total_score_units_1e12": 14547740874269
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5905277937746,
+            4726133592528,
+            3751787596803
+          ],
+          "good_prime_count": 24,
+          "parameter": "201/16",
+          "projective_height": 201,
+          "projective_pair": [
+            201,
+            16
+          ],
+          "total_score": 14.383199127077,
+          "total_score_units_1e12": 14383199127077
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6074957020826,
+            4392982484935,
+            3255753623778
+          ],
+          "good_prime_count": 24,
+          "parameter": "-151/63",
+          "projective_height": 151,
+          "projective_pair": [
+            -151,
+            63
+          ],
+          "total_score": 13.723693129539,
+          "total_score_units_1e12": 13723693129539
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            6003552706242,
+            2969497380456,
+            4343234843180
+          ],
+          "good_prime_count": 23,
+          "parameter": "-101/89",
+          "projective_height": 101,
+          "projective_pair": [
+            -101,
+            89
+          ],
+          "total_score": 13.316284929878,
+          "total_score_units_1e12": 13316284929878
+        }
+      ],
+      "known_target_fibre_local_control": {
+        "bad_reduction_prime_count": 5,
+        "block_score_units_1e12": [
+          2638684605461,
+          4349025806486,
+          5073038086973
+        ],
+        "good_prime_count": 19,
+        "parameter": "-541266381922712529166100960678122326542295329017811351186978386511278040283284966392829974955759690589708833207806994323443840/1966455527134683136777607542029510829585376789066249361045523577208160221833556912096256713936098199933472678271",
+        "projective_height": 541266381922712529166100960678122326542295329017811351186978386511278040283284966392829974955759690589708833207806994323443840,
+        "projective_pair": [
+          -541266381922712529166100960678122326542295329017811351186978386511278040283284966392829974955759690589708833207806994323443840,
+          1966455527134683136777607542029510829585376789066249361045523577208160221833556912096256713936098199933472678271
+        ],
+        "total_score": 12.06074849892,
+        "total_score_units_1e12": 12060748498920
+      },
+      "parent_id": "curve398-p63669",
+      "pencil_sha256": "073cbf054a3c6db8f45ab6b4ca2bc75893fe5952cc833d0edcf52c57255075d1",
+      "priority_rank": 63669,
+      "rejected_primes": [
+        {
+          "block": 1,
+          "prime": 19,
+          "reason": "short_model_degenerate_at_every_projective_parameter"
+        }
+      ],
+      "runtime_seconds": 0.379946232016664,
+      "stages": [
+        {
+          "cap_per_height_bucket": 16,
+          "height_bucket_count": 6,
+          "parameters_per_second": 320822.9282392204,
+          "pareto_insertions": 424,
+          "population_scored": 109592,
+          "primes": [
+            41,
+            43,
+            61,
+            71,
+            73,
+            79,
+            83
+          ],
+          "retained_count": 36,
+          "runtime_seconds": 0.34159653302049264,
+          "stage": 1
+        },
+        {
+          "cap_per_height_bucket": 8,
+          "height_bucket_count": 6,
+          "parameters_per_second": 158422.7915144492,
+          "pareto_insertions": 36,
+          "population_scored": 36,
+          "primes": [
+            89,
+            107,
+            113,
+            127,
+            131,
+            137,
+            139,
+            151
+          ],
+          "retained_count": 17,
+          "runtime_seconds": 0.00022724003065377474,
+          "stage": 2
+        },
+        {
+          "cap_per_height_bucket": 4,
+          "height_bucket_count": 6,
+          "parameters_per_second": 144349.1689594039,
+          "pareto_insertions": 17,
+          "population_scored": 17,
+          "primes": [
+            157,
+            163,
+            167,
+            173,
+            179,
+            181,
+            191,
+            193,
+            197
+          ],
+          "retained_count": 13,
+          "runtime_seconds": 0.00011776998871937394,
+          "stage": 3
+        }
+      ],
+      "usable_prime_blocks": [
+        [
+          41,
+          43,
+          61,
+          71,
+          73,
+          79,
+          83
+        ],
+        [
+          89,
+          107,
+          113,
+          127,
+          131,
+          137,
+          139,
+          151
+        ],
+        [
+          157,
+          163,
+          167,
+          173,
+          179,
+          181,
+          191,
+          193,
+          197
+        ]
+      ]
+    },
+    {
+      "curve_id": 400,
+      "finalists": [
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6104050871113,
+            5579879036087,
+            4620270769958
+          ],
+          "good_prime_count": 24,
+          "parameter": "89/241",
+          "projective_height": 241,
+          "projective_pair": [
+            89,
+            241
+          ],
+          "total_score": 16.304200677158,
+          "total_score_units_1e12": 16304200677158
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6134243678583,
+            4901699034863,
+            4751880787473
+          ],
+          "good_prime_count": 24,
+          "parameter": "-44/39",
+          "projective_height": 44,
+          "projective_pair": [
+            -44,
+            39
+          ],
+          "total_score": 15.787823500919,
+          "total_score_units_1e12": 15787823500919
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5730134572726,
+            4576327089269,
+            4635889413479
+          ],
+          "good_prime_count": 24,
+          "parameter": "7/3",
+          "projective_height": 7,
+          "projective_pair": [
+            7,
+            3
+          ],
+          "total_score": 14.942351075474,
+          "total_score_units_1e12": 14942351075474
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6040731112160,
+            4891774059404,
+            3481707961745
+          ],
+          "good_prime_count": 24,
+          "parameter": "-47/124",
+          "projective_height": 124,
+          "projective_pair": [
+            -47,
+            124
+          ],
+          "total_score": 14.414213133309,
+          "total_score_units_1e12": 14414213133309
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5382474043544,
+            4788489014706,
+            4227963137255
+          ],
+          "good_prime_count": 24,
+          "parameter": "-1/2",
+          "projective_height": 2,
+          "projective_pair": [
+            -1,
+            2
+          ],
+          "total_score": 14.398926195505,
+          "total_score_units_1e12": 14398926195505
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6079017429437,
+            4521201573519,
+            3652325545825
+          ],
+          "good_prime_count": 24,
+          "parameter": "115/203",
+          "projective_height": 203,
+          "projective_pair": [
+            115,
+            203
+          ],
+          "total_score": 14.252544548781,
+          "total_score_units_1e12": 14252544548781
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6150078952263,
+            3557954134043,
+            4343754751150
+          ],
+          "good_prime_count": 24,
+          "parameter": "-242/251",
+          "projective_height": 251,
+          "projective_pair": [
+            -242,
+            251
+          ],
+          "total_score": 14.051787837456,
+          "total_score_units_1e12": 14051787837456
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5836533575874,
+            5014688574891,
+            2606467151992
+          ],
+          "good_prime_count": 24,
+          "parameter": "51/1",
+          "projective_height": 51,
+          "projective_pair": [
+            51,
+            1
+          ],
+          "total_score": 13.457689302757,
+          "total_score_units_1e12": 13457689302757
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6027663892755,
+            3878926502906,
+            3530879792974
+          ],
+          "good_prime_count": 24,
+          "parameter": "39/101",
+          "projective_height": 101,
+          "projective_pair": [
+            39,
+            101
+          ],
+          "total_score": 13.437470188635,
+          "total_score_units_1e12": 13437470188635
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6038357264330,
+            3367979877611,
+            4006391041475
+          ],
+          "good_prime_count": 24,
+          "parameter": "41/153",
+          "projective_height": 153,
+          "projective_pair": [
+            41,
+            153
+          ],
+          "total_score": 13.412728183416,
+          "total_score_units_1e12": 13412728183416
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            5910098697205,
+            3407547467524,
+            4030462770436
+          ],
+          "good_prime_count": 23,
+          "parameter": "92/151",
+          "projective_height": 151,
+          "projective_pair": [
+            92,
+            151
+          ],
+          "total_score": 13.348108935165,
+          "total_score_units_1e12": 13348108935165
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            4449876824069,
+            3570801046679,
+            4017865437607
+          ],
+          "good_prime_count": 23,
+          "parameter": "0/1",
+          "projective_height": 1,
+          "projective_pair": [
+            0,
+            1
+          ],
+          "total_score": 12.038543308355,
+          "total_score_units_1e12": 12038543308355
+        }
+      ],
+      "known_target_fibre_local_control": {
+        "bad_reduction_prime_count": 3,
+        "block_score_units_1e12": [
+          2660801543418,
+          5108639746754,
+          4928123323096
+        ],
+        "good_prime_count": 21,
+        "parameter": "157523997680948548022603219577304007443752177189820268903395061848750641039477262511830042245221318390130477236353370771507440069056/11826281759518542109594979208443001850975262439617492595123634193004584996424162059113656595382661772816278614963003",
+        "projective_height": 157523997680948548022603219577304007443752177189820268903395061848750641039477262511830042245221318390130477236353370771507440069056,
+        "projective_pair": [
+          157523997680948548022603219577304007443752177189820268903395061848750641039477262511830042245221318390130477236353370771507440069056,
+          11826281759518542109594979208443001850975262439617492595123634193004584996424162059113656595382661772816278614963003
+        ],
+        "total_score": 12.697564613268,
+        "total_score_units_1e12": 12697564613268
+      },
+      "parent_id": "curve400-p53042",
+      "pencil_sha256": "e4e4f12c4ab1a0bc89c4876d70eb2f561f07a9e57143052422a97d2b44524647",
+      "priority_rank": 53042,
+      "rejected_primes": [
+        {
+          "block": 1,
+          "prime": 19,
+          "reason": "short_model_degenerate_at_every_projective_parameter"
+        }
+      ],
+      "runtime_seconds": 0.38839221402304247,
+      "stages": [
+        {
+          "cap_per_height_bucket": 16,
+          "height_bucket_count": 6,
+          "parameters_per_second": 312475.232324162,
+          "pareto_insertions": 450,
+          "population_scored": 109592,
+          "primes": [
+            41,
+            43,
+            61,
+            71,
+            73,
+            79,
+            83
+          ],
+          "retained_count": 29,
+          "runtime_seconds": 0.3507221970357932,
+          "stage": 1
+        },
+        {
+          "cap_per_height_bucket": 8,
+          "height_bucket_count": 6,
+          "parameters_per_second": 154403.15339618555,
+          "pareto_insertions": 29,
+          "population_scored": 29,
+          "primes": [
+            89,
+            107,
+            113,
+            127,
+            131,
+            137,
+            139,
+            151
+          ],
+          "retained_count": 17,
+          "runtime_seconds": 0.0001878199982456863,
+          "stage": 2
+        },
+        {
+          "cap_per_height_bucket": 4,
+          "height_bucket_count": 6,
+          "parameters_per_second": 145560.4019104512,
+          "pareto_insertions": 17,
+          "population_scored": 17,
+          "primes": [
+            157,
+            163,
+            167,
+            173,
+            179,
+            181,
+            191,
+            193,
+            197
+          ],
+          "retained_count": 13,
+          "runtime_seconds": 0.0001167900045402348,
+          "stage": 3
+        }
+      ],
+      "usable_prime_blocks": [
+        [
+          41,
+          43,
+          61,
+          71,
+          73,
+          79,
+          83
+        ],
+        [
+          89,
+          107,
+          113,
+          127,
+          131,
+          137,
+          139,
+          151
+        ],
+        [
+          157,
+          163,
+          167,
+          173,
+          179,
+          181,
+          191,
+          193,
+          197
+        ]
+      ]
+    },
+    {
+      "curve_id": 400,
+      "finalists": [
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6060055319032,
+            4903360643234,
+            4985467466202
+          ],
+          "good_prime_count": 24,
+          "parameter": "223/252",
+          "projective_height": 252,
+          "projective_pair": [
+            223,
+            252
+          ],
+          "total_score": 15.948883428468,
+          "total_score_units_1e12": 15948883428468
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5965355938473,
+            4643017097785,
+            4830446498366
+          ],
+          "good_prime_count": 24,
+          "parameter": "251/102",
+          "projective_height": 251,
+          "projective_pair": [
+            251,
+            102
+          ],
+          "total_score": 15.438819534624,
+          "total_score_units_1e12": 15438819534624
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6114361735330,
+            4706099478843,
+            3848892843308
+          ],
+          "good_prime_count": 24,
+          "parameter": "-158/97",
+          "projective_height": 158,
+          "projective_pair": [
+            -158,
+            97
+          ],
+          "total_score": 14.669354057481,
+          "total_score_units_1e12": 14669354057481
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5831469468484,
+            4401164628641,
+            4368504988529
+          ],
+          "good_prime_count": 24,
+          "parameter": "11/51",
+          "projective_height": 51,
+          "projective_pair": [
+            11,
+            51
+          ],
+          "total_score": 14.601139085654,
+          "total_score_units_1e12": 14601139085654
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6069919207980,
+            4049863792505,
+            4402517663159
+          ],
+          "good_prime_count": 24,
+          "parameter": "-151/11",
+          "projective_height": 151,
+          "projective_pair": [
+            -151,
+            11
+          ],
+          "total_score": 14.522300663644,
+          "total_score_units_1e12": 14522300663644
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5818701136150,
+            4976547034407,
+            3713396491868
+          ],
+          "good_prime_count": 24,
+          "parameter": "-1/13",
+          "projective_height": 13,
+          "projective_pair": [
+            -1,
+            13
+          ],
+          "total_score": 14.508644662425,
+          "total_score_units_1e12": 14508644662425
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6003949869882,
+            4530282140597,
+            3678527534476
+          ],
+          "good_prime_count": 24,
+          "parameter": "-105/101",
+          "projective_height": 105,
+          "projective_pair": [
+            -105,
+            101
+          ],
+          "total_score": 14.212759544955,
+          "total_score_units_1e12": 14212759544955
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5174450312780,
+            4258990786100,
+            4742337780511
+          ],
+          "good_prime_count": 24,
+          "parameter": "0/1",
+          "projective_height": 1,
+          "projective_pair": [
+            0,
+            1
+          ],
+          "total_score": 14.175778879391,
+          "total_score_units_1e12": 14175778879391
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            6057503513874,
+            5273411106603,
+            2252238888015
+          ],
+          "good_prime_count": 23,
+          "parameter": "202/135",
+          "projective_height": 202,
+          "projective_pair": [
+            202,
+            135
+          ],
+          "total_score": 13.583153508492,
+          "total_score_units_1e12": 13583153508492
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            5815481414130,
+            4659227721550,
+            3071686036199
+          ],
+          "good_prime_count": 23,
+          "parameter": "-101/47",
+          "projective_height": 101,
+          "projective_pair": [
+            -101,
+            47
+          ],
+          "total_score": 13.546395171879,
+          "total_score_units_1e12": 13546395171879
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5895828695108,
+            2706015728137,
+            3395319077435
+          ],
+          "good_prime_count": 24,
+          "parameter": "201/32",
+          "projective_height": 201,
+          "projective_pair": [
+            201,
+            32
+          ],
+          "total_score": 11.99716350068,
+          "total_score_units_1e12": 11997163500680
+        }
+      ],
+      "known_target_fibre_local_control": {
+        "bad_reduction_prime_count": 3,
+        "block_score_units_1e12": [
+          2660801543418,
+          5108639746754,
+          4928123323096
+        ],
+        "good_prime_count": 21,
+        "parameter": "-582405534466391785534691326608455511624513963960533787325981064513964131812570788337274922179270373831802516609611754368995137344/47296123667519966713206185176493264820038095436607642146915952286476549354881112711160852210489121056502302744511",
+        "projective_height": 582405534466391785534691326608455511624513963960533787325981064513964131812570788337274922179270373831802516609611754368995137344,
+        "projective_pair": [
+          -582405534466391785534691326608455511624513963960533787325981064513964131812570788337274922179270373831802516609611754368995137344,
+          47296123667519966713206185176493264820038095436607642146915952286476549354881112711160852210489121056502302744511
+        ],
+        "total_score": 12.697564613268,
+        "total_score_units_1e12": 12697564613268
+      },
+      "parent_id": "curve400-p62992",
+      "pencil_sha256": "3adf2109f7b06dc5748d7dc3ec2638b3cfa04cfd363beb76c2d347ad75498721",
+      "priority_rank": 62992,
+      "rejected_primes": [
+        {
+          "block": 1,
+          "prime": 19,
+          "reason": "short_model_degenerate_at_every_projective_parameter"
+        }
+      ],
+      "runtime_seconds": 0.38156441802857444,
+      "stages": [
+        {
+          "cap_per_height_bucket": 16,
+          "height_bucket_count": 6,
+          "parameters_per_second": 318575.9036145724,
+          "pareto_insertions": 449,
+          "population_scored": 109592,
+          "primes": [
+            41,
+            43,
+            61,
+            71,
+            73,
+            79,
+            83
+          ],
+          "retained_count": 31,
+          "runtime_seconds": 0.3440059300046414,
+          "stage": 1
+        },
+        {
+          "cap_per_height_bucket": 8,
+          "height_bucket_count": 6,
+          "parameters_per_second": 158762.68756411085,
+          "pareto_insertions": 31,
+          "population_scored": 31,
+          "primes": [
+            89,
+            107,
+            113,
+            127,
+            131,
+            137,
+            139,
+            151
+          ],
+          "retained_count": 14,
+          "runtime_seconds": 0.00019525998504832387,
+          "stage": 2
+        },
+        {
+          "cap_per_height_bucket": 4,
+          "height_bucket_count": 6,
+          "parameters_per_second": 145076.2654918287,
+          "pareto_insertions": 14,
+          "population_scored": 14,
+          "primes": [
+            157,
+            163,
+            167,
+            173,
+            179,
+            181,
+            191,
+            193,
+            197
+          ],
+          "retained_count": 11,
+          "runtime_seconds": 9.650096762925386e-05,
+          "stage": 3
+        }
+      ],
+      "usable_prime_blocks": [
+        [
+          41,
+          43,
+          61,
+          71,
+          73,
+          79,
+          83
+        ],
+        [
+          89,
+          107,
+          113,
+          127,
+          131,
+          137,
+          139,
+          151
+        ],
+        [
+          157,
+          163,
+          167,
+          173,
+          179,
+          181,
+          191,
+          193,
+          197
+        ]
+      ]
+    },
+    {
+      "curve_id": 401,
+      "finalists": [
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            6038357264330,
+            4512902865539,
+            4497190614834
+          ],
+          "good_prime_count": 22,
+          "parameter": "-101/254",
+          "projective_height": 254,
+          "projective_pair": [
+            -101,
+            254
+          ],
+          "total_score": 15.048450744703,
+          "total_score_units_1e12": 15048450744703
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6087845998070,
+            5143105934954,
+            3654531914573
+          ],
+          "good_prime_count": 23,
+          "parameter": "54/47",
+          "projective_height": 54,
+          "projective_pair": [
+            54,
+            47
+          ],
+          "total_score": 14.885483847597,
+          "total_score_units_1e12": 14885483847597
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6022378718202,
+            4988923552415,
+            3833452663709
+          ],
+          "good_prime_count": 23,
+          "parameter": "83/153",
+          "projective_height": 153,
+          "projective_pair": [
+            83,
+            153
+          ],
+          "total_score": 14.844754934326,
+          "total_score_units_1e12": 14844754934326
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6018428678704,
+            5093320723258,
+            3714373621788
+          ],
+          "good_prime_count": 23,
+          "parameter": "-105/52",
+          "projective_height": 105,
+          "projective_pair": [
+            -105,
+            52
+          ],
+          "total_score": 14.82612302375,
+          "total_score_units_1e12": 14826123023750
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5944712178957,
+            4781520664024,
+            3628451813860
+          ],
+          "good_prime_count": 23,
+          "parameter": "11/2",
+          "projective_height": 11,
+          "projective_pair": [
+            11,
+            2
+          ],
+          "total_score": 14.354684656841,
+          "total_score_units_1e12": 14354684656841
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5749081951717,
+            4849144335478,
+            3748035252222
+          ],
+          "good_prime_count": 23,
+          "parameter": "-51/7",
+          "projective_height": 51,
+          "projective_pair": [
+            -51,
+            7
+          ],
+          "total_score": 14.346261539417,
+          "total_score_units_1e12": 14346261539417
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6096522186551,
+            4655391812709,
+            3438276491869
+          ],
+          "good_prime_count": 23,
+          "parameter": "-249/256",
+          "projective_height": 256,
+          "projective_pair": [
+            -249,
+            256
+          ],
+          "total_score": 14.190190491129,
+          "total_score_units_1e12": 14190190491129
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6150654653936,
+            4518452700759,
+            3084906154486
+          ],
+          "good_prime_count": 23,
+          "parameter": "-111/202",
+          "projective_height": 202,
+          "projective_pair": [
+            -111,
+            202
+          ],
+          "total_score": 13.754013509181,
+          "total_score_units_1e12": 13754013509181
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            5919071464735,
+            3891039104977,
+            3898877341890
+          ],
+          "good_prime_count": 22,
+          "parameter": "57/151",
+          "projective_height": 151,
+          "projective_pair": [
+            57,
+            151
+          ],
+          "total_score": 13.708987911602,
+          "total_score_units_1e12": 13708987911602
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5696962697973,
+            5019876868943,
+            2989026672889
+          ],
+          "good_prime_count": 23,
+          "parameter": "-3/5",
+          "projective_height": 5,
+          "projective_pair": [
+            -3,
+            5
+          ],
+          "total_score": 13.705866239805,
+          "total_score_units_1e12": 13705866239805
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5920789334932,
+            4362253560204,
+            2795345997697
+          ],
+          "good_prime_count": 23,
+          "parameter": "-77/101",
+          "projective_height": 101,
+          "projective_pair": [
+            -77,
+            101
+          ],
+          "total_score": 13.078388892833,
+          "total_score_units_1e12": 13078388892833
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            4558987937334,
+            4153450452871,
+            4218495767648
+          ],
+          "good_prime_count": 22,
+          "parameter": "-1/1",
+          "projective_height": 1,
+          "projective_pair": [
+            -1,
+            1
+          ],
+          "total_score": 12.930934157853,
+          "total_score_units_1e12": 12930934157853
+        }
+      ],
+      "known_target_fibre_local_control": {
+        "bad_reduction_prime_count": 0,
+        "block_score_units_1e12": [
+          5951506552718,
+          3979791758672,
+          4502268509491
+        ],
+        "good_prime_count": 23,
+        "parameter": "1007805989042831072127365253839311993924862034448303565343586012211975655496798202522935531856401704247520237659695632349696/270357576879101295610106602663457873673359072357603793578920143617251377721948578366970166138036917161464645",
+        "projective_height": 1007805989042831072127365253839311993924862034448303565343586012211975655496798202522935531856401704247520237659695632349696,
+        "projective_pair": [
+          1007805989042831072127365253839311993924862034448303565343586012211975655496798202522935531856401704247520237659695632349696,
+          270357576879101295610106602663457873673359072357603793578920143617251377721948578366970166138036917161464645
+        ],
+        "total_score": 14.433566820881,
+        "total_score_units_1e12": 14433566820881
+      },
+      "parent_id": "curve401-p57487",
+      "pencil_sha256": "8d89013ad3bef34606f19527bcbc94c44e614ffc886f2359b6a720a4352f2916",
+      "priority_rank": 57487,
+      "rejected_primes": [
+        {
+          "block": 1,
+          "prime": 19,
+          "reason": "short_model_degenerate_at_every_projective_parameter"
+        },
+        {
+          "block": 3,
+          "prime": 167,
+          "reason": "coefficient_denominator_not_invertible"
+        }
+      ],
+      "runtime_seconds": 0.38258467899868265,
+      "stages": [
+        {
+          "cap_per_height_bucket": 16,
+          "height_bucket_count": 6,
+          "parameters_per_second": 315708.771383362,
+          "pareto_insertions": 450,
+          "population_scored": 109592,
+          "primes": [
+            41,
+            43,
+            61,
+            71,
+            73,
+            79,
+            83
+          ],
+          "retained_count": 28,
+          "runtime_seconds": 0.3471300449455157,
+          "stage": 1
+        },
+        {
+          "cap_per_height_bucket": 8,
+          "height_bucket_count": 6,
+          "parameters_per_second": 160109.76414451262,
+          "pareto_insertions": 28,
+          "population_scored": 28,
+          "primes": [
+            89,
+            107,
+            113,
+            127,
+            131,
+            137,
+            139,
+            151
+          ],
+          "retained_count": 17,
+          "runtime_seconds": 0.0001748800277709961,
+          "stage": 2
+        },
+        {
+          "cap_per_height_bucket": 4,
+          "height_bucket_count": 6,
+          "parameters_per_second": 155393.0272809791,
+          "pareto_insertions": 17,
+          "population_scored": 17,
+          "primes": [
+            157,
+            163,
+            173,
+            179,
+            181,
+            191,
+            193,
+            197
+          ],
+          "retained_count": 16,
+          "runtime_seconds": 0.0001094000181183219,
+          "stage": 3
+        }
+      ],
+      "usable_prime_blocks": [
+        [
+          41,
+          43,
+          61,
+          71,
+          73,
+          79,
+          83
+        ],
+        [
+          89,
+          107,
+          113,
+          127,
+          131,
+          137,
+          139,
+          151
+        ],
+        [
+          157,
+          163,
+          173,
+          179,
+          181,
+          191,
+          193,
+          197
+        ]
+      ]
+    },
+    {
+      "curve_id": 542,
+      "finalists": [
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6105384518183,
+            4111281720254,
+            4862064704906
+          ],
+          "good_prime_count": 23,
+          "parameter": "-269/187",
+          "projective_height": 269,
+          "projective_pair": [
+            -269,
+            187
+          ],
+          "total_score": 15.078730943343,
+          "total_score_units_1e12": 15078730943343
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5830282783709,
+            4517841475059,
+            4110575733612
+          ],
+          "good_prime_count": 23,
+          "parameter": "-7/8",
+          "projective_height": 8,
+          "projective_pair": [
+            -7,
+            8
+          ],
+          "total_score": 14.45869999238,
+          "total_score_units_1e12": 14458699992380
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6015548597235,
+            3766632861825,
+            4427392096638
+          ],
+          "good_prime_count": 23,
+          "parameter": "-10/251",
+          "projective_height": 251,
+          "projective_pair": [
+            -10,
+            251
+          ],
+          "total_score": 14.209573555698,
+          "total_score_units_1e12": 14209573555698
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5422835845642,
+            4717354627724,
+            4018628367453
+          ],
+          "good_prime_count": 23,
+          "parameter": "-1/1",
+          "projective_height": 1,
+          "projective_pair": [
+            -1,
+            1
+          ],
+          "total_score": 14.158818840819,
+          "total_score_units_1e12": 14158818840819
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            6091105607618,
+            4858619264323,
+            3015293182152
+          ],
+          "good_prime_count": 22,
+          "parameter": "97/202",
+          "projective_height": 202,
+          "projective_pair": [
+            97,
+            202
+          ],
+          "total_score": 13.965018054093,
+          "total_score_units_1e12": 13965018054093
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            6151671641855,
+            4766085136457,
+            3009769957710
+          ],
+          "good_prime_count": 23,
+          "parameter": "-44/63",
+          "projective_height": 63,
+          "projective_pair": [
+            -44,
+            63
+          ],
+          "total_score": 13.927526736022,
+          "total_score_units_1e12": 13927526736022
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            5969070074912,
+            3977519720661,
+            3907027443432
+          ],
+          "good_prime_count": 22,
+          "parameter": "64/151",
+          "projective_height": 151,
+          "projective_pair": [
+            64,
+            151
+          ],
+          "total_score": 13.853617239005,
+          "total_score_units_1e12": 13853617239005
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5863939663680,
+            4481941232683,
+            3462611067141
+          ],
+          "good_prime_count": 23,
+          "parameter": "51/20",
+          "projective_height": 51,
+          "projective_pair": [
+            51,
+            20
+          ],
+          "total_score": 13.808491963504,
+          "total_score_units_1e12": 13808491963504
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5786267350633,
+            3917773800405,
+            3983776918101
+          ],
+          "good_prime_count": 23,
+          "parameter": "-68/101",
+          "projective_height": 101,
+          "projective_pair": [
+            -68,
+            101
+          ],
+          "total_score": 13.687818069139,
+          "total_score_units_1e12": 13687818069139
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            5816726141793,
+            2447822902530,
+            3905106786644
+          ],
+          "good_prime_count": 22,
+          "parameter": "201/127",
+          "projective_height": 201,
+          "projective_pair": [
+            201,
+            127
+          ],
+          "total_score": 12.169655830967,
+          "total_score_units_1e12": 12169655830967
+        }
+      ],
+      "known_target_fibre_local_control": {
+        "bad_reduction_prime_count": 4,
+        "block_score_units_1e12": [
+          4248654544255,
+          4186468477543,
+          4843289957120
+        ],
+        "good_prime_count": 19,
+        "parameter": "-45595560999018596945407953905299508157153209998872522007074478636513432556618128509614479856363923986195991456451905766386752/16955796840987349806659837177175338902737113902188453096013809949545053054342004506208768805067152549236867431",
+        "projective_height": 45595560999018596945407953905299508157153209998872522007074478636513432556618128509614479856363923986195991456451905766386752,
+        "projective_pair": [
+          -45595560999018596945407953905299508157153209998872522007074478636513432556618128509614479856363923986195991456451905766386752,
+          16955796840987349806659837177175338902737113902188453096013809949545053054342004506208768805067152549236867431
+        ],
+        "total_score": 13.278412978918,
+        "total_score_units_1e12": 13278412978918
+      },
+      "parent_id": "curve542-p30486",
+      "pencil_sha256": "3e24fbb1503e692fd90526f81104000d9a87ce904987a43bd28390b392589b1c",
+      "priority_rank": 30486,
+      "rejected_primes": [
+        {
+          "block": 1,
+          "prime": 19,
+          "reason": "short_model_degenerate_at_every_projective_parameter"
+        },
+        {
+          "block": 3,
+          "prime": 179,
+          "reason": "coefficient_denominator_not_invertible"
+        }
+      ],
+      "runtime_seconds": 0.3813852479797788,
+      "stages": [
+        {
+          "cap_per_height_bucket": 16,
+          "height_bucket_count": 6,
+          "parameters_per_second": 316404.2106495169,
+          "pareto_insertions": 413,
+          "population_scored": 109592,
+          "primes": [
+            41,
+            43,
+            61,
+            71,
+            73,
+            79,
+            83
+          ],
+          "retained_count": 23,
+          "runtime_seconds": 0.346367071964778,
+          "stage": 1
+        },
+        {
+          "cap_per_height_bucket": 8,
+          "height_bucket_count": 6,
+          "parameters_per_second": 145312.08880160926,
+          "pareto_insertions": 23,
+          "population_scored": 23,
+          "primes": [
+            89,
+            107,
+            113,
+            127,
+            131,
+            137,
+            139,
+            151
+          ],
+          "retained_count": 14,
+          "runtime_seconds": 0.00015828001778572798,
+          "stage": 2
+        },
+        {
+          "cap_per_height_bucket": 4,
+          "height_bucket_count": 6,
+          "parameters_per_second": 151317.0627304973,
+          "pareto_insertions": 14,
+          "population_scored": 14,
+          "primes": [
+            157,
+            163,
+            167,
+            173,
+            181,
+            191,
+            193,
+            197
+          ],
+          "retained_count": 10,
+          "runtime_seconds": 9.252096060663462e-05,
+          "stage": 3
+        }
+      ],
+      "usable_prime_blocks": [
+        [
+          41,
+          43,
+          61,
+          71,
+          73,
+          79,
+          83
+        ],
+        [
+          89,
+          107,
+          113,
+          127,
+          131,
+          137,
+          139,
+          151
+        ],
+        [
+          157,
+          163,
+          167,
+          173,
+          181,
+          191,
+          193,
+          197
+        ]
+      ]
+    },
+    {
+      "curve_id": 548,
+      "finalists": [
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5275033222092,
+            5262119467158,
+            5034123462623
+          ],
+          "good_prime_count": 23,
+          "parameter": "-57/145",
+          "projective_height": 145,
+          "projective_pair": [
+            -57,
+            145
+          ],
+          "total_score": 15.571276151873,
+          "total_score_units_1e12": 15571276151873
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5247703055378,
+            4862172742323,
+            4646880761956
+          ],
+          "good_prime_count": 23,
+          "parameter": "11/10",
+          "projective_height": 11,
+          "projective_pair": [
+            11,
+            10
+          ],
+          "total_score": 14.756756559657,
+          "total_score_units_1e12": 14756756559657
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5186960659184,
+            4980033835248,
+            4406466962449
+          ],
+          "good_prime_count": 23,
+          "parameter": "201/109",
+          "projective_height": 201,
+          "projective_pair": [
+            201,
+            109
+          ],
+          "total_score": 14.573461456881,
+          "total_score_units_1e12": 14573461456881
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            4968550015594,
+            4414658188014,
+            4868988699631
+          ],
+          "good_prime_count": 22,
+          "parameter": "8/5",
+          "projective_height": 8,
+          "projective_pair": [
+            8,
+            5
+          ],
+          "total_score": 14.252196903239,
+          "total_score_units_1e12": 14252196903239
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5138952929476,
+            4739211632036,
+            4288383159132
+          ],
+          "good_prime_count": 23,
+          "parameter": "-46/53",
+          "projective_height": 53,
+          "projective_pair": [
+            -46,
+            53
+          ],
+          "total_score": 14.166547720644,
+          "total_score_units_1e12": 14166547720644
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5267218873736,
+            4520541993497,
+            4231506429729
+          ],
+          "good_prime_count": 23,
+          "parameter": "125/121",
+          "projective_height": 125,
+          "projective_pair": [
+            125,
+            121
+          ],
+          "total_score": 14.019267296962,
+          "total_score_units_1e12": 14019267296962
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            4846853044417,
+            4451728323355,
+            3720409197896
+          ],
+          "good_prime_count": 23,
+          "parameter": "-1/1",
+          "projective_height": 1,
+          "projective_pair": [
+            -1,
+            1
+          ],
+          "total_score": 13.018990565668,
+          "total_score_units_1e12": 13018990565668
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5255861428868,
+            5195879076912,
+            2523831318382
+          ],
+          "good_prime_count": 23,
+          "parameter": "129/176",
+          "projective_height": 176,
+          "projective_pair": [
+            129,
+            176
+          ],
+          "total_score": 12.975571824162,
+          "total_score_units_1e12": 12975571824162
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5223300130504,
+            2841697997355,
+            4157377385618
+          ],
+          "good_prime_count": 23,
+          "parameter": "106/77",
+          "projective_height": 106,
+          "projective_pair": [
+            106,
+            77
+          ],
+          "total_score": 12.222375513477,
+          "total_score_units_1e12": 12222375513477
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5093288257186,
+            3432764581836,
+            3559451350333
+          ],
+          "good_prime_count": 23,
+          "parameter": "51/5",
+          "projective_height": 51,
+          "projective_pair": [
+            51,
+            5
+          ],
+          "total_score": 12.085504189355,
+          "total_score_units_1e12": 12085504189355
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            5245958982883,
+            3284951545176,
+            3492682109023
+          ],
+          "good_prime_count": 22,
+          "parameter": "-29/151",
+          "projective_height": 151,
+          "projective_pair": [
+            -29,
+            151
+          ],
+          "total_score": 12.023592637082,
+          "total_score_units_1e12": 12023592637082
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5050015159254,
+            3967548035928,
+            2967855600798
+          ],
+          "good_prime_count": 23,
+          "parameter": "-10/251",
+          "projective_height": 251,
+          "projective_pair": [
+            -10,
+            251
+          ],
+          "total_score": 11.98541879598,
+          "total_score_units_1e12": 11985418795980
+        }
+      ],
+      "known_target_fibre_local_control": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          3783593358067,
+          4165559396921,
+          5509508841605
+        ],
+        "good_prime_count": 22,
+        "parameter": "9055597859295204611172663866943367048080860544093012582942572931660045494178834569381047935189298049029450601792691894836202203136/5298911383687453290299876088706938001289112978909588612351682043986664239852659561540844535664248117612250062646187",
+        "projective_height": 9055597859295204611172663866943367048080860544093012582942572931660045494178834569381047935189298049029450601792691894836202203136,
+        "projective_pair": [
+          9055597859295204611172663866943367048080860544093012582942572931660045494178834569381047935189298049029450601792691894836202203136,
+          5298911383687453290299876088706938001289112978909588612351682043986664239852659561540844535664248117612250062646187
+        ],
+        "total_score": 13.458661596593,
+        "total_score_units_1e12": 13458661596593
+      },
+      "parent_id": "curve548-p31627",
+      "pencil_sha256": "d9bf598100de17a74a3d3d5956f04a8bdc4279e941243cafe61a40ebb3290b11",
+      "priority_rank": 31627,
+      "rejected_primes": [
+        {
+          "block": 1,
+          "prime": 19,
+          "reason": "short_model_degenerate_at_every_projective_parameter"
+        },
+        {
+          "block": 1,
+          "prime": 73,
+          "reason": "coefficient_denominator_not_invertible"
+        }
+      ],
+      "runtime_seconds": 0.36719725298462436,
+      "stages": [
+        {
+          "cap_per_height_bucket": 16,
+          "height_bucket_count": 6,
+          "parameters_per_second": 332131.34325744404,
+          "pareto_insertions": 436,
+          "population_scored": 109592,
+          "primes": [
+            41,
+            43,
+            61,
+            71,
+            79,
+            83
+          ],
+          "retained_count": 25,
+          "runtime_seconds": 0.32996584702050313,
+          "stage": 1
+        },
+        {
+          "cap_per_height_bucket": 8,
+          "height_bucket_count": 6,
+          "parameters_per_second": 152569.23200433093,
+          "pareto_insertions": 25,
+          "population_scored": 25,
+          "primes": [
+            89,
+            107,
+            113,
+            127,
+            131,
+            137,
+            139,
+            151
+          ],
+          "retained_count": 15,
+          "runtime_seconds": 0.00016386003699153662,
+          "stage": 2
+        },
+        {
+          "cap_per_height_bucket": 4,
+          "height_bucket_count": 6,
+          "parameters_per_second": 139301.58279588027,
+          "pareto_insertions": 15,
+          "population_scored": 15,
+          "primes": [
+            157,
+            163,
+            167,
+            173,
+            179,
+            181,
+            191,
+            193,
+            197
+          ],
+          "retained_count": 13,
+          "runtime_seconds": 0.00010768003994598985,
+          "stage": 3
+        }
+      ],
+      "usable_prime_blocks": [
+        [
+          41,
+          43,
+          61,
+          71,
+          79,
+          83
+        ],
+        [
+          89,
+          107,
+          113,
+          127,
+          131,
+          137,
+          139,
+          151
+        ],
+        [
+          157,
+          163,
+          167,
+          173,
+          179,
+          181,
+          191,
+          193,
+          197
+        ]
+      ]
+    },
+    {
+      "curve_id": 548,
+      "finalists": [
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5174457042064,
+            5296107324136,
+            4272565133428
+          ],
+          "good_prime_count": 23,
+          "parameter": "-251/152",
+          "projective_height": 251,
+          "projective_pair": [
+            -251,
+            152
+          ],
+          "total_score": 14.743129499628,
+          "total_score_units_1e12": 14743129499628
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5252725086918,
+            4541202772625,
+            4679896992188
+          ],
+          "good_prime_count": 23,
+          "parameter": "53/19",
+          "projective_height": 53,
+          "projective_pair": [
+            53,
+            19
+          ],
+          "total_score": 14.473824851731,
+          "total_score_units_1e12": 14473824851731
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            5255099676215,
+            4447925531847,
+            4447506213468
+          ],
+          "good_prime_count": 22,
+          "parameter": "152/5",
+          "projective_height": 152,
+          "projective_pair": [
+            152,
+            5
+          ],
+          "total_score": 14.15053142153,
+          "total_score_units_1e12": 14150531421530
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5252001066050,
+            4645267316999,
+            4163367230315
+          ],
+          "good_prime_count": 23,
+          "parameter": "43/109",
+          "projective_height": 109,
+          "projective_pair": [
+            43,
+            109
+          ],
+          "total_score": 14.060635613364,
+          "total_score_units_1e12": 14060635613364
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5250612034011,
+            5230319975160,
+            2823452831111
+          ],
+          "good_prime_count": 23,
+          "parameter": "-201/143",
+          "projective_height": 201,
+          "projective_pair": [
+            -201,
+            143
+          ],
+          "total_score": 13.304384840282,
+          "total_score_units_1e12": 13304384840282
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5220903451890,
+            4572260450542,
+            3386700378270
+          ],
+          "good_prime_count": 23,
+          "parameter": "-1/5",
+          "projective_height": 5,
+          "projective_pair": [
+            -1,
+            5
+          ],
+          "total_score": 13.179864280702,
+          "total_score_units_1e12": 13179864280702
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            4242709286444,
+            4648685297380,
+            4155508131234
+          ],
+          "good_prime_count": 22,
+          "parameter": "1/1",
+          "projective_height": 1,
+          "projective_pair": [
+            1,
+            1
+          ],
+          "total_score": 13.046902715058,
+          "total_score_units_1e12": 13046902715058
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5044398638057,
+            4705923632174,
+            2990187736371
+          ],
+          "good_prime_count": 23,
+          "parameter": "101/25",
+          "projective_height": 101,
+          "projective_pair": [
+            101,
+            25
+          ],
+          "total_score": 12.740510006602,
+          "total_score_units_1e12": 12740510006602
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            4842342739400,
+            3668906978302,
+            3432423509841
+          ],
+          "good_prime_count": 23,
+          "parameter": "-2/51",
+          "projective_height": 51,
+          "projective_pair": [
+            -2,
+            51
+          ],
+          "total_score": 11.943673227543,
+          "total_score_units_1e12": 11943673227543
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5289441029107,
+            3192729359314,
+            3451488711969
+          ],
+          "good_prime_count": 23,
+          "parameter": "-19/153",
+          "projective_height": 153,
+          "projective_pair": [
+            -19,
+            153
+          ],
+          "total_score": 11.93365910039,
+          "total_score_units_1e12": 11933659100390
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            5148984810553,
+            3584998934766,
+            2970576457804
+          ],
+          "good_prime_count": 22,
+          "parameter": "-111/151",
+          "projective_height": 151,
+          "projective_pair": [
+            -111,
+            151
+          ],
+          "total_score": 11.704560203123,
+          "total_score_units_1e12": 11704560203123
+        }
+      ],
+      "known_target_fibre_local_control": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          3783593358067,
+          4165559396921,
+          5509508841605
+        ],
+        "good_prime_count": 22,
+        "parameter": "2090426215287300646024649113136775495501458010086164557646800484197003246833437421365037990230443800148741587275846403474277498624/3305147370356337406760731572859096974061258558173627932882941698632375921793047797815420070648301065696125712705405",
+        "projective_height": 2090426215287300646024649113136775495501458010086164557646800484197003246833437421365037990230443800148741587275846403474277498624,
+        "projective_pair": [
+          2090426215287300646024649113136775495501458010086164557646800484197003246833437421365037990230443800148741587275846403474277498624,
+          3305147370356337406760731572859096974061258558173627932882941698632375921793047797815420070648301065696125712705405
+        ],
+        "total_score": 13.458661596593,
+        "total_score_units_1e12": 13458661596593
+      },
+      "parent_id": "curve548-p54835",
+      "pencil_sha256": "a6b0477cd065ccfddce6ed63b76b6167cd9841202b65ecacd3fbef05474eca6c",
+      "priority_rank": 54835,
+      "rejected_primes": [
+        {
+          "block": 1,
+          "prime": 19,
+          "reason": "short_model_degenerate_at_every_projective_parameter"
+        },
+        {
+          "block": 1,
+          "prime": 73,
+          "reason": "coefficient_denominator_not_invertible"
+        }
+      ],
+      "runtime_seconds": 0.370650758035481,
+      "stages": [
+        {
+          "cap_per_height_bucket": 16,
+          "height_bucket_count": 6,
+          "parameters_per_second": 328555.09502651484,
+          "pareto_insertions": 419,
+          "population_scored": 109592,
+          "primes": [
+            41,
+            43,
+            61,
+            71,
+            79,
+            83
+          ],
+          "retained_count": 28,
+          "runtime_seconds": 0.33355745096923783,
+          "stage": 1
+        },
+        {
+          "cap_per_height_bucket": 8,
+          "height_bucket_count": 6,
+          "parameters_per_second": 172338.41883813989,
+          "pareto_insertions": 28,
+          "population_scored": 28,
+          "primes": [
+            89,
+            107,
+            113,
+            127,
+            131,
+            137,
+            139,
+            151
+          ],
+          "retained_count": 11,
+          "runtime_seconds": 0.00016247102757915854,
+          "stage": 2
+        },
+        {
+          "cap_per_height_bucket": 4,
+          "height_bucket_count": 6,
+          "parameters_per_second": 158000.6396190164,
+          "pareto_insertions": 11,
+          "population_scored": 11,
+          "primes": [
+            157,
+            163,
+            167,
+            173,
+            179,
+            181,
+            191,
+            193,
+            197
+          ],
+          "retained_count": 11,
+          "runtime_seconds": 6.961997132748365e-05,
+          "stage": 3
+        }
+      ],
+      "usable_prime_blocks": [
+        [
+          41,
+          43,
+          61,
+          71,
+          79,
+          83
+        ],
+        [
+          89,
+          107,
+          113,
+          127,
+          131,
+          137,
+          139,
+          151
+        ],
+        [
+          157,
+          163,
+          167,
+          173,
+          179,
+          181,
+          191,
+          193,
+          197
+        ]
+      ]
+    },
+    {
+      "curve_id": 548,
+      "finalists": [
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5362747458170,
+            4788214863184,
+            5353954989673
+          ],
+          "good_prime_count": 23,
+          "parameter": "-202/275",
+          "projective_height": 275,
+          "projective_pair": [
+            -202,
+            275
+          ],
+          "total_score": 15.504917311027,
+          "total_score_units_1e12": 15504917311027
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5383337307072,
+            4590881188682,
+            4885184130974
+          ],
+          "good_prime_count": 23,
+          "parameter": "-229/228",
+          "projective_height": 229,
+          "projective_pair": [
+            -229,
+            228
+          ],
+          "total_score": 14.859402626728,
+          "total_score_units_1e12": 14859402626728
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5221712407706,
+            4433283080938,
+            4960482141487
+          ],
+          "good_prime_count": 23,
+          "parameter": "-151/59",
+          "projective_height": 151,
+          "projective_pair": [
+            -151,
+            59
+          ],
+          "total_score": 14.615477630131,
+          "total_score_units_1e12": 14615477630131
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5093633787891,
+            5155802572831,
+            4355867134705
+          ],
+          "good_prime_count": 23,
+          "parameter": "59/47",
+          "projective_height": 59,
+          "projective_pair": [
+            59,
+            47
+          ],
+          "total_score": 14.605303495427,
+          "total_score_units_1e12": 14605303495427
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5256320429178,
+            4651474849860,
+            4415330018443
+          ],
+          "good_prime_count": 23,
+          "parameter": "-208/135",
+          "projective_height": 208,
+          "projective_pair": [
+            -208,
+            135
+          ],
+          "total_score": 14.323125297481,
+          "total_score_units_1e12": 14323125297481
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5253786087372,
+            4853550030839,
+            4183170326216
+          ],
+          "good_prime_count": 23,
+          "parameter": "-125/52",
+          "projective_height": 125,
+          "projective_pair": [
+            -125,
+            52
+          ],
+          "total_score": 14.290506444427,
+          "total_score_units_1e12": 14290506444427
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5240662384863,
+            4703215696486,
+            4061935484119
+          ],
+          "good_prime_count": 23,
+          "parameter": "-19/15",
+          "projective_height": 19,
+          "projective_pair": [
+            -19,
+            15
+          ],
+          "total_score": 14.005813565468,
+          "total_score_units_1e12": 14005813565468
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5178092612468,
+            4823289045542,
+            3811311337692
+          ],
+          "good_prime_count": 23,
+          "parameter": "252/103",
+          "projective_height": 252,
+          "projective_pair": [
+            252,
+            103
+          ],
+          "total_score": 13.812692995702,
+          "total_score_units_1e12": 13812692995702
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5129888013682,
+            4681212881850,
+            3984471350907
+          ],
+          "good_prime_count": 23,
+          "parameter": "41/102",
+          "projective_height": 102,
+          "projective_pair": [
+            41,
+            102
+          ],
+          "total_score": 13.795572246439,
+          "total_score_units_1e12": 13795572246439
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5185272403719,
+            4560219796470,
+            3806524652132
+          ],
+          "good_prime_count": 23,
+          "parameter": "-1/4",
+          "projective_height": 4,
+          "projective_pair": [
+            -1,
+            4
+          ],
+          "total_score": 13.552016852321,
+          "total_score_units_1e12": 13552016852321
+        },
+        {
+          "bad_reduction_prime_count": 1,
+          "block_score_units_1e12": [
+            5240858657250,
+            3581742577470,
+            4653531634669
+          ],
+          "good_prime_count": 22,
+          "parameter": "202/107",
+          "projective_height": 202,
+          "projective_pair": [
+            202,
+            107
+          ],
+          "total_score": 13.476132869389,
+          "total_score_units_1e12": 13476132869389
+        },
+        {
+          "bad_reduction_prime_count": 0,
+          "block_score_units_1e12": [
+            5078883166259,
+            4867407097550,
+            3445241331352
+          ],
+          "good_prime_count": 23,
+          "parameter": "-49/53",
+          "projective_height": 53,
+          "projective_pair": [
+            -49,
+            53
+          ],
+          "total_score": 13.391531595161,
+          "total_score_units_1e12": 13391531595161
+        }
+      ],
+      "known_target_fibre_local_control": {
+        "bad_reduction_prime_count": 1,
+        "block_score_units_1e12": [
+          3783593358067,
+          4165559396921,
+          5509508841605
+        ],
+        "good_prime_count": 22,
+        "parameter": "6950942599758758340051302314293648998028181523945794818067406579517331299638699292642848462240364640737398481952312567771670145024/6085392318626769370545833408334642155848230704886386243125897032227347202315193934795524629083241558153820909323905",
+        "projective_height": 6950942599758758340051302314293648998028181523945794818067406579517331299638699292642848462240364640737398481952312567771670145024,
+        "projective_pair": [
+          6950942599758758340051302314293648998028181523945794818067406579517331299638699292642848462240364640737398481952312567771670145024,
+          6085392318626769370545833408334642155848230704886386243125897032227347202315193934795524629083241558153820909323905
+        ],
+        "total_score": 13.458661596593,
+        "total_score_units_1e12": 13458661596593
+      },
+      "parent_id": "curve548-p63647",
+      "pencil_sha256": "6b516c8dabd743acccc718135618d8e97e56cf9d57329d91fb32eae2f560e37d",
+      "priority_rank": 63647,
+      "rejected_primes": [
+        {
+          "block": 1,
+          "prime": 19,
+          "reason": "short_model_degenerate_at_every_projective_parameter"
+        },
+        {
+          "block": 1,
+          "prime": 73,
+          "reason": "coefficient_denominator_not_invertible"
+        }
+      ],
+      "runtime_seconds": 0.3762311920290813,
+      "stages": [
+        {
+          "cap_per_height_bucket": 16,
+          "height_bucket_count": 6,
+          "parameters_per_second": 323007.10346589034,
+          "pareto_insertions": 444,
+          "population_scored": 109592,
+          "primes": [
+            41,
+            43,
+            61,
+            71,
+            79,
+            83
+          ],
+          "retained_count": 31,
+          "runtime_seconds": 0.33928665600251406,
+          "stage": 1
+        },
+        {
+          "cap_per_height_bucket": 8,
+          "height_bucket_count": 6,
+          "parameters_per_second": 160289.54086198495,
+          "pareto_insertions": 31,
+          "population_scored": 31,
+          "primes": [
+            89,
+            107,
+            113,
+            127,
+            131,
+            137,
+            139,
+            151
+          ],
+          "retained_count": 20,
+          "runtime_seconds": 0.00019340001745149493,
+          "stage": 2
+        },
+        {
+          "cap_per_height_bucket": 4,
+          "height_bucket_count": 6,
+          "parameters_per_second": 143122.93782477305,
+          "pareto_insertions": 20,
+          "population_scored": 20,
+          "primes": [
+            157,
+            163,
+            167,
+            173,
+            179,
+            181,
+            191,
+            193,
+            197
+          ],
+          "retained_count": 18,
+          "runtime_seconds": 0.0001397400046698749,
+          "stage": 3
+        }
+      ],
+      "usable_prime_blocks": [
+        [
+          41,
+          43,
+          61,
+          71,
+          79,
+          83
+        ],
+        [
+          89,
+          107,
+          113,
+          127,
+          131,
+          137,
+          139,
+          151
+        ],
+        [
+          157,
+          163,
+          167,
+          173,
+          179,
+          181,
+          191,
+          193,
+          197
+        ]
+      ]
+    }
+  ],
+  "reproducing_command": "python3 elliptic-curves/cas/sieve_icarm_mw16_parent_presentations_nagao.py",
+  "runtime_seconds": 3.4233183849719353,
+  "schema": "elliptic-curves.icarm-mw16-parent-nagao-prefilter.v1",
+  "search": {
+    "denominator_interval": [
+      1,
+      300
+    ],
+    "finalists_per_presentation": 12,
+    "height_bucket_width": 50,
+    "includes_zero_and_infinity": true,
+    "keep_per_bucket": [
+      16,
+      8,
+      4
+    ],
+    "numerator_interval": [
+      -300,
+      300
+    ],
+    "primitive_pairs_only": true,
+    "projective_height_box": 300,
+    "requested_prime_blocks": [
+      [
+        19,
+        41,
+        43,
+        61,
+        71,
+        73,
+        79,
+        83
+      ],
+      [
+        89,
+        107,
+        113,
+        127,
+        131,
+        137,
+        139,
+        151
+      ],
+      [
+        157,
+        163,
+        167,
+        173,
+        179,
+        181,
+        191,
+        193,
+        197
+      ]
+    ],
+    "total_finalist_rows_before_exact_curve_deduplication": 104
+  },
+  "status": "PASS_BOUNDED_NINE_PRESENTATION_NAGAO_PREFILTER"
+}

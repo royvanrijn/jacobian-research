@@ -1,6 +1,6 @@
 # Blind multi-stratum half-lattice jump ladder
 
-<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER -->
+<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER b7518cc41268489a -->
 
 Status: **passing fixed-panel detector experiment; exact blind rank gains;
 exact post-freeze displayed-jump analysis; no rank-32 promotion without the
@@ -103,6 +103,62 @@ as an extreme-jump detector rather than only a point finder.  This does not
 authorize a serious rank-32 point search by itself: the existing completed
 residual 2-Selmer quotient gate remains mandatory on the same minimal curve.
 
+## Fibration and `j`-class sensitivity
+
+Write `S` for the exact blind rank of the discovered subgroup modulo the
+specialized MW17, and `q` for the exact free rank of the later-opened displayed
+public subgroup modulo MW17.  The pooled confirmatory endpoint above is the
+predeclared `S >= 10` versus `q >= 10` test.  The `q >= 11` cut and all splits
+in this section were computed after unblinding, so they are sensitivity
+analyses rather than additional confirmatory endpoints.
+
+Pooled over all sixteen fibres, `S >= 10` occurs on `6/7` rows with `q >= 11`
+and `1/9` rows below eleven.  The risk difference is `0.7460`, the sample odds
+ratio is `48`, and the one-sided Fisher probability is `4/715`.
+
+The fibration split is:
+
+| fibration frame | rows | `tau_b(S,q)` | exact ordinal `p` | `S>=10` in `q>=10` vs below | `S>=10` in `q>=11` vs below |
+| --- | ---: | ---: | ---: | --- | --- |
+| published R17 | 13 | `0.7033` | `2656/4324320` | `7/8` vs `0/5`, `p=2/429` | `6/7` vs `1/6`, `p=43/1716` |
+| alternate Q80 | 3 | `1` | `1/6` | no `q>=10` row | no `q>=11` row |
+
+Conditioning the ordinal randomization on those two frame labels gives the
+block-restricted `tau_b=0.7163` and exact one-sided
+`p=7082/25945920`.  Thus the pooled ordinal signal is not created solely by
+the frame imbalance.  It does not, however, validate the extreme-tail rule on
+alternate Q80: its three rows are exactly `(S,q)=(3,3),(6,6),(8,8)`.
+
+At the finer rational-`PGL2` `j`-map level, only class `08234` contains both
+tail and non-tail rows.  Its seven pairs are
+
+```text
+(6,4), (8,8), (10,10), (10,11), (11,11), (11,11), (11,11).
+```
+
+They give `tau_b=0.8767`, exact ordinal `p=2/210`, and the `q>=10` table
+`5/5` versus `0/2` with Fisher `p=1/21`.  At the stricter `q>=11` cut the
+table is `4/4` versus `1/3`, with `p=1/7`; that threshold is not independently
+resolved by this small within-class panel.  Class `07ca9` has three tail-only
+rows `(12,12),(0,11),(11,11)`, including the explicit false negative, and the
+other four represented classes have no `q>=10` row.
+
+An exact randomization that permutes `q` only within the six `j`-classes gives
+block-restricted `tau_b=0.8804` and ordinal `p=2/2520`.  The corresponding
+conditional high-`S` tail probabilities are `3/63=1/21` for `q>=10` and
+`9/63=1/7` for `q>=11`.  These calculations exclude every cross-class pair;
+their limitation is support, not an observed reversal.
+
+The operational decision is therefore one-sided and family-scoped.  High `S`
+may participate in scheduling among candidates in the calibrated
+norm-twelve R17 setting, including within `08234`; it is not merely a
+post-selection point finder there.  Low `S` must not veto a candidate, because
+the searches are bounded and curve 544 has `q=11,S=0`.  Nor does this panel
+authorize transporting the rule to alternate Q80, an unrepresented `j`-class,
+or a changed lattice/basis.  Those settings need their own high-`q` blinded
+controls, and every serious rank-32 follow-up still needs the separate
+residual-Selmer gate.
+
 ## Public-complement opening and new rank information
 
 The blind v2 artifact was sealed with SHA-256
@@ -158,4 +214,6 @@ Displayed jumps are exact ranks of the certified displayed-subgroup quotients,
 not assertions that those subgroups are full.  Bounded misses prove no point
 absence, Selmer structure, saturation, or rank upper bound.  The exact
 permutation calculation conditions on this fixed atlas-refresh panel; it is
-not a population-sampling theorem or evidence for unrelated fibrations.
+not a population-sampling theorem or evidence for unrelated fibrations.  The
+fibration/`j`-class and `q>=11` calculations are explicitly post-freeze
+sensitivity analyses.

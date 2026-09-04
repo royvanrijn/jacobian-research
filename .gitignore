@@ -220,6 +220,8 @@ elkies-k3/results/**/*.sqlite
 !/artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-ledger-v3.json
 !/artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-analysis-v3.json
 !/artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-promotion-gate-v1.json
+!/artifacts/generated-results/elkies-k3-mw17-jump-v2-campaign-v1.json
+!/artifacts/generated-results/elkies-k3-mw17-jump-v2-ledger-v1.json
 !/artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-controls-v1.json
 !/artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-sample-v1.json
 !/artifacts/generated-results/elkies-k3-r17-quotient-rank-escape-detector-v2-unblinding-key-v1.json

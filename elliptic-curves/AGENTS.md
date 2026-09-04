@@ -12,27 +12,31 @@ declared limits, checkpoints, and a reproducible certificate plan.
 
 ## Current targets
 
+- A target-free A1/MW16 parameter experiment is active alongside the other
+  rank-jump experiments.  Known record equations, parameters, points, ranks,
+  target `j`-invariants, and jump labels stay out of its selection and
+  execution.
 - Rank-at-least-31 is certified for ICARM curve 302; no unconditional exact-rank upper bound is known.
 - Rank-at-least-30 is certified for curve 273.
-- Rank-at-least-30 is certified for curve 398.  Its two recovered A1/MW16
-  parents on `X948` have exact parameters and section maps, but their
-  specialized integral MW16 subgroups are equal; they do not provide
-  transverse generic directions.
+- Rank-at-least-30 is certified for curve 398.  Its two recovered norm-eight
+  A1/MW16 survivor labels on `X948` are exact base-equivalent presentations of
+  one fibration; their specialized integral MW16 bases generate the same
+  subgroup and do not provide two generic structures.
 - Rank-at-least-21 / low-conductor branches of the original operational target are replayed.
 - The next record target remains rank `>=32` or a stronger unconditional exact-rank/conductor result.
-- R17/MW17 specialization, cross-fibration relative-subgroup searches, and
-  curve-302 parent reconstruction are peer rank-32 paths.  Do not select a
-  family by generic rank alone.
+- R17/MW17 specialization, the A1/MW16 parameter experiment, and curve-302
+  parent reconstruction are simultaneous peer paths.  Do not select a family
+  by generic rank alone.
 - A point list is not a rank lower bound until independence is certified. Selmer dimension, analytic estimates, Nagao scores, and bounded-search survival are not rank lower bounds.
 
 ## Breakthrough workflow
 
 1. start from [`README.md`](README.md), `../MATH_STATUS.json`, and the canonical curve notes;
 2. require a genuine residual descent/Selmer gate before expensive point search;
-3. use curve 398's two-parent complete collision as the negative control for
-   relative-subgroup tests, and reconstruct curve 302's unknown parent in
-   parallel with the MW17 search using exact family recognition, section
-   transport, and saturation gates;
+3. use curve 398's duplicate survivor pair only as a mandatory
+   `PGL2`/Weierstrass deduplication regression; run the A1/MW16 parameter
+   experiment on one representative and do not put its known target or any
+   other record in the experiment loop;
 4. use the exact native alternate-Q80 calibration fibres from the complete ICARM sweep — especially rank-at-least-29 curve 12 on `11952` — while keeping the published-R17 rank-25--28 transfer misses as negative controls;
 5. minimize every specialization and re-prove point independence;
 6. pin all external CAS inputs, outputs, software versions, limits, and failure semantics.

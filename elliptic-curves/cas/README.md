@@ -20,9 +20,10 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   torsion, singleton rational-isogeny-class and complete semistable local-data
   replay, bad-node fingerprint, and exact exclusion from the one
   equation-explicit A1/MW16 control family.
-- `verify_icarm_curve398_two_parent_collision.sage`: independent Sage
-  group-law, integral-basis-transition, rank, and Smith replay for the two
-  specialized curve-398 A1/MW16 parents.
+- `verify_icarm_curve398_two_parent_collision.sage`: independent Sage replay
+  of the exact base/Weierstrass equivalence, curve-398 parameter transport,
+  group laws, integral basis transition, ranks, and Smith quotient for the two
+  A1/MW16 survivor presentations.
 - `analyze_record_first17_subgroups.py`: exact first-seventeen coordinate,
   quotient, finite-Kummer, and bad-component comparison for curves 273 and
   302, plus a 100-digit canonical-height/theta profile.
@@ -330,6 +331,7 @@ the same arithmetic.
   complements or jump labels; the analyzer replays the frozen exact Kendall
   and upper-tail tests after the blind hash is sealed.  The v1 cross-class
   deepest-count failure is preserved rather than rewritten.
+<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER b7518cc41268489a -->
 - Files containing `bnf_free`, `residual_selmer`, or `curve273` implement the
   unfinished residual 2-Selmer chain. Intermediate success is not a rank
   theorem.

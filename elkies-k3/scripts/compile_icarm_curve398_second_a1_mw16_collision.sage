@@ -1,12 +1,14 @@
 #!/usr/bin/env sage-python
-"""Compile curve 398's second A1/MW16 parent and compare both parents.
+"""Compile curve 398's second A1/MW16 survivor and compare both presentations.
 
 The complete norm-eight screen has two exact rational curve-398 survivors.  The
 lower-complexity survivor (priority 16875) is already compiled.  This program
 compiles the other survivor (priority 63669), specializes a saturated generic
-MW16 basis, recovers its exact coordinates in the displayed public M30, and
-computes the exact intersection rank, sum rank, and Smith quotient of the two
-specialized generic subgroups inside M30.
+MW16 basis, proves that its Jacobian pencil is the priority-16875 pencil after
+an exact rational base change and Weierstrass scaling, recovers its exact
+coordinates in the displayed public M30, and computes the exact intersection
+rank, sum rank, and Smith quotient of the two specialized generic subgroups
+inside M30.
 """
 
 from __future__ import annotations
@@ -31,6 +33,7 @@ TARGET = ROOT / "elliptic-curves/cas/icarm_curve398.py"
 CHORD = ROOT / "elkies-k3/scripts/construct_elkies_2026_bisections.sage"
 SCREEN = ROOT / "elkies-k3/scripts/screen_icarm_curve398_norm8_a1_fibrations.sage"
 FIRST_COMPILER = ROOT / "elkies-k3/scripts/compile_icarm_curve398_hidden_a1_mw16.sage"
+PGL2_COMPILER = ROOT / "elkies-k3/scripts/compile_r17_norm12_record_lineage_atlas.sage"
 FIRST_PARENT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_curve398_hidden_a1_mw16_v1.json"
 PUBLIC_RANK = ROOT / "artifacts/generated-results/elliptic-curves/icarm_curve398_rank30_and_construction_v1.json"
 OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_curve398_two_parent_collision_v1.json"
@@ -85,6 +88,7 @@ def main() -> None:
     args = parser.parse_args()
 
     shared = load("curve398_first_parent_compiler_helpers", FIRST_COMPILER)
+    pgl2 = load("curve398_pgl2_compiler_helpers", PGL2_COMPILER)
     screen = load("curve398_second_parent_screen", SCREEN)
     chord = load("curve398_second_parent_chord", CHORD)
     target = load("curve398_second_parent_target", TARGET)
@@ -163,6 +167,53 @@ def main() -> None:
         raise ArithmeticError("second A1 child lost its K3 degree profile")
     if child_delta.gcd(child_delta.derivative()).degree() != 0:
         raise ArithmeticError("second child finite discriminant is not squarefree")
+
+    # The survivor labels live in the norm-eight trace enumeration, not in a
+    # quotient by elliptic-surface isomorphism.  Decide that quotient before
+    # treating the two labels as different fibrations.  The exact
+    # three-landmark solve returns phi with j_63669(phi(u))=j_16875(u).
+    first_fibration = first_parent["fibration"]
+    first_a = parameter_ring(first_fibration["A_coefficients_low_to_high"])
+    first_b = parameter_ring(first_fibration["B_coefficients_low_to_high"])
+    first_j = {"N": 6912 * first_a**3, "D": 4 * first_a**3 + 27 * first_b**2}
+    second_j = {"N": 6912 * child_a**3, "D": 4 * child_a**3 + 27 * child_b**2}
+    base_change, base_solve = pgl2.exact_pgl2_equivalence(
+        first_j, second_j, parameter_ring
+    )
+    if base_change is None or not base_solve.get("identity_verified"):
+        raise ArithmeticError("the two survivor j-maps are not PGL2(Q)-equivalent")
+    base_a, base_b, base_c, base_d = map(QQ, base_change)
+    if base_a * base_d == base_b * base_c:
+        raise ArithmeticError("the recovered survivor base change is singular")
+    parameter_field = parameter_ring.fraction_field()
+    pulled_parameter = parameter_field(
+        (base_a * parameter + base_b) / (base_c * parameter + base_d)
+    )
+    pulled_second_a = parameter_field(child_a(pulled_parameter))
+    pulled_second_b = parameter_field(child_b(pulled_parameter))
+    first_a_field = parameter_field(first_a)
+    first_b_field = parameter_field(first_b)
+    twist_parameter = parameter_field(
+        pulled_second_b * first_a_field / (first_b_field * pulled_second_a)
+    )
+    if (
+        pulled_second_a != twist_parameter**2 * first_a_field
+        or pulled_second_b != twist_parameter**3 * first_b_field
+    ):
+        raise ArithmeticError("the survivor j-equivalence failed the exact twist identities")
+    if not twist_parameter.is_square():
+        raise ArithmeticError("the survivor pencils differ by a nontrivial quadratic twist")
+    if twist_parameter.numerator().degree() or twist_parameter.denominator().degree():
+        raise ArithmeticError("the survivor Weierstrass scaling is not constant")
+    twist_constant = QQ(twist_parameter)
+    weierstrass_scale = QQ(twist_parameter.sqrt())
+    first_curve398_parameter = QQ(first_parent["parameter_recovery"]["lambda"])
+    transported_curve398_parameter = QQ(
+        (base_a * first_curve398_parameter + base_b)
+        / (base_c * first_curve398_parameter + base_d)
+    )
+    if transported_curve398_parameter != EXPECTED_PARAMETER:
+        raise ArithmeticError("the PGL2 map does not transport the curve-398 parameters")
 
     a1, a2, a3, a4, a6 = tuple(QQ(str(value)) for value in target.GENERAL_WEIERSTRASS_COEFFICIENTS)
     b2 = a1**2 + 4 * a2
@@ -337,14 +388,45 @@ def main() -> None:
         )
 
     result = {
-        "schema": "elliptic-curves.icarm-curve398-two-parent-collision.v1",
-        "status": "PASS_EXACT_TWO_PARENT_COLLISION",
+        "schema": "elliptic-curves.icarm-curve398-base-equivalent-survivors.v1",
+        "status": "PASS_EXACT_BASE_EQUIVALENT_SURVIVORS_AND_SUBGROUP_COLLISION",
         "curve_id": 398,
         "ambient_group": {
             "name": "public M30",
             "ordered_basis_source": relative(TARGET),
             "rank": 30,
             "independence_certificate": relative(PUBLIC_RANK),
+        },
+        "presentation_equivalence": {
+            "first_priority_rank": int(first_parent["fibration"]["priority_rank"]),
+            "first_orbit_hex": first_parent["fibration"]["orbit_hex"],
+            "second_priority_rank": PRIORITY_RANK,
+            "second_orbit_hex": trace_row["orbit_hex"],
+            "base_change_direction": "lambda_63669=(a*lambda_16875+b)/(c*lambda_16875+d)",
+            "pgl2_matrix_a_b_c_d": list(map(int, base_change)),
+            "pgl2_matrix_determinant": shared.qtext(
+                base_a * base_d - base_b * base_c
+            ),
+            "affine_base_change": not base_c,
+            "affine_slope": shared.qtext(base_a / base_d) if not base_c else None,
+            "affine_intercept": shared.qtext(base_b / base_d) if not base_c else None,
+            "j_map_identity": "j_63669(phi(lambda))=j_16875(lambda)",
+            "j_map_identity_exact": True,
+            "pgl2_discovery_method": "exact three-landmark preimage solve followed by rational-function identity",
+            "quadratic_twist_parameter_q": shared.qtext(twist_constant),
+            "quadratic_twist_parameter_is_square_in_Q": True,
+            "weierstrass_scale_s_with_s_squared_q": shared.qtext(weierstrass_scale),
+            "weierstrass_model_identities": [
+                "A_63669(phi)=q^2*A_16875",
+                "B_63669(phi)=q^3*B_16875",
+            ],
+            "curve398_parameter_transport_exact": True,
+            "same_jacobian_fibration_over_Q_up_to_base_change": True,
+            "distinct_fibration_modulo_base_change_or_surface_automorphism": False,
+            "conclusion": (
+                "The two norm-eight survivor labels are Q-isomorphic presentations of one "
+                "Jacobian elliptic fibration, not two fibration orbits."
+            ),
         },
         "first_parent": {
             "compiled_artifact": relative(FIRST_PARENT),
@@ -415,7 +497,18 @@ def main() -> None:
         },
         "inputs": {
             relative(path): digest(path)
-            for path in (MODEL, TABLE, SURVIVORS, TARGET, CHORD, SCREEN, FIRST_COMPILER, FIRST_PARENT, PUBLIC_RANK)
+            for path in (
+                MODEL,
+                TABLE,
+                SURVIVORS,
+                TARGET,
+                CHORD,
+                SCREEN,
+                FIRST_COMPILER,
+                PGL2_COMPILER,
+                FIRST_PARENT,
+                PUBLIC_RANK,
+            )
         },
         "generation": {
             "script": relative(Path(__file__)),
@@ -423,8 +516,9 @@ def main() -> None:
         },
         "software": {"sage_version": SAGE_VERSION, "pari_version": ".".join(map(str, pari.version()))},
         "proof_boundary": (
-            "This certifies the second A1/MW16 fibration, its curve-398 specialization, and the exact "
-            "relative position of both specialized generic MW16 subgroups inside the displayed public M30. "
+            "This certifies the second A1/MW16 survivor presentation, its exact PGL2(Q) base equivalence "
+            "and Q-Weierstrass isomorphism with the first presentation, its curve-398 specialization, "
+            "and the exact relative position of both specialized generic MW16 bases inside the displayed public M30. "
             "It does not claim that M30 is saturated in E(Q), nor an unconditional rank upper bound for E(Q)."
         ),
         "reproducing_command": "sage -python elkies-k3/scripts/compile_icarm_curve398_second_a1_mw16_collision.sage --check",
@@ -437,7 +531,7 @@ def main() -> None:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(output_text)
     print(
-        f"CURVE398COLLISION|G1={first_rank}|G2={second_rank}|intersection={intersection_rank}|"
+        f"CURVE398SURVIVOREQUIV|same_fibration=1|G1={first_rank}|G2={second_rank}|intersection={intersection_rank}|"
         f"sum={sum_rank}|smith_index={'infinite' if smith_index is None else smith_index}|"
         f"output={relative(args.output)}",
         flush=True,

@@ -24,14 +24,15 @@ rank-30 specialization is a jump by at least fourteen over the generic rank.
 
 The construction boundary is now closed independently.  A complete modular
 screen of the 63,917 minimum-norm-eight neighbours of the equation-explicit
-`norm12-orbit-11952` rootless chart leaves two candidates; exact factorization
-shows that both have rational curve-398 parameters and specialize to curves
-`Q`-isomorphic to curve 398.  Both candidates are now compiled as
-`I2+22I1`/MW16 fibrations and all sixteen sections from each saturated generic
-basis are transported into the public rank-30 subgroup.  Unexpectedly, the two
-specialized integral MW16 subgroups are equal, not transverse.  An independently
-redacted half-lattice search from the first basis recovers the full displayed
-rank-30 subgroup.
+`norm12-orbit-11952` rootless chart leaves two candidate presentations; exact
+factorization shows that both have rational curve-398 parameters and specialize
+to curves `Q`-isomorphic to curve 398.  Both presentations are compiled with
+`I2+22I1` fibres and saturated MW16 bases.  An exact `PGL2(Q)` solve now proves
+that priority `63669` is just the priority-`16875` Jacobian fibration after an
+affine base change and constant Weierstrass scaling.  Consistently, their
+specialized integral MW16 groups are equal.  An independently redacted
+half-lattice search from the first basis recovers the full displayed rank-30
+subgroup.
 
 The authors report exact rank 30 conditional on GRH for number fields.  This
 repository has not replayed that upper bound, so the canonical theorem remains
@@ -217,9 +218,10 @@ Exact factorization gives one rational parameter for each survivor, and both
 specializations are `Q`-isomorphic to curve 398.  The compiled fibration above
 uses the equation-cheaper first survivor; the second is compiled below.
 
-## Exact two-parent collision
+## The second survivor is the same fibration
 
-The second survivor has priority `63669`, orbit `0x06119`, and trace
+The second survivor presentation has priority `63669`, orbit `0x06119`, and
+trace
 
 ```text
 w = (-2,1,3,0,1,0,-4,0,-1,-2,3,0,-2,-1,2,-3,2).
@@ -246,8 +248,40 @@ basis.  Exact specialization, height-dual coordinate recovery, and rational
 group-law replay give a second `16 x 30` integral embedding in the ordered
 public basis.
 
-Let `C1` and `C2` be the two embedding matrices and let `G1,G2` be their row
-groups in `M30`.  Exact integer solves produce mutually inverse matrices
+The survivor labels themselves are not quotiented by automorphisms or changes
+of base.  Let `lambda_1` denote the parameter for priority `16875` and
+`lambda_2` that for priority `63669`.  An exact three-landmark solve followed by
+a rational-function identity gives
+
+```text
+lambda_2 = alpha*lambda_1 + beta,
+
+alpha = 396551555343034051398196265276574745251378546018688013268
+        /8181934579320243394934487909130269062361557677761753291515,
+
+beta = -3986859031794535524304328990643110050540961158538641671887545266869584876610042313164078504550042527791159784860870470225920093388172014947813419764707949634207687300234569473061391725881541067616019346750611641371944540386039633844096
+       /18062874998989449905360144667256936463345384962830075386062742084584979917923287249836600316673628267240613806459624517273860012928279043979731474240155908563308767056331792542059327612146421198009424955894649087183769065.
+```
+
+For the two short models, literal substitution verifies
+
+```text
+j_63669(alpha*lambda+beta) = j_16875(lambda),
+A_63669(alpha*lambda+beta) = alpha^4 A_16875(lambda),
+B_63669(alpha*lambda+beta) = alpha^6 B_16875(lambda).
+```
+
+Thus `(x,y) -> (alpha^2*x,alpha^3*y)` gives a `Q(lambda)`-isomorphism
+after the displayed base change.  The same affine map sends the exact
+priority-`16875` curve-398 parameter to the exact priority-`63669` parameter.
+Since both compiled presentations come from the same smooth K3 `X948`, this
+identifies one Jacobian-fibration orbit under base change/surface
+automorphisms.  Priority `63669` is therefore **not** a genuinely different
+fibration in the requested quotient.
+
+Let `C1` and `C2` be the two presentation-basis embedding matrices and let
+`G1,G2` be their row groups in `M30`.  Exact integer solves produce mutually
+inverse matrices
 `U,V in GL(16,Z)`, both of determinant one, with
 
 ```text
@@ -271,12 +305,14 @@ M30 / (G1 + G2) = Z^14,
 [M30 : G1 + G2] = infinity.
 ```
 
-The ambiguity of sign in the `Q`-isomorphism of either fibre does not change
-its subgroup.  This pair therefore does not explain any of the apparent
-fourteen-rank specialization jump by transverse generic directions.  It is a
-strong negative control for the proposed rank-32 mechanism: a useful search
-must test the relative specialized subgroups, since distinct MW16 fibrations
-with `Q`-isomorphic fibres can collide completely.
+The ambiguity of sign in the `Q`-isomorphism does not change the subgroup.
+This equality is a consistency check for two bases of one generic MW16 group,
+not a collision of two independent generic structures.  Consequently the pair
+does not test the proposed simultaneous-rationalization mechanism and supplies
+no evidence that curve 398's apparent fourteen-rank jump comes from several
+fibrations.  Future relative-subgroup experiments must first deduplicate their
+fibrations under exact `PGL2`/Weierstrass equivalence and then compare genuinely
+inequivalent pencils.
 
 ## Blind MW16 half-lattice calibration
 
@@ -364,9 +400,11 @@ The earlier equation-source audit remains useful history: the published R17
 chart, all six shared-zero norm-twelve classes, and the fixed-corridor A1 model
 really do miss curve 398.  The missing step was to recognize that every
 minimum-norm-eight class on a rootless chart gives a zero-neutral divisor
-`D=(2,2,w)=O+P_w`, hence precisely the first complete A1/MW16 layer.  The new
-screen and compiler close that boundary without importing the authors'
-unpublished fibration census.
+`D=(2,2,w)=O+P_w`, hence a complete norm-eight discovery layer.  The later
+exact root audit splits this layer by the number of minimum representatives:
+only 1,266 classes are A1/MW16, and both curve-398 survivors lie in that
+genuine A1 stratum.  The screen and compiler close the construction boundary
+without importing the authors' unpublished fibration census.
 
 The result promotes curve 398 from a provenance target to the major
 cross-fibration calibration control.  A rank-32 campaign in this recovered

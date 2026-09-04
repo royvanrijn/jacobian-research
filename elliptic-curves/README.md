@@ -7,6 +7,12 @@ active navigation map.
 
 ## Current milestone
 
+The target-free A1/MW16 parameter experiment now runs alongside the other
+active fronts.  It samples new rational parameters on one deduplicated exact
+pencil and measures exact quotient rank beyond specialized MW16 without
+loading known-record targets, parameters, public points, ranks, or target
+`j`-invariants.
+
 - ICARM curve 302: certified `rank E(Q) >= 31`, trivial torsion, global minimality, exact conductor/local data, and two independent point-independence implementations. No unconditional rank upper bound.
 - Curve 302 point-cloud reconstruction: exact mod-2 and mod-3 finite Kummer
   codes have rank 31 with no visible first-17 boundary; elementary
@@ -17,9 +23,11 @@ active navigation map.
   a singleton rational isogeny class, and exact semistable conductor/local
   data.  Its hidden `A1`/MW16 fibration has now been recovered on the
   `norm12-orbit-11952` chart, including the exact parameter and a saturated
-  sixteen-section specialization.  From a redacted MW16 input, the generic
-  half-lattice plus adaptive quotient search blindly recovers all fourteen
-  held-out directions and the full displayed rank-30 subgroup.
+  sixteen-section specialization.  The apparent second norm-eight survivor is
+  exactly the same fibration after an affine base change and Weierstrass
+  scaling.  From a redacted MW16 input, the generic half-lattice plus adaptive
+  quotient search blindly recovers all fourteen held-out directions and the
+  full displayed rank-30 subgroup.
 - ICARM curve 356: certified `rank E(Q) >= 29` with exact conductor/local data.
 - ICARM curves 285/286 and curve 394: certified rank-at-least-21 results; curve 394 is the compact Elkies `t=3/8` specialization with exact conductor replay.
 - The pinned K3 now has two explicit rootless arithmetic MW17 charts over `QQ`: published R17 and the direct degree-two alternate-Q80 chart from `norm12-orbit-11952`.
@@ -44,14 +52,11 @@ active navigation map.
   least 23.
 - Rank `>=32`, unconditional exact rank for curve 302, and sharper conductor records remain open.
 
-The rank-32 roadmap is deliberately parallel.  The R17/MW17 atlas remains one
-first-class path, but it is not the unique critical path.  Curve 398 is now an
-exact cross-fibration control: its A1/MW16 generic subgroup and all fourteen
-displayed quotient directions are recovered blindly.  A rank-32 fibre in the
-same family would need sixteen quotient directions, two beyond this control.
-Recovering curve 302's still-unknown parent construction remains equally
-first-class because it begins from a certified rank-31 fibre.  These are
-operational priorities, not claims that either family has produced rank 32.
+The rank-32 roadmap is parallel.  The target-free A1/MW16 experiment searches
+directly for rank jumps while the R17/MW17 and other experiments continue.
+Curve 398 remains an exact historical calibration, not an input target: its
+generic MW16 and fourteen displayed quotient directions are already recovered
+blindly.  A rank-32 fibre in the same family needs sixteen quotient directions.
 
 See [`../elkies-k3/README.md`](../elkies-k3/README.md) for the current K3 milestone.
 
@@ -76,20 +81,29 @@ Existing scripts, tests, local checkpoints, and generated certificates are retai
 - [`notes/ICARM_CURVE302_POINT_CLOUD_RECONSTRUCTION.md`](notes/ICARM_CURVE302_POINT_CLOUD_RECONSTRUCTION.md) — direct 31-point reconstruction probes and calibrated claim boundary.
 - [`notes/ICARM_CURVE273_RANK30.md`](notes/ICARM_CURVE273_RANK30.md) — rank-at-least-30 certificate.
 - [`notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md)
-  — rank-at-least-30 certificate, two recovered A1/MW16 fibrations and
-  parameters, exact equality of their specialized integral MW16 subgroups,
-  and blind rank-14 quotient rediscovery from the first parent.
-<!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY a22fcfb1ea6844aa -->
-<!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 3021f19bf0594dcf -->
+  — rank-at-least-30 certificate, exact base equivalence of the two recovered
+  A1/MW16 survivor presentations, equality of their specialized integral MW16
+  groups, and blind rank-14 quotient rediscovery from the first presentation.
+<!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY 75978a18cc26690f -->
+<!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 626a440519ff77f3 -->
 - [`notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md`](notes/ICARM_CURVE356_RANK29_AND_CONSTRUCTION.md) — rank-at-least-29 record/fingerprint.
 - [`notes/ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md`](notes/ICARM_573_CURVE_REFRESH_OVERVIEW_2026-09-04.md)
   — exact 573-curve atlas refresh, complete appended-row intake, sixteen new
   specialization quotients, and the curve-499 commensurability obstruction.
 - [`notes/R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md`](notes/R17_REFRESH_BLIND_JUMP_LADDER_2026-09-04.md)
-  — redacted 16-fibre `+3` through `+12` adaptive half-lattice ladder, exact
-  pre-complement rank responses, passing ordinal and upper-tail tests, and the
-  new curve-478 rank-at-least-23 lower bound.
-<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER -->
+  — redacted 16-fibre adaptive half-lattice ladder over observed jumps `+3`
+  to `+12`, exact pre-complement rank responses, passing frozen ordinal and
+  `q>=10` upper-tail tests, post-freeze fibration/`j`-class sensitivity, and
+  the new curve-478 rank-at-least-23 lower bound.  High score may schedule
+  within the calibrated norm-twelve R17 setting; low score may not veto, and
+  alternate-Q80 extreme-tail transfer remains unvalidated.
+<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER b7518cc41268489a -->
+- [`notes/MW17_JUMP_V2_2026-09-04.md`](notes/MW17_JUMP_V2_2026-09-04.md)
+  — the 2,239-fibre immutable-population evaluation now ranks the old
+  bounded-box, balanced CRT, six atlas-family, and alternate-Q80 candidates
+  only by exactly certified quotient rank recovered beyond MW17.  It runs
+  `07ca9` and `08234` first, never uses initial 43-chart gain as a hard filter,
+  checkpoints every fibre, and stops globally on a certified `+15`.
 - [`../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](../elkies-k3/R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md) — exact 43-chart record sweep and common five-fibre R17 construction.
 - [`notes/ICARM_7FFF_ZIP_SEQUENCE.md`](notes/ICARM_7FFF_ZIP_SEQUENCE.md) — rank-at-least-21 curves 285/286.
 - [`notes/ICARM_CURVE394_RANK21.md`](notes/ICARM_CURVE394_RANK21.md) — compact R17 rank-at-least-21 specialization.
@@ -140,26 +154,21 @@ Existing scripts, tests, local checkpoints, and generated certificates are retai
 
 ## Active fronts
 
-The useful gates are still:
+The useful gates are now:
 
-1. use the recovered curve-398 A1/MW16 family as a positive control for
-   prospective cross-fibration searches, preserving the redacted-input,
-   exact-independence, and post-search containment gates; target the two
-   additional quotient directions needed for rank at least 32 without
-   treating bounded recovery as stability evidence;
-2. in parallel, reverse-engineer curve 302 from its complete 31-point
-   configuration, calibrated on the actual transported generic subgroup of
-   the known Fermigier--Mestre curve-245 control and without assuming a
-   generic rank or a `17+14` decomposition;
-3. continue the peer R17/MW17 path using the exact refreshed ICARM inventory—
+1. execute the A1/MW16 parameter experiment without any known-record target in
+   candidate selection or execution, and certify every quotient gain exactly;
+2. continue the peer R17/MW17 path using the exact refreshed ICARM inventory—
    especially curve 543, the six new rank-at-least-28 fibres, the `074d9`
    controls, and native alternate-Q80 curve 12—with the passing blind
    extreme-jump detector as a scheduling signal, never as a substitute for
    the residual-Selmer promotion gate;
-4. accumulate proved residual-Selmer constraints monotonically, rejecting
+3. accumulate proved residual-Selmer constraints monotonically, rejecting
    below the family-relative requirement `32-r`; permit only explicitly
    bounded point search while the full descent is open, and still require a
    complete unconditional descent for every Selmer or exact-rank claim;
+4. continue curve-302 parent reconstruction independently of the parameter
+   experiments;
 5. pursue an unconditional upper bound for curve 302 and low-conductor
    survivors only after exact quotient/descent gates justify them.
 
@@ -174,4 +183,4 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
-<!-- status-consumer: OP-EC-NEXT b9db89a604d40ac7 -->
+<!-- status-consumer: OP-EC-NEXT 086b745cb3ca078e -->

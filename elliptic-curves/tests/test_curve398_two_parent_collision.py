@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from fractions import Fraction
 from hashlib import sha256
 import json
 from pathlib import Path
@@ -35,6 +36,37 @@ class Curve398TwoParentCollisionTest(unittest.TestCase):
         self.assertEqual(second["generic_mw16"]["height_gram_determinant"], "474")
         self.assertTrue(second["generic_mw16"]["saturated"])
         self.assertTrue(second["parameter_recovery"]["isomorphic_to_curve398_over_Q"])
+
+    def test_survivors_are_base_equivalent_presentations(self) -> None:
+        equivalence = self.document["presentation_equivalence"]
+        self.assertEqual(
+            self.document["status"],
+            "PASS_EXACT_BASE_EQUIVALENT_SURVIVORS_AND_SUBGROUP_COLLISION",
+        )
+        self.assertTrue(equivalence["same_jacobian_fibration_over_Q_up_to_base_change"])
+        self.assertFalse(
+            equivalence["distinct_fibration_modulo_base_change_or_surface_automorphism"]
+        )
+        aa, bb, cc, dd = map(Fraction, equivalence["pgl2_matrix_a_b_c_d"])
+        self.assertNotEqual(aa * dd - bb * cc, 0)
+        self.assertEqual(cc, 0)
+        slope = Fraction(equivalence["affine_slope"])
+        intercept = Fraction(equivalence["affine_intercept"])
+        scale = Fraction(equivalence["weierstrass_scale_s_with_s_squared_q"])
+        q_value = Fraction(equivalence["quadratic_twist_parameter_q"])
+        self.assertEqual(slope, aa / dd)
+        self.assertEqual(intercept, bb / dd)
+        self.assertEqual(scale, slope)
+        self.assertEqual(q_value, scale**2)
+
+        first_document = json.loads(
+            (ROOT / self.document["first_parent"]["compiled_artifact"]).read_text()
+        )
+        first_parameter = Fraction(first_document["parameter_recovery"]["lambda"])
+        second_parameter = Fraction(
+            self.document["second_parent"]["parameter_recovery"]["lambda"]
+        )
+        self.assertEqual(slope * first_parameter + intercept, second_parameter)
 
     def test_exact_collision_summary(self) -> None:
         collision = self.document["collision"]

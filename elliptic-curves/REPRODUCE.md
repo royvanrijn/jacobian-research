@@ -65,7 +65,7 @@ atlas misses.  See
 
 The redacted input and both protocol freezes replay cheaply:
 
-<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER -->
+<!-- status-consumer: EC-K3-R17-REFRESH-BLIND-JUMP-LADDER b7518cc41268489a -->
 
 ```sh
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
@@ -411,7 +411,8 @@ The fast arithmetic regression is:
 Check the compacted complete 63,917-class modular screen, replay exact
 characteristic-zero factorization of its two survivors, and rebuild the
 selected `I2+22I1` pencil, rational curve-398 parameter, degree-one shell,
-saturated MW16 basis, and public specialization embedding:
+saturated MW16 basis, exact base/Weierstrass equivalence of the two survivor
+presentations, and public specialization embedding:
 
 ```sh
 python3 elkies-k3/scripts/merge_icarm_curve398_norm8_a1_screen.py --check
@@ -451,8 +452,8 @@ This proves `rank E(Q) >= 30` and closes the exact construction/recovery
 boundary.  It does not prove an unconditional rank upper bound, search
 stability, or generalization to an unseen family.  See
 [`ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md`](notes/ICARM_CURVE398_RANK30_AND_CONSTRUCTION.md).
-<!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY a22fcfb1ea6844aa -->
-<!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 3021f19bf0594dcf -->
+<!-- status-consumer: EC-K3-CURVE398-A1-MW16-RECOVERY 75978a18cc26690f -->
+<!-- status-consumer: EC-K3-CURVE398-TWO-PARENT-COLLISION 626a440519ff77f3 -->
 
 ### Comparative height lattices: ranks 28--31
 

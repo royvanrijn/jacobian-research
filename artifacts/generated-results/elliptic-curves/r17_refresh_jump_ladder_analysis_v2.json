@@ -9,7 +9,10 @@
     "The exact permutation test conditions on this fixed atlas-refresh panel and tied margins.",
     "The displayed jumps are certified subgroup quotients, not full Mordell-Weil ranks.",
     "Passing does not replace the separately required residual 2-Selmer gate for rank-32 promotion.",
-    "Protocol v2 is transparently post-curve-478 because v1 used a false cross-class deepest-count assertion."
+    "Protocol v2 is transparently post-curve-478 because v1 used a false cross-class deepest-count assertion.",
+    "The fibration/j-class splits and the q>=11 endpoint were computed after unblinding and are sensitivity analyses, not frozen confirmatory endpoints.",
+    "Only the published-R17 frame, and only j-class 08234 within a mixed tail/body class, directly tests high-S enrichment; alternate-Q80 has no q>=10 row in this panel.",
+    "A low detector score cannot reject a candidate because every search is bounded; curve 544 is the explicit q=11, S=0 false negative."
   ],
   "confirmatory": {
     "joint_decision": {
@@ -131,6 +134,874 @@
       539
     ],
     "overall_recovery_fraction": "126/136",
+    "post_freeze_fibration_and_j_class_sensitivity": {
+      "by_fibration": [
+        {
+          "S_q_pairs_by_curve": [
+            {
+              "S_exact_blind_recovered_quotient_rank": 6,
+              "curve_id": 498,
+              "q_exact_displayed_subgroup_quotient_rank": 6
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 3,
+              "curve_id": 532,
+              "q_exact_displayed_subgroup_quotient_rank": 3
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 8,
+              "curve_id": 540,
+              "q_exact_displayed_subgroup_quotient_rank": 8
+            }
+          ],
+          "case_count": 3,
+          "curve_ids": [
+            498,
+            532,
+            540
+          ],
+          "high_S_enrichment": {
+            "q_at_least_10": {
+              "detector_positive_rate_in_true_tail": null,
+              "detector_positive_rate_outside_true_tail": null,
+              "detector_positive_threshold": 10,
+              "estimable": false,
+              "exact_p_denominator": null,
+              "exact_p_numerator": null,
+              "fisher_exact_one_sided_p": null,
+              "odds_ratio": null,
+              "reason_null": "STRATUM_HAS_NO_TAIL_OR_NO_NONTAIL_CASES",
+              "risk_difference": null,
+              "table": {
+                "non_tail_detector_negative": 3,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 0,
+                "true_tail_detector_positive": 0
+              },
+              "true_tail_threshold": 10
+            },
+            "q_at_least_11": {
+              "detector_positive_rate_in_true_tail": null,
+              "detector_positive_rate_outside_true_tail": null,
+              "detector_positive_threshold": 10,
+              "estimable": false,
+              "exact_p_denominator": null,
+              "exact_p_numerator": null,
+              "fisher_exact_one_sided_p": null,
+              "odds_ratio": null,
+              "reason_null": "STRATUM_HAS_NO_TAIL_OR_NO_NONTAIL_CASES",
+              "risk_difference": null,
+              "table": {
+                "non_tail_detector_negative": 3,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 0,
+                "true_tail_detector_positive": 0
+              },
+              "true_tail_threshold": 11
+            }
+          },
+          "ordinal_association": {
+            "concordance_minus_discordance": 3,
+            "exact_one_sided_permutation_p": 0.16666666666666666,
+            "exact_p_denominator": 6,
+            "exact_p_numerator": 1,
+            "kendall_tau_b": 1.0,
+            "null_assignment_count": 6,
+            "score_tied_pair_count": 0,
+            "truth_tied_pair_count": 0
+          },
+          "stratum": "alternate-Q80"
+        },
+        {
+          "S_q_pairs_by_curve": [
+            {
+              "S_exact_blind_recovered_quotient_rank": 6,
+              "curve_id": 478,
+              "q_exact_displayed_subgroup_quotient_rank": 4
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 11,
+              "curve_id": 531,
+              "q_exact_displayed_subgroup_quotient_rank": 11
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 11,
+              "curve_id": 534,
+              "q_exact_displayed_subgroup_quotient_rank": 11
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 10,
+              "curve_id": 535,
+              "q_exact_displayed_subgroup_quotient_rank": 11
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 11,
+              "curve_id": 536,
+              "q_exact_displayed_subgroup_quotient_rank": 11
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 10,
+              "curve_id": 537,
+              "q_exact_displayed_subgroup_quotient_rank": 10
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 5,
+              "curve_id": 538,
+              "q_exact_displayed_subgroup_quotient_rank": 5
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 6,
+              "curve_id": 539,
+              "q_exact_displayed_subgroup_quotient_rank": 6
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 8,
+              "curve_id": 541,
+              "q_exact_displayed_subgroup_quotient_rank": 8
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 12,
+              "curve_id": 543,
+              "q_exact_displayed_subgroup_quotient_rank": 12
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 0,
+              "curve_id": 544,
+              "q_exact_displayed_subgroup_quotient_rank": 11
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 11,
+              "curve_id": 545,
+              "q_exact_displayed_subgroup_quotient_rank": 11
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 8,
+              "curve_id": 546,
+              "q_exact_displayed_subgroup_quotient_rank": 8
+            }
+          ],
+          "case_count": 13,
+          "curve_ids": [
+            478,
+            531,
+            534,
+            535,
+            536,
+            537,
+            538,
+            539,
+            541,
+            543,
+            544,
+            545,
+            546
+          ],
+          "high_S_enrichment": {
+            "q_at_least_10": {
+              "detector_positive_rate_in_true_tail": 0.875,
+              "detector_positive_rate_outside_true_tail": 0.0,
+              "detector_positive_threshold": 10,
+              "estimable": true,
+              "exact_p_denominator": 429,
+              "exact_p_numerator": 2,
+              "fisher_exact_one_sided_p": 0.004662004662004662,
+              "odds_ratio": "Infinity",
+              "risk_difference": 0.875,
+              "table": {
+                "non_tail_detector_negative": 5,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 1,
+                "true_tail_detector_positive": 7
+              },
+              "true_tail_threshold": 10
+            },
+            "q_at_least_11": {
+              "detector_positive_rate_in_true_tail": 0.8571428571428571,
+              "detector_positive_rate_outside_true_tail": 0.16666666666666666,
+              "detector_positive_threshold": 10,
+              "estimable": true,
+              "exact_p_denominator": 1716,
+              "exact_p_numerator": 43,
+              "fisher_exact_one_sided_p": 0.02505827505827506,
+              "odds_ratio": 30.0,
+              "risk_difference": 0.6904761904761905,
+              "table": {
+                "non_tail_detector_negative": 5,
+                "non_tail_detector_positive": 1,
+                "true_tail_detector_negative": 1,
+                "true_tail_detector_positive": 6
+              },
+              "true_tail_threshold": 11
+            }
+          },
+          "ordinal_association": {
+            "concordance_minus_discordance": 46,
+            "exact_one_sided_permutation_p": 0.0006142006142006142,
+            "exact_p_denominator": 4324320,
+            "exact_p_numerator": 2656,
+            "kendall_tau_b": 0.7032948570222723,
+            "null_assignment_count": 4324320,
+            "score_tied_pair_count": 9,
+            "truth_tied_pair_count": 16
+          },
+          "stratum": "published-R17"
+        }
+      ],
+      "by_j_map_class": [
+        {
+          "S_q_pairs_by_curve": [
+            {
+              "S_exact_blind_recovered_quotient_rank": 5,
+              "curve_id": 538,
+              "q_exact_displayed_subgroup_quotient_rank": 5
+            }
+          ],
+          "case_count": 1,
+          "curve_ids": [
+            538
+          ],
+          "high_S_enrichment": {
+            "q_at_least_10": {
+              "detector_positive_rate_in_true_tail": null,
+              "detector_positive_rate_outside_true_tail": null,
+              "detector_positive_threshold": 10,
+              "estimable": false,
+              "exact_p_denominator": null,
+              "exact_p_numerator": null,
+              "fisher_exact_one_sided_p": null,
+              "odds_ratio": null,
+              "reason_null": "STRATUM_HAS_NO_TAIL_OR_NO_NONTAIL_CASES",
+              "risk_difference": null,
+              "table": {
+                "non_tail_detector_negative": 1,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 0,
+                "true_tail_detector_positive": 0
+              },
+              "true_tail_threshold": 10
+            },
+            "q_at_least_11": {
+              "detector_positive_rate_in_true_tail": null,
+              "detector_positive_rate_outside_true_tail": null,
+              "detector_positive_threshold": 10,
+              "estimable": false,
+              "exact_p_denominator": null,
+              "exact_p_numerator": null,
+              "fisher_exact_one_sided_p": null,
+              "odds_ratio": null,
+              "reason_null": "STRATUM_HAS_NO_TAIL_OR_NO_NONTAIL_CASES",
+              "risk_difference": null,
+              "table": {
+                "non_tail_detector_negative": 1,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 0,
+                "true_tail_detector_positive": 0
+              },
+              "true_tail_threshold": 11
+            }
+          },
+          "ordinal_association": {
+            "concordance_minus_discordance": 0,
+            "exact_one_sided_permutation_p": 1.0,
+            "exact_p_denominator": 1,
+            "exact_p_numerator": 1,
+            "kendall_tau_b": null,
+            "null_assignment_count": 1,
+            "score_tied_pair_count": 0,
+            "truth_tied_pair_count": 0
+          },
+          "stratum": "norm12-orbit-074d9"
+        },
+        {
+          "S_q_pairs_by_curve": [
+            {
+              "S_exact_blind_recovered_quotient_rank": 12,
+              "curve_id": 543,
+              "q_exact_displayed_subgroup_quotient_rank": 12
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 0,
+              "curve_id": 544,
+              "q_exact_displayed_subgroup_quotient_rank": 11
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 11,
+              "curve_id": 545,
+              "q_exact_displayed_subgroup_quotient_rank": 11
+            }
+          ],
+          "case_count": 3,
+          "curve_ids": [
+            543,
+            544,
+            545
+          ],
+          "high_S_enrichment": {
+            "q_at_least_10": {
+              "detector_positive_rate_in_true_tail": null,
+              "detector_positive_rate_outside_true_tail": null,
+              "detector_positive_threshold": 10,
+              "estimable": false,
+              "exact_p_denominator": null,
+              "exact_p_numerator": null,
+              "fisher_exact_one_sided_p": null,
+              "odds_ratio": null,
+              "reason_null": "STRATUM_HAS_NO_TAIL_OR_NO_NONTAIL_CASES",
+              "risk_difference": null,
+              "table": {
+                "non_tail_detector_negative": 0,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 1,
+                "true_tail_detector_positive": 2
+              },
+              "true_tail_threshold": 10
+            },
+            "q_at_least_11": {
+              "detector_positive_rate_in_true_tail": null,
+              "detector_positive_rate_outside_true_tail": null,
+              "detector_positive_threshold": 10,
+              "estimable": false,
+              "exact_p_denominator": null,
+              "exact_p_numerator": null,
+              "fisher_exact_one_sided_p": null,
+              "odds_ratio": null,
+              "reason_null": "STRATUM_HAS_NO_TAIL_OR_NO_NONTAIL_CASES",
+              "risk_difference": null,
+              "table": {
+                "non_tail_detector_negative": 0,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 1,
+                "true_tail_detector_positive": 2
+              },
+              "true_tail_threshold": 11
+            }
+          },
+          "ordinal_association": {
+            "concordance_minus_discordance": 2,
+            "exact_one_sided_permutation_p": 0.3333333333333333,
+            "exact_p_denominator": 3,
+            "exact_p_numerator": 1,
+            "kendall_tau_b": 0.8164965809277261,
+            "null_assignment_count": 3,
+            "score_tied_pair_count": 0,
+            "truth_tied_pair_count": 1
+          },
+          "stratum": "norm12-orbit-07ca9"
+        },
+        {
+          "S_q_pairs_by_curve": [
+            {
+              "S_exact_blind_recovered_quotient_rank": 6,
+              "curve_id": 478,
+              "q_exact_displayed_subgroup_quotient_rank": 4
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 11,
+              "curve_id": 531,
+              "q_exact_displayed_subgroup_quotient_rank": 11
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 11,
+              "curve_id": 534,
+              "q_exact_displayed_subgroup_quotient_rank": 11
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 10,
+              "curve_id": 535,
+              "q_exact_displayed_subgroup_quotient_rank": 11
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 11,
+              "curve_id": 536,
+              "q_exact_displayed_subgroup_quotient_rank": 11
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 10,
+              "curve_id": 537,
+              "q_exact_displayed_subgroup_quotient_rank": 10
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 8,
+              "curve_id": 546,
+              "q_exact_displayed_subgroup_quotient_rank": 8
+            }
+          ],
+          "case_count": 7,
+          "curve_ids": [
+            478,
+            531,
+            534,
+            535,
+            536,
+            537,
+            546
+          ],
+          "high_S_enrichment": {
+            "q_at_least_10": {
+              "detector_positive_rate_in_true_tail": 1.0,
+              "detector_positive_rate_outside_true_tail": 0.0,
+              "detector_positive_threshold": 10,
+              "estimable": true,
+              "exact_p_denominator": 21,
+              "exact_p_numerator": 1,
+              "fisher_exact_one_sided_p": 0.047619047619047616,
+              "odds_ratio": "Infinity",
+              "risk_difference": 1.0,
+              "table": {
+                "non_tail_detector_negative": 2,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 0,
+                "true_tail_detector_positive": 5
+              },
+              "true_tail_threshold": 10
+            },
+            "q_at_least_11": {
+              "detector_positive_rate_in_true_tail": 1.0,
+              "detector_positive_rate_outside_true_tail": 0.3333333333333333,
+              "detector_positive_threshold": 10,
+              "estimable": true,
+              "exact_p_denominator": 7,
+              "exact_p_numerator": 1,
+              "fisher_exact_one_sided_p": 0.14285714285714285,
+              "odds_ratio": "Infinity",
+              "risk_difference": 0.6666666666666666,
+              "table": {
+                "non_tail_detector_negative": 2,
+                "non_tail_detector_positive": 1,
+                "true_tail_detector_negative": 0,
+                "true_tail_detector_positive": 4
+              },
+              "true_tail_threshold": 11
+            }
+          },
+          "ordinal_association": {
+            "concordance_minus_discordance": 14,
+            "exact_one_sided_permutation_p": 0.009523809523809525,
+            "exact_p_denominator": 210,
+            "exact_p_numerator": 2,
+            "kendall_tau_b": 0.8767140075192094,
+            "null_assignment_count": 210,
+            "score_tied_pair_count": 4,
+            "truth_tied_pair_count": 6
+          },
+          "stratum": "norm12-orbit-08234"
+        },
+        {
+          "S_q_pairs_by_curve": [
+            {
+              "S_exact_blind_recovered_quotient_rank": 6,
+              "curve_id": 498,
+              "q_exact_displayed_subgroup_quotient_rank": 6
+            }
+          ],
+          "case_count": 1,
+          "curve_ids": [
+            498
+          ],
+          "high_S_enrichment": {
+            "q_at_least_10": {
+              "detector_positive_rate_in_true_tail": null,
+              "detector_positive_rate_outside_true_tail": null,
+              "detector_positive_threshold": 10,
+              "estimable": false,
+              "exact_p_denominator": null,
+              "exact_p_numerator": null,
+              "fisher_exact_one_sided_p": null,
+              "odds_ratio": null,
+              "reason_null": "STRATUM_HAS_NO_TAIL_OR_NO_NONTAIL_CASES",
+              "risk_difference": null,
+              "table": {
+                "non_tail_detector_negative": 1,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 0,
+                "true_tail_detector_positive": 0
+              },
+              "true_tail_threshold": 10
+            },
+            "q_at_least_11": {
+              "detector_positive_rate_in_true_tail": null,
+              "detector_positive_rate_outside_true_tail": null,
+              "detector_positive_threshold": 10,
+              "estimable": false,
+              "exact_p_denominator": null,
+              "exact_p_numerator": null,
+              "fisher_exact_one_sided_p": null,
+              "odds_ratio": null,
+              "reason_null": "STRATUM_HAS_NO_TAIL_OR_NO_NONTAIL_CASES",
+              "risk_difference": null,
+              "table": {
+                "non_tail_detector_negative": 1,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 0,
+                "true_tail_detector_positive": 0
+              },
+              "true_tail_threshold": 11
+            }
+          },
+          "ordinal_association": {
+            "concordance_minus_discordance": 0,
+            "exact_one_sided_permutation_p": 1.0,
+            "exact_p_denominator": 1,
+            "exact_p_numerator": 1,
+            "kendall_tau_b": null,
+            "null_assignment_count": 1,
+            "score_tied_pair_count": 0,
+            "truth_tied_pair_count": 0
+          },
+          "stratum": "norm12-orbit-08f72"
+        },
+        {
+          "S_q_pairs_by_curve": [
+            {
+              "S_exact_blind_recovered_quotient_rank": 6,
+              "curve_id": 539,
+              "q_exact_displayed_subgroup_quotient_rank": 6
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 8,
+              "curve_id": 541,
+              "q_exact_displayed_subgroup_quotient_rank": 8
+            }
+          ],
+          "case_count": 2,
+          "curve_ids": [
+            539,
+            541
+          ],
+          "high_S_enrichment": {
+            "q_at_least_10": {
+              "detector_positive_rate_in_true_tail": null,
+              "detector_positive_rate_outside_true_tail": null,
+              "detector_positive_threshold": 10,
+              "estimable": false,
+              "exact_p_denominator": null,
+              "exact_p_numerator": null,
+              "fisher_exact_one_sided_p": null,
+              "odds_ratio": null,
+              "reason_null": "STRATUM_HAS_NO_TAIL_OR_NO_NONTAIL_CASES",
+              "risk_difference": null,
+              "table": {
+                "non_tail_detector_negative": 2,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 0,
+                "true_tail_detector_positive": 0
+              },
+              "true_tail_threshold": 10
+            },
+            "q_at_least_11": {
+              "detector_positive_rate_in_true_tail": null,
+              "detector_positive_rate_outside_true_tail": null,
+              "detector_positive_threshold": 10,
+              "estimable": false,
+              "exact_p_denominator": null,
+              "exact_p_numerator": null,
+              "fisher_exact_one_sided_p": null,
+              "odds_ratio": null,
+              "reason_null": "STRATUM_HAS_NO_TAIL_OR_NO_NONTAIL_CASES",
+              "risk_difference": null,
+              "table": {
+                "non_tail_detector_negative": 2,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 0,
+                "true_tail_detector_positive": 0
+              },
+              "true_tail_threshold": 11
+            }
+          },
+          "ordinal_association": {
+            "concordance_minus_discordance": 1,
+            "exact_one_sided_permutation_p": 0.5,
+            "exact_p_denominator": 2,
+            "exact_p_numerator": 1,
+            "kendall_tau_b": 1.0,
+            "null_assignment_count": 2,
+            "score_tied_pair_count": 0,
+            "truth_tied_pair_count": 0
+          },
+          "stratum": "norm12-orbit-0e80b"
+        },
+        {
+          "S_q_pairs_by_curve": [
+            {
+              "S_exact_blind_recovered_quotient_rank": 3,
+              "curve_id": 532,
+              "q_exact_displayed_subgroup_quotient_rank": 3
+            },
+            {
+              "S_exact_blind_recovered_quotient_rank": 8,
+              "curve_id": 540,
+              "q_exact_displayed_subgroup_quotient_rank": 8
+            }
+          ],
+          "case_count": 2,
+          "curve_ids": [
+            532,
+            540
+          ],
+          "high_S_enrichment": {
+            "q_at_least_10": {
+              "detector_positive_rate_in_true_tail": null,
+              "detector_positive_rate_outside_true_tail": null,
+              "detector_positive_threshold": 10,
+              "estimable": false,
+              "exact_p_denominator": null,
+              "exact_p_numerator": null,
+              "fisher_exact_one_sided_p": null,
+              "odds_ratio": null,
+              "reason_null": "STRATUM_HAS_NO_TAIL_OR_NO_NONTAIL_CASES",
+              "risk_difference": null,
+              "table": {
+                "non_tail_detector_negative": 2,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 0,
+                "true_tail_detector_positive": 0
+              },
+              "true_tail_threshold": 10
+            },
+            "q_at_least_11": {
+              "detector_positive_rate_in_true_tail": null,
+              "detector_positive_rate_outside_true_tail": null,
+              "detector_positive_threshold": 10,
+              "estimable": false,
+              "exact_p_denominator": null,
+              "exact_p_numerator": null,
+              "fisher_exact_one_sided_p": null,
+              "odds_ratio": null,
+              "reason_null": "STRATUM_HAS_NO_TAIL_OR_NO_NONTAIL_CASES",
+              "risk_difference": null,
+              "table": {
+                "non_tail_detector_negative": 2,
+                "non_tail_detector_positive": 0,
+                "true_tail_detector_negative": 0,
+                "true_tail_detector_positive": 0
+              },
+              "true_tail_threshold": 11
+            }
+          },
+          "ordinal_association": {
+            "concordance_minus_discordance": 1,
+            "exact_one_sided_permutation_p": 0.5,
+            "exact_p_denominator": 2,
+            "exact_p_numerator": 1,
+            "kendall_tau_b": 1.0,
+            "null_assignment_count": 2,
+            "score_tied_pair_count": 0,
+            "truth_tied_pair_count": 0
+          },
+          "stratum": "norm12-orbit-11952"
+        }
+      ],
+      "conditional_on_fibration": {
+        "high_S_enrichment": {
+          "q_at_least_10": {
+            "detector_positive_threshold": 10,
+            "exact_one_sided_permutation_p": 0.004662004662004662,
+            "exact_p_denominator": 1716,
+            "exact_p_numerator": 8,
+            "null_assignment_count": 1716,
+            "observed_statistic": 7,
+            "statistic": "total high-S cases in the true tail after conditioning on stratum margins",
+            "strata": [
+              {
+                "case_count": 3,
+                "detector_positive_count": 0,
+                "observed_tail_detector_positive": 0,
+                "stratum": "alternate-Q80",
+                "true_tail_count": 0
+              },
+              {
+                "case_count": 13,
+                "detector_positive_count": 7,
+                "observed_tail_detector_positive": 7,
+                "stratum": "published-R17",
+                "true_tail_count": 8
+              }
+            ],
+            "true_tail_threshold": 10
+          },
+          "q_at_least_11": {
+            "detector_positive_threshold": 10,
+            "exact_one_sided_permutation_p": 0.02505827505827506,
+            "exact_p_denominator": 1716,
+            "exact_p_numerator": 43,
+            "null_assignment_count": 1716,
+            "observed_statistic": 6,
+            "statistic": "total high-S cases in the true tail after conditioning on stratum margins",
+            "strata": [
+              {
+                "case_count": 3,
+                "detector_positive_count": 0,
+                "observed_tail_detector_positive": 0,
+                "stratum": "alternate-Q80",
+                "true_tail_count": 0
+              },
+              {
+                "case_count": 13,
+                "detector_positive_count": 7,
+                "observed_tail_detector_positive": 6,
+                "stratum": "published-R17",
+                "true_tail_count": 7
+              }
+            ],
+            "true_tail_threshold": 11
+          }
+        },
+        "ordinal_association": {
+          "block_restricted_kendall_tau_b": 0.7162640491007405,
+          "cross_stratum_pairs_excluded": true,
+          "exact_one_sided_permutation_p": 0.0002729523562856896,
+          "exact_p_denominator": 25945920,
+          "exact_p_numerator": 7082,
+          "null_assignment_count": 25945920,
+          "observed_statistic": 49,
+          "statistic": "sum of within-stratum concordance-minus-discordance"
+        }
+      },
+      "conditional_on_j_map_class": {
+        "high_S_enrichment": {
+          "q_at_least_10": {
+            "detector_positive_threshold": 10,
+            "exact_one_sided_permutation_p": 0.047619047619047616,
+            "exact_p_denominator": 63,
+            "exact_p_numerator": 3,
+            "null_assignment_count": 63,
+            "observed_statistic": 7,
+            "statistic": "total high-S cases in the true tail after conditioning on stratum margins",
+            "strata": [
+              {
+                "case_count": 1,
+                "detector_positive_count": 0,
+                "observed_tail_detector_positive": 0,
+                "stratum": "norm12-orbit-074d9",
+                "true_tail_count": 0
+              },
+              {
+                "case_count": 3,
+                "detector_positive_count": 2,
+                "observed_tail_detector_positive": 2,
+                "stratum": "norm12-orbit-07ca9",
+                "true_tail_count": 3
+              },
+              {
+                "case_count": 7,
+                "detector_positive_count": 5,
+                "observed_tail_detector_positive": 5,
+                "stratum": "norm12-orbit-08234",
+                "true_tail_count": 5
+              },
+              {
+                "case_count": 1,
+                "detector_positive_count": 0,
+                "observed_tail_detector_positive": 0,
+                "stratum": "norm12-orbit-08f72",
+                "true_tail_count": 0
+              },
+              {
+                "case_count": 2,
+                "detector_positive_count": 0,
+                "observed_tail_detector_positive": 0,
+                "stratum": "norm12-orbit-0e80b",
+                "true_tail_count": 0
+              },
+              {
+                "case_count": 2,
+                "detector_positive_count": 0,
+                "observed_tail_detector_positive": 0,
+                "stratum": "norm12-orbit-11952",
+                "true_tail_count": 0
+              }
+            ],
+            "true_tail_threshold": 10
+          },
+          "q_at_least_11": {
+            "detector_positive_threshold": 10,
+            "exact_one_sided_permutation_p": 0.14285714285714285,
+            "exact_p_denominator": 63,
+            "exact_p_numerator": 9,
+            "null_assignment_count": 63,
+            "observed_statistic": 6,
+            "statistic": "total high-S cases in the true tail after conditioning on stratum margins",
+            "strata": [
+              {
+                "case_count": 1,
+                "detector_positive_count": 0,
+                "observed_tail_detector_positive": 0,
+                "stratum": "norm12-orbit-074d9",
+                "true_tail_count": 0
+              },
+              {
+                "case_count": 3,
+                "detector_positive_count": 2,
+                "observed_tail_detector_positive": 2,
+                "stratum": "norm12-orbit-07ca9",
+                "true_tail_count": 3
+              },
+              {
+                "case_count": 7,
+                "detector_positive_count": 5,
+                "observed_tail_detector_positive": 4,
+                "stratum": "norm12-orbit-08234",
+                "true_tail_count": 4
+              },
+              {
+                "case_count": 1,
+                "detector_positive_count": 0,
+                "observed_tail_detector_positive": 0,
+                "stratum": "norm12-orbit-08f72",
+                "true_tail_count": 0
+              },
+              {
+                "case_count": 2,
+                "detector_positive_count": 0,
+                "observed_tail_detector_positive": 0,
+                "stratum": "norm12-orbit-0e80b",
+                "true_tail_count": 0
+              },
+              {
+                "case_count": 2,
+                "detector_positive_count": 0,
+                "observed_tail_detector_positive": 0,
+                "stratum": "norm12-orbit-11952",
+                "true_tail_count": 0
+              }
+            ],
+            "true_tail_threshold": 11
+          }
+        },
+        "ordinal_association": {
+          "block_restricted_kendall_tau_b": 0.8804087784801333,
+          "cross_stratum_pairs_excluded": true,
+          "exact_one_sided_permutation_p": 0.0007936507936507937,
+          "exact_p_denominator": 2520,
+          "exact_p_numerator": 2,
+          "null_assignment_count": 2520,
+          "observed_statistic": 18,
+          "statistic": "sum of within-stratum concordance-minus-discordance"
+        }
+      },
+      "operational_read": "High S may promote scheduling inside the calibrated norm-twelve R17 setting, but low S may not veto a candidate. Transfer to alternate-Q80 or an untested j-class is unvalidated because the alternate-Q80 rows contain no q>=10 case.",
+      "pooled_q_at_least_11": {
+        "detector_positive_rate_in_true_tail": 0.8571428571428571,
+        "detector_positive_rate_outside_true_tail": 0.1111111111111111,
+        "detector_positive_threshold": 10,
+        "estimable": true,
+        "exact_p_denominator": 715,
+        "exact_p_numerator": 4,
+        "fisher_exact_one_sided_p": 0.005594405594405594,
+        "odds_ratio": 48.0,
+        "risk_difference": 0.746031746031746,
+        "table": {
+          "non_tail_detector_negative": 8,
+          "non_tail_detector_positive": 1,
+          "true_tail_detector_negative": 1,
+          "true_tail_detector_positive": 6
+        },
+        "true_tail_threshold": 11
+      },
+      "role": "descriptive_post_freeze_not_confirmatory",
+      "score_definition": "S = exact blind rank of the discovered subgroup modulo specialized MW17",
+      "truth_definition": "q = exact free rank of the displayed public subgroup modulo specialized MW17"
+    },
     "structural_zero_43_chart_cases": [
       544
     ],
@@ -144,72 +1015,120 @@
     "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_protocol_v2.json": "d080c990d32b24e76695db393db276d29b620462478f1840efc0bb122537d737",
     "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_verification_v2.json": "06d3e0a097a40bad50d6a0698fd7dbb4a06021149b570f43e583152eddf3eaa4",
     "elliptic-curves/cas/analyze_r17_refresh_jump_ladder.py": "9639e6ddcf2ac325ac4c11145058e8e1574299b4c11367b0174fa112bd3eaf88",
-    "elliptic-curves/cas/analyze_r17_refresh_jump_ladder_v2.py": "57cc7efb82064df3d9cf728eef1a39cd138cba8daef63bb9dbff60aace518da2"
+    "elliptic-curves/cas/analyze_r17_refresh_jump_ladder_v2.py": "ddac63e59b81fa02b925ae480ac272f6402c76ceb4b8da5b4ff532c901626abb"
   },
   "response": [
     {
       "curve_id": 478,
-      "exact_quotient_rank_recovered_before_public_complement": 6
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 4,
+      "exact_quotient_rank_recovered_before_public_complement": 6,
+      "fibration_class": "published-R17",
+      "j_map_class": "norm12-orbit-08234"
     },
     {
       "curve_id": 498,
-      "exact_quotient_rank_recovered_before_public_complement": 6
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 6,
+      "exact_quotient_rank_recovered_before_public_complement": 6,
+      "fibration_class": "alternate-Q80",
+      "j_map_class": "norm12-orbit-08f72"
     },
     {
       "curve_id": 531,
-      "exact_quotient_rank_recovered_before_public_complement": 11
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 11,
+      "exact_quotient_rank_recovered_before_public_complement": 11,
+      "fibration_class": "published-R17",
+      "j_map_class": "norm12-orbit-08234"
     },
     {
       "curve_id": 532,
-      "exact_quotient_rank_recovered_before_public_complement": 3
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 3,
+      "exact_quotient_rank_recovered_before_public_complement": 3,
+      "fibration_class": "alternate-Q80",
+      "j_map_class": "norm12-orbit-11952"
     },
     {
       "curve_id": 534,
-      "exact_quotient_rank_recovered_before_public_complement": 11
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 11,
+      "exact_quotient_rank_recovered_before_public_complement": 11,
+      "fibration_class": "published-R17",
+      "j_map_class": "norm12-orbit-08234"
     },
     {
       "curve_id": 535,
-      "exact_quotient_rank_recovered_before_public_complement": 10
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 11,
+      "exact_quotient_rank_recovered_before_public_complement": 10,
+      "fibration_class": "published-R17",
+      "j_map_class": "norm12-orbit-08234"
     },
     {
       "curve_id": 536,
-      "exact_quotient_rank_recovered_before_public_complement": 11
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 11,
+      "exact_quotient_rank_recovered_before_public_complement": 11,
+      "fibration_class": "published-R17",
+      "j_map_class": "norm12-orbit-08234"
     },
     {
       "curve_id": 537,
-      "exact_quotient_rank_recovered_before_public_complement": 10
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 10,
+      "exact_quotient_rank_recovered_before_public_complement": 10,
+      "fibration_class": "published-R17",
+      "j_map_class": "norm12-orbit-08234"
     },
     {
       "curve_id": 538,
-      "exact_quotient_rank_recovered_before_public_complement": 5
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 5,
+      "exact_quotient_rank_recovered_before_public_complement": 5,
+      "fibration_class": "published-R17",
+      "j_map_class": "norm12-orbit-074d9"
     },
     {
       "curve_id": 539,
-      "exact_quotient_rank_recovered_before_public_complement": 6
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 6,
+      "exact_quotient_rank_recovered_before_public_complement": 6,
+      "fibration_class": "published-R17",
+      "j_map_class": "norm12-orbit-0e80b"
     },
     {
       "curve_id": 540,
-      "exact_quotient_rank_recovered_before_public_complement": 8
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 8,
+      "exact_quotient_rank_recovered_before_public_complement": 8,
+      "fibration_class": "alternate-Q80",
+      "j_map_class": "norm12-orbit-11952"
     },
     {
       "curve_id": 541,
-      "exact_quotient_rank_recovered_before_public_complement": 8
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 8,
+      "exact_quotient_rank_recovered_before_public_complement": 8,
+      "fibration_class": "published-R17",
+      "j_map_class": "norm12-orbit-0e80b"
     },
     {
       "curve_id": 543,
-      "exact_quotient_rank_recovered_before_public_complement": 12
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 12,
+      "exact_quotient_rank_recovered_before_public_complement": 12,
+      "fibration_class": "published-R17",
+      "j_map_class": "norm12-orbit-07ca9"
     },
     {
       "curve_id": 544,
-      "exact_quotient_rank_recovered_before_public_complement": 0
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 11,
+      "exact_quotient_rank_recovered_before_public_complement": 0,
+      "fibration_class": "published-R17",
+      "j_map_class": "norm12-orbit-07ca9"
     },
     {
       "curve_id": 545,
-      "exact_quotient_rank_recovered_before_public_complement": 11
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 11,
+      "exact_quotient_rank_recovered_before_public_complement": 11,
+      "fibration_class": "published-R17",
+      "j_map_class": "norm12-orbit-07ca9"
     },
     {
       "curve_id": 546,
-      "exact_quotient_rank_recovered_before_public_complement": 8
+      "exact_displayed_subgroup_quotient_rank_opened_after_blind_freeze": 8,
+      "exact_quotient_rank_recovered_before_public_complement": 8,
+      "fibration_class": "published-R17",
+      "j_map_class": "norm12-orbit-08234"
     }
   ],
   "schema": "elliptic-curves.r17-refresh-jump-ladder-analysis.v2",
