@@ -343,6 +343,14 @@ one chart does not exclude a high-rank fibre on another chart.
   untwisted.  Curve 12 supplies the first native alternate-Q80
   rank-at-least-29 control and has displayed quotient `Z^12` over the generic
   rank-17 subgroup.
+- The point-forced cubic class-group calculation was normalized by the
+  specialized generic `MW17` and extended to all five published-R17 controls
+  plus native alternate-Q80 curve 12.  Every exceptional block adds zero
+  bad-valuation rank; the certified residual 2-class-image lower-bound strata
+  are `+5 -> 3`, `+6 -> 5`, `+8 -> 6`, and `+12 -> 10..11`.  This explains
+  the full-BNF pressure across both frames, but is not prospective prediction
+  because the exceptional points are inputs.
+<!-- status-consumer: EC-K3-R17-KUMMER-CLASSGROUP-PRESSURE-COMPARISON 74b1dae24470b531 -->
 - A later projection from the live 556-curve database preserved the 69
   recognized fibres and 1,545 displayed points.  Seven priority fibres now
   have exact displayed quotients and complete fixed-cover visibility spans;

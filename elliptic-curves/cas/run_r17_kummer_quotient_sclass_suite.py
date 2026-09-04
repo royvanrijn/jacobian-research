@@ -122,6 +122,8 @@ def closed_relation_records(data: dict) -> Iterable[dict]:
     yield from data["accepted_quotient_relations"]
     for collision in data["large_prime_collisions"]:
         yield collision
+    for collision in data.get("reduced_ideal_collisions", []):
+        yield collision
 
 
 def summarize_checkpoint(path: Path) -> dict:

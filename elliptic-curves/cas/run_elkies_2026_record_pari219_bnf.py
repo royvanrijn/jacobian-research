@@ -63,6 +63,14 @@ def main() -> None:
     parser.add_argument("--timeout-seconds", type=float, default=1800.0)
     parser.add_argument("--stack-bytes", type=int, default=5_000_000_000)
     parser.add_argument("--threads", type=int, default=8)
+    parser.add_argument(
+        "--relation-threads",
+        type=int,
+        help=(
+            "PARI bnfinit usethr value; omit to reuse --threads, or pass zero "
+            "to retain the serial collector's early-abort strategies"
+        ),
+    )
     parser.add_argument("--c1", type=float, default=0.3)
     parser.add_argument("--c2", type=float, default=4.0)
     parser.add_argument("--nrpid", type=int, default=20)
@@ -77,6 +85,8 @@ def main() -> None:
     args = parser.parse_args()
     if args.timeout_seconds <= 0 or args.threads <= 0 or args.stack_bytes <= 0:
         parser.error("timeouts, thread counts, and stack sizes must be positive")
+    if args.relation_threads is not None and args.relation_threads < 0:
+        parser.error("--relation-threads must be nonnegative")
     gp = args.gp.resolve()
     certificate = args.factor_certificate.resolve()
     for path in (gp, certificate):
@@ -90,13 +100,16 @@ def main() -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
     args.checkpoint.unlink(missing_ok=True)
 
+    relation_threads = (
+        args.threads if args.relation_threads is None else args.relation_threads
+    )
     tech = [
         args.c1,
         args.c2,
         args.nrpid,
         args.max_factorizations,
         args.ideal_power,
-        args.threads,
+        relation_threads,
     ]
     tech_text = ",".join(str(value) for value in tech)
     factor_text = ",".join(str(prime) for prime in args.factor_primes)
@@ -105,12 +118,18 @@ setdebug("bnf",{args.pari_debug});
 addprimes([{factor_text}]);
 f={args.polynomial};
 print("{PROTOCOL}|stage=bnfinit|status=start|tech={tech_text}");
-b=bnfinit(f,1,[{tech_text}]);
+iferr(b=bnfinit(f,1,[{tech_text}]),E,print("{PROTOCOL}|stage=bnfinit|status=error|message=",E);quit(2));
+if(type(b)!="t_VEC",print("{PROTOCOL}|stage=bnfinit|status=error|message=non_bnf_type_",type(b));quit(3));
 print("{PROTOCOL}|stage=bnfinit|status=done|no=",b.no,"|cyc=",b.cyc);
 print("{PROTOCOL}|stage=bnfcertify|status=start");
-c=bnfcertify(b);
-if(!c,error("bnfcertify returned zero"));
-writebin("{gp_quote(args.checkpoint.resolve())}",b);
+iferr(c=bnfcertify(b),E,print("{PROTOCOL}|stage=bnfcertify|status=error|message=",E);quit(4));
+if(!c,print("{PROTOCOL}|stage=bnfcertify|status=error|message=returned_zero");quit(5));
+iferr(writebin("{gp_quote(args.checkpoint.resolve())}",b),E,print("{PROTOCOL}|stage=checkpoint|status=error|message=",E);quit(6));
+iferr(bb=read("{gp_quote(args.checkpoint.resolve())}"),E,print("{PROTOCOL}|stage=checkpoint|status=error|message=",E);quit(7));
+if(type(bb)!="t_VEC",print("{PROTOCOL}|stage=checkpoint|status=error|message=non_bnf_type_",type(bb));quit(8));
+iferr(cc=bnfcertify(bb),E,print("{PROTOCOL}|stage=checkpoint|status=error|message=",E);quit(9));
+if(!cc,print("{PROTOCOL}|stage=checkpoint|status=error|message=reload_certification_returned_zero");quit(10));
+print("{PROTOCOL}|stage=checkpoint|status=done|reload_certified=1");
 print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1");
 '''
 
@@ -151,6 +170,9 @@ print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1");
     log_text = args.log.read_text(errors="replace")
     certified = (
         f"{PROTOCOL}|stage=bnfcertify|status=done|certified=1" in log_text
+        and f"{PROTOCOL}|stage=checkpoint|status=done|reload_certified=1" in log_text
+        and "  ***" not in log_text
+        and process.returncode == 0
         and args.checkpoint.is_file()
     )
     if outcome == "running":
@@ -181,6 +203,7 @@ print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1");
             "factor_certificate": str(certificate),
             "factor_certificate_sha256": file_sha256(certificate),
             "threads": args.threads,
+            "relation_threads": relation_threads,
             "stack_bytes": args.stack_bytes,
             "timeout_seconds": args.timeout_seconds,
         },

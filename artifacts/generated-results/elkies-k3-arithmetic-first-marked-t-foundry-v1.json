@@ -4337,6 +4337,83 @@
       ]
     },
     {
+      "arithmetic_classification": "UNKNOWN",
+      "certificate_replay": [
+        {
+          "assertions_replayed": 11,
+          "path": "artifacts/generated-results/elkies-k3-det1236-marked-shimura-curve-v1.json",
+          "sha256": "a1c9976a6607a5ff771bd453b13b00d351ab8252a194d7acb930a476f89c3f2b"
+        }
+      ],
+      "coarse_curve_diagnostic": {
+        "genus": 17,
+        "label": "X_0^6(103)",
+        "status": "PASS_EXACT_SHIMURA_CURVE",
+        "warning": "Coarse genus is a prioritization diagnostic only until the stable discriminant-kernel curve is computed."
+      },
+      "decision": "UNRESOLVED_FOR_EXPLICIT_REASON: the exact marked curve is the genus-six X_0^6(103)/<w_618>; decide the degree-two lift from its explicit genus-two quotient to find a non-CM rational point or prove that only its two rational discriminant -3 CM points occur.",
+      "determinant": 1236,
+      "full_marking_curve": {
+        "genus": 6,
+        "label": "X_0^6(103)/<w_618>",
+        "rational_non_CM_point": null,
+        "stable_kernel_index_over_coarse": 2,
+        "status": "PASS_EXACT_PROJECTIVE_STABLE_DISCRIMINANT_KERNEL_CURVE"
+      },
+      "integral_order": {
+        "local_level_index": 103,
+        "reduced_discriminant": 618,
+        "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
+      },
+      "next_gate": "Construct the degree-two cover from X_0^6(103)/<w_618> to y^2=1944*x^6+441*x^4-90*x^2+9 and decide rational lifts; do not begin K3 equation work before a non-CM lift is certified.",
+      "phase_2_certificate_status": "UNRESOLVED_FOR_EXPLICIT_REASON",
+      "phase_one_priority_key": [
+        5,
+        1,
+        6,
+        0,
+        2,
+        1,
+        103,
+        1,
+        1236
+      ],
+      "quaternion_discriminant": 6,
+      "rational_isotropy": false,
+      "rootless_frame_data_used_in_priority": false,
+      "similarity_marking_gap": {
+        "full_stable_kernel_still_required": false,
+        "literal_content": 1,
+        "quadratic_integrality_scale": 1
+      },
+      "surface_id": "K3-6d288cfad55e0d15",
+      "theorem_inputs": [
+        "the local classification of squarefree-discriminant quaternion orders and the Eichler normalizer quotient",
+        "Ogg's Atkin--Lehner fixed-point and Riemann--Hurwitz formulas",
+        "Gonzalez--Rotger's CM residue-field formula for Atkin--Lehner quotients",
+        "Padurariu--Saia's exact genus-two quotient model and elliptic quotient identification",
+        "Jacquet--Langlands and the ramified-place Atkin--Lehner sign normalization",
+        "the rank-three ternary-spin/fully-marked-K3 period correspondence"
+      ],
+      "transcendental_gram": [
+        [
+          -2,
+          0,
+          1
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          1,
+          0,
+          154
+        ]
+      ]
+    },
+    {
       "arithmetic_classification": "UNSCREENED_NO_FULL_MARKING_DECISION",
       "coarse_curve_diagnostic": {
         "genus": 6,
@@ -8833,66 +8910,6 @@
           2,
           1,
           58
-        ]
-      ]
-    },
-    {
-      "arithmetic_classification": "UNKNOWN",
-      "coarse_curve_diagnostic": {
-        "genus": 17,
-        "label": "X_0^6(103)",
-        "status": "CONDITIONAL_X0DN_IF_CLIFFORD_ORDER_IS_EICHLER",
-        "warning": "Coarse genus is a prioritization diagnostic only until the stable discriminant-kernel curve is computed."
-      },
-      "determinant": 1236,
-      "full_marking_curve": {
-        "genus": null,
-        "label": null,
-        "rational_non_CM_point": false,
-        "stable_kernel_index_over_coarse": null,
-        "status": "UNKNOWN_FULL_DISCRIMINANT_KERNEL_CURVE_NOT_IDENTIFIED"
-      },
-      "integral_order": {
-        "local_level_index": 103,
-        "reduced_discriminant": 618,
-        "source_status": "PARTIAL_EXACT_ANISOTROPIC_CLIFFORD_ORDER"
-      },
-      "next_gate": "Compute the literal-lattice stable discriminant kernel, identify a genus-0/1 (occasionally genus-2) quotient, and determine its rational noncuspidal non-CM lifts.",
-      "phase_one_priority_key": [
-        5,
-        1,
-        17,
-        1,
-        1000000000,
-        1,
-        103,
-        1,
-        1236
-      ],
-      "quaternion_discriminant": 6,
-      "rational_isotropy": false,
-      "rootless_frame_data_used_in_priority": false,
-      "similarity_marking_gap": {
-        "full_stable_kernel_still_required": true,
-        "literal_content": 1,
-        "quadratic_integrality_scale": 1
-      },
-      "surface_id": "K3-6d288cfad55e0d15",
-      "transcendental_gram": [
-        [
-          -2,
-          0,
-          1
-        ],
-        [
-          0,
-          4,
-          0
-        ],
-        [
-          1,
-          0,
-          154
         ]
       ]
     },
@@ -50622,7 +50639,7 @@
     }
   ],
   "inputs": {
-    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "e1656aaf4d9e2a423b88575ec9427e152bbeaad4874b7cc2d185ef20a99a6f4e",
+    "artifacts/generated-results/elkies-k3-rank19-arithmetic-marking-classifier-v1.json": "4a44cafb558dfe64a023180614b5e224bf29a256d2f721fea46e8357117a0783",
     "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985",
     "elkies-k3/data/arithmetic/arithmetic-first-marking-decisions-v1.json": "7d8c88e1b89e10d98280cabaee9ccab70db176b398d825a9ce1752479a4a425f"
   },

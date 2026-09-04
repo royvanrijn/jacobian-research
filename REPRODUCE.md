@@ -1,6 +1,7 @@
 # Reproducing the results
 
 <!-- status-consumer: EC-K3-H3-Q12O5867-POINT-FACTORY 9399c93ee42ee2a4 -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
 
 The Makefile is the public verification interface.  Run commands from the
 repository root after creating the Python environment described in the main
@@ -18670,10 +18671,10 @@ The alternate application proof is
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK b932f409dfffdb55 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6014cc6c7b64d76e -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 0f8194f335b32990 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 5b6c901b8b1fdd15 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY ec9b82089d2e9196 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 4fac03efa2d465c7 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 <!-- status-consumer: EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS 01298fec30fa94a3 -->
 
@@ -18752,6 +18753,7 @@ The arithmetic-gated planner ranking is replayed by
   elkies-k3/scripts/certify_det378_qq_marking_obstruction.sage --check
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage --check
+sage -python elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage --check
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
 python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
@@ -18768,7 +18770,18 @@ literal `5`-scaled Clifford orders at determinants 500 and 750, computes the
 `A5`, `S5`, and `S5 x C2` discriminant images, and identifies the exact
 stable curves `X_H(50)` and `X_H(75)`. Their rational points are precisely
 four cusps apiece, so both new rootless-MW17 rows are excluded. The classifier
-then checks all 66 lattice-feasible rootless-MW17 surfaces, recording one
+then checks all 66 lattice-feasible rootless-MW17 surfaces. The determinant-1236
+replay identifies the exact genus-six marked curve
+`X_0^6(103)/<w_618>`, its two rational discriminant `-3` CM points, and the
+quadratic discriminant `-24` CM fixed fiber. It verifies fourteen rational
+points on the genus-two quotient, separates both fixed fibers, and leaves
+twelve explicit non-fixed fibers for the degree-two rational-lift
+obstruction. Exact level-618 modular symbols identify the six rank-one
+elliptic factors of `Jac(C_1236)`, the two-factor genus-two part, and the
+four-factor Prym; classical Chabauty is at rank equal to genus, while the
+quadratic-Chabauty dimension screen passes. The replay issues
+`UNRESOLVED_FOR_EXPLICIT_REASON` and does not authorize equation work. The
+classifier records one
 arithmetically possible control, five exclusions, 60 unknowns, and an empty
 new equation handoff. The determinant ranking retains 61 candidates including
 the realized determinant-948 control. The final command reverses the global
@@ -19642,6 +19655,36 @@ sage -python \
 
 See
 [`elkies-k3/R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md`](elkies-k3/R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md).
+
+### Comparative Kummer/class-group pressure
+
+<!-- status-consumer: EC-K3-R17-KUMMER-CLASSGROUP-PRESSURE-COMPARISON 74b1dae24470b531 -->
+
+Replay the five published-R17 half-ideal calculations and the native
+alternate-Q80 curve-12 extension:
+
+```bash
+sage -python \
+  elkies-k3/scripts/certify_r17_kummer_classgroup_pressure_comparison.sage \
+  --check
+```
+
+The curve-12 lane first verifies the determinant-`-1` basis change from its 29
+public points to the specialized generic `MW17` plus the certified twelve
+quotient directions, and transports the independent mod-two signatures.  The
+same completed-square cubic and all-bad-prime valuation audit then gives the
+six residual class-image lower bounds
+
+```text
+351:6, 356:11, 376:3, 377:5, 385:10, 12:11.
+```
+
+Every exceptional block adds zero valuation rank modulo generic `MW17`, so the
+observed jump strata are strictly ordered as `+5 -> 3`, `+6 -> 5`, `+8 -> 6`,
+and `+12 -> 10..11`.  These are lower bounds for the known point-forced full
+cubic 2-class quotient, not exact class groups, S-class ranks, Selmer upper
+bounds, or an out-of-sample predictor.  See
+[`elkies-k3/R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md`](elkies-k3/R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md).
 
 ### Residual-Selmer fingerprints and monotone sieve
 

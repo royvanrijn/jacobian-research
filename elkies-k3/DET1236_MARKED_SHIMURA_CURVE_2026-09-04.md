@@ -1,5 +1,7 @@
 # Determinant 1236: exact marked Shimura curve and remaining lift obstruction
 
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
+
 Date: 2026-09-04.
 
 Status: **UNRESOLVED_FOR_EXPLICIT_REASON**.
@@ -167,6 +169,12 @@ C_1236 -> X_0^6(103)/<w_2,w_309>,     degree 2,
 
 with six geometric branch points.
 
+The fixed-point calculation identifies the branch locus exactly at the CM
+level: all twelve `w_309`-fixed points upstairs have order discriminant
+`-1236`, and `w_618` pairs them into the six branch points on the genus-two
+quotient. What remains unknown is their coordinate divisor on the displayed
+model of `B`, equivalently the resulting squareclass in `QQ(B)`.
+
 ## The low-genus quotient
 
 Padurariu and Saia determine the exact model
@@ -175,8 +183,14 @@ Padurariu and Saia determine the exact model
 B: y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9.
 ```
 
-The checker verifies the rational points `(0,+/-3)` and
-`(+/-1,+/-48)`. The quotient by the involution induced by `w_3` is
+The checker verifies fourteen rational points:
+
+```text
+(0,+/-3),              (+/-1,+/-48),
+(+/-1/3,+/-8/3),       (+/-1/5,+/-312/125).
+```
+
+The quotient by the involution induced by `w_3` is
 
 ```text
 E: Y^2 + X*Y = X^3 - 185*X + 1401,       Cremona 618f1,
@@ -188,10 +202,10 @@ under
 X = 54*x^2 + 4,       Y = 9*y - 27*x^2 - 2.
 ```
 
-The curve `E` has rank one, trivial torsion, and generator `(10,-29)`;
-`(0,3)` and `(1,48)` map to three and four times that generator. This is
-useful structure, but it does not lift through the nontrivial degree-two
-marking cover automatically.
+The curve `E` has rank one, trivial torsion, and generator `G=(10,-29)`.
+The displayed points map to `+/-G`, `+/-3G`, `+/-4G`, and `+/-10G`.
+This is useful structure, but it does not lift through the nontrivial
+degree-two marking cover automatically.
 
 The model is from [Padurariu--Saia, *Shimura curve Atkin--Lehner quotients
 of genus at most two*](https://arxiv.org/abs/2509.25368), with machine data
@@ -213,10 +227,31 @@ Gonzalez--Rotger's formula makes every image of these points on the `w_618`
 quotient rational. The four order-three points upstairs form two Fricke
 pairs, producing exactly two rational CM points on `C_1236`.
 
+The other two `w_3`-fixed phenomena are also separable. The four points of
+order discriminant `-24` fixed by `w_6` upstairs have
+
+```text
+h(-24)=2,       D(R)=1,       N*(R)=103,
+m_R=6,          m/m_R=103.
+```
+
+Corollary 5.14 gives a quadratic residue field on `C_1236`, not `QQ`: the
+four top points become one quadratic closed point, or two conjugate geometric
+points, on the marked curve. Thus they supply no rational marked point.
+
+On the genus-two model, the involution induced by `w_3` is `x -> -x` and
+its rational fixed locus is exactly `(0,+/-3)`. Up to interchanging those two
+signs, one is the image of the pair of rational discriminant `-3` points on
+`C_1236`; the other is the image of the conjugate discriminant `-24` pair.
+Consequently both fixed fibers are understood. The remaining displayed
+points, beginning with `x=+/-1/3`, `+/-1`, and `+/-1/5`, are the first
+non-fixed fibers whose lift squareclasses must be computed.
+
 | point class on `C_1236` | result |
 |---|---|
 | rational cusps | exactly 0 |
 | certified rational CM points | exactly 2 of discriminant `-3` |
+| certified nonrational CM points | one quadratic closed point of discriminant `-24` |
 | other rational CM points | not determined |
 | rational non-CM points | not determined |
 | certified desired rank-19 markings | 0 |
@@ -231,18 +266,63 @@ The residue-field input is Corollary 5.14 of Gonzalez--Rotger,
 The signature calculation uses Ogg,
 [*Real points on Shimura curves*](https://doi.org/10.1007/978-1-4757-9284-3_12).
 
+## Jacquet--Langlands cover precheck
+
+The exact weight-two newspace at classical level `618` has dimension `17`,
+matching the genus of `X_0^6(103)`. At the ramified primes `2,3`, geometric
+Atkin--Lehner signs are the negatives of the classical signs; at the
+Eichler-level prime `103` they agree. The geometric `w_618`-invariant part
+therefore has the exact isogeny decomposition
+
+```text
+Jac(C_1236) ~ 618a1 x 618b1 x 618c1 x 618d1 x 618e1 x 618f1.
+```
+
+The deck involution of `C_1236 -> B` is geometric `w_2=-W_2`. Its invariant
+and anti-invariant parts are consequently
+
+```text
+Jac(B)                         ~ 618e1 x 618f1,
+Prym(C_1236/B)                 ~ 618a1 x 618b1 x 618c1 x 618d1.
+```
+
+All six elliptic factors have Mordell--Weil rank one. Hence
+
+```text
+rank Jac(C_1236)(QQ) = 6 = genus(C_1236).
+```
+
+Classical Chabauty does not pass its strict rank bound. On the other hand,
+the six pairwise nonisogenous factors give `rho(Jac(C_1236)) >= 6`, so the
+necessary quadratic-Chabauty dimension inequality passes:
+
+```text
+6 = rank J(QQ) < genus(C_1236) + rho(J) - 1 >= 11.
+```
+
+This does not decide `C_1236(QQ)`: quadratic Chabauty still needs an explicit
+model of the degree-two cover and its rational-point input. It does identify
+the four-dimensional Prym carrying the missing marking character and rules
+out a classical rank-less-than-genus shortcut.
+
+The factor accounting is replayed from modular symbols in the checker. Its
+interpretation uses the classical Jacquet--Langlands correspondence and the
+ramified-place Atkin--Lehner sign normalization.
+
 ## Exact next task
 
 The next computation is narrow, not a broad rank search:
 
 1. construct `C_1236 -> B` explicitly;
 2. compute its squareclass in `QQ(B)^*/QQ(B)^{*2}`;
-3. perform the covering descent on `B(QQ)`.
+3. evaluate the twelve verified non-fixed rational fibers;
+4. use the split-Jacobian quadratic-Chabauty/Mordell--Weil-sieve route to
+   prove completeness if no positive lift is found.
 
 One non-CM rational lift is a positive certificate. A complete proof that
 only the two CM points lift is a negative certificate. Points on `B`,
-including `(1,48)`, remain quotient-level evidence until their fibers are
-evaluated.
+including the verified `+/-G`, `+/-4G`, and `+/-10G` fibers, remain
+quotient-level evidence until their fibers are evaluated.
 
 ## Replay and independence
 

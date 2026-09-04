@@ -1,5 +1,7 @@
 # Elliptic K3 / high-rank programme — ACTIVE
 
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
+
 The programme is open for theorem-directed breakthrough work. Expensive K3,
 neighbour, descent, and specialization calculations require explicit gates and
 reproducible, checkpointed outputs. `../MATH_STATUS.json` remains the authority
@@ -40,6 +42,14 @@ ten-direction rigid complements.  There is no justified common CRT class;
 the next search should therefore be a directly gated family-wide parameter
 search.  See
 [`R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md`](R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md).
+The complementary global class-group comparison is positive: on curves 351,
+356, 376, 377, 385, and native alternate-Q80 curve 12, every exceptional
+block adds zero bad-valuation rank modulo generic `MW17`.  The resulting
+known-point residual 2-class-image lower bounds strictly separate the observed
+jump strata as `+5 -> 3`, `+6 -> 5`, `+8 -> 6`, and `+12 -> 10..11`.
+This explains the full-BNF pressure but is not prospective prediction because
+the exceptional points are inputs.  See
+[`R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md`](R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md).
 The follow-on prospective CRT experiment first rejects the original `p^3`
 premise, then freezes locally validated higher-power cylinders and balanced
 full/ordinary/2-only/odd-only/random cohorts.  All 2,560 uniformly searched
@@ -65,7 +75,12 @@ rootlessness, or compiling an equation. Determinants 500, 720, 750, 950
 (`NS0024`), and 1184 (`NS0031`), plus the split determinant-378 row, are now
 arithmetically excluded. The two newly decided rootless rows have literal
 marked curves `X_H(50)` and `X_H(75)`, each with only rational cusps. The
-global `T`-first queue has 820 research rows and no new NS/equation handoff. The construction target
+determinant-1236 rootless row is now the positive-directed target: its exact
+marked curve is the genus-six `X_0^6(103)/<w_618>`, with an explicit
+genus-two quotient and two rational CM points. Its exact Jacobian splits into
+the six rank-one factors `618a1` through `618f1`, isolating a four-factor
+Prym, but its non-CM rational lift is `UNRESOLVED_FOR_EXPLICIT_REASON`. The global `T`-first queue has 820 research
+rows and no new NS/equation handoff. The construction target
 is stronger than plain MW17: require a certified positive-rank low-genus
 carrier and independent pullback section, with an integral `V4` lattice of
 character ranks `17+1+1+1` as the stretch target. See
@@ -131,6 +146,14 @@ and the batch
   tensor, pairing graph, and an intrinsic partition of 10 do not.  No
   basis-dependent `10=...` answer is promoted.
 <!-- status-consumer: EC-K3-R17-074D9-QUOTIENT-ARITHMETIC-BLOCK-OBSTRUCTION af45468d1b7d831a -->
+- **Comparative class-group pressure:** the exact half-ideal calculation now
+  covers published-R17 curves 351, 356, 376, 377, 385 and native
+  alternate-Q80 curve 12.  The exceptional block adds zero bad-valuation rank
+  modulo generic `MW17` in every row.  After the norm-positive unit ambiguity,
+  the residual 2-class-image lower bounds are `6,11,3,5,10,11`, strictly
+  separating the observed `+5,+6,+8,+12` jump strata.  This is a known-point
+  explanatory theorem, not an out-of-sample predictor or Selmer upper bound.
+<!-- status-consumer: EC-K3-R17-KUMMER-CLASSGROUP-PRESSURE-COMPARISON 74b1dae24470b531 -->
 - **Noncyclic `4A1/MW13` over `QQ`:** the relative-`U` witness with maximal bridge `Z/4+Z/8` now compiles directly from published R17 to an explicit `4 I2 + 16 I1` equation.  Thirteen rational sections form a saturated basis, and the target-free reverse degree-two hop recovers the literal published R17 equation.
 - The alternate pencil has arithmetic generic rank 17 over `QQ`.
 - The historical degree-11511 Q80 transport and million-bit third-`q12` reconstruction are superseded operationally and retained only for provenance.
@@ -164,6 +187,7 @@ and the batch
 - [`GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](GOLAY_DET720_QQ_MARKING_OBSTRUCTION_2026-09-04.md) — exact `X_0(60)` stable curve, rational-point obstruction, and determinant-20 saturation boundary.
 - [`DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](DET378_QQ_MARKING_OBSTRUCTION_2026-09-04.md) — exact literal Clifford order, `A4` spin image, stable `X_0(63)`, and rational-point obstruction for the split determinant-378 row.
 - [`DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md`](DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md) — exact `A5` spin actions, stable `X_H(50)`/`X_H(75)` curves, and two rootless-MW17 arithmetic exclusions.
+- [`DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md`](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md) — exact genus-six stable curve, explicit genus-two quotient tower, rational CM controls, six-factor Jacobian/four-factor Prym accounting, and the remaining degree-two non-CM lift obstruction.
 - [`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md) — exact `T`/Clifford pre-screen, full-marking versus coarse-curve boundary, current `1/5/60` possible/excluded/unknown classification, and equation-agent dispatch rule.
 - [`DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md`](DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md) — global `T`-first milestone, carrier certificate, and prescribed integral `V4` stretch target.
 - [`NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md`](NS0024_QQ_MARKING_OBSTRUCTION_2026-09-04.md) — Fricke-quotient theorem excluding a full rational NS0024 marking and hence arithmetic NS0024/MW17 over `QQ(t)`.
@@ -176,10 +200,10 @@ and the batch
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK b932f409dfffdb55 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6014cc6c7b64d76e -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 0f8194f335b32990 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 5b6c901b8b1fdd15 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY ec9b82089d2e9196 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 4fac03efa2d465c7 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 - [`R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md`](R17_NONCYCLIC_4A1_DIRECT_FIBRATION_2026-09-04.md) — direct noncyclic `4A1/MW13` equation, saturated arithmetic MW13 basis, and target-free reverse hop.
 - [`R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md`](R17_NORM12_RECORD_LINEAGE_SWEEP_2026-09-04.md) — all 43 equations, six exact `j`-classes, record-curve misses, and the exact five-fibre R17 lineage.
@@ -187,6 +211,7 @@ and the batch
 - [`R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md`](R17_PROSPECTIVE_ORDINARY_FAMILY_HOLDOUT_2026-09-04.md) — exact `Z^11` transports for the three highest-rank unresolved fibres and a frozen 1,536-row ordinary cohort with two complete `PGL2` families locked out.
 - [`R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md`](R17_074D9_CROSS_FIBRE_CARRIER_TRANSFER_2026-09-04.md) — complete rigid record-to-record census, canonical and cheapest-16 norm-eight transfer matrices, and bounded late-label holdout audit.
 - [`R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md`](R17_074D9_LOCAL_KUMMER_MEET_2026-09-04.md) — exact Kummer images and invariant local fingerprints for the record pair and four controls; negative CRT gate.
+- [`R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md`](R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md) — six-fibre comparative theorem for the known Kummer half-ideal span modulo generic `MW17`; residual lower bounds `3,5,6,10..11` across the observed jump strata.
 - [`R17_RESIDUAL_SELMER_FINGERPRINT_AND_SIEVE_2026-09-04.md`](R17_RESIDUAL_SELMER_FINGERPRINT_AND_SIEVE_2026-09-04.md) — exact known-residual local subspace fingerprints, `+12`/`+5` discriminants, CRT prototype cylinders, the complete-descent boundary, and the monotone bounded-search sieve.
 - [`R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md`](R17_PROSPECTIVE_CRT_RANK_JUMP_EXPERIMENT_2026-09-04.md) — target-blind `p^3` falsification, pre-outcome higher-power refinement, frozen six-cohort local panel, and the complete zero-event bounded-search analysis.
 - [`R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md`](R17_QUOTIENT_RANK_ESCAPE_DETECTOR_V2_2026-09-04.md) — Outcome-D control certificate, quotient-aware all-place analyzer, and unopened hash-order Stage-1/Stage-2 sample.
@@ -251,12 +276,15 @@ is `X_0(63)` and has no rational noncuspidal point.
 Do not reopen the determinant-500 or determinant-750 rootless rows; their
 literal stable curves map to `X_0(50)` and `X_0(75)` and have only rational
 cusps.
+Do not send determinant 1236 to equation compilation yet; first decide the
+degree-two rational lift from its exact genus-two Shimura quotient to the
+genus-six marked curve.
 
 ## Reproduction
 
 <!-- status-consumer: EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION f657620e07f8f3f0 -->
 <!-- status-consumer: EC-K3-R17-NORM12-SINGULAR-GENUS1-RATIONAL-NORMALIZATION-EXHAUSTION bf05d9b06ccc1502 -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 9e0df73560e0a607 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 b72dee9f991ffe24 -->
 <!-- status-consumer: OP-EC-NEXT e135b23ef9910845 -->
 <!-- status-consumer: EC-K3-ELKIES-2026-R17 9208e67f51fc8c97 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION 077c6409d76cbe63 -->

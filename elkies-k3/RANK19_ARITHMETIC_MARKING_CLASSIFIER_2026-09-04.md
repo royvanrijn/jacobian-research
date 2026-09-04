@@ -4,9 +4,11 @@ Date: 2026-09-04.
 
 Status: **ACTIVE, fail-closed infrastructure**.
 
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
+
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6014cc6c7b64d76e -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY ec9b82089d2e9196 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 5b6c901b8b1fdd15 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 4fac03efa2d465c7 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 
 ## Outcome
@@ -25,7 +27,9 @@ The positive row is the already-realized determinant-948 `NS0001` control.
 The excluded rows are determinants 500 and 750, determinant-720 Golay,
 determinant-950 `NS0024`, and determinant-1184 `NS0031`.
 Every other row remains `UNKNOWN`; no bounded search, coarse modular curve, or
-formal local branch is promoted.
+formal local branch is promoted. One of those rows, determinant 1236, now has
+the more precise Phase-2 certificate `UNRESOLVED_FOR_EXPLICIT_REASON`: its
+exact marked curve is known, but its rational non-CM locus is not.
 
 The generated equation-agent handoff contains only new different-NS rows with
 an exact `ARITHMETICALLY_POSSIBLE` certificate.  It is currently empty.  In
@@ -64,8 +68,8 @@ The machine-readable outputs are
 
 The small auditable decision registry is
 [`data/arithmetic/rank19-arithmetic-marking-decisions-v1.json`](data/arithmetic/rank19-arithmetic-marking-decisions-v1.json).
-New non-`UNKNOWN` decisions must name exact certificate assertions and any
-external theorem inputs.
+New registered decisions, including exact-curve unresolved records, must name
+exact certificate assertions and any external theorem inputs.
 
 ## The six controls
 
@@ -142,6 +146,44 @@ leave four rational cusps on each marked curve. Thus neither row has a K3
 period point. See
 [`DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md`](DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md).
 
+### Determinant 1236: exact curve, rational lift unresolved
+
+For
+
+```text
+T = [[-2,0,1],[0,4,0],[1,0,154]],       A_T=Z/1236Z,
+```
+
+the literal content-one Clifford order is the Eichler order with
+`(D,N)=(6,103)`. Its Atkin--Lehner action exhausts the eight-element group
+`O(A_T)`, and only the full Fricke class can be made stable after central
+inversion. Thus the exact marked curve is
+
+```text
+X_0^6(103)/<w_618>,       genus 6, cusps 0, e2=12, e3=2.
+```
+
+It has two rational discriminant-`-3` CM points, both rank-20
+specializations. It maps with degree two to the explicit genus-two curve
+
+```text
+y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9,
+```
+
+which has visible rational points and a rank-one `618f1` quotient. Those
+points have not been lifted through the degree-two marking cover. More
+precisely, the checker verifies fourteen rational points with elliptic images
+`+/-G`, `+/-3G`, `+/-4G`, and `+/-10G`; it separates the two fixed fibers into
+the rational discriminant-`-3` CM pair and a quadratic discriminant-`-24` CM
+pair. The remaining twelve displayed points lie in non-fixed fibers whose
+squareclasses are still unknown. Its Jacobian splits as the six rank-one
+factors `618a1` through `618f1`; the genus-two part is `618e1 x 618f1` and
+the cover Prym is `618a1 x ... x 618d1`. Classical Chabauty therefore misses
+its strict rank bound, while the quadratic-Chabauty dimension screen passes
+but awaits an explicit cover model. The row therefore stays out of the equation
+handoff. See
+[`DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md`](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md).
+
 ## Why 948 looks hospitable
 
 The current evidence points to a structural explanation, but not yet a
@@ -186,6 +228,11 @@ then seek a rational noncuspidal non-CM point. Only an exact positive marking
 may trigger `NS=T^perp`, rootlessness, or equation work. The full queue is in
 [`../artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json`](../artifacts/generated-results/elkies-k3-arithmetic-first-marked-t-foundry-v1.json).
 
+Inside the already-rootless subqueue, determinant 1236 is now the strongest
+positive-directed target because its full marking curve and low-genus
+quotient tower are exact. Its next task is the degree-two covering descent,
+not K3 equation compilation.
+
 ## Replay
 
 ```bash
@@ -193,6 +240,7 @@ sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage
 sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 sage -python elkies-k3/scripts/certify_golay_det720_qq_marking_obstruction.sage --check
 sage -python elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage --check
+sage -python elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
 python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
 ```

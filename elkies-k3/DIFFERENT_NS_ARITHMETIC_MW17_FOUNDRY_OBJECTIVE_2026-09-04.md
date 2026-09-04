@@ -4,18 +4,20 @@ Date: 2026-09-04.
 
 Status: **OPEN**.
 
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
+
 <!-- status-consumer: EC-K3-NS0024-QQ-MARKING-OBSTRUCTION b7f0cf002c0411fe -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-SOURCE-PRECURSOR 2e115b35c30a8cea -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-FORMAL-BRANCH b31e99bce4edac0a -->
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK b932f409dfffdb55 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6014cc6c7b64d76e -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 0f8194f335b32990 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 5b6c901b8b1fdd15 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY ec9b82089d2e9196 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 4fac03efa2d465c7 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
-<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 9e0df73560e0a607 -->
+<!-- status-consumer: OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 b72dee9f991ffe24 -->
 
 ## Milestone
 
@@ -105,6 +107,47 @@ two-row arithmetic-classification gate without authorizing equation work.
 See
 [`DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md`](DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md).
 
+## Determinant 1236 is the positive-directed marked-curve target
+
+The content-one cyclic row `K3-6d288cfad55e0d15` now has an exact Phase-1
+certificate. Its literal Clifford order has Eichler pair `(D,N)=(6,103)`,
+and its Atkin--Lehner action exhausts `O(A_T)` for `A_T=Z/1236Z`. The exact
+projective stable curve is
+
+```text
+C_1236 = X_0^6(103)/<w_618>,       genus 6.
+```
+
+It maps with degree two to the explicit genus-two curve
+
+```text
+y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9,
+```
+
+and with degree four to the rank-one elliptic curve `618f1`. The exact marked
+curve itself has two rational discriminant-`-3` CM points, but both are
+Picard-rank-20 specializations. No non-CM rational lift from the genus-two
+quotient has been certified.
+
+The checker now verifies fourteen rational points on the genus-two quotient,
+mapping to `+/-G`, `+/-3G`, `+/-4G`, and `+/-10G` on `618f1`. It also resolves
+both rational fixed fibers: one comes from the rational discriminant-`-3` CM
+pair, while the other comes from a quadratic discriminant-`-24` CM pair and
+has no rational point upstairs. Thus the remaining covering descent starts
+with twelve explicit non-fixed rational quotient points.
+
+Exact Jacquet--Langlands accounting gives
+`Jac(C_1236) ~ 618a1 x ... x 618f1`, all six factors of rank one. The
+genus-two quotient contributes `618e1 x 618f1`, while the missing marking
+cover has Prym `618a1 x ... x 618d1`. Thus classical Chabauty is exactly at
+rank equal to genus; the split-Jacobian quadratic-Chabauty dimension screen
+passes, but it still requires the explicit degree-two cover.
+
+The row therefore has Phase-2 status `UNRESOLVED_FOR_EXPLICIT_REASON` and
+remains `UNKNOWN` in the three-way equation-dispatch classifier. Its next
+task is the degree-two covering descent, not a K3 equation. See
+[`DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md`](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md).
+
 ## Global arithmetic-first order
 
 The foundry order is now
@@ -135,6 +178,13 @@ and `750` are also closed by their exact `X_H(50)` and `X_H(75)` curves. The
 next global exact-coarse calculations are determinant `256`
 and `512`, with coarse curves `X_0(2)` and `X_0(4)`; their literal stable
 kernels are still unknown.
+Within the already-rootless queue, determinant `1236` is now the strongest
+positive-directed row because its literal stable kernel, genus-six marked
+curve, genus-two quotient model, fourteen rational quotient points, and the
+two fixed CM fibers are exact. Its six-factor Jacobian and four-factor Prym
+are also exact. The remaining unknown is specifically the
+rational lift through one degree-two cover at the twelve non-fixed points
+and beyond.
 The priority tuple is
 
 ```text
@@ -222,6 +272,8 @@ boundaries are recorded in
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage --check
 /home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
+  elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage --check
+/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python \
   elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check
 python3 elkies-k3/scripts/build_rank7_determinant_aware_ranking.py --check
 python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
@@ -236,6 +288,9 @@ python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check
 - [`DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md`](DET500_DET750_QQ_MARKING_OBSTRUCTIONS_2026-09-04.md)
   — literal mod-five stable kernels, exact `X_H(50)`/`X_H(75)` curves, and two
   rootless-MW17 arithmetic exclusions.
+- [`DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md`](DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md)
+  — exact genus-six stable marked curve, low-genus quotient tower, two rational
+  CM controls, and the degree-two rational-lift obstruction.
 - [`RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md`](RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md)
   — marking decisions and empty equation-agent handoff.
 - [`DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md`](DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md)

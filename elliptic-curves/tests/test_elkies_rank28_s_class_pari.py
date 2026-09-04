@@ -155,6 +155,18 @@ class ElkiesRank28SClassPariTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unknown batch-GCD engine"):
             minkowski.split_shared_cofactors(values, "unknown")
 
+    def test_bounded_batch_gcd_selection_is_deterministic_and_cheap_first(self) -> None:
+        records = [
+            {"generator_index": 8, "cofactor": "15", "cofactor_bit_length": 4},
+            {"generator_index": 3, "cofactor": "7", "cofactor_bit_length": 3},
+            {"generator_index": 2, "cofactor": "5", "cofactor_bit_length": 3},
+        ]
+        selected = minkowski.select_batch_gcd_records(records, 2)
+        self.assertEqual([index for index, _record in selected], [2, 1])
+        self.assertEqual(
+            minkowski.select_batch_gcd_records(records, 0), list(enumerate(records))
+        )
+
     def test_generic_bnf_free_consumers_prove_declared_factor_hints(self) -> None:
         for name in (
             "augment_bnf_free_canonical_principal_relations.py",

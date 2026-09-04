@@ -1,5 +1,7 @@
 # Elkies K3 script map
 
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
+
 <!-- status-consumer: EC-K3-R17-NORM12-HIGHEST-RANK-TRANSPORTS c4c8a81fc735fea2 -->
 <!-- status-consumer: EC-K3-R17-NORM12-PROSPECTIVE-FAMILY-HOLDOUT 8fb7417663ea1d98 -->
 
@@ -1472,10 +1474,10 @@ The current proof boundary and replay commands are in
 <!-- status-consumer: EC-K3-NS0031-MARKED-RATIONAL-PARAMETER-SCAN ca678e520745dd3c -->
 <!-- status-consumer: EC-K3-NS0031-QQ-MARKING-OBSTRUCTION 8e2dc35cdf9b6bc3 -->
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK b932f409dfffdb55 -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6014cc6c7b64d76e -->
+<!-- status-consumer: EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK 0f8194f335b32990 -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 5b6c901b8b1fdd15 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY ec9b82089d2e9196 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 4fac03efa2d465c7 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
 <!-- status-consumer: EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS 01298fec30fa94a3 -->
 - `certify_ns0024_qq_marking_obstruction.py` pins the stronger
@@ -1541,6 +1543,22 @@ The current proof boundary and replay commands are in
   `S5 x C2`. The stable marked curves are the explicit congruence curves
   `X_H(50)` and `X_H(75)`, of genera four and nine. Each has exactly four
   rational points, all cusps, so both rows are arithmetically excluded.
+- `certify_det1236_marked_shimura_curve.sage` closes Phase 1 for the
+  positive-directed content-one cyclic row. It reconstructs the literal
+  Eichler order `(D,N)=(6,103)`, computes the complete eight-element
+  Atkin--Lehner action on `A_T=Z/1236Z`, and identifies the exact projective
+  stable curve as the genus-six `X_0^6(103)/<w_618>`. It also verifies the
+  exact genus-two quotient model, fourteen rational points mapping to
+  `+/-G`, `+/-3G`, `+/-4G`, and `+/-10G` on its rank-one `618f1` quotient,
+  and two rational discriminant-`-3` CM points on the marked curve. It
+  separates the second fixed fiber as a quadratic discriminant-`-24` CM
+  pair, leaving twelve explicit non-fixed fibers. Exact level-618 modular
+  symbols further give `Jac(C_1236) ~ 618a1 x ... x 618f1`, with
+  `Jac(B) ~ 618e1 x 618f1` and four-factor Prym `618a1 x ... x 618d1`.
+  Every factor has rank one: classical Chabauty is at rank equal to genus,
+  while the split-Jacobian quadratic-Chabauty dimension screen passes. Its output is
+  `UNRESOLVED_FOR_EXPLICIT_REASON`: the degree-two rational lift from the
+  genus-two quotient, not a K3 equation, is the next gate.
 - `build_arithmetic_first_marked_t_foundry.py` reverses the global foundry
   order. It ranks all 827 `T` rows without consulting rootless-frame data,
   retains coarse genus only as a diagnostic, propagates exact marking
@@ -3759,6 +3777,26 @@ primes; these seed the quotient-first S-class collector without a full BNF.
 ```bash
 sage -python certify_r17_kummer_classgroup_pressure.sage --check
 ```
+
+`certify_r17_kummer_classgroup_pressure_comparison.sage` replays that complete
+five-fibre certificate and extends the identical audit to native alternate-Q80
+curve 12.  It transports the public mod-two signatures through the certified
+unimodular basis `[G1,...,G17 | P2,P11,P4,P3,P6,P8,P17,P10,P28,P24,P19,P15]`,
+then recomputes every Kummer representative, bad-prime valuation row, and
+integral half-ideal.  All six residual blocks add zero valuation rank modulo
+generic `MW17`; the known half-ideal class-image quotient lower bounds are
+`6,11,3,5,10,11` for curves `351,356,376,377,385,12`.  The strict finite-panel
+ordering is explanatory known-point data, not an exact class-group dimension
+or prospective rank predictor.
+
+```bash
+sage -python \
+  certify_r17_kummer_classgroup_pressure_comparison.sage --check
+```
+
+See
+[`../R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md`](../R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md).
+<!-- status-consumer: EC-K3-R17-KUMMER-CLASSGROUP-PRESSURE-COMPARISON 74b1dae24470b531 -->
 
 `build_r17_carrier_receptivity_profiles.py` assembles the middle layer on the
 marked hyperbolic plane rather than the abstract MW frame.  It emits one

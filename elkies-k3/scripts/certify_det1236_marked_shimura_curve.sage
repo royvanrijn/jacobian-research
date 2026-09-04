@@ -35,6 +35,7 @@ from sage.all import (
     CliffordAlgebra,
     EllipticCurve,
     HyperellipticCurve,
+    ModularSymbols,
     PolynomialRing,
     QQ,
     ZZ,
@@ -536,12 +537,20 @@ def build_payload(catalogue, t_arithmetic):
     genus_two_curve = HyperellipticCurve(genus_two_polynomial)
     assert genus_two_curve.genus() == 2
     rational_points_on_genus_two_target = [
-        [0, 3],
-        [0, -3],
-        [1, 48],
-        [1, -48],
         [-1, 48],
         [-1, -48],
+        ["-1/3", "8/3"],
+        ["-1/3", "-8/3"],
+        ["-1/5", "312/125"],
+        ["-1/5", "-312/125"],
+        [0, 3],
+        [0, -3],
+        ["1/5", "312/125"],
+        ["1/5", "-312/125"],
+        ["1/3", "8/3"],
+        ["1/3", "-8/3"],
+        [1, 48],
+        [1, -48],
     ]
     for x_coordinate, y_coordinate in rational_points_on_genus_two_target:
         assert QQ(y_coordinate) ** 2 == genus_two_polynomial(QQ(x_coordinate))
@@ -566,6 +575,90 @@ def build_payload(catalogue, t_arithmetic):
 
     assert elliptic_image(0, 3) == 3 * generator
     assert elliptic_image(1, 48) == 4 * generator
+    assert elliptic_image(QQ(1) / 3, QQ(-8) / 3) == generator
+    assert elliptic_image(QQ(1) / 3, QQ(8) / 3) == -generator
+    assert elliptic_image(QQ(1) / 5, QQ(-312) / 125) == 10 * generator
+    assert elliptic_image(QQ(1) / 5, QQ(312) / 125) == -10 * generator
+
+    # Jacquet--Langlands identifies the differentials on X_0^6(103) with
+    # the weight-two newspace of classical level 2*3*103.  At the ramified
+    # primes 2 and 3 the geometric Atkin--Lehner signs are the negatives of
+    # the classical signs; at the Eichler-level prime 103 they agree.  Thus
+    # the geometric w_618-invariants are exactly the classical sign-product
+    # +1 orbits.  We compute all orbits so the dimension-six assertion is an
+    # exact accounting rather than an inference from the known quotient.
+    modular_symbols_newspace = (
+        ModularSymbols(618, 2, sign=1).cuspidal_subspace().new_subspace()
+    )
+    assert modular_symbols_newspace.dimension() == 17
+    comparison_primes = [5, 7, 11]
+    rational_newform_labels = [f"618{letter}1" for letter in "abcdefg"]
+    signature_to_label = {
+        tuple(EllipticCurve(label).ap(prime) for prime in comparison_primes): label
+        for label in rational_newform_labels
+    }
+    assert len(signature_to_label) == len(rational_newform_labels)
+
+    newform_orbits = []
+    for factor_space in modular_symbols_newspace.decomposition():
+        classical_signs = []
+        for prime in [2, 3, 103]:
+            operator = factor_space.atkin_lehner_operator(prime).matrix()
+            sign = ZZ(operator[0, 0])
+            assert sign in [-1, 1]
+            assert operator == sign * identity_matrix(
+                operator.base_ring(), operator.nrows()
+            )
+            classical_signs.append(int(sign))
+
+        cremona_label = None
+        if factor_space.dimension() == 1:
+            eigenform = factor_space.q_eigenform(12)
+            ap_signature = tuple(
+                ZZ(eigenform[prime]) for prime in comparison_primes
+            )
+            cremona_label = signature_to_label[ap_signature]
+
+        newform_orbits.append(
+            {
+                "dimension": int(factor_space.dimension()),
+                "classical_atkin_lehner_signs_W2_W3_W103": classical_signs,
+                "cremona_label": cremona_label,
+            }
+        )
+
+    assert sum(row["dimension"] for row in newform_orbits) == 17
+    stable_orbits = [
+        row
+        for row in newform_orbits
+        if prod(row["classical_atkin_lehner_signs_W2_W3_W103"]) == 1
+    ]
+    assert sum(row["dimension"] for row in stable_orbits) == 6
+    assert all(row["dimension"] == 1 for row in stable_orbits)
+    stable_factor_labels = sorted(row["cremona_label"] for row in stable_orbits)
+    assert stable_factor_labels == [f"618{letter}1" for letter in "abcdef"]
+
+    # On the stable curve the deck involution of C_1236 -> B is geometric
+    # w_2=-W_2.  Its invariant part is therefore classical W_2=-1, and its
+    # anti-invariant Prym is classical W_2=+1.
+    genus_two_factor_labels = sorted(
+        row["cremona_label"]
+        for row in stable_orbits
+        if row["classical_atkin_lehner_signs_W2_W3_W103"][0] == -1
+    )
+    prym_factor_labels = sorted(
+        row["cremona_label"]
+        for row in stable_orbits
+        if row["classical_atkin_lehner_signs_W2_W3_W103"][0] == 1
+    )
+    assert genus_two_factor_labels == ["618e1", "618f1"]
+    assert prym_factor_labels == ["618a1", "618b1", "618c1", "618d1"]
+    stable_factor_ranks = {
+        label: int(EllipticCurve(label).rank()) for label in stable_factor_labels
+    }
+    assert set(stable_factor_ranks.values()) == {1}
+    stable_jacobian_rank = sum(stable_factor_ranks.values())
+    assert stable_jacobian_rank == 6
 
     # Gonzalez--Rotger's residue-field formula at discriminant -3:
     # D(R)=2, N*(R)=103, m_R=3, Q=206=D(R)N*(R), and h(-3)=1.
@@ -591,6 +684,39 @@ def build_payload(catalogue, t_arithmetic):
     cm_auxiliary_quaternion = QuaternionAlgebra(QQ, -3, 206)
     assert cm_auxiliary_quaternion.discriminant() == QUATERNION_DISCRIMINANT
     assert cm_auxiliary_quaternion.ramified_primes() == [2, 3]
+
+    # The other w_3-fixed point downstairs comes from the four discriminant
+    # -24 points fixed by w_6 upstairs.  Here D(R)=1, N*(R)=103, h(R)=2,
+    # m_R=gcd(618,24)=6, and m/m_R=103.  Corollary 5.14 therefore gives a
+    # quadratic, not rational, residue field on the w_618 quotient: H_R has
+    # degree four over QQ and the specified involution has a degree-two fixed
+    # field.  The two geometric points form one quadratic closed point.
+    cm_minus_twenty_four = {
+        "order_discriminant": -24,
+        "class_number": order_class_number(-24),
+        "D_R": 1,
+        "N_star_R": 103,
+        "m": 618,
+        "m_R": 6,
+        "Q": 103,
+        "top_curve_w6_fixed_points": 4,
+        "marked_curve_geometric_points": 2,
+        "marked_curve_rational_points": 0,
+        "ring_class_field_degree_over_QQ": 4,
+        "marked_curve_residue_degree_over_QQ": 2,
+        "k3_interpretation": (
+            "CM/rho-20 quadratic closed point; it supplies no rational "
+            "rank-19 marking."
+        ),
+    }
+    assert cm_minus_twenty_four["class_number"] == 2
+    assert cm_minus_twenty_four["Q"] == (
+        cm_minus_twenty_four["D_R"] * cm_minus_twenty_four["N_star_R"]
+    )
+    assert cm_minus_twenty_four["m"] // cm_minus_twenty_four["m_R"] == 103
+    cm_minus_twenty_four_auxiliary = QuaternionAlgebra(QQ, -6, 206)
+    assert cm_minus_twenty_four_auxiliary.discriminant() == QUATERNION_DISCRIMINANT
+    assert cm_minus_twenty_four_auxiliary.ramified_primes() == [2, 3]
 
     return {
         "schema": "elkies-k3.det1236-marked-shimura-curve.v1",
@@ -680,6 +806,7 @@ def build_payload(catalogue, t_arithmetic):
             "signature": stable_signature,
             "cuspidal_rational_points": 0,
             "certified_rational_cm_points": cm_minus_three,
+            "certified_nonrational_cm_points": cm_minus_twenty_four,
             "rational_non_cm_points": "UNRESOLVED",
             "points_realizing_only_a_higher_picard_specialization": 2,
             "boundary": (
@@ -706,14 +833,76 @@ def build_payload(catalogue, t_arithmetic):
                 "degree": 2,
                 "deck_involution": "w_2 modulo <w_618>",
                 "geometric_branch_points": 6,
+                "branch_order_discriminant": -1236,
+                "branch_source": (
+                    "The twelve w_309-fixed points on X_0^6(103) are exactly "
+                    "the order-discriminant -1236 CM points; quotienting by "
+                    "w_618 pairs them into the six branch points on B."
+                ),
             },
             "model": "y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9",
             "verified_rational_points": rational_points_on_genus_two_target,
+            "verified_point_images_on_618f1": {
+                "(0,+/-3)": "+/-3*G",
+                "(+/-1,+/-48)": "+/-4*G",
+                "(+/-1/3,-/+8/3)": "+/-1*G",
+                "(+/-1/5,-/+312/125)": "+/-10*G",
+                "generator_G": "(10,-29)",
+            },
+            "w3_fixed_fiber_separation": {
+                "fixed_rational_points": ["(0,3)", "(0,-3)"],
+                "identification_up_to_hyperelliptic_sign": [
+                    (
+                        "one point is the image of the two rational "
+                        "discriminant -3 CM points on C_1236"
+                    ),
+                    (
+                        "the other is the image of the quadratic conjugate "
+                        "discriminant -24 CM points on C_1236"
+                    ),
+                ],
+                "boundary": (
+                    "The published model fixes w_3 as x -> -x but does not "
+                    "choose which y-sign labels the two CM image classes."
+                ),
+            },
             "model_source": {
                 "paper": "Padurariu--Saia, Shimura curve Atkin--Lehner quotients of genus at most two",
                 "arxiv": "https://arxiv.org/abs/2509.25368",
                 "code": "https://github.com/fsaia/GenusAtMost2",
                 "code_commit": LOW_GENUS_SOURCE_COMMIT,
+            },
+        },
+        "jacquet_langlands_cover_precheck": {
+            "status": "PASS_EXACT_NEWFORM_AND_PRYM_ACCOUNTING",
+            "classical_level": 618,
+            "classical_newspace_dimension": 17,
+            "geometric_sign_conversion": {
+                "w_2": "-W_2",
+                "w_3": "-W_3",
+                "w_103": "W_103",
+                "w_618": "W_2*W_3*W_103",
+            },
+            "all_newform_orbits": newform_orbits,
+            "stable_curve_jacobian_isogenous_factors": stable_factor_labels,
+            "stable_curve_jacobian_rank": stable_jacobian_rank,
+            "genus_two_quotient_jacobian_isogenous_factors": genus_two_factor_labels,
+            "cover_prym_isogenous_factors": prym_factor_labels,
+            "factor_ranks": stable_factor_ranks,
+            "classical_chabauty": {
+                "status": "DOES_NOT_PASS_STRICT_RANK_BOUND",
+                "jacobian_rank": stable_jacobian_rank,
+                "curve_genus": 6,
+            },
+            "quadratic_chabauty_dimension_screen": {
+                "status": "PASSES_NECESSARY_DIMENSION_INEQUALITY",
+                "neron_severi_rank_lower_bound": 6,
+                "inequality": "rank J(QQ)=6 < genus 6 + rho(J)-1, with rho(J)>=6",
+                "boundary": (
+                    "This screen does not determine C_1236(QQ). It becomes an "
+                    "actionable quadratic-Chabauty route only after an explicit "
+                    "model of the degree-two marking cover is constructed."
+                ),
             },
         },
         "full_atkin_lehner_quotient": {
@@ -747,9 +936,10 @@ def build_payload(catalogue, t_arithmetic):
                 "descent class for that cover is presently certified."
             ),
             "why_lower_quotient_points_do_not_decide_it": (
-                "The rational points (0,+/-3) and (+/-1,+/-48), and the positive-rank "
-                "elliptic quotient 618f1, live below a nontrivial degree-two marking "
-                "cover. Their existence supplies no rational point upstairs."
+                "The fourteen verified rational points on the genus-two quotient, and "
+                "the positive-rank elliptic quotient 618f1, live below a nontrivial "
+                "degree-two marking cover. Their existence supplies no rational point "
+                "upstairs outside the two separately certified discriminant -3 CM points."
             ),
             "positive_next_gate": (
                 "One exact non-CM rational lift on C_1236 would pass the period-curve "
@@ -766,6 +956,7 @@ def build_payload(catalogue, t_arithmetic):
             "Ogg's Atkin--Lehner fixed-point and Riemann--Hurwitz formulas",
             "Gonzalez--Rotger's CM residue-field formula for Atkin--Lehner quotients",
             "Padurariu--Saia's exact genus-two quotient model and elliptic quotient identification",
+            "Jacquet--Langlands and the ramified-place Atkin--Lehner sign normalization",
             "the rank-three ternary-spin/fully-marked-K3 period correspondence",
         ],
         "reproduce": (

@@ -7196,6 +7196,16 @@
           "status": "PASS_EXACT_TWO_RATIONAL_CM_POINTS_ONLY_AS_HIGHER_PICARD_CONTROLS"
         },
         {
+          "conclusion": "The second w_3-fixed rational point on the genus-two quotient has a quadratic conjugate discriminant -24 CM fiber on the exact marked curve, so it supplies no rational marked point.",
+          "method": "Gonzalez--Rotger CM residue-field formula at order discriminant -24",
+          "status": "PASS_EXACT_DISCRIMINANT_MINUS_24_QUADRATIC_CM_FIBER"
+        },
+        {
+          "conclusion": "Jac(C_1236) is isogenous to 618a1 through 618f1, Jac(B) to 618e1 x 618f1, and Prym(C_1236/B) to 618a1 x 618b1 x 618c1 x 618d1. All six factors have rank one, so classical Chabauty fails at rank=genus while the Neron--Severi-enhanced quadratic-Chabauty dimension screen passes.",
+          "method": "Jacquet--Langlands plus exact level-618 modular-symbol and Atkin--Lehner eigenspace decomposition",
+          "status": "PASS_EXACT_NEWFORM_AND_PRYM_ACCOUNTING"
+        },
+        {
           "conclusion": "The rational fibers above the displayed genus-two rational points have not been determined; no non-CM rational marked point is certified.",
           "method": "degree-two map to the exact genus-two Atkin--Lehner quotient",
           "status": "UNRESOLVED_EXACT_DEGREE_TWO_MARKING_LIFT"
@@ -7203,9 +7213,9 @@
       ],
       "certificate_replay": [
         {
-          "assertions_replayed": 7,
+          "assertions_replayed": 11,
           "path": "artifacts/generated-results/elkies-k3-det1236-marked-shimura-curve-v1.json",
-          "sha256": "9b0f7c1532f77cc72fa1e8231648a0d86207654c3dda0ed703c143f270ef5ea3"
+          "sha256": "a1c9976a6607a5ff771bd453b13b00d351ab8252a194d7acb930a476f89c3f2b"
         }
       ],
       "classification": "UNKNOWN",
@@ -7223,7 +7233,9 @@
           "target_model": "y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9",
           "verified_rational_points": [
             "(0,+/-3)",
-            "(+/-1,+/-48)"
+            "(+/-1,+/-48)",
+            "(+/-1/3,+/-8/3)",
+            "(+/-1/5,+/-312/125)"
           ]
         },
         {
@@ -7337,8 +7349,9 @@
           "genus": 17,
           "label": "X_0^6(103)",
           "mu": 208,
-          "status": "CONDITIONAL_X0DN_IF_CLIFFORD_ORDER_IS_EICHLER"
+          "status": "PASS_EXACT_SHIMURA_CURVE"
         },
+        "degree_from_norm_one_curve": 2,
         "explicit_model": null,
         "genus": 6,
         "label": "X_0^6(103)/<w_618>",
@@ -7351,7 +7364,7 @@
           ],
           "status": "CLOSED_EXACT_PROJECTIVE_STABLE_KERNEL"
         },
-        "rational_points": "two certified discriminant -3 CM points; the non-CM rational locus is unresolved",
+        "rational_points": "two certified discriminant -3 CM points; one discriminant -24 quadratic closed point; the non-CM rational locus is unresolved",
         "signature": {
           "cusps": 0,
           "elliptic_points_order_2": 12,
@@ -7424,6 +7437,7 @@
         "Ogg's Atkin--Lehner fixed-point and Riemann--Hurwitz formulas",
         "Gonzalez--Rotger's CM residue-field formula for Atkin--Lehner quotients",
         "Padurariu--Saia's exact genus-two quotient model and elliptic quotient identification",
+        "Jacquet--Langlands and the ramified-place Atkin--Lehner sign normalization",
         "the rank-three ternary-spin/fully-marked-K3 period correspondence"
       ],
       "transcendental_lattice": {
@@ -16059,7 +16073,7 @@
   "inputs": {
     "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json": "e13c9fa26b733c9e894d4a34900de469ad7dc2df63528f8c4dd816c47c9d18c8",
     "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json": "72bc0fd440b9737298b5cd44881a4aca596c54f79bbbcf05fd5589de1e9ca985",
-    "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": "55d672ce0b40abba9168ced13375e9af40e554f246941bae9b90c82f2cb9e2bd",
+    "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json": "9d64a3b75545882d0697f0dbde5e9c2ee3946bbaea5aecdec9e659766d351a18",
     "schemas/elkies_k3_rank19_arithmetic_marking_classifier.schema.json": "cc600812fd668ae9234a1144ce27aaf7e04dea31a6f20143701d0ad1ab171213"
   },
   "policy": {

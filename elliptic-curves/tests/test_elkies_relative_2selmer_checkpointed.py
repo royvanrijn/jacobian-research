@@ -29,6 +29,20 @@ class CheckpointedRelativeSelmerTests(unittest.TestCase):
         self.assertNotIn("QUOTIENT_COVER_WORKER", source)
         self.assertIn("if residual_upper == 0:\n            break", source)
 
+    def test_mw29_backend_accepts_only_a_complete_unconditional_hecke_envelope(self) -> None:
+        source = (CAS / "run_mw29_relative_2selmer_from_bnf.sage").read_text()
+        provider = (
+            CAS / "run_elkies_2026_curve356_hecke_s_squareclasses.jl"
+        ).read_text()
+        self.assertIn("--hecke-global-log", source)
+        self.assertIn("parse_hecke_global_log", source)
+        self.assertIn("stage=class_group|status=PASS|grh=false", source)
+        self.assertIn("ell2allowed_at_place_nf", source)
+        self.assertIn("class_group(O; GRH=false)", provider)
+        self.assertIn("unit_group(O; GRH=false)", provider)
+        self.assertIn("pselmer_group(2, S; algo=:raw)", provider)
+        self.assertIn("norm_is_square", provider)
+
     def test_workers_preserve_blind_order(self) -> None:
         self.assertIn("bnfinit", checkpointed.BNF_WORKER)
         self.assertIn("bnfcertify", checkpointed.BNF_WORKER)

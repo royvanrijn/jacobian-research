@@ -85,7 +85,7 @@ def full_curve_summary(classifier_row: dict | None) -> dict:
         }
     curve = classifier_row["full_discriminant_marking_curve"]
     tests = classifier_row["arithmetic_tests"]
-    has_point = any(
+    has_point_witness = any(
         test["status"]
         in {
             "PASS_EXACT_NONCM_QQ_POINT",
@@ -93,19 +93,33 @@ def full_curve_summary(classifier_row: dict | None) -> dict:
         }
         for test in tests
     )
+    classification = classifier_row["classification"]
+    has_point = (
+        True
+        if has_point_witness
+        else False
+        if classification == "ARITHMETICALLY_EXCLUDED"
+        else None
+        if classifier_row.get("phase_2_certificate_status")
+        == "UNRESOLVED_FOR_EXPLICIT_REASON"
+        else False
+    )
     kernel_indices = [
         quotient["degree"]
         for quotient in classifier_row["easy_quotient_maps"]
         if isinstance(quotient.get("degree"), int)
         and "full" in quotient.get("source", "").lower()
     ]
+    direct_kernel_index = curve.get("degree_from_norm_one_curve")
     return {
         "status": curve["status"],
-        "label": curve.get("explicit_model"),
+        "label": curve.get("label") or curve.get("explicit_model"),
         "genus": curve.get("genus"),
         "rational_non_CM_point": has_point,
         "stable_kernel_index_over_coarse": (
-            min(kernel_indices) if kernel_indices else None
+            int(direct_kernel_index)
+            if isinstance(direct_kernel_index, int)
+            else (min(kernel_indices) if kernel_indices else None)
         ),
     }
 
@@ -210,10 +224,24 @@ def build(
             if global_decision is not None
             else full_curve_summary(classifier_row)
         )
-        coarse = row["arithmetic_source"]["base_curve"]
+        coarse = (
+            classifier_row["full_discriminant_marking_curve"].get(
+                "coarse_norm_one_curve",
+                row["arithmetic_source"]["base_curve"],
+            )
+            if classifier_row is not None
+            else row["arithmetic_source"]["base_curve"]
+        )
         normalization = row["similarity_normalization"]
         order = row["clifford"]["integral_even_clifford_order"]
         priority = curve_priority(row, classifier_row)
+        phase_2_status = (
+            classifier_row.get("phase_2_certificate_status")
+            if classifier_row is not None
+            else global_decision.get("phase_2_certificate_status")
+            if global_decision is not None
+            else None
+        )
         row_out = {
             "surface_id": surface_id,
             "determinant": int(row["determinant"]),
@@ -236,13 +264,14 @@ def build(
                     full["status"]
                     not in {
                         "PASS_EXACT_STABLE_DISCRIMINANT_KERNEL_MODULAR_CURVE",
+                        "PASS_EXACT_PROJECTIVE_STABLE_DISCRIMINANT_KERNEL_CURVE",
                         "PARTIAL_ABSTRACT_STABLE_ORTHOGONAL_CURVE_WITH_EXPLICIT_QQ_POINT",
                     }
                 ),
             },
             "coarse_curve_diagnostic": {
                 "status": coarse["status"],
-                "label": coarse_label(row),
+                "label": coarse.get("label") or coarse.get("group"),
                 "genus": coarse.get("genus"),
                 "warning": (
                     "Coarse genus is a prioritization diagnostic only until the "
@@ -257,14 +286,24 @@ def build(
                 if classification
                 in {"ARITHMETICALLY_EXCLUDED", "ARITHMETICALLY_POSSIBLE"}
                 else (
-                    "Compute the literal-lattice stable discriminant kernel, identify "
+                    classifier_row.get("next_arithmetic_gate")
+                    if phase_2_status is not None
+                    and classifier_row is not None
+                    and classifier_row.get("next_arithmetic_gate")
+                    else "Compute the literal-lattice stable discriminant kernel, identify "
                     "a genus-0/1 (occasionally genus-2) quotient, and determine its "
                     "rational noncuspidal non-CM lifts."
                 )
             ),
             "rootless_frame_data_used_in_priority": False,
         }
-        if classification in {"ARITHMETICALLY_EXCLUDED", "ARITHMETICALLY_POSSIBLE"}:
+        if phase_2_status is not None:
+            row_out["phase_2_certificate_status"] = phase_2_status
+        if (
+            classification in {"ARITHMETICALLY_EXCLUDED", "ARITHMETICALLY_POSSIBLE"}
+            or classifier_row is not None
+            and classifier_row.get("certificate_replay")
+        ):
             row_out.update(
                 {
                     "decision": (

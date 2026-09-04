@@ -37564,6 +37564,55 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
+      "kind": "reproduction",
+      "state": "partial",
+      "title": "Exact determinant-1236 marked Shimura curve and rational-lift gate",
+      "scope": "For rootless-MW17 row K3-6d288cfad55e0d15 (legacy NS0035), the primitive transcendental lattice has Gram [[-2,0,1],[0,4,0],[1,0,154]], determinant -1236, and discriminant group Z/1236. Its literal even Clifford order has reduced trace-pairing determinant -618^2 and is an Eichler order of quaternion discriminant 6 and level 103, not merely an order similar to it. Exact normalizer representatives induce all eight elements of O(A_T), while the projectively stable subgroup is {1,w_618}; hence the fully marked period curve is C_1236=X_0^6(103)/<w_618>, not the coarse genus-17 curve X_0^6(103). Riemann--Hurwitz gives C_1236 genus 6, no cusps, twelve order-2 and two order-3 orbifold points. It has a degree-two map to the exact genus-two quotient y^2=1944*x^6+441*x^4-90*x^2+9, which in turn maps to the rank-one elliptic curve 618f1. The marked curve has two rational order-discriminant -3 CM points, but those are Picard-rank-20 controls and do not realize the requested saturated rank-19 marking. No non-CM rational point is certified. The exact Phase-2 certificate is therefore UNRESOLVED_FOR_EXPLICIT_REASON: construct the degree-two cover C_1236 to the displayed genus-two quotient and decide its rational lifts. No NS reconstruction or K3 equation work is authorized before a non-CM rational lift is proved.",
+      "canonical_source": "elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
+      "dependencies": [
+        "external: Ogg's Atkin--Lehner fixed-point and Riemann--Hurwitz formulas",
+        "external: Gonzalez--Rotger CM residue-field formula for Atkin--Lehner quotients",
+        "external: Padurariu--Saia genus-at-most-two Shimura quotient models",
+        "external: Jacquet--Langlands and ramified-place Atkin--Lehner sign normalization",
+        "external: ternary-spin and fully marked rank-three K3 period correspondence"
+      ],
+      "checker": "elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:2e6201159beeb6fdc242166519da5167439b5e3d883d74aa1dad7569c56be3f7",
+      "software_lock": [
+        "elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage",
+        "artifacts/generated-results/elkies-k3-det1236-marked-shimura-curve-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-auxiliary-catalogue-v1.json",
+        "artifacts/generated-results/elkies-k3-rank7-t-arithmetic-v1.json"
+      ],
+      "supersedes_notes": [
+        "the determinant-1236 rootless row has an unidentified full marked curve",
+        "positive rank on a low-genus Atkin--Lehner quotient certifies a rational point on the exact marked curve"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
+        "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
+        "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
+        "REPRODUCE.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/DET1236_MARKED_SHIMURA_CURVE_2026-09-04.md",
+        "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
+        "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "EC-K3-RES-QBC-E6A1-RHO19",
       "kind": "theorem",
       "state": "proved",
@@ -41060,10 +41109,11 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Fail-closed arithmetic-marking classifier for rank-19 Neron--Severi lattices",
-      "scope": "The exact rootless-MW17 subset of the rank-seven catalogue contains 66 candidate rank-19 Neron--Severi lattices. For every row the classifier checks the NS=U+W(-1) rank, signature, determinant, evenness, minimum, and Smith invariants against the catalogue's primitive ternary K3 complement T; imports the exact rational even-Clifford algebra and integral-order ledger; and separates its coarse norm-one curve from the full stable discriminant-kernel marking curve. Hash-pinned decision records classify the determinant-948 NS0001 control as ARITHMETICALLY_POSSIBLE by its exact QQ equation, seventeen rational sections, rho=19, saturation, and trivial torsion; classify determinants 500 and 750, determinant-720 Golay, determinant-950 NS0024, and determinant-1184 NS0031 as ARITHMETICALLY_EXCLUDED by proved modular obstructions; and retain the other 60 rows as UNKNOWN. The new different-NS equation-agent handoff is empty because UNKNOWN rows are not dispatched. This is not a complete classification of rank-19 NS lattices or a decision for any of the 60 unknown marked curves.",
+      "scope": "The exact rootless-MW17 subset of the rank-seven catalogue contains 66 candidate rank-19 Neron--Severi lattices. For every row the classifier checks the NS=U+W(-1) rank, signature, determinant, evenness, minimum, and Smith invariants against the catalogue's primitive ternary K3 complement T; imports the exact rational even-Clifford algebra and integral-order ledger; and separates its coarse norm-one curve from the full stable discriminant-kernel marking curve. Hash-pinned decision records classify the determinant-948 NS0001 control as ARITHMETICALLY_POSSIBLE by its exact QQ equation, seventeen rational sections, rho=19, saturation, and trivial torsion; classify determinants 500 and 750, determinant-720 Golay, determinant-950 NS0024, and determinant-1184 NS0031 as ARITHMETICALLY_EXCLUDED by proved modular obstructions; and retain the other 60 rows as UNKNOWN. Within those 60, EC-K3-DET1236-MARKED-SHIMURA-CURVE gives determinant 1236 the stronger exact Phase-2 status UNRESOLVED_FOR_EXPLICIT_REASON: its marked curve is the genus-six X_0^6(103)/<w_618>, its two certified rational CM points have Picard rank 20, and the unresolved gate is the rational-lift problem for its degree-two map to the displayed genus-two quotient. The new different-NS equation-agent handoff is empty because UNKNOWN rows are not dispatched. This is not a complete classification of rank-19 NS lattices or a decision for the determinant-1236 non-CM locus or any other unknown marked curve.",
       "canonical_source": "elkies-k3/RANK19_ARITHMETIC_MARKING_CLASSIFIER_2026-09-04.md",
       "dependencies": [
         "EC-K3-H3-Q12O5867-ENDPOINT-QQ",
+        "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
         "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
         "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS",
         "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION",
@@ -41075,7 +41125,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:ec66b0ca948a6150f9deeb7ecabdba0b264ee1e49831392c48d08acbdfda3a44",
+      "artifact_hash": "sha256:bca1bf8568d591e5072e8ae3e3c9b15b04b68e1e47ad59847c1b8d4bb20003e6",
       "software_lock": [
         "elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage",
         "elkies-k3/data/arithmetic/rank19-arithmetic-marking-decisions-v1.json",
@@ -41109,10 +41159,11 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Arithmetic-gated reranking of different-NS MW17 frames",
-      "scope": "The determinant-aware planner treats a proved obstruction to a full QQ-rational rank-19 marking as an exact pre-scoring rejection. Of 827 catalogue surfaces, 66 pass the exact lattice-theoretic MW17 filters; determinants 500, 720, 750, 950, and 1184 are then removed by their rational-marking obstruction certificates, leaving 61 arithmetic candidates including the already-realized determinant-948 control. That control remains the only fully ready row and is excluded by the different-NS milestone, so the new equation-agent handoff is empty. The determinant-500 and determinant-750 rootless frames remain exact geometric controls, but their stable marked curves X_H(50) and X_H(75) have no rational noncuspidal points. This is a fail-closed rootless-subcatalogue accounting, not an existence theorem, a complete catalogue, or an arithmetic source construction.",
+      "scope": "The determinant-aware planner treats a proved obstruction to a full QQ-rational rank-19 marking as an exact pre-scoring rejection. Of 827 catalogue surfaces, 66 pass the exact lattice-theoretic MW17 filters; determinants 500, 720, 750, 950, and 1184 are then removed by their rational-marking obstruction certificates, leaving 61 arithmetic candidates including the already-realized determinant-948 control. That control remains the only fully ready row and is excluded by the different-NS milestone, so the new equation-agent handoff is empty. The determinant-1236 row from EC-K3-DET1236-MARKED-SHIMURA-CURVE is retained fail-closed with an exact tier-one arithmetic coordinate: the full genus-six marked curve is known, but its non-CM rational locus remains unresolved and equation scoring is false. The determinant-500 and determinant-750 rootless frames remain exact geometric controls, but their stable marked curves X_H(50) and X_H(75) have no rational noncuspidal points. This is a fail-closed rootless-subcatalogue accounting, not an existence theorem, a complete catalogue, or an arithmetic source construction.",
       "canonical_source": "elkies-k3/DETERMINANT_AWARE_FOUNDRY_RANKING_2026-09-02.md",
       "dependencies": [
         "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
+        "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
         "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS",
         "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
         "EC-K3-NS0024-QQ-MARKING-OBSTRUCTION",
@@ -41125,7 +41176,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:2946118b5f1f6fef15e0a696818ce46e1d939a04bd0a2ac59565fe1ebe3d28e9",
+      "artifact_hash": "sha256:55955d6b4e332fdae5d3ac2e6521b6662ca5f0ac59df2338130e24954658e73a",
       "software_lock": [
         "elkies-k3/scripts/build_rank7_determinant_aware_ranking.py",
         "elkies-k3/data/lattice-foundry/determinant-aware-ranking-evidence-v1.json",
@@ -41159,11 +41210,12 @@
       "kind": "reproduction",
       "state": "partial",
       "title": "Global transcendental-first arithmetic queue for Lane B",
-      "scope": "The Lane B foundry begins with all 827 rank-three transcendental-lattice rows and orders them without using rootless-frame data. The enforced gate order is full marked Shimura/modular curve, rational noncuspidal non-CM point, saturated rational marking of NS=T^perp, rootless-frame test, and equation compilation. The exact exclusions are the split determinant-378 row of EC-K3-DET378-QQ-MARKING-OBSTRUCTION, the determinant-500 and determinant-750 rootless rows, determinant-720 Golay, determinant-950 NS0024, and determinant-1184 NS0031; the already-realized determinant-948 positive control is unchanged. The remaining arithmetic research queue has 820 rows, consisting of 60 UNKNOWN rows from the old rootless-MW17 subcatalogue and 760 unscreened T rows; 21 have coarse genus at most two as a diagnostic only. No new NS/rootless handoff is emitted because no new exact positive full marking exists. The globally earliest exact-coarse diagnostics remain determinant 256/X_0(2) and determinant 512/X_0(4), whose literal stable kernels are unknown; among already-rootless rows, determinants 500 and 750 are now closed. This narrows OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 by propagating exact source exclusions, not by promoting any unresolved row.",
+      "scope": "The Lane B foundry begins with all 827 rank-three transcendental-lattice rows and orders them without using rootless-frame data. The enforced gate order is full marked Shimura/modular curve, rational noncuspidal non-CM point, saturated rational marking of NS=T^perp, rootless-frame test, and equation compilation. The exact exclusions are the split determinant-378 row of EC-K3-DET378-QQ-MARKING-OBSTRUCTION, the determinant-500 and determinant-750 rootless rows, determinant-720 Golay, determinant-950 NS0024, and determinant-1184 NS0031; the already-realized determinant-948 positive control is unchanged. The remaining arithmetic research queue has 820 rows, consisting of 60 UNKNOWN rows from the old rootless-MW17 subcatalogue and 760 unscreened T rows; 21 have coarse genus at most two as a diagnostic only. Within that queue, EC-K3-DET1236-MARKED-SHIMURA-CURVE supplies determinant 1236's exact genus-six marked curve X_0^6(103)/<w_618>, Phase-2 status UNRESOLVED_FOR_EXPLICIT_REASON, and precise degree-two rational-lift gate; absence of a certified non-CM point is represented as unknown rather than false. No new NS/rootless handoff is emitted because no new exact positive full marking exists. The globally earliest exact-coarse diagnostics remain determinant 256/X_0(2) and determinant 512/X_0(4), whose literal stable kernels are unknown; among already-rootless rows, determinants 500 and 750 are now closed. This narrows OP-K3-DIFFERENT-NS-ARITHMETIC-MW17 by propagating exact source exclusions and the determinant-1236 exact curve, not by promoting any unresolved row.",
       "canonical_source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
       "dependencies": [
         "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
         "EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER",
+        "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
         "EC-K3-DET378-QQ-MARKING-OBSTRUCTION",
         "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS"
       ],
@@ -41172,7 +41224,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:311bf8e03e17745fb3d69d0e0adaf17e47ee77b02e675f7f2c51335d9cef99cd",
+      "artifact_hash": "sha256:8cadec013c7639f70618dc068044d84062e09b06b5f98e4c90ad4a8ad9d69e43",
       "software_lock": [
         "elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py",
         "elkies-k3/data/arithmetic/arithmetic-first-marking-decisions-v1.json",
@@ -41743,6 +41795,54 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-R17-KUMMER-CLASSGROUP-PRESSURE-COMPARISON",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Six-fibre generic-normalized Kummer class-group pressure theorem",
+      "scope": "For each of ICARM curves 351,356,376,377,385 on published R17 and curve 12 on native alternate Q80, let B be the F_2-space of the certified known point Kummer classes in the irreducible completed-square cubic K, let G be the specialized generic MW17 subspace, let v record prime-ideal valuation parity above every rational prime dividing 2*Delta_E, and let c:ker(v)->Cl(K)[2] be the ideal square-root map. For Pi(B,G)=c(ker(v|B))/c(ker(v|G)), exact rank-nullity and the norm-positive unit kernel prove dim Pi(B,G) >= dim(B/G)-(rank v(B)-rank v(G))-(r1+r2-1). The replay constructs every integral point half-ideal and verifies its localized square correction. Curve 12 is first changed by the certified determinant-minus-one matrix from the 29 public points to the seventeen specialized alternate-Q80 sections plus quotient basis P2,P11,P4,P3,P6,P8,P17,P10,P28,P24,P19,P15; its transported good-reduction signatures retain binary rank 29. In the curve order 351,356,376,377,385,12, the known jumps over MW17 are 8,12,5,6,12,12, the residual valuation-rank increments are all zero, the norm-positive unit ambiguities are 2,1,2,1,2,1, and the resulting residual 2-class-image lower bounds are 6,11,3,5,10,11. Hence the observed jump strata are strictly separated as +5 maps to 3, +6 to 5, +8 to 6, and +12 to 10 through 11. The full cubic Cl(K)[2] lower bounds are 18,21,17,15,15,22 and do not themselves track the jumps. This is an exact theorem for the six-fibre known-point data set and explains the full-BNF pressure across both frames; it is not an exact class-group or S-class-group computation, Selmer upper bound, exact elliptic rank, population correlation, or prospective predictor because the exceptional points are inputs.",
+      "canonical_source": "elkies-k3/R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md",
+      "dependencies": [
+        "EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS",
+        "EC-K3-R17-NORM12-NATIVE-ICARM-CALIBRATION-AUDIT"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_kummer_classgroup_pressure_comparison.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:28ae6a604bd0f8ab3587bc879413c2d5a16cb3314495b3323b9d34f7d089e590",
+      "software_lock": [
+        "elkies-k3/scripts/certify_r17_kummer_classgroup_pressure_comparison.sage",
+        "elkies-k3/scripts/certify_r17_kummer_classgroup_pressure.sage",
+        "artifacts/generated-results/elkies-k3-r17-kummer-classgroup-pressure-comparison-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-kummer-classgroup-pressure-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-icarm-public-fibres-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-wgxli-lineage-fibres-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-curve12-alternate-q80-quotient-v1.json",
+        "artifacts/generated-results/elliptic-curves/elliptic_elkies_klagsbrun_rank29_certificate.json"
+      ],
+      "supersedes_notes": [
+        "the class-group pressure observation has only the two +12 records and one +5 control",
+        "the unnormalized full cubic class-group 2-rank lower bound is the relevant comparative invariant"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "REPRODUCE.md",
+        "KNOWLEDGE_BASE.md",
+        "RESEARCH_TIMELINE.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "elkies-k3/R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md",
+        "elkies-k3/R17_RESIDUAL_SELMER_FINGERPRINT_AND_SIEVE_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "OP-K3-NS0024-ARITHMETIC-MW17",
       "kind": "open_problem",
       "state": "parked",
@@ -41787,7 +41887,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Arithmetic-first different-NS MW17 with a certified carrier, or integral V4 rank 20",
-      "scope": "EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS remains a bounded non-arithmetic lattice census, and EC-K3-NS0031-MARKED-FORMAL-BRANCH remains a local control only. The determinant-948 noncyclic chain is equation-explicit, so another equation on that surface is not the Lane B milestone. Determinants 500, 720, 750, 950, and 1184, together with the split determinant-378 row, are arithmetically excluded by EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS, EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION, EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, EC-K3-NS0031-QQ-MARKING-OBSTRUCTION, and EC-K3-DET378-QQ-MARKING-OBSTRUCTION. EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY orders all 827 rank-three T rows before NS or rootless work: compute the exact stable marked curve and a rational noncuspidal non-CM point, construct and saturate the rational marking of NS=T^perp, then test rootlessness and compile an equation. Its current 820-row arithmetic queue has no new positive handoff; determinants 256 and 512 are the globally earliest unscreened rows, while the rootless subqueue has 60 UNKNOWN rows. Primary completion requires a different-NS characteristic-zero elliptic K3 over QQ with geometric Picard rank 19, nineteen rational divisor classes, a target-free primitive-nef rootless U', seventeen displayed QQ(t)-sections generating the saturated torsion-free MW lattice, and additionally a certified positive-rank low-genus carrier C/QQ with a nonconstant map to P1 and an exact independent pullback section. The stretch completion is a connected V4 carrier with invariant character rank 17 and all three nontrivial character ranks one, together with the exact integral 2-primary graph glue, full height pairing, saturation, and torsion exclusion. EC-K3-INTEGRAL-CHARACTER-GLUE, EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64, EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64, EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION, and EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION provide the current involution, carrier, and product-character boundary. Existing two-character and zero-Tate-class controls do not prove the product-character section. A coarse curve, modular point, finite p-adic or formal lift, rootless-first score, supplied target, unsaturated subgroup, heuristic carrier rank, or equation without the rational rank-19 marking does not close the problem.",
+      "scope": "EC-K3-LATTICE-FOUNDRY-PRESCRIBED-ROOT-MW1-CENSUS remains a bounded non-arithmetic lattice census, and EC-K3-NS0031-MARKED-FORMAL-BRANCH remains a local control only. The determinant-948 noncyclic chain is equation-explicit, so another equation on that surface is not the Lane B milestone. Determinants 500, 720, 750, 950, and 1184, together with the split determinant-378 row, are arithmetically excluded by EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS, EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION, EC-K3-NS0024-QQ-MARKING-OBSTRUCTION, EC-K3-NS0031-QQ-MARKING-OBSTRUCTION, and EC-K3-DET378-QQ-MARKING-OBSTRUCTION. Determinant 1236 is the strongest current positive-directed rootless target because EC-K3-DET1236-MARKED-SHIMURA-CURVE identifies its exact genus-six marked curve and a degree-two map to an explicit genus-two quotient; its only certified rational marked points are two higher-Picard CM controls, so the rational non-CM lift remains unresolved. EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY orders all 827 rank-three T rows before NS or rootless work: compute the exact stable marked curve and a rational noncuspidal non-CM point, construct and saturate the rational marking of NS=T^perp, then test rootlessness and compile an equation. Its current 820-row arithmetic queue has no new positive handoff; determinants 256 and 512 are the globally earliest unscreened rows, while the rootless subqueue has 60 UNKNOWN rows. Primary completion requires a different-NS characteristic-zero elliptic K3 over QQ with geometric Picard rank 19, nineteen rational divisor classes, a target-free primitive-nef rootless U', seventeen displayed QQ(t)-sections generating the saturated torsion-free MW lattice, and additionally a certified positive-rank low-genus carrier C/QQ with a nonconstant map to P1 and an exact independent pullback section. The stretch completion is a connected V4 carrier with invariant character rank 17 and all three nontrivial character ranks one, together with the exact integral 2-primary graph glue, full height pairing, saturation, and torsion exclusion. EC-K3-INTEGRAL-CHARACTER-GLUE, EC-K3-R17-NORM12-11952-V4-RATIONAL-PAIR-SHORTLIST-64, EC-K3-R17-NORM12-11952-V4-BASE-RANK-SCREEN-64, EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION, and EC-K3-R17-NORM12-11952-COMPLETE-RATIONAL-V4-DEEP-TRACE-EXHAUSTION provide the current involution, carrier, and product-character boundary. Existing two-character and zero-Tate-class controls do not prove the product-character section. A coarse curve, modular point, finite p-adic or formal lift, rootless-first score, supplied target, unsaturated subgroup, heuristic carrier rank, or equation without the rational rank-19 marking does not close the problem.",
       "canonical_source": "elkies-k3/DIFFERENT_NS_ARITHMETIC_MW17_FOUNDRY_OBJECTIVE_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-NONCYCLIC-4A1-DIRECT-EQUATION",
@@ -41801,6 +41901,7 @@
         "EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION",
         "EC-K3-DET378-QQ-MARKING-OBSTRUCTION",
         "EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS",
+        "EC-K3-DET1236-MARKED-SHIMURA-CURVE",
         "EC-K3-DIFFERENT-NS-ARITHMETIC-GATE-RERANK",
         "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY",
         "EC-K3-INVERSE-ADE-PROJECTIVE-BIRTH-STRATA",
@@ -41871,6 +41972,13 @@
           "reason": "The arithmetic-first planner covers all 827 transcendental rows and deliberately withholds NS, rootless, and equation handoffs until an exact rational non-CM marked point is certified; coarse genus and lattice attractiveness do not supply that marking.",
           "witnesses": [
             "EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY"
+          ]
+        },
+        {
+          "attack": "Promoting a rational point on the determinant-1236 genus-two quotient or one of its rational CM points to a rank-19 marking",
+          "reason": "The exact period curve is the unresolved degree-two cover X_0^6(103)/<w_618>; quotient points need not lift, and the two certified rational CM points have geometric Picard rank 20 rather than the requested saturated rank-19 marking.",
+          "witnesses": [
+            "EC-K3-DET1236-MARKED-SHIMURA-CURVE"
           ]
         },
         {

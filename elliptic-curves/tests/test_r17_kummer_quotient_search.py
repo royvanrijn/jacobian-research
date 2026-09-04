@@ -19,6 +19,28 @@ from r17_kummer_quotient_search import (  # noqa: E402
 
 
 class R17KummerQuotientSearchTests(unittest.TestCase):
+    def test_residual_ideal_pipeline_is_exact_and_projectively_deduplicated(self) -> None:
+        refiner = (CAS / "refine_r17_unresolved_ideal_vertices.sage").read_text()
+        closer = (CAS / "close_r17_residual_ideal_vertices.sage").read_text()
+        canonical = (
+            CAS / "augment_r17_targeted_closure_canonical.sage"
+        ).read_text()
+        self.assertIn("the residual-ideal factorization does not replay", refiner)
+        self.assertIn('(\"residual_ideal\", tail_hnf)', refiner)
+        self.assertIn("projective_coordinate_key", closer)
+        self.assertIn("(beta) = source_ideal * quotient_ideal", closer)
+        self.assertIn("canonical_outside_rational_prime", closer)
+        self.assertIn("a cached target identity no longer replays", canonical)
+        self.assertIn("(p) = product_{P|p} P^e(P/p)", canonical)
+
+    def test_collector_persists_proof_bearing_reduced_ideal_collisions(self) -> None:
+        source = (
+            CAS / "run_r17_kummer_quotient_sclass_collector.sage"
+        ).read_text()
+        self.assertIn('"reduced_ideal_collisions": reduced_ideal_collisions', source)
+        self.assertIn('"first": previous_reduced', source)
+        self.assertIn('"second": reduced_cache_record', source)
+
     def test_binary_rows_select_a_free_objective_column(self) -> None:
         rows = BinaryRows()
         self.assertTrue(rows.add(0b0011))

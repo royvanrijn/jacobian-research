@@ -52,22 +52,25 @@ local cache so it cannot become a competing mathematical-status authority.
   The exact `--check` command is recorded in `REPRODUCE.md`.
 
 <!-- status-consumer: EC-K3-GOLAY-DET720-QQ-MARKING-OBSTRUCTION 972f591d2885f9ba -->
-<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 6014cc6c7b64d76e -->
+<!-- status-consumer: EC-K3-RANK19-ARITHMETIC-MARKING-CLASSIFIER 5b6c901b8b1fdd15 -->
 <!-- status-consumer: EC-K3-DET378-QQ-MARKING-OBSTRUCTION 1e910f72f54ac228 -->
-<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY ec9b82089d2e9196 -->
+<!-- status-consumer: EC-K3-ARITHMETIC-FIRST-MARKED-T-FOUNDRY 4fac03efa2d465c7 -->
 <!-- status-consumer: EC-K3-DET500-DET750-QQ-MARKING-OBSTRUCTIONS 14498ad134ffa60e -->
+<!-- status-consumer: EC-K3-DET1236-MARKED-SHIMURA-CURVE 665896a1a261ff3c -->
 
 - `elkies-k3-rank19-arithmetic-marking-classifier-v1.json` records exact
   NS/T/Clifford data for all 66 rootless-MW17 candidate surfaces, separates
   coarse norm-one curves from full discriminant-marking curves, and reports
   one `ARITHMETICALLY_POSSIBLE`, five `ARITHMETICALLY_EXCLUDED`, and 60
-  `UNKNOWN` rows. `elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json`
+  `UNKNOWN` rows. One of the unknown rows, determinant 1236, now carries the
+  exact Phase-2 status `UNRESOLVED_FOR_EXPLICIT_REASON` rather than an
+  unidentified-curve placeholder. `elkies-k3-rank19-arithmetic-marking-equation-survivors-v1.json`
   is the fail-closed new different-NS equation handoff; it is empty. Replay
   both with
   `sage -python elkies-k3/scripts/build_rank19_arithmetic_marking_classifier.sage --check`.
   Their whole-file SHA-256 values are respectively
-  `e1656aaf4d9e2a423b88575ec9427e152bbeaad4874b7cc2d185ef20a99a6f4e`
-  and `22450a3a04809896fbffd9fc34816e3e97fa4b879e551dcaea4ad65659aaa947`.
+  `4a44cafb558dfe64a023180614b5e224bf29a256d2f721fea46e8357117a0783`
+  and `965bb1102954896ef51e4d88a6e09bd0b0013ce3fb89183be7eb1b374df947f8`.
 
 - `elkies-k3-det500-det750-qq-marking-obstructions-v1.json` reconstructs the
   literal and primitive Clifford orders for the two selected rootless rows,
@@ -77,6 +80,26 @@ local cache so it cannot become a competing mathematical-status authority.
   `sage -python elkies-k3/scripts/certify_det500_det750_qq_marking_obstructions.sage --check`.
   Its whole-file SHA-256 is
   `e1f74fd18fd17976a05d4340437fe09e841e28efdf681e2945098b3dc51b81de`.
+
+- `elkies-k3-det1236-marked-shimura-curve-v1.json` reconstructs the literal
+  even Clifford order of the determinant-1236 rootless row, computes its
+  full discriminant action, and identifies the exact marked curve as the
+  genus-six Shimura quotient `X_0^6(103)/<w_618>`. It certifies two rational
+  discriminant `-3` CM points, one quadratic discriminant-`-24` CM closed
+  point, and fourteen rational points on the genus-two quotient. Their
+  elliptic images are `+/-G`, `+/-3G`, `+/-4G`, and `+/-10G`; the two fixed
+  fibers are separated and twelve non-fixed fibers remain. No non-CM
+  rational point on the marked curve is certified. Its exact
+  Jacquet--Langlands accounting gives `Jac(C_1236) ~ 618a1 x ... x 618f1`,
+  genus-two part `618e1 x 618f1`, and Prym `618a1 x ... x 618d1`. All factors
+  have rank one, so classical Chabauty does not apply but the necessary
+  split-Jacobian quadratic-Chabauty dimension inequality passes. The row is
+  therefore `UNRESOLVED_FOR_EXPLICIT_REASON`: the remaining exact gate is
+  the rational-point problem on the degree-two cover of the displayed
+  genus-two quotient. Replay it with
+  `sage -python elkies-k3/scripts/certify_det1236_marked_shimura_curve.sage --check`.
+  Its whole-file SHA-256 is
+  `a1c9976a6607a5ff771bd453b13b00d351ab8252a194d7acb930a476f89c3f2b`.
 
 - `elkies-k3-golay-det720-qq-marking-obstruction-v1.json` records the exact
   literal and primitive-similarity Clifford orders, the `S3` action on
@@ -94,7 +117,7 @@ local cache so it cannot become a competing mathematical-status authority.
   NS/rootless handoff. Replay it with
   `python3 elkies-k3/scripts/build_arithmetic_first_marked_t_foundry.py --check`.
   Its whole-file SHA-256 is
-  `d22bbb425f1d427a9d9c17823b2259f7d0b3e1e5c7f9e2c155cf3b291866dd9d`.
+  `0e3bb568e0d762ae7dfd25319b924318bdcebcd175da6034aec4aed6f722a671`.
 
 - `elkies-k3-det378-qq-marking-obstruction-v1.json` records the exact
   `U(3)+<42>` discriminant form, primitive and literal Clifford orders, `A4`
@@ -460,6 +483,20 @@ local cache so it cannot become a competing mathematical-status authority.
   with `sage -python elkies-k3/scripts/certify_r17_kummer_classgroup_pressure.sage --check`;
   its whole-file SHA-256 is
   `5c0f1981f916cb031ceb29addc884aeaf3198b643b05f4aa8a44d4a3fbae3ec7`.
+
+- `elkies-k3-r17-kummer-classgroup-pressure-comparison-v1.json` replays the
+  complete five-fibre pressure certificate and applies the identical
+  half-ideal/class-rank calculation to native alternate-Q80 curve 12 after
+  its certified unimodular generic-plus-quotient basis change.  For curves
+  `351,356,376,377,385,12`, the residual class-image lower bounds modulo
+  generic `MW17` are `6,11,3,5,10,11`; every residual block adds zero
+  bad-valuation rank.  The observed jump strata are strictly separated, but
+  the comparison is known-point explanatory data rather than an exact
+  class-group dimension or prospective predictor.  Replay it with
+  `sage -python elkies-k3/scripts/certify_r17_kummer_classgroup_pressure_comparison.sage --check`;
+  its whole-file SHA-256 is
+  `843de113ad04d568a3261edc4a444fa32eb82d73e6f84c08dd7497bb81fb6704`.
+<!-- status-consumer: EC-K3-R17-KUMMER-CLASSGROUP-PRESSURE-COMPARISON 74b1dae24470b531 -->
 
 - `elkies-k3-r17-074d9-quotient-arithmetic-blocks-v1.json` presents each
   record quotient as twelve named exceptional generators modulo the two exact

@@ -60,6 +60,21 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   prime-ideal vertices in a mergeable ledger, reconstructs their degree-one
   residues exactly, and emits a reproducible adaptive special-q seed list.
   This is graph scheduling only; it proves no relation or arithmetic bound.
+- `refine_r17_unresolved_ideal_vertices.sage`: reuses the record-pair
+  Minkowski caches without completing their norm factorizations. It divides
+  only proved factor-base/shared prime ideals, retains the exact reduced
+  residual ideal as a sparse vertex, and accepts only replayable incidence
+  dependencies. Exact matches with certified MW29 half-ideal classes are
+  killed, but the bounded factor base supplies no global upper bound.
+- `close_r17_residual_ideal_vertices.sage`: targets those residual vertices
+  directly. Directional or projectively deduplicated Minkowski samples
+  `beta in I` factor the smaller quotient `(beta)/I`; certified MW29 source
+  ideals are killed before elimination. The same run adds principal `(p)`
+  rows for every used outside rational prime.
+- `augment_r17_targeted_closure_canonical.sage`: cache-only replay for target
+  ledgers made before the outside `(p)` rows were added. It rechecks every
+  stored target factorization and adds those exact canonical rows without
+  rerunning a lattice search or integer factorization.
 - `certify_nagao_rank20_t5081.py`: exact Nagao rank-at-least-20 certificate.
 - `newfamily/certify_rank_t83_6.py`: exact-rank-14 Sage/PARI replay.
 - `elkies_residual_selmer_gate.py`: fail-closed rank-32 residual-dimension
@@ -190,10 +205,12 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   half-ideals, preferentially sampling the exceptional block.  The driver
   rotates through nonzero products of unresolved columns of configurable
   width and records every exact row's rank gain both modulo generic MW17 and
-  modulo the full known subgroup. Its optional `idealredmodpower2` engine
-  reduces modulo ideal squares and serves as a diagnostic control; current
-  pilots show that neither it nor ordinary multi-target reduction replaces a
-  batch special-q sieve.
+  modulo the full known subgroup. Before attempting any norm factorization it
+  also caches reduced-ideal HNFs: an exact collision, together with the two
+  retained principal multipliers, is immediately a quotient relation. Its
+  optional `idealredmodpower2` engine reduces modulo ideal squares and serves
+  as a diagnostic control; current pilots show that neither it nor ordinary
+  multi-target reduction replaces a batch special-q sieve.
 - `run_r17_kummer_quotient_sclass_suite.py`: gives curves 351, 356, 376, 377,
   and 385 identical bounded budgets in both quotient objectives, then records
   relation structure and descriptive displayed-MW-gain correlations in a

@@ -345,6 +345,12 @@ def main():
     accepted_relations = []
     large_prime_partials = {}
     large_prime_collisions = []
+    reduced_ideal_cache = {}
+    reduced_ideal_collisions = []
+    reduced_ideal_collision_rank_gains = {
+        "generic": 0,
+        "full-known": 0,
+    }
     strategy_stats = {
         strategy: {
             "attempts": 0,
@@ -469,6 +475,20 @@ def main():
             ],
             "accepted_quotient_relations": accepted_relations,
             "large_prime_collisions": large_prime_collisions,
+            "reduced_ideal_collisions": reduced_ideal_collisions,
+            "reduced_ideal_collision_cache": {
+                "entry_count": len(reduced_ideal_cache),
+                "exact_collision_count": len(reduced_ideal_collisions),
+                "generic_rank_gain": reduced_ideal_collision_rank_gains["generic"],
+                "full_known_rank_gain": reduced_ideal_collision_rank_gains[
+                    "full-known"
+                ],
+                "interpretation": (
+                    "Equal reduced-ideal HNFs give exact principal quotient "
+                    "relations before any norm factorization. Only collisions, "
+                    "including both reduction witnesses, are persisted."
+                ),
+            },
             "unmatched_large_prime_partial_count": len(large_prime_partials),
             "fully_factored_reduction_count": fully_factored_reduction_count,
             "smooth_reduction_count": smooth_reduction_count,
@@ -650,6 +670,73 @@ def main():
                 "verified_identity": "reduced_ideal = search_ideal * (multiplier)^2",
             }
 
+        # Equality of the reduced ideals is already a complete principal
+        # relation between the two search ideals.  Detect it before smoothness
+        # testing: at these discriminants norm factorization is much more
+        # expensive than ideal reduction, while the known point and S-ideal
+        # companions vanish in the requested quotient.  Retaining the two
+        # multipliers makes every collision independently replayable.
+        reduced_key = ideal_key(nf, reduced_ideal)
+        reduced_cache_record = {
+            "attempt": attempt,
+            "base_row_mask_hex": mask_hex(base_mask),
+            "exceptional_parity_mask_hex": mask_hex(exceptional_mask),
+            "search_ideal_hnf": ideal_key(nf, search_ideal),
+            "target": target_record,
+            "companion_strategy": strategy,
+            "kummer_companions": companion_records,
+            "killed_s_companion_ideals": s_labels,
+            "reduction_witness": reduction_witness,
+        }
+        previous_reduced = reduced_ideal_cache.get(reduced_key)
+        reduced_collision_objective_gain = False
+        if previous_reduced is None:
+            reduced_ideal_cache[reduced_key] = reduced_cache_record
+        else:
+            combined_base_mask = base_mask ^ int(
+                previous_reduced["base_row_mask_hex"], 16
+            )
+            combined_exceptional_mask = exceptional_mask ^ int(
+                previous_reduced["exceptional_parity_mask_hex"], 16
+            )
+            metrics = projection_record(
+                combined_base_mask, combined_exceptional_mask, add=True
+            )
+            collision = {
+                "relation_kind": "equal_reduced_ideal",
+                "reduced_ideal_hnf": reduced_key,
+                "first": previous_reduced,
+                "second": reduced_cache_record,
+                "combined_base_row_mask_hex": mask_hex(combined_base_mask),
+                "combined_exceptional_parity_mask_hex": mask_hex(
+                    combined_exceptional_mask
+                ),
+                **metrics,
+            }
+            reduced_ideal_collisions.append(collision)
+            for projection in ("generic", "full-known"):
+                reduced_ideal_collision_rank_gains[projection] += int(
+                    metrics[f"{projection.replace('-', '_')}_increased_rank"]
+                )
+            reduced_collision_objective_gain = metrics[
+                f"{args.objective.replace('-', '_')}_increased_rank"
+            ]
+            if reduced_collision_objective_gain:
+                objective_rows = (
+                    generic_rows if args.objective == "generic" else full_known_rows
+                )
+                objective_width = (
+                    generic_width if args.objective == "generic" else full_known_width
+                )
+                print(
+                    f"{PROTOCOL}|curve={args.curve_id}|objective={args.objective}|"
+                    f"attempt={attempt}|rank={objective_rows.rank}|"
+                    f"dimension={objective_width-objective_rows.rank}|"
+                    "source=equal_reduced_ideal|status=drop",
+                    flush=True,
+                )
+                checkpoint(output, build_document("collecting"))
+
         reduced_norm = ZZ(pari.idealnorm(nf, reduced_ideal))
         factors = pari.idealfactor(nf, reduced_ideal, args.factor_base_bound + 1)
         factored_norm = ZZ(1)
@@ -729,7 +816,7 @@ def main():
             "base_row_mask_hex": mask_hex(base_mask),
             "exceptional_parity_mask_hex": mask_hex(exceptional_mask),
         }
-        objective_gain = False
+        objective_gain = reduced_collision_objective_gain
         if not odd_large_ideals:
             metrics = projection_record(base_mask, exceptional_mask, add=True)
             base_record.update(metrics)

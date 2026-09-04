@@ -1,0 +1,4542 @@
+{
+  "claim_boundary": [
+    "All displayed relations and quotient dimensions are exact.",
+    "Public exceptional points are used only in this post-hoc verification artifact.",
+    "The fixed-rule point searches remain bounded and misses are not nonexistence theorems.",
+    "Auxiliary Kummer fingerprints are exact finite-prime barcodes, not full Selmer calculations."
+  ],
+  "input_hashes": {
+    "artifacts/generated-results/elliptic-curves/elkies_2026_high_rank_positive_controls_v2.json": "0b77be4658ca5438a28991a7c66f6580b3a9c8b74e664653d13bb255895f37bc",
+    "artifacts/generated-results/elliptic-curves/elkies_2026_known_kummer_quotients_controls_v1.json": "f311d3d0b5489fc5c83a43c292ba1749e1e681ec6255e3fe6e3934a748f78045",
+    "artifacts/generated-results/elliptic-curves/half_lattice_fake_descent_r17_matrix_blind_v1.json": "37527d604ea042d4da5d9d930c5e52d2a3cfedfb95c23e4a6540d1d4358616b8",
+    "elliptic-curves/cas/verify_r17_generic_deep_holes_matrix.sage": "199f95f0a438a3be92619e5af6950c256643d5672d6ebd270bb728dfcaee4a85"
+  },
+  "phase_boundary": {
+    "blind_matrix_frozen_before_fixture_load": true,
+    "public_points_used_only_for_posthoc_coordinates_and_recall": true,
+    "verification_loaded_public_exceptional_points": true
+  },
+  "positive_controls": [
+    {
+      "annihilator_basis_hex": [],
+      "annihilator_basis_masks": [],
+      "annihilator_dimension_of_recovered_subspace": 0,
+      "blind_non_generic_point_count": 679,
+      "blind_recovered_quotient_dimension": 8,
+      "blindly_selected_exact_basis": [
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x20",
+          "exceptional_quotient_mod2_mask": 32,
+          "point": {
+            "x": "416941747501892407203",
+            "y": "4877055152859050460419042380298400"
+          },
+          "source_half_lattice_hex": [
+            "0x07416"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            -2,
+            1,
+            0,
+            -1,
+            0,
+            2,
+            1,
+            2,
+            -1,
+            0,
+            -1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x01",
+          "exceptional_quotient_mod2_mask": 1,
+          "point": {
+            "x": "907024993630801133763",
+            "y": "-4796855179247074050245862699655680"
+          },
+          "source_half_lattice_hex": [
+            "0x15886"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -6,
+            -1,
+            1,
+            -1,
+            -2,
+            1,
+            -3,
+            -3,
+            1,
+            1,
+            -3,
+            -3,
+            -3,
+            3,
+            -1,
+            1,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "exceptional_quotient_mod2_hex": "0x84",
+          "exceptional_quotient_mod2_mask": 132,
+          "point": {
+            "x": "936489979268863375683",
+            "y": "4791994198921840691899564436165760"
+          },
+          "source_half_lattice_hex": [
+            "0x16c2b"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            8,
+            2,
+            -1,
+            0,
+            5,
+            -4,
+            6,
+            2,
+            -1,
+            0,
+            6,
+            4,
+            4,
+            -4,
+            -1,
+            -2,
+            2,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "exceptional_quotient_mod2_hex": "0x8c",
+          "exceptional_quotient_mod2_mask": 140,
+          "point": {
+            "x": "1639071960446528836203",
+            "y": "-4674780432147856367618551743114600"
+          },
+          "source_half_lattice_hex": [
+            "0x12fee"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -2,
+            0,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            -2,
+            0,
+            0,
+            0,
+            -2,
+            -1,
+            2,
+            -1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            1,
+            0,
+            0,
+            1,
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x59",
+          "exceptional_quotient_mod2_mask": 89,
+          "point": {
+            "x": "1871076627235997566878",
+            "y": "-4635527502972190684865293179841950"
+          },
+          "source_half_lattice_hex": [
+            "0x1188f"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -3,
+            -1,
+            1,
+            -1,
+            -2,
+            2,
+            -2,
+            -1,
+            2,
+            1,
+            -4,
+            -1,
+            -3,
+            2,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1
+          ],
+          "exceptional_quotient_mod2_hex": "0x90",
+          "exceptional_quotient_mod2_mask": 144,
+          "point": {
+            "x": "2011641936944997318883",
+            "y": "4611614039688946298395952612064160"
+          },
+          "source_half_lattice_hex": [
+            "0x0e916"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            2,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x04",
+          "exceptional_quotient_mod2_mask": 4,
+          "point": {
+            "x": "8654552665570225236315",
+            "y": "3373663157949297358904471531851032"
+          },
+          "source_half_lattice_hex": [
+            "0x0e916"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            0,
+            -1,
+            -1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x02",
+          "exceptional_quotient_mod2_mask": 2,
+          "point": {
+            "x": "-7104112570066716376197",
+            "y": "-5945076017492576737148239740118200"
+          },
+          "source_half_lattice_hex": [
+            "0x08692"
+          ]
+        }
+      ],
+      "distinct_recovered_mod2_quotient_class_count": 56,
+      "distinct_recovered_mod2_quotient_masks": [
+        1,
+        2,
+        4,
+        5,
+        8,
+        9,
+        11,
+        12,
+        16,
+        17,
+        20,
+        24,
+        27,
+        32,
+        34,
+        36,
+        40,
+        43,
+        48,
+        56,
+        58,
+        64,
+        65,
+        66,
+        67,
+        68,
+        70,
+        73,
+        80,
+        82,
+        89,
+        92,
+        96,
+        97,
+        98,
+        100,
+        102,
+        106,
+        122,
+        128,
+        132,
+        140,
+        144,
+        149,
+        152,
+        153,
+        154,
+        156,
+        160,
+        164,
+        188,
+        208,
+        220,
+        221,
+        244,
+        250
+      ],
+      "full_public_quotient_recovered": true,
+      "id": "r17-control-a",
+      "kummer_fingerprint_dimension": 45,
+      "kummer_selected_auxiliary_primes": [
+        {
+          "columns_added": 2,
+          "generic_rank_after": 1,
+          "prime": 19,
+          "prime_ideal_count": 2,
+          "rank_after": 1,
+          "rank_before": 0,
+          "residue_factors": [
+            "u + 6",
+            "u^2 + 14*u + 16"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 2,
+          "prime": 29,
+          "prime_ideal_count": 2,
+          "rank_after": 2,
+          "rank_before": 1,
+          "residue_factors": [
+            "u + 16",
+            "u^2 + 14*u + 5"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 3,
+          "prime": 31,
+          "prime_ideal_count": 2,
+          "rank_after": 3,
+          "rank_before": 2,
+          "residue_factors": [
+            "u + 12",
+            "u^2 + 20*u + 15"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 4,
+          "prime": 37,
+          "prime_ideal_count": 2,
+          "rank_after": 4,
+          "rank_before": 3,
+          "residue_factors": [
+            "u + 25",
+            "u^2 + 13*u + 35"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 5,
+          "prime": 43,
+          "prime_ideal_count": 2,
+          "rank_after": 5,
+          "rank_before": 4,
+          "residue_factors": [
+            "u + 21",
+            "u^2 + 23*u + 31"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 6,
+          "prime": 53,
+          "prime_ideal_count": 2,
+          "rank_after": 6,
+          "rank_before": 5,
+          "residue_factors": [
+            "u + 39",
+            "u^2 + 15*u + 31"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 7,
+          "prime": 59,
+          "prime_ideal_count": 2,
+          "rank_after": 7,
+          "rank_before": 6,
+          "residue_factors": [
+            "u + 16",
+            "u^2 + 44*u + 58"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 9,
+          "prime": 61,
+          "prime_ideal_count": 3,
+          "rank_after": 9,
+          "rank_before": 7,
+          "residue_factors": [
+            "u + 34",
+            "u + 36",
+            "u + 53"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 11,
+          "prime": 71,
+          "prime_ideal_count": 3,
+          "rank_after": 11,
+          "rank_before": 9,
+          "residue_factors": [
+            "u + 37",
+            "u + 45",
+            "u + 61"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 12,
+          "prime": 73,
+          "prime_ideal_count": 2,
+          "rank_after": 12,
+          "rank_before": 11,
+          "residue_factors": [
+            "u + 36",
+            "u^2 + 38*u + 38"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 14,
+          "prime": 83,
+          "prime_ideal_count": 3,
+          "rank_after": 14,
+          "rank_before": 12,
+          "residue_factors": [
+            "u + 5",
+            "u + 8",
+            "u + 71"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 15,
+          "prime": 103,
+          "prime_ideal_count": 3,
+          "rank_after": 16,
+          "rank_before": 14,
+          "residue_factors": [
+            "u + 6",
+            "u + 43",
+            "u + 55"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 16,
+          "prime": 109,
+          "prime_ideal_count": 2,
+          "rank_after": 17,
+          "rank_before": 16,
+          "residue_factors": [
+            "u + 89",
+            "u^2 + 21*u + 31"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 16,
+          "prime": 113,
+          "prime_ideal_count": 2,
+          "rank_after": 18,
+          "rank_before": 17,
+          "residue_factors": [
+            "u + 83",
+            "u^2 + 31*u + 79"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 16,
+          "prime": 139,
+          "prime_ideal_count": 2,
+          "rank_after": 19,
+          "rank_before": 18,
+          "residue_factors": [
+            "u + 13",
+            "u^2 + 127*u + 28"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 16,
+          "prime": 181,
+          "prime_ideal_count": 2,
+          "rank_after": 20,
+          "rank_before": 19,
+          "residue_factors": [
+            "u + 96",
+            "u^2 + 86*u + 151"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 17,
+          "prime": 191,
+          "prime_ideal_count": 3,
+          "rank_after": 22,
+          "rank_before": 20,
+          "residue_factors": [
+            "u + 33",
+            "u + 38",
+            "u + 121"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 199,
+          "prime_ideal_count": 2,
+          "rank_after": 23,
+          "rank_before": 22,
+          "residue_factors": [
+            "u + 192",
+            "u^2 + 8*u + 77"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 211,
+          "prime_ideal_count": 2,
+          "rank_after": 24,
+          "rank_before": 23,
+          "residue_factors": [
+            "u + 132",
+            "u^2 + 80*u + 120"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 223,
+          "prime_ideal_count": 2,
+          "rank_after": 25,
+          "rank_before": 24,
+          "residue_factors": [
+            "u + 5",
+            "u^2 + 219*u + 68"
+          ]
+        }
+      ],
+      "parameter": "-2/377",
+      "productive_half_lattice_centers": [
+        {
+          "half_lattice_hex": "0x0101b",
+          "half_lattice_mask": 4123,
+          "recovered_quotient_masks": [
+            2,
+            4,
+            32,
+            64,
+            89
+          ],
+          "recovered_quotient_span_dimension": 5
+        },
+        {
+          "half_lattice_hex": "0x016a3",
+          "half_lattice_mask": 5795,
+          "recovered_quotient_masks": [
+            12,
+            32,
+            65,
+            66,
+            140,
+            144,
+            156
+          ],
+          "recovered_quotient_span_dimension": 6
+        },
+        {
+          "half_lattice_hex": "0x01b43",
+          "half_lattice_mask": 6979,
+          "recovered_quotient_masks": [
+            65
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x020cb",
+          "half_lattice_mask": 8395,
+          "recovered_quotient_masks": [
+            4,
+            9,
+            32,
+            48,
+            64,
+            128
+          ],
+          "recovered_quotient_span_dimension": 6
+        },
+        {
+          "half_lattice_hex": "0x050a0",
+          "half_lattice_mask": 20640,
+          "recovered_quotient_masks": [
+            4,
+            5,
+            8,
+            32,
+            64,
+            65,
+            80,
+            100,
+            106,
+            160
+          ],
+          "recovered_quotient_span_dimension": 8
+        },
+        {
+          "half_lattice_hex": "0x05cf7",
+          "half_lattice_mask": 23799,
+          "recovered_quotient_masks": [
+            1,
+            2,
+            4,
+            27,
+            32,
+            43,
+            65,
+            164
+          ],
+          "recovered_quotient_span_dimension": 8
+        },
+        {
+          "half_lattice_hex": "0x06226",
+          "half_lattice_mask": 25126,
+          "recovered_quotient_masks": [
+            4,
+            32,
+            64,
+            100
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x06c27",
+          "half_lattice_mask": 27687,
+          "recovered_quotient_masks": [
+            1,
+            2,
+            8,
+            11,
+            32,
+            64,
+            68,
+            82,
+            144,
+            156
+          ],
+          "recovered_quotient_span_dimension": 8
+        },
+        {
+          "half_lattice_hex": "0x071dc",
+          "half_lattice_mask": 29148,
+          "recovered_quotient_masks": [
+            2,
+            4,
+            24,
+            96,
+            100,
+            164,
+            244
+          ],
+          "recovered_quotient_span_dimension": 6
+        },
+        {
+          "half_lattice_hex": "0x07416",
+          "half_lattice_mask": 29718,
+          "recovered_quotient_masks": [
+            32,
+            102,
+            144
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x084c8",
+          "half_lattice_mask": 33992,
+          "recovered_quotient_masks": [
+            2,
+            4,
+            9,
+            16,
+            67,
+            156
+          ],
+          "recovered_quotient_span_dimension": 6
+        },
+        {
+          "half_lattice_hex": "0x08692",
+          "half_lattice_mask": 34450,
+          "recovered_quotient_masks": [
+            2,
+            4,
+            8,
+            16,
+            64,
+            65,
+            97
+          ],
+          "recovered_quotient_span_dimension": 7
+        },
+        {
+          "half_lattice_hex": "0x0989e",
+          "half_lattice_mask": 39070,
+          "recovered_quotient_masks": [
+            2,
+            8,
+            16,
+            32,
+            64,
+            144
+          ],
+          "recovered_quotient_span_dimension": 6
+        },
+        {
+          "half_lattice_hex": "0x09b90",
+          "half_lattice_mask": 39824,
+          "recovered_quotient_masks": [
+            2,
+            4,
+            8,
+            9,
+            16,
+            24,
+            32,
+            64,
+            96,
+            98,
+            106,
+            132,
+            149,
+            156,
+            164
+          ],
+          "recovered_quotient_span_dimension": 8
+        },
+        {
+          "half_lattice_hex": "0x0b936",
+          "half_lattice_mask": 47414,
+          "recovered_quotient_masks": [
+            2,
+            4,
+            65,
+            132
+          ],
+          "recovered_quotient_span_dimension": 4
+        },
+        {
+          "half_lattice_hex": "0x0ba11",
+          "half_lattice_mask": 47633,
+          "recovered_quotient_masks": [
+            1,
+            16,
+            32,
+            64,
+            73,
+            106
+          ],
+          "recovered_quotient_span_dimension": 6
+        },
+        {
+          "half_lattice_hex": "0x0bb5b",
+          "half_lattice_mask": 47963,
+          "recovered_quotient_masks": [
+            4,
+            5,
+            16,
+            66,
+            68,
+            80,
+            106
+          ],
+          "recovered_quotient_span_dimension": 6
+        },
+        {
+          "half_lattice_hex": "0x0ddbf",
+          "half_lattice_mask": 56767,
+          "recovered_quotient_masks": [
+            2,
+            8,
+            16,
+            64,
+            80,
+            156
+          ],
+          "recovered_quotient_span_dimension": 5
+        },
+        {
+          "half_lattice_hex": "0x0de57",
+          "half_lattice_mask": 56919,
+          "recovered_quotient_masks": [
+            4,
+            32,
+            152,
+            208,
+            220
+          ],
+          "recovered_quotient_span_dimension": 5
+        },
+        {
+          "half_lattice_hex": "0x0e2f4",
+          "half_lattice_mask": 58100,
+          "recovered_quotient_masks": [
+            1,
+            2,
+            4,
+            9,
+            16,
+            32,
+            64,
+            65,
+            132,
+            152,
+            154,
+            156
+          ],
+          "recovered_quotient_span_dimension": 8
+        },
+        {
+          "half_lattice_hex": "0x0e916",
+          "half_lattice_mask": 59670,
+          "recovered_quotient_masks": [
+            4,
+            32,
+            40,
+            58,
+            65,
+            98,
+            144,
+            221
+          ],
+          "recovered_quotient_span_dimension": 7
+        },
+        {
+          "half_lattice_hex": "0x0f127",
+          "half_lattice_mask": 61735,
+          "recovered_quotient_masks": [
+            1,
+            128
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x1188f",
+          "half_lattice_mask": 71823,
+          "recovered_quotient_masks": [
+            2,
+            8,
+            16,
+            32,
+            36,
+            65,
+            66,
+            89,
+            98,
+            156
+          ],
+          "recovered_quotient_span_dimension": 8
+        },
+        {
+          "half_lattice_hex": "0x1222e",
+          "half_lattice_mask": 74286,
+          "recovered_quotient_masks": [
+            1,
+            4,
+            32,
+            65,
+            66,
+            128
+          ],
+          "recovered_quotient_span_dimension": 6
+        },
+        {
+          "half_lattice_hex": "0x1240c",
+          "half_lattice_mask": 74764,
+          "recovered_quotient_masks": [
+            1,
+            2,
+            5,
+            102,
+            128,
+            244
+          ],
+          "recovered_quotient_span_dimension": 6
+        },
+        {
+          "half_lattice_hex": "0x127e4",
+          "half_lattice_mask": 75748,
+          "recovered_quotient_masks": [
+            1,
+            8,
+            16,
+            32,
+            66
+          ],
+          "recovered_quotient_span_dimension": 5
+        },
+        {
+          "half_lattice_hex": "0x12fee",
+          "half_lattice_mask": 77806,
+          "recovered_quotient_masks": [
+            1,
+            4,
+            9,
+            12,
+            16,
+            32,
+            64,
+            98,
+            102,
+            140,
+            144
+          ],
+          "recovered_quotient_span_dimension": 8
+        },
+        {
+          "half_lattice_hex": "0x13a7c",
+          "half_lattice_mask": 80508,
+          "recovered_quotient_masks": [
+            2,
+            4,
+            16,
+            32,
+            40,
+            64,
+            65
+          ],
+          "recovered_quotient_span_dimension": 7
+        },
+        {
+          "half_lattice_hex": "0x141f8",
+          "half_lattice_mask": 82424,
+          "recovered_quotient_masks": [
+            2,
+            4,
+            32,
+            65
+          ],
+          "recovered_quotient_span_dimension": 4
+        },
+        {
+          "half_lattice_hex": "0x149fe",
+          "half_lattice_mask": 84478,
+          "recovered_quotient_masks": [
+            8,
+            16,
+            32,
+            156
+          ],
+          "recovered_quotient_span_dimension": 4
+        },
+        {
+          "half_lattice_hex": "0x14c60",
+          "half_lattice_mask": 85088,
+          "recovered_quotient_masks": [
+            4,
+            8,
+            16,
+            17,
+            36,
+            106,
+            132
+          ],
+          "recovered_quotient_span_dimension": 7
+        },
+        {
+          "half_lattice_hex": "0x14ce0",
+          "half_lattice_mask": 85216,
+          "recovered_quotient_masks": [
+            4,
+            16,
+            65,
+            80,
+            208
+          ],
+          "recovered_quotient_span_dimension": 5
+        },
+        {
+          "half_lattice_hex": "0x14e42",
+          "half_lattice_mask": 85570,
+          "recovered_quotient_masks": [
+            4,
+            12,
+            16,
+            24,
+            32,
+            64,
+            65,
+            66,
+            80,
+            89,
+            100,
+            140,
+            153
+          ],
+          "recovered_quotient_span_dimension": 8
+        },
+        {
+          "half_lattice_hex": "0x14fd0",
+          "half_lattice_mask": 85968,
+          "recovered_quotient_masks": [
+            1,
+            2,
+            8,
+            16,
+            32,
+            36,
+            100
+          ],
+          "recovered_quotient_span_dimension": 7
+        },
+        {
+          "half_lattice_hex": "0x15886",
+          "half_lattice_mask": 88198,
+          "recovered_quotient_masks": [
+            1,
+            156,
+            208
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x16a9b",
+          "half_lattice_mask": 92827,
+          "recovered_quotient_masks": [
+            2,
+            4,
+            16,
+            32,
+            64,
+            65,
+            66,
+            122,
+            156
+          ],
+          "recovered_quotient_span_dimension": 8
+        },
+        {
+          "half_lattice_hex": "0x16c2b",
+          "half_lattice_mask": 93227,
+          "recovered_quotient_masks": [
+            4,
+            16,
+            24,
+            68,
+            80,
+            102,
+            132,
+            156
+          ],
+          "recovered_quotient_span_dimension": 6
+        },
+        {
+          "half_lattice_hex": "0x182ce",
+          "half_lattice_mask": 99022,
+          "recovered_quotient_masks": [
+            1,
+            5,
+            8,
+            12,
+            64,
+            65,
+            188,
+            208
+          ],
+          "recovered_quotient_span_dimension": 6
+        },
+        {
+          "half_lattice_hex": "0x18f2e",
+          "half_lattice_mask": 102190,
+          "recovered_quotient_masks": [
+            8,
+            32,
+            56,
+            58,
+            68
+          ],
+          "recovered_quotient_span_dimension": 5
+        },
+        {
+          "half_lattice_hex": "0x1c89a",
+          "half_lattice_mask": 116890,
+          "recovered_quotient_masks": [
+            8,
+            12,
+            32,
+            64,
+            65,
+            68,
+            70,
+            92
+          ],
+          "recovered_quotient_span_dimension": 7
+        },
+        {
+          "half_lattice_hex": "0x1cb7b",
+          "half_lattice_mask": 117627,
+          "recovered_quotient_masks": [
+            2,
+            4,
+            5,
+            32,
+            64,
+            66,
+            128,
+            244,
+            250
+          ],
+          "recovered_quotient_span_dimension": 8
+        },
+        {
+          "half_lattice_hex": "0x1ed9b",
+          "half_lattice_mask": 126363,
+          "recovered_quotient_masks": [
+            2,
+            4,
+            12,
+            32,
+            34,
+            64,
+            65,
+            80,
+            144
+          ],
+          "recovered_quotient_span_dimension": 8
+        },
+        {
+          "half_lattice_hex": "0x1f2a5",
+          "half_lattice_mask": 127653,
+          "recovered_quotient_masks": [
+            4,
+            16,
+            20,
+            24,
+            32,
+            64,
+            65,
+            68,
+            106,
+            144
+          ],
+          "recovered_quotient_span_dimension": 8
+        }
+      ],
+      "public_Q_basis_point_indices_one_based": [
+        1,
+        4,
+        6,
+        10,
+        11,
+        16,
+        20,
+        24
+      ],
+      "public_exceptional_quotient_dimension": 8,
+      "published_rank_lower_bound": 25
+    },
+    {
+      "annihilator_basis_hex": [],
+      "annihilator_basis_masks": [],
+      "annihilator_dimension_of_recovered_subspace": 0,
+      "blind_non_generic_point_count": 269,
+      "blind_recovered_quotient_dimension": 9,
+      "blindly_selected_exact_basis": [
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            4,
+            0,
+            -2,
+            1,
+            3,
+            -4,
+            6,
+            1,
+            -2,
+            -1,
+            6,
+            3,
+            4,
+            -1,
+            1,
+            -4,
+            6,
+            1,
+            1,
+            0,
+            0,
+            1,
+            2,
+            -2,
+            -1,
+            -1
+          ],
+          "exceptional_quotient_coordinates": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            2,
+            -2,
+            -1,
+            -1
+          ],
+          "exceptional_quotient_mod2_hex": "0x193",
+          "exceptional_quotient_mod2_mask": 403,
+          "point": {
+            "x": "12728310424048213541427",
+            "y": "-271297270474724111806596512345754240"
+          },
+          "source_half_lattice_hex": [
+            "0x1f2a5"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            2,
+            -1,
+            2,
+            -1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "exceptional_quotient_mod2_hex": "0x100",
+          "exceptional_quotient_mod2_mask": 256,
+          "point": {
+            "x": "31013773030692012952362",
+            "y": "259218761278718721947022534240482220"
+          },
+          "source_half_lattice_hex": [
+            "0x0ddbf"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -4,
+            -1,
+            2,
+            -1,
+            -3,
+            4,
+            -4,
+            -1,
+            2,
+            0,
+            -5,
+            -2,
+            -4,
+            2,
+            0,
+            2,
+            -3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x020",
+          "exceptional_quotient_mod2_mask": 32,
+          "point": {
+            "x": "70092507303907136504427",
+            "y": "-231851342664416993771847725402511240"
+          },
+          "source_half_lattice_hex": [
+            "0x14ce0"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            1,
+            -1,
+            -1,
+            1,
+            1,
+            -2,
+            2,
+            0,
+            -2,
+            -1,
+            4,
+            1,
+            3,
+            0,
+            1,
+            -2,
+            4,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            -1,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            -1,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x0e3",
+          "exceptional_quotient_mod2_mask": 227,
+          "point": {
+            "x": "41323018324927642358331/25",
+            "y": "-34798114331688219437413733584482247104/125"
+          },
+          "source_half_lattice_hex": [
+            "0x0101b"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -6,
+            1,
+            5,
+            -2,
+            -7,
+            10,
+            -12,
+            -2,
+            6,
+            1,
+            -15,
+            -4,
+            -10,
+            2,
+            -1,
+            8,
+            -14,
+            -2,
+            -1,
+            -1,
+            0,
+            -1,
+            -3,
+            2,
+            3,
+            1
+          ],
+          "exceptional_quotient_coordinates": [
+            -2,
+            -1,
+            -1,
+            0,
+            -1,
+            -3,
+            2,
+            3,
+            1
+          ],
+          "exceptional_quotient_mod2_hex": "0x1b6",
+          "exceptional_quotient_mod2_mask": 438,
+          "point": {
+            "x": "138020174299259348482227",
+            "y": "-179255702139010963434663845719645440"
+          },
+          "source_half_lattice_hex": [
+            "0x1222e"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -5,
+            0,
+            3,
+            -1,
+            -4,
+            6,
+            -8,
+            -2,
+            3,
+            1,
+            -9,
+            -4,
+            -6,
+            2,
+            0,
+            5,
+            -7,
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            -2,
+            1,
+            1,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            -2,
+            1,
+            1,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x0d3",
+          "exceptional_quotient_mod2_mask": 211,
+          "point": {
+            "x": "294167830049052449568907",
+            "y": "-1605438043765808534840802327700760"
+          },
+          "source_half_lattice_hex": [
+            "0x07416"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -1,
+            -1,
+            0,
+            0,
+            -1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x084",
+          "exceptional_quotient_mod2_mask": 132,
+          "point": {
+            "x": "293986223642309799221067",
+            "y": "4401994630532122709322778794594600"
+          },
+          "source_half_lattice_hex": [
+            "0x020cb"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            3,
+            0,
+            -1,
+            0,
+            3,
+            -4,
+            5,
+            1,
+            -2,
+            0,
+            5,
+            2,
+            3,
+            0,
+            0,
+            -3,
+            5,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "exceptional_quotient_coordinates": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "exceptional_quotient_mod2_hex": "0x1eb",
+          "exceptional_quotient_mod2_mask": 491,
+          "point": {
+            "x": "261186356923510494860355",
+            "y": "-63027361229382708747899223039222096"
+          },
+          "source_half_lattice_hex": [
+            "0x09b90"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            1,
+            0,
+            1,
+            0,
+            -1,
+            2,
+            -1,
+            0,
+            1,
+            0,
+            -2,
+            1,
+            -1,
+            0,
+            0,
+            1,
+            -2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x080",
+          "exceptional_quotient_mod2_mask": 128,
+          "point": {
+            "x": "228656377578334884258667",
+            "y": "97768954040606753137717563811377800"
+          },
+          "source_half_lattice_hex": [
+            "0x16c2b"
+          ]
+        }
+      ],
+      "distinct_recovered_mod2_quotient_class_count": 46,
+      "distinct_recovered_mod2_quotient_masks": [
+        1,
+        2,
+        8,
+        32,
+        48,
+        55,
+        58,
+        59,
+        64,
+        66,
+        71,
+        87,
+        96,
+        97,
+        112,
+        128,
+        132,
+        164,
+        165,
+        173,
+        211,
+        226,
+        227,
+        243,
+        256,
+        264,
+        283,
+        304,
+        307,
+        311,
+        315,
+        325,
+        327,
+        341,
+        403,
+        406,
+        411,
+        416,
+        428,
+        435,
+        438,
+        465,
+        467,
+        475,
+        483,
+        491
+      ],
+      "full_public_quotient_recovered": true,
+      "id": "r17-control-b",
+      "kummer_fingerprint_dimension": 50,
+      "kummer_selected_auxiliary_primes": [
+        {
+          "columns_added": 2,
+          "generic_rank_after": 1,
+          "prime": 41,
+          "prime_ideal_count": 2,
+          "rank_after": 1,
+          "rank_before": 0,
+          "residue_factors": [
+            "u + 10",
+            "u^2 + 32*u + 39"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 2,
+          "prime": 47,
+          "prime_ideal_count": 2,
+          "rank_after": 2,
+          "rank_before": 1,
+          "residue_factors": [
+            "u + 20",
+            "u^2 + 28*u + 26"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 3,
+          "prime": 83,
+          "prime_ideal_count": 2,
+          "rank_after": 3,
+          "rank_before": 2,
+          "residue_factors": [
+            "u + 16",
+            "u^2 + 68*u + 78"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 4,
+          "prime": 97,
+          "prime_ideal_count": 2,
+          "rank_after": 4,
+          "rank_before": 3,
+          "residue_factors": [
+            "u + 7",
+            "u^2 + 91*u + 61"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 5,
+          "prime": 101,
+          "prime_ideal_count": 2,
+          "rank_after": 5,
+          "rank_before": 4,
+          "residue_factors": [
+            "u + 79",
+            "u^2 + 23*u + 21"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 6,
+          "prime": 107,
+          "prime_ideal_count": 2,
+          "rank_after": 6,
+          "rank_before": 5,
+          "residue_factors": [
+            "u + 26",
+            "u^2 + 82*u + 95"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 7,
+          "prime": 113,
+          "prime_ideal_count": 2,
+          "rank_after": 7,
+          "rank_before": 6,
+          "residue_factors": [
+            "u + 12",
+            "u^2 + 102*u + 70"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 9,
+          "prime": 139,
+          "prime_ideal_count": 3,
+          "rank_after": 9,
+          "rank_before": 7,
+          "residue_factors": [
+            "u + 22",
+            "u + 43",
+            "u + 75"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 10,
+          "prime": 149,
+          "prime_ideal_count": 2,
+          "rank_after": 10,
+          "rank_before": 9,
+          "residue_factors": [
+            "u + 144",
+            "u^2 + 6*u + 135"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 11,
+          "prime": 157,
+          "prime_ideal_count": 2,
+          "rank_after": 11,
+          "rank_before": 10,
+          "residue_factors": [
+            "u + 100",
+            "u^2 + 58*u + 134"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 12,
+          "prime": 163,
+          "prime_ideal_count": 2,
+          "rank_after": 12,
+          "rank_before": 11,
+          "residue_factors": [
+            "u + 52",
+            "u^2 + 112*u + 123"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 13,
+          "prime": 179,
+          "prime_ideal_count": 2,
+          "rank_after": 13,
+          "rank_before": 12,
+          "residue_factors": [
+            "u + 143",
+            "u^2 + 37*u + 46"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 15,
+          "prime": 181,
+          "prime_ideal_count": 3,
+          "rank_after": 15,
+          "rank_before": 13,
+          "residue_factors": [
+            "u",
+            "u + 47",
+            "u + 135"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 16,
+          "prime": 191,
+          "prime_ideal_count": 3,
+          "rank_after": 17,
+          "rank_before": 15,
+          "residue_factors": [
+            "u + 112",
+            "u + 116",
+            "u + 155"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 16,
+          "prime": 211,
+          "prime_ideal_count": 2,
+          "rank_after": 18,
+          "rank_before": 17,
+          "residue_factors": [
+            "u + 109",
+            "u^2 + 103*u + 83"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 233,
+          "prime_ideal_count": 2,
+          "rank_after": 19,
+          "rank_before": 18,
+          "residue_factors": [
+            "u + 182",
+            "u^2 + 52*u + 65"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 239,
+          "prime_ideal_count": 2,
+          "rank_after": 20,
+          "rank_before": 19,
+          "residue_factors": [
+            "u + 150",
+            "u^2 + 90*u + 119"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 241,
+          "prime_ideal_count": 2,
+          "rank_after": 21,
+          "rank_before": 20,
+          "residue_factors": [
+            "u + 113",
+            "u^2 + 129*u + 10"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 17,
+          "prime": 251,
+          "prime_ideal_count": 3,
+          "rank_after": 23,
+          "rank_before": 21,
+          "residue_factors": [
+            "u + 50",
+            "u + 206",
+            "u + 247"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 257,
+          "prime_ideal_count": 2,
+          "rank_after": 24,
+          "rank_before": 23,
+          "residue_factors": [
+            "u + 246",
+            "u^2 + 12*u + 188"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 17,
+          "prime": 277,
+          "prime_ideal_count": 3,
+          "rank_after": 25,
+          "rank_before": 24,
+          "residue_factors": [
+            "u + 9",
+            "u + 35",
+            "u + 234"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 17,
+          "prime": 281,
+          "prime_ideal_count": 3,
+          "rank_after": 26,
+          "rank_before": 25,
+          "residue_factors": [
+            "u + 72",
+            "u + 244",
+            "u + 247"
+          ]
+        }
+      ],
+      "parameter": "-308/251",
+      "productive_half_lattice_centers": [
+        {
+          "half_lattice_hex": "0x0101b",
+          "half_lattice_mask": 4123,
+          "recovered_quotient_masks": [
+            48,
+            132,
+            227,
+            428
+          ],
+          "recovered_quotient_span_dimension": 4
+        },
+        {
+          "half_lattice_hex": "0x01b43",
+          "half_lattice_mask": 6979,
+          "recovered_quotient_masks": [
+            66,
+            264,
+            467
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x020cb",
+          "half_lattice_mask": 8395,
+          "recovered_quotient_masks": [
+            32,
+            128,
+            132,
+            164,
+            227,
+            243,
+            467
+          ],
+          "recovered_quotient_span_dimension": 6
+        },
+        {
+          "half_lattice_hex": "0x050a0",
+          "half_lattice_mask": 20640,
+          "recovered_quotient_masks": [
+            227,
+            475
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x05cf7",
+          "half_lattice_mask": 23799,
+          "recovered_quotient_masks": [
+            59,
+            112,
+            173,
+            428
+          ],
+          "recovered_quotient_span_dimension": 4
+        },
+        {
+          "half_lattice_hex": "0x06226",
+          "half_lattice_mask": 25126,
+          "recovered_quotient_masks": [
+            1,
+            227,
+            467
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x06c27",
+          "half_lattice_mask": 27687,
+          "recovered_quotient_masks": [
+            438
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x071dc",
+          "half_lattice_mask": 29148,
+          "recovered_quotient_masks": [
+            32,
+            227,
+            406,
+            465,
+            467
+          ],
+          "recovered_quotient_span_dimension": 5
+        },
+        {
+          "half_lattice_hex": "0x07416",
+          "half_lattice_mask": 29718,
+          "recovered_quotient_masks": [
+            64,
+            211,
+            227,
+            311
+          ],
+          "recovered_quotient_span_dimension": 4
+        },
+        {
+          "half_lattice_hex": "0x084c8",
+          "half_lattice_mask": 33992,
+          "recovered_quotient_masks": [
+            227
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x08692",
+          "half_lattice_mask": 34450,
+          "recovered_quotient_masks": [
+            71,
+            406,
+            465,
+            467,
+            483
+          ],
+          "recovered_quotient_span_dimension": 4
+        },
+        {
+          "half_lattice_hex": "0x09b90",
+          "half_lattice_mask": 39824,
+          "recovered_quotient_masks": [
+            87,
+            165,
+            406,
+            467,
+            491
+          ],
+          "recovered_quotient_span_dimension": 5
+        },
+        {
+          "half_lattice_hex": "0x0b936",
+          "half_lattice_mask": 47414,
+          "recovered_quotient_masks": [
+            97,
+            256,
+            327
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x0ba11",
+          "half_lattice_mask": 47633,
+          "recovered_quotient_masks": [
+            227,
+            264
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x0bb5b",
+          "half_lattice_mask": 47963,
+          "recovered_quotient_masks": [
+            32,
+            467
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x0ddbf",
+          "half_lattice_mask": 56767,
+          "recovered_quotient_masks": [
+            48,
+            256
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x0de57",
+          "half_lattice_mask": 56919,
+          "recovered_quotient_masks": [
+            165,
+            403,
+            467
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x0e2f4",
+          "half_lattice_mask": 58100,
+          "recovered_quotient_masks": [
+            132,
+            465
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x0e916",
+          "half_lattice_mask": 59670,
+          "recovered_quotient_masks": [
+            58,
+            403
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x0f127",
+          "half_lattice_mask": 61735,
+          "recovered_quotient_masks": [
+            411
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x1188f",
+          "half_lattice_mask": 71823,
+          "recovered_quotient_masks": [
+            32,
+            132,
+            406
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x1222e",
+          "half_lattice_mask": 74286,
+          "recovered_quotient_masks": [
+            8,
+            227,
+            256,
+            341,
+            438
+          ],
+          "recovered_quotient_span_dimension": 4
+        },
+        {
+          "half_lattice_hex": "0x1240c",
+          "half_lattice_mask": 74764,
+          "recovered_quotient_masks": [
+            1,
+            165,
+            256,
+            411,
+            491
+          ],
+          "recovered_quotient_span_dimension": 5
+        },
+        {
+          "half_lattice_hex": "0x127e4",
+          "half_lattice_mask": 75748,
+          "recovered_quotient_masks": [
+            132,
+            256,
+            467
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x12fee",
+          "half_lattice_mask": 77806,
+          "recovered_quotient_masks": [
+            8,
+            55,
+            58,
+            66,
+            226,
+            304,
+            325,
+            467,
+            475
+          ],
+          "recovered_quotient_span_dimension": 7
+        },
+        {
+          "half_lattice_hex": "0x13a7c",
+          "half_lattice_mask": 80508,
+          "recovered_quotient_masks": [
+            227,
+            465
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x141f8",
+          "half_lattice_mask": 82424,
+          "recovered_quotient_masks": [
+            227,
+            467
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x149fe",
+          "half_lattice_mask": 84478,
+          "recovered_quotient_masks": [
+            227,
+            256,
+            475
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x14ce0",
+          "half_lattice_mask": 85216,
+          "recovered_quotient_masks": [
+            32,
+            227,
+            256,
+            435,
+            475
+          ],
+          "recovered_quotient_span_dimension": 5
+        },
+        {
+          "half_lattice_hex": "0x14e42",
+          "half_lattice_mask": 85570,
+          "recovered_quotient_masks": [
+            243,
+            315
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x14fd0",
+          "half_lattice_mask": 85968,
+          "recovered_quotient_masks": [
+            2,
+            87,
+            227,
+            467,
+            475
+          ],
+          "recovered_quotient_span_dimension": 5
+        },
+        {
+          "half_lattice_hex": "0x15886",
+          "half_lattice_mask": 88198,
+          "recovered_quotient_masks": [
+            132,
+            341,
+            416,
+            428,
+            465,
+            467
+          ],
+          "recovered_quotient_span_dimension": 5
+        },
+        {
+          "half_lattice_hex": "0x16a9b",
+          "half_lattice_mask": 92827,
+          "recovered_quotient_masks": [
+            243,
+            406
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x16c2b",
+          "half_lattice_mask": 93227,
+          "recovered_quotient_masks": [
+            128,
+            165,
+            465
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x182ce",
+          "half_lattice_mask": 99022,
+          "recovered_quotient_masks": [
+            66,
+            87,
+            283,
+            475
+          ],
+          "recovered_quotient_span_dimension": 4
+        },
+        {
+          "half_lattice_hex": "0x18f2e",
+          "half_lattice_mask": 102190,
+          "recovered_quotient_masks": [
+            48,
+            406,
+            491
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x1c89a",
+          "half_lattice_mask": 116890,
+          "recovered_quotient_masks": [
+            66,
+            96,
+            307,
+            406
+          ],
+          "recovered_quotient_span_dimension": 4
+        },
+        {
+          "half_lattice_hex": "0x1ed9b",
+          "half_lattice_mask": 126363,
+          "recovered_quotient_masks": [
+            227,
+            467,
+            475
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x1f2a5",
+          "half_lattice_mask": 127653,
+          "recovered_quotient_masks": [
+            403,
+            406
+          ],
+          "recovered_quotient_span_dimension": 2
+        }
+      ],
+      "public_Q_basis_point_indices_one_based": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "public_exceptional_quotient_dimension": 9,
+      "published_rank_lower_bound": 26
+    },
+    {
+      "annihilator_basis_hex": [],
+      "annihilator_basis_masks": [],
+      "annihilator_dimension_of_recovered_subspace": 0,
+      "blind_non_generic_point_count": 72,
+      "blind_recovered_quotient_dimension": 10,
+      "blindly_selected_exact_basis": [
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            0,
+            1,
+            -2,
+            0,
+            1,
+            -1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x003",
+          "exceptional_quotient_mod2_mask": 3,
+          "point": {
+            "x": "-61839192657321166201545453",
+            "y": "-3432584260746421429551968384767769001408"
+          },
+          "source_half_lattice_hex": [
+            "0x0bb5b"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            1,
+            1,
+            -1,
+            0,
+            2,
+            -2,
+            2,
+            0,
+            -1,
+            0,
+            2,
+            1,
+            1,
+            -1,
+            0,
+            -1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x001",
+          "exceptional_quotient_mod2_mask": 1,
+          "point": {
+            "x": "139938670224736186461817683",
+            "y": "448636535633515067652141491945688781056"
+          },
+          "source_half_lattice_hex": [
+            "0x18f2e"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            2,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x012",
+          "exceptional_quotient_mod2_mask": 18,
+          "point": {
+            "x": "88000152245282595316579923",
+            "y": "1374666833452200086065070100109753414656"
+          },
+          "source_half_lattice_hex": [
+            "0x016a3"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x182",
+          "exceptional_quotient_mod2_mask": 386,
+          "point": {
+            "x": "-278014157455161416171508141",
+            "y": "2475451539851837249722185756408945724416"
+          },
+          "source_half_lattice_hex": [
+            "0x0bb5b"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -1,
+            0,
+            -1,
+            -1,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x050",
+          "exceptional_quotient_mod2_mask": 80,
+          "point": {
+            "x": "-1512579202544050473054805781/9",
+            "y": "104347768810357774480223361012349217176576/27"
+          },
+          "source_half_lattice_hex": [
+            "0x16c2b"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            -1,
+            -1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x023",
+          "exceptional_quotient_mod2_mask": 35,
+          "point": {
+            "x": "7842593953724984172936327891/49",
+            "y": "113608005529164414515040942262055311117488/343"
+          },
+          "source_half_lattice_hex": [
+            "0x14c60"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            1,
+            -2,
+            2,
+            0,
+            -2,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            -1,
+            1,
+            0,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            -1,
+            -1,
+            1,
+            0,
+            -1,
+            1
+          ],
+          "exceptional_quotient_coordinates": [
+            1,
+            1,
+            0,
+            0,
+            -1,
+            -1,
+            1,
+            0,
+            -1,
+            1
+          ],
+          "exceptional_quotient_mod2_hex": "0x373",
+          "exceptional_quotient_mod2_mask": 883,
+          "point": {
+            "x": "6092386889516150197304734491/25",
+            "y": "263607997795838420806345847674524398574336/125"
+          },
+          "source_half_lattice_hex": [
+            "0x15886"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            0,
+            0,
+            1,
+            -1,
+            -1,
+            3,
+            -2,
+            0,
+            3,
+            0,
+            -4,
+            -2,
+            -2,
+            0,
+            1,
+            1,
+            -2,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            1,
+            0,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x029",
+          "exceptional_quotient_mod2_mask": 41,
+          "point": {
+            "x": "9529450438011590543553202987/9",
+            "y": "-902879519485906424861098426038167442877888/27"
+          },
+          "source_half_lattice_hex": [
+            "0x0ba11"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -1,
+            -1,
+            1,
+            0,
+            -2,
+            2,
+            -2,
+            0,
+            1,
+            0,
+            -2,
+            -1,
+            -1,
+            0,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x103",
+          "exceptional_quotient_mod2_mask": 259,
+          "point": {
+            "x": "-14592401075594661725767195509/49",
+            "y": "-556516687602522807246820386030808306983912/343"
+          },
+          "source_half_lattice_hex": [
+            "0x14c60"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -2,
+            2,
+            0,
+            -1,
+            0,
+            2,
+            1,
+            1,
+            0,
+            0,
+            -1,
+            2,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x005",
+          "exceptional_quotient_mod2_mask": 5,
+          "point": {
+            "x": "17581176179688637885126373139",
+            "y": "2330888496156305582502821640634355057838144"
+          },
+          "source_half_lattice_hex": [
+            "0x13a7c"
+          ]
+        }
+      ],
+      "distinct_recovered_mod2_quotient_class_count": 15,
+      "distinct_recovered_mod2_quotient_masks": [
+        1,
+        3,
+        5,
+        8,
+        16,
+        17,
+        18,
+        35,
+        41,
+        80,
+        167,
+        259,
+        272,
+        386,
+        883
+      ],
+      "full_public_quotient_recovered": true,
+      "id": "r17-control-c",
+      "kummer_fingerprint_dimension": 53,
+      "kummer_selected_auxiliary_primes": [
+        {
+          "columns_added": 2,
+          "generic_rank_after": 1,
+          "prime": 11,
+          "prime_ideal_count": 2,
+          "rank_after": 1,
+          "rank_before": 0,
+          "residue_factors": [
+            "u + 3",
+            "u^2 + 9*u + 4"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 2,
+          "prime": 17,
+          "prime_ideal_count": 2,
+          "rank_after": 2,
+          "rank_before": 1,
+          "residue_factors": [
+            "u + 9",
+            "u^2 + 9*u + 4"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 3,
+          "prime": 37,
+          "prime_ideal_count": 2,
+          "rank_after": 3,
+          "rank_before": 2,
+          "residue_factors": [
+            "u + 25",
+            "u^2 + 13*u + 14"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 4,
+          "prime": 59,
+          "prime_ideal_count": 2,
+          "rank_after": 4,
+          "rank_before": 3,
+          "residue_factors": [
+            "u + 13",
+            "u^2 + 47*u + 22"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 6,
+          "prime": 61,
+          "prime_ideal_count": 3,
+          "rank_after": 6,
+          "rank_before": 4,
+          "residue_factors": [
+            "u + 12",
+            "u + 21",
+            "u + 29"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 7,
+          "prime": 71,
+          "prime_ideal_count": 2,
+          "rank_after": 7,
+          "rank_before": 6,
+          "residue_factors": [
+            "u + 41",
+            "u^2 + 31*u + 1"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 8,
+          "prime": 73,
+          "prime_ideal_count": 2,
+          "rank_after": 8,
+          "rank_before": 7,
+          "residue_factors": [
+            "u + 62",
+            "u^2 + 12*u + 10"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 9,
+          "prime": 79,
+          "prime_ideal_count": 2,
+          "rank_after": 9,
+          "rank_before": 8,
+          "residue_factors": [
+            "u + 50",
+            "u^2 + 30*u + 69"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 10,
+          "prime": 109,
+          "prime_ideal_count": 2,
+          "rank_after": 10,
+          "rank_before": 9,
+          "residue_factors": [
+            "u + 73",
+            "u^2 + 37*u + 45"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 11,
+          "prime": 113,
+          "prime_ideal_count": 2,
+          "rank_after": 11,
+          "rank_before": 10,
+          "residue_factors": [
+            "u + 68",
+            "u^2 + 46*u + 111"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 12,
+          "prime": 127,
+          "prime_ideal_count": 2,
+          "rank_after": 12,
+          "rank_before": 11,
+          "residue_factors": [
+            "u + 19",
+            "u^2 + 109*u + 54"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 13,
+          "prime": 137,
+          "prime_ideal_count": 2,
+          "rank_after": 13,
+          "rank_before": 12,
+          "residue_factors": [
+            "u + 136",
+            "u^2 + 2*u + 25"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 14,
+          "prime": 139,
+          "prime_ideal_count": 2,
+          "rank_after": 14,
+          "rank_before": 13,
+          "residue_factors": [
+            "u + 124",
+            "u^2 + 16*u + 115"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 15,
+          "prime": 157,
+          "prime_ideal_count": 2,
+          "rank_after": 15,
+          "rank_before": 14,
+          "residue_factors": [
+            "u + 108",
+            "u^2 + 50*u + 42"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 15,
+          "prime": 167,
+          "prime_ideal_count": 2,
+          "rank_after": 16,
+          "rank_before": 15,
+          "residue_factors": [
+            "u + 138",
+            "u^2 + 30*u + 21"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 16,
+          "prime": 173,
+          "prime_ideal_count": 2,
+          "rank_after": 17,
+          "rank_before": 16,
+          "residue_factors": [
+            "u + 56",
+            "u^2 + 118*u + 19"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 179,
+          "prime_ideal_count": 2,
+          "rank_after": 18,
+          "rank_before": 17,
+          "residue_factors": [
+            "u + 168",
+            "u^2 + 12*u + 97"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 181,
+          "prime_ideal_count": 2,
+          "rank_after": 19,
+          "rank_before": 18,
+          "residue_factors": [
+            "u + 123",
+            "u^2 + 59*u + 159"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 191,
+          "prime_ideal_count": 2,
+          "rank_after": 20,
+          "rank_before": 19,
+          "residue_factors": [
+            "u + 146",
+            "u^2 + 46*u + 56"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 197,
+          "prime_ideal_count": 2,
+          "rank_after": 21,
+          "rank_before": 20,
+          "residue_factors": [
+            "u + 170",
+            "u^2 + 28*u + 161"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 199,
+          "prime_ideal_count": 2,
+          "rank_after": 22,
+          "rank_before": 21,
+          "residue_factors": [
+            "u + 36",
+            "u^2 + 164*u + 151"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 17,
+          "prime": 227,
+          "prime_ideal_count": 3,
+          "rank_after": 24,
+          "rank_before": 22,
+          "residue_factors": [
+            "u + 34",
+            "u + 75",
+            "u + 119"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 17,
+          "prime": 239,
+          "prime_ideal_count": 3,
+          "rank_after": 25,
+          "rank_before": 24,
+          "residue_factors": [
+            "u + 86",
+            "u + 162",
+            "u + 231"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 263,
+          "prime_ideal_count": 2,
+          "rank_after": 26,
+          "rank_before": 25,
+          "residue_factors": [
+            "u + 188",
+            "u^2 + 76*u + 160"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 271,
+          "prime_ideal_count": 2,
+          "rank_after": 27,
+          "rank_before": 26,
+          "residue_factors": [
+            "u + 205",
+            "u^2 + 67*u + 185"
+          ]
+        }
+      ],
+      "parameter": "2456/135",
+      "productive_half_lattice_centers": [
+        {
+          "half_lattice_hex": "0x016a3",
+          "half_lattice_mask": 5795,
+          "recovered_quotient_masks": [
+            18,
+            41
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x020cb",
+          "half_lattice_mask": 8395,
+          "recovered_quotient_masks": [
+            18
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x05cf7",
+          "half_lattice_mask": 23799,
+          "recovered_quotient_masks": [
+            1,
+            883
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x06226",
+          "half_lattice_mask": 25126,
+          "recovered_quotient_masks": [
+            5
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x071dc",
+          "half_lattice_mask": 29148,
+          "recovered_quotient_masks": [
+            1
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x09b90",
+          "half_lattice_mask": 39824,
+          "recovered_quotient_masks": [
+            18
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x0b936",
+          "half_lattice_mask": 47414,
+          "recovered_quotient_masks": [
+            883
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x0ba11",
+          "half_lattice_mask": 47633,
+          "recovered_quotient_masks": [
+            41
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x0bb5b",
+          "half_lattice_mask": 47963,
+          "recovered_quotient_masks": [
+            3,
+            386
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x0e2f4",
+          "half_lattice_mask": 58100,
+          "recovered_quotient_masks": [
+            18,
+            272
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x1222e",
+          "half_lattice_mask": 74286,
+          "recovered_quotient_masks": [
+            883
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x127e4",
+          "half_lattice_mask": 75748,
+          "recovered_quotient_masks": [
+            1,
+            883
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x12fee",
+          "half_lattice_mask": 77806,
+          "recovered_quotient_masks": [
+            18
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x13a7c",
+          "half_lattice_mask": 80508,
+          "recovered_quotient_masks": [
+            1,
+            5
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x149fe",
+          "half_lattice_mask": 84478,
+          "recovered_quotient_masks": [
+            18
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x14c60",
+          "half_lattice_mask": 85088,
+          "recovered_quotient_masks": [
+            35,
+            259
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x14fd0",
+          "half_lattice_mask": 85968,
+          "recovered_quotient_masks": [
+            1,
+            16
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x15886",
+          "half_lattice_mask": 88198,
+          "recovered_quotient_masks": [
+            1,
+            8,
+            883
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x16c2b",
+          "half_lattice_mask": 93227,
+          "recovered_quotient_masks": [
+            80
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x182ce",
+          "half_lattice_mask": 99022,
+          "recovered_quotient_masks": [
+            1,
+            167,
+            883
+          ],
+          "recovered_quotient_span_dimension": 3
+        },
+        {
+          "half_lattice_hex": "0x18f2e",
+          "half_lattice_mask": 102190,
+          "recovered_quotient_masks": [
+            1,
+            883
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x1c89a",
+          "half_lattice_mask": 116890,
+          "recovered_quotient_masks": [
+            1
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x1cb7b",
+          "half_lattice_mask": 117627,
+          "recovered_quotient_masks": [
+            17
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x1ed9b",
+          "half_lattice_mask": 126363,
+          "recovered_quotient_masks": [
+            3
+          ],
+          "recovered_quotient_span_dimension": 1
+        }
+      ],
+      "public_Q_basis_point_indices_one_based": [
+        1,
+        10,
+        11,
+        13,
+        18,
+        22,
+        24,
+        25,
+        26,
+        27
+      ],
+      "public_exceptional_quotient_dimension": 10,
+      "published_rank_lower_bound": 27
+    },
+    {
+      "annihilator_basis_hex": [
+        "0x080",
+        "0x422"
+      ],
+      "annihilator_basis_masks": [
+        128,
+        1058
+      ],
+      "annihilator_dimension_of_recovered_subspace": 2,
+      "blind_non_generic_point_count": 22,
+      "blind_recovered_quotient_dimension": 9,
+      "blindly_selected_exact_basis": [
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x040",
+          "exceptional_quotient_mod2_mask": 64,
+          "point": {
+            "x": "67263776230351944906326349243",
+            "y": "-12795279094318746873277321380735540434300160"
+          },
+          "source_half_lattice_hex": [
+            "0x06226"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -2,
+            0,
+            0,
+            0,
+            -2,
+            2,
+            -2,
+            0,
+            1,
+            0,
+            -3,
+            -2,
+            -2,
+            1,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x200",
+          "exceptional_quotient_mod2_mask": 512,
+          "point": {
+            "x": "143601937803981347341966083963",
+            "y": "28901391879913922450731631685919699417577280"
+          },
+          "source_half_lattice_hex": [
+            "0x18f2e"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            2,
+            -1,
+            1,
+            2,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            1,
+            0,
+            1,
+            1,
+            -1,
+            1,
+            1,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "exceptional_quotient_coordinates": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "exceptional_quotient_mod2_hex": "0x461",
+          "exceptional_quotient_mod2_mask": 1121,
+          "point": {
+            "x": "-166161058767481415716486658277",
+            "y": "36642020603992704270761185612999196096796000"
+          },
+          "source_half_lattice_hex": [
+            "0x0de57"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            2,
+            0,
+            0,
+            0,
+            2,
+            -2,
+            2,
+            0,
+            -1,
+            1,
+            2,
+            1,
+            2,
+            -1,
+            -1,
+            -1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x001",
+          "exceptional_quotient_mod2_mask": 1,
+          "point": {
+            "x": "218766766743538752084108081723",
+            "y": "-79931619492163772644209733696250800676496000"
+          },
+          "source_half_lattice_hex": [
+            "0x0de57"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            0,
+            -2,
+            2,
+            2,
+            -5,
+            7,
+            -6,
+            1,
+            2,
+            -1,
+            -6,
+            -2,
+            -3,
+            1,
+            4,
+            4,
+            -3,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            -1,
+            -1,
+            -1
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            -1,
+            -1,
+            -1
+          ],
+          "exceptional_quotient_mod2_hex": "0x768",
+          "exceptional_quotient_mod2_mask": 1896,
+          "point": {
+            "x": "32810035260333315048659145362187/169",
+            "y": "136797643143108405580090481665255442971221975000/2197"
+          },
+          "source_half_lattice_hex": [
+            "0x01b43"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            1,
+            -1,
+            1,
+            2,
+            -2,
+            2,
+            -2,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "exceptional_quotient_coordinates": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          "exceptional_quotient_mod2_hex": "0x471",
+          "exceptional_quotient_mod2_mask": 1137,
+          "point": {
+            "x": "160189498740470237107504235733483/121",
+            "y": "-2013063275638948776116731104545358721194857949000/1331"
+          },
+          "source_half_lattice_hex": [
+            "0x0b936"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            2,
+            0,
+            -1,
+            1,
+            0,
+            -1,
+            2,
+            1,
+            0,
+            -1,
+            2,
+            1,
+            2,
+            0,
+            0,
+            -1,
+            2,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x008",
+          "exceptional_quotient_mod2_mask": 8,
+          "point": {
+            "x": "826730915287880705645635089072507/9409",
+            "y": "-1269466835230334785143277356636180894929343331200/912673"
+          },
+          "source_half_lattice_hex": [
+            "0x08692"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -1,
+            -1,
+            -1,
+            2,
+            -3,
+            2,
+            -2,
+            1,
+            1,
+            -2,
+            -1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            0,
+            0,
+            1,
+            -1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x25c",
+          "exceptional_quotient_mod2_mask": 604,
+          "point": {
+            "x": "31155707288859228379149005160321075/249001",
+            "y": "-2199953873130326287928264892415433614805368380529728/124251499"
+          },
+          "source_half_lattice_hex": [
+            "0x05cf7"
+          ]
+        },
+        {
+          "exact_relation_in_generic17_plus_public_complement": [
+            -1,
+            1,
+            -2,
+            1,
+            0,
+            -2,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "exceptional_quotient_coordinates": [
+            1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "exceptional_quotient_mod2_hex": "0x123",
+          "exceptional_quotient_mod2_mask": 291,
+          "point": {
+            "x": "561352967543494164934405191475053963/130321",
+            "y": "-420294608191089228290621390643377278449141473714081760/47045881"
+          },
+          "source_half_lattice_hex": [
+            "0x1222e"
+          ]
+        }
+      ],
+      "distinct_recovered_mod2_quotient_class_count": 10,
+      "distinct_recovered_mod2_quotient_masks": [
+        1,
+        8,
+        64,
+        291,
+        512,
+        604,
+        1120,
+        1121,
+        1137,
+        1896
+      ],
+      "full_public_quotient_recovered": false,
+      "id": "r17-control-d",
+      "kummer_fingerprint_dimension": 51,
+      "kummer_selected_auxiliary_primes": [
+        {
+          "columns_added": 3,
+          "generic_rank_after": 2,
+          "prime": 59,
+          "prime_ideal_count": 3,
+          "rank_after": 2,
+          "rank_before": 0,
+          "residue_factors": [
+            "u + 10",
+            "u + 18",
+            "u + 28"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 3,
+          "prime": 71,
+          "prime_ideal_count": 2,
+          "rank_after": 3,
+          "rank_before": 2,
+          "residue_factors": [
+            "u + 59",
+            "u^2 + 9*u + 15"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 4,
+          "prime": 83,
+          "prime_ideal_count": 2,
+          "rank_after": 4,
+          "rank_before": 3,
+          "residue_factors": [
+            "u + 45",
+            "u^2 + 35*u + 63"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 5,
+          "prime": 89,
+          "prime_ideal_count": 2,
+          "rank_after": 5,
+          "rank_before": 4,
+          "residue_factors": [
+            "u + 86",
+            "u^2 + 66"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 6,
+          "prime": 101,
+          "prime_ideal_count": 2,
+          "rank_after": 6,
+          "rank_before": 5,
+          "residue_factors": [
+            "u + 13",
+            "u^2 + 85*u + 11"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 7,
+          "prime": 103,
+          "prime_ideal_count": 2,
+          "rank_after": 7,
+          "rank_before": 6,
+          "residue_factors": [
+            "u + 63",
+            "u^2 + 37*u + 28"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 9,
+          "prime": 107,
+          "prime_ideal_count": 3,
+          "rank_after": 9,
+          "rank_before": 7,
+          "residue_factors": [
+            "u + 5",
+            "u + 10",
+            "u + 89"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 10,
+          "prime": 109,
+          "prime_ideal_count": 2,
+          "rank_after": 10,
+          "rank_before": 9,
+          "residue_factors": [
+            "u + 57",
+            "u^2 + 49*u + 81"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 12,
+          "prime": 131,
+          "prime_ideal_count": 3,
+          "rank_after": 12,
+          "rank_before": 10,
+          "residue_factors": [
+            "u + 44",
+            "u + 102",
+            "u + 113"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 13,
+          "prime": 139,
+          "prime_ideal_count": 2,
+          "rank_after": 13,
+          "rank_before": 12,
+          "residue_factors": [
+            "u + 99",
+            "u^2 + 37*u + 108"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 14,
+          "prime": 157,
+          "prime_ideal_count": 2,
+          "rank_after": 14,
+          "rank_before": 13,
+          "residue_factors": [
+            "u + 146",
+            "u^2 + 8*u + 120"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 15,
+          "prime": 163,
+          "prime_ideal_count": 2,
+          "rank_after": 15,
+          "rank_before": 14,
+          "residue_factors": [
+            "u + 42",
+            "u^2 + 118*u + 141"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 16,
+          "prime": 181,
+          "prime_ideal_count": 2,
+          "rank_after": 16,
+          "rank_before": 15,
+          "residue_factors": [
+            "u + 42",
+            "u^2 + 136*u + 4"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 193,
+          "prime_ideal_count": 2,
+          "rank_after": 17,
+          "rank_before": 16,
+          "residue_factors": [
+            "u + 112",
+            "u^2 + 78*u + 88"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 197,
+          "prime_ideal_count": 2,
+          "rank_after": 18,
+          "rank_before": 17,
+          "residue_factors": [
+            "u + 30",
+            "u^2 + 164*u + 56"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 17,
+          "prime": 211,
+          "prime_ideal_count": 3,
+          "rank_after": 20,
+          "rank_before": 18,
+          "residue_factors": [
+            "u + 11",
+            "u + 38",
+            "u + 159"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 227,
+          "prime_ideal_count": 2,
+          "rank_after": 21,
+          "rank_before": 20,
+          "residue_factors": [
+            "u + 186",
+            "u^2 + 38*u + 183"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 229,
+          "prime_ideal_count": 2,
+          "rank_after": 22,
+          "rank_before": 21,
+          "residue_factors": [
+            "u + 92",
+            "u^2 + 134*u + 28"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 239,
+          "prime_ideal_count": 2,
+          "rank_after": 23,
+          "rank_before": 22,
+          "residue_factors": [
+            "u + 91",
+            "u^2 + 145*u + 182"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 257,
+          "prime_ideal_count": 2,
+          "rank_after": 24,
+          "rank_before": 23,
+          "residue_factors": [
+            "u + 130",
+            "u^2 + 124*u + 91"
+          ]
+        },
+        {
+          "columns_added": 3,
+          "generic_rank_after": 17,
+          "prime": 271,
+          "prime_ideal_count": 3,
+          "rank_after": 26,
+          "rank_before": 24,
+          "residue_factors": [
+            "u + 26",
+            "u + 254",
+            "u + 259"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 281,
+          "prime_ideal_count": 2,
+          "rank_after": 27,
+          "rank_before": 26,
+          "residue_factors": [
+            "u + 138",
+            "u^2 + 140*u + 160"
+          ]
+        },
+        {
+          "columns_added": 2,
+          "generic_rank_after": 17,
+          "prime": 283,
+          "prime_ideal_count": 2,
+          "rank_after": 28,
+          "rank_before": 27,
+          "residue_factors": [
+            "u + 156",
+            "u^2 + 124*u + 251"
+          ]
+        }
+      ],
+      "parameter": "-9529/5471",
+      "productive_half_lattice_centers": [
+        {
+          "half_lattice_hex": "0x01b43",
+          "half_lattice_mask": 6979,
+          "recovered_quotient_masks": [
+            1896
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x050a0",
+          "half_lattice_mask": 20640,
+          "recovered_quotient_masks": [
+            1121
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x05cf7",
+          "half_lattice_mask": 23799,
+          "recovered_quotient_masks": [
+            604
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x06226",
+          "half_lattice_mask": 25126,
+          "recovered_quotient_masks": [
+            64
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x08692",
+          "half_lattice_mask": 34450,
+          "recovered_quotient_masks": [
+            8
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x0b936",
+          "half_lattice_mask": 47414,
+          "recovered_quotient_masks": [
+            1137
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x0de57",
+          "half_lattice_mask": 56919,
+          "recovered_quotient_masks": [
+            1,
+            1121
+          ],
+          "recovered_quotient_span_dimension": 2
+        },
+        {
+          "half_lattice_hex": "0x1222e",
+          "half_lattice_mask": 74286,
+          "recovered_quotient_masks": [
+            291
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x127e4",
+          "half_lattice_mask": 75748,
+          "recovered_quotient_masks": [
+            1120
+          ],
+          "recovered_quotient_span_dimension": 1
+        },
+        {
+          "half_lattice_hex": "0x18f2e",
+          "half_lattice_mask": 102190,
+          "recovered_quotient_masks": [
+            512
+          ],
+          "recovered_quotient_span_dimension": 1
+        }
+      ],
+      "public_Q_basis_point_indices_one_based": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        11,
+        15,
+        19,
+        22
+      ],
+      "public_exceptional_quotient_dimension": 11,
+      "published_rank_lower_bound": 28
+    }
+  ],
+  "reproducing_command": "/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python elliptic-curves/cas/verify_r17_generic_deep_holes_matrix.sage",
+  "schema": "elliptic-curves.half-lattice-fake-descent-r17-matrix-verification.v1",
+  "status": "PASS_POSTHOC_PUBLIC_VERIFICATION_OF_FIXED_DEEPEST43_RULE",
+  "summary": {
+    "blind_recovered_quotient_dimensions": [
+      8,
+      9,
+      10,
+      9
+    ],
+    "full_recall_flags": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "interpretation": "The frozen generic-deepest43 rule fully recovers +8,+9,+10 and nine of the eleven rank-28 quotient directions.  Adding the independently ranked specialized-deepest classes in the rank-28 gate recovers the missing two.",
+    "target_quotient_dimensions": [
+      8,
+      9,
+      10,
+      11
+    ]
+  }
+}

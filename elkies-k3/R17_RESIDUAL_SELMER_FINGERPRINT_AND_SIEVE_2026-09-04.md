@@ -70,9 +70,10 @@ matrix, and the exact-rank question stay `UNKNOWN`.
 ## Why the full BNF is the wrong front door
 
 The known points themselves now give an exact explanation for the class-group
-wall.  For each of curves 351, 356, 376, 377, and 385, form the matrix of
-prime-ideal valuation parities of all displayed Kummer classes
-`4*x(P)-zeta` at every prime above the bad rational primes.  The result is:
+wall.  The comparison covers curves 351, 356, 376, 377, and 385 and native
+alternate-Q80 curve 12.  Form the matrix of prime-ideal valuation parities of
+all displayed Kummer classes `4*x(P)-zeta` at every prime above the bad
+rational primes.  The result is:
 
 | curve | gain over MW17 | full valuation rank | everywhere-even kernel | proved `dim Cl(K)[2]` lower bound | adjusted residual image lower bound |
 |---:|---:|---:|---:|---:|---:|
@@ -81,6 +82,7 @@ prime-ideal valuation parities of all displayed Kummer classes
 | 376 | 5 | 3 | 19 | 17 | 3 |
 | 377 | 6 | 7 | 16 | 15 | 5 |
 | 385 | 12 | 12 | 17 | 15 | 10 |
+| 12 (alternate Q80) | 12 | 6 | 23 | 22 | 11 |
 
 These are unconditional lower bounds for the full ideal class groups of the
 completed-square cubic fields, not S-class groups and not Selmer upper bounds.
@@ -92,14 +94,16 @@ squareclasses, of dimension `r1+r2-1` (the missing unit direction is `-1`,
 whose norm is `-1` in degree three).
 
 More significantly, the exceptional rows add **zero** valuation rank modulo
-the generic MW17 rows on all five controls.  Thus every exceptional direction
+the generic MW17 rows on all six fibres.  Thus every exceptional direction
 can be adjusted by a certified generic Kummer class to become everywhere
-even.  After the norm-positive unit ambiguity, the two `+12` residual blocks
-force at least 11 and 10 cubic 2-class directions, while the `+5` control
-forces only three.  This is an exact global fingerprint distinguishing both
-record fibres from curve 376.  It also shows that bad-prime valuation parity
-alone cannot recover the jump: the separation lives after quotienting that
-map, in ideal classes and local unit data.
+even.  After the norm-positive unit ambiguity, the three `+12` residual blocks
+force at least 11, 10, and 11 cubic 2-class directions, while the `+5` control
+forces only three.  Across the observed jump strata the bounds are strictly
+ordered as `+5 -> 3`, `+6 -> 5`, `+8 -> 6`, and `+12 -> 10..11`.  The exact
+quotient statement and complete data set are canonical in
+[`R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md`](R17_KUMMER_CLASSGROUP_PRESSURE_COMPARISON_2026-09-04.md).
+Because the exceptional points are inputs, this is currently an explanation
+of the class-group wall rather than an out-of-sample rank predictor.
 
 The replay additionally constructs for every point the exact integral
 half-ideal
@@ -111,8 +115,11 @@ d^2 = denominator(4*x(P)),
 
 and verifies that `A_P^2/(d^2*(4*x(P)-zeta))` is supported only above the bad
 primes.  These are ready-made generators for the quotient that the descent
-actually needs.  The certificate is
+actually needs.  The original five-fibre certificate is
 [`../artifacts/generated-results/elkies-k3-r17-kummer-classgroup-pressure-v1.json`](../artifacts/generated-results/elkies-k3-r17-kummer-classgroup-pressure-v1.json).
+The six-fibre comparative certificate is
+[`../artifacts/generated-results/elkies-k3-r17-kummer-classgroup-pressure-comparison-v1.json`](../artifacts/generated-results/elkies-k3-r17-kummer-classgroup-pressure-comparison-v1.json).
+<!-- status-consumer: EC-K3-R17-KUMMER-CLASSGROUP-PRESSURE-COMPARISON 74b1dae24470b531 -->
 
 The resulting algorithmic target is not `Cl(K)`: it is
 

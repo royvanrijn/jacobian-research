@@ -163,6 +163,32 @@ def split_shared_cofactors(values, engine="product-tree", needs_refinement=None)
     }
 
 
+def select_batch_gcd_records(records, max_inputs=0):
+    """Select a deterministic cheap tranche for the expensive product tree.
+
+    The complete unresolved list is still retained in the output ledger.  A
+    positive cap selects the lowest-bit-length cofactors first, with the
+    original generator order as a stable tie-break.  Every relation recovered
+    from this tranche is exact; omitted records merely keep the run bounded.
+    """
+
+    indexed = list(enumerate(records))
+    if max_inputs <= 0 or max_inputs >= len(indexed):
+        return indexed
+    return sorted(
+        indexed,
+        key=lambda item: (
+            int(
+                item[1].get(
+                    "cofactor_bit_length", int(item[1]["cofactor"]).bit_length()
+                )
+            ),
+            int(item[1]["generator_index"]),
+            item[0],
+        ),
+    )[:max_inputs]
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--factor-base-bound", type=int, default=262523)
@@ -299,6 +325,16 @@ def main() -> None:
             "common factors"
         ),
     )
+    parser.add_argument(
+        "--batch-gcd-max-inputs",
+        type=int,
+        default=0,
+        help=(
+            "zero processes every unresolved cofactor; a positive value "
+            "processes a deterministic lowest-bit-length tranche while "
+            "retaining the full unresolved cache in the ledger"
+        ),
+    )
     parser.add_argument("--lll-scale", type=int, default=10**30)
     parser.add_argument("--lattice-combination-bound", type=int, default=2)
     parser.add_argument(
@@ -320,6 +356,8 @@ def main() -> None:
         raise ValueError("--max-special-ideals-per-rational-prime must be nonnegative")
     if args.max_residual_primes < 1:
         raise ValueError("--max-residual-primes must be positive")
+    if args.batch_gcd_max_inputs < 0:
+        raise ValueError("--batch-gcd-max-inputs must be nonnegative")
     if args.special_ideal_mode == "cycle-pairs" and args.pair_cycle_length < 3:
         raise ValueError("--pair-cycle-length must be at least three in cycle-pairs mode")
     if (
@@ -1028,6 +1066,14 @@ def main() -> None:
         "enabled": args.batch_gcd_unresolved_cofactors,
         "engine": args.batch_gcd_engine,
         "input_cofactor_count": len(unresolved_cofactors),
+        "selected_input_count": 0,
+        "omitted_input_count": 0,
+        "selection_policy": (
+            "all unresolved cofactors"
+            if args.batch_gcd_max_inputs == 0
+            else "lowest cofactor bit length, then generator index"
+        ),
+        "max_inputs": args.batch_gcd_max_inputs,
         "proper_gcd_hit_count": 0,
         "completely_resolved_count": 0,
         "exact_partial_edge_count": 0,
@@ -1040,7 +1086,16 @@ def main() -> None:
     }
     if args.batch_gcd_unresolved_cofactors and unresolved_cofactors:
         batch_started = time.monotonic()
-        cofactors = [int(record["cofactor"]) for record in unresolved_cofactors]
+        selected_unresolved = select_batch_gcd_records(
+            unresolved_cofactors, args.batch_gcd_max_inputs
+        )
+        batch_gcd_resolution["selected_input_count"] = len(selected_unresolved)
+        batch_gcd_resolution["omitted_input_count"] = (
+            len(unresolved_cofactors) - len(selected_unresolved)
+        )
+        cofactors = [
+            int(record["cofactor"]) for _original_index, record in selected_unresolved
+        ]
         parts, gcd_statistics = split_shared_cofactors(
             cofactors,
             engine=args.batch_gcd_engine,
@@ -1049,8 +1104,8 @@ def main() -> None:
         batch_gcd_resolution.update(gcd_statistics)
 
         rank_before_batch = len(quotient_pivots)
-        for unresolved_index, (record, factor_parts) in enumerate(
-            zip(unresolved_cofactors, parts)
+        for (unresolved_index, record), factor_parts in zip(
+            selected_unresolved, parts
         ):
             if len(factor_parts) < 2:
                 continue
@@ -1160,6 +1215,7 @@ def main() -> None:
         batch_gcd_resolution["elapsed_seconds"] = time.monotonic() - batch_started
         print(
             f"{PROTOCOL}|stage=batch_gcd|inputs={len(unresolved_cofactors)}"
+            f"|selected={len(selected_unresolved)}"
             f"|proper_hits={batch_gcd_resolution['proper_gcd_hit_count']}"
             f"|resolved={batch_gcd_resolution['completely_resolved_count']}"
             f"|cycles={batch_gcd_resolution['closed_cycle_count']}"
@@ -1171,6 +1227,35 @@ def main() -> None:
     ledger = {
         "schema": "elliptic-curves.bnf-free-principal-relation-ledger.v1",
         "status": "exact_minkowski_ideal_relations_not_class_group_completion",
+        "collection_settings": {
+            "factor_base_bound": args.factor_base_bound,
+            "special_q_min": args.special_q_min,
+            "special_q_max": args.special_q_max,
+            "max_special_q": args.max_special_q,
+            "max_special_ideals_per_rational_prime": (
+                args.max_special_ideals_per_rational_prime
+            ),
+            "seed_specials": args.seed_specials,
+            "special_residue_degree": args.special_residue_degree,
+            "special_primes_in_factor_base": args.special_primes_in_factor_base,
+            "special_ideal_mode": args.special_ideal_mode,
+            "pair_cycle_length": args.pair_cycle_length,
+            "norm_factor_mode": args.norm_factor_mode,
+            "trial_prime_bound": args.trial_prime_bound,
+            "residual_factor_limit": args.residual_factor_limit,
+            "large_prime_bound": args.large_prime_bound,
+            "max_residual_primes": args.max_residual_primes,
+            "large_prime_merge_mode": args.large_prime_merge_mode,
+            "lll_scale": args.lll_scale,
+            "lattice_combination_bound": args.lattice_combination_bound,
+            "shape_twists": [list(twist) for twist in twists],
+            "retain_unresolved_cofactors": args.retain_unresolved_cofactors,
+            "batch_gcd_unresolved_cofactors": (
+                args.batch_gcd_unresolved_cofactors
+            ),
+            "batch_gcd_engine": args.batch_gcd_engine,
+            "batch_gcd_max_inputs": args.batch_gcd_max_inputs,
+        },
         "special_ideal_mode": args.special_ideal_mode,
         "special_residue_degree": args.special_residue_degree,
         "max_special_ideals_per_rational_prime": (

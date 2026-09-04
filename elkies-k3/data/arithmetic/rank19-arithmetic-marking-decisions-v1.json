@@ -441,12 +441,28 @@
               "equals": 2
             },
             {
+              "path": "exact_marked_period_curve.certified_nonrational_cm_points.marked_curve_residue_degree_over_QQ",
+              "equals": 2
+            },
+            {
               "path": "quotient_tower.genus_two_target.genus",
               "equals": 2
             },
             {
+              "path": "genus_two_quotient.map_from_exact_marked_curve.branch_order_discriminant",
+              "equals": -1236
+            },
+            {
               "path": "full_atkin_lehner_quotient.cremona_label",
               "equals": "618f1"
+            },
+            {
+              "path": "jacquet_langlands_cover_precheck.status",
+              "equals": "PASS_EXACT_NEWFORM_AND_PRYM_ACCOUNTING"
+            },
+            {
+              "path": "jacquet_langlands_cover_precheck.stable_curve_jacobian_rank",
+              "equals": 6
             }
           ]
         }
@@ -457,6 +473,7 @@
         "explicit_model": null,
         "label": "X_0^6(103)/<w_618>",
         "genus": 6,
+        "degree_from_norm_one_curve": 2,
         "coarse_norm_one_curve": {
           "status": "PASS_EXACT_SHIMURA_CURVE",
           "label": "X_0^6(103)",
@@ -481,7 +498,7 @@
             618
           ]
         },
-        "rational_points": "two certified discriminant -3 CM points; the non-CM rational locus is unresolved"
+        "rational_points": "two certified discriminant -3 CM points; one discriminant -24 quadratic closed point; the non-CM rational locus is unresolved"
       },
       "easy_quotient_maps": [
         {
@@ -493,7 +510,9 @@
           "target_model": "y^2 = 1944*x^6 + 441*x^4 - 90*x^2 + 9",
           "verified_rational_points": [
             "(0,+/-3)",
-            "(+/-1,+/-48)"
+            "(+/-1,+/-48)",
+            "(+/-1/3,+/-8/3)",
+            "(+/-1/5,+/-312/125)"
           ],
           "boundary": "No equation or descent class for the degree-two source cover is presently certified."
         },
@@ -514,6 +533,16 @@
           "conclusion": "The exact marked curve has two rational order-3 CM orbifold points, but each has geometric Picard rank 20 and does not realize the requested saturated rank-19 NS."
         },
         {
+          "status": "PASS_EXACT_DISCRIMINANT_MINUS_24_QUADRATIC_CM_FIBER",
+          "method": "Gonzalez--Rotger CM residue-field formula at order discriminant -24",
+          "conclusion": "The second w_3-fixed rational point on the genus-two quotient has a quadratic conjugate discriminant -24 CM fiber on the exact marked curve, so it supplies no rational marked point."
+        },
+        {
+          "status": "PASS_EXACT_NEWFORM_AND_PRYM_ACCOUNTING",
+          "method": "Jacquet--Langlands plus exact level-618 modular-symbol and Atkin--Lehner eigenspace decomposition",
+          "conclusion": "Jac(C_1236) is isogenous to 618a1 through 618f1, Jac(B) to 618e1 x 618f1, and Prym(C_1236/B) to 618a1 x 618b1 x 618c1 x 618d1. All six factors have rank one, so classical Chabauty fails at rank=genus while the Neron--Severi-enhanced quadratic-Chabauty dimension screen passes."
+        },
+        {
           "status": "UNRESOLVED_EXACT_DEGREE_TWO_MARKING_LIFT",
           "method": "degree-two map to the exact genus-two Atkin--Lehner quotient",
           "conclusion": "The rational fibers above the displayed genus-two rational points have not been determined; no non-CM rational marked point is certified."
@@ -526,6 +555,7 @@
         "Ogg's Atkin--Lehner fixed-point and Riemann--Hurwitz formulas",
         "Gonzalez--Rotger's CM residue-field formula for Atkin--Lehner quotients",
         "Padurariu--Saia's exact genus-two quotient model and elliptic quotient identification",
+        "Jacquet--Langlands and the ramified-place Atkin--Lehner sign normalization",
         "the rank-three ternary-spin/fully-marked-K3 period correspondence"
       ]
     }

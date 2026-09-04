@@ -30,6 +30,11 @@ class Pari219SelmerFromBnfTests(unittest.TestCase):
         source = (CAS / "run_elkies_2026_record_pari219_bnf.py").read_text()
         self.assertIn("factor_certificate_sha256", source)
         self.assertIn("bnfcertify(b)", source)
+        self.assertIn("--relation-threads", source)
+        self.assertIn("serial collector's early-abort strategies", source)
+        self.assertIn("iferr(b=bnfinit", source)
+        self.assertIn("reload_certified=1", source)
+        self.assertIn('and "  ***" not in log_text', source)
 
     def test_complete_log_parser_retains_delete_one_ranks_and_basis(self) -> None:
         log = """\

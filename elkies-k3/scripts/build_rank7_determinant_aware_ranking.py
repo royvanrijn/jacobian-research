@@ -179,9 +179,28 @@ def default_coordinate(name: str) -> dict:
     }
 
 
-def arithmetic_coordinate(surface_row: dict, overlay: dict | None) -> dict:
+def arithmetic_coordinate(
+    surface_row: dict, overlay: dict | None, classifier_row: dict
+) -> dict:
     if overlay is not None:
         return dict(overlay)
+    if (
+        classifier_row.get("phase_2_certificate_status")
+        == "UNRESOLVED_FOR_EXPLICIT_REASON"
+    ):
+        return {
+            "tier": 1,
+            "status": "PASS_EXACT_MARKED_CURVE_NONCM_RATIONAL_LOCUS_UNRESOLVED",
+            "evidence": [
+                replay["path"]
+                for replay in classifier_row.get("certificate_replay", [])
+            ],
+            "boundary": classifier_row["next_arithmetic_gate"],
+            "phase_2_certificate_status": classifier_row[
+                "phase_2_certificate_status"
+            ],
+            "candidate_eligible": True,
+        }
     gate = surface_row["moduli"]["t_arithmetic"]["pre_solver_gate"]
     if gate["equation_solver_may_launch"]:
         return {
@@ -355,10 +374,13 @@ def build(
             continue
 
         overlay = overlays.get(surface_id, {})
+        classifier_row = arithmetic_rows[surface_id]
         arithmetic = arithmetic_coordinate(
-            surface_rows[surface_id], overlay.get("arithmetic_field_of_definition")
+            surface_rows[surface_id],
+            overlay.get("arithmetic_field_of_definition"),
+            classifier_row,
         )
-        marking_classification = arithmetic_rows[surface_id]["classification"]
+        marking_classification = classifier_row["classification"]
         overlay_eligible = arithmetic.get("candidate_eligible", True)
         if (marking_classification == "ARITHMETICALLY_EXCLUDED") != (
             overlay_eligible is False
@@ -444,8 +466,7 @@ def build(
             int(source["reducible_fibre_support_count"]),
             surface_id,
         )
-        candidates.append(
-            {
+        candidate_record = {
                 "surface_id": surface_id,
                 "legacy_ns_ids": surface["legacy_ns_ids"],
                 "determinant": determinant,
@@ -484,7 +505,16 @@ def build(
                 "priority_key": list(priority_key[:-1]),
                 "_priority_key": priority_key,
             }
-        )
+        if classifier_row.get("phase_2_certificate_status") is not None:
+            candidate_record.update(
+                {
+                    "phase_2_certificate_status": classifier_row[
+                        "phase_2_certificate_status"
+                    ],
+                    "next_arithmetic_gate": classifier_row["next_arithmetic_gate"],
+                }
+            )
+        candidates.append(candidate_record)
 
     candidates.sort(key=lambda row: row["_priority_key"])
     for rank, row in enumerate(candidates, 1):
@@ -514,6 +544,11 @@ def build(
                 for name, passed in row["readiness_strict_passes"].items()
                 if not passed
             ],
+            **(
+                {"next_arithmetic_gate": row["next_arithmetic_gate"]}
+                if row.get("phase_2_certificate_status") is not None
+                else {}
+            ),
         }
         for row in candidates
         if not row["expensive_equation_scoring_eligible"]

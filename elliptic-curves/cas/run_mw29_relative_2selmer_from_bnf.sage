@@ -23,6 +23,7 @@ import argparse
 from hashlib import sha256
 import json
 from pathlib import Path
+import re
 import sys
 import time
 from typing import Any
@@ -48,6 +49,24 @@ PUBLIC_STATUS = "PASS_PINNED_PUBLIC_POINT_PROJECTION_FOR_69_RECOGNIZED_FIBRES"
 PRESSURE_STATUS = "PROVED_KUMMER_FORCED_CUBIC_CLASS_GROUP_2RANK_LOWER_BOUNDS"
 SCHEMA = "elliptic-curves.mw29-relative-2selmer-from-bnf.v1"
 PROTOCOL = "MW29REL2BNF-v1"
+HECKE_PROTOCOL = "ELKIES356HECKEGLOBAL2-v1"
+HECKE_PROVIDER = CAS / "run_elkies_2026_curve356_hecke_s_squareclasses.jl"
+HECKE_REDUCED_CUBIC = (
+    "x^3 - x^2 - "
+    "24391876744717707263532695900840552395172973498186560300*x - "
+    "46943906433780620456844832699051340439698711588743845207309557656274241785479710000"
+)
+HECKE_BASIS_RE = re.compile(
+    rf"^{re.escape(HECKE_PROTOCOL)}\|stage=norm_basis\|status=PASS"
+    r"\|index=(?P<index>\d+)\|coefficients=(?P<coefficients>[^|]+)"
+    r"\|norm=(?P<norm>.+)$"
+)
+HECKE_COMPLETE_RE = re.compile(
+    rf"^{re.escape(HECKE_PROTOCOL)}\|stage=complete\|status=PASS"
+    r"\|global_s_squareclass_dimension=(?P<sclass>\d+)"
+    r"\|norm_square_envelope_dimension=(?P<norm>\d+)"
+    r"\|class_group_two_rank=(?P<class2>\d+)$"
+)
 
 sys.path.insert(0, str(CAS))
 from build_mw29_relative_2selmer_matrix import build_certificate  # noqa: E402
@@ -99,6 +118,31 @@ ell2allowed_at_place(ell,bnf,K,curve_theta,LS2,p) =
   pp=ppinit(bnf.nf,p); prank=#pp-(p!=2);
   locimage=elllocalimage_mapped(bnf.nf,pp,K,polrel,curve_theta);
   LS2image=LS2localimage(bnf.nf,LS2,pp);
+  locimage=matintersect(LS2image,locimage);
+  allowed=concat(matker(LS2image),matinverseimage(LS2image,locimage)*Mod(1,2));
+  allowed=matimage(allowed*Mod(1,2));
+  return([lift(allowed),prank,#locimage,#LS2image]);
+};
+
+/* MW29_RELATIVE_GP_DEFINITION_SPLIT */
+
+ell2allowed_at_place_nf(ell,nf,K,curve_theta,LS2,p) =
+{
+  my(A,B,C,polrel,theta_embeddings,real_place,signs,pp,prank,locimage,LS2image,allowed);
+  if(#ell < 13,ell=ellinit(ell));
+  A=ell.a2; B=ell.a4; C=ell.a6; polrel=Pol([1,A,B,C]);
+  if(p==-1,
+    if(nf.r1==3,
+      theta_embeddings=nfeltembed(nf,curve_theta);real_place=1;
+      for(i=2,#theta_embeddings,if(theta_embeddings[i]<theta_embeddings[real_place],real_place=i));
+      signs=vector(#LS2,i,nfeltsign(nf,LS2[i],real_place)<0);
+      allowed=matker(Mat(signs*Mod(1,2)))*Mod(1,2);
+      return([lift(allowed),1,1,matrank(Mat(signs*Mod(1,2)))])
+    , return([matid(#LS2),0,0,0]))
+  );
+  pp=ppinit(nf,p); prank=#pp-(p!=2);
+  locimage=elllocalimage_mapped(nf,pp,K,polrel,curve_theta);
+  LS2image=LS2localimage(nf,LS2,pp);
   locimage=matintersect(LS2image,locimage);
   allowed=concat(matker(LS2image),matinverseimage(LS2image,locimage)*Mod(1,2));
   allowed=matimage(allowed*Mod(1,2));
@@ -263,10 +307,65 @@ def prioritized_places(curve_id: int, bad_primes: list[int]) -> list[int]:
     return [*preferred, -1, *(prime for prime in ordered if prime not in preferred)]
 
 
+def parse_hecke_global_log(path: Path) -> dict[str, Any]:
+    """Accept only the terminal output of the pinned unconditional provider."""
+
+    text = path.read_text(errors="replace")
+    required = (
+        f"{HECKE_PROTOCOL}|stage=input|status=PASS|hecke_version=0.37.6"
+        "|random_seed=20260904|curve=356|grh=false",
+        f"{HECKE_PROTOCOL}|stage=maximal_order|status=PASS",
+        f"{HECKE_PROTOCOL}|stage=class_group|status=PASS|grh=false",
+        f"{HECKE_PROTOCOL}|stage=unit_group|status=PASS|grh=false",
+    )
+    missing = [marker for marker in required if marker not in text]
+    if missing:
+        raise ArithmeticError(
+            "Hecke global-provider log lacks unconditional completion markers: "
+            + ", ".join(missing)
+        )
+    basis = []
+    complete = None
+    for line in text.splitlines():
+        match = HECKE_BASIS_RE.match(line)
+        if match:
+            coefficients = match.group("coefficients").split(",")
+            if len(coefficients) != 3:
+                raise ArithmeticError("Hecke norm-basis row is not cubic")
+            basis.append(
+                {
+                    "index": int(match.group("index")),
+                    "coefficients": coefficients,
+                    "norm": match.group("norm"),
+                }
+            )
+            continue
+        match = HECKE_COMPLETE_RE.match(line)
+        if match:
+            complete = {
+                "global_s_squareclass_dimension": int(match.group("sclass")),
+                "norm_square_envelope_dimension": int(match.group("norm")),
+                "class_group_two_rank": int(match.group("class2")),
+            }
+    if complete is None:
+        raise ArithmeticError("Hecke global-provider log has no terminal PASS record")
+    norm_dimension = complete["norm_square_envelope_dimension"]
+    if [row["index"] for row in basis] != list(range(1, norm_dimension + 1)):
+        raise ArithmeticError("Hecke norm-basis rows are incomplete or misordered")
+    complete["basis"] = basis
+    return complete
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--curve-id", type=int, choices=(356, 385), required=True)
-    parser.add_argument("--bnf-metadata", type=Path, required=True)
+    provider = parser.add_mutually_exclusive_group(required=True)
+    provider.add_argument("--bnf-metadata", type=Path)
+    provider.add_argument(
+        "--hecke-global-log",
+        type=Path,
+        help="completed output of the pinned unconditional curve-356 Hecke provider",
+    )
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--public-certificate", type=Path, default=PUBLIC)
     parser.add_argument("--classgroup-pressure-certificate", type=Path, default=PRESSURE)
@@ -304,10 +403,13 @@ def main() -> None:
         raise FileExistsError(args.output)
     public_path = args.public_certificate.resolve()
     pressure_path = args.classgroup_pressure_certificate.resolve()
-    meta_path = args.bnf_metadata.resolve()
+    provider_kind = "bnf" if args.bnf_metadata is not None else "hecke"
+    provider_path = (
+        args.bnf_metadata if args.bnf_metadata is not None else args.hecke_global_log
+    ).resolve()
     public = json.loads(public_path.read_text())
     pressure = json.loads(pressure_path.read_text())
-    meta = json.loads(meta_path.read_text())
+    meta = json.loads(provider_path.read_text()) if provider_kind == "bnf" else None
     if public.get("status") != PUBLIC_STATUS:
         raise ArithmeticError("public point certificate is not passing")
     if pressure.get("status") != PRESSURE_STATUS:
@@ -330,21 +432,45 @@ def main() -> None:
         int(pressure_record["proved_total_two_selmer_dimension_mod_2"]) - 29
     ) % 2
     expected_model = [str(value) for value in record["ainvs"]]
-    if meta.get("global_minimal_model") != expected_model:
-        raise ArithmeticError("BNF metadata belongs to a different curve model")
-    checkpoint_path = Path(meta["bnf_checkpoint"])
-    if not checkpoint_path.is_absolute():
-        checkpoint_path = (ROOT / checkpoint_path).resolve()
-    if digest(checkpoint_path) != meta["bnf_checkpoint_sha256"]:
-        raise ArithmeticError("BNF binary hash mismatch")
+    if provider_kind == "bnf":
+        assert meta is not None
+        if meta.get("global_minimal_model") != expected_model:
+            raise ArithmeticError("BNF metadata belongs to a different curve model")
+        checkpoint_path = Path(meta["bnf_checkpoint"])
+        if not checkpoint_path.is_absolute():
+            checkpoint_path = (ROOT / checkpoint_path).resolve()
+        if digest(checkpoint_path) != meta["bnf_checkpoint_sha256"]:
+            raise ArithmeticError("BNF binary hash mismatch")
+        transformed_meta = meta
+    else:
+        if args.curve_id != 356:
+            raise ArithmeticError("the pinned Hecke global provider is only for curve 356")
+        hecke_global = parse_hecke_global_log(provider_path)
+        transformed_meta = {
+            "global_minimal_model": expected_model,
+            "transformed_model": expected_model,
+            "point_change_sequence": [],
+            "field_cubic": HECKE_REDUCED_CUBIC,
+            "curve_theta_in_field": f"Mod(-x, {HECKE_REDUCED_CUBIC})",
+        }
+        checkpoint_path = None
 
     pari.allocatemem(args.pari_stack_bytes)
     set_random_seed(args.random_seed)
-    bnf = pari.read(str(checkpoint_path))
-    if not bool(pari.bnfcertify(bnf)):
-        raise ArithmeticError("reloaded BNF failed certification")
-    if str(bnf.nf_get_pol()) != meta["field_cubic"]:
-        raise ArithmeticError("BNF field polynomial mismatch")
+    if provider_kind == "bnf":
+        assert checkpoint_path is not None and meta is not None
+        bnf = pari.read(str(checkpoint_path))
+        if not bool(pari.bnfcertify(bnf)):
+            raise ArithmeticError("reloaded BNF failed certification")
+        if str(bnf.nf_get_pol()) != meta["field_cubic"]:
+            raise ArithmeticError("BNF field polynomial mismatch")
+        nf = bnf
+    else:
+        pari.addprimes([int(value) for value in record["bad_primes"]])
+        nf = pari.nfinit(pari(HECKE_REDUCED_CUBIC))
+        if list(pari.nfcertify(nf)):
+            raise ArithmeticError("PARI maximal-order certification failed")
+        bnf = None
     simon = Path(SAGE_EXTCODE) / "pari" / "simon"
     for name in ("ellQ.gp", "ell.gp", "qfsolve.gp", "resultant3.gp"):
         pari.read(simon / name)
@@ -358,14 +484,30 @@ def main() -> None:
     ):
         pari(definition)
 
-    curve = pari.ellinit([QQ(value) for value in meta["transformed_model"]])
-    curve_theta = pari(meta["curve_theta_in_field"])
+    curve = pari.ellinit([QQ(value) for value in transformed_meta["transformed_model"]])
+    curve_theta = pari(transformed_meta["curve_theta_in_field"])
     started = time.monotonic()
-    global_data = pari("ell2global_norm_envelope")(curve, bnf, 1, curve_theta)
-    ls2, normspace, bad_primes_raw = global_data
-    norm_columns = binary_columns(normspace)
-    ls2_dimension = len(ls2)
-    norm_dimension = len(norm_columns)
+    if provider_kind == "bnf":
+        global_data = pari("ell2global_norm_envelope")(curve, bnf, 1, curve_theta)
+        ls2, normspace, bad_primes_raw = global_data
+        norm_columns = binary_columns(normspace)
+        ls2_dimension = len(ls2)
+        norm_dimension = len(norm_columns)
+    else:
+        assert hecke_global is not None
+        field_polynomial = pari(HECKE_REDUCED_CUBIC)
+        alphas = []
+        for row in hecke_global["basis"]:
+            c0, c1, c2 = (QQ(value) for value in row["coefficients"])
+            alphas.append(pari.Mod(c0 + c1 * pari("x") + c2 * pari("x") ** 2, field_polynomial))
+        ls2 = pari(alphas)
+        norm_dimension = len(alphas)
+        ls2_dimension = norm_dimension
+        norm_columns = [
+            [int(row == column) for row in range(norm_dimension)]
+            for column in range(norm_dimension)
+        ]
+        bad_primes_raw = [int(value) for value in record["bad_primes"]]
     print(
         f"{PROTOCOL}|curve={args.curve_id}|stage=global_envelope|status=complete"
         f"|sclass={ls2_dimension}|norm={norm_dimension}",
@@ -378,7 +520,8 @@ def main() -> None:
         compatible = (
             candidate.get("schema") == SCHEMA
             and candidate.get("curve_id") == args.curve_id
-            and candidate.get("inputs", {}).get("bnf_metadata_sha256") == digest(meta_path)
+            and candidate.get("inputs", {}).get("global_provider_sha256")
+            == digest(provider_path)
             and candidate.get("inputs", {}).get("public_certificate_sha256") == digest(public_path)
             and candidate.get("inputs", {}).get(
                 "classgroup_pressure_certificate_sha256"
@@ -396,13 +539,13 @@ def main() -> None:
         auxiliary_primes = old["known_mw"]["auxiliary_primes"]
     else:
         ls2_point_rows, known_norm_rows, auxiliary_primes = point_coordinates(
-            nf=bnf,
-            field_polynomial=pari(meta["field_cubic"]),
+            nf=nf,
+            field_polynomial=pari(transformed_meta["field_cubic"]),
             curve_theta=curve_theta,
             ls2=ls2,
             norm_columns=norm_columns,
             point_values=point_values,
-            meta=meta,
+            meta=transformed_meta,
             auxiliary_prime_bound=args.auxiliary_prime_bound,
         )
     if len(known_norm_rows) != 29 or f2_rank_rows(known_norm_rows, norm_dimension) != 29:
@@ -443,6 +586,27 @@ def main() -> None:
         int(place["place_integer"]): place for place in completed_places
     }
 
+    provider_inputs = {
+        "global_provider_kind": provider_kind,
+        "global_provider": str(provider_path),
+        "global_provider_sha256": digest(provider_path),
+    }
+    if provider_kind == "bnf":
+        assert checkpoint_path is not None
+        provider_inputs.update(
+            {
+                "bnf_checkpoint": str(checkpoint_path),
+                "bnf_checkpoint_sha256": digest(checkpoint_path),
+            }
+        )
+    else:
+        provider_inputs.update(
+            {
+                "hecke_provider_script": str(HECKE_PROVIDER),
+                "hecke_provider_script_sha256": digest(HECKE_PROVIDER),
+            }
+        )
+
     def document(status: str, certificate: dict[str, Any]) -> dict[str, Any]:
         return {
             "schema": SCHEMA,
@@ -454,13 +618,17 @@ def main() -> None:
                 "public_certificate_sha256": digest(public_path),
                 "classgroup_pressure_certificate": str(pressure_path),
                 "classgroup_pressure_certificate_sha256": digest(pressure_path),
-                "bnf_metadata": str(meta_path),
-                "bnf_metadata_sha256": digest(meta_path),
-                "bnf_checkpoint": str(checkpoint_path),
-                "bnf_checkpoint_sha256": digest(checkpoint_path),
+                **provider_inputs,
             },
             "global_envelope": {
-                "provider": "certified PARI BNF + Simon bnfpSelmer/kernorm",
+                "provider": (
+                    "certified PARI BNF + Simon bnfpSelmer/kernorm"
+                    if provider_kind == "bnf"
+                    else (
+                        "Hecke 0.37.6 class/unit groups with GRH=false; "
+                        "Hecke pselmer_group norm kernel"
+                    )
+                ),
                 "global_s_squareclass_dimension": ls2_dimension,
                 "norm_square_envelope_dimension": norm_dimension,
                 "ls2_generators": [str(value) for value in ls2],
@@ -488,7 +656,7 @@ def main() -> None:
             "elapsed_seconds": time.monotonic() - started,
             "claim_boundary": (
                 "The zero-excess status is an unconditional relative Selmer upper "
-                "bound from the certified BNF envelope, exact local subset, and "
+                "bound from the certified global envelope, exact local subset, and "
                 "certified parity sharpening when used. "
                 "A nonzero kernel is exact only after every relevant place is complete."
             ),
@@ -517,8 +685,16 @@ def main() -> None:
             ],
             "certification": {
                 "method": (
-                    "PARI bnfcertify; Simon bnfpSelmer norm envelope; exact "
-                    "nfissquare Kummer coordinates; full-dimensional Simon local images"
+                    (
+                        "PARI bnfcertify; Simon bnfpSelmer norm envelope"
+                        if provider_kind == "bnf"
+                        else (
+                            "Hecke 0.37.6 class_group/unit_group with GRH=false; "
+                            "Hecke pselmer_group norm kernel; PARI nfcertify"
+                        )
+                    )
+                    + "; exact nfissquare Kummer coordinates; "
+                    "full-dimensional Simon local images"
                 ),
                 "hypothesis": None,
                 "global_ambient_upper_envelope_certified": True,
@@ -560,8 +736,14 @@ def main() -> None:
             f"{'infinity' if place == -1 else place}|status=start",
             flush=True,
         )
-        local_raw = pari("ell2allowed_at_place")(
-            curve, bnf, 1, curve_theta, ls2, place
+        local_raw = (
+            pari("ell2allowed_at_place")(
+                curve, bnf, 1, curve_theta, ls2, place
+            )
+            if provider_kind == "bnf"
+            else pari("ell2allowed_at_place_nf")(
+                curve, nf, 1, curve_theta, ls2, place
+            )
         )
         allowed_s = binary_columns(local_raw[0])
         allowed_norm = allowed_in_norm_coordinates(allowed_s, norm_columns)
