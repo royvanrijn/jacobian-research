@@ -1,0 +1,21 @@
+{
+  "schema": "rank-jump.shared-cover-condition-experiment.v1",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "mechanism": "Several generic bisections share one quadratic carrier, whose rational lift simultaneously supplies points on a specialized fibre.",
+  "layers": {"shared_function_field_squareclass": "incidence", "specialized_discriminant_square": "solubility", "independence_of_lifted_sections": "incidence"},
+  "source_commit": "7471645748ae07b8d942f6957e314378ca8aed1f",
+  "atlas": "artifacts/generated-results/elkies-2026-equation-bisections-full.json",
+  "atlas_sha256": "78e037dc4170955b8f79ddce4d1d3e0c0d3e9bb8f9614644c59ccc7d605226c4",
+  "selection": "First sixteen distinct bisection labels in lexicographic order; use only generic quadratic-cover coefficient arrays. Verify the atlas bytes against the committed deep-cover certificate binding at capture. No exceptional point, score or split-fibre list enters this dictionary.",
+  "pairs": [
+    {"high": "-9529/5471", "low": "-5643/6760", "scope": "published R17; historic +11 versus censored Nagao control"},
+    {"high": "2456/135", "low": "6695/1353", "scope": "published R17; historic +10 versus censored Nagao control"},
+    {"high": "-2300/843", "low": "-1561/3133", "scope": "published R17; coefficient-scale-matched recent +7 versus observed zero"}
+  ],
+  "fixed_budget": {"generic_bisections": 16, "generic_pair_comparisons": 120, "fixed_specialization_evaluations": 96, "new_parameters": 0, "point_searches": 0, "full_class_groups": 0, "wall_seconds": 30},
+  "primary_test": "Does this dictionary contain at least three bisections in the same nontrivial Q(t) squareclass, with all three discriminants nonzero rational squares at at least one fixed high fibre?",
+  "negative_endpoint": "An empty common group or no split high specialization exactly refutes this particular sixteen-bisection shared-carrier explanation. It does not refute carriers outside the dictionary, coordinated solubility without a shared carrier, or rank jumps on any control.",
+  "positive_endpoint": "A positive square test is only simultaneous rational-lift evidence. Require exact lifted-point maps and at least three independent directions modulo the generic group before calling it a soluble MW block; no automatic success or selector promotion.",
+  "secondary_test": "Compare individual rational split counts and accidental same-squareclass values on the six fixed fibres descriptively. No population frequency or p-value.",
+  "failure_semantics": "Zero discriminant is DEGENERATE, not a soluble independent lift. Missing coefficient data, timeout or failed identity is INCONCLUSIVE. Preserve this protocol and all inputs."
+}
