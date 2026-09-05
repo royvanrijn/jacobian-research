@@ -1,9 +1,18 @@
 # Reproducing the elliptic-curve programme
 
+For new work, use the [shared-runtime commands and controls](notes/SHARED_RESEARCH_RUNTIME.md).
+`run_mw17_jump_v2.sage --single-index N` now uses a bounded lazy search;
+add `--legacy-census-regression` only when regenerating the historical fixed-centre campaign.
+
 Run commands from the repository root. This catalogue covers the active
 certificates and current research gates. The pre-cleanup catalogue, including
 commands for every bounded historical scan, is preserved as
 [`REPRODUCE_2026-08-24.txt`](../archive/elliptic-curves/REPRODUCE_2026-08-24.txt).
+
+Active half-lattice commands now use the shared
+[`PointedQuarticSearch`](notes/POINTED_QUARTIC_SEARCH.md). That page contains
+current API/control replay commands and the pinned pre-migration revision
+for historical PARI campaigns below. Their finite coordinate boxes differ.
 
 ## Environment
 
@@ -549,14 +558,15 @@ For current results and promotion boundaries see
 
 The [subsequent sensitivity calibration](notes/MW16_SENSITIVITY_RECOVERY_2026-09-05.md)
 recovers 55/55 control directions. Its full bounded replay, including the
-prospective gate, is `bash elliptic-curves/cas/replay_mw16_sensitivity.sh`.
+prospective gate, uses `bash elliptic-curves/cas/replay_mw16_sensitivity.sh`
+at the pinned pre-migration revision linked above.
 Check the retained evidence without rerunning the searches:
 
 ```sh
-python3 elliptic-curves/cas/check_mw16_sensitivity_policy.py --check \
+python3 elliptic-curves/cas/replay_pointed_quartic_snapshot.py \
   --bundle artifacts/generated-results/elliptic-curves/mw16_sensitivity_controls_v1.json.gz \
   --summary artifacts/generated-results/elliptic-curves/mw16_sensitivity_controls_summary_v1.json
-python3 elliptic-curves/cas/check_mw16_sensitivity_policy.py --check \
+python3 elliptic-curves/cas/replay_pointed_quartic_snapshot.py \
   --bundle artifacts/generated-results/elliptic-curves/mw16_sensitivity_prospective_v1.json.gz \
   --summary artifacts/generated-results/elliptic-curves/mw16_sensitivity_prospective_summary_v1.json
 ```
@@ -670,6 +680,19 @@ sage -python -m unittest elliptic-curves/tests/test_fixed_field_radical_search_g
 All six boxes are empty by real inequalities and denominator bounds. This
 is a bounded height exclusion; all three global classifications remain unknown.
 <!-- status-consumer: EC-FIXED-CUBIC-RADICAL-SEARCH-GEOMETRY 678f7beb805a4530 -->
+
+The genuine-lift construction gate has an exact offline replay:
+
+```sh
+sage -python elliptic-curves/cas/run_fixed_field_tangent_conics.py
+sage -python -m unittest elliptic-curves/tests/test_fixed_field_tangent_conics.py
+```
+
+Three cubic tangent conics and eight reductions are verified; no genuine
+higher cover, target point, or new obstruction has been constructed. See the
+[construction note](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md#genuine-lift-construction-the-cubic-tangent-conic-gate)
+for bounded local replay and retained CAS inputs. All targets remain UNKNOWN.
+<!-- status-consumer: EC-FIXED-CUBIC-TANGENT-CONIC-GATE 26a49e30ff3128d3 -->
 
 ### Comparative height lattices: ranks 28--31
 
@@ -1899,4 +1922,4 @@ must be run exactly in its former directory layout.
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON f37417a9fda3ee3f -->
 
-<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY 1abe84480122e9b4 -->
+<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY f88886c066d6cb45 -->

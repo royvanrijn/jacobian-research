@@ -2,6 +2,12 @@
 
 Date: 2026-09-05.
 
+The active implementation is now the rank-agnostic
+[`PointedQuarticSearch`](POINTED_QUARTIC_SEARCH.md). Its exact backend
+regression re-sieves all 1,034 selected control boxes and reproduces all 55
+quotient directions. The results below retain their original source bundles;
+full historical shell commands use the pinned pre-migration revision.
+
 This is a complement-blind detector calibration on 398/400/401/542/548,
 followed by a separately gated replay of the frozen 104 prospective fibres.
 The historical [54/55 ladder](ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md)

@@ -1,0 +1,41 @@
+{
+  "arithmetic": {
+    "best_coefficient_absolute_norms": [
+      "6456696067165336001059737653230133054940227444139066525636",
+      "2984867874881506270871310952912330876371740269413051165480"
+    ],
+    "best_trial_seed": 4,
+    "curve_rank_lower_bound": 1,
+    "exact_cubic_tangent_conics": 3,
+    "exact_reduced_conic_maps": 8,
+    "genuine_higher_covers": 0,
+    "point_or_sha": {
+      "1047173": "UNKNOWN",
+      "450876": "UNKNOWN",
+      "596921": "UNKNOWN"
+    },
+    "verified_auxiliary_conic_points": 0
+  },
+  "checker_sha256": "20dc843ea06e487d80809e6332ba793165d32f72669eb647dc821d988932f6ef",
+  "claim_boundary": [
+    "The tangent conics are known soluble by the Hasse principle; no point was found.",
+    "Conic reductions and resource failures do not decide a target torsor.",
+    "No calibrated point search on a genuine higher cover was possible."
+  ],
+  "evidence_sha256": "0a90ed6c6fbf4216427d403e71b1a43d0f810020519ef5749d52d905b0cb4f03",
+  "limits": {
+    "indefinite_probe_inner_seconds": 110,
+    "local_inner_seconds": 40,
+    "local_lattice_variants_per_iteration": 64,
+    "local_max_iterations": 18,
+    "local_seconds_per_start": 45,
+    "local_starts": 8,
+    "remote_seconds_per_job": 60
+  },
+  "schema": "elliptic-curves.fixed-field-tangent-conics.v1",
+  "software": {
+    "magma": "2.29-9",
+    "sage": "10.9"
+  },
+  "status": "GENUINE_LIFT_NOT_YET_CONSTRUCTED"
+}

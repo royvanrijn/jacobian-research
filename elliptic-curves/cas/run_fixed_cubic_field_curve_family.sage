@@ -101,11 +101,16 @@ def qpari(value: object):
     return pari(int(value.numerator())) / pari(int(value.denominator()))
 
 
-def factor_record(value: object) -> list[dict[str, int]]:
+def factor_record(value: object, retained=None) -> list[dict[str, int]]:
     value = ZZ(abs(QQ(value).numerator()))
     if value in (0, 1):
         return []
-    factors = [{"prime": int(p), "exponent": int(e)} for p, e in value.factor()]
+    factors = ([{"prime": int(p), "exponent": int(e)} for p, e in value.factor()]
+               if retained is None else retained)
+    if (len({row["prime"] for row in factors}) != len(factors)
+        or any(type(row["exponent"]) is not int or row["exponent"] <= 0
+               or not ZZ(row["prime"]).is_prime(proof=True) for row in factors)):
+        raise ArithmeticError("invalid retained factorization")
     product = ZZ(1)
     for row in factors:
         p = ZZ(row["prime"])
@@ -136,68 +141,11 @@ def rational_square_in_qp(value: object, p: int) -> bool:
     return kronecker(int(unit % p), p) == 1
 
 
-class LocalSquareclasses:
-    """Exact square tests in the product K tensor Q_p."""
-
-    def __init__(self, nf: object, p: int):
-        self.nf = nf
-        self.p = p
-        self.primes = list(pari.idealprimedec(nf, p))
-        self.odd_data = []
-        if p != 2:
-            for prime in self.primes:
-                uniformizer = pari.nfbasistoalg(nf, pari.idealappr(nf, prime))
-                if int(pari.idealval(nf, uniformizer, prime)) != 1:
-                    raise ArithmeticError(f"invalid local uniformizer above {p}")
-                residue_map = pari.nfmodprinit(nf, prime)
-                self.odd_data.append((prime, uniformizer, residue_map))
-
-    @property
-    def point_kummer_dimension(self) -> int:
-        # For odd p, dim E(Q_p)/2 = dim E[2](Q_p) = (# K_p factors)-1.
-        # At p=2 the formal group contributes one additional dimension.
-        return len(self.primes) - 1 + (1 if self.p == 2 else 0)
-
-    def is_square(self, value: object) -> bool:
-        if self.p == 2:
-            return all(
-                bool(pari.nfislocalpower(self.nf, prime, value, 2))
-                for prime in self.primes
-            )
-        for prime, uniformizer, residue_map in self.odd_data:
-            valuation = int(pari.idealval(self.nf, value, prime))
-            if valuation & 1:
-                return False
-            unit = value / (uniformizer**valuation)
-            if not bool(pari.issquare(pari.nfmodpr(self.nf, unit, residue_map))):
-                return False
-        return True
-
-    def coordinates(self, elements: Sequence[object]) -> tuple[list[object], list[list[int]]]:
-        """Incremental exact coordinates in the small local squareclass space."""
-
-        basis: list[object] = []
-        coordinates: list[list[int]] = []
-        for element in elements:
-            found = None
-            for mask in range(1 << len(basis)):
-                candidate = element
-                bits = [0] * len(basis)
-                for index, basis_element in enumerate(basis):
-                    if (mask >> index) & 1:
-                        candidate /= basis_element
-                        bits[index] = 1
-                if self.is_square(candidate):
-                    found = bits
-                    break
-            if found is None:
-                basis.append(element)
-                for row in coordinates:
-                    row.append(0)
-                found = [0] * len(basis)
-                found[-1] = 1
-            coordinates.append(found)
-        return basis, coordinates
+# Compatibility export for consumers of the original fixed-field runner.
+from research_runtime.local_kummer import LocalSquareclasses
+from research_runtime.arithmetic import TwoTorsionContext
+from research_runtime.sage_arithmetic import SageArithmetic
+from research_runtime.subspace import local_intersection
 
 
 def y_discriminant(curve: object, x_value: object):
@@ -265,42 +213,11 @@ def candidate_x_values(curve: object, p: int) -> Iterable[QQ]:
                     yield value
 
 
-def quotient_rows_binary(
-    subspace_basis: Sequence[Sequence[int]], rows: Sequence[Sequence[int]]
-) -> tuple[list[list[int]], int]:
-    """Coordinates of rows modulo an explicitly independent subspace."""
-
-    basis: list[list[int]] = []
-    coordinates: list[list[int]] = []
-    width = len(subspace_basis[0] if subspace_basis else rows[0])
-    for source in [*subspace_basis, *rows]:
-        source = [int(bit) & 1 for bit in source]
-        if len(source) != width:
-            raise ValueError("inconsistent binary row width")
-        found = None
-        for mask in range(1 << len(basis)):
-            trial = [0] * width
-            bits = [0] * len(basis)
-            for index, basis_row in enumerate(basis):
-                if (mask >> index) & 1:
-                    trial = [left ^ right for left, right in zip(trial, basis_row)]
-                    bits[index] = 1
-            if trial == source:
-                found = bits
-                break
-        if found is None:
-            basis.append(source)
-            for old in coordinates:
-                old.append(0)
-            found = [0] * len(basis)
-            found[-1] = 1
-        coordinates.append(found)
-    quotient = [row[len(subspace_basis) :] for row in coordinates[len(subspace_basis) :]]
-    dimension = len(basis) - len(subspace_basis)
-    return quotient, dimension
+# Preserve the public adapter and coordinate ordering used by retained witnesses.
+from research_runtime.binary import quotient_rows as quotient_rows_binary
 
 
-def build(args: argparse.Namespace) -> dict[str, Any]:
+def build(args: argparse.Namespace, retained=None) -> dict[str, Any]:
     basis_data = load_descent_basis(args.manifest, args.candidate_record)
     if (
         basis_data.mod2_rank != KNOWN_RANK
@@ -333,7 +250,12 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
         raise ArithmeticError("singular anchor")
 
     pari_polynomial = pari(f"y^3+({A})*y+({B})")
-    nf = pari.nfinit(pari_polynomial)
+    arithmetic = SageArithmetic()
+    torsion_context = TwoTorsionContext(tuple(map(str, base_polynomial.list())))
+    base_factorization = factor_record(base_discriminant, None if retained is None else
+                                       retained["anchor"]["base_discriminant_factorization"])
+    nf = arithmetic.nf(torsion_context,
+        factor_primes=[row["prime"] for row in base_factorization], discover=True)
     theta = pari(f"Mod(y,{pari_polynomial})")
     betas = [qpari(point[0]) - theta for point in points]
     beta_rows = [
@@ -344,7 +266,6 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
         if QQ(pari.nfeltnorm(nf, beta)) != QQ(point[1]) ** 2:
             raise ArithmeticError("a pinned Kummer representative has wrong norm")
 
-    base_factorization = factor_record(base_discriminant)
     base_support = {2, *[row["prime"] for row in base_factorization]}
     local_cache: dict[int, LocalSquareclasses] = {}
 
@@ -359,7 +280,10 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
     runs = []
     all_complete = True
     j_values = []
-    for u in bounded_integer_parameters(args.parameter_bound):
+    for run_index, u in enumerate(bounded_integer_parameters(args.parameter_bound)):
+        old_run = None if retained is None else retained["runs"][run_index]
+        if old_run is not None and QQ(old_run["parameter_u"]) != QQ(u):
+            raise ArithmeticError("retained parameter scope mismatch")
         coefficients = fixed_field_cubic_coefficients(A, B, u)
         family_polynomial = sum(QQ(value) * x**index for index, value in enumerate(coefficients))
         multiplier = discriminant_multiplier(A, B, u)
@@ -377,8 +301,10 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
         j_invariant = QQ(curve.j_invariant())
         j_values.append(j_invariant)
 
-        numerator_factors = factor_record(multiplier)
-        denominator_factors = factor_record(QQ(multiplier).denominator())
+        numerator_factors = factor_record(multiplier, None if old_run is None else
+                                         old_run["multiplier_numerator_factorization"])
+        denominator_factors = factor_record(QQ(multiplier).denominator(), None if old_run is None else
+                                           old_run["multiplier_denominator_factorization"])
         support = set(base_support)
         support.update(row["prime"] for row in numerator_factors)
         support.update(row["prime"] for row in denominator_factors)
@@ -387,7 +313,10 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
         finite_records = []
         run_complete = True
         for p in sorted(support):
-            local = local_cache.setdefault(p, LocalSquareclasses(nf, p))
+            if p not in local_cache:
+                local_cache[p] = LocalSquareclasses(
+                    nf, p, arithmetic=arithmetic, context=torsion_context)
+            local = local_cache[p]
             expected_dimension = local.point_kummer_dimension
             local_generators: list[object] = []
             witnesses = []
@@ -395,8 +324,12 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
             minimal_curve = curve.local_data(p).minimal_model()
             back_to_raw = ~curve.isomorphism_to(minimal_curve)
             model_sources = ((curve, None, "raw"), (minimal_curve, back_to_raw, "p-minimal"))
+            old_local = None if old_run is None else next(
+                row for row in old_run["finite_local_conditions"] if row["prime"] == p)
             for search_curve, back_map, model_label in model_sources:
-                for local_x in candidate_x_values(search_curve, p):
+                candidates = (candidate_x_values(search_curve, p) if old_local is None else
+                    (QQ(row["model_x"]) for row in old_local["basis_witnesses"] if row["model"] == model_label))
+                for local_x in candidates:
                     if not rational_square_in_qp(y_discriminant(search_curve, local_x), p):
                         continue
                     raw_x = (
@@ -475,7 +408,7 @@ def build(args: argparse.Namespace) -> dict[str, Any]:
             }
 
         if run_complete:
-            kernel_masks = f2_kernel_masks(constraints)
+            kernel_masks = list(local_intersection(KNOWN_RANK, [constraints]))
             constraint_rank = f2_rank(constraints)
             if len(kernel_masks) != KNOWN_RANK - constraint_rank:
                 raise ArithmeticError("full-span kernel dimension mismatch")
@@ -655,16 +588,25 @@ def main() -> None:
     args.output = args.output.resolve()
     if args.parameter_bound < 0:
         raise ValueError("parameter bound must be nonnegative")
-    document = build(args)
-    rendered = json.dumps(document, indent=2, sort_keys=True) + "\n"
     if args.check:
-        if not args.output.is_file() or args.output.read_text() != rendered:
-            raise SystemExit(f"stale or missing artifact: {args.output}")
+        from research_runtime.witnesses import compare_replay
+        if not args.output.is_file():
+            raise SystemExit(f"missing artifact: {args.output}")
+        stored = json.loads(args.output.read_text())
+        recorded_hash = stored.pop("result_sha256")
+        if canonical_hash(stored) != recorded_hash:
+            raise ArithmeticError("retained result hash mismatch")
+        document = build(args, retained=stored)
+        document.pop("result_sha256")
+        compare_replay(stored, document, root=ROOT,
+                       source_paths=[str(Path(__file__).resolve().relative_to(ROOT))])
         print(
-            f"{PROTOCOL}|status=PASS|check=true|result_sha256={document['result_sha256']}",
+            f"{PROTOCOL}|status=PASS|check=true|result_sha256={recorded_hash}",
             flush=True,
         )
         return
+    document = build(args)
+    rendered = json.dumps(document, indent=2, sort_keys=True) + "\n"
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(rendered)
     print(

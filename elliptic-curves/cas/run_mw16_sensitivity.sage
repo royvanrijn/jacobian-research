@@ -17,7 +17,7 @@ from types import SimpleNamespace
 import subprocess
 import time
 
-import mw16_sensitivity_backend as backend
+import pointed_quartic_search as backend
 
 ROOT=Path(__file__).resolve().parents[2]
 CAS=Path(__file__).resolve().parent
@@ -85,14 +85,18 @@ def main():
     p.add_argument('--calibration',type=Path)
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--curves',default='398,400,401,542,548')
-    p.add_argument('--specifications',default='gauss;red')
-    p.add_argument('--heights',default='10000,100000')
-    p.add_argument('--centres',default='specialized')
+    p.add_argument('--specifications',default='metric:16')
+    p.add_argument('--heights',default='100000')
+    p.add_argument('--centres',default='generic')
     p.add_argument('--adaptive-bits',type=int,default=5)
     p.add_argument('--seconds',type=float,default=20)
     p.add_argument('--workers',type=int,default=4)
     p.add_argument('--maximum-candidates',type=int,default=104)
+    p.add_argument('--regression-controls', action='store_true', help='Explicitly use the preserved historical coordinate/search implementation')
     args=p.parse_args()
+    global backend
+    if args.regression_controls:
+        import mw16_sensitivity_backend as backend
     specifications=args.specifications.split(';'); heights=list(map(int,args.heights.split(',')))
     centres=args.centres.split(',')
     if not 1<=args.adaptive_bits<=5 or not 1<=args.workers<=8 or not 0<args.seconds<=60 or any(not 1<=h<=1000000 for h in heights):
@@ -176,7 +180,7 @@ def main():
                     setting={'key':key,'centre':centre,'specification':spec,'height':height,'charts':[]}
                     selected_jobs=[j for j in jobs if j['centre']==centre]
                     def work(job):
-                        rec=backend.checkpoint(LOCAL/'charts',model=model,points=basis,
+                        rec=backend.checkpoint(LOCAL/'universal-charts',model=model,points=basis,
                             representative=job['representative'],mask=job['mask'],specification=spec,
                             height=height,seconds=args.seconds)
                         return {**rec,'centre_construction':job}

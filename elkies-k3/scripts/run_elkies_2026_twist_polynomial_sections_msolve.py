@@ -16,16 +16,17 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from hashlib import sha256
 import json
-import os
 from pathlib import Path
 import re
 import shutil
-import signal
-import subprocess
-from time import monotonic
+import sys
 
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT/"elliptic-curves/cas"))
+from research_runtime.supervisor import Limits, run as supervised_run, preserve_previous
+from research_runtime.store import checkpoint as atomic_checkpoint
+from research_runtime.section_gate import guard_export
 SUMMARY_SCHEMA = "elkies-k3.elkies-2026-twist-polynomial-section-msolve.v1"
 
 
@@ -80,38 +81,10 @@ def classify_solution(path: Path) -> dict[str, object]:
     return {"classification": "unparsed_output", "output_prefix": text[:120]}
 
 
-def process_tree_high_water_kbytes(root_pid: int) -> int | None:
-    """Sample VmHWM for a Linux process tree immediately before timeout."""
-
-    processes: dict[int, tuple[int, int]] = {}
-    for entry in Path("/proc").iterdir():
-        if not entry.name.isdigit():
-            continue
-        try:
-            stat = (entry / "stat").read_text().split()
-            parent_pid = int(stat[3])
-            high_water = 0
-            for line in (entry / "status").read_text().splitlines():
-                if line.startswith("VmHWM:"):
-                    high_water = int(line.split()[1])
-                    break
-            processes[int(entry.name)] = (parent_pid, high_water)
-        except (FileNotFoundError, PermissionError, ProcessLookupError, ValueError):
-            continue
-    descendants = {root_pid}
-    changed = True
-    while changed:
-        changed = False
-        for pid, (parent_pid, unused_high_water) in processes.items():
-            if parent_pid in descendants and pid not in descendants:
-                descendants.add(pid)
-                changed = True
-    values = [processes[pid][1] for pid in descendants if pid in processes]
-    return sum(values) if values else None
-
-
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--export", type=Path, required=True)
+parser.add_argument("--rss-limit-bytes", type=int, default=2_000_000_000)
+parser.add_argument("--reduction-only", action="store_true")
 parser.add_argument("--threads", type=int, default=4, help="threads per msolve process")
 parser.add_argument("--jobs", type=int, default=2, help="concurrent msolve processes")
 parser.add_argument("--timeout", type=float, default=180.0, help="seconds per distinct system")
@@ -135,6 +108,8 @@ export_path = args.export.resolve()
 export = json.loads(export_path.read_text())
 if export.get("schema") != "elkies-k3.elkies-2026-twist-polynomial-section-msolve-export.v1":
     raise ValueError("unexpected modular section export schema")
+section_gate = guard_export(export, ROOT, reduction_only=args.reduction_only,
+    limits={"seconds_per_system": args.timeout, "rss_bytes": args.rss_limit_bytes})
 candidate = export["candidate"]
 tag = (
     f"singleton-{candidate['key']}"
@@ -206,6 +181,7 @@ def run_group(group: list[dict[str, object]]) -> dict[str, object]:
         "msolve_sha256": msolve_digest,
         "threads": args.threads,
         "timeout_seconds": args.timeout,
+        "rss_limit_bytes": args.rss_limit_bytes,
     }
     if checkpoint_path.exists():
         checkpoint = json.loads(checkpoint_path.read_text())
@@ -227,39 +203,17 @@ def run_group(group: list[dict[str, object]]) -> dict[str, object]:
         "-v",
         "1",
     ]
-    for path in (solution_path, log_path, metrics_path):
-        path.unlink(missing_ok=True)
-    started = monotonic()
-    process = subprocess.Popen(
-        command,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        text=True,
-        start_new_session=True,
-    )
-    timed_out = False
-    timeout_process_tree_high_water_kbytes = None
-    try:
-        stdout, unused_stderr = process.communicate(timeout=args.timeout)
-    except subprocess.TimeoutExpired:
-        timed_out = True
-        timeout_process_tree_high_water_kbytes = process_tree_high_water_kbytes(
-            process.pid
-        )
-        os.killpg(process.pid, signal.SIGTERM)
-        try:
-            stdout, unused_stderr = process.communicate(timeout=10)
-        except subprocess.TimeoutExpired:
-            os.killpg(process.pid, signal.SIGKILL)
-            stdout, unused_stderr = process.communicate()
-    elapsed = monotonic() - started
-    log_path.write_text(stdout)
-    classification = (
-        {"classification": "timeout"}
-        if timed_out
-        else classify_solution(solution_path)
-    )
-    status = "completed" if not timed_out and process.returncode == 0 else "timeout" if timed_out else "error"
+    for path in (solution_path, log_path, metrics_path, checkpoint_path):
+        preserve_previous(path)
+    supervision = supervised_run(command,
+        limits=Limits(args.timeout, args.rss_limit_bytes), log_path=log_path,
+        checkpoint_path=checkpoint_path.with_suffix(".supervisor.json"))
+    elapsed = supervision["wall_seconds"]
+    timed_out = supervision["outcome"] == "strict_wall_timeout"
+    timeout_process_tree_high_water_kbytes = supervision["peak_observed_rss_bytes"] // 1024 if timed_out else None
+    classification = (classify_solution(solution_path) if supervision["outcome"] == "completed" else
+                      {"classification": "timeout" if timed_out else supervision["outcome"]})
+    status = "completed" if supervision["outcome"] == "completed" else "timeout" if timed_out else "error"
     result = {
         "run_key": run_key,
         "status": status,
@@ -270,7 +224,8 @@ def run_group(group: list[dict[str, object]]) -> dict[str, object]:
         "solution": relative(solution_path) if solution_path.exists() else None,
         "log": relative(log_path),
         "metrics": relative(metrics_path) if metrics_path.exists() else None,
-        "returncode": process.returncode,
+        "returncode": supervision["returncode"],
+        "supervision": supervision,
         "elapsed_seconds": elapsed,
         "timeout_process_tree_high_water_kbytes": (
             timeout_process_tree_high_water_kbytes
@@ -278,7 +233,7 @@ def run_group(group: list[dict[str, object]]) -> dict[str, object]:
         **parse_metrics(metrics_path),
         **classification,
     }
-    checkpoint_path.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
+    atomic_checkpoint(checkpoint_path, result)
     return result
 
 
@@ -317,6 +272,7 @@ complete = not args.block and len(results) == len(groups_by_digest) and all(
 )
 payload = {
     "schema": SUMMARY_SCHEMA,
+    "function_field_pre_search_gate": section_gate,
     "status": (
         "PASS_COMPLETE_MODP_POLYNOMIAL_SECTION_SCHEME_SOLVED"
         if complete
@@ -346,9 +302,8 @@ payload = {
         "Mordell-Weil rank upper bound; sections can have bad reduction at this prime."
     ),
 }
-temporary_summary = summary_path.with_suffix(summary_path.suffix + ".tmp")
-temporary_summary.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
-temporary_summary.replace(summary_path)
+preserve_previous(summary_path)
+atomic_checkpoint(summary_path, payload)
 print(
     f"ELKIES2026TWISTMSOLVE|kind={candidate['kind']}|key={candidate['key']}|p={prime}"
     f"|distinct={len(results)}/{len(groups_by_digest)}|blocks={covered_blocks}/{len(export['systems'])}"

@@ -1,0 +1,15 @@
+{
+  "mode": "subspace",
+  "source": {
+    "model": [0, 0, 0, -7, 10],
+    "factor_primes": [2, 83],
+    "two_torsion": {"polynomial": [10, -7, 0, 1]},
+    "generator": [0, 1, 0],
+    "points": [[1, 2], [2, 2]],
+    "good_primes": [5, 7, 11, 13, 17, 19, 23, 29],
+    "no_two_torsion_prime": 3
+  },
+  "field_factor_primes": [2, 83],
+  "search_masks": [1, 2, 3],
+  "point_height": 10
+}

@@ -35,7 +35,7 @@ PROTOCOL = ROOT / "artifacts/generated-results/elliptic-curves/r17_refresh_jump_
 LEGACY = CAS / "run_curve385_iterated_half_lattice_search.sage"
 ENGINE_SOURCE = CAS / "half_lattice_fake_descent_replay.sage"
 POLICY_SOURCE = CAS / "half_lattice_chart_policy.py"
-OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_blind_v1.json"
+OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_universal_pointed_v1.json"
 
 GENERIC_DIMENSION = 17
 INITIAL_CHARTS = 43
@@ -46,6 +46,8 @@ AUDIT_SCALE = 100_000
 
 sys.path[:0] = [str(ROOT / "elliptic-curves"), str(CAS)]
 
+
+from pointed_quartic_migration import validate_frozen_sources, runtime_search, require_runtime
 
 def digest(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
@@ -103,6 +105,8 @@ def lift_residue(mask, quotient_word, generic_coordinates, complement, dimension
 def compact_search_record(record):
     return {
         "status": record["status"],
+        "pointed_search": record if record.get("backend") == "pointed_quartic_search_v1" else None,
+        "backend": record.get("backend"),
         "wall_seconds": record.get("wall_seconds"),
         "search_milliseconds": record.get("search_milliseconds"),
         "integral_model_maximum_coefficient_bits": record.get(
@@ -278,15 +282,14 @@ def main():
         raise ArithmeticError("the jump-ladder protocol is not frozen")
     if protocol["blind_input_sha256"] != digest(args.input):
         raise ArithmeticError("the protocol names another blind input")
-    expected_implementation = protocol["implementation_hashes"]
-    for path in (Path(__file__).resolve(), LEGACY, ENGINE_SOURCE, POLICY_SOURCE):
-        if expected_implementation.get(relative(path)) != digest(path):
-            raise ArithmeticError(f"protocol implementation changed: {relative(path)}")
+    validate_frozen_sources(protocol["implementation_hashes"])
     if protocol["search_policy"]["total_chart_cap_per_fibre"] != TOTAL_CHART_CAP:
         raise ArithmeticError("the protocol chart budget changed")
 
     legacy = SourceFileLoader("r17_jump_ladder_legacy", str(LEGACY)).load_module()
     engine = SourceFileLoader("r17_jump_ladder_engine", str(ENGINE_SOURCE)).load_module()
+    from pointed_quartic_search import run_quartic_search as shared_quartic_search
+    engine.run_quartic_search = shared_quartic_search
     chart_policy = SourceFileLoader("r17_jump_ladder_policy", str(POLICY_SOURCE)).load_module()
     legacy.GENERIC_DIMENSION = GENERIC_DIMENSION
     legacy.OLD_CLASS_COUNT = INITIAL_CHARTS
@@ -302,6 +305,7 @@ def main():
             "response_field": "exact_quotient_rank_recovered_before_public_complement",
         },
         "protocol_sha256": digest(args.protocol),
+        "runtime_search": runtime_search(),
         "declared_budget": protocol["search_policy"],
         "results": [],
         "input_hashes": {

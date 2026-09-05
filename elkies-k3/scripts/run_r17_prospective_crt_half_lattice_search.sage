@@ -32,8 +32,8 @@ MANIFEST = ROOT / "artifacts/generated-results/elkies-k3-r17-prospective-crt-fro
 PROTOCOL = ROOT / "artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-protocol-v3.json"
 FAMILY_SOURCE = ROOT / "elkies-k3/scripts/audit_r17_prospective_crt_local_stability.sage"
 ENGINE_SOURCE = ROOT / "elliptic-curves/cas/half_lattice_fake_descent_replay.sage"
-DEFAULT_CHUNK_DIR = ROOT / "artifacts/local/elkies-k3/r17-prospective-crt-half-lattice-v3"
-OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-ledger-v3.json"
+DEFAULT_CHUNK_DIR = ROOT / "artifacts/local/elkies-k3/r17-prospective-crt-half-lattice-pointed-v1"
+OUTPUT = ROOT / "artifacts/generated-results/elkies-k3-r17-prospective-crt-half-lattice-pointed-ledger-v1.json"
 
 EXPECTED_CANDIDATE_HASH = "5df03637d4db0baa95cb9e5f697fe35e5e897838676b6370c0e08bdae5aa9aeb"
 EXPECTED_PROTOCOL_STATUS = "FROZEN_AFTER_POSITIVE_CONTROLS_BEFORE_NEW_COHORT_OUTCOMES"
@@ -46,6 +46,9 @@ from mod2_reduction_independence import (  # noqa: E402
 )
 
 engine = SourceFileLoader("r17_crt_half_lattice_search_engine", str(ENGINE_SOURCE)).load_module()
+from pointed_quartic_search import run_quartic_search as shared_quartic_search
+engine.run_quartic_search = shared_quartic_search
+from pointed_quartic_migration import runtime_search, require_runtime, validate_frozen_sources
 
 
 def digest(path: Path) -> str:
@@ -106,8 +109,8 @@ def load_inputs() -> tuple[dict[str, Any], dict[str, Any]]:
     ):
         raise ArithmeticError("the replacement detector protocol hash does not replay")
     declared_runner = protocol.get("inputs", {}).get(relative(Path(__file__)))
-    if declared_runner is not None and declared_runner != digest(Path(__file__)):
-        raise ArithmeticError("this runner differs from the source frozen in the protocol")
+    if declared_runner is not None:
+        validate_frozen_sources({relative(Path(__file__)): declared_runner})
     return manifest, protocol
 
 
@@ -209,13 +212,10 @@ def compact_cover_record(stage: str, mask: int, representative, outcome, cpu_sec
         "status": record["status"],
         "cpu_seconds": cpu_seconds,
         "wall_seconds": record["wall_seconds"],
-        "integral_model_maximum_coefficient_bits": record[
-            "integral_model_maximum_coefficient_bits"
-        ],
+        "integral_model_maximum_coefficient_bits": record.get("maximum_coefficient_bits"),
+        "pointed_search": record,
         "reduced_model_maximum_coefficient_bits": (
-            record["reduced_model"]["maximum_coefficient_bits"]
-            if record["status"] == "bounded_search_complete"
-            else None
+            record.get("reduced_model", {}).get("maximum_coefficient_bits")
         ),
         "minimalization_milliseconds": record.get("minimalization_milliseconds"),
         "reduction_milliseconds": record.get("reduction_milliseconds"),
@@ -607,6 +607,7 @@ def write_checkpoint(path: Path, protocol_hash: str, chunk_index: int, chunk_cou
             else "PARTIAL_HALF_LATTICE_CHECKPOINT"
         ),
         "candidate_list_sha256": EXPECTED_CANDIDATE_HASH,
+        "runtime_search": runtime_search(),
         "protocol_definition_sha256": protocol_hash,
         "chunk_index": chunk_index,
         "chunk_count": chunk_count,
@@ -628,6 +629,7 @@ def run_chunk(chunk_index: int, chunk_count: int, output: Path, limit: int | Non
     records = []
     if output.exists():
         old = json.loads(output.read_text())
+        require_runtime(old)
         if (
             old.get("chunk_index") != chunk_index
             or old.get("chunk_count") != chunk_count
@@ -682,6 +684,7 @@ def merge_chunks(chunk_dir: Path, chunk_count: int, output: Path):
     for index in range(chunk_count):
         path = chunk_dir / f"chunk-{index:02d}-of-{chunk_count:02d}.json"
         chunk = json.loads(path.read_text())
+        require_runtime(chunk)
         if chunk.get("status") != "COMPLETE_HALF_LATTICE_CHUNK":
             raise ArithmeticError(f"half-lattice chunk {index} is incomplete")
         if chunk.get("protocol_definition_sha256") != protocol["protocol_definition_sha256"]:
@@ -709,6 +712,7 @@ def merge_chunks(chunk_dir: Path, chunk_count: int, output: Path):
         "schema": "elkies-k3.r17-prospective-crt-half-lattice-ledger.v3",
         "status": "COMPLETE_FROZEN_HALF_LATTICE_DETECTOR_LEDGER",
         "candidate_list_sha256": EXPECTED_CANDIDATE_HASH,
+        "runtime_search": runtime_search(),
         "protocol_definition_sha256": protocol["protocol_definition_sha256"],
         "summary": {
             "scheduled_fibres": len(records),

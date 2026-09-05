@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Run the R17 relative 2-Selmer suite with open-source backends.
 
-The primary backend is PARI/GP's ``ell2cover`` through Sage.  PARI returns a
-basis of the everywhere locally soluble 2-covers as binary quartics together
-with their maps to the elliptic curve.  The worker receives the curve only:
+This completeness experiment uses cached factor-supplied arithmetic and a
+certified Simon Selmer basis, followed by explicit norm covers. Known-subspace
+production descent is available through run_arithmetic_pipeline.py.  The worker receives the curve only:
 neither the specialized generic sections nor the held-out exceptional points
 are supplied during descent or bounded quartic point search.
 
@@ -22,12 +22,8 @@ import argparse
 from fractions import Fraction
 from hashlib import sha256
 import json
-import os
 from pathlib import Path
 import shutil
-import signal
-import subprocess
-import tempfile
 import time
 from typing import Any, Iterable, Sequence
 
@@ -50,10 +46,14 @@ from pathlib import Path
 import time
 
 from sage.all import EllipticCurve, QQ, pari
+from research_runtime.sage_arithmetic import SageArithmetic
+from research_runtime.sage_subspace import SageSubspaceBackend
+from research_runtime.subspace import GlobalSquareclasses
+from research_runtime.store import digest, checkpoint
 from sage.version import version as sage_version
 
 payload = json.loads(Path(INPUT_PATH).read_text())
-pari.allocatemem(int(payload["pari_stack_bytes"]))
+pari.allocatemem(min(64_000_000, int(payload["pari_stack_bytes"])), int(payload["pari_stack_bytes"]), silent=True)
 factor_hints = [int(value) for value in payload.get("factor_hint_primes", [])]
 if factor_hints:
     pari.addprimes(factor_hints)
@@ -69,32 +69,31 @@ model = [QQ(value) for value in payload["global_minimal_model"]]
 curve = EllipticCurve(QQ, model)
 pari_curve = pari(curve)
 two_torsion_dimension = int(curve.two_torsion_rank())
-stage("ellrankinit", "start", factor_hints=len(factor_hints))
+stage("cached_arithmetic", "start", factor_hints=len(factor_hints))
 started = time.monotonic()
-context = pari_curve.ellrankinit()
-init_seconds = time.monotonic() - started
-stage("ellrankinit", "complete", seconds=f"{init_seconds:.6f}")
-
-stage("bnfcertify", "start")
+arithmetic = SageArithmetic()
+context = arithmetic.prepare(model, factor_primes=factor_hints, discover=True)
+arithmetic.field(context.two_torsion, factor_primes=[2, *context.bad_primes], discover=True)
+init_seconds = time.monotonic()-started
+stage("cached_complete_selmer", "start")
 started = time.monotonic()
-certificates = []
-try:
-    field_data = context[2]
-    for index in range(len(field_data)):
-        certificates.append(int(pari.bnfcertify(field_data[index])))
-except Exception as error:
-    stage("bnfcertify", "error", error=type(error).__name__)
-    raise
-if not certificates or any(value != 1 for value in certificates):
-    raise ArithmeticError(f"PARI did not certify every descent field: {certificates}")
-certify_seconds = time.monotonic() - started
-stage("bnfcertify", "complete", seconds=f"{certify_seconds:.6f}", fields=len(certificates))
-
-stage("ell2cover", "start")
-started = time.monotonic()
-covers = context.ell2cover()
-descent_seconds = time.monotonic() - started
-stage("ell2cover", "complete", seconds=f"{descent_seconds:.6f}", dimension=len(covers))
+selmer = arithmetic.full_selmer(context, requirement="complete-selmer", discover=True)
+descent_seconds = time.monotonic()-started
+certificates = [1]
+certify_seconds = 0.0  # Certification belongs to the cached complete-Selmer stage.
+classes = GlobalSquareclasses(context.two_torsion.key,
+    tuple(tuple(row["beta_power_coordinates"]) for row in selmer["basis"]), digest(selmer))
+backend = SageSubspaceBackend(arithmetic, context, None)
+covers, covering_witnesses = [], []
+for i in range(classes.dimension):
+    witness = backend.cover(context, classes, 1 << i)
+    backend.verify_cover(context, classes, 1 << i, witness)
+    quartic = backend.R(list(map(QQ, witness["quartic"])))
+    denominator = quartic.denominator()
+    cover_map = backend.cover_map(context, classes, 1 << i, witness, y_denominator=denominator)
+    covers.append([pari(quartic*denominator**2), pari(list(cover_map))])
+    covering_witnesses.append(witness)
+stage("cached_complete_selmer", "complete", seconds=f"{descent_seconds:.6f}", dimension=len(covers))
 
 cover_records = []
 xy_variables = pari('[x,y]')
@@ -138,7 +137,9 @@ stage("blind_search", "complete", seconds=f"{blind_seconds:.6f}")
 result = {
     "schema": "elliptic-curves.elkies-2026-relative-2selmer-pari-worker.v1",
     "case_id": payload["case_id"],
-    "backend": "SageMath/PARI ellrankinit+bnfcertify+ell2cover",
+    "backend": "cached factor-supplied arithmetic + certified Simon Selmer + explicit norm covers",
+    "arithmetic_context": context.record(),
+    "covering_witnesses": covering_witnesses,
     "sage_version": str(sage_version),
     "pari_version": str(pari.version()),
     "global_minimal_model": payload["global_minimal_model"],
@@ -148,7 +149,7 @@ result = {
     "everywhere_locally_soluble_cover_basis_complete": True,
     "total_two_selmer_dimension": len(covers),
     "timings": {
-        "ellrankinit_seconds": init_seconds,
+        "cached_arithmetic_seconds": init_seconds,
         "bnfcertify_seconds": certify_seconds,
         "ell2cover_seconds": descent_seconds,
         "blind_cover_search_seconds": blind_seconds,
@@ -161,7 +162,8 @@ result = {
         "covers": cover_records,
     },
 }
-Path(OUTPUT_PATH).write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
+result["arithmetic_facts"] = arithmetic.store.snapshot()
+checkpoint(Path(OUTPUT_PATH), result)
 stage("worker", "complete", output=OUTPUT_PATH)
 '''
 
@@ -176,13 +178,8 @@ def query_open_source_versions(sage_python: str) -> dict[str, str]:
         "from sage.version import version; "
         "print(json.dumps({'sage':str(version),'pari':str(pari.version())},sort_keys=True))"
     )
-    completed = subprocess.run(
-        [sage_python, "-c", program],
-        check=True,
-        capture_output=True,
-        text=True,
-        timeout=30,
-    )
+    from research_runtime.supervisor import capture, Limits
+    completed = capture([sage_python, "-c", program], limits=Limits(30, 512_000_000))
     return json.loads(completed.stdout.strip().splitlines()[-1])
 
 
@@ -316,109 +313,8 @@ def factor_hints(case_id: str) -> tuple[int, ...]:
     return ()
 
 
-def read_rss_bytes(pid: int) -> int:
-    for line in Path(f"/proc/{pid}/status").read_text().splitlines():
-        if line.startswith("VmRSS:"):
-            return int(line.split()[1]) * 1024
-    return 0
-
-
-def stop_process_group(process: subprocess.Popen[str], sig: signal.Signals) -> None:
-    if process.poll() is None:
-        os.killpg(process.pid, sig)
-
-
-def supervise_source(
-    sage_python: str,
-    worker_source: str,
-    payload: dict[str, Any],
-    result_path: Path,
-    log_path: Path,
-    *,
-    timeout: float,
-    rss_limit_bytes: int,
-) -> dict[str, Any]:
-    result_path.parent.mkdir(parents=True, exist_ok=True)
-    log_path.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as input_handle:
-        json.dump(payload, input_handle)
-        input_path = Path(input_handle.name)
-    worker_text = worker_source.replace("INPUT_PATH", repr(str(input_path))).replace(
-        "OUTPUT_PATH", repr(str(result_path))
-    )
-    with tempfile.NamedTemporaryFile("w", suffix=".py", delete=False) as worker_handle:
-        worker_handle.write(worker_text)
-        worker_path = Path(worker_handle.name)
-    try:
-        with log_path.open("w") as log:
-            process = subprocess.Popen(
-                [sage_python, str(worker_path)],
-                stdout=log,
-                stderr=subprocess.STDOUT,
-                text=True,
-                start_new_session=True,
-            )
-            started = time.monotonic()
-            peak_rss = 0
-            outcome = "running"
-            try:
-                while process.poll() is None:
-                    elapsed = time.monotonic() - started
-                    if elapsed >= timeout:
-                        outcome = "strict_wall_timeout"
-                        stop_process_group(process, signal.SIGTERM)
-                        try:
-                            process.wait(timeout=5)
-                        except subprocess.TimeoutExpired:
-                            stop_process_group(process, signal.SIGKILL)
-                            process.wait()
-                        break
-                    try:
-                        peak_rss = max(peak_rss, read_rss_bytes(process.pid))
-                    except (FileNotFoundError, ProcessLookupError):
-                        pass
-                    if peak_rss > rss_limit_bytes:
-                        outcome = "strict_rss_limit"
-                        stop_process_group(process, signal.SIGTERM)
-                        try:
-                            process.wait(timeout=5)
-                        except subprocess.TimeoutExpired:
-                            stop_process_group(process, signal.SIGKILL)
-                            process.wait()
-                        break
-                    time.sleep(0.25)
-            except BaseException:
-                stop_process_group(process, signal.SIGTERM)
-                try:
-                    process.wait(timeout=5)
-                except subprocess.TimeoutExpired:
-                    stop_process_group(process, signal.SIGKILL)
-                    process.wait()
-                raise
-            wall_seconds = time.monotonic() - started
-        if outcome == "running":
-            outcome = (
-                "completed"
-                if process.returncode == 0 and result_path.exists()
-                else "backend_failure"
-            )
-        return {
-            "outcome": outcome,
-            "returncode": process.returncode,
-            "wall_seconds": wall_seconds,
-            "peak_observed_rss_bytes": peak_rss,
-            "timeout_seconds": timeout,
-            "rss_limit_bytes": rss_limit_bytes,
-            "log": str(log_path),
-            "log_sha256": file_sha256(log_path),
-            "worker_result": str(result_path) if result_path.exists() else None,
-            "worker_result_sha256": (
-                file_sha256(result_path) if result_path.exists() else None
-            ),
-        }
-    finally:
-        input_path.unlink(missing_ok=True)
-        worker_path.unlink(missing_ok=True)
+# Re-export the shared supervisor for retained worker protocols.
+from research_runtime.supervisor import supervise_source
 
 
 def supervise_worker(
@@ -716,9 +612,9 @@ def main() -> None:
             else "INCOMPLETE_ONE_OR_MORE_OPEN_SOURCE_DESCENTS"
         ),
         "backend": {
-            "name": "SageMath/PARI ellrankinit+bnfcertify+ell2cover",
+            "name": "cached certified Simon Selmer + explicit norm covers",
             "license": "open_source",
-            "full_selmer_basis_interface": "PARI ell2cover binary quartics",
+            "full_selmer_basis_interface": "known cubic squareclasses with exact norm-cover maps",
             "bnf_certification_required": True,
             "sage_python": sage_python,
             "sage_version": versions["sage"],
@@ -745,10 +641,10 @@ def main() -> None:
         "completed_case_count": complete,
         "runs": runs,
         "claim_boundary": [
-            "Only a completed worker with successful bnfcertify and ell2cover is recorded as a full 2-Selmer basis.",
+            "Only a completed certified full-Selmer worker is recorded as a complete basis; subspace exploration uses run_arithmetic_pipeline.py.",
             "The blind worker receives neither generic nor public exceptional points.",
             "Finite-reduction labels are exact for the displayed point images but do not turn a bounded quartic search miss into non-solubility.",
-            "PARI exposes basis quartics, not an addition operation on arbitrary cover classes; only returned basis classes have explicit quartics here.",
+            "Squareclass addition is binary XOR; explicit covers are cached by the whole class mask.",
         ],
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)

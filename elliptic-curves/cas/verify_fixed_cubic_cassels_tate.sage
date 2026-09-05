@@ -20,6 +20,7 @@ from sage.all import GF, PolynomialRing, QQ, ZZ, matrix, vector, prod, pari
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "elliptic-curves/cas"))
 from fixed_cubic_field_curve_family import field_multiply, field_product
+from research_runtime.witnesses import retained_source
 
 RESULTS = ROOT / "artifacts/generated-results/elliptic-curves"
 SOURCE = RESULTS / "fixed_cubic_field_fermigier_rank20_local_kummer_u2_v1.json"
@@ -353,7 +354,10 @@ def main():
         summary = json.loads(SUMMARY.read_text())
         require(summary["evidence_sha256"] == digest(args.evidence), "evidence hash mismatch")
         for path, expected_hash in summary["source_hashes"].items():
-            require(digest(ROOT / path) == expected_hash, f"stale source hash: {path}")
+            if Path(path).suffix in (".py", ".sage"):
+                retained_source(ROOT, path, expected_hash)
+            else:
+                require(digest(ROOT / path) == expected_hash, f"stale source hash: {path}")
         require(summary["arithmetic"] == result, "stale arithmetic summary")
     print(json.dumps(result, indent=2) if not args.check else
           f"FIXEDCUBICCT|status=PASS|entries=153|rank={result['pairing_rank']}"

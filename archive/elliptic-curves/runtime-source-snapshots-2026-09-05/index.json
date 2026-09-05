@@ -1,0 +1,305 @@
+{
+  "generation_revision": "d30a742133f0658185c3bd4c99f0b0f815f2f74b",
+  "sources": [
+    {
+      "original_path": "elliptic-curves/cas/mod2_reduction_independence.py",
+      "sha256": "085f9f0893a0c48244fd4b32203b27ea57d8f8733a6da3835ee0808748e017c8",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/085f9f0893a0c48244fd4b32203b27ea57d8f8733a6da3835ee0808748e017c8/mod2_reduction_independence.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_open.py",
+      "sha256": "741fa6a48e751ef7be84e1bbde07c4ca8cbaba5b15fadd0a42e238e04d150ee6",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/741fa6a48e751ef7be84e1bbde07c4ca8cbaba5b15fadd0a42e238e04d150ee6/run_elkies_2026_relative_2selmer_open.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_bnf_free_two_cover_local_supervisor.py",
+      "sha256": "bc1f7e7c1b24bf5b5b66fc0dfaca6fc1347975b4ed7f637a618b405b2e3c2f33",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/bc1f7e7c1b24bf5b5b66fc0dfaca6fc1347975b4ed7f637a618b405b2e3c2f33/run_bnf_free_two_cover_local_supervisor.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_exceptional_selmer_feasibility.py",
+      "sha256": "faebac45ef600ed12c4e501accc5d14024410a5eff361fefe1c3693c5bc3af3d",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/faebac45ef600ed12c4e501accc5d14024410a5eff361fefe1c3693c5bc3af3d/run_exceptional_selmer_feasibility.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_fixed_cubic_field_curve_family.sage",
+      "sha256": "d5c9853b7ed8626af06eed07db59636c659990aacd7c8eb97794308c4c47d4ec",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/d5c9853b7ed8626af06eed07db59636c659990aacd7c8eb97794308c4c47d4ec/run_fixed_cubic_field_curve_family.sage"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_fixed_field_point_realization.py",
+      "sha256": "95c2ee4dc131b42ec3477c1994e51394bec7683786fc303cb7b5bfe88eca254c",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/95c2ee4dc131b42ec3477c1994e51394bec7683786fc303cb7b5bfe88eca254c/run_fixed_field_point_realization.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/production_search_gates.py",
+      "sha256": "f227b1486dbd6b5e11e192592c0ab61414c651efa9aad81021d5e7b41f69ed67",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/f227b1486dbd6b5e11e192592c0ab61414c651efa9aad81021d5e7b41f69ed67/production_search_gates.py"
+    },
+    {
+      "original_path": "elkies-k3/scripts/run_r17_norm12_11952_v4_quartic_po0_campaign.py",
+      "sha256": "b985d723fd969bc211288e19a9bbff37b17114355862459ed25084f04feff22f",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/b985d723fd969bc211288e19a9bbff37b17114355862459ed25084f04feff22f/run_r17_norm12_11952_v4_quartic_po0_campaign.py"
+    },
+    {
+      "original_path": "elkies-k3/scripts/export_elkies_2026_twist_polynomial_sections_modp.sage",
+      "sha256": "2d335a2753da487cefb97f7f6684674bc66f5860bb0b381302c41e3a7433b056",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/2d335a2753da487cefb97f7f6684674bc66f5860bb0b381302c41e3a7433b056/export_elkies_2026_twist_polynomial_sections_modp.sage"
+    },
+    {
+      "original_path": "elkies-k3/scripts/certify_r17_product_19bad_083ad_rank_zero.sage",
+      "sha256": "ae33cae59dade9a2e1261e3591a7bc86442b0baef3387a6ae711645bdc02ff43",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ae33cae59dade9a2e1261e3591a7bc86442b0baef3387a6ae711645bdc02ff43/certify_r17_product_19bad_083ad_rank_zero.sage"
+    },
+    {
+      "original_path": "elkies-k3/scripts/certify_r17_product_regulator_sweep.sage",
+      "sha256": "ca6086d3242844e4178ef7fb3c403084ebf87e059436033a869be111660e21e2",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ca6086d3242844e4178ef7fb3c403084ebf87e059436033a869be111660e21e2/certify_r17_product_regulator_sweep.sage"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_elkies_2026_rank28_residual_selmer.py",
+      "sha256": "910a50bd6c1e37a69d582d0aa7d719227a038e1daf6db92c24e3c8fdd265e341",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/910a50bd6c1e37a69d582d0aa7d719227a038e1daf6db92c24e3c8fdd265e341/run_elkies_2026_rank28_residual_selmer.py"
+    },
+    {
+      "original_path": "elkies-k3/scripts/run_elkies_2026_twist_polynomial_sections_msolve.py",
+      "sha256": "246e1d2d5bed438c4028eeeb879f90e5e0da2d0e3824afe93f35ff78659a04c1",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/246e1d2d5bed438c4028eeeb879f90e5e0da2d0e3824afe93f35ff78659a04c1/run_elkies_2026_twist_polynomial_sections_msolve.py"
+    },
+    {
+      "original_path": "elkies-k3/scripts/run_twist_polynomial_sections_bruteforce.py",
+      "sha256": "c586c782332c4a961644a87f08349bb8c7cbbf8e1d29e8a3abf4ec60282b02a8",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/c586c782332c4a961644a87f08349bb8c7cbbf8e1d29e8a3abf4ec60282b02a8/run_twist_polynomial_sections_bruteforce.py"
+    },
+    {
+      "original_path": "elkies-k3/scripts/run_r17_074d9_twist_section_ladder_msolve.py",
+      "sha256": "7a7823d415720d0967c69e951c8d5ea257e88693c0a60f73679e53e9931c3299",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/7a7823d415720d0967c69e951c8d5ea257e88693c0a60f73679e53e9931c3299/run_r17_074d9_twist_section_ladder_msolve.py"
+    },
+    {
+      "original_path": "elkies-k3/scripts/screen_elkies_2026_quadratic_twist_ranks.py",
+      "sha256": "a40051e867c007f292143d9247f7ae00c62de4ce5e0612fdf0b057f5ef1e4286",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/a40051e867c007f292143d9247f7ae00c62de4ce5e0612fdf0b057f5ef1e4286/screen_elkies_2026_quadratic_twist_ranks.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/analyze_curve273_kummer_fingerprint.py",
+      "sha256": "bacb5e6c8d6dbb1bd59859c97663a46cb8151ef72fafe623a1d1bc5daba7c10f",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/bacb5e6c8d6dbb1bd59859c97663a46cb8151ef72fafe623a1d1bc5daba7c10f/analyze_curve273_kummer_fingerprint.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/build_elkies_2026_rank28_bad_place_ledger.py",
+      "sha256": "71f86609ad0782d096ad81deed4dd268173078388791df191bd6dc12e4b31cdf",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/71f86609ad0782d096ad81deed4dd268173078388791df191bd6dc12e4b31cdf/build_elkies_2026_rank28_bad_place_ledger.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_fermigier_rank20_local_squareclasses_pari.py",
+      "sha256": "8b949357e8045c60d49edc83020fb853fa41986414ea53c108a9a138e9438e00",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/8b949357e8045c60d49edc83020fb853fa41986414ea53c108a9a138e9438e00/run_fermigier_rank20_local_squareclasses_pari.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/build_q12o5867_bnf_free_signature.py",
+      "sha256": "0612b44106ab5a6f3695a3f614c09ccd7c9c2ab4ffe5d552fb453e9506ca3c9d",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/0612b44106ab5a6f3695a3f614c09ccd7c9c2ab4ffe5d552fb453e9506ca3c9d/build_q12o5867_bnf_free_signature.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/evaluate_bnf_free_signature_map.py",
+      "sha256": "6f9248f38da21cfc0fb8e4072675ebb246a97a3b2a310bf5b5b2853066bca9ad",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/6f9248f38da21cfc0fb8e4072675ebb246a97a3b2a310bf5b5b2853066bca9ad/evaluate_bnf_free_signature_map.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_r17_kummer_quotient_sclass_collector.sage",
+      "sha256": "b5c0d759f07d24d7d4f072f23c14db647341015872adf92cfe087aec023a6d7a",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/b5c0d759f07d24d7d4f072f23c14db647341015872adf92cfe087aec023a6d7a/run_r17_kummer_quotient_sclass_collector.sage"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_fermigier_rank20_local_squareclasses_2adic.py",
+      "sha256": "85b57de6ea99b02845b1238e9018fa92deb31d75aaae62f01f8647e4de015553",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/85b57de6ea99b02845b1238e9018fa92deb31d75aaae62f01f8647e4de015553/run_fermigier_rank20_local_squareclasses_2adic.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_fermigier_rank20_local_squareclasses_pari_v2.py",
+      "sha256": "cf518c23b11813565c7d3fa532765a2dafd01ee314e4230bea09573548aa48a8",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/cf518c23b11813565c7d3fa532765a2dafd01ee314e4230bea09573548aa48a8/run_fermigier_rank20_local_squareclasses_pari_v2.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_fermigier_rank20_auxiliary_fingerprints.py",
+      "sha256": "935c543fa50cd78fe7c4d5c9f26305c29c5c182219e148db93ad3288781c5e2f",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/935c543fa50cd78fe7c4d5c9f26305c29c5c182219e148db93ad3288781c5e2f/run_fermigier_rank20_auxiliary_fingerprints.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_fixed_cubic_cassels_tate.sage",
+      "sha256": "792fcfb2bcbb9f58aab1f55294c3e0a144570a5c5b308d4dd952861ad765ab1d",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/792fcfb2bcbb9f58aab1f55294c3e0a144570a5c5b308d4dd952861ad765ab1d/run_fixed_cubic_cassels_tate.sage"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_elkies_2026_rank28_s_class_pari.py",
+      "sha256": "ba863748e8931d11004a13e23521122b619b9d07732f763869b3be5188236c7d",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ba863748e8931d11004a13e23521122b619b9d07732f763869b3be5188236c7d/run_elkies_2026_rank28_s_class_pari.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/build_elkies_2026_rank28_local_coverage.py",
+      "sha256": "b9e127fe362e0753e6bc32d0fcf0c00b46150f798a9dc90b0b65e6bd22bcc782",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/b9e127fe362e0753e6bc32d0fcf0c00b46150f798a9dc90b0b65e6bd22bcc782/build_elkies_2026_rank28_local_coverage.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/verify_fixed_cubic_cassels_tate.sage",
+      "sha256": "89a0e41d6d906fd21ad4f0b5bc889bca4ac8d5af376bb0e04f9e14ceef176c2a",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/89a0e41d6d906fd21ad4f0b5bc889bca4ac8d5af376bb0e04f9e14ceef176c2a/verify_fixed_cubic_cassels_tate.sage"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_checkpointed.py",
+      "sha256": "f33a2b38f31d07a3d3fccff675cd70e9490bc92e7f824e9e79fde6b430c74baa",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/f33a2b38f31d07a3d3fccff675cd70e9490bc92e7f824e9e79fde6b430c74baa/run_elkies_2026_relative_2selmer_checkpointed.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_elkies_2026_pari219_selmer_from_bnf.py",
+      "sha256": "3a40993716507533e05425a5b3e3c386537ec15fc53010c5165d46a277105c06",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/3a40993716507533e05425a5b3e3c386537ec15fc53010c5165d46a277105c06/run_elkies_2026_pari219_selmer_from_bnf.py"
+    },
+    {
+      "original_path": "elkies-k3/scripts/export_r17_074d9_twist_section_ladder_modp.sage",
+      "sha256": "ccba4b30645bc99b935b4896ac1b17515c4998aca09b8bb9c23d21529b553f12",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ccba4b30645bc99b935b4896ac1b17515c4998aca09b8bb9c23d21529b553f12/export_r17_074d9_twist_section_ladder_modp.sage"
+    },
+    {
+      "original_path": "elliptic-curves/cas/pari_bridge.py",
+      "sha256": "6feaf108994f05709bb3737f14fffc744ad039f8975e15bd1f59df92fa93e219",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/6feaf108994f05709bb3737f14fffc744ad039f8975e15bd1f59df92fa93e219/pari_bridge.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_r17_mw17_only_selmer_replay.py",
+      "sha256": "a65e365c3806c4a13edfb68448cdc2344163ad8666c94738cb2c12d35cffb04e",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/a65e365c3806c4a13edfb68448cdc2344163ad8666c94738cb2c12d35cffb04e/run_r17_mw17_only_selmer_replay.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_elkies_2026_relative_2selmer_suite.py",
+      "sha256": "1787060dfbdfe9f4e6bb224a3c68bd528a96fe8e5ce3b92cf5cd1aef3c78417d",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/1787060dfbdfe9f4e6bb224a3c68bd528a96fe8e5ce3b92cf5cd1aef3c78417d/run_elkies_2026_relative_2selmer_suite.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/search_mestre_root_tuple_scale.py",
+      "sha256": "cc4f0a8557708f1251043a13d659f8f83ddfb453aba8ebad321c83937dbf0d5f",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/cc4f0a8557708f1251043a13d659f8f83ddfb453aba8ebad321c83937dbf0d5f/search_mestre_root_tuple_scale.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/search_fermigier_rank22_accidental_slices.py",
+      "sha256": "922af1808ce416ae697a8443816d86b8c04deab4810226489c86f3f6989fa3eb",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/922af1808ce416ae697a8443816d86b8c04deab4810226489c86f3f6989fa3eb/search_fermigier_rank22_accidental_slices.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/certify_nagao_rank21_t956.py",
+      "sha256": "643807cd5f1cb38660ca60f910a85da8ec83593c71256306a5d5e6905447b9c8",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/643807cd5f1cb38660ca60f910a85da8ec83593c71256306a5d5e6905447b9c8/certify_nagao_rank21_t956.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/search_fermigier_rank20_direction.py",
+      "sha256": "9224cfbbaff65e28bcfa8f22a92c660490d88b2e59459b48d6a4bd330396a04c",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/9224cfbbaff65e28bcfa8f22a92c660490d88b2e59459b48d6a4bd330396a04c/search_fermigier_rank20_direction.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/search_nagao_rank21_t956_skew.py",
+      "sha256": "57843322e7f29a640c88aa9b04f0e65b70416531d0ad3c60b9be4d0c123e9d8e",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/57843322e7f29a640c88aa9b04f0e65b70416531d0ad3c60b9be4d0c123e9d8e/search_nagao_rank21_t956_skew.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_conductor_first_pari_diagnostic.py",
+      "sha256": "5aa805e5acad4364bbcfa9c5a538052a717f2c480164780622adf2e504c48bb1",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/5aa805e5acad4364bbcfa9c5a538052a717f2c480164780622adf2e504c48bb1/run_conductor_first_pari_diagnostic.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_elkies_2026_record_pari219_bnf.py",
+      "sha256": "9e4f2594ba347ed62b777790a705adb4697e9c517fd5de9ae1a8057a36250c91",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/9e4f2594ba347ed62b777790a705adb4697e9c517fd5de9ae1a8057a36250c91/run_elkies_2026_record_pari219_bnf.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_elkies_2026_pari219_bnf_benchmark.py",
+      "sha256": "8ee87a8d5fa43bc74996a9f7bfc3d16f6132b16869811bde073b1ecd70705bd0",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/8ee87a8d5fa43bc74996a9f7bfc3d16f6132b16869811bde073b1ecd70705bd0/run_elkies_2026_pari219_bnf_benchmark.py"
+    },
+    {
+      "original_path": "elliptic-curves/scripts/probe_q12o5867_pari_two_cover.py",
+      "sha256": "9a5b387a6778891e92ca088ceefc365b2ffe469785bf801f63eed9062cbc1b08",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/9a5b387a6778891e92ca088ceefc365b2ffe469785bf801f63eed9062cbc1b08/probe_q12o5867_pari_two_cover.py"
+    },
+    {
+      "original_path": "elliptic-curves/cas/pointed_quartic_search.py",
+      "sha256": "e68b10a94980c032c0dbe3ef03d8a7eb348664e7d2f2d4f023f31c5a14e36f49",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/e68b10a94980c032c0dbe3ef03d8a7eb348664e7d2f2d4f023f31c5a14e36f49/pointed_quartic_search.py",
+      "generation_revision": null,
+      "retained_from": "concurrent pointed-quartic port before shared-runtime integration"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_pointed_quartic_search.py",
+      "sha256": "548415a10e7526bb8338e4456fa9d92794625422ef5522e6691a13720f4a5e7e",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/548415a10e7526bb8338e4456fa9d92794625422ef5522e6691a13720f4a5e7e/run_pointed_quartic_search.py",
+      "generation_revision": null,
+      "retained_from": "concurrent pointed-quartic port before shared-runtime integration"
+    },
+    {
+      "original_path": "elliptic-curves/cas/pointed_quartic_migration.py",
+      "sha256": "6a20c1ece00e4f2cf605d60cfa6755f15166041cb0db700ce0e7cf2e3de2327e",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/6a20c1ece00e4f2cf605d60cfa6755f15166041cb0db700ce0e7cf2e3de2327e/pointed_quartic_migration.py",
+      "generation_revision": null,
+      "retained_from": "concurrent pointed-quartic port before shared-runtime integration"
+    },
+    {
+      "original_path": "elliptic-curves/cas/check_pointed_quartic_integration.sage",
+      "sha256": "c6459baabe0f1b260f2e47c2c7242e4478c473edddce690773430643ffaa544e",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/c6459baabe0f1b260f2e47c2c7242e4478c473edddce690773430643ffaa544e/check_pointed_quartic_integration.sage",
+      "generation_revision": null,
+      "retained_from": "concurrent pointed-quartic port before shared-runtime integration"
+    },
+    {
+      "original_path": "elliptic-curves/cas/replay_pointed_quartic_controls.py",
+      "sha256": "110f321f832d0ecf4227acb28d965ffdca56dc2f900980dbb110a34217fafb8e",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/110f321f832d0ecf4227acb28d965ffdca56dc2f900980dbb110a34217fafb8e/replay_pointed_quartic_controls.py",
+      "generation_revision": null,
+      "retained_from": "concurrent pointed-quartic port before shared-runtime integration"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_r17_extreme_anchored_mw18_residual_selmer.py",
+      "sha256": "23b09584be6e2dd86c2a222e26d46fc4bfb682e3c10cdd4ae307e9ee6f0b824f",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/23b09584be6e2dd86c2a222e26d46fc4bfb682e3c10cdd4ae307e9ee6f0b824f/run_r17_extreme_anchored_mw18_residual_selmer.py"
+    },
+    {
+      "original_path": "elkies-k3/scripts/certify_r17_extreme_anchored_mw18_covers.sage",
+      "sha256": "7f995381230e643c5bd8e383cff315564acf55c90d65c3639746508322b70069",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/7f995381230e643c5bd8e383cff315564acf55c90d65c3639746508322b70069/certify_r17_extreme_anchored_mw18_covers.sage"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_mw17_jump_v2.sage",
+      "sha256": "ae59d66631941e51210face6ec8d65396ab6201e6f1811dfad52d523250b88fa",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ae59d66631941e51210face6ec8d65396ab6201e6f1811dfad52d523250b88fa/run_mw17_jump_v2.sage",
+      "generation_revision": null,
+      "retained_from": "concurrent pointed-quartic port before lazy production integration"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_mw17_jump_v2_zero_gain_rescue.sage",
+      "sha256": "ffda274b22d6ab7e25477d70951d2c60177afa6bece6f809f82495d787a0419e",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ffda274b22d6ab7e25477d70951d2c60177afa6bece6f809f82495d787a0419e/run_mw17_jump_v2_zero_gain_rescue.sage",
+      "generation_revision": null,
+      "retained_from": "pre-shared-runtime integration"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_r17_kummer_quotient_sclass_suite.py",
+      "sha256": "ff5a87dc429ef1f26b5fd0d41a110f8304ce278ee9fe2d04a5a0e95c428aebe8",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/ff5a87dc429ef1f26b5fd0d41a110f8304ce278ee9fe2d04a5a0e95c428aebe8/run_r17_kummer_quotient_sclass_suite.py",
+      "generation_revision": null,
+      "retained_from": "pre-shared-runtime integration"
+    },
+    {
+      "original_path": "elliptic-curves/cas/run_mw29_relative_2selmer_from_bnf.sage",
+      "sha256": "4c2bf586f3dbad218f8c1fadf4e0c284eba4f7a60cc6d6d2ce4d15c412f23798",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/4c2bf586f3dbad218f8c1fadf4e0c284eba4f7a60cc6d6d2ce4d15c412f23798/run_mw29_relative_2selmer_from_bnf.sage",
+      "generation_revision": null,
+      "retained_from": "pre-shared-runtime integration"
+    },
+    {
+      "original_path": "elkies-k3/scripts/certify_r17_extreme_anchored_mw18_covers.sage",
+      "sha256": "3a4611cd7c8869112ecf8d1b627abe0b1f4a92680c35983d9159522b5ba542bd",
+      "snapshot": "archive/elliptic-curves/runtime-source-snapshots-2026-09-05/3a4611cd7c8869112ecf8d1b627abe0b1f4a92680c35983d9159522b5ba542bd/certify_r17_extreme_anchored_mw18_covers.sage",
+      "generation_revision": null,
+      "retained_from": "positive-only witness replay before the complete negative census backfill"
+    }
+  ]
+}

@@ -1,9 +1,17 @@
 # Elliptic curves over `Q` — ACTIVE
 
+New arithmetic and search work uses the [shared runtime](notes/SHARED_RESEARCH_RUNTIME.md):
+cached labelled fields, subspace descent, lazy MWState search and retained-witness replay.
+
 This programme is open for theorem-directed breakthroughs in exceptional
 Mordell--Weil rank, low conductor, and the elliptic-K3 constructions behind
 them. `../MATH_STATUS.json` is the sole status authority; this page is the
 active navigation map.
+
+All active half-lattice searches now use the rank-agnostic
+[`PointedQuarticSearch`](notes/POINTED_QUARTIC_SEARCH.md): MW16, MW17, MW18,
+curve-specific and zero-gain routes share one GMP sieve. The migration
+replays all 1,034 calibrated control boxes and all 55 quotient directions.
 
 The [2026-09-04 external audit](notes/EXTERNAL_AUDIT_2026-09-04.md) records
 mathematical corrections, bounded certificate replays, and remaining proof
@@ -89,6 +97,10 @@ targets, parameters, public points, ranks, or target `j`-invariants.
   proves all six nominal search boxes were already empty by elementary
   inequalities and records a revised method that shares higher-descent work.
 <!-- status-consumer: EC-FIXED-CUBIC-RADICAL-SEARCH-GEOMETRY 678f7beb805a4530 -->
+  The [tangent-conic construction](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md#genuine-lift-construction-the-cubic-tangent-conic-gate)
+  now has exact cubic-field equations and eight verified reductions. No
+  auxiliary point or genuine higher cover has yet been constructed.
+<!-- status-consumer: EC-FIXED-CUBIC-TANGENT-CONIC-GATE 26a49e30ff3128d3 -->
 <!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE df45391a84f0e3c9 -->
 <!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-RANK1 7e488a894d136732 -->
 - The pinned K3 now has two explicit rootless arithmetic MW17 charts over `QQ`: published R17 and the direct degree-two alternate-Q80 chart from `norm12-orbit-11952`.
@@ -302,4 +314,4 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON f37417a9fda3ee3f -->
 
-<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY 1abe84480122e9b4 -->
+<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY f88886c066d6cb45 -->

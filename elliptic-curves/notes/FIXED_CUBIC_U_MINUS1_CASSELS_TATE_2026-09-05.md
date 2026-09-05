@@ -372,6 +372,129 @@ Every eventual point still requires the retained exact map back to its
 original Kummer mask and the corresponding independence certificate.
 No new large computation was launched for this audit.
 
+## Genuine-lift construction: the cubic tangent-conic gate
+
+The [tangent-conic certificate](../../artifacts/generated-results/elliptic-curves/fixed_field_tangent_conics_v1.json)
+records a bounded attempt to implement the revised method. **No genuine
+higher cover has yet been constructed.** There is no new point or global
+obstruction on any target, and the rank lower bound remains one. The exact
+results here are three auxiliary conic equations and eight invertible
+reductions of one of them.
+
+For these particular quadric intersections the first construction step
+can use the same cubic field for all three classes. Write
+
+\[
+K=\mathbf Q(t),\qquad
+t^3+2t^2-70998592961771898264403921828879t
++229557901876618670226129916018239179705508269020=0.
+\]
+
+The anchor generator is exactly \(\theta_0=9t+6\). Substitution into
+\(\theta_0^3+A\theta_0+B\) proves this identification; equality of
+discriminants alone is not being used. For each of the three untransformed
+target classes, the verifier substitutes the recorded \(\lambda\in K\)
+into the minimal pencil \(\lambda H_0+H_1\), proves rank three, and
+extracts a nonsingular principal ternary submatrix. Projection from the
+vertex identifies its plane conic with the family of lines on that cone.
+
+These conics are known to have points over \(K\). A local point of the
+original smooth intersection lies away from the vertex of each singular
+quadric and projects to a point on the conic. Local solubility of the
+target therefore supplies solubility at every place of \(K\), and the
+Hasse principle for conics applies. This is the tangent-plane construction
+described in [Stamminger, Section 1.4.2](https://www.mathe2.uni-bayreuth.de/stoll/papers/Stamminger-8descent.pdf).
+Its conclusion does not give coordinates, a point on the target, or a
+completed higher-descent lift.
+
+For the first target \(r_1+r_2\),
+
+\[
+\lambda=\frac94t^2+\frac{11}4t-52377673088347623868239842991897,
+\]
+
+and the displayed conic matrix is
+
+\[
+C=\begin{pmatrix}
+2&0&0\\
+0&-2953684854850920117741233892646&h\\
+0&h&k
+\end{pmatrix},
+\]
+
+where
+
+\[
+\begin{aligned}
+h&=-\frac94t^2-\frac{11}4t+53831043652669915023885635793966,\\
+k&=\frac92t^2+\frac{11}2t-69058740249395525530463613620750.
+\end{aligned}
+\]
+
+The evidence retains the other two matrices as well. An exact change of
+variables puts this conic into norm form
+\(U^2-aV^2=bW^2\). Eight deterministic Lagrange/lattice starts retain
+their composite maps \(T\). The audit checks directly, over \(K\),
+
+\[
+\det T\ne0,\qquad
+T^tCT=\mu\operatorname{diag}(1,-a,-b),\quad\mu\ne0.
+\]
+
+Floating-point embeddings and LLL only propose reductions; this rational
+field identity certifies each result. The best recorded pair has
+
+\[
+\begin{aligned}
+|N(a)|&=6456696067165336001059737653230133054940227444139066525636,\\
+|N(b)|&=2984867874881506270871310952912330876371740269413051165480.
+\end{aligned}
+\]
+
+All eight starts stopped at local minima without points. A further bounded
+variant weighted the lattice toward cancellation at the real embeddings;
+it made no additional reduction. These are algorithmic stopping conditions,
+not arithmetic obstructions or completeness bounds.
+
+One avoidable cost was identified in Sage 10.9: the ideal CRT convenience
+method requested `pari_bnf()`. The retained solver instead calls PARI's
+`nf.idealaddtoone` directly. All eight starts were replayed with
+`NumberField_generic.pari_bnf` replaced by a function that raises, and
+their exact checkpoints matched. This verifies that these local runs
+require no Sage class-group computation; it does not establish that every
+subsequent descent stage can avoid one.
+
+The retained Magma `EightDescent` attempt exhausted its memory allowance
+during this construction stage. Seven isolated conic attempts, including
+one on the best reduced equation, reached the calculator's time limit.
+Warnings and trailing completion markers are parsed together, so a marker
+following a resource failure never becomes a witness. The compressed
+[evidence](../../artifacts/generated-results/elliptic-curves/fixed_field_tangent_conics_evidence_v1.json.gz)
+preserves the inputs, raw responses, bounded local solver, and checkpoints.
+
+Cheap offline verification and failure checks:
+
+```sh
+sage -python elliptic-curves/cas/run_fixed_field_tangent_conics.py
+sage -python -m unittest elliptic-curves/tests/test_fixed_field_tangent_conics.py
+```
+
+To extract standalone inputs and replay the eight local starts in a fresh
+directory, with a 45-second process limit per start and a 40-second inner
+limit:
+
+```sh
+sage -python elliptic-curves/cas/run_fixed_field_tangent_conics.py \
+  --workdir artifacts/local/fixed-field-tangent-conics-fresh --prepare --lattice
+```
+
+The first unresolved construction step is an explicit \(K\)-point on one
+of these known-soluble conics. Further descent data and a certified map to
+the original target would still be required afterward. No calibrated point
+search on a genuine higher cover was possible in this run. All three
+point-or-Sha classifications remain **UNKNOWN**.
+
 ## Reproduction
 
 The compact [summary](../../artifacts/generated-results/elliptic-curves/fixed_cubic_u_minus1_cassels_tate_v1.json)

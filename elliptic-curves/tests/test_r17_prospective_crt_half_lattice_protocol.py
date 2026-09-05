@@ -5,6 +5,7 @@ from hashlib import sha256
 import json
 from pathlib import Path
 import unittest
+from pointed_regression_sources import historical_digest
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -66,7 +67,7 @@ class R17ProspectiveCRTHalfLatticeProtocolTests(unittest.TestCase):
         inputs = self.protocol["inputs"]
         self.assertEqual(
             inputs["elkies-k3/scripts/run_r17_prospective_crt_half_lattice_search.sage"],
-            digest(RUNNER),
+            historical_digest(RUNNER),
         )
         self.assertEqual(
             inputs["elkies-k3/scripts/analyze_r17_prospective_crt_half_lattice_experiment.py"],

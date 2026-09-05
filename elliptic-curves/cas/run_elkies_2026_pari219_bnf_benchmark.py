@@ -8,6 +8,9 @@ checkpoint is retained.  A timeout only records relation-collection progress.
 
 from __future__ import annotations
 
+from research_runtime.supervisor import Limits, run as supervised_run, captured_run, preserve_previous
+from research_runtime.store import checkpoint as atomic_checkpoint
+
 import argparse
 from hashlib import sha256
 import json
@@ -40,20 +43,8 @@ def file_sha256(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
 
 
-def read_rss_bytes(pid: int) -> int:
-    try:
-        lines = Path(f"/proc/{pid}/status").read_text().splitlines()
-    except (FileNotFoundError, ProcessLookupError):
-        return 0
-    for line in lines:
-        if line.startswith("VmRSS:"):
-            return int(line.split()[1]) * 1024
-    return 0
 
 
-def stop_group(process: subprocess.Popen[str], sig: signal.Signals) -> None:
-    if process.poll() is None:
-        os.killpg(process.pid, sig)
 
 
 def gp_quote(path: Path) -> str:
@@ -97,7 +88,7 @@ def parse_progress(log_path: Path) -> dict[str, Any]:
 
 
 def gp_version(gp: Path) -> str:
-    completed = subprocess.run(
+    completed = captured_run(
         [str(gp), "-q", "-f"],
         input="print(version())\n",
         text=True,
@@ -113,6 +104,7 @@ def main() -> None:
     parser.add_argument("--polynomial", default=RANK21_REDUCED_CUBIC)
     parser.add_argument("--case-id", default="control-r21-t3_8")
     parser.add_argument("--timeout-seconds", type=float, default=300.0)
+    parser.add_argument("--rss-bytes",type=int,default=8_000_000_000)
     parser.add_argument("--stack-bytes", type=int, default=2_000_000_000)
     parser.add_argument("--threads", type=int, default=8)
     parser.add_argument("--c1", type=float, default=0.03)
@@ -133,7 +125,7 @@ def main() -> None:
         if path.exists() and not args.overwrite:
             raise FileExistsError(path)
         path.parent.mkdir(parents=True, exist_ok=True)
-    args.checkpoint.unlink(missing_ok=True)
+    preserve_previous(args.checkpoint)
 
     gp = args.gp.resolve()
     if not gp.is_file():
@@ -160,39 +152,14 @@ writebin("{gp_quote(args.checkpoint)}",b);
 print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1");
 '''
 
-    started = time.monotonic()
-    peak_rss = 0
-    outcome = "running"
-    with args.log.open("w") as log_handle:
-        process = subprocess.Popen(
-            [str(gp), "-q", "-f", "-s", str(args.stack_bytes)],
-            stdin=subprocess.PIPE,
-            stdout=log_handle,
-            stderr=subprocess.STDOUT,
-            text=True,
-            start_new_session=True,
-        )
-        assert process.stdin is not None
-        process.stdin.write(program)
-        process.stdin.close()
-        try:
-            while process.poll() is None:
-                peak_rss = max(peak_rss, read_rss_bytes(process.pid))
-                if time.monotonic() - started >= args.timeout_seconds:
-                    outcome = "strict_wall_timeout"
-                    stop_group(process, signal.SIGTERM)
-                    try:
-                        process.wait(timeout=15)
-                    except subprocess.TimeoutExpired:
-                        stop_group(process, signal.SIGKILL)
-                        process.wait()
-                    break
-                time.sleep(0.25)
-        except BaseException:
-            stop_group(process, signal.SIGTERM)
-            process.wait(timeout=15)
-            raise
-    wall_seconds = time.monotonic() - started
+    source_path=args.output.with_suffix('.gp')
+    preserve_previous(source_path);source_path.write_text(program)
+    supervision=supervised_run([str(gp),'-q','-f','-s',str(args.stack_bytes)],
+        input_text=program,log_path=args.log,checkpoint_path=args.output.with_suffix('.supervisor.json'),
+        limits=Limits(args.timeout_seconds,args.rss_bytes,pari_stack_bytes=args.stack_bytes))
+    peak_rss=supervision['peak_observed_rss_bytes']
+    elapsed=wall_seconds=supervision['wall_seconds']
+    outcome='running' if supervision['outcome']=='completed' else supervision['outcome']
     log_text = args.log.read_text(errors="replace")
     certified = (
         f"{PROTOCOL}|stage=bnfcertify|status=done|certified=1" in log_text
@@ -201,7 +168,7 @@ print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1");
     if outcome == "running":
         outcome = "completed_certified_bnf" if certified else "backend_failure"
     if not certified:
-        args.checkpoint.unlink(missing_ok=True)
+        preserve_previous(args.checkpoint)
 
     result = {
         "schema": SCHEMA,
@@ -230,7 +197,7 @@ print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1");
         "measurement": {
             "wall_seconds": wall_seconds,
             "peak_observed_rss_bytes": peak_rss,
-            "returncode": process.returncode,
+            "returncode": supervision["returncode"],
             **parse_progress(args.log),
         },
         "log": str(args.log),
@@ -238,7 +205,10 @@ print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1");
         "checkpoint": str(args.checkpoint) if certified else None,
         "checkpoint_sha256": file_sha256(args.checkpoint) if certified else None,
     }
-    args.output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
+    result["supervision"]=supervision
+    result["source"]={"path":str(source_path),"sha256":file_sha256(source_path)}
+    preserve_previous(args.output)
+    atomic_checkpoint(args.output,result)
     print(
         f"{PROTOCOL}|stage=complete|status={outcome}|seconds={wall_seconds:.3f}"
         f"|peak_rss={peak_rss}|output={args.output}",

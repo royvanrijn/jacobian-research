@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """Run a resource-bounded genuine 2-descent on the published rank-28 fibre.
 
-The PARI worker calls ``ellrank`` with all 28 certified public points supplied;
+The default worker uses a cached, factor-supplied certified Simon descent;
 the independent eclib worker runs its invariant-quartic 2-descent in
-``selmer_only`` mode with both point-search bounds zero.  A separate factored
-PARI backend first supplies the proved factorization of the 2-division cubic
-discriminant, avoiding a repeated hidden factorization inside ``ellrank``.
+``selmer_only`` mode with both point-search bounds zero.  The proved discriminant support is supplied before normalization and field
+setup. The old pari/pari-factored options are aliases for this cached backend.
 Unlike the BNF-free signature layer, a completed result from any backend is
 the actual 2-Selmer dimension.  The supervisor records timeout or memory stops
 as incomplete and therefore search-forbidden.
@@ -16,12 +15,8 @@ from __future__ import annotations
 import argparse
 from hashlib import sha256
 import json
-import os
 from pathlib import Path
 import shutil
-import signal
-import subprocess
-import tempfile
 import time
 
 
@@ -47,6 +42,8 @@ DEFAULT_SAGE = Path("/home/royvanrijn/.local/share/jacobian-sage-10.9/bin/python
 import sys
 
 sys.path.insert(0, str(CAS))
+from research_runtime.supervisor import Limits, run, preserve_previous
+from research_runtime.store import atomic_write
 from elkies_residual_selmer_gate import (  # noqa: E402
     INCOMPLETE_STATUS,
     SCHEMA,
@@ -59,73 +56,29 @@ from build_elkies_2026_rank28_bad_place_ledger import (  # noqa: E402
 
 PARI_WORKER = r'''import json, sys, time
 sys.path.insert(0, WORKER_CAS)
-from sage.all import EllipticCurve, QQ, pari
-from elkies_rank28 import GENERAL_WEIERSTRASS_COEFFICIENTS, POINTS
-from elkies_residual_selmer_gate import pari_ellrank_total_two_selmer_dimension
-
-started = time.monotonic()
-curve = EllipticCurve(QQ, list(GENERAL_WEIERSTRASS_COEFFICIENTS))
-two_torsion_dimension = int(curve.two_torsion_rank())
-known = pari([[str(x), str(y)] for x, y in POINTS])
-result = curve.pari_curve().ellrank(0, known)
-lower = int(result[0])
-upper = int(result[1])
-cassels_pairing_rank = int(result[2])
-total_selmer_dimension = pari_ellrank_total_two_selmer_dimension(
-    rank_lower=lower,
-    rank_upper=upper,
-    cassels_pairing_rank=cassels_pairing_rank,
-    two_torsion_dimension=two_torsion_dimension,
-)
-print("ELKIES_R28_SELMER_JSON=" + json.dumps({
-    "pari_ellrank_lower": lower,
-    "pari_ellrank_upper": upper,
-    "pari_cassels_pairing_quotient_rank": cassels_pairing_rank,
-    "returned_independent_point_count": len(result[3]),
-    "two_torsion_dimension": two_torsion_dimension,
-    "total_two_selmer_dimension": total_selmer_dimension,
-    "worker_seconds": time.monotonic() - started,
-}, sort_keys=True), flush=True)
-'''
-
-
-PARI_FACTORED_WORKER = r'''import json, sys, time
-sys.path.insert(0, WORKER_CAS)
-from sage.all import EllipticCurve, QQ, pari
+from research_runtime.sage_arithmetic import SageArithmetic
 from build_elkies_2026_rank28_bad_place_ledger import DISCRIMINANT_FACTORIZATION
-from elkies_rank28 import GENERAL_WEIERSTRASS_COEFFICIENTS, POINTS
-from elkies_residual_selmer_gate import pari_ellrank_total_two_selmer_dimension
-
+from elkies_rank28 import GENERAL_WEIERSTRASS_COEFFICIENTS
 started = time.monotonic()
-pari.allocatemem(PARI_STACK_BYTES)
-factor_hint_primes = [prime for prime, _exponent in DISCRIMINANT_FACTORIZATION]
-pari.addprimes(factor_hint_primes)
-curve = EllipticCurve(QQ, list(GENERAL_WEIERSTRASS_COEFFICIENTS))
-two_torsion_dimension = int(curve.two_torsion_rank())
-known = pari([[str(x), str(y)] for x, y in POINTS])
-result = curve.pari_curve().ellrank(0, known)
-lower = int(result[0])
-upper = int(result[1])
-cassels_pairing_rank = int(result[2])
-total_selmer_dimension = pari_ellrank_total_two_selmer_dimension(
-    rank_lower=lower,
-    rank_upper=upper,
-    cassels_pairing_rank=cassels_pairing_rank,
-    two_torsion_dimension=two_torsion_dimension,
-)
+arithmetic = SageArithmetic()
+primes = [int(p) for p, _ in DISCRIMINANT_FACTORIZATION]
+context = arithmetic.prepare(GENERAL_WEIERSTRASS_COEFFICIENTS, factor_primes=primes, discover=True)
+arithmetic.field(context.two_torsion, factor_primes=[2, *context.bad_primes], discover=True)
+selmer = arithmetic.full_selmer(context, requirement="unconditional-upper-bound", discover=True)
 print("ELKIES_R28_SELMER_JSON=" + json.dumps({
-    "pari_ellrank_lower": lower,
-    "pari_ellrank_upper": upper,
-    "pari_cassels_pairing_quotient_rank": cassels_pairing_rank,
-    "returned_independent_point_count": len(result[3]),
-    "two_torsion_dimension": two_torsion_dimension,
-    "total_two_selmer_dimension": total_selmer_dimension,
+    "total_two_selmer_dimension": selmer["full_selmer_dimension"],
+    "two_torsion_dimension": 0,
+    "class_group_certified": True,
+    "arithmetic_context": context.record(),
+    "complete_selmer": selmer,
     "factorization_supplied": True,
-    "factor_hint_prime_count": len(factor_hint_primes),
-    "pari_stack_bytes": PARI_STACK_BYTES,
-    "worker_seconds": time.monotonic() - started,
+    "factor_hint_prime_count": len(primes),
+    "worker_seconds": time.monotonic()-started,
 }, sort_keys=True), flush=True)
 '''
+
+# Existing command lines retain compatibility; both consume the same cache.
+PARI_FACTORED_WORKER = PARI_WORKER
 
 
 ECLIB_WORKER = r'''import json, sys, time
@@ -162,18 +115,6 @@ print("ELKIES_R28_SELMER_JSON=" + json.dumps({
 
 def file_sha256(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
-
-
-def read_rss_bytes(pid: int) -> int:
-    for line in Path(f"/proc/{pid}/status").read_text().splitlines():
-        if line.startswith("VmRSS:"):
-            return int(line.split()[1]) * 1024
-    return 0
-
-
-def stop_owned(process: subprocess.Popen[str], sig: signal.Signals) -> None:
-    if process.poll() is None:
-        os.killpg(process.pid, sig)
 
 
 def parse_worker(stdout: str) -> dict[str, object] | None:
@@ -225,7 +166,7 @@ def main() -> None:
     parser.add_argument("--rss-limit-bytes", type=int, default=8_000_000_000)
     parser.add_argument("--sage-python", type=Path, default=DEFAULT_SAGE)
     parser.add_argument(
-        "--backend", choices=("pari", "pari-factored", "eclib"), default="pari"
+        "--backend", choices=("cached", "pari", "pari-factored", "eclib"), default="cached"
     )
     parser.add_argument("--pari-stack-bytes", type=int, default=8_000_000_000)
     parser.add_argument("--overwrite", action="store_true")
@@ -251,9 +192,10 @@ def main() -> None:
         raise SystemExit(f"Sage Python is unavailable: {args.sage_python}")
 
     factor_hint_certificate = None
-    if args.backend == "pari-factored":
+    if args.backend != "eclib":
         factor_hint_certificate = validate_factor_hint_certificate(rank28["minimal_model"])
     worker_template = {
+        "cached": PARI_WORKER,
         "pari": PARI_WORKER,
         "pari-factored": PARI_FACTORED_WORKER,
         "eclib": ECLIB_WORKER,
@@ -261,59 +203,25 @@ def main() -> None:
     worker_text = worker_template.replace("WORKER_CAS", repr(str(CAS))).replace(
         "PARI_STACK_BYTES", str(args.pari_stack_bytes)
     )
-    with tempfile.NamedTemporaryFile("w", suffix=".py", delete=False) as handle:
-        handle.write(worker_text)
-        worker_path = Path(handle.name)
-    try:
-        with tempfile.TemporaryFile(mode="w+") as stdout_file, tempfile.TemporaryFile(
-            mode="w+"
-        ) as stderr_file:
-            process = subprocess.Popen(
-                [sage_python, str(worker_path)],
-                stdout=stdout_file,
-                stderr=stderr_file,
-                text=True,
-                start_new_session=True,
-            )
-            started = time.monotonic()
-            peak_rss = 0
-            outcome = "running"
-            while process.poll() is None:
-                elapsed = time.monotonic() - started
-                if elapsed >= args.timeout:
-                    outcome = "strict_wall_timeout"
-                    stop_owned(process, signal.SIGTERM)
-                    try:
-                        process.wait(timeout=5)
-                    except subprocess.TimeoutExpired:
-                        stop_owned(process, signal.SIGKILL)
-                        process.wait()
-                    break
-                try:
-                    peak_rss = max(peak_rss, read_rss_bytes(process.pid))
-                except (FileNotFoundError, ProcessLookupError):
-                    pass
-                if peak_rss > args.rss_limit_bytes:
-                    outcome = "strict_rss_limit"
-                    stop_owned(process, signal.SIGTERM)
-                    try:
-                        process.wait(timeout=5)
-                    except subprocess.TimeoutExpired:
-                        stop_owned(process, signal.SIGKILL)
-                        process.wait()
-                    break
-                time.sleep(0.25)
-            wall_seconds = time.monotonic() - started
-            stdout_file.seek(0)
-            stderr_file.seek(0)
-            stdout = stdout_file.read()
-            stderr = stderr_file.read()
-    finally:
-        worker_path.unlink(missing_ok=True)
-
+    if args.output.exists() and not args.overwrite:
+        raise FileExistsError(args.output)
+    workdir = args.output.parent / "workers" / (args.output.stem + "-" + args.backend)
+    workdir.mkdir(parents=True, exist_ok=True)
+    worker_path, log_path = workdir / "worker.py", workdir / "worker.log"
+    for path in (worker_path, log_path, workdir / "supervisor.json"):
+        preserve_previous(path)
+    atomic_write(worker_path, worker_text.encode())
+    supervised = run([sage_python, str(worker_path)],
+        limits=Limits(args.timeout, args.rss_limit_bytes, pari_stack_bytes=args.pari_stack_bytes),
+        log_path=log_path, checkpoint_path=workdir / "supervisor.json")
+    stdout, stderr = log_path.read_text(errors="replace"), ""
     worker = parse_worker(stdout)
-    if outcome == "running":
-        outcome = "completed" if process.returncode == 0 and worker else "backend_failure"
+    outcome = supervised["outcome"]
+    if outcome == "completed" and worker is None:
+        outcome = "backend_failure"
+    wall_seconds, peak_rss = supervised["wall_seconds"], supervised["peak_observed_rss_bytes"]
+    if outcome == "completed" and int(worker["total_two_selmer_dimension"]) < 28:
+        raise ArithmeticError("Selmer upper bound contradicts the certified rank-28 control")
     if outcome == "completed" and worker is not None:
         gate = gate_record(
             total_two_selmer_dimension=int(worker["total_two_selmer_dimension"]),
@@ -350,7 +258,7 @@ def main() -> None:
             "name": (
                 "eclib/mwrank through Sage"
                 if args.backend == "eclib"
-                else "PARI ellrank through Sage"
+                else "cached certified Simon descent through Sage"
             ),
             "algorithm": (
                 "complete invariant-quartic 2-descent in Selmer-only mode"
@@ -365,10 +273,10 @@ def main() -> None:
             "unconditional": outcome == "completed",
             "class_group_completeness_completed": outcome == "completed",
             "all_local_solubility_conditions_completed": outcome == "completed",
-            "known_points_supplied": 0 if args.backend == "eclib" else 28,
+            "known_points_supplied": 0,
             "point_search_enabled": False,
-            "pari_effort": 0 if args.backend.startswith("pari") else None,
-            "factorization_supplied": args.backend == "pari-factored",
+            "pari_effort": None,
+            "factorization_supplied": args.backend != "eclib",
             "proof_boundary": (
                 "These completeness flags are true only after the selected backend "
                 "returns its full Selmer result. For eclib the complete invariant-"
@@ -380,13 +288,14 @@ def main() -> None:
         "gate": gate,
         "supervisor": {
             "outcome": outcome,
-            "returncode": process.returncode,
+            "returncode": supervised["returncode"],
+            "log": str(log_path),
             "wall_seconds": wall_seconds,
             "peak_observed_rss_bytes": peak_rss,
             "timeout_seconds": args.timeout,
             "rss_limit_bytes": args.rss_limit_bytes,
             "pari_stack_bytes": (
-                args.pari_stack_bytes if args.backend == "pari-factored" else None
+                args.pari_stack_bytes if args.backend != "eclib" else None
             ),
             "backend": args.backend,
             "stderr": stderr,

@@ -1,0 +1,100 @@
+{
+  "constraints": [
+    {
+      "evidence": {
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json": "4739e0b24b00e276269b228d7c85a01743caa1dcbc62ef58ea59ca3152d116a0",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+        "artifacts/generated-results/elkies-k3-r17-product-19bad-083ad-rank-zero-v1.json": "8c02b033f4ae85ba3b490863756054328cca3ec35ebc9794ebe358e4058498f0",
+        "elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md": "c56f6a9e253313db710627fd58d965b44e122d1b5cc38047e216cd109922a39e"
+      },
+      "kind": "rank_upper",
+      "scope": {
+        "surface": "2d89724b462408c82d2caa26e52ebeaf9f82c867ab6aff12b8409aa612e6aa38"
+      },
+      "theorem_fingerprint": "a1049641359bd6aca30500ee572d20dcd08c507d512139eab77e590c5a491780",
+      "theorem_id": "EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO",
+      "upper": 0
+    },
+    {
+      "evidence": {
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json": "4739e0b24b00e276269b228d7c85a01743caa1dcbc62ef58ea59ca3152d116a0",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+        "artifacts/generated-results/elkies-k3-r17-product-regulator-sweep-v1.json": "a7a9f98e3186deb3b437cb80b9c3cfb68f7a237a182a9a21e56c4e3aaf48201f",
+        "elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md": "383ae47ed67e9bcdb9e6a1a3f5903150af2c0fb53aaba53a056c31e42263e160"
+      },
+      "kind": "rank_upper",
+      "scope": {
+        "surface": "3da20d17f49d35c7c3d76ee6f5948e1c872c82040712c6329731203f3e7c386c"
+      },
+      "theorem_fingerprint": "9cb59b2d4c65ae8dc0afe5ecc04faf528ee68dc3c78ca7f4577f546fadb49579",
+      "theorem_id": "EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP",
+      "upper": 0
+    },
+    {
+      "evidence": {
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json": "4739e0b24b00e276269b228d7c85a01743caa1dcbc62ef58ea59ca3152d116a0",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+        "artifacts/generated-results/elkies-k3-r17-product-regulator-sweep-v1.json": "a7a9f98e3186deb3b437cb80b9c3cfb68f7a237a182a9a21e56c4e3aaf48201f",
+        "elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md": "383ae47ed67e9bcdb9e6a1a3f5903150af2c0fb53aaba53a056c31e42263e160"
+      },
+      "kind": "rank_upper",
+      "scope": {
+        "surface": "ff4f31cdc9a860c73a9fd35cbf962337fbebe0e2b55e6a659279f601c73b2a33"
+      },
+      "theorem_fingerprint": "9cb59b2d4c65ae8dc0afe5ecc04faf528ee68dc3c78ca7f4577f546fadb49579",
+      "theorem_id": "EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP",
+      "upper": 0
+    },
+    {
+      "evidence": {
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json": "4739e0b24b00e276269b228d7c85a01743caa1dcbc62ef58ea59ca3152d116a0",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+        "artifacts/generated-results/elkies-k3-r17-product-regulator-sweep-v1.json": "a7a9f98e3186deb3b437cb80b9c3cfb68f7a237a182a9a21e56c4e3aaf48201f",
+        "elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md": "383ae47ed67e9bcdb9e6a1a3f5903150af2c0fb53aaba53a056c31e42263e160"
+      },
+      "kind": "rank_upper",
+      "scope": {
+        "surface": "16df914eac6bf58b1beb721166fabc2a23062d2314e0d470c28826ec36d1c8ba"
+      },
+      "theorem_fingerprint": "9cb59b2d4c65ae8dc0afe5ecc04faf528ee68dc3c78ca7f4577f546fadb49579",
+      "theorem_id": "EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP",
+      "upper": 0
+    },
+    {
+      "evidence": {
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json": "4739e0b24b00e276269b228d7c85a01743caa1dcbc62ef58ea59ca3152d116a0",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+        "artifacts/generated-results/elkies-k3-r17-product-regulator-sweep-v1.json": "a7a9f98e3186deb3b437cb80b9c3cfb68f7a237a182a9a21e56c4e3aaf48201f",
+        "elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md": "383ae47ed67e9bcdb9e6a1a3f5903150af2c0fb53aaba53a056c31e42263e160"
+      },
+      "kind": "rank_upper",
+      "scope": {
+        "surface": "13bd4e53683c598e5020f769fd5da527abd725c070b560f57da06c37094f9020"
+      },
+      "theorem_fingerprint": "9cb59b2d4c65ae8dc0afe5ecc04faf528ee68dc3c78ca7f4577f546fadb49579",
+      "theorem_id": "EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP",
+      "upper": 0
+    },
+    {
+      "basis_masks": [
+        450876,
+        596921
+      ],
+      "dimension": 20,
+      "evidence": {
+        "artifacts/generated-results/elliptic-curves/fixed_cubic_field_fermigier_rank20_local_kummer_u2_v1.json": "ddea246ebab21f494b10937eb443829a9fe2e5e37221dd7a4097fa0d6f842b41",
+        "artifacts/generated-results/elliptic-curves/fixed_cubic_u_minus1_cassels_tate_evidence_v1.json.gz": "c0fbf078091302acc193debbc0da79f2d1295ea40ca2cc8279fe14f9fd1c73df",
+        "artifacts/generated-results/elliptic-curves/fixed_cubic_u_minus1_cassels_tate_v1.json": "b417fd195df7ac173f76f6c0d4a08185480ecec7fb3f6f63e6cd006726fd3355",
+        "elliptic-curves/notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md": "f242e1785886880ed691cff552b22dc30047103024776bf00789fe57d59e2ab3"
+      },
+      "kind": "allowed_squareclass_subspace",
+      "scope": {
+        "curve": "351b70e8a5115ffdb566a9adb865ddafd344edfe11b22abf29ce1f0ebfacea5e",
+        "squareclass_space": "60c0f3598008f1dd1f4dbb6aec97c43fa819f81984c48f52b5ce688e43bcecd9"
+      },
+      "theorem_fingerprint": "0ddb6094ec3e882c7221f73073451f438d60bb711b05d1e6729ac87a316c1750",
+      "theorem_id": "EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE"
+    }
+  ],
+  "schema": "elliptic-curves.search-constraints.v1"
+}

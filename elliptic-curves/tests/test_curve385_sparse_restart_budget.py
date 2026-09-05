@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 import sys
 import unittest
+from unittest.mock import patch
+from pointed_regression_sources import historical_digest
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -35,7 +37,8 @@ class Curve385SparseRestartBudgetTests(unittest.TestCase):
         cls.artifact = json.loads(ARTIFACT.read_text())
 
     def test_artifact_replays(self) -> None:
-        self.assertEqual(self.builder.build(), self.artifact)
+        with patch.object(self.builder, "digest", side_effect=historical_digest):
+            self.assertEqual(self.builder.build(), self.artifact)
         self.assertEqual(
             self.artifact["status"],
             "FROZEN_INDEPENDENT_RESTART_BUDGETS_BEFORE_FUTURE_SEARCH",

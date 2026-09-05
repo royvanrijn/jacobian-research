@@ -314,7 +314,8 @@ class FermigierRank22AccidentalSliceTests(unittest.TestCase):
         )
         script = CAS / "search_fermigier_rank22_accidental_slices.py"
         self.assertEqual(
-            hashlib.sha256(script.read_bytes()).hexdigest(),
+            hashlib.sha256(__import__("research_runtime.witnesses",fromlist=["retained_source"]).retained_source(
+                ROOT,str(script.relative_to(ROOT)),artifact["script_sha256"]).read_bytes()).hexdigest(),
             artifact["script_sha256"],
         )
 

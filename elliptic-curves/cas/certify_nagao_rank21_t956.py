@@ -14,6 +14,8 @@ selection and is not itself a rank certificate.
 
 from __future__ import annotations
 
+from research_runtime.supervisor import Limits, capture, capture_record, captured_run, run as supervised_run
+
 import argparse
 from fractions import Fraction
 import hashlib
@@ -107,48 +109,18 @@ def point_digest(points: Iterable[tuple[Fraction, Fraction]]) -> str:
     return hashlib.sha256(text.encode()).hexdigest()
 
 
-def _terminate_process_group(process: subprocess.Popen[str]) -> None:
-    if process.poll() is not None:
-        return
-    try:
-        os.killpg(process.pid, signal.SIGTERM)
-        process.wait(timeout=2)
-    except ProcessLookupError:
-        return
-    except subprocess.TimeoutExpired:
-        try:
-            os.killpg(process.pid, signal.SIGKILL)
-        except ProcessLookupError:
-            pass
-        process.wait(timeout=2)
 
 
-def run_gp_capped(
-    program: str, *, timeout: float, stack_bytes: int
-) -> tuple[str, float]:
-    if timeout <= 0 or timeout > 60:
-        raise ValueError("PARI timeout must lie in (0,60]")
-    executable = shutil.which("gp")
-    if executable is None:
-        raise FileNotFoundError("PARI/GP executable 'gp' was not found")
-    process = subprocess.Popen(
-        [executable, "-q", "-s", str(stack_bytes)],
-        stdin=subprocess.PIPE,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-        start_new_session=True,
-    )
-    started = time.monotonic()
-    try:
-        stdout, stderr = process.communicate(program, timeout=timeout)
-    except BaseException:
-        _terminate_process_group(process)
-        raise
-    elapsed = time.monotonic() - started
-    if process.returncode != 0 or "***" in stderr:
-        raise RuntimeError(f"PARI/GP failed: {' '.join(stderr.split())[:1000]}")
-    return stdout, elapsed
+def run_gp_capped(program, *, timeout, stack_bytes):
+    if timeout<=0 or timeout>60:raise ValueError("PARI timeout must lie in (0,60]")
+    executable=shutil.which('gp')
+    if executable is None:raise FileNotFoundError("PARI/GP executable 'gp' was not found")
+    result=capture([executable,'-q','-s',str(stack_bytes)],input_text=program,
+        limits=Limits(timeout,max(512_000_000,2*stack_bytes),pari_stack_bytes=stack_bytes),
+        separate_stderr=True,check=False)
+    if result.returncode or '***' in result.stderr:
+        raise RuntimeError(f"PARI/GP failed: {' '.join(result.stderr.split())[:1000]}")
+    return result.stdout,result.supervision['wall_seconds']
 
 
 POINT_PATTERN = re.compile(r"\[(-?\d+(?:/\d+)?),\s*(-?\d+(?:/\d+)?)\]")

@@ -10,6 +10,8 @@ mod-2 finite-reduction certificate proves a genuine rank gain.
 
 from __future__ import annotations
 
+from research_runtime.supervisor import Limits, capture, capture_record, captured_run, run as supervised_run
+
 import argparse
 from fractions import Fraction
 import hashlib
@@ -157,89 +159,17 @@ def parse_output(stdout: str) -> dict[str, Any]:
     return result
 
 
-def read_rss_bytes(pid: int) -> int:
-    for line in Path(f"/proc/{pid}/status").read_text().splitlines():
-        if line.startswith("VmRSS:"):
-            return int(line.split()[1]) * 1024
-    raise RuntimeError(f"VmRSS is absent for pid {pid}")
 
 
-def terminate_owned(process: subprocess.Popen[str], sig: signal.Signals) -> None:
-    if process.poll() is None:
-        group = os.getpgid(process.pid)
-        if group != process.pid:
-            raise RuntimeError("refusing to signal an unexpected process group")
-        os.killpg(group, sig)
 
 
-def run_process(
-    executable: str,
-    program: str,
-    *,
-    stack_bytes: int,
-    timeout_seconds: float,
-    rss_limit_bytes: int,
-) -> dict[str, Any]:
-    with tempfile.TemporaryFile(mode="w+") as stdout_file, tempfile.TemporaryFile(
-        mode="w+"
-    ) as stderr_file:
-        process = subprocess.Popen(
-            [executable, "-f", "-q", "-s", str(stack_bytes)],
-            stdin=subprocess.PIPE,
-            stdout=stdout_file,
-            stderr=stderr_file,
-            text=True,
-            start_new_session=True,
-        )
-        assert process.stdin is not None
-        process.stdin.write(program)
-        process.stdin.close()
-        started = time.monotonic()
-        peak_rss = 0
-        outcome = "running"
-        while process.poll() is None:
-            elapsed = time.monotonic() - started
-            if elapsed >= timeout_seconds:
-                outcome = "strict_wall_timeout"
-                terminate_owned(process, signal.SIGTERM)
-                break
-            try:
-                rss = read_rss_bytes(process.pid)
-            except (FileNotFoundError, ProcessLookupError):
-                break
-            peak_rss = max(peak_rss, rss)
-            if rss > rss_limit_bytes:
-                outcome = "strict_rss_limit"
-                terminate_owned(process, signal.SIGTERM)
-                break
-            time.sleep(0.25)
-        if process.poll() is None:
-            try:
-                process.wait(timeout=10)
-            except subprocess.TimeoutExpired:
-                terminate_owned(process, signal.SIGKILL)
-                process.wait()
-        wall_seconds = time.monotonic() - started
-        stdout_file.seek(0)
-        stderr_file.seek(0)
-        stdout = stdout_file.read()
-        stderr = stderr_file.read()
-    parsed = parse_output(stdout)
-    if outcome == "running":
-        outcome = (
-            "completed"
-            if process.returncode == 0 and parsed["completed"]
-            else "pari_failure"
-        )
-    return {
-        "outcome": outcome,
-        "returncode": process.returncode,
-        "wall_seconds": wall_seconds,
-        "peak_observed_rss_bytes": peak_rss,
-        "stdout": stdout,
-        "stderr": stderr,
-        "parsed": parsed,
-    }
+def run_process(executable,program,*,stack_bytes,timeout_seconds,rss_limit_bytes):
+    record=capture_record([executable,'-f','-q','-s',str(stack_bytes)],input_text=program,
+        limits=Limits(timeout_seconds,rss_limit_bytes,pari_stack_bytes=stack_bytes))
+    parsed=parse_output(record['stdout']);record['parsed']=parsed
+    if record['outcome']=='completed' and not parsed['completed']:
+        record['outcome']='pari_failure'
+    return record
 
 
 def negative(model: Sequence[Q], point: tuple[Q, Q]) -> tuple[Q, Q]:

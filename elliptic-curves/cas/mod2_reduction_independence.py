@@ -125,81 +125,8 @@ def mod2_reduction_signature(
 ) -> Mod2ReductionSignature:
     """Return exact coordinate rows for the images in ``E(F_p)/2E(F_p)``."""
 
-    if len(coefficients) != 5 or any(Q(value) for value in coefficients[:3]):
-        raise ValueError("the certificate currently requires a short Weierstrass model")
-    if prime <= 2 or not _is_prime(prime):
-        raise ValueError("certificate primes must be odd")
-    coefficient_a_q = Q(coefficients[3])
-    coefficient_b_q = Q(coefficients[4])
-    for point in points:
-        x_q, y_q = (Q(value) for value in point)
-        if y_q**2 != x_q**3 + coefficient_a_q * x_q + coefficient_b_q:
-            raise ValueError("a supplied rational point is not on the short curve")
-    coefficient_a = _reduce_rational(coefficient_a_q, prime)
-    coefficient_b = _reduce_rational(coefficient_b_q, prime)
-    discriminant = -16 * (4 * coefficient_a**3 + 27 * coefficient_b**2)
-    if discriminant % prime == 0:
-        raise ValueError(f"the curve has bad reduction at {prime}")
-
-    finite_points = finite_curve_points(coefficient_a, coefficient_b, prime)
-    doubled = {
-        finite_multiply(point, 2, coefficient_a, prime) for point in finite_points
-    }
-
-    # Build a basis of the elementary 2-group E(F_p)/2E(F_p).  ``span`` stores
-    # representatives in binary-mask order.
-    representatives: list[FinitePoint] = []
-    span: list[FinitePoint] = [None]
-    for point in finite_points:
-        if any(
-            finite_subtract(point, representative, coefficient_a, prime) in doubled
-            for representative in span
-        ):
-            continue
-        representatives.append(point)
-        old_span = tuple(span)
-        span.extend(
-            finite_add(representative, point, coefficient_a, prime)
-            for representative in old_span
-        )
-    if len(span) * len(doubled) != len(finite_points):
-        raise AssertionError("the quotient representatives do not cover the group")
-    if len(span) & (len(span) - 1):
-        raise AssertionError("E(F_p)/2E(F_p) is not a 2-group")
-    quotient_dimension = len(span).bit_length() - 1
-    if 2**quotient_dimension != len(span) or quotient_dimension != len(representatives):
-        raise AssertionError("the quotient basis has the wrong dimension")
-
-    rows = [[0] * len(points) for _ in representatives]
-    for point_index, point in enumerate(points):
-        reduced = (
-            _reduce_rational(Q(point[0]), prime),
-            _reduce_rational(Q(point[1]), prime),
-        )
-        x, y = reduced
-        if (y * y - x**3 - coefficient_a * x - coefficient_b) % prime:
-            raise AssertionError("a rational point reduced off the finite curve")
-        mask = next(
-            (
-                candidate_mask
-                for candidate_mask, representative in enumerate(span)
-                if finite_subtract(reduced, representative, coefficient_a, prime)
-                in doubled
-            ),
-            None,
-        )
-        if mask is None:
-            raise AssertionError("a reduced point missed every quotient coset")
-        for basis_index in range(quotient_dimension):
-            rows[basis_index][point_index] = (mask >> basis_index) & 1
-
-    return Mod2ReductionSignature(
-        prime=prime,
-        group_order=len(finite_points),
-        doubled_subgroup_order=len(doubled),
-        quotient_dimension=quotient_dimension,
-        rows=tuple(tuple(row) for row in rows),
-    )
+    from research_runtime.finite_reduction import default_reduction_cache
+    return default_reduction_cache().signature(coefficients, points, prime)
 
 
 def gf2_rank(rows: Iterable[Sequence[int]], column_count: int) -> int:

@@ -13,6 +13,9 @@ unless both the requested ``bnfinit`` and certification complete.
 
 from __future__ import annotations
 
+from research_runtime.supervisor import Limits, run as supervised_run, captured_run, preserve_previous
+from research_runtime.store import checkpoint as atomic_checkpoint
+
 import argparse
 import json
 from pathlib import Path
@@ -27,8 +30,6 @@ from run_elkies_2026_pari219_bnf_benchmark import (
     gp_quote,
     gp_version,
     parse_progress,
-    read_rss_bytes,
-    stop_group,
 )
 
 
@@ -135,6 +136,7 @@ def main() -> None:
     parser.add_argument("--factor-primes", type=parse_factor_primes, required=True)
     parser.add_argument("--factor-certificate", type=Path, required=True)
     parser.add_argument("--timeout-seconds", type=float, default=1800.0)
+    parser.add_argument("--rss-bytes",type=int,default=8_000_000_000)
     parser.add_argument("--stack-bytes", type=int, default=5_000_000_000)
     parser.add_argument("--threads", type=int, default=8)
     parser.add_argument(
@@ -183,7 +185,7 @@ def main() -> None:
         if path.exists() and not args.overwrite:
             raise FileExistsError(path)
         path.parent.mkdir(parents=True, exist_ok=True)
-    args.checkpoint.unlink(missing_ok=True)
+    preserve_previous(args.checkpoint)
 
     relation_threads = (
         args.threads if args.relation_threads is None else args.relation_threads
@@ -220,52 +222,26 @@ print("{PROTOCOL}|stage=checkpoint|status=done|reload_certified=1|flag={certify_
 print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1|flag={certify_flag}");
 '''
 
-    started = time.monotonic()
-    peak_rss = 0
-    outcome = "running"
-    with args.log.open("w") as handle:
-        process = subprocess.Popen(
-            [str(gp), "-q", "-f", "-s", str(args.stack_bytes)],
-            stdin=subprocess.PIPE,
-            stdout=handle,
-            stderr=subprocess.STDOUT,
-            text=True,
-            start_new_session=True,
-        )
-        assert process.stdin is not None
-        process.stdin.write(program)
-        process.stdin.close()
-        try:
-            while process.poll() is None:
-                peak_rss = max(peak_rss, read_rss_bytes(process.pid))
-                if time.monotonic() - started >= args.timeout_seconds:
-                    outcome = "strict_wall_timeout"
-                    stop_group(process, signal.SIGTERM)
-                    try:
-                        process.wait(timeout=15)
-                    except subprocess.TimeoutExpired:
-                        stop_group(process, signal.SIGKILL)
-                        process.wait()
-                    break
-                time.sleep(0.25)
-        except BaseException:
-            stop_group(process, signal.SIGTERM)
-            process.wait(timeout=15)
-            raise
-
-    elapsed = time.monotonic() - started
+    source_path=args.output.with_suffix('.gp')
+    preserve_previous(source_path);source_path.write_text(program)
+    supervision=supervised_run([str(gp),'-q','-f','-s',str(args.stack_bytes)],
+        input_text=program,log_path=args.log,checkpoint_path=args.output.with_suffix('.supervisor.json'),
+        limits=Limits(args.timeout_seconds,args.rss_bytes,pari_stack_bytes=args.stack_bytes))
+    peak_rss=supervision['peak_observed_rss_bytes']
+    elapsed=wall_seconds=supervision['wall_seconds']
+    outcome='running' if supervision['outcome']=='completed' else supervision['outcome']
     log_text = args.log.read_text(errors="replace")
     certified = (
         f"{PROTOCOL}|stage=bnfcertify|status=done|certified=1|flag={certify_flag}" in log_text
         and f"{PROTOCOL}|stage=checkpoint|status=done|reload_certified=1|flag={certify_flag}" in log_text
         and "  ***" not in log_text
-        and process.returncode == 0
+        and supervision["returncode"] == 0
         and args.checkpoint.is_file()
     )
     if outcome == "running":
         outcome = completion_status if certified else "backend_failure"
     if not certified:
-        args.checkpoint.unlink(missing_ok=True)
+        preserve_previous(args.checkpoint)
 
     if args.mode == "full-bnf":
         claim_boundary = [
@@ -315,7 +291,7 @@ print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1|flag={certify_flag}")
         "measurement": {
             "wall_seconds": elapsed,
             "peak_observed_rss_bytes": peak_rss,
-            "returncode": process.returncode,
+            "returncode": supervision["returncode"],
             **parse_progress(args.log),
             **parse_relation_search(log_text),
             **parse_computed_class_group(log_text),
@@ -326,7 +302,10 @@ print("{PROTOCOL}|stage=bnfcertify|status=done|certified=1|flag={certify_flag}")
         "checkpoint_sha256": file_sha256(args.checkpoint) if certified else None,
         "checkpoint_scope": checkpoint_scope if certified else None,
     }
-    args.output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
+    result["supervision"]=supervision
+    result["source"]={"path":str(source_path),"sha256":file_sha256(source_path)}
+    preserve_previous(args.output)
+    atomic_checkpoint(args.output,result)
     print(
         f"{PROTOCOL}|case={args.case_id}|status={outcome}|seconds={elapsed:.3f}"
         f"|output={args.output}",

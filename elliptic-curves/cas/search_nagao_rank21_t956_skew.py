@@ -17,6 +17,8 @@ small-prime saturation and exact finite-reduction certification.
 
 from __future__ import annotations
 
+from research_runtime.supervisor import Limits, capture, capture_record, captured_run, run as supervised_run
+
 import argparse
 from fractions import Fraction
 import hashlib
@@ -79,59 +81,21 @@ REPRODUCING_COMMAND = (
 )
 
 
-def _terminate_process_group(process: subprocess.Popen[str]) -> None:
-    if process.poll() is not None:
-        return
-    try:
-        os.killpg(process.pid, signal.SIGTERM)
-        process.wait(timeout=2)
-    except ProcessLookupError:
-        return
-    except subprocess.TimeoutExpired:
-        try:
-            os.killpg(process.pid, signal.SIGKILL)
-        except ProcessLookupError:
-            pass
-        process.wait(timeout=2)
 
 
-def run_gp_once(
-    program: str, *, timeout: float, stack_bytes: int
-) -> tuple[str | None, dict[str, Any]]:
-    if timeout <= 0 or timeout > 60:
-        raise ValueError("PARI timeout must lie in (0,60]")
-    executable = shutil.which("gp")
-    if executable is None:
-        return None, {"status": "unavailable", "wall_seconds": 0.0}
-    process = subprocess.Popen(
-        [executable, "-q", "-s", str(stack_bytes)],
-        stdin=subprocess.PIPE,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-        start_new_session=True,
-    )
-    started = time.monotonic()
-    try:
-        stdout, stderr = process.communicate(program, timeout=timeout)
-    except subprocess.TimeoutExpired:
-        _terminate_process_group(process)
-        return None, {
-            "status": "timeout",
-            "timeout_seconds": timeout,
-            "wall_seconds": time.monotonic() - started,
-        }
-    except BaseException:
-        _terminate_process_group(process)
-        raise
-    elapsed = time.monotonic() - started
-    if process.returncode != 0 or "***" in stderr:
-        return None, {
-            "status": "pari_error",
-            "wall_seconds": elapsed,
-            "error": " ".join(stderr.split())[:1000],
-        }
-    return stdout, {"status": "completed", "wall_seconds": elapsed}
+def run_gp_once(program, *, timeout, stack_bytes):
+    if timeout<=0 or timeout>60:raise ValueError("PARI timeout must lie in (0,60]")
+    executable=shutil.which('gp')
+    if executable is None:return None,{'status':'unavailable','wall_seconds':0.0}
+    record=capture_record([executable,'-q','-s',str(stack_bytes)],input_text=program,
+        limits=Limits(timeout,max(512_000_000,2*stack_bytes),pari_stack_bytes=stack_bytes))
+    status=record['outcome']
+    fatal=[line for line in record['stderr'].splitlines() if '***' in line]
+    if status=='strict_wall_timeout':return None,{**record,'status':'timeout'}
+    if status!='completed':return None,{**record,'status':status}
+    if fatal or record['returncode']:
+        return None,{**record,'status':'pari_error','error':' '.join(fatal or record['stderr'].splitlines())[:2000]}
+    return record['stdout'],{**record,'status':'completed'}
 
 
 def search_original_quartic(

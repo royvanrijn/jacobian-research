@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+from research_runtime.supervisor import Limits, capture, capture_record, captured_run, run as supervised_run
+
 from fractions import Fraction
 import shutil
 import subprocess
@@ -19,7 +21,7 @@ def pari_version(timeout: float = 5.0) -> str | None:
     executable = shutil.which("gp")
     if executable is None:
         return None
-    result = subprocess.run(
+    result = captured_run(
         [executable, "-q"],
         input="print(version());\nquit\n",
         text=True,
@@ -117,7 +119,7 @@ def minimal_curve_data(
             ]
         )
     commands.append("quit")
-    result = subprocess.run(
+    result = captured_run(
         [executable, "-q", "-s", str(stack_bytes)],
         input="\n".join(commands) + "\n",
         text=True,

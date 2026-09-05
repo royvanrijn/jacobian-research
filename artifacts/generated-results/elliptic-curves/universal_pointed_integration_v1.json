@@ -1,0 +1,67 @@
+{
+  "MW16_sensitivity_uses_shared_module": true,
+  "adapters": [
+    {
+      "adapter": "curve-specific/shared-lattice",
+      "coefficient_bits": 121,
+      "finite_points": 0
+    },
+    {
+      "adapter": "MW17",
+      "coefficient_bits": 121,
+      "finite_points": 0
+    },
+    {
+      "adapter": "zero-gain-rescue",
+      "coefficient_bits": 121,
+      "finite_points": 0
+    },
+    {
+      "adapter": "R17-CRT",
+      "coefficient_bits": 121,
+      "finite_points": 0
+    }
+  ],
+  "claim_boundary": "Bounded integration canary only; no MW17/MW18 sensitivity or prospective gain is claimed.",
+  "fixture_curve_id": 478,
+  "height": 17,
+  "runtime_search": {
+    "amendment": "Use PointedQuarticSearch instead of the historical search implementation; finite coordinate boxes change. Candidate and centre selection and rank certification remain governed by the source protocol.",
+    "backend": "pointed_quartic_search_v1",
+    "coordinate_policy": {
+      "kind": "metric",
+      "matrix": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "weight": "16"
+    },
+    "regression_revision": "d30a742133f0658185c3bd4c99f0b0f815f2f74b",
+    "source_hashes": {
+      "elkies-k3/scripts/run_r17_prospective_crt_half_lattice_search.sage": "d8f33da8907b1ebd71efeeab9ceadff87d61150a1885105d91f8802826db1866",
+      "elliptic-curves/cas/alternate_quartic_covers.py": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5",
+      "elliptic-curves/cas/half_lattice_pointed_sieve.py": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4",
+      "elliptic-curves/cas/pointed_quartic_migration.py": "6a20c1ece00e4f2cf605d60cfa6755f15166041cb0db700ce0e7cf2e3de2327e",
+      "elliptic-curves/cas/pointed_quartic_search.py": "e68b10a94980c032c0dbe3ef03d8a7eb348664e7d2f2d4f023f31c5a14e36f49",
+      "elliptic-curves/cas/pointed_quartic_sieve.cpp": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4",
+      "elliptic-curves/cas/run_a1_mw16_blind_parameter_experiment.sage": "db4415fa41cfa2c7798ee8beabc4eda23278a1df382f056d3272709137c9c1c4",
+      "elliptic-curves/cas/run_a1_mw16_target_free_parameter_search.sage": "6c98b9723825f61a9a9858281b765618eede851b394337cc9115585b279b028b",
+      "elliptic-curves/cas/run_curve385_iterated_half_lattice_search.sage": "c916fa99cb54dc4a0fc2f4965d2a5e55fd22d566392e02659a31a389c382a664",
+      "elliptic-curves/cas/run_curve385_sparse_quotient_rank32_search.sage": "01e78c591f8acf6268a1ec0f55651a53e5574a43d7f32bb191bd920bb66ddf44",
+      "elliptic-curves/cas/run_curve385_sparse_quotient_rank32_search_v2.sage": "791a0a4a68bd09069021c1c1ef446c4e6d022f9e1d154e79d6eeae2007d6b558",
+      "elliptic-curves/cas/run_curve398_mw16_adaptive_half_lattice_search.sage": "628be4a32bbf54291abe9a32d1d7512c51cea318520db7c18c28d6a04a3d3375",
+      "elliptic-curves/cas/run_icarm_mw16_curve400_adaptive_calibration.sage": "8de5a46ee3e7c89036b9caabcb8bea3719e46d497e9cb8ada5c19345ce62d3e3",
+      "elliptic-curves/cas/run_icarm_mw16_nagao_finalist_half_lattice.sage": "7ce04cdad5e2d8af9b6e8b52274b554535c84d684e84ea31f552dd3643014e9d",
+      "elliptic-curves/cas/run_icarm_mw16_parent_ladder_blind.sage": "bd564768bca14036e2e4a4d0f65920d4f647d7fca63d4ea23096aaff3e22eaae",
+      "elliptic-curves/cas/run_mw16_sensitivity.sage": "82d9b7627110bd7f7c518827582caba9b5844a066c777d574df4e99a5bab3acd",
+      "elliptic-curves/cas/run_mw17_jump_v2.sage": "ae59d66631941e51210face6ec8d65396ab6201e6f1811dfad52d523250b88fa",
+      "elliptic-curves/cas/run_mw17_jump_v2_zero_gain_rescue.sage": "ffda274b22d6ab7e25477d70951d2c60177afa6bece6f809f82495d787a0419e",
+      "elliptic-curves/cas/run_r17_refresh_jump_ladder_blind.sage": "951c0398925ae3443a2e155e0f6a99a6260a2c9e3918c7d9af52d93e4c7a25f6",
+      "elliptic-curves/cas/run_r17_refresh_jump_ladder_blind_v2.sage": "d4bc18e1722783adc358e56e8f89d4f261086b5242d5f6b481a1945c6f90bcc0"
+    }
+  },
+  "seconds_per_chart": 2,
+  "status": "PASS_UNIVERSAL_POINTED_ADAPTERS"
+}

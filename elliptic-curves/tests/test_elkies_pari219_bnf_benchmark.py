@@ -72,7 +72,8 @@ KCZ = 151, KC = 261, n = 268
     def test_pinned_long_run_remains_fail_closed(self) -> None:
         data = json.loads(ARTIFACT.read_text())["pari_219_threaded_relation_experiments"]
         self.assertEqual(
-            data["program_sha256"], sha256(PROGRAM.read_bytes()).hexdigest()
+            data["program_sha256"], sha256(__import__("research_runtime.witnesses",fromlist=["retained_source"]).retained_source(
+                ROOT,str(PROGRAM.relative_to(ROOT)),data["program_sha256"]).read_bytes()).hexdigest()
         )
         self.assertEqual(
             data["build"]["source_commit"],

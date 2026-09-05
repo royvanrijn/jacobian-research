@@ -31,8 +31,8 @@ from sage.all import EllipticCurve, Matrix, QQ, ZZ
 
 ROOT = Path(__file__).resolve().parents[2]
 CAMPAIGN = ROOT / "artifacts/generated-results/elkies-k3-mw17-jump-v2-campaign-v1.json"
-CHUNK_DIR = ROOT / "artifacts/local/elkies-k3/mw17-jump-v2"
-LEDGER = ROOT / "artifacts/generated-results/elkies-k3-mw17-jump-v2-ledger-v1.json"
+CHUNK_DIR = ROOT / "artifacts/local/elkies-k3/mw17-jump-v2-pointed-v1"
+LEDGER = ROOT / "artifacts/generated-results/elkies-k3-mw17-jump-v2-pointed-ledger-v1.json"
 STOP_SENTINEL = CHUNK_DIR / "STOP_GAIN15.json"
 LEGACY = ROOT / "elliptic-curves/cas/run_curve385_iterated_half_lattice_search.sage"
 ENGINE_SOURCE = ROOT / "elliptic-curves/cas/half_lattice_fake_descent_replay.sage"
@@ -66,6 +66,9 @@ GENERIC_WORDS_074D9 = (
 
 sys.path[:0] = [str(ROOT / "elliptic-curves"), str(ROOT / "elliptic-curves/cas")]
 
+
+from pointed_quartic_migration import validate_frozen_sources, runtime_search, require_runtime
+from research_runtime.supervisor import captured_run, Limits
 
 def digest(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
@@ -134,10 +137,7 @@ def load_campaign() -> dict[str, Any]:
         path = ROOT / name
         if digest(path) != expected:
             raise ArithmeticError(f"immutable campaign source changed: {name}")
-    for name, expected in campaign["implementation_hashes"].items():
-        path = ROOT / name
-        if digest(path) != expected:
-            raise ArithmeticError(f"frozen campaign implementation changed: {name}")
+    validate_frozen_sources(campaign["implementation_hashes"])
     detector = campaign["detector"]
     expected_budget = (
         detector["initial_chart_count"],
@@ -391,139 +391,10 @@ def complete_generic_census(legacy, gram):
     return rows, maximum_error
 
 
-def run_quartic_search_raw(
-    engine,
-    *,
-    mask: int,
-    representative,
-    short_model,
-    generic_points,
-    height_bound: int,
-    timeout_seconds: float,
-    stack_bytes: int,
-):
-    """Search the exact denominator-cleared pointed quartic without preprocessing."""
-
-    base_point = engine.exact_linear_combination(
-        Fraction(short_model[3]), generic_points, representative
-    )
-    if base_point is None:
-        raise ArithmeticError("a nonzero selected class produced the point at infinity")
-    cover = engine.alternate_cover(short_model, base_point)
-    denominator = 1
-    for coefficient in cover.coefficients:
-        denominator = lcm(denominator, Fraction(coefficient).denominator)
-    integral_coefficients = tuple(
-        Fraction(coefficient) * denominator * denominator
-        for coefficient in cover.coefficients
-    )
-    if any(value.denominator != 1 for value in integral_coefficients):
-        raise ArithmeticError("quartic denominator clearing failed")
-    integral_coefficients = tuple(int(value) for value in integral_coefficients)
-    polynomial = engine.gp_polynomial(tuple(Fraction(value) for value in integral_coefficients))
-    x_base, y_base = base_point
-    program = f"""
-C0=[{polynomial},0];
-gettime(); R=hyperellratpoints(C0,{height_bound}); searchms=gettime();
-print("SEARCHMS|",searchms);
-print("SEARCHCOUNT|",#R);
-for(i=1,#R,p=R[i];if(!hyperellisoncurve(C0,p),error("raw point left C0"));ex=(p[1]^2-{engine.gp_rational(x_base)}+p[2]/{denominator})/2;ey=p[1]*(ex-{engine.gp_rational(x_base)})-{engine.gp_rational(y_base)};print("POINT|",p[1],"|",p[2]/{denominator},"|",ex,"|",ey));
-quit
-"""
-    common = {
-        "mask": mask,
-        "hex": f"0x{mask:05x}",
-        "height_bound": height_bound,
-        "timeout_seconds": timeout_seconds,
-        "representative": list(map(int, representative)),
-        "base_point": engine.point_record(base_point),
-        "raw_quartic_coefficients_ascending": [
-            engine.rational_to_string(value) for value in cover.coefficients
-        ],
-        "raw_rational_coefficient_maximum_bits": max(
-            engine.bit_height(value) for value in cover.coefficients
-        ),
-        "denominator_clearing_factor_bits": denominator.bit_length(),
-        "integral_model_maximum_coefficient_bits": max(
-            abs(value).bit_length() for value in integral_coefficients
-        ),
-        "quartic_preprocessing_policy": "NONE_EXACT_RAW_POINTED_QUARTIC",
-    }
-    started = time.monotonic()
-    try:
-        completed = subprocess.run(
-            ["gp", "-q", "-s", str(stack_bytes)],
-            input=program,
-            text=True,
-            capture_output=True,
-            timeout=timeout_seconds,
-            check=False,
-        )
-        wall_seconds = time.monotonic() - started
-    except subprocess.TimeoutExpired:
-        return engine.QuarticSearchResult(
-            {**common, "status": "bounded_search_timeout", "wall_seconds": time.monotonic() - started},
-            (),
-        )
-    if completed.returncode != 0 or "***" in completed.stderr:
-        return engine.QuarticSearchResult(
-            {
-                **common,
-                "status": "pari_failure",
-                "wall_seconds": wall_seconds,
-                "error": completed.stderr.strip()[-2000:],
-            },
-            (),
-        )
-
-    markers = {}
-    curve_points = []
-    raw_points = []
-    for line in completed.stdout.splitlines():
-        if line.startswith("POINT|"):
-            unused, raw_x, raw_y, curve_x, curve_y = line.split("|", 4)
-            raw_point = (Fraction(raw_x), Fraction(raw_y))
-            curve_point = (Fraction(curve_x), Fraction(curve_y))
-            if raw_point[1] ** 2 != cover.value(raw_point[0]):
-                raise ArithmeticError("mapped PARI point left the raw quartic")
-            if cover.cover_point_to_curve(raw_point) != curve_point:
-                raise ArithmeticError("PARI/Python quartic maps disagree")
-            if not engine.point_on_short_curve(short_model, curve_point):
-                raise ArithmeticError("mapped quartic point left E")
-            raw_points.append(raw_point)
-            curve_points.append(curve_point)
-        elif "|" in line:
-            key, value = line.split("|", 1)
-            markers[key] = value.strip()
-    for required in ("SEARCHMS", "SEARCHCOUNT"):
-        if required not in markers:
-            raise ArithmeticError(f"PARI omitted marker {required} for mask {mask:#x}")
-    local_profile = [
-        engine.modular_square_density(integral_coefficients, (), prime)
-        for prime in engine.SQUARE_SIEVE_PRIMES
-    ]
-    density = 1.0
-    for entry in local_profile:
-        density *= entry["affine_x_survivors"] / entry["prime"]
-    record = {
-        **common,
-        "status": "bounded_search_complete",
-        "wall_seconds": wall_seconds,
-        "minimalization_milliseconds": 0,
-        "reduction_milliseconds": 0,
-        "local_stage": {
-            "solubility_filter": "not_applicable_pointed_model_birational_to_E",
-            "reason": "the monic raw quartic has rational points at infinity",
-            "raw_affine_modular_square_sieve_profile": local_profile,
-            "joint_independent_density_product": str(density),
-        },
-        "search_milliseconds": int(markers["SEARCHMS"]),
-        "signed_affine_points_reported": int(markers["SEARCHCOUNT"]),
-        "trivial_points_mapping_to_infinity": 0,
-        "finite_raw_points": [engine.point_record(point) for point in raw_points],
-        "finite_curve_points": [engine.point_record(point) for point in curve_points],
-    }
-    return engine.QuarticSearchResult(record, tuple(curve_points))
+def run_quartic_search_raw(engine, **kwargs):
+    """Compatibility name; all active searches use PointedQuarticSearch."""
+    from pointed_quartic_search import run_quartic_search
+    return run_quartic_search(**kwargs)
 
 
 class DetectorArgs:
@@ -787,6 +658,7 @@ def run_fibre(row: dict[str, Any], families: Families, modules) -> dict[str, Any
                 "actual_certified_quotient_rank_gain": final_gain,
                 "certified_rank_lower_bound": 17 + final_gain,
                 "campaign_sha256": digest(CAMPAIGN),
+                "runtime_search": runtime_search(),
             },
         )
     return result
@@ -835,6 +707,7 @@ def write_checkpoint(path: Path, campaign: dict[str, Any], chunk_index: int, chu
             "schema": "elkies-k3.mw17-jump-v2-chunk.v1",
             "status": "COMPLETE_CHUNK" if len(records) == len(indices) else "PARTIAL_CHECKPOINT",
             "campaign_sha256": digest(CAMPAIGN),
+            "runtime_search": runtime_search(),
             "candidate_list_sha256": campaign["candidate_list_sha256"],
             "protocol_definition_sha256": campaign["protocol_definition_sha256"],
             "chunk_index": chunk_index,
@@ -854,6 +727,7 @@ def run_chunk(chunk_index: int, chunk_count: int, output: Path, max_new: int | N
     records = []
     if output.exists():
         old = json.loads(output.read_text())
+        require_runtime(old)
         if (
             old.get("campaign_sha256") != digest(CAMPAIGN)
             or old.get("chunk_index") != chunk_index
@@ -874,10 +748,10 @@ def run_chunk(chunk_index: int, chunk_count: int, output: Path, max_new: int | N
             break
         if max_new is not None and new_count >= max_new:
             break
-        command = [sys.executable, str(Path(__file__).resolve()), "--single-index", str(index)]
+        command = [sys.executable, str(Path(__file__).resolve()), "--single-index", str(index), "--legacy-census-regression"]
         started = time.monotonic()
         try:
-            completed = subprocess.run(
+            completed = captured_run(
                 command,
                 text=True,
                 stdout=subprocess.PIPE,
@@ -927,6 +801,7 @@ def merge_chunks(chunk_dir: Path, chunk_count: int, output: Path) -> None:
         if not path.exists():
             continue
         chunk = json.loads(path.read_text())
+        require_runtime(chunk)
         if (
             chunk.get("campaign_sha256") != digest(CAMPAIGN)
             or chunk.get("candidate_list_sha256") != campaign["candidate_list_sha256"]
@@ -963,6 +838,7 @@ def merge_chunks(chunk_dir: Path, chunk_count: int, output: Path) -> None:
         "schema": "elkies-k3.mw17-jump-v2-ledger.v1",
         "status": "COMPLETE_SCHEDULED_EVALUATION" if complete else "PARTIAL_CHECKPOINTED_EVALUATION",
         "campaign_sha256": digest(CAMPAIGN),
+        "runtime_search": runtime_search(),
         "candidate_list_sha256": campaign["candidate_list_sha256"],
         "scheduled_candidate_count": campaign["candidate_count"],
         "completed_worker_count": len(records_by_index),
@@ -986,6 +862,26 @@ def merge_chunks(chunk_dir: Path, chunk_count: int, output: Path) -> None:
     )
 
 
+def run_lazy_single(index, args):
+    """Production entry: raw MWState and a bounded lazy CVP frontier."""
+    from run_mw_search import search_request
+    campaign=load_campaign()
+    if not 0<=index<len(campaign['rows']):raise ValueError('candidate index outside the declared input')
+    row=campaign['rows'][index]
+    curve,points,gram,_=Families().specialize(row)
+    request={'schema':'elliptic-curves.lazy-mw-search.v1',
+             'curve':list(map(str,curve.a_invariants())),
+             'points':[[str(p[0]),str(p[1])] for p in points],
+             'metric_gram':[[str(v) for v in r] for r in gram],
+             'policy':{'enumeration_backend':'gmp-pointed-sieve','chart_metric_weight':args.metric_weight,'diversity_window':2},
+             'next_holes':args.next_holes,'height':args.height,'seconds_per_chart':args.seconds,
+             'cvp_node_budget':args.cvp_node_budget,'extra_primes':[211,223,227,229,233,239,241,251]}
+    output=args.output or ROOT/f'artifacts/local/runtime-mw17/index-{index}-lazy.json'
+    if output.exists():raise FileExistsError('retain the prior search result and choose a new output')
+    result=search_request(request,output)
+    print(f"MW17LAZY|index={index}|charts={len(result['charts'])}|gain={result['certified_rank_gain']}|output={output}",flush=True)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--single-index", type=int)
@@ -996,7 +892,25 @@ def main() -> None:
     parser.add_argument("--max-new", type=int)
     parser.add_argument("--merge", action="store_true")
     parser.add_argument("--check", action="store_true")
+    parser.add_argument('--legacy-census-regression',action='store_true',help='explicitly regenerate the frozen 43/301-centre campaign')
+    parser.add_argument('--next-holes',type=int,default=12)
+    parser.add_argument('--height',type=int,default=10000)
+    parser.add_argument('--seconds',default='1',help='exact decimal seconds per chart')
+    parser.add_argument('--metric-weight',default='16')
+    parser.add_argument('--cvp-node-budget',type=int,default=100000)
+    parser.add_argument('--wall-seconds',type=int,default=300)
+    parser.add_argument('--rss-bytes',type=int,default=1073741824)
+    parser.add_argument('--lazy-worker',action='store_true',help=argparse.SUPPRESS)
     args = parser.parse_args()
+    if args.single_index is not None and not args.legacy_census_regression:
+        if args.lazy_worker:
+            run_lazy_single(args.single_index,args)
+        else:
+            completed=captured_run([sys.executable,str(Path(__file__).resolve()),*sys.argv[1:],'--lazy-worker'],
+                limits=Limits(args.wall_seconds,args.rss_bytes),text=True,check=True)
+        return
+    if args.chunk_index is not None and not args.legacy_census_regression:
+        parser.error('production searches use --single-index with lazy budgets; --legacy-census-regression explicitly regenerates historical chunks')
     if shutil.which("gp") is None:
         raise SystemExit("PARI/GP is required")
     if args.check:

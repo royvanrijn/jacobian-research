@@ -22,6 +22,8 @@ only, if a stable numerical rank reaches 21.
 
 from __future__ import annotations
 
+from research_runtime.supervisor import Limits, capture, capture_record, captured_run, run as supervised_run
+
 import argparse
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -109,35 +111,15 @@ def point_digest(points: Iterable[tuple[Fraction, Fraction]]) -> str:
     return hashlib.sha256(text.encode()).hexdigest()
 
 
-def run_capped_process(
-    command: Sequence[str],
-    *,
-    timeout: float,
-    input_text: str | None = None,
-) -> tuple[str, str]:
-    """Run one foreground process group and kill the whole group on timeout."""
-
-    process = subprocess.Popen(
-        tuple(command),
-        stdin=subprocess.PIPE if input_text is not None else subprocess.DEVNULL,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-        start_new_session=True,
-    )
+def run_capped_process(command, *, timeout, input_text=None):
     try:
-        stdout, stderr = process.communicate(input=input_text, timeout=timeout)
+        result = capture(command,input_text=input_text,limits=Limits(timeout,1_073_741_824),
+                         separate_stderr=True,check=False)
     except subprocess.TimeoutExpired as error:
-        os.killpg(process.pid, signal.SIGKILL)
-        process.communicate()
-        raise CappedProcessTimeout(
-            f"subprocess exceeded its {timeout:g}-second wall cap"
-        ) from error
-    if process.returncode != 0:
-        raise RuntimeError(
-            f"subprocess exited {process.returncode}: {' '.join(stderr.split())[:1000]}"
-        )
-    return stdout, stderr
+        raise CappedProcessTimeout(f"subprocess exceeded its {timeout:g}-second wall cap") from error
+    if result.returncode:
+        raise RuntimeError(f"subprocess exited {result.returncode}: {' '.join(result.stderr.split())[:1000]}")
+    return result.stdout,result.stderr
 
 
 def compiled_enumeration(

@@ -1,5 +1,16 @@
 # Active elliptic-curve artifacts
 
+The shared runtime also retains the [MW18 census witness bundle](runtime_mw18_census_witnesses_v1.zip)
+and [replay summary](runtime_mw18_census_witnesses_v1.json), with
+[positive MW states and finite facts](runtime_mw18_complete_replay_v1.json). The default
+`certify_r17_extreme_anchored_mw18_covers.sage --check` verifies its polynomial
+group-law/chord witnesses and the eight positive covers. See the
+[engineering ledger](../../../elliptic-curves/notes/SHARED_RESEARCH_RUNTIME.md).
+
+- [Runtime chart-policy sweep](runtime_chart_policy_sweep_v1.json) and
+  [portable exact witnesses](runtime_chart_policy_sweep_v1.zip): 21 controls,
+  four policies and 1,008 completed charts; [method and replay](../../../elliptic-curves/notes/SHARED_RESEARCH_RUNTIME.md).
+
 This directory is the complete active artifact surface for
 [`elliptic-curves/`](../../../elliptic-curves/README.md). Exploratory outputs and superseded results live in the
 [`archive`](../../../archive/elliptic-curves/README.md); large or resumable
@@ -21,6 +32,11 @@ strict:
   mathematical conclusion by themselves.
 
 Important distinctions made explicit by the catalogue:
+
+- `universal_pointed_control_regression_v1.json` replays all 1,034 calibrated
+  control boxes through the shared API and rechecks all 55 quotient directions.
+  `universal_pointed_integration_v1.json` records bounded active-caller canaries.
+  See the [shared API and claim limits](../../../elliptic-curves/notes/POINTED_QUARTIC_SEARCH.md).
 
 - `mw16_sensitivity_*v1.json.gz` and their summaries retain the exact
   coordinate/centre calibration and the subsequent gated prospective replay.
@@ -75,6 +91,12 @@ Important distinctions made explicit by the catalogue:
   real inequalities already excluded all six nominal height boxes. This
   corrects the interpretation of the searches without deciding a class.
 <!-- status-consumer: EC-FIXED-CUBIC-RADICAL-SEARCH-GEOMETRY 678f7beb805a4530 -->
+
+- [`fixed_field_tangent_conics_v1.json`](fixed_field_tangent_conics_v1.json)
+  and its [evidence](fixed_field_tangent_conics_evidence_v1.json.gz) retain
+  three exact cubic tangent conics, eight invertible reductions and incomplete
+  construction attempts. No genuine lift or new target obstruction is claimed.
+<!-- status-consumer: EC-FIXED-CUBIC-TANGENT-CONIC-GATE 26a49e30ff3128d3 -->
 
 - `quotient_geometry_table_v1.json` is the complete 30-presentation join of
   five usable R17 controls, sixteen refreshed R17 ladder fibres, and nine
@@ -465,4 +487,4 @@ The pre-cleanup bytes and every provenance-only refresh are recorded under
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON f37417a9fda3ee3f -->
 
-<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY 1abe84480122e9b4 -->
+<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY f88886c066d6cb45 -->

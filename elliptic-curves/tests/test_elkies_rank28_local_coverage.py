@@ -213,7 +213,7 @@ class ElkiesRank28LocalCoverageTests(unittest.TestCase):
     def test_supervisor_is_owned_resumable_and_parses_one_result(self) -> None:
         source = (CAS / "run_bnf_free_two_cover_local_supervisor.py").read_text()
         for required in (
-            "start_new_session=True",
+            "from research_runtime.supervisor import",
             "--retry-incomplete",
             "--overwrite-cache",
             "--timeout-per-place",

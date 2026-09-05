@@ -1,0 +1,78 @@
+{
+  "bundle": "artifacts/generated-results/elliptic-curves/runtime_chart_policy_sweep_v1.zip",
+  "bundle_sha256": "9bf8d411278c5366fb87de261a3a7cadb5c47428210aec84d55a542e27f2b1f6",
+  "calibration_fibre_count": 19,
+  "cell_count": 84,
+  "chart_count": 1008,
+  "claim_boundary": "Historical control calibration with retained exact positive point witnesses. Timing differences and equal recovery counts do not establish a unique optimal metric.",
+  "distinct_arithmetic_facts": 9385,
+  "held_out_fibre_count": 2,
+  "protocol_hash": "d006fa8a5301bab21c2b8f0c52ca29003d5c429fcd7b38b5902e08429c4228b3",
+  "rank_groups": {
+    "17": 16,
+    "18": 5
+  },
+  "ranking": [
+    {
+      "certified_independent_recoveries": 4,
+      "policy": {
+        "chart_metric_kind": "metric",
+        "chart_metric_weight": "1/16",
+        "chart_parameterization": "pointed-quartic",
+        "diversity_window": 2,
+        "enumeration_backend": "gmp-pointed-sieve",
+        "metric_name": "weighted-gram",
+        "model_normalization": "raw",
+        "quotient_weight": "1"
+      },
+      "policy_key": "cca16845f9e9a3dcd3a780cbbb90f40198dc674c497bb4b9a05b9374b3282749",
+      "total_wall_seconds": "66315120017854497/2000000000000000"
+    },
+    {
+      "certified_independent_recoveries": 4,
+      "policy": {
+        "chart_metric_kind": "metric",
+        "chart_metric_weight": "1",
+        "chart_parameterization": "pointed-quartic",
+        "diversity_window": 2,
+        "enumeration_backend": "gmp-pointed-sieve",
+        "metric_name": "weighted-gram",
+        "model_normalization": "raw",
+        "quotient_weight": "1"
+      },
+      "policy_key": "68488ac093e5fba279a1fa3869398ff6a822dfed4d0411e86901cd855b8d3bb4",
+      "total_wall_seconds": "13266305566043593/400000000000000"
+    },
+    {
+      "certified_independent_recoveries": 4,
+      "policy": {
+        "chart_metric_kind": "metric",
+        "chart_metric_weight": "16",
+        "chart_parameterization": "pointed-quartic",
+        "diversity_window": 2,
+        "enumeration_backend": "gmp-pointed-sieve",
+        "metric_name": "weighted-gram",
+        "model_normalization": "raw",
+        "quotient_weight": "1"
+      },
+      "policy_key": "02190f175f4bd9023b23e6be9dce2873f34f755f00d1e395af3f1030a457ce2d",
+      "total_wall_seconds": "166373351204383653/5000000000000000"
+    },
+    {
+      "certified_independent_recoveries": 0,
+      "policy": {
+        "chart_metric_kind": "raw",
+        "chart_metric_weight": "1",
+        "chart_parameterization": "pointed-quartic",
+        "diversity_window": 2,
+        "enumeration_backend": "gmp-pointed-sieve",
+        "metric_name": "weighted-gram",
+        "model_normalization": "raw",
+        "quotient_weight": "1"
+      },
+      "policy_key": "4d5e8c7881bbb10ce71d8e7f95a6b39b2b09bd4ce5507b3344013823ac7bb1f4",
+      "total_wall_seconds": "4122582140553277/125000000000000"
+    }
+  ],
+  "schema": "elliptic-curves.portable-chart-policy-sweep.v1"
+}

@@ -19,6 +19,8 @@ Run:
 
 from __future__ import annotations
 
+from research_runtime.pari_context import prepared_prime_ideals, prepared_factor
+
 import argparse
 from fractions import Fraction
 from itertools import product
@@ -158,11 +160,12 @@ def main():
     iso = E.isomorphism_to(short)
 
     f = pari(f"y^3+({A})*y^2+({B})*y+({C})")
-    nf = pari.nfinit(f)
+    from research_runtime.pari_context import prepared_nf
+    nf = prepared_nf(f)
     theta = pari(f"Mod(y,{f})")
 
     disc = abs(int(pari.poldisc(f)))
-    ff = pari.factor(disc)
+    ff = prepared_factor(disc)
     bad = {2}
     for i in range(int(ff.nrows())):
         bad.add(int(ff[i, 0]))
@@ -185,7 +188,7 @@ def main():
     for p in bad:
         if p == 2:
             continue
-        for pr in pari.idealprimedec(nf, p):
+        for pr in prepared_prime_ideals(nf, p):
             pi_col = pari.idealappr(nf, pr)
             pi = pari.nfbasistoalg(nf, pi_col)
             if int(pari.idealval(nf, pi, pr)) != 1:
@@ -211,7 +214,7 @@ def main():
     )
 
     # ----- Exact product of 2-adic square-class groups.
-    two_primes = list(pari.idealprimedec(nf, 2))
+    two_primes = list(prepared_prime_ideals(nf, 2))
     two_meta = []
     for k, pr in enumerate(two_primes):
         # PARI prime ideal structure has e,f in components 3,4 in GP indexing.

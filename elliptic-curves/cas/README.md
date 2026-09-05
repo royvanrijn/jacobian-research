@@ -8,11 +8,22 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
 
 ## Start here
 
+- [Shared arithmetic and search runtime](../notes/SHARED_RESEARCH_RUNTIME.md):
+  cached contexts, subspace-first descent, lazy MWState search, regulator gates,
+  common worker supervision and portable proof replay. New searches start with
+  `run_mw_search.py`; full BNF is an explicit upper-bound option.
+
+- [`pointed_quartic_search.py`](pointed_quartic_search.py) is the single active
+  half-lattice backend. MW16/MW17, curve-specific and zero-gain callers use
+  its adapters; `run_pointed_quartic_search.py` accepts future-family manifests
+  and exact MW18 specializations. See [API, migration and regression controls](../notes/POINTED_QUARTIC_SEARCH.md).
+
 - `compare_exceptional_soluble_vs_sha.sage`: replay the five large-jump
   soluble subspaces, 63 marked quartic transports, and the rank-16 Sha
   control; `--check` includes exact CT arithmetic and probe-log hashes.
   `run_exceptional_selmer_feasibility.py` is the separate three-curve,
-  45-second-per-curve equation-only probe, with no point search.
+  45-second-per-curve cached arithmetic probe with known factor support;
+  complete Selmer is explicit and point search is disabled.
 - `certify_exceptional_soluble_selmer_panel.sage`: exact known soluble
   residual subspaces and 110 witnessed 2-covers on eleven exceptional
   fibres, without a point search or full descent. Use `--check` to replay.
@@ -52,17 +63,12 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   prospective local-ordering to exact-half-lattice gate on 104 fibres.  The
   first 856 chart attempts are wholly timeout-censored on very large
   coefficients, so none advances to Selmer or unrestricted point search.
-- The finalist runner now defaults to `half_lattice_pointed_sieve.py` and
-  `pointed_quartic_sieve.cpp`: exact denominator and slope-lattice transforms,
-  GMP group arithmetic, modular filtering, and exact square tests, with no
-  generic quartic minimization or reduction. See the
-  [algorithm and replay](../notes/POINTED_QUARTIC_SIEVE.md), including the
-  separate initial controls and retained full-box certificate.
-- `replay_mw16_sensitivity.sh` runs the bounded coordinate/centre calibration,
-  freezes settings by certified quotient rank, and enforces the exact control
-  gate before the 104-fibre replay. `verify_mw16_sensitivity.py` checks the
-  self-contained bundles. The selected policy recovers 55/55 directions;
-  see [sensitivity recovery](../notes/MW16_SENSITIVITY_RECOVERY_2026-09-05.md).
+- The finalist runner defaults to `PointedQuarticSearch` with calibrated
+  weight-16 coordinates and the shared GMP worker. The new API reproduces
+  all 1,034 frozen control boxes and 55 quotient directions. Historical
+  `replay_mw16_sensitivity.sh` commands use the pinned pre-migration revision;
+  `replay_pointed_quartic_snapshot.py` checks its self-contained bundles.
+  See [sensitivity recovery](../notes/MW16_SENSITIVITY_RECOVERY_2026-09-05.md).
 - `extract_a1_mw16_family_template.py`,
   `build_a1_mw16_target_free_parameter_candidates.sage`,
   `run_a1_mw16_target_free_parameter_search.sage`, and
@@ -466,6 +472,11 @@ evidence label and a canonical note.
   Sturm sequences and integer denominator bounds. No global class is decided.
 <!-- status-consumer: EC-FIXED-CUBIC-RADICAL-SEARCH-GEOMETRY 678f7beb805a4530 -->
 
+- `run_fixed_field_tangent_conics.py` certifies three cubic tangent conics
+  and eight exact reductions. `--prepare --lattice` replays the bounded local
+  solver with Sage class-group calls disabled. No genuine lift is constructed.
+<!-- status-consumer: EC-FIXED-CUBIC-TANGENT-CONIC-GATE 26a49e30ff3128d3 -->
+
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON f37417a9fda3ee3f -->
 
-<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY 1abe84480122e9b4 -->
+<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY f88886c066d6cb45 -->

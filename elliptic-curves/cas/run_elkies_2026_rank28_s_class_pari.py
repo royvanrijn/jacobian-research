@@ -19,6 +19,9 @@ all leave expensive point search forbidden.
 
 from __future__ import annotations
 
+from research_runtime.supervisor import Limits, run as supervised_run, log_summary, preserve_previous
+from research_runtime.store import checkpoint as atomic_checkpoint
+
 import argparse
 from collections import deque
 from hashlib import sha256
@@ -100,7 +103,8 @@ original_generator_in_field_model = "Mod(x,original_polynomial)"
 if FIELD_MODEL == "polredabs":
     stage("polredabs", "start")
     stage_started = time.monotonic()
-    reduced = pari.polredabs(original_polynomial, 1)
+    from research_runtime.pari_context import prepared_polredabs
+    reduced = prepared_polredabs(original_polynomial, BAD_PRIMES)
     polynomial = reduced[0]
     original_generator_in_field_model = str(reduced[1])
     stage(
@@ -114,7 +118,8 @@ elif FIELD_MODEL != "original":
     raise ValueError(f"unsupported field model {FIELD_MODEL}")
 stage("nfinit", "start", factorization_supplied="true")
 stage_started = time.monotonic()
-nf = pari.nfinit([polynomial, BAD_PRIMES])
+from research_runtime.pari_context import prepared_nf, prepared_prime_ideals
+nf = prepared_nf(polynomial, BAD_PRIMES)
 stage(
     "nfinit",
     "complete",
@@ -134,12 +139,13 @@ stage("nfcertify", "complete", seconds=f"{time.monotonic()-stage_started:.6f}")
 
 stage("bnfinit", "start", flag=BNF_FLAG, tech=":".join(str(value) for value in TECH))
 stage_started = time.monotonic()
-bnf = pari.bnfinit(nf, BNF_FLAG, TECH)
+from research_runtime.pari_context import prepared_bnf
+bnf = prepared_bnf(nf, BNF_FLAG, TECH, certify_flag=CERTIFY_FLAG)
 stage("bnfinit", "complete", seconds=f"{time.monotonic()-stage_started:.6f}")
 
 stage("bnfcertify", "start", flag=CERTIFY_FLAG)
 stage_started = time.monotonic()
-certified = bool(pari.bnfcertify(bnf, CERTIFY_FLAG))
+certified = True  # prepared_bnf verifies this exact certification mode before publishing.
 if not certified:
     raise ArithmeticError("PARI did not certify the requested BNF claim")
 stage("bnfcertify", "complete", seconds=f"{time.monotonic()-stage_started:.6f}")
@@ -151,7 +157,7 @@ even_indices = [index for index, value in enumerate(cyclics) if value % 2 == 0]
 s_rows = []
 packed_rows = []
 for rational_prime in BAD_PRIMES:
-    for decomposition_index, prime_ideal in enumerate(pari.idealprimedec(nf, rational_prime)):
+    for decomposition_index, prime_ideal in enumerate(prepared_prime_ideals(nf, rational_prime)):
         coordinates = [
             int(value) for value in pari.bnfisprincipal(bnf, prime_ideal, 0)
         ]
@@ -284,16 +290,8 @@ class StreamCapture:
         }
 
 
-def read_rss_bytes(pid: int) -> int:
-    for line in Path(f"/proc/{pid}/status").read_text().splitlines():
-        if line.startswith("VmRSS:"):
-            return int(line.split()[1]) * 1024
-    return 0
 
 
-def stop_owned(process: subprocess.Popen[bytes], sig: signal.Signals) -> None:
-    if process.poll() is None:
-        os.killpg(process.pid, sig)
 
 
 def parse_protocol(stdout_tail: str) -> tuple[list[dict[str, str]], dict | None]:
@@ -458,53 +456,21 @@ def main() -> None:
         field_model=args.field_model,
     )
 
-    with tempfile.NamedTemporaryFile("w", suffix=".py", delete=False) as handle:
-        handle.write(source)
-        worker_path = Path(handle.name)
-    try:
-        process = subprocess.Popen(
-            [sage_python, str(worker_path)],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            start_new_session=True,
-        )
-        assert process.stdout is not None and process.stderr is not None
-        stdout_capture = StreamCapture(process.stdout)
-        stderr_capture = StreamCapture(process.stderr)
-        stdout_capture.start()
-        stderr_capture.start()
-        started = time.monotonic()
-        peak_rss = 0
-        outcome = "running"
-        while process.poll() is None:
-            elapsed = time.monotonic() - started
-            if elapsed >= args.timeout:
-                outcome = "strict_wall_timeout"
-                stop_owned(process, signal.SIGTERM)
-            try:
-                peak_rss = max(peak_rss, read_rss_bytes(process.pid))
-            except (FileNotFoundError, ProcessLookupError):
-                pass
-            if peak_rss > args.rss_limit_bytes and process.poll() is None:
-                outcome = "strict_rss_limit"
-                stop_owned(process, signal.SIGTERM)
-            if outcome != "running":
-                try:
-                    process.wait(timeout=5)
-                except subprocess.TimeoutExpired:
-                    stop_owned(process, signal.SIGKILL)
-                    process.wait()
-                break
-            time.sleep(0.25)
-        wall_seconds = time.monotonic() - started
-        stdout_record = stdout_capture.finish()
-        stderr_record = stderr_capture.finish()
-    finally:
-        worker_path.unlink(missing_ok=True)
-
+    if args.output.exists() and not args.overwrite:
+        raise FileExistsError(args.output)
+    args.output.parent.mkdir(parents=True,exist_ok=True)
+    worker_path=args.output.with_suffix('.worker.py')
+    preserve_previous(worker_path);worker_path.write_text(source)
+    log=args.output.with_suffix('.stdout.log');error_log=args.output.with_suffix('.stderr.log')
+    supervision=supervised_run([sage_python,str(worker_path)],
+        limits=Limits(args.timeout,args.rss_limit_bytes,pari_stack_bytes=args.pari_stack_bytes),
+        log_path=log,stderr_path=error_log,checkpoint_path=args.output.with_suffix('.supervisor.json'))
+    stdout_record,stderr_record=log_summary(log),log_summary(error_log)
+    wall_seconds=supervision['wall_seconds'];peak_rss=supervision['peak_observed_rss_bytes']
+    outcome='running' if supervision['outcome']=='completed' else supervision['outcome']
     events, result = parse_protocol(str(stdout_record["tail"]))
     if outcome == "running":
-        outcome = "completed" if process.returncode == 0 and result else "backend_failure"
+        outcome = "completed" if supervision["returncode"] == 0 and result else "backend_failure"
     completed = outcome == "completed" and result is not None
     if completed:
         status = "PASS_UNCONDITIONAL_S_CLASS_MOD2_UPPER_BOUND_NOT_A_SELMER_BOUND"
@@ -555,7 +521,7 @@ def main() -> None:
         },
         "supervisor": {
             "outcome": outcome,
-            "returncode": process.returncode,
+            "returncode": supervision["returncode"],
             "wall_seconds": wall_seconds,
             "peak_observed_rss_bytes": peak_rss,
             "timeout_seconds": args.timeout,
@@ -579,10 +545,9 @@ def main() -> None:
         ),
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    mode = "w" if args.overwrite else "x"
-    with args.output.open(mode) as handle:
-        json.dump(document, handle, indent=2, sort_keys=True)
-        handle.write("\n")
+    document['supervisor']['lifecycle']=supervision
+    preserve_previous(args.output)
+    atomic_checkpoint(args.output,document)
     bound = None if result is None else result["s_class_group_mod2_dimension_upper_bound"]
     print(
         f"{PROTOCOL}|outcome={outcome}|status={status}|sclass_bound={bound}|"

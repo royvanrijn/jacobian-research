@@ -17,6 +17,8 @@ upper bound.
 
 from __future__ import annotations
 
+from research_runtime.pari_context import prepared_prime_ideals, prepared_factor
+
 import argparse
 from fractions import Fraction
 from hashlib import sha256
@@ -127,7 +129,8 @@ def build_signature() -> dict:
     polynomial = sum(ZZ(value) * x**index for index, value in enumerate(coefficients))
     factor_primes = [prime for prime, _ in DISCRIMINANT_FACTORIZATION]
     pari.addprimes(factor_primes)
-    nf = pari.nfinit([pari(polynomial), factor_primes])
+    from research_runtime.pari_context import prepared_nf
+    nf = prepared_nf(pari(polynomial), factor_primes)
     if list(pari.nfcertify(nf)):
         raise ArithmeticError("factor-supplied number field failed certification")
     theta = pari(f"Mod(x,{polynomial})")
@@ -180,7 +183,7 @@ def build_signature() -> dict:
             }
         )
 
-    two_primes = list(pari.idealprimedec(nf, 2))
+    two_primes = list(prepared_prime_ideals(nf, 2))
     two_basis, two_origins, two_rows = two_adic_coords(
         pari, nf, two_primes, alphas
     )

@@ -21,7 +21,7 @@ INPUT = ROOT / "artifacts/generated-results/elliptic-curves/a1_mw16_target_free_
 LADDER = ROOT / "elliptic-curves/cas/run_icarm_mw16_parent_ladder_blind.sage"
 LEGACY = ROOT / "elliptic-curves/cas/run_curve385_iterated_half_lattice_search.sage"
 ENGINE = ROOT / "elliptic-curves/cas/half_lattice_fake_descent_replay.sage"
-OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/a1_mw16_target_free_parameter_search_h300_v1.json"
+OUTPUT = ROOT / "artifacts/local/elliptic-curves/pointed-quartic-search/campaigns/run_a1_mw16_target_free_parameter_search.json"
 
 
 def digest(path: Path) -> str:
@@ -40,148 +40,10 @@ def write_payload(path: Path, payload) -> None:
     path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
 
 
-def direct_integral_quartic_search(
-    engine,
-    *,
-    mask,
-    representative,
-    short_model,
-    generic_points,
-    height_bound,
-    timeout_seconds,
-    stack_bytes,
-):
-    """Search the exact integral quartic directly, without factor-heavy reduction."""
-
-    base_point = engine.exact_linear_combination(
-        Fraction(short_model[3]), generic_points, representative
-    )
-    if base_point is None:
-        raise ArithmeticError("a nonzero selected class produced infinity")
-    cover = engine.alternate_cover(short_model, base_point)
-    denominator = 1
-    for coefficient in cover.coefficients:
-        denominator = lcm(denominator, Fraction(coefficient).denominator)
-    integral_coefficients = tuple(
-        Fraction(coefficient) * denominator * denominator
-        for coefficient in cover.coefficients
-    )
-    if any(value.denominator != 1 for value in integral_coefficients):
-        raise ArithmeticError("quartic denominator clearing failed")
-    integral_coefficients = tuple(int(value) for value in integral_coefficients)
-    polynomial = engine.gp_polynomial(
-        tuple(Fraction(value) for value in integral_coefficients)
-    )
-    x_base, y_base = base_point
-    program = f"""
-C0=[{polynomial},0];
-gettime(); R=hyperellratpoints(C0,{height_bound}); searchms=gettime();
-print("SEARCHMS|",searchms);
-print("SEARCHCOUNT|",#R);
-for(i=1,#R,p=R[i];ex=(p[1]^2-{engine.gp_rational(x_base)}+p[2]/{denominator})/2;ey=p[1]*(ex-{engine.gp_rational(x_base)})-{engine.gp_rational(y_base)};print("POINT|",p[1],"|",p[2]/{denominator},"|",ex,"|",ey));
-quit
-"""
-    started = time.monotonic()
-    try:
-        completed = subprocess.run(
-            ["gp", "-q", "-s", str(stack_bytes)],
-            input=program,
-            text=True,
-            capture_output=True,
-            timeout=timeout_seconds,
-            check=False,
-        )
-        wall_seconds = time.monotonic() - started
-    except subprocess.TimeoutExpired:
-        return engine.QuarticSearchResult(
-            {
-                "mask": mask,
-                "hex": f"0x{mask:05x}",
-                "status": "bounded_search_timeout",
-                "search_model_mode": "direct_integral_quartic",
-                "height_bound": height_bound,
-                "timeout_seconds": timeout_seconds,
-                "wall_seconds": time.monotonic() - started,
-                "representative": list(map(int, representative)),
-                "base_point": engine.point_record(base_point),
-                "raw_quartic_coefficients_ascending": [
-                    engine.rational_to_string(value) for value in cover.coefficients
-                ],
-                "raw_rational_coefficient_maximum_bits": max(
-                    engine.bit_height(value) for value in cover.coefficients
-                ),
-                "denominator_clearing_factor_bits": denominator.bit_length(),
-                "integral_model_maximum_coefficient_bits": max(
-                    abs(value).bit_length() for value in integral_coefficients
-                ),
-            },
-            (),
-        )
-    if completed.returncode != 0 or "***" in completed.stderr:
-        return engine.QuarticSearchResult(
-            {
-                "mask": mask,
-                "hex": f"0x{mask:05x}",
-                "status": "pari_failure",
-                "search_model_mode": "direct_integral_quartic",
-                "height_bound": height_bound,
-                "timeout_seconds": timeout_seconds,
-                "wall_seconds": wall_seconds,
-                "error": completed.stderr.strip()[-2000:],
-                "representative": list(map(int, representative)),
-                "base_point": engine.point_record(base_point),
-            },
-            (),
-        )
-
-    markers = {}
-    raw_points = []
-    curve_points = []
-    for line in completed.stdout.splitlines():
-        if line.startswith("POINT|"):
-            unused, raw_x, raw_y, curve_x, curve_y = line.split("|", 4)
-            raw_point = (Fraction(raw_x), Fraction(raw_y))
-            curve_point = (Fraction(curve_x), Fraction(curve_y))
-            if raw_point[1] ** 2 != cover.value(raw_point[0]):
-                raise ArithmeticError("mapped PARI point left the raw quartic")
-            if cover.cover_point_to_curve(raw_point) != curve_point:
-                raise ArithmeticError("PARI/Python quartic maps disagree")
-            if not engine.point_on_short_curve(short_model, curve_point):
-                raise ArithmeticError("mapped quartic point left E")
-            raw_points.append(raw_point)
-            curve_points.append(curve_point)
-        elif "|" in line:
-            key, value = line.split("|", 1)
-            markers[key] = value.strip()
-    for required in ("SEARCHMS", "SEARCHCOUNT"):
-        if required not in markers:
-            raise ArithmeticError(f"PARI omitted {required} for mask {mask:#x}")
-    record = {
-        "mask": mask,
-        "hex": f"0x{mask:05x}",
-        "status": "bounded_search_complete",
-        "search_model_mode": "direct_integral_quartic",
-        "height_bound": height_bound,
-        "timeout_seconds": timeout_seconds,
-        "wall_seconds": wall_seconds,
-        "representative": list(map(int, representative)),
-        "base_point": engine.point_record(base_point),
-        "raw_quartic_coefficients_ascending": [
-            engine.rational_to_string(value) for value in cover.coefficients
-        ],
-        "raw_rational_coefficient_maximum_bits": max(
-            engine.bit_height(value) for value in cover.coefficients
-        ),
-        "denominator_clearing_factor_bits": denominator.bit_length(),
-        "integral_model_maximum_coefficient_bits": max(
-            abs(value).bit_length() for value in integral_coefficients
-        ),
-        "search_milliseconds": int(markers["SEARCHMS"]),
-        "signed_affine_points_reported": int(markers["SEARCHCOUNT"]),
-        "finite_raw_points": [engine.point_record(point) for point in raw_points],
-        "finite_curve_points": [engine.point_record(point) for point in curve_points],
-    }
-    return engine.QuarticSearchResult(record, tuple(curve_points))
+def direct_integral_quartic_search(engine, **kwargs):
+    """Compatibility name; all active searches use PointedQuarticSearch."""
+    from pointed_quartic_search import run_quartic_search
+    return run_quartic_search(**kwargs)
 
 
 def initial_payload(args, inputs, candidate_ids):

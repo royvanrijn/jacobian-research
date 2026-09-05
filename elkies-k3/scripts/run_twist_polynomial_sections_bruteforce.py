@@ -7,10 +7,13 @@ import argparse
 from hashlib import sha256
 import json
 from pathlib import Path
-import subprocess
+import sys
 
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT/"elliptic-curves/cas"))
+from research_runtime.supervisor import Limits, capture
+from research_runtime.section_gate import guard_export
 SOURCE = Path(__file__).with_name("bruteforce_twist_polynomial_sections_modp.cpp")
 
 
@@ -133,10 +136,15 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--export", type=Path, required=True)
 parser.add_argument("--known-section", type=Path)
 parser.add_argument("--output", type=Path, required=True)
+parser.add_argument("--wall-seconds", type=float, default=60)
+parser.add_argument("--rss-limit-bytes", type=int, default=2_000_000_000)
+parser.add_argument("--reduction-only", action="store_true")
 args = parser.parse_args()
 
 export_path = args.export.resolve()
 export = json.loads(export_path.read_text())
+section_gate = guard_export(export, ROOT, reduction_only=args.reduction_only,
+    limits={"wall_seconds": args.wall_seconds, "rss_bytes": args.rss_limit_bytes})
 prime = int(export["prime"])
 chi = int(export["candidate"]["chi"])
 systems = export["systems"]
@@ -153,16 +161,10 @@ for system in systems:
     lines.append(f"{system['block_index']} {leading_x} {leading_y}")
 input_path.write_text("\n".join(lines) + "\n")
 
-subprocess.run(
-    ["g++", "-O3", "-std=c++17", str(SOURCE), "-o", str(binary_path)],
-    check=True,
-)
-completed = subprocess.run(
-    [str(binary_path), str(input_path)],
-    check=True,
-    text=True,
-    stdout=subprocess.PIPE,
-)
+capture(["g++", "-O3", "-std=c++17", str(SOURCE), "-o", str(binary_path)],
+        limits=Limits(min(args.wall_seconds, 60), args.rss_limit_bytes), log_path=work_dir/"compile.log")
+completed = capture([str(binary_path), str(input_path)],
+    limits=Limits(args.wall_seconds, args.rss_limit_bytes), log_path=work_dir/"enumeration.log")
 
 solutions = []
 summary = None

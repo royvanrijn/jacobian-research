@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 V1_RUNNER = ROOT / "elliptic-curves/cas/run_r17_refresh_jump_ladder_blind.sage"
 V2_PROTOCOL = ROOT / "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_protocol_v2.json"
-V2_OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_blind_v2.json"
+V2_OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/r17_refresh_jump_ladder_universal_pointed_v2.json"
 
 
 def complete_generic_census_cross_class(module, gram):

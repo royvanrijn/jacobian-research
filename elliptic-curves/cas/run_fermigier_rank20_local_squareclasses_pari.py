@@ -22,6 +22,8 @@ Run:
 
 from __future__ import annotations
 
+from research_runtime.pari_context import prepared_prime_ideals, prepared_factor
+
 import argparse
 from fractions import Fraction
 from pathlib import Path
@@ -124,7 +126,8 @@ def main():
     )
 
     t0 = time.monotonic()
-    nf = pari.nfinit(f)
+    from research_runtime.pari_context import prepared_nf
+    nf = prepared_nf(f)
     print(
         f"{PROTOCOL}|stage=nfinit|status=complete|seconds={time.monotonic()-t0:.6f}",
         flush=True,
@@ -133,7 +136,7 @@ def main():
     # Use the same rational bad-prime support established by the skeleton.
     # Factor the polynomial discriminant with PARI; no BNF involved.
     disc = int(pari.poldisc(f))
-    fac = pari.factor(abs(disc))
+    fac = prepared_factor(abs(disc))
     rat_bad = {2}
     for i in range(int(fac.nrows())):
         rat_bad.add(int(fac[i, 0]))
@@ -150,7 +153,7 @@ def main():
             continue
         print(f"{PROTOCOL}|stage=place_setup|p={p}|status=start", flush=True)
         t1 = time.monotonic()
-        prs = pari.idealprimedec(nf, p)
+        prs = prepared_prime_ideals(nf, p)
         for k in range(len(prs)):
             pr = prs[k]
             # idealappr(pr) gives an element with the prime-ideal valuation

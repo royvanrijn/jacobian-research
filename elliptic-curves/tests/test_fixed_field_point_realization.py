@@ -70,6 +70,18 @@ class FixedFieldPointRealizationTests(unittest.TestCase):
         self.assertEqual(cert["point_kummer_valuations"],[0,1])
         self.assertTrue(all(all(v%2==0 for v in row) for row in cert["anchor_kummer_valuations"]))
 
+    def test_independent_normalization_and_parameterization_choices(self):
+        A, B, u = QQ(-7), QQ(31), 0
+        Qs, G = m.quadric_matrices((5,-1,0),A,B,u)
+        for parameterization in ("conic-direct", "conic-minimized"):
+            H,U,scale,sol,M,L,C0,timing = m.conic_parameterization(Qs,G,parameterization)
+            self.assertEqual(H,scale*U.transpose()*G*U)
+            for normalization in ("raw", "reduce", "minimize-reduce"):
+                C1,m1,C2,m2 = m.normalize_quartic(C0,normalization)
+                m.verify_change(C0,C1,m1);m.verify_change(C1,C2,m2)
+                if normalization == "raw":
+                    self.assertEqual(C0,C2)
+
     def test_pinned_positive_controls_and_corrupt_point(self):
         path = ROOT/"artifacts/generated-results/elliptic-curves/fixed_field_point_realization_positive_controls_v1.json"
         controls = json.loads(path.read_text())

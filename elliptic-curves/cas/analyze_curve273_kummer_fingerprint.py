@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from research_runtime.pari_context import prepared_prime_ideals, prepared_factor
+
 import argparse
 import json
 from pathlib import Path
@@ -144,7 +146,7 @@ def prime_local_rows(pari_obj, nf, alphas, q):
 
     places = []
 
-    for pr in pari_obj.idealprimedec(nf, q):
+    for pr in prepared_prime_ideals(nf, q):
         pi_col = pari_obj.idealappr(nf, pr)
         pi = pari_obj.nfbasistoalg(nf, pi_col)
 
@@ -258,7 +260,8 @@ def main():
 
     t0 = time.monotonic()
 
-    nf = pari.nfinit(f)
+    from research_runtime.pari_context import prepared_nf
+    nf = prepared_nf(f)
 
     print(
         f"{PROTOCOL}|stage=nfinit"
@@ -276,7 +279,7 @@ def main():
         )
     )
 
-    ff = pari.factor(disc)
+    ff = prepared_factor(disc)
 
     bad = {2}
 
@@ -396,7 +399,7 @@ def main():
     # --------------------------------------------------------
 
     two_primes = list(
-        pari.idealprimedec(
+        prepared_prime_ideals(
             nf,
             2,
         )

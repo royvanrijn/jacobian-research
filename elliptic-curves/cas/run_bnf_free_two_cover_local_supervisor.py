@@ -15,13 +15,9 @@ from __future__ import annotations
 import argparse
 from hashlib import sha256
 import json
-import os
 from pathlib import Path
 import shutil
-import signal
-import subprocess
 import tempfile
-import time
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -65,18 +61,6 @@ def parse_primes(text: str) -> list[int]:
     if not values or any(value < 2 for value in values):
         raise ValueError("--primes must contain integers at least two")
     return values
-
-
-def read_rss_bytes(pid: int) -> int:
-    for line in Path(f"/proc/{pid}/status").read_text().splitlines():
-        if line.startswith("VmRSS:"):
-            return int(line.split()[1]) * 1024
-    return 0
-
-
-def stop_owned(process: subprocess.Popen[str], sig: signal.Signals) -> None:
-    if process.poll() is None:
-        os.killpg(process.pid, sig)
 
 
 def parse_worker(stdout: str) -> dict | None:
@@ -160,54 +144,22 @@ def run_block(
         max_lift_states=args.max_lift_states,
         rational_cover_witness=metadata.get("rational_cover_witness"),
     )
-    with tempfile.NamedTemporaryFile("w", suffix=".py", delete=False) as handle:
-        handle.write(source)
-        worker_path = Path(handle.name)
-    try:
-        with tempfile.TemporaryFile(mode="w+") as stdout_file, tempfile.TemporaryFile(
-            mode="w+"
-        ) as stderr_file:
-            process = subprocess.Popen(
-                [sage_python, str(worker_path)],
-                stdout=stdout_file,
-                stderr=stderr_file,
-                text=True,
-                start_new_session=True,
-            )
-            started = time.monotonic()
-            peak_rss = 0
-            outcome = "running"
-            while process.poll() is None:
-                elapsed = time.monotonic() - started
-                if elapsed >= args.timeout_per_place:
-                    outcome = "strict_wall_timeout"
-                    stop_owned(process, signal.SIGTERM)
-                try:
-                    peak_rss = max(peak_rss, read_rss_bytes(process.pid))
-                except (FileNotFoundError, ProcessLookupError):
-                    pass
-                if peak_rss > args.rss_limit_bytes and process.poll() is None:
-                    outcome = "strict_rss_limit"
-                    stop_owned(process, signal.SIGTERM)
-                if outcome != "running":
-                    try:
-                        process.wait(timeout=3)
-                    except subprocess.TimeoutExpired:
-                        stop_owned(process, signal.SIGKILL)
-                        process.wait()
-                    break
-                time.sleep(0.05)
-            wall_seconds = time.monotonic() - started
-            stdout_file.seek(0)
-            stderr_file.seek(0)
-            stdout = stdout_file.read()
-            stderr = stderr_file.read()
-    finally:
-        worker_path.unlink(missing_ok=True)
-
+    from research_runtime.supervisor import Limits, run
+    from research_runtime.store import atomic_write
+    args.cache_dir.mkdir(parents=True, exist_ok=True)
+    attempt = Path(tempfile.mkdtemp(prefix=f"cover-{metadata['cover_index']}-p{metadata['rational_prime']}-", dir=args.cache_dir))
+    worker_path = attempt / "worker.py"
+    log_path = attempt / "worker.log"
+    atomic_write(worker_path, source.encode())
+    measurement = run([sage_python, str(worker_path.resolve())],
+        limits=Limits(args.timeout_per_place, args.rss_limit_bytes),
+        log_path=log_path, checkpoint_path=attempt / "supervisor.json")
+    stdout = log_path.read_text()
+    stderr = ""  # The shared log preserves interleaved stdout and stderr.
     worker = parse_worker(stdout)
-    if outcome == "running":
-        outcome = "completed" if process.returncode == 0 and worker else "backend_failure"
+    outcome = measurement["outcome"]
+    if outcome == "completed" and worker is None:
+        outcome = "backend_failure"
     place_result = None
     if outcome == "completed" and worker is not None:
         places = worker.get("finite_places")
@@ -223,9 +175,11 @@ def run_block(
         "place_result": place_result,
         "supervisor": {
             "outcome": outcome,
-            "returncode": process.returncode,
-            "wall_seconds": wall_seconds,
-            "peak_observed_rss_bytes": peak_rss,
+            "returncode": measurement["returncode"],
+            "wall_seconds": measurement["wall_seconds"],
+            "peak_observed_rss_bytes": measurement["peak_observed_rss_bytes"],
+            "log": measurement["log"],
+            "log_sha256": measurement["log_sha256"],
             "stdout_tail": stdout[-8000:],
             "stderr_tail": stderr[-8000:],
         },
@@ -294,7 +248,8 @@ def main() -> None:
                     metadata=metadata,
                     args=args,
                 )
-                cache_path.write_text(json.dumps(block, indent=2, sort_keys=True) + "\n")
+                from research_runtime.store import checkpoint
+                checkpoint(cache_path, block)
             blocks.append(block)
             classification = (
                 block["place_result"]["classification"]

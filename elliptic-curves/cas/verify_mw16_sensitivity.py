@@ -66,6 +66,15 @@ def check_group(model,generic,basis,classification,discoveries):
 
 
 def check_chart(model,basis,record):
+    if record.get('backend') == 'pointed_quartic_search_v1':
+        from pointed_quartic_search import PointedQuarticSearch
+        h=record['height_bound']
+        if record['status']!='bounded_search_complete' or (record['denominator_start'],record['denominator_end'],record['completed_denominator'])!=(1,h,h):
+            raise ArithmeticError('incomplete universal chart cannot certify a full control box')
+        if len(record['representative'])!=len(basis) or sum((int(v)%2)<<i for i,v in enumerate(record['representative']))!=record['mask']:
+            raise ArithmeticError('centre left its declared mod-two class')
+        search=PointedQuarticSearch(model,basis,{'coefficients':record['representative']},record['specification'])
+        return set(search.verify_record(record).curve_points)
     h=record['height_bound']
     if record['status']!='bounded_search_complete' or (record['denominator_start'],record['denominator_end'],record['completed_denominator'])!=(1,h,h):
         raise ArithmeticError('incomplete search cannot certify complete coverage')

@@ -166,6 +166,49 @@ def certified_point_lower_bound_record(
     }
 
 
+def function_field_gate_record(*, surface, target_rank, search_limits,
+                               reductions=None, candidate_regulator=None, registry=None):
+    """Standard reduction/regulator/theorem gate before section construction.
+
+    Callers supply verified reductions from SurfaceProofEngine when available.
+    Missing reductions schedule bounded work and do not exclude a target.
+    The current theorem registry is also queried, so a newly proved constraint
+    invalidates old section queues without another search or BNF computation.
+    """
+    from pathlib import Path
+    from research_runtime.pruning import PruningRegistry, SearchRequest
+    from research_runtime.regulator import pre_search_gate
+    registry=registry or PruningRegistry(Path(__file__).resolve().parents[2])
+    if reductions is None:
+        from research_runtime.surface_repository import available_reductions
+        reductions,reduction_lookup=available_reductions(surface)
+    else:
+        reduction_lookup={"status":"CALLER_VERIFIED_REDUCTIONS","attempted_before_search":True}
+    reduction=pre_search_gate(surface,reductions,candidate_rank=target_rank,
+                             candidate_regulator=candidate_regulator)
+    scope=(("surface",surface.key),)
+    decision=registry.decision(SearchRequest("nontorsion_section",scope,target_rank=target_rank))
+    bounds=[];evidence=[]
+    if reduction["arithmetic_rank_upper"] is not None:
+        bounds.append(reduction["arithmetic_rank_upper"])
+        evidence.extend(reduction["witness_hashes"])
+    for rule in registry.matching_rules(scope):
+        if rule["kind"]=="rank_upper":
+            bounds.append(rule["upper"]);evidence.append(rule["theorem_id"])
+    upper=min(bounds) if bounds else None
+    result=production_gate_record(target_rank=target_rank,search_limits=search_limits,
+        certified_rank_upper_bound=upper,
+        upper_bound_kind="verified function-field reduction/regulator/theorem bound" if upper is not None else None,
+        upper_bound_evidence=", ".join(evidence) if upper is not None else None)
+    result.update({"surface_key":surface.key,"reduction_regulator_gate":reduction,
+                   "theorem_pruning":decision,"gate_precedes_section_equations":True,
+                   "finite_reduction_lookup":reduction_lookup})
+    if reduction["candidate_regulator_excluded"]:
+        result["search_budget_gate"].update({"status":"BLOCKED_BY_PROVED_REGULATOR_INCOMPATIBILITY",
+                                            "bounded_search_authorized":False})
+    return result
+
+
 __all__ = [
     "EXCLUDED_STATUS",
     "LOWER_BOUND_PARTIAL_STATUS",
@@ -177,4 +220,5 @@ __all__ = [
     "SEARCH_OPEN_STATUS",
     "certified_point_lower_bound_record",
     "production_gate_record",
+    "function_field_gate_record",
 ]

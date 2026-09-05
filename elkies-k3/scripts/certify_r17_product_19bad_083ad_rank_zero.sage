@@ -14,6 +14,7 @@ import argparse
 from hashlib import sha256
 import json
 from pathlib import Path
+import sys
 import xml.etree.ElementTree as ET
 
 from sage.all import GF, Matrix, PolynomialRing, QQ, prod
@@ -21,6 +22,9 @@ from sage.version import version
 
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0,str(ROOT/"elliptic-curves/cas"))
+from research_runtime.regulator import Surface, frobenius_invariants
+from research_runtime.sage_surface import separated_twist_fibres
 RESULTS = ROOT / "artifacts/generated-results"
 DIRECT = RESULTS / "elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json"
 PAIRS = RESULTS / "elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json"
@@ -118,54 +122,26 @@ def reduction_record(prime, model, pair, frobenius, pair_key=KEY):
         raise ArithmeticError("uncertified Frobenius input")
     if frobenius["good_reduction"]["status"] != "PASS":
         raise ArithmeticError("missing good reduction")
-    field = GF(prime)
-    ring = PolynomialRing(field, "u")
-    A, B = [ring([field(QQ(c)) for c in model[f"{key}_coefficients_low_to_high"]])
-            for key in ("A", "B")]
-    d = ring([field(QQ(c)) for c in pair["product_quartic_coefficients_low_to_high"]])
-    delta = -16 * (4 * A**3 + 27 * B**2)
-    if (A.degree(), B.degree(), delta.degree(), d.degree()) != (8, 12, 24, 4):
-        raise ArithmeticError("degree loss")
-    if not delta.is_squarefree() or not d.is_squarefree() or delta.gcd(d) != 1:
-        raise ArithmeticError("bad surface reduction")
-    branches = []
-    for factor, exponent in d.factor():
-        assert exponent == 1
-        residue = field.extension(factor, "v") if factor.degree() > 1 else field
-        v = residue.gen() if factor.degree() > 1 else -factor[0] / factor[1]
-        cubic_ring = PolynomialRing(residue, "x")
-        x = cubic_ring.gen()
-        cubic = x**3 + A(v)*x + B(v)
-        factors = list(cubic.factor())
-        assert cubic.is_squarefree()
-        degrees = [int(f.degree()) for f, _ in factors]
-        # Tate's algorithm for I0*: c_v=1+#(nonzero 2-torsion over k(v)).
-        tamagawa = 1 + degrees.count(1)
-        assert tamagawa in (1, 2, 4)
-        branches.append({
-            "base_factor_coefficients_low_to_high": coefficients(factor),
-            "base_place_degree": int(factor.degree()),
-            "residual_two_division_factor_degrees": degrees,
-            "kodaira_symbol": "I0*",
-            "tamagawa_number": tamagawa,
-        })
-    tamagawa_product = prod(row["tamagawa_number"] for row in branches)
-    # Every other singular fibre is I1 (c_v=1); infinity is smooth.
-    qring = PolynomialRing(QQ, "T")
-    T = qring.gen()
-    F = qring(frobenius["elliptic_L"]["frobenius_characteristic_coefficients_low_to_high"])
-    L = F.reverse()  # characteristic polynomial det(Z-Frob) -> det(1-T Frob)
-    assert L.degree() == 28 and L[0] == 1 and F.is_monic()
-    reduced, remainder = L.quo_rem(1-prime*T)
-    leading = reduced(QQ(1)/prime)
-    if remainder or leading <= 0:
+    surface=Surface(tuple(model["A_coefficients_low_to_high"]),
+                    tuple(model["B_coefficients_low_to_high"]),
+                    tuple(pair["product_quartic_coefficients_low_to_high"]))
+    fibres=separated_twist_fibres(surface,prime)
+    facts=frobenius_invariants(
+        frobenius["elliptic_L"]["frobenius_characteristic_coefficients_low_to_high"],prime,
+        expected_degree=fibres["expected_L_degree"],moments=frobenius["elliptic_L"]["power_sums_n1_n2"])
+    if facts["arithmetic_rank_upper"]!=1:
         raise ArithmeticError("analytic rank is not exactly one")
-    # Independently check orientation against the stored n=1,2 moments.
-    moments = [str(-L[1]), str(L[1]**2-2*L[2])]
-    assert moments == frobenius["elliptic_L"]["power_sums_n1_n2"]
-    chi = (24 + 4*6)//12
-    assert chi == 4
-    bsd_product = QQ(prime**(chi-1))*leading/tamagawa_product
+    field=GF(prime);ring=PolynomialRing(field,"u")
+    A,B,d=[ring([field(QQ(c)) for c in row]) for row in (surface.A,surface.B,surface.d)]
+    branches=[{"base_factor_coefficients_low_to_high":row["base_factor_coefficients"],
+               "base_place_degree":row["place_degree"],
+               "residual_two_division_factor_degrees":row["residual_factor_degrees"],
+               "kodaira_symbol":row["kodaira"],"tamagawa_number":row["tamagawa"]}
+              for row in fibres["branches"]]
+    tamagawa_product=fibres["tamagawa_product"]
+    L=PolynomialRing(QQ,"T")(list(map(QQ,facts["L_coefficients_low_to_high"])))
+    leading=QQ(facts["L_star"]);chi=fibres["chi"]
+    bsd_product=QQ(prime)**(chi-1)*leading/tamagawa_product
     record = {
         "prime": prime,
         "A_mod_p": coefficients(A), "B_mod_p": coefficients(B),

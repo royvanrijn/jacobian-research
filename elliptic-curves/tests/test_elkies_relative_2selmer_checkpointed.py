@@ -46,10 +46,12 @@ class CheckpointedRelativeSelmerTests(unittest.TestCase):
         self.assertIn("norm_is_square", provider)
 
     def test_workers_preserve_blind_order(self) -> None:
-        self.assertIn("bnfinit", checkpointed.BNF_WORKER)
+        self.assertIn("prepared_bnf", checkpointed.BNF_WORKER)
         self.assertIn("bnfcertify", checkpointed.BNF_WORKER)
         self.assertIn("writebin", checkpointed.BNF_WORKER)
-        self.assertIn("polredbest", checkpointed.BNF_WORKER)
+        self.assertIn("prepared_polredabs", checkpointed.BNF_WORKER)
+        self.assertIn("prepared_simon", checkpointed.SELMER_WORKER)
+        self.assertNotIn("pari.bnfcertify", checkpointed.SELMER_WORKER)
         self.assertIn("curve_theta_in_field", checkpointed.BNF_WORKER)
         self.assertIn("ell2selmer_basis_gen", checkpointed.SIMON_GP_FUNCTION)
         self.assertIn("elllocalimage_mapped", checkpointed.SIMON_GP_FUNCTION)

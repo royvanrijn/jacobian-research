@@ -21,12 +21,18 @@ from __future__ import annotations
 import argparse
 from hashlib import sha256
 import json
+import sys
+from dataclasses import asdict
 from pathlib import Path
 
 from sage.all import GF, PolynomialRing, QQ
 
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT/"elliptic-curves/cas"))
+from research_runtime.regulator import Surface
+from production_search_gates import function_field_gate_record
+
 COVERS = (
     ROOT
     / "artifacts/generated-results/elkies-k3-r17-074d9-cross-fibre-bisection-transfer-v1.json"
@@ -60,6 +66,7 @@ parser.add_argument(
     action="store_true",
     help="permit a coefficient-wise valid but globally nongood discovery prime",
 )
+parser.add_argument("--reduction-only", action="store_true", help="export finite-field proof work despite a rational section exclusion")
 parser.add_argument("--covers", type=Path, default=COVERS)
 parser.add_argument("--model", type=Path, default=MODEL)
 parser.add_argument(
@@ -90,6 +97,14 @@ model = json.loads(args.model.read_text())
 if model.get("status") != "PROVED_EXACT_LINEAGE_REALIZATION_AND_DISPLAYED_QUOTIENTS":
     raise ValueError("unexpected lineage-model status")
 representative = model["representative"]
+surface = Surface(representative["A_coefficients_low_to_high"],
+                  representative["B_coefficients_low_to_high"],
+                  source["branch_quadratic_coefficients_low_to_high"])
+section_gate = function_field_gate_record(surface=surface, target_rank=1,
+    search_limits={"finite_field_prime": prime, "chart_count": intersection+1})
+if not args.reduction_only and not section_gate["search_budget_gate"]["bounded_search_authorized"]:
+    raise SystemExit("EXCLUDED_BY_THEOREM before section equations: " +
+                     ", ".join(section_gate["theorem_pruning"]["theorems"]))
 
 base_ring = PolynomialRing(field, "t")
 t = base_ring.gen()
@@ -255,6 +270,9 @@ record = {
         "mod-p section scheme at the declared P.O. Solver completion and "
         "characteristic-zero lifting are separate. A nongood prime is discovery-only."
     ),
+    "exact_surface": asdict(surface),
+    "section_gate": section_gate,
+    "purpose": "finite_field_proof" if args.reduction_only else "rational_section_search",
     "label": args.label,
     "prime": prime,
     "good_reduction": bool(good_reduction),

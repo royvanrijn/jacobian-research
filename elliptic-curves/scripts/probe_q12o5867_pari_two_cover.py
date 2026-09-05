@@ -41,6 +41,7 @@ SCRIPTS = ELLIPTIC_ROOT / "scripts"
 sys.path.insert(0, str(ELLIPTIC_ROOT))
 sys.path.insert(0, str(CAS))
 sys.path.insert(0, str(SCRIPTS))
+from research_runtime.supervisor import Limits, capture_record
 
 from elliptic_candidate_record import is_on_weierstrass_curve  # noqa: E402
 from elkies_residual_selmer_gate import require_gate_for_specialization  # noqa: E402
@@ -176,23 +177,8 @@ def parse_gp_output(stdout: str) -> dict[str, Any]:
     }
 
 
-def read_rss_bytes(pid: int) -> int:
-    status_path = Path(f"/proc/{pid}/status")
-    for line in status_path.read_text().splitlines():
-        if line.startswith("VmRSS:"):
-            return int(line.split()[1]) * 1024
-    raise RuntimeError(f"VmRSS is absent for owned pid {pid}")
 
 
-def terminate_owned(process: subprocess.Popen[str], sig: signal.Signals) -> None:
-    if process.poll() is not None:
-        return
-    process_group = os.getpgid(process.pid)
-    if process_group != process.pid:
-        raise RuntimeError(
-            f"refusing unexpected process group {process_group} for pid {process.pid}"
-        )
-    os.killpg(process_group, sig)
 
 
 def load_specialization(path: Path) -> tuple[dict[str, Any], tuple[int, ...]]:
@@ -262,63 +248,17 @@ def run(args: argparse.Namespace) -> int:
     program = gp_program(
         model, stack_bytes=args.stack_bytes, search_height=args.search_height
     )
-    with tempfile.TemporaryFile(mode="w+") as stdout_file, tempfile.TemporaryFile(
-        mode="w+"
-    ) as stderr_file:
-        process = subprocess.Popen(
-            [executable, "-f", "-q", "-s", str(args.stack_bytes)],
-            stdin=subprocess.PIPE,
-            stdout=stdout_file,
-            stderr=stderr_file,
-            text=True,
-            start_new_session=True,
-        )
-        assert process.stdin is not None
-        process.stdin.write(program)
-        process.stdin.close()
-        started = time.monotonic()
-        peak_rss = 0
-        outcome = "running"
-        while process.poll() is None:
-            elapsed = time.monotonic() - started
-            if elapsed >= args.timeout:
-                outcome = "strict_wall_timeout"
-                terminate_owned(process, signal.SIGTERM)
-                try:
-                    process.wait(timeout=5)
-                except subprocess.TimeoutExpired:
-                    terminate_owned(process, signal.SIGKILL)
-                    process.wait()
-                break
-            try:
-                rss = read_rss_bytes(process.pid)
-            except (FileNotFoundError, ProcessLookupError):
-                if process.poll() is None:
-                    raise
-                break
-            peak_rss = max(peak_rss, rss)
-            if rss > args.rss_limit_bytes:
-                outcome = "strict_rss_limit"
-                terminate_owned(process, signal.SIGTERM)
-                try:
-                    process.wait(timeout=5)
-                except subprocess.TimeoutExpired:
-                    terminate_owned(process, signal.SIGKILL)
-                    process.wait()
-                break
-            time.sleep(min(0.25, args.timeout / 10))
-        wall_seconds = time.monotonic() - started
-        stdout_file.seek(0)
-        stderr_file.seek(0)
-        stdout = stdout_file.read()
-        stderr = stderr_file.read()
-
+    supervision=capture_record([executable,'-f','-q','-s',str(args.stack_bytes)],input_text=program,
+        limits=Limits(args.timeout,args.rss_limit_bytes,pari_stack_bytes=args.stack_bytes))
+    stdout,stderr=supervision['stdout'],supervision['stderr']
+    peak_rss=supervision['peak_observed_rss_bytes'];wall_seconds=supervision['wall_seconds']
+    outcome='running' if supervision['outcome']=='completed' else supervision['outcome']
     parsed = parse_gp_output(stdout)
     fatal = any("***" in line and "Warning:" not in line for line in stderr.splitlines())
     if outcome == "running":
         outcome = (
             "completed"
-            if process.returncode == 0 and parsed["all_completed"] and not fatal
+            if supervision["returncode"] == 0 and parsed["all_completed"] and not fatal
             else "pari_failure"
         )
     exact_records, escape = exact_candidate_records(
@@ -362,7 +302,7 @@ def run(args: argparse.Namespace) -> int:
         },
         "process": {
             "outcome": outcome,
-            "returncode": process.returncode,
+            "returncode": supervision["returncode"],
             "wall_seconds": wall_seconds,
             "peak_observed_rss_bytes": peak_rss,
             "last_stage": parsed["last_stage"],

@@ -44,10 +44,10 @@ class ElkiesRank28SClassPariTests(unittest.TestCase):
             tech=[0.01, 4.0, 20],
             debug=1,
         )
-        self.assertIn("nfinit([polynomial, BAD_PRIMES])", source)
+        self.assertIn("prepared_nf(polynomial, BAD_PRIMES)", source)
         self.assertIn("BNF_FLAG = 0", source)
         self.assertIn("CERTIFY_FLAG = 1", source)
-        self.assertIn("bnfcertify(bnf, CERTIFY_FLAG)", source)
+        self.assertIn("prepared_bnf(nf, BNF_FLAG, TECH, certify_flag=CERTIFY_FLAG)", source)
         self.assertIn("bnfisprincipal(bnf, prime_ideal, 0)", source)
         self.assertNotIn("ellsearch", source.lower())
         self.assertNotIn("ratpoints", source.lower())
@@ -64,9 +64,9 @@ class ElkiesRank28SClassPariTests(unittest.TestCase):
             field_model="polredabs",
         )
         self.assertIn("FIELD_MODEL = 'polredabs'", source)
-        self.assertIn("pari.polredabs(original_polynomial, 1)", source)
+        self.assertIn("prepared_polredabs(original_polynomial, BAD_PRIMES)", source)
         self.assertIn("original_generator_in_field_model", source)
-        self.assertIn("pari.nfinit([polynomial, BAD_PRIMES])", source)
+        self.assertIn("prepared_nf(polynomial, BAD_PRIMES)", source)
         self.assertIn('stage("polredabs",', source)
 
     def test_protocol_preserves_last_completed_stage(self) -> None:

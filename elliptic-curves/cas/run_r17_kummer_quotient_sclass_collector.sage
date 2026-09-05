@@ -268,7 +268,8 @@ def main():
     )
     bad_primes = [ZZ(value) for value in public_record["bad_primes"]]
     pari.addprimes(bad_primes)
-    nf = pari.nfinit([pari(polynomial), bad_primes])
+    from research_runtime.pari_context import prepared_nf
+    nf = prepared_nf(pari(polynomial), bad_primes)
     if list(pari.nfcertify(nf)):
         raise ArithmeticError("the cubic maximal order failed certification")
     signature_length = sum(int(value) for value in nf.nf_get_sign())

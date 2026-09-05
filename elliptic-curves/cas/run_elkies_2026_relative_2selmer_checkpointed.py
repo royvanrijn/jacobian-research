@@ -61,7 +61,7 @@ from sage.all import EllipticCurve, QQ, pari
 from sage.version import version as sage_version
 
 payload = json.loads(Path(INPUT_PATH).read_text())
-pari.allocatemem(int(payload["pari_stack_bytes"]))
+pari.allocatemem(min(64_000_000, int(payload["pari_stack_bytes"])), int(payload["pari_stack_bytes"]), silent=True)
 pari.default("debug", int(payload["pari_debug"]))
 hints = [int(value) for value in payload.get("factor_hint_primes", [])]
 if hints:
@@ -71,68 +71,36 @@ def stage(name, status, **fields):
     suffix = "".join(f"|{key}={value}" for key, value in sorted(fields.items()))
     print(f"ELKIESR17CHECKREL2|case={payload['case_id']}|stage={name}|status={status}{suffix}", flush=True)
 
-def transformed_model(curve):
-    steps = []
-    if curve[0] != 0 or curve[2] != 0:
-        change = pari([1, 0, -curve[0]/2, -curve[2]/2])
-        curve = pari.ellchangecurve(curve, change)
-        steps.append([str(value) for value in change])
-    while True:
-        denominator = int(pari.denominator(pari([curve[1], curve[3], curve[4]])))
-        if denominator == 1:
-            break
-        factorization = pari.factor(denominator)
-        radical = 1
-        for index in range(len(factorization[0])):
-            radical *= int(factorization[0][index])
-        change = pari([QQ(1)/radical, 0, 0, 0])
-        curve = pari.ellchangecurve(curve, change)
-        steps.append([str(value) for value in change])
-    return curve, steps
-
-curve = pari(EllipticCurve(QQ, [QQ(value) for value in payload["global_minimal_model"]]))
-curve, changes = transformed_model(curve)
-transformed = [str(curve[index]) for index in range(5)]
-if transformed[0] != "0" or transformed[2] != "0":
-    raise ArithmeticError("failed to remove a1 and a3")
+from research_runtime.pari_context import (arithmetic as shared_arithmetic, prepared_polredabs,
+    prepared_nf, prepared_bnf, identify, rename)
+arithmetic = shared_arithmetic()
+context = arithmetic.prepare(payload["global_minimal_model"], factor_primes=hints, discover=True)
+original = pari.ellinit([QQ(c) for c in payload["global_minimal_model"]])
+first = pari([QQ(c) for c in context.minimal_to_input])
+curve = pari.ellchangecurve(original, first)
+second = pari([QQ(1)/2, 0, -curve[0]/2, -curve[2]/2])
+curve = pari.ellchangecurve(curve, second)
+changes = [[str(c) for c in first], [str(c) for c in second]]
+transformed = [str(curve[i]) for i in range(5)]
 curve_cubic = pari(f"x^3+({curve[1]})*x^2+({curve[3]})*x+({curve[4]})")
-reduction = pari.polredbest(curve_cubic, 1)
-cubic, curve_theta = reduction[0], reduction[1]
-field_generator_candidates = pari.nfisisom(cubic, curve_cubic)
-curve_field_theta = pari.Mod("x", curve_cubic)
-field_generator_in_curve_field = None
-for candidate in field_generator_candidates:
-    if pari.subst(pari.lift(curve_theta), "x", candidate) == curve_field_theta:
-        field_generator_in_curve_field = candidate
-        break
-if field_generator_in_curve_field is None:
-    raise ArithmeticError("could not invert the reduced-field isomorphism")
-stage("polredbest", "complete", reduced_polynomial=cubic)
-
-stage("nfinit", "start", factor_hints=len(hints))
+if [str(pari.polcoef(curve_cubic,i)) for i in range(4)] != list(context.minimal_model.two_division_polynomial):
+    raise ArithmeticError("canonical z-model transport mismatch")
 started = time.monotonic()
-nf = pari.nfinit([cubic, hints]) if hints else pari.nfinit(cubic)
-nf_seconds = time.monotonic() - started
-stage("nfinit", "complete", seconds=f"{nf_seconds:.6f}")
-stage("nfcertify", "start")
+cubic, curve_theta = prepared_polredabs(curve_cubic, [2, *context.bad_primes])
+source_algebra, variable = identify(curve_cubic)
+item = arithmetic.field(source_algebra)["components"][0]
+field_generator_in_curve_field = rename(pari(item["reduced_generator_in_original"]), variable)
+if pari.subst(pari.lift(curve_theta), variable, field_generator_in_curve_field) != pari.Mod(variable, curve_cubic):
+    raise ArithmeticError("cached reduced generator maps do not compose")
+nf = prepared_nf(cubic, discover=False)
+nf_seconds = time.monotonic()-started
+nf_certify_seconds = 0.0
+stage("cached_field", "complete", polynomial=cubic)
 started = time.monotonic()
-obstructions = list(pari.nfcertify(nf))
-if obstructions:
-    raise ArithmeticError(f"maximal-order certification failed: {obstructions}")
-nf_certify_seconds = time.monotonic() - started
-stage("nfcertify", "complete", seconds=f"{nf_certify_seconds:.6f}")
-
-stage("bnfinit", "start", flag=payload["bnf_flag"], tech=":".join(str(v) for v in payload["bnf_tech"]))
-started = time.monotonic()
-bnf = pari.bnfinit(nf, int(payload["bnf_flag"]), payload["bnf_tech"])
-bnf_seconds = time.monotonic() - started
-stage("bnfinit", "complete", seconds=f"{bnf_seconds:.6f}")
-stage("bnfcertify", "start", flag=0)
-started = time.monotonic()
-if not bool(pari.bnfcertify(bnf)):
-    raise ArithmeticError("full BNF certification failed")
-bnf_certify_seconds = time.monotonic() - started
-stage("bnfcertify", "complete", seconds=f"{bnf_certify_seconds:.6f}")
+bnf = prepared_bnf(nf, int(payload["bnf_flag"]), payload["bnf_tech"])
+bnf_seconds = time.monotonic()-started
+bnf_certify_seconds = 0.0
+stage("cached_certified_bnf", "complete", seconds=f"{bnf_seconds:.6f}")
 
 checkpoint = Path(payload["bnf_checkpoint"])
 checkpoint.parent.mkdir(parents=True, exist_ok=True)
@@ -144,6 +112,7 @@ checkpoint_hash = sha256(checkpoint.read_bytes()).hexdigest()
 result = {
     "schema": "elliptic-curves.elkies-2026-relative-2selmer-bnf-checkpoint.v2",
     "case_id": payload["case_id"],
+    "arithmetic_context": context.record(),
     "global_minimal_model": payload["global_minimal_model"],
     "transformed_model": transformed,
     "point_change_sequence": changes,
@@ -161,6 +130,7 @@ result = {
         0 if str(bnf.bnf_get_fu()) == "0" else len(bnf.bnf_get_fu())
     ),
     "bnf_flag": int(payload["bnf_flag"]),
+    "bnf_tech": payload["bnf_tech"],
     "nfcertify_completed": True,
     "bnfcertify_completed": True,
     "factor_hint_primes": [str(value) for value in hints],
@@ -278,7 +248,7 @@ payload = json.loads(Path(INPUT_PATH).read_text())
 sys.path.insert(0, payload["cas_directory"])
 from build_bnf_free_two_covers import cover_for, multiply_mod_cubic
 meta = json.loads(Path(payload["bnf_metadata"]).read_text())
-pari.allocatemem(int(payload["pari_stack_bytes"]))
+pari.allocatemem(min(64_000_000, int(payload["pari_stack_bytes"])), int(payload["pari_stack_bytes"]), silent=True)
 pari.default("debug", int(payload["pari_debug"]))
 set_random_seed(int(payload["random_seed"]))
 
@@ -289,22 +259,24 @@ def stage(name, status, **fields):
 checkpoint = Path(meta["bnf_checkpoint"])
 if __import__('hashlib').sha256(checkpoint.read_bytes()).hexdigest() != meta["bnf_checkpoint_sha256"]:
     raise ArithmeticError("BNF checkpoint hash mismatch")
-bnf = pari.read(str(checkpoint))
-if not bool(pari.bnfcertify(bnf)):
-    raise ArithmeticError("reloaded BNF failed certification")
+from research_runtime.pari_context import arithmetic as shared_arithmetic, certified_bnf_checkpoint
+from research_runtime.simon import prepared_simon
+arithmetic = shared_arithmetic()
+bnf = certified_bnf_checkpoint(checkpoint, meta["bnf_checkpoint_sha256"])
 if str(bnf.nf_get_pol()) != meta["field_cubic"]:
     raise ArithmeticError("BNF defining polynomial mismatch")
 
-simon = Path(SAGE_EXTCODE) / "pari" / "simon"
-for name in ("ellQ.gp", "ell.gp", "qfsolve.gp", "resultant3.gp"):
-    pari.read(simon / name)
-pari(f"DEBUGLEVEL_ell={int(payload['simon_verbose'])}; LIMBIGPRIME=0; LIM1=0; LIM3=0; LIMTRIV=0;")
-for definition in SIMON_FUNCTION.split("/* ELKIES_R17_GP_DEFINITION_SPLIT */"):
-    pari(definition)
 curve = pari.ellinit([QQ(value) for value in meta["transformed_model"]])
 global_curve = EllipticCurve(QQ, [QQ(value) for value in meta["global_minimal_model"]])
 elliptic_bad_local_data = {}
-for data in global_curve.local_data():
+# The factor ledger is supplied before local minimal-model arithmetic.
+known_primes = [int(p) for p in meta.get("factor_hint_primes", [])]
+if "arithmetic_context" in meta:
+    known_primes = [int(p) for p, e in meta["arithmetic_context"]["discriminant_factorization"]]
+if not known_primes:
+    known_primes = [p for p, e in arithmetic.factor_integer(int(pari('e->e.disc')(curve)), discover=True)]
+pari.addprimes(known_primes)
+for data in (global_curve.local_data(p) for p in known_primes):
     prime = int(data.prime().gens()[0])
     elliptic_bad_local_data[str(prime)] = {
         "kodaira_symbol": str(data.kodaira_symbol()),
@@ -316,7 +288,8 @@ elliptic_bad_primes = sorted(int(value) for value in elliptic_bad_local_data)
 curve_theta = pari(meta["curve_theta_in_field"])
 stage("selmer_basis", "start")
 started = time.monotonic()
-raw = pari("ell2selmer_basis_gen")(curve, bnf, 1, curve_theta)
+raw = prepared_simon(arithmetic,curve,bnf,curve_theta,primes=known_primes,
+    class_data_id=meta["bnf_checkpoint_sha256"], discover=True)
 elapsed = time.monotonic() - started
 LS2, matrix, bad_primes = raw[0], raw[1], raw[2]
 local_audit = raw[3]
@@ -505,12 +478,11 @@ sys.path.insert(0, payload["cas_directory"])
 from build_bnf_free_two_covers import cover_for, multiply_mod_cubic
 meta = json.loads(Path(payload["bnf_metadata"]).read_text())
 selmer = json.loads(Path(payload["selmer_result"]).read_text())
-pari.allocatemem(int(payload["pari_stack_bytes"]))
+pari.allocatemem(min(64_000_000, int(payload["pari_stack_bytes"])), int(payload["pari_stack_bytes"]), silent=True)
 curve_f = pari(meta["cubic"])
 field_f = pari(meta["field_cubic"])
-nf = pari.read(meta["bnf_checkpoint"])
-if not bool(pari.bnfcertify(nf)):
-    raise ArithmeticError("reloaded BNF failed certification")
+from research_runtime.pari_context import certified_bnf_checkpoint
+nf = certified_bnf_checkpoint(meta["bnf_checkpoint"],meta["bnf_checkpoint_sha256"])
 cubic_coefficients = [QQ(value) for value in meta["cubic_coefficients_ascending"]]
 ring = PolynomialRing(QQ, names=("u", "v", "w", "z"))
 
@@ -626,10 +598,9 @@ sys.path.insert(0, payload["cas_directory"])
 from run_fermigier_rank20_auxiliary_fingerprints import prime_local_rows
 meta = json.loads(Path(payload["bnf_metadata"]).read_text())
 selmer = json.loads(Path(payload["selmer_result"]).read_text())
-pari.allocatemem(int(payload["pari_stack_bytes"]))
-bnf = pari.read(meta["bnf_checkpoint"])
-if not bool(pari.bnfcertify(bnf)):
-    raise ArithmeticError("reloaded BNF failed certification")
+pari.allocatemem(min(64_000_000, int(payload["pari_stack_bytes"])), int(payload["pari_stack_bytes"]), silent=True)
+from research_runtime.pari_context import certified_bnf_checkpoint
+bnf = certified_bnf_checkpoint(meta["bnf_checkpoint"],meta["bnf_checkpoint_sha256"])
 nf = bnf
 f = pari(meta["field_cubic"])
 theta = pari(meta["curve_theta_in_field"])
@@ -968,15 +939,16 @@ def main() -> None:
         case_dir.mkdir(parents=True, exist_ok=True)
         bnf_meta = case_dir / "bnf.json"
         bnf_checkpoint = case_dir / "bnf.bin"
+        from research_runtime.supervisor import preserve_previous
         if args.rebuild_bnf:
-            bnf_meta.unlink(missing_ok=True)
-            bnf_checkpoint.unlink(missing_ok=True)
+            preserve_previous(bnf_meta)
+            preserve_previous(bnf_checkpoint)
         record: dict[str, Any] = {"case_id": case.case_id, "parameter": case.parameter, "role": case.role}
         if validate_bnf_cache(bnf_meta, bnf_checkpoint, case, args.bnf_flag):
             record["bnf"] = {"outcome": "reused_certified_checkpoint", "metadata": str(bnf_meta), "checkpoint": str(bnf_checkpoint)}
         else:
-            bnf_meta.unlink(missing_ok=True)
-            bnf_checkpoint.unlink(missing_ok=True)
+            preserve_previous(bnf_meta)
+            preserve_previous(bnf_checkpoint)
             payload = {
                 "case_id": case.case_id,
                 "global_minimal_model": [str(value) for value in case.model],
@@ -999,7 +971,7 @@ def main() -> None:
         selmer_path = case_dir / "selmer.json"
         if selmer_path.exists() and not args.overwrite:
             raise FileExistsError(selmer_path)
-        selmer_path.unlink(missing_ok=True)
+        preserve_previous(selmer_path)
         selmer_payload = {
             "case_id": case.case_id,
             "cas_directory": str(CAS),

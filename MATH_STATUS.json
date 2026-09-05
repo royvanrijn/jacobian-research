@@ -33043,18 +33043,18 @@
       "kind": "reproduction",
       "state": "proved",
       "title": "Complement-blind MW16 sensitivity recovery of all 55 control directions",
-      "scope": "A complement-blind calibration on curves 398,400,401,542,548 varies projective heights 10000,100000,200000, generic and specialized centres, exact Gauss metric weights and horizontal PGL2 reduction, rational slope parametrizations, and CVP versus literal-residue adaptive centres. Selection uses certified quotient rank rather than runtime. Generic centres at height 100000 with denominator weight 16 recover 5,5,11,10,8 directions. The frozen uniform rule adapts only initial gains from one through seven, using at most five discovered quotient bits and both centre constructions at height 10000; all 992 active adaptive searches on 398 and 400 complete. The final gains are 14,12,11,10,8, matching all five historical quotient-rank lower bounds (55 directions in total), including the previously missing curve-401 dimension. The selected policy calls neither hyperellminimalmodel nor hyperellred. Separate exact five-coefficient, point-transport, group-relation, finite-reduction independence and no-rational-2-torsion replays pass, with full source-linked evidence retained in deterministic gzip bundles. The analogous horizontal-reduction policy recovers 53 directions under the same adaptive trigger. Exploratory extra adaptive ledgers are checkpointed and not promoted to completed calibrations. The frozen 104-fibre prospective replay is gated on a separately replayed total of at least 54 directions. These are recovered subgroups and bounded searches, not rank upper bounds, saturation in all E(Q), or Selmer conclusions. After the gate passed, all 104 frozen prospective fibres completed all 856 weight-16 generic-centre boxes at height 100000 under a 20-second per-chart cap, with zero finite points, zero quotient gains and zero timeouts. The run covers 17120085600000 integer numerator/denominator pairs and performs 2803616 exact square tests; separate exact replay rechecks every chart and all sixteen generic directions on every fibre. This is a completed bounded null result, not negative rank evidence.",
+      "scope": "A complement-blind calibration on curves 398,400,401,542,548 varies projective heights 10000,100000,200000, generic and specialized centres, exact Gauss metric weights and horizontal PGL2 reduction, rational slope parametrizations, and CVP versus literal-residue adaptive centres. Selection uses certified quotient rank rather than runtime. Generic centres at height 100000 with denominator weight 16 recover 5,5,11,10,8 directions. The frozen uniform rule adapts only initial gains from one through seven, using at most five discovered quotient bits and both centre constructions at height 10000; all 992 active adaptive searches on 398 and 400 complete. The final gains are 14,12,11,10,8, matching all five historical quotient-rank lower bounds (55 directions in total), including the previously missing curve-401 dimension. The selected policy calls neither hyperellminimalmodel nor hyperellred. Separate exact five-coefficient, point-transport, group-relation, finite-reduction independence and no-rational-2-torsion replays pass, with full source-linked evidence retained in deterministic gzip bundles. The analogous horizontal-reduction policy recovers 53 directions under the same adaptive trigger. Exploratory extra adaptive ledgers are checkpointed and not promoted to completed calibrations. The frozen 104-fibre prospective replay is gated on a separately replayed total of at least 54 directions. These are recovered subgroups and bounded searches, not rank upper bounds, saturation in all E(Q), or Selmer conclusions. After the gate passed, all 104 frozen prospective fibres completed all 856 weight-16 generic-centre boxes at height 100000 under a 20-second per-chart cap, with zero finite points, zero quotient gains and zero timeouts. The run covers 17120085600000 integer numerator/denominator pairs and performs 2803616 exact square tests; separate exact replay rechecks every chart and all sixteen generic directions on every fibre. This is a completed bounded null result, not negative rank evidence. The rank-agnostic PointedQuarticSearch migration re-sieves all 1034 frozen calibrated control boxes with exact equality of coefficients, square hits and returned points, and replays the same 55 quotient directions; this software regression adds no prospective gain or calibration claim for MW17/MW18.",
       "canonical_source": "elliptic-curves/notes/MW16_SENSITIVITY_RECOVERY_2026-09-05.md",
       "dependencies": [
         "EC-K3-ICARM-MW16-POINTED-SIEVE",
         "EC-K3-ICARM-MW16-BLIND-LADDER"
       ],
-      "checker": "elliptic-curves/cas/check_mw16_sensitivity_policy.py",
+      "checker": "elliptic-curves/cas/replay_pointed_quartic_snapshot.py",
       "proof_type": "hybrid",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:2e9da996e54592b9475e8a2bc7f46adc7beadd6ae49dab3ff81d99660a21160c",
+      "artifact_hash": "sha256:1ac58d64ec4a4f4c1b532f75a7a50afa42c82b058a5cf1cd2b5b44fe0d12450c",
       "software_lock": [
         "elliptic-curves/cas/mw16_sensitivity_backend.py",
         "elliptic-curves/cas/run_mw16_sensitivity.sage",
@@ -33073,7 +33073,17 @@
         "artifacts/generated-results/elliptic-curves/mw16_sensitivity_prospective_v1.json.gz",
         "artifacts/generated-results/elliptic-curves/mw16_sensitivity_prospective_summary_v1.json",
         "elliptic-curves/cas/check_mw16_sensitivity_policy.py",
-        "elliptic-curves/tests/test_mw16_sensitivity_policy.py"
+        "elliptic-curves/tests/test_mw16_sensitivity_policy.py",
+        "elliptic-curves/cas/pointed_quartic_search.py",
+        "elliptic-curves/cas/pointed_quartic_migration.py",
+        "elliptic-curves/cas/run_pointed_quartic_search.py",
+        "elliptic-curves/cas/replay_pointed_quartic_controls.py",
+        "elliptic-curves/cas/replay_pointed_quartic_snapshot.py",
+        "elliptic-curves/cas/check_pointed_quartic_integration.sage",
+        "elliptic-curves/notes/POINTED_QUARTIC_SEARCH.md",
+        "elliptic-curves/tests/test_pointed_quartic_search.py",
+        "artifacts/generated-results/elliptic-curves/universal_pointed_control_regression_v1.json",
+        "artifacts/generated-results/elliptic-curves/universal_pointed_integration_v1.json"
       ],
       "supersedes": [],
       "closes_problems": [],
@@ -33552,6 +33562,42 @@
         "elliptic-curves/tests/test_fixed_field_radical_search_geometry.py",
         "artifacts/generated-results/elliptic-curves/fixed_field_radical_search_geometry_v1.json",
         "artifacts/generated-results/elliptic-curves/fixed_field_radical_models_evidence_v1.json.gz"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/cas/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "EC-FIXED-CUBIC-TANGENT-CONIC-GATE",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Exact cubic tangent conics for the three radical covers; genuine lifts remain unconstructed",
+      "scope": "For the three fixed-field radical masks 596921,450876,1047173 at u=-1, exact singular-pencil roots and nonsingular ternary minors give three tangent conics over one cubic field. The field is identified with the anchor by theta_0=9*t+6. Local solubility of each target and the Hasse principle guarantee solubility of its auxiliary conic, without supplying coordinates. Eight bounded Lagrange/lattice starts on the sum target give eight exactly invertible conic reductions, with no auxiliary point. Their checkpoints replay identically with Sage pari_bnf disabled, using direct nf ideal CRT. An additional bounded indefinite-lattice variant makes no further reduction. One higher-descent attempt exhausts memory and seven isolated conic attempts reach time limits. No genuine higher cover or target point is constructed, no new global obstruction is obtained, all three point-or-Sha classifications remain UNKNOWN, and the curve rank lower bound remains one.",
+      "canonical_source": "elliptic-curves/notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md",
+      "dependencies": [
+        "EC-FIXED-CUBIC-RADICAL-MINIMAL-MODELS",
+        "external: Hasse principle for conics over number fields"
+      ],
+      "checker": "elliptic-curves/cas/run_fixed_field_tangent_conics.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:20dc843ea06e487d80809e6332ba793165d32f72669eb647dc821d988932f6ef",
+      "software_lock": [
+        "elliptic-curves/cas/run_fixed_field_tangent_conics.py",
+        "elliptic-curves/tests/test_fixed_field_tangent_conics.py",
+        "artifacts/generated-results/elliptic-curves/fixed_field_tangent_conics_v1.json",
+        "artifacts/generated-results/elliptic-curves/fixed_field_tangent_conics_evidence_v1.json.gz"
       ],
       "supersedes": [],
       "closes_problems": [],

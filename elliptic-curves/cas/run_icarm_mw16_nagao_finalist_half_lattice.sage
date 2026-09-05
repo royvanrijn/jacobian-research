@@ -36,8 +36,8 @@ LADDER = ROOT / "elliptic-curves/cas/run_icarm_mw16_parent_ladder_blind.sage"
 LEGACY = ROOT / "elliptic-curves/cas/run_curve385_iterated_half_lattice_search.sage"
 ENGINE = ROOT / "elliptic-curves/cas/half_lattice_fake_descent_replay.sage"
 DIRECT = ROOT / "elliptic-curves/cas/half_lattice_direct_reduction.py"
-POINTED = ROOT / "elliptic-curves/cas/half_lattice_pointed_sieve.py"
-OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_mw16_nagao_finalist_pointed_sieve_h300_v1.json"
+POINTED = ROOT / "elliptic-curves/cas/pointed_quartic_search.py"
+OUTPUT = ROOT / "artifacts/generated-results/elliptic-curves/icarm_mw16_nagao_finalist_universal_pointed_h300_v1.json"
 
 
 def digest(path: Path) -> str:
@@ -132,9 +132,9 @@ def main() -> None:
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--height-bound", type=int, default=10_000)
     parser.add_argument("--timeout-seconds", type=float, default=2.0)
-    parser.add_argument("--backend", choices=("pointed-sieve", "direct-pari"), default="pointed-sieve")
+    parser.add_argument("--backend", choices=("pointed-sieve", "regression-direct-pari"), default="pointed-sieve")
     parser.add_argument("--chart-checkpoint-dir", type=Path,
-                        default=ROOT / "artifacts/local/elliptic-curves/mw16-pointed-sieve-charts")
+                        default=ROOT / "artifacts/local/elliptic-curves/pointed-quartic-search/mw16-charts")
     parser.add_argument("--stack-bytes", type=int, default=1_000_000_000)
     parser.add_argument("--relation-chunk-size", type=int, default=64)
     parser.add_argument("--relation-timeout-seconds", type=float, default=180.0)

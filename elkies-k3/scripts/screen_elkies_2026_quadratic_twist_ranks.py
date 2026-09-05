@@ -201,28 +201,15 @@ def evaluate_mod(coefficients: Sequence[int], value: int, prime: int) -> int:
 
 
 def build_prime_data(model, prime: int) -> PrimeData:
-    a_coefficients, b_coefficients = reduced_coefficients(model, prime)
-    characters = quadratic_character_table(prime)
-    traces = []
-    singular = 0
-    for parameter in range(prime):
-        coefficient_a = evaluate_mod(a_coefficients, parameter, prime)
-        coefficient_b = evaluate_mod(b_coefficients, parameter, prime)
-        if (4 * coefficient_a**3 + 27 * coefficient_b**2) % prime == 0:
-            traces.append(0)
-            singular += 1
-            continue
-        trace = -sum(
-            characters[(x_value**3 + coefficient_a * x_value + coefficient_b) % prime]
-            for x_value in range(prime)
-        )
-        traces.append(trace)
-    return PrimeData(
-        prime=prime,
-        traces=tuple(traces),
-        characters=characters,
-        singular_fibre_count=singular,
-    )
+    sys.path.insert(0, str(ROOT / "elliptic-curves/cas"))
+    from research_runtime.finite_fields import family_traces
+    record = family_traces(model.a_coefficients, model.b_coefficients, prime,
+                           a_degree=model.a_degree, b_degree=model.b_degree)
+    affine = record["fibres"][:-1]
+    return PrimeData(prime=prime,
+        traces=tuple(0 if row["singular"] else row["trace"] for row in affine),
+        characters=tuple(record["quadratic_characters"]),
+        singular_fibre_count=sum(row["singular"] for row in affine))
 
 
 def canonical_mod_square(values: Sequence[int], prime: int) -> tuple[int, tuple[int, ...]]:

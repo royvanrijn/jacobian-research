@@ -16,8 +16,9 @@ displayed public subgroup and verifies the retained relations by exact group
 addition.  A cover is called ``extreme anchored`` only when the resulting
 class modulo specialized generic MW17 is proved nonzero.
 
-The local checkpoint is only a performance cache.  ``--check`` rebuilds the
-certificate from the canonical inputs and compares it byte-for-byte.
+``--check`` replays retained covers, sections and quotient witnesses, together
+with the complete finite nonresidue census through polynomial group-law and
+chord identities. ``--check --regenerate`` explicitly rebuilds the census.
 """
 
 from __future__ import annotations
@@ -1097,16 +1098,137 @@ def merge_completed_chart_payloads(paths):
     return result
 
 
+def replay_retained_covers(payload, selected):
+    """Exact positive witnesses; no modular census or numerical height search.
+
+    The retained source certificate still owns its exhaustive negative census.
+    This report never upgrades a census hash into an independent proof that
+    there were no other splitting bisections.
+    """
+    from research_runtime.witnesses import retained_source
+    from research_runtime.search_state import raw_state
+    if payload['schema']!='elkies-k3.r17-extreme-anchored-mw18-covers.v1' or payload['status']!=STATUS:
+        raise ArithmeticError('unknown or incomplete cover certificate')
+    refresh=json.loads(REFRESH.read_text());sweep=json.loads(SWEEP.read_text());overview=json.loads(OVERVIEW.read_text())
+    report=[]
+    for chart in payload['charts']:
+        key=chart['chart'].split('-')[-1]
+        if key not in selected:continue
+        for name,expected in chart['inputs'].items():
+            pinned=retained_source(ROOT,name,expected)
+            if Path(name).suffix not in ('.py','.sage') and pinned.resolve()!=(ROOT/name).resolve():
+                raise ArithmeticError('active mathematical input differs from the pinned census')
+        direct=json.loads(CHARTS[key]['direct'].read_text())
+        targets=input_records(refresh,sweep,overview,key)
+        ring=PolynomialRing(QQ,'u');field=ring.fraction_field()
+        A=ring(list(map(QQ,direct['weierstrass_model']['A_coefficients_low_to_high'])))
+        B=ring(list(map(QQ,direct['weierstrass_model']['B_coefficients_low_to_high'])))
+        delta=-16*(4*A**3+27*B**2)
+        if ring(list(map(QQ,direct['weierstrass_model']['discriminant_coefficients_low_to_high'])))!=delta:
+            raise ArithmeticError('retained exact model discriminant changed')
+        for fibre in chart['fibres']:
+            cid=fibre['curve_id'];t0=targets[cid]['parameter']
+            if str(QQ(t0))!=str(QQ(fibre['native_parameter'])):raise ArithmeticError('anchor parameter differs')
+            # Census metadata is retained and counted; nonresidue arithmetic is
+            # deliberately separate from this proof of the positive sections.
+            sieve=chart['sieve'];obstructions=sieve['obstruction_primes_in_priority_order'][str(cid)]
+            decisions=(len(sieve['exact_nonsquare_survivor_indices_zero_based'][str(cid)])+
+                       len(sieve['exact_ramified_indices_zero_based'][str(cid)])+len(fibre['covers']))
+            if len(obstructions)!=EXPECTED_RECORD_COUNT or obstructions.count(0)!=decisions:
+                raise ArithmeticError('retained obstruction/positive inventory does not partition the input')
+            if not fibre['covers']:continue
+            curve,public,generic,scale_q,scale_s=public_and_generic_points(targets[cid],direct,ring,A,B)
+            state=raw_state(list(map(str,curve.a_invariants())),[[str(p[0]),str(p[1])] for p in public])
+            if state.rank!=len(public):raise ArithmeticError('public independence is ambiguous at replay primes')
+            coordinates=matrix(QQ,targets[cid]['refresh']['specialized_generic_subgroup']['coordinate_matrix_rows_in_ordered_public_points'])
+            if coordinates[:17,:].rank()!=17 or any(coordinates[17:,:].list()):
+                raise ArithmeticError('the displayed generic/public quotient frame differs')
+            quotient_rows=[]
+            for cover in fibre['covers']:
+                q=ring(list(map(QQ,cover['branch_quadratic_coefficients_low_to_high'])))
+                if q.degree()!=2 or q.gcd(q.derivative()).degree()!=0 or q.gcd(delta).degree()!=0:
+                    raise ArithmeticError('cover is not a separated squarefree quadratic')
+                section=cover['eighteenth_section']
+                x0,x1,y0,y1=[ring(list(map(QQ,section[k+'_coefficients_low_to_high']))) for k in ('x0','x1','y0','y1')]
+                if y0*y0+y1*y1*q!=x0**3+3*x0*x1*x1*q+A*x0+B or 2*y0*y1!=3*x0*x0*x1+x1**3*q+A*x1:
+                    raise ArithmeticError('retained lifted section identity failed')
+                if not x1 and not y1:raise ArithmeticError('section is Galois invariant')
+                u0=QQ(cover['canonical_positive_square_root'])
+                if u0<=0 or q(t0)!=u0*u0:raise ArithmeticError('anchor square-root witness failed')
+                positive=(x0(t0)+x1(t0)*u0,y0(t0)+y1(t0)*u0)
+                negative=(x0(t0)-x1(t0)*u0,y0(t0)-y1(t0)*u0)
+                if point_text(positive)!=cover['positive_chart_point'] or point_text(negative)!=cover['negative_chart_point']:
+                    raise ArithmeticError('retained specialized branches differ')
+                if conic_parameterization_record(q,t0,u0)!=cover['anchor_line_parameterization']:
+                    raise ArithmeticError('retained exact conic parameterization failed')
+                P=curve(scale_q*positive[0],scale_s**3*positive[1]);N=curve(scale_q*negative[0],scale_s**3*negative[1])
+                trace=exact_linear_combination(curve,cover['equation_basis_trace_word'],generic)
+                if P+N!=trace or point_text(P)!=cover['positive_public_short_point']:
+                    raise ArithmeticError('branch transport or trace sum failed')
+                row=cover['exact_class_in_displayed_public_group_tensor_Q'];coefficients=list(map(QQ,row['ordered_public_point_coordinates']))
+                if len(coefficients)!=len(public):raise ArithmeticError('public coordinate dimension differs')
+                denominator=ZZ(1)
+                for v in coefficients:denominator=denominator.lcm(v.denominator())
+                if denominator*P!=exact_linear_combination(curve,[denominator*v for v in coefficients],public):
+                    raise ArithmeticError('retained rational point relation failed exact addition')
+                if list(map(QQ,row['exceptional_coordinates']))!=coefficients[17:]:raise ArithmeticError('exceptional coordinates differ')
+                if not any(coefficients[17:]) or not cover['extreme_anchored']:raise ArithmeticError('anchor does not prove a nonzero quotient class')
+                quotient_rows.append(coefficients[17:])
+            if matrix(QQ,quotient_rows).rank()!=fibre['anchored_exceptional_span_rank']:
+                raise ArithmeticError('retained quotient span rank differs')
+            report.append({'curve_id':cid,'verified_cover_count':len(quotient_rows),'certified_public_rank':state.rank,
+                           'generic_rank_lower_bound_per_cover':18,'public_mw_state':state.record()})
+            print(f"MW18_REPLAY|curve={cid}|positive_covers={len(quotient_rows)}|status=PASS",flush=True)
+    if historical_anchor(parse_priority_rows(PRIORITY))!=payload['historical_rank28_anchor']:
+        raise ArithmeticError('historical positive anchor does not replay')
+    from research_runtime.search_state import reduction_cache
+    return {'schema':'elliptic-curves.mw18-positive-witness-replay.v1','status':'PASS_EXACT_RETAINED_COVER_AND_QUOTIENT_WITNESSES',
+            'fibres':report,'verified_positive_cover_count':sum(r['verified_cover_count'] for r in report),
+            'arithmetic_facts':reduction_cache().store.snapshot(),
+            'census_regenerated':False,'negative_census_independently_replayed':False,
+            'claim_boundary':'Exact retained positive covers, sections, conic maps and infinite-order quotient classes. Exhaustive negative census remains the pinned source certificate.'}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--chart", choices=("all", *CHARTS), default="all")
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--no-resume", action="store_true")
     parser.add_argument("--check", action="store_true")
+    parser.add_argument('--regenerate',action='store_true',help='explicitly rebuild the complete split census')
+    parser.add_argument('--replay-output',type=Path)
+    parser.add_argument('--witness-worker',action='store_true',help=argparse.SUPPRESS)
+    parser.add_argument('--wall-seconds',type=int,default=600)
+    parser.add_argument('--census-witnesses',type=Path,default=ROOT/'artifacts/generated-results/elliptic-curves/runtime_mw18_census_witnesses_v1.zip')
+    parser.add_argument('--rss-bytes',type=int,default=1073741824)
     parser.add_argument(
         "--merge-completed-chart-payloads", type=Path, nargs=2, metavar=("07CA9", "08234")
     )
     args = parser.parse_args()
+    sys.path.insert(0,str(ROOT/'elliptic-curves/cas'))
+    if args.check and not args.regenerate:
+        from research_runtime.store import checkpoint
+        from research_runtime.supervisor import captured_run,Limits
+        if args.witness_worker:
+            selected=tuple(CHARTS) if args.chart=='all' else (args.chart,)
+            payload=json.loads(args.output.read_text())
+            negative=runpy.run_path(str(ROOT/'elkies-k3/scripts/retain_r17_mw18_census_witnesses.sage'))
+            if hashlib.sha256(args.output.read_bytes()).hexdigest()!=hashlib.sha256(negative['CERTIFICATE'].read_bytes()).hexdigest():
+                raise ArithmeticError('the retained census bundle belongs to a different cover certificate')
+            result=replay_retained_covers(payload,selected)
+            result['negative_census']=negative['replay_bundle'](args.census_witnesses,selected)
+            if result['verified_positive_cover_count']!=result['negative_census']['counts']['positive_covers']:
+                raise ArithmeticError('positive cover count differs from the verified census partition')
+            result.update(schema='elliptic-curves.mw18-complete-witness-replay.v1',
+                          status='PASS_EXACT_COMPLETE_MW18_COVER_AND_CENSUS_WITNESSES',
+                          negative_census_independently_replayed=True,
+                          claim_boundary='Retained covers, sections, quotient classes and every negative census obstruction replay exactly without regenerating the sieve.')
+            if args.replay_output:checkpoint(args.replay_output,result)
+            print(result['status'],flush=True)
+        else:
+            captured_run([sys.executable,str(Path(__file__).resolve()),*sys.argv[1:],'--witness-worker'],
+                         limits=Limits(args.wall_seconds,args.rss_bytes),text=True,check=True)
+        return
     if args.merge_completed_chart_payloads:
         if args.chart != "all":
             parser.error("--chart cannot be combined with --merge-completed-chart-payloads")

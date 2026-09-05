@@ -38,12 +38,12 @@ CAMPAIGN = (
 )
 BASE_RUNNER = ROOT / "elliptic-curves/cas/run_mw17_jump_v2.sage"
 PRODUCTION_GATES = ROOT / "elliptic-curves/cas/production_search_gates.py"
-BASE_CHUNK_DIR = ROOT / "artifacts/local/elkies-k3/mw17-jump-v2"
-CHUNK_DIR = ROOT / "artifacts/local/elkies-k3/mw17-jump-v2-zero-gain-rescue"
+BASE_CHUNK_DIR = ROOT / "artifacts/local/elkies-k3/mw17-jump-v2-pointed-v1"
+CHUNK_DIR = ROOT / "artifacts/local/elkies-k3/mw17-jump-v2-zero-gain-rescue-pointed-v1"
 LEDGER = (
     ROOT
     / "artifacts/generated-results"
-    / "elkies-k3-mw17-jump-v2-zero-gain-rescue-ledger-v1.json"
+    / "elkies-k3-mw17-jump-v2-zero-gain-rescue-pointed-ledger-v1.json"
 )
 STOP_SENTINEL = CHUNK_DIR / "STOP_GAIN15.json"
 
@@ -59,6 +59,10 @@ STACK_BYTES = 1_000_000_000
 RELATION_CHUNK_SIZE = 64
 RELATION_TIMEOUT_SECONDS = 180.0
 
+
+from pointed_quartic_migration import validate_frozen_sources, runtime_search, require_runtime
+
+from research_runtime.supervisor import captured_run
 
 def digest(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
@@ -119,9 +123,7 @@ def load_protocol() -> tuple[dict[str, Any], dict[str, Any]]:
     }
     if protocol.get("protocol_definition_sha256") != canonical_hash(definition):
         raise ArithmeticError("the rescue protocol definition does not replay")
-    for name, expected in protocol["implementation_hashes"].items():
-        if digest(ROOT / name) != expected:
-            raise ArithmeticError(f"frozen rescue implementation changed: {name}")
+    validate_frozen_sources(protocol["implementation_hashes"])
     if [row["sample_id"] for row in protocol["assignments"]] != [
         row["sample_id"] for row in campaign["rows"]
     ]:
@@ -157,6 +159,7 @@ def base_records(chunk_dir: Path) -> dict[int, dict[str, Any]]:
     campaign_hash = digest(CAMPAIGN)
     for path in sorted(chunk_dir.glob("chunk-*-of-*.json")):
         chunk = json.loads(path.read_text())
+        require_runtime(chunk)
         if (
             chunk.get("schema") != "elkies-k3.mw17-jump-v2-chunk.v1"
             or chunk.get("campaign_sha256") != campaign_hash
@@ -623,6 +626,7 @@ def run_fibre(
                 "actual_certified_quotient_rank_gain": final_gain,
                 "certified_rank_lower_bound": GENERIC_DIMENSION + final_gain,
                 "protocol_sha256": digest(PROTOCOL),
+                "runtime_search": runtime_search(),
             },
         )
     return result
@@ -672,6 +676,7 @@ def write_checkpoint(
             "schema": "elkies-k3.mw17-jump-v2-zero-gain-rescue-chunk.v1",
             "status": "ELIGIBILITY_DEPENDENT_CHECKPOINT",
             "protocol_sha256": digest(PROTOCOL),
+            "runtime_search": runtime_search(),
             "source_campaign_sha256": digest(CAMPAIGN),
             "chunk_index": chunk_index,
             "chunk_count": chunk_count,
@@ -701,6 +706,7 @@ def run_chunk(
     records = []
     if output.exists():
         old = json.loads(output.read_text())
+        require_runtime(old)
         if (
             old.get("protocol_sha256") != digest(PROTOCOL)
             or old.get("chunk_index") != chunk_index
@@ -737,7 +743,7 @@ def run_chunk(
         ]
         started = time.monotonic()
         try:
-            completed = subprocess.run(
+            completed = captured_run(
                 command,
                 text=True,
                 stdout=subprocess.PIPE,
@@ -793,6 +799,7 @@ def merge_chunks(chunk_dir: Path, chunk_count: int, output: Path) -> None:
         if not path.exists():
             continue
         chunk = json.loads(path.read_text())
+        require_runtime(chunk)
         if (
             chunk.get("schema")
             != "elkies-k3.mw17-jump-v2-zero-gain-rescue-chunk.v1"
@@ -846,6 +853,7 @@ def merge_chunks(chunk_dir: Path, chunk_count: int, output: Path) -> None:
         "schema": "elkies-k3.mw17-jump-v2-zero-gain-rescue-ledger.v1",
         "status": "PARTIAL_ELIGIBILITY_DEPENDENT_RESCUE_LEDGER",
         "protocol_sha256": digest(PROTOCOL),
+        "runtime_search": runtime_search(),
         "source_campaign_sha256": digest(CAMPAIGN),
         "hash_assigned_candidate_count": protocol["assignment"][
             "assigned_candidate_count"

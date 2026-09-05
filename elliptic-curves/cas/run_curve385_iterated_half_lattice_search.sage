@@ -48,7 +48,7 @@ ROOT = Path(__file__).resolve().parents[2]
 ART = ROOT / "artifacts/generated-results/elliptic-curves"
 BLIND = ART / "half_lattice_search_ablation_rank29_holdout_blind_v1.json"
 ENGINE_SOURCE = ROOT / "elliptic-curves/cas/half_lattice_fake_descent_replay.sage"
-OUTPUT = ART / "curve385_iterated_half_lattice_blind_v1.json"
+OUTPUT = ROOT / "artifacts/local/elliptic-curves/pointed-quartic-search/campaigns/run_curve385_iterated_half_lattice_search.json"
 
 EXPECTED_BLIND_SHA256 = "1ee832ce6ecebc0550c008f8a10ccc2d75e727dfe9d5625802624c160e7969e6"
 LABEL = "curve385-rank29"
@@ -73,6 +73,8 @@ from search_nagao_u42_skew_height import (  # noqa: E402
 
 
 engine = SourceFileLoader("curve385_iterated_half_lattice_engine", str(ENGINE_SOURCE)).load_module()
+from pointed_quartic_search import run_quartic_search as shared_quartic_search
+engine.run_quartic_search = shared_quartic_search
 
 
 Point = tuple[Fraction, Fraction]

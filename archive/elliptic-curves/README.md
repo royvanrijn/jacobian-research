@@ -13,6 +13,11 @@ use [`MATH_STATUS.json`](../../MATH_STATUS.json) and the active
 
 ## Index
 
+The [pointed-quartic migration](../../elliptic-curves/notes/POINTED_QUARTIC_SEARCH.md#regression-controls-and-replay)
+indexes the retained PARI and MW16 search controls at revision
+`d30a742133f0658185c3bd4c99f0b0f815f2f74b`. Their original paths remain where
+certificate/source bundles depend on them; active searches use the shared API.
+
 [`MANIFEST.tsv`](MANIFEST.tsv) has one row per preserved item:
 
 ```text

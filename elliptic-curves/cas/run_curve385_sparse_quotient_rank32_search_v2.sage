@@ -36,7 +36,7 @@ RESTART_AMENDMENT = ART / "curve385_sparse_restart_budget_v2.json"
 POLICY_SOURCE = CAS / "curve385_sparse_quotient_policy.py"
 RESTART_POLICY_SOURCE = CAS / "curve385_sparse_restart_policy.py"
 LEGACY_SOURCE = CAS / "run_curve385_iterated_half_lattice_search.sage"
-OUTPUT = LOCAL / "curve385_sparse_quotient_rank32_search_v2.json"
+OUTPUT = ROOT / "artifacts/local/elliptic-curves/pointed-quartic-search/campaigns/run_curve385_sparse_quotient_rank32_search_v2.json"
 
 EXPECTED_PROTOCOL_DEFINITION_HASH = "5723679da2907e036095f90376cdabde457a4f7ba5bc284ad4a4ca3edea1aa37"
 TARGET_RANK = 32
@@ -61,6 +61,8 @@ legacy = SourceFileLoader("curve385_sparse_legacy", str(LEGACY_SOURCE)).load_mod
 
 Point = tuple[Fraction, Fraction]
 
+
+from pointed_quartic_migration import runtime_search, require_runtime, validate_frozen_sources
 
 def digest(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
@@ -100,8 +102,9 @@ def load_protocol() -> tuple[dict[str, Any], dict[str, Any]]:
     # this repaired runner, so the obsolete v1 self-hash is exempted here.
     for path in (BLIND, PROFILE, POLICY_SOURCE, LEGACY_SOURCE):
         expected = protocol["input_hashes"].get(relative(path))
-        if expected is None or digest(path) != expected:
-            raise ArithmeticError(f"protocol-pinned input changed: {relative(path)}")
+        if expected is None:
+            raise ArithmeticError(f"protocol omitted input: {relative(path)}")
+        validate_frozen_sources({relative(path): expected})
     for bit_count_text, plan in protocol["stage_plans_by_quotient_bit_count"].items():
         validate_stage_plan(plan, int(bit_count_text), protocol["old_class_count"])
     amendment = json.loads(RESTART_AMENDMENT.read_text())
@@ -116,8 +119,9 @@ def load_protocol() -> tuple[dict[str, Any], dict[str, Any]]:
         raise ArithmeticError("the restart amendment uses the wrong policy")
     for path in (RESTART_POLICY_SOURCE, Path(__file__)):
         expected = amendment["inputs"].get(relative(path))
-        if expected is None or digest(path) != expected:
-            raise ArithmeticError(f"amendment-pinned input changed: {relative(path)}")
+        if expected is None:
+            raise ArithmeticError(f"amendment omitted input: {relative(path)}")
+        validate_frozen_sources({relative(path): expected})
     return protocol, amendment
 
 
@@ -142,6 +146,7 @@ def initial_state(protocol: dict[str, Any], args) -> tuple[
     payload = {
         "schema": "elliptic-curves.curve385-sparse-quotient-rank32-search.v2",
         "status": "PARTIAL_CHECKPOINT",
+        "runtime_search": runtime_search(),
         "protocol": {
             "path": relative(PROTOCOL),
             "whole_file_sha256": digest(PROTOCOL),
@@ -196,6 +201,7 @@ def resumed_state(protocol: dict[str, Any], args) -> tuple[
     dict[Point, set[str]], set[str]
 ]:
     payload = json.loads(args.output.read_text())
+    require_runtime(payload)
     if payload.get("schema") != "elliptic-curves.curve385-sparse-quotient-rank32-search.v2":
         raise ArithmeticError("the checkpoint has the wrong schema")
     if payload.get("status") != "PARTIAL_CHECKPOINT":

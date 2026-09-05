@@ -29,6 +29,8 @@ OBJECTIVES = ("generic", "full-known")
 SCHEMA = "elliptic-curves.r17-kummer-quotient-sclass-suite.v1"
 
 
+from research_runtime.supervisor import captured_run
+
 def file_sha256(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
 
@@ -370,7 +372,7 @@ def main() -> None:
                 command.append("--overwrite")
             commands.append(command)
             if not args.summarize_only:
-                subprocess.run(command, cwd=ROOT, check=True)
+                captured_run(command, cwd=ROOT, check=True)
 
     missing = [path for path in checkpoints if not path.is_file()]
     if missing:

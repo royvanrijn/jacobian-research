@@ -12,6 +12,8 @@ that a supplied candidate satisfies Selmer local conditions.
 
 from __future__ import annotations
 
+from research_runtime.pari_context import prepared_prime_ideals, prepared_factor
+
 import argparse
 from fractions import Fraction
 import json
@@ -89,7 +91,7 @@ def real_sign_bit(coefficients: list[Fraction], root) -> int:
 
 def local_places(nf, rational_prime: int):
     result = []
-    for prime_ideal in pari.idealprimedec(nf, rational_prime):
+    for prime_ideal in prepared_prime_ideals(nf, rational_prime):
         uniformizer = pari.nfbasistoalg(nf, pari.idealappr(nf, prime_ideal))
         if int(pari.idealval(nf, uniformizer, prime_ideal)) != 1:
             raise ArithmeticError(f"bad uniformizer above {rational_prime}")
@@ -169,7 +171,8 @@ def main() -> None:
             "class_quotient_certification"
         ]
     polynomial = defining_polynomial(polynomial_coefficients)
-    nf = pari.nfinit(pari(polynomial))
+    from research_runtime.pari_context import prepared_nf
+    nf = prepared_nf(pari(polynomial))
     theta = pari(f"Mod(z,{polynomial})")
 
     local_coordinates = signature["local_coordinates"]
@@ -191,7 +194,7 @@ def main() -> None:
         if coordinate["kind"]
         in {"two_adic_product_basis", "two_adic_product_basis_extension"}
     ]
-    two_primes = list(pari.idealprimedec(nf, 2))
+    two_primes = list(prepared_prime_ideals(nf, 2))
     two_basis = [
         power_element(
             theta,

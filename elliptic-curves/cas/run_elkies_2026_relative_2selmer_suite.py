@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+from research_runtime.supervisor import Limits, capture, capture_record, captured_run, run as supervised_run
+
 import argparse
 from hashlib import sha256
 import json
@@ -23,76 +25,14 @@ def file_sha256(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
 
 
-def read_rss_bytes(pid: int) -> int:
-    for line in Path(f"/proc/{pid}/status").read_text().splitlines():
-        if line.startswith("VmRSS:"):
-            return int(line.split()[1]) * 1024
-    return 0
 
 
-def stop_process_group(process: subprocess.Popen[str], sig: signal.Signals) -> None:
-    if process.poll() is None:
-        os.killpg(process.pid, sig)
 
 
-def run_one(
-    command: str,
-    program: Path,
-    log: Path,
-    *,
-    timeout: float,
-    rss_limit_bytes: int,
-) -> dict[str, object]:
-    log.parent.mkdir(parents=True, exist_ok=True)
-    with log.open("w") as stdout_file:
-        process = subprocess.Popen(
-            [command, str(program)],
-            stdout=stdout_file,
-            stderr=subprocess.STDOUT,
-            text=True,
-            start_new_session=True,
-        )
-        started = time.monotonic()
-        peak_rss = 0
-        outcome = "running"
-        while process.poll() is None:
-            elapsed = time.monotonic() - started
-            if elapsed >= timeout:
-                outcome = "strict_wall_timeout"
-                stop_process_group(process, signal.SIGTERM)
-                try:
-                    process.wait(timeout=5)
-                except subprocess.TimeoutExpired:
-                    stop_process_group(process, signal.SIGKILL)
-                    process.wait()
-                break
-            try:
-                peak_rss = max(peak_rss, read_rss_bytes(process.pid))
-            except (FileNotFoundError, ProcessLookupError):
-                pass
-            if peak_rss > rss_limit_bytes:
-                outcome = "strict_rss_limit"
-                stop_process_group(process, signal.SIGTERM)
-                try:
-                    process.wait(timeout=5)
-                except subprocess.TimeoutExpired:
-                    stop_process_group(process, signal.SIGKILL)
-                    process.wait()
-                break
-            time.sleep(0.25)
-        wall_seconds = time.monotonic() - started
-    if outcome == "running":
-        outcome = "completed" if process.returncode == 0 else "backend_failure"
-    return {
-        "outcome": outcome,
-        "returncode": process.returncode,
-        "wall_seconds": wall_seconds,
-        "peak_observed_rss_bytes": peak_rss,
-        "timeout_seconds": timeout,
-        "rss_limit_bytes": rss_limit_bytes,
-        "log": str(log),
-        "log_sha256": file_sha256(log),
-    }
+def run_one(command, program, log, *, timeout, rss_limit_bytes):
+    record = supervised_run([command,str(program)], limits=Limits(timeout,rss_limit_bytes),
+        log_path=log,checkpoint_path=log.with_suffix('.supervisor.json'))
+    return record
 
 
 def main() -> None:

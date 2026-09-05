@@ -11,9 +11,13 @@ from pathlib import Path
 import re
 import shutil
 import subprocess
+import sys
 
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT/"elliptic-curves/cas"))
+from research_runtime.supervisor import Limits, capture, WorkerFailure, preserve_previous
+from research_runtime.section_gate import guard_export
 
 
 def digest(path: Path) -> str:
@@ -29,6 +33,8 @@ parser.add_argument("exports", nargs="+", type=Path)
 parser.add_argument("--workers", type=int, default=8)
 parser.add_argument("--threads-per-job", type=int, default=1)
 parser.add_argument("--timeout", type=int, default=120)
+parser.add_argument("--rss-limit-bytes", type=int, default=2_000_000_000)
+parser.add_argument("--reduction-only", action="store_true")
 parser.add_argument("--msolve", type=Path, default=Path(shutil.which("msolve") or "msolve"))
 args = parser.parse_args()
 
@@ -45,6 +51,8 @@ for export_argument in args.exports:
     export = json.loads(export_path.read_text())
     if export.get("schema") != "elkies-k3.r17-074d9-twist-section-ladder-msolve-export.v1":
         raise ValueError(f"{export_path}: unexpected export schema")
+    guard_export(export, ROOT, reduction_only=args.reduction_only,
+                 limits={"wall_seconds": args.timeout, "rss_bytes": args.rss_limit_bytes})
     export_inputs.append({"path": str(export_path.relative_to(ROOT)), "sha256": digest(export_path)})
     for system in export["systems"]:
         input_path = ROOT / system["path"]
@@ -79,17 +87,16 @@ def run(task):
         str(task["output_path"]),
     ]
     try:
-        completed = subprocess.run(
-            command,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True,
-            timeout=args.timeout,
-            check=False,
-        )
+        preserve_previous(task["output_path"])
+        completed = capture(command, limits=Limits(args.timeout, args.rss_limit_bytes),
+                            log_path=task["output_path"].with_suffix(".log"), check=False)
     except subprocess.TimeoutExpired as error:
         task["outcome"] = "TIMEOUT"
         task["driver_output"] = (error.stdout or "").decode() if isinstance(error.stdout, bytes) else (error.stdout or "")
+        return task
+    except WorkerFailure as error:
+        task["outcome"] = "ERROR"
+        task["supervision"] = error.record
         return task
     task["returncode"] = completed.returncode
     task["driver_output"] = completed.stdout

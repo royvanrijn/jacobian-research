@@ -22,6 +22,8 @@ upper bound is claimed.
 
 from __future__ import annotations
 
+from research_runtime.pari_context import prepared_prime_ideals, prepared_factor
+
 import argparse
 from fractions import Fraction
 import hashlib
@@ -158,7 +160,8 @@ def main() -> None:
         f"({value})*t^{index}" for index, value in enumerate(coefficients) if value
     )
     nf_started = time.monotonic()
-    nf = pari.nfinit(pari(polynomial_text))
+    from research_runtime.pari_context import prepared_nf
+    nf = prepared_nf(pari(polynomial_text))
     theta = pari(f"Mod(t,{polynomial_text})")
     nf_seconds = time.monotonic() - nf_started
     x_coordinates = [point[0] for point in transformed]
@@ -192,7 +195,7 @@ def main() -> None:
                 f"declared odd local prime {rational_prime} does not divide the cubic discriminant"
             )
 
-    two_primes = list(pari.idealprimedec(nf, 2))
+    two_primes = list(prepared_prime_ideals(nf, 2))
     two_basis, two_basis_origins, two_rows = two_adic_coords(
         pari, nf, two_primes, alphas
     )

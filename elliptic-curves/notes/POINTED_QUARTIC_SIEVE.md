@@ -1,5 +1,9 @@
 # Exact pointed-quartic slope sieve
 
+The active family-independent API is now
+[`PointedQuarticSearch`](POINTED_QUARTIC_SEARCH.md). This page retains the
+original arithmetic and weight-one regression evidence.
+
 Implementation: [`half_lattice_pointed_sieve.py`](../cas/half_lattice_pointed_sieve.py)
 and [`pointed_quartic_sieve.cpp`](../cas/pointed_quartic_sieve.cpp).
 The current experiment and rank boundaries remain in the
@@ -135,4 +139,4 @@ calculation is part of this replay.
 
 <!-- status-consumer: EC-K3-ICARM-MW16-POINTED-SIEVE cb83c1afae1d0141 -->
 
-<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY 1abe84480122e9b4 -->
+<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY f88886c066d6cb45 -->

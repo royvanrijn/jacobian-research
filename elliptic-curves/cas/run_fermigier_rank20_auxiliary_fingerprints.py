@@ -22,6 +22,8 @@ Run:
 
 from __future__ import annotations
 
+from research_runtime.pari_context import prepared_prime_ideals, prepared_factor
+
 import argparse
 from fractions import Fraction
 import json
@@ -113,7 +115,7 @@ def two_adic_coords(pari, nf, two_primes, alphas):
 def prime_local_rows(pari, nf, alphas, q):
     """Return 2 bits/place for rational prime q, using PARI only."""
     places = []
-    for pr in pari.idealprimedec(nf, q):
+    for pr in prepared_prime_ideals(nf, q):
         pi_col = pari.idealappr(nf, pr)
         pi = pari.nfbasistoalg(nf, pi_col)
         if int(pari.idealval(nf, pi, pr)) != 1:
@@ -173,11 +175,12 @@ def main():
     iso = E.isomorphism_to(short)
 
     f = pari(f"y^3+({A})*y^2+({B})*y+({C})")
-    nf = pari.nfinit(f)
+    from research_runtime.pari_context import prepared_nf
+    nf = prepared_nf(f)
     theta = pari(f"Mod(y,{f})")
 
     disc = abs(int(pari.poldisc(f)))
-    ff = pari.factor(disc)
+    ff = prepared_factor(disc)
     bad = {2}
     for i in range(int(ff.nrows())):
         bad.add(int(ff[i, 0]))
@@ -219,7 +222,7 @@ def main():
     rank_odd = f2_rank(rows)
 
     # Add exact 2-adic coordinates.
-    two_primes = list(pari.idealprimedec(nf, 2))
+    two_primes = list(prepared_prime_ideals(nf, 2))
     two_basis, two_basis_origins, tw = two_adic_coords(
         pari, nf, two_primes, alphas
     )

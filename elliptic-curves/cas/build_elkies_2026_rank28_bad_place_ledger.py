@@ -11,6 +11,9 @@ Selmer upper bound.
 
 from __future__ import annotations
 
+from research_runtime.pari_context import prepared_prime_ideals, prepared_factor
+from research_runtime.supervisor import Limits, capture_record
+
 import argparse
 from hashlib import sha256
 import json
@@ -150,7 +153,8 @@ def _worker_setup(path: Path):
     started = time.monotonic()
     # Supplying every divisor of the polynomial discriminant prevents PARI
     # from repeating the hard 168-digit factorization inside nfinit.
-    nf = pari.nfinit([pari(polynomial), ramified_primes])
+    from research_runtime.pari_context import prepared_nf
+    nf = prepared_nf(pari(polynomial), ramified_primes)
     print(
         f"{PROTOCOL}|stage=nfinit|status=complete|seconds={time.monotonic()-started:.6f}",
         flush=True,
@@ -229,7 +233,7 @@ def worker_two(path: Path) -> dict[str, Any]:
     source, _polynomial, nf, alphas, transformed, pari = _worker_setup(path)
     print(f"{PROTOCOL}|stage=two_adic|status=start", flush=True)
     started = time.monotonic()
-    two_primes = list(pari.idealprimedec(nf, 2))
+    two_primes = list(prepared_prime_ideals(nf, 2))
     basis, origins, rows = two_adic_coords(pari, nf, two_primes, alphas)
     return {
         "schema": BLOCK_SCHEMA,
@@ -307,34 +311,18 @@ def owned_worker(
     ]
     if prime is not None:
         command.extend(("--worker-prime", str(prime)))
-    started = time.monotonic()
-    process = subprocess.Popen(
-        command,
-        text=True,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        start_new_session=True,
-    )
-    outcome = "completed"
-    try:
-        stdout, stderr = process.communicate(timeout=timeout)
-    except subprocess.TimeoutExpired:
-        outcome = "strict_wall_timeout"
-        os.killpg(process.pid, signal.SIGTERM)
-        try:
-            stdout, stderr = process.communicate(timeout=5)
-        except subprocess.TimeoutExpired:
-            os.killpg(process.pid, signal.SIGKILL)
-            stdout, stderr = process.communicate()
+    record=capture_record(command,limits=Limits(timeout,1_073_741_824))
+    outcome=record['outcome']
+    stdout,stderr=record['stdout'],record['stderr']
     marker = f"{PROTOCOL}_JSON="
     payloads = [line[len(marker) :] for line in stdout.splitlines() if line.startswith(marker)]
     block = json.loads(payloads[0]) if outcome == "completed" and len(payloads) == 1 else None
-    if outcome == "completed" and (process.returncode != 0 or block is None):
+    if outcome == "completed" and (record["returncode"] != 0 or block is None):
         outcome = "backend_failure"
     return {
         "outcome": outcome,
-        "returncode": process.returncode,
-        "wall_seconds": time.monotonic() - started,
+        "returncode": record["returncode"],
+        "wall_seconds": record["wall_seconds"],
         "command": command,
         "stdout": stdout,
         "stderr": stderr,

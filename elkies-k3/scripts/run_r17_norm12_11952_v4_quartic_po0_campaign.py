@@ -21,11 +21,14 @@ import json
 from pathlib import Path
 import shlex
 import shutil
-import subprocess
 import sys
 
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0,str(ROOT/"elliptic-curves/cas"))
+from production_search_gates import function_field_gate_record
+from research_runtime.regulator import Surface
+from research_runtime.supervisor import Limits, capture
 SHORTLIST = (
     ROOT
     / "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json"
@@ -114,6 +117,8 @@ def main() -> None:
     group.add_argument("--max-groups", type=int, default=1)
     group.add_argument("--all-groups", action="store_true")
     parser.add_argument("--timeout", type=float, default=60.0)
+    parser.add_argument("--campaign-timeout", type=float, default=600.0)
+    parser.add_argument("--rss-limit-bytes", type=int, default=2_000_000_000)
     parser.add_argument("--threads", type=int, default=4)
     parser.add_argument("--jobs", type=int, default=1)
     parser.add_argument("--check", action="store_true")
@@ -159,8 +164,19 @@ def main() -> None:
     if sage is None:
         raise FileNotFoundError("the Sage launcher is required")
     jobs = []
+    pre_search_gates=[]
+    pruned_targets=[]
+    direct_model=json.loads(args.direct.read_text())["weierstrass_model"]
     for pair in pairs:
         pair_key = str(pair["pair_key"])
+        surface=Surface(tuple(direct_model["A_coefficients_low_to_high"]),
+            tuple(direct_model["B_coefficients_low_to_high"]),tuple(pair["product_quartic_coefficients_low_to_high"]))
+        gate=function_field_gate_record(surface=surface,target_rank=1,
+            search_limits={"wall_seconds":args.timeout,"primes_per_pair":args.primes_per_pair})
+        pre_search_gates.append({"pair_key":pair_key,"gate":gate})
+        if not gate["search_budget_gate"]["bounded_search_authorized"]:
+            pruned_targets.append(pair_key)
+            continue
         primes = pair["recommended_complete_sieve_primes"][: args.primes_per_pair]
         if len(primes) != args.primes_per_pair:
             raise ValueError(f"pair {pair_key} has too few recommended primes")
@@ -178,7 +194,7 @@ def main() -> None:
                 "--model",
                 str(args.direct),
             ]
-            subprocess.run(export_command, cwd=ROOT, check=True)
+            capture(export_command, cwd=ROOT, limits=Limits(args.timeout, args.rss_limit_bytes))
             tag = candidate_tag(pair_key)
             export_path = (
                 ROOT
@@ -224,12 +240,14 @@ def main() -> None:
                     str(args.jobs),
                     "--timeout",
                     str(args.timeout),
+                    "--rss-limit-bytes",
+                    str(args.rss_limit_bytes),
                     "--summary",
                     str(summary_path),
                 ]
                 if not args.all_groups:
                     solver_command.extend(("--max-groups", str(args.max_groups)))
-                subprocess.run(solver_command, cwd=ROOT, check=True)
+                capture(solver_command, cwd=ROOT, limits=Limits(args.campaign_timeout, args.rss_limit_bytes))
                 summary = json.loads(summary_path.read_text())
                 job.update(
                     {
@@ -254,10 +272,14 @@ def main() -> None:
     result = {
         "schema": SCHEMA,
         "status": (
-            "PASS_COMPLETE_DECLARED_MODP_PO0_SCHEMES"
+            "ALL_SELECTED_TARGETS_EXCLUDED_BY_THEOREMS"
+            if len(pruned_targets)==len(pairs)
+            else "PASS_COMPLETE_DECLARED_MODP_PO0_SCHEMES"
             if complete_modp
             else "INCOMPLETE_BOUNDED_V4_PO0_CAMPAIGN"
         ),
+        "pre_search_gates":pre_search_gates,
+        "pruned_targets":pruned_targets,
         "inputs": {
             display_path(path): digest(path)
             for path in (

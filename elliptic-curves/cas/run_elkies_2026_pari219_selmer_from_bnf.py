@@ -15,11 +15,8 @@ from __future__ import annotations
 import argparse
 from hashlib import sha256
 import json
-import os
 from pathlib import Path
 import re
-import signal
-import subprocess
 import time
 
 
@@ -31,6 +28,10 @@ sys.path.insert(0, str(CAS))
 from run_elkies_2026_relative_2selmer_checkpointed import (  # noqa: E402
     SIMON_GP_FUNCTION,
 )
+
+
+from research_runtime.supervisor import Limits, capture, run, preserve_previous
+from research_runtime.store import checkpoint as write_checkpoint
 
 
 SCHEMA = "elliptic-curves.elkies-2026-pari219-selmer-from-bnf.v1"
@@ -92,19 +93,9 @@ def pari219_compatible_simon_source(path: Path) -> str:
 
 
 def gp_version(gp: Path) -> str:
-    result = subprocess.run(
-        [str(gp), "-q", "-f"],
-        input="print(version())\n",
-        text=True,
-        capture_output=True,
-        check=True,
-    )
+    result = capture([str(gp), "-q", "-f"], input_text="print(version())\n",
+                     limits=Limits(10, 256_000_000))
     return result.stdout.strip()
-
-
-def stop_group(process: subprocess.Popen[str], sig: signal.Signals) -> None:
-    if process.poll() is None:
-        os.killpg(process.pid, sig)
 
 
 def parse_log(
@@ -191,13 +182,14 @@ def main() -> None:
     parser.add_argument("--known-total-rank-lower-bound", type=int, default=29)
     parser.add_argument("--rigid-dimension", type=int, default=2)
     parser.add_argument("--timeout-seconds", type=float, default=1800.0)
+    parser.add_argument("--rss-bytes", type=int, default=5_000_000_000)
     parser.add_argument("--stack-bytes", type=int, default=4_000_000_000)
     parser.add_argument("--random-seed", type=int, default=20260904)
     parser.add_argument("--log", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
-    if args.timeout_seconds <= 0 or args.stack_bytes <= 0:
+    if args.timeout_seconds <= 0 or args.stack_bytes <= 0 or args.rss_bytes <= 0:
         parser.error("resource limits must be positive")
     if not 0 <= args.known_generic_rank <= args.known_total_rank_lower_bound:
         parser.error("known rank bounds are inconsistent")
@@ -243,38 +235,21 @@ for(i=1,#r[2],a=Mod(1,b.pol);for(j=1,#r[1],if(r[2][j,i],a*=r[1][j]));print("{PRO
 print("{PROTOCOL}|stage=complete|status=PASS");
 '''
 
-    started = time.monotonic()
-    outcome = "running"
-    with args.log.open("w") as handle:
-        process = subprocess.Popen(
-            [str(gp), "-q", "-f", "-s", str(args.stack_bytes)],
-            stdin=subprocess.PIPE,
-            stdout=handle,
-            stderr=subprocess.STDOUT,
-            text=True,
-            start_new_session=True,
-        )
-        assert process.stdin is not None
-        process.stdin.write(program)
-        process.stdin.close()
-        while process.poll() is None:
-            if time.monotonic() - started >= args.timeout_seconds:
-                outcome = "strict_wall_timeout"
-                stop_group(process, signal.SIGTERM)
-                try:
-                    process.wait(timeout=15)
-                except subprocess.TimeoutExpired:
-                    stop_group(process, signal.SIGKILL)
-                    process.wait()
-                break
-            time.sleep(0.25)
-
-    elapsed = time.monotonic() - started
+    source_path = args.output.with_suffix(".gp")
+    preserve_previous(source_path)
+    source_path.write_text(program)
+    preserve_previous(args.output)
+    supervision = run([str(gp), "-q", "-f", "-s", str(args.stack_bytes)],
+        input_text=program, log_path=args.log,
+        checkpoint_path=args.output.with_suffix(".supervisor.json"),
+        limits=Limits(args.timeout_seconds, args.rss_bytes, pari_stack_bytes=args.stack_bytes))
+    elapsed = supervision["wall_seconds"]
+    outcome = "running" if supervision["outcome"] == "completed" else supervision["outcome"]
     log_text = args.log.read_text(errors="replace")
     summary, deleted, basis, norm_basis, local_bases = parse_log(log_text)
     complete = (
         outcome == "running"
-        and process.returncode == 0
+        and supervision["returncode"] == 0
         and f"{PROTOCOL}|stage=complete|status=PASS" in log_text
         and summary is not None
         and len(basis) == summary["two_selmer_dimension"]
@@ -336,16 +311,20 @@ print("{PROTOCOL}|stage=complete|status=PASS");
             "random_seed": args.random_seed,
             "timeout_seconds": args.timeout_seconds,
             "stack_bytes": args.stack_bytes,
+            "rss_bytes": args.rss_bytes,
         },
         "backend": {"gp": str(gp), "version": gp_version(gp)},
         "measurement": {
             "wall_seconds": elapsed,
-            "returncode": process.returncode,
+            "returncode": supervision["returncode"],
         },
+        "supervision": supervision,
+        "source": str(source_path),
+        "source_sha256": file_sha256(source_path),
         "log": str(args.log),
         "log_sha256": file_sha256(args.log),
     }
-    args.output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
+    write_checkpoint(args.output, result)
     print(
         f"{PROTOCOL}|case={args.case_id}|status={outcome}|seconds={elapsed:.3f}"
         f"|output={args.output}",

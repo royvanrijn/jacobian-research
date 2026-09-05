@@ -2,7 +2,8 @@
 """Checkpointed searches of fixed-field covers, with exact maps and replay.
 
 Run with sage -python. A cover is converted to a ternary conic and then a
-binary quartic. PARI minimizes the conic and quartic and reduces the quartic.
+binary quartic. Conic parameterization and quartic normalization are separate
+policy choices; the raw model can be passed directly to enumeration.
 Every coordinate change and every returned point is checked over QQ. Search
 misses and timeouts never decide Sha or give a Mordell--Weil upper bound.
 """
@@ -14,7 +15,6 @@ from hashlib import sha256
 from itertools import combinations
 import json
 from pathlib import Path
-import subprocess
 import sys
 import time
 
@@ -22,6 +22,13 @@ from sage.all import EllipticCurve, PolynomialRing, QQ, ZZ, gcd, lcm, matrix, pa
 from sage.version import version as sage_version
 
 from fixed_cubic_field_curve_family import field_multiply, field_product, f2_rank
+from research_runtime.arithmetic import CurveModel, TwoTorsionContext
+from research_runtime.binary import BinaryBasis, combine
+from research_runtime.chart_policy import ChartPolicy
+from research_runtime.store import checkpoint as atomic_checkpoint
+from research_runtime.pruning import PruningRegistry, SearchRequest
+from research_runtime.store import digest as exact_digest
+from research_runtime.supervisor import Limits, run as supervise
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "artifacts/generated-results/elliptic-curves/fixed_cubic_field_fermigier_rank20_local_kummer_u2_v1.json"
@@ -36,11 +43,7 @@ def digest(path):
 
 
 def save(path, value):
-    path = Path(path)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
-    tmp.replace(path)
+    atomic_checkpoint(Path(path), value)
 
 
 def rows(M):
@@ -74,6 +77,35 @@ def class_masks(basis, max_weight):
     if len({mask for mask, _ in answer}) != len(answer):
         raise ArithmeticError("dependent input basis")
     return answer
+
+
+def pruning_scope(data, curve):
+    algebra=TwoTorsionContext(tuple(data["anchor"]["base_polynomial_ascending"]))
+    space=exact_digest({"algebra":algebra.key,"basis":data["anchor"]["known_kummer_basis_beta_power_coordinates"]})
+    return (("curve",CurveModel(tuple(curve.a_invariants())).key),("squareclass_space",space))
+
+
+def production_class_masks(data, run, curve, max_weight):
+    """Restrict the symbolic-cover queue before constructing its equations."""
+    registry=PruningRegistry(ROOT);scope=pruning_scope(data,curve)
+    dimension=len(data["anchor"]["known_kummer_basis_beta_power_coordinates"])
+    allowed=[rule for rule in registry.matching_rules(scope) if rule["kind"]=="allowed_squareclass_subspace" and rule["dimension"]==dimension]
+    basis=BinaryBasis(dimension)
+    for row in run["W_u_basis"]:basis,_=basis.append(row["mask"])
+    if allowed:
+        generators=min(allowed,key=lambda row:len(row["basis_masks"]))["basis_masks"]
+        candidates=[]
+        for bits in range(1,1<<len(generators)):
+            mask=combine(bits,generators)
+            residue,coordinates=basis.reduce(mask)
+            if residue or coordinates.bit_count()>max_weight:continue
+            indices=[i+1 for i in range(len(run["W_u_basis"])) if coordinates>>i&1]
+            candidates.append((mask,indices))
+        candidates.sort(key=lambda item:(len(item[1]),item[1]))
+    else:
+        candidates=class_masks(run["W_u_basis"],max_weight)
+    return [item for item in candidates if registry.decision(SearchRequest(
+        "kummer_class",scope,class_mask=item[0],class_dimension=dimension))["search_allowed"]]
 
 
 def context(source, u):
@@ -114,9 +146,12 @@ def universal_point_certificate(data, A, B, E):
     eta = (A+1,QQ(-1),QQ(1))
     assert norm(eta,A,B) == (A-B+1)**2
     f = pari("y^3+("+str(A)+")*y+("+str(B)+")")
-    nf = pari.nfinit(f)
+    from research_runtime.sage_arithmetic import SageArithmetic
+    arithmetic=SageArithmetic()
+    torsion=TwoTorsionContext(tuple(data["anchor"]["base_polynomial_ascending"]))
+    nf=arithmetic.nf(torsion,factor_primes=[row["prime"] for row in data["anchor"]["base_discriminant_factorization"]],discover=True)
     theta = pari.Mod(pari("y"),f)
-    primes = pari.idealprimedec(nf,19)
+    primes = arithmetic.prime_ideals(torsion,19,discover=True)
     beta = theta*theta-theta+A+1
     valuations = [int(pari.nfeltval(nf,beta,P)) for P in primes]
     anchors = [[int(pari.nfeltval(nf,pari(QQ(pt[0]))-theta,P)) for P in primes]
@@ -210,9 +245,67 @@ def verify_point(beta, norm_root, gamma, d, A, B, u, E):
             "exact_curve_and_kummer_identity_verified": True}
 
 
-def worker(source, u, mask, height, checkpoint, translate=False):
+def conic_parameterization(Qs, G, policy):
+    """Construct a cover independently of quartic coordinate normalization."""
+    started = time.monotonic()
+    if policy == "conic-minimized":
+        H, U, scale = pari(G).qfminimize()
+        H, U, scale = matrix(QQ,H), matrix(QQ,U), QQ(scale)
+    elif policy == "conic-direct":
+        H, U, scale = G, matrix.identity(QQ,3), QQ(1)
+    else:
+        raise ValueError("unknown conic parameterization policy")
+    assert H == scale*U.transpose()*G*U and U.det()
+    normalization_seconds = time.monotonic()-started
+    started = time.monotonic()
+    sol = pari(H).qfsolve()
+    if sol.type() != "t_COL":
+        raise ArithmeticError("local-surviving class has no conic point")
+    sol = vector(QQ, sol)
+    assert sol*H*sol == 0
+    M, _ = primitive(U*matrix(QQ, pari(H).qfparam(pari(sol), 3)))
+    vv = M*vector([x*x,x,1])
+    assert vv*G*vv == 0 and M.det()
+    quartic = R(-(vv*Qs[1]*vv))
+    L = lcm(v.denominator() for v in quartic.list())
+    C0 = [coeffs(L**2*quartic), ["0"]*3]
+    return H, U, scale, sol, M, L, C0, {
+        "conic_normalization_seconds": normalization_seconds,
+        "chart_parameterization_seconds": time.monotonic()-started}
+
+
+def normalize_quartic(C0, policy):
+    """Return two exact transports; raw has identity transports."""
+    identity = {"e": "1", "matrix": [["1","0"],["0","1"]], "H": ["0"]*3}
+    pari("C0=["+str(poly(C0[0])).replace("**","^")+",0]")
+    if policy == "minimize-reduce":
+        out = pari("C1=hyperellminimalmodel(C0,&m1); [C1,m1]")
+        C1, m1 = model_record(out[0]), change_record(out[1])
+    elif policy in ("raw", "reduce"):
+        pari("C1=C0")
+        C1, m1 = C0, identity
+    else:
+        raise ValueError("unknown quartic model normalization")
+    verify_change(C0,C1,m1)
+    if policy in ("reduce", "minimize-reduce"):
+        out = pari("C2=hyperellred(C1,&m2); [C2,m2]")
+        C2, m2 = model_record(out[0]), change_record(out[1])
+    else:
+        pari("C2=C1")
+        C2, m2 = C1, identity
+    verify_change(C1,C2,m2)
+    return C1, m1, C2, m2
+
+
+def worker(source, u, mask, height, checkpoint, translate=False, normalization="raw", parameterization="conic-direct"):
+    policy = ChartPolicy(model_normalization=normalization, chart_parameterization=parameterization)
     started = time.monotonic()
     data, run, A, B, E = context(source, u)
+    gate=PruningRegistry(ROOT).decision(SearchRequest("kummer_class",pruning_scope(data,E),
+        class_mask=mask,class_dimension=len(data["anchor"]["known_kummer_basis_beta_power_coordinates"])))
+    if not gate["search_allowed"]:
+        save(checkpoint,{"mask":mask,"stage":"pruned","status":"EXCLUDED_BY_THEOREM","points":[],"proof_gate":gate})
+        return
     beta_original, norm_original = class_input(data, mask, A, B)
     beta, norm_root = beta_original, norm_original
     if translate:
@@ -222,51 +315,37 @@ def worker(source, u, mask, height, checkpoint, translate=False):
     record = {"mask": mask, "parameter_u": str(u), "height_bound": height,
               "beta": [str(v) for v in beta], "norm_square_root": str(norm_root),
               "source_sha256": digest(source), "translated_by_universal_point": translate,
-              "points": [], "stage": "conic_minimization"}
+              "representation_policy": policy.__dict__,
+              "points": [], "stage": "chart_parameterization"}
     def checkpoint_now(stage):
         record["stage"] = stage
         record["elapsed_seconds"] = round(time.monotonic()-started, 6)
         save(checkpoint, record)
-    checkpoint_now("conic_minimization")
+    checkpoint_now("chart_parameterization")
     pari.allocatemem(128_000_000, silent=True)
     pari.set_real_precision(100)
     pari.setrand(1)
     Qs, G = quadric_matrices(beta, A, B, u)
     record["coefficient_quadrics"] = [rows(q) for q in Qs]
     record["conic_matrix"] = rows(G)
-    H, U, scale = pari(G).qfminimize()
-    H, U, scale = matrix(QQ,H), matrix(QQ,U), QQ(scale)
-    assert H == scale * U.transpose()*G*U and U.det()
-    sol = pari(H).qfsolve()
-    if sol.type() != "t_COL":
-        raise ArithmeticError("local-surviving class has no conic point")
-    sol = vector(QQ,sol)
-    assert sol*H*sol == 0
-    M, mscale = primitive(U * matrix(QQ, pari(H).qfparam(pari(sol), 3)))
-    vv = M * vector([x*x,x,1])
-    assert vv*G*vv == 0 and M.det()
-    quartic = R(-(vv*Qs[1]*vv))
-    L = lcm(v.denominator() for v in quartic.list())
-    C0 = [coeffs(L**2*quartic), ["0"]*3]
+    H, U, scale, sol, M, L, C0, measurements = conic_parameterization(Qs,G,parameterization)
+    record["stage_measurements"] = measurements
     record.update({"minimized_conic_matrix": rows(H), "conic_change": rows(U),
                    "conic_scale": str(scale), "conic_point": [str(v) for v in sol],
                    "conic_parameter_matrix": rows(M), "quartic_ordinate_scale": str(L),
                    "raw_quartic_model": C0})
-    checkpoint_now("quartic_minimization")
-    pari("C0=["+str(poly(C0[0])).replace("**","^")+",0]")
-    out = pari("C1=hyperellminimalmodel(C0,&m1); [C1,m1]")
-    C1, m1 = model_record(out[0]), change_record(out[1])
-    verify_change(C0,C1,m1)
+    checkpoint_now("model_normalization")
+    stage_started = time.monotonic()
+    C1, m1, C2, m2 = normalize_quartic(C0, normalization)
+    record["stage_measurements"]["model_normalization_seconds"] = time.monotonic()-stage_started
     record.update({"minimal_quartic_model": C1, "minimization_change": m1})
-    checkpoint_now("quartic_reduction")
-    out = pari("C2=hyperellred(C1,&m2); [C2,m2]")
-    C2, m2 = model_record(out[0]), change_record(out[1])
-    verify_change(C1,C2,m2)
     record.update({"reduced_quartic_model": C2, "reduction_change": m2,
                    "reduced_max_coefficient_bits": max(abs(QQ(v).numerator()).nbits() for f in C2 for v in f),
                    "model_changes_exactly_verified": True})
     checkpoint_now("point_search")
+    stage_started = time.monotonic()
     found = [[QQ(p[0]), QQ(1), QQ(p[1])] for p in pari("hyperellratpoints(C2,"+str(height)+")")]
+    record["stage_measurements"]["enumeration_backend_seconds"] = time.monotonic()-stage_started
     # The search is affine. Also test every rational point over the parameter infinity.
     infinity_poly = x*x + QQ(C2[1][2])*x - QQ(C2[0][4])
     found.extend([[QQ(1),QQ(0),v] for v,multiplicity in infinity_poly.roots(QQ)])
@@ -355,14 +434,17 @@ def main():
     ap.add_argument("--max-weight",type=int,default=2)
     ap.add_argument("--height",type=int,default=100000)
     ap.add_argument("--timeout",type=float,default=60)
+    ap.add_argument("--rss-limit-bytes",type=int,default=1_000_000_000)
     ap.add_argument("--jobs",type=int,default=2)
     ap.add_argument("--checkpoint-dir",type=Path,default=ROOT/"artifacts/local/fixed-field-u-minus1")
     ap.add_argument("--worker",type=int)
     ap.add_argument("--translate",action="store_true")
+    ap.add_argument("--model-normalization", choices=("raw","reduce","minimize-reduce"), default="raw")
+    ap.add_argument("--chart-parameterization", choices=("conic-direct","conic-minimized"), default="conic-direct")
     ap.add_argument("--check",action="store_true")
     args = ap.parse_args()
     if args.worker is not None:
-        worker(args.source,args.u,args.worker,args.height,args.output,args.translate)
+        worker(args.source,args.u,args.worker,args.height,args.output,args.translate,args.model_normalization,args.chart_parameterization)
         return
     data,run,A,B,E = context(args.source,args.u)
     if args.check:
@@ -372,7 +454,17 @@ def main():
         assert doc["parameter_u"] == args.u
         if doc.get("universal_point"):
             assert doc["universal_point"] == universal_point_certificate(data,A,B,E)
-        expected = class_masks(run["W_u_basis"], doc["policy"]["max_basis_weight"])
+        if "selected_masks" in doc["policy"]:
+            basis=BinaryBasis(len(data["anchor"]["known_kummer_basis_beta_power_coordinates"]))
+            for row in run["W_u_basis"]:basis,_=basis.append(row["mask"])
+            expected=[]
+            for mask in doc["policy"]["selected_masks"]:
+                residue,coordinates=basis.reduce(mask)
+                assert not residue and 0<coordinates.bit_count()<=doc["policy"]["max_basis_weight"]
+                expected.append((mask,[i+1 for i in range(len(run["W_u_basis"])) if coordinates>>i&1]))
+            assert len(set(doc["policy"]["selected_masks"]))==len(expected)
+        else:
+            expected = class_masks(run["W_u_basis"], doc["policy"]["max_basis_weight"])
         assert [(r["mask"],r["basis_indices"]) for r in doc["covers"]] == expected
         minimal_pari,_ = pari.ellinit(list(E.a_invariants())).ellminimalmodel()
         minimal = EllipticCurve(QQ,[QQ(minimal_pari[i]) for i in range(5)])
@@ -393,7 +485,7 @@ def main():
         print("PASS_EXACT_COVER_MAP_AND_POINT_REPLAY",doc["summary"],flush=True)
         return
     assert 1 <= args.max_weight <= len(run["W_u_basis"]) and args.height > 0 and args.timeout > 0 and args.jobs > 0
-    policy = class_masks(run["W_u_basis"],args.max_weight)
+    policy = production_class_masks(data,run,E,args.max_weight)
     # PARI's model minimization only factors the required invariant gcd;
     # Sage's default path factors the much larger full discriminant first.
     minimal_pari, _ = pari.ellinit(list(E.a_invariants())).ellminimalmodel()
@@ -405,48 +497,57 @@ def main():
            "W_dimension": run["W_u_dimension"], "raw_curve_ainvariants":list(map(str,E.a_invariants())),
            "global_minimal_curve_ainvariants":list(map(str,minimal.a_invariants())),
            "raw_to_minimal_urst":list(map(str,iso.tuple())),
-           "policy": {"max_basis_weight":args.max_weight,"cover_count":len(policy),
+           "policy": {"model_normalization":args.model_normalization,"chart_parameterization":args.chart_parameterization,
+                      "enumeration_backend":"pari-hyperellratpoints","max_basis_weight":args.max_weight,"cover_count":len(policy),
+                      "selected_masks":[mask for mask,_ in policy],"mathematical_pruning_applied":True,
                       "quartic_height_bound":args.height,"per_cover_timeout_seconds":args.timeout,
                       "workers":args.jobs,"pari_random_seed":1,"real_precision_decimal_digits":100,
                       "parameter_infinity_checked":True,"translate_by_universal_point":args.translate},
            "independence_method":"Exact (x-alpha)/beta square identity, then GF(2) rank in the certified independent anchor Kummer basis; irreducibility gives E(Q)[2]=0.",
-           "claim_boundary":["Equivalent quartic models are minimized and reduced; this is not a degree-four-model minimality theorem.",
+           "claim_boundary":["Normalization, chart parameterization and enumeration are separately recorded policies; no minimality theorem is claimed.",
                              "A completed bounded search miss does not prove global insolubility or a nontrivial Sha class.",
                              "Only the selected masks and the declared reduced-coordinate height are searched.",
                              "Realized mask rank is a lower bound; dependent masks can conceal further independent points."],
            "covers":[]}
-    if args.u == -1:
+    summarize(doc)
+    if args.u == -1 and policy:
         doc["universal_point"] = universal_point_certificate(data,A,B,E)
     args.checkpoint_dir.mkdir(parents=True,exist_ok=True)
     def launch(entry):
         mask,indices = entry
-        suffix = "_translated" if args.translate else ""
+        suffix = ("_translated" if args.translate else "") + "_" + args.model_normalization + "_" + args.chart_parameterization
         target = args.checkpoint_dir/f"u{args.u}_mask{mask}_h{args.height}{suffix}.json"
         log = target.with_suffix(".log")
         if target.exists():
             old = json.loads(target.read_text())
             if (old.get("stage")=="complete" and old.get("source_sha256")==digest(args.source)
                 and old.get("translated_by_universal_point",False)==args.translate
-                and old.get("height_bound")==args.height):
+                and old.get("height_bound")==args.height
+                and old.get("representation_policy",{}).get("model_normalization")==args.model_normalization
+                and old.get("representation_policy",{}).get("chart_parameterization")==args.chart_parameterization):
                 old["basis_indices"] = indices
                 return old
         cmd = [sys.executable,str(Path(__file__).resolve()),"--source",str(args.source),"--u",str(args.u),
-               "--worker",str(mask),"--height",str(args.height),"--output",str(target)]
+               "--worker",str(mask),"--height",str(args.height),"--output",str(target),
+               "--model-normalization",args.model_normalization,"--chart-parameterization",args.chart_parameterization]
         if args.translate:
             cmd.append("--translate")
-        status = None
-        with log.open("w") as stream:
-            try:
-                result = subprocess.run(cmd,stdout=stream,stderr=stream,timeout=args.timeout)
-                if result.returncode:
-                    status = "ERROR"
-            except subprocess.TimeoutExpired:
-                status = "TIMEOUT"
+        # Preserve partial attempts before starting a fresh worker. Their
+        # content hashes make retry history independent of wall-clock naming.
+        for previous in (target,log):
+            if previous.exists():
+                retained=previous.parent/"previous"/(digest(previous)+previous.suffix)
+                retained.parent.mkdir(parents=True,exist_ok=True)
+                previous.replace(retained)
+        measurement=supervise(cmd,limits=Limits(args.timeout,args.rss_limit_bytes,pari_stack_bytes=128_000_000),
+            log_path=log,result_path=target,checkpoint_path=target.with_suffix(".supervisor.json"))
+        status=(None if measurement["outcome"]=="completed" else "TIMEOUT" if measurement["outcome"]=="strict_wall_timeout" else "ERROR")
         row = json.loads(target.read_text()) if target.exists() else {"mask":mask,"stage":"startup","points":[]}
         if status:
             row["status"] = status
             row["diagnostic"] = log.read_text()[-2000:]
         row["basis_indices"] = indices
+        row["supervisor"] = measurement
         return row
     # Submit the basis first and finish it before the pair/higher-weight wave.
     indexed = {}

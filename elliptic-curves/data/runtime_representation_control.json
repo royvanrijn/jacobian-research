@@ -1,0 +1,11 @@
+{
+  "curve": [0, 0, 0, -1792, 40960],
+  "points": [[16, 128], [32, 128]],
+  "factor_primes": [2, 83],
+  "centre": {"coefficients": [1, 0]},
+  "height": 30,
+  "seconds": "2",
+  "cell_wall_seconds": 20,
+  "rss_bytes": 1073741824,
+  "extra_primes": [31, 37, 41]
+}

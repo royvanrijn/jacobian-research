@@ -11,6 +11,11 @@ neighbour, descent, and specialization calculations require explicit gates and
 reproducible, checkpointed outputs. `../MATH_STATUS.json` remains the authority
 for exact claim status.
 
+The shared [pointed-quartic search API](../elliptic-curves/notes/POINTED_QUARTIC_SEARCH.md)
+now serves MW16, MW17, anchored MW18 and zero-gain rescue. Its MW16 regression
+retains all 55 calibrated control directions; sensitivity on other families
+remains a separate calibration question.
+
 ## Primary lanes
 
 Three peer lanes set the operational roadmap.  Rank 17 is not a prerequisite

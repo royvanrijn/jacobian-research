@@ -14,6 +14,7 @@ from importlib.machinery import SourceFileLoader
 import importlib.util
 import json
 from pathlib import Path
+import sys
 import xml.etree.ElementTree as ET
 
 from sage.all import PolynomialRing, QQ
@@ -21,6 +22,9 @@ from sage.version import version
 
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0,str(ROOT/"elliptic-curves/cas"))
+from research_runtime.regulator import frobenius_invariants
+from research_runtime.witnesses import compare_replay
 RESULTS = ROOT / "artifacts/generated-results"
 SHARED = Path(__file__).resolve().with_name("certify_r17_product_19bad_083ad_rank_zero.sage")
 CLASSIFICATION = RESULTS / "elkies-k3-r17-all17-product-toric-frobenius-campaign-v1.json"
@@ -41,30 +45,16 @@ def load_shared():
 
 def analytic_rank(frobenius):
     """Use exact polynomial division, including ranks other than one."""
-    ring = PolynomialRing(QQ, "T")
-    T = ring.gen()
-    p = int(frobenius["prime"])
-    F = ring(frobenius["elliptic_L"]["frobenius_characteristic_coefficients_low_to_high"])
-    if F.degree() != 28 or not F.is_monic():
-        raise ArithmeticError("not a complete degree-28 characteristic polynomial")
-    L = F.reverse()
-    moments = [str(-L[1]), str(L[1]**2 - 2*L[2])]
-    if L[0] != 1 or moments != frobenius["elliptic_L"]["power_sums_n1_n2"]:
-        raise ArithmeticError("L-polynomial orientation or moment mismatch")
-    quotient, rank = L, 0
-    while quotient(QQ(1)/p) == 0:
-        quotient, remainder = quotient.quo_rem(1-p*T)
-        if remainder:
-            raise ArithmeticError("nonexact rank division")
-        rank += 1
-    if quotient(QQ(1)/p) <= 0:
-        raise ArithmeticError("nonpositive normalized leading coefficient")
-    stored = sum(int(hit["multiplicity"]) for hit in
-                 frobenius["elliptic_L"]["cyclotomic_hits_after_T_equals_pZ"]
-                 if hit["order"] == 1)
-    if rank != stored:
-        raise ArithmeticError("fixed-factor multiplicity mismatch")
-    return rank, L
+    try:
+        row=frobenius["elliptic_L"]
+        data=frobenius_invariants(row["frobenius_characteristic_coefficients_low_to_high"],
+            int(frobenius["prime"]),expected_degree=28,moments=row["power_sums_n1_n2"])
+    except ValueError as error:
+        raise ArithmeticError(str(error)) from error
+    rank=data["arithmetic_rank_upper"]
+    stored=sum(int(hit["multiplicity"]) for hit in row["cyclotomic_hits_after_T_equals_pZ"] if hit["order"]==1)
+    if rank!=stored:raise ArithmeticError("fixed-factor multiplicity mismatch")
+    return rank,PolynomialRing(QQ,"T")(list(map(QQ,data["L_coefficients_low_to_high"])))
 
 
 def compare_rank_one(reductions, squareclass):
@@ -317,8 +307,10 @@ def main():
         return
     rendered = json.dumps(payload, indent=2, sort_keys=True) + "\n"
     if args.check:
-        if not args.output.is_file() or args.output.read_text() != rendered:
-            raise SystemExit("stale or missing regulator-sweep certificate")
+        if not args.output.is_file():
+            raise SystemExit("missing regulator-sweep certificate")
+        compare_replay(json.loads(args.output.read_text()),payload,root=ROOT,
+            source_paths=(str(Path(__file__).resolve().relative_to(ROOT)),str(SHARED.relative_to(ROOT))))
     else:
         args.output.write_text(rendered)
     for row in payload["targets"]:

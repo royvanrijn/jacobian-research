@@ -35,6 +35,9 @@ from sage.all import GF, PolynomialRing, QQ
 ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS = Path(__file__).resolve().parent
 sys.path.insert(0, str(SCRIPTS))
+sys.path.insert(0, str(ROOT/"elliptic-curves/cas"))
+from production_search_gates import function_field_gate_record
+from research_runtime.regulator import Surface
 
 from screen_elkies_2026_quadratic_twist_ranks import (  # noqa: E402
     Candidate,
@@ -70,6 +73,8 @@ def polynomial_coefficients_mod(values, prime):
 
 
 parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--reduction-only",action="store_true",
+    help="study the finite-field section scheme itself, independently of rational-section search")
 target = parser.add_mutually_exclusive_group(required=True)
 target.add_argument("--singleton-mask", type=int)
 target.add_argument("--product-key")
@@ -199,6 +204,12 @@ elif model.get("status") == "PASS_EXACT_DIRECT_TWO_NEIGHBOR_EQUATION_FRAME_AND_S
     model_coefficients = model["weierstrass_model"]
 else:
     raise ValueError("expected a certified published or direct norm-12 model")
+surface=Surface(tuple(model_coefficients["A_coefficients_low_to_high"]),
+    tuple(model_coefficients["B_coefficients_low_to_high"]),tuple(candidate.coefficients))
+section_gate=function_field_gate_record(surface=surface,target_rank=1,search_limits={"finite_field_prime":int(prime)})
+if not args.reduction_only and not section_gate["search_budget_gate"]["bounded_search_authorized"]:
+    raise SystemExit("EXCLUDED_BY_THEOREM before symbolic section export: "+
+                     ", ".join(section_gate["theorem_pruning"]["theorems"]))
 base_a = [field(QQ(value)) for value in model_coefficients["A_coefficients_low_to_high"]]
 base_b = [field(QQ(value)) for value in model_coefficients["B_coefficients_low_to_high"]]
 twist_q = polynomial_coefficients_mod(candidate.coefficients, prime)
@@ -395,6 +406,9 @@ for block_index, (leading_x, leading_y) in enumerate(leading_points):
 
 record = {
     "schema": "elkies-k3.elkies-2026-twist-polynomial-section-msolve-export.v1",
+    "function_field_pre_search_gate":section_gate,
+    "exact_surface":{"A":surface.A,"B":surface.B,"d":surface.d,"base":surface.base},
+    "purpose":"finite_field_proof" if args.reduction_only else "rational_section_search",
     "status": (
         "PASS_EXACT_MODP_REDUCED_POLYNOMIAL_SECTION_EXPORT"
         if complete_infinity_cover

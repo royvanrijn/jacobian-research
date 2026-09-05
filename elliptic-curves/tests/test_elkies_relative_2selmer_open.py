@@ -13,11 +13,12 @@ import run_elkies_2026_relative_2selmer_open as open_runner  # noqa: E402
 
 
 class ElkiesRelative2SelmerOpenTests(unittest.TestCase):
-    def test_worker_is_blind_and_uses_certified_pari_cover_basis(self) -> None:
+    def test_completeness_worker_does_not_reintroduce_monolithic_descent(self) -> None:
         source = open_runner.PARI_WORKER
-        self.assertIn("ellrankinit", source)
-        self.assertIn("bnfcertify", source)
-        self.assertIn("ell2cover", source)
+        self.assertNotIn("ellrankinit", source)
+        self.assertNotIn("bnfinit", source)
+        self.assertNotIn("nfinit", source)
+        self.assertIn('requirement="complete-selmer"', source)
         self.assertIn("hyperellratpoints", source)
         self.assertNotIn('payload["exceptional_points"]', source)
         self.assertNotIn('payload["generic_points"]', source)

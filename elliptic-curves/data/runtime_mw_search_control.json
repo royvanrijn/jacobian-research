@@ -1,0 +1,11 @@
+{
+  "schema": "elliptic-curves.lazy-mw-search.v1",
+  "curve": [0, 0, 0, -7, 10],
+  "points": [[1, 2], [2, 2]],
+  "metric_gram": [[1, 0], [0, 1]],
+  "policy": {"enumeration_backend": "gmp-pointed-sieve", "chart_metric_weight": "16", "diversity_window": 2},
+  "next_holes": 3,
+  "height": 30,
+  "seconds_per_chart": 2,
+  "cvp_node_budget": 1000
+}

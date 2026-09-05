@@ -463,17 +463,15 @@ def main() -> None:
     set_random_seed(args.random_seed)
     if provider_kind == "bnf":
         assert checkpoint_path is not None and meta is not None
-        bnf = pari.read(str(checkpoint_path))
-        if not bool(pari.bnfcertify(bnf)):
-            raise ArithmeticError("reloaded BNF failed certification")
+        from research_runtime.pari_context import certified_bnf_checkpoint
+        bnf = certified_bnf_checkpoint(checkpoint_path, digest(checkpoint_path), discover=True)
         if str(bnf.nf_get_pol()) != meta["field_cubic"]:
             raise ArithmeticError("BNF field polynomial mismatch")
         nf = bnf
     else:
         pari.addprimes([int(value) for value in record["bad_primes"]])
-        nf = pari.nfinit(pari(HECKE_REDUCED_CUBIC))
-        if list(pari.nfcertify(nf)):
-            raise ArithmeticError("PARI maximal-order certification failed")
+        from research_runtime.pari_context import prepared_nf
+        nf = prepared_nf(pari(HECKE_REDUCED_CUBIC), record["bad_primes"])
         bnf = None
     simon = Path(SAGE_EXTCODE) / "pari" / "simon"
     for name in ("ellQ.gp", "ell.gp", "qfsolve.gp", "resultant3.gp"):

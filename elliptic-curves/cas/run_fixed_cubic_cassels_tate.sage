@@ -62,7 +62,8 @@ from collections import deque
 Y=PolynomialRing(QQ,'theta'); theta=Y.gen();K=NumberField(theta**3+A*theta+B,'th');th=K.gen();ph=-3*(th-th**2)-E.a2()
 V=matrix(QQ,3,3,lambda i,j:(ph**j)[i]);Vinv=V.inverse()
 KT=PolynomialRing(K,'x');xx=KT.gen()
-pol=pari(f'y^3+({A})*y+({B})');nf=pari.nfinit(pol)
+from research_runtime.pari_context import prepared_nf
+pol=pari(f'y^3+({A})*y+({B})');nf=prepared_nf(pol)
 
 def sqp(a,pr):
  pr=ZZ(pr)

@@ -6,6 +6,8 @@ from importlib.machinery import SourceFileLoader
 import json
 from pathlib import Path
 import unittest
+from unittest.mock import patch
+from pointed_regression_sources import historical_digest
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -22,9 +24,10 @@ class MW17JumpV2Tests(unittest.TestCase):
     def setUpClass(cls):
         cls.campaign = json.loads(CAMPAIGN.read_text())
 
-    def test_builder_replays_byte_for_byte(self):
+    def test_historical_builder_replays_byte_for_byte(self):
         module = SourceFileLoader("mw17_jump_v2_campaign_test", str(BUILDER)).load_module()
-        self.assertEqual(module.build(), self.campaign)
+        with patch.object(module, "digest", side_effect=historical_digest):
+            self.assertEqual(module.build(), self.campaign)
 
     def test_inventory_and_priority_order(self):
         rows = self.campaign["rows"]

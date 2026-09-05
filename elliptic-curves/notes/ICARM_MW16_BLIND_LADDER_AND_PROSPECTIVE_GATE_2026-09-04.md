@@ -324,4 +324,4 @@ and benchmark timings imply no new independent direction. No candidate has
 passed the residual-Selmer gate, no expensive continuation is authorized,
 and rank 32 remains open.
 
-<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY 1abe84480122e9b4 -->
+<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY f88886c066d6cb45 -->
