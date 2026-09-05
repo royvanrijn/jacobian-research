@@ -1,0 +1,1729 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_collision_inputs_v1.json": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+    "elliptic-curves/cas/research_runtime/local_kummer.py": "ad925d50c2bafd22f0e1e3df6c2d3798c958ed380c4e4c4baf2f022d2966592e",
+    "elliptic-curves/rank-jump/AFFINE_SELMER_PROTOCOL.json": "015cd9983824f20212fb26b5708ba8f731f22898c0c525cf67c57b61fc185e62",
+    "elliptic-curves/rank-jump/affine_selmer.py": "570a70d4225e9c4c463a17a70b2547b62fbd4073764bd656cbff846497831758",
+    "elliptic-curves/rank-jump/ct_variation.py": "d4829242ab921ddff9340173fb07e9aad7b745e6c82af3331ef47e1180bde27e",
+    "elliptic-curves/rank-jump/local_collision.py": "09ab16e69d8113e30a844e7c97dd0e2e48411e662bb3235058e5405ee6182542",
+    "elliptic-curves/rank-jump/retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "boundary": "Complete local intersection only inside W+<eta>; neither full Selmer computation nor rational point/rank certification.",
+  "cases": [
+    {
+      "affine_solution": {
+        "consistent": false,
+        "inconsistent_row_combination": 15
+      },
+      "all_constraint_rows": [
+        571928,
+        965659,
+        1563190,
+        121909
+      ],
+      "eta_outside_inherited_space_witnesses": [
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 6807347,
+          "prime_ideal_index": 0
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 6807347,
+          "prime_ideal_index": 1
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 5070588247,
+          "prime_ideal_index": 1
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 2517352081717261588189318068375793,
+          "prime_ideal_index": 1
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 2517352081717261588189318068375793,
+          "prime_ideal_index": 2
+        }
+      ],
+      "extended_selmer_basis": [
+        7,
+        27,
+        35,
+        64,
+        128,
+        256,
+        522,
+        1025,
+        2059,
+        4107,
+        8200,
+        16387,
+        32779,
+        65539,
+        131074,
+        262146,
+        524296
+      ],
+      "extended_selmer_dimension": 17,
+      "inherited_selmer_basis": [
+        7,
+        27,
+        35,
+        64,
+        128,
+        256,
+        522,
+        1025,
+        2059,
+        4107,
+        8200,
+        16387,
+        32779,
+        65539,
+        131074,
+        262146,
+        524296
+      ],
+      "inherited_selmer_dimension": 17,
+      "places": [
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 2
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 3
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 5
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 7
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            571928
+          ],
+          "global_row_indices": [
+            0
+          ],
+          "place": 13
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 17
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 31
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 79
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 1049
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            965659
+          ],
+          "global_row_indices": [
+            1
+          ],
+          "place": 6807347
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 262144
+          },
+          "constraint_rows": [
+            1563190
+          ],
+          "global_row_indices": [
+            2
+          ],
+          "place": 5070588247
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 71889448247
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 40200713707633
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 491007790268548705232623905732119
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            121909
+          ],
+          "global_row_indices": [
+            3
+          ],
+          "place": 2517352081717261588189318068375793
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": "infinity"
+        }
+      ],
+      "u": -3
+    },
+    {
+      "affine_solution": {
+        "consistent": false,
+        "inconsistent_row_combination": 244
+      },
+      "all_constraint_rows": [
+        1106543,
+        252600,
+        1114283,
+        769929,
+        448980,
+        852936,
+        43336,
+        685055
+      ],
+      "eta_outside_inherited_space_witnesses": [
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 61,
+          "prime_ideal_index": 1
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 61,
+          "prime_ideal_index": 2
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 463,
+          "prime_ideal_index": 1
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 1033,
+          "prime_ideal_index": 1
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 88377350996665273,
+          "prime_ideal_index": 1
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 88377350996665273,
+          "prime_ideal_index": 2
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 830763901348107124747241,
+          "prime_ideal_index": 1
+        }
+      ],
+      "extended_selmer_basis": [
+        111,
+        282,
+        688,
+        1027,
+        2207,
+        4115,
+        8377,
+        16422,
+        32937,
+        65714,
+        131091,
+        262293,
+        524452
+      ],
+      "extended_selmer_dimension": 13,
+      "inherited_selmer_basis": [
+        111,
+        282,
+        688,
+        1027,
+        2207,
+        4115,
+        8377,
+        16422,
+        32937,
+        65714,
+        131091,
+        262293,
+        524452
+      ],
+      "inherited_selmer_dimension": 13,
+      "places": [
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 32768
+          },
+          "constraint_rows": [
+            1106543
+          ],
+          "global_row_indices": [
+            0
+          ],
+          "place": 2
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 3
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 5
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 7
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 13
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 17
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            252600
+          ],
+          "global_row_indices": [
+            1
+          ],
+          "place": 31
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 65536
+          },
+          "constraint_rows": [
+            1114283
+          ],
+          "global_row_indices": [
+            2
+          ],
+          "place": 61
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            769929
+          ],
+          "global_row_indices": [
+            3
+          ],
+          "place": 79
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            448980
+          ],
+          "global_row_indices": [
+            4
+          ],
+          "place": 463
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            852936
+          ],
+          "global_row_indices": [
+            5
+          ],
+          "place": 1033
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 1049
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 71889448247
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 40200713707633
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            43336
+          ],
+          "global_row_indices": [
+            6
+          ],
+          "place": 88377350996665273
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            685055
+          ],
+          "global_row_indices": [
+            7
+          ],
+          "place": 830763901348107124747241
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 491007790268548705232623905732119
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": "infinity"
+        }
+      ],
+      "u": -2
+    },
+    {
+      "admissible_representative_local_corrections": [
+        {
+          "place": 2,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 3,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 5,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 7,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 13,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 17,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 19,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 31,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 79,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 1049,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 71889448247,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 40200713707633,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 491007790268548705232623905732119,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 550485889697549509378456967440666703691905279903,
+          "point_generator_mask": 1
+        },
+        {
+          "place": "infinity",
+          "point_generator_mask": 1
+        }
+      ],
+      "affine_solution": {
+        "consistent": true,
+        "particular_anchor_mask": 0
+      },
+      "all_constraint_rows": [
+        610110,
+        195358,
+        195358
+      ],
+      "eta_outside_inherited_space_witnesses": [
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 19,
+          "prime_ideal_index": 1
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 550485889697549509378456967440666703691905279903,
+          "prime_ideal_index": 1
+        }
+      ],
+      "extended_selmer_basis": [
+        1,
+        6,
+        10,
+        18,
+        64,
+        128,
+        258,
+        514,
+        1056,
+        2050,
+        4130,
+        8226,
+        16386,
+        32802,
+        65568,
+        131106,
+        262144,
+        524320,
+        1048576
+      ],
+      "extended_selmer_dimension": 19,
+      "inherited_selmer_basis": [
+        1,
+        6,
+        10,
+        18,
+        64,
+        128,
+        258,
+        514,
+        1056,
+        2050,
+        4130,
+        8226,
+        16386,
+        32802,
+        65568,
+        131106,
+        262144,
+        524320
+      ],
+      "inherited_selmer_dimension": 18,
+      "places": [
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 2
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 3
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 5
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            610110
+          ],
+          "global_row_indices": [
+            0
+          ],
+          "place": 7
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 13
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 17
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            195358
+          ],
+          "global_row_indices": [
+            1
+          ],
+          "place": 19
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 31
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 79
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 1049
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 71889448247
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 40200713707633
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 491007790268548705232623905732119
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            195358
+          ],
+          "global_row_indices": [
+            2
+          ],
+          "place": 550485889697549509378456967440666703691905279903
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": "infinity"
+        }
+      ],
+      "u": -1
+    },
+    {
+      "affine_solution": {
+        "consistent": false,
+        "inconsistent_row_combination": 108
+      },
+      "all_constraint_rows": [
+        346848,
+        610110,
+        1220305,
+        252600,
+        1857555,
+        1479867,
+        1560786,
+        1776479
+      ],
+      "eta_outside_inherited_space_witnesses": [
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 23,
+          "prime_ideal_index": 0
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 23,
+          "prime_ideal_index": 1
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 103,
+          "prime_ideal_index": 0
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 103,
+          "prime_ideal_index": 2
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 735074448304715650993556022553346486326391,
+          "prime_ideal_index": 1
+        }
+      ],
+      "extended_selmer_basis": [
+        163,
+        260,
+        593,
+        1141,
+        2081,
+        4219,
+        8192,
+        16422,
+        32868,
+        65593,
+        131083,
+        262209,
+        524404
+      ],
+      "extended_selmer_dimension": 13,
+      "inherited_selmer_basis": [
+        163,
+        260,
+        593,
+        1141,
+        2081,
+        4219,
+        8192,
+        16422,
+        32868,
+        65593,
+        131083,
+        262209,
+        524404
+      ],
+      "inherited_selmer_dimension": 13,
+      "places": [
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            346848
+          ],
+          "global_row_indices": [
+            0
+          ],
+          "place": 2
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 3
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 5
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            610110
+          ],
+          "global_row_indices": [
+            1
+          ],
+          "place": 7
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 13
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 17
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 131072
+          },
+          "constraint_rows": [
+            1220305
+          ],
+          "global_row_indices": [
+            2
+          ],
+          "place": 23
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 524288
+          },
+          "constraint_rows": [
+            252600,
+            1857555
+          ],
+          "global_row_indices": [
+            3,
+            4
+          ],
+          "place": 31
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 79
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 262144
+          },
+          "constraint_rows": [
+            1479867
+          ],
+          "global_row_indices": [
+            5
+          ],
+          "place": 103
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 1049
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 71889448247
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 40200713707633
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 491007790268548705232623905732119
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 262144
+          },
+          "constraint_rows": [
+            1560786
+          ],
+          "global_row_indices": [
+            6
+          ],
+          "place": 735074448304715650993556022553346486326391
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 524288
+          },
+          "constraint_rows": [
+            1776479
+          ],
+          "global_row_indices": [
+            7
+          ],
+          "place": "infinity"
+        }
+      ],
+      "u": 1
+    },
+    {
+      "admissible_representative_local_corrections": [
+        {
+          "place": 2,
+          "point_generator_mask": 2
+        },
+        {
+          "place": 3,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 5,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 7,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 13,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 17,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 31,
+          "point_generator_mask": 2
+        },
+        {
+          "place": 79,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 233,
+          "point_generator_mask": 3
+        },
+        {
+          "place": 647,
+          "point_generator_mask": 2
+        },
+        {
+          "place": 1049,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 71889448247,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 40200713707633,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 26558335042564254253,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 47769497729370851316266401,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 491007790268548705232623905732119,
+          "point_generator_mask": 0
+        },
+        {
+          "place": "infinity",
+          "point_generator_mask": 0
+        }
+      ],
+      "affine_solution": {
+        "consistent": true,
+        "particular_anchor_mask": 591872
+      },
+      "all_constraint_rows": [
+        1658686,
+        571928,
+        252600,
+        300896,
+        1990802,
+        1523780,
+        898998,
+        1776479
+      ],
+      "eta_outside_inherited_space_witnesses": [
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 233,
+          "prime_ideal_index": 1
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 233,
+          "prime_ideal_index": 2
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 647,
+          "prime_ideal_index": 1
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 647,
+          "prime_ideal_index": 2
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 26558335042564254253,
+          "prime_ideal_index": 1
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 47769497729370851316266401,
+          "prime_ideal_index": 1
+        }
+      ],
+      "extended_selmer_basis": [
+        252,
+        325,
+        599,
+        1092,
+        2056,
+        4172,
+        8302,
+        16505,
+        32845,
+        65632,
+        131171,
+        262233,
+        524404,
+        1048604
+      ],
+      "extended_selmer_dimension": 14,
+      "inherited_selmer_basis": [
+        252,
+        325,
+        599,
+        1092,
+        2056,
+        4172,
+        8302,
+        16505,
+        32845,
+        65632,
+        131171,
+        262233,
+        524404
+      ],
+      "inherited_selmer_dimension": 13,
+      "places": [
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 2
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 3
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 5
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 524288
+          },
+          "constraint_rows": [
+            1658686
+          ],
+          "global_row_indices": [
+            0
+          ],
+          "place": 7
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            571928
+          ],
+          "global_row_indices": [
+            1
+          ],
+          "place": 13
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 17
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            252600
+          ],
+          "global_row_indices": [
+            2
+          ],
+          "place": 31
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 79
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            300896
+          ],
+          "global_row_indices": [
+            3
+          ],
+          "place": 233
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 524288
+          },
+          "constraint_rows": [
+            1990802
+          ],
+          "global_row_indices": [
+            4
+          ],
+          "place": 647
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 1049
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 71889448247
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 40200713707633
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 262144
+          },
+          "constraint_rows": [
+            1523780
+          ],
+          "global_row_indices": [
+            5
+          ],
+          "place": 26558335042564254253
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            898998
+          ],
+          "global_row_indices": [
+            6
+          ],
+          "place": 47769497729370851316266401
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 491007790268548705232623905732119
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 524288
+          },
+          "constraint_rows": [
+            1776479
+          ],
+          "global_row_indices": [
+            7
+          ],
+          "place": "infinity"
+        }
+      ],
+      "u": 2
+    },
+    {
+      "admissible_representative_local_corrections": [
+        {
+          "place": 2,
+          "point_generator_mask": 2
+        },
+        {
+          "place": 3,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 5,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 7,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 13,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 17,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 23,
+          "point_generator_mask": 3
+        },
+        {
+          "place": 31,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 79,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 1049,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 71889448247,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 40200713707633,
+          "point_generator_mask": 1
+        },
+        {
+          "place": 491007790268548705232623905732119,
+          "point_generator_mask": 0
+        },
+        {
+          "place": 39152515169537888943496957771480362731024381,
+          "point_generator_mask": 1
+        },
+        {
+          "place": "infinity",
+          "point_generator_mask": 0
+        }
+      ],
+      "affine_solution": {
+        "consistent": true,
+        "particular_anchor_mask": 659456
+      },
+      "all_constraint_rows": [
+        1298001,
+        571928,
+        1231039,
+        252600,
+        1231039,
+        1776479
+      ],
+      "eta_outside_inherited_space_witnesses": [
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 23,
+          "prime_ideal_index": 0
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 23,
+          "prime_ideal_index": 2
+        },
+        {
+          "all_anchor_valuations_even": true,
+          "eta_valuation": 1,
+          "prime": 39152515169537888943496957771480362731024381,
+          "prime_ideal_index": 1
+        }
+      ],
+      "extended_selmer_basis": [
+        6,
+        27,
+        160,
+        323,
+        586,
+        1027,
+        2059,
+        4169,
+        8299,
+        16419,
+        32840,
+        65569,
+        131168,
+        262144,
+        524328,
+        1048577
+      ],
+      "extended_selmer_dimension": 16,
+      "inherited_selmer_basis": [
+        6,
+        27,
+        160,
+        323,
+        586,
+        1027,
+        2059,
+        4169,
+        8299,
+        16419,
+        32840,
+        65569,
+        131168,
+        262144,
+        524328
+      ],
+      "inherited_selmer_dimension": 15,
+      "places": [
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 2
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 3
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 131072
+          },
+          "constraint_rows": [
+            1298001
+          ],
+          "global_row_indices": [
+            0
+          ],
+          "place": 5
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 7
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            571928
+          ],
+          "global_row_indices": [
+            1
+          ],
+          "place": 13
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 17
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 131072
+          },
+          "constraint_rows": [
+            1231039
+          ],
+          "global_row_indices": [
+            2
+          ],
+          "place": 23
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [
+            252600
+          ],
+          "global_row_indices": [
+            3
+          ],
+          "place": 31
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 79
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 1049
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 71889448247
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 40200713707633
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 0
+          },
+          "constraint_rows": [],
+          "global_row_indices": [],
+          "place": 491007790268548705232623905732119
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 131072
+          },
+          "constraint_rows": [
+            1231039
+          ],
+          "global_row_indices": [
+            4
+          ],
+          "place": 39152515169537888943496957771480362731024381
+        },
+        {
+          "affine_local_solution": {
+            "consistent": true,
+            "particular_anchor_mask": 524288
+          },
+          "constraint_rows": [
+            1776479
+          ],
+          "global_row_indices": [
+            5
+          ],
+          "place": "infinity"
+        }
+      ],
+      "u": 3
+    }
+  ],
+  "input_sha256": "ed594933d89a3de56617314b018fce130feca2ad8969e3c34ccc7b1c6cfeef44",
+  "schema": "rank-jump.affine-selmer.v1"
+}

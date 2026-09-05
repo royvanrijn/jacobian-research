@@ -1,0 +1,124 @@
+{
+  "bindings": {
+    "artifacts/generated-results/elliptic-curves/rank_jump_affine_ct_v1.json": "790f047641bf56fc705936db651e3d7c3d9cb75a789d9816c5313972c4b8db8f",
+    "artifacts/generated-results/elliptic-curves/rank_jump_affine_selmer_v1.json": "2d0295be42144e12a4acc6866faaee73536bc47fb4f11a80ab64b01726d5cff3",
+    "artifacts/generated-results/elliptic-curves/rank_jump_local_collision_inputs_v1.json": "440372c18d42243ce447cad470c7bfd6ba5d5c757740e3ce413af6b0d8194f71",
+    "elliptic-curves/rank-jump/affine_selmer_analysis.py": "8c41aa0d62ed31d4eed9f1098b79f7e427ca7a85cd71aaa4ea0078105c1cc9fd"
+  },
+  "cases": [
+    {
+      "affine_locally_admissible": false,
+      "affine_transport_excluded_for_all_inherited_representatives": true,
+      "contradiction_places": [
+        13,
+        6807347,
+        5070588247,
+        2517352081717261588189318068375793
+      ],
+      "inherited_CT_rank": 16,
+      "inherited_selmer_dimension": 17,
+      "maximum_independent_anchor_classes_transported": 0,
+      "u": -3
+    },
+    {
+      "affine_locally_admissible": false,
+      "affine_transport_excluded_for_all_inherited_representatives": true,
+      "contradiction_places": [
+        61,
+        463,
+        1033,
+        88377350996665273,
+        830763901348107124747241
+      ],
+      "inherited_CT_rank": 12,
+      "inherited_selmer_dimension": 13,
+      "maximum_independent_anchor_classes_transported": 0,
+      "u": -2
+    },
+    {
+      "affine_anchor_particular": 0,
+      "affine_coset_contains_restricted_CT_radical_class": true,
+      "affine_locally_admissible": true,
+      "enlarged_CT_rank": 16,
+      "enlarged_restricted_radical_dimension": 3,
+      "enlarged_selmer_dimension": 19,
+      "eta_Kummer_square_correction": [
+        "1",
+        "1",
+        "0"
+      ],
+      "eta_rational_class_independent_of_inherited_space": true,
+      "eta_rational_point": [
+        "-5750886029903523759416717668139306",
+        "-167347710468055050851050918101962677922339205090512"
+      ],
+      "inherited_CT_rank": 16,
+      "inherited_selmer_dimension": 18,
+      "maximum_independent_anchor_classes_transported": 2,
+      "new_class_pairings_with_old_radical": [
+        0,
+        0
+      ],
+      "old_radical_masks": [
+        450876,
+        596921
+      ],
+      "point_or_Sha_status": "eta is a certified rational class; other radical directions UNKNOWN",
+      "u": -1
+    },
+    {
+      "affine_locally_admissible": false,
+      "affine_transport_excluded_for_all_inherited_representatives": true,
+      "contradiction_places": [
+        23,
+        31,
+        103,
+        735074448304715650993556022553346486326391
+      ],
+      "inherited_CT_rank": 12,
+      "inherited_selmer_dimension": 13,
+      "maximum_independent_anchor_classes_transported": 0,
+      "u": 1
+    },
+    {
+      "affine_anchor_particular": 591872,
+      "affine_coset_contains_restricted_CT_radical_class": true,
+      "affine_locally_admissible": true,
+      "enlarged_CT_rank": 12,
+      "enlarged_restricted_radical_dimension": 2,
+      "enlarged_selmer_dimension": 14,
+      "inherited_CT_rank": 12,
+      "inherited_selmer_dimension": 13,
+      "maximum_independent_anchor_classes_transported": 2,
+      "new_class_pairings_with_old_radical": [
+        0
+      ],
+      "old_radical_masks": [
+        513585
+      ],
+      "point_or_Sha_status": "UNKNOWN",
+      "u": 2
+    },
+    {
+      "affine_anchor_particular": 659456,
+      "affine_coset_contains_restricted_CT_radical_class": true,
+      "affine_locally_admissible": true,
+      "enlarged_CT_rank": 14,
+      "enlarged_restricted_radical_dimension": 2,
+      "enlarged_selmer_dimension": 16,
+      "inherited_CT_rank": 14,
+      "inherited_selmer_dimension": 15,
+      "maximum_independent_anchor_classes_transported": 2,
+      "new_class_pairings_with_old_radical": [
+        0
+      ],
+      "old_radical_masks": [
+        602844
+      ],
+      "point_or_Sha_status": "UNKNOWN",
+      "u": 3
+    }
+  ],
+  "schema": "rank-jump.affine-selmer-analysis.v1",
+  "scope": "Ranks refer to the displayed Selmer subspaces and restricted CT forms. No full Selmer dimension or curve rank upper bound."
+}

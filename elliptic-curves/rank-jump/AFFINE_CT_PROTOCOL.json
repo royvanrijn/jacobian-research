@@ -1,0 +1,11 @@
+{
+  "schema": "rank-jump.affine-ct-protocol.v1",
+  "question": "Does the new affine Selmer coset pair nontrivially with the old CT radical, obstructing every class in that coset?",
+  "layer": "solubility obstruction",
+  "pairs": [[-1,450876],[-1,596921],[2,513585],[3,602844]],
+  "limits": {"seconds_per_pair": 60, "sequential_workers": 4, "quartics_per_pair": 3, "local_witness_node_cap": 4000, "pari_stack_bytes": 512000000, "point_searches": 0},
+  "selection": "Every basis vector of the old CT radical, at exactly the three nonempty affine intersections.",
+  "input": "rank_jump_affine_selmer_v1.json",
+  "checkpoint": "Isolated rank-jump fact store and one exact result per pair; timeout remains UNKNOWN and preserves completed facts.",
+  "failure_semantics": "A nonzero pairing excludes rational points in the entire affine coset. Zero on the old radical does not prove any point. A timeout or failed cover construction is UNKNOWN."
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "rank-jump.affine-selmer-protocol.v1",
+  "question": "Does eta_u*W meet Sel_2(E_u), where eta_u=D(u)*(1-u*theta), and does this add one class to the inherited Selmer space?",
+  "layer": "incidence",
+  "parameters": [-3,-2,-1,1,2,3],
+  "source": "artifacts/generated-results/elliptic-curves/fixed_cubic_field_local_kummer_u3_v1.json",
+  "limits": {"sequential_workers": 6, "seconds_per_worker": 30, "new_local_points_searched": 0, "new_parameters": 0, "class_groups": 0},
+  "checks": [
+    "Reuse only the retained complete local point-image witnesses and support.",
+    "Recompute local characters on the twenty anchor classes and eta, without a shared cache.",
+    "Verify the homogeneous inherited kernels against the pinned prior certificate.",
+    "Solve the affine local system; retain an exact inconsistency certificate or a particular solution and its full homogeneous kernel.",
+    "Certify eta is outside W by a new-prime valuation where all anchor classes are unramified.",
+    "Independently replay any admissible representative with local-power tests at every retained place."
+  ],
+  "checkpoint": "Separate immutable worker records, followed by portable compact inputs and a deterministic report.",
+  "oracle_boundary": "Retrospective inherited anchor data only; no prospective search selector.",
+  "failure_semantics": "An empty affine local intersection is an exact exclusion for this coset only. A nonempty intersection is Selmer incidence, not a rational point or a rank lower bound."
+}
