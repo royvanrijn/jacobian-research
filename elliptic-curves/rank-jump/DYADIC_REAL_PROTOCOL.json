@@ -1,0 +1,14 @@
+{
+  "schema": "rank-jump.dyadic-real-protocol.v1",
+  "scope": "Follow-up to the five-odd-prime null result, on exactly the same six paired fibres.",
+  "places": [2, "infinity"],
+  "combined_places": [2, 3, 5, 7, 11, 13, "infinity"],
+  "hypothesis": "The exceptional directions gain a new local image at 2 or the real place, or the generic subgroup fails to match their seven local images simultaneously.",
+  "endpoints": ["Separate generic and witness image dimensions at 2 and infinity", "Joint generic and witness image dimensions with the five pinned odd primes", "Explicit generic corrections when they exist"],
+  "dyadic_method": "Use an order maximal at 2 only. At each prime ideal record valuation parity and even cyclic factors of units modulo P^(2e+1); the remaining principal units are squares.",
+  "real_method": "Exact rational component criterion on y^2=x^3+A*x+B. For positive cubic discriminant the bounded component is x<0 or 3*x^2<-A; otherwise the real quotient is trivial. Verify with exact algebraic real roots.",
+  "bounds": "Six sequential workers with 30-second timeouts and separate checkpoints. No BNF, global discriminant factorization, parameter sweep, or point search.",
+  "failure_semantics": "Missing images, timeouts and verification failures remain UNKNOWN. No assertion about primes outside this declared set.",
+  "oracle_policy": "Exceptional points appear only in retrospective diagnostics. Generic-image computations require no exceptional points.",
+  "non_interference": "Import the existing LocalSquareclasses implementation without a cache adapter; do not modify the shared arithmetic store or active search files."
+}

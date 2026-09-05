@@ -2,7 +2,8 @@
 
 Retrospective analyses with pinned inputs, independent of the active curve search.
 
-- [Latest: small bad-prime quotient supports and the global kernel](BAD_PRIME_QUOTIENT_SUPPORT.md)
+- [Latest: two-adic and real completion of the local-support test](DYADIC_REAL_QUOTIENT_SUPPORT.md)
+- [Small bad-prime quotient supports and the global kernel](BAD_PRIME_QUOTIENT_SUPPORT.md)
 - [Independent halving fields and arithmetic blocks](HALVING_FIELDS_AND_BLOCKS.md)
 - [Cubic-field bridge and the norm-solubility gap](CUBIC_BRIDGE_AND_NORM_GAP.md)
 - [Simultaneous CT blocks and normalization-invariant interpretation](CT_VARIATION_AND_BLOCKS.md)
@@ -27,6 +28,7 @@ python3 elliptic-curves/rank-jump/ct_variation.py check
 python3 elliptic-curves/rank-jump/cubic_bridge.py check
 python3 elliptic-curves/rank-jump/halving_fields.py check
 python3 elliptic-curves/rank-jump/bad_prime_support.py check
+python3 elliptic-curves/rank-jump/dyadic_real_support.py check
 ```
 
 Optional independent Hilbert-symbol check: `sage -python -m unittest discover -s elliptic-curves/rank-jump -p test_local_collision.py`.
