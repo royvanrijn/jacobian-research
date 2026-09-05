@@ -42,8 +42,31 @@ declared limits, checkpoints, and a reproducible certificate plan.
    experiment on one representative and do not put its known target or any
    other record in the experiment loop;
 4. use the exact native alternate-Q80 calibration fibres from the complete ICARM sweep — especially rank-at-least-29 curve 12 on `11952` — while keeping the published-R17 rank-25--28 transfer misses as negative controls;
-5. minimize every specialization and re-prove point independence;
+5. normalize models only when the intended arithmetic needs it; raw pointed
+   search requires no global minimal model or factorization. Retain exact
+   transports and recheck points/independence after every model change;
 6. pin all external CAS inputs, outputs, software versions, limits, and failure semantics.
+
+## Rank-jump research preflight
+
+Read [the structural reassessment](notes/RANK_JUMP_REASSESSMENT_2026-09-05.md)
+before another parameter, class-group, or chart-budget campaign.
+
+- Separate candidate incidence, conditional point visibility, and global cover
+  solubility. Record which endpoint the experiment can actually identify.
+- Compute or bound the generic geometry of a proposed deformation first.
+  A fixed cubic algebra is not a preserved Mordell--Weil group. The current
+  theta+u*theta^2 pencil has arithmetic generic rank zero for its nonsquare B.
+- State the subgroup and base change in every jump count. Promoting k anchor
+  directions to generic ones consumes k from that anchor's remaining quotient;
+  it does not increase the rank of the same fibre.
+- Use exact retrospective visibility audits or separately masked generic-point
+  controls to diagnose a null detector. Never feed their oracle points into
+  prospective centre selection. A masked recovery is not a new rank result.
+- Keep shallow nearest-first enumeration distinct from deep-hole selection,
+  and initial-only exposure distinct from an adaptive recovery protocol.
+- A one-dimensional radical in an odd-dimensional alternating space is forced
+  by parity. Neither that radical nor a large Selmer subspace proves a point.
 
 ## Evidence discipline
 
