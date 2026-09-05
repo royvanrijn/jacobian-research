@@ -1,0 +1,1176 @@
+{
+  "bundle_sha256": "619bf7ff9ef4084516d138c0aaa6f389086ee48b8dbf4eae32b675293fec9c74",
+  "campaigns": [
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/frozen-initial.json",
+      "chart_count": 42,
+      "mode": "initial",
+      "positive_candidate_count": 5,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 5,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 5,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 5,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 5,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 11,
+          "no_two_torsion_prime": 19,
+          "parent_id": "curve401-p57487",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 11,
+              "height": 100000,
+              "no_two_torsion_prime": 19,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 10,
+          "no_two_torsion_prime": 13,
+          "parent_id": "curve542-p30486",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 13,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 8,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p31627",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        }
+      ],
+      "total_quotient_rank": 39
+    },
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/generic-metrics.json",
+      "chart_count": 252,
+      "mode": "initial",
+      "positive_candidate_count": 5,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 6,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 5,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 5,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 5,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 6,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 1,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 4,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 1,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 4,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 1,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 5,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 11,
+          "no_two_torsion_prime": 19,
+          "parent_id": "curve401-p57487",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 7,
+              "height": 10000,
+              "no_two_torsion_prime": 19,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 9,
+              "height": 100000,
+              "no_two_torsion_prime": 19,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 5,
+              "height": 10000,
+              "no_two_torsion_prime": 19,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 19,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 7,
+              "height": 10000,
+              "no_two_torsion_prime": 19,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 11,
+              "height": 100000,
+              "no_two_torsion_prime": 19,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 10,
+          "no_two_torsion_prime": 13,
+          "parent_id": "curve542-p30486",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 10000,
+              "no_two_torsion_prime": 13,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 13,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 10000,
+              "no_two_torsion_prime": 13,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 13,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 10000,
+              "no_two_torsion_prime": 13,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 13,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 8,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p31627",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 10000,
+              "no_two_torsion_prime": 31,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 10000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 10000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        }
+      ],
+      "total_quotient_rank": 41
+    },
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/rational-initial.json",
+      "chart_count": 126,
+      "mode": "initial",
+      "positive_candidate_count": 5,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 5,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 4,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "red:1,2,0"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 4,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "red:2,1,0"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 2,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "red:2,2,1"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 4,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 3,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "red:1,2,0"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 4,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "red:2,1,0"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 3,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "red:2,2,1"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 10,
+          "no_two_torsion_prime": 19,
+          "parent_id": "curve401-p57487",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 19,
+              "specification": "red:1,2,0"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 19,
+              "specification": "red:2,1,0"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 19,
+              "specification": "red:2,2,1"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 10,
+          "no_two_torsion_prime": 13,
+          "parent_id": "curve542-p30486",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 13,
+              "specification": "red:1,2,0"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 13,
+              "specification": "red:2,1,0"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 13,
+              "specification": "red:2,2,1"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 8,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p31627",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "red:1,2,0"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "red:2,1,0"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "red:2,2,1"
+            }
+          ]
+        }
+      ],
+      "total_quotient_rank": 37
+    },
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/red-centres-h200000.json",
+      "chart_count": 84,
+      "mode": "initial",
+      "positive_candidate_count": 5,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 12,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 5,
+              "height": 200000,
+              "no_two_torsion_prime": 23,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 9,
+              "height": 200000,
+              "no_two_torsion_prime": 23,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 7,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 4,
+              "height": 200000,
+              "no_two_torsion_prime": 59,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 6,
+              "height": 200000,
+              "no_two_torsion_prime": 59,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 11,
+          "no_two_torsion_prime": 19,
+          "parent_id": "curve401-p57487",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 10,
+              "height": 200000,
+              "no_two_torsion_prime": 19,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 11,
+              "height": 200000,
+              "no_two_torsion_prime": 19,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 10,
+          "no_two_torsion_prime": 13,
+          "parent_id": "curve542-p30486",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 200000,
+              "no_two_torsion_prime": 13,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 200000,
+              "no_two_torsion_prime": 13,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 8,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p31627",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 200000,
+              "no_two_torsion_prime": 31,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 200000,
+              "no_two_torsion_prime": 31,
+              "specification": "red"
+            }
+          ]
+        }
+      ],
+      "total_quotient_rank": 48
+    },
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/red-generic-h100000.json",
+      "chart_count": 42,
+      "mode": "initial",
+      "positive_candidate_count": 5,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 5,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 5,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 4,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 4,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 9,
+          "no_two_torsion_prime": 19,
+          "parent_id": "curve401-p57487",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 9,
+              "height": 100000,
+              "no_two_torsion_prime": 19,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 10,
+          "no_two_torsion_prime": 13,
+          "parent_id": "curve542-p30486",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 13,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 8,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p31627",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "red"
+            }
+          ]
+        }
+      ],
+      "total_quotient_rank": 36
+    },
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/red-initial.json",
+      "chart_count": 84,
+      "mode": "initial",
+      "positive_candidate_count": 5,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 4,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 1,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "red"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 4,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 3,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "red"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 3,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 10,
+          "no_two_torsion_prime": 19,
+          "parent_id": "curve401-p57487",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 3,
+              "height": 10000,
+              "no_two_torsion_prime": 19,
+              "specification": "red"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 19,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 10,
+          "no_two_torsion_prime": 13,
+          "parent_id": "curve542-p30486",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 10000,
+              "no_two_torsion_prime": 13,
+              "specification": "red"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 13,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 8,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p31627",
+          "settings": [
+            {
+              "centre": "specialized",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 10000,
+              "no_two_torsion_prime": 31,
+              "specification": "red"
+            },
+            {
+              "centre": "specialized",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "red"
+            }
+          ]
+        }
+      ],
+      "total_quotient_rank": 35
+    },
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/adaptive-metric16-active.json",
+      "chart_count": 992,
+      "mode": "adaptive",
+      "positive_candidate_count": 2,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 14,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "cvp",
+              "chart_count": 372,
+              "exact_quotient_rank_recovered": 14,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "residue",
+              "chart_count": 372,
+              "exact_quotient_rank_recovered": 14,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 12,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "cvp",
+              "chart_count": 124,
+              "exact_quotient_rank_recovered": 12,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "residue",
+              "chart_count": 124,
+              "exact_quotient_rank_recovered": 12,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            }
+          ]
+        }
+      ],
+      "total_quotient_rank": 26
+    },
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/adaptive-red-active.json",
+      "chart_count": 864,
+      "mode": "adaptive",
+      "positive_candidate_count": 2,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 14,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "cvp",
+              "chart_count": 372,
+              "exact_quotient_rank_recovered": 14,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "red"
+            },
+            {
+              "centre": "residue",
+              "chart_count": 372,
+              "exact_quotient_rank_recovered": 14,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 12,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "cvp",
+              "chart_count": 60,
+              "exact_quotient_rank_recovered": 12,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "red"
+            },
+            {
+              "centre": "residue",
+              "chart_count": 60,
+              "exact_quotient_rank_recovered": 12,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "red"
+            }
+          ]
+        }
+      ],
+      "total_quotient_rank": 26
+    },
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/frozen-adaptive-red.json",
+      "chart_count": 864,
+      "mode": "adaptive",
+      "positive_candidate_count": 5,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 14,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "cvp",
+              "chart_count": 372,
+              "exact_quotient_rank_recovered": 14,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "red"
+            },
+            {
+              "centre": "residue",
+              "chart_count": 372,
+              "exact_quotient_rank_recovered": 14,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 12,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "cvp",
+              "chart_count": 60,
+              "exact_quotient_rank_recovered": 12,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "red"
+            },
+            {
+              "centre": "residue",
+              "chart_count": 60,
+              "exact_quotient_rank_recovered": 12,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "red"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 9,
+          "no_two_torsion_prime": 19,
+          "parent_id": "curve401-p57487",
+          "settings": []
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 10,
+          "no_two_torsion_prime": 13,
+          "parent_id": "curve542-p30486",
+          "settings": []
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 8,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p31627",
+          "settings": []
+        }
+      ],
+      "total_quotient_rank": 53
+    },
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/frozen-adaptive.json",
+      "chart_count": 992,
+      "mode": "adaptive",
+      "positive_candidate_count": 5,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 14,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "cvp",
+              "chart_count": 372,
+              "exact_quotient_rank_recovered": 14,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "residue",
+              "chart_count": 372,
+              "exact_quotient_rank_recovered": 14,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 12,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "cvp",
+              "chart_count": 124,
+              "exact_quotient_rank_recovered": 12,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "residue",
+              "chart_count": 124,
+              "exact_quotient_rank_recovered": 12,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 11,
+          "no_two_torsion_prime": 19,
+          "parent_id": "curve401-p57487",
+          "settings": []
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 10,
+          "no_two_torsion_prime": 13,
+          "parent_id": "curve542-p30486",
+          "settings": []
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 8,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p31627",
+          "settings": []
+        }
+      ],
+      "total_quotient_rank": 55
+    }
+  ],
+  "claim_boundary": "Finite-coordinate searches certify recovered subgroups only; no bounded miss gives a rank upper bound.",
+  "schema": "elliptic-curves.mw16-sensitivity-summary.v1",
+  "software_at_verification": {
+    "pari": "GP/PARI CALCULATOR Version 2.15.4 (released)\n          amd64 running linux (x86-64/GMP-6.3.0 kernel) 64-bit version\n      compiled: Apr  1 2024, gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu3)\n                           threading engine: pthread\n                (readline v8.2 disabled, extended help enabled)",
+    "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]"
+  },
+  "status": "PASS_EXACT_REPLAY"
+}

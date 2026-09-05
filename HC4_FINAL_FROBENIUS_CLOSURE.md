@@ -74,7 +74,7 @@ At a generic point choose an `S`-adapted Jordan chain with
 \[
 Ne_1=0,\quad Ne_2=e_1,\quad Ne_3=e_2,\quad Ne_4=e_3,
 \]
-scale `e1=n`, and normalize
+take `e1` proportional to `n`, and normalize
 \[
 S=
 \begin{pmatrix}
@@ -85,6 +85,12 @@ S=
 \end{pmatrix}.
 \tag{2.1}
 \]
+The cofactor scale is fixed up to sign; it cannot in general also be chosen
+to make `e1=n` literally. The
+[Piola normalization argument](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md)
+shows that the normalized `e1` retains the affine quasi-translation property.
+The radical, trace, and Frobenius vanishing statements below depend on
+the line, so this rescaling does not change them.
 Then
 \[
 T=SN=

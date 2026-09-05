@@ -122,9 +122,9 @@ differential operator $\Lambda$ on $k[x,y]$ satisfies
 
 In fact, the binary premise is equivalent to strict support separation
 after a linear change over the original field.  Section 6.1 extracts this
-certificate and the uniform cutoff
-$m>(\deg P+\deg\lambda)\deg Q$, together with a finite decision procedure
-for rational inputs.
+certificate and the optimal operator-independent cutoff
+$m>(1+\lfloor(\deg P+1)^2/4\rfloor)\deg Q$, together with a finite
+decision procedure for rational inputs and an additional operator-degree bound.
 
 The global proof is organized as follows.  Give both
 the operator variables and the polynomial variables weight $(s,1)$.  Let
@@ -725,7 +725,7 @@ Proposition~\ref{prop:threshold} proves eventual mixed vanishing.  Together
 with Proposition~\ref{prop:cutoff} and the trivial constant-term cases,
 this completes the proof of Theorem~\ref{thm:main}.  \qed
 
-\subsection{Finite support certificates and a degree-only cutoff}
+\subsection{Finite support certificates and optimal uniform cutoffs}
 
 The same argument characterizes the pure-vanishing premise and makes the
 mixed cutoff effective.  In the following statement the coordinate change
@@ -821,19 +821,72 @@ would have two distinct conjugates and is ruled out by uniqueness.
 An empty feasible interval means the pure premise fails.  The procedure
 uses no finite prefix of moments to infer all-power vanishing.
 
-The sharper certificate cutoff can be attained.  For $d,q\geq1$, take
+\begin{theorem}[Optimal operator-independent cutoff]\label{thm:optimal-cutoff}
+Let $0\ne P$, $d=\deg P$, and $C_d=1+\lfloor(d+1)^2/4\rfloor$.
+Under the binary pure-vanishing premise, every nonzero $Q$ satisfies
 \[
- \Lambda=\partial_x+\partial_y^{d+1},\qquad P=y^d,\qquad Q=x^q.
+ \Lambda^m(QP^m)=0\qquad(m>C_d\deg Q).
 \]
-All pure contractions vanish.  In a mixed contraction, a term with $j$
-copies of $\partial_x$ requires $j\leq q$ and $m\leq(d+1)j$.
-Thus the last nonzero mixed power is $m_0=(d+1)q$, with
+For every $d\ge0$, no smaller coefficient works uniformly over all
+operators and degree-$d$ polynomials.
+\end{theorem}
+
+\begin{proof}
+We first improve the normalized margin of a strict support separator.
+Swap axes if necessary and write its weight as $(1,z)$, $0<z\le1$.
+The concave piecewise-linear function
 \[
- \Lambda^{m_0}(QP^{m_0})=\binom{m_0}{q}\,q!\,(dm_0)!.
+ h(z)=\min_{(a,b)\in\Supp\lambda}(a+bz)
+       -\max_{(i,j)\in\Supp P}(i+jz)
 \]
-The separator $(d+1,1)$ has gap one and gives precisely the cutoff $m_0+1$.
-This excludes a degree-independent constant multiplying $\deg Q$; it
-does not assert optimality of the general coefficient $d+R$.
+is positive somewhere. We claim that some rational $z\in(0,1]$ gives
+$h(z)\ge1/C_d$. If $d=0$, use $z=1$. For $d\ge1$, the endpoint values
+are integers. A positive $h(1)$ suffices; if $h(0)>0$, then
+$h(1/(d+1))\ge1-d/(d+1)\ge1/C_d$, since operator slopes are nonnegative
+and polynomial slopes are at most $d$.
+
+Otherwise a positive maximum occurs at an interior breakpoint. At a
+polynomial-envelope breakpoint the reduced denominator is at most $d$,
+so the positive gap is at least $1/d$. This covers simultaneous
+breakpoints as well. At any remaining maximum one polynomial monomial
+$(i,j)$ is active. Write $(c,e)$ and $(a,b)$ for the operator monomials
+active on the left and right. Then $a>c$, $e>b$, and
+\[
+ z_0=\frac{a-c}{e-b},\qquad e\ge j\ge b.
+\]
+If $c>i$, the gap is at least one. Otherwise set
+$A=a-i>0$, $B=j-b\ge0$, $C=i-c\ge0$, and $E=e-j\ge0$.
+The integer $N=AE-BC$ is positive and $B+C\le d$, whence
+\[
+ \frac1{h(z_0)}=\frac{B+E}{N}
+ =\frac1A+\frac B N+\frac{BC}{AN}
+ \le1+B(C+1)\le1+\left\lfloor\frac{(d+1)^2}{4}\right\rfloor.
+\]
+This proves the claimed margin. Every multiplier of degree $q$ has weight
+at most $q$, so $m>C_dq$ kills every mixed monomial selection.
+
+For sharpness choose $e=\lceil(d+1)/2\rceil$, $j=\lfloor(d+1)/2\rfloor$,
+and $R=ej+1=C_d$. Put
+\[
+ \Lambda=\partial_x^e+\partial_y^R,\qquad P=x^{e-1}y^j,
+ \qquad Q=x^q\quad(q\ge1).
+\]
+The weight $(R,e)$ has gap one, so all pure contractions vanish.
+A mixed term with $k$ copies of $\partial_x^e$ requires
+$ek\le(e-1)m+q$ and $R(m-k)\le jm$. Together these give $m\le Rq$.
+At $m_0=Rq$ exactly $k=(R-j)q$ survives, with nonzero value
+\[
+ \Lambda^{m_0}(QP^{m_0})
+ =\binom{m_0}{jq}\bigl((e-1)m_0+q\bigr)!\,(jm_0)!.
+\]
+Thus $C_d$ is optimal, including $d=0$.
+\end{proof}
+
+Both degree bounds remain available: one may use
+$m>\min(d+R,C_d)\deg Q$, or the particular support-certificate cutoff.
+For $d=3$, the pair $\Lambda=\partial_x^2+\partial_y^5$, $P=xy^2$
+with $Q=x$ has last nonzero mixed power five; a proposed general
+coefficient $d+1$ would already fail here.
 
 \section{From Long's Gaussian example to GVC}
 

@@ -13,9 +13,11 @@ identifiers for the final packet.
 [motion-frame audit](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) shows that frozen
 normalization controls `pq/a^2`, not `pq`. The extra equation `d(pq)=0`
 used below is not established by the geometric hypotheses. `HC4RSD79`
-therefore remains conditional, and the full `HC4MR1` reduction is partial.
+therefore remains conditional as a local augmented-system statement.
 The positive maximal-motion sign is now excluded by differentiated branch
-identities; the negative sign remains open.
+identities; the negative sign is now excluded globally by
+[HC4MRA2](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md). These two replacement
+arguments restore the full `HC4MR1` reduction.
 
 The middle Jordan distribution is an affine-plane foliation.  Its first-order
 Grassmann motion is not automatically Schubert: one extra scalar survives.
@@ -68,9 +70,10 @@ degree-one incidence argument for affine-hyperplane foliations.
 > invariant or forces the middle plane to be constant.  Both alternatives
 > return to the already closed linearly-dependent packet.
 
-`HC4RSD80` addresses the lower-motion alternatives. It does not close
-the remaining negative maximal-motion sign. The complete `HC4-MR`
-reduction to `HC2/JC2` is not established.
+`HC4RSD80` addresses the lower-motion alternatives. The corrected
+maximal-motion closure uses HC4MRA1 and HC4MRA2; the latter requires global
+polynomiality on an affine leaf. The complete `HC4-MR` reduction follows
+from these replacement arguments and the earlier proof map.
 
 ## 1. Why `E_2` is affine
 
@@ -262,8 +265,8 @@ The previously proposed Schubert split is not the correct route:
 2. flatness plus maximal motion forces `q=+/-a`, so `q=0` is impossible;
 3. independently established constancy of `pq` would eliminate both signs.
 
-The negative maximal-motion sign is still open after the transport
-correction. The already closed fixed and linearly-dependent packets retain
+The negative sign survives the local transport audit but is excluded by the
+global polynomial-leaf proof in HC4MRA2. The fixed and linearly-dependent packets retain
 their reductions to `HC2` or the exact `JC2` cotangent packet.
 
 It remains to close projective source-kernel motion of rank at most one.  The
@@ -437,5 +440,7 @@ and certifies the
 complete local flag tensors and the split `pr=0` used in `HC4RSD80`.  The
 degree-one incidence argument in Section 5.2 is the global proof step and is
 not replaced by a bounded computation. The corrected transport, valid
-positive-sign closure, and surviving negative-sign jet are replayed by
-`scripts/verify_hc4_motion_frame_transport.py`.
+positive-sign closure, and compatible negative-sign jet are replayed by
+`scripts/verify_hc4_motion_frame_transport.py`. The final global obstruction
+has its own written proof and
+`scripts/verify_hc4_negative_motion_polynomial_obstruction.py`.

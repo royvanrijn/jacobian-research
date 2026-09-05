@@ -110,8 +110,9 @@ def local_invariant_kummer_separation(direct, pair):
             "full_two_selmer_computation": False}
 
 
-def reduction_record(prime, model, pair, frobenius):
-    if frobenius["pair_key"] != KEY or frobenius["prime"] != prime:
+def reduction_record(prime, model, pair, frobenius, pair_key=KEY):
+    """Shared rank-one local/BSD calculation; the default preserves this replay."""
+    if pair["pair_key"] != pair_key or frobenius["pair_key"] != pair_key or frobenius["prime"] != prime:
         raise ArithmeticError("wrong target or prime")
     if frobenius["status"] != "PASS_COMPLETE_FROBENIUS_PICARD_BOUND":
         raise ArithmeticError("uncertified Frobenius input")
@@ -189,7 +190,7 @@ def reduction_record(prime, model, pair, frobenius):
         ],
     }
     magma = f'''SetSeed(190830); SetColumns(0);
-print "TARGET|19bad:083ad|p={prime}";
+print "TARGET|{pair_key.replace('alternate-orbit-', '')}|p={prime}";
 F := GF({prime}); K<u> := FunctionField(F);
 A := {A}; B := {B}; d := {d};
 E := EllipticCurve([K|0,0,0,d^2*A,d^3*B]);

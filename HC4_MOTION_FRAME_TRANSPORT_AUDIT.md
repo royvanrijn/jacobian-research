@@ -14,12 +14,15 @@ follow from the cited frozen-coordinate calculation.
 There is a partial repair. Differentiating the actual sign-branch identities
 excludes $p=q=a\ne0$ without any constant-motion determinant assumption.
 The other sign $p=q=-a\ne0$ survives the next finite prolongation and has an
-explicit compatible rational connection jet with $d(pq)\ne0$.
+explicit compatible rational connection jet with $d(pq)\ne0$. The subsequent
+[global polynomial-leaf proof](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md)
+excludes its realization by the required polynomial endomorphism.
 
 The exact correction and positive-sign closure are registered as **HC4MRA1**.
-The full master reduction **HC4MR1** and the claimed equivalence
-$\mathrm{PHC4}\Longleftrightarrow\mathrm{JC2}$ in **HC4MR2** are therefore
-**partial**. This audit does not disprove either proposed theorem, construct
+The audit temporarily made the full master reduction **HC4MR1** and the
+equivalence **HC4MR2** partial. **HC4MRA2** now restores them using the
+replacement global polynomial argument. The original constant-motion
+inference remains withdrawn. This audit does not disprove either proposed theorem, construct
 an HC4 counterexample, or prove that the surviving finite jet integrates.
 The lower-rank results and the implication
 $\mathrm{PHC4}\Rightarrow\mathrm{JC2}$ are not affected by this gap.
@@ -156,7 +159,7 @@ The complete coefficient vector is preserved in the replay artifact.
 This proof uses the differentiated branch identities and does not use
 $d(pq)=0$.
 
-## 4. The negative sign remains a real open branch
+## 4. The negative sign survives this finite prolongation
 
 The same operation for $p=q=-a$ gives the necessary relation
 
@@ -199,11 +202,11 @@ it adds $d(pq)=0$. A finite jet does not establish all-order integrability,
 an algebraic realization, polynomial Hessians, or a collision. Those
 remain separate requirements.
 
-The next mathematically justified target is the negative sign with its
+At this audit stage the next target was the negative sign with its
 actual differential compatibility equations. A proof that its invariant
 scale $a$ is constant would recover the old contradiction, but requires
-a new argument. Global polynomiality might instead rule out the branch
-without a local contradiction.
+a new argument. The subsequent HC4MRA2 proof does rule out the branch by global
+polynomiality, without asserting a local finite-jet contradiction.
 
 ## 5. Replay and evidence boundaries
 
@@ -228,3 +231,7 @@ The original
 is preserved. Its saturated unit ideal remains correct for the
 **augmented system that assumes $d(pq)=0$**. It no longer certifies closure
 of every geometric input in the final HC4 branch.
+
+The v1 audit artifact retains its historical `status_effect` field from the
+intermediate partial stage. Current theorem status is in MATH_STATUS.json
+and the HC4MRA2 proof; that field is not a current status authority.

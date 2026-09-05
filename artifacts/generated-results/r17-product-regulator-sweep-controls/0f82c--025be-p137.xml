@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<calculator><headers><max_time>60</max_time><max_input>50000</max_input><seed>234629956</seed><version>2.29-9</version><time>0.090</time><memory>32.09MB</memory></headers><results><line>TARGET|0f82c:025be|p=137</line><line>KODAIRA [ &lt;I0*, 1&gt;, &lt;I1, 3&gt;, &lt;I0*, 1&gt;, &lt;I1, 4&gt;, &lt;I1, 6&gt;, &lt;I1, 11&gt;, &lt;I0*, 2&gt; ]</line><line>ANALYTIC_INFORMATION &lt;1, 2, 294912&gt;</line><line>COMPLETE</line><line></line></results></calculator>

@@ -1,0 +1,66 @@
+{
+  "format": "hc4-negative-motion-polynomial-obstruction-v1",
+  "theorem": "HC4MRA2",
+  "source_sha256": {
+    "scripts/verify_hc4_negative_motion_polynomial_obstruction.py": "09c33309d33d1fef10bfd44e37d41071ec66584fed6e9b16f82a855f07b15c24",
+    "scripts/verify_hc4_motion_frame_transport.py": "657ee6264e909433bc0d37fb72306deffed95106f7dc449cc283278590580f6c",
+    "scripts/verify_hc4_affine_plane_prolongation.py": "bc36c86c08ea8cec6d43fe3deb6013ff86e0a3be01049fbd63a2963f4f706f73"
+  },
+  "branch": "p=q=-a, a!=0, p12+p3+p7=0",
+  "curvature_certificates": {
+    "e1_a": {
+      "target": "dp1_4",
+      "equation_coefficients": {
+        "0": "1/2",
+        "5": "-1",
+        "10": "-1/2"
+      }
+    },
+    "e2_a": {
+      "target": "dp2_4 - 3*p4**2/2",
+      "equation_coefficients": {
+        "9": "-1",
+        "14": "-1",
+        "16": "-1",
+        "26": "-1"
+      }
+    }
+  },
+  "affine_leaf_connection": {
+    "nabla_e1_e1": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "nabla_e1_e2": [
+      "-p4",
+      "0",
+      "0",
+      "0"
+    ],
+    "nabla_e2_e1": [
+      "5*p4/2",
+      "0",
+      "0",
+      "0"
+    ],
+    "nabla_e2_e2": [
+      "-p12 + 3*p7/2",
+      "p4/2",
+      "0",
+      "0"
+    ]
+  },
+  "affine_coordinate_derivatives": {
+    "f": "5*alpha*f/(2*v)",
+    "v": "alpha/2",
+    "alpha": "3*alpha**2/(2*v)"
+  },
+  "polynomial_matrix_coefficient": "f/v",
+  "coefficient_derivative": "2*alpha*f/v**2",
+  "ode_residual": "0",
+  "positive_degree_leading_factor": "-d*(d + 2)",
+  "boundary": "Written global proof: N is polynomial, so its coefficient n on an affine leaf is polynomial. The ODE forces n constant in characteristic zero, contradicting a!=0. No finite-jet inconsistency or HC4 counterexample is claimed.",
+  "normalization_boundary": "The written Piola/quasi-translation argument makes the cofactor-normalized e1 affinely parallel along itself; the matrix identities check its algebraic scale."
+}

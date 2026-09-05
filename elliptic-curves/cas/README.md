@@ -8,6 +8,11 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
 
 ## Start here
 
+- `compare_exceptional_soluble_vs_sha.sage`: replay the five large-jump
+  soluble subspaces, 63 marked quartic transports, and the rank-16 Sha
+  control; `--check` includes exact CT arithmetic and probe-log hashes.
+  `run_exceptional_selmer_feasibility.py` is the separate three-curve,
+  45-second-per-curve equation-only probe, with no point search.
 - `certify_exceptional_soluble_selmer_panel.sage`: exact known soluble
   residual subspaces and 110 witnessed 2-covers on eleven exceptional
   fibres, without a point search or full descent. Use `--check` to replay.
@@ -53,6 +58,11 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
   generic quartic minimization or reduction. See the
   [algorithm and replay](../notes/POINTED_QUARTIC_SIEVE.md), including the
   separate initial controls and retained full-box certificate.
+- `replay_mw16_sensitivity.sh` runs the bounded coordinate/centre calibration,
+  freezes settings by certified quotient rank, and enforces the exact control
+  gate before the 104-fibre replay. `verify_mw16_sensitivity.py` checks the
+  self-contained bundles. The selected policy recovers 55/55 directions;
+  see [sensitivity recovery](../notes/MW16_SENSITIVITY_RECOVERY_2026-09-05.md).
 - `extract_a1_mw16_family_template.py`,
   `build_a1_mw16_target_free_parameter_candidates.sage`,
   `run_a1_mw16_target_free_parameter_search.sage`, and
@@ -444,3 +454,18 @@ evidence label and a canonical note.
   maps, cubic identities, local Hilbert symbols and support: pairing rank
   16, radical dimension 2, with point realization still unknown there.
 <!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE df45391a84f0e3c9 -->
+
+- `run_fixed_field_radical_covers.py` replays six globally minimal
+  quadric-intersection models for the three radical masks and their
+  Q-translations. `--prepare` writes standalone lattice-search and
+  four-descent jobs. Exact maps are certified; no class is decided.
+<!-- status-consumer: EC-FIXED-CUBIC-RADICAL-MINIMAL-MODELS 90216b8c456edd20 -->
+
+- `audit_fixed_field_radical_search_geometry.py` certifies that all six
+  nominal height boxes were empty before square testing, using rational
+  Sturm sequences and integer denominator bounds. No global class is decided.
+<!-- status-consumer: EC-FIXED-CUBIC-RADICAL-SEARCH-GEOMETRY 678f7beb805a4530 -->
+
+<!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON f37417a9fda3ee3f -->
+
+<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY 1abe84480122e9b4 -->

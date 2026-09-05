@@ -82,8 +82,15 @@ elkies-k3/results/**/*.sqlite
 /artifacts/generated-results
 !/artifacts/generated-results/
 /artifacts/generated-results/*
+!/artifacts/generated-results/binary-gvc-finite-certificate-v1.json
+!/artifacts/generated-results/binary-gvc-optimal-cutoff-v1.json
+!/artifacts/generated-results/hc4-motion-frame-transport-v1.json
+!/artifacts/generated-results/hc4-negative-motion-polynomial-obstruction-v1.json
+!/artifacts/generated-results/f2-degree-6-10-gap-v1.json
 !/artifacts/generated-results/elkies-k3-r17-product-19bad-083ad-rank-zero-v1.json
 !/artifacts/generated-results/r17-product-19bad-083ad-controls/
+!/artifacts/generated-results/elkies-k3-r17-product-regulator-sweep-v1.json
+!/artifacts/generated-results/r17-product-regulator-sweep-controls/
 !/artifacts/generated-results/elkies-k3-r17-small-field-class-quotient-cohort-v1.json
 !/artifacts/generated-results/elkies-k3-rational-surface-quadratic-rank-search-v1.json
 !/artifacts/generated-results/elkies-k3-e6a1-rho19-k3-dissection-v1.json

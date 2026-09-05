@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import csv
+import base64
 import gzip
 import hashlib
 import json
@@ -148,6 +149,23 @@ def audit_manifest(path: Path, *, archived_paths: bool) -> int:
 
 
 def audit_references(loaded: dict[str, Any]) -> int:
+    # Self-contained sensitivity bundles retain ignored replay inputs by
+    # content. Those references remain valid after a clean checkout removes
+    # the original local checkpoints; verify the embedded bytes first.
+    embedded: set[str] = set()
+    for data in loaded.values():
+        if not isinstance(data, dict) or data.get("schema") != "elliptic-curves.mw16-sensitivity-evidence.v1":
+            continue
+        for name, entry in data["files"].items():
+            if isinstance(entry.get("text"), str):
+                content = entry["text"].encode()
+            elif isinstance(entry.get("base64"), str):
+                content = base64.b64decode(entry["base64"], validate=True)
+            else:
+                fail(f"missing embedded content: {name}")
+            if hashlib.sha256(content).hexdigest() != entry["sha256"]:
+                fail(f"embedded content checksum mismatch: {name}")
+            embedded.add(name)
     checked: set[str] = set()
     for artifact_name, data in loaded.items():
         for value in strings(data):
@@ -157,7 +175,7 @@ def audit_references(loaded: dict[str, Any]) -> int:
                 continue
             candidate = Path(value)
             target = candidate if candidate.is_absolute() else ROOT / candidate
-            if not target.exists():
+            if not target.exists() and str(target.relative_to(ROOT)) not in embedded:
                 fail(f"dangling repository reference in {artifact_name}: {value}")
             checked.add(value)
     return len(checked)

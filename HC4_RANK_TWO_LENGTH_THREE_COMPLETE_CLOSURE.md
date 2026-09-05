@@ -5,8 +5,8 @@
 **Current status.**  `HC4RSD63` completes the all-degree rank-two `[3,1]`
 closure.  Together with `HC4RSD60` it removes both generic rank-two Jordan
 types from the live relative-nilpotent frontier. The remaining rank-three
-`[4]` branch in `HC4MR1` is partial after
-[HC4MRA1](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md).  None of these statements proves
+`[4]` branch in `HC4MR1` is closed by the corrected HC4MRA1 argument and
+[HC4MRA2](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md).  None of these statements proves
 unrestricted `HC4` or `JC2`.
 
 This note completes the branch reduced in `HC4RSD61--62`.

@@ -2,6 +2,11 @@
 
 Date: 2026-09-04; arithmetic-model audit updated 2026-09-05.
 
+The later [sensitivity calibration](MW16_SENSITIVITY_RECOVERY_2026-09-05.md)
+recovers 55/55 control directions with the new backend. The 54/55 historical
+ladder and the original twenty-direction pointed-sieve calibration below
+remain retained baselines.
+
 Status: exact five-curve calibration complete; first prospective attempt
 wholly timeout-censored; subsequent direct target-free search complete.
 The exact model/section-size audit below separates coefficient reduction from
@@ -228,8 +233,9 @@ height 10,000 and proves gains **0, 0, 2, 10, 8** on curves
 398, 400, 401, 542, 548 respectively. Independent group-law and finite-reduction
 replay verifies these twenty directions. This does **not** reproduce the
 historical 54/55 adaptive recovery: both the height bound and horizontal
-coordinates differ from that calibration. Improving that recovery remains a
-separate calibration task; speed alone does not establish equal sensitivity.
+coordinates differ from that calibration. The subsequent
+[sensitivity calibration](MW16_SENSITIVITY_RECOVERY_2026-09-05.md) recovers
+55/55 directions; speed alone did not establish that recovery.
 
 The [compact summary](../../artifacts/generated-results/elliptic-curves/icarm_mw16_pointed_sieve_h10000_summary_v1.json)
 pins the full deterministic gzip certificate, source hashes, software,
@@ -317,3 +323,5 @@ subsequent direct run is a completed bounded null result. Model shortening
 and benchmark timings imply no new independent direction. No candidate has
 passed the residual-Selmer gate, no expensive continuation is authorized,
 and rank 32 remains open.
+
+<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY 1abe84480122e9b4 -->

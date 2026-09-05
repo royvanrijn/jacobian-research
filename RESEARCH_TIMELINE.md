@@ -692,7 +692,7 @@ directions.  Smooth and singular-genus-one character collisions are closed on
 the two direct norm-twelve charts; genus two remains open beyond the recorded
 bounded screen.
 
-## 2026-09-05: GVC finite certificates and the HC4 transport correction
+## 2026-09-05: GVC finite certificates, HC4 repair, and a JC2 polynomial gap
 
 - [GVC2SC](extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md) extracts a
   unique Hall direction over the original field, a finite rational-input
@@ -700,8 +700,16 @@ bounded screen.
   The active GVC manuscript includes the written theorem and exact replay.
 - [HC4MRA1](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) corrects the earlier claim
   that the adapted motion determinant is constant: the frozen normalization
-  controls `pq/a^2`. The full HC4MR1 reduction and HC4MR2 equivalence are
-  partial. A new prolongation excludes the positive sign, while a compatible
-  negative-sign finite jet keeps the remaining branch open. The earlier
-  closure descriptions in this chronology are superseded by this audit;
-  the original proof notes and conditional certificate are preserved.
+  controls `pq/a^2`. A new prolongation excludes the positive sign, while
+  the negative sign retains a compatible finite jet. The subsequent
+  [HC4MRA2 proof](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md) excludes its
+  polynomial realization by restricting N to an affine leaf and comparing
+  degrees in `2nn''-3(n')^2=0`. This restores HC4MR1/2 through a global
+  polynomial argument. Earlier closure descriptions are superseded by the
+  corrected proof; the original notes and conditional certificate survive.
+- [PF2D6O1](plane-jc/F2_DEGREE_6_10_POLYNOMIAL_GAP.md) distinguishes a
+  numerical infinity semigroup from a polynomial parametrization in the
+  prescribed degrees. A literal `b^12` identity proves the sharp odd gap
+  bound 21 for degree-`(6,10)` normalization pairs and excludes the F2
+  normal terminal row `r=9`. A birational polynomial target attains
+  `r=7`; normal rows `5,7` and nonnormal conductor slices remain open.

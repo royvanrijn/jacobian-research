@@ -5,6 +5,11 @@ and [`pointed_quartic_sieve.cpp`](../cas/pointed_quartic_sieve.cpp).
 The current experiment and rank boundaries remain in the
 [canonical MW16 ladder note](ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md).
 
+This page preserves the original weight-one backend. The subsequent
+[sensitivity calibration](MW16_SENSITIVITY_RECOVERY_2026-09-05.md) extends it
+with exact horizontal variants and recovers 55/55 control directions using
+weight 16 and a frozen adaptive trigger.
+
 ## Denominator transform
 
 Start with an integral short curve `E: y²=x³+A*x+B` and
@@ -129,3 +134,5 @@ No new parameter sweep, adaptive lift, unrestricted search, or Selmer
 calculation is part of this replay.
 
 <!-- status-consumer: EC-K3-ICARM-MW16-POINTED-SIEVE cb83c1afae1d0141 -->
+
+<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY 1abe84480122e9b4 -->

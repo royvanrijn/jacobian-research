@@ -1,10 +1,10 @@
 # Complete two-prime cohomological triage of the seventeen product twists
 
-**Arithmetic update (2026-09-05):**
-[`19bad:083ad` has rank zero over `QQ(u)`](R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md),
-proved from incompatible regulator squareclasses in its existing two
-reductions. Four of the five Frobenius survivors remain arithmetic
-candidates. The geometric classification table below is unchanged.
+**Arithmetic update (2026-09-05):** all seventeen products have rank zero
+over `QQ(u)`. The [original `19bad:083ad` proof](R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md)
+and the [remaining-four regulator sweep](R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md)
+close all five Frobenius survivors arithmetically. The geometric
+classification table below remains valid; no section-solving target survives.
 
 ## Result
 
@@ -20,7 +20,7 @@ those five the unconditional conclusion is only
 
 They were the five cases from this cohomological gate justified for full
 descent or class-sliced section construction; the arithmetic update above
-removes `19bad:083ad`. A Tate factor at two primes does not prove
+removes all five. A Tate factor at two primes does not prove
 a characteristic-zero section.
 
 The aggregate certificate is
@@ -98,11 +98,11 @@ torsion-free `48I1` quadratic base change this also gives
 A-=0,       Gamma_d=0,       Hhat^(-1)(<sigma>,A)=0.          (3)
 ```
 
-Thus the earlier nonzero Tate-class loophole is gone for twelve targets, not
-only for shortlist rank 55.  It remains genuinely open for the five
-persistent survivors.
+Thus this cohomological proof removes the nonzero Tate-class loophole for
+twelve targets. The subsequent regulator proofs linked above remove it
+arithmetically for the five persistent survivors as well.
 
-## Replay and next gate
+## Replay
 
 ```bash
 JOBS=3 elkies-k3/scripts/run_r17_all17_product_toric_frobenius_campaign.sh
@@ -115,9 +115,10 @@ The first command computes `p=131` for all targets, sends only cyclotomic
 survivors to `p=137`, and then builds the aggregate.  The second is the cheap
 fail-closed replay over the stored individual certificates.
 
-The next expensive arithmetic work should be restricted to the five listed
-survivors.  Shortlist rank is not a useful product-rank predictor: the
-rank-55 target is zero, while survivors and zero targets are interleaved
-throughout the stored order.
+The historical arithmetic handoff to the five listed survivors is closed
+by the linked regulator proofs. No target from this seventeen-product
+worklist proceeds to section solving.
 
 <!-- status-consumer: EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO fe572bd5979b5d2c -->
+
+<!-- status-consumer: EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP f86dead53d55babe -->

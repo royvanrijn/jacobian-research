@@ -2,8 +2,9 @@
 
 This is a dated assessment and preservation plan, not a second mathematical
 status ledger. `MATH_STATUS.json` and its canonical sources remain authoritative.
-The 5 September follow-up extracted a GVC corollary and corrected the HC4
-master status; both changes are recorded in that registry. The [maintenance retrospective](DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md)
+The 5 September follow-up extracted a GVC corollary, repaired the HC4
+master proof, and excluded one remaining JC2 degree-six row; all three
+changes are recorded in that registry. The [maintenance retrospective](DISCOVERY_RETROSPECTIVE_AUDIT_2026-09-04.md)
 has a separate purpose: repository integrity and computational failure modes.
 
 ## Judgment
@@ -14,10 +15,18 @@ counterexample. Both have mathematical value independent of whether HC4 or
 JC2 is ever settled. The fixed-map Hasse sequel is also a coherent result,
 with a separate analytic review requirement.
 
-The follow-up audit found a concrete normalization gap in the claimed HC4
-master reduction. Its full equivalence with JC2 is now partial. A new exact
-prolongation closes one motion sign, while the other remains open; see the
-[correction and surviving branch](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md).
+The follow-up found and repaired a concrete normalization gap in the HC4
+master reduction. Differentiated identities close one motion sign, and a
+[new global polynomial-leaf proof](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md)
+closes the other. This rescues the restricted equivalence with JC2 without
+retaining the invalid extra equation. The long proof tree still needs
+independent review.
+
+The JC2 follow-up also found a missed polynomiality condition. A
+[sharp degree-(6,10) parametrization theorem](plane-jc/F2_DEGREE_6_10_POLYNOMIAL_GAP.md)
+now excludes the normal degree-six terminal row `r=9`. Its exact certificate
+forces a forbidden quadratic composition; a separate explicit curve attains
+the surviving `r=7` bound. This reduces that normal odd frontier to two rows.
 The remaining full HC4 and JC2 problems are not close merely because many
 special cases have been eliminated. Their surviving global compatibility
 questions are substantive.
@@ -43,7 +52,7 @@ Snapshot identifiers:
   `f4bfb93cd063a6c29acb92801ca043f2b9688f72e62fe2b6afd1307d932b9d62`.
 - The worktree already contained substantial unrelated changes. No research
   certificate, status row, or active proof was rewritten in the initial
-  review phase. The dated follow-up below makes the stated GVC and HC4 changes.
+  review phase. The dated follow-up below makes the stated GVC, HC4, and JC2 changes.
 
 The original determinant and collision were replayed independently. The
 [AFP entry](https://isa-afp.org/entries/Jacobian_Counterexample.html) also
@@ -59,7 +68,7 @@ subsequent mathematics.
 | 2 | Every characteristic-zero finite étale algebra of rank at least three is a full Keller fiber in dimension three | A universal construction, not another isolated collision; actual algebra and geometric degree are controlled | External mathematical review; preserve the small paper-facing Lean certificate |
 | 3 | SIC fails in exactly the pair dimensions at least two | A finished dimensional result with a short all-order coefficient identity | A focused two-pair manuscript or deliberately versioned sequel to the frozen three-pair paper |
 | 4 | Quantitative Hasse failures for one fixed degree-five Keller map | Changes the quantifier from a map for each algebra to many failures on one map, with optimal geometric degree | Independent review of the Euler product, asymptotic constant, and minimality inputs |
-| 5 | HC4 reductions and the reopened negative motion sign | The audit corrects an unsupported closure and supplies a valid positive-sign obstruction | Close the remaining negative sign; the full pencil equivalence is partial |
+| 5 | Repaired pencil-admissible HC4/JC2 equivalence | A genuine gap was replaced by a global polynomial obstruction on affine leaves | Independent review of the replacement proof and the earlier geometric reductions |
 
 The priority order concerns preservation and review effort, not a prediction
 of journal acceptance or a claim that a literature search proves novelty.
@@ -171,18 +180,26 @@ are superseded by the canonical note.
 ## HC4: preserve the reduction, attack the correct boundary
 
 The [relative-nilpotent master reduction](HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md)
-is now partial. The [5 September audit](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md)
-computes the frozen-to-adapted transition explicitly: its normalized motion
-determinant is `pq/a^2`, so `d(pq)=0` does not follow. The old unit ideal
-remains correct for the augmented system assuming that extra equation.
+has a repaired final proof. The [transport audit](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md)
+shows that the normalized motion determinant is `pq/a^2`, so the old
+inference `d(pq)=0` was unjustified. Its augmented-system unit ideal is
+preserved as a conditional certificate.
 
-Differentiating the actual branch relations closes `p=q=a` independently.
-The sign `p=q=-a` has a compatible exact finite jet with nonzero `d(pq)`;
-its all-order integrability and polynomial realization remain unknown.
-This is a concrete reopened opportunity, not a counterexample. The
-nonzero-Hessian-direction hypothesis has also been added explicitly to
-the master statement. The lower-rank reductions and `PHC4 => JC2` survive;
-`JC2 => PHC4` is not currently proved by this route.
+Differentiating the actual branch relations closes `p=q=a`. The sign
+`p=q=-a` admits a compatible finite jet, but the
+[replacement global proof](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md)
+shows that a coefficient of the polynomial matrix `N`, restricted to an
+affine middle-plane leaf, must satisfy `2nn'' - 3(n')^2 = 0`. Comparing
+leading coefficients forces this polynomial to be constant, contradicting
+the remaining motion. A Piola argument also justifies the normalized kernel
+frame used in the calculation.
+
+This is a substantive rescue of a proof, not an HC4 counterexample. The
+nonzero-direction hypothesis is now explicit, both maximal-motion signs
+have valid replacement obstructions, and `PHC4 <=> JC2` again follows from
+the master proof map. No independent end-to-end or external review of that
+long map is claimed. For unrestricted HC4, pencil recognition remains a
+separate missing hypothesis.
 
 For full HC4 the two useful continuations remain distinct:
 
@@ -205,7 +222,7 @@ overlapping `HC4CQ1`. The oldest local commit touching that proof note is
 `6de7fd1`, dated 28 July; a local commit date alone does not establish public
 priority. The checked HC4 notes do not cite Ni. Compare the proofs and
 document their relationship before presenting the quartic theorem as a new
-standalone contribution. The partial pencil reduction and direct quintic
+standalone contribution. The repaired pencil reduction and direct quintic
 work have different scopes.
 
 ## JC2: two degree notions and a real global obstruction
@@ -233,7 +250,8 @@ For the `(75,125)` F2 branch, the
 [degree-six Stein reduction](plane-jc/F2_GEOMETRIC_DEGREE_SIX_STEIN_REDUCTION.md)
 is a more focused continuation than indiscriminate Laurent expansion.
 It localizes all affine branching to one terminal cubic packet and closes
-the normal even rows `6,8,10`. It leaves normal odd rows and nonnormal
+the normal even rows `6,8,10`. The new polynomial gap theorem also closes
+normal `r=9`, leaving normal odd rows `5,7` and nonnormal
 terminal slices; smoothness of the ambient Stein surface does not make
 that slice normal. A conductor/attachment theorem that controls these
 remaining slices would be a meaningful advance. Degree six itself would
@@ -286,11 +304,72 @@ base change is already a countertest to that inference.
   comparison with current external constructions. Neither bounded graph
   failures nor a template minimum prove a global minimum.
 
+## Low-hanging-fruit follow-up — 5 September
+
+The most reliable opportunities are sharp consequences of existing proofs.
+This follow-up produced one: the
+[optimal binary GVC cutoff](extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md#7-the-optimal-coefficient-depending-only-on-deg-p),
+registered as `GVC2OC` and included in Section 6.1 of the manuscript.
+For `d=deg P`, the coefficient
+\[
+ C_d=1+\left\lfloor\frac{(d+1)^2}{4}\right\rfloor
+\]
+guarantees mixed vanishing for `m>C_d deg Q`, with no operator-degree
+dependence. Two-term operators attain equality in every degree. The proof
+is a short integer-support envelope argument, followed by the existing
+support-certificate theorem. In degree three,
+`Lambda=dx^2+dy^5, P=x*y^2, Q=x` has last nonzero mixed power five,
+so the tempting coefficient `d+1` already fails. The earlier
+`d+deg Lambda` bound can still be better for a particular operator.
+This is a written theorem with exact regressions, not an external novelty
+or full formal-verification claim.
+
+The next candidates, ranked by how concrete the remaining task is:
+
+1. **Finite Strong Factorial questions.** The repository's
+   [exact homogeneous binary result](extended-geometry/SPARSE_FACTORIAL_MOMENT_FRONTIER.md)
+   proves that the first `d+1` factorial moments force zero for
+   `d=1,2,3,4`, with sharpness. Degree five asks whether six moments
+   suffice; a degree-uniform argument would be more valuable than another
+   large exponent census. Equivalently, study the first six integrals
+   `integral_0^1 p(t)^m dt` for complex polynomials of degree at most
+   five. This is a well-defined next problem, not an established cheap
+   computation. The ordinary all-moments homogeneous binary case is
+   [already proved by Liu--Sun](https://doi.org/10.1017/S0004972719000546).
+   Also distinguish an initial-moment cutoff from the
+   [Strong Factorial Conjecture's arbitrary consecutive blocks](https://arxiv.org/abs/1304.3956).
+2. **One new nonprincipal ideal class for LNED.** For
+   `D=u partial_x+v partial_y`, the
+   [principal-ideal theorem and plinth-power saturation](extended-geometry/LND_MATHIEU_SLICE_CONDUCTOR_FRONTIER.md)
+   already cover substantial classes. A useful next theorem would treat
+   nonprincipal ideals outside those classes, starting with an explicit
+   positive-dimensional conductor quotient. This is a closer research
+   target than full JC2, but it requires a new descent argument. General
+   image results and primary-ideal transfer must first be removed from the
+   novelty target; see [Gupta's 2025 paper](https://doi.org/10.1016/j.jpaa.2025.108041).
+3. **Formalize the new support lemma.** Its finite integer geometry is
+   a small, precise verification target. This would strengthen the new
+   cutoff independently of the much larger remaining number-field and
+   envelope bridges in the full binary formalization. It would not by
+   itself formally certify the binary theorem.
+4. **Exploit the JC2 degree-six reduction locally.** The
+   [degree-(6,10) gap theorem](plane-jc/F2_DEGREE_6_10_POLYNOMIAL_GAP.md)
+   leaves exact coefficient equations for normal odd rows `r=5,7`.
+   Comparing their affine critical points and cusp incidence with the
+   covering requirements is a concrete next step. The explicit `r=7`
+   curve prevents us from treating local feasibility alone as a
+   contradiction; global covering and affine-plane realization remain.
+
+The cutoff replay passed all 2475 support pairs in both orientations,
+18 exact boundary contractions, and high-order controls, with byte-identical
+artifact reproduction. The revised 18-page manuscript also passed its
+LaTeX-log and paper-import checks. No new large search was run.
+
 ## Practical preservation order
 
 1. Give the current GVC paper an immutable, synchronized source/PDF/formal
-   snapshot and a precise independent-review brief. Consider the finite
-   support criterion and explicit cutoff above as a corollary to review.
+   snapshot and a precise independent-review brief. Include the finite
+   support criterion and explicit cutoff now added to the manuscript.
 2. Finalize the finite étale paper around its existing paper certificate.
 3. Give the two-pair SIC theorem a short current manuscript, preserving the
    frozen three-pair deposit as history. Do not wait for bidegree `(3,3)`.
@@ -298,9 +377,10 @@ base change is already a countertest to that inference.
 5. Extract the HC4 restricted-equivalence proof only after auditing its
    global bridges; retain direct quintic and polynomial-termination work
    as clearly scoped continuations.
-6. Preserve one concise JC2 theorem package and one explicit global restart
-   gate. Avoid making its useful local/module results depend editorially
-   on solving the conjecture.
+6. Preserve the sharp polynomial gap theorem with its exact certificate,
+   and one explicit JC2 global restart gate: normal odd rows `5,7` and
+   nonnormal terminal conductor/attachment. Avoid making its useful
+   local/module results depend editorially on solving the conjecture.
 
 These are recommendations. No external message, submission, or publication
 was made during this review.
@@ -325,12 +405,24 @@ was made during this review.
   certificate import boundaries.
 - The weighted GVC example above passed an independent exact SymPy spot
   check. No new large search or full Lean rebuild was run.
-- All 26 local links in this review resolve, and the edited navigation passes
-  whitespace checks. The whole-repository Markdown check found one unrelated
+- In the initial review, all 26 local links resolved and the edited navigation
+  passed whitespace checks. The whole-repository Markdown check then found one unrelated
   unresolved link: `archive/elliptic-curves/external-audit-2026-09-04/README.md`
   points to the absent `elliptic-curves/notes/EXTERNAL_AUDIT_2026-09-04.md`.
-  That separate archive was not modified.
+  That separate archive was not modified by this review; the later global
+  link replay passes after its repair elsewhere.
 
-The review's main output is a separation of finished contributions,
-unverified proof interfaces, and actual open gates. It offers no new HC4,
-JC2, ordinary-Laplacian, or global-minimality claim.
+The 5 September follow-up also passed the exact binary finite-certificate
+replay, both HC4 transport/negative-motion replays, and the new degree-`(6,10)`
+gap replay. The latter includes a literal ideal-membership identity, covers
+the missing `b=0` branch, and verifies the sharp surviving target curve;
+its Singular reconstruction produces the same retained certificate.
+The revised GVC manuscript compiles to 18 pages and passes its LaTeX-log
+and paper-import checks. The authoritative status renderer and its consistency
+check also pass after the unrelated K3 source hash was synchronized.
+
+The review now includes three concrete mathematical gains: a GVC corollary,
+a repaired restricted HC4 proof, and a new JC2 row exclusion. Full HC4,
+JC2, the ordinary-Laplacian frontier, and global degree minimality remain
+unsettled. These exact local replays do not replace independent review of
+the written universal arguments.

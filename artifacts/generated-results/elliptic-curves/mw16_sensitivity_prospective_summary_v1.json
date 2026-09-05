@@ -1,0 +1,2198 @@
+{
+  "bundle_sha256": "245ea394ba7b28f9e138fc27a6e8f85c96615908c57c739cd8b6d90d8bda6627",
+  "campaigns": [
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/frozen-initial.json",
+      "chart_count": 42,
+      "mode": "initial",
+      "positive_candidate_count": 5,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 5,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 5,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 5,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 5,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 11,
+          "no_two_torsion_prime": 19,
+          "parent_id": "curve401-p57487",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 11,
+              "height": 100000,
+              "no_two_torsion_prime": 19,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 10,
+          "no_two_torsion_prime": 13,
+          "parent_id": "curve542-p30486",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 13,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 8,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p31627",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        }
+      ],
+      "total_quotient_rank": 39
+    },
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/generic-metrics.json",
+      "chart_count": 252,
+      "mode": "initial",
+      "positive_candidate_count": 5,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 6,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 5,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 5,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 5,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 6,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 1,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 4,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 1,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 4,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 1,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 5,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 11,
+          "no_two_torsion_prime": 19,
+          "parent_id": "curve401-p57487",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 7,
+              "height": 10000,
+              "no_two_torsion_prime": 19,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 9,
+              "height": 100000,
+              "no_two_torsion_prime": 19,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 5,
+              "height": 10000,
+              "no_two_torsion_prime": 19,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 19,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 7,
+              "height": 10000,
+              "no_two_torsion_prime": 19,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 11,
+              "height": 100000,
+              "no_two_torsion_prime": 19,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 10,
+          "no_two_torsion_prime": 13,
+          "parent_id": "curve542-p30486",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 10000,
+              "no_two_torsion_prime": 13,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 13,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 10000,
+              "no_two_torsion_prime": 13,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 13,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 10000,
+              "no_two_torsion_prime": 13,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 10,
+              "height": 100000,
+              "no_two_torsion_prime": 13,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 8,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p31627",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 10000,
+              "no_two_torsion_prime": 31,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "red"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 10000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:1/16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 10000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 8,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        }
+      ],
+      "total_quotient_rank": 41
+    },
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/adaptive-metric16-active.json",
+      "chart_count": 992,
+      "mode": "adaptive",
+      "positive_candidate_count": 2,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 14,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "cvp",
+              "chart_count": 372,
+              "exact_quotient_rank_recovered": 14,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "residue",
+              "chart_count": 372,
+              "exact_quotient_rank_recovered": 14,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 12,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "cvp",
+              "chart_count": 124,
+              "exact_quotient_rank_recovered": 12,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "residue",
+              "chart_count": 124,
+              "exact_quotient_rank_recovered": 12,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            }
+          ]
+        }
+      ],
+      "total_quotient_rank": 26
+    },
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/frozen-adaptive.json",
+      "chart_count": 992,
+      "mode": "adaptive",
+      "positive_candidate_count": 5,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 14,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875",
+          "settings": [
+            {
+              "centre": "cvp",
+              "chart_count": 372,
+              "exact_quotient_rank_recovered": 14,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "residue",
+              "chart_count": 372,
+              "exact_quotient_rank_recovered": 14,
+              "height": 10000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 12,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve400-p53042",
+          "settings": [
+            {
+              "centre": "cvp",
+              "chart_count": 124,
+              "exact_quotient_rank_recovered": 12,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            },
+            {
+              "centre": "residue",
+              "chart_count": 124,
+              "exact_quotient_rank_recovered": 12,
+              "height": 10000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 11,
+          "no_two_torsion_prime": 19,
+          "parent_id": "curve401-p57487",
+          "settings": []
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 10,
+          "no_two_torsion_prime": 13,
+          "parent_id": "curve542-p30486",
+          "settings": []
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 8,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p31627",
+          "settings": []
+        }
+      ],
+      "total_quotient_rank": 55
+    },
+    {
+      "campaign": "artifacts/local/elliptic-curves/mw16-sensitivity/prospective.json",
+      "chart_count": 856,
+      "mode": "prospective",
+      "positive_candidate_count": 0,
+      "results": [
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875-p61d153",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 73,
+          "parent_id": "curve398-p16875-m205d63",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 73,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 41,
+          "parent_id": "curve398-p16875-m4d3",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 41,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875-p59d4",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 37,
+          "parent_id": "curve398-p16875-p4d201",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 37,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875-m101d81",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve398-p16875-m3d2",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve398-p16875-p45d53",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve398-p16875-p28d151",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 43,
+          "parent_id": "curve398-p16875-p0d1",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 43,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 43,
+          "parent_id": "curve398-p16875-m74d251",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 43,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p16875-m7d51",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve398-p63669-m22d39",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p63669-p13d202",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p63669-p110d67",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p63669-m19d54",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve398-p63669-p8d1",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 37,
+          "parent_id": "curve398-p63669-p227d257",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 37,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p63669-m16d51",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve398-p63669-m161d24",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 73,
+          "parent_id": "curve398-p63669-m232d251",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 73,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p63669-p201d16",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve398-p63669-m151d63",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 398,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 17,
+          "parent_id": "curve398-p63669-m101d89",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 12,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 17,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve400-p53042-p89d241",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 73,
+          "parent_id": "curve400-p53042-m44d39",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 73,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 17,
+          "parent_id": "curve400-p53042-p7d3",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 17,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 17,
+          "parent_id": "curve400-p53042-m47d124",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 17,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 17,
+          "parent_id": "curve400-p53042-m1d2",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 17,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve400-p53042-p115d203",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve400-p53042-m242d251",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve400-p53042-p51d1",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 61,
+          "parent_id": "curve400-p53042-p39d101",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 61,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve400-p53042-p41d153",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve400-p53042-p92d151",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve400-p53042-p0d1",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 37,
+          "parent_id": "curve400-p62992-p223d252",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 37,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve400-p62992-p251d102",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 17,
+          "parent_id": "curve400-p62992-m158d97",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 17,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve400-p62992-p11d51",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve400-p62992-m151d11",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 61,
+          "parent_id": "curve400-p62992-m1d13",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 61,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve400-p62992-m105d101",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve400-p62992-p0d1",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 41,
+          "parent_id": "curve400-p62992-p202d135",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 41,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 17,
+          "parent_id": "curve400-p62992-m101d47",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 17,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 400,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve400-p62992-p201d32",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 4,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve401-p57487-m101d254",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve401-p57487-p54d47",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 67,
+          "parent_id": "curve401-p57487-p83d153",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 67,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve401-p57487-m105d52",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve401-p57487-p11d2",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve401-p57487-m51d7",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve401-p57487-m249d256",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve401-p57487-m111d202",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve401-p57487-p57d151",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve401-p57487-m3d5",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 17,
+          "parent_id": "curve401-p57487-m77d101",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 17,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 401,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve401-p57487-m1d1",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 37,
+          "parent_id": "curve542-p30486-m269d187",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 37,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve542-p30486-m7d8",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve542-p30486-m10d251",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve542-p30486-m1d1",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve542-p30486-p97d202",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 41,
+          "parent_id": "curve542-p30486-m44d63",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 41,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve542-p30486-p64d151",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 71,
+          "parent_id": "curve542-p30486-p51d20",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 71,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve542-p30486-m68d101",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 542,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve542-p30486-p201d127",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 10,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 17,
+          "parent_id": "curve548-p31627-m57d145",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 17,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 61,
+          "parent_id": "curve548-p31627-p11d10",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 61,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 59,
+          "parent_id": "curve548-p31627-p201d109",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 59,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 17,
+          "parent_id": "curve548-p31627-p8d5",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 17,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve548-p31627-m46d53",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 37,
+          "parent_id": "curve548-p31627-p125d121",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 37,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 53,
+          "parent_id": "curve548-p31627-m1d1",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 53,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve548-p31627-p129d176",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 61,
+          "parent_id": "curve548-p31627-p106d77",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 61,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p31627-p51d5",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p31627-m29d151",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 41,
+          "parent_id": "curve548-p31627-m10d251",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 41,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 53,
+          "parent_id": "curve548-p54835-m251d152",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 53,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve548-p54835-p53d19",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 89,
+          "parent_id": "curve548-p54835-p152d5",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 89,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 71,
+          "parent_id": "curve548-p54835-p43d109",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 71,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve548-p54835-m201d143",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve548-p54835-m1d5",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve548-p54835-p1d1",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 17,
+          "parent_id": "curve548-p54835-p101d25",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 17,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 43,
+          "parent_id": "curve548-p54835-m2d51",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 43,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 61,
+          "parent_id": "curve548-p54835-m19d153",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 61,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p54835-m111d151",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 17,
+          "parent_id": "curve548-p63647-m202d275",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 17,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 31,
+          "parent_id": "curve548-p63647-m229d228",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 31,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve548-p63647-m151d59",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 37,
+          "parent_id": "curve548-p63647-p59d47",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 37,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 17,
+          "parent_id": "curve548-p63647-m208d135",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 17,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 53,
+          "parent_id": "curve548-p63647-m125d52",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 53,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 43,
+          "parent_id": "curve548-p63647-m19d15",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 43,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve548-p63647-p252d103",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 41,
+          "parent_id": "curve548-p63647-p41d102",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 41,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 17,
+          "parent_id": "curve548-p63647-m1d4",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 17,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 29,
+          "parent_id": "curve548-p63647-p202d107",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 29,
+              "specification": "metric:16"
+            }
+          ]
+        },
+        {
+          "curve_id": 548,
+          "exact_quotient_rank_recovered": 0,
+          "no_two_torsion_prime": 23,
+          "parent_id": "curve548-p63647-m49d53",
+          "settings": [
+            {
+              "centre": "generic",
+              "chart_count": 8,
+              "exact_quotient_rank_recovered": 0,
+              "height": 100000,
+              "no_two_torsion_prime": 23,
+              "specification": "metric:16"
+            }
+          ]
+        }
+      ],
+      "total_quotient_rank": 0
+    }
+  ],
+  "claim_boundary": "Finite-coordinate searches certify recovered subgroups only; no bounded miss gives a rank upper bound.",
+  "schema": "elliptic-curves.mw16-sensitivity-summary.v1",
+  "software_at_verification": {
+    "pari": "GP/PARI CALCULATOR Version 2.15.4 (released)\n          amd64 running linux (x86-64/GMP-6.3.0 kernel) 64-bit version\n      compiled: Apr  1 2024, gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu3)\n                           threading engine: pthread\n                (readline v8.2 disabled, extended help enabled)",
+    "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]"
+  },
+  "status": "PASS_EXACT_REPLAY"
+}

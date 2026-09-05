@@ -1,0 +1,1368 @@
+{
+  "explicit_section_solving_queue": [],
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-all17-product-toric-frobenius-campaign-v1.json": "9b9467f6c1a754f41f9feeed6be0ae8c13d275e4203f9cd358df08705ef7318c",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-cheapest-1024-v1.json": "6d58c129e0309c63e0b8421837192f2b0e18f6ac331b5608d74c1288566be7fa",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-product-twist-finite-field-bound-audit-v1.json": "6ea5ad82a06b3fa4361afe6b7db479534b1a06342e7de53db9d1cb9221fa1eba",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json": "4739e0b24b00e276269b228d7c85a01743caa1dcbc62ef58ea59ca3152d116a0",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0c10b--alternate-orbit-17a1a-p131-toric-frobenius-v1.json": "eb95a449c26407796aaa2e5f47ae19beec7f273eda88e67bd523f33da521f365",
+    "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0c10b--alternate-orbit-17a1a-p137-toric-frobenius-v1.json": "a89cf1ff28d9a1244cf83fc491ad9f4d0a5290f8465e9fe1311eec9a519f99e8",
+    "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0f82c--alternate-orbit-025be-p131-toric-frobenius-v1.json": "642a1cde557c1549aee79921f07a72f395abaced01dd90189299193f3e56d025",
+    "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0f82c--alternate-orbit-025be-p137-toric-frobenius-v1.json": "94ea6ce544a7abf853b00c68ea7bb870214c43403951705936d2c01c0184eb97",
+    "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0f82c--alternate-orbit-025be-p151-toric-frobenius-v1.json": "f748bff3688321b4ffffc66ada89ce5e2dbc6b716b34a453b784e6e8d908b9da",
+    "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ae6--alternate-orbit-0f82c-p131-toric-frobenius-v1.json": "ba450035b7f0f686667396f54396c11818b35ba348ef7b4ee4c3e86ff3ba5cee",
+    "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ae6--alternate-orbit-0f82c-p137-toric-frobenius-v1.json": "b625741a1fcbcd116c956abcd517811c467ea6b732f52cf929bc7d35fda89bbe",
+    "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ee2--alternate-orbit-0c36e-p131-toric-frobenius-v1.json": "116359e23e26266999505e65d53f3fa7ab71453b24795d327f04a400cc409ffa",
+    "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ee2--alternate-orbit-0c36e-p137-toric-frobenius-v1.json": "55244e2a9e12a7c5246143695041346f51c81f822906c694a73acd804c927493",
+    "artifacts/generated-results/elkies-k3-r17-product-extra-prime-audits/alternate-orbit-0f82c--alternate-orbit-025be-p151-v1.json": "9470b41be21fd97e388fd0b9fd633400b3ee3cbbf25eab84b158ffdd2f7123b3",
+    "artifacts/generated-results/elkies-k3-r17-product-survivor-galois-height-gate-v1.json": "d6f5c2bb74531506b2eecdcec6462c44ec79addc5c2fa8e9c12bb7a3cad7fe85",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/0c10b--17a1a-p131.m": "b8a1b3c90bc0baf2277210d98d0a071944da1ed0f754b82cc91890b4294c72fd",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/0c10b--17a1a-p131.xml": "bd83484083d7af1c3044cba2cf4dca63cf2140cbdeb6d229f3e590986c779d83",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/0c10b--17a1a-p137.m": "7f61e4002e6523102795ea3e993b30865b9328b9ee03983d6b6e9bb3c93437ab",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/0c10b--17a1a-p137.xml": "a28e574658aafe61dbc9f443830620778d8e68ad0ecfa22b9c25c55dac18a8ad",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/0f82c--025be-p137.m": "44a7f438fd5f9734f2e9a6a15467dec22bebc9dab52bdcafcbb68474136decf9",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/0f82c--025be-p137.xml": "af75719e835d5997ce1725a93933f1f3bd46b18a224a77063d6b01ec95065bce",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/0f82c--025be-p151.m": "7316307cc380ce800ee57e472107526ada8680cfaf2ca72db7b38c1c2f83b8e3",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/0f82c--025be-p151.xml": "6263ba7786d6644409f0cf828d5eee0f7bd3d9f3be730b3f4ad29608ebcc637b",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/11ae6--0f82c-p131.m": "2cc1032d43da1bff84f3307523b6ac59659cb598e0f935c574962ac6c25f97ad",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/11ae6--0f82c-p131.xml": "50278ae2ba8dbf92b5725be6f5cacee606730d09a7ce82f3b15a4b1964ea40ce",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/11ae6--0f82c-p137.m": "e975d95fa75e0034315628b1e7bf1ebe7deb853ddc15bef23fe4e8be882eefa0",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/11ae6--0f82c-p137.xml": "7dd5b5ac51f4014c8b9cb30176fece022c242330d8cadd5f2b6c4bd0cc1e728e",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/11ee2--0c36e-p131.m": "23f82f49208644295e022713d376c4760ded48f141503807f6ca6bebf0a9c2a5",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/11ee2--0c36e-p131.xml": "eea571e1fc2305ea9a3bd085a45a0b930f2961b147493594fb8a7ed7693e7995",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/11ee2--0c36e-p137.m": "4b4e06b235922f614bc64c3c703e725fdc5d5850676899c0a1f4a3d175fa6339",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/11ee2--0c36e-p137.xml": "1e4d67f7d39700e2b4de1924bbff8223a3d8f3af51892ece8b9cd56fe0e42deb",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/toric-0f82c-025be-p151/input-certificate.json": "2c093dba135501c0e52eeaa42388f39e6d782a797321b92efb5946ffc0549c50",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/toric-0f82c-025be-p151/toric-controlled-reduction.input": "737fe08cff4d3c83095f9100805e8c09fc944cb2c58a62fba5f7ffd2860d4df1",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/toric-0f82c-025be-p151/toric-controlled-reduction.log": "9a0fff5bb043edcabf62b874cfcad726b7f32ed4b96d5db5e5ae4c9bc53ebf95",
+    "artifacts/generated-results/r17-product-regulator-sweep-controls/toric-0f82c-025be-p151/toric-controlled-reduction.output": "2c7165e02ac8a3f889d505915fa60a79e50784ad5dadba4e037cebd2f6ff901a",
+    "elkies-k3/scripts/certify_r17_product_19bad_083ad_rank_zero.sage": "ae33cae59dade9a2e1261e3591a7bc86442b0baef3387a6ae711645bdc02ff43",
+    "elkies-k3/scripts/certify_r17_product_regulator_sweep.sage": "ca6086d3242844e4178ef7fb3c403084ebf87e059436033a869be111660e21e2"
+  },
+  "logic": [
+    "The torsion-free 48I1 double cover makes every nonzero QQ(u)-section nontorsion.",
+    "Good surface reduction preserving the geometric trivial lattice preserves its positive Shioda height.",
+    "A nonzero reduction at an analytic-rank-one prime forces rank equality, hence refined BSD and finite square-order Sha.",
+    "The section height has squareclass p^(chi-1)*L_star/product(c_v), with chi=4 and Tamagawa factors taken once per closed place.",
+    "Two unequal squareclasses exclude every positive rational section height.",
+    "Matching squareclasses are only a necessary rank-one condition and keep arithmetic rank UNKNOWN in [0,1]."
+  ],
+  "new_frobenius_computations": [
+    {
+      "prime": 151,
+      "reason": "The existing p=131 polynomial has analytic rank two; only p=137 supplies a rank-one regulator constraint.",
+      "replay": "bash elkies-k3/scripts/run_r17_product_toric_frobenius_extra_prime.sh 'alternate-orbit-0f82c:alternate-orbit-025be' 151",
+      "short_label": "0f82c:025be"
+    }
+  ],
+  "proof_boundary": "Arithmetic QQ(u) ranks only. Geometric ranks remain UNKNOWN in [0,2]; no full Selmer computation or section search is claimed.",
+  "rank_zero_count": 4,
+  "regulator_compatible_count": 0,
+  "reproducing_command": "sage -python elkies-k3/scripts/certify_r17_product_regulator_sweep.sage --check",
+  "schema": "elkies-k3.r17-product-regulator-sweep.v1",
+  "software": "10.9",
+  "status": "PASS_EXACT_REGULATOR_OBSTRUCTION_SWEEP",
+  "targets": [
+    {
+      "classification": "rank 0",
+      "comparisons": [
+        {
+          "is_rational_square": false,
+          "odd_valuation_witness": {
+            "prime": 7,
+            "valuation": -3
+          },
+          "primes": [
+            131,
+            137
+          ],
+          "ratio_squareclass": 45773,
+          "regulator_ratio": "2012/4459"
+        }
+      ],
+      "pair_key": "alternate-orbit-11ee2:alternate-orbit-0c36e",
+      "rank_over_QQ_u": {
+        "lower": 0,
+        "status": "PROVED",
+        "upper": 0
+      },
+      "rank_over_QQbar_u": {
+        "lower": 0,
+        "status": "UNKNOWN",
+        "upper": 2
+      },
+      "rational_section_boxes": "ALL_POSITIVE_HEIGHTS_PROVED_EMPTY",
+      "reductions": [
+        {
+          "A_mod_p": [
+            "113",
+            "1",
+            "92",
+            "53",
+            "17",
+            "59",
+            "9",
+            "32",
+            "42"
+          ],
+          "B_mod_p": [
+            "126",
+            "31",
+            "130",
+            "108",
+            "3",
+            "3",
+            "127",
+            "27",
+            "63",
+            "24",
+            "26",
+            "14",
+            "113"
+          ],
+          "L_coefficients_low_to_high": [
+            "1",
+            "104",
+            "14772",
+            "253806",
+            "-155801444",
+            "-35375136248",
+            "-5612916708068",
+            "-806187643739080",
+            "-42845069503752466",
+            "-1792754394018222006",
+            "1664205626668167784748",
+            "314824047097029010355684",
+            "42416438703050207618361587",
+            "2804245193136450970938856896",
+            "0",
+            "-48123651759414635112281723192256",
+            "-12491637847149628602641085520934627",
+            "-1591093389759415516020168634620443204",
+            "-144336892615195230823941070925956612268",
+            "2668294445665109470245149702590714432806",
+            "1094350396373910717779717345566899738915826",
+            "353373743047779742612053947021306655655436680",
+            "42221079019070311001993812310372857093445953508",
+            "4566478771271735745574681744891249142569184906168",
+            "345141666388282997284789530881674809823399256359844",
+            "-9648735228662783755781512194674471160463368255762366",
+            "-9637189409892436653156275236109188250338304196416956212",
+            "-1164359326845996951130567512184840040256010451173164371624",
+            "-192130484692347631522612202659654230104167263005602632513841"
+          ],
+          "L_star_at_inverse_p": "65929216/2248091",
+          "analytic_rank": 1,
+          "branch_places": [
+            {
+              "base_factor_coefficients_low_to_high": [
+                "12",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                3
+              ],
+              "tamagawa_number": 1
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "118",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                3
+              ],
+              "tamagawa_number": 1
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "123",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                3
+              ],
+              "tamagawa_number": 1
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "130",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                3
+              ],
+              "tamagawa_number": 1
+            }
+          ],
+          "chi": 4,
+          "d_mod_p": [
+            "105",
+            "40",
+            "109",
+            "38",
+            "101"
+          ],
+          "frobenius_certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ee2--alternate-orbit-0c36e-p131-toric-frobenius-v1.json",
+          "geometric_fibres": "4I0*+24I1",
+          "good_reduction": true,
+          "height_box_tests": [
+            {
+              "height": 8,
+              "height_over_bsd_product": "1/8241152",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            },
+            {
+              "height": 10,
+              "height_over_bsd_product": "5/32964608",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            }
+          ],
+          "independent_magma_control": {
+            "boundary": "Uses the supplied certified L-polynomial; independently checks local/BSD normalization only.",
+            "result": "ANALYTIC_INFORMATION <1, 2, 65929216>",
+            "version": "2.29-9"
+          },
+          "other_tamagawa_numbers": "all 1 (I1 and smooth infinity)",
+          "prime": 131,
+          "rank_one_squareclass_test": "APPLICABLE",
+          "regulator_squareclass_if_rank_one": 1006,
+          "regulator_times_sha_over_torsion_squared_if_rank_one": "65929216",
+          "tamagawa_product": 1,
+          "valuation_at_3": 0
+        },
+        {
+          "A_mod_p": [
+            "122",
+            "34",
+            "96",
+            "116",
+            "119",
+            "72",
+            "41",
+            "93",
+            "20"
+          ],
+          "B_mod_p": [
+            "33",
+            "128",
+            "96",
+            "14",
+            "46",
+            "55",
+            "43",
+            "65",
+            "108",
+            "52",
+            "115",
+            "65",
+            "9"
+          ],
+          "L_coefficients_low_to_high": [
+            "1",
+            "286",
+            "39160",
+            "4193550",
+            "313094731",
+            "13482223156",
+            "3684430001228",
+            "764743308383348",
+            "114357652214319667",
+            "14120478564488098670",
+            "840315092499399125440",
+            "-125432479106552755172034",
+            "-36955349788385293613257751",
+            "-2956324886481740099215703552",
+            "0",
+            "55487261794375779922179539967488",
+            "13018459187584702914701368619573111",
+            "829341521010043630014823456012268706",
+            "-104281363499775243662478451772898466240",
+            "-32889334621152148905158183065805510250830",
+            "-4999332665173498377056047784915862729916627",
+            "-627485400559284138611395437728406121595077172",
+            "-56741313429105095407634657355759211538644214348",
+            "-3897011793196231168532618867667068219505424145524",
+            "-1698584286609665872121126356766229893118842925871531",
+            "-427006320007079449335005542829796492485232216499099950",
+            "-74840433581938012678449294117600876677171004791364864760",
+            "-10258899591400072628934602481355202868876232391055422981374",
+            "-673249253255202668435222216687258051209573446670346971809121"
+          ],
+          "L_star_at_inverse_p": "584450048/2571353",
+          "analytic_rank": 1,
+          "branch_places": [
+            {
+              "base_factor_coefficients_low_to_high": [
+                "68",
+                "61",
+                "1"
+              ],
+              "base_place_degree": 2,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                1,
+                2
+              ],
+              "tamagawa_number": 2
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "47",
+                "104",
+                "1"
+              ],
+              "base_place_degree": 2,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                1,
+                2
+              ],
+              "tamagawa_number": 2
+            }
+          ],
+          "chi": 4,
+          "d_mod_p": [
+            "96",
+            "23",
+            "134",
+            "78",
+            "130"
+          ],
+          "frobenius_certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ee2--alternate-orbit-0c36e-p137-toric-frobenius-v1.json",
+          "geometric_fibres": "4I0*+24I1",
+          "good_reduction": true,
+          "height_box_tests": [
+            {
+              "height": 8,
+              "height_over_bsd_product": "1/18264064",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            },
+            {
+              "height": 10,
+              "height_over_bsd_product": "5/73056256",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            }
+          ],
+          "independent_magma_control": {
+            "boundary": "Uses the supplied certified L-polynomial; independently checks local/BSD normalization only.",
+            "result": "ANALYTIC_INFORMATION <1, 2, 146112512>",
+            "version": "2.29-9"
+          },
+          "other_tamagawa_numbers": "all 1 (I1 and smooth infinity)",
+          "prime": 137,
+          "rank_one_squareclass_test": "APPLICABLE",
+          "regulator_squareclass_if_rank_one": 182,
+          "regulator_times_sha_over_torsion_squared_if_rank_one": "146112512",
+          "tamagawa_product": 4,
+          "valuation_at_3": 0
+        }
+      ],
+      "section_solving_eligible": false,
+      "short_label": "11ee2:0c36e",
+      "status": "PROVED_ARITHMETIC_PRODUCT_TWIST_RANK_ZERO"
+    },
+    {
+      "classification": "rank 0",
+      "comparisons": [
+        {
+          "is_rational_square": false,
+          "odd_valuation_witness": {
+            "prime": 3,
+            "valuation": -1
+          },
+          "primes": [
+            131,
+            137
+          ],
+          "ratio_squareclass": 13065,
+          "regulator_ratio": "1340/39"
+        }
+      ],
+      "pair_key": "alternate-orbit-0c10b:alternate-orbit-17a1a",
+      "rank_over_QQ_u": {
+        "lower": 0,
+        "status": "PROVED",
+        "upper": 0
+      },
+      "rank_over_QQbar_u": {
+        "lower": 0,
+        "status": "UNKNOWN",
+        "upper": 2
+      },
+      "rational_section_boxes": "ALL_POSITIVE_HEIGHTS_PROVED_EMPTY",
+      "reductions": [
+        {
+          "A_mod_p": [
+            "113",
+            "1",
+            "92",
+            "53",
+            "17",
+            "59",
+            "9",
+            "32",
+            "42"
+          ],
+          "B_mod_p": [
+            "126",
+            "31",
+            "130",
+            "108",
+            "3",
+            "3",
+            "127",
+            "27",
+            "63",
+            "24",
+            "26",
+            "14",
+            "113"
+          ],
+          "L_coefficients_low_to_high": [
+            "1",
+            "386",
+            "65865",
+            "3922462",
+            "-595869613",
+            "-147844829404",
+            "-12488100543180",
+            "-73013598414004",
+            "131756711635584851",
+            "22206075622041340478",
+            "1028405042790296254685",
+            "-517386426888252660498270",
+            "-150576910488853294134415967",
+            "-17159427241446758920090842552",
+            "0",
+            "294472930890467829827678949034872",
+            "44344888243391366503175265662638607",
+            "2614826063523120726040775339860893870",
+            "-89193778609754463943490748741190489085",
+            "-33051012698680934762388457792582950000878",
+            "-3365334944565722575040122296466325779147811",
+            "32003825369090457248035004004160918544324884",
+            "93937093182553944655149653672647385197444997580",
+            "19084881261872936813217318538002080913302675365564",
+            "1320009788747280784679810724686961936766885891196413",
+            "-149117031443271948244999180027844950462217064904825582",
+            "-42970043357877426222592612268232580835941809226712890665",
+            "-4321564424639950222465375574070656303257884943777321610066",
+            "-192130484692347631522612202659654230104167263005602632513841"
+          ],
+          "L_star_at_inverse_p": "175636480/2248091",
+          "analytic_rank": 1,
+          "branch_places": [
+            {
+              "base_factor_coefficients_low_to_high": [
+                "46",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                1,
+                2
+              ],
+              "tamagawa_number": 2
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "116",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                1,
+                2
+              ],
+              "tamagawa_number": 2
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "1",
+                "44",
+                "1"
+              ],
+              "base_place_degree": 2,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                3
+              ],
+              "tamagawa_number": 1
+            }
+          ],
+          "chi": 4,
+          "d_mod_p": [
+            "112",
+            "8",
+            "67",
+            "22",
+            "23"
+          ],
+          "frobenius_certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0c10b--alternate-orbit-17a1a-p131-toric-frobenius-v1.json",
+          "geometric_fibres": "4I0*+24I1",
+          "good_reduction": true,
+          "height_box_tests": [
+            {
+              "height": 8,
+              "height_over_bsd_product": "1/5488640",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            },
+            {
+              "height": 10,
+              "height_over_bsd_product": "1/4390912",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            }
+          ],
+          "independent_magma_control": {
+            "boundary": "Uses the supplied certified L-polynomial; independently checks local/BSD normalization only.",
+            "result": "ANALYTIC_INFORMATION <1, 2, 43909120>",
+            "version": "2.29-9"
+          },
+          "other_tamagawa_numbers": "all 1 (I1 and smooth infinity)",
+          "prime": 131,
+          "rank_one_squareclass_test": "APPLICABLE",
+          "regulator_squareclass_if_rank_one": 670,
+          "regulator_times_sha_over_torsion_squared_if_rank_one": "43909120",
+          "tamagawa_product": 4,
+          "valuation_at_3": 0
+        },
+        {
+          "A_mod_p": [
+            "122",
+            "34",
+            "96",
+            "116",
+            "119",
+            "72",
+            "41",
+            "93",
+            "20"
+          ],
+          "B_mod_p": [
+            "33",
+            "128",
+            "96",
+            "14",
+            "46",
+            "55",
+            "43",
+            "65",
+            "108",
+            "52",
+            "115",
+            "65",
+            "9"
+          ],
+          "L_coefficients_low_to_high": [
+            "1",
+            "-330",
+            "61941",
+            "-12021696",
+            "1950009639",
+            "-278007028608",
+            "43617758084880",
+            "-5197059218572352",
+            "545901058166659191",
+            "-71916076093448993124",
+            "6488029095990350869377",
+            "-591138752030025661559006",
+            "68568361501064039143026769",
+            "261279671479471054805381424",
+            "0",
+            "-4903958153998192227642203947056",
+            "-24154944300965836273227885682138609",
+            "3908524452586928858025584192776934654",
+            "-805150980382482825138317762414364430017",
+            "167506496360977348458761635332311188218276",
+            "-23864961716165933584727999859782698014917271",
+            "4264278941374521590994307428352915580156760128",
+            "-671726395058171516025036630761803027590356920080",
+            "80357420029401716144389639928066415452494092661632",
+            "-10579084869821035350497603139897940860817882872568839",
+            "1224103723385634364143229195839990741620761931098559424",
+            "-118378225140419367806839318869722060834030878646116728501",
+            "11837191836230853033386079786179080233318729681987026516970",
+            "-673249253255202668435222216687258051209573446670346971809121"
+          ],
+          "L_star_at_inverse_p": "5111808/2571353",
+          "analytic_rank": 1,
+          "branch_places": [
+            {
+              "base_factor_coefficients_low_to_high": [
+                "35",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                1,
+                2
+              ],
+              "tamagawa_number": 2
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "109",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                1,
+                2
+              ],
+              "tamagawa_number": 2
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "114",
+                "97",
+                "1"
+              ],
+              "base_place_degree": 2,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                3
+              ],
+              "tamagawa_number": 1
+            }
+          ],
+          "chi": 4,
+          "d_mod_p": [
+            "111",
+            "25",
+            "117",
+            "69",
+            "110"
+          ],
+          "frobenius_certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0c10b--alternate-orbit-17a1a-p137-toric-frobenius-v1.json",
+          "geometric_fibres": "4I0*+24I1",
+          "good_reduction": true,
+          "height_box_tests": [
+            {
+              "height": 8,
+              "height_over_bsd_product": "1/159744",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            },
+            {
+              "height": 10,
+              "height_over_bsd_product": "5/638976",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            }
+          ],
+          "independent_magma_control": {
+            "boundary": "Uses the supplied certified L-polynomial; independently checks local/BSD normalization only.",
+            "result": "ANALYTIC_INFORMATION <1, 2, 1277952>",
+            "version": "2.29-9"
+          },
+          "other_tamagawa_numbers": "all 1 (I1 and smooth infinity)",
+          "prime": 137,
+          "rank_one_squareclass_test": "APPLICABLE",
+          "regulator_squareclass_if_rank_one": 78,
+          "regulator_times_sha_over_torsion_squared_if_rank_one": "1277952",
+          "tamagawa_product": 4,
+          "valuation_at_3": 1
+        }
+      ],
+      "section_solving_eligible": false,
+      "short_label": "0c10b:17a1a",
+      "status": "PROVED_ARITHMETIC_PRODUCT_TWIST_RANK_ZERO"
+    },
+    {
+      "classification": "rank 0",
+      "comparisons": [
+        {
+          "is_rational_square": false,
+          "odd_valuation_witness": {
+            "prime": 3,
+            "valuation": -1
+          },
+          "primes": [
+            137,
+            151
+          ],
+          "ratio_squareclass": 3,
+          "regulator_ratio": "1/48"
+        }
+      ],
+      "pair_key": "alternate-orbit-0f82c:alternate-orbit-025be",
+      "rank_over_QQ_u": {
+        "lower": 0,
+        "status": "PROVED",
+        "upper": 0
+      },
+      "rank_over_QQbar_u": {
+        "lower": 0,
+        "status": "UNKNOWN",
+        "upper": 2
+      },
+      "rational_section_boxes": "ALL_POSITIVE_HEIGHTS_PROVED_EMPTY",
+      "reductions": [
+        {
+          "L_coefficients_low_to_high": [
+            "1",
+            "-78",
+            "-2159",
+            "-220416",
+            "71172955",
+            "-17455928946",
+            "-679197749102",
+            "118510891209294",
+            "28366842889056233",
+            "-904953687614955860",
+            "-57585544790310639969",
+            "-34476817022592422909838",
+            "1654723036809269470858011",
+            "972166196038483152445562772",
+            "-352221975300963223714335289156",
+            "16683344090216409379118302730292",
+            "487315803617209951235396041717131",
+            "-174242838723450776682185465948336478",
+            "-4994406016537214135612010181165046529",
+            "-1346912274377391287196586959359881503860",
+            "724546980996175098374363981069532779437913",
+            "51946513375377806356023451143618253477258974",
+            "-5109012537668823806224887158349368190456577262",
+            "-2253337723024133389136790823064562053128494726786",
+            "157667038634624453756766512805314895311203619010955",
+            "-8379374893268623059795031606429194878390163264312576",
+            "-1408522335225952527360167765689123844603330541569469839",
+            "-873269495134497713347925634138630030192007838379873278718",
+            "192130484692347631522612202659654230104167263005602632513841"
+          ],
+          "analytic_rank": 2,
+          "frobenius_certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0f82c--alternate-orbit-025be-p131-toric-frobenius-v1.json",
+          "good_reduction": true,
+          "prime": 131,
+          "rank_one_squareclass_test": "NOT_APPLICABLE",
+          "reason": "This reduction cannot force algebraic rank = analytic rank = 1.",
+          "regulator_squareclass_if_rank_one": null
+        },
+        {
+          "A_mod_p": [
+            "122",
+            "34",
+            "96",
+            "116",
+            "119",
+            "72",
+            "41",
+            "93",
+            "20"
+          ],
+          "B_mod_p": [
+            "33",
+            "128",
+            "96",
+            "14",
+            "46",
+            "55",
+            "43",
+            "65",
+            "108",
+            "52",
+            "115",
+            "65",
+            "9"
+          ],
+          "L_coefficients_low_to_high": [
+            "1",
+            "-171",
+            "-6482",
+            "2143399",
+            "-132933155",
+            "-4984671020",
+            "4270153358392",
+            "-343196520396308",
+            "-19209276353548511",
+            "5822499792130044535",
+            "-1078128394235565958394",
+            "28654336127467353799221",
+            "26868715460454605293375237",
+            "-4859835429912446532224100312",
+            "0",
+            "91214251184026708963314138755928",
+            "-9465186438437927303836272522635557",
+            "-189458351431446310589968232444975589",
+            "133793501964012904192682582261378564474",
+            "-13561731857768386662537927159898633850215",
+            "839765078148524473632537117047874212808191",
+            "281598810621405938910658112104130531671814612",
+            "-65761626633729216038250484077508811139701590072",
+            "1440809985517753929617961976594155252694119289580",
+            "721181629378640478868000716238787605619593068417155",
+            "-218250627582085365531638240988146790236518998846312631",
+            "12388041125590454499022173760732606808514362948356155602",
+            "6133817587865078390027332252838250666356069017029641013339",
+            "-673249253255202668435222216687258051209573446670346971809121"
+          ],
+          "L_star_at_inverse_p": "1179648/2571353",
+          "analytic_rank": 1,
+          "branch_places": [
+            {
+              "base_factor_coefficients_low_to_high": [
+                "28",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                3
+              ],
+              "tamagawa_number": 1
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "61",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                1,
+                2
+              ],
+              "tamagawa_number": 2
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "86",
+                "26",
+                "1"
+              ],
+              "base_place_degree": 2,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                1,
+                2
+              ],
+              "tamagawa_number": 2
+            }
+          ],
+          "chi": 4,
+          "d_mod_p": [
+            "14",
+            "24",
+            "113",
+            "10",
+            "12"
+          ],
+          "frobenius_certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0f82c--alternate-orbit-025be-p137-toric-frobenius-v1.json",
+          "geometric_fibres": "4I0*+24I1",
+          "good_reduction": true,
+          "height_box_tests": [
+            {
+              "height": 8,
+              "height_over_bsd_product": "1/36864",
+              "is_rational_square": true,
+              "status": "UNKNOWN"
+            },
+            {
+              "height": 10,
+              "height_over_bsd_product": "5/147456",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            }
+          ],
+          "independent_magma_control": {
+            "boundary": "Uses the supplied certified L-polynomial; independently checks local/BSD normalization only.",
+            "result": "ANALYTIC_INFORMATION <1, 2, 294912>",
+            "version": "2.29-9"
+          },
+          "other_tamagawa_numbers": "all 1 (I1 and smooth infinity)",
+          "prime": 137,
+          "rank_one_squareclass_test": "APPLICABLE",
+          "regulator_squareclass_if_rank_one": 2,
+          "regulator_times_sha_over_torsion_squared_if_rank_one": "294912",
+          "tamagawa_product": 4,
+          "valuation_at_3": 2
+        },
+        {
+          "A_mod_p": [
+            "85",
+            "57",
+            "52",
+            "28",
+            "150",
+            "65",
+            "79",
+            "42",
+            "128"
+          ],
+          "B_mod_p": [
+            "70",
+            "4",
+            "127",
+            "52",
+            "74",
+            "10",
+            "64",
+            "64",
+            "108",
+            "48",
+            "140",
+            "54",
+            "60"
+          ],
+          "L_coefficients_low_to_high": [
+            "1",
+            "-110",
+            "-32238",
+            "4816170",
+            "378101886",
+            "-24299618526",
+            "-14174078394840",
+            "-668665422522978",
+            "521460636019077580",
+            "-36800492234014081302",
+            "-4306987410597280690118",
+            "1224775821462713766019490",
+            "-94234569661954449914684417",
+            "-1698458693824600969332731604",
+            "0",
+            "38726556677894726701755613302804",
+            "48991195883681556028520106857379617",
+            "-14518384303230216925352101365023935490",
+            "1164097028536717707103561803952810171718",
+            "226789582052096225888885253103318639309302",
+            "-73273155963207501741958517690893866840021580",
+            "2142328808950346254692570819976938519603731778",
+            "1035442500967759256300802106264912629380894010840",
+            "40474780951589397785253913790842811915400399393726",
+            "-14359780105986741432796729922324384236432407068909886",
+            "-4170562640969468214856347694935257415107264401204252170",
+            "636524062598434088829214563085096625270317782523267069038",
+            "49521445705185139355215625591518136882149535750494179804110",
+            "-10264895304762966931257013446474591264089923314972889033759201"
+          ],
+          "L_star_at_inverse_p": "14155776/3442951",
+          "analytic_rank": 1,
+          "branch_places": [
+            {
+              "base_factor_coefficients_low_to_high": [
+                "12",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                3
+              ],
+              "tamagawa_number": 1
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "149",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                3
+              ],
+              "tamagawa_number": 1
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "74",
+                "60",
+                "1"
+              ],
+              "base_place_degree": 2,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                3
+              ],
+              "tamagawa_number": 1
+            }
+          ],
+          "chi": 4,
+          "d_mod_p": [
+            "14",
+            "13",
+            "85",
+            "44",
+            "143"
+          ],
+          "frobenius_certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0f82c--alternate-orbit-025be-p151-toric-frobenius-v1.json",
+          "geometric_fibres": "4I0*+24I1",
+          "good_reduction": true,
+          "height_box_tests": [
+            {
+              "height": 8,
+              "height_over_bsd_product": "1/1769472",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            },
+            {
+              "height": 10,
+              "height_over_bsd_product": "5/7077888",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            }
+          ],
+          "independent_magma_control": {
+            "boundary": "Uses the supplied certified L-polynomial; independently checks local/BSD normalization only.",
+            "result": "ANALYTIC_INFORMATION <1, 2, 14155776>",
+            "version": "2.29-9"
+          },
+          "other_tamagawa_numbers": "all 1 (I1 and smooth infinity)",
+          "prime": 151,
+          "rank_one_squareclass_test": "APPLICABLE",
+          "regulator_squareclass_if_rank_one": 6,
+          "regulator_times_sha_over_torsion_squared_if_rank_one": "14155776",
+          "tamagawa_product": 1,
+          "valuation_at_3": 3
+        }
+      ],
+      "section_solving_eligible": false,
+      "short_label": "0f82c:025be",
+      "status": "PROVED_ARITHMETIC_PRODUCT_TWIST_RANK_ZERO"
+    },
+    {
+      "classification": "rank 0",
+      "comparisons": [
+        {
+          "is_rational_square": false,
+          "odd_valuation_witness": {
+            "prime": 2,
+            "valuation": -3
+          },
+          "primes": [
+            131,
+            137
+          ],
+          "ratio_squareclass": 1194,
+          "regulator_ratio": "597/392"
+        }
+      ],
+      "pair_key": "alternate-orbit-11ae6:alternate-orbit-0f82c",
+      "rank_over_QQ_u": {
+        "lower": 0,
+        "status": "PROVED",
+        "upper": 0
+      },
+      "rank_over_QQbar_u": {
+        "lower": 0,
+        "status": "UNKNOWN",
+        "upper": 2
+      },
+      "rational_section_boxes": "ALL_POSITIVE_HEIGHTS_PROVED_EMPTY",
+      "reductions": [
+        {
+          "A_mod_p": [
+            "113",
+            "1",
+            "92",
+            "53",
+            "17",
+            "59",
+            "9",
+            "32",
+            "42"
+          ],
+          "B_mod_p": [
+            "126",
+            "31",
+            "130",
+            "108",
+            "3",
+            "3",
+            "127",
+            "27",
+            "63",
+            "24",
+            "26",
+            "14",
+            "113"
+          ],
+          "L_coefficients_low_to_high": [
+            "1",
+            "-39",
+            "1640",
+            "844193",
+            "-44731653",
+            "31186479368",
+            "-2814412099992",
+            "-163322588188496",
+            "69497748508635467",
+            "-4544857742823296275",
+            "143370984897864423672",
+            "-60678792062410429372107",
+            "-6999200880431141896986127",
+            "2377128615964172561437227528",
+            "0",
+            "-40793904178561165326824261608008",
+            "2061264106350101734602204539595967",
+            "306665344783309677895912564927970067",
+            "-12434594691743602426965727690036136952",
+            "6764461831457212944229368579684784091275",
+            "-1775114138182423308016439438537725652485787",
+            "71588686282444254766727950422756754338577616",
+            "21170368606251953015333576939724595461604499352",
+            "-4025776607227273397861964597689460771585310774088",
+            "99092517118919888190145063568421494552138341002453",
+            "-32092995196687711902573075987797080574789611900178873",
+            "-1069928962376360419115643879448894444256351129307054440",
+            "436634747567248856673962817069315015096003919189936639359",
+            "-192130484692347631522612202659654230104167263005602632513841"
+          ],
+          "L_star_at_inverse_p": "78249984/2248091",
+          "analytic_rank": 1,
+          "branch_places": [
+            {
+              "base_factor_coefficients_low_to_high": [
+                "18",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                1,
+                2
+              ],
+              "tamagawa_number": 2
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "42",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                1,
+                2
+              ],
+              "tamagawa_number": 2
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "57",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                1,
+                1,
+                1
+              ],
+              "tamagawa_number": 4
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "106",
+                "1"
+              ],
+              "base_place_degree": 1,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                3
+              ],
+              "tamagawa_number": 1
+            }
+          ],
+          "chi": 4,
+          "d_mod_p": [
+            "72",
+            "0",
+            "94",
+            "91",
+            "85"
+          ],
+          "frobenius_certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ae6--alternate-orbit-0f82c-p131-toric-frobenius-v1.json",
+          "geometric_fibres": "4I0*+24I1",
+          "good_reduction": true,
+          "height_box_tests": [
+            {
+              "height": 8,
+              "height_over_bsd_product": "1/611328",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            },
+            {
+              "height": 10,
+              "height_over_bsd_product": "5/2445312",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            }
+          ],
+          "independent_magma_control": {
+            "boundary": "Uses the supplied certified L-polynomial; independently checks local/BSD normalization only.",
+            "result": "ANALYTIC_INFORMATION <1, 2, 4890624>",
+            "version": "2.29-9"
+          },
+          "other_tamagawa_numbers": "all 1 (I1 and smooth infinity)",
+          "prime": 131,
+          "rank_one_squareclass_test": "APPLICABLE",
+          "regulator_squareclass_if_rank_one": 1194,
+          "regulator_times_sha_over_torsion_squared_if_rank_one": "4890624",
+          "tamagawa_product": 16,
+          "valuation_at_3": 1
+        },
+        {
+          "A_mod_p": [
+            "122",
+            "34",
+            "96",
+            "116",
+            "119",
+            "72",
+            "41",
+            "93",
+            "20"
+          ],
+          "B_mod_p": [
+            "33",
+            "128",
+            "96",
+            "14",
+            "46",
+            "55",
+            "43",
+            "65",
+            "108",
+            "52",
+            "115",
+            "65",
+            "9"
+          ],
+          "L_coefficients_low_to_high": [
+            "1",
+            "2",
+            "4724",
+            "-2046158",
+            "-33818587",
+            "-44441688656",
+            "-2020661756108",
+            "-52398846296584",
+            "2058314286366593",
+            "7466121301900184018",
+            "295280607378572489340",
+            "242580924996042978196034",
+            "14757042424456211757792253",
+            "2277560473917006672215587368",
+            "0",
+            "-42747532534948298230814359309992",
+            "-5198542447367627225668710488578333",
+            "-1603910205213599773976651301833884706",
+            "-36643712135280197836640571866300278140",
+            "-17390045294772151003686233399172007223282",
+            "-89982591000913063506264903045740540878433",
+            "42994179480645603469954600182726006440989576",
+            "31118789609061936800360944420745686129631604428",
+            "12845788324228444087068759693000523635270729395024",
+            "183470735167184657404085111334217196719418094672187",
+            "208349107017454345814981643596840560258157833255205102",
+            "-9028248422907946166828254990080350904569862784331144564",
+            "-71740556583217291111430786582903516565568058678709251618",
+            "-673249253255202668435222216687258051209573446670346971809121"
+          ],
+          "L_star_at_inverse_p": "12845056/2571353",
+          "analytic_rank": 1,
+          "branch_places": [
+            {
+              "base_factor_coefficients_low_to_high": [
+                "86",
+                "26",
+                "1"
+              ],
+              "base_place_degree": 2,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                1,
+                2
+              ],
+              "tamagawa_number": 2
+            },
+            {
+              "base_factor_coefficients_low_to_high": [
+                "12",
+                "125",
+                "1"
+              ],
+              "base_place_degree": 2,
+              "kodaira_symbol": "I0*",
+              "residual_two_division_factor_degrees": [
+                1,
+                2
+              ],
+              "tamagawa_number": 2
+            }
+          ],
+          "chi": 4,
+          "d_mod_p": [
+            "21",
+            "65",
+            "6",
+            "111",
+            "96"
+          ],
+          "frobenius_certificate": "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ae6--alternate-orbit-0f82c-p137-toric-frobenius-v1.json",
+          "geometric_fibres": "4I0*+24I1",
+          "good_reduction": true,
+          "height_box_tests": [
+            {
+              "height": 8,
+              "height_over_bsd_product": "1/401408",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            },
+            {
+              "height": 10,
+              "height_over_bsd_product": "5/1605632",
+              "is_rational_square": false,
+              "status": "EXCLUDED"
+            }
+          ],
+          "independent_magma_control": {
+            "boundary": "Uses the supplied certified L-polynomial; independently checks local/BSD normalization only.",
+            "result": "ANALYTIC_INFORMATION <1, 2, 3211264>",
+            "version": "2.29-9"
+          },
+          "other_tamagawa_numbers": "all 1 (I1 and smooth infinity)",
+          "prime": 137,
+          "rank_one_squareclass_test": "APPLICABLE",
+          "regulator_squareclass_if_rank_one": 1,
+          "regulator_times_sha_over_torsion_squared_if_rank_one": "3211264",
+          "tamagawa_product": 4,
+          "valuation_at_3": 0
+        }
+      ],
+      "section_solving_eligible": false,
+      "short_label": "11ae6:0f82c",
+      "status": "PROVED_ARITHMETIC_PRODUCT_TWIST_RANK_ZERO"
+    }
+  ],
+  "theoretical_references": [
+    {
+      "location": "Theorems 6.2.6, 6.3.1; Proposition 6.3.3",
+      "url": "https://math.stanford.edu/~conrad/BSDseminar/refs/Ulmer.pdf"
+    },
+    {
+      "location": "Why this is an unconditional obstruction (height preservation and BSD normalization)",
+      "path": "elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md"
+    }
+  ]
+}

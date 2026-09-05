@@ -10490,6 +10490,21 @@ of moments; its row format and the theorem needed for negative completeness
 are documented in the canonical note. The finite regressions do not prove
 the universal classification.
 
+The same note proves the optimal operator-independent cutoff
+`m > (1 + floor((deg P + 1)^2/4)) deg Q` and an equality family in every
+degree. Replay its exact support-gap algebra and sharp contractions with:
+
+```bash
+.venv/bin/python scripts/verify_binary_gvc_optimal_cutoff.py
+```
+
+The default reproduces
+`artifacts/generated-results/binary-gvc-optimal-cutoff-v1.json` byte for byte:
+2475 small support pairs in both orientations (885 feasible), 18 exact
+last-nonzero mixed contractions, and operator-order controls through 1000000007.
+Universality and optimality use the written proof; the finite checks are
+regressions.
+
 The proof combines Hall localization, the shifted-ray endpoint theorem, and
 the unequal common-threshold theorem.  It has no new computational premise:
 the finite global lower and upper Newton envelopes cannot exchange horizontal
@@ -13808,7 +13823,20 @@ exact `r=8` quartic field.  Each row has seven equal/disjoint assignments and
 no transitive assignment.  These commands exclude all three normal even
 terminal rows; the odd normal and nonnormal conductor regimes remain.
 
-<!-- status-consumer: PF2D6E1 d23d615295a1bf58 -->
+<!-- status-consumer: PF2D6E1 e09ee4ea4a2ece0d -->
+<!-- status-consumer: PF2D6O1 810993dd0ad65b40 -->
+
+The sharp polynomial parametrization gap bound excludes normal `r=9`.
+Its default replay reconstructs the six coefficient obstructions and checks
+the literal `b^12` identity, the `b=0` branch, and a sharp `r=7` witness:
+
+```bash
+.venv/bin/python scripts/verify_f2_degree_6_10_gap.py
+# Optional reconstruction of the multipliers, requiring Singular:
+.venv/bin/python scripts/verify_f2_degree_6_10_gap.py --regenerate-certificate
+```
+
+Only normal odd rows `r=5,7` and the nonnormal conductor regimes remain.
 
 The generic contracted-divisor Smith theorem, forced cubic E8 jets,
 saturated normal form, length-four cyclic quotient, and global incidence
@@ -14636,6 +14664,20 @@ jet on `p=q=-a`. No all-order or polynomial solution is inferred. The old
 `hc4_affine_plane_prolongation.json` is preserved as a certificate for the
 conditional system that additionally assumes `d(pq)=0`.
 
+The negative sign is closed by the separate
+[global polynomial-leaf obstruction](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md):
+
+```bash
+.venv/bin/python scripts/verify_hc4_negative_motion_polynomial_obstruction.py
+```
+
+Its exact artifact records two literal curvature combinations, the leaf
+connection, and the ODE `2nn''-3(n')^2=0`. The written proof uses polynomiality
+of the ambient N to force the affine-leaf coefficient n to be a polynomial;
+its leading coefficient then excludes nonconstant solutions. The compatible
+finite jet in the preceding audit is preserved. HC4MR1/2 use this replacement
+proof, not the old determinant-constancy premise.
+
 ## Shared `JC_2`--`HC_4` isotropic boundary bridge
 
 The combined programme is
@@ -14646,8 +14688,8 @@ remainder \(-\Phi_{mm}R(P)\), and the quartic packet's reduced conormal
 residue \(2\ell\). It also verifies that every source-only Hessian direction
 preserves the cotangent determinant and gives a square-zero relative
 endomorphism. This proves `PHC4 => JC2`; the reverse implication in
-`HC4MR2` is partial because `HC4MR1` has an open negative maximal-motion
-branch after the [transport audit](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md).
+`HC4MR2` uses the corrected `HC4MR1` proof, with HC4MRA1 closing the
+positive sign and HC4MRA2 closing the negative sign by global polynomiality.
 The completed continuation computes the \(3+1\) cusp
 and both \(2+2\) connector initials, proves that the relevant positive
 associated-graded conductor maps are isomorphisms, and finds
@@ -14889,7 +14931,8 @@ checker constructs the exact corank-minor, integrability, collision, and
 Schur equations for matrix pivots. The artifact's broad frontier is
 discovery-time data: `HC4RSD2--5` later close affine-in-`x` kernel lines and
 fixed two-component constant-support kernels. The full nonzero-corner
-auxiliary pencil closure in `HC4MR1` is partial after HC4MRA1. Fixed
+auxiliary pencil closure in `HC4MR1` uses the corrected HC4MRA1/HC4MRA2
+proof. Fixed
 three/four-component kernels, parameter-moving nonlinear generators,
 nonlinear zero-corner exact remainders, and moving matrix-pivot planes remain.
 The audit-only form hash-checks the committed ledger, its consumed
@@ -14987,7 +15030,7 @@ inverses. The generated ledger is
 The audit-only mode pins that ledger and the shared helper; it retains fixed
 three/four-component and parameter-moving nonlinear singular kernels as the
 current singular-pencil boundary. The separate nonzero-corner auxiliary
-pencil now also has the open negative maximal-motion sign in `HC4MR1`.
+pencil is closed in `HC4MR1` using the HC4MRA1/HC4MRA2 replacement proof.
 
 Test whether a direct HC4 candidate is covered by an affine singular
 scalar pivot with:
@@ -15152,8 +15195,8 @@ collapses the form to the first type. Thus every quadratic scalar pencil
 reduces to HC2 or exactly JC2. The generated ledger is
 `artifacts/generated-results/hc4_scalar_cancellation_dichotomy.json`.
 Its higher-degree constant-Hessian-pencil `open_frontier` is the historical
-handoff at `HC4RSD16`; `HC4MR1` consolidates later reductions but its
-negative maximal-motion sign remains open after HC4MRA1.  The audit-only command checks this distinction without rewriting the
+handoff at `HC4RSD16`; `HC4MR1` consolidates later reductions and uses
+the corrected HC4MRA1/HC4MRA2 maximal-motion proof.  The audit-only command checks this distinction without rewriting the
 stage artifact.
 
 Continue to arbitrary rank-one and leading-rank-three cubic pencil
@@ -15191,8 +15234,8 @@ sextic are closed. The generated ledger is
 `artifacts/generated-results/hc4_higher_degree_pencil_obstructions.json`.
 Its `open_frontier` field records the historical endpoint at `HC4RSD28`; it
 is superseded by the degree-seven closure `HC4RSD40` and the all-degree
-auxiliary-pencil master reduction `HC4MR1`, now partial on its final
-negative maximal-motion sign. The audit-only command verifies
+auxiliary-pencil master reduction `HC4MR1`, with its final motion signs
+closed by the corrected HC4MRA1/HC4MRA2 proof. The audit-only command verifies
 that stage boundary without rewriting the historical artifact.
 
 Close the remaining pure-fifth chart, and hence obtain HC4RSD24 and the
@@ -15400,8 +15443,9 @@ This stdlib-only command verifies each whole-file hash and its exact
 status/format mapping. It performs no determinant expansion, Singular run,
 search, or artifact rewrite. The stage sequence closes scalar degrees six
 and seven at `HC4RSD32` and `HC4RSD40`. The later `HC4MR1` master
-reduction is partial after HC4MRA1; these scalar certificates do not
-close its negative maximal-motion sign or prove unrestricted `HC4`.
+reduction uses the HC4MRA1/HC4MRA2 replacement proof for its final motion
+signs; the scalar certificates alone do not establish that step or
+unrestricted `HC4`.
 
 The same checker now continues into degree five.  On \(x_1=0\) it proves
 
@@ -20189,7 +20233,7 @@ The campaign computes all seventeen targets at `p=131`, sends only Tate
 survivors to `p=137`, and obtains twelve unconditional product-rank-zero
 theorems plus five persistent degree-two candidates.  See
 [`elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md`](elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md).
-<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION cfb2417a30fab18d -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION 8aac526ec5ca3822 -->
 
 Replay the component-Galois height gate and constructor ranking for those five
 survivors, then cheaply verify the independent `p=151` moment audit:
@@ -20237,6 +20281,29 @@ Hence the point-Kummer/Tate quotient is zero, and the `(8,12)` and `(10,15)`
 boxes and all higher heights are empty. The full Selmer group is uncomputed.
 See the [canonical proof](elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md).
 
+The [remaining-four regulator sweep](elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md)
+proves arithmetic rank zero for `11ee2:0c36e`, `0c10b:17a1a`,
+`0f82c:025be`, and `11ae6:0f82c`. Its section-solving queue is empty.
+Replay the certificate and the rank/squareclass rejection controls locally:
+
+```bash
+sage -python elkies-k3/scripts/certify_r17_product_regulator_sweep.sage --check
+sage -python elkies-k3/scripts/certify_r17_product_regulator_sweep.sage --self-test
+```
+
+Only `0f82c:025be` needed a new Frobenius prime, because its 131 reduction
+has analytic rank two. Its 137 and 151 BSD products have nonsquare ratio
+`1/48`. The sole new cohomological computation can be rerun with:
+
+```bash
+bash elkies-k3/scripts/run_r17_product_toric_frobenius_extra_prime.sh \
+  'alternate-orbit-0f82c:alternate-orbit-025be' 151
+```
+
+The raw toric input/output and eight independent Magma control jobs/XML are
+retained under `artifacts/generated-results/r17-product-regulator-sweep-controls/`.
+Routine `--check` does not rerun cohomology, contact Magma, or solve sections.
+
 Run the exact `H=10000` point-map-relation control on the deterministic
 seeded sample of ten other pointed covers:
 
@@ -20271,3 +20338,5 @@ the unknown Selmer complements and insoluble controls stay unknown. See
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 
 <!-- status-consumer: EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO fe572bd5979b5d2c -->
+
+<!-- status-consumer: EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP f86dead53d55babe -->

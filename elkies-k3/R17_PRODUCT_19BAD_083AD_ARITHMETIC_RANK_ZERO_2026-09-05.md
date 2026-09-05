@@ -1,5 +1,9 @@
 # `19bad:083ad`: arithmetic product rank zero
 
+The [follow-up regulator sweep](R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md)
+also excludes the other four arithmetic candidates. This note remains the
+canonical single-target proof and specialization argument.
+
 For the exact product character
 `alternate-orbit-19bad:alternate-orbit-083ad`,
 
@@ -196,3 +200,5 @@ The arithmetic exclusion is exact. The geometric rank, full two-Selmer
 group, and other four constructor targets remain outside this result.
 
 <!-- status-consumer: EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO fe572bd5979b5d2c -->
+
+<!-- status-consumer: EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP f86dead53d55babe -->

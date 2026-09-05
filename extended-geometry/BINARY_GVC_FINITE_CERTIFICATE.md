@@ -55,6 +55,23 @@ If \(\lambda=0\), $P=0$, or $Q=0$, the corresponding contractions
 vanish directly. A nonzero constant term of \(\lambda\), with $P\ne0$,
 already makes \(\Lambda(P)\ne0\), by its highest ordinary-degree part.
 
+> **Theorem 1.3 (optimal operator-independent cutoff, GVC2OC).** Set
+> \[
+> C_d=1+\left\lfloor\frac{(d+1)^2}{4}\right\rfloor.
+> \]
+> Under (1.1), every nonzero $Q$ satisfies
+> \[
+> \Lambda^m(QP^m)=0\qquad(m>C_d\deg Q).
+> \]
+> For each $d\ge0$ this coefficient is best possible uniformly over all
+> binary operators and degree-$d$ polynomials.
+
+Section 7 proves this by a short support-geometric argument and an explicit
+equality family. Both bounds are valid: one may use
+`min(d+R,C_d)*deg(Q)`, or the actual certificate bound (1.4).
+The operator-independent coefficient need not improve `d+R` for each
+fixed small-order operator.
+
 ## 2. Hall localization, uniqueness, and descent
 
 Suppose $d\geq r$ and (1.1). The homogeneous part of degree $m(d-r)$
@@ -287,6 +304,131 @@ $m_0+1$. Thus the certificate cutoff can be sharp, and no bound
 $m>C\deg Q$ with an absolute degree-independent $C$ works for all
 binary pairs. This does **not** claim optimality of the general coefficient
 $d+R$ in (1.3).
+
+## 7. The optimal coefficient depending only on deg P
+
+The following integer-support lemma supplies the additional argument.
+Let $\mathcal A,\mathcal B$ be finite nonempty subsets of $\mathbb N^2$,
+with $i+j\le d$ for $(i,j)\in\mathcal B$. Suppose some positive weight
+strictly separates $\mathcal A$ above $\mathcal B$. Then a positive rational
+weight $w$ satisfies
+\[
+ \frac{\max(w_1,w_2)}
+ {\min_{\alpha\in\mathcal A}w\cdot\alpha-
+                  \max_{\beta\in\mathcal B}w\cdot\beta}\le C_d.
+ \tag{7.1}
+\]
+The size and degrees of $\mathcal A$ are unrestricted.
+
+### Proof of the support lemma
+
+Swap the axes if necessary so that an existing separating weight normalizes
+to $(1,z)$ with $0<z\le1$. Put
+\[
+ h(z)=\min_{(a,b)\in\mathcal A}(a+bz)
+                       -\max_{(i,j)\in\mathcal B}(i+jz).
+\]
+This is continuous, concave, and piecewise linear, and is positive
+somewhere. If $d=0$, the strict separator excludes $(0,0)$ from
+$\mathcal A$, so $h(1)\ge1=C_0^{-1}$.
+
+Assume $d\ge1$. The endpoint values are integers. If $h(1)>0$, use
+$z=1$. If $h(0)>0$, then
+\[
+ h(1/(d+1))\ge h(0)-d/(d+1)\ge1/(d+1)\ge1/C_d.
+ \tag{7.2}
+\]
+Here every operator slope is nonnegative and every polynomial slope is at
+most $d$. These choices have both weights positive.
+
+Otherwise both endpoints are nonpositive, so a positive maximum occurs at
+an interior breakpoint. If that point is a breakpoint of the polynomial
+upper envelope, its reduced denominator is at most $d$. The positive value
+of $h$ is an integer divided by that denominator, hence at least $1/d$.
+This includes simultaneous breakpoints of both envelopes.
+
+It remains to treat an operator breakpoint where one polynomial monomial
+$(i,j)$ is active. Let $(c,e)$ and $(a,b)$ be the active operator monomials
+on its left and right. Then
+\[
+ a>c,\quad e>b,\quad z_0=\frac{a-c}{e-b},\quad
+ e\ge j\ge b.
+\]
+The last inequalities are the two one-sided maximum conditions. If $c>i$,
+then $h(z_0)=(c-i)+(e-j)z_0\ge1$.
+Otherwise put
+\[
+ A=a-i>0,\quad B=j-b\ge0,\quad C=i-c\ge0,\quad E=e-j\ge0.
+\]
+Positivity of $h$ gives the positive integer $N=AE-BC$, and
+\[
+ h(z_0)=\frac N{B+E},\qquad B+C\le i+j\le d.
+\]
+Therefore
+\[
+ \frac1{h(z_0)}
+ =\frac1A+\frac B N+\frac{BC}{AN}
+ \le1+B+BC
+ \le1+\max_{0\le B\le d}B(d+1-B)=C_d.
+ \tag{7.3}
+\]
+All maximizing points used here are rational. This proves (7.1).
+
+Apply the lemma to the support certificate in Theorem 1.1, then clear the
+weight denominators. For a multiplier of degree $q$, its weight is at most
+$q\max(w_1,w_2)$, so every mixed monomial selection vanishes when
+$m>C_dq$. This proves the upper bound for arbitrary coefficients and
+arbitrary operator order. Only the necessity of a strict support certificate
+uses the earlier GVC proof.
+
+### The equality family
+
+Fix $d\ge0$. Choose positive $e$ and nonnegative $j$ with
+\[
+ e+j=d+1,\qquad ej=\left\lfloor\frac{(d+1)^2}{4}\right\rfloor,
+ \qquad R=ej+1=C_d.
+\]
+For example, take $e=\lceil(d+1)/2\rceil$ and $j=\lfloor(d+1)/2\rfloor$.
+Set
+\[
+ \Lambda=\partial_x^e+\partial_y^R,\qquad
+ P=x^{e-1}y^j,\qquad Q=x^q\quad(q\ge1).
+ \tag{7.4}
+\]
+The weight $(R,e)$ has gap exactly one, so every pure contraction vanishes.
+In $\Lambda^m(QP^m)$, a term with $k$ copies of $\partial_x^e$ can survive
+only when
+\[
+ ek\le(e-1)m+q,\qquad R(m-k)\le jm.
+\]
+Combining these inequalities gives $m\le Rq$. At $m_0=Rq$, they force
+$k=(R-j)q$, and the unique surviving term is the nonzero constant
+\[
+ \Lambda^{m_0}(QP^{m_0})
+  =\binom{m_0}{jq}\bigl((e-1)m_0+q\bigr)!\,(jm_0)!.
+ \tag{7.5}
+\]
+Thus no smaller coefficient than $C_d$ works, even for a two-term symbol
+and monomial $P,Q$. This includes $d=0$, where $e=R=1,j=0$.
+
+For example, $d=3$ gives
+`Lambda=dx^2+dy^5, P=x*y^2, Q=x`. The last nonzero mixed power is
+`m=5`; hence even the tempting coefficient `d+1=4` fails.
+
+### Replay and proof boundary
+
+```bash
+.venv/bin/python scripts/verify_binary_gvc_optimal_cutoff.py
+```
+
+The [retained artifact](../artifacts/generated-results/binary-gvc-optimal-cutoff-v1.json)
+records exact symbolic identities, all 2475 pairs of one- or two-point
+supports through degree three (including a constant polynomial), 18 sharp
+last-nonzero contractions, and controls with operator order as large as
+`1000000007`. The universal support lemma is the written proof above,
+not an inference from these regressions. The default replay is read-only
+and byte-identical; `--write` regenerates the artifact. No full formal
+verification, independent external review, or literature-priority claim is made.
 
 ## 7. Proof dependencies and formal boundary
 

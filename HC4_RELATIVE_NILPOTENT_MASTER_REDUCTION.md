@@ -6,8 +6,10 @@ This note consolidates the relative-nilpotent Hessian-pencil reductions.
 The [5 September transport audit](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) found
 that the final maximal-motion closure used an unjustified equation
 `d(pq)=0`. The normalized invariant is `pq/a^2`. Differentiated branch
-identities now close the positive sign, but the negative sign remains open.
-Consequently `HC4MR1` and the proposed equivalence `HC4MR2` are partial.
+identities close the positive sign. The
+[global polynomial-leaf obstruction](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md)
+now closes the negative sign. Consequently `HC4MR1` and `HC4MR2` are
+restored using these replacement arguments, not the unsupported extra equation.
 The lower-rank reductions and the lower-motion incidence argument remain
 available in their stated scopes.
 
@@ -53,16 +55,17 @@ parallel routes with conflicting local identifiers are preserved only in the
 
 ### Verification boundary
 
-The registered checker replays the exact moving-frame and prolongation
-calculations in the final regular `[4]` packet.  It is not an aggregate replay
+The registered checker verifies the final negative-branch curvature
+identities and polynomial ODE algebra; HC4MRA1 separately checks the positive
+sign and frame transport. It is not an aggregate replay
 of every implication in the proof map above.  The scalar, rank-at-most-two,
 rank-three reduction, developability, and incidence steps remain written
 proofs in their linked canonical notes.  `HC4MR1` currently has neither an
 independent end-to-end replay nor external review; those assurance tasks are
-separate from the theorem's stated scope.  Its committed local prolongation
-artifact is registered as a proof input.  The checker option
-`--audit-existing-only` verifies that artifact and its explicit local/global
-proof boundary without recomputing the symbolic prolongation or rewriting it.
+separate from the theorem's stated scope. The old local prolongation
+artifact is retained as an augmented-system regression. Its original
+checker's `--audit-existing-only` option verifies the artifact's integrity,
+not the withdrawn geometric inference `d(pq)=0`.
 
 Then `N` is polynomial, nilpotent, `S`-self-adjoint and Hessian-integrable:
 
@@ -75,7 +78,7 @@ N^{\mathsf T}S=SN,\qquad SN=T=\operatorname{Hess}A.
 
 ## Master theorem
 
-> **Partial theorem HC4-MR — relative-nilpotent master reduction.**
+> **Theorem HC4-MR — relative-nilpotent master reduction.**
 > The lower-rank and linearly-dependent packets reduce to `HC2` or the
 > exact cotangent lift of a plane Keller map by the linked written reductions.
 > The remaining regular rank-three block
@@ -91,13 +94,14 @@ N^{\mathsf T}S=SN,\qquad SN=T=\operatorname{Hess}A.
 > \]
 > is Frobenius-integrable, its middle distribution has affine two-plane
 > leaves. The positive maximal-motion sign is excluded by differentiated
-> branch identities; the negative sign is unresolved. Rank zero is fixed;
+> branch identities; the negative sign is excluded by global polynomiality
+> on an affine middle-plane leaf. Rank zero is fixed;
 > rank one either makes the middle plane constant
 > or produces an affine-hyperplane pencil which again forces a constant affine
 > invariant.  The latter alternatives lie in the already closed
 > linearly-dependent packet.
 
-The proof map and the remaining gap are described below.
+The proof map and the replacement maximal-motion argument are described below.
 
 ---
 
@@ -386,7 +390,9 @@ an `S`-adapted Jordan chain
 Ne_1=0,\quad Ne_2=e_1,\quad Ne_3=e_2,\quad Ne_4=e_3,
 \]
 
-with `e1=n` and anti-diagonal `S`.  Let
+with `e1` proportional to `n` and anti-diagonal `S`. The
+[Piola normalization argument](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md)
+justifies this scale and its affine quasi-translation property. Let
 
 \[
 B=(\operatorname{Hess}g)(F).
@@ -516,8 +522,28 @@ geometric hypotheses, so it does not prove `HC4RSD79`.
 The new exact prolongation differentiates `p=q=a` and gives `4a^2=0`,
 closing that sign. For `p=q=-a`, a compatible finite jet has
 `d(pq)=(0,3,0,0)` and `d(pq/a^2)=0`. The canonical
-[transport audit](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) records the surviving
-branch and its next compatibility equations.
+[transport audit](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) records this finite
+local compatibility.
+
+The negative sign is instead excluded by
+[HC4MRA2](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md).
+On an affine middle-plane leaf choose constant directions `v1,v2` and
+write `e1=f(t)v1`, `e2=h v1+v(t)v2`. Exact curvature combinations
+and connection coefficients give
+\[
+ e_2(a)=\tfrac32a^2,\qquad v'=\tfrac12a,\qquad
+ vf'=\tfrac52af.
+\]
+The ambient polynomial endomorphism has `N(v2)=n(t)v1` with
+`n=f/v` a nonzero polynomial on the whole affine leaf plane. The displayed
+equations give
+\[
+ 2nn''-3(n')^2=0.
+\]
+A nonconstant polynomial of degree `d` has nonzero leading coefficient
+factor `-d(d+2)` in this expression. Thus `n` is constant, forcing
+`a=0` and contradicting maximal motion. This closes the negative sign
+without asserting that its compatible local jet is inconsistent.
 
 For lower motion, rank zero is `HC4RSD65`.  Rank one has
 
@@ -547,13 +573,14 @@ The exact calculations and the full incidence proof are in
 .venv/bin/python scripts/verify_hc4_affine_plane_prolongation.py --audit-existing-only
 ```
 
-The negative maximal-motion sign remains unresolved. Replay the correction
-and the valid positive-sign closure with
-`.venv/bin/python scripts/verify_hc4_motion_frame_transport.py`.
+Replay the corrected positive and negative maximal-motion steps with
+`scripts/verify_hc4_motion_frame_transport.py` and
+`scripts/verify_hc4_negative_motion_polynomial_obstruction.py`.
+The final regular packet is therefore closed by the replacement proof.
 
 ---
 
-## Proposed restricted equivalence with `JC2`
+## Exact restricted equivalence with `JC2`
 
 Define `PHC4` (pencil-admissible `HC4`) to be the following assertion over a
 characteristic-zero field:
@@ -567,8 +594,7 @@ characteristic-zero field:
 > \]
 > then `grad(psi)` is injective, equivalently a polynomial automorphism.
 
-The intended fixed-dimensional equivalence remains conditional on closing
-the residual branch in `HC4MR1`:
+The corrected master reduction gives the fixed-dimensional equivalence:
 
 This is distinct from Meng's
 [Legendre-transform equivalence](https://arxiv.org/abs/math-ph/0308035) of the
@@ -576,15 +602,15 @@ unrestricted Jacobian and Hessian conjecture families. That broad equivalence
 allows the standard dimension-changing constructions; it does not by itself
 give the fixed implication `JC2 => HC4`.
 
-> **Partial corollary HC4-MR2 -- proposed relative-pencil equivalence.**
+> **Corollary HC4-MR2 -- relative-pencil equivalence.**
 > \[
 > \boxed{JC2\quad\Longleftrightarrow\quad PHC4.}
 > \tag{7.2}
 > \]
 
-The implication `JC2 => PHC4` would follow from a complete master
-reduction, but the negative maximal-motion sign has not been closed.
-It is therefore not established here.
+Assume `JC2`. The corrected `HC4MR1` reduces every relative-pencil
+stratum to `HC2` or the exact plane cotangent packet. `HC2` closes the
+first endpoint and `JC2` the second. Hence `PHC4` follows.
 
 Conversely, every plane Keller map
 
@@ -637,7 +663,7 @@ S^{-1}T=
 so every plane cotangent packet lies in the square-zero stratum of `PHC4`,
 not merely somewhere in the full relative-pencil class.  The exact collision
 comparison says that `grad(Psi)` is injective if and only if `F` is injective.
-Thus `PHC4` implies `JC2`. This proves one direction of (7.2).
+Thus `PHC4` implies `JC2`, completing (7.2).
 
 In particular, the already-known implication remains
 
@@ -648,14 +674,14 @@ HC4\Longrightarrow JC2
 by the standard cotangent bridge.
 Equivalently, unrestricted `HC4` implies `PHC4`.
 
-In addition to repairing the master reduction, a route to
-`JC2 => HC4` would need a **pencil-recognition theorem**: every
+With the repaired master reduction, a route to
+`JC2 => HC4` still needs a **pencil-recognition theorem**: every
 hypothetical four-variable constant-Hessian collision admits a nonaffine
 direction `A` satisfying (7.1), or can be changed to one by an operation that
 preserves the collision and the constant-Hessian condition.  A source-only
 direction in a cotangent chart gives a square-zero relative endomorphism;
-more general recognition may land in the still-open negative maximal-motion
-stratum. Pencil recognition alone no longer supplies the proposed converse.
+more general recognition may land in any of the Jordan strata closed by
+the corrected master reduction.
 
 This corollary does not prove unrestricted `HC4` or `JC2`: an arbitrary
 constant-Hessian polynomial is not known to admit a nonzero direction (7.1),
@@ -688,8 +714,8 @@ Z_\psi=V\bigl(q_\alpha(\ell)\bigr)\subset\mathbb P^3.
 > lies in `PHC4`. Consequently `JC2` implies that `grad(psi)` is a polynomial
 > automorphism.
 
-This rank-one consequence uses `HC4RSD16` directly, so it survives the
-gap in the full relative-pencil equivalence.
+This rank-one consequence uses `HC4RSD16` directly and does not require
+the full relative-pencil equivalence.
 
 Indeed, choose a nonzero point `ell` of `Z_psi` and put
 

@@ -5,22 +5,21 @@
 
 ## Status
 
-**Target update (2026-09-05):**
-[`19bad:083ad` has arithmetic rank zero](R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md)
-by incompatible regulator squareclasses at 131 and 137. Its
-`A-=Gamma_d=H_d=0`, and every rational section box is empty. The full
-two-Selmer group was not computed. The formal reductions and original
-five-survivor input gate below remain provenance; four arithmetic targets
-remain unresolved.
+**Target update (2026-09-05):** the [original `19bad:083ad` exclusion](R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md)
+and the [remaining-four regulator sweep](R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md)
+prove arithmetic rank zero for every former survivor. Thus all seventeen
+selected products have `A-=Gamma_d=H_d=0`, every rational section box is
+empty, and the section-solving queue is empty. Full two-Selmer groups were
+not computed. The formal reductions and original input gates below remain
+provenance and reusable infrastructure.
 
 This note closes the formal reduction of the product-character question to
 finite integral linear algebra and a two-descent/Kummer calculation.  The
 complete two-prime Frobenius classification now closes twelve targets more
 strongly: each product twist has geometric Mordell--Weil rank zero, so
-`A-=0`, `Gamma_d=0`, and `H_d=0`. For the four remaining arithmetic targets
-among the five persistent Tate-factor survivors, the full Mordell--Weil lattice after quadratic base change, or an
-equivalent complete two-Selmer calculation, is not present in the current
-certificates.  The exact 49-class norm-twelve trace-parity
+`A-=0`, `Gamma_d=0`, and `H_d=0`. The regulator proofs give the same arithmetic
+vanishing for the five persistent Tate-factor survivors without a full
+two-Selmer calculation. The exact 49-class norm-twelve trace-parity
 certificate and the no-hit inversion of all `49 * 17 = 833` residual cases do
 exclude the zero Tate class for a height-eight section under the stated direct
 polynomial and local-component height hypotheses. The four remaining quotients
@@ -467,12 +466,12 @@ alternate-orbit-11ee2 : alternate-orbit-0c36e
 alternate-orbit-0c10b : alternate-orbit-17a1a.
 ```
 
-These five were the complete descent/class-sliced worklist before the
-arithmetic closure of `19bad:083ad` linked above. A Tate factor at
+These five were the complete descent/class-sliced worklist before their
+arithmetic closure linked above. A Tate factor at
 both primes is not a positive-rank theorem.  The full table and replay are in
 [`R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md`](R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md).
 
-<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION cfb2417a30fab18d -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION 8aac526ec5ca3822 -->
 
 ## Five-survivor component-Galois gate
 
@@ -501,3 +500,5 @@ exactly one.  See
 <!-- status-consumer: EC-K3-R17-PRODUCT-SURVIVOR-GALOIS-HEIGHT-GATE 32b87c35a2573768 -->
 
 <!-- status-consumer: EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO fe572bd5979b5d2c -->
+
+<!-- status-consumer: EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP f86dead53d55babe -->

@@ -13,6 +13,10 @@ The [rational-solubility theorem package](../elkies-k3/RATIONAL_SOLUBILITY_AND_R
 connects residual Selmer classes to the point-search charts. An exact
 eleven-fibre replay supplies 110 independent soluble 2-cover classes and
 their forced-zero Cassels--Tate rows; unknown complements remain unclassified.
+The [soluble-versus-Sha comparison](notes/EXCEPTIONAL_SOLUBLE_VS_SHA_PANEL_2026-09-05.md)
+adds 62 marked quartic presentations on 356/385/398/400/543 and a certified
+rank-16 Sha obstruction control. Pairing rank detects Sha; the surviving
+radical and coefficient size do not certify solubility.
 
 ## Current milestone
 
@@ -40,7 +44,7 @@ targets, parameters, public points, ranks, or target `j`-invariants.
   than nine independent hits: exact base-change audits collapse the repeated
   labels on curves 398, 400, and 548 to one fibration each.  The initial
   maximum-depth wave recovers 38 of 55 demonstrated quotient directions; the
-  completed curve-398 and new curve-400 adaptive waves raise the best blind
+  historical curve-398 and curve-400 adaptive waves raise that blind
   total to 54 of 55.  Curve 400 is an exact `M16 -> M21 -> M28` recovery.
   The completed target-free height-300 parameter experiment retains 104 exact,
   pairwise nonisomorphic fibres across all nine anonymous coordinate charts.
@@ -53,9 +57,13 @@ targets, parameters, public points, ranks, or target `j`-invariants.
   completes all 856 frozen prospective charts at height 10,000 without generic
   minimization or reduction. Its exact denominator/lattice transforms yield
   1,537--1,789-bit quartics; all modular searches together take 53.1 seconds.
-  It finds no prospective point. Separate initial controls recover twenty
-  directions; the historical adaptive 54/55 sensitivity is not yet replayed
-  with these coordinates.
+  That first run finds no prospective point and recovers twenty initial
+  control directions. The new [sensitivity calibration](notes/MW16_SENSITIVITY_RECOVERY_2026-09-05.md)
+  varies height, horizontal coordinates, rational slopes, and centres. Its
+  frozen metric policy recovers **55/55** control directions, including the
+  missing curve-401 direction. The subsequent 104-fibre rerun completes all
+  856 height-100,000 boxes with no finite point, quotient gain, or timeout;
+  this is a bounded null result, not a rank upper bound.
   The [model-size audit](notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md#exact-arithmetic-model-audit)
   now supplies global minimal models, all sixteen transported sections and
   arithmetic-selected quartic coordinates for every finalist.
@@ -71,7 +79,16 @@ targets, parameters, public points, ranks, or target `j`-invariants.
   span, as certified by valuation parity above 19. The inherited space now
   has a [certified Cassels--Tate matrix of rank 16](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md),
   leaving a two-dimensional radical and just three nonzero point-solving
-  candidates. Their point-or-Sha status remains unknown.
+  candidates. Their point-or-Sha status remains unknown. The
+  [six-model follow-up](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md#six-globally-minimal-radical-models-and-a-bounded-higher-descent-attack)
+  certifies global minimality and exact maps for original and Q-translated
+  quadric intersections; lattice searches and incomplete higher descents
+  have not decided a class.
+<!-- status-consumer: EC-FIXED-CUBIC-RADICAL-MINIMAL-MODELS 90216b8c456edd20 -->
+  The [geometry audit](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md#search-geometry-audit-and-revised-method)
+  proves all six nominal search boxes were already empty by elementary
+  inequalities and records a revised method that shares higher-descent work.
+<!-- status-consumer: EC-FIXED-CUBIC-RADICAL-SEARCH-GEOMETRY 678f7beb805a4530 -->
 <!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE df45391a84f0e3c9 -->
 <!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-RANK1 7e488a894d136732 -->
 - The pinned K3 now has two explicit rootless arithmetic MW17 charts over `QQ`: published R17 and the direct degree-two alternate-Q80 chart from `norm12-orbit-11952`.
@@ -282,3 +299,7 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 
 <!-- status-consumer: EC-K3-ICARM-MW16-POINTED-SIEVE cb83c1afae1d0141 -->
+
+<!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON f37417a9fda3ee3f -->
+
+<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY 1abe84480122e9b4 -->

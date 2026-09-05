@@ -1,0 +1,273 @@
+{
+  "format": "hc4-motion-frame-transport-v1",
+  "theorem": "HC4MRA1",
+  "source_sha256": {
+    "scripts/verify_hc4_affine_plane_prolongation.py": "bc36c86c08ea8cec6d43fe3deb6013ff86e0a3be01049fbd63a2963f4f706f73",
+    "scripts/verify_hc4_motion_frame_transport.py": "657ee6264e909433bc0d37fb72306deffed95106f7dc449cc283278590580f6c"
+  },
+  "transport": {
+    "adapted_graph_hessian": [
+      [
+        "-b",
+        "-a",
+        "0"
+      ],
+      [
+        "-a",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "adapted_projective_derivative": [
+      [
+        "-q",
+        "0",
+        "0"
+      ],
+      [
+        "-h",
+        "-p",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "determinant_one_source_change": [
+      [
+        "-1/a",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "b/(2*a)",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-a"
+      ]
+    ],
+    "normalized_graph_hessian": [
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "normalized_projective_derivative": [
+      [
+        "q/a",
+        "0",
+        "0"
+      ],
+      [
+        "-(-2*a*h + b*p - b*q)/(2*a**2)",
+        "p/a",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "normalized_projective_determinant": "p*q/a**2",
+    "b_zero_preserves_metric": true,
+    "change_does_not_preserve_normalized_jordan_matrix": true,
+    "conclusion": "Frozen normalization controls pq/a^2, not pq; d(pq)=0 does not follow."
+  },
+  "branches": {
+    "geometric_parameter_names": {
+      "a": "p4",
+      "p": "p0",
+      "q": "p8"
+    },
+    "positive_sign_equation_count": 104,
+    "positive_sign_left_kernel_witness": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-2",
+      "0",
+      "-2",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-3",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "positive_sign_combination": "-4*p4**2",
+    "positive_sign_conclusion": "a!=0 and p=q=a are inconsistent after differentiating the branch identities.",
+    "negative_sign_compatibility": [
+      "-2*p4*(p12 + p3 + p7)"
+    ],
+    "negative_sign_extra_linear_relation": "p12 + p3 + p7",
+    "negative_sign_next_compatibility": [
+      "-2*p1*p4 + p11*p4 - 5*p12*p7 + 2*p2*p7 - 3*p4*p6 - 3*p7**2"
+    ],
+    "finite_jet": {
+      "parameters": {
+        "p0": "-1",
+        "p1": "0",
+        "p2": "0",
+        "p3": "0",
+        "p4": "1",
+        "p5": "0",
+        "p6": "0",
+        "p7": "0",
+        "p8": "-1",
+        "p9": "0",
+        "p10": "0",
+        "p11": "0",
+        "p12": "0",
+        "p13": "0",
+        "p14": "0",
+        "p15": "0",
+        "p16": "0"
+      },
+      "nonzero_directional_derivatives": {
+        "dp1_2": "3/2",
+        "dp2_0": "-3/2",
+        "dp2_4": "3/2",
+        "dp2_8": "-3/2"
+      },
+      "checked_equations": 108,
+      "d_pq": [
+        "0",
+        "3",
+        "0",
+        "0"
+      ],
+      "d_normalized_ratio": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "boundary": "Compatible finite connection jet only; no all-order integrability or polynomial Hessian pair is claimed."
+    }
+  },
+  "status_effect": "HC4MR1 and HC4MR2 are partial; the negative maximal-motion sign remains open."
+}

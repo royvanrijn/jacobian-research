@@ -334,9 +334,9 @@ and the batch
 - The historical degree-11511 Q80 transport and million-bit third-`q12` reconstruction are superseded operationally and retained only for provenance.
 - The four published R17 rank-25--28 controls are **not** rational fibres of the alternate chart: their exact alternate `j`-preimage polynomials have no rational roots.  Native calibration is now supplied independently by curve 12 (rank at least 29) and curves 363, 364, 378, and 395 (ranks at least 24--28).
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO 61d8e223f0ef7d0f -->
-- **Alternate arithmetic laboratory:** all 121 inherited quadratic covers and their 7,260 pair products are certified.  The cheapest 1,024 native bisections are compiled exactly; together with the inherited covers they give 1,143 distinct rational conics, pairwise-disjoint branch divisors, and no catalogued three-character `V4` closure.  Exact curve intersections give 10,362 intersection-one pairs in the native prefix and 64 promoted rational genus-one `V4` bases; seventeen of their Jacobians have certified rank one.  Product-character inversion exhausts all 63,917 norm-eight traces and the 49 exact norm-twelve residual parities, with no hit in any of the final 833 trace/target cases.  Complete two-prime degree-46 `H^2` reconstruction now proves geometric product-twist rank zero for twelve of the seventeen selected bases and hence `A^-=Gamma_d=Hhat^(-1)=0` there.  Exactly five products retain Tate degree two at both primes and form the complete descent worklist; their unique Frobenius-fixed direction at `p=137` bounds each arithmetic product rank by one, but does not prove a section.  At shortlist rank 55 the product is zero while the singleton twists have unconditional geometric rank intervals `[1,2]` and `[1,2]`, not yet exact rank one.
+- **Alternate arithmetic laboratory:** all 121 inherited quadratic covers and their 7,260 pair products are certified.  The cheapest 1,024 native bisections are compiled exactly; together with the inherited covers they give 1,143 distinct rational conics, pairwise-disjoint branch divisors, and no catalogued three-character `V4` closure.  Exact curve intersections give 10,362 intersection-one pairs in the native prefix and 64 promoted rational genus-one `V4` bases; seventeen of their Jacobians have certified rank one.  Product-character inversion exhausts all 63,917 norm-eight traces and the 49 exact norm-twelve residual parities, with no hit in any of the final 833 trace/target cases.  Complete two-prime degree-46 `H^2` reconstruction now proves geometric product-twist rank zero for twelve of the seventeen selected bases and hence `A^-=Gamma_d=Hhat^(-1)=0` there.  Exactly five products retain Tate degree two at both primes, with geometric ranks still unknown in `[0,2]`. The [regulator proofs](R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md) close all five arithmetically, so all seventeen selected product twists have rank zero over `QQ(u)` and the section-solving queue is empty.  At shortlist rank 55 the product is zero while the singleton twists have unconditional geometric rank intervals `[1,2]` and `[1,2]`, not yet exact rank one.
 <!-- status-consumer: EC-K3-R17-NORM12-11952-RANK55-SINGLETON-FROBENIUS-BOUNDS 163b9ffe20045a08 -->
-<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION cfb2417a30fab18d -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION 8aac526ec5ca3822 -->
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ZERO-TATE-CLASS-EXCLUSION 9e1c09d47fcf0bde -->
 - **All-chart rational-bisection closure:** all ten alternate-Q80 norm-twelve
   charts now have saturated `24 I1` equation markings.  Four are completed by
@@ -405,6 +405,7 @@ and the batch
 - [`R17_ALTERNATE_Q80_PRODUCT_TWIST_RANK_ZERO_2026-09-04.md`](R17_ALTERNATE_Q80_PRODUCT_TWIST_RANK_ZERO_2026-09-04.md) — complete open-source toric Frobenius polynomial at `p=131`, Picard bound `rho<=18`, and geometric rank zero for the shortlist-rank-55 product twist.
 - [`R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md`](R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md) — complete two-prime cohomological triage: twelve geometric rank-zero products and five degree-two Tate survivors.
 - [`R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md`](R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md) — exact component-Galois gate on the five survivors, arithmetic product-rank bound `<=1`, constructor-aware target order, and the independently audited `p=151` persistence of the primary target.
+- [`R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md`](R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md) — all four remaining products have arithmetic rank zero; together with the prior exclusions, all seventeen selected products are arithmetically closed and the section-solving queue is empty.
 <!-- status-consumer: EC-K3-R17-PRODUCT-SURVIVOR-GALOIS-HEIGHT-GATE 32b87c35a2573768 -->
 - [`R17_ALTERNATE_Q80_SINGLETON_TWIST_FROBENIUS_BOUNDS_2026-09-04.md`](R17_ALTERNATE_Q80_SINGLETON_TWIST_FROBENIUS_BOUNDS_2026-09-04.md) — unconditional geometric rank intervals `[1,2]` for the two rank-55 singleton blocks.
 <!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-RANK55-GEOMETRIC-RANK-ZERO 61d8e223f0ef7d0f -->
@@ -435,14 +436,6 @@ should not be presented or resourced as peers of the three primary lanes:
 - solve the 34 missing published-R17 rational-visibility directions by a
   target-directed inverse problem, without enumerating the ambient trisection
   or quadrisection cosets;
-- compute the nonzero 2-primary quotient classes for the four remaining
-  arithmetic alternate-Q80 product candidates and solve their class-sliced
-  `P.O=0` systems.  The former first target `19bad:083ad` has
-  [arithmetic rank zero at every height](R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md)
-  by incompatible regulator squareclasses at 131 and 137;
-  the zero class is closed uniformly, and
-  the unsliced eight-variable `msolve` and expanded carrier-atlas campaigns
-  remain superseded;
 - study multi-prime defect reachability and possible finite-prime sufficient
   sets;
 - complete `J1` surface-automorphism classification only when it directly
@@ -450,6 +443,10 @@ should not be presented or resourced as peers of the three primary lanes:
 
 Independent publication-grade replays remain useful validation work, not a
 separate research front.
+
+The alternate-Q80 seventeen-product section worklist is
+[closed by exact rank-zero certificates](R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md).
+No class-sliced section solving remains for those products.
 
 Do **not** restart the old giant Q80 reconstruction, broad foundry enumeration, or ungated rank searches just because those scripts remain in the repository.
 Do not count another determinant-948 equation as the different-NS foundry
@@ -491,3 +488,5 @@ Use [`../REPRODUCE.md`](../REPRODUCE.md) and the exact checker paths recorded in
 <!-- status-consumer: EC-RATIONAL-SOLUBILITY-RESIDUAL-SELMER 431d915185bf3de9 -->
 
 <!-- status-consumer: EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO fe572bd5979b5d2c -->
+
+<!-- status-consumer: EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP f86dead53d55babe -->

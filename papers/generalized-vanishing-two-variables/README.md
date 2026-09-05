@@ -7,10 +7,14 @@ winding--profile--radial failure family and the specialization for every
 power `Delta^k`, `k >= 6`.
 
 <!-- status-consumer: GVC2SC f31ee48fbbecd427 -->
+<!-- status-consumer: GVC2OC 75a2a340b8aa099a -->
 
 Section 6.1 also gives the binary support-certificate equivalence over the
-original field, a finite decision procedure for rational inputs, and the
-explicit mixed cutoff `m > (deg P + deg Lambda) deg Q`. The canonical
+original field and a finite decision procedure for rational inputs. It proves
+the optimal operator-independent mixed cutoff `m > C_d deg Q`, where
+`d = deg P` and `C_d = 1 + floor((d+1)^2/4)`, with an equality family
+in every degree. The earlier bound `m > (d + deg Lambda) deg Q` also holds;
+either bound can be used. The canonical
 [proof and exact checker](../../extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md)
 record the algorithm and its assurance boundary.
 
@@ -75,5 +79,5 @@ Lemma 3.1, the number-field shifted-ray
 transfer and its equal-face ordering, or the no-reversal/global-envelope
 parts of the binary theorem.  Thus it is not a complete formal verification
 of the whole manuscript.
-The Hall-direction descent and effective bound in Section 6.1 are written
+The Hall-direction descent and optimal uniform bound in Section 6.1 are written
 proofs and are not currently formalized.

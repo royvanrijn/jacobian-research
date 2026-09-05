@@ -16,7 +16,11 @@
 > distinguish them.  The fixed squarefree carrier further forces
 > `ord_pi(a)>=5`.  Consequently the two-component normal row has only
 > exponents `6,8,10`, while the one-component normal cusp has only exponents
-> `5,7,9`, with exact infinity semigroups and affine delta budgets below.
+> the numerical candidates `5,7,9`, with exact infinity semigroups and affine
+> delta budgets below. The [sharp polynomial parametrization gap bound](F2_DEGREE_6_10_POLYNOMIAL_GAP.md)
+> subsequently excludes `r=9`: a birational pair of degrees `(6,10)` has
+> first odd gap at most 21, whereas that row requires 27. Thus only `r=5,7`
+> remain among the normal odd rows.
 > The two even target quintics satisfy an exact sparse-difference theorem:
 > the `r=6,8,10` rows have respectively conic, line, and constant implicit
 > differences.  The constant-difference locus is an explicit one-parameter
@@ -295,6 +299,16 @@ r&\Gamma_\infty^{\rm local}&\text{Abhyankar delta sequence}
 Thus the apparent odd exponents `11,13` allowed by the genus inequality are
 not polynomial one-place curves of degrees `(6,10)`.
 
+The last row of (3.13) is also impossible, by the stronger
+[polynomial parametrization theorem PF2D6O1](F2_DEGREE_6_10_POLYNOMIAL_GAP.md).
+The numerical delta-sequence conditions do not guarantee parametrizability
+in the prescribed degrees. An exact ideal-membership certificate forces
+every degree-`(6,10)` pair with odd Puiseux gap greater than 21 to factor
+through a quadratic polynomial. The `r=9` gap is 27, contradicting a
+normalization parametrization. The `r=7` gap 21 is attained by an explicit
+birational polynomial pair, so this bound leaves precisely `r=5,7` here.
+The original numerical table is retained as an input ledger to that proof.
+
 Now let `r` be even and put `m=3r/2`.  The two target components are
 rational quintics.  Each has the fixed `(2,5)` infinity cusp, so each has
 `delta_infinity=2` and total affine delta four.  In the toric chart the two
@@ -376,7 +390,8 @@ ramification--residual intersection charge
  Q_r=2\delta(R)+\operatorname{mult}(C)-1=r.    \tag{3.19}
 \]
 
-For the three polynomial rows, `Q_r` is therefore `5,7,9`.  Proving that
+For the three numerical rows, `Q_r` is therefore `5,7,9`; PF2D6O1 separately
+excludes the last. Proving that
 this positive charge injects into the root-subtracted localized
 `ch_2`/`Fitt_1` point budget would exclude all three rows at once.  Such a
 comparison is not presently proved: (3.19) is a resolved fiber-product
@@ -1214,7 +1229,8 @@ The degree-six problem is now divided as follows.
 | normal slice, `ord(a)=6` | irreducible rational ordinary-cusp surface plus the two `E_6` rows (3.66) | excluded by certified braid monodromy and tame-split regeneration, (3.70) |
 | normal slice, `ord(a)=8` | the two component-swapped copies of the exact `A_2+3A_1` / `4A_1` quartic (3.54)--(3.57) | excluded for all four embeddings by certified braid monodromy, (3.59) |
 | normal slice, `ord(a)=10` | two disjoint four-node quintics with constant difference | excluded by (3.51) |
-| normal slice, `ord(a)` odd | one `k=2` simple-inertia component; the three semigroups (3.13) | unresolved three-row cusp-at-infinity case |
+| normal slice, `ord(a)=9` | one `k=2` simple-inertia component; third semigroup in (3.13) | excluded by the sharp polynomial parametrization gap theorem [PF2D6O1](F2_DEGREE_6_10_POLYNOMIAL_GAP.md) |
+| normal slice, `ord(a)=5,7` | one `k=2` simple-inertia component; first two semigroups in (3.13) | unresolved two-row cusp-at-infinity case |
 | nonnormal terminal slice | one of the four finite conductor--contact families (5.6) | unresolved normalization/contracted-fiber case |
 
 Thus a degree-six counterexample, if one exists, must lie in one of the last
@@ -1252,6 +1268,7 @@ completely.  The last row includes smooth ambient Stein points such as
 
 ```bash
 .venv/bin/python scripts/verify_f2_geometric_degree_six_stein_reduction.py
+.venv/bin/python scripts/verify_f2_degree_6_10_gap.py
 .venv/bin/python scripts/explore_f2_r8_cusp_braid.py
 .venv/bin/python scripts/explore_f2_r8_cusp_braid.py --real-root-index 0
 # Requires SageMath with its optional SIROCCO package:

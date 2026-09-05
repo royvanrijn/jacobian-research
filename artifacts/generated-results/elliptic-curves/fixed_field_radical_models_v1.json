@@ -1,0 +1,40 @@
+{
+  "arithmetic": {
+    "certified_curve_rank_lower_bound": 1,
+    "certified_realized_subspace_dimension": 0,
+    "exact_minimal_quadric_models": 6,
+    "incomplete_four_descent_attempts": 6,
+    "jacobian_minimal_discriminant": "956605800519448531227592520071824534364817647241722433994840053370418221238157182315498628321332970501601597213418570440312816466445393464762279425776384355727733334987332739997433856000000000",
+    "point_or_sha": {
+      "1047173": "UNKNOWN",
+      "450876": "UNKNOWN",
+      "596921": "UNKNOWN"
+    },
+    "realized_anchor_masks": [],
+    "verified_points": 0
+  },
+  "claim_boundary": [
+    "No bounded miss or failed descent is a Sha certificate.",
+    "No complete Mordell-Weil basis, full Selmer group or exact rank is asserted."
+  ],
+  "evidence": "artifacts/generated-results/elliptic-curves/fixed_field_radical_models_evidence_v1.json.gz",
+  "evidence_sha256": "d905068a425e3ac924ff11974fe4d94fffb7522dde5b13153fd394333d0d41f8",
+  "limits": {
+    "Q_translations_per_class": 2,
+    "calculator_seconds_per_job": 60,
+    "classes": 3,
+    "only_one": true,
+    "pointsqi_height_argument": 10000000
+  },
+  "method": "Magma degree-four Minimise/Reduce and Elkies p-adic lattice PointsQI",
+  "schema": "elliptic-curves.fixed-field-radical-models.v1",
+  "software": {
+    "magma": "2.29-9",
+    "sage": "10.9"
+  },
+  "source_hashes": {
+    "elliptic-curves/cas/run_fixed_field_point_realization.py": "95c2ee4dc131b42ec3477c1994e51394bec7683786fc303cb7b5bfe88eca254c",
+    "elliptic-curves/cas/run_fixed_field_radical_covers.py": "45483d91c616555141309442622c925c5b05a15a13ba77e2be8d94c7186dca52"
+  },
+  "status": "EXACT_MINIMAL_MODELS_WITH_BOUNDED_LATTICE_SEARCH"
+}

@@ -63,9 +63,9 @@ which writes
 [artifacts/generated-results/hc4_quadratic_rank_one_pivots.json](artifacts/generated-results/hc4_quadratic_rank_one_pivots.json).
 Its nonsingular-quadratic and higher-degree `open_frontier` is stage-local:
 `HC4RSD11--16` settle the quadratic cancellation handoff, while `HC4MR1`
-consolidates the auxiliary higher-degree reductions but leaves the
-negative maximal-motion sign open after
-[HC4MRA1](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md).
+consolidates the auxiliary higher-degree reductions, with its final
+maximal-motion step repaired by HC4MRA1 and
+[HC4MRA2](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md).
 
 ## 1. The passive three-by-three Hessian
 

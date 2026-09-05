@@ -22,6 +22,18 @@ strict:
 
 Important distinctions made explicit by the catalogue:
 
+- `mw16_sensitivity_*v1.json.gz` and their summaries retain the exact
+  coordinate/centre calibration and the subsequent gated prospective replay.
+  The selected policy recovers 55/55 control directions; all 856 prospective
+  height-100,000 boxes complete with no gain or timeout. See the
+  [canonical sensitivity note](../../../elliptic-curves/notes/MW16_SENSITIVITY_RECOVERY_2026-09-05.md).
+
+- `exceptional_soluble_vs_sha_comparison_v1.json` extends the five primary
+  target rows with 62 marked quartics and a same-curve soluble/Sha control.
+  The inherited residual block has dimension 18 and CT rank 16; full
+  target complements remain unknown. `exceptional_selmer_feasibility_v1.json`
+  preserves the bounded setup failures. See the
+  [comparison and proof bounds](../../../elliptic-curves/notes/EXCEPTIONAL_SOLUBLE_VS_SHA_PANEL_2026-09-05.md).
 - `exceptional_soluble_selmer_panel_v1.json` certifies 110 independent
   residual point classes across eleven fixed exceptional fibres, with
   exact cubic square characters, explicit quadrics, and rational witnesses.
@@ -52,6 +64,17 @@ Important distinctions made explicit by the catalogue:
   candidates; all other classes have a proved Sha obstruction. The summary
   includes the full matrix, symplectic pairs, radical masks and quartics.
 <!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE df45391a84f0e3c9 -->
+
+- `fixed_field_radical_models_v1.json` and its compressed evidence retain
+  six globally minimal degree-four models, exact maps, completed p-adic
+  lattice searches without hits, and six incomplete four-descent attempts.
+  All three radical classes remain **UNKNOWN**.
+<!-- status-consumer: EC-FIXED-CUBIC-RADICAL-MINIMAL-MODELS 90216b8c456edd20 -->
+
+- `fixed_field_radical_search_geometry_v1.json` certifies that elementary
+  real inequalities already excluded all six nominal height boxes. This
+  corrects the interpretation of the searches without deciding a class.
+<!-- status-consumer: EC-FIXED-CUBIC-RADICAL-SEARCH-GEOMETRY 678f7beb805a4530 -->
 
 - `quotient_geometry_table_v1.json` is the complete 30-presentation join of
   five usable R17 controls, sixteen refreshed R17 ladder fibres, and nine
@@ -439,3 +462,7 @@ The pre-cleanup bytes and every provenance-only refresh are recorded under
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 
 <!-- status-consumer: EC-K3-ICARM-MW16-POINTED-SIEVE cb83c1afae1d0141 -->
+
+<!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON f37417a9fda3ee3f -->
+
+<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY 1abe84480122e9b4 -->

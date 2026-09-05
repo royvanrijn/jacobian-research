@@ -795,9 +795,11 @@ by ID rather than silently normalizing them:
 ## P2 — HC4, DC2, and Hessian programme
 
 **Later correction, 5 September:** the historical closure descriptions below
-are superseded by [HC4MRA1](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md). HC4MR1/2
-are partial because the frozen determinant controls `pq/a^2`, not `pq`.
-The maintenance checks did not establish that missing geometric premise.
+are corrected by [HC4MRA1](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md): the frozen
+determinant controls `pq/a^2`, not `pq`. The maintenance checks did not
+establish the missing premise. The subsequent
+[HC4MRA2 polynomial-leaf proof](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md)
+repairs the negative sign and restores HC4MR1/2 through a different argument.
 
 - [ ] Recheck scalar, rank-one, rank-two, repeated-factor, and Schur packets for
   a complete pivot stratification.

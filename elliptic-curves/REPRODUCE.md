@@ -43,6 +43,18 @@ the compact current artifact directory:
 
 ## Primary record certificates
 
+The [exceptional soluble-versus-Sha panel](notes/EXCEPTIONAL_SOLUBLE_VS_SHA_PANEL_2026-09-05.md)
+has a narrow replay including Kummer independence, CT arithmetic, marked
+cover transports and preserved descent-failure logs:
+
+```sh
+sage -python elliptic-curves/cas/compare_exceptional_soluble_vs_sha.sage --check
+sage -python -m unittest elliptic-curves/tests/test_exceptional_soluble_vs_sha.py
+```
+
+The replay runs no point search or class group. The separate bounded
+feasibility runner and its limits are documented in the canonical note.
+
 ### ICARM ids 475--573: atlas refresh and priority intake
 
 Replay the immutable 573-row norm-twelve sweep, the complete appended-row
@@ -535,6 +547,20 @@ control limitations are in [POINTED_QUARTIC_SIEVE.md](notes/POINTED_QUARTIC_SIEV
 For current results and promotion boundaries see
 [`ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md`](notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md).
 
+The [subsequent sensitivity calibration](notes/MW16_SENSITIVITY_RECOVERY_2026-09-05.md)
+recovers 55/55 control directions. Its full bounded replay, including the
+prospective gate, is `bash elliptic-curves/cas/replay_mw16_sensitivity.sh`.
+Check the retained evidence without rerunning the searches:
+
+```sh
+python3 elliptic-curves/cas/check_mw16_sensitivity_policy.py --check \
+  --bundle artifacts/generated-results/elliptic-curves/mw16_sensitivity_controls_v1.json.gz \
+  --summary artifacts/generated-results/elliptic-curves/mw16_sensitivity_controls_summary_v1.json
+python3 elliptic-curves/cas/check_mw16_sensitivity_policy.py --check \
+  --bundle artifacts/generated-results/elliptic-curves/mw16_sensitivity_prospective_v1.json.gz \
+  --summary artifacts/generated-results/elliptic-curves/mw16_sensitivity_prospective_summary_v1.json
+```
+
 The separate target-free experiment consumes the anonymous family template,
 not the target-bearing parent fixture.  Rebuild its frozen 104-fibre input and
 run the eight checkpoint shards with direct exact quartic coordinates:
@@ -620,6 +646,30 @@ The [pairing note](notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md)
 gives the restricted matrix, preferred generators, and bounded regeneration
 command. Rank 16 of this pairing does not bound the full curve rank.
 <!-- status-consumer: EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE df45391a84f0e3c9 -->
+
+The six original/Q-translated radical models have a separate offline
+replay of their global minimality and exact inverse maps:
+
+```sh
+sage -python elliptic-curves/cas/run_fixed_field_radical_covers.py
+sage -python -m unittest elliptic-curves/tests/test_fixed_field_radical_covers.py
+```
+
+All three point-or-Sha classifications remain unknown. The canonical
+pairing note records the bounded lattice searches and failed higher
+descents, including their exact regeneration inputs.
+<!-- status-consumer: EC-FIXED-CUBIC-RADICAL-MINIMAL-MODELS 90216b8c456edd20 -->
+
+The nominal lattice-search boxes have an exact, offline geometry audit:
+
+```sh
+sage -python elliptic-curves/cas/audit_fixed_field_radical_search_geometry.py
+sage -python -m unittest elliptic-curves/tests/test_fixed_field_radical_search_geometry.py
+```
+
+All six boxes are empty by real inequalities and denominator bounds. This
+is a bounded height exclusion; all three global classifications remain unknown.
+<!-- status-consumer: EC-FIXED-CUBIC-RADICAL-SEARCH-GEOMETRY 678f7beb805a4530 -->
 
 ### Comparative height lattices: ranks 28--31
 
@@ -1846,3 +1896,7 @@ Use the historical Git revision named in the archive README when an old script
 must be run exactly in its former directory layout.
 
 <!-- status-consumer: EC-K3-ICARM-MW16-POINTED-SIEVE cb83c1afae1d0141 -->
+
+<!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON f37417a9fda3ee3f -->
+
+<!-- status-consumer: EC-K3-ICARM-MW16-SENSITIVITY 1abe84480122e9b4 -->

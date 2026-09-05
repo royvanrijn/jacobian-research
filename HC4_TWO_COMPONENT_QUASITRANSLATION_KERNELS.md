@@ -280,6 +280,6 @@ or four nonlinear components, or kernel lines that move with the pencil
 parameter. Nonsingular reduced pencils with Schur-term cancellation and
 matrix pivots with moving kernel planes are also outside its scope. The
 nonzero-corner auxiliary constant-Hessian-pencil branch is consolidated
-in `HC4MR1`, whose final negative maximal-motion sign remains open after
-[HC4MRA1](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md); nonlinear
+in `HC4MR1`, whose corrected maximal-motion closure uses HC4MRA1 and
+[HC4MRA2](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md); nonlinear
 zero-corner exact remainders and moving matrix planes remain open.

@@ -16650,6 +16650,38 @@
       "priority": "derived"
     },
     {
+      "id": "GVC2OC",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Optimal binary GVC mixed cutoff depending only on polynomial degree",
+      "scope": "For every characteristic-zero binary pair satisfying the all-powers pure-vanishing premise, with nonzero P of degree d, every multiplier Q satisfies Lambda^m(Q*P^m)=0 for m>C_d*deg(Q), where C_d=1+floor((d+1)^2/4), independently of the operator degree. This coefficient is optimal for each d>=0. The integer-support lemma proves that strict positive separation of an arbitrary operator support above a polynomial support of degree at most d admits a weight with max(weight)/gap<=C_d. Its proof maximizes the normalized concave envelope gap: polynomial breakpoints have denominator at most d, while operator breakpoints give 1/gap=1/A+B/N+BC/(AN)<=1+B+BC<=C_d with positive integers A,N and B+C<=d. Sharpness is attained by Lambda=dx^e+dy^(e*j+1), P=x^(e-1)*y^j, Q=x^q, with e+j=d+1 and e*j=floor((d+1)^2/4): the last nonzero mixed power is (e*j+1)*q. Both this bound and the earlier d+deg(Lambda) bound remain valid. The universal envelope lemma and the support-certificate necessity are written proofs; the checker verifies symbolic identities, 2475 small support pairs in both orientations, 18 sharp contractions, and high operator orders. No full formal verification, external review, or literature-priority claim.",
+      "canonical_source": "extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md",
+      "dependencies": [
+        "GVC2SC"
+      ],
+      "checker": "scripts/verify_binary_gvc_optimal_cutoff.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:b0e07ec26753d9e6df4baafdee6b152ca55bc635c2660f06e21693586b459a15",
+      "software_lock": [
+        "artifacts/generated-results/binary-gvc-optimal-cutoff-v1.json",
+        "requirements.txt",
+        ".python-version"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "papers/generalized-vanishing-two-variables/README.md",
+        "extended-geometry/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "derived"
+    },
+    {
       "id": "GVC2FER",
       "kind": "reproduction",
       "state": "proved",
@@ -21700,7 +21732,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "F2 normal degree-six even-terminal exclusion",
-      "scope": "Assume the F2 terminal Cartier slice in the local rank-three Stein factor is normal. Terminal localization and the carrier/genus gates leave even exponents r=6,8,10. Exact implicitization proves that the paired rational quintics differ respectively by a conic, a line, and a constant. Orevkov's residue-normalized degree-six identity requires total local excess one. The r=10 saturation is a disjoint union of two four-node quintics, so its branch divisor is SNC and has excess zero. For r=8, the entire necessary locus is a reduced quartic field whose pair is uniformly A2+3A1 versus 4A1 with three transverse mutual intersections; certified Sage/SIROCCO braid monodromy at all four complex embeddings leaves seven equal-or-disjoint transposition assignments and no transitive degree-six action. For r=6, the unibranch incidence is one irreducible rational surface. Its ordinary-A2 locus regenerates through tame-split multibranch strata to one rational witness; its only locally admissible higher singularities are two E6 scale classes. Certified braids at the generic witness and both E6 classes again leave seven assignments and no transitive action. Hence every normal even row r=6,8,10 is impossible. The theorem does not exclude the normal odd rows r=5,7,9, nonnormal terminal slices with conductor, all of (75,125), or JC(2).",
+      "scope": "Assume the F2 terminal Cartier slice in the local rank-three Stein factor is normal. Terminal localization and the carrier/genus gates leave even exponents r=6,8,10. Exact implicitization proves that the paired rational quintics differ respectively by a conic, a line, and a constant. Orevkov's residue-normalized degree-six identity requires total local excess one. The r=10 saturation is a disjoint union of two four-node quintics, so its branch divisor is SNC and has excess zero. For r=8, the entire necessary locus is a reduced quartic field whose pair is uniformly A2+3A1 versus 4A1 with three transverse mutual intersections; certified Sage/SIROCCO braid monodromy at all four complex embeddings leaves seven equal-or-disjoint transposition assignments and no transitive degree-six action. For r=6, the unibranch incidence is one irreducible rational surface. Its ordinary-A2 locus regenerates through tame-split multibranch strata to one rational witness; its only locally admissible higher singularities are two E6 scale classes. Certified braids at the generic witness and both E6 classes again leave seven assignments and no transitive action. Hence every normal even row r=6,8,10 is impossible. The normal odd r=9 row is separately excluded by PF2D6O1; normal odd r=5,7, nonnormal terminal slices with conductor, all of (75,125), and JC(2) remain open.",
       "canonical_source": "plane-jc/F2_GEOMETRIC_DEGREE_SIX_STEIN_REDUCTION.md",
       "dependencies": [
         "PF2TR1",
@@ -21731,6 +21763,41 @@
       "consumers": [
         "REPRODUCE.md",
         "plane-jc/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "PF2D6O1",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Sharp degree-(6,10) polynomial gap and F2 normal r=9 exclusion",
+      "scope": "For characteristic-zero polynomials p,q of degrees six and ten with k(p,q)=k(t), normalize the leading coefficients and use T=p^(1/6). The first odd Laurent exponent ell of q(T) exists and satisfies ell>=-11, so the first odd relative gap L=10-ell is at most 21. After centering p=t^6+a*t^4+b*t^3+c*t^2+d*t, a putative larger gap expresses q as the polynomial part of p^(5/3)+B*p^(4/3)+C*p+D*p^(2/3)+E*p^(1/3)+F. Six exact odd-tail obstructions rho_1 through rho_11 must vanish. A literal rational identity b^12=sum A_j*f_j, where f_j are the denominator-cleared obstructions and the six multipliers have 362 terms in total, forces b=0. On that branch rho_5+(2*a/3)*rho_3+(c/3)*rho_1=-5*d^3/81 forces d=0. Both polynomials then factor through t^2, contradicting birationality. The bound is sharp: p=t^6+t^3 and q=t^10+(5/3)*t^7+(7/9)*t^4+(7/81)*t have gap 21, exact normalization gcd s-t, and derivative gcd one. For the F2 normal terminal cubic, the projective infinity characteristic (4;10,10+3*r) has this same gap 3*r. Hence normal r=9 is excluded, leaving normal odd r=5,7 and the nonnormal conductor families. No global cover or Keller filling is supplied by the sharp target curve. The default checker reconstructs and verifies exact polynomial identities independently of Groebner membership decisions; arbitrary-pair normalization and Puiseux transport are written proof steps. No full formal verification, external review, or complete degree-six or JC2 exclusion is claimed.",
+      "canonical_source": "plane-jc/F2_DEGREE_6_10_POLYNOMIAL_GAP.md",
+      "dependencies": [
+        "PF2ATC1",
+        "PF2D6E1"
+      ],
+      "checker": "scripts/verify_f2_degree_6_10_gap.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:a6de21ad37e59a6bab8c751dfd94fb72bdf21784bcf2f10322b11da6b77c25fe",
+      "software_lock": [
+        "artifacts/generated-results/f2-degree-6-10-gap-v1.json",
+        "requirements.txt",
+        ".python-version"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-PLANE"
+      ],
+      "consumers": [
+        "plane-jc/README.md",
+        "REPRODUCE.md"
       ],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -24395,7 +24462,7 @@
       "kind": "open_problem",
       "state": "parked",
       "title": "Plane-Jacobian universal boundary and degree frontier",
-      "scope": "UCBS1 proves degree-independent purity and H_Z^0 vanishing for the logarithmic cotangent cokernel, while LCDS1 places conductor mismatches in H_Z^1. PF2LNP1, PF2CLP1, PF2UCE1, LCBBC1, LCCT1, LKGD1, LTKT1, and PF2OTT1 classify the known F2 logarithmic packets and give exact cyclic root contribution 27 with zero outgoing-tail correction. PF2APF1 proves that purity requires at least one additional affine-branch boundary component, raising the squarefree/double source floors to 28/49. It bounds the geometric degrees by 6<=d<=9375 and 12<=d<=9375 and every ramified row by 2<=e<=d-1 and f<=floor((d-1)/e), but a coarse purity signature exists at every remaining d. PF2ATC1 reduces the unknown target curve to 24 normalization charts (deg p,deg q)=(3k,5k), 1<=k<=24, with projective degree 5k<=120, top implicit form P^(5k), an affine singularity, and a nonunit divided-difference collision/critical ideal. PF2K1C1 solves the first chart's collision geometry by one explicit quartic and proves that its generic target is a rational quintic with four ordinary affine nodes and a delta-2 (2,5) infinity cusp. PF2K1I1 gives its exact twelve-support implicit quintic and factors the pulled-back target gradient as the degree-eight nodal conductor times (q',-p'). PF2K1PB1 restores that quintic to fixed target coordinates, computes its carrier residue and finite eight-jet contact interface, and proves that every Keller pullback is reduced with affine singular/conductor scheme equal to the etale base change of the target singularities. PF2K1JF1 proves the target quintic is irreducible in every k=1 specialization, replaces seven normalized carrier conditions by four parameter-recovery equations plus three exact weighted compatibility equations, and separates the false C^3/s^2 origin factors from the invariant terminal leading fiber. PCJDP1 proves that the primitive (3,5) seven-jet packet ends exactly at raw-jet saturation and gives an explicit cusp-plus-three-node nonimmersion chart, but does not identify its jet ramification with a logarithmic point defect. PF2K1CC1 proves that every k=1 degeneration still has affine delta 4 and the same exact degree-eight conductor divisor, with affine Keller-pullback normalization defect at most 4*(d-1); only the finite singular-fiber counts and boundary distribution remain. PF2K1TN1 proves that every fs tame Kummer toroidal packet over a resolved target node, including the split smooth model and the collided cyclic z^e=x*y model with its full exceptional chain, is log-etale and has zero logarithmic cokernel and localized ch2. Hence target conductor length cannot be charged automatically. Its general SNC formula also proves that full-rank exponent data force zero cokernel and that a rank-one packet can have singular determinant support only after two explicit logarithmic-unit first jets vanish; failure of a toroidal chart is necessary but not sufficient for a point defect. PAER1 proves that every affine reduced-curve singularity, including the cusp-plus-three-node stratum, pulls through a Keller map by strict etale base change on embedded resolutions. Its ordinary conductor and carrier-parameter rank drop are not finite pieces of the relative logarithmic module; only compactification-boundary attachments remain. Under LUAF1's minimal transverse unibranch SNC hypotheses such a boundary point has local correction q_p*m_C and a complete residue-degree-f fiber has total correction m_C*f; q_p is distinct from the transverse divisorial index e, and those hypotheses still have to be extracted from the source. LCAD1 gives the general isolated-Fitting lower ledger m_C*f-h+c; for an ordinary cusp it ranges from f on smooth folds to 2*f on node-saturated packets. PF2PPA1 places every target puncture on the extracted (5,2) divisor with contact k. Although a formal direct terminal comparison would force lambda=125/729 and e=3, the terminal neighborhood is already resolved and every divisor extracted above it maps to one point; it supplies no affine-row slot. LCHB1 proves the degree-independent global logarithmic ch2 and boundary-blowup identities and computes provisional F2 budgets (7*d-8)/2 and (7*d-13)/2 on the current common partial model. After the exact root class 27 the degree-floor virtual residuals are -10 and 17/2. PF2K1L1 computes the generic k=1 affine divisorial contribution as e*f*(b-7)-e^2*n/2 and gives the all-signature conditional squarefree/double point formulas (e^2*n-2*e*f*(b-7)-20-s_X)/2 and (e^2*n-2*e*f*(b-7)+17-s_X)/2 with exact parity gates. On the generic cusp face, the incidence-sensitive cusp ledger tightens these effectivity bounds without changing parity. PF2K1M1 proves complement group Z on every immersed distinct-image k=1 collision partition and on the generic A_2+3*A_1 and 2*A_2+2*A_1 cusp strata. Their positive affine-sheet remainder prevents one component meridian from acting transitively, so each of these seven strata requires a second ramified affine target component and has conditional source floors 29/50; its Chern compiler must contain two affine divisorial packets. The first topological escape is E_6+A_1, whose noncyclic group has an exact transitive degree-six fixed-sheet action, so its multiplicity-three boundary packet must be combined with the global Chern budget. PF2D6E1 excludes the normal even terminal exponents r=6,8,10; the normal odd rows and nonnormal conductor slices remain. The primary global target is therefore to supply the complete fixed-coordinate F2 Laurent pair and factor its explicit quintic only at the unresolved source boundary in order to locate the required affine divisors, determine their (e,f,E^2) data, and extract the local exponent matrices and logarithmic unit derivatives. Finite affine fiber counts remain useful boundary-escape data but are not logarithmic point corrections. Only rank-one packets satisfying both first-jet equations require higher expansion; the complement/conductor calculation must still cover severe k=1 image mergers, the E_8 endpoint, and k=2..24 if k=1 is not forced. Independently, PJ43A1, PJ72Q1, RSE3, and PJ72108D1 close the audited (72,108)/(108,72) row and leave the conditional larger-coordinate frontier at 125. PF2KO1, PF2TR1, PF2GC1, PF2GA1, PF2CW1, PCW1, PF2CS1, and PF2NF1 classify substantial necessary data on the first F2 row but do not supply that global branch-curve factorization, global degree, meridian completion, complete Chern filtration, or lower-Laurent realization. Degree-specific calculations remain regression fixtures for the universal compiler; they do not exclude (75,125), improve the coordinate-degree frontier 125, or prove JC(2).",
+      "scope": "UCBS1 proves degree-independent purity and H_Z^0 vanishing for the logarithmic cotangent cokernel, while LCDS1 places conductor mismatches in H_Z^1. PF2LNP1, PF2CLP1, PF2UCE1, LCBBC1, LCCT1, LKGD1, LTKT1, and PF2OTT1 classify the known F2 logarithmic packets and give exact cyclic root contribution 27 with zero outgoing-tail correction. PF2APF1 proves that purity requires at least one additional affine-branch boundary component, raising the squarefree/double source floors to 28/49. It bounds the geometric degrees by 6<=d<=9375 and 12<=d<=9375 and every ramified row by 2<=e<=d-1 and f<=floor((d-1)/e), but a coarse purity signature exists at every remaining d. PF2ATC1 reduces the unknown target curve to 24 normalization charts (deg p,deg q)=(3k,5k), 1<=k<=24, with projective degree 5k<=120, top implicit form P^(5k), an affine singularity, and a nonunit divided-difference collision/critical ideal. PF2K1C1 solves the first chart's collision geometry by one explicit quartic and proves that its generic target is a rational quintic with four ordinary affine nodes and a delta-2 (2,5) infinity cusp. PF2K1I1 gives its exact twelve-support implicit quintic and factors the pulled-back target gradient as the degree-eight nodal conductor times (q',-p'). PF2K1PB1 restores that quintic to fixed target coordinates, computes its carrier residue and finite eight-jet contact interface, and proves that every Keller pullback is reduced with affine singular/conductor scheme equal to the etale base change of the target singularities. PF2K1JF1 proves the target quintic is irreducible in every k=1 specialization, replaces seven normalized carrier conditions by four parameter-recovery equations plus three exact weighted compatibility equations, and separates the false C^3/s^2 origin factors from the invariant terminal leading fiber. PCJDP1 proves that the primitive (3,5) seven-jet packet ends exactly at raw-jet saturation and gives an explicit cusp-plus-three-node nonimmersion chart, but does not identify its jet ramification with a logarithmic point defect. PF2K1CC1 proves that every k=1 degeneration still has affine delta 4 and the same exact degree-eight conductor divisor, with affine Keller-pullback normalization defect at most 4*(d-1); only the finite singular-fiber counts and boundary distribution remain. PF2K1TN1 proves that every fs tame Kummer toroidal packet over a resolved target node, including the split smooth model and the collided cyclic z^e=x*y model with its full exceptional chain, is log-etale and has zero logarithmic cokernel and localized ch2. Hence target conductor length cannot be charged automatically. Its general SNC formula also proves that full-rank exponent data force zero cokernel and that a rank-one packet can have singular determinant support only after two explicit logarithmic-unit first jets vanish; failure of a toroidal chart is necessary but not sufficient for a point defect. PAER1 proves that every affine reduced-curve singularity, including the cusp-plus-three-node stratum, pulls through a Keller map by strict etale base change on embedded resolutions. Its ordinary conductor and carrier-parameter rank drop are not finite pieces of the relative logarithmic module; only compactification-boundary attachments remain. Under LUAF1's minimal transverse unibranch SNC hypotheses such a boundary point has local correction q_p*m_C and a complete residue-degree-f fiber has total correction m_C*f; q_p is distinct from the transverse divisorial index e, and those hypotheses still have to be extracted from the source. LCAD1 gives the general isolated-Fitting lower ledger m_C*f-h+c; for an ordinary cusp it ranges from f on smooth folds to 2*f on node-saturated packets. PF2PPA1 places every target puncture on the extracted (5,2) divisor with contact k. Although a formal direct terminal comparison would force lambda=125/729 and e=3, the terminal neighborhood is already resolved and every divisor extracted above it maps to one point; it supplies no affine-row slot. LCHB1 proves the degree-independent global logarithmic ch2 and boundary-blowup identities and computes provisional F2 budgets (7*d-8)/2 and (7*d-13)/2 on the current common partial model. After the exact root class 27 the degree-floor virtual residuals are -10 and 17/2. PF2K1L1 computes the generic k=1 affine divisorial contribution as e*f*(b-7)-e^2*n/2 and gives the all-signature conditional squarefree/double point formulas (e^2*n-2*e*f*(b-7)-20-s_X)/2 and (e^2*n-2*e*f*(b-7)+17-s_X)/2 with exact parity gates. On the generic cusp face, the incidence-sensitive cusp ledger tightens these effectivity bounds without changing parity. PF2K1M1 proves complement group Z on every immersed distinct-image k=1 collision partition and on the generic A_2+3*A_1 and 2*A_2+2*A_1 cusp strata. Their positive affine-sheet remainder prevents one component meridian from acting transitively, so each of these seven strata requires a second ramified affine target component and has conditional source floors 29/50; its Chern compiler must contain two affine divisorial packets. The first topological escape is E_6+A_1, whose noncyclic group has an exact transitive degree-six fixed-sheet action, so its multiplicity-three boundary packet must be combined with the global Chern budget. PF2D6E1 excludes the normal even terminal exponents r=6,8,10. PF2D6O1 proves the sharp polynomial degree-(6,10) odd gap bound 21 and excludes normal r=9; normal odd r=5,7 and nonnormal conductor slices remain. The primary global target is therefore to supply the complete fixed-coordinate F2 Laurent pair and factor its explicit quintic only at the unresolved source boundary in order to locate the required affine divisors, determine their (e,f,E^2) data, and extract the local exponent matrices and logarithmic unit derivatives. Finite affine fiber counts remain useful boundary-escape data but are not logarithmic point corrections. Only rank-one packets satisfying both first-jet equations require higher expansion; the complement/conductor calculation must still cover severe k=1 image mergers, the E_8 endpoint, and k=2..24 if k=1 is not forced. Independently, PJ43A1, PJ72Q1, RSE3, and PJ72108D1 close the audited (72,108)/(108,72) row and leave the conditional larger-coordinate frontier at 125. PF2KO1, PF2TR1, PF2GC1, PF2GA1, PF2CW1, PCW1, PF2CS1, and PF2NF1 classify substantial necessary data on the first F2 row but do not supply that global branch-curve factorization, global degree, meridian completion, complete Chern filtration, or lower-Laurent realization. Degree-specific calculations remain regression fixtures for the universal compiler; they do not exclude (75,125), improve the coordinate-degree frontier 125, or prove JC(2).",
       "canonical_source": "plane-jc/NEXT_DEGREE_FRONTIER.md",
       "dependencies": [
         "PJ1",
@@ -24442,7 +24509,8 @@
         "LCHB1",
         "PF2K1L1",
         "PF2K1M1",
-        "PF2D6E1"
+        "PF2D6E1",
+        "PF2D6O1"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -24694,7 +24762,7 @@
       "kind": "open_problem",
       "state": "open",
       "title": "Mixed or coisotropic Schur route to HC(4)",
-      "scope": "Starting from the scaled five-variable Meng--Yang family, find or exclude a genuinely nonlinear mixed source--dual or coisotropic reduction that retains a gradient collision in four Hessian variables. HC4MYA1 closes every affine four-plane restriction, HC4MYG3 closes every graph through degree three, and HC4MYG4 closes every graph y3=R(x1,x2,y1,y2) of degree at most four over every characteristic-zero field. HC4MYGJ1 strengthens this to arbitrary-degree graphs whose complete 1-jet along x1=0 has degree at most four and makes the degree-five plane determinant a uniquely solvable normal-jet equation. HC4MYGJ2 gives the exact nonzero multiplier -4*L*N^3*k*(k+1) at every normal order, so every plane trace has a unique constant-determinant formal graph; the remaining graph problem is polynomial termination and global collision, not formal normal solvability. For a degree-five graph, HC4MYG5J forces the x1-free quintic trace to kappa*x2^5, kills the y2-dependence of its quartic trace, and leaves an explicit conic in the next face. Over Q, HC4MYG5N further forces kappa nonzero and confines the full quintic top to two constant-kernel cone charts. HC4MYG5K closes the first partial_y2-kernel transverse slice when the displayed cubic and quartic trace terms are fixed and the complete degree-at-most-two lower trace T_le2(x2,y1,y2) is arbitrary. The generic y1*y2 branch gives a three-equation unit ideal, the y2^2 term is killed by a square in the forced quartic normal jet, and the exceptional x2*y2 branch ends in two coprime transverse polynomials. HC4MYG5S excludes, over every characteristic-zero field, the complete sparse trace kappa*x2^5+d*x2^3*y1+rho*x2^2*y2 with arbitrary allowed off-plane terms; an exact collision-containing graph can flatten the determinant on x1=0, but its first transverse coefficient is nonzero. The general degree-five graph problem therefore remains open in broader cubic and quartic trace terms on the first chart, the other rational top chart, and possible algebraic zero-kappa branches, with polynomial termination of the unique formal normal branch as the all-degree target. HC4MYR89 separately excludes collisions for every relative-linear unit-pivot correction C(x1,x2) in SL2(Q[x1,x2]) of degree at most 89. HC4RSD6 characterizes affine-pivot coverage by a constant adjugate-metric rank gate, and HC4RSD7 proves that an affine scalar parent cannot inherit a marked nontrivial collision at one pivot value. HC4RSD8 through HC4RSD10 close the quadratic zero-corner branch with an identically singular reduced pencil; HC4RSD9 is the exact rank-two classification inside that chain. HC4RSD12 now closes every quadratic zero-corner scalar parent, including nonsingular exact specialized remainders. HC4RSD11 identifies every nonzero-corner cancellation exactly with a four-variable constant-Hessian pencil. For a quadratic pencil direction, rank four is impossible and HC4RSD13 makes rank three triangular; HC4RSD14 reduces rank two to HC2 or exactly the JC2 cotangent packet; HC4RSD15 identifies the two rank-one ternary charts and HC4RSD16 proves that unit border transversality freezes their rationally moving globalization. Thus every nonlinear quadratic scalar pencil reduces to HC2 or exactly the JC2 cotangent endpoint. HC4RSD17 identifies every higher-degree pencil with a polynomial nilpotent endomorphism self-adjoint for a unit Hessian metric and subject to a second Hessian-integrability system. HC4RSD18 closes generic Hessian rank one in every degree to HC2 or JC2. For cubic directions with leading Hessian rank three, HC4RSD19 excludes the unique genuinely moving kernel. HC4RSD20 synchronizes the residual constant-kernel tangent Hessians to one ruling and reduces every fixed ruling to HC2 or exact JC2. HC4RSD21 fixes every homogeneous border coefficient in every degree and every arbitrary border coefficient through degree three. HC4RSD22 closes degree four by a complete binary quartic Schur and fourth-power-top calculation. HC4RSD23 closes every degree-five border coefficient whose leading binary quintic is not a fifth power, using a simple-root square, four repeated-root Schur ideals, and immutable next-face coefficients. HC4BL5 closes the remaining pure-fifth chart, and HC4RSD24 therefore closes every degree-five border coefficient. HC4RSD25--HC4RSD28 close all non-pure sextic leading forms, and HC4RSD29--HC4RSD32 close the pure-sixth chart through its quintic flag, completed quartic, and final two-linear-form tower. Consequently every scalar degree-six leading direction is fixed. HC4RSD33 closes all non-pure septic leading forms. HC4RSD34 and HC4RSD35 open the pure-septic square; HC4RSD36, HC4RSD37, and HC4RSD38 then close every curved pure-septic chart: all six nonzero-k packets die, and the corrected zero-k coupled Wronskian has the complete ordered two-linear-form solution F=L*E^3,G=L*E^2,D=L*E, whose five projective charts also die. HC4RSD39 closes every curved shifted-quintic correction on the passive-affine boundary and reduces the last pure-septic two-linear-form tower to eight explicit degree-fifteen quartic direction packets. HC4RSD40 gives them a common quartic-polar rank-one split: the square-Hessian resonance dies by immutable lower coefficients and the only nonempty zero strata are fixed cylinders. HC4MR1 consolidates the continuation through HC4RSD41--80, but HC4MRA1 found a determinant-transport gap in the claimed final regular J4 closure. Lower-rank and scalar reductions remain available; differentiated branch identities exclude the positive maximal-motion sign, while p=q=-a remains open. The full auxiliary relative-pencil branch is therefore not closed. Additional mechanisms outside that branch include nonconstant mixed source--dual 2-by-2 Schur pivots, higher nonlinear canonical transformations, and reductions creating a different collision. SDX2 and HC4MCP1 through HC4MCP10 close the declared affine-block and short-word boxes; HC4MCP10 removes the coefficient and constant-direction bounds for every scalar and two-plane unit block on the nonlinear HC4MCP6 resonance family. Polynomially moving pivots on that family remain open. This inherited-collision route is distinct from OP-HC4-D5: HC4TC1 closes the coordinate q2+h3+h4+h6 chart, while HC4CD5 identifies the parallel quintic--sextic Hessian-metric divisibility frontier.",
+      "scope": "Starting from the scaled five-variable Meng--Yang family, find or exclude a genuinely nonlinear mixed source--dual or coisotropic reduction that retains a gradient collision in four Hessian variables. HC4MYA1 closes every affine four-plane restriction, HC4MYG3 closes every graph through degree three, and HC4MYG4 closes every graph y3=R(x1,x2,y1,y2) of degree at most four over every characteristic-zero field. HC4MYGJ1 strengthens this to arbitrary-degree graphs whose complete 1-jet along x1=0 has degree at most four and makes the degree-five plane determinant a uniquely solvable normal-jet equation. HC4MYGJ2 gives the exact nonzero multiplier -4*L*N^3*k*(k+1) at every normal order, so every plane trace has a unique constant-determinant formal graph; the remaining graph problem is polynomial termination and global collision, not formal normal solvability. For a degree-five graph, HC4MYG5J forces the x1-free quintic trace to kappa*x2^5, kills the y2-dependence of its quartic trace, and leaves an explicit conic in the next face. Over Q, HC4MYG5N further forces kappa nonzero and confines the full quintic top to two constant-kernel cone charts. HC4MYG5K closes the first partial_y2-kernel transverse slice when the displayed cubic and quartic trace terms are fixed and the complete degree-at-most-two lower trace T_le2(x2,y1,y2) is arbitrary. The generic y1*y2 branch gives a three-equation unit ideal, the y2^2 term is killed by a square in the forced quartic normal jet, and the exceptional x2*y2 branch ends in two coprime transverse polynomials. HC4MYG5S excludes, over every characteristic-zero field, the complete sparse trace kappa*x2^5+d*x2^3*y1+rho*x2^2*y2 with arbitrary allowed off-plane terms; an exact collision-containing graph can flatten the determinant on x1=0, but its first transverse coefficient is nonzero. The general degree-five graph problem therefore remains open in broader cubic and quartic trace terms on the first chart, the other rational top chart, and possible algebraic zero-kappa branches, with polynomial termination of the unique formal normal branch as the all-degree target. HC4MYR89 separately excludes collisions for every relative-linear unit-pivot correction C(x1,x2) in SL2(Q[x1,x2]) of degree at most 89. HC4RSD6 characterizes affine-pivot coverage by a constant adjugate-metric rank gate, and HC4RSD7 proves that an affine scalar parent cannot inherit a marked nontrivial collision at one pivot value. HC4RSD8 through HC4RSD10 close the quadratic zero-corner branch with an identically singular reduced pencil; HC4RSD9 is the exact rank-two classification inside that chain. HC4RSD12 now closes every quadratic zero-corner scalar parent, including nonsingular exact specialized remainders. HC4RSD11 identifies every nonzero-corner cancellation exactly with a four-variable constant-Hessian pencil. For a quadratic pencil direction, rank four is impossible and HC4RSD13 makes rank three triangular; HC4RSD14 reduces rank two to HC2 or exactly the JC2 cotangent packet; HC4RSD15 identifies the two rank-one ternary charts and HC4RSD16 proves that unit border transversality freezes their rationally moving globalization. Thus every nonlinear quadratic scalar pencil reduces to HC2 or exactly the JC2 cotangent endpoint. HC4RSD17 identifies every higher-degree pencil with a polynomial nilpotent endomorphism self-adjoint for a unit Hessian metric and subject to a second Hessian-integrability system. HC4RSD18 closes generic Hessian rank one in every degree to HC2 or JC2. For cubic directions with leading Hessian rank three, HC4RSD19 excludes the unique genuinely moving kernel. HC4RSD20 synchronizes the residual constant-kernel tangent Hessians to one ruling and reduces every fixed ruling to HC2 or exact JC2. HC4RSD21 fixes every homogeneous border coefficient in every degree and every arbitrary border coefficient through degree three. HC4RSD22 closes degree four by a complete binary quartic Schur and fourth-power-top calculation. HC4RSD23 closes every degree-five border coefficient whose leading binary quintic is not a fifth power, using a simple-root square, four repeated-root Schur ideals, and immutable next-face coefficients. HC4BL5 closes the remaining pure-fifth chart, and HC4RSD24 therefore closes every degree-five border coefficient. HC4RSD25--HC4RSD28 close all non-pure sextic leading forms, and HC4RSD29--HC4RSD32 close the pure-sixth chart through its quintic flag, completed quartic, and final two-linear-form tower. Consequently every scalar degree-six leading direction is fixed. HC4RSD33 closes all non-pure septic leading forms. HC4RSD34 and HC4RSD35 open the pure-septic square; HC4RSD36, HC4RSD37, and HC4RSD38 then close every curved pure-septic chart: all six nonzero-k packets die, and the corrected zero-k coupled Wronskian has the complete ordered two-linear-form solution F=L*E^3,G=L*E^2,D=L*E, whose five projective charts also die. HC4RSD39 closes every curved shifted-quintic correction on the passive-affine boundary and reduces the last pure-septic two-linear-form tower to eight explicit degree-fifteen quartic direction packets. HC4RSD40 gives them a common quartic-polar rank-one split: the square-Hessian resonance dies by immutable lower coefficients and the only nonempty zero strata are fixed cylinders. HC4MR1 consolidates the continuation through HC4RSD41--80. HC4MRA1 found a determinant-transport gap in the old final regular J4 argument and closes the positive motion sign by differentiated identities. HC4MRA2 repairs the remaining negative sign by restricting the polynomial endomorphism to an affine middle-plane leaf and applying the ODE 2*n*n_second-3*n_prime^2=0, which has only constant polynomial solutions. The full auxiliary relative-pencil reduction to HC2/JC2 is thus restored by a global polynomial argument, without the unsupported d(pq)=0 premise. Mechanisms outside that closed auxiliary branch include nonconstant mixed source--dual 2-by-2 Schur pivots, higher nonlinear canonical transformations, and reductions creating a different collision. SDX2 and HC4MCP1 through HC4MCP10 close the declared affine-block and short-word boxes; HC4MCP10 removes the coefficient and constant-direction bounds for every scalar and two-plane unit block on the nonlinear HC4MCP6 resonance family. Polynomially moving pivots on that family remain open. This inherited-collision route is distinct from OP-HC4-D5: HC4TC1 closes the coordinate q2+h3+h4+h6 chart, while HC4CD5 identifies the parallel quintic--sextic Hessian-metric divisibility frontier.",
       "canonical_source": "HC4_MENG_YANG_GRAPH_OBSTRUCTIONS.md",
       "dependencies": [
         "SDX1",
@@ -24765,7 +24833,8 @@
         "HC4MYR89",
         "HC4TC1",
         "HC4CD5",
-        "HC4MRA1"
+        "HC4MRA1",
+        "HC4MRA2"
       ],
       "checker": null,
       "proof_type": "not-applicable",
@@ -25481,7 +25550,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Scalar cone-pencil reverse Schur obstruction",
-      "scope": "Let Phi=lambda*t^2/2+t*A(x)+B(x) in one pivot and four reduced variables over a characteristic-zero field, with constant nonzero Hessian determinant and identically singular pencil M(s)=Hess_x(B+s*A). If the generic kernel line of M(s) is constant in x, then M has generic corank one and adj(M)=q*v*v^T. The bordered-unit identity c=-q*(v^T*grad(A))^2 over K(s)[x] makes q and v^T*grad(A) units, forcing a common constant Hessian-kernel direction v0 of A and B with D_v0 A nonzero. In linear coordinates A=alpha*z+a(u), B=beta*z+b(u), and det Hess_u(b+s*a)=-c/alpha^2 for every s. Equality of two gradients of any descendant B+kappa*A^2/2+mu*A first fixes s0=kappa*A+mu, then becomes equality in the ternary constant-Hessian gradient grad(b+s0*a); HC3 makes the points equal. Hence every scalar cone-pencil descendant is injective and meets none of the 318/306 live affine-degree-two/three HC4 projective-polar rows. Gordan--Noether makes the cone hypothesis automatic for homogeneous four-variable pencil members. The checker also implements exact scalar collision/constancy/integrability equations and simultaneous matrix-pivot corank minors and Schur identities. Its generated open-frontier field is historical: HC4RSD2--5 subsequently close all affine-in-x primitive kernel lines and every fixed primitive two-component constant-support-plane kernel, while fixed three/four-component and parameter-moving nonlinear singular kernels remain open. HC4RSD11 identifies the nonzero-corner auxiliary constant-Hessian-pencil cancellation branch; its full HC4MR1 closure is now partial after the HC4MRA1 transport correction, with the negative maximal-motion sign open; nonlinear zero-corner exact-remainder mechanisms and moving matrix-pivot kernel planes remain open.",
+      "scope": "Let Phi=lambda*t^2/2+t*A(x)+B(x) in one pivot and four reduced variables over a characteristic-zero field, with constant nonzero Hessian determinant and identically singular pencil M(s)=Hess_x(B+s*A). If the generic kernel line of M(s) is constant in x, then M has generic corank one and adj(M)=q*v*v^T. The bordered-unit identity c=-q*(v^T*grad(A))^2 over K(s)[x] makes q and v^T*grad(A) units, forcing a common constant Hessian-kernel direction v0 of A and B with D_v0 A nonzero. In linear coordinates A=alpha*z+a(u), B=beta*z+b(u), and det Hess_u(b+s*a)=-c/alpha^2 for every s. Equality of two gradients of any descendant B+kappa*A^2/2+mu*A first fixes s0=kappa*A+mu, then becomes equality in the ternary constant-Hessian gradient grad(b+s0*a); HC3 makes the points equal. Hence every scalar cone-pencil descendant is injective and meets none of the 318/306 live affine-degree-two/three HC4 projective-polar rows. Gordan--Noether makes the cone hypothesis automatic for homogeneous four-variable pencil members. The checker also implements exact scalar collision/constancy/integrability equations and simultaneous matrix-pivot corank minors and Schur identities. Its generated open-frontier field is historical: HC4RSD2--5 subsequently close all affine-in-x primitive kernel lines and every fixed primitive two-component constant-support-plane kernel, while fixed three/four-component and parameter-moving nonlinear singular kernels remain open. HC4RSD11 identifies the nonzero-corner auxiliary constant-Hessian-pencil cancellation branch; its full HC4MR1 closure uses the HC4MRA1 transport correction and the HC4MRA2 global polynomial-leaf repair; nonlinear zero-corner exact-remainder mechanisms and moving matrix-pivot kernel planes remain open.",
       "canonical_source": "HC4_REVERSE_SCHUR_DESCENT.md",
       "dependencies": [
         "HC4PPG7",
@@ -25621,7 +25690,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Fixed two-component quasi-translation reverse Schur obstruction",
-      "scope": "Let Phi=lambda*t^2/2+t*A+B have constant nonzero Hessian determinant and identically singular four-variable reduced pencil over a characteristic-zero field. Suppose its generic corank-one kernel line is fixed in the pencil parameter and has a unimodular generator v=(P,Q,0,0), where P,Q may initially depend on all four reduced variables. The Hessian Piola equations, reduced modulo P and Q, first give P_y=Q_x=0; their remaining coefficient matrix has determinant 3, so P_x=Q_y=0. Thus P,Q depend only on the two transverse variables. A constant projective direction is covered by HC4RSD1. Otherwise, exact mixed-partial integration gives every pencil member as f=x*a(z,w)+y*b(z,w)+G(z,w), with P*da+Q*db=0. For A, the bordered unit gives P*a_A+Q*b_A=alpha and a_A*dP+b_A*dQ=0, so P and Q factor through a closed common composite H. Over K[H], the rows (P,Q) and (-b_A,a_A) form a polynomial frame of constant determinant. Its derivatives have the form row0'=S*row1 and row1'=T*row0. If S and T were both nonzero, polynomial degrees would sum to -2=deg(S)+deg(T); projective motion gives S nonzero, so T=0. Hence the dual row is constant and (P,Q) lies on an affine line. A constant active-coordinate change reduces the kernel to (L(H),1,0,0), exactly the HC4RSD4 shear family. Therefore the bordered unit forces one transverse linear form and every scalar Schur descendant has a triangular polynomial inverse. Fixed generators with three or four nonlinear components and parameter-moving nonlinear kernels remain the singular-pencil boundary. Nonsingular cancellation lies outside this theorem: HC4MR1 consolidates the nonzero-corner auxiliary constant-Hessian-pencil reductions but its final negative maximal-motion sign remains open after HC4MRA1, while nonlinear zero-corner exact remainders and moving matrix-pivot planes remain open.",
+      "scope": "Let Phi=lambda*t^2/2+t*A+B have constant nonzero Hessian determinant and identically singular four-variable reduced pencil over a characteristic-zero field. Suppose its generic corank-one kernel line is fixed in the pencil parameter and has a unimodular generator v=(P,Q,0,0), where P,Q may initially depend on all four reduced variables. The Hessian Piola equations, reduced modulo P and Q, first give P_y=Q_x=0; their remaining coefficient matrix has determinant 3, so P_x=Q_y=0. Thus P,Q depend only on the two transverse variables. A constant projective direction is covered by HC4RSD1. Otherwise, exact mixed-partial integration gives every pencil member as f=x*a(z,w)+y*b(z,w)+G(z,w), with P*da+Q*db=0. For A, the bordered unit gives P*a_A+Q*b_A=alpha and a_A*dP+b_A*dQ=0, so P and Q factor through a closed common composite H. Over K[H], the rows (P,Q) and (-b_A,a_A) form a polynomial frame of constant determinant. Its derivatives have the form row0'=S*row1 and row1'=T*row0. If S and T were both nonzero, polynomial degrees would sum to -2=deg(S)+deg(T); projective motion gives S nonzero, so T=0. Hence the dual row is constant and (P,Q) lies on an affine line. A constant active-coordinate change reduces the kernel to (L(H),1,0,0), exactly the HC4RSD4 shear family. Therefore the bordered unit forces one transverse linear form and every scalar Schur descendant has a triangular polynomial inverse. Fixed generators with three or four nonlinear components and parameter-moving nonlinear kernels remain the singular-pencil boundary. Nonsingular cancellation lies outside this theorem: HC4MR1 consolidates the nonzero-corner auxiliary constant-Hessian-pencil reductions but its final maximal-motion signs are closed by the corrected HC4MRA1/HC4MRA2 arguments, while nonlinear zero-corner exact remainders and moving matrix-pivot planes remain open.",
       "canonical_source": "HC4_TWO_COMPONENT_QUASITRANSLATION_KERNELS.md",
       "dependencies": [
         "HC4RSD1",
@@ -32092,34 +32161,39 @@
     {
       "id": "HC4MR1",
       "kind": "theorem",
-      "state": "partial",
+      "state": "proved",
       "title": "Relative-nilpotent HC4 master reduction",
-      "scope": "Let S=Hess(psi), 0!=T=Hess(A), det(S) be a nonzero constant, and det(S+s*T)=det(S) for every s in characteristic zero. The linked written reductions close the lower-rank and linearly-dependent packets to HC2 or the exact JC2 cotangent endpoint; the final regular J4 packet has a Frobenius flag and affine middle-plane leaves. The claimed full maximal-motion closure is withdrawn: HC4MRA1 explicitly transports the frozen projective determinant to pq/a^2, so the added equation d(pq)=0 was not justified. The original augmented-system unit ideal remains valid conditionally. Differentiating the actual positive-sign identities p=q=a excludes that sign without d(pq)=0. The negative sign p=q=-a remains open, with a compatible exact finite connection jet; no all-order or polynomial realization is claimed. The lower-motion rank-zero and rank-one reductions remain available. Thus the complete auxiliary relative-pencil reduction to HC2/JC2 and the forward implication JC2=>PHC4 are not established. The checker replays local conditional algebra, not every geometric implication; no independent end-to-end verification or external review is recorded.",
+      "scope": "Let S=Hess(psi), 0!=T=Hess(A), det(S) be a nonzero constant, and det(S+s*T)=det(S) for every s in characteristic zero. Every generic relative-nilpotent Jordan stratum reduces globally to HC2 or the exact JC2 cotangent endpoint by the linked written reductions. In the regular J4 packet, the Jordan flag is Frobenius and its middle distribution has affine two-plane leaves. HC4MRA1 corrected the old determinant transport: the frozen invariant is pq/a^2, so d(pq)=0 was unjustified. Differentiated branch identities exclude p=q=a. HC4MRA2 closes p=q=-a by global polynomiality: on an affine middle-plane leaf, the polynomial matrix coefficient N(v2)=n(t)*v1 satisfies 2*n*n_second-3*n_prime^2=0; its leading coefficient forces n constant, contradicting a!=0. A Piola/quasi-translation argument justifies the cofactor-normalized kernel frame. Lower-motion rank zero is fixed and rank one closes by the affine-hyperplane incidence argument. Thus the auxiliary relative-pencil reduction and its JC2 obstruction content are restored using the replacement polynomial-leaf proof, not the old augmented local system. The registered checker verifies the final negative-branch identities and polynomial ODE algebra; HC4MRA1 separately checks the positive sign. The other geometric reductions remain written proofs, with no independent end-to-end or external review and no full formal verification.",
       "canonical_source": "HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md",
       "dependencies": [
         "HC4RSD14",
         "HC4RSD17",
-        "HC4RSD40"
+        "HC4RSD40",
+        "HC4MRA1",
+        "HC4MRA2"
       ],
-      "checker": "scripts/verify_hc4_affine_plane_prolongation.py",
+      "checker": "scripts/verify_hc4_negative_motion_polynomial_obstruction.py",
       "proof_type": "hybrid",
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:bc36c86c08ea8cec6d43fe3deb6013ff86e0a3be01049fbd63a2963f4f706f73",
+      "artifact_hash": "sha256:09c33309d33d1fef10bfd44e37d41071ec66584fed6e9b16f82a855f07b15c24",
       "software_lock": [
         ".python-version",
         "requirements.txt",
         "artifacts/generated-results/hc4_affine_plane_prolongation.json",
         "scripts/verify_hc4_motion_frame_transport.py",
-        "artifacts/generated-results/hc4-motion-frame-transport-v1.json"
+        "artifacts/generated-results/hc4-motion-frame-transport-v1.json",
+        "artifacts/generated-results/hc4-negative-motion-polynomial-obstruction-v1.json"
       ],
       "supersedes_notes": [
-        "earlier degree-ladder narrative is consolidated here, but the final negative maximal-motion sign remains open after HC4MRA1"
+        "the unsupported d(pq)=0 argument is replaced by differentiated sign identities and the global polynomial affine-leaf obstruction"
       ],
       "supersedes": [],
       "closes_problems": [],
-      "narrows_problems": [],
+      "narrows_problems": [
+        "OP-HC4-SCHUR"
+      ],
       "consumers": [],
       "invalidates_assumptions": [],
       "replaced_by": [],
@@ -32128,9 +32202,9 @@
     {
       "id": "HC4MR2",
       "kind": "corollary",
-      "state": "partial",
+      "state": "proved",
       "title": "Fixed-dimensional relative-pencil equivalence with JC2",
-      "scope": "Define PHC4 to assert injectivity for every four-variable constant-Hessian gradient admitting a direction A with nonzero Hessian and det Hess(psi+s*A)=det Hess(psi) for all s. The implication PHC4=>JC2 is proved by the cotangent potential psi=z*P+w*Q of every plane Keller map F=(P,Q): a source-only direction A=x^2/2 is nonzero and square-zero relative to Hess(psi), and the exact collision comparison identifies injectivity of F with injectivity of grad(psi). The reverse implication JC2=>PHC4 depends on the incomplete HC4MR1 master reduction. HC4MRA1 exposes the missing determinant-normalization factor and leaves the negative maximal-motion sign open. Accordingly the claimed fixed-dimensional equivalence is partial; pencil recognition alone does not prove JC2=>HC4.",
+      "scope": "Define PHC4 to assert injectivity for every four-variable constant-Hessian gradient admitting a direction A with nonzero Hessian and det Hess(psi+s*A)=det Hess(psi) for all s. Then PHC4 is equivalent to JC2. The implication PHC4=>JC2 uses the cotangent potential psi=z*P+w*Q of every plane Keller map F=(P,Q), the nonzero square-zero direction A=x^2/2, and the exact collision comparison. The reverse implication JC2=>PHC4 uses HC4MR1 with its corrected maximal-motion proof: HC4MRA1 closes the positive sign and HC4MRA2 excludes the negative sign using a polynomial coefficient on an affine leaf. It does not rely on the withdrawn inference d(pq)=0. An additional pencil-recognition theorem would still be needed to deduce JC2=>unrestricted HC4 by this route.",
       "canonical_source": "HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md",
       "dependencies": [
         "HC4MR1"
@@ -32159,7 +32233,7 @@
       "kind": "corollary",
       "state": "proved",
       "title": "Constant-null-covector rank-one pencil recognition",
-      "scope": "Let psi be a four-variable polynomial over an algebraically closed characteristic-zero field with H=Hess(psi) and det(H) a nonzero constant. Expand ell^T*adj(H)*ell in the source monomials and let Z_psi in P^3 be the projective scheme cut out by all coefficient quadrics in the constant covector ell. If Z_psi is nonempty, choose ell in Z_psi and put A=(ell.x)^2/2. Then Hess(A)=ell*ell^T, det(H+s*Hess(A))=det(H) for all s, and N=H^(-1)*Hess(A) satisfies N^2=0. Hence psi lies in the pencil-admissible class PHC4 and JC2 implies that grad(psi) is a polynomial automorphism by the rank-one reduction HC4RSD16, independently of the incomplete general equivalence HC4MR2. The condition is invariant under constant linear recharts; every cotangent potential contains the projectivized source covector plane in Z_psi. For a concrete potential, nonemptiness is decided exactly by the four affine Groebner charts ell_i=1. This is only a sufficient rank-one recognition gate: an empty Z_psi does not exclude higher-rank or nonlinear pencil directions and does not prove unrestricted HC4.",
+      "scope": "Let psi be a four-variable polynomial over an algebraically closed characteristic-zero field with H=Hess(psi) and det(H) a nonzero constant. Expand ell^T*adj(H)*ell in the source monomials and let Z_psi in P^3 be the projective scheme cut out by all coefficient quadrics in the constant covector ell. If Z_psi is nonempty, choose ell in Z_psi and put A=(ell.x)^2/2. Then Hess(A)=ell*ell^T, det(H+s*Hess(A))=det(H) for all s, and N=H^(-1)*Hess(A) satisfies N^2=0. Hence psi lies in the pencil-admissible class PHC4 and JC2 implies that grad(psi) is a polynomial automorphism by the rank-one reduction HC4RSD16, independently of the general equivalence HC4MR2. The condition is invariant under constant linear recharts; every cotangent potential contains the projectivized source covector plane in Z_psi. For a concrete potential, nonemptiness is decided exactly by the four affine Groebner charts ell_i=1. This is only a sufficient rank-one recognition gate: an empty Z_psi does not exclude higher-rank or nonlinear pencil directions and does not prove unrestricted HC4.",
       "canonical_source": "HC4_RELATIVE_NILPOTENT_MASTER_REDUCTION.md",
       "dependencies": [
         "HC4RSD16"
@@ -32188,7 +32262,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "HC4 motion-frame correction and positive-sign prolongation",
-      "scope": "In the published regular J4 moving-frame system, the adapted graph Hessian is B=[[-b,-a,0],[-a,0,0],[0,0,0]] and the selected projective differential has determinant pq. An explicit determinant-one frozen source change, preserving the actual selected vector at the point, normalizes B and sends that determinant to pq/a^2. Even b=0 preserves the anti-diagonal metric but not the normalized Jordan matrix, so the sign-only centralizer does not justify a constant comparison factor. Thus the previous deduction d(pq)=0 is unsupported. Independently of that extra equation, differentiating p=q=a in the 96 curvature equations gives an exact 104-equation left-kernel certificate -4a^2, excluding the positive sign on a!=0. The negative sign p=q=-a forces p12+p3+p7=0 in the published nullspace coordinates and survives the next finite compatibility check. A rational jet with a=1,p=q=-1 satisfies all 108 curvature/branch-derivative equations, has d(pq)=(0,3,0,0), and has d(pq/a^2)=0. This is a finite connection jet, not an all-order solution or a polynomial HC4 counterexample. HC4MR1 and HC4MR2 are partial until the remaining negative branch is closed. The exact transport is direct matrix algebra; the branch replay reuses the original first-order frame constructor and does not claim an independent verification of every geometric prerequisite.",
+      "scope": "In the published regular J4 moving-frame system, the adapted graph Hessian is B=[[-b,-a,0],[-a,0,0],[0,0,0]] and the selected projective differential has determinant pq. An explicit determinant-one frozen source change, preserving the actual selected vector at the point, normalizes B and sends that determinant to pq/a^2. Even b=0 preserves the anti-diagonal metric but not the normalized Jordan matrix, so the sign-only centralizer does not justify a constant comparison factor. Thus the previous deduction d(pq)=0 is unsupported. Independently of that extra equation, differentiating p=q=a in the 96 curvature equations gives an exact 104-equation left-kernel certificate -4a^2, excluding the positive sign on a!=0. The negative sign p=q=-a forces p12+p3+p7=0 in the published nullspace coordinates and survives the next finite compatibility check. A rational jet with a=1,p=q=-1 satisfies all 108 curvature/branch-derivative equations, has d(pq)=(0,3,0,0), and has d(pq/a^2)=0. This is a finite connection jet, not an all-order solution or a polynomial HC4 counterexample. The audit initially made HC4MR1 and HC4MR2 partial; HC4MRA2 subsequently closes the negative branch by global polynomiality while retaining this compatible finite jet. The exact transport is direct matrix algebra; the branch replay reuses the original first-order frame constructor and does not claim an independent verification of every geometric prerequisite.",
       "canonical_source": "HC4_MOTION_FRAME_TRANSPORT_AUDIT.md",
       "dependencies": [
         "HC4RSD17"
@@ -32202,6 +32276,40 @@
       "software_lock": [
         "scripts/verify_hc4_affine_plane_prolongation.py",
         "artifacts/generated-results/hc4-motion-frame-transport-v1.json",
+        "requirements.txt",
+        ".python-version"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [
+        "OP-HC4-SCHUR"
+      ],
+      "consumers": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "HC4MRA2",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Global polynomial affine-leaf obstruction for negative HC4 motion",
+      "scope": "Under the polynomial regular J4 Hessian-pencil, kernel quasi-translation, and Frobenius-flag hypotheses of the moving-frame reduction, the negative maximal-motion branch p=q=-a!=0 is empty. Hessian Piola and divergence-free quasi-translation give D_k(sigma)=0 for adj(T)=sigma*k*k^T, so the cofactor-normalized e1=f*k is affinely parallel along itself; the adapted frame also has constant volume. Literal curvature combinations give e1(a)=0 and e2(a)=3*a^2/2. On a generic affine E2 leaf choose constant vectors v1,v2 and write e1=f(t)*v1, e2=h*v1+v(t)*v2. The exact connection gives v_prime=a/2 and v*f_prime=5*a*f/2. Since N is polynomial and N(v2)=(f/v)*v1, n=f/v is a nonzero polynomial in the affine coordinate t on the whole leaf plane, even when the moving frame is only local. Its derivatives satisfy 2*n*n_second-3*n_prime^2=0. A degree-d>=1 polynomial gives leading coefficient -d*(d+2)*c^2, impossible in characteristic zero. Thus n is constant, forcing a=0. This global polynomial argument closes the sign that admits compatible finite local jets and repairs HC4MR1/HC4MR2 together with HC4MRA1. The checker verifies literal local identities and the ODE algebra; the affine-leaf and global polynomiality steps are written, and no independent end-to-end or full formal verification is claimed.",
+      "canonical_source": "HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md",
+      "dependencies": [
+        "HC4RSD17",
+        "HC4MRA1"
+      ],
+      "checker": "scripts/verify_hc4_negative_motion_polynomial_obstruction.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:09c33309d33d1fef10bfd44e37d41071ec66584fed6e9b16f82a855f07b15c24",
+      "software_lock": [
+        "scripts/verify_hc4_motion_frame_transport.py",
+        "scripts/verify_hc4_affine_plane_prolongation.py",
+        "artifacts/generated-results/hc4-negative-motion-polynomial-obstruction-v1.json",
         "requirements.txt",
         ".python-version"
       ],
@@ -32931,6 +33039,58 @@
       "priority": "primary"
     },
     {
+      "id": "EC-K3-ICARM-MW16-SENSITIVITY",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Complement-blind MW16 sensitivity recovery of all 55 control directions",
+      "scope": "A complement-blind calibration on curves 398,400,401,542,548 varies projective heights 10000,100000,200000, generic and specialized centres, exact Gauss metric weights and horizontal PGL2 reduction, rational slope parametrizations, and CVP versus literal-residue adaptive centres. Selection uses certified quotient rank rather than runtime. Generic centres at height 100000 with denominator weight 16 recover 5,5,11,10,8 directions. The frozen uniform rule adapts only initial gains from one through seven, using at most five discovered quotient bits and both centre constructions at height 10000; all 992 active adaptive searches on 398 and 400 complete. The final gains are 14,12,11,10,8, matching all five historical quotient-rank lower bounds (55 directions in total), including the previously missing curve-401 dimension. The selected policy calls neither hyperellminimalmodel nor hyperellred. Separate exact five-coefficient, point-transport, group-relation, finite-reduction independence and no-rational-2-torsion replays pass, with full source-linked evidence retained in deterministic gzip bundles. The analogous horizontal-reduction policy recovers 53 directions under the same adaptive trigger. Exploratory extra adaptive ledgers are checkpointed and not promoted to completed calibrations. The frozen 104-fibre prospective replay is gated on a separately replayed total of at least 54 directions. These are recovered subgroups and bounded searches, not rank upper bounds, saturation in all E(Q), or Selmer conclusions. After the gate passed, all 104 frozen prospective fibres completed all 856 weight-16 generic-centre boxes at height 100000 under a 20-second per-chart cap, with zero finite points, zero quotient gains and zero timeouts. The run covers 17120085600000 integer numerator/denominator pairs and performs 2803616 exact square tests; separate exact replay rechecks every chart and all sixteen generic directions on every fibre. This is a completed bounded null result, not negative rank evidence.",
+      "canonical_source": "elliptic-curves/notes/MW16_SENSITIVITY_RECOVERY_2026-09-05.md",
+      "dependencies": [
+        "EC-K3-ICARM-MW16-POINTED-SIEVE",
+        "EC-K3-ICARM-MW16-BLIND-LADDER"
+      ],
+      "checker": "elliptic-curves/cas/check_mw16_sensitivity_policy.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:2e9da996e54592b9475e8a2bc7f46adc7beadd6ae49dab3ff81d99660a21160c",
+      "software_lock": [
+        "elliptic-curves/cas/mw16_sensitivity_backend.py",
+        "elliptic-curves/cas/run_mw16_sensitivity.sage",
+        "elliptic-curves/cas/freeze_mw16_sensitivity_setting.py",
+        "elliptic-curves/cas/freeze_mw16_adaptive_policy.py",
+        "elliptic-curves/cas/build_mw16_sensitivity_gate.py",
+        "elliptic-curves/cas/verify_mw16_sensitivity.py",
+        "elliptic-curves/cas/replay_mw16_sensitivity.sh",
+        "elliptic-curves/cas/half_lattice_pointed_sieve.py",
+        "elliptic-curves/cas/pointed_quartic_sieve.cpp",
+        "elliptic-curves/cas/mod2_reduction_independence.py",
+        "elliptic-curves/tests/test_mw16_sensitivity_backend.py",
+        "elliptic-curves/tests/test_mw16_sensitivity_catalog.py",
+        "artifacts/generated-results/elliptic-curves/mw16_sensitivity_controls_v1.json.gz",
+        "artifacts/generated-results/elliptic-curves/mw16_sensitivity_controls_summary_v1.json",
+        "artifacts/generated-results/elliptic-curves/mw16_sensitivity_prospective_v1.json.gz",
+        "artifacts/generated-results/elliptic-curves/mw16_sensitivity_prospective_summary_v1.json",
+        "elliptic-curves/cas/check_mw16_sensitivity_policy.py",
+        "elliptic-curves/tests/test_mw16_sensitivity_policy.py"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/cas/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md",
+        "elliptic-curves/notes/POINTED_QUARTIC_SIEVE.md",
+        "elliptic-curves/notes/ICARM_MW16_BLIND_LADDER_AND_PROSPECTIVE_GATE_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
       "id": "ECR31",
       "kind": "theorem",
       "state": "proved",
@@ -33331,6 +33491,80 @@
       "invalidates_assumptions": [],
       "replaced_by": [],
       "priority": "primary"
+    },
+    {
+      "id": "EC-FIXED-CUBIC-RADICAL-MINIMAL-MODELS",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "Six globally minimal models for the three fixed-field radical classes",
+      "scope": "For anchor masks 596921,450876,1047173 at u=-1, all three original covers and their translations by the certified point Q have exact quartic and intersection-of-quadrics presentations. Rational conic, quartic, variable and equation transformations replay to the actual cubic-field Kummer classes. All six integral degree-four models have c4,c6 and discriminant equal to the global minimal Jacobian, proving level zero and global genus-one minimality. Six Magma PointsQI p-adic lattice searches at height argument 10000000 return no point. Six four-descent attempts with preloaded discriminant primes are incomplete: three memory failures, two time limits and one transport failure. A separate 300-second local quartic-field bnfinit pilot also returns no class group. These failures are not empty Selmer sets. Exact inverse maps, including parameter infinity and subtraction of Q, are implemented with immediate Kummer-mask independence certification for any hit. No class is decided; r_1, r_2 and r_1+r_2 remain UNKNOWN, and the curve rank lower bound remains one.",
+      "canonical_source": "elliptic-curves/notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md",
+      "dependencies": [
+        "EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE",
+        "EC-FIXED-CUBIC-U-MINUS1-RANK1",
+        "external: genus-one integral model level and minimal Jacobian discriminant"
+      ],
+      "checker": "elliptic-curves/cas/run_fixed_field_radical_covers.py",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:45483d91c616555141309442622c925c5b05a15a13ba77e2be8d94c7186dca52",
+      "software_lock": [
+        "elliptic-curves/cas/run_fixed_field_radical_covers.py",
+        "elliptic-curves/cas/run_fixed_field_point_realization.py",
+        "elliptic-curves/tests/test_fixed_field_radical_covers.py",
+        "artifacts/generated-results/elliptic-curves/fixed_field_radical_models_v1.json",
+        "artifacts/generated-results/elliptic-curves/fixed_field_radical_models_evidence_v1.json.gz"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/cas/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
+    },
+    {
+      "id": "EC-FIXED-CUBIC-RADICAL-SEARCH-GEOMETRY",
+      "kind": "reproduction",
+      "state": "proved",
+      "title": "All six nominal radical-cover lattice-search boxes are exactly empty",
+      "scope": "For the six pinned original/Q-translated models of the three fixed-field radical classes, every recorded variable transformation is unimodular and leaves the quartic ordinate as one projective coordinate. Naive projective height at most 10000000 therefore forces ordinate absolute value at most 10000000 and parameter denominator at most 3162 or 4472. Exact rational Sturm calculations give uniform real exclusions for three models and isolate all feasible real parameter bands for the other three. Exactly 37944 integer denominator inequalities exclude every rational parameter in those bands; parameter infinity is excluded too. Thus all six nominal height boxes are provably empty before square testing. PointsQI used ExactBound=false, so this does not characterize additional exploration outside its nominal box. The certificate is a bounded coordinate-height exclusion only: no target is globally decided, all three point-or-Sha classifications remain UNKNOWN, and the curve rank lower bound remains one.",
+      "canonical_source": "elliptic-curves/notes/FIXED_CUBIC_U_MINUS1_CASSELS_TATE_2026-09-05.md",
+      "dependencies": [
+        "EC-FIXED-CUBIC-RADICAL-MINIMAL-MODELS",
+        "external: Sturm theorem for exact real root counts"
+      ],
+      "checker": "elliptic-curves/cas/audit_fixed_field_radical_search_geometry.py",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:4206e00a776d0b3dd5d25edcd1212460725bdb23521a910bda36f7b44446064a",
+      "software_lock": [
+        "elliptic-curves/cas/audit_fixed_field_radical_search_geometry.py",
+        "elliptic-curves/tests/test_fixed_field_radical_search_geometry.py",
+        "artifacts/generated-results/elliptic-curves/fixed_field_radical_search_geometry_v1.json",
+        "artifacts/generated-results/elliptic-curves/fixed_field_radical_models_evidence_v1.json.gz"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elliptic-curves/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/cas/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "reference"
     },
     {
       "id": "EC-NF-R14",
@@ -41211,7 +41445,7 @@
       "kind": "theorem",
       "state": "proved",
       "title": "Complete two-prime cohomological triage of the seventeen alternate-Q80 product twists",
-      "scope": "For all seventeen selected exact-rank-one alternate-Q80 V4 bases, complete degree-28 product-twist Frobenius quotients are certified at p=131, with every Tate-factor survivor also certified at p=137. Each raw computation independently reconstructs the exact degree-18 U+4D4 Frobenius factor and full degree-46 H^2 polynomial, checks the reciprocal functional equation, exact Weil size, independent n=1,2 fibrewise moments, and all cyclotomic factors with multiplicity. Twelve targets have Tate degree zero at one prime and therefore geometric product-twist Mordell--Weil rank zero unconditionally; on their torsion-free 48I1 base changes this also gives A^-=Gamma_d=Hhat^(-1)=0. Exactly five targets retain Tate degree two at both primes: alternate-orbit-19bad:alternate-orbit-083ad, alternate-orbit-11ae6:alternate-orbit-0f82c, alternate-orbit-0f82c:alternate-orbit-025be, alternate-orbit-11ee2:alternate-orbit-0c36e, and alternate-orbit-0c10b:alternate-orbit-17a1a. Their geometric product ranks are at most two, but a persistent Tate factor does not prove a characteristic-zero section. These five and only these five are promoted to descent or class-sliced section work; the other twelve are closed.",
+      "scope": "For all seventeen selected exact-rank-one alternate-Q80 V4 bases, complete degree-28 product-twist Frobenius quotients are certified at p=131, with every Tate-factor survivor also certified at p=137. Each raw computation independently reconstructs the exact degree-18 U+4D4 Frobenius factor and full degree-46 H^2 polynomial, checks the reciprocal functional equation, exact Weil size, independent n=1,2 fibrewise moments, and all cyclotomic factors with multiplicity. Twelve targets have Tate degree zero at one prime and therefore geometric product-twist Mordell--Weil rank zero unconditionally; on their torsion-free 48I1 base changes this also gives A^-=Gamma_d=Hhat^(-1)=0. Exactly five targets retain Tate degree two at both primes: alternate-orbit-19bad:alternate-orbit-083ad, alternate-orbit-11ae6:alternate-orbit-0f82c, alternate-orbit-0f82c:alternate-orbit-025be, alternate-orbit-11ee2:alternate-orbit-0c36e, and alternate-orbit-0c10b:alternate-orbit-17a1a. Their geometric product ranks are at most two, but a persistent Tate factor does not prove a characteristic-zero section. These five and only these five pass this cohomological gate, which does not decide their arithmetic ranks; the other twelve are closed geometrically.",
       "canonical_source": "elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md",
       "dependencies": [
         "EC-K3-R17-NORM12-11952-DIRECT-Q80-EQUATION",
@@ -41317,7 +41551,7 @@
       "independent_replay": false,
       "formal_verification": false,
       "external_review": false,
-      "artifact_hash": "sha256:20a414ff4310ac02020feb4cfa76e6c8c3b712d74065e203b5eb57b1bea9a0e5",
+      "artifact_hash": "sha256:ae33cae59dade9a2e1261e3591a7bc86442b0baef3387a6ae711645bdc02ff43",
       "software_lock": [
         "elkies-k3/scripts/certify_r17_product_19bad_083ad_rank_zero.sage",
         "artifacts/generated-results/elkies-k3-r17-product-19bad-083ad-rank-zero-v1.json",
@@ -41341,6 +41575,90 @@
         "elkies-k3/scripts/README.md",
         "REPRODUCE.md",
         "artifacts/generated-results/README.md",
+        "elkies-k3/R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md",
+        "elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md",
+        "elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md"
+      ],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary"
+    },
+    {
+      "id": "EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Arithmetic rank zero for all four remaining product twists by regulator obstructions",
+      "scope": "For the remaining alternate-Q80 product twists 11ee2:0c36e, 0c10b:17a1a, 0f82c:025be, and 11ae6:0f82c, exact two-good-prime BSD/regulator-squareclass comparisons prove E^(d)(QQ(u))={O} and arithmetic rank zero. Stored p=131 and p=137 polynomials give squareclass pairs (1006,182), (670,78), and (1194,1) for the first, second, and fourth targets, with nonsquare BSD-product ratios 2012/4459, 1340/39, and 597/392. The third target has analytic rank two at p=131, so that row supplies no rank-one regulator constraint. Only this target needs a new complete, independently moment-checked p=151 Frobenius polynomial; its analytic rank is one and its BSD product is 14155776 with squareclass 6, versus 294912 with squareclass 2 at p=137, giving nonsquare ratio 1/48. A hypothetical nonzero section specializes with unchanged positive height and forces rank equality at each usable prime, hence refined BSD and finite square-order Sha; incompatible height squareclasses exclude all positive rational heights. Eight retained independent Magma controls agree with every usable local/BSD normalization. The regulator-compatible count is zero and the explicit section-solving queue is empty; no section or Selmer search is launched. Together with the prior single-target and twelve geometric exclusions, all seventeen selected product twists are arithmetically closed. The five former Tate survivors retain geometric rank UNKNOWN in [0,2], and no full two-Selmer or Sha[2] vanishing is claimed.",
+      "canonical_source": "elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md",
+      "dependencies": [
+        "EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO",
+        "EC-K3-R17-PRODUCT-SURVIVOR-GALOIS-HEIGHT-GATE",
+        "EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION"
+      ],
+      "checker": "elkies-k3/scripts/certify_r17_product_regulator_sweep.sage",
+      "proof_type": "exact_symbolic",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:ca6086d3242844e4178ef7fb3c403084ebf87e059436033a869be111660e21e2",
+      "software_lock": [
+        "elkies-k3/scripts/certify_r17_product_regulator_sweep.sage",
+        "artifacts/generated-results/elkies-k3-r17-product-regulator-sweep-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-all17-product-toric-frobenius-campaign-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-alternate-bisections-cheapest-1024-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-product-twist-finite-field-bound-audit-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0c10b--alternate-orbit-17a1a-p131-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0c10b--alternate-orbit-17a1a-p137-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0f82c--alternate-orbit-025be-p131-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0f82c--alternate-orbit-025be-p137-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-0f82c--alternate-orbit-025be-p151-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ae6--alternate-orbit-0f82c-p131-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ae6--alternate-orbit-0f82c-p137-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ee2--alternate-orbit-0c36e-p131-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-alternate-orbit-11ee2--alternate-orbit-0c36e-p137-toric-frobenius-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-extra-prime-audits/alternate-orbit-0f82c--alternate-orbit-025be-p151-v1.json",
+        "artifacts/generated-results/elkies-k3-r17-product-survivor-galois-height-gate-v1.json",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/0c10b--17a1a-p131.m",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/0c10b--17a1a-p131.xml",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/0c10b--17a1a-p137.m",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/0c10b--17a1a-p137.xml",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/0f82c--025be-p137.m",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/0f82c--025be-p137.xml",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/0f82c--025be-p151.m",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/0f82c--025be-p151.xml",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/11ae6--0f82c-p131.m",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/11ae6--0f82c-p131.xml",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/11ae6--0f82c-p137.m",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/11ae6--0f82c-p137.xml",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/11ee2--0c36e-p131.m",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/11ee2--0c36e-p131.xml",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/11ee2--0c36e-p137.m",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/11ee2--0c36e-p137.xml",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/toric-0f82c-025be-p151/input-certificate.json",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/toric-0f82c-025be-p151/toric-controlled-reduction.input",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/toric-0f82c-025be-p151/toric-controlled-reduction.log",
+        "artifacts/generated-results/r17-product-regulator-sweep-controls/toric-0f82c-025be-p151/toric-controlled-reduction.output",
+        "elkies-k3/scripts/certify_r17_product_19bad_083ad_rank_zero.sage",
+        "elkies-k3/scripts/audit_r17_product_twist_extra_prime.sage",
+        "elkies-k3/scripts/run_r17_product_toric_frobenius_extra_prime.sh",
+        "elkies-k3/scripts/certify_r17_product_toric_frobenius.sage"
+      ],
+      "supersedes_notes": [
+        "four arithmetic product-character constructor targets remain unresolved after 19bad:083ad",
+        "the remaining product twists should proceed to section solving before a regulator comparison"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "consumers": [
+        "elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md",
+        "elkies-k3/README.md",
+        "elkies-k3/scripts/README.md",
+        "REPRODUCE.md",
+        "artifacts/generated-results/README.md",
+        "elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md",
         "elkies-k3/R17_PRODUCT_SURVIVOR_GALOIS_HEIGHT_GATE_2026-09-04.md",
         "elkies-k3/R17_PRODUCT_TATE_COHOMOLOGY_REDUCTION_2026-09-04.md",
         "elkies-k3/R17_ALTERNATE_Q80_ALL17_PRODUCT_TWIST_CLASSIFICATION_2026-09-04.md"
@@ -43433,6 +43751,45 @@
         "elliptic-curves/README.md",
         "artifacts/generated-results/elliptic-curves/README.md",
         "REPRODUCE.md"
+      ]
+    },
+    {
+      "id": "EC-EXCEPTIONAL-SOLUBLE-VS-SHA-COMPARISON",
+      "kind": "theorem",
+      "state": "proved",
+      "title": "Five exceptional soluble subspaces and a rank-sixteen residual Sha control",
+      "scope": "The certified generic MW17/MW16 subgroups on curves 356,385,398,400,543 have independent soluble residual dimensions at least 12,12,14,12,12. The extension constructs 62 labelled binary quartic presentations with degree-four covering maps, exact parameter transports and rational witnesses, retaining model, map and witness costs. On the fixed-field u=-1 control, exact good-prime characters through 199 certify that its eighteen inherited Selmer classes and the rational point class eta are independent. Quotienting the rank-one point subgroup therefore leaves an eighteen-dimensional certified subspace with Cassels-Tate rank sixteen and soluble-intersection dimension between zero and two. The augmented nineteen-dimensional space has soluble-intersection dimension between one and three; 524280 classes have a certified nonzero partner. The soluble eta cover and all eighteen insoluble basis covers have exactly equal quartic invariants I,J. All stored insoluble basis equations are smaller than the stored soluble control equation; this concerns presentations, not optimal complexity. In general a complete tested rectangle of pairing rank rho on U times T bounds dim(U intersect W_G) by dim U minus rho and gives at least rho Sha dimensions. A separately certified total residual-dimension upper bound s_max then gives rank E <= r+s_max-rho-epsilon without requiring a complete pairing. The full radical can still contain 2 Sha[4]. New equation-only 45-second/1-GiB-RSS probes for 398,400,543 failed during ellrankinit; historical 1200-second factor-hinted 356/385 BNF failures are retained. No full target Selmer complement, exact rank, new point direction, or prospective complexity predictor is claimed.",
+      "canonical_source": "elliptic-curves/notes/EXCEPTIONAL_SOLUBLE_VS_SHA_PANEL_2026-09-05.md",
+      "dependencies": [
+        "EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL",
+        "EC-FIXED-CUBIC-U-MINUS1-CASSELS-TATE",
+        "EC-RATIONAL-SOLUBILITY-RESIDUAL-SELMER"
+      ],
+      "checker": "elliptic-curves/cas/compare_exceptional_soluble_vs_sha.sage",
+      "proof_type": "hybrid",
+      "independent_replay": false,
+      "formal_verification": false,
+      "external_review": false,
+      "artifact_hash": "sha256:2235a3e39c3e91d305159af4efb5adfe3a5611f073000d730639a47768679cef",
+      "software_lock": [
+        "elliptic-curves/cas/compare_exceptional_soluble_vs_sha.sage",
+        "elliptic-curves/cas/run_exceptional_selmer_feasibility.py",
+        "elliptic-curves/tests/test_exceptional_soluble_vs_sha.py",
+        "artifacts/generated-results/elliptic-curves/exceptional_soluble_vs_sha_comparison_v1.json",
+        "artifacts/generated-results/elliptic-curves/exceptional_selmer_feasibility_v1.json"
+      ],
+      "supersedes": [],
+      "closes_problems": [],
+      "narrows_problems": [],
+      "invalidates_assumptions": [],
+      "replaced_by": [],
+      "priority": "primary",
+      "consumers": [
+        "elliptic-curves/notes/EXCEPTIONAL_SOLUBLE_VS_SHA_PANEL_2026-09-05.md",
+        "elliptic-curves/README.md",
+        "elliptic-curves/REPRODUCE.md",
+        "elliptic-curves/cas/README.md",
+        "artifacts/generated-results/elliptic-curves/README.md"
       ]
     }
   ]

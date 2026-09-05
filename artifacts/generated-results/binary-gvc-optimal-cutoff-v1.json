@@ -1,0 +1,358 @@
+{
+  "format": "binary-gvc-optimal-cutoff-v1",
+  "theorem": "GVC2OC",
+  "source_sha256": {
+    "scripts/verify_binary_gvc_optimal_cutoff.py": "b0e07ec26753d9e6df4baafdee6b152ca55bc635c2660f06e21693586b459a15"
+  },
+  "uniform_coefficient": "C_d=1+floor((d+1)^2/4)",
+  "breakpoint_identity": "(B+E)/(A*E-B*C)=1/A+B/N+B*C/(A*N), N=A*E-B*C",
+  "small_support_pairs": 2475,
+  "feasible_pairs": 885,
+  "sharp_family": [
+    {
+      "degree": 0,
+      "e": 1,
+      "j": 0,
+      "operator_degree": 1,
+      "multiplier_degree": 1,
+      "last_nonzero_power": 1,
+      "last_value": "1",
+      "certificate": {
+        "weight": [
+          1,
+          1
+        ],
+        "gap": 1,
+        "normalized_gap": "1"
+      }
+    },
+    {
+      "degree": 0,
+      "e": 1,
+      "j": 0,
+      "operator_degree": 1,
+      "multiplier_degree": 2,
+      "last_nonzero_power": 2,
+      "last_value": "2",
+      "certificate": {
+        "weight": [
+          1,
+          1
+        ],
+        "gap": 1,
+        "normalized_gap": "1"
+      }
+    },
+    {
+      "degree": 1,
+      "e": 1,
+      "j": 1,
+      "operator_degree": 2,
+      "multiplier_degree": 1,
+      "last_nonzero_power": 2,
+      "last_value": "4",
+      "certificate": {
+        "weight": [
+          2,
+          1
+        ],
+        "gap": 1,
+        "normalized_gap": "1/2"
+      }
+    },
+    {
+      "degree": 1,
+      "e": 1,
+      "j": 1,
+      "operator_degree": 2,
+      "multiplier_degree": 2,
+      "last_nonzero_power": 4,
+      "last_value": "288",
+      "certificate": {
+        "weight": [
+          2,
+          1
+        ],
+        "gap": 1,
+        "normalized_gap": "1/2"
+      }
+    },
+    {
+      "degree": 2,
+      "e": 2,
+      "j": 1,
+      "operator_degree": 3,
+      "multiplier_degree": 1,
+      "last_nonzero_power": 3,
+      "last_value": "432",
+      "certificate": {
+        "weight": [
+          3,
+          2
+        ],
+        "gap": 1,
+        "normalized_gap": "1/3"
+      }
+    },
+    {
+      "degree": 2,
+      "e": 2,
+      "j": 1,
+      "operator_degree": 3,
+      "multiplier_degree": 2,
+      "last_nonzero_power": 6,
+      "last_value": "435456000",
+      "certificate": {
+        "weight": [
+          3,
+          2
+        ],
+        "gap": 1,
+        "normalized_gap": "1/3"
+      }
+    },
+    {
+      "degree": 3,
+      "e": 2,
+      "j": 2,
+      "operator_degree": 5,
+      "multiplier_degree": 1,
+      "last_nonzero_power": 5,
+      "last_value": "26127360000",
+      "certificate": {
+        "weight": [
+          5,
+          2
+        ],
+        "gap": 1,
+        "normalized_gap": "1/5"
+      }
+    },
+    {
+      "degree": 3,
+      "e": 2,
+      "j": 2,
+      "operator_degree": 5,
+      "multiplier_degree": 2,
+      "last_nonzero_power": 10,
+      "last_value": "244726430457562964951040000000",
+      "certificate": {
+        "weight": [
+          5,
+          2
+        ],
+        "gap": 1,
+        "normalized_gap": "1/5"
+      }
+    },
+    {
+      "degree": 4,
+      "e": 3,
+      "j": 2,
+      "operator_degree": 7,
+      "multiplier_degree": 1,
+      "last_nonzero_power": 7,
+      "last_value": "2394017153813879193600000",
+      "certificate": {
+        "weight": [
+          7,
+          3
+        ],
+        "gap": 1,
+        "normalized_gap": "1/7"
+      }
+    },
+    {
+      "degree": 4,
+      "e": 3,
+      "j": 2,
+      "operator_degree": 7,
+      "multiplier_degree": 2,
+      "last_nonzero_power": 14,
+      "last_value": "80953377836993595697774639111996293902997924001873920000000000000",
+      "certificate": {
+        "weight": [
+          7,
+          3
+        ],
+        "gap": 1,
+        "normalized_gap": "1/7"
+      }
+    },
+    {
+      "degree": 5,
+      "e": 3,
+      "j": 3,
+      "operator_degree": 10,
+      "multiplier_degree": 1,
+      "last_nonzero_power": 10,
+      "last_value": "1626242222585424514374728099668302332166144000000000000",
+      "certificate": {
+        "weight": [
+          10,
+          3
+        ],
+        "gap": 1,
+        "normalized_gap": "1/10"
+      }
+    },
+    {
+      "degree": 5,
+      "e": 3,
+      "j": 3,
+      "operator_degree": 10,
+      "multiplier_degree": 2,
+      "last_nonzero_power": 20,
+      "last_value": "453144625094841817101438253116468737863969139362993829292589871153264978048465782403528389025088371418158138916864000000000000000000000000",
+      "certificate": {
+        "weight": [
+          10,
+          3
+        ],
+        "gap": 1,
+        "normalized_gap": "1/10"
+      }
+    },
+    {
+      "degree": 6,
+      "e": 4,
+      "j": 3,
+      "operator_degree": 13,
+      "multiplier_degree": 1,
+      "last_nonzero_power": 13,
+      "last_value": "4759881908478104902842703815279073886248770856607646613530127481438899919231385600000000000000000",
+      "certificate": {
+        "weight": [
+          13,
+          4
+        ],
+        "gap": 1,
+        "normalized_gap": "1/13"
+      }
+    },
+    {
+      "degree": 6,
+      "e": 4,
+      "j": 3,
+      "operator_degree": 13,
+      "multiplier_degree": 2,
+      "last_nonzero_power": 26,
+      "last_value": "186595119444326926660856823622569115324365970993509708955062916581349402721397047287414019249933923409224521813406998360718982394192949814578092339770159283669884070461766071695828009925347863785216409600000000000000000000000000000000000000",
+      "certificate": {
+        "weight": [
+          13,
+          4
+        ],
+        "gap": 1,
+        "normalized_gap": "1/13"
+      }
+    },
+    {
+      "degree": 7,
+      "e": 4,
+      "j": 4,
+      "operator_degree": 17,
+      "multiplier_degree": 1,
+      "last_nonzero_power": 17,
+      "last_value": "476083636084647354491115779554312764735944686172632305989686458395660419772435595941904742450991336671983156211482224917543253484112466411520000000000000000000000000000",
+      "certificate": {
+        "weight": [
+          17,
+          4
+        ],
+        "gap": 1,
+        "normalized_gap": "1/17"
+      }
+    },
+    {
+      "degree": 7,
+      "e": 4,
+      "j": 4,
+      "operator_degree": 17,
+      "multiplier_degree": 2,
+      "last_nonzero_power": 34,
+      "last_value": "6842082669211318938136370955198677059248342254075937599279220966900629671485327099019205923728348484747327633118529837714119306814723155727085075794417873055797314509003208195859992402784232940666277874936454597620638438414096276384728749657920724052599554821780761084723276292243782904595333469427137815026333503047130235869308267501000485813354496000000000000000000000000000000000000000000000000000000000",
+      "certificate": {
+        "weight": [
+          17,
+          4
+        ],
+        "gap": 1,
+        "normalized_gap": "1/17"
+      }
+    },
+    {
+      "degree": 8,
+      "e": 5,
+      "j": 4,
+      "operator_degree": 21,
+      "multiplier_degree": 1,
+      "last_nonzero_power": 21,
+      "last_value": "5587930872198829366910824370378784343465148516550208801953464288405493493047259824277410731102810482856023862507471160637115167072931349793548210594621749630388175927698555625889258108973770859182476430421853669781667840000000000000000000000000000000000000000",
+      "certificate": {
+        "weight": [
+          21,
+          5
+        ],
+        "gap": 1,
+        "normalized_gap": "1/21"
+      }
+    },
+    {
+      "degree": 8,
+      "e": 5,
+      "j": 4,
+      "operator_degree": 21,
+      "multiplier_degree": 2,
+      "last_nonzero_power": 42,
+      "last_value": "216382159873957324857681194588405747956684690683332682180046345591907286052866508729506991875102096114841224746357035322250745336360689385492502826134220910930130001985134562176912119845684612872657191292424215745781909051490586805509119833666589824268063725610541838857219047874405904303369708319058954223551258135348256066788774733705513736334603990654381423089384374341356392344569324125482280717742788167384323989715918574805418571097726376309264023086983461697109979418436888649918156425635116566573459473575975215586062218276372480000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "certificate": {
+        "weight": [
+          21,
+          5
+        ],
+        "gap": 1,
+        "normalized_gap": "1/21"
+      }
+    }
+  ],
+  "high_operator_order_controls": [
+    {
+      "operator_degree": 17,
+      "polynomial_degree": 3,
+      "certificate": {
+        "weight": [
+          17,
+          2
+        ],
+        "gap": 13,
+        "normalized_gap": "13/17"
+      }
+    },
+    {
+      "operator_degree": 101,
+      "polynomial_degree": 3,
+      "certificate": {
+        "weight": [
+          101,
+          2
+        ],
+        "gap": 97,
+        "normalized_gap": "97/101"
+      }
+    },
+    {
+      "operator_degree": 1000000007,
+      "polynomial_degree": 3,
+      "certificate": {
+        "weight": [
+          1000000007,
+          2
+        ],
+        "gap": 1000000003,
+        "normalized_gap": "1000000003/1000000007"
+      }
+    }
+  ],
+  "boundary": "The rational identities and finite regressions are exact; the universal envelope maximum argument and support-certificate necessity remain written proofs. No literature-priority or full formal-verification claim."
+}

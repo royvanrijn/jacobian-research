@@ -1,0 +1,1926 @@
+{
+  "format": "binary-gvc-finite-certificate-regressions-v1",
+  "theorem": "GVC2SC",
+  "assurance": "written universal proof; exact finite algorithm and independent positive-certificate regressions",
+  "source_sha256": {
+    "jcsearch/binary_gvc_certificate.py": "ddf42a98dd2c03b6b6231d7301f8c4131f1bcdfd9a9766458b29cd9a576e147a",
+    "scripts/verify_binary_gvc_finite_certificate.py": "f83f95d51a93decd7c1b6d15709c3bef4b7ddfac4062c25d78957e851b4d0b96"
+  },
+  "fixtures": [
+    {
+      "name": "zero_symbol",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [],
+        "input_polynomial": [
+          [
+            0,
+            1,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "pure_status": "all_powers_zero",
+        "method": "zero input",
+        "mixed_cutoff": 1
+      }
+    },
+    {
+      "name": "zero_polynomial",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            1,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [],
+        "input_multiplier": [
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "pure_status": "all_powers_zero",
+        "method": "zero input",
+        "mixed_cutoff": 1
+      }
+    },
+    {
+      "name": "constant_polynomial",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            1,
+            1,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            0,
+            "3"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            0,
+            1,
+            "1"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 2,
+        "highest_operator_order": 2,
+        "polynomial_degree": 0,
+        "method": "ordinary degree gap",
+        "pure_status": "all_powers_zero",
+        "chart": {
+          "kind": "identity"
+        },
+        "transformed_symbol": [
+          [
+            1,
+            1,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            0,
+            "3"
+          ]
+        ],
+        "separation": {
+          "feasible": true,
+          "weight": [
+            1,
+            1
+          ],
+          "operator_min": 2,
+          "polynomial_max": 0,
+          "gap": 2
+        },
+        "transformed_multiplier": [
+          [
+            0,
+            1,
+            "1"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "multiplier_weight": 2,
+        "mixed_cutoff": 2,
+        "degree_only_cutoff": 5
+      }
+    },
+    {
+      "name": "constant_symbol_rejected",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            1,
+            "-1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            0,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "pure_status": "pure_premise_false",
+        "method": "nonzero constant symbol",
+        "first_nonzero_pure_power": 1,
+        "independent_first_nonzero_pure_power": 1
+      }
+    },
+    {
+      "name": "ordinary_degree",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            1,
+            1,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            0,
+            3,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 2,
+        "highest_operator_order": 2,
+        "polynomial_degree": 1,
+        "method": "ordinary degree gap",
+        "pure_status": "all_powers_zero",
+        "chart": {
+          "kind": "identity"
+        },
+        "transformed_symbol": [
+          [
+            1,
+            1,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "separation": {
+          "feasible": true,
+          "weight": [
+            1,
+            1
+          ],
+          "operator_min": 2,
+          "polynomial_max": 1,
+          "gap": 1
+        },
+        "transformed_multiplier": [
+          [
+            0,
+            3,
+            "1"
+          ]
+        ],
+        "multiplier_weight": 3,
+        "mixed_cutoff": 4,
+        "degree_only_cutoff": 10
+      }
+    },
+    {
+      "name": "equal_degree_repeated_direction",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            2,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "2"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            0,
+            2,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "-2"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            1,
+            1,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 2,
+        "highest_operator_order": 2,
+        "polynomial_degree": 2,
+        "lowest_symbol_factorization": {
+          "content": "1",
+          "factors": [
+            {
+              "coefficients_descending": [
+                "1",
+                "1"
+              ],
+              "multiplicity": 2,
+              "degree": 1
+            }
+          ],
+          "infinity_multiplicity": 0
+        },
+        "direction_trials": [
+          {
+            "chart": {
+              "kind": "finite",
+              "root": "-1",
+              "multiplicity": 2
+            },
+            "operator_x_multiplicity": 2,
+            "top_polynomial_max_x": 0,
+            "hall_candidate": true
+          }
+        ],
+        "chart": {
+          "kind": "finite",
+          "root": "-1",
+          "multiplicity": 2
+        },
+        "transformed_symbol": [
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            0,
+            "1"
+          ],
+          [
+            0,
+            2,
+            "1"
+          ]
+        ],
+        "separation": {
+          "feasible": true,
+          "lower": "1",
+          "upper": null,
+          "lower_pair": null,
+          "upper_pair": null,
+          "weight": [
+            2,
+            1
+          ],
+          "operator_min": 4,
+          "polynomial_max": 2,
+          "gap": 2
+        },
+        "method": "unique rational Hall chart and strict support separation",
+        "pure_status": "all_powers_zero",
+        "transformed_multiplier": [
+          [
+            1,
+            1,
+            "1"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "multiplier_weight": 4,
+        "mixed_cutoff": 3,
+        "degree_only_cutoff": 9
+      }
+    },
+    {
+      "name": "equal_degree_simple_direction",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            2,
+            "-1"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            2,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "2"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 2,
+        "highest_operator_order": 2,
+        "polynomial_degree": 2,
+        "lowest_symbol_factorization": {
+          "content": "1",
+          "factors": [
+            {
+              "coefficients_descending": [
+                "1",
+                "-1"
+              ],
+              "multiplicity": 1,
+              "degree": 1
+            },
+            {
+              "coefficients_descending": [
+                "1",
+                "1"
+              ],
+              "multiplicity": 1,
+              "degree": 1
+            }
+          ],
+          "infinity_multiplicity": 0
+        },
+        "direction_trials": [
+          {
+            "chart": {
+              "kind": "finite",
+              "root": "-1",
+              "multiplicity": 1
+            },
+            "operator_x_multiplicity": 1,
+            "top_polynomial_max_x": 2,
+            "hall_candidate": false
+          },
+          {
+            "chart": {
+              "kind": "finite",
+              "root": "1",
+              "multiplicity": 1
+            },
+            "operator_x_multiplicity": 1,
+            "top_polynomial_max_x": 0,
+            "hall_candidate": true
+          }
+        ],
+        "chart": {
+          "kind": "finite",
+          "root": "1",
+          "multiplicity": 1
+        },
+        "transformed_symbol": [
+          [
+            1,
+            1,
+            "2"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            2,
+            "1"
+          ]
+        ],
+        "separation": {
+          "feasible": true,
+          "lower": "1",
+          "upper": null,
+          "lower_pair": null,
+          "upper_pair": null,
+          "weight": [
+            2,
+            1
+          ],
+          "operator_min": 3,
+          "polynomial_max": 2,
+          "gap": 1
+        },
+        "method": "unique rational Hall chart and strict support separation",
+        "pure_status": "all_powers_zero",
+        "transformed_multiplier": [
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "multiplier_weight": 2,
+        "mixed_cutoff": 3,
+        "degree_only_cutoff": 5
+      }
+    },
+    {
+      "name": "nonhomogeneous",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            7,
+            "1"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            3,
+            "1"
+          ],
+          [
+            1,
+            2,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            0,
+            6,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 2,
+        "highest_operator_order": 7,
+        "polynomial_degree": 3,
+        "lowest_symbol_factorization": {
+          "content": "1",
+          "factors": [
+            {
+              "coefficients_descending": [
+                "1",
+                "0"
+              ],
+              "multiplicity": 2,
+              "degree": 1
+            }
+          ],
+          "infinity_multiplicity": 0
+        },
+        "direction_trials": [
+          {
+            "chart": {
+              "kind": "finite",
+              "root": "0",
+              "multiplicity": 2
+            },
+            "operator_x_multiplicity": 2,
+            "top_polynomial_max_x": 1,
+            "hall_candidate": true
+          }
+        ],
+        "chart": {
+          "kind": "finite",
+          "root": "0",
+          "multiplicity": 2
+        },
+        "transformed_symbol": [
+          [
+            0,
+            7,
+            "1"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            3,
+            "1"
+          ],
+          [
+            1,
+            2,
+            "1"
+          ]
+        ],
+        "separation": {
+          "feasible": true,
+          "lower": "2",
+          "upper": "5",
+          "lower_pair": {
+            "operator": [
+              2,
+              0
+            ],
+            "polynomial": [
+              1,
+              2
+            ]
+          },
+          "upper_pair": {
+            "operator": [
+              0,
+              7
+            ],
+            "polynomial": [
+              1,
+              2
+            ]
+          },
+          "weight": [
+            7,
+            2
+          ],
+          "operator_min": 14,
+          "polynomial_max": 11,
+          "gap": 3
+        },
+        "method": "unique rational Hall chart and strict support separation",
+        "pure_status": "all_powers_zero",
+        "transformed_multiplier": [
+          [
+            0,
+            6,
+            "1"
+          ]
+        ],
+        "multiplier_weight": 12,
+        "mixed_cutoff": 5,
+        "degree_only_cutoff": 61
+      }
+    },
+    {
+      "name": "rational_rotated",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            2,
+            "4/9"
+          ],
+          [
+            0,
+            7,
+            "1"
+          ],
+          [
+            1,
+            1,
+            "-4/3"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            3,
+            "1"
+          ],
+          [
+            1,
+            2,
+            "3"
+          ],
+          [
+            2,
+            1,
+            "8/3"
+          ],
+          [
+            3,
+            0,
+            "20/27"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            0,
+            1,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 2,
+        "highest_operator_order": 7,
+        "polynomial_degree": 3,
+        "lowest_symbol_factorization": {
+          "content": "1/9",
+          "factors": [
+            {
+              "coefficients_descending": [
+                "3",
+                "-2"
+              ],
+              "multiplicity": 2,
+              "degree": 1
+            }
+          ],
+          "infinity_multiplicity": 0
+        },
+        "direction_trials": [
+          {
+            "chart": {
+              "kind": "finite",
+              "root": "2/3",
+              "multiplicity": 2
+            },
+            "operator_x_multiplicity": 2,
+            "top_polynomial_max_x": 1,
+            "hall_candidate": true
+          }
+        ],
+        "chart": {
+          "kind": "finite",
+          "root": "2/3",
+          "multiplicity": 2
+        },
+        "transformed_symbol": [
+          [
+            0,
+            7,
+            "1"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            3,
+            "1"
+          ],
+          [
+            1,
+            2,
+            "1"
+          ]
+        ],
+        "separation": {
+          "feasible": true,
+          "lower": "2",
+          "upper": "5",
+          "lower_pair": {
+            "operator": [
+              2,
+              0
+            ],
+            "polynomial": [
+              1,
+              2
+            ]
+          },
+          "upper_pair": {
+            "operator": [
+              0,
+              7
+            ],
+            "polynomial": [
+              1,
+              2
+            ]
+          },
+          "weight": [
+            7,
+            2
+          ],
+          "operator_min": 14,
+          "polynomial_max": 11,
+          "gap": 3
+        },
+        "method": "unique rational Hall chart and strict support separation",
+        "pure_status": "all_powers_zero",
+        "transformed_multiplier": [
+          [
+            0,
+            1,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1/3"
+          ]
+        ],
+        "multiplier_weight": 7,
+        "mixed_cutoff": 3,
+        "degree_only_cutoff": 11
+      }
+    },
+    {
+      "name": "infinity_direction",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            2,
+            "1"
+          ],
+          [
+            7,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            2,
+            1,
+            "1"
+          ],
+          [
+            3,
+            0,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            0,
+            1,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 2,
+        "highest_operator_order": 7,
+        "polynomial_degree": 3,
+        "lowest_symbol_factorization": {
+          "content": "1",
+          "factors": [],
+          "infinity_multiplicity": 2
+        },
+        "direction_trials": [
+          {
+            "chart": {
+              "kind": "swap",
+              "multiplicity": 2
+            },
+            "operator_x_multiplicity": 2,
+            "top_polynomial_max_x": 1,
+            "hall_candidate": true
+          }
+        ],
+        "chart": {
+          "kind": "swap",
+          "multiplicity": 2
+        },
+        "transformed_symbol": [
+          [
+            0,
+            7,
+            "1"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            3,
+            "1"
+          ],
+          [
+            1,
+            2,
+            "1"
+          ]
+        ],
+        "separation": {
+          "feasible": true,
+          "lower": "2",
+          "upper": "5",
+          "lower_pair": {
+            "operator": [
+              2,
+              0
+            ],
+            "polynomial": [
+              1,
+              2
+            ]
+          },
+          "upper_pair": {
+            "operator": [
+              0,
+              7
+            ],
+            "polynomial": [
+              1,
+              2
+            ]
+          },
+          "weight": [
+            7,
+            2
+          ],
+          "operator_min": 14,
+          "polynomial_max": 11,
+          "gap": 3
+        },
+        "method": "unique rational Hall chart and strict support separation",
+        "pure_status": "all_powers_zero",
+        "transformed_multiplier": [
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "multiplier_weight": 7,
+        "mixed_cutoff": 3,
+        "degree_only_cutoff": 11
+      }
+    },
+    {
+      "name": "hall_but_no_separator",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            4,
+            "1"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            3,
+            "1"
+          ],
+          [
+            1,
+            2,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 2,
+        "highest_operator_order": 4,
+        "polynomial_degree": 3,
+        "lowest_symbol_factorization": {
+          "content": "1",
+          "factors": [
+            {
+              "coefficients_descending": [
+                "1",
+                "0"
+              ],
+              "multiplicity": 2,
+              "degree": 1
+            }
+          ],
+          "infinity_multiplicity": 0
+        },
+        "direction_trials": [
+          {
+            "chart": {
+              "kind": "finite",
+              "root": "0",
+              "multiplicity": 2
+            },
+            "operator_x_multiplicity": 2,
+            "top_polynomial_max_x": 1,
+            "hall_candidate": true
+          }
+        ],
+        "chart": {
+          "kind": "finite",
+          "root": "0",
+          "multiplicity": 2
+        },
+        "transformed_symbol": [
+          [
+            0,
+            4,
+            "1"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            3,
+            "1"
+          ],
+          [
+            1,
+            2,
+            "1"
+          ]
+        ],
+        "separation": {
+          "feasible": false,
+          "reason": "empty open interval",
+          "lower": "2",
+          "upper": "2",
+          "lower_pair": {
+            "operator": [
+              2,
+              0
+            ],
+            "polynomial": [
+              1,
+              2
+            ]
+          },
+          "upper_pair": {
+            "operator": [
+              0,
+              4
+            ],
+            "polynomial": [
+              1,
+              2
+            ]
+          }
+        },
+        "pure_status": "pure_premise_false",
+        "method": "unique Hall chart has no strict positive separator",
+        "independent_first_nonzero_pure_power": 2
+      }
+    },
+    {
+      "name": "nonrational_factors_rejected",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            2,
+            "1"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            2,
+            "-1"
+          ],
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            0,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 2,
+        "highest_operator_order": 2,
+        "polynomial_degree": 2,
+        "lowest_symbol_factorization": {
+          "content": "1",
+          "factors": [
+            {
+              "coefficients_descending": [
+                "1",
+                "0",
+                "1"
+              ],
+              "multiplicity": 1,
+              "degree": 2
+            }
+          ],
+          "infinity_multiplicity": 0
+        },
+        "direction_trials": [],
+        "pure_status": "pure_premise_false",
+        "method": "no Hall direction; uniqueness rules out nonrational directions",
+        "independent_first_nonzero_pure_power": 2
+      }
+    }
+  ],
+  "small_support_pairs": 2025,
+  "small_support_feasible": 420,
+  "sharp_family": [
+    {
+      "d": 1,
+      "q": 1,
+      "last_nonzero_m": 2,
+      "last_nonzero_value": "4",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            2,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            1,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 1,
+        "highest_operator_order": 2,
+        "polynomial_degree": 1,
+        "lowest_symbol_factorization": {
+          "content": "1",
+          "factors": [
+            {
+              "coefficients_descending": [
+                "1",
+                "0"
+              ],
+              "multiplicity": 1,
+              "degree": 1
+            }
+          ],
+          "infinity_multiplicity": 0
+        },
+        "direction_trials": [
+          {
+            "chart": {
+              "kind": "finite",
+              "root": "0",
+              "multiplicity": 1
+            },
+            "operator_x_multiplicity": 1,
+            "top_polynomial_max_x": 0,
+            "hall_candidate": true
+          }
+        ],
+        "chart": {
+          "kind": "finite",
+          "root": "0",
+          "multiplicity": 1
+        },
+        "transformed_symbol": [
+          [
+            0,
+            2,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            1,
+            "1"
+          ]
+        ],
+        "separation": {
+          "feasible": true,
+          "lower": "1",
+          "upper": null,
+          "lower_pair": null,
+          "upper_pair": null,
+          "weight": [
+            2,
+            1
+          ],
+          "operator_min": 2,
+          "polynomial_max": 1,
+          "gap": 1
+        },
+        "method": "unique rational Hall chart and strict support separation",
+        "pure_status": "all_powers_zero",
+        "transformed_multiplier": [
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "multiplier_weight": 2,
+        "mixed_cutoff": 3,
+        "degree_only_cutoff": 4
+      }
+    },
+    {
+      "d": 1,
+      "q": 2,
+      "last_nonzero_m": 4,
+      "last_nonzero_value": "288",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            2,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            1,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 1,
+        "highest_operator_order": 2,
+        "polynomial_degree": 1,
+        "lowest_symbol_factorization": {
+          "content": "1",
+          "factors": [
+            {
+              "coefficients_descending": [
+                "1",
+                "0"
+              ],
+              "multiplicity": 1,
+              "degree": 1
+            }
+          ],
+          "infinity_multiplicity": 0
+        },
+        "direction_trials": [
+          {
+            "chart": {
+              "kind": "finite",
+              "root": "0",
+              "multiplicity": 1
+            },
+            "operator_x_multiplicity": 1,
+            "top_polynomial_max_x": 0,
+            "hall_candidate": true
+          }
+        ],
+        "chart": {
+          "kind": "finite",
+          "root": "0",
+          "multiplicity": 1
+        },
+        "transformed_symbol": [
+          [
+            0,
+            2,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            1,
+            "1"
+          ]
+        ],
+        "separation": {
+          "feasible": true,
+          "lower": "1",
+          "upper": null,
+          "lower_pair": null,
+          "upper_pair": null,
+          "weight": [
+            2,
+            1
+          ],
+          "operator_min": 2,
+          "polynomial_max": 1,
+          "gap": 1
+        },
+        "method": "unique rational Hall chart and strict support separation",
+        "pure_status": "all_powers_zero",
+        "transformed_multiplier": [
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "multiplier_weight": 4,
+        "mixed_cutoff": 5,
+        "degree_only_cutoff": 7
+      }
+    },
+    {
+      "d": 2,
+      "q": 1,
+      "last_nonzero_m": 3,
+      "last_nonzero_value": "2160",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            3,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            2,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 1,
+        "highest_operator_order": 3,
+        "polynomial_degree": 2,
+        "lowest_symbol_factorization": {
+          "content": "1",
+          "factors": [
+            {
+              "coefficients_descending": [
+                "1",
+                "0"
+              ],
+              "multiplicity": 1,
+              "degree": 1
+            }
+          ],
+          "infinity_multiplicity": 0
+        },
+        "direction_trials": [
+          {
+            "chart": {
+              "kind": "finite",
+              "root": "0",
+              "multiplicity": 1
+            },
+            "operator_x_multiplicity": 1,
+            "top_polynomial_max_x": 0,
+            "hall_candidate": true
+          }
+        ],
+        "chart": {
+          "kind": "finite",
+          "root": "0",
+          "multiplicity": 1
+        },
+        "transformed_symbol": [
+          [
+            0,
+            3,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            2,
+            "1"
+          ]
+        ],
+        "separation": {
+          "feasible": true,
+          "lower": "2",
+          "upper": null,
+          "lower_pair": {
+            "operator": [
+              1,
+              0
+            ],
+            "polynomial": [
+              0,
+              2
+            ]
+          },
+          "upper_pair": null,
+          "weight": [
+            3,
+            1
+          ],
+          "operator_min": 3,
+          "polynomial_max": 2,
+          "gap": 1
+        },
+        "method": "unique rational Hall chart and strict support separation",
+        "pure_status": "all_powers_zero",
+        "transformed_multiplier": [
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "multiplier_weight": 3,
+        "mixed_cutoff": 4,
+        "degree_only_cutoff": 6
+      }
+    },
+    {
+      "d": 2,
+      "q": 2,
+      "last_nonzero_m": 6,
+      "last_nonzero_value": "14370048000",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            3,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            2,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 1,
+        "highest_operator_order": 3,
+        "polynomial_degree": 2,
+        "lowest_symbol_factorization": {
+          "content": "1",
+          "factors": [
+            {
+              "coefficients_descending": [
+                "1",
+                "0"
+              ],
+              "multiplicity": 1,
+              "degree": 1
+            }
+          ],
+          "infinity_multiplicity": 0
+        },
+        "direction_trials": [
+          {
+            "chart": {
+              "kind": "finite",
+              "root": "0",
+              "multiplicity": 1
+            },
+            "operator_x_multiplicity": 1,
+            "top_polynomial_max_x": 0,
+            "hall_candidate": true
+          }
+        ],
+        "chart": {
+          "kind": "finite",
+          "root": "0",
+          "multiplicity": 1
+        },
+        "transformed_symbol": [
+          [
+            0,
+            3,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            2,
+            "1"
+          ]
+        ],
+        "separation": {
+          "feasible": true,
+          "lower": "2",
+          "upper": null,
+          "lower_pair": {
+            "operator": [
+              1,
+              0
+            ],
+            "polynomial": [
+              0,
+              2
+            ]
+          },
+          "upper_pair": null,
+          "weight": [
+            3,
+            1
+          ],
+          "operator_min": 3,
+          "polynomial_max": 2,
+          "gap": 1
+        },
+        "method": "unique rational Hall chart and strict support separation",
+        "pure_status": "all_powers_zero",
+        "transformed_multiplier": [
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "multiplier_weight": 6,
+        "mixed_cutoff": 7,
+        "degree_only_cutoff": 11
+      }
+    },
+    {
+      "d": 3,
+      "q": 1,
+      "last_nonzero_m": 4,
+      "last_nonzero_value": "1916006400",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            4,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            3,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 1,
+        "highest_operator_order": 4,
+        "polynomial_degree": 3,
+        "lowest_symbol_factorization": {
+          "content": "1",
+          "factors": [
+            {
+              "coefficients_descending": [
+                "1",
+                "0"
+              ],
+              "multiplicity": 1,
+              "degree": 1
+            }
+          ],
+          "infinity_multiplicity": 0
+        },
+        "direction_trials": [
+          {
+            "chart": {
+              "kind": "finite",
+              "root": "0",
+              "multiplicity": 1
+            },
+            "operator_x_multiplicity": 1,
+            "top_polynomial_max_x": 0,
+            "hall_candidate": true
+          }
+        ],
+        "chart": {
+          "kind": "finite",
+          "root": "0",
+          "multiplicity": 1
+        },
+        "transformed_symbol": [
+          [
+            0,
+            4,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            3,
+            "1"
+          ]
+        ],
+        "separation": {
+          "feasible": true,
+          "lower": "3",
+          "upper": null,
+          "lower_pair": {
+            "operator": [
+              1,
+              0
+            ],
+            "polynomial": [
+              0,
+              3
+            ]
+          },
+          "upper_pair": null,
+          "weight": [
+            4,
+            1
+          ],
+          "operator_min": 4,
+          "polynomial_max": 3,
+          "gap": 1
+        },
+        "method": "unique rational Hall chart and strict support separation",
+        "pure_status": "all_powers_zero",
+        "transformed_multiplier": [
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "multiplier_weight": 4,
+        "mixed_cutoff": 5,
+        "degree_only_cutoff": 8
+      }
+    },
+    {
+      "d": 3,
+      "q": 2,
+      "last_nonzero_m": 8,
+      "last_nonzero_value": "34745110497061408604160000",
+      "certificate": {
+        "format": "binary-gvc-finite-certificate-v1",
+        "field": "QQ",
+        "input_symbol": [
+          [
+            0,
+            4,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "input_polynomial": [
+          [
+            0,
+            3,
+            "1"
+          ]
+        ],
+        "input_multiplier": [
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "completeness_source": "GVC2SC",
+        "lowest_operator_order": 1,
+        "highest_operator_order": 4,
+        "polynomial_degree": 3,
+        "lowest_symbol_factorization": {
+          "content": "1",
+          "factors": [
+            {
+              "coefficients_descending": [
+                "1",
+                "0"
+              ],
+              "multiplicity": 1,
+              "degree": 1
+            }
+          ],
+          "infinity_multiplicity": 0
+        },
+        "direction_trials": [
+          {
+            "chart": {
+              "kind": "finite",
+              "root": "0",
+              "multiplicity": 1
+            },
+            "operator_x_multiplicity": 1,
+            "top_polynomial_max_x": 0,
+            "hall_candidate": true
+          }
+        ],
+        "chart": {
+          "kind": "finite",
+          "root": "0",
+          "multiplicity": 1
+        },
+        "transformed_symbol": [
+          [
+            0,
+            4,
+            "1"
+          ],
+          [
+            1,
+            0,
+            "1"
+          ]
+        ],
+        "transformed_polynomial": [
+          [
+            0,
+            3,
+            "1"
+          ]
+        ],
+        "separation": {
+          "feasible": true,
+          "lower": "3",
+          "upper": null,
+          "lower_pair": {
+            "operator": [
+              1,
+              0
+            ],
+            "polynomial": [
+              0,
+              3
+            ]
+          },
+          "upper_pair": null,
+          "weight": [
+            4,
+            1
+          ],
+          "operator_min": 4,
+          "polynomial_max": 3,
+          "gap": 1
+        },
+        "method": "unique rational Hall chart and strict support separation",
+        "pure_status": "all_powers_zero",
+        "transformed_multiplier": [
+          [
+            2,
+            0,
+            "1"
+          ]
+        ],
+        "multiplier_weight": 8,
+        "mixed_cutoff": 9,
+        "degree_only_cutoff": 15
+      }
+    }
+  ],
+  "adversarial_mutations_rejected": [
+    "weight",
+    "coordinate transport"
+  ]
+}

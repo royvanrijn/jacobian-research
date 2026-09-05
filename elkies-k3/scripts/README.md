@@ -4177,6 +4177,21 @@ higher rational sections are excluded. Replay is local:
 sage -python certify_r17_product_19bad_083ad_rank_zero.sage --check
 ```
 
+`certify_r17_product_regulator_sweep.sage` applies the same local/BSD
+calculation to the remaining four products and proves arithmetic rank zero
+for all four. It reuses 131/137, adding only `0f82c:025be` at 151 because
+that target has analytic rank two at 131. Its explicit section-solving queue
+is empty; geometric ranks remain unknown in `[0,2]`.
+
+```bash
+sage -python certify_r17_product_regulator_sweep.sage --check
+sage -python certify_r17_product_regulator_sweep.sage --self-test
+```
+
+Replay checks eight retained Magma local/BSD controls and the raw new toric
+input/output without network access or cohomology recomputation. See the
+[canonical sweep proof](../R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md).
+
 See the [canonical rank-zero proof](../R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md).
 No full Selmer group or other target is computed.
 
@@ -4375,3 +4390,5 @@ checks its exact divisor, chamber/nefness, equation identity, and claimed fibre 
 Mordell--Weil data.
 
 <!-- status-consumer: EC-K3-R17-PRODUCT-19BAD-083AD-ARITHMETIC-RANK-ZERO fe572bd5979b5d2c -->
+
+<!-- status-consumer: EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP f86dead53d55babe -->

@@ -1,0 +1,72 @@
+{
+  "inputs": {
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-base-rank-screen-v1.json": "ed41526fca5724f529aaf73d3f695fe2a781eaf4ea6b6fb792a2af5676759f69",
+    "artifacts/generated-results/elkies-k3-r17-norm12-11952-v4-pair-shortlist-64-v1.json": "4739e0b24b00e276269b228d7c85a01743caa1dcbc62ef58ea59ca3152d116a0",
+    "artifacts/generated-results/elkies-k3-r17-norm12-orbit11952-direct-fibration-v1.json": "76c54483c93c7090def42a8dad256838eb9510cd8479d07c5e3123eefa5cfe66",
+    "elkies-k3/scripts/audit_r17_norm12_11952_product_twist_finite_field_bounds.sage": "7c41d6aca5cdb25e10f8317df76db6f93a10324846accddad7cf0371558584bd",
+    "elkies-k3/scripts/audit_r17_product_twist_extra_prime.sage": "56afe29d515ccfdb108a9bca875c954d3f0b5d8a8b55c132957cc8ab4fdccccb"
+  },
+  "method": {
+    "independence": "direct fibrewise character sums, independent of toric controlled reduction",
+    "local_trace_identity": "a_(p^n)(E^d_u)=chi_(p^n)(d(u))*a_(p^n)(E_u)"
+  },
+  "pair_key": "alternate-orbit-0f82c:alternate-orbit-025be",
+  "prime": 151,
+  "proof_boundary": "The good-reduction checks and first two Frobenius power sums are exact. This audit alone supplies neither the complete degree-28 polynomial nor a Mordell--Weil rank bound.",
+  "reduction_summary": {
+    "fp2_local_character_sums_sha256": "111896c3d8daaf0b57cc69c7d938ad2a22c370e348ce7f1382b16d21f4368a3d",
+    "fp2_nonsquare": 3,
+    "fp_local_character_sums_sha256": "3d42d1173292064750d87011b37dada83e8b84430cf7b7847a80f685f803a1ef",
+    "original_discriminant_factor_degrees": [
+      2,
+      22
+    ],
+    "original_nodal_fibre_count_geometric": 24
+  },
+  "reproducing_command": "elkies-k3/scripts/audit_r17_product_twist_extra_prime.sage --pair-key alternate-orbit-0f82c:alternate-orbit-025be --prime 151",
+  "schema": "elkies-k3.r17-product-twist-extra-prime-audit.v1",
+  "status": "PASS_EXACT_EXTRA_PRIME_N1_N2_AUDIT",
+  "targets": [
+    {
+      "labels": [
+        "alternate-orbit-0f82c",
+        "alternate-orbit-025be"
+      ],
+      "pair_key": "alternate-orbit-0f82c:alternate-orbit-025be",
+      "product_quartic_coefficients_low_to_high": [
+        "2975310617875851229837327743732995902756598758085718365880780331689158900156433435935180899331047259050083492110265647121320221041",
+        "1152242089213735100365334389851177338712544434980534257325366361503240666841745246257399178385825436516890450124723885692019444612",
+        "315665769110764109818407082650153698705001676036446624215992852633296634340976918774301465428880648870935819965794391410081738116",
+        "369366789209209997039440355894445655261965678169626721776581651999731872726020071180593818503074511593570396327764111957976284160",
+        "94116223117284212240627770686321528052038857859326419835724161266946985385894175455481048949288281435557768611413952463528134400"
+      ],
+      "reductions": [
+        {
+          "elliptic_L_coefficients_through_T2": [
+            1,
+            -110,
+            -32238
+          ],
+          "elliptic_L_frobenius_power_sums_n1_n2": [
+            110,
+            76576
+          ],
+          "fibre_configuration_geometric": "4I0*+24I1",
+          "good_reduction": true,
+          "moments_computed": 2,
+          "moments_needed_with_functional_equation": 14,
+          "prime": 151,
+          "rank_zero_decided": false,
+          "status": "UNKNOWN_PARTIAL_FROBENIUS_DATA",
+          "twist_discriminant_gcd_degree": 0,
+          "twist_factor_degrees": [
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "shortlist_rank": 7
+    }
+  ]
+}

@@ -5,8 +5,9 @@
 **Current status.**  `HC4RSD60` is the complete all-degree closure of the
 rank-two square-zero `[2,2]` stratum.  The former length-three/length-four
 handoff in Section 7 is historical: `HC4RSD61--63` close `[3,1]`, and
-`HC4MR1` consolidates the reductions; its final negative maximal-motion
-sign remains open after [HC4MRA1](HC4_MOTION_FRAME_TRANSPORT_AUDIT.md).
+`HC4MR1` consolidates the reductions; HC4MRA1 and
+[HC4MRA2](HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md) supply the corrected
+maximal-motion closure.
 
 This note combines `HC4RSD56`, `HC4RSD58`, `HC4RSD59`, and the complete
 three-variable quasi-translation classification.
@@ -387,7 +388,7 @@ all degrees:
 At this historical stage, moving-frame work only needed to consider the
 nilpotency types with a length-three or length-four chain, not `[2,2]`.
 The length-three continuation is closed by `HC4RSD61--63`; the final
-negative length-four motion sign in `HC4MR1` remains open.
+length-four motion signs use the corrected HC4MRA1/HC4MRA2 proof.
 
 ## 8. External input
 

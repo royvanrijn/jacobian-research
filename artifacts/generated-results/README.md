@@ -595,7 +595,7 @@ local cache so it cannot become a competing mathematical-status authority.
   `sage -python elkies-k3/scripts/certify_r17_all17_product_toric_frobenius_campaign.sage --check`;
   the aggregate whole-file SHA-256 is
   `9b9467f6c1a754f41f9feeed6be0ae8c13d275e4203f9cd358df08705ef7318c`.
-<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION cfb2417a30fab18d -->
+<!-- status-consumer: EC-K3-R17-NORM12-11952-PRODUCT-ALL17-TORIC-CLASSIFICATION 8aac526ec5ca3822 -->
 
 - `elkies-k3-r17-product-survivor-galois-height-gate-v1.json` factors the
   two-division cubic over all ten quadratic branch residue fields of the five
@@ -626,8 +626,18 @@ local cache so it cannot become a competing mathematical-status authority.
   jobs and raw XML in `r17-product-19bad-083ad-controls/`.
   Replay with
   `sage -python elkies-k3/scripts/certify_r17_product_19bad_083ad_rank_zero.sage --check`.
-  The full Selmer group and the other four arithmetic targets are uncomputed.
+  The full Selmer group is uncomputed; the other four targets are closed by
+  the regulator sweep below.
   See the [canonical proof](../../elkies-k3/R17_PRODUCT_19BAD_083AD_ARITHMETIC_RANK_ZERO_2026-09-05.md).
+
+- `elkies-k3-r17-product-regulator-sweep-v1.json` proves arithmetic rank zero
+  for all four remaining product twists, leaving an empty section-solving
+  queue. It reuses 131/137 and adds only `0f82c:025be` at 151, where its BSD
+  product has squareclass 6 versus 2 at 137. All nine Frobenius inputs,
+  eight independent Magma controls, and the new raw toric replay files are
+  pinned. Replay with
+  `sage -python elkies-k3/scripts/certify_r17_product_regulator_sweep.sage --check`.
+  See the [canonical sweep proof](../../elkies-k3/R17_PRODUCT_REGULATOR_OBSTRUCTION_SWEEP_2026-09-05.md).
 
 - `elkies-k3-r17-norm12-icarm-database-sweep-v1.json` records all 2,844 exact
   projective preimage decisions for the 474 equations in the pinned ICARM
@@ -3183,6 +3193,15 @@ artifact.
   [`BINARY_GVC_FINITE_CERTIFICATE.md`](../../extended-geometry/BINARY_GVC_FINITE_CERTIFICATE.md),
   not conclusions inferred from this finite artifact.
 
+- `binary-gvc-optimal-cutoff-v1.json` records the exact support-gap identities,
+  2475 small support pairs in both orientations, 18 sharp mixed contractions,
+  and high operator-order controls for the optimal coefficient
+  `C_d=1+floor((d+1)^2/4)`. Replay with
+  `scripts/verify_binary_gvc_optimal_cutoff.py`; the default requires identical
+  bytes. Universality and all-degree sharpness are written proofs in the
+  same canonical note. The whole-file SHA-256 is
+  `4855c42d7b4e4d2e09ac0dcfe4ae514ef384580aa8b0546886836d92a109869a`.
+
 The older binary-GVC artifacts below are retained as bounded regressions and route
 history.  Some embedded artifact metadata describes the Hall/carry frontier
 as it stood when the artifact was generated.  The current theorem is the
@@ -3917,3 +3936,24 @@ Run `make verify-normal-forms` for the original normal-form artifacts and
   Replay with `scripts/verify_hc4_motion_frame_transport.py`. The
   [canonical audit](../../HC4_MOTION_FRAME_TRANSPORT_AUDIT.md) explains why
   the earlier augmented-system certificate does not close the full branch.
+
+- [hc4-negative-motion-polynomial-obstruction-v1.json](hc4-negative-motion-polynomial-obstruction-v1.json)
+  records the literal curvature certificates, affine-leaf connection, and
+  polynomial ODE algebra for the replacement negative-sign proof. Replay
+  with `scripts/verify_hc4_negative_motion_polynomial_obstruction.py`; its
+  [canonical note](../../HC4_NEGATIVE_MOTION_POLYNOMIAL_OBSTRUCTION.md)
+  supplies the global polynomiality step that a finite jet cannot test.
+
+<!-- status-consumer: EC-K3-R17-PRODUCT-REGULATOR-OBSTRUCTION-SWEEP f86dead53d55babe -->
+
+## JC2 polynomial parametrization gap
+
+- [f2-degree-6-10-gap-v1.json](f2-degree-6-10-gap-v1.json) retains the six
+  exact odd-tail obstructions and 362 multiplier terms proving `b^12`
+  belongs to their ideal, together with the complete `b=0` branch and a
+  sharp birational `r=7` target. Replay with
+  `.venv/bin/python scripts/verify_f2_degree_6_10_gap.py`; optional
+  `--regenerate-certificate` reconstructs the multipliers with Singular.
+  The [canonical proof](../../plane-jc/F2_DEGREE_6_10_POLYNOMIAL_GAP.md)
+  explains why the gap bound excludes normal `r=9`. Whole-file SHA-256:
+  `5a0fde640d7b38210c7cb6a5512f8a60dcda1e498464ead8f33476c4a67c2b8e`.
