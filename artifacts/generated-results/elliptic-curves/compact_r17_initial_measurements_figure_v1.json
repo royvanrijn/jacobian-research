@@ -1,0 +1,10 @@
+{
+  "source": "artifacts/generated-results/elliptic-curves/compact_r17_initial_measurements_v1.json",
+  "source_sha256": "ba9e24650b928469e54aac97e474871f7339b84eaf757a1e7141635f6fcd09a5",
+  "plot_source_sha256": "388248199f206f3efa17ccc647d51bc6997a645f2b3cea51b4e68e431702ec3f",
+  "matplotlib_version": "3.11.1",
+  "outputs": {
+    "artifacts/generated-results/elliptic-curves/compact_r17_initial_measurements_v1.png": "be35a6ed8f0084dcc4c3b2b614c30c8dbcd115b02b7f246a4e73359914bec936",
+    "artifacts/generated-results/elliptic-curves/compact_r17_initial_measurements_v1.pdf": "e13dd541e951959f7187123d54b13faaf2f9e1c51391c5e2d59bc95cfbf96915"
+  }
+}

@@ -1,0 +1,960 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/prospective_mw16_wide_evidence_v1.zip",
+  "archive_bytes": 46968230,
+  "archive_sha256": "f1a8459fbdf1cd73768c82ffd345e7dbbe538bad8d4cd08ae9121a1681dcd9dd",
+  "builder_sha256": "1631afa41e424d1da85947b10c85592eb4e836b6a27da2fe5e33fcbec930f6e0",
+  "claim_boundary": "Retained fixed population, all generic parity witnesses, point transcripts and exact rank certificates. Prime trace arrays regenerate from frozen source; signed scanner table hashes are retained. No universal novelty or rank upper bounds.",
+  "files": [
+    {
+      "bytes": 302802,
+      "path": "artifacts/generated-results/elliptic-curves/compact_five_mw16_atlas_v1.json",
+      "sha256": "88a8c61c2722394bb812da601e24ea2c19e54361eef4b0fe9c7924e78c828801"
+    },
+    {
+      "bytes": 90124,
+      "path": "artifacts/generated-results/elliptic-curves/prospective_mw16_census_audit_v1.json",
+      "sha256": "a649bf2c0cee3ba67b40b8d7705f6a5cfa6703532e330b4b0b07a8ed51d84a85"
+    },
+    {
+      "bytes": 501028,
+      "path": "artifacts/generated-results/elliptic-curves/prospective_mw16_wide_results_v1.json",
+      "sha256": "7bc1d0dc09d0116a22fb239e37910e4eea435eb39a41d50a355ec5cb61864731"
+    },
+    {
+      "bytes": 31394799,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h1024-v1/a1-fibration-01/candidate-00/result.json",
+      "sha256": "1b8e6c73249fcfdbf8e8e5945f57b86ffcb0d5e9375cc90a89067d85fbd9d365"
+    },
+    {
+      "bytes": 88890043,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h1024-v1/a1-fibration-05/candidate-00/result.json",
+      "sha256": "8fddad72e661447d6cc4a9323263a6f18df976ec95f6b5d31d7d9921c2b1fcbc"
+    },
+    {
+      "bytes": 2870,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h1024-v1/point-launch.json",
+      "sha256": "5ae3d73fa2e49e70f17950b6e3e8135d581e8f40ec006746dcb8647fc85518cb"
+    },
+    {
+      "bytes": 35226,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h1024-v1/point-ledger.json",
+      "sha256": "ca0000dce9d4affd3bb49b40541e4f1518cc4eb0913f0ff6bfe37316e71e7f6d"
+    },
+    {
+      "bytes": 7656,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h1024-v1/point-protocol.json",
+      "sha256": "41f3e10188cfe6ab40d3d182c5ceccb2171ae6f9e8f191809050b793cf216458"
+    },
+    {
+      "bytes": 2915,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h1024-v1/protocol.json",
+      "sha256": "840fb5072366e068d12e71736bfa70e6dd6ca24c9e2a09c98e3c4b5954649b65"
+    },
+    {
+      "bytes": 25620,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h1024-v1/verification/results.json",
+      "sha256": "46d23a5a1d9ddffcca7140b6e1958d32511b6336ac42880d81e014fcb7d095fa"
+    },
+    {
+      "bytes": 14963991,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/candidate-00/result.json",
+      "sha256": "d0c586ae13e7a03d0172fe5cc29d542f19df788c5395e8ca182e9011a39b89e0"
+    },
+    {
+      "bytes": 12590768,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/candidate-01/result.json",
+      "sha256": "604159713bc9ba20fbb40e7770869a4dd7aff03545ec6b280237cf8ca72fd7ef"
+    },
+    {
+      "bytes": 10141882,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/candidate-02/result.json",
+      "sha256": "dc6073faf17fd77be2215dc7640e9014a60faeb4c06b5edcdeb6077c4198a1e9"
+    },
+    {
+      "bytes": 20262145,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/generic-census.json",
+      "sha256": "c6cc78a80c8e2d6f44367138db4c36ff52e42a47709c4bbb8fc6da2fbe591d0a"
+    },
+    {
+      "bytes": 21177,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/population.json",
+      "sha256": "efeb766d8d3acb0fc6d249008e5d52db4bb44f6d8ab119b70b0da58fbb12aed0"
+    },
+    {
+      "bytes": 22039,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/scan--1.json",
+      "sha256": "b0a827f4e4bf6f2a5fa7eae387b0361a9a1a68682da792d7e3db0acede4b7aa2"
+    },
+    {
+      "bytes": 8909,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/scan--1.log",
+      "sha256": "1d1d34492abab35c278be97d8b512a7edad0d2b2faee557e5f6b85b285327891"
+    },
+    {
+      "bytes": 1095,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/scan--1.supervisor.json",
+      "sha256": "cbbee4c8b4a2510eff19d584ebcc612202f6f63efa0685f267eb360ff10c09a1"
+    },
+    {
+      "bytes": 21755,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/scan-1.json",
+      "sha256": "74eb1c4c08573516ee38c538399a3cf9056ef7e4ed93f31a2ad7c6735fa7ed06"
+    },
+    {
+      "bytes": 8896,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/scan-1.log",
+      "sha256": "a696a446b8e254823b180f17ff3c18f3c8dbeb8cb0fe9f2a3685ab8969a6902e"
+    },
+    {
+      "bytes": 1094,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/scan-1.supervisor.json",
+      "sha256": "ab9c932700cbb8bef68a5dca75b2556a4abdf1247339ad9c2410d4745d9bc676"
+    },
+    {
+      "bytes": 162,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/selection.log",
+      "sha256": "ab6b30efc3bb8097e3e0f525d611206a1a0df2e04cf09d8c58c58c85161dccc2"
+    },
+    {
+      "bytes": 1105,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/selection.supervisor.json",
+      "sha256": "ad791a9520ecb98b1b11f50163e34bce861a049437d2253e9de422b6f3844b6d"
+    },
+    {
+      "bytes": 2902,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/worker-00.log",
+      "sha256": "aaed66eb6658cebcf39dda393ed0249db7922fd825c0c007e47c98b3c303bac0"
+    },
+    {
+      "bytes": 1171,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/worker-00.supervisor.json",
+      "sha256": "9309f707a8f4ab5f5f3a4b66fe929dbe1e06df9837d1aab49743206a4c4ca32a"
+    },
+    {
+      "bytes": 2988,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/worker-01.log",
+      "sha256": "0c53aac8ee5e63c0d5c87bf09b465edc38f3d1bd3f402fe48a13663c1970b123"
+    },
+    {
+      "bytes": 1172,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/worker-01.supervisor.json",
+      "sha256": "00b4e70d273162b72c2e09e95692965ed78b7d2383066a07a4bb9390117f349d"
+    },
+    {
+      "bytes": 2902,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/worker-02.log",
+      "sha256": "fba13afb3b86ab24c71a2be4f3d3c3fbb41119f3cd11789f29a9f6b44ff5431b"
+    },
+    {
+      "bytes": 1173,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-01/worker-02.supervisor.json",
+      "sha256": "7697cb6309d15e1c2c875de7988d9f5588e9b85a7fcfa22357d77dda4229b30b"
+    },
+    {
+      "bytes": 8808474,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/candidate-00/result.json",
+      "sha256": "caba0ae44fe4cb6a75ba678a7623303c617cac8d60a5264b9e3bf6f07a2fbf34"
+    },
+    {
+      "bytes": 16962789,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/candidate-01/result.json",
+      "sha256": "daca3cea7f8cbbf31cdbc7670765846c916f6eb8367bccf3725d40498ec5ff1e"
+    },
+    {
+      "bytes": 11541138,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/candidate-02/result.json",
+      "sha256": "2dc668286b26a9a62b99966e66782decca75645830e8c3ecaf8594659f00a76f"
+    },
+    {
+      "bytes": 15993213,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/candidate-03/result.json",
+      "sha256": "0ea58030ca21d9878c88b4a8e24e3dcc615def892b9420a09c88d8c97efa471d"
+    },
+    {
+      "bytes": 20245686,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/generic-census.json",
+      "sha256": "5904f7d4a00e9daebd2e8c0f2b0222f74d6933c151b7f5e80334c417ddd2bb26"
+    },
+    {
+      "bytes": 21237,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/population.json",
+      "sha256": "3f8581c2644334b6cd85e292ffac9fc8f3434a4ea7d37ae5795658e359fea9f4"
+    },
+    {
+      "bytes": 22030,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/scan--1.json",
+      "sha256": "e9a96384d6600cd3cb2bdf467d706e9cdc1d8ed06c4062cb110e4bd4cd187b1d"
+    },
+    {
+      "bytes": 8904,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/scan--1.log",
+      "sha256": "200df5e7f7b3defc1c7afcfa142994b82ee6e5cdfa9900e2d4e528c4da370b6a"
+    },
+    {
+      "bytes": 1096,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/scan--1.supervisor.json",
+      "sha256": "2b711c0ccf65d8f7bdcd0fe66dde9ac6b5247840c37bfd319f740c7b64dc8e47"
+    },
+    {
+      "bytes": 21758,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/scan-1.json",
+      "sha256": "9f4fc5dc61d8c3ac460f8551fefdaa3f6488ba67fef57ba453a42c718ed26959"
+    },
+    {
+      "bytes": 8897,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/scan-1.log",
+      "sha256": "231fcef719a286b4f838a86a1638f7ca7d5d9345593428a4d6e87fae24d62220"
+    },
+    {
+      "bytes": 1095,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/scan-1.supervisor.json",
+      "sha256": "4d397b0445617d6d64b6e74f35a1a859a3ab24cc993e5cc376dccb02eb3905b5"
+    },
+    {
+      "bytes": 167,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/selection.log",
+      "sha256": "5f0d4bc4cd9ea6deb0bdb483b45b2344e531b746d916238e78671fa4a466ae81"
+    },
+    {
+      "bytes": 1105,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/selection.supervisor.json",
+      "sha256": "22092d4a5e761bf80ef1463d648c9724008ae113bdde1e18e19cf2c8039a3dc2"
+    },
+    {
+      "bytes": 2988,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/worker-00.log",
+      "sha256": "44eeec93dcf88f2f3bdd062c775ee8335cdad1209066ecdfd748d8091d68c8b3"
+    },
+    {
+      "bytes": 1173,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/worker-00.supervisor.json",
+      "sha256": "f1b7720007576aa334b10b1866dd4d3bb1bf28f174dceaca2d331e5f97aa6e8e"
+    },
+    {
+      "bytes": 2988,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/worker-01.log",
+      "sha256": "b49a8d0b1f4a7c04fb354dfe15255d3d7379be72a85d17d415dc4f80ad117d5d"
+    },
+    {
+      "bytes": 1172,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/worker-01.supervisor.json",
+      "sha256": "d4cccf94c1e80532166fbed3ceb198bcafd9681ce4f7036246db243d0de4f2f7"
+    },
+    {
+      "bytes": 2988,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/worker-02.log",
+      "sha256": "0b4c6436eee4238508f372e045a93b7c626b9d5c3254af67ee18235bf90e4ceb"
+    },
+    {
+      "bytes": 1173,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/worker-02.supervisor.json",
+      "sha256": "a0f1608e5058c704523cdf1cd3bef10c451d470e1738b828f8cae3b3c59c82f6"
+    },
+    {
+      "bytes": 2902,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/worker-03.log",
+      "sha256": "231758d65d1632ec2afedc33f8f5d030f14746256252f73f2312d311fedc265c"
+    },
+    {
+      "bytes": 1173,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-02/worker-03.supervisor.json",
+      "sha256": "c88673ef23503fd2cad4e136b979100485d9ac3946c144e1214184dd903f562e"
+    },
+    {
+      "bytes": 4987556,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/candidate-00/result.json",
+      "sha256": "5d52ffced92ae25f4de4a992c8a9a5cd4ded70613f47a02ee203b60f75bc5ec6"
+    },
+    {
+      "bytes": 6058069,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/candidate-01/result.json",
+      "sha256": "b4864a570e54a09b0eee3a5614d5d182367b885358fac779ff290f9d9ac2fa1c"
+    },
+    {
+      "bytes": 5203860,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/candidate-02/result.json",
+      "sha256": "6e5ac46ab2b7ed7a6c644e4c5ae1ab29f49c775c74f6bebe233e773d59f6cb54"
+    },
+    {
+      "bytes": 5007101,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/candidate-03/result.json",
+      "sha256": "19dd8c453b26f6366cb8b4147e68de9d8e9308e8f2e6c588d5f7e688acfe2211"
+    },
+    {
+      "bytes": 20289601,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/generic-census.json",
+      "sha256": "f49c3b5effbf4b7998608cd832304249f78973c57de8b0b7a47dbbcc000e78fe"
+    },
+    {
+      "bytes": 21209,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/population.json",
+      "sha256": "162348e9f3fb2693ad18128272d7da6a2fd532d01501b8d1b6da74557f6fe01f"
+    },
+    {
+      "bytes": 22001,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/scan--1.json",
+      "sha256": "6f7ffe8f442140a212853bf3083b37b95e83b18fec559e0021e032a7cf3feb42"
+    },
+    {
+      "bytes": 8890,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/scan--1.log",
+      "sha256": "1a1394d1911bc7bda4aca4de8e15e46bf07107d75f505ab6d349f09373671789"
+    },
+    {
+      "bytes": 1097,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/scan--1.supervisor.json",
+      "sha256": "2e54628b52961c3e2245cdcca1c1deb790797b85159a744c764f5578d791837e"
+    },
+    {
+      "bytes": 21756,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/scan-1.json",
+      "sha256": "d4b50e0ee0dd77c06423fa8d53675707482a20901e98ac5dccd18f6507f39ac0"
+    },
+    {
+      "bytes": 8896,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/scan-1.log",
+      "sha256": "9531b33976a128ae4d1a22833bac24f4686f210c87cd21ac0fc6bb752092485b"
+    },
+    {
+      "bytes": 1095,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/scan-1.supervisor.json",
+      "sha256": "68b8a5602be1d63deeb98c9221cbdc2dce2ae09c8f59cafb17aea321c2097bc8"
+    },
+    {
+      "bytes": 165,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/selection.log",
+      "sha256": "82c45cf2e24431b1f34e3b0e611bd338e5d3707f34cf3b21150965e317c74193"
+    },
+    {
+      "bytes": 1105,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/selection.supervisor.json",
+      "sha256": "b87498f40dec2ec6eae6f0b9021a9cfd668d919297ed76274b4a0e228df43f6c"
+    },
+    {
+      "bytes": 2988,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/worker-00.log",
+      "sha256": "84b0d3cc4798ba090a1df85bd850fac641bb09b217711c7defe4dbf253c37450"
+    },
+    {
+      "bytes": 1173,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/worker-00.supervisor.json",
+      "sha256": "37095c22a27188abe2a6fc07261e06d711aa09d9a5c6d59250a4c0821d3c8888"
+    },
+    {
+      "bytes": 2945,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/worker-01.log",
+      "sha256": "b256f05e4702b63966cdf962e0667c7ce5c7ebcc3a3f691ea038f34c786bd7ec"
+    },
+    {
+      "bytes": 1173,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/worker-01.supervisor.json",
+      "sha256": "65be0ee46d3877432b88485336ee2b88f8fd01a72fb44d650b1b106b4dce2e9f"
+    },
+    {
+      "bytes": 2902,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/worker-02.log",
+      "sha256": "0455a95556645649009cb102ace6e48432716a585fc7c135531618a4e1035adb"
+    },
+    {
+      "bytes": 1173,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/worker-02.supervisor.json",
+      "sha256": "4016cfe22c525fdb20fd5260172b5e5c4e4cedabdfed73c752db5fa79c40c1fd"
+    },
+    {
+      "bytes": 2945,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/worker-03.log",
+      "sha256": "5e37fdcd2928027346831b6b85f206fab457fe237a856adcf172281d9dcbf43a"
+    },
+    {
+      "bytes": 1173,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-03/worker-03.supervisor.json",
+      "sha256": "398c39f417a512bc6c647ede4a248959c50d66970b07497fdc46ad6d80fdc825"
+    },
+    {
+      "bytes": 35381965,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/candidate-00/result.json",
+      "sha256": "28f33ede921d1da54be849cb5f8248bfe6da8bcbd1b2278759467e17de2316ff"
+    },
+    {
+      "bytes": 32535430,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/candidate-01/result.json",
+      "sha256": "84d88f1964b2fd812409965209198c7e9f0b81eafc2a67f5eb724480eaea70f1"
+    },
+    {
+      "bytes": 9843764,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/candidate-02/result.json",
+      "sha256": "b15d8735c7d462ba1bf05880d8ca2a78f2f2a7c74158e2ba327272705bbc214f"
+    },
+    {
+      "bytes": 12027389,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/candidate-03/result.json",
+      "sha256": "4909df7761abc1a17ba1a99fefbf4eaf07affd8a3540f5ac99cfd4e88971a224"
+    },
+    {
+      "bytes": 20325628,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/generic-census.json",
+      "sha256": "e8ab20f61c92d8c71089b7b01b060bd54147f733c8a2803c1630e7c424a12fb2"
+    },
+    {
+      "bytes": 21227,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/population.json",
+      "sha256": "8dc221780dd84352f46a41fe25a2404356021210bdbd21169189564268798718"
+    },
+    {
+      "bytes": 22014,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/scan--1.json",
+      "sha256": "d1aaab9cc7d09968150b444fa1d839323d2709cb6d2be89183af9fa50c0665b6"
+    },
+    {
+      "bytes": 8896,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/scan--1.log",
+      "sha256": "94ca1bf4c188bf2a3fdab4a69906e0ea3dc029f4eb4a68666e6d16745c7cddf4"
+    },
+    {
+      "bytes": 1097,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/scan--1.supervisor.json",
+      "sha256": "ebd44c1c934ad7783fe66eca7d9b22c9ea5469073d0a7beda903503f6527c483"
+    },
+    {
+      "bytes": 21787,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/scan-1.json",
+      "sha256": "2952711112bee6d5ba65e828fa1910df89baa9a451c0356ccb64e1959ebaaceb"
+    },
+    {
+      "bytes": 8912,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/scan-1.log",
+      "sha256": "98fd4168fc260b6e88d6c6d55c47bb5c2d397510c5ea00569a5e0bb3f60b2b86"
+    },
+    {
+      "bytes": 1094,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/scan-1.supervisor.json",
+      "sha256": "855380aeab1c15ff5040c60fffb4cbfdb7753714d153f5c616ecb9407b2cb98d"
+    },
+    {
+      "bytes": 163,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/selection.log",
+      "sha256": "9415ed34e06d58c252f5d9a5cd4c37bc0831eb1193d8e140282fc6ca23241703"
+    },
+    {
+      "bytes": 1106,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/selection.supervisor.json",
+      "sha256": "3c2725382f07d8383a01ea1b473effa67cdbf0d8b28a6d5147414c228e7e5888"
+    },
+    {
+      "bytes": 2902,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/worker-00.log",
+      "sha256": "1abd7d9a598a72ab3a641107f76ff79519312f624421cff1606d0ec9fe807f0d"
+    },
+    {
+      "bytes": 1173,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/worker-00.supervisor.json",
+      "sha256": "b58d2ae2b486c0591650ac246e8eb2de2d1a0e50756a2585179bada87d09cb5a"
+    },
+    {
+      "bytes": 2902,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/worker-01.log",
+      "sha256": "1e9f07e200e95931942100f355784fa163730b4c1b1a3abc48b3ba472117755d"
+    },
+    {
+      "bytes": 1172,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/worker-01.supervisor.json",
+      "sha256": "96170c64ef13a679a3df4f22077b1dabf9b9852bb97b5cb4207e2651997ca097"
+    },
+    {
+      "bytes": 2988,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/worker-02.log",
+      "sha256": "8b2daa316118560b7bc2689f32765bf034fea753f51bdf258c2f3e2af24aa7e7"
+    },
+    {
+      "bytes": 1173,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/worker-02.supervisor.json",
+      "sha256": "01634179bb398641ca49e5b36860e8de56cc2ebc591439b5995f519288eb0a7a"
+    },
+    {
+      "bytes": 2988,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/worker-03.log",
+      "sha256": "61f15d836fb76ee0e6c1ee15b8afcb25bc2a4bc12a68c26a65b76eab9f9d2915"
+    },
+    {
+      "bytes": 1172,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-04/worker-03.supervisor.json",
+      "sha256": "9c902a28a39cc96ec2e08f142ac2e018959dde480b2a0466af463a74e060d866"
+    },
+    {
+      "bytes": 9741440,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/candidate-01/result.json",
+      "sha256": "91db7f94213473c7aa225da97bf469f7a1c43941968419a74f2bb9e2956fe0e8"
+    },
+    {
+      "bytes": 10460476,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/candidate-02/result.json",
+      "sha256": "732f4873629e3fcad894460bbb1617127d23405b217d130dc3870326f30bd4eb"
+    },
+    {
+      "bytes": 10293994,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/candidate-03/result.json",
+      "sha256": "7c8f60a47ff44c8956782fd07ae41ba7d12b5a86f3693dc1150dde247b54da69"
+    },
+    {
+      "bytes": 20273750,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/generic-census.json",
+      "sha256": "a161cde6fd7be9deddffb3ca518c0d710cfba1fb332f9d160531957319c7eaad"
+    },
+    {
+      "bytes": 21225,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/population.json",
+      "sha256": "8f44b74772102f2556ce806db7df29e10883795547e159d5200fee741a4a75f3"
+    },
+    {
+      "bytes": 22033,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/scan--1.json",
+      "sha256": "5a45cbe9a160583134aaab5150359d9cd2e5cc6db440fd9f9d61c6049cfae711"
+    },
+    {
+      "bytes": 8905,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/scan--1.log",
+      "sha256": "cad849360e0f4a3cb9a0f6cb1476d2844917009f23e224a6a040d67d81dcd418"
+    },
+    {
+      "bytes": 1097,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/scan--1.supervisor.json",
+      "sha256": "77839f6c2bafcccd673a777e02578f673450d508986c95f02e694ab77c53dc8c"
+    },
+    {
+      "bytes": 21766,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/scan-1.json",
+      "sha256": "5f2c967fef62114aa3c6b586d3fd46ce3725275c7c1ad9eebcaafac1e88b4ab2"
+    },
+    {
+      "bytes": 8901,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/scan-1.log",
+      "sha256": "08cab2dd67c75a64979bad64cc91255d4c677d3ce95acab97aaa2b95f4a02511"
+    },
+    {
+      "bytes": 1095,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/scan-1.supervisor.json",
+      "sha256": "824065fe5051c104c6fc6804c8eb496caedb1fb2805fd2aee79aea17fa0211cf"
+    },
+    {
+      "bytes": 163,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/selection.log",
+      "sha256": "8586d2db9c3ac8801bc1710eac70a2634a2976df9d5a9c2d67213970bdc60b9c"
+    },
+    {
+      "bytes": 1106,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/selection.supervisor.json",
+      "sha256": "421941a8b7e5fb413e2a2106b231cb727235063a01ccaf8a8c59ad89b3dfe810"
+    },
+    {
+      "bytes": 2988,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/worker-01.log",
+      "sha256": "3a4535752a0740297c5b5931f78192f19824719a1635809780e576d675461820"
+    },
+    {
+      "bytes": 1173,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/worker-01.supervisor.json",
+      "sha256": "8c01eaf89e50887555dd0f05c9ea2278a9e32e2a46dc1ce34dd977863a28890b"
+    },
+    {
+      "bytes": 2945,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/worker-02.log",
+      "sha256": "d9869e380229943fec3caf71eac1161307eb48e11b55222b1cdbf84bb4ec9260"
+    },
+    {
+      "bytes": 1173,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/worker-02.supervisor.json",
+      "sha256": "a9a6a75a6d40ee92dd6e9a80c10677c613764828bb2907c6f7c62834985076e8"
+    },
+    {
+      "bytes": 2945,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/worker-03.log",
+      "sha256": "e34d77337c37b65d1776bd9f5f531322364b69dfdaef6ab0dc608dea7dfe55a0"
+    },
+    {
+      "bytes": 1173,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/a1-fibration-05/worker-03.supervisor.json",
+      "sha256": "129fe7e73d9e40fa4764459749739c58139ff7bd25f3f55f24d13b54a9d2e261"
+    },
+    {
+      "bytes": 391,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/finalization-protocol.json",
+      "sha256": "6243dbabeff370f3e699abf264fca0f32395cf1668b26e26e65e441d8c0f31f9"
+    },
+    {
+      "bytes": 7495,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/point-launch.json",
+      "sha256": "4f6568e302c97140644ab8ebef6ef6b871b629ee57765ea022f680da12ae2ad1"
+    },
+    {
+      "bytes": 38076,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/point-ledger.json",
+      "sha256": "a714701033bc1caed9b62c12b1d91bd74b48e0fb5a60855eabd1979f41df85e1"
+    },
+    {
+      "bytes": 7858,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/point-protocol.json",
+      "sha256": "2f59324ab941092642cc4df24fa187d21b8f23f5534a17618759df99ae65a7af"
+    },
+    {
+      "bytes": 5963,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/protocol.json",
+      "sha256": "23e3aa049c7b7d9c7d8950d106fca6157230dda980dff127508a81d3f3995dad"
+    },
+    {
+      "bytes": 303,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/selection-launch.json",
+      "sha256": "233e3f5475c6c844f672240e82ee36e553c8208baee9e04a14a544b393942cc7"
+    },
+    {
+      "bytes": 7001,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/selection-supervision.json",
+      "sha256": "1548c6ac084de48080fcb7eac2656e82b2df1571204229c32a9c1eaebcdd16a7"
+    },
+    {
+      "bytes": 1597,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/certificate-check.log",
+      "sha256": "208630eeec48dc58e0262f777146380a28421edeea37610407e4631a302c75b3"
+    },
+    {
+      "bytes": 1086,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/certificate-check.supervisor.json",
+      "sha256": "c0ade3478abf3096329d2a79cab9b9f2fdbaa2e313de90029f0b6ccd63aa68e2"
+    },
+    {
+      "bytes": 2856,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/certificate-supervision.json",
+      "sha256": "d572192c8813dda61d3d9f4d4ec34a0a40b78cae1261bac7a60f97382cbce179"
+    },
+    {
+      "bytes": 1803,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/certify.log",
+      "sha256": "71ad066e3025500b190badd91c20018af3bc1a47da341643aef449315934d1a0"
+    },
+    {
+      "bytes": 1201,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/certify.supervisor.json",
+      "sha256": "7893d9dfb67bed1b33645f12ad1ec0207efc4a8cc42941841d5417cdb8769d9e"
+    },
+    {
+      "bytes": 7314,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/protocol.json",
+      "sha256": "8fd2c7e29e8f1595b7cf2a4827a0dfb77bd5b3a39aef95fd3bebe5a4033648c4"
+    },
+    {
+      "bytes": 81,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-00.log",
+      "sha256": "258574aa61111b4683ee92c283fd7a30fb2d0c4ee217d4ea44552a2ba41837ba"
+    },
+    {
+      "bytes": 1073,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-00.supervisor.json",
+      "sha256": "eef15bdb308ceecafb01ccb307e0479c6bf06bf849cd3bcecfe10a411a0e382b"
+    },
+    {
+      "bytes": 83,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-01.log",
+      "sha256": "82517c45bf0cf4851b4a656799615059b2d4cf3aa793ee53d93e0475f012e249"
+    },
+    {
+      "bytes": 1073,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-01.supervisor.json",
+      "sha256": "56ad80503ee46bc1e983a398ce12406821c817c5dc0250132e7a820a85edf141"
+    },
+    {
+      "bytes": 83,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-02.log",
+      "sha256": "7247cdbdd90080df1bdcf7941acce6987ed6fed4d7e08ec632c861f725e529f1"
+    },
+    {
+      "bytes": 1073,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-02.supervisor.json",
+      "sha256": "95bd131963faf35517e8257fe599ed50dd4b46fa84b25e6cdf4114af1aeec93e"
+    },
+    {
+      "bytes": 81,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-03.log",
+      "sha256": "6e7417a60160a44631c07a845bf860560584845319b5c6658ad66464f028dbe4"
+    },
+    {
+      "bytes": 1075,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-03.supervisor.json",
+      "sha256": "057b55ef1e36285e431b45658186efd9a12f9cc463ef202538ad8b0a884ef81b"
+    },
+    {
+      "bytes": 83,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-05.log",
+      "sha256": "fd591c2112ad7d864fbac4a519597243d99b61bfc3555a7771277a68b6835c00"
+    },
+    {
+      "bytes": 1074,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-05.supervisor.json",
+      "sha256": "e3a5eea2575f82aa0ebcee69c79b8d3cf90c142bc9ae4732189594972af87afd"
+    },
+    {
+      "bytes": 83,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-06.log",
+      "sha256": "97ec8ac595808c4ac23ba05409e30cc898293313100968fdc7a3c83f9c27ee5d"
+    },
+    {
+      "bytes": 1074,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-06.supervisor.json",
+      "sha256": "66cbf2fddd2a871ba05fd9c8dbd0a4a4dac1dcf393c2eee4047269bf23a21a60"
+    },
+    {
+      "bytes": 82,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-07.log",
+      "sha256": "fa891910db750d24f84673080094f6d2affae565c6e194085b730b9d5a2baba2"
+    },
+    {
+      "bytes": 1073,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-07.supervisor.json",
+      "sha256": "7fd8cf536b9fcf8a5490605c36e75dcfa9ca6808902e644fcb0c10baf791ea98"
+    },
+    {
+      "bytes": 81,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-08.log",
+      "sha256": "2d37fc548b8c1c32d57f0afd0c03652980491d38cbddbe82cd63d4711aa9fb69"
+    },
+    {
+      "bytes": 1074,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-08.supervisor.json",
+      "sha256": "73ed376176ee44a119a06b4ec82ec31a9259f59c282b331d8f2fe327bcfaad78"
+    },
+    {
+      "bytes": 83,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-09.log",
+      "sha256": "6a9e8fb161ac28161e993cba9f38c26483b175976a8462de1c153d37b89b57b0"
+    },
+    {
+      "bytes": 1073,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-09.supervisor.json",
+      "sha256": "663f73e5061a288b103fa5f25144673db467534abf1e91d1d2855ea348678b9f"
+    },
+    {
+      "bytes": 81,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-10.log",
+      "sha256": "b18983255807416d014cf6618befa3004c3f11a9645dc9d5ce26fa62de63bd91"
+    },
+    {
+      "bytes": 1074,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-10.supervisor.json",
+      "sha256": "594c9973b70bc9868a1980c3b1d5b04f009792b1cd1038803fc5497e56a0952c"
+    },
+    {
+      "bytes": 83,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-11.log",
+      "sha256": "69fe613c2fe21d187dec09d0fc6d3ba75b96ee2db6be11b7a87b26013de0bf16"
+    },
+    {
+      "bytes": 1074,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-11.supervisor.json",
+      "sha256": "2a1fe575ac3e894eabc7f389fa0ca996ef3f9fe2bd28a86370c1bc21ea127bce"
+    },
+    {
+      "bytes": 81,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-12.log",
+      "sha256": "a5c17a0a7c85bea4f3ae72186c0920dd8a616ea9fa4a50fd6cb3d463fdd29c7e"
+    },
+    {
+      "bytes": 1073,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-12.supervisor.json",
+      "sha256": "0e697d5d4c6266c689a173c2c2c81757471a464c89f2a301b72ea048366898ff"
+    },
+    {
+      "bytes": 83,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-13.log",
+      "sha256": "ce53e80357ba03d92c7add8956b88868749f7728eb25af6b7cd310bc5ba8a00f"
+    },
+    {
+      "bytes": 1074,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-13.supervisor.json",
+      "sha256": "aa1ea53e31cf85f5a331c3a95611843c2e86e657762a22b7a5eaa2d9b1349d10"
+    },
+    {
+      "bytes": 82,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-14.log",
+      "sha256": "baba28e92b4246be4adf4508ce736b2d70b765ab71203b9993ccc0e2657de6fc"
+    },
+    {
+      "bytes": 1073,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-14.supervisor.json",
+      "sha256": "a53eed89d8f7626219e42771cd10bb69248faf618ce7a73e09f0d56aa531c98b"
+    },
+    {
+      "bytes": 81,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-16.log",
+      "sha256": "1b9b9b195d3b8803fb68fc367a0f7d18eb062bf65ef628b792a22ec66a3dffc6"
+    },
+    {
+      "bytes": 1073,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-16.supervisor.json",
+      "sha256": "59390cd05e45bcfa1022a54fbf18f1d43b98423b5dce10d6175e2061f00f2fd6"
+    },
+    {
+      "bytes": 82,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-17.log",
+      "sha256": "0aeb39dbe4e744231247676a051d00dbeb4d4cf0e92850e6e4ed2e8505f5888c"
+    },
+    {
+      "bytes": 1073,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-17.supervisor.json",
+      "sha256": "1c86e9f31db94ceee76145143d57a3ebff303beb6001b5e8a0cfc3c71a88e395"
+    },
+    {
+      "bytes": 83,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-18.log",
+      "sha256": "d8a3d2ad3ef70f3c3aa72805b6cb831f1fa782bd8f8b68de4765c35e492f331d"
+    },
+    {
+      "bytes": 1074,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-18.supervisor.json",
+      "sha256": "b692082846d466298c39c439818fe55045bbf18fe510c4a85779096a9bc1cf0c"
+    },
+    {
+      "bytes": 82,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-19.log",
+      "sha256": "98290dbb369bfc185678581085c86a4092a4a5bed36b48b5ae42471390e87ccb"
+    },
+    {
+      "bytes": 1074,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/replay-19.supervisor.json",
+      "sha256": "1c4cd34f32a0db96706ac0f180953c477f70349e0ef3d0f3ae79d25e8569d75a"
+    },
+    {
+      "bytes": 24672,
+      "path": "artifacts/local/elliptic-curves/prospective-mw16-h4096-v1/verification/results.json",
+      "sha256": "6576369ef8e401928c357a5ad1b77d5748041c48d25b9fb0f24a8ed6dceb56a5"
+    },
+    {
+      "bytes": 9593,
+      "path": "elliptic-curves/cas/alternate_quartic_covers.py",
+      "sha256": "598f7556333c9d8462f251d97a6d132e0bd672a11861f8c2f142fc4588abe9e5"
+    },
+    {
+      "bytes": 2675,
+      "path": "elliptic-curves/cas/audit_prospective_mw16_census.py",
+      "sha256": "b1eff405c547920d0354e06cb1d387cd65c7ba5d74888544b801948face42fed"
+    },
+    {
+      "bytes": 8974,
+      "path": "elliptic-curves/cas/certify_compact_r17_candidates.py",
+      "sha256": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9"
+    },
+    {
+      "bytes": 6693,
+      "path": "elliptic-curves/cas/certify_prospective_mw16_wide_results.py",
+      "sha256": "8e9adb87ee8513c6b6066c35a2e33ba65d6979b207f025fa22233b385afc7316"
+    },
+    {
+      "bytes": 1925,
+      "path": "elliptic-curves/cas/compact_mw16_specialization.py",
+      "sha256": "f6aeab97b980bc6e9a5db71675d4f47fbf3ac15cac5f35f2ea310a77e2a8a7c0"
+    },
+    {
+      "bytes": 15983,
+      "path": "elliptic-curves/cas/half_lattice_pointed_sieve.py",
+      "sha256": "a605962e85ac0db03cfd875e7c36b17faaa059046bf6ba78d49578ee785868e4"
+    },
+    {
+      "bytes": 9569,
+      "path": "elliptic-curves/cas/newfamily/scan_rational_nagao_tables.cpp",
+      "sha256": "1aaf8ba3ed7a08102837c106b737b9bc729bd2cf252d3863940c9aa8240c381f"
+    },
+    {
+      "bytes": 3860,
+      "path": "elliptic-curves/cas/package_prospective_mw16_wide.py",
+      "sha256": "1631afa41e424d1da85947b10c85592eb4e836b6a27da2fe5e33fcbec930f6e0"
+    },
+    {
+      "bytes": 20080,
+      "path": "elliptic-curves/cas/pointed_quartic_search.py",
+      "sha256": "01c40a10cbe31f4439c4f2dacf7e2e5831f8bd6b83079933c9d506b6a25d1ff9"
+    },
+    {
+      "bytes": 7157,
+      "path": "elliptic-curves/cas/pointed_quartic_sieve.cpp",
+      "sha256": "7a015c85e54e14f16848626b154236132e34c0e42315242959a0be59e2de97a4"
+    },
+    {
+      "bytes": 4389,
+      "path": "elliptic-curves/cas/prospective_half_lattice.sage",
+      "sha256": "d6d3a112ebb1e094f57e22c455e0d4493423aea263dd6d6ffe46cc5245ce8b94"
+    },
+    {
+      "bytes": 3636,
+      "path": "elliptic-curves/cas/replay_prospective_mw16_search.py",
+      "sha256": "5d91ad698dcfe35a2994a7c9e5861057d166525ced9e9b430ded01a50f638184"
+    },
+    {
+      "bytes": 8430,
+      "path": "elliptic-curves/cas/research_runtime/arithmetic.py",
+      "sha256": "f304317492824cf149c88b5814e68cdd0bffb0542a3d8db7bb4d9f3ec988802b"
+    },
+    {
+      "bytes": 3191,
+      "path": "elliptic-curves/cas/research_runtime/binary.py",
+      "sha256": "9956f4b5236d8ad2260018182eebfa18bcd8ced7fdc92ffa6023ad9da7d9dd99"
+    },
+    {
+      "bytes": 9211,
+      "path": "elliptic-curves/cas/research_runtime/finite_reduction.py",
+      "sha256": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992"
+    },
+    {
+      "bytes": 3015,
+      "path": "elliptic-curves/cas/research_runtime/memory_store.py",
+      "sha256": "0ce81817fc94949864b2f653e9ece207d666d61fbdabeb56f52e044bb83dd873"
+    },
+    {
+      "bytes": 10208,
+      "path": "elliptic-curves/cas/research_runtime/mw_state.py",
+      "sha256": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d"
+    },
+    {
+      "bytes": 3967,
+      "path": "elliptic-curves/cas/research_runtime/pointed_worker.py",
+      "sha256": "7126cac4ed8bbfd7015476670b61fc317649700436b92e072a21d1bac4695ddf"
+    },
+    {
+      "bytes": 3309,
+      "path": "elliptic-curves/cas/research_runtime/search_state.py",
+      "sha256": "598a2177fa1cdd5b45c801c09adcc4ac51bd2a87152b7982ea70e78585f8671c"
+    },
+    {
+      "bytes": 8233,
+      "path": "elliptic-curves/cas/research_runtime/store.py",
+      "sha256": "31a4b470ccc22836a3f5ec936cb784937ea99051b9f64ebf7adba85af1dae965"
+    },
+    {
+      "bytes": 20249,
+      "path": "elliptic-curves/cas/research_runtime/supervisor.py",
+      "sha256": "65721b180df76e0182b9526874faf7cab306fd6698f68def0527215029112233"
+    },
+    {
+      "bytes": 4574,
+      "path": "elliptic-curves/cas/run_prospective_mw16_wide_batch.py",
+      "sha256": "c7ed01d67ef13cda359295460ad631f43f6cd5d4b7c48cd123517605ec8316b5"
+    },
+    {
+      "bytes": 8454,
+      "path": "elliptic-curves/cas/search_prospective_mw16_atlas.sage",
+      "sha256": "6ac07d919866946eb84d3716140410492eb8199de71d565fa097d38c6c82821d"
+    },
+    {
+      "bytes": 8763,
+      "path": "elliptic-curves/cas/search_prospective_mw16_wide.sage",
+      "sha256": "a11152ee08ed304ae312e569b7d95676835f9dfd56f5010482779218ca335a99"
+    },
+    {
+      "bytes": 11096,
+      "path": "elliptic-curves/cas/select_prospective_mw16_atlas.sage",
+      "sha256": "3b54674632d5c840b922b0869ab55d9c812903a83fff267938eb8598035043fc"
+    },
+    {
+      "bytes": 6656,
+      "path": "elliptic-curves/cas/select_prospective_mw16_wide.py",
+      "sha256": "4064425757281bed7280d01a105d509227b93bf4b8d4a9e682bff75d00903eb2"
+    }
+  ],
+  "schema": "elliptic-curves.prospective-mw16-wide-evidence.v1"
+}

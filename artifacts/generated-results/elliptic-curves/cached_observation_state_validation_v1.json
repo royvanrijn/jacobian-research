@@ -1,0 +1,48 @@
+{
+  "cache_info": {
+    "currsize": 10028,
+    "hits": 34050,
+    "maxsize": 65536,
+    "misses": 10028
+  },
+  "claim_boundary": "Exact record equality on three retained long-history known-point admissions. Timings are a small diagnostic, not a general speed guarantee. Separate tests cover ambiguity, new independent points and invalid observations.",
+  "original_observations": 11018,
+  "rows": [
+    {
+      "cached_seconds": 0.04603603598661721,
+      "identical_record_digest": "b7905796cc2352615b74b58f4dfa848317ed7de72c27d0a4fb4cfdce512621c0",
+      "old_seconds": 0.17207196302479133,
+      "point": [
+        "-41147470302204913919/26508",
+        "-103275287460495340741502627520/103823"
+      ]
+    },
+    {
+      "cached_seconds": 0.04642673797206953,
+      "identical_record_digest": "6d925c9e2defca0605be7d51c3935dd8ccc7db50227531beabeaf1f25945043a",
+      "old_seconds": 0.17072343599284068,
+      "point": [
+        "4097422680224938482601/1205868",
+        "11453652753698427054841072829880/31855013"
+      ]
+    },
+    {
+      "cached_seconds": 0.037972484016790986,
+      "identical_record_digest": "0a7e34d60c26c1fa9d51649b34d48b0bfb7fb7aaf232e972fbe16db9e764956f",
+      "old_seconds": 0.18079811101779342,
+      "point": [
+        "17063868608804519329/20172",
+        "-51403653182253655539297607410/68921"
+      ]
+    }
+  ],
+  "schema": "elliptic-curves.cached-observation-state-validation.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/retained-admission-profile-v1/snapshot.json": "c20a6b0144ba311f67b140fbf2609553c10c18dc4a343dce6c3587f82c33b060",
+    "elliptic-curves/cas/audit_cached_observation_state.py": "d1220be43d12c55aaea706375a1e04c11ff2aab9d4cce2a42aee9a57204bb9e4",
+    "elliptic-curves/cas/research_runtime/cached_observation_state.py": "c1480925932b0cf86c0392cb796e9f83d278e84fc0a769ad031e93a8a68d43a7",
+    "elliptic-curves/cas/research_runtime/mw_state.py": "e53c24a786afe1096a3bc90eff94396b1b3b6b1fd3ec52c24e51c69622b4596d",
+    "elliptic-curves/cas/research_runtime/quotient_only_reduction.py": "b47036dd2d5882a8bdccfb9095fb11c543ddc8e209e487d6c7afdf8a8d06986a"
+  },
+  "status": "PASS_IDENTICAL_EXACT_RECORDS"
+}

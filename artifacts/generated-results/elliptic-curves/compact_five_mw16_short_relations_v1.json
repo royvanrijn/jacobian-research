@@ -1,0 +1,143 @@
+{
+  "rows": [
+    {
+      "displayed_subgroup_rank_interval": [
+        14,
+        16
+      ],
+      "exact_relation_matrix_rank": 0,
+      "fibration_id": "a1-fibration-02",
+      "mod3_kernel_dimension": 2,
+      "parameter": "1",
+      "status": "BOUNDED_RELATION_AUDIT_INCONCLUSIVE",
+      "tested_ternary_lifts_up_to_sign": [
+        {
+          "exact_zero": false,
+          "word": [
+            0,
+            1,
+            -1,
+            1,
+            1,
+            0,
+            -1,
+            0,
+            -1,
+            1,
+            1,
+            1,
+            0,
+            -1,
+            -1,
+            0
+          ]
+        },
+        {
+          "exact_zero": false,
+          "word": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            -1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "exact_zero": false,
+          "word": [
+            1,
+            1,
+            0,
+            1,
+            -1,
+            -1,
+            1,
+            1,
+            0,
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "exact_zero": false,
+          "word": [
+            1,
+            -1,
+            -1,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            -1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "displayed_subgroup_rank_interval": [
+        15,
+        16
+      ],
+      "exact_relation_matrix_rank": 0,
+      "fibration_id": "a1-fibration-05",
+      "mod3_kernel_dimension": 1,
+      "parameter": "1",
+      "status": "BOUNDED_RELATION_AUDIT_INCONCLUSIVE",
+      "tested_ternary_lifts_up_to_sign": [
+        {
+          "exact_zero": false,
+          "word": [
+            1,
+            -1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            0,
+            1,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "schema": "elliptic-curves.compact-mw16-short-relations.v1",
+  "scope": "Exact short relations among the sixteen displayed generic specializations at two fixed t=1 fibres. The independent subsets and relation matrix bound only this displayed subgroup. No upper bound on the full curve rank or generic family rank.",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_five_mw16_input_audit_v1.json": "24cda90e8e9376af3351f875130bd00b1a4b30cd047c3ababc59467089c83968",
+    "artifacts/generated-results/elliptic-curves/compact_five_mw16_odd_independence_v1.json": "98a719a1947d9632ea377203d4acd54d3aea7c34a6da9432537505a12408e3ff",
+    "elliptic-curves/cas/audit_compact_mw16_short_relations.sage": "78d82ed3109361b56bf7758f35bfc86c7b75de2d5dfa8356fe4ce17e5386f889",
+    "elliptic-curves/cas/certify_compact_r17_candidates.py": "b4479f02bfbc11ea076a8a0b8adb3d9f5190f5107a8e50f238494ab99f0deca9"
+  }
+}

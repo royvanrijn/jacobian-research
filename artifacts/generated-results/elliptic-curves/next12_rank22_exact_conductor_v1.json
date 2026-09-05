@@ -1,0 +1,158 @@
+{
+  "claim_boundary": "Exact conductor from a proven complete prime factorization and exact local Tate data; rank lower bound is supplied by the separately replayed rational point proof. No exact rank or universal novelty claim.",
+  "conductor": "5651319165610115296564894984823807468501395910978185811787187868498410205790",
+  "discriminant": "170936848285991366957118762195218257884358220481825423891549871859917613495299194842452393152000000",
+  "discriminant_factorization": [
+    [
+      "2",
+      12
+    ],
+    [
+      "3",
+      9
+    ],
+    [
+      "5",
+      6
+    ],
+    [
+      "13",
+      4
+    ],
+    [
+      "17",
+      4
+    ],
+    [
+      "19",
+      2
+    ],
+    [
+      "29",
+      3
+    ],
+    [
+      "71",
+      2
+    ],
+    [
+      "2465779087453622652131442949",
+      1
+    ],
+    [
+      "519784438179112504122441050306814600881",
+      1
+    ]
+  ],
+  "integral_model": [
+    "1",
+    "0",
+    "0",
+    "-182451976602578656424609725499140",
+    "710003150253794219215652666162794189038512805392"
+  ],
+  "integral_model_is_global_minimal": true,
+  "local_data": [
+    {
+      "conductor_valuation": 1,
+      "discriminant_valuation": 12,
+      "kodaira_symbol": "I12",
+      "minimal_discriminant_valuation": 12,
+      "prime": "2"
+    },
+    {
+      "conductor_valuation": 1,
+      "discriminant_valuation": 9,
+      "kodaira_symbol": "I9",
+      "minimal_discriminant_valuation": 9,
+      "prime": "3"
+    },
+    {
+      "conductor_valuation": 1,
+      "discriminant_valuation": 6,
+      "kodaira_symbol": "I6",
+      "minimal_discriminant_valuation": 6,
+      "prime": "5"
+    },
+    {
+      "conductor_valuation": 1,
+      "discriminant_valuation": 4,
+      "kodaira_symbol": "I4",
+      "minimal_discriminant_valuation": 4,
+      "prime": "13"
+    },
+    {
+      "conductor_valuation": 2,
+      "discriminant_valuation": 4,
+      "kodaira_symbol": "IV",
+      "minimal_discriminant_valuation": 4,
+      "prime": "17"
+    },
+    {
+      "conductor_valuation": 1,
+      "discriminant_valuation": 2,
+      "kodaira_symbol": "I2",
+      "minimal_discriminant_valuation": 2,
+      "prime": "19"
+    },
+    {
+      "conductor_valuation": 1,
+      "discriminant_valuation": 3,
+      "kodaira_symbol": "I3",
+      "minimal_discriminant_valuation": 3,
+      "prime": "29"
+    },
+    {
+      "conductor_valuation": 1,
+      "discriminant_valuation": 2,
+      "kodaira_symbol": "I2",
+      "minimal_discriminant_valuation": 2,
+      "prime": "71"
+    },
+    {
+      "conductor_valuation": 1,
+      "discriminant_valuation": 1,
+      "kodaira_symbol": "I1",
+      "minimal_discriminant_valuation": 1,
+      "prime": "2465779087453622652131442949"
+    },
+    {
+      "conductor_valuation": 1,
+      "discriminant_valuation": 1,
+      "kodaira_symbol": "I1",
+      "minimal_discriminant_valuation": 1,
+      "prime": "519784438179112504122441050306814600881"
+    }
+  ],
+  "parameter": "3/17",
+  "point_transport": {
+    "x": "X-1/12",
+    "y": "Y-x/2"
+  },
+  "rank_lower_bound": 22,
+  "residual": "1281673597645885968268777493761811756137092537301945822348056638069",
+  "residual_factorization": [
+    [
+      "2465779087453622652131442949",
+      1
+    ],
+    [
+      "519784438179112504122441050306814600881",
+      1
+    ]
+  ],
+  "schema": "elliptic-curves.next12-rank22-exact-conductor.v1",
+  "short_model": [
+    "0",
+    "0",
+    "0",
+    "-8757694876923775508381266823958721/48",
+    "613442721819278218538866218950317441901175299796769/864"
+  ],
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/prospective_mw16_next12_results_v1.json": "a8f6d31d8b2410dba949e15065d3f0afbb1e91c9cafb92b1dac1fd132094d0c4",
+    "artifacts/local/elliptic-curves/next12-new-curve-conductor-bounds-v1/result.json": "7f3b0779b5e3af603c2a627a68e14d8c1ce398150e4d5a3cf378a82eb57f5274",
+    "elliptic-curves/cas/certify_next12_rank22_conductor.sage": "730dc20776802c6376c63199d6b7eebd7b39c73beb5a160fe2bf1a43a6c95c3f"
+  },
+  "status": "PASS_EXACT_CONDUCTOR"
+}

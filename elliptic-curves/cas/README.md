@@ -8,10 +8,50 @@ Stable user-facing commands are listed in [`../scripts/`](../scripts/) and
 
 ## Start here
 
+- [`certify_small_conductor_curve.py`](certify_small_conductor_curve.py):
+  Sage-free replay of 22 independent points, a global minimal equation,
+  Lucas primality proofs and its exact 76-digit conductor;
+  [canonical proof](../notes/NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md).
+  `certify_prospective_mw16_next12_results.py` checks the twelve fixed
+  follow-on measurements, including four new curves with lower bounds 22–24.
+  `replay_prospective_mw16_followup_v2.py` adds the optional exact observation
+  cache to retained follow-up replay; [diagnostic and validation](../notes/SMALL_CONDUCTOR_FOLLOWUP_2026-09-05.md).
+
+- [`replay_compact_cross_family_incidence.py`](replay_compact_cross_family_incidence.py):
+  exact projective j-incidence on the pinned first 32-curve cohort.
+  `audit_compact_published_r17_transport_v3.sage --check` replays the generic
+  section identities; its two earlier failed adapters are historical evidence.
+
+- [`audit_recorded_point_mod2_rank_v2.py`](audit_recorded_point_mod2_rank_v2.py):
+  exact batch admission from hash-pinned retained point clouds;
+  [202-transcript audit](../notes/RECORDED_POINT_ADMISSION_AUDIT_2026-09-05.md).
+  `research_runtime/quotient_only_reduction.py` provides an optional bounded
+  cache for newly frozen workers.
+
+- [`export_new_high_rank_curve_index_v2.py`](export_new_high_rank_curve_index_v2.py):
+  standalone replay of all 36 current new rank-at-least-22–25 curves in the
+  [consolidated index](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v2.json),
+  preserving every prior ID. The earlier exporter and 32-curve index are retained.
+- [`certify_prospective_mw16_results.py`](certify_prospective_mw16_results.py):
+  Sage-free replay of the [completed five-family MW16 pilot](../notes/PROSPECTIVE_COMPACT_MW16_PILOT_2026-09-05.md),
+  including ten new rank-at-least-22–25 examples. The `*_prospective_mw16_*`
+  selector, worker, supervisor and replayer retain the target-free experiment.
+  `certify_prospective_mw16_wide_results.py` checks the wider extension and its
+  additional new rank-at-least-25 curve.
+- [`export_compact_mw16_atlas.sage`](export_compact_mw16_atlas.sage): exact
+  reconstruction and replay of the [five compact MW16 models and 80 sections](../notes/COMPACT_FIVE_MW16_ATLAS_2026-09-05.md);
+  `compact_mw16_specialization.py` supplies checked finite-parameter inputs.
+- [`export_compact_r17_atlas.sage`](export_compact_r17_atlas.sage): exact replay
+  of the [six compact R17 models and 102 sections](../notes/COMPACT_SIX_R17_ATLAS_2026-09-05.md).
+  `search_compact_r17_atlas.sage` freezes the balanced prospective pilot;
+  `certify_compact_atlas_candidates.py` checks any new lower bounds without Sage.
+
 - [`certify_compact_r17_candidates.py`](certify_compact_r17_candidates.py):
   Sage-free replay of the [new compact R17 curves](../notes/NEW_COMPACT_R17_CURVES_2026-09-05.md),
   including exact independence and catalogue comparison. The `compact_r17_*`
   runners retain bounded selection, initial-search and adaptive protocols.
+  [`audit_compact_r17_measurements.py`](audit_compact_r17_measurements.py)
+  replays all 111 fresh initial lower bounds, including bounded no-gain results.
 
 - [`replay_rank_jump_diagnostics.sage`](replay_rank_jump_diagnostics.sage):
   portable replay of [MW18 visibility, masked controls, prime-prefix selection

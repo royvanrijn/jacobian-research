@@ -1,6 +1,17 @@
 # Elliptic-curve machinery audit and prospective results
 
-The first concrete outcome is [fourteen newly certified prospective curves of
+The [latest fixed MW16 follow-on](NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md)
+adds four curves with certified lower bounds 22–24, bringing the inventory to
+36 distinct curves absent from the refreshed 586-row ICARM snapshot.
+Its `3/17` curve has rank at least 22 and a proved exact 76-digit conductor,
+third among recorded rank-at-least-22 conductors in that snapshot. Four such
+catalogue entries lack conductor data. This is a low-conductor near-record
+result; exact rank and new rank-at-least-28/32 targets remain open.
+The [index](../../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v2.json)
+contains all 36 equations and point certificates.
+The original audit and earlier experiments below retain their own scopes.
+
+The first concrete outcome is [fifteen newly certified prospective curves of
 rank at least 22–24](NEW_COMPACT_R17_CURVES_2026-09-05.md), absent from the
 pinned 584-equation ICARM snapshot. This does not meet the rank-at-least-28
 near-record or rank-at-least-32 record target. Those targets remain open.
@@ -29,6 +40,17 @@ recognition ledgers, failed-worker logs and search manifests are retained in
 [`MATH_STATUS.json`](../../MATH_STATUS.json).
 
 ## Findings that change the next computation
+
+The later [recorded-point admission audit](RECORDED_POINT_ADMISSION_AUDIT_2026-09-05.md)
+finds another concrete gap: prime 257 certifies a 26th direction already
+recorded by the blind MW16 control search, whose admission bound was 251.
+All 202 retained-cloud proofs replay; only that known control improves.
+The same audit identifies avoidable per-point cache storage and validates an
+optional quotient-only cache for future workers.
+The later [small-conductor follow-up](SMALL_CONDUCTOR_FOLLOWUP_2026-09-05.md)
+measures a separate quadratic cost: every state construction revalidates all
+old point observations. An optional bounded exact-membership cache preserves
+the original serialized states and reduces the measured long-history cost.
 
 **1. The first selection stage can discard the strongest curves.**
 On the exact 20,400,078-parameter height-4096 population, the global
@@ -139,17 +161,17 @@ are recorded separately as `EC-COMPACT-R17-NEW-CURVES-20260905`.
 
 | Programme | What is available | Missing endpoint that matters |
 |---|---|---|
-| Compact R17/MW17 | Exact generic sections; successful fresh ranks 22–24; calibrated recovery of known 25/26 | A distinct curve with certified rank at least 28, then 32; adaptive recovery on genuinely promising new fibres |
-| A1/MW16 | Five distinct fibrations; 55/55 retrospective recovery; fresh bounded nulls | Selection and affordable exposure that transfer prospectively; a witness producing the required 16 quotient directions for rank 32 |
+| Compact R17/MW17 | Six compact families, 102 exact generic sections and new lower bounds through 25; native known-rank controls | A distinct curve of rank at least 28, then 32; full fresh generic parity censuses for all six presentations and balanced wider searches remain separate unrun experiments |
+| A1/MW16 | Five compact fibrations, 80 exact sections and fifteen new curves with lower bounds 22–25 across the completed pilots and next-twelve follow-on | Prospective gains currently reach nine beyond MW16; rank 32 needs sixteen certified quotient directions. The new small-conductor rank22 fibre needs one further direction to beat the recorded rank23 conductor minimum |
 | Anchored MW18 | Exact rank-18 specializations and deep-centre diagnostics | Adaptive rather than initial-only recovery, and a point-producing extension that does not merely re-count the same anchor |
 | Fixed cubic / 2-Selmer / CT | Exact transported cohomology and insolubility results | Global rational points on surviving covers; a fixed cubic algebra does not preserve the old high-rank group |
 | Rational/quartic base changes | Rank-19 carriers and bounded twist calculations | Independent characteristic-zero sections plus the required character/glue proof for a rank-20 construction; the seventeen excluded product twists remain excluded |
 | Different-NS foundry | Arithmetic marking obstructions and a remaining unknown queue | A rational non-CM point on the full marked source before equation work; another determinant-948 chart does not meet this endpoint |
 | Curve-302 and new-582 parents | Exact recognition misses and point-cloud diagnostics | A constructive parent with transported independent sections; a large displayed jump or another bounded miss is insufficient |
 | Older Mestre/Fermigier/Nagao/Kihara/newfamily lanes | Reproducible lower-rank families and some exact ranks | A demonstrated advantage for record-scale construction, not unbudgeted reopening of all old sweeps |
-| Record/conductor comparison | Exact point certificates and refreshed public equations | Exact global-minimal conductor data before claiming a conductor record; database absence remains a bounded novelty statement |
+| Record/conductor comparison | A new rank22 curve with a proved global minimal equation and exact76-digit conductor; refreshed586-row comparison | Exact rank remains open. Four catalogue entries at rank at least22 lack conductors, and database absence remains a finite novelty statement |
 
-## Verification and current continuation
+## Verification and completed experiments
 
 The bounded checks of residual quotient algebra, production proof gates,
 fixed-cubic geometry, observability, arbitrary-prime independence, pointed
@@ -202,6 +224,85 @@ This avoids requiring initial rank 24 when the earlier ladder already showed
 large adaptive gains from initial ranks 20/21. Each follow-up fixes at most
 301 charts, four seconds per chart, 1,500 seconds and 1.5 GiB per worker.
 These are finite follow-ups, not claims that every ambiguity becomes a point.
+
+All seven prospective follow-ups completed all 301 charts without certifying
+another direction. Two rank-24 workers first reached the 1,500-second limit;
+separate 300-second continuations completed only their remaining frozen charts.
+Every chart and admission replayed. The first read-only replay of `33/119`
+reached its 120-second checker cap; a separately recorded 300-second replay
+passed. All seven final point clouds were checked modulo 3 and 5 through
+prime 997, with no higher certified finite column rank.
+
+The larger top-64 cohort completed 58 fresh workers, three reused measurements
+and three public matches. Its unique strongest fresh initial measurement was
+`-7540/2317`, at rank at least 21. A separately frozen 301-chart follow-up
+completed in 1,296 seconds, gained one independent direction, and exported the
+fifteenth distinct curve, with rank at least 22. The canonical curve note
+links its independently replayed point certificate. All 301 chart and
+admission records also replayed.
+
+**Coverage gap measured and tested.** All 2,279 chart records from the 53
+fresh height-4096 workers stopped before full-box completion. Their mean
+completed-denominator fraction was about 0.715. This is bounded coverage,
+not 2,279 exhaustive boxes. A separate tail-completion protocol selected the
+four highest full-prime scores with no initial gain in the larger population:
+`-919/2282`, `-1121/9525`, `11744/9849`, and `10126/15275`. It verifies the
+same quartic, basepoint and coordinate maps, and resumes after each retained
+prefix's last completed denominator. All 172 boxes then completed through
+height 100,000, still with only the seventeen certified generic directions.
+All tail records replayed. The
+[manifest](../../artifacts/generated-results/elliptic-curves/compact_r17_tail_replay_v1.json)
+and [portable witnesses](../../artifacts/generated-results/elliptic-curves/compact_r17_tail_witnesses_v1.zip)
+retain both prefixes and tails. This closes that finite coverage gap for these
+four fibres; it is not an exact-rank bound or a global detector guarantee.
+
+The [population manifest](../../artifacts/generated-results/elliptic-curves/compact_r17_population_manifests_v1.json)
+and [portable protocols and scan ledgers](../../artifacts/generated-results/elliptic-curves/compact_r17_population_manifests_v1.zip)
+preserve the successive, separately declared selection policies. Increasing
+the parameter box did not improve the best prospective lower bound. The
+remaining bottleneck is selecting and exposing exceptional directions on new
+fibres, not a demonstrated shortage of raw parameters.
+
+The [complete initial-measurement certificate](../../artifacts/generated-results/elliptic-curves/compact_r17_initial_measurements_v1.json)
+independently checks all 111 fresh workers in the two full-score cohorts,
+including every rank-at-least-17 result. Its portable replay is
+`python3 elliptic-curves/cas/audit_compact_r17_measurements.py --check FILE`.
+The 53 smaller-box workers give measured lower-bound counts
+`17:23, 18:9, 19:8, 20:4, 21:1, 22:1, 23:6, 24:1`; the 58 larger-box
+workers give `17:45, 18:4, 19:8, 21:1`. All 4,773 initial chart boxes were
+incomplete at their recorded stops. The measured mean denominator coverage
+was 0.715 and 0.682, respectively. Scores and coverage remain pinned worker
+metadata; the independent checker redoes point membership, finite-quotient
+independence and generic-section transport, not enumeration completeness.
+
+The [comparison figure](../../artifacts/generated-results/elliptic-curves/compact_r17_initial_measurements_v1.png)
+and [PDF](../../artifacts/generated-results/elliptic-curves/compact_r17_initial_measurements_v1.pdf)
+plot these initial measurements against score and short-model coefficient
+size. Reused measurements and known curves are omitted. The lower bounds
+are not an exact-rank distribution, and the score/height pattern does not
+establish causation. The separate adaptive results above remain separate.
+
+A cheap [constant-scaling audit](../../artifacts/generated-results/elliptic-curves/r17_constant_scaling_audit_v1.json)
+tests whether the large coefficients of the six literal compiled R17
+presentations are merely a removable common Weierstrass scale. It strips
+weighted-content primes through 997 and remaining exact twelfth powers,
+then checks every coefficient identity under `x=u^2*X`, `y=u^3*Y`.
+The largest numerator/denominator bit sizes fall from 1584 to 1207 (`074d9`),
+1621 to 1289 (`07ca9`), 1603 to 1237 (`08234`), 1887 to 1503 (`08f72`),
+1371 to 1141 (`11952`), and 991 to 786 (`103b2`, representing `0e80b`).
+This removes some scale but does not establish a compact alternative family.
+It is not a minimal-model certificate: base-parameter changes and other
+coordinate reductions remain separate possible improvements. None of these
+identities constructs a new curve or increases generic rank.
+
+The subsequent [base-coordinate compactification](COMPACT_SIX_R17_ATLAS_2026-09-05.md)
+does close the large-family-coefficient preparation gap: all six compiled
+models now have coefficients of 141–169 bits and all 102 generic sections
+transport exactly. The decisive missing primes were recovered by perfect-power
+extraction from a common auxiliary invariant before bounded factorization.
+The new small-parameter boxes are different populations, so this does not
+retroactively change any old point-search result. A separately frozen
+height-1024, four-finalist-per-family pilot tests the practical consequence.
 
 Primary context: [Elkies's explicit R17 paper](https://arxiv.org/html/2608.25406v1),
 [Elkies's high-rank search lectures](https://arxiv.org/abs/0709.2908), and the

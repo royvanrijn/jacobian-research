@@ -1,0 +1,64 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/compact_r17_tail_witnesses_v1.zip",
+  "archive_sha256": "d1c54bca86612b1b659fd7da583ecfd0f2868ecd6d0aa387dffbb684b6b24563",
+  "claim_boundary": "All 172 original chart boxes now have contiguous retained coverage through denominator 100000. The four rank lower bounds remain 17. Neither these bounded misses nor finite-reduction ambiguity proves exact rank.",
+  "members": {
+    "artifacts/local/elliptic-curves/compact-r17-h16384-v1/candidate-01/result.json": "f5da41d897d1c4dda65d702fa3fa0445b3f6758dca77fbed74e669d937d442ad",
+    "artifacts/local/elliptic-curves/compact-r17-h16384-v1/candidate-03/result.json": "1106242ec320a2590c7aa3213417f8fc01d5805d358c50676f2e71e0cf0651ee",
+    "artifacts/local/elliptic-curves/compact-r17-h16384-v1/candidate-04/result.json": "dd336627b0078ed57bd044aaa9cf3a2bb432805c7f05d939bc5377d0b063e9e4",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/candidate-00/result.json": "c6fa5e65535187dd8bc1be741cc6566e2a47768d94bb879290f36c282d42dae2",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/candidate-01/result.json": "f833dcc44085a2d9899f5a0ed84909cc89761706e1f5ebbbce2e249b978bfba2",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/candidate-02/result.json": "5e4d02bd59bede7162d66970030f2defa5e0c052f9ca478c4daf80da3532ada7",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/candidate-03/result.json": "0ce6d89ce4322d5743e9633d5d5b4c978d7cf723381cd52eb1543b62aed28049",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/population.json": "3e176a2a64747f9e54fc58b4e9877abfecee6a5a07a995947233a8bc26d7f523",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/protocol.json": "c236b499bb0300ac275e02af9ab11a4701033c79458351518e4ae76e80450e87",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/replay-0.log": "adde166b677e34b37f0c90c350bf4794b1b6efa9e993744bc69333474a348170",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/replay-0.supervisor.json": "33557e01ead5f4811f9eb10e93c1eaa983979438e7f41740b3a60eac9459da16",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/replay-1.log": "2d9049570f2efd51769557bd2d7af01ba250ba0b24d220efabdc60a9e1850029",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/replay-1.supervisor.json": "7131037dd48e0b13ef5f0c8f5299f12790eeb766e753f1c401fef23822db7d05",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/replay-2.log": "2fe191aec018077d44d17070720c41cdda6419205e6eab25ce0a865e60b77e60",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/replay-2.supervisor.json": "c87d72c6ed8bf3fc6c8bc59fadba7662487a030d73832dd37df4684281d04f67",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/replay-3.log": "194cba44f6d9996829ffd5014517b58ab635a3605a842800adfa68774c15b33a",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/replay-3.supervisor.json": "fe80cfe022788ab24d166a8b780980edbafd9d0797b3ffde6393352a45cc7eee",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/replay-final-0.log": "adde166b677e34b37f0c90c350bf4794b1b6efa9e993744bc69333474a348170",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/replay-final-1.log": "2d9049570f2efd51769557bd2d7af01ba250ba0b24d220efabdc60a9e1850029",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/replay-final-2.log": "2fe191aec018077d44d17070720c41cdda6419205e6eab25ce0a865e60b77e60",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/replay-final-3.log": "194cba44f6d9996829ffd5014517b58ab635a3605a842800adfa68774c15b33a",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/supervision.json": "a9d0d117f010b45f27e3af8f56849576c09a295e480b8e36dd4adc621475435d",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/worker-00.log": "12385a4be089cda2acd69dbcd4f4b9382e13c0bf47cc9b9a6356e69a2e16040f",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/worker-00.supervisor.json": "5683840ab4c541fd5ad9be71ecf4552349b8e901c8e329e8784e12a8c4ed6dbb",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/worker-01.log": "feee1f7ac388d5d44e2507b3b4fc973a8c83fafacfbe4809b375f85295760ce7",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/worker-01.supervisor.json": "a75de6f53ab596a74eb38eb7eed6db2335c9bee2d4b5305e2de9f2b80b882d2b",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/worker-02.log": "885bd6f3971267c3a2f37a8fadd37094458308d76a74f5254497f8f878c4794a",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/worker-02.supervisor.json": "b984b850b908e37194caced7bbd78e954f6369982828243ee2025a316169b7ea",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/worker-03.log": "614d5fae0c447e51a5026be3ee2dfcc45c24fbd7f41f8352045ba1e8525fd490",
+    "artifacts/local/elliptic-curves/compact-r17-tail-completion-v1/worker-03.supervisor.json": "4425b9a9d660b316960fa97567db4fa37b1fd726c0ff4a4b5a58170db50e6f7c",
+    "artifacts/local/elliptic-curves/compact-r17-wide-v1/candidate-00/result.json": "5c326876777b7a6880a5f6aaa418c50e61e4622702622b1fdfebe88b895edce8"
+  },
+  "replayer": "elliptic-curves/cas/replay_compact_r17_tails.py",
+  "replayer_sha256": "75945d5f68403cfab85ac3f94c52f95eaff0b4fa414af43fa2c829ae6a1308e1",
+  "rows": [
+    {
+      "full_boxes_completed": 43,
+      "parameter": "-919/2282",
+      "rank_lower_bound": 17
+    },
+    {
+      "full_boxes_completed": 43,
+      "parameter": "-1121/9525",
+      "rank_lower_bound": 17
+    },
+    {
+      "full_boxes_completed": 43,
+      "parameter": "11744/9849",
+      "rank_lower_bound": 17
+    },
+    {
+      "full_boxes_completed": 43,
+      "parameter": "10126/15275",
+      "rank_lower_bound": 17
+    }
+  ],
+  "schema": "elliptic-curves.compact-r17-tail-replay.v1",
+  "status": "PASS_RETAINED_TAIL_MAP_AND_ADMISSION_REPLAY"
+}

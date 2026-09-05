@@ -1,0 +1,19 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/compact_five_mw16_independence_diagnostics_v1.zip",
+  "archive_sha256": "f63f650cf1405d52d45a0af4ad0a77b1d8d48cf8367fcfaf996665ea0a9f5cf8",
+  "files": {
+    "artifacts/local/elliptic-curves/compact-mw16-odd-independence-v1/protocol.json": "70604f4651963537375e6c96c28c9d5faaed251aacc507fb8ba5d3686b3b1032",
+    "artifacts/local/elliptic-curves/compact-mw16-odd-independence-v1/worker.log": "6c2b0feddb77ace83d41fc5233071eef2414470c89a5fa004c8529a7bfd0ec92",
+    "artifacts/local/elliptic-curves/compact-mw16-odd-independence-v1/worker.supervisor.json": "77ab32a2098621dfc3bf07a28e6332a09b982a65591015b7e52a9f8ca681d463",
+    "artifacts/local/elliptic-curves/compact-mw16-short-relations-v1/protocol.json": "df398c2bce1f52824e012a687085368d3218934618b8223fa0162596bc321f5e",
+    "artifacts/local/elliptic-curves/compact-mw16-short-relations-v1/source.sage": "54578557e0f5b05b4fc311810721644c97a0ebc73a690a9d8f7268c5b48609a1",
+    "artifacts/local/elliptic-curves/compact-mw16-short-relations-v1/worker.log": "3cf7a62c044c9e9d0c0bcf10a3939bba90232501130614e4251c9b46d44e7546",
+    "artifacts/local/elliptic-curves/compact-mw16-short-relations-v1/worker.supervisor.json": "1fe1efd50f274dc6924bc399a4b1e10e9c3e49d1e9aa6b3a9a74f65a57b6109a",
+    "artifacts/local/elliptic-curves/compact-mw16-short-relations-v2/protocol.json": "6d190c98b40113c89f14aee0100de3323317b87a2be6d9602d149bc3209ede9c",
+    "artifacts/local/elliptic-curves/compact-mw16-short-relations-v2/worker.log": "810b514c755b33e13285668583ab9d4558bcb75fe4718845c2b3aa783bbdd7ba",
+    "artifacts/local/elliptic-curves/compact-mw16-short-relations-v2/worker.supervisor.json": "49a504b41d3ba02defe3194238fb1f3263cc6ec773056f943d79068c8ea0b498",
+    "elliptic-curves/cas/audit_compact_mw16_odd_independence.py": "42419d114b1f77b3250ea8cbb32588d76122f569e30d79b851bff67b32e441a3",
+    "elliptic-curves/cas/audit_compact_mw16_short_relations.sage": "78d82ed3109361b56bf7758f35bfc86c7b75de2d5dfa8356fe4ce17e5386f889"
+  },
+  "scope": "Bounded odd quotient and exact ternary-relation diagnostics on two unchanged inputs, including failed tuple/list comparison startup and corrected replay source. Both full16 independence statuses remain unknown."
+}

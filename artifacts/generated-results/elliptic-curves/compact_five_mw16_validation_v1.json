@@ -1,0 +1,20 @@
+{
+  "archive": "artifacts/generated-results/elliptic-curves/compact_five_mw16_validation_v1.zip",
+  "archive_sha256": "8c7be39e1be280d6f2f4a67de3d7c9f6ce16177a3bdc83576820ef9a2ea11386",
+  "files": {
+    "artifacts/local/elliptic-curves/compact-mw16-input-audit-v2/protocol.json": "865e2bf2b485781494ae8bed395c01e581b9cf4fc33066b0f0709d33a4a25aa5",
+    "artifacts/local/elliptic-curves/compact-mw16-input-audit-v2/worker.log": "3e39990fe89f2655d34e059578cbdbcb0d7d91decb3684161be486c1e1127eac",
+    "artifacts/local/elliptic-curves/compact-mw16-input-audit-v2/worker.supervisor.json": "57c53951d64d7f8cf203b4af9131c85191ca1cad9a29710265558d221267fb66",
+    "artifacts/local/elliptic-curves/compact-mw16-replay-v1/full-marking-replay.log": "5a04e2b742490000037c077691e8c07cb6db1ec67983645623fdda8cd3703bb6",
+    "artifacts/local/elliptic-curves/compact-mw16-replay-v1/full-marking-replay.supervisor.json": "df99122797a741a09f93ce3b7cef3060149b753f4aa7f34a86c50c3bd8ef8fd7",
+    "artifacts/local/elliptic-curves/compact-mw16-replay-v1/protocol.json": "bf6c107857767e34843c538dc1e4412f40b523a9eaa3929cd71fd43a6b933b33",
+    "artifacts/local/elliptic-curves/compact-mw16-specializations-v1/protocol.json": "2fe50549043bb266f28356f3fac7c5024aaee1fb2806fd4437bc0555dab768b7",
+    "artifacts/local/elliptic-curves/compact-mw16-specializations-v1/worker.log": "7c2191d74fdba5c78b22a65a2f749ca410e22349700df8b4464c0156a7fbfc58",
+    "artifacts/local/elliptic-curves/compact-mw16-specializations-v1/worker.supervisor.json": "de333a86acc4cf499b2497a393f97e57ae5a34356f589d8e0fb2c233003dfd7d",
+    "elliptic-curves/cas/audit_compact_mw16_inputs.py": "31138dd87b628a301e2e4f7845b8581f63ca4fd3aa104bcdbcfcd4800ffa6e6a",
+    "elliptic-curves/cas/certify_compact_mw16_specializations.py": "78b54ff76a19fdd0db3c6c6f14a171fe8a5c20c1f7a609fdfc5f0f3149749723",
+    "elliptic-curves/cas/compact_mw16_specialization.py": "f6aeab97b980bc6e9a5db71675d4f47fbf3ac15cac5f35f2ea310a77e2a8a7c0",
+    "elliptic-curves/tests/test_compact_mw16_specialization.py": "f79affc197cebdbaaf443f0f85771376e38a259bfc1ec4ac6450b66706035b36"
+  },
+  "scope": "Full80-section reconstruction replay; preserved initial fixed-specialization exporter failure; completed unchanged-parameter fixed input audit and sources."
+}

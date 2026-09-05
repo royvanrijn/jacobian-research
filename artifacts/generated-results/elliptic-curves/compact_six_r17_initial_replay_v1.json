@@ -1,0 +1,342 @@
+{
+  "schema": "elliptic-curves.compact-six-r17-initial-replay.v1",
+  "status": "PASS_19_INITIAL_TRANSCRIPTS",
+  "files": [
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/074d9/candidate-01/final-replay.log",
+      "sha256": "2ae37ef558f878f75fde9324687b39be2e73994205d59afa008ade4d38291e01",
+      "bytes": 57
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/074d9/candidate-01/result.json",
+      "sha256": "69bf4f608117f58fa539fe0face05c01645f0c3a19ece433914de787c00651db",
+      "bytes": 19909846
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/074d9/candidate-03/final-replay.log",
+      "sha256": "83ace35b117d4891ebcffb8bd14f32dad6b6d650d28524b139b1a00aa14a4a41",
+      "bytes": 58
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/074d9/candidate-03/result.json",
+      "sha256": "b2491190d1356872ba25628045eb6eeb1dbf78758876fcc56af877fba70331f8",
+      "bytes": 27331042
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/074d9/population.json",
+      "sha256": "dd6907f82cb9ba7c7b32b00d72b44ab057fe8214baa32e120ee80588024e0b2b",
+      "bytes": 20811
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/074d9/scan--1.json",
+      "sha256": "7feaa21899812154d92f306387a82113c95f81acaa41b7bfae0b3961915a7fa8",
+      "bytes": 21465
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/074d9/scan-1.json",
+      "sha256": "eb2ec0f32f8edd322c35e935f014d55aa840ffec2a22b10389291a140e912234",
+      "bytes": 21187
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/07ca9/candidate-01/final-replay.log",
+      "sha256": "9a7278a7ddc2b08ec86fb5bb481b46fc7febb91f68528523d919844ab7aadf82",
+      "bytes": 57
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/07ca9/candidate-01/independent-rank-check.json",
+      "sha256": "0a8975d1fa1d3970fc24f28626a855136c8924bafd8f03cc2d57e8598e79a62b",
+      "bytes": 14059
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/07ca9/candidate-01/result.json",
+      "sha256": "b623820e440c8beacc6da038b203654475279fac2325dcb46330dd315fc98eb7",
+      "bytes": 21357019
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/07ca9/candidate-02/final-replay.log",
+      "sha256": "a444f70dbce3e30084909ce66b2349922bd1d06cb5cfdc6fdfbe27dde2782376",
+      "bytes": 57
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/07ca9/candidate-02/result.json",
+      "sha256": "b55ad2ec244c361a6ddff43d5040f369f015345f57f11948519762a762f8359f",
+      "bytes": 7221012
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/07ca9/candidate-03/final-replay.log",
+      "sha256": "c499b6364b519986a25d119c167c8cf9be42bf5e666be96c6c8beab8c2de7acd",
+      "bytes": 57
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/07ca9/candidate-03/result.json",
+      "sha256": "f04cff8944b9fd18c769d9aafc8a6ce453980313eb4971f8c152bd619a05ab9a",
+      "bytes": 7772628
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/07ca9/population.json",
+      "sha256": "2e71ffa1b4193424beb05a277b3d77c331b1195697fc732ea0a426a08bc08bdd",
+      "bytes": 20849
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/07ca9/scan--1.json",
+      "sha256": "cce4ade42dce8ee12aaae3821d189cf8fd12e1e726fbc5919d7131d315050d08",
+      "bytes": 21481
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/07ca9/scan-1.json",
+      "sha256": "9978458a5a010c75991670d4bc918ffbe6f02d7a6d090546cc2861d085f00a1d",
+      "bytes": 21229
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08234/candidate-00/final-replay.log",
+      "sha256": "d51fa54bdb29ddc1188488c6c4696fbe1107af54fff867c50412675e610f3778",
+      "bytes": 56
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08234/candidate-00/result.json",
+      "sha256": "9359a47dfc920dfb8f6eb1fa85ca00a75e51a89358aeb09b3e452f0888b85826",
+      "bytes": 4935849
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08234/candidate-01/final-replay.log",
+      "sha256": "cd0b92afa694295a4845eb37852780551f5e3fbade47ec7713d642759a0c64bf",
+      "bytes": 56
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08234/candidate-01/result.json",
+      "sha256": "cd1e0fa681e2a29818430124b714238849219fcc34cb91794650f78022e2bcc5",
+      "bytes": 50071379
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08234/candidate-02/final-replay.log",
+      "sha256": "bb995953235f8b8bf12b3024a43d36f9ad83aaada61481a306557af1860f09e0",
+      "bytes": 58
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08234/candidate-02/result.json",
+      "sha256": "e530effcb5325bfc1a044b1b6182208b9b4fa28f8dfc69c54791a71f0aee527a",
+      "bytes": 3121674
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08234/candidate-03/final-replay.log",
+      "sha256": "d26cc9a9fff30c8b2cbb4a0e996a8a4a0f7c574041978385875e540f4547fa3c",
+      "bytes": 57
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08234/candidate-03/result.json",
+      "sha256": "bdebb4aefb8ff7143bcbe3be484e78b8af754e5f4f6d3ac4c52f074242936c34",
+      "bytes": 12382208
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08234/population.json",
+      "sha256": "24f7a6b4d74880666c62a6ad0ce8190b60ea19365412591c3ce3e7f6d289791e",
+      "bytes": 20875
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08234/scan--1.json",
+      "sha256": "f3581e193ea3a628dfc7eeb7f56ec38fa6cc81a0dd7f6b79388ed50dbf33f610",
+      "bytes": 21473
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08234/scan-1.json",
+      "sha256": "1b8b7890d41961cbc8cc2155175720db34d509e5b3763b371f980e472cd599b0",
+      "bytes": 21241
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08f72/candidate-00/final-replay.log",
+      "sha256": "9e6a88b59cfe05b7df26364af10a792b3499e18baa852b87fdb028b300077f14",
+      "bytes": 58
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08f72/candidate-00/result.json",
+      "sha256": "3ede5f4c56adee858f2e8f1b156bc66ef007655826654e52be4e829dc73272e2",
+      "bytes": 10153763
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08f72/candidate-01/final-replay.log",
+      "sha256": "dabf8c5fe6d55137bf72b11cf92ab11bd0d58e1de34b20b9531da85b70669911",
+      "bytes": 57
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08f72/candidate-01/result.json",
+      "sha256": "4ae23367e26725e0cd777811299c5e748b59e9e29bc7b1452e30a10d0cc968f0",
+      "bytes": 20860623
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08f72/candidate-03/final-replay.log",
+      "sha256": "4dbcf2ec392e5e878b19dd899dfe51309a2ae2dcd34f77ceeebefbc3f90839d5",
+      "bytes": 57
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08f72/candidate-03/result.json",
+      "sha256": "39e78a09a53cf1694b02cd65bd743d43b51f63811149829f59ae814bda4a8768",
+      "bytes": 5530443
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08f72/population.json",
+      "sha256": "d9da994324edb9c6baa9afdeda198b42ce754e314d1528eddb960c2d9ae02dbe",
+      "bytes": 20837
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08f72/scan--1.json",
+      "sha256": "ee50fdc11589c81426107669d9fe74e6272be9f1d4b6b716d48388ac2c0c4f95",
+      "bytes": 21473
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/08f72/scan-1.json",
+      "sha256": "e24fc5a928161caaf6a47d18eaa4eee11010df38b97bfe6a7d963d3a7686674b",
+      "bytes": 21191
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/103b2/candidate-01/final-replay.log",
+      "sha256": "bf47a3451e44abcb005488c256091761d428a217b02b3351bcd2df8ee63ee7ab",
+      "bytes": 58
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/103b2/candidate-01/result.json",
+      "sha256": "b8a30af959f52db19e442e7cfd240a4972bf813121bd0f65f64ddb36253046b9",
+      "bytes": 7976186
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/103b2/candidate-02/final-replay.log",
+      "sha256": "65604e22656362f8c1015167c6b834cb15198737120b319fbbf51d7fb9f772f5",
+      "bytes": 58
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/103b2/candidate-02/result.json",
+      "sha256": "90f57efdb4490afc45a3e1f936f3fb857f2d5bcb8bed5080b1c0ee67468fe4cd",
+      "bytes": 6777569
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/103b2/candidate-03/final-replay.log",
+      "sha256": "5f4163a2338d2a816ea0dc3dfa43b2cfc0058c67e07077c0a934e780e6f33b6d",
+      "bytes": 57
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/103b2/candidate-03/result.json",
+      "sha256": "6b2e41de41e1e7488bd5e8190b55c7ff7ba59e5a3d6e42a356a0918273e8f811",
+      "bytes": 18762367
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/103b2/population.json",
+      "sha256": "a214f145ab4cdcc065aa51d8a62746d3287814142752121afbf58e8ea945fc77",
+      "bytes": 20839
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/103b2/scan--1.json",
+      "sha256": "016681c07ed3b15dc3a3a1b168b466b80aca48bef19f66417f767480fcb285fb",
+      "bytes": 21439
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/103b2/scan-1.json",
+      "sha256": "b3b513d8b9456f970f50cc20c76d3124fa9b12943f97aeff565ec197b71dee30",
+      "bytes": 21207
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/11952/candidate-00/final-replay.log",
+      "sha256": "4423e79a9187f4a236ebf03f7fff0d2c52667968e13813dc17171e1606382627",
+      "bytes": 58
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/11952/candidate-00/result.json",
+      "sha256": "814baccc6864f2a836186386c34eb7abfe045ca6d911d47019bfe865b95105b5",
+      "bytes": 6836804
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/11952/candidate-01/final-replay.log",
+      "sha256": "5d96310058bbaa0688b2a080b5bdb02556a062a35e7cc0820067f8cb5a475ebe",
+      "bytes": 57
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/11952/candidate-01/result.json",
+      "sha256": "da322a634fd5ed9beafc63c5a54836ad43092e177b7568f19c89b8da13978065",
+      "bytes": 4665719
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/11952/candidate-02/final-replay.log",
+      "sha256": "d08776e278a863a4a5445992bfbbb1ab20bda4efe3a939716013c0f6a0012f15",
+      "bytes": 58
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/11952/candidate-02/result.json",
+      "sha256": "024141473e23714c1578dd2cf318d4d7222a90f17786dd8501303fe60535a7a5",
+      "bytes": 12107615
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/11952/candidate-03/final-replay.log",
+      "sha256": "76981c1abc2ffe8978196a7ceb8b99830f5131af49bb987dff34ed925b2b56a2",
+      "bytes": 55
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/11952/candidate-03/result.json",
+      "sha256": "111fb34233d519b14ea4ee27df9fc513fa25be0b2f89b7778d23077ec6d130ec",
+      "bytes": 16881186
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/11952/population.json",
+      "sha256": "95fc130a98c9d3cd760e02a997d8440b273453097b8e179cca9a168e07f44799",
+      "bytes": 20815
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/11952/scan--1.json",
+      "sha256": "08889510d612e67b813462678429b8d08faa60f57e18aa5ef7b217c332441985",
+      "bytes": 21455
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/11952/scan-1.json",
+      "sha256": "301e9fca8c118926b474827dc900583349d0f1ae16d3ae9f6d563ff05a575066",
+      "bytes": 21183
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/batch.log",
+      "sha256": "1f8ad0af6d26299c85d2e0f4fc28a9acb3c4dc1328435188c067ea27e89162d4",
+      "bytes": 1010
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/check_trace_tables.sage",
+      "sha256": "d70602919c886d2c48993431d2ca2b7b83f4151e3f0b5ab63acc1423f722f814",
+      "bytes": 1542
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/launch.json",
+      "sha256": "e6bad82b97121d206e8fa028716324c70887894b626be80a01c4022b675c08dd",
+      "bytes": 4517
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/ledger.json",
+      "sha256": "cd95dc3ccd1584ab3519c380a1348086e8e9e7a03137647e0a0f09cc3f9150e9",
+      "bytes": 33934
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/protocol.json",
+      "sha256": "00c2528a2459ce78b2f1ab0a044ffc526e2ad7633821782b2af3a3b010d3c5f9",
+      "bytes": 8202
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/replay-protocol.json",
+      "sha256": "579a9762ba00e48165c1a5c1f9bf04b7d64ef0295c50449909d93c96e7d421da",
+      "bytes": 33217
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/replay-results.json",
+      "sha256": "5f2f3709eb130074a4b80e7710bc48281f6031a710fedf3224920d2efa51869a",
+      "bytes": 27081
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/selection-supervision.json",
+      "sha256": "2529ff0d0601d6acd7efca88dfb96f19d3ab7ae3f39a31155ef49dcc307038d5",
+      "bytes": 8451
+    },
+    {
+      "path": "artifacts/local/elliptic-curves/compact-six-r17-h1024-v2/trace-table-check.json",
+      "sha256": "72d30ad3f4c0d69673c243ed149b4be02f27da105642c23f781df60748917c5c",
+      "bytes": 4523
+    }
+  ],
+  "zip_sha256": "10f9ef014c53df4d073d38af0f1db12dabf08c91876c8ab4786094587eec93f0",
+  "zip_bytes": 30424500,
+  "independent_replay_count": 19,
+  "chart_count": 817,
+  "replay_command": "python3 elliptic-curves/cas/replay_compact_atlas_search.py RESULT.json",
+  "scope": "Complete frozen selection/launch ledgers and all nineteen initial result transcripts with chart and admission replay logs. The 562-prime trace arrays can be regenerated from the pinned compact equations and source; only their retained table hashes and bounded cardinality checks are included here. Point-search coverage remains bounded, not an exact-rank claim."
+}

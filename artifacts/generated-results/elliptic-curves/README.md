@@ -1,9 +1,55 @@
 # Active elliptic-curve artifacts
 
+The [new rank-at-least-22 small-conductor proof](small_conductor_rank22_proof_v1.json)
+contains 22 independent points and a Sage-free exact conductor certificate;
+[canonical note](../../../elliptic-curves/notes/NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md).
+The [next-twelve evidence bundle](prospective_mw16_next12_evidence_v1.json)
+retains all 516 replayed chart records and four new curves with lower bounds 22–24.
+The [bounded follow-up](small_conductor_followup_evidence_v1.json) retains
+127 additional chart records, a 7,753-point audit and the unresolved descent probe.
+The [refreshed inventory comparison](refreshed_new_curve_inventory_replay_v1.json)
+checks all 36 equations against the later pinned 586-row catalogue.
+
+The [cross-family incidence bundle](compact_cross_family_incidence_evidence_v1.json)
+contains 384 exact projective j-incidence outcomes and the generic R17
+section transport proof; [canonical note](../../../elliptic-curves/notes/COMPACT_CROSS_FAMILY_INCIDENCE_2026-09-05.md).
+
+The [retained-point admission audit](../../../elliptic-curves/notes/RECORDED_POINT_ADMISSION_AUDIT_2026-09-05.md)
+indexes [202 exact point-cloud proofs](recorded_mod2_admission_audit_v1.json)
+and a portable evidence ZIP. It recovers known rank 26 at prime 257.
+
+The [consolidated 36-curve index](new_high_rank_curve_index_v2.json) contains
+equations, points and exact rank certificates, including three rank-at-least-25
+examples; [equation CSV](new_high_rank_curve_index_v2.csv).
+The [wider MW16 certificate](prospective_mw16_wide_results_v1.json) supplies
+the latest new rank-at-least-25 example; see the
+[completed searches and remaining gaps](../../../elliptic-curves/notes/PROSPECTIVE_COMPACT_MW16_PILOT_2026-09-05.md).
+
+The [prospective MW16 certificates](prospective_mw16_results_v1.json) add ten
+new rank-at-least-22–25 examples, including a second rank-at-least-25 curve;
+see the [proof, completed search and novelty boundary](../../../elliptic-curves/notes/PROSPECTIVE_COMPACT_MW16_PILOT_2026-09-05.md).
+The [portable evidence](prospective_mw16_pilot_evidence_v1.json) retains all
+327680 generic parity witnesses and 853 replayed point-chart records.
+
+The [five compact MW16 families](compact_five_mw16_atlas_v1.json) contain
+141–181-bit equations and 80 exactly transported generic sections; see the
+[coordinate proof and input limits](../../../elliptic-curves/notes/COMPACT_FIVE_MW16_ATLAS_2026-09-05.md).
+
+The [six new compact-atlas curve certificates](compact_atlas_new_curves_v1.json)
+include a rank-at-least-25 specialization; see the [equation and proof](../../../elliptic-curves/notes/NEW_COMPACT_ATLAS_CURVES_2026-09-05.md).
+
+The [compact six-family atlas](compact_six_r17_atlas_v1.json) contains equations
+of 141–169 coefficient bits and all 102 exactly transported generic sections;
+see the [coordinate proof](../../../elliptic-curves/notes/COMPACT_SIX_R17_ATLAS_2026-09-05.md).
+
 The [compact R17 certificates](compact_r17_new_curves_v1.json) and
 [wider-population certificate](compact_r17_wide_new_curves_v1.json), with the
-[top-64 export](compact_r17_top64_interim_curves_v1.json), prove fourteen
+[top-64 export](compact_r17_top64_interim_curves_v1.json) and
+[largest-gain follow-up](compact_r17_largest_gain_curve_v1.json), prove fifteen
 prospective rank lower bounds 22–24; see the [proof and novelty scope](../../../elliptic-curves/notes/NEW_COMPACT_R17_CURVES_2026-09-05.md).
+The [111 initial lower bounds](compact_r17_initial_measurements_v1.json) and
+[comparison figure](compact_r17_initial_measurements_v1.png) document the
+completed full-score cohorts; [audit and coverage limits](../../../elliptic-curves/notes/ELLIPTIC_BREAKTHROUGH_AUDIT_2026-09-05.md).
 
 The [rank-jump diagnostic replay](rank_jump_diagnostics_replay_v1.json)
 joins exact visibility witnesses, 31/31 masked recoveries, bounded selector

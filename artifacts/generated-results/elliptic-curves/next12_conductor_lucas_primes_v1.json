@@ -1,0 +1,714 @@
+{
+  "nodes": {
+    "1022977": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          10
+        ],
+        [
+          "3",
+          3
+        ],
+        [
+          "37",
+          1
+        ]
+      ],
+      "prime": "1022977",
+      "witness": 5
+    },
+    "10723": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "3",
+          1
+        ],
+        [
+          "1787",
+          1
+        ]
+      ],
+      "prime": "10723",
+      "witness": 2
+    },
+    "11": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "5",
+          1
+        ]
+      ],
+      "prime": "11",
+      "witness": 2
+    },
+    "12739": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "3",
+          1
+        ],
+        [
+          "11",
+          1
+        ],
+        [
+          "193",
+          1
+        ]
+      ],
+      "prime": "12739",
+      "witness": 2
+    },
+    "13": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          2
+        ],
+        [
+          "3",
+          1
+        ]
+      ],
+      "prime": "13",
+      "witness": 2
+    },
+    "13487": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "11",
+          1
+        ],
+        [
+          "613",
+          1
+        ]
+      ],
+      "prime": "13487",
+      "witness": 5
+    },
+    "1573969": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          4
+        ],
+        [
+          "3",
+          1
+        ],
+        [
+          "11",
+          2
+        ],
+        [
+          "271",
+          1
+        ]
+      ],
+      "prime": "1573969",
+      "witness": 14
+    },
+    "1597": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          2
+        ],
+        [
+          "3",
+          1
+        ],
+        [
+          "7",
+          1
+        ],
+        [
+          "19",
+          1
+        ]
+      ],
+      "prime": "1597",
+      "witness": 11
+    },
+    "17": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          4
+        ]
+      ],
+      "prime": "17",
+      "witness": 3
+    },
+    "1787": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "19",
+          1
+        ],
+        [
+          "47",
+          1
+        ]
+      ],
+      "prime": "1787",
+      "witness": 2
+    },
+    "19": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "3",
+          2
+        ]
+      ],
+      "prime": "19",
+      "witness": 2
+    },
+    "193": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          6
+        ],
+        [
+          "3",
+          1
+        ]
+      ],
+      "prime": "193",
+      "witness": 5
+    },
+    "2": {
+      "base_case": true,
+      "prime": "2"
+    },
+    "229": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          2
+        ],
+        [
+          "3",
+          1
+        ],
+        [
+          "19",
+          1
+        ]
+      ],
+      "prime": "229",
+      "witness": 6
+    },
+    "23": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "11",
+          1
+        ]
+      ],
+      "prime": "23",
+      "witness": 5
+    },
+    "230675547975396263": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "1573969",
+          1
+        ],
+        [
+          "73278300899",
+          1
+        ]
+      ],
+      "prime": "230675547975396263",
+      "witness": 5
+    },
+    "2465779087453622652131442949": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          2
+        ],
+        [
+          "3",
+          2
+        ],
+        [
+          "229",
+          1
+        ],
+        [
+          "1022977",
+          1
+        ],
+        [
+          "292381784524655621",
+          1
+        ]
+      ],
+      "prime": "2465779087453622652131442949",
+      "witness": 2
+    },
+    "271": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "3",
+          3
+        ],
+        [
+          "5",
+          1
+        ]
+      ],
+      "prime": "271",
+      "witness": 6
+    },
+    "2768106575704755157": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          2
+        ],
+        [
+          "3",
+          1
+        ],
+        [
+          "230675547975396263",
+          1
+        ]
+      ],
+      "prime": "2768106575704755157",
+      "witness": 2
+    },
+    "29": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          2
+        ],
+        [
+          "7",
+          1
+        ]
+      ],
+      "prime": "29",
+      "witness": 2
+    },
+    "292381784524655621": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          2
+        ],
+        [
+          "5",
+          1
+        ],
+        [
+          "37",
+          1
+        ],
+        [
+          "395110519627913",
+          1
+        ]
+      ],
+      "prime": "292381784524655621",
+      "witness": 2
+    },
+    "3": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ]
+      ],
+      "prime": "3",
+      "witness": 2
+    },
+    "31": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "3",
+          1
+        ],
+        [
+          "5",
+          1
+        ]
+      ],
+      "prime": "31",
+      "witness": 3
+    },
+    "350663": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "13",
+          1
+        ],
+        [
+          "13487",
+          1
+        ]
+      ],
+      "prime": "350663",
+      "witness": 5
+    },
+    "37": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          2
+        ],
+        [
+          "3",
+          2
+        ]
+      ],
+      "prime": "37",
+      "witness": 2
+    },
+    "3705041": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          4
+        ],
+        [
+          "5",
+          1
+        ],
+        [
+          "29",
+          1
+        ],
+        [
+          "1597",
+          1
+        ]
+      ],
+      "prime": "3705041",
+      "witness": 3
+    },
+    "395110519627913": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          3
+        ],
+        [
+          "11",
+          2
+        ],
+        [
+          "408172024409",
+          1
+        ]
+      ],
+      "prime": "395110519627913",
+      "witness": 3
+    },
+    "408172024409": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          3
+        ],
+        [
+          "811",
+          1
+        ],
+        [
+          "5867",
+          1
+        ],
+        [
+          "10723",
+          1
+        ]
+      ],
+      "prime": "408172024409",
+      "witness": 3
+    },
+    "419": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "11",
+          1
+        ],
+        [
+          "19",
+          1
+        ]
+      ],
+      "prime": "419",
+      "witness": 2
+    },
+    "47": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "23",
+          1
+        ]
+      ],
+      "prime": "47",
+      "witness": 5
+    },
+    "5": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          2
+        ]
+      ],
+      "prime": "5",
+      "witness": 2
+    },
+    "519784438179112504122441050306814600881": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          4
+        ],
+        [
+          "5",
+          1
+        ],
+        [
+          "11",
+          1
+        ],
+        [
+          "590664134294446027411864829894107501",
+          1
+        ]
+      ],
+      "prime": "519784438179112504122441050306814600881",
+      "witness": 3
+    },
+    "5867": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "7",
+          1
+        ],
+        [
+          "419",
+          1
+        ]
+      ],
+      "prime": "5867",
+      "witness": 5
+    },
+    "590664134294446027411864829894107501": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          2
+        ],
+        [
+          "3",
+          2
+        ],
+        [
+          "5",
+          4
+        ],
+        [
+          "11",
+          1
+        ],
+        [
+          "193",
+          1
+        ],
+        [
+          "12739",
+          1
+        ],
+        [
+          "350663",
+          1
+        ],
+        [
+          "2768106575704755157",
+          1
+        ]
+      ],
+      "prime": "590664134294446027411864829894107501",
+      "witness": 7
+    },
+    "613": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          2
+        ],
+        [
+          "3",
+          2
+        ],
+        [
+          "17",
+          1
+        ]
+      ],
+      "prime": "613",
+      "witness": 2
+    },
+    "7": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "3",
+          1
+        ]
+      ],
+      "prime": "7",
+      "witness": 3
+    },
+    "71": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "5",
+          1
+        ],
+        [
+          "7",
+          1
+        ]
+      ],
+      "prime": "71",
+      "witness": 7
+    },
+    "73278300899": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "11",
+          1
+        ],
+        [
+          "29",
+          1
+        ],
+        [
+          "31",
+          1
+        ],
+        [
+          "3705041",
+          1
+        ]
+      ],
+      "prime": "73278300899",
+      "witness": 2
+    },
+    "811": {
+      "p_minus_one_factorization": [
+        [
+          "2",
+          1
+        ],
+        [
+          "3",
+          4
+        ],
+        [
+          "5",
+          1
+        ]
+      ],
+      "prime": "811",
+      "witness": 3
+    }
+  },
+  "schema": "elliptic-curves.lucas-prime-proofs.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/next12_rank22_exact_conductor_v1.json": "55664837357228b514f21125a8ec20179a48ab4f8f12e2df7e583f075a998720",
+    "elliptic-curves/cas/build_next12_conductor_prime_certificates.sage": "2fb40153c38ae058a0f9cb3987f7fc30ef21166fda3c34952087156dca28dfac"
+  },
+  "status": "COMPLETE_LUCAS_CERTIFICATES",
+  "targets": [
+    "2",
+    "3",
+    "5",
+    "13",
+    "17",
+    "19",
+    "29",
+    "71",
+    "2465779087453622652131442949",
+    "519784438179112504122441050306814600881"
+  ]
+}

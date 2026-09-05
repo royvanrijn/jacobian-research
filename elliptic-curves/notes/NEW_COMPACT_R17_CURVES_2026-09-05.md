@@ -1,6 +1,10 @@
 # Newly certified compact R17 specializations
 
-Fourteen pairwise nonisomorphic prospective curves have unconditional rank lower
+The subsequent [six-family compact-atlas experiment](NEW_COMPACT_ATLAS_CURVES_2026-09-05.md)
+adds six distinct curves, including rank at least 25. This note retains the
+certificates and scope of the earlier fifteen-curve experiment.
+
+Fifteen pairwise nonisomorphic prospective curves have unconditional rank lower
 bounds 22–24 and no rational-isomorphism match in the pinned 584-curve ICARM
 snapshot. These are actual point certificates, not Nagao estimates. They do
 not yet meet the rank-at-least-28 near-record or rank-at-least-32 record target.
@@ -22,11 +26,14 @@ There is no exact-rank, conductor-record, or universal novelty claim.
 | `1229/894` | 23 | 6 |
 | `129/70` | 23 | 6 |
 | `1348/1431` | 22 | 5 |
+| `-7540/2317` | 22 | 5 |
 
 The exact models, every independent point, family transports and finite
 quotient matrices are in the [height-256 certificates](../../artifacts/generated-results/elliptic-curves/compact_r17_new_curves_v1.json)
 and [height-4096 certificate](../../artifacts/generated-results/elliptic-curves/compact_r17_wide_new_curves_v1.json),
 with eight further curves in the [top-64 interim export](../../artifacts/generated-results/elliptic-curves/compact_r17_top64_interim_curves_v1.json).
+The [largest-initial-gain follow-up certificate](../../artifacts/generated-results/elliptic-curves/compact_r17_largest_gain_curve_v1.json)
+adds `-7540/2317` at rank at least 22.
 Every curve in that interim export already has all 43 initial chart records;
 the export label refers to the unfinished cohort at export time.
 The parameter refers to the literal published R17 model, not a native alternate
@@ -61,7 +68,7 @@ analytic rank, a Selmer dimension, nor completeness of point search is used.
 The two implementations share finite group-law primitives; this is not an
 external or formal verification claim.
 
-All fourteen lower bounds can be replayed without Sage or the discovery caches:
+All fifteen lower bounds can be replayed without Sage or the discovery caches:
 
 ```sh
 python3 elliptic-curves/cas/certify_compact_r17_candidates.py --check \
@@ -70,6 +77,8 @@ python3 elliptic-curves/cas/certify_compact_r17_candidates.py --check \
   artifacts/generated-results/elliptic-curves/compact_r17_wide_new_curves_v1.json
 python3 elliptic-curves/cas/certify_compact_r17_candidates.py --check \
   artifacts/generated-results/elliptic-curves/compact_r17_top64_interim_curves_v1.json
+python3 elliptic-curves/cas/certify_compact_r17_candidates.py --check \
+  artifacts/generated-results/elliptic-curves/compact_r17_largest_gain_curve_v1.json
 ```
 
 The checker also reconstructs each generic specialization and its point
@@ -130,9 +139,28 @@ not by itself add to rational rank either.
 The broader 301-class follow-up recovers the known rank-28 control from its
 initial rank-26 search subgroup after eleven charts. The
 [independent recovery certificate](../../artifacts/generated-results/elliptic-curves/compact_r17_blind_rank28_recovery_v1.json)
-explicitly matches ICARM curve 11; it is excluded from the fourteen new
-prospective curves. Broader follow-ups on the new rank-24 fibres and on four
-score-selected fibres with initial ranks 18/19 have their own fixed protocols.
+explicitly matches ICARM curve 11; it is excluded from the fifteen new
+prospective curves. All three new rank-24 fibres and four score-selected fibres
+with initial ranks 18/19 completed their broader 301-chart follow-ups without
+an additional certified direction. Two rank-24 workers needed separately
+declared 300-second continuations of their remaining frozen charts. Every
+chart and admission replayed. Their retained point clouds also gave no higher
+finite column rank modulo 3 or 5 through prime 997. These remain bounded results.
+
+The height-16384 cohort finished with 58 fresh measurements, three reused
+measurements and three known curves. Its unique strongest fresh initial
+measurement, `-7540/2317` at rank at least 21, then completed a separate
+301-chart follow-up and gained one certified direction. Its rank-at-least-22
+certificate is included above; all 301 chart and admission records replayed.
+
+A coverage audit found that the original four-second chart runs often stopped
+before completing their height-100,000 boxes. A separate continuation on the
+four highest-scoring fresh zero-gain fibres completed all 172 original boxes.
+None added a certified direction beyond the seventeen generic sections. The
+[tail replay manifest](../../artifacts/generated-results/elliptic-curves/compact_r17_tail_replay_v1.json)
+and [portable witnesses](../../artifacts/generated-results/elliptic-curves/compact_r17_tail_witnesses_v1.zip)
+retain the prefix-to-tail identities and completed coverage. This does not
+prove any of those curves has exact rank seventeen.
 
 ## Pinned novelty comparison
 

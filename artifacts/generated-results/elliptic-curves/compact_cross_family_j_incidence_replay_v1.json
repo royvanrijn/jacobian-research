@@ -1,0 +1,15 @@
+{
+  "claim_boundary": "Exact j-incidence only in the recorded twelve presentations, including infinity; no rational isomorphism or section independence claim.",
+  "pairs_checked": 384,
+  "schema": "elliptic-curves.compact-cross-family-j-incidence-replay.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/compact_cross_family_j_incidence_v1.json": "9a91158d3663fe4d1a11ee611a129a0e841b1c98ec99f9c4f5c6d4828cc265aa",
+    "elliptic-curves/cas/fixed_cubic_geometry.py": "77db6402383e3e64e4577162a98cd69ee4ecd5050ffba69f02a6048e16238a7a",
+    "elliptic-curves/cas/replay_compact_cross_family_incidence.py": "f45cbe28e0db9061abd932237c419f788e9d0292033566e5d0832102a6aacdec"
+  },
+  "status": "PASS",
+  "status_counts": {
+    "NO_RATIONAL_J_PREIMAGE": 336,
+    "RATIONAL_J_PREIMAGES_CERTIFIED": 48
+  }
+}

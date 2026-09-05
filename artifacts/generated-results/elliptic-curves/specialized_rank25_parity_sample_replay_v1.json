@@ -1,0 +1,41 @@
+{
+  "claim_boundary": "Exact sample, parity, rounded-form norms and fixed gate replay. Numerical height metric and CVP optimality remain unproved; no point search or rank gain.",
+  "curves": [
+    {
+      "census_sha256": "0caaf48e3cd50b7249e722445454e0353fae4fb2c93b066b0e95498ec45c399e",
+      "family": "07ca9",
+      "index": 0,
+      "new_top43_median": 107920176,
+      "old_top43_median": 103268042,
+      "parameter": "505/794",
+      "point_search_gate": false,
+      "representatives_checked": 2048
+    },
+    {
+      "census_sha256": "a5be4ad9b14412a2cd43bb0005627d6f8edcbee648304678c2dc3c34d13bb02c",
+      "family": "a1-fibration-05",
+      "index": 1,
+      "new_top43_median": 115455589,
+      "old_top43_median": 109961403,
+      "parameter": "307/206",
+      "point_search_gate": false,
+      "representatives_checked": 2048
+    },
+    {
+      "census_sha256": "04242c9c0b68ae689a54070071975153b2f672129929b8dc60a8eff5be4652cb",
+      "family": "a1-fibration-04",
+      "index": 2,
+      "new_top43_median": 96959066,
+      "old_top43_median": 92720143,
+      "parameter": "-1647/91",
+      "point_search_gate": false,
+      "representatives_checked": 2048
+    }
+  ],
+  "schema": "elliptic-curves.specialized-rank25-parity-replay.v1",
+  "sources": {
+    "artifacts/local/elliptic-curves/specialized-rank25-parity-sample-v1/protocol.json": "0b70d87feafc76799cccfeab08fbcf3c8aa71813875c07a4cd3413c7623f690b",
+    "elliptic-curves/cas/replay_specialized_rank25_parities.py": "8988be36950eb37c42ee105d4c183583c5380a179efb5471973674e7a6ba986e"
+  },
+  "status": "PASS"
+}

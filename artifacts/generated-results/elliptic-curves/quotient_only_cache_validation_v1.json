@@ -1,0 +1,18 @@
+{
+  "claim_boundary": "Arithmetic equivalence on this fixed finite cloud; no performance theorem or new curve.",
+  "in_memory_point_cache_entries": 512,
+  "point_cache_limit": 512,
+  "point_prime_masks_checked": 19895,
+  "rational_points": 865,
+  "retained_point_facts": 0,
+  "retained_quotient_facts": 23,
+  "schema": "elliptic-curves.quotient-only-cache-validation.v1",
+  "sources": {
+    "artifacts/generated-results/elliptic-curves/recorded_rank25_mod2_recertification_0_v1.json": "541b02c2e4d5ff99dc8a1bd80ae45e319ebada79e641740c32ce36787ec22873",
+    "elliptic-curves/cas/audit_quotient_only_reduction.py": "0bf8b871623785bdc83275f1118b04906042a703acef85492f0eaafdb822679b",
+    "elliptic-curves/cas/research_runtime/finite_reduction.py": "467609d4a1003127a9dcfb5ff3cd911d3748f5c5c5ff68a43f09db0de9b69992",
+    "elliptic-curves/cas/research_runtime/quotient_only_reduction.py": "b47036dd2d5882a8bdccfb9095fb11c543ddc8e209e487d6c7afdf8a8d06986a",
+    "elliptic-curves/tests/test_quotient_only_reduction.py": "d766cc1e2b90980147b59108042fc52a5b82690d2317ae16dddb54ef6d87dcdf"
+  },
+  "status": "PASS"
+}

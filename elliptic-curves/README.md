@@ -1,9 +1,32 @@
 # Elliptic curves over `Q` — ACTIVE
 
-The [new compact R17 curves](notes/NEW_COMPACT_R17_CURVES_2026-09-05.md)
-have certified rank lower bounds 22–24 and no match in the pinned 584-curve
-catalogue. The [machinery audit](notes/ELLIPTIC_BREAKTHROUGH_AUDIT_2026-09-05.md)
-records the selection and checkpoint fixes; the near-record target remains open.
+The [new small-conductor curve](notes/NEW_SMALL_CONDUCTOR_CURVE_2026-09-05.md)
+has 22 independently certified points and an exact 76-digit conductor. It
+would be third among rank-at-least-22 entries with recorded conductors in
+the pinned 586-curve ICARM catalogue; four such entries lack conductors.
+The completed searches now give thirty-six distinct curves with certified
+lower bounds 22–25, including three at least 25, and no match in that snapshot.
+The [consolidated JSON](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v2.json)
+contains all equations, points and rank certificates; an
+[equation CSV](../artifacts/generated-results/elliptic-curves/new_high_rank_curve_index_v2.csv) is also available.
+The [machinery audit](notes/ELLIPTIC_BREAKTHROUGH_AUDIT_2026-09-05.md)
+records the selection and checkpoint fixes; new rank-at-least-28/32 targets
+and exact ranks remain open. Catalogue absence does not prove universal novelty.
+The [retained-point audit](notes/RECORDED_POINT_ADMISSION_AUDIT_2026-09-05.md)
+checks 202 transcripts and recovers a missed rank-26 certificate on a known
+control at prime 257; the new curves’ lower bounds remain unchanged.
+The [cross-family incidence proof](notes/COMPACT_CROSS_FAMILY_INCIDENCE_2026-09-05.md)
+checks all 384 pairs of the first 32 curves and twelve family presentations; it
+finds no additional generic directions beyond the original families.
+
+The [compact six-family atlas](notes/COMPACT_SIX_R17_ATLAS_2026-09-05.md)
+reduces the compiled R17 equations to 141–169 coefficient bits and exactly
+transports all 102 generic sections. Its balanced pilot and all retained
+adaptive follow-up transcripts have been replayed.
+
+The [five compact MW16 families](notes/COMPACT_FIVE_MW16_ATLAS_2026-09-05.md)
+add 80 exactly transported generic sections and 141–181-bit equations,
+broadening the compact input base to eleven family models.
 
 The [completed rank-jump diagnostics](notes/RANK_JUMP_DIAGNOSTICS_2026-09-05.md)
 explain retained MW18 visibility, recover 31/31 masked ordinary-fibre
@@ -322,7 +345,7 @@ Use [`REPRODUCE.md`](REPRODUCE.md) and the exact checker paths recorded in `../M
 <!-- status-consumer: EC-K3-R17-NORM12-RECORD-LINEAGE-ATLAS 8a4c932153e2bb2d -->
 <!-- status-consumer: EC-K3-R17-NORM12-ICARM-573-REFRESH a93ce35de34fde21 -->
 <!-- status-consumer: EC-CF-NEARMISS-DESCENT-INPUTS 25c9f212e5162216 -->
-<!-- status-consumer: OP-EC-NEXT dfbe946c1dd0030b -->
+<!-- status-consumer: OP-EC-NEXT 80385bab71bd299c -->
 
 <!-- status-consumer: EC-EXCEPTIONAL-SOLUBLE-SELMER-PANEL 539bd8ec36b36c44 -->
 
