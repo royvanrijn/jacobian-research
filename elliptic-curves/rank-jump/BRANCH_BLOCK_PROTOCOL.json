@@ -1,0 +1,14 @@
+{
+  "schema": "rank-jump.branch-block-protocol.v1",
+  "question": "Do already split historic bisections share branch points that place three or more lifting conditions on a curve of genus at most one?",
+  "layer": "solubility",
+  "selection": "All 37 hits in the existing five-fibre complete specialization census; no new parameter or orbit selection.",
+  "census": "artifacts/generated-results/elliptic-curves/elkies_2026_bisection_specialization_controls_v1.json",
+  "atlas": "artifacts/generated-results/elkies-2026-equation-bisections-full.json",
+  "atlas_sha256": "78e037dc4170955b8f79ddce4d1d3e0c0d3e9bb8f9614644c59ccc7d605226c4",
+  "limits": {"fibres": 5, "hits": 37, "maximum_subset_size": 3, "parameter_searches": 0, "new_point_searches": 0},
+  "positive_endpoint": "A retained triple with distinct quadratic characters has connected normalized fibre-product genus at most one. Actual specialized independence is checked separately.",
+  "negative_boundary": "Only the retained bisection blocks. No exclusion of other covers, other auxiliary curves, or any fibre rank.",
+  "checkpoint": "Immutable compact inputs before analysis; per-fibre output checkpoint; immutable final certificate.",
+  "oracle_policy": "Retrospective hit selection and supplied exceptional quotient coordinates are explicitly oracle data; not a prospective selector."
+}

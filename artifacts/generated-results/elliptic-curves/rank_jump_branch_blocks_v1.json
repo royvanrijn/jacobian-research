@@ -1,0 +1,5072 @@
+{
+  "bindings": {
+    "BRANCH_BLOCK_PROTOCOL.json": "747d8c5746aa5a92ef69db1ed63cdb7916cfff60db596ee59325bce208c917ae",
+    "branch_blocks.py": "59b1a57f38192f3438516d8948feacebcddef0364f2bfb9ec883c7ae37806f7f",
+    "cover_experiment.py": "ebb07b12f71ba1f24675673a2309133011a5f33786c5d26d4d6ecb94f964ed1f",
+    "retrospective.py": "5215a5ff33aaf10687e403baaabc495868b35957c2b7f853e47fd62384194fdb"
+  },
+  "fibres": [
+    {
+      "arithmetic_character_rank_equals_geometric": true,
+      "exact_specialized_quotient_rank": 5,
+      "finite_quotient_rank_lower_bound": 5,
+      "geometry": {
+        "branch_character_masks": [
+          1,
+          32,
+          4,
+          8,
+          16,
+          2
+        ],
+        "branch_points": 12,
+        "cover_degree": 64,
+        "factor_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "genus": 129,
+        "geometric_character_rank": 6,
+        "infinity_branched": false,
+        "monic_branch_factors_ascending": [
+          [
+            "388152818881/1295099052676",
+            "242773871/205832653",
+            "1"
+          ],
+          [
+            "23743585636/9658127089",
+            "934104508/742932853",
+            "1"
+          ],
+          [
+            "1582589970256/514992145369",
+            "146204978632/39614780413",
+            "1"
+          ],
+          [
+            "6396254569/1578980689",
+            "972118/649519",
+            "1"
+          ],
+          [
+            "11718940411984/1177213677145",
+            "1623431368/257878133",
+            "1"
+          ],
+          [
+            "144546477201/7705261840",
+            "231744/32951",
+            "1"
+          ]
+        ]
+      },
+      "known_total_quotient_rank": 8,
+      "labels": [
+        "orbit-1cb25",
+        "orbit-0cff7",
+        "orbit-1ea09",
+        "orbit-051a1",
+        "orbit-0d4ca",
+        "orbit-1d5bb"
+      ],
+      "low_genus_triples": [],
+      "pairs": [
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            1
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            2
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            3
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            4
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            5
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            2
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            3
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            4
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            5
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            3
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            4
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            5
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            4
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            5
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            5
+          ],
+          "specialized_quotient_rank": 2
+        }
+      ],
+      "parameter": "-2/377",
+      "q_coefficients_ascending": [
+        [
+          "1800718927038174525407334400/81",
+          "7086533459280247330194636800/81",
+          "6008224758655847187402342400/81"
+        ],
+        [
+          "2911587038298662547557407564800/4913",
+          "1091564911357572862029201408000/4913",
+          "2638509051800424250053126144000/83521"
+        ],
+        [
+          "55728020516488567219263802894516224/2136750625",
+          "66928443011354109650167457728856064/2136750625",
+          "18134509495413812233363071639883776/2136750625"
+        ],
+        [
+          "18961477122582038481750550632681/160000",
+          "3502840594306359212088654292821/80000",
+          "4680834055070006170190472036561/160000"
+        ],
+        [
+          "115256086799617261384146538183850630400/2217373921",
+          "72887027537496226098098594361259152000/2217373921",
+          "11577927439239374288549252895676362000/2217373921"
+        ],
+        [
+          "429518630943142576583937224256",
+          "219671908135623894534144110784",
+          "174714366580439381522846467344"
+        ]
+      ],
+      "rational_point_on_normalization": "Certified by nonzero square values of every quadratic at the retained parameter.",
+      "relation_scope": "Exact Q-coordinates derived from the previously group-verified relation certificate; whole-curve upper rank remains UNKNOWN.",
+      "specialization_blocks": {
+        "kernel_basis_integer_coefficients": [
+          [
+            -1,
+            1,
+            -1,
+            0,
+            1,
+            0
+          ]
+        ],
+        "kernel_dimension_modulo_generic": 1,
+        "kernel_scope": "Linear combinations lie in M tensor Q; not asserted to vanish in E or belong integrally to M.",
+        "rational_line_groups": [
+          {
+            "indices": [
+              0
+            ],
+            "normalized_coordinates": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              1
+            ],
+            "normalized_coordinates": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "0"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              2
+            ],
+            "normalized_coordinates": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "-1",
+              "0"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              3
+            ],
+            "normalized_coordinates": [
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              4
+            ],
+            "normalized_coordinates": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              5
+            ],
+            "normalized_coordinates": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "zero_direction": false
+          }
+        ]
+      },
+      "specialized_quotient_coordinates_over_q": [
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "triple_geometry_counts": [
+        {
+          "branch_points": 6,
+          "character_rank": 3,
+          "count": 20,
+          "genus": 5
+        }
+      ]
+    },
+    {
+      "arithmetic_character_rank_equals_geometric": true,
+      "exact_specialized_quotient_rank": 3,
+      "finite_quotient_rank_lower_bound": 3,
+      "geometry": {
+        "branch_character_masks": [
+          2,
+          1,
+          4
+        ],
+        "branch_points": 6,
+        "cover_degree": 8,
+        "factor_degrees": [
+          2,
+          2,
+          2
+        ],
+        "genus": 5,
+        "geometric_character_rank": 3,
+        "infinity_branched": false,
+        "monic_branch_factors_ascending": [
+          [
+            "-1591877453401/240228538560",
+            "738934255/166825374",
+            "1"
+          ],
+          [
+            "17461276021225/3732461513872",
+            "12209866043/2563503787",
+            "1"
+          ],
+          [
+            "6320290432225/471529050001",
+            "-2708966844430/471529050001",
+            "1"
+          ]
+        ]
+      },
+      "known_total_quotient_rank": 9,
+      "labels": [
+        "orbit-0da89",
+        "orbit-12c1b",
+        "orbit-1ea54"
+      ],
+      "low_genus_triples": [],
+      "pairs": [
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            1
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            2
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            2
+          ],
+          "specialized_quotient_rank": 2
+        }
+      ],
+      "parameter": "-308/251",
+      "q_coefficients_ascending": [
+        [
+          "143106970417904154584840554686046233600/3553711346641",
+          "145699172244996277560936338086669467648/3553711346641",
+          "30590047302520864301046896092559327232/3553711346641"
+        ],
+        [
+          "4859923144052754212645955371390099481600/34507149121",
+          "-3248538824012530678711278962911211520000/34507149121",
+          "-733405848493802214058249270100484096000/34507149121"
+        ],
+        [
+          "179242466559862278194582209238246400/167521249",
+          "-537781187371017102499301460283607040/1172648743",
+          "655252082680898222128830376640848896/8208541201"
+        ]
+      ],
+      "rational_point_on_normalization": "Certified by nonzero square values of every quadratic at the retained parameter.",
+      "relation_scope": "Exact Q-coordinates derived from the previously group-verified relation certificate; whole-curve upper rank remains UNKNOWN.",
+      "specialization_blocks": {
+        "kernel_basis_integer_coefficients": [],
+        "kernel_dimension_modulo_generic": 0,
+        "kernel_scope": "Linear combinations lie in M tensor Q; not asserted to vanish in E or belong integrally to M.",
+        "rational_line_groups": [
+          {
+            "indices": [
+              0
+            ],
+            "normalized_coordinates": [
+              "1",
+              "1",
+              "1",
+              "0",
+              "1",
+              "2",
+              "-1",
+              "-2",
+              "0"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              1
+            ],
+            "normalized_coordinates": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "1",
+              "2",
+              "-1",
+              "-1",
+              "-1"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              2
+            ],
+            "normalized_coordinates": [
+              "1",
+              "1",
+              "0",
+              "0",
+              "1",
+              "2",
+              "-1",
+              "-1",
+              "-1"
+            ],
+            "zero_direction": false
+          }
+        ]
+      },
+      "specialized_quotient_coordinates_over_q": [
+        [
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "2",
+          "-1",
+          "-2",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "2",
+          "-1",
+          "-1",
+          "-1"
+        ],
+        [
+          "1",
+          "1",
+          "0",
+          "0",
+          "1",
+          "2",
+          "-1",
+          "-1",
+          "-1"
+        ]
+      ],
+      "triple_geometry_counts": [
+        {
+          "branch_points": 6,
+          "character_rank": 3,
+          "count": 1,
+          "genus": 5
+        }
+      ]
+    },
+    {
+      "arithmetic_character_rank_equals_geometric": true,
+      "exact_specialized_quotient_rank": 2,
+      "finite_quotient_rank_lower_bound": 2,
+      "geometry": {
+        "branch_character_masks": [
+          1,
+          2
+        ],
+        "branch_points": 4,
+        "cover_degree": 4,
+        "factor_degrees": [
+          2,
+          2
+        ],
+        "genus": 1,
+        "geometric_character_rank": 2,
+        "infinity_branched": false,
+        "monic_branch_factors_ascending": [
+          [
+            "2094878738995344/551005442820121",
+            "1919852662499064/551005442820121",
+            "1"
+          ],
+          [
+            "192763348439209/48346219485316",
+            "55038002966831/12086554871329",
+            "1"
+          ]
+        ]
+      },
+      "known_total_quotient_rank": 10,
+      "labels": [
+        "orbit-195a4",
+        "orbit-00edf"
+      ],
+      "low_genus_triples": [],
+      "pairs": [
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            1
+          ],
+          "specialized_quotient_rank": 2
+        }
+      ],
+      "parameter": "2456/135",
+      "q_coefficients_ascending": [
+        [
+          "70395691533061650660759556012085180289/40960000",
+          "129028333050939044725081586952151634343/81920000",
+          "296253208083292210489475616381005066641/655360000"
+        ],
+        [
+          "5653754686166666970928601537080233984/373301041",
+          "6457064991047476964288133860860084224/373301041",
+          "1417996041191144583630709347851452416/373301041"
+        ]
+      ],
+      "rational_point_on_normalization": "Certified by nonzero square values of every quadratic at the retained parameter.",
+      "relation_scope": "Exact Q-coordinates derived from the previously group-verified relation certificate; whole-curve upper rank remains UNKNOWN.",
+      "specialization_blocks": {
+        "kernel_basis_integer_coefficients": [],
+        "kernel_dimension_modulo_generic": 0,
+        "kernel_scope": "Linear combinations lie in M tensor Q; not asserted to vanish in E or belong integrally to M.",
+        "rational_line_groups": [
+          {
+            "indices": [
+              0
+            ],
+            "normalized_coordinates": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1",
+              "-1",
+              "0"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              1
+            ],
+            "normalized_coordinates": [
+              "1",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "zero_direction": false
+          }
+        ]
+      },
+      "specialized_quotient_coordinates_over_q": [
+        [
+          "0",
+          "-1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "triple_geometry_counts": []
+    },
+    {
+      "arithmetic_character_rank_equals_geometric": true,
+      "exact_specialized_quotient_rank": 1,
+      "finite_quotient_rank_lower_bound": 1,
+      "geometry": {
+        "branch_character_masks": [
+          1
+        ],
+        "branch_points": 2,
+        "cover_degree": 2,
+        "factor_degrees": [
+          2
+        ],
+        "genus": 0,
+        "geometric_character_rank": 1,
+        "infinity_branched": false,
+        "monic_branch_factors_ascending": [
+          [
+            "45610752625/39065678404",
+            "23462451325/9766419601",
+            "1"
+          ]
+        ]
+      },
+      "known_total_quotient_rank": 11,
+      "labels": [
+        "orbit-15a68"
+      ],
+      "low_genus_triples": [],
+      "pairs": [],
+      "parameter": "-9529/5471",
+      "q_coefficients_ascending": [
+        [
+          "22274785025996128797030912000",
+          "45833144981766064996062412800",
+          "19078386964981583601609621504"
+        ]
+      ],
+      "rational_point_on_normalization": "Certified by nonzero square values of every quadratic at the retained parameter.",
+      "relation_scope": "Exact Q-coordinates derived from the previously group-verified relation certificate; whole-curve upper rank remains UNKNOWN.",
+      "specialization_blocks": {
+        "kernel_basis_integer_coefficients": [],
+        "kernel_dimension_modulo_generic": 0,
+        "kernel_scope": "Linear combinations lie in M tensor Q; not asserted to vanish in E or belong integrally to M.",
+        "rational_line_groups": [
+          {
+            "indices": [
+              0
+            ],
+            "normalized_coordinates": [
+              "0",
+              "1",
+              "0",
+              "-1",
+              "1",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "1",
+              "0"
+            ],
+            "zero_direction": false
+          }
+        ]
+      },
+      "specialized_quotient_coordinates_over_q": [
+        [
+          "0",
+          "1",
+          "0",
+          "-1",
+          "1",
+          "0",
+          "0",
+          "-1",
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "triple_geometry_counts": []
+    },
+    {
+      "arithmetic_character_rank_equals_geometric": true,
+      "exact_specialized_quotient_rank": 4,
+      "finite_quotient_rank_lower_bound": 4,
+      "geometry": {
+        "branch_character_masks": [
+          1,
+          4,
+          64,
+          8,
+          4194304,
+          256,
+          65536,
+          32768,
+          2048,
+          32,
+          8388608,
+          131072,
+          1024,
+          524288,
+          16384,
+          262144,
+          128,
+          4096,
+          16777216,
+          16,
+          2,
+          1048576,
+          8192,
+          2097152,
+          512
+        ],
+        "branch_points": 50,
+        "cover_degree": 33554432,
+        "factor_degrees": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "genus": 385875969,
+        "geometric_character_rank": 25,
+        "infinity_branched": false,
+        "monic_branch_factors_ascending": [
+          [
+            "-12450975849/462055424",
+            "197634099/7219616",
+            "1"
+          ],
+          [
+            "-27822900249/2955069680",
+            "1825646049/73876742",
+            "1"
+          ],
+          [
+            "-781215399/3095177089",
+            "10247232426/3095177089",
+            "1"
+          ],
+          [
+            "-422336/2756839",
+            "8454896/5027177",
+            "1"
+          ],
+          [
+            "41342201604/271872493369",
+            "240492438252/271872493369",
+            "1"
+          ],
+          [
+            "2285761/2894116",
+            "-145087/723529",
+            "1"
+          ],
+          [
+            "5592833759569/6511374041104",
+            "2637471859519/813921755138",
+            "1"
+          ],
+          [
+            "24295187828025/25594433773441",
+            "5073586325970/1968802597957",
+            "1"
+          ],
+          [
+            "331757920872225/345602010334564",
+            "219054869492985/86400502583641",
+            "1"
+          ],
+          [
+            "2238261700/2328410041",
+            "2951795180/2328410041",
+            "1"
+          ],
+          [
+            "5920518564/2575864369",
+            "215706084/198143413",
+            "1"
+          ],
+          [
+            "345519729/136393552",
+            "-3281337/8524597",
+            "1"
+          ],
+          [
+            "1258662001/329673561",
+            "630738/506411",
+            "1"
+          ],
+          [
+            "2553616177984/667775079729",
+            "986103219104/222591693243",
+            "1"
+          ],
+          [
+            "1657773225/183846481",
+            "-8704590/14142037",
+            "1"
+          ],
+          [
+            "93164344916049/8226944558596",
+            "11800573799949/2056736139649",
+            "1"
+          ],
+          [
+            "29475229/2555305",
+            "2891105/511061",
+            "1"
+          ],
+          [
+            "38485639089/2892133504",
+            "186077067/27808976",
+            "1"
+          ],
+          [
+            "29279961/1847056",
+            "-196641/230882",
+            "1"
+          ],
+          [
+            "565383663/32318720",
+            "11025165/1356232",
+            "1"
+          ],
+          [
+            "20094255500881/1072165481284",
+            "918241302301/268041370321",
+            "1"
+          ],
+          [
+            "39757206544441/1284242905764",
+            "11465808773/1176046617",
+            "1"
+          ],
+          [
+            "16012697841/229959652",
+            "1044909/107861",
+            "1"
+          ],
+          [
+            "4024824253956/56793054145",
+            "288011930316/11358610829",
+            "1"
+          ],
+          [
+            "14217572848081/42674689296",
+            "26271105977/1778112054",
+            "1"
+          ]
+        ]
+      },
+      "known_total_quotient_rank": 4,
+      "labels": [
+        "orbit-05980",
+        "orbit-04d17",
+        "orbit-101f2",
+        "orbit-07843",
+        "orbit-090a3",
+        "orbit-05443",
+        "orbit-18fd5",
+        "orbit-1f786",
+        "orbit-02d31",
+        "orbit-055ad",
+        "orbit-0be21",
+        "orbit-00ca6",
+        "orbit-0976c",
+        "orbit-045c2",
+        "orbit-0fb68",
+        "orbit-08e3a",
+        "orbit-196a3",
+        "orbit-01926",
+        "orbit-0888a",
+        "orbit-06faa",
+        "orbit-10aaa",
+        "orbit-06f04",
+        "orbit-0eba4",
+        "orbit-01e36",
+        "orbit-126e6"
+      ],
+      "low_genus_triples": [],
+      "pairs": [
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            1
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            2
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            3
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            4
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            5
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            6
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            7
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            8
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            9
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            10
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            11
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            12
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            13
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            14
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            16
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            17
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            19
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            23
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            0,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            2
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            3
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            4
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            5
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            6
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            7
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            8
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            9
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            10
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            11
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            12
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            13
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            14
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            16
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            18
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            19
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            22
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            1,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            3
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            4
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            5
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            6
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            7
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            8
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            9
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            10
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            11
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            12
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            13
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            14
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            16
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            19
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            2,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            4
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            5
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            6
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            7
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            8
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            9
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            10
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            11
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            12
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            13
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            14
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            16
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            19
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            3,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            5
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            6
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            7
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            8
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            9
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            10
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            11
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            12
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            13
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            14
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            16
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            19
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            4,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            6
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            7
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            8
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            9
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            10
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            11
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            12
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            13
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            14
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            16
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            19
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            5,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            7
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            8
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            9
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            10
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            11
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            12
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            13
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            14
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            16
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            18
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            19
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            22
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            6,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            8
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            9
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            10
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            11
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            12
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            13
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            14
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            16
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            19
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            7,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            9
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            10
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            11
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            12
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            13
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            14
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            16
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            19
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            8,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            10
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            11
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            12
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            13
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            14
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            16
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            19
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            9,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            11
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            12
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            13
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            14
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            15
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            16
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            17
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            18
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            19
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            20
+          ],
+          "specialized_quotient_rank": 0
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            21
+          ],
+          "specialized_quotient_rank": 0
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            22
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            23
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            10,
+            24
+          ],
+          "specialized_quotient_rank": 0
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            11,
+            12
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            11,
+            13
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            11,
+            14
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            11,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            11,
+            16
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            11,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            11,
+            18
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            11,
+            19
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            11,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            11,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            11,
+            22
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            11,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            11,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            12,
+            13
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            12,
+            14
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            12,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            12,
+            16
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            12,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            12,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            12,
+            19
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            12,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            12,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            12,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            12,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            12,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            13,
+            14
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            13,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            13,
+            16
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            13,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            13,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            13,
+            19
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            13,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            13,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            13,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            13,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            13,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            14,
+            15
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            14,
+            16
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            14,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            14,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            14,
+            19
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            14,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            14,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            14,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            14,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            14,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            15,
+            16
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            15,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            15,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            15,
+            19
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            15,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            15,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            15,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            15,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            15,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            16,
+            17
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            16,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            16,
+            19
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            16,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            16,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            16,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            16,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            16,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            17,
+            18
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            17,
+            19
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            17,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            17,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            17,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            17,
+            23
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            17,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            18,
+            19
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            18,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            18,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            18,
+            22
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            18,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            18,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            19,
+            20
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            19,
+            21
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            19,
+            22
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            19,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            19,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            20,
+            21
+          ],
+          "specialized_quotient_rank": 0
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            20,
+            22
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            20,
+            23
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            20,
+            24
+          ],
+          "specialized_quotient_rank": 0
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            21,
+            22
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            21,
+            23
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            21,
+            24
+          ],
+          "specialized_quotient_rank": 0
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            22,
+            23
+          ],
+          "specialized_quotient_rank": 2
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            22,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        },
+        {
+          "branch_points": 4,
+          "character_rank": 2,
+          "genus": 1,
+          "indices": [
+            23,
+            24
+          ],
+          "specialized_quotient_rank": 1
+        }
+      ],
+      "parameter": "3/8",
+      "q_coefficients_ascending": [
+        [
+          "145582076667622037991000336",
+          "-147892575305587347048213504",
+          "-5402547477181168519643136"
+        ],
+        [
+          "-22134904395216127476049109478970224/214358881",
+          "290344392027362764198046706733346976/214358881",
+          "87698538762775154880389908824827664/214358881"
+        ],
+        [
+          "617875336511942156575745819191281/875213056",
+          "291378017441137724889418086108831/109401632",
+          "44959514261428488826620800773281/54700816"
+        ],
+        [
+          "-798947452289069360771448183489/1024",
+          "35084525122230683013999634821687/4096",
+          "333773222521767796253947331220129/65536"
+        ],
+        [
+          "6709982142412161375290458112/3",
+          "2800552901030102653682843648/9",
+          "2601790134951532737262256128/81"
+        ],
+        [
+          "1452608390125663659343056481537932308736/4435257060025",
+          "19182718560980244800124407681643519194112/22176285300125",
+          "37830625003346665465074377476542812455936/110881426500625"
+        ],
+        [
+          "4369968854464518748025856",
+          "2143162111647485838873600",
+          "378847040125030312043520"
+        ],
+        [
+          "17391429061625279229393478418087441818892544/408243035250625",
+          "8811475777056982189907508501321202062283776/408243035250625",
+          "1535762665574209112400652916394578358936576/408243035250625"
+        ],
+        [
+          "7535698570156688172782712357770895105600/307334874078961",
+          "-1145042182600333618521184103841937228800/307334874078961",
+          "2974709136753785473252162288743480652800/307334874078961"
+        ],
+        [
+          "4260556854317691325884309883337281536/14641",
+          "-1081742863444412397269140331021058048/14641",
+          "5394503520267648082762369023850070016/14641"
+        ],
+        [
+          "106053504741707802177879605527765701696/169616304025",
+          "7589070401624110814494320243116427456/33923260805",
+          "299297661563369764686436254329958864/33923260805"
+        ],
+        [
+          "90518811287573156679437136064201297760256/249849022801",
+          "45516234948619098413004832170567469596672/249849022801",
+          "6802342199947238747636158010354595004416/249849022801"
+        ],
+        [
+          "227431208565058436916895000621344869705650176/706178804700625",
+          "107719929096134524097500642901742667781296128/706178804700625",
+          "98949431575727366650490591420896203567031296/706178804700625"
+        ],
+        [
+          "456020359100989695070657241760000/14641",
+          "211907456876741881034602368000000/14641",
+          "26067244712877983667303014400000/14641"
+        ],
+        [
+          "22387265179667376461772598798162560000/1579146602881",
+          "-1528155661902218881704978010513152000/1579146602881",
+          "2482740015598743858949177630291993600/1579146602881"
+        ],
+        [
+          "691163397155647669888477871454493750602816/33232930569601",
+          "-37134219292186547230589597334691287495168/33232930569601",
+          "43600382517474048635294711742862342235136/33232930569601"
+        ],
+        [
+          "631314826728643443982910631143694566400/27439591201",
+          "1713894695290704826370182531533307176960/27439591201",
+          "665075966371368849850214421241441330176/27439591201"
+        ],
+        [
+          "2843155920846930191747268928723521/38950081",
+          "927516280807504362713155491636198/38950081",
+          "744690263278903588852949696506281/38950081"
+        ],
+        [
+          "3396903244780258570132839792247934976/260144641",
+          "150642430053226637951377026060484608/260144641",
+          "10195959049306915539425573226479616/260144641"
+        ],
+        [
+          "1958082173515649141020161577376169984/4506487876801",
+          "11390393784954902490308315812406280192/4506487876801",
+          "12876640867708019329065009131595239424/4506487876801"
+        ],
+        [
+          "1332596600394732471433333134969/14641",
+          "-3497622025955278659395908190760/14641",
+          "-141535058324449300225937380080/14641"
+        ],
+        [
+          "143808253272539368235955031320562028781590784/635192041547188321",
+          "26286254349820334881225574593629744242758656/635192041547188321",
+          "7673150422308678927840152231256565218763776/635192041547188321"
+        ],
+        [
+          "1172952438518343841120931428149240429/6002500",
+          "2717680563236326710143625226390290519/12005000",
+          "19630662804294177865839373143371386161/384160000"
+        ],
+        [
+          "6577474303614845732373170868806034852096/2472973441",
+          "2071431760160840979323239993226372944896/2472973441",
+          "212466504728398055728507425327263376384/2472973441"
+        ],
+        [
+          "858317841878255901209836585627200/14641",
+          "1131940232263384534524158547698880/14641",
+          "892887494522549056682910471971856/14641"
+        ]
+      ],
+      "rational_point_on_normalization": "Certified by nonzero square values of every quadratic at the retained parameter.",
+      "relation_scope": "Exact Q-coordinates derived from the previously group-verified relation certificate; whole-curve upper rank remains UNKNOWN.",
+      "specialization_blocks": {
+        "kernel_basis_integer_coefficients": [
+          [
+            1,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "kernel_dimension_modulo_generic": 21,
+        "kernel_scope": "Linear combinations lie in M tensor Q; not asserted to vanish in E or belong integrally to M.",
+        "rational_line_groups": [
+          {
+            "indices": [
+              0,
+              17,
+              23
+            ],
+            "normalized_coordinates": [
+              "1",
+              "1",
+              "0",
+              "0"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              1,
+              6,
+              11,
+              18,
+              22
+            ],
+            "normalized_coordinates": [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              2
+            ],
+            "normalized_coordinates": [
+              "0",
+              "1",
+              "0",
+              "-1"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              3,
+              8
+            ],
+            "normalized_coordinates": [
+              "0",
+              "0",
+              "1",
+              "-1"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              4,
+              5,
+              9,
+              12,
+              13,
+              14,
+              16,
+              19
+            ],
+            "normalized_coordinates": [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              7
+            ],
+            "normalized_coordinates": [
+              "0",
+              "1",
+              "1",
+              "-1"
+            ],
+            "zero_direction": false
+          },
+          {
+            "indices": [
+              10,
+              20,
+              21,
+              24
+            ],
+            "normalized_coordinates": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "zero_direction": true
+          },
+          {
+            "indices": [
+              15
+            ],
+            "normalized_coordinates": [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "zero_direction": false
+          }
+        ]
+      },
+      "specialized_quotient_coordinates_over_q": [
+        [
+          "-1",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "-1",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "triple_geometry_counts": [
+        {
+          "branch_points": 6,
+          "character_rank": 3,
+          "count": 2300,
+          "genus": 5
+        }
+      ]
+    }
+  ],
+  "input_sha256": "ca933b43628606fc0aac4cbe33d8d3499986a26d53d0d7a4518024727f536ecd",
+  "low_genus_triple_count": 0,
+  "schema": "rank-jump.branch-blocks.v1",
+  "scope": "Only the 37 retained retrospective hits; no parameter or point searches."
+}
